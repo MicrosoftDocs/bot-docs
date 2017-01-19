@@ -1,5 +1,5 @@
 # Overview
-## [What is the Bot Framework?][botframework-overview.md]
+## [What is the Bot Framework?](botframework-overview.md)
 ## Core concepts
 ## Getting Started
 ## some others
