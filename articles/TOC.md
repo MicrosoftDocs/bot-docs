@@ -1,8 +1,14 @@
 # Overview
-## [Overview][botframework-overview.md]
+## [What is the Bot Framework?][botframework-overview.md]
+## Core concepts
 ## Getting Started
-## ... others ...
+## some others
 # Designing Bots
 ## [Overview](designing-bots/index.md)
-## ... and others ...
-## ... and some more ...
+## some others
+## and some others
+# Resources
+## Some resources
+## Some other Resources
+# Rest of IA coming soon
+## TBD
