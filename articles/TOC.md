@@ -1,8 +1,17 @@
 #Overview
-## Introduction
-## How it works
-## Build a bot in n minutes
-# Core Concepts (each section has an overview and examples)
+## [What is the Bot Framework?](bot-framework-overview.md)
+## [How the Bot Framework is different](how-bot-framework-is-different.md)
+## [Core concepts](bot-framework-core-concepts.md)
+## [Scenarios](bot-framework-scenarios.md)
+#Get Started
+## Create your first bot
+### [C# bot](bot-framework-dotnet-get-started.md)
+### [Node.js bot](bot-framework-nodejs-get-started.md)
+### [Azure Bot Service](bot-framework-azure-bot-service-get-started.md)
+## Test your bot
+### [Bot Framework Emulator](bot-framework-emulator-get-started.md)
+## [FAQ](bot-framework-faq.md)
+# Core Concepts
 ## Dialogs
 ## Language Understanding
 ## Channels
@@ -11,10 +20,6 @@
 ## Security
 ## Deployment
 ## Management
-# Tutorials
-## Build a type of Bot
-## Build a different type of Bot
-## Use feature in a Bot
 #Intelligence
 ## Overview
 ## Scenarios
