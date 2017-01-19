@@ -1,5 +1,3 @@
-
-[comment]: # Home
 #Overview
 ## Introduction
 ## How it works
