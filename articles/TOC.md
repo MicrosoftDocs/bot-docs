@@ -5,10 +5,18 @@
 ## some others
 # Designing Bots
 ## [Overview](designing-bots/index.md)
-## some others
-## and some others
-# Resources
-## Some resources
-## Some other Resources
+## [Core Principles](designing-bots/core/index.md)
+### [Saying Hello](designing-bots/core/greeting.md)
+### [Dialogs](designing-bots/core/dialogs.md)
+### [Where am I?](designing-bots/core/navigation.md)
+### [Buttons, language and voice](designing-bots/core/ux-elements.md)
+## [Bot Capabilities](designing-bots/capabilities/index.md)
+### [Knwoledge Base](designing-bots/capabilities/kb.md)
+### [Task Automation](designing-bots/capabilities/task.md)
+### [Bot to Web](designing-bots/capabilities/bot-to-web.md)
+### [Bot in Apps](designing-bots/capabilities/bot-in-apps.md)
+### [Bot in Websites](designing-bots/capabilities/bot-in-websites.md)
+### [Handoff to Humans](designing-bots/capabilities/human-handoff.md)
+## [Resources](designing-bots/resources/index.md)
 # Rest of IA coming soon
 ## TBD
