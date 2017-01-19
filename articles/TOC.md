@@ -1,4 +1,6 @@
-# [Overview](index.md)
+# Overview
+## [Overview][botframework-overview.md]
 ## Getting Started
 ## ... others ...
-# [Designing Bots](designing-bots/index.md)
+# Designing Bots
+## [Overview](designing-bots/index.md)
