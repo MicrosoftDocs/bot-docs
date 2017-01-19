@@ -5,7 +5,7 @@
 ## some others
 # Designing Bots
 ## [Overview](designing-bots/index.md)
-## [Core Principles](designing-bots/core/index.md)
+## Core Principles
 ### [Saying Hello](designing-bots/core/greeting.md)
 ### [Dialogs](designing-bots/core/dialogs.md)
 ### [Where am I?](designing-bots/core/navigation.md)

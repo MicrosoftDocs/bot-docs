@@ -44,13 +44,14 @@ But how can we tell if a bot has great chances of succeeding at that ultimate go
 
 
 - Voice: Many developers assume that enabling bots for speech will lead to great experiences. This isn’t always the case. Actually, forcing users to use voice can very easily turn into a frustrating experience. As you design a bot, always ask if voice is really the right channel for the given problem. Is there going to be a noisy environment? Is voice going to be enough for the kind of information that needs to be shared with the user? It may be, but in many cases, it won’t.
+
  
 ###Ok, so what does make a bot great?
 
 ![bot](../media/designing-bots/thinking-bot.png)
 
 If you ask any experienced app or website developer what makes their apps and websites great, it usually comes down to one thing: User experience. 
-Turns out that didn’t change because of bots. The key factor, the only thing we should be laser focused on when designing and building any bot is this: What is the user experience going to be? 
+It turns out that didn’t change because of bots. The key factor, the only thing we should be laser focused on when designing and building any bot is this: What is the user experience going to be? 
 
 Examples:
 
@@ -68,8 +69,10 @@ Examples:
 
 Note that none of these things directly relates to how smart, how much natural language, whether the bot uses machine learning or which programming language was used. Simply put: Users won’t care. They will, though, care a lot if your bot makes them type too much, talk too much, repeat what they want several times or have to explain things the bot should automatically know already.
 
-Whenever you are not sure about the right design approach, we suggest you to step back and forget you are building a bot: How would you solve that problem in an app or a website?
+	Tip: User experience is everything. That doesn't change whether you are building a bot, an app or both
 
-Likely the answer won’t be far from that, simply because decades of learned lessons around building great UX aren’t going to be thrown away simply because we are now building bots. If you are a developer with plenty of experience designing great user experiences on web or apps, here’s the great news: That experience does count, a lot, when building bots. 
+Whenever you are not sure about the right design approach, we suggest you to step back and forget that you are building a bot: How would you solve that problem in an app or a website?
+
+Likely the answer won’t be far from that, simply because decades of learned lessons around building great UX aren’t going to be thrown away simply because we are now building bots instead. If you are a developer with plenty of experience designing great user experiences on web or apps, here’s the great news: That experience does count, a lot, when building bots. 
 
 Trust your instincts. If something feels like it doesn’t make sense, then it probably doesn’t. 
