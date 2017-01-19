@@ -22,7 +22,7 @@ ms.author: mat.velloso@microsoft.com
 ##First impressions matter
 
 
-![bot](../media/designing-bots/core/hello-bot.png)
+![bot](../../media/designing-bots/core/hello-bot.png)
 
 The first interaction between the user and bot is critical to the user experience. Developers should keep in mind that there is more to that first message than just saying “hi”. When you build an app, the first screen is usually where the key navigation cues are given: Your will tell the user where the menu is, maybe give some cues on how it works, where to go for help, information about its privacy policy and so on. Now switch from app to a bot and we still have the same user hoping to get access to the same kind of information. In other words, just saying “Hi user” won’t be enough.
 
@@ -32,12 +32,12 @@ Let us compare these two designs:
 
 Example 1:
 
-![bot](../media/designing-bots/core/hello1.png)
+![bot](../../media/designing-bots/core/hello1.png)
 
 
 Example 2:
 
-![bot](../media/designing-bots/core/hello2.png)
+![bot](../../media/designing-bots/core/hello2.png)
 
 
 Starting the bot with an open ended question such as “How can I help you?” is usually a bad idea. If your bot has a hundred different things it can do, chances are users won’t be able to guess the vast majority of them. Your bot didn’t tell them what it can do, so how can they possibly guess? 
