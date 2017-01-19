@@ -40,11 +40,14 @@ Example 2:
 ![bot](../../media/designing-bots/core/hello2.png)
 
 
-Starting the bot with an open ended question such as “How can I help you?” is usually a bad idea. If your bot has a hundred different things it can do, chances are users won’t be able to guess the vast majority of them. Your bot didn’t tell them what it can do, so how can they possibly guess? 
+Starting the bot with an open ended question such as “How can I help you?” is usually a bad idea. If your bot has a hundred different things it can do, chances are users won’t be able to guess the vast majority of them. Your bot didn’t tell them what it can do, so how can they possibly know? 
 
 For decades, developers have used a simple solution to that problem: Menus. Turns out, breaking down the available options into some sort of menu is still a great idea. First, it mitigates the basic discoverability problem. Second, it spares the user from having to type too much: They can just click which is always faster. As an additional benefit, it can significantly simplify your natural language models.
 
 	Tip: Menus are your friend. Don’t dismiss them as not being “smart enough”
+
+
+Note: You can still use free form input along with menus. Users can still type whatever they want and your bot can try its best to parse their request. There is absolutely nothing wrong with it. But usage will likely tell you that the majority of users still prefer to just click at the buttons. Don't try to force them into use your bot the way you would like them to.
 
 Beyond the basic navigation, there are things you should tell the user. Again, no different than an app or a website, if your bot collects personal data from the user, that is something you should be telling them about. This is where your bot should have some information about terms and privacy on web pages and offer the user a link to that data. In fact, the [Bot Framework registration portal](https://dev.botframework.com/) already offers a place for you to add links to your terms and conditions to be associated with your bot. 
 
