@@ -8,7 +8,7 @@
 ### [Saying Hello](designing-bots/core/greeting.md)
 ### [Dialogs](designing-bots/core/dialogs.md)
 ### [Where am I?](designing-bots/core/navigation.md)
-### [Buttons, language and voice](designing-bots/core/ux-elements.md)
+### [Buttons, language and speech](designing-bots/core/ux-elements.md)
 ## [Bot Capabilities](designing-bots/capabilities/index.md)
 ### [Knowledge Base](designing-bots/capabilities/kb.md)
 ### [Task Automation](designing-bots/capabilities/task.md)
