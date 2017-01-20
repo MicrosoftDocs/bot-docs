@@ -3,6 +3,8 @@
 ## [What is the Bot Framework?](bot-framework-overview.md)
 ## [How it's different](bot-framework-benefits.md)
 ## [Key scenarios](bot-framework-scenarios.md)
+# Get Started
+## [Use .NET](bot-framework-dotnet-getstarted.md)
 # Designing Bots
 ## [Overview](designing-bots/index.md)
 ## Core Principles
