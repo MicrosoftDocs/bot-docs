@@ -55,6 +55,27 @@ A common mistake when bot developers build natural language models is assuming u
 
 ##Speech
 
+Speech recognition and text to speech are fascinating technologies. It is natural to expect bot developers wanting to leverage them in their scenarios. Speech allows bots to exist where traditional applications wouldn't stand a chance: From a phone line call to hardware devices with no screens or keyboards. Speech can truly be everywhere.
+
+But as discussed before, it is absolutely critical to think about user experience first and consider whether speech does or does not make sense. Understanding the strengths and weaknesses of speech as an option for bots is very important.
+
+Benefits of speech:
+
+- It can be everywhere: Users without even smart phones can dial a number that is answered by a bot, via voice. Hardware devices without screens can all become devices where speech just works
+- It can feel "natural": There is no menu, no setup, no buttons.
+- It can assist other UI elements: A bot may be displaying a chart, but also explaining the key points of that chart via speech.
+- Sometimes, speech is the only option: A user who is driving a car simply can't type. This is why bots have been so widely discussed in automotive scenarios. Speech is also fundamental for users who are visually impaired: Applications that work seamlessly with a UI or purely with speech are fantastic ways of democratizing technology for those who can't make sure of traditional user interfaces.
+
+Weaknesses of speech:
+
+- There is only so much information you can send/receive via speech: Try to describe a detailed chart or deliver most game interfaces and this becomes obvious. Speech forces the bot to keep the communication to a minimum with the user.
+- Is the bot going to work on a noisy environment? Will there be many other users around talking at the same time? Careful: This can easily become a frustrating experience.
+- Speech is more prone to error than typing. Typing is more prone to error than clicking at buttons. Assume users will need to correct what they said more often with speech.
+- A surprisingly large number of users are just not going to use speech. Many users just don't feel comfortable with it.
+- Speech is not the ideal channel for sensitive data. Let's say you need to reset your password by calling a bot which will verify your identity asking a few questions. Maybe you are around other people and don't want to speak out lout your PIN or social security number. Also, once your bot resets your password, how is it supposed to tell you your new one? Surely that won't work via voice only...
+- Speech is not necessarily faster: Quite the opposite actually, users may end up spending more time rephrasing and retrying their asks compared to other options
+
+
 ##Which one should I choose?
 
 That is the wrong question :)
@@ -71,9 +92,13 @@ Many people just aren't comfortable talking on the phone. They prefer typing.
 
 To illustrate this with some humor, imagine these scenarios:
 
+
+
 ##OK, which ones would prefer in which scenarios?
 
 Now that is a much better question to ask ourselves: How do users actually behave when presented to these 3 elements and how does that change given different scenarios?
+
+	TODO: Discuss how users typically prioritize this
 
  
 
