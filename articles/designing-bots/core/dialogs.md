@@ -131,11 +131,29 @@ Now in Node:
 
 Once a dialog is invoked, it will be in control of the flow. Every new message will automatically fall again at that dialog until it tells us it's done. 
 
-In C# you control that by saying context.wait(). That tells us what is the call back that will be invoked in the next time the user sends us anything. In fact, in C# you must always finish the code either with context.wait(), context.fail() or some new redirection() such as context.forward() or context.call(). Not doing so will cause an error, because your code is confusing the framework by not telling it what it should do with the next time the user sends us a message.
+In C# you control that by saying context.wait(). That tells us what is the callback that will be invoked in the next time the user sends us anything. In fact, in C# you must always finish the code either with context.wait(), context.fail() or some new redirection() such as context.forward() or context.call(). Not doing so will cause an error, because your code is confusing the framework by not telling it what it should do the next time the user sends us a message.
 
-In Node these flows have a little more automation built in: A dialog invokes another by doing session.beginDialog(). And when a dialog is "done", it tells us by saying session.endDialog(). So session.endDialog() in node is similar to context.Done() in C#. They basically remove the dialog from the Stack.
+In Node these flows have a little more automation built in: A dialog invokes another by doing session.beginDialog(). And when a dialog is "done", it tells us by saying session.endDialog(). So session.endDialog() in Node is similar to context.Done() in C#. They basically remove the dialog from the Stack.
 
 ##Hang on: Stack? What Stack??
 
 Whenever one Dialog invokes another, the bot builder will "stack" them up. Whenever a dialog "finishes", the bot builder will then remove it from the stack. This is one of the most important concepts developers need to keep in mind: Stacks are how we control which dialogs invoked other dialogs following which specific path. They are all there waiting for the thing they called to finish, so they can gain control again and continue. Just like modal screens in typical apps or websites.
 
+
+##Hang on: Dialogs, Stacks and Humans
+
+It is natural to expect that users navigate across dialogs and such dialogs stack up, at some point they will navigate "back" and "un-stack" these dialogs one by one: User starts from root dialog, invokes the new order dialog and from there, invokes the product search dialog. Then, user picks a product, confirms, goes back to the order, completes it and now we're back at the root dialog.
+
+This normally works well, except for one little detail: Humans
+
+![bot](../../media/designing-bots/core/stack-issue.png)
+
+Humans don't communicate in "stacks": They change their minds, a lot. Your bot may be deep down a sequence of dialogs, all stacked up waiting for a final confirmation so you can submit the order and suddenly the user decides to do something else, or has a question. In the example above our dialog explicitly waits for a yes/no answer and the user gives it a totally random answer, which is in fact a follow up question. What should your dialog do?
+
+- Insist that the user should answer the question first?
+- Cancel everything the user was doing, reset the whole stack and start over trying to answer that question?
+- Try to answer that question and then try to go back to that yes/no question and resume from where it left?
+
+The answer, of course, is: It depends. It will depend on your scenario, how likely this would happen, and what the user would expect the bot to do. Managing this navigation across dialogs and helping users not getting lost is a fundamental component of bot design.
+
+Which leads us to the [next topic](navigation.md)...
