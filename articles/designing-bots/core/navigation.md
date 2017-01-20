@@ -68,7 +68,7 @@ But the problem would be having to do this for every little question in every si
 
 In such cases we would add "catch all" handlers that will intercept those key phrases and words such as "cancel", "help", "start over" and whatever else you feel appropriate - or even more complex natural language phrases if that applies to your scenario - and then individual dialogs and prompts could just safely ignore these. In a typical web application it isn't uncommon to use global http filters that would handle, for example, requests for specific sub-folders or file extensions. A similar concept here applies:
 
-	TODO: Add code from Chris
+	TODO: Add code from Ezequiel for the prompt with cancellation/middleware
 
 ##The "mysterious bot"
 
@@ -80,5 +80,14 @@ Imagine this scenario:
 Now it is difficult to guess what is happening with this bot. Maybe it is having an outage. It may be "stuck" somewhere. It may also - perfectly common case - just be taking a while to answer. But not replying to the user nor giving any visual cue of what is going on is still not a great idea. The user in this case has no idea of what is going on, whether they need to repeat the same question, how to cancel/start over... No cue is being given, at all.
 
 There are a few things we can do to help here. 
+
+	TODO: Add examples of scorables from Chris
+
+
+##The "captain obvious bot"
+
+Imagine this scenario:
+
+![bot](../../media/designing-bots/core/captainobvious-bot.png)
 
 (to be continued, I'm tired...)
