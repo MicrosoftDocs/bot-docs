@@ -17,6 +17,6 @@ ms.author: rstand@microsoft.com
 ---
 # Bot Framework Documentation
 
-Learn how to use the Bot Framework to build, register, and publish bots. Tutorials, videos, references, and other documentation show you how to develop on this rich platform.
+Learn how to use the Bot Framework to build, register, and publish bots. Tutorials, videos, references, and other documentation show you how to develop and deploy bots using the rich platform and tools.
 
-*Card content coming soon*
+*Content coming soon, including quick start links to the SDKs.*
