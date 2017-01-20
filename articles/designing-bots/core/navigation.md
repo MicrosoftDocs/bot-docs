@@ -15,7 +15,7 @@ ms.date: 01/19/2017
 ms.author: mat.velloso@microsoft.com
 
 ---
-# Bot Design Center - Navigations
+# Bot Design Center - Navigation
 
 
 ##Where am I?
