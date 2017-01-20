@@ -20,7 +20,7 @@ ms.author: rstand@microsoft.com
 > * [C#](bot-framework-dotnet-getstarted.md)
 > * [Node.js](bot-framework-nodejs-getstarted.md)
 > * [Azure Bot Service](bot-framework-azure-getstarted.md)
-> * [REST](bot-framework-rest-getstarted)
+> * [REST](bot-framework-rest-getstarted.md)
 >
 
 ## .NET

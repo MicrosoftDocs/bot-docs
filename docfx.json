@@ -23,9 +23,7 @@
           "**/obj/**",
           "**/includes/**",
           "**/_themes/**"
-        ],
-        "src": "bread",
-        "dest": "bread"
+        ]
       }
     ],
     "resource": [
