@@ -15,7 +15,7 @@ ms.date: mm/dd/yyyy
 ms.author: rstand@microsoft.com
 
 ---
-# Get started with Bot Builder and C\#
+# Get started with Bot Builder and C&#35;
 > [!div class="op_single_selector"]
 > * [C#](bot-framework-dotnet-getstarted.md)
 > * [Node.js](bot-framework-nodejs-getstarted.md)
@@ -24,3 +24,5 @@ ms.author: rstand@microsoft.com
 >
 
 ## .NET
+> [!NOTE]
+> Content coming soon

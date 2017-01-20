@@ -24,3 +24,5 @@ ms.author: rstand@microsoft.com
 >
 
 ## Azure Bot Service
+> [!NOTE]
+> Content coming soon
