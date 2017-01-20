@@ -26,3 +26,24 @@ ms.author: rstand@microsoft.com
 ## .NET
 > [!NOTE]
 > Content coming soon
+
+> [!div class="tabbedCodeSnippets"]
+```cs
+  var outlookClient = await CreateOutlookClientAsync("Calendar");
+  var events = await outlookClient.Me.Events
+    .Take(10)
+    .ExecuteAsync();
+  foreach(var calendarEvent in events.CurrentPage)
+  {
+    System.Diagnostics.Debug.WriteLine("Event '{0}'.", calendarEvent.Subject);
+  }
+```
+```javascript
+  outlookClient.me.events.getEvents().fetch().then(function (result) {
+      result.currentPage.forEach(function (event) {
+  console.log('Event "' + event.subject + '"')
+      });
+  }, function(error) {
+      console.log(error);
+  });
+```
