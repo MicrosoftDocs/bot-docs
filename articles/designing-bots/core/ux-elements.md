@@ -23,12 +23,12 @@ ms.author: mat.velloso@microsoft.com
 Bots typically rely on one or more of these 3 elements as their way of exchanging information with users:
 
 - Rich user controls: Often named "cards" (but not necessarily restricted to just cards), bots can mimic apps (or even run embedded in those apps) by using well-known controls such as buttons, images, carousels and menus. When embedded in a custom app or website they can even go further and represent virtually any UI control by leveraging the power of the app hosting them.
-- Text and often, natural language: Bots can allow free text input from users and use natural language understanding APIs such as [LUIS.ai](https://luis.ai) to understand what the user is asking for. Note that not all text input has to be a natural language input: Many bots accept commands instead and use simple mechanisms such as regex in order to parse them. This is perfectly acceptable in many scenarios.
+- Text and often, natural language: Bots can allow free text input from users and use natural language understanding APIs such as [LUIS.ai](https://www.luis.ai) to understand what the user is asking for. Note that not all text input has to be a natural language input: Many bots accept commands instead and use simple mechanisms such as regex in order to parse them. This is perfectly acceptable in many scenarios.
 - Speech: Some bots leverage speech input and/or output as part of their experience. They may even run on devices that won't have a keyboard or a monitor, which leaves them with speech as the only option for communicating with the user.
 
 ##Rich user controls
 
-For decades application and website developers have relied on UI controls in order to enable users to interact with their applications. These UI controls, it turns out, work very well. A very common mistake by beginner bot developers is to dismiss the value of these elements as not being "AI enough". Again, let us recap [what we discussed earlier](../designing-bots/#what-makes-a-bot-great): Success for your bot is not to beat the Touring Test, but instead solve your user's needs in the best/quickest possible way. Whether such solution uses AI or a simple button isn't relevant at all. 
+For decades application and website developers have relied on UI controls in order to enable users to interact with their applications. These UI controls, it turns out, work very well. A very common mistake by beginner bot developers is to dismiss the value of these elements as not being "AI enough". Again, let us recap [what we discussed earlier](../#what-makes-a-bot-great): Success for your bot is not to beat the Touring Test, but instead solve your user's needs in the best/quickest possible way. Whether such solution uses AI or a simple button isn't relevant at all. 
 
 ##Text and natural language
 
