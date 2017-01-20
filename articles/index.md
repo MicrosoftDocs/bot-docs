@@ -6,9 +6,6 @@ documentationcenter: BotFramework-Docs
 author: RobStand
 manager: cmullins
 
-layout: HubPage
-hide_bc: true
-
 ms.service: required
 ms.devlang: may be required
 ms.topic: article
