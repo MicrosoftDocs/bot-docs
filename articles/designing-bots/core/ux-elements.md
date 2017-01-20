@@ -114,7 +114,7 @@ To illustrate this with some humor, imagine these scenarios:
 	Users might not be comfortable with sending and receiving complex and sensitive information 
 	such as passwords via speech.  
 
-##OK, which ones would prefer in which scenarios?
+##OK, which ones would users prefer in which scenarios?
 
 Now that is a much better question to ask ourselves: How do users actually behave when presented to these 3 elements and how does that change given different scenarios?
 
