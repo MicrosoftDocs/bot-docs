@@ -1,25 +1,46 @@
-#Overview
+# Overview
 ## [What is the Bot Framework?](bot-framework-overview.md)
 ## [How the Bot Framework is different](how-bot-framework-is-different.md)
 ## [Core concepts](bot-framework-core-concepts.md)
 ## [Scenarios](bot-framework-scenarios.md)
-#Get Started
-## Create your first bot
-### [C# bot](bot-framework-dotnet-get-started.md)
-### [Node.js bot](bot-framework-nodejs-get-started.md)
-### [Azure Bot Service](bot-framework-azure-bot-service-get-started.md)
-## Test your bot
-### [Bot Framework Emulator](bot-framework-emulator-get-started.md)
-## [FAQ](bot-framework-faq.md)
-# Core Concepts
+# Designing Bots
+## [Overview](designing-bots/index.md)
+## Core Principles
+### [Saying Hello](designing-bots/core/greeting.md)
+### [Dialogs](designing-bots/core/dialogs.md)
+### [Where am I?](designing-bots/core/navigation.md)
+### [Buttons, language and voice](designing-bots/core/ux-elements.md)
+## [Bot Capabilities](designing-bots/capabilities/index.md)
+### [Knowledge Base](designing-bots/capabilities/kb.md)
+### [Task Automation](designing-bots/capabilities/task.md)
+### [Bot to Web](designing-bots/capabilities/bot-to-web.md)
+### [Bot in Apps](designing-bots/capabilities/bot-in-apps.md)
+### [Bot in Websites](designing-bots/capabilities/bot-in-websites.md)
+### [Handoff to Humans](designing-bots/capabilities/human-handoff.md)
+## [Resources](designing-bots/resources/index.md)
+# Developing Bots
+## .NET
+### Get started
+### Reference
+### Samples
+## Node.js
+### Get started
+### Reference
+### Samples
+## REST
+### Get started
+### Reference
+## Azure Bot Service
+### Get started
+### Templates
+### Management
+# Reference
 ## Dialogs
 ## Language Understanding
 ## Channels
 ## Connectors
 ## State
 ## Security
-## Deployment
-## Management
 #Intelligence
 ## Overview
 ## Scenarios
@@ -41,25 +62,6 @@
 ## Location
 ### Getting started
 ### Examples
-# Developing Bots
-## .NET
-### Get started
-### Reference
-### Samples
-## Node.js
-### Get started
-### Reference
-### Samples
-## REST
-### Get started
-### Reference
-## Azure Bot Service
-### Get started
-### Templates
-### Management
-## Patterns
-## Conversation patterns
-## Integrating with business logic
-## Other architecture patterns
-# Designing Bots
-## Mat's content...
+# Resources
+## Downloads
+## Tools
