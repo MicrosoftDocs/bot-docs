@@ -19,4 +19,11 @@ ms.author: rstand@microsoft.com
 
 Learn how to use the Bot Framework to build, register, and publish bots. Tutorials, videos, references, and other documentation show you how to develop and deploy bots using the rich platform and tools.
 
-*Content coming soon, including quick start links to the SDKs.*
+## Documentation
+This documentation will show you how to build a bot from scratch and register it in the Bot Directory. *content to follow*
+
+## Get the SDK
+The Bot Framework SDK comes in two flavors, C# and Node.js. *content to follow*
+
+## Latest Release
+Notes about the latest release of the Bot Framework. *content to follow*

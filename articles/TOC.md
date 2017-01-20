@@ -1,5 +1,5 @@
+# [Welcome](index.md)
 # Overview
-## [Welcome](index.md)
 ## [What is the Bot Framework?](bot-framework-overview.md)
 ## [How it's different](bot-framework-benefits.md)
 ## [Key scenarios](bot-framework-scenarios.md)
@@ -19,6 +19,7 @@
 ### [Handoff to Humans](designing-bots/capabilities/human-handoff.md)
 ## [Resources](designing-bots/resources/index.md)
 # Developing Bots
+## Overview
 ## .NET
 ### Get started
 ### Reference
@@ -36,6 +37,8 @@
 ### Management
 # Core Concepts
 ## Dialogs
+## Channels
+## Connectors
 ##Intelligence
 ### Vision
 ### Speech
@@ -43,8 +46,6 @@
 ### Knowledge
 ### Search
 ### Location
-## Channels
-## Connectors
 ## State
 ## Security
 # Resources
