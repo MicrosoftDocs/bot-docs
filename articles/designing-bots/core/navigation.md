@@ -22,7 +22,7 @@ ms.author: mat.velloso@microsoft.com
 
 Websites have breadcrumbs, apps have menus, web browsers offer buttons to navigate forward and back and so on. Enter bots and we are now in a whole new world where those simple, tested and validated solutions for keeping the user aware of where they are haven't been widely established yet.
 
-How do we ensure that a user doesn't get lost in a conversation with a bot? Can a user navigate "back" in a chat? How to go to the "main menu"?
+How do we ensure that a user doesn't get lost in a conversation with a bot? Can a user navigate "back" in a chat? How to go to the "main menu"? How do we "cancel" an operation?
 
 Let us look at some common traps of conversational interfaces and how to overcome them. We will do that by describing some "personality disorders" that bots often display:
 
@@ -89,5 +89,17 @@ There are a few things we can do to help here.
 Imagine this scenario:
 
 ![bot](../../media/designing-bots/core/captainobvious-bot.png)
+
+
+	TODO: describe this one
+
+##The "bot that can't forget"
+
+Imagine this scenario:
+
+![bot](../../media/designing-bots/core/rememberall-bot.png)
+
+
+	TODO: describe this one
 
 (to be continued, I'm tired...)
