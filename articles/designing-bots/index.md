@@ -31,7 +31,7 @@ While both in the web and app worlds there are many well-established best practi
 If you are building a bot, regardless of the scenario you have at hand, it is safe to assume that you are expecting users to use it. It is also safe to assume that you are hoping that these users will prefer this experience over the alternatives, whether they are apps, websites, making phone calls or whatever other possible way they could use to solve that particular problem. In other words, your bot is competing for that user’s time against things like apps or websites (it can also, of course, be part of those apps and websites in the hope that it will improve these existing experiences).
 
 
-But how can we tell if a bot has great chances of succeeding at that ultimate goal of bringing/keeping users? 
+But how can we tell if a bot has great chances of succeeding at that ultimate goal of bringing/keeping users?
 
 ###Factors that <u>do not</u> guarantee successful bots:
 
@@ -45,13 +45,13 @@ But how can we tell if a bot has great chances of succeeding at that ultimate go
 
 - Voice: Many developers assume that enabling bots for speech will lead to great experiences. This isn’t always the case. Actually, forcing users to use voice can very easily turn into a frustrating experience. As you design a bot, always ask if voice is really the right channel for the given problem. Is there going to be a noisy environment? Is voice going to be enough for the kind of information that needs to be shared with the user? It may be, but in many cases, it won’t.
 
- 
+
 ###Ok, so what does make a bot great?
 
 ![bot](../media/designing-bots/thinking-bot.png)
 
-If you ask any experienced app or website developer what makes their apps and websites great, it usually comes down to one thing: User experience. 
-It turns out that didn’t change because of bots. The key factor, the only thing we should be laser focused on when designing and building any bot is this: What is the user experience going to be? 
+If you ask any experienced app or website developer what makes their apps and websites great, it usually comes down to one thing: User experience.
+It turns out that didn’t change because of bots. The key factor, the only thing we should be laser focused on when designing and building any bot is this: What is the user experience going to be?
 
 Examples:
 
@@ -69,10 +69,11 @@ Examples:
 
 Note that none of these things directly relates to how smart, how much natural language, whether the bot uses machine learning or which programming language was used. Simply put: Users won’t care. They will, though, care a lot if your bot makes them type too much, talk too much, repeat what they want several times or have to explain things the bot should automatically know already.
 
-	Tip: User experience is everything. That doesn't change whether you are building a bot, an app or both
+> [!TIP]
+>User experience is everything. That doesn't change whether you are building a bot, an app or both.
 
 Whenever you are not sure about the right design approach, we suggest you to step back and forget that you are building a bot: How would you solve that problem in an app or a website?
 
-Likely the answer won’t be far from that, simply because decades of learned lessons around building great UX aren’t going to be thrown away simply because we are now building bots instead. If you are a developer with plenty of experience designing great user experiences on web or apps, here’s the great news: That experience does count, a lot, when building bots. 
+Likely the answer won’t be far from that, simply because decades of learned lessons around building great UX aren’t going to be thrown away simply because we are now building bots instead. If you are a developer with plenty of experience designing great user experiences on web or apps, here’s the great news: That experience does count, a lot, when building bots.
 
-Trust your instincts. If something feels like it doesn’t make sense, then it probably doesn’t. 
+Trust your instincts. If something feels like it doesn’t make sense, then it probably doesn’t.
