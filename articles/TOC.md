@@ -6,6 +6,8 @@
 # Get Started
 ## [Use .NET](bot-framework-dotnet-getstarted.md)
 ## [Use Node.js](bot-framework-nodejs-getstarted.md)
+## [Use Azure Bot Service](bot-framework-azure-getstarted.md)
+## [Use REST](bot-framework-rest-getstarted.md)
 # Designing Bots
 ## [Overview](designing-bots/index.md)
 ## Core Principles

@@ -15,12 +15,12 @@ ms.date: mm/dd/yyyy
 ms.author: rstand@microsoft.com
 
 ---
-# Get started with Bot Builder and C#
+# Get started with Bot Builder and C\#
 > [!div class="op_single_selector"]
 > * [C#](bot-framework-dotnet-getstarted.md)
 > * [Node.js](bot-framework-nodejs-getstarted.md)
 > * [Azure Bot Service](bot-framework-azure-getstarted.md)
->
+> * [REST](bot-framework-rest-getstarted)
 >
 
 ## .NET
