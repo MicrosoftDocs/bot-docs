@@ -1,6 +1,6 @@
 # Overview
 ## [What is the Bot Framework?](bot-framework-overview.md)
-## [How the Bot Framework is different](bot-framework-benefits.md)
+## [How it's different](bot-framework-benefits.md)
 ## [Key scenarios](bot-framework-scenarios.md)
 # Designing Bots
 ## [Overview](designing-bots/index.md)
