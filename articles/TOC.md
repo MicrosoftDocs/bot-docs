@@ -4,10 +4,10 @@
 ## [How it's different](bot-framework-benefits.md)
 ## [Key scenarios](bot-framework-scenarios.md)
 # Get Started
-## [Use .NET](bot-framework-dotnet-getstarted.md)
-## [Use Node.js](bot-framework-nodejs-getstarted.md)
-## [Use Azure Bot Service](bot-framework-azure-getstarted.md)
-## [Use REST](bot-framework-rest-getstarted.md)
+## [Use .NET](get-started/bot-framework-dotnet-getstarted.md)
+## [Use Node.js](get-started/bot-framework-nodejs-getstarted.md)
+## [Use Azure Bot Service](get-started/bot-framework-azure-getstarted.md)
+## [Use REST](get-started/bot-framework-rest-getstarted.md)
 # Designing Bots
 ## [Overview](designing-bots/index.md)
 ## Core Principles
