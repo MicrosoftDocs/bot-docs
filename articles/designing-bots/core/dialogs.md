@@ -125,3 +125,17 @@ Now in Node:
         }
     ])
 
+
+
+##Dialogs wait for you
+
+Once a dialog is invoked, it will be in control of the flow. Every new message will automatically fall again at that dialog until it tells us it's done. 
+
+In C# you control that by saying context.wait(). That tells us what is the call back that will be invoked in the next time the user sends us anything. In fact, in C# you must always finish the code either with context.wait(), context.fail() or some new redirection() such as context.forward() or context.call(). Not doing so will cause an error, because your code is confusing the framework by not telling it what it should do with the next time the user sends us a message.
+
+In Node these flows have a little more automation built in: A dialog invokes another by doing session.beginDialog(). And when a dialog is "done", it tells us by saying session.endDialog(). So session.endDialog() in node is similar to context.Done() in C#. They basically remove the dialog from the Stack.
+
+##Hang on: Stack? What Stack??
+
+Whenever one Dialog invokes another, the bot builder will "stack" them up. Whenever a dialog "finishes", the bot builder will then remove it from the stack. This is one of the most important concepts developers need to keep in mind: Stacks are how we control which dialogs invoked other dialogs following which specific path. They are all there waiting for the thing they called to finish, so they can gain control again and continue. Just like modal screens in typical apps or websites.
+
