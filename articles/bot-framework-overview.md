@@ -1,6 +1,6 @@
 ---
-title: TBD | Bot Framework
-description: Article description that will be displayed on landing pages and in most search results
+title: What is the Bot Framework? | Bot Framework
+description: Overview of the Bot Framework and its capabilities.
 services: service-name
 documentationcenter: BotFramework-Docs
 author: RobStand
@@ -23,7 +23,9 @@ A bot is a web service that interacts with users in a conversational format. Use
 
 The following conversation shows a bot that schedules salon appointments. The bot understands the user's intent, presents appointment options using action buttons, displays the user's selection when they tap an appointment, and then sends a thumbnail card that contains the appointment's specifics.
 
+<div style="text-align:center" markdown="1">
 ![salon bot example](https://docs.botframework.com/en-us/images/connector/salon_bot_example.png)
+</div>
 
 To build your bot, the Framework provides a [.NET SDK](/en-us/csharp/builder/sdkreference/) and [Node.js SDK](/en-us/node/builder/overview/). These SDKs provide features such as dialogs and built-in prompts that make interacting with users much simpler. For those using other languages, see the framework’s [REST API](/en-us/connector/overview/). The Bot Builder SDK is provided as open source on GitHub (see [BotBuilder](https://github.com/Microsoft/BotBuilder)).
 

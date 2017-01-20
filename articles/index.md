@@ -3,7 +3,7 @@ title: Home | Bot Framework
 description: Article description that will be displayed on landing pages and in most search results
 services: Bot Framework
 documentationcenter: BotFramework-Docs
-author: rstand
+author: RobStand
 manager: cmullins
 
 ms.service: required

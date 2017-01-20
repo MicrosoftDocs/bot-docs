@@ -1,7 +1,6 @@
 # Overview
 ## [What is the Bot Framework?](bot-framework-overview.md)
-## [How the Bot Framework is different](how-bot-framework-is-different.md)
-## [Core concepts](bot-framework-core-concepts.md)
+## [s](bot-framework-core-concepts.md)
 ## [Scenarios](bot-framework-scenarios.md)
 # Designing Bots
 ## [Overview](designing-bots/index.md)
@@ -34,34 +33,19 @@
 ### Get started
 ### Templates
 ### Management
-# Reference
+# Core Concepts
 ## Dialogs
-## Language Understanding
+##Intelligence
+### Vision
+### Speech
+### Language
+### Knowledge
+### Search
+### Location
 ## Channels
 ## Connectors
 ## State
 ## Security
-#Intelligence
-## Overview
-## Scenarios
-## Vision
-### Getting started
-### Examples
-## Speech
-### Getting started
-### Examples
-## Language
-### Getting started
-### Examples
-## Knowledge
-### Getting started
-### Examples
-## Search
-### Getting started
-### Examples
-## Location
-### Getting started
-### Examples
 # Resources
 ## Downloads
 ## Tools
