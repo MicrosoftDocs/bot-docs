@@ -5,6 +5,7 @@
 ## [Key scenarios](bot-framework-scenarios.md)
 # Get Started
 ## [Use .NET](bot-framework-dotnet-getstarted.md)
+## [Use Node.js](bot-framework-nodejs-getstarted.md)
 # Designing Bots
 ## [Overview](designing-bots/index.md)
 ## Core Principles
