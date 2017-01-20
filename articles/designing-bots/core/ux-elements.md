@@ -104,17 +104,28 @@ To illustrate this with some humor, imagine these scenarios:
 
 ![how users talk](../../media/designing-bots/core/speech-limit3.png)
 
-	Tip: Speech implies latency. Don't underestimate how much quicker just pressing a button is in comparison. Users gravitate to the experience that does what they want in the quickest possible way. 
+	Tip: Speech implies latency. Don't underestimate how much quicker just pressing a button is in 
+	comparison. 
+	Users gravitate to the experience that does what they want in the quickest possible way. 
 
 ![how users talk](../../media/designing-bots/core/speech-limit4.png)
 
-	Tip: Speech may not be a convenient channel when sensitive information is being transmitted. Users might not be comfortable with sending and receiving complex and sensitive information such as passwords via speech.  
+	Tip: Speech may not be a convenient channel when sensitive information is being transmitted.
+	Users might not be comfortable with sending and receiving complex and sensitive information 
+	such as passwords via speech.  
 
 ##OK, which ones would prefer in which scenarios?
 
 Now that is a much better question to ask ourselves: How do users actually behave when presented to these 3 elements and how does that change given different scenarios?
 
-	TODO: Discuss how users typically prioritize this
+In our experience observing how users end up using different types of bots in different scenarios, there are some patterns to note:
+
+1. Users prefer buttons and rich controls first. They are, by far, the quickest ways to get things done and the most discoverable ones. They tend to start there.
+2. As a second option, they will prefer text. Typing isn't as practical as pressing a button, but still useful in many cases. But be careful with the conditions: Typing on a mobile device is harder than on a keyboard. Some users will abbreviate a lot of expressions, which makes it harder to use natural language APIs to parse what they are saying
+3. Speech is typically preferred when typing is just not an option: The user may be using a "personal trainer bot" with buttons and text, but if such user decides to go for a run, then all they will be willing to use is the bluetooth earbud to communicate with the bot. They may have a weather bot they typically type with, but when driving their car they would rather just use voice. 
+
+Again, these 3 options aren't mutually exclusive. They can all be used together and we tend to prefer when that is possible. Still, even when the 3 options are all available, we observe the pattern above to repeat itself often.
+
 
  
 
