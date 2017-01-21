@@ -56,10 +56,40 @@ Once the user chooses to reset the password, we are now redirected to the ResetP
 
 Note that the ResetPasswordDialog invokes two other dialogs, one for collecting the user's phone number and another for collecting the birth date. John decided to separate these tasks in their own dialogs. That doesn't have to be this way, but John imagined that this would not only simplify the code of every dialog but also increase the chances of having some of these dialogs to be reused in future scenarios and even other bots... just like John used to do with apps and websites. Again, little difference here.
 
-Now for the PromptStringRegex dialog we see that John added some alternate flows. Basically John is trying to protect the bot from the [stubborn bot scenario discussed earlier](../core/navigation.md#the-stubborn-bot) where the bot is lost at asking the same question in an eternal loop.
+Now for the PromptStringRegex dialog we see that John added some alternate flows. Basically John is trying to protect the bot from the [stubborn bot scenario discussed earlier](../core/navigation.md#the-stubborn-bot) where the bot is lost at asking the same question in an eternal loop because the user is entering invalid data.
+
+![Dialog Structure](../../media/designing-bots/capabilities/simple-task4.png)
+
+As you can see, John applied the same experience he has with building for web and apps. John didn't introduce any advanced natural language processing to this point and the bot still does what is needed to help out the users.
 
 
+##But this isn't smart enough :(
 
+
+Let us revisit the topic of [what makes bots great](../index.md#what-makes-a-bot-great): 
+
+Whether and how much the bot uses natural language or any other AI capability is less relevant to how useful the bot actually is. In fact, John may very well add natural language on top of the design he already did. The user could simply ask "I can't remember my password" and the bot could still direct the user to the same flows discussed above from there. But the key question John always had in mind is: "Am I solving the problem my users and my company asked me to solve?". User experience is what comes first.
+
+The point of this sample was to show that not all bots may need natural language. They can, in fact, look a lot like apps. We also wanted to demonstrate how a developer can think about designing dialogs in a spec document. 
+
+
+##Why not just building an app instead?
+
+
+That is a great question to ask. Many developers may decide to build apps instead. In fact, many developers end up deciding to embed their bots into their apps, using Bot Framework's DirectLine API or Web Chat controls. This gets them the best of both worlds: A rich app experience and a conversational experience, all in one place.
+
+But there is a cost: Building an app or website, making sure it runs on all clients and platforms, packaging, deploying, hoping users will download/install them... all these things add cost. A bot may be a much simpler way of solving the same problem.
+
+A bot may also exist in places where apps can't reach: John may, in the future, add natural language and speech on top of these dialogs and have his bot answering phone calls. John may even have the bot work via text messages. The company may setup some kiosks in all the building floors and have the bot embedded into that experience to help out users who forgot their passwords. 
+
+Having that as a bot gives John freedom to choose and extend.
+
+So while we ask ourselves whether to build an application or a bot, perhaps in a not so distant future, there will be no distinguishable difference between these options: Bots will look more like apps and apps will look more like bots.
+
+
+##Show me the code!
+
+If you want to see how the code for the design above looks like, take a look how John built a first prototype in [Node](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FNode%2Fcapability-SimpleTaskAutomation&version=GBmaster&_a=contents) and in [C#](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FCSharp%2Fcapability-SimpleTaskAutomation&version=GBmaster&_a=contents) 
 
 
 
