@@ -91,6 +91,10 @@ So while we ask ourselves whether to build an application or a bot, perhaps in a
 
 If you want to see how the code for the design above looks like, take a look how John built a first prototype in [Node](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FNode%2Fcapability-SimpleTaskAutomation&version=GBmaster&_a=contents) and in [C#](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FCSharp%2Fcapability-SimpleTaskAutomation&version=GBmaster&_a=contents) 
 
+You can read more about these samples [here](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FCSharp%2Fcapability-SimpleTaskAutomation%2FREADME.md&version=GBmaster&_a=contents) and see how the bot ended up looking like:
+
+![Dialog Structure](../../media/designing-bots/capabilities/simple-task5.png)
+
 
 
 
