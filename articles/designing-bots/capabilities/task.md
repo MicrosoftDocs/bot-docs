@@ -22,7 +22,7 @@ ms.author: mat.velloso@microsoft.com
 ##When bots are just simple apps
 
 
-We have previously discussed how bots can leverage elements such as rich user controls, text and voice. We also discussed that not all bots may use all these elements together. In fact, a large number of bots may not even have an actual "conversation" with the user at all: These bots resemble the most with what typical apps and websites are today. They will likely have some user controls and help the user achieve a few automated tasks but whether that requires natural language in text or voice is not a requirement.
+We have previously discussed how bots can leverage elements such as rich user controls, text and voice. We also discussed that not all bots may use all these elements together. In fact, a large number of bots may not even have an actual "conversation" with the user at all: These bots resemble the most what typical apps and websites are today. They will likely have some user controls and help the user achieve a few automated tasks but whether that requires natural language in text or voice is not a requirement.
 
 
 ##Hang on: A chatbot that can't have a conversation? Nonsense! 
@@ -76,7 +76,7 @@ The point of this sample was to show that not all bots may need natural language
 ##Why not just building an app instead?
 
 
-That is a great question to ask. Many developers may decide to build apps instead. In fact, many developers end up deciding to embed their bots into their apps, using Bot Framework's DirectLine API or Web Chat controls. This gets them the best of both worlds: A rich app experience and a conversational experience, all in one place.
+That is a great question to ask. Many developers may decide to build apps instead. In fact, many developers end up deciding to embed their bots into their apps, using [Bot Framework's DirectLine API](https://docs.botframework.com/en-us/restapi/directline3/#navtitle) or [Web Chat control](https://github.com/Microsoft/BotFramework-WebChat). This gets them the best of both worlds: A rich app experience and a conversational experience, all in one place.
 
 But there is a cost: Building an app or website, making sure it runs on all clients and platforms, packaging, deploying, hoping users will download/install them... all these things add cost. A bot may be a much simpler way of solving the same problem.
 
