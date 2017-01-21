@@ -10,7 +10,7 @@
 ### [Dialogs](designing-bots/core/dialogs.md)
 ### [Where am I?](designing-bots/core/navigation.md)
 ### [Buttons, language and speech](designing-bots/core/ux-elements.md)
-## [Bot Capabilities](designing-bots/capabilities/index.md)
+## Bot Capabilities
 ### [Knwoledge Base](designing-bots/capabilities/kb.md)
 ### [Task Automation](designing-bots/capabilities/task.md)
 ### [Bot to Web](designing-bots/capabilities/bot-to-web.md)
