@@ -52,6 +52,8 @@ Let us look at a high level flow of how a bot and a website can interact with ea
 
 The reason for the magic number is to reinforce additional security. Remember, that bot may be chatting with a group of users in that same window. The hyperlink was intended to one specific user, but any other user may have clicked at it. Without the magic number validation, we simply can't tell. One user could be authenticating and injecting access tokens in some other user's session. This isn't just a risk for group chats: Without the magic number, basically any user who obtains that hyperlink in any ways is now capable of spoofing other users identities. This can quickly escalate into all sorts of security breaches. 
 
+The magic number should be a random number generated using a strong cryptography library. For an example of that, see how [AuthBot does it in C# here](https://github.com/MicrosoftDX/AuthBot/blob/master/AuthBot/Controllers/OAuthCallbackController.cs#L138). [AuthBot](https://github.com/MicrosoftDX/AuthBot) is a library that enables bots built in Microsoft Bot Framework to use the flow described in this article in order to authenticate users in websites and then allow the bot code to use the access tokens generated from it. AuthBot does not make assumptions about different channels capabilities so the idea is that such flows such work across all kinds of channels. There may be exceptions: For example, speech only channels would require more specific flows, to be discussed in the future.
+
 The need for mitigating the flow with a magic number should go away as channels build their own embedded web views. Again, lessons learned from the app world apply here.
 
 
@@ -63,4 +65,8 @@ The plumbing used for a website to signal back the bot and make it interact agai
 ##Show me examples!
 
 
-The plumbing used for a website to signal back the bot and 
+Some examples of the Bot to Web flows are:
+
+- A bot that leverages PayPal payments, both in [C#](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FCSharp%2Fcapability-botToWeb&version=GBmaster&_a=contents) and in [Node](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FNode%2Fcapability-botToWeb&version=GBmaster&_a=contents).
+- [AuthBot](https://github.com/MicrosoftDX/AuthBot/), discussed above in this article, allows OAuth flows to be bound to bots built in Microsoft Bot Framework
+ 
