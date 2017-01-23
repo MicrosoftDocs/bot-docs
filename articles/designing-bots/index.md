@@ -69,7 +69,7 @@ Examples:
 
 Note that none of these things directly relates to how smart, how much natural language, whether the bot uses machine learning or which programming language was used. Simply put: Users won’t care. They will, though, care a lot if your bot makes them type too much, talk too much, repeat what they want several times or have to explain things the bot should automatically know already.
 
-	Tip: User experience is everything. That doesn't change whether you are building a bot, an app or both
+>Tip: User experience is everything. That doesn't change whether you are building a bot, an app or both
 
 Whenever you are not sure about the right design approach, we suggest you to step back and forget that you are building a bot: How would you solve that problem in an app or a website?
 

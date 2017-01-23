@@ -94,25 +94,19 @@ To illustrate this with some humor, imagine these scenarios:
 
 ![how users talk](../../media/designing-bots/core/speech-limit1.png)
 
-	Tip: There is only so much information you can send via voice only. It is a low bandwidth channel
+>Tip: There is only so much information you can send via voice only. It is a low bandwidth channel
 
 ![how users talk](../../media/designing-bots/core/speech-limit2.png)
 
-	Tip: Just natural language doesn't magically make every experience "natural". 
-	In many cases, a natural experience requires a combination of inputs, including visual cues,
-	buttons, text and maybe speech.
+>Tip: Just natural language doesn't magically make every experience "natural". In many cases, a natural experience requires a combination of inputs, including visual cues,	buttons, text and maybe speech.
 
 ![how users talk](../../media/designing-bots/core/speech-limit3.png)
 
-	Tip: Speech implies latency. Don't underestimate how much quicker just pressing a button is in 
-	comparison. 
-	Users gravitate to the experience that does what they want in the quickest possible way. 
+>Tip: Speech implies latency. Don't underestimate how much quicker just pressing a button is in comparison. Users gravitate to the experience that does what they want in the quickest possible way. 
 
 ![how users talk](../../media/designing-bots/core/speech-limit4.png)
 
-	Tip: Speech may not be a convenient channel when sensitive information is being transmitted.
-	Users might not be comfortable with sending and receiving complex and sensitive information 
-	such as passwords via speech.  
+>Tip: Speech may not be a convenient channel when sensitive information is being transmitted. Users might not be comfortable with sending and receiving complex and sensitive information such as passwords via speech.  
 
 ##OK, which ones would users prefer in which scenarios?
 
