@@ -55,7 +55,7 @@ In other words, there is no "right answer". It really depends on what kind of no
 
 So we will discuss basically two kinds of proactive messages that allow us to control and decide on any of the 3 cases discussed above:
 
-##Ad-hoc and dialog based proactive messages
+##Ad-hoc and dialog-based proactive messages
 
 For the sake of simplicity, we will explore two main kinds of proactive messages: Ad-hoc and dialog based:
 
@@ -160,4 +160,86 @@ For more complete examples of ad-hoc proactive messages:
 - [End to end Node sample](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FNode%2Fcore-proactiveMessages%2FsimpleSendMessage&version=GBmaster&_a=contents)
 
 
+###Dialog-based proactive messages
 
+**Dialog-based** proactive messages adds more complexity to the examples above: The bot now needs to be aware of the existing conversation and what it wants to do with it before deciding on how to inject a proactive message.
+
+A theoretical example: Imagine a bot that needs to trigger a survey at a given time. When such time event occurs, the bot needs to stop any existing conversation with the user, if any, and then redirect the user to a "SurveyDialog". The user will stay at the SurveyDialog for as long as it is needed and when such dialog is done, it will be removed from the stack, leaving the user back to where he/she was before.
+
+So effectively this is more than just a notification: The bot is changing the topic of the existing conversation. It may, in fact, even decide to completely reset the existing conversation as well as part of this notification so the bot, as a result, will interrupt whatever the user is doing, forget completely about it and start a whole new topic from there.
+
+This flow starts in a similar way to the previous one: The user starts a conversation with the bot, which then record information from the user so it can start a proactive message.
+
+In C#:
+
+	public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> result)
+	{
+            var message = await result;
+			//We need to store the resumption cooke so we can get back to this conversation
+			var resumptionCookie = new ResumptionCookie(message).GZipSerialize();
+
+            await context.PostAsync("Greetings, user! I now know how to start a proactive message to you."); 
+            context.Wait(MessageReceivedAsync);
+	}
+
+This time we are using the Resumption Cookie. It is very similar to the address property discussed previously, but it will be more useful when we decide to add a new dialog as part of the proactive message.
+
+In Node:
+
+	var bot = new builder.UniversalBot(connector);
+
+	function sendProactiveMessage(address) {
+		var msg = new builder.Message().address(address);
+		msg.text('Hello, this is a notification');
+		msg.textLocale('en-US');
+		bot.send(msg);
+	}
+
+In the Node case, nothing really changed to this point, but will further below.
+
+Now the real change happens on how we trigger the proactive message: This time we are not just sending a message, but creating a whole dialog and adding it to the current stack of dialogs. In other words, we will take the existing conversation, no matter how many dialogs are currently involved and we will add one more, making it the one in control. That new dialog is not only going to carry the notification but also decide when to get back to the original one.
+
+In C#:
+
+	public static async Task Resume() 
+	{
+		//Recreate the message from the resumption cookie we've had stored previously
+		var message = ResumptionCookie.GZipDeserialize(resumptionCookie).GetMessage();
+		var client = new ConnectorClient(new Uri(message.ServiceUrl));
+
+		//Create a scope so we can work with state from bot framework
+		using (var scope = DialogModule.BeginLifetimeScope(Conversation.Container, message))
+		{
+			var botData = scope.Resolve<IBotData>();
+			await botData.LoadAsync(CancellationToken.None);
+
+			//This is our dialog stack
+			var stack = scope.Resolve<IDialogStack>();
+                
+			//interrupt the stack. This means that we're stopping whatever conversation that is currently happening with the user
+			//Then adding this stack to run and once it's finished, we will be back to the original conversation
+			
+			//This is the new dialog we will be injecting into the stack.
+			var dialog =new SurveyDialog();
+			//Note here we could have very well decided to reset the stack.
+			//So it would "forget" the current conversation
+			stack.Call(dialog.Void<object, IMessageActivity>(), null);
+			await stack.PollAsync(CancellationToken.None);
+
+			//flush dialog stack back to its state store
+			await botData.FlushAsync(CancellationToken.None);
+           
+		}
+	}
+
+This is evidently more complex than the first example: We are not gaining access to the bot framework's store where the dialog stack is saved and changing it by adding our new "SurveyDialog" on top. The resumption cookie gives us a simple way of serializing and deserializing the entire message we received from the user.
+
+In Node:
+
+	function startProactiveDialog(addr) {
+		// set resume:false to resume at the root dialog
+		// else true to resume the previous dialog
+		bot.beginDialog(savedAddress, "*:/survey", {}, { resume: true });  
+	}
+
+Although the code for Node is much simpler, it does require a custom file implemented with it, not listed here. [A copy of this botadapter.js file can be found here instead](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FNode%2Fcore-proactiveMessages%2FstartNewDialog%2Fbotadapter.js&version=GBmaster&_a=contents).
