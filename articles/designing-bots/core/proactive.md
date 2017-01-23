@@ -152,4 +152,12 @@ Same in Node:
 
 Again, due to the fact that Node offers the address property, we just need to construct the message and assign the address. We do, like in C#, have control over conversation IDs like described above.
 
+Note these notification events can be called virtually anywhere, from asynchronous triggers such as http requests, timers, queues or anything else the developer decides to use.
+
+For more complete examples of ad-hoc proactive messages:
+
+- [End to end C# sample](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FCSharp%2Fcore-proactiveMessages%2FsimpleSendMessage&version=GBmaster&_a=contents)
+- [End to end Node sample](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FNode%2Fcore-proactiveMessages%2FsimpleSendMessage&version=GBmaster&_a=contents)
+
+
 
