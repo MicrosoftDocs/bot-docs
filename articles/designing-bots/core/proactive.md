@@ -243,3 +243,63 @@ In Node:
 	}
 
 Although the code for Node is much simpler, it does require a custom file implemented with it, not listed here. [A copy of this botadapter.js file can be found here instead](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FNode%2Fcore-proactiveMessages%2FstartNewDialog%2Fbotadapter.js&version=GBmaster&_a=contents).
+
+Despite of the implementation differences in Node and C#, they are both achieving the same: Taking the stored data from the message, creating a new dialog and injecting into the dialog stack stored in the Bot Framework, directing the user to that new dialog.
+
+Now how does that SurveyDialog manages the exit back to the original conversation?
+
+In C#:
+
+	[Serializable]
+    public class SurveyDialog : IDialog<object>
+    {
+        public async Task StartAsync(IDialogContext context)
+        {
+            await context.PostAsync("Hello, I'm the survey dialog. I'm interrupting your conversation to ask you a question. Type \"done\" to resume");
+
+            context.Wait(this.MessageReceivedAsync);
+        }
+        public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> result)
+        {
+            if ((await result).Text == "done")
+            {
+                await context.PostAsync("Great, back to the original conversation!");
+                context.Done(String.Empty); //Finish this dialog
+            }
+            else
+            {
+                await context.PostAsync("I'm still on the survey until you type \"done\"");
+                context.Wait(MessageReceivedAsync); //Not done yet
+            }
+        }
+    }
+
+Note this dialog is very simplified for the sake of demonstrating the concept: The key point is how it has its own logic and decides when it is finished by calling context.Done(). This is in no way different than [what discussed previously about how dialogs work](../core/dialogs.md). When a dialog is finished and ready to be removed from the stack, it calls context.Done()
+
+Now in Node:
+
+	bot.dialog('/survey', [
+		function (session, args, next) {
+    		if (session.message.text=="done"){
+      			session.send("Great, back to the original conversation");
+      			session.endDialog();
+    		}else{
+          		session.send('Hello, I\'m the survey dialog. I\'m interrupting your conversation to ask you a question. Type "done" to resume');
+    		}
+		},
+		function (session, results) {
+		}
+	]);
+
+Similarly, in Node we have the same control by using session.endDialog().
+
+
+##Show me the code!
+
+The full examples of what has been discussed above are here:
+
+- [C# sample of ad-hoc proactive message](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FCSharp%2Fcore-proactiveMessages%2FsimpleSendMessage&version=GBmaster&_a=contents)
+- [C# sample of dialog-based proactive message](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FCSharp%2Fcore-proactiveMessages%2FstartNewDialog&version=GBmaster&_a=contents)
+- [Node sample of ad-hoc proactive message](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FNode%2Fcore-proactiveMessages%2FsimpleSendMessage&version=GBmaster&_a=contents)
+- [Node sample of dialog-based proactive message](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FNode%2Fcore-proactiveMessages%2FstartNewDialog&version=GBmaster&_a=contents)
+
