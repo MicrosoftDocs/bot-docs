@@ -57,8 +57,99 @@ So we will discuss basically two kinds of proactive messages that allow us to co
 
 ##Ad-hoc and dialog based proactive messages
 
-(TODO)
+For the sake of simplicity, we will explore two main kinds of proactive messages: Ad-hoc and dialog based:
+
+###Ad-hoc proactive messages
+
+**Ad-hoc** are the simplest kind of proactive messages: They make no assumptions about whether the user is currently having a separate conversation with the bot and won't try to change that conversation in any way. So essentially ad-hoc messages will be injected into the chat at whatever point they happen to occur, regardless whether this will be confusing to the user or not. Like simple notifications, they just "happen". 
+
+The steps for an ad-hoc message to work start by collecting data about the user and the current conversation.
+
+In C#, this is in a high level how we would do it:
 
 
+	public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> result)
+	{
+    	var message = await result;
+		
+		//We received a message and we will extract some key addressing info form it
+		//We will store it into a custom class (not shown here) called "ConversationStarter"
+
+		ConversationStarter.toId = message.From.Id;
+        ConversationStarter.toName = message.From.Name;
+        ConversationStarter.fromId = message.Recipient.Id;
+        ConversationStarter.fromName = message.Recipient.Name;
+        ConversationStarter.serviceUrl = message.ServiceUrl;
+        ConversationStarter.channelId = message.ChannelId;
+        ConversationStarter.conversationId = message.Conversation.Id;
+
+		//Assume the information above is saved somewhere, such as a database
+
+		await context.PostAsync("Hello user, good to meet you! I now know your address and can send you notifications in the future.");
+		context.Wait(MessageReceivedAsync);
+	}
+
+For simplicity, we are not discussing how to store those values. This is up to the bot developer to decide and quite honestly doesn't matter much to the flow discussed here.
+
+In Node, a similar approach is taken:
+
+	bot.dialog('/', function(session, args) {
+		var savedAddress = session.message.address;
+
+		//Assume the information above is saved somewhere, such as a database
+
+		var message = 'Hello user, good to meet you! I now know your address and can send you notifications in the future.';
+		session.send(message);
+	})
+
+Note that in Node we have a property named *address* which includes all the information needed so there is no need to walk properties one by one like in C#. But effectively both snippets above are doing the same thing: They are remembering the user for future notifications.
+
+With those values in mind, the ad-hoc proactive message can be sent at any time by retrieving these values and constructing a message. 
+
+So in C#:
+
+	//Use the values previously stored to create a account and connector objects
+	var userAccount = new ChannelAccount(toId,toName);
+	var botAccount = new ChannelAccount(fromId, fromName);
+	var connector = new ConnectorClient(new Uri(serviceUrl));
+
+	//Create a new message
+	IMessageActivity message = Activity.CreateMessageActivity();
+	if (!string.IsNullOrEmpty(conversationId) && !string.IsNullOrEmpty(channelId))	
+	{
+		//If we do have conversation and channel IDs stored, we will use them
+		message.ChannelId = channelId;
+	}
+	else
+	{
+		//We don't have a conversation ID so we will create one
+		//Note: If the user has an existing conversation in a channel, this will likely
+		//create a new conversation window
+		conversationId = (await connector.Conversations.CreateDirectConversationAsync( botAccount, userAccount)).Id;
+	}
+
+	//Set the addressing data in the message and send it
+	message.From = botAccount;
+	message.Recipient = userAccount;
+	message.Conversation = new ConversationAccount(id: conversationId);
+	message.Text = "Hello, this is a notification";
+	message.Locale = "en-Us";
+	await connector.Conversations.SendToConversationAsync((Activity)message);
+
+
+One key aspect to note is the conversation ID: If we reuse a conversation ID, we will likely make the bot use the existing conversation window on the client. By generating a different conversation ID, we're telling the bot to not interfere with existing conversation windows and create a new one, assuming the given client (the chat application the user is using with this bot) supports multiple conversation windows that way.
+
+Same in Node:
+
+	var bot = new builder.UniversalBot(connector);
+
+	function sendProactiveMessage(address) {
+		var msg = new builder.Message().address(address);
+		msg.text('Hello, this is a notification');
+		msg.textLocale('en-US');
+		bot.send(msg);
+	}
+
+Again, due to the fact that Node offers the address property, we just need to construct the message and assign the address. We do, like in C#, have control over conversation IDs like described above.
 
 
