@@ -11,6 +11,8 @@
 ### [Where am I?](designing-bots/core/navigation.md)
 ### [Buttons, language and speech](designing-bots/core/ux-elements.md)
 ### [Proactive Messages](designing-bots/core/proactive.md)
+### [Message Logging](designing-bots/core/message-log.md)
+
 ## Bot Capabilities
 ### [Knwoledge Base](designing-bots/capabilities/kb.md)
 ### [Task Automation](designing-bots/capabilities/task.md)
