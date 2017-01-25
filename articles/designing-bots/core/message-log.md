@@ -59,6 +59,36 @@ How to set it up in C#:
 
 This is all that it is needed: We start by registering with the bot builder our created activity logger class and implementing it from the IActivityLogger. From that point, every message being sent or received to/from the user will trigger the LogAsync method and from there we can use whatever mechanism needed to store/inspect these.
 
+Now in Node:
 
-TODO: Add middleware in Node
+
+	server.post('/api/messages', connector.listen());
+	var bot = new builder.UniversalBot(connector);
+	// Middleware for logging
+	bot.use({
+    	botbuilder: function (session, next) {
+        	myMiddleware.logIncomingMessage(session, next);
+    	},
+    	send: function (event, next) {
+        	myMiddleware.logOutgoingMessage(event, next);
+    	}
+	})
+
+We start by setting up handlers for incoming (botbuilder) and outgoing (send) handlers, and then implement them:
+
+	module.exports = {
+    	logIncomingMessage: function (session, next) {
+        	console.log(session.message.text);
+        	next();
+    	},
+    	logOutgoingMessage: function (event, next) {
+        	console.log(event.text);
+        	next();
+    	}
+	}
+
+##Show me the code!
+
+You can read [the detailed readme here](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FNode%2Fcapability-middlewareLogging%2FREADME.md&version=GBmaster&_a=contents) and see the [full C# code mentioned above here](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FCSharp%2Fcore-Middleware&version=GBmaster&_a=contents) and [the full Node sample here](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FNode%2Fcapability-middlewareLogging&version=GBmaster&_a=contents).
+
 
