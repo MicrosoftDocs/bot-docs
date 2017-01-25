@@ -20,3 +20,4 @@ ms.author: mat.velloso@microsoft.com
 
 
 https://github.com/Microsoft/BotFramework-DirectLineJS
+https://github.com/Microsoft/BotFramework-WebChat

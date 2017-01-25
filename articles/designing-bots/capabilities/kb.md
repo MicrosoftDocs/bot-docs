@@ -32,6 +32,7 @@ In all cases, knowledge bots are informing their answer on some underlying data,
 In building several of these bots we've stumbled upon some best practices, which we will delve into here. 
 
 ## Use existing services to build your knowledge bot
+
 Bots are new user interfaces, but they can still leverage the same services we've used in app development. Knowledge bots necessarily require a data store, so storage services (relational or non-relational) are a necessary consideration. We might need to build an API to access that data, or analytics services to process it. Further, we may consider leveraging cognitive services, like the Knowledge Exploration Service to inform our bot. 
 
 A particularly valuable tool to build bots with is search. Search algorithms enable a few interesting things for us:
