@@ -125,6 +125,10 @@ Now in Node:
         }
     ])
 
+You can see more detailed examples of working with multiple dialogs following these links:
+
+- [C# sample](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FCSharp%2Fcore-BasicMultiDialog&version=GBmaster&_a=contents)
+- [Node sample](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FNode%2Fcore-basicMultiDialog&version=GBmaster&_a=contents)
 
 
 ##Dialogs wait for you
