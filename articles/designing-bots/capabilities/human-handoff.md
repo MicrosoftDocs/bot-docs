@@ -47,11 +47,13 @@ How the agent is assigned to a waiting (or non waiting) user is entirely up to t
 
 ##Message router
 
-This is the hear of the hand off framework used in this scenario: The message router will receive messages from the user, then send them to the agent. It will also receive messages from the agent and send them to the user. Both user and agent are in fact chatting with the bot and not with each other. The bot will simply be a repeater of what it received from each side, to the other.
+This is the hear of the hand off framework used in this scenario: The message router will receive messages from the user, then send them to the agent. It will also receive messages from the agent and send them to the user. Both user and agent are in fact chatting with the bot and not with each other. The bot will simply be working as a router of what it received from each side, to the other.
+
+In more advanced scenarios, the bot can take more roles than just being a router: It may make decisions on what to say next and just ask for the agent's confirmation to proceed.
 
 ##Show me how!
 
-For a sample of the hand off framework, take a look at the [readme page here](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FNode%2Fbot-handoff%2FREADME.md&version=GBmaster&_a=contents) and the source code in [Node](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FNode%2Fbot-handoff&version=GBmaster&_a=contents) and C#
+For a sample of the hand off framework in the simple escalation pattern mentioned above, take a look at the [readme page here](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FNode%2Fbot-handoff%2FREADME.md&version=GBmaster&_a=contents) and the source code in [Node](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FNode%2Fbot-handoff&version=GBmaster&_a=contents) and C#
 
 
 
