@@ -20,6 +20,7 @@
 ### [Bot in Apps](designing-bots/capabilities/bot-in-apps.md)
 ### [Bot in Websites](designing-bots/capabilities/bot-in-websites.md)
 ### [Handoff to Humans](designing-bots/capabilities/human-handoff.md)
+### [Calling and IVR Bots](designing-bots/capabilities/calling-bot.md)
 ## [Resources](designing-bots/resources/index.md)
 # Rest of IA coming soon
 ## TBD
