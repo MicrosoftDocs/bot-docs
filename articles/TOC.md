@@ -12,6 +12,8 @@
 ### [Buttons, language and speech](designing-bots/core/ux-elements.md)
 ### [Proactive Messages](designing-bots/core/proactive.md)
 ### [Message Logging](designing-bots/core/message-log.md)
+### [Global Message Handlers](designing-bots/core/global-handler.md)
+
 
 ## Bot Capabilities
 ### [Knowledge Base](designing-bots/capabilities/kb.md)
