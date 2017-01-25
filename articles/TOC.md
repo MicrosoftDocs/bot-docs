@@ -14,7 +14,7 @@
 ### [Message Logging](designing-bots/core/message-log.md)
 
 ## Bot Capabilities
-### [Knwoledge Base](designing-bots/capabilities/kb.md)
+### [Knowledge Base](designing-bots/capabilities/kb.md)
 ### [Task Automation](designing-bots/capabilities/task.md)
 ### [Bot to Web](designing-bots/capabilities/bot-to-web.md)
 ### [Bot in Apps](designing-bots/capabilities/bot-in-apps.md)
