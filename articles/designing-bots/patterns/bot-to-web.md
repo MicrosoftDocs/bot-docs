@@ -37,7 +37,7 @@ Unfortunately, the experience of being sent outside the chat application, to a w
 
 Let us look at a high level flow of how a bot and a website can interact with each other:
 
-![Dialog Structure](../../media/designing-bots/capabilities/bot-to-web1.png)
+![Dialog Structure](../../media/designing-bots/patterns/bot-to-web1.png)
 
 1. When the bot decides it needs to redirect the user to a website, it generates a hyperlink. Generally this hyperlink will include identification values that will tell the website enough information about the context of such flow. Those may include the user ID in the channel, conversation ID, channel ID and/or other values that will help keeping the user in the context of the flow.
 2. The hyperlink is then presented to the user. Once the user clicks at it, a web browser is then launched, loading the website
