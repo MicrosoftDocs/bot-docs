@@ -23,7 +23,7 @@ hide_bc: true
     <ul class="pivots">
       <li>
         <a href="#concepts">Concepts</a>
-        <ul id="concepts">
+        <ul id="concepts" class="cardsC">
           <li>
             <a href="#overview">Overview</a>
             <div class="container intro">
