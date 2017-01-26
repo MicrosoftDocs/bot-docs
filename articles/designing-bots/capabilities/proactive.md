@@ -41,7 +41,7 @@ Before explaining this topic in too much detail, it is important to review [what
 
 When the bot decides to initiate a proactive message to the user, it is hard to tell whether such user is in the middle of a conversation or task with that same bot. This can become very confusing very quickly:
 
-![how users talk](../../media/designing-bots/core/proactive1.png)
+![how users talk](../../media/designing-bots/capabilities/proactive1.png)
 
 In the example above, the bot has been previously requested to monitor prices of a given hotel in Las Vegas. That generated a background monitoring task that has been continuously running for the past several days. Right now, the user is actively booking a trip to London. It turns out that exactly at that moment, the previously configured background task triggered a notification message about a discount for the Las Vegas hotel. But that caused an interruption to the existing conversation. When the user answered, the bot was back to the original dialog, awaiting for a date input for the London Trip. Confusing...
 

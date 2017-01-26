@@ -38,13 +38,13 @@ After discussing with the team, John realized he needed to define a navigation m
 
 In other words, John realized he needed a navigation map along these lines:
 
-![Dialog Structure](../../media/designing-bots/capabilities/simple-task1.png)
+![Dialog Structure](../../media/designing-bots/patterns/simple-task1.png)
 
 As far as this point, one could argue that no big difference exists whether the solution to this problem will be a bot, an app or a website. 
 
 John now needs to describe how each of these dialogs will look like. So he goes ahead and starts with the RootDialog:
 
-![Dialog Structure](../../media/designing-bots/capabilities/simple-task2.png)
+![Dialog Structure](../../media/designing-bots/patterns/simple-task2.png)
 
 Here John decided that the experience will start with a simple menu offering two options: Change password (assuming the user knows the previous password) or reset password (in which case we need to validate the user in some way other than using the password before proceeding).
 
@@ -52,13 +52,13 @@ For the sake of simplicity, we are not going to implement the change password fl
 
 Once the user chooses to reset the password, we are now redirected to the ResetPassword dialog:
 
-![Dialog Structure](../../media/designing-bots/capabilities/simple-task3.png)
+![Dialog Structure](../../media/designing-bots/patterns/simple-task3.png)
 
 Note that the ResetPasswordDialog invokes two other dialogs, one for collecting the user's phone number and another for collecting the birth date. John decided to separate these tasks in their own dialogs. That doesn't have to be this way, but John imagined that this would not only simplify the code of every dialog but also increase the chances of having some of these dialogs to be reused in future scenarios and even other bots... just like John used to do with apps and websites. Again, little difference here.
 
 Now for the PromptStringRegex dialog, we see that John added some alternate flows. Basically John is trying to protect the bot from the [stubborn bot scenario discussed earlier](../core/navigation.md#the-stubborn-bot) where the bot is lost at asking the same question in an eternal loop because the user is entering invalid data.
 
-![Dialog Structure](../../media/designing-bots/capabilities/simple-task4.png)
+![Dialog Structure](../../media/designing-bots/patterns/simple-task4.png)
 
 As you can see, John applied the same experience he has with building for web and apps. John didn't introduce any advanced natural language processing to this point and the bot still does what is needed to help out the users.
 
@@ -93,7 +93,7 @@ If you want to see how the code for the design above looks like, take a look how
 
 You can read more about these samples [here](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FCSharp%2Fcapability-SimpleTaskAutomation%2FREADME.md&version=GBmaster&_a=contents) and see how the bot ended up looking like:
 
-![Dialog Structure](../../media/designing-bots/capabilities/simple-task5.png)
+![Dialog Structure](../../media/designing-bots/patterns/simple-task5.png)
 
 
 

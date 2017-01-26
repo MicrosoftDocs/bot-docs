@@ -39,16 +39,16 @@ A particularly valuable tool to build bots with is search. Search algorithms ena
 
 For one, fuzzy search keeps users from having to type exact matches (e.g. "who is jennifer?" instead of "jennifer marsman", "impala" instead of "Tame Impala")
 
-![Dialog Structure](../../media/designing-bots/capabilities/fuzzySearch.png)
+![Dialog Structure](../../media/designing-bots/patterns/fuzzySearch.png)
 
-![Dialog Structure](../../media/designing-bots/capabilities/fuzzySearch2.png)
+![Dialog Structure](../../media/designing-bots/patterns/fuzzySearch2.png)
 
 
 Search scores allow us to determine the confidence that we have about a specific search - allowing us to decide whether a piece of data is what a user is looking, order results based on our confidence, and curb our bot output based on confidence (e.g. "Hmm... were you looking for any of these events?" vs "Here is the event that best matches your search:") 
 
-![Dialog Structure](../../media/designing-bots/capabilities/searchScore1.png)
+![Dialog Structure](../../media/designing-bots/patterns/searchScore1.png)
 
-![Dialog Structure](../../media/designing-bots/capabilities/searchScore2.png)
+![Dialog Structure](../../media/designing-bots/patterns/searchScore2.png)
 
 ## A good knowledge bot should be more than just a search engine! 
 I know, we just said that search is a great tool for building bots, but this doesn't mean that a bot should JUST be a search engine. Often we are approached by partners who wish to replace an ineffective search with a bot. Our response is generally that if their current search is ineffective, then their bot will probably be ineffective as well. A bot is just a new interface to existing data and services - that data needs to be massaged, indexed and organized to be effectively searched, regardless of the interface. 
@@ -58,15 +58,15 @@ If the primary motivation for building a bot is to perform a basic search, then 
 ## Using Search to Guide a Conversation
 Knowledge bots are generally most effective when they guide the conversation. Conversations are made up of a back-and-forth between a user and a bot. This enables bots to ask clarifying questions, present options, and validate outcomes in a way that a basic search is incapable of doing. In the following example we guide a user through a conversation that facets and filters a dataset until it finds what a user is looking for:
 
-![Dialog Structure](../../media/designing-bots/capabilities/guidedConvo1.png)
-![Dialog Structure](../../media/designing-bots/capabilities/guidedConvo2.png)
-![Dialog Structure](../../media/designing-bots/capabilities/guidedConvo3.png)
-![Dialog Structure](../../media/designing-bots/capabilities/guidedConvo4.png)
+![Dialog Structure](../../media/designing-bots/patterns/guidedConvo1.png)
+![Dialog Structure](../../media/designing-bots/patterns/guidedConvo2.png)
+![Dialog Structure](../../media/designing-bots/patterns/guidedConvo3.png)
+![Dialog Structure](../../media/designing-bots/patterns/guidedConvo4.png)
 
 
 This bot clearly gives users information about the optional categories and guides them through the data. This is a considerably better experience than leaving the chat entirely open ended and having to accept any user input. Once users find the information that they are looking for, we can train them on the most efficient way to find that answer using natural language:
 
-![Dialog Structure](../../media/designing-bots/capabilities/training.png)
+![Dialog Structure](../../media/designing-bots/patterns/training.png)
 
 ## Use natural language processing, but don't rely on it entirely
 

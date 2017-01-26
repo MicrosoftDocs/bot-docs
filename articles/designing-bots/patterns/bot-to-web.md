@@ -60,7 +60,7 @@ The need for mitigating the flow with a magic number should go away as channels 
 ##How does the website "signal" back the bot?
 
 
-The plumbing used for a website to signal back the bot and make it interact again with users is [the same discussed earlier in the proactive messages article](../core/proactive.md): Given a user ID, a channel ID and a conversation ID, any code, even if outside the bot, can not only generate a message to the user on behalf of the bot but also read/write state variables for that user or conversation. These are all APIs provided by the Microsoft Bot Framework in both C# and Node. 
+The plumbing used for a website to signal back the bot and make it interact again with users is [the same discussed earlier in the proactive messages article](../capabilities/proactive.md): Given a user ID, a channel ID and a conversation ID, any code, even if outside the bot, can not only generate a message to the user on behalf of the bot but also read/write state variables for that user or conversation. These are all APIs provided by the Microsoft Bot Framework in both C# and Node. 
 
 ##Show me examples!
 

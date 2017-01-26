@@ -20,9 +20,9 @@ ms.author: mat.velloso@microsoft.com
 
 ##When users change the topic of the conversation
 
-We discussed [earlier on the topic of dialogs](https://review.docs.microsoft.com/en-us/botframework/designing-bots/core/dialogs?branch=design-center#dialogs-stacks-and-humans) about the challenges of detecting when the user doesn't answer what the bot is expecting but instead asks for something else, outside the flow.
+We discussed [earlier on the topic of dialogs](../core/dialogs#dialogs-stacks-and-humans) about the challenges of detecting when the user doesn't answer what the bot is expecting but instead asks for something else, outside the flow.
 
-![how users talk](../../media/designing-bots/core/trigger-actions.png)
+![how users talk](../../media/designing-bots/capabilities/trigger-actions.png)
 
 
 In the scenario above, the bot had a simple yes/no question. That dialog is not expecting for any answer other than that. But suddenly the user switches topics or asks for more help. That "help" message could have happened anywhere along the conversation, in any dialog. How do we build a "catch all" handler for it?

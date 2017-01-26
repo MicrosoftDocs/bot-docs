@@ -44,26 +44,12 @@ Starting the bot with an open ended question such as “How can I help you?” i
 
 For decades, developers have used a simple solution to that problem: Menus. Turns out, breaking down the available options into some sort of menu is still a great idea. First, it mitigates the basic discoverability problem. Second, it spares the user from having to type too much: They can just click, which is always the fastest option. As an additional benefit, it can significantly simplify your natural language models.
 
-<<<<<<< HEAD
 >[!TIP]
 >Menus are your friend. Don’t dismiss them as not being “smart enough”
 
 Note: You can still use free form input along with menus. Users can still type whatever they want and your bot can try its best to parse their request. There is absolutely nothing wrong with it. But usage will likely tell you that the majority of users still prefer to just click at the buttons. Don't try to force them to use your bot the way you would like them to instead.
 
 Beyond the basic navigation, there are things you should tell the user. Again, no different than an app or a website: If your bot collects personal data from the user, that is something you should be telling them about. This is where your bot should have some information about terms and privacy on web pages and offer the user a link to that data. In fact, the [Bot Framework registration portal](https://dev.botframework.com/) already offers a place for you to add links to your terms and conditions to be associated with your bot.
-=======
->Tip: Menus are your friend. Don’t dismiss them as not being “smart enough”
-
-
-Note: You can still use free form input along with menus. Users can still type whatever they want and your bot can try its best to parse their request. There is absolutely nothing wrong with it. But usage will likely tell you that the majority of users still prefer to just click at the buttons. Don't try to force them to use your bot the way you would like them to instead.
-
-Beyond the basic navigation, there are things you should tell the user. Again, no different than an app or a website: If your bot collects personal data from the user, that is something you should be telling them about. This is where your bot should have some information about terms and privacy on web pages and offer the user a link to that data. In fact, the [Bot Framework registration portal](https://dev.botframework.com/) already offers a place for you to add links to your terms and conditions to be associated with your bot. 
-
->Tip: Tell the user upfront about your policies and what you will be doing with their personal information
-
-
-
->>>>>>> 8a5aa924d60e9b8aa843d617eaaa3d18bc48aef1
 
 >[!TIP]
 >Tell the user upfront about your policies and what you will be doing with their personal information
