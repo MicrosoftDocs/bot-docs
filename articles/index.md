@@ -22,29 +22,29 @@ hide_bc: true
         <h1>Bot Framework Documentation</h1>
         <ul class="pivots">
             <li>
-                <a href="#workloads">Workloads</a>
-                <ul id="workloads">
+                <a href="#concepts">Concepts</a>
+                <ul id="concepts">
                     <li>
-                        <a href="#windows">Windows</a>
-                        <ul id="windows" class="cardsC">
+                        <a href="#welcome">Welcome</a>
+                        <ul id="welcome" class="cardsC">
                             <li>
                                 <div class="container intro">
-                                    <p>Develop apps and games using Visual Studio to reach every device running Windows.</p>
+                                    <p>Learn about what the Bot Framework is and how it works.</p>
                                 </div>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833082">
+                                <a href="#">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_windows-1.svg" src="./images/vs_windows-1.svg" alt="" />
+                                                        <img data-scaleimage="media/logo-ms-dark.png" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Universal Windows Platform development</h3>
-                                                    <p>Develop applications for Windows 10 with the Windows Universal Platform and C#, VB, or C++.</p>
+                                                    <h3>What is the Bot Framework?</h3>
+                                                    <p>Discover what Bot Framework is.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -52,18 +52,18 @@ hide_bc: true
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833083">
+                                <a href="#">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_windows-2.svg" src="./images/vs_windows-2.svg" alt="" />
+                                                        <img data-scaleimage="media/logo-ms-dark.png alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>.NET Desktop development</h3>
-                                                    <p>Build WPF, Windows Forms, and console applications using the .NET Framework.</p>
+                                                    <h3>Bot Framework Benefits</h3>
+                                                    <p>How the Bot Framework helps you.</p>
                                                 </div>
                                             </div>
                                         </div>
