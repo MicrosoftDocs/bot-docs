@@ -53,13 +53,12 @@ And in Node:
 		appPassword: process.env.MICROSOFT_APP_PASSWORD
 	});
 
-	var bot = new builder.UniversalBot(connector);
+	var bot = new builder.UniversalBot(connector, (session) => {
+		// default or root dialog
+	});
 	server.post('/api/messages', connector.listen());
 
-	// Root dialog
-	bot.dialog('/', ...
-
-Despite of the obvious differences due to the nature of every language, both snippets above show how we wire the basic HTTP GET call to a controller and then hook it to our root dialog.
+Despite of the obvious differences due to the nature of every language, both snippets above show how we wire the basic HTTP POST call to a controller and then hook it to our root dialog.
 
 Then, from root dialog we can invoke the New Order dialog:
 
@@ -105,26 +104,17 @@ In C#:
 
         }
 
-Now in Node:
+Now in Node, triggerAction registers the appropriate keyword to invoke the dialog:
 
-	bot.dialog('/', new builder.IntentDialog()
-	//Did the user type 'order'?
-    .matchesAny([/order/i], [ 
-        function (session) {
-			//Let's invoke then the new order dialog
-            session.beginDialog('/newOrder');
-        },
-
-        function (session, result) {
-			//This will get us whatever the new order dialog decided to return to us
-			var resultFromNewOrder = result.response;
-
-            session.send('New order dialog just told me this: %s', resultFromNewOrder');
-            //We are now done with the root dialog
-			session.endDialog(); 
-        }
-    ])
-
+	bot.dialog('newOrder', [
+		(session, args, next) => {
+			builder.Prompts.text(session, 'What type of pizza would you like?');
+		},
+		(session, results, next) => {
+			session.endDialog(`You want to order a ${results.response} pizza.`);
+		}
+	]).triggerAction({ matches: /order/i });
+	
 You can see more detailed examples of working with multiple dialogs following these links:
 
 - [C# sample](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FCSharp%2Fcore-BasicMultiDialog&version=GBmaster&_a=contents)
@@ -137,7 +127,7 @@ Once a dialog is invoked, it will be in control of the flow. Every new message w
 
 In C# you control that by saying context.Wait(). That tells us what is the callback that will be invoked in the next time the user sends us anything. In fact, in C# you must always finish the code either with context.Wait(), context.Fail() or some new redirection such as context.Forward() or context.Call(). Not doing so will cause an error, because your code is confusing the framework by not telling it what it should do the next time the user sends us a message.
 
-In Node, these flows have a little more automation built in: A dialog invokes another by doing session.beginDialog(). And when a dialog is "done", it tells us by saying session.endDialog(). So session.endDialog() in Node is similar to context.Done() in C#. They basically remove the dialog from the Stack, sending the user to whatever dialog is now on top of that stack.
+In Node, these flows have a little more automation built in: A dialog invokes another by doing session.beginDialog(). And when a dialog is "done", it tells us by saying session.endDialog() or session.endDialogWithResult(), similar to context.Done() in C#. They basically remove the dialog from the Stack, sending the user to whatever dialog is now on top of that stack.
 
 ##Hang on: Stack? What Stack??
 
