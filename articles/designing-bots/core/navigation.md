@@ -20,13 +20,80 @@ ms.author: mat.velloso@microsoft.com
 
 ##Where am I?
 
-Websites have breadcrumbs, apps have menus, web browsers offer buttons to navigate forward and back and so on. Enter bots and we are now in a whole new world where those simple, tested and validated solutions for keeping the user aware of where they are haven't been widely established yet.
+Great navigation is all about making it easy for users to discover and navigate to and from the features of your app, whether your app is a website, mobile app, or a bot. 
 
-How do we ensure that a user doesn't get lost in a conversation with a bot? Can a user navigate "back" in a chat? How to go to the "main menu"? How do we "cancel" an operation?
+Websites have links, navigation headers, breadcrumbs, and the back button built into every browser. Mobile apps have content you can tap to navigate and back buttons to navigate back. These known paradigms help navigation by helping users with:
+* Discoverability - On screen content communicates the features of the website or app.
+* Wayfinding - Users know that if they click on something, they can always get back easily, so they feel so they feel free to explore.
 
-Let us look at some common traps of conversational interfaces and how to overcome them. We will do that by describing some "personality disorders" that bots often display:
+Enter bots and we're now in a whole new world where those simple, tested and validated design elements for keeping the user aware of what they can do, where they are, how they got there, and how they get back haven't been widely established. Yet. 
 
-##The "stubborn bot"
+With bots, there is no UI unless the bot adds it to the conversation. How is discoverability and navigation accomplished in the conversation? How do we ensure that a user doesn't get lost in the conversation? Can a user navigate "back" in a chat? How does the user go to the "main menu"? How do we "cancel" an operation?
+
+Let's look at some common design elements that provide great bot navigation by promoting discoverability and wayfinding. We'll also look at common traps of conversational interfaces (bot "personality disorders") and how these design elements overcome them.
+
+##Navigation Menu
+
+From the Saying Hello topic, a Root Dialog can show a dialog with buttons for your bot's top level feature areas. These buttons drive discoverability by making it clear what features your bot supports. 
+
+![bot](../../media/designing-bots/core/hello2.png)
+
+Your bot might have more features than what can fit on this initial dialog, but you can provide more features in dialogs later on in the conversation. The Root Dialog will give your users an idea where to start.
+
+Let's look at the bot "personality disorder" this solves.
+
+###The "Mysterious Bot"
+
+Imagine this scenario:
+
+![bot](../../media/designing-bots/core/mysterious-bot.png)
+
+This bot starts off the conversation by asking an open ended question from the Root Dialog. The user doesn't know what features the bot supports (or doesn't support) and is left guessing what to say in the conversation to use the bot. No cue is being given, at all. 
+
+##Navigation Global Handlers
+
+From the Global Handlers topic, bots can provide global messages that the bot can react to from any dialog anywhere in the conversation. These global message handlers are a great way to promote navigation via wayfinding. Introducing these global messages in your Root Dialog make it easy for users to understand how they can use them to navigate your bot. For example, a 'Cancel' message can cancel the current dialog and return the user to the Root Dialog. A 'Help' command could show you a dialog with buttons for canceling the current dialog and navigating to another in your bot.
+
+	TODO: Add image of dialog above with description of cancel command.
+
+In this bot, the user can use the simple 'Cancel' command to return back to the Root Dialog and start over.
+
+	TODO: Add an image of the user using the cancel command.
+
+Let's look at some of the bot "personality disorders" these global message handlers can solve.
+
+###The "clueless bot"
+
+Imagine this scenario:
+
+![bot](../../media/designing-bots/core/clueless-bot.png)
+
+In this scenario, the user doesn't know what code the bot is asking for and needs help. The users's reply, "Help?", is a valid string. The prompt doesn't know the difference so it can't reject it. Now of course we could simply code a check for a few keywords after that and see whether the user is asking for things like "help", "cancel" or one of those basic navigation operations.
+
+But the problem would be having to do this for every little question in every single dialog everywhere in the bot. Trust us on this one: You just don't want to have to do that.
+
+Global Message Handlers provide a way to add these global messages to every dialog in the bot in a single place. 
+
+##Back Commands and Buttons
+
+Often, your bot will ask the user to make decisions that will control the flow of the conversation and future dialogs. When this is part of your design, provide a button or global message handler ('Back') that allows the user the opportunity to go back and change a previous decision to take the conversation in another direction.
+
+	TODO: Image of user making a choice, seeing a new dialog with back button, going back, changing choice, seeing a different new dialog. One way vs. round trip flight?
+
+Let's look at the bot "personality disorder" this can solve can solve.
+
+###The "Stubborn Bot"
+
+Imagine this scenario...
+
+	TODO: Image of bot asking question, one way vs. round trip, user trying to go back to change to round trip. Can only cancel, can't go back.
+
+In this situation...
+
+##End of Navigation
+
+
+##The "stubborn bot" - Doesn't this belong in the dialogs section?
 
 Imagine this scenario:
 
@@ -56,35 +123,7 @@ In Node:
 
 In this case we are not trying to do anything smart in terms of detecting whether the user is asking us explicitly to stop, but at least we will give up on retrying the same question after a given number of attempts. So the "stubbornness" is healed!
 
-##The "clueless bot"
-
-Imagine this scenario:
-
-![bot](../../media/designing-bots/core/clueless-bot.png)
-
-This scenario is similar to the previous one, but a little more complex: In this case "Help!" is a valid string. The prompt doesn't know the difference so it can't reject it. Now of course we could simply code a check for a few keywords after that and see whether the user is asking for things like "help", "cancel" or one of those basic navigation operations.
-
-But the problem would be having to do this for every little question in every single dialog everywhere in the bot. Trust us on this one: You just don't want to have to do that.
-
-In such cases we would add "catch all" handlers that will intercept those key phrases and words such as "cancel", "help", "start over" and whatever else you feel appropriate - or even more complex natural language phrases if that applies to your scenario - and then individual dialogs and prompts could just safely ignore these. In a typical web application it isn't uncommon to use global http filters that would handle, for example, requests for specific sub-folders or file extensions. A similar concept here applies:
-
-	TODO: Add code from Ezequiel for the prompt with cancellation/middleware
-
-##The "mysterious bot"
-
-Imagine this scenario:
-
-![bot](../../media/designing-bots/core/mysterious-bot.png)
-
-
-Now it is difficult to guess what is happening with this bot. Maybe it is having an outage. It may be "stuck" somewhere. It may also - perfectly common case - just be taking a while to answer. But not replying to the user nor giving any visual cue of what is going on is still not a great idea. The user in this case has no idea of what is going on, whether they need to repeat the same question, how to cancel/start over... No cue is being given, at all.
-
-There are a few things we can do to help here. 
-
-	TODO: Add examples of scorables from Chris
-
-
-##The "captain obvious bot"
+##The "captain obvious bot" - Does this belong in proactive messages topic?
 
 Imagine this scenario:
 
@@ -93,7 +132,7 @@ Imagine this scenario:
 
 	TODO: describe this one
 
-##The "bot that can't forget"
+##The "bot that can't forget" - Does this belong in the state topic? If user provides updated state, replace it in the query/dialog?
 
 Imagine this scenario:
 
@@ -102,4 +141,5 @@ Imagine this scenario:
 
 	TODO: describe this one
 
-(to be continued, I'm tired...)
+
+
