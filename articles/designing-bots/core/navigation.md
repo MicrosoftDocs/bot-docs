@@ -66,9 +66,89 @@ This scenario is similar to the previous one, but a little more complex: In this
 
 But the problem would be having to do this for every little question in every single dialog everywhere in the bot. Trust us on this one: You just don't want to have to do that.
 
-In such cases we would add "catch all" handlers that will intercept those key phrases and words such as "cancel", "help", "start over" and whatever else you feel appropriate - or even more complex natural language phrases if that applies to your scenario - and then individual dialogs and prompts could just safely ignore these. In a typical web application it isn't uncommon to use global http filters that would handle, for example, requests for specific sub-folders or file extensions. A similar concept here applies:
+In such cases we will override the standard prompts to add handlers for variations such as the use of expressions such as "cancel", "help" or "start over". We could go further and even use natural language calls in these prompts, but for the sake of simplicity, we will just do simple Regex match in this scenario.
 
-	TODO: Add code from Ezequiel for the prompt with cancellation/middleware
+In C#:
+
+	[Serializable]
+    public class PromptStringRegex : Prompt<string, string>
+    {
+        private readonly Regex regex;
+        public PromptStringRegex(string prompt, string regexPattern, string retry = null, string tooManyAttempts = null, int attempts = 3)
+            : base(new PromptOptions<string>(prompt, retry, tooManyAttempts, attempts: attempts))
+        {
+            this.regex = new Regex(regexPattern, RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.IgnorePatternWhitespace);
+        }
+
+        protected override bool TryParse(IMessageActivity message, out string result)
+        {
+            var quitCondition = message.Text.Equals("Cancel", StringComparison.InvariantCultureIgnoreCase);
+            var validEmail = this.regex.Match(message.Text).Success;
+            result = validEmail ? message.Text : null;
+            return validEmail || quitCondition;
+        }
+    }
+
+In this case we are creating a "PromptStringRegex" by inheriting from the standard Prompt class in the Bot Framework SDK. This allows us to prompt for a string just like before, but do an additional validation for the word "Cancel", as well as validating any entry against a given regex expression. When the prompt is actually used, we can define this regex expression:
+
+	private const string PhoneRegexPattern = @"^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$";
+
+    public async Task StartAsync(IDialogContext context)
+	{
+    	var promptPhoneDialog = new PromptStringRegex(
+        	"Please enter your phone number:", 
+            PhoneRegexPattern, 
+            "The value entered is not phone number. Please try again using the following format (xyz) xyz-wxyz:",
+            "You have tried to enter your phone number many times. Please try again later.",
+                attempts: 2);
+
+            context.Call(promptPhoneDialog, this.ResumeAfterPhoneEntered);
+	}
+
+In this scenario we need to prompt for a phone number. We then provide the regex for validating the entry as well as a number of attempts to retry. If the user's entry differ from what is expected, the prompt will now know how to deal with it.
+
+
+In Node, the approach is similar, although with different syntax:
+
+	var builder = require('botbuilder');
+	
+	const PhoneRegex = new RegExp(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/);
+	const library = new builder.Library('validators');
+
+	library.dialog('phonenumber',
+    	builder.DialogAction.validatedPrompt(builder.PromptType.text, (response) =>
+        	PhoneRegex.test(response)));
+
+	module.exports = library;
+	module.exports.PhoneRegex = PhoneRegex;
+
+First we define a *phonenumber* dialog which will validate the prompt against a regex. 
+
+We also define a cancelAction which will detect the word "cancel":
+
+    .cancelAction('cancel', null, { matches: /^cancel/i });
+
+And with that in mind, we will then invoke the prompt for phone number from the root:
+
+	library.dialog('/', [
+	    function (session) {
+	        session.beginDialog('validators:phonenumber', {
+	            prompt: 'Please enter your phone number:',
+	            retryPrompt: 'The value entered is not phone number. Please try again using the following format (xyz) xyz-wxyz:',
+	            maxRetries: 2
+	        });
+	    },
+	    function (session, args) {
+	        if (args.resumed) {
+	            session.send('You have tried to enter your phone number many times. Please try again later.');
+	            session.endDialogWithResult({ resumed: builder.ResumeReason.notCompleted });
+	            return;
+	        }
+
+        session.dialogData.phoneNumber = args.response;
+        session.send('The phone you provided is: ' + args.response);
+
+Regardless of the differences between C# and Node SDKs, both are now enabling us to handle the free text entries with more validation and detection of escape words. 
 
 ##The "mysterious bot"
 
