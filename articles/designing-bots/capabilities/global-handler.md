@@ -95,7 +95,37 @@ This is the essence of how global handlers can be wired up in C#.
 
 Now let us see the case with Node:
 
-TODO: Review the node code here
+On Node we will be using triggerActions in order to tell the framework what are the triggers that will lead to the activation of certain dialogs.
+
+For example, for the help dialog:
+
+	// global help
+	bot.dialog('help', [
+    	(session, args, next) => {
+        	// args.action is the name of the action being called
+        	// this is a very useful technique to centralize logic
+        	switch(args.action) {
+            	default:
+            	    // no action, provide default help message
+            	    session.endDialog(`I'm a simple calculator bot. I can add numbers if you type "add".`);
+            	case 'addHelp':
+            	    // addHelp action. Provide help for add
+            	    session.endDialog('Adds numbers. You can type "help" to get this message or "total" to see the total and start over.');
+        	}
+    	}
+	]).triggerAction({ 
+    	// registered to respond globally to the word "help"
+    	matches: /^help/,
+    	onSelectAction: (session, args, next) => {
+    	    // By default, the flow is interrupted and dialog stack is reset
+    	    // This allows us to push a new dialog onto the stack and resume
+    	    session.beginDialog('help', args);
+    	}
+	});
+
+Note how the dialog has a triggerAction that defines that if the user says 'help', the help dialog will be activated.
+
+
 
 ##Show me the code!
 
