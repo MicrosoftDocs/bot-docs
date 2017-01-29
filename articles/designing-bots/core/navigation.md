@@ -159,9 +159,19 @@ Imagine this scenario:
 
 Now it is difficult to guess what is happening with this bot. Maybe it is having an outage. It may be "stuck" somewhere. It may also - perfectly common case - just be taking a while to answer. But not replying to the user nor giving any visual cue of what is going on is still not a great idea. The user in this case has no idea of what is going on, whether they need to repeat the same question, how to cancel/start over... No cue is being given, at all.
 
-There are a few things we can do to help here. 
+There are a few things we can do to help here depending on the root cause for the delay:
 
-	TODO: Add examples of scorables from Chris
+- Long term operations: In this case the bot isn't responding because it's still working on the question and it will take several seconds or even longer. The important rule here is that the bot should never lead the user without some cue that it's working on it. So as a guidance:
+	- Initiate a timer and set it to a reasonable amount, for example, 5 seconds.
+	- If the bot manages to work out an answer before then, cancel the timer and provide the answer
+	- If the timer fires, provide a message saying the bot is still working on it and might need to get back later
+	- Use the [bot typing indicator if appropriate](https://docs.botframework.com/en-us/skype/getting-started/#typing-indicator): For supported clients, it suggests that the bot is actually busy "typing" a message which is a friendly indicator that nothing is "stuck"
+	- Use the patterns discussed in the [proactive messages section](../capabilities/proactive.md) for sending these out of bound messages.
+- Errors: The bot may, in fact, be "stuck". In most cases where this happens, we are dealing with problems with the logic in the dialogs. There are a few ways to handle such scenarios:
+	- One way to handle this issue is to manually force a reset of the stack and the user state. In the .Net SDK there is a built in detection for a message " /deleteprofile" which will cause the stack to be cleared. But this involves user action which isn't feasible for production bots
+	- The first step to automate and fix cases like this is to make sure there is enough telemetry in your bot so you can understand by looking at logs why and how this scenario occur. Look at the [message logging topic](../capabilities/message-log.md) and consider what other telemetry aspects (e.g. response time) will be needed.
+	- By using the middleware, also discussed in the [message logging topic](../capabilities/message-log.md), it is possible to detect if a user is sending multiple messages without receiving responses from the bot. This is a strong indicator that something is wrong. By making use of this information a developer can both automate alerts but also automatically clear out the [dialog stack](../core/dialogs.md#hang-on-stack-what-stack) as well as the state variables for that user. 
+
 
 
 ##The "captain obvious bot"
