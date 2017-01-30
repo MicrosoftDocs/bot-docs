@@ -173,23 +173,27 @@ There are a few things we can do to help here depending on the root cause for th
 	- By using the middleware, also discussed in the [message logging topic](../capabilities/message-log.md), it is possible to detect if a user is sending multiple messages without receiving responses from the bot. This is a strong indicator that something is wrong. By making use of this information a developer can both automate alerts but also automatically clear out the [dialog stack](../core/dialogs.md#hang-on-stack-what-stack) as well as the state variables for that user. 
 
 
-
 ##The "captain obvious bot"
 
 Imagine this scenario:
 
 ![bot](../../media/designing-bots/core/captainobvious-bot.png)
 
+This scenario shows how [proactive messages](../capabilities/proactive.md) can become a problem instead of a solution for users. Some points to highlight:
 
-	TODO: describe this one
+- The bot is clearly is sending too many undesired messages. Different channels impose different rules on how often/how much bots are allowed to message their users but the general agreement is that this is an area developers need to be extra careful about
+- Beyond the frequency, the messages may not be providing information considered useful. 
+- In many ways, proactive messages work as push notifications in apps and therefore developers should still give users control over them. How often and what they should contain should be things users can define. 
+- Above all, if the user requests the bot to stop or asks for help, the bot should be capable of offering settings for changing such behaviors and there are mechanisms for this, such as the [global handlers](../capabilities/global-handler.md)
 
 ##The "bot that can't forget"
 
-Imagine this scenario:
+Let us look at yet another scenario:
 
 ![bot](../../media/designing-bots/core/rememberall-bot.png)
 
+One of the best aspects of bots is that they can "remember" variables and conversations across devices and over time. A user may start a travel booking by using Skype on their phone and then continue from where they have left on their desktop version of Skype.
 
-	TODO: describe this one
+But this can also become a problem: Sometimes it is assumed that the bot should "forget" an old flow and just start over. This won't automatically happen: It is up to the developer to write logic for deciding when certain variables or dialogs should be reset. For example, one common way of handling this scenario is defining an expiration time: If a message arrives after more than x hours since the last message, the bot may assume the entire conversation should be reset and start over.
 
-(to be continued, I'm tired...)
+These rules may vary depending on different scenarios where bots are used.
