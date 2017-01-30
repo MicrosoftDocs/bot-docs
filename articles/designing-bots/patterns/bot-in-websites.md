@@ -37,37 +37,45 @@ Skype web control is essentially a Skype client, embedded as web. Some of the ke
 
 The open source web control gives developers full control over the user experience: They can basically change anything in any way they want, since by the end of the day this is just a canvas based on ReactJS that relies on the Bot Framework's DirectLine to interact with the Bot Framework service.
 
-The benefits of the open source web control
+The benefits of the open source web control:
 
 - Full control over the user experience and behaviors. Anything the developer doesn't like can be coded differently (which also leads to more effort form the developer's side)
-- Back-channel: The open source web control offers a mechanism in which the bot can send an "event message", which is a message not meant for the user to see, but for the JavaScript code to acknowledge as an event. For example, the bot may want to change the web page's color, so it sends an "event" message asking the page's JavaScript to do it. The page then executes the change. The page may also want to send an event notification to the bot. For example, the page may want to inform the bot that the user has clicked at some button, so it generates a message of the type "event" with this information and use the web control to notify the bot. This gives the bot full awareness and control over the web page.
+- Backchannel: a mechanism by which the web page hosting the control can communicate directly with the bot, invisible to the user. This enables a number of useful scenarios:
+    - The web page can send relevant data to the bot, e.g. GPS location
+	- The web page can advise the bot about user actions ("user just clicked on a dropdown")
+	- The web page can send the auth token for a logged-in user to the bot
+	- The bot can send relevant data to the web page, e.g. current value of user's portfolio
+	- The bot can send "commands" to the web page, e.g. change background color
 
-##Back-channel pattern
+##Backchannel pattern
 
+The WebChat control communicates with bots via the Direct Line API.
 
-The flow for back-channel can use either or both directions: Bot to client and/or client to bot:
+The Direct Line API allows "activities" to be sent between the client and the bot. The most common activity type is "message", but there are others, e.g. "typing" which indicates that a user is typing or the bot is thinking. The Bot Framework supports a general-purpose activity called "event", which the WebChat UI is guaranteed to ignore.
 
-![Back-channel](../../media/designing-bots/patterns/back-channel.png)
+WebChat accesses Direct Line using a JavaScript class called [DirectLine](https://github.com/microsoft/botframework-directlinejs). WebChat can either create its own instance of DirectLine, or it can share one with the hosting page. In the shared case, WebChat and/or the page can send and/or receive activities. If they are "event" activities, WebChat will not display them. This is how the backchannel works.
 
-
-The steps are:
-
-
-1. Bot wants to send a system notification to the JavaScript at the page. So bot creates a message of the type "event" and sends it.
-2. Web control receives the "event" message and instead of rendering it, the message is just forwarded to the host page by invoking a JavaScript event. The JavaScript then decides what it wants to do with the message and its content.
-3. The client may also or instead want to send a message to the bot web service. In this case, the client JavaScript creates a message of type "event" and requests the web control to relay it to the bo.
-4. The bot then receives a message just like it would receive a message from the user, but in this case the type of the message is "event" so it can differentiate whether it actually came from the user or from the JavaScript code
-
+![Backchannel](../../media/designing-bots/patterns/back-channel.png)
 
 ##Code
 
-We suggest to start by looking at the [Web Control GitHub repo](https://github.com/Microsoft/BotFramework-WebChat) and familiarizing with the [sample for hosting it](https://github.com/Microsoft/BotFramework-WebChat/blob/master/samples/index.html).
-
-We have an end to end sample of the back channel as well in [this GitHub repo](https://github.com/ryanvolum/backChannelBot).
+Start by looking at the [Web Control GitHub repo](https://github.com/Microsoft/BotFramework-WebChat) and familiarize yourself with the [backchannel sample](https://github.com/Microsoft/BotFramework-WebChat/blob/master/samples/backchannel/index.html).
 
 Client side:
 
-The sample above notifies the bot upon the click of a button on the web page. This is done via a simple JavaScript code:
+In the sample above, the web page creates a DirectLine object:
+
+	var botConnection = new BotChat.DirectLine(...);
+
+It shares this when creating the WebChat instance:
+
+	BotChat.App({
+		botConnection: botConnection,
+		user: user,
+		bot: bot
+	}, document.getElementById("BotChatGoesHere"));
+
+It notifies the bot upon the click of a button on the web page:
 
 	const postButtonMessage = () => {
 		botConnection
@@ -75,19 +83,19 @@ The sample above notifies the bot upon the click of a button on the web page. Th
             .subscribe(id => console.log("success"));
         }
 
-Note the creation of a message of type "event" and how it is sent with postActivity. Also note that the content of the message which can be anything defined by the developer.
+Note the creation of an activity of type 'event' and how it is sent with `postActivity`. Also note that the `name` and `value` of the event can be anything defined by the developer. It is simply a contract between the web page and the bot.
 
-Also note how the client JavaScript listens for events from the bot:
+The client JavaScript also listens for a specific event from the bot:
 
 	botConnection.activity$
 		.filter(activity => activity.type === "event" && activity.name === "changeBackground")
 		.subscribe(activity => changeBackgroundColor(activity.value))
 
-The bot, in this example, can request the page to change the background color via a specific event type message with the content "changeBackground".
+The bot, in this example, can request the page to change the background color via a specific event type message with the content "changeBackground". The web page can respond to this in any way it wants, including ignoring it. In this case it cooperates by changing the background color as passed in the `value` field of the activity.
 
 Server side:
 
-The bot code, in Node, basically creates a message and defines it as of being the type "event":
+The [bot code](https://github.com/ryanvolum/backChannelBot), in Node, creates an event using a helper function:
 
 	bot.dialog('/', [
     	function (session) {
@@ -96,7 +104,15 @@ The bot code, in Node, basically creates a message and defines it as of being th
     	}
 	]);
 
-Likewise, the bot service also listens for "event" messages from the client:
+	const createEvent = (eventName, value, address) => {
+		var msg = new builder.Message().address(address);
+		msg.data.type = "event";
+		msg.data.name = eventName;
+		msg.data.value = value;
+		return msg;
+	}
+
+Likewise, the bot also listens for events from the client:
 
 	bot.on("event", function (event) {
 	    var msg = new builder.Message().address(event.address);
@@ -107,12 +123,10 @@ Likewise, the bot service also listens for "event" messages from the client:
 	    bot.send(msg);
 	})
 
-And this completes the flow. Essentially the back-channel allows client and server exchange any data needed, from requesting the client's timezone to reading a GPS location or what the user is doing on a web page. The bot can even "guide" the user by automatically filling out parts of a form and so on. The back-channel closes the gap between client JavaScript and bots.
-
+And this completes the flow. Essentially the backchannel allows client and server to exchange any data needed, from requesting the client's timezone to reading a GPS location or what the user is doing on a web page. The bot can even "guide" the user by automatically filling out parts of a form and so on. The backchannel closes the gap between client JavaScript and bots.
 
 ##Show me examples!
 
-
-- The open source web control is located [this GitHub repo](https://github.com/Microsoft/BotFramework-WebChat) 
-- The back-channel sample discussed above is located in [this GitHub repo](https://github.com/ryanvolum/backChannelBot).
+- The open source web control is located at [this GitHub repo](https://github.com/Microsoft/BotFramework-WebChat) 
+- The backchannel bot sample discussed above is located in [this GitHub repo](https://github.com/ryanvolum/backChannelBot).
  
