@@ -97,39 +97,35 @@ Now let us see the case with Node:
 
 On Node we will be using triggerActions in order to tell the framework what are the triggers that will lead to the activation of certain dialogs.
 
-For example, for the help dialog:
+For example, for the cancel dialog:
 
-	// global help
-	bot.dialog('help', [
-    	(session, args, next) => {
-        	// args.action is the name of the action being called
-        	// this is a very useful technique to centralize logic
-        	switch(args.action) {
-            	default:
-            	    // no action, provide default help message
-            	    session.endDialog(`I'm a simple calculator bot. I can add numbers if you type "add".`);
-            	case 'addHelp':
-            	    // addHelp action. Provide help for add
-            	    session.endDialog('Adds numbers. You can type "help" to get this message or "total" to see the total and start over.');
-        	}
-    	}
-	]).triggerAction({ 
-    	// registered to respond globally to the word "help"
-    	matches: /^help/,
-    	onSelectAction: (session, args, next) => {
-    	    // By default, the flow is interrupted and dialog stack is reset
-    	    // This allows us to push a new dialog onto the stack and resume
-    	    session.beginDialog('help', args);
-    	}
+	bot.dialog('cancel', (session, args, next) => {
+    	// end the conversation to cancel the operation
+    	session.endConversation('Operation canceled');
+	}).triggerAction({
+    	matches: /^cancel$/
 	});
 
-Note how the dialog has a triggerAction that defines that if the user says 'help', the help dialog will be activated.
 
+Note how the dialog has a triggerAction that defines that if the user says 'cancel', which causes the conversation to be finished. Note that the behavior with the help dialog is different:
+
+	bot.dialog('help', (session, args, next) => {
+	    // send help message to the user and end this dialog
+	    session.endDialog('This is a simple bot that collects a name and age.');
+	}).triggerAction({
+	    matches: /^help$/,
+	    onSelectAction: (session, args, next) => {
+	        // overrides default behavior of replacing the dialog stack
+	        // This will add the help dialog to the stack
+	        session.beginDialog(args.action, args);
+	    }
+	});
+
+In this case, the triggerAction will have a onSelectAction that begins the help dialog, on top of the existing conversation. When the help dialog is finished, it is then removed from the stack bringing the user back to the dialog they were interacting with earlier.
 
 
 ##Show me the code!
 
 Follow [this link for a complete implementation in C#](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FCSharp%2Fcore-GlobalMessageHandlers&version=GBmaster&_a=contents)
 
-Follow this link for a complete implementation in Node ( TODO )
-
+Follow [this link for a complete implementation in Node](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FNode%2Fcore-globalMessageHandlers&version=GBmaster&_a=contents)
