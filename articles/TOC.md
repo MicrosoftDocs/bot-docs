@@ -41,7 +41,7 @@
 ### Templates
 ### Management
 # Core Concepts
-## Dialogs
+## [Conversations](core-concepts/bot-framework-core-concepts-conversations.md)
 ## Channels
 ## Connectors
 ##Intelligence
