@@ -1,5 +1,5 @@
 ---
-title: Home | Bot Framework
+title: Bot Framework Documentation | Microsoft Docs
 description: Article description that will be displayed on landing pages and in most search results
 services: Bot Framework
 documentationcenter: BotFramework-Docs
