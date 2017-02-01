@@ -40,6 +40,9 @@ The open source web chat control can be embedded in websites and apps
 [Getting Started with Bots’  Microsoft Virtual Academy Course](https://mva.microsoft.com/en-US/training-courses/getting-started-with-bots-16759)
 Join experts Ryan Volum and Christopher Harrison as they help you get started creating your first bot. Learn about the many ways of communicating with the user, beyond just text, that Microsoft Bot Framework includes. And get the details on using LUIS to handle natural language processing. Plus, find out how to publish your bot to the world, allowing people to interact with it. See how to deploy the logic, how to register your bot, and how to add it to Skype. Get started now!
 
+[BikeSharing360 sample app](https://blogs.msdn.microsoft.com/visualstudio/2016/12/14/connectdemos-2016-bikesharing360-on-github/)
+And end to end demo of an application using bots.
+
 ##Contributions from bloggers and third party sources
 
 [Inspecting bots using Vorlon JS and Bot Framework](http://meulta.com/en/2017/01/25/how-to-debug-your-bot-with-vorlon-js/)
