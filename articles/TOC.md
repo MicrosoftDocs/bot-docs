@@ -1,58 +1,9 @@
-# [Welcome](index.md)
 # Overview
-## [What is the Bot Framework?](bot-framework-overview.md)
-## [How it's different](bot-framework-benefits.md)
-## [Key scenarios](bot-framework-scenarios.md)
-# [Get Started](get-started/index.md)
-## [Use .NET](get-started/bot-framework-dotnet-getstarted.md)
-## [Use Node.js](get-started/bot-framework-nodejs-getstarted.md)
-## [Use Azure Bot Service](get-started/bot-framework-azure-getstarted.md)
-## [Use REST](get-started/bot-framework-rest-getstarted.md)
-# Designing Bots
-## [Overview](designing-bots/index.md)
-## Core Principles
-### [Saying Hello](designing-bots/core/greeting.md)
-### [Dialogs](designing-bots/core/dialogs.md)
-### [Where am I?](designing-bots/core/navigation.md)
-### [Buttons, language and speech](designing-bots/core/ux-elements.md)
-## [Bot Capabilities](designing-bots/capabilities/index.md)
-### [Knowledge Base](designing-bots/capabilities/kb.md)
-### [Task Automation](designing-bots/capabilities/task.md)
-### [Bot to Web](designing-bots/capabilities/bot-to-web.md)
-### [Bot in Apps](designing-bots/capabilities/bot-in-apps.md)
-### [Bot in Websites](designing-bots/capabilities/bot-in-websites.md)
-### [Handoff to Humans](designing-bots/capabilities/human-handoff.md)
-## [Resources](designing-bots/resources/index.md)
-# Developing Bots
-## Overview
-## .NET
-### Get started
-### Reference
-### Samples
-## Node.js
-### Get started
-### Reference
-### Samples
-## REST
-### Get started
-### Reference
-## Azure Bot Service
-### Get started
-### Templates
-### Management
-# Core Concepts
-## [Conversations](core-concepts/bot-framework-core-concepts-conversations.md)
-## Channels
-## Connectors
-##Intelligence
-### Vision
-### Speech
-### Language
-### Knowledge
-### Search
-### Location
-## State
-## Security
+## [What is the Bot Framework?](overview/bot-framework-what-is-bot-framework.md)
+## [Frequently asked questions](overview/bot-framework-faq.md)
+## [What's new?](overview/bot-framework-whats-new.md)
+# Get Started
+# How To
+# Reference
+# Related
 # Resources
-## Downloads
-## Tools
