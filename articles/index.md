@@ -6,12 +6,10 @@ documentationcenter: BotFramework-Docs
 author: RobStand
 manager: cmullins
 
-ms.service: required
-ms.devlang: may be required
+ms.service: Bot Framework
 ms.topic: article
-ms.tgt_pltfrm: may be required
-ms.workload: required
-ms.date: 01/18/2017
+ms.workload: FUSE
+ms.date: 02/01/2017
 ms.author: rstand@microsoft.com
 
 ---
