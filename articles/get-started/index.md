@@ -11,7 +11,7 @@ ms.devlang: may be required
 ms.topic: article
 ms.tgt_pltfrm: may be required
 ms.workload: required
-ms.date: 01/18/2017
+ms.date: 01/31/2017
 ms.author: rstand@microsoft.com
 ---
 # Getting Started with the Bot Framework
