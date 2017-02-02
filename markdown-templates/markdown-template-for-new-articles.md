@@ -7,11 +7,9 @@ author: GitHub-alias-of-only-one-author
 manager: manager-alias
 
 
-ms.service: required
-ms.devlang: may be required
+ms.service: Bot Framework
 ms.topic: article
-ms.tgt_pltfrm: may be required
-ms.workload: required
+ms.workload: Cognitive Services
 ms.date: mm/dd/yyyy
 ms.author: Your MSFT alias or your full email address;semicolon separates two or more aliases
 
