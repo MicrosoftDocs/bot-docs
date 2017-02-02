@@ -11,7 +11,6 @@ ms.topic: article
 ms.workload: FUSE
 ms.date: 02/01/2017
 ms.author: rstand@microsoft.com
-
 ---
 # Bot Framework Documentation
 
