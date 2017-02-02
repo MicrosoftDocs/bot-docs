@@ -1,16 +1,14 @@
 ---
 title: What is the Bot Framework? | Microsoft Docs
 description: Overview of the Bot Framework and its capabilities.
-services: service-name
+services: Bot Framework
 documentationcenter: BotFramework-Docs
 author: RobStand
-manager: manager-alias
+manager: cmullins
 
-ms.service: required
-ms.devlang: may be required
+ms.service: Bot Framework
 ms.topic: article
-ms.tgt_pltfrm: may be required
-ms.workload: required
+ms.workload: Cognitive Services
 ms.date: 01/20/2017
 ms.author: rstand@microsoft.com
 

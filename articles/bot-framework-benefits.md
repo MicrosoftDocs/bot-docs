@@ -1,16 +1,14 @@
 ---
 title: Bot Framework Features | Microsoft Docs
 description: The features of the Bot Framework and how they benefit customers building bots.
-services: service-name
+services: Bot Framework
 documentationcenter: BotFramework-Docs
 author: RobStand
 manager: cmullins
 
-ms.service: required
-ms.devlang: may be required
+ms.service: Bot Framework
 ms.topic: article
-ms.tgt_pltfrm: may be required
-ms.workload: required
+ms.workload: Cognitive Services
 ms.date: 01/31/2017
 ms.author: rstand@microsoft.com
 
