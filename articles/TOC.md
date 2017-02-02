@@ -3,8 +3,12 @@
 ## [How it's different](bot-framework-benefits.md)
 ## [Key scenarios](bot-framework-scenarios.md)
 # Get Started
-## [Create your first bot](bot-framework-create-bot.md)
-# How To
+## Use .NET
+## Use Node.js
+## Use Azure Bot Service
+# Design
+# Develop
+# Publish
 # Reference
 # Resources
 ## [What's new?](bot-framework-whats-new.md)
