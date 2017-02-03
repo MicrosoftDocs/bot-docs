@@ -3,9 +3,9 @@
 ## [How it's different](bot-framework-benefits.md)
 ## [Key scenarios](bot-framework-scenarios.md)
 # Get Started
-## Use .NET
-## Use Node.js
-## Use Azure Bot Service
+## [Use .NET](bot-framework-dotnet-getstarted.md)
+## [Use Node.js](bot-framework-nodejs-getstarted.md)
+## [Use Azure Bot Service](bot-framework-azure-getstarted.md)
 # Design
 # Develop
 # Publish
