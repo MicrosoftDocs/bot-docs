@@ -38,8 +38,8 @@ A particularly valuable tool to build bots with is search. Search algorithms ena
 
 For one, fuzzy search keeps users from having to type exact matches (e.g. "who is jennifer?" instead of "jennifer marsman", "impala" instead of "Tame Impala")
 
-![Dialog Structure](../../media/patterns/fuzzySearch.png)
-![Dialog Structure](../../media/patterns/fuzzySearch2.png)
+![Dialog Structure](../../media/designing-bots/patterns/fuzzySearch.png)
+![Dialog Structure](../../media/designing-bots/patterns/fuzzySearch2.png)
 
 Search scores allow us to determine the confidence that we have about a specific search - allowing us to decide whether a piece of data is what a user is looking, order results based on our confidence, and curb our bot output based on confidence (e.g. "Hmm... were you looking for any of these events?" vs "Here is the event that best matches your search:") 
 
