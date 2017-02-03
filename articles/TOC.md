@@ -1,8 +1,7 @@
 # Overview
 ## [What is the Bot Framework?](bot-framework-what-is-bot-framework.md)
-## Key Concepts
-### [Dialogs](bot-framework-dialogs.md)
-### [First interactions](bot-framework-greeting.md)
+## [How it's different](bot-framework-benefits.md)
+## [Key scenarios](bot-framework-scenarios.md)
 # Get Started
 ## [Use .NET](bot-framework-dotnet-getstarted.md)
 ## [Use Node.js](bot-framework-nodejs-getstarted.md)
