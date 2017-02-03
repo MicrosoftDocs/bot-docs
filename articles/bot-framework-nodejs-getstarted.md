@@ -86,7 +86,8 @@ At this point, your bot is running locally. Next, start the emulator and then co
 2. Click **Connect**. (You won't need to specify **Microsoft App ID** and **Microsoft App Password** -- you'll get this information later when you register your bot with the framework.)
 
 Now that your bot is running locally and is connected to the emulator, test your bot by typing a few messages in the emulator. 
-You should see that the bot responds to each message you send by echoing back your message prefixed with the text *You said: *. 
+You should see that the bot responds to each message you send by echoing back your message prefixed with the text *You said:*. 
+Congratulations -- you've successfully created an *echo bot* using the Bot Builder SDK for Node.js! 
 
 ## Next steps
 Content coming soon. 
