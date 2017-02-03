@@ -10,7 +10,7 @@ ms.service: Bot Framework
 ms.topic: article
 ms.workload: Cognitive Services
 ms.date: 02/03/2017
-ms.author: mat.velloso@microsoft.com; v-demak@microsoft.com
+ms.author: v-demak@microsoft.com
 
 ---
 # Bot Design Center - Dialogs
@@ -147,5 +147,3 @@ Humans do not communicate in "stacks": They change their minds, a lot. Your bot 
 - Try to answer that question and then try to go back to that yes/no question and resume from where it left?
 
 The answer, of course, is: It depends. It will depend on your scenario, how likely this would happen, and what the user would expect the bot to do next. Managing this navigation across dialogs and helping users not getting lost is a fundamental component of bot design and also one of its most challenging parts.
-
-Which leads us to the [next topic](bot-framework-navigation.md)...
