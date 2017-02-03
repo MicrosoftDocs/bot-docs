@@ -1,6 +1,6 @@
 ---
 title: Bot Framework Create Bot | Microsoft Docs
-description: Walkthrough of creating a simple bot using the Bot Builder .NET SDK.
+description: Walkthrough of creating a simple bot using the Bot Builder SDK for .NET.
 services: Bot Framework
 documentationcenter: BotFramework-Docs
 author: kbrandl
@@ -13,24 +13,41 @@ ms.date: 02/02/2017
 ms.author: v-kibran@microsoft.com
 
 ---
-# Create a bot with the Bot Builder .NET SDK
+# Create a bot with the Bot Builder SDK for .NET
 > [!div class="op_single_selector"]
 > * [C#](bot-framework-dotnet-getstarted.md)
 > * [Node.js](bot-framework-nodejs-getstarted.md)
 > * [Azure Bot Service](bot-framework-azure-getstarted.md)
 >
 
-The Bot Builder .NET SDK is a powerful framework for constructing bots that can handle both freeform interactions and more guided ones where the possibilities are explicitly shown to the user. 
+The Bot Builder SDK for .NET is a powerful framework for constructing bots that can handle both freeform interactions and more guided ones where the possibilities are explicitly shown to the user. 
 It is easy to use and leverages C# to provide a familiar way for .NET developers to write bots.
 
-In this walkthrough, we'll take a detailed look at the process of developing, testing, deploying, publishing, and configuring a bot that is created using the Bot Builder .NET SDK.
+In this tutorial, we'll walk through the process of developing, testing, and publishing a bot that is created using the Bot Builder SDK for .NET.
 
-**Key features:**
-- Powerful dialog system with dialogs that are isolated and composable.
-- Built-in dialogs for simple things like Yes/No, strings, numbers, enumerations.
-- Built-in dialogs that utilize powerful AI frameworks like LUIS.
-- Bots are stateless, which helps them scale.
-- Form Flow for automatically generating a Bot from a C# class for filling in the class and that supports help, navigation, clarification and confirmation.
+## Get the SDK
+Content coming soon.
+
+## Create your bot
+Content coming soon. 
+
+## Test your bot
+Content coming soon. 
 
 ## Next steps
-TBD
+Content coming soon. 
+
+### Deploy your bot
+Content coming soon.
+
+### Register your bot
+Content coming soon.
+
+### Configure your bot
+Content coming soon.
+
+### Publish your bot
+Content coming soon.
+
+## Dive deeper
+Content coming soon.
