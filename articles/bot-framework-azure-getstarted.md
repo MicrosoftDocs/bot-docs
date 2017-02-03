@@ -13,7 +13,7 @@ ms.date: 02/02/2017
 ms.author: v-kibran@microsoft.com
 
 ---
-# Create your first bot with the Azure Bot Service
+# Create a bot with the Azure Bot Service
 > [!div class="op_single_selector"]
 > * [C#](bot-framework-dotnet-getstarted.md)
 > * [Node.js](bot-framework-nodejs-getstarted.md)
