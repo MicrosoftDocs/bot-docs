@@ -1,0 +1,44 @@
+---
+layout: page
+title: Channel Inspector
+permalink: /en-us/channel-inspector/
+weight: 5000
+parent1: Channels
+parent2: Channel inspector
+---
+<!-- Initial Form for Channel and Feature Matrix -->
+<hr>
+<div class="no-js">
+<div class="matrix-form2">
+    <div class="c-select-menu f-border">
+        <a href="#" role="button" aria-expanded="false" width="260px" height="40px">Select a channel</a>
+        <ul id="channels_ul" role="menu" class="c-menu f-scroll" aria-label="channels_ul" aria-hidden="true">
+            {% for channel in site.data.new.channels %}
+            <li class="c-menu-item" role="menuitem">
+                <a aria-checked="false" role="menuitemradio" href="/en-us/channel-inspector/channels/{{channel.channel_name}}" onclick="setFocused('channels');">{{channel.channel_name}}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="c-select-menu f-border">
+        <a href="#" role="button" aria-checked="true" aria-expanded="false" width="260px" height="40px">Select a feature</a>
+        <ul id="features_ul" role="menu" class="c-menu f-scroll" aria-label="features_ul" aria-hidden="true">
+            {% for channel in site.data.new.channels %}
+            {% if channel.channel_name == "Skype" %}
+            {% for feature in channel.features %}
+            <li class="c-menu-item" role="menuitem">
+                <a aria-checked="false" role="menuitemradio" href="#" onclick="setFocused('features');">{{feature.feature_name}}</a>                
+            </li>
+            {% endfor %}
+            {% endif %}            
+            {% endfor %}            
+        </ul>
+    </div>
+</div>
+</div>
+<div class="matrix-channel">
+    <hr>
+    <b>Copy of JSON file:</b> <a href="/en-us/channel-inspector/files/JSON/new.json">download</a>
+</div>
+<div class="matrix-nothing">
+</div>

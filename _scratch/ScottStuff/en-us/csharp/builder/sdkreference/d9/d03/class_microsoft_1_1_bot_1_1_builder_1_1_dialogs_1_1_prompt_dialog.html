@@ -1,0 +1,754 @@
+<!-- HTML header for doxygen 1.8.11-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Microsoft.Bot.Builder.Dialogs.PromptDialog Class Reference | Bot Builder SDK C# Reference Library | Bot Framework</title>
+    <link href="../../tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../jquery.js"></script>
+    <script type="text/javascript" src="../../dynsections.js"></script>
+    <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+    <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="../../botframework.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/css/documentation.css?1" />
+    <script type="text/javascript" src="/css/documents.js"></script>
+    <!-- START OF SmartSource Data Collector TAG v10.4.23 -->
+    <!-- Copyright (c) 2016 Webtrends Inc.  All rights reserved. -->
+    <script type="text/javascript" src="/js/webtrends.load.js"></script>
+    <!--
+      appInsights
+    -->
+    <script type="text/javascript">
+    var appInsights=window.appInsights||function(config){
+      function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+      }({
+          instrumentationKey:"ecf7f29d-de8c-4169-a492-bdce0a32c300"
+      });
+      window.appInsights=appInsights;
+      appInsights.trackPageView();
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var sidenav = $('#side-nav');
+            sidenav.before('<div id="content-container" class="outline"></div>');
+            var doccontent = $('#doc-content');
+			var contentcontainer = $('#content-container');
+            contentcontainer.append(sidenav);
+            contentcontainer.append(doccontent);
+            doccontent.prepend($('#referenceSearch'));
+			var top = $('#top');
+			top.before('<div class="fullWidth"></div>');
+			var fullwidth = $('div.fullWidth');
+			fullwidth.before('<div id="app-body"></div>');
+			fullwidth.append(top);
+			fullwidth.append(contentcontainer);
+			fullwidth.append($('.footer'));
+			var appbody = $('#app-body');
+			appbody.append(fullwidth);
+			var navtreecontents = $('#nav-tree-contents');
+			navtreecontents.prepend('<ul><li><div class="label"><a href="/">&lt; Documentation Home</a></div></li></ul>');
+			//sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            //sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><select id="lang-select" name="lang" ><option value="">All</option><option value="node">Node.js</option><option value="csharp">.NET</option></select><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            setProgrammingLanguage();
+			$('#MSearchField').removeAttr('value').attr('placeholder', 'Search the Bot Builder SDK C# reference');
+        });
+    </script>
+</head>
+<body>
+    <div id="referenceSearch"></div>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div>
+            <header>
+                <div class="outline">
+                    <div class="header">
+                        <a class="logo" href="//www.microsoft.com">
+                            <svg class="svgicon svgicon-microsoft-color-logo">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/symbol-defs.svg#svgicon-microsoft-color-logo"></use>
+                            </svg>
+                        </a>
+                        <div class="loading-animation"></div>
+                        <span class="environment"></span>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="brand-primary">
+                <div class="jumbo">
+                    <div class="jumbo-header"><a href="https://www.botframework.com/">Bot Framework</a></div>
+                    <ul class="header-nav">
+                        <li><a href="https://dev.botframework.com/#/bots">My bots</a></li>
+                        <li><a href="https://dev.botframework.com/#/bots/new">Register a bot</a></li>
+                        <li class="active"><a href="/">Documentation</a></li>
+                        <li><a href="https://bots.botframework.com/">Bot Directory</a></li>
+                        <li><a href="https://blog.botframework.com/">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header part -->
+</body>
+</html><!-- Generated by Doxygen 1.8.11 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d9/d03/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog.html','../../');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="../../d7/d78/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">Microsoft.Bot.Builder.Dialogs.PromptDialog Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Dialog factory for simple prompts.  
+ <a href="../../d9/d03/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9a/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog_1_1_prompt_attachment.html">PromptAttachment</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prompt for an attachment <a href="../../d5/d9a/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog_1_1_prompt_attachment.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df9/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog_1_1_prompt_choice.html">PromptChoice</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prompt for a choice from a set of choices.  <a href="../../dc/df9/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog_1_1_prompt_choice.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7e/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog_1_1_prompt_confirm.html">PromptConfirm</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prompt for a confirmation.  <a href="../../dd/d7e/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog_1_1_prompt_confirm.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d63/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog_1_1_prompt_double.html">PromptDouble</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prompt for a double.  <a href="../../d9/d63/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog_1_1_prompt_double.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d27/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog_1_1_prompt_int64.html">PromptInt64</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prompt for a confirmation.  <a href="../../d4/d27/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog_1_1_prompt_int64.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d39/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog_1_1_prompt_string.html">PromptString</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prompt for a text string.  <a href="../../d3/d39/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog_1_1_prompt_string.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a0c78a00b0968727970e856e823754679"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d03/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog.html#a0c78a00b0968727970e856e823754679">Attachment</a> (<a class="el" href="../../d1/dc6/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog_context.html">IDialogContext</a> context, ResumeAfter&lt; IEnumerable&lt; <a class="el" href="../../d4/ded/class_microsoft_1_1_bot_1_1_connector_1_1_attachment.html">Attachment</a> &gt;&gt; resume, string prompt, IEnumerable&lt; string &gt; contentTypes=null, string retry=null, int attempts=3)</td></tr>
+<tr class="memdesc:a0c78a00b0968727970e856e823754679"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prompt for an attachment  <a href="#a0c78a00b0968727970e856e823754679">More...</a><br /></td></tr>
+<tr class="separator:a0c78a00b0968727970e856e823754679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27c7bcc6d37046cc15895a9bbda14b6b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d03/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog.html#a27c7bcc6d37046cc15895a9bbda14b6b">Choice&lt; T &gt;</a> (<a class="el" href="../../d1/dc6/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog_context.html">IDialogContext</a> context, ResumeAfter&lt; T &gt; resume, IEnumerable&lt; T &gt; options, string prompt, string retry=null, int attempts=3, <a class="el" href="../../d1/d6a/namespace_microsoft_1_1_bot_1_1_builder_1_1_dialogs.html#a8e0b95fd4acd5831ff99c381d8c65bea">PromptStyle</a> promptStyle=<a class="el" href="../../d1/d6a/namespace_microsoft_1_1_bot_1_1_builder_1_1_dialogs.html#a8e0b95fd4acd5831ff99c381d8c65beaa06b9281e396db002010bde1de57262eb">PromptStyle.Auto</a>, IEnumerable&lt; string &gt; descriptions=null)</td></tr>
+<tr class="memdesc:a27c7bcc6d37046cc15895a9bbda14b6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prompt for one of a set of choices.  <a href="#a27c7bcc6d37046cc15895a9bbda14b6b">More...</a><br /></td></tr>
+<tr class="separator:a27c7bcc6d37046cc15895a9bbda14b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af496bcdf80a5467cfbb0087809d8b591"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d03/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog.html#af496bcdf80a5467cfbb0087809d8b591">Choice&lt; T &gt;</a> (<a class="el" href="../../d1/dc6/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog_context.html">IDialogContext</a> context, ResumeAfter&lt; T &gt; resume, <a class="el" href="../../d0/d89/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_options.html">PromptOptions</a>&lt; T &gt; promptOptions)</td></tr>
+<tr class="memdesc:af496bcdf80a5467cfbb0087809d8b591"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prompt for one of a set of choices.  <a href="#af496bcdf80a5467cfbb0087809d8b591">More...</a><br /></td></tr>
+<tr class="separator:af496bcdf80a5467cfbb0087809d8b591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e9963cd37505fe6cb68ea46acbd639e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d03/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog.html#a3e9963cd37505fe6cb68ea46acbd639e">Confirm</a> (<a class="el" href="../../d1/dc6/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog_context.html">IDialogContext</a> context, ResumeAfter&lt; bool &gt; resume, string prompt, string retry=null, int attempts=3, <a class="el" href="../../d1/d6a/namespace_microsoft_1_1_bot_1_1_builder_1_1_dialogs.html#a8e0b95fd4acd5831ff99c381d8c65bea">PromptStyle</a> promptStyle=<a class="el" href="../../d1/d6a/namespace_microsoft_1_1_bot_1_1_builder_1_1_dialogs.html#a8e0b95fd4acd5831ff99c381d8c65beaa06b9281e396db002010bde1de57262eb">PromptStyle.Auto</a>)</td></tr>
+<tr class="memdesc:a3e9963cd37505fe6cb68ea46acbd639e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ask a yes/no question.  <a href="#a3e9963cd37505fe6cb68ea46acbd639e">More...</a><br /></td></tr>
+<tr class="separator:a3e9963cd37505fe6cb68ea46acbd639e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ba87d38805c0fb4a6a9bcb5acd7565c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d03/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog.html#a7ba87d38805c0fb4a6a9bcb5acd7565c">Confirm</a> (<a class="el" href="../../d1/dc6/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog_context.html">IDialogContext</a> context, ResumeAfter&lt; bool &gt; resume, <a class="el" href="../../d0/d89/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_options.html">PromptOptions</a>&lt; string &gt; promptOptions)</td></tr>
+<tr class="memdesc:a7ba87d38805c0fb4a6a9bcb5acd7565c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ask a yes/no questions.  <a href="#a7ba87d38805c0fb4a6a9bcb5acd7565c">More...</a><br /></td></tr>
+<tr class="separator:a7ba87d38805c0fb4a6a9bcb5acd7565c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff8dbc92feeab383a6269768c67f55d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d03/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog.html#abff8dbc92feeab383a6269768c67f55d">Number</a> (<a class="el" href="../../d1/dc6/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog_context.html">IDialogContext</a> context, ResumeAfter&lt; long &gt; resume, string prompt, string retry=null, int attempts=3)</td></tr>
+<tr class="memdesc:abff8dbc92feeab383a6269768c67f55d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prompt for a long.  <a href="#abff8dbc92feeab383a6269768c67f55d">More...</a><br /></td></tr>
+<tr class="separator:abff8dbc92feeab383a6269768c67f55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f068dec66f3f82a016289b7750e11d9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d03/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog.html#a4f068dec66f3f82a016289b7750e11d9">Number</a> (<a class="el" href="../../d1/dc6/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog_context.html">IDialogContext</a> context, ResumeAfter&lt; double &gt; resume, string prompt, string retry=null, int attempts=3)</td></tr>
+<tr class="memdesc:a4f068dec66f3f82a016289b7750e11d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prompt for a double.  <a href="#a4f068dec66f3f82a016289b7750e11d9">More...</a><br /></td></tr>
+<tr class="separator:a4f068dec66f3f82a016289b7750e11d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa994f742676d605eef73404d22d1c6b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d03/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog.html#afa994f742676d605eef73404d22d1c6b">Text</a> (<a class="el" href="../../d1/dc6/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog_context.html">IDialogContext</a> context, ResumeAfter&lt; string &gt; resume, string prompt, string retry=null, int attempts=3)</td></tr>
+<tr class="memdesc:afa994f742676d605eef73404d22d1c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prompt for a string.  <a href="#afa994f742676d605eef73404d22d1c6b">More...</a><br /></td></tr>
+<tr class="separator:afa994f742676d605eef73404d22d1c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Dialog factory for simple prompts. </p>
+<p>The exception <a class="el" href="../../d7/df8/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_too_many_attempts_exception.html" title="The exception representing too many attempts by the user to answer the question asked by the prompt...">TooManyAttemptsException</a> will be thrown if the number of allowed attempts is exceeded.</p>
+
+<p>Definition at line <a class="el" href="../../d2/d2b/_prompt_dialog_8cs_source.html#l00275">275</a> of file <a class="el" href="../../d2/d2b/_prompt_dialog_8cs_source.html">PromptDialog.cs</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a0c78a00b0968727970e856e823754679"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Microsoft.Bot.Builder.Dialogs.PromptDialog.Attachment </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/dc6/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog_context.html">IDialogContext</a>&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ResumeAfter&lt; IEnumerable&lt; <a class="el" href="../../d4/ded/class_microsoft_1_1_bot_1_1_connector_1_1_attachment.html">Attachment</a> &gt;&gt;&#160;</td>
+          <td class="paramname"><em>resume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prompt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IEnumerable&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>contentTypes</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>retry</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>attempts</em> = <code>3</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Prompt for an attachment </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The dialog context. </td></tr>
+    <tr><td class="paramname">resume</td><td>Resume handler. </td></tr>
+    <tr><td class="paramname">prompt</td><td>The prompt to show to the user. </td></tr>
+    <tr><td class="paramname">contentTypes</td><td>The optional content types the attachment type should be part of</td></tr>
+    <tr><td class="paramname">retry</td><td>What to show on retry</td></tr>
+    <tr><td class="paramname">attempts</td><td>The number of times to retry</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../d2/d2b/_prompt_dialog_8cs_source.html#l00374">374</a> of file <a class="el" href="../../d2/d2b/_prompt_dialog_8cs_source.html">PromptDialog.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a27c7bcc6d37046cc15895a9bbda14b6b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Microsoft.Bot.Builder.Dialogs.PromptDialog.Choice&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/dc6/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog_context.html">IDialogContext</a>&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ResumeAfter&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>resume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IEnumerable&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>options</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prompt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>retry</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>attempts</em> = <code>3</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d6a/namespace_microsoft_1_1_bot_1_1_builder_1_1_dialogs.html#a8e0b95fd4acd5831ff99c381d8c65bea">PromptStyle</a>&#160;</td>
+          <td class="paramname"><em>promptStyle</em> = <code><a class="el" href="../../d1/d6a/namespace_microsoft_1_1_bot_1_1_builder_1_1_dialogs.html#a8e0b95fd4acd5831ff99c381d8c65beaa06b9281e396db002010bde1de57262eb">PromptStyle.Auto</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IEnumerable&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>descriptions</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Prompt for one of a set of choices. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The context. </td></tr>
+    <tr><td class="paramname">resume</td><td>Resume handler. </td></tr>
+    <tr><td class="paramname">options</td><td>The possible options all of which must be convertible to a string.</td></tr>
+    <tr><td class="paramname">prompt</td><td>The prompt to show to the user. </td></tr>
+    <tr><td class="paramname">retry</td><td>What to show on retry. </td></tr>
+    <tr><td class="paramname">attempts</td><td>The number of times to retry. </td></tr>
+    <tr><td class="paramname">promptStyle</td><td>Style of the prompt <a class="el" href="../../d1/d6a/namespace_microsoft_1_1_bot_1_1_builder_1_1_dialogs.html#a8e0b95fd4acd5831ff99c381d8c65bea" title="The style of generated prompt ">PromptStyle</a> </td></tr>
+    <tr><td class="paramname">descriptions</td><td>Descriptions to display for choices.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../d2/d2b/_prompt_dialog_8cs_source.html#l00346">346</a> of file <a class="el" href="../../d2/d2b/_prompt_dialog_8cs_source.html">PromptDialog.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af496bcdf80a5467cfbb0087809d8b591"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Microsoft.Bot.Builder.Dialogs.PromptDialog.Choice&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/dc6/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog_context.html">IDialogContext</a>&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ResumeAfter&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>resume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d89/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_options.html">PromptOptions</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>promptOptions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Prompt for one of a set of choices. </p>
+<p><em>T</em>  should implement object.ToString</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The type of the options.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The dialog context.</td></tr>
+    <tr><td class="paramname">resume</td><td>Resume handler.</td></tr>
+    <tr><td class="paramname">promptOptions</td><td>The prompt options.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../d2/d2b/_prompt_dialog_8cs_source.html#l00359">359</a> of file <a class="el" href="../../d2/d2b/_prompt_dialog_8cs_source.html">PromptDialog.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e9963cd37505fe6cb68ea46acbd639e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Microsoft.Bot.Builder.Dialogs.PromptDialog.Confirm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/dc6/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog_context.html">IDialogContext</a>&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ResumeAfter&lt; bool &gt;&#160;</td>
+          <td class="paramname"><em>resume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prompt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>retry</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>attempts</em> = <code>3</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d6a/namespace_microsoft_1_1_bot_1_1_builder_1_1_dialogs.html#a8e0b95fd4acd5831ff99c381d8c65bea">PromptStyle</a>&#160;</td>
+          <td class="paramname"><em>promptStyle</em> = <code><a class="el" href="../../d1/d6a/namespace_microsoft_1_1_bot_1_1_builder_1_1_dialogs.html#a8e0b95fd4acd5831ff99c381d8c65beaa06b9281e396db002010bde1de57262eb">PromptStyle.Auto</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ask a yes/no question. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The context. </td></tr>
+    <tr><td class="paramname">resume</td><td>Resume handler. </td></tr>
+    <tr><td class="paramname">prompt</td><td>The prompt to show to the user. </td></tr>
+    <tr><td class="paramname">retry</td><td>What to show on retry. </td></tr>
+    <tr><td class="paramname">attempts</td><td>The number of times to retry. </td></tr>
+    <tr><td class="paramname">promptStyle</td><td>Style of the prompt <a class="el" href="../../d1/d6a/namespace_microsoft_1_1_bot_1_1_builder_1_1_dialogs.html#a8e0b95fd4acd5831ff99c381d8c65bea" title="The style of generated prompt ">PromptStyle</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../d2/d2b/_prompt_dialog_8cs_source.html#l00296">296</a> of file <a class="el" href="../../d2/d2b/_prompt_dialog_8cs_source.html">PromptDialog.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7ba87d38805c0fb4a6a9bcb5acd7565c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Microsoft.Bot.Builder.Dialogs.PromptDialog.Confirm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/dc6/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog_context.html">IDialogContext</a>&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ResumeAfter&lt; bool &gt;&#160;</td>
+          <td class="paramname"><em>resume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d89/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_options.html">PromptOptions</a>&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>promptOptions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ask a yes/no questions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The dialog context.</td></tr>
+    <tr><td class="paramname">resume</td><td>Resume handler.</td></tr>
+    <tr><td class="paramname">promptOptions</td><td>The options for the prompt, PromptOptions&lt;T&gt;.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../d2/d2b/_prompt_dialog_8cs_source.html#l00307">307</a> of file <a class="el" href="../../d2/d2b/_prompt_dialog_8cs_source.html">PromptDialog.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abff8dbc92feeab383a6269768c67f55d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Microsoft.Bot.Builder.Dialogs.PromptDialog.Number </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/dc6/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog_context.html">IDialogContext</a>&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ResumeAfter&lt; long &gt;&#160;</td>
+          <td class="paramname"><em>resume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prompt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>retry</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>attempts</em> = <code>3</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Prompt for a long. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The context. </td></tr>
+    <tr><td class="paramname">resume</td><td>Resume handler. </td></tr>
+    <tr><td class="paramname">prompt</td><td>The prompt to show to the user. </td></tr>
+    <tr><td class="paramname">retry</td><td>What to show on retry. </td></tr>
+    <tr><td class="paramname">attempts</td><td>The number of times to retry. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../d2/d2b/_prompt_dialog_8cs_source.html#l00319">319</a> of file <a class="el" href="../../d2/d2b/_prompt_dialog_8cs_source.html">PromptDialog.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4f068dec66f3f82a016289b7750e11d9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Microsoft.Bot.Builder.Dialogs.PromptDialog.Number </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/dc6/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog_context.html">IDialogContext</a>&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ResumeAfter&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>resume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prompt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>retry</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>attempts</em> = <code>3</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Prompt for a double. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The context. </td></tr>
+    <tr><td class="paramname">resume</td><td>Resume handler. </td></tr>
+    <tr><td class="paramname">prompt</td><td>The prompt to show to the user. </td></tr>
+    <tr><td class="paramname">retry</td><td>What to show on retry. </td></tr>
+    <tr><td class="paramname">attempts</td><td>The number of times to retry. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../d2/d2b/_prompt_dialog_8cs_source.html#l00331">331</a> of file <a class="el" href="../../d2/d2b/_prompt_dialog_8cs_source.html">PromptDialog.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afa994f742676d605eef73404d22d1c6b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Microsoft.Bot.Builder.Dialogs.PromptDialog.Text </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/dc6/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog_context.html">IDialogContext</a>&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ResumeAfter&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>resume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prompt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>retry</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>attempts</em> = <code>3</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Prompt for a string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The context. </td></tr>
+    <tr><td class="paramname">resume</td><td>Resume handler. </td></tr>
+    <tr><td class="paramname">prompt</td><td>The prompt to show to the user. </td></tr>
+    <tr><td class="paramname">retry</td><td>What to show on retry. </td></tr>
+    <tr><td class="paramname">attempts</td><td>The number of times to retry. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../d2/d2b/_prompt_dialog_8cs_source.html#l00283">283</a> of file <a class="el" href="../../d2/d2b/_prompt_dialog_8cs_source.html">PromptDialog.cs</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="../../d2/d2b/_prompt_dialog_8cs_source.html">PromptDialog.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.11-->
+<!-- start footer part -->
+<!-- id is needed for treeview function! -->
+<div class="outline footer">
+    <ul>
+        <li><a href="//aka.ms/bf-contactus">Contact us</a></li>
+        <li><a href="//aka.ms/bf-privacy">Privacy & cookies</a></li>
+        <li><a href="//aka.ms/bf-terms">Terms of use</a></li>
+        <li><a href="//aka.ms/bf-conduct">Code of conduct</a></li>
+        <li>&copy; 2016 Microsoft</li>
+    </ul>
+</div>
+<script src="//bot-framework.azureedge.net/libs/svgxuse.js"></script>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100954936); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100954936ns.gif" /></p></noscript>
+</body>
+</html>

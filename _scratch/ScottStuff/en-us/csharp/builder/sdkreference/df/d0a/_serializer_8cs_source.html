@@ -1,0 +1,161 @@
+<!-- HTML header for doxygen 1.8.11-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Serializer.cs Source File | Bot Builder SDK C# Reference Library | Bot Framework</title>
+    <link href="../../tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../jquery.js"></script>
+    <script type="text/javascript" src="../../dynsections.js"></script>
+    <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+    <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="../../botframework.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/css/documentation.css?1" />
+    <script type="text/javascript" src="/css/documents.js"></script>
+    <!-- START OF SmartSource Data Collector TAG v10.4.23 -->
+    <!-- Copyright (c) 2016 Webtrends Inc.  All rights reserved. -->
+    <script type="text/javascript" src="/js/webtrends.load.js"></script>
+    <!--
+      appInsights
+    -->
+    <script type="text/javascript">
+    var appInsights=window.appInsights||function(config){
+      function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+      }({
+          instrumentationKey:"ecf7f29d-de8c-4169-a492-bdce0a32c300"
+      });
+      window.appInsights=appInsights;
+      appInsights.trackPageView();
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var sidenav = $('#side-nav');
+            sidenav.before('<div id="content-container" class="outline"></div>');
+            var doccontent = $('#doc-content');
+			var contentcontainer = $('#content-container');
+            contentcontainer.append(sidenav);
+            contentcontainer.append(doccontent);
+            doccontent.prepend($('#referenceSearch'));
+			var top = $('#top');
+			top.before('<div class="fullWidth"></div>');
+			var fullwidth = $('div.fullWidth');
+			fullwidth.before('<div id="app-body"></div>');
+			fullwidth.append(top);
+			fullwidth.append(contentcontainer);
+			fullwidth.append($('.footer'));
+			var appbody = $('#app-body');
+			appbody.append(fullwidth);
+			var navtreecontents = $('#nav-tree-contents');
+			navtreecontents.prepend('<ul><li><div class="label"><a href="/">&lt; Documentation Home</a></div></li></ul>');
+			//sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            //sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><select id="lang-select" name="lang" ><option value="">All</option><option value="node">Node.js</option><option value="csharp">.NET</option></select><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            setProgrammingLanguage();
+			$('#MSearchField').removeAttr('value').attr('placeholder', 'Search the Bot Builder SDK C# reference');
+        });
+    </script>
+</head>
+<body>
+    <div id="referenceSearch"></div>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div>
+            <header>
+                <div class="outline">
+                    <div class="header">
+                        <a class="logo" href="//www.microsoft.com">
+                            <svg class="svgicon svgicon-microsoft-color-logo">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/symbol-defs.svg#svgicon-microsoft-color-logo"></use>
+                            </svg>
+                        </a>
+                        <div class="loading-animation"></div>
+                        <span class="environment"></span>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="brand-primary">
+                <div class="jumbo">
+                    <div class="jumbo-header"><a href="https://www.botframework.com/">Bot Framework</a></div>
+                    <ul class="header-nav">
+                        <li><a href="https://dev.botframework.com/#/bots">My bots</a></li>
+                        <li><a href="https://dev.botframework.com/#/bots/new">Register a bot</a></li>
+                        <li class="active"><a href="/">Documentation</a></li>
+                        <li><a href="https://bots.botframework.com/">Bot Directory</a></li>
+                        <li><a href="https://blog.botframework.com/">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header part -->
+</body>
+</html><!-- Generated by Doxygen 1.8.11 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('df/d0a/_serializer_8cs_source.html','../../');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">Serializer.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> <a class="code" href="../../d8/dd0/namespace_system.html">System</a>;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> <a class="code" href="../../d8/dd0/namespace_system.html">System</a>.Collections.Generic;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> <a class="code" href="../../d7/d4e/namespace_microsoft.html">Microsoft</a>.<a class="code" href="../../d5/d61/namespace_microsoft_1_1_bot.html">Bot</a>.<a class="code" href="../../d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html">Builder</a>.<a class="code" href="../../d0/d20/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling.html">Calling</a>.<a class="code" href="../../d8/d36/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model.html">ObjectModel</a>.<a class="code" href="../../da/ddc/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts.html">Contracts</a>;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> Newtonsoft.Json;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> Newtonsoft.Json.Converters;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> Newtonsoft.Json.Linq;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using</span> Newtonsoft.Json.Serialization;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d7/d4e/namespace_microsoft.html">Microsoft</a>.Bot.Builder.Calling.ObjectModel.Misc</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../d9/d80/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer.html">   14</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code" href="../../d9/d80/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer.html">Serializer</a></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keyword">private</span> <span class="keyword">static</span> readonly JsonSerializerSettings defaultSerializerSettings = <a class="code" href="../../d9/d80/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer.html">Serializer</a>.<a class="code" href="../../d9/d80/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer.html#a6d1e54abac8ca407b893271a904e35e0">GetSerializerSettings</a>();</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">private</span> <span class="keyword">static</span> readonly JsonSerializerSettings loggingSerializerSettings = <a class="code" href="../../d9/d80/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer.html">Serializer</a>.<a class="code" href="../../d9/d80/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer.html#a6d1e54abac8ca407b893271a904e35e0">GetSerializerSettings</a>(Formatting.Indented);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../d9/d80/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer.html#adf6313447040c0adfff2e5ff88299760">   22</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code" href="../../d9/d80/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer.html#adf6313447040c0adfff2e5ff88299760">SerializeToJson</a>(<span class="keywordtype">object</span> obj, <span class="keywordtype">bool</span> forLogging = <span class="keyword">false</span>)</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        {</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keywordflow">return</span> JsonConvert.SerializeObject(obj, forLogging ? loggingSerializerSettings : defaultSerializerSettings);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        }</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../d9/d80/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer.html#af04bb7e97f12d931c9c77e79b89cee69">   32</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> JToken <a class="code" href="../../d9/d80/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer.html#af04bb7e97f12d931c9c77e79b89cee69">SerializeToJToken</a>(Object obj)</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordflow">return</span> JToken.FromObject(obj, JsonSerializer.Create(defaultSerializerSettings));</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        }</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../d9/d80/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer.html#a5fc29af983a805e80741cb63b6914801">   40</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> T DeserializeFromJson&lt;T&gt;(<span class="keywordtype">string</span> json)</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        {</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">return</span> JsonConvert.DeserializeObject&lt;T&gt;(json, defaultSerializerSettings);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../d9/d80/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer.html#a9f090836066a33d9ca895458ff62c87c">   51</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> T DeserializeFromJToken&lt;T&gt;(JToken jToken)</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        {</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">return</span> jToken.ToObject&lt;T&gt;(JsonSerializer.Create(defaultSerializerSettings));</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../d9/d80/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer.html#a6d1e54abac8ca407b893271a904e35e0">   59</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> JsonSerializerSettings <a class="code" href="../../d9/d80/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer.html#a6d1e54abac8ca407b893271a904e35e0">GetSerializerSettings</a>(Formatting formatting = Formatting.None)</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        {</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> JsonSerializerSettings()</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            {</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                Formatting = formatting,</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                ContractResolver = <span class="keyword">new</span> CamelCasePropertyNamesContractResolver(),</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                NullValueHandling = NullValueHandling.Ignore,</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                DateFormatHandling = DateFormatHandling.IsoDateFormat,</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                DateTimeZoneHandling = DateTimeZoneHandling.Utc,</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                ReferenceLoopHandling = ReferenceLoopHandling.Serialize,</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                Converters = <span class="keyword">new</span> List&lt;JsonConverter&gt; { <span class="keyword">new</span> StringEnumConverter { CamelCaseText = <span class="keyword">true</span> }, <span class="keyword">new</span> <a class="code" href="../../dd/d3f/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_action_converter.html">ActionConverter</a>(), <span class="keyword">new</span> <a class="code" href="../../d0/d32/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_operation_outcome_converter.html">OperationOutcomeConverter</a>(), <span class="keyword">new</span> <a class="code" href="../../d0/da5/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_notification_converter.html">NotificationConverter</a>() },</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            };</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div><div class="ttc" id="class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_operation_outcome_converter_html"><div class="ttname"><a href="../../d0/d32/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_operation_outcome_converter.html">Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeConverter</a></div><div class="ttdoc">By default Json.net doesn&amp;#39;t know how to deserialize JSON data into Interfaces or abstract classes...</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0a/_operation_outcome_converter_8cs_source.html#l00011">OperationOutcomeConverter.cs:11</a></div></div>
+<div class="ttc" id="namespace_system_html"><div class="ttname"><a href="../../d8/dd0/namespace_system.html">System</a></div></div>
+<div class="ttc" id="namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_html"><div class="ttname"><a href="../../d8/d36/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model.html">Microsoft.Bot.Builder.Calling.ObjectModel</a></div></div>
+<div class="ttc" id="namespace_microsoft_html"><div class="ttname"><a href="../../d7/d4e/namespace_microsoft.html">Microsoft</a></div></div>
+<div class="ttc" id="class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer_html"><div class="ttname"><a href="../../d9/d80/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer.html">Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer</a></div><div class="ttdoc">Helper class for serializing/deserializing </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0a/_serializer_8cs_source.html#l00014">Serializer.cs:14</a></div></div>
+<div class="ttc" id="class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer_html_adf6313447040c0adfff2e5ff88299760"><div class="ttname"><a href="../../d9/d80/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer.html#adf6313447040c0adfff2e5ff88299760">Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer.SerializeToJson</a></div><div class="ttdeci">static string SerializeToJson(object obj, bool forLogging=false)</div><div class="ttdoc">Serialize input object to string </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0a/_serializer_8cs_source.html#l00022">Serializer.cs:22</a></div></div>
+<div class="ttc" id="class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_action_converter_html"><div class="ttname"><a href="../../dd/d3f/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_action_converter.html">Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionConverter</a></div><div class="ttdoc">By default Json.net doesn&amp;#39;t know how to deserialize JSON data into Interfaces or abstract classes...</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d21/_action_converter_8cs_source.html#l00012">ActionConverter.cs:12</a></div></div>
+<div class="ttc" id="namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_html"><div class="ttname"><a href="../../d0/d20/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling.html">Microsoft.Bot.Builder.Calling</a></div><div class="ttdoc">Root namespace for the Microsoft Bot Builder Calling SDK. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d22/_calling_bot_service_8cs_source.html#l00012">CallingBotService.cs:12</a></div></div>
+<div class="ttc" id="class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_notification_converter_html"><div class="ttname"><a href="../../d0/da5/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_notification_converter.html">Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.NotificationConverter</a></div><div class="ttdoc">By default Json.net doesn&amp;#39;t know how to deserialize JSON data into Interfaces or abstract classes...</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d46/_notification_converter_8cs_source.html#l00011">NotificationConverter.cs:11</a></div></div>
+<div class="ttc" id="class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer_html_af04bb7e97f12d931c9c77e79b89cee69"><div class="ttname"><a href="../../d9/d80/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer.html#af04bb7e97f12d931c9c77e79b89cee69">Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer.SerializeToJToken</a></div><div class="ttdeci">static JToken SerializeToJToken(Object obj)</div><div class="ttdoc">Serialize to JToken </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0a/_serializer_8cs_source.html#l00032">Serializer.cs:32</a></div></div>
+<div class="ttc" id="namespace_microsoft_1_1_bot_html"><div class="ttname"><a href="../../d5/d61/namespace_microsoft_1_1_bot.html">Microsoft.Bot</a></div></div>
+<div class="ttc" id="namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_html"><div class="ttname"><a href="../../da/ddc/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts.html">Microsoft.Bot.Builder.Calling.ObjectModel.Contracts</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d4e/_action_base_8cs_source.html#l00007">ActionBase.cs:7</a></div></div>
+<div class="ttc" id="class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer_html_a6d1e54abac8ca407b893271a904e35e0"><div class="ttname"><a href="../../d9/d80/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer.html#a6d1e54abac8ca407b893271a904e35e0">Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer.GetSerializerSettings</a></div><div class="ttdeci">static JsonSerializerSettings GetSerializerSettings(Formatting formatting=Formatting.None)</div><div class="ttdoc">Returns default serializer settings. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0a/_serializer_8cs_source.html#l00059">Serializer.cs:59</a></div></div>
+<div class="ttc" id="namespace_microsoft_1_1_bot_1_1_builder_html"><div class="ttname"><a href="../../d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html">Microsoft.Bot.Builder</a></div><div class="ttdoc">Root namespace for the Microsoft Bot Builder SDK.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.11-->
+<!-- start footer part -->
+<!-- id is needed for treeview function! -->
+<div class="outline footer">
+    <ul>
+        <li><a href="//aka.ms/bf-contactus">Contact us</a></li>
+        <li><a href="//aka.ms/bf-privacy">Privacy & cookies</a></li>
+        <li><a href="//aka.ms/bf-terms">Terms of use</a></li>
+        <li><a href="//aka.ms/bf-conduct">Code of conduct</a></li>
+        <li>&copy; 2016 Microsoft</li>
+    </ul>
+</div>
+<script src="//bot-framework.azureedge.net/libs/svgxuse.js"></script>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100954936); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100954936ns.gif" /></p></noscript>
+</body>
+</html>

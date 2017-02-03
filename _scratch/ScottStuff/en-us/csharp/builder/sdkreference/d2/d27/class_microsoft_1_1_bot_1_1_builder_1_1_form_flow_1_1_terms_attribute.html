@@ -1,0 +1,296 @@
+<!-- HTML header for doxygen 1.8.11-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Microsoft.Bot.Builder.FormFlow.TermsAttribute Class Reference | Bot Builder SDK C# Reference Library | Bot Framework</title>
+    <link href="../../tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../jquery.js"></script>
+    <script type="text/javascript" src="../../dynsections.js"></script>
+    <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+    <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="../../botframework.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/css/documentation.css?1" />
+    <script type="text/javascript" src="/css/documents.js"></script>
+    <!-- START OF SmartSource Data Collector TAG v10.4.23 -->
+    <!-- Copyright (c) 2016 Webtrends Inc.  All rights reserved. -->
+    <script type="text/javascript" src="/js/webtrends.load.js"></script>
+    <!--
+      appInsights
+    -->
+    <script type="text/javascript">
+    var appInsights=window.appInsights||function(config){
+      function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+      }({
+          instrumentationKey:"ecf7f29d-de8c-4169-a492-bdce0a32c300"
+      });
+      window.appInsights=appInsights;
+      appInsights.trackPageView();
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var sidenav = $('#side-nav');
+            sidenav.before('<div id="content-container" class="outline"></div>');
+            var doccontent = $('#doc-content');
+			var contentcontainer = $('#content-container');
+            contentcontainer.append(sidenav);
+            contentcontainer.append(doccontent);
+            doccontent.prepend($('#referenceSearch'));
+			var top = $('#top');
+			top.before('<div class="fullWidth"></div>');
+			var fullwidth = $('div.fullWidth');
+			fullwidth.before('<div id="app-body"></div>');
+			fullwidth.append(top);
+			fullwidth.append(contentcontainer);
+			fullwidth.append($('.footer'));
+			var appbody = $('#app-body');
+			appbody.append(fullwidth);
+			var navtreecontents = $('#nav-tree-contents');
+			navtreecontents.prepend('<ul><li><div class="label"><a href="/">&lt; Documentation Home</a></div></li></ul>');
+			//sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            //sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><select id="lang-select" name="lang" ><option value="">All</option><option value="node">Node.js</option><option value="csharp">.NET</option></select><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            setProgrammingLanguage();
+			$('#MSearchField').removeAttr('value').attr('placeholder', 'Search the Bot Builder SDK C# reference');
+        });
+    </script>
+</head>
+<body>
+    <div id="referenceSearch"></div>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div>
+            <header>
+                <div class="outline">
+                    <div class="header">
+                        <a class="logo" href="//www.microsoft.com">
+                            <svg class="svgicon svgicon-microsoft-color-logo">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/symbol-defs.svg#svgicon-microsoft-color-logo"></use>
+                            </svg>
+                        </a>
+                        <div class="loading-animation"></div>
+                        <span class="environment"></span>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="brand-primary">
+                <div class="jumbo">
+                    <div class="jumbo-header"><a href="https://www.botframework.com/">Bot Framework</a></div>
+                    <ul class="header-nav">
+                        <li><a href="https://dev.botframework.com/#/bots">My bots</a></li>
+                        <li><a href="https://dev.botframework.com/#/bots/new">Register a bot</a></li>
+                        <li class="active"><a href="/">Documentation</a></li>
+                        <li><a href="https://bots.botframework.com/">Bot Directory</a></li>
+                        <li><a href="https://blog.botframework.com/">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header part -->
+</body>
+</html><!-- Generated by Doxygen 1.8.11 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d2/d27/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_terms_attribute.html','../../');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#properties">Properties</a> &#124;
+<a href="../../d4/da9/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_terms_attribute-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">Microsoft.Bot.Builder.FormFlow.TermsAttribute Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Attribute to override the default terms used to match a field, property or enum value to user input.  
+ <a href="../../d2/d27/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_terms_attribute.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for Microsoft.Bot.Builder.FormFlow.TermsAttribute:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/de7/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_terms_attribute__inherit__graph.png" border="0" usemap="#_microsoft_8_bot_8_builder_8_form_flow_8_terms_attribute_inherit__map" alt="Inheritance graph"/></div>
+<map name="_microsoft_8_bot_8_builder_8_form_flow_8_terms_attribute_inherit__map" id="_microsoft_8_bot_8_builder_8_form_flow_8_terms_attribute_inherit__map">
+<area shape="rect" id="node2" href="../../d2/deb/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_flow_attribute.html" title="Abstract base class for FormFlow attributes. " alt="" coords="30,80,158,107"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a66b8216569830a5bab0b7a9a8aab806c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d27/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_terms_attribute.html#a66b8216569830a5bab0b7a9a8aab806c">TermsAttribute</a> (params string[] alternatives)</td></tr>
+<tr class="memdesc:a66b8216569830a5bab0b7a9a8aab806c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regular expressions or terms used when matching user input.  <a href="#a66b8216569830a5bab0b7a9a8aab806c">More...</a><br /></td></tr>
+<tr class="separator:a66b8216569830a5bab0b7a9a8aab806c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:af52739d3bd3c6e8ce16d4db4e48b2d05"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d27/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_terms_attribute.html#af52739d3bd3c6e8ce16d4db4e48b2d05">Alternatives</a></td></tr>
+<tr class="memdesc:af52739d3bd3c6e8ce16d4db4e48b2d05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regular expressions for matching user input.  <a href="#af52739d3bd3c6e8ce16d4db4e48b2d05">More...</a><br /></td></tr>
+<tr class="separator:af52739d3bd3c6e8ce16d4db4e48b2d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a6da1ef72de238185d21005b01fb0231b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/deb/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_flow_attribute.html#a6da1ef72de238185d21005b01fb0231b">IsLocalizable</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a6da1ef72de238185d21005b01fb0231b"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if attribute is localizable.  <a href="#a6da1ef72de238185d21005b01fb0231b">More...</a><br /></td></tr>
+<tr class="separator:a6da1ef72de238185d21005b01fb0231b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf789ed558fcbc626c37f4318636a632"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d27/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_terms_attribute.html#aaf789ed558fcbc626c37f4318636a632">MaxPhrase</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aaf789ed558fcbc626c37f4318636a632"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum pharse length to use when calling <a class="el" href="../../d4/df0/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_language.html#a3495942df761826c332871202d3b3b70" title="Generate regular expressions to match word sequences in original string. ">Advanced.Language.GenerateTerms(string, int)</a> on your supplied terms.  <a href="#aaf789ed558fcbc626c37f4318636a632">More...</a><br /></td></tr>
+<tr class="separator:aaf789ed558fcbc626c37f4318636a632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Attribute to override the default terms used to match a field, property or enum value to user input. </p>
+<p>By default terms are generated by calling the <a class="el" href="../../d4/df0/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_language.html#a3495942df761826c332871202d3b3b70" title="Generate regular expressions to match word sequences in original string. ">Advanced.Language.GenerateTerms(string, int)</a> method with a max phrase length of 3 on the name of the field, property or enum value. Using this attribute you can specify your own regular expressions to match or if you specify the <a class="el" href="../../d2/d27/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_terms_attribute.html#aaf789ed558fcbc626c37f4318636a632" title="The maximum pharse length to use when calling Advanced.Language.GenerateTerms(string, int) on your supplied terms. ">MaxPhrase</a> attribute you can cause <a class="el" href="../../d4/df0/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_language.html#a3495942df761826c332871202d3b3b70" title="Generate regular expressions to match word sequences in original string. ">Advanced.Language.GenerateTerms(string, int)</a> to be called on your strings with the maximum phrase length you specify. </p>
+
+<p>Definition at line <a class="el" href="../../dc/dfd/_attributes_8cs_source.html#l00118">118</a> of file <a class="el" href="../../dc/dfd/_attributes_8cs_source.html">Attributes.cs</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a66b8216569830a5bab0b7a9a8aab806c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Microsoft.Bot.Builder.FormFlow.TermsAttribute.TermsAttribute </td>
+          <td>(</td>
+          <td class="paramtype">params string[]&#160;</td>
+          <td class="paramname"><em>alternatives</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Regular expressions or terms used when matching user input. </p>
+<p>If <a class="el" href="../../d2/d27/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_terms_attribute.html#aaf789ed558fcbc626c37f4318636a632" title="The maximum pharse length to use when calling Advanced.Language.GenerateTerms(string, int) on your supplied terms. ">MaxPhrase</a> is specified the supplied alternatives will be passed to <a class="el" href="../../d4/df0/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_language.html#a3495942df761826c332871202d3b3b70" title="Generate regular expressions to match word sequences in original string. ">Advanced.Language.GenerateTerms(string, int)</a> to generate regular expressions with a maximum phrase size of <a class="el" href="../../d2/d27/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_terms_attribute.html#aaf789ed558fcbc626c37f4318636a632" title="The maximum pharse length to use when calling Advanced.Language.GenerateTerms(string, int) on your supplied terms. ">MaxPhrase</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alternatives</td><td>Regular expressions or terms.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../dc/dfd/_attributes_8cs_source.html#l00150">150</a> of file <a class="el" href="../../dc/dfd/_attributes_8cs_source.html">Attributes.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="af52739d3bd3c6e8ce16d4db4e48b2d05"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string [] Microsoft.Bot.Builder.FormFlow.TermsAttribute.Alternatives</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Regular expressions for matching user input. </p>
+
+<p>Definition at line <a class="el" href="../../dc/dfd/_attributes_8cs_source.html#l00123">123</a> of file <a class="el" href="../../dc/dfd/_attributes_8cs_source.html">Attributes.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a class="anchor" id="a6da1ef72de238185d21005b01fb0231b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Microsoft.Bot.Builder.FormFlow.FormFlowAttribute.IsLocalizable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>True if attribute is localizable. </p>
+<p>Attributes that are used on classes, fields and properties should have this set. That way those attributes will be in the localization files that are generated. </p>
+
+<p>Definition at line <a class="el" href="../../dc/dfd/_attributes_8cs_source.html#l00054">54</a> of file <a class="el" href="../../dc/dfd/_attributes_8cs_source.html">Attributes.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaf789ed558fcbc626c37f4318636a632"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Microsoft.Bot.Builder.FormFlow.TermsAttribute.MaxPhrase</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The maximum pharse length to use when calling <a class="el" href="../../d4/df0/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_language.html#a3495942df761826c332871202d3b3b70" title="Generate regular expressions to match word sequences in original string. ">Advanced.Language.GenerateTerms(string, int)</a> on your supplied terms. </p>
+
+<p>Definition at line <a class="el" href="../../dc/dfd/_attributes_8cs_source.html#l00130">130</a> of file <a class="el" href="../../dc/dfd/_attributes_8cs_source.html">Attributes.cs</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="../../dc/dfd/_attributes_8cs_source.html">Attributes.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.11-->
+<!-- start footer part -->
+<!-- id is needed for treeview function! -->
+<div class="outline footer">
+    <ul>
+        <li><a href="//aka.ms/bf-contactus">Contact us</a></li>
+        <li><a href="//aka.ms/bf-privacy">Privacy & cookies</a></li>
+        <li><a href="//aka.ms/bf-terms">Terms of use</a></li>
+        <li><a href="//aka.ms/bf-conduct">Code of conduct</a></li>
+        <li>&copy; 2016 Microsoft</li>
+    </ul>
+</div>
+<script src="//bot-framework.azureedge.net/libs/svgxuse.js"></script>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100954936); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100954936ns.gif" /></p></noscript>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$dd/d61/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_invalid_intent_handler_exception.html" title="An exception for invalid intent handlers. " alt="" coords="227,5,421,47"/>
+<area shape="rect" id="node3" href="$d4/daa/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_invalid_wait_exception.html" title="Microsoft.Bot.Builder.Internals.\lFibers.InvalidWaitException" alt="" coords="224,71,424,112"/>
+<area shape="rect" id="node4" href="$d5/d03/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_invalid_need_exception.html" title="Microsoft.Bot.Builder.Internals.\lFibers.InvalidNeedException" alt="" coords="472,5,672,47"/>
+<area shape="rect" id="node5" href="$d6/db6/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_invalid_next_exception.html" title="Microsoft.Bot.Builder.Internals.\lFibers.InvalidNextException" alt="" coords="472,71,672,112"/>
+<area shape="rect" id="node6" href="$db/dc5/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_invalid_type_exception.html" title="Microsoft.Bot.Builder.Internals.\lFibers.InvalidTypeException" alt="" coords="472,136,672,177"/>
+</map>

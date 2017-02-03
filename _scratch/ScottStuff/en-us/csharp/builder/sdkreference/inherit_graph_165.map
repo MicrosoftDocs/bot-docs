@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$de/d7b/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_scorable_base.html" title="Microsoft.Bot.Builder.Internals.\lScorables.ScorableBase\&lt; Item,\l IReadOnlyList\&lt; FoldScorable\l\&lt; Item, Score \&gt;.State \&gt;, Score \&gt;" alt="" coords="5,38,220,109"/>
+<area shape="rect" id="node2" href="$d2/df1/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_fold_scorable.html" title="Fold an aggregation of scorables to produce a winning scorable. " alt="" coords="268,45,469,101"/>
+<area shape="rect" id="node3" href="$d6/d3b/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_first_scorable.html" title="Microsoft.Bot.Builder.Internals.\lScorables.FirstScorable\&lt; Item,\l Score \&gt;" alt="" coords="517,5,720,61"/>
+<area shape="rect" id="node4" href="$d8/d8a/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_traits_scorable.html" title="Microsoft.Bot.Builder.Internals.\lScorables.TraitsScorable\&lt;\l Item, Score \&gt;" alt="" coords="519,85,719,141"/>
+</map>

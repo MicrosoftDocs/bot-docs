@@ -1,0 +1,765 @@
+<!-- HTML header for doxygen 1.8.11-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer Interface Reference | Bot Builder SDK C# Reference Library | Bot Framework</title>
+    <link href="../../tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../jquery.js"></script>
+    <script type="text/javascript" src="../../dynsections.js"></script>
+    <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+    <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="../../botframework.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/css/documentation.css?1" />
+    <script type="text/javascript" src="/css/documents.js"></script>
+    <!-- START OF SmartSource Data Collector TAG v10.4.23 -->
+    <!-- Copyright (c) 2016 Webtrends Inc.  All rights reserved. -->
+    <script type="text/javascript" src="/js/webtrends.load.js"></script>
+    <!--
+      appInsights
+    -->
+    <script type="text/javascript">
+    var appInsights=window.appInsights||function(config){
+      function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+      }({
+          instrumentationKey:"ecf7f29d-de8c-4169-a492-bdce0a32c300"
+      });
+      window.appInsights=appInsights;
+      appInsights.trackPageView();
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var sidenav = $('#side-nav');
+            sidenav.before('<div id="content-container" class="outline"></div>');
+            var doccontent = $('#doc-content');
+			var contentcontainer = $('#content-container');
+            contentcontainer.append(sidenav);
+            contentcontainer.append(doccontent);
+            doccontent.prepend($('#referenceSearch'));
+			var top = $('#top');
+			top.before('<div class="fullWidth"></div>');
+			var fullwidth = $('div.fullWidth');
+			fullwidth.before('<div id="app-body"></div>');
+			fullwidth.append(top);
+			fullwidth.append(contentcontainer);
+			fullwidth.append($('.footer'));
+			var appbody = $('#app-body');
+			appbody.append(fullwidth);
+			var navtreecontents = $('#nav-tree-contents');
+			navtreecontents.prepend('<ul><li><div class="label"><a href="/">&lt; Documentation Home</a></div></li></ul>');
+			//sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            //sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><select id="lang-select" name="lang" ><option value="">All</option><option value="node">Node.js</option><option value="csharp">.NET</option></select><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            setProgrammingLanguage();
+			$('#MSearchField').removeAttr('value').attr('placeholder', 'Search the Bot Builder SDK C# reference');
+        });
+    </script>
+</head>
+<body>
+    <div id="referenceSearch"></div>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div>
+            <header>
+                <div class="outline">
+                    <div class="header">
+                        <a class="logo" href="//www.microsoft.com">
+                            <svg class="svgicon svgicon-microsoft-color-logo">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/symbol-defs.svg#svgicon-microsoft-color-logo"></use>
+                            </svg>
+                        </a>
+                        <div class="loading-animation"></div>
+                        <span class="environment"></span>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="brand-primary">
+                <div class="jumbo">
+                    <div class="jumbo-header"><a href="https://www.botframework.com/">Bot Framework</a></div>
+                    <ul class="header-nav">
+                        <li><a href="https://dev.botframework.com/#/bots">My bots</a></li>
+                        <li><a href="https://dev.botframework.com/#/bots/new">Register a bot</a></li>
+                        <li class="active"><a href="/">Documentation</a></li>
+                        <li><a href="https://bots.botframework.com/">Bot Directory</a></li>
+                        <li><a href="https://blog.botframework.com/">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header part -->
+</body>
+</html><!-- Generated by Doxygen 1.8.11 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d8/dd6/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_localizer.html','../../');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#properties">Properties</a> &#124;
+<a href="../../de/dc6/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_localizer-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer Interface Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Interface for localizing string resources.  
+ <a href="../../d8/dd6/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_localizer.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d6b/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_localizer__inherit__graph.png" border="0" usemap="#_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_i_localizer_inherit__map" alt="Inheritance graph"/></div>
+<map name="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_i_localizer_inherit__map" id="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_i_localizer_inherit__map">
+<area shape="rect" id="node2" href="../../de/dd0/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_localizer.html" title="A resource localizer. " alt="" coords="5,95,183,136"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a94226c89db35eb23ca9257ca347639a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dd6/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_localizer.html#a94226c89db35eb23ca9257ca347639a6">Add</a> (string key, string translation)</td></tr>
+<tr class="memdesc:a94226c89db35eb23ca9257ca347639a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a key and its translation.  <a href="#a94226c89db35eb23ca9257ca347639a6">More...</a><br /></td></tr>
+<tr class="separator:a94226c89db35eb23ca9257ca347639a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c64ffbc064906aa0b2d82f5040727bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dd6/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_localizer.html#a4c64ffbc064906aa0b2d82f5040727bd">Add</a> (string key, IEnumerable&lt; string &gt; list)</td></tr>
+<tr class="memdesc:a4c64ffbc064906aa0b2d82f5040727bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a key and a list of translations seperated by semi-colon.  <a href="#a4c64ffbc064906aa0b2d82f5040727bd">More...</a><br /></td></tr>
+<tr class="separator:a4c64ffbc064906aa0b2d82f5040727bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85877e8d14d5410fdf71c8190c8d5d47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dd6/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_localizer.html#a85877e8d14d5410fdf71c8190c8d5d47">Add</a> (string prefix, IReadOnlyDictionary&lt; object, <a class="el" href="../../dd/d38/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_describe_attribute.html">DescribeAttribute</a> &gt; dictionary)</td></tr>
+<tr class="memdesc:a85877e8d14d5410fdf71c8190c8d5d47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds value from dictionary under object if enumeration and prefix;object otherwise.  <a href="#a85877e8d14d5410fdf71c8190c8d5d47">More...</a><br /></td></tr>
+<tr class="separator:a85877e8d14d5410fdf71c8190c8d5d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a659c3b780017250b52ca32cf93ec63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dd6/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_localizer.html#a2a659c3b780017250b52ca32cf93ec63">Add</a> (string prefix, IReadOnlyDictionary&lt; object, <a class="el" href="../../d2/d27/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_terms_attribute.html">TermsAttribute</a> &gt; dictionary)</td></tr>
+<tr class="memdesc:a2a659c3b780017250b52ca32cf93ec63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds values from dictionary seperated by semi-colons under object if enumeration and prefix;object otherwise. <a href="#a2a659c3b780017250b52ca32cf93ec63">More...</a><br /></td></tr>
+<tr class="separator:a2a659c3b780017250b52ca32cf93ec63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a337f20e9723ccc24906c51144469b4a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dd6/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_localizer.html#a337f20e9723ccc24906c51144469b4a0">Add</a> (string prefix, IReadOnlyDictionary&lt; <a class="el" href="../../dd/df7/namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow.html#a28ef6a551a3611e4a6abe06659797313">TemplateUsage</a>, <a class="el" href="../../d7/d0a/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_template_attribute.html">TemplateAttribute</a> &gt; templates)</td></tr>
+<tr class="memdesc:a337f20e9723ccc24906c51144469b4a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds patterns from template seperated by semi-colons under prefix;usage.  <a href="#a337f20e9723ccc24906c51144469b4a0">More...</a><br /></td></tr>
+<tr class="separator:a337f20e9723ccc24906c51144469b4a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e7853ae73dfe3ee1669b84149cd8bb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dd6/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_localizer.html#a9e7853ae73dfe3ee1669b84149cd8bb3">Add</a> (string prefix, <a class="el" href="../../d7/d0a/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_template_attribute.html">TemplateAttribute</a> template)</td></tr>
+<tr class="memdesc:a9e7853ae73dfe3ee1669b84149cd8bb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds patterns from template seperated by semi-colons under prefix;usage. <a href="#a9e7853ae73dfe3ee1669b84149cd8bb3">More...</a><br /></td></tr>
+<tr class="separator:a9e7853ae73dfe3ee1669b84149cd8bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9f7b28195407059982bf392ffed54ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/dd6/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_localizer.html">ILocalizer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dd6/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_localizer.html#ab9f7b28195407059982bf392ffed54ab">Load</a> (IDictionaryEnumerator reader, out IEnumerable&lt; string &gt; missing, out IEnumerable&lt; string &gt; extra)</td></tr>
+<tr class="memdesc:ab9f7b28195407059982bf392ffed54ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the localizer from a stream.  <a href="#ab9f7b28195407059982bf392ffed54ab">More...</a><br /></td></tr>
+<tr class="separator:ab9f7b28195407059982bf392ffed54ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae50bd7cc33dbd843c65c353eaabece99"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dd6/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_localizer.html#ae50bd7cc33dbd843c65c353eaabece99">Lookup</a> (string key, out string value)</td></tr>
+<tr class="memdesc:ae50bd7cc33dbd843c65c353eaabece99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate a key to a translation.  <a href="#ae50bd7cc33dbd843c65c353eaabece99">More...</a><br /></td></tr>
+<tr class="separator:ae50bd7cc33dbd843c65c353eaabece99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab43bb7ad6a479bc20e61b75cfb357c81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dd6/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_localizer.html#ab43bb7ad6a479bc20e61b75cfb357c81">LookupDictionary</a> (string prefix, IDictionary&lt; object, <a class="el" href="../../dd/d38/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_describe_attribute.html">DescribeAttribute</a> &gt; dictionary)</td></tr>
+<tr class="memdesc:ab43bb7ad6a479bc20e61b75cfb357c81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look up prefix;object from dictionary and replace value from localizer.  <a href="#ab43bb7ad6a479bc20e61b75cfb357c81">More...</a><br /></td></tr>
+<tr class="separator:ab43bb7ad6a479bc20e61b75cfb357c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae60bd2d19747209957ebee56068cde52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dd6/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_localizer.html#ae60bd2d19747209957ebee56068cde52">LookupDictionary</a> (string prefix, IDictionary&lt; object, <a class="el" href="../../d2/d27/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_terms_attribute.html">TermsAttribute</a> &gt; dictionary)</td></tr>
+<tr class="memdesc:ae60bd2d19747209957ebee56068cde52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look up prefix;object from dictionary and replace values from localizer.  <a href="#ae60bd2d19747209957ebee56068cde52">More...</a><br /></td></tr>
+<tr class="separator:ae60bd2d19747209957ebee56068cde52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d202ff2d20b7fecc8305f3a774bf29b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dd6/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_localizer.html#a9d202ff2d20b7fecc8305f3a774bf29b">LookupTemplates</a> (string prefix, IDictionary&lt; <a class="el" href="../../dd/df7/namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow.html#a28ef6a551a3611e4a6abe06659797313">TemplateUsage</a>, <a class="el" href="../../d7/d0a/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_template_attribute.html">TemplateAttribute</a> &gt; templates)</td></tr>
+<tr class="memdesc:a9d202ff2d20b7fecc8305f3a774bf29b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Looks up prefix;usage and replace patterns in template from localizer.  <a href="#a9d202ff2d20b7fecc8305f3a774bf29b">More...</a><br /></td></tr>
+<tr class="separator:a9d202ff2d20b7fecc8305f3a774bf29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa78c705bd1c1972f8ab3a1499f09d2a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dd6/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_localizer.html#afa78c705bd1c1972f8ab3a1499f09d2a">LookupValues</a> (string key, out string[] values)</td></tr>
+<tr class="memdesc:afa78c705bd1c1972f8ab3a1499f09d2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate a key to an array of values.  <a href="#afa78c705bd1c1972f8ab3a1499f09d2a">More...</a><br /></td></tr>
+<tr class="separator:afa78c705bd1c1972f8ab3a1499f09d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace4ee6f40039613d76c49a47575cd522"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dd6/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_localizer.html#ace4ee6f40039613d76c49a47575cd522">Remove</a> (string key)</td></tr>
+<tr class="memdesc:ace4ee6f40039613d76c49a47575cd522"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a key from the localizer.  <a href="#ace4ee6f40039613d76c49a47575cd522">More...</a><br /></td></tr>
+<tr class="separator:ace4ee6f40039613d76c49a47575cd522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4c4d7d5370d374399b14cd6f34ef8fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dd6/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_localizer.html#aa4c4d7d5370d374399b14cd6f34ef8fd">Save</a> (IResourceWriter writer)</td></tr>
+<tr class="memdesc:aa4c4d7d5370d374399b14cd6f34ef8fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save localizer resources to stream.  <a href="#aa4c4d7d5370d374399b14cd6f34ef8fd">More...</a><br /></td></tr>
+<tr class="separator:aa4c4d7d5370d374399b14cd6f34ef8fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a11e4dddb48864ec1c15d3f859a5d0564"><td class="memItemLeft" align="right" valign="top">CultureInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dd6/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_localizer.html#a11e4dddb48864ec1c15d3f859a5d0564">Culture</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a11e4dddb48864ec1c15d3f859a5d0564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the localizer culture.  <a href="#a11e4dddb48864ec1c15d3f859a5d0564">More...</a><br /></td></tr>
+<tr class="separator:a11e4dddb48864ec1c15d3f859a5d0564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface for localizing string resources. </p>
+
+<p>Definition at line <a class="el" href="../../db/da8/_i_localizer_8cs_source.html#l00044">44</a> of file <a class="el" href="../../db/da8/_i_localizer_8cs_source.html">ILocalizer.cs</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a94226c89db35eb23ca9257ca347639a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Add </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>translation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a key and its translation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Key for indexing translation.</td></tr>
+    <tr><td class="paramname">translation</td><td>Translation for key.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="../../de/dd0/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_localizer.html#a3f4e8adf756a14152af296ce51ad119f">Microsoft.Bot.Builder.FormFlow.Advanced.Localizer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c64ffbc064906aa0b2d82f5040727bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Add </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IEnumerable&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a key and a list of translations seperated by semi-colon. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Key for indexing translation list.</td></tr>
+    <tr><td class="paramname">list</td><td>List of translated terms.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="../../de/dd0/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_localizer.html#a9ea0fe3d2e1f58037f1c6ab4ea42ec75">Microsoft.Bot.Builder.FormFlow.Advanced.Localizer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a85877e8d14d5410fdf71c8190c8d5d47"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Add </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IReadOnlyDictionary&lt; object, <a class="el" href="../../dd/d38/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_describe_attribute.html">DescribeAttribute</a> &gt;&#160;</td>
+          <td class="paramname"><em>dictionary</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds value from dictionary under object if enumeration and prefix;object otherwise. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prefix</td><td>The resource prefix. </td></tr>
+    <tr><td class="paramname">dictionary</td><td>The dictionary to add. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="../../de/dd0/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_localizer.html#ab30022059bd638e7f9f732064118b17e">Microsoft.Bot.Builder.FormFlow.Advanced.Localizer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2a659c3b780017250b52ca32cf93ec63"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Add </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IReadOnlyDictionary&lt; object, <a class="el" href="../../d2/d27/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_terms_attribute.html">TermsAttribute</a> &gt;&#160;</td>
+          <td class="paramname"><em>dictionary</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds values from dictionary seperated by semi-colons under object if enumeration and prefix;object otherwise.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prefix</td><td>The resource prefix. </td></tr>
+    <tr><td class="paramname">dictionary</td><td>The dictionary to add. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="../../de/dd0/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_localizer.html#a51b4c2da1c18877d218a1c738fe9e99e">Microsoft.Bot.Builder.FormFlow.Advanced.Localizer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a337f20e9723ccc24906c51144469b4a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Add </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IReadOnlyDictionary&lt; <a class="el" href="../../dd/df7/namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow.html#a28ef6a551a3611e4a6abe06659797313">TemplateUsage</a>, <a class="el" href="../../d7/d0a/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_template_attribute.html">TemplateAttribute</a> &gt;&#160;</td>
+          <td class="paramname"><em>templates</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds patterns from template seperated by semi-colons under prefix;usage. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prefix</td><td>The resource prefix. </td></tr>
+    <tr><td class="paramname">templates</td><td>The template dictionary to add. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="../../de/dd0/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_localizer.html#a29d07fbf4dff822b5be86c0e36661086">Microsoft.Bot.Builder.FormFlow.Advanced.Localizer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e7853ae73dfe3ee1669b84149cd8bb3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Add </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d0a/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_template_attribute.html">TemplateAttribute</a>&#160;</td>
+          <td class="paramname"><em>template</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds patterns from template seperated by semi-colons under prefix;usage.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prefix</td><td>The resource prefix. </td></tr>
+    <tr><td class="paramname">template</td><td>The template to add. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="../../de/dd0/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_localizer.html#a8e9a6505fcf68a65434f0e4c21be2826">Microsoft.Bot.Builder.FormFlow.Advanced.Localizer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab9f7b28195407059982bf392ffed54ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/dd6/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_localizer.html">ILocalizer</a> Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Load </td>
+          <td>(</td>
+          <td class="paramtype">IDictionaryEnumerator&#160;</td>
+          <td class="paramname"><em>reader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out IEnumerable&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>missing</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out IEnumerable&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>extra</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load the localizer from a stream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reader</td><td>Dictionary with resources.</td></tr>
+    <tr><td class="paramname">missing</td><td>Keys found in current localizer that are not in loaded localizer.</td></tr>
+    <tr><td class="paramname">extra</td><td>Keys found in loaded localizer that were not in current localizer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>New localizer from reader.</dd></dl>
+<p><a class="el" href="../../d8/dd6/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_localizer.html#aa4c4d7d5370d374399b14cd6f34ef8fd" title="Save localizer resources to stream. ">Save(IResourceWriter)</a> to see resource format. </p>
+
+<p>Implemented in <a class="el" href="../../de/dd0/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_localizer.html#a71c7ea85a9b9a07c940ffc3907341649">Microsoft.Bot.Builder.FormFlow.Advanced.Localizer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae50bd7cc33dbd843c65c353eaabece99"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Lookup </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out string&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Translate a key to a translation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Key to lookup.</td></tr>
+    <tr><td class="paramname">value</td><td>Value to set if present.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if value is found. </dd></dl>
+
+<p>Implemented in <a class="el" href="../../de/dd0/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_localizer.html#ae6eee419b5530e7ad17dc5c58ff2d3f8">Microsoft.Bot.Builder.FormFlow.Advanced.Localizer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab43bb7ad6a479bc20e61b75cfb357c81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.LookupDictionary </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IDictionary&lt; object, <a class="el" href="../../dd/d38/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_describe_attribute.html">DescribeAttribute</a> &gt;&#160;</td>
+          <td class="paramname"><em>dictionary</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Look up prefix;object from dictionary and replace value from localizer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prefix</td><td>The prefix. </td></tr>
+    <tr><td class="paramname">dictionary</td><td>Dictionary with existing values. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="../../de/dd0/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_localizer.html#ae1720662c2a6ad4873bdf3b3552c0607">Microsoft.Bot.Builder.FormFlow.Advanced.Localizer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae60bd2d19747209957ebee56068cde52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.LookupDictionary </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IDictionary&lt; object, <a class="el" href="../../d2/d27/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_terms_attribute.html">TermsAttribute</a> &gt;&#160;</td>
+          <td class="paramname"><em>dictionary</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Look up prefix;object from dictionary and replace values from localizer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prefix</td><td>The prefix. </td></tr>
+    <tr><td class="paramname">dictionary</td><td>Dictionary with existing values. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="../../de/dd0/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_localizer.html#a449d6d804f23c0d23a392569ae2cf4f9">Microsoft.Bot.Builder.FormFlow.Advanced.Localizer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9d202ff2d20b7fecc8305f3a774bf29b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.LookupTemplates </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IDictionary&lt; <a class="el" href="../../dd/df7/namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow.html#a28ef6a551a3611e4a6abe06659797313">TemplateUsage</a>, <a class="el" href="../../d7/d0a/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_template_attribute.html">TemplateAttribute</a> &gt;&#160;</td>
+          <td class="paramname"><em>templates</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Looks up prefix;usage and replace patterns in template from localizer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prefix</td><td>The prefix. </td></tr>
+    <tr><td class="paramname">templates</td><td>Template dictionary with existing values. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="../../de/dd0/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_localizer.html#afc7e52bba4ccb507c58a2ab566f0f002">Microsoft.Bot.Builder.FormFlow.Advanced.Localizer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afa78c705bd1c1972f8ab3a1499f09d2a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.LookupValues </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out string[]&#160;</td>
+          <td class="paramname"><em>values</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Translate a key to an array of values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Key to lookup.</td></tr>
+    <tr><td class="paramname">values</td><td>Array value to set if present.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if value is found. </dd></dl>
+
+<p>Implemented in <a class="el" href="../../de/dd0/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_localizer.html#a7c221e55e3493beae4a3bd060cc5ca1c">Microsoft.Bot.Builder.FormFlow.Advanced.Localizer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ace4ee6f40039613d76c49a47575cd522"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Remove </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove a key from the localizer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Key to remove.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="../../de/dd0/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_localizer.html#a4404cce21a592815c0537fbc0fc44a72">Microsoft.Bot.Builder.FormFlow.Advanced.Localizer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa4c4d7d5370d374399b14cd6f34ef8fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Save </td>
+          <td>(</td>
+          <td class="paramtype">IResourceWriter&#160;</td>
+          <td class="paramname"><em>writer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Save localizer resources to stream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">writer</td><td>Where to write resources.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><a class="el" href="../../dd/d06/namespace_microsoft_1_1_bot_1_1_builder_1_1_resource.html" title="Namespace for resources. ">Resource</a> values are all strings. The key and value can have different parts seperated by semi-colons. </p><table class="doxtable">
+<tr>
+<th>Key </th><th>Value </th><th>Description  </th></tr>
+<tr>
+<td>key;VALUE </td><td>string </td><td>Simple value. </td></tr>
+<tr>
+<td>key;LIST </td><td>string[;string]* </td><td>List of values. </td></tr>
+<tr>
+<td>usage;field[;field]*;TEMPLATE </td><td>pattern[;pattern]* </td><td>List of template patterns. Key includes fields that use template. </td></tr>
+</table>
+
+<p>Implemented in <a class="el" href="../../de/dd0/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_localizer.html#a20aa017c2a8912bfc0c1a2ae64915476">Microsoft.Bot.Builder.FormFlow.Advanced.Localizer</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a class="anchor" id="a11e4dddb48864ec1c15d3f859a5d0564"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CultureInfo Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Culture</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the localizer culture. </p>
+<dl class="section return"><dt>Returns</dt><dd>Current culture.</dd></dl>
+
+<p>Definition at line <a class="el" href="../../db/da8/_i_localizer_8cs_source.html#l00050">50</a> of file <a class="el" href="../../db/da8/_i_localizer_8cs_source.html">ILocalizer.cs</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this interface was generated from the following file:<ul>
+<li><a class="el" href="../../db/da8/_i_localizer_8cs_source.html">ILocalizer.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.11-->
+<!-- start footer part -->
+<!-- id is needed for treeview function! -->
+<div class="outline footer">
+    <ul>
+        <li><a href="//aka.ms/bf-contactus">Contact us</a></li>
+        <li><a href="//aka.ms/bf-privacy">Privacy & cookies</a></li>
+        <li><a href="//aka.ms/bf-terms">Terms of use</a></li>
+        <li><a href="//aka.ms/bf-conduct">Code of conduct</a></li>
+        <li>&copy; 2016 Microsoft</li>
+    </ul>
+</div>
+<script src="//bot-framework.azureedge.net/libs/svgxuse.js"></script>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100954936); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100954936ns.gif" /></p></noscript>
+</body>
+</html>

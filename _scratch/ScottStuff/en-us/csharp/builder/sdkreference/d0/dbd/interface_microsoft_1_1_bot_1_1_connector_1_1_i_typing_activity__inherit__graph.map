@@ -1,0 +1,4 @@
+<map id="Microsoft.Bot.Connector.ITypingActivity" name="Microsoft.Bot.Connector.ITypingActivity">
+<area shape="rect" id="node3" href="$dc/d2f/class_microsoft_1_1_bot_1_1_connector_1_1_activity.html" title="An Activity is the basic communication type for the Bot Framework 3.0 protocol " alt="" coords="5,169,172,211"/>
+<area shape="rect" id="node2" href="$de/d19/interface_microsoft_1_1_bot_1_1_connector_1_1_i_activity.html" title="basic shared properties for all activities " alt="" coords="55,5,122,32"/>
+</map>

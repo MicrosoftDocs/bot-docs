@@ -1,0 +1,5 @@
+<map id="Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask" name="Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask">
+<area shape="rect" id="node4" href="$db/d87/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_dialog_task.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.DialogTask" alt="" coords="13,169,207,211"/>
+<area shape="rect" id="node2" href="$de/db4/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_i_dialog_stack.html" title="The stack of dialogs in the conversational process. " alt="" coords="5,5,100,32"/>
+<area shape="rect" id="node3" href="$d4/d38/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_i_post_to_bot.html" title="Methods to send a message from the user to the bot. " alt="" coords="124,5,211,32"/>
+</map>

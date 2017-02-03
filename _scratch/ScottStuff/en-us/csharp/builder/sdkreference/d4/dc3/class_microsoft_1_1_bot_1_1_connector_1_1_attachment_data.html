@@ -1,0 +1,361 @@
+<!-- HTML header for doxygen 1.8.11-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Microsoft.Bot.Connector.AttachmentData Class Reference | Bot Builder SDK C# Reference Library | Bot Framework</title>
+    <link href="../../tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../jquery.js"></script>
+    <script type="text/javascript" src="../../dynsections.js"></script>
+    <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+    <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="../../botframework.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/css/documentation.css?1" />
+    <script type="text/javascript" src="/css/documents.js"></script>
+    <!-- START OF SmartSource Data Collector TAG v10.4.23 -->
+    <!-- Copyright (c) 2016 Webtrends Inc.  All rights reserved. -->
+    <script type="text/javascript" src="/js/webtrends.load.js"></script>
+    <!--
+      appInsights
+    -->
+    <script type="text/javascript">
+    var appInsights=window.appInsights||function(config){
+      function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+      }({
+          instrumentationKey:"ecf7f29d-de8c-4169-a492-bdce0a32c300"
+      });
+      window.appInsights=appInsights;
+      appInsights.trackPageView();
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var sidenav = $('#side-nav');
+            sidenav.before('<div id="content-container" class="outline"></div>');
+            var doccontent = $('#doc-content');
+			var contentcontainer = $('#content-container');
+            contentcontainer.append(sidenav);
+            contentcontainer.append(doccontent);
+            doccontent.prepend($('#referenceSearch'));
+			var top = $('#top');
+			top.before('<div class="fullWidth"></div>');
+			var fullwidth = $('div.fullWidth');
+			fullwidth.before('<div id="app-body"></div>');
+			fullwidth.append(top);
+			fullwidth.append(contentcontainer);
+			fullwidth.append($('.footer'));
+			var appbody = $('#app-body');
+			appbody.append(fullwidth);
+			var navtreecontents = $('#nav-tree-contents');
+			navtreecontents.prepend('<ul><li><div class="label"><a href="/">&lt; Documentation Home</a></div></li></ul>');
+			//sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            //sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><select id="lang-select" name="lang" ><option value="">All</option><option value="node">Node.js</option><option value="csharp">.NET</option></select><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            setProgrammingLanguage();
+			$('#MSearchField').removeAttr('value').attr('placeholder', 'Search the Bot Builder SDK C# reference');
+        });
+    </script>
+</head>
+<body>
+    <div id="referenceSearch"></div>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div>
+            <header>
+                <div class="outline">
+                    <div class="header">
+                        <a class="logo" href="//www.microsoft.com">
+                            <svg class="svgicon svgicon-microsoft-color-logo">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/symbol-defs.svg#svgicon-microsoft-color-logo"></use>
+                            </svg>
+                        </a>
+                        <div class="loading-animation"></div>
+                        <span class="environment"></span>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="brand-primary">
+                <div class="jumbo">
+                    <div class="jumbo-header"><a href="https://www.botframework.com/">Bot Framework</a></div>
+                    <ul class="header-nav">
+                        <li><a href="https://dev.botframework.com/#/bots">My bots</a></li>
+                        <li><a href="https://dev.botframework.com/#/bots/new">Register a bot</a></li>
+                        <li class="active"><a href="/">Documentation</a></li>
+                        <li><a href="https://bots.botframework.com/">Bot Directory</a></li>
+                        <li><a href="https://blog.botframework.com/">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header part -->
+</body>
+</html><!-- Generated by Doxygen 1.8.11 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d4/dc3/class_microsoft_1_1_bot_1_1_connector_1_1_attachment_data.html','../../');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#properties">Properties</a> &#124;
+<a href="../../da/d16/class_microsoft_1_1_bot_1_1_connector_1_1_attachment_data-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">Microsoft.Bot.Connector.AttachmentData Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="../../d4/ded/class_microsoft_1_1_bot_1_1_connector_1_1_attachment.html" title="An attachment within an activity ">Attachment</a> data  
+ <a href="../../d4/dc3/class_microsoft_1_1_bot_1_1_connector_1_1_attachment_data.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a03558abf3e5b4aa0869aa271358d7a32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc3/class_microsoft_1_1_bot_1_1_connector_1_1_attachment_data.html#a03558abf3e5b4aa0869aa271358d7a32">AttachmentData</a> ()</td></tr>
+<tr class="memdesc:a03558abf3e5b4aa0869aa271358d7a32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="../../d4/dc3/class_microsoft_1_1_bot_1_1_connector_1_1_attachment_data.html" title="Attachment data ">AttachmentData</a> class.  <a href="#a03558abf3e5b4aa0869aa271358d7a32">More...</a><br /></td></tr>
+<tr class="separator:a03558abf3e5b4aa0869aa271358d7a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c4d2977321639b96d872f721ced280e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc3/class_microsoft_1_1_bot_1_1_connector_1_1_attachment_data.html#a3c4d2977321639b96d872f721ced280e">AttachmentData</a> (string type=default(string), string name=default(string), byte[] originalBase64=default(byte[]), byte[] thumbnailBase64=default(byte[]))</td></tr>
+<tr class="memdesc:a3c4d2977321639b96d872f721ced280e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="../../d4/dc3/class_microsoft_1_1_bot_1_1_connector_1_1_attachment_data.html" title="Attachment data ">AttachmentData</a> class.  <a href="#a3c4d2977321639b96d872f721ced280e">More...</a><br /></td></tr>
+<tr class="separator:a3c4d2977321639b96d872f721ced280e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a7c32b6fd2aa957f2c7c18517f22a8805"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc3/class_microsoft_1_1_bot_1_1_connector_1_1_attachment_data.html#a7c32b6fd2aa957f2c7c18517f22a8805">Name</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a7c32b6fd2aa957f2c7c18517f22a8805"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the attachment  <a href="#a7c32b6fd2aa957f2c7c18517f22a8805">More...</a><br /></td></tr>
+<tr class="separator:a7c32b6fd2aa957f2c7c18517f22a8805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a409fef98f821126aece54d91c147f810"><td class="memItemLeft" align="right" valign="top">byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc3/class_microsoft_1_1_bot_1_1_connector_1_1_attachment_data.html#a409fef98f821126aece54d91c147f810">OriginalBase64</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a409fef98f821126aece54d91c147f810"><td class="mdescLeft">&#160;</td><td class="mdescRight">original content  <a href="#a409fef98f821126aece54d91c147f810">More...</a><br /></td></tr>
+<tr class="separator:a409fef98f821126aece54d91c147f810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c63e9fb5b469125d2107d2e7ca6bf53"><td class="memItemLeft" align="right" valign="top">byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc3/class_microsoft_1_1_bot_1_1_connector_1_1_attachment_data.html#a5c63e9fb5b469125d2107d2e7ca6bf53">ThumbnailBase64</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a5c63e9fb5b469125d2107d2e7ca6bf53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thumbnail  <a href="#a5c63e9fb5b469125d2107d2e7ca6bf53">More...</a><br /></td></tr>
+<tr class="separator:a5c63e9fb5b469125d2107d2e7ca6bf53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4c0762ba5203f3922590f0990658b35"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc3/class_microsoft_1_1_bot_1_1_connector_1_1_attachment_data.html#ae4c0762ba5203f3922590f0990658b35">Type</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ae4c0762ba5203f3922590f0990658b35"><td class="mdescLeft">&#160;</td><td class="mdescRight">content type of the attachmnet  <a href="#ae4c0762ba5203f3922590f0990658b35">More...</a><br /></td></tr>
+<tr class="separator:ae4c0762ba5203f3922590f0990658b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="../../d4/ded/class_microsoft_1_1_bot_1_1_connector_1_1_attachment.html" title="An attachment within an activity ">Attachment</a> data </p>
+
+<p>Definition at line <a class="el" href="../../d3/de4/_attachment_data_8cs_source.html#l00017">17</a> of file <a class="el" href="../../d3/de4/_attachment_data_8cs_source.html">AttachmentData.cs</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a03558abf3e5b4aa0869aa271358d7a32"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Microsoft.Bot.Connector.AttachmentData.AttachmentData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="../../d4/dc3/class_microsoft_1_1_bot_1_1_connector_1_1_attachment_data.html" title="Attachment data ">AttachmentData</a> class. </p>
+
+<p>Definition at line <a class="el" href="../../d3/de4/_attachment_data_8cs_source.html#l00022">22</a> of file <a class="el" href="../../d3/de4/_attachment_data_8cs_source.html">AttachmentData.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3c4d2977321639b96d872f721ced280e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Microsoft.Bot.Connector.AttachmentData.AttachmentData </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>type</em> = <code>default(string)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em> = <code>default(string)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte[]&#160;</td>
+          <td class="paramname"><em>originalBase64</em> = <code>default(byte[])</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte[]&#160;</td>
+          <td class="paramname"><em>thumbnailBase64</em> = <code>default(byte[])</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="../../d4/dc3/class_microsoft_1_1_bot_1_1_connector_1_1_attachment_data.html" title="Attachment data ">AttachmentData</a> class. </p>
+
+<p>Definition at line <a class="el" href="../../d3/de4/_attachment_data_8cs_source.html#l00027">27</a> of file <a class="el" href="../../d3/de4/_attachment_data_8cs_source.html">AttachmentData.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a class="anchor" id="a7c32b6fd2aa957f2c7c18517f22a8805"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Microsoft.Bot.Connector.AttachmentData.Name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Name of the attachment </p>
+
+<p>Definition at line <a class="el" href="../../d3/de4/_attachment_data_8cs_source.html#l00045">45</a> of file <a class="el" href="../../d3/de4/_attachment_data_8cs_source.html">AttachmentData.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a409fef98f821126aece54d91c147f810"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte [] Microsoft.Bot.Connector.AttachmentData.OriginalBase64</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>original content </p>
+
+<p>Definition at line <a class="el" href="../../d3/de4/_attachment_data_8cs_source.html#l00051">51</a> of file <a class="el" href="../../d3/de4/_attachment_data_8cs_source.html">AttachmentData.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5c63e9fb5b469125d2107d2e7ca6bf53"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte [] Microsoft.Bot.Connector.AttachmentData.ThumbnailBase64</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Thumbnail </p>
+
+<p>Definition at line <a class="el" href="../../d3/de4/_attachment_data_8cs_source.html#l00057">57</a> of file <a class="el" href="../../d3/de4/_attachment_data_8cs_source.html">AttachmentData.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae4c0762ba5203f3922590f0990658b35"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Microsoft.Bot.Connector.AttachmentData.Type</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>content type of the attachmnet </p>
+
+<p>Definition at line <a class="el" href="../../d3/de4/_attachment_data_8cs_source.html#l00039">39</a> of file <a class="el" href="../../d3/de4/_attachment_data_8cs_source.html">AttachmentData.cs</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="../../d3/de4/_attachment_data_8cs_source.html">AttachmentData.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.11-->
+<!-- start footer part -->
+<!-- id is needed for treeview function! -->
+<div class="outline footer">
+    <ul>
+        <li><a href="//aka.ms/bf-contactus">Contact us</a></li>
+        <li><a href="//aka.ms/bf-privacy">Privacy & cookies</a></li>
+        <li><a href="//aka.ms/bf-terms">Terms of use</a></li>
+        <li><a href="//aka.ms/bf-conduct">Code of conduct</a></li>
+        <li>&copy; 2016 Microsoft</li>
+    </ul>
+</div>
+<script src="//bot-framework.azureedge.net/libs/svgxuse.js"></script>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100954936); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100954936ns.gif" /></p></noscript>
+</body>
+</html>

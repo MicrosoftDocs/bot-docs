@@ -1,0 +1,4 @@
+<map id="Microsoft.Bot.Builder.FormFlow.PromptAttribute" name="Microsoft.Bot.Builder.FormFlow.PromptAttribute">
+<area shape="rect" id="node2" href="$d7/d48/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_template_base_attribute.html" title="Abstract base class used by all attributes that use Pattern Language. " alt="" coords="17,155,171,181"/>
+<area shape="rect" id="node3" href="$d2/deb/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_flow_attribute.html" title="Abstract base class for FormFlow attributes. " alt="" coords="30,80,158,107"/>
+</map>

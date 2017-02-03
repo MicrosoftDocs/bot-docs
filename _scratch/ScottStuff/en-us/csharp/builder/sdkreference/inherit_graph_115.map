@@ -1,0 +1,16 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$d3/d87/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_awaiter.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IAwaiter\&lt; T \&gt;" alt="" coords="248,136,448,177"/>
+<area shape="rect" id="node2" href="$d0/deb/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_wait.html" title="Microsoft.Bot.Builder.Internals.\lFibers.Wait\&lt; C, T \&gt;" alt="" coords="508,169,708,211"/>
+<area shape="rect" id="node3" href="$dd/d5e/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog.html" title="Microsoft.Bot.Builder.Dialogs.\lIDialog\&lt; T \&gt;" alt="" coords="5,449,200,491"/>
+<area shape="rect" id="node4" href="$dc/dab/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_command_dialog.html" title="Dialog that dispatches based on a regex matching input. " alt="" coords="251,449,445,491"/>
+<area shape="rect" id="node5" href="$d7/d1c/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_prompt.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.Prompt\&lt; T, U \&gt;" alt="" coords="251,515,445,556"/>
+<area shape="rect" id="node6" href="$dc/d6c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_dialog.html" title="Interface for controlling a FormFlow dialog. " alt="" coords="259,384,437,425"/>
+<area shape="rect" id="node7" href="$db/de5/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_dialog.html" title="Static factory methods for creating form dialogs. " alt="" coords="519,359,697,400"/>
+<area shape="rect" id="node9" href="$d9/d6f/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_item.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IItem\&lt; T \&gt;" alt="" coords="248,5,448,47"/>
+<area shape="rect" id="node10" href="$dd/d5f/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_post.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IPost\&lt; T \&gt;" alt="" coords="248,267,448,308"/>
+<area shape="rect" id="node11" href="$db/d2c/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_post_struct.html" title="Microsoft.Bot.Builder.Internals.\lFibers.PostStruct\&lt; T \&gt;" alt="" coords="508,267,708,308"/>
+<area shape="rect" id="node13" href="$dd/d2c/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_dictionary_cache.html" title="Microsoft.Bot.Builder.Internals.\lFibers.DictionaryCache\&lt; C, K, V \&gt;" alt="" coords="496,483,720,524"/>
+<area shape="rect" id="node14" href="$de/dea/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_wait.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IWait\&lt; C, T \&gt;" alt="" coords="248,71,448,112"/>
+<area shape="rect" id="node15" href="$d6/d98/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_cache.html" title="Microsoft.Bot.Builder.Internals.\lFibers.ICache\&lt; C, K, V \&gt;" alt="" coords="248,580,448,621"/>
+<area shape="rect" id="node16" href="$d0/d48/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_null_cache.html" title="Microsoft.Bot.Builder.Internals.\lFibers.NullCache\&lt; C, K, V \&gt;" alt="" coords="508,580,708,621"/>
+</map>

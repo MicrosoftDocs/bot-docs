@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$de/d7b/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_scorable_base.html" title="Microsoft.Bot.Builder.Internals.\lScorables.ScorableBase\&lt; Item,\l OuterState, OuterScore \&gt;" alt="" coords="5,13,212,69"/>
+<area shape="rect" id="node2" href="$d0/d60/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_scorable_aggregator.html" title="Aggregates some non&#45;empty set of inner scorables to produce an outer scorable. " alt="" coords="260,5,468,76"/>
+</map>

@@ -1,0 +1,16 @@
+{
+  "type": "message",
+  "from": {
+    "id": "56800324",
+    "name": "Bot1"
+  },
+  "conversation": {
+    "id": "8a684db8",
+    "name": "Conv1"
+  },
+  "recipient": {
+    "id": "2c1c7fa3",
+    "name": "User1"
+  },
+  "text": "members"
+}

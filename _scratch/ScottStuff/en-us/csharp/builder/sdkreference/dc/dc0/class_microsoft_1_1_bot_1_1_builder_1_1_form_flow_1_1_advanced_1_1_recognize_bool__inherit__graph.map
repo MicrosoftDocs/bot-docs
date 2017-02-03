@@ -1,0 +1,4 @@
+<map id="Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeBool&lt; T &gt;" name="Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeBool&lt; T &gt;">
+<area shape="rect" id="node2" href="$d8/d6e/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_recognize_primitive.html" title="Abstract class for constructing primitive value recognizers. " alt="" coords="39,80,202,107"/>
+<area shape="rect" id="node3" href="$d3/d6f/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_recognize.html" title="Interface for recognizers that look for matches in user input. " alt="" coords="62,5,179,32"/>
+</map>

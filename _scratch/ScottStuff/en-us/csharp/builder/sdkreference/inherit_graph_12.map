@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$dd/d5f/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_base_message.html" title="Base message wrapper for all API messages. The format is: { type: (type&#45;of&#45;message), to: (to&#45;user&#45;MRI), from: (from&#45;user&#45;MRI), (optional additional&#45;message&#45;specific&#45;properties), (optional additional&#45;message&#45;specific&#45;properties), (optional additional&#45;message&#45;specific&#45;properties), } " alt="" coords="5,13,248,54"/>
+<area shape="rect" id="node2" href="$d0/de3/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_agent_contact_notification.html" title="Message type for notifying agents that a user has added or removed them. " alt="" coords="296,5,535,61"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Microsoft.Bot.Builder.Internals.Fibers.Wait&lt; C, T &gt;" name="Microsoft.Bot.Builder.Internals.Fibers.Wait&lt; C, T &gt;">
+<area shape="rect" id="node2" href="$d9/d6f/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_item.html" title="IItem\&lt; T \&gt;" alt="" coords="38,5,119,32"/>
+<area shape="rect" id="node3" href="$de/dea/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_wait.html" title="IWait\&lt; C, T \&gt;" alt="" coords="29,56,129,83"/>
+<area shape="rect" id="node4" href="$dd/d5f/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_post.html" title="IPost\&lt; T \&gt;" alt="" coords="37,107,120,133"/>
+<area shape="rect" id="node5" href="$d3/d87/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_awaiter.html" title="IAwaiter\&lt; T \&gt;" alt="" coords="29,157,128,184"/>
+</map>

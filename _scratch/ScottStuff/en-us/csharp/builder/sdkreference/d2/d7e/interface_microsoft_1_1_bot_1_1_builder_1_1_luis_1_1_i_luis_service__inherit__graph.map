@@ -1,0 +1,4 @@
+<map id="Microsoft.Bot.Builder.Luis.ILuisService" name="Microsoft.Bot.Builder.Luis.ILuisService">
+<area shape="rect" id="node2" href="$d8/dcc/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_caching_luis_service.html" title="Microsoft.Bot.Builder.Luis.\lCachingLuisService" alt="" coords="228,5,403,47"/>
+<area shape="rect" id="node3" href="$d0/d36/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_luis_service.html" title="Standard implementation of ILuisService against actual LUIS service. " alt="" coords="228,71,403,112"/>
+</map>

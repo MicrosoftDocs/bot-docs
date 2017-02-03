@@ -1,0 +1,4 @@
+var class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_binding_1_1_method_resolution_exception =
+[
+    [ "MethodResolutionException", "dc/d1c/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_binding_1_1_method_resolution_exception.html#a15a4cae9ef7fd8a8006dd563b99cd806", null ]
+];

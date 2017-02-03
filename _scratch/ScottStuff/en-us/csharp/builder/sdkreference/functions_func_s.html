@@ -1,0 +1,372 @@
+<!-- HTML header for doxygen 1.8.11-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Class Members - Functions | Bot Builder SDK C# Reference Library | Bot Framework</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="botframework.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/css/documentation.css?1" />
+    <script type="text/javascript" src="/css/documents.js"></script>
+    <!-- START OF SmartSource Data Collector TAG v10.4.23 -->
+    <!-- Copyright (c) 2016 Webtrends Inc.  All rights reserved. -->
+    <script type="text/javascript" src="/js/webtrends.load.js"></script>
+    <!--
+      appInsights
+    -->
+    <script type="text/javascript">
+    var appInsights=window.appInsights||function(config){
+      function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+      }({
+          instrumentationKey:"ecf7f29d-de8c-4169-a492-bdce0a32c300"
+      });
+      window.appInsights=appInsights;
+      appInsights.trackPageView();
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var sidenav = $('#side-nav');
+            sidenav.before('<div id="content-container" class="outline"></div>');
+            var doccontent = $('#doc-content');
+			var contentcontainer = $('#content-container');
+            contentcontainer.append(sidenav);
+            contentcontainer.append(doccontent);
+            doccontent.prepend($('#referenceSearch'));
+			var top = $('#top');
+			top.before('<div class="fullWidth"></div>');
+			var fullwidth = $('div.fullWidth');
+			fullwidth.before('<div id="app-body"></div>');
+			fullwidth.append(top);
+			fullwidth.append(contentcontainer);
+			fullwidth.append($('.footer'));
+			var appbody = $('#app-body');
+			appbody.append(fullwidth);
+			var navtreecontents = $('#nav-tree-contents');
+			navtreecontents.prepend('<ul><li><div class="label"><a href="/">&lt; Documentation Home</a></div></li></ul>');
+			//sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            //sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><select id="lang-select" name="lang" ><option value="">All</option><option value="node">Node.js</option><option value="csharp">.NET</option></select><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            setProgrammingLanguage();
+			$('#MSearchField').removeAttr('value').attr('placeholder', 'Search the Bot Builder SDK C# reference');
+        });
+    </script>
+</head>
+<body>
+    <div id="referenceSearch"></div>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div>
+            <header>
+                <div class="outline">
+                    <div class="header">
+                        <a class="logo" href="//www.microsoft.com">
+                            <svg class="svgicon svgicon-microsoft-color-logo">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/symbol-defs.svg#svgicon-microsoft-color-logo"></use>
+                            </svg>
+                        </a>
+                        <div class="loading-animation"></div>
+                        <span class="environment"></span>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="brand-primary">
+                <div class="jumbo">
+                    <div class="jumbo-header"><a href="https://www.botframework.com/">Bot Framework</a></div>
+                    <ul class="header-nav">
+                        <li><a href="https://dev.botframework.com/#/bots">My bots</a></li>
+                        <li><a href="https://dev.botframework.com/#/bots/new">Register a bot</a></li>
+                        <li class="active"><a href="/">Documentation</a></li>
+                        <li><a href="https://bots.botframework.com/">Bot Directory</a></li>
+                        <li><a href="https://blog.botframework.com/">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header part -->
+</body>
+</html><!-- Generated by Doxygen 1.8.11 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_func_s.html','');});
+</script>
+<div id="doc-content">
+<div class="contents">
+&#160;
+
+<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>Same()
+: <a class="el" href="d3/df8/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_term_match.html#a3137117425bf1cbf9949e3040f242e4f">Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch</a>
+</li>
+<li>Save()
+: <a class="el" href="d8/dd6/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_localizer.html#aa4c4d7d5370d374399b14cd6f34ef8fd">Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer</a>
+, <a class="el" href="de/dd0/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_localizer.html#a20aa017c2a8912bfc0c1a2ae64915476">Microsoft.Bot.Builder.FormFlow.Advanced.Localizer</a>
+, <a class="el" href="d2/d33/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_store.html#ac5346f4f9cb99c7b3b98c6b89fdd2419">Microsoft.Bot.Builder.Internals.Fibers.IStore&lt; T &gt;</a>
+</li>
+<li>SaveAsync()
+: <a class="el" href="dc/d4c/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_i_bot_data_store.html#a350409c852093c9132493abf880d82be">Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt; T &gt;</a>
+</li>
+<li>SaveResources()
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a29035024fd64f70e8c4cffe0a55030e1">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+, <a class="el" href="d8/d0e/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_field_resources.html#af5d8b4023c7f49ddcc3cacbd48db66b6">Microsoft.Bot.Builder.FormFlow.Advanced.IFieldResources</a>
+, <a class="el" href="d8/d45/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form.html#a6d6737133a2dcae9ffbb713db8d3399f">Microsoft.Bot.Builder.FormFlow.IForm&lt; T &gt;</a>
+</li>
+<li>Scope()
+: <a class="el" href="d7/d55/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_luis_intent_scorable_1_1_scope.html#a0632b0f773f1a5f4a4bcf845ac7b7b30">Microsoft.Bot.Builder.Internals.Scorables.LuisIntentScorable&lt; InnerState, InnerScore &gt;.Scope</a>
+, <a class="el" href="dd/d50/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_regex_match_scorable_1_1_scope.html#adfcf89fa7ad33929d0b167804cbeeb6e">Microsoft.Bot.Builder.Internals.Scorables.RegexMatchScorable&lt; InnerState, InnerScore &gt;.Scope</a>
+</li>
+<li>ScorableFor()
+: <a class="el" href="d6/d24/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_i_scorable_factory.html#a0878ae00b7025c4bf5307a8b481922a9">Microsoft.Bot.Builder.Internals.Scorables.IScorableFactory&lt; in in Item, out out Score &gt;</a>
+</li>
+<li>ScorableOrderAttribute()
+: <a class="el" href="db/de7/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_scorable_order_attribute.html#ac4e3063f5711f664cbfce056795811ff">Microsoft.Bot.Builder.Internals.Scorables.ScorableOrderAttribute</a>
+</li>
+<li>ScoreMatch()
+: <a class="el" href="dc/df9/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog_1_1_prompt_choice.html#a2cd42d415cd26fad1beed0a75495d8bc">Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice&lt; T &gt;</a>
+</li>
+<li>ScoringDialogTask()
+: <a class="el" href="d8/de1/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_scoring_dialog_task.html#acba77c24f508f57864733391bca94344">Microsoft.Bot.Builder.Dialogs.Internals.ScoringDialogTask&lt; Score &gt;</a>
+</li>
+<li>Select&lt; T, R &gt;()
+: <a class="el" href="de/dab/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_chain.html#ae020518e9f5e5e94f71db9f33a1f7ebb">Microsoft.Bot.Builder.Dialogs.Chain</a>
+</li>
+<li>SelectItem&lt; SourceItem, TargetItem, Score &gt;()
+: <a class="el" href="da/dc3/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_scorables.html#a50219fa8c938acae8e6b1c909c4b7084">Microsoft.Bot.Builder.Internals.Scorables.Scorables</a>
+</li>
+<li>SelectItemScorable()
+: <a class="el" href="d4/d32/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_select_item_scorable.html#aea526275bfe604fcc0bef9428fa75e31">Microsoft.Bot.Builder.Internals.Scorables.SelectItemScorable&lt; SourceItem, TargetItem, Score &gt;</a>
+</li>
+<li>SelectMany&lt; T, C, R &gt;()
+: <a class="el" href="de/dab/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_chain.html#a16e083616c5e63f0ad458de058ab9cb2">Microsoft.Bot.Builder.Dialogs.Chain</a>
+</li>
+<li>SelectScore&lt; Item, SourceScore, TargetScore &gt;()
+: <a class="el" href="da/dc3/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_scorables.html#aea4f71c6fdea17bc25013de56ff4f3fe">Microsoft.Bot.Builder.Internals.Scorables.Scorables</a>
+</li>
+<li>SelectScoreScorable()
+: <a class="el" href="d2/dc3/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_select_score_scorable.html#ad7b9c249cc64d093f8e404bdac439e4c">Microsoft.Bot.Builder.Internals.Scorables.SelectScoreScorable&lt; Item, SourceScore, TargetScore &gt;</a>
+</li>
+<li>SendAsync()
+: <a class="el" href="d6/d56/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_calling_conversation.html#a0b4840f558d631fbdc4830cc41fe4e6f">Microsoft.Bot.Builder.Calling.CallingConversation</a>
+, <a class="el" href="d9/de8/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_conversation.html#a00a038f65a58138efb9a500665d3bbeb">Microsoft.Bot.Builder.Dialogs.Conversation</a>
+, <a class="el" href="d2/da8/class_microsoft_1_1_bot_1_1_connector_1_1_jwt_token_refresher.html#a782a4f92fd68c17e2efe41f4322ab1b3">Microsoft.Bot.Connector.JwtTokenRefresher</a>
+</li>
+<li>SendToConversation()
+: <a class="el" href="d7/d08/class_microsoft_1_1_bot_1_1_connector_1_1_conversations_extensions.html#a3e5fd7b3faccee5b152877d87e4e29de">Microsoft.Bot.Connector.ConversationsExtensions</a>
+</li>
+<li>SendToConversationAsync()
+: <a class="el" href="d7/d08/class_microsoft_1_1_bot_1_1_connector_1_1_conversations_extensions.html#aa8284958379cb88bc372c322b7987e31">Microsoft.Bot.Connector.ConversationsExtensions</a>
+</li>
+<li>SendToConversationWithHttpMessagesAsync()
+: <a class="el" href="da/ddd/class_microsoft_1_1_bot_1_1_connector_1_1_conversations.html#a15df0cb182df5f65229f30d57accbffd">Microsoft.Bot.Connector.Conversations</a>
+, <a class="el" href="de/d95/interface_microsoft_1_1_bot_1_1_connector_1_1_i_conversations.html#acd6a2416089ac3c6590721a06d588413">Microsoft.Bot.Connector.IConversations</a>
+</li>
+<li>SerializeToJson()
+: <a class="el" href="d9/d80/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer.html#adf6313447040c0adfff2e5ff88299760">Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer</a>
+</li>
+<li>SerializeToJToken()
+: <a class="el" href="d9/d80/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer.html#af04bb7e97f12d931c9c77e79b89cee69">Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer</a>
+</li>
+<li>SerializingDialogTask()
+: <a class="el" href="d2/de0/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_serializing_dialog_task.html#a48be6a786148f4bb23202bc56e67fdff">Microsoft.Bot.Builder.Dialogs.Internals.SerializingDialogTask</a>
+</li>
+<li>SetActive()
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a048ce0f4bd1841ad37f3ed5f6e2df933">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>SetAllowsMultiple()
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#ab69fbb46c3790d2b326c62401b12de95">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>SetAs&lt; T &gt;()
+: <a class="el" href="d7/da5/class_microsoft_1_1_bot_1_1_connector_1_1_entity.html#a980a568cf255fc9c8badcdb6e2599d43">Microsoft.Bot.Connector.Entity</a>
+</li>
+<li>SetConversationData()
+: <a class="el" href="d4/d93/class_microsoft_1_1_bot_1_1_connector_1_1_bot_state_extensions.html#a05c222f2beb25219f35520f7d9bf7c22">Microsoft.Bot.Connector.BotStateExtensions</a>
+</li>
+<li>SetConversationDataAsync()
+: <a class="el" href="d4/d93/class_microsoft_1_1_bot_1_1_connector_1_1_bot_state_extensions.html#ae16f9c8631a36ae35b99a439c3540819">Microsoft.Bot.Connector.BotStateExtensions</a>
+</li>
+<li>SetConversationDataWithHttpMessagesAsync()
+: <a class="el" href="d1/dd8/class_microsoft_1_1_bot_1_1_connector_1_1_bot_state.html#a1b670547e9389b372766cd8be9e46bef">Microsoft.Bot.Connector.BotState</a>
+, <a class="el" href="d8/dcc/interface_microsoft_1_1_bot_1_1_connector_1_1_i_bot_state.html#a9232d1f3c1ddf0acc4be1d5344ad07dc">Microsoft.Bot.Connector.IBotState</a>
+</li>
+<li>SetDefine()
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a28233c49a6abf58c2397bd397151278a">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>SetDependencies()
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#ac6a6ca9bf6ba92f0b22abc5af2526903">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>SetFieldDescription()
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a3853251d35b0663e6cf28c8a5c956a23">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>SetFieldTerms()
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a208f856bc98d50aaa7780720735011c9">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>SetIsNullable()
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#ace5439310145a308b6dd1b0654bafbae">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>SetLimits()
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#ad336efcf7fc1205d38f053bd0d2968a4">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>SetNext()
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a687414caba1f8be6138069ae5376f1bd">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>SetOptional()
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a187e7b36b9332c1de9a567d24375e5e8">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>SetPattern()
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a978e88b73baff213b6000d8560c9fbbf">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>SetPrivateConversationData()
+: <a class="el" href="d4/d93/class_microsoft_1_1_bot_1_1_connector_1_1_bot_state_extensions.html#a226ecb79215a9f66a85377047fc1f2c3">Microsoft.Bot.Connector.BotStateExtensions</a>
+</li>
+<li>SetPrivateConversationDataAsync()
+: <a class="el" href="d4/d93/class_microsoft_1_1_bot_1_1_connector_1_1_bot_state_extensions.html#ab65283e912c21f663ea0438c8d8d5bc0">Microsoft.Bot.Connector.BotStateExtensions</a>
+</li>
+<li>SetPrivateConversationDataWithHttpMessagesAsync()
+: <a class="el" href="d1/dd8/class_microsoft_1_1_bot_1_1_connector_1_1_bot_state.html#a199656f89bcd567b303c1d662a258466">Microsoft.Bot.Connector.BotState</a>
+, <a class="el" href="d8/dcc/interface_microsoft_1_1_bot_1_1_connector_1_1_i_bot_state.html#aaa31562d9a8017fe509947e5adbdfcb0">Microsoft.Bot.Connector.IBotState</a>
+</li>
+<li>SetPrompt()
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#abed687767293f5ae1481cb06e068b62a">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>SetProperty&lt; TypeT &gt;()
+: <a class="el" href="d3/dfa/class_microsoft_1_1_bot_1_1_connector_1_1_bot_data.html#a416c3231caff6fbef8fbfaec47b7bbbf">Microsoft.Bot.Connector.BotData</a>
+</li>
+<li>SetRecognizer()
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a2399eeaef64663f0a847ffe6067947f0">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>SetType()
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a84d27b92be458b51a367c732e19a1fc2">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>SetUnknown()
+: <a class="el" href="db/df4/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_confirmation.html#ad6d98be198e81897c6fde246ec3447ab">Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation&lt; T &gt;</a>
+, <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a352eed4df8f7d42c3e1e902a6c240c7b">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+, <a class="el" href="d0/db3/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field_reflector.html#a49a0040bea11baeb2cf1353a4253a283">Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector&lt; T &gt;</a>
+, <a class="el" href="d0/dab/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_field_state.html#a55f3247df89068797a9eb5e6c8197a65">Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState&lt; T &gt;</a>
+, <a class="el" href="d1/db2/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_json_1_1_field_json.html#a5f9167eeb3fbeceed8086674dff43869">Microsoft.Bot.Builder.FormFlow.Json.FieldJson</a>
+</li>
+<li>SetUserData()
+: <a class="el" href="d4/d93/class_microsoft_1_1_bot_1_1_connector_1_1_bot_state_extensions.html#a533cdfb7f6ac1cf82c03422669e8d111">Microsoft.Bot.Connector.BotStateExtensions</a>
+</li>
+<li>SetUserDataAsync()
+: <a class="el" href="d4/d93/class_microsoft_1_1_bot_1_1_connector_1_1_bot_state_extensions.html#a59674bf8dbf62d87cb052ae0997fb73f">Microsoft.Bot.Connector.BotStateExtensions</a>
+</li>
+<li>SetUserDataWithHttpMessagesAsync()
+: <a class="el" href="d1/dd8/class_microsoft_1_1_bot_1_1_connector_1_1_bot_state.html#a104ae89b5fbb878c7fa641130eafcd93">Microsoft.Bot.Connector.BotState</a>
+, <a class="el" href="d8/dcc/interface_microsoft_1_1_bot_1_1_connector_1_1_i_bot_state.html#a91835dc0afe92aca185ced5679f10d33">Microsoft.Bot.Connector.IBotState</a>
+</li>
+<li>SetValidate()
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a07b67338ce9069fa0ce60824f2c5aa2a">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>SetValue()
+: <a class="el" href="db/df4/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_confirmation.html#aa4977f384bd5e36479914735c723b4bf">Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation&lt; T &gt;</a>
+, <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a59b8b2d0073ff8b20f6c4396aa7bb938">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+, <a class="el" href="d0/db3/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field_reflector.html#aed7bda90698030c458a2e289e0cab289">Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector&lt; T &gt;</a>
+, <a class="el" href="d0/dab/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_field_state.html#a8c30f563726e083ca5c7308b41a4eba5">Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState&lt; T &gt;</a>
+, <a class="el" href="d1/db2/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_json_1_1_field_json.html#a314d600f0fa62c266555484ba927e65d">Microsoft.Bot.Builder.FormFlow.Json.FieldJson</a>
+</li>
+<li>SetValue&lt; T &gt;()
+: <a class="el" href="d7/dea/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_bot_data_bag.html#ae8c73d4e49258c057fe1d2889e85af54">Microsoft.Bot.Builder.Dialogs.IBotDataBag</a>
+</li>
+<li>SigninCard()
+: <a class="el" href="dc/d03/class_microsoft_1_1_bot_1_1_connector_1_1_signin_card.html#adab54026b945dbe3b14a49d2f0761317">Microsoft.Bot.Connector.SigninCard</a>
+</li>
+<li>SortedMerge&lt; T &gt;()
+: <a class="el" href="de/d93/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_extensions.html#a273349004da1fac96407724d86ec657f">Microsoft.Bot.Builder.Internals.Fibers.Extensions</a>
+</li>
+<li>SplitList()
+: <a class="el" href="d0/df5/class_microsoft_1_1_bot_1_1_builder_1_1_resource_1_1_extensions.html#a4c94e179d38b62b852772d04e7656bd9">Microsoft.Bot.Builder.Resource.Extensions</a>
+</li>
+<li>StartAsync()
+: <a class="el" href="d9/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_dispatch_dialog.html#a2ee81ec117f816d53850f7bd8fa82708">Microsoft.Bot.Builder.Dialogs.DispatchDialog&lt; R &gt;</a>
+, <a class="el" href="dd/d5e/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog.html#ab6a0d32e90f29420d8f7e5819f98d9db">Microsoft.Bot.Builder.Dialogs.IDialog&lt; out out T &gt;</a>
+, <a class="el" href="d8/df9/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_luis_dialog.html#a124c0feef93de82eeb0b609a844fce6c">Microsoft.Bot.Builder.Dialogs.LuisDialog&lt; R &gt;</a>
+</li>
+<li>State()
+: <a class="el" href="dc/def/struct_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_fold_scorable_1_1_state.html#a104d69eecf690b40895c4af3c774d263">Microsoft.Bot.Builder.Internals.Scorables.FoldScorable&lt; Item, Score &gt;.State</a>
+</li>
+<li>StateClient()
+: <a class="el" href="dd/dbc/class_microsoft_1_1_bot_1_1_connector_1_1_state_client.html#afffc02aed395fab308bc551c23971b77">Microsoft.Bot.Connector.StateClient</a>
+</li>
+<li>StepType()
+: <a class="el" href="d0/db3/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field_reflector.html#afff23bd8720a412556b8c5d986ff9b91">Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector&lt; T &gt;</a>
+</li>
+<li>StoreFrom()
+: <a class="el" href="df/d77/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_stack_store_factory.html#a56ecf5b0230b61f8810352907dd178b9">Microsoft.Bot.Builder.Internals.Fibers.IStackStoreFactory&lt; C &gt;</a>
+</li>
+<li>StoreFromStack()
+: <a class="el" href="d6/dfb/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_store_from_stack.html#a30b885f1ebc2b9a6d87d76e7c3591d7b">Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack&lt; C &gt;</a>
+</li>
+<li>StoreInstanceByFieldsSurrogate()
+: <a class="el" href="d5/d5e/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_store_instance_by_fields_surrogate.html#a27aa48205d3f87a6d7367fb1c4de6f89">Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByFieldsSurrogate</a>
+</li>
+<li>StoreInstanceByTypeSurrogate()
+: <a class="el" href="df/d58/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_store_instance_by_type_surrogate.html#a567a5b3a938f455faf44ce79a98af877">Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate</a>
+</li>
+<li>StrictEntityToType()
+: <a class="el" href="df/d2e/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_strict_entity_to_type.html#acd2d17bbf5d819d24bc6b82affe00a9d">Microsoft.Bot.Builder.Luis.StrictEntityToType</a>
+</li>
+<li>StringEnumConverterWithDefault()
+: <a class="el" href="d7/d72/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_string_enum_converter_with_default.html#a21752bb3cfb2d41b6761311cb993c94c">Microsoft.Bot.Builder.Calling.ObjectModel.Misc.StringEnumConverterWithDefault&lt; TEnum &gt;</a>
+</li>
+<li>Strings()
+: <a class="el" href="d1/db2/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_json_1_1_field_json.html#a8fc52a4a42a6bd8933f8a9b227e659be">Microsoft.Bot.Builder.FormFlow.Json.FieldJson</a>
+</li>
+<li>SurrogateLogDecorator()
+: <a class="el" href="dd/d43/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_surrogate_log_decorator.html#a7d9939795ba2c16657dc33077e3b5d38">Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateLogDecorator</a>
+</li>
+<li>SurrogateSelector()
+: <a class="el" href="d5/d79/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_surrogate_selector.html#a523eb8f7a687694d28b2d3bf43ca681a">Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateSelector</a>
+</li>
+<li>Switch&lt; T, R &gt;()
+: <a class="el" href="de/dab/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_chain.html#a0bf3925e4c00fac9bf86b560584b4f24">Microsoft.Bot.Builder.Dialogs.Chain</a>
+</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.11-->
+<!-- start footer part -->
+<!-- id is needed for treeview function! -->
+<div class="outline footer">
+    <ul>
+        <li><a href="//aka.ms/bf-contactus">Contact us</a></li>
+        <li><a href="//aka.ms/bf-privacy">Privacy & cookies</a></li>
+        <li><a href="//aka.ms/bf-terms">Terms of use</a></li>
+        <li><a href="//aka.ms/bf-conduct">Code of conduct</a></li>
+        <li>&copy; 2016 Microsoft</li>
+    </ul>
+</div>
+<script src="//bot-framework.azureedge.net/libs/svgxuse.js"></script>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100954936); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100954936ns.gif" /></p></noscript>
+</body>
+</html>

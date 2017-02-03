@@ -1,0 +1,4 @@
+<map id="Microsoft.Bot.Builder.Internals.Scorables.TraitsScorable&lt; Item, Score &gt;" name="Microsoft.Bot.Builder.Internals.Scorables.TraitsScorable&lt; Item, Score &gt;">
+<area shape="rect" id="node2" href="$d2/df1/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_fold_scorable.html" title="Fold an aggregation of scorables to produce a winning scorable. " alt="" coords="36,124,175,165"/>
+<area shape="rect" id="node3" href="$de/d7b/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_scorable_base.html" title="ScorableBase\&lt; Item,\l IReadOnlyList\&lt; FoldScorable\l\&lt; Item, Score \&gt;.State \&gt;,\l Score \&gt;" alt="" coords="8,5,203,76"/>
+</map>

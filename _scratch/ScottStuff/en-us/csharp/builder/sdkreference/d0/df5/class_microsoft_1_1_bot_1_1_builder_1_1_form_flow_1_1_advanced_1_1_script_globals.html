@@ -1,0 +1,279 @@
+<!-- HTML header for doxygen 1.8.11-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals Class Reference | Bot Builder SDK C# Reference Library | Bot Framework</title>
+    <link href="../../tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../jquery.js"></script>
+    <script type="text/javascript" src="../../dynsections.js"></script>
+    <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+    <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="../../botframework.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/css/documentation.css?1" />
+    <script type="text/javascript" src="/css/documents.js"></script>
+    <!-- START OF SmartSource Data Collector TAG v10.4.23 -->
+    <!-- Copyright (c) 2016 Webtrends Inc.  All rights reserved. -->
+    <script type="text/javascript" src="/js/webtrends.load.js"></script>
+    <!--
+      appInsights
+    -->
+    <script type="text/javascript">
+    var appInsights=window.appInsights||function(config){
+      function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+      }({
+          instrumentationKey:"ecf7f29d-de8c-4169-a492-bdce0a32c300"
+      });
+      window.appInsights=appInsights;
+      appInsights.trackPageView();
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var sidenav = $('#side-nav');
+            sidenav.before('<div id="content-container" class="outline"></div>');
+            var doccontent = $('#doc-content');
+			var contentcontainer = $('#content-container');
+            contentcontainer.append(sidenav);
+            contentcontainer.append(doccontent);
+            doccontent.prepend($('#referenceSearch'));
+			var top = $('#top');
+			top.before('<div class="fullWidth"></div>');
+			var fullwidth = $('div.fullWidth');
+			fullwidth.before('<div id="app-body"></div>');
+			fullwidth.append(top);
+			fullwidth.append(contentcontainer);
+			fullwidth.append($('.footer'));
+			var appbody = $('#app-body');
+			appbody.append(fullwidth);
+			var navtreecontents = $('#nav-tree-contents');
+			navtreecontents.prepend('<ul><li><div class="label"><a href="/">&lt; Documentation Home</a></div></li></ul>');
+			//sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            //sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><select id="lang-select" name="lang" ><option value="">All</option><option value="node">Node.js</option><option value="csharp">.NET</option></select><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            setProgrammingLanguage();
+			$('#MSearchField').removeAttr('value').attr('placeholder', 'Search the Bot Builder SDK C# reference');
+        });
+    </script>
+</head>
+<body>
+    <div id="referenceSearch"></div>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div>
+            <header>
+                <div class="outline">
+                    <div class="header">
+                        <a class="logo" href="//www.microsoft.com">
+                            <svg class="svgicon svgicon-microsoft-color-logo">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/symbol-defs.svg#svgicon-microsoft-color-logo"></use>
+                            </svg>
+                        </a>
+                        <div class="loading-animation"></div>
+                        <span class="environment"></span>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="brand-primary">
+                <div class="jumbo">
+                    <div class="jumbo-header"><a href="https://www.botframework.com/">Bot Framework</a></div>
+                    <ul class="header-nav">
+                        <li><a href="https://dev.botframework.com/#/bots">My bots</a></li>
+                        <li><a href="https://dev.botframework.com/#/bots/new">Register a bot</a></li>
+                        <li class="active"><a href="/">Documentation</a></li>
+                        <li><a href="https://bots.botframework.com/">Bot Directory</a></li>
+                        <li><a href="https://blog.botframework.com/">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header part -->
+</body>
+</html><!-- Generated by Doxygen 1.8.11 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d0/df5/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_script_globals.html','../../');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="../../d3/db5/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_script_globals-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Global values to pass into scripts defined using <a class="el" href="../../da/db3/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_json_1_1_form_builder_json.html" title="Build a form by specifying messages, fields and confirmations through JSON Schema or programatically...">Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson</a>.  
+ <a href="../../d0/df5/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_script_globals.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a54336d1a542318902d64024511162756"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df5/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_script_globals.html#a54336d1a542318902d64024511162756">choice</a></td></tr>
+<tr class="memdesc:a54336d1a542318902d64024511162756"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which script to execute.  <a href="#a54336d1a542318902d64024511162756">More...</a><br /></td></tr>
+<tr class="separator:a54336d1a542318902d64024511162756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e17d6883e13a235deebe1ee7eb5557"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/dc6/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog_context.html">IDialogContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df5/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_script_globals.html#a47e17d6883e13a235deebe1ee7eb5557">context</a></td></tr>
+<tr class="memdesc:a47e17d6883e13a235deebe1ee7eb5557"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dialog context for OnCompletionAsync handlers.  <a href="#a47e17d6883e13a235deebe1ee7eb5557">More...</a><br /></td></tr>
+<tr class="separator:a47e17d6883e13a235deebe1ee7eb5557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a116ab5b4899d29b227fbe836ef021d63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html">Field</a>&lt; JObject &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df5/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_script_globals.html#a116ab5b4899d29b227fbe836ef021d63">field</a></td></tr>
+<tr class="memdesc:a116ab5b4899d29b227fbe836ef021d63"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html" title="Base class with declarative implementation of IField. ">Field</a> to be dynamically defined.  <a href="#a116ab5b4899d29b227fbe836ef021d63">More...</a><br /></td></tr>
+<tr class="separator:a116ab5b4899d29b227fbe836ef021d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a7b3213ae579ace40e247ba3fd5b444"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d09/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_field.html">IField</a>&lt; JObject &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df5/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_script_globals.html#a5a7b3213ae579ace40e247ba3fd5b444">ifield</a></td></tr>
+<tr class="memdesc:a5a7b3213ae579ace40e247ba3fd5b444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current field if any.  <a href="#a5a7b3213ae579ace40e247ba3fd5b444">More...</a><br /></td></tr>
+<tr class="separator:a5a7b3213ae579ace40e247ba3fd5b444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66cc20807f21c946a33e8f03fbd54573"><td class="memItemLeft" align="right" valign="top">JObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df5/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_script_globals.html#a66cc20807f21c946a33e8f03fbd54573">state</a></td></tr>
+<tr class="memdesc:a66cc20807f21c946a33e8f03fbd54573"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current form state.  <a href="#a66cc20807f21c946a33e8f03fbd54573">More...</a><br /></td></tr>
+<tr class="separator:a66cc20807f21c946a33e8f03fbd54573"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7bd88a5c303972bdc5815dba37b5871"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df5/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_script_globals.html#af7bd88a5c303972bdc5815dba37b5871">value</a></td></tr>
+<tr class="memdesc:af7bd88a5c303972bdc5815dba37b5871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value to be validated.  <a href="#af7bd88a5c303972bdc5815dba37b5871">More...</a><br /></td></tr>
+<tr class="separator:af7bd88a5c303972bdc5815dba37b5871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Global values to pass into scripts defined using <a class="el" href="../../da/db3/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_json_1_1_form_builder_json.html" title="Build a form by specifying messages, fields and confirmations through JSON Schema or programatically...">Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson</a>. </p>
+
+<p>Definition at line <a class="el" href="../../de/d06/_form_builder_json_8cs_source.html#l00506">506</a> of file <a class="el" href="../../de/d06/_form_builder_json_8cs_source.html">FormBuilderJson.cs</a>.</p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a54336d1a542318902d64024511162756"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals.choice</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Which script to execute. </p>
+
+<p>Definition at line <a class="el" href="../../de/d06/_form_builder_json_8cs_source.html#l00511">511</a> of file <a class="el" href="../../de/d06/_form_builder_json_8cs_source.html">FormBuilderJson.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a47e17d6883e13a235deebe1ee7eb5557"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/dc6/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog_context.html">IDialogContext</a> Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals.context</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dialog context for OnCompletionAsync handlers. </p>
+
+<p>Definition at line <a class="el" href="../../de/d06/_form_builder_json_8cs_source.html#l00536">536</a> of file <a class="el" href="../../de/d06/_form_builder_json_8cs_source.html">FormBuilderJson.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a116ab5b4899d29b227fbe836ef021d63"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html">Field</a>&lt;JObject&gt; Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals.field</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html" title="Base class with declarative implementation of IField. ">Field</a> to be dynamically defined. </p>
+
+<p>Definition at line <a class="el" href="../../de/d06/_form_builder_json_8cs_source.html#l00531">531</a> of file <a class="el" href="../../de/d06/_form_builder_json_8cs_source.html">FormBuilderJson.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5a7b3213ae579ace40e247ba3fd5b444"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d09/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_field.html">IField</a>&lt;JObject&gt; Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals.ifield</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Current field if any. </p>
+
+<p>Definition at line <a class="el" href="../../de/d06/_form_builder_json_8cs_source.html#l00526">526</a> of file <a class="el" href="../../de/d06/_form_builder_json_8cs_source.html">FormBuilderJson.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a66cc20807f21c946a33e8f03fbd54573"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">JObject Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals.state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Current form state. </p>
+
+<p>Definition at line <a class="el" href="../../de/d06/_form_builder_json_8cs_source.html#l00516">516</a> of file <a class="el" href="../../de/d06/_form_builder_json_8cs_source.html">FormBuilderJson.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af7bd88a5c303972bdc5815dba37b5871"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">object Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals.value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Value to be validated. </p>
+
+<p>Definition at line <a class="el" href="../../de/d06/_form_builder_json_8cs_source.html#l00521">521</a> of file <a class="el" href="../../de/d06/_form_builder_json_8cs_source.html">FormBuilderJson.cs</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="../../de/d06/_form_builder_json_8cs_source.html">FormBuilderJson.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.11-->
+<!-- start footer part -->
+<!-- id is needed for treeview function! -->
+<div class="outline footer">
+    <ul>
+        <li><a href="//aka.ms/bf-contactus">Contact us</a></li>
+        <li><a href="//aka.ms/bf-privacy">Privacy & cookies</a></li>
+        <li><a href="//aka.ms/bf-terms">Terms of use</a></li>
+        <li><a href="//aka.ms/bf-conduct">Code of conduct</a></li>
+        <li>&copy; 2016 Microsoft</li>
+    </ul>
+</div>
+<script src="//bot-framework.azureedge.net/libs/svgxuse.js"></script>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100954936); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100954936ns.gif" /></p></noscript>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<map id="Microsoft.Bot.Builder.Calling.Events.OutcomeEventBase" name="Microsoft.Bot.Builder.Calling.Events.OutcomeEventBase">
+<area shape="rect" id="node2" href="$d2/d91/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_events_1_1_answer_outcome_event.html" title="Microsoft.Bot.Builder.Calling.\lEvents.AnswerOutcomeEvent" alt="" coords="277,5,471,47"/>
+<area shape="rect" id="node3" href="$db/dac/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_events_1_1_hangup_outcome_event.html" title="Microsoft.Bot.Builder.Calling.\lEvents.HangupOutcomeEvent" alt="" coords="277,71,471,112"/>
+<area shape="rect" id="node4" href="$d8/de7/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_events_1_1_play_prompt_outcome_event.html" title="Microsoft.Bot.Builder.Calling.\lEvents.PlayPromptOutcomeEvent" alt="" coords="265,136,483,177"/>
+<area shape="rect" id="node5" href="$d9/d79/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_events_1_1_recognize_outcome_event.html" title="Microsoft.Bot.Builder.Calling.\lEvents.RecognizeOutcomeEvent" alt="" coords="269,201,479,243"/>
+<area shape="rect" id="node6" href="$da/df1/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_events_1_1_record_outcome_event.html" title="Microsoft.Bot.Builder.Calling.\lEvents.RecordOutcomeEvent" alt="" coords="279,267,469,308"/>
+<area shape="rect" id="node7" href="$d8/d60/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_events_1_1_reject_outcome_event.html" title="Microsoft.Bot.Builder.Calling.\lEvents.RejectOutcomeEvent" alt="" coords="279,332,469,373"/>
+<area shape="rect" id="node8" href="$d0/d98/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_events_1_1_workflow_validation_outcome_event.html" title="Microsoft.Bot.Builder.Calling.\lEvents.WorkflowValidationOutcomeEvent" alt="" coords="244,397,504,439"/>
+</map>

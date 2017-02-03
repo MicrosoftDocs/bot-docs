@@ -1,0 +1,1049 @@
+<!-- HTML header for doxygen 1.8.11-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Microsoft.Bot.Builder.FormFlow.FormBuilder&lt; T &gt; Class Template Reference | Bot Builder SDK C# Reference Library | Bot Framework</title>
+    <link href="../../tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../jquery.js"></script>
+    <script type="text/javascript" src="../../dynsections.js"></script>
+    <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+    <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="../../botframework.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/css/documentation.css?1" />
+    <script type="text/javascript" src="/css/documents.js"></script>
+    <!-- START OF SmartSource Data Collector TAG v10.4.23 -->
+    <!-- Copyright (c) 2016 Webtrends Inc.  All rights reserved. -->
+    <script type="text/javascript" src="/js/webtrends.load.js"></script>
+    <!--
+      appInsights
+    -->
+    <script type="text/javascript">
+    var appInsights=window.appInsights||function(config){
+      function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+      }({
+          instrumentationKey:"ecf7f29d-de8c-4169-a492-bdce0a32c300"
+      });
+      window.appInsights=appInsights;
+      appInsights.trackPageView();
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var sidenav = $('#side-nav');
+            sidenav.before('<div id="content-container" class="outline"></div>');
+            var doccontent = $('#doc-content');
+			var contentcontainer = $('#content-container');
+            contentcontainer.append(sidenav);
+            contentcontainer.append(doccontent);
+            doccontent.prepend($('#referenceSearch'));
+			var top = $('#top');
+			top.before('<div class="fullWidth"></div>');
+			var fullwidth = $('div.fullWidth');
+			fullwidth.before('<div id="app-body"></div>');
+			fullwidth.append(top);
+			fullwidth.append(contentcontainer);
+			fullwidth.append($('.footer'));
+			var appbody = $('#app-body');
+			appbody.append(fullwidth);
+			var navtreecontents = $('#nav-tree-contents');
+			navtreecontents.prepend('<ul><li><div class="label"><a href="/">&lt; Documentation Home</a></div></li></ul>');
+			//sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            //sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><select id="lang-select" name="lang" ><option value="">All</option><option value="node">Node.js</option><option value="csharp">.NET</option></select><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            setProgrammingLanguage();
+			$('#MSearchField').removeAttr('value').attr('placeholder', 'Search the Bot Builder SDK C# reference');
+        });
+    </script>
+</head>
+<body>
+    <div id="referenceSearch"></div>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div>
+            <header>
+                <div class="outline">
+                    <div class="header">
+                        <a class="logo" href="//www.microsoft.com">
+                            <svg class="svgicon svgicon-microsoft-color-logo">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/symbol-defs.svg#svgicon-microsoft-color-logo"></use>
+                            </svg>
+                        </a>
+                        <div class="loading-animation"></div>
+                        <span class="environment"></span>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="brand-primary">
+                <div class="jumbo">
+                    <div class="jumbo-header"><a href="https://www.botframework.com/">Bot Framework</a></div>
+                    <ul class="header-nav">
+                        <li><a href="https://dev.botframework.com/#/bots">My bots</a></li>
+                        <li><a href="https://dev.botframework.com/#/bots/new">Register a bot</a></li>
+                        <li class="active"><a href="/">Documentation</a></li>
+                        <li><a href="https://bots.botframework.com/">Bot Directory</a></li>
+                        <li><a href="https://blog.botframework.com/">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header part -->
+</body>
+</html><!-- Generated by Doxygen 1.8.11 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('de/d9d/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder.html','../../');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#properties">Properties</a> &#124;
+<a href="../../db/d12/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">Microsoft.Bot.Builder.FormFlow.FormBuilder&lt; T &gt; Class Template Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Build a form by specifying messages, fields and confirmations via reflection or programatically. 
+ <a href="../../de/d9d/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for Microsoft.Bot.Builder.FormFlow.FormBuilder&lt; T &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/dcc/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder__inherit__graph.png" border="0" usemap="#_microsoft_8_bot_8_builder_8_form_flow_8_form_builder_3_01_t_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_microsoft_8_bot_8_builder_8_form_flow_8_form_builder_3_01_t_01_4_inherit__map" id="_microsoft_8_bot_8_builder_8_form_flow_8_form_builder_3_01_t_01_4_inherit__map">
+<area shape="rect" id="node2" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html" title="Abstract base class for Form Builders." alt="" coords="17,80,171,107"/>
+<area shape="rect" id="node3" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html" title="Interface for building a form. " alt="" coords="31,5,157,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4d6fa819db9b47990ee80574c7d362da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d9d/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder.html#a4d6fa819db9b47990ee80574c7d362da">FormBuilder</a> (bool ignoreAnnotations=false)</td></tr>
+<tr class="memdesc:a4d6fa819db9b47990ee80574c7d362da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new form builder for building a form using reflection.  <a href="#a4d6fa819db9b47990ee80574c7d362da">More...</a><br /></td></tr>
+<tr class="separator:a4d6fa819db9b47990ee80574c7d362da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93024f5e3ff12d43d4a7be8819c3abc2"><td class="memItemLeft" align="right" valign="top">override <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html">IFormBuilder</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d9d/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder.html#a93024f5e3ff12d43d4a7be8819c3abc2">AddRemainingFields</a> (IEnumerable&lt; string &gt; exclude=null)</td></tr>
+<tr class="memdesc:a93024f5e3ff12d43d4a7be8819c3abc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add all fields not already added to the form.  <a href="#a93024f5e3ff12d43d4a7be8819c3abc2">More...</a><br /></td></tr>
+<tr class="separator:a93024f5e3ff12d43d4a7be8819c3abc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88eea09e0a9e934ece9120eecbd792c1"><td class="memItemLeft" align="right" valign="top">override <a class="el" href="../../d8/d45/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form.html">IForm</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d9d/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder.html#a88eea09e0a9e934ece9120eecbd792c1">Build</a> (Assembly resourceAssembly=null, string resourceName=null)</td></tr>
+<tr class="memdesc:a88eea09e0a9e934ece9120eecbd792c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build the form based on the methods called on the builder.  <a href="#a88eea09e0a9e934ece9120eecbd792c1">More...</a><br /></td></tr>
+<tr class="separator:a88eea09e0a9e934ece9120eecbd792c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6afa1a95d22eb01298cf73bb7869f39"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html">IFormBuilder</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html#ad6afa1a95d22eb01298cf73bb7869f39">Confirm</a> (string prompt, ActiveDelegate&lt; T &gt; condition=null, IEnumerable&lt; string &gt; dependencies=null)</td></tr>
+<tr class="memdesc:ad6afa1a95d22eb01298cf73bb7869f39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a confirmation step.  <a href="#ad6afa1a95d22eb01298cf73bb7869f39">More...</a><br /></td></tr>
+<tr class="separator:ad6afa1a95d22eb01298cf73bb7869f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac76fd5a4002070236129a39375294d7b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html">IFormBuilder</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html#ac76fd5a4002070236129a39375294d7b">Confirm</a> (<a class="el" href="../../d0/d34/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_prompt_attribute.html">PromptAttribute</a> prompt, ActiveDelegate&lt; T &gt; condition=null, IEnumerable&lt; string &gt; dependencies=null)</td></tr>
+<tr class="memdesc:ac76fd5a4002070236129a39375294d7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a confirmation step.  <a href="#ac76fd5a4002070236129a39375294d7b">More...</a><br /></td></tr>
+<tr class="separator:ac76fd5a4002070236129a39375294d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cb555e384d0b0c979a106dda2d32191"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html">IFormBuilder</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html#a9cb555e384d0b0c979a106dda2d32191">Confirm</a> (MessageDelegate&lt; T &gt; generateMessage, ActiveDelegate&lt; T &gt; condition=null, IEnumerable&lt; string &gt; dependencies=null)</td></tr>
+<tr class="memdesc:a9cb555e384d0b0c979a106dda2d32191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a confirmation using a delegate to dynamically build the message.  <a href="#a9cb555e384d0b0c979a106dda2d32191">More...</a><br /></td></tr>
+<tr class="separator:a9cb555e384d0b0c979a106dda2d32191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c323540c84570000493d7fe5e102597"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html">IFormBuilder</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html#a2c323540c84570000493d7fe5e102597">Field</a> (<a class="el" href="../../d5/d09/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_field.html">IField</a>&lt; T &gt; field)</td></tr>
+<tr class="memdesc:a2c323540c84570000493d7fe5e102597"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derfine a field step by supplying your own field definition.  <a href="#a2c323540c84570000493d7fe5e102597">More...</a><br /></td></tr>
+<tr class="separator:a2c323540c84570000493d7fe5e102597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4af0719b702f411b05ed7fec5e9ade3f"><td class="memItemLeft" align="right" valign="top">override <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html">IFormBuilder</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d9d/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder.html#a4af0719b702f411b05ed7fec5e9ade3f">Field</a> (string name, ActiveDelegate&lt; T &gt; active=null, ValidateAsyncDelegate&lt; T &gt; validate=null)</td></tr>
+<tr class="memdesc:a4af0719b702f411b05ed7fec5e9ade3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a step for filling in a particular value in the form state.  <a href="#a4af0719b702f411b05ed7fec5e9ade3f">More...</a><br /></td></tr>
+<tr class="separator:a4af0719b702f411b05ed7fec5e9ade3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09544c8f03aa32560534f7cd6be0eea3"><td class="memItemLeft" align="right" valign="top">override <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html">IFormBuilder</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d9d/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder.html#a09544c8f03aa32560534f7cd6be0eea3">Field</a> (string name, string prompt, ActiveDelegate&lt; T &gt; active=null, ValidateAsyncDelegate&lt; T &gt; validate=null)</td></tr>
+<tr class="memdesc:a09544c8f03aa32560534f7cd6be0eea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a step for filling in a particular value in the form state.  <a href="#a09544c8f03aa32560534f7cd6be0eea3">More...</a><br /></td></tr>
+<tr class="separator:a09544c8f03aa32560534f7cd6be0eea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d85d032a7e7d9daf0edcd37dacd5bf"><td class="memItemLeft" align="right" valign="top">override <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html">IFormBuilder</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d9d/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder.html#ad8d85d032a7e7d9daf0edcd37dacd5bf">Field</a> (string name, <a class="el" href="../../d0/d34/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_prompt_attribute.html">PromptAttribute</a> prompt, ActiveDelegate&lt; T &gt; active=null, ValidateAsyncDelegate&lt; T &gt; validate=null)</td></tr>
+<tr class="memdesc:ad8d85d032a7e7d9daf0edcd37dacd5bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a step for filling in a particular value in the form state.  <a href="#ad8d85d032a7e7d9daf0edcd37dacd5bf">More...</a><br /></td></tr>
+<tr class="separator:ad8d85d032a7e7d9daf0edcd37dacd5bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ca7c8afab0de05a32fc21e2c588a9bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html#a0ca7c8afab0de05a32fc21e2c588a9bb">HasField</a> (string name)</td></tr>
+<tr class="memdesc:a0ca7c8afab0de05a32fc21e2c588a9bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test to see if there is already a field with <em>name</em> .  <a href="#a0ca7c8afab0de05a32fc21e2c588a9bb">More...</a><br /></td></tr>
+<tr class="separator:a0ca7c8afab0de05a32fc21e2c588a9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a507b2f4a320bcc7db87843c0ec5c2704"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html">IFormBuilder</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html#a507b2f4a320bcc7db87843c0ec5c2704">Message</a> (string message, ActiveDelegate&lt; T &gt; condition=null, IEnumerable&lt; string &gt; dependencies=null)</td></tr>
+<tr class="memdesc:a507b2f4a320bcc7db87843c0ec5c2704"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show a message that does not require a response.  <a href="#a507b2f4a320bcc7db87843c0ec5c2704">More...</a><br /></td></tr>
+<tr class="separator:a507b2f4a320bcc7db87843c0ec5c2704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34f1835382fb0e70a111908a19883dfe"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html">IFormBuilder</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html#a34f1835382fb0e70a111908a19883dfe">Message</a> (<a class="el" href="../../d0/d34/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_prompt_attribute.html">PromptAttribute</a> prompt, ActiveDelegate&lt; T &gt; condition=null, IEnumerable&lt; string &gt; dependencies=null)</td></tr>
+<tr class="memdesc:a34f1835382fb0e70a111908a19883dfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show a message with more format control that does not require a response.  <a href="#a34f1835382fb0e70a111908a19883dfe">More...</a><br /></td></tr>
+<tr class="separator:a34f1835382fb0e70a111908a19883dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b129d3b01a1c54a8034ded0c1dd9f5d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html">IFormBuilder</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html#a5b129d3b01a1c54a8034ded0c1dd9f5d">Message</a> (MessageDelegate&lt; T &gt; generateMessage, ActiveDelegate&lt; T &gt; condition=null, IEnumerable&lt; string &gt; dependencies=null)</td></tr>
+<tr class="memdesc:a5b129d3b01a1c54a8034ded0c1dd9f5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a message using a delegate to dynamically build the message.  <a href="#a5b129d3b01a1c54a8034ded0c1dd9f5d">More...</a><br /></td></tr>
+<tr class="separator:a5b129d3b01a1c54a8034ded0c1dd9f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2535bad7180c7e92afe4b3c37529a4b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html">IFormBuilder</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html#ad2535bad7180c7e92afe4b3c37529a4b">OnCompletion</a> (OnCompletionAsyncDelegate&lt; T &gt; callback)</td></tr>
+<tr class="memdesc:ad2535bad7180c7e92afe4b3c37529a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegate to call when form is completed.  <a href="#ad2535bad7180c7e92afe4b3c37529a4b">More...</a><br /></td></tr>
+<tr class="separator:ad2535bad7180c7e92afe4b3c37529a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a3dad9b5291305d486472ada23cd4d7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html">IFormBuilder</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html#a3a3dad9b5291305d486472ada23cd4d7">Prompter</a> (PromptAsyncDelegate prompter)</td></tr>
+<tr class="memdesc:a3a3dad9b5291305d486472ada23cd4d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegate to send prompt to user.  <a href="#a3a3dad9b5291305d486472ada23cd4d7">More...</a><br /></td></tr>
+<tr class="separator:a3a3dad9b5291305d486472ada23cd4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a815d6659468fea5be54829cda92d061b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/db8/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_configuration.html">FormConfiguration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html#a815d6659468fea5be54829cda92d061b">Configuration</a><code> [get]</code></td></tr>
+<tr class="separator:a815d6659468fea5be54829cda92d061b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Build a form by specifying messages, fields and confirmations via reflection or programatically.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Form state class. </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Fields will be defined through reflection over the type <em>T</em>  and attributes like <a class="el" href="../../dd/d38/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_describe_attribute.html" title="Attribute to override the default description of a field, property or enum value. ...">DescribeAttribute</a>, <a class="el" href="../../df/d31/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_numeric_attribute.html" title="Provide limits on the possible values in a numeric field or property. ">NumericAttribute</a>, <a class="el" href="../../d7/d6f/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_optional_attribute.html" title="Define a field or property as optional. ">OptionalAttribute</a> <a class="el" href="../../da/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_pattern_attribute.html" title="Provide a regular expression to validate a string field. ">PatternAttribute</a>, <a class="el" href="../../d0/d34/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_prompt_attribute.html" title="Define the prompt template used when asking about a field. ">PromptAttribute</a>, <a class="el" href="../../d2/d27/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_terms_attribute.html" title="Attribute to override the default terms used to match a field, property or enum value to user input...">TermsAttribute</a> and <a class="el" href="../../d7/d0a/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_template_attribute.html" title="Define a template for generating strings. ">TemplateAttribute</a>. For all of the attributes, resonable defaults will be generated. </p>
+<div class="typeconstraint">
+<dl><dt><b>Type Constraints</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>class</em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
+
+<p>Definition at line <a class="el" href="../../d3/df3/_form_builder_8cs_source.html#l00424">424</a> of file <a class="el" href="../../d3/df3/_form_builder_8cs_source.html">FormBuilder.cs</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a4d6fa819db9b47990ee80574c7d362da"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d9d/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder.html">Microsoft.Bot.Builder.FormFlow.FormBuilder</a>&lt; T &gt;.<a class="el" href="../../de/d9d/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder.html">FormBuilder</a> </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ignoreAnnotations</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a new form builder for building a form using reflection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ignoreAnnotations</td><td>True to ignore any attributes on the form class.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../d3/df3/_form_builder_8cs_source.html#l00433">433</a> of file <a class="el" href="../../d3/df3/_form_builder_8cs_source.html">FormBuilder.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a93024f5e3ff12d43d4a7be8819c3abc2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html">IFormBuilder</a>&lt;T&gt; <a class="el" href="../../de/d9d/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder.html">Microsoft.Bot.Builder.FormFlow.FormBuilder</a>&lt; T &gt;.AddRemainingFields </td>
+          <td>(</td>
+          <td class="paramtype">IEnumerable&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>exclude</em> = <code>null</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add all fields not already added to the form. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">exclude</td><td>Fields not to include.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Modified <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html" title="Interface for building a form. ">IFormBuilder</a>.</dd></dl>
+<p>This will add all fields defined in your form that have not already been added if the fields are supported. </p>
+
+<p>Implements <a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html#af34d97ee6830dd7d922e1b382e462ee6">Microsoft.Bot.Builder.FormFlow.FormBuilderBase&lt; T &gt;</a>.</p>
+
+<p>Definition at line <a class="el" href="../../d3/df3/_form_builder_8cs_source.html#l00476">476</a> of file <a class="el" href="../../d3/df3/_form_builder_8cs_source.html">FormBuilder.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a88eea09e0a9e934ece9120eecbd792c1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override <a class="el" href="../../d8/d45/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form.html">IForm</a>&lt;T&gt; <a class="el" href="../../de/d9d/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder.html">Microsoft.Bot.Builder.FormFlow.FormBuilder</a>&lt; T &gt;.Build </td>
+          <td>(</td>
+          <td class="paramtype">Assembly&#160;</td>
+          <td class="paramname"><em>resourceAssembly</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>resourceName</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Build the form based on the methods called on the builder. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resourceAssembly</td><td>Assembly for localization resources.</td></tr>
+    <tr><td class="paramname">resourceName</td><td>Name of resources to use for localization.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The constructed form.</dd></dl>
+<p>The default assembly is the one that contains <em>T</em>  and the default resourceName if the name of that type. </p>
+
+<p>Reimplemented from <a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html#a2e5d7ae1658a39f5f11651c4d68e900e">Microsoft.Bot.Builder.FormFlow.FormBuilderBase&lt; T &gt;</a>.</p>
+
+<p>Definition at line <a class="el" href="../../d3/df3/_form_builder_8cs_source.html#l00439">439</a> of file <a class="el" href="../../d3/df3/_form_builder_8cs_source.html">FormBuilder.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad6afa1a95d22eb01298cf73bb7869f39"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html">IFormBuilder</a>&lt;T&gt; <a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html">Microsoft.Bot.Builder.FormFlow.FormBuilderBase</a>&lt; T &gt;.Confirm </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prompt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ActiveDelegate&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>condition</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IEnumerable&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>dependencies</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add a confirmation step. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prompt</td><td>Prompt to use for confirmation.</td></tr>
+    <tr><td class="paramname">condition</td><td>Delegate to test if confirmation applies to the current form state.</td></tr>
+    <tr><td class="paramname">dependencies</td><td>What fields this confirmation depends on.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Modified <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html" title="Interface for building a form. ">IFormBuilder</a>.</dd></dl>
+<p>If prompt is not supplied the <a class="el" href="../../forms.html#patterns">Pattern Language</a> element {*} will be used to confirm. Dependencies will by default be all active steps defined before this confirmation. </p>
+
+<p>Implements <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html#a1453a32529281e4d8dfd310fc35698c1">Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt; T &gt;</a>.</p>
+
+<p>Definition at line <a class="el" href="../../d3/df3/_form_builder_8cs_source.html#l00178">178</a> of file <a class="el" href="../../d3/df3/_form_builder_8cs_source.html">FormBuilder.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac76fd5a4002070236129a39375294d7b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html">IFormBuilder</a>&lt;T&gt; <a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html">Microsoft.Bot.Builder.FormFlow.FormBuilderBase</a>&lt; T &gt;.Confirm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d34/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_prompt_attribute.html">PromptAttribute</a>&#160;</td>
+          <td class="paramname"><em>prompt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ActiveDelegate&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>condition</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IEnumerable&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>dependencies</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add a confirmation step. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prompt</td><td>Prompt to use for confirmation.</td></tr>
+    <tr><td class="paramname">condition</td><td>Delegate to test if confirmation applies to the current form state.</td></tr>
+    <tr><td class="paramname">dependencies</td><td>What fields this confirmation depends on.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Modified <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html" title="Interface for building a form. ">IFormBuilder</a>.</dd></dl>
+<p>Dependencies will by default be all active steps defined before this confirmation. </p>
+
+<p>Implements <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html#a87495c81aa3a5c15cc4dd6cfccfb6a4e">Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt; T &gt;</a>.</p>
+
+<p>Definition at line <a class="el" href="../../d3/df3/_form_builder_8cs_source.html#l00183">183</a> of file <a class="el" href="../../d3/df3/_form_builder_8cs_source.html">FormBuilder.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9cb555e384d0b0c979a106dda2d32191"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html">IFormBuilder</a>&lt;T&gt; <a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html">Microsoft.Bot.Builder.FormFlow.FormBuilderBase</a>&lt; T &gt;.Confirm </td>
+          <td>(</td>
+          <td class="paramtype">MessageDelegate&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>generateMessage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ActiveDelegate&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>condition</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IEnumerable&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>dependencies</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generate a confirmation using a delegate to dynamically build the message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">generateMessage</td><td>Delegate for building message. </td></tr>
+    <tr><td class="paramname">condition</td><td>Whether or not this step is active. </td></tr>
+    <tr><td class="paramname">dependencies</td><td>What fields this confirmation depends on.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Modified <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html" title="Interface for building a form. ">IFormBuilder</a>.</dd></dl>
+
+<p>Implements <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html#a2d9e07f8196ecdd1b2011ca8b4c0cb64">Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt; T &gt;</a>.</p>
+
+<p>Definition at line <a class="el" href="../../d3/df3/_form_builder_8cs_source.html#l00194">194</a> of file <a class="el" href="../../d3/df3/_form_builder_8cs_source.html">FormBuilder.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2c323540c84570000493d7fe5e102597"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html">IFormBuilder</a>&lt;T&gt; <a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html">Microsoft.Bot.Builder.FormFlow.FormBuilderBase</a>&lt; T &gt;.<a class="el" href="../../d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html">Field</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d09/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_field.html">IField</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>field</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Derfine a field step by supplying your own field definition. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">field</td><td>Field definition to use.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Modified <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html" title="Interface for building a form. ">IFormBuilder</a>.</dd></dl>
+<p>You can provide your own implementation of IField&lt;T&gt; or you can use the <a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html#a2c323540c84570000493d7fe5e102597" title="Derfine a field step by supplying your own field definition. ">Field&lt;T&gt;</a> class to provide fluent values, FieldReflector&lt;T&gt; to use reflection or <a class="el" href="../../d1/db2/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_json_1_1_field_json.html" title="Field defined through JSON Schema. ">Json.FieldJson</a> to use JSON Schema. </p>
+
+<p>Implements <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html#ad7881ee9b6a31bcd4acf2033eca8d097">Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt; T &gt;</a>.</p>
+
+<p>Definition at line <a class="el" href="../../d3/df3/_form_builder_8cs_source.html#l00173">173</a> of file <a class="el" href="../../d3/df3/_form_builder_8cs_source.html">FormBuilder.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4af0719b702f411b05ed7fec5e9ade3f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html">IFormBuilder</a>&lt;T&gt; <a class="el" href="../../de/d9d/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder.html">Microsoft.Bot.Builder.FormFlow.FormBuilder</a>&lt; T &gt;.<a class="el" href="../../d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html">Field</a> </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ActiveDelegate&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>active</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ValidateAsyncDelegate&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>validate</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Define a step for filling in a particular value in the form state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Path in the form state to the value being filled in.</td></tr>
+    <tr><td class="paramname">active</td><td>Delegate to test form state to see if step is active.</td></tr>
+    <tr><td class="paramname">validate</td><td>Delegate to validate the field value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Modified <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html" title="Interface for building a form. ">IFormBuilder</a>.</dd></dl>
+
+<p>Implements <a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html#a0a1a0d5f9253ddb86944a4b0ae16d8fe">Microsoft.Bot.Builder.FormFlow.FormBuilderBase&lt; T &gt;</a>.</p>
+
+<p>Definition at line <a class="el" href="../../d3/df3/_form_builder_8cs_source.html#l00454">454</a> of file <a class="el" href="../../d3/df3/_form_builder_8cs_source.html">FormBuilder.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a09544c8f03aa32560534f7cd6be0eea3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html">IFormBuilder</a>&lt;T&gt; <a class="el" href="../../de/d9d/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder.html">Microsoft.Bot.Builder.FormFlow.FormBuilder</a>&lt; T &gt;.<a class="el" href="../../d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html">Field</a> </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prompt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ActiveDelegate&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>active</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ValidateAsyncDelegate&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>validate</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Define a step for filling in a particular value in the form state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Path in the form state to the value being filled in.</td></tr>
+    <tr><td class="paramname">prompt</td><td>Simple <a class="el" href="../../forms.html#patterns">Pattern Language</a> to describe prompt for field.</td></tr>
+    <tr><td class="paramname">active</td><td>Delegate to test form state to see if step is active.n</td></tr>
+    <tr><td class="paramname">validate</td><td>Delegate to validate the field value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Modified <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html" title="Interface for building a form. ">IFormBuilder</a>.</dd></dl>
+
+<p>Implements <a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html#a3d3b5aac124559a1f0a039dd02146803">Microsoft.Bot.Builder.FormFlow.FormBuilderBase&lt; T &gt;</a>.</p>
+
+<p>Definition at line <a class="el" href="../../d3/df3/_form_builder_8cs_source.html#l00462">462</a> of file <a class="el" href="../../d3/df3/_form_builder_8cs_source.html">FormBuilder.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8d85d032a7e7d9daf0edcd37dacd5bf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html">IFormBuilder</a>&lt;T&gt; <a class="el" href="../../de/d9d/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder.html">Microsoft.Bot.Builder.FormFlow.FormBuilder</a>&lt; T &gt;.<a class="el" href="../../d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html">Field</a> </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d34/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_prompt_attribute.html">PromptAttribute</a>&#160;</td>
+          <td class="paramname"><em>prompt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ActiveDelegate&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>active</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ValidateAsyncDelegate&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>validate</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Define a step for filling in a particular value in the form state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Path in the form state to the value being filled in.</td></tr>
+    <tr><td class="paramname">prompt</td><td>Prompt pattern with more formatting control to describe prompt for field.</td></tr>
+    <tr><td class="paramname">active</td><td>Delegate to test form state to see if step is active.n</td></tr>
+    <tr><td class="paramname">validate</td><td>Delegate to validate the field value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Modified <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html" title="Interface for building a form. ">IFormBuilder</a>.</dd></dl>
+
+<p>Implements <a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html#af3504d75d63c070893aead01f9e940a7">Microsoft.Bot.Builder.FormFlow.FormBuilderBase&lt; T &gt;</a>.</p>
+
+<p>Definition at line <a class="el" href="../../d3/df3/_form_builder_8cs_source.html#l00467">467</a> of file <a class="el" href="../../d3/df3/_form_builder_8cs_source.html">FormBuilder.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ca7c8afab0de05a32fc21e2c588a9bb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html">Microsoft.Bot.Builder.FormFlow.FormBuilderBase</a>&lt; T &gt;.HasField </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Test to see if there is already a field with <em>name</em> . </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if field is already present.</dd></dl>
+
+<p>Implements <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html#a0116ce987b376b3ad7d0254f1d80da50">Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt; T &gt;</a>.</p>
+
+<p>Definition at line <a class="el" href="../../d3/df3/_form_builder_8cs_source.html#l00150">150</a> of file <a class="el" href="../../d3/df3/_form_builder_8cs_source.html">FormBuilder.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a507b2f4a320bcc7db87843c0ec5c2704"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html">IFormBuilder</a>&lt;T&gt; <a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html">Microsoft.Bot.Builder.FormFlow.FormBuilderBase</a>&lt; T &gt;.Message </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ActiveDelegate&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>condition</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IEnumerable&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>dependencies</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Show a message that does not require a response. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>A <a class="el" href="../../forms.html#patterns">Pattern Language</a> string to fill in and send.</td></tr>
+    <tr><td class="paramname">condition</td><td>Whether or not this step is active.</td></tr>
+    <tr><td class="paramname">dependencies</td><td>Fields message depends on.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Modified <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html" title="Interface for building a form. ">IFormBuilder</a>.</dd></dl>
+
+<p>Implements <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html#a830f019188455ce43827f58bc7487199">Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt; T &gt;</a>.</p>
+
+<p>Definition at line <a class="el" href="../../d3/df3/_form_builder_8cs_source.html#l00155">155</a> of file <a class="el" href="../../d3/df3/_form_builder_8cs_source.html">FormBuilder.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a34f1835382fb0e70a111908a19883dfe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html">IFormBuilder</a>&lt;T&gt; <a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html">Microsoft.Bot.Builder.FormFlow.FormBuilderBase</a>&lt; T &gt;.Message </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d34/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_prompt_attribute.html">PromptAttribute</a>&#160;</td>
+          <td class="paramname"><em>prompt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ActiveDelegate&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>condition</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IEnumerable&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>dependencies</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Show a message with more format control that does not require a response. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prompt</td><td>Message to fill in and send.</td></tr>
+    <tr><td class="paramname">condition</td><td>Whether or not this step is active.</td></tr>
+    <tr><td class="paramname">dependencies</td><td>Fields message depends on.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Modified <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html" title="Interface for building a form. ">IFormBuilder</a>.</dd></dl>
+
+<p>Implements <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html#addcf9c888d510de1cfa8d5ba813d1b49">Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt; T &gt;</a>.</p>
+
+<p>Definition at line <a class="el" href="../../d3/df3/_form_builder_8cs_source.html#l00161">161</a> of file <a class="el" href="../../d3/df3/_form_builder_8cs_source.html">FormBuilder.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5b129d3b01a1c54a8034ded0c1dd9f5d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html">IFormBuilder</a>&lt;T&gt; <a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html">Microsoft.Bot.Builder.FormFlow.FormBuilderBase</a>&lt; T &gt;.Message </td>
+          <td>(</td>
+          <td class="paramtype">MessageDelegate&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>generateMessage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ActiveDelegate&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>condition</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IEnumerable&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>dependencies</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generate a message using a delegate to dynamically build the message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">generateMessage</td><td>Delegate for building message. </td></tr>
+    <tr><td class="paramname">condition</td><td>Whether or not this step is active. </td></tr>
+    <tr><td class="paramname">dependencies</td><td>Fields message depends on.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Modified <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html" title="Interface for building a form. ">IFormBuilder</a>.</dd></dl>
+
+<p>Implements <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html#af468d73a153e4ad86b63cc6c2732d263">Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt; T &gt;</a>.</p>
+
+<p>Definition at line <a class="el" href="../../d3/df3/_form_builder_8cs_source.html#l00167">167</a> of file <a class="el" href="../../d3/df3/_form_builder_8cs_source.html">FormBuilder.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad2535bad7180c7e92afe4b3c37529a4b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html">IFormBuilder</a>&lt;T&gt; <a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html">Microsoft.Bot.Builder.FormFlow.FormBuilderBase</a>&lt; T &gt;.OnCompletion </td>
+          <td>(</td>
+          <td class="paramtype">OnCompletionAsyncDelegate&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Delegate to call when form is completed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>Delegate to call on completion.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Modified <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html" title="Interface for building a form. ">IFormBuilder</a>.</dd></dl>
+<p>This should only be used for side effects such as calling your service with the form state results. In any case the completed form state will be passed to the parent dialog. </p>
+
+<p>Implements <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html#a4960cbb309dff126d4abd1713f7b778f">Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt; T &gt;</a>.</p>
+
+<p>Definition at line <a class="el" href="../../d3/df3/_form_builder_8cs_source.html#l00205">205</a> of file <a class="el" href="../../d3/df3/_form_builder_8cs_source.html">FormBuilder.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a3dad9b5291305d486472ada23cd4d7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html">IFormBuilder</a>&lt;T&gt; <a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html">Microsoft.Bot.Builder.FormFlow.FormBuilderBase</a>&lt; T &gt;.<a class="el" href="../../d5/d80/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_prompter.html">Prompter</a> </td>
+          <td>(</td>
+          <td class="paramtype">PromptAsyncDelegate&#160;</td>
+          <td class="paramname"><em>prompter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Delegate to send prompt to user. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prompter</td><td>Delegate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Modified <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html" title="Interface for building a form. ">IFormBuilder</a>.</dd></dl>
+
+<p>Implements <a class="el" href="../../d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html#a99f28191bd9d99e92d2bfb7c0a3802a1">Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt; T &gt;</a>.</p>
+
+<p>Definition at line <a class="el" href="../../d3/df3/_form_builder_8cs_source.html#l00211">211</a> of file <a class="el" href="../../d3/df3/_form_builder_8cs_source.html">FormBuilder.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a class="anchor" id="a815d6659468fea5be54829cda92d061b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/db8/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_configuration.html">FormConfiguration</a> <a class="el" href="../../d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html">Microsoft.Bot.Builder.FormFlow.FormBuilderBase</a>&lt; T &gt;.Configuration</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d3/df3/_form_builder_8cs_source.html#l00148">148</a> of file <a class="el" href="../../d3/df3/_form_builder_8cs_source.html">FormBuilder.cs</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="../../d3/df3/_form_builder_8cs_source.html">FormBuilder.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.11-->
+<!-- start footer part -->
+<!-- id is needed for treeview function! -->
+<div class="outline footer">
+    <ul>
+        <li><a href="//aka.ms/bf-contactus">Contact us</a></li>
+        <li><a href="//aka.ms/bf-privacy">Privacy & cookies</a></li>
+        <li><a href="//aka.ms/bf-terms">Terms of use</a></li>
+        <li><a href="//aka.ms/bf-conduct">Code of conduct</a></li>
+        <li>&copy; 2016 Microsoft</li>
+    </ul>
+</div>
+<script src="//bot-framework.azureedge.net/libs/svgxuse.js"></script>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100954936); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100954936ns.gif" /></p></noscript>
+</body>
+</html>

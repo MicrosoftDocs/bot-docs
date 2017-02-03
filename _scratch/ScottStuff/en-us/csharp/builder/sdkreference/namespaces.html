@@ -1,0 +1,176 @@
+<!-- HTML header for doxygen 1.8.11-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Namespace List | Bot Builder SDK C# Reference Library | Bot Framework</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="botframework.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/css/documentation.css?1" />
+    <script type="text/javascript" src="/css/documents.js"></script>
+    <!-- START OF SmartSource Data Collector TAG v10.4.23 -->
+    <!-- Copyright (c) 2016 Webtrends Inc.  All rights reserved. -->
+    <script type="text/javascript" src="/js/webtrends.load.js"></script>
+    <!--
+      appInsights
+    -->
+    <script type="text/javascript">
+    var appInsights=window.appInsights||function(config){
+      function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+      }({
+          instrumentationKey:"ecf7f29d-de8c-4169-a492-bdce0a32c300"
+      });
+      window.appInsights=appInsights;
+      appInsights.trackPageView();
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var sidenav = $('#side-nav');
+            sidenav.before('<div id="content-container" class="outline"></div>');
+            var doccontent = $('#doc-content');
+			var contentcontainer = $('#content-container');
+            contentcontainer.append(sidenav);
+            contentcontainer.append(doccontent);
+            doccontent.prepend($('#referenceSearch'));
+			var top = $('#top');
+			top.before('<div class="fullWidth"></div>');
+			var fullwidth = $('div.fullWidth');
+			fullwidth.before('<div id="app-body"></div>');
+			fullwidth.append(top);
+			fullwidth.append(contentcontainer);
+			fullwidth.append($('.footer'));
+			var appbody = $('#app-body');
+			appbody.append(fullwidth);
+			var navtreecontents = $('#nav-tree-contents');
+			navtreecontents.prepend('<ul><li><div class="label"><a href="/">&lt; Documentation Home</a></div></li></ul>');
+			//sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            //sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><select id="lang-select" name="lang" ><option value="">All</option><option value="node">Node.js</option><option value="csharp">.NET</option></select><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            setProgrammingLanguage();
+			$('#MSearchField').removeAttr('value').attr('placeholder', 'Search the Bot Builder SDK C# reference');
+        });
+    </script>
+</head>
+<body>
+    <div id="referenceSearch"></div>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div>
+            <header>
+                <div class="outline">
+                    <div class="header">
+                        <a class="logo" href="//www.microsoft.com">
+                            <svg class="svgicon svgicon-microsoft-color-logo">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/symbol-defs.svg#svgicon-microsoft-color-logo"></use>
+                            </svg>
+                        </a>
+                        <div class="loading-animation"></div>
+                        <span class="environment"></span>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="brand-primary">
+                <div class="jumbo">
+                    <div class="jumbo-header"><a href="https://www.botframework.com/">Bot Framework</a></div>
+                    <ul class="header-nav">
+                        <li><a href="https://dev.botframework.com/#/bots">My bots</a></li>
+                        <li><a href="https://dev.botframework.com/#/bots/new">Register a bot</a></li>
+                        <li class="active"><a href="/">Documentation</a></li>
+                        <li><a href="https://bots.botframework.com/">Bot Directory</a></li>
+                        <li><a href="https://blog.botframework.com/">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header part -->
+</body>
+</html><!-- Generated by Doxygen 1.8.11 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('namespaces.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">Namespace List</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock">Here is a list of all namespaces with brief descriptions:</div><div class="directory">
+<div class="levels">[detail level <span onclick="javascript:toggleLevel(1);">1</span><span onclick="javascript:toggleLevel(2);">2</span><span onclick="javascript:toggleLevel(3);">3</span><span onclick="javascript:toggleLevel(4);">4</span><span onclick="javascript:toggleLevel(5);">5</span><span onclick="javascript:toggleLevel(6);">6</span>]</div><table class="directory">
+<tr id="row_0_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_0_" class="arrow" onclick="toggleFolder('0_')">&#9660;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="d7/d4e/namespace_microsoft.html" target="_self">Microsoft</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_0_" class="arrow" onclick="toggleFolder('0_0_')">&#9660;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="d5/d61/namespace_microsoft_1_1_bot.html" target="_self">Bot</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_0_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span id="arr_0_0_0_" class="arrow" onclick="toggleFolder('0_0_0_')">&#9660;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_self">Builder</a></td><td class="desc">Root namespace for the Microsoft Bot Builder SDK.</td></tr>
+<tr id="row_0_0_0_0_"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="dc/d75/namespace_microsoft_1_1_bot_1_1_builder_1_1_azure.html" target="_self">Azure</a></td><td class="desc">Namespace for Azure extensions to the Microsoft Bot Builder SDK. </td></tr>
+<tr id="row_0_0_0_1_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span id="arr_0_0_0_1_" class="arrow" onclick="toggleFolder('0_0_0_1_')">&#9660;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="d0/d20/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling.html" target="_self">Calling</a></td><td class="desc">Root namespace for the Microsoft Bot Builder Calling SDK. </td></tr>
+<tr id="row_0_0_0_1_0_"><td class="entry"><span style="width:80px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="df/dcc/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_events.html" target="_self">Events</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_0_1_1_" class="even"><td class="entry"><span style="width:80px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="d7/dec/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_exceptions.html" target="_self">Exceptions</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_0_1_2_"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span id="arr_0_0_0_1_2_" class="arrow" onclick="toggleFolder('0_0_0_1_2_')">&#9660;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="d8/d36/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model.html" target="_self">ObjectModel</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_0_1_2_0_" class="even"><td class="entry"><span style="width:96px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="da/ddc/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts.html" target="_self">Contracts</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_0_1_2_1_"><td class="entry"><span style="width:96px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html" target="_self">Misc</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_0_2_" class="even"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="dd/d13/namespace_microsoft_1_1_bot_1_1_builder_1_1_connector.html" target="_self">Connector</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_0_3_"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="de/d23/namespace_microsoft_1_1_bot_1_1_builder_1_1_connector_ex.html" target="_self">ConnectorEx</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_0_4_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span id="arr_0_0_0_4_" class="arrow" onclick="toggleFolder('0_0_0_4_')">&#9660;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="d1/d6a/namespace_microsoft_1_1_bot_1_1_builder_1_1_dialogs.html" target="_self">Dialogs</a></td><td class="desc">Core namespace for <a class="el" href="dialogs.html">Dialogs</a> and associated infrastructure.</td></tr>
+<tr id="row_0_0_0_4_0_"><td class="entry"><span style="width:80px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="d7/dfc/namespace_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals.html" target="_self">Internals</a></td><td class="desc">Namespace for internal <a class="el" href="dialogs.html">Dialogs</a> machinery that is not useful for most developers.</td></tr>
+<tr id="row_0_0_0_5_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span id="arr_0_0_0_5_" class="arrow" onclick="toggleFolder('0_0_0_5_')">&#9660;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="dd/df7/namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow.html" target="_self">FormFlow</a></td><td class="desc">Core namespace for <a class="el" href="dd/df7/namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow.html">FormFlow</a> and associated infrastructure.</td></tr>
+<tr id="row_0_0_0_5_0_"><td class="entry"><span style="width:80px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="de/d58/namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced.html" target="_self">Advanced</a></td><td class="desc">Namespace for <a class="el" href="dd/df7/namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow.html">FormFlow</a> advanced building blocks.</td></tr>
+<tr id="row_0_0_0_5_1_" class="even"><td class="entry"><span style="width:80px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="d8/d26/namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_json.html" target="_self">Json</a></td><td class="desc">Namespace for <a class="el" href="dd/df7/namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow.html">FormFlow</a> declaratively defined with JSON Schema. </td></tr>
+<tr id="row_0_0_0_6_"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="dc/dc6/namespace_microsoft_1_1_bot_1_1_builder_1_1_history.html" target="_self">History</a></td><td class="desc">Namespace for interfaces and classes for working with conversational history. </td></tr>
+<tr id="row_0_0_0_7_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span id="arr_0_0_0_7_" class="arrow" onclick="toggleFolder('0_0_0_7_')">&#9660;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="d4/dc9/namespace_microsoft_1_1_bot_1_1_builder_1_1_internals.html" target="_self">Internals</a></td><td class="desc">Namespace for internal machinery that is not useful for most developers.</td></tr>
+<tr id="row_0_0_0_7_0_"><td class="entry"><span style="width:80px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="de/d5b/namespace_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers.html" target="_self">Fibers</a></td><td class="desc">Namespace for the internal fibers machinery that is not useful for most developers.</td></tr>
+<tr id="row_0_0_0_7_1_" class="even"><td class="entry"><span style="width:80px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="d2/d12/namespace_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables.html" target="_self">Scorables</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_0_8_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span id="arr_0_0_0_8_" class="arrow" onclick="toggleFolder('0_0_0_8_')">&#9660;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="da/d62/namespace_microsoft_1_1_bot_1_1_builder_1_1_luis.html" target="_self">Luis</a></td><td class="desc">Namespace for the machinery needed to talk to <a href="http://luis.ai">http://luis.ai</a>.</td></tr>
+<tr id="row_0_0_0_8_0_" class="even"><td class="entry"><span style="width:80px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="dc/d5f/namespace_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_models.html" target="_self">Models</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_0_9_"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="dd/d06/namespace_microsoft_1_1_bot_1_1_builder_1_1_resource.html" target="_self">Resource</a></td><td class="desc">Namespace for resources. </td></tr>
+<tr id="row_0_0_1_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="db/dbb/namespace_microsoft_1_1_bot_1_1_connector.html" target="_self">Connector</a></td><td class="desc">Root namespace for the Microsoft Bot Connector SDK.</td></tr>
+</table>
+</div><!-- directory -->
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.11-->
+<!-- start footer part -->
+<!-- id is needed for treeview function! -->
+<div class="outline footer">
+    <ul>
+        <li><a href="//aka.ms/bf-contactus">Contact us</a></li>
+        <li><a href="//aka.ms/bf-privacy">Privacy & cookies</a></li>
+        <li><a href="//aka.ms/bf-terms">Terms of use</a></li>
+        <li><a href="//aka.ms/bf-conduct">Code of conduct</a></li>
+        <li>&copy; 2016 Microsoft</li>
+    </ul>
+</div>
+<script src="//bot-framework.azureedge.net/libs/svgxuse.js"></script>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100954936); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100954936ns.gif" /></p></noscript>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$dc/d4c/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_i_bot_data_store.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.IBotDataStore\&lt;\l BotData \&gt;" alt="" coords="5,63,200,119"/>
+<area shape="rect" id="node2" href="$d5/dc5/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_caching_bot_data_store.html" title="Caches data for BotDataBase&lt;T&gt; and wraps the data in BotData to be stored in CachingBotDataStore.inner " alt="" coords="248,5,448,47"/>
+<area shape="rect" id="node3" href="$d8/d45/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_connector_store.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.ConnectorStore" alt="" coords="251,71,445,112"/>
+<area shape="rect" id="node4" href="$df/d92/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_in_memory_data_store.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.InMemoryDataStore" alt="" coords="251,136,445,177"/>
+</map>

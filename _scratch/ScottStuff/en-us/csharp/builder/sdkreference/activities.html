@@ -1,0 +1,405 @@
+<!-- HTML header for doxygen 1.8.11-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Activities | Bot Builder SDK C# Reference Library | Bot Framework</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="botframework.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/css/documentation.css?1" />
+    <script type="text/javascript" src="/css/documents.js"></script>
+    <!-- START OF SmartSource Data Collector TAG v10.4.23 -->
+    <!-- Copyright (c) 2016 Webtrends Inc.  All rights reserved. -->
+    <script type="text/javascript" src="/js/webtrends.load.js"></script>
+    <!--
+      appInsights
+    -->
+    <script type="text/javascript">
+    var appInsights=window.appInsights||function(config){
+      function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+      }({
+          instrumentationKey:"ecf7f29d-de8c-4169-a492-bdce0a32c300"
+      });
+      window.appInsights=appInsights;
+      appInsights.trackPageView();
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var sidenav = $('#side-nav');
+            sidenav.before('<div id="content-container" class="outline"></div>');
+            var doccontent = $('#doc-content');
+			var contentcontainer = $('#content-container');
+            contentcontainer.append(sidenav);
+            contentcontainer.append(doccontent);
+            doccontent.prepend($('#referenceSearch'));
+			var top = $('#top');
+			top.before('<div class="fullWidth"></div>');
+			var fullwidth = $('div.fullWidth');
+			fullwidth.before('<div id="app-body"></div>');
+			fullwidth.append(top);
+			fullwidth.append(contentcontainer);
+			fullwidth.append($('.footer'));
+			var appbody = $('#app-body');
+			appbody.append(fullwidth);
+			var navtreecontents = $('#nav-tree-contents');
+			navtreecontents.prepend('<ul><li><div class="label"><a href="/">&lt; Documentation Home</a></div></li></ul>');
+			//sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            //sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><select id="lang-select" name="lang" ><option value="">All</option><option value="node">Node.js</option><option value="csharp">.NET</option></select><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            setProgrammingLanguage();
+			$('#MSearchField').removeAttr('value').attr('placeholder', 'Search the Bot Builder SDK C# reference');
+        });
+    </script>
+</head>
+<body>
+    <div id="referenceSearch"></div>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div>
+            <header>
+                <div class="outline">
+                    <div class="header">
+                        <a class="logo" href="//www.microsoft.com">
+                            <svg class="svgicon svgicon-microsoft-color-logo">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/symbol-defs.svg#svgicon-microsoft-color-logo"></use>
+                            </svg>
+                        </a>
+                        <div class="loading-animation"></div>
+                        <span class="environment"></span>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="brand-primary">
+                <div class="jumbo">
+                    <div class="jumbo-header"><a href="https://www.botframework.com/">Bot Framework</a></div>
+                    <ul class="header-nav">
+                        <li><a href="https://dev.botframework.com/#/bots">My bots</a></li>
+                        <li><a href="https://dev.botframework.com/#/bots/new">Register a bot</a></li>
+                        <li class="active"><a href="/">Documentation</a></li>
+                        <li><a href="https://bots.botframework.com/">Bot Directory</a></li>
+                        <li><a href="https://blog.botframework.com/">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header part -->
+</body>
+</html><!-- Generated by Doxygen 1.8.11 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('activities.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">Activities </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>An Activity is the object that is used to communicate between a user and a bot. When you send an Activity there are a number of properties that you can use to control your message and how it is presented to the user when they receive it.</p>
+<p>There are more than one type of Activity which are used to convey system operations or channel system operations to the bot. They exist to give the bot information about the state of the channel and the opportunity to respond to them.</p>
+<p>Each Activity being routed through the Connector has a Type field. Primarily, these will be of type message unless they are system notifications for the Bot.</p>
+<p>This table gives you basic overview of the Activity types:</p>
+<table class="doxtable">
+<tr>
+<th><b>ActivityType</b> </th><th><b>Interface</b> </th><th><b>Description</b>  </th></tr>
+<tr>
+<td><b>message</b> </td><td>IMessageActivity </td><td>a simple communication between a user &lt;-&gt; bot </td></tr>
+<tr>
+<td><b>conversationUpdate</b> </td><td>IConversationUpdateActivity</td><td>your bot was added to a conversation or other conversation metadata changed </td></tr>
+<tr>
+<td><b>contactRelationUpdate</b> </td><td>IContactRelationUpdateActivity</td><td>The bot was added to or removed from a user's contact list </td></tr>
+<tr>
+<td><b>typing</b> </td><td>ITypingActivity </td><td>The user or bot on the other end of the conversation is typing </td></tr>
+<tr>
+<td><b>ping</b> </td><td>n/a </td><td>an activity sent to test the security of a bot. </td></tr>
+<tr>
+<td><b>deleteUserData</b> </td><td>n/a </td><td>A user has requested for the bot to delete any profile / user data </td></tr>
+</table>
+<h1><a class="anchor" id="message"></a>
+Message</h1>
+<p>The message activity is the core object exchanged between the user and the bot. It can represent a wide range of values from simple text input and response all the way to complex multiple card carousel with buttons and actions</p>
+<h2><a class="anchor" id="textproperties"></a>
+Text and Locale Properties</h2>
+<p>For many developers the Text property is the only property you need to worry about. A person sent you some text, or your bot is sending some text back. There are 2 core properties for this, the Text and Locale property.</p>
+<table class="doxtable">
+<tr>
+<th>Property </th><th>Description </th><th>Example  </th></tr>
+<tr>
+<td><b>Text</b> </td><td>A text payload in markdown syntax which will be rendered as appropriate on each channel</td><td>Hello, how are you? </td></tr>
+<tr>
+<td><b>Locale</b> </td><td>The locale of the sender (if known) </td><td>en </td></tr>
+</table>
+<p>If all you do is exchange simple one-line text responses, you don't have to read any further.</p>
+<h2><a class="anchor" id="textformat"></a>
+TextFormat Property</h2>
+<p>Each message has an optional TextFormat property which represents how to interpret the Text property.</p>
+<table class="doxtable">
+<tr>
+<th>TextFormat Value </th><th>Description </th><th>Notes  </th></tr>
+<tr>
+<td><b>plain</b> </td><td>The text should be treated as raw text and no formatting applied at all </td><td></td></tr>
+<tr>
+<td><b>markdown</b> </td><td>The text should be treated as markdown formatting and rendered on the channel as appropriate </td><td><em>default</em> </td></tr>
+<tr>
+<td><b>xml</b> </td><td>The text is simple XML markup (subset of HTML) </td><td><em>Skype Only</em> </td></tr>
+</table>
+<h3><a class="anchor" id="markdown"></a>
+Markdown</h3>
+<p>The default text format is markdown which allows a nice balance of the bot being able to express what they want and for the each channel to render as accurately as they can.</p>
+<p>The markdown that is supported:</p>
+<table class="doxtable">
+<tr>
+<th>Style </th><th>Markdown </th><th>Description </th><th>Example  </th></tr>
+<tr>
+<td><b>Bold</b> </td><td>**text** </td><td>make the text bold </td><td><b>text</b> </td></tr>
+<tr>
+<td><b>Italic</b> </td><td>*text* </td><td>make the text italic </td><td><em>text</em> </td></tr>
+<tr>
+<td><b>Header1-5</b> </td><td># H1 </td><td>Mark a line as a header </td><td>#H1 </td></tr>
+<tr>
+<td><b>Strikethrough</b> </td><td></td><td>make the text strikethrough </td><td>~~text~~ </td></tr>
+<tr>
+<td><b>Hr</b> </td><td>--- </td><td>insert a horizontal rule </td><td></td></tr>
+<tr>
+<td><b>Unordered list</b> </td><td>* </td><td>Make an unordered list item </td><td>* text </td></tr>
+<tr>
+<td><b>Ordered list</b> </td><td>1. </td><td>Make an ordered list item starting at 1 </td><td>1. text </td></tr>
+<tr>
+<td><b>Pre</b> </td><td>`text` </td><td>Preformatted text(can be inline) </td><td><code>text</code> </td></tr>
+<tr>
+<td><b>Block quote</b> </td><td>&gt; text </td><td>quote a section of text </td><td>&gt; text </td></tr>
+<tr>
+<td><b>link</b> </td><td>[bing](<a href="http://bing.com">http://bing.com</a>) </td><td>create a hyperlink with title </td><td><a href="http://bing.com">bing</a> </td></tr>
+<tr>
+<td><b>image link</b> </td><td>![duck](<a href="http://aka.ms/Fo983c">http://aka.ms/Fo983c</a>) </td><td>link to an image </td><td><div class="image">
+<img src="http://aka.ms/Fo983c"  alt="duck"/>
+</div>
+ </td></tr>
+</table>
+<h4>Markdown Paragraphs</h4>
+<p>As with most markdown systems, to represent a paragraph break you need to have a blank line.</p>
+<p>Markdown like this: </p><pre class="fragment">       This is
+       paragraph one
+
+       This is 
+       paragraph two
+</pre><p>Will be rendered as </p><pre class="fragment">       This is paragraph one
+       This is paragraph two
+</pre><h4>Markdown Fallback</h4>
+<p>Not all channels can represent all markdown fields. As appropriate channels will fallback to a reasonable approximation, for example, bold will be represented in text messaging as *bold*</p>
+<blockquote class="doxtable">
+<p>Tables: If you are communicating with a channel which supports fixed width fonts or HTML you can use standard table markdown, but because many channels (such as SMS) do not have a known display width and/or have variable width fonts it is not possible to render a table properly on all channels. </p>
+</blockquote>
+<h3><a class="anchor" id="xml"></a>
+XML</h3>
+<p>Skype supports a subset of HTML tags it calls XML Markup (sometimes referred to as XMM).</p>
+<p>The tags that are supported are:</p>
+<table class="doxtable">
+<tr>
+<th>Style </th><th>Markdown </th><th>Description </th><th>Example  </th></tr>
+<tr>
+<td><b>Bold</b> </td><td>&lt;b&gt;text&lt;/b&gt; </td><td>make the text bold </td><td><b>text</b> </td></tr>
+<tr>
+<td><b>Italic</b> </td><td>&lt;i&gt;text&lt;/i&gt; </td><td>make the text italic </td><td><em>text</em> </td></tr>
+<tr>
+<td><b>Underline</b> </td><td>&lt;u&gt;text&lt;/u&gt; </td><td>Mark a line as underline </td><td>text </td></tr>
+<tr>
+<td><b>Strikethrough</b> </td><td>&lt;s&gt;text&lt;/s&gt; </td><td>make the text strikethrough </td><td>text </td></tr>
+<tr>
+<td><b>link</b> </td><td>&lt;a href="http:bing.com"&gt;bing&lt;/a&gt; </td><td>create a hyperlink with title </td><td><a href="http://bing.com">bing</a> </td></tr>
+</table>
+<h2><a class="anchor" id="attachmentsproperty"></a>
+Attachments Property</h2>
+<p>The Attachments property is an array of Attachment objects which allow you to send and receive images and other content, including rich cards. The primary fields for an Attachment object are:</p>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Description </th><th>Example  </th></tr>
+<tr>
+<td><b>ContentType</b> </td><td>The contentType of the ContentUrl property</td><td>image/png </td></tr>
+<tr>
+<td><b>ContentUrl</b> </td><td>A link to content of type ContentType </td><td><a href="http://somedomain.com/cat.jpg">http://somedomain.com/cat.jpg</a> </td></tr>
+<tr>
+<td><b>Content</b> </td><td>An embedded object of type contentType </td><td>If contentType = "application/vnd.microsoft.hero" then Content would be a JSON object for the HeroCard </td></tr>
+</table>
+<p>Some channels allow you to represent a card responses made up of a title, link, description and images. There are multiple card formats, including HeroCard, ThumbnailCard, Receipt Card and Sign in. Additionally your card can optionally be displayed as a list or a carousel using the <b>AttachmentLayout</b> property of the Activity. See <a href="/en-us/csharp/builder/sdkreference/attachments.html">Attachments, Cards and Actions</a> for more info about Attachments.</p>
+<h2><a class="anchor" id="attachmentlayoutproperty"></a>
+AttachmentLayout property</h2>
+<p>You can send multiple rich card attachments in a single message. On most channels they will be sent as a list of rich cards, but some channels (like Skype and Facebook) can render them as a carousel of rich cards.</p>
+<p>As the developer you have the ability to control whether the list is rendered as a carousel or a vertical list using the <b>AttachmentLayout</b> property. </p><table class="doxtable">
+<tr>
+<th>AttachmentLayout Value </th><th>Description </th><th>Notes  </th></tr>
+<tr>
+<td><b>list</b> </td><td>Multiple attachments should be shown as a list</td><td><em>default</em> </td></tr>
+<tr>
+<td><b>carousel</b> </td><td>multiple attachments should be shown as a carousel if possible, else fall back to a list</td><td></td></tr>
+</table>
+<div class="fragment"><div class="line">Activity replyToConversation = message.CreateReply(<span class="stringliteral">&quot;Should go to conversation, with a carousel&quot;</span>);</div><div class="line">replyToConversation.Recipient = message.From;</div><div class="line">replyToConversation.Type = <span class="stringliteral">&quot;message&quot;</span>;</div><div class="line">replyToConversation.AttachmentLayout = AttachmentLayouts.Carousel;</div><div class="line">replyToConversation.Attachments = <span class="keyword">new</span> List&lt;Attachment&gt;();</div><div class="line"></div><div class="line">Dictionary&lt;string, string&gt; cardContentList = <span class="keyword">new</span> Dictionary&lt;string, string&gt;();</div><div class="line">cardContentList.Add(<span class="stringliteral">&quot;PigLatin&quot;</span>, <span class="stringliteral">&quot;https://&lt;ImageUrl1&gt;&quot;</span>);</div><div class="line">cardContentList.Add(<span class="stringliteral">&quot;Pork Shoulder&quot;</span>, <span class="stringliteral">&quot;https://&lt;ImageUrl2&gt;&quot;</span>);</div><div class="line">cardContentList.Add(<span class="stringliteral">&quot;Bacon&quot;</span>, <span class="stringliteral">&quot;https://&lt;ImageUrl3&gt;&quot;</span>);</div><div class="line"></div><div class="line"><span class="keywordflow">foreach</span>(KeyValuePair&lt;string, string&gt; cardContent <span class="keywordflow">in</span> cardContentList)</div><div class="line">{</div><div class="line">    List&lt;CardImage&gt; cardImages = <span class="keyword">new</span> List&lt;CardImage&gt;();</div><div class="line">    cardImages.Add(<span class="keyword">new</span> CardImage(url:cardContent.Value ));</div><div class="line"></div><div class="line">    List&lt;CardAction&gt; cardButtons = <span class="keyword">new</span> List&lt;CardAction&gt;();</div><div class="line"></div><div class="line">    CardAction plButton = <span class="keyword">new</span> CardAction()</div><div class="line">    {</div><div class="line">        <a class="code" href="de/d58/namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced.html#a95eb4c1ce6f0a9eb18da155b77311c91a689202409e48743b914713f96d93947c">Value</a> = $<span class="stringliteral">&quot;https://en.wikipedia.org/wiki/{cardContent.Key}&quot;</span>,</div><div class="line">        Type = <span class="stringliteral">&quot;openUrl&quot;</span>,</div><div class="line">        Title = <span class="stringliteral">&quot;WikiPedia Page&quot;</span></div><div class="line">    };</div><div class="line">    cardButtons.Add(plButton);</div><div class="line"></div><div class="line">    HeroCard plCard = <span class="keyword">new</span> HeroCard()</div><div class="line">    {</div><div class="line">        Title = $<span class="stringliteral">&quot;I&#39;m a hero card about {cardContent.Key}&quot;</span>,</div><div class="line">        Subtitle = $<span class="stringliteral">&quot;{cardContent.Key} Wikipedia Page&quot;</span>,</div><div class="line">        Images = cardImages,</div><div class="line">        <a class="code" href="dd/df7/namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow.html#ac6396117e96818e92b4892d316e326d9a5b3ec15499a125805b5bbf8e4afcec8c">Buttons</a> = cardButtons</div><div class="line">    };</div><div class="line"></div><div class="line">    Attachment plAttachment = plCard.ToAttachment();</div><div class="line">    replyToConversation.Attachments.Add(plAttachment);</div><div class="line">}</div><div class="line"></div><div class="line">replyToConversation.AttachmentLayout = AttachmentLayoutTypes.Carousel;</div><div class="line"></div><div class="line">var reply = await connector.Conversations.SendToConversationAsync(replyToConversation);</div></div><!-- fragment --><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;    ...</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&quot;attachmentLayout&quot;:&quot;carousel&quot;,</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;&quot;attachments&quot;: [</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    {</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;        &quot;contentType&quot;: &quot;application/vnd.microsoft.card.hero&quot;,</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;        &quot;content&quot;: {</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;            &quot;title&quot;: &quot;I&#39;m a hero card about Pig Latin&quot;,</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;            &quot;subtitle&quot;: &quot;PigLatin Wikipedia Page&quot;,</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;            &quot;images&quot;: [</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;            {</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                &quot;url&quot;: &quot;https://&lt;ImageUrl1&gt;&quot;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;            }</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;            ],</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            &quot;buttons&quot;: [</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                &quot;type&quot;: &quot;openUrl&quot;,</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                &quot;title&quot;: &quot;WikiPedia Page&quot;,</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                &quot;value&quot;: &quot;https://en.wikipedia.org/wiki/{cardContent.Key}&quot;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            }</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            ]</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        }</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        },</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        {</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        &quot;contentType&quot;: &quot;application/vnd.microsoft.card.hero&quot;,</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        &quot;content&quot;: {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            &quot;title&quot;: &quot;I&#39;m a hero card about pork shoulder&quot;,</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            &quot;subtitle&quot;: &quot;Pork Shoulder Wikipedia Page&quot;,</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            &quot;images&quot;: [</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            {</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                &quot;url&quot;: &quot;https://&lt;ImageUrl2&gt;&quot;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            }</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            ],</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            &quot;buttons&quot;: [</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            {</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                &quot;type&quot;: &quot;openUrl&quot;,</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                &quot;title&quot;: &quot;WikiPedia Page&quot;,</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                &quot;value&quot;: &quot;https://en.wikipedia.org/wiki/{cardContent.Key}&quot;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            }</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            ]</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        },</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        {</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        &quot;contentType&quot;: &quot;application/vnd.microsoft.card.hero&quot;,</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        &quot;content&quot;: {</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            &quot;title&quot;: &quot;I&#39;m a hero card about Bacon&quot;,</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            &quot;subtitle&quot;: &quot;Bacon Wikipedia Page&quot;,</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            &quot;images&quot;: [</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            {</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                &quot;url&quot;: &quot;https://&lt;ImageUrl3&gt;&quot;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            }</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            ],</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            &quot;buttons&quot;: [</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            {</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                &quot;type&quot;: &quot;openUrl&quot;,</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                &quot;title&quot;: &quot;WikiPedia Page&quot;,</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                &quot;value&quot;: &quot;https://en.wikipedia.org/wiki/{cardContent.Key}&quot;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            }</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            ]</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;],</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;...</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}   </div></div><!-- fragment --><h2><a class="anchor" id="entities"></a>
+Entities Property</h2>
+<p>The Entities property is an array of open ended <a href="http://schema.org">schema.org</a> objects which allows the exchange of common contextual metadata between the channel and bot.</p>
+<h3><a class="anchor" id="mentions"></a>
+Mention Entities</h3>
+<p>Many communication clients have mechanisms to "mention" someone. Knowing that someone is mentioned can be an important piece of information for a bot that the channel knows and needs to be able to pass to you.</p>
+<p>Frequently a bot needs to know that <b>they</b> were mentioned, but with some channels they don't always know what their name is on that channel. (again see Slack and Group me where names are assigned per conversation)</p>
+<p>To accommodate these needs the Entities property includes Mention objects, accessible through the GetMentions() method.</p>
+<blockquote class="doxtable">
+<p>The Mention object </p>
+</blockquote>
+<table class="doxtable">
+<tr>
+<th><b>Property</b> </th><th><b>Description</b>  </th></tr>
+<tr>
+<td><b>type</b> </td><td>type of the entity ("mention") </td></tr>
+<tr>
+<td><b>mentioned</b></td><td>ChannelAccount of the person or user who was mentioned </td></tr>
+<tr>
+<td><b>text</b> </td><td>the text in the Activity.Text property which represents the mention. (this can be empty or null) </td></tr>
+</table>
+<p>Example: The user on slack says:</p>
+<blockquote class="doxtable">
+<p>@ColorBot pick me a new color </p>
+</blockquote>
+<div class="fragment"><div class="line">{   </div><div class="line">    ...</div><div class="line">    <span class="stringliteral">&quot;entities&quot;</span>: [{ </div><div class="line">        <span class="stringliteral">&quot;type&quot;</span>:<span class="stringliteral">&quot;mention&quot;</span>,</div><div class="line">        <span class="stringliteral">&quot;mentioned&quot;</span>: { </div><div class="line">            <span class="stringliteral">&quot;id&quot;</span>: <span class="stringliteral">&quot;UV341235&quot;</span>, <span class="stringliteral">&quot;name&quot;</span>:<span class="stringliteral">&quot;Color Bot&quot;</span> </div><div class="line">        },</div><div class="line">        <span class="stringliteral">&quot;text&quot;</span>: <span class="stringliteral">&quot;@ColorBot&quot;</span> </div><div class="line">    }]</div><div class="line">    ...</div><div class="line">}</div></div><!-- fragment --><p>This allows the bot to know that they were mentioned and to ignore the  part of the input when trying to determine the user intent.</p>
+<blockquote class="doxtable">
+<p>NOTE: Mentions go both ways. A bot may want to mention a user in a reply to a conversation. If they fill out the Mentions object with the mention information then it allows the Channel to map it to the mentioning semantics of the channel. </p>
+</blockquote>
+<h3><a class="anchor" id="places"></a>
+Place Entities</h3>
+<p>Place represents information from <a href="https://schema.org/Place">https://schema.org/Place</a>. We currently send address and geographical information from the channels.</p>
+<p>The Connector client library defines two typed classes to make it easier to work with:</p>
+<blockquote class="doxtable">
+<p>The Place Object </p>
+</blockquote>
+<table class="doxtable">
+<tr>
+<th><b>Property</b> </th><th><b>Description</b>  </th></tr>
+<tr>
+<td><b>Type</b> </td><td>'Place' </td></tr>
+<tr>
+<td><b>Address</b> </td><td>string description or PostalAddress (future) </td></tr>
+<tr>
+<td><b>Geo</b> </td><td>GeoCoordinates </td></tr>
+<tr>
+<td><b>HasMap</b> </td><td>URL to a map or complex "Map" object (future) </td></tr>
+<tr>
+<td><b>Name</b> </td><td>Name of the place </td></tr>
+</table>
+<blockquote class="doxtable">
+<p>GeoCoordinates Object </p>
+</blockquote>
+<table class="doxtable">
+<tr>
+<th><b>Property</b> </th><th><b>Description</b>  </th></tr>
+<tr>
+<td><b>Type</b> </td><td>'GeoCoordinates' </td></tr>
+<tr>
+<td><b>Name</b> </td><td>Name of the place </td></tr>
+<tr>
+<td><b>Longitude</b> </td><td>Longitude of the location <a href="https://en.wikipedia.org/wiki/World**Geodetic**System">WGS 84</a> </td></tr>
+<tr>
+<td><b>Latitude</b> </td><td>Latitude of the location <a href="https://en.wikipedia.org/wiki/World**Geodetic**System">WGS 84</a> </td></tr>
+<tr>
+<td><b>Elevation</b> </td><td>Elevation of the location <a href="https://en.wikipedia.org/wiki/World_Geodetic_System">WGS 84</a> </td></tr>
+</table>
+<p>Example of adding Geo place data to Entities using strong types: </p><div class="fragment"><div class="line">var entity = <span class="keyword">new</span> Entity();</div><div class="line">entity.SetAs(<span class="keyword">new</span> Place()</div><div class="line">{</div><div class="line">    Geo = <span class="keyword">new</span> GeoCoordinates()</div><div class="line">    {</div><div class="line">        Latitude = 32.4141,</div><div class="line">        Longitude = 43.1123123,</div><div class="line">    }</div><div class="line">});</div><div class="line">entities.Add(entity);</div></div><!-- fragment --><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&quot;entities&quot;:[</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    {</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;      &quot;type&quot;: &quot;Place&quot;,</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;      &quot;geo&quot;: {</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;        &quot;latitude&quot;: 32.4141,</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;        &quot;longitude&quot;: 43.1123123,</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        &quot;type&quot;: &quot;GeoCoordinates&quot;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;      }</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    }</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;]</div></div><!-- fragment --><p>When consuming entities you can use dynamic keyword like this: </p><div class="fragment"><div class="line"><span class="keywordflow">if</span> (entity.Type == <span class="stringliteral">&quot;Place&quot;</span>)</div><div class="line">{</div><div class="line">    dynamic place = entity.Properties;</div><div class="line">    <span class="keywordflow">if</span> (place.geo.latitude &gt; 34)</div><div class="line">        <span class="comment">// do something</span></div><div class="line">}</div></div><!-- fragment --><p>Or you can use the strongly typed classes like this: </p><div class="fragment"><div class="line"><span class="keywordflow">if</span> (entity.Type == <span class="stringliteral">&quot;Place&quot;</span>)</div><div class="line">{</div><div class="line">    Place place = entity.GetAs&lt;Place&gt;();</div><div class="line">    GeoCoordinates geo = place.Geo.ToObject&lt;GeoCoordinates&gt;();</div><div class="line">    <span class="keywordflow">if</span> (geo.Latitude &gt; 34)</div><div class="line">        <span class="comment">// do something</span></div><div class="line">}   </div></div><!-- fragment --><h2><a class="anchor" id="channeldataproperty"></a>
+ChannelData Property</h2>
+<p>With the combination of the Attachments section below the common message schema gives you a rich palette to describe your response in way that allows your message to "just work" across a variety of channels.</p>
+<p>If you want to be able to take advantage of special features or concepts for a channel we provide a way for you to send native metadata to that channel giving you much deeper control over how your bot interacts on a channel. The way you do this is to pass extra properties via the <em>ChannelData</em> property.</p>
+<p>Go to <a href="/en-us/csharp/builder/sdkreference/channels.html">ChannelData in Messages</a> for more detailed description of what each channel enables via the ChannelData Property.</p>
+<h1><a class="anchor" id="conversationUpdate"></a>
+Conversation Update</h1>
+<blockquote class="doxtable">
+<p>the membership or metadata of a conversation involving the bot changed </p>
+</blockquote>
+<p>Your bot often needs to know when the state of the conversation it's in has changed. This may represent the bot being added to the conversation, or a person added or remove from the chat. When these changes happen, your bot will receive a conversationUpdate Activity.</p>
+<p>Conversation Update properties </p><table class="doxtable">
+<tr>
+<th><b>Properties</b> </th><th><b>Description</b>  </th></tr>
+<tr>
+<td><b>MembersAdded</b> </td><td>array of ChannelAccount[] for the added accounts </td></tr>
+<tr>
+<td><b>MembersRemoved</b> </td><td>array of ChannelAccount[] for the removed accounts </td></tr>
+</table>
+<p>In this event, the membersAdded and membersRemoved lists will contain the changes to the conversation since the last event. One of the members may be the <a class="el" href="d5/d61/namespace_microsoft_1_1_bot.html">Bot</a>; which can be tested for by comparing the membersAdded[n].id field with the recipient.id field.</p>
+<p>conversationUpdate is a great opportunity for the Bot to send welcome messages to users.</p>
+<h1><a class="anchor" id="contactrelationupdate"></a>
+Contact Relation Update</h1>
+<blockquote class="doxtable">
+<p>The bot was added to or removed from a user's contact list </p>
+</blockquote>
+<p>For some channels your bot can be a member of the user's contact list on that chat service (Skype for example). In the event the channel supports this action, it can notify the Bot that this has occurred. When this event is delivered, the <b>Action</b> property will indicate whether the operation was an <b>add</b> or a <b>remove</b>.</p>
+<table class="doxtable">
+<tr>
+<th><b>Action values</b> </th><th><b>Description</b>  </th></tr>
+<tr>
+<td><b>add</b> </td><td>if the user in the From property added the bot to their contacts </td></tr>
+<tr>
+<td><b>remove</b> </td><td>if the user in the From property removed the bot from their contacts </td></tr>
+</table>
+<h1><a class="anchor" id="typing"></a>
+Typing</h1>
+<blockquote class="doxtable">
+<p>A message that indicates that the user or Bot is typing </p>
+</blockquote>
+<p>Typing is an indicator of activity on the other side of the conversation. Generally it's used by Bots to cover "dead air" while the bot is fulfilling a request of some sort. The Bot may also receive Typing messages from the user, for whatever purposes it might find useful.</p>
+<h1><a class="anchor" id="ping"></a>
+Ping</h1>
+<blockquote class="doxtable">
+<p>A message that is used to test that a Bot has implemented security correctly </p>
+</blockquote>
+<p>The bot receiving this should not send any response except for the HttpStatusCode response of OK, Forbidden or Unauthorized</p>
+<h1><a class="anchor" id="deleteuserdata"></a>
+Delete User Data</h1>
+<blockquote class="doxtable">
+<p>A compliance request from the the user to delete any profile / user data </p>
+</blockquote>
+<p>Bots have access to users conversation data. Many countries have legal requirements that a user has the ability to request their data to be dropped. If you receive a message of this type you should remove any personally identifiable information (PII) for the user. </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.11-->
+<!-- start footer part -->
+<!-- id is needed for treeview function! -->
+<div class="outline footer">
+    <ul>
+        <li><a href="//aka.ms/bf-contactus">Contact us</a></li>
+        <li><a href="//aka.ms/bf-privacy">Privacy & cookies</a></li>
+        <li><a href="//aka.ms/bf-terms">Terms of use</a></li>
+        <li><a href="//aka.ms/bf-conduct">Code of conduct</a></li>
+        <li>&copy; 2016 Microsoft</li>
+    </ul>
+</div>
+<script src="//bot-framework.azureedge.net/libs/svgxuse.js"></script>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100954936); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100954936ns.gif" /></p></noscript>
+</body>
+</html>

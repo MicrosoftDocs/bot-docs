@@ -1,0 +1,5 @@
+<map id="Microsoft.Bot.Builder.Azure.TableLogger" name="Microsoft.Bot.Builder.Azure.TableLogger">
+<area shape="rect" id="node2" href="$d2/d77/interface_microsoft_1_1_bot_1_1_builder_1_1_history_1_1_i_activity_logger.html" title="Log message activities between bots and users. " alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node3" href="$dd/dde/interface_microsoft_1_1_bot_1_1_builder_1_1_history_1_1_i_activity_source.html" title="Interface for getting activities from some source. " alt="" coords="137,5,245,32"/>
+<area shape="rect" id="node4" href="$dc/d06/interface_microsoft_1_1_bot_1_1_builder_1_1_history_1_1_i_activity_manager.html" title="Interface for managing activity history. " alt="" coords="269,5,387,32"/>
+</map>

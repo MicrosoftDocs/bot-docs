@@ -1,0 +1,365 @@
+<!-- HTML header for doxygen 1.8.11-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Microsoft.Bot.Builder.Luis.Extensions Class Reference | Bot Builder SDK C# Reference Library | Bot Framework</title>
+    <link href="../../tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../jquery.js"></script>
+    <script type="text/javascript" src="../../dynsections.js"></script>
+    <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+    <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="../../botframework.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/css/documentation.css?1" />
+    <script type="text/javascript" src="/css/documents.js"></script>
+    <!-- START OF SmartSource Data Collector TAG v10.4.23 -->
+    <!-- Copyright (c) 2016 Webtrends Inc.  All rights reserved. -->
+    <script type="text/javascript" src="/js/webtrends.load.js"></script>
+    <!--
+      appInsights
+    -->
+    <script type="text/javascript">
+    var appInsights=window.appInsights||function(config){
+      function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+      }({
+          instrumentationKey:"ecf7f29d-de8c-4169-a492-bdce0a32c300"
+      });
+      window.appInsights=appInsights;
+      appInsights.trackPageView();
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var sidenav = $('#side-nav');
+            sidenav.before('<div id="content-container" class="outline"></div>');
+            var doccontent = $('#doc-content');
+			var contentcontainer = $('#content-container');
+            contentcontainer.append(sidenav);
+            contentcontainer.append(doccontent);
+            doccontent.prepend($('#referenceSearch'));
+			var top = $('#top');
+			top.before('<div class="fullWidth"></div>');
+			var fullwidth = $('div.fullWidth');
+			fullwidth.before('<div id="app-body"></div>');
+			fullwidth.append(top);
+			fullwidth.append(contentcontainer);
+			fullwidth.append($('.footer'));
+			var appbody = $('#app-body');
+			appbody.append(fullwidth);
+			var navtreecontents = $('#nav-tree-contents');
+			navtreecontents.prepend('<ul><li><div class="label"><a href="/">&lt; Documentation Home</a></div></li></ul>');
+			//sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            //sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><select id="lang-select" name="lang" ><option value="">All</option><option value="node">Node.js</option><option value="csharp">.NET</option></select><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            setProgrammingLanguage();
+			$('#MSearchField').removeAttr('value').attr('placeholder', 'Search the Bot Builder SDK C# reference');
+        });
+    </script>
+</head>
+<body>
+    <div id="referenceSearch"></div>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div>
+            <header>
+                <div class="outline">
+                    <div class="header">
+                        <a class="logo" href="//www.microsoft.com">
+                            <svg class="svgicon svgicon-microsoft-color-logo">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/symbol-defs.svg#svgicon-microsoft-color-logo"></use>
+                            </svg>
+                        </a>
+                        <div class="loading-animation"></div>
+                        <span class="environment"></span>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="brand-primary">
+                <div class="jumbo">
+                    <div class="jumbo-header"><a href="https://www.botframework.com/">Bot Framework</a></div>
+                    <ul class="header-nav">
+                        <li><a href="https://dev.botframework.com/#/bots">My bots</a></li>
+                        <li><a href="https://dev.botframework.com/#/bots/new">Register a bot</a></li>
+                        <li class="active"><a href="/">Documentation</a></li>
+                        <li><a href="https://bots.botframework.com/">Bot Directory</a></li>
+                        <li><a href="https://blog.botframework.com/">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header part -->
+</body>
+</html><!-- Generated by Doxygen 1.8.11 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('df/d78/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_extensions.html','../../');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="../../d0/d73/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_extensions-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">Microsoft.Bot.Builder.Luis.Extensions Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>LUIS extension methods.  
+ <a href="../../df/d78/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_extensions.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a9e6dfc71b087fdd8f49b07a5784e4e33"><td class="memItemLeft" align="right" valign="top">static DayPart&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d78/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_extensions.html#a9e6dfc71b087fdd8f49b07a5784e4e33">Next</a> (this DayPart part)</td></tr>
+<tr class="memdesc:a9e6dfc71b087fdd8f49b07a5784e4e33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the next DayPart.  <a href="#a9e6dfc71b087fdd8f49b07a5784e4e33">More...</a><br /></td></tr>
+<tr class="separator:a9e6dfc71b087fdd8f49b07a5784e4e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a680a8d80487e1df498fd6b5d42f0ea83"><td class="memItemLeft" align="right" valign="top">static IEnumerable&lt; <a class="el" href="../../dc/d54/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_resolution.html">Resolution</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d78/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_extensions.html#a680a8d80487e1df498fd6b5d42f0ea83">ParseResolutions</a> (this <a class="el" href="../../d3/dba/interface_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_i_resolution_parser.html">IResolutionParser</a> parser, IEnumerable&lt; <a class="el" href="../../d7/d66/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_models_1_1_entity_recommendation.html">EntityRecommendation</a> &gt; entities)</td></tr>
+<tr class="memdesc:a680a8d80487e1df498fd6b5d42f0ea83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse all resolutions from a LUIS result.  <a href="#a680a8d80487e1df498fd6b5d42f0ea83">More...</a><br /></td></tr>
+<tr class="separator:a680a8d80487e1df498fd6b5d42f0ea83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab418315c2e322677694d08f0b988969"><td class="memItemLeft" align="right" valign="top">static async Task&lt; <a class="el" href="../../dc/dbe/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_models_1_1_luis_result.html">LuisResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d78/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_extensions.html#aab418315c2e322677694d08f0b988969">QueryAsync</a> (this <a class="el" href="../../d7/dd1/interface_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_i_luis_service.html">ILuisService</a> service, string text, CancellationToken token)</td></tr>
+<tr class="memdesc:aab418315c2e322677694d08f0b988969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the LUIS service using this text.  <a href="#aab418315c2e322677694d08f0b988969">More...</a><br /></td></tr>
+<tr class="separator:aab418315c2e322677694d08f0b988969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18b9c64ab91e3314a86375e2490fc0d4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d78/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_extensions.html#a18b9c64ab91e3314a86375e2490fc0d4">TryFindEntity</a> (this <a class="el" href="../../dc/dbe/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_models_1_1_luis_result.html">LuisResult</a> result, string type, out <a class="el" href="../../d7/d66/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_models_1_1_entity_recommendation.html">EntityRecommendation</a> entity)</td></tr>
+<tr class="memdesc:a18b9c64ab91e3314a86375e2490fc0d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to find an entity within the result.  <a href="#a18b9c64ab91e3314a86375e2490fc0d4">More...</a><br /></td></tr>
+<tr class="separator:a18b9c64ab91e3314a86375e2490fc0d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>LUIS extension methods. </p>
+
+<p>Definition at line <a class="el" href="../../d4/df1/_luis_2_extensions_8cs_source.html#l00045">45</a> of file <a class="el" href="../../d4/df1/_luis_2_extensions_8cs_source.html">Luis/Extensions.cs</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a9e6dfc71b087fdd8f49b07a5784e4e33"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static DayPart Microsoft.Bot.Builder.Luis.Extensions.Next </td>
+          <td>(</td>
+          <td class="paramtype">this DayPart&#160;</td>
+          <td class="paramname"><em>part</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the next DayPart. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">part</td><td>The DayPart query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The next DayPart after the query.</dd></dl>
+
+<p>Definition at line <a class="el" href="../../d4/df1/_luis_2_extensions_8cs_source.html#l00086">86</a> of file <a class="el" href="../../d4/df1/_luis_2_extensions_8cs_source.html">Luis/Extensions.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a680a8d80487e1df498fd6b5d42f0ea83"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static IEnumerable&lt;<a class="el" href="../../dc/d54/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_resolution.html">Resolution</a>&gt; Microsoft.Bot.Builder.Luis.Extensions.ParseResolutions </td>
+          <td>(</td>
+          <td class="paramtype">this <a class="el" href="../../d3/dba/interface_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_i_resolution_parser.html">IResolutionParser</a>&#160;</td>
+          <td class="paramname"><em>parser</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IEnumerable&lt; <a class="el" href="../../d7/d66/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_models_1_1_entity_recommendation.html">EntityRecommendation</a> &gt;&#160;</td>
+          <td class="paramname"><em>entities</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parse all resolutions from a LUIS result. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parser</td><td>The resolution parser.</td></tr>
+    <tr><td class="paramname">entities</td><td>The LUIS entities.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The parsed resolutions.</dd></dl>
+
+<p>Definition at line <a class="el" href="../../d4/df1/_luis_2_extensions_8cs_source.html#l00066">66</a> of file <a class="el" href="../../d4/df1/_luis_2_extensions_8cs_source.html">Luis/Extensions.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aab418315c2e322677694d08f0b988969"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static async Task&lt;<a class="el" href="../../dc/dbe/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_models_1_1_luis_result.html">LuisResult</a>&gt; Microsoft.Bot.Builder.Luis.Extensions.QueryAsync </td>
+          <td>(</td>
+          <td class="paramtype">this <a class="el" href="../../d7/dd1/interface_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_i_luis_service.html">ILuisService</a>&#160;</td>
+          <td class="paramname"><em>service</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CancellationToken&#160;</td>
+          <td class="paramname"><em>token</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Query the LUIS service using this text. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">service</td><td>LUIS service.</td></tr>
+    <tr><td class="paramname">text</td><td>The query text.</td></tr>
+    <tr><td class="paramname">token</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The LUIS result.</dd></dl>
+
+<p>Definition at line <a class="el" href="../../d6/da6/_luis_service_8cs_source.html#l00167">167</a> of file <a class="el" href="../../d6/da6/_luis_service_8cs_source.html">LuisService.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a18b9c64ab91e3314a86375e2490fc0d4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool Microsoft.Bot.Builder.Luis.Extensions.TryFindEntity </td>
+          <td>(</td>
+          <td class="paramtype">this <a class="el" href="../../dc/dbe/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_models_1_1_luis_result.html">LuisResult</a>&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out <a class="el" href="../../d7/d66/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_models_1_1_entity_recommendation.html">EntityRecommendation</a>&#160;</td>
+          <td class="paramname"><em>entity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Try to find an entity within the result. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">result</td><td>The LUIS result.</td></tr>
+    <tr><td class="paramname">type</td><td>The entity type.</td></tr>
+    <tr><td class="paramname">entity</td><td>The found entity.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the entity was found, false otherwise.</dd></dl>
+
+<p>Definition at line <a class="el" href="../../d4/df1/_luis_2_extensions_8cs_source.html#l00054">54</a> of file <a class="el" href="../../d4/df1/_luis_2_extensions_8cs_source.html">Luis/Extensions.cs</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="../../d4/df1/_luis_2_extensions_8cs_source.html">Luis/Extensions.cs</a></li>
+<li><a class="el" href="../../d6/da6/_luis_service_8cs_source.html">LuisService.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.11-->
+<!-- start footer part -->
+<!-- id is needed for treeview function! -->
+<div class="outline footer">
+    <ul>
+        <li><a href="//aka.ms/bf-contactus">Contact us</a></li>
+        <li><a href="//aka.ms/bf-privacy">Privacy & cookies</a></li>
+        <li><a href="//aka.ms/bf-terms">Terms of use</a></li>
+        <li><a href="//aka.ms/bf-conduct">Code of conduct</a></li>
+        <li>&copy; 2016 Microsoft</li>
+    </ul>
+</div>
+<script src="//bot-framework.azureedge.net/libs/svgxuse.js"></script>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100954936); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100954936ns.gif" /></p></noscript>
+</body>
+</html>

@@ -1,0 +1,1583 @@
+<!-- HTML header for doxygen 1.8.11-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Class Hierarchy | Bot Builder SDK C# Reference Library | Bot Framework</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="botframework.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/css/documentation.css?1" />
+    <script type="text/javascript" src="/css/documents.js"></script>
+    <!-- START OF SmartSource Data Collector TAG v10.4.23 -->
+    <!-- Copyright (c) 2016 Webtrends Inc.  All rights reserved. -->
+    <script type="text/javascript" src="/js/webtrends.load.js"></script>
+    <!--
+      appInsights
+    -->
+    <script type="text/javascript">
+    var appInsights=window.appInsights||function(config){
+      function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+      }({
+          instrumentationKey:"ecf7f29d-de8c-4169-a492-bdce0a32c300"
+      });
+      window.appInsights=appInsights;
+      appInsights.trackPageView();
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var sidenav = $('#side-nav');
+            sidenav.before('<div id="content-container" class="outline"></div>');
+            var doccontent = $('#doc-content');
+			var contentcontainer = $('#content-container');
+            contentcontainer.append(sidenav);
+            contentcontainer.append(doccontent);
+            doccontent.prepend($('#referenceSearch'));
+			var top = $('#top');
+			top.before('<div class="fullWidth"></div>');
+			var fullwidth = $('div.fullWidth');
+			fullwidth.before('<div id="app-body"></div>');
+			fullwidth.append(top);
+			fullwidth.append(contentcontainer);
+			fullwidth.append($('.footer'));
+			var appbody = $('#app-body');
+			appbody.append(fullwidth);
+			var navtreecontents = $('#nav-tree-contents');
+			navtreecontents.prepend('<ul><li><div class="label"><a href="/">&lt; Documentation Home</a></div></li></ul>');
+			//sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            //sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><select id="lang-select" name="lang" ><option value="">All</option><option value="node">Node.js</option><option value="csharp">.NET</option></select><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            setProgrammingLanguage();
+			$('#MSearchField').removeAttr('value').attr('placeholder', 'Search the Bot Builder SDK C# reference');
+        });
+    </script>
+</head>
+<body>
+    <div id="referenceSearch"></div>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div>
+            <header>
+                <div class="outline">
+                    <div class="header">
+                        <a class="logo" href="//www.microsoft.com">
+                            <svg class="svgicon svgicon-microsoft-color-logo">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/symbol-defs.svg#svgicon-microsoft-color-logo"></use>
+                            </svg>
+                        </a>
+                        <div class="loading-animation"></div>
+                        <span class="environment"></span>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="brand-primary">
+                <div class="jumbo">
+                    <div class="jumbo-header"><a href="https://www.botframework.com/">Bot Framework</a></div>
+                    <ul class="header-nav">
+                        <li><a href="https://dev.botframework.com/#/bots">My bots</a></li>
+                        <li><a href="https://dev.botframework.com/#/bots/new">Register a bot</a></li>
+                        <li class="active"><a href="/">Documentation</a></li>
+                        <li><a href="https://bots.botframework.com/">Bot Directory</a></li>
+                        <li><a href="https://blog.botframework.com/">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header part -->
+</body>
+</html><!-- Generated by Doxygen 1.8.11 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('hierarchy.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">Class Hierarchy</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock">
+<p><a href="hierarchy.html">Go to the textual class hierarchy</a></p>
+</div><table border="0" cellspacing="10" cellpadding="0">
+<tr><td><img src="inherit_graph_0.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_azure_8_extensions"/>
+<map name="_microsoft_8_bot_8_builder_8_azure_8_extensions" id="_microsoft_8_bot_8_builder_8_azure_8_extensions">
+<area shape="rect" id="node1" href="d1/d31/class_microsoft_1_1_bot_1_1_builder_1_1_azure_1_1_extensions.html" title="Microsoft.Bot.Builder.Azure.\lExtensions" alt="" coords="5,5,191,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_1.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_azure_8_table_logger_8_activity_entity"/>
+<map name="_microsoft_8_bot_8_builder_8_azure_8_table_logger_8_activity_entity" id="_microsoft_8_bot_8_builder_8_azure_8_table_logger_8_activity_entity">
+<area shape="rect" id="node2" href="db/d4b/class_microsoft_1_1_bot_1_1_builder_1_1_azure_1_1_table_logger_1_1_activity_entity.html" title="Activity entity for table storage. " alt="" coords="140,5,325,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_2.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_calling_bot_service_settings"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_calling_bot_service_settings" id="_microsoft_8_bot_8_builder_8_calling_8_calling_bot_service_settings">
+<area shape="rect" id="node1" href="d7/d5e/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_calling_bot_service_settings.html" title="Microsoft.Bot.Builder.Calling.\lCallingBotServiceSettings" alt="" coords="5,5,196,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_3.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_calling_context"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_calling_context" id="_microsoft_8_bot_8_builder_8_calling_8_calling_context">
+<area shape="rect" id="node1" href="de/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_calling_context.html" title="The context for this request. It is reponsible in parsing the calling request before calling into ICa..." alt="" coords="5,5,196,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_4.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_calling_conversation"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_calling_conversation" id="_microsoft_8_bot_8_builder_8_calling_8_calling_conversation">
+<area shape="rect" id="node1" href="d6/d56/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_calling_conversation.html" title="The top level composition root for calling SDK. " alt="" coords="5,5,196,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_5.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_calling_module"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_calling_module" id="_microsoft_8_bot_8_builder_8_calling_8_calling_module">
+<area shape="rect" id="node2" href="d0/d23/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_calling_module.html" title="Autofac module for Calling components. " alt="" coords="117,5,308,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_6.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_events_8_incoming_call_event"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_events_8_incoming_call_event" id="_microsoft_8_bot_8_builder_8_calling_8_events_8_incoming_call_event">
+<area shape="rect" id="node1" href="df/dbb/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_events_1_1_incoming_call_event.html" title="Microsoft.Bot.Builder.Calling.\lEvents.IncomingCallEvent" alt="" coords="5,5,196,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_7.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_events_8_outcome_event_base"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_events_8_outcome_event_base" id="_microsoft_8_bot_8_builder_8_calling_8_events_8_outcome_event_base">
+<area shape="rect" id="node1" href="d3/d8e/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_events_1_1_outcome_event_base.html" title="Microsoft.Bot.Builder.Calling.\lEvents.OutcomeEventBase" alt="" coords="5,201,196,243"/>
+<area shape="rect" id="node2" href="d2/d91/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_events_1_1_answer_outcome_event.html" title="Microsoft.Bot.Builder.Calling.\lEvents.AnswerOutcomeEvent" alt="" coords="277,5,471,47"/>
+<area shape="rect" id="node3" href="db/dac/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_events_1_1_hangup_outcome_event.html" title="Microsoft.Bot.Builder.Calling.\lEvents.HangupOutcomeEvent" alt="" coords="277,71,471,112"/>
+<area shape="rect" id="node4" href="d8/de7/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_events_1_1_play_prompt_outcome_event.html" title="Microsoft.Bot.Builder.Calling.\lEvents.PlayPromptOutcomeEvent" alt="" coords="265,136,483,177"/>
+<area shape="rect" id="node5" href="d9/d79/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_events_1_1_recognize_outcome_event.html" title="Microsoft.Bot.Builder.Calling.\lEvents.RecognizeOutcomeEvent" alt="" coords="269,201,479,243"/>
+<area shape="rect" id="node6" href="da/df1/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_events_1_1_record_outcome_event.html" title="Microsoft.Bot.Builder.Calling.\lEvents.RecordOutcomeEvent" alt="" coords="279,267,469,308"/>
+<area shape="rect" id="node7" href="d8/d60/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_events_1_1_reject_outcome_event.html" title="Microsoft.Bot.Builder.Calling.\lEvents.RejectOutcomeEvent" alt="" coords="279,332,469,373"/>
+<area shape="rect" id="node8" href="d0/d98/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_events_1_1_workflow_validation_outcome_event.html" title="Microsoft.Bot.Builder.Calling.\lEvents.WorkflowValidationOutcomeEvent" alt="" coords="244,397,504,439"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_8.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_exceptions_8_bot_exception"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_exceptions_8_bot_exception" id="_microsoft_8_bot_8_builder_8_calling_8_exceptions_8_bot_exception">
+<area shape="rect" id="node2" href="db/d0f/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_exceptions_1_1_bot_exception.html" title="base exceptions for all exceptions thrown by the bots core library " alt="" coords="155,71,346,112"/>
+<area shape="rect" id="node5" href="d6/dc6/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_dialog_stack_exception.html" title="The root of the exception hierarchy related to Internals.IDialogStack . " alt="" coords="153,168,348,209"/>
+<area shape="rect" id="node8" href="df/df5/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_exception.html" title="The root of the exception hierarchy related to prompts. " alt="" coords="153,233,348,275"/>
+<area shape="rect" id="node10" href="dc/d1c/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_binding_1_1_method_resolution_exception.html" title="Microsoft.Bot.Builder.Internals.\lScorables.Binding.MethodResolution\lException" alt="" coords="133,299,368,355"/>
+<area shape="rect" id="node3" href="db/d9d/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_exceptions_1_1_bot_calling_service_exception.html" title="Microsoft.Bot.Builder.Calling.\lExceptions.BotCallingServiceException" alt="" coords="416,5,667,47"/>
+<area shape="rect" id="node4" href="d4/d75/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_exceptions_1_1_bot_configuration_exception.html" title="Exception type thrown when the bot configuration is invalid " alt="" coords="419,71,663,112"/>
+<area shape="rect" id="node6" href="dd/df2/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_multiple_resume_handler_exception.html" title="The exception representing multiple resume handlers specified for the dialog stack. " alt="" coords="433,136,650,177"/>
+<area shape="rect" id="node7" href="d0/dcb/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_no_resume_handler_exception.html" title="The exception representing no resume handler specified for the dialog stack. " alt="" coords="444,201,639,243"/>
+<area shape="rect" id="node9" href="d7/df8/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_too_many_attempts_exception.html" title="The exception representing too many attempts by the user to answer the question asked by the prompt..." alt="" coords="444,267,639,308"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_9.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_i_calling_bot"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_i_calling_bot" id="_microsoft_8_bot_8_builder_8_calling_8_i_calling_bot">
+<area shape="rect" id="node1" href="d4/da0/interface_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_i_calling_bot.html" title="The calling bot interface. " alt="" coords="5,5,196,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_10.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_i_calling_bot_service"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_i_calling_bot_service" id="_microsoft_8_bot_8_builder_8_calling_8_i_calling_bot_service">
+<area shape="rect" id="node1" href="d3/dcc/interface_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_i_calling_bot_service.html" title="Microsoft.Bot.Builder.Calling.\lICallingBotService" alt="" coords="5,5,196,47"/>
+<area shape="rect" id="node2" href="da/d10/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_calling_bot_service.html" title="Microsoft.Bot.Builder.Calling.\lCallingBotService" alt="" coords="244,5,435,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_11.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_action_base"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_action_base" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_action_base">
+<area shape="rect" id="node1" href="d6/db1/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_action_base.html" title="Base class for various actions " alt="" coords="5,169,232,211"/>
+<area shape="rect" id="node2" href="de/d99/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_answer.html" title="This is the action which customers can specify to indicate that the server call agent should accept t..." alt="" coords="292,5,495,47"/>
+<area shape="rect" id="node3" href="d2/dbb/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_hangup.html" title="This is the action which customers can specify to indicate that the server call agent should hangup t..." alt="" coords="292,71,495,112"/>
+<area shape="rect" id="node4" href="d2/d86/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_play_prompt.html" title="This is the action which customers can specify to indicate that the server call agent should play/tts..." alt="" coords="280,136,507,177"/>
+<area shape="rect" id="node5" href="d9/d2c/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_recognize.html" title="This is the action which customers can specify to indicate that the server call agent should perform ..." alt="" coords="283,201,503,243"/>
+<area shape="rect" id="node6" href="d6/d62/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_record.html" title="This is the action which customers can specify to indicate that the server call agent should start re..." alt="" coords="293,267,493,308"/>
+<area shape="rect" id="node7" href="db/dd6/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_reject.html" title="This is the action which customers can specify to indicate that the server call agent should reject t..." alt="" coords="295,332,491,373"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_12.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_base_message"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_base_message" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_base_message">
+<area shape="rect" id="node1" href="dd/d5f/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_base_message.html" title="Base message wrapper for all API messages. The format is: { type: (type&#45;of&#45;message), to: (to&#45;user&#45;MRI), from: (from&#45;user&#45;MRI), (optional additional&#45;message&#45;specific&#45;properties), (optional additional&#45;message&#45;specific&#45;properties), (optional additional&#45;message&#45;specific&#45;properties), } " alt="" coords="5,13,248,54"/>
+<area shape="rect" id="node2" href="d0/de3/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_agent_contact_notification.html" title="Message type for notifying agents that a user has added or removed them. " alt="" coords="296,5,535,61"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_13.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_callback_link"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_callback_link" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_callback_link">
+<area shape="rect" id="node1" href="d6/d95/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_callback_link.html" title="Microsoft.Bot.Builder.Calling.\lObjectModel.Contracts.CallbackLink" alt="" coords="5,5,239,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_14.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_choice_outcome"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_choice_outcome" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_choice_outcome">
+<area shape="rect" id="node1" href="db/d80/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_choice_outcome.html" title="This is a part of the &quot;recognize&quot; action outcome. This is specified if the customer had specified any..." alt="" coords="5,5,257,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_15.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_collect_digits"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_collect_digits" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_collect_digits">
+<area shape="rect" id="node1" href="dd/d77/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_collect_digits.html" title="This is part of the &quot;recognize&quot; action. If the customer wants to collect digits &#45; this needs to be sp..." alt="" coords="5,5,237,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_16.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_collect_digits_outcome"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_collect_digits_outcome" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_collect_digits_outcome">
+<area shape="rect" id="node1" href="dd/d6d/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_collect_digits_outcome.html" title="This is a part of the &quot;recognize&quot; action outcome. This is specified if the customer had specified any..." alt="" coords="5,5,237,61"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_17.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_conversation_base"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_conversation_base" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_conversation_base">
+<area shape="rect" id="node1" href="db/dff/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_conversation_base.html" title="This base class defines a subset of properties which define a conversation. Conversation class derive..." alt="" coords="5,79,268,120"/>
+<area shape="rect" id="node2" href="d9/d32/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_conversation.html" title="This defines the set of the properties that define a conversation. A conversation includes participan..." alt="" coords="326,5,559,47"/>
+<area shape="rect" id="node3" href="de/d12/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_conversation_result.html" title="Once we have peformed the &quot;actions&quot; requested by the customer, we POST back to customer callback Url ..." alt="" coords="326,71,559,127"/>
+<area shape="rect" id="node4" href="d9/dc0/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_notification_base.html" title="This base class defines a subset of properties which define a notification. CallStateNotification and..." alt="" coords="316,152,569,193"/>
+<area shape="rect" id="node5" href="d5/d59/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_call_state_change_notification.html" title="This concrete class defines the call state change notification schema. " alt="" coords="617,145,873,201"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_18.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_notification_response"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_notification_response" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_notification_response">
+<area shape="rect" id="node1" href="df/dc9/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_notification_response.html" title="This class contains the response the customer sent for the notification POST to their callback url..." alt="" coords="5,5,228,61"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_19.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_operation_outcome_base"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_operation_outcome_base" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_operation_outcome_base">
+<area shape="rect" id="node1" href="dc/d27/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_operation_outcome_base.html" title="Base class for various &quot;action(s)&quot; outcome(s) " alt="" coords="5,217,304,259"/>
+<area shape="rect" id="node2" href="d5/dd5/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_answer_outcome.html" title="This is the outcome of the &quot;answer&quot; action. This is conveyed to the customer as POST to the customer ..." alt="" coords="361,5,616,47"/>
+<area shape="rect" id="node3" href="d5/db2/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_hangup_outcome.html" title="This is the outcome of the &quot;hangup&quot; action. This is conveyed to the customer as POST to the customer ..." alt="" coords="361,71,617,112"/>
+<area shape="rect" id="node4" href="d1/de8/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_play_prompt_outcome.html" title="This is the outcome of the &quot;playPrompt&quot; action. This is conveyed to the customer as POST to the custo..." alt="" coords="375,137,602,193"/>
+<area shape="rect" id="node5" href="df/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_recognize_outcome.html" title="This is the outcome of the &quot;recognize&quot; action. This is conveyed to the customer as POST to the custom..." alt="" coords="352,217,625,259"/>
+<area shape="rect" id="node6" href="d1/d28/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_record_outcome.html" title="This is the outcome of the &quot;record&quot; action. This is conveyed to the customer as POST to the customer ..." alt="" coords="362,283,615,324"/>
+<area shape="rect" id="node7" href="d3/d19/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_reject_outcome.html" title="This is the outcome of the &quot;reject&quot; action. This is conveyed to the customer as POST to the customer ..." alt="" coords="364,348,613,389"/>
+<area shape="rect" id="node8" href="db/d84/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_workflow_validation_outcome.html" title="If the customer&#39;s &quot;response&quot; fails validation, this is the outcome conveyed to the customer as POST t..." alt="" coords="354,414,623,470"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_20.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_participant"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_participant" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_participant">
+<area shape="rect" id="node1" href="d6/d7b/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_participant.html" title="This class describes a participant. This can be a participant in any modality in a 2 or multi&#45;party c..." alt="" coords="5,5,227,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_21.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_prompt"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_prompt" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_prompt">
+<area shape="rect" id="node1" href="d8/d59/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_prompt.html" title="This class represents a single prompt " alt="" coords="5,5,207,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_22.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_recognition_option"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_recognition_option" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_recognition_option">
+<area shape="rect" id="node1" href="d4/d15/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_recognition_option.html" title="This is part of the &quot;recognize&quot; action. If the customer wants to speech/dtmf choice based recognition..." alt="" coords="5,5,232,61"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_23.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_valid_actions"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_valid_actions" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_valid_actions">
+<area shape="rect" id="node1" href="de/d95/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_valid_actions.html" title="This is a helper class for validating actions specified by customers " alt="" coords="5,5,237,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_24.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_valid_dtmfs"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_valid_dtmfs" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_valid_dtmfs">
+<area shape="rect" id="node1" href="d5/d22/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_valid_dtmfs.html" title="This is a helper class for validating dtmfs specified in strings " alt="" coords="5,5,228,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_25.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_valid_outcomes"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_valid_outcomes" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_valid_outcomes">
+<area shape="rect" id="node1" href="dc/d82/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_valid_outcomes.html" title="This is a helper class for validating outcomes. This can be used by customers or by us (before we sen..." alt="" coords="5,5,253,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_26.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_workflow"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_workflow" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_contracts_8_workflow">
+<area shape="rect" id="node1" href="de/d14/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_workflow.html" title="This class contains the workflow the customer sent for the OnInComingCall POST or any subsequent POST..." alt="" coords="5,5,217,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_27.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_application_state"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_application_state" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_application_state">
+<area shape="rect" id="node1" href="de/d79/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_application_state.html" title="Microsoft.Bot.Builder.Calling.\lObjectModel.Misc.ApplicationState" alt="" coords="5,5,232,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_28.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_j_s_o_n_constants"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_j_s_o_n_constants" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_j_s_o_n_constants">
+<area shape="rect" id="node1" href="da/dad/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_j_s_o_n_constants.html" title="Microsoft.Bot.Builder.Calling.\lObjectModel.Misc.JSONConstants" alt="" coords="5,5,229,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_29.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_json_creation_converter_3_01_action_base_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_json_creation_converter_3_01_action_base_01_4" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_json_creation_converter_3_01_action_base_01_4">
+<area shape="rect" id="node1" href="d6/d88/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_json_creation_converter.html" title="Microsoft.Bot.Builder.Calling.\lObjectModel.Misc.JsonCreationConverter\l\&lt; ActionBase \&gt;" alt="" coords="5,5,265,61"/>
+<area shape="rect" id="node2" href="dd/d3f/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_action_converter.html" title="By default Json.net doesn&#39;t know how to deserialize JSON data into Interfaces or abstract classes..." alt="" coords="313,13,564,54"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_30.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_json_creation_converter_3_01_notification_base_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_json_creation_converter_3_01_notification_base_01_4" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_json_creation_converter_3_01_notification_base_01_4">
+<area shape="rect" id="node1" href="d6/d88/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_json_creation_converter.html" title="Microsoft.Bot.Builder.Calling.\lObjectModel.Misc.JsonCreationConverter\l\&lt; NotificationBase \&gt;" alt="" coords="5,5,265,61"/>
+<area shape="rect" id="node2" href="d0/da5/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_notification_converter.html" title="By default Json.net doesn&#39;t know how to deserialize JSON data into Interfaces or abstract classes..." alt="" coords="313,5,536,61"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_31.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_json_creation_converter_3_01_operation_outcome_base_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_json_creation_converter_3_01_operation_outcome_base_01_4" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_json_creation_converter_3_01_operation_outcome_base_01_4">
+<area shape="rect" id="node1" href="d6/d88/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_json_creation_converter.html" title="Microsoft.Bot.Builder.Calling.\lObjectModel.Misc.JsonCreationConverter\l\&lt; OperationOutcomeBase \&gt;" alt="" coords="5,5,265,61"/>
+<area shape="rect" id="node2" href="d0/d32/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_operation_outcome_converter.html" title="By default Json.net doesn&#39;t know how to deserialize JSON data into Interfaces or abstract classes..." alt="" coords="313,5,581,61"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_32.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_json_creation_converter_3_01_t_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_json_creation_converter_3_01_t_01_4" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_json_creation_converter_3_01_t_01_4">
+<area shape="rect" id="node2" href="d6/d88/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_json_creation_converter.html" title="Helper class to use for deserializing where the concrete classes are determined by checking propertie..." alt="" coords="156,5,447,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_33.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_max_values"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_max_values" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_max_values">
+<area shape="rect" id="node1" href="dd/de1/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_max_values.html" title="Microsoft.Bot.Builder.Calling.\lObjectModel.Misc.MaxValues" alt="" coords="5,5,201,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_34.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_min_values"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_min_values" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_min_values">
+<area shape="rect" id="node1" href="dd/d60/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_min_values.html" title="Microsoft.Bot.Builder.Calling.\lObjectModel.Misc.MinValues" alt="" coords="5,5,197,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_35.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_multi_part_constants"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_multi_part_constants" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_multi_part_constants">
+<area shape="rect" id="node1" href="d5/d42/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_multi_part_constants.html" title="Microsoft.Bot.Builder.Calling.\lObjectModel.Misc.MultiPartConstants" alt="" coords="5,5,248,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_36.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_serializer"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_serializer" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_serializer">
+<area shape="rect" id="node1" href="d9/d80/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer.html" title="Helper class for serializing/deserializing " alt="" coords="5,5,196,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_37.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_string_enum_converter_with_default_3_01_t_enum_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_string_enum_converter_with_default_3_01_t_enum_01_4" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_string_enum_converter_with_default_3_01_t_enum_01_4">
+<area shape="rect" id="node2" href="d7/d72/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_string_enum_converter_with_default.html" title="Specialized StringEnumConverter that returns the default enum value instead of throwing if the string..." alt="" coords="197,5,451,61"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_38.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_utils"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_utils" id="_microsoft_8_bot_8_builder_8_calling_8_object_model_8_misc_8_utils">
+<area shape="rect" id="node1" href="d4/d77/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_utils.html" title="Utils class " alt="" coords="5,5,196,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_39.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_calling_8_parsed_calling_request"/>
+<map name="_microsoft_8_bot_8_builder_8_calling_8_parsed_calling_request" id="_microsoft_8_bot_8_builder_8_calling_8_parsed_calling_request">
+<area shape="rect" id="node1" href="d0/dc2/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_parsed_calling_request.html" title="The parsed calling request " alt="" coords="5,5,196,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_40.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_connector_ex_8_facebook_message"/>
+<map name="_microsoft_8_bot_8_builder_8_connector_ex_8_facebook_message" id="_microsoft_8_bot_8_builder_8_connector_ex_8_facebook_message">
+<area shape="rect" id="node1" href="de/df1/class_microsoft_1_1_bot_1_1_builder_1_1_connector_ex_1_1_facebook_message.html" title="Facebook message format for quick reply. " alt="" coords="5,5,212,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_41.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_connector_ex_8_facebook_quick_reply"/>
+<map name="_microsoft_8_bot_8_builder_8_connector_ex_8_facebook_quick_reply" id="_microsoft_8_bot_8_builder_8_connector_ex_8_facebook_quick_reply">
+<area shape="rect" id="node1" href="df/d41/class_microsoft_1_1_bot_1_1_builder_1_1_connector_ex_1_1_facebook_quick_reply.html" title="Facebook quick reply. See https://developers.facebook.com/docs/messenger&#45;platform/send&#45;api&#45;reference/..." alt="" coords="5,5,212,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_42.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_connector_ex_8_facebook_quick_reply_8_content_types"/>
+<map name="_microsoft_8_bot_8_builder_8_connector_ex_8_facebook_quick_reply_8_content_types" id="_microsoft_8_bot_8_builder_8_connector_ex_8_facebook_quick_reply_8_content_types">
+<area shape="rect" id="node1" href="d5/d08/class_microsoft_1_1_bot_1_1_builder_1_1_connector_ex_1_1_facebook_quick_reply_1_1_content_types.html" title="Microsoft.Bot.Builder.Connector\lEx.FacebookQuickReply.ContentTypes" alt="" coords="5,5,256,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_43.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_connector_ex_8_keyboard_card"/>
+<map name="_microsoft_8_bot_8_builder_8_connector_ex_8_keyboard_card" id="_microsoft_8_bot_8_builder_8_connector_ex_8_keyboard_card">
+<area shape="rect" id="node1" href="d1/daa/class_microsoft_1_1_bot_1_1_builder_1_1_connector_ex_1_1_keyboard_card.html" title="Card representing a keyboard " alt="" coords="5,5,212,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_44.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_connector_ex_8_keyboard_card_ex"/>
+<map name="_microsoft_8_bot_8_builder_8_connector_ex_8_keyboard_card_ex" id="_microsoft_8_bot_8_builder_8_connector_ex_8_keyboard_card_ex">
+<area shape="rect" id="node1" href="d7/d86/class_microsoft_1_1_bot_1_1_builder_1_1_connector_ex_1_1_keyboard_card_ex.html" title="Extension methods for KeyboardCard " alt="" coords="5,5,212,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_45.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_case_3_01string_00_01_r_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_case_3_01string_00_01_r_01_4" id="_microsoft_8_bot_8_builder_8_dialogs_8_case_3_01string_00_01_r_01_4">
+<area shape="rect" id="node1" href="dc/d29/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_case.html" title="Microsoft.Bot.Builder.Dialogs.\lCase\&lt; string, R \&gt;" alt="" coords="5,5,200,47"/>
+<area shape="rect" id="node2" href="d0/d38/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_regex_case.html" title="The regex case for switch. " alt="" coords="248,5,443,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_46.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_chain"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_chain" id="_microsoft_8_bot_8_builder_8_dialogs_8_chain">
+<area shape="rect" id="node1" href="de/dab/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_chain.html" title="A fluent, chainable interface for IDialogs. " alt="" coords="5,5,200,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_47.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_chain_8_where_canceled_exception"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_chain_8_where_canceled_exception" id="_microsoft_8_bot_8_builder_8_dialogs_8_chain_8_where_canceled_exception">
+<area shape="rect" id="node2" href="de/d53/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_chain_1_1_where_canceled_exception.html" title="The exception that is thrown when the where is canceled. " alt="" coords="253,5,462,47"/>
+<area shape="rect" id="node3" href="db/db6/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_canceled_exception.html" title="Exception generated when form filling is canceled by user quit or exception. " alt="" coords="244,71,471,112"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_48.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_command_dialog_3_01_t_01_4_8_command"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_command_dialog_3_01_t_01_4_8_command" id="_microsoft_8_bot_8_builder_8_dialogs_8_command_dialog_3_01_t_01_4_8_command">
+<area shape="rect" id="node1" href="db/d81/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_command_dialog_1_1_command.html" title="A single command. " alt="" coords="5,5,216,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_49.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_conversation"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_conversation" id="_microsoft_8_bot_8_builder_8_dialogs_8_conversation">
+<area shape="rect" id="node1" href="d9/de8/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_conversation.html" title="The top level composition root for the SDK. " alt="" coords="5,5,200,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_50.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_conversation_address_comparer"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_conversation_address_comparer" id="_microsoft_8_bot_8_builder_8_dialogs_8_conversation_address_comparer">
+<area shape="rect" id="node2" href="d0/dbd/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_conversation_address_comparer.html" title="Compare two Address instances for equality, excluding the user information. " alt="" coords="181,5,381,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_51.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_extensions"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_extensions" id="_microsoft_8_bot_8_builder_8_dialogs_8_extensions">
+<area shape="rect" id="node1" href="d9/de5/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_extensions.html" title="Helper methods. " alt="" coords="5,5,200,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_52.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_i_awaitable_3_01out_01out_01_t_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_i_awaitable_3_01out_01out_01_t_01_4" id="_microsoft_8_bot_8_builder_8_dialogs_8_i_awaitable_3_01out_01out_01_t_01_4">
+<area shape="rect" id="node1" href="d9/d4e/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_awaitable.html" title="Explicit interface to support the compiling of async/await. " alt="" coords="5,5,200,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_53.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_i_awaitable_3_01_t_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_i_awaitable_3_01_t_01_4" id="_microsoft_8_bot_8_builder_8_dialogs_8_i_awaitable_3_01_t_01_4">
+<area shape="rect" id="node1" href="d9/d4e/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_awaitable.html" title="Microsoft.Bot.Builder.Dialogs.\lIAwaitable\&lt; T \&gt;" alt="" coords="5,5,200,47"/>
+<area shape="rect" id="node2" href="d9/d6f/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_item.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IItem\&lt; out out T \&gt;" alt="" coords="248,5,448,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_54.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_i_bot_data_bag"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_i_bot_data_bag" id="_microsoft_8_bot_8_builder_8_dialogs_8_i_bot_data_bag">
+<area shape="rect" id="node1" href="d7/dea/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_bot_data_bag.html" title="A property bag of bot data. " alt="" coords="5,5,200,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_55.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_i_case_3_01in_01in_01_t_00_01_r_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_i_case_3_01in_01in_01_t_00_01_r_01_4" id="_microsoft_8_bot_8_builder_8_dialogs_8_i_case_3_01in_01in_01_t_00_01_r_01_4">
+<area shape="rect" id="node1" href="d8/d03/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_case.html" title="The interface for cases evaluated by switch. " alt="" coords="5,5,200,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_56.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_i_case_3_01_t_00_01_r_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_i_case_3_01_t_00_01_r_01_4" id="_microsoft_8_bot_8_builder_8_dialogs_8_i_case_3_01_t_00_01_r_01_4">
+<area shape="rect" id="node1" href="d8/d03/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_case.html" title="Microsoft.Bot.Builder.Dialogs.\lICase\&lt; T, R \&gt;" alt="" coords="5,5,200,47"/>
+<area shape="rect" id="node2" href="dc/d29/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_case.html" title="The default implementation of ICase&lt;T, R&gt;. " alt="" coords="248,5,443,47"/>
+<area shape="rect" id="node3" href="d3/dcb/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_default_case.html" title="The default case for switch. ICase&lt;T, R&gt; " alt="" coords="491,5,685,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_57.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_i_channel_capability"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_i_channel_capability" id="_microsoft_8_bot_8_builder_8_dialogs_8_i_channel_capability">
+<area shape="rect" id="node1" href="dd/da5/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_channel_capability.html" title="Capability for a specific channel " alt="" coords="5,5,200,47"/>
+<area shape="rect" id="node2" href="d0/d50/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_channel_capability.html" title="Microsoft.Bot.Builder.Dialogs.\lChannelCapability" alt="" coords="248,5,443,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_58.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_i_detect_channel_capability"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_i_detect_channel_capability" id="_microsoft_8_bot_8_builder_8_dialogs_8_i_detect_channel_capability">
+<area shape="rect" id="node1" href="d4/d23/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_detect_channel_capability.html" title="Channel capability detector. " alt="" coords="5,5,200,47"/>
+<area shape="rect" id="node2" href="d9/d6d/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_detect_channel_capability.html" title="Microsoft.Bot.Builder.Dialogs.\lDetectChannelCapability" alt="" coords="248,5,443,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_59.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_i_dialog_3_01_connector_8_i_message_activity_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_i_dialog_3_01_connector_8_i_message_activity_01_4" id="_microsoft_8_bot_8_builder_8_dialogs_8_i_dialog_3_01_connector_8_i_message_activity_01_4">
+<area shape="rect" id="node1" href="dd/d5e/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog.html" title="Microsoft.Bot.Builder.Dialogs.\lIDialog\&lt; Connector.IMessageActivity \&gt;" alt="" coords="5,5,252,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_60.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_i_dialog_3_01_i_enumerable_3_01_microsoft_8_bot_8_builder_8_dialogs_8_i_dialog_3_01_t_01_4_01_4_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_i_dialog_3_01_i_enumerable_3_01_microsoft_8_bot_8_builder_8_dialogs_8_i_dialog_3_01_t_01_4_01_4_01_4" id="_microsoft_8_bot_8_builder_8_dialogs_8_i_dialog_3_01_i_enumerable_3_01_microsoft_8_bot_8_builder_8_dialogs_8_i_dialog_3_01_t_01_4_01_4_01_4">
+<area shape="rect" id="node1" href="dd/d5e/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog.html" title="Microsoft.Bot.Builder.Dialogs.\lIDialog\&lt; IEnumerable\&lt; Microsoft.\lBot.Builder.Dialogs.IDialog\&lt; T \&gt; \&gt; \&gt;" alt="" coords="5,5,236,61"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_61.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_i_dialog_3_01_microsoft_8_bot_8_builder_8_dialogs_8_i_dialog_3_01_t_01_4_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_i_dialog_3_01_microsoft_8_bot_8_builder_8_dialogs_8_i_dialog_3_01_t_01_4_01_4" id="_microsoft_8_bot_8_builder_8_dialogs_8_i_dialog_3_01_microsoft_8_bot_8_builder_8_dialogs_8_i_dialog_3_01_t_01_4_01_4">
+<area shape="rect" id="node1" href="dd/d5e/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog.html" title="Microsoft.Bot.Builder.Dialogs.\lIDialog\&lt; Microsoft.Bot.Builder.Dialogs.\lIDialog\&lt; T \&gt; \&gt;" alt="" coords="5,5,251,61"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_62.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_i_dialog_3_01out_01out_01_t_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_i_dialog_3_01out_01out_01_t_01_4" id="_microsoft_8_bot_8_builder_8_dialogs_8_i_dialog_3_01out_01out_01_t_01_4">
+<area shape="rect" id="node1" href="dd/d5e/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog.html" title="A IDialog&lt;T&gt; is a suspendable conversational process that produces a result of type T ..." alt="" coords="5,5,200,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_63.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_i_dialog_3_01_r_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_i_dialog_3_01_r_01_4" id="_microsoft_8_bot_8_builder_8_dialogs_8_i_dialog_3_01_r_01_4">
+<area shape="rect" id="node1" href="dd/d5e/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog.html" title="Microsoft.Bot.Builder.Dialogs.\lIDialog\&lt; R \&gt;" alt="" coords="5,39,200,80"/>
+<area shape="rect" id="node2" href="d9/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_dispatch_dialog.html" title="A dialog specialized to dispatch an IScorable. " alt="" coords="248,5,443,47"/>
+<area shape="rect" id="node3" href="d8/df9/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_luis_dialog.html" title="A dialog specialized to handle intents and entities from LUIS. " alt="" coords="248,71,443,112"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_64.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_bot_data_bag_stream"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_bot_data_bag_stream" id="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_bot_data_bag_stream">
+<area shape="rect" id="node2" href="d4/d2d/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_bot_data_bag_stream.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.BotDataBagStream" alt="" coords="164,5,359,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_65.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_bot_data_base_3_01_j_object_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_bot_data_base_3_01_j_object_01_4" id="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_bot_data_base_3_01_j_object_01_4">
+<area shape="rect" id="node1" href="de/df5/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_bot_data_base.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.BotDataBase\&lt; JObject \&gt;" alt="" coords="5,5,225,47"/>
+<area shape="rect" id="node2" href="d0/def/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_j_object_bot_data.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.JObjectBotData" alt="" coords="273,5,468,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_66.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_dialog_task_8_i_thunk"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_dialog_task_8_i_thunk" id="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_dialog_task_8_i_thunk">
+<area shape="rect" id="node1" href="df/dd0/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_dialog_task_1_1_i_thunk.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.DialogTask.IThunk" alt="" coords="5,5,200,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_67.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_dictionary_bot_data"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_dictionary_bot_data" id="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_dictionary_bot_data">
+<area shape="rect" id="node2" href="dd/dbd/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_dictionary_bot_data.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.DictionaryBotData" alt="" coords="223,5,417,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_68.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_extensions"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_extensions" id="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_extensions">
+<area shape="rect" id="node1" href="d8/d2d/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_extensions.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.Extensions" alt="" coords="5,5,200,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_69.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_i_bot_data_store_3_01_bot_data_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_i_bot_data_store_3_01_bot_data_01_4" id="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_i_bot_data_store_3_01_bot_data_01_4">
+<area shape="rect" id="node1" href="dc/d4c/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_i_bot_data_store.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.IBotDataStore\&lt;\l BotData \&gt;" alt="" coords="5,63,200,119"/>
+<area shape="rect" id="node2" href="d5/dc5/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_caching_bot_data_store.html" title="Caches data for BotDataBase&lt;T&gt; and wraps the data in BotData to be stored in CachingBotDataStore.inner " alt="" coords="248,5,448,47"/>
+<area shape="rect" id="node3" href="d8/d45/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_connector_store.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.ConnectorStore" alt="" coords="251,71,445,112"/>
+<area shape="rect" id="node4" href="df/d92/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_in_memory_data_store.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.InMemoryDataStore" alt="" coords="251,136,445,177"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_70.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_i_bot_data_store_3_01_t_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_i_bot_data_store_3_01_t_01_4" id="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_i_bot_data_store_3_01_t_01_4">
+<area shape="rect" id="node1" href="dc/d4c/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_i_bot_data_store.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.IBotDataStore\&lt; T \&gt;" alt="" coords="5,5,200,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_71.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_i_connector_client_factory"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_i_connector_client_factory" id="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_i_connector_client_factory">
+<area shape="rect" id="node1" href="db/de6/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_i_connector_client_factory.html" title="Factory for IConnectorClient. " alt="" coords="5,5,220,47"/>
+<area shape="rect" id="node2" href="d8/d82/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_connector_client_factory.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.ConnectorClientFactory" alt="" coords="268,5,479,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_72.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_i_dialog_task_manager"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_i_dialog_task_manager" id="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_i_dialog_task_manager">
+<area shape="rect" id="node1" href="d3/d6c/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_i_dialog_task_manager.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.IDialogTaskManager" alt="" coords="5,5,200,47"/>
+<area shape="rect" id="node2" href="db/dfb/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_dialog_task_manager.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.DialogTaskManager" alt="" coords="248,5,443,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_73.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_i_message_activity_mapper"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_i_message_activity_mapper" id="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_i_message_activity_mapper">
+<area shape="rect" id="node1" href="d4/dbf/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_i_message_activity_mapper.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.IMessageActivityMapper" alt="" coords="5,5,221,47"/>
+<area shape="rect" id="node2" href="d5/dd2/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_keyboard_card_mapper.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.KeyboardCardMapper" alt="" coords="269,5,469,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_74.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_i_post_to_bot"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_i_post_to_bot" id="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_i_post_to_bot">
+<area shape="rect" id="node1" href="db/d9b/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_i_bot_data.html" title="Private bot data. " alt="" coords="5,79,200,120"/>
+<area shape="rect" id="node2" href="d1/d29/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_bot_context.html" title="The context for the bot. " alt="" coords="269,152,463,193"/>
+<area shape="rect" id="node5" href="de/df5/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_bot_data_base.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.BotDataBase\&lt; T \&gt;" alt="" coords="269,5,463,47"/>
+<area shape="rect" id="node6" href="d4/d36/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_dialog_task_manager_bot_data_loader.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.DialogTaskManagerBotData\lLoader" alt="" coords="248,71,484,127"/>
+<area shape="rect" id="node3" href="d1/dc6/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog_context.html" title="The context for the execution of a dialog&#39;s conversational process. " alt="" coords="565,152,759,193"/>
+<area shape="rect" id="node4" href="de/df0/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_dialog_context.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.DialogContext" alt="" coords="840,152,1035,193"/>
+<area shape="rect" id="node7" href="d9/d2c/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_i_bot_to_user.html" title="Methods to send a message from the bot to the user. " alt="" coords="5,627,200,668"/>
+<area shape="rect" id="node8" href="dc/dcb/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_always_send_direct___bot_to_user.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.AlwaysSendDirect\l_BotToUser" alt="" coords="269,513,463,569"/>
+<area shape="rect" id="node9" href="d1/dcc/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_bot_to_user_queue.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.BotToUserQueue" alt="" coords="269,593,463,635"/>
+<area shape="rect" id="node10" href="d0/d2f/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_bot_to_user_text_writer.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.BotToUserTextWriter" alt="" coords="268,659,464,700"/>
+<area shape="rect" id="node11" href="dd/d6a/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_log_bot_to_user.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.LogBotToUser" alt="" coords="269,724,463,765"/>
+<area shape="rect" id="node12" href="dc/d40/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_map_to_channel_data___bot_to_user.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.MapToChannelData\l_BotToUser" alt="" coords="269,790,463,846"/>
+<area shape="rect" id="node13" href="de/db4/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_i_dialog_stack.html" title="The stack of dialogs in the conversational process. " alt="" coords="269,217,463,259"/>
+<area shape="rect" id="node14" href="d8/da9/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_i_dialog_task.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.IDialogTask" alt="" coords="565,217,759,259"/>
+<area shape="rect" id="node15" href="db/d87/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_dialog_task.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.DialogTask" alt="" coords="840,217,1035,259"/>
+<area shape="rect" id="node16" href="d4/d38/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_i_post_to_bot.html" title="Methods to send a message from the user to the bot. " alt="" coords="269,447,463,488"/>
+<area shape="rect" id="node17" href="df/d6a/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_exception_translation_dialog_task.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.ExceptionTranslationDialogTask" alt="" coords="532,283,792,324"/>
+<area shape="rect" id="node18" href="d2/d80/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_localized_dialog_task.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.LocalizedDialogTask" alt="" coords="565,348,759,389"/>
+<area shape="rect" id="node19" href="dd/d25/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_log_post_to_bot.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.LogPostToBot" alt="" coords="565,413,759,455"/>
+<area shape="rect" id="node20" href="de/d6a/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_persistent_dialog_task.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.PersistentDialogTask" alt="" coords="563,479,761,520"/>
+<area shape="rect" id="node21" href="df/de5/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_post_unhandled_exception_to_user_task.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.PostUnhandledException\lToUserTask" alt="" coords="551,545,773,601"/>
+<area shape="rect" id="node22" href="d4/d57/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_reactive_dialog_task.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.ReactiveDialogTask" alt="" coords="565,625,759,667"/>
+<area shape="rect" id="node23" href="d8/de1/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_scoring_dialog_task.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.ScoringDialogTask\l\&lt; Score \&gt;" alt="" coords="565,691,759,747"/>
+<area shape="rect" id="node24" href="d2/de0/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_serializing_dialog_task.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.SerializingDialogTask" alt="" coords="563,772,761,813"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_75.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_prompt_3_01bool_00_01string_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_prompt_3_01bool_00_01string_01_4" id="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_prompt_3_01bool_00_01string_01_4">
+<area shape="rect" id="node1" href="d7/d1c/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_prompt.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.Prompt\&lt; bool, string \&gt;" alt="" coords="5,5,211,47"/>
+<area shape="rect" id="node2" href="dd/d7e/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog_1_1_prompt_confirm.html" title="Prompt for a confirmation. " alt="" coords="259,5,453,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_76.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_prompt_3_01double_00_01double_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_prompt_3_01double_00_01double_01_4" id="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_prompt_3_01double_00_01double_01_4">
+<area shape="rect" id="node1" href="d7/d1c/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_prompt.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.Prompt\&lt; double,\l double \&gt;" alt="" coords="5,5,200,61"/>
+<area shape="rect" id="node2" href="d9/d63/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog_1_1_prompt_double.html" title="Prompt for a double. " alt="" coords="248,13,443,54"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_77.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_prompt_3_01_i_enumerable_3_01_attachment_01_4_00_01_attachment_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_prompt_3_01_i_enumerable_3_01_attachment_01_4_00_01_attachment_01_4" id="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_prompt_3_01_i_enumerable_3_01_attachment_01_4_00_01_attachment_01_4">
+<area shape="rect" id="node1" href="d7/d1c/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_prompt.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.Prompt\&lt; IEnumerable\l\&lt; Attachment \&gt;, Attachment \&gt;" alt="" coords="5,5,207,61"/>
+<area shape="rect" id="node2" href="d5/d9a/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog_1_1_prompt_attachment.html" title="Prompt for an attachment" alt="" coords="255,13,468,54"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_78.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_prompt_3_01_int64_00_01_int64_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_prompt_3_01_int64_00_01_int64_01_4" id="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_prompt_3_01_int64_00_01_int64_01_4">
+<area shape="rect" id="node1" href="d7/d1c/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_prompt.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.Prompt\&lt; Int64,\l Int64 \&gt;" alt="" coords="5,5,200,61"/>
+<area shape="rect" id="node2" href="d4/d27/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog_1_1_prompt_int64.html" title="Prompt for a confirmation. " alt="" coords="248,13,443,54"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_79.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_prompt_3_01string_00_01string_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_prompt_3_01string_00_01string_01_4" id="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_prompt_3_01string_00_01string_01_4">
+<area shape="rect" id="node1" href="d7/d1c/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_prompt.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.Prompt\&lt; string,\l string \&gt;" alt="" coords="5,5,200,61"/>
+<area shape="rect" id="node2" href="d3/d39/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog_1_1_prompt_string.html" title="Prompt for a text string. " alt="" coords="248,13,443,54"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_80.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_prompt_3_01_t_00_01_t_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_prompt_3_01_t_00_01_t_01_4" id="_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_prompt_3_01_t_00_01_t_01_4">
+<area shape="rect" id="node1" href="d7/d1c/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_prompt.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.Prompt\&lt; T, T \&gt;" alt="" coords="5,5,200,47"/>
+<area shape="rect" id="node2" href="dc/df9/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog_1_1_prompt_choice.html" title="Prompt for a choice from a set of choices. " alt="" coords="248,5,465,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_81.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_invalid_intent_handler_exception"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_invalid_intent_handler_exception" id="_microsoft_8_bot_8_builder_8_dialogs_8_invalid_intent_handler_exception">
+<area shape="rect" id="node2" href="dd/d61/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_invalid_intent_handler_exception.html" title="An exception for invalid intent handlers. " alt="" coords="227,5,421,47"/>
+<area shape="rect" id="node3" href="d4/daa/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_invalid_wait_exception.html" title="Microsoft.Bot.Builder.Internals.\lFibers.InvalidWaitException" alt="" coords="224,71,424,112"/>
+<area shape="rect" id="node4" href="d5/d03/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_invalid_need_exception.html" title="Microsoft.Bot.Builder.Internals.\lFibers.InvalidNeedException" alt="" coords="472,5,672,47"/>
+<area shape="rect" id="node5" href="d6/db6/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_invalid_next_exception.html" title="Microsoft.Bot.Builder.Internals.\lFibers.InvalidNextException" alt="" coords="472,71,672,112"/>
+<area shape="rect" id="node6" href="db/dc5/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_invalid_type_exception.html" title="Microsoft.Bot.Builder.Internals.\lFibers.InvalidTypeException" alt="" coords="472,136,672,177"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_82.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_luis_service_result"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_luis_service_result" id="_microsoft_8_bot_8_builder_8_dialogs_8_luis_service_result">
+<area shape="rect" id="node1" href="d4/d02/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_luis_service_result.html" title="Matches a LuisResult object with the best scored IntentRecommendation of the LuisResult. " alt="" coords="5,5,200,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_83.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_prompt_dialog"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_prompt_dialog" id="_microsoft_8_bot_8_builder_8_dialogs_8_prompt_dialog">
+<area shape="rect" id="node1" href="d9/d03/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog.html" title="Dialog factory for simple prompts. " alt="" coords="5,5,200,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_84.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_prompt_options_3_01_t_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_prompt_options_3_01_t_01_4" id="_microsoft_8_bot_8_builder_8_dialogs_8_prompt_options_3_01_t_01_4">
+<area shape="rect" id="node1" href="d0/d89/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_options.html" title="Options for PromptDialog. " alt="" coords="5,5,200,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_85.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_prompt_options_3_01_u_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_prompt_options_3_01_u_01_4" id="_microsoft_8_bot_8_builder_8_dialogs_8_prompt_options_3_01_u_01_4">
+<area shape="rect" id="node1" href="d0/d89/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_options.html" title="Microsoft.Bot.Builder.Dialogs.\lPromptOptions\&lt; U \&gt;" alt="" coords="5,5,200,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_86.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_prompt_styler"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_prompt_styler" id="_microsoft_8_bot_8_builder_8_dialogs_8_prompt_styler">
+<area shape="rect" id="node1" href="dd/de0/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_styler.html" title="Styles a prompt " alt="" coords="5,5,200,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_87.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_url_token"/>
+<map name="_microsoft_8_bot_8_builder_8_dialogs_8_url_token" id="_microsoft_8_bot_8_builder_8_dialogs_8_url_token">
+<area shape="rect" id="node1" href="d7/d6b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_url_token.html" title="Allow object instances to serialized to URLs. Base64 can not be stored in URLs due to special charact..." alt="" coords="5,5,200,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_88.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_extensions"/>
+<map name="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_extensions" id="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_extensions">
+<area shape="rect" id="node1" href="d7/d6d/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_extensions.html" title="Microsoft.Bot.Builder.Form\lFlow.Advanced.Extensions" alt="" coords="5,5,184,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_89.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_field_3_01_j_object_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_field_3_01_j_object_01_4" id="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_field_3_01_j_object_01_4">
+<area shape="rect" id="node1" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html" title="Microsoft.Bot.Builder.Form\lFlow.Advanced.Field\&lt; JObject \&gt;" alt="" coords="5,5,215,47"/>
+<area shape="rect" id="node2" href="d1/db2/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_json_1_1_field_json.html" title="Field defined through JSON Schema. " alt="" coords="263,5,440,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_90.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_form_button"/>
+<map name="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_form_button" id="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_form_button">
+<area shape="rect" id="node2" href="d3/dde/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_form_button.html" title="A Form button that will be mapped to Connector.Action. " alt="" coords="138,5,319,47"/>
+<area shape="rect" id="node3" href="d6/df8/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_form_prompt.html" title="The prompt that is returned by form prompter. " alt="" coords="136,71,321,112"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_91.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_i_field_3_01_j_object_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_i_field_3_01_j_object_01_4" id="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_i_field_3_01_j_object_01_4">
+<area shape="rect" id="node1" href="d5/d09/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_field.html" title="Microsoft.Bot.Builder.Form\lFlow.Advanced.IField\&lt; JObject \&gt;" alt="" coords="5,5,217,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_92.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_i_fields_3_01_t_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_i_fields_3_01_t_01_4" id="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_i_fields_3_01_t_01_4">
+<area shape="rect" id="node2" href="d6/df2/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_fields.html" title="Interface to track all of the fields in a form. " alt="" coords="191,5,373,47"/>
+<area shape="rect" id="node3" href="d9/d37/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_fields.html" title="Dictionary of all fields indexed by name. " alt="" coords="421,5,600,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_93.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_i_field_state_3_01_t_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_i_field_state_3_01_t_01_4" id="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_i_field_state_3_01_t_01_4">
+<area shape="rect" id="node1" href="d3/d64/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_field_description.html" title="Describe the information displayed about a field and its values. " alt="" coords="9,5,219,47"/>
+<area shape="rect" id="node2" href="d5/d09/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_field.html" title="Interface for all the information about a specific field. " alt="" coords="271,104,448,145"/>
+<area shape="rect" id="node3" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html" title="Base class with declarative implementation of IField. " alt="" coords="496,104,673,145"/>
+<area shape="rect" id="node4" href="db/df4/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_confirmation.html" title="Confirmation " alt="" coords="725,71,941,112"/>
+<area shape="rect" id="node5" href="d0/db3/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field_reflector.html" title="Fill in field information through reflection." alt="" coords="721,136,944,177"/>
+<area shape="rect" id="node6" href="d7/dd7/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_field_prompt.html" title="This provides control information about a field. " alt="" coords="5,71,223,112"/>
+<area shape="rect" id="node7" href="d8/d0e/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_field_resources.html" title="Interface for saving/localizing generated resources. " alt="" coords="11,136,217,177"/>
+<area shape="rect" id="node8" href="d0/dab/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_field_state.html" title="Interface that defines basic access to a field. " alt="" coords="11,201,217,243"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_94.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_i_localizer"/>
+<map name="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_i_localizer" id="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_i_localizer">
+<area shape="rect" id="node1" href="d8/dd6/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_localizer.html" title="Interface for localizing string resources. " alt="" coords="5,5,183,47"/>
+<area shape="rect" id="node2" href="de/dd0/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_localizer.html" title="A resource localizer. " alt="" coords="231,5,408,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_95.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_i_prompt_3_01_t_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_i_prompt_3_01_t_01_4" id="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_i_prompt_3_01_t_01_4">
+<area shape="rect" id="node1" href="de/d91/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_prompt.html" title="Interface for a prompt and its associated recognizer. " alt="" coords="5,5,195,47"/>
+<area shape="rect" id="node2" href="d5/d80/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_prompter.html" title="A prompt and recognizer packaged together. " alt="" coords="243,5,440,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_96.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_i_recognize_3_01_t_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_i_recognize_3_01_t_01_4" id="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_i_recognize_3_01_t_01_4">
+<area shape="rect" id="node1" href="d3/d6f/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_recognize.html" title="Interface for recognizers that look for matches in user input. " alt="" coords="5,104,213,145"/>
+<area shape="rect" id="node2" href="d4/d4f/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_recognize_enumeration.html" title="Recognizer for enumerated values. " alt="" coords="261,71,540,112"/>
+<area shape="rect" id="node3" href="d8/d6e/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_recognize_primitive.html" title="Abstract class for constructing primitive value recognizers. " alt="" coords="273,136,528,177"/>
+<area shape="rect" id="node4" href="d3/db5/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_recognize_bool.html" title="Recognize a boolean value. " alt="" coords="603,5,833,47"/>
+<area shape="rect" id="node5" href="dc/db8/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_recognize_date_time.html" title="Recognize a date/time expression. " alt="" coords="588,71,848,112"/>
+<area shape="rect" id="node6" href="d4/df9/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_recognize_double.html" title="Recognize a double or float field. " alt="" coords="595,136,841,177"/>
+<area shape="rect" id="node7" href="d8/dad/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_recognize_number.html" title="Recognize a numeric field. " alt="" coords="593,201,843,243"/>
+<area shape="rect" id="node8" href="d0/d74/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_recognize_string.html" title="Recognize a string field. " alt="" coords="599,267,837,308"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_97.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_language"/>
+<map name="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_language" id="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_language">
+<area shape="rect" id="node1" href="d4/df0/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_language.html" title="Language related utilities. " alt="" coords="5,5,183,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_98.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_next_step"/>
+<map name="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_next_step" id="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_next_step">
+<area shape="rect" id="node1" href="da/d84/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_next_step.html" title="Next step to take. " alt="" coords="5,5,183,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_99.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_script_globals"/>
+<map name="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_script_globals" id="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_script_globals">
+<area shape="rect" id="node1" href="d0/df5/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_script_globals.html" title="Global values to pass into scripts defined using Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson. " alt="" coords="5,5,196,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_100.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_term_match"/>
+<map name="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_term_match" id="_microsoft_8_bot_8_builder_8_form_flow_8_advanced_8_term_match">
+<area shape="rect" id="node1" href="d3/df8/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_term_match.html" title="Describe a possible match in the user input. " alt="" coords="5,5,184,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_101.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_form_flow_8_choice"/>
+<map name="_microsoft_8_bot_8_builder_8_form_flow_8_choice" id="_microsoft_8_bot_8_builder_8_form_flow_8_choice">
+<area shape="rect" id="node1" href="d6/dbe/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_choice.html" title="Choice for clarifying an amiguous value in ValidateResult. " alt="" coords="5,5,183,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_102.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_form_flow_8_command_description"/>
+<map name="_microsoft_8_bot_8_builder_8_form_flow_8_command_description" id="_microsoft_8_bot_8_builder_8_form_flow_8_command_description">
+<area shape="rect" id="node1" href="d6/db9/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_command_description.html" title="Description of all the information needed for a built&#45;in command. " alt="" coords="5,5,183,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_103.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_form_flow_8_form_builder_base_3_01_j_object_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_form_flow_8_form_builder_base_3_01_j_object_01_4" id="_microsoft_8_bot_8_builder_8_form_flow_8_form_builder_base_3_01_j_object_01_4">
+<area shape="rect" id="node1" href="d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html" title="Microsoft.Bot.Builder.Form\lFlow.FormBuilderBase\&lt; JObject \&gt;" alt="" coords="5,5,227,47"/>
+<area shape="rect" id="node2" href="da/db3/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_json_1_1_form_builder_json.html" title="Build a form by specifying messages, fields and confirmations through JSON Schema or programatically..." alt="" coords="275,5,456,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_104.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_form_flow_8_form_canceled_exception"/>
+<map name="_microsoft_8_bot_8_builder_8_form_flow_8_form_canceled_exception" id="_microsoft_8_bot_8_builder_8_form_flow_8_form_canceled_exception">
+<area shape="rect" id="node1" href="db/db6/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_canceled_exception.html" title="Exception generated when form filling is canceled by user quit or exception. " alt="" coords="5,29,200,71"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_105.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_form_flow_8_form_configuration"/>
+<map name="_microsoft_8_bot_8_builder_8_form_flow_8_form_configuration" id="_microsoft_8_bot_8_builder_8_form_flow_8_form_configuration">
+<area shape="rect" id="node1" href="de/db8/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_configuration.html" title="Default values for the form. " alt="" coords="5,5,183,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_106.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_form_flow_8_i_form_3_01_t_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_form_flow_8_i_form_3_01_t_01_4" id="_microsoft_8_bot_8_builder_8_form_flow_8_i_form_3_01_t_01_4">
+<area shape="rect" id="node1" href="d8/d45/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form.html" title="Form definition interface. " alt="" coords="5,5,183,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_107.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_form_flow_8_i_form_builder_3_01_t_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_form_flow_8_i_form_builder_3_01_t_01_4" id="_microsoft_8_bot_8_builder_8_form_flow_8_i_form_builder_3_01_t_01_4">
+<area shape="rect" id="node1" href="d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html" title="Interface for building a form. " alt="" coords="5,5,183,47"/>
+<area shape="rect" id="node2" href="d3/dca/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder_base.html" title="Abstract base class for Form Builders." alt="" coords="231,5,415,47"/>
+<area shape="rect" id="node3" href="de/d9d/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder.html" title="Build a form by specifying messages, fields and confirmations via reflection or programatically." alt="" coords="463,5,640,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_108.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_form_flow_8_validate_result"/>
+<map name="_microsoft_8_bot_8_builder_8_form_flow_8_validate_result" id="_microsoft_8_bot_8_builder_8_form_flow_8_validate_result">
+<area shape="rect" id="node1" href="d4/d7b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_validate_result.html" title="Encapsulates the result of a ValidateAsyncDelegate&lt;T&gt; " alt="" coords="5,5,183,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_109.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_history_8_i_activity_source"/>
+<map name="_microsoft_8_bot_8_builder_8_history_8_i_activity_source" id="_microsoft_8_bot_8_builder_8_history_8_i_activity_source">
+<area shape="rect" id="node1" href="d2/d77/interface_microsoft_1_1_bot_1_1_builder_1_1_history_1_1_i_activity_logger.html" title="Log message activities between bots and users. " alt="" coords="5,136,197,177"/>
+<area shape="rect" id="node2" href="d0/d7a/class_microsoft_1_1_bot_1_1_builder_1_1_azure_1_1_table_logger.html" title="Log conversation activities to Azure Table Storage. " alt="" coords="249,71,434,112"/>
+<area shape="rect" id="node3" href="d6/dd2/class_microsoft_1_1_bot_1_1_builder_1_1_history_1_1_null_activity_logger.html" title="Activity logger that doesn&#39;t log. " alt="" coords="245,136,437,177"/>
+<area shape="rect" id="node4" href="d1/dfc/class_microsoft_1_1_bot_1_1_builder_1_1_history_1_1_trace_activity_logger.html" title="Activity logger that traces to the console. " alt="" coords="245,201,437,243"/>
+<area shape="rect" id="node5" href="dc/d06/interface_microsoft_1_1_bot_1_1_builder_1_1_history_1_1_i_activity_manager.html" title="Interface for managing activity history. " alt="" coords="5,5,197,47"/>
+<area shape="rect" id="node6" href="dd/dde/interface_microsoft_1_1_bot_1_1_builder_1_1_history_1_1_i_activity_source.html" title="Interface for getting activities from some source. " alt="" coords="5,71,197,112"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_110.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_history_8_replay_transcript"/>
+<map name="_microsoft_8_bot_8_builder_8_history_8_replay_transcript" id="_microsoft_8_bot_8_builder_8_history_8_replay_transcript">
+<area shape="rect" id="node1" href="d5/de7/class_microsoft_1_1_bot_1_1_builder_1_1_history_1_1_replay_transcript.html" title="Class to collect and then replay activities as a transcript. " alt="" coords="5,5,197,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_111.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_closure_capture_exception"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_closure_capture_exception" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_closure_capture_exception">
+<area shape="rect" id="node2" href="dd/d72/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_closure_capture_exception.html" title="Microsoft.Bot.Builder.Internals.\lFibers.ClosureCaptureException" alt="" coords="204,5,413,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_112.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_extensions"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_extensions" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_extensions">
+<area shape="rect" id="node1" href="de/d93/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_extensions.html" title="Microsoft.Bot.Builder.Internals.\lFibers.Extensions" alt="" coords="5,5,205,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_113.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_fiber_module"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_fiber_module" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_fiber_module">
+<area shape="rect" id="node2" href="d2/da5/class_microsoft_1_1_bot_1_1_builder_1_1_azure_1_1_table_logger_module.html" title="Module for registering a LoggerTable. " alt="" coords="134,5,319,47"/>
+<area shape="rect" id="node3" href="d6/d3e/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_calling_module___make_bot.html" title="Microsoft.Bot.Builder.Calling.\lCallingModule_MakeBot" alt="" coords="131,71,322,112"/>
+<area shape="rect" id="node4" href="d2/d89/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_dialog_module.html" title="Autofac module for Dialog components. " alt="" coords="129,136,324,177"/>
+<area shape="rect" id="node5" href="de/db6/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_dialog_module___make_root.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.DialogModule_MakeRoot" alt="" coords="117,201,336,243"/>
+<area shape="rect" id="node6" href="d1/d20/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_fiber_module.html" title="Autofac module for Fiber components. " alt="" coords="127,291,327,332"/>
+<area shape="rect" id="node7" href="dc/d5c/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_reflection_surrogate_module.html" title="Microsoft.Bot.Builder.Internals.\lFibers.ReflectionSurrogateModule" alt="" coords="118,356,335,397"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_114.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_awaiter_3_01out_01out_01_t_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_awaiter_3_01out_01out_01_t_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_awaiter_3_01out_01out_01_t_01_4">
+<area shape="rect" id="node2" href="d3/d87/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_awaiter.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IAwaiter\&lt; out out T \&gt;" alt="" coords="176,5,376,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_115.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_cache_3_01_c_00_01_k_00_01_v_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_cache_3_01_c_00_01_k_00_01_v_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_cache_3_01_c_00_01_k_00_01_v_01_4">
+<area shape="rect" id="node1" href="d3/d87/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_awaiter.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IAwaiter\&lt; T \&gt;" alt="" coords="248,136,448,177"/>
+<area shape="rect" id="node2" href="d0/deb/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_wait.html" title="Microsoft.Bot.Builder.Internals.\lFibers.Wait\&lt; C, T \&gt;" alt="" coords="508,169,708,211"/>
+<area shape="rect" id="node3" href="dd/d5e/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog.html" title="Microsoft.Bot.Builder.Dialogs.\lIDialog\&lt; T \&gt;" alt="" coords="5,449,200,491"/>
+<area shape="rect" id="node4" href="dc/dab/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_command_dialog.html" title="Dialog that dispatches based on a regex matching input. " alt="" coords="251,449,445,491"/>
+<area shape="rect" id="node5" href="d7/d1c/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_prompt.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.Prompt\&lt; T, U \&gt;" alt="" coords="251,515,445,556"/>
+<area shape="rect" id="node6" href="dc/d6c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_dialog.html" title="Interface for controlling a FormFlow dialog. " alt="" coords="259,384,437,425"/>
+<area shape="rect" id="node7" href="db/de5/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_dialog.html" title="Static factory methods for creating form dialogs. " alt="" coords="519,359,697,400"/>
+<area shape="rect" id="node9" href="d9/d6f/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_item.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IItem\&lt; T \&gt;" alt="" coords="248,5,448,47"/>
+<area shape="rect" id="node10" href="dd/d5f/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_post.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IPost\&lt; T \&gt;" alt="" coords="248,267,448,308"/>
+<area shape="rect" id="node11" href="db/d2c/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_post_struct.html" title="Microsoft.Bot.Builder.Internals.\lFibers.PostStruct\&lt; T \&gt;" alt="" coords="508,267,708,308"/>
+<area shape="rect" id="node13" href="dd/d2c/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_dictionary_cache.html" title="Microsoft.Bot.Builder.Internals.\lFibers.DictionaryCache\&lt; C, K, V \&gt;" alt="" coords="496,483,720,524"/>
+<area shape="rect" id="node14" href="de/dea/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_wait.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IWait\&lt; C, T \&gt;" alt="" coords="248,71,448,112"/>
+<area shape="rect" id="node15" href="d6/d98/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_cache.html" title="Microsoft.Bot.Builder.Internals.\lFibers.ICache\&lt; C, K, V \&gt;" alt="" coords="248,580,448,621"/>
+<area shape="rect" id="node16" href="d0/d48/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_null_cache.html" title="Microsoft.Bot.Builder.Internals.\lFibers.NullCache\&lt; C, K, V \&gt;" alt="" coords="508,580,708,621"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_116.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_cache_3_01_microsoft_8_bot_8_builder_8_luis_8_i_luis_service_00_01_uri_00_01_luis_result_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_cache_3_01_microsoft_8_bot_8_builder_8_luis_8_i_luis_service_00_01_uri_00_01_luis_result_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_cache_3_01_microsoft_8_bot_8_builder_8_luis_8_i_luis_service_00_01_uri_00_01_luis_result_01_4">
+<area shape="rect" id="node1" href="d6/d98/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_cache.html" title="Microsoft.Bot.Builder.Internals.\lFibers.ICache\&lt; Microsoft.Bot.Builder.\lLuis.ILuisService, Uri, LuisResult \&gt;" alt="" coords="5,5,244,61"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_117.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_fiber_loop_3_01_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_dialog_task_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_fiber_loop_3_01_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_dialog_task_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_fiber_loop_3_01_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_dialog_task_01_4">
+<area shape="rect" id="node1" href="d3/d08/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_fiber_loop.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IFiberLoop\&lt; Microsoft.Bot.Builder.\lDialogs.Internals.DialogTask \&gt;" alt="" coords="5,5,264,61"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_118.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_frame_factory_3_01_c_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_frame_factory_3_01_c_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_frame_factory_3_01_c_01_4">
+<area shape="rect" id="node1" href="d0/d3d/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_frame_factory.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IFrameFactory\&lt; C \&gt;" alt="" coords="5,5,205,47"/>
+<area shape="rect" id="node2" href="da/d34/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_frame_factory.html" title="Microsoft.Bot.Builder.Internals.\lFibers.FrameFactory\&lt; C \&gt;" alt="" coords="253,5,453,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_119.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_post_3_01in_01in_01_t_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_post_3_01in_01in_01_t_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_post_3_01in_01in_01_t_01_4">
+<area shape="rect" id="node1" href="dd/d5f/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_post.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IPost\&lt; in in T \&gt;" alt="" coords="5,5,205,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_120.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_post_3_01object_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_post_3_01object_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_post_3_01object_01_4">
+<area shape="rect" id="node1" href="dd/d5f/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_post.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IPost\&lt; object \&gt;" alt="" coords="5,5,205,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_121.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_scope_3_01_microsoft_8_bot_8_builder_8_dialogs_8_i_address_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_scope_3_01_microsoft_8_bot_8_builder_8_dialogs_8_i_address_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_scope_3_01_microsoft_8_bot_8_builder_8_dialogs_8_i_address_01_4">
+<area shape="rect" id="node1" href="da/d9a/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_scope.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IScope\&lt; Microsoft.Bot.Builder.\lDialogs.IAddress \&gt;" alt="" coords="5,5,244,61"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_122.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_scope_3_01_t_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_scope_3_01_t_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_scope_3_01_t_01_4">
+<area shape="rect" id="node1" href="da/d9a/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_scope.html" title="Provide an abstraction to serialize access to an item for a using&#45;block scope of code. " alt="" coords="5,5,205,47"/>
+<area shape="rect" id="node2" href="db/d04/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_local_mutual_exclusion.html" title="Microsoft.Bot.Builder.Internals.\lFibers.LocalMutualExclusion\&lt; T \&gt;" alt="" coords="253,5,473,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_123.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_stack_store_factory_3_01_c_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_stack_store_factory_3_01_c_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_stack_store_factory_3_01_c_01_4">
+<area shape="rect" id="node1" href="df/d77/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_stack_store_factory.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IStackStoreFactory\&lt; C \&gt;" alt="" coords="5,5,212,47"/>
+<area shape="rect" id="node2" href="d6/dfb/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_store_from_stack.html" title="Microsoft.Bot.Builder.Internals.\lFibers.StoreFromStack\&lt; C \&gt;" alt="" coords="260,5,460,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_124.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_stack_store_factory_3_01_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_dialog_task_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_stack_store_factory_3_01_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_dialog_task_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_stack_store_factory_3_01_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_dialog_task_01_4">
+<area shape="rect" id="node1" href="df/d77/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_stack_store_factory.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IStackStoreFactory\l\&lt; Microsoft.Bot.Builder.Dialogs.Internals.\lDialogTask \&gt;" alt="" coords="5,5,264,76"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_125.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_store_3_01_i_fiber_loop_3_01_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_dialog_task_01_4_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_store_3_01_i_fiber_loop_3_01_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_dialog_task_01_4_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_store_3_01_i_fiber_loop_3_01_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_dialog_task_01_4_01_4">
+<area shape="rect" id="node1" href="d2/d33/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_store.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IStore\&lt; IFiberLoop\l\&lt; Microsoft.Bot.Builder.Dialogs.Internals.\lDialogTask \&gt; \&gt;" alt="" coords="5,5,264,76"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_126.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_store_3_01_t_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_store_3_01_t_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_store_3_01_t_01_4">
+<area shape="rect" id="node1" href="d2/d33/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_store.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IStore\&lt; T \&gt;" alt="" coords="5,71,205,112"/>
+<area shape="rect" id="node2" href="dd/d14/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_error_resilient_store.html" title="Microsoft.Bot.Builder.Internals.\lFibers.ErrorResilientStore\&lt; T \&gt;" alt="" coords="253,5,456,47"/>
+<area shape="rect" id="node3" href="de/dcd/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_factory_store.html" title="Microsoft.Bot.Builder.Internals.\lFibers.FactoryStore\&lt; T \&gt;" alt="" coords="255,71,455,112"/>
+<area shape="rect" id="node4" href="da/dd0/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_formatter_store.html" title="Microsoft.Bot.Builder.Internals.\lFibers.FormatterStore\&lt; T \&gt;" alt="" coords="255,136,455,177"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_127.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_traits_3_01double_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_traits_3_01double_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_traits_3_01double_01_4">
+<area shape="rect" id="node1" href="dd/d6d/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_traits.html" title="Microsoft.Bot.Builder.Internals.\lFibers.ITraits\&lt; double \&gt;" alt="" coords="5,5,205,47"/>
+<area shape="rect" id="node2" href="d0/d39/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_normalized_traits.html" title="Microsoft.Bot.Builder.Internals.\lFibers.NormalizedTraits" alt="" coords="253,5,453,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_128.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_traits_3_01_score_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_traits_3_01_score_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_traits_3_01_score_01_4">
+<area shape="rect" id="node1" href="dd/d6d/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_traits.html" title="Microsoft.Bot.Builder.Internals.\lFibers.ITraits\&lt; Score \&gt;" alt="" coords="5,5,205,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_129.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_traits_3_01_t_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_traits_3_01_t_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_traits_3_01_t_01_4">
+<area shape="rect" id="node1" href="dd/d6d/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_traits.html" title="Microsoft.Bot.Builder.Internals.\lFibers.ITraits\&lt; T \&gt;" alt="" coords="5,5,205,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_130.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_wait"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_wait" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_wait">
+<area shape="rect" id="node1" href="de/dea/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_wait.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IWait" alt="" coords="5,29,205,71"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_131.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_wait_3_01_c_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_wait_3_01_c_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_wait_3_01_c_01_4">
+<area shape="rect" id="node1" href="de/dea/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_wait.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IWait\&lt; C \&gt;" alt="" coords="5,39,205,80"/>
+<area shape="rect" id="node2" href="de/dea/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_wait.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IWait\&lt; C \&gt;" alt="" coords="253,5,453,47"/>
+<area shape="rect" id="node3" href="df/d5c/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_null_wait.html" title="Microsoft.Bot.Builder.Internals.\lFibers.NullWait\&lt; C \&gt;" alt="" coords="253,71,453,112"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_132.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_wait_3_01_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_dialog_task_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_wait_3_01_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_dialog_task_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_wait_3_01_microsoft_8_bot_8_builder_8_dialogs_8_internals_8_dialog_task_01_4">
+<area shape="rect" id="node1" href="de/dea/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_wait.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IWait\&lt; Microsoft.Bot.Builder.\lDialogs.Internals.DialogTask \&gt;" alt="" coords="5,5,235,61"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_133.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_waiter_3_01_c_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_waiter_3_01_c_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_waiter_3_01_c_01_4">
+<area shape="rect" id="node1" href="dc/db7/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_frame_loop.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IFrameLoop\&lt; C \&gt;" alt="" coords="5,5,205,47"/>
+<area shape="rect" id="node2" href="db/d9a/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_frame.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IFrame\&lt; C \&gt;" alt="" coords="253,5,453,47"/>
+<area shape="rect" id="node3" href="da/d03/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_frame.html" title="Microsoft.Bot.Builder.Internals.\lFibers.Frame\&lt; C \&gt;" alt="" coords="501,5,701,47"/>
+<area shape="rect" id="node4" href="d3/d42/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_waiter.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IWaiter\&lt; C \&gt;" alt="" coords="5,71,205,112"/>
+<area shape="rect" id="node5" href="d3/d48/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_fiber.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IFiber\&lt; C \&gt;" alt="" coords="253,71,453,112"/>
+<area shape="rect" id="node6" href="d6/d8d/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_fiber.html" title="Microsoft.Bot.Builder.Internals.\lFibers.Fiber\&lt; C \&gt;" alt="" coords="749,96,949,137"/>
+<area shape="rect" id="node7" href="d3/d08/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_fiber_loop.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IFiberLoop\&lt; C \&gt;" alt="" coords="501,125,701,167"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_134.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_wait_factory_3_01_c_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_wait_factory_3_01_c_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_i_wait_factory_3_01_c_01_4">
+<area shape="rect" id="node1" href="d2/da8/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_wait_factory.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IWaitFactory\&lt; C \&gt;" alt="" coords="5,5,205,47"/>
+<area shape="rect" id="node2" href="d6/dde/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_wait_factory.html" title="Microsoft.Bot.Builder.Internals.\lFibers.WaitFactory\&lt; C \&gt;" alt="" coords="253,5,453,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_135.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_methods"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_methods" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_methods">
+<area shape="rect" id="node1" href="da/d36/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_methods.html" title="Microsoft.Bot.Builder.Internals.\lFibers.Methods" alt="" coords="5,5,205,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_136.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_pair"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_pair" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_pair">
+<area shape="rect" id="node2" href="d8/d8c/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_pair.html" title="Microsoft.Bot.Builder.Internals.\lFibers.Pair" alt="" coords="201,39,401,80"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_137.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_range"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_range" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_range">
+<area shape="rect" id="node2" href="dc/de0/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_range.html" title="Microsoft.Bot.Builder.Internals.\lFibers.Range" alt="" coords="224,35,424,76"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_138.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_serialization"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_serialization" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_serialization">
+<area shape="rect" id="node1" href="df/d2d/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization.html" title="Microsoft.Bot.Builder.Internals.\lFibers.Serialization" alt="" coords="5,5,205,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_139.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_serialization_8_i_surrogate_provider"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_serialization_8_i_surrogate_provider" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_serialization_8_i_surrogate_provider">
+<area shape="rect" id="node2" href="dc/d97/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_i_surrogate_provider.html" title="Extend ISerializationSurrogate with a &quot;tester&quot; method used by SurrogateSelector. " alt="" coords="205,159,448,201"/>
+<area shape="rect" id="node3" href="d9/d66/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_closure_capture_error_surrogate.html" title="Microsoft.Bot.Builder.Internals.\lFibers.Serialization.ClosureCapture\lErrorSurrogate" alt="" coords="518,5,745,61"/>
+<area shape="rect" id="node4" href="d8/da0/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_j_object_surrogate.html" title="Microsoft.Bot.Builder.Internals.\lFibers.Serialization.JObjectSurrogate" alt="" coords="513,86,750,127"/>
+<area shape="rect" id="node5" href="d5/d5e/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_store_instance_by_fields_surrogate.html" title="Microsoft.Bot.Builder.Internals.\lFibers.Serialization.StoreInstance\lByFieldsSurrogate" alt="" coords="523,152,740,208"/>
+<area shape="rect" id="node6" href="df/d58/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_store_instance_by_type_surrogate.html" title="Microsoft.Bot.Builder.Internals.\lFibers.Serialization.StoreInstance\lByTypeSurrogate" alt="" coords="523,232,740,288"/>
+<area shape="rect" id="node7" href="dd/d43/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_surrogate_log_decorator.html" title="Microsoft.Bot.Builder.Internals.\lFibers.Serialization.SurrogateLogDecorator" alt="" coords="496,313,767,354"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_140.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_serialization_8_store_instance_by_type_surrogate_8_i_resolver"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_serialization_8_store_instance_by_type_surrogate_8_i_resolver" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_serialization_8_store_instance_by_type_surrogate_8_i_resolver">
+<area shape="rect" id="node1" href="dd/dbc/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_store_insd9fc854118476fa574aa944655732a5a.html" title="Microsoft.Bot.Builder.Internals.\lFibers.Serialization.StoreInstance\lByTypeSurrogate.IResolver" alt="" coords="5,5,223,61"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_141.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_serialization_8_store_instance_by_type_surrogate_8_object_reference"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_serialization_8_store_instance_by_type_surrogate_8_object_reference" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_serialization_8_store_instance_by_type_surrogate_8_object_reference">
+<area shape="rect" id="node2" href="d7/d20/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_store_instanca9997af6594ae8e55c21cc867abe8dc9.html" title="Microsoft.Bot.Builder.Internals.\lFibers.Serialization.StoreInstance\lByTypeSurrogate.ObjectReference" alt="" coords="175,5,397,61"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_142.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_serialization_8_surrogate_selector"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_serialization_8_surrogate_selector" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_serialization_8_surrogate_selector">
+<area shape="rect" id="node2" href="d5/d79/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_surrogate_selector.html" title="Microsoft.Bot.Builder.Internals.\lFibers.Serialization.SurrogateSelector" alt="" coords="183,5,424,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_143.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_set_field"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_set_field" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_set_field">
+<area shape="rect" id="node1" href="d7/dce/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_set_field.html" title="Microsoft.Bot.Builder.Internals.\lFibers.SetField" alt="" coords="5,5,205,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_144.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_fibers_8_tasks_3_01_t_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_tasks_3_01_t_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_fibers_8_tasks_3_01_t_01_4">
+<area shape="rect" id="node1" href="d1/da1/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_tasks.html" title="Microsoft.Bot.Builder.Internals.\lFibers.Tasks\&lt; T \&gt;" alt="" coords="5,5,205,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_145.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_binding_8_resolution_comparer"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_binding_8_resolution_comparer" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_binding_8_resolution_comparer">
+<area shape="rect" id="node2" href="d5/d08/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_binding_1_1_resolution_comparer.html" title="Microsoft.Bot.Builder.Internals.\lScorables.Binding.ResolutionComparer" alt="" coords="135,5,383,47"/>
+<area shape="rect" id="node3" href="df/dff/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_intent_comparer.html" title="Microsoft.Bot.Builder.Internals.\lScorables.IntentComparer" alt="" coords="159,71,359,112"/>
+<area shape="rect" id="node4" href="d3/d74/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_match_comparer.html" title="Microsoft.Bot.Builder.Internals.\lScorables.MatchComparer" alt="" coords="159,136,359,177"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_146.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_extensions"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_extensions" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_extensions">
+<area shape="rect" id="node1" href="d7/d33/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_extensions.html" title="Microsoft.Bot.Builder.Internals.\lScorables.Extensions" alt="" coords="5,5,205,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_147.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_fold_scorable_3_01_item_00_01_score_01_4_8_state"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_fold_scorable_3_01_item_00_01_score_01_4_8_state" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_fold_scorable_3_01_item_00_01_score_01_4_8_state">
+<area shape="rect" id="node1" href="dc/def/struct_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_fold_scorable_1_1_state.html" title="Per&#45;scorable opaque state used during scoring process. " alt="" coords="5,5,207,61"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_148.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_inherited_attributes"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_inherited_attributes" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_inherited_attributes">
+<area shape="rect" id="node1" href="d0/d78/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_inherited_attributes.html" title="Helper methods to enumerate inherited attributes for a method. " alt="" coords="5,5,205,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_149.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_3_01_i_activity_00_01_score_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_3_01_i_activity_00_01_score_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_3_01_i_activity_00_01_score_01_4">
+<area shape="rect" id="node1" href="d2/dd9/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_i_scorable.html" title="Microsoft.Bot.Builder.Internals.\lScorables.IScorable\&lt; IActivity,\l Score \&gt;" alt="" coords="5,5,205,61"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_150.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_3_01in_01in_01_item_00_01out_01out_01_score_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_3_01in_01in_01_item_00_01out_01out_01_score_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_3_01in_01in_01_item_00_01out_01out_01_score_01_4">
+<area shape="rect" id="node1" href="d2/dd9/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_i_scorable.html" title="Allow the scoring of items, with external comparison of scores, and enable the winner to take some ac..." alt="" coords="5,5,205,61"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_151.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_3_01_item_00_01_score_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_3_01_item_00_01_score_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_3_01_item_00_01_score_01_4">
+<area shape="rect" id="node1" href="d2/dd9/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_i_scorable.html" title="Microsoft.Bot.Builder.Internals.\lScorables.IScorable\&lt; Item,\l Score \&gt;" alt="" coords="5,85,205,141"/>
+<area shape="rect" id="node2" href="d3/db7/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_delegating_scorable.html" title="Microsoft.Bot.Builder.Internals.\lScorables.DelegatingScorable\l\&lt; Item, Score \&gt;" alt="" coords="257,5,457,61"/>
+<area shape="rect" id="node3" href="d1/da8/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_null_scorable.html" title="Microsoft.Bot.Builder.Internals.\lScorables.NullScorable\&lt; Item,\l Score \&gt;" alt="" coords="257,85,457,141"/>
+<area shape="rect" id="node4" href="de/d7b/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_scorable_base.html" title="Allow for static type checking of opaque state for convenience of scorable implementations. " alt="" coords="253,165,460,221"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_152.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_3_01_item_00_01_target_score_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_3_01_item_00_01_target_score_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_3_01_item_00_01_target_score_01_4">
+<area shape="rect" id="node1" href="d3/db7/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_delegating_scorable.html" title="Microsoft.Bot.Builder.Internals.\lScorables.DelegatingScorable\l\&lt; Item, SourceScore \&gt;" alt="" coords="5,5,205,61"/>
+<area shape="rect" id="node2" href="d2/dc3/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_select_score_scorable.html" title="Microsoft.Bot.Builder.Internals.\lScorables.SelectScoreScorable\l\&lt; Item, SourceScore, TargetScore \&gt;" alt="" coords="253,45,485,101"/>
+<area shape="rect" id="node3" href="d2/dd9/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_i_scorable.html" title="Microsoft.Bot.Builder.Internals.\lScorables.IScorable\&lt; Item,\l TargetScore \&gt;" alt="" coords="5,85,205,141"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_153.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_3_01_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_resolver_00_01_inner_score_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_3_01_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_resolver_00_01_inner_score_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_3_01_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_resolver_00_01_inner_score_01_4">
+<area shape="rect" id="node1" href="d2/dd9/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_i_scorable.html" title="Microsoft.Bot.Builder.Internals.\lScorables.IScorable\&lt; Microsoft.Bot.\lBuilder.Internals.Scorables.IResolver,\l InnerScore \&gt;" alt="" coords="5,5,243,76"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_154.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_3_01_target_item_00_01_score_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_3_01_target_item_00_01_score_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_3_01_target_item_00_01_score_01_4">
+<area shape="rect" id="node1" href="d2/dd9/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_i_scorable.html" title="Microsoft.Bot.Builder.Internals.\lScorables.IScorable\&lt; TargetItem,\l Score \&gt;" alt="" coords="5,5,220,61"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_155.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_factory_3_01in_01in_01_item_00_01out_01out_01_score_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_factory_3_01in_01in_01_item_00_01out_01out_01_score_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_factory_3_01in_01in_01_item_00_01out_01out_01_score_01_4">
+<area shape="rect" id="node1" href="d6/d24/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_i_scorable_factory.html" title="Microsoft.Bot.Builder.Internals.\lScorables.IScorableFactory\l\&lt; in in Item, out out Score \&gt;" alt="" coords="5,5,205,61"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_156.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_factory_3_01_i_resolver_00_01_binding_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_factory_3_01_i_resolver_00_01_binding_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_factory_3_01_i_resolver_00_01_binding_01_4">
+<area shape="rect" id="node1" href="d6/d24/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_i_scorable_factory.html" title="Microsoft.Bot.Builder.Internals.\lScorables.IScorableFactory\l\&lt; IResolver, Binding \&gt;" alt="" coords="5,5,205,61"/>
+<area shape="rect" id="node2" href="d7/d98/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_method_scorable_factory.html" title="Microsoft.Bot.Builder.Internals.\lScorables.MethodScorableFactory" alt="" coords="253,13,476,54"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_157.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_factory_3_01_i_resolver_00_01_intent_recommendation_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_factory_3_01_i_resolver_00_01_intent_recommendation_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_factory_3_01_i_resolver_00_01_intent_recommendation_01_4">
+<area shape="rect" id="node1" href="d6/d24/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_i_scorable_factory.html" title="Microsoft.Bot.Builder.Internals.\lScorables.IScorableFactory\l\&lt; IResolver, IntentRecommendation \&gt;" alt="" coords="5,5,244,61"/>
+<area shape="rect" id="node2" href="da/d09/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_luis_intent_scorable_factory.html" title="Microsoft.Bot.Builder.Internals.\lScorables.LuisIntentScorableFactory" alt="" coords="292,13,527,54"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_158.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_factory_3_01_i_resolver_00_01_match_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_factory_3_01_i_resolver_00_01_match_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_factory_3_01_i_resolver_00_01_match_01_4">
+<area shape="rect" id="node1" href="d6/d24/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_i_scorable_factory.html" title="Microsoft.Bot.Builder.Internals.\lScorables.IScorableFactory\l\&lt; IResolver, Match \&gt;" alt="" coords="5,5,205,61"/>
+<area shape="rect" id="node2" href="dd/d18/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_regex_match_scorable_factory.html" title="Microsoft.Bot.Builder.Internals.\lScorables.RegexMatchScorableFactory" alt="" coords="253,13,505,54"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_159.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_factory_3_01_item_00_01_score_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_factory_3_01_item_00_01_score_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_i_scorable_factory_3_01_item_00_01_score_01_4">
+<area shape="rect" id="node1" href="d6/d24/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_i_scorable_factory.html" title="Microsoft.Bot.Builder.Internals.\lScorables.IScorableFactory\l\&lt; Item, Score \&gt;" alt="" coords="5,5,205,61"/>
+<area shape="rect" id="node2" href="d6/d08/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_order_scorable_factory.html" title="Microsoft.Bot.Builder.Internals.\lScorables.OrderScorableFactory\l\&lt; Item, Score \&gt;" alt="" coords="253,5,464,61"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_160.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_resolver_scorable_3_01_luis_intent_scorable_3_01_inner_state_00_01_inner_score_01_4_8_scope_00_01_intent_recommendation_00_01_inner_state_00_01_inner_score_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_resolver_scorable_3_01_luis_intent_scorable_3_01_inner_state_00_01_inner_score_01_4_8_scope_00_01_intent_recommendation_00_01_inner_state_00_01_inner_score_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_resolver_scorable_3_01_luis_intent_scorable_3_01_inner_state_00_01_inner_score_01_4_8_scope_00_01_intent_recommendation_00_01_inner_state_00_01_inner_score_01_4">
+<area shape="rect" id="node1" href="df/d82/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_resolver_scorable.html" title="Microsoft.Bot.Builder.Internals.\lScorables.ResolverScorable\l\&lt; LuisIntentScorable\&lt; InnerState,\l InnerScore \&gt;.Scope, IntentRecommendation,\l InnerState, InnerScore \&gt;" alt="" coords="5,5,292,91"/>
+<area shape="rect" id="node2" href="d9/d65/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_luis_intent_scorable.html" title="Scorable to represent a specific LUIS intent recommendation. " alt="" coords="340,20,540,76"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_161.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_resolver_scorable_3_01_regex_match_scorable_3_01_inner_state_00_01_inner_score_01_4_8_scope_00_01_match_00_01_inner_state_00_01_inner_score_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_resolver_scorable_3_01_regex_match_scorable_3_01_inner_state_00_01_inner_score_01_4_8_scope_00_01_match_00_01_inner_state_00_01_inner_score_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_resolver_scorable_3_01_regex_match_scorable_3_01_inner_state_00_01_inner_score_01_4_8_scope_00_01_match_00_01_inner_state_00_01_inner_score_01_4">
+<area shape="rect" id="node1" href="df/d82/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_resolver_scorable.html" title="Microsoft.Bot.Builder.Internals.\lScorables.ResolverScorable\l\&lt; RegexMatchScorable\&lt; InnerState,\l InnerScore \&gt;.Scope, Match, InnerState,\l InnerScore \&gt;" alt="" coords="5,5,261,91"/>
+<area shape="rect" id="node2" href="d1/d44/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_regex_match_scorable.html" title="Scorable to represent a regular expression match against an activity&#39;s text. " alt="" coords="309,20,517,76"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_162.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_scorable_aggregator_3_01_i_resolver_00_01_outer_state_00_01_outer_score_00_01_inner_state_00_01_inner_score_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_scorable_aggregator_3_01_i_resolver_00_01_outer_state_00_01_outer_score_00_01_inner_state_00_01_inner_score_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_scorable_aggregator_3_01_i_resolver_00_01_outer_state_00_01_outer_score_00_01_inner_state_00_01_inner_score_01_4">
+<area shape="rect" id="node1" href="d0/d60/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_scorable_aggregator.html" title="Microsoft.Bot.Builder.Internals.\lScorables.ScorableAggregator\l\&lt; IResolver, OuterState, OuterScore,\l InnerState, InnerScore \&gt;" alt="" coords="5,5,240,76"/>
+<area shape="rect" id="node2" href="df/d82/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_resolver_scorable.html" title="Microsoft.Bot.Builder.Internals.\lScorables.ResolverScorable\l\&lt; OuterState, OuterScore, InnerState,\l InnerScore \&gt;" alt="" coords="288,5,531,76"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_163.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_scorable_base_3_01_i_activity_00_01string_00_01double_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_scorable_base_3_01_i_activity_00_01string_00_01double_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_scorable_base_3_01_i_activity_00_01string_00_01double_01_4">
+<area shape="rect" id="node1" href="de/d7b/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_scorable_base.html" title="Microsoft.Bot.Builder.Internals.\lScorables.ScorableBase\&lt; IActivity,\l string, double \&gt;" alt="" coords="5,5,232,61"/>
+<area shape="rect" id="node2" href="d7/d6c/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_delete_profile_scorable.html" title="Microsoft.Bot.Builder.Dialogs.\lDeleteProfileScorable" alt="" coords="280,13,475,54"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_164.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_scorable_base_3_01_i_resolver_00_01_binding_00_01_binding_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_scorable_base_3_01_i_resolver_00_01_binding_00_01_binding_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_scorable_base_3_01_i_resolver_00_01_binding_00_01_binding_01_4">
+<area shape="rect" id="node1" href="de/d7b/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_scorable_base.html" title="Microsoft.Bot.Builder.Internals.\lScorables.ScorableBase\&lt; IResolver,\l Binding, Binding \&gt;" alt="" coords="5,5,239,61"/>
+<area shape="rect" id="node2" href="d5/d22/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_method_scorable.html" title="Scorable to represent binding arguments to a method&#39;s parameters. " alt="" coords="287,13,487,54"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_165.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_scorable_base_3_01_item_00_01_i_read_only_list_3_01_fold_scorable_3_01_item_00_01_score_01_4_8_state_01_4_00_01_score_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_scorable_base_3_01_item_00_01_i_read_only_list_3_01_fold_scorable_3_01_item_00_01_score_01_4_8_state_01_4_00_01_score_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_scorable_base_3_01_item_00_01_i_read_only_list_3_01_fold_scorable_3_01_item_00_01_score_01_4_8_state_01_4_00_01_score_01_4">
+<area shape="rect" id="node1" href="de/d7b/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_scorable_base.html" title="Microsoft.Bot.Builder.Internals.\lScorables.ScorableBase\&lt; Item,\l IReadOnlyList\&lt; FoldScorable\l\&lt; Item, Score \&gt;.State \&gt;, Score \&gt;" alt="" coords="5,38,220,109"/>
+<area shape="rect" id="node2" href="d2/df1/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_fold_scorable.html" title="Fold an aggregation of scorables to produce a winning scorable. " alt="" coords="268,45,469,101"/>
+<area shape="rect" id="node3" href="d6/d3b/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_first_scorable.html" title="Microsoft.Bot.Builder.Internals.\lScorables.FirstScorable\&lt; Item,\l Score \&gt;" alt="" coords="517,5,720,61"/>
+<area shape="rect" id="node4" href="d8/d8a/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_traits_scorable.html" title="Microsoft.Bot.Builder.Internals.\lScorables.TraitsScorable\&lt;\l Item, Score \&gt;" alt="" coords="519,85,719,141"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_166.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_scorable_base_3_01_item_00_01_outer_state_00_01_outer_score_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_scorable_base_3_01_item_00_01_outer_state_00_01_outer_score_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_scorable_base_3_01_item_00_01_outer_state_00_01_outer_score_01_4">
+<area shape="rect" id="node1" href="de/d7b/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_scorable_base.html" title="Microsoft.Bot.Builder.Internals.\lScorables.ScorableBase\&lt; Item,\l OuterState, OuterScore \&gt;" alt="" coords="5,13,212,69"/>
+<area shape="rect" id="node2" href="d0/d60/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_scorable_aggregator.html" title="Aggregates some non&#45;empty set of inner scorables to produce an outer scorable. " alt="" coords="260,5,468,76"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_167.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_scorable_base_3_01_source_item_00_01_select_item_scorable_3_01_source_item_00_01_target_item_00_01_score_01_4_8_token_00_01_score_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_scorable_base_3_01_source_item_00_01_select_item_scorable_3_01_source_item_00_01_target_item_00_01_score_01_4_8_token_00_01_score_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_scorable_base_3_01_source_item_00_01_select_item_scorable_3_01_source_item_00_01_target_item_00_01_score_01_4_8_token_00_01_score_01_4">
+<area shape="rect" id="node1" href="de/d7b/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_scorable_base.html" title="Microsoft.Bot.Builder.Internals.\lScorables.ScorableBase\&lt; SourceItem,\l SelectItemScorable\&lt; SourceItem,\l TargetItem, Score \&gt;.Token, Score \&gt;" alt="" coords="5,5,252,76"/>
+<area shape="rect" id="node2" href="d4/d32/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_select_item_scorable.html" title="Microsoft.Bot.Builder.Internals.\lScorables.SelectItemScorable\l\&lt; SourceItem, TargetItem, Score \&gt;" alt="" coords="300,13,523,69"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_168.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_scorables"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_scorables" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_scorables">
+<area shape="rect" id="node1" href="da/dc3/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_scorables.html" title="Microsoft.Bot.Builder.Internals.\lScorables.Scorables" alt="" coords="5,5,205,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_169.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_token_3_01_i_resolver_00_01_inner_score_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_token_3_01_i_resolver_00_01_inner_score_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_token_3_01_i_resolver_00_01_inner_score_01_4">
+<area shape="rect" id="node1" href="da/d9a/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_i_resolver.html" title="Allow the resolution of values based on type and optionally tag. " alt="" coords="5,136,205,177"/>
+<area shape="rect" id="node2" href="dd/d50/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_delegating_resolver.html" title="Microsoft.Bot.Builder.Internals.\lScorables.DelegatingResolver" alt="" coords="281,71,481,112"/>
+<area shape="rect" id="node6" href="d1/d20/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_null_resolver.html" title="Microsoft.Bot.Builder.Internals.\lScorables.NullResolver" alt="" coords="281,136,481,177"/>
+<area shape="rect" id="node7" href="d7/dec/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_resolver_scope.html" title="Microsoft.Bot.Builder.Internals.\lScorables.ResolverScope\&lt; InnerScore \&gt;" alt="" coords="253,209,509,251"/>
+<area shape="rect" id="node3" href="d5/d30/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_activity_resolver.html" title="A resolver to recover C# type information from Activity schema types. " alt="" coords="565,5,765,47"/>
+<area shape="rect" id="node4" href="d8/dad/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_array_resolver.html" title="Microsoft.Bot.Builder.Internals.\lScorables.ArrayResolver" alt="" coords="565,71,765,112"/>
+<area shape="rect" id="node5" href="d6/d72/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_autofac_resolver.html" title="Microsoft.Bot.Builder.Internals.\lScorables.AutofacResolver" alt="" coords="565,136,765,177"/>
+<area shape="rect" id="node8" href="d7/d55/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_luis_intent_scorable_1_1_scope.html" title="Microsoft.Bot.Builder.Internals.\lScorables.LuisIntentScorable\l\&lt; InnerState, InnerScore \&gt;.Scope" alt="" coords="557,202,773,258"/>
+<area shape="rect" id="node9" href="dd/d50/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_regex_match_scorable_1_1_scope.html" title="Microsoft.Bot.Builder.Internals.\lScorables.RegexMatchScorable\l\&lt; InnerState, InnerScore \&gt;.Scope" alt="" coords="557,282,773,338"/>
+<area shape="rect" id="node10" href="df/d49/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_token.html" title="Microsoft.Bot.Builder.Internals.\lScorables.Token\&lt; IResolver,\l InnerScore \&gt;" alt="" coords="5,202,205,258"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_170.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_token_3_01_item_00_01_score_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_token_3_01_item_00_01_score_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_token_3_01_item_00_01_score_01_4">
+<area shape="rect" id="node1" href="df/d49/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_token.html" title="Provides the state to aggregate the state (and associated scorable) of multiple scorables. " alt="" coords="5,5,216,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_171.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_internals_8_scorables_8_token_3_01_target_item_00_01_score_01_4"/>
+<map name="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_token_3_01_target_item_00_01_score_01_4" id="_microsoft_8_bot_8_builder_8_internals_8_scorables_8_token_3_01_target_item_00_01_score_01_4">
+<area shape="rect" id="node1" href="df/d49/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_token.html" title="Microsoft.Bot.Builder.Internals.\lScorables.Token\&lt; TargetItem,\l Score \&gt;" alt="" coords="5,5,205,61"/>
+<area shape="rect" id="node2" href="d9/da1/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_select_item_scorable_1_1_token.html" title="Microsoft.Bot.Builder.Internals.\lScorables.SelectItemScorable\l\&lt; SourceItem, TargetItem, Score \&gt;.Token" alt="" coords="253,5,516,61"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_172.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_luis_8_built_in"/>
+<map name="_microsoft_8_bot_8_builder_8_luis_8_built_in" id="_microsoft_8_bot_8_builder_8_luis_8_built_in">
+<area shape="rect" id="node1" href="dd/dc9/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_built_in.html" title="Microsoft.Bot.Builder.Luis.\lBuiltIn" alt="" coords="5,5,180,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_173.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_luis_8_built_in_8_date_time"/>
+<map name="_microsoft_8_bot_8_builder_8_luis_8_built_in_8_date_time" id="_microsoft_8_bot_8_builder_8_luis_8_built_in_8_date_time">
+<area shape="rect" id="node1" href="d4/db7/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_built_in_1_1_date_time.html" title="Microsoft.Bot.Builder.Luis.\lBuiltIn.DateTime" alt="" coords="5,5,180,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_174.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_luis_8_built_in_8_date_time_8_duration_resolution"/>
+<map name="_microsoft_8_bot_8_builder_8_luis_8_built_in_8_date_time_8_duration_resolution" id="_microsoft_8_bot_8_builder_8_luis_8_built_in_8_date_time_8_duration_resolution">
+<area shape="rect" id="node1" href="d0/dfb/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_built_in_1_1_date_time_1_1_duration_resolution.html" title="Microsoft.Bot.Builder.Luis.\lBuiltIn.DateTime.DurationResolution" alt="" coords="5,5,236,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_175.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_luis_8_extensions"/>
+<map name="_microsoft_8_bot_8_builder_8_luis_8_extensions" id="_microsoft_8_bot_8_builder_8_luis_8_extensions">
+<area shape="rect" id="node1" href="df/d78/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_extensions.html" title="LUIS extension methods. " alt="" coords="5,5,180,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_176.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_luis_8_i_calendar_plus"/>
+<map name="_microsoft_8_bot_8_builder_8_luis_8_i_calendar_plus" id="_microsoft_8_bot_8_builder_8_luis_8_i_calendar_plus">
+<area shape="rect" id="node1" href="de/d09/interface_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_i_calendar_plus.html" title="Policy for interpreting LUIS resolutions. " alt="" coords="5,5,180,47"/>
+<area shape="rect" id="node2" href="dc/df9/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_western_calendar_plus.html" title="https://en.wikipedia.org/wiki/Gregorian_calendar " alt="" coords="228,5,403,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_177.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_luis_8_i_entity_to_type"/>
+<map name="_microsoft_8_bot_8_builder_8_luis_8_i_entity_to_type" id="_microsoft_8_bot_8_builder_8_luis_8_i_entity_to_type">
+<area shape="rect" id="node1" href="d8/d16/interface_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_i_entity_to_type.html" title="An abtraction to map from a LUIS EntityRecommendation to specific CLR types. " alt="" coords="5,5,180,47"/>
+<area shape="rect" id="node2" href="df/d2e/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_strict_entity_to_type.html" title="Microsoft.Bot.Builder.Luis.\lStrictEntityToType" alt="" coords="228,5,403,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_178.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_luis_8_i_luis_service"/>
+<map name="_microsoft_8_bot_8_builder_8_luis_8_i_luis_service" id="_microsoft_8_bot_8_builder_8_luis_8_i_luis_service">
+<area shape="rect" id="node1" href="d7/dd1/interface_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_i_luis_service.html" title="A mockable interface for the LUIS service. " alt="" coords="5,39,180,80"/>
+<area shape="rect" id="node2" href="d8/dcc/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_caching_luis_service.html" title="Microsoft.Bot.Builder.Luis.\lCachingLuisService" alt="" coords="228,5,403,47"/>
+<area shape="rect" id="node3" href="d0/d36/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_luis_service.html" title="Standard implementation of ILuisService against actual LUIS service. " alt="" coords="228,71,403,112"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_179.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_luis_8_i_resolution_parser"/>
+<map name="_microsoft_8_bot_8_builder_8_luis_8_i_resolution_parser" id="_microsoft_8_bot_8_builder_8_luis_8_i_resolution_parser">
+<area shape="rect" id="node1" href="d3/dba/interface_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_i_resolution_parser.html" title="Microsoft.Bot.Builder.Luis.\lIResolutionParser" alt="" coords="5,5,180,47"/>
+<area shape="rect" id="node2" href="dc/d82/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_resolution_parser.html" title="Microsoft.Bot.Builder.Luis.\lResolutionParser" alt="" coords="228,5,403,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_180.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_luis_8_models_8_action"/>
+<map name="_microsoft_8_bot_8_builder_8_luis_8_models_8_action" id="_microsoft_8_bot_8_builder_8_luis_8_models_8_action">
+<area shape="rect" id="node1" href="dc/d34/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_models_1_1_action.html" title="Microsoft.Bot.Builder.Luis.\lModels.Action" alt="" coords="5,5,180,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_181.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_luis_8_models_8_action_parameter"/>
+<map name="_microsoft_8_bot_8_builder_8_luis_8_models_8_action_parameter" id="_microsoft_8_bot_8_builder_8_luis_8_models_8_action_parameter">
+<area shape="rect" id="node1" href="d1/dee/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_models_1_1_action_parameter.html" title="Microsoft.Bot.Builder.Luis.\lModels.ActionParameter" alt="" coords="5,5,180,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_182.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_luis_8_models_8_action_parameter_value"/>
+<map name="_microsoft_8_bot_8_builder_8_luis_8_models_8_action_parameter_value" id="_microsoft_8_bot_8_builder_8_luis_8_models_8_action_parameter_value">
+<area shape="rect" id="node1" href="d6/d90/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_models_1_1_action_parameter_value.html" title="Microsoft.Bot.Builder.Luis.\lModels.ActionParameterValue" alt="" coords="5,5,204,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_183.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_luis_8_models_8_entity_recommendation"/>
+<map name="_microsoft_8_bot_8_builder_8_luis_8_models_8_entity_recommendation" id="_microsoft_8_bot_8_builder_8_luis_8_models_8_entity_recommendation">
+<area shape="rect" id="node1" href="d7/d66/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_models_1_1_entity_recommendation.html" title="Luis entity recommendation. Look at https://www.luis.ai/Help for more information. " alt="" coords="5,5,208,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_184.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_luis_8_models_8_intent_recommendation"/>
+<map name="_microsoft_8_bot_8_builder_8_luis_8_models_8_intent_recommendation" id="_microsoft_8_bot_8_builder_8_luis_8_models_8_intent_recommendation">
+<area shape="rect" id="node1" href="dc/d92/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_models_1_1_intent_recommendation.html" title="LUIS intent recommendation. Look at https://www.luis.ai/Help for more information. " alt="" coords="5,5,207,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_185.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_luis_8_models_8_luis_result"/>
+<map name="_microsoft_8_bot_8_builder_8_luis_8_models_8_luis_result" id="_microsoft_8_bot_8_builder_8_luis_8_models_8_luis_result">
+<area shape="rect" id="node1" href="dc/dbe/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_models_1_1_luis_result.html" title="Microsoft.Bot.Builder.Luis.\lModels.LuisResult" alt="" coords="5,5,180,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_186.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_luis_8_resolution"/>
+<map name="_microsoft_8_bot_8_builder_8_luis_8_resolution" id="_microsoft_8_bot_8_builder_8_luis_8_resolution">
+<area shape="rect" id="node2" href="d2/deb/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_flow_attribute.html" title="Abstract base class for FormFlow attributes. " alt="" coords="278,267,455,308"/>
+<area shape="rect" id="node8" href="df/d31/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_numeric_attribute.html" title="Provide limits on the possible values in a numeric field or property. " alt="" coords="278,332,455,373"/>
+<area shape="rect" id="node9" href="d7/d6f/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_optional_attribute.html" title="Define a field or property as optional. " alt="" coords="278,397,455,439"/>
+<area shape="rect" id="node10" href="da/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_pattern_attribute.html" title="Provide a regular expression to validate a string field. " alt="" coords="278,5,455,47"/>
+<area shape="rect" id="node11" href="d1/d64/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_attribute_string.html" title="Microsoft.Bot.Builder.Internals.\lScorables.AttributeString" alt="" coords="267,528,467,569"/>
+<area shape="rect" id="node14" href="d4/dad/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_entity_attribute.html" title="Microsoft.Bot.Builder.Internals.\lScorables.EntityAttribute" alt="" coords="267,71,467,112"/>
+<area shape="rect" id="node15" href="de/d1e/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_method_bind_attribute.html" title="Microsoft.Bot.Builder.Internals.\lScorables.MethodBindAttribute" alt="" coords="265,136,468,177"/>
+<area shape="rect" id="node16" href="db/de7/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_scorable_order_attribute.html" title="Microsoft.Bot.Builder.Internals.\lScorables.ScorableOrderAttribute" alt="" coords="259,201,475,243"/>
+<area shape="rect" id="node17" href="de/daf/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_luis_model_attribute.html" title="The LUIS model information. " alt="" coords="279,463,454,504"/>
+<area shape="rect" id="node3" href="d7/d48/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_template_base_attribute.html" title="Abstract base class used by all attributes that use Pattern Language. " alt="" coords="533,201,779,243"/>
+<area shape="rect" id="node6" href="dd/d38/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_describe_attribute.html" title="Attribute to override the default description of a field, property or enum value. ..." alt="" coords="567,267,745,308"/>
+<area shape="rect" id="node7" href="d2/d27/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_terms_attribute.html" title="Attribute to override the default terms used to match a field, property or enum value to user input..." alt="" coords="567,332,745,373"/>
+<area shape="rect" id="node4" href="d0/d34/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_prompt_attribute.html" title="Define the prompt template used when asking about a field. " alt="" coords="827,168,1004,209"/>
+<area shape="rect" id="node5" href="d7/d0a/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_template_attribute.html" title="Define a template for generating strings. " alt="" coords="827,233,1004,275"/>
+<area shape="rect" id="node12" href="d7/df9/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_luis_intent_attribute.html" title="Associate a LUIS intent with a dialog method. " alt="" coords="559,560,753,601"/>
+<area shape="rect" id="node13" href="da/d8d/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_regex_pattern_attribute.html" title="Microsoft.Bot.Builder.Internals.\lScorables.RegexPatternAttribute" alt="" coords="550,495,762,536"/>
+<area shape="rect" id="node19" href="d8/d71/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_address.html" title="The key that minimally and completely identifies a bot&#39;s conversation with a user on a channel..." alt="" coords="269,724,464,765"/>
+<area shape="rect" id="node20" href="dc/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_resumption_cookie.html" title="The resumption cookie that can be used to resume a conversation with a user. " alt="" coords="269,659,464,700"/>
+<area shape="rect" id="node21" href="de/d5f/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_binding.html" title="Represents a binding of arguments to a method&#39;s parameters. " alt="" coords="267,593,467,635"/>
+<area shape="rect" id="node22" href="d7/d4f/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_built_in_1_1_date_time_1_1_date_time_resolution.html" title="Microsoft.Bot.Builder.Luis.\lBuiltIn.DateTime.DateTimeResolution" alt="" coords="248,789,485,831"/>
+<area shape="rect" id="node23" href="dd/dc8/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_address.html" title="The key that minimally and completely identifies a bot&#39;s conversation with a user on a channel..." alt="" coords="5,724,200,765"/>
+<area shape="rect" id="node24" href="de/d39/interface_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_i_luis_model.html" title="A mockable interface for the LUIS model. " alt="" coords="15,463,190,504"/>
+<area shape="rect" id="node25" href="dc/d54/class_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_resolution.html" title="Microsoft.Bot.Builder.Luis.\lResolution" alt="" coords="15,789,190,831"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_187.png" border="0" alt="" usemap="#_microsoft_8_bot_8_builder_8_resource_8_extensions"/>
+<map name="_microsoft_8_bot_8_builder_8_resource_8_extensions" id="_microsoft_8_bot_8_builder_8_resource_8_extensions">
+<area shape="rect" id="node1" href="d0/df5/class_microsoft_1_1_bot_1_1_builder_1_1_resource_1_1_extensions.html" title="Extensions for resources. " alt="" coords="5,5,212,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_188.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_action_types"/>
+<map name="_microsoft_8_bot_8_connector_8_action_types" id="_microsoft_8_bot_8_connector_8_action_types">
+<area shape="rect" id="node1" href="d2/d0c/class_microsoft_1_1_bot_1_1_connector_1_1_action_types.html" title="Microsoft.Bot.Connector.\lActionTypes" alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_189.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_activity_types"/>
+<map name="_microsoft_8_bot_8_connector_8_activity_types" id="_microsoft_8_bot_8_connector_8_activity_types">
+<area shape="rect" id="node1" href="d2/d7d/class_microsoft_1_1_bot_1_1_connector_1_1_activity_types.html" title="Types of Activities " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_190.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_animation_card"/>
+<map name="_microsoft_8_bot_8_connector_8_animation_card" id="_microsoft_8_bot_8_connector_8_animation_card">
+<area shape="rect" id="node1" href="d9/d78/class_microsoft_1_1_bot_1_1_connector_1_1_animation_card.html" title="An animation card (Ex: gif or short video clip) " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_191.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_a_p_i_response"/>
+<map name="_microsoft_8_bot_8_connector_8_a_p_i_response" id="_microsoft_8_bot_8_connector_8_a_p_i_response">
+<area shape="rect" id="node1" href="d1/d40/class_microsoft_1_1_bot_1_1_connector_1_1_a_p_i_response.html" title="Microsoft.Bot.Connector.\lAPIResponse" alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_192.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_attachment"/>
+<map name="_microsoft_8_bot_8_connector_8_attachment" id="_microsoft_8_bot_8_connector_8_attachment">
+<area shape="rect" id="node1" href="d4/ded/class_microsoft_1_1_bot_1_1_connector_1_1_attachment.html" title="An attachment within an activity " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_193.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_attachment_data"/>
+<map name="_microsoft_8_bot_8_connector_8_attachment_data" id="_microsoft_8_bot_8_connector_8_attachment_data">
+<area shape="rect" id="node1" href="d4/dc3/class_microsoft_1_1_bot_1_1_connector_1_1_attachment_data.html" title="Attachment data " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_194.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_attachment_info"/>
+<map name="_microsoft_8_bot_8_connector_8_attachment_info" id="_microsoft_8_bot_8_connector_8_attachment_info">
+<area shape="rect" id="node1" href="d1/def/class_microsoft_1_1_bot_1_1_connector_1_1_attachment_info.html" title="Metdata for an attachment " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_195.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_attachment_layout_types"/>
+<map name="_microsoft_8_bot_8_connector_8_attachment_layout_types" id="_microsoft_8_bot_8_connector_8_attachment_layout_types">
+<area shape="rect" id="node1" href="d7/d87/class_microsoft_1_1_bot_1_1_connector_1_1_attachment_layout_types.html" title="Microsoft.Bot.Connector.\lAttachmentLayoutTypes" alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_196.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_attachments_extensions"/>
+<map name="_microsoft_8_bot_8_connector_8_attachments_extensions" id="_microsoft_8_bot_8_connector_8_attachments_extensions">
+<area shape="rect" id="node1" href="df/dfe/class_microsoft_1_1_bot_1_1_connector_1_1_attachments_extensions.html" title="Extension methods for Attachments. " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_197.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_attachment_view"/>
+<map name="_microsoft_8_bot_8_connector_8_attachment_view" id="_microsoft_8_bot_8_connector_8_attachment_view">
+<area shape="rect" id="node1" href="d0/d82/class_microsoft_1_1_bot_1_1_connector_1_1_attachment_view.html" title="Attachment View name and size " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_198.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_audio_card"/>
+<map name="_microsoft_8_bot_8_connector_8_audio_card" id="_microsoft_8_bot_8_connector_8_audio_card">
+<area shape="rect" id="node1" href="db/d71/class_microsoft_1_1_bot_1_1_connector_1_1_audio_card.html" title="A audio card " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_199.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_bot_authentication"/>
+<map name="_microsoft_8_bot_8_connector_8_bot_authentication" id="_microsoft_8_bot_8_connector_8_bot_authentication">
+<area shape="rect" id="node2" href="de/d2a/class_microsoft_1_1_bot_1_1_connector_1_1_bot_authentication.html" title="Microsoft.Bot.Connector.\lBotAuthentication" alt="" coords="191,5,357,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_200.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_bot_authenticator"/>
+<map name="_microsoft_8_bot_8_connector_8_bot_authenticator" id="_microsoft_8_bot_8_connector_8_bot_authenticator">
+<area shape="rect" id="node1" href="d6/dfd/class_microsoft_1_1_bot_1_1_connector_1_1_bot_authenticator.html" title="Microsoft.Bot.Connector.\lBotAuthenticator" alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_201.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_bot_data"/>
+<map name="_microsoft_8_bot_8_connector_8_bot_data" id="_microsoft_8_bot_8_connector_8_bot_data">
+<area shape="rect" id="node1" href="d3/dfa/class_microsoft_1_1_bot_1_1_connector_1_1_bot_data.html" title="Microsoft.Bot.Connector.\lBotData" alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_202.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_bot_state_extensions"/>
+<map name="_microsoft_8_bot_8_connector_8_bot_state_extensions" id="_microsoft_8_bot_8_connector_8_bot_state_extensions">
+<area shape="rect" id="node1" href="d4/d93/class_microsoft_1_1_bot_1_1_connector_1_1_bot_state_extensions.html" title="Extension methods for BotState. " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_203.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_card_action"/>
+<map name="_microsoft_8_bot_8_connector_8_card_action" id="_microsoft_8_bot_8_connector_8_card_action">
+<area shape="rect" id="node1" href="d3/d1f/class_microsoft_1_1_bot_1_1_connector_1_1_card_action.html" title="An action on a card " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_204.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_card_image"/>
+<map name="_microsoft_8_bot_8_connector_8_card_image" id="_microsoft_8_bot_8_connector_8_card_image">
+<area shape="rect" id="node1" href="dc/ddc/class_microsoft_1_1_bot_1_1_connector_1_1_card_image.html" title="An image on a card " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_205.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_channel_account"/>
+<map name="_microsoft_8_bot_8_connector_8_channel_account" id="_microsoft_8_bot_8_connector_8_channel_account">
+<area shape="rect" id="node1" href="dd/def/class_microsoft_1_1_bot_1_1_connector_1_1_channel_account.html" title="Channel account information needed to route a message " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_206.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_claims_identity_ex"/>
+<map name="_microsoft_8_bot_8_connector_8_claims_identity_ex" id="_microsoft_8_bot_8_connector_8_claims_identity_ex">
+<area shape="rect" id="node1" href="dc/d4a/class_microsoft_1_1_bot_1_1_connector_1_1_claims_identity_ex.html" title="Microsoft.Bot.Connector.\lClaimsIdentityEx" alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_207.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_connector_client"/>
+<map name="_microsoft_8_bot_8_connector_8_connector_client" id="_microsoft_8_bot_8_connector_8_connector_client">
+<area shape="rect" id="node2" href="db/d2f/struct_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_localized_scope.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.LocalizedScope" alt="" coords="143,5,337,47"/>
+<area shape="rect" id="node3" href="df/dd9/interface_microsoft_1_1_bot_1_1_connector_1_1_i_connector_client.html" title="﻿The Bot Connector REST API allows your bot to send and receive messages to channels configured in t..." alt="" coords="157,71,323,112"/>
+<area shape="rect" id="node5" href="dc/d97/interface_microsoft_1_1_bot_1_1_connector_1_1_i_state_client.html" title="The Bot State REST API allows your bot to store and retrieve state associated with conversations cond..." alt="" coords="157,188,323,229"/>
+<area shape="rect" id="node4" href="d9/d69/class_microsoft_1_1_bot_1_1_connector_1_1_connector_client.html" title="﻿The Bot Connector REST API allows your bot to send and receive messages to channels configured in t..." alt="" coords="385,84,552,125"/>
+<area shape="rect" id="node6" href="dd/dbc/class_microsoft_1_1_bot_1_1_connector_1_1_state_client.html" title="The Bot State REST API allows your bot to store and retrieve state associated with conversations cond..." alt="" coords="385,163,552,204"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_208.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_connector_client_extensions"/>
+<map name="_microsoft_8_bot_8_connector_8_connector_client_extensions" id="_microsoft_8_bot_8_connector_8_connector_client_extensions">
+<area shape="rect" id="node1" href="d4/d38/class_microsoft_1_1_bot_1_1_connector_1_1_connector_client_extensions.html" title="Microsoft.Bot.Connector.\lConnectorClientExtensions" alt="" coords="5,5,184,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_209.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_contact_relation_update_action_types"/>
+<map name="_microsoft_8_bot_8_connector_8_contact_relation_update_action_types" id="_microsoft_8_bot_8_connector_8_contact_relation_update_action_types">
+<area shape="rect" id="node1" href="da/ddd/class_microsoft_1_1_bot_1_1_connector_1_1_contact_relation_update_action_types.html" title="Microsoft.Bot.Connector.\lContactRelationUpdateActionTypes" alt="" coords="5,5,232,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_210.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_conversation_account"/>
+<map name="_microsoft_8_bot_8_connector_8_conversation_account" id="_microsoft_8_bot_8_connector_8_conversation_account">
+<area shape="rect" id="node1" href="d8/d48/class_microsoft_1_1_bot_1_1_connector_1_1_conversation_account.html" title="Channel account information for a conversation " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_211.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_conversation_parameters"/>
+<map name="_microsoft_8_bot_8_connector_8_conversation_parameters" id="_microsoft_8_bot_8_connector_8_conversation_parameters">
+<area shape="rect" id="node1" href="dd/d05/class_microsoft_1_1_bot_1_1_connector_1_1_conversation_parameters.html" title="Parameters for creating a new conversation " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_212.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_conversations_extensions"/>
+<map name="_microsoft_8_bot_8_connector_8_conversations_extensions" id="_microsoft_8_bot_8_connector_8_conversations_extensions">
+<area shape="rect" id="node1" href="d7/d08/class_microsoft_1_1_bot_1_1_connector_1_1_conversations_extensions.html" title="Extension methods for Conversations. " alt="" coords="5,5,173,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_213.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_entity"/>
+<map name="_microsoft_8_bot_8_connector_8_entity" id="_microsoft_8_bot_8_connector_8_entity">
+<area shape="rect" id="node1" href="d7/da5/class_microsoft_1_1_bot_1_1_connector_1_1_entity.html" title="Object of schema.org types " alt="" coords="5,5,172,47"/>
+<area shape="rect" id="node2" href="d7/d2e/class_microsoft_1_1_bot_1_1_connector_1_1_mention.html" title="Microsoft.Bot.Connector.\lMention" alt="" coords="220,5,387,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_214.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_error"/>
+<map name="_microsoft_8_bot_8_connector_8_error" id="_microsoft_8_bot_8_connector_8_error">
+<area shape="rect" id="node1" href="d6/d59/class_microsoft_1_1_bot_1_1_connector_1_1_error.html" title="Object representing error information " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_215.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_error_codes"/>
+<map name="_microsoft_8_bot_8_connector_8_error_codes" id="_microsoft_8_bot_8_connector_8_error_codes">
+<area shape="rect" id="node1" href="d7/df8/class_microsoft_1_1_bot_1_1_connector_1_1_error_codes.html" title="Error codes to communicate when throwing an APIException " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_216.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_error_handling"/>
+<map name="_microsoft_8_bot_8_connector_8_error_handling" id="_microsoft_8_bot_8_connector_8_error_handling">
+<area shape="rect" id="node1" href="d8/d23/class_microsoft_1_1_bot_1_1_connector_1_1_error_handling.html" title="Microsoft.Bot.Connector.\lErrorHandling" alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_217.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_error_response"/>
+<map name="_microsoft_8_bot_8_connector_8_error_response" id="_microsoft_8_bot_8_connector_8_error_response">
+<area shape="rect" id="node1" href="dc/d0e/class_microsoft_1_1_bot_1_1_connector_1_1_error_response.html" title="An HTTP API response " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_218.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_extensions"/>
+<map name="_microsoft_8_bot_8_connector_8_extensions" id="_microsoft_8_bot_8_connector_8_extensions">
+<area shape="rect" id="node1" href="d5/db7/class_microsoft_1_1_bot_1_1_connector_1_1_extensions.html" title="Microsoft.Bot.Connector.\lExtensions" alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_219.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_fact"/>
+<map name="_microsoft_8_bot_8_connector_8_fact" id="_microsoft_8_bot_8_connector_8_fact">
+<area shape="rect" id="node1" href="d7/d3e/class_microsoft_1_1_bot_1_1_connector_1_1_fact.html" title="Set of key&#45;value pairs. Advantage of this section is that key and value properties will be rendered w..." alt="" coords="5,5,197,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_220.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_geo_coordinates"/>
+<map name="_microsoft_8_bot_8_connector_8_geo_coordinates" id="_microsoft_8_bot_8_connector_8_geo_coordinates">
+<area shape="rect" id="node1" href="d5/d2b/class_microsoft_1_1_bot_1_1_connector_1_1_geo_coordinates.html" title="GeoCoordinates (entity type: &quot;https://schema.org/GeoCoordinates&quot;) " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_221.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_hero_card"/>
+<map name="_microsoft_8_bot_8_connector_8_hero_card" id="_microsoft_8_bot_8_connector_8_hero_card">
+<area shape="rect" id="node1" href="d4/dab/class_microsoft_1_1_bot_1_1_connector_1_1_hero_card.html" title="A Hero card (card with a single, large image) " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_222.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_http_client_ex"/>
+<map name="_microsoft_8_bot_8_connector_8_http_client_ex" id="_microsoft_8_bot_8_connector_8_http_client_ex">
+<area shape="rect" id="node1" href="da/dac/class_microsoft_1_1_bot_1_1_connector_1_1_http_client_ex.html" title="Microsoft.Bot.Connector.\lHttpClientEx" alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_223.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_i_activity"/>
+<map name="_microsoft_8_bot_8_connector_8_i_activity" id="_microsoft_8_bot_8_connector_8_i_activity">
+<area shape="rect" id="node1" href="de/d19/interface_microsoft_1_1_bot_1_1_connector_1_1_i_activity.html" title="basic shared properties for all activities " alt="" coords="5,178,172,219"/>
+<area shape="rect" id="node2" href="dc/d2f/class_microsoft_1_1_bot_1_1_connector_1_1_activity.html" title="An Activity is the basic communication type for the Bot Framework 3.0 protocol " alt="" coords="468,178,635,219"/>
+<area shape="rect" id="node3" href="d7/d39/interface_microsoft_1_1_bot_1_1_connector_1_1_i_contact_relation_update_activity.html" title="Someone has updated their contact list " alt="" coords="220,47,420,88"/>
+<area shape="rect" id="node4" href="dc/ddf/interface_microsoft_1_1_bot_1_1_connector_1_1_i_conversation_update_activity.html" title="The Properties of a conversation are different " alt="" coords="229,112,411,154"/>
+<area shape="rect" id="node5" href="d5/d26/interface_microsoft_1_1_bot_1_1_connector_1_1_i_end_of_conversation_activity.html" title="Conversation is ending, or a request to end the conversation " alt="" coords="231,178,409,219"/>
+<area shape="rect" id="node6" href="d1/de8/interface_microsoft_1_1_bot_1_1_connector_1_1_i_message_activity.html" title="Someone has added a message to the conversation " alt="" coords="237,243,403,284"/>
+<area shape="rect" id="node7" href="d9/dd3/interface_microsoft_1_1_bot_1_1_connector_1_1_i_trigger_activity.html" title="Activity generated by external sources with open ended value payload " alt="" coords="237,308,403,350"/>
+<area shape="rect" id="node8" href="d8/d45/interface_microsoft_1_1_bot_1_1_connector_1_1_i_typing_activity.html" title="The From address is typing " alt="" coords="237,374,403,415"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_224.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_i_conversations"/>
+<map name="_microsoft_8_bot_8_connector_8_i_conversations" id="_microsoft_8_bot_8_connector_8_i_conversations">
+<area shape="rect" id="node2" href="da/dc6/class_microsoft_1_1_bot_1_1_connector_1_1_attachments.html" title="Attachments operations. " alt="" coords="220,19,387,60"/>
+<area shape="rect" id="node3" href="d1/dd8/class_microsoft_1_1_bot_1_1_connector_1_1_bot_state.html" title="BotState operations. " alt="" coords="220,97,387,139"/>
+<area shape="rect" id="node4" href="da/ddd/class_microsoft_1_1_bot_1_1_connector_1_1_conversations.html" title="Conversations operations. " alt="" coords="220,175,387,216"/>
+<area shape="rect" id="node5" href="d5/d77/interface_microsoft_1_1_bot_1_1_connector_1_1_i_attachments.html" title="Attachments operations. " alt="" coords="5,5,172,47"/>
+<area shape="rect" id="node6" href="d8/dcc/interface_microsoft_1_1_bot_1_1_connector_1_1_i_bot_state.html" title="BotState operations. " alt="" coords="5,123,172,164"/>
+<area shape="rect" id="node7" href="de/d95/interface_microsoft_1_1_bot_1_1_connector_1_1_i_conversations.html" title="Conversations operations. " alt="" coords="5,188,172,229"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_225.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_i_credential_provider"/>
+<map name="_microsoft_8_bot_8_connector_8_i_credential_provider" id="_microsoft_8_bot_8_connector_8_i_credential_provider">
+<area shape="rect" id="node1" href="d3/d4a/interface_microsoft_1_1_bot_1_1_connector_1_1_i_credential_provider.html" title="Microsoft.Bot.Connector.\lICredentialProvider" alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_226.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_jwt_config"/>
+<map name="_microsoft_8_bot_8_connector_8_jwt_config" id="_microsoft_8_bot_8_connector_8_jwt_config">
+<area shape="rect" id="node1" href="da/da9/class_microsoft_1_1_bot_1_1_connector_1_1_jwt_config.html" title="Configuration for JWT tokens " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_227.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_jwt_token_extractor"/>
+<map name="_microsoft_8_bot_8_connector_8_jwt_token_extractor" id="_microsoft_8_bot_8_connector_8_jwt_token_extractor">
+<area shape="rect" id="node1" href="d3/dfc/class_microsoft_1_1_bot_1_1_connector_1_1_jwt_token_extractor.html" title="Microsoft.Bot.Connector.\lJwtTokenExtractor" alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_228.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_jwt_token_refresher"/>
+<map name="_microsoft_8_bot_8_connector_8_jwt_token_refresher" id="_microsoft_8_bot_8_connector_8_jwt_token_refresher">
+<area shape="rect" id="node2" href="d2/da8/class_microsoft_1_1_bot_1_1_connector_1_1_jwt_token_refresher.html" title="Microsoft.Bot.Connector.\lJwtTokenRefresher" alt="" coords="180,5,347,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_229.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_media_url"/>
+<map name="_microsoft_8_bot_8_connector_8_media_url" id="_microsoft_8_bot_8_connector_8_media_url">
+<area shape="rect" id="node1" href="df/d34/class_microsoft_1_1_bot_1_1_connector_1_1_media_url.html" title="MediaUrl data " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_230.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_microsoft_app_credentials"/>
+<map name="_microsoft_8_bot_8_connector_8_microsoft_app_credentials" id="_microsoft_8_bot_8_connector_8_microsoft_app_credentials">
+<area shape="rect" id="node2" href="db/d61/class_microsoft_1_1_bot_1_1_connector_1_1_microsoft_app_credentials.html" title="Microsoft.Bot.Connector.\lMicrosoftAppCredentials" alt="" coords="216,5,383,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_231.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_place"/>
+<map name="_microsoft_8_bot_8_connector_8_place" id="_microsoft_8_bot_8_connector_8_place">
+<area shape="rect" id="node1" href="de/d42/class_microsoft_1_1_bot_1_1_connector_1_1_place.html" title="Place (entity type: &quot;https://schema.org/Place&quot;) " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_232.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_receipt_card"/>
+<map name="_microsoft_8_bot_8_connector_8_receipt_card" id="_microsoft_8_bot_8_connector_8_receipt_card">
+<area shape="rect" id="node1" href="d0/df9/class_microsoft_1_1_bot_1_1_connector_1_1_receipt_card.html" title="A receipt card " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_233.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_receipt_item"/>
+<map name="_microsoft_8_bot_8_connector_8_receipt_item" id="_microsoft_8_bot_8_connector_8_receipt_item">
+<area shape="rect" id="node1" href="d4/dfd/class_microsoft_1_1_bot_1_1_connector_1_1_receipt_item.html" title="An item on a receipt card " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_234.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_resource_response"/>
+<map name="_microsoft_8_bot_8_connector_8_resource_response" id="_microsoft_8_bot_8_connector_8_resource_response">
+<area shape="rect" id="node1" href="de/df8/class_microsoft_1_1_bot_1_1_connector_1_1_resource_response.html" title="A response containing a resource ID " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_235.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_signin_card"/>
+<map name="_microsoft_8_bot_8_connector_8_signin_card" id="_microsoft_8_bot_8_connector_8_signin_card">
+<area shape="rect" id="node1" href="dc/d03/class_microsoft_1_1_bot_1_1_connector_1_1_signin_card.html" title="A card representing a request to sign in " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_236.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_state_client_extensions"/>
+<map name="_microsoft_8_bot_8_connector_8_state_client_extensions" id="_microsoft_8_bot_8_connector_8_state_client_extensions">
+<area shape="rect" id="node1" href="d1/d4d/class_microsoft_1_1_bot_1_1_connector_1_1_state_client_extensions.html" title="Microsoft.Bot.Connector.\lStateClientExtensions" alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_237.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_text_format_types"/>
+<map name="_microsoft_8_bot_8_connector_8_text_format_types" id="_microsoft_8_bot_8_connector_8_text_format_types">
+<area shape="rect" id="node1" href="da/df9/class_microsoft_1_1_bot_1_1_connector_1_1_text_format_types.html" title="Microsoft.Bot.Connector.\lTextFormatTypes" alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_238.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_thumbnail_card"/>
+<map name="_microsoft_8_bot_8_connector_8_thumbnail_card" id="_microsoft_8_bot_8_connector_8_thumbnail_card">
+<area shape="rect" id="node1" href="da/da6/class_microsoft_1_1_bot_1_1_connector_1_1_thumbnail_card.html" title="A thumbnail card (card with a single, small thumbnail image) " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_239.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_thumbnail_url"/>
+<map name="_microsoft_8_bot_8_connector_8_thumbnail_url" id="_microsoft_8_bot_8_connector_8_thumbnail_url">
+<area shape="rect" id="node1" href="df/d36/class_microsoft_1_1_bot_1_1_connector_1_1_thumbnail_url.html" title="Object describing a media thumbnail " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_240.png" border="0" alt="" usemap="#_microsoft_8_bot_8_connector_8_video_card"/>
+<map name="_microsoft_8_bot_8_connector_8_video_card" id="_microsoft_8_bot_8_connector_8_video_card">
+<area shape="rect" id="node1" href="d6/da6/class_microsoft_1_1_bot_1_1_connector_1_1_video_card.html" title="A video card " alt="" coords="5,5,172,47"/>
+</map>
+</td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.11-->
+<!-- start footer part -->
+<!-- id is needed for treeview function! -->
+<div class="outline footer">
+    <ul>
+        <li><a href="//aka.ms/bf-contactus">Contact us</a></li>
+        <li><a href="//aka.ms/bf-privacy">Privacy & cookies</a></li>
+        <li><a href="//aka.ms/bf-terms">Terms of use</a></li>
+        <li><a href="//aka.ms/bf-conduct">Code of conduct</a></li>
+        <li>&copy; 2016 Microsoft</li>
+    </ul>
+</div>
+<script src="//bot-framework.azureedge.net/libs/svgxuse.js"></script>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100954936); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100954936ns.gif" /></p></noscript>
+</body>
+</html>

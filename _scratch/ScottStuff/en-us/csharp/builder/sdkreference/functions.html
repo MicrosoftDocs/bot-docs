@@ -1,0 +1,252 @@
+<!-- HTML header for doxygen 1.8.11-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Class Members | Bot Builder SDK C# Reference Library | Bot Framework</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="botframework.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/css/documentation.css?1" />
+    <script type="text/javascript" src="/css/documents.js"></script>
+    <!-- START OF SmartSource Data Collector TAG v10.4.23 -->
+    <!-- Copyright (c) 2016 Webtrends Inc.  All rights reserved. -->
+    <script type="text/javascript" src="/js/webtrends.load.js"></script>
+    <!--
+      appInsights
+    -->
+    <script type="text/javascript">
+    var appInsights=window.appInsights||function(config){
+      function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+      }({
+          instrumentationKey:"ecf7f29d-de8c-4169-a492-bdce0a32c300"
+      });
+      window.appInsights=appInsights;
+      appInsights.trackPageView();
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var sidenav = $('#side-nav');
+            sidenav.before('<div id="content-container" class="outline"></div>');
+            var doccontent = $('#doc-content');
+			var contentcontainer = $('#content-container');
+            contentcontainer.append(sidenav);
+            contentcontainer.append(doccontent);
+            doccontent.prepend($('#referenceSearch'));
+			var top = $('#top');
+			top.before('<div class="fullWidth"></div>');
+			var fullwidth = $('div.fullWidth');
+			fullwidth.before('<div id="app-body"></div>');
+			fullwidth.append(top);
+			fullwidth.append(contentcontainer);
+			fullwidth.append($('.footer'));
+			var appbody = $('#app-body');
+			appbody.append(fullwidth);
+			var navtreecontents = $('#nav-tree-contents');
+			navtreecontents.prepend('<ul><li><div class="label"><a href="/">&lt; Documentation Home</a></div></li></ul>');
+			//sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            //sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><select id="lang-select" name="lang" ><option value="">All</option><option value="node">Node.js</option><option value="csharp">.NET</option></select><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            setProgrammingLanguage();
+			$('#MSearchField').removeAttr('value').attr('placeholder', 'Search the Bot Builder SDK C# reference');
+        });
+    </script>
+</head>
+<body>
+    <div id="referenceSearch"></div>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div>
+            <header>
+                <div class="outline">
+                    <div class="header">
+                        <a class="logo" href="//www.microsoft.com">
+                            <svg class="svgicon svgicon-microsoft-color-logo">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/symbol-defs.svg#svgicon-microsoft-color-logo"></use>
+                            </svg>
+                        </a>
+                        <div class="loading-animation"></div>
+                        <span class="environment"></span>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="brand-primary">
+                <div class="jumbo">
+                    <div class="jumbo-header"><a href="https://www.botframework.com/">Bot Framework</a></div>
+                    <ul class="header-nav">
+                        <li><a href="https://dev.botframework.com/#/bots">My bots</a></li>
+                        <li><a href="https://dev.botframework.com/#/bots/new">Register a bot</a></li>
+                        <li class="active"><a href="/">Documentation</a></li>
+                        <li><a href="https://bots.botframework.com/">Bot Directory</a></li>
+                        <li><a href="https://blog.botframework.com/">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header part -->
+</body>
+</html><!-- Generated by Doxygen 1.8.11 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions.html','');});
+</script>
+<div id="doc-content">
+<div class="contents">
+<div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
+
+<h3><a class="anchor" id="index__"></a>- _ -</h3><ul>
+<li>_allowsMultiple
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#acca4f4dd469f9b5f8c33055c1e8489a6">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>_arrayTranslations
+: <a class="el" href="de/dd0/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_localizer.html#ae8c6f90e4865b0152ab821fd3a915c00">Microsoft.Bot.Builder.FormFlow.Advanced.Localizer</a>
+</li>
+<li>_builder
+: <a class="el" href="d1/db2/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_json_1_1_field_json.html#a4c4f0db38749ba318be7c980cf0c970b">Microsoft.Bot.Builder.FormFlow.Json.FieldJson</a>
+</li>
+<li>_buildPrompts
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a7da51f682b9be0bab3dcda0a5f6bf3ec">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>_condition
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#aa979d4cba95d782137d0d7422a734182">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>_define
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a871ce8afe35f9b1ec50da2b162ccfd30">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>_dependencies
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#ad191f3dbad02292f2a5048ccd0266ae6">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>_description
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#add27f5a4bf53a22ea924ff4c0db499c3">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>_field
+: <a class="el" href="d8/d6e/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_recognize_primitive.html#a399ffbdf5cf6da55d74012a703bdb2d7">Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive&lt; T &gt;</a>
+</li>
+<li>_fields
+: <a class="el" href="d9/d37/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_fields.html#a75b84b075b5ddedee5fe6956c5b184b9">Microsoft.Bot.Builder.FormFlow.Advanced.Fields&lt; T &gt;</a>
+</li>
+<li>_form
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a8133143399770c5c253bce00daf25c9e">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>_help
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#af75346de43645d72f4293da9c96ec944">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>_ignoreAnnotations
+: <a class="el" href="d0/db3/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field_reflector.html#a14717d521aba865fd88b53dfa2b69162">Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector&lt; T &gt;</a>
+</li>
+<li>_isNullable
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#aa6cf48aab0286bf46797d89b8ca120e1">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>_keepZero
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#af89b70bcb9e9f4b58e4090c0a7b3d32f">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>_limited
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a81e70fe26abb33affecb82a7bd5f02d8">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>_min
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#ab4b1c00074dda6dcaaf549c658fe256e">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>_name
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a40c42df18b3badd7ecb25288b6185e6f">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>_next
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a278613a78f3fc0ab94a25ad58dc3321a">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>_optional
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a0d4b8942765c7dea09b5ddbea7f7156b">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>_path
+: <a class="el" href="d0/db3/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field_reflector.html#a301d717137f1eeed44109e0f68259fe6">Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector&lt; T &gt;</a>
+</li>
+<li>_pattern
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a62701607d07101458af60cd1b4231d13">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>_prompt
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a3508758b8558729f4934a5395c29395c">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>_promptDefinition
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a5b24062b819e249f4271e18fb92b0e56">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>_promptSet
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#ac4dd25b1a3ed2610d8da4075fa9f3e49">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>_recognizer
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#ae3f9f05d6238a8c85fcbab2accab4543">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>_role
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a25f7ef15490a5ad87a13385dafe1fae3">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>_templates
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#af82696b2f5b6864c374299717d6d1f9a">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>_templateTranslations
+: <a class="el" href="de/dd0/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_localizer.html#aa50f36e9579ddfc121a54852acc625a9">Microsoft.Bot.Builder.FormFlow.Advanced.Localizer</a>
+</li>
+<li>_terms
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#aec0fcf00a33078ea32b11298fce71c8f">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>_translations
+: <a class="el" href="de/dd0/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_localizer.html#a935e367694780da909818ad53955229e">Microsoft.Bot.Builder.FormFlow.Advanced.Localizer</a>
+</li>
+<li>_type
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#ad9a937966e850eb42541e711d488d7a7">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>_validate
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a855172453d412424545d4029e56cea1c">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>_valueDescriptions
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a3666c8aee0dada6ab8b6994f4183ee05">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+<li>_valueTerms
+: <a class="el" href="d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#ad6a701a407e717782f6167271efffa3e">Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;</a>
+</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.11-->
+<!-- start footer part -->
+<!-- id is needed for treeview function! -->
+<div class="outline footer">
+    <ul>
+        <li><a href="//aka.ms/bf-contactus">Contact us</a></li>
+        <li><a href="//aka.ms/bf-privacy">Privacy & cookies</a></li>
+        <li><a href="//aka.ms/bf-terms">Terms of use</a></li>
+        <li><a href="//aka.ms/bf-conduct">Code of conduct</a></li>
+        <li>&copy; 2016 Microsoft</li>
+    </ul>
+</div>
+<script src="//bot-framework.azureedge.net/libs/svgxuse.js"></script>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100954936); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100954936ns.gif" /></p></noscript>
+</body>
+</html>

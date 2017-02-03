@@ -1,0 +1,4 @@
+var class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_j_object_surrogate =
+[
+    [ "JObjectSurrogate", "d8/da0/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_j_object_surrogate.html#aff968116f868e5cf40a3fcc2ccab9aef", null ]
+];

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="48px" viewBox="0 0 32 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>flipper-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy-4" transform="translate(-1131.000000, -621.000000)">
+            <g id="flipper-right" transform="translate(1131.000000, 621.000000)">
+                <rect id="Rectangle-9-Copy" fill="#3A96DD" x="0" y="0" width="32" height="48"></rect>
+                <polyline id="Fill-14-Copy" fill="#FFFFFF" transform="translate(17.196239, 24.000000) scale(-1, -1) rotate(180.000000) translate(-17.196239, -24.000000) " points="13.6766402 16 13 16.7060593 20.0178019 24.0006686 13 31.2952779 13.6766402 32 21.3924781 24.0006686 13.6766402 16"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+var namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc =
+[
+    [ "ApplicationState", "de/d79/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_application_state.html", "de/d79/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_application_state" ],
+    [ "JSONConstants", "da/dad/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_j_s_o_n_constants.html", "da/dad/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_j_s_o_n_constants" ],
+    [ "JsonCreationConverter", "d6/d88/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_json_creation_converter.html", "d6/d88/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_json_creation_converter" ],
+    [ "MaxValues", "dd/de1/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_max_values.html", "dd/de1/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_max_values" ],
+    [ "MinValues", "dd/d60/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_min_values.html", "dd/d60/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_min_values" ],
+    [ "MultiPartConstants", "d5/d42/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_multi_part_constants.html", "d5/d42/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_multi_part_constants" ],
+    [ "Serializer", "d9/d80/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer.html", "d9/d80/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer" ],
+    [ "StringEnumConverterWithDefault", "d7/d72/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_string_enum_converter_with_default.html", "d7/d72/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_string_enum_converter_with_default" ],
+    [ "Utils", "d4/d77/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_utils.html", "d4/d77/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_utils" ]
+];

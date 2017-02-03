@@ -1,0 +1,163 @@
+<!-- HTML header for doxygen 1.8.11-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>CardEx.cs Source File | Bot Builder SDK C# Reference Library | Bot Framework</title>
+    <link href="../../tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../jquery.js"></script>
+    <script type="text/javascript" src="../../dynsections.js"></script>
+    <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+    <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="../../botframework.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/css/documentation.css?1" />
+    <script type="text/javascript" src="/css/documents.js"></script>
+    <!-- START OF SmartSource Data Collector TAG v10.4.23 -->
+    <!-- Copyright (c) 2016 Webtrends Inc.  All rights reserved. -->
+    <script type="text/javascript" src="/js/webtrends.load.js"></script>
+    <!--
+      appInsights
+    -->
+    <script type="text/javascript">
+    var appInsights=window.appInsights||function(config){
+      function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+      }({
+          instrumentationKey:"ecf7f29d-de8c-4169-a492-bdce0a32c300"
+      });
+      window.appInsights=appInsights;
+      appInsights.trackPageView();
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var sidenav = $('#side-nav');
+            sidenav.before('<div id="content-container" class="outline"></div>');
+            var doccontent = $('#doc-content');
+			var contentcontainer = $('#content-container');
+            contentcontainer.append(sidenav);
+            contentcontainer.append(doccontent);
+            doccontent.prepend($('#referenceSearch'));
+			var top = $('#top');
+			top.before('<div class="fullWidth"></div>');
+			var fullwidth = $('div.fullWidth');
+			fullwidth.before('<div id="app-body"></div>');
+			fullwidth.append(top);
+			fullwidth.append(contentcontainer);
+			fullwidth.append($('.footer'));
+			var appbody = $('#app-body');
+			appbody.append(fullwidth);
+			var navtreecontents = $('#nav-tree-contents');
+			navtreecontents.prepend('<ul><li><div class="label"><a href="/">&lt; Documentation Home</a></div></li></ul>');
+			//sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            //sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><select id="lang-select" name="lang" ><option value="">All</option><option value="node">Node.js</option><option value="csharp">.NET</option></select><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            setProgrammingLanguage();
+			$('#MSearchField').removeAttr('value').attr('placeholder', 'Search the Bot Builder SDK C# reference');
+        });
+    </script>
+</head>
+<body>
+    <div id="referenceSearch"></div>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div>
+            <header>
+                <div class="outline">
+                    <div class="header">
+                        <a class="logo" href="//www.microsoft.com">
+                            <svg class="svgicon svgicon-microsoft-color-logo">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/symbol-defs.svg#svgicon-microsoft-color-logo"></use>
+                            </svg>
+                        </a>
+                        <div class="loading-animation"></div>
+                        <span class="environment"></span>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="brand-primary">
+                <div class="jumbo">
+                    <div class="jumbo-header"><a href="https://www.botframework.com/">Bot Framework</a></div>
+                    <ul class="header-nav">
+                        <li><a href="https://dev.botframework.com/#/bots">My bots</a></li>
+                        <li><a href="https://dev.botframework.com/#/bots/new">Register a bot</a></li>
+                        <li class="active"><a href="/">Documentation</a></li>
+                        <li><a href="https://bots.botframework.com/">Bot Directory</a></li>
+                        <li><a href="https://blog.botframework.com/">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header part -->
+</body>
+</html><!-- Generated by Doxygen 1.8.11 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d5/db0/_card_ex_8cs_source.html','../../');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">CardEx.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> <a class="code" href="../../d8/dd0/namespace_system.html">System</a>;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> <a class="code" href="../../d8/dd0/namespace_system.html">System</a>.Collections.Generic;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> <a class="code" href="../../d8/dd0/namespace_system.html">System</a>.Linq;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> <a class="code" href="../../d8/dd0/namespace_system.html">System</a>.Text;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> <a class="code" href="../../d8/dd0/namespace_system.html">System</a>.Threading.Tasks;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d7/d4e/namespace_microsoft.html">Microsoft</a>.Bot.Connector</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="../../d5/db7/class_microsoft_1_1_bot_1_1_connector_1_1_extensions.html">    9</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">partial class </span><a class="code" href="../../d5/db7/class_microsoft_1_1_bot_1_1_connector_1_1_extensions.html">Extensions</a></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    {</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../d5/db7/class_microsoft_1_1_bot_1_1_connector_1_1_extensions.html#a771db569d66fa81b29d4d9774a6b038b">   16</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="../../d4/ded/class_microsoft_1_1_bot_1_1_connector_1_1_attachment.html">Attachment</a> <a class="code" href="../../d5/db7/class_microsoft_1_1_bot_1_1_connector_1_1_extensions.html#a771db569d66fa81b29d4d9774a6b038b">ToAttachment</a>(<span class="keyword">this</span> <a class="code" href="../../d4/dab/class_microsoft_1_1_bot_1_1_connector_1_1_hero_card.html">HeroCard</a> card)</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="../../d4/ded/class_microsoft_1_1_bot_1_1_connector_1_1_attachment.html">Attachment</a></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                Content = card,</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                ContentType = <a class="code" href="../../d4/dab/class_microsoft_1_1_bot_1_1_connector_1_1_hero_card.html">HeroCard</a>.<a class="code" href="../../d4/dab/class_microsoft_1_1_bot_1_1_connector_1_1_hero_card.html#a4a9195e718cb66a303a3e108a1730b4d">ContentType</a></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            };</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../d5/db7/class_microsoft_1_1_bot_1_1_connector_1_1_extensions.html#aa7fad99e43434bdd5418a0c028907f46">   30</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="../../d4/ded/class_microsoft_1_1_bot_1_1_connector_1_1_attachment.html">Attachment</a> <a class="code" href="../../d5/db7/class_microsoft_1_1_bot_1_1_connector_1_1_extensions.html#aa7fad99e43434bdd5418a0c028907f46">ToAttachment</a>(<span class="keyword">this</span> <a class="code" href="../../da/da6/class_microsoft_1_1_bot_1_1_connector_1_1_thumbnail_card.html">ThumbnailCard</a> card)</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="../../d4/ded/class_microsoft_1_1_bot_1_1_connector_1_1_attachment.html">Attachment</a></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                Content = card,</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                ContentType = <a class="code" href="../../da/da6/class_microsoft_1_1_bot_1_1_connector_1_1_thumbnail_card.html">ThumbnailCard</a>.<a class="code" href="../../da/da6/class_microsoft_1_1_bot_1_1_connector_1_1_thumbnail_card.html#a0070e194f8657763594b2454d65e32e0">ContentType</a></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            };</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../d5/db7/class_microsoft_1_1_bot_1_1_connector_1_1_extensions.html#a8146882fb6e59b6fe095c696924ddec7">   44</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="../../d4/ded/class_microsoft_1_1_bot_1_1_connector_1_1_attachment.html">Attachment</a> <a class="code" href="../../d5/db7/class_microsoft_1_1_bot_1_1_connector_1_1_extensions.html#a8146882fb6e59b6fe095c696924ddec7">ToAttachment</a>(<span class="keyword">this</span> <a class="code" href="../../dc/d03/class_microsoft_1_1_bot_1_1_connector_1_1_signin_card.html">SigninCard</a> card)</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        {</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="../../d4/ded/class_microsoft_1_1_bot_1_1_connector_1_1_attachment.html">Attachment</a></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            {</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                Content = card,</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                ContentType = <a class="code" href="../../dc/d03/class_microsoft_1_1_bot_1_1_connector_1_1_signin_card.html">SigninCard</a>.<a class="code" href="../../dc/d03/class_microsoft_1_1_bot_1_1_connector_1_1_signin_card.html#a18613603602cd6eb725a6d97cca2c29c">ContentType</a></div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            };</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="../../d5/db7/class_microsoft_1_1_bot_1_1_connector_1_1_extensions.html#a9f096fba99ef54f93517276501ac60e5">   58</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="../../d4/ded/class_microsoft_1_1_bot_1_1_connector_1_1_attachment.html">Attachment</a> <a class="code" href="../../d5/db7/class_microsoft_1_1_bot_1_1_connector_1_1_extensions.html#a9f096fba99ef54f93517276501ac60e5">ToAttachment</a>(<span class="keyword">this</span> <a class="code" href="../../d0/df9/class_microsoft_1_1_bot_1_1_connector_1_1_receipt_card.html">ReceiptCard</a> card)</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="../../d4/ded/class_microsoft_1_1_bot_1_1_connector_1_1_attachment.html">Attachment</a></div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            {</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                Content = card,</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                ContentType = <a class="code" href="../../d0/df9/class_microsoft_1_1_bot_1_1_connector_1_1_receipt_card.html">ReceiptCard</a>.<a class="code" href="../../d0/df9/class_microsoft_1_1_bot_1_1_connector_1_1_receipt_card.html#a3ace555fe9476e8ad38e315c86e44f7d">ContentType</a></div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            };</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div><div class="ttc" id="class_microsoft_1_1_bot_1_1_connector_1_1_extensions_html_aa7fad99e43434bdd5418a0c028907f46"><div class="ttname"><a href="../../d5/db7/class_microsoft_1_1_bot_1_1_connector_1_1_extensions.html#aa7fad99e43434bdd5418a0c028907f46">Microsoft.Bot.Connector.Extensions.ToAttachment</a></div><div class="ttdeci">static Attachment ToAttachment(this ThumbnailCard card)</div><div class="ttdoc">Creates a new attachment from ThumbnailCard. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db0/_card_ex_8cs_source.html#l00030">CardEx.cs:30</a></div></div>
+<div class="ttc" id="class_microsoft_1_1_bot_1_1_connector_1_1_hero_card_html_a4a9195e718cb66a303a3e108a1730b4d"><div class="ttname"><a href="../../d4/dab/class_microsoft_1_1_bot_1_1_connector_1_1_hero_card.html#a4a9195e718cb66a303a3e108a1730b4d">Microsoft.Bot.Connector.HeroCard.ContentType</a></div><div class="ttdeci">const string ContentType</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/_additional_properties_8cs_source.html#l00016">AdditionalProperties.cs:16</a></div></div>
+<div class="ttc" id="class_microsoft_1_1_bot_1_1_connector_1_1_signin_card_html"><div class="ttname"><a href="../../dc/d03/class_microsoft_1_1_bot_1_1_connector_1_1_signin_card.html">Microsoft.Bot.Connector.SigninCard</a></div><div class="ttdoc">A card representing a request to sign in </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/_additional_properties_8cs_source.html#l00024">AdditionalProperties.cs:24</a></div></div>
+<div class="ttc" id="namespace_system_html"><div class="ttname"><a href="../../d8/dd0/namespace_system.html">System</a></div></div>
+<div class="ttc" id="class_microsoft_1_1_bot_1_1_connector_1_1_extensions_html_a8146882fb6e59b6fe095c696924ddec7"><div class="ttname"><a href="../../d5/db7/class_microsoft_1_1_bot_1_1_connector_1_1_extensions.html#a8146882fb6e59b6fe095c696924ddec7">Microsoft.Bot.Connector.Extensions.ToAttachment</a></div><div class="ttdeci">static Attachment ToAttachment(this SigninCard card)</div><div class="ttdoc">Creates a new attachment from SigninCard. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db0/_card_ex_8cs_source.html#l00044">CardEx.cs:44</a></div></div>
+<div class="ttc" id="namespace_microsoft_html"><div class="ttname"><a href="../../d7/d4e/namespace_microsoft.html">Microsoft</a></div></div>
+<div class="ttc" id="class_microsoft_1_1_bot_1_1_connector_1_1_receipt_card_html"><div class="ttname"><a href="../../d0/df9/class_microsoft_1_1_bot_1_1_connector_1_1_receipt_card.html">Microsoft.Bot.Connector.ReceiptCard</a></div><div class="ttdoc">A receipt card </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/_additional_properties_8cs_source.html#l00019">AdditionalProperties.cs:19</a></div></div>
+<div class="ttc" id="class_microsoft_1_1_bot_1_1_connector_1_1_signin_card_html_a18613603602cd6eb725a6d97cca2c29c"><div class="ttname"><a href="../../dc/d03/class_microsoft_1_1_bot_1_1_connector_1_1_signin_card.html#a18613603602cd6eb725a6d97cca2c29c">Microsoft.Bot.Connector.SigninCard.ContentType</a></div><div class="ttdeci">const string ContentType</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/_additional_properties_8cs_source.html#l00026">AdditionalProperties.cs:26</a></div></div>
+<div class="ttc" id="class_microsoft_1_1_bot_1_1_connector_1_1_extensions_html"><div class="ttname"><a href="../../d5/db7/class_microsoft_1_1_bot_1_1_connector_1_1_extensions.html">Microsoft.Bot.Connector.Extensions</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db0/_card_ex_8cs_source.html#l00009">CardEx.cs:9</a></div></div>
+<div class="ttc" id="class_microsoft_1_1_bot_1_1_connector_1_1_extensions_html_a771db569d66fa81b29d4d9774a6b038b"><div class="ttname"><a href="../../d5/db7/class_microsoft_1_1_bot_1_1_connector_1_1_extensions.html#a771db569d66fa81b29d4d9774a6b038b">Microsoft.Bot.Connector.Extensions.ToAttachment</a></div><div class="ttdeci">static Attachment ToAttachment(this HeroCard card)</div><div class="ttdoc">Creates a new attachment from HeroCard. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db0/_card_ex_8cs_source.html#l00016">CardEx.cs:16</a></div></div>
+<div class="ttc" id="class_microsoft_1_1_bot_1_1_connector_1_1_thumbnail_card_html_a0070e194f8657763594b2454d65e32e0"><div class="ttname"><a href="../../da/da6/class_microsoft_1_1_bot_1_1_connector_1_1_thumbnail_card.html#a0070e194f8657763594b2454d65e32e0">Microsoft.Bot.Connector.ThumbnailCard.ContentType</a></div><div class="ttdeci">const string ContentType</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/_additional_properties_8cs_source.html#l00011">AdditionalProperties.cs:11</a></div></div>
+<div class="ttc" id="class_microsoft_1_1_bot_1_1_connector_1_1_attachment_html"><div class="ttname"><a href="../../d4/ded/class_microsoft_1_1_bot_1_1_connector_1_1_attachment.html">Microsoft.Bot.Connector.Attachment</a></div><div class="ttdoc">An attachment within an activity </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d96/_attachment_8cs_source.html#l00017">Attachment.cs:17</a></div></div>
+<div class="ttc" id="class_microsoft_1_1_bot_1_1_connector_1_1_extensions_html_a9f096fba99ef54f93517276501ac60e5"><div class="ttname"><a href="../../d5/db7/class_microsoft_1_1_bot_1_1_connector_1_1_extensions.html#a9f096fba99ef54f93517276501ac60e5">Microsoft.Bot.Connector.Extensions.ToAttachment</a></div><div class="ttdeci">static Attachment ToAttachment(this ReceiptCard card)</div><div class="ttdoc">Creates a new attachment from ReceiptCard. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db0/_card_ex_8cs_source.html#l00058">CardEx.cs:58</a></div></div>
+<div class="ttc" id="class_microsoft_1_1_bot_1_1_connector_1_1_receipt_card_html_a3ace555fe9476e8ad38e315c86e44f7d"><div class="ttname"><a href="../../d0/df9/class_microsoft_1_1_bot_1_1_connector_1_1_receipt_card.html#a3ace555fe9476e8ad38e315c86e44f7d">Microsoft.Bot.Connector.ReceiptCard.ContentType</a></div><div class="ttdeci">const string ContentType</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/_additional_properties_8cs_source.html#l00021">AdditionalProperties.cs:21</a></div></div>
+<div class="ttc" id="class_microsoft_1_1_bot_1_1_connector_1_1_hero_card_html"><div class="ttname"><a href="../../d4/dab/class_microsoft_1_1_bot_1_1_connector_1_1_hero_card.html">Microsoft.Bot.Connector.HeroCard</a></div><div class="ttdoc">A Hero card (card with a single, large image) </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/_additional_properties_8cs_source.html#l00014">AdditionalProperties.cs:14</a></div></div>
+<div class="ttc" id="class_microsoft_1_1_bot_1_1_connector_1_1_thumbnail_card_html"><div class="ttname"><a href="../../da/da6/class_microsoft_1_1_bot_1_1_connector_1_1_thumbnail_card.html">Microsoft.Bot.Connector.ThumbnailCard</a></div><div class="ttdoc">A thumbnail card (card with a single, small thumbnail image) </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/_additional_properties_8cs_source.html#l00009">AdditionalProperties.cs:9</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.11-->
+<!-- start footer part -->
+<!-- id is needed for treeview function! -->
+<div class="outline footer">
+    <ul>
+        <li><a href="//aka.ms/bf-contactus">Contact us</a></li>
+        <li><a href="//aka.ms/bf-privacy">Privacy & cookies</a></li>
+        <li><a href="//aka.ms/bf-terms">Terms of use</a></li>
+        <li><a href="//aka.ms/bf-conduct">Code of conduct</a></li>
+        <li>&copy; 2016 Microsoft</li>
+    </ul>
+</div>
+<script src="//bot-framework.azureedge.net/libs/svgxuse.js"></script>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100954936); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100954936ns.gif" /></p></noscript>
+</body>
+</html>

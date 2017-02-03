@@ -1,0 +1,7 @@
+<map id="Microsoft.Bot.Builder.FormFlow.FormFlowAttribute" name="Microsoft.Bot.Builder.FormFlow.FormFlowAttribute">
+<area shape="rect" id="node3" href="$d7/d48/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_template_base_attribute.html" title="Abstract base class used by all attributes that use Pattern Language. " alt="" coords="349,37,595,79"/>
+<area shape="rect" id="node6" href="$dd/d38/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_describe_attribute.html" title="Attribute to override the default description of a field, property or enum value. ..." alt="" coords="383,103,561,144"/>
+<area shape="rect" id="node7" href="$d2/d27/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_terms_attribute.html" title="Attribute to override the default terms used to match a field, property or enum value to user input..." alt="" coords="383,168,561,209"/>
+<area shape="rect" id="node4" href="$d0/d34/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_prompt_attribute.html" title="Define the prompt template used when asking about a field. " alt="" coords="643,5,820,47"/>
+<area shape="rect" id="node5" href="$d7/d0a/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_template_attribute.html" title="Define a template for generating strings. " alt="" coords="643,71,820,112"/>
+</map>

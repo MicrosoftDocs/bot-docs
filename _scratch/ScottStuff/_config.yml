@@ -1,0 +1,28 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Bot Framework
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+ The Microsoft Bot Framework provides just what you need to build and connect intelligent bots that interact naturally wherever your users are talking, from text/sms to Skype, Slack, Office 365 mail and other popular services.
+baseurl: "" # the subpath of your site, e.g. /blog
+# url: "http://yourdomain.com" # the base hostname & protocol for your site
+# twitter_username: jekyllrb
+# github_username:  jekyll
+include: [_*.html]
+exclude: [bot-connector-rest-api-reference.md,dev-portal-channel-configuration.md,build-docs.cmd,README.md,/en-us/1000 Building a Bot/building a bot.md,/en-us/9000 Bot Framework Resources/bot-framework-support.md,/en-us/restapi/node.md,/en-us/6000 Channels/overview.md,/en-us/csharp/builder/sdkreference/,/en-us/node/builder/chat-reference/,/en-us/node/builder/calling-reference/]
+lsi: false
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+
+#gems:
+#  - jekyll-sitemap

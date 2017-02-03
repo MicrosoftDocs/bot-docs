@@ -1,0 +1,567 @@
+<!-- HTML header for doxygen 1.8.11-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Microsoft.Bot.Builder.Dialogs.ResumptionCookie Class Reference | Bot Builder SDK C# Reference Library | Bot Framework</title>
+    <link href="../../tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../jquery.js"></script>
+    <script type="text/javascript" src="../../dynsections.js"></script>
+    <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+    <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="../../botframework.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/css/documentation.css?1" />
+    <script type="text/javascript" src="/css/documents.js"></script>
+    <!-- START OF SmartSource Data Collector TAG v10.4.23 -->
+    <!-- Copyright (c) 2016 Webtrends Inc.  All rights reserved. -->
+    <script type="text/javascript" src="/js/webtrends.load.js"></script>
+    <!--
+      appInsights
+    -->
+    <script type="text/javascript">
+    var appInsights=window.appInsights||function(config){
+      function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+      }({
+          instrumentationKey:"ecf7f29d-de8c-4169-a492-bdce0a32c300"
+      });
+      window.appInsights=appInsights;
+      appInsights.trackPageView();
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var sidenav = $('#side-nav');
+            sidenav.before('<div id="content-container" class="outline"></div>');
+            var doccontent = $('#doc-content');
+			var contentcontainer = $('#content-container');
+            contentcontainer.append(sidenav);
+            contentcontainer.append(doccontent);
+            doccontent.prepend($('#referenceSearch'));
+			var top = $('#top');
+			top.before('<div class="fullWidth"></div>');
+			var fullwidth = $('div.fullWidth');
+			fullwidth.before('<div id="app-body"></div>');
+			fullwidth.append(top);
+			fullwidth.append(contentcontainer);
+			fullwidth.append($('.footer'));
+			var appbody = $('#app-body');
+			appbody.append(fullwidth);
+			var navtreecontents = $('#nav-tree-contents');
+			navtreecontents.prepend('<ul><li><div class="label"><a href="/">&lt; Documentation Home</a></div></li></ul>');
+			//sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            //sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><select id="lang-select" name="lang" ><option value="">All</option><option value="node">Node.js</option><option value="csharp">.NET</option></select><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            setProgrammingLanguage();
+			$('#MSearchField').removeAttr('value').attr('placeholder', 'Search the Bot Builder SDK C# reference');
+        });
+    </script>
+</head>
+<body>
+    <div id="referenceSearch"></div>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div>
+            <header>
+                <div class="outline">
+                    <div class="header">
+                        <a class="logo" href="//www.microsoft.com">
+                            <svg class="svgicon svgicon-microsoft-color-logo">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/symbol-defs.svg#svgicon-microsoft-color-logo"></use>
+                            </svg>
+                        </a>
+                        <div class="loading-animation"></div>
+                        <span class="environment"></span>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="brand-primary">
+                <div class="jumbo">
+                    <div class="jumbo-header"><a href="https://www.botframework.com/">Bot Framework</a></div>
+                    <ul class="header-nav">
+                        <li><a href="https://dev.botframework.com/#/bots">My bots</a></li>
+                        <li><a href="https://dev.botframework.com/#/bots/new">Register a bot</a></li>
+                        <li class="active"><a href="/">Documentation</a></li>
+                        <li><a href="https://bots.botframework.com/">Bot Directory</a></li>
+                        <li><a href="https://blog.botframework.com/">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header part -->
+</body>
+</html><!-- Generated by Doxygen 1.8.11 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('dc/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_resumption_cookie.html','../../');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#properties">Properties</a> &#124;
+<a href="../../d8/d21/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_resumption_cookie-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">Microsoft.Bot.Builder.Dialogs.ResumptionCookie Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The resumption cookie that can be used to resume a conversation with a user.  
+ <a href="../../dc/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_resumption_cookie.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for Microsoft.Bot.Builder.Dialogs.ResumptionCookie:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d58/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_resumption_cookie__inherit__graph.png" border="0" usemap="#_microsoft_8_bot_8_builder_8_dialogs_8_resumption_cookie_inherit__map" alt="Inheritance graph"/></div>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a9044362d46900c42cde1331fc7f88a14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_resumption_cookie.html#a9044362d46900c42cde1331fc7f88a14">ResumptionCookie</a> (<a class="el" href="../../d8/d71/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_address.html">Address</a> address, string userName, bool isGroup, string locale)</td></tr>
+<tr class="memdesc:a9044362d46900c42cde1331fc7f88a14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of the resumption cookie.  <a href="#a9044362d46900c42cde1331fc7f88a14">More...</a><br /></td></tr>
+<tr class="separator:a9044362d46900c42cde1331fc7f88a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c33a6fe3227e858ab9aa444d552f047"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_resumption_cookie.html#a0c33a6fe3227e858ab9aa444d552f047">ResumptionCookie</a> (<a class="el" href="../../d1/de8/interface_microsoft_1_1_bot_1_1_connector_1_1_i_message_activity.html">IMessageActivity</a> msg)</td></tr>
+<tr class="memdesc:a0c33a6fe3227e858ab9aa444d552f047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of resumption cookie form a <a class="el" href="../../d1/de8/interface_microsoft_1_1_bot_1_1_connector_1_1_i_message_activity.html" title="Someone has added a message to the conversation ">Connector.IMessageActivity</a>  <a href="#a0c33a6fe3227e858ab9aa444d552f047">More...</a><br /></td></tr>
+<tr class="separator:a0c33a6fe3227e858ab9aa444d552f047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac50fc4795389da581417bff72d1332bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_resumption_cookie.html#ac50fc4795389da581417bff72d1332bc">Equals</a> (<a class="el" href="../../dc/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_resumption_cookie.html">ResumptionCookie</a> other)</td></tr>
+<tr class="separator:ac50fc4795389da581417bff72d1332bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add9bf1e9eb5a926e691115d5a2f62027"><td class="memItemLeft" align="right" valign="top">override bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_resumption_cookie.html#add9bf1e9eb5a926e691115d5a2f62027">Equals</a> (object other)</td></tr>
+<tr class="separator:add9bf1e9eb5a926e691115d5a2f62027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a308887d4d84fcee1bbcbe3bcab6b1c14"><td class="memItemLeft" align="right" valign="top">override int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_resumption_cookie.html#a308887d4d84fcee1bbcbe3bcab6b1c14">GetHashCode</a> ()</td></tr>
+<tr class="separator:a308887d4d84fcee1bbcbe3bcab6b1c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66bb60a984db9b35f29fb74d986cc27e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/de8/interface_microsoft_1_1_bot_1_1_connector_1_1_i_message_activity.html">IMessageActivity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_resumption_cookie.html#a66bb60a984db9b35f29fb74d986cc27e">GetMessage</a> ()</td></tr>
+<tr class="memdesc:a66bb60a984db9b35f29fb74d986cc27e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a message from the resumption cookie.  <a href="#a66bb60a984db9b35f29fb74d986cc27e">More...</a><br /></td></tr>
+<tr class="separator:a66bb60a984db9b35f29fb74d986cc27e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a02039d5650160bcdfc84a28d1a0cdb02"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dc/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_resumption_cookie.html">ResumptionCookie</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_resumption_cookie.html#a02039d5650160bcdfc84a28d1a0cdb02">GZipDeserialize</a> (string str)</td></tr>
+<tr class="memdesc:a02039d5650160bcdfc84a28d1a0cdb02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes the GZip serialized <a class="el" href="../../dc/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_resumption_cookie.html" title="The resumption cookie that can be used to resume a conversation with a user. ">ResumptionCookie</a> using Extensions.GZipSerialize(ResumptionCookie).  <a href="#a02039d5650160bcdfc84a28d1a0cdb02">More...</a><br /></td></tr>
+<tr class="separator:a02039d5650160bcdfc84a28d1a0cdb02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a14b721fdcfa15a93d08c266d0d2b97e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dc8/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_address.html">IAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_resumption_cookie.html#a14b721fdcfa15a93d08c266d0d2b97e3">Address</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a14b721fdcfa15a93d08c266d0d2b97e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The key that minimally and completely identifies a bot's conversation with a user on a channel.  <a href="#a14b721fdcfa15a93d08c266d0d2b97e3">More...</a><br /></td></tr>
+<tr class="separator:a14b721fdcfa15a93d08c266d0d2b97e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f11f629b08622552d95cf3978aae280"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_resumption_cookie.html#a2f11f629b08622552d95cf3978aae280">IsGroup</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a2f11f629b08622552d95cf3978aae280"><td class="mdescLeft">&#160;</td><td class="mdescRight">The IsGroup flag for conversation.  <a href="#a2f11f629b08622552d95cf3978aae280">More...</a><br /></td></tr>
+<tr class="separator:a2f11f629b08622552d95cf3978aae280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6a1727c99c4063a4b8e7a70be5f5a15"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_resumption_cookie.html#af6a1727c99c4063a4b8e7a70be5f5a15">IsTrustedServiceUrl</a><code> [get]</code></td></tr>
+<tr class="memdesc:af6a1727c99c4063a4b8e7a70be5f5a15"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the <a class="el" href="../../dd/dc8/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_address.html#af694b4272d10b8d2ed0c7a90c1f12ddc">IAddress.ServiceUrl</a> is trusted; False otherwise.  <a href="#af6a1727c99c4063a4b8e7a70be5f5a15">More...</a><br /></td></tr>
+<tr class="separator:af6a1727c99c4063a4b8e7a70be5f5a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48506b63af7d61ad5fa4c516ec76493f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_resumption_cookie.html#a48506b63af7d61ad5fa4c516ec76493f">Locale</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a48506b63af7d61ad5fa4c516ec76493f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The locale of message.  <a href="#a48506b63af7d61ad5fa4c516ec76493f">More...</a><br /></td></tr>
+<tr class="separator:a48506b63af7d61ad5fa4c516ec76493f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46dbd2b0a09a64a3b6ded42232a83516"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_resumption_cookie.html#a46dbd2b0a09a64a3b6ded42232a83516">UserName</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a46dbd2b0a09a64a3b6ded42232a83516"><td class="mdescLeft">&#160;</td><td class="mdescRight">The user name.  <a href="#a46dbd2b0a09a64a3b6ded42232a83516">More...</a><br /></td></tr>
+<tr class="separator:a46dbd2b0a09a64a3b6ded42232a83516"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The resumption cookie that can be used to resume a conversation with a user. </p>
+
+<p>Definition at line <a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html#l00052">52</a> of file <a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html">ResumptionCookie.cs</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a9044362d46900c42cde1331fc7f88a14"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Microsoft.Bot.Builder.Dialogs.ResumptionCookie.ResumptionCookie </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d71/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_address.html">Address</a>&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>userName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isGroup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>locale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates an instance of the resumption cookie. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">address</td><td>The address.</td></tr>
+    <tr><td class="paramname">userName</td><td>The user name.</td></tr>
+    <tr><td class="paramname">isGroup</td><td>The IsGroup flag for conversation.</td></tr>
+    <tr><td class="paramname">locale</td><td>The locale of the message.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html#l00090">90</a> of file <a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html">ResumptionCookie.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0c33a6fe3227e858ab9aa444d552f047"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Microsoft.Bot.Builder.Dialogs.ResumptionCookie.ResumptionCookie </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/de8/interface_microsoft_1_1_bot_1_1_connector_1_1_i_message_activity.html">IMessageActivity</a>&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates an instance of resumption cookie form a <a class="el" href="../../d1/de8/interface_microsoft_1_1_bot_1_1_connector_1_1_i_message_activity.html" title="Someone has added a message to the conversation ">Connector.IMessageActivity</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>The message.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html#l00103">103</a> of file <a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html">ResumptionCookie.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ac50fc4795389da581417bff72d1332bc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Equals </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_resumption_cookie.html">ResumptionCookie</a>&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html#l00114">114</a> of file <a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html">ResumptionCookie.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="add9bf1e9eb5a926e691115d5a2f62027"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override bool Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Equals </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html#l00124">124</a> of file <a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html">ResumptionCookie.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a308887d4d84fcee1bbcbe3bcab6b1c14"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override int Microsoft.Bot.Builder.Dialogs.ResumptionCookie.GetHashCode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html#l00129">129</a> of file <a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html">ResumptionCookie.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a66bb60a984db9b35f29fb74d986cc27e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/de8/interface_microsoft_1_1_bot_1_1_connector_1_1_i_message_activity.html">IMessageActivity</a> Microsoft.Bot.Builder.Dialogs.ResumptionCookie.GetMessage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a message from the resumption cookie. </p>
+<dl class="section return"><dt>Returns</dt><dd>The message that can be sent to bot based on the resumption cookie</dd></dl>
+
+<p>Definition at line <a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html#l00138">138</a> of file <a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html">ResumptionCookie.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a02039d5650160bcdfc84a28d1a0cdb02"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dc/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_resumption_cookie.html">ResumptionCookie</a> Microsoft.Bot.Builder.Dialogs.ResumptionCookie.GZipDeserialize </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deserializes the GZip serialized <a class="el" href="../../dc/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_resumption_cookie.html" title="The resumption cookie that can be used to resume a conversation with a user. ">ResumptionCookie</a> using Extensions.GZipSerialize(ResumptionCookie). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>The Base64 encoded string.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An instance of <a class="el" href="../../dc/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_resumption_cookie.html" title="The resumption cookie that can be used to resume a conversation with a user. ">ResumptionCookie</a></dd></dl>
+
+<p>Definition at line <a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html#l00168">168</a> of file <a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html">ResumptionCookie.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a class="anchor" id="a14b721fdcfa15a93d08c266d0d2b97e3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dc8/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_address.html">IAddress</a> Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Address</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The key that minimally and completely identifies a bot's conversation with a user on a channel. </p>
+
+<p>Definition at line <a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html#l00057">57</a> of file <a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html">ResumptionCookie.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f11f629b08622552d95cf3978aae280"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Microsoft.Bot.Builder.Dialogs.ResumptionCookie.IsGroup</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The IsGroup flag for conversation. </p>
+
+<p>Definition at line <a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html#l00075">75</a> of file <a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html">ResumptionCookie.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af6a1727c99c4063a4b8e7a70be5f5a15"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Microsoft.Bot.Builder.Dialogs.ResumptionCookie.IsTrustedServiceUrl</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>True if the <a class="el" href="../../dd/dc8/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_address.html#af694b4272d10b8d2ed0c7a90c1f12ddc">IAddress.ServiceUrl</a> is trusted; False otherwise. </p>
+<p>Conversation.ResumeAsync&lt;T&gt;(ResumptionCookie, T, System.Threading.CancellationToken) adds the host of the <a class="el" href="../../dd/dc8/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_address.html#af694b4272d10b8d2ed0c7a90c1f12ddc">IAddress.ServiceUrl</a> to MicrosoftAppCredentials.TrustedHostNames if this flag is True. </p>
+
+<p>Definition at line <a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html#l00070">70</a> of file <a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html">ResumptionCookie.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a48506b63af7d61ad5fa4c516ec76493f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Locale</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The locale of message. </p>
+
+<p>Definition at line <a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html#l00080">80</a> of file <a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html">ResumptionCookie.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a46dbd2b0a09a64a3b6ded42232a83516"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Microsoft.Bot.Builder.Dialogs.ResumptionCookie.UserName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The user name. </p>
+
+<p>Definition at line <a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html#l00062">62</a> of file <a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html">ResumptionCookie.cs</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="../../da/d14/_resumption_cookie_8cs_source.html">ResumptionCookie.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.11-->
+<!-- start footer part -->
+<!-- id is needed for treeview function! -->
+<div class="outline footer">
+    <ul>
+        <li><a href="//aka.ms/bf-contactus">Contact us</a></li>
+        <li><a href="//aka.ms/bf-privacy">Privacy & cookies</a></li>
+        <li><a href="//aka.ms/bf-terms">Terms of use</a></li>
+        <li><a href="//aka.ms/bf-conduct">Code of conduct</a></li>
+        <li>&copy; 2016 Microsoft</li>
+    </ul>
+</div>
+<script src="//bot-framework.azureedge.net/libs/svgxuse.js"></script>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100954936); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100954936ns.gif" /></p></noscript>
+</body>
+</html>

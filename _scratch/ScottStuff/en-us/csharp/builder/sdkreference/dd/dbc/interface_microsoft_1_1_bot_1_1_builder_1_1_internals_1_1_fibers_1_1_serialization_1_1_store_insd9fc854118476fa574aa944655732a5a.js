@@ -1,0 +1,5 @@
+var interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_store_insd9fc854118476fa574aa944655732a5a =
+[
+    [ "Handles", "dd/dbc/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_store_insd9fc854118476fa574aa944655732a5a.html#aa572a0b945584adae8674e5a313e416c", null ],
+    [ "Resolve", "dd/dbc/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_store_insd9fc854118476fa574aa944655732a5a.html#a7c89c80f99826d66946a8273645766c0", null ]
+];

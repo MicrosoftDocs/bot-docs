@@ -1,0 +1,243 @@
+<!-- HTML header for doxygen 1.8.11-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Sending and Receiving Activities | Bot Builder SDK C# Reference Library | Bot Framework</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="botframework.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/css/documentation.css?1" />
+    <script type="text/javascript" src="/css/documents.js"></script>
+    <!-- START OF SmartSource Data Collector TAG v10.4.23 -->
+    <!-- Copyright (c) 2016 Webtrends Inc.  All rights reserved. -->
+    <script type="text/javascript" src="/js/webtrends.load.js"></script>
+    <!--
+      appInsights
+    -->
+    <script type="text/javascript">
+    var appInsights=window.appInsights||function(config){
+      function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+      }({
+          instrumentationKey:"ecf7f29d-de8c-4169-a492-bdce0a32c300"
+      });
+      window.appInsights=appInsights;
+      appInsights.trackPageView();
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var sidenav = $('#side-nav');
+            sidenav.before('<div id="content-container" class="outline"></div>');
+            var doccontent = $('#doc-content');
+			var contentcontainer = $('#content-container');
+            contentcontainer.append(sidenav);
+            contentcontainer.append(doccontent);
+            doccontent.prepend($('#referenceSearch'));
+			var top = $('#top');
+			top.before('<div class="fullWidth"></div>');
+			var fullwidth = $('div.fullWidth');
+			fullwidth.before('<div id="app-body"></div>');
+			fullwidth.append(top);
+			fullwidth.append(contentcontainer);
+			fullwidth.append($('.footer'));
+			var appbody = $('#app-body');
+			appbody.append(fullwidth);
+			var navtreecontents = $('#nav-tree-contents');
+			navtreecontents.prepend('<ul><li><div class="label"><a href="/">&lt; Documentation Home</a></div></li></ul>');
+			//sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            //sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><select id="lang-select" name="lang" ><option value="">All</option><option value="node">Node.js</option><option value="csharp">.NET</option></select><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            setProgrammingLanguage();
+			$('#MSearchField').removeAttr('value').attr('placeholder', 'Search the Bot Builder SDK C# reference');
+        });
+    </script>
+</head>
+<body>
+    <div id="referenceSearch"></div>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div>
+            <header>
+                <div class="outline">
+                    <div class="header">
+                        <a class="logo" href="//www.microsoft.com">
+                            <svg class="svgicon svgicon-microsoft-color-logo">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/symbol-defs.svg#svgicon-microsoft-color-logo"></use>
+                            </svg>
+                        </a>
+                        <div class="loading-animation"></div>
+                        <span class="environment"></span>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="brand-primary">
+                <div class="jumbo">
+                    <div class="jumbo-header"><a href="https://www.botframework.com/">Bot Framework</a></div>
+                    <ul class="header-nav">
+                        <li><a href="https://dev.botframework.com/#/bots">My bots</a></li>
+                        <li><a href="https://dev.botframework.com/#/bots/new">Register a bot</a></li>
+                        <li class="active"><a href="/">Documentation</a></li>
+                        <li><a href="https://bots.botframework.com/">Bot Directory</a></li>
+                        <li><a href="https://blog.botframework.com/">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header part -->
+</body>
+</html><!-- Generated by Doxygen 1.8.11 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('routing.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">Sending and Receiving Activities </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Every activity contains information used for routing the activity to the appropriate destination. Bots receive activities from the user and send them back, just like people exchange messages.</p>
+<h1><a class="anchor" id="routingactivities"></a>
+Routing Activities</h1>
+<p>Activities have properties which enable the connector service to deliver to the proper recipient, communicating who created the message, the context of the message and the recipient of the message.</p>
+<p>The Connector service models this as <b>From</b> -&gt; <b>Recipient</b> as part of a <b>Conversation</b>.</p>
+<table class="doxtable">
+<tr>
+<th><b>Property</b> </th><th><b>Description</b>  </th></tr>
+<tr>
+<td><b>From</b> </td><td>Sender of the activity </td></tr>
+<tr>
+<td><b>Recipient</b> </td><td>Recipient of the activity </td></tr>
+<tr>
+<td><b>Conversation</b> </td><td>Conversation the message was part of </td></tr>
+</table>
+<p>When you receive a Activity from a user it will have the From field set to the user who created the message and the Recipient field will always be your bot's identity in that conversation.</p>
+<blockquote class="doxtable">
+<p>NOTE: a bot doesn't always know it's identity because some channels assign new identities when the bot is added to a conversation. (e.g. Slack) As a result, it is important when you are create a reply message you use the incoming Recipient property as the outgoing From. (see <a href="/en-us/connector/replying/">Replying to an Activity</a> for more details). </p>
+</blockquote>
+<h2><a class="anchor" id="channelid"></a>
+ChannelId and ServiceUrl</h2>
+<p>There are 2 top level properties which tell the bot what channel it is working with and the url that should be used for API operations like sending a reply.</p>
+<table class="doxtable">
+<tr>
+<th><b>Property</b> </th><th><b>Description</b> </th><th><b>Examples</b>  </th></tr>
+<tr>
+<td><b>ChannelId</b> </td><td>The channel for the activity </td><td>skype </td></tr>
+<tr>
+<td><b>ServiceUrl</b> </td><td>The url to use for sending activities back </td><td><a href="http://skype.botframework.com">http://skype.botframework.com</a> </td></tr>
+</table>
+<h1><a class="anchor" id="connectorclient"></a>
+Creating Connector Client</h1>
+<p>The ServiceUrl provides the appropriate endpoint for API calls. All you have to do is pass it into the constructor of the ConnectorClient() class.</p>
+<div class="fragment"><div class="line">var connector = <span class="keyword">new</span> ConnectorClient(incomingMessage.ServiceUrl);</div></div><!-- fragment --><blockquote class="doxtable">
+<p>NOTE: Even though ServiceUrl values may seem stable bots should not rely on that and instead always use the ServiceUrl value </p>
+</blockquote>
+<h2><a class="anchor" id="ChannelAccounts"></a>
+ChannelAccounts</h2>
+<p>The ChannelAccount record is used to represent an address a user or bot on a communication channel.</p>
+<table class="doxtable">
+<tr>
+<th><b>Property</b> </th><th><b>Description</b> </th><th><b>Examples</b>  </th></tr>
+<tr>
+<td><b>Id</b> </td><td>The address on the channel </td><td>joe .com, +14258828080, etc. </td></tr>
+<tr>
+<td><b>Name</b> </td><td>A name for the user or bot </td><td>Joe Smith </td></tr>
+</table>
+<p>Each user has 1..N ChannelAccounts which represent their identities on each channel.</p>
+<p>Each bot has 1..N ChannelAccounts which represent their identities on each channel.</p>
+<h3><a class="anchor" id="ConversationAccount"></a>
+ConversationAccount</h3>
+<p>The ConversationAccount object is basically the same as a ChannelAccount with some additional metadata.</p>
+<table class="doxtable">
+<tr>
+<th><b>Property</b> </th><th><b>Description</b> </th><th><b>Examples</b>  </th></tr>
+<tr>
+<td><b>Id</b> </td><td>A unique id for the conversation on the channel </td><td>Xy1xvh3jhv </td></tr>
+<tr>
+<td><b>Name</b> </td><td>A name for the conversation </td><td>Fantasy football </td></tr>
+<tr>
+<td><b>IsGroup</b> </td><td>if true, indicates a group conversation (default is false)</td><td>bool </td></tr>
+</table>
+<h1><a class="anchor" id="replying"></a>
+Replying to messages</h1>
+<p>When your bot receives a message Activity it will want to respond.</p>
+<p>To do that, you need a new Activity() with</p>
+<ul>
+<li>The <b>From</b> &lt;&ndash;&gt; <b>Recipient</b> fields swapped from the original message(so that it will be routed back to where it came from using the identify for your bot in that conversation)</li>
+<li>The <b>Conversation</b> from the original message on it (route to the same conversation)</li>
+<li>Text (and Attachments as appropriate)</li>
+</ul>
+<p>To make this easy to do we have an extension method on the Activity class called <b>CreateReply()</b>.</p>
+<p>To create a reply message for an existing incoming activity: </p><div class="fragment"><div class="line"><span class="comment">// create properly formatted reply message</span></div><div class="line">var replyMessage = incomingMessage.CreateReply(<span class="stringliteral">&quot;Yo, what&#39;s up?&quot;</span>);</div></div><!-- fragment --><h2><a class="anchor" id="replytoactivity"></a>
+ReplyToActivity()</h2>
+<p>To reply simply create a reply message and call the <b>ReplyToActivity()</b> method. The Connector service will take care of the details of delivering your message using the appropriate channel semantics.</p>
+<div class="fragment"><div class="line">var connector = <span class="keyword">new</span> ConnectorClient(incomingMessage.ServiceUrl);</div><div class="line">var replyMessage =  incomingMessage.CreateReply(<span class="stringliteral">&quot;Yo, I heard you.&quot;</span>, <span class="stringliteral">&quot;en&quot;</span>);</div><div class="line">await connector.Conversations.ReplyToActivityAsync(replyMessage); </div></div><!-- fragment --><h2><a class="anchor" id="sendtoconversation"></a>
+SendToConversation()</h2>
+<p>The <b>SendToConversation()</b> method is almost identical to ReplyToActivity() except that it doesn't maintain any sort of threading. It is used when don't have an activity to reply to. If you do have an activity to reply to you should us the ReplyToActivity() method.</p>
+<div class="fragment"><div class="line">var connector = <span class="keyword">new</span> ConnectorClient(incomingMessage.ServiceUrl);</div><div class="line">IMessageActivity newMessage =  Activity.CreateMessageActivity();</div><div class="line">newMessage.Type = ActivityTypes.Message;</div><div class="line">newMessage.From = botAccount;</div><div class="line">newMessage.Conversation = conversation;</div><div class="line">newMessage.Recipient = userAccount;</div><div class="line">newMessage.Text = <span class="stringliteral">&quot;Yo yo yo!&quot;</span>;</div><div class="line">await connector.Conversations.SendToConversationAsync((Activity)newMessage); </div></div><!-- fragment --><h2><a class="anchor" id="multiplereplies"></a>
+Multiple replies</h2>
+<p>It is perfectly fine to send as many messages you want via these methods.</p>
+<div class="fragment"><div class="line">var connector = <span class="keyword">new</span> ConnectorClient(incomingMessage.ServiceUrl);</div><div class="line">connector.Conversations.ReplyToActivity(incomingMessage.CreateReply(<span class="stringliteral">&quot;Yo, I heard you 1.&quot;</span>, <span class="stringliteral">&quot;en&quot;</span>));</div><div class="line">connector.Conversations.ReplyToActivity(incomingMessage.CreateReply(<span class="stringliteral">&quot;Yo, I heard you 2.&quot;</span>, <span class="stringliteral">&quot;en&quot;</span>));</div><div class="line">connector.Conversations.ReplyToActivity(incomingMessage.CreateReply(<span class="stringliteral">&quot;Yo, I heard you 3.&quot;</span>, <span class="stringliteral">&quot;en&quot;</span>));</div></div><!-- fragment --> <blockquote class="doxtable">
+<p>NOTE: Most channels have built in throttling levels and you will be subject to whatever limits the channel sets. </p>
+</blockquote>
+<h1><a class="anchor" id="conversation"></a>
+Starting Conversations</h1>
+<p>To initiate a conversation you need to call the CreateConversation() or CreateDirectConversation() methods to get a ConversationAccount record from the channel. Once you have the ConversationAccount can use it in a message call to SendToConversation().</p>
+<h2><a class="anchor" id="conversationuser"></a>
+Create 1:1 Conversations</h2>
+<p>The <b>CreateDirectConversation()</b> method is used to create a private 1:1 conversation between the bot and the user.</p>
+<p>To initialize a <b>ConnectorClient</b> you use ServiceUrl persisted from previous messages.</p>
+<p>Example: </p><div class="fragment"><div class="line">var userAccount = <span class="keyword">new</span> ChannelAccount(name: <span class="stringliteral">&quot;Larry&quot;</span>, <span class="keywordtype">id</span>: <span class="stringliteral">&quot;@UV357341&quot;</span>);</div><div class="line">var connector = <span class="keyword">new</span> ConnectorClient(<span class="keyword">new</span> Uri(incomingMessage.ServiceUrl));</div><div class="line">var conversationId = await connector.Conversations.CreateDirectConversationAsync(botAccount, userAccount);</div><div class="line"></div><div class="line">IMessageActivity message =  Activity.CreateMessageActivity();</div><div class="line">message.From = botAccount;</div><div class="line">message.Recipient = userAccount;</div><div class="line">message.Conversation = <span class="keyword">new</span> ConversationAccount(<span class="keywordtype">id</span>: conversationId.Id);</div><div class="line">message.Text = <span class="stringliteral">&quot;Hello&quot;</span>;</div><div class="line">message.Locale = <span class="stringliteral">&quot;en-Us&quot;</span>;</div><div class="line">await connector.Conversations.SendToConversationAsync((Activity)message); </div></div><!-- fragment --><h2><a class="anchor" id="conversationmultiple"></a>
+Create Group Conversations</h2>
+<p>The <b>CreateConversation()</b> method is used to create a new group conversation. </p><blockquote class="doxtable">
+<p>NOTE: Currently Email is the only channel which supports bot initiated group conversations </p>
+</blockquote>
+<p>Example: </p><div class="fragment"><div class="line">var connector = <span class="keyword">new</span> ConnectorClient(<span class="keyword">new</span> Uri(incomingMessage.ServiceUrl));</div><div class="line">List&lt;ChannelAccount&gt; participants = <span class="keyword">new</span> List&lt;ChannelAccount&gt;();</div><div class="line">participants.Add(<span class="keyword">new</span> ChannelAccount(<span class="stringliteral">&quot;joe@contoso.com&quot;</span>, <span class="stringliteral">&quot;Joe the Engineer&quot;</span>));</div><div class="line">participants.Add(<span class="keyword">new</span> ChannelAccount(<span class="stringliteral">&quot;sara@contso.com&quot;</span>, <span class="stringliteral">&quot;Sara in Finance&quot;</span>));</div><div class="line"></div><div class="line">ConversationParameters cpMessage = <span class="keyword">new</span> ConversationParameters(message.Recipient, <span class="keyword">true</span>, participants, <span class="stringliteral">&quot;Quarter End Discussion&quot;</span>);</div><div class="line">var conversationId = await connector.Conversations.CreateConversationAsync(cpMessage);</div><div class="line"></div><div class="line">IMessageActivity message = Activity.CreateMessageActivity();</div><div class="line">message.From = botAccount;</div><div class="line">message.Recipient = <span class="keyword">new</span> ChannelAccount(<span class="stringliteral">&quot;lydia@contoso.com&quot;</span>, <span class="stringliteral">&quot;Lydia the CFO&quot;</span>));</div><div class="line">message.Conversation = <span class="keyword">new</span> ConversationAccount(<span class="keywordtype">id</span>: conversationId.Id);</div><div class="line">message.ChannelId = incomingMessage.ChannelId;</div><div class="line">message.Text = <span class="stringliteral">&quot;Hey, what&#39;s up everyone?&quot;</span>;</div><div class="line">message.Locale = <span class="stringliteral">&quot;en-Us&quot;</span>;</div><div class="line">await connector.Conversations.SendToConversationAsync((Activity)message); </div></div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.11-->
+<!-- start footer part -->
+<!-- id is needed for treeview function! -->
+<div class="outline footer">
+    <ul>
+        <li><a href="//aka.ms/bf-contactus">Contact us</a></li>
+        <li><a href="//aka.ms/bf-privacy">Privacy & cookies</a></li>
+        <li><a href="//aka.ms/bf-terms">Terms of use</a></li>
+        <li><a href="//aka.ms/bf-conduct">Code of conduct</a></li>
+        <li>&copy; 2016 Microsoft</li>
+    </ul>
+</div>
+<script src="//bot-framework.azureedge.net/libs/svgxuse.js"></script>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100954936); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100954936ns.gif" /></p></noscript>
+</body>
+</html>

@@ -1,0 +1,4 @@
+var interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_i_surrogate_provider =
+[
+    [ "Handles", "dc/d97/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_i_surrogate_provider.html#a8b9c5574788d1c2a78d74fee9e469768", null ]
+];

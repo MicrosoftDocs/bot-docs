@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$d2/d33/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_i_store.html" title="Microsoft.Bot.Builder.Internals.\lFibers.IStore\&lt; T \&gt;" alt="" coords="5,71,205,112"/>
+<area shape="rect" id="node2" href="$dd/d14/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_error_resilient_store.html" title="Microsoft.Bot.Builder.Internals.\lFibers.ErrorResilientStore\&lt; T \&gt;" alt="" coords="253,5,456,47"/>
+<area shape="rect" id="node3" href="$de/dcd/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_factory_store.html" title="Microsoft.Bot.Builder.Internals.\lFibers.FactoryStore\&lt; T \&gt;" alt="" coords="255,71,455,112"/>
+<area shape="rect" id="node4" href="$da/dd0/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_formatter_store.html" title="Microsoft.Bot.Builder.Internals.\lFibers.FormatterStore\&lt; T \&gt;" alt="" coords="255,136,455,177"/>
+</map>

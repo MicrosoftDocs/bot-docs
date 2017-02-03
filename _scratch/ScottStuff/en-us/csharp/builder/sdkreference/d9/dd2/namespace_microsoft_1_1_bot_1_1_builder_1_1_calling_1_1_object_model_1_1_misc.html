@@ -1,0 +1,787 @@
+<!-- HTML header for doxygen 1.8.11-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Microsoft.Bot.Builder.Calling.ObjectModel.Misc Namespace Reference | Bot Builder SDK C# Reference Library | Bot Framework</title>
+    <link href="../../tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../jquery.js"></script>
+    <script type="text/javascript" src="../../dynsections.js"></script>
+    <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+    <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="../../botframework.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/css/documentation.css?1" />
+    <script type="text/javascript" src="/css/documents.js"></script>
+    <!-- START OF SmartSource Data Collector TAG v10.4.23 -->
+    <!-- Copyright (c) 2016 Webtrends Inc.  All rights reserved. -->
+    <script type="text/javascript" src="/js/webtrends.load.js"></script>
+    <!--
+      appInsights
+    -->
+    <script type="text/javascript">
+    var appInsights=window.appInsights||function(config){
+      function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+      }({
+          instrumentationKey:"ecf7f29d-de8c-4169-a492-bdce0a32c300"
+      });
+      window.appInsights=appInsights;
+      appInsights.trackPageView();
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var sidenav = $('#side-nav');
+            sidenav.before('<div id="content-container" class="outline"></div>');
+            var doccontent = $('#doc-content');
+			var contentcontainer = $('#content-container');
+            contentcontainer.append(sidenav);
+            contentcontainer.append(doccontent);
+            doccontent.prepend($('#referenceSearch'));
+			var top = $('#top');
+			top.before('<div class="fullWidth"></div>');
+			var fullwidth = $('div.fullWidth');
+			fullwidth.before('<div id="app-body"></div>');
+			fullwidth.append(top);
+			fullwidth.append(contentcontainer);
+			fullwidth.append($('.footer'));
+			var appbody = $('#app-body');
+			appbody.append(fullwidth);
+			var navtreecontents = $('#nav-tree-contents');
+			navtreecontents.prepend('<ul><li><div class="label"><a href="/">&lt; Documentation Home</a></div></li></ul>');
+			//sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            //sidenav.prepend('<div id="wrapper"><form id="docs-search-form" action="/en-us/search/"><select id="lang-select" name="lang" ><option value="">All</option><option value="node">Node.js</option><option value="csharp">.NET</option></select><input id="q" name="q" type="text" placeholder=""><input type="hidden" id="v" name="v" value="v3"><input type="hidden" id="mkt" name="mkt" value="en-us"><button id="bt_search" name="bt_search" class="icon-search" type="submit"></button></form></div>');
+            setProgrammingLanguage();
+			$('#MSearchField').removeAttr('value').attr('placeholder', 'Search the Bot Builder SDK C# reference');
+        });
+    </script>
+</head>
+<body>
+    <div id="referenceSearch"></div>
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div>
+            <header>
+                <div class="outline">
+                    <div class="header">
+                        <a class="logo" href="//www.microsoft.com">
+                            <svg class="svgicon svgicon-microsoft-color-logo">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/symbol-defs.svg#svgicon-microsoft-color-logo"></use>
+                            </svg>
+                        </a>
+                        <div class="loading-animation"></div>
+                        <span class="environment"></span>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="brand-primary">
+                <div class="jumbo">
+                    <div class="jumbo-header"><a href="https://www.botframework.com/">Bot Framework</a></div>
+                    <ul class="header-nav">
+                        <li><a href="https://dev.botframework.com/#/bots">My bots</a></li>
+                        <li><a href="https://dev.botframework.com/#/bots/new">Register a bot</a></li>
+                        <li class="active"><a href="/">Documentation</a></li>
+                        <li><a href="https://bots.botframework.com/">Bot Directory</a></li>
+                        <li><a href="https://blog.botframework.com/">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header part -->
+</body>
+</html><!-- Generated by Doxygen 1.8.11 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html','../../');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
+  <div class="headertitle">
+<div class="title">Microsoft.Bot.Builder.Calling.ObjectModel.Misc Namespace Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d79/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_application_state.html">ApplicationState</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dad/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_j_s_o_n_constants.html">JSONConstants</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d88/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_json_creation_converter.html">JsonCreationConverter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class to use for deserializing where the concrete classes are determined by checking properties in the JSON data.  <a href="../../d6/d88/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_json_creation_converter.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de1/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_max_values.html">MaxValues</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d60/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_min_values.html">MinValues</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d42/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_multi_part_constants.html">MultiPartConstants</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d80/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer.html">Serializer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class for serializing/deserializing  <a href="../../d9/d80/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_serializer.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d72/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_string_enum_converter_with_default.html">StringEnumConverterWithDefault</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialized StringEnumConverter that returns the default enum value instead of throwing if the string cannot be matched to an enum value during deserialization.  <a href="../../d7/d72/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_string_enum_converter_with_default.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d77/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_utils.html">Utils</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d4/d77/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_utils.html" title="Utils class ">Utils</a> class  <a href="../../d4/d77/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc_1_1_utils.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a008ba614646ad606f9c82b3165a17c64"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a008ba614646ad606f9c82b3165a17c64">CallState</a> { <br />
+&#160;&#160;<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a008ba614646ad606f9c82b3165a17c64a88183b946cc5f0e8c96b2e66e1c74a7e">CallState.Unknown</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a008ba614646ad606f9c82b3165a17c64ae599161956d626eda4cb0a5ffb85271c">CallState.Idle</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a008ba614646ad606f9c82b3165a17c64a589ab34e870b80c8c7d035805452df19">CallState.Incoming</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a008ba614646ad606f9c82b3165a17c64a6f5e6e098505ac366a921fdd2e9dfbe8">CallState.Establishing</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a008ba614646ad606f9c82b3165a17c64a072f9734fceb02f516b50d4174ac0f18">CallState.Established</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a008ba614646ad606f9c82b3165a17c64abcd8db575b47c838e5d551e3973db4ac">CallState.Hold</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a008ba614646ad606f9c82b3165a17c64a4e12f9fe09d567817417aaebe4dfdaad">CallState.Unhold</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a008ba614646ad606f9c82b3165a17c64a9244f0a34fd81da60fa38383138864a5">CallState.Transferring</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a008ba614646ad606f9c82b3165a17c64a32682312d17c7cbf18e73594f5570319">CallState.Redirecting</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a008ba614646ad606f9c82b3165a17c64a720f84c3d4dcb9a556ac6adfd1e75b8c">CallState.Terminating</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a008ba614646ad606f9c82b3165a17c64afba9c4daa2dd29d1077d32d965320ac1">CallState.Terminated</a>
+<br />
+ }<tr class="memdesc:a008ba614646ad606f9c82b3165a17c64"><td class="mdescLeft">&#160;</td><td class="mdescRight">The various possible states of a AudioVideoCall.  <a href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a008ba614646ad606f9c82b3165a17c64">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a008ba614646ad606f9c82b3165a17c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7384c71b84b2a52b140db8057446d765"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a7384c71b84b2a52b140db8057446d765">Culture</a> { <a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a7384c71b84b2a52b140db8057446d765a88183b946cc5f0e8c96b2e66e1c74a7e">Culture.Unknown</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a7384c71b84b2a52b140db8057446d765a25fa9b570b675a34aa326178f4bae1e5">Culture.EnUs</a>
+ }<tr class="memdesc:a7384c71b84b2a52b140db8057446d765"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cultures we support for recognition or prompt playing  <a href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a7384c71b84b2a52b140db8057446d765">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a7384c71b84b2a52b140db8057446d765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaee37a2ee2a817fcccb5bbd2bc69ef43"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#aaee37a2ee2a817fcccb5bbd2bc69ef43">DigitCollectionCompletionReason</a> { <br />
+&#160;&#160;<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#aaee37a2ee2a817fcccb5bbd2bc69ef43a88183b946cc5f0e8c96b2e66e1c74a7e">DigitCollectionCompletionReason.Unknown</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#aaee37a2ee2a817fcccb5bbd2bc69ef43a1acf53ca9f895a8ac8b93258d1072d01">DigitCollectionCompletionReason.InitialSilenceTimeout</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#aaee37a2ee2a817fcccb5bbd2bc69ef43a94d69673ebe64c36330753f8d83b79db">DigitCollectionCompletionReason.InterdigitTimeout</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#aaee37a2ee2a817fcccb5bbd2bc69ef43a322f5eaa90c557ca271fc9378c903422">DigitCollectionCompletionReason.CompletedStopToneDetected</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#aaee37a2ee2a817fcccb5bbd2bc69ef43a6644b7d39fd144ad4277c7130a9967e9">DigitCollectionCompletionReason.CallTerminated</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#aaee37a2ee2a817fcccb5bbd2bc69ef43ad026e0261902b3154ca8c6c84f819b66">DigitCollectionCompletionReason.TemporarySystemFailure</a>
+<br />
+ }<tr class="memdesc:aaee37a2ee2a817fcccb5bbd2bc69ef43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reason for completion of Digit Collection Operation  <a href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#aaee37a2ee2a817fcccb5bbd2bc69ef43">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:aaee37a2ee2a817fcccb5bbd2bc69ef43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49682bb96cc882e6fff6b60ba5eb095e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a49682bb96cc882e6fff6b60ba5eb095e">ModalityType</a> { <a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a49682bb96cc882e6fff6b60ba5eb095ea88183b946cc5f0e8c96b2e66e1c74a7e">ModalityType.Unknown</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a49682bb96cc882e6fff6b60ba5eb095eab22f0418e8ac915eb66f829d262d14a2">ModalityType.Audio</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a49682bb96cc882e6fff6b60ba5eb095ea34e2d1989a1dbf75cd631596133ee5ee">ModalityType.Video</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a49682bb96cc882e6fff6b60ba5eb095eaececdd05136a89df1ae72951b79d4f58">ModalityType.VideoBasedScreenSharing</a>
+ }<tr class="memdesc:a49682bb96cc882e6fff6b60ba5eb095e"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of supported modality types  <a href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a49682bb96cc882e6fff6b60ba5eb095e">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a49682bb96cc882e6fff6b60ba5eb095e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37dcb2007b198097fc87a6eb50dd94ec"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a37dcb2007b198097fc87a6eb50dd94ec">Outcome</a> { <a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a37dcb2007b198097fc87a6eb50dd94eca505a83f220c02df2f85c3810cd9ceb38">Outcome.Success</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a37dcb2007b198097fc87a6eb50dd94ecae139a585510a502bbf1841cf589f5086">Outcome.Failure</a>
+ }<tr class="memdesc:a37dcb2007b198097fc87a6eb50dd94ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible outcomes  <a href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a37dcb2007b198097fc87a6eb50dd94ec">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a37dcb2007b198097fc87a6eb50dd94ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36b7d39d183115d84dc9a2db63014678"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a36b7d39d183115d84dc9a2db63014678">RecognitionCompletionReason</a> { <br />
+&#160;&#160;<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a36b7d39d183115d84dc9a2db63014678a88183b946cc5f0e8c96b2e66e1c74a7e">RecognitionCompletionReason.Unknown</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a36b7d39d183115d84dc9a2db63014678a1acf53ca9f895a8ac8b93258d1072d01">RecognitionCompletionReason.InitialSilenceTimeout</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a36b7d39d183115d84dc9a2db63014678ae00887f6ca506d41c55d411d936a5935">RecognitionCompletionReason.IncorrectDtmf</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a36b7d39d183115d84dc9a2db63014678a94d69673ebe64c36330753f8d83b79db">RecognitionCompletionReason.InterdigitTimeout</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a36b7d39d183115d84dc9a2db63014678a66709aaddc527daa09d9a45fbb825a99">RecognitionCompletionReason.SpeechOptionMatched</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a36b7d39d183115d84dc9a2db63014678a3aa64796cfed7fc2136168c0a07e0f14">RecognitionCompletionReason.DtmfOptionMatched</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a36b7d39d183115d84dc9a2db63014678a6644b7d39fd144ad4277c7130a9967e9">RecognitionCompletionReason.CallTerminated</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a36b7d39d183115d84dc9a2db63014678ad026e0261902b3154ca8c6c84f819b66">RecognitionCompletionReason.TemporarySystemFailure</a>
+<br />
+ }<tr class="memdesc:a36b7d39d183115d84dc9a2db63014678"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reason for completion of Recognition(speech/dtmf) Operation  <a href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a36b7d39d183115d84dc9a2db63014678">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a36b7d39d183115d84dc9a2db63014678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cd1f4005201cd64a23d8b5ec007dd60"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a0cd1f4005201cd64a23d8b5ec007dd60">RecordingCompletionReason</a> { <br />
+&#160;&#160;<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a0cd1f4005201cd64a23d8b5ec007dd60a88183b946cc5f0e8c96b2e66e1c74a7e">RecordingCompletionReason.Unknown</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a0cd1f4005201cd64a23d8b5ec007dd60a1acf53ca9f895a8ac8b93258d1072d01">RecordingCompletionReason.InitialSilenceTimeout</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a0cd1f4005201cd64a23d8b5ec007dd60a74954499999cd93ef43ca723002a1dc4">RecordingCompletionReason.MaxRecordingTimeout</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a0cd1f4005201cd64a23d8b5ec007dd60ab00622e6b9068872f2ae3ea3a25153cd">RecordingCompletionReason.CompletedSilenceDetected</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a0cd1f4005201cd64a23d8b5ec007dd60a322f5eaa90c557ca271fc9378c903422">RecordingCompletionReason.CompletedStopToneDetected</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a0cd1f4005201cd64a23d8b5ec007dd60a6644b7d39fd144ad4277c7130a9967e9">RecordingCompletionReason.CallTerminated</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a0cd1f4005201cd64a23d8b5ec007dd60ad026e0261902b3154ca8c6c84f819b66">RecordingCompletionReason.TemporarySystemFailure</a>
+<br />
+ }<tr class="memdesc:a0cd1f4005201cd64a23d8b5ec007dd60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reason for completion of Recording Operation  <a href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a0cd1f4005201cd64a23d8b5ec007dd60">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a0cd1f4005201cd64a23d8b5ec007dd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26e1d6aba9c9957c0d79a031755e9a90"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a26e1d6aba9c9957c0d79a031755e9a90">RecordingFormat</a> { <a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a26e1d6aba9c9957c0d79a031755e9a90a88183b946cc5f0e8c96b2e66e1c74a7e">RecordingFormat.Unknown</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a26e1d6aba9c9957c0d79a031755e9a90a34c805566abc50396217337ac74fa2f6">RecordingFormat.Wma</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a26e1d6aba9c9957c0d79a031755e9a90a0bc5cdc666c1935c50d8ece1b53edbc4">RecordingFormat.Wav</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a26e1d6aba9c9957c0d79a031755e9a90ad7d4845656ae6671b059af6f9093886a">RecordingFormat.Mp3</a>
+ }<tr class="memdesc:a26e1d6aba9c9957c0d79a031755e9a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encoding format to be used for recording  <a href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a26e1d6aba9c9957c0d79a031755e9a90">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a26e1d6aba9c9957c0d79a031755e9a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa50eb34c4f1255092f5264fce64cea83"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#aa50eb34c4f1255092f5264fce64cea83">ResolutionFormat</a> { <br />
+&#160;&#160;<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#aa50eb34c4f1255092f5264fce64cea83a88183b946cc5f0e8c96b2e66e1c74a7e">ResolutionFormat.Unknown</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#aa50eb34c4f1255092f5264fce64cea83aea6ccf4b8f9a1cca02207f9db87d4ab8">ResolutionFormat.Sd360p</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#aa50eb34c4f1255092f5264fce64cea83a5ac52e68f4dae97400096323b0cd6db9">ResolutionFormat.Sd540p</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#aa50eb34c4f1255092f5264fce64cea83aba6df8d904b0998f237c25dd9276fcff">ResolutionFormat.Hd720p</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#aa50eb34c4f1255092f5264fce64cea83a88c06a858e8eaed97694653df2d0a24b">ResolutionFormat.Hd1080p</a>
+<br />
+ }<tr class="memdesc:aa50eb34c4f1255092f5264fce64cea83"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of supported video resolution formats  <a href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#aa50eb34c4f1255092f5264fce64cea83">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:aa50eb34c4f1255092f5264fce64cea83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e174f6415d0ac8405d7036bb08d8aa8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a2e174f6415d0ac8405d7036bb08d8aa8">SayAs</a> { <br />
+&#160;&#160;<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a2e174f6415d0ac8405d7036bb08d8aa8a88183b946cc5f0e8c96b2e66e1c74a7e">SayAs.Unknown</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a2e174f6415d0ac8405d7036bb08d8aa8a2ea3c36c6dc9d6306e6513a930097614">SayAs.YearMonthDay</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a2e174f6415d0ac8405d7036bb08d8aa8a1fea9711983df3468d8e3890f0c8782e">SayAs.MonthDayYear</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a2e174f6415d0ac8405d7036bb08d8aa8a595dbdf2db93c1baf55e5af8eb4e28aa">SayAs.DayMonthYear</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a2e174f6415d0ac8405d7036bb08d8aa8a18de08da16bf55c635b60276c9945c46">SayAs.YearMonth</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a2e174f6415d0ac8405d7036bb08d8aa8a58ca3b62f39819de818a1e39516c1a80">SayAs.MonthYear</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a2e174f6415d0ac8405d7036bb08d8aa8ac3f23b2fbbdb0ef19d2d715ea1e0e3aa">SayAs.MonthDay</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a2e174f6415d0ac8405d7036bb08d8aa8ac80315afc70188c6260ffbcd7ab31c72">SayAs.DayMonth</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a2e174f6415d0ac8405d7036bb08d8aa8a03727ac48595a24daed975559c944a44">SayAs.Day</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a2e174f6415d0ac8405d7036bb08d8aa8a7cbb885aa1164b390a0bc050a64e1812">SayAs.Month</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a2e174f6415d0ac8405d7036bb08d8aa8a537c66b24ef5c83b7382cdc3f34885f2">SayAs.Year</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a2e174f6415d0ac8405d7036bb08d8aa8a6d16b8d48f82d9158ce26311d462cbba">SayAs.Cardinal</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a2e174f6415d0ac8405d7036bb08d8aa8ac9d539922221d77591558b5841d36fd1">SayAs.Ordinal</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a2e174f6415d0ac8405d7036bb08d8aa8acd8d64cdb20ce5679ebe747747c3cc4c">SayAs.Letters</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a2e174f6415d0ac8405d7036bb08d8aa8a6e3fd20d2ed690d30ef35b8b46f23f33">SayAs.Time12</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a2e174f6415d0ac8405d7036bb08d8aa8a609cba63fe9307318e21b0b4e86ae0f2">SayAs.Time24</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a2e174f6415d0ac8405d7036bb08d8aa8ab2a1e8c4e743228e0a3719e3abc4cc1e">SayAs.Telephone</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a2e174f6415d0ac8405d7036bb08d8aa8a49ee3087348e8d44e1feda1917443987">SayAs.Name</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a2e174f6415d0ac8405d7036bb08d8aa8a86e9c1892f2d41a084ba8348bdcc9ae4">SayAs.PhoneticName</a>
+<br />
+ }<tr class="memdesc:a2e174f6415d0ac8405d7036bb08d8aa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Difference SayAs attributes we support for tts  <a href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a2e174f6415d0ac8405d7036bb08d8aa8">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a2e174f6415d0ac8405d7036bb08d8aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adda5562a43410fa476e2ca6f9a3a155f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#adda5562a43410fa476e2ca6f9a3a155f">VoiceGender</a> { <a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#adda5562a43410fa476e2ca6f9a3a155fa63889cfb9d3cbe05d1bd2be5cc9953fd">VoiceGender.Male</a>, 
+<a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#adda5562a43410fa476e2ca6f9a3a155fab719ce180ec7bd9641fece2f920f4817">VoiceGender.Female</a>
+ }<tr class="memdesc:adda5562a43410fa476e2ca6f9a3a155f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Voice genders we support for tts  <a href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#adda5562a43410fa476e2ca6f9a3a155f">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:adda5562a43410fa476e2ca6f9a3a155f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="a008ba614646ad606f9c82b3165a17c64"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a008ba614646ad606f9c82b3165a17c64">Microsoft.Bot.Builder.Calling.ObjectModel.Misc.CallState</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The various possible states of a AudioVideoCall. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a008ba614646ad606f9c82b3165a17c64a88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc">
+<p>Unknown not recognized. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a008ba614646ad606f9c82b3165a17c64ae599161956d626eda4cb0a5ffb85271c"></a>Idle&#160;</td><td class="fielddoc">
+<p>Initial state </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a008ba614646ad606f9c82b3165a17c64a589ab34e870b80c8c7d035805452df19"></a>Incoming&#160;</td><td class="fielddoc">
+<p>The call has just been received </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a008ba614646ad606f9c82b3165a17c64a6f5e6e098505ac366a921fdd2e9dfbe8"></a>Establishing&#160;</td><td class="fielddoc">
+<p>The call establishment is in progress after initiating or accepting the call </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a008ba614646ad606f9c82b3165a17c64a072f9734fceb02f516b50d4174ac0f18"></a>Established&#160;</td><td class="fielddoc">
+<p>The call is established </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a008ba614646ad606f9c82b3165a17c64abcd8db575b47c838e5d551e3973db4ac"></a>Hold&#160;</td><td class="fielddoc">
+<p>The call is on Hold </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a008ba614646ad606f9c82b3165a17c64a4e12f9fe09d567817417aaebe4dfdaad"></a>Unhold&#160;</td><td class="fielddoc">
+<p>The call is Unhold </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a008ba614646ad606f9c82b3165a17c64a9244f0a34fd81da60fa38383138864a5"></a>Transferring&#160;</td><td class="fielddoc">
+<p>The call has initiated a transfer </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a008ba614646ad606f9c82b3165a17c64a32682312d17c7cbf18e73594f5570319"></a>Redirecting&#160;</td><td class="fielddoc">
+<p>The call has initiated a redirection </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a008ba614646ad606f9c82b3165a17c64a720f84c3d4dcb9a556ac6adfd1e75b8c"></a>Terminating&#160;</td><td class="fielddoc">
+<p>The call is terminating </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a008ba614646ad606f9c82b3165a17c64afba9c4daa2dd29d1077d32d965320ac1"></a>Terminated&#160;</td><td class="fielddoc">
+<p>The call has terminated </p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="../../d5/d5e/_call_state_8cs_source.html#l00008">8</a> of file <a class="el" href="../../d5/d5e/_call_state_8cs_source.html">CallState.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7384c71b84b2a52b140db8057446d765"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a7384c71b84b2a52b140db8057446d765">Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Culture</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cultures we support for recognition or prompt playing </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a7384c71b84b2a52b140db8057446d765a88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc">
+<p>Unknown not recognized. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7384c71b84b2a52b140db8057446d765a25fa9b570b675a34aa326178f4bae1e5"></a>EnUs&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="../../dd/d4a/_culture_8cs_source.html#l00010">10</a> of file <a class="el" href="../../dd/d4a/_culture_8cs_source.html">Culture.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaee37a2ee2a817fcccb5bbd2bc69ef43"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#aaee37a2ee2a817fcccb5bbd2bc69ef43">Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reason for completion of Digit Collection Operation </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aaee37a2ee2a817fcccb5bbd2bc69ef43a88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc">
+<p>Unknown not recognized. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aaee37a2ee2a817fcccb5bbd2bc69ef43a1acf53ca9f895a8ac8b93258d1072d01"></a>InitialSilenceTimeout&#160;</td><td class="fielddoc">
+<p>The max time period by which user is supposed to start punching in digits has elapsed. </p>
+<p>This results in a "failed" DigitCollection Attempt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aaee37a2ee2a817fcccb5bbd2bc69ef43a94d69673ebe64c36330753f8d83b79db"></a>InterdigitTimeout&#160;</td><td class="fielddoc">
+<p>The maximum time period between user punching in successive digits has elapsed. </p>
+<p>This results in a "successful" DigitCollection Attempt and we return the digits collected till then. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aaee37a2ee2a817fcccb5bbd2bc69ef43a322f5eaa90c557ca271fc9378c903422"></a>CompletedStopToneDetected&#160;</td><td class="fielddoc">
+<p>Digit collection attempt was stopped by user punching in a stop tone. </p>
+<p>This results in a "successful" DigitCollection Attempt and we return the digits collected till then. The stopTone(s) detected are excluded from the digits we return. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aaee37a2ee2a817fcccb5bbd2bc69ef43a6644b7d39fd144ad4277c7130a9967e9"></a>CallTerminated&#160;</td><td class="fielddoc">
+<p>The underlying call was terminated </p>
+<p>This results in a "failed" DigitCollection Attempt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aaee37a2ee2a817fcccb5bbd2bc69ef43ad026e0261902b3154ca8c6c84f819b66"></a>TemporarySystemFailure&#160;</td><td class="fielddoc">
+<p><a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html">Misc</a> System Failure </p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="../../d6/d82/_digit_collection_completion_reason_8cs_source.html#l00009">9</a> of file <a class="el" href="../../d6/d82/_digit_collection_completion_reason_8cs_source.html">DigitCollectionCompletionReason.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a49682bb96cc882e6fff6b60ba5eb095e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a49682bb96cc882e6fff6b60ba5eb095e">Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>List of supported modality types </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a49682bb96cc882e6fff6b60ba5eb095ea88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a49682bb96cc882e6fff6b60ba5eb095eab22f0418e8ac915eb66f829d262d14a2"></a>Audio&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a49682bb96cc882e6fff6b60ba5eb095ea34e2d1989a1dbf75cd631596133ee5ee"></a>Video&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a49682bb96cc882e6fff6b60ba5eb095eaececdd05136a89df1ae72951b79d4f58"></a>VideoBasedScreenSharing&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="../../d2/d5c/_modality_type_8cs_source.html#l00009">9</a> of file <a class="el" href="../../d2/d5c/_modality_type_8cs_source.html">ModalityType.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a37dcb2007b198097fc87a6eb50dd94ec"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a37dcb2007b198097fc87a6eb50dd94ec">Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Outcome</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Possible outcomes </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a37dcb2007b198097fc87a6eb50dd94eca505a83f220c02df2f85c3810cd9ceb38"></a>Success&#160;</td><td class="fielddoc">
+<p>Success </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a37dcb2007b198097fc87a6eb50dd94ecae139a585510a502bbf1841cf589f5086"></a>Failure&#160;</td><td class="fielddoc">
+<p>Failure </p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="../../dd/d11/_outcome_8cs_source.html#l00009">9</a> of file <a class="el" href="../../dd/d11/_outcome_8cs_source.html">Outcome.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a36b7d39d183115d84dc9a2db63014678"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a36b7d39d183115d84dc9a2db63014678">Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reason for completion of Recognition(speech/dtmf) Operation </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a36b7d39d183115d84dc9a2db63014678a88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc">
+<p>Unknown not recognized. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a36b7d39d183115d84dc9a2db63014678a1acf53ca9f895a8ac8b93258d1072d01"></a>InitialSilenceTimeout&#160;</td><td class="fielddoc">
+<p>The maximum initial silence that can be tolerated had been reached </p>
+<p>This results in a "failed" Recognition Attempt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a36b7d39d183115d84dc9a2db63014678ae00887f6ca506d41c55d411d936a5935"></a>IncorrectDtmf&#160;</td><td class="fielddoc">
+<p>The Recognition completed because the user punched in wrong dtmf which was not amongst the possible choices. </p>
+<p>We would only look for dtmfs when dtmf recognition is requested. Thus for pure speech menus, this completion reason would never be possible.</p>
+<p>This results in a "failed" Recognition Attempt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a36b7d39d183115d84dc9a2db63014678a94d69673ebe64c36330753f8d83b79db"></a>InterdigitTimeout&#160;</td><td class="fielddoc">
+<p>The maximum time period between user punching in successive digits has elapsed. </p>
+<p>We would only look for dtmfs when dtmf recognition is requested. Thus for pure speech menus, this completion reason would never be possible.</p>
+<p>This results in a "failed" Recognition Attempt. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a36b7d39d183115d84dc9a2db63014678a66709aaddc527daa09d9a45fbb825a99"></a>SpeechOptionMatched&#160;</td><td class="fielddoc">
+<p>The recognition successfully matched a Grammar option </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a36b7d39d183115d84dc9a2db63014678a3aa64796cfed7fc2136168c0a07e0f14"></a>DtmfOptionMatched&#160;</td><td class="fielddoc">
+<p>The recognition successfully matched a Dtmf option </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a36b7d39d183115d84dc9a2db63014678a6644b7d39fd144ad4277c7130a9967e9"></a>CallTerminated&#160;</td><td class="fielddoc">
+<p>The underlying call was terminated </p>
+<p>This results in a "failed" Recognition Attempt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a36b7d39d183115d84dc9a2db63014678ad026e0261902b3154ca8c6c84f819b66"></a>TemporarySystemFailure&#160;</td><td class="fielddoc">
+<p><a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html">Misc</a> System Failure </p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="../../da/de1/_recognition_completion_reason_8cs_source.html#l00009">9</a> of file <a class="el" href="../../da/de1/_recognition_completion_reason_8cs_source.html">RecognitionCompletionReason.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0cd1f4005201cd64a23d8b5ec007dd60"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a0cd1f4005201cd64a23d8b5ec007dd60">Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reason for completion of Recording Operation </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a0cd1f4005201cd64a23d8b5ec007dd60a88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc">
+<p>Unknown not recognized. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a0cd1f4005201cd64a23d8b5ec007dd60a1acf53ca9f895a8ac8b93258d1072d01"></a>InitialSilenceTimeout&#160;</td><td class="fielddoc">
+<p>The maximum initial silence that can be tolerated had been reached </p>
+<p>This results in a "failed" Recording Attempt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a0cd1f4005201cd64a23d8b5ec007dd60a74954499999cd93ef43ca723002a1dc4"></a>MaxRecordingTimeout&#160;</td><td class="fielddoc">
+<p>The maximum duration that can be allowed for recording had been reached </p>
+<p>This results in a "successful" Recording Attempt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a0cd1f4005201cd64a23d8b5ec007dd60ab00622e6b9068872f2ae3ea3a25153cd"></a>CompletedSilenceDetected&#160;</td><td class="fielddoc">
+<p>Recording was completed as detected by silence after a talk spurt </p>
+<p>This results in a "successful" Recording Attempt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a0cd1f4005201cd64a23d8b5ec007dd60a322f5eaa90c557ca271fc9378c903422"></a>CompletedStopToneDetected&#160;</td><td class="fielddoc">
+<p>Recording was completed by user punching in a stop tone </p>
+<p>This results in a "successful" Recording Attempt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a0cd1f4005201cd64a23d8b5ec007dd60a6644b7d39fd144ad4277c7130a9967e9"></a>CallTerminated&#160;</td><td class="fielddoc">
+<p>The underlying call was terminated </p>
+<p>This results in a "successful" Recording Attempt if there were any bytes recorded </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a0cd1f4005201cd64a23d8b5ec007dd60ad026e0261902b3154ca8c6c84f819b66"></a>TemporarySystemFailure&#160;</td><td class="fielddoc">
+<p><a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html">Misc</a> System Failure </p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="../../d5/dad/_recording_completion_reason_8cs_source.html#l00009">9</a> of file <a class="el" href="../../d5/dad/_recording_completion_reason_8cs_source.html">RecordingCompletionReason.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a26e1d6aba9c9957c0d79a031755e9a90"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a26e1d6aba9c9957c0d79a031755e9a90">Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingFormat</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Encoding format to be used for recording </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a26e1d6aba9c9957c0d79a031755e9a90a88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc">
+<p>Unknown not recognized. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a26e1d6aba9c9957c0d79a031755e9a90a34c805566abc50396217337ac74fa2f6"></a>Wma&#160;</td><td class="fielddoc">
+<p>WMA </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a26e1d6aba9c9957c0d79a031755e9a90a0bc5cdc666c1935c50d8ece1b53edbc4"></a>Wav&#160;</td><td class="fielddoc">
+<p>WAV </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a26e1d6aba9c9957c0d79a031755e9a90ad7d4845656ae6671b059af6f9093886a"></a>Mp3&#160;</td><td class="fielddoc">
+<p>MP3 </p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="../../d4/def/_recording_format_8cs_source.html#l00009">9</a> of file <a class="el" href="../../d4/def/_recording_format_8cs_source.html">RecordingFormat.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa50eb34c4f1255092f5264fce64cea83"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#aa50eb34c4f1255092f5264fce64cea83">Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>List of supported video resolution formats </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aa50eb34c4f1255092f5264fce64cea83a88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc">
+<p>Unknown not recognized. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa50eb34c4f1255092f5264fce64cea83aea6ccf4b8f9a1cca02207f9db87d4ab8"></a>Sd360p&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa50eb34c4f1255092f5264fce64cea83a5ac52e68f4dae97400096323b0cd6db9"></a>Sd540p&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa50eb34c4f1255092f5264fce64cea83aba6df8d904b0998f237c25dd9276fcff"></a>Hd720p&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa50eb34c4f1255092f5264fce64cea83a88c06a858e8eaed97694653df2d0a24b"></a>Hd1080p&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="../../de/dbd/_resolution_format_8cs_source.html#l00010">10</a> of file <a class="el" href="../../de/dbd/_resolution_format_8cs_source.html">ResolutionFormat.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2e174f6415d0ac8405d7036bb08d8aa8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#a2e174f6415d0ac8405d7036bb08d8aa8">Microsoft.Bot.Builder.Calling.ObjectModel.Misc.SayAs</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Difference SayAs attributes we support for tts </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a2e174f6415d0ac8405d7036bb08d8aa8a88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc">
+<p>Unknown not recognized. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2e174f6415d0ac8405d7036bb08d8aa8a2ea3c36c6dc9d6306e6513a930097614"></a>YearMonthDay&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2e174f6415d0ac8405d7036bb08d8aa8a1fea9711983df3468d8e3890f0c8782e"></a>MonthDayYear&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2e174f6415d0ac8405d7036bb08d8aa8a595dbdf2db93c1baf55e5af8eb4e28aa"></a>DayMonthYear&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2e174f6415d0ac8405d7036bb08d8aa8a18de08da16bf55c635b60276c9945c46"></a>YearMonth&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2e174f6415d0ac8405d7036bb08d8aa8a58ca3b62f39819de818a1e39516c1a80"></a>MonthYear&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2e174f6415d0ac8405d7036bb08d8aa8ac3f23b2fbbdb0ef19d2d715ea1e0e3aa"></a>MonthDay&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2e174f6415d0ac8405d7036bb08d8aa8ac80315afc70188c6260ffbcd7ab31c72"></a>DayMonth&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2e174f6415d0ac8405d7036bb08d8aa8a03727ac48595a24daed975559c944a44"></a>Day&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2e174f6415d0ac8405d7036bb08d8aa8a7cbb885aa1164b390a0bc050a64e1812"></a>Month&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2e174f6415d0ac8405d7036bb08d8aa8a537c66b24ef5c83b7382cdc3f34885f2"></a>Year&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2e174f6415d0ac8405d7036bb08d8aa8a6d16b8d48f82d9158ce26311d462cbba"></a>Cardinal&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2e174f6415d0ac8405d7036bb08d8aa8ac9d539922221d77591558b5841d36fd1"></a>Ordinal&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2e174f6415d0ac8405d7036bb08d8aa8acd8d64cdb20ce5679ebe747747c3cc4c"></a>Letters&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2e174f6415d0ac8405d7036bb08d8aa8a6e3fd20d2ed690d30ef35b8b46f23f33"></a>Time12&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2e174f6415d0ac8405d7036bb08d8aa8a609cba63fe9307318e21b0b4e86ae0f2"></a>Time24&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2e174f6415d0ac8405d7036bb08d8aa8ab2a1e8c4e743228e0a3719e3abc4cc1e"></a>Telephone&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2e174f6415d0ac8405d7036bb08d8aa8a49ee3087348e8d44e1feda1917443987"></a>Name&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2e174f6415d0ac8405d7036bb08d8aa8a86e9c1892f2d41a084ba8348bdcc9ae4"></a>PhoneticName&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="../../dc/d3d/_say_as_8cs_source.html#l00009">9</a> of file <a class="el" href="../../dc/d3d/_say_as_8cs_source.html">SayAs.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adda5562a43410fa476e2ca6f9a3a155f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/dd2/namespace_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_misc.html#adda5562a43410fa476e2ca6f9a3a155f">Microsoft.Bot.Builder.Calling.ObjectModel.Misc.VoiceGender</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Voice genders we support for tts </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="adda5562a43410fa476e2ca6f9a3a155fa63889cfb9d3cbe05d1bd2be5cc9953fd"></a>Male&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adda5562a43410fa476e2ca6f9a3a155fab719ce180ec7bd9641fece2f920f4817"></a>Female&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="../../da/d03/_voice_gender_8cs_source.html#l00009">9</a> of file <a class="el" href="../../da/d03/_voice_gender_8cs_source.html">VoiceGender.cs</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.11-->
+<!-- start footer part -->
+<!-- id is needed for treeview function! -->
+<div class="outline footer">
+    <ul>
+        <li><a href="//aka.ms/bf-contactus">Contact us</a></li>
+        <li><a href="//aka.ms/bf-privacy">Privacy & cookies</a></li>
+        <li><a href="//aka.ms/bf-terms">Terms of use</a></li>
+        <li><a href="//aka.ms/bf-conduct">Code of conduct</a></li>
+        <li>&copy; 2016 Microsoft</li>
+    </ul>
+</div>
+<script src="//bot-framework.azureedge.net/libs/svgxuse.js"></script>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100954936); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100954936ns.gif" /></p></noscript>
+</body>
+</html>

@@ -4,7 +4,6 @@ _site/
 .optemp/
 _themes.MSDN.Modern/
 _themes.VS.Modern/
-_scratch
 
 .openpublishing.buildcore.ps1
 
