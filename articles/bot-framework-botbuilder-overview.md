@@ -11,11 +11,14 @@ ms.devlang: may be required
 ms.topic: article
 ms.tgt_pltfrm: may be required
 ms.workload: required
-ms.date: mm/dd/yyyy
+ms.date: 02/02/2017
 ms.author: rstand@microsoft.com
 
 ---
-# Bot Builder SDK
+# Create bots with Bot Builder
+
+> [!IMPORTANT]
+> Content is forthcoming.
 
 The Microsoft Bot Builder SDK is one of three main components of the Microsoft Bot Framework.
 
