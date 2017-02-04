@@ -30,15 +30,18 @@ Bots (or conversation agents) are rapidly becoming an integral part of one’s d
 
 Developers writing bots all face the same problems: bots require basic I/O, they must have language and dialog skills, and they must connect to users – preferably in any conversation experience and language the user chooses. The Bot Framework provides tools to solve these problems. Features include automatic translation to more than 30 languages, user and conversation state management, debugging tools, an embeddable web chat control and a way for users to discover, try, and add bots to the conversation experiences they love.
 
-### Bot Builder SDK
+## Bot Builder SDK
 
 To build your bot, the Framework provides a [.NET SDK](/en-us/csharp/builder/sdkreference/) and [Node.js SDK](/en-us/node/builder/overview/). These SDKs provide features such as dialogs and built-in prompts that make interacting with users much simpler. For those using other languages, see the framework’s [REST API](/en-us/connector/overview/). The Bot Builder SDK is provided as open source on GitHub (see [BotBuilder](https://github.com/Microsoft/BotBuilder)).
 
 To give your bot more human-like senses, you can incorporate LUIS for natural language understanding, Cortana for voice, and the Bing APIs for search. For more information about adding intelligence to your bot, see [Bot Intelligence](/en-us/bot-intelligence/getting-started/).
 
-### Developer Portal
-The Developer Portal allows you to register, connect, publish and manage your bot through your bot’s dashboard. It provides the connection to text/SMS, Skype, Slack, Facebook Messenger, Office 365 mail and other channels. 
-AThe Direct Line API enables you to host your bot in your app, and an embeddable Web chat control lets you host from your website.  
+## Bot Connector
+The Bot Connector API provides the connection to text/SMS, Skype, Slack, Facebook Messenger, Office 365 mail and other channels. 
+The Direct Line API enables you to host your bot in your app, and an embeddable Web chat control lets you host from your website. 
 
-### Bot Directory
+## Developer Portal
+The Developer Portal allows you to register, connect, publish and manage your bot through your bot’s dashboard.  
+
+## Bot Directory
 The Bot Directory is a public directory of bots registered and published with Microsoft Bot Framework. Users can try your bot from the directory by using the Web chat control. Users can discover and add your bot to the channels on which it is configured when the directory is made public to end users. 
