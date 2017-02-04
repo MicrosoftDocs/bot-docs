@@ -26,8 +26,8 @@ It is easy to use and models frameworks like Express & Restify to provide a fami
 In this tutorial, we'll walk through the process of developing, testing, and publishing a bot that is created using the Bot Builder SDK for Node.js.
 
 ## Get the SDK
-First, let's get the SDK and install the necessary dependencies. 
-Create a folder for your bot, navigate to it, and run the following **npm** command:
+We'll start by getting the SDK and installing the necessary dependencies. 
+First, create a folder for your bot, navigate to it, and run the following **npm** command:
 
 ```
 npm init
@@ -83,10 +83,10 @@ node app.js
 
 At this point, your bot is running locally. Next, start the emulator and then connect your bot by completing the following tasks in the emulator:
 1. Select http://localhost:3978/api/messages from the address bar. (This is the default endpoint that your bot listens to when hosted locally.)
-2. Click **Connect**. (You won't need to specify **Microsoft App ID** and **Microsoft App Password** -- you'll get this information later when you register your bot with the framework.)
+2. Click **Connect**. (You won't need to specify **Microsoft App ID** and **Microsoft App Password** -- you'll get this information later if/when you register your bot with the framework.)
 
 Now that your bot is running locally and is connected to the emulator, test your bot by typing a few messages in the emulator. 
-You should see that the bot responds to each message you send by echoing back your message prefixed with the text *You said:*. 
+You should see that the bot responds to each message you send by echoing back your message prefixed with the text *You said*. 
 Congratulations -- you've successfully created an *echo bot* using the Bot Builder SDK for Node.js! 
 
 ## Next steps

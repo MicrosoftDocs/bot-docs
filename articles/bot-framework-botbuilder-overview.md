@@ -1,29 +1,52 @@
 ---
-title: Bot Framework SDK | Bot Framework
-description: Overview of the Bot Framework and its capabilities.
-services: service-name
+title: Bot Builder Overview | Microsoft Docs
+description: Description of the various means of creating a bot.
+services: Bot Framework
 documentationcenter: BotFramework-Docs
-author: RobStand
-manager: manager-alias
+author: kbrandl
+manager: rstand
 
-ms.service: required
-ms.devlang: may be required
+ms.service: Bot Framework
 ms.topic: article
-ms.tgt_pltfrm: may be required
-ms.workload: required
-ms.date: 02/02/2017
-ms.author: rstand@microsoft.com
+ms.workload: Cognitive Services
+ms.date: 02/03/2017
+ms.author: v-kibran@microsoft.com
 
 ---
-# Create bots with Bot Builder
+# About Bot Builder
 
-> [!IMPORTANT]
-> Content is forthcoming.
+Bot Builder enables you to build and connect intelligent bots to interact with your users naturally wherever they are — from your website or app to text/SMS, Skype, Slack, Facebook Messenger, Office 365 mail, Teams and other popular services. 
+A majority of developers create bots via one of the following means:
 
-The Microsoft Bot Builder SDK is one of three main components of the Microsoft Bot Framework.
+- [Bot Builder SDK for .NET](#dotnet) 
+- [Bot Builder SDK for Node.js](#node)
+- [Azure Bot Service](#azure)
 
-The Microsoft Bot Framework provides just what you need to build and connect intelligent bots that interact naturally wherever your users are talking, from text/sms to Skype, Slack, Office 365 mail and other popular services.
+## <a id="dotnet"></a>Bot Builder SDK for .NET
+The Bot Builder SDK for .NET is a powerful framework for constructing bots that can handle both freeform interactions and more guided ones where the possibilities are explicitly shown to the user. It is easy to use and leverages C# to provide a familiar way for .NET developers to write bots. 
 
-![Bot Framework Diagram](http://docs.botframework.com/en-us/images/faq-overview/botframework_overview_july.png)
+For a detailed walkthough of creating a bot using the Bot Builder SDK for .NET, see <a href="bot-framework-dotnet-getstarted.md">Using .NET</a>.
 
-Bots (or conversation agents) are rapidly becoming an integral part of one’s digital experience – they are as vital a way for users to interact with a service or application as is a web site or a mobile experience. Developers writing bots all face the same problems: bots require basic I/O; they must have language and dialog skills; and they must connect to users – preferably in any conversation experience and language the user chooses. The Bot Framework provides tools to easily solve these problems and more for developers e.g., automatic translation to more than 30 languages, user and conversation state management, debugging tools, an embeddable web chat control and a way for users to discover, try, and add bots to the conversation experiences they love.
+## <a id="node"></a>Bot Builder SDK for Node.js
+The Bot Builder SDK for Node.js is a powerful framework for constructing bots that can handle both freeform interactions and more guided ones where the possibilities are explicitly shown to the user. It is easy to use and models frameworks like Express & Restify to provide a familiar way for JavaScript developers to write bots. 
+
+For a detailed walkthough of creating a bot using the Bot Builder SDK for Node.js, see <a href="bot-framework-nodejs-getstarted.md">Using Node.js</a>.
+
+## <a id="azure"></a>Azure Bot Service
+The Azure Bot Service provides an integrated environment that is purpose-built for bot development, 
+enabling you to build, connect, test, deploy and manage intelligent bots, all from one place. 
+You can write your bot in C# or Node.js directly in the browser using the Azure editor, without any need for a tool chain (local editor and source control). 
+
+For a detailed walkthough of creating a bot using Azure Bot Service, see <a href="bot-framework-azure-getstarted.md">Using Azure Bot Service</a>.
+
+## Other Options (REST)
+As an alternative to using the Bot Builder SDK for .NET, the Bot Builder SDK for .NET, or the Azure Bot Service, 
+you can create a bot with any programming language by using the Bot Framework REST API.
+- The Bot Connector REST API enables your bot to send and receive messages to channels configured in the [Bot Framework Developer Portal](https://dev.botframework.com/). 
+- The Bot State REST API enables your bot to store and retrieve state associated with the conversations that are conducted through the Bot Connector REST API. 
+
+For details about the Bot Connector REST API and the Bot State REST API, see [TBD-topic-in-Develop-section].
+
+To connect your own application (i.e., client application, web chat control, mobile app, etc.) directly to a single bot, 
+you can use the Direct Line REST API. 
+For details about the Direct Line REST API, see [TBD-topic-in-Develop-section].
