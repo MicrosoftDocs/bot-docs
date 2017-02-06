@@ -46,7 +46,7 @@ For this walkthrough, you'll create a bot that simply echos back any user input.
 In the folder that you created earlier for your bot, create a new file named **app.js**. 
 Then, add the following code to the file: 
 
-[!include[Sample Code - Node - Echo Bot](includes/code-node-echo-bot.md)]
+[!include[Sample Code - Node - Echo Bot](../includes/code-node-echo-bot.md)]
 
 ## Test your bot
 Next, let's test your bot by using the [Bot Framework Emulator](bot-framework-emulator.md) to see it in action. 
