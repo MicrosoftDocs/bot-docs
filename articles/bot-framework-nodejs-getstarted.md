@@ -46,29 +46,7 @@ For this walkthrough, you'll create a bot that simply echos back any user input.
 In the folder that you created earlier for your bot, create a new file named **app.js**. 
 Then, add the following code to the file: 
 
-```javascript 
-var restify = require('restify');
-var builder = require('botbuilder');
-
-// Setup Restify Server
-var server = restify.createServer();
-server.listen(process.env.port || process.env.PORT || 3978, function () {
-   console.log('%s listening to %s', server.name, server.url); 
-});
-  
-// Create chat bot
-var connector = new builder.ChatConnector({
-    appId: process.env.MICROSOFT_APP_ID,
-    appPassword: process.env.MICROSOFT_APP_PASSWORD
-});
-var bot = new builder.UniversalBot(connector);
-server.post('/api/messages', connector.listen());
-
-// Bot dialogs
-bot.dialog('/', function (session) {
-    session.send("You said: '" + session.message.text + "'");
-});
-```
+[!include[Sample Code - Node - Echo Bot](includes/code-node-echo-bot.md)]
 
 ## Test your bot
 Next, let's test your bot by using the [Bot Framework Emulator](bot-framework-emulator.md) to see it in action. 
@@ -87,7 +65,7 @@ At this point, your bot is running locally. Next, start the emulator and then co
 
 Now that your bot is running locally and is connected to the emulator, test your bot by typing a few messages in the emulator. 
 You should see that the bot responds to each message you send by echoing back your message prefixed with the text *You said*. 
-Congratulations -- you've successfully created an *echo bot* using the Bot Builder SDK for Node.js! 
+Congratulations -- you've successfully created a bot using the Bot Builder SDK for Node.js! 
 
 ## Next steps
 Content coming soon. 
