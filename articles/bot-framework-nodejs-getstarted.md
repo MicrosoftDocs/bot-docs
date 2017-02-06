@@ -68,19 +68,17 @@ You should see that the bot responds to each message you send by echoing back yo
 Congratulations -- you've successfully created a bot using the Bot Builder SDK for Node.js! 
 
 ## Next steps
-Content coming soon. 
+Once you've verified that your bot is functioning properly, you can share it with others by completing these additional steps:
 
-### Deploy your bot
-Content coming soon.
-
-### Register your bot
-Content coming soon.
-
-### Configure your bot
-Content coming soon.
-
-### Publish your bot
-Content coming soon.
+- [Deploy](bot-publish-deploy.md) your bot to the cloud
+- [Register](bot-publish-register.md) your bot with the Bot Framework
+- [Configure](bot-publish-configure.md) your bot to run on one or more conversation channels
+- [Publish](bot-publish-add-to-directory.md) your bot to Bot Directory
 
 ## Dive deeper
-Content coming soon.
+In this walkthrough, you created a simple bot using the Bot Builder SDK for Node.js. 
+For more details about building great bots, see the following topics: 
+
+> [!NOTE]
+> Content coming soon. 
+> TO_DO: add list of related topics
