@@ -76,8 +76,8 @@ Once you've verified that your bot is functioning properly, you can share it wit
 - [Publish](bot-publish-add-to-directory.md) your bot to Bot Directory
 
 ## Dive deeper
-In this walkthrough, you created a simple bot using the Bot Builder SDK for Node.js. 
-For more details about building great bots, see the following topics: 
+In this tutorial, you created a simple bot using the Bot Builder SDK for Node.js. 
+To continue getting started and learn more about building great bots, see: 
 
 > [!NOTE]
 > Content coming soon. 
