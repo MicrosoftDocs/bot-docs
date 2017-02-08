@@ -70,10 +70,10 @@ Congratulations -- you've successfully created a bot using the Bot Builder SDK f
 ## Next steps
 Once you've verified that your bot is functioning properly, you can share it with others by completing these additional steps:
 
-- [Register](bot-publish-register.md) your bot with the Bot Framework
-- [Deploy](bot-publish-deploy.md) your bot to the cloud
-- [Configure](bot-publish-configure.md) your bot to run on one or more conversation channels
-- [Publish](bot-publish-add-to-directory.md) your bot to Bot Directory
+- [Register](bot-framework-publish-register.md) your bot with the Bot Framework
+- [Deploy](bot-framework-publish-deploy.md) your bot to the cloud
+- [Configure](bot-framework-publish-configure.md) your bot to run on one or more conversation channels
+- [Publish](bot-framework-publish-add-to-directory.md) your bot to Bot Directory
 
 ## Dive deeper
 In this tutorial, you created a simple bot using the Bot Builder SDK for Node.js. 

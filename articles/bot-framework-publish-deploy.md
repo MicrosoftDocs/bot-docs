@@ -60,7 +60,7 @@ Then, name your web app and fill out the rest of the information as appropriate 
 ![Create the App Service Plan by clicking Create](media/connector-getstarted-publish-app-service-create-spinner.png)
 
 - Copy the **Destination URL** value to the clipboard 
-(you'll need this value later to test the connection to the bot and to [register](bot-publish-register.md) it with the Bot Framework Developer Portal), 
+(you'll need this value later to test the connection to the bot and to [register](bot-framework-publish-register.md) it with the Bot Framework Developer Portal), 
 and then click **Validate Connection** to verify that the settings have been configured correctly. 
 If validation is successful, click **Next**. <br/><br/>
 ![Validate Connection and click Next to proceed to the final step.](media/connector-getstarted-publish-destination.png)
@@ -185,7 +185,7 @@ You can verify that the deployment has completed by visiting the web app in a br
 ### <a id="github4"></a>Step 4: Update Application settings with bot credentials
 
 Update **Application settings** to specify values for **MICROSOFT_APP_ID** and **MICROSOFT_APP_PASSWORD** using the 
-values that you acquired when you [registered](bot-publish-register.md) the bot in the Bot Framework Developer Portal. 
+values that you acquired when you [registered](bot-framework-publish-register.md) the bot in the Bot Framework Developer Portal. 
 
 > [!NOTE]
 > If you have not yet registered the bot in the Bot Framework Developer Portal, you can populate **MICROSOFT_APP_ID** and **MICROSOFT_APP_PASSWORD**  
@@ -200,7 +200,7 @@ values that you acquired when you [registered](bot-publish-register.md) the bot 
 
 ##<a id="next"></a> Next steps
 In this tutorial, you deployed a bot to Microsoft Azure (using any one of the three methods described) and then verified that the deployment was successful by testing the bot using the Bot Framework Emulator. 
-As the next step in the bot publication process, you can now [configure the bot](bot-publish-configure.md) to run on one or more channels by using the Bot Framework Developer Portal.
+As the next step in the bot publication process, you can now [configure the bot](bot-framework-publish-configure.md) to run on one or more channels by using the Bot Framework Developer Portal.
 
 > [!NOTE]
 > Although this tutorial uses Microsoft Azure, you can deploy your bot to any cloud service. 
