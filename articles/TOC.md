@@ -4,7 +4,7 @@
 ## [Key scenarios](bot-framework-scenarios.md)
 # Get Started
 ## [About Bot Builder](bot-framework-botbuilder-overview.md)
-## [Use C<span>#</span>](bot-framework-dotnet-getstarted.md)
+## [Use .NET](bot-framework-dotnet-getstarted.md)
 ## [Use Node.js](bot-framework-nodejs-getstarted.md)
 ## [Use Azure Bot Service](bot-framework-azure-getstarted.md)
 # Key Concepts
