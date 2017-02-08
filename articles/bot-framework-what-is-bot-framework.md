@@ -16,10 +16,10 @@ ms.author: v-demak@microsoft.com; rstand@microsoft.com
 #What is the Bot Framework?
 
 The Microsoft Bot Framework provides what you need to build and deploy bots that interact naturally with users, wherever they have conversations. The framework consists of the following components:
-- Bot Builder -- SDKs and tools for writing bots, including an emulator for testing your bot.  
-- Bot Connector -- A service that allows your bot to communicate across multiple client channels such as Skype, Outlook 365, or Slack.  
-- Developer Portal -- A dashboard a for connecting your bot to channels, registering and publishing your bot.
-- Bot Directory -- A public directory of bots registered and published with the Microsoft Bot Framework. 
+- **Bot Builder** - SDKs and tools for writing bots, including an emulator for testing your bot.  
+- **Bot Connector** - A service that allows your bot to communicate across multiple client channels such as Skype, Outlook 365, or Slack.  
+- **Developer Portal** - A dashboard a for connecting your bot to channels, registering and publishing your bot.
+- **Bot Directory** - A public directory of bots registered and published with the Microsoft Bot Framework. 
 
 ##What is a bot?
 A bot is a web service that interacts with users in a conversational format. Users start conversations with your bot from any channel that you've configured your bot to work on (for example, Text/SMS, Skype, Slack, Facebook Messenger, and other popular services). You can design conversations to be freeform, natural language interactions or more guided ones where you provide the user choices or actions. The conversation can use simple text strings or more complex rich cards that contain text, images, and action buttons.
