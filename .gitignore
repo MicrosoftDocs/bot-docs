@@ -5,6 +5,7 @@ _site/
 _themes.MSDN.Modern/
 _themes.VS.Modern/
 _themes/
+_samples/
 
 .openpublishing.buildcore.ps1
 
