@@ -16,7 +16,7 @@ ms.author: v-kibran@microsoft.com
 # Deploy a bot to Microsoft Azure
 
 > [!NOTE]
-> This tutorial is not applicable for bots that are created by using the Azure Bot Service, since the bot deployment is included within the functionality that the Azure Bot Service provides. 
+> This tutorial is not applicable for bots that are created by using the Azure Bot Service (since bot deployment is included within the functionality that the Azure Bot Service provides). 
 
 There are several valid ways to deploy a bot to Azure. 
 In this tutorial, we'll present a detailed walk through of the following three deployment methods: 
