@@ -16,8 +16,7 @@ ms.author: v-kibran@microsoft.com
 # Deploy a bot to Microsoft Azure
 
 > [!NOTE]
-> This tutorial is not applicable for bots that are created by using the Azure Bot Service. 
-> For details about deployment in that scenario, see [Create a bot with the Azure Bot Service](bot-framework-azure-getstarted.md).
+> This tutorial is not applicable for bots that are created by using the Azure Bot Service, since the bot deployment is included within the functionality that the Azure Bot Service provides. 
 
 There are several valid ways to deploy a bot to Azure. 
 In this tutorial, we'll present a detailed walk through of the following three deployment methods: 
@@ -111,7 +110,7 @@ azure site create --git <appname>
 ```
 
 > [!TIP]
-> The URL of the site that is created will be in the following format: *appname.azurewebsites.net*.
+> The URL of the site that is created will be in the following format: *https://appname.azurewebsites.net*.
 
 ### <a id="git3"></a>Step 3: Commit changes to git and push to the Azure site
 
@@ -124,7 +123,7 @@ git push azure master
 ```
 
 You will be prompted to enter your deployment credentials. 
-If you don't yet have them, you can configure them on the Azure Portal by following these simple steps:
+If you don't yet have them, you can configure them on the Azure Portal by following these steps:
 
 - Login to the <a href="http://portal.azure.com" target="_blank">Azure Portal</a>
 - Click the site that you've just created, and open the **Settings** blade

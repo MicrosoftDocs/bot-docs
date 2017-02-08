@@ -23,5 +23,4 @@ Once you've developed a bot and are ready share it with others, complete the fol
 4. [Publish](bot-publish-add-to-directory.md) your bot to the Bot Directory
 
 > [!NOTE]
-> If you've created your bot by using the Azure Bot Service, you can skip Step 1 (Register your bot) and Step 2 (Deploy your bot), since these tasks are encapsulated within the functionality that the Azure Bot Service provides.
-
+> Step 1 (Register your bot) and Step 2 (Deploy your bot) are not applicable for bots that are created by using the Azure Bot Service, since those tasks are included within the functionality that the Azure Bot Service provides.
