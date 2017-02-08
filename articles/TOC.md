@@ -10,16 +10,9 @@
 # Key Concepts
 ## Overview
 ## Dialog
+## Activity
 ## Channel
-## Intelligence
-## State
-## Card
-## Message
-## Middleware
 ## Connector
-## Intent
-## Memory
-## Deployment
 # Design
 ## [Overview](designing-bots/index.md)
 ## Core Principles
