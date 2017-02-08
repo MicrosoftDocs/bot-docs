@@ -1,4 +1,4 @@
-# Overview
+# [Overview](index.md)
 ## [What is the Bot Framework?](bot-framework-what-is-bot-framework.md)
 ## [How it's different](bot-framework-benefits.md)
 ## [Key scenarios](bot-framework-scenarios.md)
@@ -10,16 +10,9 @@
 # Key Concepts
 ## Overview
 ## Dialog
+## Activity
 ## Channel
-## Intelligence
-## State
-## Card
-## Message
-## Middleware
 ## Connector
-## Intent
-## Memory
-## Deployment
 # Design
 ## [Overview](designing-bots/index.md)
 ## Core Principles
