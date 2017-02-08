@@ -18,7 +18,7 @@ ms.author: v-demak@microsoft.com; rstand@microsoft.com
 The Microsoft Bot Framework provides what you need to build and deploy bots that interact naturally with users, wherever they have conversations. The framework consists of the following components:
 - **Bot Builder** - SDKs and tools for writing bots, including an emulator for testing your bot.  
 - **Bot Connector** - A service that allows your bot to communicate across multiple client channels such as Skype, Outlook 365, or Slack.  
-- **Developer Portal** - A dashboard a for connecting your bot to channels, registering and publishing your bot.
+- **Developer Portal** - A dashboard that allows you to configure the channels your bot uses, and register and publish your bot.
 - **Bot Directory** - A public directory of bots registered and published with the Microsoft Bot Framework.  
 
 ##What is a bot?
@@ -34,10 +34,14 @@ Bots (or conversation agents) are rapidly becoming an integral part of one’s d
 
 Developers writing bots all face the same problems: bots require basic I/O, they must have language and dialog skills, and they must connect to users – preferably in any conversation experience and language the user chooses. The Bot Framework provides tools to solve these problems. Features include automatic translation to more than 30 languages, user and conversation state management, debugging tools, an embeddable web chat control and a way for users to discover, try, and add bots to the conversation experiences they love.
 
+Your bot, which uses methods provided by the Bot Builder SDK, communicates with the Bot Connector service, which handles communication with channels.
+The Developer Portal is used to choose which channels are enabled for your bot. The Bot Directory allows users to find your bot.
+
+![components of the Bot Framework](media/what-is-bot-framework-components-placeholder.png)
 
 ## Bot Builder
 
-The Bot Framework provides SDKs for building your bot and an emulator for testing and debugging it.
+The Bot Framework provides the following SDKs for building your bot as well as an emulator for testing and debugging it.
 
 ### Bot Builder SDKs
 These SDKs provide features such as dialogs and built-in prompts that make interacting with users much simpler. They provide access to Microsoft Cognitive Services APIs which give your bot more human-like intelligence. These APIs include LUIS for natural language understanding, Cortana for voice, and the Bing APIs for search. For more information about adding intelligence to your bot, see [Bot Intelligence](/en-us/bot-intelligence/getting-started/).
@@ -56,7 +60,7 @@ As an alternative to using the Bot Builder SDK for .NET, the Bot Builder SDK for
 See the Bot Framework’s [REST API](/en-us/connector/overview/). 
 
 
-### Bot Framework Channel Emulator
+### Bot Framework Emulator
 The Bot Framework Emulator is a desktop application that allows bot developers to test and debug their bots. The Bot Framework Emulator can communicate with your bot wherever it is running; on localhost, or remotely in the cloud.
 For details on using the emulator, see [Bot Framework Emulator](bot-framework-emulator.md).
 
