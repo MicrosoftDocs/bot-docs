@@ -35,11 +35,11 @@
 ## [Resources](designing-bots/resources/index.md)
 # Develop
 # Publish
-##[Overview](bot-publish-overview.md)
-##[Register a bot](bot-publish-register.md)
-##[Deploy a bot](bot-publish-deploy.md)
-##[Configure a bot](bot-publish-configure.md)
-##[Publish a bot to the directory](bot-publish-add-to-directory.md)
+##[Overview](bot-framework-publish-overview.md)
+##[Register a bot](bot-framework-publish-register.md)
+##[Deploy a bot](bot-framework-publish-deploy.md)
+##[Configure a bot](bot-framework-publish-configure.md)
+##[Publish a bot to the directory](bot-framework-publish-add-to-directory.md)
 # Reference
 # Resources
 ## Downloads
