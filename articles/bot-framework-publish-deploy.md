@@ -16,10 +16,10 @@ ms.author: v-kibran@microsoft.com
 # Deploy a bot to Microsoft Azure
 
 > [!NOTE]
-> This tutorial is not applicable for bots that are created by using the Azure Bot Service (since bot deployment is included within the functionality that the Azure Bot Service provides). 
+> This article is not applicable for bots that are created by using the Azure Bot Service (since bot deployment is included within the functionality that the Azure Bot Service provides). 
 
 There are several valid ways to deploy a bot to Azure. 
-In this tutorial, we'll present a detailed walk through of the following three deployment methods: 
+This article presents a detailed walk through of the following three methods: 
 
 - [Deploy from Visual Studio ](#vs) 
 - [Deploy via continuous integration from local git](#git)
@@ -152,12 +152,14 @@ The process of deploying a bot via continuous integration from GitHub consists o
 - [Step 5: Test the connection to your bot](#github5)
 
 > [!NOTE]
-> To implement the process described by this tutorial, you'll need to have a <a href="http://github.com/" target="_blank">GitHub</a> account. 
-> Also, be sure to replace "*echobotsample*" with your bot ID in all settings and URLs that are shown in the examples below. 
+> To implement this process, you must have a <a href="http://github.com/" target="_blank">GitHub</a> account. 
+
+> [!TIP]
+> Be sure to replace "*echobotsample*" with your bot ID in all settings and URLs that are shown in the examples below. 
 
 ### <a id="github1"></a>Step 1: Get a GitHub repository
 
-In this tutorial, we'll use the <a href="https://github.com/fuselabs/echobot" target="_blank">echobot</a> GitHub repository, which contains the Node.js code for creating a simple bot. 
+In this walk through, we'll use the <a href="https://github.com/fuselabs/echobot" target="_blank">echobot</a> GitHub repository, which contains the Node.js code for creating a simple bot. 
 Start by <a href="https://help.github.com/articles/fork-a-repo/" target="_blank">forking</a> the <a href="https://github.com/fuselabs/echobot" target="_blank">echobot</a> repository. 
 
 ### <a id="github2"></a>Step 2: Create an Azure web app
@@ -190,7 +192,7 @@ values that you acquired when you [registered](bot-framework-publish-register.md
 > [!NOTE]
 > If you have not yet registered the bot in the Bot Framework Developer Portal, you can populate **MICROSOFT_APP_ID** and **MICROSOFT_APP_PASSWORD**  
 > with temporary (placeholder) values for now. 
-> Once you register your bot, return to the Azure Portal and update these values with the **App ID** and **App Secret** that you acquire during the registration process.
+> Once you register your bot, return to the Azure Portal and update these values with the **App ID** and **App Password** values that you acquire during the registration process.
 
 ![Enter your Bot Framework App ID and App Secret into Azure settings](media/azure-secrets.png)
 
@@ -199,8 +201,22 @@ values that you acquired when you [registered](bot-framework-publish-register.md
 [!include[Verify connection to your bot](../includes/snippet-verify-deployment-using-emulator.md)]
 
 ##<a id="next"></a> Next steps
-In this tutorial, you deployed a bot to Microsoft Azure (using any one of the three methods described) and then verified that the deployment was successful by testing the bot using the Bot Framework Emulator. 
-As the next step in the bot publication process, you can now [configure the bot](bot-framework-publish-configure.md) to run on one or more channels by using the Bot Framework Developer Portal.
+After you have deployed your bot to the cloud and verified that the deployment was successful by testing the bot using the Bot Framework Emulator, 
+the next step in the bot publication process will depend upon whether or not you've already registered your bot with the Bot Framework.
+
+### If you have already registered your bot with the Bot Framework:
+Return to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Developer Portal</a> to specify the HTTPS endpoint for your bot, now that it's been deployed. 
+For details about this process, see [Maintain bot registration data](bot-framework-publish-register.md#maintain). 
+
+Next, you can [configure the bot to run on one or more channels](bot-framework-publish-configure.md).
+
+### If you have not yet registered your bot with the Bot Framework:
+Register your bot by following the instructions found in [Register a bot with the Bot Framework](bot-framework-publish-register.md). 
+
+After you've registered your bot, update the Microsoft App Id and Microsoft App Password values in your application's configuration settings to specify the **app ID** and **password** values that were generated for your bot during the registration process, and then re-deploy the bot. 
+Verify the new deployment by testing the bot using the Bot Framework Emulator (supplying App ID and Password that were generated during the registration process). 
+
+Next, you can [configure the bot to run on one or more channels](bot-framework-publish-configure.md).
 
 > [!NOTE]
-> Although this tutorial uses Microsoft Azure, you can deploy your bot to any cloud service. 
+> Although the examples in this article use Microsoft Azure, you can deploy your bot to any cloud service. 
