@@ -80,7 +80,7 @@ the next step in the bot publication process will depend upon whether or not you
 Update the Microsoft App Id and Microsoft App Password values in your application's configuration settings to specify the **app ID** and **password** values that were generated for your bot during the registration process, and then re-deploy the bot. 
 Verify the new deployment by testing the bot using the Bot Framework Emulator (supplying App ID and Password that were generated during the registration process).
 
-Next, you can [configure bot to run on one or more channels](bot-framework-publish-configure.md).
+Next, you can [configure the bot to run on one or more channels](bot-framework-publish-configure.md).
 
 ### If you have not yet deployed your bot to the cloud: 
 Deploy your bot to the cloud by following the instructions found in [Deploy a bot to Microsoft Azure](bot-framework-publish-deploy.md). 
