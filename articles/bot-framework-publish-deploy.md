@@ -21,74 +21,23 @@ ms.author: v-kibran@microsoft.com
 There are several valid ways to deploy a bot to Azure. 
 This article presents a detailed walk through of the following three methods: 
 
-- [Deploy from Visual Studio ](#vs) 
-- [Deploy via continuous integration from local git](#git)
+- [Deploy via continuous integration from local Git](#git)
 - [Deploy via continuous integration from GitHub](#github)
+- [Deploy from Visual Studio ](#vs) 
 
 > [!IMPORTANT]
 > You must have a Microsoft Azure subscription before you can deploy your bot to Microsoft Azure. 
 If you do not already have a subscription, you can register for a [free trial](https://azure.microsoft.com/en-us/free/).
 
-## <a id="vs"></a>Deploy from Visual Studio
+## <a id="git"></a>Deploy via continuous integration from local Git
 
-The process of deploying a bot via Visual Studio consists of the following steps:
-
-- [Step 1: Launch the Microsoft Azure Publishing Wizard in Visual Studio](#vs1)
-- [Step 2: Use the Azure Publishing Wizard to publish your bot to the cloud](#vs2)
-- [Step 3: Test the connection to your bot](#vs3)
-
-### <a id="vs1"></a>Step 1: Launch the Microsoft Azure Publishing Wizard in Visual Studio
-
-- Open your project in Visual Studio.
-- In Solution Explorer, right-click on the project and select **Publish**. This starts the Microsoft Azure publishing wizard.
-
-![Right-click on the project and choose Publish to start the Microsoft Azure publishing wizard](media/connector-getstarted-publish-dialog.png)
-
-### <a id="vs2"></a>Step 2: Use the Azure Publishing Wizard to publish your bot to the cloud 
-
-- Select **Microsoft Azure App Service** as the project type and click **Next**.<br/><br/>
-![Select Microsoft Azure App Service and click Next](media/connector-getstarted-publish.png)
-
-- Create your App Service by clicking **New…** on the right side of the dialog. <br/><br/>
-![Click New to create a new Azure App Service](media/connector-getstarted-publish-app-service.png)
-
-- Click **Change Type** and change the service's type to Web App. 
-Then, name your web app and fill out the rest of the information as appropriate for your implementation. <br/><br/>
-![Name your App Service, then click New App Service Plan to define one](media/connector-getstarted-publish-app-service-create.png)
-
-- Click **Create** to create your app service. <br/><br/>
-![Create the App Service Plan by clicking Create](media/connector-getstarted-publish-app-service-create-spinner.png)
-
-- Copy the **Destination URL** value to the clipboard 
-(you'll need this value later to test the connection to the bot and to [register](bot-framework-publish-register.md) it with the Bot Framework Developer Portal), 
-and then click **Validate Connection** to verify that the settings have been configured correctly. 
-If validation is successful, click **Next**. <br/><br/>
-![Validate Connection and click Next to proceed to the final step.](media/connector-getstarted-publish-destination.png)
-
-- By default, your bot will be published in a Release configuration. 
-(If you want to debug your bot, change **Configuration** to Debug.) 
-Click **Publish** to publish your bot to Microsoft Azure. <br/><br/>
-![Select Release Configuration and click Publish](media/connector-getstarted-publish-configuration.png)
-
-> [!NOTE]
-> During the publishing process, you will see a number of messages displayed in the Visual Studio 2015 Output window. 
-> When publishing completes, your bot's HTML page will be displayed in your default browser. 
-
-### <a id="vs3"></a>Step 3: Test the connection to your bot
-
-[!include[Verify connection to your bot](../includes/snippet-verify-deployment-using-emulator.md)]
-
-### Next steps
-
-[!include[Next steps](../includes/snippet-next-steps-after-deployment.md)]
-
-## <a id="git"></a>Deploy via continuous integration from local git
-
-The process of deploying a bot via continuous integration from local git consists of the following steps:
+Azure allows continuous integration of your Git repository with your Azure deployment. 
+With continuous integration, when you change and build your bot's code, the bot will automatically deploy to Azure. 
+The process of deploying a bot via continuous integration from local Git consists of the following steps:
 
 - [Step 1: Install the Azure CLI](#git1)
 - [Step 2: Create and configure an Azure site](#git2) 
-- [Step 3: Commit changes to git and push to the Azure site](#git3)
+- [Step 3: Commit changes to Git and push to the Azure site](#git3)
 - [Step 4: Test the connection to your bot](#git4)
 
 ### <a id="git1"></a>Step 1: Install the Azure CLI
@@ -103,7 +52,7 @@ Login to your Azure account by running this command at the command prompt and fo
 azure login
 ```
 
-Next, run the following command to create a new Azure site and configure it for git (where *\<appname\>* is the name of the site that you want to create):
+Next, run the following command to create a new Azure site and configure it for Git (where *\<appname\>* is the name of the site that you want to create):
 
 ```
 azure site create --git <appname>
@@ -112,7 +61,7 @@ azure site create --git <appname>
 > [!TIP]
 > The URL of the site that is created will be in the following format: *https://appname.azurewebsites.net*.
 
-### <a id="git3"></a>Step 3: Commit changes to git and push to the Azure site
+### <a id="git3"></a>Step 3: Commit changes to Git and push to the Azure site
 
 To update the site with your latest changes, run the following commands to commit the changes and push those changes to the Azure site:
 
@@ -126,8 +75,9 @@ You will be prompted to enter your deployment credentials.
 If you don't yet have them, you can configure them on the Azure Portal by following these steps:
 
 - Login to the <a href="http://portal.azure.com" target="_blank">Azure Portal</a>
-- Click the site that you've just created, and open the **Settings** blade
-- In the **Publishing** section, click **Deployment credentials**, specify a username and password, and save  
+- Click the site that you've just created
+- Open the **Settings** blade
+- In the **PUBLISHING** section, click **Deployment credentials**, specify a username and password, and click save  
 ![Deployment credentials](media/publishing-your-bot-deployment-credentials.png)
 - Return to the command prompt and provide the deployment credentials as requested
 
@@ -143,6 +93,8 @@ Once you've entered your deployment credentials at the command prompt, your bot 
 
 ## <a id="github"></a>Deploy via continuous integration from GitHub
 
+Azure allows continuous integration of your Git repository with your Azure deployment. 
+With continuous integration, when you change and build your bot's code, the bot will automatically deploy to Azure. 
 The process of deploying a bot via continuous integration from GitHub consists of the following steps:
 
 - [Step 1: Get a GitHub repository](#github1)
@@ -197,6 +149,59 @@ values that you acquired when you [registered](bot-framework-publish-register.md
 ![Enter your Bot Framework App ID and App Secret into Azure settings](media/azure-secrets.png)
 
 ### <a id="github5"></a>Step 5: Test the connection to your bot
+
+[!include[Verify connection to your bot](../includes/snippet-verify-deployment-using-emulator.md)]
+
+### Next steps
+
+[!include[Next steps](../includes/snippet-next-steps-after-deployment.md)]
+
+## <a id="vs"></a>Deploy from Visual Studio
+
+The process of deploying a bot via Visual Studio consists of the following steps:
+
+- [Step 1: Launch the Microsoft Azure Publishing Wizard in Visual Studio](#vs1)
+- [Step 2: Use the Azure Publishing Wizard to publish your bot to the cloud](#vs2)
+- [Step 3: Test the connection to your bot](#vs3)
+
+### <a id="vs1"></a>Step 1: Launch the Microsoft Azure Publishing Wizard in Visual Studio
+
+- Open your project in Visual Studio.
+- In Solution Explorer, right-click on the project and select **Publish**. This starts the Microsoft Azure publishing wizard.
+
+![Right-click on the project and choose Publish to start the Microsoft Azure publishing wizard](media/connector-getstarted-publish-dialog.png)
+
+### <a id="vs2"></a>Step 2: Use the Azure Publishing Wizard to publish your bot to the cloud 
+
+- Select **Microsoft Azure App Service** as the project type and click **Next**.<br/><br/>
+![Select Microsoft Azure App Service and click Next](media/connector-getstarted-publish.png)
+
+- Create your App Service by clicking **New…** on the right side of the dialog. <br/><br/>
+![Click New to create a new Azure App Service](media/connector-getstarted-publish-app-service.png)
+
+- Click **Change Type** and change the service's type to Web App. 
+Then, name your web app and fill out the rest of the information as appropriate for your implementation. <br/><br/>
+![Name your App Service, then click New App Service Plan to define one](media/connector-getstarted-publish-app-service-create.png)
+
+- Click **Create** to create your app service. <br/><br/>
+![Create the App Service Plan by clicking Create](media/connector-getstarted-publish-app-service-create-spinner.png)
+
+- Copy the **Destination URL** value to the clipboard 
+(you'll need this value later to test the connection to the bot and to [register](bot-framework-publish-register.md) it with the Bot Framework Developer Portal), 
+and then click **Validate Connection** to verify that the settings have been configured correctly. 
+If validation is successful, click **Next**. <br/><br/>
+![Validate Connection and click Next to proceed to the final step.](media/connector-getstarted-publish-destination.png)
+
+- By default, your bot will be published in a Release configuration. 
+(If you want to debug your bot, change **Configuration** to Debug.) 
+Click **Publish** to publish your bot to Microsoft Azure. <br/><br/>
+![Select Release Configuration and click Publish](media/connector-getstarted-publish-configuration.png)
+
+> [!NOTE]
+> During the publishing process, you will see a number of messages displayed in the Visual Studio 2015 Output window. 
+> When publishing completes, your bot's HTML page will be displayed in your default browser. 
+
+### <a id="vs3"></a>Step 3: Test the connection to your bot
 
 [!include[Verify connection to your bot](../includes/snippet-verify-deployment-using-emulator.md)]
 
