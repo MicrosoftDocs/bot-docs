@@ -211,7 +211,7 @@ the next step in the bot publication process will depend upon whether or not you
 
 ### If you have already registered your bot with the Bot Framework:
 Return to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Developer Portal</a> to specify the HTTPS endpoint for your bot, now that it's been deployed. 
-For details about this process, see [Maintain bot registration data](bot-framework-publish-register.md#maintain). 
+For details about this process, see [Update bot registration data](bot-framework-publish-register.md#maintain). 
 
 Next, you can [configure the bot to run on one or more channels](bot-framework-publish-configure.md).
 
