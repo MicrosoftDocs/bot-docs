@@ -18,6 +18,7 @@ ms.author: v-kibran@microsoft.com
 > [!NOTE]
 > This article is not applicable for bots that are created by using the Azure Bot Service (since bot deployment is included within the functionality that the Azure Bot Service provides). 
 
+Before others can use your bot, you must deploy it to the cloud. 
 There are several valid ways to deploy a bot to Azure. 
 This article presents a detailed walk through of the following three methods: 
 
