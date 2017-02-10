@@ -68,9 +68,10 @@ For details on using the emulator, see [Bot Framework Emulator](bot-framework-em
 The Bot Connector service provides the connection from your bot to text/SMS, Skype, Slack, Facebook Messenger, Office 365 mail and other channels. 
 The bot you write exposes a Microsoft Bot Framework-compatible API on the Internet, which allows the Bot Framework Connector service to forward messages from your bot to a user, and send user messages back to your bot. The Connector also takes care of authentication messages. 
 
+<!--
 There are different ways for your bot to communicate with the Connector.
 The Node.JS or .NET SDKs provide built-in methods for connecting to the service. A simple bot using Node.JS demonstrates this in [Create a bot with the Bot Builder SDK for Node.js](bot-framework-nodejs-getstarted.md). 
-Bots built using .NET can also use the Bot Framework Connector SDK .NET template.
+Bots built using .NET can also use the Bot Framework Connector SDK .NET template. -->
 
 The Direct Line API enables you to host your bot in your app rather than using one of the automatically configured channels. The Direct Line API is intended for developers writing their own client applications, web chat controls, mobile apps, or service-to-service applications that will talk to their bot.
 The framework also provides an embeddable Web chat control that lets you host from your website. 
@@ -83,12 +84,12 @@ Bots that you register are located at My bots in the portal.
 For more information on publishing a bot, see [Publish a bot](https://review.docs.microsoft.com/en-us/botframework/bot-framework-publish-overview).
 
 ## Bot Directory
-The Bot Directory is a public directory of all bots that are registered and published with Microsoft Bot Framework. 
+The Bot Directory is a public directory of all bots that are registered and published with Microsoft Bot Framework. You are encouraged to always publish your bot because it makes it more discoverable.
 For most channels, you can share your bot with users as soon as you configure the channel. 
 Users can select your bot in the directory and add it to one or more of the configured channels that they use, or use the Web chat control to try it.
 
-If you configured your bot to work with Skype, you must publish your bot to the Bot Directory and Skype apps (see Publishing your bot) before users can start using it. 
-Although Skype is the only channel that requires you to publish your bot to the directory, you are encouraged to always publish your bot because it makes it more discoverable. 
+<!-- If you configured your bot to work with Skype, you must publish your bot to the Bot Directory and Skype apps (see Publishing your bot) before users can start using it. 
+Although Skype is the only channel that requires you to publish your bot to the directory, you are encouraged to always publish your bot because it makes it more discoverable. -->
 
 Publishing the bot submits it for review. For information about the review process, see Bot review guidelines. If your bot passes review, it’s added to the Bot Directory. 
 
