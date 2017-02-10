@@ -56,7 +56,7 @@ You must provide monitored emails because the framework will send all communicat
 > [!IMPORTANT]
 > After you've registered your bot, update the Microsoft App Id and Microsoft App Password values in your application's configuration settings to specify the **app ID** and **password** values that were generated for your bot during the registration process.
 
-##<a id="maintain"></a> Maintain bot registration data
+##<a id="maintain"></a> Update bot registration data
 
 To update a bot's registration data in the future (or to delete a bot's registration altogether), complete the following steps:
 
