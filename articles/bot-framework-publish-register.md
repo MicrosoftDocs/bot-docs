@@ -51,25 +51,15 @@ You must provide monitored emails because the framework will send all communicat
 
 6. Click **Register** to complete the registration process. 
 
-### Update application configuration settings
+<a id="maintain"></a>
+> [!TIP]
+> In the future, to update the bot's registration data (or to delete the bot's registration altogether):
+> <ul><li>Sign in to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Developer Portal</a>.</li><li>Click **My Bots**.</li><li>Select the bot that you want to configure, and in the Details section, click **Edit**.</li><li>Update settings.<ul><li>To generate a new password, click **Manage Microsoft App ID and password** (in the Configuration section) to access the Microsoft Application Registration Portal, where the bot's password is managed.</li></ul></li><li>Click **Save changes** (or click **Delete bot** to delete the bot registration altogether).</li></ul>
+
+## Update application configuration settings
 
 > [!IMPORTANT]
 > After you've registered your bot, update the Microsoft App Id and Microsoft App Password values in your application's configuration settings to specify the **app ID** and **password** values that were generated for your bot during the registration process.
-
-##<a id="maintain"></a> Update bot registration data
-
-To update a bot's registration data in the future (or to delete a bot's registration altogether), complete the following steps:
-
-1. Sign in to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Developer Portal</a>.  
-
-2. Click **My bots**.  
-
-3. Select the bot that you want to configure, and in the Details section, click **Edit**.  
-
-4. Update settings and click **Save changes** (or click **Delete bot** to delete the bot registration altogether).
-
-> [!TIP]
-> To generate a new password, click **Manage Microsoft App ID and password** (in the Configuration section) to access the Microsoft Application Registration Portal, where the bot's password is managed.
 
 ## Next steps
 
@@ -88,7 +78,3 @@ Deploy your bot to the cloud by following the instructions found in [Deploy a bo
 After you've deployed your bot to the cloud, return to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Developer Portal</a> to specify the HTTPS endpoint for your bot, as described [here](bot-framework-publish-register.md#maintain).
 
 Next, you can [configure the bot to run on one or more channels](bot-framework-publish-configure.md).
-
-
-
- 
