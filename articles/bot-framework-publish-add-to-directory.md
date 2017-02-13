@@ -24,9 +24,9 @@ By publishing your bot to the Bot Directory, you're making it available for user
 
 Publishing a bot to the Bot Directory is a three-step process:
 
-1. [Submission:](#submit) You submit your bot for publication
-2. [Review:](#review) Microsoft reviews your bot to verify that it meets the requirements for publication to the Bot Directory
-3. [Publication:](#publish) Microsoft adds your bot to the directory
+- [Step 1](#submit): You submit your bot for publication
+- [Step 2](#review): Microsoft reviews your bot to verify that it meets the requirements for publication to the Bot Directory
+- [Step 3](#publish): Microsoft adds your bot to the directory
 
 ##<a id="submit"></a> Step 1: Submit your bot for publication
 

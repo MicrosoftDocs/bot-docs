@@ -1,1 +1,1 @@
-Once you've successfully verified the connection to your bot, see [next steps](#next). 
+After you've successfully verified the connection to your bot, see [next steps](#next). 

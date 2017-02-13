@@ -22,15 +22,15 @@ Before others can use your bot, you must deploy it to the cloud.
 There are several valid ways to deploy a bot to Azure. 
 This article presents a detailed walk through of the following three methods: 
 
-- [Deploy via continuous integration from local Git](#git)
-- [Deploy via continuous integration from GitHub](#github)
-- [Deploy from Visual Studio ](#vs) 
+- [Option 1](#git): Deploy via continuous integration from local Git
+- [Option 2](#github): Deploy via continuous integration from GitHub
+- [Option 3](#vs): Deploy from Visual Studio 
 
 > [!IMPORTANT]
 > You must have a Microsoft Azure subscription before you can deploy your bot to Microsoft Azure. 
 If you do not already have a subscription, you can register for a [free trial](https://azure.microsoft.com/en-us/free/).
 
-## <a id="git"></a>Deploy via continuous integration from local Git
+## <a id="git"></a>Option 1: Deploy via continuous integration from local Git
 
 Azure allows continuous integration of your Git repository with your Azure deployment. 
 With continuous integration, when you change and build your bot's code, the bot will automatically deploy to Azure. 
@@ -82,7 +82,7 @@ If you don't yet have them, you can configure them on the Azure Portal by follow
 ![Deployment credentials](media/publishing-your-bot-deployment-credentials.png)
 - Return to the command prompt and provide the deployment credentials as requested
 
-Once you've entered your deployment credentials at the command prompt, your bot will be deployed to the Azure site.
+After you've entered your deployment credentials at the command prompt, your bot will be deployed to the Azure site.
 
 ### <a id="git4"></a>Step 4: Test the connection to your bot
 
@@ -92,7 +92,7 @@ Once you've entered your deployment credentials at the command prompt, your bot 
 
 [!include[Next steps](../includes/snippet-next-steps-after-deployment.md)]
 
-## <a id="github"></a>Deploy via continuous integration from GitHub
+## <a id="github"></a>Option 2: Deploy via continuous integration from GitHub
 
 Azure allows continuous integration of your Git repository with your Azure deployment. 
 With continuous integration, when you change and build your bot's code, the bot will automatically deploy to Azure. 
@@ -145,7 +145,7 @@ values that you acquired when you [registered](bot-framework-publish-register.md
 > [!NOTE]
 > If you have not yet registered the bot in the Bot Framework Developer Portal, you can populate **MICROSOFT_APP_ID** and **MICROSOFT_APP_PASSWORD**  
 > with temporary (placeholder) values for now. 
-> Once you register your bot, return to the Azure Portal and update these values with the **App ID** and **App Password** values that you acquire during the registration process.
+> After you register your bot, return to the Azure Portal and update these values with the **App ID** and **App Password** values that you acquire during the registration process.
 
 ![Enter your Bot Framework App ID and App Secret into Azure settings](media/azure-secrets.png)
 
@@ -157,7 +157,7 @@ values that you acquired when you [registered](bot-framework-publish-register.md
 
 [!include[Next steps](../includes/snippet-next-steps-after-deployment.md)]
 
-## <a id="vs"></a>Deploy from Visual Studio
+## <a id="vs"></a>Option 3: Deploy from Visual Studio
 
 The process of deploying a bot via Visual Studio consists of the following steps:
 
