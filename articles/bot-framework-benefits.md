@@ -17,6 +17,9 @@ ms.author: rstand@microsoft.com
 ---
 # How the Bot Framework helps you
 
+> [!NOTE]
+> This content will be updated.
+
 The Microsoft Bot Framework provides just what you need to build and connect intelligent bots that interact naturally wherever your users are talking, from text/sms to Skype, Slack, Office 365 mail and other popular services.
 
 ![Bot Framework Diagram](http://docs.botframework.com/en-us/images/faq-overview/botframework_overview_july.png)
