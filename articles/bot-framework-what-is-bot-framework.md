@@ -95,8 +95,10 @@ Publishing the bot submits it for review. For information about the review proce
 
 ## Next Steps
 To get started building bots, see: 
+<!--
 - [Create a bot with the Node.Js SDK](bot-framework-nodejs-getstarted.md) 
 - [Create a bot with the .NET SDK](bot-framework-dotnet-getstarted.md) 
+-->
 
 To learn more about designing and developing great bots, see:
 - [Designing bots](designing-bots/index.md) 
@@ -105,4 +107,6 @@ To learn more about designing and developing great bots, see:
 > Content coming soon. 
 > TO_DO: add list of related topics
 
+[NodeGetStarted]:bot-framework-nodejs-getstarted.md
+[DotNETGetStarted]:bot-framework-dotnet-getstarted.md
 

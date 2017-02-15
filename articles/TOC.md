@@ -9,10 +9,10 @@
 ## [Use Azure Bot Service](bot-framework-azure-getstarted.md)
 # Key Concepts
 ## Overview
-## Dialog
-## Activity
-## Channel
-## Connector
+## [Dialog](bot-framework-dialog-concept.md)
+## [Activity](bot-framework-activity-concept.md)
+## [Channel](bot-framework-channel-concept.md)
+## [Connector](bot-framework-connector-concept.md)
 # Design
 ## [Overview](designing-bots/index.md)
 ## Core Principles
@@ -34,6 +34,7 @@
 ### [Bot in Websites](designing-bots/patterns/bot-in-websites.md)
 ## [Resources](designing-bots/resources/index.md)
 # Develop
+## [Troubleshooting](bot-framework-troubleshooting-guide.md)
 # Publish
 ##[Overview](bot-framework-publish-overview.md)
 ##[Register a bot](bot-framework-publish-register.md)
@@ -42,5 +43,6 @@
 ##[Publish a bot to the directory](bot-framework-publish-add-to-directory.md)
 # Reference
 # Resources
+## [FAQ](bot-framework-faq.md)
 ## Downloads
 ## Tools
