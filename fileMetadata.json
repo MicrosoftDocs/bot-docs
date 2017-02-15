@@ -1,4 +1,4 @@
-"fileMetadata": {
+{
       "ms.prod":
       {
         "api/**.yml": "botframework"
@@ -23,4 +23,4 @@
       {
         "api/**.yml": "rstand"
       }
-    }
+  }
