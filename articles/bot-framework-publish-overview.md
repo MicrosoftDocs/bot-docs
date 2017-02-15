@@ -34,10 +34,7 @@ For a detailed walk through of the registration process, see [Register a bot wit
 ##<a id="deploy"></a> Task 2: Deploy your bot to the cloud
 
 Before others can use your bot, you must deploy it to the cloud. 
-For a detailed walk through of the deployment process, see [Deploy a bot to Microsoft Azure](bot-framework-publish-deploy.md). 
-
-> [!NOTE]
-> Although the [Deploy a bot to Microsoft Azure](bot-framework-publish-deploy.md) tutorial provides examples that use Azure, you can deploy your bot to any cloud service. 
+For a detailed walk through of the deployment process, see [Deploy a bot to the cloud](bot-framework-publish-deploy.md). 
 
 ##<a id="configure"></a> Task 3: Configure your bot to run on one or more conversation channels
 

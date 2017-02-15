@@ -18,9 +18,6 @@ ms.author: v-kibran@microsoft.com
 Before others can use your bot, you must register it with the Bot Framework. 
 Registration is a simple process wherein you provide some information about your bot and then generate the app ID and password that your bot will use to authenticate with the Bot Framework.
 
-> [!NOTE]
-> You can run your bot in the [Bot Framework Emulator](bot-framework-emulator.md) without supplying an app ID and password, but in order for others to use your bot, it must be registered and authenticate by using the app ID and password that are generated during the registration process.
-
 ## Register your bot
 
 To register your bot, complete the following steps:  
@@ -36,7 +33,10 @@ To register your bot, complete the following steps:
 
 4. Complete the **Configuration** section of the form.  
   
-    - Provide your bot's HTTPS endpoint. This is the endpoint where your bot will receive HTTP POST messages from Bot Connector. If you have already [deployed](bot-framework-publish-deploy.md) your bot to the cloud, specify the endpoint generated from that deployment. If you have not yet deployed your bot to the cloud, you can leave the endpoint blank for now, and return later (to the Bot Framework Developer Portal) to specify the endpoint after you've deployed your bot.  
+    - Provide your bot's **HTTPS** endpoint. This is the endpoint where your bot will receive HTTP POST messages from Bot Connector. (If you built your bot by using the Bot Builder SDK, the endpoint should end with `/api/messages`.)
+        - If you have already deployed your bot to the cloud, specify the endpoint generated from that deployment. 
+        - If you have not yet deployed your bot to the cloud, leave the endpoint blank for now, and return later (to the Bot Framework Developer Portal) to specify the endpoint after you've deployed your bot.  
+
     - Click **Manage Microsoft App ID and password**.  
         - On the page that you’re redirected to, click **Generate an app password to continue**. 
         - Copy and securely store the password that is shown, and then click **Ok**.  
@@ -52,29 +52,30 @@ You must provide monitored emails because the framework will send all communicat
 6. Click **Register** to complete the registration process. 
 
 <a id="maintain"></a>
-> [!TIP]
+> [!NOTE]
 > In the future, to update the bot's registration data (or to delete the bot's registration altogether):
 > <ul><li>Sign in to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Developer Portal</a>.</li><li>Click **My Bots**.</li><li>Select the bot that you want to configure, and in the Details section, click **Edit**.</li><li>Update settings.<ul><li>To generate a new password, click **Manage Microsoft App ID and password** (in the Configuration section) to access the Microsoft Application Registration Portal, where the bot's password is managed.</li></ul></li><li>Click **Save changes** (or click **Delete bot** to delete the bot registration altogether).</li></ul>
 
-## Update application configuration settings
+##<a id="updateConfigSettings"></a> Update application configuration settings
 
-> [!IMPORTANT]
-> After you've registered your bot, update the Microsoft App Id and Microsoft App Password values in your application's configuration settings to specify the **app ID** and **password** values that were generated for your bot during the registration process.
+After you've registered your bot, update the Microsoft App Id and Microsoft App Password values in your application's configuration settings to specify the **app ID** and **password** values that were generated for your bot during the registration process. 
+
+> [!TIP] 
+[!include[Application configuration settings](../includes/snippet-tip-bot-config-settings.md)]
 
 ## Next steps
 
 After you have registered your bot with the Bot Framework, 
 the next step in the bot publication process will depend upon whether or not you've already deployed your bot to the cloud.
 
-### If you have already deployed your bot to the cloud: 
-Update the Microsoft App Id and Microsoft App Password values in your application's configuration settings to specify the **app ID** and **password** values that were generated for your bot during the registration process, and then re-deploy the bot. 
-Verify the new deployment by testing the bot using the Bot Framework Emulator (supplying App ID and Password that were generated during the registration process).
-
-Next, you can [configure the bot to run on one or more channels](bot-framework-publish-configure.md).
-
 ### If you have not yet deployed your bot to the cloud: 
-Deploy your bot to the cloud by following the instructions found in [Deploy a bot to Microsoft Azure](bot-framework-publish-deploy.md). 
+1. Deploy your bot to the cloud by following the instructions found in [Deploy a bot to the cloud](bot-framework-publish-deploy.md). 
 
-After you've deployed your bot to the cloud, return to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Developer Portal</a> to specify the HTTPS endpoint for your bot, as described [here](bot-framework-publish-register.md#maintain).
+2. Return to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Developer Portal</a> and [update your bot's registration data](bot-framework-publish-register.md#maintain) to specify the **HTTPS** endpoint for the bot.
 
-Next, you can [configure the bot to run on one or more channels](bot-framework-publish-configure.md).
+3. [Configure the bot to run on one or more channels](bot-framework-publish-configure.md).
+
+### If you have already deployed your bot to the cloud: 
+1. Update the Microsoft App Id and Microsoft App Password values in your deployed application's configuration settings to specify the **app ID** and **password** values that were generated for your bot during the registration process, as described [here](#updateConfigSettings). 
+
+2. [Configure the bot to run on one or more channels](bot-framework-publish-configure.md).
