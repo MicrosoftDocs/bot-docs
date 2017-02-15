@@ -31,20 +31,17 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "author": "RobStand"
+      "author": "RobStand",
+      "ms.prod": "botframework"
     },
     "fileMetadata": {
       "ms.date":
        {
-         "**": "03/01/2017"
+         "**.md": "03/01/2017"
        },
        "manager":
        {
-         "**": "rstand"
-       },
-       "topic":
-       {
-         "**.md": "writeup"
+         "**.md": "rstand"
        }
     },
     "template": [],

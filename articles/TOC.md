@@ -46,4 +46,3 @@
 ## [FAQ](bot-framework-faq.md)
 ## Downloads
 ## Tools
-## [Payments](bot-framework-payments.md)

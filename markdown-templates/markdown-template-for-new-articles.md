@@ -3,13 +3,22 @@ title: Page title that displays in the browser tab and search results | Microsof
 description: Article description that will be displayed on landing pages and in most search results
 keywords: keywords, separated, by, commas
 author: GitHub-alias-of-only-one-author
-ms.topic: article
+manager: rstand
+ms.topic: topic-of-article
+
+ms.prod: botframework
+# the ms.service should be the section of the IA that the article is in, with the suffix -article. Some examples:
+# get-started article, sdk-reference-article
+ms.service: section-article
 
 # Date the article was updated
 ms.date: mm/dd/yyyy
 
-# Alias of the document reviewer
-ms.reviewer:
+# Alias of the document reviewer. Change to the appropriate person.
+ms.reviewer: rstand
+
+# Include the following line commented out
+#ROBOTS: Index
 ---
 # Markdown template for Bot Framework on Microsoft Docs (WIP)
 
