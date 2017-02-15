@@ -8,8 +8,6 @@ manager: cmullins
 
 ms.service: Bot Framework
 ms.topic: article
-ms.workload: Cognitive Services
-ms.date: 02/01/2017
 ms.author: rstand@microsoft.com
 ---
 # Bot Framework Documentation
