@@ -68,11 +68,11 @@
     "fileMetadata": {
       "ms.date":
        {
-         "articles/**.md": "April 1, 2017"
+         "articles/**": "03/01/2017"
        },
        "manager":
        {
-         "articles/**.md": "rstand"
+         "articles/**": "rstand"
        }
     },
     "template": [],
