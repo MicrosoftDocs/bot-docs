@@ -30,8 +30,19 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
-    "fileMetadata": {},
+    "globalMetadata": {
+      "author": "RobStand"
+    },
+    "fileMetadata": {
+      "ms.date":
+       {
+         "articles/**": "03/01/2017"
+       },
+       "manager":
+       {
+         "articles/**": "rstand"
+       }
+    },
     "template": [],
     "dest": "BotFramework-Docs"
   }
