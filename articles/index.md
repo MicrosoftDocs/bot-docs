@@ -7,7 +7,7 @@ author: RobStand
 manager: cmullins
 
 ms.service: Bot Framework
-ms.topic: topic of the article
+ms.topic: Welcome to the Bot Framework
 ms.author: rstand@microsoft.com
 ---
 # Bot Framework Documentation

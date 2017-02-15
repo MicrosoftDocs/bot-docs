@@ -1,26 +1,26 @@
 {
   "ms.prod":
   {
-    "api/**.yml": "botframework"
+    "articles/**.yml": "botframework"
   },
   "ms.service":
   {
-    "api/**.yml": "Bot Framework"
+    "articles/**.yml": "Bot Framework"
   },
   "ms.technology":
   {
-    "api/**.yml": "Bots"
+    "articles/**.yml": "Bots"
   },
   "ms.date":
   {
-    "api/**.yml": "March 1, 2017"
+    "articles/**.yml": "March 1, 2017"
   },
   "manager":
   {
-    "api/**.yml": "rstand"
+    "articles/**.yml": "rstand"
   },
   "author":
   {
-    "api/**.yml": "rstand"
+    "articles/**.yml": "RobStand"
   }
 }
