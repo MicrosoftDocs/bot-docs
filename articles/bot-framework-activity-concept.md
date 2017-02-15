@@ -1,6 +1,6 @@
 ---
-title: Bot Framework Dialogs | Microsoft Docs
-description: Overview of the dialog concept for the Bot Framework
+title: Activities in the Bot Framework | Microsoft Docs
+description: Overview of the activity concept in the Bot Framework
 services: Bot Framework
 documentationcenter: BotFramework-Docs
 author: DeniseMak
@@ -13,7 +13,19 @@ ms.date: 02/14/2017
 ms.author: v-demak@microsoft.com
 
 ---
-# Dialogs
+# Activities
+> [!NOTE]
+> Content coming soon. 
+
+## What is an activity?
+> [!NOTE]
+> Content coming soon. 
+
+## Implementation
+> [!NOTE]
+> Content coming soon. 
+
+## Terminology
 > [!NOTE]
 > Content coming soon. 
 
