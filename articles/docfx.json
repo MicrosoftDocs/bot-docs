@@ -36,11 +36,15 @@
     "fileMetadata": {
       "ms.date":
        {
-         "articles/**": "03/01/2017"
+         "**": "03/01/2017"
        },
        "manager":
        {
-         "articles/**": "rstand"
+         "**": "rstand"
+       },
+       "topic":
+       {
+         "**.md": "writeup"
        }
     },
     "template": [],

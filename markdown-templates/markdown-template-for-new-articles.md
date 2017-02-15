@@ -1,11 +1,15 @@
 ---
 title: Page title that displays in the browser tab and search results | Microsoft Docs
 description: Article description that will be displayed on landing pages and in most search results
+keywords: keywords, separated, by, commas
 author: GitHub-alias-of-only-one-author
-ms.topic: topic of the article
+ms.topic: article
 
 # Date the article was updated
 ms.date: mm/dd/yyyy
+
+# Alias of the document reviewer
+ms.reviewer:
 ---
 # Markdown template for Bot Framework on Microsoft Docs (WIP)
 
