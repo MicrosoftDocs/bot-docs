@@ -1,0 +1,26 @@
+"fileMetadata": {
+      "ms.prod":
+      {
+        "api/**.yml": "botframework"
+      },
+      "ms.service":
+      {
+        "api/**.yml": "Bot Framework"
+      },
+      "ms.technology":
+      {
+        "api/**.yml": "Bots"
+      },
+      "ms.date":
+      {
+        "api/**.yml": "March 1, 2017"
+      },
+      "manager":
+      {
+        "api/**.yml": "rstand"
+      },
+      "author":
+      {
+        "api/**.yml": "rstand"
+      }
+    }

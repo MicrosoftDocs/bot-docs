@@ -60,10 +60,10 @@
       }
     ],
     "overwrite": [],
-      "externalReference": [],
-      "globalMetadata": {},
-      "fileMetadata": {},
-      "template": [],
+    "externalReference": [],
+    "globalMetadata": {},
+    "fileMetadata": { "fileMetadata.json" },
+    "template": [],
     "dest": "botframework-docs"
   }
 }
