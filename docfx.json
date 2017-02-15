@@ -60,10 +60,35 @@
       }
     ],
     "overwrite": [],
-      "externalReference": [],
-      "globalMetadata": {},
-      "fileMetadata": {},
-      "template": [],
+    "externalReference": [],
+    "globalMetadata": {},
+    "fileMetadata": {
+          "ms.prod":
+          {
+            "articles/**.yml": "botframework"
+          },
+          "ms.service":
+          {
+            "articles/**.yml": "Bot Framework"
+          },
+          "ms.technology":
+          {
+            "articles/**.yml": "Bots"
+          },
+          "ms.date":
+          {
+            "articles/**.yml": "03/01/2017"
+          },
+          "manager":
+          {
+            "articles/**.yml": "rstand"
+          },
+          "author":
+          {
+            "articles/**.yml": "RobStand"
+          }
+         },
+    "template": [],
     "dest": "botframework-docs"
   }
 }

@@ -1,18 +1,11 @@
 ---
 title: Page title that displays in the browser tab and search results | Microsoft Docs
 description: Article description that will be displayed on landing pages and in most search results
-services: service-name
-documentationcenter: dev-center-name
 author: GitHub-alias-of-only-one-author
-manager: manager-alias
-
-
-ms.service: Bot Framework
 ms.topic: article
-ms.workload: Cognitive Services
-ms.date: mm/dd/yyyy
-ms.author: Your MSFT alias or your full email address;semicolon separates two or more aliases
 
+# Date the article was updated
+ms.date: mm/dd/yyyy
 ---
 # Markdown template for Bot Framework on Microsoft Docs (WIP)
 
