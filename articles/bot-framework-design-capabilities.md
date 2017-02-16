@@ -105,7 +105,7 @@ We start by setting up handlers for incoming (botbuilder) and outgoing (send) ha
 You can read [the detailed readme here](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FNode%2Fcapability-middlewareLogging%2FREADME.md&version=GBmaster&_a=contents) and see the [full C# code mentioned above here](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FCSharp%2Fcore-Middleware&version=GBmaster&_a=contents) and [the full Node sample here](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FNode%2Fcapability-middlewareLogging&version=GBmaster&_a=contents).
 
 
-## Proactive messages
+##<a id="proactiveMsg"></a> Proactive messages
 
 ###When the bot needs to take the first step
 

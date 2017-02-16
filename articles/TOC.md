@@ -21,14 +21,14 @@
 ### [Navigation](bot-framework-design-core-navigation.md)
 ### [UX elements](bot-framework-design-core-ux-elements.md)
 ## [Bot capabilities](bot-framework-design-capabilities.md)
-## Common use cases
+## Common patterns
 ### [Overview](bot-framework-design-patterns-overview.md)
-### Task Automation
-### Bot to Web
-### Handoff to Humans
-### Knowledge Base
-### Bot in Apps
-### Bot in Websites
+### [Task automation](bot-framework-design-patterns-task.md)
+### [Bot to web](bot-framework-design-patterns-bot-to-web.md)
+### [Handoff to human](bot-framework-design-patterns-human-handoff.md)
+### [Knowledge base](bot-framework-design-patterns-knowledge-base.md)
+### [Bot in apps](bot-framework-design-patterns-bot-in-app.md)
+### [Bot in websites](bot-framework-design-patterns-bot-in-website.md)
 ## MV
 ### [Overview](designing-bots/index.md)
 ### Core Principles

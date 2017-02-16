@@ -1,10 +1,10 @@
 ---
-title: Bot Framework Common Design Patterns | Microsoft Docs
-description: Introduces several common design patterns (implementation scenarios) for conversational applications.
+title: Bot Framework Design - Common Patterns | Microsoft Docs
+description: Introduction to several common design patterns (use case scenarios) for conversational applications (bots).
 keywords: Bot Framework, Bot design, design patterns, use cases, scenarios
 author: kbrandl
 manager: rstand
-ms.topic: Common design patterns (implementation scenarios) for conversational applications
+ms.topic: Common design patterns (use case scenarios) for conversational applications
 
 ms.prod: botframework
 # the ms.service should be the section of the IA that the article is in, with the suffix -article. Some examples:

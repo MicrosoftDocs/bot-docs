@@ -1,5 +1,5 @@
 ---
-title: Bot Framework Introduction to Bot Design | Microsoft Docs
+title: Bot Framework Design - Introduction | Microsoft Docs
 description: Introductory guidance for planning and designing conversational applications (bots).
 keywords: bot framework, design, bot
 author: matvelloso
