@@ -24,9 +24,9 @@ By publishing your bot to the Bot Directory, you're making it available for user
 
 Publishing a bot to the Bot Directory is a three-step process:
 
-- [Step 1](#submit): You submit your bot for publication
-- [Step 2](#review): Microsoft reviews your bot to verify that it meets the requirements for publication to the Bot Directory
-- [Step 3](#publish): Microsoft adds your bot to the directory
+[Step 1](#submit): You submit your bot for publication<br/>
+[Step 2](#review): Microsoft reviews your bot to verify that it meets the requirements for publication to the Bot Directory<br/>
+[Step 3](#publish): Microsoft adds your bot to the directory
 
 ##<a id="submit"></a> Step 1: Submit your bot for publication
 
@@ -42,14 +42,14 @@ When you are ready to submit your bot for publication, start the process by comp
 
 Then, on the Publish your bot page:
 
-- In the first section, you have the option to update the icon, name, and description that you provided when you registered your bot. 
+In the first section, you have the option to update the icon, name, and description that you provided when you registered your bot. 
 If you've already provided this information and there are no changes, you can proceed to the next section.
 
-- In the next section, provide information about you, the publisher.
+In the next section, provide information about you, the publisher.
 
-- In the final section, enable **Automatically show bot in directories after review** and provide any additional information that should be considered during the review process. 
+In the final section, enable **Automatically show bot in directories after review** and provide any additional information that should be considered during the review process. 
 
-- Click **Submit for review** to submit your bot for publication. 
+Click **Submit for review** to submit your bot for publication. 
 
 > [!TIP]
 > If you need to exit before providing all of the details, click **Save** so you don't have to start over.
@@ -63,10 +63,10 @@ If you've already provided this information and there are no changes, you can pr
 After you submit your bot for publication, Microsoft reviews the bot to verify that it meets the [requirements for publication](#guidelines). 
 When the review is complete, Microsoft will send you an email with the results of the review. 
 
-- If any issues were found during review, the email message will list the issues that you need to resolve before the bot can be published to the directory. 
+If any issues were found during review, the email message will list the issues that you need to resolve before the bot can be published to the directory. 
 Resolve the issues and [submit your bot for publication](#submit) again. 
 
-- If no issues were found during review, [Microsoft adds your bot to the Bot Directory](#publish). 
+If no issues were found during review, [Microsoft adds your bot to the Bot Directory](#publish). 
 
 ###<a id="guidelines"></a> Review guidelines
 
