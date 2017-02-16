@@ -1,5 +1,5 @@
 ---
-title: Bot Framework Deploy Bot to Azure | Microsoft Docs
+title: Bot Framework Deploy Bot to the cloud | Microsoft Docs
 description: Detailed walkthrough of how to deploy a bot to the cloud.
 services: Bot Framework
 documentationcenter: BotFramework-Docs
