@@ -22,6 +22,7 @@
 ### [UX elements](bot-framework-design-core-ux-elements.md)
 ## [Bot capabilities](bot-framework-design-capabilities.md)
 ## Common use cases
+### [Overview](bot-framework-design-patterns-overview.md)
 ### Task Automation
 ### Bot to Web
 ### Handoff to Humans
