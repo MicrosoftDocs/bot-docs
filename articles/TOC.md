@@ -24,11 +24,12 @@
 ## Common patterns
 ### [Overview](bot-framework-design-patterns-overview.md)
 ### [Task automation](bot-framework-design-patterns-task.md)
+### [Knowledge base](bot-framework-design-patterns-knowledge-base.md)
 ### [Bot to web](bot-framework-design-patterns-bot-to-web.md)
 ### [Handoff to human](bot-framework-design-patterns-human-handoff.md)
-### [Knowledge base](bot-framework-design-patterns-knowledge-base.md)
-### [Bot in apps](bot-framework-design-patterns-bot-in-app.md)
-### [Bot in websites](bot-framework-design-patterns-bot-in-website.md)
+### [Bot in app](bot-framework-design-patterns-bot-in-app.md)
+### [Bot in website](bot-framework-design-patterns-bot-in-website.md)
+## [Resources](bot-framework-design-resources.md)
 ## MV
 ### [Overview](designing-bots/index.md)
 ### Core Principles
