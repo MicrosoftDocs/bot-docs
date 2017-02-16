@@ -68,7 +68,7 @@ As you can see, John applied the same experience he has with building for web an
 ##But this isn't smart enough :(
 
 
-Let us revisit the topic of [what makes bots great](bot-framework-design-overview.md#designGuidance): 
+Let us revisit the topic of [what makes bots great](bot-framework-design-overview.md#design-guidance): 
 
 Whether and how much the bot uses natural language or any other AI capability is less relevant to how useful the bot actually is. In fact, John may very well add natural language on top of the design he already did. The user could simply ask "I can't remember my password" and the bot could still direct the user to the same flows discussed above from there. But the key question John always had in mind is: "Am I solving the problem my users and my company asked me to solve?". User experience is what comes first.
 

@@ -1,6 +1,6 @@
 ---
 title: Bot Framework Design - Introduction | Microsoft Docs
-description: Introductory guidance for planning and designing conversational applications (bots).
+description: Learn about important factors to consider when planning and designing conversational applications (bots).
 keywords: bot framework, design, bot
 author: matvelloso
 manager: larar
@@ -20,44 +20,53 @@ ms.reviewer: rstand
 # Include the following line commented out
 #ROBOTS: Index
 ---
-# Introduction to Bot Design
+# Introduction to bot design
 
-![bot](media/designing-bots/bot1.png)
+## Overview
 
-##So you want to build a bot…
+The Bot Framework enables developers to create compelling bot experiences that solve a variety of business problems. 
+Designing a bot's UI/UX and planning its features and functionality requires a perspective 
+that's significantly different from that of web development or app development. 
+By familiarizing yourself with the content in this section, you'll be equipped to design a bot that 
+aligns with best practices and capitalizes on lessons learned thus far in this relatively new arena. 
 
-There is a great momentum around bots. Developers from all kinds of companies are looking at how to build great, compelling bot experiences to solve a variety of business problems.
+##<a id="design-guidance"></a> Designing a bot
 
-While both in the web and app worlds there are many well-established best practices around design principles such as navigation and how content should be presented, the whole bot industry is relatively young and many of these best practices are being defined as things evolve. Therefore this section shouldn’t be seen as a single truth of how to design bots but rather an informal, always evolving discussion. We are basically saying: “Hey, here’s what we’ve learned so far doing these things. Come back tomorrow and we might have some new learnings to share”. We hope that, by sharing what developers tell us about what does or doesn't work in this space, we will be helping other developers who are starting to explore this path and save them a significant amount of time in their early stages of bot building.
+If you are building a bot, it is safe to assume that you are expecting users to use it. 
+It is also safe to assume that you are hoping that users will prefer the bot experience over alternative experiences like apps, websites, phone calls, and other means of addressing their particular needs. 
+In other words, your bot is competing for users' time against things like apps and websites. 
+So, how can you maximize the odds that your bot will achieve it's ultimate goal of attracting and keeping users? 
+It's simply a matter of prioritizing the right factors when designing your bot.
 
-##<a id="designGuidance"></a> What makes a bot “great”?
+## Factors that do not guarantee a bot's success
 
-If you are building a bot, regardless of the scenario you have at hand, it is safe to assume that you are expecting users to use it. It is also safe to assume that you are hoping that these users will prefer this experience over the alternatives, whether they are apps, websites, making phone calls or whatever other possible way they could use to solve that particular problem. In other words, your bot is competing for that user’s time against things like apps or websites (it can also, of course, be part of those apps and websites in the hope that it will improve these existing experiences).
+When designing your bot, be aware that none of the following factors necessarily guarantee a bot's success: 
 
+- **How “smart” the bot is**: 
+In most cases, it is unlikely that making your bot smarter will guarantee happy users and adoption of your platform. 
+In reality, many bots have little advanced machine learning or natural language capabilities. 
+Of course, a bot may include those capabilities if they're necessary to solve the problems that it's designed to address. 
+However, you should not assume any correlation between a bot's intelligence and user adoption of the bot.
 
-But how can we tell if a bot has great chances of succeeding at that ultimate goal of bringing/keeping users?
+- **How much natural language the bot supports**: 
+Your bot can be great at conversations. 
+It can have a vast vocabulary and can even make great jokes. 
+But unless it addresses the problems that your users need to solve, these capabilities may contribute very little to making your bot successful. 
+In fact, some bots have no conversational capability at all. And in many cases, that's perfectly fine.
 
-###Factors that <u>do not</u> guarantee successful bots:
+- **Voice**: 
+It isn’t always the case that enabling bots for speech will lead to great user experiences. 
+Often, forcing users to use voice can result in a frustrating user experience. 
+As you design your bot, always consider whether voice is the appropriate channel for the given problem. 
+Is there going to be a noisy environment? 
+Will voice be capable of conveying the information that needs to be shared with the user? 
 
+## Factors that do influence a bot's success
 
-
-- How “smart” a bot is: Unless the specific goal of your bot is to beat the [Turing Test](https://en.wikipedia.org/wiki/Turing_test "Turing Test"), it is unlikely that just making it smarter will guarantee happy users and adoption of your platform. In reality, many bots have little advanced machine learning or natural language capabilities. They may, of course, have those if it is necessary for solving the problems they are supposed to solve. But make no assumptions: How “smart” the bot is does not guarantee user adoption by any means.
-
-
-- How much natural language it supports: Your bot can be great at conversations. It can have a vast vocabulary and can even make great jokes. But unless it is solving the problems your users need to get solved, this may do very little to make your bot successful. In fact, some bots have no conversational capability at all. And that may be perfectly fine.
-
-
-- Voice: Many developers assume that enabling bots for speech will lead to great experiences. This isn’t always the case. Actually, forcing users to use voice can very easily turn into a frustrating experience. As you design a bot, always ask if voice is really the right channel for the given problem. Is there going to be a noisy environment? Is voice going to be enough for the kind of information that needs to be shared with the user? It may be, but in many cases, it won’t.
-
-
-###Ok, so what does make a bot great?
-
-![bot](media/designing-bots/thinking-bot.png)
-
-If you ask any experienced app or website developer what makes their apps and websites great, it usually comes down to one thing: User experience.
-It turns out that didn’t change because of bots. The key factor, the only thing we should be laser focused on when designing and building any bot is this: What is the user experience going to be?
-
-Examples:
+Most successful apps or websites have at least one thing in common: a great user experience. 
+Bots are no different in that regard. 
+Therefore, ensuring a great user experience should be your number one priority when designing a bot. 
+Some key considerations include:
 
 - Does the bot easily solve the user’s problem with the minimum number of steps?
 
@@ -67,13 +76,28 @@ Examples:
 
 - Is the bot discoverable? Do the users naturally know what to do when using it?
 
-Note that none of these things directly relates to how smart, how much natural language, whether the bot uses machine learning or which programming language was used. Simply put: Users won’t care. They will, though, care a lot if your bot makes them type too much, talk too much, repeat what they want several times or have to explain things the bot should automatically know already.
+Note that none of these questions directly relates to factors such as 
+how smart the bot is, how much natural language capability it has, whether it uses machine learning, 
+or which programming language was used to create it. Users are unlikely to care about any of these things as 
+long as the bot solves the problem that they need to address and 
+delivers a great user experience (i.e., does not require them to type too much, talk too much, 
+repeat themselves several times, or explain things that the bot should automatically know).
 
 > [!TIP]
->User experience is everything. That doesn't change whether you are building a bot, an app or both.
+> Regardless of the type of application you're creating (bot, website, or app), prioritize user experience above all else.
 
-Whenever you are not sure about the right design approach, we suggest you to step back and forget that you are building a bot: How would you solve that problem in an app or a website?
+The process of designing a bot is very similar to the process of designing an app or website, and therefore 
+the lessons learned from decades of building UI and delivering UX for apps and websites still apply 
+when it comes to designing bots. Whenever you are unsure about the right design approach for your bot, 
+step back and ask yourself the following question: How would you solve that problem in an app or a website? 
+Chances are, the same answer can be applied to bot design. 
 
-Likely the answer won’t be far from that, simply because decades of learned lessons around building great UX aren’t going to be thrown away simply because we are now building bots instead. If you are a developer with plenty of experience designing great user experiences on web or apps, here’s the great news: That experience does count, a lot, when building bots.
+## Next steps
 
-Trust your instincts. If something feels like it doesn’t make sense, then it probably doesn’t.
+Now that you're familiar with some basic principles of bot design, learn more about the following topics in the 
+remainder of this section:
+
+- [UI and UX](bot-framework-design-core-greeting.md)
+- [Bot capabilities](bot-framework-design-capabilities.md)
+- [Common patterns](bot-framework-design-patterns-overview.md)
+- [Resources](bot-framework-design-resources.md)
