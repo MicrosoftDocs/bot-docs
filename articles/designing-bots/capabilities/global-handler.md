@@ -1,6 +1,6 @@
 ---
 title: Designing Bots - Global Handlers | Bot Framework
-description: Global Message Handlers - Preparing bots for when users change topics in the conversation 
+description: Global Message Handlers - Preparing bots for when users change topics in the conversation
 services: Bot Framework
 documentationcenter: BotFramework-Docs
 author: matvelloso
@@ -20,7 +20,7 @@ ms.author: mat.velloso@microsoft.com
 
 ##When users change the topic of the conversation
 
-We discussed [earlier on the topic of dialogs](../core/dialogs#dialogs-stacks-and-humans) about the challenges of detecting when the user doesn't answer what the bot is expecting but instead asks for something else, outside the flow.
+We discussed earlier on the topic of dialogs about the challenges of detecting when the user doesn't answer what the bot is expecting but instead asks for something else, outside the flow.
 
 ![how users talk](../../media/designing-bots/capabilities/trigger-actions.png)
 
@@ -89,7 +89,7 @@ Note this is different than the SettingsScorable, which directs the command to a
         }
 	}
 
-So in this second scenario we don't reset the dialog stack but instead just add the SettingsDialog on top of it. 
+So in this second scenario we don't reset the dialog stack but instead just add the SettingsDialog on top of it.
 
 This is the essence of how global handlers can be wired up in C#.
 

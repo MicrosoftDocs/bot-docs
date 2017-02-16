@@ -1,6 +1,6 @@
 ---
 title: Designing Bots - UX Elements | Bot Framework
-description: UX Elements - Combining rich controls, natural language and voice in conversational applications 
+description: UX Elements - Combining rich controls, natural language and voice in conversational applications
 services: Bot Framework
 documentationcenter: BotFramework-Docs
 author: matvelloso
@@ -28,11 +28,11 @@ Bots typically rely on one or more of these 3 elements as their way of exchangin
 
 ##Rich user controls
 
-For decades application and website developers have relied on UI controls in order to enable users to interact with their applications. These UI controls, it turns out, work very well. A very common mistake by beginner bot developers is to dismiss the value of these elements as not being "AI enough". Again, let us recap [what we discussed earlier](../#what-makes-a-bot-great): Success for your bot is not to beat the Touring Test, but instead solve your user's needs in the best/quickest possible way. Whether such solution uses AI or a simple button isn't relevant at all. 
+For decades application and website developers have relied on UI controls in order to enable users to interact with their applications. These UI controls, it turns out, work very well. A very common mistake by beginner bot developers is to dismiss the value of these elements as not being "AI enough". Again, let us recap [what we discussed earlier](../#what-makes-a-bot-great): Success for your bot is not to beat the Touring Test, but instead solve your user's needs in the best/quickest possible way. Whether such solution uses AI or a simple button isn't relevant at all.
 
-Skype, Slack, Microsoft Teams, Facebook Messenger, Slack and other channels are all investing in different ways developers can inject visual controls into the conversation. Buttons are probably the most common case: Whenever a simple choice is presented to a user, buttons tend to work great: Clicking at a button named "Hotels" is easier and quicker than making the user type "Hotels" instead. This becomes even more relevant on mobile devices: Typing a lot on a mobile device isn't what we can consider a very low friction experience. 
+Skype, Slack, Microsoft Teams, Facebook Messenger, Slack and other channels are all investing in different ways developers can inject visual controls into the conversation. Buttons are probably the most common case: Whenever a simple choice is presented to a user, buttons tend to work great: Clicking at a button named "Hotels" is easier and quicker than making the user type "Hotels" instead. This becomes even more relevant on mobile devices: Typing a lot on a mobile device isn't what we can consider a very low friction experience.
 
-Because of that, when designing a bot we typically recommend developers to start with UI controls where they can solve the problem. Add other elements later where just those controls aren't enough anymore. Interestingly, developers at first tend to start with natural language. In our experience, this typically does not work very well, because it leads to over-complexity in some areas. 
+Because of that, when designing a bot we typically recommend developers to start with UI controls where they can solve the problem. Add other elements later where just those controls aren't enough anymore. Interestingly, developers at first tend to start with natural language. In our experience, this typically does not work very well, because it leads to over-complexity in some areas.
 
 ##Text and natural language
 
@@ -43,15 +43,15 @@ The first important aspect to highlight is that text input is not necessarily na
 As far as text input goes, there are many different types of input we can expect from an user:
 
 
-- Users may be just answering a very specific question, such as "What is your name?". The answer may be just the name, such as "John" or a sentence, such as "My name is John". The more guided the question is, the less free form text we are to expect in the answer. An example would be asking the user "How are you feeling?". This is a very broad, open ended question. Understanding all the permutations of answers a user can give to such a question is a very complex task. By the other hand, the bot could ask very specific questions such as "Are you feeling pain, yes/no?", "Where are you feeling pain, chest/head/members?". Those lead to more specific answers and therefore less need for actual natural language understanding. This is a common strategy bots use to get the answer they need. Remember: Users don't know what specific information your bot needs unless your bot if very clear about what it needs to know. 
-- Users may be typing specific commands. For example, an operations bot that helps developers to manage virtual machines could have a very simple command based syntax. Commands such as "/STOP VM XYZ" or "/START VM XYZ" would not only be easy to learn by such users but actually preferred over natural language forms such as "Could you please start the virtual machine XYZ?". Hardly this sort of technical user would prefer to type so much in order to get the same desired result. 
-- User may be asking general questions in a knowledge base or questions and answers bot. Again, these are likely not going to be solved by natural language or at least not by natural language alone. Imagine a bot that looks at thousands of documents and is able to answer questions based on the content of such documents. Trying to train a natural language API for all the permutations of possible questions users could come up with in such a scenario is a task deemed to failure. You will never be able to realistically predict all these questions and the amount of time required to train any natural language API that way is just unpractical. Instead, there are technologies built with search in mind, capable of handling that in a much better way. Two of these technologies are [QnA Maker](https://qnamaker.ai) and [Azure Search](https://azure.microsoft.com/en-us/services/search/). We discuss these in details in our [Knowledge Base section](../capabilities/kb.md). So if you are building a bot that is supposed to answer questions based on structured or unstructured data from databases, web pages or documents, you should definitely take a look at that session before trying to solve the problem with natural language.
+- Users may be just answering a very specific question, such as "What is your name?". The answer may be just the name, such as "John" or a sentence, such as "My name is John". The more guided the question is, the less free form text we are to expect in the answer. An example would be asking the user "How are you feeling?". This is a very broad, open ended question. Understanding all the permutations of answers a user can give to such a question is a very complex task. By the other hand, the bot could ask very specific questions such as "Are you feeling pain, yes/no?", "Where are you feeling pain, chest/head/members?". Those lead to more specific answers and therefore less need for actual natural language understanding. This is a common strategy bots use to get the answer they need. Remember: Users don't know what specific information your bot needs unless your bot if very clear about what it needs to know.
+- Users may be typing specific commands. For example, an operations bot that helps developers to manage virtual machines could have a very simple command based syntax. Commands such as "/STOP VM XYZ" or "/START VM XYZ" would not only be easy to learn by such users but actually preferred over natural language forms such as "Could you please start the virtual machine XYZ?". Hardly this sort of technical user would prefer to type so much in order to get the same desired result.
+- User may be asking general questions in a knowledge base or questions and answers bot. Again, these are likely not going to be solved by natural language or at least not by natural language alone. Imagine a bot that looks at thousands of documents and is able to answer questions based on the content of such documents. Trying to train a natural language API for all the permutations of possible questions users could come up with in such a scenario is a task deemed to failure. You will never be able to realistically predict all these questions and the amount of time required to train any natural language API that way is just unpractical. Instead, there are technologies built with search in mind, capable of handling that in a much better way. Two of these technologies are [QnA Maker](https://qnamaker.ai) and [Azure Search](https://azure.microsoft.com/en-us/services/search/). We discuss these in details in our [Knowledge Base section](#). So if you are building a bot that is supposed to answer questions based on structured or unstructured data from databases, web pages or documents, you should definitely take a look at that session before trying to solve the problem with natural language.
 - Users may actually be typing simple requests based on natural language. Anything from "I want a pepperoni pizza" to "Are there any vegetarian restaurants within 3 miles from my house open now?" are examples of that. This is where natural language APIs such as [LUIS.ai](https://www.luis.ai) shine: They will extract the key components of that text and give it to your bot. So your bot will know that the "intent" of the question is "FindRestaurant", the "Entity" named "distance" is "3 miles", the "Entity" named "reference" is "my house" and the "Entity" named "condition" is "open now". It is important though to be careful with expectations:
 
 
 ![how users talk](../../media/designing-bots/core/buy-house.png)
 
-A common mistake when bot developers build natural language models is assuming users will just magically tell the bot every little thing it needs to know, right away. Unfortunately this isn't how humans communicate: They will give us fragments of information. "I want to buy a house", which is a very broad question, far from enough for us to narrow down to a specific criteria. The solution to this problem is to ask follow up questions, guide the user. Again, users won't guess what your bot needs to know if you bot doesn't specifically ask for it. 
+A common mistake when bot developers build natural language models is assuming users will just magically tell the bot every little thing it needs to know, right away. Unfortunately this isn't how humans communicate: They will give us fragments of information. "I want to buy a house", which is a very broad question, far from enough for us to narrow down to a specific criteria. The solution to this problem is to ask follow up questions, guide the user. Again, users won't guess what your bot needs to know if you bot doesn't specifically ask for it.
 
 ##Speech
 
@@ -65,16 +65,12 @@ Remember: In many cases bots can use these 3 elements combined. You don't need t
 
 That is also the wrong question :)
 
-None of these communication elements, when isolated from others, can be truly considered "natural". Look at the world around you and how you communicate with others: You likely use gestures, voice and symbols. If you are playing chess with someone, using a chess board is very useful. Playing chess without a board, via voice only, is far from a natural experience to most of us. 
+None of these communication elements, when isolated from others, can be truly considered "natural". Look at the world around you and how you communicate with others: You likely use gestures, voice and symbols. If you are playing chess with someone, using a chess board is very useful. Playing chess without a board, via voice only, is far from a natural experience to most of us.
 
-Many people just aren't comfortable talking on the phone. They prefer typing. 
+Many people just aren't comfortable talking on the phone. They prefer typing.
 
 To illustrate this with some humor, imagine these scenarios:
 
 ##OK, which ones would prefer in which scenarios?
 
 Now that is a much better question to ask ourselves: How do users actually behave when presented to these 3 elements and how does that change given different scenarios?
-
- 
-
-
