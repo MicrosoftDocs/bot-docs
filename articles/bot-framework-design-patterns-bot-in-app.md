@@ -1,18 +1,16 @@
 ---
-title: Bot Framework Design - Bot Embedded within App | Microsoft Docs
-description: Guidance for designing a conversational application (bot) that is embedded within an app.
+title: Bot Framework Design Pattern - Bot Embedded within App | Microsoft Docs
+description: Learn how to design a conversational application (bot) that is embedded within an app.
 keywords: bot framework, design, bot, scenario, use case, pattern, bot in app
 author: matvelloso
 manager: larar
-ms.topic: Bot Scenario - Bot in App
+ms.topic: design-article
 
 ms.prod: botframework
-# the ms.service should be the section of the IA that the article is in, with the suffix -article. Some examples:
-# get-started article, sdk-reference-article
-ms.service: design-article
+ms.service: Bot Framework
 
 # Date the article was updated
-ms.date: 01/19/2017
+ms.date: 02/16/2017
 
 # Alias of the document reviewer. Change to the appropriate person.
 ms.reviewer: rstand

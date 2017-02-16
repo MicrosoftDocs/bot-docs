@@ -1,18 +1,16 @@
 ---
-title: Bot Framework Designing Bots - UX elements | Microsoft Docs
-description: Provides guidance about designing the user experience by combining rich controls, natural language, and voice in conversational applications.
+title: Bot Framework Design - UX elements | Microsoft Docs
+description: Learn how to design the user experience by combining rich controls, natural language, and voice in conversational applications (bots).
 keywords: Bot Framework, Bot design, ux, ui, ux elements, ux controls, ui elements, ui controls
 author: matvelloso
 manager: larar
-ms.topic: Designing the user experience by combining rich controls, natural language, and voice in conversational applications
+ms.topic: design-article
 
 ms.prod: botframework
-# the ms.service should be the section of the IA that the article is in, with the suffix -article. Some examples:
-# get-started article, sdk-reference-article
-ms.service: design-article
+ms.service: Bot Framework
 
 # Date the article was updated
-ms.date: 01/19/2017
+ms.date: 02/16/2017
 
 # Alias of the document reviewer. Change to the appropriate person.
 ms.reviewer: rstand

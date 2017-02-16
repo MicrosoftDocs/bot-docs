@@ -1,18 +1,16 @@
 ---
-title: Bot Framework Designing Bots - Capabilities | Microsoft Docs
-description: Provides an overview of commonly-used bot capabilities, including message logging, proactive messages, calling and IVR, and global message handlers.
+title: Bot Framework Design - Bot Capabilities | Microsoft Docs
+description: Understand commonly-used bot capabilities, including message logging, proactive messages, calling and IVR, and global message handlers.
 keywords: Bot Framework, Bot design, capabilities, message logging, proactive messages, calling and IVR bots, global message handlers
 author: matvelloso
 manager: larar
-ms.topic: Introduction to commonly-used bot capabilities, including message logging, proactive messages, calling and IVR, and global message handlers
+ms.topic: design-article
 
 ms.prod: botframework
-# the ms.service should be the section of the IA that the article is in, with the suffix -article. Some examples:
-# get-started article, sdk-reference-article
-ms.service: design-article
+ms.service: Bot Framework
 
 # Date the article was updated
-ms.date: 01/19/2017
+ms.date: 02/16/2017
 
 # Alias of the document reviewer. Change to the appropriate person.
 ms.reviewer: rstand
@@ -21,7 +19,7 @@ ms.reviewer: rstand
 #ROBOTS: Index
 ---
 
-# Bot Capabilities
+# Bot capabilities
 
 [intro goes here...]:
 

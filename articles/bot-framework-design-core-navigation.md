@@ -1,18 +1,16 @@
 ---
-title: Bot Framework Designing Bots - Navigation | Microsoft Docs
-description: Provides an overview of managing navigation in converational applications and lists some common pitfalls of poorly designed navigation.
+title: Bot Framework Design - Navigation | Microsoft Docs
+description: Learn how to manage navigation in converational applications (bots) and understand common pitfalls of poorly designed navigation.
 keywords: Bot Framework, Bot design, navigation
 author: matvelloso
 manager: larar
-ms.topic: Designing navigation in conversational applications
+ms.topic: design-article
 
 ms.prod: botframework
-# the ms.service should be the section of the IA that the article is in, with the suffix -article. Some examples:
-# get-started article, sdk-reference-article
-ms.service: design-article
+ms.service: Bot Framework
 
 # Date the article was updated
-ms.date: 01/19/2017
+ms.date: 02/16/2017
 
 # Alias of the document reviewer. Change to the appropriate person.
 ms.reviewer: rstand

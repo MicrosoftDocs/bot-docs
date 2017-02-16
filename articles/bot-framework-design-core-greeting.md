@@ -1,18 +1,16 @@
 ---
-title: Bot Framework Designing Bots - First Interaction | Microsoft Docs
-description: Provides guidance about designing for the first interaction between user and bot. 
+title: Bot Framework Design - First Interaction | Microsoft Docs
+description: Learn best practices for designing for the first interaction between user and bot. 
 keywords: Bot Framework, Bot design, core principles
 author: matvelloso
 manager: larar
-ms.topic: Designing for the first interaction between user and bot
+ms.topic: design-article
 
 ms.prod: botframework
-# the ms.service should be the section of the IA that the article is in, with the suffix -article. Some examples:
-# get-started article, sdk-reference-article
-ms.service: design-article
+ms.service: Bot Framework
 
 # Date the article was updated
-ms.date: 01/19/2017
+ms.date: 02/16/2017
 
 # Alias of the document reviewer. Change to the appropriate person.
 ms.reviewer: rstand

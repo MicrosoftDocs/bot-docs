@@ -1,18 +1,16 @@
 ---
-title: Bot Framework Design - Task Automation Bots | Microsoft Docs
-description: Guidance for designing a conversational application (bot) that can automate tasks.
+title: Bot Framework Design Pattern - Task Automation Bots | Microsoft Docs
+description: Learn how to design a conversational application (bot) that can automate tasks.
 keywords: bot framework, design, bot, scenario, use case, pattern, task automation
 author: matvelloso
 manager: larar
-ms.topic: Bot Scenario - Task Automation 
+ms.topic: design-article
 
 ms.prod: botframework
-# the ms.service should be the section of the IA that the article is in, with the suffix -article. Some examples:
-# get-started article, sdk-reference-article
-ms.service: design-article
+ms.service: Bot Framework
 
 # Date the article was updated
-ms.date: 01/19/2017
+ms.date: 02/16/2017
 
 # Alias of the document reviewer. Change to the appropriate person.
 ms.reviewer: rstand

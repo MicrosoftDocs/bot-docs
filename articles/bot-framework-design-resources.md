@@ -1,18 +1,16 @@
 ---
 title: Bot Framework Design - Resources | Microsoft Docs
-description: List of resources related to designing and developing conversational applications (bots) using the Bot Framework.
+description: Identify resources related to designing and developing conversational applications (bots) using the Bot Framework.
 keywords: bot framework, bot, design, develop, resources
 author: matvelloso
 manager: larar
-ms.topic: Bot Framework Resources 
+ms.topic: design-article
 
 ms.prod: botframework
-# the ms.service should be the section of the IA that the article is in, with the suffix -article. Some examples:
-# get-started article, sdk-reference-article
-ms.service: design-article
+ms.service: Bot Framework
 
 # Date the article was updated
-ms.date: 01/19/2017
+ms.date: 02/16/2017
 
 # Alias of the document reviewer. Change to the appropriate person.
 ms.reviewer: rstand
