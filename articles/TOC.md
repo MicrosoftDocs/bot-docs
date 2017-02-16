@@ -20,7 +20,7 @@
 ### [Conversation flow](bot-framework-design-core-dialogs.md)
 ### [Navigation](bot-framework-design-core-navigation.md)
 ### [UX elements](bot-framework-design-core-ux-elements.md)
-## Bot capabilities
+## [Bot capabilities](bot-framework-design-capabilities.md)
 ## Common use cases
 ### Task Automation
 ### Bot to Web

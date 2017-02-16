@@ -145,7 +145,7 @@ In Node, these flows have a little more automation built in: A dialog invokes an
 Whenever one Dialog invokes another, the bot builder will "stack" them up. Whenever a dialog "finishes", the bot builder will then remove it from the stack. This is one of the most important concepts developers need to keep in mind: Stacks are how we control which dialogs invoked other dialogs in a given order. They are all there waiting for the thing they called to finish, so they can gain control again and continue. Just like modal screens in typical apps or websites.
 
 
-##Dialogs, Stacks and Humans
+##<a id="dialogs-stacks-and-humans"></a> Dialogs, Stacks and Humans
 
 It is natural to expect that users navigate across dialogs and such dialogs stack up, at some point they will navigate "back" and "un-stack" these dialogs one by one: User starts from root dialog, invokes the new order dialog and from there, invokes the product search dialog. Then, user picks a product, confirms, goes back to the order, completes it and now we're back at the root dialog.
 
