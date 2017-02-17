@@ -61,4 +61,4 @@
 # Resources
 ## [FAQ](bot-framework-faq.md)
 ## Downloads
-## Tools
+## [Tools](bot-framework-tools.md)
