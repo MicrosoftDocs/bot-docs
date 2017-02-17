@@ -1,18 +1,30 @@
 ---
 title: Bot Framework Channel Inspector | Microsoft Docs
-description: The Bot Framework Channel Inspector is an interactive web tool that you can use to explore the appearance and functionality of features across different chat clients.
-services: Bot Framework
-documentationcenter: BotFramework-Docs
+description: Learn how to use the Bot Framework Channel Inspector to explore the availability and functionality of features across different chat clients.
+keywords: Bot Framework, Bot Builder, tool, channel, channel inspector
 author: kbrandl
 manager: rstand
 
-ms.service: Bot Framework
-ms.topic: article
-ms.workload: Cognitive Services
-ms.date: 02/09/2017
-ms.author: v-kibran@microsoft.com
+# the ms.topic should be the section of the IA that the article is in, with the suffix -article. Some examples:
+# get-started article, sdk-reference-article
+ms.topic: resources-tools-article
 
+ms.prod: botframework
+
+# The ms.service should be the Bot Framework technology area covered by the article, e.g., Bot Builder, LUIS, Azure Bot Service
+ms.service: Bot Builder
+
+# Date the article was updated
+ms.date: 02/17/2017
+
+# Alias of the document reviewer. Change to the appropriate person.
+ms.reviewer: rstand
+
+# Include the following line commented out
+#ROBOTS: Index
 ---
+
+# Bot Framework Channel Inspector
 
 > [!NOTE]
 > Content coming soon.

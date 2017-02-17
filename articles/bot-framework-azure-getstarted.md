@@ -1,18 +1,29 @@
 ---
-title: Bot Framework Create Bot | Microsoft Docs
-description: Walkthrough of creating a simple bot using the Azure Bot Service.
-services: Bot Framework
-documentationcenter: BotFramework-Docs
+title: Create a bot with the Azure Bot Service | Microsoft Docs
+description: Learn how to create a bot with the Azure Bot Service.
+keywords: Bot Framework, Bot Builder, Azure Bot Service
 author: kbrandl
 manager: rstand
 
-ms.service: Bot Framework
-ms.topic: article
-ms.workload: Cognitive Services
-ms.date: 02/02/2017
-ms.author: v-kibran@microsoft.com
+# the ms.topic should be the section of the IA that the article is in, with the suffix -article. Some examples:
+# get-started article, sdk-reference-article
+ms.topic: get-started-article
 
+ms.prod: botframework
+
+# The ms.service should be the Bot Framework technology area covered by the article, e.g., Bot Builder, LUIS, Azure Bot Service
+ms.service: Bot Builder
+
+# Date the article was updated
+ms.date: 02/02/2017
+
+# Alias of the document reviewer. Change to the appropriate person.
+ms.reviewer: rstand
+
+# Include the following line commented out
+#ROBOTS: Index
 ---
+
 # Create a bot with the Azure Bot Service
 > [!div class="op_single_selector"]
 > * [.NET](bot-framework-dotnet-getstarted.md)

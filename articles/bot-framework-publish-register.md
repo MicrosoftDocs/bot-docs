@@ -1,17 +1,27 @@
 ---
-title: Bot Framework Register Bot | Microsoft Docs
-description: Detailed walkthrough how to register a bot with the Bot Framework.
-services: Bot Framework
-documentationcenter: BotFramework-Docs
+title: Register a bot with the Bot Framework | Microsoft Docs
+description: Learn how to register a bot with the Bot Framework.
+keywords: Bot Framework, Bot Builder, register bot, Bot Framework Portal
 author: kbrandl
 manager: rstand
 
-ms.service: Bot Framework
-ms.topic: article
-ms.workload: Cognitive Services
-ms.date: 02/06/2017
-ms.author: v-kibran@microsoft.com
+# the ms.topic should be the section of the IA that the article is in, with the suffix -article. Some examples:
+# get-started article, sdk-reference-article
+ms.topic: publish-article
 
+ms.prod: botframework
+
+# The ms.service should be the Bot Framework technology area covered by the article, e.g., Bot Builder, LUIS, Azure Bot Service
+ms.service: Bot Builder
+
+# Date the article was updated
+ms.date: 02/06/2017
+
+# Alias of the document reviewer. Change to the appropriate person.
+ms.reviewer: rstand
+
+# Include the following line commented out
+#ROBOTS: Index
 ---
 # Register a bot with the Bot Framework
 

@@ -1,21 +1,30 @@
 ---
-title: Bot Publishing Process Overview | Microsoft Docs
-description: Overview of the tasks required to share your both with others (register bot, deploy bot, configure bot, publish bot).
-keywords: deploy, publish, register, configure
-services: Bot Framework
-documentationcenter: BotFramework-Docs
+title: Publish a bot with the Bot Framework | Microsoft Docs
+description: Learn the tasks required to share your both with others (register bot, deploy bot, configure bot, publish bot).
+keywords: Bot Framework, Bot Builder, register bot, deploy bot, configure bot, publish bot, Bot Directory
 author: kbrandl
 manager: rstand
 
-ms.service: Bot Framework
-ms.topic: article
-ms.workload: Cognitive Services
+# the ms.topic should be the section of the IA that the article is in, with the suffix -article. Some examples:
+# get-started article, sdk-reference-article
+ms.topic: publish-article
+
+ms.prod: botframework
+
+# The ms.service should be the Bot Framework technology area covered by the article, e.g., Bot Builder, LUIS, Azure Bot Service
+ms.service: Bot Builder
+
+# Date the article was updated
 ms.date: 02/06/2017
-ms.author: v-kibran@microsoft.com
 
+# Alias of the document reviewer. Change to the appropriate person.
+ms.reviewer: rstand
+
+# Include the following line commented out
+#ROBOTS: Index
 ---
-# Publish a bot
 
+# Publish a bot
 
 When you've finished developing a bot and you're ready to share it with others, complete the following tasks:
 

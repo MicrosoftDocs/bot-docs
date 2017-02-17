@@ -1,18 +1,29 @@
 ---
-title: Bot Framework Configure Bot | Microsoft Docs
-description: Detailed walkthrough of how to configure a bot to run on one or more channels using the Bot Framework Developer Portal.
-services: Bot Framework
-documentationcenter: BotFramework-Docs
+title: Configure a bot to run on one or more channels using the Bot Framework Portal | Microsoft Docs
+description: Learn how to configure a bot to run on one or more channels by using the Bot Framework Portal.
+keywords: Bot Framework, Bot Builder, configure bot, Bot Framework Portal, channel, configure
 author: kbrandl
 manager: rstand
 
-ms.service: Bot Framework
-ms.topic: article
-ms.workload: Cognitive Services
-ms.date: 02/06/2017
-ms.author: v-kibran@microsoft.com
+# the ms.topic should be the section of the IA that the article is in, with the suffix -article. Some examples:
+# get-started article, sdk-reference-article
+ms.topic: publish-article
 
+ms.prod: botframework
+
+# The ms.service should be the Bot Framework technology area covered by the article, e.g., Bot Builder, LUIS, Azure Bot Service
+ms.service: Bot Builder
+
+# Date the article was updated
+ms.date: 02/06/2017
+
+# Alias of the document reviewer. Change to the appropriate person.
+ms.reviewer: rstand
+
+# Include the following line commented out
+#ROBOTS: Index
 ---
+
 # Configure a bot to run on one or more channels
 
 After you have [registered](bot-framework-publish-register.md) your bot with the Bot Framework and [deployed](bot-framework-publish-deploy.md) your bot to the cloud, 

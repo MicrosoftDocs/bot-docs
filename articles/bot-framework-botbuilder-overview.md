@@ -1,18 +1,29 @@
 ---
-title: Bot Builder Overview | Microsoft Docs
-description: Description of the various means of creating a bot.
-services: Bot Framework
-documentationcenter: BotFramework-Docs
+title: About Bot Builder | Microsoft Docs
+description: Learn about the different means that Bot Builder provides for building a bot using the Bot Framework.
+keywords: Bot Framework, Bot Builder, SDK, REST, Azure Bot Service
 author: kbrandl
 manager: rstand
 
-ms.service: Bot Framework
-ms.topic: article
-ms.workload: Cognitive Services
-ms.date: 02/03/2017
-ms.author: v-kibran@microsoft.com
+# the ms.topic should be the section of the IA that the article is in, with the suffix -article. Some examples:
+# get-started article, sdk-reference-article
+ms.topic: get-started-article
 
+ms.prod: botframework
+
+# The ms.service should be the Bot Framework technology area covered by the article, e.g., Bot Builder, LUIS, Azure Bot Service
+ms.service: Bot Builder
+
+# Date the article was updated
+ms.date: 02/17/2017
+
+# Alias of the document reviewer. Change to the appropriate person.
+ms.reviewer: rstand
+
+# Include the following line commented out
+#ROBOTS: Index
 ---
+
 # About Bot Builder
 
 Bot Builder enables you to build and connect intelligent bots to interact with your users naturally wherever they are — from your website or app to text/SMS, Skype, Slack, Facebook Messenger, Office 365 mail, Teams and other popular services. 

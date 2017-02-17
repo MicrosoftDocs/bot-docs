@@ -3,11 +3,16 @@ title: Bot Framework Design Pattern - Integration between Bot and Web Browser | 
 description: Learn how to design a conversational application (bot) that requires integration between bot and web browser.
 keywords: bot framework, design, bot, scenario, use case, pattern, bot to web
 author: matvelloso
-manager: larar
-ms.topic: design-article
+manager: rstand
+
+# the ms.topic should be the section of the IA that the article is in, with the suffix -article. Some examples:
+# get-started article, sdk-reference-article
+ms.topic: design-patterns-article
 
 ms.prod: botframework
-ms.service: Bot Framework
+
+# The ms.service should be the Bot Framework technology area covered by the article, e.g., Bot Builder, LUIS, Azure Bot Service
+ms.service: Bot Builder
 
 # Date the article was updated
 ms.date: 02/16/2017
