@@ -34,12 +34,12 @@ In other words, just saying "hi" won’t be enough.
 
 Consider the following two designs:
 
-Design 1:
+Design 1
 
 ![bot](media/designing-bots/core/hello1.png)
 
 
-Design 2:
+Design 2
 
 ![bot](media/designing-bots/core/hello2.png)
 
