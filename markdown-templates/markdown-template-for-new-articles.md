@@ -44,6 +44,12 @@ Your article will most likely contain links. Here's sample markdown for a link t
     [link text](url)
     [Scott Guthrie's blog](http://weblogs.asp.net/scottgu)
 
+Launch an (external) link in a new tab by using an HTML anchor tag as shown in this example:
+
+    <a href="url" target="_blank">link text</a>
+
+    <a href="http://weblogs.asp.net/scottgu" target="_blank">Scott Guthrie's blog</a>
+
 Here's sample markdown for a link to another technical article in the botframework-docs repository:
 
     [link text](../articles/article-name.md)
@@ -52,6 +58,26 @@ You can also use so-called reference style links where you define the links at t
 
     I get 10 times more traffic from [Google][gog] than from [Yahoo][yah] or [MSN][msn].
 
+## Using 'Include' files
+
+Whenever the same piece of content exists in multiple places throughout the docs (ex: the same few sentences describing a term, or the same tip/note/warning/etc.), 
+you can create that content inside a 'snippet' file (in the /includes folder), then simply reference that file in markdown to dynamically inject its contents into any article.
+
+For example, the following 'include' statement injects the contents that's defined in the `includes/snippet-tip-bot-config-settings.md` file.
+
+    [!include[Application configuration settings](../includes/snippet-tip-bot-config-settings.md)]
+
+Syntax for the include statement is:
+
+    [!include[description-of-the-include-contents](path-to-md-file-that-contains-the-markdown-to-include)]
+
+## Including code from a GitHub repo
+
+You can inject code from a file that resides in GitHub by using a statement like the following:
+
+    [!code-JavaScript[_samples/echobot](../_samples/echobot/server.js "Echo Bot in Node.js")]
+
+For details about how to configure this functionality, see the [OPS documenation](https://opsdocs.azurewebsites.net/en-us/opsdocs/partnerdocs/codesnippets?branch=master).
 
 ## Notes and tips
 You should use notes and tips judiciously. A little bit goes a long way. Put the text of the note or tip on the line after the custom markdown extension.
