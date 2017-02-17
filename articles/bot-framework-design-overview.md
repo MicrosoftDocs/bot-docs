@@ -20,12 +20,8 @@ ms.reviewer: rstand
 ---
 # Introduction to bot design
 
-## Overview
-
 The Bot Framework enables developers to create compelling bot experiences that solve a variety of business problems. 
-Designing a bot's UI/UX and planning its features and functionality requires a perspective 
-that's significantly different from that of web development or app development. 
-By familiarizing yourself with the content in this section, you'll be equipped to design a bot that 
+By learning the concepts described in this section, you'll be equipped to design a bot that 
 aligns with best practices and capitalizes on lessons learned thus far in this relatively new arena. 
 
 ##<a id="design-guidance"></a> Designing a bot
