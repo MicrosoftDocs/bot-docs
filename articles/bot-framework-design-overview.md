@@ -92,10 +92,5 @@ Chances are, the same answer can be applied to bot design.
 
 ## Next steps
 
-Now that you're familiar with some basic principles of bot design, learn more about the following topics in the 
-remainder of this section:
-
-- [UI and UX](bot-framework-design-core-greeting.md)
-- [Bot capabilities](bot-framework-design-capabilities.md)
-- [Common patterns](bot-framework-design-patterns-overview.md)
-- [Resources](bot-framework-design-resources.md)
+Now that you're familiar with some basic principles of bot design, learn more about UI and UX, bot capabilities, 
+common patterns, and resources in the remainder of this section.

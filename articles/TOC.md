@@ -22,7 +22,6 @@
 ### [UX elements](bot-framework-design-core-ux-elements.md)
 ## [Bot capabilities](bot-framework-design-capabilities.md)
 ## Common patterns
-### [Overview](bot-framework-design-patterns-overview.md)
 ### [Task automation](bot-framework-design-patterns-task.md)
 ### [Knowledge base](bot-framework-design-patterns-knowledge-base.md)
 ### [Bot to web](bot-framework-design-patterns-bot-to-web.md)
