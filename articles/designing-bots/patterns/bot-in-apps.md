@@ -1,5 +1,5 @@
 ---
-title: Designing Bots - Bot in Apps | Bot Framework
+title: Designing Bots - Bot in Apps | Microsoft Docs
 description: Embedding bots into apps
 services: Bot Framework
 documentationcenter: BotFramework-Docs

@@ -1,5 +1,5 @@
 ---
-title: Designing Bots - Navigation | Bot Framework
+title: Designing Bots - Navigation | Microsoft Docs
 description: Navigation - Managing user navigation in conversational applications 
 services: Bot Framework
 documentationcenter: BotFramework-Docs

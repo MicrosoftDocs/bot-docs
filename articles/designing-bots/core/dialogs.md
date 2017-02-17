@@ -1,5 +1,5 @@
 ---
-title: Designing Bots - Dialogs | Bot Framework
+title: Designing Bots - Dialogs | Microsoft Docs
 description: Dialogs - Fundamental concepts of working with dialogs in the Microsoft Bot Framework
 services: Bot Framework
 documentationcenter: BotFramework-Docs

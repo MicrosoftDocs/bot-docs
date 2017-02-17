@@ -1,5 +1,5 @@
 ---
-title: Designing Bots - Saying Hello | Bot Framework
+title: Designing Bots - Saying Hello | Microsoft Docs
 description: Saying Hello - The importance of welcome messages in conversational applications
 services: Bot Framework
 documentationcenter: BotFramework-Docs

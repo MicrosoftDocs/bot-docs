@@ -1,5 +1,5 @@
 ---
-title: Designing Bots - Knowledge Base Bots | Bot Framework
+title: Designing Bots - Knowledge Base Bots | Microsoft Docs
 description: Informational bots tha can answer questions about anything
 services: Bot Framework
 documentationcenter: BotFramework-Docs

@@ -1,5 +1,5 @@
 ---
-title: Designing Bots - Message Logging | Bot Framework
+title: Designing Bots - Message Logging | Microsoft Docs
 description: Message logging - Basic concepts around intercepting messages between bots and users
 services: Bot Framework
 documentationcenter: BotFramework-Docs

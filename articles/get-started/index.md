@@ -1,5 +1,5 @@
 ---
-title: Getting Started | Bot Framework
+title: Getting Started | Microsoft Docs
 description: Article description that will be displayed on landing pages and in most search results
 services: Bot Framework
 documentationcenter: BotFramework-Docs

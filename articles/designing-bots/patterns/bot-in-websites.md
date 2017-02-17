@@ -1,5 +1,5 @@
 ---
-title: Designing Bots - Bot in Websites | Bot Framework
+title: Designing Bots - Bot in Websites | Microsoft Docs
 description: Embedding bots into websites
 services: Bot Framework
 documentationcenter: BotFramework-Docs

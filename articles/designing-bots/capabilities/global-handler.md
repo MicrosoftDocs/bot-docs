@@ -1,5 +1,5 @@
 ---
-title: Designing Bots - Global Handlers | Bot Framework
+title: Designing Bots - Global Handlers | Microsoft Docs
 description: Global Message Handlers - Preparing bots for when users change topics in the conversation
 services: Bot Framework
 documentationcenter: BotFramework-Docs

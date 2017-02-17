@@ -1,5 +1,5 @@
 ---
-title: Designing Bots | Bot Framework
+title: Designing Bots | Microsoft Docs
 description: Thoughts and guidance on how to plan and design conversational applications
 services: Bot Framework
 documentationcenter: BotFramework-Docs

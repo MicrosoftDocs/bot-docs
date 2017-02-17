@@ -1,5 +1,5 @@
 ---
-title: Designing Bots - Task Automation Bots | Bot Framework
+title: Designing Bots - Task Automation Bots | Microsoft Docs
 description: Conversational applications that run simple task automation scenarios
 services: Bot Framework
 documentationcenter: BotFramework-Docs
