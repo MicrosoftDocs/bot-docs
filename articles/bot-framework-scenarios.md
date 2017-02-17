@@ -1,5 +1,5 @@
 ---
-title: Bot Framework Scenarios | Bot Framework
+title: Bot Framework Scenarios | Microsoft Docs
 description: Key scenarios for the Bot Framework.
 services: service-name
 documentationcenter: BotFramework-Docs
@@ -15,6 +15,7 @@ ms.date: mm/dd/yyyy
 ms.author: rstand@microsoft.com
 
 ---
-# Scenarios
+# Bot Framework scenarios
 
-*Content coming soon.*
+>[!NOTE]
+> This content is under development

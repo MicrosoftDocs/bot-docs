@@ -1,5 +1,5 @@
 ---
-title: Bot Framework Getting Started | Bot Framework
+title: Bot Framework Getting Started | Microsoft Docs
 description: Overview of the Bot Framework and its capabilities.
 services: service-name
 documentationcenter: BotFramework-Docs

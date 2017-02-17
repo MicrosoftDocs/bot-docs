@@ -1,5 +1,5 @@
 ---
-title: Designing Bots - Bot to Web | Bot Framework
+title: Designing Bots - Bot to Web | Microsoft Docs
 description: Integrating bots and web navigation flows 
 services: Bot Framework
 documentationcenter: BotFramework-Docs

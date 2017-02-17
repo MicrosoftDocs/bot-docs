@@ -1,5 +1,5 @@
 ---
-title: What is the Bot Framework? | Bot Framework
+title: What is the Bot Framework? | Microsoft Docs
 description: Overview of the Bot Framework and its capabilities.
 services: service-name
 documentationcenter: BotFramework-Docs

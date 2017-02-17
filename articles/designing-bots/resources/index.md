@@ -1,5 +1,5 @@
 ---
-title: Designing Bots - Resources | Bot Framework
+title: Designing Bots - Resources | Microsoft Docs
 description: General resources Bot Framework
 documentationcenter: BotFramework-Docs
 author: matvelloso

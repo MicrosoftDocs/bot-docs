@@ -1,5 +1,5 @@
 ---
-title: Designing Bots - Hand off to Human | Bot Framework
+title: Designing Bots - Hand off to Human | Microsoft Docs
 description: Handling scenarios where bots hand off the conversation to humans
 services: Bot Framework
 documentationcenter: BotFramework-Docs

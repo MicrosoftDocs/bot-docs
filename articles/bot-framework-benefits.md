@@ -1,5 +1,5 @@
 ---
-title: Bot Framework Features | Bot Framework
+title: Bot Framework Features | Microsoft Docs
 description: The features of the Bot Framework and how they benefit customers building bots.
 services: service-name
 documentationcenter: BotFramework-Docs

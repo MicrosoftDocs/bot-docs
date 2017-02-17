@@ -1,5 +1,5 @@
 ---
-title: Designing Bots - UX Elements | Bot Framework
+title: Designing Bots - UX Elements | Microsoft Docs
 description: UX Elements - Combining rich controls, natural language and voice in conversational applications
 services: Bot Framework
 documentationcenter: BotFramework-Docs

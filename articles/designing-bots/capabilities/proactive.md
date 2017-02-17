@@ -1,5 +1,5 @@
 ---
-title: Designing Bots - Proactive Messages | Bot Framework
+title: Designing Bots - Proactive Messages | Microsoft Docs
 description: Proactive Messages - When bots need to initiate a message to the user 
 services: Bot Framework
 documentationcenter: BotFramework-Docs

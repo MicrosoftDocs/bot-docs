@@ -1,5 +1,5 @@
 ---
-title: Designing Bots | Bot Framework
+title: Designing Bots | Microsoft Docs
 description: Article description that will be displayed on landing pages and in most search results
 services: service-name
 documentationcenter: BotFramework-Docs
