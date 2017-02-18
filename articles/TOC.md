@@ -55,6 +55,7 @@
 ## Node.js
 ### [Manage conversation flow](bot-framework-nodejs-howto-manage-conversation-flow.md)
 ## [Troubleshooting](bot-framework-troubleshooting-guide.md)
+## [Troubleshooting Authentication](bot-framework-troubleshooting-auth.md)
 # Publish
 ##[Overview](bot-framework-publish-overview.md)
 ##[Register a bot](bot-framework-publish-register.md)
