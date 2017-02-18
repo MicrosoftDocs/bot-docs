@@ -17,13 +17,14 @@ ms.service: Bot Builder
 # Date the article was updated
 ms.date: 02/17/2017
 
+ms.author: v-demak@microsoft.com
 # Alias of the document reviewer. Change to the appropriate person.
 ms.reviewer: rstand
 
 # Include the following line commented out
 #ROBOTS: Index
 ---
-## Overview
+# Troubleshooting Bot Framework Authentication 
 
 This guide will help you troubleshoot authentication errors with your bot. This guide is easiest to follow if you can download and use the [Bot Framework Channel Emulator][Emulator] and can update your bot's ID and password. If you cannot use the emulator or make changes, only certain steps will apply.
 
