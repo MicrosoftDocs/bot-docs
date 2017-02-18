@@ -8,10 +8,13 @@ author: DeniseMak
 manager: rstand
 
 ms.service: Bot Framework
-ms.topic: article
+ms.topic: develop-article
 ms.workload: Cognitive Services
 ms.date: 02/14/2017
 ms.author: v-demak@microsoft.com
+
+# Include the following line commented out
+#ROBOTS: Index
 ---
 # Bot Framework Troubleshooting Guide
 This article is a technical FAQ and troubleshooting guide for the Bot Framework.

@@ -8,11 +8,14 @@ author: DeniseMak
 manager: rstand
 
 ms.service: Bot Framework
-ms.topic: article
+ms.prod: botframework
+ms.topic: resources-article
 ms.workload: Cognitive Services
 ms.date: 02/14/2017
 ms.author: v-demak@microsoft.com
 
+# Include the following line commented out
+#ROBOTS: Index
 ---
 # Bot Framework Frequently Asked Questions (FAQ)
 This article contains answers to some frequently asked questions about the Bot Framework.
