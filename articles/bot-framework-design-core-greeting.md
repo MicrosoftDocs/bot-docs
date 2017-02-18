@@ -1,5 +1,5 @@
 ---
-title: Designing for the first interaction | Microsoft Docs
+title: Designing the first interaction between user and bot | Microsoft Docs
 description: Learn best practices for designing for the first interaction between user and bot. 
 keywords: Bot Framework, Bot design, core principles
 author: matvelloso
@@ -23,7 +23,7 @@ ms.reviewer: rstand
 # Include the following line commented out
 #ROBOTS: Index
 ---
-# Designing for the first interaction
+# Designing the first interaction
 
 ## First impressions matter
 
@@ -62,7 +62,7 @@ Finally, the use of menus can significantly simplify your natural language model
 > Don’t dismiss them as not being “smart enough”.
 
 > [!NOTE]
-> You might choose design your bot to use menus while still supporting free form input. 
+> You may design your bot to use menus while still supporting free form input. 
 > That is, if a user responds to the initial menu by typing rather than by selecting a menu option, your bot could attempt to parse the user's text input. 
 
 ## Other considerations

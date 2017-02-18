@@ -50,6 +50,10 @@
 #### [Bot in Websites](designing-bots/patterns/bot-in-websites.md)
 ### [Resources](designing-bots/resources/index.md)
 # Develop
+## .NET
+### [Manage conversation flow](bot-framework-dotnet-howto-manage-conversation-flow.md)
+## Node.js
+### [Manage conversation flow](bot-framework-nodejs-howto-manage-conversation-flow.md)
 ## [Troubleshooting](bot-framework-troubleshooting-guide.md)
 # Publish
 ##[Overview](bot-framework-publish-overview.md)
