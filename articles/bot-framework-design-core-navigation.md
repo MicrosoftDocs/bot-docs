@@ -1,5 +1,5 @@
 ---
-title: Bot Framework Design - Navigation | Microsoft Docs
+title: Designing navigation within a bot | Microsoft Docs
 description: Learn how to manage navigation in converational applications (bots) and understand common pitfalls of poorly designed navigation.
 keywords: Bot Framework, Bot design, navigation
 author: matvelloso
@@ -15,7 +15,7 @@ ms.prod: botframework
 ms.service: Bot Builder
 
 # Date the article was updated
-ms.date: 02/16/2017
+ms.date: 02/20/2017
 
 # Alias of the document reviewer. Change to the appropriate person.
 ms.reviewer: rstand
@@ -25,88 +25,115 @@ ms.reviewer: rstand
 ---
 # Designing navigation
 
-##Where am I?
+## Introduction to bot navigation
 
-Websites have breadcrumbs, apps have menus, web browsers offer buttons to navigate forward and back and so on. Enter bots and we are now in a whole new world where those simple, tested and validated solutions for keeping the user aware of where they are haven't been widely established yet.
+Users can navigate websites using breadcrumbs, apps using menus, and a web browsers using buttons like **forward** and **back**. 
+However, none of these well-established navigation techniques entirely addresses navigation requirements within a bot. 
+As we discussed [previously](bot-framework-design-core-dialogs.md#dialogs-stacks-and-humans), 
+users often interact with bots in a non-linear fashion, 
+thereby making it challenging to design bot navigation that consistently delivers a great user experience. 
+Consider the following dilemmas:
 
-How do we ensure that a user doesn't get lost in a conversation with a bot? Can a user navigate "back" in a chat? How to go to the "main menu"? How do we "cancel" an operation?
+- How do you ensure that a user doesn't get lost in a conversation with a bot? 
+- Can a user navigate "back" in a conversation with a bot? 
+- How does a user navigate to the "main menu" during a conversation with a bot? 
+- How does a user "cancel" an operation during a conversation with a bot? 
 
-Let us look at some common traps of conversational interfaces and how to overcome them. We will do that by describing some "personality disorders" that bots often display:
+The specifics of your bot's navigation design will depend largely upon the features and functionality that your bot supports. 
+However, regardless of the type of bot you're developing, you'll want to avoid the common pitfalls of poorly designed conversational interfaces. 
+This article describes these pitfalls in terms of five personality disorders: the "stubborn bot", the "clueless bot", 
+the "mysterious bot", the "captain obvious bot", and the "bot that can't forget." 
 
-##The "stubborn bot"
+## The "stubborn bot"
 
-Imagine this scenario:
+The stubborn bot insists upon maintaining the current course of conversation, 
+even when the user attempts to steer things in a different direction. 
+Consider the following scenario: 
 
 ![bot](media/designing-bots/core/stubborn-bot.png)
 
-It is easy to imagine how an user could get very frustrated with this scenario. Users change their minds, they cancel things. They want to start over. It is a common mistake to build a dialog in such a way that it doesn't take into account that possibility and instead just keeps retrying the same question, over and over again.
+Users often change their minds -- they can decide to cancel something in mid-stream, or sometimes want to start over altogether. 
 
-Of course there are many ways to overcome this problem, but we will focus on the simplest one. The next topics further in this page will discuss more advanced solutions that may also be applied here. 
+> [!TIP]
+> <b>Do</b>: Design your bot to take into account that a user might attempt to change the course of the conversation at any time. 
+>
+> <b>Don't</b>: Design your bot to ignore user input and keep repeating the same question in an endless loop. 
 
-So the simplest way to stop a bot from ending in a loop asking the same question over and over again is simply to use prompts with specific retry attempt numbers:
+There are many methods of avoiding this pitfall, 
+but perhaps the easiest way to prevent a bot from asking the same question endlessly 
+is to simply specify a maximum number of retry attempts for each question. 
+If designed in this manner, the bot is not doing anything "smart" to understand the user's input and respond appropriately, 
+but will at least avoid asking the same question in an endless loop. 
 
-In C#:
+## The "clueless bot"
 
-
-	PromptDialog.Choice(context, this.OnOptionSelected, new List<string>() { 
-		FlightsOption, HotelsOption 
-	}, "Are you looking for a flight or a hotel?", "Not a valid option", 3);
-
-In Node:
-
-	builder.Prompts.choice(session,'Are you looking for a flight or a hotel?',
-		[Flights.Label, Hotels.Label],
-        {
-        	maxRetries: 3,
-            retryPrompt: 'Not a valid option'	
-		});
-
-In this case we are not trying to do anything smart in terms of detecting whether the user is asking us explicitly to stop, but at least we will give up on retrying the same question after a given number of attempts. So the "stubbornness" is healed!
-
-##The "clueless bot"
-
-Imagine this scenario:
+The clueless bot responds in a nonsensical manner when it doesn't understand a user's attempt to access certain functionality (ex: "help" or "cancel"). 
+Consider the following scenario: 
 
 ![bot](media/designing-bots/core/clueless-bot.png)
 
-This scenario is similar to the previous one, but a little more complex: In this case "Help!" is a valid string. The prompt doesn't know the difference so it can't reject it. Now of course we could simply code a check for a few keywords after that and see whether the user is asking for things like "help", "cancel" or one of those basic navigation operations.
+Users often attempt to access certain functionality by using common keywords like "help", "cancel", or "start over". 
+Although you may be tempted to design each and every dialog within your bot to listen for (and respond appropriately to) certain keywords, 
+we do not recommend this approach. 
 
-But the problem would be having to do this for every little question in every single dialog everywhere in the bot. Trust us on this one: You just don't want to have to do that.
+> [!TIP]
+> <b>Do</b>: Implement a "catch all" handler that will examine user input for the keywords that you specify (ex: "help", "cancel", "start over", etc.) 
+> and respond appropriately. 
+> 
+> <b>Don't</b>: Design each and every dialog to examine user input for a list of keywords. 
 
-In such cases we would add "catch all" handlers that will intercept those key phrases and words such as "cancel", "help", "start over" and whatever else you feel appropriate - or even more complex natural language phrases if that applies to your scenario - and then individual dialogs and prompts could just safely ignore these. In a typical web application it isn't uncommon to use global http filters that would handle, for example, requests for specific sub-folders or file extensions. A similar concept here applies:
+By defining the logic once in a "catch all" handler, you're making it accessible to all dialogs, while ensuring that the list of keywords will be easy to maintain in the future. 
+For example, you could add a new keyword to the list at any time by simply updating the "catch all" handler (thereby making it accessible to all dialogs). 
+Using this approach, individual dialogs and prompts can then be made to safely ignore the keywords, if necesssary.
 
-	TODO: Add code from Ezequiel for the prompt with cancellation/middleware
+## The "mysterious bot"
 
-##The "mysterious bot"
-
-Imagine this scenario:
+The mysterious bot fails to immediately acknowledge the user's input in any way. 
+Consider the following scenario: 
 
 ![bot](media/designing-bots/core/mysterious-bot.png)
 
+In some cases, this situation might be an indication that the bot is in the midst of an outage. 
+Often times though, it could just be that the bot is busy processing the user's input and hasn't yet finished compiling its response. 
 
-Now it is difficult to guess what is happening with this bot. Maybe it is having an outage. It may be "stuck" somewhere. It may also - perfectly common case - just be taking a while to answer. But not replying to the user nor giving any visual cue of what is going on is still not a great idea. The user in this case has no idea of what is going on, whether they need to repeat the same question, how to cancel/start over... No cue is being given, at all.
+> [!TIP]
+> <b>Do</b>: Design your bot to immediately acknowledge user input, even in cases where the bot may take some time to compile its response. 
+> 
+> <b>Don't</b>: Design your bot to postpone acknowledgement of user input until the bot finishes compiling its response.
 
-There are a few things we can do to help here. 
+By immediately acknowledging the user's input, you eliminate any potential for confusion as to the state of the bot.
 
-	TODO: Add examples of scorables from Chris
+## The "captain obvious bot"
 
-
-##The "captain obvious bot"
-
-Imagine this scenario:
+The captain obvious bot provides unsolicited information that is completely obvious and therefore useless to the user. 
+Consider the following scenario:
 
 ![bot](media/designing-bots/core/captainobvious-bot.png)
 
+> [!TIP]
+> <b>Do</b>: Design your bot to provide information that will be useful to the user. 
+> 
+> <b>Don't</b>: Design your bot to provide unsolicited information that is unlikely to be useful to the user.
 
-	TODO: describe this one
+By designing your bot to provide useful information, you're increasing the odds that the user will engage with your bot.
 
-##The "bot that can't forget"
+## The "bot that can't forget"
 
-Imagine this scenario:
+The bot that can't forget inappropriately integrates information from past conversations into the current conversation. 
+
+Consider the following scenario:
 
 ![bot](media/designing-bots/core/rememberall-bot.png)
 
+> [!TIP]
+> <b>Do</b>: Design your bot to maintain the current topic of conversation, unless/until the user expresses a desire to revisit a prior topic. 
+> 
+> <b>Don't</b>: Design your bot to interject information from past conversations when it is not relevant to the current conversation.
 
-	TODO: describe this one
+By maintaining the current topic of conversation, you reduce the potential for confusion and frustration and increase the odds that the user will continue to engage with your bot.
 
-(to be continued, I'm tired...)
+## Next steps
+
+By designing your bot to avoid these common pitfalls of poorly designed conversational interfaces, 
+you're taking an important step toward ensuring a great user experience. 
+Next, learn more about the [UX elements](bot-framework-design-core-ux-elements.md) that bots most typically rely upon to exchange information with users. 

@@ -1,5 +1,5 @@
 ---
-title: Designing conversation flow | Microsoft Docs
+title: Designing conversation flow within a bot | Microsoft Docs
 description: Understand the fundamental concepts of designing conversation flow by using dialogs in the Microsoft Bot Framework.
 keywords: Bot Framework, bot design, dialog, conversation flow, conversation
 author: matvelloso
@@ -98,8 +98,9 @@ There is no "right" answer to this question, as
 the best solution will depend upon the specifics of your particular scenario 
 (ex: the likelihood of this happening, how the user would reasonably expect the bot to respond, etc.). 
 
+## Next steps
+
 Managing the user's navigation across dialogs and designing conversation flow in a manner that enables 
-them to achieve their goals (even in a non-linear fashion) 
-is a fundamental challenge of bot design. 
-In the [next topic](bot-framework-design-core-navigation.md), we'll 
-review some common pitfalls to avoid when designing navigation within your bot. 
+users to achieve their goals (even in a non-linear fashion) is a fundamental challenge of bot design. 
+In the [next article](bot-framework-design-core-navigation.md), we'll 
+review some common pitfalls of poorly designed navigation and discuss strategies for avoiding those traps. 
