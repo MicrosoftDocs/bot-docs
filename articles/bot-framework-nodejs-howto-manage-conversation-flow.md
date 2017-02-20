@@ -84,10 +84,10 @@ bot.dialog('/', new builder.IntentDialog()
 ##<a id="dialog-lifecycle"></a> Dialog lifecycle
 
 When a dialog is invoked, it takes control of the conversation flow. 
-Every new message will be subject to processing by that dialog until until it either closes or redirects to another dialog. 
+Every new message will be subject to processing by that dialog until it either closes or redirects to another dialog. 
 
 In Node, you can invoke one dialog from another by using `session.beginDialog()`. 
-To close a dialog and remove it from the stack (sending the user to the next remaining dialog in the stack), use `session.endDialog()`. 
+To close a dialog and remove it from the stack (thereby sending the user back to the prior dialog in the stack), use `session.endDialog()`. 
 
 ## Next steps
 

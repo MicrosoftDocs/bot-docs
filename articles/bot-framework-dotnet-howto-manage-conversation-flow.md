@@ -102,10 +102,10 @@ public class RootDialog : IDialog<object>
 ##<a id="dialog-lifecycle"></a> Dialog lifecycle
 
 When a dialog is invoked, it takes control of the conversation flow. 
-Every new message will be subject to processing by that dialog until until it either closes or redirects to another dialog. 
+Every new message will be subject to processing by that dialog until it either closes or redirects to another dialog. 
 
 In C#, you can use `context.Wait()` to specify the callback to invoke the next time the user sends a message. 
-To close a dialog and remove it from the stack (sending the user to the next remaining dialog in the stack), use `context.Done()`. 
+To close a dialog and remove it from the stack (thereby sending the user back to the prior dialog in the stack), use `context.Done()`. 
 You must end every dialog method with `context.Wait()`, `context.Fail()`, `context.Done()`, 
 or some redirection directive such as `context.Forward()` or `context.Call()`. 
 A dialog method that does not end with one of these will result in an error 
