@@ -1,7 +1,7 @@
 ---
 title: Bot Framework Troubleshooting Guide| Microsoft Docs
 description: Bot Framework Troubleshooting Guide and technical FAQ.
-keywords: FAQ, troubleshooting, troubleshoot, error, Bot Framework, channels, reset, LUIS, precondition failed, Kik
+keywords: FAQ, troubleshooting, troubleshoot, error, Bot Framework, problems, LUIS
 services: Bot Framework
 documentationcenter: BotFramework-Docs
 author: DeniseMak
@@ -17,9 +17,21 @@ ms.reviewer: rstand
 #ROBOTS: Index
 ---
 # Bot Framework Troubleshooting Guide
-This article is a technical FAQ and troubleshooting guide for the Bot Framework.
+These Frequently Asked Questions (FAQ) for the Bot Framework can help you with troubleshooting.
 
-## General Troubleshooting
+## General Questions
+
+### How can I troubleshoot my Bot?
+
+1. Try your Bot's web service in the emulator first. The emulator allows local debugging of your Bot logic, before deploying to the cloud.
+    1. Using a blank "Microsoft App Id" and "Microsoft App Password" in the emulator and web.config (while keeping the BotAuthentication attribute) will allow you to rule out authentication as a possible issue.
+    2. Since the exchange of chat messages will likely result in several HTTPS method calls, it's important to make sure that they all succeed.  You can see the result of every HTTPS method call by selecting the different items in the list view on the left-hand side of the emulator window.
+
+2. Deploy your code to Azure next. Test your connection to the Bot Framework in the [developer dashboard][DashboardTestingConnection].  If your bot web service encounters issues as you move from running on your development machine to the cloud, you might consider using this guide: [Troubleshoot a web app in Azure App Service using Visual Studio](https://azure.microsoft.com/en-us/documentation/articles/web-sites-dotnet-troubleshoot-visual-studio/).
+
+3. Finally, try your Bot on Skype. This will help you validate the end-to-end user experience.
+
+4. Consider adding channels with additional authentication requirements. Once channels like Skype work, you can try additional channels like DirectLine or Web chat.
 
 ### My bot is stuck!  How can I reset the conversation?
 
@@ -29,23 +41,11 @@ You can use the command `/deleteprofile` to delete the `User/PrivateConversation
 
 You can remove the emulator.service file in `%temp%` with `erase %temp%\emulator.service`.
 
-### How can I troubleshoot my Bot?
-
-1. Try your Bot's web service in the emulator first. The emulator allows local debugging of your Bot logic, before deploying to the cloud.
-    1. Using a blank "Microsoft App Id" and "Microsoft App Password" in the emulator and web.config (while keeping the BotAuthentication attribute) will allow you to rule out authentication as a possible issue.
-    2. Since the exchange of chat messages will likely result in several HTTPS method calls, it's important to make sure that they all succeed.  You can see the result of every HTTPS method call by selecting the different items in the list view on the left-hand side of the emulator window.
-
-2. Deploy your code to Azure next. Test your connection to the Bot Framework in the [developer dashboard][DashboardTestingConnection].  If your bot web service encounters issues as you move from running on your development machine to the cloud, you might consider using this guide: [Troubleshoot a web app in Azure App Service using Visual Studio](https://azure.microsoft.com/en-us/documentation/articles/web-sites-dotnet-troubleshoot-visual-studio/). 
-
-3. Finally, try your Bot on Skype. This will help you validate the end-to-end user experience.
-
-4. Consider adding channels with additional authentication requirements. Once channels like Skype work, you can try additional channels like DirectLine or Web chat.
-
 ### How can I troubleshoot my Bot's authentication?
 
 Take a look at [Troubleshooting Bot Framework Authentication][TroubleshootingAuth].
 
-### How can I troubleshoot my Bot using the C# Bot Builder SDK?
+### I'm using the C# Bot Builder SDK. How can I troubleshoot my Bot?
 
 * **Look for exceptions**. In Visual Studio 2015, go to <code>Debug|Windows|Exception Settings</code> and select the "Break When Thrown" checkbox next to "Common Language Runtime Exceptions".  You may also see diagnostics output in your "Output Window" when there are thrown or unhandled exceptions.
 
@@ -62,6 +62,13 @@ Some channels don't support transient typing updates in their client.
 
 The "Bot Url" is the web service url that executes your Bot's code.  The "Emulator Url" is a *different* web service url that emulates the Bot Framework Connector service.  They should not be the same.  Generally, you will want to leave the "Emulator Url" as the default value, and update the "Bot Url" to the url for your Bot web service.
 
+### What is the difference between the Connector and Builder library in the SDK?
+
+The Connector library is the exposition of the REST API.  The Builder library adds the conversational dialog programming model and other features (e.g. prompts, waterfalls, chains, guided form filling) and access to cognitive services (e.g. LUIS).
+
+### What causes 429 "too many requests" HTTP errors?
+
+One possible source for HTTP status code 429 is [ngrok](https://ngrok.com/).  Ngrok is used to provide a secure tunnel to localhost.  For example, you might be configuring ngrok with the Bot Framework Emulator to locally debug your Bot in the cloud.
 
 ## Transmitting messages
 
@@ -100,7 +107,7 @@ Take a look at the [Bot Framework IDs Guide][BotFrameworkIDGuide].
 
 SMS and email will provide the user id raw in the from.Id field.  In Skype we give you a unique ID for the user which is different from the Skype ID. If you need to connect to an existing account you can use a sign in card and implement your own oauth flow to connect the user ID to your own service's user ID.
 
-## Working with channels (Facebook, Kik, DirectLine, other services)
+## Working with channels
 ### Why are my Facebook user names not showing anymore?
 
 Did you change your Facebook password?  This will invalidate the access token, and you will have to update the Facebook channel registration.
@@ -138,8 +145,8 @@ The value of the field is up to you. If you already have a signed-in user in you
 
 The primary purpose of IDialog.Forward is to reuse an existing child dialog that is often "reactive", where the child dialog (in IDialog.StartAsync) waits for an object T with some ResumeAfter handler. In particular, if you have a child dialog that waits for an IMessageActivity T (e.g. the LuisDialog), you can decide to forward the incoming IMessageActivity (already received by some parent dialog) by using the IDialogStack.Forward method (e.g. which in the example of forwarding to a LuisDialog, IDialogStack.Forward will push the LuisDialog on the dialog stack, run the code in LuisDialog.StartAsync until it schedules a wait for the next message, and then immediately satisfy that wait with the forwarded IMessageActivity).
 
-It's common that T is an IMessageActivity, because almost nobody writes an IDialog.StartAsync that waits for other types.  You might use IDialogStack.Forward to a LuisDialog as a mechanism to intercept messages from the user for 
-some processing before forwarding the message to an existing LuisDialog. Separately, you can also use DispatchDialog with ContinueToNextGroup for that purpose. 
+It's common that T is an IMessageActivity, because almost nobody writes an IDialog.StartAsync that waits for other types.  You might use IDialogStack.Forward to a LuisDialog as a mechanism to intercept messages from the user for
+some processing before forwarding the message to an existing LuisDialog. Separately, you can also use DispatchDialog with ContinueToNextGroup for that purpose.
 
 You would expect to find the forwarded item in the first ResumeAfter handler (e.g. LuisDialog.MessageReceived) that is scheduled by StartAsync.
 
@@ -166,12 +173,12 @@ There are a few options:
 
 ### Where is conversation state stored?
 
-Bot data (that is, the user, conversation, and private conversation property bags) are stored using the Connector's IBotState interface.  All of these property bags are scoped by your Bot's ID.  The user property bag is keyed by user ID,
+Bot data (that is, the user, conversation, and private conversation property bags) are stored using the Connector's `IBotState` interface.  All of these property bags are scoped by your Bot's ID.  The user property bag is keyed by user ID,
 the conversation property bag is keyed by conversation ID, and the private conversation property bag is keyed by both user ID and conversation ID.  Given the same keys, you'll get the same property bags back.
 
 In the Node and C# builder SDKs, the dialog stack and dialog data are both stored as entries in the private conversation property bag.  The C# implementation uses binary serialization, and the Node implementation uses JSON serialization.
 
-This IBotState REST interface is implemented by two services.
+This `IBotState` REST interface is implemented by two services.
 
 1. The Bot Framework Connector provides a cloud service that implements this interface and stores data in Azure.  This data is encrypted at rest and does not intentionally expire.
 2. The Bot Framework Emulator provides an in-memory implementation of this interface for debugging your bot.  This data expires when the emulator process exits.
@@ -190,7 +197,7 @@ The dialog stack and state are stored in these bot data bags.  For example, you 
 
 ### What causes "precondition failed" (412) or "conflict" (409) HTTP errors?
 
-The Connector's IBotState service is used to store the bot data bags (the user, conversation, and private bot data bags, where the private bot data bag includes the dialog stack "control flow" state).  
+The Connector's `IBotState` service is used to store the bot data bags (the user, conversation, and private bot data bags, where the private bot data bag includes the dialog stack "control flow" state).  
 Concurrency control in the IBotState service is managed by optimistic concurrency (through ETags).
 
 If there is an update conflict (due to a concurrent update to a single bot data bag) during a "read-modify-write" sequence, then:
@@ -200,8 +207,8 @@ If there is an update conflict (due to a concurrent update to a single bot data 
 
 ### How can I fix "precondition failed" (412) or "conflict" (409) HTTP errors?
 
-The "precondition failed" error message indicates that your bot processed multiple messages for the same conversation at once. If your bot is connected to services that require precisely ordered messages, 
-you should consider locking the conversation state to make sure messages are not processed in parallel.  In C#, there exists a mechanism (class `LocalMutualExclusion` which implements `IScope`) to 
+The "precondition failed" error message indicates that your bot processed multiple messages for the same conversation at once. If your bot is connected to services that require precisely ordered messages,
+you should consider locking the conversation state to make sure messages are not processed in parallel.  In C#, there exists a mechanism (class `LocalMutualExclusion` which implements `IScope`) to
 pessimistically serialize the handling of a single conversations with an in-memory semaphore.  You could extend this implementation to use a Redis lease, scoped by the conversation address.
 
 If your bot is not connected to external services or if processing messages in parallel from the same conversation is acceptable, you can add this code to ignore any collisions that occur in the Bot State API. This will allow the last reply to set the conversation state.
@@ -230,7 +237,7 @@ The State Service allow you to persist progress through the dialogs in a convers
 If the dialog stack cannot be deserialized correctly (due to serialization format changes or because the code has changed too much), the conversation state will be reset.
 
 
-## LUIS 
+## LUIS
 
 ### What are the possible machine-readable resolutions of the LUIS builtin date, time, duration, and set entities?
 
@@ -254,7 +261,7 @@ There are few caveats to keep in mind:
 
 Here are some videos about LUIS:
 
-* [Introduction to Language Understanding Intelligent Service (LUIS) - Microsoft Cognitive Services](https://www.youtube.com/watch?v=jWeLajon9M8) 
+* [Introduction to Language Understanding Intelligent Service (LUIS) - Microsoft Cognitive Services](https://www.youtube.com/watch?v=jWeLajon9M8)
 * [Advanced Learning Session for Language Understanding Intelligent Service (LUIS) ](https://www.youtube.com/watch?v=39L0Gv2EcSk)
 
 You can access LUIS experts at the [Language Understanding Intelligent Service Forum](https://social.msdn.microsoft.com/forums/azure/en-US/home?forum=LUIS).
@@ -274,16 +281,7 @@ You can access LUIS experts at the [Language Understanding Intelligent Service F
 
 The [GitHub issues](https://github.com/Microsoft/BotBuilder/issues) has an active forum.  [Gitter](https://gitter.im/Microsoft/BotBuilder) has active discussions.  [Stack Overflow](http://stackoverflow.com/questions/tagged/botframework) has a list of tagged Bot Framework questions.
 
-## Other
 
-### What is the difference between the Connector and Builder library in the SDK?
-
-The Connector library is the exposition of the REST API.  The Builder library adds the conversational dialog programming model and other features (e.g. prompts, waterfalls, chains, guided form filling) and access to cognitive services (e.g. LUIS).
-
-
-### What causes 429 "too many requests" HTTP errors?
-
-One possible source for HTTP status code 429 is [ngrok](https://ngrok.com/).  Ngrok is used to provide a secure tunnel to localhost.  For example, you might be configuring ngrok with the Bot Framework Emulator to locally debug your Bot in the cloud.
 
 <!-- TODO: Update links to point to newly migrated content when it exists -->
 [DashboardTestingConnection]: (https://docs.botframework.com/en-us/csharp/builder/sdkreference/gettingstarted.html#testing)

@@ -15,7 +15,7 @@
 ## [Connector](bot-framework-connector-concept.md)
 # Design
 ## [Overview](bot-framework-design-overview.md)
-## UI and UX
+## User Experience
 ### [First interaction](bot-framework-design-core-greeting.md)
 ### [Conversation flow](bot-framework-design-core-dialogs.md)
 ### [Navigation](bot-framework-design-core-navigation.md)
