@@ -2,18 +2,24 @@
 title: Bot Framework frequently asked questions (FAQ) | Microsoft Docs
 description: Bot Framework frequently asked questions (FAQ). Includes questions about what's new, channels and framework availability.
 keywords: FAQ, Bot Framework, channels, availability, What's new, LUIS, Cortana, upgrade, Direct Line, Skype.
-services: Bot Framework
-documentationcenter: BotFramework-Docs
 author: DeniseMak
 manager: rstand
 
-ms.service: Bot Framework
-ms.prod: botframework
+# the ms.topic should be the section of the IA that the article is in, with the suffix -article. Some examples:
+# get-started article, sdk-reference-article
 ms.topic: resources-article
-ms.workload: Cognitive Services
-ms.date: 02/14/2017
-ms.author: v-demak@microsoft.com
+
+ms.prod: botframework
+
+# The ms.service should be the Bot Framework technology area covered by the article, e.g., Bot Builder, LUIS, Azure Bot Service
+ms.service: Bot Framework
+
+# Date the article was updated
+ms.date: 02/21/2017
+
+# Alias of the document reviewer. Change to the appropriate person.
 ms.reviewer: rstand
+
 # Include the following line commented out
 #ROBOTS: Index
 ---

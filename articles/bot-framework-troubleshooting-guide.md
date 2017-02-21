@@ -2,17 +2,24 @@
 title: Bot Framework Troubleshooting Guide| Microsoft Docs
 description: Bot Framework Troubleshooting Guide and technical FAQ.
 keywords: FAQ, troubleshooting, troubleshoot, error, Bot Framework, problems, LUIS
-services: Bot Framework
-documentationcenter: BotFramework-Docs
 author: DeniseMak
 manager: rstand
 
-ms.service: Bot Framework
+# the ms.topic should be the section of the IA that the article is in, with the suffix -article. Some examples:
+# get-started article, sdk-reference-article
 ms.topic: develop-article
-ms.workload: Cognitive Services
-ms.date: 02/14/2017
-ms.author: v-demak@microsoft.com
+
+ms.prod: botframework
+
+# The ms.service should be the Bot Framework technology area covered by the article, e.g., Bot Builder, LUIS, Azure Bot Service
+ms.service: Bot Framework
+
+# Date the article was updated
+ms.date: 02/21/2017
+
+# Alias of the document reviewer. Change to the appropriate person.
 ms.reviewer: rstand
+
 # Include the following line commented out
 #ROBOTS: Index
 ---
@@ -49,7 +56,7 @@ Take a look at [Troubleshooting Bot Framework Authentication][TroubleshootingAut
 
 * **Look for exceptions**. In Visual Studio 2015, go to <code>Debug|Windows|Exception Settings</code> and select the "Break When Thrown" checkbox next to "Common Language Runtime Exceptions".  You may also see diagnostics output in your "Output Window" when there are thrown or unhandled exceptions.
 
-* **Look at the call stack.** In Visual Studio, you can choose whether you're debugging [Just My Code](https://msdn.microsoft.com/en-us/library/dn457346.aspx) or not.  Seeing the full call stack may provide more insight into any issues.
+* **Look at the call stack**. In Visual Studio, you can choose whether you're debugging [Just My Code](https://msdn.microsoft.com/en-us/library/dn457346.aspx) or not.  Seeing the full call stack may provide more insight into any issues.
 
 * **Ensure all dialog methods end with a plan to handle the next message**. All IDialog methods should complete with IDialogStack.Call, IDialogStack.Wait, or IDialogStack.Done.  These IDialogStack Call/Wait/Done methods are exposed through the IDialogContext passed to every IDialog method.  Calling IDialogStack.Forward and using the system prompts through the PromptDialog static methods will call one of these methods in their implementation.
 
