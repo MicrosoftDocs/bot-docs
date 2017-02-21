@@ -125,8 +125,8 @@ Be default bots in development on Kik are allowed 50 subscribers. After 50 uniqu
 
 ### How can I use authenticated services from my Bot?
 
-1. the [AuthBot NuGet](https://www.nuget.org/packages/AuthBot) library is extremely helpful for Azure Active Directory authentication.
-2. the [Builder GitHub samples](https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples) has examples for Facebook authentication.
+* The [AuthBot NuGet](https://www.nuget.org/packages/AuthBot) library is extremely helpful for Azure Active Directory authentication.
+* The [Builder GitHub samples](https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples) include examples for Facebook authentication.
 
 **Note**: when adding authentication and security functionality, make sure the patterns you implement in your code meet security standards appropriate for your application.
 
@@ -170,10 +170,10 @@ Take a look at these [Proactive Messages Samples](https://github.com/MicrosoftDX
 
 There are a few options:
 
-1. Don't store that dependency so it won't be serialized. This probably isn't helpful, but it's an option.
-2. Use the reflection serialization surrogate. This still may not work and risks serializing too much.
-3. Resolve the dependency through Autofac and [FiberModule.Key_DoNotSerialize](https://github.com/Microsoft/BotBuilder/blob/master/CSharp/Library/Fibers/FiberModule.cs#L59). This is the cleanest solution.
-4. Use [NonSerialized](https://msdn.microsoft.com/en-us/library/system.nonserializedattribute(v=vs.110).aspx) and [OnDeserialized](https://msdn.microsoft.com/en-us/library/system.runtime.serialization.ondeserializedattribute(v=vs.110).aspx) attributes to restore the dependency on deserialization This is the simplest solution.
+* Don't store that dependency so it won't be serialized. This probably isn't helpful, but it's an option.
+* Use the reflection serialization surrogate. This still may not work and risks serializing too much.
+* Resolve the dependency through Autofac and [FiberModule.Key_DoNotSerialize](https://github.com/Microsoft/BotBuilder/blob/master/CSharp/Library/Fibers/FiberModule.cs#L59). This is the cleanest solution.
+* Use [NonSerialized](https://msdn.microsoft.com/en-us/library/system.nonserializedattribute(v=vs.110).aspx) and [OnDeserialized](https://msdn.microsoft.com/en-us/library/system.runtime.serialization.ondeserializedattribute(v=vs.110).aspx) attributes to restore the dependency on deserialization This is the simplest solution.
 
 
 ## State and Data Storage
@@ -187,13 +187,13 @@ In the Node and C# builder SDKs, the dialog stack and dialog data are both store
 
 This `IBotState` REST interface is implemented by two services.
 
-1. The Bot Framework Connector provides a cloud service that implements this interface and stores data in Azure.  This data is encrypted at rest and does not intentionally expire.
-2. The Bot Framework Emulator provides an in-memory implementation of this interface for debugging your bot.  This data expires when the emulator process exits.
+* The Bot Framework Connector provides a cloud service that implements this interface and stores data in Azure.  This data is encrypted at rest and does not intentionally expire.
+* The Bot Framework Emulator provides an in-memory implementation of this interface for debugging your bot.  This data expires when the emulator process exits.
 
 If you want to store this data within your data centers, you can provide a custom implementation of the state service.  This can be done at least two ways:
 
-1. The REST layer with a custom IBotState service, or
-2. The language (Node.js or C#) layer, with the builder interfaces.
+* Use the the REST layer to provide a custom IBotState service.
+* Use the builder interfaces in the language (Node.js or C#) layer. 
 
 
 ### What is an ETag?  How does it relate to bot data bag storage?
@@ -238,8 +238,8 @@ Yes, each state store (that is, the User store, Conversation store, etc.) may be
 
 The State Service allow you to persist progress through the dialogs in a conversation, so that a user can return to a conversation with a bot days later without losing their position.  But if you change your bot's code, the bot data property bags stored through the State API are not automatically cleared.  You will have to decide whether the bot data should be cleared based on whether your newer code is compatible with older versions of your data.  You can accomplish this in a few ways:
 
-1. During development of your bot, if you want to manually reset the conversation's dialog stack and state, you can use the ` /deleteprofile` command (with the leading space so it's not interpreted by the channel) to clear out the state.
-2. During production usage of your bot, you can version your bot data so that if you bump the version, the associated data is cleared.  This can be accomplished in Node using the exiting middleware or in C# using an IPostToBot implementation.
+* During development of your bot, if you want to manually reset the conversation's dialog stack and state, you can use the ` /deleteprofile` command (with the leading space so it's not interpreted by the channel) to clear out the state.
+* During production usage of your bot, you can version your bot data so that if you bump the version, the associated data is cleared.  This can be accomplished in Node using the exiting middleware or in C# using an IPostToBot implementation.
 
 If the dialog stack cannot be deserialized correctly (due to serialization format changes or because the code has changed too much), the conversation state will be reset.
 
@@ -260,9 +260,9 @@ Both the Node and C# versions of the SDK support calling multiple LUIS models fr
 
 There are few caveats to keep in mind:
 
-1. Using multiple LUIS models assumes the LUIS models have non-overlapping sets of intents.
-2. Using multiple LUIS models assumes the scores from different models are comparable, to select the “best matched intent” across multiple models.
-3. Using multiple LUIS models means that if an intent matches one model, it will also strongly match the "none" intent of the other models.  You can avoid selecting the "none" intent in this situation (the Node SDK will automatically scale down the score for "none" intents to avoid this issue).
+* Using multiple LUIS models assumes the LUIS models have non-overlapping sets of intents.
+* Using multiple LUIS models assumes the scores from different models are comparable, to select the “best matched intent” across multiple models.
+* Using multiple LUIS models means that if an intent matches one model, it will also strongly match the "none" intent of the other models.  You can avoid selecting the "none" intent in this situation (the Node SDK will automatically scale down the score for "none" intents to avoid this issue).
 
 ### Where can I get more help on LUIS?
 
@@ -278,7 +278,7 @@ You can access LUIS experts at the [Language Understanding Intelligent Service F
 ### What are some community-authored dialogs?
 
 * [AuthBot](https://www.nuget.org/packages/AuthBot) - Azure Active Directory authentication
-* [BestMatchDialog](http://www.garypretty.co.uk/2016/08/01/bestmatchdialog-for-microsoft-bot-framework-now-available-via-nuget/) - regular expression-based dispatch of user text to dialog methods
+* [BestMatchDialog](http://www.garypretty.co.uk/2016/08/01/bestmatchdialog-for-microsoft-bot-framework-now-available-via-nuget/) - Regular expression-based dispatch of user text to dialog methods
 
 ### What are some community-authored templates?
 
