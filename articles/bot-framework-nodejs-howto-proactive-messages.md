@@ -31,11 +31,11 @@ ms.reviewer: rstand
 
 ## Introduction
 
-In this tutorial, we'll walk through an example of ... using the Bot Builder SDK for Node.js. 
+In this article, we'll walk through an example of ... using the Bot Builder SDK for Node.js. 
 
-## Next steps
+## Additional resources
 
-In this tutorial, we walked through an example of ... using the Bot Builder SDK for Node.js. 
+In this article, we walked through an example of ... using the Bot Builder SDK for Node.js. 
 To learn more, see:
 
 > [!NOTE]

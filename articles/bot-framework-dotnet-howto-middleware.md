@@ -79,4 +79,4 @@ In this article, we discussed how to intercept the messages that are exchanged b
 To learn more, see:
 
 > [!NOTE]
-> To do: Add links to related content (link to 'detailed readme' and 'full C# code' that Scott refers to)
+> To do: Add links to related content (link to 'detailed readme' and 'full C# code' that Matt refers to)
