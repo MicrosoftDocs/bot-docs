@@ -31,8 +31,8 @@ These Frequently Asked Questions (FAQ) for the Bot Framework can help you with t
 ### How can I troubleshoot my Bot?
 
 1. Try your Bot's web service in the emulator first. The emulator allows local debugging of your Bot logic, before deploying to the cloud.
-    1. Using a blank "Microsoft App Id" and "Microsoft App Password" in the emulator and web.config (while keeping the BotAuthentication attribute) will allow you to rule out authentication as a possible issue.
-    2. Since the exchange of chat messages will likely result in several HTTPS method calls, it's important to make sure that they all succeed.  You can see the result of every HTTPS method call by selecting the different items in the list view on the left-hand side of the emulator window.
+    * Using a blank "Microsoft App Id" and "Microsoft App Password" in the emulator and web.config (while keeping the BotAuthentication attribute) will allow you to rule out authentication as a possible issue.
+    * Since the exchange of chat messages will likely result in several HTTPS method calls, it's important to make sure that they all succeed.  You can see the result of every HTTPS method call by selecting the different items in the list view on the left-hand side of the emulator window.
 
 2. Deploy your code to Azure next. Test your connection to the Bot Framework in the [developer dashboard][DashboardTestingConnection].  If your bot web service encounters issues as you move from running on your development machine to the cloud, you might consider using this guide: [Troubleshoot a web app in Azure App Service using Visual Studio](https://azure.microsoft.com/en-us/documentation/articles/web-sites-dotnet-troubleshoot-visual-studio/).
 
