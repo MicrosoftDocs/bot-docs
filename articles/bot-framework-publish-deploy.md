@@ -144,8 +144,10 @@ The process of deploying a bot via continuous integration from GitHub consists o
 
 #### <a id="github1"></a>Step 1: Get a GitHub repository
 
-In this walk through, we'll use the <a href="https://github.com/fuselabs/echobot" target="_blank">echobot</a> GitHub repository, which contains the Node.js code for creating a simple bot.
-Start by <a href="https://help.github.com/articles/fork-a-repo/" target="_blank">forking</a> the <a href="https://github.com/fuselabs/echobot" target="_blank">echobot</a> repository.
+Start by <a href="https://help.github.com/articles/fork-a-repo/" target="_blank">forking</a> the GitHub repository that contains the code for the bot that you want to deploy. 
+
+> [!NOTE]
+> In this walk through, we'll use the **echobot** GitHub repository, which contains the Node.js code for creating a simple bot.
 
 #### <a id="github2"></a>Step 2: Create an Azure web app
 

@@ -56,7 +56,8 @@ For this walkthrough, you'll create a bot that simply echos back any user input.
 In the folder that you created earlier for your bot, create a new file named **app.js**. 
 Then, add the following code to the file: 
 
-[!code-JavaScript[_samples/echobot](../_samples/echobot/server.js "Echo Bot in Node.js")]
+> [!NOTE]
+> To do: add code sample
 
 ## Test your bot
 Next, let's test your bot by using the [Bot Framework Emulator](bot-framework-emulator.md) to see it in action. 
