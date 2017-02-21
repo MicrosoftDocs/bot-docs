@@ -51,11 +51,25 @@
 ### [Resources](designing-bots/resources/index.md)
 # Develop
 ## .NET
+### [Implement global handlers](bot-framework-dotnet-howto-global-handlers.md)
+### [Intercept messages](bot-framework-dotnet-howto-middleware.md)
+### [Make audio calls](bot-framework-dotnet-howto-audio-calls.md)
 ### [Manage conversation flow](bot-framework-dotnet-howto-manage-conversation-flow.md)
+### [Send proactive messages](bot-framework-dotnet-howto-proactive-messages.md)
 ## Node.js
+### [Implement global handlers](bot-framework-nodejs-howto-global-handlers.md)
+### [Intercept messages](bot-framework-nodejs-howto-middleware.md)
+### [Make audio calls](bot-framework-nodejs-howto-audio-calls.md)
 ### [Manage conversation flow](bot-framework-nodejs-howto-manage-conversation-flow.md)
+### [Send proactive messages](bot-framework-nodejs-howto-proactive-messages.md)
 ## [Troubleshooting](bot-framework-troubleshooting-guide.md)
 ## [Troubleshooting Authentication](bot-framework-troubleshooting-auth.md)
+
+
+
+
+
+
 # Publish
 ##[Overview](bot-framework-publish-overview.md)
 ##[Register a bot](bot-framework-publish-register.md)
