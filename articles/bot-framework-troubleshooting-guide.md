@@ -4,29 +4,19 @@ description: Bot Framework Troubleshooting Guide and technical FAQ.
 keywords: FAQ, troubleshooting, troubleshoot, error, Bot Framework, problems, LUIS
 author: DeniseMak
 manager: rstand
-
-# the ms.topic should be the section of the IA that the article is in, with the suffix -article. Some examples:
-# get-started article, sdk-reference-article
 ms.topic: develop-article
 
 ms.prod: botframework
-
-# The ms.service should be the Bot Framework technology area covered by the article, e.g., Bot Builder, LUIS, Azure Bot Service
 ms.service: Bot Framework
-
-# Date the article was updated
 ms.date: 02/21/2017
-
-# Alias of the document reviewer. Change to the appropriate person.
 ms.reviewer: rstand
 
-# Include the following line commented out
 #ROBOTS: Index
 ---
 # Bot Framework Troubleshooting Guide
 These Frequently Asked Questions (FAQ) for the Bot Framework can help you with troubleshooting.
 
-## General Questions
+## General questions
 
 ### How can I troubleshoot my Bot?
 
@@ -176,7 +166,7 @@ There are a few options:
 * Use [NonSerialized](https://msdn.microsoft.com/en-us/library/system.nonserializedattribute(v=vs.110).aspx) and [OnDeserialized](https://msdn.microsoft.com/en-us/library/system.runtime.serialization.ondeserializedattribute(v=vs.110).aspx) attributes to restore the dependency on deserialization This is the simplest solution.
 
 
-## State and Data Storage
+## State and data storage
 
 ### Where is conversation state stored?
 
@@ -193,7 +183,7 @@ This `IBotState` REST interface is implemented by two services.
 If you want to store this data within your data centers, you can provide a custom implementation of the state service.  This can be done at least two ways:
 
 * Use the the REST layer to provide a custom IBotState service.
-* Use the builder interfaces in the language (Node.js or C#) layer. 
+* Use the builder interfaces in the language (Node.js or C#) layer.
 
 
 ### What is an ETag?  How does it relate to bot data bag storage?
@@ -273,7 +263,7 @@ Here are some videos about LUIS:
 
 You can access LUIS experts at the [Language Understanding Intelligent Service Forum](https://social.msdn.microsoft.com/forums/azure/en-US/home?forum=LUIS).
 
-## Community Resources
+## Community resources
 
 ### What are some community-authored dialogs?
 
