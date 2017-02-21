@@ -31,7 +31,7 @@ ms.reviewer: rstand
 
 ## Introduction
 
-In this tutorial, we'll walk through an example of managing conversation flow using dialogs and the Bot Builder SDK for .NET. 
+In this article, we'll walk through an example of managing conversation flow using dialogs and the Bot Builder SDK for .NET. 
 
 > [!NOTE]
 > To do: add introductory content -- image of example bot dialog flow (from: media/designing-bots/core/dialogs-screens.png) 
@@ -111,9 +111,9 @@ or some redirection directive such as `context.Forward()` or `context.Call()`.
 A dialog method that does not end with one of these will result in an error 
 (because the framework does not know what action to take the next time the user sends a message).
 
-## Next steps
+## Additional resources
 
-In this tutorial, we walked through an example of managing conversation flow using dialogs and the Bot Builder SDK for .NET. 
+In this article, we walked through an example of managing conversation flow using dialogs and the Bot Builder SDK for .NET. 
 To learn more, see:
 
 > [!NOTE]

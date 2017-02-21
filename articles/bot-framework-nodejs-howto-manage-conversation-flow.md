@@ -31,7 +31,7 @@ ms.reviewer: rstand
 
 ## Introduction
 
-In this tutorial, we'll walk through an example of managing conversation flow using dialogs and the Bot Builder SDK for Node.js. 
+In this article, we'll walk through an example of managing conversation flow using dialogs and the Bot Builder SDK for Node.js. 
 
 > [!NOTE]
 > To do: add introductory content -- image of example bot dialog flow (from: media/designing-bots/core/dialogs-screens.png) 
@@ -89,9 +89,9 @@ Every new message will be subject to processing by that dialog until it either c
 In Node, you can invoke one dialog from another by using `session.beginDialog()`. 
 To close a dialog and remove it from the stack (thereby sending the user back to the prior dialog in the stack), use `session.endDialog()`. 
 
-## Next steps
+## Additional resources
 
-In this tutorial, we walked through an example of managing conversation flow using dialogs and the Bot Builder SDK for Node.js. 
+In this article, we walked through an example of managing conversation flow using dialogs and the Bot Builder SDK for Node.js. 
 To learn more, see:
 
 > [!NOTE]
