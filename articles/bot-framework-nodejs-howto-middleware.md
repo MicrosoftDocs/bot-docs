@@ -4,23 +4,11 @@ description: Learn how to intercept messages that are exchanged between user and
 keywords: Bot Framework, node.js, Bot Builder, SDK, message logging, intercept message, inspect message
 author: kbrandl
 manager: rstand
-
-# the ms.topic should be the section of the IA that the article is in, with the suffix -article. Some examples:
-# get-started article, sdk-reference-article
 ms.topic: develop-nodejs-article
-
 ms.prod: botframework
-
-# The ms.service should be the Bot Framework technology area covered by the article, e.g., Bot Builder, LUIS, Azure Bot Service
 ms.service: Bot Builder
-
-# Date the article was updated
 ms.date: 02/21/2017
-
-# Alias of the document reviewer. Change to the appropriate person.
 ms.reviewer: rstand
-
-# Include the following line commented out
 #ROBOTS: Index
 ---
 

@@ -4,23 +4,11 @@ description: Learn how to design a conversational application (bot) that is embe
 keywords: bot framework, design, bot, scenario, use case, pattern, bot in website
 author: matvelloso
 manager: rstand
-
-# the ms.topic should be the section of the IA that the article is in, with the suffix -article. Some examples:
-# get-started article, sdk-reference-article
 ms.topic: design-patterns-article
-
 ms.prod: botframework
-
-# The ms.service should be the Bot Framework technology area covered by the article, e.g., Bot Builder, LUIS, Azure Bot Service
 ms.service: Bot Builder
-
-# Date the article was updated
 ms.date: 02/16/2017
-
-# Alias of the document reviewer. Change to the appropriate person.
 ms.reviewer: rstand
-
-# Include the following line commented out
 #ROBOTS: Index
 ---
 # Bot embedded within a website 

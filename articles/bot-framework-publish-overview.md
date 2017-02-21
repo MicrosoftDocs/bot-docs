@@ -4,23 +4,11 @@ description: Learn the tasks required to share your both with others (register b
 keywords: Bot Framework, Bot Builder, register bot, deploy bot, configure bot, publish bot, Bot Directory
 author: kbrandl
 manager: rstand
-
-# the ms.topic should be the section of the IA that the article is in, with the suffix -article. Some examples:
-# get-started article, sdk-reference-article
 ms.topic: publish-article
-
 ms.prod: botframework
-
-# The ms.service should be the Bot Framework technology area covered by the article, e.g., Bot Builder, LUIS, Azure Bot Service
 ms.service: Bot Builder
-
-# Date the article was updated
 ms.date: 02/06/2017
-
-# Alias of the document reviewer. Change to the appropriate person.
 ms.reviewer: rstand
-
-# Include the following line commented out
 #ROBOTS: Index
 ---
 
