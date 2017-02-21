@@ -1,6 +1,6 @@
 ---
-title: Bot Framework Design - Bot Capabilities | Microsoft Docs
-description: Understand commonly-used bot capabilities, including message logging, proactive messages, calling and IVR, and global message handlers.
+title: Bot capabilities | Microsoft Docs
+description: Understand bot capabilities including message logging, proactive messages, calling and IVR, and global message handlers.
 keywords: Bot Framework, Bot design, capabilities, message logging, proactive messages, calling and IVR bots, global message handlers
 author: matvelloso
 manager: rstand
@@ -15,7 +15,7 @@ ms.prod: botframework
 ms.service: Bot Builder
 
 # Date the article was updated
-ms.date: 02/16/2017
+ms.date: 02/21/2017
 
 # Alias of the document reviewer. Change to the appropriate person.
 ms.reviewer: rstand
@@ -28,85 +28,18 @@ ms.reviewer: rstand
 
 [intro goes here...]:
 
-- Message logging - Basic concepts around intercepting messages between bots and users
+- Intercept messages - Basic concepts around intercepting messages between bots and users
 - Proactive Messages - When bots need to initiate a message to the user 
 - Global Message Handlers - Preparing bots for when users change topics in the conversation 
 - Calling and IVR bots - Bots that work as IVR solutions
 
-## Message logging
+## Intercept messages
 
-###We don't keep data, but you may
+[!include[Application configuration settings](../includes/snippet-message-logging-intro.md)]
 
-It is a common scenario for bot developers to save conversation logs in some sort of store. This is not done by default in the Microsoft Bot Framework and there is a good reason: In the conversation between the user and the bot, very personal and sensitive details about the user may be included and automatically saving that could have implications, for example around privacy.
-
-Therefore it is up to the bot developer to make the decision whether to store that data and how, and also to communicate this to their users.
-
-This article discusses how we can intercept all messages between bots and users so we can not only save them but also inspect them globally if needed.
-
-###The middleware
-
-
-The Bot Builder SDK offers a concept named *middleware*, which addresses the need of intercepting all messages so we can run tasks such as logging. 
-
-How to set it up in C#:
-
-	//Global.asax.cs code:
-	public class WebApiApplication : System.Web.HttpApplication
-	{
-        protected void Application_Start()
-        {
-            var builder = new ContainerBuilder();
-			//Node: Here is where we hook up our DebugActivityLogger
-            builder.RegisterType<DebugActivityLogger>().AsImplementedInterfaces().InstancePerDependency();
-            builder.Update(Conversation.Container);
-
-            GlobalConfiguration.Configure(WebApiConfig.Register);
-        }
-    }
-
-	//DebugActivityLogger.cs code
-	public class DebugActivityLogger : IActivityLogger
-    {
-        public async Task LogAsync(IActivity activity)
-        {
-            Debug.WriteLine($"From:{activity.From.Id} - To:{activity.Recipient.Id} - Message:{activity.AsMessageActivity()?.Text}");
-        }
-    }
-
-This is all that it is needed: We start by registering with the bot builder our created activity logger class and implementing it from the IActivityLogger. From that point, every message being sent or received to/from the user will trigger the LogAsync method and from there we can use whatever mechanism needed to store/inspect these.
-
-Now in Node:
-
-
-	server.post('/api/messages', connector.listen());
-	var bot = new builder.UniversalBot(connector);
-	// Middleware for logging
-	bot.use({
-    	botbuilder: function (session, next) {
-        	myMiddleware.logIncomingMessage(session, next);
-    	},
-    	send: function (event, next) {
-        	myMiddleware.logOutgoingMessage(event, next);
-    	}
-	})
-
-We start by setting up handlers for incoming (botbuilder) and outgoing (send) handlers, and then implement them:
-
-	module.exports = {
-    	logIncomingMessage: function (session, next) {
-        	console.log(session.message.text);
-        	next();
-    	},
-    	logOutgoingMessage: function (event, next) {
-        	console.log(event.text);
-        	next();
-    	}
-	}
-
-###Show me the code!
-
-You can read [the detailed readme here](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FNode%2Fcapability-middlewareLogging%2FREADME.md&version=GBmaster&_a=contents) and see the [full C# code mentioned above here](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FCSharp%2Fcore-Middleware&version=GBmaster&_a=contents) and [the full Node sample here](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FNode%2Fcapability-middlewareLogging&version=GBmaster&_a=contents).
-
+For a detailed walk through of how to intercept messages, see:
+- [Intercept messages using the Bot Builder SDK for .NET](bot-framework-dotnet-howto-middleware.md)
+- [Intercept messages using the Bot Builder SDK for Node.js](bot-framework-nodejs-howto-middleware.md)
 
 ##<a id="proactiveMsg"></a> Proactive messages
 
