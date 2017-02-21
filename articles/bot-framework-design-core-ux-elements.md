@@ -88,12 +88,10 @@ Additionally, the bot will not require natural language understanding capabiliti
   
 In the case of a *knowledge base* bot or *questions and answers* bot, a user may be **asking general questions**. 
 For example, imagine a bot that can answer questions based on the contents of thousands of documents. 
-The following two technologies are designed to address this specific scenario:
-
-- <a href="https://qnamaker.ai" target="_blank">QnA Maker</a> 
-- <a href="https://azure.microsoft.com/en-us/services/search/" target="_blank">Azure Search</a> 
-
-For more information about designing bots for this scenario, see [Knowledge base bots](designing-bots/patterns/kb.md).
+<a href="https://qnamaker.ai" target="_blank">QnA Maker</a> and 
+<a href="https://azure.microsoft.com/en-us/services/search/" target="_blank">Azure Search</a> are 
+both technologies which are designed specifically for this type of scenario. 
+For more information, see [Knowledge base bots](designing-bots/patterns/kb.md).
 
 > [!TIP]
 > If you are designing a bot that will answer questions based on structured or unstructured data from 
