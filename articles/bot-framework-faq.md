@@ -1,23 +1,13 @@
 ---
-title: Bot Framework frequently asked questions (FAQ) | Microsoft Docs
+title: Bot Framework Frequently Asked Questions | Microsoft Docs
 description: Bot Framework frequently asked questions (FAQ). Includes questions about what's new, channels and framework availability.
 keywords: FAQ, Bot Framework, channels, availability, What's new, LUIS, Cortana, upgrade, Direct Line, Skype.
 author: DeniseMak
 manager: rstand
-
-# the ms.topic should be the section of the IA that the article is in, with the suffix -article. Some examples:
-# get-started article, sdk-reference-article
 ms.topic: resources-article
-
 ms.prod: botframework
-
-# The ms.service should be the Bot Framework technology area covered by the article, e.g., Bot Builder, LUIS, Azure Bot Service
 ms.service: Bot Framework
-
-# Date the article was updated
 ms.date: 02/21/2017
-
-# Alias of the document reviewer. Change to the appropriate person.
 ms.reviewer: rstand
 
 # Include the following line commented out
@@ -37,7 +27,7 @@ We have not provided a general mechanism for developers to add new channels to B
 
 ### If I want to create a bot for Skype, what tools and services should I use?
 
-The Bot Framework is designed to build, connect and publish high quality, responsive, performant and scalable bots for Skype and many other channels. The SDK can be used to create text/sms, image, button and card-capable bots (which constitute the majority of bot interactions today across conversation experiences) as well as bot interactions which are Skype-specific such as rich audio and video experiences. 
+The Bot Framework is designed to build, connect and publish high quality, responsive, performant and scalable bots for Skype and many other channels. The SDK can be used to create text/sms, image, button and card-capable bots (which constitute the majority of bot interactions today across conversation experiences) as well as bot interactions which are Skype-specific such as rich audio and video experiences.
 
 If you already have a great bot and would like to reach the Skype audience, your bot can easily be connected to Skype (or any supported channel) via the Bot Builder for REST API (provided it has an internet-accessible REST endpoint).
 
@@ -99,7 +89,7 @@ In December 2016 we made a change to our security configuration that will become
 
 Each bot is its own service, and developers of these services are required to provide Terms of Service and Privacy Statements per their Developer Code of Conduct.  You can access this information from the bot’s card in the Bot Directory.
 
-In order to provide the I/O service, the Bot Framework transmits your message and message content (including your ID), from the chat service you used to the bot. 
+In order to provide the I/O service, the Bot Framework transmits your message and message content (including your ID), from the chat service you used to the bot.
 
 ### How do you ban or remove bots from the service?
 
@@ -116,7 +106,7 @@ Cortana Intelligence is a fully managed Big Data, Advanced Analytics and Intelli
 It is a comprehensive suite that brings together technologies founded upon years of research and innovation throughout Microsoft (spanning advanced analytics, machine learning, big data storage and processing in the cloud) and:
 
 * Allows you to collect, manage and store all your data that can seamlessly and cost effectively grow over time in a scalable and secure way.
-* Provides easy and actionable analytics powered by the cloud that allow you to predict, prescribe and automate decision making for the most demanding problems. 
+* Provides easy and actionable analytics powered by the cloud that allow you to predict, prescribe and automate decision making for the most demanding problems.
 * Enables intelligent systems through cognitive services and agents that allow you to see, hear, interpret and understand the world around you in more contextual and natural ways.
 
 With Cortana Intelligence, we hope to help our enterprise customers unlock new opportunities, increase their speed of business and be leaders in their industries.
