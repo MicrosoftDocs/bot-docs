@@ -51,9 +51,9 @@
 ### [Resources](designing-bots/resources/index.md)
 # Develop
 ## .NET
+### [Conduct audio calls](bot-framework-dotnet-howto-audio-calls.md)
 ### [Implement global handlers](bot-framework-dotnet-howto-global-handlers.md)
 ### [Intercept messages](bot-framework-dotnet-howto-middleware.md)
-### [Make audio calls](bot-framework-dotnet-howto-audio-calls.md)
 ### [Manage conversation flow](bot-framework-dotnet-howto-manage-conversation-flow.md)
 ### [Send proactive messages](bot-framework-dotnet-howto-proactive-messages.md)
 ## Node.js
