@@ -1,7 +1,7 @@
 ---
 title: Conduct audio calls by using the Bot Builder SDK for .NET | Microsoft Docs
 description: Learn how to conduct audio calls by using the Bot Builder SDK for .NET.
-keywords: Bot Framework, dotnet, Bot Builder, SDK, Skype, IVR, audio call
+keywords: Bot Framework, dotnet, .NET, Bot Builder, SDK, Skype, IVR, audio call
 author: kbrandl
 manager: rstand
 ms.topic: develop-dotnet-article
@@ -16,7 +16,7 @@ ms.reviewer: rstand
 
 ## Introduction
 
-[!include[Application configuration settings](../includes/snippet-audio-call-intro.md)]
+[!include[Introduction to conducting audio calls](../includes/snippet-audio-call-intro.md)]
 In this article, we'll discuss how to enable support for audio calls via Skype 
 by using the Bot Builder SDK for .NET. 
 

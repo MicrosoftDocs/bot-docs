@@ -65,14 +65,13 @@ Although you may be tempted to design each and every dialog within your bot to l
 we do not recommend this approach. 
 
 > [!TIP]
-> <b>Do</b>: Implement a "catch all" handler that will examine user input for the keywords that you specify (ex: "help", "cancel", "start over", etc.) 
+> <b>Do</b>: Implement [global message handlers](bot-framework-design-capabilities.md#global-message-handlers) that will examine user input for the keywords that you specify (ex: "help", "cancel", "start over", etc.) 
 > and respond appropriately. 
 > 
 > <b>Don't</b>: Design each and every dialog to examine user input for a list of keywords. 
 
-By defining the logic once in a "catch all" handler, you're making it accessible to all dialogs, while ensuring that the list of keywords will be easy to maintain in the future. 
-For example, you could add a new keyword to the list at any time by simply updating the "catch all" handler (thereby making it accessible to all dialogs). 
-Using this approach, individual dialogs and prompts can then be made to safely ignore the keywords, if necesssary.
+By defining the logic in <b>global message handlers</b>, you're making it accessible to all dialogs. 
+Using this approach, individual dialogs and prompts can be made to safely ignore the keywords, if necesssary.
 
 ## The "mysterious bot"
 

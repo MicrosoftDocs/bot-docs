@@ -20,7 +20,7 @@ ms.reviewer: rstand
 
 ## Introduction
 
-[!include[Application configuration settings](../includes/snippet-message-logging-intro.md)]
+[!include[Introduction to message logging](../includes/snippet-message-logging-intro.md)]
 In this article, we'll discuss how to intercept messages that are exchanged between user and bot by using the Bot Builder SDK for Node.js. 
 
 ## Intercept messages

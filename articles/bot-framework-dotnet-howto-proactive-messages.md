@@ -1,7 +1,7 @@
 ---
 title: ... with the Bot Builder SDK for .NET | Microsoft Docs
 description: Learn how to ... using the Bot Builder SDK for .NET.
-keywords: Bot Framework, dotnet, Bot Builder, SDK, ...
+keywords: Bot Framework, dotnet, .NET, Bot Builder, SDK, ...
 author: kbrandl
 manager: rstand
 ms.topic: develop-dotnet-article
