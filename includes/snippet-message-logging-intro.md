@@ -9,4 +9,4 @@ inspect the message in some way and take whatever action your code specifies.
 > as doing so could potentially capture private information that bots and users do not wish to share 
 > with outside parties. 
 > If your bot saves conversation details, 
-> it should inform the user of that and describe what will be done with the data.
+> it should communicate that to the user and describe what will be done with the data.

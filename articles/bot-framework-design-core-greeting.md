@@ -36,7 +36,7 @@ Design 2
 
 ![bot](media/designing-bots/core/hello2.png)
 
-Starting the bot with an open-ended question such as "How can I help you?" is usually a bad idea. 
+Starting the bot with an open-ended question such as "How can I help you?" is generally not recommended. 
 If your bot has a hundred different things it can do, chances are users won’t be able to guess the vast majority of them. 
 Your bot didn’t tell them what it can do, so how can they possibly know?
 
