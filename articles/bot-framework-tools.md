@@ -22,5 +22,9 @@ The Bot Framework provides the following tools to help you develop your bot.
 
 The [Bot Framework Emulator](bot-framework-emulator.md) is a desktop application that lets you test and debug your bot.
 
+## Vorlon.js and Bot Framework Inspector
+
+[Vorlon.js](http://vorlonjs.io) is a remote debugging tool for JavaScript code. You can use it to inspect any bot created in Node.js ([read why and how](http://aka.ms/botinspector)). With it, you can easily see your dialog stacks and understand what is happening inside of your bot.
+
 >![NOTE]
 > TODO: Add info on other tools here.
