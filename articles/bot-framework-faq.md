@@ -13,7 +13,7 @@ ms.reviewer: rstand
 # Include the following line commented out
 #ROBOTS: Index
 ---
-# Bot Framework Frequently Asked Questions (FAQ)
+# Bot Framework Frequently Asked Questions
 This article contains answers to some frequently asked questions about the Bot Framework.
 ## Channels
 ### When will you add more conversation experiences to the Bot Framework?
