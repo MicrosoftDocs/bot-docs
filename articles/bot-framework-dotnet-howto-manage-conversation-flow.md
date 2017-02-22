@@ -66,16 +66,14 @@ public class RootDialog : IDialog<object>
             // Then, call ResumeAfterNewOrderDialog.
             await context.Forward(new NewOrderDialog(), this.ResumeAfterNewOrderDialog, message, CancellationToken.None);
         }
-        // User typed something else; for simplicity, ignore this input 
-        // and wait for the next message.
+        // User typed something else; for simplicity, ignore this input and wait for the next message.
         context.Wait(this.MessageReceivedAsync);
     }
 
     private async Task ResumeAfterNewOrderDialog(IDialogContext context, IAwaitable<string> result)
     {
         // Store the value that NewOrderDialog returned. 
-        // (At this point, new order dialog has finished and returned some value to use 
-        // within the root dialog.
+        // (At this point, new order dialog has finished and returned some value to use within the root dialog.)
         var resultFromNewOrder = await result;
 
         await context.PostAsync($"New order dialog just told me this: {resultFromNewOrder}");

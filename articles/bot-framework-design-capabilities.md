@@ -20,7 +20,7 @@ intercept messages that are exchanged between user and bot,
 send proactive messages to the user, 
 implement global message handlers to gracefully accommodate a user's request for "help", 
 and/or conduct a voice call via Skype. 
-This article describes each of these bot capabilities and provides links to related how-to articles that specify implementation details. 
+This article describes each of these bot capabilities and links to related how-to articles that specify implementation details. 
 
 ## Intercept messages
 
