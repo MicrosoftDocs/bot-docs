@@ -54,6 +54,17 @@ Most commonly, your bot will use some combination of **ad hoc proactive messages
 
 [!include[Introduction to proactive messages - part 2](../includes/snippet-proactive-messages-intro-2.md)]
 
+For example, consider a bot that needs to initiate a survey at a given point in time. 
+When that time arrives, the bot stops the existing conversation with the user (if any), and 
+redirects the user to a "SurveyDialog". 
+The SurveyDialog is added to the top of the dialog stack and takes control of the conversation. 
+When the user finishes all required tasks at the SurveyDialog, the SurveyDialog closes, 
+thereby returning control to the previous dialog again, where the user can continue with the prior topic of conversation.
+
+As shown by this example, a dialog-based proactive message is more than just simple notification. 
+In sending the notifiction, the bot changes the topic of the existing conversation. 
+It then must decide whether to resume that conversation later, or to abandon that conversation altogether (by reseting the dialog stack). 
+
 For a detailed walk through of how to send proactive messages, see:
 - [Send proactive messages using the Bot Builder SDK for .NET](~/bot-framework-dotnet-howto-proactive-messages.md)
 - [Send proactive messages using the Bot Builder SDK for Node.js](~/bot-framework-nodejs-howto-proactive-messages.md)

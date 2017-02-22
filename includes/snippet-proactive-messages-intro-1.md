@@ -12,6 +12,6 @@ Minutes (or even days) later when the bot finishes compiling a response to the q
 that information with the user. 
 
 > [!NOTE] 
-> When implementing proactive messages in your bot, adhere to the following best practices:
+> When implementing proactive messages in your bot, consider the following best practices:
 > <ul><li>Avoid sending several proactive messages within a short amount of time. Some channels enforce restrictions on how frequently a bot can send messages to the user, and will disable the bot if it violates those restrictions.</li>
-> <li>Avoid sending proactive messages to users who have not previously interacted with the bot or solicited contact with the bot through other means such as e-mail or SMS.</li></ul>
+> <li>Avoid sending proactive messages to users who have not previously interacted with the bot or solicited contact with the bot through another means such as e-mail or SMS.</li></ul>
