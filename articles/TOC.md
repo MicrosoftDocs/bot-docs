@@ -63,12 +63,6 @@
 ### [Send proactive messages](bot-framework-nodejs-howto-proactive-messages.md)
 ## [Troubleshooting](bot-framework-troubleshooting-guide.md)
 ## [Troubleshooting Authentication](bot-framework-troubleshooting-auth.md)
-
-
-
-
-
-
 # Publish
 ##[Overview](bot-framework-publish-overview.md)
 ##[Register a bot](bot-framework-publish-register.md)
@@ -80,3 +74,4 @@
 ## [FAQ](bot-framework-faq.md)
 ## Downloads
 ## [Tools](bot-framework-tools.md)
+## [Emulator](bot-framework-emulator.md)
