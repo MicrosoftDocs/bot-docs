@@ -16,8 +16,11 @@ ms.reviewer: rstand
 >![NOTE]
 > Content under development.
 
-*Introductory text about tools*
+The Bot Framework provides the following tools to help you develop your bot.
 
-## TOOL NAME
+## Bot Framework Emulator
 
-Info about the tool and a link to where to get it.
+The [Bot Framework Emulator](bot-framework-emulator.md) is a desktop application that lets you test and debug your bot.
+
+>![NOTE]
+> TODO: Add info on other tools here.
