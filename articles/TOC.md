@@ -28,7 +28,6 @@
 ### [Handoff to human](bot-framework-design-patterns-human-handoff.md)
 ### [Bot in app](bot-framework-design-patterns-bot-in-app.md)
 ### [Bot in website](bot-framework-design-patterns-bot-in-website.md)
-## [Resources](bot-framework-design-resources.md)
 ## MV
 ### [Overview](designing-bots/index.md)
 ### Core Principles
