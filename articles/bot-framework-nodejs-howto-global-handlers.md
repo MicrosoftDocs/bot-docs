@@ -33,7 +33,6 @@ if the user's message is "cancel".
 
 ```javascript
 bot.dialog('cancel', (session, args, next) => {
-    // end the conversation to cancel the operation
     session.endConversation('Operation canceled');
 }).triggerAction({
     matches: /^cancel$/
@@ -47,13 +46,13 @@ the dialog stack and the dialog from which the user sent the message "help" will
 
 ```javascript
 bot.dialog('help', (session, args, next) => {
-    // send help message to the user and end this dialog
+    // Send message to the user and end this dialog
     session.endDialog('This is a simple bot that collects a name and age.');
 }).triggerAction({
     matches: /^help$/,
     onSelectAction: (session, args, next) => {
-        // overrides default behavior of replacing the dialog stack
-        // This will add the help dialog to the stack
+        // Add the help dialog to the dialog stack 
+        // (override the default behavior of replacing the stack)
         session.beginDialog(args.action, args);
     }
 });

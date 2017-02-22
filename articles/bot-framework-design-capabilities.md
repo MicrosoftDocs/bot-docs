@@ -14,12 +14,13 @@ ms.reviewer: rstand
 
 # Bot capabilities
 
-[intro goes here...]:
-
-- Intercept messages - Basic concepts around intercepting messages between bots and users
-- Proactive Messages - When bots need to initiate a message to the user 
-- Global Message Handlers - Preparing bots for when users change topics in the conversation 
-- Calling and IVR bots - Bots that work as IVR solutions
+Regardless of the specific use case(s) that your bot is designed to support, 
+it may require the ability to do things such as 
+intercept messages that are exchanged between user and bot, 
+send proactive messages to the user, 
+implement global message handlers to gracefully accommodate a user's request for "help", 
+and/or conduct a voice call via Skype. 
+This article describes each of these bot capabilities and provides links to related how-to articles that specify implementation details. 
 
 ## Intercept messages
 
@@ -29,7 +30,7 @@ For a detailed walk through of how to intercept messages, see:
 - [Intercept messages using the Bot Builder SDK for .NET](bot-framework-dotnet-howto-middleware.md)
 - [Intercept messages using the Bot Builder SDK for Node.js](bot-framework-nodejs-howto-middleware.md)
 
-##<a id="proactiveMsg"></a> Proactive messages
+##<a id="proactiveMsg"></a> Send proactive messages
 
 ###When the bot needs to take the first step
 
@@ -316,11 +317,11 @@ The full examples of what has been discussed above are here:
 - [Node sample of ad-hoc proactive message](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FNode%2Fcore-proactiveMessages%2FsimpleSendMessage&version=GBmaster&_a=contents)
 - [Node sample of dialog-based proactive message](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FNode%2Fcore-proactiveMessages%2FstartNewDialog&version=GBmaster&_a=contents)
 
-##<a id="global-message-handlers"></a> Global message handlers
+##<a id="global-message-handlers"></a> Implement global message handlers
 
 [!include[Introduction to global message handlers](../includes/snippet-global-handlers-intro.md)]
 
-For a detailed walk through of how to implement a global message handler, see:
+For a detailed walk through of how to implement global message handlers, see:
 - [Implement a global message handler using the Bot Builder SDK for .NET](bot-framework-dotnet-howto-global-handlers.md)
 - [Implement a global message handler using the Bot Builder SDK for Node.js](bot-framework-nodejs-howto-global-handlers.md)
 

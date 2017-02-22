@@ -33,7 +33,6 @@ First, configure the handler for incoming messages (`botbuilder`) and for outgoi
 ```javascript
 server.post('/api/messages', connector.listen());
 var bot = new builder.UniversalBot(connector);
-// Middleware for logging
 bot.use({
     botbuilder: function (session, next) {
         myMiddleware.logIncomingMessage(session, next);

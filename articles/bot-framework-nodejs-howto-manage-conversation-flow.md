@@ -42,7 +42,7 @@ var connector = new builder.ChatConnector({
 var bot = new builder.UniversalBot(connector);
 server.post('/api/messages', connector.listen());
 
-// Root dialog
+// root dialog
 bot.dialog('/', ...
 ```
 
@@ -52,19 +52,19 @@ Next, the root dialog invokes the 'New Order' dialog.
 
 ```javascript
 bot.dialog('/', new builder.IntentDialog()
-//Did the user type 'order'?
+// Did the user type 'order'?
 .matchesAny([/order/i], [ 
     function (session) {
-        //Let's invoke then the new order dialog
+        // Invoke the new order dialog
         session.beginDialog('/newOrder');
     },
 
     function (session, result) {
-        //This will get us whatever the new order dialog decided to return to us
+        // Store the value that the new order dialog returns
         var resultFromNewOrder = result.response;
 
-        session.send('New order dialog just told me this: %s', resultFromNewOrder');
-        //We are now done with the root dialog
+        session.send('New order dialog just told me this: %s', resultFromNewOrder);
+        // Close the root dialog
         session.endDialog(); 
     }
 ])
