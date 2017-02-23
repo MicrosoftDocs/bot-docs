@@ -1,5 +1,5 @@
 ---
-title: Bot Framework Design Pattern - Task Automation Bots | Microsoft Docs
+title: Task automation bots | Microsoft Docs
 description: Learn how to design a conversational application (bot) that can automate tasks.
 keywords: bot framework, design, bot, scenario, use case, pattern, task automation
 author: matvelloso
@@ -7,87 +7,128 @@ manager: rstand
 ms.topic: design-patterns-article
 ms.prod: botframework
 ms.service: Bot Builder
-ms.date: 02/16/2017
+ms.date: 02/23/2017
 ms.reviewer: rstand
 #ROBOTS: Index
 ---
 # Task automation bots
 
-##When bots are just simple apps
+## Introduction
 
-We have previously discussed how bots can leverage elements such as rich user controls, text and voice. We also discussed that not all bots may use all these elements together. In fact, a large number of bots may not even have an actual "conversation" with the user at all: These bots resemble the most what typical apps and websites are today. They will likely have some user controls and help the user achieve a few automated tasks but whether that requires natural language - either in text or voice - is not necessarily a requirement.
+A task automation bot enables the user to complete a specific task or set of tasks without any assistance from a human. 
+This type of bot often closely resembles a typical app or website, communicating with the user primarily via rich user controls and text. 
+It may possess natural language understanding capabilites, but that's not necessarily a requirement. 
 
+## Example use case: password-reset
 
-##Hang on: A chatbot that can't have a conversation? Nonsense! 
+To better understand the nature of a task bot, let's consider an example use case: password-reset. 
+The Contoso company receives several help desk calls each day from employees who need to reset their passwords. 
+Contoso wants to automate the simple, repeatable task of resetting a employee's password, so that help desk agents 
+can devote their time to addressing more complex issues. 
 
+John, an experienced developer from Contoso, decides to create a bot to automate the password-reset task. 
+He begins by writing a design specification ("spec") for the bot, just as he would do if he were creating a new app or website. 
 
-Let us look at one theoretical scenario: The Contoso company receives several help desk calls from employees in need to reset their passwords. This is a problem because it overloads their help desk with a very repeatable task that could very easily be automated. In the meanwhile, other employees with more complex IT problems have to wait on the line to get help. Contoso would like to streamline the process of helping these employees who need to reset their password and someone suggested that a bot might be the right way to do that.
+### Navigation model
 
-John, an experienced developer from Contoso, decided to write a "spec" of how this bot should work. As an app developer, John learned in the past that sometimes it is better to write a simple spec of what the user experience is supposed to be before trying to actually prototype the app. It turns out, that is not far from the truth when it comes to building bots as well, so John decided to give that a try and write a "bot spec document" using Microsoft Word.
-
-In fact, you can download a [sample of the document John created here](https://trpp24botsamples.visualstudio.com/50bce30d-3609-423a-9337-b61cfbfea88f/_api/_versioncontrol/itemContent?repositoryId=110b267e-57e9-40d3-ba06-86aa2fae937f&path=%2FSpecs%2FSimple+Task+Automation+-+Design+Spec.docx&version=GBmaster&contentOnly=false&__v=5).
-
-After discussing with the team, John realized he needed to define a navigation model, starting from a "RootDialog" where the users can request to reset their password, which would lead to a "ResetPasswordDialog". At that point, the bot will need to ask two pieces of information, which is the user's phone number and then the user's birth date. Again, this is just a theoretical example and very likely different companies would want apply a variety of more robust identity checks before going ahead resetting employees passwords.
-
-In other words, John realized he needed a navigation map along these lines:
+The spec defines the following navigation model:
 
 ![Dialog Structure](media/designing-bots/patterns/simple-task1.png)
 
-As far as this point, one could argue that no big difference exists whether the solution to this problem will be a bot, an app or a website. 
+As this diagram shows, the user begins at the RootDialog and from there, 
+will be directed to the ResetPasswordDialog when they request a password reset. 
+At the ResetPasswordDialog, the bot will prompt the user for two pieces of information: phone number and birth date. 
 
-John now needs to describe how each of these dialogs will look like. So he goes ahead and starts with the RootDialog:
+> [!NOTE]
+> The bot design described in this article is intended for example purposes only. 
+> In real-world scenarios, a password-reset bot would likely implement a more robust identity verification process.
+
+### Dialogs
+
+Next, the spec describes the appearance and functionality of each dialog. 
+
+#### Root dialog
+
+The root dialog provides the user with two options: 
+
+1. **Change Password** - for scenarios where the user knows their current password and simply wants to change it
+2. **Reset Password** - for scenarios where the user has forgotten or misplaced their password and needs to generate a new one
+
+> [!NOTE]
+> For the sake of simplicity, this article describes only the **reset password** flow.
+
+The spec describes the root dialog as shown in the following screenshot.
 
 ![Dialog Structure](media/designing-bots/patterns/simple-task2.png)
 
-Here John decided that the experience will start with a simple menu offering two options: Change password (assuming the user knows the previous password) or reset password (in which case we need to validate the user in some way other than using the password before proceeding).
+#### ResetPassword dialog
 
-For the sake of simplicity, we are not going to implement the change password flow, but just the reset password flow for now.
+When the user chooses "Reset Password" from the root dialog, the ResetPassword dialog is invoked. 
+The ResetPassword dialog then invokes two other dialogs. 
+First, it invokes the PromptStringRegex dialog to collect the user's phone number. 
+Next, it invokes the PromptDate dialog to collect the user's date of birth. 
 
-Once the user chooses to reset the password, we are now redirected to the ResetPassword dialog:
+> [!NOTE]
+> In this example, John chose to implement the logic for collecting the user's phone number 
+> and date of birth by using two separate dialogs. 
+> Doing so not only simplifies the code required for each dialog, but also increases the odds of these 
+> dialogs being useable by other scenarios in the future. 
+
+The spec describes the ResetPassword dialog as shown in the following screenshot.
 
 ![Dialog Structure](media/designing-bots/patterns/simple-task3.png)
 
-Note that the ResetPasswordDialog invokes two other dialogs, one for collecting the user's phone number and another for collecting the birth date. John decided to separate these tasks in their own dialogs. That doesn't have to be this way, but John imagined that this would not only simplify the code of every dialog but also increase the chances of having some of these dialogs to be reused in future scenarios and even other bots... just like John used to do with apps and websites. Again, little difference here.
+#### PromptStringRegex dialog
 
-Now for the PromptStringRegex dialog, we see that John added some alternate flows. Basically John is trying to protect the bot from the [stubborn bot scenario discussed earlier](bot-framework-design-core-navigation.md#the-stubborn-bot) where the bot is lost at asking the same question in an eternal loop because the user is entering invalid data.
+The PromptStringRegex dialog prompts the user to enter their phone number, and verifies that the phone number 
+that the user provides matches the expected format. 
+It also accounts for the scenario where the user repeatedly provides invalid input. 
+The spec describes the PromptStringRegex dialog as shown in the following screenshot.
 
 ![Dialog Structure](media/designing-bots/patterns/simple-task4.png)
 
-As you can see, John applied the same experience he has with building for web and apps. John didn't introduce any advanced natural language processing to this point and the bot still does what is needed to help out the users.
+### Prototype
 
-
-##But this isn't smart enough :(
-
-
-Let us revisit the topic of [what makes bots great](bot-framework-design-overview.md#design-guidance): 
-
-Whether and how much the bot uses natural language or any other AI capability is less relevant to how useful the bot actually is. In fact, John may very well add natural language on top of the design he already did. The user could simply ask "I can't remember my password" and the bot could still direct the user to the same flows discussed above from there. But the key question John always had in mind is: "Am I solving the problem my users and my company asked me to solve?". User experience is what comes first.
-
-The point of this sample was to show that not all bots may need natural language. They can, in fact, look a lot like apps. We also wanted to demonstrate how a developer can think about designing dialogs in a spec document. 
-
-
-##Why not just building an app instead?
-
-
-That is a great question to ask. Many developers may decide to build apps instead. In fact, many developers end up deciding to embed their bots into their apps, using [Bot Framework's DirectLine API](https://docs.botframework.com/en-us/restapi/directline3/#navtitle) or [Web Chat control](https://github.com/Microsoft/BotFramework-WebChat). This gets them the best of both worlds: A rich app experience and a conversational experience, all in one place.
-
-But there is a cost: Building an app or website, making sure it runs on all clients and platforms, packaging, deploying, hoping users will download/install them... all these things add cost. A bot may be a much simpler way of solving the same problem.
-
-A bot may also exist in places where apps can't reach: John may, in the future, add natural language and speech on top of these dialogs and have his bot answering phone calls. John may even have the bot work via text messages. The company may setup some kiosks in all the building floors and have the bot embedded into that experience to help out users who forgot their passwords. 
-
-Having that as a bot gives John freedom to choose and extend.
-
-So while we ask ourselves whether to build an application or a bot, perhaps in a not so distant future there will be no distinguishable difference between these options: Bots will look more like apps and apps will look more like bots.
-
-
-##Show me the code!
-
-If you want to see how the code for the design above looks like, take a look how John built a first prototype in [Node](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FNode%2Fcapability-SimpleTaskAutomation&version=GBmaster&_a=contents) and in [C#](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FCSharp%2Fcapability-SimpleTaskAutomation&version=GBmaster&_a=contents) 
-
-You can read more about these samples [here](https://trpp24botsamples.visualstudio.com/_git/Code?path=%2FCSharp%2Fcapability-SimpleTaskAutomation%2FREADME.md&version=GBmaster&_a=contents) and see how the bot ended up looking like:
+Finally, the spec provides an example of a user communicating with the bot to successfully complete the password-reset task.
 
 ![Dialog Structure](media/designing-bots/patterns/simple-task5.png)
 
+## Task automation bots and natural language understanding
 
+In the example described above, the password-reset bot has no natural language understanding capabilities. 
+And yet, it still achieves the goal of enabling a user to complete the task at hand in a simple, straight-forward manner. 
+John prioritized user experience and designed the bot to solve the user's problem in the minimum number of steps, 
+and in doing so, did not see a compelling reason to implement natural language understanding capabilities. 
 
+> [!TIP]
+> When designing your bot, avoid the temptation to implement natural language understanding and/or
+> other artificial intelligence (AI) capabilities just for the sake of doing so. 
+> Instead, always consider what we've learned about about [what makes bots great](bot-framework-design-overview.md#design-guidance). 
 
+## Bot, app, or website?
+
+If a task automation bot closely resembles an app or website, why not just build an app or website instead? 
+Depending on your particular scenario, building an app or website (instead of a bot) may be an entirely reasonable choice. 
+You may even choose to embed your bot into an app, by using [Bot Framework's DirectLine API](https://docs.botframework.com/en-us/restapi/directline3/#navtitle) 
+or <a href="https://github.com/Microsoft/BotFramework-WebChat" target="_blank">Web Chat control</a>. 
+Implementing your bot within the context of an app provides the best of both worlds: a rich app experience and a conversational experience, all in one place. 
+
+In many cases, however, building an app or website can be significantly more complex (and costlier) than building a bot. 
+An app or website often needs to support multiple clients and platforms, packaging and deploying 
+can be tedious and time-consuming processes, and the user experience of having to download and install an app is not necessarily ideal. 
+For these reasons, a bot may often provide a much simpler way of solving the problem at hand. 
+
+Additionally, bots provide the freedom to easily expand and extend. 
+For example, John may choose to add natural language and speech capabilities to the password-reset bot so that it can be accessed via audio call, 
+or he may add support for text messages. 
+The company may setup kiosks throughout the building and embed the password-reset bot into that experience. 
+The possibilities are endless. 
+
+## Additional resources
+
+In this article, we explored how a task automation bot can be designed to enable users
+to complete a specific task or set of tasks. To access the sample code for the password-reset bot 
+described in this article, see: 
+
+> [!NOTE]
+> To do: Add links to the C# and Node.js code samples that Mat refers to.
