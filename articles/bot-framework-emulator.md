@@ -28,7 +28,7 @@ The emulator displays messages as they would appear in a web chat UI and lets yo
 
 ## Before you get started
 * Download and run the Bot Framework Emulator. Download packages for Mac, Windows, and Linux are available from the [GitHub releases page](https://github.com/Microsoft/BotFramework-Emulator/releases). The latest Windows installer is available from the [emulator download page](https://emulator.botframework.com) (download starts immediately).
-* Know what to enter for your bot's endpoint into the emulator's address bar. This value differs based on whether your bot is [running on localhost](#localhost), [hosted remotely](#remotehost), or [running as an Azure Bot Service](#azurehost).
+* Know what to enter for your bot's endpoint into the emulator's address bar. This value differs based on whether your bot is [running on localhost](#localhost) or [hosted remotely](#remotehost).
 * If your bot is running with Microsoft Account (MSA) credentials, have those credentials ready too.
 * If your bot is hosted remotely, ensure that [ngrok tunneling software](#ngrok) is installed and configured so that the emulator can communicate with the service.
 
@@ -46,15 +46,10 @@ This scenario is similar to the localhost scenario, but with two additional requ
 * You will need to enter your bot's MSA appId and password.
 * You must run tunneling software [(ngrok)](#ngrok) so that the remotely hosted bot can reply to you.  
 
-
 If you registered your bot with the Bot Framework, you can retrieve endpoint and MSA appId from its registration page. If you do not already know the MSA password of your bot, 
 a new one can be generated from the <a href="https://dev.botframework.com/" target="_blank">registration page</a>.
 
 ![Bot Framework Developer Dashboard](media/emulator/dashboard.png)
-
-## <a id="azurehost"></a> Connect to an Azure Bot Service
-This scenario is similar to the [remotely hosted scenario](#remotehost), in that when you create an [Azure Bot Service][AzureBotServices], 
-a registration for it is created with the Bot Framework. You can find your endpoint on your bot's registration page on the <a href="https://dev.botframework.com/" target="_blank">Bot Framework Dev Portal</a>.
 
 > [!TIP]
 > If you want to [debug your Azure Bot Service Bot][AzureBotDebug] code in your IDE, instead of relying only on the visual inspection and logs provided by the emulator, you can set up [continuous integration][AzureBotContinuousIntegration].
