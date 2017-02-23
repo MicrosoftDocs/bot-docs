@@ -28,9 +28,9 @@ The emulator displays messages as they would appear in a web chat UI and lets yo
 
 ## Before you get started
 * Download and run the Bot Framework Emulator. Download packages for Mac, Windows, and Linux are available from the [GitHub releases page](https://github.com/Microsoft/BotFramework-Emulator/releases). The latest Windows installer is available from the [emulator download page](https://emulator.botframework.com) (download starts immediately).
-* Know what to enter for your bot's endpoint into the emulator's address bar. This value differs based on whether your bot is [running on localhost](#localhost), [hosted remotely](#remotehost), or [running as an Azure Bot service](#azurehost).
+* Know what to enter for your bot's endpoint into the emulator's address bar. This value differs based on whether your bot is [running on localhost](#localhost), [hosted remotely](#remotehost), or [running as an Azure Bot Service](#azurehost).
 * If your bot is running with Microsoft Account (MSA) credentials, have those credentials ready too.
-* If your bot is hosted remotely, ensure that [ngrok tunneling software](#ngrok) is installed and configured so that the emulator can communication with the service.
+* If your bot is hosted remotely, ensure that [ngrok tunneling software](#ngrok) is installed and configured so that the emulator can communicate with the service.
 
 ## <a id="localhost"></a> Connect to a bot running on localhost
 When developing a bot using the BotBuilder SDK, the default endpoint for local debugging is http://localhost:3978/api/messages. This is where the bot will be listening for messages when hosted locally.
@@ -52,7 +52,7 @@ a new one can be generated from the <a href="https://dev.botframework.com/" targ
 
 ![Bot Framework Developer Dashboard](media/emulator/dashboard.png)
 
-## <a id="azurehost"></a> Connect to an Azure Bot service
+## <a id="azurehost"></a> Connect to an Azure Bot Service
 This scenario is similar to the [remotely hosted scenario](#remotehost), in that when you create an [Azure Bot Service][AzureBotServices], 
 a registration for it is created with the Bot Framework. You can find your endpoint on your bot's registration page on the <a href="https://dev.botframework.com/" target="_blank">Bot Framework Dev Portal</a>.
 
