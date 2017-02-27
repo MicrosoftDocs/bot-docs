@@ -15,7 +15,7 @@ ms.reviewer: rstand
 
 ## Introduction
 
-Regardless of much artificial intelligence a bot possesses, there may still be times when it needs to 
+Regardless of how much artificial intelligence a bot possesses, there may still be times when it needs to 
 handoff control of the conversation to a human. 
 In this article, we'll discuss the types of scenarios that typically require human involvement, 
 and explore the process of transitioning control of a conversation from bot to human. 
