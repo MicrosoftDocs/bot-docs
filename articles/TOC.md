@@ -62,6 +62,7 @@
 ### [Send proactive messages](bot-framework-nodejs-howto-proactive-messages.md)
 ### [Send and receive attachments](bot-framework-nodejs-howto-send-receive-attachments.md)
 ### [Send a card with buttons](bot-framework-nodejs-howto-send-card-buttons.md)
+### [Use backchannel mechanism](bot-framework-nodejs-howto-backchannel.md)
 ## [Troubleshooting](bot-framework-troubleshooting-guide.md)
 ## [Troubleshooting Authentication](bot-framework-troubleshooting-auth.md)
 # Publish
