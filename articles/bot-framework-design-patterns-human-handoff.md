@@ -1,7 +1,7 @@
 ---
 title: Handoff from bot to human | Microsoft Docs
 description: Learn how to design a conversational application (bot) that requires handoff from bot to human.
-keywords: bot framework, design, bot, scenario, use case, pattern, bot to human, handoff, transition from bot to human
+keywords: bot framework, design, bot, scenario, use case, pattern, bot to human, handoff, transition to human
 author: matvelloso
 manager: rstand
 ms.topic: design-patterns-article
@@ -15,57 +15,125 @@ ms.reviewer: rstand
 
 ## Introduction
 
-Regardless of how smart a bot is, there may still be times when it needs to 
+Regardless of much artificial intelligence a bot possesses, there may still be times when it needs to 
 handoff control of the conversation to a human. 
-For example, consider a help desk scenario. 
-A bot may be the first responder to inbound requests from users, 
-capable of answering basic questions and resolving simple issues. 
-However, complex issues will require human intervention, at which point the bot would need to 
-transition control of the conversation to a human agent.
+In this article, we'll discuss the types of scenarios that typically require human involvement, 
+and explore the process of transitioning control of a conversation from bot to human. 
 
-In this article, we'll explore the process of transitioning control of a conversation from bot to human.
+## Scenarios that require human involvement
 
-## Example scenarios
+A wide variety of scenarios may require that a bot transition control of the conversation to a human. 
+Let's review a few of those scenarios here: triage, escalation, and supervision. 
 
-Note that how the bot manages this process can vary largely depending on the business scenario:
+### Triage
 
-### Triage scenarios
+A typical help desk call starts with some very basic questions that can easily be asked by a bot. 
+For example, as the first responder to inbound requests from users, a bot can 
+collect the user's name, address, and description of the problem to be solved. 
+Then, it can transition control of the conversation to an agent and provide the information that's already been collected from the user. 
+Using a bot to triage incoming requests in this manner allows agents to devote their time to higher cognitive tasks.
 
-In some cases, every help desk call starts with some very basic questions. We may need the user to let us know their name, address, describe the problems they need solved and so on. Those first questions can be time consuming and they could be totally handled by bots. So the flow starts with the bot asking those basic questions and then automatically handing off the conversation to an agent with the answers already collected, sparing time for agents to focus on higher cognitive tasks. This also benefits the customer who will less likely have to wait too long until an agent can help them.
+### Escalation
 
-### Escalation scenarios
+In the help desk scenario, a bot may be able to not only collect information about the user and the nature 
+of their issue, but may also be capable of answering basic questions and resolving simple issues. 
+For example, a bot could be designed such that it is capable of resetting a user's password. 
+However, if a conversation indicates that a user's issue is complex enough to require human involvement, 
+the bot will need to escalate the issue to a human agent. 
+To implement this type of scenario, a bot must be capable of differentiating between issues it can resolve independently 
+and issues that must be escalated to a human. 
+There are many ways that a bot may determine that it needs to transfer control of the conversation to a human, 
+including the following: 
 
-In such cases, the bot might go beyond just asking some basic questions but also try to solve some common requests. From every call from a customer, maybe a percentage of them are highly repeated scenarios that are quite simple to automate, so we don't need to waste valuable time from agents and instead let them dedicate their time on the more complex problems. Here the key challenge is knowing when the bot can't solve a problem anymore so it can escalate the issue to an agent. There are many ways this can be done: 
+- **User-driven (menus)**: 
+Perhaps the simplest way for a bot to handle this dilemma is to present the user with a menu of options, 
+including an item for each of the tasks that a bot is capable of handling independently, and 
+a final item labeled "Chat with an agent." This type of implementation requires no advanced machine learning or 
+natural language understanding -- the bot simply transfers control of the conversation to a human agent if/when 
+the user selects the "Chat with an agent" option. 
 
-- **Menus**: Again, let us not underestimate the power of menus. A simple way of solving this problem is simply offering the user a menu of options of things the bot can do and the last option would be "chat with an agent". No advanced machine learning or natural language required
+- **Scenario-driven**: 
+The bot may decide whether or not to transfer control of the conversation to a human agent based upon whether 
+or not it determines that it is capable of handling the scenario at hand. 
+That is, the bot collects some information about the user's request, and then 
+queries its internal list of capabilities to determine if it is capable of addressing that request. 
+If the bot determines that it is capable of addressing the request, it does so independently. 
+However, if the bot determines that the request is beyond the scope of issues it can resolve, 
+it transfers control of the conversation to a human agent.
 
-- **Scenario-based**: The customer may start by asking what they want and the bot will check that request against an internal list of capabilities. If this is a problem it knows how to solve it will go ahead and run its pre-defined routine for addressing the user's problem. But if the question doesn't seem to fit into any of the bot's predefined capabilities, it can then automatically escalate to the agent.
+- **Natural language**: 
+The bot may may decide if/when to transfer control of the conversation to a human agent by using 
+natural language understanding and sentiment analysis. 
+That is, the bot analyzes the content of the user's messages 
+by using the <a href="https://www.microsoft.com/cognitive-services/en-us/text-analytics-api" target="blank">Text Analytics API</a> 
+to infer sentiment 
+and/or by using the <a href="https://www.luis.ai" target="_blank">LUIS API</a> 
+in an attempt to identify if/when the user is frustrated or wants to speak with a human agent. 
 
-- **Natural-language-based**: This is probably the most difficult of the scenarios: In this case the bot will monitor the content of what the user says at any time during the conversation and either try to infer sentiment by using the [Text Analytics API](https://www.microsoft.com/cognitive-services/en-us/text-analytics-api) or by using natural language via the [LUIS API](https://www.luis.ai) in order to "guess" the user is frustrated and/or really desires to chat with another person. Note that developers tend to be attracted to this third option as it is a more fascinating, "human" way of dealing with this problem but it is important to keep in mind that it is also less certain: If we give the user a button called "chat with an agent" and they click at it, there's no question: The user wants, for sure, chat with the agent. When we try to detect sentiment in a sentence, it becomes a matter of probability and not certainty. We now need to constantly monitor these conversations to make sure that the bot is indeed detecting when the user wanted to speak with an agent. Also, betting that the user needs to type a negative sentence in order for us to escalate means we are going to wait for the user to become frustrated first and then act later. Probably not the best plan...
+> [!TIP]
+> When deciding which of these methods your bot will use to 
+> identify if/when a user's issue should be escalated to a human, 
+> do not choose natural language understanding simply because it seems like the most fascinating or 
+> most "human" way to handle the situation. 
+> Not only is natural language understanding the most difficult of these three methods to implement, 
+> it also provides the least amount of certainty that the bot is handling the situation in the way that the user truly intends 
+> (i.e., the bot may incorrectly interpret a user's intent). 
+> For these reasons, presenting a user with a menu of valid choices often provides the best user experience 
+> (e.g., if a user clicks the "Chat with an agent" button, the bot can respond correctly 100% of the time). 
 
-### Supervised scenarios
+### Supervision
 
-In some cases we may want the agent to "monitor" a conversation between the bot and the user and only act when necessary. Imagine the bot is trying to diagnose computer problems by asking a few questions from the user, and then it runs a machine learning model that will guess that the root cause is a driver issue. Before the bot goes ahead and tells the user what to do, the bot can secretly tell the agent that this is what is the likely cause and prompt for the agent to authorize it to proceed. The agent now only has to click a button. We are sparing the agent from all the typing and all the related questions but still in control of the final decision and procedure. This is a great way of leaving agents focused on what they are unique for - the high cognitive tasks - while the bot does all the manual work.
+Sometimes a human agent may not actually need to take control of the conversation; 
+instead, the agent will simply monitor a conversation between the bot and user and will only act when necessary. 
+For example, consider a help desk scenario wherein a bot is communicating with a user to diagnose computer problems 
+and uses a machine learning model to determine the most likely cause of the issue. 
+Before advising the user to take a specific course of action, the bot can (privately) 
+inform the agent of the situation (i.e., issue, diagnosis, and proposed remedy) and request 
+authorization to proceed. The agent can approve the proposed course of action by simply clicking a button. 
+This type of implementation allows the bot to do a majority of the work, while 
+still enabling the agent to supervise and control the final decision. 
 
 ## Transitioning control of the conversation 
 
-One the decision process above has been established and whatever that process ends up being, at some point the bot will start the hand off. At that point, the user will be put in a "waiting" state. The reason is that we don't know yet whether an agent is available. The user will be informed they are waiting for an agent. New messages will be ignored and answer with that default message of "waiting in queue".
+When a bot decides to transfer control of a conversation to a human, 
+it can inform the user that he/she is being transfered to an agent 
+and put the user in a 'waiting' state until it can confirm that an agent is available. 
 
-Of course, the bot may, if needed, want to remove the user from waiting state. Perhaps the user could say "never mind" and that would trigger the bot to get back to the original conversation. This is entirely up to the bot logic to decide.
+You may choose to design your bot to automatically answer all incoming user messages with a default response such as "waiting in queue" 
+as long as the user is in a 'waiting' state. 
+Alternatively, you might choose to design your bot such that it will remove the user from the 'waiting' state 
+in certain situations. For example, perhaps the user could send the message "never mind" or "cancel" to be removed from the 
+queue and returned to the conversation with the bot. 
 
-An agent then connects to the bot (and never directly to the customer). This is an important principle: The bot will always relay the message from the user to the agent and back. In other words, the agent is never actually connected with the user directly. The reason is that we want the bot to always be in control. In the moment the user started chatting directly with the agent, the bot would be removed form the equation which adds far more complexity to the scenario. 
+When designing your bot, you'll specify the logic that determines how agents will be assigned to (waiting) users. 
+For example, the bot may implement a simple queue system (first in, first out), 
+it might assign agents based upon geography, language, or some other factor, 
+or it may present some type of UI to the agent that they can use to select a user to assist. 
 
-How the agent is assigned to a waiting (or non waiting) user is entirely up to the bot's logic: It may be a queue system, it may be a UI that is given to the agent to make the decision, could be based on geography, language or any other aspects decided by the bot developer. The point is that whatever logic applied will, at some point, decide to make the connection happen and then a message routing is established. 
+When an agent becomes available, he/she connects to the bot. 
+
+> [!IMPORTANT]
+> Even after an agent is engaged, the bot remains the (behind-the-scenes) facilitator of the conversation. 
+> The user and agent never communicate directly with each other -- they communicate with each other by routing messages through the bot. 
 
 ## Routing messages between user and agent
 
-This is the hear of the hand off framework used in this scenario: The message router will receive messages from the user, then send them to the agent. It will also receive messages from the agent and send them to the user. Both user and agent are in fact chatting with the bot and not with each other. The bot will simply be working as a router of what it received from each side, to the other.
+After the agent connects to the bot, the bot begins to route messages between user and agent. 
+Although it may appear to the user and the agent that they are chatting directly with each other, 
+they are, in fact, exchanging messages via the bot. 
+The bot receives messages from the user and sends those messages to the agent. 
+Likewise, it receives messages from the agent and sends those messages to the user. 
 
-In more advanced scenarios, the bot can take more roles than just being a router: It may make decisions on what to say next and just ask for the agent's confirmation to proceed.
+> [!NOTE]
+> In more advanced scenarios, the bot can assume responsibility beyond that of merely routing messages 
+> back and forth between user and agent. 
+> For example, the bot may decide what to say next in a conversation and and simply ask the agent 
+> for confirmation to proceed.
 
 ## Additional resources
 
-In this article, we explored the process of transitioning control of a conversation from bot to human. 
+In this article, we discussed the types of scenarios that typically require human involvement, 
+and explored the process of transitioning control of a conversation from bot to human. 
 To see sample code for bots that implement this handoff, review the following resources: 
 
 > [!NOTE]
