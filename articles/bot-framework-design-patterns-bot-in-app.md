@@ -17,7 +17,7 @@ ms.reviewer: rstand
 
 Although bots most commonly exist outside of apps, they can also be embedded within an app. 
 For example, you may embed a [knowledge bot](bot-framework-design-patterns-knowledge-base.md) within an app 
-to quickly find information that might otherwise be challenging for the app to attain on its own. 
+to enable users to quickly find information that might otherwise be challenging to locate within complex app structures. 
 Or, you might embed a bot within a help desk app to act as the first responder to incoming user requests; 
 it could independently resolve simple issues and [handoff](bot-framework-design-patterns-human-handoff.md) more complex issues to a human agent. 
 
