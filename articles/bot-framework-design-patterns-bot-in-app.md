@@ -1,53 +1,93 @@
 ---
-title: Bot Framework Design Pattern - Bot Embedded within App | Microsoft Docs
+title: Bot embedded within an app | Microsoft Docs
 description: Learn how to design a conversational application (bot) that is embedded within an app.
-keywords: bot framework, design, bot, scenario, use case, pattern, bot in app
+keywords: bot framework, design, bot, scenario, use case, pattern, bot in app, bot embedded in app
 author: matvelloso
 manager: rstand
 ms.topic: design-patterns-article
 ms.prod: botframework
 ms.service: Bot Builder
-ms.date: 02/16/2017
+ms.date: 02/27/2017
 ms.reviewer: rstand
 #ROBOTS: Index
 ---
 # Bot embedded within an app 
 
-##When bots live inside apps 
+## Introduction 
 
+Although bots most commonly exist outside of apps, they can also be embedded within an app. 
+For example, you may embed a [knowledge bot](bot-framework-design-patterns-knowledge-base.md) within an app 
+to quickly find information that might otherwise be challenging for the app to attain on its own. 
+Or, you might embed a bot within a help desk app to act as the first responder to incoming user requests; 
+it could independently resolve simple issues and [handoff](bot-framework-design-patterns-human-handoff.md) more complex issues to a human agent. 
 
-Similar to what discussed in [bots in Websites article](bot-framework-design-patterns-bot-in-website.md), bots can also exist inside apps. It is important to clarify that kind of apps discussed can vary significantly. Examples:
+In this article, we'll discuss various means of integrating bots with apps 
+and explore the process of creating a cross-platform mobile app that runs a bot. 
 
-- Native mobile apps: Apps created in native code which then communicate with the bot framework by using the [DirectLine API](https://docs.botframework.com/en-us/restapi/directline3/#navtitle), either via REST or websockets
-- Web based mobile apps: Many mobile apps are built using web language and frameworks such as [Cordova](https://cordova.apache.org/). In this case, the app is mostly built as a mobile website and may even use the same components discussed in the [bots in Websites article](bot-framework-design-patterns-bot-in-website.md), but now wrapped into a native app's shell.
-- IoT apps: These may vary largely, from devices without screens (basically just using audio/speech capabilities), appliances, robots, etc. Like with native apps, these devices will be using the [DirectLine API](https://docs.botframework.com/en-us/restapi/directline3/#navtitle) in order to communicate with the Microsoft Bot Framework. They may as well make use of other [Microsoft Cognitive Services](https://www.microsoft.com/cognitive-services/) - such as Vision and Speech - as needed to fulfill the scenarios accordingly.
-- Other apps and games: Apps and games built on a diversity of platforms can also leverage these APIs. From business desktop based apps to [Unity 3D](https://unity3d.com/) based games, they can still leverage the same [DirectLine API](https://docs.botframework.com/en-us/restapi/directline3/#navtitle) discussed
+## Integrating bot with app
 
+The means of integrating a bot with an app may vary depending on the type of app. 
 
-##A cross platform mobile app that runs a bot
+- **Native mobile app**: 
+An app that is created in native code can communicate with the Bot Framework by using 
+the [DirectLine API](https://docs.botframework.com/en-us/restapi/directline3/#navtitle), 
+either via REST or websockets.
 
-[Xamarin](https://www.xamarin.com/) is the best tool for building cross platform mobile applications. So in this sample we take a very simple web view component and use it to host our [Open Source Web Control](https://github.com/Microsoft/BotFramework-WebChat). Then we enable the web chat as a channel in the bot registration:
+- **Web-based mobile app**: 
+A mobile app that is built by using web language and frameworks such as <a href="https://cordova.apache.org/" target="_blank">Cordova</a> 
+may communicate with the Bot Framework by using the same components that a 
+[bot embedded within a website](bot-framework-design-patterns-bot-in-website.md) would use, 
+just encapsulated within a native app's shell.
 
-![Back-channel](media/designing-bots/patterns/webchat-channel.png)
+- **IoT app**: 
+An IoT app can communicate with the Bot Framework by using 
+the [DirectLine API](https://docs.botframework.com/en-us/restapi/directline3/#navtitle). 
+In some scenarios, it may also use <a href="https://www.microsoft.com/cognitive-services/" target="_blank">Microsoft Cognitive Services</a> 
+to enable capabilities such as vision and speech.
 
-We then use the registered web chat URL into the web view control in the Xamarin app:
+- **Other types of apps and games**: 
+Other types of apps and games can communicate with the Bot Framework by using 
+the [DirectLine API](https://docs.botframework.com/en-us/restapi/directline3/#navtitle). 
 
-	public class WebPage : ContentPage
+## Creating a cross-platform mobile app that runs a bot
+
+Let's explore the process of creating a mobile app that runs a bot, 
+by using <a href="https://www.xamarin.com/" target="_blank">Xamarin</a>, a popular tool 
+for building cross-platform mobile applications. 
+
+First, you'll create a simple web view component and use it to host a 
+<a href="https://github.com/Microsoft/BotFramework-WebChat" target="_blank">web chat control</a>. 
+Then, using the Bot Framework Portal, [configure the bot](bot-framework-publish-configure.md) to 
+enable the Web Chat channel. 
+
+![Bot configuration settings](media/designing-bots/patterns/webchat-channel.png)
+
+Next, specify the registered web chat URL as the source for the web view control in the Xamarin app:
+
+```cs
+public class WebPage : ContentPage
+{
+	public WebPage()
 	{
-    	public WebPage()
-    	{
-    		var browser = new WebView();
-        	browser.Source = "https://webchat.botframework.com/embed/<YOUR SECRET KEY HERE>";
-        	this.Content = browser;
-    	}
+		var browser = new WebView();
+		browser.Source = "https://webchat.botframework.com/embed/<YOUR SECRET KEY HERE>";
+		this.Content = browser;
 	}
+}
+```
 
-The result is a true cross platform mobile application with complete control over look and feel, rendering the embedded web view with the web chat control:
+By configuring things in this manner, you've created a cross-platform mobile application 
+that renders the embedded web view with the web chat control:
 
 ![Back-channel](media/designing-bots/patterns/xamarin-apps.png)
 
-More details:
-- Here is the [full code example in C#](https://trpp24botsamples.visualstudio.com/_git/Code?fullScreen=true&path=%2FCSharp%2Fcapability-BotInApps&version=GBmaster&_a=contents) and a [more detailed step by step guidance](https://trpp24botsamples.visualstudio.com/_git/Code?fullScreen=true&path=%2FCSharp%2Fcapability-BotInApps%2FREADME.md&version=GBmaster&_a=contents) on how to set up the entire application
+## Additional resources
 
-TODO: Unity, backchannel pattern
+In this article, we discussed various means of integrating bots with apps and 
+explored the process of creating a cross-platform mobile app that runs a bot.
+To see the complete sample code (and step-by-step implementation guidance) for the example discussed above, 
+review the following resources: 
+
+> [!NOTE]
+> To do: Add links to the code sample (and readme) that Mat refers to.
  
