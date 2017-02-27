@@ -109,7 +109,7 @@ and in doing so, did not see a compelling reason to implement natural language u
 
 If a task automation bot closely resembles an app or website, why not just build an app or website instead? 
 Depending on your particular scenario, building an app or website (instead of a bot) may be an entirely reasonable choice. 
-You may even choose to embed your bot into an app, by using [Bot Framework's DirectLine API](https://docs.botframework.com/en-us/restapi/directline3/#navtitle) 
+You may even choose to embed your bot into an app, by using [Bot Framework's Direct Line API](https://docs.botframework.com/en-us/restapi/DirectLine3/#navtitle) 
 or <a href="https://github.com/Microsoft/BotFramework-WebChat" target="_blank">Web Chat control</a>. 
 Implementing your bot within the context of an app provides the best of both worlds: a rich app experience and a conversational experience, all in one place. 
 

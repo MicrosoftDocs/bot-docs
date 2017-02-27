@@ -28,7 +28,7 @@ These Frequently Asked Questions (FAQ) for the Bot Framework can help you with t
 
 3. Finally, try your Bot on Skype. This will help you validate the end-to-end user experience.
 
-4. Consider adding channels with additional authentication requirements. Once channels like Skype work, you can try additional channels like DirectLine or Web chat.
+4. Consider adding channels with additional authentication requirements. Once channels like Skype work, you can try additional channels like Direct Line or Web chat.
 
 ### My bot is stuck!  How can I reset the conversation?
 

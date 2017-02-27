@@ -29,8 +29,8 @@ Blog from the bot framework team with  news on latest feature updates
 [Bot Framework Technical FAQ](https://docs.botframework.com/en-us/technical-faq/)
 A very useful  technical FAQ maintained by the bot team.
 
-[Bot Framework DirectLine API](https://github.com/Microsoft/BotFramework-DirectLineJS)
-The DirectLine API enables developers to build custom clients for bots
+[Bot Framework Direct Line API](https://github.com/Microsoft/BotFramework-DirectLineJS)
+The Direct Line API enables developers to build custom clients for bots
 
 [Bot Framework Open Source Web Chat control](https://github.com/Microsoft/BotFramework-WebChat)
 The open source web chat control can be embedded in websites and apps 

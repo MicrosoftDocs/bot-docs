@@ -30,7 +30,7 @@ The means of integrating a bot with an app may vary depending on the type of app
 
 - **Native mobile app**: 
 An app that is created in native code can communicate with the Bot Framework by using 
-the [DirectLine API](https://docs.botframework.com/en-us/restapi/directline3/#navtitle), 
+the [Direct Line API](https://docs.botframework.com/en-us/restapi/DirectLine3/#navtitle), 
 either via REST or websockets.
 
 - **Web-based mobile app**: 
@@ -41,13 +41,13 @@ just encapsulated within a native app's shell.
 
 - **IoT app**: 
 An IoT app can communicate with the Bot Framework by using 
-the [DirectLine API](https://docs.botframework.com/en-us/restapi/directline3/#navtitle). 
+the [Direct Line API](https://docs.botframework.com/en-us/restapi/DirectLine3/#navtitle). 
 In some scenarios, it may also use <a href="https://www.microsoft.com/cognitive-services/" target="_blank">Microsoft Cognitive Services</a> 
 to enable capabilities such as vision and speech.
 
 - **Other types of apps and games**: 
 Other types of apps and games can communicate with the Bot Framework by using 
-the [DirectLine API](https://docs.botframework.com/en-us/restapi/directline3/#navtitle). 
+the [Direct Line API](https://docs.botframework.com/en-us/restapi/DirectLine3/#navtitle). 
 
 ## Creating a cross-platform mobile app that runs a bot
 
