@@ -39,12 +39,12 @@ public class GlobalMessageHandlersBotModule : Module
         base.Load(builder);
 
         builder
-            .Register(c => new SettingsScorable(c.Resolve<IDialogStack>()))
+            .Register(c => new SettingsScorable(c.Resolve<IDialogTask>()))
             .As<IScorable<IActivity, double>>()
             .InstancePerLifetimeScope();
 
         builder
-            .Register(c => new CancelScorable(c.Resolve<IDialogStack>()))
+            .Register(c => new CancelScorable(c.Resolve<IDialogTask>()))
             .As<IScorable<IActivity, double>>()
             .InstancePerLifetimeScope();
     }
@@ -75,7 +75,7 @@ resets the dialog stack.
 ```cs
 protected override async Task PostAsync(IActivity item, string state, CancellationToken token)
 {
-    this.stack.Reset();
+    this.task.Reset();
 }
 ```
 
@@ -91,8 +91,8 @@ protected override async Task PostAsync(IActivity item, string state, Cancellati
     {
         var settingsDialog = new SettingsDialog();
         var interruption = settingsDialog.Void<object, IMessageActivity>();
-        this.stack.Call(interruption, null);
-        await this.stack.PollAsync(token);
+        this.task.Call(interruption, null);
+        await this.task.PollAsync(token);
     }
 }
 ```
