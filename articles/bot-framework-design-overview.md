@@ -82,5 +82,5 @@ Chances are, the same answer can be applied to bot design.
 
 ## Next steps
 
-Now that you're familiar with some basic principles of bot design, learn more about UI and UX, bot capabilities, 
-common patterns, and resources in the remainder of this section.
+Now that you're familiar with some basic principles of bot design, learn more about designing the user experience, bot capabilities, 
+and common patterns in the remainder of this section.
