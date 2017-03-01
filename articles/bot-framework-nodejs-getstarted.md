@@ -45,8 +45,7 @@ For this walkthrough, you'll create a bot that simply echos back any user input.
 In the folder that you created earlier for your bot, create a new file named **app.js**. 
 Then, add the following code to the file: 
 
-> [!NOTE]
-> To do: add code sample
+[!include[echobot code sample Node.js](../includes/snippet-code-node-echobot.md)]
 
 ## Test your bot
 
