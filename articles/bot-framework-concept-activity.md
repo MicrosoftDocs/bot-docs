@@ -1,18 +1,17 @@
 ---
-title: Activities in the Bot Framework | Microsoft Docs
-description: Overview of the activity concept in the Bot Framework
-services: Bot Framework
-documentationcenter: BotFramework-Docs
+title: Bot Framework activities | Microsoft Docs
+description: Learn about activities in the Bot Framework.
+keywords: Bot Framework, activity, message, core concept, bot
 author: DeniseMak
 manager: rstand
-
-ms.service: Bot Framework
-ms.topic: article
-ms.workload: Cognitive Services
+ms.topic: key-concepts-article
+ms.prod: botframework
+ms.service: Bot Builder
 ms.date: 02/14/2017
-ms.author: v-demak@microsoft.com
-
+ms.reviewer: rstand
+#ROBOTS: Index
 ---
+
 # Activities
 > [!NOTE]
 > Content coming soon. 

@@ -8,11 +8,11 @@
 ## [Use Node.js](bot-framework-nodejs-getstarted.md)
 ## [Use Azure Bot Service](bot-framework-azure-getstarted.md)
 # Key Concepts
-## Overview
-## [Dialog](bot-framework-dialog-concept.md)
-## [Activity](bot-framework-activity-concept.md)
-## [Channel](bot-framework-channel-concept.md)
-## [Connector](bot-framework-connector-concept.md)
+## [Overview](bot-framework-concepts-overview.md)
+## [Dialog](bot-framework-concept-dialog.md)
+## [Activity](bot-framework-concept-activity.md)
+## [Channel](bot-framework-concept-channel.md)
+## [Connector](bot-framework-concept-connector.md)
 # Design
 ## [Overview](bot-framework-design-overview.md)
 ## User experience

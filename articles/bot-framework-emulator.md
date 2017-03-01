@@ -137,5 +137,5 @@ should remain on GitHub instead of here -->
 [NodeGetStarted]: bot-framework-nodejs-getstarted.md
 [CSGetStarted]: bot-framework-dotnet-getstarted.md
 [BotFrameworkPublishOverview]: bot-framework-publish-overview.md
-[ActivityConcept]: bot-framework-activity-concept.md
+[ActivityConcept]: bot-framework-concept-activity.md
 

@@ -1,18 +1,17 @@
 ---
-title: Bot Framework Dialogs | Microsoft Docs
-description: Overview of the dialog concept for the Bot Framework
-services: Bot Framework
-documentationcenter: BotFramework-Docs
+title: Bot Framework dialogs | Microsoft Docs
+description: Learn about dialogs in the Bot Framework.
+keywords: Bot Framework, dialog, core concept, bot
 author: DeniseMak
 manager: rstand
-
-ms.service: Bot Framework
-ms.topic: article
-ms.workload: Cognitive Services
+ms.topic: key-concepts-article
+ms.prod: botframework
+ms.service: Bot Builder
 ms.date: 02/14/2017
-ms.author: v-demak@microsoft.com
-
+ms.reviewer: rstand
+#ROBOTS: Index
 ---
+
 # Dialogs
 > [!NOTE]
 > This content will be updated. 
