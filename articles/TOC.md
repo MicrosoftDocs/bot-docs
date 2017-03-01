@@ -56,7 +56,8 @@
 # Reference
 # Resources
 ## [FAQ](bot-framework-faq.md)
-## [Guide for IDs](bot-framework-guide-id.md)
-## Downloads
+## [Downloads](bot-framework-resources-downloads.md)
 ## [Tools](bot-framework-tools.md)
 ## [Emulator](bot-framework-emulator.md)
+## [Guide for IDs](bot-framework-resources-id-guide.md)
+## [Support](bot-framework-resources-support.md)
