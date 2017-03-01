@@ -1,7 +1,7 @@
 ---
 title: Create a bot with the Bot Builder SDK for Node.js | Microsoft Docs
 description: Learn how to create a bot with the Bot Builder SDK for Node.js.
-keywords: Bot Framework, Bot Builder, SDK, Node.js
+keywords: Bot Framework, Bot Builder, SDK, Node.js, get started
 author: kbrandl
 manager: rstand
 ms.topic: get-started-article
@@ -48,9 +48,8 @@ Then, add the following code to the file:
 > To do: add code sample
 
 ## Test your bot
-Next, let's test your bot by using the [Bot Framework Emulator](bot-framework-emulator.md) to see it in action. 
-The emulator is a desktop application that lets you test and debug your bot on localhost or running remotely through a tunnel. 
-You'll need to install the the emulator by following the instructions [here](bot-framework-emulator.md).
+
+[!include[Get started test your bot](../includes/snippet-getstarted-test-bot.md)]
 
 After installing the emulator, start your bot in a console window:
 
@@ -59,20 +58,21 @@ node app.js
 ```
 
 At this point, your bot is running locally. Next, start the emulator and then connect your bot by completing the following tasks in the emulator:
-1. Select http://localhost:3978/api/messages from the address bar. (This is the default endpoint that your bot listens to when hosted locally.)
+1. Type http://localhost:3978/api/messages into the address bar. (This is the default endpoint that your bot listens to when hosted locally.)
 2. Click **Connect**. (You won't need to specify **Microsoft App ID** and **Microsoft App Password** -- you'll get this information later if/when you register your bot with the framework.)
 
 Now that your bot is running locally and is connected to the emulator, test your bot by typing a few messages in the emulator. 
 You should see that the bot responds to each message you send by echoing back your message prefixed with the text *You said*. 
 Congratulations -- you've successfully created a bot using the Bot Builder SDK for Node.js! 
 
+## Publish your bot
+
+[!include[Get started publish your bot](../includes/snippet-getstarted-next-steps.md)]
+
 ## Next steps
 
-[!include[Get started next steps after testing](../includes/snippet-getstarted-next-steps.md)]
-
-## Dive deeper
 In this tutorial, you created a simple bot using the Bot Builder SDK for Node.js. 
-To continue getting started and learn more about building great bots, see: 
+To learn more about building great bots by using the Bot Framework, see: 
 
 > [!NOTE]
 > Content coming soon. 
