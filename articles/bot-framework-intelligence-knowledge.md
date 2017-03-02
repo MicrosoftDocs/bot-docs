@@ -35,11 +35,14 @@ The [Academic Knowledge API](https://www.microsoft.com/cognitive-services/en-us/
 ### QnA Maker
 The [QnA Maker](https://qnamaker.ai){:target="_blank"} is a free, easy-to-use, REST API- and web-based service that trains AI to respond to users’ questions in a more natural, conversational way. With optimized machine learning logic and the ability to integrate industry-leading language processing, QnA Maker distills semi-structured data like question and answer pairs into distinct, helpful answers.
 
+> [!TIP]
+> You can find detailed documentation about each API, including developer guides and API references by navigating to the Cognitive Services [documentation site](https://www.microsoft.com/cognitive-services/en-us/documentation){:target="_blank"} and selecting the API you are interested in from the left-hand navigation.
+
 ## Knowledge API use cases for bots
 The Knowledge APIs can arm your bots with your own knowledge base and user history, allowing them to efficiently navigate your product catalogs to provide recommendations.
 
 > [!IMPORTANT]
-> Before you get started, you need to obtain your own subscription key from the Microsoft Cognitive Services site. You can find detailed documentation about each API, including developer guides and API references by navigating to the Cognitive Services [documentation site](https://www.microsoft.com/cognitive-services/en-us/documentation){:target="_blank"} and selecting the API you are interested in from the navigation bar on the left side of the screen.
+> Before you get started, you need to obtain your own subscription key from the Microsoft Cognitive Services site.
 
 ## QnA Maker Example
 This is a very simple Bot which uses simple heuristics to determine whether the incoming user message has a question intent, and if that's the case simply forwards the message to the QnA Maker service.

@@ -4,7 +4,7 @@ description: Learn how to embed the Bot Framework chat control in your web page.
 keywords: chat, control, embed, web, page
 author: RobStand
 manager: rstand
-ms.topic: embed-chat-control-article
+ms.topic: howto-embed-chat-control-article
 
 ms.prod: botframework
 ms.service: Bot Builder
