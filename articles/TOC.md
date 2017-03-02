@@ -56,6 +56,14 @@
 ##[Deploy a bot](bot-framework-publish-deploy.md)
 ##[Configure a bot](bot-framework-publish-configure.md)
 ##[Publish a bot to the directory](bot-framework-publish-add-to-directory.md)
+# Intelligence
+## [Overview](bot-framework-intelligence-getstarted.md)
+## [Language](bot-framework-intelligence-language.md)
+## Vision
+## Speech
+## [Knowledge](bot-framework-intelligence-knowledge.md)
+## Search
+## Location Control
 # Reference
 # Resources
 ## [FAQ](bot-framework-faq.md)
