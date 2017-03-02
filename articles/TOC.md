@@ -45,6 +45,8 @@
 ### [Indicate typing](bot-framework-nodejs-howto-send-typing-indicator.md)
 ### [Save user data](bot-framework-nodejs-howto-save-user-data.md)
 ### [Use backchannel mechanism](bot-framework-nodejs-howto-backchannel.md)
+## How To
+### [Embed the Chat Control](bot-framework-develop-howto-embed-chat-control.md)
 ## [Troubleshooting](bot-framework-troubleshooting-guide.md)
 ## [Troubleshooting Authentication](bot-framework-troubleshooting-auth.md)
 # Publish
