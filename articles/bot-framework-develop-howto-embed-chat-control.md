@@ -63,7 +63,7 @@ Example request:
 
 Note, the above secret is a sample and will not work. Use your own secret.
 
-{% highlight html %}
+```html
 
 <iframe src="https://webchat.botframework.com/embed/YOUR_BOT_ID?t=YOUR_TOKEN_HERE"></iframe>
 
@@ -81,7 +81,7 @@ To embed your bot in your web site by include your secret on your web page:
 1. Copy the iframe embed code from the channel. See Step 1, above.
 2. Replace YOUR_SECRET_HERE with the embed secret from the same page.
 
-{% highlight html %}
+```html
 
 <iframe src="https://webchat.botframework.com/embed/YOUR_BOT_ID?s=YOUR_SECRET_HERE"></iframe>
 
@@ -91,7 +91,7 @@ To embed your bot in your web site by include your secret on your web page:
 
 You may change the chat control's size by adding height and width to the style element.
 
-{% highlight html %}
+```html
 
 <iframe style="height:480px; width:402px" src="... SEE ABOVE ..."></iframe>
 
