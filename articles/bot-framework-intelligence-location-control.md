@@ -14,6 +14,9 @@ ms.reviewer: rstand
 # Include the following line commented out
 #ROBOTS: Index
 ---
+> [!IMPORTANT]
+> This content is still under development.
+
 # Add location control capabilities to your bot
 The Bing location control for Microsoft Bot Framework makes the process of collecting and validating the user's desired location in a conversation easy and reliable. The control is available for C# and Node.js and works consistently across all channels supported by Bot Framework.
 
@@ -49,14 +52,15 @@ using Microsoft.Bot.Builder.Location;
 
 In Node.js, install the BotBuilder-Location module using npm and load it.
 
+```
 npm install --save botbuilder-location    
+```
 
 {% highlight JavaScript %}
 var locationDialog = require('botbuilder-location');
 ```
 
 ### Calling the location control with default parameters
-{:.no_toc}
 
 The example initiates the location control with default parameters, which returns a custom prompt message asking the user to provide an address.
 
@@ -75,7 +79,7 @@ var locationDialog = new LocationDialog(apiKey, message.ChannelId, prompt);
 context.Call(locationDialog, (dialogContext, result) => {...});
 ```
 
-```javscript
+```javascript
 locationDialog.getLocation(session,
  { prompt: "Where should I ship your order? Type or say an address." });
 ```
@@ -245,6 +249,7 @@ bot.dialog("/", [
 
 > [!WARNING]
 > TODO: Fix these images
+
 ## Examples
 The examples show different location selection scenarios supported by the Bing location control.
 
