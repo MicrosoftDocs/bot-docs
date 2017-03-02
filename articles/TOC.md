@@ -63,7 +63,7 @@
 ## [Speech](bot-framework-intelligence-speech.md)
 ## [Knowledge](bot-framework-intelligence-knowledge.md)
 ## [Search](bot-framework-intelligence-search.md)
-## Location Control
+## [Location Control](bot-framework-intelligence-location-control.md)
 # Reference
 # Resources
 ## [FAQ](bot-framework-faq.md)

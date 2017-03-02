@@ -14,10 +14,10 @@ ms.reviewer: rstand
 # Include the following line commented out
 #ROBOTS: Index
 ---
-# Use the Cognitive Services Location Control API
+# Add location control capabilities to your bot
 The Bing location control for Microsoft Bot Framework makes the process of collecting and validating the user's desired location in a conversation easy and reliable. The control is available for C# and Node.js and works consistently across all channels supported by Bot Framework.
 
-![Basic Scenario](/en-us/images/locationcontrol/skype_multiaddress_1.png)
+<!-- ![Basic Scenario](/en-us/images/locationcontrol/skype_multiaddress_1.png)-->
 
 ## Use Case and Features
 Bots often need the user to input a location to complete a task. For example, a Taxi bot requires the user's pickup and destination address before requesting a ride. Similarly, a Pizza bot must know the user's delivery address to submit the order, and so on. Normally, bot developers need to use a combination of location or place APIs, and have their bots engage in a multi-turn dialog with users to get their desired location and subsequently validate it. The development steps are usually complicated and error-prone.  
@@ -32,25 +32,24 @@ The Bing location control makes this process easy by abstracting away the tediou
 
 You can find screenshots of the scenarios supported by the location control in the [Examples](#examples) section.
 
-## Getting Started
-As a prerequisite to use the location control, you need to obtain a Bing Maps API subscription key. You can sign up to get a free key with up to 10,000 transactions per month in [Azure Portal](https://azure.microsoft.com/en-us/marketplace/partners/bingmaps/mapapis/).
+> [!IMPORTANT]
+>As a prerequisite to use the location control, you need to obtain a Bing Maps API subscription key. You can sign up to get a free key with up to 10,000 transactions per month in [Azure Portal](https://azure.microsoft.com/en-us/marketplace/partners/bingmaps/mapapis/).
 
 The following sections describe the coding steps to add the location control to your bot. You can find the full developer guides and sample bots for [C#](https://github.com/Microsoft/BotBuilder-Location/tree/master/CSharp) and [Node.js](https://github.com/Microsoft/BotBuilder-Location/tree/master/Node) in the [BotBuilder-Location](https://github.com/Microsoft/BotBuilder-Location/tree/master/) github repository.
 
 ## Code Highlights
 
 ### Start using the location control
-{:.no_toc}
 
 In C#, import the Microsoft.Bot.Builder.Location package from NuGet and add the following namespace in your code.
 
-{% highlight csharp %}
+```cs
 using Microsoft.Bot.Builder.Location;
 ```
 
 In Node.js, install the BotBuilder-Location module using npm and load it.
 
-    npm install --save botbuilder-location    
+npm install --save botbuilder-location    
 
 {% highlight JavaScript %}
 var locationDialog = require('botbuilder-location');
@@ -69,26 +68,20 @@ The example initiates the location control with default parameters, which return
 
 <div id="tab11">
 
-{% highlight csharp %}
+```cs
 var apiKey = WebConfigurationManager.AppSettings["BingMapsApiKey"];
 var prompt = "Where should I ship your order? Type or say an address.";
 var locationDialog = new LocationDialog(apiKey, message.ChannelId, prompt);
 context.Call(locationDialog, (dialogContext, result) => {...});
 ```
 
-</div>
-<div id="tab12">
-
-{% highlight JavaScript %}
+```javscript
 locationDialog.getLocation(session,
  { prompt: "Where should I ship your order? Type or say an address." });
 ```
 
-</div>  
-</div>
 
 ### Using FB Messenger's location picker GUI dialog
-{:.no_toc}
 
 FB Messenger supports a location picker GUI dialog to let the user select an address. If you prefer to use FB Messenger's native dialog,  pass the `LocationOptions.UseNativeControl` option in the location control's constructor.  
 
@@ -100,7 +93,7 @@ FB Messenger supports a location picker GUI dialog to let the user select an add
 
 <div id="tab21">
 
-{% highlight csharp %}
+```cs
 var apiKey = WebConfigurationManager.AppSettings["BingMapsApiKey"];
 var prompt = "Where should I ship your order? Type or say an address.";
 var locationDialog = new LocationDialog(apiKey, message.ChannelId, prompt, LocationOptions.UseNativeControl);
@@ -110,16 +103,13 @@ context.Call(locationDialog, (dialogContext, result) => {...});
 </div>
 <div id="tab22">
 
-{% highlight JavaScript %}
+```javascript
 var options = {
     prompt: "Where should I ship your order? Type or say an address.",
     useNativeControl: true
 };
 locationDialog.getLocation(session, options);
 ```
-
-</div>  
-</div>
 
 FB Messenger by default returns only the lat/long coordinates for any address selected via the location picker GUI dialog. You can additionally use the `LocationOptions.ReverseGeocode` option to have Bing reverse geocode the returned coordinates and automatically fill in the remaining address fields.
 
@@ -131,7 +121,7 @@ FB Messenger by default returns only the lat/long coordinates for any address se
 
 <div id="tab31">
 
-{% highlight csharp %}
+```cs
 var apiKey = WebConfigurationManager.AppSettings["BingMapsApiKey"];
 var prompt = "Where should I ship your order? Type or say an address.";
 var locationDialog = new LocationDialog(apiKey, message.ChannelId, prompt, LocationOptions.UseNativeControl | LocationOptions.ReverseGeocode);
@@ -141,7 +131,7 @@ context.Call(locationDialog, (dialogContext, result) => {...});
 </div>
 <div id="tab32">
 
-{% highlight JavaScript %}
+```javascript
 var options = {
     prompt: "Where should I ship your order? Type or say an address.",
     useNativeControl: true,
@@ -150,13 +140,11 @@ var options = {
 locationDialog.getLocation(session, options);
 ```
 
-</div>  
-</div>
 
-**Note**: Reverse geocoding is an inherently imprecise operation. For that reason, when the reverse geocode option is selected, the location control will collect only the `PostalAddress.Locality`, `PostalAddress.Region`, `PostalAddress.Country` and `PostalAddress.PostalCode` fields and ask the user to provide the desired street address manually.
+> [!WARNING]
+> Reverse geocoding is an inherently imprecise operation. For that reason, when the reverse geocode option is selected, the location control will collect only the `PostalAddress.Locality`, `PostalAddress.Region`, `PostalAddress.Country` and `PostalAddress.PostalCode` fields and ask the user to provide the desired street address manually.
 
 ### Specifying required fields
-{:.no_toc}
 
 You can specify required location fields that need to be collected by the control. If the user does not provide values for one or more required fields, the control will prompt him to fill them in. You can specify required fields by passing them in the location control's constructor using the `LocationRequiredFields` enumeration. The example specifies the street address and postal (zip) code as required.
 
@@ -168,7 +156,7 @@ You can specify required location fields that need to be collected by the contro
 
 <div id="tab41">
 
-{% highlight csharp %}
+```cs
 var apiKey = WebConfigurationManager.AppSettings["BingMapsApiKey"];
 var prompt = "Where should I ship your order? Type or say an address.";
 var locationDialog = new LocationDialog(apiKey, message.ChannelId, prompt, LocationOptions.None, LocationRequiredFields.StreetAddress | LocationRequiredFields.PostalCode);
@@ -178,7 +166,7 @@ context.Call(locationDialog, (dialogContext, result) => {...});
 </div>
 <div id="tab42">
 
-{% highlight JavaScript %}
+```javascript
 var options = {
     prompt: "Where should I ship your order? Type or say an address.",
     requiredFields:
@@ -192,7 +180,6 @@ locationDialog.getLocation(session, options);
 </div>
 
 ### Handling returned location
-{:.no_toc}
 
 The following example shows how you can leverage the location object returned by the location control in your bot code.
 
@@ -204,7 +191,7 @@ The following example shows how you can leverage the location object returned by
 
 <div id="tab51">
 
-{% highlight csharp %}
+```cs
 var apiKey = WebConfigurationManager.AppSettings["BingMapsApiKey"];
 var prompt = "Where should I ship your order? Type or say an address.";
 var locationDialog = new LocationDialog(apiKey, message.ChannelId, prompt, LocationOptions.None, LocationRequiredFields.StreetAddress | LocationRequiredFields.PostalCode);
@@ -228,7 +215,7 @@ context.Call(locationDialog, (context, result) => {
 </div>
 <div id="tab52">
 
-{% highlight JavaScript %}
+```javascript
 locationDialog.create(bot);
 
 bot.dialog("/", [
@@ -255,28 +242,24 @@ bot.dialog("/", [
 ]);
 ```
 
-</div>  
-</div>
 
+> [!WARNING]
+> TODO: Fix these images
 ## Examples
 The examples show different location selection scenarios supported by the Bing location control.
 
 **Address selection with single result returned**
-{:.no_toc}
 
 ![Single Address](/en-us/images/locationcontrol/skype_singleaddress_2.png)
 
 **Address selection with multiple results returned**
-{:.no_toc}
 
 ![Multiple Addresses](/en-us/images/locationcontrol/skype_multiaddress_1.png)
 
 **Address selection with required fields filling**
-{:.no_toc}
 
 ![Required Fields](/en-us/images/locationcontrol/skype_requiredaddress_1.png)
 
 **Address selection using FB Messenger's location picker GUI dialog**
-{:.no_toc}
 
 ![Messenger Location Dialog](/en-us/images/locationcontrol/messenger_locationdialog_1.png)
