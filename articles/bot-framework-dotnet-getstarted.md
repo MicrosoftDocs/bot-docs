@@ -18,7 +18,7 @@ ms.reviewer: rstand
 > * [Azure Bot Service](bot-framework-azure-getstarted.md)
 >
 
-The Bot Builder SDK for .NET is a powerful 
+The <a href="https://github.com/Microsoft/BotBuilder" target="_blank">Bot Builder SDK for .NET</a> is a powerful 
 framework for constructing bots that can handle both freeform interactions and more guided ones where the 
 possibilities are explicitly shown to the user. 
 It is easy to use and leverages C# to provide a familiar way for .NET developers to write bots.
