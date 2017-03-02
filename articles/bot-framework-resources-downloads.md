@@ -23,7 +23,7 @@ Download tools and resources for developing bots with the Bot Framework.
 
 ## Bot Builder SDK
 
-### C\#
+### C# #
 
 * [Bot Builder SDK - Source code and samples](https://github.com/Microsoft/BotBuilder/tree/master/CSharp)
 * Bot Builder NuGet Package
