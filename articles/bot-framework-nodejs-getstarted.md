@@ -18,7 +18,7 @@ ms.reviewer: rstand
 > * [Azure Bot Service](bot-framework-azure-getstarted.md)
 >
 
-The [Bot Builder SDK for Node.js](https://github.com/Microsoft/BotBuilder) is a powerful framework for constructing bots that can handle both freeform interactions and more guided ones where the possibilities are explicitly shown to the user. 
+The <a href="https://github.com/Microsoft/BotBuilder" target="_blank">Bot Builder SDK for Node.js</a> is a powerful framework for constructing bots that can handle both freeform interactions and more guided ones where the possibilities are explicitly shown to the user. 
 It is easy to use and models frameworks like Express & Restify to provide a familiar way for JavaScript developers to write bots.
 
 In this tutorial, we'll walk through the process of building a bot by using the Bot Builder SDK for Node.js 
