@@ -44,6 +44,7 @@
 ### [Send a card with buttons](bot-framework-nodejs-howto-send-card-buttons.md)
 ### [Indicate typing](bot-framework-nodejs-howto-send-typing-indicator.md)
 ### [Save user data](bot-framework-nodejs-howto-save-user-data.md)
+### [Greet users](bot-framework-nodejs-howto-handle-conversation-events.md)
 ### [Use backchannel mechanism](bot-framework-nodejs-howto-backchannel.md)
 ## How To
 ### [Embed the Chat Control](bot-framework-develop-howto-embed-chat-control.md)
