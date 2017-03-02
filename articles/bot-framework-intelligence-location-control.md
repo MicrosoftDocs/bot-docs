@@ -33,9 +33,9 @@ The Bing location control makes this process easy by abstracting away the tediou
 You can find screenshots of the scenarios supported by the location control in the [Examples](#examples) section.
 
 ## Getting Started
-As a prerequisite to use the location control, you need to obtain a Bing Maps API subscription key. You can sign up to get a free key with up to 10,000 transactions per month in [Azure Portal](https://azure.microsoft.com/en-us/marketplace/partners/bingmaps/mapapis/){:target="_blank"}.
+As a prerequisite to use the location control, you need to obtain a Bing Maps API subscription key. You can sign up to get a free key with up to 10,000 transactions per month in [Azure Portal](https://azure.microsoft.com/en-us/marketplace/partners/bingmaps/mapapis/).
 
-The following sections describe the coding steps to add the location control to your bot. You can find the full developer guides and sample bots for [C#](https://github.com/Microsoft/BotBuilder-Location/tree/master/CSharp){:target="_blank"} and [Node.js](https://github.com/Microsoft/BotBuilder-Location/tree/master/Node){:target="_blank"} in the [BotBuilder-Location](https://github.com/Microsoft/BotBuilder-Location/tree/master/){:target="_blank"} github repository.
+The following sections describe the coding steps to add the location control to your bot. You can find the full developer guides and sample bots for [C#](https://github.com/Microsoft/BotBuilder-Location/tree/master/CSharp) and [Node.js](https://github.com/Microsoft/BotBuilder-Location/tree/master/Node) in the [BotBuilder-Location](https://github.com/Microsoft/BotBuilder-Location/tree/master/) github repository.
 
 ## Code Highlights
 
@@ -46,7 +46,7 @@ In C#, import the Microsoft.Bot.Builder.Location package from NuGet and add the 
 
 {% highlight csharp %}
 using Microsoft.Bot.Builder.Location;
-{% endhighlight %}
+```
 
 In Node.js, install the BotBuilder-Location module using npm and load it.
 
@@ -54,7 +54,7 @@ In Node.js, install the BotBuilder-Location module using npm and load it.
 
 {% highlight JavaScript %}
 var locationDialog = require('botbuilder-location');
-{% endhighlight %}
+```
 
 ### Calling the location control with default parameters
 {:.no_toc}
@@ -74,7 +74,7 @@ var apiKey = WebConfigurationManager.AppSettings["BingMapsApiKey"];
 var prompt = "Where should I ship your order? Type or say an address.";
 var locationDialog = new LocationDialog(apiKey, message.ChannelId, prompt);
 context.Call(locationDialog, (dialogContext, result) => {...});
-{% endhighlight %}
+```
 
 </div>
 <div id="tab12">
@@ -82,7 +82,7 @@ context.Call(locationDialog, (dialogContext, result) => {...});
 {% highlight JavaScript %}
 locationDialog.getLocation(session,
  { prompt: "Where should I ship your order? Type or say an address." });
-{% endhighlight %}
+```
 
 </div>  
 </div>
@@ -105,7 +105,7 @@ var apiKey = WebConfigurationManager.AppSettings["BingMapsApiKey"];
 var prompt = "Where should I ship your order? Type or say an address.";
 var locationDialog = new LocationDialog(apiKey, message.ChannelId, prompt, LocationOptions.UseNativeControl);
 context.Call(locationDialog, (dialogContext, result) => {...});
-{% endhighlight %}
+```
 
 </div>
 <div id="tab22">
@@ -116,7 +116,7 @@ var options = {
     useNativeControl: true
 };
 locationDialog.getLocation(session, options);
-{% endhighlight %}
+```
 
 </div>  
 </div>
@@ -136,7 +136,7 @@ var apiKey = WebConfigurationManager.AppSettings["BingMapsApiKey"];
 var prompt = "Where should I ship your order? Type or say an address.";
 var locationDialog = new LocationDialog(apiKey, message.ChannelId, prompt, LocationOptions.UseNativeControl | LocationOptions.ReverseGeocode);
 context.Call(locationDialog, (dialogContext, result) => {...});
-{% endhighlight %}
+```
 
 </div>
 <div id="tab32">
@@ -148,7 +148,7 @@ var options = {
     reverseGeocode: true
 };
 locationDialog.getLocation(session, options);
-{% endhighlight %}
+```
 
 </div>  
 </div>
@@ -173,7 +173,7 @@ var apiKey = WebConfigurationManager.AppSettings["BingMapsApiKey"];
 var prompt = "Where should I ship your order? Type or say an address.";
 var locationDialog = new LocationDialog(apiKey, message.ChannelId, prompt, LocationOptions.None, LocationRequiredFields.StreetAddress | LocationRequiredFields.PostalCode);
 context.Call(locationDialog, (dialogContext, result) => {...});
-{% endhighlight %}
+```
 
 </div>
 <div id="tab42">
@@ -186,7 +186,7 @@ var options = {
         locationDialog.LocationRequiredFields.postalCode
 }
 locationDialog.getLocation(session, options);
-{% endhighlight %}
+```
 
 </div>  
 </div>
@@ -223,7 +223,7 @@ context.Call(locationDialog, (context, result) => {
         await context.PostAsync("OK, cancelled");
     }
 }
-{% endhighlight %}
+```
 
 </div>
 <div id="tab52">
@@ -253,7 +253,7 @@ bot.dialog("/", [
         }
     }
 ]);
-{% endhighlight %}
+```
 
 </div>  
 </div>

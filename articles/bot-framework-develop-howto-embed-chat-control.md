@@ -67,7 +67,7 @@ Note, the above secret is a sample and will not work. Use your own secret.
 
 <iframe src="https://webchat.botframework.com/embed/YOUR_BOT_ID?t=YOUR_TOKEN_HERE"></iframe>
 
-{% endhighlight %}
+```
 
 ### Option 2 - Embed the chat widget in your website using secret
 
@@ -85,7 +85,7 @@ To embed your bot in your web site by include your secret on your web page:
 
 <iframe src="https://webchat.botframework.com/embed/YOUR_BOT_ID?s=YOUR_SECRET_HERE"></iframe>
 
-{% endhighlight %}
+```
 
 ## Step 3 - Style the chat control
 
@@ -95,6 +95,6 @@ You may change the chat control's size by adding height and width to the style e
 
 <iframe style="height:480px; width:402px" src="... SEE ABOVE ..."></iframe>
 
-{% endhighlight %}
+```
 
 ![Chat widget Client](/en-us/images/chatwidget/chatwidget-client.png)

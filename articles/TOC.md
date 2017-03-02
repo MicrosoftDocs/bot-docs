@@ -59,10 +59,10 @@
 # Intelligence
 ## [Overview](bot-framework-intelligence-getstarted.md)
 ## [Language](bot-framework-intelligence-language.md)
-## Vision
-## Speech
+## [Vision](bot-framework-intelligence-vision.md)
+## [Speech](bot-framework-intelligence-speech.md)
 ## [Knowledge](bot-framework-intelligence-knowledge.md)
-## Search
+## [Search](bot-framework-intelligence-search.md)
 ## Location Control
 # Reference
 # Resources

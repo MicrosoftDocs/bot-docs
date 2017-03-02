@@ -18,7 +18,7 @@ ms.reviewer: rstand
 Download tools and resources for developing bots with the Bot Framework.
 
 ## Tools
-* [Bot Framework Emulator (Mac and Windows)](https://emulator.botframework.com/){:target="_blank"}
+* [Bot Framework Emulator (Mac and Windows)](https://emulator.botframework.com/)
 * [Visual Studio Template - C#](http://aka.ms/bf-bc-vstemplate)
 
 ## Bot Builder SDK

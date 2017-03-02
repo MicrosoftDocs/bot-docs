@@ -21,26 +21,26 @@ The Cognitive Services Language APIs enable you to build smart bots that are abl
 There are 5 language APIs available in Cognitive Services to understand and process natural language
 
 ### Language Understanding Intelligent Service
-The [Language Understanding Intelligent Service (LUIS)](https://www.microsoft.com/cognitive-services/en-us/language-understanding-intelligent-service-luis){:target="_blank"} is able to process natural language using pre-built or custom-trained language models.
+The [Language Understanding Intelligent Service (LUIS)](https://www.microsoft.com/cognitive-services/en-us/language-understanding-intelligent-service-luis) is able to process natural language using pre-built or custom-trained language models.
 
 ### Text Analytics API
-The [Text Analytics API](https://www.microsoft.com/cognitive-services/en-us/text-analytics-api){:target="_blank"}  detects sentiment, key phrases, topics, and language from text.
+The [Text Analytics API](https://www.microsoft.com/cognitive-services/en-us/text-analytics-api)  detects sentiment, key phrases, topics, and language from text.
 
 ### Bing Spell Check API
-The [Bing Spell Check API](https://www.microsoft.com/cognitive-services/en-us/bing-spell-check-api){:target="_blank"}  provides powerful spell check capabilities, and is able to recognize the difference between names, brand names, and slang.
+The [Bing Spell Check API](https://www.microsoft.com/cognitive-services/en-us/bing-spell-check-api)  provides powerful spell check capabilities, and is able to recognize the difference between names, brand names, and slang.
 
 ### Linguistic Analysis API
-The [Linguistic Analysis API](https://www.microsoft.com/cognitive-services/en-us/linguistic-analysis-api){:target="_blank"} uses advanced linguistic analysis algorithms to process text, and perform operations such as breaking down the structure of the text, or performing part-of-speech tagging and parsing.
+The [Linguistic Analysis API](https://www.microsoft.com/cognitive-services/en-us/linguistic-analysis-api) uses advanced linguistic analysis algorithms to process text, and perform operations such as breaking down the structure of the text, or performing part-of-speech tagging and parsing.
 
 ### Web Language Model API
-The [Web Language Model (WebLM) API](https://www.microsoft.com/cognitive-services/en-us/web-language-model-api){:target="_blank"} can be used to automate a variety of natural language processing tasks, such as word frequency or next-word prediction, using advanced language modeling algorithms.
+The [Web Language Model (WebLM) API](https://www.microsoft.com/cognitive-services/en-us/web-language-model-api) can be used to automate a variety of natural language processing tasks, such as word frequency or next-word prediction, using advanced language modeling algorithms.
 
 ## LUIS example
 For our first example, we will build a weather bot that is able to understand and respond to various hypothetical commands, such as "What's the weather like in Paris", "What's the temperature next week in Seattle" and so on. The bot is using LUIS to identify the intent of the user, and reply with the appropriate prompt.
 
-To get started with LUIS, go to [LUIS.ai](http://www.luis.ai){:target="_blank"} and build your own custom language model. Our [Getting Started](https://www.microsoft.com/cognitive-services/en-us/luis-api/documentation/getstartedwithluis-basics){:target="_blank"} guide describes in details how to build your first model through the LUIS user interface, or programatically via the LUIS APIs. We encourage you to watch our [basic](https://www.youtube.com/watch?v=jWeLajon9M8&index=4&list=PLD7HFcN7LXRdHkFBFu4stPPeWJcQ0VFLx){:target="_blank"} video tutorial.
+To get started with LUIS, go to [LUIS.ai](http://www.luis.ai) and build your own custom language model. Our [Getting Started](https://www.microsoft.com/cognitive-services/en-us/luis-api/documentation/getstartedwithluis-basics) guide describes in details how to build your first model through the LUIS user interface, or programatically via the LUIS APIs. We encourage you to watch our [basic](https://www.youtube.com/watch?v=jWeLajon9M8&index=4&list=PLD7HFcN7LXRdHkFBFu4stPPeWJcQ0VFLx) video tutorial.
 
-To create the bot, we will use the [Bot Application .NET template](http://docs.botframework.com/connector/getstarted/#getting-started-in-net){:target="_blank"} as our starting point. Note that you need to build the language model for the weather bot in LUIS first. To accomplish this, follow the steps in this [video](https://www.youtube.com/watch?v=39L0Gv2EcSk&index=5&list=PLD7HFcN7LXRdHkFBFu4stPPeWJcQ0VFLx){:target="_blank"}.
+To create the bot, we will use the [Bot Application .NET template](http://docs.botframework.com/connector/getstarted/#getting-started-in-net) as our starting point. Note that you need to build the language model for the weather bot in LUIS first. To accomplish this, follow the steps in this [video](https://www.youtube.com/watch?v=39L0Gv2EcSk&index=5&list=PLD7HFcN7LXRdHkFBFu4stPPeWJcQ0VFLx).
 
 After you set up your language model, create your project with the Bot Application template, and add the following class to handle the integration with your LUIS language model.
 
@@ -150,9 +150,9 @@ Finally, on the same file, replace the code in the Post task with the one below.
 ```
 
 ## Text Analytics example
-For our next example, we will use the Text Analytics API to determine the sentiment behind a user's message, i.e. whether it is positive or negative. The Text Analytics API returns a sentiment score between 0 and 1, where 0 is very negative and 1 is very positive. For example, if the user types "That was really helpful", the API will classify it with a highly positive score, whereas if he types "That didn't help at all", the API will return a negative score. The example that follows shows how the bot's response can be customized according to the sentiment score calculated by the Text Analytics API. For more information about the Text Analytics API, see the [C# and Python sample code](https://text-analytics-demo.azurewebsites.net/Home/SampleCode){:target="_blank"} for the service, or our [Getting Started guide](http://go.microsoft.com/fwlink/?LinkID=760860){:target="_blank"}.
+For our next example, we will use the Text Analytics API to determine the sentiment behind a user's message, i.e. whether it is positive or negative. The Text Analytics API returns a sentiment score between 0 and 1, where 0 is very negative and 1 is very positive. For example, if the user types "That was really helpful", the API will classify it with a highly positive score, whereas if he types "That didn't help at all", the API will return a negative score. The example that follows shows how the bot's response can be customized according to the sentiment score calculated by the Text Analytics API. For more information about the Text Analytics API, see the [C# and Python sample code](https://text-analytics-demo.azurewebsites.net/Home/SampleCode) for the service, or our [Getting Started guide](http://go.microsoft.com/fwlink/?LinkID=760860).
 
-For this example, we will use the [Bot Application .NET template](http://docs.botframework.com/connector/getstarted/#getting-started-in-net){:target="_blank"} as our starting point. Note that the *Newtonsoft.JSON* package is also required, which can be obtained via NuGet. After you create your project with the Bot Application template, you will create some classes to hold the input and output from the API. Create a new C# class file (*TextAnalyticsCall.cs*) with the following code. The class will serve as our model for the JSON input/output of the Text Analytics API.    
+For this example, we will use the [Bot Application .NET template](http://docs.botframework.com/connector/getstarted/#getting-started-in-net) as our starting point. Note that the *Newtonsoft.JSON* package is also required, which can be obtained via NuGet. After you create your project with the Bot Application template, you will create some classes to hold the input and output from the API. Create a new C# class file (*TextAnalyticsCall.cs*) with the following code. The class will serve as our model for the JSON input/output of the Text Analytics API.    
 
 ```cs
 using System.Collections.Generic;
