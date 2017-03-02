@@ -35,69 +35,42 @@ The Bot Framework provides the conversationUpdate event for notifying your bot w
 Your bot can greet the user or perform other first-run activities when a user joins the conversation. 
 
 <!-- TODO: Reference code in snippet repository -->
-
-```javascript
-
-
-bot.on('conversationUpdate', function (message) {
-    if (message.membersAdded && message.membersAdded.length > 0) {
-        // Say hello
-        var isGroup = message.address.conversation.isGroup;
-        var txt = isGroup ? "Hello everyone!" : "Hello...";
-        var reply = new builder.Message()
-                .address(message.address)
-                .text(txt);
-        bot.send(reply);
-    } else if (message.membersRemoved) {
-        // See if bot was removed
-        var botId = message.address.bot.id;
-        for (var i = 0; i < message.membersRemoved.length; i++) {
-            if (message.membersRemoved[i].id === botId) {
-                // Say goodbye
-                var reply = new builder.Message()
-                        .address(message.address)
-                        .text("Goodbye");
-                bot.send(reply);
-                break;
-            }
-        }
-    }
-});
-
-
-```
+[!include[conversationUpdate sample Node.js](../includes/snippet-code-node-contactrelationupdate-1.md)]
 
 ## Acknowledge add to contacts list
+
 The contactRelationUpdate event notifies your bot that a user has added you to their contacts list.
-<!-- TODO: Reference code in snippet repository -->
-
-```javascript
-
-bot.on('contactRelationUpdate', function (message) {
-    if (message.action === 'add') {
-        var name = message.user ? message.user.name : null;
-        var reply = new builder.Message()
-                .address(message.address)
-                .text("Hello %s... Thanks for adding me.", name || 'there');
-        bot.send(reply);
-    }
-});
-Neither 
 
 
-```
+[!include[contactRelationUpdate sample Node.js](../includes/snippet-code-node-contactrelationupdate-1.md)]
+
+## Add a first-run dialog
+
+Neither the conversationUpdate nor the contactRelationUpdate event are supported by all channels. See the documentation for each channel to determine whether the channel provides these events.
+A more universal way to greet a user who joins a conversation is to add a first-run dialog.
+
+In the following example we’ve added a function that triggers the dialog anytime we’ve never seen a user before. 
+You can customize the way an action is triggered by providing an [onFindAction][onFindAction] handler for your action. 
+
+[!include[first-run sample Node.js](../includes/snippet-code-node-first-run-dialog-1.md)]
+
+
+You can also customize what an action does after its been triggered by providing an [onSelectAction][onSelectAction] handler. 
+For trigger actions you can provide an [onInterrupted][onInterrupted] handler to intercept an interruption before it occurs. 
 
 ## Next steps
-
-In this article, we discussed how to handle the conversationUpdate event using the Bot Builder SDK for Node.js. 
 
 To learn more, see:
 
 > [!NOTE]
-> To do: Add links to other articles about conversationUpdate.
+> To do: Add links to other articles.
 
 
 <!-- TODO: UPDATE LINKS TO POINT TO NEW REFERENCE -->
+[onFindAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.itriggeractionoptions#onfindaction
+[onSelectAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.itriggeractionoptions#onselectaction
+[onInterrupted]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.itriggeractionoptions#oninterrupted
+
 [SendTyping]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#sendtyping
 [IMessage]: http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.imessage
 [ChatConnector]:https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.chatconnector.html
