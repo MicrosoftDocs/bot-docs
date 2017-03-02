@@ -17,28 +17,27 @@ ms.reviewer: rstand
 # Add speech recognition and conversion to your bot
 The Speech APIs allow you to add advanced speech skills to your bot that leverage industry-leading algorithms for speech-to-text and text-to-speech conversion, as well as speaker recognition. The Speech APIs use built-in language and acoustic models that cover a wide range of scenarios with high accuracy. In addition, for applications that require further customization, you can use the Custom Recognition Intelligent Service (CRIS), which allows you to calibrate the language and acoustic models of the speech recognizer by tailoring it to the vocabulary of the application, or even the speaking style of your users, thus achieving higher degree of accuracy.
 
-## API Overview
 There are 3 Speech APIs available in Cognitive Services to process or synthesize speech.
 
-### Bing Speech API
+## Bing Speech API
 The [Bing Speech API](https://www.microsoft.com/cognitive-services/en-us/speech-api) provides speech-to-text and text-to-speech conversion capabilities.
 
-### Custom Recognition Intelligent Service
+## Custom Recognition Intelligent Service
 The [Custom Recognition Intelligent Service (CRIS)](https://www.microsoft.com/cognitive-services/en-us/custom-recognition-intelligent-service-cris) allows you to create custom speech recognition models to tailor the speech-to-text conversion to an application's vocabulary or user's speaking style.
 
-### Speaker Recognition API
+## Speaker Recognition API
 The [Speaker Recognition API](https://www.microsoft.com/cognitive-services/en-us/speaker-recognition-api) enables speaker identification and verification through voice.
 
 > [!TIP]
 > You can find detailed documentation about each API, including developer guides and API references by navigating to the Cognitive Services [documentation site](https://www.microsoft.com/cognitive-services/en-us/documentation) and selecting the API you are interested in from the navigation bar on the left side of the screen.
 
-## Speech API use cases for Bots
+## Speech API examples for bots
 The Speech APIs enable your bots to parse audio and extract useful information from it. For example, bots can identify the presence of certain words, or access the transcribed text to perform an action. In addition, on messaging channels that support voice as input, bots can leverage the Speech APIs to recognize what the users are saying, rather than relying on text messages. Finally, the Speaker Recognition APIs can be used as a means to identify or even authenticate users through their unique voiceprint.
 
 > [!IMPORTANT]
 > Before you get started, you need to obtain your own subscription key from the Microsoft Cognitive Services site. Our [Getting Started](https://www.microsoft.com/cognitive-services/en-us/speech-api/documentation/getstarted/getstartedcsharpdesktop) guide for the Speech API describes how to obtain the key and start making calls to the APIs.
 
-## Speech-To-Text example
+### Speech-To-Text example
 Let's build a simple bot that leverages the Speech API to perform speech-to-text conversion. Our bot receives an audio file and either responds with the transcribed text or provides some interesting information about the audio it received, such as word, character and vowel count. We will use the [Bot Application .NET template](http://docs.botframework.com/connector/getstarted/#getting-started-in-net) as our starting point. Note that this example requires the *Newtonsoft.JSON* package, which can be obtained via NuGet.
 
 After you create your project with the Bot Application template, add the Newtonsoft.JSON package, and then open the *MessagesController.cs* file. Start by adding the following namespaces.
@@ -313,7 +312,7 @@ public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
 
 ```
 
-## Speaker recognition example
+### Speaker recognition example
 For our second example, we will build a bot that leverages the Speaker Recognition API. The code allows you to use voice for authentication scenarios. The bot receives the audio file, compares it against the sender’s voiceprint and responds back with an accept or reject decision, as well as a confidence score. We will use the [Bot Application .NET template](http://docs.botframework.com/connector/getstarted/#getting-started-in-net) as our starting point. Note that the example requires the *Microsoft.ProjectOxford.SpeakerRecognition* package, which can be obtained via NuGet.
 
 Before you begin, you need to enroll your voice by saying one of the [preselected passphrases](https://dev.projectoxford.ai/docs/services/563309b6778daf02acc0a508/operations/5652c0801984551c3859634d). The Speaker Verification service requires at least 3 enrollments, so the bot will ask for three enrollment audio files in total, and send a confirmation when the enrollment is completed.

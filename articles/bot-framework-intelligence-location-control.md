@@ -40,9 +40,7 @@ You can find screenshots of the scenarios supported by the location control in t
 
 The following sections describe the coding steps to add the location control to your bot. You can find the full developer guides and sample bots for [C#](https://github.com/Microsoft/BotBuilder-Location/tree/master/CSharp) and [Node.js](https://github.com/Microsoft/BotBuilder-Location/tree/master/Node) in the [BotBuilder-Location](https://github.com/Microsoft/BotBuilder-Location/tree/master/) github repository.
 
-## Code Highlights
-
-### Start using the location control
+## Start using the location control
 
 In C#, import the Microsoft.Bot.Builder.Location package from NuGet and add the following namespace in your code.
 
@@ -60,7 +58,7 @@ npm install --save botbuilder-location
 var locationDialog = require('botbuilder-location');
 ```
 
-### Calling the location control with default parameters
+## Calling the location control with default parameters
 
 The example initiates the location control with default parameters, which returns a custom prompt message asking the user to provide an address.
 
@@ -76,7 +74,7 @@ locationDialog.getLocation(session,
  { prompt: "Where should I ship your order? Type or say an address." });
 ```
 
-### Using FB Messenger's location picker GUI dialog
+## Using FB Messenger's location picker GUI dialog
 
 FB Messenger supports a location picker GUI dialog to let the user select an address. If you prefer to use FB Messenger's native dialog,  pass the `LocationOptions.UseNativeControl` option in the location control's constructor.  
 
@@ -117,7 +115,7 @@ locationDialog.getLocation(session, options);
 > [!WARNING]
 > Reverse geocoding is an inherently imprecise operation. For that reason, when the reverse geocode option is selected, the location control will collect only the `PostalAddress.Locality`, `PostalAddress.Region`, `PostalAddress.Country` and `PostalAddress.PostalCode` fields and ask the user to provide the desired street address manually.
 
-### Specifying required fields
+## Specifying required fields
 
 You can specify required location fields that need to be collected by the control. If the user does not provide values for one or more required fields, the control will prompt him to fill them in. You can specify required fields by passing them in the location control's constructor using the `LocationRequiredFields` enumeration. The example specifies the street address and postal (zip) code as required.
 
@@ -139,7 +137,7 @@ var options = {
 locationDialog.getLocation(session, options);
 ```
 
-### Handling returned location
+## Handling returned location
 
 The following example shows how you can leverage the location object returned by the location control in your bot code.
 

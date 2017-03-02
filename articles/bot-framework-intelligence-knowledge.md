@@ -17,34 +17,33 @@ ms.reviewer: rstand
 # Add knowledge extraction to your bot
 The Knowledge APIs enable you to identify named entities in unstructured text, add personalized recommendations and semantic search capabilities to your application, and query existing knowledge graphs.
 
-## Knowledge API Overview
 There are 5 Knowledge APIs available in Cognitive Services to annotate unstructured text with the relevant 'entities' that are referred to in the text, provide recommendations, build your FAQ service and build your own or use existing knowledge graphs to enable rich search and auto-completion experiences in your application.
 
-### Entity Linking Intelligence Service
+## Entity Linking Intelligence Service
 The [Entity Linking Intelligence Service](https://www.microsoft.com/cognitive-services/en-us/entity-linking-intelligence-service) annotates unstructured text with the relevant entities mentioned in the text. Depending on the context, the same word or phrase may refer to different things. This service understands the context of the supplied text and will identify each entity in your text.    
 
-### Recommendations API
+## Recommendations API
 The [Recommendations API](https://www.microsoft.com/cognitive-services/en-us/bing-image-search-api) provides 'frequently bought together', 'customers who liked this product also liked these other products' as well as personalized recommendations based on a user's history. Use this service to build and train a model based on data that you provide, and then use this model to add recommendations to your application.
 
-### Knowledge Exploration Service
+## Knowledge Exploration Service
 The [Knowledge Exploration Service](https://www.microsoft.com/cognitive-services/en-us/knowledge-exploration-service) provides natural language interpretation of user queries and returns annotated interpretations to enable rich search and auto-completion experiences that anticipate what the user is typing. Instant query completion suggestions and predictive query refinements are based your own data and application-specific grammars to enable your users to perform fast, knowledge-based graph queries.    
 
-### Academic Knowledge API
+## Academic Knowledge API
 The [Academic Knowledge API](https://www.microsoft.com/cognitive-services/en-us/academic-knowledge-api) returns academic research papers, authors, journals, conferences, topics, and universities from the [Microsoft Academic Graph](https://www.microsoft.com/en-us/research/project/microsoft-academic-graph/). Built as a domain-specific example of the Knowledge Exploration Service, the Academic Knowledge API provides graph search capabilities over hundreds of millions of research-related entities. Search for a topic, a professor, a university, or a conference, and the API will provide relevant publications and related entities. The grammar also supports natural queries like 'papers by michael jordan about machine learning after 2010'.
 
-### QnA Maker
+## QnA Maker
 The [QnA Maker](https://qnamaker.ai) is a free, easy-to-use, REST API- and web-based service that trains AI to respond to users’ questions in a more natural, conversational way. With optimized machine learning logic and the ability to integrate industry-leading language processing, QnA Maker distills semi-structured data like question and answer pairs into distinct, helpful answers.
 
 > [!TIP]
 > You can find detailed documentation about each API, including developer guides and API references by navigating to the Cognitive Services [documentation site](https://www.microsoft.com/cognitive-services/en-us/documentation) and selecting the API you are interested in from the left-hand navigation.
 
-## Knowledge API use cases for bots
+## Knowledge API bot examples
 The Knowledge APIs can arm your bots with your own knowledge base and user history, allowing them to efficiently navigate your product catalogs to provide recommendations.
 
 > [!IMPORTANT]
 > Before you get started, you need to obtain your own subscription key from the Microsoft Cognitive Services site.
 
-## QnA Maker example
+### QnA Maker example
 This is a very simple Bot which uses simple heuristics to determine whether the incoming user message has a question intent, and if that's the case simply forwards the message to the QnA Maker service.
 
 To get started with QnA Maker, go to [qnamaker.ai](https://qnamaker.ai) and build your own knowledge base. Our [documentation](https://qnamaker.ai/Documentation) describes the various flows in the tool to create your knowledge base.

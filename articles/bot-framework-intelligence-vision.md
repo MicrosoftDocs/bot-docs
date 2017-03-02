@@ -20,22 +20,21 @@ The Vision APIs bring advanced image and video understanding skills to your bots
 > [!TIP]
 > You can play with the popular [CaptionBot.ai](https://www.captionbot.ai/) to see some of the Vision APIs in action.
 
-## API Overview
 There are 4 APIs available in Cognitive Services that can process images or videos:
 
-### Computer Vision API
+## Computer Vision API
 The [Computer Vision API](https://www.microsoft.com/cognitive-services/en-us/computer-vision-api) extracts rich information about objects and people in images, determines if the image contains mature or explicit content, and also processes text (OCR) in images.
 
-### Emotion API
+## Emotion API
 The [Emotion API](https://www.microsoft.com/cognitive-services/en-us/emotion-api) analyzes human faces and recognizes their emotion across eight possible categories of human emotions.
 
-### Face API
+## Face API
 The [Face API](https://www.microsoft.com/cognitive-services/en-us/face-api) detects human faces, compares them to similar faces, and can even organize people into groups according to visual similarity.
 
-### Video API
+## Video API
 The [Video API](https://www.microsoft.com/cognitive-services/en-us/video-api) analyzes and processes video to stabilize video output, detect motion, track faces, as well as intelligently generate a motion thumbnail summary of the video.    
 
-## Vision API use cases for bots
+## Vision API examples for bots
 The Vision APIs are useful for any bot that receives images as input from users and wants to distill actionable information from them. Here are a few examples:
 
 - You can use the Computer Vision API to understand objects or even celebrities in an image. For example, [CaptionBot.ai](https://www.captionbot.ai/) is using the Computer Vision API to identify objects, people (celebrities), in order to generate a human-readable caption of the image.
@@ -48,7 +47,7 @@ Before you get started with these examples, you need to obtain your own subscrip
 > [!TIP]
 >You can find detailed documentation about each API, including developer guides and API references by navigating to the Cognitive Services [documentation site](https://www.microsoft.com/cognitive-services/en-us/documentation) and selecting the API you are interested in from the navigation bar on the left side of the screen.
 
-## Vision API example
+### Vision API example
 This example builds a simplified version of CaptionBot.ai. The Vision Bot can receive an image, either as an attachment or url, and then return a computer-generated caption of the image via the Computer Vision API. We will use the [Bot Application .NET template](http://docs.botframework.com/connector/getstarted/#getting-started-in-net) as our starting point.
 
 ```html
@@ -147,7 +146,7 @@ return new HttpResponseMessage(System.Net.HttpStatusCode.Accepted);
 
 ```
 
-## Emotion API example
+### Emotion API example
 For our second example, we will build an Emotion Bot that receives an image url, detects if there's at least one face in the image, and finally responds back with the dominant emotion of that face. To keep the example simple, the bot will only return the emotion for only one face, and ignore other faces in the image. The example requires the *Microsoft.ProjectOxford.Emotion* package, which can be obtained via NuGet.
 
 Create a new project with the [Bot Application .NET template](http://docs.botframework.com/connector/getstarted/#getting-started-in-net). Install the Microsoft.ProjectOxford.Emotion package from [nuGet](https://www.nuget.org/packages/Microsoft.ProjectOxford.Emotion/). Next, go to *MessagesController.cs* class file and add the following namespaces.
