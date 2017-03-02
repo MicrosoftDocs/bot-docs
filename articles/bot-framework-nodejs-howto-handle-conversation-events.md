@@ -67,6 +67,25 @@ bot.on('conversationUpdate', function (message) {
 
 ```
 
+## Acknowledge add to contacts list
+The contactRelationUpdate event notifies your bot that a user has added you to their contacts list.
+<!-- TODO: Reference code in snippet repository -->
+
+```javascript
+
+bot.on('contactRelationUpdate', function (message) {
+    if (message.action === 'add') {
+        var name = message.user ? message.user.name : null;
+        var reply = new builder.Message()
+                .address(message.address)
+                .text("Hello %s... Thanks for adding me.", name || 'there');
+        bot.send(reply);
+    }
+});
+Neither 
+
+
+```
 
 ## Next steps
 
