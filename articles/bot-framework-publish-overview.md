@@ -22,7 +22,8 @@ When you've finished developing a bot and you're ready to share it with others, 
 [Task 4](#publish): Publish your bot to the Bot Directory
 
 > [!NOTE]
-> Task 1 (Register your bot) and Task 2 (Deploy your bot) are not applicable for bots that are created by using the Azure Bot Service (since those tasks are included within the functionality that the Azure Bot Service provides).
+> Task 1 (Register your bot) and Task 2 (Deploy your bot) are not applicable for bots that are created by using the Azure Bot Service 
+> (since bot registration and deployment are handled as part of the Azure Bot Service bot creation process).
 
 ##<a id="register"></a> Task 1: Register your bot with the Bot Framework
 

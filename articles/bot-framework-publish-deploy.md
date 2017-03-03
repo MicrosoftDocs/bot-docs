@@ -21,6 +21,10 @@ You can deploy your bot to Microsoft Azure or to any other cloud service.
 
 Regardless of which cloud service you choose to host your bot, you must address the application configuration settings and the HTTPS endpoint as part of the deployment process.
 
+> [!NOTE]
+> This article does not apply to bots that are created by using the Azure Bot Service 
+> (since bot deployment is handled as part of the Azure Bot Service bot creation process).
+
 ###<a id="appSettings"></a> Application configuration settings
 If you've already [registered](bot-framework-publish-register.md) your bot with the Bot Framework,
 update the Microsoft App Id and Microsoft App Password values in your application's configuration settings
@@ -135,7 +139,7 @@ The process of deploying a bot via continuous integration from GitHub consists o
 Start by <a href="https://help.github.com/articles/fork-a-repo/" target="_blank">forking</a> the GitHub repository that contains the code for the bot that you want to deploy. 
 
 > [!NOTE]
-> In this walk through, we'll use the **echobot** GitHub repository, which contains the Node.js code for creating a simple bot.
+> In this walk through, we'll use the <a href="https://github.com/fuselabs/echobot" target="_blank">echobot</a> GitHub repository, which contains the Node.js code for creating a simple bot.
 
 #### <a id="github2"></a>Step 2: Create an Azure web app
 
@@ -162,10 +166,10 @@ You can verify that the deployment has completed by visiting the web app in a br
 #### <a id="github4"></a>Step 4: Update Application settings with bot credentials
 
 Update **Application settings** to specify values for `MICROSOFT_APP_ID` and `MICROSOFT_APP_PASSWORD` using the
-values that you acquired when you [registered](bot-framework-publish-register.md) the bot in the Bot Framework Developer Portal.
+values that you acquired when you [registered](bot-framework-publish-register.md) the bot in the Bot Framework Portal.
 
 > [!NOTE]
-> If you have not yet registered the bot in the Bot Framework Developer Portal, you can populate `MICROSOFT_APP_ID` and `MICROSOFT_APP_PASSWORD`
+> If you have not yet registered the bot in the Bot Framework Portal, you can populate `MICROSOFT_APP_ID` and `MICROSOFT_APP_PASSWORD`
 > with temporary (placeholder) values for now.
 > After you register your bot, return to the Azure Portal and update these values with the **App ID** and **App Password** values that you acquire during the registration process.
 
@@ -233,7 +237,7 @@ the next step in the bot publication process will depend upon whether or not you
 
 ### If you have already registered your bot with the Bot Framework:
 
-1. Return to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Developer Portal</a> and [update your bot's registration data](bot-framework-publish-register.md#maintain) to specify the **HTTPS** endpoint for the bot.
+1. Return to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a> and [update your bot's registration data](bot-framework-publish-register.md#maintain) to specify the **HTTPS** endpoint for the bot.
 
 2. [Configure the bot to run on one or more channels](bot-framework-publish-configure.md).
 
