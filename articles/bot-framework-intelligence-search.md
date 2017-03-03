@@ -279,12 +279,14 @@ return response;
 ### Product bot example
 For our last example, we will build a bot that receives a product image url and finds visually similar products along with links to online merchants that have these products. The bot is calling the Image Search API to find visually similar products and the online merchants. More specifically, it's calling a feature of the Image Search API called [image insights](https://msdn.microsoft.com/en-us/library/mt712790.aspx), which returns several interesting insights about images indexed by Bing, such as visually similar images or products, similar image collections, recognized entities (people) and more.
 
+```html
 <div align="center">
 <br>
 <h4>Chat with Product bot</h4>
 <iframe width="700" height="500" src='https://webchat.botframework.com/embed/ProductSearch?s=pG0VT-DNpyM.cwA.boI.H5R6cD-k4qIZRllK-LGoYZABte2qDdthqiD5AP8nwMg'></iframe>
 <br><br><br>
 </div>
+```
 
 The coding steps are very similar to the previous example. Start by creating a new project with the Bot Application template, and add the Newtonsoft.JSON package via NuGet. Then, create a new C# class file (BingImageInsights.cs) that will host the model classes for the JSON response returned by the image insights module that is part of the Image Search API.
 
