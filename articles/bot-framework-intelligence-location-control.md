@@ -162,7 +162,7 @@ context.Call(locationDialog, (context, result) => {
 }
 ```
 
-[!code-js[sample](../code/intelligence.js#locationControl)]
+[!code-js[sample](code-snippets/intelligence.js#locationControl)]
 
 
 > [!WARNING]
