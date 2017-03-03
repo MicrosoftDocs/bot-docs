@@ -48,7 +48,7 @@ sign in to <a href="https://portal.azure.com" target="_blank">Azure</a> and comp
 
 4. Confirm that the bot service has been deployed.
     - Click **Notifications** (i.e., the bell icon that is located along the top edge of the Azure portal). The notification will change from **Deployment started** to **Deployment succeeded**. 
-    - After the deployment has succeeded, click the notification.<br/><br/>
+    - After the notification changes to **Deployment succeeded**, click that notification.<br/><br/>
     ![Azure notification](media/azure-bot-service-first-bot-notification.png)
 
 ### Create App ID and password  
@@ -59,7 +59,7 @@ Next, create an app ID and password for your bot, so that it will be able to aut
 
     ![create app id](media/azure-bot-service-create-app-id.png)  
 
-2. On the page that you’re redirected to, click **Generate an app password to continue**.
+2. On the page that opens in a new browser tab, click **Generate an app password to continue**.
 
 3. Copy and securely store the password that is shown, and then click **Ok**.
 
@@ -67,6 +67,10 @@ Next, create an app ID and password for your bot, so that it will be able to aut
 
 5. Back in the Azure Portal, the **app ID** field is now auto-populated for you. 
 Paste the password that you copied (in step 3 above) into the password field.
+> [!TIP]
+> If the **app ID** field is not auto-populated, you can retrieve it by signing in to the 
+> <a href="https://apps.dev.microsoft.com" target="_blank">Microsoft Application Registration Portal</a> 
+> and copying the application ID from your application's registration settings.
 
     ![password](media/azure-bot-service-password.png)  
 
@@ -94,7 +98,11 @@ Then, click **Create bot** to create the bot based upon the programming language
 
 When the bot service finishes generating your bot, the Azure editor will contain the bot's source files. 
 At this point, the bot has been created, registered with the Bot Framework, deployed to the cloud, and is fully functional. 
+If you sign in to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a>, 
+you'll see that your bot is now listed under **My bots**. 
 Congratulations -- you've successfully created a bot by using the Azure Bot Service! 
+
+![bot settings in portal](media/azure-bot-service-bf-portal.png)
 
 ## Test your bot
 

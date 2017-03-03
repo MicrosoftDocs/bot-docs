@@ -44,7 +44,7 @@ Get started by completing the following prerequisite tasks:
 and install the template by saving the .zip file to your Visual Studio 2015 project templates directory.  
 > [!TIP]
 > The Visual Studio 2015 project templates directory is typically located here: 
-> `%USERPROFILE%\Documents\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\`.
+> `%USERPROFILE%\Documents\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\`
 
 ## Create your bot
 
@@ -73,7 +73,7 @@ let's take a quick look at some of the code that the Bot Application template pr
 The `Post` method within **Controllers\MessagesController.cs** represents the 
 core functionality of your bot. 
 
-[!include[echobot code sample C#](../includes/snippet-code-csharp-echobot.md)]
+[!include[echobot code sample C#](code-snippets/csharp-echobot.md)]
 
 This method receives a message from the user and creates a reply 
 (by using the **CreateReply** function) that echos back the user's message, 
