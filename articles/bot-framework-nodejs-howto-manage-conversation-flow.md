@@ -56,7 +56,7 @@ For details about the template syntax, refer to the documentation for the sprint
 The contents of messages aren't limited to text strings. 
 Your bot can [send and receive attachments][SendAttachments], as well as present the user with [cards containing images and buttons][SendCardWithButtons].
 
-## Listen for Commands
+## Listen for commands
 
 The Bot Builder SDK provides a number of other constructs that are designed to help you implement some of the more common patterns found in bots. 
 One of those patterns is the ability to perform some action in response to the user sending a command.
@@ -123,7 +123,7 @@ When a dialog is triggered it will receive all future messages from a user until
 This behavior is one of the primary advantages to using dialogs but the call to endDialog() is sometimes overlooked, 
 leading to the appearance of being stuck. In our example, anytime the user asks for “help” we’ll send a quick message and then end the dialog to return control back to our main message handler. 
 
-## Ask Questions
+## Ask questions
 
 Another common pattern is for a bot to ask the user a sequence of questions before performing some action.
 The SDK provides a set of built-in prompts to simplify collecting input from a user and you can then use a feature called a *waterfall* to define 
@@ -152,7 +152,7 @@ If you run the previous waterfall example, you’ll notice that while it will as
 After the last step of the waterfall is reached it will simply start over with the next message. 
 To add logic to remember the user's name so that we only have to ask it once, see [Save user data](bot-framework-nodejs-howto-save-user-data.md) for an example. 
 
-## Handling Cancel
+## Handling cancel
 
 Waterfalls are powerful but what if the bot is asking the user a series of questions and the user decides they’d like to cancel what they’re doing?
 You can easily support that by adding a [cancelAction()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog#cancelaction) to your dialog.
@@ -168,7 +168,7 @@ bot.dialog('buyButtonClick', [ ... waterfall steps ... ])
 
 The important thing to note is that this action will only be triggered if the dialog is active, so in our case, this is only when the user is being asked what size shirt they’d like.
 
-## Confirming Interruptions
+## Confirming interruptions
 
 By default, when the user says something that triggers a dialog it will automatically interrupt any dialogs that are active. 
 In most cases you’ll find that this is desirable, but they’re may be times where you’re doing something large or complex and you’d like to just confirm that 
