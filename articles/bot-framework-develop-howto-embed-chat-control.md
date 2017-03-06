@@ -32,8 +32,6 @@ The Chat widget supports [Markdown](https://en.wikipedia.org/wiki/Markdown) and 
 
 Click on Edit for Web chat and press Generate Web Chat Secret
 
-![Chat widget Token](media/chatwidget-token.PNG)
-
 Copy the generated secret and embed tag and press “I'm done configuring Web Chat”
 
 ## Step 2 - Embed the chat widget in your website
