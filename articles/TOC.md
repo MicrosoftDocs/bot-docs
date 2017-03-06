@@ -15,6 +15,7 @@
 ## [Connector](bot-framework-concept-connector.md)
 # Design
 ## [Overview](bot-framework-design-overview.md)
+## [Principles and practices](bot-framework-design-best-practices.md)
 ## User experience
 ### [First interaction](bot-framework-design-core-greeting.md)
 ### [Conversation flow](bot-framework-design-core-dialogs.md)
