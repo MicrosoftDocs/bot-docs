@@ -18,14 +18,14 @@ ms.reviewer: rstand
 > * [Azure Bot Service](bot-framework-azure-getstarted.md)
 >
 
-The <a href="https://github.com/Microsoft/BotBuilder" target="_blank">Bot Builder SDK for Node.js</a> is a powerful framework for constructing bots that can handle both freeform interactions and more guided ones where the possibilities are explicitly shown to the user. 
+The <a href="https://github.com/Microsoft/BotBuilder" target="_blank">Bot Builder SDK for Node.js</a> is a powerful framework for constructing bots that can handle both freeform interactions and more guided ones where the possibilities are explicitly shown to the user.
 It is easy to use and models frameworks like Express & Restify to provide a familiar way for JavaScript developers to write bots.
 
-In this tutorial, we'll walk through the process of building a bot by using the Bot Builder SDK for Node.js 
+In this tutorial, we'll walk through the process of building a bot by using the Bot Builder SDK for Node.js
 and testing it with the Bot Framework Emulator.
 
 ## Get the SDK
-We'll start by getting the SDK and installing the necessary dependencies. 
+We'll start by getting the SDK and installing the necessary dependencies.
 First, create a folder for your bot, navigate to it, and run the following **npm** command:
 
 ```
@@ -40,18 +40,18 @@ npm install --save restify
 ```
 
 ## Create your bot
-Now that you've got the SDK and prequisites in place, you're ready to write a bot. 
-For this walkthrough, you'll create a bot that simply echos back any user input. 
-In the folder that you created earlier for your bot, create a new file named **app.js**. 
+Now that you've got the SDK and prequisites in place, you're ready to write a bot.
+For this walkthrough, you'll create a bot that simply echos back any user input.
+In the folder that you created earlier for your bot, create a new file named **app.js**.
 Then, add the following code to the file: 
 
-[!include[echobot code sample Node.js](code-snippets/node-echobot.md)]
+[!include[echobot code sample Node.js](../includes/code/node-echobot.md)]
 
 ## Test your bot
 
 [!include[Get started test your bot](../includes/snippet-getstarted-test-bot.md)]
 
-### Start your bot 
+### Start your bot
 
 After installing the emulator, start your bot in a console window:
 
@@ -67,18 +67,18 @@ At this point, your bot is running locally. Next, start the emulator and then co
 
 ### Test your bot
 
-Now that your bot is running locally and is connected to the emulator, test your bot by typing a few messages in the emulator. 
-You should see that the bot responds to each message you send by echoing back your message prefixed with the text *You said*. 
+Now that your bot is running locally and is connected to the emulator, test your bot by typing a few messages in the emulator.
+You should see that the bot responds to each message you send by echoing back your message prefixed with the text *You said*.
 
-Congratulations -- you've successfully created a bot by using the Bot Builder SDK for Node.js! 
+Congratulations -- you've successfully created a bot by using the Bot Builder SDK for Node.js!
 
 ## Next steps
 
-In this tutorial, you created a simple bot by using the Bot Builder SDK for Node.js 
-and verified the bot's functionality by using the Bot Framework Emulator. 
-If you'd like to share your bot with others, you'll need to 
-[register](bot-framework-publish-register.md) it with the Bot Framework and 
-[deploy](bot-framework-publish-deploy.md) it to the cloud. 
+In this tutorial, you created a simple bot by using the Bot Builder SDK for Node.js
+and verified the bot's functionality by using the Bot Framework Emulator.
+If you'd like to share your bot with others, you'll need to
+[register](bot-framework-publish-register.md) it with the Bot Framework and
+[deploy](bot-framework-publish-deploy.md) it to the cloud.
 
 To learn more about building great bots with the Bot Framework, see the following articles:
 

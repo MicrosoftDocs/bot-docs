@@ -1,4 +1,14 @@
-// <locationControl>
+// <specifyingRequiredFields>
+var options = {
+    prompt: "Where should I ship your order? Type or say an address.",
+    requiredFields:
+        locationDialog.LocationRequiredFields.streetAddress |
+        locationDialog.LocationRequiredFields.postalCode
+}
+locationDialog.getLocation(session, options);
+// </specifyingRequiredFields>
+
+// <handlingReturnedLocation>
 locationDialog.create(bot);
 
 bot.dialog("/", [
@@ -23,4 +33,4 @@ bot.dialog("/", [
         }
     }
 ]);
-// </locationControl>
+// </handlingReturnedLocation>

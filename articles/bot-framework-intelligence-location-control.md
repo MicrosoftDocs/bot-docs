@@ -120,22 +120,8 @@ locationDialog.getLocation(session, options);
 You can specify required location fields that need to be collected by the control. If the user does not provide values for one or more required fields, the control will prompt him to fill them in. You can specify required fields by passing them in the location control's constructor using the `LocationRequiredFields` enumeration. The example specifies the street address and postal (zip) code as required.
 
 
-```cs
-var apiKey = WebConfigurationManager.AppSettings["BingMapsApiKey"];
-var prompt = "Where should I ship your order? Type or say an address.";
-var locationDialog = new LocationDialog(apiKey, message.ChannelId, prompt, LocationOptions.None, LocationRequiredFields.StreetAddress | LocationRequiredFields.PostalCode);
-context.Call(locationDialog, (dialogContext, result) => {...});
-```
-
-```javascript
-var options = {
-    prompt: "Where should I ship your order? Type or say an address.",
-    requiredFields:
-        locationDialog.LocationRequiredFields.streetAddress |
-        locationDialog.LocationRequiredFields.postalCode
-}
-locationDialog.getLocation(session, options);
-```
+[!code-js[Required Fields (C Sharp)](../includes/code/intelligence-location-control.cs#specifyingRequiredFields)]
+[!code-js[Required Fields (Javascript)](../includes/code/intelligence-location-control.js#specifyingRequiredFields)]
 
 ## Handling returned location
 
@@ -162,7 +148,7 @@ context.Call(locationDialog, (context, result) => {
 }
 ```
 
-[!code-js[sample](code-snippets/intelligence.js#locationControl)]
+[!code-js[sample](../includes/code/intelligence-location-control.js#handlingReturnedLocation)]
 
 
 > [!WARNING]
