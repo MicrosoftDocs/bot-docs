@@ -22,10 +22,13 @@ When you've finished developing a bot and you're ready to share it with others, 
 [Task 4](#publish): Publish your bot to the Bot Directory
 
 > [!NOTE]
-> Task 1 (Register your bot) and Task 2 (Deploy your bot) are not applicable for bots that are created by using the Azure Bot Service 
+> Task 1 (Register your bot) and Task 2 (Deploy your bot) are not applicable for bots that are created by using the Azure Bot Service
 > (since bot registration and deployment are handled as part of the Azure Bot Service bot creation process).
 
 ##<a id="register"></a> Task 1: Register your bot with the Bot Framework
+
+> [!IMPORTANT]
+> Review the [Bot Directory publishing guidelines](bot-framework-publish-review-guidelines.md) and keep them in mind when registering and publishing your bot.
 
 Registration is a simple process wherein you provide some information about your bot and then generate the app ID and password that your bot will use to authenticate with the Bot Framework.
 For a detailed walk through of the registration process, see [Register a bot with the Bot Framework](bot-framework-publish-register.md).
