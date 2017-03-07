@@ -48,8 +48,8 @@
 ### [Intercept messages](bot-framework-nodejs-howto-middleware.md)
 ### [Use backchannel mechanism](bot-framework-nodejs-howto-backchannel.md)
 ## Troubleshooting
-## [Frequently Asked Questions](bot-framework-troubleshooting-guide.md)
-## [Troubleshooting Authentication](bot-framework-troubleshooting-auth.md)
+### [Frequently Asked Questions](bot-framework-troubleshooting-guide.md)
+### [Troubleshooting Authentication](bot-framework-troubleshooting-auth.md)
 # Publish
 ##[Overview](bot-framework-publish-overview.md)
 ##[Register a bot](bot-framework-publish-register.md)
