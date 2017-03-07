@@ -47,9 +47,8 @@
 ### [Greet users](bot-framework-nodejs-howto-handle-conversation-events.md)
 ### [Intercept messages](bot-framework-nodejs-howto-middleware.md)
 ### [Use backchannel mechanism](bot-framework-nodejs-howto-backchannel.md)
-## How To
-### [Embed the Chat Control](bot-framework-develop-howto-embed-chat-control.md)
-## [Troubleshooting](bot-framework-troubleshooting-guide.md)
+## Troubleshooting
+## [Frequently Asked Questions](bot-framework-troubleshooting-guide.md)
 ## [Troubleshooting Authentication](bot-framework-troubleshooting-auth.md)
 # Publish
 ##[Overview](bot-framework-publish-overview.md)
@@ -57,7 +56,6 @@
 ##[Deploy a bot](bot-framework-publish-deploy.md)
 ##[Configure a bot](bot-framework-publish-configure.md)
 ##[Publish a bot to the directory](bot-framework-publish-add-to-directory.md)
-## [Review Guidelines](bot-framework-publish-review-guidelines.md)
 # Intelligence
 ## [Overview](bot-framework-intelligence-getstarted.md)
 ## [Language](bot-framework-intelligence-language.md)
