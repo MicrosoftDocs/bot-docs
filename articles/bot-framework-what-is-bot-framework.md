@@ -1,17 +1,21 @@
 ---
-title: What is the Bot Framework? | Microsoft Docs
-description: Overview of the Bot Framework and its capabilities.
-services: service-name
-documentationcenter: BotFramework-Docs
-author: DeniseMak
+title: What is the Bot Framework | Microsoft Docs
+description: The Microsoft Bot Framework is a comprehensive offering that you use to build and deploy high quality bots for your users to enjoy wherever they are talking.
+keywords: bots, introduction, framework
+author: RobStand
 manager: rstand
 
-ms.service: Bot Framework
-ms.topic: article
-ms.workload: Cognitive Services
-ms.date: 01/20/2017
-ms.author: v-demak@microsoft.com; rstand@microsoft.com
+ms.topic: bot-framework-overview-article
 
+ms.prod: botframework
+ms.service: Bot Framework
+ms.date: 03/07/2017
+
+# Alias of the document reviewer. Change to the appropriate person.
+ms.reviewer: rstand
+
+# Include the following line commented out
+#ROBOTS: Index
 ---
 #What is the Bot Framework?
 
@@ -36,8 +40,6 @@ Developers writing bots all face the same problems: bots require basic I/O, they
 
 Your bot, which uses methods provided by the Bot Builder SDK, communicates with the Bot Connector service, which handles communication with channels.
 The Developer Portal is used to choose which channels are enabled for your bot. The Bot Directory allows users to find your bot.
-
-![components of the Bot Framework](media/what-is-bot-framework-components-placeholder.png)
 
 ## Bot Builder
 
@@ -94,18 +96,7 @@ Although Skype is the only channel that requires you to publish your bot to the 
 Publishing the bot submits it for review. For information about the review process, see Bot review guidelines. If your bot passes review, it’s added to the Bot Directory.
 
 ## Next Steps
-To get started building bots, see:
-<!--
-- [Create a bot with the Node.Js SDK](bot-framework-nodejs-getstarted.md)
-- [Create a bot with the .NET SDK](bot-framework-dotnet-getstarted.md)
--->
-
-To learn more about designing and developing great bots, see:
-- [Designing bots](designing-bots/index.md)
-
-> [!NOTE]
-> Content coming soon.
-> TO_DO: add list of related topics
+Get started with [building a bot](bot-framework-botbuilder-overview.md) and learn more about [designing great bots](designing-bots/index.md).
 
 [NodeGetStarted]:bot-framework-nodejs-getstarted.md
 [DotNETGetStarted]:bot-framework-dotnet-getstarted.md
