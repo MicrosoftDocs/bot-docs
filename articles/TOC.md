@@ -1,7 +1,7 @@
 # [Overview](index.md)
 ## [What is the Bot Framework?](bot-framework-what-is-bot-framework.md)
 ## [How it's different](bot-framework-benefits.md)
-## [Key scenarios](bot-framework-scenarios.md)
+## [Bot scenarios](bot-framework-overview-scenarios.md)
 # Get Started
 ## [About Bot Builder](bot-framework-botbuilder-overview.md)
 ## [Use .NET](bot-framework-dotnet-getstarted.md)
