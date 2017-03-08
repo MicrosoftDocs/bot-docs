@@ -36,7 +36,7 @@ To connect without a password, blank out the Microsoft App ID and Microsoft App 
 
 ***C# Bot Builder SDK web.config file:***
 
-```
+```xml
 <appSettings>
   <add key="BotId" value="MyFirstBot" />
   <add key="MicrosoftAppId" value="" />
@@ -46,7 +46,7 @@ To connect without a password, blank out the Microsoft App ID and Microsoft App 
 
 ***Node.js Bot Builder:***
 
-```
+```javascript
 var connector = new builder.ChatConnector({
   appId: null,
   appPassword: null
@@ -137,7 +137,7 @@ Now that your bot is created in the Bot Framework Developer Portal, you can enab
 
 ***C# Bot Builder SDK web.config file:***
 
-```
+```xml
 <appSettings>
   <add key="BotId" value="MyFirstBot" />
   <add key="MicrosoftAppId" value="791a4e72-d841-4145-96d9-23b4989d70d6" />
@@ -147,7 +147,7 @@ Now that your bot is created in the Bot Framework Developer Portal, you can enab
 
 ***Node.js Bot Builder:***
 
-```
+```javascript
 var connector = new builder.ChatConnector({
   appId: '791a4e72-d841-4145-96d9-23b4989d70d6',
   appPassword: 'PASSWORD'
