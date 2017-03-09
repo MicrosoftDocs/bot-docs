@@ -31,11 +31,16 @@
 ### [Bot in website](bot-framework-design-patterns-bot-in-website.md)
 # Develop
 ## .NET
-### [Conduct audio calls](bot-framework-dotnet-howto-audio-calls.md)
-### [Implement global handlers](bot-framework-dotnet-howto-global-handlers.md)
-### [Intercept messages](bot-framework-dotnet-howto-middleware.md)
-### [Manage conversation flow](bot-framework-dotnet-howto-manage-conversation-flow.md)
-### [Send proactive messages](bot-framework-dotnet-howto-proactive-messages.md)
+### [Overview](bot-framework-dotnet-overview.md)
+### [Get started](bot-framework-dotnet-getstarted.md)
+### [Key concepts](bot-framework-dotnet-concepts.md) 
+### [Debugging](bot-framework-dotnet-debugging.md)
+### How to
+#### [Conduct audio calls](bot-framework-dotnet-howto-audio-calls.md)
+#### [Implement global handlers](bot-framework-dotnet-howto-global-handlers.md)
+#### [Intercept messages](bot-framework-dotnet-howto-middleware.md)
+#### [Manage conversation flow](bot-framework-dotnet-howto-manage-conversation-flow.md)
+#### [Send proactive messages](bot-framework-dotnet-howto-proactive-messages.md)
 ## Node.js
 ### [Manage conversation flow](bot-framework-nodejs-howto-manage-conversation-flow.md)
 ### [Implement global handlers](bot-framework-nodejs-howto-global-handlers.md)
