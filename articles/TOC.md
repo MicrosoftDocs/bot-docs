@@ -2,18 +2,9 @@
 ## [What is the Bot Framework?](bot-framework-what-is-bot-framework.md)
 ## [How it's different](bot-framework-benefits.md)
 ## [Bot scenarios](bot-framework-overview-scenarios.md)
-# Get Started
-## [About Bot Builder](bot-framework-botbuilder-overview.md)
-## [Use .NET](bot-framework-dotnet-getstarted.md)
-## [Use Node.js](bot-framework-nodejs-getstarted.md)
-## [Use Azure Bot Service](bot-framework-azure-getstarted.md)
-# Key Concepts
-## [Overview](bot-framework-concepts-overview.md)
-## [Dialog](bot-framework-concept-dialog.md)
-## [Activity](bot-framework-concept-activity.md)
-## [Channel](bot-framework-concept-channel.md)
-## [Connector](bot-framework-concept-connector.md)
-# Design
+## [Core concepts](bot-framework-concepts-overview.md)
+## [Get started](bot-framework-botbuilder-overview.md)
+# Designing bots
 ## [Overview](bot-framework-design-overview.md)
 ## [Principles and practices](bot-framework-design-best-practices.md)
 ## User experience
@@ -29,19 +20,23 @@
 ### [Handoff to human](bot-framework-design-patterns-human-handoff.md)
 ### [Bot in app](bot-framework-design-patterns-bot-in-app.md)
 ### [Bot in website](bot-framework-design-patterns-bot-in-website.md)
-# Develop
-## .NET
-### [Overview](bot-framework-dotnet-overview.md)
-### [Get started](bot-framework-dotnet-getstarted.md)
-### [Key concepts](bot-framework-dotnet-concepts.md) 
-### [Debugging](bot-framework-dotnet-debugging.md)
-### How to
-#### [Conduct audio calls](bot-framework-dotnet-howto-audio-calls.md)
-#### [Implement global handlers](bot-framework-dotnet-howto-global-handlers.md)
-#### [Intercept messages](bot-framework-dotnet-howto-middleware.md)
-#### [Manage conversation flow](bot-framework-dotnet-howto-manage-conversation-flow.md)
-#### [Send proactive messages](bot-framework-dotnet-howto-proactive-messages.md)
-## Node.js
+# Build bots with .NET
+## [Overview](bot-framework-dotnet-overview.md)
+## [Get started](bot-framework-dotnet-getstarted.md)
+## [Key concepts](bot-framework-dotnet-concepts.md)
+## [Debugging](bot-framework-dotnet-debugging.md)
+## How to
+### [Conduct audio calls](bot-framework-dotnet-howto-audio-calls.md)
+### [Implement global handlers](bot-framework-dotnet-howto-global-handlers.md)
+### [Intercept messages](bot-framework-dotnet-howto-middleware.md)
+### [Manage conversation flow](bot-framework-dotnet-howto-manage-conversation-flow.md)
+### [Send proactive messages](bot-framework-dotnet-howto-proactive-messages.md)
+# Build bots with Node.js
+## Overview
+## [Get started](bot-framework-nodejs-getstarted.md)
+## Key concepts
+## Debugging
+## How to
 ### [Manage conversation flow](bot-framework-nodejs-howto-manage-conversation-flow.md)
 ### [Implement global handlers](bot-framework-nodejs-howto-global-handlers.md)
 ### [Send proactive messages](bot-framework-nodejs-howto-proactive-messages.md)
@@ -52,6 +47,11 @@
 ### [Greet users](bot-framework-nodejs-howto-handle-conversation-events.md)
 ### [Intercept messages](bot-framework-nodejs-howto-middleware.md)
 ### [Use backchannel mechanism](bot-framework-nodejs-howto-backchannel.md)
+# Build bots with Azure Bot Service
+## Overview
+## [Get started](bot-framework-azure-getstarted.md)
+## Key concepts
+## Debugging
 ## Troubleshooting
 ### [Frequently Asked Questions](bot-framework-troubleshooting-guide.md)
 ### [Troubleshooting Authentication](bot-framework-troubleshooting-auth.md)
