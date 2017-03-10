@@ -24,6 +24,15 @@
 ## [Overview](bot-framework-dotnet-overview.md)
 ## [Get started](bot-framework-dotnet-getstarted.md)
 ## [Key concepts](bot-framework-dotnet-concepts.md)
+## Connector service
+### [Overview](bot-framework-dotnet-connector.md)
+### [Send and receive activities](bot-framework-dotnet-send-and-receive.md)
+### [Add attachments to messages](bot-framework-dotnet-add-attachments.md)
+### [Process button and card actions](bot-framework-dotnet-cardactions.md)
+### [Implement channel-specific functionality](bot-framework-dotnet-channeldata.md)
+### [Secure your bot](bot-framework-dotnet-security.md)
+## [Dialogs](bot-framework-dotnet-dialogs.md)
+## [FormFlow](bot-framework-dotnet-formflow.md)
 ## [Debugging](bot-framework-dotnet-debugging.md)
 ## How to
 ### [Conduct audio calls](bot-framework-dotnet-howto-audio-calls.md)
