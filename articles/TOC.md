@@ -52,16 +52,13 @@
 ## [Get started](bot-framework-azure-getstarted.md)
 ## Key concepts
 ## Debugging
-## Troubleshooting
-### [Frequently Asked Questions](bot-framework-troubleshooting-guide.md)
-### [Troubleshooting Authentication](bot-framework-troubleshooting-auth.md)
 # Publish
 ##[Overview](bot-framework-publish-overview.md)
 ##[Register a bot](bot-framework-publish-register.md)
 ##[Deploy a bot](bot-framework-publish-deploy.md)
 ##[Configure a bot](bot-framework-publish-configure.md)
 ##[Publish a bot to the directory](bot-framework-publish-add-to-directory.md)
-# Intelligence
+# Intelligence in bots
 ## [Overview](bot-framework-intelligence-getstarted.md)
 ## [Language](bot-framework-intelligence-language.md)
 ## [Vision](bot-framework-intelligence-vision.md)
@@ -69,9 +66,10 @@
 ## [Knowledge](bot-framework-intelligence-knowledge.md)
 ## [Search](bot-framework-intelligence-search.md)
 ## [Location Control](bot-framework-intelligence-location-control.md)
-# Reference
 # Resources
 ## [FAQ](bot-framework-faq.md)
+## [Troubleshooting](bot-framework-troubleshooting-guide.md)
+### [Troubleshooting Authentication](bot-framework-troubleshooting-auth.md)
 ## [Downloads](bot-framework-resources-downloads.md)
 ## [Tools](bot-framework-tools.md)
 ## [Emulator](bot-framework-emulator.md)
