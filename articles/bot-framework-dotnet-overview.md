@@ -24,7 +24,7 @@ Using the SDK, you can build bots that are stateless (which enables them to scal
 and take advantage of the following SDK features: 
 
 - Powerful dialog system with dialogs that are isolated and composable
-- Built-in dialogs for simple things such as Yes/No, strings, numbers, and enumerations
+- Built-in prompts for simple things such as Yes/No, strings, numbers, and enumerations
 - Built-in dialogs that utilize powerful AI frameworks such as <a href="http://luis.ai" target="_blank">LUIS</a>
 - FormFlow for automatically generating a bot (from a C# class) that guides the user through the 
 conversation, providing help, navigation, clarification, and confirmation as needed
@@ -60,13 +60,11 @@ cd BotBuilder-Samples/CSharp
 
 ## Next steps
 
-Review the following articles in this section to learn more about building bots using the Bot Builder SDK for .NET.
+Learn more about building bots using the Bot Builder SDK for .NET by 
+reviewing articles throughout this section, beginning with:
 
 - [Get Started](bot-framework-dotnet-getstarted.md): Quickly build and test a simple bot by following instructions in this step-by-step tutorial.
 - [Key concepts](bot-framework-dotnet-concepts.md): Learn about key concepts in the Bot Builder SDK for .NET.
-- **How to**: See task-focused code samples that show how to use various features of the Bot Builder SDK for .NET.
-- [Debugging](bot-framework-dotnet-debugging.md): Learn how to debug a bot that was built using the Bot Builder SDK for .NET.
 
 If you encounter problems or have suggestions regarding the Bot Builder SDK for .NET, 
-see [Support](bot-framework-resources-support.md) for a list of resources that provide opportunities 
-for support and feedback. 
+see [Support](bot-framework-resources-support.md) for a list of available resources. 
