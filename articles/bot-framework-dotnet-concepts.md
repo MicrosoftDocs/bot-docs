@@ -45,20 +45,7 @@ For details about using FormFlow within the BotBuilder SDK for .NET, see [FormFl
 
 ##<a id="activity"></a> Activity
 
-The [Connector service](#connector) uses an **Activity** object to pass information back and forth between bot and channel (user). 
-The most common type of activity is **message**, but there are other activity types that can be used to communicate 
-various types of information to a bot or channel. 
-The following table lists and describes the various activity types.
-
-| Activity.Type | Interface | Description |
-|------|------|------|
-| message | IMessageActivity | Represents a communication between bot and user. |
-| conversationUpdate | IConversationUpdateActivity | Indicates that the bot was added to a conversation or other conversation metadata has changed. |
-| contactRelationUpdate | IContactRelationUpdateActivity | Indicates that the bot was added or removed from a user's contact list. |
-| typing | IContactRelationUpdateActivity | Indicates that the user or bot on the other end of the conversation is compiling a response. | 
-| ping | n/a | Represents an attempt to determine whether the bot is reachable. | 
-| deleteUserData | n/a | Indicates to a bot that a user has requested that the bot delete any user data it may have stored. |
-
+[!include[Activity concept overview](../includes/snippet-dotnet-concept-activity.md)]
 For details about sending and receiving activities by using the Connector service via Bot Builder SDK for .NET, 
 see [Send and receive activities](bot-framework-dotnet-send-and-receive.md).
 
