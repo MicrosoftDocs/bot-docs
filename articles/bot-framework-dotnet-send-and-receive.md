@@ -113,20 +113,20 @@ use to generate a response.
 
 The Connector uses an [Activity](bot-framework-dotnet-concepts.md#activity) object to pass information back and forth between bot and channel (user). 
 Every activity contains information used for routing the message to the appropriate destination 
-along with information about who created the message (**From** field), 
-the context of the message, and the recipient of the message (**Recipient** field).
+along with information about who created the message (**From** property), 
+the context of the message, and the recipient of the message (**Recipient** property).
 
-When your bot receives an activity from the Connector service, the incoming activity's **Recipient** field specifies 
+When your bot receives an activity from the Connector service, the incoming activity's **Recipient** property specifies 
 the bot's identity in that conversation. 
 Because some channels (for example, Slack) assign the bot a new identity when it's added to a conversation, 
-the bot should always use the value of the incoming activity's **Recipient** field as the value of 
-the **From** field in its response.
+the bot should always use the value of the incoming activity's **Recipient** property as the value of 
+the **From** property in its response.
 
 Although you can create and initialize the outgoing **Activity** object yourself from scratch, 
 the Bot Builder SDK provides an easier way of creating a reply. 
 By using the incoming activity's **CreateReply** method, 
 you simply specify the message text for the response, and the outgoing activity is created 
-with the **Recipient**, **From**, and **Conversation** fields automatically populated.
+with the **Recipient**, **From**, and **Conversation** property automatically populated.
 
 [!code-csharp[Create reply](../includes/code/dotnet-send-and-receive.cs#createReply)]
 
@@ -149,9 +149,9 @@ any message from the user by calling the **SendToConversation** method.
 
 > [!TIP]
 > You may use the **CreateReply** method to initialize the new message (which would automatically set 
-> the **Recipient**, **From**, and **Conversation** fields for the message). 
+> the **Recipient**, **From**, and **Conversation** properties for the message). 
 > Alternatively, you could use the **CreateMessageActivity** method to create the new message 
-> and set all field values yourself.
+> and set all property values yourself.
 
 > [!NOTE]
 > The Bot Framework does not impose any restrictions on the number of messages that a bot may send. 

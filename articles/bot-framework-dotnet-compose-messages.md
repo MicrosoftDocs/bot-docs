@@ -67,7 +67,8 @@ The following styles are supported with **TextFormat** of "xml".
 
 ## Message attachments
 
-The **Attachments** property of a message activity can be used to send and receive images and other content such as rich cards. 
+The **Attachments** property of a message activity can be used to send and receive simple media attachments 
+(e.g., image, audio, video, file) and rich cards. 
 For details, see [Add attachments to messages](bot-framework-dotnet-add-attachments.md).
 
 ## Message entities
@@ -125,7 +126,7 @@ The **GeoCoordinates** object contains the following properties:
 | Longitude | latitude of the location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">WGS 84</a>) | 
 | Elevation | elevation of the location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">WGS 84</a>) | 
 
-The following code example shows how to add **GeoCoordinates** entity to the **Entities** collection.
+The following code example shows how to add **Place** entity to the **Entities** collection.
 
 [!code-csharp[set GeoCoordinates](../includes/code/dotnet-compose-messages.cs#setGeoCoord)]
 
@@ -144,7 +145,6 @@ The following code example shows how to use the **dynamic** keyword to process a
 The following code example shows how to use a strongly-typed class to process an entity within the **Entities** property of a message.
 
 [!code-csharp[examine entity using typed class](../includes/code/dotnet-compose-messages.cs#examineEntity2)]
-
 
 ## Message channel data
 

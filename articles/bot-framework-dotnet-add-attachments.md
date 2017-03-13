@@ -7,30 +7,94 @@ manager: rstand
 ms.topic: develop-dotnet-article
 ms.prod: botframework
 ms.service: Bot Builder
-ms.date: 03/09/2017
+ms.date: 03/13/2017
 ms.reviewer:
 #ROBOTS: Index
 ---
 
 # Add attachments to messages
 
-> [!NOTE]
-> Content coming soon...
-> 
-> To do: include 'attachment-related' content from [here](https://docs.botframework.com/en-us/csharp/builder/sdkreference/activities.html).
+A message exchange between user and bot can 
+contain media attachments (e.g., image, video, audio, file) 
+or even rich cards that are rendered as a list or carousel. 
+This article describes how to add attachments to messages using the Bot Framework Connector service via the 
+Bot Builder SDK for .NET. 
 
-A message exchange between the user and bot can be as simple as an exchange of text strings or as complex as a multiple card carousel with buttons and actions. For most bots, the **Text** field is the only **Activity** field that you need to worry about. 
-A person sent you some text or your bot is sending back some text. 
-If your bot converses in a language other than English, you'd also need to set the **Locale** field.
+## Types of attachments
 
-The **Activity** object also includes the **Attachments** field, which may contain an array of **Attachment** objects. Attachments can be a simple media type such as an image or video, or they can be rich card types such as a HeroCard or Receipt Card. 
-A rich card is made up of a title, link, description and image. 
-Additionally, you can use the **AttachmentLayout** field to specify whether to display the cards as a list or a carousel.
+Within an **Activity** object, the **Attachments** property contains an array of **Attachment** objects 
+that represent any attachments on the message. 
+An attachment may be a media attachment (e.g., image, video, audio, file) or a rich card attachment.
 
-To pass a simple media attachment (for example, an image, audio, video or file) to an activity, you create an **Attachment** object and set the **ContentType**, **ContentUrl**, and **Name** fields as shown below.
+## Sending media attachments
+
+To include a media attachment within a message, 
+simply create an **Attachment** object and set the **ContentType**, **ContentUrl**, and **Name** properties. 
+The following code example shows how to add an image to a message.
 
 [!code-csharp[Add media attachment](../includes/code/dotnet-add-attachments.cs#addMediaAttachment)]
 
-The following example shows how to add a HeroCard as an attachment to a reply message.
+> [!NOTE]
+> If an attachment's format is image, audio, or video, the Connector service will communicate 
+> attachment data to the channel in a way that enables the channel to render that attachment within the conversation. 
+> If the attachment is a file, the file URL will be rendered as a hyperlink within the conversation.
+
+## Sending rich cards
+
+A rich card is composed of a title, link, description and image(s). 
+A message can contain multiple rich cards, displayed in either list format or carousel format.
+The Bot Framework currently supports four types of rich cards: Hero card, Thumbnail card, Receipt card, and Sign-in card.
+
+> [!TIP]
+> To display multiple rich cards in list format, set the activity's **AttachmentLayout** property to "list". 
+> To display multiple rich cards in carousel format, set the activity's **AttachmentLayout** property to "carousel". 
+> If the channel does not support carousel format, it will display the rich cards in list format, even if the **AttachmentLayout** property specifies "carousel".
+
+### Hero card
+
+The Hero card typically contains a single large image, one or more buttons, and text. 
+It also specifies the action to initiate when a user taps the card. 
+
+The following code sample shows how to create a reply message that contains three Hero cards rendered in carousel format. 
 
 [!code-csharp[Add HeroCard attachment](../includes/code/dotnet-add-attachments.cs#addHeroCardAttachment)]
+
+### Thumbnail card
+
+The Thumbnail card typically contains a single small image, a button, and text. 
+It also specifies the action to initiate when a user taps the card. 
+
+The following code sample shows how to create a reply message that contains two Thumbnail cards rendered in list format. 
+
+[!code-csharp[Add ThumbnailCard attachment](../includes/code/dotnet-add-attachments.cs#addThumbnailCardAttachment)]
+
+### Receipt card
+
+The Receipt card enables a bot to provide a receipt to the user. 
+It typically contains the list of items to include on the receipt (**Items[]**), 
+tax and total information (**Tax**, **VAT**, **Total**), and one or more buttons. 
+It also specifies the action to initiate when a user taps the card. 
+
+The following code sample shows how to create a reply message that contains a Receipt card. 
+
+[!code-csharp[Add ReceiptCard attachment](../includes/code/dotnet-add-attachments.cs#addReceiptCardAttachment)]
+
+### Sign-in card
+
+The Sign-in card enables a bot to request that a user sign-in. 
+It typically consists of text and one or more buttons that the user can click to initiate the sign-in process. 
+
+The following code sample shows how to create a reply message that contains a Sign-in card.
+
+[!code-csharp[Add SignInCard attachment](../includes/code/dotnet-add-attachments.cs#addSignInCardAttachment)]
+
+### Process button and card actions
+
+
+
+## Next steps
+
+In this article, we learned how to add attachments to messages using the Bot Framework Connector service via the 
+Bot Builder SDK for .NET. 
+For more information about creating messages using the Bot Builder SDK for .NET, 
+explore the remaining articles in this section. 

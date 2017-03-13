@@ -7,7 +7,7 @@ manager: rstand
 ms.topic: develop-dotnet-article
 ms.prod: botframework
 ms.service: Bot Builder
-ms.date: 03/10/2017
+ms.date: 03/13/2017
 ms.reviewer:
 #ROBOTS: Index
 ---

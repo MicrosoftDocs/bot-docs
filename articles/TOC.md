@@ -29,7 +29,6 @@
 ### [Send and receive activities](bot-framework-dotnet-send-and-receive.md)
 ### [Compose messages](bot-framework-dotnet-compose-messages.md)
 ### [Add attachments to messages](bot-framework-dotnet-add-attachments.md)
-### [Process button and card actions](bot-framework-dotnet-cardactions.md)
 ### [Implement channel-specific functionality](bot-framework-dotnet-channeldata.md)
 ### [Secure your bot](bot-framework-dotnet-security.md)
 ## [Dialogs](bot-framework-dotnet-dialogs.md)
