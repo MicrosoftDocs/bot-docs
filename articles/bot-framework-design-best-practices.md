@@ -9,7 +9,7 @@ ms.topic: design-principles-article
 ms.prod: botframework
 ms.service: Cognitive Services
 ms.date: 03/01/2017
-ms.reviewer: rstand
+ms.reviewer:
 
 # Include the following line commented out
 #ROBOTS: Index

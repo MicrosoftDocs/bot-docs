@@ -12,7 +12,7 @@ ms.service: Bot Framework
 ms.date: 03/07/2017
 
 # Alias of the document reviewer. Change to the appropriate person.
-ms.reviewer: rstand
+ms.reviewer:
 
 # Include the following line commented out
 #ROBOTS: Index

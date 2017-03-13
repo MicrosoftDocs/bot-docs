@@ -8,7 +8,7 @@ ms.topic: develop-nodejs-article
 ms.prod: botframework
 ms.service: Bot Builder
 ms.date: 02/22/2017
-ms.reviewer: rstand
+ms.reviewer:
 #ROBOTS: Index
 ---
 # Send proactive messages using the Bot Builder SDK for Node.js

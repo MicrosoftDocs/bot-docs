@@ -1,12 +1,12 @@
 ---
 title: Create a bot with the Azure Bot Service | Microsoft Docs
 description: Learn how to create a bot with the Azure Bot Service.
-keywords: Bot Framework, Bot Builder, Azure Bot Service
+keywords: Bot Framework, Bot Builder, Azure Bot Service, get started
 author: kbrandl
 manager: rstand
-ms.topic: get-started-article
+ms.topic: bot-service-get-started-article
 ms.prod: botframework
-ms.service: Bot Builder
+ms.service: Azure Bot Service
 ms.date: 03/02/2017
 ms.reviewer: rstand
 #ROBOTS: Index
@@ -19,7 +19,7 @@ ms.reviewer: rstand
 > * [Azure Bot Service](bot-framework-azure-getstarted.md)
 >
 
-The Azure Bot Service can accelerate the process of developing a bot 
+The Azure Bot Service accelerates the process of developing a bot 
 by providing an integrated environment that is purpose-built for bot development. 
 In this tutorial, we'll walk through the process of creating and testing a bot by using the Azure Bot Service.
 
@@ -47,7 +47,7 @@ sign in to <a href="https://portal.azure.com" target="_blank">Azure</a> and comp
     ![Bot Service blade](media/azure-bot-service-create-bot.png)
 
 4. Confirm that the bot service has been deployed.
-    - Click **Notifications** (i.e., the bell icon that is located along the top edge of the Azure portal). The notification will change from **Deployment started** to **Deployment succeeded**. 
+    - Click **Notifications** (the bell icon that is located along the top edge of the Azure portal). The notification will change from **Deployment started** to **Deployment succeeded**. 
     - After the notification changes to **Deployment succeeded**, click that notification.<br/><br/>
     ![Azure notification](media/azure-bot-service-first-bot-notification.png)
 
@@ -75,7 +75,7 @@ Paste the password that you copied (in step 3 above) into the password field.
     ![password](media/azure-bot-service-password.png)  
 
 > [!NOTE]
-> Click **Manage Microsoft App ID and password** only if you want to generate a secondary password for your bot at this time. 
+> Click **Manage Microsoft App ID and password** only if you want to generate a secondary password for your bot now. 
 > In the future, you can manage app ID and password at any time by using the Bot Framework Portal, as described [here](bot-framework-publish-register.md#maintain). 
 
 ### Select your programming language 
@@ -93,14 +93,14 @@ For this tutorial, choose the **Basic** template.
 
 Then, click **Create bot** to create the bot based upon the programming language and template that you've chosen. 
 
-> [!NOTE]
-> When you click **Create bot**, there may be a slight delay before a splash screen renders to indicate that the bot service is generating your bot -- do not click **Create bot** again.
+> [!IMPORTANT]
+> When you click **Create bot**, there may be a slight delay before a splash screen renders to indicate that the bot service is generating your bot. *Do not* click **Create bot** again. Please wait for the splash screen to appear.
 
 When the bot service finishes generating your bot, the Azure editor will contain the bot's source files. 
 At this point, the bot has been created, registered with the Bot Framework, deployed to the cloud, and is fully functional. 
 If you sign in to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a>, 
 you'll see that your bot is now listed under **My bots**. 
-Congratulations -- you've successfully created a bot by using the Azure Bot Service! 
+Congratulations! You've successfully created a bot by using the Azure Bot Service! 
 
 ![bot settings in portal](media/azure-bot-service-bf-portal.png)
 
@@ -125,5 +125,3 @@ To learn more about building great bots with the Bot Framework, see the followin
 
 - [Key concepts in the Bot Framework](bot-framework-concepts-overview.md)
 - [Introduction to bot design](bot-framework-design-overview.md)
-- TBD (develop articles)
-- TBD (resources articles) 

@@ -8,7 +8,7 @@ ms.topic: design-patterns-article
 ms.prod: botframework
 ms.service: Bot Builder
 ms.date: 02/27/2017
-ms.reviewer: rstand
+ms.reviewer:
 #ROBOTS: Index
 ---
 # Bot embedded within an app 

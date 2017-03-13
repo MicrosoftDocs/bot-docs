@@ -8,7 +8,7 @@ ms.topic: develop-dotnet-article
 ms.prod: botframework
 ms.service: Bot Builder
 ms.date: 03/09/2017
-ms.reviewer: rstand
+ms.reviewer:
 #ROBOTS: Index
 ---
 

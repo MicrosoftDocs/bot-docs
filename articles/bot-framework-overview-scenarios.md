@@ -11,7 +11,7 @@ ms.prod: botframework
 ms.service: Bot Framework
 ms.date: 03/08/2017
 
-ms.reviewer: rstand
+ms.reviewer:
 
 # Include the following line commented out
 #ROBOTS: Index

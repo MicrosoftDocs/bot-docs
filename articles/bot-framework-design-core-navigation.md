@@ -8,7 +8,7 @@ ms.topic: design-ui-and-ux-article
 ms.prod: botframework
 ms.service: Bot Builder
 ms.date: 02/20/2017
-ms.reviewer: rstand
+ms.reviewer:
 #ROBOTS: Index
 ---
 # Designing navigation

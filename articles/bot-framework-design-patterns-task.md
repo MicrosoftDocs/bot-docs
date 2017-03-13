@@ -8,7 +8,7 @@ ms.topic: design-patterns-article
 ms.prod: botframework
 ms.service: Bot Builder
 ms.date: 02/23/2017
-ms.reviewer: rstand
+ms.reviewer:
 #ROBOTS: Index
 ---
 # Task automation bots

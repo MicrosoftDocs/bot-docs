@@ -8,7 +8,7 @@ ms.topic: publish-article
 ms.prod: botframework
 ms.service: Bot Builder
 ms.date: 02/06/2017
-ms.reviewer: rstand
+ms.reviewer:
 #ROBOTS: Index
 ---
 # Register a bot with the Bot Framework

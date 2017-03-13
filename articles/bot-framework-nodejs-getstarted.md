@@ -8,7 +8,7 @@ ms.topic: get-started-article
 ms.prod: botframework
 ms.service: Bot Builder
 ms.date: 02/02/2017
-ms.reviewer: rstand
+ms.reviewer:
 #ROBOTS: Index
 ---
 # Create a bot with the Bot Builder SDK for Node.js

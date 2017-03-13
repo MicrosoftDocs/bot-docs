@@ -9,7 +9,7 @@ ms.topic: publish-guidelines-article
 ms.prod: botframework
 ms.service: Bot Directory
 ms.date: 03/08/2017
-ms.reviewer: rstand
+ms.reviewer:
 
 # Include the following line commented out
 #ROBOTS: Index

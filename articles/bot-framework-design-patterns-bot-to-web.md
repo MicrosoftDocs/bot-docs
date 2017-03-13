@@ -8,7 +8,7 @@ ms.topic: design-patterns-article
 ms.prod: botframework
 ms.service: Bot Builder
 ms.date: 02/24/2017
-ms.reviewer: rstand
+ms.reviewer:
 #ROBOTS: Index
 ---
 # Integration between bot and web browser

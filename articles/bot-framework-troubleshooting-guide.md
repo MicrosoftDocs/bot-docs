@@ -9,7 +9,7 @@ ms.topic: develop-article
 ms.prod: botframework
 ms.service: Bot Framework
 ms.date: 02/21/2017
-ms.reviewer: rstand
+ms.reviewer:
 
 #ROBOTS: Index
 ---

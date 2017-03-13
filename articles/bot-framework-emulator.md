@@ -10,7 +10,7 @@ ms.topic: resources-tools-article
 ms.prod: botframework
 ms.service: Bot Framework
 ms.date: 02/17/2017
-ms.reviewer: rstand
+ms.reviewer:
 
 #ROBOTS: Index
 ---

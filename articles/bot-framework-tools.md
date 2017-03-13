@@ -8,7 +8,7 @@ ms.topic: tools-article
 ms.prod: botframework
 ms.service: Bot Builder
 ms.date: 02/17/2017
-ms.reviewer: rstand
+ms.reviewer:
 #ROBOTS: Index
 ---
 # Bot Framework Tools
