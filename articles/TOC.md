@@ -49,6 +49,7 @@
 ## How to
 ### [Manage conversation flow](bot-framework-nodejs-howto-manage-conversation-flow.md)
 ### [Implement global handlers](bot-framework-nodejs-howto-global-handlers.md)
+### [Recognize user intent](bot-framework-nodejs-howto-recognize-intent.md)
 ### [Send proactive messages](bot-framework-nodejs-howto-proactive-messages.md)
 ### [Send and receive attachments](bot-framework-nodejs-howto-send-receive-attachments.md)
 ### [Send a card with buttons](bot-framework-nodejs-howto-send-card-buttons.md)
