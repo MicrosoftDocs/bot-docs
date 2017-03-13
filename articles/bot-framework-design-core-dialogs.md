@@ -13,11 +13,11 @@ ms.reviewer: rstand
 ---
 # Designing conversation flow
 
-In a traditional application, the user interface (UI) is typically comprised of screens. 
+In a traditional application, the user interface (UI) is typically comprises screens. 
 A single app or website can use one or more screens as needed to exchange information with the user. 
 Most applications start with a main screen where users initially land and provide navigation that leads to other screens for various functions like starting a new order, browsing products, looking for help, etc.
 
-Like apps and websites, bots have a UI, but it's comprised of **dialogs**, rather than screens. 
+Like apps and websites, bots have a UI, but it comprises **dialogs**, rather than screens. 
 Dialogs enable the bot developer to logically separate various areas of bot functionality, much like screens do for traditional apps and websites. 
 For example, you may design one dialog to contain the logic that helps the user browse for products, and a separate dialog to contain the logic that helps the user create a new order. 
 
