@@ -40,9 +40,10 @@ and describe the situations in which your bot may expect to send or receive such
 ### message
 
 Your bot will send **message** activities to communicate information to users, and likewise, 
-will receive **message** activities from users as well. 
+will also receive **message** activities from users. 
 Some messages may simply consist of plain text, while others may contain richer content such as 
 [media attachments, buttons, and cards](bot-framework-dotnet-add-attachments.md). 
+For information about commonly-used message properties, see [Compose messages](bot-framework-dotnet-compose-messages.md).
 
 ### conversationUpdate
 
@@ -89,7 +90,7 @@ for the user that made the request.
 
 ### endOfConversation 
 
-Your may send an **endOfConversation** activity to indicate to the user that the conversation is ending. 
+Your bot may send an **endOfConversation** activity to indicate to the user that the conversation is ending. 
 Likewise, your bot may receive an **endOfConversation** activity to indidate that the user has ended the conversation. 
 
 ##<a id="create-client"></a> Creating a connector client
@@ -183,3 +184,9 @@ The following code example uses the **CreateConversation** method to create a gr
 
 [!code-csharp[Start group conversation](../includes/code/dotnet-send-and-receive.cs#startGroupConversation)]
 
+## Next steps
+
+In this article, we discussed activity types and 
+learned how to exchange information between bot and user on a channel. 
+For more information about using the Connector service via the Bot Builder SDK for .NET, 
+explore the remaining articles in this section. 

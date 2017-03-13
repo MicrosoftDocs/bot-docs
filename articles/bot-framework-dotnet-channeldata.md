@@ -16,4 +16,5 @@ ms.reviewer:
 
 > [!NOTE]
 > Content coming soon...
-
+> 
+> See (partial) content [here](https://docs.botframework.com/en-us/csharp/builder/sdkreference/activities.html).
