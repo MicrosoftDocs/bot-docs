@@ -210,7 +210,7 @@ The July 2016 update is largely in response to feedback received from the active
 
 <span style="color:red"><< This shouldn't be here. This should be in the release notes, and ideally this kind of thing should be big and bold on the frameworks site and docs site. >></span>
 
-Yes. You will need to [upgrade your bot](https://aka.ms/bf-migrate) with this release of the service. All bots written prior to the July release will need to upgrade to the latest SDK (v3) in order to continue to function. Bots written to versions of the SDK prior to V3 will cease functioning in roughly 90 days post the July 7th release. 
+Yes. You will need to [upgrade your bot](https://aka.ms/bf-migrate) with this release of the service. All bots written prior to the July release will need to upgrade to the latest SDK (v3) to continue to function. Bots written to versions of the SDK prior to V3 will cease functioning in roughly 90 days post the July 7th release. 
 
 ## Do the bots registered with the Bot Framework collect personal information? If yes, how can I be sure the data is safe and secure? What about privacy?
 
@@ -218,7 +218,7 @@ Each bot is its own service, and developers of these services are required to pr
 
 <span style="color:red"><< What if the bot is not published to the directory? >></span>
 
-In order to provide the I/O service, the framework transmits your message (including your ID) from the conversation channel (chat service) to the bot. 
+to provide the I/O service, the framework transmits your message (including your ID) from the conversation channel (chat service) to the bot. 
 
 <span style="color:red"><< What do you mean by I/O service? >></span> 
 

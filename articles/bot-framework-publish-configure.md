@@ -18,7 +18,7 @@ After you have [registered](bot-framework-publish-register.md) your bot with the
 you can configure it to run on one or more channels. 
 
 ## Overview
-For most channels, you must provide channel configuration information to the framework in order to run your bot on the channel. 
+For most channels, you must provide channel configuration information to the framework to run your bot on the channel. 
 For example, most channels require that your bot have an account on the channel, and others require your bot to 
 also have an application registered with the channel (for example, Facebook, GroupMe, and others).
 

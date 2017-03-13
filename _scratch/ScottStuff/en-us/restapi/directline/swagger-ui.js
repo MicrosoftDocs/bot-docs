@@ -13693,7 +13693,7 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
     //   2. BindingElements
     //   3. AssignmentTargets
     //
-    // In order to avoid exponential backtracking, we use two flags to denote if the production can be
+    // to avoid exponential backtracking, we use two flags to denote if the production can be
     // binding element or assignment target.
     //
     // The three productions have the relationship:
@@ -13969,7 +13969,7 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
     // it might be called at a position where there is in fact a short hand identifier pattern or a data property.
     // This can only be determined after we consumed up to the left parentheses.
     //
-    // In order to avoid back tracking, it returns `null` if the position is not a MethodDefinition and the caller
+    // to avoid back tracking, it returns `null` if the position is not a MethodDefinition and the caller
     // is responsible to visit other options.
     function tryParseMethodDefinition(token, key, computed, node) {
         var value, options, methodNode, params,
@@ -18597,7 +18597,7 @@ var MAX_ARRAY_LENGTH = 4294967295,
 
 /**
  * Performs a binary search of `array` to determine the index at which `value`
- * should be inserted into `array` in order to maintain its sort order.
+ * should be inserted into `array` to maintain its sort order.
  *
  * @private
  * @param {Array} array The sorted array to inspect.

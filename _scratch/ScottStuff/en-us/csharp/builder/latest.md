@@ -228,8 +228,8 @@ You can read more about v3 API and what have changed in more depth [here](http:/
 
 #### Breaking Changes
 * Target framework is now .Net 4.6.  This change was necessary to reliably support using the thread culture for localization.
-* FormFlow ValidateAsyncDelegate now needs to return the value to set in the field.  This was in order to support programmatic value transformations.
-* The signature of Conversation.Resume has changed in order to support a resumption cookie to maintain conversation state across dialog resumption.
+* FormFlow ValidateAsyncDelegate now needs to return the value to set in the field.  This was to support programmatic value transformations.
+* The signature of Conversation.Resume has changed to support a resumption cookie to maintain conversation state across dialog resumption.
 * Moved to the latest Nuget packages including for the Bot Framework Connector.
 
 #### New Features

@@ -2,12 +2,12 @@
 title: Introduction to bot design | Microsoft Docs
 description: Learn about important factors to consider when planning and designing conversational applications and bots.
 keywords: bot framework, design, bot, introduction, overview
-author: matvelloso, robstand, kbrandl
+author: matvelloso
 manager: rstand
 ms.topic: design-article
 ms.prod: botframework
 ms.service: Bot Builder
-ms.date: 03/10/2017
+ms.date:
 ms.reviewer: rstand
 #ROBOTS: Index
 ---

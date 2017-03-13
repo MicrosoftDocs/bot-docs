@@ -89,7 +89,7 @@ In December 2016 we made a change to our security configuration that will become
 
 Each bot is its own service, and developers of these services are required to provide Terms of Service and Privacy Statements per their Developer Code of Conduct.  You can access this information from the bot’s card in the Bot Directory.
 
-In order to provide the I/O service, the Bot Framework transmits your message and message content (including your ID), from the chat service you used to the bot.
+to provide the I/O service, the Bot Framework transmits your message and message content (including your ID), from the chat service you used to the bot.
 
 ### How do you ban or remove bots from the service?
 

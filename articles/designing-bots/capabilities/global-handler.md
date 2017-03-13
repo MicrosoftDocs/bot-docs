@@ -95,7 +95,7 @@ This is the essence of how global handlers can be wired up in C#.
 
 Now let us see the case with Node:
 
-On Node we will be using triggerActions in order to tell the framework what are the triggers that will lead to the activation of certain dialogs.
+On Node we will be using triggerActions to tell the framework what are the triggers that will lead to the activation of certain dialogs.
 
 For example, for the cancel dialog:
 

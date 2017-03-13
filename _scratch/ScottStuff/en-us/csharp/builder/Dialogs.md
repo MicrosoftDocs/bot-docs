@@ -170,7 +170,7 @@ The stack is usually automatically managed for you.
 
 <span style="color:red">Not sure what "per-user, per-conversation" means.</span>
 
-The dialog stack and the state of all active dialogs are serialized to the per-user, per-conversation IBotDataBag. The serialized blob is persisted in the messages sent to and received from Bot Connector. In order to be serialized, **Dialog** classes must include the Serializable attribute. All of the **IDialog** implementations in the builder library are marked as serializable. 
+The dialog stack and the state of all active dialogs are serialized to the per-user, per-conversation IBotDataBag. The serialized blob is persisted in the messages sent to and received from Bot Connector. to be serialized, **Dialog** classes must include the Serializable attribute. All of the **IDialog** implementations in the builder library are marked as serializable. 
 
 <span style="color:red">What does the following mean?</span>
 

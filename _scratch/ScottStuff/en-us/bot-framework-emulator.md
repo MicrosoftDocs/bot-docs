@@ -37,7 +37,7 @@ And - a much requested feature, the new Emulator is open source, please check it
 
 Bot Framework Emulator is a desktop application that lets you test and debug your bot on localhost or running remotely through a tunnel. You can use the emulator to ensure that the messages that you send are properly configured. The advatage of using the emulator is that you don't have register it with the framework or configure it on a channel before you can test it. 
 
-The emulator uses the WebChat control in order to provide a consistent webchat experience. However, the experience may not reflect the actual experience that other channels provide especially when it comes to supporting and rendering rich cards (for example, a hero card), or if you're passing channel-specific data to take advantage of channel-specific features. For information about the types of messages that a channel supports, see [Channel Inspector](/en-us/channel-inspector/). Although the experience may not be the same, you can use the emulator to visually inspect the messages that your bot is passing to the channel.
+The emulator uses the WebChat control to provide a consistent webchat experience. However, the experience may not reflect the actual experience that other channels provide especially when it comes to supporting and rendering rich cards (for example, a hero card), or if you're passing channel-specific data to take advantage of channel-specific features. For information about the types of messages that a channel supports, see [Channel Inspector](/en-us/channel-inspector/). Although the experience may not be the same, you can use the emulator to visually inspect the messages that your bot is passing to the channel.
 
 ### Download the emulator
 

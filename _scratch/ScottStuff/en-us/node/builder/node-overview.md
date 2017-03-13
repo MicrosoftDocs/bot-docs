@@ -25,4 +25,4 @@ The SDK is provided as a library and as open source on GitHub. For details, see 
 The following sections provide details about building your bot using the SDK.
 
 |[Getting Started](/en-us/node/builder/getting-started/)|A quick start guide that shows you how to install the SDK and write a simple bot that responds to any user input with Hello, World!
-|[Chat Bots](/en-us/node/builder/chat-bots/)|Everything you need to know in order to build a great chat bot. This section covers connectors, dialogs, prompts, user data, and more. 
+|[Chat Bots](/en-us/node/builder/chat-bots/)|Everything you need to know to build a great chat bot. This section covers connectors, dialogs, prompts, user data, and more. 

@@ -10,7 +10,7 @@ parent2: Chat Bots
 
 One drawback to using a C# class to define your form is that it's static. An alternative is to use JObject for your state and define the form using JSON Schema. The advantage of using JObject for your state is that the form definition is entirely driven by data rather than the static definition of C#. The schema provides a way to describe the fields that make up your JObject and also supports annotations similar to C# attributes for controlling prompts, templates and terms.
 
-In order to utilize this feature, add the Microsoft.Bot.Builder.FormFlow.Json NuGet package to your project. This defines the Microsoft.Bot.Builder.FormFlow.Json namespace that contains the code that lets you use JSON Schema with FormFlow.
+to utilize this feature, add the Microsoft.Bot.Builder.FormFlow.Json NuGet package to your project. This defines the Microsoft.Bot.Builder.FormFlow.Json namespace that contains the code that lets you use JSON Schema with FormFlow.
 
 FormFlow makes use of a number of standard JSON Schema keywords including:
 

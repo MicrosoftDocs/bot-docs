@@ -23,7 +23,7 @@ There are 4 APIs available in Cognitive Services that can process images or vide
 ## Use Cases for Bots
 The Vision APIs are useful for any bot that receives images as input from users and wants to distill actionable information from them. Here are a few examples:
 
-- You can use the Computer Vision API to understand objects or even celebrities in an image. For example, [CaptionBot.ai](https://www.captionbot.ai/){:target="_blank"} is using the Computer Vision API to identify objects, people (celebrities), in order to generate a human-readable caption of the image.
+- You can use the Computer Vision API to understand objects or even celebrities in an image. For example, [CaptionBot.ai](https://www.captionbot.ai/){:target="_blank"} is using the Computer Vision API to identify objects, people (celebrities), to generate a human-readable caption of the image.
 - You can use the Face API to detect faces, along with infomation about people's age, gender and facial landmarks, and even match faces to similar ones. So your bot can respond appropriately according to a user's unique facial attributes.  
 - You can use the Emotion API to identify people's emotions. So, if a user uploads a sad selfie, the bot can reply with an appropriate message.
 

@@ -23,7 +23,7 @@ to exchange information with users.
 A bot can use a collection of UI controls (sometimes referred to as "cards"), to mimic an app or can even run embedded within an app. 
 When a bot is embedded within an app or website, it can represent virtually any UI control by leveraging the capabilities of the app that is hosting it. 
 
-For decades, application and website developers have relied on UI controls in order to enable users to interact with their applications. 
+For decades, application and website developers have relied on UI controls to enable users to interact with their applications. 
 These same UI controls can also be very effective in bots. For example, buttons are a great way to present the user with a simple choice. 
 Allowing the user to communicate "Hotels" by clicking a button labeled **Hotels** is easier and quicker than forcing the user to type "Hotels." 
 This especially holds true on mobile devices, where clicking is greatly preferred over typing. 
@@ -31,7 +31,7 @@ This especially holds true on mobile devices, where clicking is greatly preferre
 When designing your bot, do not automatically dismiss common UI elements as not being "smart enough." 
 As we discussed [previously](bot-framework-design-overview.md#design-guidance), your bot should be designed 
 to solve the user's problem in the best/quickest/easiest manner possible. 
-Whether or not your bot uses artificial intelligence (AI) is not directly relevant to this goal. 
+Whether your bot uses artificial intelligence (AI) is not directly relevant to this goal. 
 
 > [!TIP]
 > Start by using UI controls that enable the bot to solve the user's problem, 
@@ -48,8 +48,8 @@ There are many different types of text input that a bot might expect from a user
 Depending on the type of input that the user provides, natural language understanding may or may not be a good solution. 
 
 In some cases, a user may be **answering a very specific question**. 
-For example, if the bot asks "What is your name?", the user may answer with text that specifies 
-only the name (ex: "John") or with a sentence ("My name is John"). 
+For example, if the bot asks, "What is your name?", the user may answer with text that specifies 
+only the name, e.g., "John", or with a sentence, e.g., "My name is John". 
 By asking specific questions, a bot lessens the scope of potential responses that it might reasonably receive, 
 thereby decreasing the complexity of the logic that's needed to parse and understand the response. 
 For example, consider the following broad, open-ended question: "How are you feeling?". 
@@ -63,7 +63,7 @@ can parse and understand without needing to implement natural language understan
 
   
 In other cases, a user may be **typing a specific command**. 
-For example, a devops bot that enables developers to manage virtual machines could be designed to accept 
+For example, a DevOps bot that enables developers to manage virtual machines could be designed to accept 
 specific commands such as "/STOP VM XYZ" or "/START VM XYZ." 
 Designing a bot to accept specific commands like this makes for a good user experience, as the syntax is easy 
 to learn and the expected outcome of each command is clear. 
@@ -115,8 +115,7 @@ bots can communicate with users using a combination of rich user controls, text 
 You do not need to choose one over another. 
 For example, imagine a "cooking bot" that helps users with recipes. 
 The bot may provide instructions by playing a video or displaying a series of pictures to explain what needs to be done. 
-Some users may prefer to flip pages of the recipe or ask the bot questions using speech while they are assembling a recipe, 
-while others may prefer to touch the screen of a device instead of interacting with the bot via speech. 
+Some users may prefer to flip pages of the recipe or ask the bot questions using speech while they are assembling a recipe. Others may prefer to touch the screen of a device instead of interacting with the bot via speech. 
 When designing your bot, incorporate the UX elements that support the ways in which users will likely prefer 
 to interact with your bot, given the specific use cases that it is intended support. 
 

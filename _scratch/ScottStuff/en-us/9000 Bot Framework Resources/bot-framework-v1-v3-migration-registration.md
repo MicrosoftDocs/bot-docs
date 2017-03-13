@@ -51,7 +51,7 @@ Find the Configuration info panel and look at the App ID field. Follow these ins
 
 ## Step 2. Update your bot code to Version 3.0
 
-The changes below will require at least some code change to your bot.  In order to not disrupt your existing users, we suggest the following:
+The changes below will require at least some code change to your bot.  to not disrupt your existing users, we suggest the following:
 
 1. Create a new branch of your Bot's source code
 2. Update to the new SDK for your bot's language

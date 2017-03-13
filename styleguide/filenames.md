@@ -1,6 +1,6 @@
 ## Follow URL patterns for products and services
 
-URLs must be consistent, hierarchical, and as shallow as possible in order to perform well in search.
+URLs must be consistent, hierarchical, and as shallow as possible to perform well in search.
 
 To ensure well-structured URLs, use one of following URL patterns:
 

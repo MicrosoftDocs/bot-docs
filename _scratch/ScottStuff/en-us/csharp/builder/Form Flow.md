@@ -8,7 +8,7 @@ parent2: Chat Bots
 ---
 
 
-[Dialogs](/en-us/csharp/builder/dialogs/) are very powerful and flexible, but handling a guided conversation such as ordering a sandwich can require a lot of effort. At each point in the dialog, there are many possibilities of what happens next. For example, you may need to clarify an ambiguity, provide help, go back, or show progress. In order to simplify building guided conversations, the framework provides a powerful dialog building block known as FormFlow. 
+[Dialogs](/en-us/csharp/builder/dialogs/) are very powerful and flexible, but handling a guided conversation such as ordering a sandwich can require a lot of effort. At each point in the dialog, there are many possibilities of what happens next. For example, you may need to clarify an ambiguity, provide help, go back, or show progress. to simplify building guided conversations, the framework provides a powerful dialog building block known as FormFlow. 
 
 FormFlow sacrifices some of the flexibility that dialogs provide, but in a way that requires much less effort. Even better, you can combine FormFlow generated dialogs and other kinds of dialogs like a [LuisDialog](/en-us/csharp/builder/dialogs-luis/) to get the best of both worlds. A FormFlow dialog guides the user through filling in the form while providing help and guidance along the way.
 

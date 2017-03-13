@@ -10,7 +10,7 @@ Conversations can take many forms. For example, your bot can have a private conv
 
 Most of the time, users will start the conversation. If the user starts the conversation, your bot simply responds to messages that the user sends (see [Sending and receiving messages](../messages)). But sometimes your bot may want to start the conversation. For example, if your bot knows about the user's interests, and it learns of a news event or article that's related to one of their interests, your bot can start the conversation with the user to alert them to the article.
 
-In order to start a conversation, your bot needs to know its account information on that channel as well as the user's account information. If you're going to start conversations, make sure you cache the account information along with any other relevant information such as user preferences and locale (so the message uses the language of the user).
+to start a conversation, your bot needs to know its account information on that channel as well as the user's account information. If you're going to start conversations, make sure you cache the account information along with any other relevant information such as user preferences and locale (so the message uses the language of the user).
 
 To start the conversation, send a POST request to https://api.botframework.com/v3/conversations. The body of the request must contain a [Conversation](../reference/#conversation-object) object. You must specify your bot's account information and the account information of the users that you want to join the conversation. To determine whether the channel supports group conversations, and the maximum number of participants that it allows in a conversation, see the channel's documentation. 
 

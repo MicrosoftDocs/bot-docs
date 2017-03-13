@@ -15,7 +15,7 @@ There are many ways to deploy your bot to Azure, depending on your situation. We
 
 ## Prerequisites
 
-* In order to complete these steps, you need an [Azure Subscription](https://azure.microsoft.com/en-us/free/){:target="_blank"}.
+* to complete these steps, you need an [Azure Subscription](https://azure.microsoft.com/en-us/free/){:target="_blank"}.
 
 
 ## I want to setup continuous integration from my local git
