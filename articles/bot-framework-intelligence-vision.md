@@ -13,7 +13,12 @@ ms.reviewer: rstand
 
 # Include the following line commented out
 #ROBOTS: Index
+#REVIEW
 ---
+> [!WARNING]
+> The content in this article is still under development. The article may have errors in content, formatting,
+> and copy. The content may change dramatically as the article is developed.
+
 # Add image and video understanding to your bot
 The Vision APIs bring advanced image and video understanding skills to your bots. They are powered by state-of-the-art algorithms, which allow you to process images or videos and get back information you can transform into actions. For example, you can use them to recognize objects, people's faces, age, gender or even feelings. The Vision APIs support a variety of image understanding features, such as identifying mature or explicit content, estimating dominant and accent colors, categorizing the content of images, performing optical character recognition, as well as describing an image with complete english sentences. Additionally, the Vision APIs support several image and video processing capabilities, such as intelligently generating image or video thumbnails, or stabilizing the output of a video.
 

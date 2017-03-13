@@ -13,7 +13,12 @@ ms.reviewer: rstand
 
 # Include the following line commented out
 #ROBOTS: Index
+#REVIEW
 ---
+> [!WARNING]
+> The content in this article is still under development. The article may have errors in content, formatting,
+> and copy. The content may change dramatically as the article is developed.
+
 # Add language understanding to your bot
 The Cognitive Services Language APIs enable you to build smart bots that are able to understand and process natural language. This is a particularly important skill for bots as, in most cases, the interaction users have with bots is free-form. Thus, bots must be able to understand language the way people speak it: naturally and contextually. The Language APIs use powerful language models to determine what users want, identify concepts and entities in a given sentence, and ultimately allow bots to respond with the appropriate action. They support several text analytics capabilities, such as spell checking, sentiment detection, language modeling, and more, to extract more accurate and richer insights from text.   
 

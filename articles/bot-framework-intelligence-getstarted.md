@@ -13,7 +13,12 @@ ms.reviewer: rstand
 
 # Include the following line commented out
 #ROBOTS: Index
+#REVIEW
 ---
+> [!WARNING]
+> The content in this article is still under development. The article may have errors in content, formatting,
+> and copy. The content may change dramatically as the article is developed.
+
 # Add smarts to your bots with Microsoft Cognitive Services
 
 You can add smarts to your bots and make them more useful and engaging for your users. An intelligent bot has human-like senses and skills. It is able to understand what we are saying or writing in natural language and respond back, see our world as we see it, discover information and extract knowledge from different sources to provide useful answers, and more importantly learn as it acquires more experience to continuously improve its capabilities. Sounds daunting, but we are here to help you add some of these cognitive skills to your bot.

@@ -13,9 +13,11 @@ ms.reviewer: rstand
 
 # Include the following line commented out
 #ROBOTS: Index
+#REVIEW
 ---
-> [!IMPORTANT]
-> This content is still under development.
+> [!WARNING]
+> The content in this article is still under development. The article may have errors in content, formatting,
+> and copy. The content may change dramatically as the article is developed.
 
 # Add location control capabilities to your bot
 The Bing location control for Microsoft Bot Framework makes the process of collecting and validating the user's desired location in a conversation easy and reliable. The control is available for C# and Node.js and works consistently across all channels supported by Bot Framework.

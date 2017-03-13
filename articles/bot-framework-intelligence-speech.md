@@ -13,7 +13,12 @@ ms.reviewer: rstand
 
 # Include the following line commented out
 #ROBOTS: Index
+#REVIEW
 ---
+> [!WARNING]
+> The content in this article is still under development. The article may have errors in content, formatting,
+> and copy. The content may change dramatically as the article is developed.
+
 # Add speech recognition and conversion to your bot
 The Speech APIs allow you to add advanced speech skills to your bot that leverage industry-leading algorithms for speech-to-text and text-to-speech conversion, as well as speaker recognition. The Speech APIs use built-in language and acoustic models that cover a wide range of scenarios with high accuracy. In addition, for applications that require further customization, you can use the Custom Recognition Intelligent Service (CRIS), which allows you to calibrate the language and acoustic models of the speech recognizer by tailoring it to the vocabulary of the application, or even the speaking style of your users, thus achieving higher degree of accuracy.
 

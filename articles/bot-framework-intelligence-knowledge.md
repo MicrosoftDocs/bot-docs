@@ -13,7 +13,12 @@ ms.reviewer: rstand
 
 # Include the following line commented out
 #ROBOTS: Index
+#REVIEW
 ---
+> [!WARNING]
+> The content in this article is still under development. The article may have errors in content, formatting,
+> and copy. The content may change dramatically as the article is developed.
+
 # Add knowledge extraction to your bot
 The Knowledge APIs enable you to identify named entities in unstructured text, add personalized recommendations and semantic search capabilities to your application, and query existing knowledge graphs.
 
