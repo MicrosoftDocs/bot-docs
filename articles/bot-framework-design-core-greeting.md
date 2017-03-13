@@ -7,8 +7,8 @@ manager: rstand
 ms.topic: design-ui-and-ux-article
 ms.prod: botframework
 ms.service: Bot Builder
-ms.date: 02/16/2017
-ms.reviewer:rstand
+ms.date:
+ms.reviewer: rstand
 #ROBOTS: Index
 ---
 # Designing the first interaction

@@ -1,14 +1,14 @@
 ---
 title: Designing user experience within a bot | Microsoft Docs
-description: Learn how to design the user experience by combining rich controls, natural language, and voice in conversational applications (bots).
+description: Learn how to design the user experience by combining rich controls, natural language, and voice in conversational applications and bots.
 keywords: Bot Framework, Bot design, ux, ui, ux elements, ux controls, ui elements, ui controls
 author: matvelloso
 manager: rstand
 ms.topic: design-ui-and-ux-article
 ms.prod: botframework
 ms.service: Bot Builder
-ms.date: 02/20/2017
-ms.reviewer:
+ms.date:
+ms.reviewer: rstand
 #ROBOTS: Index
 ---
 # Designing the user experience

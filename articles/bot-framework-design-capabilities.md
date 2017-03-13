@@ -1,14 +1,14 @@
 ---
 title: Bot capabilities | Microsoft Docs
-description: Understand bot capabilities including message logging, proactive messages, calling and IVR, and global message handlers.
+description: Understand bot capabilities, including message logging, proactive messages, calling and IVR, and global message handlers.
 keywords: Bot Framework, Bot design, capabilities, message logging, proactive messages, calling and IVR bots, global message handlers
 author: matvelloso
 manager: rstand
 ms.topic: design-article
 ms.prod: botframework
 ms.service: Bot Builder
-ms.date: 02/21/2017
-ms.reviewer:
+ms.date:
+ms.reviewer: rstand
 #ROBOTS: Index
 ---
 
@@ -40,14 +40,14 @@ Consider the following scenario:
 
 In this example, the user has previously asked the bot to monitor prices of a hotel in Las Vegas. 
 At that time, the bot launched a background monitoring task, and it has been continuously running for the past several days. 
-In the current conversation, the user is in the midst of booking a trip to London, when  
+In the current conversation, the user is booking a trip to London when  
 the background task triggers a notification message about a discount for the Las Vegas hotel.
 The bot interjects this information into the current conversation, making for a confusing user experience. 
 
 How should the bot have handled this situation? 
 
-- Wait for the current travel booking to finish, then deliver the notification. This approach would be minimally disruptive, but the delay in communicating the information might cause the user to miss out on the low price opportunity for the Las Vegas hotel. 
-- Cancel the current travel booking flow and deliver the notification immediately. This approach delivers the information in a timely fashion, but would likely frustrate the user by forcing them start over with their travel booking. 
+- Wait for the current travel booking to finish, then deliver the notification. This approach would be minimally disruptive, but the delay in communicating the information might cause the user to miss out on the low-price opportunity for the Las Vegas hotel. 
+- Cancel the current travel booking flow and deliver the notification immediately. This approach delivers the information in a timely fashion but would likely frustrate the user by forcing them start over with their travel booking. 
 - Interrupt the current booking, change the topic of conversation to the hotel in Las Vegas until the user responds, and then switch back to the in-progress travel booking and continue from where it was interrupted. This approach may seem like the best choice, but it introduces complexity both for the bot developer and the user.
 
 Most commonly, your bot will use some combination of **ad hoc proactive messages** and **dialog-based proactive messages** to handle situations like this. 
@@ -62,10 +62,10 @@ When the user finishes all required tasks at the SurveyDialog, the SurveyDialog 
 thereby returning control to the previous dialog again, where the user can continue with the prior topic of conversation.
 
 As shown by this example, a dialog-based proactive message is more than just simple notification. 
-In sending the notifiction, the bot changes the topic of the existing conversation. 
-It then must decide whether to resume that conversation later, or to abandon that conversation altogether (by reseting the dialog stack). 
+In sending the notification, the bot changes the topic of the existing conversation. 
+It then must decide whether to resume that conversation later, or to abandon that conversation altogether (by resetting the dialog stack). 
 
-For a detailed walk through of how to send proactive messages, see:
+For a detailed walkthrough of how to send proactive messages, see:
 - [Send proactive messages using the Bot Builder SDK for .NET](~/bot-framework-dotnet-howto-proactive-messages.md)
 - [Send proactive messages using the Bot Builder SDK for Node.js](~/bot-framework-nodejs-howto-proactive-messages.md)
 
@@ -73,7 +73,7 @@ For a detailed walk through of how to send proactive messages, see:
 
 [!include[Introduction to global message handlers](../includes/snippet-global-handlers-intro.md)]
 
-For a detailed walk through of how to implement global message handlers, see:
+For a detailed walkthrough of how to implement global message handlers, see:
 - [Implement global message handlers using the Bot Builder SDK for .NET](bot-framework-dotnet-howto-global-handlers.md)
 - [Implement global message handlers using the Bot Builder SDK for Node.js](bot-framework-nodejs-howto-global-handlers.md)
 

@@ -8,7 +8,7 @@ ms.topic: design-principles-article
 
 ms.prod: botframework
 ms.service: Cognitive Services
-ms.date: 03/01/2017
+ms.date:
 ms.reviewer:
 
 # Include the following line commented out
@@ -20,10 +20,6 @@ ms.reviewer:
 > and copy. The content may change dramatically as the article is developed.
 
 # Principles for bot design
-
-> [!WARNING]
-> The content in this article is still under development. The article may have errors in content, formatting,
-> and copy. The content may change dramatically as the article is developed.
 
 These principles and best practices will help you design more engaging experiences for users of your bots.
 
