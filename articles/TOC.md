@@ -41,7 +41,7 @@
 ### [Manage conversation flow](bot-framework-dotnet-howto-manage-conversation-flow.md)
 ### [Send proactive messages](bot-framework-dotnet-howto-proactive-messages.md)
 # Build bots with Node.js
-## Overview
+## [Overview](bot-framework-nodejs-overview.md)
 ## [Get started](bot-framework-nodejs-getstarted.md)
 ## Key concepts
 ## Debugging
