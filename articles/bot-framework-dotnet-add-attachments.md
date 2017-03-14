@@ -41,7 +41,7 @@ The following code example shows how to add an image to a message.
 
 ## Sending rich cards
 
-A rich card is composed of a title, link, description and image(s). 
+A rich card is composed of a title, description, link, and image(s). 
 A message can contain multiple rich cards, displayed in either list format or carousel format.
 The Bot Framework currently supports four types of rich cards: Hero card, Thumbnail card, Receipt card, and Sign-in card.
 
@@ -53,7 +53,6 @@ The Bot Framework currently supports four types of rich cards: Hero card, Thumbn
 ### Hero card
 
 The Hero card typically contains a single large image, one or more buttons, and text. 
-It also specifies the action to initiate when a user taps the card. 
 
 The following code sample shows how to create a reply message that contains three Hero cards rendered in carousel format. 
 
@@ -61,8 +60,7 @@ The following code sample shows how to create a reply message that contains thre
 
 ### Thumbnail card
 
-The Thumbnail card typically contains a single small image, a button, and text. 
-It also specifies the action to initiate when a user taps the card. 
+The Thumbnail card typically contains a single small image, one or more buttons, and text. 
 
 The following code sample shows how to create a reply message that contains two Thumbnail cards rendered in list format. 
 
@@ -71,9 +69,7 @@ The following code sample shows how to create a reply message that contains two 
 ### Receipt card
 
 The Receipt card enables a bot to provide a receipt to the user. 
-It typically contains the list of items to include on the receipt (**Items[]**), 
-tax and total information (**Tax**, **VAT**, **Total**), and one or more buttons. 
-It also specifies the action to initiate when a user taps the card. 
+It typically contains the list of items to include on the receipt, tax and total information, and other text. 
 
 The following code sample shows how to create a reply message that contains a Receipt card. 
 
@@ -82,19 +78,43 @@ The following code sample shows how to create a reply message that contains a Re
 ### Sign-in card
 
 The Sign-in card enables a bot to request that a user sign-in. 
-It typically consists of text and one or more buttons that the user can click to initiate the sign-in process. 
+It typically contains text and one or more buttons that the user can click to initiate the sign-in process. 
 
 The following code sample shows how to create a reply message that contains a Sign-in card.
 
 [!code-csharp[Add SignInCard attachment](../includes/code/dotnet-add-attachments.cs#addSignInCardAttachment)]
 
-### Process button and card actions
+## Processing events within rich cards
 
+The code examples above show how to create buttons within rich cards by using the **CardAction** object. 
+By using card actions, you can specify the action that occurs whenever the user clicks a button or taps a 
+section of the card. Each **CardAction** object contains the following properties:
 
+| Property | Type | Description | 
+|----|----|----|
+| Type | string | type of action (one of the values specified in the table below) |
+| Title | string | title of the button |
+| Image | string | image URL for the button |
+| Value | string | value needed to perform the specified type of action |
+
+The following table lists the valid values for **CardAction.Type** and describes 
+the expected contents of **CardAction.Value** for each type.
+
+| CardAction.Type | CardAction.Value | 
+|----|----|
+| openUrl | URL to be opened in the built-in browser |
+| imBack | Text of the message to send to the bot (from the user who clicked the button or tapped the card). This message (from user to bot) will be visible to all conversation participants via the client application that is hosting the conversation. |
+| postBack | Text of the message to send to the bot (from the user who clicked the button or tapped the card). This message will not be displayed by the client application that is hosting the conversation. |
+| call | Destination for a phone call in the following format: **tel:123123123123** |
+| playAudio | URL of audio to be played |
+| playVideo | URL of video to be played |
+| showImage | URL of image to be displayed |
+| downloadFile | URL of file to be downloaded |
+| signin | URL of OAuth flow to be initiated |
 
 ## Next steps
 
-In this article, we learned how to add attachments to messages using the Bot Framework Connector service via the 
-Bot Builder SDK for .NET. 
+In this article, we learned how to add media attachments and rich cards to messages 
+using the Bot Framework Connector service via the Bot Builder SDK for .NET. 
 For more information about creating messages using the Bot Builder SDK for .NET, 
 explore the remaining articles in this section. 
