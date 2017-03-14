@@ -1,7 +1,7 @@
 ---
-title: Send and receive attachments | Microsoft Docs
-description: Learn how to send and receive cards that contain buttons in a conversational application (bot).
-keywords: bot framework, bot, cards, rich card, buttons, send messages, image
+title: Recognize intent | Microsoft Docs
+description: Learn how to recognize the user's intent in a conversational application (bot).
+keywords: bot framework, bot, intent, recognize, recognizer
 author: DeniseMak
 manager: rstand
 ms.topic: develop-article
@@ -42,7 +42,6 @@ recognizer that looks for the user to send an image or calls an external web ser
 var builder = require('../../core/');
 
 // Create bot and default message handler
-
 var connector = new builder.ConsoleConnector().listen();
 var bot = new builder.UniversalBot(connector, function (session) {
     session.send("You said: '%s'. Try asking for 'help' or say 'goodbye' to quit", session.message.text);
@@ -51,7 +50,6 @@ var bot = new builder.UniversalBot(connector, function (session) {
 
 
 // Install a custom recognizer to look for user saying 'help' or 'goodbye'.
-
 bot.recognizer({
   recognize: function (context, done) {
   var intent = { score: 0.0 };
