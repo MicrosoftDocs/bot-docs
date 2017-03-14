@@ -15,9 +15,7 @@ ms.reviewer:
 #ROBOTS: Index
 #REVIEW
 ---
-> [!WARNING]
-> The content in this article is still under development. The article may have errors in content, formatting,
-> and copy. The content may change dramatically as the article is developed.
+
 
 # Add smarts to your bots with Microsoft Cognitive Services
 
