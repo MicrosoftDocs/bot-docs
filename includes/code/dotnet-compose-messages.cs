@@ -3,6 +3,20 @@ message.Text = "Hello!";
 message.Locale = "en-Us";
 // </setBasicProperties>
 
+// <setMention>
+var entity = new Entity();
+entity.SetAs(new Mention()
+{
+    Text = "@johndoe",
+    Mentioned = new ChannelAccount()
+    {
+        Name = "John Doe",
+        Id = "UV341235"
+    }
+});
+entities.Add(entity);
+// </setMention>
+
 // <setGeoCoord>
 var entity = new Entity();
 entity.SetAs(new Place()

@@ -78,9 +78,9 @@ objects which allows the exchange of common contextual metadata between the chan
 
 ### Mention entities
 
-Many channels support the ability for a bot or user to "mention" someone else within the context of a conversation. 
+Many channels support the ability for a bot or user to "mention" someone within the context of a conversation. 
 
-To mention a user in a message, your bot can populate the message's **Entities** property with a **Mention** object. 
+To mention a user in a message, populate the message's **Entities** property with a **Mention** object. 
 The **Mention** object contains the following properties: 
 
 | Property | Description | 
@@ -89,16 +89,15 @@ The **Mention** object contains the following properties:
 | mentioned | **ChannelAccount** object that indicates which user was mentioned | 
 | text | text within the **Activity.text** property that represents the mention itself (may be empty or null) |
 
-For example, for a bot to mention user John Doe in a conversation on the Slack channel, 
-the following JSON would need to be present in the message that's sent to the channel:
+The following code example shows how to add a **Mention** entity to the **Entities** collection.
 
-[!code-javascript[mention JSON](../includes/code/dotnet-compose-messages.js#mentionJSON)]
+[!code-csharp[set Mention](../includes/code/dotnet-compose-messages.cs#setMention)]
 
 > [!TIP]
 > You bot may want to identify when it is mentioned in a message, so that it may 
 > ignore that portion of the message when attempting to determine user intent. 
-> To determine whether it was mentioned in a message, your bot may call the **GetMentions** method, 
-> which returns a collection of **Mention** objects.
+> To determine whether your bot was mentioned in a message, call the **GetMentions** method 
+> and evaluate the **Mention** objects that are returned in the response.
 
 ### Place entities
 
@@ -111,28 +110,24 @@ The **Place** object contains the following properties:
 | Property | Description | 
 |----|----|
 | Type | type of the entity ("Place") |
-| Address | string description or **PostalAddress** object (future) | 
+| Address | description or **PostalAddress** object (future) | 
 | Geo | GeoCoordinates | 
 | HasMap | URL to a map or **Map** object (future) |
-| Name | the name of the place |
+| Name | name of the place |
 
 The **GeoCoordinates** object contains the following properties:
 
 | Property | Description | 
 |----|----|
 | Type | type of the entity ("GeoCoordinates") |
-| Name | the name of the place |
+| Name | name of the place |
 | Longitude | longitude of the location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">WGS 84</a>) | 
 | Longitude | latitude of the location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">WGS 84</a>) | 
 | Elevation | elevation of the location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">WGS 84</a>) | 
 
-The following code example shows how to add **Place** entity to the **Entities** collection.
+The following code example shows how to add a **Place** entity to the **Entities** collection.
 
 [!code-csharp[set GeoCoordinates](../includes/code/dotnet-compose-messages.cs#setGeoCoord)]
-
-This code generates the following JSON within the message that's sent to the channel:
-
-[!code-javascript[set GeoCoordinates JSON](../includes/code/dotnet-compose-messages.js#setGeoCoordJSON)]
 
 ### Consuming entities
 
