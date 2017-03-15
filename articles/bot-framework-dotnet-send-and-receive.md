@@ -93,12 +93,12 @@ for the user that made the request.
 Your bot may send an **endOfConversation** activity to indicate to the user that the conversation is ending. 
 Likewise, your bot may receive an **endOfConversation** activity to indidate that the user has ended the conversation. 
 
-##<a id="create-client"></a> Creating a connector client
+##<a id="create-client"></a> Create a connector client
 
 The **ConnectorClient** class contains the methods that a bot uses to communicate with a user on a channel. 
 When your bot receives an [Activity](bot-framework-dotnet-concepts.md#activity) object from the Connector service, 
-it should use the **ServiceUrl** specified for that activity to create the connector client that it'll subsequently 
-use to generate a response. 
+it should use the **ServiceUrl** specified for that activity to create the connector client that it'll 
+subsequently use to generate a response. 
 
 [!code-csharp[Create connector client](../includes/code/dotnet-send-and-receive.cs#createConnectorClient)]
 
@@ -109,7 +109,7 @@ use to generate a response.
 > If your bot needs to initiate the conversation, it can use a cached endpoint for the specified channel 
 > (since there will be no incoming **Activity** object in that scenario), but it should refresh cached endpoints often. 
 
-##<a id="create-reply"></a> Creating a reply
+##<a id="create-reply"></a> Create a reply
 
 The Connector uses an [Activity](bot-framework-dotnet-concepts.md#activity) object to pass information back and forth between bot and channel (user). 
 Every activity contains information used for routing the message to the appropriate destination 
@@ -130,7 +130,7 @@ with the **Recipient**, **From**, and **Conversation** property automatically po
 
 [!code-csharp[Create reply](../includes/code/dotnet-send-and-receive.cs#createReply)]
 
-## Sending a reply
+## Send a reply
 
 Once you've created a reply, you can send it by calling the connector client's **ReplyToActivity** method. 
 The Connector service will deliver the reply using the appropriate channel semantics. 
@@ -140,7 +140,7 @@ The Connector service will deliver the reply using the appropriate channel seman
 > [!TIP]
 > If your bot is replying to a user's message, always use the **ReplyToActivity** method.
 
-## Sending a (non-reply) message 
+## Send a (non-reply) message 
 
 If your bot is part of a conversation, it can send a message that is not a direct reply to 
 any message from the user by calling the **SendToConversation** method. 
@@ -159,7 +159,7 @@ any message from the user by calling the **SendToConversation** method.
 > Additionally, if the bot sends multiple messages in quick succession, 
 > the channel may not always render the messages in the proper sequence.
 
-## Starting a conversation
+## Start a conversation
 
 There may be times when your bot needs to initiate a conversation with one or more users. 
 You can start a conversation by calling either the **CreateDirectConversation** method (for a private conversation with a single user) 

@@ -34,7 +34,7 @@ This article describes how to use a message activity's **ChannelData** property 
 > **channelData** JSON property in various scenarios. 
 > To create a JSON object using .NET, use the **JObject** (.NET) class. 
 
-## Creating a custom Email message
+## Create a custom Email message
 
 To create an email message, set the **Activity** object's **ChannelData** property 
 to a JSON object that contains the following properties. 
@@ -53,7 +53,7 @@ The following snippet shows an example of the **channelData** property for a cus
 
 [!code-javascript[Email channelData](../includes/code/dotnet-channelData.json#emailChannelData)]
 
-## Creating a full-fidelity Slack message
+## Create a full-fidelity Slack message
 
 To create a full-fidelity Slack message, 
 set the **Activity** object's **ChannelData** property to a JSON object that specifies 
@@ -85,7 +85,7 @@ the **payload** object's **response_url** property.
 For information about when and how to post a response to the **response_url**, see 
 <a href="https://api.slack.com/docs/message-buttons" target="_blank">Slack Buttons</a>. 
 
-## Creating a Facebook notification
+## Create a Facebook notification
 
 To create a Facebook notification, 
 set the **Activity** object's **ChannelData** property to a JSON object that specifies the following properties. 
@@ -103,7 +103,7 @@ The following snippet shows an example of the **channelData** property for a Fac
 
 [!code-javascript[Facebook channelData](../includes/code/dotnet-channelData.json#facebookChannelData)]
 
-## Creating a Telegram message
+## Create a Telegram message
 
 To create a message that implements Telegram-specific actions, 
 such as sharing a voice memo or a sticker, 
@@ -151,7 +151,7 @@ The following snippet shows an example of a **channelData** property that specif
 
 [!code-javascript[Telegram channelData](../includes/code/dotnet-channelData.json#telegramChannelData2)]
 
-## Creating a native Kik message
+## Create a native Kik message
 
 To create a native Kik message, 
 set the **Activity** object's **ChannelData** property to a JSON object that specifies the following property.
