@@ -43,7 +43,7 @@ Your bot will send **message** activities to communicate information to users, a
 will also receive **message** activities from users. 
 Some messages may simply consist of plain text, while others may contain richer content such as 
 [media attachments, buttons, and cards](bot-framework-dotnet-add-attachments.md). 
-For information about commonly-used message properties, see [Compose messages](bot-framework-dotnet-compose-messages.md).
+For information about commonly-used message properties, see [Create messages](bot-framework-dotnet-create-messages.md).
 
 ### conversationUpdate
 
@@ -186,6 +186,6 @@ The following code example uses the **CreateConversation** method to create a gr
 
 ## Additional resources
 
-- [Compose messages](bot-framework-dotnet-compose-messages.md)
+- [Create messages](bot-framework-dotnet-create-messages.md)
 - [Add attachments to messages](bot-framework-dotnet-add-attachments.md)
 - [Implement channel-specific functionality](bot-framework-dotnet-channeldata.md)

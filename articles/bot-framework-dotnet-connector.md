@@ -22,7 +22,7 @@ by relaying messages from bot to channel and from channel to bot.
 The following articles provide information about using the Connector-related components of the Bot Builder SDK for .NET. 
 
 - [Send and receive activities](bot-framework-dotnet-send-and-receive.md)
-- [Compose messages](bot-framework-dotnet-compose-messages.md)
+- [Create messages](bot-framework-dotnet-create-messages.md)
 - [Add attachments to messages](bot-framework-dotnet-add-attachments.md)
 - [Implement channel-specific functionality](bot-framework-dotnet-channeldata.md)
 - [Secure your bot](bot-framework-dotnet-security.md)

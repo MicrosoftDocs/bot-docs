@@ -17,7 +17,7 @@ ms.reviewer:
 By using the **Activity** object's **ChannelData** property 
 to pass native metadata to a channel, 
 you can implement channel-specific functionality that is not possible to achieve
-by using [message text and attachments](bot-framework-dotnet-compose-messages.md) alone. 
+by using [message text and attachments](bot-framework-dotnet-create-messages.md) alone. 
 This article describes how to use a message activity's **ChannelData** property to implement the following channel-specific functionality.
 
 | Channel | Functionality |
@@ -167,5 +167,5 @@ The following snippet shows an example of the **channelData** property for a nat
 ## Additional resources
 
 - [Send and receive activities](bot-framework-dotnet-send-and-receive.md)
-- [Compose messages](bot-framework-dotnet-compose-messages.md)
+- [Create messages](bot-framework-dotnet-create-messages.md)
 - [Add attachments to messages](bot-framework-dotnet-add-attachments.md)
