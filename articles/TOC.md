@@ -44,7 +44,7 @@
 # Build bots with Node.js
 ## [Overview](bot-framework-nodejs-overview.md)
 ## [Get started](bot-framework-nodejs-getstarted.md)
-## Key concepts
+## [Key concepts](bot-framework-nodejs-concepts.md)
 ## Debugging
 ## How to
 ### [Manage conversation flow](bot-framework-nodejs-howto-manage-conversation-flow.md)
