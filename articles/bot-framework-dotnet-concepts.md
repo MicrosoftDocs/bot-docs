@@ -90,7 +90,7 @@ The following snippet shows an example of an Activity object serialized for tran
 }
 ```
 
-## Next steps
+## Additional resources
 
 > [!NOTE]
 > Content coming soon...

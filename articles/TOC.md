@@ -4,6 +4,7 @@
 ## [Bot scenarios](bot-framework-overview-scenarios.md)
 ## [Core concepts](bot-framework-concepts-overview.md)
 ## [Get started](bot-framework-botbuilder-overview.md)
+## [Try it out](bot-framework-sample-bot.md)
 # Designing bots
 ## [Overview](bot-framework-design-overview.md)
 ## [Principles and practices](bot-framework-design-best-practices.md)
@@ -43,7 +44,7 @@
 # Build bots with Node.js
 ## [Overview](bot-framework-nodejs-overview.md)
 ## [Get started](bot-framework-nodejs-getstarted.md)
-## Key concepts
+## [Key concepts](bot-framework-nodejs-concepts.md)
 ## Debugging
 ## How to
 ### [Manage conversation flow](bot-framework-nodejs-howto-manage-conversation-flow.md)

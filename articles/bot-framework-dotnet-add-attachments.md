@@ -26,7 +26,7 @@ Within an **Activity** object, the **Attachments** property contains an array of
 that represent any attachments on the message. 
 An attachment may be a media attachment (e.g., image, video, audio, file) or a rich card attachment.
 
-## Sending media attachments
+## Send media attachments
 
 To include a media attachment within a message, 
 simply create an **Attachment** object and set the **ContentType**, **ContentUrl**, and **Name** properties. 
@@ -39,7 +39,7 @@ The following code example shows how to add an image to a message.
 > attachment data to the channel in a way that enables the channel to render that attachment within the conversation. 
 > If the attachment is a file, the file URL will be rendered as a hyperlink within the conversation.
 
-## Sending rich cards
+## Send rich cards
 
 A rich card is composed of a title, description, link, and image(s). 
 A message can contain multiple rich cards, displayed in either list format or carousel format.
@@ -84,7 +84,7 @@ The following code sample shows how to create a reply message that contains a Si
 
 [!code-csharp[Add SignInCard attachment](../includes/code/dotnet-add-attachments.cs#addSignInCardAttachment)]
 
-## Processing events within rich cards
+## Process events within rich cards
 
 The code examples above show how to create buttons within rich cards by using the **CardAction** object. 
 By using card actions, you can specify the action that occurs whenever the user clicks a button or taps a 
@@ -112,9 +112,8 @@ the expected contents of **CardAction.Value** for each type.
 | downloadFile | URL of file to be downloaded |
 | signin | URL of OAuth flow to be initiated |
 
-## Next steps
+## Additional resources
 
-In this article, we learned how to add media attachments and rich cards to messages 
-using the Bot Framework Connector service via the Bot Builder SDK for .NET. 
-For more information about creating messages using the Bot Builder SDK for .NET, 
-explore the remaining articles in this section. 
+- [Send and receive activities](bot-framework-dotnet-send-and-receive.md)
+- [Compose messages](bot-framework-dotnet-compose-messages.md)
+- [Implement channel-specific functionality](bot-framework-dotnet-channeldata.md)

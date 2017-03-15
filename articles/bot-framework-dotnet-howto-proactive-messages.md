@@ -11,7 +11,7 @@ ms.date: 02/22/2017
 ms.reviewer:
 #ROBOTS: Index
 ---
-# Send proactive messages using with the Bot Builder SDK for .NET
+# Send proactive messages
 > [!div class="op_single_selector"]
 > * [.NET](bot-framework-dotnet-howto-proactive-messages.md)
 > * [Node.js](bot-framework-nodejs-howto-proactive-messages.md)

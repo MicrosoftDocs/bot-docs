@@ -12,7 +12,7 @@ ms.reviewer:
 #ROBOTS: Index
 ---
 
-# Intercept messages using the Bot Builder SDK for .NET
+# Intercept messages
 > [!div class="op_single_selector"]
 > * [.NET](bot-framework-dotnet-howto-middleware.md)
 > * [Node.js](bot-framework-nodejs-howto-middleware.md)

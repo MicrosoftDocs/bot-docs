@@ -84,6 +84,6 @@ To learn more about building great bots with the Bot Framework, see the followin
 
 - [Key concepts in the Bot Framework](bot-framework-concepts-overview.md)
 - [Introduction to bot design](bot-framework-design-overview.md)
-- TBD (develop articles)
+- [Bot Builder SDK for Node.js](bot-framework-nodejs-overview.md)
 - [Publish a bot to the Bot Framework](bot-framework-publish-overview.md)
-- TBD (resources articles)
+- [Bot Framework FAQ](bot-framework-faq.md)
