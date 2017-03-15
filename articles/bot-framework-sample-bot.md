@@ -22,4 +22,4 @@ Many messaging channels provide the ability to attach richer objects. The Bot Fr
 
 Try it out by saying "hi."
 
-<iframe style="height:768px; width:502px" src='https://webchat.botframework.com/embed/cardssamplebot?s=xDzGGjORPuQ.cwA.Eq0.tnCOfRExXIQHEb-OFpbjVQREPF9SPGAYZaerT2_feTc'></iframe>
+<iframe style="height:568px; width:502px" src='https://webchat.botframework.com/embed/cardssamplebot?s=xDzGGjORPuQ.cwA.Eq0.tnCOfRExXIQHEb-OFpbjVQREPF9SPGAYZaerT2_feTc'></iframe>
