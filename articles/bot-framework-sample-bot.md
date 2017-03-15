@@ -18,8 +18,8 @@ ms.reviewer:
 # Try out a bot
 This bot renders several types of cards as attachments, while also showing the generated JSON for each one of these cards at the message's payload.
 
-Many messaging channels provide the ability to attach richer objects. The Bot Framework has the ability to render rich cards as attachments. There are several types of cards supported: Hero Card, Thumbnail Card, Receipt Card, Sign-In Card, Animation Card, Video Card, and Audio Card.
+Many messaging channels provide the ability to attach richer objects. The Bot Framework has the ability to render rich cards as attachments. Several types of cards are supported in this bot: Hero Card, Thumbnail Card, Receipt Card, Sign-In Card, Animation Card, Video Card, and Audio Card.
 
-Try it out by saying "hi" and see what happens.
+Try it out by saying "hi."
 
-<iframe style="height:480px; width:402px" src='https://webchat.botframework.com/embed/cardssamplebot?s=xDzGGjORPuQ.cwA.Eq0.tnCOfRExXIQHEb-OFpbjVQREPF9SPGAYZaerT2_feTc'></iframe>
+<iframe style="height:768px; width:502px" src='https://webchat.botframework.com/embed/cardssamplebot?s=xDzGGjORPuQ.cwA.Eq0.tnCOfRExXIQHEb-OFpbjVQREPF9SPGAYZaerT2_feTc'></iframe>
