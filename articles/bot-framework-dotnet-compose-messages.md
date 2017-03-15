@@ -146,8 +146,8 @@ The following code example shows how to use a strongly-typed class to process an
 The **ChannelData** property of a message activity can be used to implement channel-specific functionality. 
 For details, see [Implement channel-specific functionality](bot-framework-dotnet-channeldata.md).
 
-## Next steps
+## Additional resources
 
-In this article, we discussed some of the commonly-used message properties. 
-For more information about creating messages using the Bot Builder SDK for .NET, 
-explore the remaining articles in this section. 
+- [Send and receive activities](bot-framework-dotnet-send-and-receive.md)
+- [Add attachments to messages](bot-framework-dotnet-add-attachments.md)
+- [Implement channel-specific functionality](bot-framework-dotnet-channeldata.md)

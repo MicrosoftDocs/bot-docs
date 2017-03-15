@@ -184,9 +184,8 @@ The following code example uses the **CreateConversation** method to create a gr
 
 [!code-csharp[Start group conversation](../includes/code/dotnet-send-and-receive.cs#startGroupConversation)]
 
-## Next steps
+## Additional resources
 
-In this article, we discussed activity types and 
-learned how to exchange information between bot and user on a channel. 
-For more information about using the Connector service via the Bot Builder SDK for .NET, 
-explore the remaining articles in this section. 
+- [Compose messages](bot-framework-dotnet-compose-messages.md)
+- [Add attachments to messages](bot-framework-dotnet-add-attachments.md)
+- [Implement channel-specific functionality](bot-framework-dotnet-channeldata.md)

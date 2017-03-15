@@ -112,9 +112,8 @@ the expected contents of **CardAction.Value** for each type.
 | downloadFile | URL of file to be downloaded |
 | signin | URL of OAuth flow to be initiated |
 
-## Next steps
+## Additional resources
 
-In this article, we learned how to add media attachments and rich cards to messages 
-using the Bot Framework Connector service via the Bot Builder SDK for .NET. 
-For more information about creating messages using the Bot Builder SDK for .NET, 
-explore the remaining articles in this section. 
+- [Send and receive activities](bot-framework-dotnet-send-and-receive.md)
+- [Compose messages](bot-framework-dotnet-compose-messages.md)
+- [Implement channel-specific functionality](bot-framework-dotnet-channeldata.md)
