@@ -109,7 +109,7 @@ use to generate a response.
 > If your bot needs to initiate the conversation, it can use a cached endpoint for the specified channel 
 > (since there will be no incoming **Activity** object in that scenario), but it should refresh cached endpoints often. 
 
-## Creating a reply
+##<a id="create-reply"></a> Creating a reply
 
 The Connector uses an [Activity](bot-framework-dotnet-concepts.md#activity) object to pass information back and forth between bot and channel (user). 
 Every activity contains information used for routing the message to the appropriate destination 
