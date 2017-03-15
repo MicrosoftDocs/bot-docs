@@ -2,14 +2,14 @@
 title: Get Started with Intelligence in the Bot Framework | Microsoft Docs
 description: Get started with adding intelligence to your bots by using Microsoft Cognitive Services.
 keywords: intelligence, vision, speech, knowledge, search, language, cognitive
-author: RobStand
+author: v-tosisk
 manager: rstand
 ms.topic: intelligence-getstarted-article
 
 ms.prod: botframework
 ms.service: Cognitive Services
-ms.date: 03/01/2017
-ms.reviewer:
+ms.date: 03/15/2017
+ms.reviewer:rstand
 
 # Include the following line commented out
 #ROBOTS: Index
@@ -41,7 +41,7 @@ Simply drop the API call into your bot’s code and you are set. You can find mo
 You can sign up for free trials with an email and a few <a href="https://www.microsoft.com/cognitive-services/en-us/sign-up" target="_blank">simple steps</a>. You will need a Microsoft Account if you don't already have one. You will receive a unique pair of keys for each API requested. The second one is just a spare. Do not share the secret keys with anyone. Trials have both rate limit (in terms of transactions per second or minute) and a monthly usage cap. A transaction is the same as an API call. You can upgrade to paid tiers to unlock the restrictions.
 
 ## Subscription management
-Once you are signed in with a Microsoft Account you will be able to access your <a href="(https://www.microsoft.com/cognitive-services/en-us/subscriptions)" target="_blank">subscriptions page</a> to show the products you are using, the quota remaining, and additional products you can add to your subscription.
+Once you are signed in with a Microsoft Account you will be able to access your <a href="https://www.microsoft.com/cognitive-services/en-us/subscriptions" target="_blank">subscriptions page</a> to show the products you are using, the quota remaining, and additional products you can add to your subscription.
 
 ## Upgrade to unlock limits
 All the APIs will have a free trial plan. As paid offerings become available for each API you will be directed to the Azure portal to complete the purchase. Find **Buy** links in your Subscriptions page if you are already using them or you can skip the trial altogether and <a href="https://www.microsoft.com/cognitive-services/en-us/pricing" target="_blank">purchase the API service</a>. 
