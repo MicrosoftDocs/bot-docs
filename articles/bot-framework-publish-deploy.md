@@ -51,7 +51,7 @@ This article provides detailed walkthroughs of the different options for deployi
 > You must have a Microsoft Azure subscription before you can deploy your bot to Microsoft Azure.
 If you do not already have a subscription, you can register for a [free trial](https://azure.microsoft.com/en-us/free/).
 
-## <a id="git"></a>Deploy a Node.js bot to Azure via continuous integration
+## <a id="git"></a>Deploy a Node.js bot to Azure via continuous integration from a local Git repo
 
 Azure allows continuous integration of your Git repository with your Azure deployment.
 With continuous integration, when you change and build your bot's code, the bot will automatically deploy to Azure.
@@ -113,7 +113,7 @@ After you've entered your deployment credentials at the command prompt, your bot
 
 After you've successfully verified the connection to your bot, see [next steps](#next).
 
-## <a id="github"></a>Option 2: Deploy a Node.js bot to Azure (via continuous integration from GitHub)
+## <a id="github"></a>Deploy a Node.js bot to Azure via continuous integration from GitHub)
 
 > [!IMPORTANT]
 > To implement this process, you must have a <a href="http://github.com/" target="_blank">GitHub</a> account.
@@ -180,7 +180,7 @@ values that you acquired when you [registered](bot-framework-publish-register.md
 
 After you've successfully verified the connection to your bot, see [next steps](#next).
 
-## <a id="vs"></a>Option 3: Deploy a .NET bot to Azure from Visual Studio
+## <a id="vs"></a>Deploy a .NET bot to Azure from Visual Studio
 
 The process of deploying a bot via Visual Studio consists of the following steps:
 
