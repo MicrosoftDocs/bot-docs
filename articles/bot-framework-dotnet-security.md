@@ -42,7 +42,7 @@ simply specify the **[BotAuthentication]** attribute.
 
 [!code-csharp[Use BotAuthentication attribute](../includes/code/dotnet-security.cs#attribute1)]
 
-Alternatively, to use specific values for authentication credentials, 
+To use other values for authentication credentials, 
 specify the **[BotAuthentication]** attribute and pass in those values.
 
 [!code-csharp[Use BotAuthentication attribute with parameters](../includes/code/dotnet-security.cs#attribute2)]

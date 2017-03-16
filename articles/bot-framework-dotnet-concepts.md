@@ -45,6 +45,11 @@ For details about using dialogs within the Bot Builder SDK for .NET, see
 
 For details about using FormFlow within the BotBuilder SDK for .NET, see [FormFlow](bot-framework-dotnet-formflow.md).
 
+## State
+
+> [!NOTE]
+> Content coming soon...
+
 ## Naming conventions
 
 The Bot Builder SDK for .NET library uses strongly-typed, pascal-cased naming conventions. 

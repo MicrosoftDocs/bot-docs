@@ -30,10 +30,10 @@
 ### [Create messages](bot-framework-dotnet-create-messages.md)
 ### [Add attachments to messages](bot-framework-dotnet-add-attachments.md)
 ### [Implement channel-specific functionality](bot-framework-dotnet-channeldata.md)
-## Connector
-### [Send and receive activities](bot-framework-dotnet-connector.md)
+## [Connector](bot-framework-dotnet-connector.md)
 ## [Dialogs](bot-framework-dotnet-dialogs.md)
 ### [FormFlow](bot-framework-dotnet-formflow.md)
+## [State](bot-framework-dotnet-state.md)
 ## [Debugging](bot-framework-dotnet-debugging.md)
 ## How to
 ### [Conduct audio calls](bot-framework-dotnet-howto-audio-calls.md)

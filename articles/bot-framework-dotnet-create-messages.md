@@ -12,7 +12,7 @@ ms.reviewer: rstand
 #ROBOTS: Index
 ---
 
-# Compose messages
+# Create messages
 
 Your bot will send **message** [activities](bot-framework-dotnet-activities.md) to communicate information to users, 
 and likewise, will also receive **message** activities from users. 

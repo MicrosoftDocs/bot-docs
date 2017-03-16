@@ -12,7 +12,7 @@ ms.reviewer:
 #ROBOTS: Index
 ---
 
-# Send and receive activities
+# Send and receive activities using the Connector
 
 The Bot Framework Connector provides a single REST API that enables a bot to communicate across multiple 
 channels such as Skype, Email, Slack, and more. 
