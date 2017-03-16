@@ -8,12 +8,12 @@ ms.topic: intelligence-vision-article
 
 ms.prod: botframework
 ms.service: Cognitive Services
-ms.date: 03/01/2017
-ms.reviewer:
+ms.date: 
+ms.reviewer: v-tosisk
 
 # Include the following line commented out
 #ROBOTS: Index
-#REVIEW
+
 ---
 
 
@@ -26,7 +26,7 @@ The Vision APIs support a variety of image understanding features. They can iden
 > [!TIP]
 > You can play with the popular <a href="https://www.captionbot.ai/" target="_blank">CaptionBot.ai</a> to see some of the Vision APIs in action. If you want to explore more, you can find detailed documentation about each API, including developer guides and API references, on the <a href="https://www.microsoft.com/cognitive-services/en-us/documentation" target="_blank">documentation site</a>.
 
-Cognitive Services provide 4 APIs you can use to process images or videos:
+Cognitive Services provide four APIs you can use to process images or videos:
 
 ## Computer Vision API
 The <a href="https://www.microsoft.com/cognitive-services/en-us/computer-vision-api" target="_blank">Computer Vision API</a> extracts rich information about images (such as objects or people), determines if the image contains mature or explicit content, and processes text (OCR) in images.

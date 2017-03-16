@@ -2,18 +2,18 @@
 title: Get Started with Intelligence in the Bot Framework | Microsoft Docs
 description: Get started with adding intelligence to your bots by using Microsoft Cognitive Services.
 keywords: intelligence, vision, speech, knowledge, search, language, cognitive
-author: v-tosisk
+author: robstand
 manager: rstand
 ms.topic: intelligence-getstarted-article
 
 ms.prod: botframework
 ms.service: Cognitive Services
-ms.date: 03/15/2017
-ms.reviewer:rstand
+ms.date:
+ms.reviewer: v-tosisk
 
 # Include the following line commented out
 #ROBOTS: Index
-#REVIEW
+
 ---
 
 
