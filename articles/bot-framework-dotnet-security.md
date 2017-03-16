@@ -37,12 +37,14 @@ After you have registered your bot, specify its app Id and password in your bot'
 Then, use the **[BotAuthentication]** attribute to specify authentication credentials when 
 using the Bot Builder SDK for .NET to create your bot.
 
-- To use the authentication credentials that are stored in the web.config file, 
+To use the authentication credentials that are stored in the web.config file, 
 simply specify the **[BotAuthentication]** attribute.
+
 [!code-csharp[Use BotAuthentication attribute](../includes/code/dotnet-security.cs#attribute1)]
 
-- Alternatively, to use specific values for authentication credentials, 
+Alternatively, to use specific values for authentication credentials, 
 specify the **[BotAuthentication]** attribute and pass in those values.
+
 [!code-csharp[Use BotAuthentication attribute with parameters](../includes/code/dotnet-security.cs#attribute2)]
 
 ## Additional resources
