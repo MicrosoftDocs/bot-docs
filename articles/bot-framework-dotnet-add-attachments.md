@@ -114,6 +114,7 @@ the expected contents of **CardAction.Value** for each type.
 
 ## Additional resources
 
-- [Send and receive activities](bot-framework-dotnet-send-and-receive.md)
+- [Activity types](bot-framework-dotnet-activities.md)
+- [Send and receive activities](bot-framework-dotnet-connector.md)
 - [Create messages](bot-framework-dotnet-create-messages.md)
 - [Implement channel-specific functionality](bot-framework-dotnet-channeldata.md)

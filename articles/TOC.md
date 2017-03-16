@@ -31,8 +31,7 @@
 ### [Add attachments to messages](bot-framework-dotnet-add-attachments.md)
 ### [Implement channel-specific functionality](bot-framework-dotnet-channeldata.md)
 ## Connector
-### [Overview](bot-framework-dotnet-connector.md)
-### [Send and receive activities](bot-framework-dotnet-send-and-receive.md)
+### [Send and receive activities](bot-framework-dotnet-connector.md)
 ## [Dialogs](bot-framework-dotnet-dialogs.md)
 ### [FormFlow](bot-framework-dotnet-formflow.md)
 ## [Debugging](bot-framework-dotnet-debugging.md)

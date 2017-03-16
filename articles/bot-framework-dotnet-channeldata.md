@@ -79,7 +79,7 @@ when a user clicks a button in the Slack message.
 
 [!code-javascript[Slack channelData](../includes/code/dotnet-channelData.json#slackChannelData2)]
 
-Your bot can reply to this message in the [normal manner](bot-framework-dotnet-send-and-receive.md#create-reply), 
+Your bot can reply to this message in the [normal manner](bot-framework-dotnet-connector.md#create-reply), 
 or it can post its response directly to the endpoint that is specified by 
 the **payload** object's **response_url** property.
 For information about when and how to post a response to the **response_url**, see 
@@ -166,6 +166,7 @@ The following snippet shows an example of the **channelData** property for a nat
 
 ## Additional resources
 
-- [Send and receive activities](bot-framework-dotnet-send-and-receive.md)
+- [Activity types](bot-framework-dotnet-activities.md)
+- [Send and receive activities](bot-framework-dotnet-connector.md)
 - [Create messages](bot-framework-dotnet-create-messages.md)
 - [Add attachments to messages](bot-framework-dotnet-add-attachments.md)
