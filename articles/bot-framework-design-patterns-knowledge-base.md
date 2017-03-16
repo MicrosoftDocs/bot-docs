@@ -13,18 +13,15 @@ ms.reviewer:
 ---
 # Knowledge bots
 
-## Introduction 
-
 A knowledge bot can be designed to provide information about virtually any topic. 
-For example, one knowledge bot might answer questions about events such as "What bot events are there at this conference?", "When is the next Reggae show?", or "Who is Tame Impala?" 
+For example, one knowledge bot might answer questions about events such as, "What bot events are there at this conference?", "When is the next Reggae show?", or "Who is Tame Impala?" 
 Another might answer IT-related questions such as "How do I update my operating system?" or "Where do I go to reset my password?" 
 Yet another might answer questions about contacts such as "Who is John Doe?" or "What is Jane Doe's email address?" 
 
-Regardless of the use case for which a knowledge bot is designed, its basic objective is always the same: 
-find and return the information that the user has requested, 
-by leveraging a body of data (relational data in a SQL database, 
-JSON data in a non-relational store, PDFs in a document store, etc.). 
-In this article, we'll explore some commonly-implemented knowledge bot capabilities and discuss related technologies. 
+Regardless of the use case for which a knowledge bot is designed, its basic objective is always the same: find and return the information that the user has requested 
+by leveraging a body of data, such as relational data in a SQL database, 
+JSON data in a non-relational store, or PDFs in a document store. 
+This article explores some common knowledge bot capabilities and their related technologies. 
 
 ##<a id="search"></a> Search
 
@@ -37,9 +34,9 @@ the bot can respond with information that's most likely to be relevant to that i
 
 ![Dialog Structure](media/designing-bots/patterns/fuzzySearch2.png)
 
-Additionally, search scores indicate the level of confidence for the results of a specific search, 
+Search scores indicate the level of confidence for the results of a specific search, 
 enabling a bot to order its results accordingly, or even tailor its communication based upon confidence level. 
-For example, if confidence level is high, the bot may respond with "Here is the event that best matches your search:"
+For example, if confidence level is high, the bot may respond with "Here is the event that best matches your search:".
 
 ![Dialog Structure](media/designing-bots/patterns/searchScore2.png)
 
@@ -49,7 +46,7 @@ If confidence level is low, the bot may respond with "Hmm... were you looking fo
 
 ### Using Search to Guide a Conversation
 
-If your sole motivation for building a bot is to enable basic search engine functionality, 
+If your motivation for building a bot is to enable basic search engine functionality, 
 then you may not need a bot at all. 
 After all, why would users prefer a conversational interface when they can easily achieve their goal by using a typical search engine in a web browser? 
 
@@ -69,7 +66,7 @@ locates the information that the user is seeking.
 ![Dialog Structure](media/designing-bots/patterns/guidedConvo4.png)
 
 By leveraging the user's input in each step and presenting the relevant options, the bot guides the user to the information that they're seeking. 
-Once the bot delivers that information, it can even provide guidance about the most efficient way to find similar information in the future: 
+Once the bot delivers that information, it can even provide guidance about the most efficient way to find similar information in the future. 
 
 ![Dialog Structure](media/designing-bots/patterns/Training.png)
 
@@ -77,68 +74,65 @@ Once the bot delivers that information, it can even provide guidance about the m
 
 By using <a href="https://azure.microsoft.com/en-us/services/search/" target="_blank">Azure Search</a>, 
 you can create an efficient search index that a bot can easily search, facet, and filter over. 
-Let's briefly examine a search index that is created using the Azure portal: 
+Consider a search index that is created using the Azure portal.
 
 ![Dialog Structure](media/designing-bots/patterns/search3.PNG)
 
-We want to be able to access all properties of our data store, so we set each property as "retrievable." 
-We want to be able to find musicians by name, so we set the **Name** property as "searchable." 
-Finally, we want to be able to facet and filter over musicians' eras, so we mark the **Eras** property as both "facetable" and "filterable." 
+You want to be able to access all properties of our data store, so you set each property as "retrievable." 
+You want to be able to find musicians by name, so you set the **Name** property as "searchable." 
+Finally, you want to be able to facet filter over musicians' eras, so you mark the **Eras** property as both "facetable" and "filterable." 
 
-Faceting determines the values that exist in the data store for given property, along with the magnitude of each value. 
-For example, the following screenshot shows that there are 5 distinct eras in the data store:
+Faceting determines the values that exist in the data store for a given property, along with the magnitude of each value. 
+For example, this screenshot shows that there are 5 distinct eras in the data store:
 
 ![Dialog Structure](media/designing-bots/patterns/facet.png)
 
 Filtering, in turn, selects only the specified instances of a certain property. 
-For example, we could filter the result set above to contain only items where **Era** is equal to "Romantic." 
+For example, you could filter the result set above to contain only items where **Era** is equal to "Romantic." 
 
 > [!NOTE]
-> See <a href="https://github.com/ryanvolum/AzureSearchBot" target="_blank">here</a> 
+> See <a href="https://github.com/ryanvolum/AzureSearchBot" target="_blank">a sample bot</a> 
 > for a complete example of a knowledge bot that is created using Azure Document DB, Azure Search, and the 
 > Microsoft Bot Framework.
 > 
 > For the sake of simplicity, the example above shows a search index that is created using the Azure portal. 
-> Indeces can also be created programatically.
+> Indices can also be created programatically.
 
 ## QnA Maker
 
 Some knowledge bots may simply aim to answer frequently asked questions (FAQs). 
 <a href="https://www.microsoft.com/cognitive-services/en-us/qnamaker" target="_blank">QnA Maker</a> 
 is a powerful tool that's designed specifically for this use case. 
-QnA Maker has the built-in ability to scrape questions and answers from an existing FAQ site, 
-and also allows you to manually configure your own custom list of questions and answers. 
-It has natural languaging processing (NLP) abilities, enabling it to even provide answers to questions that are worded 
-(slightly) differently than expected. 
+QnA Maker has the built-in ability to scrape questions and answers from an existing FAQ site. It also allows you to manually configure your own custom list of questions and answers. 
+QnA Maker has natural languaging processing (NLP) abilities, enabling it to even provide answers to questions that are worded 
+slightly differently than expected. 
 However, it does not have semantic language understanding abilities. 
-That is, on it's own, it cannot determine that a puppy is a type of dog, nor that vodka is a type of liquor. 
+It cannot determine that a puppy is a type of dog, for example. 
 
-Let's review an example. Using the QnA Maker web interface, we configure a knowledge base with three question and answer pairs: 
+Using the QnA Maker web interface, you can configure a knowledge base with three question and answer pairs: 
 
 ![Dialog Structure](media/designing-bots/patterns/KnowledgeBaseConfig.png)
 
-Then, we test it by asking a series of questions: 
+Then, you can test it by asking a series of questions: 
 
 ![Dialog Structure](media/designing-bots/patterns/exampleQnAConvo.png)
 
 The bot correctly answers the questions that directly map to the ones that were configured in the knowledge base. 
 However, it incorrectly responds to the question "can I bring my rum?". 
-Because this question is most similar in structure to the question "can I bring my dog?", and 
-because QnA Maker does not inherently understand the meaning of words 
-(i.e., it does not know that "rum" is a type of liquor), it answers "Dogs are not allowed." 
+Because this question is most similar in structure to the question "can I bring my dog?" and 
+because QnA Maker does not inherently understand the meaning of words, i.e., it does not know that "rum" is a type of liquor, it answers "Dogs are not allowed." 
 
 > [!TIP]
-> Create your QnA pairs and then test and re-train your bot, by using 
+> Create your QnA pairs and then test and re-train your bot by using 
 > the menu on the left side of the conversation to select an alternative answer for each 
 > incorrect answer that is given. 
 
 ## LUIS
 
 Some knowledge bots require natural language processing (NLP) capabilities so that they can 
-analyze a user's message(s) to determine the user's intent. 
+analyze a user's messages to determine the user's intent. 
 Language Understanding Intelligent Service (LUIS) provides a fast and effective means of adding NLP capabilities to bots. 
-LUIS enables you to use existing, pre-built models from Bing and Cortana whenever they meet your needs, 
-and also allows you to create specialized models of your own. 
+LUIS enables you to use existing, pre-built models from Bing and Cortana whenever they meet your needs. It also allows you to create specialized models of your own. 
 
 When working with huge datasets, it's not necessarily feasible to train an NLP model with every variation of an entity. 
 In a music playing bot, for example, a user might message "Play Reggae", "Play Bob Marley", or "Play One Love". 
@@ -151,28 +145,27 @@ its data store for that entity, and proceed from there.
 ## Combining Search, QnA Maker, and/or LUIS
 
 Search, QnA Maker and LUIS are each powerful tools in their own right, but they can 
-also be combined to build knowledge bots that possess more than one of those capabilities. 
-Let's review some examples. 
+also be combined to build knowledge bots that possess more than one of those capabilities.
 
 ### LUIS and Search
 
-In the music festival bot example that we [discussed earlier](#search), 
+In the music festival bot example [covered earlier](#search), 
 the bot guides the conversation by showing buttons that represent the lineup. 
-However, this bot could also incorporate natural language understanding, by using LUIS 
+However, this bot could also incorporate natural language understanding by using LUIS 
 to determine intent and entities within questions such as "what kind of music does Romit Girdhar play?". 
-Then, the bot could search against an Azure Search index using musician name. 
+Then the bot could search against an Azure Search index using musician name. 
  
-It would not be feasible to train our model with every possible musician name (since there are so many 
-potential values), but we could provide enough representative examples for 
-LUIS to properly identify the entity at hand.  For example, let's assume that we 
-train our model by providing examples of musicians: 
+It would not be feasible to train the model with every possible musician name since there are so many 
+potential values, but you could provide enough representative examples for 
+LUIS to properly identify the entity at hand.  For example, consider that you 
+train your model by providing examples of musicians: 
 
 ![Dialog Structure](media/designing-bots/patterns/answerGenre.png)
 ![Dialog Structure](media/designing-bots/patterns/answerGenreOneWord.png)
 
-When we test this model with new utterances like, "what kind of music do the beatles play?", 
+When you test this model with new utterances like, "what kind of music do the beatles play?", 
 LUIS successfully determines the intent "answerGenre" and the identifies entity "the beatles." 
-However, if we submit a longer question such as "what kind of music does the devil makes three play?",
+However, if you submit a longer question such as "what kind of music does the devil makes three play?",
 LUIS identifies "the devil" as the entity.
 
 ![Dialog Structure](media/designing-bots/patterns/devilMakesThreeScore.png)
@@ -181,23 +174,22 @@ By training the model with example entities that are representative of the under
 can increase the accuracy of your bot's language understanding. 
 
 > [!TIP]
-> In general, it is better for the model to err by identifying excess words in its entity recognition 
-> (for example, identify "John Smith please" from the utterance "Call John Smith please"), 
-> than to identify too few words (for example, identify "John" from the utterance "Call John Smith please"). 
-> The search index will ignore irrelevant words (such as "please" in the phrase "John Smith please"). 
+> In general, it is better for the model to err by identifying excess words in its entity recognition, e.g., identify "John Smith please" from the utterance "Call John Smith please", 
+> rather than identify too few words, e.g., identify "John" from the utterance "Call John Smith please". 
+> The search index will ignore irrelevant words such as "please" in the phrase "John Smith please". 
 
 ### LUIS and QnA Maker
 
-Some knowledge bots might use QnA Maker (to answer basic questions) in combination with 
-LUIS (to determine intents, extract entities and invoke more elaborate dialogs). 
+Some knowledge bots might use QnA Maker to answer basic questions in combination with 
+LUIS to determine intents, extract entities and invoke more elaborate dialogs. 
 For example, consider a simple IT Help Desk bot. 
 This bot may use QnA Maker to answer basic questions about Windows or Outlook, 
-but might also need to facilitate scenarios like password reset, 
+but it might also need to facilitate scenarios like password reset, 
 which require intent recognition and back-and-forth communication between user and bot. 
 There are a few ways that a bot may implement a hybrid of LUIS and QnA Maker:
 
 1. Call both QnA Maker and LUIS at the same time, and respond to the user by using information from the first one that returns a score of a specific threshold. 
-2. Call LUIS first, and if no intent meets a specific threshold score (i.e., "None" intent is triggered), 
+2. Call LUIS first, and if no intent meets a specific threshold score, i.e., "None" intent is triggered, 
 then call QnA Maker. 
 Alternatively, create a LUIS intent for QnA Maker, feeding your LUIS model with example QnA questions that map to "QnAIntent." 
 3. Call QnA Maker first, and if no answer meets a specific threshold score, then call LUIS. 
@@ -206,22 +198,21 @@ The Bot Builder SDK for Node.js and the Bot Builder SDK for C# provide built-in 
 This enables you to trigger dialogs or automatically answer questions using LUIS and/or QnA Maker without having to 
 implement custom calls to either tool. 
 For example, if LUIS has enabled you to determine intent, 
-you could trigger a "BasicQnAMakerDialog" 
-(as described [here](https://docs.botframework.com/en-us/azure-bot-service/templates/qnamaker/#navtitle)) 
+you could trigger a [BasicQnAMakerDialog](https://docs.botframework.com/en-us/azure-bot-service/templates/qnamaker/#navtitle) 
 to initiate the process of answering the user's question. 
 
 > [!TIP]
 > When implementing a combination of LUIS, QnA Maker, and/or Azure Search, 
-> test inputs with each of the tools, to determine the threshold score for each of your models. 
+> test inputs with each of the tools to determine the threshold score for each of your models. 
 > LUIS, QnA Maker, and Azure Search each generate scores by using a different scoring criteria, so 
 > the scores generated across these tools are not directly comparable. 
-> Additionally, LUIS and QnA Maker normalize scores; therefore, a certain score may be considered 'good' 
+> Additionally, LUIS and QnA Maker normalize scores. A certain score may be considered 'good' 
 > in one LUIS model but not so in another model. 
  
 ## Additional resources
 
-In this article, we explored some commonly-implemented knowledge bot capabilities and discussed related technologies. 
-To see sample code for bots that implement Search, QnA Maker, and LUIS functionality, review the following resources: 
+This article explored some common knowledge bot capabilities and discussed related technologies. 
+<!-- To see sample code for bots that implement Search, QnA Maker, and LUIS functionality, review the following resources: 
 
 > [!NOTE]
-> To do: Add links to the C# and Node.js code samples that Mat refers to.
+> To do: Add links to the C# and Node.js code samples that Mat refers to.-->
