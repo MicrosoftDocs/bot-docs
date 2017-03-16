@@ -13,7 +13,7 @@ ms.reviewer:
 ---
 # Bot embedded within an app 
 
-## Introduction 
+ 
 
 Although bots most commonly exist outside of apps, they can also be embedded within an app. 
 For example, you may embed a [knowledge bot](bot-framework-design-patterns-knowledge-base.md) within an app 

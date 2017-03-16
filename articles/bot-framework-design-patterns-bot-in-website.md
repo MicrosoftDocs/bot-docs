@@ -13,7 +13,7 @@ ms.reviewer:
 ---
 # Bot embedded within a website 
 
-## Introduction 
+ 
 
 Although bots most commonly exist outside of websites, they can also be embedded within a website. 
 For example, you may embed a [knowledge bot](bot-framework-design-patterns-knowledge-base.md) within a website 

@@ -13,7 +13,6 @@ ms.reviewer: rstand
 ---
 # Designing the user experience
 
-## Introduction to UX elements
 Bots typically use some combination of **rich user controls**, **text and natural language**, and **speech** 
 to exchange information with users.
 

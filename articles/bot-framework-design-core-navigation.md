@@ -13,8 +13,6 @@ ms.reviewer: rstand
 ---
 # Designing navigation
 
-## Introduction to bot navigation
-
 Users can navigate websites using breadcrumbs, apps using menus, and a web browsers using buttons like **forward** and **back**. 
 However, none of these well-established navigation techniques entirely address navigation requirements within a bot. 
 As discussed [previously](bot-framework-design-core-dialogs.md#dialogs-stacks-and-humans), 

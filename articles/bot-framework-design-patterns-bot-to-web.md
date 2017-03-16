@@ -13,7 +13,7 @@ ms.reviewer:
 ---
 # Integration between bot and web browser
 
-## Introduction
+
 
 Some scenarios require more than just a bot to fulfill a requirement. 
 At times, a bot may need to send the user to a web browser to complete a task, 
