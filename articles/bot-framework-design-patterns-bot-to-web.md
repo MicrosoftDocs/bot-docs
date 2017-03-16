@@ -91,7 +91,8 @@ could have clicked the hyperlink to initiate the website flow. Without the 'magi
 the bot has no way of knowing which user completed the flow. 
 One user could authenticate and inject access tokens in another user's session. 
 
-> [!WARNING] This isn't just a risk within group chats. Without the 'magic number' validation process, anyone who obtains the hyperlink to launch the website flow can spoof a user's identity. 
+> [!WARNING] 
+> This isn't just a risk within group chats. Without the 'magic number' validation process, anyone who obtains the hyperlink to launch the website flow can spoof a user's identity. 
 
 The magic number should be a random number generated using a strong cryptography library. 
 For an example of the generation process in C#, see 
