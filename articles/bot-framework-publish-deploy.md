@@ -7,8 +7,8 @@ manager: rstand
 ms.topic: publish-article
 ms.prod: botframework
 ms.service: Bot Builder
-ms.date: 02/06/2017
-ms.reviewer:
+ms.date:
+ms.reviewer: rstand
 #ROBOTS: Index
 ---
 

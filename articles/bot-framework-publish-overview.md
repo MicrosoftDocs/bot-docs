@@ -7,30 +7,30 @@ manager: rstand
 ms.topic: publish-article
 ms.prod: botframework
 ms.service: Bot Builder
-ms.date: 02/06/2017
-ms.reviewer:
+ms.date:
+ms.reviewer: rstand
 #ROBOTS: Index
 ---
 
 # Publish a bot
 
-When you've finished developing a bot and you're ready to share it with others, complete the following tasks:
+When you've finished developing a bot and you're ready to share it with others, there are some things you need to do:
 
-[Task 1](#register): Register your bot with the Bot Framework<br/>
-[Task 2](#deploy): Deploy your bot to the cloud<br/>
-[Task 3](#configure): Configure your bot to run on one or more conversation channels<br/>
-[Task 4](#publish): Publish your bot to the Bot Directory
+1. [Register](#register) your bot with the Bot Framework<br/>
+2. [Deploy](#deploy) your bot to the cloud<br/>
+3. [Configure](#configure) your bot to run on one or more conversation channels<br/>
+4. [Publish](#publish) your bot to the Bot Directory
 
 > [!NOTE]
-> Task 1 (Register your bot) and Task 2 (Deploy your bot) are not applicable for bots that are created by using the Azure Bot Service
-> (since bot registration and deployment are handled as part of the Azure Bot Service bot creation process).
+> If you used the Azure Bot Service, you don't need to register or deploy your bot.
+> Bot registration and deployment are handled as part of the Azure Bot Service bot creation process.
 
 ##<a id="register"></a>Register your bot with the Bot Framework
 
 > [!IMPORTANT]
 > Review the [Bot Directory publishing guidelines](bot-framework-publish-review-guidelines.md) and keep them in mind when registering and publishing your bot.
 
-Registration is a simple process wherein you provide some information about your bot and then generate the app ID and password that your bot will use to authenticate with the Bot Framework.
+Registration is a simple process. You provide some information about your bot and then generate the app ID and password that your bot will use to authenticate with the Bot Framework.
 For a detailed walk through of the registration process, see [Register a bot with the Bot Framework](bot-framework-publish-register.md).
 
 ##<a id="deploy"></a>Deploy your bot to the cloud
