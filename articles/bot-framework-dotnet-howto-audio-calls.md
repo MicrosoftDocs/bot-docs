@@ -17,15 +17,14 @@ ms.reviewer:
 ## Introduction
 
 [!include[Introduction to conducting audio calls](../includes/snippet-audio-call-intro.md)]
-In this article, we'll discuss how to enable support for audio calls via Skype 
-by using the Bot Builder SDK for .NET. 
+This article describes how to enable support for audio calls via Skype by using the Bot Builder SDK for .NET. 
 
 ## Conduct an audio call
 
 The architecture for a bot that supports audio calls is very similar to that of a typical bot. 
 The following code samples show how to enable support for audio calls via Skype by using the Bot Builder SDK for .NET. 
 
-First, define the `CallingConroller`.
+First, define the `CallingController`.
 
 ```cs
 [BotAuthentication]
@@ -171,8 +170,5 @@ private async Task OnRecordCompleted(RecordOutcomeEvent recordOutcomeEvent)
 
 ## Additional resources
 
-In this article, we discussed how to enable support for audio calls via Skype by using the Bot Builder SDK for .NET. 
-To learn more, see:
-
 > [!NOTE]
-> To do: Add links to related content (link to 'detailed readme' and 'full C# code' that Matt refers to)
+> To do: Add links to related content (link to 'detailed readme' and 'full C# code' that Mat refers to)

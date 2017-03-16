@@ -25,21 +25,22 @@
 ## [Overview](bot-framework-dotnet-overview.md)
 ## [Get started](bot-framework-dotnet-getstarted.md)
 ## [Key concepts](bot-framework-dotnet-concepts.md)
-## Connector service
-### [Overview](bot-framework-dotnet-connector.md)
-### [Send and receive activities](bot-framework-dotnet-send-and-receive.md)
-### [Compose messages](bot-framework-dotnet-compose-messages.md)
+## Activities
+### [Activity types](bot-framework-dotnet-activities.md)
+### [Create messages](bot-framework-dotnet-create-messages.md)
 ### [Add attachments to messages](bot-framework-dotnet-add-attachments.md)
 ### [Implement channel-specific functionality](bot-framework-dotnet-channeldata.md)
-### [Secure your bot](bot-framework-dotnet-security.md)
+## [Connector](bot-framework-dotnet-connector.md)
 ## [Dialogs](bot-framework-dotnet-dialogs.md)
-## [FormFlow](bot-framework-dotnet-formflow.md)
+### [FormFlow](bot-framework-dotnet-formflow.md)
+## [State](bot-framework-dotnet-state.md)
 ## [Debugging](bot-framework-dotnet-debugging.md)
 ## How to
 ### [Conduct audio calls](bot-framework-dotnet-howto-audio-calls.md)
 ### [Implement global handlers](bot-framework-dotnet-howto-global-handlers.md)
 ### [Intercept messages](bot-framework-dotnet-howto-middleware.md)
 ### [Manage conversation flow](bot-framework-dotnet-howto-manage-conversation-flow.md)
+### [Secure your bot](bot-framework-dotnet-security.md)
 ### [Send proactive messages](bot-framework-dotnet-howto-proactive-messages.md)
 # Build bots with Node.js
 ## [Overview](bot-framework-nodejs-overview.md)

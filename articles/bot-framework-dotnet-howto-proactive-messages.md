@@ -23,7 +23,7 @@ ms.reviewer:
 
 [!include[Introduction to proactive messages - part 2](../includes/snippet-proactive-messages-intro-2.md)] 
 
-In this article, we'll discuss how to send proactive messages by using the Bot Builder SDK for .NET. 
+This article describes how to send proactive messages by using the Bot Builder SDK for .NET. 
 
 ## Send an ad hoc proactive message
 
@@ -179,8 +179,5 @@ public class SurveyDialog : IDialog<object>
 
 ## Additional resources
 
-In this article, we discussed how to send proactive messages by using the Bot Builder SDK for .NET. 
-To learn more, see:
-
 > [!NOTE]
-> To do: Add links to related content (link to 'detailed readme' and 'full C# code' that Matt refers to)
+> To do: Add links to related content (link to 'detailed readme' and 'full C# code' that Mat refers to)

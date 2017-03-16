@@ -1,7 +1,7 @@
 ---
 title: Intercept messages using the Bot Builder SDK for .NET | Microsoft Docs
 description: Learn how to intercept messages that are exchanged between user and bot by using the Bot Builder SDK for .NET.
-keywords: Bot Framework, dotnet, .NET, Bot Builder, SDK, message logging, intercept message, inspect message
+keywords: Bot Framework, dotnet, .NET, Bot Builder, SDK, message logging, intercept message, inspect message, middleware
 author: kbrandl
 manager: rstand
 ms.topic: develop-dotnet-article
@@ -21,7 +21,7 @@ ms.reviewer:
 ## Introduction
 
 [!include[Introducton to message logging](../includes/snippet-message-logging-intro.md)]
-In this article, we'll discuss how to intercept messages that are exchanged between user and bot by using the Bot Builder SDK for .NET. 
+This article describes how to intercept messages that are exchanged between user and bot by using the Bot Builder SDK for .NET. 
 
 ## Intercept messages
 
@@ -63,8 +63,5 @@ update the `LogAsync` method as necessary to define the actions that you want to
 
 ## Additional resources
 
-In this article, we discussed how to intercept the messages that are exchanged between user and bot by using the Bot Builder SDK for .NET. 
-To learn more, see:
-
 > [!NOTE]
-> To do: Add links to related content (link to 'detailed readme' and 'full C# code' that Matt refers to)
+> To do: Add links to related content (link to 'detailed readme' and 'full C# code' that Mat refers to)

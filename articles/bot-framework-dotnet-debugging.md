@@ -12,7 +12,7 @@ ms.reviewer:
 #ROBOTS: Index
 ---
 
-# Debugging your bot
+# Debug your bot
 
 ## Introduction
 
@@ -34,4 +34,4 @@ ms.reviewer:
 
 - [Bot Framework Troubleshooting Guide](bot-framework-troubleshooting-guide.md)
 - [Troubleshooting Bot Framework Authentication](bot-framework-troubleshooting-auth.md)
-- [Support](bot-framework-resources-support.md): how to report issues, submit feedback, get support 
+- [Support](bot-framework-resources-support.md)

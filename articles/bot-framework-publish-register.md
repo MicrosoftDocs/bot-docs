@@ -17,8 +17,7 @@ Before others can use your bot, you must register it with the Bot Framework.
 Registration is a simple process wherein you provide some information about your bot and then generate the app ID and password that your bot will use to authenticate with the Bot Framework.
 
 > [!NOTE]
-> This article does not apply to bots that are created by using the Azure Bot Service 
-> (since bot registration is handled as part of the Azure Bot Service bot creation process).
+> If you created a bot with the Azure Bot Service, your bot registration was part of the Azure Bot Service bot creation process.
  
 ## Register your bot
 

@@ -4,7 +4,7 @@ description: Learn how to design a conversational application (bot) that can aut
 keywords: bot framework, design, bot, scenario, use case, pattern, task automation
 author: matvelloso
 manager: rstand
-ms.topic: design-patterns-article
+ms.topic: design-patterns-task-article
 ms.prod: botframework
 ms.service: Bot Builder
 ms.date: 
@@ -61,7 +61,7 @@ The specification describes the root dialog as shown in the following screenshot
 
 #### ResetPassword dialog
 
-When the user chooses *Reset Password* from the root dialog, the `ResetPassword` dialog is invoked. 
+When the user chooses **Reset Password** from the root dialog, the `ResetPassword` dialog is invoked. 
 The `ResetPassword` dialog then invokes two other dialogs. 
 First, it invokes the `PromptStringRegex` dialog to collect the user's phone number. 
 Then it invokes the `PromptDate` dialog to collect the user's date of birth. 
@@ -93,8 +93,8 @@ Finally, the spec provides an example of a user communicating with the bot to su
 
 ## Bot, app, or website?
 
-If a task automation bot closely resembles an app or website, why not just build an app or website instead? 
-Depending on your particular scenario, building an app or website (instead of a bot) may be an entirely reasonable choice. 
+You may be wondering, if a task automation bot closely resembles an app or website, why not just build an app or website instead? 
+Depending on your particular scenario, building an app or website instead of a bot may be an entirely reasonable choice. 
 You may even choose to embed your bot into an app, by using the [Bot Framework Direct Line API](https://docs.botframework.com/en-us/restapi/DirectLine3/#navtitle) 
 or <a href="https://github.com/Microsoft/BotFramework-WebChat" target="_blank">Web Chat control</a>. 
 Implementing your bot within the context of an app provides the best of both worlds: a rich app experience and a conversational experience, all in one place. 
@@ -105,8 +105,8 @@ can be tedious and time-consuming processes, and the user experience of having t
 For these reasons, a bot may often provide a much simpler way of solving the problem at hand. 
 
 Additionally, bots provide the freedom to easily expand and extend. 
-For example, John may choose to add natural language and speech capabilities to the password-reset bot so that it can be accessed via audio call, 
-or he may add support for text messages. 
+For example, a developer may choose to add natural language and speech capabilities to the password-reset bot so that it can be accessed via audio call, 
+or she may add support for text messages. 
 The company may setup kiosks throughout the building and embed the password-reset bot into that experience.
 
 ## Additional resources

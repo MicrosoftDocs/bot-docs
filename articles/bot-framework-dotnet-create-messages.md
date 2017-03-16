@@ -12,9 +12,9 @@ ms.reviewer: rstand
 #ROBOTS: Index
 ---
 
-# Compose messages
+# Create messages
 
-Your bot will send **message** [activities](bot-framework-dotnet-send-and-receive.md) to communicate information to users, 
+Your bot will send **message** [activities](bot-framework-dotnet-activities.md) to communicate information to users, 
 and likewise, will also receive **message** activities from users. 
 Some messages may simply consist of plain text, while others may contain richer content such as 
 [media attachments, buttons, and cards](bot-framework-dotnet-add-attachments.md). 
@@ -148,6 +148,7 @@ For details, see [Implement channel-specific functionality](bot-framework-dotnet
 
 ## Additional resources
 
-- [Send and receive activities](bot-framework-dotnet-send-and-receive.md)
+- [Activity types](bot-framework-dotnet-activities.md)
+- [Send and receive activities](bot-framework-dotnet-connector.md)
 - [Add attachments to messages](bot-framework-dotnet-add-attachments.md)
 - [Implement channel-specific functionality](bot-framework-dotnet-channeldata.md)
