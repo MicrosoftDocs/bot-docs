@@ -47,8 +47,9 @@ For details about using FormFlow within the BotBuilder SDK for .NET, see [FormFl
 
 ## State
 
-> [!NOTE]
-> Content coming soon...
+[!include[State concept overview](../includes/snippet-dotnet-concept-state.md)]
+For details about managing state using the Bot Builder SDK for .NET, 
+see [Manage state](bot-framework-dotnet-state.md).
 
 ## Naming conventions
 
