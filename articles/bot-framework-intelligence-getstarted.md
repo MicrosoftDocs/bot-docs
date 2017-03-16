@@ -9,7 +9,7 @@ ms.topic: intelligence-getstarted-article
 ms.prod: botframework
 ms.service: Cognitive Services
 ms.date: 03/15/2017
-ms.reviewer:rstand
+ms.reviewer: v-tosisk
 
 # Include the following line commented out
 #ROBOTS: Index
