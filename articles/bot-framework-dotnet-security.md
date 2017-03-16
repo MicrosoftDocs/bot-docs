@@ -14,12 +14,18 @@ ms.reviewer:
 
 # Secure your bot
 
-To ensure that your bot's endpoint can only be called by the Bot Framework Connector service, 
+This article describes how to secure your bot by using HTTPS and Bot Framework authentication.
+
+## Use HTTPS and Bot Framework authentication
+
+To ensure that your bot's endpoint can only be accessed by the Bot Framework [Connector](bot-framework-dotnet-concepts.md#connector), 
 configure your bot's endpoint to use only HTTPS and 
 enable Bot Framework authentication by [registering](bot-framework-publish-register.md) your bot 
 to acquire its app Id and password.
 
-After you have registered your bot, specify its app Id and password in the application's web.config file.
+## Configure authentication for your bot
+
+After you have registered your bot, specify its app Id and password in your bot's web.config file.
 
 ```xml
 <appSettings>
@@ -28,23 +34,18 @@ After you have registered your bot, specify its app Id and password in the appli
 </appSettings>
 ```
 
-Then, when creating your bot using the Bot Builder SDK for .NET, use the **[BotAuthentication]** 
-attribute to specify authentication credentials.
+Then, use the **[BotAuthentication]** attribute to specify authentication credentials when 
+using the Bot Builder SDK for .NET to create your bot.
 
 - To use the authentication credentials that are stored in the web.config file, 
-simply specify the **[BotAuthentication]** attribute. For example:
-```cs
-[BotAuthentication]
-public class MessagesController : ApiController
-{
-}
-```
+simply specify the **[BotAuthentication]** attribute.
+[!code-csharp[Use BotAuthentication attribute](../includes/code/dotnet-security.cs#attribute1)]
 
 - Alternatively, to use specific values for authentication credentials, 
-specify the **[BotAuthentication]** attribute and pass in those values. For example: 
-```cs
-[BotAuthentication(MicrosoftAppId = "_appIdValue_", MicrosoftAppPassword="_passwordValue_")]
-public class MessagesController : ApiController
-{
-}
-```
+specify the **[BotAuthentication]** attribute and pass in those values.
+[!code-csharp[Use BotAuthentication attribute with parameters](../includes/code/dotnet-security.cs#attribute2)]
+
+## Additional resources
+
+- [Bot Builder SDK for .NET](bot-framework-dotnet-overview.md)
+- [Key concepts in the Bot Builder SDK for .NET](bot-framework-dotnet-concepts.md)
