@@ -32,13 +32,18 @@ and rich cards containing buttons.
 conversation, providing help, navigation, clarification, and confirmation as needed.
 
 ## Get the SDK
+To get the SDK and install the necessary dependencies, create a folder for your bot, navigate to it, and run the following **npm** command:
 
-The SDK is available as a NuGet package and as open source on <a href="https://github.com/Microsoft/BotBuilder" target="_blank">GitHub</a>. 
-To install the SDK within a Visual Studio project, complete the following steps:
+```
+npm init
+```
 
-1. In **Solution Explorer**, right-click the project name and select **Manage NuGet Packages...**.
-2. On the **Browse** tab, type "Microsoft.Bot.Builder" into the search box.
-3. Select **Microsoft.Bot.Builder** in the list of results, click **Install**, and accept the changes.
+Next, install the Bot Builder SDK and <a href="http://restify.com/" target="_blank">Restify</a> modules by running the following **npm** commands:
+
+```
+npm install --save botbuilder
+npm install --save restify
+```
 
 ## Get code samples
 
