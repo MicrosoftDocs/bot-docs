@@ -22,8 +22,8 @@ You can deploy your bot to Microsoft Azure or to any other cloud service.
 Regardless of which cloud service you choose to host your bot, you must address the application configuration settings and the HTTPS endpoint as part of the deployment process.
 
 > [!NOTE]
-> This article does not apply to bots that are created by using the Azure Bot Service 
-> (since bot deployment is handled as part of the Azure Bot Service bot creation process).
+> If you created a bot with the Azure Bot Service, your bot deployment was part of the Azure Bot Service bot 
+> creation process.
 
 ###<a id="appSettings"></a> Application configuration settings
 If you've already [registered](bot-framework-publish-register.md) your bot with the Bot Framework,
