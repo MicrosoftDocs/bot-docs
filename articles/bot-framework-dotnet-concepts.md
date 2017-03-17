@@ -22,6 +22,8 @@ The Bot Framework Connector provides a single REST API that enables a bot to
 communicate across multiple channels such as Skype, Email, Slack, and more. 
 It facilitates communication between bot and user, 
 by relaying messages from bot to channel and from channel to bot. 
+In the Bot Builder SDK for .NET, the <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/db/dbb/namespace_microsoft_1_1_bot_1_1_connector.html" target="_blank">Connector</a> library enables access to the Connector. 
+
 For details about using the Connector via the Bot Builder SDK for .NET, see [Send and receive activities](bot-framework-dotnet-connector.md).
 
 ##<a id="activity"></a> Activity
@@ -35,6 +37,8 @@ see [Activity types](bot-framework-dotnet-activities.md).
 > [!NOTE]
 > Content coming soon...
 
+In the Bot Builder SDK for .NET, the <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_blank">Builder</a> library enables you to manage dialogs.
+
 For details about using dialogs within the Bot Builder SDK for .NET, see 
 [Dialogs](bot-framework-dotnet-dialogs.md).
 
@@ -42,6 +46,8 @@ For details about using dialogs within the Bot Builder SDK for .NET, see
 
 > [!NOTE]
 > Content coming soon...
+
+In the Bot Builder SDK for .NET, the <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_blank">Builder</a> library enables you to implement FormFlow.
 
 For details about using FormFlow within the BotBuilder SDK for .NET, see [FormFlow](bot-framework-dotnet-formflow.md).
 

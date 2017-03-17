@@ -103,4 +103,4 @@ You can design your bot to account for this scenario, as shown in the following 
 
 ## Additional resources
 
-- [Bot Framework Troubleshooting Guide](bot-framework-troubleshooting-guide.md#state-and-data-storage)
+- [Bot Framework troubleshooting guide](bot-framework-troubleshooting-guide.md#state)
