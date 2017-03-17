@@ -61,7 +61,7 @@ transported over the wire.
 ## Security
 
 You should ensure that your bot's endpoint can only be called by the Bot Framework Connector service. 
-For more information on this topic, see [Secure your bot](bot-framework-dotnet-security.md).
+For more information on this topic, see [Security](bot-framework-dotnet-security.md).
 
 ## Additional resources
 
