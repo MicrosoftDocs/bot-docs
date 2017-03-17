@@ -45,7 +45,6 @@ Get started by completing the following prerequisite tasks:
 
 3. [Download](http://aka.ms/bf-bc-vstemplate) the Bot Application template
 and install the template by saving the .zip file to your Visual Studio 2017 project templates directory.  
-
 > [!TIP]
 > The Visual Studio 2017 project templates directory is typically located here:
 > `%USERPROFILE%\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\`
