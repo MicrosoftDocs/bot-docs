@@ -1,4 +1,5 @@
 // <setBasicProperties>
+IMessageActivity message =  Activity.CreateMessageActivity();
 message.Text = "Hello!";
 message.Locale = "en-Us";
 // </setBasicProperties>
