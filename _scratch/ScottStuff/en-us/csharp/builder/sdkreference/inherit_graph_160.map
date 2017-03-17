@@ -1,4 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$df/d82/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_resolver_scorable.html" title="Microsoft.Bot.Builder.Internals.\lScorables.ResolverScorable\l\&lt; LuisIntentScorable\&lt; InnerState,\l InnerScore \&gt;.Scope, IntentRecommendation,\l InnerState, InnerScore \&gt;" alt="" coords="5,5,292,91"/>
-<area shape="rect" id="node2" href="$d9/d65/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_luis_intent_scorable.html" title="Scorable to represent a specific LUIS intent recommendation. " alt="" coords="340,20,540,76"/>
-</map>

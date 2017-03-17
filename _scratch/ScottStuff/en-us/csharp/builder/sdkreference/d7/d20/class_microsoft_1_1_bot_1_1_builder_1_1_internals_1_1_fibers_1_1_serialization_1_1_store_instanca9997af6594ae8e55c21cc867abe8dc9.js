@@ -1,4 +1,0 @@
-var class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_store_instanca9997af6594ae8e55c21cc867abe8dc9 =
-[
-    [ "Type", "d7/d20/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_store_instanca9997af6594ae8e55c21cc867abe8dc9.html#acd7eb919e0d6d42090277accd1af9923", null ]
-];

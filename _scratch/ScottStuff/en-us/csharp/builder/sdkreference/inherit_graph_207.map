@@ -1,7 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$db/d2f/struct_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_localized_scope.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.LocalizedScope" alt="" coords="143,5,337,47"/>
-<area shape="rect" id="node3" href="$df/dd9/interface_microsoft_1_1_bot_1_1_connector_1_1_i_connector_client.html" title="﻿The Bot Connector REST API allows your bot to send and receive messages to channels configured in t..." alt="" coords="157,71,323,112"/>
-<area shape="rect" id="node5" href="$dc/d97/interface_microsoft_1_1_bot_1_1_connector_1_1_i_state_client.html" title="The Bot State REST API allows your bot to store and retrieve state associated with conversations cond..." alt="" coords="157,188,323,229"/>
-<area shape="rect" id="node4" href="$d9/d69/class_microsoft_1_1_bot_1_1_connector_1_1_connector_client.html" title="﻿The Bot Connector REST API allows your bot to send and receive messages to channels configured in t..." alt="" coords="385,84,552,125"/>
-<area shape="rect" id="node6" href="$dd/dbc/class_microsoft_1_1_bot_1_1_connector_1_1_state_client.html" title="The Bot State REST API allows your bot to store and retrieve state associated with conversations cond..." alt="" coords="385,163,552,204"/>
-</map>
