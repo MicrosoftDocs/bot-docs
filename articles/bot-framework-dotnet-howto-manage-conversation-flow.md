@@ -20,8 +20,6 @@ ms.reviewer:
 >
 -->
 
-## Introduction
-
 This article describes how to manage conversation flow using dialogs and the Bot Builder SDK for .NET. 
 
 > [!NOTE]

@@ -24,7 +24,8 @@
 # Build bots with .NET
 ## [Overview](bot-framework-dotnet-overview.md)
 ## [Get started](bot-framework-dotnet-getstarted.md)
-## [Key concepts](bot-framework-dotnet-concepts.md)
+## Key concepts
+### [Overview](bot-framework-dotnet-concepts.md)
 ### [Activity types](bot-framework-dotnet-activities.md)
 ### [Dialogs](bot-framework-dotnet-dialogs.md)
 ### [FormFlow](bot-framework-dotnet-formflow.md)

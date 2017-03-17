@@ -1,6 +1,6 @@
 Typically, each message that a bot sends to the user directly relates to the user's prior input. 
-However, in some cases, a bot may need to send the user a message that is not directly related to the current topic of conversation. 
-These messages are called **proactive messages**. 
+In some cases though, a bot may need to send the user a message that is not directly related to the current topic of conversation. 
+These types of messages are called **proactive messages**. 
 
 Proactive messages can be useful in a variety of scenarios. 
 If a bot sets a timer or reminder, it will need to notify the user when the time arrives. 

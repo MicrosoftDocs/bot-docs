@@ -21,8 +21,6 @@ ms.reviewer:
 >
 -->
 
-## Introduction
-
 [!include[Introduction to global message handlers](../includes/snippet-global-handlers-intro.md)]
 This article describes how to implement global message handlers by using the Bot Builder SDK for .NET. 
 

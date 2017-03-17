@@ -20,13 +20,13 @@ ms.reviewer:
 >
 -->
 
-## Introduction
 
 [!include[Introduction to proactive messages - part 1](../includes/snippet-proactive-messages-intro-1.md)] 
+This article describes how to send proactive messages by using the Bot Builder SDK for .NET. 
+
+## Types of proactive messages 
 
 [!include[Introduction to proactive messages - part 2](../includes/snippet-proactive-messages-intro-2.md)] 
-
-This article describes how to send proactive messages by using the Bot Builder SDK for .NET. 
 
 ## Send an ad hoc proactive message
 

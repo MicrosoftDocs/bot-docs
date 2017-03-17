@@ -21,8 +21,6 @@ ms.reviewer:
 >
 -->
 
-## Introduction
-
 [!include[Introducton to message logging](../includes/snippet-message-logging-intro.md)]
 This article describes how to intercept messages that are exchanged between user and bot by using the Bot Builder SDK for .NET. 
 
