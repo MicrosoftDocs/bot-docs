@@ -43,7 +43,7 @@ Get started by completing the following prerequisite tasks:
 
 2. In Visual Studio, update all extensions to their latest versions by <a href="https://msdn.microsoft.com/en-us/library/dd997169.aspx" target="_blank">following the instructions here</a>.
 
-3. [Download](http://aka.ms/bf-bc-vstemplate)the Bot Application template
+3. [Download](http://aka.ms/bf-bc-vstemplate) the Bot Application template
 and install the template by saving the .zip file to your Visual Studio 2017 project templates directory.  
 
 > [!TIP]
