@@ -25,8 +25,6 @@
 ## [Overview](bot-framework-dotnet-overview.md)
 ## [Get started](bot-framework-dotnet-getstarted.md)
 ## [Key concepts](bot-framework-dotnet-concepts.md)
-## [Dialogs](bot-framework-dotnet-dialogs.md)
-### [FormFlow](bot-framework-dotnet-formflow.md)
 ## [Debugging](bot-framework-dotnet-debugging.md)
 ## How to
 ### [Use activity types](bot-framework-dotnet-activities.md)
@@ -41,6 +39,8 @@
 ### [Manage state](bot-framework-dotnet-state.md)
 ### [Conduct audio calls](bot-framework-dotnet-howto-audio-calls.md)
 ### [Secure your bot](bot-framework-dotnet-security.md)
+### [Use Dialogs](bot-framework-dotnet-dialogs.md)
+### [Use FormFlow](bot-framework-dotnet-formflow.md)
 # Build bots with Node.js
 ## [Overview](bot-framework-nodejs-overview.md)
 ## [Get started](bot-framework-nodejs-getstarted.md)
