@@ -136,7 +136,7 @@ To fix this, set the "from" field to a stable value that represents the user.
 
 The value of the field is up to you. If you already have a signed-in user in your webpage or app, you can use the existing user ID. If not, you could generate a random user ID on page/app load, optionally store that ID in a cookie or device state, and use that ID.
 
-## Implementing dialogs and conversations
+##<a id="implement-dialogs"></a> Implementing dialogs and conversations
 
 ### What is IDialog.Stack Forward in the C# Builder SDK?
 
@@ -166,7 +166,7 @@ There are a few options:
 * Use [NonSerialized](https://msdn.microsoft.com/en-us/library/system.nonserializedattribute(v=vs.110).aspx) and [OnDeserialized](https://msdn.microsoft.com/en-us/library/system.runtime.serialization.ondeserializedattribute(v=vs.110).aspx) attributes to restore the dependency on deserialization This is the simplest solution.
 
 
-## State and data storage
+##<a id="state"></a> State and data storage
 
 ### Where is conversation state stored?
 
