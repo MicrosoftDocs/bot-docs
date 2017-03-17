@@ -25,12 +25,11 @@
 ## [Overview](bot-framework-dotnet-overview.md)
 ## [Get started](bot-framework-dotnet-getstarted.md)
 ## [Key concepts](bot-framework-dotnet-concepts.md)
-## Activities
-### [Activity types](bot-framework-dotnet-activities.md)
 ## [Dialogs](bot-framework-dotnet-dialogs.md)
 ### [FormFlow](bot-framework-dotnet-formflow.md)
 ## [Debugging](bot-framework-dotnet-debugging.md)
 ## How to
+### [Use activity types](bot-framework-dotnet-activities.md)
 ### [Create messages](bot-framework-dotnet-create-messages.md)
 ### [Add attachments to messages](bot-framework-dotnet-add-attachments.md)
 ### [Implement channel-specific functionality](bot-framework-dotnet-channeldata.md)
