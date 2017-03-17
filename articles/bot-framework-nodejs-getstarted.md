@@ -24,8 +24,8 @@ It is easy to use and models frameworks like Express & Restify to provide a fami
 In this tutorial, we'll walk through the process of building a bot by using the Bot Builder SDK for Node.js
 and testing it with the Bot Framework Emulator.
 
-## Get the SDK
-We'll start by getting the SDK and installing the necessary dependencies.
+## Install the SDK
+We'll start by installing the SDK and the necessary dependencies.
 First, create a folder for your bot, navigate to it, and run the following **npm** command:
 
 ```
