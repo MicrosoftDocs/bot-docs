@@ -20,7 +20,6 @@ ms.reviewer: v-tosisk
 
 You can add smarts to your bots and make them more useful and engaging for your users. An intelligent bot has human-like senses and skills. It is able to understand what users are saying or writing in natural language and respond back. Bots respond as if they can see our world as we see it. They discover information and extract knowledge from different sources to provide useful answers, and, best of all, learn as they acquire more experience to continuously improve their capabilities. 
 
-Sounds daunting, but we are here to help you add some of these cognitive skills to your bot.
 
 ## About Microsoft Cognitive Services
 Microsoft Cognitive Services lets you tap into an ever-growing collection of powerful AI algorithms developed by experts in the fields of computer vision, speech, natural language processing, knowledge extraction, and web search. Here's what else they can do.

@@ -22,7 +22,7 @@ The Cognitive Services Language APIs enable you to build smart bots that are abl
 
 The Language APIs use powerful language models to determine what users want, to identify concepts and entities in a given sentence, and ultimately to allow your bots to respond with the appropriate action. They support several text analytics capabilities, such as spell checking, sentiment detection, language modeling, and extraction of accurate and rich insights from text.   
 
-There are 5 language APIs available in Cognitive Services to understand and process natural language.
+There are five language APIs available in Cognitive Services to understand and process natural language.
 
 ## Language Understanding Intelligent Service
 The <a href="https://www.microsoft.com/cognitive-services/en-us/language-understanding-intelligent-service-luis" target="_blank">Language Understanding Intelligent Service (LUIS)</a> is able to process natural language using pre-built or custom-trained language models.
@@ -41,11 +41,11 @@ The <a href="https://www.microsoft.com/cognitive-services/en-us/web-language-mod
 
 ## Language understanding bot examples
 ### LUIS example
-For our first example, we will build a weather bot that is able to understand and respond to various hypothetical commands, such as "What's the weather like in Paris", "What's the temperature next week in Seattle", and so on. The bot is using LUIS to identify the intent of the user, and then reply with the appropriate prompt.
+In this example, you will build a weather bot that is able to understand and respond to various hypothetical commands, such as "What's the weather like in Paris", "What's the temperature next week in Seattle", and so on. The bot is using LUIS to identify the intent of the user, and then reply with the appropriate prompt.
 
 To get started with LUIS, go to <a href="http://www.luis.ai" target="_blank">LUIS.ai</a> and build your own custom language model. Our <a href="https://www.microsoft.com/cognitive-services/en-us/LUIS-api/documentation/Plan-your-app" target="_blank">Getting Started</a> guide describes in details how to build your first model through the LUIS user interface, or programatically via the LUIS APIs. We encourage you to watch our  <a href="https://www.youtube.com/watch?v=jWeLajon9M8&index=4&list=PLD7HFcN7LXRdHkFBFu4stPPeWJcQ0VFLx" target="_blank">basic</a> video tutorial.
 
-To create the bot, we will use the <a href="http://aka.ms/bf-bc-vstemplate" target="_blank">Bot Application .NET template</a> as our starting point. Note that you need to build the language model for the weather bot in LUIS first. To accomplish this, follow the steps in this <a href="https://www.youtube.com/watch?v=39L0Gv2EcSk&index=5&list=PLD7HFcN7LXRdHkFBFu4stPPeWJcQ0VFLx" target="_blank">video</a>.
+To create the bot, you will use the <a href="http://aka.ms/bf-bc-vstemplate" target="_blank">Bot Application .NET template</a> as our starting point. Note that you need to build the language model for the weather bot in LUIS first. To accomplish this, follow the steps in this <a href="https://www.youtube.com/watch?v=39L0Gv2EcSk&index=5&list=PLD7HFcN7LXRdHkFBFu4stPPeWJcQ0VFLx" target="_blank">video</a>.
 
 After you set up your language model, create your project with the Bot Application template, and add the following class to handle the integration with your LUIS language model.
 
@@ -120,7 +120,7 @@ namespace Microsoft.Bot.Sample.WeatherBot
 }
 ```
 
-Next, go to *MessagesController.cs*, and add the following namespaces.
+Next, go to **MessagesController.cs**, and add the following namespaces.
 
 ```cs
 
@@ -133,7 +133,7 @@ Next, go to *MessagesController.cs*, and add the following namespaces.
     using System.Threading.Tasks;
 ```
 
-Finally, on the same file, replace the code in the Post task with the one below.  
+Finally, on the same file, replace the code in the **Post** task with the one below.  
 
 ```cs
 
@@ -155,13 +155,13 @@ Finally, on the same file, replace the code in the Post task with the one below.
 ```
 
 ### Text Analytics example
-For our next example, we will use the Text Analytics API to determine the sentiment behind a user's message, i.e. whether it is positive or negative. The Text Analytics API returns a sentiment score between 0 and 1, where 0 is very negative and 1 is very positive. For example, if the user types "That was really helpful", the API will classify it with a highly positive score, whereas a phrase like "That didn't help at all" will return a negative score. 
+In this example, you will use the Text Analytics API to determine the sentiment behind a user's message, i.e. whether it is positive or negative. The Text Analytics API returns a sentiment score between 0 and 1, where 0 is very negative and 1 is very positive. For example, if the user types "That was really helpful", the API will classify it with a highly positive score, whereas a phrase like "That didn't help at all" will return a negative score. 
 
 The following example shows how the bot's response can be customized according to the sentiment score calculated by the Text Analytics API. For more information about the Text Analytics API, see the  <a href="https://text-analytics-demo.azurewebsites.net/Home/SampleCode" target="_blank">C# and Python sample code</a> for the service, or our  <a href="http://go.microsoft.com/fwlink/?LinkID=760860" target="_blank">Getting Started guide</a>.
 
-For this example, we will use the <a href="http://aka.ms/bf-bc-vstemplate" target="_blank">Bot Application .NET template</a> as our starting point. Note that the *Newtonsoft.JSON* package is also required, which can be obtained via <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">nuGet</a>. 
+For this example, you will use the <a href="http://aka.ms/bf-bc-vstemplate" target="_blank">Bot Application .NET template</a> as our starting point. Note that the **Newtonsoft.JSON** package is also required, which can be obtained via <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">nuGet</a>. 
 
-After you create your project with the Bot Application template, you will create some classes to hold the input and output from the API. First, create a new C# class file (*TextAnalyticsCall.cs*) with the following code. The class will serve as our model for the JSON input/output of the Text Analytics API.    
+After you create your project with the Bot Application template, you will create some classes to hold the input and output from the API. First, create a new C# class file (**TextAnalyticsCall.cs**) with the following code. The class will serve as our model for the JSON input/output of the Text Analytics API.    
 
 ```cs
 using System.Collections.Generic;
@@ -189,7 +189,7 @@ public class DocumentResult
 }
 ```
 
-Next, go to *MessagesController.cs* and add the following namespaces.
+Next, go to **MessagesController.cs** and add the following namespaces.
 
 ```cs
 using System.Collections.Generic;

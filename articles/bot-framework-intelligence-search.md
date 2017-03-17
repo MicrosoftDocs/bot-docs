@@ -18,9 +18,9 @@ ms.reviewer: v-tosisk
 
 
 # Add search capabilities to your bot
-The Bing Search APIs enable you to add intelligent web search capabilities to your bots. With a few lines of code, you can access billions of webpages, images, videos, news, and other result types. You can configure the APIs to return results by geographical location, market, or language for better relevance. You can further customize your search using the supported search parameters. Examples of search parameters include *safesearch*, to filter out adult content, and *freshness* to get back results according to the date they were indexed by Bing.
+The Bing Search APIs enable you to add intelligent web search capabilities to your bots. With a few lines of code, you can access billions of webpages, images, videos, news, and other result types. You can configure the APIs to return results by geographical location, market, or language for better relevance. You can further customize your search using the supported search parameters. Examples of search parameters include Safesearch, to filter out adult content, and Freshness to get back results according to the date they were indexed by Bing.
 
-There are 5 Bing Search APIs available in Cognitive Services to retrieve web, image, video, news and autosuggest results.
+There are five Bing Search APIs available in Cognitive Services to retrieve web, image, video, news and autosuggest results.
 
 ## Web Search API
 The <a href="https://www.microsoft.com/cognitive-services/en-us/bing-web-search-api" target="_blank">Web Search API</a> provides web, image, video, news and related search results with a single API call.
@@ -35,27 +35,27 @@ The <a href="https://www.microsoft.com/cognitive-services/en-us/bing-video-searc
 The <a href="https://www.microsoft.com/cognitive-services/en-us/bing-news-search-api" target="_blank">News Search API</a> finds news articles around the world that match your search query or are currently trending on the Internet.
 
 ## Autosuggest API
-The  <a href="https://www.microsoft.com/cognitive-services/en-us/bing-autosuggest-api" target="_blank">Autosuggest API</a>) offers instant query completion suggestions to complete your search query faster and with less typing.  
+The  <a href="https://www.microsoft.com/cognitive-services/en-us/bing-autosuggest-api" target="_blank">Autosuggest API</a> offers instant query completion suggestions to complete your search query faster and with less typing.  
 
 > [!TIP]
 > You can find detailed documentation about each API, including developer guides and API references by navigating to the Cognitive Services  <a href="https://www.microsoft.com/cognitive-services/en-us/documentation" target="_blank">documentation site</a> and selecting the API you need on the left.
 
 ## Examples using Search APIs with bots
-The Search APIs offer a great way to access the vast information available on the web. They are ideal for any bot that needs to embed search results directly into their messages, or leverage them as input for other interesting applications. Besides plain search, the APIs support several intelligent features that can be used across a broad array of scenarios. For example, the Image Search API includes image understanding features, such as celebrity recognition, product search (where to buy), and visually similar search, whereas the News Search API is able to extract mentioned entities and other useful article metadata.
+The Search APIs offer a great way to access the vast information available on the web. They are ideal for any bot that needs to embed search results directly into their messages, or leverage them as input for other interesting applications. Besides plain search, the APIs support several intelligent features that can be used across a broad array of scenarios. For example, the Image Search API includes image recognition features, such as celebrity recognition, product search (where to buy), and visually similar search. The News Search API is able to extract mentioned entities and other useful article metadata.
 
 Here a few examples of bots that are using the Search APIs today:  
 
 - The  <a href="https://bots.botframework.com/bot?id=BingNews" target="_blank">Bing News Bot</a> uses the News Search API to find the latest news and display it to users.
-- The  <a href="https://bots.botframework.com/bot?id=captionbot" target="_blank">Caption Bot</a> leverages the Image Search API to identify celebrities, or discover visually similar celebrities, in submitted images.
+- The  <a href="https://bots.botframework.com/bot?id=captionbot" target="_blank">Caption Bot</a> leverages the Image Search API to identify celebrities, or discover visually similar celebrities in submitted images.
 - The  <a href="https://bots.botframework.com/bot?id=MorphiBot" target="_blank">Murphy Bot</a> uses the Image Search API to find photos with faces, which are then used to generate creative "what if" photos.
 
 > [!IMPORTANT]
-To get started, you need to obtain your own subscription key from the Microsoft Cognitive Services site. Our <a href="https://msdn.microsoft.com/en-US/library/mt712546.aspx" target="_blank">Getting Started</a> guide describes how to obtain the key and start making calls to the APIs. If you already have a subscription key, try the  <a href="https://bingapis.portal.azure-api.net/docs/services/56b43eeccf5ff8098cef3807/operations/56b4447dcf5ff8098cef380d" target="_blank">API Testing Console</a>) to craft test API requests in a sandbox environment.
+To get started, you need to obtain your own subscription key from the Microsoft Cognitive Services site. Our <a href="https://msdn.microsoft.com/en-US/library/mt712546.aspx" target="_blank">Getting Started</a> guide describes how to obtain the key and start making calls to the APIs. If you already have a subscription key, try the  <a href="https://bingapis.portal.azure-api.net/docs/services/56b43eeccf5ff8098cef3807/operations/56b4447dcf5ff8098cef380d" target="_blank">API Testing Console</a> to craft test API requests in a sandbox environment.
 
 ### GIF search bot example
-Let's build a few bots that use the Search APIs to help you get started. For our first example, we will build a simple bot that searches the web for animated GIF images, via the Image Search API, and displays them to users. We will use the  <a href="http://docs.botframework.com/connector/getstarted/#getting-started-in-net" target="_blank">Bot Application .NET template</a> as our starting point. Note that this example, as well as subsequent ones, require the *Newtonsoft.JSON* package, which can be obtained via NuGet.
+For this example, you will build a few bots that use the Search APIs to help you get started. You will build a simple bot that searches the web for animated GIF images, via the Image Search API, and displays them to users. You will use the  <a href="http://docs.botframework.com/connector/getstarted/#getting-started-in-net" target="_blank">Bot Application .NET template</a> as our starting point. Note that this example, as well as subsequent ones, require the *Newtonsoft.JSON* package, which can be obtained via <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">nuGet</a>.
 
-After you create your project with the Bot Application template, add the *Newtonsoft.JSON package* and create a new C# class file (*BingImageSearchResponse.cs*) with the following code. The class will serve as our model for the JSON response returned by the Image Search API.
+After you create your project with the Bot Application template, add the **Newtonsoft.JSON package** and create a new C# class file (**BingImageSearchResponse.cs**) with the following code. The class will serve as our model for the JSON response returned by the Image Search API.
 
 ```cs
 
@@ -86,14 +86,14 @@ public class ImageResult
 
 ```
 
-Next, go to *MessagesController.cs*. First, make sure you add the Newtonsoft.Json namespace.
+Next, go to **MessagesController.cs**. Make sure you add the **Newtonsoft.Json** namespace.
 
 ```cs
 using Newtonsoft.Json;
 
 ```
 
-Then, on the same file, replace the code in the Post task with the one in the code snippet below. The code calls the Image API, de-serializes the response into the model class we just created, and finally retrieves the first image result, and sends it to the user as an image attachment.   
+Then, on the same file, replace the code in the **Post** task with the one in the code snippet below. The code calls the Image API, de-serializes the response into the model class you just created, retrieves the first image result, and then sends it to the user as an image attachment.   
 
 ```cs
 
@@ -152,9 +152,9 @@ public virtual async Task<HttpResponseMessage> Post([FromBody] Activity activity
 ```
 
 ### Trending news bot example
-For our second example, we will build a bot that fetches the top trending news on the web and then displays it to users as an image carousel. We will rely on the Bot Application template again. The coding steps are similar to the previous example, but this one is using the new carousel attachment type that is supported in the latest version of the Bot Builder SDK.   
+For this example, you will build a bot that fetches the top trending news on the web and then displays it to users as an image carousel. You will rely on the Bot Application template again. The coding steps are similar to the previous example, but this one is using the new carousel attachment type that is supported in the latest version of the Bot Builder SDK.   
 
-To begin, create a new project with the Bot Application template, and add the *Newtonsoft.JSON package* via <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">nuGet</a>. Then, create a new C# class file (*BingTrendingNewsResults.cs*) that will host the model classes for the JSON response returned by the News Search API this time.
+To begin, create a new project with the Bot Application template, and add the **Newtonsoft.JSON package** via <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">nuGet</a>. Then, create a new C# class file (*BingTrendingNewsResults.cs*) that will host the model classes for the JSON response returned by the News Search API this time.
 
 ```cs
 public class BingTrendingNewsResults
@@ -183,14 +183,14 @@ public class Thumbnail
 }
 ```
 
-Next, go to *MessagesController.cs* and add the following namespaces.
+Next, go to **MessagesController.cs** and add the following namespaces.
 
 ```cs
 using Newtonsoft.Json;
 using System.Collections.Generic;
 ```
 
-On the same file, replace the code in the Post task with the one that follows. The code fetches the latest trending news via the News Search API and stores it in the newsResult object.  
+On the same file, replace the code in the **Post** task with the one that follows. The code fetches the latest trending news via the News Search API and stores it in the newsResult object.  
 
 ```cs
 
@@ -230,7 +230,7 @@ if (newsResult == null || newsResult.Length == 0)
 
 ```
 
-Finally, add the following code to the Post task to present the top 5 trending news as an image carousel to users:
+Finally, add the following code to the **Post** task to present the top five trending news as an image carousel to users:
 
 ```cs
 int newsResultCount = Math.Min(5, newsResult.Length); // show up to 5 trending news
@@ -280,7 +280,7 @@ return response;
 
 
 ### Product bot example
-For our last example, we will build a bot that receives a product image url and finds visually similar products along with links to online merchants that have these products. The bot is calling the Image Search API to find visually similar products and the online merchants. More specifically, it's calling a feature of the Image Search API called <a href="https://msdn.microsoft.com/en-us/library/mt712790.aspx" target="_blank">image insights</a>, which returns several interesting insights about images indexed by Bing, such as visually similar images or products, similar image collections, recognized entities (people) and more.
+For this last example, you will build a bot that receives a product image url and finds visually similar products along with links to online merchants that have these products. The bot is calling the Image Search API to find visually similar products and the online merchants. More specifically, it's calling a feature of the Image Search API called <a href="https://msdn.microsoft.com/en-us/library/mt712790.aspx" target="_blank">image insights</a>, which returns several interesting insights about images indexed by Bing, such as visually similar images or products, similar image collections, recognized entities (people) and more.
 
 ```html
 <div align="center">
@@ -291,7 +291,7 @@ For our last example, we will build a bot that receives a product image url and 
 </div>
 ```
 
-The coding steps are very similar to the previous example. Start by creating a new project with the Bot Application template, and add the Newtonsoft.JSON package via NuGet. Then, create a new C# class file (BingImageInsights.cs) that will host the model classes for the JSON response returned by the image insights module that is part of the Image Search API.
+The coding steps are very similar to the previous example. Start by creating a new project with the Bot Application template, and add the Newtonsoft.JSON package via NuGet. Then, create a new C# class file (**BingImageInsights.cs**) that will host the model classes for the JSON response returned by the image insights module that is part of the Image Search API.
 
 
 ```cs
@@ -329,7 +329,7 @@ public class Thumbnail
 
 ```
 
-Next, go to *MessagesController.cs* and add the following namespaces.
+Next, go to **MessagesController.cs** and add the following namespaces.
 
 ```cs
 
@@ -341,7 +341,7 @@ using System.Net.Http.Headers;
 
 ```
 
-On the same file, replace the code in the Post task with the one that follows. The code reads the image attachment or url, and sends it to the Image Search API to retrieve visually similar products, along with online merchant locations.   
+On the same file, replace the code in the **Post** task with the one that follows. The code reads the image attachment or url, and sends it to the Image Search API to retrieve visually similar products, along with online merchant locations.   
 
 ```cs
 

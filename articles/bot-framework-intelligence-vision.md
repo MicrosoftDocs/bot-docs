@@ -29,7 +29,7 @@ The Vision APIs support a variety of image understanding features. They can iden
 Cognitive Services provide four APIs you can use to process images or videos:
 
 ## Computer Vision API
-The <a href="https://www.microsoft.com/cognitive-services/en-us/computer-vision-api" target="_blank">Computer Vision API</a> extracts rich information about images (such as objects or people), determines if the image contains mature or explicit content, and processes text (OCR) in images.
+The <a href="https://www.microsoft.com/cognitive-services/en-us/computer-vision-api" target="_blank">Computer Vision API</a> extracts rich information about images (such as objects or people), determines if the image contains mature or explicit content, and processes text (using OCR) in images.
 
 ## Emotion API
 The <a href="https://www.microsoft.com/cognitive-services/en-us/emotion-api" target="_blank">Emotion API</a> analyzes human faces and recognizes their emotion across eight possible categories of human emotions.
@@ -52,7 +52,7 @@ Before you get started with these examples, you need to obtain your own subscrip
 
 
 ### Vision API example
-This example builds a simplified version of CaptionBot.ai. The Vision Bot can receive an image, either as an attachment or url, and then return a computer-generated caption of the image via the Computer Vision API. You can download the <a href="http://aka.ms/bf-bc-vstemplate" target="_blank">Bot Application .NET template</a> to you as a starting point.
+In this example, you will build a simplified version of CaptionBot.ai. The Vision Bot can receive an image, either as an attachment or url, and then return a computer-generated caption of the image via the Computer Vision API. You can download the <a href="http://aka.ms/bf-bc-vstemplate" target="_blank">Bot Application .NET template</a> to you as a starting point.
 
 ```html
 <div align="center">
@@ -74,7 +74,7 @@ using System.Web;
 
 ```
 
-In the same file, replace the code in the POST task with the one in the snippet below. The code initializes the Computer Vision SDK classes that take care most of the hard work.  
+In the same file, replace the code in the **Post** task with the one in the snippet below. The code initializes the Computer Vision SDK classes that take care most of the hard work.  
 
 ```cs
 
@@ -151,9 +151,9 @@ return new HttpResponseMessage(System.Net.HttpStatusCode.Accepted);
 ```
 
 ### Emotion API example
-For our second example, we will build an Emotion Bot that receives an image url, detects if there's at least one face in the image, and finally responds back with the dominant emotion of that face. To keep the example simple, the bot will return the emotion for only one face, and ignore other faces in the image. The example requires the *Microsoft.ProjectOxford.Emotion* package, which can be obtained using <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">nuGet</a>.
+In this example, you will build an Emotion Bot that receives an image url, detects if there's at least one face in the image, and finally responds back with the dominant emotion of that face. To keep the example simple, the bot will return the emotion for only one face, and ignore other faces in the image. The example requires the *Microsoft.ProjectOxford.Emotion* package, which can be obtained using <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">nuGet</a>.
 
-Create a new project by downloading the <a href="http://aka.ms/bf-bc-vstemplate" target="_blank">Bot Application .NET template</a>. Install the Microsoft.ProjectOxford.Emotion package from nuGet. Next, go to *MessagesController.cs* class file and add the following namespaces.
+Create a new project by downloading the <a href="http://aka.ms/bf-bc-vstemplate" target="_blank">Bot Application .NET template</a>. Install the Microsoft.ProjectOxford.Emotion package from <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">nuGet</a>. Next, go to **MessagesController.cs** class file and add the following namespaces.
 
 ```cs
 using Microsoft.ProjectOxford.Emotion;
@@ -161,7 +161,7 @@ using Microsoft.ProjectOxford.Emotion.Contract;
 using System.Collections.Generic;
 ```
 
-Then, replace the code in the POST task with the one in the snippet below. The code reads the image url from the user, sends it to the Emotion API, and finally replies back to the user with the dominant emotion it recognized for a face in the image, including the confidence score.
+Then, replace the code in the **Post** task with the one in the snippet below. The code reads the image url from the user, sends it to the Emotion API, and finally replies back to the user with the dominant emotion it recognized for a face in the image, including the confidence score.
 
 ```cs
 

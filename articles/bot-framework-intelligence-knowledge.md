@@ -29,7 +29,7 @@ The <a href="https://www.microsoft.com/cognitive-services/en-us/bing-image-searc
 The <a href="https://www.microsoft.com/cognitive-services/en-us/knowledge-exploration-service" target="_blank">Knowledge Exploration Service</a> provides natural language interpretation of user queries and returns annotated interpretations to enable rich search and auto-completion experiences that anticipate what the user is typing. Instant query completion suggestions and predictive query refinements are based on your own data and application-specific grammars to enable your users to perform fast queries.    
 
 ## Academic Knowledge API
-The  <a href="https://www.microsoft.com/cognitive-services/en-us/academic-knowledge-api" target="_blank">Academic Knowledge API</a> returns academic research papers, authors, journals, conferences, topics, and universities from the <a href="https://www.microsoft.com/en-us/research/project/microsoft-academic-graph/" target="_blank">Microsoft Academic Graph</a>. Built as a domain-specific example of the Knowledge Exploration Service, the Academic Knowledge API provides a knowledge base using a graph-like dialog with search capabilities over hundreds of millions of research-related entities. Search for a topic, a professor, a university, or a conference, and the API will provide relevant publications and related entities. The grammar also supports natural queries like "papers by Michael Jordan about machine learning after 2010".
+The  <a href="https://www.microsoft.com/cognitive-services/en-us/academic-knowledge-api" target="_blank">Academic Knowledge API</a> returns academic research papers, authors, journals, conferences, topics, and universities from the <a href="https://www.microsoft.com/en-us/research/project/microsoft-academic-graph/" target="_blank">Microsoft Academic Graph</a>. Built as a domain-specific example of the Knowledge Exploration Service, the Academic Knowledge API provides a knowledge base using a graph-like dialog with search capabilities over hundreds of millions of research-related entities. Search for a topic, a professor, a university, or a conference, and the API will provide relevant publications and related entities. The grammar also supports natural queries like "Papers by Michael Jordan about machine learning after 2010".
 
 ## QnA Maker
 The  <a href="https://qnamaker.ai" target="_blank">QnA Maker</a> is a free, easy-to-use, REST API and web-based service that trains AI to respond to users’ questions in a natural, conversational way. With optimized machine learning logic and the ability to integrate industry-leading language processing, QnA Maker distills semi-structured data like question and answer pairs into distinct, helpful answers.
@@ -48,11 +48,11 @@ This is a very simple Bot which uses simple heuristics to determine whether the 
 
 To get started with QnA Maker, go to <a href="https://qnamaker.ai" target="_blank">qnamaker.ai</a> and build your own knowledge base. Our <a href="https://qnamaker.ai/Documentation" target="_blank">documentation</a> describes the various flows in the tool to create your knowledge base.
 
-To create the bot, we will use the <a href="http://docs.botframework.com/connector/getstarted/#getting-started-in-net" target="_blank">Bot Application .NET template</a> as our starting point.
+To create the bot, you will use the <a href="http://docs.botframework.com/connector/getstarted/#getting-started-in-net" target="_blank">Bot Application .NET template</a> as our starting point.
 
 After you set up your knowledge base, create your project with the Bot Application template, and add the following class to handle the integration with your QnA Maker service.
 
-QnAMaker Dialog is distributed in a separate NuGet package called *Microsoft.Bot.Builder.CognitiveServices* for C# and npm module called *botbuilder-cognitiveservices* for Node.js. Make sure you install these.
+QnAMaker Dialog is distributed in a separate NuGet package called **Microsoft.Bot.Builder.CognitiveServices** for C# and npm module called **botbuilder-cognitiveservices** for Node.js. Make sure you install these.
 
 
 ```cs
@@ -129,7 +129,7 @@ namespace FAQBot.Dialogs
 }
 ```
 
-Next, go to *MessagesController.cs*, and add the following namespaces.
+Next, go to **MessagesController.cs**, and add the following namespaces.
 
 ```cs
 using Microsoft.Bot.Builder.Dialogs;
