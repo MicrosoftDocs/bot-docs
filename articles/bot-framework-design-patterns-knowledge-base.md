@@ -78,7 +78,7 @@ Consider a search index that is created using the Azure portal.
 
 ![Dialog Structure](media/designing-bots/patterns/search3.PNG)
 
-You want to be able to access all properties of our data store, so you set each property as "retrievable." 
+You want to be able to access all properties of the data store, so you set each property as "retrievable." 
 You want to be able to find musicians by name, so you set the **Name** property as "searchable." 
 Finally, you want to be able to facet filter over musicians' eras, so you mark the **Eras** property as both "facetable" and "filterable." 
 

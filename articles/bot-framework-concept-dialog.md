@@ -53,7 +53,7 @@ making the bot implementation stateless between requests. This is much like a we
 For examples of how to access the bot's state see [Managing State]
 
 Sometimes, users say something unexpected that isn't handled in the current dialog of the stack. The bot needs to make sure 
-that a user doesn't get lost in a conversation. Can a user navigate "back" in a chat? How does the bot return to the "main menu"? How do we "cancel" an operation?
+that a user doesn't get lost in a conversation. Can a user navigate "back" in a chat? How does the bot return to the "main menu"? How do you "cancel" an operation?
 There are two ways to handle this: [Navigation][DesigningNavigation] <!-- link to Navigation --> and [Global message handlers][GlobalMessageHandlers].
 <!--
 * Dialogs can contain rich cards or controls or text

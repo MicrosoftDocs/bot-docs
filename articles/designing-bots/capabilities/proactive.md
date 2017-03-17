@@ -213,7 +213,7 @@ In C#:
 			var botData = scope.Resolve<IBotData>();
 			await botData.LoadAsync(CancellationToken.None);
 
-			//This is our dialog stack
+			//This is the dialog stack
 			var stack = scope.Resolve<IDialogStack>();
                 
 			//interrupt the stack. This means that we're stopping whatever conversation that is currently happening with the user
@@ -232,7 +232,7 @@ In C#:
 		}
 	}
 
-This is evidently more complex than the first example: We are not gaining access to the bot framework's store where the dialog stack is saved and changing it by adding our new "SurveyDialog" on top. The resumption cookie gives us a simple way of serializing and deserializing the entire message we received from the user.
+This is evidently more complex than the first example: We are not gaining access to the bot framework's store where the dialog stack is saved and changing it by adding the new `SurveyDialog` on top. The resumption cookie gives us a simple way of serializing and deserializing the entire message we received from the user.
 
 In Node:
 

@@ -83,7 +83,7 @@ that renders the embedded web view with the web chat control:
 
 ## Additional resources
 
-In this article, we discussed various means of integrating bots with apps and 
+This article covered various means of integrating bots with apps and 
 explored the process of creating a cross-platform mobile app that runs a bot.
 To see the complete sample code (and step-by-step implementation guidance) for the example discussed above, 
 review the following resources: 

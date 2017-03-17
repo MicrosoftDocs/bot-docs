@@ -122,7 +122,7 @@ public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitabl
 
 When it is time to send the message, the bot creates a new dialog, thereby adding this dialog to the top of the dialog stack and giving it control of the conversation. 
 The new dialog will deliver the proactive message and will also decide when to close and return control to the prior dialog in the stack. 
-The resumption cookie provides a simple way of serializing and deserializing the entire message we received from the user.
+The resumption cookie provides a simple way of serializing and deserializing the entire message received from the user.
 
 ```cs
 public static async Task Resume() 
