@@ -12,10 +12,13 @@ ms.reviewer:
 #ROBOTS: Index
 ---
 # Manage conversation flow using dialogs
+
+<!--
 > [!div class="op_single_selector"]
 > * [.NET](bot-framework-dotnet-howto-manage-conversation-flow.md)
 > * [Node.js](bot-framework-nodejs-howto-manage-conversation-flow.md)
 >
+-->
 
 ## Introduction
 

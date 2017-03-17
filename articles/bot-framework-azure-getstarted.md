@@ -13,11 +13,14 @@ ms.reviewer: rstand
 ---
 
 # Create a bot with the Azure Bot Service
+
+<!--
 > [!div class="op_single_selector"]
 > * [.NET](bot-framework-dotnet-getstarted.md)
 > * [Node.js](bot-framework-nodejs-getstarted.md)
 > * [Azure Bot Service](bot-framework-azure-getstarted.md)
 >
+-->
 
 The Azure Bot Service accelerates the process of developing a bot 
 by providing an integrated environment that is purpose-built for bot development. 

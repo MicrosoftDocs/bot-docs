@@ -13,10 +13,13 @@ ms.reviewer:
 ---
 
 # Intercept messages
+
+<!--
 > [!div class="op_single_selector"]
 > * [.NET](bot-framework-dotnet-howto-middleware.md)
 > * [Node.js](bot-framework-nodejs-howto-middleware.md)
 >
+-->
 
 ## Introduction
 

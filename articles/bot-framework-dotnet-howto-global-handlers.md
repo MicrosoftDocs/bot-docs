@@ -13,10 +13,13 @@ ms.reviewer:
 ---
 
 # Implement global message handlers
+
+<!--
 > [!div class="op_single_selector"]
 > * [.NET](bot-framework-dotnet-howto-global-handlers.md)
 > * [Node.js](bot-framework-nodejs-howto-global-handlers.md)
 >
+-->
 
 ## Introduction
 

@@ -12,10 +12,13 @@ ms.reviewer:
 #ROBOTS: Index
 ---
 # Send proactive messages
+
+<!--
 > [!div class="op_single_selector"]
 > * [.NET](bot-framework-dotnet-howto-proactive-messages.md)
 > * [Node.js](bot-framework-nodejs-howto-proactive-messages.md)
 >
+-->
 
 ## Introduction
 

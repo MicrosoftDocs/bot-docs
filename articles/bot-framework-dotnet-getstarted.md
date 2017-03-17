@@ -12,11 +12,14 @@ ms.reviewer:
 #ROBOTS: Index
 ---
 # Create a bot with the Bot Builder SDK for .NET
+
+<!--
 > [!div class="op_single_selector"]
 > * [.NET](bot-framework-dotnet-getstarted.md)
 > * [Node.js](bot-framework-nodejs-getstarted.md)
 > * [Azure Bot Service](bot-framework-azure-getstarted.md)
 >
+-->
 
 The <a href="https://github.com/Microsoft/BotBuilder" target="_blank">Bot Builder SDK for .NET</a> is a powerful
 framework for constructing bots that can handle both freeform interactions and more guided ones where the
