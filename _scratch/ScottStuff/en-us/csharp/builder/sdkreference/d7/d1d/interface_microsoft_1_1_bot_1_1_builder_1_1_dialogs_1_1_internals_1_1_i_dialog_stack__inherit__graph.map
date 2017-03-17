@@ -1,6 +1,0 @@
-<map id="Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack" name="Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack">
-<area shape="rect" id="node2" href="$d1/dc6/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog_context.html" title="The context for the execution of a dialog&#39;s conversational process. " alt="" coords="248,5,443,47"/>
-<area shape="rect" id="node4" href="$d8/da9/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_i_dialog_task.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.IDialogTask" alt="" coords="248,71,443,112"/>
-<area shape="rect" id="node3" href="$de/df0/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_dialog_context.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.DialogContext" alt="" coords="491,5,685,47"/>
-<area shape="rect" id="node5" href="$db/d87/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_dialog_task.html" title="Microsoft.Bot.Builder.Dialogs.\lInternals.DialogTask" alt="" coords="491,71,685,112"/>
-</map>

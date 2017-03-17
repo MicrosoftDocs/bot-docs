@@ -1,9 +1,0 @@
-<map id="Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;" name="Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt; T &gt;">
-<area shape="rect" id="node7" href="$db/df4/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_confirmation.html" title="Confirmation " alt="" coords="537,27,696,83"/>
-<area shape="rect" id="node8" href="$d0/db3/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field_reflector.html" title="Fill in field information through reflection." alt="" coords="537,107,696,163"/>
-<area shape="rect" id="node2" href="$d5/d09/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_field.html" title="Interface for all the information about a specific field. " alt="" coords="180,81,264,108"/>
-<area shape="rect" id="node3" href="$d0/dab/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_field_state.html" title="Interface that defines basic access to a field. " alt="" coords="11,5,126,32"/>
-<area shape="rect" id="node4" href="$d3/d64/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_field_description.html" title="Describe the information displayed about a field and its values. " alt="" coords="9,56,128,83"/>
-<area shape="rect" id="node5" href="$d7/dd7/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_field_prompt.html" title="This provides control information about a field. " alt="" coords="5,107,132,133"/>
-<area shape="rect" id="node6" href="$d8/d0e/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_field_resources.html" title="Interface for saving/localizing generated resources. " alt="" coords="11,157,126,184"/>
-</map>

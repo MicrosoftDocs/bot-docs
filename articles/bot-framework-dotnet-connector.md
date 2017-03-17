@@ -122,6 +122,7 @@ The following code example uses the **CreateConversation** method to create a gr
 
 ## Additional resources
 
+- <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/db/dbb/namespace_microsoft_1_1_bot_1_1_connector.html" target="_blank">Connector</a> library
 - [Create messages](bot-framework-dotnet-create-messages.md)
 - [Add attachments to messages](bot-framework-dotnet-add-attachments.md)
 - [Implement channel-specific functionality](bot-framework-dotnet-channeldata.md)

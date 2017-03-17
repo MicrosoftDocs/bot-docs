@@ -1,7 +1,7 @@
 ---
-title: Compose messages using the Bot Framework Connector service and .NET | Microsoft Docs
-description: Learn how to compose messages using the Bot Framework Connector service via the Bot Builder SDK for .NET.
-keywords: Bot Framework, .NET, Bot Builder, SDK, Connector, Connector service, activity, message, compose message, message properties, create message
+title: Create messages using the Bot Framework Connector service and .NET | Microsoft Docs
+description: Learn how to create messages using the Bot Framework Connector service via the Bot Builder SDK for .NET.
+keywords: Bot Framework, .NET, Bot Builder, SDK, Connector, Connector service, activity, message, create message, message properties
 author: kbrandl
 manager: rstand
 ms.topic: develop-dotnet-article
@@ -23,9 +23,9 @@ This article describes some of the commonly-used message properties.
 ## Message text and format
 
 To create a basic message that contains only plain text, simply specify the **Text** property (as contents of the message) 
-and the **Locale** property (as the locale of the sender). For example: 
+and the **Locale** property (as the locale of the sender). 
 
-[!code-csharp[Set message properties](../includes/code/dotnet-compose-messages.cs#setBasicProperties)]
+[!code-csharp[Set message properties](../includes/code/dotnet-create-messages.cs#setBasicProperties)]
 
 The **TextFormat** property of a message can be used to specify the format of the text. 
 **TextFormat** defaults to "markdown" (i.e., interpret text using markdown formatting standards), 
@@ -91,7 +91,7 @@ The **Mention** object contains the following properties:
 
 The following code example shows how to add a **Mention** entity to the **Entities** collection.
 
-[!code-csharp[set Mention](../includes/code/dotnet-compose-messages.cs#setMention)]
+[!code-csharp[set Mention](../includes/code/dotnet-create-messages.cs#setMention)]
 
 > [!TIP]
 > You bot may want to identify when it is mentioned in a message, so that it may 
@@ -127,7 +127,7 @@ The **GeoCoordinates** object contains the following properties:
 
 The following code example shows how to add a **Place** entity to the **Entities** collection.
 
-[!code-csharp[set GeoCoordinates](../includes/code/dotnet-compose-messages.cs#setGeoCoord)]
+[!code-csharp[set GeoCoordinates](../includes/code/dotnet-create-messages.cs#setGeoCoord)]
 
 ### Consuming entities
 
@@ -135,11 +135,11 @@ To consume entities, use either the **dynamic** keyword or strongly-typed classe
 
 The following code example shows how to use the **dynamic** keyword to process an entity within the **Entities** property of a message.
 
-[!code-csharp[examine entity using dynamic keyword](../includes/code/dotnet-compose-messages.cs#examineEntity1)]
+[!code-csharp[examine entity using dynamic keyword](../includes/code/dotnet-create-messages.cs#examineEntity1)]
 
 The following code example shows how to use a strongly-typed class to process an entity within the **Entities** property of a message.
 
-[!code-csharp[examine entity using typed class](../includes/code/dotnet-compose-messages.cs#examineEntity2)]
+[!code-csharp[examine entity using typed class](../includes/code/dotnet-create-messages.cs#examineEntity2)]
 
 ## Message channel data
 

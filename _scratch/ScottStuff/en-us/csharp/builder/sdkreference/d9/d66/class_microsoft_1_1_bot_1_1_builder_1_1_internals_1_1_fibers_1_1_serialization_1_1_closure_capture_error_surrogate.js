@@ -1,4 +1,0 @@
-var class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_closure_capture_error_surrogate =
-[
-    [ "ClosureCaptureErrorSurrogate", "d9/d66/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_closure_capture_error_surrogate.html#ad009914bf30b92671b7e7877afc270b1", null ]
-];

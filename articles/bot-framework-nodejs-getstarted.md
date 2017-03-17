@@ -12,11 +12,14 @@ ms.reviewer:
 #ROBOTS: Index
 ---
 # Create a bot with the Bot Builder SDK for Node.js
+
+<!--
 > [!div class="op_single_selector"]
 > * [.NET](bot-framework-dotnet-getstarted.md)
 > * [Node.js](bot-framework-nodejs-getstarted.md)
 > * [Azure Bot Service](bot-framework-azure-getstarted.md)
 >
+-->
 
 The <a href="https://github.com/Microsoft/BotBuilder" target="_blank">Bot Builder SDK for Node.js</a> is a powerful framework for constructing bots that can handle both freeform interactions and more guided ones where the possibilities are explicitly shown to the user.
 It is easy to use and models frameworks like Express & Restify to provide a familiar way for JavaScript developers to write bots.
@@ -24,8 +27,8 @@ It is easy to use and models frameworks like Express & Restify to provide a fami
 In this tutorial, we'll walk through the process of building a bot by using the Bot Builder SDK for Node.js
 and testing it with the Bot Framework Emulator.
 
-## Get the SDK
-We'll start by getting the SDK and installing the necessary dependencies.
+## Install the SDK
+We'll start by installing the SDK and the necessary dependencies.
 First, create a folder for your bot, navigate to it, and run the following **npm** command:
 
 ```

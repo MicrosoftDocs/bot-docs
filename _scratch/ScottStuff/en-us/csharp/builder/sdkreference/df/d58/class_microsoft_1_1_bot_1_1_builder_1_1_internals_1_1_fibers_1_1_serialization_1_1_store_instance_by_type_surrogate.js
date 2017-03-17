@@ -1,6 +1,0 @@
-var class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_store_instance_by_type_surrogate =
-[
-    [ "IResolver", "dd/dbc/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_store_insd9fc854118476fa574aa944655732a5a.html", "dd/dbc/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_store_insd9fc854118476fa574aa944655732a5a" ],
-    [ "ObjectReference", "d7/d20/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_store_instanca9997af6594ae8e55c21cc867abe8dc9.html", "d7/d20/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_store_instanca9997af6594ae8e55c21cc867abe8dc9" ],
-    [ "StoreInstanceByTypeSurrogate", "df/d58/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_fibers_1_1_serialization_1_1_store_instance_by_type_surrogate.html#a567a5b3a938f455faf44ce79a98af877", null ]
-];

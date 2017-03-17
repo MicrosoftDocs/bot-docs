@@ -1,4 +1,0 @@
-var class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_post_unhandled_exception_to_user_task =
-[
-    [ "PostUnhandledExceptionToUserTask", "df/de5/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_post_unhandled_exception_to_user_task.html#a5c44539e9114ba8318d321ad21981e04", null ]
-];

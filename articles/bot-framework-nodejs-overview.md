@@ -32,18 +32,15 @@ and rich cards containing buttons.
 conversation, providing help, navigation, clarification, and confirmation as needed.
 
 ## Get the SDK
-To get the SDK and install the necessary dependencies, create a folder for your bot, navigate to it, and run the following **npm** command:
+
+Clohe the <a href="https://github.com/Microsoft/BotBuilder" target="_blank">BotBuilder</a> GitHub repository. 
 
 ```
-npm init
+git clone https://github.com/Microsoft/BotBuilder.git
+cd BotBuilder/Node
 ```
 
-Next, install the Bot Builder SDK and <a href="http://restify.com/" target="_blank">Restify</a> modules by running the following **npm** commands:
-
-```
-npm install --save botbuilder
-npm install --save restify
-```
+See [Get Started](bot-framework-nodejs-getstarted.md) for instructions on how to install the SDK and the necessary dependencies.
 
 ## Get code samples
 

@@ -1,8 +1,0 @@
-<map id="Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive&lt; T &gt;" name="Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive&lt; T &gt;">
-<area shape="rect" id="node3" href="$d3/db5/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_recognize_bool.html" title="Recognize a boolean value. " alt="" coords="479,5,637,61"/>
-<area shape="rect" id="node4" href="$dc/db8/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_recognize_date_time.html" title="Recognize a date/time expression. " alt="" coords="473,85,643,141"/>
-<area shape="rect" id="node5" href="$d4/df9/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_recognize_double.html" title="Recognize a double or float field. " alt="" coords="479,165,637,221"/>
-<area shape="rect" id="node6" href="$d8/dad/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_recognize_number.html" title="Recognize a numeric field. " alt="" coords="479,245,637,301"/>
-<area shape="rect" id="node7" href="$d0/d74/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_recognize_string.html" title="Recognize a string field. " alt="" coords="479,325,637,381"/>
-<area shape="rect" id="node2" href="$d3/d6f/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_recognize.html" title="Interface for recognizers that look for matches in user input. " alt="" coords="5,180,123,207"/>
-</map>

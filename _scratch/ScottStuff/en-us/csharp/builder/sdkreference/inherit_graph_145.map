@@ -1,5 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$d5/d08/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_binding_1_1_resolution_comparer.html" title="Microsoft.Bot.Builder.Internals.\lScorables.Binding.ResolutionComparer" alt="" coords="135,5,383,47"/>
-<area shape="rect" id="node3" href="$df/dff/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_intent_comparer.html" title="Microsoft.Bot.Builder.Internals.\lScorables.IntentComparer" alt="" coords="159,71,359,112"/>
-<area shape="rect" id="node4" href="$d3/d74/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_match_comparer.html" title="Microsoft.Bot.Builder.Internals.\lScorables.MatchComparer" alt="" coords="159,136,359,177"/>
-</map>
