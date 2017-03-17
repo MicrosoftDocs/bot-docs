@@ -17,7 +17,7 @@ ms.reviewer: v-tosisk
 ---
 
 # Add knowledge extraction to your bot
-Our five knowledge APIs enable you to identify named entities or phrases in unstructured text, add personalized recommendations, provide auto-complete suggestions based on natural interpretation of user queries, and search academic papers and other research like a personalized FAQ service.
+The five knowledge APIs enable you to identify named entities or phrases in unstructured text, add personalized recommendations, provide auto-complete suggestions based on natural interpretation of user queries, and search academic papers and other research like a personalized FAQ service.
 
 ## Entity Linking Intelligence Service
 The <a href="https://www.microsoft.com/cognitive-services/en-us/entity-linking-intelligence-service" target="_blank">Entity Linking Intelligence Service</a> annotates unstructured text with the relevant entities mentioned in the text. Depending on the context, the same word or phrase may refer to different things. This service understands the context of the supplied text and will identify each entity in your text.    
@@ -46,13 +46,13 @@ The Knowledge APIs can arm your bots with your own knowledge base and user histo
 ### QnA Maker example
 This is a very simple Bot which uses simple heuristics to determine whether the incoming user message has a question intent, and if that's the case simply forwards the message to the QnA Maker service.
 
-To get started with QnA Maker, go to <a href="https://qnamaker.ai" target="_blank">qnamaker.ai</a> and build your own knowledge base. Our <a href="https://qnamaker.ai/Documentation" target="_blank">documentation</a> describes the various flows in the tool to create your knowledge base.
+To get started with QnA Maker, go to <a href="https://qnamaker.ai" target="_blank">qnamaker.ai</a> and build your own knowledge base. The <a href="https://qnamaker.ai/Documentation" target="_blank">documentation</a> describes the various flows in the tool to create your knowledge base.
 
-To create the bot, you will use the <a href="http://docs.botframework.com/connector/getstarted/#getting-started-in-net" target="_blank">Bot Application .NET template</a> as our starting point.
+To create the bot, you will use the <a href="http://docs.botframework.com/connector/getstarted/#getting-started-in-net" target="_blank">Bot Application .NET template</a> as a starting point.
 
 After you set up your knowledge base, create your project with the Bot Application template, and add the following class to handle the integration with your QnA Maker service.
 
-QnAMaker Dialog is distributed in a separate NuGet package called **Microsoft.Bot.Builder.CognitiveServices** for C# and npm module called **botbuilder-cognitiveservices** for Node.js. Make sure you install these.
+QnAMaker Dialog is distributed in a separate NuGet package called 'Microsoft.Bot.Builder.CognitiveServices' for C# and npm module called 'botbuilder-cognitiveservices' for Node.js. Make sure you install these.
 
 
 ```cs
@@ -129,7 +129,7 @@ namespace FAQBot.Dialogs
 }
 ```
 
-Next, go to **MessagesController.cs**, and add the following namespaces.
+Next, go to 'MessagesController.cs', and add the following namespaces.
 
 ```cs
 using Microsoft.Bot.Builder.Dialogs;

@@ -42,7 +42,7 @@ The following sections describe the coding steps to add the location control to 
 
 ## Start using the location control
 
-In C#, import the **Microsoft.Bot.Builder.Location** package from <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">nuGet</a> and add the following namespace in your code.
+In C#, import the 'Microsoft.Bot.Builder.Location' package from <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">nuGet</a> and add the following namespace in your code.
 
 ```cs
 using Microsoft.Bot.Builder.Location;
@@ -76,7 +76,7 @@ locationDialog.getLocation(session,
 
 ## Using FB Messenger's location picker GUI dialog
 
-FB Messenger supports a location picker GUI dialog to let the user select an address. If you prefer to use FB Messenger's native dialog,  pass the **LocationOptions.UseNativeControl** option in the location control's constructor.  
+FB Messenger supports a location picker GUI dialog to let the user select an address. If you prefer to use FB Messenger's native dialog,  pass the 'LocationOptions.UseNativeControl' option in the location control's constructor.  
 
 ```cs
 var apiKey = WebConfigurationManager.AppSettings["BingMapsApiKey"];
@@ -93,7 +93,7 @@ var options = {
 locationDialog.getLocation(session, options);
 ```
 
-FB Messenger by default returns only the lat/long coordinates for any address selected via the location picker GUI dialog. You can also use the **LocationOptions.ReverseGeocode** option to have Bing reverse geocode the returned coordinates and automatically fill in the remaining address fields.
+FB Messenger by default returns only the lat/long coordinates for any address selected via the location picker GUI dialog. You can also use the 'LocationOptions.ReverseGeocode' option to have Bing reverse geocode the returned coordinates and automatically fill in the remaining address fields.
 
 
 ```cs
@@ -117,7 +117,7 @@ locationDialog.getLocation(session, options);
 
 ## Specifying required fields
 
-You can specify required location fields that need to be collected by the control. If the user does not provide values for one or more required fields, the control will prompt him to fill them in. You can specify required fields by passing them in the location control's constructor using the **LocationRequiredFields** enumeration. The example specifies the street address and postal (zip) code as required.
+You can specify required location fields that need to be collected by the control. If the user does not provide values for one or more required fields, the control will prompt him to fill them in. You can specify required fields by passing them in the location control's constructor using the 'LocationRequiredFields' enumeration. The example specifies the street address and postal (zip) code as required.
 
 
 [!code-js[Required Fields (C Sharp)](../includes/code/intelligence-location-control.cs#specifyingRequiredFields)]
