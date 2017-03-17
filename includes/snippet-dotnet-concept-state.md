@@ -3,3 +3,4 @@ access later to determine things such as where the prior conversation left off a
 previously provided. 
 Your bot may store data for a user, for a conversation, or for a user within the context of a specific conversation. 
 In the Bot Builder SDK for .NET, the <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/db/dbb/namespace_microsoft_1_1_bot_1_1_connector.html" target="_blank">Connector</a> library enables access the Bot Framework State service. 
+Any data that you save by using the Bot Framework State service will be stored in Azure and encrypted at rest. 

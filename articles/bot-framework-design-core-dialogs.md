@@ -46,7 +46,7 @@ For a detailed walkthrough of managing conversation flow using dialogs and the B
 - [Manage conversation flow using dialogs with the Bot Builder SDK for .NET](bot-framework-dotnet-howto-manage-conversation-flow.md)
 - [Manage conversation flow using dialogs with the Bot Builder SDK for Node.js](bot-framework-nodejs-howto-manage-conversation-flow.md)
 
-## Dialog stack
+##<a id="stack"></a> Dialog stack
 
 When one dialog invokes another, the Bot Builder adds the new dialog to the top of the dialog stack. 
 The dialog that is on top of the stack at any given time is in control of the conversation. 
