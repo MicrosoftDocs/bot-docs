@@ -1,8 +1,8 @@
 # [Overview](index.md)
-## [What is the Bot Framework?](bot-framework-what-is-bot-framework.md)
-## [How it's different](bot-framework-benefits.md)
-## [Bot scenarios](bot-framework-overview-scenarios.md)
-## [Core concepts](bot-framework-concepts-overview.md)
+## [What is the Bot Framework?](bot-framework-overview-what-is-bot-framework.md)
+## [How it works](bot-framework-overview-how-it-works.md)
+<!-- ## [Bot scenarios](bot-framework-overview-scenarios.md)-->
+<!-- ## [Core concepts](bot-framework-concepts-overview.md)-->
 ## [Get started](bot-framework-botbuilder-overview.md)
 ## [Try it out](bot-framework-sample-bot.md)
 # Designing bots
@@ -83,7 +83,7 @@
 ## [Troubleshooting](bot-framework-troubleshooting-guide.md)
 ### [Troubleshooting Authentication](bot-framework-troubleshooting-auth.md)
 ## [Downloads](bot-framework-resources-downloads.md)
-## [Tools](bot-framework-tools.md)
-## [Emulator](bot-framework-emulator.md)
+## [Tools](bot-framework-resources-tools.md)
+## [Emulator](bot-framework-resources-emulator.md)
 ## [Guide for IDs](bot-framework-resources-id-guide.md)
 ## [Support](bot-framework-resources-support.md)
