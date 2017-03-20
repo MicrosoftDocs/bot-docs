@@ -22,15 +22,15 @@ Bot Builder SDK for .NET.
 
 ## Types of attachments
 
-Within an **Activity** object, the **Attachments** property contains an array of **Attachment** objects 
+Within an `Activity` object, the `Attachments` property contains an array of `Attachment` objects 
 that represent any attachments on the message. 
 An attachment may be a media attachment (e.g., image, video, audio, file) or a rich card attachment.
 
 ## Send media attachments
 
 To include a media attachment within a message, 
-simply create an **Attachment** object and set the **ContentType**, **ContentUrl**, and **Name** properties. 
-The following code example shows how to add an image to a message.
+create an `Attachment` object and set the `ContentType`, `ContentUrl`, and `Name` properties. 
+This code example shows how to add an image to a message:
 
 [!code-csharp[Add media attachment](../includes/code/dotnet-add-attachments.cs#addMediaAttachment)]
 
@@ -41,20 +41,20 @@ The following code example shows how to add an image to a message.
 
 ## Send rich cards
 
-A rich card is composed of a title, description, link, and image(s). 
+A rich card comprises a title, description, link, and image(s). 
 A message can contain multiple rich cards, displayed in either list format or carousel format.
 The Bot Framework currently supports four types of rich cards: Hero card, Thumbnail card, Receipt card, and Sign-in card.
 
 > [!TIP]
-> To display multiple rich cards in list format, set the activity's **AttachmentLayout** property to "list". 
-> To display multiple rich cards in carousel format, set the activity's **AttachmentLayout** property to "carousel". 
-> If the channel does not support carousel format, it will display the rich cards in list format, even if the **AttachmentLayout** property specifies "carousel".
+> To display multiple rich cards in list format, set the activity's `AttachmentLayout` property to "list". 
+> To display multiple rich cards in carousel format, set the activity's `AttachmentLayout` property to "carousel". 
+> If the channel does not support carousel format, it will display the rich cards in list format, even if the `AttachmentLayout` property specifies "carousel".
 
 ### Hero card
 
 The Hero card typically contains a single large image, one or more buttons, and text. 
 
-The following code sample shows how to create a reply message that contains three Hero cards rendered in carousel format. 
+This code sample shows how to create a reply message that contains three Hero cards rendered in carousel format: 
 
 [!code-csharp[Add HeroCard attachment](../includes/code/dotnet-add-attachments.cs#addHeroCardAttachment)]
 
@@ -62,7 +62,7 @@ The following code sample shows how to create a reply message that contains thre
 
 The Thumbnail card typically contains a single small image, one or more buttons, and text. 
 
-The following code sample shows how to create a reply message that contains two Thumbnail cards rendered in list format. 
+This code sample shows how to create a reply message that contains two Thumbnail cards rendered in list format. 
 
 [!code-csharp[Add ThumbnailCard attachment](../includes/code/dotnet-add-attachments.cs#addThumbnailCardAttachment)]
 
@@ -71,7 +71,7 @@ The following code sample shows how to create a reply message that contains two 
 The Receipt card enables a bot to provide a receipt to the user. 
 It typically contains the list of items to include on the receipt, tax and total information, and other text. 
 
-The following code sample shows how to create a reply message that contains a Receipt card. 
+This code sample shows how to create a reply message that contains a Receipt card: 
 
 [!code-csharp[Add ReceiptCard attachment](../includes/code/dotnet-add-attachments.cs#addReceiptCardAttachment)]
 
@@ -80,15 +80,15 @@ The following code sample shows how to create a reply message that contains a Re
 The Sign-in card enables a bot to request that a user sign-in. 
 It typically contains text and one or more buttons that the user can click to initiate the sign-in process. 
 
-The following code sample shows how to create a reply message that contains a Sign-in card.
+This code sample shows how to create a reply message that contains a Sign-in card:
 
 [!code-csharp[Add SignInCard attachment](../includes/code/dotnet-add-attachments.cs#addSignInCardAttachment)]
 
 ## Process events within rich cards
 
-The code examples above show how to create buttons within rich cards by using the **CardAction** object. 
+The code examples above show how to create buttons within rich cards by using the `CardAction` object. 
 By using card actions, you can specify the action that occurs whenever the user clicks a button or taps a 
-section of the card. Each **CardAction** object contains the following properties:
+section of the card. Each `CardAction` object contains these properties:
 
 | Property | Type | Description | 
 |----|----|----|
@@ -97,15 +97,15 @@ section of the card. Each **CardAction** object contains the following propertie
 | Image | string | image URL for the button |
 | Value | string | value needed to perform the specified type of action |
 
-The following table lists the valid values for **CardAction.Type** and describes 
-the expected contents of **CardAction.Value** for each type.
+The following table lists the valid values for `CardAction.Type` and describes 
+the expected contents of `CardAction.Value` for each type.
 
 | CardAction.Type | CardAction.Value | 
 |----|----|
 | openUrl | URL to be opened in the built-in browser |
 | imBack | Text of the message to send to the bot (from the user who clicked the button or tapped the card). This message (from user to bot) will be visible to all conversation participants via the client application that is hosting the conversation. |
 | postBack | Text of the message to send to the bot (from the user who clicked the button or tapped the card). This message will not be displayed by the client application that is hosting the conversation. |
-| call | Destination for a phone call in the following format: **tel:123123123123** |
+| call | Destination for a phone call in this format: **tel:123123123123** |
 | playAudio | URL of audio to be played |
 | playVideo | URL of video to be played |
 | showImage | URL of image to be displayed |
