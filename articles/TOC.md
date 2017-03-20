@@ -29,7 +29,6 @@
 ### [Activity types](bot-framework-dotnet-activities.md)
 ### [Dialogs](bot-framework-dotnet-dialogs.md)
 ### [Security](bot-framework-dotnet-security.md)
-## [Debugging](bot-framework-dotnet-debugging.md)
 ## Tutorials
 ### [Create messages](bot-framework-dotnet-create-messages.md)
 ### [Add attachments to messages](bot-framework-dotnet-add-attachments.md)
