@@ -29,7 +29,7 @@ and take advantage of the following SDK features:
 - FormFlow for automatically generating a bot (from a C# class) that guides the user through the 
 conversation, providing help, navigation, clarification, and confirmation as needed
 
-## Get the SDK
+##<a id="get-sdk"></a> Get the SDK
 
 The SDK is available as a NuGet package and as open source on <a href="https://github.com/Microsoft/BotBuilder" target="_blank">GitHub</a>. 
 To install the SDK within a Visual Studio project, complete the following steps:

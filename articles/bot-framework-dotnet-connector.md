@@ -25,8 +25,8 @@ exchange information between bot and user on a channel.
 > [!NOTE]
 > While it is possible to construct a bot by exclusively using the techniques that are described
 > in this article, the Bot Builder SDK provides additional features like 
-> [Dialogs](bot-framework-dotnet-dialogs.md) and [FormFlow](bot-framework-dotnet-formflow.md) that 
-> can streamline the process of managing conversation flow and 
+> [dialogs](bot-framework-dotnet-dialogs.md) and [FormFlow](bot-framework-dotnet-formflow.md) that 
+> can streamline the process of managing conversation flow and state and 
 > make it simpler to incorporate cognitive services such as language understanding.
 
 ##<a id="create-client"></a> Create a connector client

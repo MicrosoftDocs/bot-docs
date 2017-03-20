@@ -17,9 +17,10 @@ ms.reviewer:
 [!include[State concept overview](../includes/snippet-dotnet-concept-state.md)]  
 This article describes how to manage state data using the State service via the Bot Builder SDK for .NET.
 
-> [!NOTE]
-> Any data that you save by using the Bot Framework State service 
-> will be stored in Azure and encrypted at rest. 
+> [!IMPORTANT]
+> If your bot uses [dialogs](bot-framework-dotnet-dialogs.md), 
+> conversation state (the dialog stack and the state of each dialog in the stack) is automatically stored 
+> using the Bot Framework State service. 
 
 ## Bot state methods
 
