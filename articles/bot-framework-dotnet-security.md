@@ -34,7 +34,7 @@ After you have registered your bot, specify its app Id and password in your bot'
 </appSettings>
 ```
 
-Then, use the `[BotAuthentication] attribute to specify authentication credentials when 
+Then, use the `[BotAuthentication]` attribute to specify authentication credentials when 
 using the Bot Builder SDK for .NET to create your bot.
 
 To use the authentication credentials that are stored in the web.config file, 
@@ -51,3 +51,4 @@ specify the `[BotAuthentication]` attribute and pass in those values.
 
 - [Bot Builder SDK for .NET](bot-framework-dotnet-overview.md)
 - [Key concepts in the Bot Builder SDK for .NET](bot-framework-dotnet-concepts.md)
+- [Register a bot with the Bot Framework](bot-framework-publish-register.md)
