@@ -7,8 +7,8 @@ manager: rstand
 ms.topic: bot-service-get-started-article
 ms.prod: botframework
 ms.service: Azure Bot Service
-ms.date: 03/02/2017
-ms.reviewer: rstand
+ms.date: 
+ms.reviewer: v-tosisk@microsoft.com
 #ROBOTS: Index
 ---
 
@@ -24,7 +24,7 @@ ms.reviewer: rstand
 
 The Azure Bot Service accelerates the process of developing a bot 
 by providing an integrated environment that is purpose-built for bot development. 
-In this tutorial, we'll walk through the process of creating and testing a bot by using the Azure Bot Service.
+This tutorial walks you through the process of creating and testing a bot by using the Azure Bot Service.
 
 ## Prerequisites
 
