@@ -16,7 +16,7 @@ Building bots can be easier and more fun with the help of additional tools.
 
 ## Bot Framework Emulator
 
-The [Bot Framework Emulator](bot-framework-emulator.md) is a desktop application that lets you test and debug your bot.
+The [Bot Framework Emulator](bot-framework-resources-emulator.md) is a desktop application that lets you test and debug your bot.
 
 ## Vorlon.js and Bot Framework Inspector
 

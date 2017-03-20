@@ -69,7 +69,7 @@ See the Bot Framework’s [REST API](/en-us/connector/overview/).
 
 ### Bot Framework Emulator
 The Bot Framework Emulator is a desktop application that allows bot developers to test and debug their bots. The Bot Framework Emulator can communicate with your bot wherever it is running; on localhost, or remotely in the cloud.
-For details on using the emulator, see [Bot Framework Emulator](bot-framework-emulator.md).
+For details on using the emulator, see [Bot Framework Emulator](bot-framework-resources-emulator.md).
 
 ## Bot Connector
 The Bot Connector service provides the connection from your bot to text/SMS, Skype, Slack, Facebook Messenger, Office 365 mail and other channels.
