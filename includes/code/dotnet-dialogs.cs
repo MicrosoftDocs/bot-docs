@@ -86,3 +86,78 @@ public class EchoDialog : IDialog<object>
 }
 // </echobot3>
 
+
+// <serialization>
+var builder = new ContainerBuilder();
+builder.RegisterModule(new DialogModule());
+builder.RegisterModule(new ReflectionSurrogateModule());
+// </serialization>
+
+
+// <chain1>
+var query = from x in new PromptDialog.PromptString(Prompt, Prompt, attempts: 1)
+            let w = new string(x.Reverse().ToArray())
+            select w;
+// </chain1>
+
+
+// <chain2>
+var query = from x in new PromptDialog.PromptString("p1", "p1", 1)
+            from y in new PromptDialog.PromptString("p2", "p2", 1)
+            select string.Join(" ", x, y);
+// </chain2>
+
+
+// <chain3>
+query = query.PostToUser();
+// </chain3>
+
+
+// <chain4>
+var logic =
+    toBot
+    .Switch
+    (
+        new RegexCase<string>(new Regex("^hello"), (context, text) =>
+        {
+            return "world!";
+        }),
+        new Case<string, string>((txt) => txt == "world", (context, text) =>
+        {
+            return "!";
+        }),
+        new DefaultCase<string, string>((context, text) =>
+        {
+            return text;
+        }
+    )
+);
+// </chain4>
+
+
+// <chain5>
+var joke = Chain
+    .PostToChain()
+    .Select(m => m.Text)
+    .Switch
+    (
+        Chain.Case
+        (
+            new Regex("^chicken"),
+            (context, text) =>
+                Chain
+                .Return("why did the chicken cross the road?")
+                .PostToUser()
+                .WaitToBot()
+                .Select(ignoreUser => "to get to the other side")
+        ),
+        Chain.Default<string, IDialog<string>>(
+            (context, text) =>
+                Chain
+                .Return("why don't you like chicken jokes?")
+        )
+    )
+    .Unwrap()
+    .PostToUser().
+    Loop();
+// </chain5>

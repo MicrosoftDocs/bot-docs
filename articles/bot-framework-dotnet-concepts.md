@@ -34,22 +34,13 @@ see [Activity types](bot-framework-dotnet-activities.md).
 
 ## Dialog
 
-> [!NOTE]
-> Content coming soon...
-
-In the Bot Builder SDK for .NET, the <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_blank">Builder</a> library enables you to manage dialogs.
+When you create a bot using the Bot Builder SDK for .NET, you can use dialogs to model 
+a conversation and manage [conversation flow](bot-framework-design-core-dialogs.md). 
+A dialog can be composed with other dialogs to maximize reuse, and a dialog context maintains the [stack of dialogs](bot-framework-design-core-dialogs.md#stack) that are active in the conversation at any point in time. 
+A conversation that comprises dialogs is portable across computers, which makes it possible for your bot implementation to scale. In the Bot Builder SDK for .NET, the <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_blank">Builder</a> library enables you to manage dialogs.
 
 For details about using dialogs within the Bot Builder SDK for .NET, see 
 [Dialogs](bot-framework-dotnet-dialogs.md).
-
-### FormFlow
-
-> [!NOTE]
-> Content coming soon...
-
-In the Bot Builder SDK for .NET, the <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_blank">Builder</a> library enables you to implement FormFlow.
-
-For details about using FormFlow within the BotBuilder SDK for .NET, see [FormFlow](bot-framework-dotnet-formflow.md).
 
 ## State
 
@@ -71,9 +62,12 @@ For more information on this topic, see [Security](bot-framework-dotnet-security
 
 ## Additional resources
 
-> [!NOTE]
-> Content coming soon...
-
+- [Bot Builder SDK for .NET](bot-framework-dotnet-overview.md)
+- [Create a bot with the Bot Builder SDK for .NET](bot-framework-dotnet-getstarted.md)
+- [Activity types](bot-framework-dotnet-activities.md)
+- [Dialogs](bot-framework-dotnet-dialogs.md)
+- [Designing conversation flow](bot-framework-design-core-dialogs.md)
+- [Security](bot-framework-dotnet-security.md)
 
 
 

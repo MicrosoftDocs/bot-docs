@@ -29,7 +29,8 @@
 ### [Activity types](bot-framework-dotnet-activities.md)
 ### [Dialogs](bot-framework-dotnet-dialogs.md)
 ### [Security](bot-framework-dotnet-security.md)
-## How to
+## [Debugging](bot-framework-dotnet-debugging.md)
+## Tutorials
 ### [Create messages](bot-framework-dotnet-create-messages.md)
 ### [Add attachments to messages](bot-framework-dotnet-add-attachments.md)
 ### [Implement channel-specific functionality](bot-framework-dotnet-channeldata.md)
@@ -45,7 +46,7 @@
 ## [Get started](bot-framework-nodejs-getstarted.md)
 ## [Key concepts](bot-framework-nodejs-concepts.md)
 ## Debugging
-## How to
+## Tutorials
 ### [Manage conversation flow](bot-framework-nodejs-howto-manage-conversation-flow.md)
 ### [Implement global handlers](bot-framework-nodejs-howto-global-handlers.md)
 ### [Recognize user intent](bot-framework-nodejs-howto-recognize-intent.md)
