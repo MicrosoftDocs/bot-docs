@@ -21,17 +21,14 @@ ms.reviewer: rstand
 >
 -->
 
-The <a href="https://github.com/Microsoft/BotBuilder" target="_blank">Bot Builder SDK for .NET</a> is a powerful
-framework for constructing bots that can handle both freeform interactions and more guided ones where the
-possibilities are explicitly shown to the user.
-The Bot Builder SDK for .NET is easy to use and leverages C# to provide a familiar way for .NET developers to write bots.
+The <a href="https://github.com/Microsoft/BotBuilder" target="_blank">Bot Builder SDK for .NET</a> is an easy to use framework for developing bots. The SDK leverages C# to provide a familiar way for .NET developers to create powerful bots.
 
-This tutorial walks you through the process of building a bot by using
+This tutorial walks you through building a bot by using
 the Bot Application template and the Bot Builder SDK for .NET,
-and testing it with the Bot Framework Emulator.
+and then testing it with the Bot Framework Emulator.
 
-> [!NOTE]
-> At this time, the Bot Builder SDK for .NET supports only C#.
+> [!IMPORTANT]
+> The Bot Builder SDK for .NET currently supports C#.
 
 ## Prerequisites
 
@@ -39,37 +36,37 @@ Get started by completing the following prerequisite tasks:
 
 1. Install Visual Studio 2017.  
 > [!TIP]
-> You can build bots using the free <a href="https://www.visualstudio.com/downloads/" target="_blank">Visual Studio 2017 Community</a>.
+> You can build bots for free with <a href="https://www.visualstudio.com/downloads/" target="_blank">Visual Studio 2017 Community</a>.
 
-2. In Visual Studio, update all extensions to their latest versions by <a href="https://msdn.microsoft.com/en-us/library/dd997169.aspx" target="_blank">following the instructions here</a>.
+2. In Visual Studio, <a href="https://msdn.microsoft.com/en-us/library/dd997169.aspx" target="_blank">update all extensions</a> to their latest versions.
 
 3. [Download](http://aka.ms/bf-bc-vstemplate) the Bot Application template
 and install the template by saving the .zip file to your Visual Studio 2017 project templates directory.  
+
 > [!TIP]
 > The Visual Studio 2017 project templates directory is typically located here:
 > `%USERPROFILE%\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\`
 
 ## Create your bot
 
-Next, open Visual Studio and create a new C# project by using the Bot Application template.
+Next, open Visual Studio and create a new C# project. Choose the Bot Application template for your new project.
 
 ![Visual Studio create project](media/connector-getstarted-create-project.png)
 
 By using the Bot Application template, you're creating a project that already contains all of the
 components that are required to build a simple bot, including a reference to
-the Bot Builder SDK for .NET, `Microsoft.Bot.Builder`. Verify that the project
-references the latest version of the SDK by completing the following steps:
+the Bot Builder SDK for .NET, `Microsoft.Bot.Builder`. Verify that your project
+references the latest version of the SDK:
 
-- Right-click on the project and select **Manage NuGet Packages**.
-- In the **Browse** tab, type "Microsoft.Bot.Builder".
-- Locate the "Microsoft.Bot.Builder" package in the list of search results, and click the **Update** button (if present) for that package.
-- Follow the prompts to accept the changes and update the package.
+1. Right-click on the project and select **Manage NuGet Packages**.
+2. In the **Browse** tab, type "Microsoft.Bot.Builder".
+3. Locate the `Microsoft.Bot.Builder` package in the list of search results, and click the **Update** button (if present) for that package.
+4. Follow the prompts to accept the changes and update the package.
 
-At this point (thanks to the Bot Application template),
-your project contains all of the code that's necessary to create the bot in this tutorial --
-you won't actually need to write any additional code.
+Thanks to the Bot Application template,
+your project contains all of the code that's necessary to create the bot in this tutorial. You won't actually need to write any additional code.
 However, before we move on to testing your bot,
-let's take a quick look at some of the code that the Bot Application template provided.
+take a quick look at some of the code that the Bot Application template provided.
 
 ## Explore the code
 
@@ -79,9 +76,8 @@ core functionality of your bot.
 [!include[echobot code sample C#](../includes/code/csharp-echobot.md)]
 
 This method receives a message from the user and creates a reply
-(by using the **CreateReply** function) that echos back the user's message,
-prefixed with the text 'You sent' and ending in the text 'which was *##* characters'
-(where *##* represents the number of characters in the user's message).
+(by using the `CreateReply` function) that echos back the user's message,
+prefixed with the text 'You sent' and ending in the text 'which was *##* characters', where *##* represents the number of characters in the user's message.
 The `[BotAuthentication]` decoration on the method validates your Bot Connector credentials over HTTPS.
 
 ## Test your bot
@@ -90,8 +86,8 @@ The `[BotAuthentication]` decoration on the method validates your Bot Connector 
 
 ### Start your bot
 
-After installing the emulator, start your bot via Visual Studio by using a browser as the application host.
-The following Visual Studio screenshot shows that the bot will launch in Microsoft Edge when the run button is clicked.
+After installing the emulator, start your bot in Visual Studio by using a browser as the application host.
+This Visual Studio screenshot shows that the bot will launch in Microsoft Edge when the run button is clicked.
 
 ![Visual Studio run project](media/connector-getstarted-start-bot-locally.png)
 
@@ -108,21 +104,22 @@ For example, here's the application's **default.htm** page shown in Microsoft Ed
 ### Start the emulator and connect your bot
 
 At this point, your bot is running locally.
-Next, start the emulator and then connect your bot by completing the following tasks in the emulator:
+Next, start the emulator and then connect to your bot in the emulator:
 
-1. Type **http://localhost:port-number/api/messages** into the address bar -- where **port-number** matches the port number shown in the browser where your application is running.  
-> [!TIP]
-> In the example shown above, the application is running on port number **3978**, so the emulator address would be set to: http://localhost:3978/api/messages.
+1. Type **http://localhost:port-number/api/messages** into the address bar, where **port-number** matches the port number shown in the browser where your application is running.
 
 2. Click **Connect**. (You won't need to specify **Microsoft App ID** and **Microsoft App Password** -- you can leave these fields blank for now. You'll get this information later if/when you register your bot with the framework.)
+
+> [!TIP]
+> In the example shown above, the application is running on port number **3978**, so the emulator address would be set to: http://localhost:3978/api/messages.
 
 ### Test your bot
 
 Now that your bot is running locally and is connected to the emulator, test your bot by typing a few messages in the emulator.
 You should see that the bot responds to each message you send by echoing back your message prefixed with the text 'You sent'
-and ending with the text 'which was *##* characters' (where *##* is the total number of characters in the message that you sent).
+and ending with the text 'which was *##* characters', where *##* is the total number of characters in the message that you sent.
 
-Congratulations -- you've successfully created a bot by using the Bot Application template Bot Builder SDK for .NET!
+You've successfully created a bot by using the Bot Application template Bot Builder SDK for .NET!
 
 ## Next steps
 
