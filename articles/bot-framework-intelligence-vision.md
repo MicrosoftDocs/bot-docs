@@ -63,7 +63,7 @@ In this example, you will build a simplified version of CaptionBot.ai. The Visio
 </div>
 ```
 
-After you create your project with the Bot Application.NET template, install the *Microsoft.ProjectOxford.Vision* package from <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">nuGet</a>. Next, go to *MessagesController.cs* class file and add the following namespaces.
+After you create your project with the Bot Application .NET template, install the `Microsoft.ProjectOxford.Vision` package from <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">nuGet</a>. Next, go to `MessagesController.cs` class file and add the following namespaces.
 
 ```cs
 
@@ -153,7 +153,11 @@ return new HttpResponseMessage(System.Net.HttpStatusCode.Accepted);
 ### Emotion API example
 In this example, you will build an Emotion Bot that receives an image url, detects if there's at least one face in the image, and finally responds back with the dominant emotion of that face. To keep the example simple, the bot will return the emotion for only one face, and ignore other faces in the image. The example requires the *Microsoft.ProjectOxford.Emotion* package, which can be obtained using <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">nuGet</a>.
 
+<<<<<<< HEAD
 Create a new project by downloading the <a href="http://aka.ms/bf-bc-vstemplate" target="_blank">Bot Application .NET template</a>. Install the Microsoft.ProjectOxford.Emotion package from <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">nuGet</a>. Next, go to 'MessagesController.cs' class file and add the following namespaces.
+=======
+Create a new project by downloading the <a href="http://aka.ms/bf-bc-vstemplate" target="_blank">Bot Application .NET template</a>. Install the Microsoft.ProjectOxford.Emotion package from <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">nuGet</a>. Next, go to `MessagesController.cs` class file and add the following namespaces.
+>>>>>>> e03f54e3329a3bff3681e3e7211baaa1cce7789d
 
 ```cs
 using Microsoft.ProjectOxford.Emotion;

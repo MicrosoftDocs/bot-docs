@@ -7,8 +7,8 @@ manager: rstand
 ms.topic: get-started-article
 ms.prod: botframework
 ms.service: Bot Builder
-ms.date: 02/27/2017
-ms.reviewer:
+ms.date:
+ms.reviewer: rstand
 #ROBOTS: Index
 ---
 # Create a bot with the Bot Builder SDK for .NET
@@ -24,9 +24,9 @@ ms.reviewer:
 The <a href="https://github.com/Microsoft/BotBuilder" target="_blank">Bot Builder SDK for .NET</a> is a powerful
 framework for constructing bots that can handle both freeform interactions and more guided ones where the
 possibilities are explicitly shown to the user.
-It is easy to use and leverages C# to provide a familiar way for .NET developers to write bots.
+The Bot Builder SDK for .NET is easy to use and leverages C# to provide a familiar way for .NET developers to write bots.
 
-In this tutorial, we'll walk through the process of building a bot by using
+This tutorial walks you through the process of building a bot by using
 the Bot Application template and the Bot Builder SDK for .NET,
 and testing it with the Bot Framework Emulator.
 
@@ -37,17 +37,18 @@ and testing it with the Bot Framework Emulator.
 
 Get started by completing the following prerequisite tasks:
 
-1. Install Visual Studio 2015.  
+1. Install Visual Studio 2017.  
 > [!TIP]
-> The Community edition of Visual Studio 2015 is available <a href="https://www.visualstudio.com/downloads/" target="_blank">here</a> for free.
+> You can build bots using the free <a href="https://www.visualstudio.com/downloads/" target="_blank">Visual Studio 2017 Community</a>.
 
-2. In Visual Studio, update all extensions to their latest versions (by following the instructions <a href="https://msdn.microsoft.com/en-us/library/dd997169.aspx" target="_blank">here</a>).
+2. In Visual Studio, update all extensions to their latest versions by <a href="https://msdn.microsoft.com/en-us/library/dd997169.aspx" target="_blank">following the instructions here</a>.
 
-3. Click [here](http://aka.ms/bf-bc-vstemplate) to download the Bot Application template
-and install the template by saving the .zip file to your Visual Studio 2015 project templates directory.  
+3. [Download](http://aka.ms/bf-bc-vstemplate)the Bot Application template
+and install the template by saving the .zip file to your Visual Studio 2017 project templates directory.  
+
 > [!TIP]
-> The Visual Studio 2015 project templates directory is typically located here:
-> `%USERPROFILE%\Documents\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\`
+> The Visual Studio 2017 project templates directory is typically located here:
+> `%USERPROFILE%\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\`
 
 ## Create your bot
 
@@ -57,7 +58,7 @@ Next, open Visual Studio and create a new C# project by using the Bot Applicatio
 
 By using the Bot Application template, you're creating a project that already contains all of the
 components that are required to build a simple bot, including a reference to
-the Bot Builder SDK for .NET (**Microsoft.Bot.Builder**). Verify that the project
+the Bot Builder SDK for .NET, `Microsoft.Bot.Builder`. Verify that the project
 references the latest version of the SDK by completing the following steps:
 
 - Right-click on the project and select **Manage NuGet Packages**.
