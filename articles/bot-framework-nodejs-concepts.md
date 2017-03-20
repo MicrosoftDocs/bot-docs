@@ -74,6 +74,10 @@ Build your first bot by following the steps at [Get started](bot-framework-nodej
 
 ## Additional Resources
 
+* [Manage conversation flow](bot-framework-nodejs-howto-manage-conversation-flow.md)
+* [Send a rich card](bot-framework-nodejs-howto-send-card-buttons.md)
+* [Send attachments](bot-framework-nodejs-howto-send-receive-attachments.md)
+* [Saving user data](bot-framework-nodejs-howto-save-user-data.md)
 * [How to send a typing indicator](bot-framework-nodejs-howto-send-typing-indicator.md)
 * [session object][Session]
 * [session.send][SessionSend]
