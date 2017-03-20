@@ -275,7 +275,7 @@ If you continue to encounter difficulties, here are some additional resources:
 
 [BotConnectuorAuthGuide]: (https://docs.botframework.com/en-us/restapi/authentication/)
 [Support]: (https://docs.botframework.com/en-us/support/#navtitle)
-[Emulator]: bot-framework-emulator.md
+[Emulator]: bot-framework-resources-emulator.md
 [DevPortalTestPanel]: (media/troubleshooting-bot-framework-authentication_3.png)
 [EmulatorPic2]: (media/troubleshooting-bot-framework-authentication_2.png)
 [EmulatorPic1]: (media/troubleshooting-bot-framework-authentication_1.png)
