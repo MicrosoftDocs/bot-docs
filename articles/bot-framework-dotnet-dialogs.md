@@ -33,7 +33,7 @@ much like a web application that does not need to store session state in web ser
 
 ### Echo bot
 
-Consider the following example, which describes how to change the bot that's created in the 
+Consider this echo bot example, which describes how to change the bot that's created in the 
 [Get started](bot-framework-dotnet-getstarted.md) tutorial so that it uses dialogs to 
 exchange messages with the user.
 

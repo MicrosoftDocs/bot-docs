@@ -48,14 +48,13 @@ Your bot will receive a **conversationUpdate** activity whenever it has been add
 other members have been added to or removed from a conversation, 
 or conversation metadata has changed. 
 
-If members have been added to the conversation, the activity's **MembersAdded** property will contain an array of **ChannelAccount** 
-objects to identify the new members. 
+If members have been added to the conversation, the activity's `MembersAdded` property will contain an array of 
+`ChannelAccount` objects to identify the new members. 
 You can determine whether your bot has been added to the conversation (i.e., is one of the new members), 
-by evaluating whether the **Recipient.Id** value for the activity (i.e., your bot's id) 
-matches the **Id** property for any of the accounts in the **MembersAdded** array.
+by evaluating whether the `Recipient.Id` value for the activity (i.e., your bot's id) 
+matches the `Id` property for any of the accounts in the `MembersAdded` array.
 
-If members have been removed from the conversation, the **MembersRemoved** property will contain an array of **ChannelAccount** 
-objects to identify the removed members. 
+If members have been removed from the conversation, the `MembersRemoved` property will contain an array of `ChannelAccount` objects to identify the removed members. 
 
 > [!TIP]
 > If your bot receives a **conversationUpdate** activity to indicate that a user has joined the conversation, 
@@ -65,8 +64,7 @@ objects to identify the removed members.
 
 For channels that enable your bot to be a member of a user's contact list (Skype, for example), 
 your bot will receive a **contactRelationUpdate** activity whenever it is added or removed from a user's contact list. 
-The value of the activity's **Action** property indicates whether the bot has been added to the user's contact list ("add") 
-or removed from the user's contact list ("remove").
+The value of the activity's `Action` property indicates whether the bot has been added to the user's contact list ("add") or removed from the user's contact list ("remove").
 
 ## typing
 
