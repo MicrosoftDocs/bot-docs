@@ -12,18 +12,16 @@ ms.reviewer:
 #ROBOTS: Index
 ---
 
-# Use the backchannel mechanism with the web chat control and Node.js
-
-## Introduction 
+# Use the backchannel mechanism
 
 [!include[Introduction to backchannel mechanism](../includes/snippet-backchannel.md)]
-In this article, we'll discuss how to use the backchannel mechanism with the 
+This article describes how to use the backchannel mechanism with the 
 <a href="https://github.com/Microsoft/BotFramework-WebChat" target="_blank">open source web (chat) control</a> and Node.js. 
 
-## Use the backchannel mechanism 
+## Walk through
 
 The open source web (chat) control accesses the Direct Line API by using a JavaScript class 
-called [Direct Line](https://github.com/microsoft/botframework-DirectLinejs). 
+called <a href="https://github.com/microsoft/botframework-DirectLinejs" target="_blank">DirectLineJS</a>. 
 The control can either create its own instance of Direct Line, or it can share one with the hosting page. 
 If the control shares an instance of Direct Line with the hosting page, 
 both the control and the page will be capable of sending and receiving activities. 
@@ -125,10 +123,7 @@ bot.on("event", function (event) {
 
 ## Additional resources
 
-In this article, we discussed how to use the backchannel mechanism with the 
-<a href="https://github.com/Microsoft/BotFramework-WebChat" target="_blank">open source web (chat) control</a> and Node.js. 
-The complete sample code for the backchannel example discussed in this article is 
-available 
-<a href="https://github.com/Microsoft/BotFramework-WebChat/blob/master/samples/backchannel/index.html" target="_blank">here</a> 
-and 
-<a href="https://github.com/ryanvolum/backChannelBot" target="_blank">here</a>.
+- <a href="https://docs.botframework.com/en-us/restapi/directline3/#navtitle" target="_blank">Direct Line API</a>
+- <a href="https://github.com/Microsoft/BotFramework-WebChat" target="_blank">Microsoft Bot Framework WebChat control</a>
+- <a href="https://github.com/Microsoft/BotFramework-WebChat/blob/master/samples/backchannel/index.html" target="_blank">Backchannel sample</a>
+- <a href="https://github.com/ryanvolum/backChannelBot" target="_blank">Backchannel bot</a>
