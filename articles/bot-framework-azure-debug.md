@@ -1,7 +1,7 @@
 ---
-title: Set up a form bot for Azure Bot Service | Microsoft Docs
-description: Learn how to set up a form for Azure Bot Service.
-keywords: Bot Framework, Azure Bot Service, form bot
+title: Debug your bot on Azure Bot Service | Microsoft Docs
+description: Learn how to debug your bot on Azure Bot Service.
+keywords: Bot Framework, Azure Bot Service, debug
 author: Toney001
 manager: rstand
 ms.topic: bot-service-article
@@ -12,6 +12,6 @@ ms.reviewer:
 #ROBOTS: Index
 ---
 
-#Form bot
+#Debug your bot
 
 ##Content under development

@@ -1,5 +1,5 @@
 ---
-title: Set up a naturallanguage bot for Azure Bot Service | Microsoft Docs
+title: Set up a natural language bot for Azure Bot Service | Microsoft Docs
 description: Learn how to set up natural langugage for Azure Bot Service.
 keywords: Bot Framework, Azure Bot Service, natural language bot
 author: Toney001
