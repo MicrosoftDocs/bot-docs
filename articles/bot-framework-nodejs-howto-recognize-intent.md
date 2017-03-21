@@ -40,6 +40,7 @@ Once you've registered a recognizer, you can associate the recognizer with an ac
 
 
 ## Example: Use the built-in regular expression recognizer
+Use [RegExpRecognizer](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.regexprecognizer.html) to detect the user's intent using a regular expression. Multiple expressions can be passed in to support recognizing across multiple languages. 
 
 > [!NOTE]
 > Code sample coming soon...
