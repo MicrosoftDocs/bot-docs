@@ -269,7 +269,7 @@ var bot = new builder.UniversalBot(connector, function (session) {
 
 ## Additional resources
 
-- [How to send and receive attachements][SendAttachments]
+- [How to send and receive attachments][SendAttachments]
 - [How to send cards with buttons][SendCardWithButtons]
 
 
