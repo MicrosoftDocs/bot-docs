@@ -62,7 +62,6 @@ process.
 ## Get state data
 
 Each of the "**Get...**" methods returns a `BotData` object that contains the state data for the specified user and/or conversation. 
-
 To get a specific property value from a `BotData` object, call the `GetProperty` method. 
 
 This code sample shows how to get a typed property from user data. 
