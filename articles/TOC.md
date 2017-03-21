@@ -58,7 +58,7 @@
 ### [Intercept messages](bot-framework-nodejs-howto-middleware.md)
 ### [Use backchannel mechanism](bot-framework-nodejs-howto-backchannel.md)
 # Build bots with Azure Bot Service
-## [Overview](bot-framework-azure-overview.md)
+## Overview
 ## [Get started](bot-framework-azure-getstarted.md)
 ## Key concepts
 ## Debugging
