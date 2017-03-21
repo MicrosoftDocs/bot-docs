@@ -64,7 +64,7 @@ You can provide custom disambiguation logic in your bot by implementing [IDisamb
 
 ## Additional resources
 
-To learn more about the actions you can associate with a recognized intent, see [Trigger actions using global handlers](bot-framework-nodejs-howto-global-handlers.md).
+To learn more about the actions you can associate with a recognized intent, see [Managing conversation flow](bot-framework-nodejs-howto-manage-conversation-flow.md) and [Trigger actions using global handlers](bot-framework-nodejs-howto-global-handlers.md).
 
 [IMessage]: http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.imessage
 [IntentRecognizerSetOptions]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iintentrecognizersetoptions.html
