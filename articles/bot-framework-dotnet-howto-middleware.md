@@ -64,5 +64,5 @@ update the `LogAsync` method as necessary to define the actions that you want to
 
 ## Additional resources
 
-> [!NOTE]
-> To do: Add links to related content (link to 'detailed readme' and 'full C# code' that Mat refers to)
+- [Bot capabilities](bot-framework-design-capabilities.md)
+- <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_blank">Builder library</a>

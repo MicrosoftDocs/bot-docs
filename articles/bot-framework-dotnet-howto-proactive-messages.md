@@ -182,5 +182,6 @@ public class SurveyDialog : IDialog<object>
 
 ## Additional resources
 
-> [!NOTE]
-> To do: Add links to related content (link to 'detailed readme' and 'full C# code' that Mat refers to)
+- [Designing conversation flow](bot-framework-design-core-dialogs.md)
+- [Bot capabilities](bot-framework-design-capabilities.md)
+- <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_blank">Builder library</a>
