@@ -24,18 +24,18 @@ This article describes how to manage state data using the State service via the 
 
 ## Bot state methods
 
-The following table lists the methods (within the **BotState** object of a [state client](#state-client)) 
+This table lists the methods within the `BotState` object of a [state client](#state-client) 
 that you can use to manage state data.
 
 | Method | Scoped to | Objective |                                                
 |----|----|----|
-| **GetUserData** | User | Get state data that has previously been saved for the user on the specified channel |
-| **GetConversationData** | Conversation | Get state data that has previously been saved for the conversation on the specified channel |
-| **GetPrivateConversationData** | User and Conversation | Get state data that has previously been saved for the user within the conversation on the specified channel |
-| **SetUserData** | User | Save state data for the user on the specified channel |
-| **SetConversationData** | Conversation | Save state data for the conversation on the specified channel |
-| **SetPrivateConversationData** | User and Conversation | Save state data for the user within the conversation on the specified channel |
-| **DeleteStateForUser** | User | Delete state data for the user on the specified channel. Your bot should call this method when it receives an activity of type [deleteUserData](bot-framework-dotnet-activities.md#deleteuserdata) or an activity of type [contactRelationUpdate](bot-framework-dotnet-activities.md#contactrelationupdate) that indicates the bot has been removed from the user's contact list. |
+| `GetUserData` | User | Get state data that has previously been saved for the user on the specified channel |
+| `GetConversationData` | Conversation | Get state data that has previously been saved for the conversation on the specified channel |
+| `GetPrivateConversationData` | User and Conversation | Get state data that has previously been saved for the user within the conversation on the specified channel |
+| `SetUserData` | User | Save state data for the user on the specified channel |
+| `SetConversationData` | Conversation | Save state data for the conversation on the specified channel |
+| `SetPrivateConversationData` | User and Conversation | Save state data for the user within the conversation on the specified channel |
+| `DeleteStateForUser` | User | Delete state data for the user on the specified channel. Your bot should call this method when it receives an activity of type [deleteUserData](bot-framework-dotnet-activities.md#deleteuserdata) or an activity of type [contactRelationUpdate](bot-framework-dotnet-activities.md#contactrelationupdate) that indicates the bot has been removed from the user's contact list. |
 
 If your bot saves state data by using one of the "**Set...**" methods, 
 future messages that your bot receives in the same context will contain that data, 
@@ -47,13 +47,13 @@ which your bot can access by using one of the "**Get...**" methods.
 
 ##<a id="state-client"></a> Create a state client
 
-The **StateClient** object enables you to manage state data using the BotBuilder SDK for .NET. 
-To create a state client using an **Activity** object, call the **GetStateClient** method.
+The `StateClient` object enables you to manage state data using the BotBuilder SDK for .NET. 
+To create a state client using an `Activity` object, call the `GetStateClient` method.
 
 [!code-csharp[Get State client](../includes/code/dotnet-state.cs#getStateClient1)]
 
-If you do not have access to an **Activity** object, you can create a state client by simply 
-creating a new instance of the **StateClient** class. In the following example, **microsoftAppId** and **microsoftAppPassword** are the Bot Framework authentication 
+If you do not have access to an `Activity` object, you can create a state client by simply 
+creating a new instance of the `StateClient` class. In this example, `microsoftAppId` and `microsoftAppPassword` are the Bot Framework authentication 
 credentials that you acquire for your bot during the [bot registration](bot-framework-publish-register.md) 
 process.
 
@@ -61,36 +61,35 @@ process.
 
 ## Get state data
 
-Each of the "**Get...**" methods returns a **BotData** object that contains the state data for the specified user and/or conversation. 
+Each of the "**Get...**" methods returns a `BotData` object that contains the state data for the specified user and/or conversation. 
 
-To get a specific property value from a **BotData** object, call the **GetProperty** method. 
+To get a specific property value from a `BotData` object, call the `GetProperty` method. 
 
-The following code sample shows how to get a typed property from user data. 
+This code sample shows how to get a typed property from user data. 
 
 [!code-csharp[Get state property](../includes/code/dotnet-state.cs#getProperty1)]
 
-The following code sample shows how to get a property from a complex type within user data.
+This code sample shows how to get a property from a complex type within user data.
 
 [!code-csharp[Get state property](../includes/code/dotnet-state.cs#getProperty2)]
 
-> [!NOTE]
-> If no state data exists for the user and/or conversation that is specified in 
-> a "**Get...**" method call, 
-> the **BotData** object that is returned will contain following property values: 
-> <ul><li>**BotData.Data** = null</li>
-> <li>**BotData.ETag** = "*"</li></ul>
+If no state data exists for the user and/or conversation that is specified in 
+a "**Get...**" method call, 
+the `BotData` object that is returned will contain these property values: 
+- `BotData.Data` = null
+- `BotData.ETag` = "*"
 
 ## Set state data
 
-To update state data, first get the **BotData** object by calling the appropriate "**Get...**" method, 
-then update it by calling the **SetProperty** method for each property you want to update, 
+To update state data, first get the `BotData` object by calling the appropriate "**Get...**" method, 
+then update it by calling the `SetProperty` method for each property you want to update, 
 and save it by calling the appropriate "**Set...**" method. 
 
-The following code sample shows how to update a typed property in user data.
+This code sample shows how to update a typed property in user data.
 
 [!code-csharp[Set state property](../includes/code/dotnet-state.cs#setProperty1)]
 
-The following code sample shows how to update a property in a complex type within user data. 
+This code sample shows how to update a property in a complex type within user data. 
 
 [!code-csharp[Set state property](../includes/code/dotnet-state.cs#setProperty2)]
 
@@ -98,10 +97,11 @@ The following code sample shows how to update a property in a complex type withi
 
 Your bot may receive an error response with HTTP status code **412 Precondition Failed** 
 when it attempts to save state data, if another instance of the bot has changed the data. 
-You can design your bot to account for this scenario, as shown in the following code sample.
+You can design your bot to account for this scenario, as shown in this code sample.
 
 [!code-csharp[Handle exception saving state](../includes/code/dotnet-state.cs#handleException)]
 
 ## Additional resources
 
 - [Bot Framework troubleshooting guide](bot-framework-troubleshooting-guide.md#state)
+- <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/db/dbb/namespace_microsoft_1_1_bot_1_1_connector.html" target="_blank">Connector library</a>
