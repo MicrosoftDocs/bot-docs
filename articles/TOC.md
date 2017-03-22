@@ -86,5 +86,5 @@
 # Resources
 ## [Downloads](bot-framework-resources-downloads.md)
 ## [Support](bot-framework-resources-support.md)
-<!--## [Tools](bot-framework-resources-tools.md)
-## [Emulator](bot-framework-resources-emulator.md)-->
+<!--## [Tools](bot-framework-resources-tools.md)-->
+## [Emulator](bot-framework-resources-emulator.md)
