@@ -12,6 +12,4 @@ ms.reviewer:
 #ROBOTS: Index
 ---
 
-#Question and answer bot
-
-##Content under development##
+#Content under development

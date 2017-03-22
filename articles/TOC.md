@@ -61,7 +61,7 @@
 ## [Overview](bot-framework-azure-overview.md)
 ## [Get started](bot-framework-azure-getstarted.md)
 ## Key concepts
-## Debugging
+## Tutorial
 # Publish
 ##[Overview](bot-framework-publish-overview.md)
 ##[Register a bot](bot-framework-publish-register.md)
