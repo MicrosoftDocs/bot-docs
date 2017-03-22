@@ -11,7 +11,7 @@ ms.date: 02/27/2017
 ms.author: thalme@microsoft.com
 #ROBOTS: Index
 ---
-#DevOps for the Bot Framework
+# DevOps for the Bot Framework
 
 As you create Bots with the Microsoft Bot Framework and Microsoft Cognitive Services, you will start thinking about maturing your bots' development lifecycle. Some DevOps practices to consider are:
 - **Infrastructure as Code** - use your software development processes to manage the deployment and configuration of your bot automatically.
@@ -22,13 +22,13 @@ As you create Bots with the Microsoft Bot Framework and Microsoft Cognitive Serv
 
 The good news is a lot of the continuous delivery practices for bots are the same as for regular web API applications. But there are a few considerations that are specific to the bot framework in this article.
 
-##Why DevOps for Bots?
+## Why DevOps for Bots?
 
 So, why should you worry about DevOps in a team that is creating bots? A great definition of DevOps by [Donovan Brown](http://www.donovanbrown.com) is
 > “DevOps is the union of people, process, and products to enable continuous delivery of value to our end users.”
 The key word in there is delivering value to customers. So, the question really is, why wouldn't you consider adopting DevOps for bots, or any other project? 
 
-##Source control
+## Source control
 
 Your bot code will be a regular web API project plus other projects to interact with external dependencies, so your current source control discipline will already work. [Git flow](http://nvie.com/posts/a-successful-git-branching-model/) with feature and other supporting branches works well for teams working on bots, with branches created for specific dialogs or features that your bot will support. You should focus on frequent merges via pull request to the main trunk(s) to trigger Continuous Integration with unit tests. [Visual Studio Team Services](https://www.visualstudio.com/learn/learn-git-with-team-services/) and others services support this flow.
 
@@ -36,7 +36,7 @@ Other common files to include into source control for your bot:
 * Any infrastructure as code files. 
 * Exported JSON files from your Language Understanding Intelligent Service (LUIS) model(s) if your bot uses language understanding. 
 
-##Infrastructure as Code
+## Infrastructure as Code
 
 If hosting your bot code on Azure, a common practice is to define an Azure ARM template that includes:
 * An App Service Hosting plan
@@ -50,7 +50,7 @@ This ARM template can be used during continuous deployment to first create a Bet
 
 These App Settings on Azure Web Apps become environment variables that you can use from your Node code, and if they're defined in a web.config file the values are updated on the web.config as well for .NET bots. This way your bot code will know which instance of the bot on the Bot Framework to use.
 
-##Hosting, Scaling and Load Balancing bots
+## Hosting, Scaling and Load Balancing bots
 
 Your bot will be sending messages to the Bot Connector via the Node or .NET Bot Builder SDK, and making calls to other services like the Microsoft Cognitive Services, databases, Azure Search, and external APIs. Most of the computation should not be happening in your bot code but in these dependencies. User and conversation state is saved on the Bot Connector side. When hosting your bot, start small and scale up based on demand. Azure's [App Service Web Apps](https://azure.microsoft.com/en-us/services/app-service/web/) provide great support for this as discussed in the Infrastructure as Code section. Consider having at least one beta environment for your bot.
 
@@ -63,7 +63,7 @@ A common pattern when using Azure to host the bot is:
 
 [![Source Code and Hosting](./media/bot-framework-devops/SourceWebAppsBotFramework.png)](./media/bot-framework-devops/SourceWebAppsBotFramework.png "Source Code and Hosting")
 
-##Continuous Integration (CI)
+## Continuous Integration (CI)
 
 Any system that supports automated builds of .NET and Node code can be used for continuous integration of your bot. [Visual Studio Team Services](https://www.visualstudio.com/team-services/continuous-integration/) is an example.
 
@@ -75,17 +75,17 @@ Some considerations for your bot in CI are:
 Here is a video covering this topic:
 [Continuous Integration for the Bot Framework](https://channel9.msdn.com/Series/DevOps-for-the-Bot-Framework/Continuous-Integration-for-the-Bot-Framework)
 
-##Automated Testing
+## Automated Testing
 
 There are Bot Framework specifics when it comes to unit and functional testing of bots.
 
-###Unit Testing 
+### Unit Testing 
 
 When unit testing bots it is important to mock the Bot Builder Connector and any LUIS models or other dependencies. During Continuous Integration, call these tests with mocks to make sure conversations with the bot are as expected. Ensure the development team write tests for any changes made to the bot dialogs and use the mocks in the tests. Here are some examples:
     - For Node.js bots [here is a blog post](https://www.microsoft.com/developerblog/real-life-code/2017/01/20/Bot-Framework-Unit-Testing.html) detailing one approach for mocking both the Bot Builder and LUIS. Here is a [bot example that includes unit tests for Node.js](https://github.com/nzthiago/BotInsightsTests/tree/master/Node). 
     - For .NET Here is a [bot example that includes unit tests and Functional Tests for .NET](https://github.com/nzthiago/BotInsightsTests/tree/master/CSharp).
 
-###Functional Testing
+### Functional Testing
 
 Functional tests require your test code to access your deployed bot. The way to implement this is to use the Direct Line channel and it's [API](https://docs.botframework.com/en-us/restapi/directline3/) / [.NET SDK](https://www.nuget.org/packages/Microsoft.Bot.Connector.DirectLine). This means your tests will run against the deployed bot. Here is a [bot example that includes unit tests and Functional Tests for .NET](https://github.com/nzthiago/BotInsightsTests/tree/master/CSharp). Pay attention to the [From field of an Activity](https://github.com/nzthiago/BotInsightsTests/blob/master/CSharp/AppInsightsBot.FunctionalTests/BotHelper.cs#L57) - if you use the same value the bot will assume it's the same user going back every time. If you use different values, it will treat it as different users.
 Your bot might also depend on an external OAuth or other types of authentication. You can create a simple app that uses Direct Line and use it to talk to the bot and authenticate once manually (until expiration) and save the OAuth token to the bot's private user data, like in [the AzureBot for example](https://github.com/Microsoft/AzureBot/tree/master/AzureBot.ConsoleConversation). In your functional tests you then set the same Activity From value as from the command line app. This way when the functional tests run, the OAuth for that user has been done already.
@@ -93,7 +93,7 @@ Your bot might also depend on an external OAuth or other types of authentication
 Here is a video covering this topic:
 [Testing the Bot Framework](https://channel9.msdn.com/Series/DevOps-for-the-Bot-Framework/Testing-the-Bot-Framework)
 
-##Continuous Deployment (CD)
+## Continuous Deployment (CD)
 
 Like Continuous Integration, Continuous Deployment is the same as for a regular Web API application written in .NET or Node. It should coordinate deploying the bot to web apps to multiple environments, as described in the Infrastructure as Code section, and using features of Azure or other providers for as little downtime as possible, then running functional tests. Keep in mind your bot will most likely have other external dependencies that should be taken into consideration. [Visual Studio Team Services' Release Management](https://www.visualstudio.com/team-services/release-management/) feature can be used to automate this for example. 
 As discussed in the _Hosting, Scaling and Load Balancing Bots_ section, it is during Continuous Deployment that you can configure the web app environment with the right Bot Framework bot entry details, so your bot code knows to which bot in the Bot Framework it's connecting.
@@ -103,7 +103,7 @@ As part of CD you should also perform functional tests against each deployed ver
 Here is a video covering this topic:
 [Continuous Deployment and Release Management for the Bot Framework](https://channel9.msdn.com/Series/DevOps-for-the-Bot-Framework/Continuous-Deployment-and-Release-Management-for-the-Bot-Framework)
 
-##Conversation Telemetry
+## Conversation Telemetry
 
 If you don't collect usage data from your bot, you won't have a way to understand what it does well or not and how to improve it.  Make sure you include a link to your privacy statements on your bot's welcome message when collecting telemetry.
 It is straightforward to add telemetry services to your bot, like [Application Insights](https://azure.microsoft.com/en-us/services/application-insights/). [Here](https://github.com/nzthiago/BotInsightsTests) is an example in C# and Node with telemetry collection. Just tracking the path users take inside the dialogs of your bot will already give you good insight, but you can define what a successful bot interactiion means and track it correctly in telemetry.
@@ -112,7 +112,7 @@ Once you have this data you can use tools like [Application Insights Analytics](
 Here is a video covering this topic:
 [Telemetry for the Bot Framework](https://channel9.msdn.com/Series/DevOps-for-the-Bot-Framework/Telemetry-for-the-Bot-Framework)
 
-##LUIS & Other Cognitive Services
+## LUIS & Other Cognitive Services
 
 You can [include cognitive services in your ARM templates](https://docs.microsoft.com/en-us/azure/templates/microsoft.cognitiveservices/accounts). Note that there are still some manual steps to make sure your LUIS model is using the right keys defined in Azure for example.
 
