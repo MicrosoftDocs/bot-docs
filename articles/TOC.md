@@ -74,12 +74,12 @@
 # Publish
 ## Debugging
 # Deploy and Publish
-##[Overview](bot-framework-publish-overview.md)
-##[Register a bot](bot-framework-publish-register.md)
-##[Deploy a bot](bot-framework-publish-deploy.md)
-##[Configure a bot](bot-framework-publish-configure.md)
-##[Publish a bot to the directory](bot-framework-publish-add-to-directory.md)
-##[DevOps for Bots](bot-framework-devops.md)
+## [Overview](bot-framework-publish-overview.md)
+## [Register a bot](bot-framework-publish-register.md)
+## [Deploy a bot](bot-framework-publish-deploy.md)
+## [Configure a bot](bot-framework-publish-configure.md)
+## [Publish a bot to the directory](bot-framework-publish-add-to-directory.md)
+## [DevOps for Bots](bot-framework-devops.md)
 # Troubleshooting
 ## [Troubleshoot general problems](bot-framework-troubleshooting-guide.md)
 ## [Troubleshoot authentication](bot-framework-troubleshooting-auth.md)
