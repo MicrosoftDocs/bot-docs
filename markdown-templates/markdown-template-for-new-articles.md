@@ -18,7 +18,7 @@ ms.service: service-name
 ms.date: mm/dd/yyyy
 
 # Alias of the document reviewer. Change to the appropriate person.
-ms.reviewer: rstand
+ms.reviewer:
 
 # Include the following line commented out
 #ROBOTS: Index

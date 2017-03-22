@@ -57,7 +57,7 @@ How to set it up in C#:
         }
     }
 
-This is all that it is needed: We start by registering with the bot builder our created activity logger class and implementing it from the IActivityLogger. From that point, every message being sent or received to/from the user will trigger the LogAsync method and from there we can use whatever mechanism needed to store/inspect these.
+This is all that it is needed: We start by registering with the bot builder the created activity logger class and implementing it from the IActivityLogger. From that point, every message being sent or received to/from the user will trigger the LogAsync method and from there we can use whatever mechanism needed to store/inspect these.
 
 Now in Node:
 

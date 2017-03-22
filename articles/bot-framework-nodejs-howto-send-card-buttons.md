@@ -8,7 +8,7 @@ ms.topic: develop-article
 ms.prod: botframework
 ms.service: Bot Builder
 ms.date: 02/24/2017
-ms.reviewer: rstand
+ms.reviewer:
 #ROBOTS: Index
 ---
 
@@ -73,7 +73,7 @@ bot.dialog('showShirts', function (session) {
 
 ```
 This example uses the [Message](/en-us/node/builder/chat-reference/classes/_botbuilder_d_.message) class to build a carousel.  
-The carousel is comprised of a list of [HeroCard](/en-us/node/builder/chat-reference/classes/_botbuilder_d_.herocard) classes that contain an image, text, and a single button that triggers buying the item.  
+The carousel is comprises a list of [HeroCard](/en-us/node/builder/chat-reference/classes/_botbuilder_d_.herocard) classes that contain an image, text, and a single button that triggers buying the item.  
 Clicking the “Buy” button triggers sending a message so we need to add a second dialog to catch the button click. 
 
 The ‘buyButtonClick’ dialog will be triggered anytime a message is received that starts with “buy” or “add” and is followed by something containing the word “shirt”. 

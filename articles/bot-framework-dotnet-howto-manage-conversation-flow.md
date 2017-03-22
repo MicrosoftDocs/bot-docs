@@ -8,18 +8,19 @@ ms.topic: develop-dotnet-article
 ms.prod: botframework
 ms.service: Bot Builder
 ms.date: 02/17/2017
-ms.reviewer: rstand
+ms.reviewer:
 #ROBOTS: Index
 ---
-# Manage conversation flow using dialogs with the Bot Builder SDK for .NET
+# Manage conversation flow using dialogs
+
+<!--
 > [!div class="op_single_selector"]
 > * [.NET](bot-framework-dotnet-howto-manage-conversation-flow.md)
 > * [Node.js](bot-framework-nodejs-howto-manage-conversation-flow.md)
 >
+-->
 
-## Introduction
-
-In this article, we'll walk through an example of managing conversation flow using dialogs and the Bot Builder SDK for .NET. 
+This article describes how to manage conversation flow using dialogs and the Bot Builder SDK for .NET. 
 
 > [!NOTE]
 > To do: add introductory content -- image of example bot dialog flow (from: media/designing-bots/core/dialogs-screens.png) 
@@ -97,9 +98,6 @@ A dialog method that does not end with one of these will result in an error
 (because the framework does not know what action to take the next time the user sends a message).
 
 ## Additional resources
-
-In this article, we walked through an example of managing conversation flow using dialogs and the Bot Builder SDK for .NET. 
-To learn more, see:
 
 > [!NOTE]
 > To do: Add links to related articles

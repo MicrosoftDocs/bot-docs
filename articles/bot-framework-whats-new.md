@@ -13,6 +13,8 @@ ms.date: 02/01/2017
 ms.author: v-kibran@microsoft.com
 
 ---
-# What's New with the Bot Framework
+> [!WARNING]
+> The content in this article is still under development. The article may have errors in content, formatting,
+> and copy. The content may change dramatically as the article is developed.
 
-*Content coming soon...*
+# What's New with the Bot Framework

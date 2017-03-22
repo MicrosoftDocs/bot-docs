@@ -8,20 +8,21 @@ ms.topic: develop-dotnet-article
 ms.prod: botframework
 ms.service: Bot Builder
 ms.date: 02/21/2017
-ms.reviewer: rstand
+ms.reviewer:
 #ROBOTS: Index
 ---
 
-# Implement global message handlers using the Bot Builder SDK for .NET
+# Implement global message handlers
+
+<!--
 > [!div class="op_single_selector"]
 > * [.NET](bot-framework-dotnet-howto-global-handlers.md)
 > * [Node.js](bot-framework-nodejs-howto-global-handlers.md)
 >
-
-## Introduction
+-->
 
 [!include[Introduction to global message handlers](../includes/snippet-global-handlers-intro.md)]
-In this article, we'll discuss how to implement global message handlers by using the Bot Builder SDK for .NET. 
+This article describes how to implement global message handlers by using the Bot Builder SDK for .NET. 
 
 ## Implement global message handlers
 
@@ -39,12 +40,12 @@ public class GlobalMessageHandlersBotModule : Module
         base.Load(builder);
 
         builder
-            .Register(c => new SettingsScorable(c.Resolve<IDialogStack>()))
+            .Register(c => new SettingsScorable(c.Resolve<IDialogTask>()))
             .As<IScorable<IActivity, double>>()
             .InstancePerLifetimeScope();
 
         builder
-            .Register(c => new CancelScorable(c.Resolve<IDialogStack>()))
+            .Register(c => new CancelScorable(c.Resolve<IDialogTask>()))
             .As<IScorable<IActivity, double>>()
             .InstancePerLifetimeScope();
     }
@@ -75,7 +76,7 @@ resets the dialog stack.
 ```cs
 protected override async Task PostAsync(IActivity item, string state, CancellationToken token)
 {
-    this.stack.Reset();
+    this.task.Reset();
 }
 ```
 
@@ -91,16 +92,14 @@ protected override async Task PostAsync(IActivity item, string state, Cancellati
     {
         var settingsDialog = new SettingsDialog();
         var interruption = settingsDialog.Void<object, IMessageActivity>();
-        this.stack.Call(interruption, null);
-        await this.stack.PollAsync(token);
+        this.task.Call(interruption, null);
+        await this.task.PollAsync(token);
     }
 }
 ```
 
 ## Additional resources
 
-In this article, we discussed how to implement global message handlers by using the Bot Builder SDK for .NET. 
-To learn more, see:
-
-> [!NOTE]
-> To do: Add links to related content (link to 'detailed readme' and 'full C# code' that Matt refers to)
+- [Designing conversation flow](bot-framework-design-core-dialogs.md)
+- [Bot capabilities](bot-framework-design-capabilities.md)
+- <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_blank">Builder library</a>

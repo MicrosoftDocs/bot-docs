@@ -1,6 +1,6 @@
 ---
-title: Conduct audio calls by using the Bot Builder SDK for .NET | Microsoft Docs
-description: Learn how to conduct audio calls by using the Bot Builder SDK for .NET.
+title: Conduct audio calls with Skype by using the Bot Builder SDK for .NET | Microsoft Docs
+description: Learn how to conduct audio calls with Skype by using the Bot Builder SDK for .NET.
 keywords: Bot Framework, dotnet, .NET, Bot Builder, SDK, Skype, IVR, audio call
 author: kbrandl
 manager: rstand
@@ -8,24 +8,21 @@ ms.topic: develop-dotnet-article
 ms.prod: botframework
 ms.service: Bot Builder
 ms.date: 02/21/2017
-ms.reviewer: rstand
+ms.reviewer:
 #ROBOTS: Index
 ---
 
-# Conduct audio calls with Skype by using the Bot Builder SDK for .NET
-
-## Introduction
+# Conduct audio calls with Skype
 
 [!include[Introduction to conducting audio calls](../includes/snippet-audio-call-intro.md)]
-In this article, we'll discuss how to enable support for audio calls via Skype 
-by using the Bot Builder SDK for .NET. 
+This article describes how to enable support for audio calls via Skype by using the Bot Builder SDK for .NET. 
 
 ## Conduct an audio call
 
 The architecture for a bot that supports audio calls is very similar to that of a typical bot. 
 The following code samples show how to enable support for audio calls via Skype by using the Bot Builder SDK for .NET. 
 
-First, define the `CallingConroller`.
+First, define the `CallingController`.
 
 ```cs
 [BotAuthentication]
@@ -171,8 +168,5 @@ private async Task OnRecordCompleted(RecordOutcomeEvent recordOutcomeEvent)
 
 ## Additional resources
 
-In this article, we discussed how to enable support for audio calls via Skype by using the Bot Builder SDK for .NET. 
-To learn more, see:
-
-> [!NOTE]
-> To do: Add links to related content (link to 'detailed readme' and 'full C# code' that Matt refers to)
+- [Bot capabilities](bot-framework-design-capabilities.md)
+- <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_blank">Builder library</a>

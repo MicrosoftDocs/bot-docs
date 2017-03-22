@@ -72,7 +72,7 @@ We can use Azure search to create an efficient search index that we can easily s
 
 ![Dialog Structure](../../media/designing-bots/patterns/search3.PNG)
 
-Let's assume we want to be able to access all properties of our data store - in order to accomplish this we set all properties as "retrievable". We want to be able to search over the names of the musicans in our data store, so we set "Name" as searchable. Finally, we want to be able to facet and filter over musician's eras, so we mark "Eras" as both facetable and filterable. Faceting allows us to determine what types of a specific property there are (basically finding all the distinct examples), along with their magnitudes:
+Let's assume we want to be able to access all properties of our data store - to accomplish this we set all properties as "retrievable". We want to be able to search over the names of the musicans in our data store, so we set "Name" as searchable. Finally, we want to be able to facet and filter over musician's eras, so we mark "Eras" as both facetable and filterable. Faceting allows us to determine what types of a specific property there are (basically finding all the distinct examples), along with their magnitudes:
 
 ![Dialog Structure](../../media/designing-bots/patterns/facet.png)
 

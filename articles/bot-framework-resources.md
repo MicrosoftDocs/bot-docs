@@ -8,7 +8,7 @@ ms.topic: design-article
 ms.prod: botframework
 ms.service: Bot Builder
 ms.date: 02/22/2017
-ms.reviewer: rstand
+ms.reviewer:
 #ROBOTS: Index
 ---
 

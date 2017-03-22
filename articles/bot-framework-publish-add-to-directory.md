@@ -8,7 +8,7 @@ ms.topic: publish-article
 ms.prod: botframework
 ms.service: Bot Builder
 ms.date: 02/06/2017
-ms.reviewer: rstand
+ms.reviewer:
 #ROBOTS: Index
 ---
 
@@ -34,7 +34,7 @@ Publishing a bot to the Bot Directory is a three-step process:
 
 When you are ready to submit your bot for publication, start the process by completing the following steps:
 
-1. Sign in to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Developer Portal</a>.
+1. Sign in to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a>.
 2. Click **My bots**.
 3. Select the bot that you want to publish.
 4. On the bot dashboard, click **Publish**.

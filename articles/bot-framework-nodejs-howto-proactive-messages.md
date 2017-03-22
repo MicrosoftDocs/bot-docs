@@ -8,22 +8,24 @@ ms.topic: develop-nodejs-article
 ms.prod: botframework
 ms.service: Bot Builder
 ms.date: 02/22/2017
-ms.reviewer: rstand
+ms.reviewer:
 #ROBOTS: Index
 ---
-# Send proactive messages using the Bot Builder SDK for Node.js
+# Send proactive messages
+
+<!--
 > [!div class="op_single_selector"]
 > * [.NET](bot-framework-dotnet-howto-proactive-messages.md)
 > * [Node.js](bot-framework-nodejs-howto-proactive-messages.md)
 >
-
-## Introduction
+-->
 
 [!include[Introduction to proactive messages - part 1](../includes/snippet-proactive-messages-intro-1.md)] 
+This article describes how to send proactive messages by using the Bot Builder SDK for Node.js.
+
+## Types of proactive messages
 
 [!include[Introduction to proactive messages - part 2](../includes/snippet-proactive-messages-intro-2.md)] 
-
-In this article, we'll discuss how to send proactive messages by using the Bot Builder SDK for Node.js. 
 
 ## Send an ad hoc proactive message
 
@@ -119,8 +121,5 @@ bot.dialog('/survey', [
 
 ## Additional resources
 
-In this article, we discussed how to send proactive messages by using the Bot Builder SDK for Node.js. 
-To learn more, see:
-
-> [!NOTE]
-> To do: Add links to related content (link to 'detailed readme' and 'full Node.js code' that Matt refers to)
+- [Designing conversation flow](bot-framework-design-core-dialogs.md)
+- [Bot capabilities](bot-framework-design-capabilities.md)

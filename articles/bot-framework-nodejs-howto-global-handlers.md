@@ -8,20 +8,21 @@ ms.topic: develop-nodejs-article
 ms.prod: botframework
 ms.service: Bot Builder
 ms.date: 02/21/2017
-ms.reviewer: rstand
+ms.reviewer:
 #ROBOTS: Index
 ---
 
-# Implement global message handlers using the Bot Builder SDK for Node.js
+# Implement global message handlers
+
+<!--
 > [!div class="op_single_selector"]
 > * [.NET](bot-framework-dotnet-howto-global-handlers.md)
 > * [Node.js](bot-framework-nodejs-howto-global-handlers.md)
 >
-
-## Introduction
+-->
 
 [!include[Introduction to global message handlers](../includes/snippet-global-handlers-intro.md)]
-In this article, we'll discuss how to implement global message handlers by using the Bot Builder SDK for Node.js. 
+This article describes how to implement global message handlers by using the Bot Builder SDK for Node.js. 
 
 ## Implement global message handlers
 
@@ -60,8 +61,5 @@ bot.dialog('help', (session, args, next) => {
 
 ## Additional resources
 
-In this article, we discussed how to implement global message handlers by using the Bot Builder SDK for Node.js. 
-To learn more, see:
-
-> [!NOTE]
-> To do: Add links to related content (link to 'detailed readme' and 'full Node.js code' that Matt refers to)
+- [Designing conversation flow](bot-framework-design-core-dialogs.md)
+- [Bot capabilities](bot-framework-design-capabilities.md)

@@ -1,9 +1,0 @@
-<map id="Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize&lt; T &gt;" name="Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize&lt; T &gt;">
-<area shape="rect" id="node2" href="$d4/d4f/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_recognize_enumeration.html" title="Recognizer for enumerated values. " alt="" coords="261,85,448,141"/>
-<area shape="rect" id="node3" href="$d8/d6e/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_recognize_primitive.html" title="Abstract class for constructing primitive value recognizers. " alt="" coords="273,165,436,221"/>
-<area shape="rect" id="node4" href="$d3/db5/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_recognize_bool.html" title="Recognize a boolean value. " alt="" coords="501,5,660,61"/>
-<area shape="rect" id="node5" href="$dc/db8/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_recognize_date_time.html" title="Recognize a date/time expression. " alt="" coords="496,85,665,141"/>
-<area shape="rect" id="node6" href="$d4/df9/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_recognize_double.html" title="Recognize a double or float field. " alt="" coords="501,165,660,221"/>
-<area shape="rect" id="node7" href="$d8/dad/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_recognize_number.html" title="Recognize a numeric field. " alt="" coords="501,245,660,301"/>
-<area shape="rect" id="node8" href="$d0/d74/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_recognize_string.html" title="Recognize a string field. " alt="" coords="501,325,660,381"/>
-</map>

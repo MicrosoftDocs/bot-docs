@@ -1,4 +1,0 @@
-var class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_regex_match_scorable_factory =
-[
-    [ "RegexMatchScorableFactory", "dd/d18/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_regex_match_scorable_factory.html#a2051cbb6c77f828337df4e3c9a20c68b", null ]
-];

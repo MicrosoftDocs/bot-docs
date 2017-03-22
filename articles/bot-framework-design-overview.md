@@ -1,13 +1,13 @@
 ---
 title: Introduction to bot design | Microsoft Docs
-description: Learn about important factors to consider when planning and designing conversational applications (bots).
-keywords: bot framework, design, bot, introduction to bot design, overview of bot design
+description: Learn about important factors to consider when planning and designing conversational applications and bots.
+keywords: bot framework, design, bot, introduction, overview
 author: matvelloso
 manager: rstand
 ms.topic: design-article
 ms.prod: botframework
 ms.service: Bot Builder
-ms.date: 02/16/2017
+ms.date:
 ms.reviewer: rstand
 #ROBOTS: Index
 ---
@@ -23,7 +23,7 @@ aligns with best practices and capitalizes on lessons learned thus far in this r
 If you are building a bot, it is safe to assume that you are expecting users to use it. 
 It is also safe to assume that you are hoping that users will prefer the bot experience over alternative experiences like apps, websites, phone calls, and other means of addressing their particular needs. 
 In other words, your bot is competing for users' time against things like apps and websites. 
-So, how can you maximize the odds that your bot will achieve it's ultimate goal of attracting and keeping users? 
+So, how can you maximize the odds that your bot will achieve its ultimate goal of attracting and keeping users? 
 It's simply a matter of prioritizing the right factors when designing your bot.
 
 ## Factors that do not guarantee a bot's success
@@ -47,7 +47,7 @@ It isn’t always the case that enabling bots for speech will lead to great user
 Often, forcing users to use voice can result in a frustrating user experience. 
 As you design your bot, always consider whether voice is the appropriate channel for the given problem. 
 Is there going to be a noisy environment? 
-Will voice be capable of conveying the information that needs to be shared with the user? 
+Will voice convey the information that needs to be shared with the user? 
 
 ## Factors that do influence a bot's success
 
@@ -66,15 +66,14 @@ Some key considerations include:
 
 Note that none of these questions directly relates to factors such as 
 how smart the bot is, how much natural language capability it has, whether it uses machine learning, 
-or which programming language was used to create it. Users are unlikely to care about any of these things as 
-long as the bot solves the problem that they need to address and 
-delivers a great user experience (i.e., does not require them to type too much, talk too much, 
-repeat themselves several times, or explain things that the bot should automatically know).
+or which programming language was used to create it. Users are unlikely to care about any of these things if the bot solves the problem that they need to address and 
+delivers a great user experience. A great bot user experience does not require users to type too much, talk too much, 
+repeat themselves several times, or explain things that the bot should automatically know.
 
 > [!TIP]
 > Regardless of the type of application you're creating (bot, website, or app), make user experience a top priority.
 
-The process of designing a bot is very similar to the process of designing an app or website, and therefore 
+The process of designing a bot is like the process of designing an app or website, so  
 the lessons learned from decades of building UI and delivering UX for apps and websites still apply 
 when it comes to designing bots. Whenever you are unsure about the right design approach for your bot, 
 step back and ask yourself the following question: how would you solve that problem in an app or a website? 
@@ -82,5 +81,5 @@ Chances are, the same answer can be applied to bot design.
 
 ## Next steps
 
-Now that you're familiar with some basic principles of bot design, learn more about UI and UX, bot capabilities, 
-common patterns, and resources in the remainder of this section.
+Now that you're familiar with some basic principles of bot design, learn more about designing the user experience, bot capabilities, 
+and common patterns in the remainder of this section.

@@ -1,4 +1,0 @@
-<map id="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.NotificationBase" name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.NotificationBase">
-<area shape="rect" id="node3" href="$d5/d59/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_call_state_change_notification.html" title="This concrete class defines the call state change notification schema. " alt="" coords="5,169,261,225"/>
-<area shape="rect" id="node2" href="$db/dff/class_microsoft_1_1_bot_1_1_builder_1_1_calling_1_1_object_model_1_1_contracts_1_1_conversation_base.html" title="This base class defines a subset of properties which define a conversation. Conversation class derive..." alt="" coords="70,5,197,32"/>
-</map>

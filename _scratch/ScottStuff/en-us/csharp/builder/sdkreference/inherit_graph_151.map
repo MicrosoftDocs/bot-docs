@@ -1,6 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$d2/dd9/interface_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_i_scorable.html" title="Microsoft.Bot.Builder.Internals.\lScorables.IScorable\&lt; Item,\l Score \&gt;" alt="" coords="5,85,205,141"/>
-<area shape="rect" id="node2" href="$d3/db7/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_delegating_scorable.html" title="Microsoft.Bot.Builder.Internals.\lScorables.DelegatingScorable\l\&lt; Item, Score \&gt;" alt="" coords="257,5,457,61"/>
-<area shape="rect" id="node3" href="$d1/da8/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_null_scorable.html" title="Microsoft.Bot.Builder.Internals.\lScorables.NullScorable\&lt; Item,\l Score \&gt;" alt="" coords="257,85,457,141"/>
-<area shape="rect" id="node4" href="$de/d7b/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_scorable_base.html" title="Allow for static type checking of opaque state for convenience of scorable implementations. " alt="" coords="253,165,460,221"/>
-</map>

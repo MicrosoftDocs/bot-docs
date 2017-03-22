@@ -9,7 +9,7 @@ ms.topic: develop-article
 ms.prod: botframework
 ms.service: Bot Builder
 ms.date: 02/21/2017
-ms.reviewer: rstand
+ms.reviewer:
 
 # Include the following line commented out
 #ROBOTS: Index
@@ -36,7 +36,7 @@ To connect without a password, blank out the Microsoft App ID and Microsoft App 
 
 ***C# Bot Builder SDK web.config file:***
 
-```
+```xml
 <appSettings>
   <add key="BotId" value="MyFirstBot" />
   <add key="MicrosoftAppId" value="" />
@@ -46,7 +46,7 @@ To connect without a password, blank out the Microsoft App ID and Microsoft App 
 
 ***Node.js Bot Builder:***
 
-```
+```javascript
 var connector = new builder.ChatConnector({
   appId: null,
   appPassword: null
@@ -137,7 +137,7 @@ Now that your bot is created in the Bot Framework Developer Portal, you can enab
 
 ***C# Bot Builder SDK web.config file:***
 
-```
+```xml
 <appSettings>
   <add key="BotId" value="MyFirstBot" />
   <add key="MicrosoftAppId" value="791a4e72-d841-4145-96d9-23b4989d70d6" />
@@ -147,7 +147,7 @@ Now that your bot is created in the Bot Framework Developer Portal, you can enab
 
 ***Node.js Bot Builder:***
 
-```
+```javascript
 var connector = new builder.ChatConnector({
   appId: '791a4e72-d841-4145-96d9-23b4989d70d6',
   appPassword: 'PASSWORD'
@@ -275,7 +275,7 @@ If you continue to encounter difficulties, here are some additional resources:
 
 [BotConnectuorAuthGuide]: (https://docs.botframework.com/en-us/restapi/authentication/)
 [Support]: (https://docs.botframework.com/en-us/support/#navtitle)
-[Emulator]: bot-framework-emulator.md
+[Emulator]: bot-framework-resources-emulator.md
 [DevPortalTestPanel]: (media/troubleshooting-bot-framework-authentication_3.png)
 [EmulatorPic2]: (media/troubleshooting-bot-framework-authentication_2.png)
 [EmulatorPic1]: (media/troubleshooting-bot-framework-authentication_1.png)

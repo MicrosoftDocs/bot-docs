@@ -1,5 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$dd/d5e/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog.html" title="Microsoft.Bot.Builder.Dialogs.\lIDialog\&lt; R \&gt;" alt="" coords="5,39,200,80"/>
-<area shape="rect" id="node2" href="$d9/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_dispatch_dialog.html" title="A dialog specialized to dispatch an IScorable. " alt="" coords="248,5,443,47"/>
-<area shape="rect" id="node3" href="$d8/df9/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_luis_dialog.html" title="A dialog specialized to handle intents and entities from LUIS. " alt="" coords="248,71,443,112"/>
-</map>

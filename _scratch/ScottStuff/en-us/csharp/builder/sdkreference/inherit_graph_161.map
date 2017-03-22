@@ -1,4 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$df/d82/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_resolver_scorable.html" title="Microsoft.Bot.Builder.Internals.\lScorables.ResolverScorable\l\&lt; RegexMatchScorable\&lt; InnerState,\l InnerScore \&gt;.Scope, Match, InnerState,\l InnerScore \&gt;" alt="" coords="5,5,261,91"/>
-<area shape="rect" id="node2" href="$d1/d44/class_microsoft_1_1_bot_1_1_builder_1_1_internals_1_1_scorables_1_1_regex_match_scorable.html" title="Scorable to represent a regular expression match against an activity&#39;s text. " alt="" coords="309,20,517,76"/>
-</map>

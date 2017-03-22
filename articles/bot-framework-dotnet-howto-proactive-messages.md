@@ -8,22 +8,25 @@ ms.topic: develop-dotnet-article
 ms.prod: botframework
 ms.service: Bot Builder
 ms.date: 02/22/2017
-ms.reviewer: rstand
+ms.reviewer:
 #ROBOTS: Index
 ---
-# Send proactive messages using with the Bot Builder SDK for .NET
+# Send proactive messages
+
+<!--
 > [!div class="op_single_selector"]
 > * [.NET](bot-framework-dotnet-howto-proactive-messages.md)
 > * [Node.js](bot-framework-nodejs-howto-proactive-messages.md)
 >
+-->
 
-## Introduction
 
 [!include[Introduction to proactive messages - part 1](../includes/snippet-proactive-messages-intro-1.md)] 
+This article describes how to send proactive messages by using the Bot Builder SDK for .NET. 
+
+## Types of proactive messages 
 
 [!include[Introduction to proactive messages - part 2](../includes/snippet-proactive-messages-intro-2.md)] 
-
-In this article, we'll discuss how to send proactive messages by using the Bot Builder SDK for .NET. 
 
 ## Send an ad hoc proactive message
 
@@ -119,7 +122,7 @@ public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitabl
 
 When it is time to send the message, the bot creates a new dialog, thereby adding this dialog to the top of the dialog stack and giving it control of the conversation. 
 The new dialog will deliver the proactive message and will also decide when to close and return control to the prior dialog in the stack. 
-The resumption cookie provides a simple way of serializing and deserializing the entire message we received from the user.
+The resumption cookie provides a simple way of serializing and deserializing the entire message received from the user.
 
 ```cs
 public static async Task Resume() 
@@ -179,8 +182,6 @@ public class SurveyDialog : IDialog<object>
 
 ## Additional resources
 
-In this article, we discussed how to send proactive messages by using the Bot Builder SDK for .NET. 
-To learn more, see:
-
-> [!NOTE]
-> To do: Add links to related content (link to 'detailed readme' and 'full C# code' that Matt refers to)
+- [Designing conversation flow](bot-framework-design-core-dialogs.md)
+- [Bot capabilities](bot-framework-design-capabilities.md)
+- <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_blank">Builder library</a>

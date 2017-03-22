@@ -7,19 +7,17 @@ manager: rstand
 ms.topic: design-ui-and-ux-article
 ms.prod: botframework
 ms.service: Bot Builder
-ms.date: 02/20/2017
+ms.date: 
 ms.reviewer: rstand
 #ROBOTS: Index
 ---
 # Designing navigation
 
-## Introduction to bot navigation
-
 Users can navigate websites using breadcrumbs, apps using menus, and a web browsers using buttons like **forward** and **back**. 
-However, none of these well-established navigation techniques entirely addresses navigation requirements within a bot. 
-As we discussed [previously](bot-framework-design-core-dialogs.md#dialogs-stacks-and-humans), 
+However, none of these well-established navigation techniques entirely address navigation requirements within a bot. 
+As discussed [previously](bot-framework-design-core-dialogs.md#dialogs-stacks-and-humans), 
 users often interact with bots in a non-linear fashion, 
-thereby making it challenging to design bot navigation that consistently delivers a great user experience. 
+ making it challenging to design bot navigation that consistently delivers a great user experience. 
 Consider the following dilemmas:
 
 - How do you ensure that a user doesn't get lost in a conversation with a bot? 
@@ -40,38 +38,38 @@ Consider the following scenario:
 
 ![bot](media/designing-bots/core/stubborn-bot.png)
 
-Users often change their minds -- they can decide to cancel something in mid-stream, or sometimes want to start over altogether. 
+Users often change their minds. They can decide to cancel something in mid-stream. Sometimes they want to start over altogether. 
 
 > [!TIP]
-> <b>Do</b>: Design your bot to take into account that a user might attempt to change the course of the conversation at any time. 
+> <b>Do</b>: Design your bot to consider that a user might attempt to change the course of the conversation at any time. 
 >
 > <b>Don't</b>: Design your bot to ignore user input and keep repeating the same question in an endless loop. 
 
 There are many methods of avoiding this pitfall, 
 but perhaps the easiest way to prevent a bot from asking the same question endlessly 
 is to simply specify a maximum number of retry attempts for each question. 
-If designed in this manner, the bot is not doing anything "smart" to understand the user's input and respond appropriately, 
+If designed in this manner, the bot is not doing anything "smart" to understand the user's input and respond appropriately 
 but will at least avoid asking the same question in an endless loop. 
 
 ## The "clueless bot"
 
-The clueless bot responds in a nonsensical manner when it doesn't understand a user's attempt to access certain functionality (ex: "help" or "cancel"). 
+The clueless bot responds in a nonsensical manner when it doesn't understand a user's attempt to access certain functionality, e.g., "help" or "cancel". 
 Consider the following scenario: 
 
 ![bot](media/designing-bots/core/clueless-bot.png)
 
 Users often attempt to access certain functionality by using common keywords like "help", "cancel", or "start over". 
-Although you may be tempted to design each and every dialog within your bot to listen for (and respond appropriately to) certain keywords, 
-we do not recommend this approach. 
+Although you may be tempted to design every dialog within your bot to listen for, and respond appropriately to, certain keywords, 
+this approach is not recommended. 
 
 > [!TIP]
 > <b>Do</b>: Implement [global message handlers](bot-framework-design-capabilities.md#global-message-handlers) that will examine user input for the keywords that you specify (ex: "help", "cancel", "start over", etc.) 
 > and respond appropriately. 
 > 
-> <b>Don't</b>: Design each and every dialog to examine user input for a list of keywords. 
+> <b>Don't</b>: Design every dialog to examine user input for a list of keywords. 
 
 By defining the logic in <b>global message handlers</b>, you're making it accessible to all dialogs. 
-Using this approach, individual dialogs and prompts can be made to safely ignore the keywords, if necesssary.
+Using this approach, individual dialogs and prompts can be made to safely ignore the keywords, if necessary.
 
 ## The "mysterious bot"
 
@@ -80,8 +78,8 @@ Consider the following scenario:
 
 ![bot](media/designing-bots/core/mysterious-bot.png)
 
-In some cases, this situation might be an indication that the bot is in the midst of an outage. 
-Often times though, it could just be that the bot is busy processing the user's input and hasn't yet finished compiling its response. 
+In some cases, this situation might be an indication that the bot is having an outage. 
+However, it could just be that the bot is busy processing the user's input and hasn't yet finished compiling its response. 
 
 > [!TIP]
 > <b>Do</b>: Design your bot to immediately acknowledge user input, even in cases where the bot may take some time to compile its response. 

@@ -1,4 +1,0 @@
-<map id="Microsoft.Bot.Builder.Dialogs.DialogStackException" name="Microsoft.Bot.Builder.Dialogs.DialogStackException">
-<area shape="rect" id="node3" href="$dd/df2/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_multiple_resume_handler_exception.html" title="The exception representing multiple resume handlers specified for the dialog stack. " alt="" coords="376,5,593,47"/>
-<area shape="rect" id="node4" href="$d0/dcb/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_no_resume_handler_exception.html" title="The exception representing no resume handler specified for the dialog stack. " alt="" coords="387,71,582,112"/>
-</map>

@@ -1,4 +1,0 @@
-var class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_exception_translation_dialog_task =
-[
-    [ "ExceptionTranslationDialogTask", "df/d6a/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_exception_translation_dialog_task.html#acef9fe63806037882c8b1c4c06cf5c24", null ]
-];

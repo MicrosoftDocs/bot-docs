@@ -1,4 +1,4 @@
-Verify the deployment of your bot by using the [Bot Framework Emulator](~/bot-framework-emulator.md). 
+Verify the deployment of your bot by using the [Bot Framework Emulator](~/bot-framework-resources-emulator.md). 
 
 > [!TIP]
 > Enter the bot's HTTPS endpoint into the address bar of the Emulator. 
