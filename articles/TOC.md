@@ -28,8 +28,8 @@
 ### [Knowledge base](bot-framework-design-patterns-knowledge-base.md)
 ### [Bot to web](bot-framework-design-patterns-bot-to-web.md)
 ### [Handoff to human](bot-framework-design-patterns-human-handoff.md)
-### [Bot in app](bot-framework-design-patterns-bot-in-app.md)
-### [Bot in website](bot-framework-design-patterns-bot-in-website.md)
+### [Bots in apps](bot-framework-design-patterns-bot-in-app.md)
+### [Bots in websites](bot-framework-design-patterns-bot-in-website.md)
 # Build with .NET
 ## [Overview](bot-framework-dotnet-overview.md)
 ## [Get started](bot-framework-dotnet-getstarted.md)
