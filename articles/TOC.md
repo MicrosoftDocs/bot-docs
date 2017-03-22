@@ -70,6 +70,7 @@
 ##[Deploy a bot](bot-framework-publish-deploy.md)
 ##[Configure a bot](bot-framework-publish-configure.md)
 ##[Publish a bot to the directory](bot-framework-publish-add-to-directory.md)
+##[DevOps for Bots](bot-framework-devops.md)
 # Reference
 # Resources
 ## [FAQ](bot-framework-faq.md)
