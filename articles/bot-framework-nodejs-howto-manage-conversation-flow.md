@@ -11,7 +11,7 @@ ms.date: 02/17/2017
 ms.reviewer:
 #ROBOTS: Index
 ---
-# Manage conversation flow using dialogs with the Bot Builder SDK for Node.js
+# Manage conversation flow using dialogs
 
 <!--
 > [!div class="op_single_selector"]
@@ -20,9 +20,7 @@ ms.reviewer:
 >
 -->
 
-## Introduction
-
-In this article, we'll walk through examples of sending messages and managing conversation flow using the Bot Builder SDK for Node.js. 
+This article describes how to send messages and manage conversation flow using the Bot Builder SDK for Node.js.
 
 <!--
 > [!NOTE]
@@ -271,14 +269,8 @@ var bot = new builder.UniversalBot(connector, function (session) {
 
 ## Additional resources
 
-In this article, we walked through examples of managing conversation flow using dialogs and the Bot Builder SDK for Node.js. 
-
-To learn more about sending different types of messages, see:
-* [How to send and receive attachements][SendAttachments]
-* [How to send cards with buttons][SendCardWithButtons]
-
-> [!NOTE]
-> To do: Add links to additional related articles
+- [How to send and receive attachments][SendAttachments]
+- [How to send cards with buttons][SendCardWithButtons]
 
 
 <!-- TODO: Update links to point to new docs when available -->

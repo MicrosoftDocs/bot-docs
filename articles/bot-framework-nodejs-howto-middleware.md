@@ -12,7 +12,7 @@ ms.reviewer:
 #ROBOTS: Index
 ---
 
-# Intercept messages using the Bot Builder SDK for Node.js
+# Intercept messages
 
 <!--
 > [!div class="op_single_selector"]
@@ -21,10 +21,8 @@ ms.reviewer:
 >
 -->
 
-## Introduction
-
 [!include[Introduction to message logging](../includes/snippet-message-logging-intro.md)]
-In this article, we'll discuss how to intercept messages that are exchanged between user and bot by using the Bot Builder SDK for Node.js. 
+This article describes how to intercept messages that are exchanged between user and bot by using the Bot Builder SDK for Node.js. 
 
 ## Intercept messages
 
@@ -69,8 +67,4 @@ update `logIncomingMessage` and `logOutgoingMessage` as necessary to define the 
 
 ## Additional resources
 
-In this article, we discussed how to intercept the messages that are exchanged between user and bot by using the Bot Builder SDK for Node.js. 
-To learn more, see:
-
-> [!NOTE]
-> To do: Add links to related content (link to 'detailed readme' and 'full C# code' that Matt refers to)
+- [Bot capabilities](bot-framework-design-capabilities.md)
