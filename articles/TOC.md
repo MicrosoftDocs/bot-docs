@@ -3,7 +3,7 @@
 ## [How it works](bot-framework-overview-how-it-works.md)
 <!-- ## [Bot scenarios](bot-framework-overview-scenarios.md)-->
 <!-- ## [Core concepts](bot-framework-concepts-overview.md)-->
-## [Get started](bot-framework-get-started.md)
+## [Get started](bot-framework-botbuilder-overview.md)
 ## [Try it out](bot-framework-sample-bot.md)
 ## [FAQ](bot-framework-faq.md)
 ## Making bots smart
