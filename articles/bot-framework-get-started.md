@@ -4,21 +4,16 @@ description: Get started with building bots with the Bot Framework.
 keywords: bots, introduction, framework
 author: RobStand
 manager: rstand
-
-ms.topic: bot-framework-overview-article
-
+ms.topic: overview-article
 ms.prod: botframework
 ms.service: Bot Framework
-ms.date: 03/07/2017
-
-# Alias of the document reviewer. Change to the appropriate person.
+ms.date:
 ms.reviewer:
-
-# Include the following line commented out
 #ROBOTS: Index
 #REVIEW
 ---
-
+# Get started with the Bot Framework
+The Bot Framework provides SDKs and tools to help you build and connect intelligent bots. 
 ## Bot Builder
 
 The Bot Framework provides the following SDKs for building your bot as well as an emulator for testing and debugging it.
