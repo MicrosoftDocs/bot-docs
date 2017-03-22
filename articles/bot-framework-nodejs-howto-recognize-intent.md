@@ -44,7 +44,7 @@ Use [RegExpRecognizer](https://docs.botframework.com/en-us/node/builder/chat-ref
 
 ``` javascript
 // Add regular expression recognizer to bot
-bot.recognizer(new builder.RegExpRecognizer({en-us:'/^(cancel|nevermind)/i', ja-jp:'/^(キャンセル)'}));
+bot.recognizer(new builder.RegExpRecognizer( "CancelIntent", { en-us: /^(cancel|nevermind)/i, ja-jp: /^(キャンセル)/ }));
 ```
 
 ## Example: Use an external web service

@@ -61,25 +61,6 @@ Bots built using Bot Builder SDK are designed to be be stateless so that they ca
 See [Saving user data](bot-framework-nodejs-howto-save-user-data.md) for an example that demonstrates how to save user data.
 
 
-## Message ordering
-
-<!-- TODO -- Is there any reason to call it auto-batching? -->
-When sending multiple replies, the individual replies will be automatically grouped into a batch and delivered to the user as a set in an effort to preserve the original order of the messages. This automatic batching waits a default of 250ms after every call to **send()** before initiating the next call to **send()**.
-
-<!-- TODO: Find out if we ever really need to do the following:
-To avoid a 250ms pause after the last call to send() you can manually trigger delivery of the batch by calling session.sendBatch(). In practice it’s rare that you actually need to call sendBatch() as the built-in prompts and session.endConversation() automatically call sendBatch() for you.
---> 
-
-The goal of batching is to try and avoid multiple messages from the bot being displayed out of order. <!-- Unfortunately, not all channels can guarantee this. --> In particular, some channels tend to download images before displaying a message to the user so that if you send a message containing an image followed immediately by a message without images you’ll sometimes see the messages flipped in the user's feed. To minimize the chance of this you can try to insure that your images are coming from content deliver networks (CDNs) and avoid the use of overly large images. In extreme cases you may even need to insert a 1-2 second delay between the message with the image and the one that follows it. You can make this delay feel a bit more natural to the user by calling **session.sendTyping()** before starting your delay. To learn more about sending a typing indicator, see [How to send a typing indicator](bot-framework-nodejs-howto-send-typing-indicator.md).
-
-
-The message batching delay is configurable. To disable the SDK’s auto-batching logic, set the default delay to a large number and then manually call **sendBatch()** with a callback to invoke after the batch is delivered.
-
-> [!NOTE]
-> Additional content coming soon...
-
-
-
 ## Next steps
 
 Build your first bot by following the steps at [Get started](bot-framework-nodejs-getstarted.md).
