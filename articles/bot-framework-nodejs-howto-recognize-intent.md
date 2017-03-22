@@ -46,10 +46,15 @@ Use [RegExpRecognizer](https://docs.botframework.com/en-us/node/builder/chat-ref
 > Code sample coming soon...
 
 ## Example: Use an external web service
- A bot can be configured to use cloud based intent recognition services like LUIS through an extensible set of recognizer plugins. Out of the box, Bot Builder comes with a LuisRecognizer that can be used to call a machine learning model you’ve trained via their web site. You can create a LuisRecognizer that’s pointed at your model and then pass that recognizer into your IntentDialog at creation time using the options structure.
+ A bot can be configured to use cloud-based intent recognition services like [Language Understanding Intelligent Service (LUIS)][LUIS] through an extensible set of recognizer plugins. Out of the box, Bot Builder comes with a [LuisRecognizer][LuisRecognizer] class that can be used to call a machine learning model you’ve trained via their web site. You can create a **LuisRecognizer** that’s pointed at your model and then pass that recognizer into your dialog.
 
-> [!NOTE]
-> Code sample coming soon...
+``` javascript
+// Add global LUIS recognizer to bot
+var model = process.env.model || 'https://api.projectoxford.ai/luis/v2.0/apps/c413b2ef-382c-45bd-8ff0-f76d60e2a821?subscription-key=6d0966209c6e4f6b835ce34492f3e6d9';
+bot.recognizer(new builder.LuisRecognizer(model));
+```
+
+A [full example][LUISSample] that demonstrates how to add a cloud-based LUIS recognizer to a bot is included in the Bot Builder SDK.
 
 ## Disambiguate between multiple intents
 
@@ -66,5 +71,8 @@ You can provide custom disambiguation logic in your bot by implementing [IDisamb
 
 To learn more about the actions you can associate with a recognized intent, see [Managing conversation flow](bot-framework-nodejs-howto-manage-conversation-flow.md) and [Trigger actions using global handlers](bot-framework-nodejs-howto-global-handlers.md).
 
+[LUIS]: https://www.luis.ai/
 [IMessage]: http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.imessage
 [IntentRecognizerSetOptions]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iintentrecognizersetoptions.html
+[LuisRecognizer]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.luisrecognizer
+[LUISSample]: https://github.com/Microsoft/BotBuilder/blob/master/Node/examples/basics-naturalLanguage/app.js
