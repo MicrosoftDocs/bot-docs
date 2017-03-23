@@ -15,25 +15,6 @@ ms.reviewer:
 ---
 # Bot Framework Frequently Asked Questions
 This article contains answers to some frequently asked questions about the Bot Framework.
-## Channels
-### When will you add more conversation experiences to the Bot Framework?
-
-We plan on making continuous improvements to the Bot Framework, including additional channels, but cannot provide a schedule at this time.  
-If you would like a specific channel added to the framework, [let us know][Support].
-
-### I have a communication channel I’d like to be configurable with Bot Framework. Can I work with Microsoft to do that?
-
-We have not provided a general mechanism for developers to add new channels to Bot Framework, but you can connect your bot to your app via the [Direct Line API][DirectLineAPI]. If you are a developer of a communication channel and would like to work with us to enable your channel in the Bot Framework [we’d love to hear from you][Support].
-
-### If I want to create a bot for Skype, what tools and services should I use?
-
-The Bot Framework is designed to build, connect and publish high quality, responsive, performant and scalable bots for Skype and many other channels. The SDK can be used to create text/sms, image, button and card-capable bots (which constitute the majority of bot interactions today across conversation experiences) as well as bot interactions which are Skype-specific such as rich audio and video experiences.
-
-If you already have a great bot and would like to reach the Skype audience, your bot can easily be connected to Skype (or any supported channel) via the Bot Builder for REST API (provided it has an internet-accessible REST endpoint).
-
-### Is it possible for me to build a bot using the Bot Framework/SDK that is a “private or enterprise-only” bot that is only available inside my company?
-
-At this point, we do not have plans to enable a private instance of the Bot Directory, but we are interested in exploring ideas like this with the developer community.
 
 ## Background and availability
 ### Why did Microsoft develop the Bot Framework?
@@ -61,28 +42,25 @@ The Bot Framework is currently in preview. As indicated at Build 2016, Microsoft
 
 We are excited to provide initial availability of the Bot Framework at [/build 2016](http://build.microsoft.com/) and plan to continuously improve the framework with additional tools, samples, and channels. The [Bot Builder SDK](http://github.com/Microsoft/BotBuilder) is an open source SDK hosted on GitHub and we look forward to the contributions of the community at large. [Feedback][Support] as to what you’d like to see is welcome.
 
-## What's New?
+## Channels
+### When will you add more conversation experiences to the Bot Framework?
 
-### The Bot Framework July 2016 Update saw some significant changes to the SDKs and service. Can you enumerate these changes?
+We plan on making continuous improvements to the Bot Framework, including additional channels, but cannot provide a schedule at this time.  
+If you would like a specific channel added to the framework, [let us know][Support].
 
-The July 2016 update is largely in response to feedback received from the active Bot Framework community. The update is focused on quality, control and performance. Enhancements include:
+### I have a communication channel I’d like to be configurable with Bot Framework. Can I work with Microsoft to do that?
 
-* Automatic card normalization across channels
-* More direct message handling; more control
-* Additional dialog types and capabilities in the SDK
-* Enhanced connection to Cognitive Services within the SDK
-* Improvements to the Emulator and Direct Line API
-* Skype channel auto-configured for any bot using Bot Framework
+We have not provided a general mechanism for developers to add new channels to Bot Framework, but you can connect your bot to your app via the [Direct Line API][DirectLineAPI]. If you are a developer of a communication channel and would like to work with us to enable your channel in the Bot Framework [we’d love to hear from you][Support].
 
-### Do I need to upgrade my "v1" bot?
+### If I want to create a bot for Skype, what tools and services should I use?
 
-Yes. You will need to [upgrade your bot](https://aka.ms/bf-migrate) to the latest version (v3) of the Bot Framework platform. The v1 API for Skype has already been shut down and the remaining channels will stop working on February 22, 2017. All bots written prior to July 2016 must be upgraded to continue functioning.
+The Bot Framework is designed to build, connect and publish high quality, responsive, performant and scalable bots for Skype and many other channels. The SDK can be used to create text/sms, image, button and card-capable bots (which constitute the majority of bot interactions today across conversation experiences) as well as bot interactions which are Skype-specific such as rich audio and video experiences.
 
-When upgrading your bot, be sure to target the latest version of the Bot Builder SDK.
+If you already have a great bot and would like to reach the Skype audience, your bot can easily be connected to Skype (or any supported channel) via the Bot Builder for REST API (provided it has an internet-accessible REST endpoint).
 
-### Do I need to upgrade my "v3" bot?
+### Is it possible for me to build a bot using the Bot Framework/SDK that is a “private or enterprise-only” bot that is only available inside my company?
 
-In December 2016 we made a change to our security configuration that will become mandatory for all v3 bots by May 31, 2017. All bots must upgrade to a minimum of version 3.5 of the [Bot Builder SDK](https://github.com/Microsoft/BotBuilder) or, if you're not using the Bot Builder SDK, the [latest version of the Bot Framework protocol][RestAuth].
+At this point, we do not have plans to enable a private instance of the Bot Directory, but we are interested in exploring ideas like this with the developer community.
 
 ## Security and Privacy
 ### Do the bots registered with the Bot Framework collect personal information? If yes, how can I be sure the data is safe and secure? What about privacy?

@@ -5,7 +5,7 @@
 <!-- ## [Core concepts](bot-framework-concepts-overview.md)-->
 ## [Get started](bot-framework-botbuilder-overview.md)
 ## [Try it out](bot-framework-sample-bot.md)
-## [FAQ](bot-framework-faq.md)
+## [Frequently Asked Questions](bot-framework-faq.md)
 ## Making bots smart
 ### [Overview](bot-framework-intelligence-getstarted.md)
 ### [Language](bot-framework-intelligence-language.md)
