@@ -18,7 +18,7 @@ The most common bot use case is when a user initiates the interaction by chattin
 
 The proactive bot template provides all the Azure resources you need to enable a very simple proactive scenario. The following diagram provides an overview of how triggered events work.
 
-![Proactive template diagram](http://docs.botframework.com/en-us/images/azure-bot-proactive-diagram.png)
+![Proactive template diagram](media/azure-bot-proactive-diagram.png)
 
 When you create a proactive bot with the Azure Bot Service, you will find these Azure resources in your resource group:
 - Azure Storage (used to create the queue)
