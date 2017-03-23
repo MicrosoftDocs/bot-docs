@@ -18,7 +18,7 @@ The form bot template shows how to use forms to perform a guided conversation wi
 
 Most messages will have a `Message` activity type that contains the text and attachments the user sent. If the message’s activity type is `Message`, the template posts the message to `MainDialog` in the context of the current message. The **MainDialog.csx** file contains the root dialog that controls the conversation with the user.
 
-The routing of the message is identical to the one presented in the [Basic bot template](bot-framework-azure-basicbot.md).
+The routing of the message is identical to the one presented in the [Basic bot template](bot-framework-azure-basic-bot.md).
 
 [!code-csharp[Post message](../includes/code/azure-form-bot.cs#postMessage)]
 

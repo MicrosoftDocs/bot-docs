@@ -13,7 +13,7 @@ ms.reviewer:
 
 ---
 
-# Overview
+# Bot Builder for Azure
 
 ## Introduction
 
@@ -31,7 +31,7 @@ The Azure editor does not allow you to manage the files by adding new files or r
 ## Get sample bots
 The following are the Bot App templates that you can create.
 
-* Basic—A simple bot that uses dialogs to respond to user input. Read [Create a bot with the Azure Bot Service](bot-framework-azure-basicbot.md) to learn how to build a basic bot.
+* Basic—A simple bot that uses dialogs to respond to user input. Read [Create a bot with the Azure Bot Service](bot-framework-azure-basic-bot.md) to learn how to build a basic bot.
 * Form—A bot that uses a guided conversation to collect user input. The C# template uses FormFlow to collect user input, and the Node.js template uses waterfalls to collect user input. See  [Form bot template](bot-framework-azure-formbot.md).
 * Language understanding—A bot that uses natural language models (LUIS) to understand user intent. See [Natural langugae bot template](bot-framework-azure-naturallanguagebot.md).
 * Proactive—A bot that uses Azure Functions to alert bot users of events. See [Proactive bot template](bot-framework-azure-proactivebot.md).
@@ -68,7 +68,7 @@ All Azure Bot Service bots include the following files, depending on whether you
 Learn more about building bots using Azure Bot Service by
 reviewing articles and tutorials throughout this section.
 
-Read [Get Started](bot-framework-azure-getstarted.md) so that you can quickly build and test a simple bot by following instructions in this step-by-step tutorial.
+- Read [Get Started](bot-framework-azure-getstarted.md) so that you can quickly build and test a simple bot by following instructions in this step-by-step tutorial.
 
-If you encounter problems or have suggestions regarding Azure Bot Service, 
+- If you encounter problems or have suggestions regarding Azure Bot Service, 
 see [Support](bot-framework-resources-support.md) for a list of available resources. 
