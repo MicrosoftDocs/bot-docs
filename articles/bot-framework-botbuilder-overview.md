@@ -1,6 +1,6 @@
 ---
 title: About Bot Builder | Microsoft Docs
-description: Learn about the different means that Bot Builder provides for building a bot using the Bot Framework.
+description: Learn about the different features that Bot Builder provides for building a bot using the Bot Framework.
 keywords: Bot Framework, Bot Builder, SDK, REST, Azure Bot Service
 author: kbrandl
 manager: rstand
@@ -8,18 +8,16 @@ ms.topic: get-started-article
 ms.prod: botframework
 ms.service: Bot Builder
 ms.date: 02/17/2017
-ms.reviewer:
+ms.reviewer: rstand
 #ROBOTS: Index
 ---
 # Get started with the Bot Framework
+The Bot Framework provides four ways to provides to build bots depending on your language of choice:
 
-The Bot Framework enables you to build and connect intelligent bots to interact with your users naturally through the applications that they use, including SMS, Facebook Messenger, Skype, and Slack, among others. 
-
-The Bot Framework provides four ways to provides to build bots depending on your language of choice
-
-- [Bot Builder SDK for .NET](#dotnet) 
-- [Bot Builder SDK for Node.js](#node)
-- [Azure Bot Service](#azure)
+- Bot Builder SDK for .NET
+- Bot Builder SDK for Node.js
+- Azure Bot Service
+- REST API
 
 ## <a id="dotnet"></a>Bot Builder SDK for .NET
 The Bot Builder SDK for .NET is a powerful framework for constructing bots that can handle both freeform interactions and more guided ones where the possibilities are explicitly shown to the user. It is easy to use and leverages C# to provide a familiar way for .NET developers to write bots. 
@@ -34,7 +32,7 @@ The [detailed walkthrough](bot-framework-nodejs-getstarted.md) using the Bot Bui
 ## <a id="azure"></a>Azure Bot Service
 The Azure Bot Service provides an integrated environment that is purpose-built for bot development, 
 enabling you to build, connect, test, deploy and manage intelligent bots, all from one place. 
-You can write your bot in C# or Node.js directly in the browser using the Azure editor, without any need for a tool chain (local editor and source control). 
+You can write your bot in C# or Node.js directly in the browser using the Azure editor, without any need for a tool chain, such as a local editor or source control. 
 
 The [detailed walkthrough](bot-framework-azure-getstarted.md) using the Azure Bot Service will get you started toward building your own bot.
 
