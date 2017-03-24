@@ -69,6 +69,13 @@
 # Build with Azure Bot Service
 ## [Overview](bot-framework-azure-overview.md)
 ## [Get started](bot-framework-azure-getstarted.md)
+## Templates
+### [Overview](bot-framework-azure-templates-overview.md)
+### [Basic bot](bot-framework-azure-basic-bot.md)
+### [Form bot](bot-framework-azure-form-bot.md)
+### [Language understanding bog](bot-framework-natural-language-bot.md)
+### [Proactive bot](bot-framework-azure-proactive-bot.md)
+### [Question and answer bot](bot-framework-azure-question-and-answer-bot.md)
 # Deploy and Publish
 ##[Overview](bot-framework-publish-overview.md)
 ##[Register a bot](bot-framework-publish-register.md)
