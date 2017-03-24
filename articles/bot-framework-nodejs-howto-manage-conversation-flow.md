@@ -127,8 +127,7 @@ leading to the appearance of being stuck. In our example, anytime the user asks 
 ## Ask questions
 
 Another common pattern is for a bot to ask the user a sequence of questions before performing some action.
-The SDK provides a set of built-in prompts to simplify collecting input from a user and you can then use a feature called a *waterfall* to define 
-the sequence in which you’d like to prompt the user. 
+The SDK provides a set of built-in prompts to simplify collecting input from a user. You can then use a feature called a *waterfall* to define the sequence in which to prompt the user. 
 
 ```javascript
 // Create your bot with a waterfall to ask user their name
@@ -269,12 +268,9 @@ var bot = new builder.UniversalBot(connector, function (session) {
 
 ## Message ordering
 
-<!-- TODO -- Is there any reason to call it auto-batching? -->
-When sending multiple replies, the individual replies will be automatically grouped into a batch and delivered to the user as a set in an effort to preserve the original order of the messages. This automatic batching waits a default of 250ms after every call to **send()** before initiating the next call to **send()**.
+When your bot sends multiple replies to the user, the individual messages will be automatically grouped into a batch and delivered to the user as a set in an effort to preserve the original order of the messages. This automatic batching waits a default of 250ms after every call to **session.send()** before initiating the next call to **send()**.
 
-<!-- TODO: Find out if we ever really need to do the following:
-To avoid a 250ms pause after the last call to send() you can manually trigger delivery of the batch by calling session.sendBatch(). In practice it’s rare that you actually need to call sendBatch() as the built-in prompts and session.endConversation() automatically call sendBatch() for you.
---> 
+
 
 The goal of batching is to try and avoid multiple messages from the bot being displayed out of order. <!-- Unfortunately, not all channels can guarantee this. --> In particular, some channels tend to download images before displaying a message to the user so that if you send a message containing an image followed immediately by a message without images you’ll sometimes see the messages flipped in the user's feed. To minimize the chance of this you can try to insure that your images are coming from content deliver networks (CDNs) and avoid the use of overly large images. In extreme cases you may even need to insert a 1-2 second delay between the message with the image and the one that follows it. You can make this delay feel a bit more natural to the user by calling **session.sendTyping()** before starting your delay. To learn more about sending a typing indicator, see [How to send a typing indicator](bot-framework-nodejs-howto-send-typing-indicator.md).
 
@@ -286,11 +282,12 @@ The message batching delay is configurable. To disable the SDK’s auto-batching
 
 - [How to send and receive attachments][SendAttachments]
 - [How to send cards with buttons][SendCardWithButtons]
-
+- [Save user data](bot-framework-nodejs-howto-save-user-data.md)
 
 <!-- TODO: Update links to point to new docs when available -->
 [SendAttachments]: bot-framework-nodejs-howto-send-receive-attachments.md
 [SendCardWithButtons]: bot-framework-nodejs-howto-send-card-buttons.md
+[SaveUserData]: bot-framework-nodejs-howto-save-user-data.md
 [UniversalBot]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.universalbot.html
 [ChatConnector]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.chatconnector.html
 [sprintf]: http://www.diveintojavascript.com/projects/javascript-sprintf
