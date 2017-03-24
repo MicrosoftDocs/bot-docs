@@ -53,7 +53,6 @@
 ## [Overview](bot-framework-nodejs-overview.md)
 ## [Get started](bot-framework-nodejs-getstarted.md)
 ## [Key concepts](bot-framework-nodejs-concepts.md)
-## Debugging
 ## Tutorials
 ### [Manage conversation flow](bot-framework-nodejs-howto-manage-conversation-flow.md)
 ### [Trigger actions using global handlers](bot-framework-nodejs-howto-global-handlers.md)

@@ -1,8 +1,8 @@
 ---
-title: Manage conversation flow using dialogs with the Bot Builder SDK for Node.js | Microsoft Docs
+title: Manage conversation flow | Microsoft Docs
 description: Learn how to manage conversation flow using dialogs and the Bot Builder SDK for Node.js.
 keywords: Bot Framework, dialog, messages, conversation flow, conversation, node.js, node, Bot Builder, SDK
-author: kbrandl
+author: DeniseMak
 manager: rstand
 ms.topic: develop-nodejs-article
 ms.prod: botframework
@@ -11,7 +11,7 @@ ms.date: 02/17/2017
 ms.reviewer:
 #ROBOTS: Index
 ---
-# Manage conversation flow using dialogs
+# Manage conversation flow
 
 <!--
 > [!div class="op_single_selector"]
@@ -86,7 +86,7 @@ var msg = session.message;
 ```
 We’ve extended our sample to include a regular expression that looks for the users to send a message starting with “help”, to which it will reply with a help message. 
 This is one way to listen for commands but you can imagine that as the list of commands your bot supports grows, this function can quickly get large and difficult to follow.
-Let’s see how to use the SDK’s dialog system, along with a global handler called a *trigger action*, to accomplish the same thing. 
+Instead, you can use the SDK’s dialog system, along with a global handler called a *trigger action*, to accomplish the same thing. 
 
 ```javascript
 // Create your bot with a function to receive messages from the user
@@ -113,14 +113,19 @@ bot.dialog('help', function (session) {
 
 ```
 
-Instead of adding logic to our to the main message handler for our bot, we’ve add a dialog named ‘help’ that 
-has a [triggerAction()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog#triggeraction) specifying 
+Instead of adding logic to the main message handler for our bot, we’ve add a dialog named ‘help’ that 
+has a [triggerAction](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog#triggeraction) handler that specifies 
 a [matches](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.itriggeractionoptions#matches) clause with our regular expression. 
-Dialogs let you break your bots logic into logical components designed to perform a single task. In this case our ‘help’ dialog is designed to provide the user with help anytime they ask for it.
-The trigger action defines the rules for when this dialog should be started, in this case anytime the user says “help”.
-The actual code for our dialog is very similar to our original sample but includes a call to [endDialog()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#enddialog) after the call to send(). 
 
-When a dialog is triggered it will receive all future messages from a user until a call to endDialog() is made. 
+> [!NOTE]
+> Your can also add *recognizers* to your bot to determine the user's intent as soon as they send a message. If you use recognizers, **triggerAction** can be associated with a *named intent* instead of a regular expression. See [Recognize user intent][RecognizeUserIntent] for more information.
+
+
+Dialogs let you break your bots logic into logical components designed to perform a single task. In this example the ‘help’ dialog is designed to provide the user with help anytime they ask for it.
+The trigger action defines the rules for when this dialog should be started, which is anytime the user says “help”.
+The actual code for the dialog is very similar to our original sample but includes a call to [endDialog()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#enddialog) after the call to send(). 
+
+When a dialog is triggered it receives all future messages from the user until a call to endDialog() is made. 
 This behavior is one of the primary advantages to using dialogs but the call to endDialog() is sometimes overlooked, 
 leading to the appearance of being stuck. In our example, anytime the user asks for “help” we’ll send a quick message and then end the dialog to return control back to our main message handler. 
 
@@ -280,13 +285,15 @@ The message batching delay is configurable. To disable the SDK’s auto-batching
 
 ## Additional resources
 
-- [How to send and receive attachments][SendAttachments]
-- [How to send cards with buttons][SendCardWithButtons]
+- [Send and receive attachments][SendAttachments]
+- [Send cards with buttons][SendCardWithButtons]
+- [Recognize user intent][RecognizeUserIntent]
 - [Save user data](bot-framework-nodejs-howto-save-user-data.md)
 
 <!-- TODO: Update links to point to new docs when available -->
 [SendAttachments]: bot-framework-nodejs-howto-send-receive-attachments.md
 [SendCardWithButtons]: bot-framework-nodejs-howto-send-card-buttons.md
+[RecognizeUserIntent]: bot-framework-nodejs-howto-recognize-intent.md
 [SaveUserData]: bot-framework-nodejs-howto-save-user-data.md
 [UniversalBot]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.universalbot.html
 [ChatConnector]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.chatconnector.html

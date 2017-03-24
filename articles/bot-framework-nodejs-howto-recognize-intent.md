@@ -21,7 +21,7 @@ ms.reviewer: rstand
 >
 --> 
 
-When the users ask your bot for something, like "help" or "find news", your bot needs to understand what the user is asking for. 
+When users ask your bot for something, like "help" or "find news", your bot needs to understand what the user is asking for. 
 You can design your bot to recognize a set of intents that interpret the user’s input in terms of the intention it conveys.
 This article demonstrates how to register a custom intent recognizer that will be run for every message received from the user. 
 Custom recognizers can return a named intent that can be used to trigger actions and dialogs within the bot.
@@ -29,7 +29,7 @@ Custom recognizers can return a named intent that can be used to trigger actions
 
 ## Example: Register a custom intent recognizer
 This specific example adds a recognizer that looks for the user to say 'help' or 'goodbye' but you could easily add a 
-recognizer that looks for the user to send an image or calls an external web service to determine the user's intent. Your bot can register than one recognizer.
+recognizer that looks for the user to send an image or calls an external web service to determine the user's intent. Your bot can register more than one recognizer.
 
 
 [!code-js[Add a custom recognizer (Javascript)](../includes/code/node-howto-recognize-intent.js#addCustomRecognizer)]
@@ -56,7 +56,7 @@ var model = process.env.model || 'https://api.projectoxford.ai/luis/v2.0/apps/c4
 bot.recognizer(new builder.LuisRecognizer(model));
 ```
 
-A [full example][LUISSample] that demonstrates how to add a cloud-based LUIS recognizer to a bot is included in the Bot Builder SDK.
+The Bot Builder SDK includes a [sample][LUISSample] that demonstrates how to add a cloud-based LUIS recognizer to a bot.
 
 ## Disambiguate between multiple intents
 
@@ -64,7 +64,8 @@ Notice that the custom recognizer example involves assigning a numerical score t
 
 By default, recognizers run in parallel, but you can set recognizeOrder in [IIntentRecognizerSetOptions][IntentRecognizerSetOptions] such that the process quits as soon as your bot finds one that gives a score of 1.0.
 
-You can provide custom disambiguation logic in your bot by implementing [IDisambiguateRouteHandler](https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.idisambiguateroutehandler.html).
+The Bot Builder SDK includes a [sample][DisambiguationSample] that demonstrates how to provide custom disambiguation logic in your bot by implementing [IDisambiguateRouteHandler](https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.idisambiguateroutehandler.html).
+
 
 
 ## Additional resources
@@ -79,3 +80,4 @@ For more information on LUIS see [Understanding Natural Language][LUISConcepts].
 [LuisRecognizer]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.luisrecognizer
 [LUISSample]: https://github.com/Microsoft/BotBuilder/blob/master/Node/examples/basics-naturalLanguage/app.js
 [LUISConcepts]: https://docs.botframework.com/en-us/node/builder/guides/understanding-natural-language/
+[DisambiguationSample]: https://github.com/Microsoft/BotBuilder/tree/master/Node/examples/feature-onDisambiguateRoute
