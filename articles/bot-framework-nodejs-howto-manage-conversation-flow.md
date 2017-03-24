@@ -118,7 +118,7 @@ has a [triggerAction](http://docs.botframework.com/en-us/node/builder/chat-refer
 a [matches](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.itriggeractionoptions#matches) clause with our regular expression. 
 
 > [!NOTE]
-> Your **triggerAction** can also be associated with a *named intent* instead of a regular expression. See [Recognize user intent][RecognizeUserIntent] for more information.
+> Your can also add *recognizers* to your bot to determine the user's intent as soon as they send a message. If you use recognizers, **triggerAction** can be associated with a *named intent* instead of a regular expression. See [Recognize user intent][RecognizeUserIntent] for more information.
 
 
 Dialogs let you break your bots logic into logical components designed to perform a single task. In this example the ‘help’ dialog is designed to provide the user with help anytime they ask for it.
