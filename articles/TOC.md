@@ -68,6 +68,7 @@
 # Build with Azure Bot Service
 ## [Overview](bot-framework-azure-overview.md)
 ## [Get started](bot-framework-azure-getstarted.md)
+## [Debug your bot](bot-framework-azure-debug.md)
 ## Templates
 ### [Overview](bot-framework-azure-templates-overview.md)
 ### [Basic bot](bot-framework-azure-basic-bot.md)
@@ -80,11 +81,13 @@
 ##[Register a bot](bot-framework-publish-register.md)
 ##[Deploy a bot](bot-framework-publish-deploy.md)
 ##[Configure a bot](bot-framework-publish-configure.md)
+##[Set up continuous integration](bot-framework-azure-continuous-integration.md)
 ##[Publish a bot to the directory](bot-framework-publish-add-to-directory.md)
 # Troubleshooting
 ## [Troubleshoot general problems](bot-framework-troubleshooting-guide.md)
 ## [Troubleshoot authentication](bot-framework-troubleshooting-auth.md)
 ## [Characteristics of IDs](bot-framework-resources-id-guide.md)
+## [Manage your MSA App ID and password](bot-framework-azure-manage-msa-app-ID.md)
 # Resources
 ## [Downloads](bot-framework-resources-downloads.md)
 ## [Support](bot-framework-resources-support.md)

@@ -12,7 +12,7 @@ ms.reviewer:
 #ROBOTS: Index
 ---
 
-#Overivew of templates
+#Overview of templates
 
 Azure Bot Service is powered by the serveless infrastructure of Azure Functions, and it shares its <a href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference" target="_blank">runtime concepts</a>, which you should become familiar with.
 
