@@ -73,7 +73,7 @@
 ### [Overview](bot-framework-azure-templates-overview.md)
 ### [Basic bot](bot-framework-azure-basic-bot.md)
 ### [Form bot](bot-framework-azure-form-bot.md)
-### [Language understanding bog](bot-framework-natural-language-bot.md)
+### [Language understanding bot](bot-framework-natural-language-bot.md)
 ### [Proactive bot](bot-framework-azure-proactive-bot.md)
 ### [Question and answer bot](bot-framework-azure-question-and-answer-bot.md)
 # Deploy and Publish
