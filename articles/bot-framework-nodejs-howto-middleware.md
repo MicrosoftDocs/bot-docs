@@ -1,5 +1,5 @@
 ---
-title: Intercept messages using the Bot Builder SDK for Node.js | Microsoft Docs
+title: Intercept messages | Microsoft Docs
 description: Learn how to intercept messages that are exchanged between user and bot by using the Bot Builder SDK for Node.js.
 keywords: Bot Framework, node.js, Bot Builder, SDK, message logging, intercept message, inspect message
 author: kbrandl
@@ -13,13 +13,6 @@ ms.reviewer:
 ---
 
 # Intercept messages
-
-<!--
-> [!div class="op_single_selector"]
-> * [.NET](bot-framework-dotnet-howto-middleware.md)
-> * [Node.js](bot-framework-nodejs-howto-middleware.md)
->
--->
 
 [!include[Introduction to message logging](../includes/snippet-message-logging-intro.md)]
 This article describes how to intercept messages that are exchanged between user and bot by using the Bot Builder SDK for Node.js. 
@@ -61,7 +54,7 @@ module.exports = {
 
 Now, every inbound message (from user to bot) will trigger `logIncomingMessage`, 
 and every outbound message (from bot to user) will trigger `logOutgoingMessage`.
-In this example, we're simply printing some information about each message, but you can 
+In this example, the bot simply prints some information about each message, but you can 
 update `logIncomingMessage` and `logOutgoingMessage` as necessary to define the actions that you want to take for each message. 
 
 
