@@ -4,7 +4,6 @@
 <!-- ## [Core concepts](bot-framework-concepts-overview.md)-->
 ## [Get started](bot-framework-botbuilder-overview.md)
 ## [Try it out](bot-framework-sample-bot.md)
-## [Frequently Asked Questions](bot-framework-faq.md)
 # Quickstart
 ## [Create a bot with .NET](bot-framework-dotnet-getstarted.md)
 ## [Create a bot with Node.js](bot-framework-nodejs-getstarted.md)
@@ -13,6 +12,7 @@
 ## [How Bot Framework works](bot-framework-overview-how-it-works.md)
 ## [Bot capabilities](bot-framework-design-capabilities.md)
 ## [Principles of bot design](bot-framework-design-overview.md)
+## [Bot Framework Emulator](bot-framework-resources-emulator.md)
 ## Making bots smart
 ### [Overview](bot-framework-intelligence-getstarted.md)
 ### [Language](bot-framework-intelligence-language.md)
@@ -92,4 +92,7 @@
 ## [Downloads](bot-framework-resources-downloads.md)
 ## [Support](bot-framework-resources-support.md)
 <!--## [Tools](bot-framework-resources-tools.md)-->
-## [Emulator](bot-framework-resources-emulator.md)
+## [FAQ](bot-framework-faq.md)
+## [StackOverflow](http://stackoverflow.com/questions/tagged/botframework)
+## [What's new](whats-new.md)
+## [More information](resources-contributions.md)
