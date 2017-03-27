@@ -14,18 +14,17 @@ ms.reviewer:
 
 #Basic bot
 
-The basic bot template shows how to use dialogs to respond to user input. For information about using dialogs, see [Dialogs](bot-framework-dotnet-dialogs.md).
-When a user posts a message, it’s sent to the bot’s `Run` method in the **Run.csx** file. Before the bot processes the message, it first <a href="https://docs.botframework.com/en-us/restapi/authentication/" target="_blank">authenticates the request</a>. If the validation fails, the bot responds with "Unauthorized". 
+The basic bot template demonstrates how to use [dialogs](bot-framework-dotnet-dialogs.md) to manage conversation flow with a user. When a user posts a message, it’s sent to the bot’s `Run` method in the **Run.csx** file. Before the bot processes the message, it first <a href="https://docs.botframework.com/en-us/restapi/authentication/" target="_blank">authenticates the request</a>. If the validation fails, the bot responds with "Unauthorized". 
 
-The following shows the code that the template uses to authenticate the request.
+The following code sample shows how a request is authenticate.
 
 [!code-csharp[Authenticate request](../includes/code/azure-basic-bot.cs#authenticateRequest)]
 
-If the request is authentic, the bot processes the message. The message includes an activity type, which the bot uses to decide what action to take. You would update this code if you want to respond to the other activity types. For example, if you save the user state, you’ll need to respond to the `DeleteUserData` message.
+If the request is authentic, the bot processes the message. The message includes an activity type, which the bot uses to decide what action to take. Update this code if you want to respond to the other activity types. For example, if you save the user state, you’ll need to respond to the `DeleteUserData` message.
 
 [!code-csharp[Process message](../includes/code/azure-basic-bot.cs#processMessage)]
 
-The first message that the channel sends to the bot is a `ConversationUpdate` message that contains the users that are in the conversation. The template shows how you would use this message to welcome the users to the conversation. Because the bot is considered a user in the conversation, the list of users will include the bot. The code identifies the bot and ignores it when welcoming the other users.
+The first message that the channel sends to the bot is a `ConversationUpdate` message that contains the users that are in the conversation. The template demonstrates how you would use this message to welcome the users to the conversation. Because the bot is considered a user in the conversation, the list of users will include the bot. The code identifies the bot and ignores it when welcoming the other users.
 
 [!code-csharp[Conversation update](../includes/code/azure-basic-bot.cs#conversationUpdate)]
 
@@ -47,15 +46,16 @@ The `AfterResetAsync` method processes the user’s response to `PromptDialog`. 
 [!code-csharp[Send message](../includes/code/azure-basic-bot.cs#sendMessage)]
 
   ##Next steps
-Here are a few things you might consider as next steps when updagint the code.
+Here are a few things you might consider as next steps when updating the code.
 - Add other prompts to get information from the user.
 - Add attachments such as cards to provide a richer user experience.
-- Chain together other dialogs (see Dialog Chains).
+- Chain together other dialogs using [dialog chains](bot-framework-dotnet-dialogs.md#dialog-chains).
 
-##Resources
+##Additional resources
 
-<a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub Repo</a>
-<a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/" target="_blank">Bot Builder SDK C# Reference</a>
-<a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder SDK</a>
-<a href="https://www.luis.ai/Help" target="_blank">LUIS documentation</a>
+- [Manage conversation flow using dialogs](bot-framework-dotnet-howto-manage-conversation-flow.md)
+- <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub Repo</a>
+- <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/" target="_blank">Bot Builder SDK C# Reference</a>
+- <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder SDK</a>
+- <a href="https://www.luis.ai/Help" target="_blank">LUIS documentation</a>
 

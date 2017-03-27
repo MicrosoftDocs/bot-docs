@@ -14,21 +14,21 @@ ms.reviewer:
 
 # Proactive bot
 
-The most common bot interaction happens when a user initiates the interaction by chatting with the bot via their favorite channel. What if you wanted a bot to contact the user based on a triggered event, such as a lengthy job order or a pizza that is ready to be picked up? 
+The most common bot interaction happens when users initiate a conversation by chatting with the bot via their favorite channel. But a bot can initiate a conversation, too. Suppose you wanted a bot to contact the user based on a triggered event, such as a lengthy job order or a pizza that is ready to be picked up? In these cases, the bot is being "proactive" by starting the conversation and waiting for your reply.
 
 The proactive bot template provides all the Azure resources you need to enable a very simple proactive interaction. The following diagram provides an overview of how triggered events work.
 
 ![Proactive template diagram](media/azure-bot-proactive-diagram.png)
 
 When you create a proactive bot with the Azure Bot Service, you will find these Azure resources in your resource group:
-- Azure Storage, which is used to create the queue
-- Azure Bot Service, which is your bot. This contains the logic that receives the message from user, adds the message with required properties (such as recipient and the user’s message) to the Azure queue, receives the triggers from Azure Functions, and then sends back the message it received from trigger’s payload.
+- Azure Storage, which is used to create the queue.
+- Azure Bot Service, which is your bot. This contains the logic that receives the message from the user, adds the message with required properties (such as recipient and the user’s message) to the Azure queue, receives the triggers from Azure Functions, and then sends back the message it received from the trigger’s payload.
 - Azure Function App (a `queueTrigger` Azure Function), which is triggered whenever there is a message in the queue and then communicates to the Bot service via Direct Line. This function uses bot binding to send the message as part of the trigger’s payload. 
 
 
 ##Azure Bot Service: Receiving a message from the user and adding it to an Azure Storage Queue
 
-Here’s the snippet of code that receives the message from the user, adds it to an Azure Storage Queue, and finally sends back an acknowledgment to the user. Notice that the message is wrapped in an object that contains all the information needed to send the message back to the user on the right channel (`ResumptionCookie` for C# and `session.message.address` for Node.js).
+The following sample code demonstrates how the proactive bot receives the message from the user, adds it to an Azure Storage Queue, and finally sends back an acknowledgment to the user. Notice that the message is wrapped in an object that contains all the information needed to send the message back to the user on the right channel (`ResumptionCookie` for C# and `session.message.address` for Node.js).
 
 [!code-csharp[Receive Message](../includes/code/azure-proactive-bot.cs#receiveMessage)] 
 
@@ -36,7 +36,7 @@ Here’s the snippet of code that receives the message from the user, adds it to
 
 ##Azure Bot Service: Receiving the message back from the Azure Function
 
-The following snippet of code, shows how to receive the message from the trigger function.
+The following code sample demonstrates how to receive the message from the trigger function.
 
 [!code-csharp[Receive message from trigger](../includes/code/azure-proactive-bot.cs#receiveTrigger)] 
 
@@ -57,12 +57,10 @@ The **functions.json** configuration file looks like this.
 
 ##Conclusion
 
-This template should give you the basic ideas about how to enable proactive interactions for your bots. By leveraging the power of Azure Bot Service and Azure Functions, you can build complex systems really fast with fault-tolerant, independent pieces.
+This template should give you the basic ideas about how to enable proactive interactions for your bots. By leveraging the power of Azure Bot Service and Azure Functions, you can build complex systems quickly with fault-tolerant, independent pieces.
 
-##Resources
+##Additional resources
 
-<a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub Repo </a>
-
-<a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/" target="_blank">Bot Builder SDK C# Reference</a>
-
-<a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder SDK</a>
+- <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub Repo </a>
+- <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/" target="_blank">Bot Builder SDK C# Reference</a>
+- <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder SDK</a>
