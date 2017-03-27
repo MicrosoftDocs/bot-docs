@@ -14,9 +14,9 @@ ms.reviewer:
 
 #The question and answer bot
 
-The question and answer bot template demonstrates how to use the <a href="https://qnamaker.ai" target="_blank">QnA Maker</a> tool to quickly create an FAQ Bot. One of the basic requirements in writing your own bot service is to seed it with questions and answers. In many cases, the questions and answers already exist in content like FAQ URLs/documents. QnA Maker lets you ingest your existing FAQ content and expose it as an HTTP endpoint.
+The question and answer bot template demonstrates how to use the <a href="https://qnamaker.ai" target="_blank">QnA Maker</a> tool to quickly create an FAQ Bot. One of the basic requirements in writing your own bot service is to seed it with questions and answers. In many cases, the questions and answers already exist in content like FAQ URLs. QnA Maker lets you ingest your existing FAQ content and expose it as an HTTP endpoint.
 
-When you create the template, Azure Bot Service lets you either select an existing knowledge base you may have created from the <a href="https://qnamaker.ai" target="_blank">QnA Maker portal</a>, or creates an empty knowledge base.
+When you create the template, Azure Bot Service lets you either select an existing knowledge base you may have created from the <a href="https://qnamaker.ai" target="_blank">QnA Maker portal</a>, or create an empty knowledge base.
 
 The routing of the message is identical to the one presented in the [Basic bot template](bot-framework-azure-basic-bot.md).
 
@@ -46,10 +46,8 @@ The following parameters are passed when invoking the QnA Maker service.
 
 [!code-JavaScript[Set message received](../includes/code/azure-question-and-answer.js#setMessageReceived)]
 
-    ##Resources
+    ##Additional resources
 
-<a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub Repo </a>
-
-<a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/" target="_blank">Bot Builder SDK C# Reference</a>
-
-<a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder SDK</a>
+- <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub Repo </a>
+- <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/" target="_blank">Bot Builder SDK C# Reference</a>
+- <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder SDK</a>
