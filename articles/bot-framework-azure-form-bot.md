@@ -14,7 +14,7 @@ ms.reviewer:
 
 #Form bot
 
-The form bot template shows how to use forms to perform a guided conversation with the user, like "What colors would you like to see for that model car?" Or "What's your favorite pizza?"
+The form bot template demonstrates how to use a form to perform a guided conversation with the user. Typically, you would use a guided conversation when you need to ask the user a series of clarifying questions, like when ordering a sandwich with many options and ingredients.
 
 Most messages will have a `Message` activity type that contains the text and attachments the user sent. If the message’s activity type is `Message`, the template posts the message to `MainDialog` in the context of the current message. The **MainDialog.csx** file contains the root dialog that controls the conversation with the user.
 
@@ -35,10 +35,8 @@ The following code shows the `BasicForm` object that defines the form. The `publ
 [!code-csharp[Ask form questions](../includes/code/azure-form-bot.cs#askQuestions)]
 
 
-##Resources
+##Additional Resources
 
-<a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub Repo </a>
-
-<a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/" target="_blank">Bot Builder SDK C# Reference</a>
-
-<a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder SDK</a>
+- <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub Repo </a>
+- <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/" target="_blank">Bot Builder SDK C# Reference</a>- 
+- <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder SDK</a>
