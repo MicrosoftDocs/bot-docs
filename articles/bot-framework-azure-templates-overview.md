@@ -49,5 +49,5 @@ Use the [Question and Answer bot template](bot-framework-azure-question-and-answ
 Follow a [step-by-step tutorial](bot-framework-azure-getstarted.md) so that you can quickly build and test a simple bot.
 
 If you encounter problems or have suggestions regarding Azure Bot Service, 
-see [Support](bot-framework-resources-support.md) for a list of available resources. 
+see [Support](resources-support.md) for a list of available resources. 
 

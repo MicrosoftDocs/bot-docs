@@ -12,7 +12,7 @@
 ## [How Bot Framework works](bot-framework-overview-how-it-works.md)
 ## [Bot capabilities](bot-framework-design-capabilities.md)
 ## [Principles of bot design](bot-framework-design-overview.md)
-## [Bot Framework Emulator](bot-framework-resources-emulator.md)
+## [Bot Framework Emulator](resources-emulator.md)
 ## Making bots smart
 ### [Overview](bot-framework-intelligence-getstarted.md)
 ### [Language](bot-framework-intelligence-language.md)
@@ -67,7 +67,7 @@
 # Troubleshooting
 ## [Troubleshoot general problems](bot-framework-troubleshooting-guide.md)
 ## [Troubleshoot authentication](bot-framework-troubleshooting-auth.md)
-## [Characteristics of IDs](bot-framework-resources-id-guide.md)
+## [Characteristics of IDs](resources-id-guide.md)
 ## [Manage your MSA App ID and password](bot-framework-azure-manage-msa-app-ID.md)
 # How-To Guides
 ## Design your bot
@@ -89,9 +89,9 @@
 ### [Set up continuous integration](bot-framework-azure-continuous-integration.md)
 ### [Publish a bot to the directory](bot-framework-publish-add-to-directory.md)
 # Resources
-## [Downloads](bot-framework-resources-downloads.md)
-## [Support](bot-framework-resources-support.md)
-<!--## [Tools](bot-framework-resources-tools.md)-->
+## [Downloads](resources-downloads.md)
+## [Support](resources-support.md)
+<!--## [Tools](resources-tools.md)-->
 ## [FAQ](bot-framework-faq.md)
 ## [StackOverflow](http://stackoverflow.com/questions/tagged/botframework)
 ## [What's new](whats-new.md)
