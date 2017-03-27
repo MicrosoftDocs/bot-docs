@@ -12,7 +12,7 @@ ms.reviewer:
 #ROBOTS: Index
 ---
 
-#The question and answer bot
+# The question and answer bot
 
 The question and answer bot template demonstrates how to use the <a href="https://qnamaker.ai" target="_blank">QnA Maker</a> tool to quickly create an FAQ Bot. One of the basic requirements in writing your own bot service is to seed it with questions and answers. In many cases, the questions and answers already exist in content like FAQ URLs. QnA Maker lets you ingest your existing FAQ content and expose it as an HTTP endpoint.
 
@@ -46,7 +46,8 @@ The following parameters are passed when invoking the QnA Maker service.
 
 [!code-JavaScript[Set message received](../includes/code/azure-question-and-answer.js#setMessageReceived)]
 
-    ##Additional resources
+
+## Additional resources
 
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub Repo </a>
 - <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/" target="_blank">Bot Builder SDK C# Reference</a>

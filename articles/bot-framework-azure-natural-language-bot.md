@@ -47,7 +47,7 @@ The `MessageReceived` method calls your LUIS application model to determine inte
 
 [!code-csharp[Receive Message](../includes/code/azure-understanding-language.cs#receiveMessage)]
 
-##Additional resources
+## Additional resources
 
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub Repo</a>
 - <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/" target="_blank">Bot Builder SDK C# Reference</a>
