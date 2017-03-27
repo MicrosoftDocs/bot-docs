@@ -72,5 +72,5 @@ Review the following articles in this section to learn more about building bots 
 
 
 If you encounter problems or have suggestions regarding the Bot Builder SDK for Node.js, 
-see [Support](bot-framework-resources-support.md) for a list of resources that provide opportunities 
+see [Support](resources-support.md) for a list of resources that provide opportunities 
 for support and feedback. 

@@ -22,13 +22,13 @@ The Bot Framework Connector is a service that connects your bot to multiple chan
 , Slack, and more. 
 It facilitates communication between bot and user, by relaying messages from bot to channel and from channel to bot. 
 
-The Bot Builder SDK for Node.js provides the **UniversalBot** and **ChatConnector** classes for configuring the bot to send and receive messages through the Bot Framework Connector.
+The Bot Builder SDK for Node.js provides the [UniversalBot][UniversalBot] and [ChatConnector][ChatConnector] classes for configuring the bot to send and receive messages through the Bot Framework Connector. The **UniversalBot** class forms the brains of your bot. It's responsible for managing all the conversations your bot has with a user. The **ChatConnector** connects your bot to the Bot Framework Connector Service.
 For an example that demonstrates using these classes, see [Create a bot with the Bot Builder SDK for Node.js](bot-framework-nodejs-getstarted.md).
 
 
 ## Messages and Dialogs
 
-Messages can consist of text strings, attachments, and rich cards. You use the [session.send][SessionSend] method to send messages in response to a message from the user. Your bot may call **send()** as many times as it likes in response to a message from the user. For a guide to how to use dialogs and message handlers to manage conversation flow, see [Manage conversation flow](bot-framework-nodejs-howto-manage-conversation-flow.md).
+Messages can consist of text strings, attachments, and rich cards. You use the [session.send][SessionSend] method to send messages in response to a message from the user. Your bot may call **send** as many times as it likes in response to a message from the user. Dialogs help you organize the conversational logic in your bot. For a guide to how to use dialogs and message handlers to manage conversation flow, see [Manage conversation flow](bot-framework-nodejs-howto-manage-conversation-flow.md).
 
 For an example that demonstrates how to send a rich graphical card containing interactive buttons that the user clicks to initiate an action, see [Send a rich card](bot-framework-nodejs-howto-send-card-buttons.md). For an example that demonstrates how to send and receive attachments, see [Send attachments](bot-framework-nodejs-howto-send-receive-attachments.md).
 
