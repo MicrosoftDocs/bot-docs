@@ -11,8 +11,20 @@
 # Concepts
 ## [How Bot Framework works](bot-framework-overview-how-it-works.md)
 ## [Bot capabilities](bot-framework-design-capabilities.md)
-## [Principles of bot design](bot-framework-design-overview.md)
-## [Bot Framework Emulator](resources-emulator.md)
+## Designing bots
+### [Principles of bot design](bot-framework-design-overview.md)
+### [First interaction](bot-framework-design-core-greeting.md)
+### [Conversation flow](bot-framework-design-core-dialogs.md)
+### [Navigation](bot-framework-design-core-navigation.md)
+### [UX elements](bot-framework-design-core-ux-elements.md)
+### Patterns
+#### [Task automation](bot-framework-design-patterns-task.md)
+#### [Knowledge base](bot-framework-design-patterns-knowledge-base.md)
+#### [Bot to web](bot-framework-design-patterns-bot-to-web.md)
+#### [Handoff to human](bot-framework-design-patterns-human-handoff.md)
+#### [Bots in apps](bot-framework-design-patterns-bot-in-app.md)
+#### [Bots in websites](bot-framework-design-patterns-bot-in-website.md) 
+## [Using the emulator](resources-emulator.md)
 ## Making bots smart
 ### [Overview](bot-framework-intelligence-getstarted.md)
 ### [Language](bot-framework-intelligence-language.md)
@@ -70,17 +82,6 @@
 ## [Characteristics of IDs](resources-id-guide.md)
 ## [Manage your MSA App ID and password](bot-framework-azure-manage-msa-app-ID.md)
 # How-To Guides
-## Design your bot
-### [First interaction](bot-framework-design-core-greeting.md)
-### [Conversation flow](bot-framework-design-core-dialogs.md)
-### [Navigation](bot-framework-design-core-navigation.md)
-### [UX elements](bot-framework-design-core-ux-elements.md) 
-### [Task automation](bot-framework-design-patterns-task.md)
-### [Knowledge base](bot-framework-design-patterns-knowledge-base.md)
-### [Bot to web](bot-framework-design-patterns-bot-to-web.md)
-### [Handoff to human](bot-framework-design-patterns-human-handoff.md)
-### [Bots in apps](bot-framework-design-patterns-bot-in-app.md)
-### [Bots in websites](bot-framework-design-patterns-bot-in-website.md)
 ## Deploy your bot
 ### [Overview](bot-framework-publish-overview.md)
 ### [Register a bot](bot-framework-publish-register.md)
