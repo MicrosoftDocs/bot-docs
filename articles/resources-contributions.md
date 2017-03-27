@@ -1,6 +1,6 @@
 ---
 title: Resources for designing and developing bots with the Bot Framework | Microsoft Docs
-description: Identify resources related to designing and developing conversational applications (bots) using the Bot Framework.
+description: Identify resources related to designing and developing conversational applications using the Bot Framework.
 keywords: bot framework, bot, design, develop, resources
 author: matvelloso
 manager: rstand
@@ -13,33 +13,7 @@ ms.reviewer:
 ---
 
 # Resources for designing and developing bots with the Bot Framework 
-
-##First party sources
-
-[Microsoft BotBuilder Samples](https://github.com/Microsoft/BotBuilder-Samples)
-Microsoft bot framework engineering team samples  – both C# and Node
-
-
-[Microsoft Bot Builder SDKs](https://github.com/Microsoft/BotBuilder/)
-Microsoft Bot Builder official SDK and additional samples in both C# and Node
-
-[Microsoft Bot Framework Team Blog](https://blog.botframework.com/)
-Blog from the bot framework team with  news on latest feature updates
-
-[Bot Framework Technical FAQ](https://docs.botframework.com/en-us/technical-faq/)
-A very useful  technical FAQ maintained by the bot team.
-
-[Bot Framework Direct Line API](https://github.com/Microsoft/BotFramework-DirectLineJS)
-The Direct Line API enables developers to build custom clients for bots
-
-[Bot Framework Open Source Web Chat control](https://github.com/Microsoft/BotFramework-WebChat)
-The open source web chat control can be embedded in websites and apps 
-
-[Getting Started with Bots’  Microsoft Virtual Academy Course](https://mva.microsoft.com/en-US/training-courses/getting-started-with-bots-16759)
-Join experts Ryan Volum and Christopher Harrison as they help you get started creating your first bot. Learn about the many ways of communicating with the user, beyond just text, that Microsoft Bot Framework includes. And get the details on using LUIS to handle natural language processing. Plus, find out how to publish your bot to the world, allowing people to interact with it. See how to deploy the logic, how to register your bot, and how to add it to Skype. Get started now!
-
-[BikeSharing360 sample app](https://blogs.msdn.microsoft.com/visualstudio/2016/12/14/connectdemos-2016-bikesharing360-on-github/)
-And end to end demo of an application using bots.
+These additional resources were contributed by the Bot Framework community.
 
 ##Contributions from bloggers and third party sources
 
