@@ -1,11 +1,15 @@
-# [Understand and Explore](index.md)
+# [Overview](index.md)
 ## [What is the Bot Framework?](bot-framework-overview.md)
-## [How it works](bot-framework-overview-how-it-works.md)
+## 
 <!-- ## [Bot scenarios](bot-framework-overview-scenarios.md)-->
 <!-- ## [Core concepts](bot-framework-concepts-overview.md)-->
 ## [Get started](bot-framework-botbuilder-overview.md)
 ## [Try it out](bot-framework-sample-bot.md)
 ## [Frequently Asked Questions](bot-framework-faq.md)
+# Concepts
+## [How Bot Framework works](bot-framework-overview-how-it-works.md)
+## [Bot capabilities](bot-framework-design-capabilities.md)
+## [Principles of bot design](bot-framework-design-overview.md)
 ## Making bots smart
 ### [Overview](bot-framework-intelligence-getstarted.md)
 ### [Language](bot-framework-intelligence-language.md)
@@ -14,22 +18,6 @@
 ### [Knowledge](bot-framework-intelligence-knowledge.md)
 ### [Search](bot-framework-intelligence-search.md)
 ### [Location Control](bot-framework-intelligence-location-control.md)
-# Plan and Design
-## [Overview](bot-framework-design-overview.md)
-## [Principles and practices](bot-framework-design-best-practices.md)
-## User experience
-### [First interaction](bot-framework-design-core-greeting.md)
-### [Conversation flow](bot-framework-design-core-dialogs.md)
-### [Navigation](bot-framework-design-core-navigation.md)
-### [UX elements](bot-framework-design-core-ux-elements.md)
-## [Bot capabilities](bot-framework-design-capabilities.md)
-## Common patterns
-### [Task automation](bot-framework-design-patterns-task.md)
-### [Knowledge base](bot-framework-design-patterns-knowledge-base.md)
-### [Bot to web](bot-framework-design-patterns-bot-to-web.md)
-### [Handoff to human](bot-framework-design-patterns-human-handoff.md)
-### [Bots in apps](bot-framework-design-patterns-bot-in-app.md)
-### [Bots in websites](bot-framework-design-patterns-bot-in-website.md)
 # Build with .NET
 ## [Overview](bot-framework-dotnet-overview.md)
 ## [Get started](bot-framework-dotnet-getstarted.md)
@@ -76,18 +64,30 @@
 ### [Language understanding bot](bot-framework-azure-natural-language-bot.md)
 ### [Proactive bot](bot-framework-azure-proactive-bot.md)
 ### [Question and answer bot](bot-framework-azure-question-and-answer-bot.md)
-# Deploy and Publish
-##[Overview](bot-framework-publish-overview.md)
-##[Register a bot](bot-framework-publish-register.md)
-##[Deploy a bot](bot-framework-publish-deploy.md)
-##[Configure a bot](bot-framework-publish-configure.md)
-##[Set up continuous integration](bot-framework-azure-continuous-integration.md)
-##[Publish a bot to the directory](bot-framework-publish-add-to-directory.md)
 # Troubleshooting
 ## [Troubleshoot general problems](bot-framework-troubleshooting-guide.md)
 ## [Troubleshoot authentication](bot-framework-troubleshooting-auth.md)
 ## [Characteristics of IDs](bot-framework-resources-id-guide.md)
 ## [Manage your MSA App ID and password](bot-framework-azure-manage-msa-app-ID.md)
+# How-To Guides
+## Design your bot
+### [First interaction](bot-framework-design-core-greeting.md)
+### [Conversation flow](bot-framework-design-core-dialogs.md)
+### [Navigation](bot-framework-design-core-navigation.md)
+### [UX elements](bot-framework-design-core-ux-elements.md) 
+### [Task automation](bot-framework-design-patterns-task.md)
+### [Knowledge base](bot-framework-design-patterns-knowledge-base.md)
+### [Bot to web](bot-framework-design-patterns-bot-to-web.md)
+### [Handoff to human](bot-framework-design-patterns-human-handoff.md)
+### [Bots in apps](bot-framework-design-patterns-bot-in-app.md)
+### [Bots in websites](bot-framework-design-patterns-bot-in-website.md)
+## Deploy your bot
+### [Overview](bot-framework-publish-overview.md)
+### [Register a bot](bot-framework-publish-register.md)
+### [Deploy a bot](bot-framework-publish-deploy.md)
+### [Configure a bot](bot-framework-publish-configure.md)
+### [Set up continuous integration](bot-framework-azure-continuous-integration.md)
+### [Publish a bot to the directory](bot-framework-publish-add-to-directory.md)
 # Resources
 ## [Downloads](bot-framework-resources-downloads.md)
 ## [Support](bot-framework-resources-support.md)
