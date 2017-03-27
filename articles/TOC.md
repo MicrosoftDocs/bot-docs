@@ -1,11 +1,14 @@
-# [Overview](index.md)
+# Overview
 ## [What is the Bot Framework?](bot-framework-overview.md)
-## 
 <!-- ## [Bot scenarios](bot-framework-overview-scenarios.md)-->
 <!-- ## [Core concepts](bot-framework-concepts-overview.md)-->
 ## [Get started](bot-framework-botbuilder-overview.md)
 ## [Try it out](bot-framework-sample-bot.md)
 ## [Frequently Asked Questions](bot-framework-faq.md)
+# Quickstart
+## [Create a bot with .NET](bot-framework-dotnet-getstarted.md)
+## [Create a bot with Node.js](bot-framework-nodejs-getstarted.md)
+## [Create a bot with Azure Bot Service](bot-framework-azure-getstarted.md)
 # Concepts
 ## [How Bot Framework works](bot-framework-overview-how-it-works.md)
 ## [Bot capabilities](bot-framework-design-capabilities.md)
@@ -20,7 +23,6 @@
 ### [Location Control](bot-framework-intelligence-location-control.md)
 # Build with .NET
 ## [Overview](bot-framework-dotnet-overview.md)
-## [Get started](bot-framework-dotnet-getstarted.md)
 ## Key concepts
 ### [Overview](bot-framework-dotnet-concepts.md)
 ### [Activity types](bot-framework-dotnet-activities.md)
@@ -39,7 +41,6 @@
 ### [Conduct audio calls](bot-framework-dotnet-howto-audio-calls.md)
 # Build with Node.js
 ## [Overview](bot-framework-nodejs-overview.md)
-## [Get started](bot-framework-nodejs-getstarted.md)
 ## [Key concepts](bot-framework-nodejs-concepts.md)
 ## Tutorials
 ### [Manage conversation flow](bot-framework-nodejs-howto-manage-conversation-flow.md)
@@ -55,7 +56,6 @@
 ### [Use backchannel mechanism](bot-framework-nodejs-howto-backchannel.md)
 # Build with Azure Bot Service
 ## [Overview](bot-framework-azure-overview.md)
-## [Get started](bot-framework-azure-getstarted.md)
 ## [Debug your bot](bot-framework-azure-debug.md)
 ## Templates
 ### [Overview](bot-framework-azure-templates-overview.md)
