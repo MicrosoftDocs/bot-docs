@@ -20,8 +20,16 @@ You can design your bot to recognize a set of intents that interpret the user’
 This article demonstrates how to register a custom intent recognizer that will be run for every message received from the user. 
 Custom recognizers can return a named intent that can be used to trigger actions and dialogs within the bot.
 
+## Example: Use the built-in regular expression recognizer
+Use [RegExpRecognizer](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.regexprecognizer.html) to detect the user's intent using a regular expression. You can pass multiple expressions to the recognizer to support multiple languages. 
+
+``` javascript
+// Add regular expression recognizer to bot
+bot.recognizer(new builder.RegExpRecognizer( "CancelIntent", { en-us: /^(cancel|nevermind)/i, ja-jp: /^(キャンセル)/ }));
+```
+
 ## Example: Use an external web service
- A bot can be configured to use cloud-based intent recognition services like [Language Understanding Intelligent Service (LUIS)][LUIS] through an extensible set of recognizer plugins. Out of the box, Bot Builder comes with a [LuisRecognizer][LuisRecognizer] class that can be used to call a machine learning model you’ve trained via their web site. You can create a **LuisRecognizer** that’s pointed at your model and then pass that recognizer into your dialog.
+You can configure your bot to use cloud-based intent recognition services like [Language Understanding Intelligent Service (LUIS)][LUIS] through an extensible set of recognizer plugins. Out of the box, Bot Builder comes with a [LuisRecognizer][LuisRecognizer] class that can be used to call a machine learning model you’ve trained via their web site. You can create a **LuisRecognizer** that’s pointed at your model and then pass that recognizer into your dialog.
 
 ``` javascript
 // Add global LUIS recognizer to bot
@@ -31,13 +39,6 @@ bot.recognizer(new builder.LuisRecognizer(model));
 
 The Bot Builder SDK includes a [sample][LUISSample] that demonstrates how to add a cloud-based LUIS recognizer to a bot.
 
-## Example: Use the built-in regular expression recognizer
-Use [RegExpRecognizer](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.regexprecognizer.html) to detect the user's intent using a regular expression. Multiple expressions can be passed in to support recognizing across multiple languages. 
-
-``` javascript
-// Add regular expression recognizer to bot
-bot.recognizer(new builder.RegExpRecognizer( "CancelIntent", { en-us: /^(cancel|nevermind)/i, ja-jp: /^(キャンセル)/ }));
-```
 
 
 ## Example: Register a custom intent recognizer
