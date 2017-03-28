@@ -33,14 +33,15 @@ Messages can consist of text strings, attachments, and rich cards. You use the [
 For an example that demonstrates how to send a rich graphical card containing interactive buttons that the user clicks to initiate an action, see [Send a rich card](bot-framework-nodejs-howto-send-card-buttons.md). For an example that demonstrates how to send and receive attachments, see [Send attachments](bot-framework-nodejs-howto-send-receive-attachments.md).
 
 
-## Trigger actions
+## Actions
 You'll want to design your bot to be able to handle interruptions like requests for cancellation or help at any time during the conversation flow. The Bot Builder SDK for Node.js provides global message handlers that trigger actions like cancellation or the invokation of other dialogs. 
  See [Handling cancel](bot-framework-nodejs-howto-manage-conversation-flow.md#handling-cancel), [Confirming interruptions](bot-framework-nodejs-howto-manage-conversation-flow.md#confirming-interruptions) and [Trigger actions using global handlers](bot-framework-nodejs-howto-global-handlers.md) for examples of how to use [triggerAction][triggerAction] handlers.
 
 
 ## Recognizers
-When the users ask your bot for something, like "help" or "find news", your bot needs to understand what the user is asking for. You can design your bot to recognize a set of intents that interpret the user’s input in terms of the intention it conveys. You can use implement a custom recognizer, use the built-in regular expression recognizer that the Bot Builder SDK provides, or call an external service such as the LUIS API to determine the user's intent.
-See [Recognize user intent](bot-framework-nodejs-howto-recognize-intent.md) for examples that demonstrate how to add recognizers to your bot.
+When the users ask your bot for something, like "help" or "find news", your bot needs to understand what the user is asking for. You can design your bot to recognize a set of intents that interpret the user’s input in terms of the intention it conveys, and associate that intent with actions. You can use implement a custom recognizer, use the built-in regular expression recognizer that the Bot Builder SDK provides, or call an external service such as the LUIS API to determine the user's intent. 
+
+See [Recognize user intent](bot-framework-nodejs-howto-recognize-intent.md) for examples that demonstrate how to add recognizers to your bot and use them to trigger actions.
 
 
 ## Saving State
