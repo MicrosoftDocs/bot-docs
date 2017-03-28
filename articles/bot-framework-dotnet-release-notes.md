@@ -23,6 +23,14 @@ This article describes the changes that have been introduced by each version of 
 > <a href="https://github.com/Microsoft/BotBuilder/issues" target="_blank">Bot Builder SDK GitHub repository</a> 
 > for a list of known issues.
 
+## <a href="https://www.nuget.org/packages/Microsoft.Bot.Builder/3.5.5" target="_blank">v3.5.5</a>
+
+### Changes
+
+- Added `ConversationReference` (as a replacement to deprecated `ResumptionCookie`).
+- Changed default LUIS host in LUIS service and deprecated LUIS v1 endpoint.
+- Implemented general bug fixes.
+
 ## <a href="https://www.nuget.org/packages/Microsoft.Bot.Builder/3.5.3" target="_blank">v3.5.3</a>
 
 ### Breaking changes
