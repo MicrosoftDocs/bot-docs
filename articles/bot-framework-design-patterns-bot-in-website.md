@@ -60,7 +60,7 @@ This capability enables a number of useful scenarios:
 ## Additional resources
 
 - <a href="https://docs.botframework.com/en-us/restapi/DirectLine3/#navtitle" target="_blank">Direct Line API</a>
-- [Activities](bot-framework-dotnet-activities.md)
+- [Activity types](bot-framework-dotnet-activities.md)
 - [Use the backchannel mechanism](bot-framework-nodejs-howto-backchannel.md)
 
 <!--
