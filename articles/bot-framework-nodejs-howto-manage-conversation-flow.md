@@ -52,7 +52,7 @@ var bot = new builder.UniversalBot(connector, function (session) {
 
 Your message handler takes a session object which can be used to read the user's message and compose replies. 
 The session.send() method, which sends a reply to the user who sent the message, supports a flexible template syntax for formatting strings.
-For details about the template syntax, refer to the documentation for the sprintf library.
+For details about the template syntax, refer to the documentation for the [sprintf][sprintf] library.
 
 The contents of messages aren't limited to text strings. 
 Your bot can [send and receive attachments][SendAttachments], as well as present the user with [cards containing images and buttons][SendCardWithButtons].

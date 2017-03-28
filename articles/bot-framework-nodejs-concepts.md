@@ -39,8 +39,9 @@ You'll want to design your bot to be able to handle interruptions like requests 
 
 
 ## Recognizers
-When the users ask your bot for something, like "help" or "find news", your bot needs to understand what the user is asking for. You can design your bot to recognize a set of intents that interpret the user’s input in terms of the intention it conveys, and associate that intent with actions. You can use implement a custom recognizer, use the built-in regular expression recognizer that the Bot Builder SDK provides, or call an external service such as the LUIS API to determine the user's intent. 
+When the users ask your bot for something, like "help" or "find news", your bot needs to understand what the user is asking for, and then take the appropriate action. You can design your bot to recognize a set of intents that interpret the user’s input in terms of the intention it conveys, and associate that intent with actions. 
 
+You can use use the built-in regular expression recognizer that the Bot Builder SDK provides, call an external service such as the LUIS API, or implement a custom recognizer, to determine the user's intent. 
 See [Recognize user intent](bot-framework-nodejs-howto-recognize-intent.md) for examples that demonstrate how to add recognizers to your bot and use them to trigger actions.
 
 
@@ -57,13 +58,10 @@ Bots built using Bot Builder SDK are designed to be be stateless so that they ca
 See [Saving user data](bot-framework-nodejs-howto-save-user-data.md) for an example that demonstrates how to save user data.
 
 
-## Next steps
-
-Build your first bot by following the steps at [Get started](bot-framework-nodejs-getstarted.md).
-
 
 ## Additional Resources
 
+* [Get started](bot-framework-nodejs-getstarted.md)
 * [Manage conversation flow](bot-framework-nodejs-howto-manage-conversation-flow.md)
 * [Triggering actions](bot-framework-nodejs-howto-global-handlers.md)
 * [Recognize user intent](bot-framework-nodejs-howto-recognize-intent.md)
