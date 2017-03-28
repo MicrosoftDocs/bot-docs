@@ -28,22 +28,9 @@ In this tutorial, we'll walk through the process of building a bot by using the 
 and testing it with the Bot Framework Emulator.
 
 ## Install the SDK
-We'll start by installing the SDK and the necessary dependencies.
-First, create a folder for your bot, navigate to it, and run the following **npm** command:
-
-```
-npm init
-```
-
-Next, install the Bot Builder SDK and <a href="http://restify.com/" target="_blank">Restify</a> modules by running the following **npm** commands:
-
-```
-npm install --save botbuilder
-npm install --save restify
-```
+To start, [install the SDK][Install] and the necessary dependencies. Once you have the SDK and prequisites in place, you're ready to write a bot.
 
 ## Create your bot
-Now that you've got the SDK and prequisites in place, you're ready to write a bot.
 For this walkthrough, you'll create a bot that simply echos back any user input.
 In the folder that you created earlier for your bot, create a new file named **app.js**.
 Then, add the following code to the file: 
@@ -90,3 +77,6 @@ To learn more about building great bots with the Bot Framework, see the followin
 - [Bot Builder SDK for Node.js](bot-framework-nodejs-overview.md)
 - [Publish a bot to the Bot Framework](bot-framework-publish-overview.md)
 - [Bot Framework FAQ](bot-framework-faq.md)
+
+
+[Install]: bot-framework-nodejs-overview.md#install-the-sdk

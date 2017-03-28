@@ -59,12 +59,12 @@
 ### [Manage conversation flow](bot-framework-nodejs-howto-manage-conversation-flow.md)
 ### [Trigger actions using global handlers](bot-framework-nodejs-howto-global-handlers.md)
 ### [Recognize user intent](bot-framework-nodejs-howto-recognize-intent.md)
-### [Send proactive messages](bot-framework-nodejs-howto-proactive-messages.md)
 ### [Send and receive attachments](bot-framework-nodejs-howto-send-receive-attachments.md)
 ### [Send a card with buttons](bot-framework-nodejs-howto-send-card-buttons.md)
 ### [Indicate typing](bot-framework-nodejs-howto-send-typing-indicator.md)
 ### [Save user data](bot-framework-nodejs-howto-save-user-data.md)
 ### [Handle user and conversation events](bot-framework-nodejs-howto-handle-conversation-events.md)
+### [Send proactive messages](bot-framework-nodejs-howto-proactive-messages.md)
 ### [Intercept messages](bot-framework-nodejs-howto-middleware.md)
 ### [Use backchannel mechanism](bot-framework-nodejs-howto-backchannel.md)
 # Build with Azure Bot Service

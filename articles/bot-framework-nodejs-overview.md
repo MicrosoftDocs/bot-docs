@@ -33,12 +33,6 @@ conversation, providing help, navigation, clarification, and confirmation as nee
 
 ## Install the SDK
 
-Clone the <a href="https://github.com/Microsoft/BotBuilder" target="_blank">BotBuilder</a> GitHub repository. 
-
-```
-git clone https://github.com/Microsoft/BotBuilder.git
-cd BotBuilder/Node
-```
 
 To install the SDK and its dependencies, first create a folder for your bot, navigate to it, and run the following **npm** command:
 
@@ -53,7 +47,7 @@ npm install --save botbuilder
 npm install --save restify
 ```
 
-See [Get Started](bot-framework-nodejs-getstarted.md) for instructions on how to install the SDK and the necessary dependencies.
+See [Get Started](bot-framework-nodejs-getstarted.md) for instructions on how to build your first bot, once you've installed the SDK.
 
 ## Get code samples
 
