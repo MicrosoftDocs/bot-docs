@@ -51,6 +51,7 @@
 ### [Send proactive messages](bot-framework-dotnet-howto-proactive-messages.md)
 ### [Manage state](bot-framework-dotnet-state.md)
 ### [Conduct audio calls](bot-framework-dotnet-howto-audio-calls.md)
+## [Release notes](bot-framework-dotnet-release-notes.md)
 # Build with Node.js
 ## [Overview](bot-framework-nodejs-overview.md)
 ## [Key concepts](bot-framework-nodejs-concepts.md)
