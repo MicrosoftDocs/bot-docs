@@ -25,7 +25,7 @@ or conduct a voice call via Skype.
 [!include[Introduction to message logging](../includes/snippet-message-logging-intro.md)]
 
 For a detailed walkthrough of how to intercept messages, see:
-- [Intercept messages using the Bot Builder SDK for .NET](bot-framework-dotnet-howto-middleware.md)
+- [Intercept messages using the Bot Builder SDK for .NET](bot-framework-dotnet-middleware.md)
 - [Intercept messages using the Bot Builder SDK for Node.js](bot-framework-nodejs-howto-middleware.md)
 
 ##<a id="proactiveMsg"></a> Send proactive messages
@@ -64,7 +64,7 @@ In sending the notification, the bot changes the topic of the existing conversat
 It then must decide whether to resume that conversation later, or to abandon that conversation altogether by resetting the dialog stack. 
 
 For a detailed walkthrough of how to send proactive messages, see:
-- [Send proactive messages using the Bot Builder SDK for .NET](~/bot-framework-dotnet-howto-proactive-messages.md)
+- [Send proactive messages using the Bot Builder SDK for .NET](~/bot-framework-dotnet-proactive-messages.md)
 - [Send proactive messages using the Bot Builder SDK for Node.js](~/bot-framework-nodejs-howto-proactive-messages.md)
 
 ##<a id="global-message-handlers"></a> Implement global message handlers
@@ -72,11 +72,11 @@ For a detailed walkthrough of how to send proactive messages, see:
 [!include[Introduction to global message handlers](../includes/snippet-global-handlers-intro.md)]
 
 For a detailed walkthrough of how to implement global message handlers, see:
-- [Implement global message handlers using the Bot Builder SDK for .NET](bot-framework-dotnet-howto-global-handlers.md)
+- [Implement global message handlers using the Bot Builder SDK for .NET](bot-framework-dotnet-global-handlers.md)
 - [Implement global message handlers using the Bot Builder SDK for Node.js](bot-framework-nodejs-howto-global-handlers.md)
 
 ## Conduct audio calls
 
 [!include[Introduction to conducting audio calls](../includes/snippet-audio-call-intro.md)]
 
-For a detailed walk through of how to enable support for audio calls, see [Conduct audio calls with Skype by using the Bot Builder SDK for .NET](bot-framework-dotnet-howto-audio-calls.md).
+For a detailed walk through of how to enable support for audio calls, see [Conduct audio calls with Skype by using the Bot Builder SDK for .NET](bot-framework-dotnet-audio-calls.md).

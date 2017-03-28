@@ -97,6 +97,7 @@ A dialog method that does not end with one of these will result in an error
 
 ## Additional resources
 
+- [Dialogs](bot-framework-dotnet-dialogs.md)
 - [Designing conversation flow](bot-framework-design-core-dialogs.md)
 - [Bot capabilities](bot-framework-design-capabilities.md)
 - <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_blank">Builder library</a>
