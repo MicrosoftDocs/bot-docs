@@ -62,6 +62,39 @@ git clone https://github.com/Microsoft/BotBuilder-Samples.git
 cd BotBuilder-Samples/Node
 ```
 
+### Basic samples
+
+The following [examples](https://github.com/Microsoft/BotBuilder/tree/master/Node/examples) demonstrate basic techniques for building a great bot.
+
+| Sample | Description |
+|------|------|
+| hello-ChatConnector | Shows how to get started with the **ChatConnector** class. |
+| basics-waterfall | Shows how to use a *waterfall*, which is a sequential series of message handlers associated with a dialog, to prompt the user with a series of questions. |
+| basics-loops | Shows how to use **session.replaceDialog** to create loops. |
+| basics-menus | Shows how to create a simple menu system for a bot. |
+| basics-naturalLanguage | Shows how to use a **LuisDialog** to add natural language support to a bot. | 
+| basics-multiTurn | Shows how to implement a multi-turn conversation, in which the user asks a question that is followed by a series of follow-up questions, using waterfalls. | 
+| basics-firstRun | Shows how to create a first-run experience using a piece of middleware. |
+| basics-logging| Shows how to add logging/filtering of incoming messages using middleware. |
+| basics-localization | Shows how to implement support for multiple languages. | 
+| basics-customPrompt | Shows how to create a custom prompt. |
+| basics-libraries | Shows how to package a set of dialogs as a library that can be shared across multiple bots. |
+
+### Demo bots
+
+The demo bots are samples designed to showcase what's possible on specific channels. They’re good sources of example code for highlighting features of a channel.
+
+| Sample | Description |
+|------|------|
+| demo-skype | A bot designed to showcase what’s possible on Skype. | 
+| demo-skype-calling | A bot designed to show how to build a calling bot for Skype. |
+| demo-slack | A bot designed to showcase what’s possible on Skype. | 
+| demo-facebook | A bot designed to showcase what’s possible on Facebook. |
+
+### Other samples
+
+You can find other samples in the [Bot Builder SDK Samples repository](https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node). 
+
 ## Next steps
 
 Review the following articles in this section to learn more about building bots using the Bot Builder SDK for Node.js.
