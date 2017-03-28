@@ -59,7 +59,13 @@ This capability enables a number of useful scenarios:
 
 ## Additional resources
 
+- <a href="https://docs.botframework.com/en-us/restapi/DirectLine3/#navtitle" target="_blank">Direct Line API</a>
+- [Activities](bot-framework-dotnet-activities.md)
+- [Use the backchannel mechanism](bot-framework-nodejs-howto-backchannel.md)
+
+<!--
 This article covered ways to integrate bots with websites and 
 explored the process of using the `backchannel` mechanism to facilitate private communication between web page and bot. 
 For a detailed walk through of how to use the backchannel mechanism with the 
 open source web chat control with Node.js, see [Use the backchannel mechanism](bot-framework-nodejs-howto-backchannel.md). 
+-->

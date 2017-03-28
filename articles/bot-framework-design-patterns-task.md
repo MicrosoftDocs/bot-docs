@@ -111,11 +111,13 @@ The company may setup kiosks throughout the building and embed the password-rese
 
 ## Additional resources
 
-This article explored how a task automation bot can be designed to enable users
-to complete a specific task or set of tasks. 
+- [Dialogs](bot-framework-dotnet-dialogs.md)
+- [Manage conversation flow using .NET](bot-framework-dotnet-manage-conversation-flow.md)
+- [Manage conversation flow using Node.js](bot-framework-nodejs-howto-manage-conversation-flow.md)
 
-<!-- To access the sample code for the password-reset bot 
-described in this article, see: 
+<!-- 
+This article explored how a task automation bot can be designed to enable users to complete a specific task or set of tasks. 
+To access the sample code for the password-reset bot described in this article, see: 
 
 > [!NOTE]
 > To do: Add links to the C# and Node.js code samples that Mat refers to.-->

@@ -22,7 +22,7 @@ ms.reviewer:
 
 [!include[Dialog flow example](../includes/snippet-dotnet-manage-conversation-flow-intro.md)]
 
-This article describes how to model this conversation flow by using dialogs and the Bot Builder SDK for .NET. 
+This article describes how to model this conversation flow by using [dialogs](bot-framework-dotnet-dialogs.md) and the Bot Builder SDK for .NET. 
 
 ## Invoke the root dialog
 
