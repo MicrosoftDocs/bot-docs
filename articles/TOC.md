@@ -26,7 +26,7 @@
 #### [Bots in websites](bot-framework-design-patterns-bot-in-website.md) 
 ## [Emulator](resources-emulator.md)
 ## [Characteristics of IDs](resources-id-guide.md)
-## Making bots smart
+## [Making bots smart](make-bots-smarter.md)
 ### [Overview](bot-framework-intelligence-getstarted.md)
 ### [Language](bot-framework-intelligence-language.md)
 ### [Vision](bot-framework-intelligence-vision.md)
