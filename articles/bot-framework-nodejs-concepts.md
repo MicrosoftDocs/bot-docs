@@ -18,13 +18,15 @@ This article introduces key concepts in the Bot Builder SDK for Node.js.
 
 ## Connector
 
-The Bot Framework Connector is a service that connects your bot to multiple channels such as Skype, Facebook
-, Slack, and more. 
-It facilitates communication between bot and user, by relaying messages from bot to channel and from channel to bot. 
+The Bot Framework Connector is a service that connects your bot to multiple *channels*, which are clients like Skype, Facebook
+, Slack, and SMS. 
+The Connector facilitates communication between bot and user, by relaying messages from bot to channel and from channel to bot. 
+Your bot's logic is hosted as a web service that receives messages from users through the Connector service, and your bot's replies are sent to the Connector using HTTPS POST. 
 
 The Bot Builder SDK for Node.js provides the [UniversalBot][UniversalBot] and [ChatConnector][ChatConnector] classes for configuring the bot to send and receive messages through the Bot Framework Connector. The **UniversalBot** class forms the brains of your bot. It's responsible for managing all the conversations your bot has with a user. The **ChatConnector** connects your bot to the Bot Framework Connector Service.
 For an example that demonstrates using these classes, see [Create a bot with the Bot Builder SDK for Node.js](bot-framework-nodejs-getstarted.md).
 
+The Connector also normalizes the messages that the bot sends to channels, so that you can develop your bot in a platform-agnostic way. Normalizing a message involves converting it from the Bot Framework’s schema into the channel’s schema. In cases where the channel does not support all aspects of the framework’s schema, the Connector will try to convert the message to a format that the channel supports. For example, if the bot sends a message that contains a card with action buttons to the SMS channel, the Connector may render the card as an image and include the actions as links in the message’s text. The [Channel Inspector][ChannelInspector] is a web tool that shows you how the Connector renders messages on various channels.
 
 ## Messages and Dialogs
 
@@ -69,6 +71,8 @@ See [Saving user data](bot-framework-nodejs-howto-save-user-data.md) for an exam
 * [Send attachments](bot-framework-nodejs-howto-send-receive-attachments.md)
 * [Saving user data](bot-framework-nodejs-howto-save-user-data.md)
 * [How to send a typing indicator](bot-framework-nodejs-howto-send-typing-indicator.md)
+
+* [Channel inspector][ChannelInspector]
 * [UniversalBot][UniversalBot]
 * [ChatConnector][ChatConnector]
 * [session object][Session]
@@ -82,6 +86,8 @@ See [Saving user data](bot-framework-nodejs-howto-save-user-data.md) for an exam
 [PersistConversationData]:(https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iuniversalbotsettings.html#persistconversationdata)
 [UniversalBot]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.universalbot.html
 [ChatConnector]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.chatconnector.html
+
+[ChannelInspector]: https://docs.botframework.com/en-us/channel-inspector/channels/Skype
 
 [Session]: (https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html
 [SessionSend]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#send
