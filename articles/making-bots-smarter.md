@@ -1,13 +1,13 @@
 ---
-title: Page title that displays in the browser tab and search results | Microsoft Docs
-description: Article description that will be displayed on landing pages and in most search results
-keywords: keywords, separated, by, commas
-author: GitHub-alias-of-only-one-author
+title: Making bots smarter | Microsoft Docs
+description: Learn how to add smarts to your bots and make them more useful and engaging for your users.
+keywords: bot framework, Microsoft Cognitive Services, smart bots
+author: Toney001
 manager: rstand
 
 # the ms.topic should be the section of the IA that the article is in, with the suffix -article. Some examples:
 # get-started article, sdk-reference-article
-ms.topic: topic-of-article
+ms.topic: Making bots smarter
 
 ms.prod: botframework
 
@@ -15,7 +15,7 @@ ms.prod: botframework
 ms.service: service-name
 
 # Date the article was updated
-ms.date: mm/dd/yyyy
+ms.date: 3/29/2017
 
 # Alias of the document reviewer. Change to the appropriate person.
 ms.reviewer:
