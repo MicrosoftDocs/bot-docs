@@ -1,10 +1,10 @@
 // <postMessage>
 switch (activity.GetActivityType())
-    {
-        case ActivityTypes.Message:
-            await Conversation.SendAsync(activity, () => new BasicLuisDialog());
-            break;
-    }
+{
+    case ActivityTypes.Message:
+        await Conversation.SendAsync(activity, () => new BasicLuisDialog());
+        break;
+}
 // </postMessage>
 
 // <receiveMessage>

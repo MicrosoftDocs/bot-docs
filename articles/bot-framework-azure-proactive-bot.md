@@ -30,7 +30,7 @@ When you create a proactive bot with the Azure Bot Service, you will find these 
 
 ## Receiving a message from the user and adding it to an Azure Storage Queue
 
-The following sample code demonstrates how the proactive bot:
+This code sample demonstrates how the proactive bot:
 1. Receives the message from the user.
 2. Adds it to an Azure Storage Queue.
 3. Sends back an acknowledgment to the user. 
@@ -43,7 +43,7 @@ Notice that the message is wrapped in an object that contains all the informatio
 
 ## Receiving the message back from the Azure Function
 
-The following code sample demonstrates how to receive the message from the trigger function.
+This code sample demonstrates how to receive the message from the trigger function.
 
 [!code-csharp[Receive message from trigger](../includes/code/azure-proactive-bot.cs#receiveTrigger)] 
 

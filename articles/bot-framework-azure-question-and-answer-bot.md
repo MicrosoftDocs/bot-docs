@@ -14,11 +14,11 @@ ms.reviewer:
 
 # Build a bot that answers questions from an FAQ
 
-The question and answer bot template demonstrates how to use the <a href="https://qnamaker.ai" target="_blank">QnA Maker</a> tool to create a bot than answers questions like a company's FAQ URL. QnA Maker tool lets you ingest your existing FAQ content to create the source of the questions and answers.
+The question and answer bot template demonstrates how to use the <a href="https://qnamaker.ai" target="_blank">QnA Maker</a> tool to create a bot than answers questions like from a company's FAQ URL. QnA Maker tool lets you ingest your existing FAQ content to create the source of the questions and answers.
 
 When you create the template, Azure Bot Service lets you either select an existing FAQ as the knowledge base for the bot or create one manually from the <a href="https://qnamaker.ai" target="_blank">QnA Maker portal</a>. 
 
-The routing of the message is identical to the one presented in the [Basic bot template](bot-framework-azure-basic-bot.md). Most messages will have a `Message` activity type, and will contain the text and attachments the user sent. If the message’s activity type is `Message`, the template posts the message to `BasicQnAMakerDialog` in the context of the current message (see **BasicQnAMakerDialog.csx**).
+The routing of the message is identical to the one presented in the [basic bot template](bot-framework-azure-basic-bot.md). Most messages will have a `Message` activity type, and will contain the text and attachments the user sent. If the message’s activity type is `Message`, the template posts the message to `BasicQnAMakerDialog` in the context of the current message (see **BasicQnAMakerDialog.csx**).
 
 
 [!code-csharp[Route message](../includes/code/azure-question-and-answer.cs#routeMessage)] 

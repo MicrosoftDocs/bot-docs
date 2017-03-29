@@ -32,7 +32,7 @@ Use the [basic bot template](bot-framework-azure-basic-bot.md) to create a simpl
 
 ### Form bot
 
-Use the [Form bot template](bot-framework-azure-form-bot.md) to create a guided conversation to collect user input. A form bot for buying a bicycle, for example, might ask the user questions like "What terrain do you plan on riding over?" Or "What size tires?" After the user answers the questions, various models  of bicycles are displayed.
+Use the [form bot template](bot-framework-azure-form-bot.md) to create a guided conversation to collect user input. A form bot for buying a bicycle, for example, might ask the user questions like "What terrain do you plan on riding over?" Or "What size tires?" After the user answers the questions, various models  of bicycles are displayed.
 
 ### Language understanding bot
 

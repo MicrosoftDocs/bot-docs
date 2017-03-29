@@ -57,11 +57,11 @@ case ActivityTypes.ConversationUpdate:
 
 // <getActivityType>
  switch (activity.GetActivityType())
-    {
-        case ActivityTypes.Message:
-            await Conversation.SendAsync(activity, () => new EchoDialog());
-            break;
-    }
+{
+    case ActivityTypes.Message:
+        await Conversation.SendAsync(activity, () => new EchoDialog());
+        break;
+}
 // </getActivityType>
 
 // <showDialog>

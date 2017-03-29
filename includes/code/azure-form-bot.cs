@@ -1,10 +1,10 @@
 // <postMessage>
 switch (activity.GetActivityType())
-        {
-            case ActivityTypes.Message:
-                await Conversation.SendAsync(activity, () => new MainDialog());
-                break;
-        }
+{
+    case ActivityTypes.Message:
+        await Conversation.SendAsync(activity, () => new MainDialog());
+        break;
+}
 // </postMessage>
 
 

@@ -19,7 +19,7 @@ The Azure Bot Service bots are built on Azure. Even though your bot’s code sta
 ## Debug Node.js bots
 
 First, you need to set up your environment. You’ll need:
-- A local copy of your Azure Bot Service code for  [continuous integration](bot-framework-azure-continuous-integration.md))
+- A local copy of your Azure Bot Service code for  [continuous integration](bot-framework-azure-continuous-integration.md)
 - The <a href="https://docs.botframework.com/en-us/downloads/" target="_blank">Bot Framework Emulator</a> for Mac, Linux, or Windows</a>
 - Node or other code editor such as <a href="https://code.visualstudio.com/" target="_blank">Mac, Linux, Windows</a>Visual Studio Code for <a href="https://code.visualstudio.com/" target="_blank"></a> for Mac, Linux, or Windows
 
@@ -29,7 +29,7 @@ First, set the NODE_ENV environment variable. This Node terminal window example 
 
 ![mac azureservice debug config](media/mac-azureservice-debug-config.png)
 
-At this point, the bot is running locally. Copy the endpoint that the bot is running on (in this example, **http://localhost:3978/api/messages**), start the framework’s emulator, and then paste the endpoint into the address bar as shown below.
+At this point, the bot is running locally. Copy the endpoint that the bot is running on, which in this example is **http://localhost:3978/api/messages**. Then start the framework’s emulator and paste the endpoint into the address bar as shown below.
 
 ![mac azureservice emulator config](media/mac-azureservice-emulator-config.png)
 
@@ -51,7 +51,7 @@ To get started, in Visual Studio Code, open the folder your repo is in.
 
 ![mac azureservice debug vs config](media/mac-azureservice-debug-vs-config.png)
 
-Switch to the debugging view, and then click **Go**. The first time it will ask you to pick a runtime engine to run your code (this example uses Node).
+Switch to the debugging view, and then click **Go**. The first time it will ask you to pick a runtime engine to run your code. This example uses Node.
 
 ![mac azureservice debug vsruntime](media/mac-azureservice-debug-vsruntime.png)
 
@@ -101,7 +101,7 @@ Next, run **debughost.cmd** to load and run your bot.
 
 ![csharp azureservice debug debughost](media/csharp-azureservice-debug-debughost.png)
 
-After it’s running, copy the endpoint that debughost is listening on (in this example, http://localhost:3978). Then start the framework’s emulator and paste the endpoint into the address bar as shown below. For this example, you’ll need to append **/api/messages** to the endpoint. Leave the `Microsoft App Id` and `Microsoft App Password` fields blank because you don't need security for local debugging. Click **Connect** and start playing with the bot by typing a message to your bot.
+After it’s running, copy the endpoint that debughost is listening on, which in this example is http://localhost:3978. Then start the framework’s emulator and paste the endpoint into the address bar as shown below. For this example, you’ll need to append **/api/messages** to the endpoint. Leave the `Microsoft App Id` and `Microsoft App Password` fields blank because you don't need security for local debugging. Click **Connect** and start playing with the bot by typing a message to your bot.
 
 ![mac azureservice emulator config](media/mac-azureservice-emulator-config.png)
 
@@ -109,7 +109,7 @@ You can see the logs in the console window.
 
 ![csharp azureservice debug debughostlogging](media/csharp-azureservice-debug-debughostlogging.png)
 
-If wou want to do breakpoint debugging in Visual Studio 2015, stop the **DebugHost.cmd** script, and load the solution for your project (included as part of the repo) in Visual Studio. Then click **Task Runner Explorer**.
+If wou want to do breakpoint debugging in Visual Studio 2015, stop the **DebugHost.cmd** script, and load the solution for your project in Visual Studio. The solution is part of the repo. Then click **Task Runner Explorer**.
 
 ![csharp azureservice debug vsopen](media/csharp-azureservice-debug-vsopen.png)
 
@@ -117,7 +117,7 @@ You will see the bot loading up in the debug host environment in the Task Runner
 
 ![csharp azureservice debug logging](media/csharp-azureservice-debug-logging.png)
 
-You can also set breakpoints for your bot. The breakpoints are hit only after clicking **Start** in the Visual Studio environment, which will attach to the Azure Function host (**func** command from Azure Functions CLI). Chat with your bot again in the emulator and you should hit your breakpoint.
+You can also set breakpoints for your bot. The breakpoints are hit only after clicking **Start** in the Visual Studio environment, which will attach to the Azure Function host  using the **func** command from Azure Functions CLI. Chat with your bot again in the emulator and you should hit your breakpoint.
 
 >[!NOTE]
 > If you can't successfully set your breakpoint, you likely have a syntax error in your code. Look for compile errors in the Task Runner Explorer window after trying to talk to your bot.
