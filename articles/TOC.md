@@ -26,7 +26,7 @@
 #### [Bots in websites](bot-framework-design-patterns-bot-in-website.md) 
 ## [Emulator](resources-emulator.md)
 ## [Characteristics of IDs](resources-id-guide.md)
-## Making bots smart
+## [Making bots smart](make-bots-smarter.md)
 ### [Overview](bot-framework-intelligence-getstarted.md)
 ### [Language](bot-framework-intelligence-language.md)
 ### [Vision](bot-framework-intelligence-vision.md)
@@ -47,6 +47,8 @@
 ### [Implement channel-specific functionality](bot-framework-dotnet-channeldata.md)
 ### [Send and receive activities](bot-framework-dotnet-connector.md)
 ### [Manage conversation flow](bot-framework-dotnet-manage-conversation-flow.md)
+### FormFlow
+#### [Basic features of FormFlow](bot-framework-dotnet-formflow.md)
 ### [Implement global handlers](bot-framework-dotnet-global-handlers.md)
 ### [Intercept messages](bot-framework-dotnet-middleware.md)
 ### [Send proactive messages](bot-framework-dotnet-proactive-messages.md)
