@@ -79,9 +79,13 @@ that renders the embedded web view with the web chat control.
 
 ## Additional resources
 
+- <a href="https://docs.botframework.com/en-us/restapi/DirectLine3/#navtitle" target="_blank">Direct Line API</a>
+- <a href="https://www.microsoft.com/cognitive-services/" target="_blank">Microsoft Cognitive Services</a>
+- [Add smarts to your bot with Microsoft Cognitive Services](bot-framework-intelligence-getstarted.md)
+
+<!--
 This article covered ways to integrate bots with apps and 
 explored the process of creating a cross-platform mobile app that runs a bot.
-<!--
 To see the complete sample code (and step-by-step implementation guidance) for the example discussed above, 
 review the following resources: 
 

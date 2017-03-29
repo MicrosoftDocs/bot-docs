@@ -211,8 +211,14 @@ to initiate the process of answering the user's question.
  
 ## Additional resources
 
+- [Add smarts to your bot with Microsoft Cognitive Services](bot-framework-intelligence-getstarted.md)
+- [Add knowledge extraction to your bot](bot-framework-intelligence-knowledge.md)
+- [Add language understanding to your bot](bot-framework-intelligence-language.md)
+- [Add search capabilities to your bot](bot-framework-intelligence-search.md)
+
+<!-- 
 This article explored some common knowledge bot capabilities and discussed related technologies. 
-<!-- To see sample code for bots that implement Search, QnA Maker, and LUIS functionality, review the following resources: 
+To see sample code for bots that implement Search, QnA Maker, and LUIS functionality, review the following resources: 
 
 > [!NOTE]
 > To do: Add links to the C# and Node.js code samples that Mat refers to.-->

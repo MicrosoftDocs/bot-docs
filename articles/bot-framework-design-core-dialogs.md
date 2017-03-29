@@ -31,7 +31,7 @@ Additionally, one dialog can invoke another, just like one screen can invoke ano
 
 For a detailed walkthrough of managing conversation flow using dialogs and the Bot Builder SDK, see:
 
-- [Manage conversation flow using dialogs with the Bot Builder SDK for .NET](bot-framework-dotnet-howto-manage-conversation-flow.md)
+- [Manage conversation flow using dialogs with the Bot Builder SDK for .NET](bot-framework-dotnet-manage-conversation-flow.md)
 - [Manage conversation flow using dialogs with the Bot Builder SDK for Node.js](bot-framework-nodejs-howto-manage-conversation-flow.md)
 
 ##<a id="stack"></a> Dialog stack

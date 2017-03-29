@@ -116,8 +116,14 @@ The website can 'signal' to the bot that the user has completed the website flow
 
 ## Additional resources
 
-This article explored the process of facilitating a user's transition from bot to web browser, and back again. 
+- [Dialogs](bot-framework-dotnet-dialogs.md)
+- [Manage conversation flow using .NET](bot-framework-dotnet-manage-conversation-flow.md)
+- [Manage conversation flow using Node.js](bot-framework-nodejs-howto-manage-conversation-flow.md)
+- [Add smarts to your bot with Microsoft Cognitive Services](bot-framework-intelligence-getstarted.md)
+- [Add language understanding to your bot](bot-framework-intelligence-language.md)
+
 <!--
+This article explored the process of facilitating a user's transition from bot to web browser, and back again. 
 To see sample code for bots that implement this flow, review the following resources: 
 
 > [!NOTE]

@@ -24,7 +24,8 @@
 #### [Handoff to human](bot-framework-design-patterns-human-handoff.md)
 #### [Bots in apps](bot-framework-design-patterns-bot-in-app.md)
 #### [Bots in websites](bot-framework-design-patterns-bot-in-website.md) 
-## [Using the emulator](resources-emulator.md)
+## [Emulator](resources-emulator.md)
+## [Characteristics of IDs](resources-id-guide.md)
 ## Making bots smart
 ### [Overview](bot-framework-intelligence-getstarted.md)
 ### [Language](bot-framework-intelligence-language.md)
@@ -45,12 +46,12 @@
 ### [Add attachments to messages](bot-framework-dotnet-add-attachments.md)
 ### [Implement channel-specific functionality](bot-framework-dotnet-channeldata.md)
 ### [Send and receive activities](bot-framework-dotnet-connector.md)
-### [Manage conversation flow](bot-framework-dotnet-howto-manage-conversation-flow.md)
-### [Implement global handlers](bot-framework-dotnet-howto-global-handlers.md)
-### [Intercept messages](bot-framework-dotnet-howto-middleware.md)
-### [Send proactive messages](bot-framework-dotnet-howto-proactive-messages.md)
+### [Manage conversation flow](bot-framework-dotnet-manage-conversation-flow.md)
+### [Implement global handlers](bot-framework-dotnet-global-handlers.md)
+### [Intercept messages](bot-framework-dotnet-middleware.md)
+### [Send proactive messages](bot-framework-dotnet-proactive-messages.md)
 ### [Manage state](bot-framework-dotnet-state.md)
-### [Conduct audio calls](bot-framework-dotnet-howto-audio-calls.md)
+### [Conduct audio calls](bot-framework-dotnet-audio-calls.md)
 ## [Release notes](bot-framework-dotnet-release-notes.md)
 # Build with Node.js
 ## [Overview](bot-framework-nodejs-overview.md)
@@ -59,12 +60,12 @@
 ### [Manage conversation flow](bot-framework-nodejs-howto-manage-conversation-flow.md)
 ### [Trigger actions using global handlers](bot-framework-nodejs-howto-global-handlers.md)
 ### [Recognize user intent](bot-framework-nodejs-howto-recognize-intent.md)
-### [Send proactive messages](bot-framework-nodejs-howto-proactive-messages.md)
 ### [Send and receive attachments](bot-framework-nodejs-howto-send-receive-attachments.md)
 ### [Send a card with buttons](bot-framework-nodejs-howto-send-card-buttons.md)
 ### [Indicate typing](bot-framework-nodejs-howto-send-typing-indicator.md)
 ### [Save user data](bot-framework-nodejs-howto-save-user-data.md)
 ### [Handle user and conversation events](bot-framework-nodejs-howto-handle-conversation-events.md)
+### [Send proactive messages](bot-framework-nodejs-howto-proactive-messages.md)
 ### [Intercept messages](bot-framework-nodejs-howto-middleware.md)
 ### [Use backchannel mechanism](bot-framework-nodejs-howto-backchannel.md)
 # Build with Azure Bot Service
@@ -77,11 +78,6 @@
 ### [Language understanding bot](bot-framework-azure-natural-language-bot.md)
 ### [Proactive bot](bot-framework-azure-proactive-bot.md)
 ### [Question and answer bot](bot-framework-azure-question-and-answer-bot.md)
-# Troubleshooting
-## [Troubleshoot general problems](bot-framework-troubleshooting-guide.md)
-## [Troubleshoot authentication](bot-framework-troubleshooting-auth.md)
-## [Characteristics of IDs](resources-id-guide.md)
-## [Manage your MSA App ID and password](bot-framework-azure-manage-msa-app-ID.md)
 # How-To Guides
 ## Deploy your bot
 ### [Overview](bot-framework-publish-overview.md)
@@ -90,6 +86,10 @@
 ### [Configure a bot](bot-framework-publish-configure.md)
 ### [Set up continuous integration](bot-framework-azure-continuous-integration.md)
 ### [Publish a bot to the directory](bot-framework-publish-add-to-directory.md)
+## Troubleshooting
+### [Troubleshoot general problems](bot-framework-troubleshooting-guide.md)
+### [Troubleshoot authentication](bot-framework-troubleshooting-auth.md)
+### [Manage your MSA App ID and password](bot-framework-azure-manage-msa-app-ID.md)
 # Resources
 ## [Downloads](resources-downloads.md)
 ## [Support](resources-support.md)

@@ -51,7 +51,7 @@ Here are a few things you might consider as next steps when updating the code.
 
 ##Additional resources
 
-- [Manage conversation flow using dialogs](bot-framework-dotnet-howto-manage-conversation-flow.md)
+- [Manage conversation flow using dialogs](bot-framework-dotnet-manage-conversation-flow.md)
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub Repo</a>
 - <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/" target="_blank">Bot Builder SDK C# Reference</a>
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder SDK</a>

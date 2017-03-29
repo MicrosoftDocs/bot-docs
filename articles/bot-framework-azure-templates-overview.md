@@ -51,7 +51,7 @@ Use the [question and answer bot template](bot-framework-azure-question-and-answ
 Review the articles in this section to learn more about building bots using the Azure Bot Service.
 
 - Follow a [step-by-step tutorial](bot-framework-azure-getstarted.md) so that you can quickly build and test a simple bot.
-- [Manage conversation flow using dialogs](bot-framework-dotnet-howto-manage-conversation-flow.md)
+- [Manage conversation flow using dialogs](bot-framework-dotnet-manage-conversation-flow.md)
 
 If you encounter problems or have suggestions regarding Azure Bot Service, 
 see [Support](resources-support.md) for a list of available resources. 
