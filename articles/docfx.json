@@ -31,6 +31,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "uhfHeaderId": "MSDocsHeader-BotFramework",
       "author": "RobStand",
       "ms.prod": "botframework",
       "ms.date": "03/31/2017"
@@ -38,11 +39,11 @@
     "fileMetadata": {
       "ms.date":
        {
-         "**.md": "03/31/2017"
+         "**/*.md": "03/31/2017"
        },
        "manager":
        {
-         "**.md": "rstand"
+         "**/*.md": "rstand"
        }
     },
     "template": [],
