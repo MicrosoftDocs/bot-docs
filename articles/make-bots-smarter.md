@@ -26,3 +26,19 @@ ms.reviewer:
 # Making your bot smarter
 > [!WARNING]
 > This content is under development.
+
+
+## Add language understanding to your bot
+
+## Add image and video understanding to your bot
+
+## Add speech recognition and conversion to your bot
+
+## Add knowledge extraction to your bot
+
+## Add search capabilities to your bot
+
+## Add location control capabilities to your bot
+
+## Next steps
+

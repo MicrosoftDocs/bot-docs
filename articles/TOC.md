@@ -26,7 +26,7 @@
 #### [Bots in websites](bot-framework-design-patterns-bot-in-website.md) 
 ## [Emulator](resources-emulator.md)
 ## [Characteristics of IDs](resources-id-guide.md)
-## Making bots smart
+## [Making bots smart](make-bots-smarter.md)
 ### [Overview](bot-framework-intelligence-getstarted.md)
 ### [Language](bot-framework-intelligence-language.md)
 ### [Vision](bot-framework-intelligence-vision.md)
@@ -66,6 +66,7 @@
 ### [Send a card with buttons](bot-framework-nodejs-howto-send-card-buttons.md)
 ### [Indicate typing](bot-framework-nodejs-howto-send-typing-indicator.md)
 ### [Save user data](bot-framework-nodejs-howto-save-user-data.md)
+### [Support localization](bot-framework-nodejs-howto-localization.md)
 ### [Handle user and conversation events](bot-framework-nodejs-howto-handle-conversation-events.md)
 ### [Send proactive messages](bot-framework-nodejs-howto-proactive-messages.md)
 ### [Intercept messages](bot-framework-nodejs-howto-middleware.md)
