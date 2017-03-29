@@ -12,20 +12,20 @@ ms.reviewer:
 #ROBOTS: Index
 ---
 
-#Debug your bot
+# Debug your bot
 
-The Azure Bot Service bots are built on the Azure Functions Serverless architecture. In the Azure Bot Service model, your bot’s code starts out in Azure, but you’ll typically set up Azure’s continuous integration feature to work with it locally in your favorite tool chain. This article details how to debug your bot locally after setting up continuous integration.
+The Azure Bot Service bots are built on Azure. Even though your bot’s code starts out in Azure, you’ll typically set up continuous integration to work with the code locally in your favorite tool chain. This article demonstrates how to debug your bot locally after setting up continuous integration.
 
-##Debug Node.js bots
+## Debug Node.js bots
 
 First, you need to set up your environment. You’ll need:
-- A local copy of your Azure Bot Service code (see [Set up continuous integration](bot-framework-azure-continuous-integration.md))
-- The Bot Framework Emulator for your platform (Download the emulator for <a href="https://docs.botframework.com/en-us/downloads/" target="_blank">Mac, Linux, Windows</a>)
-- Node or other code editor such as Visual Studio Code (Download Visual Studio code for <a href="https://code.visualstudio.com/" target="_blank">Mac, Linux, Windows</a>)
+- A local copy of your Azure Bot Service code for  [continuous integration](bot-framework-azure-continuous-integration.md))
+- The <a href="https://docs.botframework.com/en-us/downloads/" target="_blank">Bot Framework Emulator</a> for Mac, Linux, or Windows</a>
+- Node or other code editor such as <a href="https://code.visualstudio.com/" target="_blank">Mac, Linux, Windows</a>Visual Studio Code for <a href="https://code.visualstudio.com/" target="_blank"></a> for Mac, Linux, or Windows
 
 After setting up your environment, the simplest way to run the bot locally is to start your bot in Node, and then connect to it from Bot Framework Emulator. 
 
-First, set the NODE_ENV environment variable. The following Node terminal window example shows how you would set the environment variable and start running the bot on a Mac.
+First, set the NODE_ENV environment variable. This Node terminal window example shows how you would set the environment variable and start running the bot on a Mac.
 
 ![mac azureservice debug config](media/mac-azureservice-debug-config.png)
 
@@ -41,7 +41,7 @@ You can use the emulator’s **Log** and the **Inspector** windows on the right 
 
 ![mac azureservice debug logging](media/mac-azureservice-debug-logging.png)
 
-##Debug Node.js bots using Visual Studio Code
+## Debug Node.js bots using Visual Studio Code
 
 If you need more than visual inspection and logs to diagnose your bot, you can use a local debugger such as Visual Studio Code. All of the steps are the same, but instead of running the Node runtime, you’ll start the Visual Studio Code debugger.
 
@@ -55,7 +55,7 @@ Switch to the debugging view, and then click **Go**. The first time it will ask 
 
 ![mac azureservice debug vsruntime](media/mac-azureservice-debug-vsruntime.png)
 
-Next, depending on whether you’ve synced the repo or changed any of it, you may be prompted to configure **launch.json**. If you do, you’ll need to add the following code to **launch.json**, which tells the template to work with the emulator.
+Next, depending on whether you’ve synced the repo or changed any of it, you may be prompted to configure **launch.json**. If you do, you’ll need to add code to **launch.json**, which tells the template to work with the emulator.
 
 [!code-JavaScript[emulator](../includes/code/azure-bot-debug.js#emulator)]
 
@@ -69,32 +69,28 @@ To interact with the bot, use the framework’s emulator again. Copy the endpoin
 
 ![mac azureservice debug vsbreakpoint](media/mac-azureservice-debug-vsbreakpoint.png)
 
-##Debugging C&#35; bots built using the Azure Bot Service on Windows
+## Debugging C&#35; bots built using the Azure Bot Service on Windows
 
 The C# environment in Azure Bot Service has more in common with Node.js than a typical C# app because it requires a runtime host, much like the Node engine. In Azure, the runtime is part of the hosting environment is in the cloud, but you’ll need to replicate that environment locally on your desktop.
 
 First, you need to set up your environment. You’ll need:
 
-- A local copy of your Azure Bot Service code (see [Set up continuous integration](bot-framework-azure-continuous-integration.md))
-- The Bot Framework Emulator (Download the emulator for <a href="https://docs.botframework.com/en-us/downloads/" target="_blank">Mac, Linux, Windows</a>)
-- The Azure Functions CLI (Download the package from <a href="https://www.npmjs.com/package/azure-functions-cli" target="_blank">npm</a>)    
-- DotNet CLI (Download from <a href="https://github.com/dotnet/cli" target="_blank">Github</a>)
+- A local copy of your Azure Bot Service code for  [continuous integration](bot-framework-azure-continuous-integration.md))
+- The <a href="https://docs.botframework.com/en-us/downloads/" target="_blank">Bot Framework Emulator</a> for Mac, Linux, or Windows</a>
+- The <a href="https://www.npmjs.com/package/azure-functions-cli" target="_blank">Azure Functions CLI</a> from npm.  
+- The <a href="https://github.com/dotnet/cli" target="_blank">DotNet CLI</a> from Github.
 
-If you want breakpoint debugging in Visual Studio 15, download the following:
+If you want breakpoint debugging in Visual Studio 15, you'll need:
 
-- Visual Studio 15, Community Edition (Download from <a href="https://www.visualstudio.com/downloads/" target="_blank">Microsoft</a>)
-- Command Task Runner Visual Studio Extension (Download from <a href="https://marketplace.visualstudio.com/items?itemName=MadsKristensen.CommandTaskRunner" target="_blank">Visual Studio marketplace</a>)
+- <a href="https://www.visualstudio.com/downloads/" target="_blank">Visual Studio 15, Community Edition</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=MadsKristensen.CommandTaskRunner" target="_blank">Command Task Runner Visual Studio Extension</a>.
 
 >[!NOTE]
 >Visual Studio Code is not currently supported.
 
 After installing the tools above, you can begin to debug your C# bot locally.
 
-Open a command prompt and navigate to the folder for **project.json**. Type the following command:
-
-**dotnet restore**
-
-This will restore the  packages referenced in your bot.
+Open a command prompt and navigate to the folder for **project.json**. Type "Dotnet restore". This will restore the packages referenced in your bot.
 
 >[!NOTE]
 >Visual Studio 2017 RC is changing how it handles dependencies from a **project.json** to a **.csproj** model when loading in Visual Studio. As a result, you will need to download the **.csproj** and save the **.csproj** into your /repo/messages folder before running the .NET restore command.

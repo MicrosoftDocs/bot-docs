@@ -12,7 +12,7 @@ ms.reviewer:
 #ROBOTS: Index
 ---
 
-#Form bot
+# Guide users through a conversation with the form bot
 
 The form bot template demonstrates how to use a form to perform a guided conversation with the user. Typically, you would use a guided conversation when you need to ask the user a series of clarifying questions, like when ordering a sandwich with many options and ingredients.
 
@@ -30,7 +30,7 @@ The `MessageReceivedAsync` method creates the form and starts asking the questio
 
 [!code-csharp[Create form](../includes/code/azure-form-bot.cs#createForm)]
 
-The following code shows the `BasicForm` object that defines the form. The `public` properties define the questions to ask. The `Prompt` property attribute contains the prompt text that’s shown to the user. Anything within curly brackets ({}) are substitution characters. For example, {&} tells the form to use the property’s name in the prompt. If the property’s data type is an enumeration, {||} tells the form to display the enumeration’s values as the list of possible values that the user can choose from. For example, the data type for the `Color` property is `ColorOptions`. When the form asks the user for their favorite car color, the form will display **1. Red**, **2. White**, and **3. Blue** as possible values. For more information about substitution strings, see <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/forms.html#patterns" target="_blank">Pattern Language</a>.
+The `BasicForm` object defines the form. The `public` properties define the questions to ask. The `Prompt` property attribute contains the prompt text that’s shown to the user. Anything within curly brackets ({}) are substitution characters. For example, {&} tells the form to use the property’s name in the prompt. If the property’s data type is an enumeration, {||} tells the form to display the enumeration’s values as the list of possible values that the user can choose from. For example, the data type for the `Color` property is `ColorOptions`. When the form asks the user for their favorite car color, the form will display **1. Red**, **2. White**, and **3. Blue** as possible values. For more information about substitution strings, see <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/forms.html#patterns" target="_blank">Pattern Language</a>.
 
 [!code-csharp[Ask form questions](../includes/code/azure-form-bot.cs#askQuestions)]
 

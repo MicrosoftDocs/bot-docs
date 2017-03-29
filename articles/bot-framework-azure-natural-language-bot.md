@@ -12,20 +12,21 @@ ms.reviewer:
 #ROBOTS: Index
 ---
 
-#Language understanding bot
+# Build a bot that understands user's intent
 
 
-The language understanding bot template shows how to use natural language models (LUIS) to understand user intent. For example, when the user asks your bot to “get news about virtual reality companies,” your bot needs to understand what the user is asking for. LUIS is designed to enable you to very quickly deploy an HTTP endpoint that will interpret the user’s input in terms of:
-- The intention the user input conveys, such as "find news".
-- The key entities that are present, such as "virtual reality companies" 
-LUIS lets you custom design the set of intentions and entities that are relevant to the application, and then guides you through the process of building a language understanding application that returns information about, in the example above, news regarding virtual companies.
+The language understanding bot template shows how to use the LUIS natural language models to build a bot that understands the meaning behind a user's question. For example, if the user asks your bot to “get news about virtual reality companies,” your bot needs to understand what the user wants in terms of two things:
+- The intent the question conveys, such as "find news".
+- The key entities that are present in the LUIS model you set up, such as "virtual reality companies".
 
-When you create the template, Azure Bot Service creates an empty LUIS application for you that always returns "None" initially. These are the typical steps you take:
+LUIS lets you custom design the set of intentions and entities, and then guides you through the process of building a language understanding application that returns information about, in the example above, news regarding virtual companies.
+
+When you create the template, Azure Bot Service creates an empty LUIS application for you that initially returns "None". These are the typical steps you take to access the LUIS application:
 
 1. Sign in to LUIS.
 2. Click **My applications**.
 3. Select the application that the service created for you.
-4. Update your model by creating new intents, and then train and publish your LUIS app.
+4. Update your model by creating new intents and entities, and then train and publish your LUIS app.
 
 Most messages will have a `Message` activity type that contains the text and attachments the user sent. If the message’s activity type is `Message`, the template posts the message to `BasicLuisDialog` in the context of the current message (see **BasicLuisDialog.csx**).
 

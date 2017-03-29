@@ -18,9 +18,9 @@ ms.reviewer: v-tosisk
 
 
 # Add search capabilities to your bot
-The Bing Search APIs enable you to add intelligent web search capabilities to your bots. With a few lines of code, you can access billions of webpages, images, videos, news, and other result types. You can configure the APIs to return results by geographical location, market, or language for better relevance. You can further customize your search using the supported search parameters. Examples of search parameters include Safesearch, to filter out adult content, and Freshness to get back results according to the date they were indexed by Bing.
+The Bing Search APIs enable you to add intelligent web search capabilities to your bots. With a few lines of code, you can access billions of webpages, images, videos, news, and other result types. You can configure the APIs to return results by geographical location, market, or language for better relevance. You can further customize your search using the supported search parameters, such as Safesearch to filter out adult content, and Freshness to return results according to a specific date.
 
-There are five Bing Search APIs available in Cognitive Services to retrieve web, image, video, news and autosuggest results.
+There are five Bing Search APIs available in Cognitive Services.
 
 ## Web Search API
 The <a href="https://www.microsoft.com/cognitive-services/en-us/bing-web-search-api" target="_blank">Web Search API</a> provides web, image, video, news and related search results with a single API call.

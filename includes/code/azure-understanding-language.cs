@@ -4,6 +4,7 @@ switch (activity.GetActivityType())
         case ActivityTypes.Message:
             await Conversation.SendAsync(activity, () => new BasicLuisDialog());
             break;
+    }
 // </postMessage>
 
 // <receiveMessage>
