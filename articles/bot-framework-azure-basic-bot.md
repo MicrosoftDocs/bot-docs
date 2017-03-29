@@ -12,11 +12,9 @@ ms.reviewer:
 #ROBOTS: Index
 ---
 
-#Basic bot
+# Build a basic bot with dialogs
 
 The basic bot template demonstrates how to use [dialogs](bot-framework-dotnet-dialogs.md) to manage conversation flow with a user. When a user posts a message, it’s sent to the bot’s `Run` method in the **Run.csx** file. Before the bot processes the message, it first <a href="https://docs.botframework.com/en-us/restapi/authentication/" target="_blank">authenticates the request</a>. If the validation fails, the bot responds with "Unauthorized". 
-
-The following code sample shows how a request is authenticated.
 
 [!code-csharp[Authenticate request](../includes/code/azure-basic-bot.cs#authenticateRequest)]
 

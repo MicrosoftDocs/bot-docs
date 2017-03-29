@@ -16,7 +16,9 @@ public class BasicQnAMakerDialog : QnAMakerDialog
 	//Compulsory: subscriptionKey, knowledgebaseId, 
 	//Optional: defaultMessage, scoreThreshold[Range 0.0 – 1.0]
 	public BasicQnAMakerDialog() : base(new QnAMakerService(new QnAMakerAttribute(Utils.GetAppSetting("QnASubscriptionKey"), Utils.GetAppSetting("QnAKnowledgebaseId"), "No good match in FAQ.", 0.5)))
-	{}
+	{
+
+    }
 } 
 
 // </setMessageReceived>   
@@ -25,10 +27,11 @@ public class BasicQnAMakerDialog : QnAMakerDialog
 
 // <routeMessage>
 switch (activity.GetActivityType())
-        {
-            case ActivityTypes.Message:
-                await Conversation.SendAsync(activity, () => new BasicQnAMakerDialog());
-                break;
+{
+    case ActivityTypes.Message:
+        await Conversation.SendAsync(activity, () => new BasicQnAMakerDialog());
+        break;
+}
   //</routeMessage> 
 
 

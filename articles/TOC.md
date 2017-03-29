@@ -24,7 +24,8 @@
 #### [Handoff to human](bot-framework-design-patterns-human-handoff.md)
 #### [Bots in apps](bot-framework-design-patterns-bot-in-app.md)
 #### [Bots in websites](bot-framework-design-patterns-bot-in-website.md) 
-## [Using the emulator](resources-emulator.md)
+## [Emulator](resources-emulator.md)
+## [Characteristics of IDs](resources-id-guide.md)
 ## Making bots smart
 ### [Overview](bot-framework-intelligence-getstarted.md)
 ### [Language](bot-framework-intelligence-language.md)
@@ -77,11 +78,6 @@
 ### [Language understanding bot](bot-framework-azure-natural-language-bot.md)
 ### [Proactive bot](bot-framework-azure-proactive-bot.md)
 ### [Question and answer bot](bot-framework-azure-question-and-answer-bot.md)
-# Troubleshooting
-## [Troubleshoot general problems](bot-framework-troubleshooting-guide.md)
-## [Troubleshoot authentication](bot-framework-troubleshooting-auth.md)
-## [Characteristics of IDs](resources-id-guide.md)
-## [Manage your MSA App ID and password](bot-framework-azure-manage-msa-app-ID.md)
 # How-To Guides
 ## Deploy your bot
 ### [Overview](bot-framework-publish-overview.md)
@@ -90,6 +86,10 @@
 ### [Configure a bot](bot-framework-publish-configure.md)
 ### [Set up continuous integration](bot-framework-azure-continuous-integration.md)
 ### [Publish a bot to the directory](bot-framework-publish-add-to-directory.md)
+## Troubleshooting
+### [Troubleshoot general problems](bot-framework-troubleshooting-guide.md)
+### [Troubleshoot authentication](bot-framework-troubleshooting-auth.md)
+### [Manage your MSA App ID and password](bot-framework-azure-manage-msa-app-ID.md)
 # Resources
 ## [Downloads](resources-downloads.md)
 ## [Support](resources-support.md)

@@ -1,9 +1,10 @@
 // <postMessage>
 switch (activity.GetActivityType())
-        {
-            case ActivityTypes.Message:
-                await Conversation.SendAsync(activity, () => new MainDialog());
-                break;
+{
+    case ActivityTypes.Message:
+        await Conversation.SendAsync(activity, () => new MainDialog());
+        break;
+}
 // </postMessage>
 
 
@@ -20,43 +21,44 @@ public class MainDialog : IDialog<BasicForm>
         context.Wait(MessageReceivedAsync);
         return Task.CompletedTask;
     }
+}
 // </messageReceived>
 
 
 //<createForm>
 public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> argument)
+{
+    var message = await argument;
+    context.Call(BasicForm.BuildFormDialog(FormOptions.PromptInStart), FormComplete);
+}
+
+private async Task FormComplete(IDialogContext context, IAwaitable<BasicForm> result)
+{
+    try
     {
-        var message = await argument;
-        context.Call(BasicForm.BuildFormDialog(FormOptions.PromptInStart), FormComplete);
+        var form = await result;
+        if (form != null)
+        {
+            await context.PostAsync("Thanks for completing the form! Just type anything to restart it.");
+        }
+        else
+        {
+            await context.PostAsync("Form returned empty response! Type anything to restart it.");
+        }
+    }
+    catch (OperationCanceledException)
+    {
+        await context.PostAsync("You canceled the form! Type anything to restart it.");
     }
 
-    private async Task FormComplete(IDialogContext context, IAwaitable<BasicForm> result)
-    {
-        try
-        {
-            var form = await result;
-            if (form != null)
-            {
-                await context.PostAsync("Thanks for completing the form! Just type anything to restart it.");
-            }
-            else
-            {
-                await context.PostAsync("Form returned empty response! Type anything to restart it.");
-            }
-        }
-        catch (OperationCanceledException)
-        {
-            await context.PostAsync("You canceled the form! Type anything to restart it.");
-        }
-
-        context.Wait(MessageReceivedAsync);
-    }
+    context.Wait(MessageReceivedAsync);
+}
     //</createForm>
 
     
 
     //<askQuestions>
-    public enum CarOptions { Convertible=1, SUV, EV };
+public enum CarOptions { Convertible=1, SUV, EV };
 public enum ColorOptions { Red=1, White, Blue };
 
 [Serializable]

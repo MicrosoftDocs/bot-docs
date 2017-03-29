@@ -13,13 +13,13 @@ ms.reviewer:
 
 ---
 
-# Bot Builder for Azure
+# Azure Bot Service
 
-The Azure Bot Service is a powerful, easy-to-use framework that simplifies bot development. You can build, connect, deploy and manage intelligent bots quickly that interact naturally wherever your users are talking, whether it's with an app or website, Text/SMS, Skype, Slack, Facebook Messenger, Kik, Office 365 mail, or other popular services. 
+The Azure Bot Service simplifies bot development. You can build, connect, deploy and manage intelligent bots quickly that interact naturally wherever your users are talking, whether it's with an app or website, Text/SMS, Skype, Slack, Facebook Messenger, Kik, Office 365 mail, or other popular services. 
 
-The conversational logic for your bot is hosted on Azure and is powered by Microsoft Bot Framework. This means you can get a bot talking to your users with minimal coding, testing, and downtime.
+Azure hosts the conversational logic for your bot. This means you can get a bot talking to your users with minimal coding, testing, and downtime.
 
-With the Azure Bot Service, you can take advantage of the following features: 
+With the Azure Bot Service, you can take advantage of the these features: 
 
 - Accelerate bot development by working in an integrated environment that’s purpose-built for bot development.
 - By using <a href="https://docs.microsoft.com/en-us/azure/azure-functions/">Azure Functions</a>, your bot will run in a server-less environment on Azure that will scale based on demand.
@@ -31,17 +31,14 @@ With the Azure Bot Service, you can take advantage of the following features:
 
 [Bot templates](bot-framework-azure-templates-overview.md) will get you started quickly building your first bots with Azure Bot Service. They contain everything you need to write, test, and deploy your bots. All you have to do is add your custom code that makes the bot unique and engaging for your customers to talk to.
 
-Learn more about the [Bot templates](bot-framework-azure-templates-overview.md).
-
+Follow a [step-by-step tutorial](bot-framework-azure-getstarted.md) so that you can quickly build and test a simple bot.
 
 ## Next steps
 
 
-Review the following articles in this section to learn more about building bots using the Azure Bot Service.
+Review the articles in this section to learn more about building bots using the Azure Bot Service.
 
 - Read an overview of the [Bot templates](bot-framework-azure-templates-overview.md) to get you started with building five bots.
-
-- Follow a [step-by-step tutorial](bot-framework-azure-getstarted.md) so that you can quickly build and test a simple bot.
 
 If you encounter problems or have suggestions regarding Azure Bot Service, 
 see [Support](resources-support.md) for a list of available resources. 
