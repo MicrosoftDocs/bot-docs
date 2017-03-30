@@ -21,9 +21,7 @@
   "notification_subscribers": [
     "rstand@microsoft.com",
     "v-kibran@microsoft.com",
-    "v-demak@microsoft.com",
-    "cmullins@microsoft.com",
-    "v-tosisk@microsoft.com"
+    "v-demak@microsoft.com"
   ],
   "branches_to_filter": [],
   "skip_source_output_uploading": false,
@@ -41,5 +39,5 @@
       "branch": "master"
     }
   ],
-  "need_generate_pdf_url_template": false
+  "need_generate_pdf_url_template": true
 }
