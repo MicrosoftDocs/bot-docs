@@ -8,7 +8,7 @@ ms.topic: bot-service-get-started-article
 ms.prod: botframework
 ms.service: Azure Bot Service
 ms.date: 
-ms.reviewer: v-tosisk@microsoft.com
+ms.reviewer: rstand@microsoft.com
 #ROBOTS: Index
 ---
 

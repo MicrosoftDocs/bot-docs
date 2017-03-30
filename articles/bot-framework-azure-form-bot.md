@@ -2,7 +2,7 @@
 title: Set up a form bot for Azure Bot Service | Microsoft Docs
 description: Learn how to set up a form for Azure Bot Service.
 keywords: Bot Framework, Azure Bot Service, form bot
-author: Toney001
+author: RobStand
 manager: rstand
 ms.topic: bot-service-article
 ms.prod: botframework

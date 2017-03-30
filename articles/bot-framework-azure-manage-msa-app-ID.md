@@ -2,7 +2,7 @@
 title: Manage your MSA App iD for Azure Bot Service | Microsoft Docs
 description: Learn how to manage your MSA App ID for your bot using Azure Bot Service.
 keywords: Bot Framework, Azure Bot Service, App ID, password, MSA
-author: Toney001
+author: RobStand
 manager: rstand
 ms.topic: bot-service-article
 ms.prod: botframework

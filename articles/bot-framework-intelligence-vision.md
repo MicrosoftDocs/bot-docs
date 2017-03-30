@@ -9,7 +9,7 @@ ms.topic: intelligence-vision-article
 ms.prod: botframework
 ms.service: Cognitive Services
 ms.date: 
-ms.reviewer: v-tosisk
+ms.reviewer: rstand
 
 # Include the following line commented out
 #ROBOTS: Index

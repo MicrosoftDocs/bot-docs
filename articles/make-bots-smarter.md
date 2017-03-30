@@ -2,7 +2,7 @@
 title: Make your bots smarter | Microsoft Docs
 description: Learn how to add smarts to your bots and make them more useful and engaging for your users.
 keywords: bot framework, Microsoft Cognitive Services, smart bots
-author: Toney001
+author: RobStand
 manager: rstand
 
 # the ms.topic should be the section of the IA that the article is in, with the suffix -article. Some examples:

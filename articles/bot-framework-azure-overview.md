@@ -2,7 +2,7 @@
 title: Azure Bot Service overview | Microsoft Docs
 description: Learn about Azure Bot Service.
 keywords: Bot Framework, Azure Bot Service, Overview
-author: Toney001
+author: RobStand
 manager: rstand
 ms.topic: bot-service-article
 ms.prod: botframework
