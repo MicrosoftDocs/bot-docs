@@ -49,6 +49,7 @@
 ### [Manage conversation flow](bot-framework-dotnet-manage-conversation-flow.md)
 ### FormFlow
 #### [Basic features of FormFlow](bot-framework-dotnet-formflow.md)
+#### [Define a form using JSON schema](bot-framework-dotnet-formflow-json-schema.md)
 ### [Implement global handlers](bot-framework-dotnet-global-handlers.md)
 ### [Intercept messages](bot-framework-dotnet-middleware.md)
 ### [Send proactive messages](bot-framework-dotnet-proactive-messages.md)
