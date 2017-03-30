@@ -334,5 +334,4 @@ that is described in [Customize a form using FormBuilder](bot-framework-dotnet-f
 - [Advanced features of FormFlow](bot-framework-dotnet-formflow-advanced.md)
 - [Customize a form using FormBuilder](bot-framework-dotnet-formflow-formbuilder.md)
 - [Localize form content](bot-framework-dotnet-formflow-localize.md)
-- [Define a form using JSON schema](bot-framework-dotnet-formflow-json-schema.md)
 - [Customize user experience with pattern language](bot-framework-dotnet-formflow-pattern-language.md)
