@@ -14,7 +14,7 @@ ms.reviewer:
 
 # Advanced features of FormFlow
 
-The FormFlow dialog that is described in [FormFlow](bot-framework-dotnet-formflow.md) is a basic FormFlow 
+[FormFlow](bot-framework-dotnet-formflow.md) describes a basic FormFlow 
 implementation that delivers a fairly generic user experience. 
 To deliver a more customized user experience using FormFlow, you can specify initial form state, 
 add business logic to manage interdependencies between fields and process user input, 
@@ -49,11 +49,11 @@ A validation function lets you manipulate the state and return a `ValidateResult
 
 This code example shows a validation function for the `Toppings` field. 
 If input for the field contains the `ToppingOptions.Everything` enumeration value, the function 
-ensures that the `Toppings` field contains the full list of toppings.
+ensures that the `Toppings` field value contains the full list of toppings.
 
 [!code-csharp[Validation function](../includes/code/dotnet-formflow-advanced.cs#validationFunction)]
 
-In addition to the validation function, you can add the Terms(#terms-attribute) attribute 
+In addition to the validation function, you can add the [Term](#terms-attribute) attribute 
 to match user expressions such as "everything" or "not".
 
 [!code-csharp[Terms for Toppings](../includes/code/dotnet-formflow-advanced.cs#toppingsTerms)]
@@ -167,8 +167,8 @@ While the `Prompt` attribute enables you to customize the prompt for a single fi
 the `Template` attribute enables you to replace the default templates that FormFlow uses to automatically 
 generate prompts. 
 This code example uses the `Template` attribute to redefine how the form handles 
-all enumeration fields. The attribute specifies that the user may select only one item, 
-specifies the prompt text by using [pattern language](bot-framework-dotnet-formflow-pattern-language.md), 
+all enumeration fields. The attribute indicates that the user may select only one item, 
+sets the prompt text by using [pattern language](bot-framework-dotnet-formflow-pattern-language.md), 
 and specifies that the form should display only one item per line. 
 
 [!code-csharp[Template attribute](../includes/code/dotnet-formflow-advanced.cs#templateAttribute)]
@@ -193,8 +193,7 @@ What kind of cheese would you like on your sandwich?
 
 If you use the `Template` attribute to replace the default templates that FormFlow uses to 
 generate prompts, you may want to interject some variation into the prompts and messages 
-that the form generates.
-
+that the form generates. 
 To do so, you can define multiple text strings using 
 [pattern language](bot-framework-dotnet-formflow-pattern-language.md), and the form will randomly choose 
 from the available options each time it needs to display a prompt or message.
@@ -224,7 +223,7 @@ This code example specifies that the `Cheese` field is optional.
 [!code-csharp[Optional attribute](../includes/code/dotnet-formflow-advanced.cs#optionalAttribute)]
 
 If a field is optional and no value has been specified, 
-the current choice will be "No Preference".
+the current choice will be displayed as "No Preference".
 
 ```
 What kind of cheese would you like on your sandwich? (current choice: No Preference)
@@ -268,7 +267,6 @@ For example, the value "AngusBeefAndGarlicPizza" would generate these terms:
 
 To override this default behavior and define the list of terms that are used to match 
 user input to a field or a value in a field, use the `Terms` attribute. 
-
 For example, you may use the `Terms` attribute (with a regular expression) to account for the fact that users are 
 likely to misspell the word "rotisserie." 
 
