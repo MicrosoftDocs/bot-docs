@@ -63,8 +63,13 @@ See [Saving user data](bot-framework-nodejs-howto-save-user-data.md) for an exam
 
 ## Additional Resources
 
+The following articles walk you through building your first bot and adding basic conversational ability to it.
+
 * [Get started](bot-framework-nodejs-getstarted.md)
 * [Manage conversation flow](bot-framework-nodejs-howto-manage-conversation-flow.md)
+
+The following task-focused code samples demonstrate features of the Bot Builder SDK for Node.js at more depth.
+
 * [Triggering actions](bot-framework-nodejs-howto-global-handlers.md)
 * [Recognize user intent](bot-framework-nodejs-howto-recognize-intent.md)
 * [Send a rich card](bot-framework-nodejs-howto-send-card-buttons.md)
@@ -72,6 +77,7 @@ See [Saving user data](bot-framework-nodejs-howto-save-user-data.md) for an exam
 * [Saving user data](bot-framework-nodejs-howto-save-user-data.md)
 * [How to send a typing indicator](bot-framework-nodejs-howto-send-typing-indicator.md)
 
+<!-- 
 * [Channel inspector][ChannelInspector]
 * [UniversalBot][UniversalBot]
 * [ChatConnector][ChatConnector]
@@ -80,7 +86,7 @@ See [Saving user data](bot-framework-nodejs-howto-save-user-data.md) for an exam
 * [session.sendTyping][SessionSendTyping]
 * [triggerAction][triggerAction]
 
-
+--> 
 <!-- TODO: Update links to point to new docs -->
 
 [PersistConversationData]:(https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iuniversalbotsettings.html#persistconversationdata)

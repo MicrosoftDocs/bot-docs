@@ -58,7 +58,19 @@
 # Build with Node.js
 ## [Overview](bot-framework-nodejs-overview.md)
 ## [Key concepts](bot-framework-nodejs-concepts.md)
-## Tutorials
+# Build with Azure Bot Service
+## [Overview](bot-framework-azure-overview.md)
+## [Debug your bot](bot-framework-azure-debug.md)
+## Templates
+### [Overview](bot-framework-azure-templates-overview.md)
+### [Basic bot](bot-framework-azure-basic-bot.md)
+### [Form bot](bot-framework-azure-form-bot.md)
+### [Language understanding bot](bot-framework-azure-natural-language-bot.md)
+### [Proactive bot](bot-framework-azure-proactive-bot.md)
+### [Question and answer bot](bot-framework-azure-question-and-answer-bot.md)
+# How-To Guides
+## Develop with Node.js
+### [Create a bot with Node.js](bot-framework-nodejs-getstarted.md)
 ### [Manage conversation flow](bot-framework-nodejs-howto-manage-conversation-flow.md)
 ### [Trigger actions using global handlers](bot-framework-nodejs-howto-global-handlers.md)
 ### [Recognize user intent](bot-framework-nodejs-howto-recognize-intent.md)
@@ -71,17 +83,6 @@
 ### [Send proactive messages](bot-framework-nodejs-howto-proactive-messages.md)
 ### [Intercept messages](bot-framework-nodejs-howto-middleware.md)
 ### [Use backchannel mechanism](bot-framework-nodejs-howto-backchannel.md)
-# Build with Azure Bot Service
-## [Overview](bot-framework-azure-overview.md)
-## [Debug your bot](bot-framework-azure-debug.md)
-## Templates
-### [Overview](bot-framework-azure-templates-overview.md)
-### [Basic bot](bot-framework-azure-basic-bot.md)
-### [Form bot](bot-framework-azure-form-bot.md)
-### [Language understanding bot](bot-framework-azure-natural-language-bot.md)
-### [Proactive bot](bot-framework-azure-proactive-bot.md)
-### [Question and answer bot](bot-framework-azure-question-and-answer-bot.md)
-# How-To Guides
 ## Deploy your bot
 ### [Overview](bot-framework-publish-overview.md)
 ### [Register a bot](bot-framework-publish-register.md)

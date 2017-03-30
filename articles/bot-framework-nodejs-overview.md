@@ -14,12 +14,11 @@ ms.reviewer: rstand
 
 # Bot Builder SDK for Node.js
 
-## Introduction
 
 The Bot Builder SDK for Node.js is a powerful, easy-to-use framework that provides a familiar way for Node.js developers to write bots.
 You can use it to build a wide variety of conversational user interfaces, from simple prompts to free-form conversations.
 
-The conversational logic for your bot is hosted as a web service. The Bot Bulder SDK uses <a href="http://restify.com">restify</a>, a popular framework for building web services, to create the bot's web server. 
+The conversational logic for your bot is hosted as a web service. The Bot Builder SDK uses <a href="http://restify.com">restify</a>, a popular framework for building web services, to create the bot's web server. 
 The SDK is also compatible with <a href="http://expressjs.com/">Express</a> and the use of other web app frameworks is possible with some adaption. 
 
 Using the SDK, you can take advantage of the following SDK features: 

@@ -17,8 +17,8 @@ ms.reviewer: rstand
 
 Bot Builder includes a rich localization system for building bots that can communicate with the user in multiple languages. All of your bot's prompts can be localized using JSON files stored in your bots directory structure. If you’re using a system like LUIS to perform natural language processing you can configure your [LuisRecognizer](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.luisrecognizer) with a separate model for each language your bot supports and the SDK automatically selects the model that matches the user's preferred locale.
 
-## Determining locale by prompting the user
-The first step to localizing your bot for the user is adding the ability to identify the users preferred language. The SDK provides a [session.preferredLocale()](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#preferredlocale) method to both save and retrieve this preference on a per-user basis. The following example is a dialog to prompt the user for their preferred language and then save their choice:
+## Determine the locale by prompting the user
+The first step to localizing your bot for the user is adding the ability to identify the users preferred language. The SDK provides a [session.preferredLocale()](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#preferredlocale) method to both save and retrieve this preference on a per-user basis. The following example is a dialog to prompt the user for their preferred language and then save their choice.
 
 ``` javascript
 bot.dialog('/localePicker', [
@@ -51,7 +51,7 @@ bot.dialog('/localePicker', [
 ]);
 ```
 
-## Determine locale by using analytics
+## Determine the locale by using analytics
 Another way to determine the user's locale is to install a piece of middleware that uses a service like the [Text Analytics API](https://www.microsoft.com/cognitive-services/en-us/text-analytics-api) to automatically 
 detect the users language based upon the text of the message they sent.
 
