@@ -18,13 +18,13 @@ If you use a [C# class](bot-framework-dotnet-formflow.md#create-class) to define
 when you create a bot with FormFlow, 
 the form derives from the static definition of your type in C#. 
 As an alternative, you may instead define the form by using 
-<a href="http://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_Linq_JObject.htm" target="_blank">JObject</a> 
-and 
 <a href="http://json-schema.org/documentation.html" target="_blank">JSON schema</a>. 
 A form that is defined using JSON schema is purely data-driven; 
 you can change the form (and therefore, the behavior of the bot) simply by updating the schema. 
 
-The JSON schema describes the fields within your JObject and 
+The JSON schema describes the fields within your 
+<a href="http://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_Linq_JObject.htm" target="_blank">JObject</a> 
+and 
 includes annotations that control prompts, templates, and terms. 
 To use JSON schema with FormFlow, you must add the `Microsoft.Bot.Builder.FormFlow.Json` NuGet package to your 
 project and import the `Microsoft.Bot.Builder.FormFlow.Json` namespace.
@@ -52,7 +52,7 @@ to support several additional properties.
 
 | Property | Value |
 |----|----|
-| OnCompletion | C# script with arguments (`IDialogContext context, JObject state`) for completing the form. |
+| OnCompletion | C# script with arguments `(IDialogContext context, JObject state)` for completing the form. |
 | References | References to include in scripts. For example, `[assemblyReference, ...]`. Paths should be absolute or relative to the current directory. By default, the script includes `Microsoft.Bot.Builder.dll`. |
 | Imports | Imports to include in scripts. For example, `[import, ...]`. By default, the script includes the `Microsoft.Bot.Builder`, `Microsoft.Bot.Builder.Dialogs`, `Microsoft.Bot.Builder.FormFlow`, `Microsoft.Bot.Builder.FormFlow.Advanced`, `System.Collections.Generic`, and `System.Linq` namespaces. |
 
@@ -81,13 +81,13 @@ For example, this schema snippet defines a template that overrides the `Template
 | Describe | string or object | Description of a field as described in [DescribeAttribute](https://docs.botframework.com/en-us/csharp/builder/sdkreference/dd/d38/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_describe_attribute.html). |
 | Terms | `[string,...]` | Regular expressions for matching a field value as described in TermsAttribute. |
 | MaxPhrase | int | Runs your terms through `Language.GenerateTerms(string, int)` to expand them. |
-| Values | `{ string: {Describe:string&#124;object, Terms:[string, ...], MaxPhrase}, ...}` | The string must be found in the type's enumeration. This allows you to override the automatically generated descriptions and terms. If `MaxPhrase` is specified, the terms are passed through `Language.GenerateTerms(string, int)`. |
+| Values | `{ string: {Describe:string|object, Terms:[string, ...], MaxPhrase}, ...}` | The string must be found in the type's enumeration. This allows you to override the automatically generated descriptions and terms. If `MaxPhrase` is specified, the terms are passed through `Language.GenerateTerms(string, int)`. |
 | Active | script | C# script with arguments `(JObject state)->bool` to test whether the field, message, or confirmation is active. |
 | Validate | script | C# script with arguments `(JObject state, object value)->ValidateResult` for validating a field value. |
 | Define | script | C# script with arguments `(JObject state, Field<JObject> field)` for dynamically defining a field. |
 | Next | script | C# script with arguments `(object value, JObject state)` for determining the next step after filling in a field. |
-| Before | `[confirm&#124;message, ...]` | Messages or confirmations before the containing field. (See below for details.) |
-| After| `[confirm&#124;message, ...]` | Messages or confirmations after the containing field. (See below for details.) |
+| Before | `[confirm|message, ...]` | Messages or confirmations before the containing field. (See below for details.) |
+| After| `[confirm|message, ...]` | Messages or confirmations after the containing field. (See below for details.) |
 | Dependencies | [string, ...] | Fields that this field, message, or confirmation depends on. |
 
 Use `{Confirm:script|[string, ...], ...templateArgs}` within the value of the **Before** property or 
