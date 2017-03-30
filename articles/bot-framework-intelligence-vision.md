@@ -18,27 +18,6 @@ ms.reviewer: rstand
 
 
 # Add image and video understanding to your bot
-The Vision APIs bring advanced image and video understanding skills to your bots. 
-State-of-the-art algorithms allow you to process images or videos and get back information you can transform into actions. For example, you can use them to recognize objects, people's faces, age, gender or even feelings. 
-
-The Vision APIs support a variety of image understanding features. They can identify mature or explicit content, estimate and accent colors, categorize the content of images, perform optical character recognition, and describe an image with complete English sentences. The Vision APIs also support several image and video processing capabilities, such as intelligently generating image or video thumbnails, or stabilizing the output of a video.
-
-> [!TIP]
-> You can play with the popular <a href="https://www.captionbot.ai/" target="_blank">CaptionBot.ai</a> to see some of the Vision APIs in action. If you want to explore more, you can find detailed documentation about each API, including developer guides and API references, on the <a href="https://www.microsoft.com/cognitive-services/en-us/documentation" target="_blank">documentation site</a>.
-
-Cognitive Services provide four APIs you can use to process images or videos:
-
-## Computer Vision API
-The <a href="https://www.microsoft.com/cognitive-services/en-us/computer-vision-api" target="_blank">Computer Vision API</a> extracts rich information about images (such as objects or people), determines if the image contains mature or explicit content, and processes text (using OCR) in images.
-
-## Emotion API
-The <a href="https://www.microsoft.com/cognitive-services/en-us/emotion-api" target="_blank">Emotion API</a> analyzes human faces and recognizes their emotion across eight possible categories of human emotions.
-
-## Face API
-The <a href="https://www.microsoft.com/cognitive-services/en-us/face-api" target="_blank">Face API</a> detects human faces, compares them to similar faces, and can even organize people into groups according to visual similarity.
-
-## Video API
-The <a href="https://www.microsoft.com/cognitive-services/en-us/video-api" target="_blank">Video API</a> analyzes and processes video to stabilize video output, detects motion, tracks faces, and can generate a motion thumbnail summary of the video.    
 
 ## Vision API examples for bots
 The Vision APIs are useful for any bot that receives images as input from users and wants to distill actionable information from them. Here are a few examples:

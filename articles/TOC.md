@@ -26,14 +26,15 @@
 #### [Bots in websites](bot-framework-design-patterns-bot-in-website.md) 
 ## [Emulator](resources-emulator.md)
 ## [Characteristics of IDs](resources-id-guide.md)
-## [Making bots smart](make-bots-smarter.md)
+## [Bot intelligence](make-bots-smart.md)
+<!-- REMOVE when complete transition is complete
 ### [Overview](bot-framework-intelligence-getstarted.md)
 ### [Language](bot-framework-intelligence-language.md)
 ### [Vision](bot-framework-intelligence-vision.md)
 ### [Speech](bot-framework-intelligence-speech.md)
 ### [Knowledge](bot-framework-intelligence-knowledge.md)
 ### [Search](bot-framework-intelligence-search.md)
-### [Location Control](bot-framework-intelligence-location-control.md)
+### [Location Control](bot-framework-intelligence-location-control.md) -->
 # Build with .NET
 ## [Overview](bot-framework-dotnet-overview.md)
 ## Key concepts
