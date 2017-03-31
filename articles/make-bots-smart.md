@@ -31,17 +31,17 @@ Microsoft Cognitive Services lets you tap into an ever-growing collection of pow
 ## Language understanding
 The interaction between users and bots is mostly free-form, so buts need to understand language naturally and contextually. The Cognitive Service Language APIs provide powerful language models to determine what users want, to identify concepts and entities in a given sentence, and ultimately to allow your bots to respond with the appropriate action. The five APIs support several text analytics capabilities, such as spell checking, sentiment detection, language modeling, and extraction of accurate and rich insights from text. 
 
-Cognitive Services provides five APIs for language understanding.
+Cognitive Services provides five APIs for language understanding:
 
-The <a href="https://www.microsoft.com/cognitive-services/en-us/language-understanding-intelligent-service-luis" target="_blank">Language Understanding Intelligent Service (LUIS)</a> is able to process natural language using pre-built or custom-trained language models.
+- The <a href="https://www.microsoft.com/cognitive-services/en-us/language-understanding-intelligent-service-luis" target="_blank">Language Understanding Intelligent Service (LUIS)</a> is able to process natural language using pre-built or custom-trained language models.
 
-The <a href="https://www.microsoft.com/cognitive-services/en-us/text-analytics-api" target="_blank">Text Analytics API</a> detects sentiment, key phrases, topics, and language from text.
+- The <a href="https://www.microsoft.com/cognitive-services/en-us/text-analytics-api" target="_blank">Text Analytics API</a> detects sentiment, key phrases, topics, and language from text.
 
-The <a href="https://www.microsoft.com/cognitive-services/en-us/bing-spell-check-api" target="_blank">Bing Spell Check API</a> provides powerful spell check capabilities, and is able to recognize the difference between names, brand names, and slang.
+- The <a href="https://www.microsoft.com/cognitive-services/en-us/bing-spell-check-api" target="_blank">Bing Spell Check API</a> provides powerful spell check capabilities, and is able to recognize the difference between names, brand names, and slang.
 
-The <a href="https://www.microsoft.com/cognitive-services/en-us/linguistic-analysis-api" target="_blank">Linguistic Analysis API</a> uses advanced linguistic analysis algorithms to process text, and perform operations such as breaking down the structure of the text, or performing part-of-speech tagging and parsing.
+- The <a href="https://www.microsoft.com/cognitive-services/en-us/linguistic-analysis-api" target="_blank">Linguistic Analysis API</a> uses advanced linguistic analysis algorithms to process text, and perform operations such as breaking down the structure of the text, or performing part-of-speech tagging and parsing.
 
-The <a href="https://www.microsoft.com/cognitive-services/en-us/web-language-model-api" target="_blank">Web Language Model (WebLM) API</a> can be used to automate a variety of natural language processing tasks, such as word frequency or next-word prediction, using advanced language modeling algorithms.
+- The <a href="https://www.microsoft.com/cognitive-services/en-us/web-language-model-api" target="_blank">Web Language Model (WebLM) API</a> can be used to automate a variety of natural language processing tasks, such as word frequency or next-word prediction, using advanced language modeling algorithms.
 
 ## Image and video understanding
 The Vision APIs bring advanced image and video understanding skills to your bots. 
@@ -66,11 +66,35 @@ The <a href="https://www.microsoft.com/cognitive-services/en-us/face-api" target
 #### Video API
 The <a href="https://www.microsoft.com/cognitive-services/en-us/video-api" target="_blank">Video API</a> analyzes and processes video to stabilize video output, detects motion, tracks faces, and can generate a motion thumbnail summary of the video.    
 
-
-
 ## Speech recognition and conversion
+Use the Speech APIs to add advanced speech skills to your bot that leverage industry-leading algorithms for speech-to-text and text-to-speech conversion, as well as speaker recognition. The Speech APIs use built-in language and acoustic models that cover a wide range of scenarios with high accuracy. 
+
+For applications that require further customization, you can use the Custom Recognition Intelligent Service (CRIS). This allows you to calibrate the language and acoustic models of the speech recognizer by tailoring it to the vocabulary of the application, or even to the speaking style of your users.
+
+There are three Speech APIs available in Cognitive Services to process or synthesize speech:
+
+- The <a href="https://www.microsoft.com/cognitive-services/en-us/speech-api" target="_blank">Bing Speech API</a> provides speech-to-text and text-to-speech conversion capabilities.
+- The <a href="https://www.microsoft.com/cognitive-services/en-us/custom-recognition-intelligent-service-cris" target="_blank">Custom Recognition Intelligent Service (CRIS)</a> allows you to create custom speech recognition models to tailor the speech-to-text conversion to an application's vocabulary or user's speaking style.
+- The <a href="https://www.microsoft.com/cognitive-services/en-us/speaker-recognition-api" target="_blank">Speaker Recognition API</a> enables speaker identification and verification through voice.
 
 ## Knowledge extraction
+The five knowledge APIs enable you to identify named entities or phrases in unstructured text, add personalized recommendations, provide auto-complete suggestions based on natural interpretation of user queries, and search academic papers and other research like a personalized FAQ service.
+
+
+## Entity Linking Intelligence Service
+The <a href="https://www.microsoft.com/cognitive-services/en-us/entity-linking-intelligence-service" target="_blank">Entity Linking Intelligence Service</a> annotates unstructured text with the relevant entities mentioned in the text. Depending on the context, the same word or phrase may refer to different things. This service understands the context of the supplied text and will identify each entity in your text.    
+
+## Recommendations API
+The <a href="https://www.microsoft.com/cognitive-services/en-us/bing-image-search-api" target="_blank">Recommendations API</a> provides "frequently bought together" recommendations to a product, as well as personalized recommendations based on a user's history. Use this service to build and train a model based on data that you provide, and then use this model to add recommendations to your application.
+
+## Knowledge Exploration Service
+The <a href="https://www.microsoft.com/cognitive-services/en-us/knowledge-exploration-service" target="_blank">Knowledge Exploration Service</a> provides natural language interpretation of user queries and returns annotated interpretations to enable rich search and auto-completion experiences that anticipate what the user is typing. Instant query completion suggestions and predictive query refinements are based on your own data and application-specific grammars to enable your users to perform fast queries.    
+
+## Academic Knowledge API
+The  <a href="https://www.microsoft.com/cognitive-services/en-us/academic-knowledge-api" target="_blank">Academic Knowledge API</a> returns academic research papers, authors, journals, conferences, topics, and universities from the <a href="https://www.microsoft.com/en-us/research/project/microsoft-academic-graph/" target="_blank">Microsoft Academic Graph</a>. Built as a domain-specific example of the Knowledge Exploration Service, the Academic Knowledge API provides a knowledge base using a graph-like dialog with search capabilities over hundreds of millions of research-related entities. Search for a topic, a professor, a university, or a conference, and the API will provide relevant publications and related entities. The grammar also supports natural queries like "Papers by Michael Jordan about machine learning after 2010".
+
+## QnA Maker
+The  <a href="https://qnamaker.ai" target="_blank">QnA Maker</a> is a free, easy-to-use, REST API and web-based service that trains AI to respond to users’ questions in a natural, conversational way. With optimized machine learning logic and the ability to integrate industry-leading language processing, QnA Maker distills semi-structured data like question and answer pairs into distinct, helpful answers.
 
 ## Search
 
