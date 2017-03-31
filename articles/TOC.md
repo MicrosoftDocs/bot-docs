@@ -76,7 +76,6 @@
 ### [Recognize user intent](bot-framework-nodejs-howto-recognize-intent.md)
 ### [Send and receive attachments](bot-framework-nodejs-howto-send-receive-attachments.md)
 ### [Send a card with buttons](bot-framework-nodejs-howto-send-card-buttons.md)
-### [Indicate typing](bot-framework-nodejs-howto-send-typing-indicator.md)
 ### [Save user data](bot-framework-nodejs-howto-save-user-data.md)
 ### [Support localization](bot-framework-nodejs-howto-localization.md)
 ### [Handle user and conversation events](bot-framework-nodejs-howto-handle-conversation-events.md)

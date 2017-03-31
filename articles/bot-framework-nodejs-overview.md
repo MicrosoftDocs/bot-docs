@@ -46,9 +46,23 @@ npm install --save botbuilder
 npm install --save restify
 ```
 
-See [Get Started](bot-framework-nodejs-getstarted.md) for instructions on how to build your first bot, once you've installed the SDK.
+## How to get started
 
-## Get code samples
+<!-- TODO: Make sure this section is consistent with Resources and doesn't duplicate it -->
+Once you've installed the SDK, see [Get Started](bot-framework-nodejs-getstarted.md) for instructions on how to quickly build and test a simple bot.
+
+For information on concepts that help you understand the rest of the documentation, see [Key concepts](bot-framework-nodejs-concepts.md).
+
+<!--
+* [Glossary](bot-framework-glossary.md): Covers terminology that is used throughout the SDK documentation. -->
+
+Before you start building your bot, read [Designing bots][DesignGuide] to learn about principles of bot design and [Patterns][DesignPatterns] for guidance on what features your bot needs in order to best address the top user scenarios. 
+
+To learn about how your bot processes user messages using dialogs and handlers, see [Managing conversation flow](bot-framework-nodejs-howto-manage-conversation-flow.md).
+
+Once you understand basic conversational mechanics, the [How-to guides][HowToFirstArticle] give you instructions on adding more advanced features to your bot.
+
+## Get Samples
 
 The <a href="https://github.com/Microsoft/BotBuilder" target="_blank">BotBuilder</a> GitHub repository 
 contains numerous code samples that show how to build bots using the Bot Builder SDK for Node.js. 
@@ -108,7 +122,7 @@ The following articles get you started building bots using the Bot Builder SDK f
 * [Get Started](bot-framework-nodejs-getstarted.md): Quickly build and test a simple bot by following instructions in this step-by-step tutorial.
 * [Key concepts](bot-framework-nodejs-concepts.md): Learn about key concepts in the Bot Builder SDK for Node.js.
 
-The following task-focused code samples that show how to use various features of the Bot Builder SDK for Node.js.
+The following task-focused how-to guides demonstrate various features of the Bot Builder SDK for Node.js.
 
 * [Manage conversation flow](bot-framework-nodejs-howto-manage-conversation-flow.md)
 * [Triggering actions](bot-framework-nodejs-howto-global-handlers.md)
@@ -116,8 +130,12 @@ The following task-focused code samples that show how to use various features of
 * [Send a rich card](bot-framework-nodejs-howto-send-card-buttons.md)
 * [Send attachments](bot-framework-nodejs-howto-send-receive-attachments.md)
 * [Saving user data](bot-framework-nodejs-howto-save-user-data.md)
-* [How to send a typing indicator](bot-framework-nodejs-howto-send-typing-indicator.md)
+
 
 If you encounter problems or have suggestions regarding the Bot Builder SDK for Node.js, 
 see [Support](resources-support.md) for a list of resources that provide opportunities 
 for support and feedback. 
+
+[HowToFirstArticle]: bot-framework-nodejs-howto-localization.md
+[DesignGuide]: bot-framework-design-overview.md
+[DesignPatterns]: bot-framework-design-patterns-task.md

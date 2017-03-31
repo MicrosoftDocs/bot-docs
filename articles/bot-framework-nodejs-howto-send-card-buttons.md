@@ -118,10 +118,24 @@ bot.dialog('buyButtonClick', [
 
 ```
 
+<!-- 
+
 > [!NOTE]
 > When sending a message that contains images, keep in mind that some channels download images before displaying a message to the user.   
 > As a result, a message containing an image followed immediately by a message without images may sometimes be flipped in the user's feed.
 > For information on how to avoid messages being sent out of order, see [Message ordering][MessageOrder].  
+
+-->
+### Add a message delay for image downloads
+Some channels tend to download images before displaying a message to the user so that if you send a message containing an image followed immediately by a message without images you’ll sometimes see the messages flipped in the user's feed. To minimize the chance of this you can try to insure that your images are coming from content deliver networks (CDNs) and avoid the use of overly large images. In extreme cases you may even need to insert a 1-2 second delay between the message with the image and the one that follows it. You can make this delay feel a bit more natural to the user by calling **session.sendTyping()** to send a typying indicator before starting your delay. 
+
+<!-- 
+To learn more about sending a typing indicator, see [How to send a typing indicator](bot-framework-nodejs-howto-send-typing-indicator.md).
+-->
+
+The Bot Framework implements a batching to try to prevent multiple messages from the bot from being displayed out of order. <!-- Unfortunately, not all channels can guarantee this. --> When your bot sends multiple replies to the user, the individual messages will be automatically grouped into a batch and delivered to the user as a set in an effort to preserve the original order of the messages. This automatic batching waits a default of 250ms after every call to **session.send()** before initiating the next call to **send()**.
+
+The message batching delay is configurable. To disable the SDK’s auto-batching logic, set the default delay to a large number and then manually call **sendBatch()** with a callback to invoke after the batch is delivered.
 
 
 ## Additional resources

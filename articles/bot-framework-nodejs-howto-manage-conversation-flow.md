@@ -178,6 +178,8 @@ If you run the previous waterfall example, you’ll notice that while it will as
 After the last step of the waterfall is reached it will simply start over with the next message. 
 To add logic to remember the user's name so that we only have to ask it once, see [Save user data](bot-framework-nodejs-howto-save-user-data.md) for an example. 
 
+<!-- TODO: Make this a section on global handlers/ actions -->
+
 ## Handling cancel
 
 Waterfalls are powerful but what if the bot is asking the user a series of questions and the user decides they’d like to cancel what they’re doing?
@@ -292,16 +294,30 @@ var bot = new builder.UniversalBot(connector, function (session) {
 
 ```
 
-## Message ordering
+## Send a typing indicator for long-running tasks
 
-When your bot sends multiple replies to the user, the individual messages will be automatically grouped into a batch and delivered to the user as a set in an effort to preserve the original order of the messages. This automatic batching waits a default of 250ms after every call to **session.send()** before initiating the next call to **send()**.
+<!-- TODO: This is related to sending images -->
+
+Users of your bot will expect a timely response to their message. If your bot performs some long running task like calling a server or executing a query, without giving the user some indication that the bot heard them, the user could get impatient and send additional messages to the bot. Many channels support the sending of a typing indication to simply show the user that their message was received and is being processed.
+
+The following example demonstrates how to send a typing indication using [session.sendTyping()][SendTyping].  
+
+
+```javascript
+
+// Create bot and default message handler
+var bot = new builder.UniversalBot(connector, function (session) {
+    session.sendTyping();
+    setTimeout(function () {
+        session.send("Hello there...");
+    }, 3000);
+});
+
+
+```
 
 
 
-The goal of batching is to try and avoid multiple messages from the bot being displayed out of order. <!-- Unfortunately, not all channels can guarantee this. --> In particular, some channels tend to download images before displaying a message to the user so that if you send a message containing an image followed immediately by a message without images you’ll sometimes see the messages flipped in the user's feed. To minimize the chance of this you can try to insure that your images are coming from content deliver networks (CDNs) and avoid the use of overly large images. In extreme cases you may even need to insert a 1-2 second delay between the message with the image and the one that follows it. You can make this delay feel a bit more natural to the user by calling **session.sendTyping()** before starting your delay. To learn more about sending a typing indicator, see [How to send a typing indicator](bot-framework-nodejs-howto-send-typing-indicator.md).
-
-
-The message batching delay is configurable. To disable the SDK’s auto-batching logic, set the default delay to a large number and then manually call **sendBatch()** with a callback to invoke after the batch is delivered.
 
 
 ## Additional resources
@@ -325,6 +341,8 @@ The message batching delay is configurable. To disable the SDK’s auto-batching
 [sprintf]: http://www.diveintojavascript.com/projects/javascript-sprintf
 [Session]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session
 
+
+[SendTyping]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#sendtyping
 [EndDialogWithResult]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#enddialogwithresult
 [IPromptResult]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptresult.html
 [Result_Response]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptresult.html#reponse

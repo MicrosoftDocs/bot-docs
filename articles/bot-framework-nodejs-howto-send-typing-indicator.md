@@ -21,7 +21,6 @@ ms.reviewer:
 >
 -->
 
-## Introduction
 
 In this article, we'll discuss how to send a typing indicator by using the Bot Builder SDK for Node.js.
 
