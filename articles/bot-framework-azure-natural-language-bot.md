@@ -2,7 +2,7 @@
 title: Set up a language understanding bot for Azure Bot Service | Microsoft Docs
 description: Learn how to set up language understanding for Azure Bot Service.
 keywords: Bot Framework, Azure Bot Service, natural language bot. language understanding bog
-author: Toney001
+author: RobStand
 manager: rstand
 ms.topic: bot-service-article
 ms.prod: botframework

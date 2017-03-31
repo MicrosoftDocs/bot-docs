@@ -26,14 +26,15 @@
 #### [Bots in websites](bot-framework-design-patterns-bot-in-website.md) 
 ## [Emulator](resources-emulator.md)
 ## [Characteristics of IDs](resources-id-guide.md)
-## [Making bots smart](make-bots-smarter.md)
+## [Bot intelligence](make-bots-smart.md)
+<!-- REMOVE when complete transition is complete
 ### [Overview](bot-framework-intelligence-getstarted.md)
 ### [Language](bot-framework-intelligence-language.md)
 ### [Vision](bot-framework-intelligence-vision.md)
 ### [Speech](bot-framework-intelligence-speech.md)
 ### [Knowledge](bot-framework-intelligence-knowledge.md)
 ### [Search](bot-framework-intelligence-search.md)
-### [Location Control](bot-framework-intelligence-location-control.md)
+### [Location Control](bot-framework-intelligence-location-control.md) -->
 # Build with .NET
 ## [Overview](bot-framework-dotnet-overview.md)
 ## Key concepts
@@ -49,6 +50,9 @@
 ### [Manage conversation flow](bot-framework-dotnet-manage-conversation-flow.md)
 ### FormFlow
 #### [Basic features of FormFlow](bot-framework-dotnet-formflow.md)
+#### [Advanced features of FormFlow](bot-framework-dotnet-formflow-advanced.md)
+#### [FormBuilder](bot-framework-dotnet-formflow-formbuilder.md)
+#### [Define a form using JSON schema](bot-framework-dotnet-formflow-json-schema.md)
 ### [Implement global handlers](bot-framework-dotnet-global-handlers.md)
 ### [Intercept messages](bot-framework-dotnet-middleware.md)
 ### [Send proactive messages](bot-framework-dotnet-proactive-messages.md)
@@ -58,7 +62,7 @@
 # Build with Node.js
 ## [Overview](bot-framework-nodejs-overview.md)
 ## [Key concepts](bot-framework-nodejs-concepts.md)
-# Build with Azure Bot Service
+<!--# Build with Azure Bot Service
 ## [Overview](bot-framework-azure-overview.md)
 ## [Debug your bot](bot-framework-azure-debug.md)
 ## Templates
@@ -67,7 +71,7 @@
 ### [Form bot](bot-framework-azure-form-bot.md)
 ### [Language understanding bot](bot-framework-azure-natural-language-bot.md)
 ### [Proactive bot](bot-framework-azure-proactive-bot.md)
-### [Question and answer bot](bot-framework-azure-question-and-answer-bot.md)
+### [Question and answer bot](bot-framework-azure-question-and-answer-bot.md)-->
 # How-To Guides
 ## Develop with Node.js
 ### [Create a bot with Node.js](bot-framework-nodejs-getstarted.md)
