@@ -29,8 +29,6 @@ Many channels support the sending of a typing indication to simply show the user
 
 
 <!-- TODO: Channels that support typing include: -->
-> [!NOTE]
-> To do: Add links to info on channels that support typing.
 
 ## Send a typing indicator
 
@@ -50,17 +48,14 @@ var bot = new builder.UniversalBot(connector, function (session) {
 
 ```
 
+Typing indicators are also useful when inserting a message delay to prevent messages that contain images from being sent out of order.
 
-## Next steps
+To learn more, see [How to send a rich card](bot-framework-nodejs-howto-send-card-buttons.md).
 
-In this article, we discussed how to send a typing indicator by using the Bot Builder SDK for Node.js. 
 
-Typing indicators are useful when inserting a message delay to avoid messages being sent out of order.
+## Additional resources
 
-To learn more, see:
-
-> [!NOTE]
-> To do: Add links to Guarantee message order
+* [sendTyping][SendTyping]
 
 
 [SendTyping]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#sendtyping

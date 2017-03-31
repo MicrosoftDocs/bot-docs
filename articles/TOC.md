@@ -75,6 +75,24 @@
 # How-To Guides
 ## Develop with Node.js
 ### [Create a bot with Node.js](bot-framework-nodejs-getstarted.md)
+### Send and receive messages
+#### [Using the default message handler](bot-framework-nodejs-howto-use-default-message-handler.md) 
+#### [Send and receive attachments](bot-framework-nodejs-howto-send-receive-attachments.md) 
+#### [Send a rich card](bot-framework-nodejs-howto-send-card-buttons.md)
+#### [Send a typing indicator](bot-framework-nodejs-howto-send-typing-indicator.md)
+### Ask questions
+#### [Use prompts with a waterfall](bot-framework-nodejs-howto-prompts.md)
+#### [Save user data](bot-framework-nodejs-howto-save-user-data.md)
+### Listen for commands
+#### [Trigger actions using global handlers](bot-framework-nodejs-howto-global-handlers.md)
+#### [Recognize user intent](bot-framework-nodejs-howto-recognize-intent.md)
+### Handle events
+#### [Handle user and conversation events](bot-framework-nodejs-howto-handle-conversation-events.md)
+#### [Send proactive messages](bot-framework-nodejs-howto-proactive-messages.md)
+### [Support localization](bot-framework-nodejs-howto-localization.md)
+### [Intercept messages](bot-framework-nodejs-howto-middleware.md)
+### [Use backchannel mechanism](bot-framework-nodejs-howto-backchannel.md)
+<!-- 
 ### [Manage conversation flow](bot-framework-nodejs-howto-manage-conversation-flow.md)
 ### [Trigger actions using global handlers](bot-framework-nodejs-howto-global-handlers.md)
 ### [Recognize user intent](bot-framework-nodejs-howto-recognize-intent.md)
@@ -86,6 +104,8 @@
 ### [Send proactive messages](bot-framework-nodejs-howto-proactive-messages.md)
 ### [Intercept messages](bot-framework-nodejs-howto-middleware.md)
 ### [Use backchannel mechanism](bot-framework-nodejs-howto-backchannel.md)
+-->
+
 ## Deploy your bot
 ### [Overview](bot-framework-publish-overview.md)
 ### [Register a bot](bot-framework-publish-register.md)

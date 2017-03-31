@@ -66,7 +66,9 @@ See [Saving user data](bot-framework-nodejs-howto-save-user-data.md) for an exam
 The following articles walk you through building your first bot and adding basic conversational ability to it.
 
 * [Get started](bot-framework-nodejs-getstarted.md)
-* [Manage conversation flow](bot-framework-nodejs-howto-manage-conversation-flow.md)
+* [Send and receive messages](bot-framework-nodejs-howto-use-default-message-handler.md)
+* [Ask questions](bot-framework-nodejs-howto-prompts.md)
+* [Listen for commands](bot-framework-nodejs-howto-global-handlers.md)
 
 The following task-focused code samples demonstrate features of the Bot Builder SDK for Node.js at more depth.
 

@@ -78,6 +78,33 @@ bot.dialog('listBuilderDialog', function (session) {
 });
 ```
 
+
+## Confirming interruptions
+
+By default, when the user says something that triggers a dialog it will automatically interrupt any dialogs that are active. 
+In most cases you’ll find that this is desirable, but they’re may be times where you’re doing something large or complex and you’d like to just confirm that 
+canceling the active dialog is what the user wants to do.
+This can be easily accomplished by adding a [confirmPrompt](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.itriggeractionoptions#confirmprompt) 
+option to your triggerAction() or cancelAction(). 
+
+```javascript
+// Add dialog to handle 'Buy' button click
+bot.dialog('buyButtonClick', [ ... waterfall steps ... ])
+    .triggerAction({ 
+        matches: /(buy|add)\s.*shirt/i
+        confirmPrompt: "This will cancel adding the current item. Are you sure?" 
+    })
+    .cancelAction('cancelBuy', "Ok... Item canceled", { 
+        matches: /^cancel/i,
+        confirmPrompt: "are you sure?" 
+    });
+
+```
+
+
+The cancel action's confirmPrompt will be used anytime the user says “cancel” and the trigger action's confirmPrompt will be used anytime another dialog 
+is triggered (including the ‘buyButtonClick’ dialog itself) and attempts to interrupt the dialog. 
+
 ## Additional resources
 
 - [Designing conversation flow](bot-framework-design-core-dialogs.md)

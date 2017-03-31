@@ -13,20 +13,8 @@ ms.reviewer:
 ---
 # Manage conversation flow
 
-<!--
-> [!div class="op_single_selector"]
-> * [.NET](bot-framework-dotnet-howto-manage-conversation-flow.md)
-> * [Node.js](bot-framework-nodejs-howto-manage-conversation-flow.md)
->
--->
-
 This article describes how to send messages and manage conversation flow using the Bot Builder SDK for Node.js.
 
-<!--
-> [!NOTE]
-> To do: add introductory content -- image of example bot dialog flow (from: media/designing-bots/core/dialogs-screens.png) 
-> and text describing the steps of that dialog flow.
--->
 ## Using the default message handler
 
 The simplest way to start sending and receiving messages is by using the default message handler. 
