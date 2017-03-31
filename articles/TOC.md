@@ -8,6 +8,9 @@
 ## [Create a bot with .NET](bot-framework-dotnet-getstarted.md)
 ## [Create a bot with Node.js](bot-framework-nodejs-getstarted.md)
 ## [Create a bot with Azure Bot Service](bot-framework-azure-getstarted.md)
+# Samples
+## Sample 1
+## Sample 2
 # Concepts
 ## [How Bot Framework works](bot-framework-overview-how-it-works.md)
 ## [Bot capabilities](bot-framework-design-capabilities.md)
@@ -52,7 +55,8 @@
 #### [Basic features of FormFlow](bot-framework-dotnet-formflow.md)
 #### [Advanced features of FormFlow](bot-framework-dotnet-formflow-advanced.md)
 #### [FormBuilder](bot-framework-dotnet-formflow-formbuilder.md)
-#### [Define a form using JSON schema](bot-framework-dotnet-formflow-json-schema.md)
+#### [Pattern language](bot-framework-dotnet-formflow-pattern-language.md)
+#### [JSON schema](bot-framework-dotnet-formflow-json-schema.md)
 ### [Implement global handlers](bot-framework-dotnet-global-handlers.md)
 ### [Intercept messages](bot-framework-dotnet-middleware.md)
 ### [Send proactive messages](bot-framework-dotnet-proactive-messages.md)

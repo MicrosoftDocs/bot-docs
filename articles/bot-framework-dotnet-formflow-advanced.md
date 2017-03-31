@@ -93,7 +93,7 @@ You can add these C# attributes to your class to customize behavior of a FormFlo
 | [Template](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d7/d0a/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_template_attribute.html) | Define the template to use to generate prompts or values in prompts |
 | [Terms](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d2/d27/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_terms_attribute.html) | Define the input terms that match a field or value |
 
-## Customize prompts using the Prompt attribute
+##<a id="prompt-attribute"></a> Customize prompts using the Prompt attribute
 
 Default prompts are automatically generated for each field in your form, 
 but you can specify a custom prompt for any field by using the `Prompt` attribute. 
@@ -160,7 +160,7 @@ What kind of sandwich would you like?
 >
 ```
 
-## Customize prompts using the Template attribute
+##<a id="template-attribute"></a> Customize prompts using the Template attribute
 
 While the `Prompt` attribute enables you to customize the prompt for a single field, 
 the `Template` attribute enables you to replace the default templates that FormFlow uses to automatically 
