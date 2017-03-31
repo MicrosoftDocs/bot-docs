@@ -31,7 +31,7 @@ To force the form to prompt the user for all fields (including those fields that
 initial state), pass in [FormOptions.PromptFieldsWithValues](https://docs.botframework.com/en-us/csharp/builder/sdkreference/dd/df7/namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow.html#a27be39918296ad3536d6a5c8d6ed5394aa796e574d8cf50f288b2e44ecd64764a) when you launch 
 the `FormDialog`. If a field contains an initial value, the prompt will use that value as the default value.
 
-You can also pass in LUIS entities to bind to the state. 
+You can also pass in [LUIS](http://luis.ai/) entities to bind to the state. 
 If the `EntityRecommendation.Type` is a path to a field in your C# class, 
 the `EntityRecommendation.Entity` will be passed through the recognizer to bind to your field. 
 FormFlow will skip steps for any fields that are bound to an entity; 
@@ -41,7 +41,7 @@ the user will not be prompted for those fields.
 
 To handle interdependencies between form fields or apply specific logic during the process of getting or setting 
 a field value, you can specify business logic within a validation function. 
-A validation function lets you manipulate the state and return a `ValidateResult` object that can contain: 
+A validation function lets you manipulate the state and return a [ValidateResult](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d4/d7b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_validate_result.html) object that can contain: 
 
 - a feedback string that describes the reason that a value is invalid
 - a transformed value
@@ -85,21 +85,20 @@ You can add these C# attributes to your class to customize behavior of a FormFlo
 
 | Attribute | Purpose |
 |----|----| 
-| [Describe] | Alter how a field or a value is shown in a template or card |
-| [Numeric] | Restrict the accepted values of a numeric field |
-| [Optional] | Mark a field as optional |
-| [Pattern] | Define a regular expression to validate a string field |
-| [Prompt] | Define the prompt for a field |
-| [Template] | Define the template to use to generate prompts or values in prompts |
-| [Terms] | Define the input terms that match a field or value |
+| [Describe](https://docs.botframework.com/en-us/csharp/builder/sdkreference/dd/d38/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_describe_attribute.html) | Alter how a field or a value is shown in a template or card |
+| [Numeric](https://docs.botframework.com/en-us/csharp/builder/sdkreference/df/d31/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_numeric_attribute.html) | Restrict the accepted values of a numeric field |
+| [Optional](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d7/d6f/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_optional_attribute.html) | Mark a field as optional |
+| [Pattern](https://docs.botframework.com/en-us/csharp/builder/sdkreference/da/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_pattern_attribute.html) | Define a regular expression to validate a string field |
+| [Prompt](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d0/d34/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_prompt_attribute.html) | Define the prompt for a field |
+| [Template](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d7/d0a/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_template_attribute.html) | Define the template to use to generate prompts or values in prompts |
+| [Terms](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d2/d27/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_terms_attribute.html) | Define the input terms that match a field or value |
 
 ## Customize prompts using the Prompt attribute
 
-The form automatically generates a default prompt for each field in your form, 
+Default prompts are automatically generated for each field in your form, 
 but you can specify a custom prompt for any field by using the `Prompt` attribute. 
-For example, in the basic FormFlow dialog that's described in [FormFlow](bot-framework-dotnet-formflow.md),
-the default prompt for the `SandwichOrder.Sandwich` field is "Please select a sandwich". 
-This code example uses the `Prompt` attribute to specify a custom prompt for that field.
+For example, if the default prompt for the `SandwichOrder.Sandwich` field is "Please select a sandwich", 
+you can add the `Prompt` attribute to specify a custom prompt for that field.
 
 [!code-csharp[Prompt attribute](../includes/code/dotnet-formflow-advanced.cs#promptAttribute)]
 
@@ -109,7 +108,7 @@ of the field and `{||}` is replaced with the list of choices in the enumeration.
 
 > [!NOTE]
 > By default, the description of a field is generated from the field's name. 
-> To specify a custom description, use the `Describe` attribute.
+> To specify a custom description for a field, add the `Describe` attribute.
 
 This snippet shows the customized prompt that is specified by the example above.
 
@@ -198,7 +197,7 @@ To do so, you can define multiple text strings using
 [pattern language](bot-framework-dotnet-formflow-pattern-language.md), and the form will randomly choose 
 from the available options each time it needs to display a prompt or message.
 
-This code example redefines the `TemplateUsage.NotUnderstood` template to specify two different variations of 
+This code example redefines the [TemplateUsage.NotUnderstood](https://docs.botframework.com/en-us/csharp/builder/sdkreference/dd/df7/namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow.html#a28ef6a551a3611e4a6abe06659797313aca296fd71c8deadb1bccdad8e097bc50) template to specify two different variations of 
 message. When the bot needs to communicate that it does not understand a user's input, it will 
 determine message contents by randomly selecting one of the two text strings. 
 

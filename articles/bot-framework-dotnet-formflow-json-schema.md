@@ -56,7 +56,7 @@ to support several additional properties.
 | References | References to include in scripts. For example, `[assemblyReference, ...]`. Paths should be absolute or relative to the current directory. By default, the script includes `Microsoft.Bot.Builder.dll`. |
 | Imports | Imports to include in scripts. For example, `[import, ...]`. By default, the script includes the `Microsoft.Bot.Builder`, `Microsoft.Bot.Builder.Dialogs`, `Microsoft.Bot.Builder.FormFlow`, `Microsoft.Bot.Builder.FormFlow.Advanced`, `System.Collections.Generic`, and `System.Linq` namespaces. |
 
-### Additional properties at the root of the schema or as peers of the `type` property
+### Additional properties at the root of the schema or as peers of the type property
 
 | Property | Value |
 |----|----|
@@ -73,7 +73,7 @@ For example, this schema snippet defines a template that overrides the `Template
 "Templates":{ "NotUnderstood": { "Patterns": ["I don't get it"], "ChoiceStyle":"Auto"}}
 ```
 
-### Additional properties as peers of the `type` property
+### Additional properties as peers of the type property
 
 | Property | Contents | Description |
 |----|----|----|
