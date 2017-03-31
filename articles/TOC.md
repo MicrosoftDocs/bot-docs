@@ -51,6 +51,7 @@
 ### FormFlow
 #### [Basic features of FormFlow](bot-framework-dotnet-formflow.md)
 #### [Advanced features of FormFlow](bot-framework-dotnet-formflow-advanced.md)
+#### [FormBuilder](bot-framework-dotnet-formflow-formbuilder.md)
 #### [Define a form using JSON schema](bot-framework-dotnet-formflow-json-schema.md)
 ### [Implement global handlers](bot-framework-dotnet-global-handlers.md)
 ### [Intercept messages](bot-framework-dotnet-middleware.md)

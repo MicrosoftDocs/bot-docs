@@ -37,7 +37,7 @@ the `EntityRecommendation.Entity` will be passed through the recognizer to bind 
 FormFlow will skip steps for any fields that are bound to an entity; 
 the user will not be prompted for those fields. 
 
-## Add business logic 
+##<a id="business-logic"></a> Add business logic 
 
 To handle interdependencies between form fields or apply specific logic during the process of getting or setting 
 a field value, you can specify business logic within a validation function. 
