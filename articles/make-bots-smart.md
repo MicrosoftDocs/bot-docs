@@ -18,12 +18,9 @@ ms.reviewer:
 > [!WARNING]
 > This content is under development.
 
-You can add smarts to your bots and make them more useful and engaging for your users. An intelligent bot has human-like senses and skills. It understands what users are saying or writing in natural language and respond back. 
+Microsoft Cognitive Services lets you tap into an ever-growing collection of powerful AI algorithms developed by experts in the fields of computer vision, speech, natural language processing, knowledge extraction, and web search. The services simplify a variety of AI-based tasks, giving you a quick way to add state-of-the-art intelligence technologies to your bots with just a few lines of code. The APIs integrate into most modern languages and platforms. The APIs are also constantly improving, learning, and getting smarter, so experiences are always up to date. 
 
-Bots respond as if they can see the world as people see it. They discover information and extract knowledge from different sources to provide useful answers, and, best of all, they learn as they acquire more experience to continuously improve their capabilities. 
-
-## About Microsoft Cognitive Services
-Microsoft Cognitive Services lets you tap into an ever-growing collection of powerful AI algorithms developed by experts in the fields of computer vision, speech, natural language processing, knowledge extraction, and web search. The services simplify a variety of AI-based tasks, giving you a quick way to add state-of-the-art intelligence technologies to your bots with just a few lines of code. The APIs integrate into most modern languages and platforms. The APIs are also constantly improving, learning, and getting smarter, so experiences are always up to date.  
+Intelligent bots respond as if they can see the world as people see it. They discover information and extract knowledge from different sources to provide useful answers, and, best of all, they learn as they acquire more experience to continuously improve their capabilities. 
 
 > [!TIP]
 > You can find comprehensive documentation of each product and their corresponding API references on the <a href="https://www.microsoft.com/cognitive-services/en-us/documentation" target="_blank">Cognitive Services documentation site</a>.
@@ -54,17 +51,13 @@ The Vision APIs support a variety of image understanding features. They can iden
 
 Cognitive Services provide four APIs you can use to process images or videos:
 
-#### Computer Vision API
-The <a href="https://www.microsoft.com/cognitive-services/en-us/computer-vision-api" target="_blank">Computer Vision API</a> extracts rich information about images (such as objects or people), determines if the image contains mature or explicit content, and processes text (using OCR) in images.
+- The <a href="https://www.microsoft.com/cognitive-services/en-us/computer-vision-api" target="_blank">Computer Vision API</a> extracts rich information about images (such as objects or people), determines if the image contains mature or explicit content, and processes text (using OCR) in images.
 
-#### Emotion API
-The <a href="https://www.microsoft.com/cognitive-services/en-us/emotion-api" target="_blank">Emotion API</a> analyzes human faces and recognizes their emotion across eight possible categories of human emotions.
+- The <a href="https://www.microsoft.com/cognitive-services/en-us/emotion-api" target="_blank">Emotion API</a> analyzes human faces and recognizes their emotion across eight possible categories of human emotions.
 
-#### Face API
-The <a href="https://www.microsoft.com/cognitive-services/en-us/face-api" target="_blank">Face API</a> detects human faces, compares them to similar faces, and can even organize people into groups according to visual similarity.
+- The <a href="https://www.microsoft.com/cognitive-services/en-us/face-api" target="_blank">Face API</a> detects human faces, compares them to similar faces, and can even organize people into groups according to visual similarity.
 
-#### Video API
-The <a href="https://www.microsoft.com/cognitive-services/en-us/video-api" target="_blank">Video API</a> analyzes and processes video to stabilize video output, detects motion, tracks faces, and can generate a motion thumbnail summary of the video.    
+- The <a href="https://www.microsoft.com/cognitive-services/en-us/video-api" target="_blank">Video API</a> analyzes and processes video to stabilize video output, detects motion, tracks faces, and can generate a motion thumbnail summary of the video.    
 
 ## Speech recognition and conversion
 Use the Speech APIs to add advanced speech skills to your bot that leverage industry-leading algorithms for speech-to-text and text-to-speech conversion, as well as speaker recognition. The Speech APIs use built-in language and acoustic models that cover a wide range of scenarios with high accuracy. 
