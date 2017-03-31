@@ -18,20 +18,7 @@ ms.reviewer: rstand
 
 
 # Add location control capabilities to your bot
-The Bing location control for Microsoft Bot Framework makes the process of collecting and validating the user's desired location in a conversation easy and reliable. The control is available for C# and Node.js and works consistently across all channels supported by Bot Framework.
 
-![Basic Scenario](media/skype_multiaddress_1.png)
-
-## Location control use cases for bots
-Bots often need the user to input a location to complete a task. For example, a Taxi bot requires the user's pickup and destination address before requesting a ride. Similarly, a Pizza bot must know the user's delivery address to submit the order, and so on. Normally, bot developers need to use a combination of location or place APIs so that their bots engage in a multi-turn dialog with users to get their desired location and subsequently validate it. Unfortunately, the development steps are usually complicated and error-prone.  
-
-The Bing location control makes this process easy by abstracting away the tedious coding steps to let the user pick a location and reliably validate it. The control offers the following capabilities:
-
-- Address look up and validation using Bing's Maps REST services
-- Address disambiguation when more than one address is found
-- Support for declaring required location fields
-- Support for FB Messenger's location picker GUI dialog
-- Open-source code (C# and Node.js) with customizable dialog strings
 
 You can find screenshots of the scenarios supported by the location control in the [Examples](#examples) section.
 

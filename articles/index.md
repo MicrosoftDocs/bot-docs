@@ -308,7 +308,7 @@ description:
                                         </div>
                                         <div class="cardText">
                                             <h3>Search</h3>
-                                            <p>Learn how to add intelligent web search capabilities to your bots.</p>
+                                            <p>Learn how to add intelligent web search capabilities to your bot.</p>
                                         </div>
                                     </div>
                                 </div>

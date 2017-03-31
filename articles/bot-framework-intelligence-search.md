@@ -18,24 +18,7 @@ ms.reviewer: rstand
 
 
 # Add search capabilities to your bot
-The Bing Search APIs enable you to add intelligent web search capabilities to your bots. With a few lines of code, you can access billions of webpages, images, videos, news, and other result types. You can configure the APIs to return results by geographical location, market, or language for better relevance. You can further customize your search using the supported search parameters, such as Safesearch to filter out adult content, and Freshness to return results according to a specific date.
 
-There are five Bing Search APIs available in Cognitive Services.
-
-## Web Search API
-The <a href="https://www.microsoft.com/cognitive-services/en-us/bing-web-search-api" target="_blank">Web Search API</a> provides web, image, video, news and related search results with a single API call.
-
-## Image Search API
-The <a href="https://www.microsoft.com/cognitive-services/en-us/bing-image-search-api" target="_blank">Image Search API</a> returns image results with enhanced metadata (dominant color, image kind, etc.) and supports several image filters to customize the results.
-
-## Video Search API
-The <a href="https://www.microsoft.com/cognitive-services/en-us/bing-video-search-api" target="_blank">Video Search API</a> retrieves video results with rich metadata (video size, quality, price, etc.), video previews, and supports several video filters to customize the results.
-
-## News Search API
-The <a href="https://www.microsoft.com/cognitive-services/en-us/bing-news-search-api" target="_blank">News Search API</a> finds news articles around the world that match your search query or are currently trending on the Internet.
-
-## Autosuggest API
-The  <a href="https://www.microsoft.com/cognitive-services/en-us/bing-autosuggest-api" target="_blank">Autosuggest API</a> offers instant query completion suggestions to complete your search query faster and with less typing.  
 
 > [!TIP]
 > You can find detailed documentation about each API, including developer guides and API references by navigating to the Cognitive Services  <a href="https://www.microsoft.com/cognitive-services/en-us/documentation" target="_blank">documentation site</a> and selecting the API you need on the left.

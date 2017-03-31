@@ -8,6 +8,9 @@
 ## [Create a bot with .NET](bot-framework-dotnet-getstarted.md)
 ## [Create a bot with Node.js](bot-framework-nodejs-getstarted.md)
 ## [Create a bot with Azure Bot Service](bot-framework-azure-getstarted.md)
+# Samples
+## Sample 1
+## Sample 2
 # Concepts
 ## [How Bot Framework works](bot-framework-overview-how-it-works.md)
 ## [Bot capabilities](bot-framework-design-capabilities.md)
