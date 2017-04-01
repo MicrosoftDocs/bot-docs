@@ -44,6 +44,6 @@ After you have registered your bot with the Bot Framework and deployed your bot 
 
 ## Publish your bot to the directory
 
-After you have registered your bot with the Bot Framework, deployed your bot to the cloud, and configured your bot to run on one or more channels, you can [publish it to the Bot Directory](~/directory-add-bot.md).
+After you have registered your bot with the Bot Framework, deployed your bot to the cloud, and configured your bot to run on one or more channels, you can [publish it to the Bot Directory](~/portal-submit-bot-directory.md).
 The Bot Directory is a public directory of all bots that are registered and published with Microsoft Bot Framework.
 By publishing your bot to the directory, you're making it available for users to find it there and add it to the channel(s) that they use.

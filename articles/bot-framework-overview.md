@@ -46,7 +46,7 @@ and passes the messages between them. The Connector also normalizes the messages
 if necessary.
 
 ### Bot Directory
-After you finish building and configuring your bot, you [publish your bot](~/directory-add-bot.md) to the Bot Directory. The Bot Directory is a public directory of bots registered and published with the Bot Framework. Users can discover and add your bot to channels, and they can try your bot from the Bot Directory.
+After you finish building and configuring your bot, you [publish your bot](~/portal-submit-bot-directory.md) to the Bot Directory. The Bot Directory is a public directory of bots registered and published with the Bot Framework. Users can discover and add your bot to channels, and they can try your bot from the Bot Directory.
 
 ## Making bots smarter
 To give your bot more human-like senses, you can incorporate LUIS for natural language understanding, 

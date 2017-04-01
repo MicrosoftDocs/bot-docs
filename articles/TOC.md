@@ -59,7 +59,7 @@
 ### [Deploy from Visual Studio](~/azure-deploy-bot-visual-studio.md)
 ## [Configure a bot](~/portal-configure-channels.md)
 <!--### [Set up continuous integration](~/azure-bot-service/continuous-integration.md)-->
-## [Publish a bot to the directory](~/directory-add-bot.md)
+## [Publish a bot to the directory](~/portal-submit-bot-directory.md)
 ## Troubleshoot
 ### [Troubleshoot general problems](bot-framework-troubleshooting-guide.md)
 ### [Troubleshoot authentication](bot-framework-troubleshooting-auth.md)
