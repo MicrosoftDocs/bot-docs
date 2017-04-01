@@ -78,7 +78,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/bot-framework-design-overview">
+                            <a href="/botframework/design-principles">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">

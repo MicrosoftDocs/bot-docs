@@ -137,5 +137,5 @@ see [Support](resources-support.md) for a list of resources that provide opportu
 for support and feedback. 
 
 [HowToFirstArticle]: bot-framework-nodejs-howto-localization.md
-[DesignGuide]: bot-framework-design-overview.md
+[DesignGuide]: design-principles.md
 [DesignPatterns]: bot-framework-design-patterns-task.md

@@ -211,7 +211,7 @@ to initiate the process of answering the user's question.
  
 ## Additional resources
 
-- [Add smarts to your bot with Microsoft Cognitive Services](bot-framework-intelligence-getstarted.md)
+- [Add smarts to your bot with Microsoft Cognitive Services](intelligent-bots.md)
 - [Add knowledge extraction to your bot](bot-framework-intelligence-knowledge.md)
 - [Add language understanding to your bot](bot-framework-intelligence-language.md)
 - [Add search capabilities to your bot](bot-framework-intelligence-search.md)

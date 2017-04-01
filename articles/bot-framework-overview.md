@@ -50,10 +50,10 @@ After you finish building and configuring your bot, you [publish your bot](bot-f
 
 ## Making bots smarter
 To give your bot more human-like senses, you can incorporate LUIS for natural language understanding, 
-Cortana for voice, and the Bing APIs for search. [Learn more](bot-framework-intelligence-getstarted.md) about adding intelligence to your bot.
+Cortana for voice, and the Bing APIs for search. [Learn more](intelligent-bots.md) about adding intelligence to your bot.
 
 ## Next Steps
-Get a [deeper look at the features](bot-framework-overview-how-it-works.md) of the Bot Framework. Then get started with [building a bot](bot-framework-botbuilder-overview.md) and learn more about [designing great bots](bot-framework-design-overview.md).
+Get a [deeper look at the features](bot-framework-overview-how-it-works.md) of the Bot Framework. Then get started with [building a bot](bot-framework-botbuilder-overview.md) and learn more about [designing great bots](design-principles.md).
 
 [NodeGetStarted]:bot-framework-nodejs-getstarted.md
 [DotNETGetStarted]:bot-framework-dotnet-getstarted.md

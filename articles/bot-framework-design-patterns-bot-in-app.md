@@ -81,7 +81,7 @@ that renders the embedded web view with the web chat control.
 
 - <a href="https://docs.botframework.com/en-us/restapi/DirectLine3/#navtitle" target="_blank">Direct Line API</a>
 - <a href="https://www.microsoft.com/cognitive-services/" target="_blank">Microsoft Cognitive Services</a>
-- [Add smarts to your bot with Microsoft Cognitive Services](bot-framework-intelligence-getstarted.md)
+- [Add smarts to your bot with Microsoft Cognitive Services](intelligent-bots.md)
 
 <!--
 This article covered ways to integrate bots with apps and 

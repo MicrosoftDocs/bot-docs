@@ -13,25 +13,12 @@
 ## Sample 2
 # Concepts
 ## [How Bot Framework works](bot-framework-overview-how-it-works.md)
-## [Bot capabilities](bot-framework-design-capabilities.md)
-## Designing bots
-### [Principles of bot design](bot-framework-design-overview.md)
-### [First interaction](bot-framework-design-core-greeting.md)
-### [Conversation flow](bot-framework-design-core-dialogs.md)
-### [Navigation](bot-framework-design-core-navigation.md)
-### [UX elements](bot-framework-design-core-ux-elements.md)
-### Patterns
-#### [Task automation](bot-framework-design-patterns-task.md)
-#### [Knowledge base](bot-framework-design-patterns-knowledge-base.md)
-#### [Bot to web](bot-framework-design-patterns-bot-to-web.md)
-#### [Handoff to human](bot-framework-design-patterns-human-handoff.md)
-#### [Bots in apps](bot-framework-design-patterns-bot-in-app.md)
-#### [Bots in websites](bot-framework-design-patterns-bot-in-website.md) 
+
 ## [Emulator](resources-emulator.md)
 ## [Characteristics of IDs](resources-id-guide.md)
 ## [Bot intelligence](intelligent-bots.md)
 <!-- REMOVE when complete transition is complete
-### [Overview](bot-framework-intelligence-getstarted.md)
+### [Overview](intelligent-bots.md)
 ### [Language](bot-framework-intelligence-language.md)
 ### [Vision](bot-framework-intelligence-vision.md)
 ### [Speech](bot-framework-intelligence-speech.md)
@@ -76,7 +63,21 @@
 ### [Language understanding bot](bot-framework-azure-natural-language-bot.md)
 ### [Proactive bot](bot-framework-azure-proactive-bot.md)
 ### [Question and answer bot](bot-framework-azure-question-and-answer-bot.md)-->
-# How-To Guides
+# How to
+## Plan & Design
+### [Principles of bot design](design-principles.md)
+### [First interaction](bot-framework-design-core-greeting.md)
+### [Bot capabilities](bot-framework-design-capabilities.md)
+### [Conversation flow](bot-framework-design-core-dialogs.md)
+### [Navigation](bot-framework-design-core-navigation.md)
+### [UX elements](bot-framework-design-core-ux-elements.md)
+### Bot Patterns
+#### [Task automation](bot-framework-design-patterns-task.md)
+#### [Knowledge base](bot-framework-design-patterns-knowledge-base.md)
+#### [Bot to web](bot-framework-design-patterns-bot-to-web.md)
+#### [Handoff to human](bot-framework-design-patterns-human-handoff.md)
+#### [Bots in apps](bot-framework-design-patterns-bot-in-app.md)
+#### [Bots in websites](bot-framework-design-patterns-bot-in-website.md) 
 ## Develop with Node.js
 ### [Create a bot with Node.js](bot-framework-nodejs-getstarted.md)
 ### Send and receive messages
