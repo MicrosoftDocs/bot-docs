@@ -27,9 +27,6 @@ When you've finished developing a bot and you're ready to share it with others, 
 
 ## Register your bot with the Bot Framework
 
-> [!IMPORTANT]
-> Review the [Bot Directory publishing guidelines](~/deploy/review-guidelines.md) and keep them in mind when registering and publishing your bot.
-
 Registration is a simple process. You provide some information about your bot and then generate the app ID and password that your bot will use to authenticate with the Bot Framework.
 For a detailed walk through of the registration process, see [Register a bot with the Bot Framework](~/portal-register-bot.md).
 
