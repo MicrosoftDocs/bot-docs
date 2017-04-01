@@ -159,7 +159,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/bot-framework-publish-overview">
+                            <a href="/botframework/deploy/overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">

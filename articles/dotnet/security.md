@@ -20,7 +20,7 @@ This article describes how to secure your bot by using HTTPS and Bot Framework a
 
 To ensure that your bot's endpoint can only be accessed by the Bot Framework [Connector](~/dotnet/concepts.md#connector), 
 configure your bot's endpoint to use only HTTPS and 
-enable Bot Framework authentication by [registering](~/~/deploy/register.md) your bot 
+enable Bot Framework authentication by [registering](~/deploy/register.md) your bot 
 to acquire its app Id and password.
 
 ## Configure authentication for your bot
@@ -51,4 +51,4 @@ specify the `[BotAuthentication]` attribute and pass in those values.
 
 - [Bot Builder SDK for .NET](~/dotnet/index.md)
 - [Key concepts in the Bot Builder SDK for .NET](~/dotnet/concepts.md)
-- [Register a bot with the Bot Framework](~/~/deploy/register.md)
+- [Register a bot with the Bot Framework](~/deploy/register.md)
