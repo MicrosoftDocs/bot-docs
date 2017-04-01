@@ -32,7 +32,7 @@
     "externalReference": [],
     "globalMetadata": {
       "uhfHeaderId": "MSDocsHeader-BotFramework",
-      "breadcrumb_path": "~/breadcrumb/TOC.yml",
+      "breadcrumb_path": "/botframework/breadcrumb/TOC.json",
       "author": "RobStand",
       "ms.prod": "botframework",
       "ms.date": "03/31/2017"
