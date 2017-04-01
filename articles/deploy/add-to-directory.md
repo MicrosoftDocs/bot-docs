@@ -14,9 +14,9 @@ ms.reviewer:
 
 # Publish a bot to the Bot Directory
 
-After you have [registered](bot-framework-publish-register.md) your bot with the Bot Framework, 
-[deployed](bot-framework-publish-deploy.md) your bot to the cloud, 
-and [configured](bot-framework-publish-configure.md) your bot to run on one or more channels, 
+After you have [registered](~/deploy/register.md) your bot with the Bot Framework, 
+[deployed](~/deploy/deploy.md) your bot to the cloud, 
+and [configured](~/deploy/configure.md) your bot to run on one or more channels, 
 you can publish it to the <a href="https://bots.botframework.com/" target="_blank">Bot Directory</a>. 
 The Bot Directory is a public directory of all bots that are registered and published with Microsoft Bot Framework. 
 By publishing your bot to the Bot Directory, you're making it available for users to find it there and add it to the channel(s) that they use.

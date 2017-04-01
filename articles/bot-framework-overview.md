@@ -36,17 +36,17 @@ To help you build your bot, the Bot Framework includes [Bot Builder](bot-framewo
 and built-in prompts that make interacting with users much simpler. Bot Builder also includes an emulator and several sample bots. In addition to Bot Builder, you can create bots using the [Azure Bot Service](~/azure-bot-service/overview.md) or the REST API.
 
 ### Developer Portal
-When you [register your bot](bot-framework-publish-register.md) with the Developer Portal, you can connect your bots to text/SMS, Skype, Slack, Facebook Messenger, or other channels. You can
+When you [register your bot](~/deploy/register.md) with the Developer Portal, you can connect your bots to text/SMS, Skype, Slack, Facebook Messenger, or other channels. You can
 register, connect, publish, and manage your bot through your bot's dashboard. 
 
 ### Bot Connector
-[Configure your bot](bot-framework-publish-configure.md) to  easily connect with users on channels, such Facebook
+[Configure your bot](~/deploy/configure.md) to  easily connect with users on channels, such Facebook
 Messenger or Skype, when you register your bot in the Developer Portal. The Connector service sits between your bot and the channels, 
 and passes the messages between them. The Connector also normalizes the messages that the bot sends the channel, 
 if necessary.
 
 ### Bot Directory
-After you finish building and configuring your bot, you [publish your bot](bot-framework-publish-add-to-directory.md) to the Bot Directory. The Bot Directory is a public directory of bots registered and published with the Bot Framework. Users can discover and add your bot to channels, and they can try your bot from the Bot Directory.
+After you finish building and configuring your bot, you [publish your bot](~/deploy/add-to-directory.md) to the Bot Directory. The Bot Directory is a public directory of bots registered and published with the Bot Framework. Users can discover and add your bot to channels, and they can try your bot from the Bot Directory.
 
 ## Making bots smarter
 To give your bot more human-like senses, you can incorporate LUIS for natural language understanding, 

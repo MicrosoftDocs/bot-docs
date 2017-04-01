@@ -79,7 +79,7 @@ Paste the password that you copied (in step 3 above) into the password field.
 
 > [!NOTE]
 > Click **Manage Microsoft App ID and password** only if you want to generate a secondary password for your bot now. 
-> In the future, you can manage app ID and password at any time by using the Bot Framework Portal, as described [here](~/bot-framework-publish-register.md#maintain). 
+> In the future, you can manage app ID and password at any time by using the Bot Framework Portal, as described [here](~/~/deploy/register.md#maintain). 
 
 ### Select your programming language 
 
@@ -120,8 +120,8 @@ You should see that the bot responds to each message you send by echoing back yo
 In this tutorial, you created a simple bot by using the Azure Bot Service 
 and verified the bot's functionality by using the built-in chat control within Azure. 
 At this point, you may want to add more functionality to your bot or set up continuous integration. 
-You can also [configure your bot](~/bot-framework-publish-configure.md) to run on one or more channels, 
-and [publish your bot](~/bot-framework-publish-add-to-directory.md) to the Bot Directory, without ever leaving 
+You can also [configure your bot](~/~/deploy/configure.md) to run on one or more channels, 
+and [publish your bot](~/~/deploy/add-to-directory.md) to the Bot Directory, without ever leaving 
 the Azure portal. 
 
 To learn more about building great bots with the Bot Framework, see the following articles:

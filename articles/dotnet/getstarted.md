@@ -126,13 +126,13 @@ You've successfully created a bot by using the Bot Application template Bot Buil
 In this tutorial, you created a simple bot by using the Bot Application template and the Bot Builder SDK for .NET
 and verified the bot's functionality by using the Bot Framework Emulator.
 If you'd like to share your bot with others, you'll need to
-[register](~/bot-framework-publish-register.md) it with the Bot Framework and
-[deploy](~/bot-framework-publish-deploy.md) it to the cloud.
+[register](~/~/deploy/register.md) it with the Bot Framework and
+[deploy](~/~/deploy/deploy.md) it to the cloud.
 
 To learn more about building great bots with the Bot Framework, see the following articles:
 
 - [Key concepts in the Bot Framework](~/bot-framework-concepts-overview.md)
 - [Introduction to bot design](~/design/principles.md)
 - [Bot Builder SDK for .NET](~/dotnet/index.md)
-- [Publish a bot to the Bot Framework](~/bot-framework-publish-overview.md)
+- [Publish a bot to the Bot Framework](~/~/deploy/overview.md)
 - [Bot Framework FAQ](~/bot-framework-faq.md)

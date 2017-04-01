@@ -55,7 +55,7 @@ When you finish writing your bot, you need to register it, connect it to channel
 Registering your bot describes it to the framework, and it’s how you get the bot’s app ID and password that’s used for authentication.
 Bots that you register are located at My bots in the portal.
 
-For more information on publishing a bot, see [Publish a bot](https://review.docs.microsoft.com/en-us/botframework/bot-framework-publish-overview).
+For more information on publishing a bot, see [Publish a bot](https://review.docs.microsoft.com/en-us/botframework/~/deploy/overview).
 
 ## Bot Directory
 The Bot Directory is a public directory of all bots that are registered and published with Microsoft Bot Framework. You are encouraged to always publish your bot because it makes it more discoverable.

@@ -26,7 +26,7 @@ Regardless of which cloud service you choose to host your bot, you must address 
 > creation process.
 
 ###<a id="appSettings"></a> Application configuration settings
-If you've already [registered](bot-framework-publish-register.md) your bot with the Bot Framework,
+If you've already [registered](~/deploy/register.md) your bot with the Bot Framework,
 update the Microsoft App Id and Microsoft App Password values in your application's configuration settings
 as part of the deployment process.
 Specify the **app ID** and **password** values that were generated for your bot during registration.
@@ -163,7 +163,7 @@ You can verify that the deployment has completed by visiting the web app in a br
 ### <a id="github4"></a>Step 4: Update Application settings with bot credentials
 
 Update **Application settings** to specify values for `MICROSOFT_APP_ID` and `MICROSOFT_APP_PASSWORD` using the
-values that you acquired when you [registered](bot-framework-publish-register.md) the bot in the Bot Framework Portal.
+values that you acquired when you [registered](~/deploy/register.md) the bot in the Bot Framework Portal.
 
 > [!NOTE]
 > If you have not yet registered the bot in the Bot Framework Portal, you can populate `MICROSOFT_APP_ID` and `MICROSOFT_APP_PASSWORD`
@@ -234,14 +234,14 @@ the next step in the bot publication process will depend upon whether or not you
 
 ### If you have already registered your bot with the Bot Framework:
 
-1. Return to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a> and [update your bot's registration data](bot-framework-publish-register.md#maintain) to specify the **HTTPS** endpoint for the bot.
+1. Return to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a> and [update your bot's registration data](~/deploy/register.md#maintain) to specify the **HTTPS** endpoint for the bot.
 
-2. [Configure the bot to run on one or more channels](bot-framework-publish-configure.md).
+2. [Configure the bot to run on one or more channels](~/deploy/configure.md).
 
 ### If you have not yet registered your bot with the Bot Framework:
 
-1. Register your bot by following the instructions found in [Register a bot with the Bot Framework](bot-framework-publish-register.md).
+1. Register your bot by following the instructions found in [Register a bot with the Bot Framework](~/deploy/register.md).
 
-2. Update the Microsoft App Id and Microsoft App Password values in your deployed application's configuration settings to specify the **app ID** and **password** values that were generated for your bot during the registration process, as described [here](bot-framework-publish-register.md#updateConfigSettings).
+2. Update the Microsoft App Id and Microsoft App Password values in your deployed application's configuration settings to specify the **app ID** and **password** values that were generated for your bot during the registration process, as described [here](~/deploy/register.md#updateConfigSettings).
 
-3. [Configure the bot to run on one or more channels](bot-framework-publish-configure.md).
+3. [Configure the bot to run on one or more channels](~/deploy/configure.md).
