@@ -50,7 +50,7 @@
 #### [Handoff to human](bot-framework-design-patterns-human-handoff.md)
 #### [Bots in apps](bot-framework-design-patterns-bot-in-app.md)
 #### [Bots in websites](bot-framework-design-patterns-bot-in-website.md)
-## [Develop with .NET] (bot-framework-dotnet-overview.md)
+## [Develop with .NET](bot-framework-dotnet-overview.md)
 ### [Core concepts](bot-framework-dotnet-concepts.md)
 #### [Activity types](bot-framework-dotnet-activities.md)
 #### [Dialogs](bot-framework-dotnet-dialogs.md)
