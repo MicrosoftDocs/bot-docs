@@ -159,7 +159,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/deploy/overview">
+                            <a href="/botframework/publish-bot-overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -170,7 +170,7 @@ description:
                                         </div>
                                         <div class="cardText">
                                             <h3>Deploy and publish bots</h3>
-                                            <p>Learn how to deploy and publish a bot.</p>
+                                            <p>Learn how to register a bot with the portal, deploy a bot to Azure, and publish a bot to the Bot Directory.</p>
                                         </div>
                                     </div>
                                 </div>
