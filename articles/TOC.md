@@ -1,9 +1,11 @@
 # Overview
 ## [What is the Bot Framework?](bot-framework-overview.md)
+## [How it works](bot-framework-overview-how-it-works.md)
 <!-- ## [Bot scenarios](bot-framework-overview-scenarios.md)-->
 <!-- ## [Core concepts](bot-framework-concepts-overview.md)-->
 ## [Get started](bot-framework-botbuilder-overview.md)
-## [Try it out](bot-framework-sample-bot.md)
+## [Channels]()
+<!-- ## [Try it out](bot-framework-sample-bot.md)-->
 # Quickstart
 ## [Create a bot with .NET](bot-framework-dotnet-getstarted.md)
 ## [Create a bot with Node.js](bot-framework-nodejs-getstarted.md)
@@ -12,8 +14,6 @@
 ## Sample 1
 ## Sample 2
 # Concepts
-## [How Bot Framework works](bot-framework-overview-how-it-works.md)
-
 ## [Emulator](resources-emulator.md)
 ## [Characteristics of IDs](resources-id-guide.md)
 ## [Bot intelligence](intelligent-bots.md)
