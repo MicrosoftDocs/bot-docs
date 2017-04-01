@@ -54,9 +54,12 @@
 ## [Develop with Node.js](nodejs/)
 ## [Deploy](~/deploy/overview.md)
 ### [Register a bot](~/deploy/register.md)
+### [Deploy from local git repo](~/azure-deploy-bot-local-git.md)
+### [Deploy from Github](~/azure-deploy-bot-github.md)
+### [Deploy from Visual Studio](~/azure-deploy-bot-visual-studio.md)
 ### [Deploy a bot](~/deploy/deploy.md)
 ### [Configure a bot](~/deploy/configure.md)
-### [Set up continuous integration](~/azure-bot-service/continuous-integration.md)
+<!--### [Set up continuous integration](~/azure-bot-service/continuous-integration.md)-->
 ### [Publish a bot to the directory](~/deploy/add-to-directory.md)
 ## Troubleshoot
 ### [Troubleshoot general problems](bot-framework-troubleshooting-guide.md)
