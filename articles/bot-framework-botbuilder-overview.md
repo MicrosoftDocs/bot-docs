@@ -34,7 +34,7 @@ The Azure Bot Service provides an integrated environment that is purpose-built f
 enabling you to build, connect, test, deploy and manage intelligent bots, all from one place. 
 You can write your bot in C# or Node.js directly in the browser using the Azure editor, without any need for a tool chain, such as a local editor or source control. 
 
-The [detailed walkthrough](bot-framework-azure-getstarted.md) using the Azure Bot Service will get you started toward building your own bot.
+The [detailed walkthrough](~/azure-bot-service/getstarted.md) using the Azure Bot Service will get you started toward building your own bot.
 
 ## REST API
 You can create a bot with any programming language by using the Bot Framework REST API. The Bot Framework REST API has three offerings to cover REST scenarios.

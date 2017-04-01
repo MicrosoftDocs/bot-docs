@@ -9,7 +9,7 @@
 # Quickstart
 ## [Create a bot with .NET](bot-framework-dotnet-getstarted.md)
 ## [Create a bot with Node.js](bot-framework-nodejs-getstarted.md)
-## [Create a bot with Azure Bot Service](bot-framework-azure-getstarted.md)
+## [Create a bot with Azure Bot Service](~/azure-bot-service/getstarted.md)
 # Samples
 ## Sample 1
 ## Sample 2
@@ -26,15 +26,15 @@
 ### [Search](bot-framework-intelligence-search.md)
 ### [Location Control](bot-framework-intelligence-location-control.md) -->
 <!--# Build with Azure Bot Service
-## [Overview](bot-framework-azure-overview.md)
-## [Debug your bot](bot-framework-azure-debug.md)
+## [Overview](~/azure-bot-service/overview.md)
+## [Debug your bot](~/azure-bot-service/debug.md)
 ## Templates
-### [Overview](bot-framework-azure-templates-overview.md)
-### [Basic bot](bot-framework-azure-basic-bot.md)
-### [Form bot](bot-framework-azure-form-bot.md)
-### [Language understanding bot](bot-framework-azure-natural-language-bot.md)
-### [Proactive bot](bot-framework-azure-proactive-bot.md)
-### [Question and answer bot](bot-framework-azure-question-and-answer-bot.md)-->
+### [Overview](~/azure-bot-service/templates-overview.md)
+### [Basic bot](~/azure-bot-service/basic-bot.md)
+### [Form bot](~/azure-bot-service/form-bot.md)
+### [Language understanding bot](~/azure-bot-service/natural-language-bot.md)
+### [Proactive bot](~/azure-bot-service/proactive-bot.md)
+### [Question and answer bot](~/azure-bot-service/question-and-answer-bot.md)-->
 # How to
 ## Plan & design
 ### [Principles of bot design](design-principles.md)
@@ -110,12 +110,12 @@
 ### [Register a bot](bot-framework-publish-register.md)
 ### [Deploy a bot](bot-framework-publish-deploy.md)
 ### [Configure a bot](bot-framework-publish-configure.md)
-### [Set up continuous integration](bot-framework-azure-continuous-integration.md)
+### [Set up continuous integration](~/azure-bot-service/continuous-integration.md)
 ### [Publish a bot to the directory](bot-framework-publish-add-to-directory.md)
 ## Troubleshoot
 ### [Troubleshoot general problems](bot-framework-troubleshooting-guide.md)
 ### [Troubleshoot authentication](bot-framework-troubleshooting-auth.md)
-### [Manage your MSA App ID and password](bot-framework-azure-manage-msa-app-ID.md)
+### [Manage your MSA App ID and password](~/azure-bot-service/manage-msa-app-ID.md)
 # Resources
 ## [Downloads](resources-downloads.md)
 ## [Support](resources-support.md)

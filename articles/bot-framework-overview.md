@@ -33,7 +33,7 @@ Developers writing bots all face the same problems: bots require basic I/O, they
 
 ### Bot Builder
 To help you build your bot, the Bot Framework includes [Bot Builder](bot-framework-botbuilder-overview.md), which provides rich and full-featured SDKs for the .NET and Node.js platforms. The SDKs provide features such as dialogs
-and built-in prompts that make interacting with users much simpler. Bot Builder also includes an emulator and several sample bots. In addition to Bot Builder, you can create bots using the [Azure Bot Service](bot-framework-azure-overview.md) or the REST API.
+and built-in prompts that make interacting with users much simpler. Bot Builder also includes an emulator and several sample bots. In addition to Bot Builder, you can create bots using the [Azure Bot Service](~/azure-bot-service/overview.md) or the REST API.
 
 ### Developer Portal
 When you [register your bot](bot-framework-publish-register.md) with the Developer Portal, you can connect your bots to text/SMS, Skype, Slack, Facebook Messenger, or other channels. You can

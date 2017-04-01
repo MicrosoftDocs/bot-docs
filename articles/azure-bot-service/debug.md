@@ -19,7 +19,7 @@ The Azure Bot Service bots are built on Azure. Even though your bot’s code sta
 ## Debug Node.js bots
 
 First, you need to set up your environment. You’ll need:
-- A local copy of your Azure Bot Service code for  [continuous integration](bot-framework-azure-continuous-integration.md)
+- A local copy of your Azure Bot Service code for  [continuous integration](~/azure-bot-service/continuous-integration.md)
 - The <a href="https://docs.botframework.com/en-us/downloads/" target="_blank">Bot Framework Emulator</a> for Mac, Linux, or Windows</a>
 - Node or other code editor such as <a href="https://code.visualstudio.com/" target="_blank">Mac, Linux, Windows</a>Visual Studio Code for <a href="https://code.visualstudio.com/" target="_blank"></a> for Mac, Linux, or Windows
 
@@ -75,7 +75,7 @@ The C# environment in Azure Bot Service has more in common with Node.js than a t
 
 First, you need to set up your environment. You’ll need:
 
-- A local copy of your Azure Bot Service code for  [continuous integration](bot-framework-azure-continuous-integration.md)
+- A local copy of your Azure Bot Service code for  [continuous integration](~/azure-bot-service/continuous-integration.md)
 - The <a href="https://docs.botframework.com/en-us/downloads/" target="_blank">Bot Framework Emulator</a> for Mac, Linux, or Windows</a>
 - The <a href="https://www.npmjs.com/package/azure-functions-cli" target="_blank">Azure Functions CLI</a> from npm.  
 - The <a href="https://github.com/dotnet/cli" target="_blank">DotNet CLI</a> from Github.
@@ -124,4 +124,4 @@ You can also set breakpoints for your bot. The breakpoints are hit only after cl
 
 ![csharp azureservice debug breakpoint](media/csharp-azureservice-debug-breakpoint.png)
 
-The steps above will cover most scenarios. However, if you use the [proactive template](bot-framework-azure-proactive-bot.md), these steps will enable debugging the bot, but you’ll have to do some additional work to enable queue storage that’s used between the trigger function and the bot function. 
+The steps above will cover most scenarios. However, if you use the [proactive template](~/azure-bot-service/proactive-bot.md), these steps will enable debugging the bot, but you’ll have to do some additional work to enable queue storage that’s used between the trigger function and the bot function. 

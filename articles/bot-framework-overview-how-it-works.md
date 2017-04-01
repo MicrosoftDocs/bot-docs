@@ -26,7 +26,7 @@ The Bot Builder SDKs are provided as open source on GitHub (see [BotBuilder](htt
 ### Azure Bot Service
 The Azure Bot Service provides an integrated environment that is purpose-built for bot development, enabling you to build, connect, test, deploy and manage intelligent bots, all from one place. You can write your bot in C# or Node.js directly in the browser using the Azure editor, without any need for a tool chain (local editor and source control).
 
-For a walkthough of creating a bot using Azure Bot Service, see [Use Azure Bot Service](bot-framework-azure-getstarted.md).
+For a walkthough of creating a bot using Azure Bot Service, see [Use Azure Bot Service](~/azure-bot-service/getstarted.md).
 
 ### Bot Framework REST API
 

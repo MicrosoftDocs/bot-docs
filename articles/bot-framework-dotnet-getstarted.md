@@ -17,7 +17,7 @@ ms.reviewer: rstand
 > [!div class="op_single_selector"]
 > * [.NET](bot-framework-dotnet-getstarted.md)
 > * [Node.js](bot-framework-nodejs-getstarted.md)
-> * [Azure Bot Service](bot-framework-azure-getstarted.md)
+> * [Azure Bot Service](~/azure-bot-service/getstarted.md)
 >
 -->
 

@@ -30,7 +30,7 @@ When you create the template, Azure Bot Service creates an empty LUIS applicatio
 
 Most messages will have a `Message` activity type that contains the text and attachments the user sent. If the message’s activity type is `Message`, the template posts the message to `BasicLuisDialog` in the context of the current message (see **BasicLuisDialog.csx**).
 
-The routing of the message is identical to the one presented in the [Basic bot template](bot-framework-azure-basic-bot.md).
+The routing of the message is identical to the one presented in the [Basic bot template](~/azure-bot-service/basic-bot.md).
 
 [!code-csharp[Post Message](../includes/code/azure-understanding-language.cs#postMessage)]
 

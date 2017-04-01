@@ -53,4 +53,4 @@ If for any reason you need to disconnect your deployment source from your bot, o
 ![continuous integration disconnect](media/continuous-integration-disconnect.png)
 
 ##Next steps
-Learn how to [debug your local code](bot-framework-azure-debug.md).
+Learn how to [debug your local code](~/azure-bot-service/debug.md).
