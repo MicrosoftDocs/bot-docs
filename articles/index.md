@@ -102,7 +102,7 @@ description:
                     <a href="#developing">Developing Bots</a>
                     <ul id="developing" class="cardsC">
                         <li>
-                            <a href="/botframework/dotnet/overview">
+                            <a href="/botframework/dotnet/">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -121,7 +121,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/nodejs/overview">
+                            <a href="/botframework/nodejs/">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
