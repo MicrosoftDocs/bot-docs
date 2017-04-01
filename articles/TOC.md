@@ -50,9 +50,6 @@
 ### [Manage state](bot-framework-dotnet-state.md)
 ### [Conduct audio calls](bot-framework-dotnet-audio-calls.md)
 ## [Release notes](bot-framework-dotnet-release-notes.md)
-# Build with Node.js
-## [Overview](bot-framework-nodejs-overview.md)
-## [Key concepts](bot-framework-nodejs-concepts.md)
 <!--# Build with Azure Bot Service
 ## [Overview](bot-framework-azure-overview.md)
 ## [Debug your bot](bot-framework-azure-debug.md)
@@ -78,7 +75,8 @@
 #### [Handoff to human](bot-framework-design-patterns-human-handoff.md)
 #### [Bots in apps](bot-framework-design-patterns-bot-in-app.md)
 #### [Bots in websites](bot-framework-design-patterns-bot-in-website.md) 
-## Develop with Node.js
+## [Develop with Node.js](bot-framework-nodejs-overview.md)
+### [Key concepts](bot-framework-nodejs-concepts.md)
 ### [Create a bot with Node.js](bot-framework-nodejs-getstarted.md)
 ### Send and receive messages
 #### [Using the default message handler](bot-framework-nodejs-howto-use-default-message-handler.md) 
