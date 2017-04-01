@@ -23,7 +23,7 @@ The title is "Greet users" because typically, you'll greet the users or do other
 >
 -->
 
-## Introduction
+
 
 This article demonstrates how your bot can handle events such as a user joining a conversation or adding a bot to their contacts list. 
 

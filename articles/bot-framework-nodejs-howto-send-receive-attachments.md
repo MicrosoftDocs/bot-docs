@@ -21,7 +21,7 @@ ms.reviewer:
 >
 -->
 
-## Introduction
+
 
 In this article, we'll discuss how to send messages containing attachments such as images by using the Bot Builder SDK for Node.js.
 

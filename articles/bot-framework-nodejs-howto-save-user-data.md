@@ -21,7 +21,7 @@ ms.reviewer:
 >
 -->
 
-## Introduction
+
 
 The Bot Framework SDK supports a storage system which it uses to track information like which dialog is active for a conversation,
 which step of a dialog is active, and data that the bot remembers about the user. 

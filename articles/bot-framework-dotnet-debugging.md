@@ -14,7 +14,7 @@ ms.reviewer:
 
 # Debug your bot
 
-## Introduction
+
 
 > [!NOTE]
 > Content coming soon...

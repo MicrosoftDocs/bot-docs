@@ -16,7 +16,7 @@ ms.reviewer:
 
 This article explores the fundamentals of dialogs in the Bot Builder SDK for .NET. 
 
-## Introduction
+
 
 When you create a bot using the Bot Builder SDK for .NET, you can use dialogs to model 
 a conversation and manage [conversation flow](bot-framework-design-core-dialogs.md). 
