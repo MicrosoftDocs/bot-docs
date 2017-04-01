@@ -3,7 +3,7 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          ["**/**.md", "**/**.yml"],
         ],
         "exclude": [
           "**/obj/**",
@@ -32,6 +32,7 @@
     "externalReference": [],
     "globalMetadata": {
       "uhfHeaderId": "MSDocsHeader-BotFramework",
+      "breadcrumb_path": "~/breadcrumb/TOC.yml",
       "author": "RobStand",
       "ms.prod": "botframework",
       "ms.date": "03/31/2017"
