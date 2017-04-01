@@ -1,6 +1,6 @@
 ---
 title: Make your bots smarter | Microsoft Docs
-description: Learn how to add smarts to your bots and make them more useful and engaging for your users.
+description: Add intelligence to bots and make them more useful and engaging for users with Microsoft Cognitive Services.
 keywords: bot framework, Microsoft Cognitive Services, smart bots, intelligence
 author: RobStand
 manager: rstand
@@ -14,10 +14,7 @@ ms.reviewer:
 #ROBOTS: Index
 #REVIEW
 ---
-# Make your bots smarter
-> [!WARNING]
-> This content is under development.
-
+# Make your bots smarter with Microsoft Cognitive Services
 Microsoft Cognitive Services lets you tap into an ever-growing collection of powerful AI algorithms developed by experts in the fields of computer vision, speech, natural language processing, knowledge extraction, and web search. The services simplify a variety of AI-based tasks, giving you a quick way to add state-of-the-art intelligence technologies to your bots with just a few lines of code. The APIs integrate into most modern languages and platforms. The APIs are also constantly improving, learning, and getting smarter, so experiences are always up to date. 
 
 Intelligent bots respond as if they can see the world as people see it. They discover information and extract knowledge from different sources to provide useful answers, and, best of all, they learn as they acquire more experience to continuously improve their capabilities. 
@@ -37,14 +34,13 @@ Cognitive Services provides five APIs for language understanding:
 
 - The <a href="https://www.microsoft.com/cognitive-services/en-us/web-language-model-api" target="_blank">Web Language Model (WebLM) API</a> can be used to automate a variety of natural language processing tasks, such as word frequency or next-word prediction, using advanced language modeling algorithms.
 
+Learn how to add language understanding to your bot.
+
 ## Image and video understanding
 The Vision APIs bring advanced image and video understanding skills to your bots. 
 State-of-the-art algorithms allow you to process images or videos and get back information you can transform into actions. For example, you can use them to recognize objects, people's faces, age, gender or even feelings. 
 
 The Vision APIs support a variety of image understanding features. They can identify mature or explicit content, estimate and accent colors, categorize the content of images, perform optical character recognition, and describe an image with complete English sentences. The Vision APIs also support several image and video processing capabilities, such as intelligently generating image or video thumbnails, or stabilizing the output of a video.
-
-> [!TIP]
-> You can play with the popular <a href="https://www.captionbot.ai/" target="_blank">CaptionBot.ai</a> to see some of the Vision APIs in action. If you want to explore more, you can find detailed documentation about each API, including developer guides and API references, on the <a href="https://www.microsoft.com/cognitive-services/en-us/documentation" target="_blank">documentation site</a>.
 
 Cognitive Services provide four APIs you can use to process images or videos:
 
@@ -54,7 +50,9 @@ Cognitive Services provide four APIs you can use to process images or videos:
 
 - The <a href="https://www.microsoft.com/cognitive-services/en-us/face-api" target="_blank">Face API</a> detects human faces, compares them to similar faces, and can even organize people into groups according to visual similarity.
 
-- The <a href="https://www.microsoft.com/cognitive-services/en-us/video-api" target="_blank">Video API</a> analyzes and processes video to stabilize video output, detects motion, tracks faces, and can generate a motion thumbnail summary of the video.    
+- The <a href="https://www.microsoft.com/cognitive-services/en-us/video-api" target="_blank">Video API</a> analyzes and processes video to stabilize video output, detects motion, tracks faces, and can generate a motion thumbnail summary of the video.
+
+Learn how to add image and video understanding to your bot.    
 
 ## Speech recognition and conversion
 Use the Speech APIs to add advanced speech skills to your bot that leverage industry-leading algorithms for speech-to-text and text-to-speech conversion, as well as speaker recognition. The Speech APIs use built-in language and acoustic models that cover a wide range of scenarios with high accuracy. 
@@ -66,6 +64,8 @@ There are three Speech APIs available in Cognitive Services to process or synthe
 - The <a href="https://www.microsoft.com/cognitive-services/en-us/speech-api" target="_blank">Bing Speech API</a> provides speech-to-text and text-to-speech conversion capabilities.
 - The <a href="https://www.microsoft.com/cognitive-services/en-us/custom-recognition-intelligent-service-cris" target="_blank">Custom Recognition Intelligent Service (CRIS)</a> allows you to create custom speech recognition models to tailor the speech-to-text conversion to an application's vocabulary or user's speaking style.
 - The <a href="https://www.microsoft.com/cognitive-services/en-us/speaker-recognition-api" target="_blank">Speaker Recognition API</a> enables speaker identification and verification through voice.
+
+Learn how to add speech recognition and conversion to your bot.
 
 ## Knowledge extraction
 Cognitive Services provides five knowledge APIs that enable you to identify named entities or phrases in unstructured text, add personalized recommendations, provide auto-complete suggestions based on natural interpretation of user queries, and search academic papers and other research like a personalized FAQ service.
@@ -81,6 +81,8 @@ Cognitive Services provides five knowledge APIs that enable you to identify name
 
 - The  <a href="https://qnamaker.ai" target="_blank">QnA Maker</a> is a free, easy-to-use, REST API and web-based service that trains AI to respond to users’ questions in a natural, conversational way. With optimized machine learning logic and the ability to integrate industry-leading language processing, QnA Maker distills semi-structured data like question and answer pairs into distinct, helpful answers.
 
+Learn how to add knowledge extraction to your bot.
+
 ## Search
 The Bing Search APIs enable you to add intelligent web search capabilities to your bots. With a few lines of code, you can access billions of webpages, images, videos, news, and other result types. You can configure the APIs to return results by geographical location, market, or language for better relevance. You can further customize your search using the supported search parameters, such as Safesearch to filter out adult content, and Freshness to return results according to a specific date.
 
@@ -94,14 +96,14 @@ There are five Bing Search APIs available in Cognitive Services.
 
 - The <a href="https://www.microsoft.com/cognitive-services/en-us/bing-news-search-api" target="_blank">News Search API</a> finds news articles around the world that match your search query or are currently trending on the Internet.
 
-- The  <a href="https://www.microsoft.com/cognitive-services/en-us/bing-autosuggest-api" target="_blank">Autosuggest API</a> offers instant query completion suggestions to complete your search query faster and with less typing.  
+- The  <a href="https://www.microsoft.com/cognitive-services/en-us/bing-autosuggest-api" target="_blank">Autosuggest API</a> offers instant query completion suggestions to complete your search query faster and with less typing. 
+
+Learn how to add search to your bot. 
 
 ## Location control
-The Bing location control for Microsoft Bot Framework makes the process of collecting and validating the user's desired location in a conversation easy and reliable. The control is available for C# and Node.js and works consistently across all channels supported by Bot Framework.
+Bots often need the user to input a location to complete a task. For example, a Taxi bot requires the user's pickup and destination address before requesting a ride. Similarly, a Pizza bot must know the user's delivery address to submit the order, and so on. Normally, bot developers need to use a combination of location or place APIs so that their bots engage in a multi-turn dialog with users to get their desired location and subsequently validate it. Unfortunately, the development steps are usually complicated and error-prone. 
 
 ![Basic Scenario](media/skype_multiaddress_1.png)
-
-Bots often need the user to input a location to complete a task. For example, a Taxi bot requires the user's pickup and destination address before requesting a ride. Similarly, a Pizza bot must know the user's delivery address to submit the order, and so on. Normally, bot developers need to use a combination of location or place APIs so that their bots engage in a multi-turn dialog with users to get their desired location and subsequently validate it. Unfortunately, the development steps are usually complicated and error-prone.  
 
 The Bing location control makes this process easy by abstracting away the tedious coding steps to let the user pick a location and reliably validate it. The control offers the following capabilities:
 
@@ -111,9 +113,10 @@ The Bing location control makes this process easy by abstracting away the tediou
 - Support for FB Messenger's location picker GUI dialog
 - Open-source code (C# and Node.js) with customizable dialog strings
 
+Learn how to add the location control to your bot.
+
 ## Additional resources
 
-
-You can also find comprehensive documentation of each product and their corresponding API references on the <a href="https://www.microsoft.com/cognitive-services/en-us/documentation" target="_blank">Cognitive Services documentation site</a>.
+You can find comprehensive documentation of each product and their corresponding API references on the <a href="https://www.microsoft.com/cognitive-services/en-us/documentation" target="_blank">Cognitive Services documentation site</a>.
 
 

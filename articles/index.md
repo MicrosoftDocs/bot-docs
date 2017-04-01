@@ -202,7 +202,7 @@ description:
                     <a href="#intelligence">Intelligence</a>
                     <ul id="intelligence" class="cardsC">
                         <li>
-                            <a href="/botframework/bot-framework-intelligence-getstarted">
+                            <a href="/botframework/intelligent-bots">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">

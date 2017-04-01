@@ -29,7 +29,7 @@
 #### [Bots in websites](bot-framework-design-patterns-bot-in-website.md) 
 ## [Emulator](resources-emulator.md)
 ## [Characteristics of IDs](resources-id-guide.md)
-## [Bot intelligence](make-bots-smart.md)
+## [Bot intelligence](intelligent-bots.md)
 <!-- REMOVE when complete transition is complete
 ### [Overview](bot-framework-intelligence-getstarted.md)
 ### [Language](bot-framework-intelligence-language.md)
