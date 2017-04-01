@@ -53,7 +53,7 @@
 ## [Develop with .NET](dotnet/)
 ## [Develop with Node.js](nodejs/)
 ## [Register a bot](~/deploy/register.md)
-## [Deploy](~/deploy/overview.md)
+## [Deploy](~/publish-bot-overview.md)
 ### [Deploy from local git repo](~/azure-deploy-bot-local-git.md)
 ### [Deploy from Github](~/azure-deploy-bot-github.md)
 ### [Deploy from Visual Studio](~/azure-deploy-bot-visual-studio.md)

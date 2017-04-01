@@ -25,7 +25,7 @@ To use the Microsoft Bot Framework Connector Service, you must have:
 * An Azure-accessible REST endpoint exposing a callback for the Connector service.
 * Developer accounts on one or more communication services(such as Skype) where your Bot will communicate.
 
-See [Publish a bot](~/deploy/overview.md) for the registration and deployment steps required to communicate with your bot using the connector.
+See [Publish a bot](~/publish-bot-overview.md) for the registration and deployment steps required to communicate with your bot using the connector.
 See Channels for an overview of the available conversation channels.
 
 ## Core principles

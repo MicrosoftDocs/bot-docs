@@ -14,7 +14,7 @@ ms.reviewer:
 
 # Configure a bot to run on one or more channels
 
-After you have [registered](~/deploy/register.md) your bot with the Bot Framework and [deployed](~/deploy/deploy.md) your bot to the cloud, 
+After you have [registered](~/deploy/register.md) your bot with the Bot Framework and [deployed](~/publish-bot-overview.md) your bot to the cloud, 
 you can configure it to run on one or more channels. 
 
 ## Overview
