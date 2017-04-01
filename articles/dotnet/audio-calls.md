@@ -14,7 +14,7 @@ ms.reviewer:
 
 # Conduct audio calls with Skype
 
-[!include[Introduction to conducting audio calls](../includes/snippet-audio-call-intro.md)]
+[!include[Introduction to conducting audio calls](~/includes/snippet-audio-call-intro.md)]
 This article describes how to enable support for audio calls via Skype by using the Bot Builder SDK for .NET. 
 
 ## Conduct an audio call
@@ -168,5 +168,5 @@ private async Task OnRecordCompleted(RecordOutcomeEvent recordOutcomeEvent)
 
 ## Additional resources
 
-- [Bot capabilities](bot-framework-design-capabilities.md)
+- [Bot capabilities](~/design/capabilities.md)
 - <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_blank">Builder library</a>

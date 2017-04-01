@@ -15,7 +15,7 @@ ms.reviewer:
 # Add attachments to messages
 
 A message exchange between user and bot can 
-contain media attachments (e.g., image, video, audio, file) 
+contain ~/media attachments (e.g., image, video, audio, file) 
 or even rich cards that are rendered as a list or carousel. 
 This article describes how to add attachments to messages using the Bot Framework Connector service via the 
 Bot Builder SDK for .NET. 
@@ -24,15 +24,15 @@ Bot Builder SDK for .NET.
 
 Within an `Activity` object, the `Attachments` property contains an array of `Attachment` objects 
 that represent any attachments on the message. 
-An attachment may be a media attachment (e.g., image, video, audio, file) or a rich card attachment.
+An attachment may be a ~/media attachment (e.g., image, video, audio, file) or a rich card attachment.
 
-## Send media attachments
+## Send ~/media attachments
 
-To include a media attachment within a message, 
+To include a ~/media attachment within a message, 
 create an `Attachment` object and set the `ContentType`, `ContentUrl`, and `Name` properties. 
 This code example shows how to add an image to a message:
 
-[!code-csharp[Add media attachment](../includes/code/dotnet-add-attachments.cs#addMediaAttachment)]
+[!code-csharp[Add ~/media attachment](~/includes/code/dotnet-add-attachments.cs#addMediaAttachment)]
 
 > [!NOTE]
 > If an attachment's format is image, audio, or video, the Connector service will communicate 
@@ -56,7 +56,7 @@ The Hero card typically contains a single large image, one or more buttons, and 
 
 This code sample shows how to create a reply message that contains three Hero cards rendered in carousel format: 
 
-[!code-csharp[Add HeroCard attachment](../includes/code/dotnet-add-attachments.cs#addHeroCardAttachment)]
+[!code-csharp[Add HeroCard attachment](~/includes/code/dotnet-add-attachments.cs#addHeroCardAttachment)]
 
 ### Thumbnail card
 
@@ -64,7 +64,7 @@ The Thumbnail card typically contains a single small image, one or more buttons,
 
 This code sample shows how to create a reply message that contains two Thumbnail cards rendered in list format. 
 
-[!code-csharp[Add ThumbnailCard attachment](../includes/code/dotnet-add-attachments.cs#addThumbnailCardAttachment)]
+[!code-csharp[Add ThumbnailCard attachment](~/includes/code/dotnet-add-attachments.cs#addThumbnailCardAttachment)]
 
 ### Receipt card
 
@@ -73,7 +73,7 @@ It typically contains the list of items to include on the receipt, tax and total
 
 This code sample shows how to create a reply message that contains a Receipt card: 
 
-[!code-csharp[Add ReceiptCard attachment](../includes/code/dotnet-add-attachments.cs#addReceiptCardAttachment)]
+[!code-csharp[Add ReceiptCard attachment](~/includes/code/dotnet-add-attachments.cs#addReceiptCardAttachment)]
 
 ### Sign-in card
 
@@ -82,7 +82,7 @@ It typically contains text and one or more buttons that the user can click to in
 
 This code sample shows how to create a reply message that contains a Sign-in card:
 
-[!code-csharp[Add SignInCard attachment](../includes/code/dotnet-add-attachments.cs#addSignInCardAttachment)]
+[!code-csharp[Add SignInCard attachment](~/includes/code/dotnet-add-attachments.cs#addSignInCardAttachment)]
 
 ## Process events within rich cards
 

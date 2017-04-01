@@ -1,4 +1,4 @@
-# [Overview](~/dotnet/overview.md)
+# [Overview](~/dotnet/index.md)
 # How to
 ## [Core concepts](~/dotnet/concepts.md)
 ### [Activity types](~/dotnet/activities.md)

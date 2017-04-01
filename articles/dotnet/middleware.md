@@ -17,11 +17,11 @@ ms.reviewer:
 <!--
 > [!div class="op_single_selector"]
 > * [.NET](~/dotnet/howto-middleware.md)
-> * [Node.js](bot-framework-nodejs-howto-middleware.md)
+> * [Node.js](~/nodejs/middleware.md)
 >
 -->
 
-[!include[Introducton to message logging](../includes/snippet-message-logging-intro.md)]
+[!include[Introducton to message logging](~/includes/snippet-message-logging-intro.md)]
 This article describes how to intercept messages that are exchanged between user and bot by using the Bot Builder SDK for .NET. 
 
 ## Intercept messages
@@ -64,5 +64,5 @@ update the `LogAsync` method as necessary to define the actions that you want to
 
 ## Additional resources
 
-- [Bot capabilities](bot-framework-design-capabilities.md)
+- [Bot capabilities](~/design/capabilities.md)
 - <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_blank">Builder library</a>

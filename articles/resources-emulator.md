@@ -24,7 +24,7 @@ The emulator displays messages as they would appear in a web chat UI and lets yo
 > A main advantage of using the emulator is that you don't have register it with the Bot Framework or configure it on a channel before you can test it. 
 
 
-![Emulator UI](media/emulator/emulator-ui-new.png)
+![Emulator UI](~/media/emulator/emulator-ui-new.png)
 
 ## Before you get started
 * Download and run the Bot Framework Emulator. Download packages for Mac, Windows, and Linux are available from the [GitHub releases page](https://github.com/Microsoft/BotFramework-Emulator/releases). The latest Windows installer is available from the [emulator download page](https://emulator.botframework.com) (download starts immediately).
@@ -39,7 +39,7 @@ For localhost debugging you will not typically need to enter the MSA appId or pa
 
 To connect, enter your bot's endpoint into the address bar and click on the Connect button:
 
-![Connecting to emulator using localhost](media/emulator/emulator-connect_localhost_credentials.png)
+![Connecting to emulator using localhost](~/media/emulator/emulator-connect_localhost_credentials.png)
 
 ## <a id="remotehost"></a> Connect to a bot hosted remotely
 This scenario is similar to the localhost scenario, but with two additional requirements:
@@ -49,7 +49,7 @@ This scenario is similar to the localhost scenario, but with two additional requ
 If you registered your bot with the Bot Framework, you can retrieve endpoint and MSA appId from its registration page. If you do not already know the MSA password of your bot, 
 a new one can be generated from the <a href="https://dev.botframework.com/" target="_blank">registration page</a>.
 
-![Bot Framework Developer Dashboard](media/emulator/dashboard.png)
+![Bot Framework Developer Dashboard](~/media/emulator/dashboard.png)
 
 > [!TIP]
 > If you want to [debug your Azure Bot Service Bot][AzureBotDebug] code in your IDE, instead of relying only on the visual inspection and logs provided by the emulator, you can set up [continuous integration][AzureBotContinuousIntegration].
@@ -65,7 +65,7 @@ The Bot Framework Emulator integrates tightly with ngrok and can launch it for y
 
 1. Download the [ngrok][ngrokDownload] executable to your local machine
 2. Configure the path to ngrok in the emulator's App Settings dialog
-![Setting the path to ngrok](media/emulator/emulator-configure_ngrok_path.png)
+![Setting the path to ngrok](~/media/emulator/emulator-configure_ngrok_path.png)
 
 When the emulator connects to a remotely hosted bot, it displays messages in its log that indicate it's automatically launched ngrok.
 
@@ -127,14 +127,14 @@ should remain on GitHub instead of here -->
 [AzureBotDebug]: https://docs.botframework.com/en-us/azure-bot-service/manage/debug/#navtitle
 [AzureBotDebugCS]: https://docs.botframework.com/en-us/azure-bot-service/manage/debug/#debugging-c-bots-built-using-the-azure-bot-service-on-windows
 
-[EmulatorConnectPicture]: media/emulator/emulator-connect_localhost_credentials.png
-[EmulatorNgrokPath]: media/emulator/emulator-configure_ngrok_path.png
-[EmulatorNgrokMonitor]: media/emulator/emulator-testbot-ngrok-monitoring.png
-[EmulatorUI]: media/emulator/emulator-ui-new.png
+[EmulatorConnectPicture]: ~/media/emulator/emulator-connect_localhost_credentials.png
+[EmulatorNgrokPath]: ~/media/emulator/emulator-configure_ngrok_path.png
+[EmulatorNgrokMonitor]: ~/media/emulator/emulator-testbot-ngrok-monitoring.png
+[EmulatorUI]: ~/media/emulator/emulator-ui-new.png
 
 [TroubleshootingGuide]: bot-framework-troubleshooting-guide.md
 [TroubleshootingAuth]: bot-framework-troubleshooting-auth.md
-[NodeGetStarted]: bot-framework-nodejs-getstarted.md
+[NodeGetStarted]: ~/nodejs/getstarted.md
 [CSGetStarted]: ~/dotnet/getstarted.md
 [BotFrameworkPublishOverview]: bot-framework-publish-overview.md
 [ActivityConcept]: bot-framework-concept-activity.md

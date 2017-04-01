@@ -70,7 +70,7 @@ set the `Activity` object's `ChannelData` property to a JSON object that specifi
 
 > [!NOTE]
 > To support buttons in Slack messages, you must enable **Interactive Messages** when you 
-> [configure your bot](bot-framework-publish-configure.md) for the Slack channel.
+> [configure your bot](~/bot-framework-publish-configure.md) for the Slack channel.
 
 This snippet shows an example of the `channelData` property for a custom Slack message.
 
@@ -223,7 +223,7 @@ For details about these Telegram methods and their parameters, see the
 
 > [!NOTE]
 > <ul><li>The `chat_id` parameter is common to all Telegram methods. If you do not specify `chat_id` as a parameter, the framework will provide the ID for you.</li>
-<li>Instead of passing file contents inline, specify the file using a URL and media type as shown in the example below.</li>
+<li>Instead of passing file contents inline, specify the file using a URL and ~/media type as shown in the example below.</li>
 <li>Within each message that your bot receives from the Telegram channel, the `ChannelData` property will include the message that your bot sent previously.</li></ul>
 
 This snippet shows an example of a `channelData` property that specifies a single Telegram method.

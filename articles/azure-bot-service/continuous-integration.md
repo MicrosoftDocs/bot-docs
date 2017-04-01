@@ -31,17 +31,17 @@ This document highlights the specific continuous integration features of Azure B
 
 The first step is to create an empty repository. At the time of this writing, Azure supports the following source control systems.
 
-![continuous integration sourcecontrol system.png](media/continuous-integration-sourcecontrolsystem.png)
+![continuous integration sourcecontrol system.png](~/media/continuous-integration-sourcecontrolsystem.png)
 
 ##Download the bot code
-1. Download the bot code zip file from the Settings tab of your Azure bot.  ![continuous integration download.png](media/continuous-integration-download.png)
+1. Download the bot code zip file from the Settings tab of your Azure bot.  ![continuous integration download.png](~/media/continuous-integration-download.png)
 2. Unzip the bot code file to the local folder where you are planning to sync your deployment source.
 
 ##Choose the deployment source and connect your repository
 
 1. Click the **Settings** tab within your Azure bot, and expand the **Continuous integration** section.
-2. Click Set up integration source. ![continuous integration setup click](media/continuous-integration-setupclick.png) 
-3. Click **Setup**, select your deployment source, and follow the steps to connect it. Make sure you select the repository type that you created in step 1. ![continuous integration sources](media/continuous-integration-sources.png)
+2. Click Set up integration source. ![continuous integration setup click](~/media/continuous-integration-setupclick.png) 
+3. Click **Setup**, select your deployment source, and follow the steps to connect it. Make sure you select the repository type that you created in step 1. ![continuous integration sources](~/media/continuous-integration-sources.png)
 
 ##Disconnect your deployment source
 
@@ -50,7 +50,7 @@ If for any reason you need to disconnect your deployment source from your bot, o
 >[!NOTE]
 >When you setup continuous integration, the Azure's bot editor will be disabled. To re-enable it, you will need to disconnect your deployment source.
 
-![continuous integration disconnect](media/continuous-integration-disconnect.png)
+![continuous integration disconnect](~/media/continuous-integration-disconnect.png)
 
 ##Next steps
 Learn how to [debug your local code](~/azure-bot-service/debug.md).

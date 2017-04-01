@@ -19,9 +19,9 @@ This article explores the fundamentals of dialogs in the Bot Builder SDK for .NE
 
 
 When you create a bot using the Bot Builder SDK for .NET, you can use dialogs to model 
-a conversation and manage [conversation flow](bot-framework-design-core-dialogs.md). 
+a conversation and manage [conversation flow](~/design/core-dialogs.md). 
 Each dialog is an abstraction that encapsulates its own state in a C# class that implements `IDialog`. 
-A dialog can be composed with other dialogs to maximize reuse, and a dialog context maintains the [stack of dialogs](bot-framework-design-core-dialogs.md#stack) that are active in the conversation at any point in time. 
+A dialog can be composed with other dialogs to maximize reuse, and a dialog context maintains the [stack of dialogs](~/design/core-dialogs.md#stack) that are active in the conversation at any point in time. 
 
 A conversation that comprises dialogs is portable across computers, which makes it possible for your bot implementation to scale. 
 When you use dialogs in the Bot Builder SDK for .NET, conversation state 
@@ -47,15 +47,15 @@ exchange messages with the user.
 In the Bot Builder SDK for .NET, the <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_blank">Builder</a> library enables you to implement dialogs. 
 To access the relevant classes, import the `Dialogs` namespace.
 
-[!code-csharp[Using statement](../includes/code/dotnet-dialogs.cs#usingStatement)]
+[!code-csharp[Using statement](~/includes/code/dotnet-dialogs.cs#usingStatement)]
 
 Next, add this `EchoDialog` class to **MessagesController.cs** to represent the conversation. 
 
-[!code-csharp[EchoDialog class](../includes/code/dotnet-dialogs.cs#echobot1)]
+[!code-csharp[EchoDialog class](~/includes/code/dotnet-dialogs.cs#echobot1)]
 
 Then, wire the `EchoDialog` class to the `Post` method by calling the `Conversation.SendAsync` method.
 
-[!code-csharp[Post method](../includes/code/dotnet-dialogs.cs#echobot2)]
+[!code-csharp[Post method](~/includes/code/dotnet-dialogs.cs#echobot2)]
 
 #### Implementation details 
 
@@ -98,7 +98,7 @@ The bot will continue to increment `count` with each reply, until the user elect
 
 #### MessagesController.cs 
 
-[!code-csharp[EchoDialog class](../includes/code/dotnet-dialogs.cs#echobot3)]
+[!code-csharp[EchoDialog class](~/includes/code/dotnet-dialogs.cs#echobot3)]
 
 #### Implementation details
 
@@ -137,7 +137,7 @@ Sending and receiving messages through the dialog context ensures that the `Inte
 
 ### Internals.IDialogStack
 
-`Internals.IDialogStack` provides methods to manage the [dialog stack](bot-framework-design-core-dialogs.md#stack). A majority of the time, the dialog stack will 
+`Internals.IDialogStack` provides methods to manage the [dialog stack](~/design/core-dialogs.md#stack). A majority of the time, the dialog stack will 
 automatically be managed for you. However, there may be cases where you want to explictly manage the stack. 
 For example, you might want to call a child dialog and add it to the 
 top of the dialog stack, mark the current dialog as complete (thereby removing it from the dialog stack and returning the result to the prior dialog in the stack), 
@@ -162,7 +162,7 @@ To use reflection to serialize classes that are not marked as serializable, the
 Builder library includes a reflection-based serialization surrogate that you can use to register with 
 <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/df/dd3/namespace_microsoft_1_1_bot_1_1_builder_1_1_autofac.html" target="_blank">Autofac</a>.
 
-[!code-csharp[Serialization](../includes/code/dotnet-dialogs.cs#serialization)]
+[!code-csharp[Serialization](~/includes/code/dotnet-dialogs.cs#serialization)]
 
 ##<a id="dialog-chains"></a> Dialog chains
 
@@ -192,28 +192,28 @@ active dialogs by using these fluent
 
 The LINQ query syntax uses the `Chain.Select<T, R>` method.
 
-[!code-csharp[Chain.Select](../includes/code/dotnet-dialogs.cs#chain1)]
+[!code-csharp[Chain.Select](~/includes/code/dotnet-dialogs.cs#chain1)]
 
 Or the `Chain.SelectMany<T, C, R>` method.
 
-[!code-csharp[Chain.SelectMany](../includes/code/dotnet-dialogs.cs#chain2)]
+[!code-csharp[Chain.SelectMany](~/includes/code/dotnet-dialogs.cs#chain2)]
 
 The `Chain.PostToUser<T>` and `Chain.WaitToBot<T>` methods post messages from the bot to the user and vice versa.
 
-[!code-csharp[Chain.PostToUser](../includes/code/dotnet-dialogs.cs#chain3)]
+[!code-csharp[Chain.PostToUser](~/includes/code/dotnet-dialogs.cs#chain3)]
 
 The `Chain.Switch<T, R>` method branches the conversation dialog flow.
 
-[!code-csharp[Chain.Switch](../includes/code/dotnet-dialogs.cs#chain4)]
+[!code-csharp[Chain.Switch](~/includes/code/dotnet-dialogs.cs#chain4)]
 
 If `Chain.Switch<T, R>` returns a nested `IDialog<IDialog<T>>`, then the inner `IDialog<T>` can be unwrapped with `Chain.Unwrap<T>`. This allows branching conversations to different paths of chained dialogs, possibly of unequal length. This example shows a more complete example of branching dialogs written in the fluent chain style with implicit stack management.
 
-[!code-csharp[Chain.Switch](../includes/code/dotnet-dialogs.cs#chain5)]
+[!code-csharp[Chain.Switch](~/includes/code/dotnet-dialogs.cs#chain5)]
 
 ## Additional resources
 
 - [Key concepts in the Bot Builder SDK for .NET](~/dotnet/concepts.md)
-- [Designing conversation flow](bot-framework-design-core-dialogs.md)
+- [Designing conversation flow](~/design/core-dialogs.md)
 - [Manage conversation flow using dialogs](~/dotnet/manage-conversation-flow.md)
-- [Bot Framework troubleshooting guide](bot-framework-troubleshooting-guide.md#implement-dialogs)
+- [Bot Framework troubleshooting guide](~/bot-framework-troubleshooting-guide.md#implement-dialogs)
 - <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_blank">Builder library</a>

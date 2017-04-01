@@ -17,7 +17,7 @@ ms.reviewer: rstand
 Your bot will send **message** [activities](~/dotnet/activities.md) to communicate information to users, 
 and likewise, will also receive **message** activities from users. 
 Some messages may simply consist of plain text, while others may contain richer content such as 
-[media attachments, buttons, and cards](~/dotnet/add-attachments.md). 
+[~/media attachments, buttons, and cards](~/dotnet/add-attachments.md). 
 This article describes some of the commonly-used message properties.
 
 ## Message text and format
@@ -25,7 +25,7 @@ This article describes some of the commonly-used message properties.
 To create a basic message that contains only plain text, simply specify the `Text` property (as contents of the message) 
 and the `Locale` property (as the locale of the sender). 
 
-[!code-csharp[Set message properties](../includes/code/dotnet-create-messages.cs#setBasicProperties)]
+[!code-csharp[Set message properties](~/includes/code/dotnet-create-messages.cs#setBasicProperties)]
 
 The `TextFormat` property of a message can be used to specify the format of the text. 
 `TextFormat` defaults to "markdown" (interpret text using markdown formatting standards), 
@@ -67,7 +67,7 @@ These styles are supported with `TextFormat` of "xml":
 
 ## Message attachments
 
-The `Attachments` property of a message activity can be used to send and receive simple media attachments 
+The `Attachments` property of a message activity can be used to send and receive simple ~/media attachments 
 (e.g., image, audio, video, file) and rich cards. 
 For details, see [Add attachments to messages](~/dotnet/add-attachments.md).
 
@@ -91,7 +91,7 @@ The `Mention` object contains these properties:
 
 This code example shows how to add a `Mention` entity to the `Entities` collection.
 
-[!code-csharp[set Mention](../includes/code/dotnet-create-messages.cs#setMention)]
+[!code-csharp[set Mention](~/includes/code/dotnet-create-messages.cs#setMention)]
 
 > [!TIP]
 > You bot may want to identify when it is mentioned in a message, so that it may 
@@ -127,7 +127,7 @@ The `GeoCoordinates` object contains these properties:
 
 This code example shows how to add a `Place` entity to the `Entities` collection:
 
-[!code-csharp[set GeoCoordinates](../includes/code/dotnet-create-messages.cs#setGeoCoord)]
+[!code-csharp[set GeoCoordinates](~/includes/code/dotnet-create-messages.cs#setGeoCoord)]
 
 ### Consuming entities
 
@@ -135,11 +135,11 @@ To consume entities, use either the `dynamic` keyword or strongly-typed classes.
 
 This code example shows how to use the `dynamic` keyword to process an entity within the `Entities` property of a message:
 
-[!code-csharp[examine entity using dynamic keyword](../includes/code/dotnet-create-messages.cs#examineEntity1)]
+[!code-csharp[examine entity using dynamic keyword](~/includes/code/dotnet-create-messages.cs#examineEntity1)]
 
 This code example shows how to use a strongly-typed class to process an entity within the `Entities` property of a message:
 
-[!code-csharp[examine entity using typed class](../includes/code/dotnet-create-messages.cs#examineEntity2)]
+[!code-csharp[examine entity using typed class](~/includes/code/dotnet-create-messages.cs#examineEntity2)]
 
 ## Message channel data
 

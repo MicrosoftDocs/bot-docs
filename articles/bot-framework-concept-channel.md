@@ -214,7 +214,7 @@ The following are the methods that you may specify. For details about these meth
 Notes:
 
 - The **chat_id** parameter is common to all Telegram methods. If you do not provide it, the framework will provide the ID for you.
-- Instead of passing file contents inline, specify the file using a URL and media type as shown in the example below.
+- Instead of passing file contents inline, specify the file using a URL and ~/media type as shown in the example below.
 - For messages that you receive from the Telegram channel, the **channelData** property will include the previous message that you sent.
 
 The following shows a snippet of the channel data that contains a single method.

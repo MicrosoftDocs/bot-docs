@@ -65,7 +65,7 @@ you can create that content inside a 'snippet' file (in the /includes folder), t
 
 For example, the following 'include' statement injects the contents that's defined in the `includes/snippet-tip-bot-config-settings.md` file.
 
-    [!include[Application configuration settings](../includes/snippet-tip-bot-config-settings.md)]
+    [!include[Application configuration settings](~/includes/snippet-tip-bot-config-settings.md)]
 
 Syntax for the include statement is:
 

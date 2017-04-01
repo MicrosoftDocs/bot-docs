@@ -16,11 +16,11 @@ ms.reviewer:
 <!--
 > [!div class="op_single_selector"]
 > * [.NET](~/dotnet/howto-manage-conversation-flow.md)
-> * [Node.js](bot-framework-nodejs-howto-manage-conversation-flow.md)
+> * [Node.js](~/nodejs/manage-conversation-flow.md)
 >
 -->
 
-[!include[Dialog flow example](../includes/snippet-dotnet-manage-conversation-flow-intro.md)]
+[!include[Dialog flow example](~/includes/snippet-dotnet-manage-conversation-flow-intro.md)]
 
 This article describes how to model this conversation flow by using [dialogs](~/dotnet/dialogs.md) and the Bot Builder SDK for .NET. 
 
@@ -98,7 +98,7 @@ A dialog method that does not end with one of these will result in an error
 ## Additional resources
 
 - [Dialogs](~/dotnet/dialogs.md)
-- [Designing conversation flow](bot-framework-design-core-dialogs.md)
-- [Bot capabilities](bot-framework-design-capabilities.md)
+- [Designing conversation flow](~/design/core-dialogs.md)
+- [Bot capabilities](~/design/capabilities.md)
 - <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_blank">Builder library</a>
 

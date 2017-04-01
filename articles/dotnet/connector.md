@@ -36,7 +36,7 @@ When your bot receives an [Activity](~/dotnet/activities.md) object from the Con
 it should use the `ServiceUrl` specified for that activity to create the connector client that it'll 
 subsequently use to generate a response. 
 
-[!code-csharp[Create connector client](../includes/code/dotnet-send-and-receive.cs#createConnectorClient)]
+[!code-csharp[Create connector client](~/includes/code/dotnet-send-and-receive.cs#createConnectorClient)]
 
 > [!TIP]
 > Because a channel's endpoint may not be stable, your bot should direct communications to the endpoint 
@@ -64,14 +64,14 @@ By using the incoming activity's `CreateReply` method,
 you simply specify the message text for the response, and the outgoing activity is created 
 with the `Recipient`, `From`, and `Conversation` properties automatically populated.
 
-[!code-csharp[Create reply](../includes/code/dotnet-send-and-receive.cs#createReply)]
+[!code-csharp[Create reply](~/includes/code/dotnet-send-and-receive.cs#createReply)]
 
 ## Send a reply
 
 Once you've created a reply, you can send it by calling the connector client's `ReplyToActivity` method. 
 The Connector will deliver the reply using the appropriate channel semantics. 
 
-[!code-csharp[Send reply](../includes/code/dotnet-send-and-receive.cs#sendReply)]
+[!code-csharp[Send reply](~/includes/code/dotnet-send-and-receive.cs#sendReply)]
 
 > [!TIP]
 > If your bot is replying to a user's message, always use the `ReplyToActivity` method.
@@ -81,7 +81,7 @@ The Connector will deliver the reply using the appropriate channel semantics.
 If your bot is part of a conversation, it can send a message that is not a direct reply to 
 any message from the user by calling the `SendToConversation` method. 
 
-[!code-csharp[Send non-reply message](../includes/code/dotnet-send-and-receive.cs#sendNonReplyMessage)]
+[!code-csharp[Send non-reply message](~/includes/code/dotnet-send-and-receive.cs#sendNonReplyMessage)]
 
 You may use the `CreateReply` method to initialize the new message (which would automatically set 
 the `Recipient`, `From`, and `Conversation` properties for the message). 
@@ -111,11 +111,11 @@ you must first [create the connector client](#create-client) by using the target
 
 This code example uses the `CreateDirectConversation` method to create a private conversation with a single user.
 
-[!code-csharp[Start private conversation](../includes/code/dotnet-send-and-receive.cs#startPrivateConversation)]
+[!code-csharp[Start private conversation](~/includes/code/dotnet-send-and-receive.cs#startPrivateConversation)]
 
 This code example uses the `CreateConversation` method to create a group conversation with multiple users.
 
-[!code-csharp[Start group conversation](../includes/code/dotnet-send-and-receive.cs#startGroupConversation)]
+[!code-csharp[Start group conversation](~/includes/code/dotnet-send-and-receive.cs#startGroupConversation)]
 
 ## Additional resources
 

@@ -36,11 +36,11 @@ for each order according to whether or not the order contains a foot-long sandwi
 
 The `Specials` field is specified as optional and "None" is designated as text for the choice that indicates no preference.
 
-[!code-csharp[Field definition](../includes/code/dotnet-formflow-formbuilder.cs#fieldDefinition)]
+[!code-csharp[Field definition](~/includes/code/dotnet-formflow-formbuilder.cs#fieldDefinition)]
 
 This code example shows how to dynamically set the value of the `Specials` field. 
 
-[!code-csharp[Define value](../includes/code/dotnet-formflow-formbuilder.cs#defineValue)]
+[!code-csharp[Define value](~/includes/code/dotnet-formflow-formbuilder.cs#defineValue)]
 
 In this example, the [Advanced.Field.SetType](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a84d27b92be458b51a367c732e19a1fc2) method specifies the field type (`null` represents an enumeration field). 
 The [Advanced.Field.SetActive](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a048ce0f4bd1841ad37f3ed5f6e2df933) method specifies that the field 
@@ -63,7 +63,7 @@ Each message and confirmation runs only when prior steps in the form are inactiv
 
 This code example shows a dynamically generated confirmation that computes the cost of the sandwich. 
 
-[!code-csharp[Define confirmation](../includes/code/dotnet-formflow-formbuilder.cs#defineConfirmation)]
+[!code-csharp[Define confirmation](~/includes/code/dotnet-formflow-formbuilder.cs#defineConfirmation)]
 
 ## Customize a form using FormBuilder
 
@@ -73,7 +73,7 @@ and [dynamically define a field value and confirmation](#dynamically-define).
 By default, steps in the form will be executed in the sequence in which they are listed. 
 However, steps might be skipped for fields that already contain values or if explicit navigation is specified. 
 
-[!code-csharp[FormBuilder form](../includes/code/dotnet-formflow-formbuilder.cs#formBuilderForm)]
+[!code-csharp[FormBuilder form](~/includes/code/dotnet-formflow-formbuilder.cs#formBuilderForm)]
 
 In this example, the form executes these steps:
 

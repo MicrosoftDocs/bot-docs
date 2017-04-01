@@ -19,7 +19,7 @@ The most common bot interaction happens when a user starts a conversation with a
 The proactive bot template provides all the Azure resources you need to enable a very simple proactive interaction. This diagram demonstrates how triggered events work.
 
 <p align="center">
-![Proactive template diagram](media/azure-bot-proactive-diagram.png)</p>
+![Proactive template diagram](~/media/azure-bot-proactive-diagram.png)</p>
 
 
 When you create a proactive bot with the Azure Bot Service, you will find these Azure resources in your resource group:
@@ -37,18 +37,18 @@ This code sample demonstrates how the proactive bot:
 
 Notice that the message is wrapped in an object that contains all the information needed to send the message back to the user on the right channel (`ResumptionCookie` for C# and `session.message.address` for Node.js).
 
-[!code-csharp[Receive Message](../includes/code/azure-proactive-bot.cs#receiveMessage)] 
+[!code-csharp[Receive Message](~/includes/code/azure-proactive-bot.cs#receiveMessage)] 
 
-[!code-JavaScript[Receive Message](../includes/code/azure-proactive-bot.js#receiveMessage)] 
+[!code-JavaScript[Receive Message](~/includes/code/azure-proactive-bot.js#receiveMessage)] 
 
 ## Receiving the message back from the Azure Function
 
 This code sample demonstrates how to receive the message from the trigger function.
 
-[!code-csharp[Receive message from trigger](../includes/code/azure-proactive-bot.cs#receiveTrigger)] 
+[!code-csharp[Receive message from trigger](~/includes/code/azure-proactive-bot.cs#receiveTrigger)] 
 
 
-[!code-JavaScript[Receive message from trigger](../includes/code/azure-proactive-bot.js#receiveTrigger)] 
+[!code-JavaScript[Receive message from trigger](~/includes/code/azure-proactive-bot.js#receiveTrigger)] 
 
 ## Triggering an Azure Function with the queue, and sending the message back to the user
 
@@ -56,11 +56,11 @@ After the message is added to the queue, the function is triggered. The message 
 
 The **functions.json** configuration file looks like this.
 
-[!code-JavaScript[Queue Trigger json](../includes/code/azure-proactive-bot.js#queueTriggerJson)] 
+[!code-JavaScript[Queue Trigger json](~/includes/code/azure-proactive-bot.js#queueTriggerJson)] 
 
-[!code-csharp[return Message](../includes/code/azure-proactive-bot.cs#returnMessage)] 
+[!code-csharp[return Message](~/includes/code/azure-proactive-bot.cs#returnMessage)] 
 
-[!code-JavaScript[Queue Trigger](../includes/code/azure-proactive-bot.js#queueTrigger)] 
+[!code-JavaScript[Queue Trigger](~/includes/code/azure-proactive-bot.js#queueTrigger)] 
 
 ## Additional resources
 

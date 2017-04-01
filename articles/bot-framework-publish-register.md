@@ -60,7 +60,7 @@ You must provide monitored emails because the framework will send all communicat
 After you've registered your bot, update the Microsoft App Id and Microsoft App Password values in your application's configuration settings to specify the **app ID** and **password** values that were generated for your bot during the registration process.
 
 > [!TIP]
-[!include[Application configuration settings](../includes/snippet-tip-bot-config-settings.md)]
+[!include[Application configuration settings](~/includes/snippet-tip-bot-config-settings.md)]
 
 ## Next steps
 

@@ -14,7 +14,7 @@ ms.reviewer:
 
 # Activity types
 
-[!include[Activity concept overview](../includes/snippet-dotnet-concept-activity.md)]
+[!include[Activity concept overview](~/includes/snippet-dotnet-concept-activity.md)]
 
 This article describes activity types in the Bot Builder SDK for .NET and explores 
 the situations in which your bot may expect to send or receive each type of activity.
@@ -38,7 +38,7 @@ The following table lists the activity types that are supported by the Bot Build
 Your bot will send **message** activities to communicate information to users, and likewise, 
 will also receive **message** activities from users. 
 Some messages may simply consist of plain text, while others may contain richer content such as 
-[media attachments, buttons, and cards](~/dotnet/add-attachments.md) or 
+[~/media attachments, buttons, and cards](~/dotnet/add-attachments.md) or 
 [channel-specific data](~/dotnet/channeldata.md). 
 For information about commonly-used message properties, see [Create messages](~/dotnet/create-messages.md).
 

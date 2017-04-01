@@ -326,7 +326,7 @@ This example shows the JSON schema for the annotated sandwich bot that is descri
 To implement FormFlow with a JSON schema, use `FormBuilderJson`, which supports the same fluent interface as `FormBuilder`. This code example shows how to implement the JSON schema for the annotated sandwich bot 
 that is described in [Customize a form using FormBuilder](~/dotnet/formflow-formbuilder.md).
 
-[!code-csharp[Use JSON schema](../includes/code/dotnet-formflow-json-schema.cs#useSchema)]
+[!code-csharp[Use JSON schema](~/includes/code/dotnet-formflow-json-schema.cs#useSchema)]
 
 ## Additional resources
 

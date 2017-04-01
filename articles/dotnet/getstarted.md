@@ -16,7 +16,7 @@ ms.reviewer: rstand
 <!--
 > [!div class="op_single_selector"]
 > * [.NET](~/dotnet/getstarted.md)
-> * [Node.js](bot-framework-nodejs-getstarted.md)
+> * [Node.js](~/nodejs/getstarted.md)
 > * [Azure Bot Service](~/azure-bot-service/getstarted.md)
 >
 -->
@@ -51,7 +51,7 @@ and install the template by saving the .zip file to your Visual Studio 2017 proj
 
 Next, open Visual Studio and create a new C# project. Choose the Bot Application template for your new project.
 
-![Visual Studio create project](media/connector-getstarted-create-project.png)
+![Visual Studio create project](~/media/connector-getstarted-create-project.png)
 
 By using the Bot Application template, you're creating a project that already contains all of the
 components that are required to build a simple bot, including a reference to
@@ -73,7 +73,7 @@ take a quick look at some of the code that the Bot Application template provided
 The `Post` method within **Controllers\MessagesController.cs** represents the
 core functionality of your bot.
 
-[!include[echobot code sample C#](../includes/code/csharp-echobot.md)]
+[!include[echobot code sample C#](~/includes/code/csharp-echobot.md)]
 
 This method receives a message from the user and creates a reply
 (by using the `CreateReply` function) that echos back the user's message,
@@ -82,20 +82,20 @@ The `[BotAuthentication]` decoration on the method validates your Bot Connector 
 
 ## Test your bot
 
-[!include[Get started test your bot](../includes/snippet-getstarted-test-bot.md)]
+[!include[Get started test your bot](~/includes/snippet-getstarted-test-bot.md)]
 
 ### Start your bot
 
 After installing the emulator, start your bot in Visual Studio by using a browser as the application host.
 This Visual Studio screenshot shows that the bot will launch in Microsoft Edge when the run button is clicked.
 
-![Visual Studio run project](media/connector-getstarted-start-bot-locally.png)
+![Visual Studio run project](~/media/connector-getstarted-start-bot-locally.png)
 
 When you click the run button, Visual Studio will build the application, deploy it to localhost,
 and launch the web browser to display the application's **default.htm** page.
 For example, here's the application's **default.htm** page shown in Microsoft Edge:
 
-![Visual Studio bot running localhost](media/connector-getstarted-bot-running-localhost.png)
+![Visual Studio bot running localhost](~/media/connector-getstarted-bot-running-localhost.png)
 
 > [!NOTE]
 > You can modify the **default.htm** file within your project
@@ -126,13 +126,13 @@ You've successfully created a bot by using the Bot Application template Bot Buil
 In this tutorial, you created a simple bot by using the Bot Application template and the Bot Builder SDK for .NET
 and verified the bot's functionality by using the Bot Framework Emulator.
 If you'd like to share your bot with others, you'll need to
-[register](bot-framework-publish-register.md) it with the Bot Framework and
-[deploy](bot-framework-publish-deploy.md) it to the cloud.
+[register](~/bot-framework-publish-register.md) it with the Bot Framework and
+[deploy](~/bot-framework-publish-deploy.md) it to the cloud.
 
 To learn more about building great bots with the Bot Framework, see the following articles:
 
-- [Key concepts in the Bot Framework](bot-framework-concepts-overview.md)
-- [Introduction to bot design](design-principles.md)
-- [Bot Builder SDK for .NET](~/dotnet/overview.md)
-- [Publish a bot to the Bot Framework](bot-framework-publish-overview.md)
-- [Bot Framework FAQ](bot-framework-faq.md)
+- [Key concepts in the Bot Framework](~/bot-framework-concepts-overview.md)
+- [Introduction to bot design](~/design/principles.md)
+- [Bot Builder SDK for .NET](~/dotnet/index.md)
+- [Publish a bot to the Bot Framework](~/bot-framework-publish-overview.md)
+- [Bot Framework FAQ](~/bot-framework-faq.md)

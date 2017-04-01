@@ -8,7 +8,6 @@
         "exclude": [
           "**/obj/**",
           "BotFramework-Docs/**",
-          "**/includes/**",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
@@ -25,7 +24,7 @@
         "exclude": [
           "**/obj/**",
           "BotFramework-Docs/**",
-          "**/includes/**"
+          "~/includes/**"
         ]
       }
     ],

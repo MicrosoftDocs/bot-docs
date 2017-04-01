@@ -22,13 +22,13 @@ There may be cases when you will need to generate a new password (for example, i
 ##Create a new password and updating your bot configuration
 To create a new password, follow these steps:
 1. Go to the Bot Framework Developer portal, find your bot under My bots, and open it.
-2. Click **Edit** in the **Details** panel. ![msa password update devportal dashboard](media/msa-password-update-devportal-dashboard.png) 
-3. Click **Manage Microsoft App ID and password**.  ![msa password update devportal edit](media/msa-password-update-devportal-edit.png)  4. If prompted, login with the Microsoft account you used to create the MSA app ID, then click **Generate New Password** on the next page.  ![msa password update msa createnew](media/msa-password-update-msa-createnew.png) 5. Copy the password.  ![msa password update msa pwdcreated](media/msa-password-update-msa-pwdcreated.png)
+2. Click **Edit** in the **Details** panel. ![msa password update devportal dashboard](~/media/msa-password-update-devportal-dashboard.png) 
+3. Click **Manage Microsoft App ID and password**.  ![msa password update devportal edit](~/media/msa-password-update-devportal-edit.png)  4. If prompted, login with the Microsoft account you used to create the MSA app ID, then click **Generate New Password** on the next page.  ![msa password update msa createnew](~/media/msa-password-update-msa-createnew.png) 5. Copy the password.  ![msa password update msa pwdcreated](~/media/msa-password-update-msa-pwdcreated.png)
 >[!NOTE]
 >This is the only time you'll see the password; copy it and store it securely.
 
-Paste the password in the bot application settings in Azure Bot Service.  ![msa password update portal](media/msa-password-update-portal.png)  
-If you already have two passwords, you will need to delete one of them. Delete the unused password and generate a new one following the previous steps. ![msa-password-update-msa-pwddelete.png](media/msa-password-update-msa-pwddelete.png)
+Paste the password in the bot application settings in Azure Bot Service.  ![msa password update portal](~/media/msa-password-update-portal.png)  
+If you already have two passwords, you will need to delete one of them. Delete the unused password and generate a new one following the previous steps. ![msa-password-update-msa-pwddelete.png](~/media/msa-password-update-msa-pwddelete.png)
 
 >[!NOTE]
 >If you delete the password currently configured in your bot, the bot will stop working. Make sure you delete the unused one.

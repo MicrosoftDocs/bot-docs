@@ -64,7 +64,7 @@ For the elements listed above:
 This example uses the `{&}` element to show the description of the `Sandwich` field and the 
 `{||}` element to show the list of choices for that field.
 
-[!code-csharp[Patterns example](../includes/code/dotnet-formflow-pattern-language.cs#patterns1)]
+[!code-csharp[Patterns example](~/includes/code/dotnet-formflow-pattern-language.cs#patterns1)]
 
 This is the resulting prompt:
 
@@ -112,7 +112,7 @@ Prompts and templates support these formatting parameters.
 This example uses the `ChoiceFormat` parameter to specify that the list of choices should be displayed 
 as a bulleted list.
 
-[!code-csharp[Patterns example](../includes/code/dotnet-formflow-pattern-language.cs#patterns2)]
+[!code-csharp[Patterns example](~/includes/code/dotnet-formflow-pattern-language.cs#patterns2)]
 
 This is the resulting prompt:
 

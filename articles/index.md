@@ -78,7 +78,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/design-principles">
+                            <a href="/botframework/design/principles">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -121,7 +121,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/bot-framework-nodejs-overview">
+                            <a href="/botframework/nodejs/overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">

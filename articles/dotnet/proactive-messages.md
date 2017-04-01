@@ -16,17 +16,17 @@ ms.reviewer:
 <!--
 > [!div class="op_single_selector"]
 > * [.NET](~/dotnet/howto-proactive-messages.md)
-> * [Node.js](bot-framework-nodejs-howto-proactive-messages.md)
+> * [Node.js](~/nodejs/proactive-messages.md)
 >
 -->
 
 
-[!include[Introduction to proactive messages - part 1](../includes/snippet-proactive-messages-intro-1.md)] 
+[!include[Introduction to proactive messages - part 1](~/includes/snippet-proactive-messages-intro-1.md)] 
 This article describes how to send proactive messages by using the Bot Builder SDK for .NET. 
 
 ## Types of proactive messages 
 
-[!include[Introduction to proactive messages - part 2](../includes/snippet-proactive-messages-intro-2.md)] 
+[!include[Introduction to proactive messages - part 2](~/includes/snippet-proactive-messages-intro-2.md)] 
 
 ## Send an ad hoc proactive message
 
@@ -182,6 +182,6 @@ public class SurveyDialog : IDialog<object>
 
 ## Additional resources
 
-- [Designing conversation flow](bot-framework-design-core-dialogs.md)
-- [Bot capabilities](bot-framework-design-capabilities.md)
+- [Designing conversation flow](~/design/core-dialogs.md)
+- [Bot capabilities](~/design/capabilities.md)
 - <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_blank">Builder library</a>

@@ -88,7 +88,7 @@ This article describes the changes that have been introduced by each version of 
 
 ### Changes
 
-- Added support for new media card types (e.g. `AnimationCard`, `VideoCard`, and `AudioCard`).
+- Added support for new ~/media card types (e.g. `AnimationCard`, `VideoCard`, and `AudioCard`).
 - Added new `BotAuthenticator` utility class that can be used for bot authentication instead of using the `BotAuthentication` attribute.
 - Implemented general bug fixes.
 

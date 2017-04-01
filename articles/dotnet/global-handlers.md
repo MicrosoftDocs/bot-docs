@@ -17,11 +17,11 @@ ms.reviewer:
 <!--
 > [!div class="op_single_selector"]
 > * [.NET](~/dotnet/howto-global-handlers.md)
-> * [Node.js](bot-framework-nodejs-howto-global-handlers.md)
+> * [Node.js](~/nodejs/global-handlers.md)
 >
 -->
 
-[!include[Introduction to global message handlers](../includes/snippet-global-handlers-intro.md)]
+[!include[Introduction to global message handlers](~/includes/snippet-global-handlers-intro.md)]
 This article describes how to implement global message handlers by using the Bot Builder SDK for .NET. 
 
 ## Implement global message handlers
@@ -100,6 +100,6 @@ protected override async Task PostAsync(IActivity item, string state, Cancellati
 
 ## Additional resources
 
-- [Designing conversation flow](bot-framework-design-core-dialogs.md)
-- [Bot capabilities](bot-framework-design-capabilities.md)
+- [Designing conversation flow](~/design/core-dialogs.md)
+- [Bot capabilities](~/design/capabilities.md)
 - <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_blank">Builder library</a>

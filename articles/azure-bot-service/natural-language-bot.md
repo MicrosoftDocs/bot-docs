@@ -32,7 +32,7 @@ Most messages will have a `Message` activity type that contains the text and att
 
 The routing of the message is identical to the one presented in the [Basic bot template](~/azure-bot-service/basic-bot.md).
 
-[!code-csharp[Post Message](../includes/code/azure-understanding-language.cs#postMessage)]
+[!code-csharp[Post Message](~/includes/code/azure-understanding-language.cs#postMessage)]
 
 The **BaiscLuisDialog.csx** file contains the root dialog that controls the conversation with the user. The `BasicLuisDialog` object defines an intent method handler for each intent that you define in your LUIS model. 
 
@@ -46,7 +46,7 @@ The `BasicLuisDialog` object inherits from the <a href="https://docs.botframewor
 
 The `MessageReceived` method calls your LUIS application model to determine intent and then calls the appropriate intent handler in the `BasicLuisDialog` object. The handler processes the intent and then waits for the next message from the user.
 
-[!code-csharp[Receive Message](../includes/code/azure-understanding-language.cs#receiveMessage)]
+[!code-csharp[Receive Message](~/includes/code/azure-understanding-language.cs#receiveMessage)]
 
 ## Additional resources
 

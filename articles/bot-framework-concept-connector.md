@@ -106,7 +106,7 @@ The BotAuthentication decoration on the method is used to validate your %Bot %Co
 > TODO: Add remaining links. 
 
 
-[Get Started](bot-framework-nodejs-getstarted.md)
+[Get Started](~/nodejs/getstarted.md)
 
 
 

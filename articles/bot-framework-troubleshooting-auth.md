@@ -61,7 +61,7 @@ Now, follow these steps:
 4. Make sure the "Microsoft App Id" and "Microsoft App Password" fields are empty.
 5. Type some text and press enter.
 
-![Bot Framework Channel Emulator](media/troubleshooting-bot-framework-authentication_1.png)
+![Bot Framework Channel Emulator](~/media/troubleshooting-bot-framework-authentication_1.png)
 
 Your request is successful if:
 
@@ -163,7 +163,7 @@ Now, follow these steps:
 5. Enter your bot's Microsoft App Password into the field labeled Microsoft App Password.
 5. Type some text and press enter.
 
-![Bot Framework Channel Emulator](media/troubleshooting-bot-framework-authentication_2.png)
+![Bot Framework Channel Emulator](~/media/troubleshooting-bot-framework-authentication_2.png)
 
 Your request is successful if:
 
@@ -196,7 +196,7 @@ Follow these steps to test your bot in the cloud with security enabled:
 2. Log in to the [Bot Framework Developer Portal](https://dev.botframework.com), click on "My bots," and if necessary, select the bot you want to debug from the list.
 3. Locate the test panel in the bottom-left corner of the screen and click the blue "Test" button. The results of the test appear just below the button.
 
-![Bot Framework Developer Portal test panel](media/troubleshooting-bot-framework-authentication_3.png)
+![Bot Framework Developer Portal test panel](~/media/troubleshooting-bot-framework-authentication_3.png)
 
 Your request is successful if:
 
@@ -276,6 +276,6 @@ If you continue to encounter difficulties, here are some additional resources:
 [BotConnectuorAuthGuide]: (https://docs.botframework.com/en-us/restapi/authentication/)
 [Support]: (https://docs.botframework.com/en-us/support/#navtitle)
 [Emulator]: resources-emulator.md
-[DevPortalTestPanel]: (media/troubleshooting-bot-framework-authentication_3.png)
-[EmulatorPic2]: (media/troubleshooting-bot-framework-authentication_2.png)
-[EmulatorPic1]: (media/troubleshooting-bot-framework-authentication_1.png)
+[DevPortalTestPanel]: (~/media/troubleshooting-bot-framework-authentication_3.png)
+[EmulatorPic2]: (~/media/troubleshooting-bot-framework-authentication_2.png)
+[EmulatorPic1]: (~/media/troubleshooting-bot-framework-authentication_1.png)

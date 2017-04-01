@@ -14,7 +14,7 @@ ms.reviewer:
 
 # Manage state
 
-[!include[State concept overview](../includes/snippet-dotnet-concept-state.md)]  
+[!include[State concept overview](~/includes/snippet-dotnet-concept-state.md)]  
 This article describes how to manage state data using the State service via the Bot Builder SDK for .NET.
 
 > [!IMPORTANT]
@@ -50,14 +50,14 @@ which your bot can access by using one of the "**Get...**" methods.
 The `StateClient` object enables you to manage state data using the BotBuilder SDK for .NET. 
 To create a state client using an `Activity` object, call the `GetStateClient` method.
 
-[!code-csharp[Get State client](../includes/code/dotnet-state.cs#getStateClient1)]
+[!code-csharp[Get State client](~/includes/code/dotnet-state.cs#getStateClient1)]
 
 If you do not have access to an `Activity` object, you can create a state client by simply 
 creating a new instance of the `StateClient` class. In this example, `microsoftAppId` and `microsoftAppPassword` are the Bot Framework authentication 
-credentials that you acquire for your bot during the [bot registration](bot-framework-publish-register.md) 
+credentials that you acquire for your bot during the [bot registration](~/bot-framework-publish-register.md) 
 process.
 
-[!code-csharp[Get State client](../includes/code/dotnet-state.cs#getStateClient2)]
+[!code-csharp[Get State client](~/includes/code/dotnet-state.cs#getStateClient2)]
 
 ## Get state data
 
@@ -66,11 +66,11 @@ To get a specific property value from a `BotData` object, call the `GetProperty`
 
 This code sample shows how to get a typed property from user data. 
 
-[!code-csharp[Get state property](../includes/code/dotnet-state.cs#getProperty1)]
+[!code-csharp[Get state property](~/includes/code/dotnet-state.cs#getProperty1)]
 
 This code sample shows how to get a property from a complex type within user data.
 
-[!code-csharp[Get state property](../includes/code/dotnet-state.cs#getProperty2)]
+[!code-csharp[Get state property](~/includes/code/dotnet-state.cs#getProperty2)]
 
 If no state data exists for the user and/or conversation that is specified in 
 a "**Get...**" method call, 
@@ -86,11 +86,11 @@ and save it by calling the appropriate "**Set...**" method.
 
 This code sample shows how to update a typed property in user data.
 
-[!code-csharp[Set state property](../includes/code/dotnet-state.cs#setProperty1)]
+[!code-csharp[Set state property](~/includes/code/dotnet-state.cs#setProperty1)]
 
 This code sample shows how to update a property in a complex type within user data. 
 
-[!code-csharp[Set state property](../includes/code/dotnet-state.cs#setProperty2)]
+[!code-csharp[Set state property](~/includes/code/dotnet-state.cs#setProperty2)]
 
 ## Handle concurrency issues
 
@@ -98,9 +98,9 @@ Your bot may receive an error response with HTTP status code **412 Precondition 
 when it attempts to save state data, if another instance of the bot has changed the data. 
 You can design your bot to account for this scenario, as shown in this code sample.
 
-[!code-csharp[Handle exception saving state](../includes/code/dotnet-state.cs#handleException)]
+[!code-csharp[Handle exception saving state](~/includes/code/dotnet-state.cs#handleException)]
 
 ## Additional resources
 
-- [Bot Framework troubleshooting guide](bot-framework-troubleshooting-guide.md#state)
+- [Bot Framework troubleshooting guide](~/bot-framework-troubleshooting-guide.md#state)
 - <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/db/dbb/namespace_microsoft_1_1_bot_1_1_connector.html" target="_blank">Connector library</a>

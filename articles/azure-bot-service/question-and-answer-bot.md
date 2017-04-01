@@ -21,9 +21,9 @@ When you create the template, Azure Bot Service lets you either select an existi
 The routing of the message is identical to the one presented in the [basic bot template](~/azure-bot-service/basic-bot.md). Most messages will have a `Message` activity type, and will contain the text and attachments the user sent. If the message’s activity type is `Message`, the template posts the message to `BasicQnAMakerDialog` in the context of the current message (see **BasicQnAMakerDialog.csx**).
 
 
-[!code-csharp[Route message](../includes/code/azure-question-and-answer.cs#routeMessage)] 
+[!code-csharp[Route message](~/includes/code/azure-question-and-answer.cs#routeMessage)] 
 
-[!code-JavaScript[Route message](../includes/code/azure-question-and-answer.js#routeMessage)]
+[!code-JavaScript[Route message](~/includes/code/azure-question-and-answer.js#routeMessage)]
 
 
 
@@ -40,9 +40,9 @@ These parameters are passed when invoking the QnA Maker service.
 - Default Message (optional): Message to show if there is no match in the knowledge base.
 - Score Threshold (optional): Threshold value of the match confidence score returned by the service. It ranges from 0-1. This is useful in controlling the relevance of the responses.
 
-[!code-csharp[Set message received](../includes/code/azure-question-and-answer.cs#setMessageReceived)]
+[!code-csharp[Set message received](~/includes/code/azure-question-and-answer.cs#setMessageReceived)]
 
-[!code-JavaScript[Set message received](../includes/code/azure-question-and-answer.js#setMessageReceived)]
+[!code-JavaScript[Set message received](~/includes/code/azure-question-and-answer.js#setMessageReceived)]
 
 
 ## Additional resources

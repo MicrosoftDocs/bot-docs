@@ -17,7 +17,7 @@ ms.reviewer: rstand@microsoft.com
 <!--
 > [!div class="op_single_selector"]
 > * [.NET](~/dotnet/getstarted.md)
-> * [Node.js](bot-framework-nodejs-getstarted.md)
+> * [Node.js](~/nodejs/getstarted.md)
 > * [Azure Bot Service](~/azure-bot-service/getstarted.md)
 >
 -->
@@ -47,12 +47,12 @@ sign in to <a href="https://portal.azure.com" target="_blank">Azure</a> and comp
     - Set **App name** to your bot’s name. The name is used as the subdomain when your bot is deployed to the cloud (for example, *mybasicbot*.azurewebsites.net). 
     - Select the subscription to use.  
     - Select the <a href="https://azure.microsoft.com/en-us/documentation/articles/resource-group-overview/" target="_blank">resource group</a> and <a href="https://azure.microsoft.com/en-us/regions/" target="_blank">location</a>.<br/>  
-    ![Bot Service blade](media/azure-bot-service-create-bot.png)
+    ![Bot Service blade](~/media/azure-bot-service-create-bot.png)
 
 4. Confirm that the bot service has been deployed.
     - Click **Notifications** (the bell icon that is located along the top edge of the Azure portal). The notification will change from **Deployment started** to **Deployment succeeded**. 
     - After the notification changes to **Deployment succeeded**, click that notification.<br/><br/>
-    ![Azure notification](media/azure-bot-service-first-bot-notification.png)
+    ![Azure notification](~/media/azure-bot-service-first-bot-notification.png)
 
 ### Create App ID and password  
 
@@ -60,7 +60,7 @@ Next, create an app ID and password for your bot, so that it will be able to aut
 
 1. Click **Create Microsoft App ID and password**.  
 
-    ![create app id](media/azure-bot-service-create-app-id.png)  
+    ![create app id](~/media/azure-bot-service-create-app-id.png)  
 
 2. On the page that opens in a new browser tab, click **Generate an app password to continue**.
 
@@ -75,24 +75,24 @@ Paste the password that you copied (in step 3 above) into the password field.
 > <a href="https://apps.dev.microsoft.com" target="_blank">Microsoft Application Registration Portal</a> 
 > and copying the application ID from your application's registration settings.
 
-    ![password](media/azure-bot-service-password.png)  
+    ![password](~/media/azure-bot-service-password.png)  
 
 > [!NOTE]
 > Click **Manage Microsoft App ID and password** only if you want to generate a secondary password for your bot now. 
-> In the future, you can manage app ID and password at any time by using the Bot Framework Portal, as described [here](bot-framework-publish-register.md#maintain). 
+> In the future, you can manage app ID and password at any time by using the Bot Framework Portal, as described [here](~/bot-framework-publish-register.md#maintain). 
 
 ### Select your programming language 
 
 Choose the programming language that you want to use to develop your bot.  
 
-![language](media/azure-bot-service-coding-language.png)  
+![language](~/media/azure-bot-service-coding-language.png)  
 
 ### Select a template and create the bot
 
 Select the template to use as the starting point for developing your bot. 
 For this tutorial, choose the **Basic** template. 
 
-![template](media/azure-bot-service-template.png)  
+![template](~/media/azure-bot-service-template.png)  
 
 Then, click **Create bot** to create the bot based upon the programming language and template that you've chosen. 
 
@@ -105,7 +105,7 @@ If you sign in to the <a href="https://dev.botframework.com" target="_blank">Bot
 you'll see that your bot is now listed under **My bots**. 
 Congratulations! You've successfully created a bot by using the Azure Bot Service! 
 
-![bot settings in portal](media/azure-bot-service-bf-portal.png)
+![bot settings in portal](~/media/azure-bot-service-bf-portal.png)
 
 ## Test your bot
 
@@ -113,18 +113,18 @@ Now that your bot is running in the cloud, try it out by typing a few messages i
 that's located to the right of the code editor in Azure. 
 You should see that the bot responds to each message you send by echoing back your message prefixed with the text *You said*. 
 
-![azure editor](media/azure-bot-service-editor.png)  
+![azure editor](~/media/azure-bot-service-editor.png)  
 
 ## Next steps
 
 In this tutorial, you created a simple bot by using the Azure Bot Service 
 and verified the bot's functionality by using the built-in chat control within Azure. 
 At this point, you may want to add more functionality to your bot or set up continuous integration. 
-You can also [configure your bot](bot-framework-publish-configure.md) to run on one or more channels, 
-and [publish your bot](bot-framework-publish-add-to-directory.md) to the Bot Directory, without ever leaving 
+You can also [configure your bot](~/bot-framework-publish-configure.md) to run on one or more channels, 
+and [publish your bot](~/bot-framework-publish-add-to-directory.md) to the Bot Directory, without ever leaving 
 the Azure portal. 
 
 To learn more about building great bots with the Bot Framework, see the following articles:
 
-- [Key concepts in the Bot Framework](bot-framework-concepts-overview.md)
-- [Introduction to bot design](design-principles.md)
+- [Key concepts in the Bot Framework](~/bot-framework-concepts-overview.md)
+- [Introduction to bot design](~/design/principles.md)

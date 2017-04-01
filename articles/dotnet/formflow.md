@@ -72,7 +72,7 @@ define a simple welcome message.
 
 To use FormFlow, you must first import the `Microsoft.Bot.Builder.FormFlow` namespace.
 
-[!code-csharp[Define form](../includes/code/dotnet-formflow.cs#defineForm)]
+[!code-csharp[Define form](~/includes/code/dotnet-formflow.cs#defineForm)]
 
 ### Connect the form to the framework 
 
@@ -80,7 +80,7 @@ To connect the form to the framework, you must add it to the controller.
 In this example, the `Conversation.SendAsync` method calls the static `MakeRootDialog` method, 
 which in turn, calls the `FormDialog.FromForm` method to create the `SandwichOrder` form. 
 
-[!code-csharp[Connect form to framework](../includes/code/dotnet-formflow.cs#connectToFramework)]
+[!code-csharp[Connect form to framework](~/includes/code/dotnet-formflow.cs#connectToFramework)]
 
 ### See it in action
 
@@ -331,7 +331,7 @@ The form returns this information via the `FormCanceledException<T>` class.
 
 This code example shows how to catch the exception and display a message according to the event that occurred. 
 
-[!code-csharp[Handle exception or quit](../includes/code/dotnet-formflow.cs#handleExceptionOrQuit)]
+[!code-csharp[Handle exception or quit](~/includes/code/dotnet-formflow.cs#handleExceptionOrQuit)]
 
 ## Summary
 
