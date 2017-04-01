@@ -2,7 +2,7 @@
 ## [Key concepts](~/nodejs/concepts.md)
 ## [Create a bot with Node.js](~/nodejs/getstarted.md)
 ## Send and receive messages
-### [Using the default message handler](~/nodejs/use-default-message-handler.md) 
+### [Use the default message handler](~/nodejs/use-default-message-handler.md) 
 ### [Send and receive attachments](~/nodejs/send-receive-attachments.md) 
 ### [Send a rich card](~/nodejs/send-card-buttons.md)
 ### [Send a typing indicator](~/nodejs/send-typing-indicator.md)
