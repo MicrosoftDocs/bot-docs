@@ -14,7 +14,7 @@ ms.reviewer:
 
 # Advanced features of FormFlow
 
-[FormFlow](bot-framework-dotnet-formflow.md) describes a basic FormFlow 
+[FormFlow](~/dotnet/formflow.md) describes a basic FormFlow 
 implementation that delivers a fairly generic user experience. 
 To deliver a more customized user experience using FormFlow, you can specify initial form state, 
 add business logic to manage interdependencies between fields and process user input, 
@@ -102,7 +102,7 @@ you can add the `Prompt` attribute to specify a custom prompt for that field.
 
 [!code-csharp[Prompt attribute](../includes/code/dotnet-formflow-advanced.cs#promptAttribute)]
 
-This example uses [pattern language](bot-framework-dotnet-formflow-pattern-language.md) 
+This example uses [pattern language](~/dotnet/formflow-pattern-language.md) 
 to dynamically populate the prompt with form data at runtime: `{&}` is replaced with the description 
 of the field and `{||}` is replaced with the list of choices in the enumeration. 
 
@@ -167,7 +167,7 @@ the `Template` attribute enables you to replace the default templates that FormF
 generate prompts. 
 This code example uses the `Template` attribute to redefine how the form handles 
 all enumeration fields. The attribute indicates that the user may select only one item, 
-sets the prompt text by using [pattern language](bot-framework-dotnet-formflow-pattern-language.md), 
+sets the prompt text by using [pattern language](~/dotnet/formflow-pattern-language.md), 
 and specifies that the form should display only one item per line. 
 
 [!code-csharp[Template attribute](../includes/code/dotnet-formflow-advanced.cs#templateAttribute)]
@@ -194,7 +194,7 @@ If you use the `Template` attribute to replace the default templates that FormFl
 generate prompts, you may want to interject some variation into the prompts and messages 
 that the form generates. 
 To do so, you can define multiple text strings using 
-[pattern language](bot-framework-dotnet-formflow-pattern-language.md), and the form will randomly choose 
+[pattern language](~/dotnet/formflow-pattern-language.md), and the form will randomly choose 
 from the available options each time it needs to display a prompt or message.
 
 This code example redefines the [TemplateUsage.NotUnderstood](https://docs.botframework.com/en-us/csharp/builder/sdkreference/dd/df7/namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow.html#a28ef6a551a3611e4a6abe06659797313aca296fd71c8deadb1bccdad8e097bc50) template to specify two different variations of 
@@ -320,12 +320,12 @@ adding business logic to manage interdependencies between fields and process use
 and using attributes to customize prompts, override templates, 
 designate optional fields, match user input, and validate user input. 
 For information about additional ways to customize the user experience with FormFlow, 
-see [Customize a form using FormBuilder](bot-framework-dotnet-formflow-formbuilder.md).
+see [Customize a form using FormBuilder](~/dotnet/formflow-formbuilder.md).
 
 ## Additional Resources
 
-- [FormFlow](bot-framework-dotnet-formflow.md)
-- [Customize a form using FormBuilder](bot-framework-dotnet-formflow-formbuilder.md)
-- [Localize form content](bot-framework-dotnet-formflow-localize.md)
-- [Define a form using JSON schema](bot-framework-dotnet-formflow-json-schema.md)
-- [Customize user experience with pattern language](bot-framework-dotnet-formflow-pattern-language.md)
+- [FormFlow](~/dotnet/formflow.md)
+- [Customize a form using FormBuilder](~/dotnet/formflow-formbuilder.md)
+- [Localize form content](~/dotnet/formflow-localize.md)
+- [Define a form using JSON schema](~/dotnet/formflow-json-schema.md)
+- [Customize user experience with pattern language](~/dotnet/formflow-pattern-language.md)

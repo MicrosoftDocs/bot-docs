@@ -56,5 +56,5 @@ Cortana for voice, and the Bing APIs for search. [Learn more](intelligent-bots.m
 Get a [deeper look at the features](bot-framework-overview-how-it-works.md) of the Bot Framework. Then get started with [building a bot](bot-framework-botbuilder-overview.md) and learn more about [designing great bots](design-principles.md).
 
 [NodeGetStarted]:bot-framework-nodejs-getstarted.md
-[DotNETGetStarted]:bot-framework-dotnet-getstarted.md
+[DotNETGetStarted]:~/dotnet/getstarted.md
 

@@ -16,7 +16,7 @@ ms.reviewer:
 
 <!--
 > [!div class="op_single_selector"]
-> * [.NET](bot-framework-dotnet-howto-global-handlers.md)
+> * [.NET](~/dotnet/howto-global-handlers.md)
 > * [Node.js](bot-framework-nodejs-howto-global-handlers.md)
 >
 -->

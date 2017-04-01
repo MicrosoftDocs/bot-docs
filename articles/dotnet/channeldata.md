@@ -17,7 +17,7 @@ ms.reviewer:
 By using the `Activity` object's `ChannelData` property 
 to pass native metadata to a channel, 
 you can implement channel-specific functionality that is not possible to achieve
-by using [message text and attachments](bot-framework-dotnet-create-messages.md) alone. 
+by using [message text and attachments](~/dotnet/create-messages.md) alone. 
 This article describes how to use a message activity's `ChannelData` property to implement this 
 channel-specific functionality:
 
@@ -151,7 +151,7 @@ when a user clicks a button in the Slack message.
 }
 ```
 
-Your bot can reply to this message in the [normal manner](bot-framework-dotnet-connector.md#create-reply), 
+Your bot can reply to this message in the [normal manner](~/dotnet/connector.md#create-reply), 
 or it can post its response directly to the endpoint that is specified by 
 the `payload` object's `response_url` property.
 For information about when and how to post a response to the `response_url`, see 
@@ -300,7 +300,7 @@ This snippet shows an example of the `channelData` property for a native Kik mes
 
 ## Additional resources
 
-- [Activity types](bot-framework-dotnet-activities.md)
-- [Create messages](bot-framework-dotnet-create-messages.md)
-- [Send and receive activities](bot-framework-dotnet-connector.md)
-- [Add attachments to messages](bot-framework-dotnet-add-attachments.md)
+- [Activity types](~/dotnet/activities.md)
+- [Create messages](~/dotnet/create-messages.md)
+- [Send and receive activities](~/dotnet/connector.md)
+- [Add attachments to messages](~/dotnet/add-attachments.md)

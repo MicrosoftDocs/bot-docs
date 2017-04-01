@@ -34,12 +34,12 @@ much like a web application that does not need to store session state in web ser
 ### Echo bot
 
 Consider this echo bot example, which describes how to change the bot that's created in the 
-[Get started](bot-framework-dotnet-getstarted.md) tutorial so that it uses dialogs to 
+[Get started](~/dotnet/getstarted.md) tutorial so that it uses dialogs to 
 exchange messages with the user.
 
 > [!TIP]
 > To follow along with this example, use the instructions in the 
-> [Get started](bot-framework-dotnet-getstarted.md) tutorial to create a bot, and then 
+> [Get started](~/dotnet/getstarted.md) tutorial to create a bot, and then 
 > update its **MessagesController.cs** file as described below.
 
 #### MessagesController.cs 
@@ -132,7 +132,7 @@ private conversation data is useful for storing user data that is related to a s
 
 `Internals.IBotToUser` provides methods to send a message from bot to user. 
 Messages may be sent inline with the response to the web API method call or 
-directly by using the [Connector client](bot-framework-dotnet-connector.md#create-client). 
+directly by using the [Connector client](~/dotnet/connector.md#create-client). 
 Sending and receiving messages through the dialog context ensures that the `Internals.IBotData` state is passed through the Connector.
 
 ### Internals.IDialogStack
@@ -147,7 +147,7 @@ suspend the current dialog until a message from the user arrives, or even reset 
 
 The dialog stack and the state of all active dialogs are serialized to the per-user, per-conversation <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d7/dea/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_bot_data_bag.html" target="_new">IBotDataBag</a>. 
 The serialized blob is persisted in the messages that the bot sends to and receives from 
-the [Connector](bot-framework-dotnet-concepts.md#connector). 
+the [Connector](~/dotnet/concepts.md#connector). 
 To be serialized, a `Dialog` class must include the `[Serializable]` attribute. 
 All `IDialog` implementations in the <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_blank">Builder library</a> are marked as serializable. 
 
@@ -212,8 +212,8 @@ If `Chain.Switch<T, R>` returns a nested `IDialog<IDialog<T>>`, then the inner `
 
 ## Additional resources
 
-- [Key concepts in the Bot Builder SDK for .NET](bot-framework-dotnet-concepts.md)
+- [Key concepts in the Bot Builder SDK for .NET](~/dotnet/concepts.md)
 - [Designing conversation flow](bot-framework-design-core-dialogs.md)
-- [Manage conversation flow using dialogs](bot-framework-dotnet-manage-conversation-flow.md)
+- [Manage conversation flow using dialogs](~/dotnet/manage-conversation-flow.md)
 - [Bot Framework troubleshooting guide](bot-framework-troubleshooting-guide.md#implement-dialogs)
 - <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_blank">Builder library</a>

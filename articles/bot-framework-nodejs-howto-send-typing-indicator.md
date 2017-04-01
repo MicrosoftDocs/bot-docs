@@ -16,7 +16,7 @@ ms.reviewer:
 
 <!--
 > [!div class="op_single_selector"]
-> * [.NET](bot-framework-dotnet-howto-send-receive-attachments.md)
+> * [.NET](~/dotnet/howto-send-receive-attachments.md)
 > * [Node.js](bot-framework-nodejs-howto-send-receive-attachments.md)
 >
 -->

@@ -10,7 +10,7 @@
     items:
       - name: Use .NET
         tocHref: /articles/get-started/
-        topicHref: /get-started/bot-framework-dotnet-getstarted
+        topicHref: /get-started/~/dotnet/getstarted
       - name: Use Node.js
         tocHref: /articles/get-started
         topicHref: /articles/get-started/bot-framework-nodejs-getstarted

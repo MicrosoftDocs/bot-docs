@@ -24,13 +24,13 @@ It facilitates communication between bot and user,
 by relaying messages from bot to channel and from channel to bot. 
 In the Bot Builder SDK for .NET, the <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/db/dbb/namespace_microsoft_1_1_bot_1_1_connector.html" target="_blank">Connector</a> library enables access to the Connector. 
 
-For details about using the Connector via the Bot Builder SDK for .NET, see [Send and receive activities](bot-framework-dotnet-connector.md).
+For details about using the Connector via the Bot Builder SDK for .NET, see [Send and receive activities](~/dotnet/connector.md).
 
 ##<a id="activity"></a> Activity
 
 [!include[Activity concept overview](../includes/snippet-dotnet-concept-activity.md)]
 For details about Activities in the Bot Builder SDK for .NET, 
-see [Activity types](bot-framework-dotnet-activities.md).
+see [Activity types](~/dotnet/activities.md).
 
 ## Dialog
 
@@ -40,13 +40,13 @@ A dialog can be composed with other dialogs to maximize reuse, and a dialog cont
 A conversation that comprises dialogs is portable across computers, which makes it possible for your bot implementation to scale. In the Bot Builder SDK for .NET, the <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_blank">Builder</a> library enables you to manage dialogs.
 
 For details about using dialogs within the Bot Builder SDK for .NET, see 
-[Dialogs](bot-framework-dotnet-dialogs.md).
+[Dialogs](~/dotnet/dialogs.md).
 
 ## State
 
 [!include[State concept overview](../includes/snippet-dotnet-concept-state.md)]
 For details about managing state using the Bot Builder SDK for .NET, 
-see [Manage state](bot-framework-dotnet-state.md).
+see [Manage state](~/dotnet/state.md).
 
 ## Naming conventions
 
@@ -58,16 +58,16 @@ transported over the wire.
 ## Security
 
 You should ensure that your bot's endpoint can only be called by the Bot Framework Connector service. 
-For more information on this topic, see [Security](bot-framework-dotnet-security.md).
+For more information on this topic, see [Security](~/dotnet/security.md).
 
 ## Additional resources
 
-- [Bot Builder SDK for .NET](bot-framework-dotnet-overview.md)
-- [Create a bot with the Bot Builder SDK for .NET](bot-framework-dotnet-getstarted.md)
-- [Activity types](bot-framework-dotnet-activities.md)
-- [Dialogs](bot-framework-dotnet-dialogs.md)
+- [Bot Builder SDK for .NET](~/dotnet/overview.md)
+- [Create a bot with the Bot Builder SDK for .NET](~/dotnet/getstarted.md)
+- [Activity types](~/dotnet/activities.md)
+- [Dialogs](~/dotnet/dialogs.md)
 - [Designing conversation flow](bot-framework-design-core-dialogs.md)
-- [Security](bot-framework-dotnet-security.md)
+- [Security](~/dotnet/security.md)
 
 
 

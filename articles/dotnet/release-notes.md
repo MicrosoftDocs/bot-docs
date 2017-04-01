@@ -165,11 +165,11 @@ This article describes the changes that have been introduced by each version of 
 
 ### Breaking changes
 
-- Updated schema to v3. `Message` is now [Activity](bot-framework-dotnet-activities.md) and there is a <a href="http://docs.botframework.com/en-us/support/upgrade-code-to-v3/#addressing" target="_blank">new addressing scheme</a>.
+- Updated schema to v3. `Message` is now [Activity](~/dotnet/activities.md) and there is a <a href="http://docs.botframework.com/en-us/support/upgrade-code-to-v3/#addressing" target="_blank">new addressing scheme</a>.
 - <a href="http://docs.botframework.com/en-us/support/upgrade-code-to-v3/#sending-replies" target="_blank">Changed reply model</a> such that replies to the user will be sent asynchronously over a separately initiated HTTP request rather than inline with the HTTP POST for the incoming message to bot.
 - Updated <a href="http://docs.botframework.com/en-us/restapi/authentication/#navtitle" target="_blank">Authentication model</a>.
 - Decoupled bot data storage <a href="http://docs.botframework.com/en-us/csharp/builder/sdkreference/stateapi.html" target="_blank">Bot State</a> from messaging API.
-- Added [new card format](bot-framework-dotnet-add-attachments.md) for attachments.
+- Added [new card format](~/dotnet/add-attachments.md) for attachments.
 
 ### Changes
 

@@ -102,7 +102,7 @@ description:
                     <a href="#developing">Developing Bots</a>
                     <ul id="developing" class="cardsC">
                         <li>
-                            <a href="/botframework/bot-framework-dotnet-overview">
+                            <a href="/botframework/dotnet/overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">

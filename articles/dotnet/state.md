@@ -18,7 +18,7 @@ ms.reviewer:
 This article describes how to manage state data using the State service via the Bot Builder SDK for .NET.
 
 > [!IMPORTANT]
-> If your bot uses [dialogs](bot-framework-dotnet-dialogs.md), 
+> If your bot uses [dialogs](~/dotnet/dialogs.md), 
 > conversation state (the dialog stack and the state of each dialog in the stack) is automatically stored 
 > using the Bot Framework State service. 
 
@@ -35,7 +35,7 @@ that you can use to manage state data.
 | `SetUserData` | User | Save state data for the user on the specified channel |
 | `SetConversationData` | Conversation | Save state data for the conversation on the specified channel |
 | `SetPrivateConversationData` | User and Conversation | Save state data for the user within the conversation on the specified channel |
-| `DeleteStateForUser` | User | Delete state data for the user on the specified channel. Your bot should call this method when it receives an activity of type [deleteUserData](bot-framework-dotnet-activities.md#deleteuserdata) or an activity of type [contactRelationUpdate](bot-framework-dotnet-activities.md#contactrelationupdate) that indicates the bot has been removed from the user's contact list. |
+| `DeleteStateForUser` | User | Delete state data for the user on the specified channel. Your bot should call this method when it receives an activity of type [deleteUserData](~/dotnet/activities.md#deleteuserdata) or an activity of type [contactRelationUpdate](~/dotnet/activities.md#contactrelationupdate) that indicates the bot has been removed from the user's contact list. |
 
 If your bot saves state data by using one of the "**Set...**" methods, 
 future messages that your bot receives in the same context will contain that data, 

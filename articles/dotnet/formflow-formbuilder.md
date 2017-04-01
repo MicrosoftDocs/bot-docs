@@ -14,8 +14,8 @@ ms.reviewer:
 
 # Customize a form using FormBuilder
 
-[FormFlow](bot-framework-dotnet-formflow.md) describes a basic FormFlow implementation that 
-delivers a fairly generic user experience, and [Advanced features of FormFlow](bot-framework-dotnet-formflow-advanced.md) describes how you can 
+[FormFlow](~/dotnet/formflow.md) describes a basic FormFlow implementation that 
+delivers a fairly generic user experience, and [Advanced features of FormFlow](~/dotnet/formflow-advanced.md) describes how you can 
 customize user experience by using business logic and attributes. 
 This article describes how you can use 
 [FormBuilder](https://docs.botframework.com/en-us/csharp/builder/sdkreference/de/d9d/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder.html) 
@@ -68,7 +68,7 @@ This code example shows a dynamically generated confirmation that computes the c
 ## Customize a form using FormBuilder
 
 This code example uses FormBuilder to define the steps of the form, 
-[validate selections](bot-framework-dotnet-formflow-advanced.md#business-logic), 
+[validate selections](~/dotnet/formflow-advanced.md#business-logic), 
 and [dynamically define a field value and confirmation](#dynamically-define). 
 By default, steps in the form will be executed in the sequence in which they are listed. 
 However, steps might be skipped for fields that already contain values or if explicit navigation is specified. 
@@ -87,7 +87,7 @@ In this example, the form executes these steps:
 - Fills in `SandwichOrder.Sauces`. 
 - [Dynamically defines](#define-value) the field value for `SandwichOrder.Specials`. 
 - [Dynamically defines](#define-message) the confirmation for cost of the sandwich. 
-- Fills in `SandwichOrder.DeliveryAddress` and [verifies](bot-framework-dotnet-formflow-advanced.md#business-logic) the resulting string. If the address does not start with a number, the form returns a message. 
+- Fills in `SandwichOrder.DeliveryAddress` and [verifies](~/dotnet/formflow-advanced.md#business-logic) the resulting string. If the address does not start with a number, the form returns a message. 
 - Fills in `SandwichOrder.DeliveryTime` with a custom prompt. 
 - Confirms the order. 
 - Adds any remaining fields that were defined in the class but not explicitly referenced by `Field`. (If the example did not call the `AddRemainingFields` method, the form would not include any fields that were not explicity referenced.) 
@@ -96,8 +96,8 @@ In this example, the form executes these steps:
 
 ## Additional resources
 
-- [FormFlow](bot-framework-dotnet-formflow.md)
-- [Advanced features of FormFlow](bot-framework-dotnet-formflow-advanced.md)
-- [Localize form content](bot-framework-dotnet-formflow-localize.md)
-- [Define a form using JSON schema](bot-framework-dotnet-formflow-json-schema.md)
-- [Customize user experience with pattern language](bot-framework-dotnet-formflow-pattern-language.md)
+- [FormFlow](~/dotnet/formflow.md)
+- [Advanced features of FormFlow](~/dotnet/formflow-advanced.md)
+- [Localize form content](~/dotnet/formflow-localize.md)
+- [Define a form using JSON schema](~/dotnet/formflow-json-schema.md)
+- [Customize user experience with pattern language](~/dotnet/formflow-pattern-language.md)

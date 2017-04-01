@@ -22,7 +22,7 @@ The Bot Framework provides four ways to provides to build bots depending on your
 ## <a id="dotnet"></a>Bot Builder SDK for .NET
 The Bot Builder SDK for .NET is a powerful framework for constructing bots that can handle both freeform interactions and more guided ones where the possibilities are explicitly shown to the user. It is easy to use and leverages C# to provide a familiar way for .NET developers to write bots. 
 
-The [detailed walkthrough](bot-framework-dotnet-getstarted.md) using the Bot Builder SDK for .NET will get you started toward building your own bot.
+The [detailed walkthrough](~/dotnet/getstarted.md) using the Bot Builder SDK for .NET will get you started toward building your own bot.
 
 ## <a id="node"></a>Bot Builder SDK for Node.js
 The Bot Builder SDK for Node.js is a powerful framework for constructing bots that can handle both freeform interactions and more guided ones where the possibilities are explicitly shown to the user. It is easy to use and models frameworks like Express & Restify to provide a familiar way for JavaScript developers to write bots. 

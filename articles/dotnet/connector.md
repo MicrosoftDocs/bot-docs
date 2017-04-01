@@ -25,14 +25,14 @@ exchange information between bot and user on a channel.
 > [!NOTE]
 > While it is possible to construct a bot by exclusively using the techniques that are described
 > in this article, the Bot Builder SDK provides additional features like 
-> [dialogs](bot-framework-dotnet-dialogs.md) and [FormFlow](bot-framework-dotnet-formflow.md) that 
+> [dialogs](~/dotnet/dialogs.md) and [FormFlow](~/dotnet/formflow.md) that 
 > can streamline the process of managing conversation flow and state and 
 > make it simpler to incorporate cognitive services such as language understanding.
 
 ##<a id="create-client"></a> Create a connector client
 
 The `ConnectorClient` class contains the methods that a bot uses to communicate with a user on a channel. 
-When your bot receives an [Activity](bot-framework-dotnet-activities.md) object from the Connector, 
+When your bot receives an [Activity](~/dotnet/activities.md) object from the Connector, 
 it should use the `ServiceUrl` specified for that activity to create the connector client that it'll 
 subsequently use to generate a response. 
 
@@ -47,7 +47,7 @@ subsequently use to generate a response.
 
 ##<a id="create-reply"></a> Create a reply
 
-The Connector uses an [Activity](bot-framework-dotnet-activities.md) object to pass information back and forth between bot and channel (user). 
+The Connector uses an [Activity](~/dotnet/activities.md) object to pass information back and forth between bot and channel (user). 
 Every activity contains information used for routing the message to the appropriate destination 
 along with information about who created the message (`From` property), 
 the context of the message, and the recipient of the message (`Recipient` property).
@@ -120,7 +120,7 @@ This code example uses the `CreateConversation` method to create a group convers
 ## Additional resources
 
 - <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/db/dbb/namespace_microsoft_1_1_bot_1_1_connector.html" target="_blank">Connector library</a>
-- [Activity types](bot-framework-dotnet-activities.md)
-- [Create messages](bot-framework-dotnet-create-messages.md)
-- [Add attachments to messages](bot-framework-dotnet-add-attachments.md)
-- [Implement channel-specific functionality](bot-framework-dotnet-channeldata.md)
+- [Activity types](~/dotnet/activities.md)
+- [Create messages](~/dotnet/create-messages.md)
+- [Add attachments to messages](~/dotnet/add-attachments.md)
+- [Implement channel-specific functionality](~/dotnet/channeldata.md)

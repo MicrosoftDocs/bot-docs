@@ -116,8 +116,8 @@ The website can 'signal' to the bot that the user has completed the website flow
 
 ## Additional resources
 
-- [Dialogs](bot-framework-dotnet-dialogs.md)
-- [Manage conversation flow using .NET](bot-framework-dotnet-manage-conversation-flow.md)
+- [Dialogs](~/dotnet/dialogs.md)
+- [Manage conversation flow using .NET](~/dotnet/manage-conversation-flow.md)
 - [Manage conversation flow using Node.js](bot-framework-nodejs-howto-manage-conversation-flow.md)
 - [Add smarts to your bot with Microsoft Cognitive Services](intelligent-bots.md)
 - [Add language understanding to your bot](bot-framework-intelligence-language.md)

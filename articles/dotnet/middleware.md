@@ -16,7 +16,7 @@ ms.reviewer:
 
 <!--
 > [!div class="op_single_selector"]
-> * [.NET](bot-framework-dotnet-howto-middleware.md)
+> * [.NET](~/dotnet/howto-middleware.md)
 > * [Node.js](bot-framework-nodejs-howto-middleware.md)
 >
 -->

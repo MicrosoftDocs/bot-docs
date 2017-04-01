@@ -14,7 +14,7 @@ ms.reviewer:
 
 # Build a basic bot with dialogs
 
-The basic bot template demonstrates how to use [dialogs](bot-framework-dotnet-dialogs.md) to manage conversation flow with a user. When a user posts a message, it’s sent to the bot’s `Run` method in the **Run.csx** file. Before the bot processes the message, it first <a href="https://docs.botframework.com/en-us/restapi/authentication/" target="_blank">authenticates the request</a>. If the validation fails, the bot responds with "Unauthorized". 
+The basic bot template demonstrates how to use [dialogs](~/dotnet/dialogs.md) to manage conversation flow with a user. When a user posts a message, it’s sent to the bot’s `Run` method in the **Run.csx** file. Before the bot processes the message, it first <a href="https://docs.botframework.com/en-us/restapi/authentication/" target="_blank">authenticates the request</a>. If the validation fails, the bot responds with "Unauthorized". 
 
 [!code-csharp[Authenticate request](../includes/code/azure-basic-bot.cs#authenticateRequest)]
 
@@ -47,11 +47,11 @@ The `AfterResetAsync` method processes the user’s response to `PromptDialog`. 
 Here are a few things you might consider as next steps when updating the code.
 - Add other prompts to get information from the user.
 - Add attachments such as cards to provide a richer user experience.
-- Chain together other dialogs using [dialog chains](bot-framework-dotnet-dialogs.md#dialog-chains).
+- Chain together other dialogs using [dialog chains](~/dotnet/dialogs.md#dialog-chains).
 
 ##Additional resources
 
-- [Manage conversation flow using dialogs](bot-framework-dotnet-manage-conversation-flow.md)
+- [Manage conversation flow using dialogs](~/dotnet/manage-conversation-flow.md)
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub Repo</a>
 - <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/" target="_blank">Bot Builder SDK C# Reference</a>
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder SDK</a>

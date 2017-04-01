@@ -7,7 +7,7 @@
 ## [Channels]()
 <!-- ## [Try it out](bot-framework-sample-bot.md)-->
 # Quickstart
-## [Create a bot with .NET](bot-framework-dotnet-getstarted.md)
+## [Create a bot with .NET](~/dotnet/getstarted.md)
 ## [Create a bot with Node.js](bot-framework-nodejs-getstarted.md)
 ## [Create a bot with Azure Bot Service](~/azure-bot-service/getstarted.md)
 # Samples

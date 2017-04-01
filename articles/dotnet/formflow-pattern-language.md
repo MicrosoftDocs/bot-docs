@@ -21,11 +21,11 @@ use pattern language to specify the contents and/or format of the prompt.
 
 A [prompt](https://docs.botframewo  rk.com/en-us/csharp/builder/sdkreference/d0/d34/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_prompt_attribute.html) 
 defines the message that is sent to the user to request a piece of information or ask for confirmation. 
-You can customize a prompt by using the [Prompt attribute](bot-framework-dotnet-formflow-advanced.md#prompt-attribute) or implicitly through 
+You can customize a prompt by using the [Prompt attribute](~/dotnet/formflow-advanced.md#prompt-attribute) or implicitly through 
 [IFormBuilder<T>.Field](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html#ad7881ee9b6a31bcd4acf2033eca8d097). 
 
 Forms use templates to automatically construct prompts and other things such as help. 
-You can override the default template of a class or field by using the [Template attribute](bot-framework-dotnet-formflow-advanced.md#template-attribute). 
+You can override the default template of a class or field by using the [Template attribute](~/dotnet/formflow-advanced.md#template-attribute). 
 
 > [!TIP]
 > The [FormConfiguration.Templates](https://docs.botframework.com/en-us/csharp/builder/sdkreference/de/db8/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_configuration.html#a40fe1b7c1bb62d7ae2accb8501a597a5) 
@@ -138,9 +138,9 @@ What kind of sandwich would you like?
 
 ## Additional resources
 
-- [FormFlow](bot-framework-dotnet-formflow.md)
-- [Advanced features of FormFlow](bot-framework-dotnet-formflow-advanced.md)
-- [Customize a form using FormBuilder](bot-framework-dotnet-formflow-formbuilder.md)
-- [Localize form content](bot-framework-dotnet-formflow-localize.md)
-- [Define a form using JSON schema](bot-framework-dotnet-formflow-json-schema.md)
+- [FormFlow](~/dotnet/formflow.md)
+- [Advanced features of FormFlow](~/dotnet/formflow-advanced.md)
+- [Customize a form using FormBuilder](~/dotnet/formflow-formbuilder.md)
+- [Localize form content](~/dotnet/formflow-localize.md)
+- [Define a form using JSON schema](~/dotnet/formflow-json-schema.md)
 

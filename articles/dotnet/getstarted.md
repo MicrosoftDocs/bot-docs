@@ -15,7 +15,7 @@ ms.reviewer: rstand
 
 <!--
 > [!div class="op_single_selector"]
-> * [.NET](bot-framework-dotnet-getstarted.md)
+> * [.NET](~/dotnet/getstarted.md)
 > * [Node.js](bot-framework-nodejs-getstarted.md)
 > * [Azure Bot Service](~/azure-bot-service/getstarted.md)
 >
@@ -133,6 +133,6 @@ To learn more about building great bots with the Bot Framework, see the followin
 
 - [Key concepts in the Bot Framework](bot-framework-concepts-overview.md)
 - [Introduction to bot design](design-principles.md)
-- [Bot Builder SDK for .NET](bot-framework-dotnet-overview.md)
+- [Bot Builder SDK for .NET](~/dotnet/overview.md)
 - [Publish a bot to the Bot Framework](bot-framework-publish-overview.md)
 - [Bot Framework FAQ](bot-framework-faq.md)

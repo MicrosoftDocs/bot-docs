@@ -63,8 +63,8 @@ cd BotBuilder-Samples/CSharp
 Learn more about building bots using the Bot Builder SDK for .NET by 
 reviewing articles throughout this section, beginning with:
 
-- [Get Started](bot-framework-dotnet-getstarted.md): Quickly build and test a simple bot by following instructions in this step-by-step tutorial.
-- [Key concepts](bot-framework-dotnet-concepts.md): Learn about key concepts in the Bot Builder SDK for .NET.
+- [Get Started](~/dotnet/getstarted.md): Quickly build and test a simple bot by following instructions in this step-by-step tutorial.
+- [Key concepts](~/dotnet/concepts.md): Learn about key concepts in the Bot Builder SDK for .NET.
 
 If you encounter problems or have suggestions regarding the Bot Builder SDK for .NET, 
 see [Support](resources-support.md) for a list of available resources. 

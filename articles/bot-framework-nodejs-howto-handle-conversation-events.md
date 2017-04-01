@@ -18,7 +18,7 @@ The title is "Greet users" because typically, you'll greet the users or do other
 
 <!--
 > [!div class="op_single_selector"]
-> * [.NET](bot-framework-dotnet-howto-save-user-data.md)
+> * [.NET](~/dotnet/howto-save-user-data.md)
 > * [Node.js](bot-framework-nodejs-howto-save-user-data.md)
 >
 -->

@@ -14,10 +14,10 @@ ms.reviewer: rstand
 
 # Create messages
 
-Your bot will send **message** [activities](bot-framework-dotnet-activities.md) to communicate information to users, 
+Your bot will send **message** [activities](~/dotnet/activities.md) to communicate information to users, 
 and likewise, will also receive **message** activities from users. 
 Some messages may simply consist of plain text, while others may contain richer content such as 
-[media attachments, buttons, and cards](bot-framework-dotnet-add-attachments.md). 
+[media attachments, buttons, and cards](~/dotnet/add-attachments.md). 
 This article describes some of the commonly-used message properties.
 
 ## Message text and format
@@ -69,7 +69,7 @@ These styles are supported with `TextFormat` of "xml":
 
 The `Attachments` property of a message activity can be used to send and receive simple media attachments 
 (e.g., image, audio, video, file) and rich cards. 
-For details, see [Add attachments to messages](bot-framework-dotnet-add-attachments.md).
+For details, see [Add attachments to messages](~/dotnet/add-attachments.md).
 
 ## Message entities
 
@@ -144,11 +144,11 @@ This code example shows how to use a strongly-typed class to process an entity w
 ## Message channel data
 
 The `ChannelData` property of a message activity can be used to implement channel-specific functionality. 
-For details, see [Implement channel-specific functionality](bot-framework-dotnet-channeldata.md).
+For details, see [Implement channel-specific functionality](~/dotnet/channeldata.md).
 
 ## Additional resources
 
-- [Activity types](bot-framework-dotnet-activities.md)
-- [Send and receive activities](bot-framework-dotnet-connector.md)
-- [Add attachments to messages](bot-framework-dotnet-add-attachments.md)
-- [Implement channel-specific functionality](bot-framework-dotnet-channeldata.md)
+- [Activity types](~/dotnet/activities.md)
+- [Send and receive activities](~/dotnet/connector.md)
+- [Add attachments to messages](~/dotnet/add-attachments.md)
+- [Implement channel-specific functionality](~/dotnet/channeldata.md)
