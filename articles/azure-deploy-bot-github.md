@@ -57,7 +57,7 @@ You can verify that the deployment has completed by visiting the web app in a br
 ## Step 4: Update Application settings with bot credentials
 
 Update **Application settings** to specify values for `MICROSOFT_APP_ID` and `MICROSOFT_APP_PASSWORD` using the
-values that you acquired when you [registered](~/deploy/register.md) the bot in the Bot Framework Portal.
+values that you acquired when you [registered](~/portal-register-bot.md) the bot in the Bot Framework Portal.
 
 > [!NOTE]
 > If you have not yet registered the bot in the Bot Framework Portal, you can populate `MICROSOFT_APP_ID` and `MICROSOFT_APP_PASSWORD`

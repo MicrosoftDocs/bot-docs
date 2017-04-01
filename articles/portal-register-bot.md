@@ -70,11 +70,11 @@ the next step in the bot publication process will depend upon whether or not you
 ### If you have not yet deployed your bot to the cloud:
 1. Deploy your bot to the cloud by following the instructions found in [Deploy a bot to the cloud](~/publish-bot-overview.md).
 
-2. Return to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a> and [update your bot's registration data](~/deploy/register.md#maintain) to specify the **HTTPS** endpoint for the bot.
+2. Return to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a> and [update your bot's registration data](~/portal-register-bot.md#maintain) to specify the **HTTPS** endpoint for the bot.
 
-3. [Configure the bot to run on one or more channels](~/deploy/configure.md).
+3. [Configure the bot to run on one or more channels](~/portal-configure-channels.md).
 
 ### If you have already deployed your bot to the cloud:
 1. Update the Microsoft App Id and Microsoft App Password values in your deployed application's configuration settings to specify the **app ID** and **password** values that were generated for your bot during the registration process, as described [here](#updateConfigSettings).
 
-2. [Configure the bot to run on one or more channels](~/deploy/configure.md).
+2. [Configure the bot to run on one or more channels](~/portal-configure-channels.md).

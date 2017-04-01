@@ -52,14 +52,14 @@
 #### [Bots in websites](~/design/patterns-bot-in-website.md)
 ## [Develop with .NET](dotnet/)
 ## [Develop with Node.js](nodejs/)
-## [Register a bot](~/deploy/register.md)
+## [Register a bot](~/portal-register-bot.md)
 ## [Deploy](~/publish-bot-overview.md)
 ### [Deploy from local git repo](~/azure-deploy-bot-local-git.md)
 ### [Deploy from Github](~/azure-deploy-bot-github.md)
 ### [Deploy from Visual Studio](~/azure-deploy-bot-visual-studio.md)
-## [Configure a bot](~/deploy/configure.md)
+## [Configure a bot](~/portal-configure-channels.md)
 <!--### [Set up continuous integration](~/azure-bot-service/continuous-integration.md)-->
-## [Publish a bot to the directory](~/deploy/add-to-directory.md)
+## [Publish a bot to the directory](~/directory-add-bot.md)
 ## Troubleshoot
 ### [Troubleshoot general problems](bot-framework-troubleshooting-guide.md)
 ### [Troubleshoot authentication](bot-framework-troubleshooting-auth.md)

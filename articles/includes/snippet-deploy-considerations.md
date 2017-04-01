@@ -7,7 +7,7 @@ Regardless of which cloud service you choose to host your bot, you must address 
 > creation process.
 
 ###Application configuration settings
-If you've already [registered](~/deploy/register.md) your bot with the Bot Framework,
+If you've already [registered](~/portal-register-bot.md) your bot with the Bot Framework,
 update the Microsoft App Id and Microsoft App Password values in your application's configuration settings
 as part of the deployment process.
 Specify the **app ID** and **password** values that were generated for your bot during registration.

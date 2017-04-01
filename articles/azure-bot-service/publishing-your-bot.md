@@ -16,7 +16,7 @@ ms.reviewer:
 
 Now that you’ve written your bot and added it to one or more channels, it’s time to publish it to the Bot Directory and Skype apps. But first, we need to do a quick review of your bot. For information about the review process, see Bot review guidelines. You should review the [guidelines](~/deploy/review-guidelines.md) before submitting your bot for review to ensure that it complies with the guidelines.
 
-If your bot passes review, it’s added to the [Bot Directory](~/deploy/add-to-directory.md). The directory is a public directory of all bots that were registered and published with Microsoft Bot Framework. Users can select your bot in the directory and add it to one or more of the configured channels that they use.
+If your bot passes review, it’s added to the [Bot Directory](~/directory-add-bot.md). The directory is a public directory of all bots that were registered and published with Microsoft Bot Framework. Users can select your bot in the directory and add it to one or more of the configured channels that they use.
 
 The Publish page provides the status of the publishing process. The status transitions from **Unavailable** to **In review** to Published as the bot moves through the publishing process.
 

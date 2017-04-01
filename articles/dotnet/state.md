@@ -54,7 +54,7 @@ To create a state client using an `Activity` object, call the `GetStateClient` m
 
 If you do not have access to an `Activity` object, you can create a state client by simply 
 creating a new instance of the `StateClient` class. In this example, `microsoftAppId` and `microsoftAppPassword` are the Bot Framework authentication 
-credentials that you acquire for your bot during the [bot registration](~/deploy/register.md) 
+credentials that you acquire for your bot during the [bot registration](~/portal-register-bot.md) 
 process.
 
 [!code-csharp[Get State client](~/includes/code/dotnet-state.cs#getStateClient2)]

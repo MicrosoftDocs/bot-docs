@@ -14,7 +14,7 @@ ms.reviewer:
 
 # Configure a bot to run on one or more channels
 
-After you have [registered](~/deploy/register.md) your bot with the Bot Framework and [deployed](~/publish-bot-overview.md) your bot to the cloud, 
+After you have [registered](~/portal-register-bot.md) your bot with the Bot Framework and [deployed](~/publish-bot-overview.md) your bot to the cloud, 
 you can configure it to run on one or more channels. 
 
 ## Overview
@@ -28,7 +28,7 @@ When you register a bot with the Bot Framework, the following channels are autom
 - Web Chat
 
 > [!TIP]
-> To take full advantage of Skype, you must [publish](~/deploy/add-to-directory.md) your bot to Bot Directory.
+> To take full advantage of Skype, you must [publish](~/directory-add-bot.md) your bot to Bot Directory.
 
 ## Configure your bot to run on another channel
 
@@ -47,7 +47,7 @@ After you've configured the channel, users on that channel can start using your 
 
 ## Next steps
 
-After you've configured your bot to run on the channels where your users are, the next (and final) step in the bot publication process is to [publish](~/deploy/add-to-directory.md) your bot to Bot Directory. 
+After you've configured your bot to run on the channels where your users are, the next (and final) step in the bot publication process is to [publish](~/directory-add-bot.md) your bot to Bot Directory. 
 
 
 

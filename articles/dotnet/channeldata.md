@@ -70,7 +70,7 @@ set the `Activity` object's `ChannelData` property to a JSON object that specifi
 
 > [!NOTE]
 > To support buttons in Slack messages, you must enable **Interactive Messages** when you 
-> [configure your bot](~/deploy/configure.md) for the Slack channel.
+> [configure your bot](~/portal-configure-channels.md) for the Slack channel.
 
 This snippet shows an example of the `channelData` property for a custom Slack message.
 
