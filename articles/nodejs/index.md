@@ -133,7 +133,7 @@ The following task-focused how-to guides demonstrate various features of the Bot
 
 
 If you encounter problems or have suggestions regarding the Bot Builder SDK for Node.js, 
-see [Support](~/resources-support.md) for a list of resources that provide opportunities 
+see [Support](~/resources/support.md) for a list of resources that provide opportunities 
 for support and feedback. 
 
 [HowToFirstArticle]: ~/nodejs/localization.md

@@ -41,4 +41,4 @@ Review the articles in this section to learn more about building bots using the 
 - Read an overview of the [Bot templates](~/azure-bot-service/templates-overview.md) to get you started with building five bots.
 
 If you encounter problems or have suggestions regarding Azure Bot Service, 
-see [Support](resources-support.md) for a list of available resources. 
+see [Support](~/resources/support.md) for a list of available resources. 

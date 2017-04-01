@@ -14,8 +14,8 @@
 ## Sample 1
 ## Sample 2
 # Concepts
-## [Emulator](resources-emulator.md)
-## [Characteristics of IDs](resources-id-guide.md)
+## [Emulator](~/resources/emulator.md)
+## [Characteristics of IDs](~/resources/id-guide.md)
 ## [Bot intelligence](~/intelligent-bots.md)
 <!-- REMOVE when complete transition is complete
 ### [Overview](~/intelligent-bots.md)
@@ -62,11 +62,4 @@
 ### [Troubleshoot general problems](bot-framework-troubleshooting-guide.md)
 ### [Troubleshoot authentication](bot-framework-troubleshooting-auth.md)
 ### [Manage your MSA App ID and password](~/azure-bot-service/manage-msa-app-ID.md)
-# Resources
-## [Downloads](resources-downloads.md)
-## [Support](resources-support.md)
-<!--## [Tools](resources-tools.md)-->
-## [FAQ](bot-framework-faq.md)
-## [StackOverflow](http://stackoverflow.com/questions/tagged/botframework)
-## [What's new](whats-new.md)
-## [More information](resources-contributions.md)
+# [Resources](resources/TOC.md)

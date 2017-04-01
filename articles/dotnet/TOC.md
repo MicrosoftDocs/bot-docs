@@ -20,3 +20,4 @@
 ## [Send proactive messages](~/dotnet/proactive-messages.md)
 ## [Manage state](~/dotnet/state.md)
 ## [Conduct audio calls](~/dotnet/audio-calls.md)
+# [Resources](../resources/TOC.md)

@@ -4,7 +4,7 @@ description: Get additional support for the Bot Framework.
 keywords: support, abuse, community, suggestions, issues
 author: RobStand
 manager: rstand
-ms.topic: resources-support-article
+ms.topic: ~/resources/support-article
 
 ms.prod: botframework
 ms.service: Bot Framework Support

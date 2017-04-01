@@ -18,3 +18,4 @@
 ## [Support localization](~/nodejs/localization.md)
 ## [Intercept messages](~/nodejs/middleware.md)
 ## [Use backchannel mechanism](~/nodejs/backchannel.md)
+# [Resources](../resources/TOC.md)

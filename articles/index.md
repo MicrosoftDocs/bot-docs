@@ -340,7 +340,7 @@ description:
                     <a href="#resources">Resources</a>
                     <ul id="resources" class="cardsC">
                         <li>
-                            <a href="/botframework/bot-framework-resources-downloads">
+                            <a href="/botframework/resources/downloads">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -359,7 +359,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/bot-framework-resources-emulator">
+                            <a href="/botframework/resources/emulator">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
