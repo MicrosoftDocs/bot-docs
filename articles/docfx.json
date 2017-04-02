@@ -3,15 +3,15 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/**.md", "**/**.yml"
         ],
         "exclude": [
           "**/obj/**",
           "BotFramework-Docs/**",
-          "**/includes/**",
           "README.md",
           "LICENSE",
-          "LICENSE-CODE"
+          "LICENSE-CODE",
+          "**/_deprecated/**"
         ]
       }
     ],
@@ -24,7 +24,7 @@
         "exclude": [
           "**/obj/**",
           "BotFramework-Docs/**",
-          "**/includes/**"
+          "~/includes/**"
         ]
       }
     ],
@@ -32,6 +32,7 @@
     "externalReference": [],
     "globalMetadata": {
       "uhfHeaderId": "MSDocsHeader-BotFramework",
+      "breadcrumb_path": "/botframework/breadcrumb/TOC.json",
       "author": "RobStand",
       "ms.prod": "botframework",
       "ms.date": "03/31/2017"

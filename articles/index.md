@@ -78,7 +78,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/bot-framework-design-overview">
+                            <a href="/botframework/design/principles">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -102,7 +102,7 @@ description:
                     <a href="#developing">Developing Bots</a>
                     <ul id="developing" class="cardsC">
                         <li>
-                            <a href="/botframework/bot-framework-dotnet-overview">
+                            <a href="/botframework/dotnet/">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -121,7 +121,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/bot-framework-nodejs-overview">
+                            <a href="/botframework/nodejs/">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -140,7 +140,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/bot-framework-azure-overview">
+                            <a href="/botframework/azure-bot-service/overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -159,7 +159,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/bot-framework-publish-overview">
+                            <a href="/botframework/publish-bot-overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -170,7 +170,7 @@ description:
                                         </div>
                                         <div class="cardText">
                                             <h3>Deploy and publish bots</h3>
-                                            <p>Learn how to deploy and publish a bot.</p>
+                                            <p>Learn how to register a bot with the portal, deploy a bot to Azure, and publish a bot to the Bot Directory.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -202,7 +202,7 @@ description:
                     <a href="#intelligence">Intelligence</a>
                     <ul id="intelligence" class="cardsC">
                         <li>
-                            <a href="/botframework/bot-framework-intelligence-getstarted">
+                            <a href="/botframework/intelligent-bots">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -340,7 +340,7 @@ description:
                     <a href="#resources">Resources</a>
                     <ul id="resources" class="cardsC">
                         <li>
-                            <a href="/botframework/bot-framework-resources-downloads">
+                            <a href="/botframework/resources/downloads">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -359,7 +359,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/bot-framework-resources-emulator">
+                            <a href="/botframework/resources/emulator">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">

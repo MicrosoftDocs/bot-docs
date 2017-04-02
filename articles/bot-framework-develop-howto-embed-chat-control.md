@@ -21,14 +21,14 @@ The Bot Framework chat widget allows you to chat with your bot through the Bot C
 The Chat widget supports [Markdown](https://en.wikipedia.org/wiki/Markdown) and images.
 
 ## Flow
-![Chat widget Overview](media/chatwidget-overview.png)
+![Chat widget Overview](~/media/chatwidget-overview.png)
 
 ## Step 1 - Get your bot secret key
 1. Go to [https://dev.botframework.com/#/bots](https://dev.botframework.com/#/bots)
 2. Click on your bot
 3. Look for “Web Chat” in the Channels section
 
-![Chat widget channel](media/chatwidget-channel.png)
+![Chat widget channel](~/media/chatwidget-channel.png)
 
 Click on Edit for Web chat and press Generate Web Chat Secret
 

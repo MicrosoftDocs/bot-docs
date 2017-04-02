@@ -26,7 +26,7 @@ The Bot Builder SDKs are provided as open source on GitHub (see [BotBuilder](htt
 ### Azure Bot Service
 The Azure Bot Service provides an integrated environment that is purpose-built for bot development, enabling you to build, connect, test, deploy and manage intelligent bots, all from one place. You can write your bot in C# or Node.js directly in the browser using the Azure editor, without any need for a tool chain (local editor and source control).
 
-For a walkthough of creating a bot using Azure Bot Service, see [Use Azure Bot Service](bot-framework-azure-getstarted.md).
+For a walkthough of creating a bot using Azure Bot Service, see [Use Azure Bot Service](~/azure-bot-service/getstarted.md).
 
 ### Bot Framework REST API
 
@@ -36,7 +36,7 @@ See the Bot Framework’s [REST API](/en-us/connector/overview/).
 
 ### Bot Framework Emulator
 The Bot Framework Emulator is a desktop application that allows bot developers to test and debug their bots. The Bot Framework Emulator can communicate with your bot wherever it is running; on localhost, or remotely in the cloud.
-For details on using the emulator, see [Bot Framework Emulator](resources-emulator.md).
+For details on using the emulator, see [Bot Framework Emulator](~/resources/emulator.md).
 
 ## Bot Connector
 The Bot Connector service provides the connection from your bot to text/SMS, Skype, Slack, Facebook Messenger, Office 365 mail and other channels.
@@ -44,7 +44,7 @@ The bot you write exposes a Microsoft Bot Framework-compatible API on the Intern
 
 <!--
 There are different ways for your bot to communicate with the Connector.
-The Node.JS or .NET SDKs provide built-in methods for connecting to the service. A simple bot using Node.JS demonstrates this in [Create a bot with the Bot Builder SDK for Node.js](bot-framework-nodejs-getstarted.md).
+The Node.JS or .NET SDKs provide built-in methods for connecting to the service. A simple bot using Node.JS demonstrates this in [Create a bot with the Bot Builder SDK for Node.js](~/nodejs/getstarted.md).
 Bots built using .NET can also use the Bot Framework Connector SDK .NET template. -->
 
 The Direct Line API enables you to host your bot in your app rather than using one of the automatically configured channels. The Direct Line API is intended for developers writing their own client applications, web chat controls, mobile apps, or service-to-service applications that will talk to their bot.
@@ -55,7 +55,7 @@ When you finish writing your bot, you need to register it, connect it to channel
 Registering your bot describes it to the framework, and it’s how you get the bot’s app ID and password that’s used for authentication.
 Bots that you register are located at My bots in the portal.
 
-For more information on publishing a bot, see [Publish a bot](https://review.docs.microsoft.com/en-us/botframework/bot-framework-publish-overview).
+For more information on publishing a bot, see [Publish a bot](https://review.docs.microsoft.com/en-us/botframework/~/deploy/overview).
 
 ## Bot Directory
 The Bot Directory is a public directory of all bots that are registered and published with Microsoft Bot Framework. You are encouraged to always publish your bot because it makes it more discoverable.

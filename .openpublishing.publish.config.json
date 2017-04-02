@@ -39,5 +39,5 @@
       "branch": "master"
     }
   ],
-  "need_generate_pdf_url_template": true
+  "need_generate_pdf_url_template": false
 }

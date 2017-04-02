@@ -20,7 +20,6 @@ ms.reviewer:
 Dialogs provide the UI for your bot, just as screens provide the UI for a traditional app or web page. 
 Dialogs may or may not have graphical interfaces. They may have buttons, text or they may even be completely speech based. One dialog can call another, just like screens in apps.
 
-![components of the Bot Framework](media/designing-bots/core/dialogs-screens-small.png)
 
 Dialogs let you break your bots logic into logical components designed to perform a single task, and they are composable for reuse within your bot and from other bots. 
 The Bing Location Control is an example of a community-supplied pre-built dialog that your bot can use.
@@ -227,17 +226,17 @@ For an example of how to use LUIS to intelligently parse user input and extract 
 > [!NOTE]
 > TODO: Add more links as they become available. 
 
-Before you get started designing dialogs for your bot, read the [Design Guide](designing-bots/core/dialogs.md)
+Before you get started designing dialogs for your bot, read the [Design Guide](~/design/core-dialogs.md)
 
 
 <!-- reference-style links -->
-[GettingStartedNodeJS]:(bot-framework-nodejs-getstarted.md)
-[ButtonsControlsDesign]:(https://review.docs.microsoft.com/en-us/botframework/bot-framework-design-core-ux-elements#buttons-language-and-speech)
+[GettingStartedNodeJS]:(~/nodejs/getstarted.md)
+[ButtonsControlsDesign]:(https://review.docs.microsoft.com/en-us/botframework/~/design/core-ux-elements#buttons-language-and-speech)
 [LocationControl]:(https://github.com/Microsoft/BotBuilder-Location)
 
-[DesigningNavigation]:(https://review.docs.microsoft.com/en-us/botframework/bot-framework-design-core-navigation)
-[GlobalMessageHandlers]:(https://review.docs.microsoft.com/en-us/botframework/bot-framework-design-capabilities#global-message-handlers)
-[MessageLoggingMiddleware]:(https://review.docs.microsoft.com/en-us/botframework/bot-framework-design-capabilities#message-logging)
+[DesigningNavigation]:(https://review.docs.microsoft.com/en-us/botframework/~/design/core-navigation)
+[GlobalMessageHandlers]:(https://review.docs.microsoft.com/en-us/botframework/~/design/capabilities#global-message-handlers)
+[MessageLoggingMiddleware]:(https://review.docs.microsoft.com/en-us/botframework/~/design/capabilities#message-logging)
 [BotStateCS]:(https://docs.botframework.com/en-us/csharp/builder/sdkreference/stateapi.html)
 [Downloads]:(bot-framework-downloads.md)
 [ButtonsExample]:(bot-framework-send-card-buttons.md)
