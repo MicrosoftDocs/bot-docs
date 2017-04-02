@@ -121,13 +121,8 @@ You can find other samples in the [Bot Builder SDK Samples repository](https://g
 
 The following articles get you started building bots using the Bot Builder SDK for Node.js.
 
-<<<<<<< HEAD:articles/bot-framework-nodejs-overview.md
-* [Get started](bot-framework-nodejs-getstarted.md): Quickly build and test a simple bot by following instructions in this step-by-step tutorial.
-* [Key concepts](bot-framework-nodejs-concepts.md): Learn about key concepts in the Bot Builder SDK for Node.js.
-=======
 * [Get Started](~/nodejs/getstarted.md): Quickly build and test a simple bot by following instructions in this step-by-step tutorial.
 * [Key concepts](~/nodejs/concepts.md): Learn about key concepts in the Bot Builder SDK for Node.js.
->>>>>>> 939dce2500428da8c3bf34414264c64d6df08959:articles/nodejs/index.md
 
 The following task-focused how-to guides demonstrate various features of the Bot Builder SDK for Node.js.
 
