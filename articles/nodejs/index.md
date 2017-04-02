@@ -58,11 +58,13 @@ For information on concepts that help you understand the rest of the documentati
 
 Before you start building your bot, read [Designing bots][DesignGuide] to learn about principles of bot design and [Patterns][DesignPatterns] for guidance on what features your bot needs in order to best address the top user scenarios. 
 
+
 To learn about how your bot processes user messages using dialogs and handlers, see [Managing conversation flow](~/nodejs/manage-conversation-flow.md).
+
 
 Once you understand basic conversational mechanics, the [How-to guides][HowToFirstArticle] give you instructions on adding more advanced features to your bot.
 
-## Get Samples
+## Get samples
 
 The <a href="https://github.com/Microsoft/BotBuilder" target="_blank">BotBuilder</a> GitHub repository 
 contains numerous code samples that show how to build bots using the Bot Builder SDK for Node.js. 
@@ -136,6 +138,15 @@ If you encounter problems or have suggestions regarding the Bot Builder SDK for 
 see [Support](~/resources-support.md) for a list of resources that provide opportunities 
 for support and feedback. 
 
+<<<<<<< HEAD:articles/bot-framework-nodejs-overview.md
+[HowToFirstArticle]: bot-framework-nodejs-howto-localization.md
+[SendFirstArticle]: bot-framework-nodejs-howto-use-default-message-handler.md
+[AskFirstArticle]: bot-framework-nodejs-howto-prompts.md
+[ListenFirstArticle]: bot-framework-nodejs-howto-global-handlers.md
+[DesignGuide]: bot-framework-design-overview.md
+[DesignPatterns]: bot-framework-design-patterns-task.md
+=======
 [HowToFirstArticle]: ~/nodejs/localization.md
 [DesignGuide]: ~/design/principles.md
 [DesignPatterns]: ~/design/patterns-task.md
+>>>>>>> 939dce2500428da8c3bf34414264c64d6df08959:articles/nodejs/index.md
