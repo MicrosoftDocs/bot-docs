@@ -24,12 +24,12 @@ A bot is a web service that interacts with users in a conversational format. Use
 > The type of bots that you can build with the Bot Framework are also commonly called <a href="https://en.wikipedia.org/wiki/Chatbot">chatbots</a>.
 
 Let's look at an example of a bot that schedules salon appointments. The bot understands the user's intent, presents appointment options using action buttons, displays the user's selection when they tap an appointment, and then sends a thumbnail card that contains the appointment's specifics.
-
+<p>
 <div style="text-align: center" markdown="1">
 ![salon bot example](https://docs.botframework.com/en-us/images/connector/salon_bot_example.png)
 </div>
 
-Bots are rapidly becoming an integral part of digital experiences. Bots are fast becoming as essential as a website or a mobile experience for users to interact with a service or application.
+Bots are rapidly becoming an integral part of digital experiences. They are becoming as essential as a website or a mobile experience for users to interact with a service or application.
 
 ## Building and publishing bots
 Developers writing bots all face the same problems: bots require basic I/O, they must have language and dialog skills, and they must connect to users, preferably in any conversation experience and language the user chooses. The Bot Framework provides a powerful set of tools to help solve these problems.
