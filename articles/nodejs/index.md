@@ -137,16 +137,3 @@ The following task-focused how-to guides demonstrate various features of the Bot
 If you encounter problems or have suggestions regarding the Bot Builder SDK for Node.js, 
 see [Support](~/resources-support.md) for a list of resources that provide opportunities 
 for support and feedback. 
-
-<<<<<<< HEAD:articles/bot-framework-nodejs-overview.md
-[HowToFirstArticle]: bot-framework-nodejs-howto-localization.md
-[SendFirstArticle]: bot-framework-nodejs-howto-use-default-message-handler.md
-[AskFirstArticle]: bot-framework-nodejs-howto-prompts.md
-[ListenFirstArticle]: bot-framework-nodejs-howto-global-handlers.md
-[DesignGuide]: bot-framework-design-overview.md
-[DesignPatterns]: bot-framework-design-patterns-task.md
-=======
-[HowToFirstArticle]: ~/nodejs/localization.md
-[DesignGuide]: ~/design/principles.md
-[DesignPatterns]: ~/design/patterns-task.md
->>>>>>> 939dce2500428da8c3bf34414264c64d6df08959:articles/nodejs/index.md
