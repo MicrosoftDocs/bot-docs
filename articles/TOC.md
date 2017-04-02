@@ -14,8 +14,8 @@
 ## Sample 1
 ## Sample 2
 # Concepts
-## [Emulator](~/resources/emulator.md)
-## [Characteristics of IDs](~/resources/id-guide.md)
+## [Emulator](~/debug-bots-emulator.md)
+## [Characteristics of IDs](~/resources-identifiers-guide.md)
 ## [Bot intelligence](~/intelligent-bots.md)
 <!-- REMOVE when complete transition is complete
 ### [Overview](~/intelligent-bots.md)
@@ -54,12 +54,12 @@
 ## [Develop with Node.js](nodejs/)
 ## [Register a bot](~/portal-register-bot.md)
 ## [Deploy](~/publish-bot-overview.md)
-### [Deploy from local git repo](~/azure-deploy-bot-local-git.md)
-### [Deploy from Github](~/azure-deploy-bot-github.md)
-### [Deploy from Visual Studio](~/azure-deploy-bot-visual-studio.md)
+### [Deploy from local git repo](~/deploy-bot-local-git.md)
+### [Deploy from Github](~/deploy-bot-github.md)
+### [Deploy from Visual Studio](~/deploy-bot-visual-studio.md)
 ## [Configure a bot](~/portal-configure-channels.md)
 <!--### [Set up continuous integration](~/azure-bot-service/continuous-integration.md)-->
-## [Publish a bot to the directory](~/portal-submit-bot-directory.md)
+## [Publish a bot](~/portal-submit-bot-directory.md)
 ## Troubleshoot
 ### [Troubleshoot general problems](bot-framework-troubleshooting-guide.md)
 ### [Troubleshoot authentication](bot-framework-troubleshooting-auth.md)

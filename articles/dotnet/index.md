@@ -67,4 +67,4 @@ reviewing articles throughout this section, beginning with:
 - [Key concepts](~/dotnet/concepts.md): Learn about key concepts in the Bot Builder SDK for .NET.
 
 If you encounter problems or have suggestions regarding the Bot Builder SDK for .NET, 
-see [Support](~/resources/support.md) for a list of available resources. 
+see [Support](~/resources-support.md) for a list of available resources. 
