@@ -36,7 +36,7 @@
 ### [Proactive bot](~/azure-bot-service/proactive-bot.md)
 ### [Question and answer bot](~/azure-bot-service/question-and-answer-bot.md)-->
 # How to
-## [Plan & design](design/TOC.md)
+## [Plan & design](design/principles.md)
 ## [Develop with .NET](dotnet/)
 ## [Develop with Node.js](nodejs/)
 ## [Deploy](~/publish-bot-overview.md)
