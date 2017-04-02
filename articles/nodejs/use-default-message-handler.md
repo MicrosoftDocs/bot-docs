@@ -5,9 +5,9 @@ description: Learn how to start sending and receiving messages by using the defa
 keywords: Bot Framework, dialog, send messages, conversation flow, conversation, node.js, node, Bot Builder, SDK
 author: DeniseMak
 manager: rstand
-ms.topic: develop-nodejs-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.topic: article
+ms.prod: bot-framework
+
 ms.date: 03/31/2017
 ms.reviewer:
 #ROBOTS: Index

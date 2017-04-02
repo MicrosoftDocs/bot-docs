@@ -4,9 +4,9 @@ description: Learn how to send and receive cards that contain buttons in a conve
 keywords: bot framework, bot, cards, rich card, buttons, send messages, image
 author: DeniseMak
 manager: rstand
-ms.topic: develop-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.topic: article
+ms.prod: bot-framework
+
 ms.date: 02/24/2017
 ms.reviewer:
 #ROBOTS: Index

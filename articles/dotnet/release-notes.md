@@ -4,9 +4,9 @@ description: View the Bot Builder SDK for .NET release notes.
 keywords: Bot Framework, .NET, Bot Builder, SDK, release history, release notes
 author: kbrandl
 manager: rstand
-ms.topic: develop-dotnet-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.topic: article
+ms.prod: bot-framework
+
 ms.date: 03/27/2017
 ms.reviewer:
 #ROBOTS: Index

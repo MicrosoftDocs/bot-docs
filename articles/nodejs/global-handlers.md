@@ -4,9 +4,9 @@ description: Learn how to implement trigger actions using global message handler
 keywords: Bot Framework, trigger actions, node.js, Bot Builder, SDK, global handler, global message handler, message handler
 author: kbrandl
 manager: rstand
-ms.topic: develop-nodejs-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.topic: article
+ms.prod: bot-framework
+
 ms.date: 02/21/2017
 ms.reviewer:
 #ROBOTS: Index

@@ -4,9 +4,9 @@ description: The key features of the Bot Framework will help you build powerful 
 keywords: bots, introduction, framework
 author: RobStand
 manager: rstand
-ms.topic: overview-article
-ms.prod: botframework
-ms.service: Bot Framework
+ms.topic: article
+ms.prod: bot-framework
+
 ms.date: 03/07/2017
 ms.reviewer:
 

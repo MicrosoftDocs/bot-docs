@@ -5,8 +5,8 @@ keywords: bot framework, design, bot, scenario, use case, pattern, task automati
 author: matvelloso
 manager: rstand
 ms.topic: design-patterns-task-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.prod: bot-framework
+
 ms.date: 
 ms.reviewer: rstand
 #ROBOTS: Index

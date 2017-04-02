@@ -5,8 +5,8 @@ keywords: Bot Framework, Bot Builder, tool, channel, channel inspector
 author: kbrandl
 manager: rstand
 ms.topic: resources-tools-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.prod: bot-framework
+
 ms.date: 02/17/2017
 ms.reviewer:
 #ROBOTS: Index

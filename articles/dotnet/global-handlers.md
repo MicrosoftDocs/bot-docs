@@ -4,9 +4,9 @@ description: Learn how to implement global message handlers by using the Bot Bui
 keywords: Bot Framework, dotnet, .NET, Bot Builder, SDK, global handler, global message handler, message handler
 author: kbrandl
 manager: rstand
-ms.topic: develop-dotnet-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.topic: article
+ms.prod: bot-framework
+
 ms.date: 02/21/2017
 ms.reviewer:
 #ROBOTS: Index

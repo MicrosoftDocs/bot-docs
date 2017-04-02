@@ -5,8 +5,8 @@
         "files": [
           "**/**.md", 
           "**/**.yml", 
-          "**/dotnet/**.md", 
-          "**/node/**.md"
+          "dotnet/**.md", 
+          "node/**.md"
         ],
         "exclude": [
           "**/obj/**",

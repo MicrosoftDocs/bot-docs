@@ -6,8 +6,8 @@ author: RobStand
 manager: rstand
 ms.topic: howto-embed-chat-control-article
 
-ms.prod: botframework
-ms.service: Bot Builder
+ms.prod: bot-framework
+
 ms.date: 03/01/2017
 ms.reviewer:
 

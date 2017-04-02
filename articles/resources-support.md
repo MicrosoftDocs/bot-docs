@@ -6,8 +6,8 @@ author: RobStand
 manager: rstand
 ms.topic: ~/resources/support-article
 
-ms.prod: botframework
-ms.service: Bot Framework Support
+ms.prod: bot-framework
+ Support
 ms.date: 03/01/2017
 ms.reviewer:
 

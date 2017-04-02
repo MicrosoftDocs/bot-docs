@@ -4,9 +4,9 @@ description: Learn how to manage conversation flow using dialogs and the Bot Bui
 keywords: Bot Framework, dialog, messages, conversation flow, conversation, node.js, node, Bot Builder, SDK
 author: DeniseMak
 manager: rstand
-ms.topic: develop-nodejs-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.topic: article
+ms.prod: bot-framework
+
 ms.date: 02/17/2017
 ms.reviewer:
 #ROBOTS: Index

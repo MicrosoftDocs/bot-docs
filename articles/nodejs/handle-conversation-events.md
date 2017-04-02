@@ -4,9 +4,9 @@ description: Learn how your conversational application (bot) can handle events s
 keywords: bot framework, user events, handle conversation updates, join conversation, add to contacts, greet users, conversationUpdate, contactRelationUpdate
 author: DeniseMak
 manager: rstand
-ms.topic: develop-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.topic: article
+ms.prod: bot-framework
+
 ms.date: 02/24/2017
 ms.reviewer:
 #ROBOTS: Index

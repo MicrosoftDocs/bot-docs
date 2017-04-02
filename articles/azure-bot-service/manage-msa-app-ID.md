@@ -5,7 +5,7 @@ keywords: Bot Framework, Azure Bot Service, App ID, password, MSA
 author: RobStand
 manager: rstand
 ms.topic: bot-service-article
-ms.prod: botframework
+ms.prod: bot-framework
 ms.service: Azure Bot Service
 ms.date: 3/21/2017
 ms.reviewer:

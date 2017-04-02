@@ -5,7 +5,7 @@ keywords: Bot Framework, Azure Bot Service, Overview
 author: RobStand
 manager: rstand
 ms.topic: bot-service-article
-ms.prod: botframework
+ms.prod: bot-framework
 ms.service: Azure Bot Service
 ms.date: 3/20/2017
 ms.reviewer: 

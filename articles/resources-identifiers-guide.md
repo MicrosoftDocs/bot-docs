@@ -6,8 +6,8 @@ author: RobStand
 manager: rstand
 ms.topic: ID-fields-article
 
-ms.prod: botframework
-ms.service: Bot Framework
+ms.prod: bot-framework
+
 ms.date: 03/01/2017
 ms.reviewer:
 

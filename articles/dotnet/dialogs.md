@@ -4,9 +4,9 @@ description: Learn about Dialogs in the Bot Builder SDK for .NET.
 keywords: Bot Framework, .NET, Bot Builder, SDK, dialog, conversation modeling
 author: kbrandl
 manager: rstand
-ms.topic: develop-dotnet-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.topic: article
+ms.prod: bot-framework
+
 ms.date: 03/17/2017
 ms.reviewer:
 #ROBOTS: Index

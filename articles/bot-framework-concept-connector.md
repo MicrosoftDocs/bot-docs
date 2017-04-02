@@ -5,8 +5,8 @@ keywords: Bot Framework, connector, core concept, bot, web service
 author: DeniseMak
 manager: rstand
 ms.topic: key-concepts-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.prod: bot-framework
+
 ms.date: 02/14/2017
 ms.reviewer:
 #ROBOTS: Index

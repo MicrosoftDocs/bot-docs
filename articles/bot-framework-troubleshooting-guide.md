@@ -4,10 +4,10 @@ description: Bot Framework Troubleshooting Guide and technical FAQ.
 keywords: FAQ, troubleshooting, troubleshoot, error, Bot Framework, problems, LUIS
 author: DeniseMak
 manager: rstand
-ms.topic: develop-article
+ms.topic: article
 
-ms.prod: botframework
-ms.service: Bot Framework
+ms.prod: bot-framework
+
 ms.date: 02/21/2017
 ms.reviewer:
 

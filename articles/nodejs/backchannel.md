@@ -4,9 +4,9 @@ description: Learn how to use the backchannel mechanism with the web chat contro
 keywords: Bot Framework, node.js, bot in website, backchannel, event activity, web chat control
 author: kbrandl
 manager: rstand
-ms.topic: develop-nodejs-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.topic: article
+ms.prod: bot-framework
+
 ms.date: 02/27/2017
 ms.reviewer:
 #ROBOTS: Index

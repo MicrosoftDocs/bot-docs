@@ -4,10 +4,10 @@ description: Article that describes how to troubleshoot authentication errors wi
 keywords: Bot Framework, authentication, troubleshoot, debug, errors
 author: DeniseMak
 manager: rstand
-ms.topic: develop-article
+ms.topic: article
 
-ms.prod: botframework
-ms.service: Bot Builder
+ms.prod: bot-framework
+
 ms.date: 02/21/2017
 ms.reviewer:
 

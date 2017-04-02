@@ -6,7 +6,7 @@ author: RobStand
 manager: rstand
 ms.topic: bot-sample-article
 
-ms.prod: botframework
+ms.prod: bot-framework
 ms.service: samples
 ms.date:
 ms.reviewer:

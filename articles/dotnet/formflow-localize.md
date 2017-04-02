@@ -4,9 +4,9 @@ description: Learn how to localize form content with the Bot Builder SDK for .NE
 keywords: Bot Framework, .NET, Bot Builder, SDK, FormFlow, FormBuilder
 author: kbrandl
 manager: rstand
-ms.topic: develop-dotnet-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.topic: article
+ms.prod: bot-framework
+
 ms.date: 03/29/2017
 ms.reviewer:
 #ROBOTS: Index

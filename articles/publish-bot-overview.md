@@ -5,8 +5,8 @@ keywords: Bot Framework, Bot Builder, register, deploy, configure, publish, Bot 
 author: kbrandl
 manager: rstand
 ms.topic: publish-overview-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.prod: bot-framework
+
 ms.date:
 ms.reviewer: rstand
 #ROBOTS: Index

@@ -5,8 +5,8 @@ keywords: Bot Framework, Bot design, navigation
 author: matvelloso
 manager: rstand
 ms.topic: design-ui-and-ux-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.prod: bot-framework
+
 ms.date: 
 ms.reviewer: rstand
 #ROBOTS: Index
