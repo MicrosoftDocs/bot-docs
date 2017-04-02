@@ -1,5 +1,5 @@
 # Overview
-## [What is the Bot Framework](bot-framework-overview.md)
+## [What is the Bot Framework](overview-value-proposition.md)
 ## [How it works](bot-framework-overview-how-it-works.md)
 <!-- ## [Bot scenarios](bot-framework-overview-scenarios.md)-->
 <!-- ## [Core concepts](bot-framework-concepts-overview.md)-->
