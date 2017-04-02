@@ -105,9 +105,116 @@ bot.dialog('buyButtonClick', [ ... waterfall steps ... ])
 The cancel action's confirmPrompt will be used anytime the user says “cancel” and the trigger action's confirmPrompt will be used anytime another dialog 
 is triggered (including the ‘buyButtonClick’ dialog itself) and attempts to interrupt the dialog. 
 
+## Trigger the reload of a dialog
+
+The [reloadAction][reloadAction] handler binds an action to a dialog that causes the dialog to reload when the action is triggered. This is useful for implementing logic to handle user utterances like "start over".
+
+```javascript
+// Add dialog to handle 'Buy' button click
+bot.dialog('buyButtonClick', [ ... waterfall steps ... ])
+    .triggerAction({ 
+        matches: /(buy|add)\s.*shirt/i
+        confirmPrompt: "This will cancel adding the current item. Are you sure?" 
+    })
+    .cancelAction('cancelBuy', "Ok... Item canceled", { 
+        matches: /^cancel/i,
+        confirmPrompt: "are you sure?" 
+    })
+    .reloadAction('reloadBuy', "Restarting order.", { 
+        matches: /^start over/i,
+        confirmPrompt: "are you sure?" 
+    });
+
+```
+## Start another dialog
+
+From within the scope of a dialog, you can bind an action to the dialog that will start another dialog when it is triggered. The new dialog is pushed onto the stack so it does not automatically end the current task. The current task is continued once the new dialog ends. The built-in prompts will automatically re-prompt the user once this happens but that behavior can be disabled by setting the **promptAfterAction** flag when calling a built-in prompt.
+
+The following example demonstrates how to use **beginDialogAction** to create actions that are
+only in scope when a particular dialog is on the stack. The '/orderPizza' adds
+actions that let the user view their cart and checkout but those actions can 
+only be taken while the user is actually ordering a pizza.
+
+<!-- 
+This sample also shows how support multi-level cancel within a bot. When 
+ordering a pizza you can cancel either an item you're adding or the entire 
+order.  The user can say "cancel order" at anytime to cancel the order but 
+saying just "cancel" will intelligently cancel either the current item being 
+added or the order depending on where the user is in the flow. -->
+
+```javascript
+// Add dialog to manage ordering a pizza
+bot.dialog('orderPizzaDialog', [
+    function (session, args) {
+        if (!args.continueOrder) {
+            session.userData.cart = [];
+            session.send("At anytime you can say 'cancel order', 'view cart', or 'checkout'.")
+        }
+        builder.Prompts.choice(session, "What would you like to add?", "Pizza|Drinks|Extras");
+    },
+    function (session, results) {
+        session.beginDialog('add' + results.response.entity);
+    },
+    function (session, results) {
+        if (results.response) {
+            session.userData.cart.push(results.response);
+        }
+        session.replaceDialog('orderPizzaDialog', { continueOrder: true });
+    }
+]).triggerAction({ 
+        matches: /order.*pizza/i,
+        confirmPrompt: "This will cancel the current order. Are you sure?"
+  })
+  .cancelAction('cancelOrderAction', "Order canceled.", { 
+      matches: /(cancel.*order|^cancel)/i,
+      confirmPrompt: "Are you sure?"
+  })
+  .beginDialogAction('viewCartAction', 'viewCartDialog', { matches: /view.*cart/i })
+  .beginDialogAction('checkoutAction', 'checkoutDialog', { matches: /checkout/i });
+
+// Dialog for showing the users cart
+bot.dialog('viewCartDialog', function (session) {
+    var msg;
+    var cart = session.userData.cart;
+    if (cart.length > 0) {
+        msg = "Items in your cart:";
+        for (var i = 0; i < cart.length; i++) {
+            msg += "\n* " + cart[i];
+        }
+    } else {
+        msg = "Your cart is empty.";
+    }
+    session.endDialog(msg);
+});
+
+// Dialog for checking out
+bot.dialog('checkoutDialog', function (session) {
+    var msg;
+    var cart = session.userData.cart;
+    if (cart.length > 0) {
+        msg = "Your order is on its way.";
+    } else {
+        msg = "Your cart is empty.";
+    }
+    delete session.userData.cart;
+    session.endConversation(msg);
+});
+```
+
+<!--
+View the "feature-onDisambiguateRoute" example to see how you'd prompt the user
+to disambiguate between "cancel item" and "cancel order".  
+-->
+
+
 ## Additional resources
 
 - [Designing conversation flow](bot-framework-design-core-dialogs.md)
 - [Bot capabilities](bot-framework-design-capabilities.md)
 
+<!--
+- [reloadAction][reloadAction]
+-->
+
 [matches]: (https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.idialogactionoptions#matches)
+[reloadAction]: (https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#reloadaction)

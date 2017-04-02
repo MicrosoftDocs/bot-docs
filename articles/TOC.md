@@ -80,7 +80,7 @@
 ## Develop with Node.js
 ### [Create a bot with Node.js](bot-framework-nodejs-getstarted.md)
 ### Send and receive messages
-#### [Using the default message handler](bot-framework-nodejs-howto-use-default-message-handler.md) 
+#### [Use the default message handler](bot-framework-nodejs-howto-use-default-message-handler.md) 
 #### [Send and receive attachments](bot-framework-nodejs-howto-send-receive-attachments.md) 
 #### [Send a rich card](bot-framework-nodejs-howto-send-card-buttons.md)
 #### [Send a typing indicator](bot-framework-nodejs-howto-send-typing-indicator.md)
