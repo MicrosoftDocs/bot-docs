@@ -20,7 +20,7 @@ override that default behavior.
 Depending on how your bot is constructed, localized information may come from up to three different sources:
 
 - the built-in localization for **PromptDialog** and **FormFlow**
-- a resource file that is generated from the static strings in your form
+- a resource file that you generate for the static strings in your form
 - a resource file that you create with strings for dynamically-computed fields, messages or confirmations
 
 ## Generate a resource file for the static strings in your form
@@ -89,8 +89,8 @@ When your form is created, the [IFormBuilder.Build](https://docs.botframework.co
 > [!NOTE]
 > Dynamically-computed fields that are defined using [Advanced.Field.SetDefine](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a28233c49a6abf58c2397bd397151278a) 
 > (as described in [Using Dynamic Fields](formflow-formbuilder.md#dynamically-define)) 
-> cannot be localized because strings for dynamically-computed fields are constructed 
-> at the time the form is populated. 
+> cannot be localized in the same manner as static fields, 
+> since strings for dynamically-computed fields are constructed at the time the form is populated. 
 > However, you can localize dynamically-computed fields by using normal C# localization mechanisms.
 
 ### Localize resource files 
