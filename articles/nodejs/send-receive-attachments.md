@@ -16,7 +16,7 @@ ms.reviewer:
 
 In this article, we'll discuss how to send messages containing attachments such as images by using the Bot Builder SDK for Node.js.
 
-The session.send() method can be used to send messages in the form of a JSON object to the user, in addition to strings. 
+The [session.send()][SessionSend] method can be used to send messages in the form of a JSON object to the user, in addition to strings. 
 The message object is expected to be an instance of an [IMessage][IMessage] and it's most useful to send the user a message as an object when you’d like to include an attachment like an image. 
 
 <!-- TODO: Supported attachments table -->
@@ -59,3 +59,4 @@ var bot = new builder.UniversalBot(connector, function (session) {
 
 [IMessage]: http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.imessage
 [SendRichCard]: send-card-buttons.md
+[SessionSend]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#send
