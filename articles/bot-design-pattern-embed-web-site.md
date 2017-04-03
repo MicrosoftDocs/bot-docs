@@ -4,7 +4,7 @@ description: Learn how to design a conversational application (bot) that is embe
 keywords: bot framework, design, bot, scenario, use case, pattern, bot in website, backchannel, web chat control, Skype web control
 author: matvelloso
 manager: rstand
-ms.topic: design-patterns-article
+ms.topic: article
 ms.prod: bot-framework
 
 ms.date: 

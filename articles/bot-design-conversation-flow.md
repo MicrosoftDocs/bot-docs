@@ -4,7 +4,7 @@ description: Understand the fundamental concepts of designing conversation flow 
 keywords: Bot Framework, bot design, dialog, conversation flow, conversation
 author: matvelloso
 manager: rstand
-ms.topic: design-ui-and-ux-article
+ms.topic: article
 ms.prod: bot-framework
 
 ms.date:

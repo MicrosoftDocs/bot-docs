@@ -4,7 +4,7 @@ description: Learn best practices for designing for the first interaction betwee
 keywords: Bot Framework, design, principles, interaction, greeting
 author: matvelloso
 manager: rstand
-ms.topic: design-ui-and-ux-article
+ms.topic: article
 ms.prod: bot-framework
 
 ms.date:

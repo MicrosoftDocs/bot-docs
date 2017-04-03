@@ -4,7 +4,7 @@ description: Learn how to manage navigation in converational applications (bots)
 keywords: Bot Framework, Bot design, navigation
 author: matvelloso
 manager: rstand
-ms.topic: design-ui-and-ux-article
+ms.topic: article
 ms.prod: bot-framework
 
 ms.date: 

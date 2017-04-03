@@ -4,7 +4,7 @@ description: Learn how to design a conversational application that is embedded w
 keywords: bot framework, design, bot, scenario, use case, pattern, bot in app, bot embedded in app
 author: matvelloso
 manager: rstand
-ms.topic: design-patterns-article
+ms.topic: article
 ms.prod: bot-framework
 
 ms.date:

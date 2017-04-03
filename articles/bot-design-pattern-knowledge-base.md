@@ -4,7 +4,7 @@ description: Learn how to design a conversational application (bot) that can ans
 keywords: bot framework, design, bot, scenario, use case, pattern, knowledge base
 author: matvelloso
 manager: rstand
-ms.topic: design-patterns-article
+ms.topic: article
 ms.prod: bot-framework
 
 ms.date: 

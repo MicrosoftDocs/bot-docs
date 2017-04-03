@@ -4,7 +4,7 @@ description: Learn how to design the user experience by combining rich controls,
 keywords: Bot Framework, Bot design, ux, ui, ux elements, ux controls, ui elements, ui controls
 author: matvelloso
 manager: rstand
-ms.topic: design-ui-and-ux-article
+ms.topic: article
 ms.prod: bot-framework
 
 ms.date:
