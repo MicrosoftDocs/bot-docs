@@ -50,7 +50,7 @@ Messenger or Skype, that your bot will connect to. The Connector service sits be
 ### Bot Directory
 After you finish building and configuring your bot, you publish your bot to the Bot Directory. The Bot Directory is a public directory of bots registered and published with the Bot Framework. Users can discover and add your bot to channels, and they can try your bot from the Bot Directory.
 
-![Bots in the Bot Directory](~/media/directory.jpeg) 
+![Bots in the Bot Directory](~/media/directory.jpg) 
 
 ## Making bots smarter
 To give your bot more human-like senses, you can take advantage of the Microsoft Cognitive Services to add natural language understanding, image recognition, speech, and more. [Learn more](~/intelligent-bots.md) about adding intelligence to your bot.
