@@ -1,7 +1,7 @@
 ---
-title: Bot Framework Features | Microsoft Docs
+title: How the Bot Framework works | Microsoft Docs
 description: The key features of the Bot Framework will help you build powerful and intelligent bots.
-keywords: bots, introduction, framework
+keywords:
 author: RobStand
 manager: rstand
 ms.topic: article
@@ -14,8 +14,11 @@ ms.reviewer:
 #ROBOTS: Index
 #REVIEW
 ---
-# Bot Framework features
+>[!WARNING]
+> Content is still under development.
 
+# How the Bot Framework works
+The Bot Framework provides tools and SDKs for building bots.
 
 ### Bot Builder SDKs
 These SDKs provide features such as dialogs and built-in prompts that make interacting with users much simpler. They provide access to Microsoft Cognitive Services APIs which give your bot more human-like intelligence. These APIs include LUIS for natural language understanding, Cortana for voice, and the Bing APIs for search. For more information about adding intelligence to your bot, see [Bot Intelligence](/en-us/bot-intelligence/getting-started/).
