@@ -4,9 +4,9 @@ description: Learn how to send and receive messages containing attachments such 
 keywords: bot framework, bot, attachment, images, send messages
 author: DeniseMak
 manager: rstand
-ms.topic: develop-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.topic: article
+ms.prod: bot-framework
+
 ms.date: 02/24/2017
 ms.reviewer:
 #ROBOTS: Index

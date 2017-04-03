@@ -4,9 +4,9 @@ description: Learn about the Bot Builder SDK for Node.js.
 keywords: Bot Framework, Node.js, Bot Builder, SDK
 author: DeniseMak
 manager: rstand
-ms.topic: develop-nodejs-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.topic: article
+ms.prod: bot-framework
+
 ms.date: 03/08/2017
 ms.reviewer: rstand
 #ROBOTS: Index
@@ -135,6 +135,7 @@ The following task-focused how-to guides demonstrate various features of the Bot
 
 
 If you encounter problems or have suggestions regarding the Bot Builder SDK for Node.js, 
+<<<<<<< HEAD
 see [Support](~/resources/support.md) for a list of resources that provide opportunities 
 for support and feedback. 
 
@@ -142,3 +143,7 @@ for support and feedback.
 [DesignGuide]: ~/design/principles.md
 [DesignPatterns]: ~/design/patterns-task.md
 
+=======
+see [Support](~/resources-support.md) for a list of resources that provide opportunities 
+for support and feedback. 
+>>>>>>> 460748015c48eb91749dbad8535c82ae5a5587c8

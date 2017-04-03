@@ -4,9 +4,9 @@ description: Learn how to conduct audio calls with Skype by using the Bot Builde
 keywords: Bot Framework, dotnet, .NET, Bot Builder, SDK, Skype, IVR, audio call
 author: kbrandl
 manager: rstand
-ms.topic: develop-dotnet-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.topic: article
+ms.prod: bot-framework
+
 ms.date: 02/21/2017
 ms.reviewer:
 #ROBOTS: Index

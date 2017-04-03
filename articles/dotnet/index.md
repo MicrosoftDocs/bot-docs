@@ -4,9 +4,9 @@ description: Learn about the Bot Builder SDK for .NET.
 keywords: Bot Framework, .NET, Bot Builder, SDK
 author: kbrandl
 manager: rstand
-ms.topic: develop-dotnet-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.topic: article
+ms.prod: bot-framework
+
 ms.date: 03/08/2017
 ms.reviewer:
 #ROBOTS: Index
@@ -67,4 +67,4 @@ reviewing articles throughout this section, beginning with:
 - [Key concepts](~/dotnet/concepts.md): Learn about key concepts in the Bot Builder SDK for .NET.
 
 If you encounter problems or have suggestions regarding the Bot Builder SDK for .NET, 
-see [Support](~/resources/support.md) for a list of available resources. 
+see [Support](~/resources-support.md) for a list of available resources. 

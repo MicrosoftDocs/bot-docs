@@ -5,8 +5,8 @@ keywords: bots, introduction, framework
 author: RobStand
 manager: rstand
 ms.topic: overview-article
-ms.prod: botframework
-ms.service: Bot Framework
+ms.prod: bot-framework
+
 ms.date:
 ms.reviewer:
 #ROBOTS: Index

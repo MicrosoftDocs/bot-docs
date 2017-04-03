@@ -5,8 +5,8 @@ keywords: FAQ, Bot Framework, channels, availability, What's new, LUIS, Cortana,
 author: DeniseMak
 manager: rstand
 ms.topic: resources-article
-ms.prod: botframework
-ms.service: Bot Framework
+ms.prod: bot-framework
+
 ms.date: 02/21/2017
 ms.reviewer:
 

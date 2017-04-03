@@ -4,9 +4,9 @@ description: Learn how to debug a bot that was built using the Bot Builder SDK f
 keywords: Bot Framework, .NET, Bot Builder, SDK, debug, troubleshoot, test
 author: kbrandl
 manager: rstand
-ms.topic: develop-dotnet-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.topic: article
+ms.prod: bot-framework
+
 ms.date: 03/08/2017
 ms.reviewer:
 #ROBOTS: Index
@@ -34,4 +34,4 @@ ms.reviewer:
 
 - [Bot Framework Troubleshooting Guide](~/bot-framework-troubleshooting-guide.md)
 - [Troubleshooting Bot Framework Authentication](~/bot-framework-troubleshooting-auth.md)
-- [Support](~/resources/support.md)
+- [Support](~/resources-support.md)

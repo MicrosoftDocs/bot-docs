@@ -5,8 +5,8 @@ keywords: Bot Framework, dialog, core concept, bot
 author: DeniseMak
 manager: rstand
 ms.topic: key-concepts-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.prod: bot-framework
+
 ms.date: 02/14/2017
 ms.reviewer:
 #ROBOTS: Index

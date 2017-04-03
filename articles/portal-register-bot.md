@@ -5,8 +5,8 @@ keywords: Bot Framework, Bot Builder, register bot, Bot Framework Portal
 author: kbrandl
 manager: rstand
 ms.topic: publish-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.prod: bot-framework
+
 ms.date: 02/06/2017
 ms.reviewer:
 #ROBOTS: Index

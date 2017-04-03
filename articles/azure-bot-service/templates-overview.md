@@ -5,7 +5,7 @@ keywords: Bot Framework, Azure Bot Service, continuous integration
 author: RobStand
 manager: rstand
 ms.topic: bot-service-article
-ms.prod: botframework
+ms.prod: bot-framework
 ms.service: Azure Bot Service
 ms.date: 3/21/2017
 ms.reviewer:
@@ -54,4 +54,4 @@ Review the articles in this section to learn more about building bots using the 
 - [Manage conversation flow using dialogs](~/dotnet/manage-conversation-flow.md)
 
 If you encounter problems or have suggestions regarding Azure Bot Service, 
-see [Support](~/resources/support.md) for a list of available resources. 
+see [Support](~/resources-support.md) for a list of available resources. 

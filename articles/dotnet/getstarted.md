@@ -5,8 +5,8 @@ keywords: Bot Framework, Bot Builder, SDK, .NET, get started
 author: kbrandl
 manager: rstand
 ms.topic: get-started-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.prod: bot-framework
+
 ms.date:
 ms.reviewer: rstand
 #ROBOTS: Index

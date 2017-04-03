@@ -5,8 +5,8 @@ keywords: bot framework, Microsoft Cognitive Services, smart bots, intelligence
 author: RobStand
 manager: rstand
 ms.topic: overview-article
-ms.prod: botframework
-ms.service: Bot Framework Intelligence
+ms.prod: bot-framework
+ Intelligence
 ms.date: 3/29/2017
 ms.reviewer:
 

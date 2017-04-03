@@ -5,8 +5,8 @@ keywords: deploy, visual studio, git, cloud
 author: RobStand
 manager: rstand
 ms.topic: deploy-visual-studio-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.prod: bot-framework
+
 ms.date:
 ms.reviewer: rstand
 #ROBOTS: Index

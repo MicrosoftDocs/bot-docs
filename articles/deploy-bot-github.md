@@ -5,8 +5,8 @@ keywords: deploy, github, git, continuous integration, cloud
 author: RobStand
 manager: rstand
 ms.topic: deploy-remote-repo-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.prod: bot-framework
+
 ms.date:
 ms.reviewer: rstand
 #ROBOTS: Index

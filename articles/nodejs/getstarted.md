@@ -5,8 +5,8 @@ keywords: Bot Framework, Bot Builder, SDK, Node.js, get started
 author: kbrandl
 manager: rstand
 ms.topic: get-started-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.prod: bot-framework
+
 ms.date: 02/02/2017
 ms.reviewer:
 #ROBOTS: Index

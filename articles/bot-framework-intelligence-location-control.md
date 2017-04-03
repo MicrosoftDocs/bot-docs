@@ -6,7 +6,7 @@ author: RobStand
 manager: rstand
 ms.topic: intelligence-location-article
 
-ms.prod: botframework
+ms.prod: bot-framework
 ms.service: Cognitive Services
 ms.date: 
 ms.reviewer: rstand

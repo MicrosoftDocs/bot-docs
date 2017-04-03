@@ -4,10 +4,10 @@ description: Article that describes how to troubleshoot authentication errors wi
 keywords: Bot Framework, authentication, troubleshoot, debug, errors
 author: DeniseMak
 manager: rstand
-ms.topic: develop-article
+ms.topic: article
 
-ms.prod: botframework
-ms.service: Bot Builder
+ms.prod: bot-framework
+
 ms.date: 02/21/2017
 ms.reviewer:
 
@@ -275,7 +275,7 @@ If you continue to encounter difficulties, here are some additional resources:
 
 [BotConnectuorAuthGuide]: (https://docs.botframework.com/en-us/restapi/authentication/)
 [Support]: (https://docs.botframework.com/en-us/support/#navtitle)
-[Emulator]: ~/resources/emulator.md
+[Emulator]: ~/debug-bots-emulator.md
 [DevPortalTestPanel]: (~/media/troubleshooting-bot-framework-authentication_3.png)
 [EmulatorPic2]: (~/media/troubleshooting-bot-framework-authentication_2.png)
 [EmulatorPic1]: (~/media/troubleshooting-bot-framework-authentication_1.png)

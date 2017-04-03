@@ -3,7 +3,10 @@
     "content": [
       {
         "files": [
-          "**/**.md", "**/**.yml"
+          "**/**.md", 
+          "**/**.yml", 
+          "dotnet/**.md", 
+          "node/**.md"
         ],
         "exclude": [
           "**/obj/**",

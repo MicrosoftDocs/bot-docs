@@ -5,7 +5,7 @@ keywords: Bot Framework, Bot Builder, Azure Bot Service, get started
 author: kbrandl
 manager: rstand
 ms.topic: bot-service-get-started-article
-ms.prod: botframework
+ms.prod: bot-framework
 ms.service: Azure Bot Service
 ms.date: 
 ms.reviewer: rstand@microsoft.com

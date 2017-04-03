@@ -4,9 +4,9 @@ description: Understand bot capabilities, including message logging, proactive m
 keywords: Bot Framework, Bot design, capabilities, message logging, proactive messages, calling and IVR bots, global message handlers
 author: matvelloso
 manager: rstand
-ms.topic: design-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.topic: article
+ms.prod: bot-framework
+
 ms.date:
 ms.reviewer: rstand
 #ROBOTS: Index

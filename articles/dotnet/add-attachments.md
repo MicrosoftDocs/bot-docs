@@ -4,9 +4,9 @@ description: Learn how to add attachments to messages using the Bot Framework Co
 keywords: Bot Framework, .NET, Bot Builder, SDK, Connector, Connector service, attachment, card, rich card
 author: kbrandl
 manager: rstand
-ms.topic: develop-dotnet-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.topic: article
+ms.prod: bot-framework
+
 ms.date: 03/13/2017
 ms.reviewer:
 #ROBOTS: Index

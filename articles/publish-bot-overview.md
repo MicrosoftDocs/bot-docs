@@ -5,8 +5,8 @@ keywords: Bot Framework, Bot Builder, register, deploy, configure, publish, Bot 
 author: kbrandl
 manager: rstand
 ms.topic: publish-overview-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.prod: bot-framework
+
 ms.date:
 ms.reviewer: rstand
 #ROBOTS: Index
@@ -34,9 +34,9 @@ For a detailed walk through of the registration process, see [Register a bot wit
 
 Before others can use your bot, you must deploy it to the cloud. You have a few different options:
 
-- [Deploy from a local git repository](~/azure-deploy-bot-local-git.md) using continuous integration
-- [Deploy from Github](~/azure-deploy-bot-github.md) using continous integration
-- [Deploy from Visual Studio](~/azure-deploy-bot-visual-studio.md)
+- [Deploy from a local git repository](~/deploy-bot-local-git.md) using continuous integration
+- [Deploy from Github](~/deploy-bot-github.md) using continous integration
+- [Deploy from Visual Studio](~/deploy-bot-visual-studio.md)
 
 ## Configure your bot to run on one or more conversation channels
 

@@ -4,9 +4,9 @@ description: Identify resources related to designing and developing conversation
 keywords: bot framework, bot, design, develop, resources
 author: matvelloso
 manager: rstand
-ms.topic: design-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.topic: article
+ms.prod: bot-framework
+
 ms.date: 02/22/2017
 ms.reviewer:
 #ROBOTS: Index

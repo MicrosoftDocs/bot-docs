@@ -4,9 +4,9 @@ description: The key features of the Bot Framework will help you build powerful 
 keywords: bots, introduction, framework
 author: RobStand
 manager: rstand
-ms.topic: overview-article
-ms.prod: botframework
-ms.service: Bot Framework
+ms.topic: article
+ms.prod: bot-framework
+
 ms.date: 03/07/2017
 ms.reviewer:
 
@@ -36,7 +36,7 @@ See the Bot Framework’s [REST API](/en-us/connector/overview/).
 
 ### Bot Framework Emulator
 The Bot Framework Emulator is a desktop application that allows bot developers to test and debug their bots. The Bot Framework Emulator can communicate with your bot wherever it is running; on localhost, or remotely in the cloud.
-For details on using the emulator, see [Bot Framework Emulator](~/resources/emulator.md).
+For details on using the emulator, see [Bot Framework Emulator](~/debug-bots-emulator.md).
 
 ## Bot Connector
 The Bot Connector service provides the connection from your bot to text/SMS, Skype, Slack, Facebook Messenger, Office 365 mail and other channels.

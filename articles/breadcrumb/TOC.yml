@@ -8,3 +8,6 @@
   - name: BotBuilder SDK for Node.js
     tocHref: /BotFramework/node
     topicHref: /BotFramework/node/index
+  - name: Designing bots
+    tocHref: /BotFramework/design
+    topicHref: /BotFramework/design/principles

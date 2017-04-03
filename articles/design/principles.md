@@ -4,9 +4,9 @@ description: Learn about important factors to consider when planning and designi
 keywords: bot framework, design, bot, introduction, overview
 author: matvelloso
 manager: rstand
-ms.topic: design-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.topic: article
+ms.prod: bot-framework
+
 ms.date:
 ms.reviewer: rstand
 #ROBOTS: Index

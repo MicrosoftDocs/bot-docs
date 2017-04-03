@@ -4,9 +4,9 @@ description: Learn how to intercept messages that are exchanged between user and
 keywords: Bot Framework, dotnet, .NET, Bot Builder, SDK, message logging, intercept message, inspect message, middleware
 author: kbrandl
 manager: rstand
-ms.topic: develop-dotnet-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.topic: article
+ms.prod: bot-framework
+
 ms.date: 02/21/2017
 ms.reviewer:
 #ROBOTS: Index

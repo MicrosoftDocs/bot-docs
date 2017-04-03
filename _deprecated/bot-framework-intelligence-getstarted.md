@@ -5,7 +5,7 @@ keywords: intelligence, vision, speech, knowledge, search, language, cognitive
 author: robstand
 manager: rstand
 ms.topic: intelligence-getstarted-article
-ms.prod: botframework
+ms.prod: bot-framework
 ms.service: Cognitive Services
 ms.date:
 ms.reviewer: rstand

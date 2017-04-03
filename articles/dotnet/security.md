@@ -4,9 +4,9 @@ description: Learn how to enable security for a bot that is built using the Bot 
 keywords: Bot Framework, .NET, Bot Builder, SDK, Connector, Connector service, security, HTTPS endpoint
 author: kbrandl
 manager: rstand
-ms.topic: develop-dotnet-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.topic: article
+ms.prod: bot-framework
+
 ms.date: 03/09/2017
 ms.reviewer:
 #ROBOTS: Index

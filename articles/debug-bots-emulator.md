@@ -7,8 +7,8 @@ manager: rstand
 
 
 ms.topic: resources-tools-article
-ms.prod: botframework
-ms.service: Bot Framework
+ms.prod: bot-framework
+
 ms.date: 02/17/2017
 ms.reviewer:
 

@@ -1,5 +1,5 @@
 # Overview
-## [What is the Bot Framework?](bot-framework-overview.md)
+## [What is the Bot Framework](overview-value-proposition.md)
 ## [How it works](bot-framework-overview-how-it-works.md)
 <!-- ## [Bot scenarios](bot-framework-overview-scenarios.md)-->
 <!-- ## [Core concepts](bot-framework-concepts-overview.md)-->
@@ -14,8 +14,8 @@
 ## Sample 1
 ## Sample 2
 # Concepts
-## [Emulator](~/resources/emulator.md)
-## [Characteristics of IDs](~/resources/id-guide.md)
+## [Emulator](~/debug-bots-emulator.md)
+## [Characteristics of IDs](~/resources-identifiers-guide.md)
 ## [Bot intelligence](~/intelligent-bots.md)
 <!-- REMOVE when complete transition is complete
 ### [Overview](~/intelligent-bots.md)
@@ -36,30 +36,17 @@
 ### [Proactive bot](~/azure-bot-service/proactive-bot.md)
 ### [Question and answer bot](~/azure-bot-service/question-and-answer-bot.md)-->
 # How to
-## Plan & design
-### [Principles of bot design](~/design/principles.md)
-### [First interaction](~/design/core-greeting.md)
-### [Bot capabilities](~/design/capabilities.md)
-### [Conversation flow](~/design/core-dialogs.md)
-### [Navigation](~/design/core-navigation.md)
-### [UX elements](~/design/core-ux-elements.md)
-### Bot patterns
-#### [Task automation](~/design/patterns-task.md)
-#### [Knowledge base](~/design/patterns-knowledge-base.md)
-#### [Bot to web](~/design/patterns-bot-to-web.md)
-#### [Handoff to human](~/design/patterns-human-handoff.md)
-#### [Bots in apps](~/design/patterns-bot-in-app.md)
-#### [Bots in websites](~/design/patterns-bot-in-website.md)
+## [Plan & design](design/principles.md)
 ## [Develop with .NET](dotnet/)
 ## [Develop with Node.js](nodejs/)
-## [Register a bot](~/portal-register-bot.md)
 ## [Deploy](~/publish-bot-overview.md)
-### [Deploy from local git repo](~/azure-deploy-bot-local-git.md)
-### [Deploy from Github](~/azure-deploy-bot-github.md)
-### [Deploy from Visual Studio](~/azure-deploy-bot-visual-studio.md)
+### [Deploy from local git repo](~/deploy-bot-local-git.md)
+### [Deploy from Github](~/deploy-bot-github.md)
+### [Deploy from Visual Studio](~/deploy-bot-visual-studio.md)
+## [Register a bot](~/portal-register-bot.md)
 ## [Configure a bot](~/portal-configure-channels.md)
 <!--### [Set up continuous integration](~/azure-bot-service/continuous-integration.md)-->
-## [Publish a bot to the directory](~/portal-submit-bot-directory.md)
+## [Publish a bot](~/portal-submit-bot-directory.md)
 ## Troubleshoot
 ### [Troubleshoot general problems](bot-framework-troubleshooting-guide.md)
 ### [Troubleshoot authentication](bot-framework-troubleshooting-auth.md)

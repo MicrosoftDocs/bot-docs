@@ -4,9 +4,9 @@ description: Follow these best practices when designing the user experience for 
 keywords: design, experience, practices, guidelines
 author: RobStand
 manager: rstand
-ms.topic: design-principles-article
+ms.topic: article
 
-ms.prod: botframework
+ms.prod: bot-framework
 ms.service: Cognitive Services
 ms.date:
 ms.reviewer:
