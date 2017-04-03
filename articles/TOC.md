@@ -42,10 +42,10 @@
 ### [Deploy from Github](~/deploy-bot-github.md)
 ### [Deploy from Visual Studio](~/deploy-bot-visual-studio.md)
 ## Release
-## [Register](~/portal-register-bot.md)
-## [Connect to channels](~/portal-configure-channels.md)
+### [Register](~/portal-register-bot.md)
+### [Connect to channels](~/portal-configure-channels.md)
 <!--### [Set up continuous integration](~/azure-bot-service/continuous-integration.md)-->
-## [Publish a bot](~/portal-submit-bot-directory.md)
+### [Publish a bot](~/portal-submit-bot-directory.md)
 ## Debug
 ### [Debug with the emulator](~/debug-bots-emulator.md)
 ## Troubleshoot
