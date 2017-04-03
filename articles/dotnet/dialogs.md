@@ -215,5 +215,5 @@ If `Chain.Switch<T, R>` returns a nested `IDialog<IDialog<T>>`, then the inner `
 - [Key concepts in the Bot Builder SDK for .NET](~/dotnet/concepts.md)
 - [Designing conversation flow](~/bot-design-conversation-flow.md)
 - [Manage conversation flow using dialogs](~/dotnet/manage-conversation-flow.md)
-- [Bot Framework troubleshooting guide](~/bot-framework-troubleshooting-guide.md#implement-dialogs)
+- [Bot Framework troubleshooting guide](~/troubleshoot-general-problems.md#implement-dialogs)
 - <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_blank">Builder library</a>

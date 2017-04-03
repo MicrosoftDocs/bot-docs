@@ -132,8 +132,8 @@ should remain on GitHub instead of here -->
 [EmulatorNgrokMonitor]: ~/media/emulator/emulator-testbot-ngrok-monitoring.png
 [EmulatorUI]: ~/media/emulator/emulator-ui-new.png
 
-[TroubleshootingGuide]: ~/bot-framework-troubleshooting-guide.md
-[TroubleshootingAuth]: ~/bot-framework-troubleshooting-auth.md
+[TroubleshootingGuide]: ~/troubleshoot-general-problems.md
+[TroubleshootingAuth]: ~/troubleshoot-authentication-problems.md
 [NodeGetStarted]: ~/nodejs/getstarted.md
 [CSGetStarted]: ~/dotnet/getstarted.md
 [BotFrameworkPublishOverview]: ~/publish-bot-overview.md

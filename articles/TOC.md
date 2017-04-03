@@ -4,16 +4,16 @@
 <!-- ## [Bot scenarios](bot-framework-overview-scenarios.md)-->
 <!-- ## [Core concepts](bot-framework-concepts-overview.md)-->
 ## [Get started](bot-framework-botbuilder-overview.md)
-## [Channels]()
 <!-- ## [Try it out](bot-framework-sample-bot.md)-->
 # Quickstart
 ## [Create a bot with .NET](~/dotnet/getstarted.md)
 ## [Create a bot with Node.js](~/nodejs/getstarted.md)
 ## [Create a bot with Azure Bot Service](~/azure-bot-service/getstarted.md)
 # Concepts
-
-## [Characteristics of IDs](~/resources-identifiers-guide.md)
+## Channels
+### Channel inspector
 ## [Bot intelligence](~/intelligent-bots.md)
+## [Deployment and publishing](~/publish-bot-overview.md)
 <!-- REMOVE when complete transition is complete
 ### [Overview](~/intelligent-bots.md)
 ### [Language](bot-framework-intelligence-language.md)
@@ -37,18 +37,19 @@
 ## Develop
 ### [Bot Builder for .NET](dotnet/)
 ### [Bot Builder for Node.js](nodejs/)
-## [Deploy](~/publish-bot-overview.md)
+## Deploy
 ### [Deploy from local git repo](~/deploy-bot-local-git.md)
 ### [Deploy from Github](~/deploy-bot-github.md)
 ### [Deploy from Visual Studio](~/deploy-bot-visual-studio.md)
-## [Register a bot](~/portal-register-bot.md)
-## [Configure a bot](~/portal-configure-channels.md)
+## Release
+## [Register](~/portal-register-bot.md)
+## [Connect to channels](~/portal-configure-channels.md)
 <!--### [Set up continuous integration](~/azure-bot-service/continuous-integration.md)-->
 ## [Publish a bot](~/portal-submit-bot-directory.md)
 ## Debug
 ### [Debug with the emulator](~/debug-bots-emulator.md)
 ## Troubleshoot
-### [Troubleshoot general problems](bot-framework-troubleshooting-guide.md)
-### [Troubleshoot authentication](bot-framework-troubleshooting-auth.md)
+### [Troubleshoot general problems](troubleshoot-general-problems.md)
+### [Troubleshoot authentication](troubleshoot-authentication-problems.md)
 ### [Manage your MSA App ID and password](~/azure-bot-service/manage-msa-app-ID.md)
 # [Resources](resources/TOC.md)
