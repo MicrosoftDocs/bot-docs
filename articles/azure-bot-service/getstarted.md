@@ -127,4 +127,4 @@ the Azure portal.
 To learn more about building great bots with the Bot Framework, see the following articles:
 
 - [Key concepts in the Bot Framework](~/bot-framework-concepts-overview.md)
-- [Introduction to bot design](~/design/bot-design-principles.md)
+- [Introduction to bot design](~/bot-design-principles.md)

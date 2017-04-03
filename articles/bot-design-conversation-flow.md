@@ -76,5 +76,5 @@ such as the likelihood of this happening or how the user would reasonably expect
 
 Managing the user's navigation across dialogs and designing conversation flow in a manner that enables 
 users to achieve their goals (even in a non-linear fashion) is a fundamental challenge of bot design. 
-In the [next article](~/design/bot-design-navigation.md), we'll 
+In the [next article](~/bot-design-navigation.md), we'll 
 review some common pitfalls of poorly designed navigation and discuss strategies for avoiding those traps. 

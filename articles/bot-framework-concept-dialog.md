@@ -226,17 +226,17 @@ For an example of how to use LUIS to intelligently parse user input and extract 
 > [!NOTE]
 > TODO: Add more links as they become available. 
 
-Before you get started designing dialogs for your bot, read the [Design Guide](~/design/bot-design-conversation-flow.md)
+Before you get started designing dialogs for your bot, read the [Design Guide](~/bot-design-conversation-flow.md)
 
 
 <!-- reference-style links -->
 [GettingStartedNodeJS]:(~/nodejs/getstarted.md)
-[ButtonsControlsDesign]:(https://review.docs.microsoft.com/en-us/botframework/~/design/core-ux-elements#buttons-language-and-speech)
+[ButtonsControlsDesign]:(https://review.docs.microsoft.com/en-us/botframework/~/core-ux-elements#buttons-language-and-speech)
 [LocationControl]:(https://github.com/Microsoft/BotBuilder-Location)
 
-[DesigningNavigation]:(https://review.docs.microsoft.com/en-us/botframework/~/design/core-navigation)
-[GlobalMessageHandlers]:(https://review.docs.microsoft.com/en-us/botframework/~/design/capabilities#global-message-handlers)
-[MessageLoggingMiddleware]:(https://review.docs.microsoft.com/en-us/botframework/~/design/capabilities#message-logging)
+[DesigningNavigation]:(https://review.docs.microsoft.com/en-us/botframework/~/core-navigation)
+[GlobalMessageHandlers]:(https://review.docs.microsoft.com/en-us/botframework/~/capabilities#global-message-handlers)
+[MessageLoggingMiddleware]:(https://review.docs.microsoft.com/en-us/botframework/~/capabilities#message-logging)
 [BotStateCS]:(https://docs.botframework.com/en-us/csharp/builder/sdkreference/stateapi.html)
 [Downloads]:(bot-framework-downloads.md)
 [ButtonsExample]:(bot-framework-send-card-buttons.md)

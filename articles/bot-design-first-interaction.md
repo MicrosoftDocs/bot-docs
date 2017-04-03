@@ -62,4 +62,4 @@ a well-designed bot provides the user with access to information about its priva
 ## Next steps
 
 Now that you're familiar with some basic principles for designing the first interaction between user and bot, 
-learn more about [designing the flow of conversation](~/design/bot-design-conversation-flow.md).
+learn more about [designing the flow of conversation](~/bot-design-conversation-flow.md).
