@@ -168,5 +168,5 @@ private async Task OnRecordCompleted(RecordOutcomeEvent recordOutcomeEvent)
 
 ## Additional resources
 
-- [Bot capabilities](~/design/capabilities.md)
+- [Bot capabilities](~/design/bot-design-capabilities.md)
 - <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_blank">Builder library</a>

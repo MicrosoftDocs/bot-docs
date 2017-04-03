@@ -60,4 +60,4 @@ update `logIncomingMessage` and `logOutgoingMessage` as necessary to define the 
 
 ## Additional resources
 
-- [Bot capabilities](~/design/capabilities.md)
+- [Bot capabilities](~/design/bot-design-capabilities.md)

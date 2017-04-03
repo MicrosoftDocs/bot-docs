@@ -1,5 +1,5 @@
 ---
-title: Experience design principles for bots | Microsoft Docs
+title: Best practices for designing bots | Microsoft Docs
 description: Follow these best practices when designing the user experience for your bots.
 keywords: design, experience, practices, guidelines
 author: RobStand

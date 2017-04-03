@@ -121,5 +121,5 @@ bot.dialog('/survey', [
 
 ## Additional resources
 
-- [Designing conversation flow](~/design/core-dialogs.md)
-- [Bot capabilities](~/design/capabilities.md)
+- [Designing conversation flow](~/design/bot-design-conversation-flow.md)
+- [Bot capabilities](~/design/bot-design-capabilities.md)

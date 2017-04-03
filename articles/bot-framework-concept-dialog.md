@@ -226,7 +226,7 @@ For an example of how to use LUIS to intelligently parse user input and extract 
 > [!NOTE]
 > TODO: Add more links as they become available. 
 
-Before you get started designing dialogs for your bot, read the [Design Guide](~/design/core-dialogs.md)
+Before you get started designing dialogs for your bot, read the [Design Guide](~/design/bot-design-conversation-flow.md)
 
 
 <!-- reference-style links -->

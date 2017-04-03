@@ -52,7 +52,7 @@ After you finish building and configuring your bot, you [publish your bot](~/por
 To give your bot more human-like senses, you can take advantage of the Microsoft Cognitive Services to add natural language understanding, image recognition, speech, and more. [Learn more](~/intelligent-bots.md) about adding intelligence to your bot.
 
 ## Next Steps
-Get a [deeper look at the features](bot-framework-overview-how-it-works.md) of the Bot Framework. Then get started with [building a bot](bot-framework-botbuilder-overview.md) and learn more about [designing great bots](~/design/principles.md).
+Get a [deeper look at the features](bot-framework-overview-how-it-works.md) of the Bot Framework. Then get started with [building a bot](bot-framework-botbuilder-overview.md) and learn more about [designing great bots](~/design/bot-design-principles.md).
 
 [NodeGetStarted]:~/nodejs/getstarted.md
 [DotNETGetStarted]:~/dotnet/getstarted.md

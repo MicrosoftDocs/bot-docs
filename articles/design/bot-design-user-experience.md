@@ -28,7 +28,7 @@ Allowing the user to communicate "Hotels" by clicking a button labeled **Hotels*
 This especially holds true on mobile devices, where clicking is greatly preferred over typing. 
 
 When designing your bot, do not automatically dismiss common UI elements as not being "smart enough." 
-As discussed [previously](~/design/principles.md#design-guidance), your bot should be designed 
+As discussed [previously](~/design/bot-design-principles.md#design-guidance), your bot should be designed 
 to solve the user's problem in the best/quickest/easiest manner possible. 
 Whether your bot uses artificial intelligence (AI) is not directly relevant to this goal. 
 
@@ -78,7 +78,7 @@ For example, imagine a bot that can answer questions based on the contents of th
 <a href="https://qnamaker.ai" target="_blank">QnA Maker</a> and 
 <a href="https://azure.microsoft.com/en-us/services/search/" target="_blank">Azure Search</a> are 
 both technologies which are designed specifically for this type of scenario. 
-For more information, see [Knowledge base bots](patterns-knowledge-base.md).
+For more information, see [Knowledge base bots](bot-design-pattern-knowledge-base.md).
 
 > [!TIP]
 > If you are designing a bot that will answer questions based on structured or unstructured data from 

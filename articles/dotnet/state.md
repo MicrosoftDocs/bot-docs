@@ -47,7 +47,7 @@ which your bot can access by using one of the "**Get...**" methods.
 
 ##<a id="state-client"></a> Create a state client
 
-The `StateClient` object enables you to manage state data using the BotBuilder SDK for .NET. 
+The `StateClient` object enables you to manage state data using the Bot Builder SDK for .NET. 
 To create a state client using an `Activity` object, call the `GetStateClient` method.
 
 [!code-csharp[Get State client](~/includes/code/dotnet-state.cs#getStateClient1)]

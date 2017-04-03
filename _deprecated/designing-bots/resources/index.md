@@ -18,7 +18,7 @@ ms.author: mat.velloso@microsoft.com
 
 ##First party sources
 
-[Microsoft BotBuilder Samples](https://github.com/Microsoft/BotBuilder-Samples)
+[Microsoft Bot Builder Samples](https://github.com/Microsoft/BotBuilder-Samples)
 Microsoft bot framework engineering team samples  – both C# and Node
 
 

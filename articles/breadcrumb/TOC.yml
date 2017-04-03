@@ -2,12 +2,9 @@
   tocHref: /BotFramework/
   topicHref: /BotFramework/index
   items:
-  - name: BotBuilder SDK for .NET
+  - name: Bot Builder SDK for .NET
     tocHref: /BotFramework/dotnet
     topicHref: /BotFramework/dotnet/index
-  - name: BotBuilder SDK for Node.js
+  - name: Bot Builder SDK for Node.js
     tocHref: /BotFramework/node
     topicHref: /BotFramework/node/index
-  - name: Designing bots
-    tocHref: /BotFramework/design
-    topicHref: /BotFramework/design/principles
