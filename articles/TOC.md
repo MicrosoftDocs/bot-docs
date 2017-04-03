@@ -10,11 +10,8 @@
 ## [Create a bot with .NET](~/dotnet/getstarted.md)
 ## [Create a bot with Node.js](~/nodejs/getstarted.md)
 ## [Create a bot with Azure Bot Service](~/azure-bot-service/getstarted.md)
-# Samples
-## Sample 1
-## Sample 2
 # Concepts
-## [Emulator](~/debug-bots-emulator.md)
+
 ## [Characteristics of IDs](~/resources-identifiers-guide.md)
 ## [Bot intelligence](~/intelligent-bots.md)
 <!-- REMOVE when complete transition is complete
@@ -36,9 +33,10 @@
 ### [Proactive bot](~/azure-bot-service/proactive-bot.md)
 ### [Question and answer bot](~/azure-bot-service/question-and-answer-bot.md)-->
 # How to
-## [Plan & design](design/TOC.md)
-## [Develop with .NET](dotnet/)
-## [Develop with Node.js](nodejs/)
+## [Design](design/TOC.md)
+## Develop
+### [Bot Builder for .NET](dotnet/)
+### [Bot Builder for Node.js](nodejs/)
 ## [Deploy](~/publish-bot-overview.md)
 ### [Deploy from local git repo](~/deploy-bot-local-git.md)
 ### [Deploy from Github](~/deploy-bot-github.md)
@@ -47,6 +45,8 @@
 ## [Configure a bot](~/portal-configure-channels.md)
 <!--### [Set up continuous integration](~/azure-bot-service/continuous-integration.md)-->
 ## [Publish a bot](~/portal-submit-bot-directory.md)
+## Debug
+### [Debug with the emulator](~/debug-bots-emulator.md)
 ## Troubleshoot
 ### [Troubleshoot general problems](bot-framework-troubleshooting-guide.md)
 ### [Troubleshoot authentication](bot-framework-troubleshooting-auth.md)
