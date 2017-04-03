@@ -14,23 +14,12 @@ ms.reviewer:
 
 # Send and receive attachments using the Bot Builder SDK for Node.js
 
-<!--
-> [!div class="op_single_selector"]
-> * [.NET](~/dotnet/howto-send-receive-attachments.md)
-> * [Node.js](~/nodejs/send-receive-attachments.md)
->
--->
-
-
-
 In this article, we'll discuss how to send messages containing attachments such as images by using the Bot Builder SDK for Node.js.
 
 The session.send() method can be used to send messages in the form of a JSON object to the user, in addition to strings. 
 The message object is expected to be an instance of an [IMessage][IMessage] and it's most useful to send the user a message as an object when you’d like to include an attachment like an image. 
 
-<!-- TODO: Supported attachments include -->
-> [!NOTE]
-> To do: Add links to info on supported attachment types.
+<!-- TODO: Supported attachments table -->
 
 ## Send and receive an image attachment
 
@@ -65,10 +54,8 @@ var bot = new builder.UniversalBot(connector, function (session) {
 
 ## Additional resources
 
-In this article, we discussed how to send and receive attachments by using the Bot Builder SDK for Node.js. 
-To learn more, see:
-
-> [!NOTE]
-> To do: Add links to related content 
+* [IMessage][IMessage]
+* [Send a rich card][SendRichCard]
 
 [IMessage]: http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.imessage
+[SendRichCard]: send-card-buttons.md
