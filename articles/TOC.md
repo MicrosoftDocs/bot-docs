@@ -1,5 +1,5 @@
 # Overview
-## [What is the Bot Framework](overview-value-proposition.md)
+## [What is the Bot Framework](framework-overview.md)
 
 ## [Get started](bot-framework-botbuilder-overview.md)
 # Quickstart

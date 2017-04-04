@@ -1,10 +1,10 @@
 ---
-title: What is the Bot Framework | Microsoft Docs
+title: Bot Framework Overview | Microsoft Docs
 description: The Microsoft Bot Framework is a comprehensive offering that you use to build and deploy high quality bots.
 keywords:
 author: RobStand
 manager: rstand
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: bot-framework
 ms.date: 04/01/2017
 
