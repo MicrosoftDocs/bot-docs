@@ -7,12 +7,6 @@
 ## [Create a bot with Azure Bot Service](~/azure-bot-service/getstarted.md)
 # Concepts
 ## [How Bot Framework works](overview-how-bot-framework-works.md)
-## Cards
-## Channel
-## Dialog
-## Activity
-## Connector
-## Message
 ## [Bot intelligence](~/intelligent-bots.md)
 ## [Deployment and publishing](~/publish-bot-overview.md)
 # How to
@@ -22,7 +16,7 @@
 ### [Bot Builder for Node.js](nodejs/)
 ## [Deploy](deploy/TOC.md)
 ## [Manage](manage/TOC.md)
-## Debug
-## Integrate
-## Troubleshoot
+## [Debug](debug/TOC.md)
+## [Integrate](integrate/TOC.md)
+## [Troubleshoot](troubleshoot/TOC.md)
 # [Resources](resources/TOC.md)
