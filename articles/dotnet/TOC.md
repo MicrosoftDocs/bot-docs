@@ -8,7 +8,7 @@
 ## [Develop](develop/TOC.md)
 ## [Deploy](../deploy/TOC.md)
 ## [Manage](../manage/TOC.md)
-## Debug
-## Integrate
-## Troubleshoot
+## [Debug](../debug/TOC.md)
+## [Integrate](../integrate/TOC.md)
+## [Troubleshoot](../troubleshoot/TOC.md)
 # [Resources](../resources/TOC.md)
