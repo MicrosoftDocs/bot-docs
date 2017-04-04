@@ -1,4 +1,5 @@
 # [Overview](~/dotnet/index.md)
+# [Get started](~/dotnet/getstarted.md)
 # [Concepts](~/dotnet/concepts.md)
 ## [Activity types](~/dotnet/activities.md)
 ## [Dialogs](~/dotnet/dialogs.md)
