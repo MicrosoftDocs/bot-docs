@@ -1,9 +1,7 @@
-- name: Docs
-  tocHref: /
-  - name: Bot Framework
-    tocHref: /BotFramework/
-    topicHref: /BotFramework/index
-    items:
-    - name: Bot Builder SDK for Node.js
-      tocHref: /BotFramework/node
-      topicHref: /BotFramework/node/index
+- name: Bot Framework
+  tocHref: /BotFramework/
+  topicHref: /BotFramework/index
+  items:
+  - name: Bot Builder SDK for Node.js
+    tocHref: /BotFramework/node
+    topicHref: /BotFramework/node/index
