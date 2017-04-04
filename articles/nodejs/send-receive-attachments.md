@@ -56,6 +56,7 @@ var bot = new builder.UniversalBot(connector, function (session) {
 
 * [IMessage][IMessage]
 * [Send a rich card][SendRichCard]
+* [session.send][SessionSend]
 
 [IMessage]: http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.imessage
 [SendRichCard]: send-card-buttons.md

@@ -18,7 +18,7 @@ ms.reviewer: rstand
 Bot Builder includes a rich localization system for building bots that can communicate with the user in multiple languages. All of your bot's prompts can be localized using JSON files stored in your bots directory structure. If you’re using a system like LUIS to perform natural language processing you can configure your [LuisRecognizer](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.luisrecognizer) with a separate model for each language your bot supports and the SDK automatically selects the model that matches the user's preferred locale.
 
 ## Determine the locale by prompting the user
-The first step to localizing your bot for the user is adding the ability to identify the users preferred language. The SDK provides a [session.preferredLocale()](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#preferredlocale) method to both save and retrieve this preference on a per-user basis. The following example is a dialog to prompt the user for their preferred language and then save their choice.
+The first step to localizing your bot for the user is adding the ability to identify the user's preferred language. The SDK provides a [session.preferredLocale()](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#preferredlocale) method to both save and retrieve this preference on a per-user basis. The following example is a dialog to prompt the user for their preferred language and then save their choice.
 
 ``` javascript
 bot.dialog('/localePicker', [
@@ -53,7 +53,7 @@ bot.dialog('/localePicker', [
 
 ## Determine the locale by using analytics
 Another way to determine the user's locale is to install a piece of middleware that uses a service like the [Text Analytics API](https://www.microsoft.com/cognitive-services/en-us/text-analytics-api) to automatically 
-detect the users language based upon the text of the message they sent.
+detect the user's language based upon the text of the message they sent.
 
 ``` javascript
 var request = require('request');
@@ -88,6 +88,28 @@ bot.use({
 });
 ```
 
+Calling [session.preferredLocale()][SessionPreferredLocale] will automatically return the detected language if a user-selected locale hasn’t been assigned. The exact search order for **preferredLocale()** is:
+* Locale saved by calling session.preferredLocale(). This value is stored in session.userData['BotBuilder.Data.PreferredLocale'].
+* Detected locale assigned to session.message.textLocale.
+* The configured default locale for the bot.
+* English (‘en’).
+
+You can configure the bot's default locale using its constructor:
+
+```javascript
+var bot = new builder.UniversalBot(connector, {
+    localizerSettings: { 
+        defaultLocale: "es" 
+    }
+});
+```
+
+## Localizing prompts
+The default localization system for the Bot Builder SDK is file-based and allows a bot to support multiple languages using JSON files stored on disk. By default, the localization system will search for the bot's prompts in the `./locale/<IETF TAG>/index.json` file where <IETF TAG> is a valid [IETF language tag][IEFT] representing the preferred locale for which to find prompts. 
+
+The following screenshot shows the directory structure for a bot that supports three languages: English, Italian, and Spanish.
+
+![Directory structure for three locales](~/media/locale-dir.png)
 
 ## Additional resources
 
@@ -102,3 +124,7 @@ For more information on LUIS see [Understanding Natural Language][LUISConcepts].
 [LUISSample]: https://github.com/Microsoft/BotBuilder/blob/master/Node/examples/basics-naturalLanguage/app.js
 [LUISConcepts]: https://docs.botframework.com/en-us/node/builder/guides/understanding-natural-language/
 [DisambiguationSample]: https://github.com/Microsoft/BotBuilder/tree/master/Node/examples/feature-onDisambiguateRoute
+
+[SessionPreferredLocale]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#preferredlocale
+
+[IEFT]: https://en.wikipedia.org/wiki/IETF_language_tag
