@@ -12,7 +12,27 @@
 # How to
 ## [Design](design/TOC.md)
 ## Develop
-### [Bot Builder for .NET](dotnet/)
+### [Bot Builder for .NET](~/dotnet/index.md)
+#### [Understand activity types](~/dotnet/activities.md)
+#### [Create messages](~/dotnet/create-messages.md)
+#### [Add attachments to messages](~/dotnet/add-attachments.md)
+#### [Implement channel-specific functionality](~/dotnet/channeldata.md)
+#### [Send and receive activities](~/dotnet/connector.md)
+#### [Understand dialogs](~/dotnet/dialogs.md)
+#### [Manage conversation flow](~/dotnet/manage-conversation-flow.md)
+#### [Implement global handlers](~/dotnet/global-handlers.md)
+#### [Intercept messages](~/dotnet/middleware.md)
+#### [Send proactive messages](~/dotnet/proactive-messages.md)
+#### [Manage state](~/dotnet/state.md)
+#### [Conduct audio calls](~/dotnet/audio-calls.md)
+#### [Secure your bot](~/dotnet/security.md)
+#### Implement FormFlow
+##### [Basic features of FormFlow](~/dotnet/formflow.md)
+##### [Advanced features of FormFlow](~/dotnet/formflow-advanced.md)
+##### [FormBuilder](~/dotnet/formflow-formbuilder.md)
+##### [Pattern language](~/dotnet/formflow-pattern-language.md)
+##### [Localization](~/dotnet/formflow-localize.md)
+##### [JSON schema](~/dotnet/formflow-json-schema.md)
 ### [Bot Builder for Node.js](nodejs/)
 ### Azure Bot Service
 ### REST API

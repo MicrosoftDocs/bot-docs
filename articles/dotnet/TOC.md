@@ -1,4 +1,4 @@
-# [Overview](~/dotnet/index.md)
+# [Overview]()
 # [Get started](~/dotnet/getstarted.md)
 # [Concepts](~/dotnet/concepts.md)
 # How to
