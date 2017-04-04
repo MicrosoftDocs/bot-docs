@@ -7,7 +7,7 @@
 ## [Create a bot with Azure Bot Service](~/azure-bot-service/getstarted.md)
 # Concepts
 ## [How Bot Framework works](overview-how-bot-framework-works.md)
-## [Bot intelligence](~/intelligent-bots.md)
+## [Make bots smarter](~/intelligent-bots.md)
 ## [Deployment and publishing](~/publish-bot-overview.md)
 # How to
 ## [Design](design/TOC.md)
