@@ -10,7 +10,7 @@
 # [Send proactive messages](~/dotnet/proactive-messages.md)
 # [Manage state](~/dotnet/state.md)
 # [Conduct audio calls](~/dotnet/audio-calls.md)
-# [Secure your bot](~/dotnet/security2.md)
+# [Secure your bot](~/dotnet/security.md)
 # Implement FormFlow
 ## [Basic features of FormFlow](~/dotnet/formflow.md)
 ## [Advanced features of FormFlow](~/dotnet/formflow-advanced.md)
