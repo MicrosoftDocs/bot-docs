@@ -12,7 +12,7 @@ ms.reviewer:
 #ROBOTS: Index
 ---
 
-# Bot security
+# Secure your bot
 
 This article describes how to secure your bot by using HTTPS and Bot Framework authentication.
 

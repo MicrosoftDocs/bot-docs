@@ -1,9 +1,6 @@
 # [Overview](~/dotnet/index.md)
 # [Get started](~/dotnet/getstarted.md)
 # [Concepts](~/dotnet/concepts.md)
-## [Activity types](~/dotnet/activities.md)
-## [Dialogs](~/dotnet/dialogs.md)
-## [Security](~/dotnet/security.md)
 # How to
 ## [Design](../design/TOC.md)
 ## [Develop](develop/TOC.md)
