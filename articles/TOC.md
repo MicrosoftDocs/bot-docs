@@ -15,5 +15,14 @@
 ## Message
 ## [Bot intelligence](~/intelligent-bots.md)
 ## [Deployment and publishing](~/publish-bot-overview.md)
-# [How to](howto/TOC.md)
+# How to
+## [Design](design/TOC.md)
+## Develop
+### [Bot Builder for .NET](dotnet/)
+### [Bot Builder for Node.js](nodejs/)
+## [Deploy](deploy/TOC.md)
+## [Manage](manage/TOC.md)
+## Debug
+## Integrate
+## Troubleshoot
 # [Resources](resources/TOC.md)
