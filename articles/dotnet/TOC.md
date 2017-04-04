@@ -1,5 +1,5 @@
 # [Overview](~/dotnet/index.md)
-# [Core concepts](~/dotnet/concepts.md)
+# [Concepts](~/dotnet/concepts.md)
 ## [Activity types](~/dotnet/activities.md)
 ## [Dialogs](~/dotnet/dialogs.md)
 ## [Security](~/dotnet/security.md)
