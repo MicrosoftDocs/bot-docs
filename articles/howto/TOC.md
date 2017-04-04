@@ -1,7 +1,7 @@
-# [Design](design/TOC.md)
+# [Design](/design/TOC.md)
 # Develop
-## [Bot Builder for .NET](dotnet/)
-## [Bot Builder for Node.js](nodejs/)
+## [Bot Builder for .NET](/dotnet/)
+## [Bot Builder for Node.js](/nodejs/)
 # Deploy
 ## [Deploy from local git repo](/deploy-bot-local-git.md)
 ## [Deploy from Github](/deploy-bot-github.md)
@@ -16,6 +16,6 @@
 # Integrate
 ## [Add the web chat control](/embed-chat-control-web-page)
 # Troubleshoot
-## [Troubleshoot general problems](troubleshoot-general-problems.md)
-## [Troubleshoot authentication](troubleshoot-authentication-problems.md)
-## [Manage your MSA App ID and password](~/azure-bot-service/manage-msa-app-ID.md)
+## [Troubleshoot general problems](/troubleshoot-general-problems.md)
+## [Troubleshoot authentication](/troubleshoot-authentication-problems.md)
+## [Manage your MSA App ID and password](/azure-bot-service/manage-msa-app-ID.md)
