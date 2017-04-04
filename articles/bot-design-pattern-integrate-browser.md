@@ -4,7 +4,7 @@ description: Learn how to design a conversational application (bot) that require
 keywords: bot framework, design, bot, scenario, use case, pattern, bot to web, integrate bot with web
 author: matvelloso
 manager: rstand
-ms.topic: design-patterns-article
+ms.topic: article
 ms.prod: bot-framework
 
 ms.date: 
@@ -62,7 +62,7 @@ The hyperlink typically includes data via querystring parameters on the target U
 
 > [!TIP]
 > Design this flow so that the bot will not permanently remain in the 'waiting' state 
-> (thereby [ignoring user input](~/design/core-navigation.md#the-mysterious-bot)), 
+> (thereby [ignoring user input](~/bot-design-navigation.md#the-mysterious-bot)), 
 > if the user never completes the website flow. 
 > In other words, if the user abandons the web browser and starts communicating with the bot again, 
 > the bot should acknowledge those communications.

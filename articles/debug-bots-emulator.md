@@ -33,7 +33,7 @@ The emulator displays messages as they would appear in a web chat UI and lets yo
 * If your bot is hosted remotely, ensure that [ngrok tunneling software](#ngrok) is installed and configured so that the emulator can communicate with the service.
 
 ## <a id="localhost"></a> Connect to a bot running on localhost
-When developing a bot using the BotBuilder SDK, the default endpoint for local debugging is http://localhost:3978/api/messages. This is where the bot will be listening for messages when hosted locally.
+When developing a bot using the Bot Builder SDK, the default endpoint for local debugging is http://localhost:3978/api/messages. This is where the bot will be listening for messages when hosted locally.
 
 For localhost debugging you will not typically need to enter the MSA appId or password, although it is supported if your bot requires it.
 
@@ -132,8 +132,8 @@ should remain on GitHub instead of here -->
 [EmulatorNgrokMonitor]: ~/media/emulator/emulator-testbot-ngrok-monitoring.png
 [EmulatorUI]: ~/media/emulator/emulator-ui-new.png
 
-[TroubleshootingGuide]: ~/bot-framework-troubleshooting-guide.md
-[TroubleshootingAuth]: ~/bot-framework-troubleshooting-auth.md
+[TroubleshootingGuide]: ~/troubleshoot-general-problems.md
+[TroubleshootingAuth]: ~/troubleshoot-authentication-problems.md
 [NodeGetStarted]: ~/nodejs/getstarted.md
 [CSGetStarted]: ~/dotnet/getstarted.md
 [BotFrameworkPublishOverview]: ~/publish-bot-overview.md

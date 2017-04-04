@@ -132,7 +132,7 @@ If you'd like to share your bot with others, you'll need to
 To learn more about building great bots with the Bot Framework, see the following articles:
 
 - [Key concepts in the Bot Framework](~/bot-framework-concepts-overview.md)
-- [Introduction to bot design](~/design/principles.md)
+- [Introduction to bot design](~/bot-design-principles.md)
 - [Bot Builder SDK for .NET](~/dotnet/index.md)
 - [Publish a bot to the Bot Framework](~/publish-bot-overview.md)
 - [Bot Framework FAQ](~/bot-framework-faq.md)

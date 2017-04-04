@@ -35,8 +35,8 @@ see [Activity types](~/dotnet/activities.md).
 ## Dialog
 
 When you create a bot using the Bot Builder SDK for .NET, you can use dialogs to model 
-a conversation and manage [conversation flow](~/design/core-dialogs.md). 
-A dialog can be composed with other dialogs to maximize reuse, and a dialog context maintains the [stack of dialogs](~/design/core-dialogs.md#stack) that are active in the conversation at any point in time. 
+a conversation and manage [conversation flow](~/bot-design-conversation-flow.md). 
+A dialog can be composed with other dialogs to maximize reuse, and a dialog context maintains the [stack of dialogs](~/bot-design-conversation-flow.md#stack) that are active in the conversation at any point in time. 
 A conversation that comprises dialogs is portable across computers, which makes it possible for your bot implementation to scale. In the Bot Builder SDK for .NET, the <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_blank">Builder</a> library enables you to manage dialogs.
 
 For details about using dialogs within the Bot Builder SDK for .NET, see 
@@ -66,7 +66,7 @@ For more information on this topic, see [Security](~/dotnet/security.md).
 - [Create a bot with the Bot Builder SDK for .NET](~/dotnet/getstarted.md)
 - [Activity types](~/dotnet/activities.md)
 - [Dialogs](~/dotnet/dialogs.md)
-- [Designing conversation flow](~/design/core-dialogs.md)
+- [Designing conversation flow](~/bot-design-conversation-flow.md)
 - [Security](~/dotnet/security.md)
 
 

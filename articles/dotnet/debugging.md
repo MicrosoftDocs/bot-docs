@@ -32,6 +32,6 @@ ms.reviewer:
 
 ## Additional resources
 
-- [Bot Framework Troubleshooting Guide](~/bot-framework-troubleshooting-guide.md)
-- [Troubleshooting Bot Framework Authentication](~/bot-framework-troubleshooting-auth.md)
+- [Bot Framework Troubleshooting Guide](~/troubleshoot-general-problems.md)
+- [Troubleshooting Bot Framework Authentication](~/troubleshoot-authentication-problems.md)
 - [Support](~/resources-support.md)

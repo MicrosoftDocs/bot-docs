@@ -284,4 +284,4 @@ The [GitHub issues](https://github.com/Microsoft/BotBuilder/issues) has an activ
 [DashboardTestingConnection]: (https://docs.botframework.com/en-us/csharp/builder/sdkreference/gettingstarted.html#testing)
 [BotFrameworkIDGuide]: (https://docs.botframework.com/en-us/bot-framework-guide-id/)
 [StateAPI]: (https://docs.botframework.com/en-us/restapi/state/)
-[TroubleshootingAuth]: bot-framework-troubleshooting-auth.md
+[TroubleshootingAuth]: troubleshoot-authentication-problems.md

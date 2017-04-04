@@ -3,12 +3,6 @@
 ## [Activity types](~/dotnet/activities.md)
 ## [Dialogs](~/dotnet/dialogs.md)
 ## [Security](~/dotnet/security.md)
-# FormFlow
-## [Basic features of FormFlow](~/dotnet/formflow.md)
-## [Advanced features of FormFlow](~/dotnet/formflow-advanced.md)
-## [FormBuilder](~/dotnet/formflow-formbuilder.md)
-## [Pattern language](~/dotnet/formflow-pattern-language.md)
-## [JSON schema](~/dotnet/formflow-json-schema.md)
 # How to
 ## [Create messages](~/dotnet/create-messages.md)
 ## [Add attachments to messages](~/dotnet/add-attachments.md)
@@ -20,4 +14,11 @@
 ## [Send proactive messages](~/dotnet/proactive-messages.md)
 ## [Manage state](~/dotnet/state.md)
 ## [Conduct audio calls](~/dotnet/audio-calls.md)
+## Implement FormFlow
+### [Basic features of FormFlow](~/dotnet/formflow.md)
+### [Advanced features of FormFlow](~/dotnet/formflow-advanced.md)
+### [FormBuilder](~/dotnet/formflow-formbuilder.md)
+### [Pattern language](~/dotnet/formflow-pattern-language.md)
+### [Localization](~/dotnet/formflow-localize.md)
+### [JSON schema](~/dotnet/formflow-json-schema.md)
 # [Resources](../resources/TOC.md)

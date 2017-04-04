@@ -16,10 +16,10 @@ ms.reviewer: rstand
 
 When you've finished developing a bot and you're ready to share it with others, there are some things you need to do:
 
-1. [Register](#register) your bot with the Bot Framework<br/>
-2. [Deploy](#deploy) your bot to the cloud<br/>
-3. [Configure](#configure) your bot to run on one or more conversation channels<br/>
-4. [Publish](#publish) your bot to the Bot Directory
+1. Register your bot with the Bot Framework<br/>
+2. Deploy your bot to the cloud<br/>
+3. Configure your bot to run on one or more conversation channels<br/>
+4. Publish your bot to the Bot Directory
 
 > [!NOTE]
 > If you built your bot using the Azure Bot Service, you don't need to register or deploy your bot.

@@ -65,7 +65,7 @@ This code example shows a dynamically generated confirmation that computes the c
 
 [!code-csharp[Define confirmation](~/includes/code/dotnet-formflow-formbuilder.cs#defineConfirmation)]
 
-## Customize a form using FormBuilder
+##<a id="customize-form"></a> Customize a form using FormBuilder
 
 This code example uses FormBuilder to define the steps of the form, 
 [validate selections](~/dotnet/formflow-advanced.md#business-logic), 

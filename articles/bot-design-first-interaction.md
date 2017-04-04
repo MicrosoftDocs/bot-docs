@@ -4,7 +4,7 @@ description: Learn best practices for designing for the first interaction betwee
 keywords: Bot Framework, design, principles, interaction, greeting
 author: matvelloso
 manager: rstand
-ms.topic: design-ui-and-ux-article
+ms.topic: article
 ms.prod: bot-framework
 
 ms.date:
@@ -62,4 +62,4 @@ a well-designed bot provides the user with access to information about its priva
 ## Next steps
 
 Now that you're familiar with some basic principles for designing the first interaction between user and bot, 
-learn more about [designing the flow of conversation](~/design/core-dialogs.md).
+learn more about [designing the flow of conversation](~/bot-design-conversation-flow.md).

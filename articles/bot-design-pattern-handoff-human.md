@@ -4,7 +4,7 @@ description: Learn how to design a conversational application (bot) that require
 keywords: bot framework, design, bot, scenario, use case, pattern, bot to human, handoff, transition to human
 author: matvelloso
 manager: rstand
-ms.topic: design-patterns-human-handoff-article
+ms.topic: article
 ms.prod: bot-framework
 
 ms.date: 

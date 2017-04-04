@@ -47,7 +47,7 @@ which your bot can access by using one of the "**Get...**" methods.
 
 ##<a id="state-client"></a> Create a state client
 
-The `StateClient` object enables you to manage state data using the BotBuilder SDK for .NET. 
+The `StateClient` object enables you to manage state data using the Bot Builder SDK for .NET. 
 To create a state client using an `Activity` object, call the `GetStateClient` method.
 
 [!code-csharp[Get State client](~/includes/code/dotnet-state.cs#getStateClient1)]
@@ -102,5 +102,5 @@ You can design your bot to account for this scenario, as shown in this code samp
 
 ## Additional resources
 
-- [Bot Framework troubleshooting guide](~/bot-framework-troubleshooting-guide.md#state)
+- [Bot Framework troubleshooting guide](~/troubleshoot-general-problems.md#state)
 - <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/db/dbb/namespace_microsoft_1_1_bot_1_1_connector.html" target="_blank">Connector library</a>

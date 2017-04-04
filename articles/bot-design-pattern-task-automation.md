@@ -4,7 +4,7 @@ description: Learn how to design a conversational application (bot) that can aut
 keywords: bot framework, design, bot, scenario, use case, pattern, task automation
 author: matvelloso
 manager: rstand
-ms.topic: design-patterns-task-article
+ms.topic: article
 ms.prod: bot-framework
 
 ms.date: 

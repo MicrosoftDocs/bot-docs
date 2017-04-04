@@ -4,7 +4,7 @@ description: Learn how to design a conversational application that is embedded w
 keywords: bot framework, design, bot, scenario, use case, pattern, bot in app, bot embedded in app
 author: matvelloso
 manager: rstand
-ms.topic: design-patterns-article
+ms.topic: article
 ms.prod: bot-framework
 
 ms.date:
@@ -14,10 +14,10 @@ ms.reviewer: rstand
 # Embedding a bot in an app
 
 Although bots most commonly exist outside of apps, they can also be embedded within an app. 
-For example, you may embed a [knowledge bot](~/design/patterns-knowledge-base.md) within an app 
+For example, you may embed a [knowledge bot](~/bot-design-pattern-knowledge-base.md) within an app 
 to enable users to quickly find information that might otherwise be challenging to locate within complex app structures. 
 You may embed a bot within a help desk app to act as the first responder to incoming user requests. 
-The bot could independently resolve simple issues and [handoff](~/design/patterns-human-handoff.md) more complex issues to a human agent. 
+The bot could independently resolve simple issues and [handoff](~/bot-design-pattern-handoff-human.md) more complex issues to a human agent. 
 
 This article explores integrating bots with apps and creating a cross-platform mobile app that runs a bot. 
 
@@ -33,7 +33,7 @@ either via REST or websockets.
 ### Web-based mobile app
 A mobile app that is built by using web language and frameworks such as <a href="https://cordova.apache.org/" target="_blank">Cordova</a> 
 may communicate with the Bot Framework by using the same components that a 
-[bot embedded within a website](~/design/patterns-bot-in-website.md) would use, 
+[bot embedded within a website](~/bot-design-pattern-embed-web-site.md) would use, 
 just encapsulated within a native app's shell.
 
 ### IoT app

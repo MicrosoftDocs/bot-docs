@@ -64,5 +64,5 @@ update the `LogAsync` method as necessary to define the actions that you want to
 
 ## Additional resources
 
-- [Bot capabilities](~/design/capabilities.md)
+- [Bot capabilities](~/bot-design-capabilities.md)
 - <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_blank">Builder library</a>

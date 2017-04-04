@@ -4,7 +4,7 @@ description: Learn how to manage navigation in converational applications (bots)
 keywords: Bot Framework, Bot design, navigation
 author: matvelloso
 manager: rstand
-ms.topic: design-ui-and-ux-article
+ms.topic: article
 ms.prod: bot-framework
 
 ms.date: 
@@ -15,7 +15,7 @@ ms.reviewer: rstand
 
 Users can navigate websites using breadcrumbs, apps using menus, and a web browsers using buttons like **forward** and **back**. 
 However, none of these well-established navigation techniques entirely address navigation requirements within a bot. 
-As discussed [previously](~/design/core-dialogs.md#dialogs-stacks-and-humans), 
+As discussed [previously](~/bot-design-conversation-flow.md#dialogs-stacks-and-humans), 
 users often interact with bots in a non-linear fashion, 
  making it challenging to design bot navigation that consistently delivers a great user experience. 
 Consider the following dilemmas:
@@ -63,7 +63,7 @@ Although you may be tempted to design every dialog within your bot to listen for
 this approach is not recommended. 
 
 > [!TIP]
-> <b>Do</b>: Implement [global message handlers](~/design/capabilities.md#global-message-handlers) that will examine user input for the keywords that you specify (ex: "help", "cancel", "start over", etc.) 
+> <b>Do</b>: Implement [global message handlers](~/bot-design-capabilities.md#global-message-handlers) that will examine user input for the keywords that you specify (ex: "help", "cancel", "start over", etc.) 
 > and respond appropriately. 
 > 
 > <b>Don't</b>: Design every dialog to examine user input for a list of keywords. 
@@ -121,4 +121,4 @@ By maintaining the current topic of conversation, you reduce the potential for c
 
 By designing your bot to avoid these common pitfalls of poorly designed conversational interfaces, 
 you're taking an important step toward ensuring a great user experience. 
-Next, learn more about the [UX elements](~/design/core-ux-elements.md) that bots most typically rely upon to exchange information with users. 
+Next, learn more about the [UX elements](~/bot-design-user-experience.md) that bots most typically rely upon to exchange information with users. 

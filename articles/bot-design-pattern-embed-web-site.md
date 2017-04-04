@@ -4,7 +4,7 @@ description: Learn how to design a conversational application (bot) that is embe
 keywords: bot framework, design, bot, scenario, use case, pattern, bot in website, backchannel, web chat control, Skype web control
 author: matvelloso
 manager: rstand
-ms.topic: design-patterns-article
+ms.topic: article
 ms.prod: bot-framework
 
 ms.date: 
@@ -15,10 +15,10 @@ ms.reviewer: rstand
 
 
 Although bots commonly exist outside of websites, they can also be embedded within a website. 
-For example, you may embed a [knowledge bot](~/design/patterns-knowledge-base.md) within a website 
+For example, you may embed a [knowledge bot](~/bot-design-pattern-knowledge-base.md) within a website 
 to enable users to quickly find information that might otherwise be challenging to locate within complex website structures. 
 Or you might embed a bot within a help desk website to act as the first responder to incoming user requests. 
-The bot could independently resolve simple issues and [handoff](~/design/patterns-human-handoff.md) more complex issues to a human agent. 
+The bot could independently resolve simple issues and [handoff](~/bot-design-pattern-handoff-human.md) more complex issues to a human agent. 
 
 This article explores integrating bots with websites and 
  the process of using the `backchannel` mechanism to facilitate private communication between a web page and a bot. 
