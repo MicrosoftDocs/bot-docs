@@ -3,7 +3,8 @@
 ## [Activity types](~/dotnet/activities.md)
 ## [Dialogs](~/dotnet/dialogs.md)
 ## [Security](~/dotnet/security.md)
-# How to
+# [How to](/howto/TOC.md)
+# Develop - temp
 ## [Create messages](~/dotnet/create-messages.md)
 ## [Add attachments to messages](~/dotnet/add-attachments.md)
 ## [Implement channel-specific functionality](~/dotnet/channeldata.md)
