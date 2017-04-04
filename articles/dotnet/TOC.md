@@ -3,7 +3,7 @@
 ## [Activity types](~/dotnet/activities.md)
 ## [Dialogs](~/dotnet/dialogs.md)
 ## [Security](~/dotnet/security.md)
-# [How to](/howto/TOC.md)
+# [How to](../howto/TOC.md)
 # Develop - temp
 ## [Create messages](~/dotnet/create-messages.md)
 ## [Add attachments to messages](~/dotnet/add-attachments.md)

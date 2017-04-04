@@ -16,5 +16,5 @@
 ## Message
 ## [Bot intelligence](~/intelligent-bots.md)
 ## [Deployment and publishing](~/publish-bot-overview.md)
-# [How to](/howto/TOC.md)
+# [How to](~/howto/TOC.md)
 # [Resources](/resources/TOC.md)
