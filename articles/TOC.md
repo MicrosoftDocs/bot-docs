@@ -12,7 +12,7 @@
 # How to
 ## [Design](design/TOC.md)
 ## Develop
-### [Bot Builder for .NET](~/dotnet/index.md)
+### [.NET](~/dotnet/index.md)
 #### [Get started](~/dotnet/getstarted.md)
 #### [Core concepts](~/dotnet/concepts.md)
 #### [Understand activity types](~/dotnet/activities.md)
@@ -35,7 +35,7 @@
 ##### [Pattern language](~/dotnet/formflow-pattern-language.md)
 ##### [Localization](~/dotnet/formflow-localize.md)
 ##### [JSON schema](~/dotnet/formflow-json-schema.md)
-### [Bot Builder for Node.js](nodejs/)
+### [Node.js](nodejs/TOC.md)
 ### Azure Bot Service
 ### REST API
 ## [Deploy](deploy/TOC.md)
