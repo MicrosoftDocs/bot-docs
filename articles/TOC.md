@@ -14,6 +14,8 @@
 ## Develop
 ### [Bot Builder for .NET](dotnet/)
 ### [Bot Builder for Node.js](nodejs/)
+### Azure Bot Service
+### REST API
 ## [Deploy](deploy/TOC.md)
 ## [Manage](manage/TOC.md)
 ## [Debug](debug/TOC.md)
