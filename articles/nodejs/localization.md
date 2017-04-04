@@ -89,8 +89,8 @@ bot.use({
 ```
 
 Calling [session.preferredLocale()][SessionPreferredLocale] will automatically return the detected language if a user-selected locale hasn’t been assigned. The exact search order for **preferredLocale()** is:
-* Locale saved by calling session.preferredLocale(). This value is stored in session.userData['BotBuilder.Data.PreferredLocale'].
-* Detected locale assigned to session.message.textLocale.
+* Locale saved by calling **session.preferredLocale()**. This value is stored in **session.userData['BotBuilder.Data.PreferredLocale']**.
+* Detected locale assigned to **session.message.textLocale**.
 * The configured default locale for the bot.
 * English (‘en’).
 
@@ -111,6 +111,12 @@ The following screenshot shows the directory structure for a bot that supports t
 
 ![Directory structure for three locales](~/media/locale-dir.png)
 
+The structure of the file is a simple JSON map of message IDs to localized text strings. If the value is an array instead of a string, one prompt from the array is chosen at random when that value is retrieved using [session.localizer.gettext()][GetText]. 
+
+<!-- 
+Returning the localized version of a message generally happens automatically by simply passing the message ID in a call to session.send() instead of language specific text:
+-->
+
 ## Additional resources
 
 To learn about how to localize a recognizer, see [Recognizing intent](~/nodejs/recognize-intent.md).
@@ -126,5 +132,5 @@ For more information on LUIS see [Understanding Natural Language][LUISConcepts].
 [DisambiguationSample]: https://github.com/Microsoft/BotBuilder/tree/master/Node/examples/feature-onDisambiguateRoute
 
 [SessionPreferredLocale]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#preferredlocale
-
+[GetText]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ilocalizer.html#gettext
 [IEFT]: https://en.wikipedia.org/wiki/IETF_language_tag
