@@ -1,6 +1,5 @@
 # Overview
 ## [What is the Bot Framework](framework-overview.md)
-
 ## [Get started](bot-framework-botbuilder-overview.md)
 # Quickstart
 ## [Create a bot with .NET](~/dotnet/getstarted.md)
@@ -16,5 +15,5 @@
 ## Message
 ## [Bot intelligence](~/intelligent-bots.md)
 ## [Deployment and publishing](~/publish-bot-overview.md)
-# [How to](~/howto/TOC.md)
-# [Resources](/resources/TOC.md)
+# [How to](howto/TOC.md)
+# [Resources](resources/TOC.md)

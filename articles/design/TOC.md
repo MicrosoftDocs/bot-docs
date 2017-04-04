@@ -9,5 +9,5 @@
 ## [Knowledge base](~/bot-design-pattern-knowledge-base.md)
 ## [Bot to web](~/bot-design-pattern-integrate-browser.md)
 ## [Handoff to human](~/bot-design-pattern-handoff-human.md)
-## [Bots in apps](~/patterns-bot-design-pattern-embed-app.md)
+## [Bots in apps](~/bot-design-pattern-embed-app.md)
 ## [Bots in websites](~/bot-design-pattern-embed-web-site.md)
