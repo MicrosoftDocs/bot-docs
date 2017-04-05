@@ -18,6 +18,10 @@ ms.reviewer:
 [!include[Introduction to global message handlers](~/includes/snippet-global-handlers-intro.md)]
 This article describes how to implement actions, which are global message handlers. 
 
+Either user utterances or button clicks can trigger an action.
+If 'matches' is specifed, the action will listen for the user to say a word or a phrase that triggers the action.  
+Otherwise the action needs to be bound to a button click by using [CardAction.dialogAction()][ClickAction] to trigger the action.
+
 ## Triggering a help dialog
 
 With the Bot Builder SDK for Node.js, you can use `triggerAction` to specify the triggers that will cause the 
@@ -47,15 +51,6 @@ bot.dialog('help', (session, args, next) => {
 
 Another type of action that can triggered globally is cancellation. In this example, the bot uses a **cancelAction** to end the conversation if the user's message is "cancel".
 
-<!--
-```javascript
-bot.dialog('cancel', (session, args, next) => {
-    session.endConversation('Operation canceled');
-}).triggerAction({
-    matches: /^cancel$/
-});
-```
---> 
 
 ```javascript
 // Add dialog for creating a list
@@ -203,9 +198,18 @@ bot.dialog('checkoutDialog', function (session) {
 
 <!--
 View the "feature-onDisambiguateRoute" example to see how you'd prompt the user
-to disambiguate between "cancel item" and "cancel order".  
+to disambiguate between "cancel item" and "cancel order".
 -->
 
+## End a conversation
+
+<!-- Delete this note 
+Should this be moved to where we discuss dialogs stacks
+-->
+
+You may notice that within the previous examples, the [endConversation][EndConversation] method ends the conversation when the user's task is completed. The *endConversation* method not only clears the dialog stack, it also clears the [session.privateConversationData][PrivateConversationData] variable that is persisted to storage. That means you can use **privateConversationData** to save state relative to the current task. As long as you call **endConversation** when the task is completed all of this state is automatically cleaned up.
+
+Your bot can also end a conversation by using an [endConversationAction][endConversationAction].
 
 ## Additional resources
 
@@ -216,5 +220,10 @@ to disambiguate between "cancel item" and "cancel order".
 - [reloadAction][reloadAction]
 -->
 
+[ClickAction]: (https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.cardaction#dialogaction)
+[EndConversation]: (https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#endconversation)
+[EndConversationAction]: (https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#endconversationaction)
 [matches]: (https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.idialogactionoptions#matches)
 [reloadAction]: (https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#reloadaction)
+
+[PrivateConversationData]: (https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#privateconversationdata)

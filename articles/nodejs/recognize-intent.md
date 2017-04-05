@@ -20,7 +20,7 @@ You can design your bot to recognize a set of intents that interpret the user’
 This article demonstrates how to register a custom intent recognizer that will be run for every message received from the user. 
 Custom recognizers can return a named intent that can be used to trigger actions and dialogs within the bot.
 
-## Example: Use the built-in regular expression recognizer
+## Use the built-in regular expression recognizer
 Use [RegExpRecognizer](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.regexprecognizer.html) to detect the user's intent using a regular expression. You can pass multiple expressions to the recognizer to support multiple languages. 
 
 ``` javascript
@@ -28,7 +28,7 @@ Use [RegExpRecognizer](https://docs.botframework.com/en-us/node/builder/chat-ref
 bot.recognizer(new builder.RegExpRecognizer( "CancelIntent", { en-us: /^(cancel|nevermind)/i, ja-jp: /^(キャンセル)/ }));
 ```
 
-## Example: Use an external web service
+## Use an external web service
 You can configure your bot to use cloud-based intent recognition services like [Language Understanding Intelligent Service (LUIS)][LUIS] through an extensible set of recognizer plugins. Out of the box, Bot Builder comes with a [LuisRecognizer][LuisRecognizer] class that can be used to call a machine learning model you’ve trained via their web site. You can create a **LuisRecognizer** that’s pointed at your model and then pass that recognizer into your dialog.
 
 ``` javascript
@@ -41,7 +41,7 @@ The Bot Builder SDK includes a [sample][LUISSample] that demonstrates how to add
 
 
 
-## Example: Register a custom intent recognizer
+## Register a custom intent recognizer
 You can also implement a custom recognizer. This example adds a recognizer that looks for the user to say 'help' or 'goodbye' but you could easily add a 
 recognizer that does additional processing, such as one that recognizes when the user sends an image. 
 
