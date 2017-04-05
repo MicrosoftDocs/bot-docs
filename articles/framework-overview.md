@@ -48,15 +48,15 @@ Messenger or Skype, that your bot will connect to. The Connector service sits be
 ![List of channels on the portal](~/media/portal-channels-list.png) 
 
 ### Bot Directory
-After you finish building and configuring your bot, you publish your bot to the Bot Directory. The Bot Directory is a public directory of bots registered and published with the Bot Framework. Users can discover and add your bot to channels, and they can try your bot from the Bot Directory.
+The Bot Directory is a public directory of bots registered and published with the Bot Framework. After you publish your bot to the directory, users can discover and add your bot to channels, and they can try your bot directly from the Bot Directory.
 
 ![Bots in the Bot Directory](~/media/directory.jpg) 
 
 ## Making bots smarter
-To give your bot more human-like senses, you can take advantage of the Microsoft Cognitive Services to add natural language understanding, image recognition, speech, and more. [Learn more](~/intelligent-bots.md) about adding intelligence to your bot.
+To give your bot more human-like senses, you can take advantage of  Microsoft Cognitive Services to add smart features like natural language understanding, image recognition, speech, and more. [Learn more](~/intelligent-bots.md) about adding intelligence to your bot.
 
 ## Next Steps
-Get a [deeper look at the features](overview-how-bot-framework-works.md) of the Bot Framework. Then get started with [building a bot](bot-framework-botbuilder-overview.md) and learn more about [designing great bots](~/bot-design-principles.md).
+Dive deeper into [the capabilities](overview-how-bot-framework-works.md) of the Bot Framework. Get started  [building your first bot](bot-framework-botbuilder-overview.md) and learn more about [designing great bots](~/bot-design-principles.md).
 
 [NodeGetStarted]:~/nodejs/getstarted.md
 [DotNETGetStarted]:~/dotnet/getstarted.md

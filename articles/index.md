@@ -40,7 +40,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/bot-framework-botbuilder-overview">
+                            <a href="/botframework/overview-how-bot-framework-works">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -112,8 +112,8 @@ description:
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Build a bot with C#</h3>
-                                            <p>Learn how to build a bot with the Bot Builder SDK for .NET.</p>
+                                            <h3>Build bots with C#</h3>
+                                            <p>Learn how to build bots with the Bot Builder SDK for .NET.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -131,8 +131,8 @@ description:
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Build a bot with Node.js</h3>
-                                            <p>Learn how to build a bot with the Bot Builder SDK for Node.js.</p>
+                                            <h3>Build bots with Node.js</h3>
+                                            <p>Learn how to build bots with the Bot Builder SDK for Node.js.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -150,8 +150,8 @@ description:
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Build a bot with Azure Bot Service</h3>
-                                            <p>Learn how to build a bot with the Azure Bot Service.</p>
+                                            <h3>Build bots with Azure Bot Service</h3>
+                                            <p>Learn how to build bots with the Azure Bot Service.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -170,7 +170,7 @@ description:
                                         </div>
                                         <div class="cardText">
                                             <h3>Deploy and publish bots</h3>
-                                            <p>Learn how to register a bot with the portal, deploy a bot to Azure, and publish a bot to the Bot Directory.</p>
+                                            <p>Learn how to register bots with the portal, deploy a bot to Azure, and publish a bot to the Bot Directory.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -178,7 +178,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/bot-framework-sdk-reference-overview">
+                            <a href="/botframework/sdk-reference-overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">

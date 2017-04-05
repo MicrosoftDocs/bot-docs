@@ -4,7 +4,7 @@ description: Learn what you need to do to publish and deploy your bot for people
 keywords: Bot Framework, Bot Builder, register, deploy, configure, publish, Bot Directory
 author: kbrandl
 manager: rstand
-ms.topic: publish-overview-article
+ms.topic: article
 ms.prod: bot-framework
 ms.date:
 ms.reviewer: rstand
