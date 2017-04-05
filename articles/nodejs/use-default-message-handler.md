@@ -11,7 +11,7 @@ ms.date: 03/31/2017
 ms.reviewer:
 #ROBOTS: Index
 ---
-# Understanding message handlers and dialogs
+# Manage conversation flow
 
 This article teaches you the basics of how to start managing conversation flow using message handlers and dialogs in your bot.
 
