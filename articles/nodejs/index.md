@@ -58,11 +58,11 @@ For information on concepts that help you understand the rest of the documentati
 
 Before you start building your bot, read [Designing bots][DesignGuide] to learn about principles of bot design and [Patterns][DesignPatterns] for guidance on what features your bot needs in order to best address the top user scenarios. 
 
+<!--
+To learn about how your bot processes user messages using dialogs and handlers, see [Managing conversation flow](~/nodejs/manage-conversation-flow.md). -->
 
-To learn about how your bot processes user messages using dialogs and handlers, see [Managing conversation flow](~/nodejs/manage-conversation-flow.md).
 
-
-Once you understand basic conversational mechanics, the [How-to guides][HowToFirstArticle] give you instructions on adding more advanced features to your bot.
+Once you understand basic principles, the [How-to guides][HowTo] give you step-by-step instructions on adding features to your bot.
 
 ## Get samples
 
@@ -138,3 +138,7 @@ If you encounter problems or have suggestions regarding the Bot Builder SDK for 
 see [Support](~/resources-support.md) for a list of resources that provide opportunities 
 for support and feedback. 
 
+
+[DesignGuide]: ~/bot-design-principles.md 
+[DesignPatterns]: ~/bot-design-pattern-task-automation.md 
+[HowTo]: ~/nodejs/use-default-message-handler.md 
