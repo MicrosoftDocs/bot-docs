@@ -1,16 +1,3 @@
 - name: Bot Framework
-  tocHref: /articles/
-  topicHref: /articles/index
-  items:
-  - name: Overview
-    tocHref: /articles/
-    topicHref: /articles/bot-framework-overview
-  - name: Get Started
-    tocHref: /articles/get-started
-    items:
-      - name: Use .NET
-        tocHref: /articles/get-started/
-        topicHref: /get-started/bot-framework-dotnet-getstarted
-      - name: Use Node.js
-        tocHref: /articles/get-started
-        topicHref: /articles/get-started/bot-framework-nodejs-getstarted
+  tocHref: /BotFramework/
+  topicHref: /BotFramework/index

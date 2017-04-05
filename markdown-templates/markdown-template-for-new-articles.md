@@ -5,20 +5,15 @@ keywords: keywords, separated, by, commas
 author: GitHub-alias-of-only-one-author
 manager: rstand
 
-# the ms.topic should be the section of the IA that the article is in, with the suffix -article. Some examples:
-# get-started article, sdk-reference-article
-ms.topic: topic-of-article
-
-ms.prod: botframework
-
-# The ms.service should be the Bot Framework technology area covered by the article, e.g., Bot Builder, LUIS, Azure Bot Service
-ms.service: service-name
+# the ms.topic should be the section of the IA that the article is in. The choices here are:
+# article: A conceptual topic, tutorial, feature guide, or other non-reference article
+# get-started-article: assign to articles that are featured in the Get Started or Overview section of the left navigation for a service.
+# hero-article: a "hero" tutorial that is designed to provide an introduction to a service or feature that gets visitors started using the service quickly and drives free-trial sign-ups and MSDN activations. Confirm with rstand@microsoft.com before choosing this topic type
+ms.topic: article
+ms.prod: bot-framework
 
 # Date the article was updated
 ms.date: mm/dd/yyyy
-
-# Alias of the document reviewer. Change to the appropriate person.
-ms.reviewer:
 
 # Include the following line commented out
 #ROBOTS: Index
@@ -65,7 +60,7 @@ you can create that content inside a 'snippet' file (in the /includes folder), t
 
 For example, the following 'include' statement injects the contents that's defined in the `includes/snippet-tip-bot-config-settings.md` file.
 
-    [!include[Application configuration settings](../includes/snippet-tip-bot-config-settings.md)]
+    [!include[Application configuration settings](~/includes/snippet-tip-bot-config-settings.md)]
 
 Syntax for the include statement is:
 

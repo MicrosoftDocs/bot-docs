@@ -6,10 +6,10 @@ author: RobStand
 manager: rstand
 ms.topic: intelligence-speech-article
 
-ms.prod: botframework
+ms.prod: bot-framework
 ms.service: Cognitive Services
 ms.date: 
-ms.reviewer: v-tosisk
+ms.reviewer: rstand
 
 # Include the following line commented out
 #ROBOTS: Index
@@ -18,23 +18,10 @@ ms.reviewer: v-tosisk
 
 
 # Add speech recognition and conversion to your bot
-With the Speech APIs you can add advanced speech skills to your bot that leverage industry-leading algorithms for speech-to-text and text-to-speech conversion, as well as speaker recognition. The Speech APIs use built-in language and acoustic models that cover a wide range of scenarios with high accuracy. 
 
-For applications that require further customization, you can use the Custom Recognition Intelligent Service (CRIS). This allows you to calibrate the language and acoustic models of the speech recognizer by tailoring it to the vocabulary of the application, or even to the speaking style of your users.
-
-There are three Speech APIs available in Cognitive Services to process or synthesize speech.
-
-## Bing Speech API
-The <a href="https://www.microsoft.com/cognitive-services/en-us/speech-api" target="_blank">Bing Speech API</a> provides speech-to-text and text-to-speech conversion capabilities.
-
-## Custom Recognition Intelligent Service
-The <a href="https://www.microsoft.com/cognitive-services/en-us/custom-recognition-intelligent-service-cris" target="_blank">Custom Recognition Intelligent Service (CRIS)</a> allows you to create custom speech recognition models to tailor the speech-to-text conversion to an application's vocabulary or user's speaking style.
-
-## Speaker Recognition API
-The <a href="https://www.microsoft.com/cognitive-services/en-us/speaker-recognition-api" target="_blank">Speaker Recognition API</a> enables speaker identification and verification through voice.
 
 > [!TIP]
-> You can find detailed documentation, developer guides, and API referencesby on the Cognitive Services <a href="https://www.microsoft.com/cognitive-services/en-us/documentation" target="_blank">documentation site</a> and then on the left selecting the API you are interested in.
+> You can find detailed documentation, developer guides, and API references on the Cognitive Services <a href="https://www.microsoft.com/cognitive-services/en-us/documentation" target="_blank">documentation site</a> and then on the left selecting the API you are interested in.
 
 ## Speech API examples for bots
 The Speech APIs enable your bots to parse audio and extract useful information from voice input. For example, bots can identify the presence of certain words or access the transcribed text to perform an action. 
@@ -47,9 +34,9 @@ The Speaker Recognition APIs can be used as a means to identify or even authenti
 > Before you get started, you need to obtain your own subscription key from the Microsoft Cognitive Services site. The <a href="https://www.microsoft.com/cognitive-services/en-us/speech-api/documentation/getstarted/getstartedcsharpdesktop" target="_blank">Getting Started</a> guide for the Speech API describes how to obtain the key and start making calls to the APIs.
 
 ### Speech-To-Text example
-In this example, you will build a simple bot that leverages the Speech API to perform speech-to-text conversion. This bot receives an audio file and either responds with the transcribed text or provides some interesting information about the audio it received, such as word, character and vowel count. This example will use the <a href="http://docs.botframework.com/connector/getstarted/#getting-started-in-net" target="_blank">Bot Application .NET template</a> as a starting point. Note that this example requires the *Newtonsoft.JSON* package, which can be obtained via <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">nuGet</a>.
+In this example, you will build a simple bot that leverages the Speech API to perform speech-to-text conversion. This bot receives an audio file and either responds with the transcribed text or provides some interesting information about the audio it received, such as word, character and vowel count. This example will use the <a href="http://docs.botframework.com/connector/getstarted/#getting-started-in-net" target="_blank">Bot Application .NET template</a> as a starting point. Note that this example requires the **Newtonsoft.JSON** package, which can be obtained via <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">nuGet</a>.
 
-After you create your project with the Bot Application template, add the **Newtonsoft.JSON package**, and then open the **MessagesController.cs** file. Start by adding the following namespaces.
+After you create your project with the Bot Application template, add the **Newtonsoft.JSON** package, and then open the **MessagesController.cs** file. Start by adding the following namespaces.
 
 ```cs
 using System.IO;
@@ -263,7 +250,7 @@ private string DoSpeechReco(Attachment attachment)
 }
 ```
 
-Finally, replace the code in the Post task with the one below. The code parses the voice attachment sent to the bot, calls the speech-to-text conversion function, and then responds back to the user with the transcribed text and related metadata (such as character or word count) for the user's request.  
+Finally, replace the code in the `Post` task with the one below. The code parses the voice attachment sent to the bot, calls the speech-to-text conversion function, and then responds back to the user with the transcribed text and related metadata (such as character or word count) for the user's request.  
 
 ```cs
 public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
@@ -326,7 +313,7 @@ For this example, you will build a bot that leverages the Speaker Recognition AP
 
 Before you begin, you need to enroll your voice by saying one of the <a href="https://dev.projectoxford.ai/docs/services/563309b6778daf02acc0a508/operations/5652c0801984551c3859634d" target="_blank">preselected passphrases</a>. The Speaker Verification service requires at least 3 enrollments, so the bot will ask for three enrollment audio files, and send a confirmation when the enrollment is completed.
 
-After you create your project with the Bot Application template, add the **Microsoft.ProjectOxford.SpeakerRecognition package**, and then open the *MessagesController.cs* file. 
+After you create your project with the Bot Application template, add the **Microsoft.ProjectOxford.SpeakerRecognition** package, and then open the **MessagesController.cs** file. 
 
 Start by adding the following namespaces.
 
@@ -346,7 +333,7 @@ using Microsoft.ProjectOxford.SpeakerRecognition.Contract.Verification;
 using System.IO;
 ```
 
-Next, write the function that implements the speaker verification logic. Note that the function requires a working Speaker Recognition API key, which can be be obtained via your Cognitive Services <a href="https://www.microsoft.com/cognitive-services/en-US/subscriptions" target="_blank">subscription page</a>.
+Next, write the function that implements the speaker verification logic. Note that the function requires a working Speaker Recognition API key, which can be found on the Cognitive Services <a href="https://www.microsoft.com/cognitive-services/en-US/subscriptions" target="_blank">subscription page</a>.
 
 ```cs
 ISpeakerVerificationServiceClient client = new SpeakerVerificationServiceClient("<YOUR API KEY>");
@@ -354,7 +341,7 @@ ISpeakerVerificationServiceClient client = new SpeakerVerificationServiceClient(
 Profile profile = null;
 ```
 
-Finally, replace the code in the Post task with the one below. The code parses the voice attachment sent to the bot, calls the speaker verification service, and then responds back to the user with an accept or reject decision along with the confidence score.  
+Finally, replace the code in the `Post` task with the one below. The code parses the voice attachment sent to the bot, calls the speaker verification service, and then responds back to the user with an accept or reject decision along with the confidence score.  
 
 ```cs
 public async Task<HttpResponseMessage> Post([FromBody]Activity activity)

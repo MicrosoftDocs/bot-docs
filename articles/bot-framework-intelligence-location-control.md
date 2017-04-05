@@ -6,10 +6,10 @@ author: RobStand
 manager: rstand
 ms.topic: intelligence-location-article
 
-ms.prod: botframework
+ms.prod: bot-framework
 ms.service: Cognitive Services
 ms.date: 
-ms.reviewer: v-tosisk
+ms.reviewer: rstand
 
 # Include the following line commented out
 #ROBOTS: Index
@@ -18,20 +18,7 @@ ms.reviewer: v-tosisk
 
 
 # Add location control capabilities to your bot
-The Bing location control for Microsoft Bot Framework makes the process of collecting and validating the user's desired location in a conversation easy and reliable. The control is available for C# and Node.js and works consistently across all channels supported by Bot Framework.
 
-![Basic Scenario](media/skype_multiaddress_1.png)
-
-## Location control use cases for bots
-Bots often need the user to input a location to complete a task. For example, a Taxi bot requires the user's pickup and destination address before requesting a ride. Similarly, a Pizza bot must know the user's delivery address to submit the order, and so on. Normally, bot developers need to use a combination of location or place APIs so that their bots engage in a multi-turn dialog with users to get their desired location and subsequently validate it. Unfortunately, the development steps are usually complicated and error-prone.  
-
-The Bing location control makes this process easy by abstracting away the tedious coding steps to let the user pick a location and reliably validate it. The control offers the following capabilities:
-
-- Address look up and validation using Bing's Maps REST services
-- Address disambiguation when more than one address is found
-- Support for declaring required location fields
-- Support for FB Messenger's location picker GUI dialog
-- Open-source code (C# and Node.js) with customizable dialog strings
 
 You can find screenshots of the scenarios supported by the location control in the [Examples](#examples) section.
 
@@ -120,8 +107,8 @@ locationDialog.getLocation(session, options);
 You can specify required location fields that need to be collected by the control. If the user does not provide values for one or more required fields, the control will prompt him to fill them in. You can specify required fields by passing them in the location control's constructor using the 'LocationRequiredFields' enumeration. The example specifies the street address and postal (zip) code as required.
 
 
-[!code-js[Required Fields (C Sharp)](../includes/code/intelligence-location-control.cs#specifyingRequiredFields)]
-[!code-js[Required Fields (Javascript)](../includes/code/intelligence-location-control.js#specifyingRequiredFields)]
+[!code-js[Required Fields (C Sharp)](~/includes/code/intelligence-location-control.cs#specifyingRequiredFields)]
+[!code-js[Required Fields (Javascript)](~/includes/code/intelligence-location-control.js#specifyingRequiredFields)]
 
 ## Handling returned location
 
@@ -148,7 +135,7 @@ context.Call(locationDialog, (context, result) => {
 }
 ```
 
-[!code-js[sample](../includes/code/intelligence-location-control.js#handlingReturnedLocation)]
+[!code-js[sample](~/includes/code/intelligence-location-control.js#handlingReturnedLocation)]
 
 
 
@@ -157,16 +144,16 @@ The examples show different location selection scenarios supported by the Bing l
 
 **Address selection with single result returned**
 
-![Single Address](media/skype_singleaddress_2.png)
+![Single Address](~/media/skype_singleaddress_2.png)
 
 **Address selection with multiple results returned**
 
-![Multiple Addresses](media/skype_multiaddress_1.png)
+![Multiple Addresses](~/media/skype_multiaddress_1.png)
 
 **Address selection with required fields filling**
 
-![Required Fields](media/skype_requiredaddress_1.png)
+![Required Fields](~/media/skype_requiredaddress_1.png)
 
 **Address selection using FB Messenger's location picker GUI dialog**
 
-![Messenger Location Dialog](media/messenger_locationdialog_1.png)
+![Messenger Location Dialog](~/media/messenger_locationdialog_1.png)

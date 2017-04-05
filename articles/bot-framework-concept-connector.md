@@ -5,8 +5,8 @@ keywords: Bot Framework, connector, core concept, bot, web service
 author: DeniseMak
 manager: rstand
 ms.topic: key-concepts-article
-ms.prod: botframework
-ms.service: Bot Builder
+ms.prod: bot-framework
+
 ms.date: 02/14/2017
 ms.reviewer:
 #ROBOTS: Index
@@ -25,7 +25,7 @@ To use the Microsoft Bot Framework Connector Service, you must have:
 * An Azure-accessible REST endpoint exposing a callback for the Connector service.
 * Developer accounts on one or more communication services(such as Skype) where your Bot will communicate.
 
-See [Publish a bot](bot-framework-publish-overview.md) for the registration and deployment steps required to communicate with your bot using the connector.
+See [Publish a bot](~/publish-bot-overview.md) for the registration and deployment steps required to communicate with your bot using the connector.
 See Channels for an overview of the available conversation channels.
 
 ## Core principles
@@ -106,7 +106,7 @@ The BotAuthentication decoration on the method is used to validate your %Bot %Co
 > TODO: Add remaining links. 
 
 
-[Get Started](bot-framework-nodejs-getstarted.md)
+[Get Started](~/nodejs/getstarted.md)
 
 
 
