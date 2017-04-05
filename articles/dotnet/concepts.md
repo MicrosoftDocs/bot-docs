@@ -42,6 +42,18 @@ A conversation that comprises dialogs is portable across computers, which makes 
 For details about using dialogs within the Bot Builder SDK for .NET, see 
 [Dialogs](~/dotnet/dialogs.md).
 
+## FormFlow
+
+You can use FormFlow within the Bot Builder SDK for .NET to streamline the process of building a bot that 
+is designed to collect a specific set of information from the user. For example, you might use FormFlow to 
+create a bot that is designed to obtain a user's sandwich order. In this scenario, the bot 
+needs to collect several pieces of information from the user such as type of bread, choice of toppings, 
+size of sandwich, etc. 
+FormFlow can automatically generate the dialogs that are necessary to manage a guided conversation like this, 
+based upon guidelines that you specify. 
+
+For details about using FormFlow within the BotBuilder SDK for .NET, see [FormFlow](~/dotnet/formflow.md).
+
 ## State
 
 [!include[State concept overview](~/includes/snippet-dotnet-concept-state.md)]
@@ -58,7 +70,7 @@ transported over the wire.
 ## Security
 
 You should ensure that your bot's endpoint can only be called by the Bot Framework Connector service. 
-For more information on this topic, see [Security](~/dotnet/security.md).
+For more information on this topic, see [Secure your bot](~/dotnet/security.md).
 
 ## Additional resources
 
@@ -67,7 +79,7 @@ For more information on this topic, see [Security](~/dotnet/security.md).
 - [Activity types](~/dotnet/activities.md)
 - [Dialogs](~/dotnet/dialogs.md)
 - [Designing conversation flow](~/bot-design-conversation-flow.md)
-- [Security](~/dotnet/security.md)
+- [Secure your bot](~/dotnet/security.md)
 
 
 

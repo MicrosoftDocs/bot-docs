@@ -6,7 +6,6 @@ author: kbrandl
 manager: rstand
 ms.topic: publish-overview-article
 ms.prod: bot-framework
-
 ms.date:
 ms.reviewer: rstand
 #ROBOTS: Index

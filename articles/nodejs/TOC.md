@@ -1,6 +1,5 @@
-# [Overview](~/nodejs/index.md)
-## [Key concepts](~/nodejs/concepts.md)
-## [Create a bot with Node.js](~/nodejs/getstarted.md)
+# [Get started](~/nodejs/index.md)
+# [Key concepts](~/nodejs/concepts.md)
 # Send and receive messages
 ## [Use the default message handler](~/nodejs/use-default-message-handler.md) 
 ## [Send and receive attachments](~/nodejs/send-receive-attachments.md) 
@@ -18,4 +17,3 @@
 # [Support localization](~/nodejs/localization.md)
 # [Intercept messages](~/nodejs/middleware.md)
 # [Use backchannel mechanism](~/nodejs/backchannel.md)
-# [Resources](../resources/TOC.md)

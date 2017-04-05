@@ -63,8 +63,8 @@ Although you may be tempted to design every dialog within your bot to listen for
 this approach is not recommended. 
 
 > [!TIP]
-> <b>Do</b>: Implement [global message handlers](~/bot-design-capabilities.md#global-message-handlers) that will examine user input for the keywords that you specify (ex: "help", "cancel", "start over", etc.) 
-> and respond appropriately. 
+> <b>Do</b>: Implement global message handlers (using [.NET](~/dotnet/global-handlers.md) or 
+> [Node.js](~/nodejs/global-handlers.md)) that will examine user input for the keywords that you specify (ex: "help", "cancel", "start over", etc.) and respond appropriately. 
 > 
 > <b>Don't</b>: Design every dialog to examine user input for a list of keywords. 
 

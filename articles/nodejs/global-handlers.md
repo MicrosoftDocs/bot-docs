@@ -214,7 +214,6 @@ Your bot can also end a conversation by using an [endConversationAction][endConv
 ## Additional resources
 
 - [Designing conversation flow](~/bot-design-conversation-flow.md)
-- [Bot capabilities](~/bot-design-capabilities.md)
 
 <!--
 - [reloadAction][reloadAction]

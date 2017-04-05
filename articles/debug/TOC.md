@@ -1,0 +1,1 @@
+# [Debug with the emulator](../debug-bots-emulator.md)

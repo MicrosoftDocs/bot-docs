@@ -58,6 +58,3 @@ In this example, the bot simply prints some information about each message, but 
 update `logIncomingMessage` and `logOutgoingMessage` as necessary to define the actions that you want to take for each message. 
 
 
-## Additional resources
-
-- [Bot capabilities](~/bot-design-capabilities.md)
