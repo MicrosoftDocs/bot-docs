@@ -9,7 +9,7 @@
 ## [Use prompts with a waterfall](~/nodejs/prompts.md)
 ## [Save user data](~/nodejs/save-user-data.md)
 # Listen for commands
-## [Trigger actions using global handlers](~/nodejs/global-handlers.md)
+## [Listen for messages by using actions](~/nodejs/global-handlers.md)
 ## [Recognize user intent](~/nodejs/recognize-intent.md)
 # Handle events
 ## [Handle user and conversation events](~/nodejs/handle-conversation-events.md)

@@ -1,26 +1,35 @@
 ---
-title: Triggering actions | Microsoft Docs
-description: Learn how to implement trigger actions using global message handlers by using the Bot Builder SDK for Node.js.
-keywords: Bot Framework, trigger actions, node.js, Bot Builder, SDK, global handler, global message handler, message handler
+title: Listen for messages by using actions | Microsoft Docs
+description: Learn how trigger actions to implement global message handling using global message handlers in the Bot Builder SDK for Node.js.
+keywords: Bot Framework, trigger actions, listen, node.js, Bot Builder, SDK, global handler, global message handler, message handler
 author: kbrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 
 ms.date: 02/21/2017
-ms.reviewer:
+ms.reviewer: 
 #ROBOTS: Index
 ---
 
-# Triggering actions
+# Listen for messages by using actions
 
 
 [!include[Introduction to global message handlers](~/includes/snippet-global-handlers-intro.md)]
-This article describes how to implement actions, which are global message handlers. 
+This article describes how to implement actions, which are global message handlers in the Bot Builder SDK for Node.js. 
 
-Either user utterances or button clicks can trigger an action.
+Either user utterances or button clicks can *trigger* an action, which is associated with a [dialog](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html).
 If 'matches' is specifed, the action will listen for the user to say a word or a phrase that triggers the action.  
 Otherwise the action needs to be bound to a button click by using [CardAction.dialogAction()][ClickAction] to trigger the action.
+
+There are five types of actions.
+| Action | Description |
+|------|------|
+| [triggerAction](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#triggeraction) | Binds an action to the dialog that will make it the active dialog when it is triggered.|
+[cancelAction](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#cancelaction) | Binds an action to the dialog that cancels the dialog when it is triggered. |
+[reloadAction](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#reloadaction) | Binds an action to the dialog that causes the dialog to be reloaded when it is triggered. You can use **reloadAction** to handle user utterances like "start over". |
+[beginDialogAction](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#begindialogaction) | Binds an action to the dialog that starts another dialog when it is triggered. |
+[endConversationAction](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#endconversationaction) | Binds an action to the dialog that ends the conversation with the user when triggered. |
 
 ## Triggering a help dialog
 

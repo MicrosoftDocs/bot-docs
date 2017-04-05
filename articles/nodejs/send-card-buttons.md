@@ -1,6 +1,6 @@
 ---
-title: Send a rich card with buttons | Microsoft Docs
-description: Learn how to send and receive cards that contain buttons in a conversational application (bot).
+title: Send rich cards | Microsoft Docs
+description: Learn how to send and receive rich cards in a conversational application (bot). Rich cards may contain buttons and images.
 keywords: bot framework, bot, cards, rich card, buttons, send messages, image
 author: DeniseMak
 manager: rstand
@@ -12,16 +12,22 @@ ms.reviewer:
 #ROBOTS: Index
 ---
 
-# Send rich cards that contain buttons
+# Send rich cards
 
 
 Several channels, like Skype & Facebook, support sending rich graphical cards to users with interactive buttons that the user clicks to initiate an action. 
 The SDK provides a rich set of message and card builder classes which can be used to send cards in a cross-platform way. The Bot Framework Connector Service will render these cards using schema native to the channel.
 For channels that don’t support cards, like SMS, the Bot Framework will do its best to render a reasonable experience to users. 
 
+There are four types of rich cards.
+| Card type | Description |
+|------|------|
+|[HeroCard](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#reloadaction) | The Hero card typically contains a single large image, one or more buttons, and text. |
+|[ReceiptCard](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.receiptcard.html) | The Receipt card enables a bot to provide a receipt to the user. It typically contains the list of items to include on the receipt, tax and total information, and other text. |
+|[SigninCard](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.signincard.html) | The Sign-in card enables a bot to request that a user sign-in. It typically contains text and one or more buttons that the user can click to initiate the sign-in process. |
+|[ThumbnailCard](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.thumbnailcard.html) | The Thumbnail card typically contains a single small image, one or more buttons, and text.|
 
-
-## Example: Sending a carousel of cards
+## Example: Sending a carousel of Hero cards
 The following example shows a bot for a fictional t-shirt company and shows how to send a carousel of cards in response to the user saying “show shirts”. 
 
 ```javascript
