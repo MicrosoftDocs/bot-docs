@@ -210,7 +210,6 @@ to disambiguate between "cancel item" and "cancel order".
 ## Additional resources
 
 - [Designing conversation flow](~/bot-design-conversation-flow.md)
-- [Bot capabilities](~/bot-design-capabilities.md)
 
 <!--
 - [reloadAction][reloadAction]

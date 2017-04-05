@@ -17,3 +17,21 @@ that information with the user.
 > *Don't* send several proactive messages within a short amount of time. Some channels enforce restrictions on how frequently a bot can send messages to the user, and will disable the bot if it violates those restrictions.
 >
 > *Don't* send proactive messages to users who have not previously interacted with the bot or solicited contact with the bot through another means such as e-mail or SMS.
+
+Consider the following scenario:
+
+![how users talk](~/media/designing-bots/capabilities/proactive1.png)
+
+In this example, the user has previously asked the bot to monitor prices of a hotel in Las Vegas. 
+The bot launched a background monitoring task, which has been continuously running for the past several days. 
+In the current conversation, the user is booking a trip to London when  
+the background task triggers a notification message about a discount for the Las Vegas hotel.
+The bot interjects this information into the current conversation, making for a confusing user experience. 
+
+How should the bot have handled this situation? 
+
+- Wait for the current travel booking to finish, then deliver the notification. This approach would be minimally disruptive, but the delay in communicating the information might cause the user to miss out on the low-price opportunity for the Las Vegas hotel. 
+- Cancel the current travel booking flow and deliver the notification immediately. This approach delivers the information in a timely fashion but would likely frustrate the user by forcing them start over with their travel booking. 
+- Interrupt the current booking, change the topic of conversation to the hotel in Las Vegas until the user responds, and then switch back to the in-progress travel booking and continue from where it was interrupted. This approach may seem like the best choice, but it introduces complexity both for the bot developer and the user.
+
+Most commonly, your bot will use some combination of **ad hoc proactive messages** and **dialog-based proactive messages** to handle situations like this. 

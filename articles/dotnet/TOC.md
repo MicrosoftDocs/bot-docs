@@ -1,5 +1,5 @@
 # [Get started](~/dotnet/index.md)
-# [Core concepts](~/dotnet/concepts.md)
+# [Key concepts](~/dotnet/concepts.md)
 # [Understand activity types](~/dotnet/activities.md)
 # [Create messages](~/dotnet/create-messages.md)
 # [Add attachments to messages](~/dotnet/add-attachments.md)

@@ -1,6 +1,5 @@
 # [Principles of bot design](../bot-design-principles.md)
 # [First interaction](../bot-design-first-interaction.md)
-# [Bot capabilities](../bot-design-capabilities.md)
 # [Conversation flow](../bot-design-conversation-flow.md)
 # [Navigation](../bot-design-navigation.md)
 # [UX elements](../bot-design-user-experience.md)
