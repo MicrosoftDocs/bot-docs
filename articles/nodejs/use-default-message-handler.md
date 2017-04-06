@@ -60,7 +60,7 @@ For details about the template syntax, refer to the documentation for the [sprin
 
 
 
-# Additional resources
+## Additional resources
 
 * [session.send][SessionSend]
 * [sprintf][sprintf]
