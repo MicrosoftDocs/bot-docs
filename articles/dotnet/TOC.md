@@ -12,6 +12,7 @@
 # Dialogs
 ## [Understand dialogs](~/dotnet/dialogs.md)
 ## [Manage conversation flow](~/dotnet/manage-conversation-flow.md)
+## [Enable language understanding](~/dotnet/luis-dialogs.md)
 # FormFlow
 ## [Basic features of FormFlow](~/dotnet/formflow.md)
 ## [Advanced features of FormFlow](~/dotnet/formflow-advanced.md)
