@@ -1,4 +1,4 @@
-```cs
+// <echobot>
 [BotAuthentication]
 public class MessagesController : ApiController
 {
@@ -27,4 +27,4 @@ public class MessagesController : ApiController
         return response;
     }
 }
-```
+// </echobot>

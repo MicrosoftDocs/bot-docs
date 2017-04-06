@@ -42,7 +42,6 @@ Get started by completing the following prerequisite tasks:
 
 3. [Download](http://aka.ms/bf-bc-vstemplate) the Bot Application template
 and install the template by saving the .zip file to your Visual Studio 2017 project templates directory.  
-
 > [!TIP]
 > The Visual Studio 2017 project templates directory is typically located here:
 > `%USERPROFILE%\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\`
@@ -73,7 +72,7 @@ take a quick look at some of the code that the Bot Application template provided
 The `Post` method within **Controllers\MessagesController.cs** represents the
 core functionality of your bot.
 
-[!include[echobot code sample C#](~/includes/code/csharp-echobot.md)]
+[!code-csharp[echobot code sample C#](~/includes/code/dotnet-getstarted.cs#echobot)]
 
 This method receives a message from the user and creates a reply
 (by using the `CreateReply` function) that echos back the user's message,
