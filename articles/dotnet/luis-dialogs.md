@@ -12,9 +12,10 @@ ms.reviewer:
 #ROBOTS: Index
 ---
 
-# Enable language understanding by using LUIS
+# Enable language understanding with LUIS
 
-This article describes how to use <a href="https://www.luis.ai" target="_blank">LUIS</a> with dialogs to create an Alarm bot that a user can interact with using [natural language](~/intelligent-bots.md#language-understanding). 
+This article describes how to use <a href="https://www.luis.ai" target="_blank">LUIS</a> with dialogs to 
+create an Alarm bot that a user can interact with using [natural language](~/intelligent-bots.md#language-understanding). 
 
 ## Create the class
 
