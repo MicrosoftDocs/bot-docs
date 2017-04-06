@@ -1,6 +1,6 @@
 ---
-title: Understanding message handlers and dialogs| Microsoft Docs
-description: Learn how to start sending and receiving messages by using the default message handler in the Bot Builder SDK for Node.js.
+title: Respond to user messages | Microsoft Docs
+description: Learn how to start sending and receiving messages by using message handlers in the Bot Builder SDK for Node.js.
 keywords: Bot Framework, dialog, send messages, conversation flow, conversation, node.js, node, Bot Builder, SDK
 author: DeniseMak
 manager: rstand
@@ -11,17 +11,16 @@ ms.date: 03/31/2017
 ms.reviewer:
 #ROBOTS: Index
 ---
-# Manage conversation flow
+# Respond to user messages
 
-This article teaches you the basics of how to start managing conversation flow using message handlers and dialogs in your bot.
+This article teaches you the basics of how to start responding to user messages in your bot.
 
-## Using the default message handler
+## Use the default message handler
 
 The simplest way to start sending and receiving messages is by using the default message handler. 
 To do this, create a new [UniversalBot][UniversalBot] with a function to handle the messages received from a user, 
 and pass this object to your [ChatConnector][ChatConnector].
 
-## Respond to user messages
 
 ```javascript
 var restify = require('restify');
@@ -54,89 +53,20 @@ Your message handler takes a session object which can be used to read the user's
 The [session.send()][SessionSend] method, which sends a reply to the user who sent the message, supports a flexible template syntax for formatting strings.
 For details about the template syntax, refer to the documentation for the [sprintf][sprintf] library.
 
-The contents of messages aren't limited to text strings. 
-Your bot can [send and receive attachments][SendAttachments], as well as present the user with [rich cards][SendCardWithButtons] that contain images and buttons.
-
-## Invoke a root dialog
-
-Dialogs help you encapsulate your bot's conversational logic in manageable components. 
-The Bot Builder SDK provides Dialog objects that help you manage conversation flow. The following example shows 
-demonstrates how a bot invokes a "root dialog", instead of using the message handler passed to the bot's constructor, and then invokes a child dialog from the root dialog. 
-<!-- The following example shows how to wire the basic HTTP GET call to a controller and then invoke the root dialog. -->
-
-```javascript
-var server = restify.createServer();
-server.listen(process.env.port || process.env.PORT || 3978, function () { });
-
-var connector = new builder.ChatConnector({
-    appId: process.env.MICROSOFT_APP_ID,
-    appPassword: process.env.MICROSOFT_APP_PASSWORD
-});
-
-var bot = new builder.UniversalBot(connector);
-server.post('/api/messages', connector.listen());
-
-// root dialog
-bot.dialog('/', ...
-```
-
-### Invoke a child dialog from the root dialog
-
-Next, the root dialog invokes a 'New Order' dialog. 
-
-```javascript
-bot.dialog('/', new builder.IntentDialog()
-// Did the user type 'order'?
-.matchesAny([/order/i], [ 
-    function (session) {
-        // Invoke the new order dialog
-        session.beginDialog('/newOrder');
-    },
-
-    function (session, result) {
-        // Store the value that the new order dialog returns
-        var resultFromNewOrder = result.response;
-
-        session.send('New order dialog just told me this: %s', resultFromNewOrder);
-        // Close the root dialog
-        session.endDialog(); 
-    }
-])
-```
-
-
-## Dialog lifecycle
-
-When a dialog is invoked, it takes control of the conversation flow. 
-Every new message will be subject to processing by that dialog until it either closes or redirects to another dialog. 
-
-In Node, you can invoke one dialog from another by using `session.beginDialog()`. 
-To close a dialog and remove it from the stack (thereby sending the user back to the prior dialog in the stack), use `session.endDialog()`. 
-
-## Ending a conversation
-
-At any time you can end the current conversation with a user by calling session.endConversation(). 
-This will immediately end any active dialogs and reset everything but session.userData, ensuring that the user is returned to a clean state.
-
-It’s useful to give the user a way of ending the conversation themselves by saying a phrase like “goodbye”. 
-You can achieve this by adding an `endConversationAction()` to your bot.
-
-```javascript
-// Create bot and default message handler
-var bot = new builder.UniversalBot(connector, function (session) {
-    session.send("Hi... We sell shirts. Say 'show shirts' to see our products.");
-}).endConversationAction('goodbye', "Ok... See you next time.", { matches: /^goodbye/i });
-
-```
-
-
 ## Next steps
 
+* **Message handlers** - For a bot that's more complex that the previous example, you may want to use different forms of message handlers. You can add an *action* to a dialog to listen for user input as it occurs. See [Listen for messages using actions](global-handlers.md) for information on using actions in your bot. Another form is a *waterfall*, which is a common way to guide the user through a series of steps or prompt the user with a series of questions. See [Ask questions](prompts.md) for information on waterfalls.
+* **Attachments and cards** - The contents of messages aren't limited to text strings. Your bot can [send and receive attachments][SendAttachments], as well as present the user with [rich cards][SendCardWithButtons] that contain images and buttons.
+
+
+
+## Additional resources
+
+* [session.send][SessionSend]
+* [sprintf][sprintf]
 * [Send attachments][SendAttachments]
 * [Send cards][SendCardWithButtons]
-
 * [Ask questions](~/nodejs/prompts.md)
-
 * [Listen for messages using actions]( ~/nodejs/global-handlers.md)
 
 
