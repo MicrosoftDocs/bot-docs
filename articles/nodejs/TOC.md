@@ -1,11 +1,13 @@
 # [Get started](~/nodejs/index.md)
 # [Key concepts](~/nodejs/concepts.md)
-# Messages and Dialogs
-## [Manage conversation flow](~/nodejs/use-default-message-handler.md) 
+# Messages
+## [Respond to user messages](~/nodejs/use-default-message-handler.md) 
 ## [Send and receive attachments](~/nodejs/send-receive-attachments.md) 
 ## [Send a rich card](~/nodejs/send-card-buttons.md)
 ## [Send a typing indicator](~/nodejs/send-typing-indicator.md)
 ## [Use prompts with a waterfall](~/nodejs/prompts.md)
+# Dialogs
+## [Understand dialogs](~/nodejs/understand-dialogs.md)
 # State
 ## [Save user data](~/nodejs/save-user-data.md)
 # Actions
