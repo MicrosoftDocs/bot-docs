@@ -113,7 +113,7 @@ Next, go to **MessagesController.cs**, and add the following namespaces.
     using System.Threading.Tasks;
 ```
 
-Finally, on the same file, replace the code in the `Post` task with the one below.  
+Finally, in the same file, replace the code in the `Post` task with the one below.  
 
 ```cs
 
@@ -137,9 +137,7 @@ Finally, on the same file, replace the code in the `Post` task with the one belo
 ### Text Analytics example
 In this example, you will use the Text Analytics API to determine the sentiment behind a user's message, i.e. whether it is positive or negative. The Text Analytics API returns a sentiment score between 0 and 1, where 0 is very negative and 1 is very positive. For example, if the user types "That was really helpful", the API will classify it with a highly positive score, whereas a phrase like "That didn't help at all" will return a negative score. 
 
-The following example shows how the bot's response can be customized according to the sentiment score calculated by the Text Analytics API. For more information about the Text Analytics API, see the  <a href="https://text-analytics-demo.azurewebsites.net/Home/SampleCode" target="_blank">C# and Python sample code</a> for the service, or the  <a href="http://go.microsoft.com/fwlink/?LinkID=760860" target="_blank">Getting Started guide</a>.
-
-For this example, you will use the <a href="http://aka.ms/bf-bc-vstemplate" target="_blank">Bot Application .NET template</a> as a starting point. Note that the **Newtonsoft.JSON** package is also required, which can be obtained via <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">nuGet</a>. 
+The following example shows how the bot's response can be customized according to the sentiment score calculated by the Text Analytics API. You will use the <a href="http://aka.ms/bf-bc-vstemplate" target="_blank">Bot Application .NET template</a> as a starting point. Note that the **Newtonsoft.JSON** package is also required, which can be obtained via <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">nuGet</a>. 
 
 After you create your project with the Bot Application template, you will create some classes to hold the input and output from the API. First, create a new C# class file (**TextAnalyticsCall.cs**) with the following code. The class will serve as a model for the JSON input/output of the Text Analytics API.    
 
