@@ -14,9 +14,23 @@ ms.reviewer:
 
 # Listen for messages by using actions
 
+<!--
+[!include[Introduction to global message handlers](~/includes/snippet-global-handlers-intro.md)] -->
+Users commonly attempt to access certain functionality within a bot by using keywords like "help", "cancel", or "start over". 
+This often occurs in the middle of a conversation, when the bot is expecting a different response. 
+By implementing **actions**, you can design your bot to gracefully handle such requests.
+The handlers will examine user input for the keywords that you specify, such as "help", "cancel", or "start over", and respond appropriately. 
 
-[!include[Introduction to global message handlers](~/includes/snippet-global-handlers-intro.md)]
-This article describes how to implement actions, which are global message handlers in the Bot Builder SDK for Node.js. 
+![how users talk](~/media/designing-bots/capabilities/trigger-actions.png)
+
+<!-- TODO: The following note might only be true for trigger actions, not sure about other actions -->
+
+> [!NOTE]
+> By defining the logic in actions, you're making it accessible to all dialogs. 
+> Using this approach, individual dialogs and prompts can be made to safely ignore the keywords, if necessary.
+
+<!--
+This article describes how to implement actions, which are global message handlers in the Bot Builder SDK for Node.js. -->
 
 Either user utterances or button clicks can *trigger* an action, which is associated with a [dialog](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html).
 If 'matches' is specifed, the action will listen for the user to say a word or a phrase that triggers the action.  

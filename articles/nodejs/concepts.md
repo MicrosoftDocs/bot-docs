@@ -28,16 +28,18 @@ For an example that demonstrates using these classes, see [Create a bot with the
 
 The Connector also normalizes the messages that the bot sends to channels, so that you can develop your bot in a platform-agnostic way. Normalizing a message involves converting it from the Bot Framework’s schema into the channel’s schema. In cases where the channel does not support all aspects of the framework’s schema, the Connector will try to convert the message to a format that the channel supports. For example, if the bot sends a message that contains a card with action buttons to the SMS channel, the Connector may render the card as an image and include the actions as links in the message’s text. The [Channel Inspector][ChannelInspector] is a web tool that shows you how the Connector renders messages on various channels.
 
-## Messages and Dialogs
+## Messages
 
-Messages can consist of text strings, attachments, and rich cards. You use the [session.send][SessionSend] method to send messages in response to a message from the user. Your bot may call **send** as many times as it likes in response to a message from the user. Dialogs help you organize the conversational logic in your bot. For a guide to how to use dialogs and message handlers to manage conversation flow, see [Manage conversation flow](~/nodejs/manage-conversation-flow.md).
+Messages can consist of text strings, attachments, and rich cards. You use the [session.send][SessionSend] method to send messages in response to a message from the user. Your bot may call **send** as many times as it likes in response to a message from the user. For an example that demonstrates this, see [Respond to user messages][RespondMessages].
 
 For an example that demonstrates how to send a rich graphical card containing interactive buttons that the user clicks to initiate an action, see [Send a rich card](~/nodejs/send-card-buttons.md). For an example that demonstrates how to send and receive attachments, see [Send attachments](~/nodejs/send-receive-attachments.md).
 
+## Dialogs
+Dialogs help you organize the conversational logic in your bot and are fundamental to [designing conversation flow](../bot-design-conversation-flow.md). For an introduction to dialogs, see [Understand dialogs](~/nodejs/understand-dialogs.md).
 
 ## Actions
 You'll want to design your bot to be able to handle interruptions like requests for cancellation or help at any time during the conversation flow. The Bot Builder SDK for Node.js provides global message handlers that trigger actions like cancellation or the invokation of other dialogs. 
- See [Handling cancel](~/nodejs/manage-conversation-flow.md#handling-cancel), [Confirming interruptions](~/nodejs/manage-conversation-flow.md#confirming-interruptions) and [Trigger actions using global handlers](~/nodejs/global-handlers.md) for examples of how to use [triggerAction][triggerAction] handlers.
+ See <!--[Handling cancel](~/nodejs/manage-conversation-flow.md#handling-cancel), [Confirming interruptions](~/nodejs/manage-conversation-flow.md#confirming-interruptions) and-->[Listen for messages using actions](~/nodejs/global-handlers.md) for examples of how to use [triggerAction][triggerAction] handlers.
 
 
 ## Recognizers
@@ -55,7 +57,7 @@ Bots built using Bot Builder SDK are designed to be be stateless so that they ca
 * **userData** stores information globally for the user across all conversations.
 * **conversationData** stores information globally for a single conversation. This data is visible to everyone within the conversation so care should be used to what’s stored there. It’s disabled by default and needs to be enabled using the bots [persistConversationData][PersistConversationData] setting.
 * **privateConversationData** stores information globally for a single conversation but it is private data specific to the current user. This data spans all dialogs so it’s useful for storing temporary state that you want cleaned up when the conversation ends.
-* **dialogData** persists information for a single dialog instance. This is essential for storing temporary information in between the steps of a [waterfall](~/nodejs/manage-conversation-flow.md#ask-questions) in a dialog.
+* **dialogData** persists information for a single dialog instance. This is essential for storing temporary information in between the steps of a [waterfall](~/nodejs/prompts.md) in a dialog.
 
 See [Saving user data](~/nodejs/save-user-data.md) for an example that demonstrates how to save user data.
 
@@ -101,9 +103,10 @@ The following task-focused code samples demonstrate features of the Bot Builder 
 [SessionSend]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#send
 [SessionSendTyping]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#sendtyping
 [triggerAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#triggeraction
-[waterfall]:(../articles/~/nodejs/manage-conversation-flow.md#ask-questions)
-[SaveUserData]:(../articles/~/nodejs/save-user-data.md)
-[GetStarted]:(../articles/~/nodejs/getstarted.md)
+[waterfall]:(~/nodejs/prompts.md)
+[SaveUserData]:(~/nodejs/save-user-data.md)
+[GetStarted]:(~/nodejs/getstarted.md)
+[RespondMessages]:use-default-message-handler.md
 
 
 
