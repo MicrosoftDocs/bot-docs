@@ -61,7 +61,11 @@ Bots built using Bot Builder SDK are designed to be be stateless so that they ca
 
 See [Saving user data](~/nodejs/save-user-data.md) for an example that demonstrates how to save user data.
 
+## Intelligence
 
+Bot Builder lets you use LUIS to add natural language understanding to your bot using the [LuisRecognizer][LuisRecognizer] class. You can add an instance of a **LuisRecognizer** that references your published language model and then add handlers to take actions in response to the user's utterances. To see LUIS in action watch the following 10 minute tutorial:
+
+* [Microsoft LUIS Tutorial][LUISVideo] (video)
 
 ## Additional Resources
 
@@ -107,6 +111,9 @@ The following task-focused code samples demonstrate features of the Bot Builder 
 [SaveUserData]:(~/nodejs/save-user-data.md)
 [GetStarted]:(~/nodejs/getstarted.md)
 [RespondMessages]:use-default-message-handler.md
+
+[LUISRecognizer]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.luisrecognizer
+[LUISVideo]: https://vimeo.com/145499419
 
 
 
