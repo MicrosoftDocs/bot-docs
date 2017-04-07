@@ -29,11 +29,13 @@ The handlers will examine user input for the keywords that you specify, such as 
 > By defining the logic in actions, you're making it accessible to all dialogs. 
 > Using this approach, individual dialogs and prompts can be made to safely ignore the keywords, if necessary.
 
-<!--
-This article describes how to implement actions, which are global message handlers in the Bot Builder SDK for Node.js. -->
+
+
+
+<!-- matches -->
 
 Either user utterances or button clicks can *trigger* an action, which is associated with a [dialog](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html).
-If 'matches' is specifed, the action will listen for the user to say a word or a phrase that triggers the action.  
+If 'matches' is specifed, the action will listen for the user to say a word or a phrase that triggers the action.  The 'matches' method can take a regular expression or the name of a [recognizer][RecognizeIntent].
 Otherwise the action needs to be bound to a button click by using [CardAction.dialogAction()][ClickAction] to trigger the action.
 
 There are five types of actions.
@@ -120,7 +122,7 @@ bot.dialog('buyButtonClick', [ ... waterfall steps ... ])
 ```
 
 
-The cancel action's confirmPrompt will be used anytime the user says “cancel” and the trigger action's confirmPrompt will be used anytime another dialog 
+The cancel action's confirmPrompt is used any time the user says “cancel” and the trigger action's confirmPrompt will be used any time another dialog 
 is triggered (including the ‘buyButtonClick’ dialog itself) and attempts to interrupt the dialog. 
 
 ## Trigger the reload of a dialog
@@ -230,12 +232,18 @@ to disambiguate between "cancel item" and "cancel order".
 Should this be moved to where we discuss dialogs stacks
 -->
 
-You may notice that within the previous examples, the [endConversation][EndConversation] method ends the conversation when the user's task is completed. The *endConversation* method not only clears the dialog stack, it also clears the [session.privateConversationData][PrivateConversationData] variable that is persisted to storage. That means you can use **privateConversationData** to save state relative to the current task. As long as you call **endConversation** when the task is completed all of this state is automatically cleaned up.
+You may notice that within the previous examples, the [endConversation][EndConversation] method ends the conversation when the user's task is completed. The **endConversation** method not only clears the dialog stack, it also clears the [session.privateConversationData][PrivateConversationData] variable that is persisted to storage. That means you can use **privateConversationData** to save state relative to the current task. As long as you call **endConversation** when the task is completed all of this state is automatically cleaned up.
 
 Your bot can also end a conversation by using an [endConversationAction][endConversationAction].
 
+## Next steps
+
+The examples in this topic demonstrated how to bind actions to dialogs using regular expressions in a 'matches' clause. See [Recognize intent][RecognizeIntent] to learn how to specify recognizers in a 'matches' clause instead of using regular expressions.
+
+
 ## Additional resources
 
+- [matches][matches]
 - [Designing conversation flow](~/bot-design-conversation-flow.md)
 
 <!--
@@ -249,3 +257,5 @@ Your bot can also end a conversation by using an [endConversationAction][endConv
 [reloadAction]: (https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#reloadaction)
 
 [PrivateConversationData]: (https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#privateconversationdata)
+
+[RecognizeIntent]: recognize-intent.md
