@@ -2,7 +2,7 @@
 ## [What is the Bot Framework](framework-overview.md)
 ## [How Bot Framework works](overview-how-bot-framework-works.md)
 ## [Make bots smarter](~/intelligent-bots.md)
-# [Get started](bot-framework-botbuilder-overview.md)
+# [Get started](bot-builder-overview-getstarted.md)
 ## [Create your first bot with .NET](~/dotnet/getstarted.md)
 ## [Create your first bot with Node.js](~/nodejs/getstarted.md)
 ## [Create your first bot with Azure Bot Service](~/azure-bot-service/getstarted.md)

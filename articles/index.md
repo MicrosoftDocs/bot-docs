@@ -32,7 +32,26 @@ description:
                                         </div>
                                         <div class="cardText">
                                             <h3>Introduction to the Bot Framework</h3>
-                                            <p>Learn about the Bot Framework and how it can help you build powerful bots.</p>
+                                            <p>Learn about the Bot Framework and how it can help you build smart and powerful bots.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/botframework/bot-builder-overview-getstarted">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage bgdAccent1">
+                                                <img src="/media/hubs/botframework/bot-framework-overview-get-started.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Get started with bots</h3>
+                                            <p>Create your first bot in 5 minutes using .NET, Node.js, or Azure Bot Service.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -46,31 +65,12 @@ description:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/botframework/bot-framework-overview-get-started.svg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="cardText">
-                                            <h3>Get started with bots</h3>
-                                            <p>Learn about building, deploying, and publishing bots.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/botframework/bot-framework-concepts-overview">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/botframework/bot-framework-overview-concepts.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
                                             <h3>Key concepts</h3>
-                                            <p>Explore the core concepts of building  bots with the Bot Framework SDK.</p>
+                                            <p>Explore the core concepts of building, deploying, and publishing bots with the Bot Framework SDK.</p>
                                         </div>
                                     </div>
                                 </div>

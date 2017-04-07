@@ -34,7 +34,7 @@ Bots are rapidly becoming an integral part of digital experiences. They are beco
 Developers writing bots all face the same problems: bots require basic I/O, they must have language and dialog skills, and they must connect to users, preferably in any conversation experience and language the user chooses. The Bot Framework provides a powerful set of tools to help solve these problems.
 
 ### Bot Builder
-To help you build your bot, the Bot Framework includes [Bot Builder](bot-framework-botbuilder-overview.md), which provides rich and full-featured SDKs for the .NET and Node.js platforms. The SDKs provide features that make interactions between bots and users much simpler. Bot Builder also includes an emulator for debugging your bots, as well as a large set of sample bots you can use as building blocks. 
+To help you build your bot, the Bot Framework includes [Bot Builder](bot-builder-overview-getstarted.md), which provides rich and full-featured SDKs for the .NET and Node.js platforms. The SDKs provide features that make interactions between bots and users much simpler. Bot Builder also includes an emulator for debugging your bots, as well as a large set of sample bots you can use as building blocks. 
 
 In addition to Bot Builder, you can create bots using the [Azure Bot Service](~/azure-bot-service/overview.md) or the REST API.
 
@@ -56,7 +56,7 @@ The Bot Directory is a public directory of bots registered and published with th
 To give your bot more human-like senses, you can take advantage of  Microsoft Cognitive Services to add smart features like natural language understanding, image recognition, speech, and more. [Learn more](~/intelligent-bots.md) about adding intelligence to your bot.
 
 ## Next Steps
-Dive deeper into [the capabilities](overview-how-bot-framework-works.md) of the Bot Framework. Get started  [building your first bot](bot-framework-botbuilder-overview.md) and learn more about [designing great bots](~/bot-design-principles.md).
+Dive deeper into [the capabilities](overview-how-bot-framework-works.md) of the Bot Framework. Get started  [building your first bot](bot-builder-overview-getstarted.md) and learn more about [designing great bots](~/bot-design-principles.md).
 
 [NodeGetStarted]:~/nodejs/getstarted.md
 [DotNETGetStarted]:~/dotnet/getstarted.md
