@@ -1,7 +1,7 @@
 ---
-title: Debug locally with VSCode | Microsoft Docs
-description: Learn how to use VSCode to debug a bot built using the Bot Builder SDK.
-keywords: Bot Framework, debug, VSCode Bot Builder, SDK
+title: Debug locally with Visual Studio Code | Microsoft Docs
+description: Learn how to use Visual Studio Code to debug a bot built using the Bot Builder SDK.
+keywords: Bot Framework, debug, VSCode, Visual Studio Code, Bot Builder, SDK
 author: DeniseMak
 manager: rstand
 ms.topic: article
@@ -15,7 +15,14 @@ ms.reviewer:
 
 
 ## Overview
-If you want to debug your bot, you can use the [Bot Framework Emulator](~/debug-bots-emulator.md). Another option is to install [VSCode](https://code.visualstudio.com/) and use the [ConsoleConnector][ConsoleConnector] class to debug your bot by running it in a console window. This guide will walk you through that process.
+If you want to debug your bot, you can use the [Bot Framework Emulator](~/debug-bots-emulator.md). Another option is to use the debugger that comes with [Visual Studio Code](https://code.visualstudio.com/). 
+
+> [!NOTE]
+> Visual Studio Code has built-in debugging support for the Node.js runtime. 
+> This article guides you through debugging a bot built with Node.js. For debugging other languages, 
+> the [VS Code documentation][VSCodeDebug] provides information about installing extensions. 
+
+If you're developing your bot using Node.js, you can use the [ConsoleConnector][ConsoleConnector] class to debug your bot by running it in a console window. This guide will walk you through that process.
 
 ## Launch VSCode
 For purposes of this walkthrough we’ll use the [ConsoleConnector](https://github.com/Microsoft/BotBuilder/tree/master/Node/examples/hello-ConsoleConnector) example from the Bot Builder SDK. After you install VSCode on your machine, open your bot's project in VSCode by using **Open Folder** in the File menu.
@@ -49,3 +56,5 @@ You can communicate with your bot from the console window. Try switching back to
 ![Step 5: Debug Bot](~/media/debug-vscode/builder-debug-step5.png)
 
 [ConsoleConnector]: (https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.consoleconnector.html)
+
+[VSCodeDebug]: (https://code.visualstudio.com/docs/editor/debugging)
