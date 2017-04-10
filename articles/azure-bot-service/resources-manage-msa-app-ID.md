@@ -17,9 +17,9 @@ ms.reviewer:
 Azure Bot Service is powered by Microsoft Bot Framework, which requires an app ID and password to work. If you create a bot by using the Azure Bot Service templates, you will be asked to generate an MSA app ID and password during the creation flow (see Creating your first bot). The MSA app ID and password are saved to the following application settings keys:
 - MicrosoftAppId
 - MicrosoftAppPassword
-There may be cases when you will need to generate a new password (for example, if you think your secret has been compromised). The easiest way to do it, is to use the Bot Framework Developer portal. The following shows how to do that.
+There may be cases when you will need to generate a new password (for example, if you think your secret has been compromised). The easiest way to do it is to use the Bot Framework Developer portal. The following shows how to do that.
 
-##Create a new password and updating your bot configuration
+## Create a new password and updating your bot configuration
 To create a new password, follow these steps:
 1. Go to the Bot Framework Developer portal, find your bot under My bots, and open it.
 2. Click **Edit** in the **Details** panel. ![msa password update devportal dashboard](~/media/msa-password-update-devportal-dashboard.png) 
