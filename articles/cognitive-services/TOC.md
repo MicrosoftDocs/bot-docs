@@ -1,1 +1,6 @@
-ls -a ../cognitive-services-add-bot
+# [Add language understanding](~/cognitive-services-add-bot-language.md)
+# [Add knowledge extraction](~/cognitive-services-add-bot-knowledge.md)
+# [Add speech recognition](~/cognitive-services-add-bot-speech.md)
+# [Add search](~/cognitive-services-add-bot-search.md)
+# [Add image recognition](~/cognitive-services-add-bot-vision.md)
+# [Add location control](~/cognitive-services-add-bot-location-control.md)
