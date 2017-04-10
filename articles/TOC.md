@@ -14,8 +14,8 @@
 ### [.NET](dotnet/TOC.md)
 ### [Node.js](nodejs/TOC.md)
 ### [Azure Bot Service](azure/TOC.md)
-### [Add intelligence](cognitive-services/TOC.md)
 ### REST API
+### [Intelligence](cognitive-services/TOC.md)
 ## [Debug](debug/TOC.md)
 ## [Deploy](deploy/TOC.md)
 ## [Manage](manage/TOC.md)
