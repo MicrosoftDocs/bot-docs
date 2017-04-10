@@ -6,7 +6,7 @@ author: kbrandl
 manager: rstand
 ms.topic: bot-service-get-started-article
 ms.prod: bot-framework
-ms.service: Azure Bot Service
+
 ms.date: 
 ms.reviewer: rstand@microsoft.com
 #ROBOTS: Index
