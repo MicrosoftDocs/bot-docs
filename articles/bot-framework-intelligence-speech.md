@@ -11,32 +11,28 @@ ms.service: Cognitive Services
 ms.date: 
 ms.reviewer: rstand
 
-# Include the following line commented out
 #ROBOTS: Index
-
 ---
-
 
 # Add speech recognition and conversion to your bot
 
-
 > [!TIP]
-> You can find detailed documentation, developer guides, and API references on the Cognitive Services <a href="https://www.microsoft.com/cognitive-services/en-us/documentation" target="_blank">documentation site</a> and then on the left selecting the API you are interested in.
+> You can find detailed documentation, developer guides, and API reference for Cognitive Services on the <a href="https://www.microsoft.com/cognitive-services/en-us/documentation" target="_blank">Cognitive Services documentation site</a>.
 
 ## Speech API examples for bots
+
 The Speech APIs enable your bots to parse audio and extract useful information from voice input. For example, bots can identify the presence of certain words or access the transcribed text to perform an action. 
-
-On messaging channels that support voice input, bots can leverage the Speech APIs to recognize what users are saying, rather than relying on text messages. 
-
-The Speaker Recognition APIs can be used as a means to identify or even authenticate users through their unique voiceprint.
+On messaging channels that support voice input, bots can leverage the Speech APIs to recognize what users are saying, rather than relying on text messages. The Speaker Recognition APIs can be used as a means to identify or even authenticate users through their unique voiceprint.
 
 > [!IMPORTANT]
-> Before you get started, you need to obtain your own subscription key from the Microsoft Cognitive Services site. The <a href="https://www.microsoft.com/cognitive-services/en-us/speech-api/documentation/getstarted/getstartedcsharpdesktop" target="_blank">Getting Started</a> guide for the Speech API describes how to obtain the key and start making calls to the APIs.
+> Before you get started, you must obtain your own subscription key from the Microsoft Cognitive Services site. The <a href="https://www.microsoft.com/cognitive-services/en-us/speech-api/documentation/getstarted/getstartedcsharpdesktop" target="_blank">Getting Started</a> guide for the Speech API describes how to obtain the key and start making calls to the APIs.
 
 ### Speech-To-Text example
-In this example, you will build a simple bot that leverages the Speech API to perform speech-to-text conversion. This bot receives an audio file and either responds with the transcribed text or provides some interesting information about the audio it received, such as word, character and vowel count. This example will use the <a href="http://docs.botframework.com/connector/getstarted/#getting-started-in-net" target="_blank">Bot Application .NET template</a> as a starting point. Note that this example requires the **Newtonsoft.JSON** package, which can be obtained via <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">nuGet</a>.
 
-After you create your project with the Bot Application template, add the **Newtonsoft.JSON** package, and then open the **MessagesController.cs** file. Start by adding the following namespaces.
+In this example, you will build a simple bot that leverages the Speech API to perform speech-to-text conversion. This bot receives an audio file and either responds with the transcribed text or provides some interesting information about the audio it received, such as word, character and vowel count. This example will use the <a href="http://docs.botframework.com/connector/getstarted/#getting-started-in-net" target="_blank">Bot Application .NET template</a> as a starting point. Note that this example requires the `Newtonsoft.JSON` package, which can be obtained via <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">NuGet</a>.
+
+After you create your project with the Bot Application template, add the `Newtonsoft.JSON` package. 
+Next, go to **MessagesController.cs** and add the following namespaces.
 
 ```cs
 using System.IO;
@@ -51,7 +47,7 @@ using System.ComponentModel;
 using Newtonsoft.Json.Linq;
 ```
 
-Next, you will add required classes to handle the access token and authentication for the Speech API.
+In the same file, add required classes to handle the access token and authentication for the Speech API.
 
 ```cs
 [DataContract]
@@ -76,7 +72,7 @@ public class Authentication
     private AccessTokenInfo token;
     private Timer accessTokenRenewer;
 
-    //Access token expires every 10 minutes. Renew it every 9 minutes only.
+    // Access token expires every 10 minutes. Renew it every 9 minutes only.
     private const int RefreshTokenDuration = 9;
 
     public Authentication(string clientId, string clientSecret)
@@ -84,7 +80,7 @@ public class Authentication
         this.clientId = clientId;
         this.clientSecret = clientSecret;
 
-        //If clientid or client secret has special characters, encode before sending request
+        // If clientid or client secret has special characters, encode before sending request
         this.request = string.Format("grant_type=client_credentials&client_id={0}&client_secret={1}&scope={2}",
                                           HttpUtility.UrlEncode(clientId),
                                           HttpUtility.UrlEncode(clientSecret),
@@ -92,31 +88,31 @@ public class Authentication
 
         this.token = HttpPost(AccessUri, this.request);
 
-        // renew the token every specfied minutes
+        // Renew the token every specfied minutes
         accessTokenRenewer = new Timer(new TimerCallback(OnTokenExpiredCallback),
                                        this,
                                        TimeSpan.FromMinutes(RefreshTokenDuration),
                                        TimeSpan.FromMilliseconds(-1));
     }
 
-    //Return the access token
+    // Return the access token
     public AccessTokenInfo GetAccessToken()
     {
         return this.token;
     }
 
-    //Renew the access token
+    // Renew the access token
     private void RenewAccessToken()
     {
         AccessTokenInfo newAccessToken = HttpPost(AccessUri, this.request);
-        //swap the new token with old one
-        //Note: the swap is thread unsafe
+        // Swap the new token with old one
+        // Note: the swap is thread unsafe
         this.token = newAccessToken;
         Console.WriteLine(string.Format("Renewed token for user: {0} is: {1}",
                           this.clientId,
                           this.token.access_token));
     }
-    //Call-back when we determine the access token has expired
+    // Call-back when we determine the access token has expired
     private void OnTokenExpiredCallback(object stateInfo)
     {
         try
@@ -140,10 +136,10 @@ public class Authentication
         }
     }
 
-    //Helper function to get new access token
+    // Helper function to get new access token
     private AccessTokenInfo HttpPost(string accessUri, string requestDetails)
     {
-        //Prepare OAuth request
+        // Prepare OAuth request
         WebRequest webRequest = WebRequest.Create(accessUri);
         webRequest.ContentType = "application/x-www-form-urlencoded";
         webRequest.Method = "POST";
@@ -156,19 +152,17 @@ public class Authentication
         using (WebResponse webResponse = webRequest.GetResponse())
         {
             DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(AccessTokenInfo));
-            //Get deserialized object from JSON stream
+            // Get deserialized object from JSON stream
             AccessTokenInfo token = (AccessTokenInfo)serializer.ReadObject(webResponse.GetResponseStream());
             return token;
         }
     }
 }
-
 ```
 
 Next, write the function that implements the speech-to-text conversion. Note that the function requires a working Speech API key, which can be obtained via your Cognitive Services <a href="https://www.microsoft.com/cognitive-services/en-US/subscriptions" target="_blank">subscription page</a>.
 
 ```cs
-
 private string DoSpeechReco(Attachment attachment)
 {
     AccessTokenInfo token;
@@ -178,7 +172,7 @@ private string DoSpeechReco(Attachment attachment)
     Authentication auth = new Authentication("YOURUSERID", "<YOUR API KEY FROM MICROSOFT.COM/COGNITIVE");
     string requestUri = "https://speech.platform.bing.com/recognize";
 
-    //URI Params. Refer to the Speech API documentation for more information.
+    // URI Params. Refer to the Speech API documentation for more information.
     requestUri += @"?scenarios=smd";                                // websearch is the other main option.
     requestUri += @"&appid=D4D52672-91D7-4C74-8AD8-42B1D98141A5";   // You must use this ID.
     requestUri += @"&locale=en-US";                                 // read docs, for other supported languages.
@@ -198,7 +192,7 @@ private string DoSpeechReco(Attachment attachment)
         token = auth.GetAccessToken();
         Console.WriteLine("Token: {0}\n", token.access_token);
 
-        //Create a header with the access_token property of the returned token
+        // Create a header with the access_token property of the returned token
         headerValue = "Bearer " + token.access_token;
         Console.WriteLine("Request Uri: " + requestUri + Environment.NewLine);
 
@@ -227,7 +221,7 @@ private string DoSpeechReco(Attachment attachment)
                 // Flush
                 requestStream.Flush();
             }
-            //Get the response from the service.
+            // Get the response from the service.
             Console.WriteLine("Response:");
             using (WebResponse response = request.GetResponse())
             {
@@ -250,7 +244,7 @@ private string DoSpeechReco(Attachment attachment)
 }
 ```
 
-Finally, replace the code in the `Post` task with the one below. The code parses the voice attachment sent to the bot, calls the speech-to-text conversion function, and then responds back to the user with the transcribed text and related metadata (such as character or word count) for the user's request.  
+Finally, replace the code in the `Post` task with this code, which parses the voice attachment sent to the bot, calls the speech-to-text conversion function, and then responds back to the user with the transcribed text and related metadata (such as character or word count) for the user's request.  
 
 ```cs
 public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
@@ -305,17 +299,15 @@ public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
     var response = Request.CreateResponse(HttpStatusCode.OK);
     return response;
 }
-
 ```
 
 ### Speaker recognition example
-For this example, you will build a bot that leverages the Speaker Recognition API. The code allows you to use voice for authentication scenarios. The bot receives the audio file, compares it against the sender’s voiceprint, and then responds back with an accept or reject decision as well as a confidence score. This example will use the <a href="http://docs.botframework.com/connector/getstarted/#getting-started-in-net)" target="_blank">Bot Application .NET template</a> as a starting point. Note that the example requires the **Microsoft.ProjectOxford.SpeakerRecognition** package, which can be obtained via <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">nuGet</a>.
+
+For this example, you will build a bot that leverages the Speaker Recognition API. The code allows you to use voice for authentication scenarios. The bot receives the audio file, compares it against the sender’s voiceprint, and then responds back with an accept or reject decision as well as a confidence score. This example will use the <a href="http://docs.botframework.com/connector/getstarted/#getting-started-in-net)" target="_blank">Bot Application .NET template</a> as a starting point. Note that the example requires the `Microsoft.ProjectOxford.SpeakerRecognition` package, which can be obtained via <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">NuGet</a>.
 
 Before you begin, you need to enroll your voice by saying one of the <a href="https://dev.projectoxford.ai/docs/services/563309b6778daf02acc0a508/operations/5652c0801984551c3859634d" target="_blank">preselected passphrases</a>. The Speaker Verification service requires at least 3 enrollments, so the bot will ask for three enrollment audio files, and send a confirmation when the enrollment is completed.
 
-After you create your project with the Bot Application template, add the **Microsoft.ProjectOxford.SpeakerRecognition** package, and then open the **MessagesController.cs** file. 
-
-Start by adding the following namespaces.
+After you create your project with the Bot Application template, add the `Microsoft.ProjectOxford.SpeakerRecognition` package. Next, go to **MessagesController.cs** and add the following namespaces.
 
 ```cs
 using System;
@@ -341,7 +333,7 @@ ISpeakerVerificationServiceClient client = new SpeakerVerificationServiceClient(
 Profile profile = null;
 ```
 
-Finally, replace the code in the `Post` task with the one below. The code parses the voice attachment sent to the bot, calls the speaker verification service, and then responds back to the user with an accept or reject decision along with the confidence score.  
+Finally, replace the code in the `Post` task with this code, which parses the voice attachment sent to the bot, calls the speaker verification service, and then responds back to the user with an accept or reject decision along with the confidence score.  
 
 ```cs
 public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
@@ -350,7 +342,7 @@ public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
 
     if (activity == null || activity.GetActivityType() != ActivityTypes.Message)
     {
-        //add code to handle errors, or non-messaging activities
+        // Add code to handle errors, or non-messaging activities
     }
 
     string replyString = "";
@@ -397,7 +389,7 @@ public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
             replyString += ", \"" + phrase.Phrase + "\"";
         }
     }
-    // return our reply to the user
+    // Return our reply to the user
     Activity reply = activity.CreateReply(replyString);
     await connector.Conversations.ReplyToActivityAsync(reply);
     var response = Request.CreateResponse(HttpStatusCode.OK);

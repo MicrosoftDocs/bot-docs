@@ -11,15 +11,13 @@ ms.service: Cognitive Services
 ms.date: 
 ms.reviewer: rstand
 
-# Include the following line commented out
 #ROBOTS: Index
-
 ---
-
 
 # Add image and video understanding to your bot
 
 ## Vision API examples for bots
+
 The Vision APIs are useful for any bot that receives images as input from users and wants to distill actionable information from them. Here are a few examples:
 
 - You can use the Computer Vision API to understand images of common objects or people. For example, <a href="https://www.captionbot.ai/" target="_blank">CaptionBot.ai</a> is using the Computer Vision API to identify people (such as celebrities or friends), to generate a human-readable caption of the image.
@@ -27,11 +25,12 @@ The Vision APIs are useful for any bot that receives images as input from users 
 - You can use the Emotion API to identify people's emotions. For example, if a user uploads a sad selfie, the bot can reply with an appropriate message about why he or she is sad.
 
 > [!IMPORTANT]
-Before you get started with these examples, you need to obtain your own subscription key from the <a href="https://www.microsoft.com/cognitive-services/" target="_blank">Microsoft Cognitive Services</a>. 
+Before you get started with these examples, you must obtain your own subscription key from the <a href="https://www.microsoft.com/cognitive-services/" target="_blank">Microsoft Cognitive Services</a>. 
 
 
 ### Vision API example
-In this example, you will build a simplified version of CaptionBot.ai. The Vision Bot can receive an image, either as an attachment or url, and then return a computer-generated caption of the image via the Computer Vision API. You can download the <a href="http://aka.ms/bf-bc-vstemplate" target="_blank">Bot Application .NET template</a> to you as a starting point.
+
+In this example, you will build a simplified version of CaptionBot.ai. The Vision Bot can receive an image, either as an attachment or url, and then return a computer-generated caption of the image via the Computer Vision API. You can download the <a href="http://aka.ms/bf-bc-vstemplate" target="_blank">Bot Application .NET template</a> to use as a starting point.
 
 ```html
 <div align="center">
@@ -42,25 +41,23 @@ In this example, you will build a simplified version of CaptionBot.ai. The Visio
 </div>
 ```
 
-After you create your project with the Bot Application .NET template, install the **Microsoft.ProjectOxford.Vision** package from <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">nuGet</a>. Next, go to `MessagesController.cs` class file and add the following namespaces.
+After you create your project with the Bot Application .NET template, install the `Microsoft.ProjectOxford.Vision` package from <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">NuGet</a>. 
+Next, go to **MessagesController.cs** and add the following namespaces.
 
 ```cs
-
 using Microsoft.ProjectOxford.Vision;
 using Microsoft.ProjectOxford.Vision.Contract;
 using System.IO;
 using System.Web;
-
 ```
 
-In the same file, replace the code in the 'Post' task with the one in the snippet below. The code initializes the Computer Vision SDK classes that take care most of the hard work.  
+In the same file, replace the code in the `Post` task with this code, which initializes the Computer Vision SDK classes that handle most of the hard work.  
 
 ```cs
-
 ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
 const string visionApiKey = "<YOUR API KEY FROM MICROSOFT.COM/COGNITIVE>";
 
-//Vision SDK classes
+// Vision SDK classes
 VisionServiceClient visionClient = new VisionServiceClient(visionApiKey);
 VisualFeature[] visualFeatures = new VisualFeature[] {
                                         VisualFeature.Adult, //recognize adult content
@@ -70,19 +67,18 @@ VisualFeature[] visualFeatures = new VisualFeature[] {
 AnalysisResult analysisResult = null;
 ```
 
-Continue by adding the code below that reads the image sent by the user as an attachment or url and sends it to the Computer Vision API for analysis.   
+Next, add this code, which reads the image sent by the user as an attachment or url and sends it to the Computer Vision API for analysis.   
 
 ```cs
-
 if (activity == null || activity.GetActivityType() != ActivityTypes.Message)
 {
-    //add code to handle errors, or non-messaging activities
+    // Add code to handle errors, or non-messaging activities
 }
 
-//If the user uploaded an image, read it, and send it to the Vision API
+// If the user uploaded an image, read it, and send it to the Vision API
 if (activity.Attachments.Any() && activity.Attachments.First().ContentType.Contains("image"))
 {
-   //stores image url (parsed from attachment or message)
+   // Stores image url (parsed from attachment or message)
    string uploadedImageUrl = activity.Attachments.First().ContentUrl; ;
    uploadedImageUrl = HttpUtility.UrlDecode(uploadedImageUrl.Substring(uploadedImageUrl.IndexOf("file=") + 5));
 
@@ -94,11 +90,11 @@ if (activity.Attachments.Any() && activity.Attachments.First().ContentType.Conta
        }
        catch (Exception e)
        {
-            analysisResult = null; //on error, reset analysis result to null
+            analysisResult = null; // on error, reset analysis result to null
        }
    }
 }
-//Else, if the user did not upload an image, determine if the message contains a url, and send it to the Vision API
+// Else, if the user did not upload an image, determine if the message contains a url, and send it to the Vision API
 else
 {
     try
@@ -107,17 +103,16 @@ else
     }
     catch (Exception e)
     {
-        analysisResult = null; //on error, reset analysis result to null
+        analysisResult = null; // on error, reset analysis result to null
     }
 }           
 ```
 
-Finally, add the following code to read the analysis results from the Computer Vision API and respond to the user.
+Finally, add this code to read the analysis results from the Computer Vision API and respond to the user.
 
 ```cs
-
 Activity reply = activity.CreateReply("Did you upload an image? I'm more of a visual person. " +
-                                      "Try sending me an image or an image url"); //default reply
+                                      "Try sending me an image or an image url"); // default reply
 
 if (analysisResult != null)
 {
@@ -126,13 +121,14 @@ if (analysisResult != null)
 }
 await connector.Conversations.ReplyToActivityAsync(reply);
 return new HttpResponseMessage(System.Net.HttpStatusCode.Accepted);
-
 ```
 
 ### Emotion API example
-In this example, you will build an Emotion Bot that receives an image url, detects if there's at least one face in the image, and finally responds back with the dominant emotion of that face. To keep the example simple, the bot will return the emotion for only one face, and ignore other faces in the image. The example requires the **Microsoft.ProjectOxford.Emotion** package, which can be obtained using <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">nuGet</a>.
 
-Create a new project by downloading the <a href="http://aka.ms/bf-bc-vstemplate" target="_blank">Bot Application .NET template</a>. Install the **Microsoft.ProjectOxford.Emotion** package from <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">nuGet</a>. Next, go to **MessagesController.cs** class file and add the following namespaces.
+In this example, you will build an Emotion Bot that receives an image url, detects if there's at least one face in the image, and finally responds back with the dominant emotion of that face. To keep the example simple, the bot will return the emotion for only one face, and ignore other faces in the image. The example requires the `Microsoft.ProjectOxford.Emotion` package, which can be obtained using <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">NuGet</a>.
+
+Create a new project by downloading the <a href="http://aka.ms/bf-bc-vstemplate" target="_blank">Bot Application .NET template</a>. Install the `Microsoft.ProjectOxford.Emotion` package from <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">NuGet</a>. 
+Next, go to **MessagesController.cs** and add the following namespaces.
 
 ```cs
 using Microsoft.ProjectOxford.Emotion;
@@ -140,16 +136,15 @@ using Microsoft.ProjectOxford.Emotion.Contract;
 using System.Collections.Generic;
 ```
 
-Then, replace the code in the 'Post' task with the one in the snippet below. The code reads the image url from the user, sends it to the Emotion API, and finally replies back to the user with the dominant emotion it recognized for a face in the image, including the confidence score.
+In the same file, replace the code in the `Post` task with this code, which reads the image url from the user, sends it to the Emotion API, and replies back to the user with the dominant emotion it recognized for a face in the image, including the confidence score.
 
 ```cs
-
 public virtual async Task<HttpResponseMessage> Post([FromBody] Activity activity)
 {
     ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
     const string emotionApiKey = "<YOUR API KEY FROM MICROSOFT.COM/COGNITIVE>";
 
-    //Emotion SDK objects that take care of the hard work
+    // Emotion SDK objects that take care of the hard work
     EmotionServiceClient emotionServiceClient = new EmotionServiceClient(emotionApiKey);
     Emotion[] emotionResult = null;
 
@@ -169,7 +164,7 @@ public virtual async Task<HttpResponseMessage> Post([FromBody] Activity activity
     {
         Scores emotionScores = emotionResult[0].Scores;
 
-        //Retrieve list of emotions for first face detected and sort by emotion score (desc)
+        // Retrieve list of emotions for first face detected and sort by emotion score (desc)
         IEnumerable<KeyValuePair<string, float>> emotionList = new Dictionary<string, float>()
         {
             { "angry", emotionScores.Anger},
@@ -195,5 +190,4 @@ public virtual async Task<HttpResponseMessage> Post([FromBody] Activity activity
     await connector.Conversations.ReplyToActivityAsync(reply);
     return new HttpResponseMessage(System.Net.HttpStatusCode.Accepted);
 }
-
 ```

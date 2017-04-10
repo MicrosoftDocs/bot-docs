@@ -11,11 +11,8 @@ ms.service: Cognitive Services
 ms.date: 
 ms.reviewer: rstand
 
-# Include the following line commented out
 #ROBOTS: Index
-
 ---
-
 
 # Add language understanding to your bot
 
@@ -72,7 +69,7 @@ namespace Microsoft.Bot.Sample.WeatherBot
             }
             else
             {
-                //Add code to retrieve the weather
+                // Add code to retrieve the weather
                 await context.PostAsync($"The weather in {location} is ");
                 context.Wait(MessageReceived);
             }
@@ -100,46 +97,42 @@ namespace Microsoft.Bot.Sample.WeatherBot
 }
 ```
 
-Next, go to **MessagesController.cs**, and add the following namespaces.
+Next, go to **MessagesController.cs** and add the following namespaces.
 
 ```cs
-
-    using Microsoft.Bot.Builder.Dialogs;
-    using Microsoft.Bot.Builder.Luis;
-    using Microsoft.Bot.Builder.Luis.Models;
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading.Tasks;
+using Microsoft.Bot.Builder.Dialogs;
+using Microsoft.Bot.Builder.Luis;
+using Microsoft.Bot.Builder.Luis.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 ```
 
-Finally, on the same file, replace the code in the `Post` task with the one below.  
+Finally, in the same file, replace the code in the `Post` task with this code.  
 
 ```cs
-
-    [ResponseType(typeof(void))]
-    public virtual async Task<HttpResponseMessage> Post([FromBody] Activity activity)
+[ResponseType(typeof(void))]
+public virtual async Task<HttpResponseMessage> Post([FromBody] Activity activity)
+{
+    if (activity.Type == ActivityTypes.Message)
     {
-        if (activity.Type == ActivityTypes.Message)
-        {
-            await Conversation.SendAsync(activity, () => new TravelGuidDialog());
-        }
-        else
-        {
-            //add code to handle errors, or non-messaging activities
-        }
-
-        return new HttpResponseMessage(System.Net.HttpStatusCode.Accepted);
+        await Conversation.SendAsync(activity, () => new TravelGuidDialog());
+    }
+    else
+    {
+        // Add code to handle errors, or non-messaging activities
     }
 
+    return new HttpResponseMessage(System.Net.HttpStatusCode.Accepted);
+}
 ```
 
 ### Text Analytics example
+
 In this example, you will use the Text Analytics API to determine the sentiment behind a user's message, i.e. whether it is positive or negative. The Text Analytics API returns a sentiment score between 0 and 1, where 0 is very negative and 1 is very positive. For example, if the user types "That was really helpful", the API will classify it with a highly positive score, whereas a phrase like "That didn't help at all" will return a negative score. 
 
-The following example shows how the bot's response can be customized according to the sentiment score calculated by the Text Analytics API. For more information about the Text Analytics API, see the  <a href="https://text-analytics-demo.azurewebsites.net/Home/SampleCode" target="_blank">C# and Python sample code</a> for the service, or the  <a href="http://go.microsoft.com/fwlink/?LinkID=760860" target="_blank">Getting Started guide</a>.
-
-For this example, you will use the <a href="http://aka.ms/bf-bc-vstemplate" target="_blank">Bot Application .NET template</a> as a starting point. Note that the **Newtonsoft.JSON** package is also required, which can be obtained via <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">nuGet</a>. 
+The following example shows how the bot's response can be customized according to the sentiment score calculated by the Text Analytics API. You will use the <a href="http://aka.ms/bf-bc-vstemplate" target="_blank">Bot Application .NET template</a> as a starting point. Note that the `Newtonsoft.JSON` package is also required, which can be obtained via <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">NuGet</a>. 
 
 After you create your project with the Bot Application template, you will create some classes to hold the input and output from the API. First, create a new C# class file (**TextAnalyticsCall.cs**) with the following code. The class will serve as a model for the JSON input/output of the Text Analytics API.    
 
@@ -178,7 +171,7 @@ using System.Net.Http.Headers;
 using Newtonsoft.Json;
 ```
 
-Finally, replace the code in the `Post` task with the one in the code snippet below. The code receives the user message, calls the sentiment analysis endpoint, and responds accordingly to the user.
+Finally, replace the code in the `Post` task with this code, which receives the user message, calls the sentiment analysis endpoint, and responds accordingly to the user.
 
 ```cs
 public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
@@ -228,7 +221,7 @@ public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
 	}
 	else
 	{
-		//add code to handle errors, or non-messaging activities
+		// Add code to handle errors, or non-messaging activities
 	}
 	var response = Request.CreateResponse(HttpStatusCode.OK);
 	return response;

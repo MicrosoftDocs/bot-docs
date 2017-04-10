@@ -11,9 +11,7 @@ ms.service: Cognitive Services
 ms.date: 
 ms.reviewer: rstand
 
-# Include the following line commented out
 #ROBOTS: Index
-
 ---
 
 # Add knowledge extraction to your bot
@@ -36,7 +34,7 @@ To create the bot, you will use the <a href="http://docs.botframework.com/connec
 
 After you set up your knowledge base, create your project with the Bot Application template, and add the following class to handle the integration with your QnA Maker service.
 
-QnAMaker Dialog is distributed in a separate NuGet package called 'Microsoft.Bot.Builder.CognitiveServices' for C# and npm module called 'botbuilder-cognitiveservices' for Node.js. Make sure you install these.
+QnAMaker Dialog is distributed in a separate NuGet package called `Microsoft.Bot.Builder.CognitiveServices` for C# and npm module called `botbuilder-cognitiveservices` for Node.js. Make sure you install these.
 
 
 ```cs
@@ -50,13 +48,13 @@ using System.Text.RegularExpressions;
 
 namespace FAQBot.Dialogs
 {
-    //Inherit from the QnAMakerDialog
+    // Inherit from the QnAMakerDialog
     [Serializable]
     public class BasicQnAMakerDialog : QnAMakerDialog
     {        
-        //Parameters to QnAMakerService are:
-        //Compulsory: subscriptionKey, knowledgebaseId,
-        //Optional: defaultMessage, scoreThreshold[Range 0.0 – 1.0]
+        // Parameters to QnAMakerService are:
+        // Compulsory: subscriptionKey, knowledgebaseId,
+        // Optional: defaultMessage, scoreThreshold[Range 0.0 – 1.0]
         public BasicQnAMakerDialog() : base(new QnAMakerService(new QnAMakerAttribute("<YOUR_QNAMAKER_SUBSCRIPTION_KEY>", "<YOUR_KNOWLEDGE_BASE_ID>", "No good match in FAQ.", 0.5)))
         {
         }
@@ -77,7 +75,7 @@ namespace FAQBot.Dialogs
         {
             var message = await argument;
 
-            //Call the QnAMaker Dialog if the message is a question.
+            // Call the QnAMaker Dialog if the message is a question.
             if (IsQuestion(message.Text))
             {
                 await context.Forward(new BasicQnAMakerDialog(), AfterQnA, message, CancellationToken.None);
@@ -88,22 +86,22 @@ namespace FAQBot.Dialogs
             context.Wait(MessageReceivedAsync);
         }
 
-        //Callback, after the QnAMaker Dialog returns a result.
+        // Callback, after the QnAMaker Dialog returns a result.
         public async Task AfterQnA(IDialogContext context, IAwaitable<object> argument)
         {
             context.Wait(MessageReceivedAsync);
         }
 
-        //Simple check if the message is a potential question.
+        // Simple check if the message is a potential question.
         private bool IsQuestion(string message)
         {
-            //List of common question words
+            // List of common question words
             List<string> questionWords = new List<string>(){"who","what","why", "how", "when"};
 
-            //Question word present in the message
+            // Question word present in the message
             Regex questionPattern = new Regex(@"\b(" + string.Join("|", questionWords.Select(Regex.Escape).ToArray()) + @"\b)", RegexOptions.IgnoreCase);
 
-            //Return true if a question word present, or the message ends with "?"
+            // Return true if a question word present, or the message ends with "?"
             if (questionPattern.IsMatch(message) || message.EndsWith("?"))
                 return true;
             else
@@ -113,7 +111,7 @@ namespace FAQBot.Dialogs
 }
 ```
 
-Next, go to 'MessagesController.cs', and add the following namespaces.
+Next, go to **MessagesController.cs** and add the following namespaces.
 
 ```cs
 using Microsoft.Bot.Builder.Dialogs;
@@ -123,9 +121,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using FAQBot.Dialogs;
+```
 
-
-Finally, on the same file, replace the code in the Post task with the one below.  
+Finally, within the same file, replace the code in the `Post` task with this code.  
 
 ```cs
 [ResponseType(typeof(void))]
@@ -137,7 +135,7 @@ public virtual async Task<HttpResponseMessage> Post([FromBody] Activity activity
 	}
 	else
 	{
-		//add code to handle errors, or non-messaging activities
+		// Add code to handle errors, or non-messaging activities
 	}
 
 	var response = Request.CreateResponse(HttpStatusCode.OK);
