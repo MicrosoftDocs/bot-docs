@@ -68,7 +68,7 @@ This example uses the [Message][Message] class to build a carousel.
 The carousel is comprised of a list of [HeroCard][HeroCard] classes that contain an image, text, and a single button that triggers buying the item.  
 Clicking the “Buy” button triggers sending a message so we need to add a second dialog to catch the button click. 
 
-### Handle button input
+## Handle button input
 
 The ‘buyButtonClick’ dialog will be triggered anytime a message is received that starts with “buy” or “add” and is followed by something containing the word “shirt”. 
 The dialog starts by using a couple of regular expressions to look for the color and optional size shirt that the user asked for.
@@ -132,7 +132,7 @@ bot.dialog('buyButtonClick', [
 > For information on how to avoid messages being sent out of order, see [Message ordering][MessageOrder].  
 
 -->
-### Add a message delay for image downloads
+## Add a message delay for image downloads
 Some channels tend to download images before displaying a message to the user so that if you send a message containing an image followed immediately by a message without images you’ll sometimes see the messages flipped in the user's feed. To minimize the chance of this you can try to insure that your images are coming from content deliver networks (CDNs) and avoid the use of overly large images. In extreme cases you may even need to insert a 1-2 second delay between the message with the image and the one that follows it. You can make this delay feel a bit more natural to the user by calling **session.sendTyping()** to send a typying indicator before starting your delay. 
 
 <!-- 
