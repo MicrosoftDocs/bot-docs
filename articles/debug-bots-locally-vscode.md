@@ -1,5 +1,5 @@
 ---
-title: Debug locally with Visual Studio Code | Microsoft Docs
+title: Debug a bot locally with Visual Studio Code | Microsoft Docs
 description: Learn how to use Visual Studio Code to debug a bot built using the Bot Builder SDK.
 keywords:
 author: DeniseMak
@@ -49,6 +49,14 @@ When VS Code attaches to your bot, it pauses on the first line of code. Now you�
 You can communicate with your bot from the console window. Try switching back to the console window that your bot is running in and say “hello”.
 
 ![Step 5: Debug Bot](~/media/debug-vscode/builder-debug-step5.png)
+
+
+
+## Additional resources
+
+* [Bot Framework Emulator](~/debug-bots-emulator.md)
+* [Debugging in Visual Studio Code][VSCodeDebug]
+* [Visual Studio Code](https://code.visualstudio.com/)
 
 [ConsoleConnector]: (https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.consoleconnector.html)
 
