@@ -1,10 +1,10 @@
 ---
 title: Bot Framework Frequently Asked Questions | Microsoft Docs
-description: Bot Framework frequently asked questions (FAQ). Includes questions about what's new, channels and framework availability.
-keywords: FAQ, Bot Framework, channels, availability, What's new, LUIS, Cortana, upgrade, Direct Line, Skype.
+description: Bot Framework frequently asked questions (FAQ), including questions about what's new, channels and framework availability.
+keywords:
 author: DeniseMak
 manager: rstand
-ms.topic: resources-article
+ms.topic: article
 ms.prod: bot-framework
 
 ms.date: 02/21/2017
