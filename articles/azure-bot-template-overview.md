@@ -4,9 +4,9 @@ description: Learn about Bot templates for Azure Bot Service.
 keywords: Bot Framework, Azure Bot Service, continuous integration
 author: RobStand
 manager: rstand
-ms.topic: bot-service-article
+ms.topic: article
 ms.prod: bot-framework
-ms.service: Azure Bot Service
+
 ms.date: 3/21/2017
 ms.reviewer:
 #ROBOTS: Index

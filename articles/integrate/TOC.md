@@ -1,1 +1,0 @@
-# [Add the web chat control](../embed-chat-control-web-page.md)

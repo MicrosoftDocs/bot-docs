@@ -4,9 +4,9 @@ description: Learn how to publish your bot using Azure Bot Service.
 keywords: Bot Framework, Azure Bot Service, publish to Azure
 author: RobStand
 manager: rstand
-ms.topic: bot-service-article
+ms.topic: article
 ms.prod: bot-framework
-ms.service: Azure Bot Service
+
 ms.date: 3/21/2017
 ms.reviewer:
 #ROBOTS: Index

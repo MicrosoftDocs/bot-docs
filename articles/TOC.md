@@ -5,7 +5,7 @@
 # [Get started](bot-builder-overview-getstarted.md)
 ## [Create your first bot with .NET](~/dotnet/getstarted.md)
 ## [Create your first bot with Node.js](~/nodejs/getstarted.md)
-## [Create your first bot with Azure Bot Service](~/azure-bot-service/getstarted.md)
+## [Create your first bot with Azure Bot Service](azure-bot-service-getstarted.md)
 # How to
 ## Plan
 ### Explore channels
@@ -13,11 +13,11 @@
 ## Develop
 ### [.NET](dotnet/TOC.md)
 ### [Node.js](nodejs/TOC.md)
-### Azure Bot Service
+### [Azure Bot Service](azure/TOC.md)
 ### REST API
+### [Intelligence](cognitive-services/TOC.md)
 ## [Debug](debug/TOC.md)
 ## [Deploy](deploy/TOC.md)
 ## [Manage](manage/TOC.md)
-## [Integrate](integrate/TOC.md)
 ## [Troubleshoot](troubleshoot/TOC.md)
 # [Resources](resources/TOC.md)
