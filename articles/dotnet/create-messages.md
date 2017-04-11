@@ -17,7 +17,7 @@ ms.reviewer: rstand
 Your bot will send **message** [activities](~/dotnet/activities.md) to communicate information to users, 
 and likewise, will also receive **message** activities from users. 
 Some messages may simply consist of plain text, while others may contain richer content such as 
-[~/media attachments, buttons, and cards](~/dotnet/add-attachments.md). 
+[media attachments, buttons, and cards](~/dotnet/add-attachments.md). 
 This article describes some of the commonly-used message properties.
 
 ## Message text and format
@@ -67,7 +67,7 @@ These styles are supported with `TextFormat` of "xml":
 
 ## Message attachments
 
-The `Attachments` property of a message activity can be used to send and receive simple ~/media attachments 
+The `Attachments` property of a message activity can be used to send and receive simple media attachments 
 (e.g., image, audio, video, file) and rich cards. 
 For details, see [Add attachments to messages](~/dotnet/add-attachments.md).
 
