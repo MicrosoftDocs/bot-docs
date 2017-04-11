@@ -29,16 +29,16 @@ With the Azure Bot Service, you can take advantage of the these features:
 
 ## Get bot templates
 
-[Bot templates](~/azure-bot-service/templates-overview.md) will get you started quickly building your first bots with Azure Bot Service. They contain everything you need to write, test, and deploy your bots. All you have to do is add your custom code that makes the bot unique and engaging for your customers to talk to.
+[Bot templates](~/azure-bot-template-overview.md) will get you started quickly building your first bots with Azure Bot Service. They contain everything you need to write, test, and deploy your bots. All you have to do is add your custom code that makes the bot unique and engaging for your customers to talk to.
 
-Follow a [step-by-step tutorial](~/azure-bot-service/getstarted.md) so that you can quickly build and test a simple bot.
+Follow a [step-by-step tutorial](~/azure-bot-service-getstarted.md) so that you can quickly build and test a simple bot.
 
 ## Next steps
 
 
 Review the articles in this section to learn more about building bots using the Azure Bot Service.
 
-- Read an overview of the [Bot templates](~/azure-bot-service/templates-overview.md) to get you started with building five bots.
+- Read an overview of the [Bot templates](~/azure-bot-template-overview.md) to get you started with building five bots.
 
 If you encounter problems or have suggestions regarding Azure Bot Service, 
 see [Support](~/resources-support.md) for a list of available resources. 

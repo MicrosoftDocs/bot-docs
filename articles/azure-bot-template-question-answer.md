@@ -18,7 +18,7 @@ The question and answer bot template demonstrates how to use the <a href="https:
 
 When you create the template, Azure Bot Service lets you either select an existing FAQ as the knowledge base for the bot or create one manually from the <a href="https://qnamaker.ai" target="_blank">QnA Maker portal</a>. 
 
-The routing of the message is identical to the one presented in the [basic bot template](~/azure-bot-service/basic-bot.md). Most messages will have a `Message` activity type, and will contain the text and attachments the user sent. If the message’s activity type is `Message`, the template posts the message to `BasicQnAMakerDialog` in the context of the current message (see **BasicQnAMakerDialog.csx**).
+The routing of the message is identical to the one presented in the [basic bot template](~/azure-bot-template-basic.md). Most messages will have a `Message` activity type, and will contain the text and attachments the user sent. If the message’s activity type is `Message`, the template posts the message to `BasicQnAMakerDialog` in the context of the current message (see **BasicQnAMakerDialog.csx**).
 
 
 [!code-csharp[Route message](~/includes/code/azure-question-and-answer.cs#routeMessage)] 

@@ -28,11 +28,11 @@ Azure Bot Service has five bot templates to get you started creating your bots. 
 
 ### Basic bot
 
-Use the [basic bot template](~/azure-bot-service/basic-bot.md) to create a simple bot. You'll learn the basics about managing a conversation flow by using dialogs that respond to user input. 
+Use the [basic bot template](~/azure-bot-template-basic.md) to create a simple bot. You'll learn the basics about managing a conversation flow by using dialogs that respond to user input. 
 
 ### Form bot
 
-Use the [form bot template](~/azure-bot-service/form-bot.md) to create a guided conversation to collect user input. A form bot for buying a bicycle, for example, might ask the user questions like "What terrain do you plan on riding over?" Or "What size tires?" After the user answers the questions, various models  of bicycles are displayed.
+Use the [form bot template](~/azure-bot-template-form.md) to create a guided conversation to collect user input. A form bot for buying a bicycle, for example, might ask the user questions like "What terrain do you plan on riding over?" Or "What size tires?" After the user answers the questions, various models  of bicycles are displayed.
 
 ### Language understanding bot
 

@@ -128,7 +128,7 @@ Likewise, it receives messages from the agent and sends those messages to the us
 - [Manage conversation flow using .NET](~/dotnet/manage-conversation-flow.md)
 - [Manage conversation flow using Node.js](~/nodejs/manage-conversation-flow.md)
 - [Add smarts to your bot with Microsoft Cognitive Services](~/intelligent-bots.md)
-- [Add language understanding to your bot](~/bot-framework-intelligence-language.md)
+- [Add language understanding to your bot](~/cognitive-services-add-bot-language.md)
 
 <!-- 
 This article discussed the types of scenarios that typically require human involvement, 
