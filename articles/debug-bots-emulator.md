@@ -75,7 +75,7 @@ To check ngrok's version, from the command line:
 <code>ngrok -v</code>
 
 ## Sending System Activities
-The Bot Framework Emulator lets you send messages that represent [activities][ActivityConcept]. This feature allows you to emulate a specific user or conversation.
+The Bot Framework Emulator lets you send messages that represent system events. This feature allows you to emulate a specific user or conversation.
 
 You can find the following activities under **Conversation** > **Send System Activity** in the emulator's settings menu:
 * conversationUpdate (user added)
