@@ -15,7 +15,7 @@ ms.reviewer:
 # Add attachments to messages
 
 A message exchange between user and bot can 
-contain ~/media attachments (e.g., image, video, audio, file) 
+contain media attachments (e.g., image, video, audio, file) 
 or even rich cards that are rendered as a list or carousel. 
 This article describes how to add attachments to messages using the Bot Framework Connector service via the 
 Bot Builder SDK for .NET. 
@@ -24,15 +24,15 @@ Bot Builder SDK for .NET.
 
 Within an `Activity` object, the `Attachments` property contains an array of `Attachment` objects 
 that represent any attachments on the message. 
-An attachment may be a ~/media attachment (e.g., image, video, audio, file) or a rich card attachment.
+An attachment may be a media attachment (e.g., image, video, audio, file) or a rich card attachment.
 
-## Send ~/media attachments
+## Send media attachments
 
-To include a ~/media attachment within a message, 
+To include a media attachment within a message, 
 create an `Attachment` object and set the `ContentType`, `ContentUrl`, and `Name` properties. 
 This code example shows how to add an image to a message:
 
-[!code-csharp[Add ~/media attachment](~/includes/code/dotnet-add-attachments.cs#addMediaAttachment)]
+[!code-csharp[Add media attachment](~/includes/code/dotnet-add-attachments.cs#addMediaAttachment)]
 
 > [!NOTE]
 > If an attachment's format is image, audio, or video, the Connector service will communicate 
