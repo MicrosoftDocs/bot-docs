@@ -19,6 +19,5 @@
 ## [Debug](debug/TOC.md)
 ## [Deploy](deploy/TOC.md)
 ## [Manage](manage/TOC.md)
-## [Integrate](integrate/TOC.md)
 ## [Troubleshoot](troubleshoot/TOC.md)
 # [Resources](resources/TOC.md)
