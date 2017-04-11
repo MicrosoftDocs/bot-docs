@@ -223,7 +223,7 @@ For details about these Telegram methods and their parameters, see the
 
 > [!NOTE]
 > <ul><li>The `chat_id` parameter is common to all Telegram methods. If you do not specify `chat_id` as a parameter, the framework will provide the ID for you.</li>
-<li>Instead of passing file contents inline, specify the file using a URL and ~/media type as shown in the example below.</li>
+<li>Instead of passing file contents inline, specify the file using a URL and media type as shown in the example below.</li>
 <li>Within each message that your bot receives from the Telegram channel, the `ChannelData` property will include the message that your bot sent previously.</li></ul>
 
 This snippet shows an example of a `channelData` property that specifies a single Telegram method.
@@ -303,4 +303,5 @@ This snippet shows an example of the `channelData` property for a native Kik mes
 - [Activity types](~/dotnet/activities.md)
 - [Create messages](~/dotnet/create-messages.md)
 - [Send and receive activities](~/dotnet/connector.md)
-- [Add attachments to messages](~/dotnet/add-attachments.md)
+- [Add media attachments to messages](~/dotnet/add-media-attachments.md)
+- [Add rich cards to messages](~/dotnet/add-rich-card-attachments.md)

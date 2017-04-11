@@ -1,45 +1,31 @@
 ---
-title: Add attachments to messages using the Bot Framework Connector service and .NET | Microsoft Docs
-description: Learn how to add attachments to messages using the Bot Framework Connector service via the Bot Builder SDK for .NET.
+title: Add rich card attachments to messages using the Bot Framework Connector service and .NET | Microsoft Docs
+description: Learn how to add rich card attachments to messages using the Bot Framework Connector service via the Bot Builder SDK for .NET.
 keywords: Bot Framework, .NET, Bot Builder, SDK, Connector, Connector service, attachment, card, rich card
 author: kbrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 
-ms.date: 03/13/2017
+ms.date: 04/11/2017
 ms.reviewer:
 #ROBOTS: Index
 ---
 
-# Add attachments to messages
+# Add rich cards to messages
 
-A message exchange between user and bot can 
-contain media attachments (e.g., image, video, audio, file) 
-or even rich cards that are rendered as a list or carousel. 
-This article describes how to add attachments to messages using the Bot Framework Connector service via the 
+A message exchange between user and bot can contain rich cards that are rendered as a list or carousel. 
+Within an `Activity` object, the `Attachments` property contains an array of `Attachment` objects 
+that represent the rich cards (and [media attachments](~/dotnet/add-media-attachments.md)) within the message. 
+
+This article describes how to add rich cards to messages using the Bot Framework Connector service via the 
 Bot Builder SDK for .NET. 
 
-## Types of attachments
-
-Within an `Activity` object, the `Attachments` property contains an array of `Attachment` objects 
-that represent any attachments on the message. 
-An attachment may be a media attachment (e.g., image, video, audio, file) or a rich card attachment.
-
-## Send media attachments
-
-To include a media attachment within a message, 
-create an `Attachment` object and set the `ContentType`, `ContentUrl`, and `Name` properties. 
-This code example shows how to add an image to a message:
-
-[!code-csharp[Add media attachment](~/includes/code/dotnet-add-attachments.cs#addMediaAttachment)]
-
 > [!NOTE]
-> If an attachment's format is image, audio, or video, the Connector service will communicate 
-> attachment data to the channel in a way that enables the channel to render that attachment within the conversation. 
-> If the attachment is a file, the file URL will be rendered as a hyperlink within the conversation.
+> For information about how to add media attachments to messages, see 
+> [Add media attachments to messages](~/dotnet/add-media-attachments.md).
 
-## Send rich cards
+## Types of rich cards
 
 A rich card comprises a title, description, link, and image(s). 
 A message can contain multiple rich cards, displayed in either list format or carousel format.
@@ -50,37 +36,37 @@ The Bot Framework currently supports four types of rich cards: Hero card, Thumbn
 > To display multiple rich cards in carousel format, set the activity's `AttachmentLayout` property to "carousel". 
 > If the channel does not support carousel format, it will display the rich cards in list format, even if the `AttachmentLayout` property specifies "carousel".
 
-### Hero card
+## Add a Hero card to a message
 
 The Hero card typically contains a single large image, one or more buttons, and text. 
 
-This code sample shows how to create a reply message that contains three Hero cards rendered in carousel format: 
+This code example shows how to create a reply message that contains three Hero cards rendered in carousel format: 
 
 [!code-csharp[Add HeroCard attachment](~/includes/code/dotnet-add-attachments.cs#addHeroCardAttachment)]
 
-### Thumbnail card
+## Add a Thumbnail card to a message
 
 The Thumbnail card typically contains a single small image, one or more buttons, and text. 
 
-This code sample shows how to create a reply message that contains two Thumbnail cards rendered in list format. 
+This code example shows how to create a reply message that contains two Thumbnail cards rendered in list format: 
 
 [!code-csharp[Add ThumbnailCard attachment](~/includes/code/dotnet-add-attachments.cs#addThumbnailCardAttachment)]
 
-### Receipt card
+## Add a Receipt card to a message
 
 The Receipt card enables a bot to provide a receipt to the user. 
 It typically contains the list of items to include on the receipt, tax and total information, and other text. 
 
-This code sample shows how to create a reply message that contains a Receipt card: 
+This code example shows how to create a reply message that contains a Receipt card: 
 
 [!code-csharp[Add ReceiptCard attachment](~/includes/code/dotnet-add-attachments.cs#addReceiptCardAttachment)]
 
-### Sign-in card
+## Add a Sign-in card to a message
 
 The Sign-in card enables a bot to request that a user sign-in. 
 It typically contains text and one or more buttons that the user can click to initiate the sign-in process. 
 
-This code sample shows how to create a reply message that contains a Sign-in card:
+This code example shows how to create a reply message that contains a Sign-in card:
 
 [!code-csharp[Add SignInCard attachment](~/includes/code/dotnet-add-attachments.cs#addSignInCardAttachment)]
 
@@ -97,8 +83,8 @@ section of the card. Each `CardAction` object contains these properties:
 | Image | string | image URL for the button |
 | Value | string | value needed to perform the specified type of action |
 
-The following table lists the valid values for `CardAction.Type` and describes 
-the expected contents of `CardAction.Value` for each type.
+This table lists the valid values for `CardAction.Type` and describes 
+the expected contents of `CardAction.Value` for each type:
 
 | CardAction.Type | CardAction.Value | 
 |----|----|
@@ -117,4 +103,5 @@ the expected contents of `CardAction.Value` for each type.
 - [Activity types](~/dotnet/activities.md)
 - [Send and receive activities](~/dotnet/connector.md)
 - [Create messages](~/dotnet/create-messages.md)
+- [Add media attachments to messages](~/dotnet/add-media-attachments.md)
 - [Implement channel-specific functionality](~/dotnet/channeldata.md)

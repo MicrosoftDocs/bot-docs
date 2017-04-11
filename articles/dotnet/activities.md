@@ -38,7 +38,7 @@ The following table lists the activity types that are supported by the Bot Build
 Your bot will send **message** activities to communicate information to users, and likewise, 
 will also receive **message** activities from users. 
 Some messages may simply consist of plain text, while others may contain richer content such as 
-[~/media attachments, buttons, and cards](~/dotnet/add-attachments.md) or 
+[media attachments](~/dotnet/add-media-attachments.md), [buttons, and cards](~/dotnet/add-rich-card-attachments.md) or 
 [channel-specific data](~/dotnet/channeldata.md). 
 For information about commonly-used message properties, see [Create messages](~/dotnet/create-messages.md).
 
@@ -92,5 +92,6 @@ Likewise, your bot may receive an **endOfConversation** activity to indidate tha
 
 - [Send and receive activities](~/dotnet/connector.md)
 - [Create messages](~/dotnet/create-messages.md)
-- [Add attachments to messages](~/dotnet/add-attachments.md)
+- [Add media attachments to messages](~/dotnet/add-media-attachments.md)
+- [Add rich cards to messages](~/dotnet/add-rich-card-attachments.md)
 - [Implement channel-specific functionality](~/dotnet/channeldata.md)

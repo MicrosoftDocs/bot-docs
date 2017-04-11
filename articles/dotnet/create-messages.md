@@ -17,7 +17,7 @@ ms.reviewer: rstand
 Your bot will send **message** [activities](~/dotnet/activities.md) to communicate information to users, 
 and likewise, will also receive **message** activities from users. 
 Some messages may simply consist of plain text, while others may contain richer content such as 
-[media attachments, buttons, and cards](~/dotnet/add-attachments.md). 
+[media attachments](~/dotnet/add-media-attachments.md), [buttons, and cards](~/dotnet/add-rich-card-attachments.md). 
 This article describes some of the commonly-used message properties.
 
 ## Message text and format
@@ -69,7 +69,8 @@ These styles are supported with `TextFormat` of "xml":
 
 The `Attachments` property of a message activity can be used to send and receive simple media attachments 
 (e.g., image, audio, video, file) and rich cards. 
-For details, see [Add attachments to messages](~/dotnet/add-attachments.md).
+For details, see [Add media attachments to messages](~/dotnet/add-media-attachments.md) and 
+[Add rich cards to messages](~/dotnet/add-rich-card-attachments.md).
 
 ## Message entities
 
@@ -150,5 +151,6 @@ For details, see [Implement channel-specific functionality](~/dotnet/channeldata
 
 - [Activity types](~/dotnet/activities.md)
 - [Send and receive activities](~/dotnet/connector.md)
-- [Add attachments to messages](~/dotnet/add-attachments.md)
+- [Add media attachments to messages](~/dotnet/add-media-attachments.md)
+- [Add rich cards to messages](~/dotnet/add-rich-card-attachments.md)
 - [Implement channel-specific functionality](~/dotnet/channeldata.md)

@@ -3,7 +3,8 @@
 # Activities
 ## [Understand activity types](~/dotnet/activities.md)
 ## [Create messages](~/dotnet/create-messages.md)
-## [Add attachments to messages](~/dotnet/add-attachments.md)
+## [Add media attachments to messages](~/dotnet/add-media-attachments.md)
+## [Add rich cards to messages](~/dotnet/add-rich-card-attachments.md)
 ## [Implement channel-specific functionality](~/dotnet/channeldata.md)
 ## [Send and receive activities](~/dotnet/connector.md)
 ## [Implement global message handlers](~/dotnet/global-handlers.md)
