@@ -27,7 +27,7 @@ There are four types of rich cards.
 |[SigninCard](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.signincard.html) | The Sign-in card enables a bot to request that a user sign-in. It typically contains text and one or more buttons that the user can click to initiate the sign-in process. |
 |[ThumbnailCard](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.thumbnailcard.html) | The Thumbnail card typically contains a single small image, one or more buttons, and text.|
 
-## Example: Sending a carousel of Hero cards
+## Send a carousel of Hero cards
 The following example shows a bot for a fictional t-shirt company and shows how to send a carousel of cards in response to the user saying “show shirts”. 
 
 ```javascript
