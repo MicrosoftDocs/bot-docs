@@ -11,6 +11,8 @@ ms.date:
 ms.reviewer: rstand@microsoft.com
 #ROBOTS: Index
 ---
+> [!WARNING]
+> This article is under development. The content will likely be rewritten.
 
 # Create a bot with the Azure Bot Service
 

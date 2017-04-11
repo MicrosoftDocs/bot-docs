@@ -13,8 +13,8 @@
 ## Develop
 ### [.NET](dotnet/TOC.md)
 ### [Node.js](nodejs/TOC.md)
-### [Azure Bot Service](azure/TOC.md)
-### REST API
+<!--### [Azure Bot Service](azure/TOC.md)-->
+<!--### REST API-->
 ### [Intelligence](cognitive-services/TOC.md)
 ## [Debug](debug/TOC.md)
 ## [Deploy](deploy/TOC.md)
