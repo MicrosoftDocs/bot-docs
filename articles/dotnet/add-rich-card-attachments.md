@@ -29,7 +29,17 @@ Bot Builder SDK for .NET.
 
 A rich card comprises a title, description, link, and image(s). 
 A message can contain multiple rich cards, displayed in either list format or carousel format.
-The Bot Framework currently supports four types of rich cards: Hero card, Thumbnail card, Receipt card, and Sign-in card.
+The Bot Framework currently supports seven types of rich cards: 
+
+| Card type | Description |
+|----|----|
+| [AnimationCard][animationCard] | A card that can play animated GIFs or short videos. |
+| [AudioCard][audioCard] | A card that can play an audio file. |
+| [HeroCard][heroCard] | A card that typically contains a single large image, one or more buttons, and text. |
+| [ThumbnailCard][thumbnailCard] | A card that typically contains a single thumbnail image, one or more buttons, and text. |
+| [ReceiptCard][receiptCard] | A card that enables a bot to provide a receipt to the user. It typically contains the list of items to include on the receipt, tax and total information, and other text. |
+| [SignInCard][signinCard] | A card that enables a bot to request that a user sign-in. It typically contains text and one or more buttons that the user can click to initiate the sign-in process. |
+| [VideoCard][videoCard] | A card that can play videos. |
 
 > [!TIP]
 > To display multiple rich cards in list format, set the activity's `AttachmentLayout` property to "list". 
@@ -46,7 +56,7 @@ This code example shows how to create a reply message that contains three Hero c
 
 ## Add a Thumbnail card to a message
 
-The Thumbnail card typically contains a single small image, one or more buttons, and text. 
+The Thumbnail card typically contains a single thumbnail image, one or more buttons, and text. 
 
 This code example shows how to create a reply message that contains two Thumbnail cards rendered in list format: 
 
@@ -105,3 +115,17 @@ the expected contents of `CardAction.Value` for each type:
 - [Create messages](~/dotnet/create-messages.md)
 - [Add media attachments to messages](~/dotnet/add-media-attachments.md)
 - [Implement channel-specific functionality](~/dotnet/channeldata.md)
+
+[animationCard]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d9/d78/class_microsoft_1_1_bot_1_1_connector_1_1_animation_card.html
+
+[audioCard]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/db/d71/class_microsoft_1_1_bot_1_1_connector_1_1_audio_card.html 
+
+[heroCard]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d4/dab/class_microsoft_1_1_bot_1_1_connector_1_1_hero_card.html 
+
+[thumbnailCard]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/da/da6/class_microsoft_1_1_bot_1_1_connector_1_1_thumbnail_card.html 
+
+[receiptCard]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d0/df9/class_microsoft_1_1_bot_1_1_connector_1_1_receipt_card.html 
+
+[signinCard]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/dc/d03/class_microsoft_1_1_bot_1_1_connector_1_1_signin_card.html 
+
+[videoCard]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d6/da6/class_microsoft_1_1_bot_1_1_connector_1_1_video_card.html

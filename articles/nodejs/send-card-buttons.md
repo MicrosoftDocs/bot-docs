@@ -14,18 +14,23 @@ ms.reviewer:
 
 # Send rich cards
 
-
 Several channels, like Skype & Facebook, support sending rich graphical cards to users with interactive buttons that the user clicks to initiate an action. 
 The SDK provides a rich set of message and card builder classes which can be used to send cards in a cross-platform way. The Bot Framework Connector Service will render these cards using schema native to the channel.
 For channels that don’t support cards, like SMS, the Bot Framework will do its best to render a reasonable experience to users. 
 
-There are four types of rich cards.
+## Types of rich cards 
+
+There are seven types of rich cards.
+
 | Card type | Description |
 |------|------|
-|[HeroCard](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.herocard.html) | The Hero card typically contains a single large image, one or more buttons, and text. |
-|[ReceiptCard](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.receiptcard.html) | The Receipt card enables a bot to provide a receipt to the user. It typically contains the list of items to include on the receipt, tax and total information, and other text. |
-|[SigninCard](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.signincard.html) | The Sign-in card enables a bot to request that a user sign-in. It typically contains text and one or more buttons that the user can click to initiate the sign-in process. |
-|[ThumbnailCard](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.thumbnailcard.html) | The Thumbnail card typically contains a single small image, one or more buttons, and text.|
+| [AnimationCard][animationCard] | A card that can play animated GIFs or short videos. |
+| [AudioCard][audioCard] | A card that can play an audio file. |
+| [HeroCard][heroCard] | A card that typically contains a single large image, one or more buttons, and text. |
+| [ThumbnailCard][thumbnailCard] | A card that typically contains a single thumbnail image, one or more buttons, and text.|
+| [ReceiptCard][receiptCard] | A card that enables a bot to provide a receipt to the user. It typically contains the list of items to include on the receipt, tax and total information, and other text. |
+| [SigninCard][signinCard] | A card that enables a bot to request that a user sign-in. It typically contains text and one or more buttons that the user can click to initiate the sign-in process. |
+| [VideoCard][videoCard] | A card that can play videos. |
 
 ## Send a carousel of Hero cards
 The following example shows a bot for a fictional t-shirt company and shows how to send a carousel of cards in response to the user saying “show shirts”. 
@@ -65,7 +70,7 @@ bot.dialog('showShirts', function (session) {
 
 ```
 This example uses the [Message][Message] class to build a carousel.  
-The carousel is comprised of a list of [HeroCard][HeroCard] classes that contain an image, text, and a single button that triggers buying the item.  
+The carousel is comprised of a list of [HeroCard][heroCard] classes that contain an image, text, and a single button that triggers buying the item.  
 Clicking the “Buy” button triggers sending a message so we need to add a second dialog to catch the button click. 
 
 ## Handle button input
@@ -145,11 +150,31 @@ The message batching delay is configurable. To disable the SDK’s auto-batching
 
 
 ## Additional resources
-* [HeroCard][HeroCard]
+
+* [AnimationCard][animationCard]
+* [AudioCard][audioCard]
+* [HeroCard][heroCard]
+* [ThumbnailCard][thumbnailCard]
+* [ReceiptCard][receiptCard]
+* [SigninCard][signinCard]
+* [VideoCard][videoCard]
 * [Message][Message]
 * [How to send attachments](~/nodejs/send-receive-attachments.md)
 
-[HeroCard]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.herocard
 [MessageOrder]: ~/nodejs/manage-conversation-flow.md#message-ordering
 [Message]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.message
 [IMessage]: http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.imessage
+
+[animationCard]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.animationcard.html 
+
+[audioCard]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.audiocard.html 
+
+[heroCard]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.herocard.html
+
+[thumbnailCard]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.thumbnailcard.html 
+
+[receiptCard]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.receiptcard.html 
+
+[signinCard]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.signincard.html 
+
+[videoCard]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.videocard.html
