@@ -4,15 +4,13 @@ description: Learn how to create a bot with the Azure Bot Service.
 keywords: Bot Framework, Bot Builder, Azure Bot Service, get started
 author: kbrandl
 manager: rstand
-ms.topic: bot-service-get-started-article
+ms.topic: article
 ms.prod: bot-framework
 
-ms.date: 
-ms.reviewer: rstand@microsoft.com
+ms.date: 4/12/2017
+ms.reviewer: 
 ROBOTS: Index, Follow
 ---
-> [!WARNING]
-> This article is under development. The content will likely be rewritten.
 
 # Create a bot with the Azure Bot Service
 
@@ -128,5 +126,5 @@ the Azure portal.
 
 To learn more about building great bots with the Bot Framework, see the following articles:
 
-- [Key concepts in the Bot Framework](~/bot-framework-concepts-overview.md)
+- [How the Bot Framework works](~/overview-how-bot-framework-works.md)
 - [Introduction to bot design](~/bot-design-principles.md)

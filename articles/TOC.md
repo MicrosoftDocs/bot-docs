@@ -5,7 +5,7 @@
 # [Get started](bot-builder-overview-getstarted.md)
 ## [Create your first bot with .NET](~/dotnet/getstarted.md)
 ## [Create your first bot with Node.js](~/nodejs/getstarted.md)
-## [Create your first bot with Azure Bot Service](azure-bot-service-getstarted.md)
+## [Create your first bot with Azure Bot Service](~/azure/azure-bot-service-getstarted.md)
 # How to
 ## Plan
 ### Explore channels
