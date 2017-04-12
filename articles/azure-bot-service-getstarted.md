@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 
 ms.reviewer: rstand@microsoft.com
-#ROBOTS: Index
+ROBOTS: Index, Follow
 ---
 > [!WARNING]
 > This article is under development. The content will likely be rewritten.

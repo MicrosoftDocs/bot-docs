@@ -11,7 +11,7 @@ ms.service: Cognitive Services
 ms.date: 
 ms.reviewer: rstand
 
-#ROBOTS: Index
+ROBOTS: Index, Follow
 ---
 
 # Add image and video understanding to your bot

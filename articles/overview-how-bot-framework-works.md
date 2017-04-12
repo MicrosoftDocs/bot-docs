@@ -10,7 +10,7 @@ ms.date:
 ms.reviewer:
 
 # Include the following line commented out
-#ROBOTS: Index
+ROBOTS: Index, Follow
 ---
 >[!WARNING]
 > Content is still under development.

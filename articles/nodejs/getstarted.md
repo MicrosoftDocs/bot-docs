@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 02/02/2017
 ms.reviewer:
-#ROBOTS: Index
+ROBOTS: Index, Follow
 ---
 # Create a bot with the Bot Builder SDK for Node.js
 

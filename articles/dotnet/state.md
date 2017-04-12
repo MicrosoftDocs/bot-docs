@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 03/16/2017
 ms.reviewer:
-#ROBOTS: Index
+ROBOTS: Index, Follow
 ---
 
 # Manage state

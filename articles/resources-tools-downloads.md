@@ -12,7 +12,7 @@ ms.date: 03/01/2017
 ms.reviewer:
 
 # Include the following line commented out
-#ROBOTS: Index
+ROBOTS: Index, Follow
 ---
 > [!NOTE]
 > This content is still under development.

@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date:
 ms.reviewer: rstand
-#ROBOTS: Index
+ROBOTS: Index, Follow
 ---
 # Deploy a bot to Azure via continuous integration from GitHub
 

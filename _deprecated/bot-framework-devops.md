@@ -9,7 +9,7 @@ ms.service: Bot Framework
 ms.topic: devops-article
 ms.date: 02/27/2017
 ms.author: thalme@microsoft.com
-#ROBOTS: Index
+ROBOTS: Index, Follow
 ---
 # DevOps for the Bot Framework
 

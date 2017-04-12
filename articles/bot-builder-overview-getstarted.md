@@ -8,10 +8,10 @@ ms.topic: get-started-article
 ms.prod: bot-framework
 ms.date: 04/01/2017
 ms.reviewer: rstand
-#ROBOTS: Index
+ROBOTS: Index, Follow
 ---
-# Get started building bots with Bot Builder
-Bot Builder is an open-source SDK for building bots with support for .NET, Node.js, and REST. 
+# Get started building bots with the Bot Framework
+The Bot Framework includes Bot Builder to give you the tools you need to develop bots. Bot Builder is an open-source SDK with support for .NET, Node.js, and REST. Using Bot Builder, you can get started and have a working bot in just a few minutes.
 
 ## Bot Builder SDK for .NET
 The Bot Builder SDK for .NET leverages C# to provide a familiar way for .NET developers to write bots. The [detailed walkthrough](~/dotnet/getstarted.md) will guide you through creating a bot with the Bot Builder SDK for .NET.
@@ -32,6 +32,9 @@ The [Direct Line REST API][directLineAPI] enables you to connect your own applic
 The Azure Bot Service provides an integrated environment that is purpose-built for bot development, 
 enabling you to build, connect, test, deploy, and manage intelligent bots, all from one place. 
 You can write your bot in C# or Node.js directly in the browser using the Azure editor.
+
+> [!NOTE]
+> The Azure Bot Service is currently in preview so it should not be used for building production bots.
 
 The [detailed walkthrough](~/azure-bot-service-getstarted.md) will guide you through building a bot with the Azure Bot Service.
 

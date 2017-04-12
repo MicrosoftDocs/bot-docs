@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 03/13/2017
 ms.reviewer:
-#ROBOTS: Index
+ROBOTS: Index, Follow
 ---
 
 # Implement channel-specific functionality

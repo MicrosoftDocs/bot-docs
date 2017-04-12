@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date: 02/21/2017
 ms.reviewer: 
-#ROBOTS: Index
+ROBOTS: Index, Follow
 ---
 # Debug a bot with Visual Studio Code
 The [Bot Framework Emulator](~/debug-bots-emulator.md) provides useful features for debugging your bots. You can also use the debugger included in [Visual Studio Code](https://code.visualstudio.com/) to debug your your bot's source code. 

@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 02/24/2017
 ms.reviewer:
-#ROBOTS: Index
+ROBOTS: Index, Follow
 ---
 
 # Save user data using the Bot Builder SDK for Node.js

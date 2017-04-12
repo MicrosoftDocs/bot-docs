@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 
 ms.reviewer: rstand
-#ROBOTS: Index
+ROBOTS: Index, Follow
 ---
 # Designing navigation
 

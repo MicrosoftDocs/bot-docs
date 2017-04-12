@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 04/01/2017
 ms.reviewer:
-#ROBOTS: Index
+ROBOTS: Index, Follow
 ---
 
 # Key concepts in the Bot Framework

@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 03/01/2017
 ms.reviewer:
-#ROBOTS: Index
+ROBOTS: Index, Follow
 #REVIEW
 ---
 # Add the bot chat control to your web site

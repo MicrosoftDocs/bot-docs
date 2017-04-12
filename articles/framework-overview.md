@@ -9,7 +9,7 @@ ms.prod: bot-framework
 ms.date: 04/01/2017
 
 # Include the following line commented out
-#ROBOTS: Index
+ROBOTS: Index, Follow
 #REVIEW
 ---
 

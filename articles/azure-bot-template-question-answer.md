@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 3/21/2017
 ms.reviewer:
-#ROBOTS: Index
+ROBOTS: Index, Follow
 ---
 
 # Build a bot that answers questions from an FAQ

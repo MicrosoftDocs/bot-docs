@@ -11,7 +11,7 @@ ms.service: Cognitive Services
 ms.date: 
 ms.reviewer: rstand
 
-#ROBOTS: Index
+ROBOTS: Index, Follow
 ---
 
 # Add speech recognition and conversion to your bot

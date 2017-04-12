@@ -12,7 +12,7 @@ ms.date: 02/21/2017
 ms.reviewer:
 
 # Include the following line commented out
-#ROBOTS: Index
+ROBOTS: Index, Follow
 ---
 # Troubleshooting Bot Framework Authentication
 

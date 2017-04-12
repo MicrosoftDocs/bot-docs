@@ -1,22 +1,13 @@
 ---
 title: Page title that displays in the browser tab and search results | Microsoft Docs
 description: Article description that will be displayed on landing pages and in most search results
-keywords: keywords, separated, by, commas
 author: GitHub-alias-of-only-one-author
 manager: rstand
-
-# the ms.topic should be the section of the IA that the article is in. The choices here are:
-# article: A conceptual topic, tutorial, feature guide, or other non-reference article
-# get-started-article: assign to articles that are featured in the Get Started or Overview section of the left navigation for a service.
-# hero-article: a "hero" tutorial that is designed to provide an introduction to a service or feature that gets visitors started using the service quickly and drives free-trial sign-ups and MSDN activations. Confirm with rstand@microsoft.com before choosing this topic type
 ms.topic: article
 ms.prod: bot-framework
-
 # Date the article was updated
 ms.date: mm/dd/yyyy
-
-# Include the following line commented out
-#ROBOTS: Index
+ROBOTS: Index, Follow
 ---
 # Markdown template for Bot Framework on Microsoft Docs (WIP)
 

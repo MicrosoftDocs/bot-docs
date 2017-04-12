@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 02/06/2017
 ms.reviewer:
-#ROBOTS: Index
+ROBOTS: Index, Follow
 ---
 
 # Publish a bot to the Bot Directory

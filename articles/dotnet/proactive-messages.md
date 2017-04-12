@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 02/22/2017
 ms.reviewer:
-#ROBOTS: Index
+ROBOTS: Index, Follow
 ---
 # Send proactive messages
 

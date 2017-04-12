@@ -12,7 +12,7 @@ ms.date:
 ms.reviewer:
 
 # Include the following line commented out
-#ROBOTS: Index
+ROBOTS: Index, Follow
 #REVIEW
 ---
 > [!WARNING]

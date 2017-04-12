@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 03/08/2017
 ms.reviewer:
-#ROBOTS: Index
+ROBOTS: Index, Follow
 ---
 
 # Key concepts in the Bot Builder SDK for Node.js

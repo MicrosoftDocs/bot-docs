@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 3/20/2017
 ms.reviewer: 
-#ROBOTS: Index
+ROBOTS: Index, Follow
 
 ---
 

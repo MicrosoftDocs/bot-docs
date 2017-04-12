@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 3/21/2017
 ms.reviewer:
-#ROBOTS: Index
+ROBOTS: Index, Follow
 ---
 
 # Guide users through a conversation with the form bot

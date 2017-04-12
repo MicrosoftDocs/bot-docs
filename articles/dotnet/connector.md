@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 03/09/2017
 ms.reviewer:
-#ROBOTS: Index
+ROBOTS: Index, Follow
 ---
 
 # Send and receive activities using the Connector

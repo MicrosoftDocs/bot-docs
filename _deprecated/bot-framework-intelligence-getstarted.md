@@ -11,7 +11,7 @@ ms.date:
 ms.reviewer: rstand
 
 # Include the following line commented out
-#ROBOTS: Index
+ROBOTS: Index, Follow
 
 ---
 # Add smarts to your bots with Microsoft Cognitive Services

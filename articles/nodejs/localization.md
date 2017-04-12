@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 02/24/2017
 ms.reviewer: rstand
-#ROBOTS: Index
+ROBOTS: Index, Follow
 ---
 
 # Support localization

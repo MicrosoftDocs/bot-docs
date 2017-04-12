@@ -11,7 +11,7 @@ ms.service: Cognitive Services
 ms.date: 
 ms.reviewer: rstand
 
-#ROBOTS: Index
+ROBOTS: Index, Follow
 ---
 
 # Add language understanding to your bot
