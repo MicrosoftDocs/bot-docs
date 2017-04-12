@@ -21,7 +21,7 @@ This article demonstrates how to register a custom intent recognizer that will b
 Custom recognizers can return a named intent that can be used to trigger actions and dialogs within the bot.
 
 ## Use the built-in regular expression recognizer
-Use [RegExpRecognizer](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.regexprecognizer.html) to detect the user's intent using a regular expression. You can pass multiple expressions to the recognizer to support multiple languages. 
+Use [RegExpRecognizer][RegExpRecognizer] to detect the user's intent using a regular expression. You can pass multiple expressions to the recognizer to support multiple languages. 
 
 ``` javascript
 // Add regular expression recognizer to bot
@@ -60,7 +60,7 @@ Your bot can register more than one recognizer. Notice that the custom recognize
 
 By default, recognizers run in parallel, but you can set recognizeOrder in [IIntentRecognizerSetOptions][IntentRecognizerSetOptions] such that the process quits as soon as your bot finds one that gives a score of 1.0.
 
-The Bot Builder SDK includes a [sample][DisambiguationSample] that demonstrates how to provide custom disambiguation logic in your bot by implementing [IDisambiguateRouteHandler](https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.idisambiguateroutehandler.html).
+The Bot Builder SDK includes a [sample][DisambiguationSample] that demonstrates how to provide custom disambiguation logic in your bot by implementing [IDisambiguateRouteHandler][IDisambiguateRouteHandler].
 
 
 
@@ -77,3 +77,5 @@ For more information on LUIS see [Understanding Natural Language][LUISConcepts].
 [LUISSample]: https://github.com/Microsoft/BotBuilder/blob/master/Node/examples/basics-naturalLanguage/app.js
 [LUISConcepts]: https://docs.botframework.com/en-us/node/builder/guides/understanding-natural-language/
 [DisambiguationSample]: https://github.com/Microsoft/BotBuilder/tree/master/Node/examples/feature-onDisambiguateRoute
+[IDisambiguateRouteHandler: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.idisambiguateroutehandler.html
+[RegExpRecognizer]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.regexprecognizer.html

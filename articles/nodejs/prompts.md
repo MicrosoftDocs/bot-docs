@@ -36,7 +36,7 @@ Prompts return to the caller an [IPromptResult][IPromptResult]. The user's respo
 
 In the following example the bot's message handler takes an array of functions (a waterfall) instead of a single function.
 When a user sends a message to our bot, the first function in our waterfall will get called and we can use 
-the [text()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts#text) prompt to ask the user for their name. 
+the [text()][text] prompt to ask the user for their name. 
 Their response will be passed to the second function in our waterfall which will send the user a customized greeting.
 This cascading sequence of questions and responses is what gives the waterfall feature its name. 
 
@@ -70,8 +70,6 @@ To add logic to remember the user's name so that we only have to ask it once, se
 [RecognizeUserIntent]: ~/nodejs/recognize-intent.md
 [SaveUserData]: ~/nodejs/save-user-data.md
 
-
-
 [UniversalBot]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.universalbot.html
 [ChatConnector]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.chatconnector.html
 [sprintf]: http://www.diveintojavascript.com/projects/javascript-sprintf
@@ -100,3 +98,4 @@ To add logic to remember the user's name so that we only have to ask it once, se
 [PromptsAttachment]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts.html#attachment
 [IPromptAttachmentResult]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptattachmentresult.html
 
+[text]: http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts#text

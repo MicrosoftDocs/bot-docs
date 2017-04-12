@@ -15,10 +15,10 @@ ROBOTS: Index, Follow
 # Support localization
 
 
-Bot Builder includes a rich localization system for building bots that can communicate with the user in multiple languages. All of your bot's prompts can be localized using JSON files stored in your bots directory structure. If you’re using a system like LUIS to perform natural language processing you can configure your [LuisRecognizer](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.luisrecognizer) with a separate model for each language your bot supports and the SDK automatically selects the model that matches the user's preferred locale.
+Bot Builder includes a rich localization system for building bots that can communicate with the user in multiple languages. All of your bot's prompts can be localized using JSON files stored in your bots directory structure. If you’re using a system like LUIS to perform natural language processing you can configure your [LuisRecognizer][LUISRecognizer] with a separate model for each language your bot supports and the SDK automatically selects the model that matches the user's preferred locale.
 
 ## Determine the locale by prompting the user
-The first step to localizing your bot for the user is adding the ability to identify the user's preferred language. The SDK provides a [session.preferredLocale()](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#preferredlocale) method to both save and retrieve this preference on a per-user basis. The following example is a dialog to prompt the user for their preferred language and then save their choice.
+The first step to localizing your bot for the user is adding the ability to identify the user's preferred language. The SDK provides a [session.preferredLocale()][preferredLocal] method to both save and retrieve this preference on a per-user basis. The following example is a dialog to prompt the user for their preferred language and then save their choice.
 
 ``` javascript
 bot.dialog('/localePicker', [
@@ -88,7 +88,7 @@ bot.use({
 });
 ```
 
-Calling [session.preferredLocale()][SessionPreferredLocale] will automatically return the detected language if a user-selected locale hasn’t been assigned. The exact search order for **preferredLocale()** is:
+Calling [session.preferredLocale()][preferredLocal] will automatically return the detected language if a user-selected locale hasn’t been assigned. The exact search order for **preferredLocale()** is:
 * Locale saved by calling **session.preferredLocale()**. This value is stored in **session.userData['BotBuilder.Data.PreferredLocale']**.
 * Detected locale assigned to **session.message.textLocale**.
 * The configured default locale for the bot.
@@ -126,11 +126,11 @@ For more information on LUIS see [Understanding Natural Language][LUISConcepts].
 [LUIS]: https://www.luis.ai/
 [IMessage]: http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.imessage
 [IntentRecognizerSetOptions]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iintentrecognizersetoptions.html
-[LuisRecognizer]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.luisrecognizer
+[LUISRecognizer]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.luisrecognizer
 [LUISSample]: https://github.com/Microsoft/BotBuilder/blob/master/Node/examples/basics-naturalLanguage/app.js
 [LUISConcepts]: https://docs.botframework.com/en-us/node/builder/guides/understanding-natural-language/
 [DisambiguationSample]: https://github.com/Microsoft/BotBuilder/tree/master/Node/examples/feature-onDisambiguateRoute
-
-[SessionPreferredLocale]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#preferredlocale
+[preferredLocal]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#preferredlocale
 [GetText]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ilocalizer.html#gettext
 [IEFT]: https://en.wikipedia.org/wiki/IETF_language_tag
+

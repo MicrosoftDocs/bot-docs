@@ -15,7 +15,6 @@ ROBOTS: Index, Follow
 # Greet users who join a conversation or add your bot to their contacts using the Bot Builder SDK for Node.js
 
 
-
 This article demonstrates how your bot can handle events such as a user joining a conversation or adding a bot to their contacts list. 
 
  <!-- todo: Session and Converstaion and PrivateConversation --> 
@@ -53,8 +52,6 @@ For trigger actions you can provide an [onInterrupted][onInterrupted] handler to
 * [conversationUpdate][conversationUpdate]
 * [contactRelationUpdate][contactRelationUpdate]
 
-
-
 [conversationUpdate]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iconversationupdate.html
 [contactRelationUpdate]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.icontactrelationupdate.html
 
@@ -64,5 +61,5 @@ For trigger actions you can provide an [onInterrupted][onInterrupted] handler to
 
 [SendTyping]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#sendtyping
 [IMessage]: http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.imessage
-[ChatConnector]:https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.chatconnector.html
-[session_userData]:https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#userdata
+[ChatConnector]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.chatconnector.html
+[session_userData]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#userdata

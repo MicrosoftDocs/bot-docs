@@ -97,19 +97,19 @@ The following task-focused code samples demonstrate features of the Bot Builder 
 --> 
 <!-- TODO: Update links to point to new docs -->
 
-[PersistConversationData]:(https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iuniversalbotsettings.html#persistconversationdata)
+[PersistConversationData]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iuniversalbotsettings.html#persistconversationdata
 [UniversalBot]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.universalbot.html
 [ChatConnector]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.chatconnector.html
 
 [ChannelInspector]: https://docs.botframework.com/en-us/channel-inspector/channels/Skype
 
-[Session]: (https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html
+[Session]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html
 [SessionSend]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#send
 [SessionSendTyping]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#sendtyping
 [triggerAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#triggeraction
-[waterfall]:(~/nodejs/prompts.md)
-[SaveUserData]:(~/nodejs/save-user-data.md)
-[GetStarted]:(~/nodejs/getstarted.md)
+[waterfall]: ~/nodejs/prompts.md
+[SaveUserData]: ~/nodejs/save-user-data.md
+[GetStarted]: ~/nodejs/getstarted.md
 [RespondMessages]:use-default-message-handler.md
 
 [LUISRecognizer]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.luisrecognizer

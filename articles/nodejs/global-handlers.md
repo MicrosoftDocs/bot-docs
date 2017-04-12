@@ -41,11 +41,11 @@ Otherwise the action needs to be bound to a button click by using [CardAction.di
 There are five types of actions.
 | Action | Description |
 |------|------|
-| [triggerAction](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#triggeraction) | Binds an action to the dialog that will make it the active dialog when it is triggered.|
-[cancelAction](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#cancelaction) | Binds an action to the dialog that cancels the dialog when it is triggered. |
-[reloadAction](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#reloadaction) | Binds an action to the dialog that causes the dialog to be reloaded when it is triggered. You can use **reloadAction** to handle user utterances like "start over". |
-[beginDialogAction](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#begindialogaction) | Binds an action to the dialog that starts another dialog when it is triggered. |
-[endConversationAction](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#endconversationaction) | Binds an action to the dialog that ends the conversation with the user when triggered. |
+| [triggerAction][triggerAction] | Binds an action to the dialog that will make it the active dialog when it is triggered.|
+[cancelAction][cancelAction] | Binds an action to the dialog that cancels the dialog when it is triggered. |
+[reloadAction][reloadAction] | Binds an action to the dialog that causes the dialog to be reloaded when it is triggered. You can use **reloadAction** to handle user utterances like "start over". |
+[beginDialogAction][beginDialogAction] | Binds an action to the dialog that starts another dialog when it is triggered. |
+[endConversationAction][endConversationAction] | Binds an action to the dialog that ends the conversation with the user when triggered. |
 
 ## Triggering a help dialog
 
@@ -250,12 +250,21 @@ The examples in this topic demonstrated how to bind actions to dialogs using reg
 - [reloadAction][reloadAction]
 -->
 
-[ClickAction]: (https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.cardaction#dialogaction)
-[EndConversation]: (https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#endconversation)
-[EndConversationAction]: (https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#endconversationaction)
-[matches]: (https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.idialogactionoptions#matches)
-[reloadAction]: (https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#reloadaction)
+[ClickAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.cardaction#dialogaction
+[EndConversation]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#endconversation
+[EndConversationAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#endconversationaction
+[matches]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.idialogactionoptions#matches
 
-[PrivateConversationData]: (https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#privateconversationdata)
+[PrivateConversationData]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#privateconversationdata
 
 [RecognizeIntent]: recognize-intent.md
+
+[triggerAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#triggeraction
+
+[cancelAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#cancelaction
+
+[reloadAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#reloadaction
+
+[beginDialogAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#begindialogaction
+
+[endConversationAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#endconversationaction

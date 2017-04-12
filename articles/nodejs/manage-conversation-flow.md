@@ -102,8 +102,7 @@ bot.dialog('help', function (session) {
 ```
 
 Instead of adding logic to the main message handler for our bot, we’ve add a dialog named ‘help’ that 
-has a [triggerAction](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog#triggeraction) handler that specifies 
-a [matches](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.itriggeractionoptions#matches) clause with our regular expression. 
+has a [triggerAction][triggerAction] handler that specifies a [matches][matches] clause with our regular expression. 
 
 > [!NOTE]
 > Your can also add *recognizers* to your bot to determine the user's intent as soon as they send a message. If you use recognizers, **triggerAction** can be associated with a *named intent* instead of a regular expression. See [Recognize user intent][RecognizeUserIntent] for more information.
@@ -111,7 +110,7 @@ a [matches](http://docs.botframework.com/en-us/node/builder/chat-reference/inter
 
 Dialogs let you break your bots logic into logical components designed to perform a single task. In this example the ‘help’ dialog is designed to provide the user with help anytime they ask for it.
 The trigger action defines the rules for when this dialog should be started, which is anytime the user says “help”.
-The actual code for the dialog is very similar to our original sample but includes a call to [endDialog()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#enddialog) after the call to send(). 
+The actual code for the dialog is very similar to our original sample but includes a call to [endDialog()][endDialog] after the call to send(). 
 
 When a dialog is triggered it receives all future messages from the user until a call to endDialog() is made. 
 This behavior is one of the primary advantages to using dialogs but the call to endDialog() is sometimes overlooked, 
@@ -143,7 +142,7 @@ Prompts return to the caller an [IPromptResult][IPromptResult]. The user's respo
 
 In the following example the bot's message handler takes an array of functions (a waterfall) instead of a single function.
 When a user sends a message to our bot, the first function in our waterfall will get called and we can use 
-the [text()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts#text) prompt to ask the user for their name. 
+the [text()][text] prompt to ask the user for their name. 
 Their response will be passed to the second function in our waterfall which will send the user a customized greeting.
 This cascading sequence of questions and responses is what gives the waterfall feature its name. 
 
@@ -171,7 +170,7 @@ To add logic to remember the user's name so that we only have to ask it once, se
 ## Handling cancel
 
 Waterfalls are powerful but what if the bot is asking the user a series of questions and the user decides they’d like to cancel what they’re doing?
-You can easily support that by adding a [cancelAction()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog#cancelaction) to your dialog.
+You can easily support that by adding a [cancelAction()][cancelAction] to your dialog.
 We can update our ‘buyButtonClick’ dialog with a cancel action that triggers anytime the user says the word “cancel”. 
 
 ```javascript
@@ -189,8 +188,7 @@ The important thing to note is that this action will only be triggered if the di
 By default, when the user says something that triggers a dialog it will automatically interrupt any dialogs that are active. 
 In most cases you’ll find that this is desirable, but they’re may be times where you’re doing something large or complex and you’d like to just confirm that 
 canceling the active dialog is what the user wants to do.
-This can be easily accomplished by adding a [confirmPrompt](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.itriggeractionoptions#confirmprompt) 
-option to your triggerAction() or cancelAction(). 
+This can be easily accomplished by adding a [confirmPrompt][confirmPrompt] option to your triggerAction() or cancelAction(). 
 
 ```javascript
 // Add dialog to handle 'Buy' button click
@@ -290,9 +288,7 @@ Users of your bot will expect a timely response to their message. If your bot pe
 
 The following example demonstrates how to send a typing indication using [session.sendTyping()][SendTyping].  
 
-
 ```javascript
-
 // Create bot and default message handler
 var bot = new builder.UniversalBot(connector, function (session) {
     session.sendTyping();
@@ -301,12 +297,7 @@ var bot = new builder.UniversalBot(connector, function (session) {
     }, 3000);
 });
 
-
 ```
-
-
-
-
 
 ## Additional resources
 
@@ -322,13 +313,10 @@ var bot = new builder.UniversalBot(connector, function (session) {
 [RecognizeUserIntent]: ~/nodejs/recognize-intent.md
 [SaveUserData]: ~/nodejs/save-user-data.md
 
-
-
 [UniversalBot]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.universalbot.html
 [ChatConnector]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.chatconnector.html
 [sprintf]: http://www.diveintojavascript.com/projects/javascript-sprintf
 [Session]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session
-
 
 [SendTyping]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#sendtyping
 [EndDialogWithResult]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#enddialogwithresult
@@ -352,3 +340,10 @@ var bot = new builder.UniversalBot(connector, function (session) {
 [PromptsAttachment]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts.html#attachment
 [IPromptAttachmentResult]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptattachmentresult.html
 
+[triggerAction]: http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog#triggeraction
+[matches]: http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.itriggeractionoptions#matches
+
+[endDialog]: http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#enddialog
+[text]: http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts#text
+[cancelAction]: http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog#cancelaction
+[confirmPrompt]: http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.itriggeractionoptions#confirmprompt

@@ -123,7 +123,9 @@ bot.on("event", function (event) {
 
 ## Additional resources
 
-- <a href="https://docs.botframework.com/en-us/restapi/directline3/#navtitle" target="_blank">Direct Line API</a>
+- [Direct Line API][directLineAPI]
 - <a href="https://github.com/Microsoft/BotFramework-WebChat" target="_blank">Microsoft Bot Framework WebChat control</a>
 - <a href="https://github.com/Microsoft/BotFramework-WebChat/blob/master/samples/backchannel/index.html" target="_blank">Backchannel sample</a>
 - <a href="https://github.com/ryanvolum/backChannelBot" target="_blank">Backchannel bot</a>
+
+[directLineAPI]: https://docs.botframework.com/en-us/restapi/directline3/#navtitle
