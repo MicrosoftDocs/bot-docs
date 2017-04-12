@@ -20,7 +20,7 @@ The Azure Bot Service bots are built on Azure. Even though your bot’s code sta
 
 First, you need to set up your environment. You’ll need:
 - A local copy of your Azure Bot Service code for  [continuous integration](~/azure-bot-service/continuous-integration.md)
-- The <a href="https://docs.botframework.com/en-us/downloads/" target="_blank">Bot Framework Emulator</a> for Mac, Linux, or Windows</a>
+- The [Bot Framework Emulator](~/debug-bots-emulator.md) for Mac, Linux, or Windows</a>
 - Node or other code editor such as <a href="https://code.visualstudio.com/" target="_blank">Mac, Linux, Windows</a>Visual Studio Code for <a href="https://code.visualstudio.com/" target="_blank"></a> for Mac, Linux, or Windows
 
 After setting up your environment, the simplest way to run the bot locally is to start your bot in Node, and then connect to it from Bot Framework Emulator. 
@@ -76,7 +76,7 @@ The C# environment in Azure Bot Service has more in common with Node.js than a t
 First, you need to set up your environment. You’ll need:
 
 - A local copy of your Azure Bot Service code for  [continuous integration](~/azure-bot-service/continuous-integration.md)
-- The <a href="https://docs.botframework.com/en-us/downloads/" target="_blank">Bot Framework Emulator</a> for Mac, Linux, or Windows</a>
+- The [Bot Framework Emulator](~/debug-bots-emulator.md) for Mac, Linux, or Windows</a>
 - The <a href="https://www.npmjs.com/package/azure-functions-cli" target="_blank">Azure Functions CLI</a> from npm.  
 - The <a href="https://github.com/dotnet/cli" target="_blank">DotNet CLI</a> from Github.
 

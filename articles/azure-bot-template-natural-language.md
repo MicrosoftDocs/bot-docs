@@ -42,7 +42,7 @@ The naming convention for intent handlers is:
 
 `NonIntent` is the name for the intent. In the example below, the dialog will handle the "None" intent which LUIS returns if it cannot determine the intent. You will still need to define the "MyIntent" intent in your LUIS model. The `LuisIntent` method attribute defines the method as an intent handler. Keep in mind, that the name in the `LuisIntent` attribute must match the name you used in your model.
 
-The `BasicLuisDialog` object inherits from the <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d8/df9/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_luis_dialog.html/" target="_blank">LuisDialog</a> object. The `LuisDialog` object contains the `StartAsync` and `MessageReceived` methods. When the dialog’s instantiated, the dialog’s `StartAsync` method runs and calls `IDialogContext.Wait` with the continuation delegate that’s called when there is a new message. In the initial case, there is an immediate message available (the one that launched the dialog) and the message is immediately passed to the `MessageReceived` method in the `LuisDialog` object.
+The `BasicLuisDialog` object inherits from the [LuisDialog][luisDialog] object. The `LuisDialog` object contains the `StartAsync` and `MessageReceived` methods. When the dialog’s instantiated, the dialog’s `StartAsync` method runs and calls `IDialogContext.Wait` with the continuation delegate that’s called when there is a new message. In the initial case, there is an immediate message available (the one that launched the dialog) and the message is immediately passed to the `MessageReceived` method in the `LuisDialog` object.
 
 The `MessageReceived` method calls your LUIS application model to determine intent and then calls the appropriate intent handler in the `BasicLuisDialog` object. The handler processes the intent and then waits for the next message from the user.
 
@@ -51,6 +51,10 @@ The `MessageReceived` method calls your LUIS application model to determine inte
 ## Additional resources
 
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub Repo</a>
-- <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/" target="_blank">Bot Builder SDK C# Reference</a>
+- [Bot Builder SDK C# Reference][botBuilderSDKReference]
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder SDK</a>
 - <a href="https://www.luis.ai/Help" target="_blank">LUIS documentation</a>
+
+[luisDialog]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d8/df9/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_luis_dialog.html/
+
+[botBuilderSDKReference]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/

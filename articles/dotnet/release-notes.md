@@ -63,7 +63,8 @@ This article describes the changes that have been introduced by each version of 
 
 ### Changes
 
-- Updated to Bot Framework v3.1 `JwtToken`. For more information about v3.1 token changes, see the <a href="https://docs.botframework.com/en-us/restapi/authentication/#changes" target="_blank">Authentication</a>.
+- Updated to Bot Framework v3.1 `JwtToken`. For more information about v3.1 token changes, 
+see [Authentication][authentication].
 
 - Implemented general bug fixes and code refactoring.
 
@@ -161,21 +162,21 @@ This article describes the changes that have been introduced by each version of 
 ## <a href="https://www.nuget.org/packages/Microsoft.Bot.Builder/3.0.0" target="_blank">v3.0.0</a>
 
 > [!NOTE]
-> This version of the SDK reflects changes that were implemented in <a href="https://docs.botframework.com/en-us/support/upgrade-to-v3/#navtitle" target="_blank">version 3 of the Bot Connector API</a>. 
+> This version of the SDK reflects changes that were implemented in [version 3 of the Bot Connector API][connectorAPIv3]. 
 
 ### Breaking changes
 
-- Updated schema to v3. `Message` is now [Activity](~/dotnet/activities.md) and there is a <a href="http://docs.botframework.com/en-us/support/upgrade-code-to-v3/#addressing" target="_blank">new addressing scheme</a>.
-- <a href="http://docs.botframework.com/en-us/support/upgrade-code-to-v3/#sending-replies" target="_blank">Changed reply model</a> such that replies to the user will be sent asynchronously over a separately initiated HTTP request rather than inline with the HTTP POST for the incoming message to bot.
-- Updated <a href="http://docs.botframework.com/en-us/restapi/authentication/#navtitle" target="_blank">Authentication model</a>.
-- Decoupled bot data storage <a href="http://docs.botframework.com/en-us/csharp/builder/sdkreference/stateapi.html" target="_blank">Bot State</a> from messaging API.
+- Updated schema to v3. `Message` is now [Activity](~/dotnet/activities.md) and there is a [new addressing scheme][addressing].
+- [Changed reply model][sendingReplies] such that replies to the user will be sent asynchronously over a separately initiated HTTP request rather than inline with the HTTP POST for the incoming message to bot.
+- Updated [Authentication model][authenticationModel].
+- Decoupled bot data storage [Bot State][stateAPI] from messaging API.
 - Added [new card format](~/dotnet/add-rich-card-attachments.md) for attachments.
 
 ### Changes
 
 - Combined Bot Builder and Bot Connector into one <a href="https://www.nuget.org/packages/Microsoft.Bot.Builder/" target="_blank">NuGet package</a>.
 - Made Bot Connector open source.
-- Published <a href="https://www.nuget.org/packages/Microsoft.Bot.Builder.calling" target="_blank">Bot.Builder.Calling</a> NuGet package that can be used to build <a href="http://docs.botframework.com/en-us/skype/calling/#navtitle" target="_blank">Skype Calling bots</a>.
+- Published <a href="https://www.nuget.org/packages/Microsoft.Bot.Builder.calling" target="_blank">Bot.Builder.Calling</a> NuGet package that can be used to build [Skype Calling bots][skypeCallingBot].
 
 ## <a href="https://www.nuget.org/packages/Microsoft.Bot.Builder/1.2.5" target="_blank">v1.2.5</a>
 
@@ -327,3 +328,16 @@ This article describes the changes that have been introduced by each version of 
 - Updated **nuspec** with better description.
 - Added error-resilient context store.
 
+[authentication]: https://docs.botframework.com/en-us/restapi/authentication/#changes
+
+[connectorAPIv3]: https://docs.botframework.com/en-us/support/upgrade-to-v3/#navtitle
+
+[addressing]: http://docs.botframework.com/en-us/support/upgrade-code-to-v3/#addressing
+
+[sendingReplies]: http://docs.botframework.com/en-us/support/upgrade-code-to-v3/#sending-replies
+
+[authenticationModel]: http://docs.botframework.com/en-us/restapi/authentication/#navtitle
+
+[stateAPI]: http://docs.botframework.com/en-us/csharp/builder/sdkreference/stateapi.html
+
+[skypeCallingBot]: http://docs.botframework.com/en-us/skype/calling/#navtitle

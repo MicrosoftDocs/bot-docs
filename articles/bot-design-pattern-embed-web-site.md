@@ -13,7 +13,6 @@ ms.reviewer: rstand
 ---
 # Embedding bots in websites
 
-
 Although bots commonly exist outside of websites, they can also be embedded within a website. 
 For example, you may embed a [knowledge bot](~/bot-design-pattern-knowledge-base.md) within a website 
 to enable users to quickly find information that might otherwise be challenging to locate within complex website structures. 
@@ -39,7 +38,7 @@ Even after the web browser is closed, the user may continue to interact with the
 
 The <a href="https://github.com/Microsoft/BotFramework-WebChat" target="_blank">open source web chat control</a> 
 is based upon ReactJS and uses the 
-[Direct Line API](https://docs.botframework.com/en-us/restapi/DirectLine3/#navtitle) 
+[Direct Line API][directLineAPI] 
 to communicate with the Bot Framework. The web chat control provides a blank canvas for implementing the web chat, 
 giving you full control over its behaviors and the user experience that it delivers. 
 
@@ -59,7 +58,7 @@ This capability enables a number of useful scenarios:
 
 ## Additional resources
 
-- <a href="https://docs.botframework.com/en-us/restapi/DirectLine3/#navtitle" target="_blank">Direct Line API</a>
+- [Direct Line API][directLineAPI]
 - [Activity types](~/dotnet/activities.md)
 - [Use the backchannel mechanism](~/nodejs/backchannel.md)
 
@@ -69,3 +68,5 @@ explored the process of using the `backchannel` mechanism to facilitate private 
 For a detailed walk through of how to use the backchannel mechanism with the 
 open source web chat control with Node.js, see [Use the backchannel mechanism](~/nodejs/backchannel.md). 
 -->
+
+[directLineAPI]: https://docs.botframework.com/en-us/restapi/DirectLine3/#navtitle

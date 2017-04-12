@@ -27,7 +27,7 @@ The way to integrate a bot with an app varies depending on the type of app.
 
 ### Native mobile app
 An app that is created in native code can communicate with the Bot Framework by using 
-the [Direct Line API](https://docs.botframework.com/en-us/restapi/DirectLine3/#navtitle), 
+the [Direct Line API][directLineAPI], 
 either via REST or websockets.
 
 ### Web-based mobile app
@@ -38,13 +38,13 @@ just encapsulated within a native app's shell.
 
 ### IoT app
 An IoT app can communicate with the Bot Framework by using 
-the [Direct Line API](https://docs.botframework.com/en-us/restapi/DirectLine3/#navtitle). 
+the [Direct Line API][directLineAPI]. 
 In some scenarios, it may also use <a href="https://www.microsoft.com/cognitive-services/" target="_blank">Microsoft Cognitive Services</a> 
 to enable capabilities such as vision and speech.
 
 ### Other types of apps and games
 Other types of apps and games can communicate with the Bot Framework by using 
-the [Direct Line API](https://docs.botframework.com/en-us/restapi/DirectLine3/#navtitle). 
+the [Direct Line API][directLineAPI]. 
 
 ## Creating a cross-platform mobile app that runs a bot
 
@@ -79,7 +79,7 @@ that renders the embedded web view with the web chat control.
 
 ## Additional resources
 
-- <a href="https://docs.botframework.com/en-us/restapi/DirectLine3/#navtitle" target="_blank">Direct Line API</a>
+- [Direct Line API][directLineAPI]
 - <a href="https://www.microsoft.com/cognitive-services/" target="_blank">Microsoft Cognitive Services</a>
 - [Add smarts to your bot with Microsoft Cognitive Services](~/intelligent-bots.md)
 
@@ -92,3 +92,4 @@ review the following resources:
 > [!NOTE]
 > To do: Add links to the code sample (and readme) that Mat refers to.-->
  
+[directLineAPI]: https://docs.botframework.com/en-us/restapi/DirectLine3/#navtitle

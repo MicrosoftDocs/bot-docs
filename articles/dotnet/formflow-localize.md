@@ -35,7 +35,7 @@ Instead, you can generate a resource file for the static strings in your form ei
 ### Use IFormBuilder.SaveResources
 
 You can generate a resource file by 
-calling [IFormBuilder.SaveResources](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d8/d45/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form.html#a6d6737133a2dcae9ffbb713db8d3399f) on your form to save the strings to a .resx file.
+calling [IFormBuilder.SaveResources][saveResources] on your form to save the strings to a .resx file.
 
 ### Use RView
 
@@ -84,10 +84,10 @@ completing these steps:
 2. Click **Assembly Information**.
 3. Select the **Neutral Language** value that corresponds to the language in which you developed your bot.
 
-When your form is created, the [IFormBuilder.Build](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html#aff9c6f19d725d19c23904d2e44c8daed) method will automatically look for resources that contain your form type name and use them to localize the static strings in your form. 
+When your form is created, the [IFormBuilder.Build][build] method will automatically look for resources that contain your form type name and use them to localize the static strings in your form. 
 
 > [!NOTE]
-> Dynamically-computed fields that are defined using [Advanced.Field.SetDefine](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a28233c49a6abf58c2397bd397151278a) 
+> Dynamically-computed fields that are defined using [Advanced.Field.SetDefine][setDefine] 
 > (as described in [Using Dynamic Fields](formflow-formbuilder.md#dynamically-define)) 
 > cannot be localized in the same manner as static fields, 
 > since strings for dynamically-computed fields are constructed at the time the form is populated. 
@@ -171,3 +171,9 @@ Par pain "neuf" vouliez-vous dire (1. Neuf grains miel avoine, ou 2. Neuf grains
 - [Customize a form using FormBuilder](~/dotnet/formflow-formbuilder.md)
 - [Define a form using JSON schema](~/dotnet/formflow-json-schema.md)
 - [Customize user experience with pattern language](~/dotnet/formflow-pattern-language.md)
+
+[build]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html#aff9c6f19d725d19c23904d2e44c8daed 
+
+[setDefine]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a28233c49a6abf58c2397bd397151278a
+
+[saveResources]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d8/d45/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form.html#a6d6737133a2dcae9ffbb713db8d3399f

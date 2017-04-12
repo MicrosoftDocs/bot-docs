@@ -65,5 +65,7 @@ The **functions.json** configuration file looks like this.
 ## Additional resources
 
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub Repo </a>
-- <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/" target="_blank">Bot Builder SDK C# Reference</a>
+- [Bot Builder SDK C# Reference][botBuilderSDKReference]
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder SDK</a>
+
+[botBuilderSDKReference]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/

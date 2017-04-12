@@ -38,10 +38,10 @@ keywords:
 |----|----|
 | type | Defines the type of data that the field contains. |
 | enum | Defines the valid values for the field. |
-| minimum | Defines the minimum numeric value allowed for the field (as described in [NumericAttribute](https://docs.botframework.com/en-us/csharp/builder/sdkreference/df/d31/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_numeric_attribute.html)). |
-| maximum | Defines the maximum numeric value allowed for the field (as described in [NumericAttribute](https://docs.botframework.com/en-us/csharp/builder/sdkreference/df/d31/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_numeric_attribute.html)). |
+| minimum | Defines the minimum numeric value allowed for the field (as described in [NumericAttribute][numericAttribute]). |
+| maximum | Defines the maximum numeric value allowed for the field (as described in [NumericAttribute][numericAttribute]). |
 | required | Defines which fields are required. |
-| pattern | Validates string values (as described in [PatternAttribute](https://docs.botframework.com/en-us/csharp/builder/sdkreference/da/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_pattern_attribute.html)). |
+| pattern | Validates string values (as described in [PatternAttribute][patternAttribute]). |
 
 ## Extensions to JSON Schema
 
@@ -64,8 +64,7 @@ to support several additional properties.
 | Prompt | `{ Patterns:[string, ...] <args>}` |
 
 To specify templates and prompts in JSON schema, use the same vocabulary as defined by 
-[TemplateAttribute](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d7/d0a/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_template_attribute.html) and 
-[PromptAttribute](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d0/d34/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_prompt_attribute.html). 
+[TemplateAttribute][templateAttribute] and [PromptAttribute][promptAttribute]. 
 Property names and values in the schema should match the property names and values in the underlying C# enumeration. 
 For example, this schema snippet defines a template that overrides the `TemplateUsage.NotUnderstood` template and specifies a `TemplateBaseAttribute.ChoiceStyle`: 
 
@@ -78,7 +77,7 @@ For example, this schema snippet defines a template that overrides the `Template
 | Property | Contents | Description |
 |----|----|----|
 | DateTime | bool | Indicates whether field is a `DateTime` field. |
-| Describe | string or object | Description of a field as described in [DescribeAttribute](https://docs.botframework.com/en-us/csharp/builder/sdkreference/dd/d38/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_describe_attribute.html). |
+| Describe | string or object | Description of a field as described in [DescribeAttribute][describeAttribute]. |
 | Terms | `[string,...]` | Regular expressions for matching a field value as described in TermsAttribute. |
 | MaxPhrase | int | Runs your terms through `Language.GenerateTerms(string, int)` to expand them. |
 | Values | `{ string: {Describe:string|object, Terms:[string, ...], MaxPhrase}, ...}` | The string must be found in the type's enumeration. This allows you to override the automatically generated descriptions and terms. If `MaxPhrase` is specified, the terms are passed through `Language.GenerateTerms(string, int)`. |
@@ -335,3 +334,14 @@ that is described in [Customize a form using FormBuilder](~/dotnet/formflow-form
 - [Customize a form using FormBuilder](~/dotnet/formflow-formbuilder.md)
 - [Localize form content](~/dotnet/formflow-localize.md)
 - [Customize user experience with pattern language](~/dotnet/formflow-pattern-language.md)
+
+
+[numericAttribute]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/df/d31/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_numeric_attribute.html
+
+[patternAttribute]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/da/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_pattern_attribute.html
+
+[templateAttribute]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d7/d0a/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_template_attribute.html
+
+[promptAttribute]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d0/d34/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_prompt_attribute.html
+
+[describeAttribute]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/dd/d38/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_describe_attribute.html

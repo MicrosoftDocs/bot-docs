@@ -18,8 +18,7 @@ ms.reviewer:
 delivers a fairly generic user experience, and [Advanced features of FormFlow](~/dotnet/formflow-advanced.md) describes how you can 
 customize user experience by using business logic and attributes. 
 This article describes how you can use 
-[FormBuilder](https://docs.botframework.com/en-us/csharp/builder/sdkreference/de/d9d/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder.html) 
-to customize user experience even further, by 
+[FormBuilder][formBuilder] to customize user experience even further, by 
 specifying the sequence in which the form executes steps 
 and dynamically defining field values, confirmations, and messages. 
 
@@ -42,19 +41,20 @@ This code example shows how to dynamically set the value of the `Specials` field
 
 [!code-csharp[Define value](~/includes/code/dotnet-formflow-formbuilder.cs#defineValue)]
 
-In this example, the [Advanced.Field.SetType](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a84d27b92be458b51a367c732e19a1fc2) method specifies the field type (`null` represents an enumeration field). 
-The [Advanced.Field.SetActive](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a048ce0f4bd1841ad37f3ed5f6e2df933) method specifies that the field 
+In this example, the [Advanced.Field.SetType][setType] method specifies 
+the field type (`null` represents an enumeration field). 
+The [Advanced.Field.SetActive][setActive] method specifies that the field 
 should only be enabled if the the length of the sandwich is `Length.FootLong`. 
-Finally, the [Advanced.Field.SetDefine](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a28233c49a6abf58c2397bd397151278a) method specifies an async 
+Finally, the [Advanced.Field.SetDefine][setDefine] method specifies an async 
 delegate that defines the field. 
-The delegate is passed the current state object and the [Advanced.Field](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html) that is being dynamically defined. 
+The delegate is passed the current state object and the [Advanced.Field][field] that is being dynamically defined. 
 The delegate uses the field's fluent methods to dynamically define values. 
 In this example, the values are strings and the `AddDescription` and `AddTerms` methods specify the descriptions and terms for each value.
 
 > [!NOTE]
 > To dynamically define a field value, you can implement 
-> [Advanced.IField](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d5/d09/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_field.html) yourself, 
-> or streamline the process by using the [Advanced.FieldReflector](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d0/db3/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field_reflector.html) class as shown in the example above. 
+> [Advanced.IField][iField] yourself, 
+> or streamline the process by using the [Advanced.FieldReflector][FieldReflector] class as shown in the example above. 
 
 ###<a id="define-message"></a> Dynamically define messages and confirmations
 
@@ -101,3 +101,18 @@ In this example, the form executes these steps:
 - [Localize form content](~/dotnet/formflow-localize.md)
 - [Define a form using JSON schema](~/dotnet/formflow-json-schema.md)
 - [Customize user experience with pattern language](~/dotnet/formflow-pattern-language.md)
+
+
+[formBuilder]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/de/d9d/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder.html
+
+[setType]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a84d27b92be458b51a367c732e19a1fc2
+
+[setActive]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a048ce0f4bd1841ad37f3ed5f6e2df933
+
+[setDefine]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a28233c49a6abf58c2397bd397151278a
+
+[field]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html
+
+[iField]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d5/d09/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_field.html
+
+[FieldReflector]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d0/db3/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field_reflector.html

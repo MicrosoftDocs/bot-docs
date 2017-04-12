@@ -34,7 +34,7 @@ To get started, you must obtain your own subscription key from the Microsoft Cog
 
 ### GIF search bot example
 
-For this example, you will build a few bots that use the Search APIs to help you get started. You will build a simple bot that searches the web for animated GIF images, via the Image Search API, and displays them to users. You will use the  <a href="http://docs.botframework.com/connector/getstarted/#getting-started-in-net" target="_blank">Bot Application .NET template</a> as a starting point. Note that this example, as well as subsequent ones, require the `Newtonsoft.JSON` package, which can be obtained via <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">NuGet</a>.
+For this example, you will build a few bots that use the Search APIs to help you get started. You will build a simple bot that searches the web for animated GIF images, via the Image Search API, and displays them to users. You will use the  [Bot Application .NET template](~/dotnet/getstarted.md#prerequisites) as a starting point. Note that this example, as well as subsequent ones, require the `Newtonsoft.JSON` package, which can be obtained via <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">NuGet</a>.
 
 After you create your project with the Bot Application template, add the `Newtonsoft.JSON` package and create a new C# class file (**BingImageSearchResponse.cs**) with the following code. This class will serve as our model for the JSON response returned by the Image Search API.
 

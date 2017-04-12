@@ -30,7 +30,7 @@ The `MessageReceivedAsync` method creates the form and starts asking the questio
 
 [!code-csharp[Create form](~/includes/code/azure-form-bot.cs#createForm)]
 
-The `BasicForm` object defines the form. The `public` properties define the questions to ask. The `Prompt` property attribute contains the prompt text that’s shown to the user. Anything within curly brackets ({}) are substitution characters. For example, {&} tells the form to use the property’s name in the prompt. If the property’s data type is an enumeration, {||} tells the form to display the enumeration’s values as the list of possible values that the user can choose from. For example, the data type for the `Color` property is `ColorOptions`. When the form asks the user for their favorite car color, the form will display **1. Red**, **2. White**, and **3. Blue** as possible values. For more information about substitution strings, see <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/forms.html#patterns" target="_blank">Pattern Language</a>.
+The `BasicForm` object defines the form. The `public` properties define the questions to ask. The `Prompt` property attribute contains the prompt text that’s shown to the user. Anything within curly brackets ({}) are substitution characters. For example, {&} tells the form to use the property’s name in the prompt. If the property’s data type is an enumeration, {||} tells the form to display the enumeration’s values as the list of possible values that the user can choose from. For example, the data type for the `Color` property is `ColorOptions`. When the form asks the user for their favorite car color, the form will display **1. Red**, **2. White**, and **3. Blue** as possible values. For more information about substitution strings, see [Pattern Language][patternLanguage].
 
 [!code-csharp[Ask form questions](~/includes/code/azure-form-bot.cs#askQuestions)]
 
@@ -38,5 +38,9 @@ The `BasicForm` object defines the form. The `public` properties define the ques
 ##Additional Resources
 
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub Repo </a>
-- <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/" target="_blank">Bot Builder SDK C# Reference</a>- 
+- [Bot Builder SDK C# Reference][botBuilderSDKReference] 
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder SDK</a>
+
+[patternLanguage]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/forms.html#patterns
+
+[botBuilderSDKReference]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/

@@ -25,7 +25,7 @@ dialogs on your own, designing a guided conversation using FormFlow can signific
 to develop your bot. 
 Additionally, you may construct your bot using a combination of FormFlow-generated dialogs and other types of 
 dialogs. For example, a FormFlow dialog may guide the user through the process of completing a form, while a 
-<a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d8/df9/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_luis_dialog.html" target="_blank">LuisDialog</a> may evaluate user input to determine intent.
+[LuisDialog][LuisDialog] may evaluate user input to determine intent.
 
 This article describes how to create a bot that uses the basic features of FormFlow to 
 collect information from a user.
@@ -53,7 +53,8 @@ FormFlow ignores all other property types and methods.
 
 For complex objects, you must create a form for the top-level C# class and another form for the complex object. 
 You can compose the forms together by using typical [dialog](~/dotnet/dialogs.md) semantics. 
-It is also possible to define a form directly by implementing [Advanced.IField](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d5/d09/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_field.html) or using [Advanced.Field](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html) and populating the dictionaries within it. 
+It is also possible to define a form directly by implementing [Advanced.IField][iField] 
+or using [Advanced.Field][field] and populating the dictionaries within it. 
 
 > [!NOTE]
 > You can define a form by using either a C# class or JSON schema. 
@@ -67,8 +68,8 @@ Consider this example of a simple sandwich bot that is designed to obtain a user
 ###<a id="create-class"></a> Create the form
 
 The `SandwichOrder` class defines the form and the enumerations define the options for building a sandwich. 
-The class also includes the static `BuildForm` method that uses [FormBuilder](https://docs.botframework.com/en-us/csharp/builder/sdkreference/de/d9d/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder.html) to create the form and 
-define a simple welcome message. 
+The class also includes the static `BuildForm` method that uses [FormBuilder][formBuilder] 
+to create the form and define a simple welcome message. 
 
 To use FormFlow, you must first import the `Microsoft.Bot.Builder.FormFlow` namespace.
 
@@ -357,3 +358,10 @@ For more information, see [Advanced features of FormFlow](~/dotnet/formflow-adva
 - [Define a form using JSON schema](~/dotnet/formflow-json-schema.md)
 - [Customize user experience with pattern language](~/dotnet/formflow-pattern-language.md)
 
+[LuisDialog]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d8/df9/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_luis_dialog.html
+
+[iField]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d5/d09/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_field.html
+
+[field]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html
+
+[formBuilder]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/de/d9d/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder.html

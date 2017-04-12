@@ -103,4 +103,6 @@ You can design your bot to account for this scenario, as shown in this code samp
 ## Additional resources
 
 - [Bot Framework troubleshooting guide](~/troubleshoot-general-problems.md#state)
-- <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/db/dbb/namespace_microsoft_1_1_bot_1_1_connector.html" target="_blank">Connector library</a>
+- [Connector library][connectorLibrary]
+
+[connectorLibrary]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/db/dbb/namespace_microsoft_1_1_bot_1_1_connector.html

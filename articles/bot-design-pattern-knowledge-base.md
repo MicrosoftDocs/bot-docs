@@ -198,8 +198,7 @@ The Bot Builder SDK for Node.js and the Bot Builder SDK for C# provide built-in 
 This enables you to trigger dialogs or automatically answer questions using LUIS and/or QnA Maker without having to 
 implement custom calls to either tool. 
 For example, if LUIS has enabled you to determine intent, 
-you could trigger a [BasicQnAMakerDialog](https://docs.botframework.com/en-us/azure-bot-service/templates/qnamaker/#navtitle) 
-to initiate the process of answering the user's question. 
+you could trigger a [BasicQnAMakerDialog][qnamakerTemplate] to initiate the process of answering the user's question. 
 
 > [!TIP]
 > When implementing a combination of LUIS, QnA Maker, and/or Azure Search, 
@@ -222,3 +221,5 @@ To see sample code for bots that implement Search, QnA Maker, and LUIS functiona
 
 > [!NOTE]
 > To do: Add links to the C# and Node.js code samples that Mat refers to.-->
+
+[qnamakerTemplate]: https://docs.botframework.com/en-us/azure-bot-service/templates/qnamaker/#navtitle

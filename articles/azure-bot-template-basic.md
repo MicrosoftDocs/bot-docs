@@ -14,7 +14,7 @@ ms.reviewer:
 
 # Build a basic bot with dialogs
 
-The basic bot template demonstrates how to use [dialogs](~/dotnet/dialogs.md) to manage conversation flow with a user. When a user posts a message, it’s sent to the bot’s `Run` method in the **Run.csx** file. Before the bot processes the message, it first <a href="https://docs.botframework.com/en-us/restapi/authentication/" target="_blank">authenticates the request</a>. If the validation fails, the bot responds with "Unauthorized". 
+The basic bot template demonstrates how to use [dialogs](~/dotnet/dialogs.md) to manage conversation flow with a user. When a user posts a message, it’s sent to the bot’s `Run` method in the **Run.csx** file. Before the bot processes the message, it first [authenticates the request][authentication]. If the validation fails, the bot responds with "Unauthorized". 
 
 [!code-csharp[Authenticate request](~/includes/code/azure-basic-bot.cs#authenticateRequest)]
 
@@ -34,7 +34,7 @@ Most messages will have a `Message` activity type, and will contain the text and
 
 [!code-csharp[Show Dialog](~/includes/code/azure-basic-bot.cs#showDialog)]
 
-The `MessageReceivedAsync` method echoes the user’s input and counts the number of interactions with the user. If the user’s input is the word "reset", the method uses <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d9/d03/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog.html" target="_blank">PromptDialog</a> to confirm that the user wants to reset the counter. The method calls the `IDialogContext.Wait` method which suspends the bot until it receives the next message.
+The `MessageReceivedAsync` method echoes the user’s input and counts the number of interactions with the user. If the user’s input is the word "reset", the method uses [PromptDialog][promptDialog] to confirm that the user wants to reset the counter. The method calls the `IDialogContext.Wait` method which suspends the bot until it receives the next message.
 
 [!code-csharp[Set counter](~/includes/code/azure-basic-bot.cs#setCounter)]
 
@@ -53,7 +53,12 @@ Here are a few things you might consider as next steps when updating the code.
 
 - [Manage conversation flow using dialogs](~/dotnet/manage-conversation-flow.md)
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub Repo</a>
-- <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/" target="_blank">Bot Builder SDK C# Reference</a>
+- [Bot Builder SDK C# Reference][botBuilderSDKReference]
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder SDK</a>
 - <a href="https://www.luis.ai/Help" target="_blank">LUIS documentation</a>
 
+[authentication]: https://docs.botframework.com/en-us/restapi/authentication/
+
+[promptDialog]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d9/d03/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_prompt_dialog.html
+
+[botBuilderSDKReference]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/

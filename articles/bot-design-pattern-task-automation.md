@@ -95,7 +95,7 @@ Finally, the spec provides an example of a user communicating with the bot to su
 
 You may be wondering, if a task automation bot closely resembles an app or website, why not just build an app or website instead? 
 Depending on your particular scenario, building an app or website instead of a bot may be an entirely reasonable choice. 
-You may even choose to embed your bot into an app, by using the [Bot Framework Direct Line API](https://docs.botframework.com/en-us/restapi/DirectLine3/#navtitle) 
+You may even choose to embed your bot into an app, by using the [Bot Framework Direct Line API][directLineAPI] 
 or <a href="https://github.com/Microsoft/BotFramework-WebChat" target="_blank">Web Chat control</a>. 
 Implementing your bot within the context of an app provides the best of both worlds: a rich app experience and a conversational experience, all in one place. 
 
@@ -121,3 +121,5 @@ To access the sample code for the password-reset bot described in this article, 
 
 > [!NOTE]
 > To do: Add links to the C# and Node.js code samples that Mat refers to.-->
+
+[directLineAPI]: https://docs.botframework.com/en-us/restapi/DirectLine3/#navtitle

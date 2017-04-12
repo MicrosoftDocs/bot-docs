@@ -29,7 +29,7 @@ On messaging channels that support voice input, bots can leverage the Speech API
 
 ### Speech-To-Text example
 
-In this example, you will build a simple bot that leverages the Speech API to perform speech-to-text conversion. This bot receives an audio file and either responds with the transcribed text or provides some interesting information about the audio it received, such as word, character and vowel count. This example will use the <a href="http://docs.botframework.com/connector/getstarted/#getting-started-in-net" target="_blank">Bot Application .NET template</a> as a starting point. Note that this example requires the `Newtonsoft.JSON` package, which can be obtained via <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">NuGet</a>.
+In this example, you will build a simple bot that leverages the Speech API to perform speech-to-text conversion. This bot receives an audio file and either responds with the transcribed text or provides some interesting information about the audio it received, such as word, character and vowel count. This example will use the [Bot Application .NET template](~/dotnet/getstarted.md#prerequisites) as a starting point. Note that this example requires the `Newtonsoft.JSON` package, which can be obtained via <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">NuGet</a>.
 
 After you create your project with the Bot Application template, add the `Newtonsoft.JSON` package. 
 Next, go to **MessagesController.cs** and add the following namespaces.
@@ -303,7 +303,7 @@ public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
 
 ### Speaker recognition example
 
-For this example, you will build a bot that leverages the Speaker Recognition API. The code allows you to use voice for authentication scenarios. The bot receives the audio file, compares it against the sender’s voiceprint, and then responds back with an accept or reject decision as well as a confidence score. This example will use the <a href="http://docs.botframework.com/connector/getstarted/#getting-started-in-net)" target="_blank">Bot Application .NET template</a> as a starting point. Note that the example requires the `Microsoft.ProjectOxford.SpeakerRecognition` package, which can be obtained via <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">NuGet</a>.
+For this example, you will build a bot that leverages the Speaker Recognition API. The code allows you to use voice for authentication scenarios. The bot receives the audio file, compares it against the sender’s voiceprint, and then responds back with an accept or reject decision as well as a confidence score. This example will use the [Bot Application .NET template](~/dotnet/getstarted.md#prerequisites) as a starting point. Note that the example requires the `Microsoft.ProjectOxford.SpeakerRecognition` package, which can be obtained via <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">NuGet</a>.
 
 Before you begin, you need to enroll your voice by saying one of the <a href="https://dev.projectoxford.ai/docs/services/563309b6778daf02acc0a508/operations/5652c0801984551c3859634d" target="_blank">preselected passphrases</a>. The Speaker Verification service requires at least 3 enrollments, so the bot will ask for three enrollment audio files, and send a confirmation when the enrollment is completed.
 

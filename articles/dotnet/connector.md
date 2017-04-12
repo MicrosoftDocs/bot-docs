@@ -119,9 +119,11 @@ This code example uses the `CreateConversation` method to create a group convers
 
 ## Additional resources
 
-- <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/db/dbb/namespace_microsoft_1_1_bot_1_1_connector.html" target="_blank">Connector library</a>
+- [Connector library][connectorLibrary]
 - [Activity types](~/dotnet/activities.md)
 - [Create messages](~/dotnet/create-messages.md)
 - [Add media attachments to messages](~/dotnet/add-media-attachments.md)
 - [Add rich cards to messages](~/dotnet/add-rich-card-attachments.md)
 - [Implement channel-specific functionality](~/dotnet/channeldata.md)
+
+[connectorLibrary]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/db/dbb/namespace_microsoft_1_1_bot_1_1_connector.html

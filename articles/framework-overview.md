@@ -25,7 +25,7 @@ With the Bot Framework, you can design conversations in your bot to be freeform.
 Let's look at an example of a bot that schedules salon appointments. The bot understands the user's intent, presents appointment options using action buttons, displays the user's selection when they tap an appointment, and then sends a thumbnail card that contains the appointment's specifics.
 <p>
 <div style="text-align: center" markdown="1">
-![salon bot example](https://docs.botframework.com/en-us/images/connector/salon_bot_example.png)
+![salon bot example](~/media/salon_bot_example.png)
 </div>
 
 Bots are rapidly becoming an integral part of digital experiences. They are becoming as essential as a website or a mobile experience for users to interact with a service or application.

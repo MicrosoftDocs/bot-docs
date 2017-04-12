@@ -22,7 +22,7 @@ The Bot Framework Connector provides a single REST API that enables a bot to
 communicate across multiple channels such as Skype, Email, Slack, and more. 
 It facilitates communication between bot and user, 
 by relaying messages from bot to channel and from channel to bot. 
-In the Bot Builder SDK for .NET, the <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/db/dbb/namespace_microsoft_1_1_bot_1_1_connector.html" target="_blank">Connector</a> library enables access to the Connector. 
+In the Bot Builder SDK for .NET, the [Connector][connectorLibrary] library enables access to the Connector. 
 
 For details about using the Connector via the Bot Builder SDK for .NET, see [Send and receive activities](~/dotnet/connector.md).
 
@@ -37,7 +37,7 @@ see [Activity types](~/dotnet/activities.md).
 When you create a bot using the Bot Builder SDK for .NET, you can use dialogs to model 
 a conversation and manage [conversation flow](~/bot-design-conversation-flow.md). 
 A dialog can be composed with other dialogs to maximize reuse, and a dialog context maintains the [stack of dialogs](~/bot-design-conversation-flow.md#stack) that are active in the conversation at any point in time. 
-A conversation that comprises dialogs is portable across computers, which makes it possible for your bot implementation to scale. In the Bot Builder SDK for .NET, the <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html" target="_blank">Builder</a> library enables you to manage dialogs.
+A conversation that comprises dialogs is portable across computers, which makes it possible for your bot implementation to scale. In the Bot Builder SDK for .NET, the [Builder][builderLibrary] library enables you to manage dialogs.
 
 For details about using dialogs within the Bot Builder SDK for .NET, see 
 [Dialogs](~/dotnet/dialogs.md).
@@ -83,3 +83,6 @@ For more information on this topic, see [Secure your bot](~/dotnet/security.md).
 
 
 
+[connectorLibrary]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/db/dbb/namespace_microsoft_1_1_bot_1_1_connector.html
+
+[builderLibrary]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html

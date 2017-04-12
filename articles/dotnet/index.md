@@ -14,8 +14,6 @@ ms.reviewer:
 
 # Bot Builder SDK for .NET
 
-
-
 The Bot Builder SDK for .NET is a powerful framework for constructing bots that can handle both free-form interactions 
 and more guided conversations where the user selects from possible values. 
 It is easy to use and leverages C# to provide a familiar way for .NET developers to write bots.

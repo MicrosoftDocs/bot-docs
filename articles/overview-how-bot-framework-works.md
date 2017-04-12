@@ -68,11 +68,9 @@ The Direct Line API enables you to host your bot in your app rather than using o
 The framework also provides an embeddable Web chat control that lets you host from your website.
 
 ## Developer Portal
-When you finish writing your bot, you need to register it, connect it to channels, and finally publish it, using the Developer Portal.
+When you finish writing your bot, you need to [register it](~/portal-register-bot.md), [connect it to channels](~/portal-configure-channels.md), and finally [publish it](~/portal-submit-bot-directory.md), using the Developer Portal.
 Registering your bot describes it to the framework, and it’s how you get the bot’s app ID and password that’s used for authentication.
 Bots that you register are located at My bots in the portal.
-
-For more information on publishing a bot, see [Publish a bot](https://review.docs.microsoft.com/en-us/botframework/~/deploy/overview).
 
 ## Bot Directory
 The Bot Directory is a public directory of all bots that are registered and published with Microsoft Bot Framework. You are encouraged to always publish your bot because it makes it more discoverable.

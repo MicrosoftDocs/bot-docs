@@ -23,12 +23,12 @@ designate optional fields, match user input, and validate user input.
 
 ## Specify initial form state and entities
 
-When you launch a [FormDialog](https://docs.botframework.com/en-us/csharp/builder/sdkreference/db/de5/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_dialog.html), you may optionally pass in an instance of your state. 
+When you launch a [FormDialog][formDialog], you may optionally pass in an instance of your state. 
 If you do pass in an instance of your state, then by default, 
 FormFlow will skip steps for any fields that already contain values; 
 the user will not be prompted for those fields. 
 To force the form to prompt the user for all fields (including those fields that already contain values in the 
-initial state), pass in [FormOptions.PromptFieldsWithValues](https://docs.botframework.com/en-us/csharp/builder/sdkreference/dd/df7/namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow.html#a27be39918296ad3536d6a5c8d6ed5394aa796e574d8cf50f288b2e44ecd64764a) when you launch 
+initial state), pass in [FormOptions.PromptFieldsWithValues][promptFieldsWithValues] when you launch 
 the `FormDialog`. If a field contains an initial value, the prompt will use that value as the default value.
 
 You can also pass in [LUIS](http://luis.ai/) entities to bind to the state. 
@@ -41,7 +41,7 @@ the user will not be prompted for those fields.
 
 To handle interdependencies between form fields or apply specific logic during the process of getting or setting 
 a field value, you can specify business logic within a validation function. 
-A validation function lets you manipulate the state and return a [ValidateResult](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d4/d7b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_validate_result.html) object that can contain: 
+A validation function lets you manipulate the state and return a [ValidateResult][validateResult] object that can contain: 
 
 - a feedback string that describes the reason that a value is invalid
 - a transformed value
@@ -85,13 +85,13 @@ You can add these C# attributes to your class to customize behavior of a FormFlo
 
 | Attribute | Purpose |
 |----|----| 
-| [Describe](https://docs.botframework.com/en-us/csharp/builder/sdkreference/dd/d38/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_describe_attribute.html) | Alter how a field or a value is shown in a template or card |
-| [Numeric](https://docs.botframework.com/en-us/csharp/builder/sdkreference/df/d31/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_numeric_attribute.html) | Restrict the accepted values of a numeric field |
-| [Optional](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d7/d6f/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_optional_attribute.html) | Mark a field as optional |
-| [Pattern](https://docs.botframework.com/en-us/csharp/builder/sdkreference/da/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_pattern_attribute.html) | Define a regular expression to validate a string field |
-| [Prompt](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d0/d34/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_prompt_attribute.html) | Define the prompt for a field |
-| [Template](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d7/d0a/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_template_attribute.html) | Define the template to use to generate prompts or values in prompts |
-| [Terms](https://docs.botframework.com/en-us/csharp/builder/sdkreference/d2/d27/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_terms_attribute.html) | Define the input terms that match a field or value |
+| [Describe][describeAttribute] | Alter how a field or a value is shown in a template or card |
+| [Numeric][numericAttribute] | Restrict the accepted values of a numeric field |
+| [Optional][optionalAttribute] | Mark a field as optional |
+| [Pattern][patternAttribute] | Define a regular expression to validate a string field |
+| [Prompt][promptAttribute] | Define the prompt for a field |
+| [Template][templateAttribute] | Define the template to use to generate prompts or values in prompts |
+| [Terms][termsAttribute] | Define the input terms that match a field or value |
 
 ##<a id="prompt-attribute"></a> Customize prompts using the Prompt attribute
 
@@ -197,7 +197,8 @@ To do so, you can define multiple text strings using
 [pattern language](~/dotnet/formflow-pattern-language.md), and the form will randomly choose 
 from the available options each time it needs to display a prompt or message.
 
-This code example redefines the [TemplateUsage.NotUnderstood](https://docs.botframework.com/en-us/csharp/builder/sdkreference/dd/df7/namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow.html#a28ef6a551a3611e4a6abe06659797313aca296fd71c8deadb1bccdad8e097bc50) template to specify two different variations of 
+This code example redefines the [TemplateUsage.NotUnderstood][notUnderstood] 
+template to specify two different variations of 
 message. When the bot needs to communicate that it does not understand a user's input, it will 
 determine message contents by randomly selecting one of the two text strings. 
 
@@ -329,3 +330,25 @@ see [Customize a form using FormBuilder](~/dotnet/formflow-formbuilder.md).
 - [Localize form content](~/dotnet/formflow-localize.md)
 - [Define a form using JSON schema](~/dotnet/formflow-json-schema.md)
 - [Customize user experience with pattern language](~/dotnet/formflow-pattern-language.md)
+
+[formDialog]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/db/de5/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_dialog.html
+
+[promptFieldsWithValues]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/dd/df7/namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow.html#a27be39918296ad3536d6a5c8d6ed5394aa796e574d8cf50f288b2e44ecd64764a
+
+[validateResult]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d4/d7b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_validate_result.html
+
+[describeAttribute]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/dd/d38/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_describe_attribute.html
+
+[numericAttribute]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/df/d31/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_numeric_attribute.html
+
+[optionalAttribute]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d7/d6f/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_optional_attribute.html
+
+[patternAttribute]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/da/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_pattern_attribute.html
+
+[promptAttribute]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d0/d34/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_prompt_attribute.html
+
+[templateAttribute]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d7/d0a/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_template_attribute.html
+
+[termsAttribute]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d2/d27/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_terms_attribute.html
+
+[notUnderstood]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/dd/df7/namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow.html#a28ef6a551a3611e4a6abe06659797313aca296fd71c8deadb1bccdad8e097bc50
