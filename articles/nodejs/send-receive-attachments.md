@@ -30,6 +30,10 @@ There are four types of rich cards.
 |[ThumbnailCard](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.thumbnailcard.html) | The Thumbnail card typically contains a single small image, one or more buttons, and text.|
 
 -->
+The types of attachments that can be sent varies by channel but these are the basic types:
+
+* **Media and Files**: You can send files like images, audio and video by setting **contentType** to the MIME type of the [IAttachment object](https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iattachment.html) and then passing a link to the file in **contentUrl**.
+* **Cards**: You can send a rich set of visual cards <!-- and custom keyboards --> by setting the **contentType** of the attachment to the card's type and then passing the JSON for the card in content. If you use one of the rich card builder classes like **HeroCard** the attachment is automatically filled in for you. See [send a rich card](send-card-buttons.md) for an example of this.
 
 ## Send and receive an image attachment
 

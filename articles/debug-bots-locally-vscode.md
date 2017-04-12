@@ -25,7 +25,7 @@ For purposes of this walkthrough we’ll use the [ConsoleConnector](https://gith
 ![Step 1: Launch VS Code](~/media/debug-vscode/builder-debug-step1.png)
 
 ## Launch your bot
-The ConsoleConnector example illustrates running a bot on multiple platforms which is the key to debugging your bot locally. To debug locally you need a version of your bot that can run from a console window using the [ConsoleConnector][ConsoleConnector] class. For the TodoBot we can run it locally by launching the textBot.js class. To debug this class using VS Code, launch Node.js with the `\-\-debug-brk` flag, which causes it to immediately break. From a console window, type `node \-\-debug-brk textBot.js`.
+The ConsoleConnector example illustrates running a bot on multiple platforms which is the key to debugging your bot locally. To debug locally you need a version of your bot that can run from a console window using the [ConsoleConnector][ConsoleConnector] class. You can run the  ConsoleConnector example locally by launching the app.js class. To debug this class using VS Code, launch Node.js with the `\-\-debug-brk` flag, which causes it to immediately break. From a console window, type `node \-\-debug-brk textBot.js`.
 
 ![Step 2: Launch Bot](~/media/debug-vscode/builder-debug-step2.png)
 
