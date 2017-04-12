@@ -6,19 +6,33 @@ author: RobStand
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 03/07/2017
+ms.date:
 ms.reviewer:
 
 # Include the following line commented out
 #ROBOTS: Index
-#REVIEW
 ---
 >[!WARNING]
 > Content is still under development.
 
 # How the Bot Framework works
 The Bot Framework provides tools and SDKs for building bots.
+
+## Core concepts
+Bots have dialogs, activities/messages, etc.
+
+## Build with the SDK
+SDK features
+
+## Debug and test with the emulator
+Use the emulator
+
+## Connecting to channels
+Channel features
+
+## Publish with the portal
+
+## Some content to leverage
 
 ### Bot Builder SDKs
 These SDKs provide features such as dialogs and built-in prompts that make interacting with users much simpler. They provide access to Microsoft Cognitive Services APIs which give your bot more human-like intelligence. These APIs include LUIS for natural language understanding, Cortana for voice, and the Bing APIs for search. For more information about adding intelligence to your bot, see [Bot Intelligence](/en-us/bot-intelligence/getting-started/).
