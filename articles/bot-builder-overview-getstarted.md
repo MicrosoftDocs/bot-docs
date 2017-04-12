@@ -36,7 +36,7 @@ You can write your bot in C# or Node.js directly in the browser using the Azure 
 > [!NOTE]
 > The Azure Bot Service is currently in preview so it should not be used for building production bots.
 
-The [detailed walkthrough](~/azure-bot-service-getstarted.md) will guide you through building a bot with the Azure Bot Service.
+The [detailed walkthrough](~/azure/azure-bot-service-getstarted.md) will guide you through building a bot with the Azure Bot Service.
 
 [connectorAPI]: https://docs.botframework.com/en-us/restapi/connector/#navtitle
  
