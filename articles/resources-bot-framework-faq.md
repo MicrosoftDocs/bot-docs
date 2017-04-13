@@ -3,6 +3,7 @@ title: Bot Framework Frequently Asked Questions | Microsoft Docs
 description: Bot Framework frequently asked questions (FAQ), including questions about what's new, channels and framework availability.
 keywords:
 author: DeniseMak
+ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

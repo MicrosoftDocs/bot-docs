@@ -3,6 +3,7 @@ title: Knowledge bots | Microsoft Docs
 description: Learn how to design a conversational application (bot) that can answer questions about anything.
 keywords: bot framework, design, bot, scenario, use case, pattern, knowledge base
 author: matvelloso
+ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

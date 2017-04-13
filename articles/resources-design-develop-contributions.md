@@ -3,6 +3,7 @@ title: Resources for designing and developing bots with the Bot Framework | Micr
 description: Identify resources related to designing and developing conversational applications using the Bot Framework.
 keywords: bot framework, bot, design, develop, resources
 author: matvelloso
+ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

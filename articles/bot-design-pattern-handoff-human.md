@@ -3,6 +3,7 @@ title: Handoff from bot to human | Microsoft Docs
 description: Learn how to design a conversational application (bot) that requires handoff from bot to human.
 keywords: bot framework, design, bot, scenario, use case, pattern, bot to human, handoff, transition to human
 author: matvelloso
+ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

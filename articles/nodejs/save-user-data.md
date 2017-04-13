@@ -3,6 +3,7 @@ title: Save user data | Microsoft Docs
 description: Learn how to save user data from a conversational application (bot).
 keywords: bot framework, save state, store data, user data, track state, bot storage, remember answers
 author: DeniseMak
+ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

@@ -3,6 +3,7 @@ title: Get started building bots with the Bot Framework | Microsoft Docs
 description: Learn how to get started building powerful bots with the Bot Framework.
 keywords:
 author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: get-started-article
 ms.prod: bot-framework

@@ -3,6 +3,7 @@ title: Bot Framework Troubleshooting Guide| Microsoft Docs
 description: Bot Framework Troubleshooting Guide and technical FAQ.
 keywords: FAQ, troubleshooting, troubleshoot, error, Bot Framework, problems, LUIS
 author: DeniseMak
+ms.author: v-demak
 manager: rstand
 ms.topic: article
 

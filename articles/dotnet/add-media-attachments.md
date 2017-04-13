@@ -3,6 +3,7 @@ title: Add attachments to messages using the Bot Framework Connector service and
 description: Learn how to add attachments to messages using the Bot Framework Connector service via the Bot Builder SDK for .NET.
 keywords: Bot Framework, .NET, Bot Builder, SDK, Connector, Connector service, attachment, media attachment, image, file, video, audio
 author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

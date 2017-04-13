@@ -3,6 +3,7 @@ title: Implement channel-specific functionality with the Bot Builder SDK for .NE
 description: Learn how to implement channel-specific functionality by using the Bot Builder SDK for .NET.
 keywords: Bot Framework, .NET, Bot Builder, SDK, channel data, channel-specific functionality, custom message
 author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

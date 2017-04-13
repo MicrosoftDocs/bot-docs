@@ -3,6 +3,9 @@ title: Bot Builder SDK reference | Microsoft Docs
 description: 
 keywords: 
 author: RobStand
+ms.author: rstand
+
+
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

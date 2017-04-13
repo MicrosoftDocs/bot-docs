@@ -4,6 +4,7 @@ description: Message logging - Basic concepts around intercepting messages betwe
 services: Bot Framework
 documentationcenter: BotFramework-Docs
 author: matvelloso
+ms.author: mateusv
 manager: larar
 
 ms.service: required

@@ -3,6 +3,7 @@ title: Add rich card attachments to messages using the Bot Framework Connector s
 description: Learn how to add rich card attachments to messages using the Bot Framework Connector service via the Bot Builder SDK for .NET.
 keywords: Bot Framework, .NET, Bot Builder, SDK, Connector, Connector service, attachment, card, rich card
 author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

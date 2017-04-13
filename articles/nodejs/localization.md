@@ -3,6 +3,7 @@ title: Support localization | Microsoft Docs
 description: Learn how to recognize the user's locale in a conversational application (bot).
 keywords: bot framework, bot, localization, locale, globalization
 author: DeniseMak
+ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

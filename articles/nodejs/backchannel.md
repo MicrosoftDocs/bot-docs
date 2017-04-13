@@ -3,6 +3,7 @@ title: Use the backchannel mechanism with the web chat control and Node.js | Mic
 description: Learn how to use the backchannel mechanism with the web chat control and Node.js.
 keywords: Bot Framework, node.js, bot in website, backchannel, event activity, web chat control
 author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

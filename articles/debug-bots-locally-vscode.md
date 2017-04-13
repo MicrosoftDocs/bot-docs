@@ -3,6 +3,7 @@ title: Debug a bot locally with Visual Studio Code | Microsoft Docs
 description: Learn how to use Visual Studio Code to debug a bot built using the Bot Builder SDK.
 keywords:
 author: DeniseMak
+ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

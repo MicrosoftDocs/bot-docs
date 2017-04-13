@@ -3,6 +3,7 @@ title: Bot Framework channels | Microsoft Docs
 description: Learn about channels in the Bot Framework.
 keywords: Bot Framework, channel, core concept, bot
 author: DeniseMak
+ms.author: v-demak
 manager: rstand
 ms.topic: key-concepts-article
 ms.prod: bot-framework

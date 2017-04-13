@@ -3,6 +3,7 @@ title: Create messages using the Bot Framework Connector service and .NET | Micr
 description: Learn how to create messages using the Bot Framework Connector service via the Bot Builder SDK for .NET.
 keywords: Bot Framework, .NET, Bot Builder, SDK, Connector, Connector service, activity, message, create message, message properties
 author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

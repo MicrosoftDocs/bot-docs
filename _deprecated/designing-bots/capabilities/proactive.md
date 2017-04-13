@@ -4,6 +4,7 @@ description: Proactive Messages - When bots need to initiate a message to the us
 services: Bot Framework
 documentationcenter: BotFramework-Docs
 author: matvelloso
+ms.author: mateusv
 manager: larar
 
 ms.service: required

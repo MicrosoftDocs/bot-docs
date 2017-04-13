@@ -3,6 +3,7 @@ title: Manage state using the Bot Builder SDK for .NET | Microsoft Docs
 description: Learn how to manage state using the Bot Builder SDK for .NET.
 keywords: Bot Framework, .NET, Bot Builder, SDK, state, user state, bot state, conversation state
 author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

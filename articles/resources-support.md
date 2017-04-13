@@ -3,6 +3,9 @@ title: Get support with the Bot Framework | Microsoft Docs
 description: Get additional support for the Bot Framework.
 keywords: support, abuse, community, suggestions, issues
 author: RobStand
+ms.author: rstand
+
+
 manager: rstand
 ms.topic: ~/resources/support-article
 

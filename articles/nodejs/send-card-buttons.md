@@ -3,6 +3,7 @@ title: Send rich cards | Microsoft Docs
 description: Learn how to send and receive rich cards in a conversational application (bot). Rich cards may contain buttons and images.
 keywords: bot framework, bot, cards, rich card, buttons, send messages, image
 author: DeniseMak
+ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

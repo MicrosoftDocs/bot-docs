@@ -3,6 +3,7 @@ title: Embedding a bot in a website | Microsoft Docs
 description: Learn how to design a conversational application (bot) that is embedded within a website.
 keywords: bot framework, design, bot, scenario, use case, pattern, bot in website, backchannel, web chat control, Skype web control
 author: matvelloso
+ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

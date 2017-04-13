@@ -3,11 +3,14 @@ title: Best practices for designing bots | Microsoft Docs
 description: Follow these best practices when designing the user experience for your bots.
 keywords: design, experience, practices, guidelines
 author: RobStand
+ms.author: rstand
+
+
 manager: rstand
 ms.topic: article
 
 ms.prod: bot-framework
-ms.service: Cognitive Services
+
 ms.date:
 ms.reviewer:
 

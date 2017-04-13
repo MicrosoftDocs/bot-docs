@@ -3,6 +3,7 @@ title: Embedding a bot in an app | Microsoft Docs
 description: Learn how to design a conversational application that is embedded within an app.
 keywords: bot framework, design, bot, scenario, use case, pattern, bot in app, bot embedded in app
 author: matvelloso
+ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

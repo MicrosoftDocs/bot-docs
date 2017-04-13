@@ -3,6 +3,7 @@ title: Principles of bot design | Microsoft Docs
 description: Learn about important factors to consider when planning and designing conversational applications and bots.
 keywords: bot framework, design, bot, introduction, overview
 author: matvelloso
+ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

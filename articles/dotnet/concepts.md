@@ -3,6 +3,7 @@ title: Key concepts in the Bot Builder SDK for .NET | Microsoft Docs
 description: Learn about key concepts in the Bot Builder SDK for .NET.
 keywords: Bot Framework, .NET, Bot Builder, SDK, key concepts, core concepts, connector, activity, dialog
 author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

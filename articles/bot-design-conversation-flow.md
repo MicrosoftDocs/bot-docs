@@ -3,6 +3,7 @@ title: Designing conversation flow within a bot | Microsoft Docs
 description: Understand the fundamental concepts of designing conversation flow by using dialogs in the Microsoft Bot Framework.
 keywords: Bot Framework, bot design, dialog, conversation flow, conversation
 author: matvelloso
+ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

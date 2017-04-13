@@ -3,6 +3,7 @@ title: Handle user and conversation events  | Microsoft Docs
 description: Learn how your conversational application (bot) can handle events such as a user joining a conversation or adding a bot to their contacts list.
 keywords: bot framework, user events, handle conversation updates, join conversation, add to contacts, greet users, conversationUpdate, contactRelationUpdate
 author: DeniseMak
+ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

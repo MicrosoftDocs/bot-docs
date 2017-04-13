@@ -3,6 +3,9 @@ title: What's New with the Bot Framework | Microsoft Docs
 description: Bot Framework release history information.
 keywords: new stuff, bot framework, release notes
 author: RobStand
+ms.author: rstand
+
+
 manager: rstand
 ms.topic: resources-article
 

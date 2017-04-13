@@ -4,6 +4,7 @@ description: Handling scenarios where bots hand off the conversation to humans
 services: Bot Framework
 documentationcenter: BotFramework-Docs
 author: matvelloso
+ms.author: mateusv
 manager: larar
 
 ms.service: required

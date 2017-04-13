@@ -3,6 +3,7 @@ title: Manage conversation flow | Microsoft Docs
 description: Learn how to manage conversation flow using dialogs and the Bot Builder SDK for Node.js.
 keywords: Bot Framework, dialog, messages, conversation flow, conversation, node.js, node, Bot Builder, SDK
 author: DeniseMak
+ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

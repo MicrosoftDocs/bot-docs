@@ -3,6 +3,10 @@ title: Key concepts in the Bot Framework | Microsoft Docs
 description: Learn about key concepts in the Bot Framework.
 keywords: Bot Framework, key concept, core concept, dialog, activity, message, channel, connector
 author: RobStand
+ms.author: rstand
+
+
+
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

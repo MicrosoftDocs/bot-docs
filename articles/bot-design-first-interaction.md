@@ -3,6 +3,7 @@ title: Designing the first interaction between user and bot | Microsoft Docs
 description: Learn best practices for designing for the first interaction between user and bot. 
 keywords: Bot Framework, design, principles, interaction, greeting
 author: matvelloso
+ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

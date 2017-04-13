@@ -3,6 +3,7 @@ title: Configure a bot to run on one or more channels using the Bot Framework Po
 description: Learn how to configure a bot to run on one or more channels by using the Bot Framework Portal.
 keywords: Bot Framework, Bot Builder, configure bot, Bot Framework Portal, channel, configure
 author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: publish-article
 ms.prod: bot-framework

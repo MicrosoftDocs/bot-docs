@@ -3,6 +3,7 @@ title: Send and receive attachments | Microsoft Docs
 description: Learn how to send a typing indicator from a conversational application (bot).
 keywords: bot framework, bot, typing indicator, indicate typing
 author: DeniseMak
+ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
