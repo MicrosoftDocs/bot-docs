@@ -1,7 +1,6 @@
 ---
-title: Customize a form using FormBuilder in the Bot Builder SDK for .NET | Microsoft Docs
+title: Customize a form using FormBuilder | Microsoft Docs
 description: Learn how to customize a form using FormBuilder with the Bot Builder SDK for .NET.
-keywords: Bot Framework, .NET, Bot Builder, SDK, FormFlow, FormBuilder
 author: kbrandl
 manager: rstand
 ms.topic: article
@@ -22,11 +21,11 @@ This article describes how you can use
 specifying the sequence in which the form executes steps 
 and dynamically defining field values, confirmations, and messages. 
 
-##<a id="dynamically-define"></a> Dynamically define field values, confirmations, and messages
+## Dynamically define field values, confirmations, and messages
 
 Using FormBuilder, you can dynamically define field values, confirmations, and messages.
 
-###<a id="define-value"></a> Dynamically define field values 
+### Dynamically define field values 
 
 A sandwich bot that is designed to add a free drink or cookie to any order that specifies a foot-long sandwich 
 uses the `Sandwich.Specials` field to store data about free items. 
@@ -56,7 +55,7 @@ In this example, the values are strings and the `AddDescription` and `AddTerms` 
 > [Advanced.IField][iField] yourself, 
 > or streamline the process by using the [Advanced.FieldReflector][FieldReflector] class as shown in the example above. 
 
-###<a id="define-message"></a> Dynamically define messages and confirmations
+### Dynamically define messages and confirmations
 
 Using FormBuilder, you can also dynamically define messages and confirmations. 
 Each message and confirmation runs only when prior steps in the form are inactive or completed. 
@@ -65,7 +64,7 @@ This code example shows a dynamically generated confirmation that computes the c
 
 [!code-csharp[Define confirmation](~/includes/code/dotnet-formflow-formbuilder.cs#defineConfirmation)]
 
-##<a id="customize-form"></a> Customize a form using FormBuilder
+## Customize a form using FormBuilder
 
 This code example uses FormBuilder to define the steps of the form, 
 [validate selections](~/dotnet/formflow-advanced.md#business-logic), 

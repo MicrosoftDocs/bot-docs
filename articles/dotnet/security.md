@@ -1,7 +1,6 @@
 ---
-title: Secure your bot with the Bot Builder SDK for .NET | Microsoft Docs
-description: Learn how to enable security for a bot that is built using the Bot Builder SDK for .NET.
-keywords: Bot Framework, .NET, Bot Builder, SDK, Connector, Connector service, security, HTTPS endpoint
+title: Secure your bot | Microsoft Docs
+description: Learn how to enable security protocols for a bot built with the Bot Builder SDK for .NET.
 author: kbrandl
 manager: rstand
 ms.topic: article

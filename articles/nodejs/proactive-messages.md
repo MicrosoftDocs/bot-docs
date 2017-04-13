@@ -1,7 +1,6 @@
 ---
-title: Send proactive messages by using the Bot Builder SDK for Node.js | Microsoft Docs
-description: Learn how to send proactive messages by using the Bot Builder SDK for Node.js.
-keywords: Bot Framework, node.js, Bot Builder, SDK, proactive message, ad hoc message, dialog-based message
+title: Send proactive messages | Microsoft Docs
+description: Learn how to send proactive messages by using the Bot Builder SDK for Node.js
 author: kbrandl
 manager: rstand
 ms.topic: article

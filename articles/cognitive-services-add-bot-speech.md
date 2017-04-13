@@ -1,7 +1,6 @@
 ---
-title: Adding Speech Capabilities with Cognitive Services | Microsoft Docs
-description: Add speech capabilities to your bot with the Bot Framework and Cognitive Services.
-keywords: intelligence, speech, acoustic, recognition, cris, recognition
+title: Add speech capability | Microsoft Docs
+description: Add speech recognition and conversion capability to your bot with the Bot Framework and Cognitive Services.
 author: RobStand
 manager: rstand
 ms.topic: intelligence-speech-article
@@ -14,7 +13,7 @@ ms.reviewer: rstand
 ROBOTS: Index, Follow
 ---
 
-# Add speech recognition and conversion to your bot
+# Add speech capability
 
 > [!TIP]
 > You can find detailed documentation, developer guides, and API reference for Cognitive Services on the <a href="https://www.microsoft.com/cognitive-services/en-us/documentation" target="_blank">Cognitive Services documentation site</a>.

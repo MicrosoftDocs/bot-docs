@@ -1,7 +1,6 @@
 ---
-title: Key concepts in the Bot Builder SDK for .NET | Microsoft Docs
+title: Key concepts | Microsoft Docs
 description: Learn about key concepts in the Bot Builder SDK for .NET.
-keywords: Bot Framework, .NET, Bot Builder, SDK, key concepts, core concepts, connector, activity, dialog
 author: kbrandl
 manager: rstand
 ms.topic: article
@@ -12,11 +11,11 @@ ms.reviewer:
 ROBOTS: Index, Follow
 ---
 
-# Key concepts in the Bot Builder SDK for .NET
+# Key concepts
 
 This article introduces key concepts in the Bot Builder SDK for .NET.
 
-##<a id="connector"></a> Connector
+## Connector
 
 The Bot Framework Connector provides a single REST API that enables a bot to 
 communicate across multiple channels such as Skype, Email, Slack, and more. 
@@ -26,7 +25,7 @@ In the Bot Builder SDK for .NET, the [Connector][connectorLibrary] library enabl
 
 For details about using the Connector via the Bot Builder SDK for .NET, see [Send and receive activities](~/dotnet/connector.md).
 
-##<a id="activity"></a> Activity
+## Activity
 
 [!include[Activity concept overview](~/includes/snippet-dotnet-concept-activity.md)]
 For details about Activities in the Bot Builder SDK for .NET, 

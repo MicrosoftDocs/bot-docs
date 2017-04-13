@@ -1,7 +1,6 @@
 ---
-title: Adding Knowledge Capabilities with Cognitive Services | Microsoft Docs
-description: Add knowledge capabilities to your bot with the Bot Framework and Cognitive Services.
-keywords: intelligence, knowledge, entity, linking, recommendations
+title: Add knowledge extraction capability | Microsoft Docs
+description: Add knowledge extraction capability to your bot with the Bot Framework and Cognitive Services.
 author: RobStand
 manager: rstand
 ms.topic: intelligence-knowledge-article
@@ -14,7 +13,7 @@ ms.reviewer: rstand
 ROBOTS: Index, Follow
 ---
 
-# Add knowledge extraction to your bot
+# Add knowledge extraction capability
 
 > [!TIP]
 > You can find detailed documentation about each API, including developer guides and API references by visiting the Microsoft Cognitive Services <a href="https://www.microsoft.com/cognitive-services/en-us/documentation" target="_blank">documentation site</a> and selecting the API you need on the left.

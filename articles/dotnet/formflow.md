@@ -1,7 +1,6 @@
 ---
-title: FormFlow in the Bot Builder SDK for .NET | Microsoft Docs
-description: Learn how to implement FormFlow with the Bot Builder SDK for .NET.
-keywords: Bot Framework, .NET, Bot Builder, SDK, FormFlow
+title: Guide conversations with FormFlow | Microsoft Docs
+description: Learn how to simplify and guide complex conversation flows with FormFlow with the Bot Builder SDK for .NET.
 author: kbrandl
 manager: rstand
 ms.topic: article
@@ -12,7 +11,7 @@ ms.reviewer:
 ROBOTS: Index, Follow
 ---
 
-# FormFlow
+# Guide conversations with FormFlow 
 
 [Dialogs](~/dotnet/dialogs.md) are very powerful and flexible, but handling a guided conversation such as ordering a sandwich can require a lot of effort. At each point in the conversation, there are many possibilities of what will happen next. For example, you may need to clarify an ambiguity, provide help, go back, or show progress. 
 By using **FormFlow** within the Bot Builder SDK for .NET, you can greatly simplify the process of managing 

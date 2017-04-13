@@ -1,7 +1,6 @@
 ---
-title: Send and receive attachments | Microsoft Docs
-description: Learn how to send a typing indicator from a conversational application (bot).
-keywords: bot framework, bot, typing indicator, indicate typing
+title: Display a typing indicator | Microsoft Docs
+description: Learn how to display a typing or processing indicator using the Bot Builder SDK for Node.js
 author: DeniseMak
 manager: rstand
 ms.topic: article
@@ -12,7 +11,7 @@ ms.reviewer:
 ROBOTS: Index, Follow
 ---
 
-# Send a typing indicator using the Bot Builder SDK for Node.js
+# Display a typing indicator 
 
 <!--
 > [!div class="op_single_selector"]

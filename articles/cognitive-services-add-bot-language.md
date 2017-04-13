@@ -1,7 +1,6 @@
 ---
-title: Adding Language Capabilities with Cognitive Services | Microsoft Docs
-description: Add language understanding capabilities to your bot with the Bot Framework and Cognitive Services.
-keywords: intelligence, language, understanding, nlp
+title: Add language understanding capability| Microsoft Docs
+description: Add language understanding capability to your bot with Cognitive Services.
 author: RobStand
 manager: rstand
 ms.topic: intelligence-language-article
@@ -14,7 +13,7 @@ ms.reviewer: rstand
 ROBOTS: Index, Follow
 ---
 
-# Add language understanding to your bot
+# Add language understanding capability
 
 ## Language understanding bot examples
 ### LUIS example

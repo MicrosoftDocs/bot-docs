@@ -1,7 +1,6 @@
 ---
-title: Adding Search Capabilities with Cognitive Services | Microsoft Docs
+title: Add search capability | Microsoft Docs
 description: Add search capabilities to your bot with the Bot Framework and Cognitive Services.
-keywords: search, video, image, autosuggest, news, intelligence
 author: RobStand
 manager: rstand
 ms.topic: intelligence-search-article
@@ -14,8 +13,7 @@ ms.reviewer: rstand
 ROBOTS: Index, Follow
 ---
 
-# Add search capabilities to your bot
-
+# Add search capability
 > [!TIP]
 > You can find detailed documentation, developer guides, and API reference for Cognitive Services on the <a href="https://www.microsoft.com/cognitive-services/en-us/documentation" target="_blank">Cognitive Services documentation site</a>.
 

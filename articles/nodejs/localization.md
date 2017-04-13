@@ -1,7 +1,6 @@
 ---
 title: Support localization | Microsoft Docs
-description: Learn how to recognize the user's locale in a conversational application (bot).
-keywords: bot framework, bot, localization, locale, globalization
+description: Learn how to determine the user's locale and enable localization functionality. (Node.js)
 author: DeniseMak
 manager: rstand
 ms.topic: article

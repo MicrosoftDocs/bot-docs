@@ -1,7 +1,6 @@
 ---
 title: Recognize intent | Microsoft Docs
-description: Learn how to recognize the user's intent in a conversational application (bot).
-keywords: bot framework, bot, intent, recognize, recognizer
+description: Learn how to recognize the user's intent.
 author: DeniseMak
 manager: rstand
 ms.topic: article

@@ -1,7 +1,6 @@
 ---
-title: Dialogs in the Bot Builder SDK for .NET | Microsoft Docs
-description: Learn about Dialogs in the Bot Builder SDK for .NET.
-keywords: Bot Framework, .NET, Bot Builder, SDK, dialog, conversation modeling
+title: Create dialogs | Microsoft Docs
+description: Learn about Dialogs and how to create them using the Bot Builder SDK for .NET.
 author: kbrandl
 manager: rstand
 ms.topic: article
@@ -12,7 +11,7 @@ ms.reviewer:
 ROBOTS: Index, Follow
 ---
 
-# Dialogs
+# Create dialogs
 
 This article explores the fundamentals of dialogs in the Bot Builder SDK for .NET. 
 

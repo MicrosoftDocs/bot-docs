@@ -1,7 +1,6 @@
 ---
-title: Customize user experience with pattern language in the Bot Builder SDK for .NET | Microsoft Docs
+title: Customize user experience with pattern language | Microsoft Docs
 description: Learn how to customize user experience with pattern language in the Bot Builder SDK for .NET.
-keywords: Bot Framework, .NET, Bot Builder, SDK, FormFlow, pattern, patterns
 author: kbrandl
 manager: rstand
 ms.topic: article

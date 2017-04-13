@@ -1,7 +1,6 @@
 ---
-title: Listen for messages by using actions | Microsoft Docs
-description: Learn how trigger actions to implement global message handling using global message handlers in the Bot Builder SDK for Node.js.
-keywords: Bot Framework, trigger actions, listen, node.js, Bot Builder, SDK, global handler, global message handler, message handler
+title: Support user keyword responses | Microsoft Docs
+description: Learn how to listen for and handle user input that contains keywords instead of scripted response options. (Node.js)
 author: kbrandl
 manager: rstand
 ms.topic: article
@@ -12,7 +11,7 @@ ms.reviewer:
 ROBOTS: Index, Follow
 ---
 
-# Listen for messages by using actions
+# Support user keyword responses
 
 <!--
 [!include[Introduction to global message handlers](~/includes/snippet-global-handlers-intro.md)] -->

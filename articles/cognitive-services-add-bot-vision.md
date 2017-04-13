@@ -1,7 +1,6 @@
 ---
-title: Adding Vision Capabilities with Cognitive Services | Microsoft Docs
-description: Add vision capabilities to your bot with the Bot Framework and Cognitive Services.
-keywords: intelligence, vision, image, video, understanding
+title: Add vision capability | Microsoft Docs
+description: Add image and vision bunderstanding to your bot with the Bot Framework and Cognitive Services.
 author: RobStand
 manager: rstand
 ms.topic: intelligence-vision-article
@@ -14,7 +13,7 @@ ms.reviewer: rstand
 ROBOTS: Index, Follow
 ---
 
-# Add image and video understanding to your bot
+# Add vision capability
 
 ## Vision API examples for bots
 

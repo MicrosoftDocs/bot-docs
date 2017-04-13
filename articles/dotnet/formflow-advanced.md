@@ -1,7 +1,6 @@
 ---
-title: Advanced features of FormFlow in the Bot Builder SDK for .NET | Microsoft Docs
-description: Learn how to use advanced features of FormFlow with the Bot Builder SDK for .NET.
-keywords: Bot Framework, .NET, Bot Builder, SDK, FormFlow, attributes, business logic, initial state, entities
+title: Advanced features of FormFlow | Microsoft Docs
+description: Learn how to further customize user experiences and conversation handling using FormFlow and the Bot Builder SDK for .NET.
 author: kbrandl
 manager: rstand
 ms.topic: article
@@ -37,7 +36,7 @@ the `EntityRecommendation.Entity` will be passed through the recognizer to bind 
 FormFlow will skip steps for any fields that are bound to an entity; 
 the user will not be prompted for those fields. 
 
-##<a id="business-logic"></a> Add business logic 
+## Add business logic 
 
 To handle interdependencies between form fields or apply specific logic during the process of getting or setting 
 a field value, you can specify business logic within a validation function. 
@@ -93,7 +92,7 @@ You can add these C# attributes to your class to customize behavior of a FormFlo
 | [Template][templateAttribute] | Define the template to use to generate prompts or values in prompts |
 | [Terms][termsAttribute] | Define the input terms that match a field or value |
 
-##<a id="prompt-attribute"></a> Customize prompts using the Prompt attribute
+## Customize prompts using the Prompt attribute
 
 Default prompts are automatically generated for each field in your form, 
 but you can specify a custom prompt for any field by using the `Prompt` attribute. 
@@ -160,7 +159,7 @@ What kind of sandwich would you like?
 >
 ```
 
-##<a id="template-attribute"></a> Customize prompts using the Template attribute
+## Customize prompts using the Template attribute
 
 While the `Prompt` attribute enables you to customize the prompt for a single field, 
 the `Template` attribute enables you to replace the default templates that FormFlow uses to automatically 
@@ -245,7 +244,7 @@ What kind of cheese would you like on your sandwich? (current choice: American)
 >
 ```
 
-##<a id="terms-attribute"></a> Match user input using the Terms attribute
+## Match user input using the Terms attribute
 
 When a user sends a message to a bot that is built using FormFlow, 
 the bot attempts to identify the meaning of the user's input by matching the input to a list of terms. 

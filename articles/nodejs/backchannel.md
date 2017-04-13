@@ -1,7 +1,6 @@
 ---
-title: Use the backchannel mechanism with the web chat control and Node.js | Microsoft Docs
-description: Learn how to use the backchannel mechanism with the web chat control and Node.js.
-keywords: Bot Framework, node.js, bot in website, backchannel, event activity, web chat control
+title: Exchange information using the web control | Microsoft Docs
+description: Learn how to exchange information between the bot and a web page. (Node.js)
 author: kbrandl
 manager: rstand
 ms.topic: article
