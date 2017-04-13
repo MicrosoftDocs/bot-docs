@@ -1,5 +1,5 @@
 ---
-title: Create dialogs | Microsoft Docs
+title: Explore and create dialogs | Microsoft Docs
 description: Learn about Dialogs and how to create them using the Bot Builder SDK for .NET.
 author: kbrandl
 manager: rstand
@@ -11,7 +11,7 @@ ms.reviewer:
 ROBOTS: Index, Follow
 ---
 
-# Create dialogs
+# Explore and create dialogs
 
 This article explores the fundamentals of dialogs in the Bot Builder SDK for .NET. 
 
