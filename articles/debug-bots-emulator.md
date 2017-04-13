@@ -1,7 +1,6 @@
 ---
-title: Bot Framework Emulator | Microsoft Docs
-description: Learn how to use the Bot Framework Emulator to test a bot.
-keywords: Bot Framework, Bot Framework Channel Emulator, Bot Framework Emulator, Bot Builder, tool, emulator, test, troubleshoot
+title: Debug bots with the Bot Framework Emulator | Microsoft Docs
+description: Learn how to use the Bot Framework Emulator to test and debug bots.
 author: DeniseMak
 manager: rstand
 

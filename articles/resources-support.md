@@ -1,7 +1,6 @@
 ---
-title: Get support with the Bot Framework | Microsoft Docs
+title: Additional resources for the Bot Framework | Microsoft Docs
 description: Get additional support for the Bot Framework.
-keywords: support, abuse, community, suggestions, issues
 author: RobStand
 manager: rstand
 ms.topic: ~/resources/support-article
@@ -14,7 +13,7 @@ ms.reviewer:
 # Include the following line commented out
 ROBOTS: Index, Follow
 ---
-# Get support for the Bot Framework
+# Additional resources for the Bot Framework
 These resources provide additional information and support for developing bots with the Bot Framework.
 
 |**Support type**                    | **Contact**                                                

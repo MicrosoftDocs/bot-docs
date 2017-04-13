@@ -1,7 +1,6 @@
 ---
-title: Deploy a bot to Azure from Visual Studio | Microsoft Docs
+title: Deploy bots to Azure from Visual Studio | Microsoft Docs
 description: Learn how to deploy a bot to Azure from Visual Studio.
-keywords: deploy, visual studio, git, cloud
 author: RobStand
 manager: rstand
 ms.topic: deploy-visual-studio-article
@@ -11,7 +10,7 @@ ms.date:
 ms.reviewer: rstand
 ROBOTS: Index, Follow
 ---
-# Deploy a bot to Azure from Visual Studio
+# Deploy bots to Azure from Visual Studio
 When you build a bot with Visual Studio, you can take advantage of its built-in publish capability. This tutorial shows you to how deploy a bot to Azure directly from Visual Studio.
 
 ## Prerequisites

@@ -1,7 +1,6 @@
 ---
-title: Deploy a bot to Azure from local git repository | Microsoft Docs
+title: Deploy bots to Azure from a local git repository | Microsoft Docs
 description: Learn how to deploy a bot to Azure from your local git repository.
-keywords: deploy, local, git, continuous integration, cloud
 author: RobStand
 manager: rstand
 ms.topic: deploy-local-repo-article
@@ -11,7 +10,7 @@ ms.date:
 ms.reviewer: rstand
 ROBOTS: Index, Follow
 ---
-# Deploy a bot to Azure from a local git repository
+# Deploy bots to Azure from a local git repository
 
 Azure allows continuous integration of your Git repository with your Azure deployment.
 With continuous integration, when you change and build your bot's code, the bot will automatically deploy to Azure.
