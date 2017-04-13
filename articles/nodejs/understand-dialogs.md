@@ -3,6 +3,7 @@ title: Understanding dialogs| Microsoft Docs
 description: Learn how to manage message flow by routing messages through dialogs in the Bot Builder SDK for Node.js.
 keywords: Bot Framework, dialog, root dialog, routing messages, conversation flow, conversation, node.js, node, Bot Builder, SDK
 author: DeniseMak
+ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

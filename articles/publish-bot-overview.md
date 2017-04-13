@@ -3,6 +3,7 @@ title: Publish a bot with the Bot Framework | Microsoft Docs
 description: Learn what you need to do to publish and deploy your bot for people to use.
 keywords: Bot Framework, Bot Builder, register, deploy, configure, publish, Bot Directory
 author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

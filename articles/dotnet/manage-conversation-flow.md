@@ -3,6 +3,7 @@ title: Manage conversation flow using dialogs with the Bot Builder SDK for .NET 
 description: Learn how to manage conversation flow using dialogs and the Bot Builder SDK for .NET.
 keywords: Bot Framework, dialog, conversation flow, conversation, dotnet, .NET, Bot Builder, SDK
 author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

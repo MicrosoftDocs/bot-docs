@@ -3,6 +3,9 @@ title: How to Embed the Chat Control | Microsoft Docs
 description: Learn how to embed the Bot Framework chat control in your web page.
 keywords:
 author: RobStand
+ms.author: rstand
+
+
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

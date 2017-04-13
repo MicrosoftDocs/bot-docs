@@ -3,6 +3,7 @@ title: Send and receive attachments | Microsoft Docs
 description: Learn how to send and receive messages containing attachments such as images in a conversational application (bot).
 keywords: bot framework, bot, attachment, images, send messages
 author: DeniseMak
+ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

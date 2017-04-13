@@ -3,6 +3,7 @@ title: Task automation bots | Microsoft Docs
 description: Learn how to design a conversational application (bot) that can automate tasks.
 keywords: bot framework, design, bot, scenario, use case, pattern, task automation
 author: matvelloso
+ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

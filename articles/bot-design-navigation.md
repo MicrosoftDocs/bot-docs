@@ -3,6 +3,7 @@ title: Designing navigation within a bot | Microsoft Docs
 description: Learn how to manage navigation in converational applications (bots) and understand common pitfalls of poorly designed navigation.
 keywords: Bot Framework, Bot design, navigation
 author: matvelloso
+ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

@@ -3,6 +3,7 @@ title: Send proactive messages by using the Bot Builder SDK for .NET | Microsoft
 description: Learn how to send proactive messages by using the Bot Builder SDK for .NET.
 keywords: Bot Framework, dotnet, .NET, Bot Builder, SDK, proactive message, ad hoc message, dialog-based message
 author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

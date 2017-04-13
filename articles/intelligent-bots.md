@@ -3,6 +3,9 @@ title: Make your bots smarter | Microsoft Docs
 description: Add intelligence to bots and make them more useful and engaging for users with Microsoft Cognitive Services.
 keywords: bot framework, Microsoft Cognitive Services, smart bots, intelligence
 author: RobStand
+ms.author: rstand
+
+
 manager: rstand
 ms.topic: overview-article
 ms.prod: bot-framework

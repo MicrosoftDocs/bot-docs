@@ -4,6 +4,7 @@ description: Dialogs - Fundamental concepts of working with dialogs in the Micro
 services: Bot Framework
 documentationcenter: BotFramework-Docs
 author: matvelloso
+ms.author: mateusv
 manager: larar
 
 ms.service: required

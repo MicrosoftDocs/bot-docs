@@ -3,6 +3,7 @@ title: Bot Framework activities | Microsoft Docs
 description: Learn about activities in the Bot Framework.
 keywords: Bot Framework, activity, message, core concept, bot
 author: DeniseMak
+ms.author: v-demak
 manager: rstand
 ms.topic: key-concepts-article
 ms.prod: bot-framework

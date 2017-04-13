@@ -3,6 +3,8 @@ title: Bot Framework Channel Inspector | Microsoft Docs
 description: Learn how to use the Bot Framework Channel Inspector to explore the availability and functionality of features across different chat clients.
 keywords: Bot Framework, Bot Builder, tool, channel, channel inspector
 author: kbrandl
+ms.author: v-kibran
+ms.author: v-kbrandl
 manager: rstand
 ms.topic: resources-tools-article
 ms.prod: bot-framework

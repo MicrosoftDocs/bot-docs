@@ -4,6 +4,7 @@ description: Saying Hello - The importance of welcome messages in conversational
 services: Bot Framework
 documentationcenter: BotFramework-Docs
 author: matvelloso
+ms.author: mateusv
 manager: larar
 
 ms.service: required

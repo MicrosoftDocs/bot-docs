@@ -3,11 +3,14 @@ title: Adding Search Capabilities with Cognitive Services | Microsoft Docs
 description: Add search capabilities to your bot with the Bot Framework and Cognitive Services.
 keywords: search, video, image, autosuggest, news, intelligence
 author: RobStand
+ms.author: rstand
+
+
 manager: rstand
 ms.topic: intelligence-search-article
 
 ms.prod: bot-framework
-ms.service: Cognitive Services
+
 ms.date: 
 ms.reviewer: rstand
 

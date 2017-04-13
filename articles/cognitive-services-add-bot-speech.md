@@ -3,11 +3,14 @@ title: Adding Speech Capabilities with Cognitive Services | Microsoft Docs
 description: Add speech capabilities to your bot with the Bot Framework and Cognitive Services.
 keywords: intelligence, speech, acoustic, recognition, cris, recognition
 author: RobStand
+ms.author: rstand
+
+
 manager: rstand
 ms.topic: intelligence-speech-article
 
 ms.prod: bot-framework
-ms.service: Cognitive Services
+
 ms.date: 
 ms.reviewer: rstand
 

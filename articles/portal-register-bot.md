@@ -3,6 +3,7 @@ title: Register a bot with the Bot Framework | Microsoft Docs
 description: Learn how to register a bot with the Bot Framework.
 keywords: Bot Framework, Bot Builder, register bot, Bot Framework Portal
 author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: publish-article
 ms.prod: bot-framework

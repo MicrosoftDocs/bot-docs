@@ -4,6 +4,7 @@ description: Thoughts and guidance on how to plan and design conversational appl
 services: Bot Framework
 documentationcenter: BotFramework-Docs
 author: matvelloso
+ms.author: mateusv
 manager: larar
 
 ms.service: required

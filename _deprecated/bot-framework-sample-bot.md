@@ -3,6 +3,9 @@ title: Bot Framework scorables bot | Microsoft Docs
 description: A sample bot that renders several types of cards as attachments, while also showing the generated JSON for each one of these cards as the message's payload
 keywords: bot, scorables, sample, attachments, cards
 author: RobStand
+ms.author: rstand
+
+
 manager: rstand
 ms.topic: bot-sample-article
 

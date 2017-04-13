@@ -3,6 +3,7 @@ title: Bot Framework Connector Service | Microsoft Docs
 description: Learn about the Bot Framework Connector Service.
 keywords: Bot Framework, connector, core concept, bot, web service
 author: DeniseMak
+ms.author: v-demak
 manager: rstand
 ms.topic: key-concepts-article
 ms.prod: bot-framework

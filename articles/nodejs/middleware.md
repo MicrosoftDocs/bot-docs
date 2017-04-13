@@ -3,6 +3,7 @@ title: Intercept messages | Microsoft Docs
 description: Learn how to intercept messages that are exchanged between user and bot by using the Bot Builder SDK for Node.js.
 keywords: Bot Framework, node.js, Bot Builder, SDK, message logging, intercept message, inspect message
 author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

@@ -4,6 +4,7 @@ description: Global Message Handlers - Preparing bots for when users change topi
 services: Bot Framework
 documentationcenter: BotFramework-Docs
 author: matvelloso
+ms.author: mateusv
 manager: larar
 
 ms.service: required

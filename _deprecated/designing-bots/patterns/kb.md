@@ -4,6 +4,7 @@ description: Informational bots tha can answer questions about anything
 services: Bot Framework
 documentationcenter: BotFramework-Docs
 author: matvelloso
+ms.author: mateusv
 manager: larar
 
 ms.service: required
