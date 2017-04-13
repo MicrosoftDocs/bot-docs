@@ -1,18 +1,19 @@
 # Overview
-## [What is the Bot Framework](framework-overview.md)
-## [How Bot Framework works](overview-how-bot-framework-works.md)
-## [Make bots smarter](~/intelligent-bots.md)
+## [About Bot Framework](framework-overview.md)
+
 # [Get started](bot-builder-overview-getstarted.md)
 ## [Create your first bot with .NET](~/dotnet/getstarted.md)
 ## [Create your first bot with Node.js](~/nodejs/getstarted.md)
 ## [Create your first bot with Azure Bot Service](~/azure/azure-bot-service-getstarted.md)
+# Concepts
+## [How Bot Framework works](overview-how-bot-framework-works.md)
+## [Make bots smarter](~/intelligent-bots.md)
 # How to
 ## Plan
 ### Explore channels
 ## [Design](design/TOC.md)
-## Develop
-### [.NET](dotnet/TOC.md)
-### [Node.js](nodejs/TOC.md)
+## [Develop with .NET](dotnet/TOC.md)
+## [Develop with Node.js](nodejs/TOC.md)
 <!--### [Azure Bot Service](azure/TOC.md)-->
 <!--### REST API-->
 ### [Intelligence](cognitive-services/TOC.md)
