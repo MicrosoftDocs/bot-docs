@@ -1,17 +1,15 @@
 ---
-title: Integration between bot and web browser | Microsoft Docs
-description: Learn how to design a conversational application (bot) that requires integration between bot and web browser.
-keywords: bot framework, design, bot, scenario, use case, pattern, bot to web, integrate bot with web
+title: Integrate your bot with a web browser | Microsoft Docs
+description: Learn about integrating with a web browser and how to design your bot for a smooth user experience.
 author: matvelloso
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
 ms.date: 
 ms.reviewer: rstand
 ROBOTS: Index, Follow
 ---
-# Integration between bot and web browser
+# Integrate your bot with a web browser
 
 Some scenarios require more than just a bot to fulfill a requirement. 
 A bot may need to send the user to a web browser to complete a task, 

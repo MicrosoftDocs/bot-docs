@@ -1,17 +1,15 @@
 ---
-title: Embedding a bot in an app | Microsoft Docs
-description: Learn how to design a conversational application that is embedded within an app.
-keywords: bot framework, design, bot, scenario, use case, pattern, bot in app, bot embedded in app
+title: Embed a bot in an app | Microsoft Docs
+description: Learn how to design a conversational bot to be embedded within another app.
 author: matvelloso
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
 ms.date:
 ms.reviewer: rstand
 ROBOTS: Index, Follow
 ---
-# Embedding a bot in an app
+# Embed a bot in an app
 
 Although bots most commonly exist outside of apps, they can also be embedded within an app. 
 For example, you may embed a [knowledge bot](~/bot-design-pattern-knowledge-base.md) within an app 

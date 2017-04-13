@@ -5,7 +5,6 @@ author: matvelloso
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
 ms.date:
 ms.reviewer: rstand
 ROBOTS: Index, Follow
