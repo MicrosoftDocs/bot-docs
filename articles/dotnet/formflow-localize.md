@@ -1,6 +1,6 @@
 ---
 title: Localize form content | Microsoft Docs
-description: Learn how to localize form content with the Bot Builder SDK for .NET.
+description: Learn how to localize form content with FormFlow and the Bot Builder SDK for .NET.
 author: kbrandl
 manager: rstand
 ms.topic: article

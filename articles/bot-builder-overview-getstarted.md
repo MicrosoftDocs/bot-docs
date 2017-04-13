@@ -1,6 +1,6 @@
 ---
-title: Get started with the Bot Framework | Microsoft Docs
-description: Get started building powerful bots with the Bot Framework.
+title: Start building bots with the Bot Framework | Microsoft Docs
+description: Get started building powerful bots with the Bot Framework and Bot Builder SDKs.
 author: kbrandl
 manager: rstand
 ms.topic: get-started-article
@@ -9,7 +9,7 @@ ms.date: 04/01/2017
 ms.reviewer: rstand
 ROBOTS: Index, Follow
 ---
-# Get started with the Bot Framework
+# Start building bots with the Bot Framework
 <!--the bot builder should be its own H2 section -->
 The Bot Framework includes Bot Builder to give you the tools you need to develop bots. Bot Builder is an open-source SDK with support for .NET, Node.js, and REST. Using Bot Builder, you can get started and have a working bot in just a few minutes.
 

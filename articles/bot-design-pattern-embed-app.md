@@ -1,6 +1,6 @@
 ---
 title: Embed a bot in an app | Microsoft Docs
-description: Learn how to design a conversational bot to be embedded within another app.
+description: Learn how to design a conversational bot that will be embedded within another app.
 author: matvelloso
 manager: rstand
 ms.topic: article

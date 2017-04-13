@@ -1,6 +1,6 @@
 ---
 title: Support localization | Microsoft Docs
-description: Learn how to determine the user's locale and enable localization functionality. (Node.js)
+description: Teach your bot to determine where the user is and enable localization functionality using the Bot Builder SDK for Node.js.
 author: DeniseMak
 manager: rstand
 ms.topic: article
@@ -12,7 +12,6 @@ ROBOTS: Index, Follow
 ---
 
 # Support localization
-
 
 Bot Builder includes a rich localization system for building bots that can communicate with the user in multiple languages. All of your bot's prompts can be localized using JSON files stored in your bots directory structure. If you’re using a system like LUIS to perform natural language processing you can configure your [LuisRecognizer][LUISRecognizer] with a separate model for each language your bot supports and the SDK automatically selects the model that matches the user's preferred locale.
 

@@ -1,6 +1,6 @@
 ---
-title: Create a bot with the Bot Builder | Microsoft Docs
-description: Create a bot with the Bot Builder SDK for Node.js.
+title: Create a bot with the Bot Builder SDK for Node.js | Microsoft Docs
+description: Create a bot with the Bot Builder SDK for Node.js, a powerful bot construction framework.
 author: kbrandl
 manager: rstand
 ms.topic: get-started-article
@@ -10,7 +10,7 @@ ms.date: 02/02/2017
 ms.reviewer:
 ROBOTS: Index, Follow
 ---
-# Create a bot with the Bot Builder
+# Create a bot with the Bot Builder SDK for Node.js 
 
 
 The <a href="https://github.com/Microsoft/BotBuilder" target="_blank">Bot Builder SDK for Node.js</a> is a powerful framework for constructing bots that can handle both freeform interactions and more guided ones where the possibilities are explicitly shown to the user.

@@ -1,6 +1,6 @@
 ---
 title: Exchange information using the web control | Microsoft Docs
-description: Learn how to exchange information between the bot and a web page. (Node.js)
+description: Learn how to exchange information between the bot and a web page using the Bot Builder SDK for Node.js.
 author: kbrandl
 manager: rstand
 ms.topic: article

@@ -1,6 +1,6 @@
 ---
 title: Guide conversations with FormFlow | Microsoft Docs
-description: Learn how to simplify and guide complex conversation flows with FormFlow with the Bot Builder SDK for .NET.
+description: Learn how to simplify and guide complex conversation flows with FormFlow and the Bot Builder SDK for .NET.
 author: kbrandl
 manager: rstand
 ms.topic: article

@@ -1,6 +1,6 @@
 ---
 title: Customize user experience with pattern language | Microsoft Docs
-description: Learn how to customize user experience with pattern language in the Bot Builder SDK for .NET.
+description: Learn how to override default settings to provide a customized user experience using Formflow and the Bot Builder SDK for .NET.
 author: kbrandl
 manager: rstand
 ms.topic: article

@@ -1,6 +1,6 @@
 ---
 title: Send rich cards | Microsoft Docs
-description: Learn how to send and receive interactive, engaging rich cards.
+description: Learn how to send and receive interactive, engaging rich cards using the Bot Builder SDK for Node.js.
 author: DeniseMak
 manager: rstand
 ms.topic: article

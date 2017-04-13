@@ -1,6 +1,6 @@
 ---
 title: Support user keyword responses | Microsoft Docs
-description: Learn how to listen for and handle user input that contains keywords instead of scripted response options. (Node.js)
+description: Teach your bot to listen for and handle user input that contains keywords instead of scripted response options using the Bot Builder SDK for Node.js.
 author: kbrandl
 manager: rstand
 ms.topic: article

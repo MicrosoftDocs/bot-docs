@@ -1,6 +1,6 @@
 ---
 title: Release notes | Microsoft Docs
-description: View the Bot Builder SDK for .NET release notes and changelog.
+description: View the release notes and changelog for the Bot Builder SDK for .NET 
 author: kbrandl
 manager: rstand
 ms.topic: article

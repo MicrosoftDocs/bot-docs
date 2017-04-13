@@ -1,6 +1,6 @@
 ---
 title: Bot Builder SDK for Node.js | Microsoft Docs
-description: Learn about the Bot Builder SDK for Node.js.
+description: Explore the Bot Builder SDK for Node.js, a powerful, easy-to-use bot building framework.
 author: DeniseMak
 manager: rstand
 ms.topic: article

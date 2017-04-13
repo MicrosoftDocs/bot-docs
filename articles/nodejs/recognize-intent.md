@@ -1,6 +1,6 @@
 ---
 title: Recognize intent | Microsoft Docs
-description: Learn how to recognize the user's intent.
+description: Teach your bot to recognize the user's intent using the Bot Builder SDK for Node.js.
 author: DeniseMak
 manager: rstand
 ms.topic: article

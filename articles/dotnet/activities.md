@@ -1,6 +1,6 @@
 ---
-title: Activity types within the Bot Framework Connector service and .NET | Microsoft Docs
-description: Learn about activity types within the Bot Builder SDK for .NET.
+title: Explore activity types | Microsoft Docs
+description: Learn about activity types available within the Bot Builder SDK for .NET and when to use them.
 author: kbrandl
 manager: rstand
 ms.topic: article
@@ -11,7 +11,7 @@ ms.reviewer:
 ROBOTS: Index, Follow
 ---
 
-# Activity types
+# Explore activity types
 
 [!include[Activity concept overview](~/includes/snippet-dotnet-concept-activity.md)]
 

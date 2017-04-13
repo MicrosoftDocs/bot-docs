@@ -1,6 +1,6 @@
 ---
 title: Design and control conversation flow | Microsoft Docs
-description: Use dialogs to design and control conversation flow in the Microsoft Bot Framework.
+description: Learn how to design dialogs and control conversation flow in the Microsoft Bot Framework.
 author: matvelloso
 manager: rstand
 ms.topic: article

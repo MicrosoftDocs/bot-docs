@@ -1,6 +1,6 @@
 ---
-title: Key concepts | Microsoft Docs
-description: Learn about key concepts in the Bot Builder SDK for .NET.
+title: Key concepts in the Bot Builder SDK for .NET | Microsoft Docs
+description: Explore key concepts for the Bot Builder SDK for .NET.
 author: kbrandl
 manager: rstand
 ms.topic: article
@@ -11,7 +11,7 @@ ms.reviewer:
 ROBOTS: Index, Follow
 ---
 
-# Key concepts
+# Key concepts in the Bot Builder SDK for .NET
 
 This article introduces key concepts in the Bot Builder SDK for .NET.
 

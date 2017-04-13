@@ -1,6 +1,6 @@
 ---
 title: Create a bot with the Azure Bot Service | Microsoft Docs
-description: Learn how to create a bot with the Azure Bot Service.
+description: Learn how to create bots with the Azure Bot Service, an integrated, dedicated bot development environment.
 author: kbrandl
 manager: rstand
 ms.topic: article

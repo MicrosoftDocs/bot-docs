@@ -1,6 +1,6 @@
 ---
 title: Principles of bot design | Microsoft Docs
-description: Important factors to consider when planning and designing conversational applications and bots.
+description: Consider these key factors when planning and designing your conversational applications and bots.
 author: matvelloso
 manager: rstand
 ms.topic: article
