@@ -128,7 +128,7 @@ private conversation data is useful for storing user data that is related to a s
 
 `Internals.IBotToUser` provides methods to send a message from bot to user. 
 Messages may be sent inline with the response to the web API method call or 
-directly by using the [Connector client](~/dotnet/connector.md#create-client). 
+directly by using the [Connector client](~/dotnet/connector.md). 
 Sending and receiving messages through the dialog context ensures that the `Internals.IBotData` state is passed through the Connector.
 
 ### Internals.IDialogStack
