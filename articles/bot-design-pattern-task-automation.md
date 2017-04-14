@@ -1,7 +1,6 @@
 ---
-title: Task automation bots | Microsoft Docs
-description: Learn how to design a conversational application (bot) that can automate tasks.
-keywords: bot framework, design, bot, scenario, use case, pattern, task automation
+title: Create task automation bots | Microsoft Docs
+description: Learn how to design and create bots that perform tasks without further human intervention.
 author: matvelloso
 ms.author: mateusv
 manager: rstand
@@ -12,7 +11,7 @@ ms.date:
 ms.reviewer: rstand
 ROBOTS: Index, Follow
 ---
-# Task automation bots
+# Create task automation bots
 
 A task automation bot enables the user to complete a specific task or set of tasks without any assistance from a human. 
 This type of bot often closely resembles a typical app or website, communicating with the user primarily via rich user controls and text. 

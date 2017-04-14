@@ -1,7 +1,6 @@
 ---
-title: Localize form content in the Bot Builder SDK for .NET | Microsoft Docs
-description: Learn how to localize form content with the Bot Builder SDK for .NET.
-keywords: Bot Framework, .NET, Bot Builder, SDK, FormFlow, FormBuilder
+title: Localize form content | Microsoft Docs
+description: Learn how to create and provide localized content with FormFlow and the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
@@ -89,7 +88,7 @@ When your form is created, the [IFormBuilder.Build][build] method will automatic
 
 > [!NOTE]
 > Dynamically-computed fields that are defined using [Advanced.Field.SetDefine][setDefine] 
-> (as described in [Using Dynamic Fields](formflow-formbuilder.md#dynamically-define)) 
+> (as described in [Using Dynamic Fields](formflow-formbuilder.md)) 
 > cannot be localized in the same manner as static fields, 
 > since strings for dynamically-computed fields are constructed at the time the form is populated. 
 > However, you can localize dynamically-computed fields by using normal C# localization mechanisms.
@@ -110,7 +109,7 @@ Install **MAT**, then enable it for your project by completing these steps:
 
 ## See it in action
 
-This code example builds upon the one in [Customize a form using FormBuilder](formflow-formbuilder.md#customize-form) to implement localization as described above. 
+This code example builds upon the one in [Customize a form using FormBuilder](formflow-formbuilder.md) to implement localization as described above. 
 In this example, the `DynamicSandwich` class (not shown here) contains localization information for 
 dynamically-computed fields, messages and confirmations.
 

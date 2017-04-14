@@ -1,7 +1,6 @@
 ---
 title: Manage conversation flow | Microsoft Docs
 description: Learn how to manage conversation flow using dialogs and the Bot Builder SDK for Node.js.
-keywords: Bot Framework, dialog, messages, conversation flow, conversation, node.js, node, Bot Builder, SDK
 author: DeniseMak
 ms.author: v-demak
 manager: rstand
@@ -12,7 +11,7 @@ ms.date: 02/17/2017
 ms.reviewer:
 ROBOTS: Index, Follow
 ---
-# Using prompts
+# Manage conversation flow
 
 A common pattern is for a bot to ask the user a sequence of questions before performing some action.
 The SDK provides a set of built-in prompts to simplify collecting input from a user. You can then use a feature called a *waterfall* to define the sequence in which to prompt the user. 

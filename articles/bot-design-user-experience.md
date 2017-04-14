@@ -1,18 +1,16 @@
 ---
-title: Designing user experience within a bot | Microsoft Docs
-description: Learn how to design the user experience by combining rich controls, natural language, and voice in conversational applications and bots.
-keywords: Bot Framework, Bot design, ux, ui, ux elements, ux controls, ui elements, ui controls
+title: Design the user experience | Microsoft Docs
+description: Learn how to design an engaging user experience with rich user controls, natural language understanding, and speech capability.
 author: matvelloso
 ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
 ms.date:
 ms.reviewer: rstand
 ROBOTS: Index, Follow
 ---
-# Designing the user experience
+# Design the user experience
 
 Bots typically use some combination of **rich user controls**, **text and natural language**, and **speech** 
 to exchange information with users.
@@ -29,7 +27,7 @@ Allowing the user to communicate "Hotels" by clicking a button labeled **Hotels*
 This especially holds true on mobile devices, where clicking is greatly preferred over typing. 
 
 When designing your bot, do not automatically dismiss common UI elements as not being "smart enough." 
-As discussed [previously](~/bot-design-principles.md#design-guidance), your bot should be designed 
+As discussed [previously](~/bot-design-principles.md), your bot should be designed 
 to solve the user's problem in the best/quickest/easiest manner possible. 
 Whether your bot uses artificial intelligence (AI) is not directly relevant to this goal. 
 

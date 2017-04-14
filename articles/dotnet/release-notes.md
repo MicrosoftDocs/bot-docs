@@ -1,7 +1,6 @@
 ---
-title: Bot Builder SDK for .NET release notes | Microsoft Docs
-description: View the Bot Builder SDK for .NET release notes.
-keywords: Bot Framework, .NET, Bot Builder, SDK, release history, release notes
+title: Release notes | Microsoft Docs
+description: View the release notes and changelog for the Bot Builder SDK for .NET 
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
@@ -13,7 +12,7 @@ ms.reviewer:
 ROBOTS: Index, Follow
 ---
 
-# Bot Builder SDK for .NET release notes
+# Release notes
 
 This article describes the changes that have been introduced by each version of the Bot Builder SDK for .NET. 
 

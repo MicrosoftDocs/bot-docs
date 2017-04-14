@@ -1,7 +1,6 @@
 ---
-title: Adding Location Capabilities with Cognitive Services | Microsoft Docs
-description: Add location capabilities to your bot with the Bot Framework and Cognitive Services.
-keywords: intelligence, location, address, lookup, validation,
+title: Add location capability | Microsoft Docs
+description: Teach your bot how to determine a user's location and use that knowledge to provide additional functionality with the Bot Framework and Cognitive Services.
 author: RobStand
 ms.author: rstand
 
@@ -17,7 +16,7 @@ ms.reviewer: rstand
 ROBOTS: Index, Follow
 ---
 
-# Add location control capabilities to your bot
+# Add location capability
 
 You can find screenshots of the scenarios supported by the location control in the [Examples](#examples) section.
 

@@ -1,7 +1,6 @@
 ---
 title: Make your bots smarter | Microsoft Docs
-description: Add intelligence to bots and make them more useful and engaging for users with Microsoft Cognitive Services.
-keywords: bot framework, Microsoft Cognitive Services, smart bots, intelligence
+description: Add intelligence to your bots with Microsoft Cognitive Services to make them more useful and engaging.
 author: RobStand
 ms.author: rstand
 
@@ -9,7 +8,6 @@ ms.author: rstand
 manager: rstand
 ms.topic: overview-article
 ms.prod: bot-framework
- Intelligence
 ms.date: 3/29/2017
 ms.reviewer:
 
@@ -17,7 +15,7 @@ ms.reviewer:
 ROBOTS: Index, Follow
 #REVIEW
 ---
-# Make your bots smarter with Microsoft Cognitive Services
+# Make your bots smarter
 Microsoft Cognitive Services lets you tap into an ever-growing collection of powerful AI algorithms developed by experts in the fields of computer vision, speech, natural language processing, knowledge extraction, and web search. The services simplify a variety of AI-based tasks, giving you a quick way to add state-of-the-art intelligence technologies to your bots with just a few lines of code. The APIs integrate into most modern languages and platforms. The APIs are also constantly improving, learning, and getting smarter, so experiences are always up to date. 
 
 Intelligent bots respond as if they can see the world as people see it. They discover information and extract knowledge from different sources to provide useful answers, and, best of all, they learn as they acquire more experience to continuously improve their capabilities. 

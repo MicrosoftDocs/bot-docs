@@ -1,7 +1,6 @@
 ---
 title: Save user data | Microsoft Docs
-description: Learn how to save user data from a conversational application (bot).
-keywords: bot framework, save state, store data, user data, track state, bot storage, remember answers
+description: Learn how to save information the user provides using the Bot Builder SDK for Node.js.
 author: DeniseMak
 ms.author: v-demak
 manager: rstand
@@ -12,8 +11,9 @@ ms.date: 02/24/2017
 ms.reviewer:
 ROBOTS: Index, Follow
 ---
+<!--this seems like a stub; it should be about saving user-provided data, but it seems to be about state data capture and use, which is covered elsewhere-->
 
-# Save user data using the Bot Builder SDK for Node.js
+# Save user data 
 
 <!--
 > [!div class="op_single_selector"]

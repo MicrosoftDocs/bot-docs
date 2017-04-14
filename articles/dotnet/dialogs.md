@@ -1,7 +1,6 @@
 ---
-title: Dialogs in the Bot Builder SDK for .NET | Microsoft Docs
-description: Learn about Dialogs in the Bot Builder SDK for .NET.
-keywords: Bot Framework, .NET, Bot Builder, SDK, dialog, conversation modeling
+title: Explore and create dialogs | Microsoft Docs
+description: Learn how to chunk complex conversation flows into manageable Dialogs using the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
@@ -13,14 +12,14 @@ ms.reviewer:
 ROBOTS: Index, Follow
 ---
 
-# Dialogs
+# Explore and create dialogs
 
 This article explores the fundamentals of dialogs in the Bot Builder SDK for .NET. 
 
 When you create a bot using the Bot Builder SDK for .NET, you can use dialogs to model 
 a conversation and manage [conversation flow](~/bot-design-conversation-flow.md). 
 Each dialog is an abstraction that encapsulates its own state in a C# class that implements `IDialog`. 
-A dialog can be composed with other dialogs to maximize reuse, and a dialog context maintains the [stack of dialogs](~/bot-design-conversation-flow.md#stack) that are active in the conversation at any point in time. 
+A dialog can be composed with other dialogs to maximize reuse, and a dialog context maintains the [stack of dialogs](~/bot-design-conversation-flow.md) that are active in the conversation at any point in time. 
 
 A conversation that comprises dialogs is portable across computers, which makes it possible for your bot implementation to scale. 
 When you use dialogs in the Bot Builder SDK for .NET, conversation state 
@@ -129,12 +128,12 @@ private conversation data is useful for storing user data that is related to a s
 
 `Internals.IBotToUser` provides methods to send a message from bot to user. 
 Messages may be sent inline with the response to the web API method call or 
-directly by using the [Connector client](~/dotnet/connector.md#create-client). 
+directly by using the [Connector client](~/dotnet/connector.md). 
 Sending and receiving messages through the dialog context ensures that the `Internals.IBotData` state is passed through the Connector.
 
 ### Internals.IDialogStack
 
-`Internals.IDialogStack` provides methods to manage the [dialog stack](~/bot-design-conversation-flow.md#stack). A majority of the time, the dialog stack will 
+`Internals.IDialogStack` provides methods to manage the [dialog stack](~/bot-design-conversation-flow.md). Most of the time, the dialog stack will 
 automatically be managed for you. However, there may be cases where you want to explictly manage the stack. 
 For example, you might want to call a child dialog and add it to the 
 top of the dialog stack, mark the current dialog as complete (thereby removing it from the dialog stack and returning the result to the prior dialog in the stack), 

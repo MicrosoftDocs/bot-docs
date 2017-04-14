@@ -1,7 +1,6 @@
 ---
-title: Understanding dialogs| Microsoft Docs
-description: Learn how to manage message flow by routing messages through dialogs in the Bot Builder SDK for Node.js.
-keywords: Bot Framework, dialog, root dialog, routing messages, conversation flow, conversation, node.js, node, Bot Builder, SDK
+title: Manage message flow with dialogs| Microsoft Docs
+description: Learn how to chunk complex conversation flows into manageable Dialogs using the Bot Builder SDK for Node.js.
 author: DeniseMak
 ms.author: v-demak
 manager: rstand
@@ -12,9 +11,9 @@ ms.date: 03/31/2017
 ms.reviewer:
 ROBOTS: Index, Follow
 ---
-# Understanding dialogs
+# Manage message flow with dialogs
 
-Dialogs help you encapsulate your bot's conversational logic in manageable components. The Bot Builder SDK provides [Dialog][Dialogclass] objects that help you manage conversation flow. 
+Dialogs help you encapsulate your bot's conversational logic into manageable components. The Bot Builder SDK provides [Dialog][Dialogclass] objects that help you manage conversation flow. 
 
 ## Root and child dialogs
 

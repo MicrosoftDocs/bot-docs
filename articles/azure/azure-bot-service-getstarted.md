@@ -1,13 +1,11 @@
 ---
 title: Create a bot with the Azure Bot Service | Microsoft Docs
-description: Learn how to create a bot with the Azure Bot Service.
-keywords: Bot Framework, Bot Builder, Azure Bot Service, get started
+description: Learn how to create bots with the Azure Bot Service, an integrated, dedicated bot development environment.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
 ms.date: 4/12/2017
 ms.reviewer: 
 ROBOTS: Index, Follow

@@ -1,7 +1,6 @@
 ---
-title: Add rich card attachments to messages using the Bot Framework Connector service and .NET | Microsoft Docs
-description: Learn how to add rich card attachments to messages using the Bot Framework Connector service via the Bot Builder SDK for .NET.
-keywords: Bot Framework, .NET, Bot Builder, SDK, Connector, Connector service, attachment, card, rich card
+title: Add rich card attachments to messages | Microsoft Docs
+description: Learn how to add rich cards to enhance and expand message capability using the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
@@ -13,7 +12,7 @@ ms.reviewer:
 ROBOTS: Index, Follow
 ---
 
-# Add rich cards to messages
+# Add rich card attachments to messages
 
 A message exchange between user and bot can contain rich cards that are rendered as a list or carousel. 
 Within an `Activity` object, the `Attachments` property contains an array of `Attachment` objects 

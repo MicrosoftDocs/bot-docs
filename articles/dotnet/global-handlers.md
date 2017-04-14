@@ -1,7 +1,6 @@
 ---
-title: Implement global message handlers by using the Bot Builder SDK for .NET | Microsoft Docs
-description: Learn how to implement global message handlers by using the Bot Builder SDK for .NET.
-keywords: Bot Framework, dotnet, .NET, Bot Builder, SDK, global handler, global message handler, message handler
+title: Implement global message handlers | Microsoft Docs
+description:  Teach your bot to listen for and handle user input containing certain keywords using the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand

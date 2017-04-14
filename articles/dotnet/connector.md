@@ -1,7 +1,6 @@
 ---
-title: Send and receive activities using the Bot Framework Connector and .NET | Microsoft Docs
-description: Learn how to send and receive activities using the Bot Framework Connector via the Bot Builder SDK for .NET.
-keywords: Bot Framework, .NET, Bot Builder, SDK, Connector, Connector service, activity, send activity, receive activity
+title: Send and receive activities | Microsoft Docs
+description: Learn how to exchange information with a user across various channels using a single REST API contained in the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
@@ -13,7 +12,7 @@ ms.reviewer:
 ROBOTS: Index, Follow
 ---
 
-# Send and receive activities using the Connector
+# Send and receive activities
 
 The Bot Framework Connector provides a single REST API that enables a bot to communicate across multiple 
 channels such as Skype, Email, Slack, and more. 
@@ -30,7 +29,7 @@ exchange information between bot and user on a channel.
 > can streamline the process of managing conversation flow and state and 
 > make it simpler to incorporate cognitive services such as language understanding.
 
-##<a id="create-client"></a> Create a connector client
+## Create a connector client
 
 The `ConnectorClient` class contains the methods that a bot uses to communicate with a user on a channel. 
 When your bot receives an [Activity](~/dotnet/activities.md) object from the Connector, 

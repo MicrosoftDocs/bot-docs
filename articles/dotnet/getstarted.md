@@ -1,7 +1,6 @@
 ---
 title: Create a bot with the Bot Builder SDK for .NET | Microsoft Docs
-description: Learn how to create a bot with the Bot Builder SDK for .NET.
-keywords: Bot Framework, Bot Builder, SDK, .NET, get started
+description: Create a bot with the Bot Builder SDK for .NET, a powerful bot construction framework.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand

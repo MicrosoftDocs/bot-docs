@@ -1,7 +1,6 @@
 ---
-title: Key concepts in the Bot Builder SDK for Node.js | Microsoft Docs
-description: Learn about key concepts in the Bot Builder SDK for Node.js.
-keywords: Bot Framework, Node.js, Bot Builder, SDK, key concepts, core concepts
+title: Key concepts | Microsoft Docs
+description: Understand the key concepts and tools for building and deploying conversational bots available in the Bot Builder SDK for Node.js.
 author: DeniseMak
 ms.author: v-demak
 manager: rstand
@@ -13,7 +12,7 @@ ms.reviewer:
 ROBOTS: Index, Follow
 ---
 
-# Key concepts in the Bot Builder SDK for Node.js
+# Key concepts
 
 This article introduces key concepts in the Bot Builder SDK for Node.js.
 

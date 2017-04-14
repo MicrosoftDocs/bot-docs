@@ -1,7 +1,6 @@
 ---
-title: Publish a bot to the Bot Directory | Microsoft Docs
+title: Publish a bot | Microsoft Docs
 description: Learn how to add a bot to the Bot Directory.
-keywords: Bot Framework, Bot Builder, publish bot, Bot Framework Portal, Bot Directory
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
@@ -13,7 +12,7 @@ ms.reviewer:
 ROBOTS: Index, Follow
 ---
 
-# Publish a bot to the Bot Directory
+# Publish a bot
 
 After you have [registered](~/portal-register-bot.md) your bot with the Bot Framework, 
 [deployed](~/publish-bot-overview.md) your bot to the cloud, 

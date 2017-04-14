@@ -1,7 +1,6 @@
 ---
 title: Respond to user messages | Microsoft Docs
-description: Learn how to start sending and receiving messages by using message handlers in the Bot Builder SDK for Node.js.
-keywords: Bot Framework, dialog, send messages, conversation flow, conversation, node.js, node, Bot Builder, SDK
+description: Learn the default method for sending and receiving messages in the Bot Builder SDK for Node.js.
 author: DeniseMak
 ms.author: v-demak
 manager: rstand

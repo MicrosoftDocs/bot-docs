@@ -1,7 +1,6 @@
 ---
 title: Handle user and conversation events  | Microsoft Docs
-description: Learn how your conversational application (bot) can handle events such as a user joining a conversation or adding a bot to their contacts list.
-keywords: bot framework, user events, handle conversation updates, join conversation, add to contacts, greet users, conversationUpdate, contactRelationUpdate
+description: Teach your bot how to handle events such as a user joining a conversation using the Bot Builder SDK for Node.js.
 author: DeniseMak
 ms.author: v-demak
 manager: rstand
@@ -13,8 +12,7 @@ ms.reviewer:
 ROBOTS: Index, Follow
 ---
 
-# Greet users who join a conversation or add your bot to their contacts using the Bot Builder SDK for Node.js
-
+# Handle user and conversation events
 
 This article demonstrates how your bot can handle events such as a user joining a conversation or adding a bot to their contacts list. 
 

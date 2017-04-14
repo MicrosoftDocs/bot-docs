@@ -1,7 +1,6 @@
 ---
-title: Customize user experience with pattern language in the Bot Builder SDK for .NET | Microsoft Docs
-description: Learn how to customize user experience with pattern language in the Bot Builder SDK for .NET.
-keywords: Bot Framework, .NET, Bot Builder, SDK, FormFlow, pattern, patterns
+title: Customize user experience with pattern language | Microsoft Docs
+description: Learn how to to customize prompts, content, and formatting with pattern language and Formflow using the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
@@ -20,10 +19,10 @@ use pattern language to specify the contents and/or format of the prompt.
 
 ## Prompts and templates
 
-A [prompt][promptAttribute] defines the message that is sent to the user to request a piece of information or ask for confirmation. You can customize a prompt by using the [Prompt attribute](~/dotnet/formflow-advanced.md#prompt-attribute) or implicitly through [IFormBuilder<T>.Field][field]. 
+A [prompt][promptAttribute] defines the message that is sent to the user to request a piece of information or ask for confirmation. You can customize a prompt by using the [Prompt attribute](~/dotnet/formflow-advanced.md) or implicitly through [IFormBuilder<T>.Field][field]. 
 
 Forms use templates to automatically construct prompts and other things such as help. 
-You can override the default template of a class or field by using the [Template attribute](~/dotnet/formflow-advanced.md#template-attribute). 
+You can override the default template of a class or field by using the [Template attribute](~/dotnet/formflow-advanced.md). 
 
 > [!TIP]
 > The [FormConfiguration.Templates][formConfiguration] 

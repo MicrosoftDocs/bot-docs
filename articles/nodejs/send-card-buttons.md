@@ -1,7 +1,6 @@
 ---
 title: Send rich cards | Microsoft Docs
-description: Learn how to send and receive rich cards in a conversational application (bot). Rich cards may contain buttons and images.
-keywords: bot framework, bot, cards, rich card, buttons, send messages, image
+description: Learn how to send and receive interactive, engaging rich cards using the Bot Builder SDK for Node.js.
 author: DeniseMak
 ms.author: v-demak
 manager: rstand

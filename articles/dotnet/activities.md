@@ -1,7 +1,6 @@
 ---
-title: Activity types within the Bot Framework Connector service and .NET | Microsoft Docs
-description: Learn about activity types within the Bot Builder SDK for .NET.
-keywords: Bot Framework, .NET, Bot Builder, SDK, Connector, Connector service, activity, activity type, message, conversationUpdate, contactRelationUpdate, typing, ping, deleteUserData, endOfConversation
+title: Explore activity types | Microsoft Docs
+description: Learn about the different activity types available within the Bot Builder SDK for .NET and when to use them.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
@@ -13,7 +12,7 @@ ms.reviewer:
 ROBOTS: Index, Follow
 ---
 
-# Activity types
+# Explore activity types
 
 [!include[Activity concept overview](~/includes/snippet-dotnet-concept-activity.md)]
 

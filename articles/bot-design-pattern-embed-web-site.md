@@ -1,7 +1,6 @@
 ---
-title: Embedding a bot in a website | Microsoft Docs
-description: Learn how to design a conversational application (bot) that is embedded within a website.
-keywords: bot framework, design, bot, scenario, use case, pattern, bot in website, backchannel, web chat control, Skype web control
+title: Embed a bot in a website | Microsoft Docs
+description: Learn how to design a bot that will be embedded within a website.
 author: matvelloso
 ms.author: mateusv
 manager: rstand
@@ -12,7 +11,7 @@ ms.date:
 ms.reviewer: rstand
 ROBOTS: Index, Follow
 ---
-# Embedding bots in websites
+# Embed a bot in a website
 
 Although bots commonly exist outside of websites, they can also be embedded within a website. 
 For example, you may embed a [knowledge bot](~/bot-design-pattern-knowledge-base.md) within a website 

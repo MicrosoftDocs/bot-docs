@@ -1,7 +1,6 @@
 ---
-title: How to Embed the Chat Control | Microsoft Docs
-description: Learn how to embed the Bot Framework chat control in your web page.
-keywords:
+title: Add the bot chat control to a web site | Microsoft Docs
+description: Learn how to embed the Bot Framework chat control in your web page and conrol whether other developers can embed the bot on their pages.
 author: RobStand
 ms.author: rstand
 
@@ -15,7 +14,7 @@ ms.reviewer:
 ROBOTS: Index, Follow
 #REVIEW
 ---
-# Add the bot chat control to your web site
+# Add the bot chat control to a web site
 
 The Bot Framework chat control allows you to chat with your bot through the Bot Connector. The chat widget may be enabled on the bot's landing page in the directory, and you may embed the web chat control in your own page.
 

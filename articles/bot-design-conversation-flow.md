@@ -1,7 +1,6 @@
 ---
-title: Designing conversation flow within a bot | Microsoft Docs
-description: Understand the fundamental concepts of designing conversation flow by using dialogs in the Microsoft Bot Framework.
-keywords: Bot Framework, bot design, dialog, conversation flow, conversation
+title: Design and control conversation flow | Microsoft Docs
+description: Learn how to design and control complex conversation flows to provide a delightfully smooth user experience using the Microsoft Bot Framework.
 author: matvelloso
 ms.author: mateusv
 manager: rstand
@@ -12,9 +11,9 @@ ms.date:
 ms.reviewer: rstand
 ROBOTS: Index, Follow
 ---
-# Designing conversation flow
+# Design and control conversation flow
 
-In a traditional application, the user interface (UI) is typically comprises screens. 
+In a traditional application, the user interface (UI) is a series of screens. 
 A single app or website can use one or more screens as needed to exchange information with the user. 
 Most applications start with a main screen where users initially land and provide navigation that leads to other screens for various functions like starting a new order, browsing products, or looking for help.
 
@@ -35,7 +34,7 @@ For a detailed walkthrough of managing conversation flow using dialogs and the B
 - [Manage conversation flow using dialogs with the Bot Builder SDK for .NET](~/dotnet/manage-conversation-flow.md)
 - [Manage conversation flow using dialogs with the Bot Builder SDK for Node.js](~/nodejs/manage-conversation-flow.md)
 
-##<a id="stack"></a> Dialog stack
+##Dialog stack
 
 When one dialog invokes another, the Bot Builder adds the new dialog to the top of the dialog stack. 
 The dialog that is on top of the stack at any given time is in control of the conversation. 
@@ -47,7 +46,7 @@ When a dialog closes, it's removed from the stack, and the prior dialog in the s
 > by the Bot Builder as dialogs invoke one another, close, and so on 
 > is critical to being able to effectively design the conversation flow of a bot. 
 
-##<a id="dialogs-stacks-and-humans"></a> Dialogs, stacks and humans
+## Dialogs, stacks and humans
 
 It may be tempting to assume that users will navigate across dialogs, creating a dialog stack, 
 and at some point will navigate back in the direction they came from, unstacking the dialogs one by one in a neat and orderly way. 

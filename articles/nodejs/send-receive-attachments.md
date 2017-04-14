@@ -1,7 +1,6 @@
 ---
 title: Send and receive attachments | Microsoft Docs
-description: Learn how to send and receive messages containing attachments such as images in a conversational application (bot).
-keywords: bot framework, bot, attachment, images, send messages
+description: Learn how to send and receive messages containing attachments using the Bot Builder SDK for Node.js.
 author: DeniseMak
 ms.author: v-demak
 manager: rstand
@@ -13,7 +12,7 @@ ms.reviewer:
 ROBOTS: Index, Follow
 ---
 
-# Send and receive attachments using the Bot Builder SDK for Node.js
+# Send and receive attachments
 
 In this article, we'll discuss how to send messages containing attachments such as images by using the Bot Builder SDK for Node.js.
 

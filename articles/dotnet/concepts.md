@@ -1,7 +1,6 @@
 ---
 title: Key concepts in the Bot Builder SDK for .NET | Microsoft Docs
-description: Learn about key concepts in the Bot Builder SDK for .NET.
-keywords: Bot Framework, .NET, Bot Builder, SDK, key concepts, core concepts, connector, activity, dialog
+description: Understand the key concepts and tools for building and deploying conversational bots available in the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
@@ -17,7 +16,7 @@ ROBOTS: Index, Follow
 
 This article introduces key concepts in the Bot Builder SDK for .NET.
 
-##<a id="connector"></a> Connector
+## Connector
 
 The Bot Framework Connector provides a single REST API that enables a bot to 
 communicate across multiple channels such as Skype, Email, Slack, and more. 
@@ -27,7 +26,7 @@ In the Bot Builder SDK for .NET, the [Connector][connectorLibrary] library enabl
 
 For details about using the Connector via the Bot Builder SDK for .NET, see [Send and receive activities](~/dotnet/connector.md).
 
-##<a id="activity"></a> Activity
+## Activity
 
 [!include[Activity concept overview](~/includes/snippet-dotnet-concept-activity.md)]
 For details about Activities in the Bot Builder SDK for .NET, 
@@ -37,7 +36,7 @@ see [Activity types](~/dotnet/activities.md).
 
 When you create a bot using the Bot Builder SDK for .NET, you can use dialogs to model 
 a conversation and manage [conversation flow](~/bot-design-conversation-flow.md). 
-A dialog can be composed with other dialogs to maximize reuse, and a dialog context maintains the [stack of dialogs](~/bot-design-conversation-flow.md#stack) that are active in the conversation at any point in time. 
+A dialog can be composed with other dialogs to maximize reuse, and a dialog context maintains the [stack of dialogs](~/bot-design-conversation-flow.md) that are active in the conversation at any point in time. 
 A conversation that comprises dialogs is portable across computers, which makes it possible for your bot implementation to scale. In the Bot Builder SDK for .NET, the [Builder][builderLibrary] library enables you to manage dialogs.
 
 For details about using dialogs within the Bot Builder SDK for .NET, see 

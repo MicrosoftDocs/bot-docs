@@ -1,21 +1,19 @@
 ---
-title: Handoff from bot to human | Microsoft Docs
-description: Learn how to design a conversational application (bot) that requires handoff from bot to human.
-keywords: bot framework, design, bot, scenario, use case, pattern, bot to human, handoff, transition to human
+title: Transition conversations from bot to human | Microsoft Docs
+description: Teach your bot how to handle situations when a conversation started with the bot must be continued with a human. 
 author: matvelloso
 ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
 ms.date: 
 ms.reviewer: rstand
 ROBOTS: Index, Follow
 ---
-# Handoff from bot to human
+# Transition conversations from bot to human
 
 Regardless of how much artificial intelligence a bot possesses, there may still be times when it needs to 
-handoff control of the conversation to a human. 
+hand off control of the conversation to a human. 
 This article covers the types of scenarios that typically require human involvement 
 and explores the process of transitioning control of a conversation from bot to human. 
 

@@ -1,7 +1,6 @@
 ---
 title: Best practices for designing bots | Microsoft Docs
-description: Follow these best practices when designing the user experience for your bots.
-keywords: design, experience, practices, guidelines
+description: Learn what makes a good conversational bot and how to design one to improve your user experience. 
 author: RobStand
 ms.author: rstand
 

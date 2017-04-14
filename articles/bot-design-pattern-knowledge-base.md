@@ -1,7 +1,6 @@
 ---
-title: Knowledge bots | Microsoft Docs
-description: Learn how to design a conversational application (bot) that can answer questions about anything.
-keywords: bot framework, design, bot, scenario, use case, pattern, knowledge base
+title: Design knowledge bots | Microsoft Docs
+description: Learn what options are available for designing a knowledge bot to find and return information in response to the user's input or query.
 author: matvelloso
 ms.author: mateusv
 manager: rstand
@@ -12,7 +11,7 @@ ms.date:
 ms.reviewer: rstand
 ROBOTS: Index, Follow
 ---
-# Knowledge bots
+# Design knowledge bots
 
 A knowledge bot can be designed to provide information about virtually any topic. 
 For example, one knowledge bot might answer questions about events such as, "What bot events are there at this conference?", "When is the next Reggae show?", or "Who is Tame Impala?" 
@@ -24,7 +23,7 @@ by leveraging a body of data, such as relational data in a SQL database,
 JSON data in a non-relational store, or PDFs in a document store. 
 This article explores some common knowledge bot capabilities and their related technologies. 
 
-##<a id="search"></a> Search
+## Search
 
 Search functionality can be a valuable tool within a bot. 
 
