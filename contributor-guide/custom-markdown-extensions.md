@@ -31,12 +31,12 @@ While these notes and tips support code blocks, images, lists, and links, try to
 Here's sample markdown for a note with a single paragraph:
 
     > [!NOTE]
-    > To complete this tutorial, you must have an active Microsoft Azure account. If you don't have an account, you can create a free trial account in just a couple of minutes.
+    > To complete this tutorial, you must have an active Microsoft Bot Framework account. If you don't have an account, you can create a free trial account in just a couple of minutes.
 
 Multiparagraph:
 
     > [!NOTE]
-    > To complete this tutorial, you must have an active Microsoft Azure account.
+    > To complete this tutorial, you must have an active Microsoft Bot Framework account.
     >
     > If you don't have an account, you can [create a free trial account](http://www.windowsazure.com/pricing/free-trial/) in just a couple of minutes.
 
@@ -94,7 +94,7 @@ Syntax:
     > * [platform, language or method](article-file-name)
 
 ### <a id="two-way-selectors"></a>Two-way selectors
-Two-way selectors let users select topics from a two way matrix. This is essential when an Azure technology supports multiple backend platforms as well as multiple clients.
+Two-way selectors let users select topics from a two way matrix. This is essential when an Bot Framework technology supports multiple backend platforms as well as multiple clients.
 
 Syntax:
 

@@ -1,4 +1,4 @@
-# Linking guidance for Azure technical content
+# Linking guidance for Bot Framework technical content
 ### Links from one article to another
 To create an inline link from one technical article to another technical article, use the following link syntax:  
 

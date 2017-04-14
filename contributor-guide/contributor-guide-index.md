@@ -1,6 +1,6 @@
 ---
-title: Azure technical content contributors' guide index
-description: Lists the articles available in the Azure technical content contributors' guide for azure.microsoft.com.
+title: Bot Framework technical content contributors' guide index
+description: Lists the articles available in the Bot Framework technical content contributors' guide for azure.microsoft.com.
 metakeywords: ''
 services: ''
 solutions: ''
@@ -19,9 +19,9 @@ ms.date: 12/19/2014
 ms.author: tysonn
 
 ---
-# Azure technical content contributors' guide index
+# Bot Framework technical content contributors' guide index
 ## General guidance
-* [Contribute to Azure documentation](../README.md)
+* [Contribute to Bot Framework documentation](../README.md)
 * [Content channel guidance](content-channel-guidance.md)
 * [Style and voice](style-and-voice.md)
 * [Feedback, comments, and support](feedback-and-comments.md)
@@ -32,7 +32,7 @@ ms.author: tysonn
 
 <!-- [Git commands for staging an article on the internal preview site](./git-commands-for-sandbox.md)-->
 
-* [File names and locations for Azure technical articles](file-names-and-locations.md)
+* [File names and locations for Bot Framework technical articles](file-names-and-locations.md)
 * [Linking guidelines](create-links-markdown.md)
 * [Retire or rename an article](retire-or-rename-an-article.md)
 * [How to undo almost anything with Git (GitHub blog)](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
@@ -49,5 +49,5 @@ ms.author: tysonn
 * [Use syntax highlighting for code snippets in markdown](syntax-highlighting-markdown.md)
 * [Custom markdown extensions used in our technical articles](custom-markdown-extensions.md)
 * [Markdown template for technical articles](../markdown templates/markdown-template-for-new-articles.md)
-* [Metadata for Azure technical articles](article-metadata.md)
+* [Metadata for Bot Framework technical articles](article-metadata.md)
 

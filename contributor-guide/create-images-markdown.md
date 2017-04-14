@@ -1,6 +1,6 @@
 ---
 title: Create images in markdown
-description: Explains how to create images in markdown according to guidelines set for the Azure repositories.
+description: Explains how to create images in markdown according to guidelines set for the Bot Framework repositories.
 services: ''
 solutions: ''
 documentationcenter: ''
@@ -36,7 +36,7 @@ Example:
 
 See [the markdown template](../markdown%20templates/markdown-template-for-new-articles.md) for an example.  The image reference links in this markdown template are designed to be at the bottom of the template.
 
-## Image guidelines specific to azure technical content
+## Image guidelines specific to Bot Framework technical content
 Screenshots are currently encouraged if it's not possible to include repro steps. Do write your content so that the content can stand without the screenshots if necessary.
 
 Use the following guidelines when creating and including art files:

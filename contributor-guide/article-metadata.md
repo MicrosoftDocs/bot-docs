@@ -1,7 +1,7 @@
 
 
-# Metadata for Azure technical articles
-The standard Azure metadata section looks like this:
+# Metadata for Bot Framework technical articles
+The standard Bot Framework metadata section looks like this:
   ```
   ---
   title: <page title displayed in search results. Include the brand Azure> | Microsoft Docs

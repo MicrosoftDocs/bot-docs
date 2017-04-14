@@ -12,7 +12,7 @@ The updates in the pull request must comply with the following criteria to be me
 | Repo integrity |Pull request contains no obvious content regressions. |
 | Repo integrity |No article-related files, images, or folders are being added to the root directory of the repo.|
 | Repo integrity|Pull requests that change a configuration file in the root folder must be reviewed and merged by the repo administrator. |
-| Repo integrity |Pull request does not include an embedded repo or any unusual, extraneous files. All file updates should be restricted to the articles and includes folders in the repo. Items to watch for: .DS_Store, desktop.ini, .gitignore, azure-docs-pr embedded in root folder.|
+| Repo integrity |Pull request does not include an embedded repo or any unusual, extraneous files. All file updates should be restricted to the articles and includes folders in the repo. Items to watch for: .DS_Store, desktop.ini, .gitignore, bot-framework-docs-pr embedded in root folder.|
 | Repo integrity |Pull request contains fewer than 100 changed files unless the PR intentionally is updating a release branch from master. (Really, a PR should contain far fewer than that, but after 100 changed files, GitHub doesn’t display the diffs). |
 | Repo integrity |If articles are deleted in the pull request, the deletions must be by the listed author. If not by the listed author, the PR must contain a comment indicating the article deletions are intentional |
 | Naming |File names for new files follow the [file naming guidelines](file-names-and-locations.md). |
@@ -36,7 +36,7 @@ The updates in the pull request must comply with the following criteria to be me
 | Markdown |Custom markdown elements are used where appropriate. Ex: Notes are coded using the [!NOTE] extension, not as plain text. |
 | SEO |The " &#124; Microsoft Docs" site identifier is required. We no longer use the " &#124; Microsoft Azure" site identifier |
 | SEO |The *title* metadata value must include the word "Azure" (Intune, Operations Management Suite [OMS], and StorSimple articles are excepted) |
-| SEO |The H1 title contains sufficient information to describe the content of the article, to differentiate it from other Azure articles, and to map to likely customer keywords. For example "Overview" as the H1 title is a fail. |
+| SEO |The H1 title contains sufficient information to describe the content of the article, to differentiate it from other Bot Framework articles, and to map to likely customer keywords. For example "Overview" as the H1 title is a fail. |
 | Terminology |The use of the ARM acronym, V1, or V2 as references to the classic and Resource Manager deployment models is a blocking terminology item. |
 | Images |Animated GIFs and PDN files are not accepted into the repo. |
 | Images |Images have clear resolution, are free of misspelled words, and contain no private information |
@@ -53,9 +53,9 @@ For these items, pull request reviewers provide feedback and instructions for th
 | Images |Images use the correct callout style and color, and screenshots use the correct border and placeholder style. [See the image guidance](create-images-markdown.md). |
 | Images |Images include alt text. [See the image guidance](create-images-markdown.md). |
 | Site/design functionality |The H2 headings, when rendered in the on-page TOC, should ideally wrap to no more than 2 lines. Longer headings make the article TOC harder to scan. |
-| Style conventions |All titles and headings are sentence case, per Azure style. |
+| Style conventions |All titles and headings are sentence case, per Bot Framework style. |
 | Process |If the pull request could have easily been reconfigured to benefit from PRmerger automation, pull request reviewers provide feedback to the author about how to use branches so the changes could be merged automatically. See [the PR etiquette article](contributor-guide-pull-request-etiquette.md). |
-| Process |When you delete or rename an article, make sure you follow the process. Pull request reviewers should add the following comment and link in a comment:<br><br>*Please verify you followed the process in the contributors’ guide for deleting articles: [https://github.com/Azure/azure-docs-pr/blob/master/contributor-guide/retire-or-rename-an-article.md](retire-or-rename-an-article.md)*
+| Process |When you delete or rename an article, make sure you follow the process. Pull request reviewers should add the following comment and link in a comment:<br><br>*Please verify you followed the process in the contributors’ guide for deleting articles: [https://github.com/Azure/bot-framework-docs-pr/blob/master/contributor-guide/retire-or-rename-an-article.md](retire-or-rename-an-article.md)*
 
 ## Related
 * [Pull request etiquette and best practices for Microsoft contributors](contributor-guide-pull-request-etiquette.md)

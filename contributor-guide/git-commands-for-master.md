@@ -1,13 +1,13 @@
 # Git commands for creating a new article or updating an existing article
 ## Standard process (working from master)
-Follow the steps in this article to create a local working branch on your computer so that you can create a new article for the Azure technical documentation section of docs.microsoft.com/azure or update an existing article.
+Follow the steps in this article to create a local working branch on your computer so that you can create a new article for the Bot Framework technical documentation section of docs.microsoft.com/Bot Framework or update an existing article.
 
 1. Start Git Bash (or the command-line tool you use for Git).
    
-   **Note:** If you are working in the public repository, change azure-docs-pr to azure-docs in all the commands.
-2. Change to azure-docs-pr:
+   **Note:** If you are working in the public repository, change bot-framework-docs-pr to bot-framework-docs in all the commands.
+2. Change to bot-framework-docs-pr:
    
-        cd azure-docs-pr
+        cd bot-framework-docs-pr
 3. Check out the master branch:
    
         git checkout master

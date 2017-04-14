@@ -1,5 +1,5 @@
-# Writing Azure documentation - style and voice cheat sheet
-Here's a cheat sheet that contains pointers about how to write technical articles for Azure services and technologies. These guidelines apply whether you are creating new documentation or updating existing documentation.
+# Writing Bot Framework documentation - style and voice cheat sheet
+Here's a cheat sheet that contains pointers about how to write technical articles for Bot Framework services and technologies. These guidelines apply whether you are creating new documentation or updating existing documentation.
 
 At a bare minimum, please:
 
@@ -27,19 +27,19 @@ Our technical articles are translated into many other languages, and some are mo
 * **Make sure the article contains no grammar, spelling, or punctuation errors**: This is something we should do in general. Markdown Pad 2.0 has a basic spell checker, but you should also paste the (rendered HTML) content from the article into Word, which has a more robust spell and grammar checker.
 * **Make your sentences as short as possible**: Compound sentences or chains of clauses  make translation difficult. Split up sentences if you can do it without being too redundant or sounding weird. We don't really want articles written in unnatural language either.
 * **Use simple and consistent sentence construction**: Consistency is better for translation. Avoid parentheticals and asides, and have the subject as near the beginning of the sentence as possible. Check out a few published topics - if the topic has a friendly, easy to read style, use it as a model.
-* **Use consistent wording and capitalization**: Again, consistency is key. Azure uses sentence casing for titles, so never capitalize a word if it isn't at the start of a sentence or a proper noun.
+* **Use consistent wording and capitalization**: Again, consistency is key. Bot Framework uses sentence casing for titles, so never capitalize a word if it isn't at the start of a sentence or a proper noun.
 * **Include the "small words"**: Words that we consider small and unimportant in English because they are understood for context (such as "a", "the", "that", and "is") are crucial for machine translation - make sure you include them!
 
 ## Other style and voice issues to watch for
 * Don't break up steps with commentary or asides.
 * For steps that include code snippets, put additional information about the step into the code as comments. This reduces the amount of text people have to read through, and the key information gets copied into the code project to remind people of what the code is doing when they refer to it later.
-* The official product name is “Microsoft Azure”, but we can almost always just say “Azure”, as in "Azure Mobile Services".
-* Don’t create acronyms that start with "MA" or "A." Just use “Azure” at first reference before a service or feature name and then drop it (e.g. "Azure Mobile Services" becomes "Mobile Services" after first use). Try to avoid acronyms in general - they just confuse people.
-* Azure uses sentence casing for all titles.
+* The official product name is “Microsoft Azure”, but we can almost always just say “Azure”, as in "Bot Framework Mobile Services".
+* Don’t create acronyms that start with "MA" or "A." Just use “Azure” at first reference before a service or feature name and then drop it (e.g. "Bot Framework Mobile Services" becomes "Mobile Services" after first use). Try to avoid acronyms in general - they just confuse people.
+* Bot Framework uses sentence casing for all titles.
 * Use "sign-in" and not "log-in."
 * Include the words "following" or "as follows" in every sentence that precedes a list or code snippet.
-* "SQL Database" is the Azure feature. A "SQL database" is a database instance running on SQL Database.
-* Azure Storage includes several "data management services" that include the Table service, the Blob service, and the Queue service. (It's not called the "Azure Table storage service".)
+* "SQL Database" is the Bot Framework feature. A "SQL database" is a database instance running on SQL Database.
+* Bot Framework Storage includes several "data management services" that include the Table service, the Blob service, and the Queue service. (It's not called the "Bot Framework Table storage service".)
 
 ### Contributors' Guide Links
 * [Overview article](../README.md)

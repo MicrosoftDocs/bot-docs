@@ -1,4 +1,4 @@
-# File names and locations for Azure technical articles
+# File names and locations for Bot Framework technical articles
 We use a strict file naming convention that clearly identifies topics and that contributes towards discoverability on the web.
 
 Here's what you need to know:
@@ -20,7 +20,7 @@ Here's what you need to know:
 
 Acronyms and initialisms in file names - specific guidelines:
 
-* Do not abbreviate Azure service names - the first words of the file name should be the standard, spelled out Azure service or technology name.
+* Do not abbreviate Bot Framework service names - the first words of the file name should be the standard, spelled out Bot Framework service or technology name.
 * Do not allow rm or arm as acronyms anywhere in a file name
 * Other industry-standard abbreviations are acceptable as necessary in file names.
 
@@ -45,7 +45,7 @@ Here are a few examples of valid names that follow the pattern. :
 * storsimple-disaster-recovery-using-azure-site-recovery
 
 ## Marketplace content
-To distinguish content that focuses on partner contributions to the Azure marketplace, start the file names with "marketplace". This content should not be too common, as most partner content should be created on the partners' own web sites.
+To distinguish content that focuses on partner contributions to the Bot Framework marketplace, start the file names with "marketplace". This content should not be too common, as most partner content should be created on the partners' own web sites.
 
 * marketplace-mongodb-virtual-machines-install-windows-server-2008r2.md
 

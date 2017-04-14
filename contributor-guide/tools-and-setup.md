@@ -1,6 +1,6 @@
 # Install and set up tools for authoring in GitHub
 
-Follow the steps in this article to set up tools for contributing to the Azure technical documentation. Casual and occasional contributors probably can use the GitHub UI described in step 2.
+Follow the steps in this article to set up tools for contributing to the Bot Framework technical documentation. Casual and occasional contributors probably can use the GitHub UI described in step 2.
 
 If you're unfamiliar with Git, you might want to review some Git terminology: [https://help.github.com/articles/github-glossary](https://help.github.com/articles/github-glossary). In addition, this StackOverflow thread contains a glossary of Git terms you'll encounter here: [http://stackoverflow.com/questions/7076164/terminology-used-by-git](http://stackoverflow.com/questions/7076164/terminology-used-by-git)
 
@@ -19,7 +19,7 @@ If you're unfamiliar with Git, you might want to review some Git terminology: [h
 * [Next steps](#next-steps)
 
 ## Create a GitHub account and set up your profile
-To contribute to the Azure technical content, you'll need a [GitHub](http://www.github.com) account. If you are a Microsoft contributor, you need to set up your GitHub account so you're clearly identified as a Microsoft employee. Set up your profile as follows:
+To contribute to the Bot Framework technical content, you'll need a [GitHub](http://www.github.com) account. If you are a Microsoft contributor, you need to set up your GitHub account so you're clearly identified as a Microsoft employee. Set up your profile as follows:
 
 * **Profile picture**: a picture of you (required)
 * **Name**: your first and last name (required)
@@ -84,16 +84,16 @@ For the following sorts of work, we strongly recommend you install and learn to 
  
  To easily switch from the public repo version of an article to the private repo version, just add "-pr" the URL, as shown here:
 
- - github.com/Microsoft/azure-docs/blob/master/articles/batch/batch-account-create-portal.md
+ - github.com/Microsoft/bot-framework-docs/blob/master/articles/batch/batch-account-create-portal.md
 
- - github.com/Microsoft/azure-docs**-pr**/blob/master/articles/batch/batch-account-create-portal.md
+ - github.com/Microsoft/bot-framework-docs**-pr**/blob/master/articles/batch/batch-account-create-portal.md
 
 ## Permissions
-Anybody with a GitHub account can contribute to Azure technical content through our public repository at [https://github.com/Microsoft/azure-docs](https://github.com/Microsoft/azure-docs). No special permissions are required.
+Anybody with a GitHub account can contribute to Bot Framework technical content through our public repository at [https://github.com/Microsoft/bot-framework-docs](https://github.com/Microsoft/bot-framework-docs). No special permissions are required.
 
-If you are a Microsoft PM or writer who is working on Azure content as a designated author or reviewer, you must work in our private content repository, azure-docs-pr.
+If you are a Microsoft PM or writer who is working on Bot Framework content as a designated author or reviewer, you must work in our private content repository, bot-framework-docs-pr.
 
-1. Visit [https://repos.opensource.microsoft.com ](https://repos.opensource.microsoft.com) to join the Microsoft GitHub organization. Once you are a member of the Microsoft organization, you can access the private azure-docs-pr repository.
+1. Visit [https://repos.opensource.microsoft.com ](https://repos.opensource.microsoft.com) to join the Microsoft GitHub organization. Once you are a member of the Microsoft organization, you can access the private bot-framework-docs-pr repository.
 
 2. Register your GitHub account with the publishing system before you submit your first pull request. To do this, visit https://op-portal-prod.azurewebsites.net/, and click "Sign in with GitHub". The one-time sign-in is all that is needed. 
 
@@ -139,35 +139,35 @@ If you use Atom, you'll need to set a few things up.
 * To turn on the markdown preview, click Packages>Markdown Preview>Toggle Preview. You can use Ctrl-Shift-M to toggle the preview HTML view.
 
 ## Fork the repository and copy it to your computer
-1. Create a fork of the repository in GitHub - go to the top-right of the page and click the Fork button. If prompted, select your account as the location where the fork should be created. This creates a copy of the repository within your Git Hub account. Generally speaking, technical writers and program managers need to fork azure-docs-pr, the private repo. Community contributors need to fork azure-docs, the public repo. You only need to fork one time; after your first setup, if you want to copy your fork to another computer, you only have to run the commands that follow in this section to copy the repo to your computer.  If you choose to create forks of both repositories, you will need to create a fork for each repository.
+1. Create a fork of the repository in GitHub - go to the top-right of the page and click the Fork button. If prompted, select your account as the location where the fork should be created. This creates a copy of the repository within your Git Hub account. Generally speaking, technical writers and program managers need to fork bot-framework-docs-pr, the private repo. Community contributors need to fork bot-framework-docs, the public repo. You only need to fork one time; after your first setup, if you want to copy your fork to another computer, you only have to run the commands that follow in this section to copy the repo to your computer.  If you choose to create forks of both repositories, you will need to create a fork for each repository.
 2. Copy the Personal Access Token that you got from [https://github.com/settings/tokens](https://github.com/settings/tokens). You can accept the default permissions for the token.  Save the Personal Access Token in a text file for later reuse.
-3. Next, copy the repository to your computer with your credentials embedded in the command string.  To do this, open Git Bash and run it as an administrator. At the command prompt, enter the following command.  This command creates a azure-docs(-pr) directory on your computer.  If you're using the default location, it will be at c:\users<your Windows user name>\azure-docs(-pr).
+3. Next, copy the repository to your computer with your credentials embedded in the command string.  To do this, open Git Bash and run it as an administrator. At the command prompt, enter the following command.  This command creates a bot-framework-docs(-pr) directory on your computer.  If you're using the default location, it will be at c:\users<your Windows user name>\bot-framework-docs(-pr).
 
 Public repo:
 
-        git clone https://your_GitHub_user_name:your_token@github.com/your_GitHub_user_name/azure-docs.git
+        git clone https://your_GitHub_user_name:your_token@github.com/your_GitHub_user_name/bot-framework-docs.git
 
 Private repo:
 
-        git clone https://your_GitHub_user_name:your_token@github.com/your_GitHub_user_name/azure-docs-pr.git
+        git clone https://your_GitHub_user_name:your_token@github.com/your_GitHub_user_name/bot-framework-docs-pr.git
 
 For example, this clone command could look something like this:
 
-        git clone https://smithj:b428654321d613773d423ef2f173ddf4a312345@github.com/smithj/azure-docs-pr.git  
+        git clone https://smithj:b428654321d613773d423ef2f173ddf4a312345@github.com/smithj/bot-framework-docs-pr.git  
 
 ## Set remote repository connection and configure credentials
 Create a reference to the root repository by entering these commands. This sets up connections to the repository in GitHub so that you can get the latest changes onto your local machine and push your changes back to GitHub. This command also configures your token locally so that you don't have to enter your name and password each time you try to access the upstream repo and your fork on GitHub.
 
 Public repo:
 
-        cd azure-docs
-        git remote add upstream https://your_GitHub_user_name:your_token@github.com/Microsoft/azure-docs.git
+        cd bot-framework-docs
+        git remote add upstream https://your_GitHub_user_name:your_token@github.com/Microsoft/bot-framework-docs.git
         git fetch upstream
 
 Private repo:
 
-        cd azure-docs-pr
-        git remote add upstream https://your_GitHub_user_name:your_token@github.com/Microsoft/azure-docs-pr.git
+        cd bot-framework-docs-pr
+        git remote add upstream https://your_GitHub_user_name:your_token@github.com/Microsoft/bot-framework-docs-pr.git
         git fetch upstream
 
 This usually takes a while. After you do this, you won't have to fork again or enter your credentials again. You would only have to copy the forks to a local computer again if you set the tools up on another computer.
@@ -175,16 +175,16 @@ This usually takes a while. After you do this, you won't have to fork again or e
 ## Configure your user name and email locally
 To ensure you are listed correctly as a contributor, you need to configure your user name and email locally in Git.
 
-1. Start Git Bash, and switch into azure-docs or azure-docs-pr:
+1. Start Git Bash, and switch into bot-framework-docs or bot-framework-docs-pr:
    
    ````
-   cd azure-docs
+   cd bot-framework-docs
    ````
    
    or
    
    ````
-   cd azure-docs-pr
+   cd bot-framework-docs-pr
    ````
 2. Configure your user name so it matches your name as you set it up in your GitHub profile:
    

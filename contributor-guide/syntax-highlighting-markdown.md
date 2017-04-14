@@ -8,11 +8,11 @@ Fenced code blocks are an easy way to enable syntax highlighting for your code s
     ...
     ```
 
-The alias after the initial three '`' characters defines the syntax highlighting to be used. The following is a list of commonly used programming languages on the Azure platform and the matching label:
+The alias after the initial three '`' characters defines the syntax highlighting to be used. The following is a list of commonly used programming languages on the Bot Framework platform and the matching label:
 
 | Language or CLI | Language alias |
 | ------- | ------- |
-| Azure CLI | azurecli |
+| Bot Framework CLI | azurecli |
 | AzCopy | azcopy |
 | C++ | cpp |
 | C# | csharp |
