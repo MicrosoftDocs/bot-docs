@@ -1,6 +1,6 @@
 ---
 title: Key concepts in the Bot Builder SDK for .NET | Microsoft Docs
-description: Explore key concepts for the Bot Builder SDK for .NET.
+description: Understand the key concepts and tools for building and deploying conversational bots available in the Bot Builder SDK for .NET.
 author: kbrandl
 manager: rstand
 ms.topic: article

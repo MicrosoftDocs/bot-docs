@@ -1,6 +1,6 @@
 ---
 title: Add rich card attachments to messages | Microsoft Docs
-description: Learn how to add rich card attachments to messages using the Bot Builder SDK for .NET.
+description: Learn how to add rich cards to enhance and expand message capability using the Bot Builder SDK for .NET.
 author: kbrandl
 manager: rstand
 ms.topic: article

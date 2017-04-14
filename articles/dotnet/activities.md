@@ -1,6 +1,6 @@
 ---
 title: Explore activity types | Microsoft Docs
-description: Learn about activity types available within the Bot Builder SDK for .NET and when to use them.
+description: Learn about the different activity types available within the Bot Builder SDK for .NET and when to use them.
 author: kbrandl
 manager: rstand
 ms.topic: article
