@@ -2,6 +2,9 @@
 title: Deploy bots to Azure from a local git repository | Microsoft Docs
 description: Learn how to deploy a bot to Azure from your local git repository.
 author: RobStand
+ms.author: rstand
+
+
 manager: rstand
 ms.topic: deploy-local-repo-article
 ms.prod: bot-framework

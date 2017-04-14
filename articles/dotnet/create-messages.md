@@ -2,6 +2,7 @@
 title: Create messages with the Bot Framework Connector service | Microsoft Docs
 description: Learn how to create and format the different types of messages your bot can use to communicate.
 author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

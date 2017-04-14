@@ -2,6 +2,7 @@
 title: Create task automation bots | Microsoft Docs
 description: Learn how to design and create bots that perform tasks without further human intervention.
 author: matvelloso
+ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

@@ -2,6 +2,7 @@
 title: Design and control conversation flow | Microsoft Docs
 description: Learn how to design and control complex conversation flows to provide a delightfully smooth user experience using the Microsoft Bot Framework.
 author: matvelloso
+ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

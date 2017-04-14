@@ -2,6 +2,7 @@
 title: Localize form content | Microsoft Docs
 description: Learn how to create and provide localized content with FormFlow and the Bot Builder SDK for .NET.
 author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

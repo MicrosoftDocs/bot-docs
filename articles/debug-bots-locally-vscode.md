@@ -2,6 +2,7 @@
 title: Debug a bot locally | Microsoft Docs
 description: Learn how to debug bots using the debugger included in Visual Studio Code and the Bot Builder SDK for Node.js. This method does not require installing the Bot Framework Emulator.
 author: DeniseMak
+ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

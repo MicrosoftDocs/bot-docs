@@ -2,6 +2,7 @@
 title: Design the user experience | Microsoft Docs
 description: Learn how to design an engaging user experience with rich user controls, natural language understanding, and speech capability.
 author: matvelloso
+ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

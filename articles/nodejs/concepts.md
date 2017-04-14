@@ -2,6 +2,7 @@
 title: Key concepts | Microsoft Docs
 description: Understand the key concepts and tools for building and deploying conversational bots available in the Bot Builder SDK for Node.js.
 author: DeniseMak
+ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

@@ -2,6 +2,7 @@
 title: Save user data | Microsoft Docs
 description: Learn how to save user data from a conversational application (bot).
 author: DeniseMak
+ms.author: v-demak
 manager: rstand
 ms.topic: develop-article
 ms.prod: botframework

@@ -2,6 +2,7 @@
 title: Respond to user messages | Microsoft Docs
 description: Learn the default method for sending and receiving messages in the Bot Builder SDK for Node.js.
 author: DeniseMak
+ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

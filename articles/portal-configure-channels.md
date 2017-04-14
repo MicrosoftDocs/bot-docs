@@ -2,6 +2,7 @@
 title: Configure a bot to run on one or more channels | Microsoft Docs
 description: Learn how to configure a bot to run on one or more channels using the Bot Framework Portal.
 author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: publish-article
 ms.prod: bot-framework

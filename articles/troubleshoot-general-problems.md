@@ -2,6 +2,7 @@
 title: Bot Framework Troubleshooting Guide | Microsoft Docs
 description: Assistance with troubleshooting bots and the Bot Framework. Includes the Troubleshooting Guide and Technical FAQ.
 author: DeniseMak
+ms.author: v-demak
 manager: rstand
 ms.topic: article
 

@@ -1,6 +1,8 @@
 ---
 title: Implement channel-specific functionality | Microsoft Docs
 description: Learn how to access more complex communication options available in a specific channel using the the Bot Builder SDK for .NET.
+author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

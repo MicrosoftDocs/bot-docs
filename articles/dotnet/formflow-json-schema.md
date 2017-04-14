@@ -2,6 +2,7 @@
 title: Define a form using a JSON schema and FormFlow | Microsoft Docs
 description: Learn how to simplify maintenance by replacing type definitions with data-driven forms using a JSON schema and FormFlow with the Bot Builder SDK for .NET.
 author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

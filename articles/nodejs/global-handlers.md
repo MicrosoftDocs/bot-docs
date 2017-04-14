@@ -2,6 +2,7 @@
 title: Support user keyword responses | Microsoft Docs
 description: Teach your bot to listen for and handle user input containing certain keywords using the Bot Builder SDK for Node.js.
 author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

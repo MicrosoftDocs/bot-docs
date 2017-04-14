@@ -2,6 +2,7 @@
 title: Troubleshooting Bot Framework Authentication | Microsoft Docs
 description: Learn how to troubleshoot authentication errors with your bot.
 author: DeniseMak
+ms.author: v-demak
 manager: rstand
 ms.topic: article
 

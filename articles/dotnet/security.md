@@ -2,6 +2,7 @@
 title: Secure your bot | Microsoft Docs
 description: Learn how to enable available security protocols for a bot built with the Bot Builder SDK for .NET.
 author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

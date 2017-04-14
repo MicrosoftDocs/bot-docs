@@ -2,6 +2,7 @@
 title: Design knowledge bots | Microsoft Docs
 description: Learn what options are available for designing a knowledge bot to find and return information in response to the user's input or query.
 author: matvelloso
+ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

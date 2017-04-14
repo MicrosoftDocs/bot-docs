@@ -2,11 +2,14 @@
 title: Add language understanding capability | Microsoft Docs
 description: Teach your bot to understand natural language and recognize a user's intent using Cognitive Services.
 author: RobStand
+ms.author: rstand
+
+
 manager: rstand
 ms.topic: intelligence-language-article
 
 ms.prod: bot-framework
-ms.service: Cognitive Services
+
 ms.date: 
 ms.reviewer: rstand
 

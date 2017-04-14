@@ -2,6 +2,7 @@
 title: Transition conversations from bot to human | Microsoft Docs
 description: Teach your bot how to handle situations when a conversation started with the bot must be continued with a human. 
 author: matvelloso
+ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

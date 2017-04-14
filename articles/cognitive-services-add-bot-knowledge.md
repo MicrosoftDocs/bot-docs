@@ -2,11 +2,14 @@
 title: Add knowledge extraction capability | Microsoft Docs
 description: Teach your bot to understand the context of a conversation and respond appropriately with the Bot Framework and Cognitive Services.
 author: RobStand
+ms.author: rstand
+
+
 manager: rstand
 ms.topic: intelligence-knowledge-article
 
 ms.prod: bot-framework
-ms.service: Cognitive Services
+
 ms.date: 
 ms.reviewer: rstand
 

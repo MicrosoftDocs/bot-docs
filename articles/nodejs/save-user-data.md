@@ -2,6 +2,7 @@
 title: Save user data | Microsoft Docs
 description: Learn how to save information the user provides using the Bot Builder SDK for Node.js.
 author: DeniseMak
+ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

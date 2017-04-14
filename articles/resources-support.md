@@ -2,6 +2,9 @@
 title: Additional resources for the Bot Framework | Microsoft Docs
 description: Where to look for additional support when designing bots for the Bot Framework.
 author: RobStand
+ms.author: rstand
+
+
 manager: rstand
 ms.topic: ~/resources/support-article
 

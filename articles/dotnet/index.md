@@ -2,6 +2,7 @@
 title: Bot Builder SDK for .NET | Microsoft Docs
 description: Explore the Bot Builder SDK for .NET, a powerful, easy-to-use bot building framework.
 author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

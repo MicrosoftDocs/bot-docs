@@ -3,6 +3,9 @@ title: Bot Framework Downloads | Microsoft Docs
 description: Download tools and resources for developing bots with the Bot Framework.
 keywords: tools, resources, downloads, emulator, sdk
 author: RobStand
+ms.author: rstand
+
+
 manager: rstand
 ms.topic: resources-downloads-article
 

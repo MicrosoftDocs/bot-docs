@@ -2,6 +2,7 @@
 title: Publish a bot | Microsoft Docs
 description: Learn how to add a bot to the Bot Directory.
 author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: publish-article
 ms.prod: bot-framework

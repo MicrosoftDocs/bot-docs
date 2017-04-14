@@ -2,11 +2,14 @@
 title: Add vision capability | Microsoft Docs
 description: Teach your bot to see and process information derived from images through various APIs available in the Bot Framework and Cognitive Services.
 author: RobStand
+ms.author: rstand
+
+
 manager: rstand
 ms.topic: intelligence-vision-article
 
 ms.prod: bot-framework
-ms.service: Cognitive Services
+
 ms.date: 
 ms.reviewer: rstand
 

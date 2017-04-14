@@ -3,6 +3,9 @@ title: How the Bot Framework works | Microsoft Docs
 description: The key features of the Bot Framework will help you build powerful and intelligent bots.
 keywords:
 author: RobStand
+ms.author: rstand
+
+
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

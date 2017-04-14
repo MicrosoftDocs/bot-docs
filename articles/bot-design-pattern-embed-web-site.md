@@ -2,6 +2,7 @@
 title: Embed a bot in a website | Microsoft Docs
 description: Learn how to design a bot that will be embedded within a website.
 author: matvelloso
+ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

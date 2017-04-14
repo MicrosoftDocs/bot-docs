@@ -2,6 +2,7 @@
 title: Intercept messages | Microsoft Docs
 description: Learn how to create logs or other records by intercepting and processing information exchanges using the Bot Builder SDK for .NET.
 author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

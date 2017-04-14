@@ -2,6 +2,7 @@
 title: Send and receive activities | Microsoft Docs
 description: Learn how to exchange information with a user across various channels using a single REST API contained in the Bot Builder SDK for .NET.
 author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

@@ -2,6 +2,7 @@
 title: Add media attachments to messages | Microsoft Docs
 description: Learn how to add audio and video attachments to messages using the Bot Builder SDK for .NET.
 author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

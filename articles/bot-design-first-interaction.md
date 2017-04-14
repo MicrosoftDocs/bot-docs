@@ -2,6 +2,7 @@
 title: Design a bot's first user interaction | Microsoft Docs
 description: Learn what makes a great first user experience and how to design your bots for immediate success.  
 author: matvelloso
+ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

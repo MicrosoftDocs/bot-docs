@@ -2,6 +2,7 @@
 title: Community resources for using the Bot Framework | Microsoft Docs
 description: A list of community resources related to designing and developing conversational applications using the Bot Framework.
 author: matvelloso
+ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

@@ -2,6 +2,7 @@
 title: Send proactive messages | Microsoft Docs
 description: Teach your bot how to interrupt the current conversation flow with a proactive message using the Bot Builder SDK for .NET.
 author: kbrandl
+ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

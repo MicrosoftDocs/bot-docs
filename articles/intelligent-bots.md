@@ -2,6 +2,9 @@
 title: Make your bots smarter | Microsoft Docs
 description: Add intelligence to your bots with Microsoft Cognitive Services to make them more useful and engaging.
 author: RobStand
+ms.author: rstand
+
+
 manager: rstand
 ms.topic: overview-article
 ms.prod: bot-framework

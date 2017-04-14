@@ -2,11 +2,14 @@
 title: Best practices for designing bots | Microsoft Docs
 description: Learn what makes a good conversational bot and how to design one to improve your user experience. 
 author: RobStand
+ms.author: rstand
+
+
 manager: rstand
 ms.topic: article
 
 ms.prod: bot-framework
-ms.service: Cognitive Services
+
 ms.date:
 ms.reviewer:
 
