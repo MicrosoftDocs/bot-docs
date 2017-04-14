@@ -1,3 +1,7 @@
-- name: Bot Framework
-  tocHref: /BotFramework/
-  topicHref: /BotFramework/index
+- name: Docs
+  href: /
+  homepage: /
+  items:
+  - name: Bot Framework
+    tocHref: /BotFramework/
+    topicHref: /BotFramework/index
