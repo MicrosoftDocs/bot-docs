@@ -1,6 +1,6 @@
 ---
 title: Manage conversation flow with dialogs | Microsoft Docs
-description: Learn how to manage conversation flow using dialogs and the Bot Builder SDK for .NET.
+description: Learn how to model and manage conversation flow using dialogs and the Bot Builder SDK for .NET.
 author: kbrandl
 manager: rstand
 ms.topic: article

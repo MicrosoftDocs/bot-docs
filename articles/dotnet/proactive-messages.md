@@ -1,6 +1,6 @@
 ---
 title: Send proactive messages | Microsoft Docs
-description: Learn how to send proactive messages with the Bot Builder SDK for .NET.
+description: Teach your bot how to interrupt the current conversation flow with a proactive message using the Bot Builder SDK for .NET.
 author: kbrandl
 manager: rstand
 ms.topic: article
