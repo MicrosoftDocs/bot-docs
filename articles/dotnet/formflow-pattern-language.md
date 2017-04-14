@@ -21,7 +21,7 @@ use pattern language to specify the contents and/or format of the prompt.
 A [prompt][promptAttribute] defines the message that is sent to the user to request a piece of information or ask for confirmation. You can customize a prompt by using the [Prompt attribute](~/dotnet/formflow-advanced.md) or implicitly through [IFormBuilder<T>.Field][field]. 
 
 Forms use templates to automatically construct prompts and other things such as help. 
-You can override the default template of a class or field by using the [Template attribute](~/dotnet/formflow-advanced.md#template-attribute). 
+You can override the default template of a class or field by using the [Template attribute](~/dotnet/formflow-advanced.md). 
 
 > [!TIP]
 > The [FormConfiguration.Templates][formConfiguration] 

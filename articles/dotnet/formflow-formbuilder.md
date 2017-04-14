@@ -86,7 +86,7 @@ In this example, the form executes these steps:
 - Fills in `SandwichOrder.Sauces`. 
 - [Dynamically defines](#define-value) the field value for `SandwichOrder.Specials`. 
 - [Dynamically defines](#define-message) the confirmation for cost of the sandwich. 
-- Fills in `SandwichOrder.DeliveryAddress` and [verifies](~/dotnet/formflow-advanced.md#business-logic) the resulting string. If the address does not start with a number, the form returns a message. 
+- Fills in `SandwichOrder.DeliveryAddress` and [verifies](~/dotnet/formflow-advanced.md) the resulting string. If the address does not start with a number, the form returns a message. 
 - Fills in `SandwichOrder.DeliveryTime` with a custom prompt. 
 - Confirms the order. 
 - Adds any remaining fields that were defined in the class but not explicitly referenced by `Field`. (If the example did not call the `AddRemainingFields` method, the form would not include any fields that were not explicity referenced.) 
