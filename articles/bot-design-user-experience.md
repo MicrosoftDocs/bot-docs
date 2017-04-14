@@ -26,7 +26,7 @@ Allowing the user to communicate "Hotels" by clicking a button labeled **Hotels*
 This especially holds true on mobile devices, where clicking is greatly preferred over typing. 
 
 When designing your bot, do not automatically dismiss common UI elements as not being "smart enough." 
-As discussed [previously](~/bot-design-principles.md#design-guidance), your bot should be designed 
+As discussed [previously](~/bot-design-principles.md), your bot should be designed 
 to solve the user's problem in the best/quickest/easiest manner possible. 
 Whether your bot uses artificial intelligence (AI) is not directly relevant to this goal. 
 

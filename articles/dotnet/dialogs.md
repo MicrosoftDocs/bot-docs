@@ -18,7 +18,7 @@ This article explores the fundamentals of dialogs in the Bot Builder SDK for .NE
 When you create a bot using the Bot Builder SDK for .NET, you can use dialogs to model 
 a conversation and manage [conversation flow](~/bot-design-conversation-flow.md). 
 Each dialog is an abstraction that encapsulates its own state in a C# class that implements `IDialog`. 
-A dialog can be composed with other dialogs to maximize reuse, and a dialog context maintains the [stack of dialogs](~/bot-design-conversation-flow.md#stack) that are active in the conversation at any point in time. 
+A dialog can be composed with other dialogs to maximize reuse, and a dialog context maintains the [stack of dialogs](~/bot-design-conversation-flow.md) that are active in the conversation at any point in time. 
 
 A conversation that comprises dialogs is portable across computers, which makes it possible for your bot implementation to scale. 
 When you use dialogs in the Bot Builder SDK for .NET, conversation state 
@@ -132,7 +132,7 @@ Sending and receiving messages through the dialog context ensures that the `Inte
 
 ### Internals.IDialogStack
 
-`Internals.IDialogStack` provides methods to manage the [dialog stack](~/bot-design-conversation-flow.md#stack). A majority of the time, the dialog stack will 
+`Internals.IDialogStack` provides methods to manage the [dialog stack](~/bot-design-conversation-flow.md). Most of the time, the dialog stack will 
 automatically be managed for you. However, there may be cases where you want to explictly manage the stack. 
 For example, you might want to call a child dialog and add it to the 
 top of the dialog stack, mark the current dialog as complete (thereby removing it from the dialog stack and returning the result to the prior dialog in the stack), 

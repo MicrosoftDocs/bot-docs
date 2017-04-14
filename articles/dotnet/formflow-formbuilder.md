@@ -67,7 +67,7 @@ This code example shows a dynamically generated confirmation that computes the c
 ## Customize a form using FormBuilder
 
 This code example uses FormBuilder to define the steps of the form, 
-[validate selections](~/dotnet/formflow-advanced.md#business-logic), 
+[validate selections](~/dotnet/formflow-advanced.md), 
 and [dynamically define a field value and confirmation](#dynamically-define). 
 By default, steps in the form will be executed in the sequence in which they are listed. 
 However, steps might be skipped for fields that already contain values or if explicit navigation is specified. 
