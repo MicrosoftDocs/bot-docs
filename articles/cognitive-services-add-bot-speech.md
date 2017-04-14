@@ -1,6 +1,6 @@
 ---
 title: Add speech capability | Microsoft Docs
-description: Add speech recognition and conversion capability to your bot with the Bot Framework and Cognitive Services.
+description: Teach your bot to listen to and process spoken input, convert speech to text, and even identify user voiceprints with the Bot Framework and Cognitive Services.
 author: RobStand
 manager: rstand
 ms.topic: intelligence-speech-article

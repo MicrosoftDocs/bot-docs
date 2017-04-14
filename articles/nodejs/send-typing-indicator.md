@@ -1,6 +1,6 @@
 ---
 title: Display a typing indicator | Microsoft Docs
-description: Learn how to display a typing or processing indicator using the Bot Builder SDK for Node.js
+description: Teach your bot to display a "please wait" indicator while it is processing a request using the Bot Builder SDK for Node.js
 author: DeniseMak
 manager: rstand
 ms.topic: article

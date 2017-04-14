@@ -1,6 +1,6 @@
 ---
 title: Add location capability | Microsoft Docs
-description: Add location capability to your bot with the Bot Framework and Cognitive Services.
+description: Teach your bot how to determine a user's location and use that knowledge to provide additional functionality with the Bot Framework and Cognitive Services.
 author: RobStand
 manager: rstand
 ms.topic: intelligence-location-article

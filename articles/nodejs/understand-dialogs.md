@@ -1,6 +1,6 @@
 ---
 title: Manage message flow with dialogs| Microsoft Docs
-description: Learn how to manage message flow using dialogs in the Bot Builder SDK for Node.js.
+description: Learn how to chunk complex conversation flows into manageable Dialogs using the Bot Builder SDK for Node.js.
 author: DeniseMak
 manager: rstand
 ms.topic: article

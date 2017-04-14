@@ -1,6 +1,6 @@
 ---
 title: Integrate your bot with a web browser | Microsoft Docs
-description: Learn about integrating bots with web browsers and how to design a smooth user experience.
+description: Learn how to expand bot functionality by integrating it with a web browser and how to design a smooth user transition from bot to web and back.
 author: matvelloso
 manager: rstand
 ms.topic: article

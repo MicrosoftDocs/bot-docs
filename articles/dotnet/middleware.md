@@ -1,6 +1,6 @@
 ---
 title: Intercept messages | Microsoft Docs
-description: Learn how to intercept messages exchanged between user and bot using the Bot Builder SDK for .NET.
+description: Learn how to create logs or other records by intercepting and processing information exchanges using the Bot Builder SDK for .NET.
 author: kbrandl
 manager: rstand
 ms.topic: article

@@ -1,6 +1,6 @@
 ---
 title: Design knowledge bots | Microsoft Docs
-description: Learn how to design a knowledge bot to answer user questions.
+description: Learn what options are available for designing a knowledge bot to find and return information in response to the user's input or query.
 author: matvelloso
 manager: rstand
 ms.topic: article

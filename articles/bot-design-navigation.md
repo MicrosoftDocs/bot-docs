@@ -1,6 +1,6 @@
 ---
 title: Design bot navigation | Microsoft Docs
-description: Design navigation for conversational bots and avoid common pitfalls of poorly designed navigation.
+description: Learn what makes a good navigation structure for conversational bots and how to avoid the most common navigation design errors.
 author: matvelloso
 manager: rstand
 ms.topic: article

@@ -1,6 +1,6 @@
 ---
 title: Add knowledge extraction capability | Microsoft Docs
-description: Add knowledge extraction capability to your bot with the Bot Framework and Cognitive Services.
+description: Teach your bot to understand the context of a conversation and respond appropriately with the Bot Framework and Cognitive Services.
 author: RobStand
 manager: rstand
 ms.topic: intelligence-knowledge-article

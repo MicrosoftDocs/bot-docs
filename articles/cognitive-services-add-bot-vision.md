@@ -1,6 +1,6 @@
 ---
 title: Add vision capability | Microsoft Docs
-description: Add image and vision bunderstanding to your bot with the Bot Framework and Cognitive Services.
+description: Teach your bot to see and process information derived from images through various APIs available in the Bot Framework and Cognitive Services.
 author: RobStand
 manager: rstand
 ms.topic: intelligence-vision-article

@@ -1,6 +1,6 @@
 ---
 title: Send proactive messages | Microsoft Docs
-description: Learn how to send proactive messages by using the Bot Builder SDK for Node.js
+description:  Teach your bot how to interrupt the current conversation flow with a proactive message using the Bot Builder SDK for Node.js
 author: kbrandl
 manager: rstand
 ms.topic: article

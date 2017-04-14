@@ -1,6 +1,6 @@
 ---
 title: Debug bots with the Bot Framework Emulator | Microsoft Docs
-description: Learn how to use the Bot Framework Emulator to test and debug bots.
+description: Learn how to inspect, test, and debug bots using the Bot Framework Emulator desktop application and related tools.
 author: DeniseMak
 manager: rstand
 

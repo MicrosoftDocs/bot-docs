@@ -1,6 +1,6 @@
 ---
 title: Design a bot's first user interaction | Microsoft Docs
-description: Consider these best practices when designing the first interaction between user and bot. 
+description: Learn what makes a great first user experience and how to design your bots for immediate success.  
 author: matvelloso
 manager: rstand
 ms.topic: article

@@ -1,6 +1,6 @@
 ---
 title: Explore and create dialogs | Microsoft Docs
-description: Learn about Dialogs and how to create them using the Bot Builder SDK for .NET.
+description: Learn how to chunk complex conversation flows into manageable Dialogs using the Bot Builder SDK for .NET.
 author: kbrandl
 manager: rstand
 ms.topic: article

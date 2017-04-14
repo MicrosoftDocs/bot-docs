@@ -1,6 +1,6 @@
 ---
 title: Design and control conversation flow | Microsoft Docs
-description: Learn how to design dialogs and control conversation flow in the Microsoft Bot Framework.
+description: Learn how to design and control complex conversation flows to provide a delightfully smooth user experience using the Microsoft Bot Framework.
 author: matvelloso
 manager: rstand
 ms.topic: article
@@ -12,7 +12,7 @@ ROBOTS: Index, Follow
 ---
 # Design and control conversation flow
 
-In a traditional application, the user interface (UI) is typically comprises screens. 
+In a traditional application, the user interface (UI) is a series of screens. 
 A single app or website can use one or more screens as needed to exchange information with the user. 
 Most applications start with a main screen where users initially land and provide navigation that leads to other screens for various functions like starting a new order, browsing products, or looking for help.
 
