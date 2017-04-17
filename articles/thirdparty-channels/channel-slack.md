@@ -52,8 +52,6 @@ Set the Request URL for Interactive Messages.
 Paste the credentials you copied previously into the appropriate field.
 The **Landing Page URL** is optional. You may remove or change it.
 
-![Paste credentials](~/media/channels/slack-creds.png)
-
 Click **Submit Slack Credentials**.
 
 Check **Enable this bot on Slack**.
