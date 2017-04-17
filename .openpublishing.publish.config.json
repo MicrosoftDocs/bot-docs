@@ -21,7 +21,8 @@
   "notification_subscribers": [
     "rstand@microsoft.com",
     "v-kibran@microsoft.com",
-    "v-demak@microsoft.com"
+    "v-demak@microsoft.com",
+    "v-jaype@microsoft.com"
   ],
   "branches_to_filter": [],
   "skip_source_output_uploading": false,
