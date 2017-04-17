@@ -1,12 +1,11 @@
 ---
 title: Bot Builder SDK for .NET | Microsoft Docs
-description: Explore the Bot Builder SDK for .NET, a powerful, easy-to-use bot building framework.
+description: Get started with Bot Builder SDK for .NET, a powerful, easy-to-use framework for building bots.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
 ms.date: 03/08/2017
 ms.reviewer:
 ROBOTS: Index, Follow
@@ -18,8 +17,7 @@ The Bot Builder SDK for .NET is a powerful framework for constructing bots that 
 and more guided conversations where the user selects from possible values. 
 It is easy to use and leverages C# to provide a familiar way for .NET developers to write bots.
 
-Using the SDK, you can build bots that are stateless (which enables them to scale) 
-and take advantage of the following SDK features: 
+Using the SDK, you can build bots that take advantage of the following SDK features: 
 
 - Powerful dialog system with dialogs that are isolated and composable
 - Built-in prompts for simple things such as Yes/No, strings, numbers, and enumerations
@@ -27,7 +25,7 @@ and take advantage of the following SDK features:
 - FormFlow for automatically generating a bot (from a C# class) that guides the user through the 
 conversation, providing help, navigation, clarification, and confirmation as needed
 
-##<a id="get-sdk"></a> Get the SDK
+## Get the SDK
 
 The SDK is available as a NuGet package and as open source on <a href="https://github.com/Microsoft/BotBuilder" target="_blank">GitHub</a>. 
 To install the SDK within a Visual Studio project, complete the following steps:
