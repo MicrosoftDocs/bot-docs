@@ -33,19 +33,14 @@ Connecting a bot also requires a Facebook App.
 ![Create an App ID](~/media/channels/FB-CreateAppId.png)
 
 ## Copy your App ID and App Secret and save them for later
-<<<<<<< HEAD:articles/thirdparty-channels/channel_facebook.md
-
-![Save App ID and secret](~/media/channels/FB_get-appid.png)
-=======
 ![Save App ID and secret](~/media/channels/FB-get-appid.png)
->>>>>>> f0a86db874863bd39da27c71980a927d4b329cbf:articles/thirdparty-channels/channel-facebook.md
 
 ## Enable messenger
 
 Enable Facebook Messenger in your new Facebook App. 
 On the **Product Setup** page of the app, click **Get Started** and then click **Get Started** again. 
 
-![Enable messenger](~/media/channels/FB-AddMessaging_1.png)
+![Enable messenger](~/media/channels/FB-AddMessaging1.png
 
 ## Generate page access token
 In the **Token Generation** panel of the Messenger section, select your Page.
@@ -70,14 +65,9 @@ Configure the webhook.
 ![Configure webhook](~/media/channels/FB-webhookConfig.png)
 
 ## Enter your credentials
-<<<<<<< HEAD:articles/thirdparty-channels/channel_facebook.md
 
 Enter the Page ID, App ID, Page Secret, and Access Token that you copied earlier.
-![Enter credentials](~/media/channels/FB_credentials.png)
-=======
-Enter the credentials that you copied earlier.
 ![Enter credentials](~/media/channels/FB-credentials.png)
->>>>>>> f0a86db874863bd39da27c71980a927d4b329cbf:articles/thirdparty-channels/channel-facebook.md
 
 Check **Enable this bot on Facebook Messenger**.
 
