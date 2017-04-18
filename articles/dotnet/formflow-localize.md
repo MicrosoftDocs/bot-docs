@@ -88,7 +88,7 @@ When your form is created, the [IFormBuilder.Build][build] method will automatic
 
 > [!NOTE]
 > Dynamically-computed fields that are defined using [Advanced.Field.SetDefine][setDefine] 
-> (as described in [Using Dynamic Fields](formflow-formbuilder.md)) 
+> (as described in [Using Dynamic Fields](formflow-formbuilder.md#dynamically-define-field-values-confirmations-and-messages)) 
 > cannot be localized in the same manner as static fields, 
 > since strings for dynamically-computed fields are constructed at the time the form is populated. 
 > However, you can localize dynamically-computed fields by using normal C# localization mechanisms.
@@ -109,7 +109,7 @@ Install **MAT**, then enable it for your project by completing these steps:
 
 ## See it in action
 
-This code example builds upon the one in [Customize a form using FormBuilder](formflow-formbuilder.md) to implement localization as described above. 
+This code example builds upon the one in [Customize a form using FormBuilder](formflow-formbuilder.md#customize-a-form-using-formbuilder-1) to implement localization as described above. 
 In this example, the `DynamicSandwich` class (not shown here) contains localization information for 
 dynamically-computed fields, messages and confirmations.
 

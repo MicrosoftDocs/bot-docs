@@ -68,7 +68,7 @@ This code example shows a dynamically generated confirmation that computes the c
 ## Customize a form using FormBuilder
 
 This code example uses FormBuilder to define the steps of the form, 
-[validate selections](~/dotnet/formflow-advanced.md), 
+[validate selections](~/dotnet/formflow-advanced.md#add-business-logic), 
 and [dynamically define a field value and confirmation](#dynamically-define-field-values-confirmations-and-messages). 
 By default, steps in the form will be executed in the sequence in which they are listed. 
 However, steps might be skipped for fields that already contain values or if explicit navigation is specified. 
@@ -87,7 +87,7 @@ In this example, the form executes these steps:
 - Fills in `SandwichOrder.Sauces`. 
 - [Dynamically defines](#dynamically-define-field-values) the field value for `SandwichOrder.Specials`. 
 - [Dynamically defines](#dynamically-define-messages-and-confirmations) the confirmation for cost of the sandwich. 
-- Fills in `SandwichOrder.DeliveryAddress` and [verifies](~/dotnet/formflow-advanced.md) the resulting string. If the address does not start with a number, the form returns a message. 
+- Fills in `SandwichOrder.DeliveryAddress` and [verifies](~/dotnet/formflow-advanced.md#add-business-logic) the resulting string. If the address does not start with a number, the form returns a message. 
 - Fills in `SandwichOrder.DeliveryTime` with a custom prompt. 
 - Confirms the order. 
 - Adds any remaining fields that were defined in the class but not explicitly referenced by `Field`. (If the example did not call the `AddRemainingFields` method, the form would not include any fields that were not explicity referenced.) 
