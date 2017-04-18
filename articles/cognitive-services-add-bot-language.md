@@ -1,5 +1,5 @@
 ---
-title: Add language understanding capability | Microsoft Docs
+title: Add language understanding | Microsoft Docs
 description: Teach your bot to understand natural language and recognize a user's intent using Cognitive Services.
 author: RobStand
 ms.author: rstand
@@ -16,13 +16,13 @@ ms.reviewer: rstand
 ROBOTS: Index, Follow
 ---
 
-# Add language understanding capability
+# How to add language understanding
+
+To get started with Language Understanding Intelligent Services (LUIS), go to <a href="http://www.luis.ai" target="_blank">LUIS.ai</a> and build your own custom language model. The <a href="https://www.microsoft.com/cognitive-services/en-us/LUIS-api/documentation/Plan-your-app" target="_blank">Getting Started</a> guide describes in details how to build your first model through the LUIS user interface, or programatically via the LUIS APIs. You can watch a  <a href="https://www.youtube.com/watch?v=jWeLajon9M8&index=4&list=PLD7HFcN7LXRdHkFBFu4stPPeWJcQ0VFLx" target="_blank">basic</a> video tutorial.
 
 ## Language understanding bot examples
 ### LUIS example
 In this example, you will build a weather bot that is able to understand and respond to various hypothetical commands, such as "What's the weather like in Paris", "What's the temperature next week in Seattle", and so on. The bot is using LUIS to identify the intent of the user, and then reply with the appropriate prompt.
-
-To get started with LUIS, go to <a href="http://www.luis.ai" target="_blank">LUIS.ai</a> and build your own custom language model. The <a href="https://www.microsoft.com/cognitive-services/en-us/LUIS-api/documentation/Plan-your-app" target="_blank">Getting Started</a> guide describes in details how to build your first model through the LUIS user interface, or programatically via the LUIS APIs. You can watch a  <a href="https://www.youtube.com/watch?v=jWeLajon9M8&index=4&list=PLD7HFcN7LXRdHkFBFu4stPPeWJcQ0VFLx" target="_blank">basic</a> video tutorial.
 
 To create the bot, you will use the <a href="http://aka.ms/bf-bc-vstemplate" target="_blank">Bot Application .NET template</a> as a starting point. Note that you need to build the language model for the weather bot in LUIS first. To accomplish this, follow the steps in this <a href="https://www.youtube.com/watch?v=39L0Gv2EcSk&index=5&list=PLD7HFcN7LXRdHkFBFu4stPPeWJcQ0VFLx" target="_blank">video</a>.
 

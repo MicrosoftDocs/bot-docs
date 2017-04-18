@@ -1,6 +1,6 @@
 ---
-title: Add location capability | Microsoft Docs
-description: Teach your bot how to determine a user's location and use that knowledge to provide additional functionality with the Bot Framework and Cognitive Services.
+title: Add location control | Microsoft Docs
+description: Teach your bot how to determine a user's location with the Bot Framework and Cognitive Services.
 author: RobStand
 ms.author: rstand
 
@@ -16,14 +16,14 @@ ms.reviewer: rstand
 ROBOTS: Index, Follow
 ---
 
-# Add location capability
+# How to add location control
 
 You can find screenshots of the scenarios supported by the location control in the [Examples](#examples) section.
 
 > [!IMPORTANT]
 >As a prerequisite to use the location control, you must obtain a Bing Maps API subscription key. You can sign up to get a free key with up to 10,000 transactions per month in <a href="https://azure.microsoft.com/en-us/marketplace/partners/bingmaps/mapapis/" target="_blank">Azure Portal</a>.
 
-This article describes how to add the location control to your bot. You can find the full developer guides and sample bots for <a href="https://github.com/Microsoft/BotBuilder-Location/tree/master/CSharp" target="_blank">C#</a> and <a href="https://github.com/Microsoft/BotBuilder-Location/tree/master/Node" target="_blank">Node.js</a> in the <a href="https://github.com/Microsoft/BotBuilder-Location/tree/master/" target="_blank">BotBuilder-Location</a> GitHub repository.
+You can find the full developer guides and sample bots for <a href="https://github.com/Microsoft/BotBuilder-Location/tree/master/CSharp" target="_blank">C#</a> and <a href="https://github.com/Microsoft/BotBuilder-Location/tree/master/Node" target="_blank">Node.js</a> in the <a href="https://github.com/Microsoft/BotBuilder-Location/tree/master/" target="_blank">BotBuilder-Location</a> GitHub repository.
 
 ## Start using the location control
 

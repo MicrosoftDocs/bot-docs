@@ -1,5 +1,5 @@
 ---
-title: Add knowledge extraction capability | Microsoft Docs
+title: Add knowledge extraction | Microsoft Docs
 description: Teach your bot to understand the context of a conversation and respond appropriately with the Bot Framework and Cognitive Services.
 author: RobStand
 ms.author: rstand
@@ -16,7 +16,7 @@ ms.reviewer: rstand
 ROBOTS: Index, Follow
 ---
 
-# Add knowledge extraction capability
+# How to add knowledge extraction 
 
 > [!TIP]
 > You can find detailed documentation about each API, including developer guides and API references by visiting the Microsoft Cognitive Services <a href="https://www.microsoft.com/cognitive-services/en-us/documentation" target="_blank">documentation site</a> and selecting the API you need on the left.

@@ -1,5 +1,5 @@
 ---
-title: Add search capability | Microsoft Docs
+title: Add search | Microsoft Docs
 description: Add search capabilities to your bot with the Bot Framework and Cognitive Services.
 author: RobStand
 ms.author: rstand
@@ -16,13 +16,14 @@ ms.reviewer: rstand
 ROBOTS: Index, Follow
 ---
 
-# Add search capability
+# How to add search and present filtered results
+
+The Search APIs offer a great way to access the vast information available on the web. They are ideal for any bot that needs to embed search results directly into their messages, or leverage them as input for other interesting applications. Besides plain search, the APIs support several intelligent features that can be used across a broad array of scenarios. For example, the Image Search API includes image recognition features, such as celebrity recognition, product search (where to buy), and visually similar search. The News Search API is able to extract mentioned entities and other useful article metadata.
+
 > [!TIP]
 > You can find detailed documentation, developer guides, and API reference for Cognitive Services on the <a href="https://www.microsoft.com/cognitive-services/en-us/documentation" target="_blank">Cognitive Services documentation site</a>.
 
 ## Examples using Search APIs with bots
-
-The Search APIs offer a great way to access the vast information available on the web. They are ideal for any bot that needs to embed search results directly into their messages, or leverage them as input for other interesting applications. Besides plain search, the APIs support several intelligent features that can be used across a broad array of scenarios. For example, the Image Search API includes image recognition features, such as celebrity recognition, product search (where to buy), and visually similar search. The News Search API is able to extract mentioned entities and other useful article metadata.
 
 Here a few examples of bots that are using the Search APIs today:  
 
