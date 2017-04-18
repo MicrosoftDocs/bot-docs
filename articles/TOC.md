@@ -1,7 +1,7 @@
 # Overview
 ## [About Bot Framework](framework-overview.md)
 # [Quickstart](bot-builder-overview-getstarted.md)
-## [Create your first bot with .NET](~/dotnet/bot-builder-dotnet-quickstart)
+## [Create your first bot with .NET](~/dotnet/bot-builder-dotnet-quickstart.md)
 ## [Create your first bot with Node.js](~/nodejs/bot-builder-node-quickstart.md)
 ## [Create your first bot with Azure Bot Service](~/azure/azure-bot-service-getstarted.md)
 # Concepts
