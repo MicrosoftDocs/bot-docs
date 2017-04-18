@@ -135,7 +135,7 @@ should remain on GitHub instead of here -->
 [TroubleshootingGuide]: ~/troubleshoot-general-problems.md
 [TroubleshootingAuth]: ~/troubleshoot-authentication-problems.md
 [NodeGetStarted]: ~/nodejs/bot-builder-node-quickstart.md
-[CSGetStarted]: ~/dotnet/bot-builder-dotnet-quickstart
+[CSGetStarted]: ~/dotnet/bot-builder-dotnet-quickstart.md
 [BotFrameworkPublishOverview]: ~/publish-bot-overview.md
 [ActivityConcept]: bot-framework-concept-activity.md
 
