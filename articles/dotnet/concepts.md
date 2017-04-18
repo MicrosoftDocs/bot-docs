@@ -75,7 +75,7 @@ For more information on this topic, see [Secure your bot](~/dotnet/security.md).
 ## Additional resources
 
 - [Bot Builder SDK for .NET](~/dotnet/index.md)
-- [Create a bot with the Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-quickstart)
+- [Create a bot with the Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-quickstart.md)
 - [Activity types](~/dotnet/activities.md)
 - [Dialogs](~/dotnet/dialogs.md)
 - [Designing conversation flow](~/bot-design-conversation-flow.md)
