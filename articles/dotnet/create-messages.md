@@ -12,7 +12,7 @@ ms.reviewer: rstand
 ROBOTS: Index, Follow
 ---
 
-# Create messages with the Bot Framework Connector service
+# Create messages
 
 Your bot will send **message** [activities](~/dotnet/activities.md) to communicate information to users, 
 and likewise, will also receive **message** activities from users. 

@@ -53,7 +53,7 @@ ensures that the `Toppings` field value contains the full list of toppings.
 
 [!code-csharp[Validation function](~/includes/code/dotnet-formflow-advanced.cs#validationFunction)]
 
-In addition to the validation function, you can add the [Term](#terms-attribute) attribute 
+In addition to the validation function, you can add the [Term](#match-user-input-using-the-terms-attribute) attribute 
 to match user expressions such as "everything" or "not".
 
 [!code-csharp[Terms for Toppings](~/includes/code/dotnet-formflow-advanced.cs#toppingsTerms)]

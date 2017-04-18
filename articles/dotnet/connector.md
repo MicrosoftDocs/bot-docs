@@ -102,7 +102,7 @@ or the `CreateConversation` method (for a group conversation with multiple users
 to retrieve a `ConversationAccount` object. 
 Then, create the message and send it by calling the `SendToConversation` method. 
 To use either the `CreateDirectConversation` method or the `CreateConversation` method,
-you must first [create the connector client](#create-client) by using the target channel's service URL 
+you must first [create the connector client](#create-a-connector-client) by using the target channel's service URL 
 (which you may retrieve from cache, if you've persisted it from previous messages). 
 
 > [!NOTE]
