@@ -51,7 +51,7 @@ description:
                                         </div>
                                         <div class="cardText">
                                             <h3>Get started with bots</h3>
-                                            <p>Create your first bot in 5 minutes using .NET, Node.js, or Azure Bot Service.</p>
+                                            <p>Create your first bot in a few minutes using .NET, Node.js, or Azure Bot Service.</p>
                                         </div>
                                     </div>
                                 </div>
