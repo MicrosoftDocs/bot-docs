@@ -32,7 +32,7 @@ This is a very simple Bot which uses simple heuristics to determine whether the 
 
 To get started with QnA Maker, go to <a href="https://qnamaker.ai" target="_blank">qnamaker.ai</a> and build your own knowledge base. The <a href="https://qnamaker.ai/Documentation" target="_blank">documentation</a> describes the various flows in the tool to create your knowledge base.
 
-To create the bot, you will use the [Bot Application .NET template](~/dotnet/getstarted.md#prerequisites) as a starting point.
+To create the bot, you will use the [Bot Application .NET template](~/dotnet/bot-builder-dotnet-quickstart#prerequisites) as a starting point.
 
 After you set up your knowledge base, create your project with the Bot Application template, and add the following class to handle the integration with your QnA Maker service.
 

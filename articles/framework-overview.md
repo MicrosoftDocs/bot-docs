@@ -51,6 +51,6 @@ To give your bot more human-like senses, you can take advantage of  Microsoft Co
 ## Next steps
 Dive deeper into [the capabilities](overview-how-bot-framework-works.md) of the Bot Framework. Get started  [building your first bot](bot-builder-overview-getstarted.md) and learn more about [designing great bots](~/bot-design-principles.md).
 
-[NodeGetStarted]:~/nodejs/getstarted.md
-[DotNETGetStarted]:~/dotnet/getstarted.md
+[NodeGetStarted]:~/nodejs/bot-builder-node-quickstart.md
+[DotNETGetStarted]:~/dotnet/bot-builder-dotnet-quickstart
 

@@ -49,7 +49,7 @@ npm install --save restify
 ## How to get started
 
 <!-- TODO: Make sure this section is consistent with Resources and doesn't duplicate it -->
-Once you've installed the SDK, see [Get Started](~/nodejs/getstarted.md) for instructions on how to quickly build and test a simple bot.
+Once you've installed the SDK, see [Get Started](~/nodejs/bot-builder-node-quickstart.md) for instructions on how to quickly build and test a simple bot.
 
 For information on concepts that help you understand the rest of the documentation, see [Key concepts](~/nodejs/concepts.md).
 
@@ -121,7 +121,7 @@ You can find other samples in the [Bot Builder SDK Samples repository](https://g
 
 The following articles get you started building bots using the Bot Builder SDK for Node.js.
 
-* [Get Started](~/nodejs/getstarted.md): Quickly build and test a simple bot by following instructions in this step-by-step tutorial.
+* [Get Started](~/nodejs/bot-builder-node-quickstart.md): Quickly build and test a simple bot by following instructions in this step-by-step tutorial.
 * [Key concepts](~/nodejs/concepts.md): Learn about key concepts in the Bot Builder SDK for Node.js.
 
 The following task-focused how-to guides demonstrate various features of the Bot Builder SDK for Node.js.

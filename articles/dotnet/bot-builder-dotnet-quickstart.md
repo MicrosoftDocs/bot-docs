@@ -15,8 +15,8 @@ ROBOTS: Index, Follow
 
 <!--
 > [!div class="op_single_selector"]
-> * [.NET](~/dotnet/getstarted.md)
-> * [Node.js](~/nodejs/getstarted.md)
+> * [.NET](~/dotnet/bot-builder-dotnet-quickstart)
+> * [Node.js](~/nodejs/bot-builder-node-quickstart.md)
 > * [Azure Bot Service](~/azure-bot-service/getstarted.md)
 >
 -->

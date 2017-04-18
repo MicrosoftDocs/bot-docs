@@ -32,12 +32,12 @@ much like a web application that does not need to store session state in web ser
 ### Echo bot
 
 Consider this echo bot example, which describes how to change the bot that's created in the 
-[Get started](~/dotnet/getstarted.md) tutorial so that it uses dialogs to 
+[Get started](~/dotnet/bot-builder-dotnet-quickstart) tutorial so that it uses dialogs to 
 exchange messages with the user.
 
 > [!TIP]
 > To follow along with this example, use the instructions in the 
-> [Get started](~/dotnet/getstarted.md) tutorial to create a bot, and then 
+> [Get started](~/dotnet/bot-builder-dotnet-quickstart) tutorial to create a bot, and then 
 > update its **MessagesController.cs** file as described below.
 
 #### MessagesController.cs 

@@ -1,4 +1,4 @@
-# [Bot Builder for .NET](~/dotnet/index.md)
+# [Get started](~/dotnet/index.md)
 # [Key concepts](~/dotnet/concepts.md)
 # Activities
 ## [Understand activity types](~/dotnet/activities.md)
