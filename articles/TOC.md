@@ -51,6 +51,7 @@
 ### [Support localization](~/nodejs/localization.md)
 ### [Intercept messages](~/nodejs/middleware.md)
 ### [Use backchannel mechanism](~/nodejs/backchannel.md)
+### [Conduct audio calls](~/nodejs/conduct-audio-calls-nodejs.md)
 ## [Make bots smarter](./intelligent-bots.md)
 ### [Add language understanding](./cognitive-services-add-bot-language.md)
 ### [Add knowledge extraction](./cognitive-services-add-bot-knowledge.md)
