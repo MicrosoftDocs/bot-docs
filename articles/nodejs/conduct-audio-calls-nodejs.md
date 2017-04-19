@@ -1,6 +1,6 @@
 ---
 title: Conduct audio calls | Microsoft Docs
-description: Learn how to conduct audio calls in a bot using Node.js
+description: Learn how to conduct audio calls with Skype in a bot using Node.js
 author: RobStand
 ms.author: rstand
 manager: rstand
@@ -9,14 +9,14 @@ ms.prod: bot-framework
 ms.date: 4/25/2017
 ROBOTS: Index, Follow
 ---
-# Conduct audio calls
+# Support audio calls with Skype
 
 Skype supports a rich feature called [Calling Bots](../channels-Skype-calling-api.md).  When enabled, users can place a voice call to your bot and interact with it using Interactive Voice Response (IVR).  The Bot Builder for Node.js SDK includes a special [Calling SDK][calling_sdk] which developers can use to add calling features to their chat bot.   
 
 The Calling SDK is very similar to the [Chat SDK][chat_sdk]. They have similar classes, share common constructs and you can even use the Chat SDK to send a message to the user you’re on a call with.  The two SDKs are designed to run side-by-side but while they are similar, there are some significant differences and you should generally avoid mixing classes from the two libraries.  
 
-## Hello World
-The "Hello World" for a calling bot looks very similar to "Hello World" for a chat bot: 
+## Adding support for calling
+The following example code shows how the "Hello World" for a calling bot looks very similar to a regular chat bot. 
 
 ```javascript
 var restify = require('restify');
@@ -45,16 +45,15 @@ bot.dialog('/', function (session) {
 
 The emulator doesn’t currently support testing calling bots. To test your bot, you’ll need to go through most of the steps required to publish your bot.  You will also need to use a Skype client to interact with the bot. 
 
-### Register your bot
+### Enable the Skype channel
 [Register your bot](../portal-register-bot.md) and enable the Skype channel. You will need provide a messaging endpoint when you register your bot in the developer portal. It is recommended that you pair your calling bot with a chat bot so the chat bot’s endpoint is what you would normally put in that field.  If you’re only registering a calling bot you can simply paste your calling endpoint into that field.  
 
 To enable the actual calling feature you’ll need to go into the Skype channel for your bot and turn on the calling feature. You’ll then be provided with a field to copy your calling endpoint into. Make sure you use the https ngrok link for the host portion of your calling endpoint.
 
-### Configure your bot
 During the registration of your bot you’ll be assigned an app ID & password which you should paste into the connector settings for your hello world bot. You’ll also need to take your full calling link and paste that in for the callbackUrl setting.
 
 ### Add bot to contacts
-On your bots registration page in the developer portal you’ll see an **add to Skype** button next to your bots Skype channel. Click the button to add your bot to your contact list in Skype.  Once you do that you (and anyone you give the join link to) will be able to communicate with the bot.
+On your bot's registration page in the developer portal you’ll see an **add to Skype** button next to your bots Skype channel. Click the button to add your bot to your contact list in Skype.  Once you do that you (and anyone you give the join link to) will be able to communicate with the bot.
 
 ### Test your bot
 You can test your bot using a Skype client. You should notice the call icon light up when you click on your bots contact entry (you may have to search for the bot to see it.)  It can take a few minutes for the call icon to light up if you’ve added calling to an existing bot.  
