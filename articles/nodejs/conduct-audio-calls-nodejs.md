@@ -9,20 +9,11 @@ ms.prod: bot-framework
 ms.date: 4/25/2017
 ROBOTS: Index, Follow
 ---
+# Conduct audio calls
+
 Skype supports a rich feature called [Calling Bots](../channels-Skype-calling-api.md).  When enabled, users can place a voice call to your bot and interact with it using Interactive Voice Response (IVR).  The Bot Builder for Node.js SDK includes a special [Calling SDK][calling_sdk] which developers can use to add calling features to their chat bot.   
 
 The Calling SDK is very similar to the [Chat SDK][chat_sdk]. They have similar classes, share common constructs and you can even use the Chat SDK to send a message to the user you’re on a call with.  The two SDKs are designed to run side-by-side but while they are similar, there are some significant differences and you should generally avoid mixing classes from the two libraries.  
-
-## Installation
-To get started either install the Bot Builder module via NPM:
-
-    npm install --save botbuilder-calling
-
-Or clone the GitHub repository using Git. This may be preferable over NPM as it will provide you with numerous example code fragments and there's a full `demo-Skype-calling` bot you can run:
-
-    git clone https://github.com/Microsoft/BotBuilder.git
-    cd BotBuilder/Node
-    npm install
 
 ## Hello World
 The "Hello World" for a calling bot looks very similar to "Hello World" for a chat bot: 
