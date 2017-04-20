@@ -88,8 +88,8 @@ You can use the Bot Framework Emulator to emulate specific activities within the
 
 To build a simple bot that you can test using the emulator, see:
 
-* [Create a bot with the Bot Builder SDK for Node.js][NodeGetStarted].
-* [Create a bot with the Bot Builder SDK for .NET][CSGetStarted].
+* [Create a bot with the Bot Builder SDK for Node.js][NodeGetStarted]
+* [Create a bot with the Bot Builder SDK for .NET][CSGetStarted]
 
 The Bot Framework Emulator is open source. To contribute or file bugs and suggestions, see:
 
