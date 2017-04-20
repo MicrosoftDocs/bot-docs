@@ -140,7 +140,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/azure-bot-service/overview">
+                            <a href="/botframework/azure">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
