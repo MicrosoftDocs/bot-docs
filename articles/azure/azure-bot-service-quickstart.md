@@ -111,8 +111,7 @@ You should see that the bot responds to each message you send by echoing back yo
 In this tutorial, you created a simple bot by using the Azure Bot Service 
 and verified the bot's functionality by using the built-in chat control within Azure. 
 At this point, you may want to add more functionality to your bot or set up continuous integration. 
-You can also [configure your bot](~/portal-configure-channels.md) to run on one or more channels, 
-and [publish your bot](~/portal-submit-bot-directory.md) to the Bot Directory, without ever leaving 
+You can also configure your bot to run on one or more channels and publish your bot, without ever leaving 
 the Azure portal. 
 
 To learn more about building great bots with the Bot Framework, see the following articles:
