@@ -37,17 +37,25 @@
       "uhfHeaderId": "MSDocsHeader-BotFramework",
       "breadcrumb_path": "/botframework/breadcrumb/TOC.json",
       "author": "RobStand",
-      "ms.prod": "botframework",
-      "ms.date": "03/31/2017"
+      "ms.prod": "bot-framework"
     },
     "fileMetadata": {
       "ms.date":
        {
-         "**/*.md": "03/31/2017"
+         "**/**.md": "04/25/2017"
+       },
+       "ms.author":
+       {
+         "**/**.md": "rstand"
        },
        "manager":
        {
-         "**/*.md": "rstand"
+         "**/**.md": "rstand"
+       },
+       "ms.technology":
+       {
+         "dotnet/**.md": "bf-bot-builder",
+         "nodejs/**.md": "bf-bot-builder"
        }
     },
     "template": [],

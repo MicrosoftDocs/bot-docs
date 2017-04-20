@@ -38,12 +38,8 @@ Copy the **Client ID** section from the redirect URL.
 
 1. Paste the Client ID you just copied into the **Client ID** field.
 2. Click **Submit GroupMe Credentials**.
-
-<<<<<<< HEAD:articles/thirdparty-channels/channel_groupme.md
-=======
 ![Enter credentials](~/media/channels/GM-StepApp.png)
 
->>>>>>> f0a86db874863bd39da27c71980a927d4b329cbf:articles/thirdparty-channels/channel-groupme.md
 Check **Enable this bot on GroupMe**.
 
 Click **I'm done configuring GroupMe**
