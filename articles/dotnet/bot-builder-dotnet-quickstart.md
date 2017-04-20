@@ -105,12 +105,12 @@ For example, here's the application's **default.htm** page shown in Microsoft Ed
 At this point, your bot is running locally.
 Next, start the emulator and then connect to your bot in the emulator:
 
-1. Type **http://localhost:port-number/api/messages** into the address bar, where **port-number** matches the port number shown in the browser where your application is running.
+1. Type `http://localhost:port-number/api/messages` into the address bar, where **port-number** matches the port number shown in the browser where your application is running.
 
 2. Click **Connect**. (You won't need to specify **Microsoft App ID** and **Microsoft App Password** -- you can leave these fields blank for now. You'll get this information later if/when you register your bot with the framework.)
 
 > [!TIP]
-> In the example shown above, the application is running on port number **3978**, so the emulator address would be set to: http://localhost:3978/api/messages.
+> In the example shown above, the application is running on port number **3978**, so the emulator address would be set to: `http://localhost:3978/api/messages`.
 
 ### Test your bot
 

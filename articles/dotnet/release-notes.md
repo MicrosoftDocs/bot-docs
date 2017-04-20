@@ -150,7 +150,7 @@ see [Authentication][authentication].
 - Made <a href="https://en.wikipedia.org/wiki/HTTP_ETag" target="_blank">ETag</a> consistency policy the default data consistency policy for `IBotDataStore`.
 - Added better exception translation/propagation to bot builder internals.
 - Made Bot authentication more reliable.
-- Added trusted service urls to <a href="https://github.com/Microsoft/BotBuilder/blob/master/CSharp/Library/Microsoft.Bot.Connector/MicrosoftAppCredentials.cs#L20" target="_blank">MicrosoftAppCredentials</a>.
+- Added trusted service urls to <a href="https://github.com/Microsoft/BotBuilder/blob/master/CSharp/Library/Microsoft.Bot.Connector.Shared/MicrosoftAppCredentials.cs" target="_blank">MicrosoftAppCredentials</a>.
 - Implemented general bug fixes.
 
 ## <a href="https://www.nuget.org/packages/Microsoft.Bot.Builder/3.0.1" target="_blank">v3.0.1</a>

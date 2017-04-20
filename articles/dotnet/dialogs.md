@@ -224,6 +224,6 @@ If `Chain.Switch<T, R>` returns a nested `IDialog<IDialog<T>>`, then the inner `
 
 [iBotDataBag]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d7/dea/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_bot_data_bag.html 
 
-[autofac]: href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/df/dd3/namespace_microsoft_1_1_bot_1_1_builder_1_1_autofac.html
+[autofac]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/df/dd3/namespace_microsoft_1_1_bot_1_1_builder_1_1_autofac.html
 
 [chain]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/de/dab/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_chain.html

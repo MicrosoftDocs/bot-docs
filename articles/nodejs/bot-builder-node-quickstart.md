@@ -13,7 +13,6 @@ ROBOTS: Index, Follow
 ---
 # Create a bot with the Bot Builder SDK for Node.js 
 
-
 The <a href="https://github.com/Microsoft/BotBuilder" target="_blank">Bot Builder SDK for Node.js</a> is a powerful framework for constructing bots that can handle both freeform interactions and more guided ones where the possibilities are explicitly shown to the user.
 It is easy to use and models frameworks like Express & Restify to provide a familiar way for JavaScript developers to write bots.
 
@@ -45,7 +44,7 @@ node app.js
 ### Start the emulator and connect your bot
 
 At this point, your bot is running locally. Next, start the emulator and then connect your bot by completing the following tasks in the emulator:
-1. Type http://localhost:3978/api/messages into the address bar. (This is the default endpoint that your bot listens to when hosted locally.)
+1. Type `http://localhost:3978/api/messages` into the address bar. (This is the default endpoint that your bot listens to when hosted locally.)
 2. Click **Connect**. (You won't need to specify **Microsoft App ID** and **Microsoft App Password** -- you can leave these fields blank for now. You'll get this information later if/when you register your bot with the framework.)
 
 ### Test your bot
