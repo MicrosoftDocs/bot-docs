@@ -29,7 +29,7 @@ deployed to Azure.
 > [!NOTE]
 > The Azure Bot Service is currently in preview so it should not be used for building production bots.
 
-The [detailed walkthrough](~/azure/azure-bot-service-getstarted.md) will guide you through building a bot with the Azure Bot Service.
+The [detailed walkthrough](~/azure/azure-bot-service-quickstart.md) will guide you through building a bot with the Azure Bot Service.
 
 ## REST API
 You can create a bot with any programming language by using the Bot Framework REST API. The REST API is a collection of endpoints and JSON objects that you use to start conversations, send messages, add attachments, and get members of the conversation. 

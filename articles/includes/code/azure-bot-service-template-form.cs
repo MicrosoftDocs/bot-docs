@@ -1,15 +1,16 @@
-// <postMessage>
+// <processMessage>
 switch (activity.GetActivityType())
 {
     case ActivityTypes.Message:
         await Conversation.SendAsync(activity, () => new MainDialog());
         break;
+    ...
 }
-// </postMessage>
+// </processMessage>
 
 
 
-//<messageReceived>
+// <mainDialog>
 public class MainDialog : IDialog<BasicForm>
 {
     public MainDialog()
@@ -21,11 +22,13 @@ public class MainDialog : IDialog<BasicForm>
         context.Wait(MessageReceivedAsync);
         return Task.CompletedTask;
     }
+    ...
 }
-// </messageReceived>
+// </mainDialog>
 
 
-//<createForm>
+
+// <collectUserInput>
 public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> argument)
 {
     var message = await argument;
@@ -53,11 +56,11 @@ private async Task FormComplete(IDialogContext context, IAwaitable<BasicForm> re
 
     context.Wait(MessageReceivedAsync);
 }
-    //</createForm>
+// </collectUserInput>
 
     
 
-    //<askQuestions>
+// <basicForm>
 public enum CarOptions { Convertible=1, SUV, EV };
 public enum ColorOptions { Red=1, White, Blue };
 
@@ -81,8 +84,8 @@ public class BasicForm
 
     public static IFormDialog<BasicForm> BuildFormDialog(FormOptions options = FormOptions.PromptInStart)
     {
-        // Generated a new FormDialog<T> based on IForm<BasicForm>
+        // Generate a new FormDialog<T> based on IForm<BasicForm>
         return FormDialog.FromForm(BuildForm, options);
     }
 }
-//</askQuestions>
+// </basicForm>

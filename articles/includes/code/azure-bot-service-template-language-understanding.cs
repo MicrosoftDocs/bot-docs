@@ -1,13 +1,15 @@
-// <postMessage>
+// <processMessage>
 switch (activity.GetActivityType())
 {
     case ActivityTypes.Message:
         await Conversation.SendAsync(activity, () => new BasicLuisDialog());
         break;
+    ...
 }
-// </postMessage>
+// </processMessage>
 
-// <receiveMessage>
+
+// <BasicLuisDialog>
 [Serializable]
 public class BasicLuisDialog : LuisDialog<object>
 {
@@ -29,4 +31,4 @@ public class BasicLuisDialog : LuisDialog<object>
         context.Wait(MessageReceived);
     }
 }
-// </receiveMessage>
+// </BasicLuisDialog>

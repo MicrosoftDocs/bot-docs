@@ -1,5 +1,4 @@
-
- // <authenticateRequest>
+// <authenticateRequest>
 // Authenticates the incoming request. If the request is authentic, it adds the activity.ServiceUrl to 
 // MicrosoftAppCredentials.TrustedHostNames. Otherwise, it returns Unauthorized.
 
@@ -9,7 +8,9 @@ if (!await botAuthenticator.Value.TryAuthenticateAsync(req, new [] {activity}, C
 }
 // </authenticateRequest>
 
-//<processMessage>
+
+
+// <processMessage>
 switch (activity.GetActivityType())
 {
     case ActivityTypes.Message:
@@ -26,7 +27,7 @@ switch (activity.GetActivityType())
         log.Error($"Unknown activity type ignored: {activity.GetActivityType()}");
         break;
 }
-    // </processMessage>
+// </processMessage>
 
 
 
@@ -55,16 +56,21 @@ case ActivityTypes.ConversationUpdate:
     break;
 // </conversationUpdate>
 
-// <getActivityType>
- switch (activity.GetActivityType())
+
+
+// <message>
+switch (activity.GetActivityType())
 {
     case ActivityTypes.Message:
         await Conversation.SendAsync(activity, () => new EchoDialog());
         break;
+    ...
 }
-// </getActivityType>
+// </message>
 
-// <showDialog>
+
+
+// <echoDialog>
 [Serializable]
 public class EchoDialog : IDialog<object>
 {
@@ -87,10 +93,13 @@ public class EchoDialog : IDialog<object>
 
         return Task.CompletedTask;
     }
+    ...
 }
-// </showDialog>
+// </echoDialog>
 
-// <setCounter>
+
+
+// <messageReceivedAsync>
 public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> argument)
 {
     var message = await argument;
@@ -109,9 +118,11 @@ public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitabl
         context.Wait(MessageReceivedAsync);
     }
 }
-// </setCounter>
+// </messageReceivedAsync>
 
-// <sendMessage>
+
+
+// <afterResetAsync>
 public async Task AfterResetAsync(IDialogContext context, IAwaitable<bool> argument)
 {
     var confirm = await argument;
@@ -126,5 +137,4 @@ public async Task AfterResetAsync(IDialogContext context, IAwaitable<bool> argum
     }
     context.Wait(MessageReceivedAsync);
 }
-// </sendMessage>
-
+// </afterResetAsync>

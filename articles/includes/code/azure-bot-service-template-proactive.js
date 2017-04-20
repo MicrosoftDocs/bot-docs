@@ -17,45 +17,13 @@ bot.dialog('/', function (session) {
             session.send('There was an error creating your queue');
         }
     });
-
 });
 // </receiveMessage>
 
-// <receiveTrigger>
-bot.on('trigger', function (message) {
-    // handle message from trigger function
-    var queuedMessage = message.value;
-    var reply = new builder.Message()
-        .address(queuedMessage.address)
-        .text('This is coming from the trigger: ' + queuedMessage.text);
-    bot.send(reply);
-});
-
-// </receiveTrigger>
-
-// <queueTriggerJson>
-{
-  "bindings": [
-    {
-      "name": "myQueueItem",
-      "type": "queueTrigger",
-      "direction": "in",
-      "queueName": "bot-queue",
-      "connection": ""
-    },
-    {
-      "type": "bot",
-      "name": "$return",
-      "direction": "out",
-      "botId": "yourbot"
-    }
-  ]
-}
- // </queueTriggerJson>
 
 
- // <queueTrigger>
- module.exports = function (context, myQueueItem) {
+// <queueTrigger>
+module.exports = function (context, myQueueItem) {
     context.log('Sending Bot message', myQueueItem);
 
     var message = {
@@ -66,3 +34,16 @@ bot.on('trigger', function (message) {
     context.done(null, message);
 }
 // </queueTrigger>
+
+
+
+// <handleMessageFromFunction>
+bot.on('trigger', function (message) {
+    // handle message from trigger function
+    var queuedMessage = message.value;
+    var reply = new builder.Message()
+        .address(queuedMessage.address)
+        .text('This is coming from the trigger: ' + queuedMessage.text);
+    bot.send(reply);
+});
+// </handleMessageFromFunction>

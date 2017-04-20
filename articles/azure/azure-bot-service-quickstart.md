@@ -13,14 +13,6 @@ ROBOTS: Index, Follow
 
 # Create a bot with the Azure Bot Service
 
-<!--
-> [!div class="op_single_selector"]
-> * [.NET](~/dotnet/bot-builder-dotnet-quickstart.md)
-> * [Node.js](~/nodejs/bot-builder-node-quickstart.md)
-> * [Azure Bot Service](~/azure-bot-service/getstarted.md)
->
--->
-
 The Azure Bot Service accelerates the process of developing a bot 
 by providing an integrated environment that is purpose-built for bot development. 
 This tutorial walks you through the process of creating and testing a bot by using the Azure Bot Service.
