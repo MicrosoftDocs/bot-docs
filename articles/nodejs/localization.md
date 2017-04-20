@@ -14,10 +14,10 @@ ROBOTS: Index, Follow
 
 # Support localization
 
-Bot Builder includes a rich localization system for building bots that can communicate with the user in multiple languages. All of your bot's prompts can be localized using JSON files stored in your bots directory structure. If you’re using a system like LUIS to perform natural language processing you can configure your [LuisRecognizer][LUISRecognizer] with a separate model for each language your bot supports and the SDK automatically selects the model that matches the user's preferred locale.
+Bot Builder includes a rich localization system for building bots that can communicate with the user in multiple languages. All of your bot's prompts can be localized using JSON files stored in your bot's directory structure. If you’re using a system like LUIS to perform natural language processing, you can configure your [LuisRecognizer][LUISRecognizer] with a separate model for each language your bot supports and the SDK will automatically select the model that matches the user's preferred locale.
 
 ## Determine the locale by prompting the user
-The first step to localizing your bot for the user is adding the ability to identify the user's preferred language. The SDK provides a [session.preferredLocale()][preferredLocal] method to both save and retrieve this preference on a per-user basis. The following example is a dialog to prompt the user for their preferred language and then save their choice.
+The first step to localizing your bot is adding the ability to identify the user's preferred language. The SDK provides a [session.preferredLocale()][preferredLocal] method to both save and retrieve this preference on a per-user basis. The following example is a dialog to prompt the user for their preferred language and then save their choice.
 
 ``` javascript
 bot.dialog('/localePicker', [
@@ -103,7 +103,7 @@ var bot = new builder.UniversalBot(connector, {
 });
 ```
 
-## Localizing prompts
+## Localize prompts
 The default localization system for the Bot Builder SDK is file-based and allows a bot to support multiple languages using JSON files stored on disk. By default, the localization system will search for the bot's prompts in the `./locale/<IETF TAG>/index.json` file where <IETF TAG> is a valid [IETF language tag][IEFT] representing the preferred locale for which to find prompts. 
 
 The following screenshot shows the directory structure for a bot that supports three languages: English, Italian, and Spanish.

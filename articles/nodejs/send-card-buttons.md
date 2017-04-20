@@ -15,8 +15,7 @@ ROBOTS: Index, Follow
 # Send rich cards
 
 Several channels, like Skype & Facebook, support sending rich graphical cards to users with interactive buttons that the user clicks to initiate an action. 
-The SDK provides a rich set of message and card builder classes which can be used to send cards in a cross-platform way. The Bot Framework Connector Service will render these cards using schema native to the channel.
-For channels that don’t support cards, like SMS, the Bot Framework will do its best to render a reasonable experience to users. 
+The SDK provides several message and card builder classes which can be used to create and send cards. The Bot Framework Connector Service will render these cards using schema native to the channel, supporting cross-platform communication. If the channel does not support cards, such as SMS, the Bot Framework will do its best to render a reasonable experience to users. 
 
 ## Types of rich cards 
 
@@ -71,11 +70,11 @@ bot.dialog('showShirts', function (session) {
 ```
 This example uses the [Message][Message] class to build a carousel.  
 The carousel is comprised of a list of [HeroCard][heroCard] classes that contain an image, text, and a single button that triggers buying the item.  
-Clicking the “Buy” button triggers sending a message so we need to add a second dialog to catch the button click. 
+Clicking the **Buy** button triggers sending a message so we need to add a second dialog to catch the button click. 
 
 ## Handle button input
 
-The ‘buyButtonClick’ dialog will be triggered anytime a message is received that starts with “buy” or “add” and is followed by something containing the word “shirt”. 
+The `buyButtonClick` dialog will be triggered any time a message is received that starts with “buy” or “add” and is followed by something containing the word “shirt”. 
 The dialog starts by using a couple of regular expressions to look for the color and optional size shirt that the user asked for.
 This added flexibility lets you support both button clicks and natural language messages from the user like “please add a large gray shirt to my cart”.
 If the color is valid but the size is unknown, the bot prompts the user to pick a size from a list before adding the item to the cart. 

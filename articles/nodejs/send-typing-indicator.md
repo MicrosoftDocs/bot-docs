@@ -21,16 +21,13 @@ ROBOTS: Index, Follow
 >
 -->
 
-
-In this article, we'll discuss how to send a typing indicator by using the Bot Builder SDK for Node.js.
-
-Users of your bot will expect a timely response to their message. If your bot performs some long running task like calling a server or executing a query, without giving the user some indication that the bot heard them, the user could get impatient and send additional messages to the bot.
-Many channels support the sending of a typing indication to simply show the user that their message was received and is being processed.
+Users expect a timely response to their messages. If your bot performs some long-running task like calling a server or executing a query without giving the user some indication that the bot heard them, the user could get impatient and send additional messages or just assume the bot is broken.
+Many channels support the sending of a typing indication to show the user that the message was received and is being processed.
 
 
 <!-- TODO: Channels that support typing include: -->
 
-## Send a typing indicator
+## Typing indicator example
 
 The following example demonstrates how to send a typing indication using [session.sendTyping()][SendTyping].  You can test this with the Bot Framework Emulator.
 

@@ -62,28 +62,25 @@ Engage them by requesting a response and wait for the user to respond before con
 
 ### Emotion, variety and personality are vital
 
-
-Unless you want to deliberately project a robotic persona, make your Bot colorful and rich in expression (e.g., using different font-styles, emoticons etc. in your Bot's script). Try to keep variety in the conversation responses when the same topic or question comes up multiple times in a conversation. Over time, based on the tone and character of your Bot, the user should build a character for your Bot in their mind.
+Unless you want to deliberately project a robotic persona, make your Bot colorful and rich in expression. Try using different font styles, emoticons, or other media in your Bot's script. Try to vary the responses when the same topic or question comes up multiple times in a conversation. Over time, based on the tone and character of your Bot, the user should build a personality for your Bot in their mind.
 
 
 ### Be judicious with data and message frequency
 
 Don't send out too many messages in sequence when they can be grouped into a single message.
 
-Be cognizant of the user's network-speed and bandwidth charges  when sending images and/or videos.
+Be sensitive to the user's network-speed and bandwidth charges when sending images and/or videos.
 
-If you want to do something out of the ordinary (e.g. send a 100 messages in the next minute, send a large file etc.), then take consent from the user before doing it.
+If you want to do something unusual, such as send a large number of messages or a large file, request consent from the user before doing it.
 
-Don't send out messages that might appear as spam (e.g. wishing a user "Good night" at 10 pm every night).
+Don't send out messages that might appear as spam, such as wishing a user "Good night" at 10 pm every night.
 
 ### Give feedback
 
 
-It's always good to give a sense of awareness to the user. Let the user know if the Bot understood or didn't understand the user's response. Paraphrase and/or confirm if the Bot is uncertain about the user's intent and before performing more involved (or irrevocable) actions like deleting something permanently.  
-If the Bot needs to take time in performing time-intensive actions, don't leave the user hanging.  
+It's always good to give a sense of awareness to the user. Let the user know if the Bot understood or didn't understand the user's response. Paraphrase and/or confirm if the Bot is uncertain about the user's intent. Verify before performing irrevocable actions like deleting something permanently.  
+If the Bot needs to take time to perform complex actions, implement a "wait" notification so the user doesn't assume that the bot has crashed.
 
 
 ### Keep the user in control
-The user must not feel constrained or forced by the Bot's script. Let the user tailor the Bot to suit their needs, for example, if the Bot sends updates on five categories of something but the user is only interested in two, let the user turn off updates for the other three.
-
-Let the user select from options in your script wherever appropriate.  
+The user must not feel constrained or forced by the Bot's script. Let the user tailor the Bot to suit their needs. For example, if the Bot sends updates on five categories, but the user is only interested in two, let the user turn off updates for the other three. Let the user select from options in your script wherever appropriate.  

@@ -28,10 +28,12 @@ and the `Locale` property (as the locale of the sender).
 [!code-csharp[Set message properties](~/includes/code/dotnet-create-messages.cs#setBasicProperties)]
 
 The `TextFormat` property of a message can be used to specify the format of the text. 
-`TextFormat` defaults to "markdown" (interpret text using markdown formatting standards), 
-but you can alternatively specify either "plain" (interpret text as plain text) or "xml" (interpret text as XML markup).
+`TextFormat` defaults to `markdown` and interprets text using Markdown formatting standards, 
+but you can also specify `plain` to interpret text as plain text or `xml` to interpret text as XML markup.
 
-These styles are supported with `TextFormat` of "markdown":
+If a channel is not capable of rendering the specified formatting, the message will be rendered using reasonable approximation. For example, Markdown **bold** text for a message sent via text messaging will be rendered as \*bold\*. Only channels that support fixed width formats and HTML can render standard table markdown.
+
+These styles are supported when `TextFormat` is set to `markdown`:
 
 | Style | Markdown | Example | 
 | ---- | ---- | ---- | 
@@ -46,16 +48,9 @@ These styles are supported with `TextFormat` of "markdown":
 | hyperlink | \[bing](http://www.bing.com) | [bing](http://www.bing.com) |
 | image link| \[duck](http://aka.ms/Fo983c) | [duck](http://aka.ms/Fo983c) |
 
-> [!NOTE]
-> In cases where a channel is not capable of rendering the formatting that's specified by markdown, 
-> the message will be rendered using reasonable approximation. For example, if markdown specifies **bold** 
-> text for a message that's sent via text messaging, the text will be rendered as \*bold\*. 
-> 
-> Channels that support fixed width formats and HTML will also render standard table markdown. 
-> Other channels may not properly render tables.
-
-`TextFormat` of "xml" is supported only by the Skype channel. 
-These styles are supported with `TextFormat` of "xml":
+These styles are supported when `TextFormat` is set to "xml":
+> [!CAUTION]
+> The `xml` value of for `TextFormat` is supported by the Skype channel only. 
 
 | Style | Markdown | Example | 
 |----|----|----|----|
@@ -68,13 +63,13 @@ These styles are supported with `TextFormat` of "xml":
 ## Message attachments
 
 The `Attachments` property of a message activity can be used to send and receive simple media attachments 
-(e.g., image, audio, video, file) and rich cards. 
+(image, audio, video, file) and rich cards. 
 For details, see [Add media attachments to messages](~/dotnet/add-media-attachments.md) and 
 [Add rich cards to messages](~/dotnet/add-rich-card-attachments.md).
 
 ## Message entities
 
-The `Entities` property of a message is an array of open ended <a href="http://schema.org/" target="_blank">schema.org</a> 
+The `Entities` property of a message is an array of open-ended <a href="http://schema.org/" target="_blank">schema.org</a> 
 objects which allows the exchange of common contextual metadata between the channel and bot.
 
 ### Mention entities
@@ -95,12 +90,11 @@ This code example shows how to add a `Mention` entity to the `Entities` collecti
 [!code-csharp[set Mention](~/includes/code/dotnet-create-messages.cs#setMention)]
 
 > [!TIP]
-> You bot may want to identify when it is mentioned in a message, so that it may 
-> ignore that portion of the message when attempting to determine user intent. 
-> To determine whether your bot was mentioned in a message, call the `GetMentions` method 
-> and evaluate the `Mention` objects that are returned in the response.
+> When attempting to determine user intent, the  bot may want to ignore that portion
+> of the message where it is mentioned. Call the `GetMentions` method and evaluate
+> the `Mention` objects returned in the response.
 
-### Place entities
+### Place objects
 
 <a href="https://schema.org/Place" target="_blank">Location-related information</a> can be conveyed 
 within a message by populating the message's `Entities` property with either 
@@ -130,7 +124,7 @@ This code example shows how to add a `Place` entity to the `Entities` collection
 
 [!code-csharp[set GeoCoordinates](~/includes/code/dotnet-create-messages.cs#setGeoCoord)]
 
-### Consuming entities
+### Consume entities
 
 To consume entities, use either the `dynamic` keyword or strongly-typed classes.
 

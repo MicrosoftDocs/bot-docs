@@ -13,17 +13,15 @@ ROBOTS: Index, Follow
 # Integrate your bot with a web browser
 
 Some scenarios require more than just a bot to fulfill a requirement. 
-A bot may need to send the user to a web browser to complete a task, 
-and then subsequently resume the conversation with the user after the task has been completed. 
-For example, consider these scenarios.
+A bot may need to send the user to a web browser to complete a task and then resume the conversation with the user after the task has been completed. 
 
-### Authentication and authorization
+## Authentication and authorization
 If a bot wants the ability to read the user's calendar in Office 365, or perhaps 
 even create appointments on behalf of that user, the user must first authenticate with Microsoft Azure Active Directory and 
 authorize the bot to access the user's calendar data. The bot will redirect the user to a web browser to complete the 
 authentication and authorization tasks, and then will subsequently resume the conversation with the user. 
 
-### Security and compliance
+## Security and compliance
 Security and compliance requirements often restrict the type of information that a bot 
 can exchange with a user. In some cases, it may be necessary for the user to send/receive data 
 outside of the current conversation. 
@@ -36,13 +34,12 @@ This article explores the process of facilitating a user's transition from
 bot to web browser, and back again. 
 
 > [!NOTE]
-> The process of transitioning a user from chat to web browser and back again is not ideal
-> as it can be a confusing experience for the user to go from one application to another. 
-> To address this concern and provide a better user experience, 
-> many channels offer built-in HTML windows that a bot can use to 
-> surface applications that are typically viewed in a web browser. 
-> Implementing this technique allows the user to interact solely within the context of the chat, even though they may be accessing external resources via the built-in HTML window. 
-> This is conceptually similar to how mobile applications manage authorization flows by using OAuth within embedded web views.
+> Transitioning from chat to web browser and back is not ideal, as switching between
+> applications can easily confuse a user. To provide a better experience, many channels 
+> offer built-in HTML windows that a bot can use to present applications would otherwise 
+> appear in a web browser. This technique allows the user to remain within the conversation
+> while still accessing external resources. This approach is conceptually similar to mobile 
+> applications managing authorization flows using OAuth within embedded web views.
 
 ## Bot to web browser, and back again
 
@@ -60,21 +57,19 @@ The hyperlink typically includes data via querystring parameters on the target U
 3. The bot enters a state awaiting communication from the website to indicate that the website flow is complete.  
 
 > [!TIP]
-> Design this flow so that the bot will not permanently remain in the 'waiting' state 
-> (thereby [ignoring user input](~/bot-design-navigation.md#the-mysterious-bot)), 
-> if the user never completes the website flow. 
-> In other words, if the user abandons the web browser and starts communicating with the bot again, 
-> the bot should acknowledge those communications.
+> Design this flow so that the bot will not permanently remain in the 'waiting' state if 
+> the user never completes the website flow. In other words, if the user abandons the web
+> browser and starts communicating with the bot again, the bot should acknowledge, not [ignore](~/bot-design-navigation.md#the-mysterious-bot)
+> that input.
 
 4. The user completes the necessary task(s) via the web browser. 
-This could be an OAuth flow or any custom sequence of events that are required by the scenario at hand. 
+This could be an OAuth flow or any sequence of events required by the scenario at hand. 
 
 5. <a id="generate-magic-number"></a>When the user completes the website flow, the website generates a '[magic number](#verify-identity)' 
-and instructs the user to copy the value and paste it back into the chat with the bot. 
+and instructs the user to copy the value and paste it back into the conversation with the bot. 
 
 6. <a id="signal-to-bot"></a>The website [signals to the bot](#website-signal-to-bot) that the user has completed the website flow. 
-It communicates the 'magic number' to the bot and provides
-any additional data that is relevant to the scenario at hand. 
+It communicates the 'magic number' to the bot and provides any other relevant data.
 For example, in the case of an OAuth flow, the website would provide an access token to the bot.
 
 7. The user returns to the bot and pastes the 'magic number' into the chat. 
@@ -100,8 +95,7 @@ within the <a href="https://github.com/MicrosoftDX/AuthBot" target="_blank">Auth
 AuthBot enables bots that are built in Microsoft Bot Framework to implement 
 the bot-to-website flow to authenticate a user in a website and then to subsequently use the access token 
 that was generated from the authentication process. 
-AuthBot does not make any assumptions about the capabilities of various channels; 
-therefore, such flows should function well with most channels (although there may be some exceptions). 
+Since AuthBot does not make any assumptions about the channel's capabilities, such flows should function well with most channels. 
 
 > [!NOTE]
 > The need for the 'magic number' validation process should be deprecated as channels build their own embedded web views.
@@ -109,9 +103,7 @@ therefore, such flows should function well with most channels (although there ma
 ###<a id="website-signal-to-bot"></a> How does the website 'signal' the bot?
 
 When the bot [generates the hyperlink](#generate-hyperlink) that the user will click to initiate the website flow, 
-it includes information via querystring parameters in the target URL about the context of the current conversation, such as conversation ID, channel ID, and user ID in the channel. The website can subsequently use this information (in [step 6](#signal-to-bot) above) to read and write state variables for that user or conversation, 
-by using the Microsoft Bot Framework APIs, i.e., the Bot Builder SDK for .NET, the Bot Builder SDK for Node.js, or the REST API. 
-The website can 'signal' to the bot that the user has completed the website flow.
+it includes information via querystring parameters in the target URL about the context of the current conversation, such as conversation ID, channel ID, and user ID in the channel. The website can subsequently use this information to read and write state variables for that user or conversation using the Bot Builder SDK or REST APIs. See [step 6](#signal-to-bot) above for an example of how the website 'signals' to the bot that the website flow is complete.
 
 ## Additional resources
 

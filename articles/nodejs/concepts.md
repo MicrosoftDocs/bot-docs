@@ -14,19 +14,18 @@ ROBOTS: Index, Follow
 
 # Key concepts
 
-This article introduces key concepts in the Bot Builder SDK for Node.js.
+The <a href="https://github.com/Microsoft/BotBuilder" target="_blank">Bot Builder SDK for Node.js</a> is a powerful framework for constructing bots.
 
 ## Connector
 
-The Bot Framework Connector is a service that connects your bot to multiple *channels*, which are clients like Skype, Facebook
-, Slack, and SMS. 
-The Connector facilitates communication between bot and user, by relaying messages from bot to channel and from channel to bot. 
+The Bot Framework Connector is a service that connects your bot to multiple *channels*, which are clients like Skype, Facebook, Slack, and SMS. 
+The Connector facilitates communication between bot and user by relaying messages from bot to channel and from channel to bot. 
 Your bot's logic is hosted as a web service that receives messages from users through the Connector service, and your bot's replies are sent to the Connector using HTTPS POST. 
 
 The Bot Builder SDK for Node.js provides the [UniversalBot][UniversalBot] and [ChatConnector][ChatConnector] classes for configuring the bot to send and receive messages through the Bot Framework Connector. The **UniversalBot** class forms the brains of your bot. It's responsible for managing all the conversations your bot has with a user. The **ChatConnector** connects your bot to the Bot Framework Connector Service.
 For an example that demonstrates using these classes, see [Create a bot with the Bot Builder SDK for Node.js](~/nodejs/bot-builder-node-quickstart.md).
 
-The Connector also normalizes the messages that the bot sends to channels, so that you can develop your bot in a platform-agnostic way. Normalizing a message involves converting it from the Bot Framework’s schema into the channel’s schema. In cases where the channel does not support all aspects of the framework’s schema, the Connector will try to convert the message to a format that the channel supports. For example, if the bot sends a message that contains a card with action buttons to the SMS channel, the Connector may render the card as an image and include the actions as links in the message’s text. The [Channel Inspector][ChannelInspector] is a web tool that shows you how the Connector renders messages on various channels.
+The Connector also normalizes the messages that the bot sends to channels so that you can develop your bot in a platform-agnostic way. Normalizing a message involves converting it from the Bot Framework’s schema into the channel’s schema. In cases where the channel does not support all aspects of the framework’s schema, the Connector will try to convert the message to a format that the channel supports. For example, if the bot sends a message that contains a card with action buttons to the SMS channel, the Connector may render the card as an image and include the actions as links in the message’s text. The [Channel Inspector][ChannelInspector] is a web tool that shows you how the Connector renders messages on various channels.
 
 ## Messages
 
@@ -38,14 +37,14 @@ For an example that demonstrates how to send a rich graphical card containing in
 Dialogs help you organize the conversational logic in your bot and are fundamental to [designing conversation flow](../bot-design-conversation-flow.md). For an introduction to dialogs, see [Understand dialogs](~/nodejs/understand-dialogs.md).
 
 ## Actions
-You'll want to design your bot to be able to handle interruptions like requests for cancellation or help at any time during the conversation flow. The Bot Builder SDK for Node.js provides global message handlers that trigger actions like cancellation or the invokation of other dialogs. 
+You'll want to design your bot to be able to handle interruptions like requests for cancellation or help at any time during the conversation flow. The Bot Builder SDK for Node.js provides global message handlers that trigger actions like cancellation or invoking other dialogs. 
  See <!--[Handling cancel](~/nodejs/manage-conversation-flow.md#handling-cancel), [Confirming interruptions](~/nodejs/manage-conversation-flow.md#confirming-interruptions) and-->[Listen for messages using actions](~/nodejs/global-handlers.md) for examples of how to use [triggerAction][triggerAction] handlers.
 
 
 ## Recognizers
-When the users ask your bot for something, like "help" or "find news", your bot needs to understand what the user is asking for, and then take the appropriate action. You can design your bot to recognize a set of intents that interpret the user’s input in terms of the intention it conveys, and associate that intent with actions. 
+When the users ask your bot for something, like "help" or "find news", your bot needs to understand what the user is asking for and then take the appropriate action. You can design your bot to recognize a intents based on the user’s input and associate that intent with actions. 
 
-You can use use the built-in regular expression recognizer that the Bot Builder SDK provides, call an external service such as the LUIS API, or implement a custom recognizer, to determine the user's intent. 
+You can use use the built-in regular expression recognizer that the Bot Builder SDK provides, call an external service such as the LUIS API, or implement a custom recognizer to determine the user's intent. 
 See [Recognize user intent](~/nodejs/recognize-intent.md) for examples that demonstrate how to add recognizers to your bot and use them to trigger actions.
 
 

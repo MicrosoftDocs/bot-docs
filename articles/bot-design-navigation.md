@@ -26,7 +26,7 @@ Consider the following dilemmas:
 
 The specifics of your bot's navigation design will depend largely upon the features and functionality that your bot supports. 
 However, regardless of the type of bot you're developing, you'll want to avoid the common pitfalls of poorly designed conversational interfaces. 
-This article describes these pitfalls in terms of five personality disorders: the "stubborn bot", the "clueless bot", 
+This article describes these pitfalls in terms of five personalities: the "stubborn bot", the "clueless bot", 
 the "mysterious bot", the "captain obvious bot", and the "bot that can't forget." 
 
 ## The "stubborn bot"
@@ -37,7 +37,7 @@ Consider the following scenario:
 
 ![bot](~/media/designing-bots/core/stubborn-bot.png)
 
-Users often change their minds. They can decide to cancel something in mid-stream. Sometimes they want to start over altogether. 
+Users often change their minds. They can decide to cancel. Sometimes they want to start over altogether. 
 
 > [!TIP]
 > <b>Do</b>: Design your bot to consider that a user might attempt to change the course of the conversation at any time. 
@@ -52,14 +52,13 @@ but will at least avoid asking the same question in an endless loop.
 
 ## The "clueless bot"
 
-The clueless bot responds in a nonsensical manner when it doesn't understand a user's attempt to access certain functionality, e.g., "help" or "cancel". 
+The clueless bot responds in a nonsensical manner when it doesn't understand a user's attempt to access certain functionality. A user may try common keyword commands like "help" or "cancel" with reasonable expectations that the bot will respond appropriately.
+
 Consider the following scenario: 
 
 ![bot](~/media/designing-bots/core/clueless-bot.png)
 
-Users often attempt to access certain functionality by using common keywords like "help", "cancel", or "start over". 
-Although you may be tempted to design every dialog within your bot to listen for, and respond appropriately to, certain keywords, 
-this approach is not recommended. 
+Although you may be tempted to design every dialog within your bot to listen for, and respond appropriately to, certain keywords, this approach is not recommended. <!-- because it makes the bot too slow? -->
 
 > [!TIP]
 > <b>Do</b>: Implement global message handlers (using [.NET](~/dotnet/global-handlers.md) or 

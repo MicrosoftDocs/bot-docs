@@ -15,14 +15,13 @@ ROBOTS: Index, Follow
 # Support audio calls with Skype
 
 [!include[Introduction to conducting audio calls](~/includes/snippet-audio-call-intro.md)]
-This article describes how to enable support for audio calls via Skype by using the Bot Builder SDK for .NET. 
-
-## Conduct an audio call
 
 The architecture for a bot that supports audio calls is very similar to that of a typical bot. 
-The following code samples show how to enable support for audio calls via Skype by using the Bot Builder SDK for .NET. 
+The following code samples show how to enable support for audio calls via Skype with the Bot Builder SDK for .NET. 
 
-First, define the `CallingController`.
+## Enable audio call support
+
+Define the `CallingController`. This enables the bot to support audio calls.
 
 ```cs
 [BotAuthentication]
@@ -47,14 +46,17 @@ public class CallingController : ApiController
     }
 }
 ```
-
 > [!NOTE]
-> In addition to the `CallingController` (to support audio calls) a bot may also contain a `MessagesController` 
-> (to support messages). Providing both options allows users to interact with the bot in the way that they prefer.
+> In addition to the `CallingController`, which supports audio calls, a bot may also contain a 
+> `MessagesController` to support messages. Providing both options allows users to interact with
+> the bot in the way that they prefer. <!-- docs on MessagesController are where? -->
 
-While the constructor registers the `IVRBot` class, `ProcessIncomingCallAsync` will execute whenever 
-the user initiates a call to this bot from Skype. 
-The `IVRBot` has a predefined handler for that event:
+##  Answer the call
+
+The `ProcessIncomingCallAsync` task will execute whenever a user initiates a call to this bot from Skype.
+The constructor registers the `IVRBot` class, which has a predefined handler for the `incomingCallEvent`.
+
+The first action within the workflow should determine if the bot answers or rejects the incoming call. This workflow instructs the bot to answer the incoming call and then play a welcome message. 
 
 ```cs
 private Task OnIncomingCallReceived(IncomingCallEvent incomingCallEvent)
@@ -70,17 +72,12 @@ private Task OnIncomingCallReceived(IncomingCallEvent incomingCallEvent)
     return Task.FromResult(true);
 }
 ```
+## After the bot answers
 
-As its first action within the workflow, the bot should specify to whether to answer or reject the incoming call. 
-If the bot decides to answer the call, subsequent actions specified within the workflow will instruct the 
-**Skype Bot Platform for Calling** to play prompt, record audio, recognize speech, or collect digits from a dial pad. 
-The final action of the workflow might be to end the call. 
-The **Skype Bot Platform for Calling** will execute the actions in the order that they are specified by the workflow. 
+If the bot answers the call, subsequent actions specified within the workflow will instruct the 
+**Skype Bot Platform for Calling** in the order that they are specified by the workflow. The bot could play a prompt, record audio, recognize speech, or collect digits from a dial pad. The final action of the workflow should be to end the call. 
 
-In the previous code sample, the workflow instructs the bot to answer the incoming call and play a welcome message. 
-
-Next, the following code sample defines a handler that will execute after the welcome message completes, 
-to setup a menu.
+This code sample defines a handler that will set up a menu after the welcome message completes.
 
 ```cs
 private Task OnPlayPromptCompleted(PlayPromptOutcomeEvent playPromptOutcomeEvent)
@@ -125,10 +122,9 @@ private static Recognize CreateIvrOptions(string textToBeRead, int numberOfOptio
 }
 ```
 
-The `RecognitionOption` class defines both the spoken answer as well as the corresponding Dual-Tone Multi-Frequency (DTMF) variation (the user may answer by typing the corresponding digits on the keypad).
+The `RecognitionOption` class defines both the spoken answer as well as the corresponding Dual-Tone Multi-Frequency (DTMF) variation. DTMF enables the user to answer by typing the corresponding digits on the keypad instead of speaking.
 
-The `OnRecognizeCompleted` method processes the user's selection (input parameter `recognizeOutcomeEvent` contains 
-the user's selection).
+The `OnRecognizeCompleted` method processes the user's selection, and the input parameter `recognizeOutcomeEvent` contains the value of the user's selection.
 
 ```cs
 private Task OnRecognizeCompleted(RecognizeOutcomeEvent recognizeOutcomeEvent)
@@ -139,7 +135,8 @@ private Task OnRecognizeCompleted(RecognizeOutcomeEvent recognizeOutcomeEvent)
 }
 ```
 
-The bot can also be designed to support free natural language by using the **Bing Speech API** to recognize words in the user's spoken response:
+## Support natural language
+The bot can also be designed to support natural language responses. The **Bing Speech API** enables the bot to recognize words in the user's spoken reply.
 
 ```cs
 private async Task OnRecordCompleted(RecordOutcomeEvent recordOutcomeEvent)

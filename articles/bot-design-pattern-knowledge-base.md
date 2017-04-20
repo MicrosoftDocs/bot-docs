@@ -21,7 +21,6 @@ Yet another might answer questions about contacts such as "Who is John Doe?" or 
 Regardless of the use case for which a knowledge bot is designed, its basic objective is always the same: find and return the information that the user has requested 
 by leveraging a body of data, such as relational data in a SQL database, 
 JSON data in a non-relational store, or PDFs in a document store. 
-This article explores some common knowledge bot capabilities and their related technologies. 
 
 ## Search
 
@@ -47,8 +46,7 @@ If confidence level is low, the bot may respond with "Hmm... were you looking fo
 ### Using Search to Guide a Conversation
 
 If your motivation for building a bot is to enable basic search engine functionality, 
-then you may not need a bot at all. 
-After all, why would users prefer a conversational interface when they can easily achieve their goal by using a typical search engine in a web browser? 
+then you may not need a bot at all. What does a conversational interface off that users can't get from a typical search engine in a web browser? 
 
 Knowledge bots are generally most effective when they are designed to guide the conversation. 
 A conversation is composed of a back-and-forth exchange between user and bot, which presents the bot 
@@ -65,15 +63,14 @@ locates the information that the user is seeking.
 
 ![Dialog Structure](~/media/designing-bots/patterns/guidedConvo4.png)
 
-By leveraging the user's input in each step and presenting the relevant options, the bot guides the user to the information that they're seeking. 
-Once the bot delivers that information, it can even provide guidance about the most efficient way to find similar information in the future. 
+By processing the user's input in each step and presenting the relevant options, the bot guides the user to the information that they're seeking. Once the bot delivers that information, it can even provide guidance about more efficient ways to find similar information in the future. 
 
 ![Dialog Structure](~/media/designing-bots/patterns/Training.png)
 
 ### Azure Search
 
 By using <a href="https://azure.microsoft.com/en-us/services/search/" target="_blank">Azure Search</a>, 
-you can create an efficient search index that a bot can easily search, facet, and filter over. 
+you can create an efficient search index that a bot can easily search, facet, and filter. 
 Consider a search index that is created using the Azure portal.
 
 ![Dialog Structure](~/media/designing-bots/patterns/search3.PNG)

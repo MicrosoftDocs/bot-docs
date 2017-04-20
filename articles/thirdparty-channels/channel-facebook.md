@@ -33,6 +33,7 @@ Connecting a bot also requires a Facebook App.
 ![Create an App ID](~/media/channels/FB-CreateAppId.png)
 
 ## Copy your App ID and App Secret and save them for later
+
 ![Save App ID and secret](~/media/channels/FB-get-appid.png)
 
 ## Enable messenger

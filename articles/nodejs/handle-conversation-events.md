@@ -14,11 +14,11 @@ ROBOTS: Index, Follow
 
 # Handle user and conversation events
 
-This article demonstrates how your bot can handle events such as a user joining a conversation or adding a bot to their contacts list. 
+This article demonstrates how your bot can handle events such as a user joining a conversation or adding a bot to a contacts list. 
 
  <!-- todo: Session and Converstaion and PrivateConversation --> 
 
-## Greeting a user on conversation join
+## Greet a user on conversation join
 The Bot Framework provides the [conversationUpdate][conversationUpdate] event for notifying your bot when a user joins or leaves a conversation.
 
 Your bot can greet the user or perform other first-run activities when a user joins the conversation. 
@@ -34,10 +34,10 @@ The [contactRelationUpdate][contactRelationUpdate] event notifies your bot that 
 
 ## Add a first-run dialog
 
-Neither the **conversationUpdate** nor the **contactRelationUpdate** event are supported by all channels. See the documentation for each channel to determine whether the channel provides these events.
-A more universal way to greet a user who joins a conversation is to add a first-run dialog.
+Since the **conversationUpdate** and the **contactRelationUpdate** event are not supported by all channels,
+a universal way to greet a user who joins a conversation is to add a first-run dialog.
 
-In the following example we’ve added a function that triggers the dialog anytime we’ve never seen a user before. 
+In the following example we’ve added a function that triggers the dialog any time we’ve never seen a user before. 
 You can customize the way an action is triggered by providing an [onFindAction][onFindAction] handler for your action. 
 
 [!include[first-run sample Node.js](~/includes/snippet-code-node-first-run-dialog-1.md)]

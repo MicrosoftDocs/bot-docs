@@ -18,9 +18,7 @@ After you have [registered](~/portal-register-bot.md) your bot with the Bot Fram
 you can configure it to run on one or more channels. 
 
 ## Overview
-For most channels, you must provide channel configuration information to the framework to run your bot on the channel. 
-For example, most channels require that your bot have an account on the channel, and others require your bot to 
-also have an application registered with the channel (for example, Facebook, GroupMe, and others).
+For most channels, you must provide channel configuration information to the framework to run your bot on the channel. Most channels require that your bot have an account on the channel, and others, like Facebook Messenger, require your bot to have an application registered with the channel also.
 
 When you register a bot with the Bot Framework, the following channels are automatically pre-configured:
 
@@ -30,9 +28,9 @@ When you register a bot with the Bot Framework, the following channels are autom
 > [!TIP]
 > To take full advantage of Skype, you must [publish](~/portal-submit-bot-directory.md) your bot to Bot Directory.
 
-## Configure your bot to run on another channel
+## Configure your bot to connect to another channel
 
-To configure your bot to run on another channel, complete the following steps:
+To configure your bot to connect to another channel, complete the following steps:
 
 1. Sign in to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a>.
 2. Click **My bots**. 
@@ -47,7 +45,7 @@ After you've configured the channel, users on that channel can start using your 
 
 ## Next steps
 
-After you've configured your bot to run on the channels where your users are, the next (and final) step in the bot publication process is to [publish](~/portal-submit-bot-directory.md) your bot to Bot Directory. 
+After you've configured your bot to run on the channels where your users are, the last step in the bot publication process is to [publish](~/portal-submit-bot-directory.md) your bot to Bot Directory. 
 
 
 

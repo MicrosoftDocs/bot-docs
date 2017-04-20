@@ -7,4 +7,4 @@ The handlers will examine user input for the keywords that you specify, such as 
 
 > [!NOTE]
 > By defining the logic in global message handlers, you're making it accessible to all dialogs. 
-> Using this approach, individual dialogs and prompts can be made to safely ignore the keywords, if necessary.
+> Individual dialogs and prompts can be configured to safely ignore the keywords.

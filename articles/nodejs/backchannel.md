@@ -15,17 +15,15 @@ ROBOTS: Index, Follow
 # Use the backchannel mechanism
 
 [!include[Introduction to backchannel mechanism](~/includes/snippet-backchannel.md)]
-This article describes how to use the backchannel mechanism with the 
-<a href="https://github.com/Microsoft/BotFramework-WebChat" target="_blank">open source web (chat) control</a> and Node.js. 
 
 ## Walk through
 
-The open source web (chat) control accesses the Direct Line API by using a JavaScript class 
+The open source web chat control accesses the Direct Line API by using a JavaScript class 
 called <a href="https://github.com/microsoft/botframework-DirectLinejs" target="_blank">DirectLineJS</a>. 
 The control can either create its own instance of Direct Line, or it can share one with the hosting page. 
 If the control shares an instance of Direct Line with the hosting page, 
 both the control and the page will be capable of sending and receiving activities. 
-The following diagram shows the high-level architecture of a website that exposes bot functionality by 
+The following diagram shows the high-level architecture of a website that supports bot functionality by 
 using the open source web (chat) control and the Direct Line API. 
 
 ![Backchannel](~/media/designing-bots/patterns/back-channel.png)
@@ -107,7 +105,7 @@ const createEvent = (eventName, value, address) => {
 ```
 
 Likewise, the bot also listens for events from the client. 
-In this example, if the bot receives an event with name="buttonClicked", 
+In this example, if the bot receives an event with `name="buttonClicked"`, 
 it will send a message to the user to say "I see that you clicked a button."
 
 ```javascript

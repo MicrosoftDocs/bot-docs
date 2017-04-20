@@ -30,7 +30,7 @@ and rich cards containing buttons.
 - Built-in recognizers and event handlers that guide the user through the 
 conversation, providing help, navigation, clarification, and confirmation as needed.
 
-## Install the SDK
+## Get the SDK
 
 
 To install the SDK and its dependencies, first create a folder for your bot, navigate to it, and run the following **npm** command:
@@ -46,7 +46,7 @@ npm install --save botbuilder
 npm install --save restify
 ```
 
-## How to get started
+## Get started
 
 <!-- TODO: Make sure this section is consistent with Resources and doesn't duplicate it -->
 Once you've installed the SDK, see [Get Started](~/nodejs/bot-builder-node-quickstart.md) for instructions on how to quickly build and test a simple bot.

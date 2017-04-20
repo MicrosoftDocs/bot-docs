@@ -14,11 +14,6 @@ ROBOTS: Index, Follow
 
 # Send and receive attachments
 
-In this article, we'll discuss how to send messages containing attachments such as images by using the Bot Builder SDK for Node.js.
-
-The [session.send()][SessionSend] method can be used to send messages in the form of a JSON object to the user, in addition to strings. 
-The message object is expected to be an instance of an [IMessage][IMessage] and it's most useful to send the user a message as an object when you’d like to include an attachment like an image. 
-
 <!-- TODO: Supported attachments table -->
 <!--
 There are four types of rich cards.
@@ -30,15 +25,16 @@ There are four types of rich cards.
 |[ThumbnailCard](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.thumbnailcard.html) | The Thumbnail card typically contains a single small image, one or more buttons, and text.|
 -->
 
-The types of attachments that can be sent varies by channel but these are the basic types:
+The types of attachments that can be sent varies by channel, but these are the basic types:
 
 * **Media and Files**: You can send files like images, audio and video by setting **contentType** to the MIME type of the [IAttachment object][IAttachment] and then passing a link to the file in **contentUrl**.
-* **Cards**: You can send a rich set of visual cards <!-- and custom keyboards --> by setting the **contentType** of the attachment to the card's type and then passing the JSON for the card in content. If you use one of the rich card builder classes like **HeroCard** the attachment is automatically filled in for you. See [send a rich card](send-card-buttons.md) for an example of this.
+* **Cards**: You can send a rich set of visual cards <!-- and custom keyboards --> by setting the **contentType** to the desired card's type and then pass the JSON for the card. If you use one of the rich card builder classes like **HeroCard**, the attachment is automatically filled in for you. See [send a rich card](send-card-buttons.md) for an example of this.
 
-## Send and receive an image attachment
+The message object is expected to be an instance of an [IMessage][IMessage] and it's most useful to send the user a message as an object when you’d like to include an attachment like an image. Use the [session.send()][SessionSend] method to send messages in the form of a JSON object. 
+
+## Send attachment example
 
 The following example checks to see if the user has sent an attachment, and if they have, it will echo back any image contained in the attachment. You can test this with the Bot Framework Emulator by sending your bot an image.
-
 
 ```javascript
 // Create your bot with a function to receive messages from the user

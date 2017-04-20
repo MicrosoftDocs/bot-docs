@@ -37,23 +37,20 @@ Cognitive Services provides five APIs for language understanding:
 
 Learn [how to add language understanding](cognitive-services-add-bot-language.md) to your bot.
 
-## Image and video understanding
-The Vision APIs bring advanced image and video understanding skills to your bots. 
-State-of-the-art algorithms allow you to process images or videos and get back information you can transform into actions. For example, you can use them to recognize objects, people's faces, age, gender or even feelings. 
+## Knowledge extraction
+Cognitive Services provides five knowledge APIs that enable you to identify named entities or phrases in unstructured text, add personalized recommendations, provide auto-complete suggestions based on natural interpretation of user queries, and search academic papers and other research like a personalized FAQ service.
 
-The Vision APIs support a variety of image understanding features. They can identify mature or explicit content, estimate and accent colors, categorize the content of images, perform optical character recognition, and describe an image with complete English sentences. The Vision APIs also support several image and video processing capabilities, such as intelligently generating image or video thumbnails, or stabilizing the output of a video.
+- The <a href="https://www.microsoft.com/cognitive-services/en-us/entity-linking-intelligence-service" target="_blank">Entity Linking Intelligence Service</a> annotates unstructured text with the relevant entities mentioned in the text. Depending on the context, the same word or phrase may refer to different things. This service understands the context of the supplied text and will identify each entity in your text.    
 
-Cognitive Services provide four APIs you can use to process images or videos:
+- The <a href="https://www.microsoft.com/cognitive-services/en-us/bing-image-search-api" target="_blank">Recommendations API</a> provides "frequently bought together" recommendations to a product, as well as personalized recommendations based on a user's history. Use this service to build and train a model based on data that you provide, and then use this model to add recommendations to your application.
 
-- The <a href="https://www.microsoft.com/cognitive-services/en-us/computer-vision-api" target="_blank">Computer Vision API</a> extracts rich information about images (such as objects or people), determines if the image contains mature or explicit content, and processes text (using OCR) in images.
+- The <a href="https://www.microsoft.com/cognitive-services/en-us/knowledge-exploration-service" target="_blank">Knowledge Exploration Service</a> provides natural language interpretation of user queries and returns annotated interpretations to enable rich search and auto-completion experiences that anticipate what the user is typing. Instant query completion suggestions and predictive query refinements are based on your own data and application-specific grammars to enable your users to perform fast queries.    
 
-- The <a href="https://www.microsoft.com/cognitive-services/en-us/emotion-api" target="_blank">Emotion API</a> analyzes human faces and recognizes their emotion across eight possible categories of human emotions.
+- The  <a href="https://www.microsoft.com/cognitive-services/en-us/academic-knowledge-api" target="_blank">Academic Knowledge API</a> returns academic research papers, authors, journals, conferences, topics, and universities from the <a href="https://www.microsoft.com/en-us/research/project/microsoft-academic-graph/" target="_blank">Microsoft Academic Graph</a>. Built as a domain-specific example of the Knowledge Exploration Service, the Academic Knowledge API provides a knowledge base using a graph-like dialog with search capabilities over hundreds of millions of research-related entities. Search for a topic, a professor, a university, or a conference, and the API will provide relevant publications and related entities. The grammar also supports natural queries like "Papers by Michael Jordan about machine learning after 2010".
 
-- The <a href="https://www.microsoft.com/cognitive-services/en-us/face-api" target="_blank">Face API</a> detects human faces, compares them to similar faces, and can even organize people into groups according to visual similarity.
+- The  <a href="https://qnamaker.ai" target="_blank">QnA Maker</a> is a free, easy-to-use, REST API and web-based service that trains AI to respond to users’ questions in a natural, conversational way. With optimized machine learning logic and the ability to integrate industry-leading language processing, QnA Maker distills semi-structured data like question and answer pairs into distinct, helpful answers.
 
-- The <a href="https://www.microsoft.com/cognitive-services/en-us/video-api" target="_blank">Video API</a> analyzes and processes video to stabilize video output, detects motion, tracks faces, and can generate a motion thumbnail summary of the video.
-
-Learn [how to add image and video understanding](cognitive-services-add-bot-vision.md) to your bot.    
+Learn [how to add knowledge extraction](cognitive-services-add-bot-knowledge.md) to your bot.
 
 ## Speech recognition and conversion
 Use the Speech APIs to add advanced speech skills to your bot that leverage industry-leading algorithms for speech-to-text and text-to-speech conversion, as well as speaker recognition. The Speech APIs use built-in language and acoustic models that cover a wide range of scenarios with high accuracy. 
@@ -67,22 +64,6 @@ There are three Speech APIs available in Cognitive Services to process or synthe
 - The <a href="https://www.microsoft.com/cognitive-services/en-us/speaker-recognition-api" target="_blank">Speaker Recognition API</a> enables speaker identification and verification through voice.
 
 Learn [how to add speech recognition and conversion](cognitive-services-add-bot-speech.md) to your bot.
-
-## Knowledge extraction
-Cognitive Services provides five knowledge APIs that enable you to identify named entities or phrases in unstructured text, add personalized recommendations, provide auto-complete suggestions based on natural interpretation of user queries, and search academic papers and other research like a personalized FAQ service.
-
-
-- The <a href="https://www.microsoft.com/cognitive-services/en-us/entity-linking-intelligence-service" target="_blank">Entity Linking Intelligence Service</a> annotates unstructured text with the relevant entities mentioned in the text. Depending on the context, the same word or phrase may refer to different things. This service understands the context of the supplied text and will identify each entity in your text.    
-
-- The <a href="https://www.microsoft.com/cognitive-services/en-us/bing-image-search-api" target="_blank">Recommendations API</a> provides "frequently bought together" recommendations to a product, as well as personalized recommendations based on a user's history. Use this service to build and train a model based on data that you provide, and then use this model to add recommendations to your application.
-
-- The <a href="https://www.microsoft.com/cognitive-services/en-us/knowledge-exploration-service" target="_blank">Knowledge Exploration Service</a> provides natural language interpretation of user queries and returns annotated interpretations to enable rich search and auto-completion experiences that anticipate what the user is typing. Instant query completion suggestions and predictive query refinements are based on your own data and application-specific grammars to enable your users to perform fast queries.    
-
-- The  <a href="https://www.microsoft.com/cognitive-services/en-us/academic-knowledge-api" target="_blank">Academic Knowledge API</a> returns academic research papers, authors, journals, conferences, topics, and universities from the <a href="https://www.microsoft.com/en-us/research/project/microsoft-academic-graph/" target="_blank">Microsoft Academic Graph</a>. Built as a domain-specific example of the Knowledge Exploration Service, the Academic Knowledge API provides a knowledge base using a graph-like dialog with search capabilities over hundreds of millions of research-related entities. Search for a topic, a professor, a university, or a conference, and the API will provide relevant publications and related entities. The grammar also supports natural queries like "Papers by Michael Jordan about machine learning after 2010".
-
-- The  <a href="https://qnamaker.ai" target="_blank">QnA Maker</a> is a free, easy-to-use, REST API and web-based service that trains AI to respond to users’ questions in a natural, conversational way. With optimized machine learning logic and the ability to integrate industry-leading language processing, QnA Maker distills semi-structured data like question and answer pairs into distinct, helpful answers.
-
-Learn [how to add knowledge extraction](cognitive-services-add-bot-knowledge.md) to your bot.
 
 ## Search
 The Bing Search APIs enable you to add intelligent web search capabilities to your bots. With a few lines of code, you can access billions of webpages, images, videos, news, and other result types. You can configure the APIs to return results by geographical location, market, or language for better relevance. You can further customize your search using the supported search parameters, such as Safesearch to filter out adult content, and Freshness to return results according to a specific date.
@@ -100,6 +81,24 @@ There are five Bing Search APIs available in Cognitive Services.
 - The  <a href="https://www.microsoft.com/cognitive-services/en-us/bing-autosuggest-api" target="_blank">Autosuggest API</a> offers instant query completion suggestions to complete your search query faster and with less typing. 
 
 Learn [how to add search](cognitive-services-add-bot-search.md) to your bot. 
+
+## Image and video understanding
+The Vision APIs bring advanced image and video understanding skills to your bots. 
+State-of-the-art algorithms allow you to process images or videos and get back information you can transform into actions. For example, you can use them to recognize objects, people's faces, age, gender or even feelings. 
+
+The Vision APIs support a variety of image understanding features. They can identify mature or explicit content, estimate and accent colors, categorize the content of images, perform optical character recognition, and describe an image with complete English sentences. The Vision APIs also support several image and video processing capabilities, such as intelligently generating image or video thumbnails, or stabilizing the output of a video.
+
+Cognitive Services provide four APIs you can use to process images or videos:
+
+- The <a href="https://www.microsoft.com/cognitive-services/en-us/computer-vision-api" target="_blank">Computer Vision API</a> extracts rich information about images (such as objects or people), determines if the image contains mature or explicit content, and processes text (using OCR) in images.
+
+- The <a href="https://www.microsoft.com/cognitive-services/en-us/emotion-api" target="_blank">Emotion API</a> analyzes human faces and recognizes their emotion across eight possible categories of human emotions.
+
+- The <a href="https://www.microsoft.com/cognitive-services/en-us/face-api" target="_blank">Face API</a> detects human faces, compares them to similar faces, and can even organize people into groups according to visual similarity.
+
+- The <a href="https://www.microsoft.com/cognitive-services/en-us/video-api" target="_blank">Video API</a> analyzes and processes video to stabilize video output, detects motion, tracks faces, and can generate a motion thumbnail summary of the video.
+
+Learn [how to add image and video understanding](cognitive-services-add-bot-vision.md) to your bot.    
 
 ## Location control
 Bots often need the user to input a location to complete a task. For example, a Taxi bot requires the user's pickup and destination address before requesting a ride. Similarly, a Pizza bot must know the user's delivery address to submit the order, and so on. Normally, bot developers need to use a combination of location or place APIs so that their bots engage in a multi-turn dialog with users to get their desired location and subsequently validate it. Unfortunately, the development steps are usually complicated and error-prone. 

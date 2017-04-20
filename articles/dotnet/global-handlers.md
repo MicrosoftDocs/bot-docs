@@ -22,9 +22,6 @@ ROBOTS: Index, Follow
 -->
 
 [!include[Introduction to global message handlers](~/includes/snippet-global-handlers-intro.md)]
-This article describes how to implement global message handlers by using the Bot Builder SDK for .NET. 
-
-## Implement global message handlers
 
 The following walk through shows how to implement global message handlers by using the Bot Builder SDK for .NET.
 

@@ -16,12 +16,9 @@ ROBOTS: Index, Follow
 
 [!include[Activity concept overview](~/includes/snippet-dotnet-concept-activity.md)]
 
-This article describes activity types in the Bot Builder SDK for .NET and explores 
-the situations in which your bot may expect to send or receive each type of activity.
-
 ## Activity types in the Bot Builder SDK for .NET
 
-The following table lists the activity types that are supported by the Bot Builder SDK for .NET.
+The following activity types are supported by the Bot Builder SDK for .NET.
 
 | Activity.Type | Interface | Description |
 |------|------|------|
@@ -35,58 +32,57 @@ The following table lists the activity types that are supported by the Bot Build
 
 ## message
 
-Your bot will send **message** activities to communicate information to users, and likewise, 
-will also receive **message** activities from users. 
-Some messages may simply consist of plain text, while others may contain richer content such as 
+Your bot will send **message** activities to communicate information to and receive **message** activities from users. 
+Some messages may be plain text, while others may contain richer content such as 
 [media attachments](~/dotnet/add-media-attachments.md), [buttons, and cards](~/dotnet/add-rich-card-attachments.md) or 
 [channel-specific data](~/dotnet/channeldata.md). 
 For information about commonly-used message properties, see [Create messages](~/dotnet/create-messages.md).
 
 ## conversationUpdate
 
-Your bot will receive a **conversationUpdate** activity whenever it has been added to a conversation, 
+A bot receives a **conversationUpdate** activity whenever it has been added to a conversation, 
 other members have been added to or removed from a conversation, 
 or conversation metadata has changed. 
 
 If members have been added to the conversation, the activity's `MembersAdded` property will contain an array of 
 `ChannelAccount` objects to identify the new members. 
-You can determine whether your bot has been added to the conversation (i.e., is one of the new members), 
-by evaluating whether the `Recipient.Id` value for the activity (i.e., your bot's id) 
+
+To determine whether your bot has been added to the conversation (i.e., is one of the new members), evaluate whether the `Recipient.Id` value for the activity (i.e., your bot's id) 
 matches the `Id` property for any of the accounts in the `MembersAdded` array.
 
 If members have been removed from the conversation, the `MembersRemoved` property will contain an array of `ChannelAccount` objects to identify the removed members. 
 
 > [!TIP]
-> If your bot receives a **conversationUpdate** activity to indicate that a user has joined the conversation, 
+> If your bot receives a **conversationUpdate** activity indicating that a user has joined the conversation, 
 > you may choose to have it respond by sending a welcome message to that user. 
 
 ## contactRelationUpdate
 
-For channels that enable your bot to be a member of a user's contact list (Skype, for example), 
-your bot will receive a **contactRelationUpdate** activity whenever it is added or removed from a user's contact list. 
-The value of the activity's `Action` property indicates whether the bot has been added to the user's contact list ("add") or removed from the user's contact list ("remove").
+A bot receives a **contactRelationUpdate** activity whenever it is added to or removed from a user's contact list. Not all channels support adding a bot to a contact list.
+
+The value of the activity's `Action` property (add | remove) indicates whether the bot has been added or removed from the user's contact list.
 
 ## typing
 
-Your bot may send a **typing** activity to indicate to the user that it is working to fulfill a request or compile a response. 
-Likewise, your bot may receive a **typing** activity to indicate that the user is typing a response. 
+A bot receives a **typing** activity to indicate that the user is typing a response. 
+A bot may send a **typing** activity to indicate to the user that it is working to fulfill a request or compile a response. 
 
 ## ping
 
-Your bot will receive a **ping** activity to test that it has implemented security correctly. 
-It should simply respond with HTTP status code 200 (OK), 403 (Forbidden), or 401 (Unauthorized).
+A bot receives a **ping** activity to test that it has implemented security correctly. 
+The bot should respond with HTTP status code 200 (OK), 403 (Forbidden), or 401 (Unauthorized) only.
 
 ## deleteUserData
 
-Your bot will receive a **deleteUserData** activity when a user requests that the bot delete any 
-data that it has previously persisted for him or her. 
+A bot receives **deleteUserData** activity when a user requests deletion of any data that the bot has previously persisted for him or her. 
 If your bot receives this type of activity, it should delete any personally identifiable information (PII) 
 for the user that made the request.
 
 ## endOfConversation 
 
-Your bot may send an **endOfConversation** activity to indicate to the user that the conversation is ending. 
-Likewise, your bot may receive an **endOfConversation** activity to indidate that the user has ended the conversation. 
+A bot receives an **endOfConversation** activity to indidate that the user has ended the conversation. 
+A bot may send an **endOfConversation** activity to indicate to the user that the conversation is ending. 
+
 
 ## Additional resources
 

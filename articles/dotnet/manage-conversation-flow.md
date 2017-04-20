@@ -22,7 +22,7 @@ ROBOTS: Index, Follow
 
 [!include[Dialog flow example](~/includes/snippet-dotnet-manage-conversation-flow-intro.md)]
 
-This article describes how to model this conversation flow by using [dialogs](~/dotnet/dialogs.md) and the Bot Builder SDK for .NET. 
+How to model conversation flow by using [dialogs](~/dotnet/dialogs.md) and the Bot Builder SDK for .NET. 
 
 ## Invoke the root dialog
 

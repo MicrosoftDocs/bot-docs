@@ -14,7 +14,7 @@ ROBOTS: Index, Follow
 
 # Release notes
 
-This article describes the changes that have been introduced by each version of the Bot Builder SDK for .NET. 
+A record of changes introduced by each version of the Bot Builder SDK for .NET. 
 
 > [!IMPORTANT]
 > As long as the Microsoft Bot Framework is in Preview mode, 

@@ -21,7 +21,6 @@ ROBOTS: Index, Follow
 -->
 
 [!include[Introduction to proactive messages - part 1](~/includes/snippet-proactive-messages-intro-1.md)] 
-This article describes how to send proactive messages by using the Bot Builder SDK for Node.js.
 
 ## Types of proactive messages
 
@@ -31,7 +30,7 @@ This article describes how to send proactive messages by using the Bot Builder S
 
 The following code samples show how to send an ad hoc proactive message by using the Bot Builder SDK for Node.js.
 
-To be able to send an ad hoc message to a user, the bot must first collect (and save) information about the user from the current conversation. 
+To be able to send an ad hoc message to a user, the bot must first collect and save information about the user from the current conversation. 
 The **address** property of the message includes all of the information that the bot will need to send an ad hoc message to the user later. 
 
 ```javascript
@@ -47,7 +46,7 @@ bot.dialog('/', function(session, args) {
 
 > [!NOTE]
 > For simplicity, this example does not specify how to store the user data. 
-> The bot can store the user data in any manner, so long as it can be accessed later when the bot is ready to send the ad hoc message.
+> The bot can store the user data in any manner as long as the bot can access it later.
 
 After the bot has collected information about the user, it can send an ad hoc proactive message to the user at any time. 
 To do so, it simply retrieves the user data that it stored previously, constructs the message, and sends it.
@@ -85,8 +84,7 @@ bot.dialog('/', function(session, args) {
 })
 ```
 
-When it is time to send the message, the bot creates a new dialog, thereby adding this dialog to the top of the dialog stack and giving it control of the conversation. 
-The new dialog will deliver the proactive message and will also decide when to close and return control to the prior dialog in the stack. 
+When it is time to send the message, the bot creates a new dialog and adds it to the top of the dialog stack. The new dialog takes control of the conversation, delivers the proactive message, closes, and then returns control to the previous dialog in the stack. 
 
 ```javascript
 function startProactiveDialog(addr) {

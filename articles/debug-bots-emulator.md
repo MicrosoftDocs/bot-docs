@@ -54,14 +54,14 @@ a new one can be generated from the <a href="https://dev.botframework.com/" targ
 > [!TIP]
 > If you want to [debug your Azure Bot Service Bot][AzureBotDebug] code in your IDE, instead of relying only on the visual inspection and logs provided by the emulator, you can set up [continuous integration][AzureBotContinuousIntegration].
 
-## <a id="ngrok"></a>Using ngrok
+## <a id="ngrok"></a>Use ngrok tunneling software
 If you're running the Bot Framework Emulator behind a firewall or other network boundary and want to connect to a bot hosted remotely, you will need to install and configure tunneling software.
 Computers running behind firewalls and home routers are not able to accept ad-hoc incoming requests from the outside world. 
 Tunneling software provides a way around this by creating a bridge from outside the firewall to your local machine. The [ngrok][ngrokDownload] tool, developed by [inconshreveable][inconshreveable], is an example of such tunneling software.
 
 The Bot Framework Emulator integrates tightly with ngrok and can launch it for you when it is needed.
 
-### Installing & Configuring ngrok
+### Install and configure ngrok
 
 1. Download the [ngrok][ngrokDownload] executable to your local machine
 2. Configure the path to ngrok in the emulator's App Settings dialog
@@ -74,7 +74,7 @@ To check ngrok's version, from the command line:
 
 <code>ngrok -v</code>
 
-## Sending System Activities
+## Send System Activities
 The Bot Framework Emulator lets you send messages that represent system events. This feature allows you to emulate a specific user or conversation.
 
 You can find the following activities under **Conversation** > **Send System Activity** in the emulator's settings menu:

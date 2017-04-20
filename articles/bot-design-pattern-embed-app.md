@@ -12,13 +12,14 @@ ROBOTS: Index, Follow
 ---
 # Embed a bot in an app
 
-Although bots most commonly exist outside of apps, they can also be embedded within an app. 
-For example, you may embed a [knowledge bot](~/bot-design-pattern-knowledge-base.md) within an app 
-to enable users to quickly find information that might otherwise be challenging to locate within complex app structures. 
-You may embed a bot within a help desk app to act as the first responder to incoming user requests. 
-The bot could independently resolve simple issues and [handoff](~/bot-design-pattern-handoff-human.md) more complex issues to a human agent. 
+Although bots most commonly exist outside of apps, they can also be integrating with apps. A mobile app that runs across multiple platforms can also run a bot. 
 
-This article explores integrating bots with apps and creating a cross-platform mobile app that runs a bot. 
+For example, you could embed a [knowledge bot](~/bot-design-pattern-knowledge-base.md) within an app 
+to help users find information that might otherwise be challenging to locate within complex app structures. 
+
+You could embed a bot within a help desk app to act as the first responder to incoming user requests. 
+The bot could independently resolve simple issues and [handoff](~/bot-design-pattern-handoff-human.md) more complex issues to a human agent. 
+ 
 
 ## Integrating bot with app
 
@@ -39,7 +40,7 @@ just encapsulated within a native app's shell.
 An IoT app can communicate with the Bot Framework by using 
 the [Direct Line API][directLineAPI]. 
 In some scenarios, it may also use <a href="https://www.microsoft.com/cognitive-services/" target="_blank">Microsoft Cognitive Services</a> 
-to enable capabilities such as vision and speech.
+to enable capabilities such as image recognition and speech.
 
 ### Other types of apps and games
 Other types of apps and games can communicate with the Bot Framework by using 
@@ -52,8 +53,7 @@ for building cross-platform mobile applications.
 
 First, create a simple web view component and use it to host a 
 <a href="https://github.com/Microsoft/BotFramework-WebChat" target="_blank">web chat control</a>. 
-Then, using the Bot Framework Portal, [configure the bot](~/portal-configure-channels.md) to 
-enable the Web Chat channel. 
+Then, using the Bot Framework Portal, [connect the bot](~/portal-configure-channels.md) to the Web Chat channel. 
 
 ![Bot configuration settings](~/media/designing-bots/patterns/webchat-channel.png)
 

@@ -1,6 +1,6 @@
 ---
-title: Manage conversation flow | Microsoft Docs
-description: Learn how to manage conversation flow using dialogs and the Bot Builder SDK for Node.js.
+title: Waterfall prompt sequences | Microsoft Docs
+description: Learn how to collect information from the user through prompts included in the Bot Builder SDK for Node.js.
 author: DeniseMak
 ms.author: v-demak
 manager: rstand
@@ -11,16 +11,20 @@ ms.date: 02/17/2017
 ms.reviewer:
 ROBOTS: Index, Follow
 ---
-# Manage conversation flow
+# Manage multiple prompts
 
 A common pattern is for a bot to ask the user a sequence of questions before performing some action.
 The SDK provides a set of built-in prompts to simplify collecting input from a user. You can then use a feature called a *waterfall* to define the sequence in which to prompt the user. 
 
-## Prompts
+## Prompt results 
 
-These built-in prompts are implemented as a dialog so they’ll return the users response through a call to [session.endDialogWithresult()][EndDialogWithResult]. Any type of dialog message handler can receive the result of a prompt but waterfalls tend to be the simplest way to handle a prompt result.
+Since built-in prompts are implemented as a dialog, they’ll return the user's response through a call to [session.endDialogWithresult()][EndDialogWithResult]. Any type of dialog message handler can receive the result of a prompt, but waterfalls tend to be the simplest way to handle a prompt result.
 
-Prompts return to the caller an [IPromptResult][IPromptResult]. The user's response will be contained in the [results.response][Result_Response] field and may be null. There are multiple reasons for the response to be null. The built-in prompts allow the user to cancel an action by saying something like ‘cancel’ or ‘nevermind’ which results in a null response. Or the user may fail to enter a properly formatted response which can also result in a null response. The exact reason can be determined by examining the [ResumeReason][ResumeReason] returned in [result.resumed][Result_Resumed].
+Prompts return an [IPromptResult][IPromptResult] to the caller. The user's response will be contained in the [results.response][Result_Response] field and may be null. The exact reason can be determined by examining the [ResumeReason][ResumeReason] returned in [result.resumed][Result_Resumed], but the most common reasons for a null response are: 
+* The user cancelled an action by saying something like ‘cancel’ or ‘nevermind’ 
+* The user failed to enter a properly formatted response 
+
+## Prompt types
 
 | Prompt type | Description | User response type |
 |------|------|------|
@@ -31,13 +35,11 @@ Prompts return to the caller an [IPromptResult][IPromptResult]. The user's respo
 | [Prompts.choice][PromptsChoice]  | Asks the user to choose from a list of choices. | [IPromptChoiceResult][IPromptChoiceResult] |
 | [Prompts.attachment][PromptsAttachment]  | Asks the user to upload a picture or video. | [IPromptAttachmentResult][IPromptAttachmentResult] |
 
+## Create a waterfall
 
-## Using a waterfall
-
-In the following example the bot's message handler takes an array of functions (a waterfall) instead of a single function.
-When a user sends a message to our bot, the first function in our waterfall will get called and we can use 
-the [text()][text] prompt to ask the user for their name. 
-Their response will be passed to the second function in our waterfall which will send the user a customized greeting.
+In the following example the bot's message handler takes an array of functions, called a *waterfall*, instead of a single function.
+When a user sends a message to our bot, the first function in the waterfall will be called. The bot will use the [text()][text] prompt to ask the user for their name. 
+The user's response will be passed to the second function in the waterfall which will send the user a greeting customized with their name.
 This cascading sequence of questions and responses is what gives the waterfall feature its name. 
 
 ```javascript
@@ -54,9 +56,9 @@ var bot = new builder.UniversalBot(connector, [
 
 ```
 
-If you run the previous waterfall example, you’ll notice that while it will ask for your name and give you a personalized greeting it won’t remember your name.
-After the last step of the waterfall is reached it will simply start over with the next message. 
-To add logic to remember the user's name so that we only have to ask it once, see [Save user data](~/nodejs/save-user-data.md) for an example. 
+If you run the previous waterfall example, you’ll notice that while it will ask for your name and give you a personalized greeting, it won’t remember your name.
+After the last step of the waterfall is reached, it will simply start over with the next message. 
+To add logic to remember the user's name so that we only have to ask for it once, see [Save user data](~/nodejs/save-user-data.md). 
 
 
 ## Additional resources

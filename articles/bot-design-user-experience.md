@@ -17,8 +17,8 @@ to exchange information with users.
 
 ## Rich user controls 
 
-**Rich user controls** are well-known UI controls such as buttons, images, carousels, and menus that the bot presents to the user and the user engages with to communicate choice and intent. 
-A bot can use a collection of UI controls (sometimes referred to as "cards"), to mimic an app or can even run embedded within an app. 
+**Rich user controls** are common UI controls such as buttons, images, carousels, and menus that the bot presents to the user and the user engages with to communicate choice and intent. 
+A bot can use a collection of UI controls to mimic an app or can even run embedded within an app. 
 When a bot is embedded within an app or website, it can represent virtually any UI control by leveraging the capabilities of the app that is hosting it. 
 
 For decades, application and website developers have relied on UI controls to enable users to interact with their applications. 
@@ -28,14 +28,12 @@ This especially holds true on mobile devices, where clicking is greatly preferre
 
 When designing your bot, do not automatically dismiss common UI elements as not being "smart enough." 
 As discussed [previously](~/bot-design-principles.md#designing-a-bot), your bot should be designed 
-to solve the user's problem in the best/quickest/easiest manner possible. 
-Whether your bot uses artificial intelligence (AI) is not directly relevant to this goal. 
+to solve the user's problem in the best/quickest/easiest manner possible. Avoid the temptation to start by incorporating natural language understanding, as it is often unnecessary and just introduces unjustified complexity. 
 
 > [!TIP]
-> Start by using UI controls that enable the bot to solve the user's problem, 
-> and add other elements later only if/when those controls are no longer sufficient. 
-> Avoid the temptation to start by incorporating natural language understanding, 
-> as it often is not necessary and just introduces unjustified complexity. 
+> Start by using the minimum UI controls that enable the bot to solve the user's problem, 
+> and add other elements later if those controls are no longer sufficient. 
+
 
 ## Text and natural language understanding
 
@@ -47,13 +45,13 @@ Depending on the type of input that the user provides, natural language understa
 
 In some cases, a user may be **answering a very specific question**. 
 For example, if the bot asks, "What is your name?", the user may answer with text that specifies 
-only the name, e.g., "John", or with a sentence, e.g., "My name is John". 
-By asking specific questions, a bot lessens the scope of potential responses that it might reasonably receive, 
-thereby decreasing the complexity of the logic that's needed to parse and understand the response. 
+only the name, "John", or with a sentence, "My name is John". 
+Asking specific questions reduces the scope of potential responses that the bot might reasonably receive, 
+which decreases the complexity of the logic necessary to parse and understand the response. 
 For example, consider the following broad, open-ended question: "How are you feeling?". 
-Understanding the many permutations of potential answers to such a question is a very complex task. 
-In contrast, specific questions such as "Are you feeling pain, yes/no?", 
-"Where are you feeling pain, chest/head/members?", etc. would likely prompt specific answers that a bot 
+Understanding the many possible permutations of potential answers to such a question is a very complex task. 
+In contrast, specific questions such as "Are you feeling pain? yes/no" and
+"Where are you feeling pain? chest/head/arm/leg" would likely prompt more specific answers that a bot 
 can parse and understand without needing to implement natural language understanding. 
 
 > [!TIP]
@@ -65,11 +63,11 @@ For example, a DevOps bot that enables developers to manage virtual machines cou
 specific commands such as "/STOP VM XYZ" or "/START VM XYZ." 
 Designing a bot to accept specific commands like this makes for a good user experience, as the syntax is easy 
 to learn and the expected outcome of each command is clear. 
-Additionally, the bot will not require natural language understanding capabilities, since the user's input can be easily parsed by using regular expressions. 
+Additionally, the bot will not require natural language understanding capabilities, since the user's input can be easily parsed using regular expressions. 
 
 > [!TIP]
 > Designing a bot to require specific commands from the user can often provide a good user experience while 
-> also eliminating the need for natural language understanding capabilities (thereby reducing bot complexity).
+> also eliminating the need for natural language understanding capability.
 
   
 In the case of a *knowledge base* bot or *questions and answers* bot, a user may be **asking general questions**. 
@@ -81,8 +79,8 @@ For more information, see [Knowledge base bots](bot-design-pattern-knowledge-bas
 
 > [!TIP]
 > If you are designing a bot that will answer questions based on structured or unstructured data from 
-> databases, web pages or documents, consider the technologies that are designed specifically to address this 
-> scenario, rather than attempting to solve the problem with natural language understanding.
+> databases, web pages, or documents, consider using technologies that are designed specifically to address this 
+> scenario rather than attempting to solve the problem with natural language understanding.
 
   
 In other scenarios, a user may be **typing simple requests based on natural language**. 

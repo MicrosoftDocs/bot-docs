@@ -15,12 +15,10 @@ ROBOTS: Index, Follow
 # Intercept messages
 
 [!include[Introduction to message logging](~/includes/snippet-message-logging-intro.md)]
-This article describes how to intercept messages that are exchanged between user and bot by using the Bot Builder SDK for Node.js. 
 
-## Intercept messages
+## Example
 
-The following code sample shows how to intercept messages that are exchanged between user and bot, 
-by using the concept of **middleware** in the Bot Builder SDK for Node.js. 
+The following code sample shows how to intercept messages that are exchanged between user and bot by using the concept of **middleware** in the Bot Builder SDK for Node.js. 
 
 First, configure the handler for incoming messages (`botbuilder`) and for outgoing messages (`send`).
 
@@ -37,7 +35,7 @@ bot.use({
 })
 ```
 
-Then, implement each of the handlers to define the action to take for each message that is intercepted:
+Then, implement each of the handlers to define the action to take for each message that is intercepted.
 
 ```javascript
 module.exports = {

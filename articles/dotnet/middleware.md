@@ -1,6 +1,6 @@
 ---
 title: Intercept messages | Microsoft Docs
-description: Learn how to create logs or other records by intercepting and processing information exchanges using the Bot Builder SDK for .NET.
+description: Learn how to intercept information exchanges between user and bot using the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
@@ -22,14 +22,11 @@ ROBOTS: Index, Follow
 -->
 
 [!include[Introducton to message logging](~/includes/snippet-message-logging-intro.md)]
-This article describes how to intercept messages that are exchanged between user and bot by using the Bot Builder SDK for .NET. 
 
-## Intercept messages
+The following code sample shows how to intercept messages that are exchanged between user and bot 
+using the concept of **middleware** in the Bot Builder SDK for .NET. 
 
-The following code sample shows how to intercept messages that are exchanged between user and bot, 
-by using the concept of **middleware** in the Bot Builder SDK for .NET. 
-
-First, create a `DebugActivityLogger` class and define a `LogAsync` method that specifies the action to take for each message that is intercepted. 
+Create a `DebugActivityLogger` class and define a `LogAsync` method to specify what action is taken for each intercepted message. This example just prints some information about each message.
 
 ```cs
 public class DebugActivityLogger : IActivityLogger
@@ -41,7 +38,7 @@ public class DebugActivityLogger : IActivityLogger
 }
 ```
 
-Then, add the following code to `Global.asax.cs`. 
+Then add the following code to `Global.asax.cs`.  Every message that is exchanged between user and bot in either direction will now trigger the `LogAsync` method in the `DebugActivityLogger` class. 
 
 ```cs
 	public class WebApiApplication : System.Web.HttpApplication
@@ -57,10 +54,7 @@ Then, add the following code to `Global.asax.cs`.
     }
 ```
 
-Now, every message that is exchanged between user and bot (in either direction) will trigger the 
-`LogAsync` method in the `DebugActivityLogger` class. 
-In this example, we're simply printing some information about each message, but you can 
-update the `LogAsync` method as necessary to define the actions that you want to take for each message. 
+
 
 ## Additional resources
 

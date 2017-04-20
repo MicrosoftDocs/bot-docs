@@ -13,14 +13,11 @@ ROBOTS: Index, Follow
 ---
 # Respond to user messages
 
-This article teaches you the basics of how to start responding to user messages in your bot.
+The simplest way to start sending and receiving messages is by using the default message handler. 
 
 ## Use the default message handler
-
-The simplest way to start sending and receiving messages is by using the default message handler. 
-To do this, create a new [UniversalBot][UniversalBot] with a function to handle the messages received from a user, 
+Create a new [UniversalBot][UniversalBot] with a function to handle the messages received from a user 
 and pass this object to your [ChatConnector][ChatConnector].
-
 
 ```javascript
 var restify = require('restify');
@@ -55,7 +52,7 @@ For details about the template syntax, refer to the documentation for the [sprin
 
 ## Next steps
 
-* **Message handlers** - For a bot that's more complex that the previous example, you may want to use different forms of message handlers. You can add an *action* to a dialog to listen for user input as it occurs. See [Listen for messages using actions](global-handlers.md) for information on using actions in your bot. Another form is a *waterfall*, which is a common way to guide the user through a series of steps or prompt the user with a series of questions. See [Ask questions](prompts.md) for information on waterfalls.
+* **Message handlers** - For a bot that's more complex that the previous example, you may want to use different forms of message handlers. You can add an *action* to a dialog to listen for user input as it occurs. See [Listen for messages using actions](global-handlers.md) for information on using actions in your bot. Another form is a *waterfall*, which is a common way to guide the user through a series of steps or prompt the user with a series of questions before taking action. See [Ask questions](prompts.md) for information on waterfalls.
 * **Attachments and cards** - The contents of messages aren't limited to text strings. Your bot can [send and receive attachments][SendAttachments], as well as present the user with [rich cards][SendCardWithButtons] that contain images and buttons.
 
 

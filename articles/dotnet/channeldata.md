@@ -14,12 +14,11 @@ ROBOTS: Index, Follow
 
 # Implement channel-specific functionality
 
-By using the `Activity` object's `ChannelData` property 
-to pass native metadata to a channel, 
-you can implement channel-specific functionality that is not possible to achieve
-by using [message text and attachments](~/dotnet/create-messages.md) alone. 
-This article describes how to use a message activity's `ChannelData` property to implement this 
-channel-specific functionality:
+Bots are not limited to communicating with [message text and attachments](~/dotnet/create-messages.md). 
+ 
+The value of connecting a communication channel is access to the rich functionality it offers. A bot can tell Telegram to send a sticker, tell Kik to send a message, or tell Office365 to send an email. 
+
+To tell the channel what to do, pass the required metadata in the `ChannelData` property of the `Activity` object.
 
 | Channel | Functionality |
 |----|----|
@@ -70,7 +69,7 @@ set the `Activity` object's `ChannelData` property to a JSON object that specifi
 
 > [!NOTE]
 > To support buttons in Slack messages, you must enable **Interactive Messages** when you 
-> [configure your bot](~/portal-configure-channels.md) for the Slack channel.
+> [connect your bot](~/portal-configure-channels.md) to the Slack channel.
 
 This snippet shows an example of the `channelData` property for a custom Slack message.
 

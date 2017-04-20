@@ -1,6 +1,6 @@
 ---
 title: Add rich card attachments to messages | Microsoft Docs
-description: Learn how to add rich cards to enhance and expand message capability using the Bot Builder SDK for .NET.
+description: Learn how to add rich cards to enhance and expand message capability using the Bot Framework Connector service and the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
@@ -14,12 +14,9 @@ ROBOTS: Index, Follow
 
 # Add rich card attachments to messages
 
-A message exchange between user and bot can contain rich cards that are rendered as a list or carousel. 
-Within an `Activity` object, the `Attachments` property contains an array of `Attachment` objects 
-that represent the rich cards (and [media attachments](~/dotnet/add-media-attachments.md)) within the message. 
+A message exchange between user and bot can contain one or more rich cards rendered as a list or carousel. 
 
-This article describes how to add rich cards to messages using the Bot Framework Connector service via the 
-Bot Builder SDK for .NET. 
+The `Attachments` property of the `Activity` object contains an array of `Attachment` objects that represent the rich cards and [media attachments](~/dotnet/add-media-attachments.md) within the message. 
 
 > [!NOTE]
 > For information about how to add media attachments to messages, see 
@@ -46,7 +43,38 @@ The Bot Framework currently supports seven types of rich cards:
 > To display multiple rich cards in carousel format, set the activity's `AttachmentLayout` property to "carousel". 
 > If the channel does not support carousel format, it will display the rich cards in list format, even if the `AttachmentLayout` property specifies "carousel".
 
-## Add a Hero card to a message
+## Process events within rich cards
+
+Define `CardAction` objects to specify what should happen when the user clicks a button or taps a section of the card. 
+Each `CardAction` object contains these properties:
+
+| Property | Type | Description | 
+|----|----|----|
+| Type | string | type of action (one of the values specified in the table below) |
+| Title | string | title of the button |
+| Image | string | image URL for the button |
+| Value | string | value needed to perform the specified type of action |
+
+This table lists the valid values for `CardAction.Type` and describes 
+the expected contents of `CardAction.Value` for each type:
+
+| CardAction.Type | CardAction.Value | 
+|----|----|
+| openUrl | URL to be opened in the built-in browser |
+| imBack | Text of the message to send to the bot (from the user who clicked the button or tapped the card). This message (from user to bot) will be visible to all conversation participants via the client application that is hosting the conversation. |
+| postBack | Text of the message to send to the bot (from the user who clicked the button or tapped the card). This message will not be displayed by the client application that is hosting the conversation. |
+| call | Destination for a phone call in this format: **tel:123123123123** |
+| playAudio | URL of audio to be played |
+| playVideo | URL of video to be played |
+| showImage | URL of image to be displayed |
+| downloadFile | URL of file to be downloaded |
+| signin | URL of OAuth flow to be initiated |
+
+## Examples
+
+How to create buttons within different kinds of rich cards with the `CardAction` object. 
+
+### Add a Hero card
 
 The Hero card typically contains a single large image, one or more buttons, and text. 
 
@@ -54,7 +82,7 @@ This code example shows how to create a reply message that contains three Hero c
 
 [!code-csharp[Add HeroCard attachment](~/includes/code/dotnet-add-attachments.cs#addHeroCardAttachment)]
 
-## Add a Thumbnail card to a message
+### Add a Thumbnail card to a message
 
 The Thumbnail card typically contains a single thumbnail image, one or more buttons, and text. 
 
@@ -79,34 +107,6 @@ It typically contains text and one or more buttons that the user can click to in
 This code example shows how to create a reply message that contains a Sign-in card:
 
 [!code-csharp[Add SignInCard attachment](~/includes/code/dotnet-add-attachments.cs#addSignInCardAttachment)]
-
-## Process events within rich cards
-
-The code examples above show how to create buttons within rich cards by using the `CardAction` object. 
-By using card actions, you can specify the action that occurs whenever the user clicks a button or taps a 
-section of the card. Each `CardAction` object contains these properties:
-
-| Property | Type | Description | 
-|----|----|----|
-| Type | string | type of action (one of the values specified in the table below) |
-| Title | string | title of the button |
-| Image | string | image URL for the button |
-| Value | string | value needed to perform the specified type of action |
-
-This table lists the valid values for `CardAction.Type` and describes 
-the expected contents of `CardAction.Value` for each type:
-
-| CardAction.Type | CardAction.Value | 
-|----|----|
-| openUrl | URL to be opened in the built-in browser |
-| imBack | Text of the message to send to the bot (from the user who clicked the button or tapped the card). This message (from user to bot) will be visible to all conversation participants via the client application that is hosting the conversation. |
-| postBack | Text of the message to send to the bot (from the user who clicked the button or tapped the card). This message will not be displayed by the client application that is hosting the conversation. |
-| call | Destination for a phone call in this format: **tel:123123123123** |
-| playAudio | URL of audio to be played |
-| playVideo | URL of video to be played |
-| showImage | URL of image to be displayed |
-| downloadFile | URL of file to be downloaded |
-| signin | URL of OAuth flow to be initiated |
 
 ## Additional resources
 

@@ -41,7 +41,7 @@ Your bot didn’t tell them what it can do, so how can they possibly know?
 
 Menus provide a simple solution to that problem. 
 First, by listing the available options, your bot is conveying its capabilities to the user. 
-Second, menus spare the user from having to type too much. They can simply click, which is always faster than typing. 
+Second, menus spare the user from having to type too much. They can simply click.
 Finally, the use of menus can significantly simplify your natural language models by narrowing the scope of input that the bot could receive from the user. 
 
 > [!TIP]

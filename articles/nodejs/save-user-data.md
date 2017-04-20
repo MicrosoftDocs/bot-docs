@@ -19,12 +19,10 @@ ROBOTS: Index, Follow
 > [!div class="op_single_selector"]
 > * [.NET](~/dotnet/howto-save-user-data.md)
 > * [Node.js](~/nodejs/save-user-data.md)
->
+
 -->
 
-
-
-The Bot Framework SDK supports a storage system which it uses to track information like which dialog is active for a conversation,
+The Bot Framework SDK supports a storage system which it uses to track information such as which dialog is active for a conversation,
 which step of a dialog is active, and data that the bot remembers about the user. 
 
 The [ChatConnector][ChatConnector] class automatically provides an implementation of this storage system, that uses Bot Framework Service to store this data for you. 
@@ -34,7 +32,7 @@ You can access stored data using [session.userData][session_userData]. <!-- todo
 
 The following example prompts the user for their name and then saves it in [session.userData][session_userData].  
 
-The message handler takes a next() function as an argument which we use to manually advance to the next step in the sequence of message handlers.
+The message handler takes a `next()` function as an argument which we use to manually advance to the next step in the sequence of message handlers.
 This lets us check if we know the user's name and skips to the greeting if we do.
 
 
@@ -67,8 +65,6 @@ var bot = new builder.UniversalBot(connector, [
 
 
 ## Next steps
-
-In this article, we discussed how to save user information by using the Bot Builder SDK for Node.js. 
 
 To learn more, see:
 

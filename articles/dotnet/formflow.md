@@ -30,7 +30,7 @@ dialogs. For example, a FormFlow dialog may guide the user through the process o
 This article describes how to create a bot that uses the basic features of FormFlow to 
 collect information from a user.
 
-##<a id="forms-and-fields"></a>Forms and fields
+## <a id="forms-and-fields"></a>Forms and fields
 
 To create a bot using FormFlow, you must specify the information that the bot needs to collect from the user. 
 For example, if the bot's objective is to obtain a user's sandwich order, then you must define a form 

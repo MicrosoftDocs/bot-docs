@@ -23,17 +23,15 @@ ROBOTS: Index, Follow
 
 [!include[Introduction to proactive messages - part 1](~/includes/snippet-proactive-messages-intro-1.md)] 
 
-This article describes how to send proactive messages by using the Bot Builder SDK for .NET. 
-
 ## Types of proactive messages 
 
 [!include[Introduction to proactive messages - part 2](~/includes/snippet-proactive-messages-intro-2.md)] 
 
 ## Send an ad hoc proactive message
 
-The following code samples show how to send an ad hoc proactive message by using the Bot Builder SDK for .NET.
+The following code samples show how to send an ad hoc proactive message with the Bot Builder SDK for .NET.
 
-To be able to send an ad hoc message to a user, the bot must first collect (and save) information about the user from the current conversation. 
+To be able to send an ad hoc message to a user, the bot must first collect and store some information about the user from the current conversation. 
 
 ```cs
 public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> result)
@@ -57,13 +55,11 @@ public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitabl
     context.Wait(MessageReceivedAsync);
 }
 ```
+[!NOTE]
+> For simplicity, this example does not specify how to store the user data. It does not matter how the data is
+> stored as long as the bot can retrieve it later.
 
-> [!NOTE]
-> For simplicity, this example does not specify how to store the user data. 
-> The bot can store the user data in any manner, so long as it can be accessed later when the bot is ready to send the ad hoc message.
-
-After the bot has collected information about the user, it can send an ad hoc proactive message to the user at any time. 
-To do so, it simply retrieves the user data that it stored previously, constructs the message, and sends it. 
+Now that the data has been stored, the bot can simply retrieve the data, construct the ad hoc proactive message, and send it. This kind of message can be initiated from asynchronous triggers such as http requests, timers, queues, or from anywhere else that the developer chooses.
 
 ```cs
 // Use the data stored previously to create the required objects.
@@ -96,17 +92,14 @@ await connector.Conversations.SendToConversationAsync((Activity)message);
 
 > [!NOTE]
 > If the bot specifies a conversation ID that was stored previously, the message will likely be delivered to the user in the existing conversation window on the client. 
-> If the bot generates a new conversation ID, the message will be delivered to the user in a new conversation window on the client (as long as the client allows multiple conversation windows). 
+> If the bot generates a new conversation ID, the message will be delivered to the user in a new conversation window on the client provided that the client supports multiple conversation windows. 
 
-> [!TIP]
-> An ad hoc proactive message can be initiated like from 
-> asynchronous triggers such as http requests, timers, queues or from anywhere else that the developer chooses.
 
 ## Send a dialog-based proactive message
 
 The following code samples show how to send a dialog-based proactive message by using the Bot Builder SDK for .NET.
 
-To be able to send a dialog-based proactive message to a user, the bot must first collect (and save) information from the current conversation. 
+To be able to send a dialog-based proactive message to a user, the bot must first collect and save information from the current conversation. 
 
 ```cs
 public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> result)
@@ -121,8 +114,8 @@ public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitabl
 }
 ```
 
-When it is time to send the message, the bot creates a new dialog, thereby adding this dialog to the top of the dialog stack and giving it control of the conversation. 
-The new dialog will deliver the proactive message and will also decide when to close and return control to the prior dialog in the stack. 
+When it is time to send the message, the bot creates a new dialog and adds it to the top of the dialog stack. The new dialog takes control of the conversation, delivers the proactive message, closes, and then returns control to the previous dialog in the stack. 
+
 The resumption cookie provides a simple way of serializing and deserializing the entire message received from the user.
 
 ```cs
@@ -151,9 +144,7 @@ public static async Task Resume()
     }
 }
 ```
-
-The SurveyDialog controls the conversation until it finishes. 
-Then, it closes (by calling `context.Done`), thereby returning control back to the previous dialog. 
+The SurveyDialog controls the conversation until it finishes. When its task is finished, it calls `context.Done` and closes, returning control to the previous dialog. 
 
 ```cs
 [Serializable]

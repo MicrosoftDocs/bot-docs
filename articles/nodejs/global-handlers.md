@@ -6,7 +6,6 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
 ms.date: 02/21/2017
 ms.reviewer: 
 ROBOTS: Index, Follow
@@ -26,17 +25,13 @@ The handlers will examine user input for the keywords that you specify, such as 
 <!-- TODO: The following note might only be true for trigger actions, not sure about other actions -->
 
 > [!NOTE]
-> By defining the logic in actions, you're making it accessible to all dialogs. 
-> Using this approach, individual dialogs and prompts can be made to safely ignore the keywords, if necessary.
-
-
-
-
+> By defining the logic in an **action**, you're making it accessible to all dialogs. 
+> However, individual dialogs and prompts can be configured to safely ignore the keywords when necessary.
 <!-- matches -->
 
 Either user utterances or button clicks can *trigger* an action, which is associated with a [dialog](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html).
 If 'matches' is specifed, the action will listen for the user to say a word or a phrase that triggers the action.  The 'matches' method can take a regular expression or the name of a [recognizer][RecognizeIntent].
-Otherwise the action needs to be bound to a button click by using [CardAction.dialogAction()][ClickAction] to trigger the action.
+To bind the action to a button click, use [CardAction.dialogAction()][ClickAction] to trigger the action.
 
 There are five types of actions.
 | Action | Description |
@@ -47,11 +42,10 @@ There are five types of actions.
 [beginDialogAction][beginDialogAction] | Binds an action to the dialog that starts another dialog when it is triggered. |
 [endConversationAction][endConversationAction] | Binds an action to the dialog that ends the conversation with the user when triggered. |
 
-## Triggering a help dialog
+## Trigger a help dialog
 
 With the Bot Builder SDK for Node.js, you can use `triggerAction` to specify the triggers that will cause the 
 invokation of specific dialogs. 
-
 
 For example, the `triggerAction` in the following code sample invokes the **help** dialog 
 if the user's message is "help", thereby adding the **help** dialog to the top of the dialog stack and 
@@ -76,7 +70,6 @@ bot.dialog('help', (session, args, next) => {
 
 Another type of action that can triggered globally is cancellation. In this example, the bot uses a **cancelAction** to end the conversation if the user's message is "cancel".
 
-
 ```javascript
 // Add dialog for creating a list
 bot.dialog('listBuilderDialog', function (session) {
@@ -98,11 +91,10 @@ bot.dialog('listBuilderDialog', function (session) {
 });
 ```
 
-
-## Confirming interruptions
+## Confirm interruptions
 
 By default, when the user says something that triggers a dialog it will automatically interrupt any dialogs that are active. 
-In most cases you’ll find that this is desirable, but they’re may be times where you’re doing something large or complex and you’d like to just confirm that 
+In most cases you’ll find that this is desirable, but there may be times when you need to confirm that 
 canceling the active dialog is what the user wants to do.
 This can be easily accomplished by adding a [confirmPrompt](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.itriggeractionoptions#confirmprompt) 
 option to your triggerAction() or cancelAction(). 
@@ -120,10 +112,7 @@ bot.dialog('buyButtonClick', [ ... waterfall steps ... ])
     });
 
 ```
-
-
-The cancel action's confirmPrompt is used any time the user says “cancel” and the trigger action's confirmPrompt will be used any time another dialog 
-is triggered (including the ‘buyButtonClick’ dialog itself) and attempts to interrupt the dialog. 
+The cancel action's `confirmPrompt` is used any time the user says “cancel”. The trigger action's `confirmPrompt` will be used any time another dialog is triggered, even the `buyButtonClick` dialog itself, and attempts to interrupt the conversation. 
 
 ## Trigger the reload of a dialog
 
@@ -148,11 +137,11 @@ bot.dialog('buyButtonClick', [ ... waterfall steps ... ])
 ```
 ## Start another dialog
 
-From within the scope of a dialog, you can bind an action to the dialog that will start another dialog when it is triggered. The new dialog is pushed onto the stack so it does not automatically end the current task. The current task is continued once the new dialog ends. The built-in prompts will automatically re-prompt the user once this happens but that behavior can be disabled by setting the **promptAfterAction** flag when calling a built-in prompt.
+You can bind an action to a dialog that will start another dialog when it is triggered. The new dialog is pushed onto the stack so it does not automatically end the current task. The current task is continued once the new dialog ends. The built-in prompts will automatically re-prompt the user once this happens but that behavior can be disabled by setting the **promptAfterAction** flag when calling a built-in prompt.
 
 The following example demonstrates how to use **beginDialogAction** to create actions that are
 only in scope when a particular dialog is on the stack. The '/orderPizza' adds
-actions that let the user view their cart and checkout but those actions can 
+actions that let the user view their cart and check out but those actions can 
 only be taken while the user is actually ordering a pizza.
 
 <!-- 
