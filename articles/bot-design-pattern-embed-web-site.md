@@ -19,8 +19,7 @@ to enable users to quickly find information that might otherwise be challenging 
 Or you might embed a bot within a help desk website to act as the first responder to incoming user requests. 
 The bot could independently resolve simple issues and [handoff](~/bot-design-pattern-handoff-human.md) more complex issues to a human agent. 
 
-This article explores integrating bots with websites and 
- the process of using the `backchannel` mechanism to facilitate private communication between a web page and a bot. 
+This article explores integrating bots with websites and the process of using the `backchannel` mechanism to facilitate private communication between a web page and a bot. 
 
 Microsoft provides two different ways to integrate a bot in a website: 
 the Skype web control and an open source web control.
@@ -56,17 +55,14 @@ This capability enables a number of useful scenarios:
 
 [!include[Introduction to backchannel mechanism](~/includes/snippet-backchannel.md)]
 
+## Sample code
+
+The <a href="https://github.com/Microsoft/BotFramework-WebChat" target="_blank">open source web chat control</a> is available via GitHub. For details about how you can implement the backchannel mechanism using open source web chat control and the Bot Builder SDK for Node.js, see [Use the backchannel mechanism](~/nodejs/backchannel.md).
+
 ## Additional resources
 
 - [Direct Line API][directLineAPI]
 - [Activity types](~/dotnet/activities.md)
 - [Use the backchannel mechanism](~/nodejs/backchannel.md)
-
-<!--
-This article covered ways to integrate bots with websites and 
-explored the process of using the `backchannel` mechanism to facilitate private communication between web page and bot. 
-For a detailed walk through of how to use the backchannel mechanism with the 
-open source web chat control with Node.js, see [Use the backchannel mechanism](~/nodejs/backchannel.md). 
--->
 
 [directLineAPI]: https://docs.botframework.com/en-us/restapi/DirectLine3/#navtitle
