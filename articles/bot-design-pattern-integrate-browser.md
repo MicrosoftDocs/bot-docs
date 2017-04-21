@@ -105,6 +105,14 @@ Since AuthBot does not make any assumptions about the channel's capabilities, su
 When the bot [generates the hyperlink](#generate-hyperlink) that the user will click to initiate the website flow, 
 it includes information via querystring parameters in the target URL about the context of the current conversation, such as conversation ID, channel ID, and user ID in the channel. The website can subsequently use this information to read and write state variables for that user or conversation using the Bot Builder SDK or REST APIs. See [step 6](#signal-to-bot) above for an example of how the website 'signals' to the bot that the website flow is complete.
 
+## Sample code
+
+For a complete sample that shows how to send a user from a conversation to the web browser and then resume the conversation again, using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/capability-botToWeb" target="_blank">Bot to Web (Payment bot) sample</a> in GitHub. 
+As described in this article, the <a href="https://github.com/microsoftdx/authbot" target="_blank">AuthBot</a> library enables OAuth flows to be bound to bots that are built using .NET in the Microsoft Bot Framework.
+
+For a complete sample that shows how to send a user from a conversation to the web browser and then resume the conversation again, using the Bot Builder SDK for Node.js, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/capability-botToWeb" target="_blank">Bot to Web (Payment bot) sample</a> in GitHub. 
+The <a href="https://github.com/MicrosoftDX/botauth" target="_blank">BotAuth</a> library enables OAuth flows to be bound to bots that are built using Node.js in the Microsoft Bot Framework.
+
 ## Additional resources
 
 - [Dialogs](~/dotnet/dialogs.md)
@@ -113,9 +121,3 @@ it includes information via querystring parameters in the target URL about the c
 - [Add smarts to your bot with Microsoft Cognitive Services](~/intelligent-bots.md)
 - [Add language understanding to your bot](~/cognitive-services-add-bot-language.md)
 
-<!--
-This article explored the process of facilitating a user's transition from bot to web browser, and back again. 
-To see sample code for bots that implement this flow, review the following resources: 
-
-> [!NOTE]
-> To do: Add links to the C# and Node.js code samples that Mat refers to.-->

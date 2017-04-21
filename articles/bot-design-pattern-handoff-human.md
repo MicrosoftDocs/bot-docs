@@ -91,6 +91,10 @@ Likewise, it receives messages from the agent and sends those messages to the us
 > between user and agent. For example, the bot may decide which response is appropriate 
 > and simply ask the agent for confirmation to proceed.
 
+## Sample code
+
+For a complete sample that shows how to hand off conversations from bot to human using the Bot Builder SDK for Node.js, see the <a href="https://github.com/palindromed/Bot-HandOff" target="_blank">Bot-HandOff sample</a> in GitHub.
+
 ## Additional resources
 
 - [Dialogs](~/dotnet/dialogs.md)
@@ -98,12 +102,3 @@ Likewise, it receives messages from the agent and sends those messages to the us
 - [Manage conversation flow using Node.js](~/nodejs/manage-conversation-flow.md)
 - [Add smarts to your bot with Microsoft Cognitive Services](~/intelligent-bots.md)
 - [Add language understanding to your bot](~/cognitive-services-add-bot-language.md)
-
-<!-- 
-This article discussed the types of scenarios that typically require human involvement, 
-and explored the process of transitioning control of a conversation from bot to human.
-
-To see sample code for bots that implement this handoff, review the following resources: 
-
-> [!NOTE]
-> To do: Add links to the C# and Node.js code samples that Mat refers to.-->

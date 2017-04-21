@@ -204,19 +204,19 @@ you could trigger a [BasicQnAMakerDialog][qnamakerTemplate] to initiate the proc
 > the scores generated across these tools are not directly comparable. 
 > Additionally, LUIS and QnA Maker normalize scores. A certain score may be considered 'good' 
 > in one LUIS model but not so in another model. 
- 
+
+## Sample code
+
+For a complete sample that shows how to create a basic knowledge bot using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/sample-KnowledgeBot" target="_blank">Knowledge Bot sample</a> in GitHub. 
+For a complete samples that show how to create more complex knowledge bots using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples/SearchPoweredBots" target="_blank">Search-powered Bots sample</a> in GitHub.
+
+For a complete sample that shows how to create a basic knowledge bot using the Bot Builder SDK for Node.js, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/sample-knowledgeBot" target="_blank">Knowledge Bot sample</a> in GitHub.
+
 ## Additional resources
 
 - [Add smarts to your bot with Microsoft Cognitive Services](~/intelligent-bots.md)
 - [Add knowledge extraction to your bot](~/cognitive-services-add-bot-knowledge.md)
 - [Add language understanding to your bot](~/cognitive-services-add-bot-language.md)
 - [Add search capabilities to your bot](~/cognitive-services-add-bot-search.md)
-
-<!-- 
-This article explored some common knowledge bot capabilities and discussed related technologies. 
-To see sample code for bots that implement Search, QnA Maker, and LUIS functionality, review the following resources: 
-
-> [!NOTE]
-> To do: Add links to the C# and Node.js code samples that Mat refers to.-->
 
 [qnamakerTemplate]: https://docs.botframework.com/en-us/azure-bot-service/templates/qnamaker/#navtitle

@@ -109,17 +109,16 @@ For example, a developer may choose to add natural language and speech capabilit
 or she may add support for text messages. 
 The company may setup kiosks throughout the building and embed the password-reset bot into that experience.
 
+## Sample code
+
+For a complete sample that shows how to implement simple task automation using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/capability-SimpleTaskAutomation" target="_blank">Simple Task Automation sample</a> in GitHub.
+
+For a complete sample that shows how to implement simple task automation using the Bot Builder SDK for Node.js, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/capability-SimpleTaskAutomation" target="_blank">Simple Task Automation sample</a> in GitHub.
+
 ## Additional resources
 
 - [Dialogs](~/dotnet/dialogs.md)
 - [Manage conversation flow using .NET](~/dotnet/manage-conversation-flow.md)
 - [Manage conversation flow using Node.js](~/nodejs/manage-conversation-flow.md)
-
-<!-- 
-This article explored how a task automation bot can be designed to enable users to complete a specific task or set of tasks. 
-To access the sample code for the password-reset bot described in this article, see: 
-
-> [!NOTE]
-> To do: Add links to the C# and Node.js code samples that Mat refers to.-->
 
 [directLineAPI]: https://docs.botframework.com/en-us/restapi/DirectLine3/#navtitle
