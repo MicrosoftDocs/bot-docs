@@ -13,8 +13,7 @@ ROBOTS: Index, Follow
 
 # Support user keyword responses
 
-<!--
-[!include[Introduction to global message handlers](~/includes/snippet-global-handlers-intro.md)] -->
+<!--[!include[Introduction to global message handlers](~/includes/snippet-global-handlers-intro.md)] -->
 Users commonly attempt to access certain functionality within a bot by using keywords like "help", "cancel", or "start over". 
 This often occurs in the middle of a conversation, when the bot is expecting a different response. 
 By implementing **actions**, you can design your bot to gracefully handle such requests.
@@ -229,15 +228,14 @@ Your bot can also end a conversation by using an [endConversationAction][endConv
 
 The examples in this topic demonstrated how to bind actions to dialogs using regular expressions in a 'matches' clause. See [Recognize intent][RecognizeIntent] to learn how to specify recognizers in a 'matches' clause instead of using regular expressions.
 
+## Sample code
+
+For a complete sample that shows how to implement global message handlers using the Bot Builder SDK for Node.js, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/core-globalMessageHandlers" target="_blank">Global Message Handlers sample</a> in GitHub.
 
 ## Additional resources
 
 - [matches][matches]
 - [Designing conversation flow](~/bot-design-conversation-flow.md)
-
-<!--
-- [reloadAction][reloadAction]
--->
 
 [ClickAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.cardaction#dialogaction
 [EndConversation]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#endconversation

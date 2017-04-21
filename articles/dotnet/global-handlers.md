@@ -95,6 +95,10 @@ protected override async Task PostAsync(IActivity item, string state, Cancellati
 }
 ```
 
+## Sample code
+
+For a complete sample that shows how to implement global message handlers using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-GlobalMessageHandlers" target="_blank">Global Message Handlers sample</a> in GitHub.
+
 ## Additional resources
 
 - [Designing conversation flow](~/bot-design-conversation-flow.md)

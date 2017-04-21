@@ -55,4 +55,6 @@ and every outbound message (from bot to user) will trigger `logOutgoingMessage`.
 In this example, the bot simply prints some information about each message, but you can 
 update `logIncomingMessage` and `logOutgoingMessage` as necessary to define the actions that you want to take for each message. 
 
+## Sample code
 
+For a complete sample that shows how to intercept and log messages using the Bot Builder SDK for Node.js, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/capability-middlewareLogging" target="_blank">Middleware and Logging sample</a> in GitHub.

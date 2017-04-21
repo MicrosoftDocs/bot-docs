@@ -299,6 +299,10 @@ var bot = new builder.UniversalBot(connector, function (session) {
 
 ```
 
+## Sample code
+
+For a complete sample that shows how to manage a conversation by using dialogs in the Bot Builder SDK for Node.js, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/core-basicMultiDialog" target="_blank">Basic Multi-Dialog sample</a> in GitHub.
+
 ## Additional resources
 
 - [Send and receive attachments][SendAttachments]

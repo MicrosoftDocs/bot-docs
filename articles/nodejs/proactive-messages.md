@@ -13,13 +13,6 @@ ROBOTS: Index, Follow
 ---
 # Send proactive messages
 
-<!--
-> [!div class="op_single_selector"]
-> * [.NET](~/dotnet/howto-proactive-messages.md)
-> * [Node.js](~/nodejs/proactive-messages.md)
->
--->
-
 [!include[Introduction to proactive messages - part 1](~/includes/snippet-proactive-messages-intro-1.md)] 
 
 ## Types of proactive messages
@@ -116,6 +109,11 @@ bot.dialog('/survey', [
     }
 ]);
 ```
+
+## Sample code
+
+For a complete sample that shows how to send proactive messages using the Bot Builder SDK for Node.js, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/core-proactiveMessages" target="_blank">Proactive Messages sample</a> in GitHub. 
+Within the Proactive Messages sample, <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/core-proactiveMessages/simpleSendMessage" target="_blank">simpleSendMessage</a> shows how to send an ad-hoc proactive message and <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/core-proactiveMessages/startNewDialog" target="_blank">startNewDialog</a> shows how to send a dialog-based proactive message.
 
 ## Additional resources
 

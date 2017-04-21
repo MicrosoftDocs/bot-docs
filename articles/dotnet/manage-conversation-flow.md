@@ -13,16 +13,9 @@ ROBOTS: Index, Follow
 ---
 # Manage conversation flow with dialogs
 
-<!--
-> [!div class="op_single_selector"]
-> * [.NET](~/dotnet/howto-manage-conversation-flow.md)
-> * [Node.js](~/nodejs/manage-conversation-flow.md)
->
--->
-
 [!include[Dialog flow example](~/includes/snippet-dotnet-manage-conversation-flow-intro.md)]
 
-How to model conversation flow by using [dialogs](~/dotnet/dialogs.md) and the Bot Builder SDK for .NET. 
+This article describes how to model conversation flow by using [dialogs](~/dotnet/dialogs.md) in the Bot Builder SDK for .NET. 
 
 ## Invoke the root dialog
 
@@ -94,6 +87,10 @@ You must end every dialog method with `context.Wait()`, `context.Fail()`, `conte
 or some redirection directive such as `context.Forward()` or `context.Call()`. 
 A dialog method that does not end with one of these will result in an error 
 (because the framework does not know what action to take the next time the user sends a message).
+
+## Sample code 
+
+For a complete sample that shows how to manage a conversation by using dialogs in the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-BasicMultiDialog" target="_blank">Basic Multi-Dialog sample</a> in GitHub. 
 
 ## Additional resources
 

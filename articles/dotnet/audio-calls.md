@@ -163,6 +163,10 @@ private async Task OnRecordCompleted(RecordOutcomeEvent recordOutcomeEvent)
 }
 ```
 
+## Sample code
+
+For a complete sample that shows how to support audio calls with Skype using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/skype-CallingBot" target="_blank">Skype Calling Bot sample</a> in GitHub.
+
 ## Additional resources
 
 - [Builder library][builderLibrary]

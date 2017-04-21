@@ -54,7 +54,9 @@ Then add the following code to `Global.asax.cs`.  Every message that is exchange
     }
 ```
 
+## Sample code 
 
+For a complete sample that shows how to intercept and log messages using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-Middleware" target="_blank">Middleware sample</a> in GitHub. 
 
 ## Additional resources
 
