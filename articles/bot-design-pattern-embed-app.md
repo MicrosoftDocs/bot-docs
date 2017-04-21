@@ -76,19 +76,14 @@ that renders the embedded web view with the web chat control.
 
 ![Back-channel](~/media/designing-bots/patterns/xamarin-apps.png)
 
+## Sample code
+
+For a complete sample that shows how to create the cross-platform mobile app that runs a bot (as described in this article), see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/capability-BotInApps" target="_blank">Bot in Apps sample</a> in GitHub.
+
 ## Additional resources
 
 - [Direct Line API][directLineAPI]
 - <a href="https://www.microsoft.com/cognitive-services/" target="_blank">Microsoft Cognitive Services</a>
 - [Add smarts to your bot with Microsoft Cognitive Services](~/intelligent-bots.md)
 
-<!--
-This article covered ways to integrate bots with apps and 
-explored the process of creating a cross-platform mobile app that runs a bot.
-To see the complete sample code (and step-by-step implementation guidance) for the example discussed above, 
-review the following resources: 
-
-> [!NOTE]
-> To do: Add links to the code sample (and readme) that Mat refers to.-->
- 
 [directLineAPI]: https://docs.botframework.com/en-us/restapi/DirectLine3/#navtitle
