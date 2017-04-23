@@ -5,12 +5,8 @@ author: DeniseMak
 ms.author: v-demak
 manager: rstand
 ms.topic: article
-
 ms.prod: bot-framework
-
 ms.date: 02/21/2017
-ms.reviewer:
-
 ROBOTS: Index, Follow
 ---
 # Bot Framework Troubleshooting Guide
