@@ -1,11 +1,14 @@
 ---
 title: Add media attachments to messages | Microsoft Docs
-description: Learn how to add media attachments to messages using the Bot Framework Connector service and the Bot Builder SDK for .NET.
+description: Learn how to add media attachments to messages using the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
+ms.date: 03/13/2017
+ms.reviewer: rstand
+ROBOTS: Index, Follow
 ---
 
 # Add media attachments to messages
