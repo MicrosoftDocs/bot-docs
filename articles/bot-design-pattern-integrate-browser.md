@@ -107,11 +107,7 @@ it includes information via querystring parameters in the target URL about the c
 
 ## Sample code
 
-For a complete sample that shows how to send a user from a conversation to the web browser and then resume the conversation again, using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/capability-botToWeb" target="_blank">Bot to Web (Payment bot) sample</a> in GitHub. 
-As described in this article, the <a href="https://github.com/microsoftdx/authbot" target="_blank">AuthBot</a> library enables OAuth flows to be bound to bots that are built using .NET in the Microsoft Bot Framework.
-
-For a complete sample that shows how to send a user from a conversation to the web browser and then resume the conversation again, using the Bot Builder SDK for Node.js, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/capability-botToWeb" target="_blank">Bot to Web (Payment bot) sample</a> in GitHub. 
-The <a href="https://github.com/MicrosoftDX/botauth" target="_blank">BotAuth</a> library enables OAuth flows to be bound to bots that are built using Node.js in the Microsoft Bot Framework.
+As described in this article, the <a href="https://github.com/microsoftdx/authbot" target="_blank">AuthBot</a> library enables OAuth flows to be bound to bots that are built using .NET in the Microsoft Bot Framework. The <a href="https://github.com/MicrosoftDX/botauth" target="_blank">BotAuth</a> library enables OAuth flows to be bound to bots that are built using Node.js in the Microsoft Bot Framework.
 
 ## Additional resources
 
