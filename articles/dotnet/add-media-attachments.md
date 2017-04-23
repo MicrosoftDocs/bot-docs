@@ -1,34 +1,29 @@
 ---
 title: Add media attachments to messages | Microsoft Docs
-description: Learn how to add media attachments to messages using the Bot Framework Connector service via the 
-Bot Builder SDK for .NET. 
+description: Learn how to add media attachments to messages using the Bot Framework Connector service and the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 03/13/2017
-ms.reviewer:
-ROBOTS: Index, Follow
 ---
 
 # Add media attachments to messages
 
-A message exchange between user and bot can contain media attachments (e.g., image, video, audio, file). 
+A message exchange between user and bot can contain media attachments (e.g., image, video, audio, file).
 
-The `Attachments` property of the `Activity` object contains an array of `Attachment` objects 
-that represent the media attachments and [rich cards](~/dotnet/add-rich-card-attachments.md) attached to the message. 
+The `Attachments` property of the `Activity` object contains an array of `Attachment` objects
+that represent the media attachments and [rich cards](~/dotnet/add-rich-card-attachments.md) attached to the message.
 
 > [!NOTE]
-> For information about how to add rich cards to messages, see 
+> For information about how to add rich cards to messages, see
 > [Add rich cards to messages](~/dotnet/add-rich-card-attachments.md).
 
 ## Add a media attachment  
 Create an `Attachment` object for the `message` activity.
-Set the `ContentType`, `ContentUrl`, and `Name` properties. 
+Set the `ContentType`, `ContentUrl`, and `Name` properties.
 
-If an attachment is image, audio, or video, the Connector service will communicate attachment data to the channel in a way that enables the [channel](~/dotnet/channeldata.md) to render that attachment within the conversation. 
+If an attachment is image, audio, or video, the Connector service will communicate attachment data to the channel in a way that enables the [channel](~/dotnet/channeldata.md) to render that attachment within the conversation.
 If the attachment is a file, the file URL will be rendered as a hyperlink within the conversation.
 
 ## Example
