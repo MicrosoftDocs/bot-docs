@@ -27,7 +27,7 @@ description:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/bot-framework/bot-framework-overview-introduction.svg" alt="" />
+                                                <img src="/media/hubs/botframework/bot-framework-overview-introduction.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -46,7 +46,7 @@ description:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/bot-framework/bot-framework-overview-get-started.svg" alt="" />
+                                                <img src="/media/hubs/botframework/bot-framework-overview-get-started.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -65,7 +65,7 @@ description:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/bot-framework/bot-framework-overview-concepts.svg" alt="" />
+                                                <img src="/media/hubs/botframework/bot-framework-overview-concepts.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -84,7 +84,7 @@ description:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/bot-framework/bot-framework-overview-plan.svg" alt="" />
+                                                <img src="/media/hubs/botframework/bot-framework-overview-plan.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -108,7 +108,7 @@ description:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/bot-framework/bot-framework-developing-c-sharp.svg" alt="" />
+                                                <img src="/media/hubs/botframework/bot-framework-developing-c-sharp.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -127,7 +127,7 @@ description:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/bot-framework/bot-framework-developing-node.svg" alt="" />
+                                                <img src="/media/hubs/botframework/bot-framework-developing-node.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -146,7 +146,7 @@ description:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/bot-framework/bot-framework-developing-azure.svg" alt="" />
+                                                <img src="/media/hubs/botframework/bot-framework-developing-azure.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -165,7 +165,7 @@ description:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/bot-framework/bot-framework-developing-publish.svg" alt="" />
+                                                <img src="/media/hubs/botframework/bot-framework-developing-publish.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -184,7 +184,7 @@ description:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/bot-framework/bot-framework-developing-reference.svg" alt="" />
+                                                <img src="/media/hubs/botframework/bot-framework-developing-reference.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -208,7 +208,7 @@ description:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/bot-framework/bot-framework-intelligence-smarter.svg" alt="" />
+                                                <img src="/media/hubs/botframework/bot-framework-intelligence-smarter.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -227,7 +227,7 @@ description:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/bot-framework/bot-framework-intelligence-language-understanding.svg" alt="" />
+                                                <img src="/media/hubs/botframework/bot-framework-intelligence-language-understanding.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -246,7 +246,7 @@ description:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/bot-framework/bot-framework-intelligence-vision.svg" alt="" />
+                                                <img src="/media/hubs/botframework/bot-framework-intelligence-vision.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -265,7 +265,7 @@ description:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/bot-framework/bot-framework-intelligence-speech.svg" alt="" />
+                                                <img src="/media/hubs/botframework/bot-framework-intelligence-speech.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -284,7 +284,7 @@ description:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/bot-framework/bot-framework-intelligence-knowledge.svg" alt="" />
+                                                <img src="/media/hubs/botframework/bot-framework-intelligence-knowledge.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -303,7 +303,7 @@ description:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/bot-framework/bot-framework-intelligence-search.svg" alt="" />
+                                                <img src="/media/hubs/botframework/bot-framework-intelligence-search.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -322,7 +322,7 @@ description:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/bot-framework/bot-framework-intelligence-location.svg" alt="" />
+                                                <img src="/media/hubs/botframework/bot-framework-intelligence-location.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -346,7 +346,7 @@ description:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/bot-framework/bot-framework-resources-sdk-tools.svg" alt="" />
+                                                <img src="/media/hubs/botframework/bot-framework-resources-sdk-tools.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -365,7 +365,7 @@ description:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/bot-framework/bot-framework-overview-emulator.svg" alt="" />
+                                                <img src="/media/hubs/botframework/bot-framework-overview-emulator.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -384,7 +384,7 @@ description:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/bot-framework/bot-framework-overview-troubleshooting.svg" alt="" />
+                                                <img src="/media/hubs/botframework/bot-framework-overview-troubleshooting.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
