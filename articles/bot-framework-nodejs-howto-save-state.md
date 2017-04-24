@@ -5,7 +5,7 @@ author: DeniseMak
 ms.author: v-demak
 manager: rstand
 ms.topic: develop-article
-ms.prod: botframework
+ms.prod: bot-framework
 ms.service: Bot Builder
 ms.date: 02/24/2017
 ms.reviewer: rstand
