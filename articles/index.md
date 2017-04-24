@@ -21,13 +21,13 @@ description:
                     <a href="#overview">Overview</a>
                     <ul id="overview" class="cardsC">
                         <li>
-                            <a href="/botframework/framework-overview">
+                            <a href="/bot-framework/framework-overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/botframework/bot-framework-overview-introduction.svg" alt="" />
+                                                <img src="/media/hubs/bot-framework/bot-framework-overview-introduction.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -40,13 +40,13 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/bot-builder-overview-getstarted">
+                            <a href="/bot-framework/bot-builder-overview-getstarted">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/botframework/bot-framework-overview-get-started.svg" alt="" />
+                                                <img src="/media/hubs/bot-framework/bot-framework-overview-get-started.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -59,13 +59,13 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/overview-how-bot-framework-works">
+                            <a href="/bot-framework/overview-how-bot-framework-works">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/botframework/bot-framework-overview-concepts.svg" alt="" />
+                                                <img src="/media/hubs/bot-framework/bot-framework-overview-concepts.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -78,13 +78,13 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/bot-design-principles">
+                            <a href="/bot-framework/bot-design-principles">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/botframework/bot-framework-overview-plan.svg" alt="" />
+                                                <img src="/media/hubs/bot-framework/bot-framework-overview-plan.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -102,13 +102,13 @@ description:
                     <a href="#developing">Developing Bots</a>
                     <ul id="developing" class="cardsC">
                         <li>
-                            <a href="/botframework/dotnet/">
+                            <a href="/bot-framework/dotnet/">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/botframework/bot-framework-developing-c-sharp.svg" alt="" />
+                                                <img src="/media/hubs/bot-framework/bot-framework-developing-c-sharp.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -121,13 +121,13 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/nodejs/">
+                            <a href="/bot-framework/nodejs/">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/botframework/bot-framework-developing-node.svg" alt="" />
+                                                <img src="/media/hubs/bot-framework/bot-framework-developing-node.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -140,13 +140,13 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/azure">
+                            <a href="/bot-framework/azure">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/botframework/bot-framework-developing-azure.svg" alt="" />
+                                                <img src="/media/hubs/bot-framework/bot-framework-developing-azure.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -159,13 +159,13 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/publish-bot-overview">
+                            <a href="/bot-framework/publish-bot-overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/botframework/bot-framework-developing-publish.svg" alt="" />
+                                                <img src="/media/hubs/bot-framework/bot-framework-developing-publish.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -178,13 +178,13 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/sdk-reference-overview">
+                            <a href="/bot-framework/sdk-reference-overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/botframework/bot-framework-developing-reference.svg" alt="" />
+                                                <img src="/media/hubs/bot-framework/bot-framework-developing-reference.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -202,13 +202,13 @@ description:
                     <a href="#intelligence">Intelligence</a>
                     <ul id="intelligence" class="cardsC">
                         <li>
-                            <a href="/botframework/intelligent-bots">
+                            <a href="/bot-framework/intelligent-bots">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/botframework/bot-framework-intelligence-smarter.svg" alt="" />
+                                                <img src="/media/hubs/bot-framework/bot-framework-intelligence-smarter.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -221,13 +221,13 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/cognitive-services-add-bot-language">
+                            <a href="/bot-framework/cognitive-services-add-bot-language">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/botframework/bot-framework-intelligence-language-understanding.svg" alt="" />
+                                                <img src="/media/hubs/bot-framework/bot-framework-intelligence-language-understanding.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -240,13 +240,13 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/cognitive-services-add-bot-vision">
+                            <a href="/bot-framework/cognitive-services-add-bot-vision">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/botframework/bot-framework-intelligence-vision.svg" alt="" />
+                                                <img src="/media/hubs/bot-framework/bot-framework-intelligence-vision.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -259,13 +259,13 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/cognitive-services-add-bot-speech">
+                            <a href="/bot-framework/cognitive-services-add-bot-speech">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/botframework/bot-framework-intelligence-speech.svg" alt="" />
+                                                <img src="/media/hubs/bot-framework/bot-framework-intelligence-speech.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -278,13 +278,13 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/cognitive-services-add-bot-knowledge">
+                            <a href="/bot-framework/cognitive-services-add-bot-knowledge">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/botframework/bot-framework-intelligence-knowledge.svg" alt="" />
+                                                <img src="/media/hubs/bot-framework/bot-framework-intelligence-knowledge.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -297,13 +297,13 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/cognitive-services-add-bot-search">
+                            <a href="/bot-framework/cognitive-services-add-bot-search">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/botframework/bot-framework-intelligence-search.svg" alt="" />
+                                                <img src="/media/hubs/bot-framework/bot-framework-intelligence-search.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -316,13 +316,13 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/cognitive-services-add-bot-location-control">
+                            <a href="/bot-framework/cognitive-services-add-bot-location-control">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/botframework/bot-framework-intelligence-location.svg" alt="" />
+                                                <img src="/media/hubs/bot-framework/bot-framework-intelligence-location.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -340,13 +340,13 @@ description:
                     <a href="#resources">Resources</a>
                     <ul id="resources" class="cardsC">
                         <li>
-                            <a href="/botframework/resources-tools-downloads">
+                            <a href="/bot-framework/resources-tools-downloads">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/botframework/bot-framework-resources-sdk-tools.svg" alt="" />
+                                                <img src="/media/hubs/bot-framework/bot-framework-resources-sdk-tools.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -359,13 +359,13 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/debug-bots-emulator">
+                            <a href="/bot-framework/debug-bots-emulator">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/botframework/bot-framework-overview-emulator.svg" alt="" />
+                                                <img src="/media/hubs/bot-framework/bot-framework-overview-emulator.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -378,13 +378,13 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/botframework/troubleshooting-general-problems">
+                            <a href="/bot-framework/troubleshooting-general-problems">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/botframework/bot-framework-overview-troubleshooting.svg" alt="" />
+                                                <img src="/media/hubs/bot-framework/bot-framework-overview-troubleshooting.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
