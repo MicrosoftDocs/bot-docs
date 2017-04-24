@@ -1,6 +1,6 @@
 ---
-title: Debug a bot that is built using Azure Bot Service | Microsoft Docs
-description: Learn how to debug a bot that is built using Azure Bot Service.
+title: Debug a bot built using Azure Bot Service | Microsoft Docs
+description: Learn how to debug a bot built using Azure Bot Service.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
@@ -11,7 +11,7 @@ ms.reviewer:
 ROBOTS: Index, Follow
 ---
 
-# Debug your bot
+# Debug an Azure Bot Service bot
 
 Azure Bot Service bots are built upon the Azure Functions serverless architecture. When you create a bot using Azure Bot Service, the source code for your bot is initially accessible only via Azure and therefore cannot be debugged locally. However, if you [set up continuous integration](~/azure/azure-bot-service-continuous-integration.md), you can manage the application's files using the integrated development environment (IDE) and source control system of your choice and will be able to debug your bot locally. This article describes how to debug your bot after you have enabled continuous integration.
 
