@@ -3,24 +3,14 @@
     "content": [
       {
         "files": [
-<<<<<<< HEAD
-          "**/**.md", 
-          "**/**.yml", 
-          "dotnet/**.md", 
-=======
           "**/**.md",
           "**/**.yml",
           "dotnet/**.md",
->>>>>>> origin/pristine
           "node/**.md"
         ],
         "exclude": [
           "**/obj/**",
-<<<<<<< HEAD
-          "BotFramework-Docs/**",
-=======
           "bot-framework/**",
->>>>>>> origin/pristine
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
@@ -36,11 +26,7 @@
         ],
         "exclude": [
           "**/obj/**",
-<<<<<<< HEAD
-          "BotFramework-Docs/**",
-=======
           "bot-framework/**",
->>>>>>> origin/pristine
           "~/includes/**"
         ]
       }
@@ -73,10 +59,6 @@
        }
     },
     "template": [],
-<<<<<<< HEAD
-    "dest": "BotFramework-Docs"
-=======
     "dest": "bot-framework"
->>>>>>> origin/pristine
   }
 }

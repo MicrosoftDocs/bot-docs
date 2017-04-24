@@ -2,7 +2,6 @@ log/
 obj/
 _site/
 .optemp/
-<<<<<<< HEAD
 _themes.MSDN.Modern/
 _themes.VS.Modern/
 _themes/
@@ -12,8 +11,6 @@ _samples/
 
 .migrationtemp
 articles/directories.txt
-=======
 _themes*/
 
 .openpublishing.buildcore.ps1
->>>>>>> origin/pristine
