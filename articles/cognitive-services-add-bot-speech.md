@@ -1,27 +1,18 @@
 ---
-title: Add speech recognition | Microsoft Docs
-description: Teach your bot to listen to and process spoken input, convert speech to text, and even identify user voiceprints with the Bot Framework and Cognitive Services.
+title: Add speech recognition to a bot | Microsoft Docs
+description: Enable your bot to listen to and process spoken input, convert speech to text, and even identify user voiceprints with the Bot Framework and Cognitive Services.
 author: RobStand
 ms.author: rstand
-
-
 manager: rstand
-ms.topic: intelligence-speech-article
-
+ms.topic: article
 ms.prod: bot-framework
-
 ms.date: 
 ms.reviewer: rstand
 
 ROBOTS: Index, Follow
 ---
 
-# How to add speech recognition
-
-> [!TIP]
-> You can find detailed documentation, developer guides, and API reference for Cognitive Services on the <a href="https://www.microsoft.com/cognitive-services/en-us/documentation" target="_blank">Cognitive Services documentation site</a>.
-
-## Speech API examples for bots
+# Add speech recognition to a bot
 
 The Speech APIs enable your bots to parse audio and extract useful information from voice input. For example, bots can identify the presence of certain words or access the transcribed text to perform an action. 
 On messaging channels that support voice input, bots can leverage the Speech APIs to recognize what users are saying, rather than relying on text messages. The Speaker Recognition APIs can be used as a means to identify or even authenticate users through their unique voiceprint.
@@ -29,7 +20,7 @@ On messaging channels that support voice input, bots can leverage the Speech API
 > [!IMPORTANT]
 > Before you get started, you must obtain your own subscription key from the Microsoft Cognitive Services site. The <a href="https://www.microsoft.com/cognitive-services/en-us/speech-api/documentation/getstarted/getstartedcsharpdesktop" target="_blank">Getting Started</a> guide for the Speech API describes how to obtain the key and start making calls to the APIs.
 
-### Speech-To-Text example
+## Speech-To-Text example
 
 In this example, you will build a simple bot that leverages the Speech API to perform speech-to-text conversion. This bot receives an audio file and either responds with the transcribed text or provides some interesting information about the audio it received, such as word, character and vowel count. This example will use the [Bot Application .NET template](~/dotnet/bot-builder-dotnet-quickstart.md#prerequisites) as a starting point. Note that this example requires the `Newtonsoft.JSON` package, which can be obtained via <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">NuGet</a>.
 
@@ -303,7 +294,7 @@ public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
 }
 ```
 
-### Speaker recognition example
+## Speaker recognition example
 
 For this example, you will build a bot that leverages the Speaker Recognition API. The code allows you to use voice for authentication scenarios. The bot receives the audio file, compares it against the sender’s voiceprint, and then responds back with an accept or reject decision as well as a confidence score. This example will use the [Bot Application .NET template](~/dotnet/bot-builder-dotnet-quickstart.md#prerequisites) as a starting point. Note that the example requires the `Microsoft.ProjectOxford.SpeakerRecognition` package, which can be obtained via <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">NuGet</a>.
 
@@ -398,3 +389,5 @@ public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
     return response;
 }
 ```
+## Next steps
+You can find detailed documentation about the each Cognitive Services API, including developer guides and API references, by visiting the Microsoft Cognitive Services <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/" target="_blank">documentation site</a> and selecting an API on the left.

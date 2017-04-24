@@ -72,7 +72,7 @@ Finally, click **Connect** to connect the emulator to your bot. After the emulat
 > <a href="https://dev.botframework.com/" target="_blank">Bot Framework Portal</a>. 
 > If you do not know your bot's MSA Password, you can [generate a new password](portal-register-bot.md#maintain).
 
-## Send System Activities
+## Send system activities
 
 You can use the Bot Framework Emulator to emulate specific activities within the context of a conversation, by selecting from the available options under **Conversation** > **Send System Activity** in the emulator's settings menu:
 
@@ -84,7 +84,7 @@ You can use the Bot Framework Emulator to emulate specific activities within the
 * ping 
 * deleteUserData
 
-## Additional Resources
+## Additional resources
 
 To build a simple bot that you can test using the emulator, see:
 

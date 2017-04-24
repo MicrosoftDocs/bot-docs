@@ -1,15 +1,11 @@
 ---
-title: Add image detection | Microsoft Docs
-description: Teach your bot to identify and process information derived from images through various APIs available in the Bot Framework and Cognitive Services.
+title: Add image detection to a bot | Microsoft Docs
+description: Enable your bot to identify and process information derived from images through various APIs available in the Bot Framework and Cognitive Services.
 author: RobStand
 ms.author: rstand
-
-
 manager: rstand
-ms.topic: intelligence-vision-article
-
+ms.topic: article
 ms.prod: bot-framework
-
 ms.date: 
 ms.reviewer: rstand
 
@@ -17,8 +13,6 @@ ROBOTS: Index, Follow
 ---
 
 # Add image detection and recognition
-
-## Vision API examples for bots
 
 The Vision APIs are useful for any bot that receives images as input from users and wants to distill actionable information from them. Here are a few examples:
 
@@ -30,7 +24,7 @@ The Vision APIs are useful for any bot that receives images as input from users 
 Before you get started with these examples, you must obtain your own subscription key from the <a href="https://www.microsoft.com/cognitive-services/" target="_blank">Microsoft Cognitive Services</a>. 
 
 
-### Vision API example
+## Vision API example
 
 In this example, you will build a simplified version of CaptionBot.ai. The Vision Bot can receive an image, either as an attachment or url, and then return a computer-generated caption of the image via the Computer Vision API. You can download the <a href="http://aka.ms/bf-bc-vstemplate" target="_blank">Bot Application .NET template</a> to use as a starting point.
 
@@ -125,7 +119,7 @@ await connector.Conversations.ReplyToActivityAsync(reply);
 return new HttpResponseMessage(System.Net.HttpStatusCode.Accepted);
 ```
 
-### Emotion API example
+## Emotion API example
 
 In this example, you will build an Emotion Bot that receives an image url, detects if there's at least one face in the image, and finally responds back with the dominant emotion of that face. To keep the example simple, the bot will return the emotion for only one face, and ignore other faces in the image. The example requires the `Microsoft.ProjectOxford.Emotion` package, which can be obtained using <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">NuGet</a>.
 
@@ -193,3 +187,5 @@ public virtual async Task<HttpResponseMessage> Post([FromBody] Activity activity
     return new HttpResponseMessage(System.Net.HttpStatusCode.Accepted);
 }
 ```
+## Next steps
+You can find detailed documentation about the each Cognitive Services API, including developer guides and API references, by visiting the Microsoft Cognitive Services <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/" target="_blank">documentation site</a> and selecting an API on the left.

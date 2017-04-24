@@ -48,7 +48,7 @@ The `BasicForm` class defines the form. Its public properties define the informa
 
 The Form template provides a good foundation that you can build upon and customize to create a bot that collects input from a user via a guided conversation. For example, you could edit the `BasicForm` class within **BasicForm.csx** to define the set of information that your bot needs to collect from the user. To learn more about FormFlow, see [FormFlow in .NET](~/dotnet/bot-builder-dotnet-formflow.md).
 
-## Additional Resources
+## Additional resources
 
 - [Create a bot with the Azure Bot Service](~/azure/azure-bot-service-quickstart.md)
 - [Templates in the Azure Bot Service](~/azure/azure-bot-service-templates.md)

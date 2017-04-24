@@ -61,7 +61,6 @@
 #### [Create a proactive bot](~/azure/azure-bot-service-template-proactive.md)
 #### [Create a question and answer bot](~/azure/azure-bot-service-template-question-and-answer.md)
 ### [Set up continuous integration](~/azure/azure-bot-service-continuous-integration.md)
-### [Debug your bot](~/azure/azure-bot-service-debug-bot.md)
 ## [Make bots smarter](./intelligent-bots.md)
 ### [Add language understanding](./cognitive-services-add-bot-language.md)
 ### [Add knowledge extraction](./cognitive-services-add-bot-knowledge.md)

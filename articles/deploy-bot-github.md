@@ -3,12 +3,9 @@ title: Deploy a bot to Azure from Github | Microsoft Docs
 description: Learn how to deploy a bot to Azure from Github and enable continuous integration.
 author: RobStand
 ms.author: rstand
-
-
 manager: rstand
 ms.topic: deploy-remote-repo-article
 ms.prod: bot-framework
-
 ms.date:
 ms.reviewer: rstand
 ROBOTS: Index, Follow

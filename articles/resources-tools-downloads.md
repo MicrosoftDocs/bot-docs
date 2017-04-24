@@ -17,8 +17,6 @@ ms.reviewer:
 # Include the following line commented out
 ROBOTS: Index, Follow
 ---
-> [!NOTE]
-> This content is still under development.
 # Bot Framework Downloads
 Download tools and resources for developing bots with the Bot Framework.
 

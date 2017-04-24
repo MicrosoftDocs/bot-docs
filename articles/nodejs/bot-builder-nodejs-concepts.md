@@ -66,7 +66,7 @@ Bot Builder lets you use LUIS to add natural language understanding to your bot 
 
 * [Microsoft LUIS Tutorial][LUISVideo] (video)
 
-## Additional Resources
+## Additional resources
 
 The following articles walk you through building your first bot and adding basic conversational ability to it.
 

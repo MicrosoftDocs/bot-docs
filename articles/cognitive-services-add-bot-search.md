@@ -1,27 +1,23 @@
 ---
-title: Add search | Microsoft Docs
+title: Add search to a bot | Microsoft Docs
 description: Add search capabilities to your bot with the Bot Framework and Cognitive Services.
 author: RobStand
 ms.author: rstand
-
-
 manager: rstand
-ms.topic: intelligence-search-article
-
+ms.topic: article
 ms.prod: bot-framework
-
 ms.date: 
 ms.reviewer: rstand
 
 ROBOTS: Index, Follow
 ---
 
-# How to add search and present filtered results
+# Add search and filtered results to a bot
 
 The Search APIs offer a great way to access the vast information available on the web. They are ideal for any bot that needs to embed search results directly into their messages, or leverage them as input for other interesting applications. Besides plain search, the APIs support several intelligent features that can be used across a broad array of scenarios. For example, the Image Search API includes image recognition features, such as celebrity recognition, product search (where to buy), and visually similar search. The News Search API is able to extract mentioned entities and other useful article metadata.
 
 > [!TIP]
-> You can find detailed documentation, developer guides, and API reference for Cognitive Services on the <a href="https://www.microsoft.com/cognitive-services/en-us/documentation" target="_blank">Cognitive Services documentation site</a>.
+> You can find detailed documentation, developer guides, and API reference for Cognitive Services on the <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/" target="_blank">Cognitive Services documentation site</a>.
 
 ## Examples using Search APIs with bots
 
@@ -34,7 +30,7 @@ Here a few examples of bots that are using the Search APIs today:
 > [!IMPORTANT]
 To get started, you must obtain your own subscription key from the Microsoft Cognitive Services site. The <a href="https://msdn.microsoft.com/en-US/library/mt712546.aspx" target="_blank">Getting Started</a> guide describes how to obtain the key and start making calls to the APIs. If you already have a subscription key, try the  <a href="https://bingapis.portal.azure-api.net/docs/services/56b43eeccf5ff8098cef3807/operations/56b4447dcf5ff8098cef380d" target="_blank">API Testing Console</a> to craft test API requests in a sandbox environment.
 
-### GIF search bot example
+## GIF search bot example
 
 For this example, you will build a few bots that use the Search APIs to help you get started. You will build a simple bot that searches the web for animated GIF images, via the Image Search API, and displays them to users. You will use the  [Bot Application .NET template](~/dotnet/bot-builder-dotnet-quickstart.md#prerequisites) as a starting point. Note that this example, as well as subsequent ones, require the `Newtonsoft.JSON` package, which can be obtained via <a href="https://www.nuget.org/packages/Microsoft.ProjectOxford.Vision/" target="_blank">NuGet</a>.
 
@@ -129,7 +125,7 @@ public virtual async Task<HttpResponseMessage> Post([FromBody] Activity activity
 }  
 ```
 
-### Trending news bot example
+## Trending news bot example
 
 For this example, you will build a bot that fetches the top trending news on the web and then displays it to users as an image carousel. You will rely on the Bot Application template again. The coding steps are similar to the previous example, but this one is using the new carousel attachment type that is supported in the latest version of the Bot Builder SDK.   
 
@@ -256,7 +252,7 @@ return response;
 
 ```
 
-### Product bot example
+## Product bot example
 
 For this last example, you will build a bot that receives a product image url and finds visually similar products along with links to online merchants that have these products. The bot is calling the Image Search API to find visually similar products and the online merchants. More specifically, it's calling a feature of the Image Search API called <a href="https://msdn.microsoft.com/en-us/library/mt712790.aspx" target="_blank">image insights</a>, which returns several interesting insights about images indexed by Bing, such as visually similar images or products, similar image collections, recognized entities (people) and more.
 
@@ -416,3 +412,5 @@ for (int i = 0; i < productCount; i++)
 await connector.Conversations.ReplyToActivityAsync(replyToConv);
 return new HttpResponseMessage(System.Net.HttpStatusCode.Accepted);
 ```
+## Next steps
+You can find detailed documentation about the each Cognitive Services API, including developer guides and API references, by visiting the Microsoft Cognitive Services <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/" target="_blank">documentation site</a> and selecting an API on the left.

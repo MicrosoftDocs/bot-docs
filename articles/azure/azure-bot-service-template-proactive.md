@@ -103,7 +103,7 @@ This code snippet uses Node.js to receive the message from the Azure Function an
 
 The Proactive template provides a good foundation that you can build upon and customize to enable proactive messaging scenarios for your bot. To learn more about sending proactive messages, see [Send proactive messages with .NET](~/dotnet/bot-builder-dotnet-proactive-messages.md) or [Send proactive messages with Node.js](~/nodejs/bot-builder-nodejs-proactive-messages.md). 
 
-## Additional Resources
+## Additional resources
 
 - [Create a bot with the Azure Bot Service](~/azure/azure-bot-service-quickstart.md)
 - [Templates in the Azure Bot Service](~/azure/azure-bot-service-templates.md)

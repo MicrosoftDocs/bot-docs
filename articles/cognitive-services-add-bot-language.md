@@ -1,27 +1,23 @@
 ---
-title: Add language understanding | Microsoft Docs
-description: Teach your bot to understand natural language and recognize a user's intent using Cognitive Services.
+title: Add language understanding to a bot | Microsoft Docs
+description: Enable your bot to understand natural language and recognize a user's intent using Cognitive Services.
 author: RobStand
 ms.author: rstand
-
-
 manager: rstand
-ms.topic: intelligence-language-article
-
+ms.topic: article
 ms.prod: bot-framework
-
 ms.date: 
 ms.reviewer: rstand
 
 ROBOTS: Index, Follow
 ---
 
-# How to add language understanding
+# Add language understanding to a bot
 
 To get started with Language Understanding Intelligent Services (LUIS), go to <a href="http://www.luis.ai" target="_blank">LUIS.ai</a> and build your own custom language model. The <a href="https://www.microsoft.com/cognitive-services/en-us/LUIS-api/documentation/Plan-your-app" target="_blank">Getting Started</a> guide describes in details how to build your first model through the LUIS user interface, or programatically via the LUIS APIs. You can watch a  <a href="https://www.youtube.com/watch?v=jWeLajon9M8&index=4&list=PLD7HFcN7LXRdHkFBFu4stPPeWJcQ0VFLx" target="_blank">basic</a> video tutorial.
 
-## Language understanding bot examples
-### LUIS example
+## Language understanding bot example
+
 In this example, you will build a weather bot that is able to understand and respond to various hypothetical commands, such as "What's the weather like in Paris", "What's the temperature next week in Seattle", and so on. The bot is using LUIS to identify the intent of the user, and then reply with the appropriate prompt.
 
 To create the bot, you will use the <a href="http://aka.ms/bf-bc-vstemplate" target="_blank">Bot Application .NET template</a> as a starting point. Note that you need to build the language model for the weather bot in LUIS first. To accomplish this, follow the steps in this <a href="https://www.youtube.com/watch?v=39L0Gv2EcSk&index=5&list=PLD7HFcN7LXRdHkFBFu4stPPeWJcQ0VFLx" target="_blank">video</a>.
@@ -130,7 +126,7 @@ public virtual async Task<HttpResponseMessage> Post([FromBody] Activity activity
 }
 ```
 
-### Text Analytics example
+## Text Analytics example
 
 In this example, you will use the Text Analytics API to determine the sentiment behind a user's message, i.e. whether it is positive or negative. The Text Analytics API returns a sentiment score between 0 and 1, where 0 is very negative and 1 is very positive. For example, if the user types "That was really helpful", the API will classify it with a highly positive score, whereas a phrase like "That didn't help at all" will return a negative score. 
 
@@ -229,3 +225,6 @@ public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
 	return response;
 }
 ```
+
+## Next steps
+You can find detailed documentation about the each Cognitive Services API, including developer guides and API references, by visiting the Microsoft Cognitive Services <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/" target="_blank">documentation site</a> and selecting an API on the left.

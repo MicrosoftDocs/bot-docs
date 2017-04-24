@@ -66,7 +66,7 @@ This code snippet uses Node.js to invoke the QnA Maker service.
 
 The Question and Answer template provides a good foundation that you can build upon and customize to create a bot that can answer frequently asked questions (FAQs). To learn more about using QnA Maker with your bot, see [Design knowledge bots](~/bot-design-pattern-knowledge-base.md#qna-maker) and [QnA Maker][qnaMaker].
 
-## Additional Resources
+## Additional resources
 
 - [Create a bot with the Azure Bot Service](~/azure/azure-bot-service-quickstart.md)
 - [Templates in the Azure Bot Service](~/azure/azure-bot-service-templates.md)

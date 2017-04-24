@@ -1,22 +1,18 @@
 ---
-title: Add location control | Microsoft Docs
-description: Teach your bot how to determine a user's location with the Bot Framework and Cognitive Services.
+title: Add location control to a bot | Microsoft Docs
+description: Enable your bot to determine a user's location with the Bot Framework and Cognitive Services.
 author: RobStand
 ms.author: rstand
-
-
 manager: rstand
-ms.topic: intelligence-location-article
-
+ms.topic: article
 ms.prod: bot-framework
-
 ms.date: 
 ms.reviewer: rstand
 
 ROBOTS: Index, Follow
 ---
 
-# How to add location control
+# Add location control to a bot
 
 You can find screenshots of the scenarios supported by the location control in the [Examples](#examples) section.
 
@@ -153,3 +149,6 @@ These examples show different location selection scenarios that the Bing locatio
 **Address selection using FB Messenger's location picker GUI dialog**
 
 ![Messenger Location Dialog](~/media/messenger_locationdialog_1.png)
+
+## Next steps
+You can find detailed documentation about the each Cognitive Services API, including developer guides and API references, by visiting the Microsoft Cognitive Services <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/" target="_blank">documentation site</a> and selecting an API on the left.

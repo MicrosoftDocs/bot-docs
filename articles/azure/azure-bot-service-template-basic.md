@@ -16,9 +16,6 @@ ROBOTS: Index, Follow
 To create a bot that uses dialogs to respond to user input, choose the [Basic template](~/azure/azure-bot-service-templates.md) when creating the bot using Azure Bot Service. This article provides a walkthrough of the code that is automatically generated when you create a bot using the Basic template and describes some ways in which you might extend the bot's default functionality.
 
 ## Code walkthrough
-
-### Run.csx
-
 When a user posts a message, it is sent to the `Run` method in **Run.csx** as an [Activity](~/dotnet/bot-builder-dotnet-activities.md). The bot reacts to an incoming activity by first attempting to authenticate the request. If request validation fails, the bot responds with Unauthorized.
 
 [!code-csharp[Authenticate request](~/includes/code/azure-bot-service-template-basic.cs#authenticateRequest)]
@@ -54,7 +51,7 @@ The `AfterResetAsync` method processes the user’s response to `PromptDialog`. 
 
 The Basic template provides a good foundation that you can build upon to create a bot that is capable of handling more advanced interactions with users. For example, you might add more prompts to collect information from the user, add [media attachments](~/dotnet/bot-builder-dotnet-add-media-attachments.md) or [rich cards](~/dotnet/bot-builder-dotnet-add-rich-card-attachments.md) to messages to provide a richer user experience, or model a more complex conversation flow by using [dialog chains](~/dotnet/bot-builder-dotnet-dialogs.md#dialog-chains). To learn more about developing bots in .NET, see [Develop with .NET](~/dotnet/index.md). To learn more about developing bots in Node.js, see [Develop with Node.js](~/nodejs/index.md).
 
-## Additional Resources
+## Additional resources
 
 - [Create a bot with the Azure Bot Service](~/azure/azure-bot-service-quickstart.md)
 - [Templates in the Azure Bot Service](~/azure/azure-bot-service-templates.md)

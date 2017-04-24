@@ -1,33 +1,24 @@
 ---
-title: Add knowledge extraction | Microsoft Docs
-description: Teach your bot to understand the context of a conversation and respond appropriately with the Bot Framework and Cognitive Services.
+title: Add knowledge extraction to a bot | Microsoft Docs
+description: Enable your bot to understand the context of a conversation and respond appropriately with the Bot Framework and Cognitive Services.
 author: RobStand
 ms.author: rstand
-
-
 manager: rstand
-ms.topic: intelligence-knowledge-article
-
+ms.topic: article
 ms.prod: bot-framework
-
 ms.date: 
 ms.reviewer: rstand
-
 ROBOTS: Index, Follow
 ---
 
-# How to add knowledge extraction 
+# Add knowledge extraction to a bot
 
-> [!TIP]
-> You can find detailed documentation about each API, including developer guides and API references by visiting the Microsoft Cognitive Services <a href="https://www.microsoft.com/cognitive-services/en-us/documentation" target="_blank">documentation site</a> and selecting the API you need on the left.
-
-## Knowledge API bot examples
 The Knowledge APIs can arm your bots with your own knowledge base and user history, allowing them to efficiently navigate your product catalogs to provide recommendations.
 
 > [!IMPORTANT]
 > Before you get started, you need to obtain your own subscription key from the <a href="https://www.microsoft.com/cognitive-services/" target="_blank">Microsoft Cognitive Services site</a>.
 
-### QnA Maker example
+## QnA Maker example
 This is a very simple Bot which uses simple heuristics to determine whether the incoming user message has a question intent, and if that's the case simply forwards the message to the QnA Maker service.
 
 To get started with QnA Maker, go to <a href="https://qnamaker.ai" target="_blank">qnamaker.ai</a> and build your own knowledge base. The <a href="https://qnamaker.ai/Documentation" target="_blank">documentation</a> describes the various flows in the tool to create your knowledge base.
@@ -144,3 +135,6 @@ public virtual async Task<HttpResponseMessage> Post([FromBody] Activity activity
 	return response;
 }
 ```
+
+## Next steps
+You can find detailed documentation about the each Cognitive Services API, including developer guides and API references, by visiting the Microsoft Cognitive Services <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/" target="_blank">documentation site</a> and selecting an API on the left.

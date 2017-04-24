@@ -323,7 +323,7 @@ designate optional fields, match user input, and validate user input.
 For information about additional ways to customize the user experience with FormFlow, 
 see [Customize a form using FormBuilder](~/dotnet/bot-builder-dotnet-formflow-formbuilder.md).
 
-## Additional Resources
+## Additional resources
 
 - [FormFlow](~/dotnet/bot-builder-dotnet-formflow.md)
 - [Customize a form using FormBuilder](~/dotnet/bot-builder-dotnet-formflow-formbuilder.md)
