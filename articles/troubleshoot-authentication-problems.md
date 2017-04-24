@@ -8,10 +8,7 @@ ms.topic: article
 
 ms.prod: bot-framework
 
-ms.date: 02/21/2017
-ms.reviewer:
-
-# Include the following line commented out
+ms.date: 
 ROBOTS: Index, Follow
 ---
 # Troubleshooting Bot Framework Authentication
