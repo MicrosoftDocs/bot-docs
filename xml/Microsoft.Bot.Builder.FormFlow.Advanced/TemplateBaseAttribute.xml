@@ -1,0 +1,354 @@
+<Type Name="TemplateBaseAttribute" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute">
+  <TypeSignature Language="C#" Value="public abstract class TemplateBaseAttribute : Microsoft.Bot.Builder.FormFlow.FormFlowAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TemplateBaseAttribute extends Microsoft.Bot.Builder.FormFlow.FormFlowAttribute" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.FormFlow.FormFlowAttribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Abstract base class used by all attributes that use \ref patterns.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TemplateBaseAttribute (Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.#ctor(Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="other" Type="Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute" />
+      </Parameters>
+      <Docs>
+        <param name="other">The template to copy from.</param>
+        <summary>
+            Initialize from another template.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TemplateBaseAttribute (string[] patterns);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] patterns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.#ctor(System.String[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="patterns" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="patterns">Possible patterns.</param>
+        <summary>
+            Initialize with multiple patterns that will be chosen from randomly.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowDefault">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.BoolDefault AllowDefault { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.FormFlow.BoolDefault AllowDefault" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.AllowDefault" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.BoolDefault</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            When processing choices {||} in a \ref patterns string, provide a choice for the default value if present.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyDefaults">
+      <MemberSignature Language="C#" Value="public void ApplyDefaults (Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute defaultTemplate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ApplyDefaults(class Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute defaultTemplate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ApplyDefaults(Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="defaultTemplate" Type="Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute" />
+      </Parameters>
+      <Docs>
+        <param name="defaultTemplate">Default template to use to override default values.</param>
+        <summary>
+            Any default values in this template will be overridden by the supplied <paramref name="defaultTemplate" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChoiceCase">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.CaseNormalization ChoiceCase { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.FormFlow.CaseNormalization ChoiceCase" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceCase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.CaseNormalization</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>  
+            Control case when showing choices in {||} references in a \ref patterns string. 
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChoiceFormat">
+      <MemberSignature Language="C#" Value="public string ChoiceFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ChoiceFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Format string used for presenting each choice when showing {||} choices in a \ref patterns string.
+            </summary>
+        <value>To be added.</value>
+        <remarks>The choice format is passed two arguments, {0} is the number of the choice and {1} is the field name.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChoiceLastSeparator">
+      <MemberSignature Language="C#" Value="public string ChoiceLastSeparator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ChoiceLastSeparator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceLastSeparator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>   
+            When constructing inline lists of choices using {||} in a \ref patterns string, the string used before the last choice. 
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChoiceParens">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.BoolDefault ChoiceParens { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.FormFlow.BoolDefault ChoiceParens" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceParens" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.BoolDefault</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>  
+            When constructing inline choice lists for {||} in a \ref patterns string controls whether to include parentheses around choices. 
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChoiceSeparator">
+      <MemberSignature Language="C#" Value="public string ChoiceSeparator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ChoiceSeparator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceSeparator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            When constructing inline lists using {||} in a \ref patterns string, the string used between all choices except the last. 
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChoiceStyle">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions ChoiceStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions ChoiceStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            How to display choices {||} when processed in a \ref patterns string.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Feedback">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.FeedbackOptions Feedback { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.FormFlow.FeedbackOptions Feedback" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Feedback" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.FeedbackOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Control what kind of feedback the user gets after each input.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldCase">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.CaseNormalization FieldCase { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.FormFlow.CaseNormalization FieldCase" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.FieldCase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.CaseNormalization</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Control case when showing {&amp;} field name references in a \ref patterns string.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastSeparator">
+      <MemberSignature Language="C#" Value="public string LastSeparator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LastSeparator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.LastSeparator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            When constructing lists using {[]} in a \ref patterns string, the string used before the last value in the list.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pattern">
+      <MemberSignature Language="C#" Value="public string Pattern ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Pattern() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Pattern" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            The pattern to use when generating a string using <see cref="T:Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1" />.
+            </summary>
+        <returns>Pattern to use.</returns>
+        <remarks>If multiple patterns were specified, then each call to this function will return a random pattern.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Patterns">
+      <MemberSignature Language="C#" Value="public string[] Patterns { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] Patterns" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Patterns" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            All possible templates.
+            </summary>
+        <value>The possible templates.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Separator">
+      <MemberSignature Language="C#" Value="public string Separator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Separator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Separator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            When constructing lists using {[]} in a \ref patterns string, the string used between all values except the last.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueCase">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.CaseNormalization ValueCase { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.FormFlow.CaseNormalization ValueCase" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ValueCase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.CaseNormalization</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Control case when showing {} value references in a \ref patterns string.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -8,7 +8,7 @@
       "build_source_folder": "articles",
       "build_output_subfolder": "bot-framework",
       "locale": "en-us",
-      "monikers": [],
+      "monikers": ["botbuilder-3.5.5","botconnector-1.1.0"],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",

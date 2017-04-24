@@ -1,0 +1,143 @@
+<Type Name="DescribeAttribute" FullName="Microsoft.Bot.Builder.FormFlow.DescribeAttribute">
+  <TypeSignature Language="C#" Value="public class DescribeAttribute : Microsoft.Bot.Builder.FormFlow.FormFlowAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit DescribeAttribute extends Microsoft.Bot.Builder.FormFlow.FormFlowAttribute" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.DescribeAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.FormFlow.FormFlowAttribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Enum | System.AttributeTargets.Property | System.AttributeTargets.Field)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Attribute to override the default description of a field, property or enum value.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DescribeAttribute (string description = null, string image = null, string message = null, string title = null, string subTitle = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string description, string image, string message, string title, string subTitle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.DescribeAttribute.#ctor(System.String,System.String,System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="image" Type="System.String" />
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="subTitle" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="description">Description of field, property or enum value.</param>
+        <param name="image">URL of image to use when generating buttons.</param>
+        <param name="message">Message to return from button.</param>
+        <param name="title">Text if generating card.</param>
+        <param name="subTitle">SubTitle if generating card.</param>
+        <summary>
+            Description for field, property or enum value.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description;" />
+      <MemberSignature Language="ILAsm" Value=".field public string Description" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.DescribeAttribute.Description" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Description of the field, property or enum to use in templates and choices.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Image">
+      <MemberSignature Language="C#" Value="public string Image;" />
+      <MemberSignature Language="ILAsm" Value=".field public string Image" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.DescribeAttribute.Image" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            URL of image to use when creating cards or buttons.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public string Message;" />
+      <MemberSignature Language="ILAsm" Value=".field public string Message" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.DescribeAttribute.Message" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Message to return when a button is pressed in a card.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubTitle">
+      <MemberSignature Language="C#" Value="public string SubTitle;" />
+      <MemberSignature Language="ILAsm" Value=".field public string SubTitle" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.DescribeAttribute.SubTitle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            SubTitle when a card is generated from description.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public string Title;" />
+      <MemberSignature Language="ILAsm" Value=".field public string Title" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.DescribeAttribute.Title" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Title when a card is generated from description.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

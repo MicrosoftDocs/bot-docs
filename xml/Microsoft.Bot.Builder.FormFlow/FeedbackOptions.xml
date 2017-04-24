@@ -1,0 +1,88 @@
+<Type Name="FeedbackOptions" FullName="Microsoft.Bot.Builder.FormFlow.FeedbackOptions">
+  <TypeSignature Language="C#" Value="public enum FeedbackOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FeedbackOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.FeedbackOptions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Control how the user gets feedback after each entry.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Always">
+      <MemberSignature Language="C#" Value="Always" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.FeedbackOptions Always = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FeedbackOptions.Always" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.FeedbackOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Provide feedback after every user input.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Auto">
+      <MemberSignature Language="C#" Value="Auto" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.FeedbackOptions Auto = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FeedbackOptions.Auto" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.FeedbackOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Provide feedback using the <see cref="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Feedback" /> template only if part of the user input was not understood.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.FeedbackOptions Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FeedbackOptions.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.FeedbackOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Use the default from the <see cref="F:Microsoft.Bot.Builder.FormFlow.FormConfiguration.DefaultPrompt" />.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Never">
+      <MemberSignature Language="C#" Value="Never" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.FeedbackOptions Never = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FeedbackOptions.Never" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.FeedbackOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Never provide feedback.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

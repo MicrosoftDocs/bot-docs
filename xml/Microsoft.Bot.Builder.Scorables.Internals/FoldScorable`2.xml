@@ -1,0 +1,241 @@
+<Type Name="FoldScorable&lt;Item,Score&gt;" FullName="Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;">
+  <TypeSignature Language="C#" Value="public abstract class FoldScorable&lt;Item,Score&gt; : Microsoft.Bot.Builder.Scorables.Internals.ScorableBase&lt;Item,System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;.State&gt;,Score&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FoldScorable`2&lt;Item, Score&gt; extends Microsoft.Bot.Builder.Scorables.Internals.ScorableBase`3&lt;!Item, class System.Collections.Generic.IReadOnlyList`1&lt;valuetype Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/State&lt;!Item, !Score&gt;&gt;, !Score&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="Item" />
+    <TypeParameter Name="Score" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Scorables.Internals.ScorableBase&lt;Item,System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;+State&gt;,Score&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="Item">Item</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="State">System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;+State&gt;</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="Score">Score</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="Item">To be added.</typeparam>
+    <typeparam name="Score">To be added.</typeparam>
+    <summary>
+            Fold an aggregation of scorables to produce a winning scorable.
+            </summary>
+    <remarks>
+            Fold aka "reduce, accumulate, aggregate, compress, or inject"
+            https://en.wikipedia.org/wiki/Fold_(higher-order_function)
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FoldScorable (System.Collections.Generic.IComparer&lt;Score&gt; comparer, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;&gt; scorables);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IComparer`1&lt;!Score&gt; comparer, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !Score&gt;&gt; scorables) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.#ctor(System.Collections.Generic.IComparer{`1},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{`0,`1}})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;Score&gt;" />
+        <Parameter Name="scorables" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="comparer">To be added.</param>
+        <param name="scorables">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="comparer">
+      <MemberSignature Language="C#" Value="protected readonly System.Collections.Generic.IComparer&lt;Score&gt; comparer;" />
+      <MemberSignature Language="ILAsm" Value=".field family initonly class System.Collections.Generic.IComparer`1&lt;!Score&gt; comparer" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.comparer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IComparer&lt;Score&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoneAsync">
+      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task DoneAsync (Item item, System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;.State&gt; states, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task DoneAsync(!Item item, class System.Collections.Generic.IReadOnlyList`1&lt;valuetype Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/State&lt;!Item, !Score&gt;&gt; states, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.DoneAsync(`0,System.Collections.Generic.IReadOnlyList{Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State{`0,`1}},System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/&lt;DoneAsync&gt;d__11))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Item" />
+        <Parameter Name="states" Type="System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;+State&gt;" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <param name="states">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetScore">
+      <MemberSignature Language="C#" Value="protected override Score GetScore (Item item, System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;.State&gt; states);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance !Score GetScore(!Item item, class System.Collections.Generic.IReadOnlyList`1&lt;valuetype Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/State&lt;!Item, !Score&gt;&gt; states) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.GetScore(`0,System.Collections.Generic.IReadOnlyList{Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State{`0,`1}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Score</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Item" />
+        <Parameter Name="states" Type="System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;+State&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <param name="states">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasScore">
+      <MemberSignature Language="C#" Value="protected override bool HasScore (Item item, System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;.State&gt; states);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool HasScore(!Item item, class System.Collections.Generic.IReadOnlyList`1&lt;valuetype Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/State&lt;!Item, !Score&gt;&gt; states) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.HasScore(`0,System.Collections.Generic.IReadOnlyList{Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State{`0,`1}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Item" />
+        <Parameter Name="states" Type="System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;+State&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <param name="states">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnStage">
+      <MemberSignature Language="C#" Value="protected abstract Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;.OnStageDelegate OnStage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/OnStageDelegate&lt;!Item, !Score&gt; OnStage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.OnStage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;+OnStageDelegate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event handler for fold scorable stages.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            This is late-bound to allow binding to "this" in derived classes.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostAsync">
+      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task PostAsync (Item item, System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;.State&gt; states, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task PostAsync(!Item item, class System.Collections.Generic.IReadOnlyList`1&lt;valuetype Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/State&lt;!Item, !Score&gt;&gt; states, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.PostAsync(`0,System.Collections.Generic.IReadOnlyList{Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State{`0,`1}},System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/&lt;PostAsync&gt;d__10))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Item" />
+        <Parameter Name="states" Type="System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;+State&gt;" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <param name="states">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrepareAsync">
+      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;.State&gt;&gt; PrepareAsync (Item item, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;valuetype Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/State&lt;!Item, !Score&gt;&gt;&gt; PrepareAsync(!Item item, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.PrepareAsync(`0,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/&lt;PrepareAsync&gt;d__7))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;+State&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Item" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="scorables">
+      <MemberSignature Language="C#" Value="protected readonly System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;&gt; scorables;" />
+      <MemberSignature Language="ILAsm" Value=".field family initonly class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !Score&gt;&gt; scorables" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.scorables" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,158 @@
+<Type Name="Extensions" FullName="Microsoft.Bot.Builder.Luis.Extensions">
+  <TypeSignature Language="C#" Value="public static class Extensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Extensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.Extensions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            LUIS extension methods.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BuildUri">
+      <MemberSignature Language="C#" Value="public static Uri BuildUri (this Microsoft.Bot.Builder.Luis.ILuisService service, string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Uri BuildUri(class Microsoft.Bot.Builder.Luis.ILuisService service, string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Extensions.BuildUri(Microsoft.Bot.Builder.Luis.ILuisService,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="service" Type="Microsoft.Bot.Builder.Luis.ILuisService" RefType="this" />
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="service">LUIS service.</param>
+        <param name="text">The query text.</param>
+        <summary>
+            Builds luis uri with text query.
+            </summary>
+        <returns>The LUIS request Uri.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Next">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart Next (this Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart part);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DayPart Next(valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DayPart part) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Extensions.Next(Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+DayPart</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="part" Type="Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+DayPart" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="part">The <see cref="T:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart" /> query.</param>
+        <summary>
+            Return the next <see cref="T:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart" />. 
+            </summary>
+        <returns>The next <see cref="T:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart" /> after the query.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseResolutions">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Luis.Resolution&gt; ParseResolutions (this Microsoft.Bot.Builder.Luis.IResolutionParser parser, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; entities);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Luis.Resolution&gt; ParseResolutions(class Microsoft.Bot.Builder.Luis.IResolutionParser parser, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; entities) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Extensions.ParseResolutions(Microsoft.Bot.Builder.Luis.IResolutionParser,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Luis.Extensions/&lt;ParseResolutions&gt;d__1))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Luis.Resolution&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parser" Type="Microsoft.Bot.Builder.Luis.IResolutionParser" RefType="this" />
+        <Parameter Name="entities" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="parser">The resolution parser.</param>
+        <param name="entities">The LUIS entities.</param>
+        <summary>
+            Parse all resolutions from a LUIS result.
+            </summary>
+        <returns>The parsed resolutions.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Luis.Models.LuisResult&gt; QueryAsync (this Microsoft.Bot.Builder.Luis.ILuisService service, string text, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Luis.Models.LuisResult&gt; QueryAsync(class Microsoft.Bot.Builder.Luis.ILuisService service, string text, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Extensions.QueryAsync(Microsoft.Bot.Builder.Luis.ILuisService,System.String,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Luis.Extensions/&lt;QueryAsync&gt;d__3))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Luis.Models.LuisResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="service" Type="Microsoft.Bot.Builder.Luis.ILuisService" RefType="this" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="service">LUIS service.</param>
+        <param name="text">The query text.</param>
+        <param name="token">The cancellation token.</param>
+        <summary>
+            Query the LUIS service using this text.
+            </summary>
+        <returns>The LUIS result.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryFindEntity">
+      <MemberSignature Language="C#" Value="public static bool TryFindEntity (this Microsoft.Bot.Builder.Luis.Models.LuisResult result, string type, out Microsoft.Bot.Builder.Luis.Models.EntityRecommendation entity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryFindEntity(class Microsoft.Bot.Builder.Luis.Models.LuisResult result, string type, class Microsoft.Bot.Builder.Luis.Models.EntityRecommendation entity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Extensions.TryFindEntity(Microsoft.Bot.Builder.Luis.Models.LuisResult,System.String,Microsoft.Bot.Builder.Luis.Models.EntityRecommendation@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="Microsoft.Bot.Builder.Luis.Models.LuisResult" RefType="this" />
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="entity" Type="Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="result">The LUIS result.</param>
+        <param name="type">The entity type.</param>
+        <param name="entity">The found entity.</param>
+        <summary>
+            Try to find an entity within the result.
+            </summary>
+        <returns>True if the entity was found, false otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

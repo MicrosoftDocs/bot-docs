@@ -1,0 +1,56 @@
+<Type Name="CachingBotDataStoreConsistencyPolicy" FullName="Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy">
+  <TypeSignature Language="C#" Value="public enum CachingBotDataStoreConsistencyPolicy" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CachingBotDataStoreConsistencyPolicy extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            The data consistency policy for <see cref="T:Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore" /></summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ETagBasedConsistency">
+      <MemberSignature Language="C#" Value="ETagBasedConsistency" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy ETagBasedConsistency = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy.ETagBasedConsistency" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Causes <see cref="T:Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore" /> to write data with the same <see cref="P:Microsoft.Bot.Connector.BotData.ETag" /> 
+            returned by <see cref="F:Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.inner" />. As a result <see cref="M:Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)" />
+            might fail because of ETag inconsistencies.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LastWriteWins">
+      <MemberSignature Language="C#" Value="LastWriteWins" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy LastWriteWins = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy.LastWriteWins" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Causes <see cref="T:Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore" /> to set <see cref="P:Microsoft.Bot.Connector.BotData.ETag" /> to "*" when it flushes the data to storage. 
+            As a result last write will overwrite the data.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,104 @@
+<Type Name="IBotDataStore&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public interface IBotDataStore&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBotDataStore`1&lt;T&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FlushAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; FlushAsync (Microsoft.Bot.Builder.Dialogs.IAddress key, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; FlushAsync(class Microsoft.Bot.Builder.Dialogs.IAddress key, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="Microsoft.Bot.Builder.Dialogs.IAddress" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="key">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;T&gt; LoadAsync (Microsoft.Bot.Builder.Dialogs.IAddress key, Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType botStoreType, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!T&gt; LoadAsync(class Microsoft.Bot.Builder.Dialogs.IAddress key, valuetype Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType botStoreType, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.LoadAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="Microsoft.Bot.Builder.Dialogs.IAddress" />
+        <Parameter Name="botStoreType" Type="Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="key"> The key.</param>
+        <param name="botStoreType"> The bot store type.</param>
+        <param name="cancellationToken"> The cancellation token.</param>
+        <summary>
+            Return BotData with Data pointing to a JObject or an empty BotData() record with ETag:""
+            </summary>
+        <returns>Bot record that is stored for this key, or "empty" bot record ready to be stored</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SaveAsync (Microsoft.Bot.Builder.Dialogs.IAddress key, Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType botStoreType, T data, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task SaveAsync(class Microsoft.Bot.Builder.Dialogs.IAddress key, valuetype Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType botStoreType, !T data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.SaveAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,`0,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="Microsoft.Bot.Builder.Dialogs.IAddress" />
+        <Parameter Name="botStoreType" Type="Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType" />
+        <Parameter Name="data" Type="T" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="key"> The key.</param>
+        <param name="botStoreType">The bot store type.</param>
+        <param name="data"> The data that should be saved.</param>
+        <param name="cancellationToken"> The cancellation token.</param>
+        <summary>
+            Save a BotData using the ETag.
+            Etag consistency checks
+                If ETag is null or empty, this will set the value if nobody has set it yet
+                If ETag is "*" then this will unconditionally set the value
+                If ETag matches then this will update the value if it is unchanged.
+            If Data is null this removes record, otherwise it stores
+            </summary>
+        <returns>throw HttpException(HttpStatusCode.PreconditionFailed) if update fails</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

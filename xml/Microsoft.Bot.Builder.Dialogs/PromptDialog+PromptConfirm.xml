@@ -1,0 +1,181 @@
+<Type Name="PromptDialog+PromptConfirm" FullName="Microsoft.Bot.Builder.Dialogs.PromptDialog+PromptConfirm">
+  <TypeSignature Language="C#" Value="public sealed class PromptDialog.PromptConfirm : Microsoft.Bot.Builder.Dialogs.Internals.Prompt&lt;bool,string&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable sealed beforefieldinit PromptDialog/PromptConfirm extends Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2&lt;bool, string&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Internals.Prompt&lt;System.Boolean,System.String&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">System.Boolean</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="U">System.String</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>   Prompt for a confirmation. </summary>
+    <remarks>   Normally used through <see cref="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Confirm(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Boolean},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle)" />.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PromptConfirm (Microsoft.Bot.Builder.Dialogs.PromptOptions&lt;string&gt; promptOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.PromptOptions`1&lt;string&gt; promptOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.#ctor(Microsoft.Bot.Builder.Dialogs.PromptOptions{System.String})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="promptOptions" Type="Microsoft.Bot.Builder.Dialogs.PromptOptions&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="promptOptions"> THe prompt options.</param>
+        <summary>
+            Constructor for a prompt confirmation dialog.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PromptConfirm (string prompt, string retry, int attempts, Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle = Microsoft.Bot.Builder.Dialogs.PromptStyle.Auto);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string prompt, string retry, int32 attempts, valuetype Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.#ctor(System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="prompt" Type="System.String" />
+        <Parameter Name="retry" Type="System.String" />
+        <Parameter Name="attempts" Type="System.Int32" />
+        <Parameter Name="promptStyle" Type="Microsoft.Bot.Builder.Dialogs.PromptStyle" />
+      </Parameters>
+      <Docs>
+        <param name="prompt">   The prompt. </param>
+        <param name="retry">    What to display on retry. </param>
+        <param name="attempts"> Maximum number of attempts. </param>
+        <param name="promptStyle"> Style of the prompt <see cref="T:Microsoft.Bot.Builder.Dialogs.PromptStyle" /></param>
+        <summary>   Constructor for a prompt confirmation dialog. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultRetry">
+      <MemberSignature Language="C#" Value="public string DefaultRetry { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultRetry" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.DefaultRetry" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="No">
+      <MemberSignature Language="C#" Value="public const int No = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 No = (1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.No" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            Index of no descriptions.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="public static string[] Options { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property string[] Options" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.Options" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The yes, no options for confirmation prompt
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Patterns">
+      <MemberSignature Language="C#" Value="public static string[][] Patterns { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property string[][] Patterns" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.Patterns" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[][]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The patterns for matching yes/no responses in the confirmation prompt.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryParse">
+      <MemberSignature Language="C#" Value="protected override bool TryParse (Microsoft.Bot.Connector.IMessageActivity message, out bool result);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool TryParse(class Microsoft.Bot.Connector.IMessageActivity message, bool result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.TryParse(Microsoft.Bot.Connector.IMessageActivity,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="Microsoft.Bot.Connector.IMessageActivity" />
+        <Parameter Name="result" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yes">
+      <MemberSignature Language="C#" Value="public const int Yes = 0;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 Yes = (0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.Yes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            Index of yes descriptions.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

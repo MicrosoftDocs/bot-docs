@@ -1,0 +1,65 @@
+<Type Name="FacebookQuickReply+ContentTypes" FullName="Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply+ContentTypes">
+  <TypeSignature Language="C#" Value="public sealed class FacebookQuickReply.ContentTypes" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit FacebookQuickReply/ContentTypes extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentTypes" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContentTypes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentTypes.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Location">
+      <MemberSignature Language="C#" Value="public const string Location;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Location" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentTypes.Location" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public const string Text;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Text" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentTypes.Text" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,73 @@
+<Type Name="FormCanceledException" FullName="Microsoft.Bot.Builder.FormFlow.FormCanceledException">
+  <TypeSignature Language="C#" Value="public class FormCanceledException : OperationCanceledException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit FormCanceledException extends System.OperationCanceledException" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.FormCanceledException" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.OperationCanceledException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>   Exception generated when form filling is canceled by user quit or exception. </summary>
+    <remarks>In the case of user quit or an exception the strongly typed exception <see cref="T:Microsoft.Bot.Builder.FormFlow.FormCanceledException`1" />
+                     is actually thrown, but this provides simple access to the Last step.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FormCanceledException (string message, Exception inner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormCanceledException.#ctor(System.String,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="inner" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">Exception message.</param>
+        <param name="inner">Inner exception.</param>
+        <summary>   Constructor with message and inner exception. </summary>
+        <remarks>In the case of quit by the user, the inner exception will be null.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Completed">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; Completed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; Completed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.FormCanceledException.Completed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>   The names of completed steps. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Last">
+      <MemberSignature Language="C#" Value="public string Last { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Last" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.FormCanceledException.Last" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>   Name of the step that quit or threw an exception. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
