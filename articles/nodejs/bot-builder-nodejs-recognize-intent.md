@@ -18,7 +18,7 @@ Sometimes a bot needs to understand and interpret what the user is trying to do.
 
 Intent recognizers interpret the user’s intent based on user input. Once the intent has been determined, recognizers will return a named intent that can be used to trigger additional actions and dialogs within the bot. For example, the user enters `cancel`. Even though that's not expected input for the current dialog, that word is defined in the recognizer as `CancelIntent`. When the recognizer returns `CancelIntent`, a goodbye message dialog is triggered and the bot exits the conversation.
 
-> ![NOTE]
+> [!NOTE]
 > Be aware that the recognizer will run for every message received from the user. 
 
 ## Use the built-in regular expression recognizer
@@ -67,10 +67,16 @@ For more information on LUIS see [Understanding Natural Language][LUISConcepts].
 
 [LUIS]: https://www.luis.ai/
 [IMessage]: http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.imessage
+
 [IntentRecognizerSetOptions]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iintentrecognizersetoptions.html
+
 [LuisRecognizer]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.luisrecognizer
+
 [LUISSample]: https://github.com/Microsoft/BotBuilder/blob/master/Node/examples/basics-naturalLanguage/app.js
+
 [LUISConcepts]: https://docs.botframework.com/en-us/node/builder/guides/understanding-natural-language/
 [DisambiguationSample]: https://github.com/Microsoft/BotBuilder/tree/master/Node/examples/feature-onDisambiguateRoute
-[IDisambiguateRouteHandler: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.idisambiguateroutehandler.html
+
+[IDisambiguateRouteHandler]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.idisambiguateroutehandler.html
+
 [RegExpRecognizer]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.regexprecognizer.html
