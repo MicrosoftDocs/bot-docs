@@ -28,8 +28,8 @@ Dialogs may or may not have graphical interfaces. They may contain buttons, text
 
 For a detailed walkthrough of managing conversation flow using dialogs and the Bot Builder SDK, see:
 
-- [Manage conversation flow using dialogs with the Bot Builder SDK for .NET](~/dotnet/manage-conversation-flow.md)
-- [Manage conversation flow using dialogs with the Bot Builder SDK for Node.js](~/nodejs/manage-conversation-flow.md)
+- [Manage conversation flow using dialogs with the Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
+- [Manage conversation flow using dialogs with the Bot Builder SDK for Node.js](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
 
 ##Dialog stack
 

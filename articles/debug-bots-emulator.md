@@ -117,7 +117,7 @@ For information about troubleshooting issues with your bot, see:
 
 [TroubleshootingGuide]: ~/troubleshoot-general-problems.md
 [TroubleshootingAuth]: ~/troubleshoot-authentication-problems.md
-[NodeGetStarted]: ~/nodejs/bot-builder-node-quickstart.md
+[NodeGetStarted]: ~/nodejs/bot-builder-nodejs-quickstart.md
 [CSGetStarted]: ~/dotnet/bot-builder-dotnet-quickstart.md
 [ActivityConcept]: bot-framework-concept-activity.md
 

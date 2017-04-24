@@ -16,15 +16,15 @@ ROBOTS: Index, Follow
 To create a bot that collects input from a user via a guided conversation, choose the [Form template](~/azure/azure-bot-service-templates.md) when creating the bot using Azure Bot Service. A form bot is designed to collect a specific set of information from the user. For example, a bot that is designed to obtain a user's sandwich order would need to collect information such as type of bread, choice of toppings, size of sandwich, etc. This article provides a walkthrough of the code that is automatically generated when you create a bot using the Form template and describes some ways in which you might extend the bot's default functionality.
 
 > [!NOTE]
-> If you choose C# as your development language, the bot will use [FormFlow](~/dotnet/formflow.md) to manage 
+> If you choose C# as your development language, the bot will use [FormFlow](~/dotnet/bot-builder-dotnet-formflow.md) to manage 
 > the guided conversation. If you choose Node.js as your development language, the bot will use 
-> [waterfalls](~/nodejs/prompts.md) to manage the guided conversation. 
+> [waterfalls](~/nodejs/bot-builder-nodejs-prompts.md) to manage the guided conversation. 
 > A bot that is created using the Form template routes messages in the same manner as described for the 
 > [Basic template](~/azure/azure-bot-service-template-basic.md).
 
 ## Code walkthrough
 
-Most activities that the bot receives will be of [type](~/dotnet/activities.md) `Message` and will will contain the text and attachments that the user sent to the bot. To process an incoming message, the bot posts the message to `MainDialog` (in **MainDialog.csx**). 
+Most activities that the bot receives will be of [type](~/dotnet/bot-builder-dotnet-activities.md) `Message` and will will contain the text and attachments that the user sent to the bot. To process an incoming message, the bot posts the message to `MainDialog` (in **MainDialog.csx**). 
 
 [!code-csharp[process Message activity](~/includes/code/azure-bot-service-template-form.cs#processMessage)]
 
@@ -40,20 +40,20 @@ The `MessageReceivedAsync` method creates the form and begins to ask the user th
 
 ### BasicForm.csx
 
-The `BasicForm` class defines the form. Its public properties define the information that the bot needs to collect from the user. Each `Prompt` property uses [Pattern Language](~/dotnet/formflow-pattern-language.md) to customize the text that prompts the user for the corresponding piece of information.
+The `BasicForm` class defines the form. Its public properties define the information that the bot needs to collect from the user. Each `Prompt` property uses [Pattern Language](~/dotnet/bot-builder-dotnet-formflow-pattern-language.md) to customize the text that prompts the user for the corresponding piece of information.
 
 [!code-csharp[BasicForm](~/includes/code/azure-bot-service-template-form.cs#basicForm)]
 
 ## Extend default functionality
 
-The Form template provides a good foundation that you can build upon and customize to create a bot that collects input from a user via a guided conversation. For example, you could edit the `BasicForm` class within **BasicForm.csx** to define the set of information that your bot needs to collect from the user. To learn more about FormFlow, see [FormFlow in .NET](~/dotnet/formflow.md).
+The Form template provides a good foundation that you can build upon and customize to create a bot that collects input from a user via a guided conversation. For example, you could edit the `BasicForm` class within **BasicForm.csx** to define the set of information that your bot needs to collect from the user. To learn more about FormFlow, see [FormFlow in .NET](~/dotnet/bot-builder-dotnet-formflow.md).
 
 ## Additional Resources
 
 - [Create a bot with the Azure Bot Service](~/azure/azure-bot-service-quickstart.md)
 - [Templates in the Azure Bot Service](~/azure/azure-bot-service-templates.md)
-- [FormFlow in .NET](~/dotnet/formflow.md) 
-- [Waterfalls in Node.js](~/nodejs/prompts.md)
+- [FormFlow in .NET](~/dotnet/bot-builder-dotnet-formflow.md) 
+- [Waterfalls in Node.js](~/nodejs/bot-builder-nodejs-prompts.md)
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub repository</a>
 - [Bot Builder SDK for .NET](~/dotnet/index.md)
 - [Bot Builder SDK for Node.js](~/nodejs/index.md)

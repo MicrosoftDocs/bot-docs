@@ -61,8 +61,8 @@ Consider the following scenario:
 Although you may be tempted to design every dialog within your bot to listen for, and respond appropriately to, certain keywords, this approach is not recommended. <!-- because it makes the bot too slow? -->
 
 > [!TIP]
-> <b>Do</b>: Implement global message handlers (using [.NET](~/dotnet/global-handlers.md) or 
-> [Node.js](~/nodejs/global-handlers.md)) that will examine user input for the keywords that you specify (ex: "help", "cancel", "start over", etc.) and respond appropriately. 
+> <b>Do</b>: Implement global message handlers (using [.NET](~/dotnet/bot-builder-dotnet-global-handlers.md) or 
+> [Node.js](~/nodejs/bot-builder-nodejs-global-handlers.md)) that will examine user input for the keywords that you specify (ex: "help", "cancel", "start over", etc.) and respond appropriately. 
 > 
 > <b>Don't</b>: Design every dialog to examine user input for a list of keywords. 
 

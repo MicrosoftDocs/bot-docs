@@ -57,12 +57,12 @@ This capability enables a number of useful scenarios:
 
 ## Sample code
 
-The <a href="https://github.com/Microsoft/BotFramework-WebChat" target="_blank">open source web chat control</a> is available via GitHub. For details about how you can implement the backchannel mechanism using the open source web chat control and the Bot Builder SDK for Node.js, see [Use the backchannel mechanism](~/nodejs/backchannel.md).
+The <a href="https://github.com/Microsoft/BotFramework-WebChat" target="_blank">open source web chat control</a> is available via GitHub. For details about how you can implement the backchannel mechanism using the open source web chat control and the Bot Builder SDK for Node.js, see [Use the backchannel mechanism](~/nodejs/bot-builder-nodejs-backchannel.md).
 
 ## Additional resources
 
 - [Direct Line API][directLineAPI]
-- [Activity types](~/dotnet/activities.md)
-- [Use the backchannel mechanism](~/nodejs/backchannel.md)
+- [Activity types](~/dotnet/bot-builder-dotnet-activities.md)
+- [Use the backchannel mechanism](~/nodejs/bot-builder-nodejs-backchannel.md)
 
 [directLineAPI]: https://docs.botframework.com/en-us/restapi/DirectLine3/#navtitle

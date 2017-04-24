@@ -111,9 +111,9 @@ As described in this article, the <a href="https://github.com/microsoftdx/authbo
 
 ## Additional resources
 
-- [Dialogs](~/dotnet/dialogs.md)
-- [Manage conversation flow using .NET](~/dotnet/manage-conversation-flow.md)
-- [Manage conversation flow using Node.js](~/nodejs/manage-conversation-flow.md)
+- [Dialogs](~/dotnet/bot-builder-dotnet-dialogs.md)
+- [Manage conversation flow using .NET](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
+- [Manage conversation flow using Node.js](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
 - [Add smarts to your bot with Microsoft Cognitive Services](~/intelligent-bots.md)
 - [Add language understanding to your bot](~/cognitive-services-add-bot-language.md)
 

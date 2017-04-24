@@ -27,7 +27,7 @@ When you use the Question and Answer template to create a bot with the Azure Bot
 
 ## Code walkthrough
 
-Most activities that the bot receives will be of [type](~/dotnet/activities.md) `Message` and will contain the text and attachments that the user sent to the bot. To process an incoming message, the bot posts the message to `BasicQnAMakerDialog` (in **BasicQnAMakerDialog.csx**). 
+Most activities that the bot receives will be of [type](~/dotnet/bot-builder-dotnet-activities.md) `Message` and will contain the text and attachments that the user sent to the bot. To process an incoming message, the bot posts the message to `BasicQnAMakerDialog` (in **BasicQnAMakerDialog.csx**). 
 
 This code snippet uses C# to post an incoming message to `BasicQnAMakerDialog`.
 

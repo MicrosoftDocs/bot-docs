@@ -49,9 +49,9 @@ npm install --save restify
 ## Get started
 
 <!-- TODO: Make sure this section is consistent with Resources and doesn't duplicate it -->
-Once you've installed the SDK, see [Get Started](~/nodejs/bot-builder-node-quickstart.md) for instructions on how to quickly build and test a simple bot.
+Once you've installed the SDK, see [Get Started](~/nodejs/bot-builder-nodejs-quickstart.md) for instructions on how to quickly build and test a simple bot.
 
-For information on concepts that help you understand the rest of the documentation, see [Key concepts](~/nodejs/concepts.md).
+For information on concepts that help you understand the rest of the documentation, see [Key concepts](~/nodejs/bot-builder-nodejs-concepts.md).
 
 <!--
 * [Glossary](~/bot-framework-glossary.md): Covers terminology that is used throughout the SDK documentation. -->
@@ -121,17 +121,17 @@ You can find other samples in the [Bot Builder SDK Samples repository](https://g
 
 The following articles get you started building bots using the Bot Builder SDK for Node.js.
 
-* [Get Started](~/nodejs/bot-builder-node-quickstart.md): Quickly build and test a simple bot by following instructions in this step-by-step tutorial.
-* [Key concepts](~/nodejs/concepts.md): Learn about key concepts in the Bot Builder SDK for Node.js.
+* [Get Started](~/nodejs/bot-builder-nodejs-quickstart.md): Quickly build and test a simple bot by following instructions in this step-by-step tutorial.
+* [Key concepts](~/nodejs/bot-builder-nodejs-concepts.md): Learn about key concepts in the Bot Builder SDK for Node.js.
 
 The following task-focused how-to guides demonstrate various features of the Bot Builder SDK for Node.js.
 
-* [Manage conversation flow](~/nodejs/manage-conversation-flow.md)
-* [Triggering actions](~/nodejs/global-handlers.md)
-* [Recognize user intent](~/nodejs/recognize-intent.md)
-* [Send a rich card](~/nodejs/send-card-buttons.md)
-* [Send attachments](~/nodejs/send-receive-attachments.md)
-* [Saving user data](~/nodejs/save-user-data.md)
+* [Manage conversation flow](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
+* [Triggering actions](~/nodejs/bot-builder-nodejs-global-handlers.md)
+* [Recognize user intent](~/nodejs/bot-builder-nodejs-recognize-intent.md)
+* [Send a rich card](~/nodejs/bot-builder-nodejs-send-card-buttons.md)
+* [Send attachments](~/nodejs/bot-builder-nodejs-send-receive-attachments.md)
+* [Saving user data](~/nodejs/bot-builder-nodejs-save-user-data.md)
 
 
 If you encounter problems or have suggestions regarding the Bot Builder SDK for Node.js, 
@@ -141,4 +141,4 @@ for support and feedback.
 
 [DesignGuide]: ~/bot-design-principles.md 
 [DesignPatterns]: ~/bot-design-pattern-task-automation.md 
-[HowTo]: ~/nodejs/use-default-message-handler.md 
+[HowTo]: ~/nodejs/bot-builder-nodejs-use-default-message-handler.md 

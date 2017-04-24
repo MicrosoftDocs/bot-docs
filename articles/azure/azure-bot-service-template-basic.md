@@ -19,11 +19,11 @@ To create a bot that uses dialogs to respond to user input, choose the [Basic te
 
 ### Run.csx
 
-When a user posts a message, it is sent to the `Run` method in **Run.csx** as an [Activity](~/dotnet/activities.md). The bot reacts to an incoming activity by first attempting to authenticate the request. If request validation fails, the bot responds with Unauthorized.
+When a user posts a message, it is sent to the `Run` method in **Run.csx** as an [Activity](~/dotnet/bot-builder-dotnet-activities.md). The bot reacts to an incoming activity by first attempting to authenticate the request. If request validation fails, the bot responds with Unauthorized.
 
 [!code-csharp[Authenticate request](~/includes/code/azure-bot-service-template-basic.cs#authenticateRequest)]
 
-If request validation succeeds, the bot evaluates the [Activity type](~/dotnet/activities.md) to determine how it will process the activity. You may want to update this portion of the code to add processing logic for other types of activities. For example, if your bot saves user state, you would want to process a `DeleteUserData` activity by deleting any data that it had previously stored for the user.
+If request validation succeeds, the bot evaluates the [Activity type](~/dotnet/bot-builder-dotnet-activities.md) to determine how it will process the activity. You may want to update this portion of the code to add processing logic for other types of activities. For example, if your bot saves user state, you would want to process a `DeleteUserData` activity by deleting any data that it had previously stored for the user.
 
 [!code-csharp[Evaluate activity type](~/includes/code/azure-bot-service-template-basic.cs#processMessage)]
 
@@ -52,14 +52,14 @@ The `AfterResetAsync` method processes the user’s response to `PromptDialog`. 
 
 ## Extend default functionality
 
-The Basic template provides a good foundation that you can build upon to create a bot that is capable of handling more advanced interactions with users. For example, you might add more prompts to collect information from the user, add [media attachments](~/dotnet/add-media-attachments.md) or [rich cards](~/dotnet/add-rich-card-attachments.md) to messages to provide a richer user experience, or model a more complex conversation flow by using [dialog chains](~/dotnet/dialogs.md#dialog-chains). To learn more about developing bots in .NET, see [Develop with .NET](~/dotnet/index.md). To learn more about developing bots in Node.js, see [Develop with Node.js](~/nodejs/index.md).
+The Basic template provides a good foundation that you can build upon to create a bot that is capable of handling more advanced interactions with users. For example, you might add more prompts to collect information from the user, add [media attachments](~/dotnet/bot-builder-dotnet-add-media-attachments.md) or [rich cards](~/dotnet/bot-builder-dotnet-add-rich-card-attachments.md) to messages to provide a richer user experience, or model a more complex conversation flow by using [dialog chains](~/dotnet/bot-builder-dotnet-dialogs.md#dialog-chains). To learn more about developing bots in .NET, see [Develop with .NET](~/dotnet/index.md). To learn more about developing bots in Node.js, see [Develop with Node.js](~/nodejs/index.md).
 
 ## Additional Resources
 
 - [Create a bot with the Azure Bot Service](~/azure/azure-bot-service-quickstart.md)
 - [Templates in the Azure Bot Service](~/azure/azure-bot-service-templates.md)
-- [Dialogs in .NET](~/dotnet/dialogs.md)
-- [Dialogs in Node.js](~/nodejs/understand-dialogs.md)
+- [Dialogs in .NET](~/dotnet/bot-builder-dotnet-dialogs.md)
+- [Dialogs in Node.js](~/nodejs/bot-builder-nodejs-understand-dialogs.md)
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub repository</a>
 - [Bot Builder SDK for .NET](~/dotnet/index.md)
 - [Bot Builder SDK for Node.js](~/nodejs/index.md)

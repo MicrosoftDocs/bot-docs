@@ -77,7 +77,7 @@ The bot you write exposes a Microsoft Bot Framework-compatible API on the Intern
 
 <!--
 There are different ways for your bot to communicate with the Connector.
-The Node.JS or .NET SDKs provide built-in methods for connecting to the service. A simple bot using Node.JS demonstrates this in [Create a bot with the Bot Builder SDK for Node.js](~/nodejs/bot-builder-node-quickstart.md).
+The Node.JS or .NET SDKs provide built-in methods for connecting to the service. A simple bot using Node.JS demonstrates this in [Create a bot with the Bot Builder SDK for Node.js](~/nodejs/bot-builder-nodejs-quickstart.md).
 Bots built using .NET can also use the Bot Framework Connector SDK .NET template. -->
 
 The Direct Line API enables you to host your bot in your app rather than using one of the automatically configured channels. The Direct Line API is intended for developers writing their own client applications, web chat controls, mobile apps, or service-to-service applications that will talk to their bot.

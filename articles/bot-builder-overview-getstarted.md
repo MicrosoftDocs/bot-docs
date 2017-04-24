@@ -18,7 +18,7 @@ The Bot Builder SDK for .NET leverages C# to provide a familiar way for .NET dev
 
 ## Bot Builder SDK for Node.js
 
-The Bot Builder SDK for Node.js leverages frameworks like Express & Restify to provide a familiar way for JavaScript developers to write bots. The [detailed walkthrough](~/nodejs/bot-builder-node-quickstart.md) guides you through creating a bot with the Bot Builder SDK for Node.js. 
+The Bot Builder SDK for Node.js leverages frameworks like Express & Restify to provide a familiar way for JavaScript developers to write bots. The [detailed walkthrough](~/nodejs/bot-builder-nodejs-quickstart.md) guides you through creating a bot with the Bot Builder SDK for Node.js. 
 
 ## Azure Bot Service
 The Azure Bot Service provides an integrated environment that is purpose-built for bot development, 
