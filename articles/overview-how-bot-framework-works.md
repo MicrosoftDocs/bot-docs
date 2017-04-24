@@ -46,7 +46,7 @@ The Bot Builder SDKs are provided as open source on GitHub (see [BotBuilder](htt
 
 ### Build it yourself
 
-As an alternative to using the Bot Builder SDK or the Azure Bot Service, you can create a bot with any programming language by using the Bot Framework's [REST API](/en-us/connector/overview/).
+As an alternative to using the Bot Builder SDK or the Azure Bot Service, you can create a bot with any programming language by using the Bot Framework's [REST API](http://docs.botframework.com/en-us/connector/overview/).
 
 ## Teach your bot
 

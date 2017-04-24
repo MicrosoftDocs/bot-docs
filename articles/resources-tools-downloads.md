@@ -4,13 +4,9 @@ description: Download tools and resources for developing bots with the Bot Frame
 keywords: tools, resources, downloads, emulator, sdk
 author: RobStand
 ms.author: rstand
-
-
 manager: rstand
-ms.topic: resources-downloads-article
-
+ms.topic: article
 ms.prod: bot-framework
- Resources
 ms.date: 03/01/2017
 ms.reviewer:
 
@@ -43,12 +39,9 @@ Download tools and resources for developing bots with the Bot Framework.
     npm install botbuilder
 ```
 
-## Archive
-
-### Tools
+## Tools
 
 * [Bot Framework Emulator (Windows)](https://download.botframework.com/bf-v3/tools/emulator/publish.htm)
 * [Bot Framework Emulator (Console)](https://aka.ms/bfemulator)  
-    * [Instructions on how to use the console app on Mac and Linux with Mono](/en-us/tools/bot-framework-emulator/#mac-and-linux-support-using-command-line-emulator)
-* [Vorlon.js](http://vorlonjs.io) is a remote debugging tool for JavaScript code. You can use it to inspect any bot created in Node.js ([read why and how](http://aka.ms/botinspector)). With it, you can easily see your dialog stacks and understand what is happening inside of your bot.
+* [Vorlon.js](http://vorlonjs.io) is a remote debugging tool for JavaScript code. You can use it to inspect any bot created in Node.js ([read why and how](http://aka.ms/botinspector)). You can easily see your dialog stacks and understand what is happening inside of your bot.
 
