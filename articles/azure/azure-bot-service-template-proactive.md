@@ -6,7 +6,7 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 4/13/2017
+ms.date: 04/13/2017
 ms.reviewer: 
 ROBOTS: Index, Follow
 ---
