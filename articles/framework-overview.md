@@ -20,7 +20,7 @@ The Bot Framework is a platform and set of tools for building, connecting, and d
 With the Bot Framework, you can design conversations in your bot to be freeform. Your bot can also have more guided interactions where it provides the user choices or actions. The conversation can use simple text strings or more complex rich cards that contain text, images, and action buttons. And you can add natural language interactions, which let your users interact with your bots in a natural and expressive way.
 
 > [!TIP]
-> The type of bots that you can build with the Bot Framework are also commonly called <a href="https://en.wikipedia.org/wiki/Chatbot">chatbots</a>.
+> The types of bots that you can build with the Bot Framework are also commonly called <a href="https://en.wikipedia.org/wiki/Chatbot">chatbots</a>.
 
 Let's look at an example of a bot that schedules salon appointments. The bot understands the user's intent, presents appointment options using action buttons, displays the user's selection when they tap an appointment, and then sends a thumbnail card that contains the appointment's specifics.
 <p>
