@@ -1,0 +1,23 @@
+- Getting Started
+	- What is the Bot Framework?
+	- Scenarios
+	- Key Concepts
+	- SDKs and Tools
+- Developing Bots
+	- Build Your First Bot in 5 Minutes
+	- Designing Bots
+	- Deploying and Publishing Bots
+	- Reference
+- Intelligence
+	- Add Intelligence to Your Bot
+	- Language Understanding
+	- Vision
+	- Speech
+	- Knowledge
+	- Search
+	- Location Control
+- Resources
+	- Get the Bot Framework SDK
+	- Bot Framework Emulator
+	- Downloads
+	- Frequently Asked Questions  
