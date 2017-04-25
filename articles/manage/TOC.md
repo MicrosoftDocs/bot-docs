@@ -6,5 +6,5 @@
 ## [Slack](~/thirdparty-channels/channel-slack.md)
 ## [Telegram](~/thirdparty-channels/channel-telegram.md)
 ## [Twilio](~/thirdparty-channels/channel-twilio.md)
-<!-- # [Publish to the directory](../portal-submit-bot-directory.md) -->
+# [Publish to the directory](../portal-submit-bot-directory.md)
 # [Add the web chat control](../embed-chat-control-web-page.md)
