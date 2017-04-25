@@ -189,7 +189,7 @@ description:
                                         </div>
                                         <div class="cardText">
                                             <h3>Reference</h3>
-                                            <p>Explore the Bot Framework class libraries for .NET and Node.js.</p>
+                                            <p>Explore the Bot Framework class libraries.</p>
                                         </div>
                                     </div>
                                 </div>
