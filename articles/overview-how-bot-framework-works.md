@@ -1,96 +1,73 @@
 ---
 title: How the Bot Framework works | Microsoft Docs
-description: The key features of the Bot Framework will help you build powerful and intelligent bots.
-keywords:
-author: RobStand
-ms.author: rstand
+description: Explore the core concepts of building, deploying, and publishing bots with the Bot Framework.
+author: JaymeMPerlman
+ms.author: v-jaype
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date:
-ms.reviewer:
+ms.date: 4/25/2017
 ROBOTS: Index, Follow
 ---
->[!WARNING]
-> Content is still under development.
-
 # How the Bot Framework works
+The Bot Framework provides a platform and a comprehensive toolkit to simplify common development tasks, debugging, securing, managing, and connecting bots to popular communication services. The Bot Framework provides tools and services to help you build, deploy, and publish bots, including the Bot Builder SDK, the Developer Portal, and the Bot Connector.
 
-In order to perform even the most basic tasks, a bot must be able to:
+## Building bots
+Bots are apps that offer a conversational interface as the best solution to the user's needs. Like other apps, bot development starts with your business logic and data. Choose the model your bot will use to interact with users. Users can interact with your bot with inline forms and cards, simple menus, or natural language. You can build your bot with the Bot Builder SDK using C# or Node.js, or you can use the Azure Bot Service (currently in preview). Add artificial intelligence to your bot with Cognitive Services. Register your bot on the Developer Portal and connect it to users through the channels they use, such as Facebook, Kik, and Microsoft Teams. When you are ready to share your bot with the world, deploy it to a cloud service such as Microsoft Azure.
 
-1. Accept the user's input and provide relevant output
-2. Understand the user's language and intent
-3. Communicate with the user via a preferred channel
+![Architecture overview diagram](~/media/how-it-works/architecture-resize.png)
 
-Bots that are able to communicate with users in a comfortable, helpful way are considered intelligent.
-The Bot Framework provides both a platform and comprehensive toolkit for building, connecting, and deploying intelligent bots.
+### Bot Builder
+To help you build bots with C# or Javascript, the Bot Framework includes Bot Builder SDKs. The SDKs provide libraries, samples, and tools to help you build and debug bots. The SDKs contain built-in dialogs to handle user interactions ranging from a basic Yes/No to complex disambiguation. Built-in recognizers and event handlers help guide the user through a conversation. 
 
-## Before you begin, design
+The [Bot Builder SDK for .NET](~/dotnet/index.md) leverages C# to provide a familiar way for .NET developers to write bots. It is a powerful framework for constructing bots that can handle both free-form interactions and more guided conversations where the user selects from possible values.
 
-Think about what you want your bot to do and how. Whether it's simple text Q&A or a rich, interactive exchange, consider what value the bot will provide. To help, we've compiled some [design documentation](bot-design-best-practices.md) to help you plan for key user interactions.
+The [Bot Builder SDK for Node.js](~/nodejs/index.md) provides a familiar way for Node.js developers to write bots. You can use it to build a wide variety of conversational user interfaces, from simple prompts to free-form conversations.
+The conversational logic for your bot is hosted as a web service. The Bot Builder SDK for Node.js uses restify, a popular framework for building web services, to create the bot's web server. The SDK is also compatible with Express and the use of other web app frameworks is possible with some adaptation.
 
-## Choose your development environment
+### Azure Bot Service
+The Azure Bot Service provides an integrated environment purpose-built for bot development. You can write a bot, connect, test, deploy, and manage it from your web browser with no separate editor or source control required. For simple bots, you may not need to write code at all. It is powered by Microsoft Bot Framework and Azure Functions, which means that your bot will run in a serverless environment on Azure that will scale based upon demand.
 
-The Bot Framework provides a spectrum of development options.
+## Core concepts
+Understanding the core concepts of the Bot Framework will help you build bots that provide the features your users need. These concepts are covered in more detail in the [Develop with .NET](~/dotnet/bot-builder-dotnet-concepts.md) and [Develop with Node.js](~/nodejs/bot-builder-nodejs-concepts.md) sections of the documentation.
 
-### Build with the Bot Service
+### Channel
+A channel is the connection between the Bot Framework and communication apps such as Skype, Slack, Facebook Messenger, Office 365 mail, and others. Use the Developer Portal to configure each channel you want the bot to be available on. The Skype and web chat channels are automatically pre-configured.
 
-The Azure Bot Service provides an integrated environment purpose-built for bot development. You can write a bot in C# or Node.js, connect, test, deploy and manage it from your web browser with no separate editor or source control required. For simple bots, you can instantiate an instance of a service without writing code at all.
+### Bot Connector
+The Bot Connector service connects a bot to one or more channels and handles the message exchange between them. This connecting service allows the bot to communicate over many channels without manually designing a specific message for each channel's schema.
 
-### Build with the SDK
+### Activity
+The Connector uses an `activity` object to exchange information between bot and channel. Any communication going back and forth is an `activity` of some type. Some activities are invisible to the user, such as the notification that the bot has been added to a user's contact list. 
 
-The SDKs provide features such as dialogs, APIs and built-in prompts to support more complex user interactions without having to write it from scratch.
-The Bot Builder SDKs are provided as open source on GitHub (see [BotBuilder](https://github.com/Microsoft/BotBuilder)).
-- [Node.js SDK](https://github.com/Microsoft/BotBuilder/tree/master/Node)
-- [.NET SDK](https://github.com/Microsoft/BotBuilder/tree/master/CSharp)
+### Message
+A `message` is the most common type of `activity`. A message can be as simple as a text string or contain attachments, interactive elements, and rich cards. For example, adding a bot to the user's contact list could trigger the bot to respond with a `message` containing a string saying "Thank you!" and an image of a happy face.
 
-### Build it yourself
+### Dialog
+Dialogs help organize the logic in your bot and manage [conversation flow](~/bot-design-conversation-flow.md). Dialogs are arranged in a [stack](~/bot-design-conversation-flow.md#dialog-stack), and the top dialog in the stack processes all incoming messages until it is closed or a different dialog is invoked. For example, a *BrowseProducts* dialog would contain only the logic and UI related to the user browsing the products; clicking the *Order* button would invoke the *PlaceOrder* dialog.
 
-As an alternative to using the Bot Builder SDK or the Azure Bot Service, you can create a bot with any programming language by using the Bot Framework's [REST API](http://docs.botframework.com/en-us/connector/overview/).
+## Test and debug
+The [Bot Framework Emulator](~/debug-bots-emulator.md) is a desktop application that allows developers to test and debug their bots. The Emulator can communicate with a bot running on `localhost` or remotely through a tunnel. As you chat with your bot, the emulator displays messages as they would appear in the web chat UI and logs JSON requests and responses for later evaluation.
 
-## Teach your bot
+You may also use the debugger included in [Visual Studio Code](~/debug-bots-locally-vscode.md). Debugging some languages may require additional extensions and configuration.
 
-Use the Microsoft Cognitive Services APIs with the Bot Builder SDK to craft smart, helpful bots. 
-[Intelligent bots](~/intelligent-bots.md) <!-- link was ~/en-us/bot-intelligence/getting-started/) but build said it was broken --> respond more naturally, understand speech, search for data, determine user location, and even recognize a user's intent when input isn't quite as clear as it could be.
+## Deploy to the cloud
+You can host your bot on any reachable service, such as Azure. If you build a bot with the Bot Builder SDK for .NET, you can deploy directly from [Visual Studio](~/deploy-bot-visual-studio.md). You can also deploy a bot with continuous integration from a git repository or Github.
 
-## Connect your bot
-Channel features
+## Register and publish
+When you finish your bot, [register](~/portal-register-bot.md) on the Developer Portal. The [Developer Portal](https://dev.botframework.com/) provides a dashboard interface to perform many bot management and connectivity tasks such as configuring channels, managing credentials, connecting to Azure App Insights, or generating web embed codes. 
 
-## Debug and test
-### Use the emulator
-The Bot Framework Emulator is a desktop application that allows bot developers to test and debug their bots. The Bot Framework Emulator can communicate with your bot wherever it is running; on localhost, or remotely in the cloud.
-For details on using the emulator, see [Bot Framework Emulator](~/debug-bots-emulator.md).
-### or don't
+You can use the Developer Portal to provide channel configuration information to the target channel(s). Many channels require a bot to have an account on the channel; some also require an application.
 
-## Publish with the portal
-When you finish writing your bot, use the Developer Portal to [register](~/portal-register-bot.md) and [publish](~/portal-submit-bot-directory.md) it. Registering your bot gets you the the bot’s app ID and password used for authentication.
+**Registering** your bot with the Bot Framework generates unique credentials used for authentication. After registering, you can use the Developer Portal to perform maintenance and connectivity tasks. **Publishing** your bot makes it discoverable on the channels your bot is configured to support.
 
-Publishing the bot submits it for review. For information about the review process, see Bot review guidelines. If your bot passes review, it’s added to the Bot Directory. The Bot Directory is a public directory of all bots that are registered and published with Microsoft Bot Framework. 
-### or don't
+## Make your bot smarter
+Connect the Microsoft Cognitive Services APIs to enhance your bot. Smart conversational bots respond more naturally, understand spoken commands, guide the user's search for data, determine user location, and even recognize a user's intention to interpret what the user meant to do. [Learn more][smartbots] about adding intelligence to a bot.
 
-You are encouraged to publish your bot because it makes it discoverable.
+## Next steps
+- [Design](~/bot-design-principles.md)
+- [Quickstart](~/bot-builder-overview-getstarted.md)
+- [Botbuilder SDK for .NET](~/dotnet/index.md)
+- [Botbuilder SDK for Node.js](~/nodejs/index.md)
 
-<!--
-## Bot Connector
-The Bot Connector service provides the connection from your bot to text/SMS, Skype, Slack, Facebook Messenger, Office 365 mail and other channels.
-The bot you write exposes a Microsoft Bot Framework-compatible API on the Internet, which allows the Bot Framework Connector service to forward messages from your bot to a user, and send user messages back to your bot. The Connector also takes care of authentication messages. -->
-
-<!--
-There are different ways for your bot to communicate with the Connector.
-The Node.JS or .NET SDKs provide built-in methods for connecting to the service. A simple bot using Node.JS demonstrates this in [Create a bot with the Bot Builder SDK for Node.js](~/nodejs/bot-builder-nodejs-quickstart.md).
-Bots built using .NET can also use the Bot Framework Connector SDK .NET template. -->
-
-The Direct Line API enables you to host your bot in your app rather than using one of the automatically configured channels. The Direct Line API is intended for developers writing their own client applications, web chat controls, mobile apps, or service-to-service applications that will talk to their bot.
-The framework also provides an embeddable Web chat control that lets you host from your website.
-
-## Developer Portal
-
-
-## Bot Directory
-The Bot Directory is a public directory of all bots that are registered and published with Microsoft Bot Framework. You are encouraged to always publish your bot because it makes it more discoverable.
-For most channels, you can share your bot with users as soon as you configure the channel.
-Users can select your bot in the directory and add it to one or more of the configured channels that they use, or use the Web chat control to try it.
-
-<!-- If you configured your bot to work with Skype, you must publish your bot to the Bot Directory and Skype apps (see Publishing your bot) before users can start using it.
-Although Skype is the only channel that requires you to publish your bot to the directory, you are encouraged to always publish your bot because it makes it more discoverable. -->
-
+[smartbots]: ~/intelligent-bots.md
