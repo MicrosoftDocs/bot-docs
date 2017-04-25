@@ -78,4 +78,4 @@ The Question and Answer template provides a good foundation that you can build u
 
 [qnaMaker]: https://qnamaker.ai/
 
-[qnaMakerDocs]:[https://qnamaker.ai/Documentation]
+[qnaMakerDocs]:https://qnamaker.ai/Documentation

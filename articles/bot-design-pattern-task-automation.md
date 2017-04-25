@@ -121,4 +121,4 @@ For a complete sample that shows how to implement simple task automation using t
 - [Manage conversation flow using .NET](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
 - [Manage conversation flow using Node.js](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
 
-[directLineAPI]: https://docs.botframework.com/en-us/restapi/DirectLine3/#navtitle
+[directLineAPI]: https://docs.botframework.com/en-us/restapi/directline3/#navtitle
