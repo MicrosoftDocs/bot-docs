@@ -6,7 +6,7 @@ ms.author: rstand
 
 
 manager: rstand
-ms.topic: ~/resources/support-article
+ms.topic: article
 
 ms.prod: bot-framework
  Support

@@ -24,7 +24,7 @@ The `Attachments` property of the `Activity` object contains an array of `Attach
 
 ## Types of rich cards
 
-A rich card comprises a title, description, link, and image(s). 
+A rich card comprises a title, description, link, and images. 
 A message can contain multiple rich cards, displayed in either list format or carousel format.
 The Bot Framework currently supports seven types of rich cards: 
 

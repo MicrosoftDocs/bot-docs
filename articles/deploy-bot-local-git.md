@@ -6,7 +6,7 @@ ms.author: rstand
 
 
 manager: rstand
-ms.topic: deploy-local-repo-article
+ms.topic: article
 ms.prod: bot-framework
 
 ms.date:
@@ -18,12 +18,6 @@ ROBOTS: Index, Follow
 Azure allows continuous integration of your Git repository with your Azure deployment.
 With continuous integration, when you change and build your bot's code, the bot will automatically deploy to Azure.
 This tutorial shows you how to deploy a bot to Azure via continuous integration from local Git.
-
-## Prerequisites
-TODO: Finalize this list
-- Azure account
-- Git
-- etc.
 
 [!include[Pre-deployment considerations](~/includes/snippet-deploy-considerations.md)]
 

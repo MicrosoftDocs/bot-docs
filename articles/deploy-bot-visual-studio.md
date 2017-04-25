@@ -6,7 +6,7 @@ ms.author: rstand
 
 
 manager: rstand
-ms.topic: deploy-visual-studio-article
+ms.topic: article
 ms.prod: bot-framework
 
 ms.date:

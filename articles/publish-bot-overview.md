@@ -29,7 +29,7 @@ After you have built and tested your bots, you need to register your bot,  deplo
 Before others can use your bot, you must deploy it to the cloud. You have a few different options:
 
 - [Deploy from a local git repository](~/deploy-bot-local-git.md) using continuous integration
-- [Deploy from Github](~/deploy-bot-github.md) using continous integration
+- [Deploy from Github](~/deploy-bot-github.md) using continuous integration
 - [Deploy from Visual Studio](~/deploy-bot-visual-studio.md)
 
 ## Configure your bot to run on one or more conversation channels

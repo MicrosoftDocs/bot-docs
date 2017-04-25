@@ -80,7 +80,7 @@ for the user that made the request.
 
 ## endOfConversation 
 
-A bot receives an **endOfConversation** activity to indidate that the user has ended the conversation. 
+A bot receives an **endOfConversation** activity to indicate that the user has ended the conversation. 
 A bot may send an **endOfConversation** activity to indicate to the user that the conversation is ending. 
 
 

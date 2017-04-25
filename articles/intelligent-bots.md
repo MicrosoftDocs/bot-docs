@@ -4,7 +4,7 @@ description: Add intelligence to your bots with Microsoft Cognitive Services to 
 author: RobStand
 ms.author: rstand
 manager: rstand
-ms.topic: overview-article
+ms.topic: article
 ms.prod: bot-framework
 ms.date: 03/29/2017
 ms.reviewer:

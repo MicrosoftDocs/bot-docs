@@ -4,7 +4,7 @@ description: Learn how to add a bot to the Bot Directory.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
-ms.topic: publish-article
+ms.topic: article
 ms.prod: bot-framework
 
 ms.date: 02/06/2017
@@ -71,7 +71,7 @@ If no issues were found during review, [Microsoft adds your bot to the Bot Direc
 
 1. Your bot must do something meaningful that adds value to the user; it may not simply echo the user's input.
 
-2. The bot's profile image, name, hastags and description must NOT:  
+2. The bot's profile image, name, hashtags and description must NOT:  
   
     - Be offensive or explicit (see [Developer Code of Conduct](https://aka.ms/bf-conduct))  
     - Include third party trademarks, service marks or logos  

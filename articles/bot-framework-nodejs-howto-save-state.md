@@ -4,7 +4,7 @@ description: Learn how to save user data from a conversational application (bot)
 author: DeniseMak
 ms.author: v-demak
 manager: rstand
-ms.topic: develop-article
+ms.topic: article
 ms.prod: bot-framework
 ms.service: Bot Builder
 ms.date: 02/24/2017

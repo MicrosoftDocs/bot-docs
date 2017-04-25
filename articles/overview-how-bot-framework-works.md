@@ -35,7 +35,7 @@ The Bot Framework provides a spectrum of development options.
 
 ### Build with the Bot Service
 
-The Azure Bot Service provides an integrated environment purpose-built for bot development. You can write a bot in C# or Node.js, connect, test, deploy and manage it from your web broweser with no separate editor or source control required. For simple bots, you can instantiate an instance of a service without writing code at all.
+The Azure Bot Service provides an integrated environment purpose-built for bot development. You can write a bot in C# or Node.js, connect, test, deploy and manage it from your web browser with no separate editor or source control required. For simple bots, you can instantiate an instance of a service without writing code at all.
 
 ### Build with the SDK
 

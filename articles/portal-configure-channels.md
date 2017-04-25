@@ -4,7 +4,7 @@ description: Learn how to configure a bot to run on one or more channels using t
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
-ms.topic: publish-article
+ms.topic: article
 ms.prod: bot-framework
 
 ms.date: 02/06/2017

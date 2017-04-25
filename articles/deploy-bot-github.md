@@ -4,7 +4,7 @@ description: Learn how to deploy a bot to Azure from Github and enable continuou
 author: RobStand
 ms.author: rstand
 manager: rstand
-ms.topic: deploy-remote-repo-article
+ms.topic: article
 ms.prod: bot-framework
 ms.date:
 ms.reviewer: rstand
@@ -37,7 +37,7 @@ Next, log in to the <a href="http://portal.azure.com/" target="_blank">Azure Por
 
 ![Create an Azure web app](~/media/azure-create-webapp.png)
 
-## Step 3: Set up continous deployment from your GitHub repository to Azure
+## Step 3: Set up continuous deployment from your GitHub repository to Azure
 
 Specify GitHub as the **Deployment Source** for your web app.
 When you are asked to authorize Azure access to your GitHub repo, choose the branch from which to deploy.

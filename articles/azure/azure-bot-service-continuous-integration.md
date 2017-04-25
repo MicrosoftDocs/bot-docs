@@ -24,7 +24,7 @@ This article describes how to enable and disable continuous integration for a bo
 
 ## Enable continuous integration
 
-You can enable continous integration for your application by completing three simple steps.
+You can enable continuous integration for your application by completing three simple steps.
 
 ### Create an empty repository within a source control system
 

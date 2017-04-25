@@ -35,7 +35,7 @@ Reduce bouncing the user out from the messaging canvas to destination pages & ap
 Brief but meaningful responses with a bias towards text-based answers that are glanceable, card, image or button answers that are crisp, clear, actionable. Human-like typing speed.
 
 ### Utilize the interaction patterns of the messaging canvas and the mobile OS
-Use themes, UI, and an IA familiar to users. Users should know what to expect when they engage with bot’s responses (e.g., tap on a photo.)
+Use themes, UI, and an IA familiar to users. Users should know what to expect when they engage with bot responses (e.g., tap on a photo.)
 
 ### Have a clear POV on what scenarios the bot will handle brilliantly
 Know the user problem, the value proposition of your bot, and how your bot is better than other currently available solutions.
@@ -53,7 +53,7 @@ Always strive for these key principles:
 
 ### Craft an engaging welcome message
 
-Always introduce your Bot to members of the chat.  
+Always introduce your bot to members of the chat.  
 
 Let users know how they can interact with your Bot (e.g., list command interfaces your Bot supports).
 
@@ -62,7 +62,7 @@ Engage them by requesting a response and wait for the user to respond before con
 
 ### Emotion, variety and personality are vital
 
-Unless you want to deliberately project a robotic persona, make your Bot colorful and rich in expression. Try using different font styles, emoticons, or other media in your Bot's script. Try to vary the responses when the same topic or question comes up multiple times in a conversation. Over time, based on the tone and character of your Bot, the user should build a personality for your Bot in their mind.
+Unless you want to deliberately project a robotic persona, make your Bot colorful and rich in expression. Try using different font styles, emoticons, or other media in your bot's script. Try to vary the responses when the same topic or question comes up multiple times in a conversation. Over time, based on the tone and character of your Bot, the user should build a personality for your Bot in their mind.
 
 
 ### Be judicious with data and message frequency
@@ -83,4 +83,4 @@ If the Bot needs to take time to perform complex actions, implement a "wait" not
 
 
 ### Keep the user in control
-The user must not feel constrained or forced by the Bot's script. Let the user tailor the Bot to suit their needs. For example, if the Bot sends updates on five categories, but the user is only interested in two, let the user turn off updates for the other three. Let the user select from options in your script wherever appropriate.  
+The user must not feel constrained or forced by the bot's script. Let the user tailor the Bot to suit their needs. For example, if the Bot sends updates on five categories, but the user is only interested in two, let the user turn off updates for the other three. Let the user select from options in your script wherever appropriate.  

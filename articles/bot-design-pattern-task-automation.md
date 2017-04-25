@@ -70,7 +70,7 @@ Then it invokes the `PromptDate` dialog to collect the user's date of birth.
 > In this example, John chose to implement the logic for collecting the user's phone number 
 > and date of birth by using two separate dialogs. 
 > The approach not only simplifies the code required for each dialog, but also increases the odds of these 
-> dialogs being useable by other scenarios in the future. 
+> dialogs being usable by other scenarios in the future. 
 
 The specification describes the `ResetPassword` dialog.
 

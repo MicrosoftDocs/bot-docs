@@ -4,7 +4,7 @@ description: Learn how to register a bot with the Bot Framework.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
-ms.topic: publish-article
+ms.topic: article
 ms.prod: bot-framework
 
 ms.date: 02/06/2017

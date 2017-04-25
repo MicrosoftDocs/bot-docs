@@ -7,7 +7,7 @@ ms.author: rstand
 
 
 manager: rstand
-ms.topic: ID-fields-article
+ms.topic: article
 
 ms.prod: bot-framework
 
@@ -47,7 +47,7 @@ Every bot registered in the Bot Framework developer has a bot handle.
 Example: `FooBot`
 
 A bot handle represents a bot's registration with the online Bot Framework. This registration is associated
-with an HTTP webhook endpoint and registations with channels.
+with an HTTP webhook endpoint and registrations with channels.
 
 The Bot Framework dev portal ensures uniqueness of bot handles. The portal performs a case-insensitive
 uniqueness check (meaning that case variations of bot handle are treated as a single handle) although this is

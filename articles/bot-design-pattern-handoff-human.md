@@ -36,7 +36,7 @@ There are many ways that a bot may determine that it needs to transfer control o
 including: 
 
 #### User-driven menus
-Perhaps the simplest way for a bot to handle this dilemma is to present the user with a menu of options. Tasks that the bot can handle independently appear in the menu abov a link labeled "Chat with an agent." This type of implementation requires no advanced machine learning or natural language understanding. The bot simply transfers control of the conversation to a human agent when the user selects the "Chat with an agent" option. 
+Perhaps the simplest way for a bot to handle this dilemma is to present the user with a menu of options. Tasks that the bot can handle independently appear in the menu above a link labeled "Chat with an agent." This type of implementation requires no advanced machine learning or natural language understanding. The bot simply transfers control of the conversation to a human agent when the user selects the "Chat with an agent" option. 
 
 #### Scenario-driven
 The bot may decide whether or not to transfer control based upon whether or not it determines that it is capable of handling the scenario at hand. The bot collects some information about the user's request and then 
