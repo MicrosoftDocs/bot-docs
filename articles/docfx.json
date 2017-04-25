@@ -37,7 +37,8 @@
       "uhfHeaderId": "MSDocsHeader-BotFramework",
       "breadcrumb_path": "/bot-framework/breadcrumb/TOC.json",
       "author": "RobStand",
-      "ms.prod": "bot-framework"
+      "ms.prod": "bot-framework",
+      "searchScope": ["Bot Framework"]
     },
     "fileMetadata": {
       "ms.date":
