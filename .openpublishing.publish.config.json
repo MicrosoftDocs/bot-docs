@@ -3,12 +3,14 @@
   "need_generate_intellisense": false,
   "docsets_to_publish": [
     {
-
       "docset_name": "bot-framework",
       "build_source_folder": "articles",
       "build_output_subfolder": "bot-framework",
       "locale": "en-us",
-      "monikers": ["botbuilder-3.5.5","botconnector-1.1.0"],
+      "monikers": [
+        "botbuilder-3.5.5",
+        "botconnector-1.1.0"
+      ],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -20,10 +22,9 @@
     }
   ],
   "notification_subscribers": [
-    "3b0e6dd6.microsoft.com@amer.teams.ms",
-    "BotFrameworkContentTeam@service.microsoft.com"
+    "BotFrameworkContentTeam@service.microsoft.com",
+    "3b0e6dd6.microsoft.com@amer.teams.ms"
   ],
-  "template_folder": "_themes",
   "branches_to_filter": [],
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
@@ -35,5 +36,7 @@
       "branch_mapping": {}
     }
   ],
-  "need_generate_pdf_url_template": false
+  "branch_target_mapping": {},
+  "need_generate_pdf_url_template": false,
+  "template_folder": "_themes"
 }
