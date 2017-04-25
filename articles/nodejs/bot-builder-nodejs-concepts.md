@@ -75,7 +75,7 @@ The following articles walk you through building your first bot and adding basic
 * [Ask questions](~/nodejs/bot-builder-nodejs-prompts.md)
 * [Listen for commands](~/nodejs/bot-builder-nodejs-global-handlers.md)
 
-The following task-focused code samples demonstrate features of the Bot Builder SDK for Node.js at more depth.
+The following task-focused articles demonstrate features of the Bot Builder SDK for Node.js.
 
 * [Triggering actions](~/nodejs/bot-builder-nodejs-global-handlers.md)
 * [Recognize user intent](~/nodejs/bot-builder-nodejs-recognize-intent.md)
@@ -84,17 +84,8 @@ The following task-focused code samples demonstrate features of the Bot Builder 
 * [Saving user data](~/nodejs/bot-builder-nodejs-save-user-data.md)
 * [How to send a typing indicator](~/nodejs/bot-builder-nodejs-send-typing-indicator.md)
 
-<!-- 
-* [Channel inspector][ChannelInspector]
-* [UniversalBot][UniversalBot]
-* [ChatConnector][ChatConnector]
-* [session object][Session]
-* [session.send][SessionSend]
-* [session.sendTyping][SessionSendTyping]
-* [triggerAction][triggerAction]
 
---> 
-<!-- TODO: Update links to point to new docs -->
+
 
 [PersistConversationData]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iuniversalbotsettings.html#persistconversationdata
 [UniversalBot]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.universalbot.html

@@ -165,7 +165,6 @@ If you run the previous waterfall example, you’ll notice that while it will as
 After the last step of the waterfall is reached it will simply start over with the next message. 
 To add logic to remember the user's name so that we only have to ask it once, see [Save user data](~/nodejs/bot-builder-nodejs-save-user-data.md) for an example. 
 
-<!-- TODO: Make this a section on global handlers/ actions -->
 
 ## Handling cancel
 
@@ -282,7 +281,6 @@ var bot = new builder.UniversalBot(connector, function (session) {
 
 ## Send a typing indicator for long-running tasks
 
-<!-- TODO: This is related to sending images -->
 
 Users of your bot will expect a timely response to their message. If your bot performs some long running task like calling a server or executing a query, without giving the user some indication that the bot heard them, the user could get impatient and send additional messages to the bot. Many channels support the sending of a typing indication to simply show the user that their message was received and is being processed.
 
@@ -308,9 +306,8 @@ For a complete sample that shows how to manage a conversation by using dialogs i
 - [Send and receive attachments][SendAttachments]
 - [Send cards with buttons][SendCardWithButtons]
 - [Recognize user intent][RecognizeUserIntent]
-- [Save user data](~/nodejs/bot-builder-nodejs-save-user-data.md)
+- [Save user data][SaveUserData]
 
-<!-- TODO: Update links to point to new docs when available -->
 
 [SendAttachments]: ~/nodejs/bot-builder-nodejs-send-receive-attachments.md
 [SendCardWithButtons]: ~/nodejs/bot-builder-nodejs-send-card-buttons.md

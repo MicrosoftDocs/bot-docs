@@ -48,7 +48,6 @@ npm install --save restify
 
 ## Get started
 
-<!-- TODO: Make sure this section is consistent with Resources and doesn't duplicate it -->
 Once you've installed the SDK, see [Get Started](~/nodejs/bot-builder-nodejs-quickstart.md) for instructions on how to quickly build and test a simple bot.
 
 For information on concepts that help you understand the rest of the documentation, see [Key concepts](~/nodejs/bot-builder-nodejs-concepts.md).
@@ -58,9 +57,6 @@ For information on concepts that help you understand the rest of the documentati
 
 Before you start building your bot, read [Designing bots][DesignGuide] to learn about principles of bot design and [Patterns][DesignPatterns] for guidance on what features your bot needs in order to best address the top user scenarios. 
 
-<!--
-To learn about how your bot processes user messages using dialogs and handlers, see [Managing conversation flow](~/nodejs/manage-conversation-flow.md). -->
-
 
 Once you understand basic principles, the [How-to guides][HowTo] give you step-by-step instructions on adding features to your bot.
 
@@ -68,11 +64,11 @@ Once you understand basic principles, the [How-to guides][HowTo] give you step-b
 
 The <a href="https://github.com/Microsoft/BotBuilder" target="_blank">BotBuilder</a> GitHub repository 
 contains numerous code samples that show how to build bots using the Bot Builder SDK for Node.js. 
-To access these code samples, clone the repository and navigate to the **Samples** folder.
+To access these code samples, clone the repository and navigate to the **examples** folder.
 
 ```
 git clone https://github.com/Microsoft/BotBuilder.git
-cd BotBuilder/Node/Samples
+cd BotBuilder/Node/examples
 ```
 
 The <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">BotBuilder-Samples</a> GitHub repository 
@@ -126,7 +122,7 @@ The following articles get you started building bots using the Bot Builder SDK f
 
 The following task-focused how-to guides demonstrate various features of the Bot Builder SDK for Node.js.
 
-* [Manage conversation flow](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
+* [Respond to messages](~/nodejs/bot-builder-nodejs-use-default-message-handler.md)
 * [Triggering actions](~/nodejs/bot-builder-nodejs-global-handlers.md)
 * [Recognize user intent](~/nodejs/bot-builder-nodejs-recognize-intent.md)
 * [Send a rich card](~/nodejs/bot-builder-nodejs-send-card-buttons.md)

@@ -63,9 +63,17 @@ The Bot Builder SDK includes a [sample][DisambiguationSample] that demonstrates 
 
 To learn more about the actions you can associate with a recognized intent, see [Managing conversation flow](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md) and [Trigger actions using global handlers](~/nodejs/bot-builder-nodejs-global-handlers.md).
 
-For more information on LUIS see [Understanding Natural Language][LUISConcepts]. <!-- TODO: links to new Intelligence section? -->
+For more information on LUIS see the [LUIS documentation][LUISAzureDocs].
+
+The [Alarm bot sample][LUISSample] demonstrates how to use a **LuisRecognizer** to build a simple alarm bot. 
+
+The [LUIS Bot sample][LUISBotSample] demonstrates how to build a bot that is integrated with a LUIS.ai application for understanding natural language.
+
 
 [LUIS]: https://www.luis.ai/
+
+[LUISAzureDocs]: https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/Home
+
 [IMessage]: http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.imessage
 
 [IntentRecognizerSetOptions]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iintentrecognizersetoptions.html
@@ -75,8 +83,13 @@ For more information on LUIS see [Understanding Natural Language][LUISConcepts].
 [LUISSample]: https://github.com/Microsoft/BotBuilder/blob/master/Node/examples/basics-naturalLanguage/app.js
 
 [LUISConcepts]: https://docs.botframework.com/en-us/node/builder/guides/understanding-natural-language/
+
 [DisambiguationSample]: https://github.com/Microsoft/BotBuilder/tree/master/Node/examples/feature-onDisambiguateRoute
 
 [IDisambiguateRouteHandler]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.idisambiguateroutehandler.html
 
 [RegExpRecognizer]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.regexprecognizer.html
+
+[AlarmBot]: https://github.com/Microsoft/BotBuilder/blob/master/Node/examples/basics-naturalLanguage/app.js
+
+[LUISBotSample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/intelligence-LUIS

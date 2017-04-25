@@ -64,8 +64,8 @@ To add logic to remember the user's name so that we only have to ask for it once
 ## Additional resources
 
 - [Save user data](~/nodejs/bot-builder-nodejs-save-user-data.md)
+- [Prompts class][PromptsRef]
 
-<!-- TODO: Update links to point to new docs when available -->
 
 [SendAttachments]: ~/nodejs/bot-builder-nodejs-send-receive-attachments.md
 [SendCardWithButtons]: ~/nodejs/bot-builder-nodejs-send-card-buttons.md
@@ -87,6 +87,7 @@ To add logic to remember the user's name so that we only have to ask for it once
 
 [entity]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ientity.html
 [ResolveTime]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.entityrecognizer.html#resolvetime
+[PromptsRef]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts.html
 [PromptsText]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts.html#text
 [IPromptTextResult]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iprompttextresult.html
 [PromptsConfirm]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts.html#confirm

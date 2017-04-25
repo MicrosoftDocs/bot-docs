@@ -16,7 +16,6 @@ ROBOTS: Index, Follow
 
 This article demonstrates how your bot can handle events such as a user joining a conversation or adding a bot to a contacts list. 
 
- <!-- todo: Session and Converstaion and PrivateConversation --> 
 
 ## Greet a user on conversation join
 The Bot Framework provides the [conversationUpdate][conversationUpdate] event for notifying your bot when a user joins or leaves a conversation.

@@ -102,8 +102,7 @@ Direct Line is suitable for:
 * Webpages where you need more customization than the [embeddable Web Chat channel][WebChat] offers
 * Service-to-service applications
 
-<!-- TODO: Update links when new content is available -->
 [DirectLineAPI]: http://docs.botframework.com/en-us/restapi/directline/
-[Support]: https://docs.botframework.com/en-us/support/
-[WebChat]: https://docs.botframework.com/en-us/support/embed-chat-control2/
-[RestAuth]: https://docs.botframework.com/en-us/restapi/authentication/#changes
+[Support]: resources-support.md
+[WebChat]: embed-chat-control-web-page.md
+

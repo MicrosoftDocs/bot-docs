@@ -34,28 +34,30 @@ var bot = new builder.UniversalBot(connector);
 server.post('/api/messages', connector.listen());
 
 // root dialog
-bot.dialog('/', ...
-```
-Next, the root dialog invokes a 'New Order' dialog. <!-- TODO: Replace this example - it shouldn't use the obsolete IntentDialog -->
-
-```javascript
-bot.dialog('/', new builder.IntentDialog()
-// Did the user type 'order'?
-.matchesAny([/order/i], [ 
-    function (session) {
-        // Invoke the new order dialog
-        session.beginDialog('/newOrder');
+bot.dialog('/', [
+    function (session, args, next) {
+        if (!session.userData.name) {
+            // The root dialog invokes a 'profile' dialog.
+            session.beginDialog('/profile');
+        } else {
+            next();
+        }
     },
-
-    function (session, result) {
-        // Store the value that the new order dialog returns
-        var resultFromNewOrder = result.response;
-
-        session.send('New order dialog just told me this: %s', resultFromNewOrder);
-        // Close the root dialog
-        session.endDialog(); 
+    function (session, results) {
+        session.send('Hello %s!', session.userData.name);
     }
-])
+]);
+
+// profile dialog
+bot.dialog('/profile', [
+    function (session) {
+        builder.Prompts.text(session, 'Hi! What is your name?');
+    },
+    function (session, results) {
+        session.userData.name = results.response;
+        session.endDialog();
+    }
+]);
 ```
 
 ## Dialog handlers

@@ -15,18 +15,11 @@ ROBOTS: Index, Follow
 
 # Save user data 
 
-<!--
-> [!div class="op_single_selector"]
-> * [.NET](~/dotnet/bot-builder-dotnet-howto-save-user-data.md)
-> * [Node.js](~/nodejs/bot-builder-nodejs-save-user-data.md)
-
--->
-
 The Bot Framework SDK supports a storage system which it uses to track information such as which dialog is active for a conversation,
 which step of a dialog is active, and data that the bot remembers about the user. 
 
 The [ChatConnector][ChatConnector] class automatically provides an implementation of this storage system, that uses Bot Framework Service to store this data for you. 
-You can access stored data using [session.userData][session_userData]. <!-- todo: Session and Converstaion and PrivateConversation --> 
+You can access stored data using [session.userData][session_userData]. 
 
 ## Save the user's name
 
@@ -64,15 +57,10 @@ var bot = new builder.UniversalBot(connector, [
 ```
 
 
-## Next steps
+## Additional resources
 
-To learn more, see:
+* [session.userData][session_userData]
 
-> [!NOTE]
-> To do: Add links to other articles about managing state.
-
-
-<!-- TODO: UPDATE LINKS TO POINT TO NEW REFERENCE -->
 [SendTyping]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#sendtyping
 [IMessage]: http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.imessage
 [ChatConnector]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.chatconnector.html

@@ -28,7 +28,7 @@ These Frequently Asked Questions (FAQ) for the Bot Framework can help you with t
 
 ### My bot is stuck!  How can I reset the conversation?
 
-You can use the command `/deleteprofile` to delete the `User/PrivateConversation` bot data bag state and reset your bot.  Note that some channels interpret slash-commands natively, so it may be necessary to send the command with a space in front (`" /deleteprofile"`)
+You can use the command `/deleteprofile` to delete the `User/PrivateConversation` bot data bag state and reset your bot.  Note that some channels interpret slash-commands natively, so it may be necessary to send the command with a space in front (`" /deleteprofile"`).
 
 ### How can I reset the Bot Framework Emulator's settings?
 
@@ -222,7 +222,7 @@ Yes, each state store (that is, the User store, Conversation store, etc.) may be
 
 ### How do I version the bot data stored through the State API?
 
-The State Service allow you to persist progress through the dialogs in a conversation, so that a user can return to a conversation with a bot days later without losing their position.  But if you change your bot's code, the bot data property bags stored through the State API are not automatically cleared.  You will have to decide whether the bot data should be cleared based on whether your newer code is compatible with older versions of your data.  You can accomplish this in a few ways:
+The State Service allows you to persist progress through the dialogs in a conversation, so that a user can return to a conversation with a bot days later without losing their position.  But if you change your bot's code, the bot data property bags stored through the State API are not automatically cleared.  You will have to decide whether the bot data should be cleared based on whether your newer code is compatible with older versions of your data.  You can accomplish this in a few ways:
 
 * During development of your bot, if you want to manually reset the conversation's dialog stack and state, you can use the ` /deleteprofile` command (with the leading space so it's not interpreted by the channel) to clear out the state.
 * During production usage of your bot, you can version your bot data so that if you bump the version, the associated data is cleared.  This can be accomplished in Node using the exiting middleware or in C# using an IPostToBot implementation.
@@ -234,7 +234,7 @@ If the dialog stack cannot be deserialized correctly (due to serialization forma
 
 ### What are the possible machine-readable resolutions of the LUIS builtin date, time, duration, and set entities?
 
-There is a list of examples available in the [Pre-built entities section](https://www.luis.ai/Help/#PreBuiltEntities) of the LUIS documentation.
+There is a list of examples available in the [Pre-built entities section][LUISPreBuiltEntities] of the LUIS documentation.
 
 ### How can I use more than the maximum number of LUIS intents?
 
@@ -276,8 +276,8 @@ The [GitHub issues](https://github.com/Microsoft/BotBuilder/issues) has an activ
 
 
 
-<!-- TODO: Update links to point to newly migrated content when it exists -->
-[DashboardTestingConnection]: (https://docs.botframework.com/en-us/csharp/builder/sdkreference/gettingstarted.html#testing)
-[BotFrameworkIDGuide]: (https://docs.botframework.com/en-us/bot-framework-guide-id/)
-[StateAPI]: (https://docs.botframework.com/en-us/restapi/state/)
+
+[LUISPreBuiltEntities]: https://docs.microsoft.com/en-us/azure/cognitive-services/luis/pre-builtentities
+[BotFrameworkIDGuide]: resources-identifiers-guide.md
+[StateAPI]: https://docs.botframework.com/en-us/restapi/state/
 [TroubleshootingAuth]: troubleshoot-authentication-problems.md

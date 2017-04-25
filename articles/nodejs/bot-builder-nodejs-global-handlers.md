@@ -13,7 +13,7 @@ ROBOTS: Index, Follow
 
 # Support user keyword responses
 
-<!--[!include[Introduction to global message handlers](~/includes/snippet-global-handlers-intro.md)] -->
+
 Users commonly attempt to access certain functionality within a bot by using keywords like "help", "cancel", or "start over". 
 This often occurs in the middle of a conversation, when the bot is expecting a different response. 
 By implementing **actions**, you can design your bot to gracefully handle such requests.
@@ -21,12 +21,12 @@ The handlers will examine user input for the keywords that you specify, such as 
 
 ![how users talk](~/media/designing-bots/capabilities/trigger-actions.png)
 
-<!-- TODO: The following note might only be true for trigger actions, not sure about other actions -->
+
 
 > [!NOTE]
 > By defining the logic in an **action**, you're making it accessible to all dialogs. 
 > However, individual dialogs and prompts can be configured to safely ignore the keywords when necessary.
-<!-- matches -->
+
 
 Either user utterances or button clicks can *trigger* an action, which is associated with a [dialog](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html).
 If 'matches' is specifed, the action will listen for the user to say a word or a phrase that triggers the action.  The 'matches' method can take a regular expression or the name of a [recognizer][RecognizeIntent].
@@ -143,12 +143,7 @@ only in scope when a particular dialog is on the stack. The '/orderPizza' adds
 actions that let the user view their cart and check out but those actions can 
 only be taken while the user is actually ordering a pizza.
 
-<!-- 
-This sample also shows how support multi-level cancel within a bot. When 
-ordering a pizza you can cancel either an item you're adding or the entire 
-order.  The user can say "cancel order" at anytime to cancel the order but 
-saying just "cancel" will intelligently cancel either the current item being 
-added or the order depending on where the user is in the flow. -->
+
 
 ```javascript
 // Add dialog to manage ordering a pizza
@@ -209,16 +204,8 @@ bot.dialog('checkoutDialog', function (session) {
 });
 ```
 
-<!--
-View the "feature-onDisambiguateRoute" example to see how you'd prompt the user
-to disambiguate between "cancel item" and "cancel order".
--->
 
 ## End a conversation
-
-<!-- Delete this note 
-Should this be moved to where we discuss dialogs stacks
--->
 
 You may notice that within the previous examples, the [endConversation][EndConversation] method ends the conversation when the user's task is completed. The **endConversation** method not only clears the dialog stack, it also clears the [session.privateConversationData][PrivateConversationData] variable that is persisted to storage. That means you can use **privateConversationData** to save state relative to the current task. As long as you call **endConversation** when the task is completed all of this state is automatically cleaned up.
 

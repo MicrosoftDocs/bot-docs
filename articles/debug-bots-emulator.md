@@ -109,7 +109,7 @@ For information about troubleshooting issues with your bot, see:
 [inconshreveable]: https://inconshreveable.com/
 [BotFrameworkDevPortal]: https://dev.botframework.com/
 
-<!--TODO: Update these links to point to new content when it's available -->
+
 [EmulatorConnectPicture]: ~/media/emulator/emulator-connect_localhost_credentials.png
 [EmulatorNgrokPath]: ~/media/emulator/emulator-configure_ngrok_path.png
 [EmulatorNgrokMonitor]: ~/media/emulator/emulator-testbot-ngrok-monitoring.png
@@ -119,5 +119,5 @@ For information about troubleshooting issues with your bot, see:
 [TroubleshootingAuth]: ~/troubleshoot-authentication-problems.md
 [NodeGetStarted]: ~/nodejs/bot-builder-nodejs-quickstart.md
 [CSGetStarted]: ~/dotnet/bot-builder-dotnet-quickstart.md
-[ActivityConcept]: bot-framework-concept-activity.md
+
 

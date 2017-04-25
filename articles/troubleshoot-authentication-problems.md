@@ -22,15 +22,17 @@ This guide will walk you through steps to identify and correct common errors in 
 
 ## Step 1: Connect without a password on localhost
 
-*Note: This step requires the [Bot Framework Channel Emulator][Emulator].*
+> [!NOTE]
+> This step requires the [Bot Framework Channel Emulator][Emulator].
 
 The first step is to disable security on your bot and make sure you can connect to it.
 
-**Note**: Following this step will disable security on your bot, allowing unknown attackers to impersonate users. Only follow this step if you are operating in a protected debugging environment.
+> [!WARNING] 
+> Following this step will disable security on your bot, allowing unknown attackers to impersonate users. Only follow this step if you are operating in a protected debugging environment.
 
 To connect without a password, blank out the Microsoft App ID and Microsoft App Password inside your configuration file.
 
-***C# Bot Builder SDK web.config file:***
+**C# Bot Builder SDK web.config file:**
 
 ```xml
 <appSettings>
@@ -40,7 +42,7 @@ To connect without a password, blank out the Microsoft App ID and Microsoft App 
 </appSettings>
 ```
 
-***Node.js Bot Builder:***
+**Node.js Bot Builder:**
 
 ```javascript
 var connector = new builder.ChatConnector({
@@ -76,13 +78,15 @@ If your message was successful, you have verified that your bot responds on loca
 
 ## Step 2: (Optional) Verify your App ID and Password are correct
 
-*Note: This step includes instructions to use [cURL](https://curl.haxx.se/download.html) to make an HTTP request. You can use alternatives like Postman if you know how.*
+> [!NOTE]
+> This step includes instructions to use [cURL](https://curl.haxx.se/download.html) to make an HTTP request. You can use alternatives like Postman if you know how.
 
 The next step is to confirm that your app ID and password are correct. You can visit the [Microsoft Application Registration Portal](https://apps.dev.microsoft.com) to see your list of apps. You can view your app IDs and generate new passwords there.
 
 To verify your app ID and password, create an HTTP request to the Microsoft login service. (This request should conform to the [Bot Framework authentication protocol](/en-us/restapi/authentication/), although you can follow the example below to create a request.)
 
-*Note: These instructions disable SSL verification for login.microsoftonline.com. Only perform this step on a secure network. Consider changing your app password after making this call.*
+> [!WARNING]
+> These instructions disable SSL verification for login.microsoftonline.com. Only perform this step on a secure network. Consider changing your app password after making this call.
 
 To issue the call, replace "APP_ID" and "APP_PASSWORD" in the following request with your own app ID and app password.
 
@@ -110,7 +114,8 @@ If your request was successful, you have verified that your app ID and password 
 
 ## Step 3: Enable security and run on localhost
 
-*Note: This step requires the [Bot Framework Channel Emulator][Emulator].*
+> [!IMPORTANT]
+> This step requires the [Bot Framework Channel Emulator][Emulator].
 
 The third step is to enable security and use the emulator to test that security works on your local machine. This step assumes the bot's endpoint is responding. If you're unsure if your bot's endpoint is working, perform step 1, above.
 
@@ -131,7 +136,7 @@ If you haven't created a registration, follow these steps. You may jump ahead if
 
 Now that your bot is created in the Bot Framework Developer Portal, you can enable its security. Make sure the Microsoft App Id and Microsoft App Password you generated earlier are present in your configuration file.
 
-***C# Bot Builder SDK web.config file:***
+**C# Bot Builder SDK web.config file:**
 
 ```xml
 <appSettings>
@@ -141,7 +146,7 @@ Now that your bot is created in the Bot Framework Developer Portal, you can enab
 </appSettings>
 ```
 
-***Node.js Bot Builder:***
+**Node.js Bot Builder:**
 
 ```javascript
 var connector = new builder.ChatConnector({
@@ -213,17 +218,20 @@ If your message was successful, you have verified that your bot responds while i
 
 ## Step 5: (Optional) Test in the cloud with the Emulator
 
-*Note: This step is optional. It can provide additional debugging information not available in step 3.*
+> [!NOTE]
+> This step requires the [Bot Framework Channel Emulator][Emulator].
 
-*Note: This step requires the [Bot Framework Channel Emulator][Emulator].*
+This step is optional. It can provide additional debugging information not available in step 3.
 
-*Note: This step also requires a tool to allow your bot to send an HTTP request back to the Bot Framework Emulator, running on your development machine. [ngrok.io](https://ngrok.io)\* offers an easy-to-use tool for routing messages from your bot back to the Emulator so they can be displayed. \*ngrok is not a Microsoft product.*
+This step also requires a tool to allow your bot to send an HTTP request back to the Bot Framework Emulator, running on your development machine. 
+ [ngrok.io](https://ngrok.io) offers an easy-to-use tool for routing messages from your bot back to the Emulator so they can be displayed. *ngrok is not a Microsoft product.*
 
 Start by ensuring your bot is deployed according to the instructions in step 3, above.
 
 Next, start a tool to open an HTTP tunnel from your bot back to the Emulator. [ngrok.io](https://ngrok.io) is an easy-to-use tool that routes traffic to your machine for you.
 
-**Note:** you MUST allow the bot to POST HTTP requests back to the Emulator to complete this test.
+> [!IMPORTANT]
+> You MUST allow the bot to POST HTTP requests back to the Emulator to complete this test.
 
 Configure ngrok with the host-header=rewrite option and the Channel Emulator default port of 9000.
 
@@ -257,7 +265,9 @@ Common errors:
 * Your Microsoft App Id or Microsoft App Password are incorrect. (See Step 2 to troubleshoot this.)
 * Your bot was unable to open an HTTP connection back to the Emulator to send a response. Make sure the "Emulator Url" field contains an internet-accessible URL that points back to the Emulator's port.
 
-If your message was successful, you have verified that your bot responds to the emulator while in the cloud and with security enabled. **Note**, however, that the emulator uses a special security model and a final test with the Bot Framework Developer Portal is necessary to establish that the bot is operating properly.
+If your message was successful, you have verified that your bot responds to the emulator while in the cloud and with security enabled. 
+
+The emulator uses a special security model and a final test with the Bot Framework Developer Portal is necessary to establish that the bot is operating properly.
 
 ## Step 5: Advanced troubleshooting
 
@@ -269,8 +279,9 @@ If you continue to encounter difficulties, here are some additional resources:
 
 
 
-[BotConnectuorAuthGuide]: https://docs.botframework.com/en-us/restapi/authentication/
-[Support]: resources-support.md
+
+[BotConnectorAuthGuide]: https://docs.botframework.com/en-us/restapi/authentication
+[Support]: ~/resources-support.md
 [Emulator]: ~/debug-bots-emulator.md
 [DevPortalTestPanel]: ~/media/troubleshooting-bot-framework-authentication_3.png
 [EmulatorPic2]: ~/media/troubleshooting-bot-framework-authentication_2.png
