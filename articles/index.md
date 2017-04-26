@@ -21,7 +21,7 @@ description:
                     <a href="#overview">Overview</a>
                     <ul id="overview" class="cardsC">
                         <li>
-                            <a href="/bot-framework/framework-overview">
+                            <a href="/bot-framework/overview-introduction-bot-framework">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -378,7 +378,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/bot-framework/troubleshooting-general-problems">
+                            <a href="/bot-framework/troubleshoot-general-problems">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">

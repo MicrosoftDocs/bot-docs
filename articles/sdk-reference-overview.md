@@ -1,17 +1,5 @@
 ---
-title: Bot Builder SDK reference | Microsoft Docs
-description: 
-keywords: 
-author: RobStand
-ms.author: rstand
-
-
-manager: rstand
-ms.topic: article
-ms.prod: bot-framework
-ms.date:
-ms.reviewer: rstand
-ROBOTS: Index, Follow
+redirect_url: https://docs.botframework.com/en-us/csharp/builder/sdkreference/namespaces.html
 ---
 # Bot Builder SDK reference
 
