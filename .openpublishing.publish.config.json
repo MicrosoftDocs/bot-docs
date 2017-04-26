@@ -1,5 +1,4 @@
 {
-  "need_generate_pdf": false,
   "need_generate_intellisense": false,
   "docsets_to_publish": [
     {
@@ -22,7 +21,6 @@
     }
   ],
   "notification_subscribers": [
-    "BotFrameworkContentTeam@service.microsoft.com",
     "3b0e6dd6.microsoft.com@amer.teams.ms"
   ],
   "branches_to_filter": [],
@@ -36,7 +34,12 @@
       "branch_mapping": {}
     }
   ],
-  "branch_target_mapping": {},
+  "branch_target_mapping": {
+    "live": [
+      "Publish",
+      "Pdf"
+    ]
+  },
   "need_generate_pdf_url_template": true,
   "template_folder": "_themes"
 }
