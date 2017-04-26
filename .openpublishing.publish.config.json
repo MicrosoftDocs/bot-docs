@@ -1,5 +1,4 @@
 {
-  "need_generate_pdf": false,
   "need_generate_intellisense": false,
   "docsets_to_publish": [
     {
@@ -11,7 +10,7 @@
         "botbuilder-3.5.5",
         "botconnector-1.1.0"
       ],
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
