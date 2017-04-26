@@ -1,6 +1,6 @@
 # Overview
 ## [About Bot Framework](framework-overview.md)
-## [How Bot Framework works](overview-how-bot-framework-works.md)
+## [How it works](overview-how-bot-framework-works.md)
 # [Quickstart](bot-builder-overview-getstarted.md)
 ## [Create your first bot with .NET](~/dotnet/bot-builder-dotnet-quickstart.md)
 ## [Create your first bot with Node.js](~/nodejs/bot-builder-nodejs-quickstart.md)

@@ -6,8 +6,7 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 
+ms.date: 04/25/2017
 ROBOTS: Index, Follow
 ---
 # Troubleshooting Bot Framework Authentication
@@ -27,7 +26,7 @@ This guide will walk you through steps to identify and correct common errors in 
 
 The first step is to disable security on your bot and make sure you can connect to it.
 
-> [!WARNING] 
+> [!WARNING]
 > Following this step will disable security on your bot, allowing unknown attackers to impersonate users. Only follow this step if you are operating in a protected debugging environment.
 
 To connect without a password, blank out the Microsoft App ID and Microsoft App Password inside your configuration file.
@@ -223,7 +222,7 @@ If your message was successful, you have verified that your bot responds while i
 
 This step is optional. It can provide additional debugging information not available in step 3.
 
-This step also requires a tool to allow your bot to send an HTTP request back to the Bot Framework Emulator, running on your development machine. 
+This step also requires a tool to allow your bot to send an HTTP request back to the Bot Framework Emulator, running on your development machine.
  [ngrok.io](https://ngrok.io) offers an easy-to-use tool for routing messages from your bot back to the Emulator so they can be displayed. *ngrok is not a Microsoft product.*
 
 Start by ensuring your bot is deployed according to the instructions in step 3, above.
@@ -265,7 +264,7 @@ Common errors:
 * Your Microsoft App Id or Microsoft App Password are incorrect. (See Step 2 to troubleshoot this.)
 * Your bot was unable to open an HTTP connection back to the Emulator to send a response. Make sure the "Emulator Url" field contains an internet-accessible URL that points back to the Emulator's port.
 
-If your message was successful, you have verified that your bot responds to the emulator while in the cloud and with security enabled. 
+If your message was successful, you have verified that your bot responds to the emulator while in the cloud and with security enabled.
 
 The emulator uses a special security model and a final test with the Bot Framework Developer Portal is necessary to establish that the bot is operating properly.
 
