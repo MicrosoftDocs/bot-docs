@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 02/21/2017
 ms.reviewer:
-ROBOTS: Index, Follow
+
 ---
 
 # Intercept messages
@@ -17,7 +17,7 @@ ROBOTS: Index, Follow
 <!--
 > [!div class="op_single_selector"]
 > * [.NET](~/dotnet/bot-builder-dotnet-howto-middleware.md)
-> * [Node.js](~/nodejs/bot-builder-nodejs-middleware.md)
+> * [Node.js](~/nodejs/bot-builder-nodejs-intercept-messages.md)
 >
 -->
 

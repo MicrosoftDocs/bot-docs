@@ -1,6 +1,6 @@
 ---
-title: Display a typing indicator | Microsoft Docs
-description: Teach your bot to display a "please wait" indicator while it is processing a request using the Bot Builder SDK for Node.js
+title: Send a typing indicator | Microsoft Docs
+description: Learn how to add a "please wait" indicator to tell a user a bot is processing a request using the Bot Builder SDK for Node.js
 author: DeniseMak
 ms.author: v-demak
 manager: rstand
@@ -9,10 +9,10 @@ ms.prod: bot-framework
 
 ms.date: 02/24/2017
 ms.reviewer:
-ROBOTS: Index, Follow
+
 ---
 
-# Display a typing indicator 
+# Send a typing indicator 
 
 
 Users expect a timely response to their messages. If your bot performs some long-running task like calling a server or executing a query without giving the user some indication that the bot heard them, the user could get impatient and send additional messages or just assume the bot is broken.
@@ -39,7 +39,7 @@ var bot = new builder.UniversalBot(connector, function (session) {
 
 Typing indicators are also useful when inserting a message delay to prevent messages that contain images from being sent out of order.
 
-To learn more, see [How to send a rich card](~/nodejs/bot-builder-nodejs-send-card-buttons.md).
+To learn more, see [How to send a rich card](~/nodejs/bot-builder-nodejs-send-rich-cards.md).
 
 
 ## Additional resources

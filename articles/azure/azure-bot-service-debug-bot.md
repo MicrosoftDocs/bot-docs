@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date: 04/13/2017
 ms.reviewer: 
-ROBOTS: Index, Follow
+
 ---
 
 # Debug an Azure Bot Service bot

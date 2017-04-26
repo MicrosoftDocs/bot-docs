@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date:
 ms.reviewer: rstand
-ROBOTS: Index, Follow
+
 ---
 # Design a bot's first user interaction
 

@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 03/29/2017
 ms.reviewer:
-ROBOTS: Index, Follow
+
 ---
 
 # Customize a form using FormBuilder

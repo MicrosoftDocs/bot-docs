@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 03/08/2017
 ms.reviewer: rstand
-ROBOTS: Index, Follow
+
 ---
 
 # Bot Builder SDK for Node.js
@@ -125,7 +125,7 @@ The following task-focused how-to guides demonstrate various features of the Bot
 * [Respond to messages](~/nodejs/bot-builder-nodejs-use-default-message-handler.md)
 * [Triggering actions](~/nodejs/bot-builder-nodejs-global-handlers.md)
 * [Recognize user intent](~/nodejs/bot-builder-nodejs-recognize-intent.md)
-* [Send a rich card](~/nodejs/bot-builder-nodejs-send-card-buttons.md)
+* [Send a rich card](~/nodejs/bot-builder-nodejs-send-rich-cards.md)
 * [Send attachments](~/nodejs/bot-builder-nodejs-send-receive-attachments.md)
 * [Saving user data](~/nodejs/bot-builder-nodejs-save-user-data.md)
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date: 04/17/2017
 ms.reviewer: 
-ROBOTS: Index, Follow
+
 ---
 
 # Create a bot using the Language understanding template

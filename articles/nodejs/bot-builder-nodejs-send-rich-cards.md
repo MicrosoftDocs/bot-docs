@@ -1,5 +1,5 @@
 ---
-title: Send rich cards | Microsoft Docs
+title: Add rich card attachments to messages | Microsoft Docs
 description: Learn how to send and receive interactive, engaging rich cards using the Bot Builder SDK for Node.js.
 author: DeniseMak
 ms.author: v-demak
@@ -9,10 +9,10 @@ ms.prod: bot-framework
 
 ms.date: 02/24/2017
 ms.reviewer:
-ROBOTS: Index, Follow
+
 ---
 
-# Send rich cards
+# Add rich card attachments to messages
 
 Several channels, like Skype & Facebook, support sending rich graphical cards to users with interactive buttons that the user clicks to initiate an action. 
 The SDK provides several message and card builder classes which can be used to create and send cards. The Bot Framework Connector Service will render these cards using schema native to the channel, supporting cross-platform communication. If the channel does not support cards, such as SMS, the Bot Framework will do its best to render a reasonable experience to users. 

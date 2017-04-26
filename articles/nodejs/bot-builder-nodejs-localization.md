@@ -1,6 +1,6 @@
 ---
 title: Support localization | Microsoft Docs
-description: Teach your bot to determine where the user is and enable localization functionality using the Bot Builder SDK for Node.js.
+description: Learn how to determine where the user is and enable localization functionality using the Bot Builder SDK for Node.js.
 author: DeniseMak
 ms.author: v-demak
 manager: rstand
@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 02/24/2017
 ms.reviewer: rstand
-ROBOTS: Index, Follow
+
 ---
 
 # Support localization

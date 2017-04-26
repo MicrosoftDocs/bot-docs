@@ -1,5 +1,5 @@
 ---
-title: Key concepts | Microsoft Docs
+title: Key concepts in the Bot Builder SDK for Node.js | Microsoft Docs
 description: Understand the key concepts and tools for building and deploying conversational bots available in the Bot Builder SDK for Node.js.
 author: DeniseMak
 ms.author: v-demak
@@ -9,12 +9,12 @@ ms.prod: bot-framework
 
 ms.date: 03/08/2017
 ms.reviewer:
-ROBOTS: Index, Follow
+
 ---
 
 # Key concepts
 
-The <a href="https://github.com/Microsoft/BotBuilder" target="_blank">Bot Builder SDK for Node.js</a> is a powerful framework for constructing bots.
+This article introduces key concepts in the Bot Builder SDK for Node.js.
 
 ## Connector
 
@@ -31,10 +31,10 @@ The Connector also normalizes the messages that the bot sends to channels so tha
 
 Messages can consist of text strings, attachments, and rich cards. You use the [session.send][SessionSend] method to send messages in response to a message from the user. Your bot may call **send** as many times as it likes in response to a message from the user. For an example that demonstrates this, see [Respond to user messages][RespondMessages].
 
-For an example that demonstrates how to send a rich graphical card containing interactive buttons that the user clicks to initiate an action, see [Send a rich card](~/nodejs/bot-builder-nodejs-send-card-buttons.md). For an example that demonstrates how to send and receive attachments, see [Send attachments](~/nodejs/bot-builder-nodejs-send-receive-attachments.md).
+For an example that demonstrates how to send a rich graphical card containing interactive buttons that the user clicks to initiate an action, see [Send a rich card](~/nodejs/bot-builder-nodejs-send-rich-cards.md). For an example that demonstrates how to send and receive attachments, see [Send attachments](~/nodejs/bot-builder-nodejs-send-receive-attachments.md).
 
 ## Dialogs
-Dialogs help you organize the conversational logic in your bot and are fundamental to [designing conversation flow](../bot-design-conversation-flow.md). For an introduction to dialogs, see [Understand dialogs](~/nodejs/bot-builder-nodejs-understand-dialogs.md).
+Dialogs help you organize the conversational logic in your bot and are fundamental to [designing conversation flow](../bot-design-conversation-flow.md). For an introduction to dialogs, see [Manage conversation flow](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md).
 
 ## Actions
 You'll want to design your bot to be able to handle interruptions like requests for cancellation or help at any time during the conversation flow. The Bot Builder SDK for Node.js provides global message handlers that trigger actions like cancellation or invoking other dialogs. 
@@ -79,7 +79,7 @@ The following task-focused articles demonstrate features of the Bot Builder SDK 
 
 * [Triggering actions](~/nodejs/bot-builder-nodejs-global-handlers.md)
 * [Recognize user intent](~/nodejs/bot-builder-nodejs-recognize-intent.md)
-* [Send a rich card](~/nodejs/bot-builder-nodejs-send-card-buttons.md)
+* [Send a rich card](~/nodejs/bot-builder-nodejs-send-rich-cards.md)
 * [Send attachments](~/nodejs/bot-builder-nodejs-send-receive-attachments.md)
 * [Saving user data](~/nodejs/bot-builder-nodejs-save-user-data.md)
 * [How to send a typing indicator](~/nodejs/bot-builder-nodejs-send-typing-indicator.md)

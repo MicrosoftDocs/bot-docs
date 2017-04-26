@@ -9,7 +9,7 @@ ms.prod: bot-framework
 ms.date: 
 ms.reviewer: rstand
 
-ROBOTS: Index, Follow
+
 ---
 
 # Add language understanding to a bot

@@ -14,7 +14,7 @@ ms.date: 03/01/2017
 ms.reviewer:
 
 # Include the following line commented out
-ROBOTS: Index, Follow
+
 ---
 # Additional resources for the Bot Framework
 These resources provide additional information and support for developing bots with the Bot Framework.

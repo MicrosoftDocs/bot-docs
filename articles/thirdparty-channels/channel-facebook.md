@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date:
 ms.reviewer:
-ROBOTS: Index, Follow
+
 ---
 # Connect a bot to Facebook Messenger
 
