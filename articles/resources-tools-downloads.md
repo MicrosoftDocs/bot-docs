@@ -46,7 +46,7 @@ You can also [download the Bot Builder SDK for Node.js source code from Github](
 - [Bot Framework Emulator (Mac and Windows)](https://emulator.botframework.com/)
 - [Visual Studio Template - C#](http://aka.ms/bf-bc-vstemplate)
 
-## Additinoal tools
+## Additional tools
 
 - [Vorlon.js](http://vorlonjs.io) is a remote debugging tool for JavaScript code. You can use it to inspect any bot created in Node.js ([read why and how](http://aka.ms/botinspector)). You can easily see your dialog stacks and understand what is happening inside of your bot.
 
