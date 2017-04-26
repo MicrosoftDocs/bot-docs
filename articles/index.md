@@ -378,7 +378,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/bot-framework/troubleshooting-general-problems">
+                            <a href="/bot-framework/troubleshoot-general-problems">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
