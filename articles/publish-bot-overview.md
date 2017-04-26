@@ -1,6 +1,6 @@
 ---
-title: Publish a bot with the Bot Framework | Microsoft Docs
-description: Learn what you need to do to publish and deploy your bot for people to use.
+title: Deploy and publish a bot | Microsoft Docs
+description: Learn how to deploy and publish a bot.
 keywords: Bot Framework, Bot Builder, register, deploy, configure, publish, Bot Directory
 author: kbrandl
 ms.author: v-kibran
@@ -12,7 +12,7 @@ ms.reviewer: rstand
 ROBOTS: Index, Follow
 ---
 
-# Deploying and publishing bots
+# Deploy and publish bots
 
 After you have built and tested your bots, you need to register your bot,  deploy it to the cloud, configure it, and make it available to others in the Bot Directory.
 

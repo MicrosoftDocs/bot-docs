@@ -34,7 +34,7 @@ To register your bot, sign in to the <a href="https://dev.botframework.com" targ
 
 1. Provide your bot's **HTTPS** endpoint. This is the endpoint where your bot will receive HTTP POST messages from Bot Connector. If you built your bot by using the Bot Builder SDK, the endpoint should end with `/api/messages`.
     - If you have already deployed your bot to the cloud, specify the endpoint generated from that deployment.
-    - If you have not yet deployed your bot to the cloud, leave the endpoint blank for now. Ypu will return to the Bot Framework Portal later and specify the endpoint after you've deployed your bot.  
+    - If you have not yet deployed your bot to the cloud, leave the endpoint blank for now. You will return to the Bot Framework Portal later and specify the endpoint after you've deployed your bot.  
 
 2. Click **Manage Microsoft App ID and password**.  
     - On the next page, click **Generate an app password to continue**.
