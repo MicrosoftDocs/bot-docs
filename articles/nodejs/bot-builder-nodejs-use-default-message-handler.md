@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 03/31/2017
 ms.reviewer:
-ROBOTS: Index, Follow
+
 ---
 # Respond to user messages
 
@@ -68,7 +68,7 @@ For details about the template syntax, refer to the documentation for the [sprin
 
 
 [SendAttachments]: ~/nodejs/bot-builder-nodejs-send-receive-attachments.md
-[SendCardWithButtons]: ~/nodejs/bot-builder-nodejs-send-card-buttons.md
+[SendCardWithButtons]: ~/nodejs/bot-builder-nodejs-send-rich-cards.md
 [sprintf]: https://github.com/alexei/sprintf.js
 [emulator]: ~/debug-bots-emulator.md
 [appId]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ichatconnectorsettings.html#appid

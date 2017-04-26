@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date: 4/12/2017
 ms.reviewer: 
-ROBOTS: Index, Follow
+
 ---
 
 # Azure Bot Service

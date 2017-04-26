@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 03/29/2017
 ms.reviewer:
-ROBOTS: Index, Follow
+
 ---
 
 # Define a form using a JSON schema and FormFlow

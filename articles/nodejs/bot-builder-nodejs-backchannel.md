@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 02/27/2017
 ms.reviewer:
-ROBOTS: Index, Follow
+
 ---
 
 # Use the backchannel mechanism

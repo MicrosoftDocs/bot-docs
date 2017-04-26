@@ -7,7 +7,7 @@ manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 4/25/2017
-ROBOTS: Index, Follow
+
 ---
 # How the Bot Framework works
 The Bot Framework provides a platform and a comprehensive toolkit to simplify common development tasks, debugging, securing, managing, and connecting bots to popular communication services. The Bot Framework provides tools and services to help you build, deploy, and publish bots, including the Bot Builder SDK, the Developer Portal, and the Bot Connector.

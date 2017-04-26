@@ -11,7 +11,7 @@ ms.date: 02/21/2017
 ms.reviewer:
 
 # Include the following line commented out
-ROBOTS: Index, Follow
+
 ---
 # Bot Framework Frequently Asked Questions
 This article contains answers to some frequently asked questions about the Bot Framework.

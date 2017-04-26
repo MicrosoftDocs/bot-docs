@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date: 
 ms.reviewer: 
-ROBOTS: Index, Follow
+
 ---
 
 # Create a bot with the Azure Bot Service

@@ -7,7 +7,7 @@ manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 02/21/2017
-ROBOTS: Index, Follow
+
 ---
 # Bot Framework Troubleshooting Guide
 These Frequently Asked Questions (FAQ) for the Bot Framework can help you with troubleshooting.

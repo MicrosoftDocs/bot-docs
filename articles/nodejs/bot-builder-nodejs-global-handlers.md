@@ -1,6 +1,6 @@
 ---
-title: Support user keyword responses | Microsoft Docs
-description: Teach your bot to listen for and handle user input containing certain keywords using the Bot Builder SDK for Node.js.
+title: Listen for messages | Microsoft Docs
+description: Learn how to enable your bot to listen for and handle user input containing certain keywords using the Bot Builder SDK for Node.js.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
@@ -8,10 +8,10 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date: 02/21/2017
 ms.reviewer: 
-ROBOTS: Index, Follow
+
 ---
 
-# Support user keyword responses
+# Listen for messages by using actions
 
 
 Users commonly attempt to access certain functionality within a bot by using keywords like "help", "cancel", or "start over". 

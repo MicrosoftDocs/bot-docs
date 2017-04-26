@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date:
 ms.reviewer: rstand
-ROBOTS: Index, Follow
+
 ---
 # Create a bot with the Bot Builder SDK for .NET
 

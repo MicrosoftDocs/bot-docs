@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 04/11/2017
 ms.reviewer:
-ROBOTS: Index, Follow
+
 ---
 
 # Add rich card attachments to messages

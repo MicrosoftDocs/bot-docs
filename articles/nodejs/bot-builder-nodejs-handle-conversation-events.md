@@ -1,6 +1,6 @@
 ---
 title: Handle user and conversation events  | Microsoft Docs
-description: Teach your bot how to handle events such as a user joining a conversation using the Bot Builder SDK for Node.js.
+description: Learn how to handle events such as a user joining a conversation using the Bot Builder SDK for Node.js.
 author: DeniseMak
 ms.author: v-demak
 manager: rstand
@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 02/24/2017
 ms.reviewer:
-ROBOTS: Index, Follow
+
 ---
 
 # Handle user and conversation events

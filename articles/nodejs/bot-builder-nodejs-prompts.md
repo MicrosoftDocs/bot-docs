@@ -1,5 +1,5 @@
 ---
-title: Waterfall prompt sequences | Microsoft Docs
+title: Use a prompt with a waterfall | Microsoft Docs
 description: Learn how to collect information from the user through prompts included in the Bot Builder SDK for Node.js.
 author: DeniseMak
 ms.author: v-demak
@@ -9,9 +9,9 @@ ms.prod: bot-framework
 
 ms.date: 02/17/2017
 ms.reviewer:
-ROBOTS: Index, Follow
+
 ---
-# Manage multiple prompts
+# Prompts and waterfalls
 
 A common pattern is for a bot to ask the user a sequence of questions before performing some action.
 The SDK provides a set of built-in prompts to simplify collecting input from a user. You can then use a feature called a *waterfall* to define the sequence in which to prompt the user. 
@@ -68,7 +68,7 @@ To add logic to remember the user's name so that we only have to ask for it once
 
 
 [SendAttachments]: ~/nodejs/bot-builder-nodejs-send-receive-attachments.md
-[SendCardWithButtons]: ~/nodejs/bot-builder-nodejs-send-card-buttons.md
+[SendCardWithButtons]: ~/nodejs/bot-builder-nodejs-send-rich-cards.md
 [RecognizeUserIntent]: ~/nodejs/bot-builder-nodejs-recognize-intent.md
 [SaveUserData]: ~/nodejs/bot-builder-nodejs-save-user-data.md
 

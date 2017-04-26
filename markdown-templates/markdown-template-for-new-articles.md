@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: bot-framework
 # Date the article was updated
 ms.date: mm/dd/yyyy
-ROBOTS: Index, Follow
+
 ---
 # Markdown template for Bot Framework on Microsoft Docs (WIP)
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date: 03/09/2017
 ms.reviewer:
-RObotS: Index, Follow
+
 ---
 
 # Secure your bot

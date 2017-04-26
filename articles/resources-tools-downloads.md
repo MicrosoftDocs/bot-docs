@@ -1,7 +1,6 @@
 ---
-title: Bot Framework Downloads | Microsoft Docs
-description: Download tools and resources for developing bots with the Bot Framework.
-keywords: tools, resources, downloads, emulator, sdk
+title: Bot Framework SDKs and tools | Microsoft Docs
+description: Get the Bot Builder SDKs and tools for developing bots with the Bot Framework.
 author: RobStand
 ms.author: rstand
 manager: rstand
@@ -9,39 +8,45 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date: 03/01/2017
 ms.reviewer:
-
-# Include the following line commented out
-ROBOTS: Index, Follow
 ---
-# Bot Framework Downloads
-Download tools and resources for developing bots with the Bot Framework.
+# Bot Framework SDKs and tools
 
-## Tools
-* [Bot Framework Emulator (Mac and Windows)](https://emulator.botframework.com/)
-* [Visual Studio Template - C#](http://aka.ms/bf-bc-vstemplate)
+The Bot Framework provides SDKs, tools, and resources to help you develop great bots.
 
-## Bot Builder SDK
 
-### C# #
 
-* [Bot Builder SDK - Source code and samples](https://github.com/Microsoft/BotBuilder/tree/master/CSharp)
-* Bot Builder NuGet Package
-    1. Right-click on your project and select "Manage NuGet Packages".
-    2. In the "Browse" tab, type "Microsoft.Bot.Builder".
-    3. Click the "Install" button and accept the changes.
+## Bot Builder SDK for .NET
 
-### Node.js
+The Bot Builder SDK for .NET is available as a NuGet package. 
+To install the SDK within a Visual Studio project, complete the following steps:
 
-* [Bot Builder SDK Source code and samples](https://github.com/Microsoft/BotBuilder/tree/master/Node)
-* Bot Builder npm Package
+1. In **Solution Explorer**, right-click the project name and select **Manage NuGet Packages...**.
+2. On the **Browse** tab, type "Microsoft.Bot.Builder" into the search box.
+3. Select **Microsoft.Bot.Builder** in the list of results, click **Install**, and accept the changes.
+
+You can also [download the Bot Builder SDK for .NET source code from Github](https://github.com/Microsoft/BotBuilder/tree/master/CSharp).
+
+## Get the Bot Builder SDK for Node.js
+To install the Bot Builder for Node.js SDK and its dependencies, first create a folder for your bot, navigate to it, and run the following **npm** command:
 
 ```
-    npm install botbuilder
+npm init
 ```
 
-## Tools
+Next, install the Bot Builder SDK for Node.js and <a href="http://restify.com/" target="_blank">Restify</a> modules by running the following **npm** commands:
 
-* [Bot Framework Emulator (Windows)](https://download.botframework.com/bf-v3/tools/emulator/publish.htm)
-* [Bot Framework Emulator (Console)](https://aka.ms/bfemulator)  
-* [Vorlon.js](http://vorlonjs.io) is a remote debugging tool for JavaScript code. You can use it to inspect any bot created in Node.js ([read why and how](http://aka.ms/botinspector)). You can easily see your dialog stacks and understand what is happening inside of your bot.
+```
+npm install --save botbuilder
+npm install --save restify
+```
+
+You can also [download the Bot Builder SDK for Node.js source code from Github](https://github.com/Microsoft/BotBuilder/tree/master/Node).
+
+## Downloads
+- [Bot Framework Emulator (Mac and Windows)](https://emulator.botframework.com/)
+- [Visual Studio Template - C#](http://aka.ms/bf-bc-vstemplate)
+
+## Additinoal tools
+
+- [Vorlon.js](http://vorlonjs.io) is a remote debugging tool for JavaScript code. You can use it to inspect any bot created in Node.js ([read why and how](http://aka.ms/botinspector)). You can easily see your dialog stacks and understand what is happening inside of your bot.
 

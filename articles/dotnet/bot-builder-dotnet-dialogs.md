@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 03/17/2017
 ms.reviewer:
-ROBOTS: Index, Follow
+
 ---
 
 # Explore and create dialogs

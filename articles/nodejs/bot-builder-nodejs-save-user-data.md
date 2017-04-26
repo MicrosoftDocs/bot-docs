@@ -9,7 +9,7 @@ ms.prod: bot-framework
 
 ms.date: 02/24/2017
 ms.reviewer:
-ROBOTS: Index, Follow
+
 ---
 <!--this seems like a stub; it should be about saving user-provided data, but it seems to be about state data capture and use, which is covered elsewhere-->
 
