@@ -9,7 +9,8 @@
 ## [Design](design/TOC.md)
 ## [Develop with .NET](~/dotnet/index.md)
 ### [Key concepts](~/dotnet/bot-builder-dotnet-concepts.md)
-### [Activities](~/dotnet/bot-builder-dotnet-activities.md)
+### Activities
+#### [Activities overview](~/dotnet/bot-builder-dotnet-activities.md)
 #### [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
 #### [Add media attachments to messages](~/dotnet/bot-builder-dotnet-add-media-attachments.md)
 #### [Add rich cards to messages](~/dotnet/bot-builder-dotnet-add-rich-card-attachments.md)
@@ -18,10 +19,12 @@
 #### [Implement global message handlers](~/dotnet/bot-builder-dotnet-global-handlers.md)
 #### [Intercept messages](~/dotnet/bot-builder-dotnet-middleware.md)
 #### [Send proactive messages](~/dotnet/bot-builder-dotnet-proactive-messages.md)
-### [Dialogs](~/dotnet/bot-builder-dotnet-dialogs.md)
+### Dialogs
+#### [Dialogs overview](~/dotnet/bot-builder-dotnet-dialogs.md)
 #### [Manage conversation flow](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
 #### [Enable language understanding](~/dotnet/bot-builder-dotnet-luis-dialogs.md)
-### [FormFlow](~/dotnet/bot-builder-dotnet-formflow.md)
+### FormFlow
+#### [Basic features of FormFlow](~/dotnet/bot-builder-dotnet-formflow.md)
 #### [Advanced features of FormFlow](~/dotnet/bot-builder-dotnet-formflow-advanced.md)
 #### [FormBuilder](~/dotnet/bot-builder-dotnet-formflow-formbuilder.md)
 #### [Pattern language](~/dotnet/bot-builder-dotnet-formflow-pattern-language.md)
@@ -54,7 +57,7 @@
 ### [Conduct audio calls](~/nodejs/bot-builder-nodejs-conduct-audio-calls.md)
 ## [Develop with Azure Bot Service](~/azure/index.md)
 ### Create a bot
-#### [Understand templates](~/azure/azure-bot-service-templates.md)
+#### [Templates](~/azure/azure-bot-service-templates.md)
 #### [Create a basic bot](~/azure/azure-bot-service-template-basic.md)
 #### [Create a form bot](~/azure/azure-bot-service-template-form.md)
 #### [Create a language understanding bot](~/azure/azure-bot-service-template-language-understanding.md)
