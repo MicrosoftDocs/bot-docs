@@ -1,5 +1,5 @@
 ---
-title: Chain dialogs with waterfalls | Microsoft Docs
+title: Define conversation steps with waterfalls | Microsoft Docs
 description: Learn how to use waterfalls to define the steps of a conversation in a bot with the Bot Builder SDK for Node.js
 author: RobStand
 ms.author: rstand
@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date: 04/25/2017
 ---
-# Chain dialogs with waterfalls 
+# Define conversation steps with waterfalls
 
 A waterfall is a dialog handler that is an array of functions where the results of the first function are passed as input to the second function and so on. You can chain together a series of these functions to create waterfalls of any length. Waterfalls let you collect input from a user using a sequence of steps. A bot is always in a state of providing a user with information or asking a question and then waiting for input. Waterfalls drive the back-and-forth flow.
 

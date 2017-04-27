@@ -38,9 +38,9 @@
 ## [Develop with Node.js](~/nodejs/index.md)
 ### [Key concepts](~/nodejs/bot-builder-nodejs-concepts.md)
 ### Dialogs
-#### [Manage a conversation](bot-builder-nodejs-dialogs-manage-conversation.md)
-#### [Prompt for user input](bot-builder-nodejs-prompts-input.data)
-#### [Chain dialogs with waterfalls](bot-builder-nodejs-waterfall-conversation-steps.md)
+#### [Manage a conversation](node/bot-builder-nodejs-dialogs-manage-conversation.md)
+#### [Prompt for user input](node/bot-builder-nodejs-prompts-input.data)
+#### [Define conversation steps](node/bot-builder-nodejs-waterfall-conversation-steps.md)
 <!--
 ### Messages
 #### [Respond to user messages](~/nodejs/bot-builder-nodejs-use-default-message-handler.md) 
