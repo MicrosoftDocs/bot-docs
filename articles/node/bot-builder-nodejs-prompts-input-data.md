@@ -1,5 +1,5 @@
 ---
-title: Get input from the user with Prompts | Microsoft Docs
+title: Collect input from the user with Prompts | Microsoft Docs
 description: Learn how to collect user input in your bot with the Bot Builder SDK for Node.js
 author: RobStand
 ms.author: rstand
@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date: 04/25/2017
 ---
-# Get input from the user with Prompts
+# Collect input from the user with Prompts
 Bot Builder comes with the following built-in prompts that you can use to collect input from a user.  
 
 |**Prompt Type**     | **Description**                                   
