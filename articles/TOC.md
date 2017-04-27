@@ -39,7 +39,7 @@
 ### [Key concepts](~/nodejs/bot-builder-nodejs-concepts.md)
 ### Dialogs
 #### [Manage a conversation](node/bot-builder-nodejs-dialogs-manage-conversation.md)
-#### [Prompt for user input](node/bot-builder-nodejs-prompts-input.data)
+#### [Prompt for user input](node/bot-builder-nodejs-prompts-input-data.md)
 #### [Define conversation steps](node/bot-builder-nodejs-waterfall-conversation-steps.md)
 <!--
 ### Messages
