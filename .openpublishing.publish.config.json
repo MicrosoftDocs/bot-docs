@@ -22,7 +22,8 @@
     }
   ],
   "notification_subscribers": [
-    "3b0e6dd6.microsoft.com@amer.teams.ms"
+    "3b0e6dd6.microsoft.com@amer.teams.ms",
+    "rstand@microsoft.com"
   ],
   "branches_to_filter": [],
   "skip_source_output_uploading": false,
