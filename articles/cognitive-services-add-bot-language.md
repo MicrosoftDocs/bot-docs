@@ -227,4 +227,4 @@ public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
 ```
 
 ## Next steps
-You can find detailed documentation about the each Cognitive Services API, including developer guides and API references, by visiting the Microsoft Cognitive Services <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/" target="_blank">documentation site</a> and selecting an API on the left.
+You can find detailed documentation about the Language Understanding APIs, including developer guides and API references, by visiting the Microsoft Cognitive Services <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/luis/home" target="_blank">documentation site</a>.

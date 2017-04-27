@@ -12,7 +12,7 @@ ms.reviewer: rstand
 
 ---
 
-# Add image detection and recognition
+# Add computer vision to a bot
 
 The Vision APIs are useful for any bot that receives images as input from users and wants to distill actionable information from them. Here are a few examples:
 
@@ -188,4 +188,4 @@ public virtual async Task<HttpResponseMessage> Post([FromBody] Activity activity
 }
 ```
 ## Next steps
-You can find detailed documentation about the each Cognitive Services API, including developer guides and API references, by visiting the Microsoft Cognitive Services <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/" target="_blank">documentation site</a> and selecting an API on the left.
+You can find detailed documentation about the Computer Vision API, including developer guides and API references, by visiting the Microsoft Cognitive Services <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/home" target="_blank">documentation site</a>.
