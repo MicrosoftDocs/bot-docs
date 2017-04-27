@@ -37,6 +37,8 @@
 ### [Release notes](~/dotnet/bot-builder-dotnet-release-notes.md)
 ## [Develop with Node.js](~/nodejs/index.md)
 ### [Key concepts](~/nodejs/bot-builder-nodejs-concepts.md)
+###
+<!--
 ### Messages
 #### [Respond to user messages](~/nodejs/bot-builder-nodejs-use-default-message-handler.md) 
 #### [Send and receive attachments](~/nodejs/bot-builder-nodejs-send-receive-attachments.md) 
@@ -53,6 +55,7 @@
 ### [Intercept messages](~/nodejs/bot-builder-nodejs-intercept-messages.md)
 ### [Use backchannel mechanism](~/nodejs/bot-builder-nodejs-backchannel.md)
 ### [Conduct audio calls](~/nodejs/bot-builder-nodejs-conduct-audio-calls.md)
+-->
 ## [Develop with Azure Bot Service](~/azure/index.md)
 ### Create a bot
 #### [Templates](~/azure/azure-bot-service-templates.md)
