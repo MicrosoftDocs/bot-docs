@@ -6,9 +6,8 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 02/17/2017
+ms.date: 
 ms.reviewer:
-
 ---
 
 # Debug bots with the Bot Framework Emulator
@@ -99,7 +98,7 @@ The Bot Framework Emulator is open source. To contribute or file bugs and sugges
 For information about troubleshooting issues with your bot, see:
 
 * [Bot Framework Troubleshooting Guide][TroubleshootingGuide]
-* [Troubleshooting Authentication issues][TroubleshootingAuth]
+* [Troubleshooting Bot Framework Authentication][TroubleshootingAuth]
 
 [EmulatorGithub]: https://github.com/Microsoft/BotFramework-Emulator
 [EmulatorGithubContribute]: https://github.com/Microsoft/BotFramework-Emulator/wiki/How-to-Contribute
