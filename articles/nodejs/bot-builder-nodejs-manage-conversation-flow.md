@@ -1,4 +1,5 @@
 ---
+redirect_url: /nodejs/bot-builder-nodejs-dialog-manage-conversation.md
 title: Manage conversation flow with dialogs| Microsoft Docs
 description: Learn how to combine complex conversation flows into manageable Dialogs using the Bot Builder SDK for Node.js.
 author: DeniseMak
@@ -9,7 +10,7 @@ ms.prod: bot-framework
 
 ms.date: 03/31/2017
 ms.reviewer:
-
+ROBOTS: NoIndex, NoFollow
 ---
 # Manage message flow with dialogs
 

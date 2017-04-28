@@ -37,6 +37,7 @@
 ### [Release notes](~/dotnet/bot-builder-dotnet-release-notes.md)
 ## [Develop with Node.js](~/nodejs/index.md)
 ### [Key concepts](~/nodejs/bot-builder-nodejs-concepts.md)
+### [Manage conversation flow](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
 ### Messages
 #### [Send proactive messages](~/nodejs/bot-builder-nodejs-proactive-messages.md)
 ### Dialogs
@@ -51,7 +52,7 @@
 #### [Send a typing indicator](~/nodejs/bot-builder-nodejs-send-typing-indicator.md)
 #### 
 #### [Use prompts with a waterfall](~/nodejs/bot-builder-nodejs-prompts.md)
-### [Manage conversation flow](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
+
 ### [Save user data](~/nodejs/bot-builder-nodejs-save-user-data.md)
 ### [Listen for messages](~/nodejs/bot-builder-nodejs-global-handlers.md)
 ### [Recognize user intent](~/nodejs/bot-builder-nodejs-recognize-intent.md)
