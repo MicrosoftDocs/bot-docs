@@ -175,7 +175,7 @@ The first message from a user will be routed to the Dialog Handler for the root 
 
 When a user starts a conversation with the bot, it first checks to see whether the user is known by checking the `name` property of the [session.userData](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#userdata) object. The bot persists the `userData` object across all of the user's interactions with the bot. If this is the first time the user has used the bot, the bot calls [session.beginDialog()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#begindialog) to start the `/profile` dialog, which asks the user their name.
 
-The `/profile` dialog is implemented as a [waterfall](#waterfall). The fisrt step of the waterfall simply calls [Prompts.text()](bot-builder-nodejs-dialog-prompts) to ask the user their name. This built-in prompt is just another dialog that gets redirected to.
+The `/profile` dialog is implemented as a [waterfall](#waterfall). The fisrt step of the waterfall simply calls [Prompts.text()](bot-builder-nodejs-dialog-prompt.md) to ask the user their name. This built-in prompt is just another dialog that gets redirected to.
 
 The bot maintains a stack of dialogs for each conversation. If you were to inspect the bot's dialog stack at this point, it would look like [`/`, `/profile`, `BotBuilder:Prompts`]. The conversations dialog stack helps the bot know where to route the user's reply to. 
 
