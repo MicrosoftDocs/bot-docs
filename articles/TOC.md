@@ -37,17 +37,19 @@
 ### [Release notes](~/dotnet/bot-builder-dotnet-release-notes.md)
 ## [Develop with Node.js](~/nodejs/index.md)
 ### [Key concepts](~/nodejs/bot-builder-nodejs-concepts.md)
+### Messages
+#### [Send proactive messages](~/nodejs/bot-builder-nodejs-proactive-messages.md)
 ### Dialogs
-#### [Manage a conversation](node/bot-builder-nodejs-dialogs-manage-conversation.md)
-#### [Prompt for user input](node/bot-builder-nodejs-prompts-input-data.md)
-#### [Define conversation steps](node/bot-builder-nodejs-waterfall-conversation-steps.md)
+#### [Manage a conversation](~/nodejs/bot-builder-nodejs-dialogs-manage-conversation.md)
+#### [Prompt for user input](~/nodejs/bot-builder-nodejs-prompts-input-data.md)
+#### [Define conversation steps](~/nodejs/bot-builder-nodejs-waterfall-conversation-steps.md)
 <!--
 ### Messages
 #### [Respond to user messages](~/nodejs/bot-builder-nodejs-use-default-message-handler.md) 
 #### [Send and receive attachments](~/nodejs/bot-builder-nodejs-send-receive-attachments.md) 
 #### [Add rich cards to messages](~/nodejs/bot-builder-nodejs-send-rich-cards.md)
 #### [Send a typing indicator](~/nodejs/bot-builder-nodejs-send-typing-indicator.md)
-#### [Send proactive messages](~/nodejs/bot-builder-nodejs-proactive-messages.md)
+#### 
 #### [Use prompts with a waterfall](~/nodejs/bot-builder-nodejs-prompts.md)
 ### [Manage conversation flow](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
 ### [Save user data](~/nodejs/bot-builder-nodejs-save-user-data.md)
