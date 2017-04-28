@@ -37,7 +37,6 @@
 ### [Release notes](~/dotnet/bot-builder-dotnet-release-notes.md)
 ## [Develop with Node.js](~/nodejs/index.md)
 ### [Key concepts](~/nodejs/bot-builder-nodejs-concepts.md)
-### [Manage conversation flow](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
 ### Messages
 #### [Send proactive messages](~/nodejs/bot-builder-nodejs-proactive-messages.md)
 ### Dialogs

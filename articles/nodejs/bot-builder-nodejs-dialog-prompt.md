@@ -8,8 +8,20 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date: 04/25/2017
 ---
-# Collect input from the user with Prompts
-Bot Builder comes with the following built-in prompts that you can use to collect input from a user.  
+# Prompt users for input
+
+A common pattern is for a bot to ask the user a sequence of questions before performing some action. The SDK provides a set of built-in prompts to simplify collecting input from a user. You can then use a feature called a [waterfall](bot-builder-nodejs-dialog-waterfall.md) to define the sequence in which to prompt the user.
+
+## Prompt results 
+
+Since built-in prompts are implemented as a dialog, they’ll return the user's response through a call to [session.endDialogWithresult()][EndDialogWithResult]. Any type of dialog message handler can receive the result of a prompt, but waterfalls tend to be the simplest way to handle a prompt result.
+
+Prompts return an [IPromptResult][IPromptResult] to the caller. The user's response will be contained in the [results.response][Result_Response] field and may be null. The exact reason can be determined by examining the [ResumeReason][ResumeReason] returned in [result.resumed][Result_Resumed], but the most common reasons for a null response are: 
+* The user cancelled an action by saying something like ‘cancel’ or ‘nevermind’ 
+* The user failed to enter a properly formatted response 
+
+## Prompt types
+The Bot Builder SDK for Node.js includes the following built-in prompts that you can use to collect input from a user.
 
 |**Prompt Type**     | **Description**                                   
 | -------------------| ---------------------------------------------
@@ -144,3 +156,42 @@ The [Prompts.attachment()](http://docs.botframework.com/en-us/node/builder/chat-
 builder.Prompts.attachment(session, "Upload a picture for me to transform.");
 ```
 ## Additional resources
+- [Save user data](~/nodejs/bot-builder-nodejs-save-user-data.md)
+- [Prompts class][PromptsRef]
+
+
+[SendAttachments]: ~/nodejs/bot-builder-nodejs-send-receive-attachments.md
+[SendCardWithButtons]: ~/nodejs/bot-builder-nodejs-send-rich-cards.md
+[RecognizeUserIntent]: ~/nodejs/bot-builder-nodejs-recognize-intent.md
+[SaveUserData]: ~/nodejs/bot-builder-nodejs-save-user-data.md
+
+[UniversalBot]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.universalbot.html
+[ChatConnector]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.chatconnector.html
+[sprintf]: http://www.diveintojavascript.com/projects/javascript-sprintf
+[Session]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session
+
+
+[SendTyping]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#sendtyping
+[EndDialogWithResult]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#enddialogwithresult
+[IPromptResult]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptresult.html
+[Result_Response]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptresult.html#reponse
+[ResumeReason]: https://docs.botframework.com/en-us/node/builder/chat-reference/enums/_botbuilder_d_.resumereason.html
+[Result_Resumed]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptresult.html#resumed
+
+[entity]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ientity.html
+[ResolveTime]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.entityrecognizer.html#resolvetime
+[PromptsRef]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts.html
+[PromptsText]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts.html#text
+[IPromptTextResult]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iprompttextresult.html
+[PromptsConfirm]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts.html#confirm
+[IPromptConfirmResult]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptconfirmresult.html
+[PromptsNumber]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts.html#number 
+[IPromptNumberResult]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptnumberresult.html
+[PromptsTime]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts.html#time
+[IPromptTimeResult]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iprompttimeresult.html
+[PromptsChoice]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts.html#choice
+[IPromptChoiceResult]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptchoiceresult.html
+[PromptsAttachment]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts.html#attachment
+[IPromptAttachmentResult]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptattachmentresult.html
+
+[text]: http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts#text
