@@ -1,18 +1,16 @@
 ---
-title: Manage conversational state | Microsoft Docs
-description: Learn how to make your bot remember and recall parts of a conversation by managing state data with the Bot Builder SDK for .NET.
+title: Manage state | Microsoft Docs
+description: Learn how to manage state data with the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 03/16/2017
+ms.date: 
 ms.reviewer:
-
 ---
 
-# Manage conversational state
+# Manage state
 
 [!include[State concept overview](~/includes/snippet-dotnet-concept-state.md)]  
 This article describes how to manage state data using the State service via the Bot Builder SDK for .NET.

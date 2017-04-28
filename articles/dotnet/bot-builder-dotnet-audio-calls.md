@@ -1,15 +1,13 @@
 ---
 title: Support audio calls with Skype | Microsoft Docs
-description: Learn how to connect and conduct audio calls with Skype using the Bot Builder SDK for .NET.
+description: Learn how to conduct audio calls with Skype using the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 02/21/2017
+ms.date: 
 ms.reviewer:
-
 ---
 
 # Support audio calls with Skype
@@ -19,9 +17,9 @@ ms.reviewer:
 The architecture for a bot that supports audio calls is very similar to that of a typical bot. 
 The following code samples show how to enable support for audio calls via Skype with the Bot Builder SDK for .NET. 
 
-## Enable audio call support
+## Enable support for audio calls
 
-Define the `CallingController`. This enables the bot to support audio calls.
+To enable the bot to support audio calls, define the `CallingController`.
 
 ```cs
 [BotAuthentication]
@@ -72,10 +70,12 @@ private Task OnIncomingCallReceived(IncomingCallEvent incomingCallEvent)
     return Task.FromResult(true);
 }
 ```
+
 ## After the bot answers
 
 If the bot answers the call, subsequent actions specified within the workflow will instruct the 
-**Skype Bot Platform for Calling** in the order that they are specified by the workflow. The bot could play a prompt, record audio, recognize speech, or collect digits from a dial pad. The final action of the workflow should be to end the call. 
+**Skype Bot Platform for Calling** to play prompt, record audio, recognize speech, or collect digits from a dial pad. 
+The final action of the workflow might be to end the call. 
 
 This code sample defines a handler that will set up a menu after the welcome message completes.
 
@@ -170,5 +170,6 @@ For a complete sample that shows how to support audio calls with Skype using the
 ## Additional resources
 
 - [Builder library][builderLibrary]
+- <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/skype-CallingBot" target="_blank">Skype Calling Bot sample (GitHub)</a>
 
 [builderLibrary]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html
