@@ -6,8 +6,8 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: get-started-article
 ms.prod: bot-framework
-ms.date: 04/01/2017
-ms.reviewer: rstand
+ms.date: 
+ms.reviewer: 
 ---
 
 # Start building bots with the Bot Framework

@@ -16,7 +16,7 @@ Your bot can be connected to many different communication channels (Skype, SMS, 
 
 ## Use HTTPS and Bot Framework authentication
 
-To ensure that your bot's endpoint can only be accessed by the Bot Framework [Connector](~/dotnet/concepts.md#connector), configure your bot's endpoint to use only HTTPS and enable Bot Framework authentication by [registering](~/portal-register-bot.md) your bot to acquire its app Id and password. 
+To ensure that your bot's endpoint can only be accessed by the Bot Framework [Connector](~/dotnet/bot-builder-dotnet-concepts.md#connector), configure your bot's endpoint to use only HTTPS and enable Bot Framework authentication by [registering](~/portal-register-bot.md) your bot to acquire its app Id and password. 
 
 ## Configure authentication for your bot
 

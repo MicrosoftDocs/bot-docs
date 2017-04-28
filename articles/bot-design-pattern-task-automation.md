@@ -7,7 +7,7 @@ manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 
-ms.reviewer: rstand
+ms.reviewer: 
 ---
 
 # Create task automation bots

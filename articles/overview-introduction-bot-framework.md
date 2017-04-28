@@ -6,8 +6,7 @@ ms.author: rstand
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 04/01/2017
-
+ms.date: 
 ---
 
 # Bot Framework Overview
