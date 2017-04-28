@@ -1,1 +1,3 @@
-# Welcome to bot-framework-rest-api!
+---
+redirect_url: api/conversation
+---
