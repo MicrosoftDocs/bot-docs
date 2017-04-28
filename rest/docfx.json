@@ -3,8 +3,12 @@
     "content": [
       {
         "files": [
+<<<<<<< HEAD
           "**/*.md",
           "api/*.json"
+=======
+          "**/*.md"
+>>>>>>> hotfix-solink
         ],
         "exclude": [
           "**/obj/**",
