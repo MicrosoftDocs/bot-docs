@@ -19,7 +19,7 @@ When you build a bot with Visual Studio, you can take advantage of its built-in 
 
 ## Prerequisites
 
-You must have a Microsoft Azure subscription before you can deploy a bot to Azure. If you do not already have a subscription, you can register for a <a href="https://azure.microsoft.com/en-us/free/" target="_blank">free trial</a>. Additionally, the process described by this article requires that you install Visual Studio. If you do not already have Visual Studio, you can download <a href="https://www.visualstudio.com/downloads/" target="_blank">Visual Studio 2017 Community</a> for free.
+You must have a Microsoft Azure subscription before you can deploy a bot to Azure. If you do not already have a subscription, you can register for a <a href="https://azure.microsoft.com/en-us/free/" target="_blank">free trial</a>. Additionally, the process described by this article requires Visual Studio. If you do not already have Visual Studio, you can download <a href="https://www.visualstudio.com/downloads/" target="_blank">Visual Studio 2017 Community</a> for free.
 
 [!include[Pre-deployment considerations](~/includes/snippet-deploy-considerations.md)]
 
