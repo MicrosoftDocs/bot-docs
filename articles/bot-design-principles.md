@@ -1,15 +1,13 @@
 ---
 title: Principles of bot design | Microsoft Docs
-description: Learn what makes a good conversational bot and how to plan and desiggn conversational applications and bots to fit your needs and delight your users.
+description: Learn what makes a good conversational bot and how to plan and design bots to fit your needs and delight your users.
 author: matvelloso
 ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
 ms.date:
-ms.reviewer: rstand
-
+ms.reviewer: 
 ---
 
 # Principles of bot design
@@ -81,5 +79,5 @@ Chances are, the same answer can be applied to bot design.
 
 ## Next steps
 
-Now that you're familiar with some basic principles of bot design, learn more about designing the user experience, bot capabilities, 
+Now that you're familiar with some basic principles of bot design, learn more about designing the user experience, 
 and common patterns in the remainder of this section.

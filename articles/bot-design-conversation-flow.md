@@ -1,16 +1,15 @@
 ---
 title: Design and control conversation flow | Microsoft Docs
-description: Learn how to design and control complex conversation flows to provide a delightfully smooth user experience using the Microsoft Bot Framework.
+description: Learn how to design and control conversation flow in your bot to provide a good user experience.
 author: matvelloso
 ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
 ms.date:
-ms.reviewer: rstand
-
+ms.reviewer: 
 ---
+
 # Design and control conversation flow
 
 In a traditional application, the user interface (UI) is a series of screens. 
@@ -28,10 +27,10 @@ Dialogs may or may not have graphical interfaces. They may contain buttons, text
 
 For a detailed walkthrough of managing conversation flow using dialogs and the Bot Builder SDK, see:
 
-- [Manage conversation flow using dialogs with the Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
-- [Manage conversation flow using dialogs with the Bot Builder SDK for Node.js](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
+- [Manage conversation flow with dialogs (.NET)](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
+- [Manage conversation flow with dialogs (Node.js)](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
 
-##Dialog stack
+## Dialog stack
 
 When one dialog invokes another, the Bot Builder adds the new dialog to the top of the dialog stack. 
 The dialog that is on top of the stack is in control of the conversation. 
@@ -51,7 +50,7 @@ For example, the user will start at root dialog, invoke the new order dialog fro
 Then the user will select a product and confirm, exiting the product search dialog, complete the order, exiting the new order dialog, and arrive back at the root dialog. 
 
 Although it would be great if users always traveled such a linear, logical path, it seldom occurs. 
-Humans do not communicate in "stacks." They tend to change their minds. Frequently. 
+Humans do not communicate in "stacks." They tend to frequently change their minds. 
 Consider the following example: 
 
 ![bot](~/media/designing-bots/core/stack-issue.png)
@@ -71,5 +70,4 @@ There is no *right* answer to this question, as the best solution will depend up
 
 Managing the user's navigation across dialogs and designing conversation flow in a manner that enables 
 users to achieve their goals (even in a non-linear fashion) is a fundamental challenge of bot design. 
-In the [next article](~/bot-design-navigation.md), we'll 
-review some common pitfalls of poorly designed navigation and discuss strategies for avoiding those traps. 
+The [next article](~/bot-design-navigation.md), reviews some common pitfalls of poorly designed navigation and discuss strategies for avoiding those traps. 

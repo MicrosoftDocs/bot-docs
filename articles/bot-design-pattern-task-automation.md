@@ -1,16 +1,15 @@
 ---
 title: Create task automation bots | Microsoft Docs
-description: Learn how to design and create bots that perform tasks without further human intervention.
+description: Learn how to design bots that perform tasks without further human intervention.
 author: matvelloso
 ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
 ms.date: 
 ms.reviewer: rstand
-
 ---
+
 # Create task automation bots
 
 A task automation bot enables the user to complete a specific task or set of tasks without any assistance from a human. 
