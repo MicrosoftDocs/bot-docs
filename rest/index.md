@@ -1,3 +1,3 @@
 ---
-redirect_url: api/conversation
+redirect_url: api/conversations
 ---
