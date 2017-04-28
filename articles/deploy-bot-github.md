@@ -7,20 +7,26 @@ manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date:
-ms.reviewer: rstand
-
+ms.reviewer: 
 ---
+
 # Deploy a bot to Azure from Github
 
 Azure allows continuous integration of your Git repository with your Azure deployment.
 With continuous integration, when you change and build your bot's code, the bot will automatically deploy to Azure.
 This tutorial shows you how to deploy a bot to Azure via continuous integration from Github.
 
+> [!NOTE]
+> If you created a bot with the Azure Bot Service, your bot deployment was part of the Azure Bot Service bot 
+> creation process.
+
 ## Prerequisites
-- A <a href="http://github.com/" target="_blank">GitHub account</a>
-- Git
-- An Azure account
-- Etc.
+
+- <a href="http://github.com/" target="_blank">GitHub</a> account
+
+- <a href="https://git-scm.com/downloads" target="_blank">Git</a>
+
+- Azure subscription: You must have a Microsoft Azure subscription before you can deploy a bot to Azure. If you do not already have a subscription, you can register for a <a href="https://azure.microsoft.com/en-us/free/" target="_blank">free trial</a>.
 
 [!include[Pre-deployment considerations](~/includes/snippet-deploy-considerations.md)]
 
