@@ -44,6 +44,7 @@
 #### [Manage a conversation](~/nodejs/bot-builder-nodejs-dialog-manage-conversation.md)
 #### [Prompt for user input](~/nodejs/bot-builder-nodejs-dialog-prompt.md)
 #### [Define conversation steps](~/nodejs/bot-builder-nodejs-dialog-waterfall.md)
+#### [Manage complex conversation](~/nodejs/bot-builder-nodejs-manage-complex-conversation.md)
 <!--
 ### Messages
 #### [Respond to user messages](~/nodejs/bot-builder-nodejs-use-default-message-handler.md) 
