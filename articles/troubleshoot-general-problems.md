@@ -6,10 +6,11 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 02/21/2017
-
+ms.date: 
+ms.reviewer: 
 ---
-# Bot Framework Troubleshooting Guide
+
+# Bot Framework troubleshooting guide
 These Frequently Asked Questions (FAQ) for the Bot Framework can help you with troubleshooting.
 
 ## General questions

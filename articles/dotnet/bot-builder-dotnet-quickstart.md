@@ -6,20 +6,11 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: get-started-article
 ms.prod: bot-framework
-
 ms.date:
-ms.reviewer: rstand
-
+ms.reviewer: 
 ---
-# Create a bot with the Bot Builder SDK for .NET
 
-<!--
-> [!div class="op_single_selector"]
-> * [.NET](~/dotnet/bot-builder-dotnet-quickstart.md)
-> * [Node.js](~/nodejs/bot-builder-nodejs-quickstart.md)
-> * [Azure Bot Service](~/azure-bot-service/getstarted.md)
->
--->
+# Create a bot with the Bot Builder SDK for .NET
 
 The <a href="https://github.com/Microsoft/BotBuilder" target="_blank">Bot Builder SDK for .NET</a> is an easy to use framework for developing bots. The SDK leverages C# to provide a familiar way for .NET developers to create powerful bots.
 
@@ -131,7 +122,7 @@ If you'd like to share your bot with others, you'll need to
 To learn more about building great bots with the Bot Framework, see the following articles:
 
 - [How the Bot Framework works](~/overview-how-bot-framework-works.md)
-- [Introduction to bot design](~/bot-design-principles.md)
+- [Principles of bot design](~/bot-design-principles.md)
 - [Bot Builder SDK for .NET](~/dotnet/index.md)
-- [Publish a bot to the Bot Framework](~/publish-bot-overview.md)
+- [Deploy and publish bots](~/publish-bot-overview.md)
 - [Bot Framework FAQ](~/resources-bot-framework-faq.md)

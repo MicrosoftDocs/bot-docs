@@ -6,11 +6,10 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 02/22/2017
+ms.date: 
 ms.reviewer:
-
 ---
+
 # Send proactive messages
 
 [!include[Introduction to proactive messages - part 1](~/includes/snippet-proactive-messages-intro-1.md)] 

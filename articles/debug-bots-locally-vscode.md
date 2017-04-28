@@ -1,12 +1,12 @@
 ---
 title: Debug a bot with Visual Studio Code | Microsoft Docs
-description: Learn how to debug bots using the debugger included in Visual Studio Code and the Bot Builder SDK for Node.js. This method does not require installing the Bot Framework Emulator.
+description: Learn how to use the Visual Studio Code debugger to debug a bot that was built with the Bot Builder SDK for Node.js.
 author: DeniseMak
 ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 02/21/2017
+ms.date: 
 ms.reviewer: 
 ---
 
@@ -28,7 +28,7 @@ For purposes of this walkthrough we’ll use the [ConsoleConnector](https://gith
 
 ## Launch your bot
 
-The ConsoleConnector example illustrates running a bot on multiple platforms which is the key to debugging your bot locally. To debug locally you need a version of your bot that can run from a console window using the [ConsoleConnector][ConsoleConnector] class. You can run the  ConsoleConnector example locally by launching the app.js class. To debug this class using VS Code, launch Node.js with the `\-\-debug-brk` flag, which causes it to immediately break. From a console window, type `node \-\-debug-brk textBot.js`.
+The ConsoleConnector example illustrates running a bot on multiple platforms which is the key to debugging your bot locally. To debug locally you need a version of your bot that can run from a console window using the [ConsoleConnector][ConsoleConnector] class. You can run the  ConsoleConnector example locally by launching the **app.js** class. To debug this class using VS Code, launch Node.js with the `--debug-brk` flag, which causes it to immediately break. From a console window, type `node --debug-brk textBot.js`.
 
 ![Step 2: Launch Bot](~/media/debug-vscode/builder-debug-step2.png)
 
@@ -39,7 +39,7 @@ Before you can debug your paused bot, you’ll need to configure the VS Code Nod
 To set up the debugger:
 1. Select the debug tab on the lower left and click the run button. 
 2. VS Code prompts you to pick your debug environment. Select **Node.js**. You don't need to change the default settings.
-3. You should see a .vscode folder added to your project. If you don't want this checked into your Git repository, add a '/**/.vscode' entry to your .gitignore file.
+3. You should see a **.vscode** folder added to your project. If you don't want this folder to be checked into your Git repository, add a `/**/.vscode` entry to your .gitignore file.
 
 ![Step 3: Configure VS Code](~/media/debug-vscode/builder-debug-step3.png)
 

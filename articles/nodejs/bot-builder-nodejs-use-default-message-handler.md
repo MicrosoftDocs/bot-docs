@@ -6,11 +6,10 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 03/31/2017
+ms.date: 
 ms.reviewer:
-
 ---
+
 # Respond to user messages
 
 The simplest way to start sending and receiving messages is by using the default message handler. 

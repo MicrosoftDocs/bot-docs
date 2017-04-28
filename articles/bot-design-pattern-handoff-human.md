@@ -1,15 +1,15 @@
 ---
 title: Transition conversations from bot to human | Microsoft Docs
-description: Learn how to handle situations when a conversation started with the bot must be continued with a human. 
+description: Learn how to design for situations where a user starts a conversation with a bot and then must be handed off to a human. 
 author: matvelloso
 ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 
-ms.reviewer: rstand
-
+ms.reviewer: 
 ---
+
 # Transition conversations from bot to human
 
 Regardless of how much artificial intelligence a bot possesses, there may still be times when it needs to 
@@ -98,7 +98,7 @@ For a complete sample that shows how to hand off conversations from bot to human
 ## Additional resources
 
 - [Dialogs](~/dotnet/bot-builder-dotnet-dialogs.md)
-- [Manage conversation flow using .NET](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
-- [Manage conversation flow using Node.js](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
-- [Add smarts to your bot with Microsoft Cognitive Services](~/intelligent-bots.md)
-- [Add language understanding to your bot](~/cognitive-services-add-bot-language.md)
+- [Manage conversation flow with dialogs (.NET)](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
+- [Manage conversation flow with dialogs (Node.js)](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
+- [Artificial intelligence in bots](~/intelligent-bots.md)
+- [Add language understanding to a bot](~/cognitive-services-add-bot-language.md)

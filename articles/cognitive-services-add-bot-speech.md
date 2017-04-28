@@ -7,9 +7,7 @@ manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 
-ms.reviewer: rstand
-
-
+ms.reviewer: 
 ---
 
 # Add speech recognition to a bot
@@ -389,5 +387,7 @@ public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
     return response;
 }
 ```
-## Next steps
+
+## Additional resources
+
 You can find detailed documentation about the Bing Speech API, including developer guides and API references, by visiting the Microsoft Cognitive Services <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/speech/home" target="_blank">documentation site</a>.

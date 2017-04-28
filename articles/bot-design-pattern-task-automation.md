@@ -1,16 +1,15 @@
 ---
 title: Create task automation bots | Microsoft Docs
-description: Learn how to design and create bots that perform tasks without further human intervention.
+description: Learn how to design bots that perform tasks without further human intervention.
 author: matvelloso
 ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
 ms.date: 
-ms.reviewer: rstand
-
+ms.reviewer: 
 ---
+
 # Create task automation bots
 
 A task automation bot enables the user to complete a specific task or set of tasks without any assistance from a human. 
@@ -118,7 +117,7 @@ For a complete sample that shows how to implement simple task automation using t
 ## Additional resources
 
 - [Dialogs](~/dotnet/bot-builder-dotnet-dialogs.md)
-- [Manage conversation flow using .NET](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
-- [Manage conversation flow using Node.js](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
+- [Manage conversation flow with dialogs (.NET)](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
+- [Manage conversation flow with dialogs (Node.js)](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
 
 [directLineAPI]: https://docs.botframework.com/en-us/restapi/directline3/#navtitle

@@ -6,11 +6,10 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 02/17/2017
+ms.date: 
 ms.reviewer:
-
 ---
+
 # Prompts and waterfalls
 
 A common pattern is for a bot to ask the user a sequence of questions before performing some action.

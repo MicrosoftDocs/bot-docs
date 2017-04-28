@@ -6,9 +6,8 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 04/14/2017
+ms.date: 
 ms.reviewer: 
-
 ---
 
 # Create a bot using the Form template
@@ -52,8 +51,8 @@ The Form template provides a good foundation that you can build upon and customi
 
 - [Create a bot with the Azure Bot Service](~/azure/azure-bot-service-quickstart.md)
 - [Templates in the Azure Bot Service](~/azure/azure-bot-service-templates.md)
-- [FormFlow in .NET](~/dotnet/bot-builder-dotnet-formflow.md) 
-- [Waterfalls in Node.js](~/nodejs/bot-builder-nodejs-prompts.md)
+- [Basic features of FormFlow (.NET)](~/dotnet/bot-builder-dotnet-formflow.md) 
+- [Prompts and waterfalls (Node.js)](~/nodejs/bot-builder-nodejs-prompts.md)
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub repository</a>
 - [Bot Builder SDK for .NET](~/dotnet/index.md)
 - [Bot Builder SDK for Node.js](~/nodejs/index.md)

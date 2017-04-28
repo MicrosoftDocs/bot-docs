@@ -1,15 +1,15 @@
 ---
 title: Design a bot's first user interaction | Microsoft Docs
-description: Learn what makes a great first user experience and how to design your bots for immediate success.  
+description: Learn what makes a great first user experience and how to design your bots for success.  
 author: matvelloso
 ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date:
-ms.reviewer: rstand
-
+ms.reviewer: 
 ---
+
 # Design a bot's first user interaction
 
 ## First impressions matter
@@ -26,12 +26,12 @@ In other words, just saying "hi" won’t be enough.
 
 Consider the following two designs:
 
-###Design 1
+### Design 1
 
 ![bot](~/media/designing-bots/core/hello1.png)
 
 
-###Design 2
+### Design 2
 
 ![bot](~/media/designing-bots/core/hello2.png)
 
@@ -46,7 +46,7 @@ Finally, the use of menus can significantly simplify your natural language model
 
 > [!TIP]
 > Menus are a valuable tool when designing bots for a great user experience. 
-> Don’t dismiss them as not being “smart enough”. 
+> Don’t dismiss them as not being "smart enough." 
 > You may design your bot to use menus while still supporting free form input. 
 > If a user responds to the initial menu by typing rather than by selecting a menu option, your bot could attempt to parse the user's text input. 
 

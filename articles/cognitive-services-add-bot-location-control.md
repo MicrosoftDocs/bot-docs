@@ -7,9 +7,7 @@ manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 
-ms.reviewer: rstand
-
-
+ms.reviewer: 
 ---
 
 # Add location control to a bot
@@ -150,5 +148,6 @@ These examples show different location selection scenarios that the Bing locatio
 
 ![Messenger Location Dialog](~/media/messenger_locationdialog_1.png)
 
-## Next steps
+## Additional resources
+
 You can find detailed documentation about the Cognitive Services APIs, including developer guides and API references, by visiting the Microsoft Cognitive Services <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/" target="_blank">documentation site</a>.

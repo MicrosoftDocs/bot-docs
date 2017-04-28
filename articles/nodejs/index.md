@@ -6,10 +6,8 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 03/08/2017
-ms.reviewer: rstand
-
+ms.date: 
+ms.reviewer: 
 ---
 
 # Bot Builder SDK for Node.js

@@ -1,15 +1,15 @@
 ---
 title: Integrate your bot with a web browser | Microsoft Docs
-description: Learn how to expand bot functionality by integrating it with a web browser and how to design a smooth user transition from bot to web and back.
+description: Learn how to design a smooth user transition from bot to web browser and back again.
 author: matvelloso
 ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 
-ms.reviewer: rstand
-
+ms.reviewer: 
 ---
+
 # Integrate your bot with a web browser
 
 Some scenarios require more than just a bot to fulfill a requirement. 
@@ -112,8 +112,8 @@ As described in this article, the <a href="https://github.com/microsoftdx/authbo
 ## Additional resources
 
 - [Dialogs](~/dotnet/bot-builder-dotnet-dialogs.md)
-- [Manage conversation flow using .NET](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
-- [Manage conversation flow using Node.js](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
-- [Add smarts to your bot with Microsoft Cognitive Services](~/intelligent-bots.md)
-- [Add language understanding to your bot](~/cognitive-services-add-bot-language.md)
+- [Manage conversation flow with dialogs (.NET)](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
+- [Manage conversation flow with dialogs (Node.js)](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
+- [Artificial intelligence in bots](~/intelligent-bots.md)
+- [Add language understanding to a bot](~/cognitive-services-add-bot-language.md)
 

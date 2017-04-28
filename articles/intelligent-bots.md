@@ -6,16 +6,18 @@ ms.author: rstand
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 03/29/2017
+ms.date: 
 ms.reviewer:
-
 ---
+
 # Artificial intelligence in bots
+
 Microsoft Cognitive Services lets you tap into an ever-growing collection of powerful AI algorithms developed by experts in the fields of computer vision, speech, natural language processing, knowledge extraction, and web search. The services simplify a variety of AI-based tasks, giving you a quick way to add state-of-the-art intelligence technologies to your bots with just a few lines of code. The APIs integrate into most modern languages and platforms. The APIs are also constantly improving, learning, and getting smarter, so experiences are always up to date. 
 
 Intelligent bots respond as if they can see the world as people see it. They discover information and extract knowledge from different sources to provide useful answers, and, best of all, they learn as they acquire more experience to continuously improve their capabilities. 
 
 ## Language understanding
+
 The interaction between users and bots is mostly free-form, so buts need to understand language naturally and contextually. The Cognitive Service Language APIs provide powerful language models to determine what users want, to identify concepts and entities in a given sentence, and ultimately to allow your bots to respond with the appropriate action. The five APIs support several text analytics capabilities, such as spell checking, sentiment detection, language modeling, and extraction of accurate and rich insights from text. 
 
 Cognitive Services provides five APIs for language understanding:
@@ -33,6 +35,7 @@ Cognitive Services provides five APIs for language understanding:
 Learn [how to add language understanding](cognitive-services-add-bot-language.md) to your bot.
 
 ## Knowledge extraction
+
 Cognitive Services provides five knowledge APIs that enable you to identify named entities or phrases in unstructured text, add personalized recommendations, provide auto-complete suggestions based on natural interpretation of user queries, and search academic papers and other research like a personalized FAQ service.
 
 - The <a href="https://www.microsoft.com/cognitive-services/en-us/entity-linking-intelligence-service" target="_blank">Entity Linking Intelligence Service</a> annotates unstructured text with the relevant entities mentioned in the text. Depending on the context, the same word or phrase may refer to different things. This service understands the context of the supplied text and will identify each entity in your text.    
@@ -48,6 +51,7 @@ Cognitive Services provides five knowledge APIs that enable you to identify name
 Learn [how to add knowledge extraction](cognitive-services-add-bot-knowledge.md) to your bot.
 
 ## Speech recognition and conversion
+
 Use the Speech APIs to add advanced speech skills to your bot that leverage industry-leading algorithms for speech-to-text and text-to-speech conversion, as well as speaker recognition. The Speech APIs use built-in language and acoustic models that cover a wide range of scenarios with high accuracy. 
 
 For applications that require further customization, you can use the Custom Recognition Intelligent Service (CRIS). This allows you to calibrate the language and acoustic models of the speech recognizer by tailoring it to the vocabulary of the application, or even to the speaking style of your users.
@@ -61,6 +65,7 @@ There are three Speech APIs available in Cognitive Services to process or synthe
 Learn [how to add speech recognition and conversion](cognitive-services-add-bot-speech.md) to your bot.
 
 ## Search
+
 The Bing Search APIs enable you to add intelligent web search capabilities to your bots. With a few lines of code, you can access billions of webpages, images, videos, news, and other result types. You can configure the APIs to return results by geographical location, market, or language for better relevance. You can further customize your search using the supported search parameters, such as Safesearch to filter out adult content, and Freshness to return results according to a specific date.
 
 There are five Bing Search APIs available in Cognitive Services.
@@ -78,6 +83,7 @@ There are five Bing Search APIs available in Cognitive Services.
 Learn [how to add search](cognitive-services-add-bot-search.md) to your bot. 
 
 ## Image and video understanding
+
 The Vision APIs bring advanced image and video understanding skills to your bots. 
 State-of-the-art algorithms allow you to process images or videos and get back information you can transform into actions. For example, you can use them to recognize objects, people's faces, age, gender or even feelings. 
 
@@ -96,6 +102,7 @@ Cognitive Services provide four APIs you can use to process images or videos:
 Learn [how to add image and video understanding](cognitive-services-add-bot-vision.md) to your bot.    
 
 ## Location control
+
 Bots often need the user to input a location to complete a task. For example, a Taxi bot requires the user's pickup and destination address before requesting a ride. Similarly, a Pizza bot must know the user's delivery address to submit the order, and so on. Normally, bot developers need to use a combination of location or place APIs so that their bots engage in a multi-turn dialog with users to get their desired location and subsequently validate it. Unfortunately, the development steps are usually complicated and error-prone. 
 
 ![Basic Scenario](~/media/skype_multiaddress_1.png)

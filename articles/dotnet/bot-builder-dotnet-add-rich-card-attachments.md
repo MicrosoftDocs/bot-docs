@@ -1,21 +1,18 @@
 ---
 title: Add rich card attachments to messages | Microsoft Docs
-description: Learn how to add rich cards to enhance and expand message capability using the Bot Builder SDK for .NET.
+description: Learn how to add rich cards to messages using the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 04/11/2017
+ms.date: 
 ms.reviewer:
-
 ---
 
 # Add rich card attachments to messages
 
 A message exchange between user and bot can contain one or more rich cards rendered as a list or carousel. 
-
 The `Attachments` property of the `Activity` object contains an array of `Attachment` objects that represent the rich cards and [media attachments](~/dotnet/bot-builder-dotnet-add-media-attachments.md) within the message. 
 
 > [!NOTE]
@@ -45,8 +42,7 @@ The Bot Framework currently supports seven types of rich cards:
 
 ## Process events within rich cards
 
-Define `CardAction` objects to specify what should happen when the user clicks a button or taps a section of the card. 
-Each `CardAction` object contains these properties:
+To process events within rich cards, define `CardAction` objects to specify what should happen when the user clicks a button or taps a section of the card. Each `CardAction` object contains these properties:
 
 | Property | Type | Description | 
 |----|----|----|
@@ -70,11 +66,7 @@ the expected contents of `CardAction.Value` for each type:
 | downloadFile | URL of file to be downloaded |
 | signin | URL of OAuth flow to be initiated |
 
-## Examples
-
-How to create buttons within different kinds of rich cards with the `CardAction` object. 
-
-### Add a Hero card
+## Add a Hero card to a message
 
 The Hero card typically contains a single large image, one or more buttons, and text. 
 
@@ -82,7 +74,7 @@ This code example shows how to create a reply message that contains three Hero c
 
 [!code-csharp[Add HeroCard attachment](~/includes/code/dotnet-add-attachments.cs#addHeroCardAttachment)]
 
-### Add a Thumbnail card to a message
+## Add a Thumbnail card to a message
 
 The Thumbnail card typically contains a single thumbnail image, one or more buttons, and text. 
 
@@ -110,11 +102,9 @@ This code example shows how to create a reply message that contains a Sign-in ca
 
 ## Additional resources
 
-- [Activity types](~/dotnet/bot-builder-dotnet-activities.md)
-- [Send and receive activities](~/dotnet/bot-builder-dotnet-connector.md)
+- [Activities overview](~/dotnet/bot-builder-dotnet-activities.md)
 - [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
 - [Add media attachments to messages](~/dotnet/bot-builder-dotnet-add-media-attachments.md)
-- [Implement channel-specific functionality](~/dotnet/bot-builder-dotnet-channeldata.md)
 
 [animationCard]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d9/d78/class_microsoft_1_1_bot_1_1_connector_1_1_animation_card.html
 

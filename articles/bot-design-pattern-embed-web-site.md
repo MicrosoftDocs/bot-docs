@@ -6,11 +6,10 @@ ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
 ms.date: 
-ms.reviewer: rstand
-
+ms.reviewer: 
 ---
+
 # Embed a bot in a website
 
 Although bots commonly exist outside of websites, they can also be embedded within a website. 
@@ -19,7 +18,7 @@ to enable users to quickly find information that might otherwise be challenging 
 Or you might embed a bot within a help desk website to act as the first responder to incoming user requests. 
 The bot could independently resolve simple issues and [handoff](~/bot-design-pattern-handoff-human.md) more complex issues to a human agent. 
 
-This article explores integrating bots with websites and the process of using the `backchannel` mechanism to facilitate private communication between a web page and a bot. 
+This article explores integrating bots with websites and the process of using the *backchannel* mechanism to facilitate private communication between a web page and a bot. 
 
 Microsoft provides two different ways to integrate a bot in a website: 
 the Skype web control and an open source web control.
@@ -41,7 +40,7 @@ is based upon ReactJS and uses the
 to communicate with the Bot Framework. The web chat control provides a blank canvas for implementing the web chat, 
 giving you full control over its behaviors and the user experience that it delivers. 
 
-The `backchannel` mechanism enables the web page that is hosting the control 
+The *backchannel* mechanism enables the web page that is hosting the control 
 to communicate directly with the bot in a manner that is entirely invisible to the user. 
 This capability enables a number of useful scenarios: 
 

@@ -1,21 +1,20 @@
 ---
 title: Manage conversation flow with dialogs | Microsoft Docs
-description: Learn how to model and manage conversation flow using dialogs and the Bot Builder SDK for .NET.
+description: Learn how to model conversations and manage conversation flow using dialogs and the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 02/17/2017
+ms.date: 
 ms.reviewer:
-
 ---
+
 # Manage conversation flow with dialogs
 
 [!include[Dialog flow example](~/includes/snippet-dotnet-manage-conversation-flow-intro.md)]
 
-How to model conversation flow by using [dialogs](~/dotnet/bot-builder-dotnet-dialogs.md) and the Bot Builder SDK for .NET. 
+This article describes how to model this conversation flow by using [dialogs](~/dotnet/bot-builder-dotnet-dialogs.md) and the Bot Builder SDK for .NET. 
 
 ## Invoke the root dialog
 
@@ -95,7 +94,8 @@ For a complete sample that shows how to manage a conversation by using dialogs i
 ## Additional resources
 
 - [Dialogs](~/dotnet/bot-builder-dotnet-dialogs.md)
-- [Designing conversation flow](~/bot-design-conversation-flow.md)
+- [Design and control conversation flow](~/bot-design-conversation-flow.md)
 - [Builder library][builderLibrary]
+- <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-BasicMultiDialog" target="_blank">Basic Multi-Dialog sample (GitHub)</a>
 
 [builderLibrary]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html
