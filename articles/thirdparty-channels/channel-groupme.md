@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date:
 ms.reviewer:
-
 ---
+
 # Connect a bot to GroupMe
 
-Configure a bot to communicate using the GroupMe group messaging app.
+To configure your bot to communicate using the GroupMe group messaging app, complete the steps described in this article.
 
 ## Sign up for a GroupMe account
 
@@ -42,5 +42,5 @@ Copy the **Client ID** section from the redirect URL.
 
 Check **Enable this bot on GroupMe**.
 
-Click **I'm done configuring GroupMe**
+Click **I'm done configuring GroupMe**.
 

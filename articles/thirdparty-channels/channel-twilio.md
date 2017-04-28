@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date:
 ms.reviewer:
-
 ---
+
 # Connect a bot to Twilio
 
-Configure a bot to communicate using the Twilio cloud communication platform.
+To configure a bot to communicate using the Twilio cloud communication platform, complete the steps described in this article. 
 
 ## Log in to or create a Twilio account for sending and receiving SMS messages
 
@@ -53,5 +53,4 @@ Enter the phone number, accountSID and Auth Token you copied earlier and click *
 
 Check **Enable this bot on SMS**.
 
-Click **I'm done configuring SMS**
-
+Click **I'm done configuring SMS**.

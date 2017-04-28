@@ -2,7 +2,7 @@
 
 ### Verify application settings
 
-Before you deploy your bot to the cloud, you must ensure that its application settings are correct. 
+For your bot to function properly in the cloud, you must ensure that its application settings are correct. 
 If you've already [registered](~/portal-register-bot.md) your bot with the Bot Framework,
 update the Microsoft App Id and Microsoft App Password values in your application's configuration settings
 as part of the deployment process.

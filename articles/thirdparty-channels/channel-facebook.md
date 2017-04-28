@@ -8,14 +8,11 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date:
 ms.reviewer:
-
 ---
+
 # Connect a bot to Facebook Messenger
 
-Configure your bot to communicate using the Facebook Messenger app.
-You will create a Facebook page, enable Facebook Messenger on that page, and then connect your bot to that app.
-
-To learn more about developing for Facebook Messenger, see the [Messenger platform documentation](https://developers.facebook.com/docs/messenger-platform). 
+To configure your bot to communicate using the Facebook Messenger app, complete the steps described in this article. 
 
 ## Create a Facebook page
 Your bot is accessed through a Facebook Page.
@@ -41,7 +38,7 @@ Connecting a bot also requires a Facebook App.
 Enable Facebook Messenger in your new Facebook App. 
 On the **Product Setup** page of the app, click **Get Started** and then click **Get Started** again. 
 
-![Enable messenger](~/media/channels/FB-AddMessaging1.png
+![Enable messenger](~/media/channels/FB-AddMessaging1.png)
 
 ## Generate page access token
 In the **Token Generation** panel of the Messenger section, select your Page.
@@ -72,5 +69,8 @@ Enter the Page ID, App ID, Page Secret, and Access Token that you copied earlier
 
 Check **Enable this bot on Facebook Messenger**.
 
-Click **I'm done configuring Facebook Messenger**
+Click **I'm done configuring Facebook Messenger**.
 
+## Additional resources
+
+To learn more about developing for Facebook Messenger, see the [Messenger platform documentation](https://developers.facebook.com/docs/messenger-platform). 
