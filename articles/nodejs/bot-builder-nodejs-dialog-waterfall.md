@@ -73,7 +73,7 @@ The first step of a waterfall can receive arguments passed to the dialog.
 
 Every step after that receives a `next()` function that can be used to advance the waterfall to the next step. Note that the `next()` function can receive an `IDialogResult` object containing results already returned from a previous dialog. Your bot doesn't have to ask for the user's name more than once; it can just pass the results from the first time.
 
-The following example shows how to pair these two features together to create an `/ensureProfile` dialog that verifies a user's profile is complete. If the profile is not complete, the user is prompted for the missing information. This pattern lets you add fields to the profile that will be automatically filled in as users message the bot.
+The following example shows how to pair these two features together to create an `/ensureProfile` dialog that walks the user through completing a user profile. The bot prompts the user for responses and populates the profile fields with the results it receives. When the user has finished, the bot verifies that the user's profile is complete. If the profile is not complete, the user is prompted for the missing information. 
 
 ```javascript
 bot.dialog('/', [

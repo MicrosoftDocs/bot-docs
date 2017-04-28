@@ -11,17 +11,19 @@ ms.date: 04/25/2017
 ---
 # Manage a conversation with dialogs
 
-Dialogs help you encapsulate your bot's conversational logic into manageable components. The Bot Builder SDK provides Dialog objects that help you manage conversation flow.
+Dialogs help you encapsulate your bot's conversational logic into manageable components. The Bot Builder SDK provides powerful dialog objects that help simplify conversation flow management.
 
 ## Dialog stack
 
-You can use dialogs to organize your bot's conversations with the user. The bot tracks where it is in the conversation using a stack that’s persisted to the bot's storage system.  When the bot receives the first message from a user it will push the bot's [default dialog](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iuniversalbotsettings.html#defaultdialogid) onto the stack and pass that dialog the user's message. The dialog can either process the incoming message and send a reply directly to the user or it can start other dialogs which will guide the user through a series of questions that collect input from the user needed to complete some task. 
+You can use dialogs to organize your bot's conversations with the user. The bot tracks where it is in the conversation using a **dialog stack** that’s persisted to the bot's storage system. 
 
-The session includes several methods for managing the bots dialog stack and therefore manipulate where the bot is conversationally with the user. After you get the hang of working with the dialog stack, you can use a combination of dialogs and the session's stack manipulation methods to achieve just about any conversational flow you can dream of.
+When the bot receives the first message from a user it will push the bot's [default dialog](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iuniversalbotsettings.html#defaultdialogid) onto the stack and pass the message to that dialog. The dialog can either process the incoming message and send a reply directly to the user or it can start other dialogs.
+
+The `session` includes several methods for managing the dialog stack, which changes where the bot is conversationally with the user. After you get the hang of working with the dialog stack, you can use a combination of dialogs and stack manipulation methods to achieve just about any conversational flow you can dream of.
 
 ## Starting and ending dialogs
 
-You can use [session.beginDialog()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#begindialog) to call a dialog (pushing it onto the stack) and then either [session.endDialog()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#enddialog) or [session.endDialogWithResults()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#enddialogwithresults) to return control back to the caller (popping off the stack). When paired with [waterfalls](bot-builder-nodejs-dialog-waterfall.md)) you have a simple mechanism for driving conversations forward. 
+Use [session.beginDialog()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#begindialog) to call a dialog (pushing it onto the stack) and then either [session.endDialog()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#enddialog) or [session.endDialogWithResults()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#enddialogwithresults) to return control back to the caller (pop it off the stack). When paired with [waterfalls](bot-builder-nodejs-dialog-waterfall.md)), you have a simple, effective mechanism for driving conversations forward. 
 
 The following code uses two waterfalls to prompt the user for their name and then responds with a custom greeting. 
 
@@ -44,7 +46,7 @@ bot.dialog('/askName', [
 ]);
 ```
 
-If you run the example using the emulator, the output will be similar to the following results.
+If you run this example using the emulator, the output will be similar to the following results.
 
 ```
 restify listening to http://[::]:3978
@@ -76,7 +78,7 @@ The example uses `session.endDialogWithResult()` to return control back to the c
 * Send the user a message using `session.endDialog("ok… operation canceled")`
 * Simply return control to the caller using `session.endDialog()`
 
-When calling a dialog with `session.beginDialog()`, you can optionally pass a set of arguments which lets you call dialogs in much the same way you would a function. The following example updates the previous exmple to show how to use arguments. The example prompts the user for their profile information and then stores it for future conversations.
+When calling a dialog with `session.beginDialog()`, you can optionally pass a set of arguments which lets you call dialogs the same way you would a function. The following example updates the previous example to show how to use arguments. The example prompts the user for their profile information and then stores it for future conversations.
 
 ```javascript
 bot.dialog('/', [
@@ -115,7 +117,6 @@ bot.dialog('/ensureProfile', [
     }
 ]);
 ```
-
 The example uses [session.userData](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#userdata) to remember the user's `profile` between conversations. The root dialog gets the user's profile data and passes it to the “/ensureProfile” dialog in the `beginDialog()` call. 
 
 If a dialog collects data over multiple steps, it should use [session.dialogData](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#dialogdata) to temporarily hold values being collected. The `/ensureProfile` dialog uses `dialogData` to hold the `profile` object. Each step passes the `next()` function which is used to skip the step if the profile already contains that data element. For example, if the profile already contains the user's name, the waterfall skips to the next step and collects the user's email address if it doesn't exist.
@@ -127,7 +128,6 @@ After the profile dialog collects all of the profile data, it returns the profil
 Message handlers for a dialog can take different forms. You can add an *action* to a dialog to listen for user input as it occurs. See [Listen for messages using actions](bot-builder-nodejs-global-handlers.md) for information on using actions in your bot.
 
 Another form is a [waterfall](bot-builder-nodejs-dialog-waterfall.md), which is a common way to guide the user through a series of steps or prompt the user with a series of questions.
-
 
 ## Dialog lifecycle
 
@@ -260,8 +260,7 @@ bot.dialog('/room1', [
     }
 ]);
 ```
-
-The example creates a separate dialog for every location and moves from location to location using `replaceDialog()`. You can also make the example more data driven as shown in the following example.
+The example creates a separate dialog for every location and moves from location to location using `replaceDialog()`. You can also make the example more data-driven as shown in the following example.
 
 ```javascript
 var world = {
@@ -295,7 +294,6 @@ bot.dialog('/location', [
     }
 ]);
 ```
-
 ## Canceling dialogs
 
 Sometimes you may want to do more extensive stack manipulation. For example, you can use the [session.cancelDialog()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#canceldialog) to end a dialog at any arbitrary point in the dialog stack and optionally start a new dialog in its place. You can call `session.cancelDialog('/placeOrder')` with the ID of a dialog to cancel. The stack will be searched backwards and the first occurrence of that dialog will be canceled causing that dialog plus all of its children to be removed from the stack. Control will be returned to the original caller and they can check for a [results.resumed](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptresult.html#resumed) code equal to [ResumeReason.notCompleted](http://docs.botframework.com/en-us/node/builder/chat-reference/enums/_botbuilder_d_.resumereason.html#notcompleted) to detect the cancellation.
