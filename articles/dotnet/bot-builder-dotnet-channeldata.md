@@ -295,5 +295,5 @@ This snippet shows an example of the `channelData` property for a native Kik mes
 
 ## Additional resources
 
-- [Activity types](~/dotnet/bot-builder-dotnet-activities.md)
+- [Activities overview](~/dotnet/bot-builder-dotnet-activities.md)
 - [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)

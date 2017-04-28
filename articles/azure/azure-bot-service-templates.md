@@ -49,8 +49,8 @@ If you choose Node.js as the language for your bot, the application that is crea
 
 ## Additional resources
 
-- [Create a basic bot](azure-bot-service-template-basic.md)
-- [Create a form bot](azure-bot-service-template-form.md)
-- [Create a language understanding bot](azure-bot-service-template-language-understanding.md)
-- [Create a proactive bot](azure-bot-service-template-proactive.md)
-- [Create a question and answer bot](azure-bot-service-template-question-and-answer.md)
+- [Create a bot using the Basic template](azure-bot-service-template-basic.md)
+- [Create a bot using the Form template](azure-bot-service-template-form.md)
+- [Create a bot using the Language understanding template](azure-bot-service-template-language-understanding.md)
+- [Create a bot using the Proactive template](azure-bot-service-template-proactive.md)
+- [Create a bot using the Question and Answer template](azure-bot-service-template-question-and-answer.md)

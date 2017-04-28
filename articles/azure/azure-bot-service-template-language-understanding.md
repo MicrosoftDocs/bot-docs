@@ -49,8 +49,8 @@ The Language understanding template provides a good foundation that you can buil
 - [Create a bot with the Azure Bot Service](~/azure/azure-bot-service-quickstart.md)
 - [Templates in the Azure Bot Service](~/azure/azure-bot-service-templates.md)
 - <a href="https://www.luis.ai" target="_blank">LUIS</a>
-- [Enable language understanding in .NET](~/dotnet/bot-builder-dotnet-luis-dialogs.md)
-- [Recognize user intent in Node.js](~/nodejs/bot-builder-nodejs-recognize-intent.md)
+- [Enable language understanding with LUIS (.NET)](~/dotnet/bot-builder-dotnet-luis-dialogs.md)
+- [Recognize user intent (Node.js)](~/nodejs/bot-builder-nodejs-recognize-intent.md)
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub repository</a>
 - [Bot Builder SDK for .NET](~/dotnet/index.md)
 - [Bot Builder SDK for Node.js](~/nodejs/index.md)

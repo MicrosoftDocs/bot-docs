@@ -31,6 +31,6 @@ If an attachment is an image, audio, or video, the Connector service will commun
 
 ## Additional resources
 
-- [Activity types](~/dotnet/bot-builder-dotnet-activities.md)
+- [Activities overview](~/dotnet/bot-builder-dotnet-activities.md)
 - [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
 - [Add rich cards to messages](~/dotnet/bot-builder-dotnet-add-rich-card-attachments.md)

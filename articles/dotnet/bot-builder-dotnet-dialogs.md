@@ -26,12 +26,12 @@ much like a web application that does not need to store session state in web ser
 ## Echo bot example
 
 Consider this echo bot example, which describes how to change the bot that's created in the 
-[Get started](~/dotnet/bot-builder-dotnet-quickstart.md) tutorial so that it uses dialogs to 
+[Quickstart](~/dotnet/bot-builder-dotnet-quickstart.md) tutorial so that it uses dialogs to 
 exchange messages with the user.
 
 > [!TIP]
 > To follow along with this example, use the instructions in the 
-> [Get started](~/dotnet/bot-builder-dotnet-quickstart.md) tutorial to create a bot, and then 
+> [Quickstart](~/dotnet/bot-builder-dotnet-quickstart.md) tutorial to create a bot, and then 
 > update its **MessagesController.cs** file as described below.
 
 ### MessagesController.cs 
@@ -202,9 +202,9 @@ If `Chain.Switch<T, R>` returns a nested `IDialog<IDialog<T>>`, then the inner `
 ## Additional resources
 
 - [Key concepts in the Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-concepts.md)
-- [Designing conversation flow](~/bot-design-conversation-flow.md)
-- [Manage conversation flow using dialogs](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
-- [Enable language understanding](~/dotnet/bot-builder-dotnet-luis-dialogs.md)
+- [Design and control conversation flow](~/bot-design-conversation-flow.md)
+- [Manage conversation flow with dialogs](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
+- [Enable language understanding with LUIS](~/dotnet/bot-builder-dotnet-luis-dialogs.md)
 - [Bot Framework troubleshooting guide](~/troubleshoot-general-problems.md#implement-dialogs)
 - [Builder library][builderLibrary]
 

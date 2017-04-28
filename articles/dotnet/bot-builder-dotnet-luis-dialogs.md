@@ -46,6 +46,6 @@ This code example shows the full dialog implementation for the Alarm bot.
 ## Additional resources
 
 - [Dialogs](~/dotnet/bot-builder-dotnet-dialogs.md)
-- [Manage conversation flow using dialogs](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
+- [Manage conversation flow with dialogs](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
 - [Language understanding](~/intelligent-bots.md#language-understanding)
 - <a href="https://www.luis.ai" target="_blank">LUIS</a>

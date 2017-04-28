@@ -55,8 +55,8 @@ The Basic template provides a good foundation that you can build upon to create 
 
 - [Create a bot with the Azure Bot Service](~/azure/azure-bot-service-quickstart.md)
 - [Templates in the Azure Bot Service](~/azure/azure-bot-service-templates.md)
-- [Dialogs in .NET](~/dotnet/bot-builder-dotnet-dialogs.md)
-- [Dialogs in Node.js](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
+- [Dialogs in the Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-dialogs.md)
+- [Manage message flow with dialogs in the Bot Builder SDK for Node.js](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub repository</a>
 - [Bot Builder SDK for .NET](~/dotnet/index.md)
 - [Bot Builder SDK for Node.js](~/nodejs/index.md)

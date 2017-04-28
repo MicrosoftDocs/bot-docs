@@ -10,7 +10,7 @@ ms.date:
 ms.reviewer: 
 ---
 
-# Add search and filtered results to a bot
+# Add search capabilities to a bot
 
 The Search APIs offer a great way to access the vast information available on the web. They are ideal for any bot that needs to embed search results directly into their messages, or leverage them as input for other interesting applications. Besides plain search, the APIs support several intelligent features that can be used across a broad array of scenarios. For example, the Image Search API includes image recognition features, such as celebrity recognition, product search (where to buy), and visually similar search. The News Search API is able to extract mentioned entities and other useful article metadata.
 

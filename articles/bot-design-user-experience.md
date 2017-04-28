@@ -75,7 +75,7 @@ For example, imagine a bot that can answer questions based on the contents of th
 <a href="https://qnamaker.ai" target="_blank">QnA Maker</a> and 
 <a href="https://azure.microsoft.com/en-us/services/search/" target="_blank">Azure Search</a> are 
 both technologies which are designed specifically for this type of scenario. 
-For more information, see [Knowledge base bots](bot-design-pattern-knowledge-base.md).
+For more information, see [Design knowledge bots](bot-design-pattern-knowledge-base.md).
 
 > [!TIP]
 > If you are designing a bot that will answer questions based on structured or unstructured data from 

@@ -141,7 +141,7 @@ For details, see [Implement channel-specific functionality](~/dotnet/bot-builder
 
 ## Additional resources
 
-- [Activity types](~/dotnet/bot-builder-dotnet-activities.md)
+- [Activities overview](~/dotnet/bot-builder-dotnet-activities.md)
 - [Send and receive activities](~/dotnet/bot-builder-dotnet-connector.md)
 - [Add media attachments to messages](~/dotnet/bot-builder-dotnet-add-media-attachments.md)
 - [Add rich cards to messages](~/dotnet/bot-builder-dotnet-add-rich-card-attachments.md)

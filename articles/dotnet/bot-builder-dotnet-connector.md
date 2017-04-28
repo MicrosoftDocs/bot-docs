@@ -118,7 +118,7 @@ This code example uses the `CreateConversation` method to create a group convers
 ## Additional resources
 
 - [Connector library][connectorLibrary]
-- [Activity types](~/dotnet/bot-builder-dotnet-activities.md)
+- [Activities overview](~/dotnet/bot-builder-dotnet-activities.md)
 - [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
 
 [connectorLibrary]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/db/dbb/namespace_microsoft_1_1_bot_1_1_connector.html

@@ -73,6 +73,6 @@ To disable continuous integration for your application, disconnect the deploymen
 ## Additional resources
 
 To learn how to debug your bot locally after you have configured continuous integration, see 
-[Debug your bot](~/azure/azure-bot-service-debug-bot.md).
+[Debug an Azure Bot Service bot](~/azure/azure-bot-service-debug-bot.md).
 
 This article has highlighted the specific continuous integration features of Azure Bot Service. For information about continuous integration as it relates to Azure App Services, see <a href="https://azure.microsoft.com/en-us/documentation/articles/app-service-continuous-deployment/" target="_blank">Continuous Deployment to Azure App Service</a>.

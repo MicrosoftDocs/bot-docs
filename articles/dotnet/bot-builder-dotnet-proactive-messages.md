@@ -169,7 +169,7 @@ Within the Proactive Messages sample, <a href="https://github.com/Microsoft/BotB
 
 ## Additional resources
 
-- [Designing conversation flow](~/bot-design-conversation-flow.md)
+- [Design and control conversation flow](~/bot-design-conversation-flow.md)
 - [Builder library][builderLibrary]
 - <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-proactiveMessages" target="_blank">Proactive Messages sample (GitHub)</a>
 

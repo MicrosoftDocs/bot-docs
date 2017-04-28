@@ -117,7 +117,7 @@ For a complete sample that shows how to implement simple task automation using t
 ## Additional resources
 
 - [Dialogs](~/dotnet/bot-builder-dotnet-dialogs.md)
-- [Manage conversation flow using .NET](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
-- [Manage conversation flow using Node.js](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
+- [Manage conversation flow with dialogs (.NET)](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
+- [Manage conversation flow with dialogs (Node.js)](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
 
 [directLineAPI]: https://docs.botframework.com/en-us/restapi/directline3/#navtitle

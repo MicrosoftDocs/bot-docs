@@ -10,7 +10,7 @@ ms.date:
 ms.reviewer: 
 ---
 
-# Bot Framework Troubleshooting Guide
+# Bot Framework troubleshooting guide
 These Frequently Asked Questions (FAQ) for the Bot Framework can help you with troubleshooting.
 
 ## General questions

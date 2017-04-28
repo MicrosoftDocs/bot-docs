@@ -94,7 +94,8 @@ For a complete sample that shows how to implement global message handlers using 
 
 ## Additional resources
 
-- [Designing conversation flow](~/bot-design-conversation-flow.md)
+- [Design and control conversation flow](~/bot-design-conversation-flow.md)
 - [Builder library][builderLibrary]
+- <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-GlobalMessageHandlers" target="_blank">Global Message Handlers sample (GitHub)</a>
 
 [builderLibrary]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html

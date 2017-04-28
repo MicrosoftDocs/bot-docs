@@ -24,7 +24,7 @@ In the Bot Builder SDK for .NET, the [Connector][connectorLibrary] library enabl
 
 [!include[Activity concept overview](~/includes/snippet-dotnet-concept-activity.md)]
 For details about Activities in the Bot Builder SDK for .NET, 
-see [Activity types](~/dotnet/bot-builder-dotnet-activities.md).
+see [Activities overview](~/dotnet/bot-builder-dotnet-activities.md).
 
 ## Dialog
 
@@ -62,9 +62,9 @@ For more information on this topic, see [Secure your bot](~/dotnet/bot-builder-d
 
 - [Bot Builder SDK for .NET](~/dotnet/index.md)
 - [Create a bot with the Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-quickstart.md)
-- [Activity types](~/dotnet/bot-builder-dotnet-activities.md)
+- [Activities overview](~/dotnet/bot-builder-dotnet-activities.md)
 - [Dialogs](~/dotnet/bot-builder-dotnet-dialogs.md)
-- [Designing conversation flow](~/bot-design-conversation-flow.md)
+- [Design and control conversation flow](~/bot-design-conversation-flow.md)
 - [Secure your bot](~/dotnet/bot-builder-dotnet-security.md)
 
 

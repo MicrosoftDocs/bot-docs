@@ -102,7 +102,7 @@ This code example shows how to create a reply message that contains a Sign-in ca
 
 ## Additional resources
 
-- [Activity types](~/dotnet/bot-builder-dotnet-activities.md)
+- [Activities overview](~/dotnet/bot-builder-dotnet-activities.md)
 - [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
 - [Add media attachments to messages](~/dotnet/bot-builder-dotnet-add-media-attachments.md)
 
