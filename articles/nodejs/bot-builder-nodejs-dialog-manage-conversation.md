@@ -11,11 +11,11 @@ ms.date: 04/25/2017
 ---
 # Manage a conversation with dialogs
 
-Dialogs help you encapsulate your bot's conversational logic into manageable components. The Bot Builder SDK provides [Dialog][Dialogclass] objects that help you manage conversation flow.
+Dialogs help you encapsulate your bot's conversational logic into manageable components. The Bot Builder SDK provides Dialog objects that help you manage conversation flow.
 
 ## Dialog stack
 
-You can use dialogs to organize your bot's conversations with the user. The bot tracks where it is in the conversation using a stack that’s persisted to the bot's storage system.  When the bot receives the first message from a user it will push the bots [default dialog](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iuniversalbotsettings.html#defaultdialogid) onto the stack and pass that dialog the user's message. The dialog can either process the incoming message and send a reply directly to the user or it can start other dialogs which will guide the user through a series of questions that collect input from the user needed to complete some task. 
+You can use dialogs to organize your bot's conversations with the user. The bot tracks where it is in the conversation using a stack that’s persisted to the bot's storage system.  When the bot receives the first message from a user it will push the bot's [default dialog](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iuniversalbotsettings.html#defaultdialogid) onto the stack and pass that dialog the user's message. The dialog can either process the incoming message and send a reply directly to the user or it can start other dialogs which will guide the user through a series of questions that collect input from the user needed to complete some task. 
 
 The session includes several methods for managing the bots dialog stack and therefore manipulate where the bot is conversationally with the user. After you get the hang of working with the dialog stack, you can use a combination of dialogs and the session's stack manipulation methods to achieve just about any conversational flow you can dream of.
 
@@ -23,7 +23,7 @@ The session includes several methods for managing the bots dialog stack and ther
 
 You can use [session.beginDialog()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#begindialog) to call a dialog (pushing it onto the stack) and then either [session.endDialog()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#enddialog) or [session.endDialogWithResults()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#enddialogwithresults) to return control back to the caller (popping off the stack). When paired with [waterfalls](bot-builder-nodejs-waterfall-conversation-steps.md) you have a simple mechanism for driving conversations forward. 
 
-The following code uses two waterfalls to prompt the user for their name and then responds with a custom greeting. 
+The following code uses two [waterfalls](bot-builder-nodejs-dialog-waterfall.md) to prompt the user for their name and then responds with a custom greeting. 
 
 ```javascript
 bot.dialog('/', [
@@ -66,7 +66,7 @@ ChatConnector: message received.
 / - session.sendBatch() sending 1 messages
 ```
 
-The output shows that the user sent two messages to the bot. The first message pushed the default root (`/`) dialog onto the stack, entering step 1 of the first waterfall. That step called `beginDialog()` and pushed the `/askName` dialog onto the stack, entering step 1 of the second waterfall. That step then called [Prompts.text()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts#text) to ask the user their name. Prompts are themselves dialogs. You can tell the current stack depth by the number of dots prefixing each line, such as `..Prompts.text`.
+The output shows that the user sent two messages to the bot. The first message pushed the default root (`/`) dialog onto the stack, entering step 1 of the first waterfall. That step called `beginDialog()` and pushed the `/askName` dialog onto the stack, entering step 1 of the second waterfall. That step then called [Prompts.text()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts#text) to ask the user their name. [Prompts](bot-builder-nodejs-dialog-prompt.md) are themselves dialogs. You can tell the current stack depth by the number of dots prefixing each line, such as `..Prompts.text`.
 
 When the user replies with their name, the `text()` prompt returns the user's input to the second waterfall using `endDialogWithResult()`. The waterfall then passes this value to step 2 which itself calls `endDialogWithResult()` to pass it back to the first waterfall. The first waterfall passes that result to step 2 which responds with the personalized greeting to the user.
 
@@ -313,3 +313,7 @@ When you call `endConversation`, you can pass a message to the user (for example
 Also note that any time your bot throws an exception, `endConversation()` gets called with a [configurable](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iuniversalbotsettings.html#dialogerrormessage) error message in an effort to return the bot to a consistent state.
 
 ## Additional resources
+
+- [Define conversation steps with waterfalls](bot-builder-nodejs-dialog-waterfall.md)
+- [Prompt users for input](bot-builder-nodejs-dialog-prompt.md)
+- [Respond to user messages](bot-builder-nodejs-use-default-message-handler.md)
