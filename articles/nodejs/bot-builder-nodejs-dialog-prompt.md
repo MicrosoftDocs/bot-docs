@@ -1,6 +1,6 @@
 ---
-title: Collect input from the user with Prompts | Microsoft Docs
-description: Learn how to collect user input in your bot with the Bot Builder SDK for Node.js
+title: Prompt users for input| Microsoft Docs
+description: Learn how to use prompts to collect user input in your bot with the Bot Builder SDK for Node.js
 author: RobStand
 ms.author: rstand
 manager: rstand
@@ -17,7 +17,7 @@ The SDK provides a set of built-in prompts to simplify collecting input from a u
 
 ## Prompt results 
 
-Built-in prompts are implemented as dialogs. They return the user's response by calling [session.endDialogWithresult()][EndDialogWithResult]. Any type of dialog message handler can receive the result of a promp.
+Built-in prompts are implemented as [dialogs](bot-builder-nodejs-dialog-manage-conversation.md). They return the user's response by calling [session.endDialogWithresult()][EndDialogWithResult]. Any type of dialog message handler can receive the result of a prompt.
 
 Prompts return an [IPromptResult][IPromptResult] to the caller. The user's response will be contained in the [results.response][Result_Response] field and may be null. The exact reason can be determined by examining the [ResumeReason][ResumeReason] returned in [result.resumed][Result_Resumed], but the most common reasons for a null response are: 
 * The user cancelled an action by saying something like ‘cancel’ or ‘nevermind’ 
@@ -35,23 +35,21 @@ The Bot Builder SDK for Node.js includes the following built-in prompts:
 |[Prompts.choice](#promptschoice) | Asks the user to choose from a list of choices.       
 |[Prompts.attachment](#promptsattachment) | Asks the user to upload a picture or video.       
 
-### Text String `Prompts.text()`
-
+### Text String: `Prompts.text()`
 The [Prompts.text()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts.html#text) method asks the user for a **string of text**. The prompt returns the user's response as an [IPromptTextResult](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iprompttextresult.html) interface.
 
 ```javascript
 builder.Prompts.text(session, "What is your name?");
 ```
 
-### Yes / No `Prompts.confirm()`
+### Yes / No:  `Prompts.confirm()`
 
 The [Prompts.confirm()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts.html#confirm) method asks the user to confirm an action with a **yes/no** response. The prompt returns the user's response as an [IPromptConfirmResult](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptconfirmresult.html) interface.
 
 ```javascript
 builder.Prompts.confirm(session, "Are you sure you wish to cancel your order?");
 ```
-
-### Numerical respose `Prompts.number()`
+### Numerical response: `Prompts.number()`
 
 The [Prompts.number()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts.html#number) method asks the user to reply with a **number**. The prompt returns the user's response as an [IPromptNumberResult](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptnumberresult.html).
 
@@ -59,7 +57,7 @@ The [Prompts.number()](http://docs.botframework.com/en-us/node/builder/chat-refe
 builder.Prompts.number(session, "How many would you like to order?");
 ```
 
-### Time and Date `Prompts.time()`
+### Time and Date: `Prompts.time()`
 
 The [Prompts.time()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts.html#time) method asks the user to reply with the **time**. The prompt returns the user's response as an [IPromptTimeResult](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iprompttimeresult.html) interface. The framework uses the [Chrono](http://wanasit.github.io/pages/chrono/) library to parse the user's response and supports both relative ("in 5 minutes") and non-relative ("June 6th at 2pm") types of responses.
 
@@ -97,8 +95,7 @@ bot.dialog('/createAlarm', [
     }
 ]);
 ```
-
-### Choose from a list `Prompts.choice()`
+### Choose from a list: `Prompts.choice()`
 
 The [Prompts.choice()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts.html#choice) method asks the user to **choose from a list** of choices. The prompt returns the user's response as an [IPromptChoiceResult](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptchoiceresult.html) interface. To specify the style of the list that's shown to the user, use the [IPromptOptions.listStyle](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptoptions.html#liststyle) property. The user can express their choice by either entering the number associated with the choice or the choice's name itself. Both full and partial matches of the option's name are supported.
 
@@ -146,15 +143,17 @@ bot.dialog('/', [
     }
 ]);
 ```
-
-### Upload an attachment `Prompts.attachment()`
+### Upload an attachment: `Prompts.attachment()`
 
 The [Prompts.attachment()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts.html#attachment) method asks the user to *upload a file attachment* like an image or video. The prompt returns the user's response as an [IPromptAttachmentResult](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptattachmentresult.html) interface.
 
 ```javascript
 builder.Prompts.attachment(session, "Upload a picture for me to transform.");
 ```
+
 ## Additional resources
+- [Define conversation steps with waterfalls](bot-builder-nodejs-dialog-waterfall.md)
+- [Send and receive attachments](bot-builder-nodejs-send-receive-attachments.md)
 - [Save user data](~/nodejs/bot-builder-nodejs-save-user-data.md)
 - [Prompts class][PromptsRef]
 

@@ -40,19 +40,13 @@
 ### Messages
 #### [Send and receive attachments](~/nodejs/bot-builder-nodejs-send-receive-attachments.md) 
 #### [Send proactive messages](~/nodejs/bot-builder-nodejs-proactive-messages.md)
+#### [Respond to user messages](~/nodejs/bot-builder-nodejs-use-default-message-handler.md) 
+#### [Add rich cards to messages](~/nodejs/bot-builder-nodejs-send-rich-cards.md)
+#### [Send a typing indicator](~/nodejs/bot-builder-nodejs-send-typing-indicator.md)
 ### Dialogs
 #### [Manage a conversation](~/nodejs/bot-builder-nodejs-dialog-manage-conversation.md)
 #### [Prompt for user input](~/nodejs/bot-builder-nodejs-dialog-prompt.md)
 #### [Define conversation steps](~/nodejs/bot-builder-nodejs-dialog-waterfall.md)
-<!--
-### Messages
-#### [Respond to user messages](~/nodejs/bot-builder-nodejs-use-default-message-handler.md) 
-
-#### [Add rich cards to messages](~/nodejs/bot-builder-nodejs-send-rich-cards.md)
-#### [Send a typing indicator](~/nodejs/bot-builder-nodejs-send-typing-indicator.md)
-#### 
-#### [Use prompts with a waterfall](~/nodejs/bot-builder-nodejs-prompts.md)
-
 ### [Save user data](~/nodejs/bot-builder-nodejs-save-user-data.md)
 ### [Listen for messages](~/nodejs/bot-builder-nodejs-global-handlers.md)
 ### [Recognize user intent](~/nodejs/bot-builder-nodejs-recognize-intent.md)
@@ -61,7 +55,6 @@
 ### [Intercept messages](~/nodejs/bot-builder-nodejs-intercept-messages.md)
 ### [Use backchannel mechanism](~/nodejs/bot-builder-nodejs-backchannel.md)
 ### [Conduct audio calls](~/nodejs/bot-builder-nodejs-conduct-audio-calls.md)
--->
 ## [Develop with Azure Bot Service](~/azure/index.md)
 ### Create a bot
 #### [Templates](~/azure/azure-bot-service-templates.md)
