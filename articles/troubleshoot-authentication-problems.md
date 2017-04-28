@@ -6,9 +6,10 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 04/25/2017
-
+ms.date: 
+ms.reviewer: 
 ---
+
 # Troubleshooting Bot Framework Authentication
 
 This guide will help you troubleshoot authentication errors with your bot. This guide is easiest to follow if you can download and use the [Bot Framework Channel Emulator][Emulator] and can update your bot's ID and password. If you cannot use the emulator or make changes, only certain steps will apply.
