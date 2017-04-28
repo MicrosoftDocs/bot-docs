@@ -21,9 +21,9 @@ The session includes several methods for managing the bots dialog stack and ther
 
 ## Starting and ending dialogs
 
-You can use [session.beginDialog()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#begindialog) to call a dialog (pushing it onto the stack) and then either [session.endDialog()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#enddialog) or [session.endDialogWithResults()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#enddialogwithresults) to return control back to the caller (popping off the stack). When paired with [waterfalls](bot-builder-nodejs-waterfall-conversation-steps.md) you have a simple mechanism for driving conversations forward. 
+You can use [session.beginDialog()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#begindialog) to call a dialog (pushing it onto the stack) and then either [session.endDialog()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#enddialog) or [session.endDialogWithResults()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#enddialogwithresults) to return control back to the caller (popping off the stack). When paired with [waterfalls](bot-builder-nodejs-dialog-waterfall.md)) you have a simple mechanism for driving conversations forward. 
 
-The following code uses two [waterfalls](bot-builder-nodejs-dialog-waterfall.md) to prompt the user for their name and then responds with a custom greeting. 
+The following code uses two waterfalls to prompt the user for their name and then responds with a custom greeting. 
 
 ```javascript
 bot.dialog('/', [
@@ -126,7 +126,7 @@ After the profile dialog collects all of the profile data, it returns the profil
 
 Message handlers for a dialog can take different forms. You can add an *action* to a dialog to listen for user input as it occurs. See [Listen for messages using actions](bot-builder-nodejs-global-handlers.md) for information on using actions in your bot.
 
-Another form is a *waterfall*, which is a common way to guide the user through a series of steps or prompt the user with a series of questions. See [waterfall prompt sequences](bot-builder-nodejs-prompts.md) for information on waterfalls.
+Another form is a [waterfall](bot-builder-nodejs-dialog-waterfall.md), which is a common way to guide the user through a series of steps or prompt the user with a series of questions.
 
 
 ## Dialog lifecycle
@@ -175,7 +175,7 @@ The first message from a user will be routed to the Dialog Handler for the root 
 
 When a user starts a conversation with the bot, it first checks to see whether the user is known by checking the `name` property of the [session.userData](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#userdata) object. The bot persists the `userData` object across all of the user's interactions with the bot. If this is the first time the user has used the bot, the bot calls [session.beginDialog()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#begindialog) to start the `/profile` dialog, which asks the user their name.
 
-The `/profile` dialog is implemented as a [waterfall](#waterfall). The fisrt step of the waterfall simply calls [Prompts.text()](bot-builder-nodejs-prompts-input-data.md#promptstext) to ask the user their name. This built-in prompt is just another dialog that gets redirected to.
+The `/profile` dialog is implemented as a [waterfall](#waterfall). The fisrt step of the waterfall simply calls [Prompts.text()](bot-builder-nodejs-dialog-prompt.md) to ask the user their name. This built-in prompt is just another dialog that gets redirected to.
 
 The bot maintains a stack of dialogs for each conversation. If you were to inspect the bot's dialog stack at this point, it would look like [`/`, `/profile`, `BotBuilder:Prompts`]. The conversations dialog stack helps the bot know where to route the user's reply to. 
 

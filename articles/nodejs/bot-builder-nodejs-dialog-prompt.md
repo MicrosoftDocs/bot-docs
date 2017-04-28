@@ -16,12 +16,14 @@ The SDK provides a set of built-in prompts to simplify collecting input from a u
 > To ask the user a *series* of questions, create a [waterfall](bot-builder-nodejs-dialog-waterfall.md).
 
 ## Prompt results 
-
 Built-in prompts are implemented as [dialogs](bot-builder-nodejs-dialog-manage-conversation.md). They return the user's response by calling [session.endDialogWithresult()][EndDialogWithResult]. Any type of dialog message handler can receive the result of a prompt.
 
-Prompts return an [IPromptResult][IPromptResult] to the caller. The user's response will be contained in the [results.response][Result_Response] field and may be null. The exact reason can be determined by examining the [ResumeReason][ResumeReason] returned in [result.resumed][Result_Resumed], but the most common reasons for a null response are: 
+Prompts return an [IPromptResult][IPromptResult] to the caller. The user's response will be contained in the [results.response][Result_Response] field and may be `null`. 
+
+The most common reasons for a `null` response are: 
 * The user cancelled an action by saying something like ‘cancel’ or ‘nevermind’ 
 * The user entered an improperly formatted response
+The exact reason for a `null` response can be determined by examining the [ResumeReason][ResumeReason] returned in [result.resumed][Result_Resumed], but
 
 ## Prompt types
 The Bot Builder SDK for Node.js includes the following built-in prompts:
