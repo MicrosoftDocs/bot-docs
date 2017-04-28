@@ -7,9 +7,7 @@ manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 
-ms.reviewer: rstand
-
-
+ms.reviewer: 
 ---
 
 # Add search and filtered results to a bot
@@ -412,5 +410,7 @@ for (int i = 0; i < productCount; i++)
 await connector.Conversations.ReplyToActivityAsync(replyToConv);
 return new HttpResponseMessage(System.Net.HttpStatusCode.Accepted);
 ```
-## Next steps
+
+## Additional resources
+
 You can find detailed documentation about the Bing Search APIs, including developer guides and API references, by visiting the Microsoft Cognitive Services <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/bing-web-search/overview" target="_blank">documentation site</a>.
