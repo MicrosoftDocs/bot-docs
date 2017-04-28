@@ -6,9 +6,8 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 04/13/2017
+ms.date: 
 ms.reviewer: 
-
 ---
 
 # Templates in the Azure Bot Service
