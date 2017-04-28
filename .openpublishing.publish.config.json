@@ -19,6 +19,22 @@
       },
       "build_entry_point": "docs",
       "template_folder": "_themes"
+    },
+    {
+      "docset_name": "bot-framework-rest-api",
+      "build_source_folder": "rest",
+      "build_output_subfolder": "bot-framework-rest-api",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
     }
   ],
   "notification_subscribers": [
