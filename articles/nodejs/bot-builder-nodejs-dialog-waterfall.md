@@ -10,10 +10,13 @@ ms.date: 04/25/2017
 ---
 # Define conversation steps with waterfalls
 
-A waterfall is a dialog handler that is an array of functions where the results of the first function are passed as input to the second function and so on. You can chain together a series of these functions to create waterfalls of any length. Waterfalls let you collect input from a user using a sequence of steps. A bot is always in a state of providing a user with information or asking a question and then waiting for input. Waterfalls drive the back-and-forth flow.
+A waterfall is a specific type of dialog handler. A waterfall contains an array of functions where the *results* of the first function are passed as *input* to the next function and so on. The bot prompts the user for input, waits for a response, and then passes the result to the next step. Waterfalls are most commonly used to collect information from the user. 
 
 ## Prompt the user with a series of questions
-Paired with the built-in [Prompts](bot-builder-nodejs-prompts-input-data.md) you can easily prompt the user with a series of questions. In the following example, the root dialog is a two step waterfall. The first step asks the user's name and the second step greets the user.
+The Bot Builder SDK provides built-in [prompts](bot-builder-nodejs-prompts-input-data.md) to easily ask the user a series of questions. 
+Waterfalls guide the conversation by prompting the user's progress from one step to the next. 
+
+This sample dialog is a two-step waterfall. The first step asks for the user's name and the second step greets the user by name.
 
 ```javascript
 bot.dialog('/', [
@@ -25,8 +28,7 @@ bot.dialog('/', [
     }
 ]);
 ```
-
-Waterfalls drive the conversation by taking an action that moves the waterfall from one step to the next. Calling a built-in prompt such as [Prompts.text()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts#text) moves the conversation along by passing the user's response to the prompt to the next waterfall step in its `results` parameter. You can also call `session.beginDialog()` to start one of your own dialogs to move the conversation to the next step.
+ You can also evoke a child dialog to to advance the conversation to the next step. This is a useful way of partitioning the conversation if you have multiple fields to populate. This example calls `session.beginDialog()` to bring up a child dialog instead of a prompt.  
 
 ```javascript
 bot.dialog('/', [
@@ -47,9 +49,8 @@ bot.dialog('/askName', [
 ]);
 ```
 
-This achieves the same basic behavior as before but calls a child dialog to prompt for the user's name. This is a useful way of partitioning the conversation if you had multiple profile fields that you wanted to populate.  
-
-Because all waterfalls contain a phantom last step which automatically returns the result from the last step, you could simplify the previous example by removing the call to `session.endDialogWithResult()`.
+All waterfalls contain a phantom last step which automatically returns the result from the final step. 
+The previous example can be simplified by removing the call to `session.endDialogWithResult()`.
 
 ```javascript
 bot.dialog('/', [
@@ -67,7 +68,11 @@ bot.dialog('/askName', [
 ]);
 ```
 ## Advance the waterfall
-The first step of a waterfall can receive arguments passed to the dialog, and every step receives a `next()` function that can be used to advance the waterfall forward manually. The following example shows how to pair these two features together to create an `/ensureProfile` dialog that will verify that a user's profile is complete, and prompts the user for any missing fields. This pattern lets you add fields to the profile later that would be automatically filled in as users message the bot.
+The first step of a waterfall can receive arguments passed to the dialog. 
+
+Every step after that receives a `next()` function that can be used to advance the waterfall to the next step. Note that the `next()` function can receive an `IDialogResult` object containing results already returned from a previous dialog. Your bot doesn't have to ask for the user's name more than once; it can just pass the results from the first time.
+
+The following example shows how to pair these two features together to create an `/ensureProfile` dialog that verifies a user's profile is complete. If the profile is not complete, the user is prompted for the missing information. This pattern lets you add fields to the profile later that would be automatically filled in as users message the bot. <!-- this sentence makes no sense -->
 
 ```javascript
 bot.dialog('/', [
@@ -106,22 +111,18 @@ bot.dialog('/ensureProfile', [
     }
 ]);
 ```
+If the bot is distributed across multiple compute nodes, every step of the waterfall could be processed by a different node. The `/ensureProfile` dialog uses [session.dialogData](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#dialogdata) to temporarily store the user's profile. The `dialogData` field ensures that the dialog's state is properly maintained between each step of the conversation. While you can store anything in the `dialogData` field, you should limit yourself to JavaScript primitives that can be properly serialized. 
 
-The `/ensureProfile` dialog uses [session.dialogData](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#dialogdata) to temporarily hold the user's profile. This is because if the bot is distributed across multiple compute nodes, every step of the waterfall could be processed by a different compute node. The `dialogData` field ensures that the dialog's state is properly maintained between each step of the conversation. You can store anything you want in this field but you should limit yourself to JavaScript primitives that can be properly serialized. 
+## Single-step waterfall
+<!-- why would you do this, doesn't it defeat the entire purpose of the waterfall design? -->
 
-Also note that the `next()` function can be passed an **IDialogResult** object so it can mimic any results returned from a built-in prompt or other dialog which sometimes simplifies your bot's control logic.
-
-
-## Single step waterfall
-
-To create a single step waterfall, pass a single function for your dialog handler (not an array of functions). 
+A waterfall can have just a single step. Pass only one function to the dialog handler instead of an array of functions.
 
 ```javascript
 bot.dialog('/', function (session) {
     session.send("Hello World");
 });
 ```
-
 ## Additional resources
 - [Prompts class][PromptsRef]
 
