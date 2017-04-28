@@ -1,22 +1,17 @@
 ---
 title: Additional resources for the Bot Framework | Microsoft Docs
-description: Where to look for additional support when designing bots for the Bot Framework.
+description: Learn about additional resources for the Bot Framework.
 author: RobStand
 ms.author: rstand
-
-
 manager: rstand
 ms.topic: article
-
 ms.prod: bot-framework
- Support
-ms.date: 03/01/2017
+ms.date: 
 ms.reviewer:
-
-# Include the following line commented out
-
 ---
+
 # Additional resources for the Bot Framework
+
 These resources provide additional information and support for developing bots with the Bot Framework.
 
 |**Support type**                    | **Contact**                                                
