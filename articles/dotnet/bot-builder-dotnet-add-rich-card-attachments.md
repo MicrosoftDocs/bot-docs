@@ -66,7 +66,7 @@ the expected contents of `CardAction.Value` for each type:
 | downloadFile | URL of file to be downloaded |
 | signin | URL of OAuth flow to be initiated |
 
-## Add a Hero card
+## Add a Hero card to a message
 
 The Hero card typically contains a single large image, one or more buttons, and text. 
 
