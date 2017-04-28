@@ -47,7 +47,6 @@
 #### [Manage a conversation](~/nodejs/bot-builder-nodejs-dialog-manage-conversation.md)
 #### [Prompt for user input](~/nodejs/bot-builder-nodejs-dialog-prompt.md)
 #### [Define conversation steps](~/nodejs/bot-builder-nodejs-dialog-waterfall.md)
-#### [Manage complex conversation](~/nodejs/bot-builder-nodejs-manage-complex-conversation.md)
 ### [Save user data](~/nodejs/bot-builder-nodejs-save-user-data.md)
 ### [Listen for messages](~/nodejs/bot-builder-nodejs-global-handlers.md)
 ### [Recognize user intent](~/nodejs/bot-builder-nodejs-recognize-intent.md)
