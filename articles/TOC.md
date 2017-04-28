@@ -40,9 +40,9 @@
 ### Messages
 #### [Send proactive messages](~/nodejs/bot-builder-nodejs-proactive-messages.md)
 ### Dialogs
-#### [Manage a conversation](~/nodejs/bot-builder-nodejs-dialogs-manage-conversation.md)
-#### [Prompt for user input](~/nodejs/bot-builder-nodejs-prompts-input-data.md)
-#### [Define conversation steps](~/nodejs/bot-builder-nodejs-waterfall-conversation-steps.md)
+#### [Manage a conversation](~/nodejs/bot-builder-nodejs-dialog-manage-conversation.md)
+#### [Prompt for user input](~/nodejs/bot-builder-nodejs-dialog-prompt.md)
+#### [Define conversation steps](~/nodejs/bot-builder-nodejs-dialog-waterfall.md)
 <!--
 ### Messages
 #### [Respond to user messages](~/nodejs/bot-builder-nodejs-use-default-message-handler.md) 
