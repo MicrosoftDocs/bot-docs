@@ -6,10 +6,8 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 02/27/2017
+ms.date: 
 ms.reviewer:
-
 ---
 
 # Use the backchannel mechanism

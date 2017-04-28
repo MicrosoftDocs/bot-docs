@@ -6,11 +6,10 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 02/17/2017
+ms.date: 
 ms.reviewer:
-
 ---
+
 # Manage conversation flow
 
 This article describes how to send messages and manage conversation flow using the Bot Builder SDK for Node.js.
