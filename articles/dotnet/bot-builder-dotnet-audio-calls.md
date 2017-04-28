@@ -19,7 +19,7 @@ The following code samples show how to enable support for audio calls via Skype 
 
 ## Enable support for audio calls
 
-To enable the bot to support audio calls, define the `CallingController`.
+To enable a bot to support audio calls, define the `CallingController`.
 
 ```cs
 [BotAuthentication]
@@ -44,6 +44,7 @@ public class CallingController : ApiController
     }
 }
 ```
+
 > [!NOTE]
 > In addition to the `CallingController`, which supports audio calls, a bot may also contain a 
 > `MessagesController` to support messages. Providing both options allows users to interact with
