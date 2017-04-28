@@ -38,6 +38,7 @@
 ## [Develop with Node.js](~/nodejs/index.md)
 ### [Key concepts](~/nodejs/bot-builder-nodejs-concepts.md)
 ### Messages
+#### [Send and receive attachments](~/nodejs/bot-builder-nodejs-send-receive-attachments.md) 
 #### [Send proactive messages](~/nodejs/bot-builder-nodejs-proactive-messages.md)
 ### Dialogs
 #### [Manage a conversation](~/nodejs/bot-builder-nodejs-dialog-manage-conversation.md)
@@ -46,7 +47,7 @@
 <!--
 ### Messages
 #### [Respond to user messages](~/nodejs/bot-builder-nodejs-use-default-message-handler.md) 
-#### [Send and receive attachments](~/nodejs/bot-builder-nodejs-send-receive-attachments.md) 
+
 #### [Add rich cards to messages](~/nodejs/bot-builder-nodejs-send-rich-cards.md)
 #### [Send a typing indicator](~/nodejs/bot-builder-nodejs-send-typing-indicator.md)
 #### 

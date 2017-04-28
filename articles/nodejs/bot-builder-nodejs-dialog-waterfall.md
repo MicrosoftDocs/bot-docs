@@ -122,4 +122,7 @@ bot.dialog('/', function (session) {
 });
 ```
 
-## Next steps
+## Additional resources
+- [Prompts class][PromptsRef]
+
+[PromptsRef]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts.html
