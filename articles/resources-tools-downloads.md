@@ -45,7 +45,7 @@ You can also [download the Bot Builder SDK for Node.js source code from Github](
 
 ## Bot Framework tools
 
-- [Bot Framework Emulator (Mac and Windows)](https://emulator.botframework.com/)
+- [Bot Framework Emulator](~/debug-bots-emulator.md)
 - <a href="https://docs.botframework.com/en-us/channel-inspector/channels/Skype/#navtitle" target="_blank">Bot Framework Channel Inspector</a>
 
 ## Additional tools
