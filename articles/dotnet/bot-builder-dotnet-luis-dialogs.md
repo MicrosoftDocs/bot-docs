@@ -1,15 +1,13 @@
 ---
 title: Enable language understanding with LUIS | Microsoft Docs
-description: Learn how to enable your bot to understand natural language using LUIS dialogs in the Bot Builder SDK for .NET.
+description: Learn how to enable your bot to understand natural language by using LUIS dialogs in the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 04/06/2017
+ms.date: 
 ms.reviewer:
-
 ---
 
 # Enable language understanding with LUIS

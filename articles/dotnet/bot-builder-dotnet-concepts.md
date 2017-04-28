@@ -6,10 +6,8 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 03/08/2017
+ms.date: 
 ms.reviewer:
-
 ---
 
 # Key concepts in the Bot Builder SDK for .NET
@@ -40,7 +38,6 @@ In the Bot Builder SDK for .NET, the [Builder][builderLibrary] library enables y
 ## FormFlow
 
 You can use [FormFlow](~/dotnet/bot-builder-dotnet-formflow.md) within the Bot Builder SDK for .NET to streamline of building a bot that collects information from the user. 
-
 For example, a bot that takes sandwich orders must collect several pieces of information from the user such as type of bread, choice of toppings, size, and so on. Given basic guidelines, FormFlow can automatically generate the dialogs necessary to manage a guided conversation like this.
 
 ## State

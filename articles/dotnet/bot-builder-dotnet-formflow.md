@@ -1,18 +1,16 @@
 ---
-title: Guide conversations with FormFlow | Microsoft Docs
-description: Learn how to simplify and guide complex conversation flows with FormFlow and the Bot Builder SDK for .NET.
+title: Basic features of FormFlow | Microsoft Docs
+description: Learn how to guide conversation flows using FormFlow within the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 03/28/2017
+ms.date: 
 ms.reviewer:
-
 ---
 
-# Guide conversations with FormFlow 
+# Basic features of FormFlow
 
 [Dialogs](~/dotnet/bot-builder-dotnet-dialogs.md) are very powerful and flexible, but handling a guided conversation such as ordering a sandwich can require a lot of effort. At each point in the conversation, there are many possibilities of what will happen next. For example, you may need to clarify an ambiguity, provide help, go back, or show progress. 
 By using **FormFlow** within the Bot Builder SDK for .NET, you can greatly simplify the process of managing 
@@ -59,7 +57,7 @@ or using [Advanced.Field][field] and populating the dictionaries within it.
 > [!NOTE]
 > You can define a form by using either a C# class or JSON schema. 
 > This article describes how to define a form using a C# class. 
-> For more information about using JSON schema, see [Define a form using JSON](~/dotnet/bot-builder-dotnet-formflow-json-schema.md).
+> For more information about using JSON schema, see [Define a form using JSON schema](~/dotnet/bot-builder-dotnet-formflow-json-schema.md).
 
 ## Simple sandwich bot
 

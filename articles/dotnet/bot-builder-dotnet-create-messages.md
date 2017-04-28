@@ -1,15 +1,13 @@
 ---
-title: Create messages with the Bot Framework Connector service | Microsoft Docs
-description: Learn how to create and format the different types of messages your bot can use to communicate.
+title: Create messages with the Bot Builder SDK for .NET | Microsoft Docs
+description: Learn about commonly-used message properties within the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 03/13/2017
-ms.reviewer: rstand
-
+ms.date: 
+ms.reviewer: 
 ---
 
 # Create messages
@@ -49,8 +47,6 @@ These styles are supported when `TextFormat` is set to `markdown`:
 | image link| \[duck](http://aka.ms/Fo983c) | [duck](http://aka.ms/Fo983c) |
 
 These styles are supported when `TextFormat` is set to "xml":
-> [!CAUTION]
-> The `xml` value of for `TextFormat` is supported by the Skype channel only. 
 
 | Style | Markdown | Example | 
 |----|----|----|----|
@@ -60,14 +56,17 @@ These styles are supported when `TextFormat` is set to "xml":
 | strikethrough | \<s\>text\</s\> | <s>text</s> |
 | hyperlink | \<a href="http://www.bing.com"\>bing\</a\> | <a href="http://www.bing.com">bing</a> |
 
-## Message attachments
+> [!NOTE]
+> The `xml` value of for `TextFormat` is supported by the Skype channel only. 
+
+## Attachments
 
 The `Attachments` property of a message activity can be used to send and receive simple media attachments 
 (image, audio, video, file) and rich cards. 
 For details, see [Add media attachments to messages](~/dotnet/bot-builder-dotnet-add-media-attachments.md) and 
 [Add rich cards to messages](~/dotnet/bot-builder-dotnet-add-rich-card-attachments.md).
 
-## Message entities
+## Entities
 
 The `Entities` property of a message is an array of open-ended <a href="http://schema.org/" target="_blank">schema.org</a> 
 objects which allows the exchange of common contextual metadata between the channel and bot.
@@ -75,15 +74,14 @@ objects which allows the exchange of common contextual metadata between the chan
 ### Mention entities
 
 Many channels support the ability for a bot or user to "mention" someone within the context of a conversation. 
-
 To mention a user in a message, populate the message's `Entities` property with a `Mention` object. 
 The `Mention` object contains these properties: 
 
 | Property | Description | 
 |----|----|
-| type | type of the entity ("mention") | 
-| mentioned | `ChannelAccount` object that indicates which user was mentioned | 
-| text | text within the `Activity.Text` property that represents the mention itself (may be empty or null) |
+| Type | type of the entity ("mention") | 
+| Mentioned | `ChannelAccount` object that indicates which user was mentioned | 
+| Text | text within the `Activity.Text` property that represents the mention itself (may be empty or null) |
 
 This code example shows how to add a `Mention` entity to the `Entities` collection.
 
@@ -136,7 +134,7 @@ This code example shows how to use a strongly-typed class to process an entity w
 
 [!code-csharp[examine entity using typed class](~/includes/code/dotnet-create-messages.cs#examineEntity2)]
 
-## Message channel data
+## Channel data
 
 The `ChannelData` property of a message activity can be used to implement channel-specific functionality. 
 For details, see [Implement channel-specific functionality](~/dotnet/bot-builder-dotnet-channeldata.md).

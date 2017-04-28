@@ -1,4 +1,4 @@
-The Bot Framework State service enables your bot to store user and conversational data to be accessed later. This stored information can be used for many purposes, such as determining where the prior conversation left off or simply greeting the user by name. 
-Your bot may store data for a user, for an entire conversation, or for a user within the context of a specific conversation. 
+The Bot Framework State service enables your bot to store and retrieve state data that is associated with a user, a conversation, or a specific user within the context of a specific conversation. 
+State data can be used for many purposes, such as determining where the prior conversation left off or simply greeting the user by name. 
 In the Bot Builder SDK for .NET, the <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/db/dbb/namespace_microsoft_1_1_bot_1_1_connector.html" target="_blank">Connector</a> library enables access the Bot Framework State service. 
 Any data that you save by using the Bot Framework State service will be stored in Azure and encrypted at rest. 

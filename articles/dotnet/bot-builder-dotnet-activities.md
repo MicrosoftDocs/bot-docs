@@ -1,18 +1,16 @@
 ---
-title: Explore activity types | Microsoft Docs
-description: Learn about the different activity types available within the Bot Builder SDK for .NET and when to use them.
+title: Activities overview | Microsoft Docs
+description: Learn about the different activity types available within the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 03/15/2017
+ms.date: 
 ms.reviewer:
-
 ---
 
-# Explore activity types
+# Activities overview
 
 [!include[Activity concept overview](~/includes/snippet-dotnet-concept-activity.md)]
 
@@ -26,7 +24,7 @@ The following activity types are supported by the Bot Builder SDK for .NET.
 | conversationUpdate | IConversationUpdateActivity | Indicates that the bot was added to a conversation, other members were added to or removed from the conversation, or conversation metadata has changed. |
 | contactRelationUpdate | IContactRelationUpdateActivity | Indicates that the bot was added or removed from a user's contact list. |
 | typing | ITypingActivity | Indicates that the user or bot on the other end of the conversation is compiling a response. | 
-| ping | n/a | Represents an attempt to determine whether it has implemented security correctly. | 
+| ping | n/a | Represents an attempt to determine whether a bot's endpoint is accessible. | 
 | deleteUserData | n/a | Indicates to a bot that a user has requested that the bot delete any user data it may have stored. |
 | endOfConversation | IEndOfConversationActivity | Indicates the end of a conversation. |
 
@@ -58,9 +56,7 @@ If members have been removed from the conversation, the `MembersRemoved` propert
 
 ## contactRelationUpdate
 
-A bot receives a **contactRelationUpdate** activity whenever it is added to or removed from a user's contact list. Not all channels support adding a bot to a contact list.
-
-The value of the activity's `Action` property (add | remove) indicates whether the bot has been added or removed from the user's contact list.
+A bot receives a **contactRelationUpdate** activity whenever it is added to or removed from a user's contact list. The value of the activity's `Action` property (add | remove) indicates whether the bot has been added or removed from the user's contact list.
 
 ## typing
 
@@ -69,8 +65,7 @@ A bot may send a **typing** activity to indicate to the user that it is working 
 
 ## ping
 
-A bot receives a **ping** activity to test that it has implemented security correctly. 
-The bot should respond with HTTP status code 200 (OK), 403 (Forbidden), or 401 (Unauthorized) only.
+A bot receives a **ping** activity to determine whether its endpoint is accessible. The bot should respond with HTTP status code 200 (OK), 403 (Forbidden), or 401 (Unauthorized).
 
 ## deleteUserData
 
@@ -82,7 +77,6 @@ for the user that made the request.
 
 A bot receives an **endOfConversation** activity to indicate that the user has ended the conversation. 
 A bot may send an **endOfConversation** activity to indicate to the user that the conversation is ending. 
-
 
 ## Additional resources
 

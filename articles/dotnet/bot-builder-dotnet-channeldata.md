@@ -1,24 +1,20 @@
 ---
 title: Implement channel-specific functionality | Microsoft Docs
-description: Learn how to access more complex communication options available in a specific channel using the the Bot Builder SDK for .NET.
+description: Learn how to implement channel-specific functionality using the the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 03/13/2017
+ms.date: 
 ms.reviewer:
-
 ---
 
 # Implement channel-specific functionality
 
-Bots are not limited to communicating with [message text and attachments](~/dotnet/bot-builder-dotnet-create-messages.md). 
- 
-The value of connecting a communication channel is access to the rich functionality it offers. A bot can tell Telegram to send a sticker, tell Kik to send a message, or tell Office365 to send an email. 
+By using the `Activity` object's `ChannelData` property to pass native metadata to a channel, you can implement channel-specific functionality that is not possible to achieve by using [message text and attachments](~/dotnet/create-messages.md) alone. For example, your bot can use the `ChannelData` property to instruct Telegram to send a sticker or instruct Office365 to send an email.
 
-To tell the channel what to do, pass the required metadata in the `ChannelData` property of the `Activity` object.
+This article describes how to use a message activity's `ChannelData` property to implement this channel-specific functionality:
 
 | Channel | Functionality |
 |----|----|
@@ -301,6 +297,3 @@ This snippet shows an example of the `channelData` property for a native Kik mes
 
 - [Activity types](~/dotnet/bot-builder-dotnet-activities.md)
 - [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
-- [Send and receive activities](~/dotnet/bot-builder-dotnet-connector.md)
-- [Add media attachments to messages](~/dotnet/bot-builder-dotnet-add-media-attachments.md)
-- [Add rich cards to messages](~/dotnet/bot-builder-dotnet-add-rich-card-attachments.md)
