@@ -52,7 +52,7 @@ The Language understanding template provides a good foundation that you can buil
 - [Enable language understanding with LUIS (.NET)](~/dotnet/bot-builder-dotnet-luis-dialogs.md)
 - [Recognize user intent (Node.js)](~/nodejs/bot-builder-nodejs-recognize-intent.md)
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub repository</a>
-- [Bot Builder SDK for .NET](~/dotnet/index.md)
+- [Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-overview.md)
 - [Bot Builder SDK for Node.js](~/nodejs/index.md)
 
 [LuisDialog]: https://docs.botframework.com//en-us/csharp/builder/sdkreference/d8/df9/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_luis_dialog.html

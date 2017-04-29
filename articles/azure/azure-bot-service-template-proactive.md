@@ -111,7 +111,7 @@ The Proactive template provides a good foundation that you can build upon and cu
 - [Send proactive messages (.NET)](~/dotnet/bot-builder-dotnet-proactive-messages.md) 
 - [Send proactive messages (Node.js)](~/nodejs/bot-builder-nodejs-proactive-messages.md)
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub repository</a>
-- [Bot Builder SDK for .NET](~/dotnet/index.md)
+- [Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-overview.md)
 - [Bot Builder SDK for Node.js](~/nodejs/index.md)
 
 [directLine]: https://docs.botframework.com/en-us/restapi/directline3/#navtitle

@@ -54,5 +54,5 @@ The Form template provides a good foundation that you can build upon and customi
 - [Basic features of FormFlow (.NET)](~/dotnet/bot-builder-dotnet-formflow.md) 
 - [Prompts and waterfalls (Node.js)](~/nodejs/bot-builder-nodejs-prompts.md)
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub repository</a>
-- [Bot Builder SDK for .NET](~/dotnet/index.md)
+- [Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-overview.md)
 - [Bot Builder SDK for Node.js](~/nodejs/index.md)

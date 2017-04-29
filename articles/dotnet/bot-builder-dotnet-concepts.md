@@ -60,7 +60,7 @@ For more information on this topic, see [Secure your bot](~/dotnet/bot-builder-d
 
 ## Additional resources
 
-- [Bot Builder SDK for .NET](~/dotnet/index.md)
+- [Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-overview.md)
 - [Create a bot with the Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-quickstart.md)
 - [Activities overview](~/dotnet/bot-builder-dotnet-activities.md)
 - [Dialogs](~/dotnet/bot-builder-dotnet-dialogs.md)

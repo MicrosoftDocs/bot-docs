@@ -8,7 +8,7 @@
 ## [Create your first bot with Azure Bot Service](~/azure/azure-bot-service-quickstart.md)
 # How to
 ## [Design](design/TOC.md)
-## [Develop with .NET](~/dotnet/index.md)
+## [Develop with .NET](~/dotnet/bot-builder-dotnet-overview.md)
 ### [Key concepts](~/dotnet/bot-builder-dotnet-concepts.md)
 ### Activities
 #### [Activities overview](~/dotnet/bot-builder-dotnet-activities.md)

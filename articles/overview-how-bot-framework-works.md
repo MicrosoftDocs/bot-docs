@@ -20,7 +20,7 @@ Bots are apps that offer a conversational interface as the best solution to the 
 ### Bot Builder
 To help you build bots with C# or Javascript, the Bot Framework includes Bot Builder SDKs. The SDKs provide libraries, samples, and tools to help you build and debug bots. The SDKs contain built-in dialogs to handle user interactions ranging from a basic Yes/No to complex disambiguation. Built-in recognizers and event handlers help guide the user through a conversation. 
 
-The [Bot Builder SDK for .NET](~/dotnet/index.md) leverages C# to provide a familiar way for .NET developers to write bots. It is a powerful framework for constructing bots that can handle both free-form interactions and more guided conversations where the user selects from possible values.
+The [Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-overview.md) leverages C# to provide a familiar way for .NET developers to write bots. It is a powerful framework for constructing bots that can handle both free-form interactions and more guided conversations where the user selects from possible values.
 
 The [Bot Builder SDK for Node.js](~/nodejs/index.md) provides a familiar way for Node.js developers to write bots. You can use it to build a wide variety of conversational user interfaces, from simple prompts to free-form conversations.
 The conversational logic for your bot is hosted as a web service. The Bot Builder SDK for Node.js uses restify, a popular framework for building web services, to create the bot's web server. The SDK is also compatible with Express and the use of other web app frameworks is possible with some adaptation.
@@ -67,7 +67,7 @@ Connect the Microsoft Cognitive Services APIs to enhance your bot. Smart convers
 ## Next steps
 - [Design](~/bot-design-principles.md)
 - [Quickstart](~/bot-builder-overview-getstarted.md)
-- [Botbuilder SDK for .NET](~/dotnet/index.md)
+- [Botbuilder SDK for .NET](~/dotnet/bot-builder-dotnet-overview.md)
 - [Botbuilder SDK for Node.js](~/nodejs/index.md)
 
 [smartbots]: ~/intelligent-bots.md

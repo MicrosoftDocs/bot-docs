@@ -41,6 +41,6 @@ To use other values for authentication credentials, specify the `[BotAuthenticat
 
 ## Additional resources
 
-- [Bot Builder SDK for .NET](~/dotnet/index.md)
+- [Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-overview.md)
 - [Key concepts in the bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-concepts.md)
 - [Register a bot with the Bot Framework](~/portal-register-bot.md)
