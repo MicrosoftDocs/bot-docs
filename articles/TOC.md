@@ -6,7 +6,6 @@
 ## [Create your first bot with .NET](~/dotnet/bot-builder-dotnet-quickstart.md)
 ## [Create your first bot with Node.js](~/nodejs/bot-builder-nodejs-quickstart.md)
 ## [Create your first bot with Azure Bot Service](~/azure/azure-bot-service-quickstart.md)
-# [Samples](samples/TOC.md)
 # How to
 ## [Design](design/TOC.md)
 ## [Develop with .NET](~/dotnet/index.md)
