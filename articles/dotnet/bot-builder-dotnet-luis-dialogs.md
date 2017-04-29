@@ -13,7 +13,7 @@ ms.reviewer:
 # Enable language understanding with LUIS
 
 This article describes how to use <a href="https://www.luis.ai" target="_blank">LUIS</a> with dialogs to 
-create an Alarm bot that a user can interact with using [natural language](~/intelligent-bots.md#language-understanding). 
+create an Alarm bot that a user can interact with using [natural language](~/cognitive-services-bot-intelligence-overview.md#language-understanding). 
 
 ## Create the class
 
@@ -47,5 +47,5 @@ This code example shows the full dialog implementation for the Alarm bot.
 
 - [Dialogs](~/dotnet/bot-builder-dotnet-dialogs.md)
 - [Manage conversation flow with dialogs](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
-- [Language understanding](~/intelligent-bots.md#language-understanding)
+- [Language understanding](~/cognitive-services-bot-intelligence-overview.md#language-understanding)
 - <a href="https://www.luis.ai" target="_blank">LUIS</a>
