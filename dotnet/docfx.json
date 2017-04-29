@@ -35,7 +35,9 @@
       ]
     },
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+      "apiPlatform": "dotnet"
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "bot-framework-dotnet-api",
