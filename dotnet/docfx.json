@@ -3,9 +3,11 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/*.yml"
         ],
         "exclude": [
+          "api/overwrites/**",
           "**/obj/**",
           "**/includes/**",
           "README.md",
@@ -27,11 +29,16 @@
         ]
       }
     ],
-    "overwrite": [],
+    "overwrite": {
+      "files": [
+        "api/overwrites/**/*.md"
+      ]
+    },
     "externalReference": [],
     "globalMetadata": {},
     "fileMetadata": {},
     "template": [],
-    "dest": "bot-framework-dotnet-api"
+    "dest": "bot-framework-dotnet-api",
+    "lruSize": 0
   }
 }
