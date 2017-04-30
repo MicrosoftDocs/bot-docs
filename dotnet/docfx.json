@@ -3,11 +3,17 @@
     "content": [
       {
         "files": [
+<<<<<<< HEAD
           "**/*.md",
           "**/*.yml"
         ],
         "exclude": [
           "api/overwrites/**",
+=======
+          "**/*.md"
+        ],
+        "exclude": [
+>>>>>>> hotfix0430
           "**/obj/**",
           "**/includes/**",
           "README.md",
@@ -29,6 +35,7 @@
         ]
       }
     ],
+<<<<<<< HEAD
     "overwrite": {
       "files": [
         "api/overwrites/**/*.md"
@@ -45,5 +52,13 @@
     "template": [],
     "dest": "bot-framework-dotnet-api",
     "lruSize": 0
+=======
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {},
+    "fileMetadata": {},
+    "template": [],
+    "dest": "bot-framework-dotnet-api"
+>>>>>>> hotfix0430
   }
 }
