@@ -12,7 +12,8 @@ ms.date: 04/25/2017
 
 The SDK provides a set of built-in prompts to simplify collecting input from a user. 
 
-> [!NOTE] A *prompt* is best used when the bot is going to perform an action in direct response to the input: Stop, Repeat, Delete.
+> [!NOTE] 
+> A *prompt* is best used when the bot is going to perform an action in direct response to the input: Stop, Repeat, Delete.
 > To ask the user a *series* of questions, create a [waterfall](bot-builder-nodejs-dialog-waterfall.md).
 
 ## Prompt results 
