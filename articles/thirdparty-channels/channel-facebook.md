@@ -41,7 +41,7 @@ Connecting a bot also requires a Facebook App.
 Enable Facebook Messenger in your new Facebook App. 
 On the **Product Setup** page of the app, click **Get Started** and then click **Get Started** again. 
 
-![Enable messenger](~/media/channels/FB-AddMessaging1.png
+![Enable messenger](~/media/channels/FB-AddMessaging1.png)
 
 ## Generate page access token
 In the **Token Generation** panel of the Messenger section, select your Page.
