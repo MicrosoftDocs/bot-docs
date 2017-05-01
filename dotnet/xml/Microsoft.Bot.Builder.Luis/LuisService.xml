@@ -1,0 +1,93 @@
+<Type Name="LuisService" FullName="Microsoft.Bot.Builder.Luis.LuisService">
+  <TypeSignature Language="C#" Value="public sealed class LuisService : Microsoft.Bot.Builder.Luis.ILuisService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit LuisService extends System.Object implements class Microsoft.Bot.Builder.Luis.ILuisService" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.LuisService" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Luis.ILuisService</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Standard implementation of ILuisService against actual LUIS service.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LuisService (Microsoft.Bot.Builder.Luis.ILuisModel model);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Luis.ILuisModel model) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisService.#ctor(Microsoft.Bot.Builder.Luis.ILuisModel)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="model" Type="Microsoft.Bot.Builder.Luis.ILuisModel" />
+      </Parameters>
+      <Docs>
+        <param name="model">The LUIS model information.</param>
+        <summary>
+            Construct the LUIS service using the model information.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Luis.ILuisService.BuildUri">
+      <MemberSignature Language="C#" Value="Uri ILuisService.BuildUri (Microsoft.Bot.Builder.Luis.LuisRequest luisRequest);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Uri Microsoft.Bot.Builder.Luis.ILuisService.BuildUri(class Microsoft.Bot.Builder.Luis.LuisRequest luisRequest) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisService.Microsoft#Bot#Builder#Luis#ILuisService#BuildUri(Microsoft.Bot.Builder.Luis.LuisRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="luisRequest" Type="Microsoft.Bot.Builder.Luis.LuisRequest" />
+      </Parameters>
+      <Docs>
+        <param name="luisRequest">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Luis.ILuisService.QueryAsync">
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Luis.Models.LuisResult&gt; ILuisService.QueryAsync (Uri uri, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Luis.Models.LuisResult&gt; Microsoft.Bot.Builder.Luis.ILuisService.QueryAsync(class System.Uri uri, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisService.Microsoft#Bot#Builder#Luis#ILuisService#QueryAsync(System.Uri,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Luis.LuisService/&lt;Microsoft-Bot-Builder-Luis-ILuisService-QueryAsync&gt;d__3))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Luis.Models.LuisResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="uri">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

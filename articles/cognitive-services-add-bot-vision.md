@@ -7,9 +7,7 @@ manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 
-ms.reviewer: rstand
-
-
+ms.reviewer: 
 ---
 
 # Add computer vision to a bot
@@ -187,5 +185,7 @@ public virtual async Task<HttpResponseMessage> Post([FromBody] Activity activity
     return new HttpResponseMessage(System.Net.HttpStatusCode.Accepted);
 }
 ```
-## Next steps
+
+## Additional resources
+
 You can find detailed documentation about the Computer Vision API, including developer guides and API references, by visiting the Microsoft Cognitive Services <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/home" target="_blank">documentation site</a>.

@@ -6,9 +6,8 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 4/12/2017
+ms.date: 
 ms.reviewer: 
-
 ---
 
 # Azure Bot Service
@@ -55,6 +54,6 @@ Learn more about building bots using the Azure Bot Service by reviewing these ar
 - [Create a bot with Azure Bot Service](~/azure/azure-bot-service-quickstart.md)
 - [Templates in the Azure Bot Service](~/azure/azure-bot-service-templates.md)
 - [Set up continuous integration](~/azure/azure-bot-service-continuous-integration.md)
-- [Debug your bot](~/azure/azure-bot-service-debug-bot.md)
+- [Debug an Azure Bot Service bot](~/azure/azure-bot-service-debug-bot.md)
 
 If you encounter problems or have suggestions regarding the Azure Bot Service, see [Support](~/resources-support.md) for a list of available resources. 

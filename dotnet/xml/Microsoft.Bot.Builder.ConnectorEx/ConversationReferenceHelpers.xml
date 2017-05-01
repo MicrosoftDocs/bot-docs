@@ -1,0 +1,57 @@
+<Type Name="ConversationReferenceHelpers" FullName="Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers">
+  <TypeSignature Language="C#" Value="public sealed class ConversationReferenceHelpers" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConversationReferenceHelpers extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helpers for <see cref="T:Microsoft.Bot.Connector.ConversationReference" /></summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConversationReferenceHelpers ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GZipDeserialize">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.ConversationReference GZipDeserialize (string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ConversationReference GZipDeserialize(string str) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers.GZipDeserialize(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.ConversationReference</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="str"> The Base64 encoded string.</param>
+        <summary>
+            Deserializes the GZip serialized <see cref="T:Microsoft.Bot.Connector.ConversationReference" /> using <see cref="M:Microsoft.Bot.Builder.ConnectorEx.Extensions.GZipSerialize(Microsoft.Bot.Connector.ConversationReference)" />.
+            </summary>
+        <returns> An instance of <see cref="T:Microsoft.Bot.Connector.ConversationReference" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

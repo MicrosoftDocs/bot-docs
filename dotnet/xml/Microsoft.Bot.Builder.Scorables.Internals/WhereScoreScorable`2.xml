@@ -1,0 +1,71 @@
+<Type Name="WhereScoreScorable&lt;Item,Score&gt;" FullName="Microsoft.Bot.Builder.Scorables.Internals.WhereScoreScorable&lt;Item,Score&gt;">
+  <TypeSignature Language="C#" Value="public sealed class WhereScoreScorable&lt;Item,Score&gt; : Microsoft.Bot.Builder.Scorables.Internals.DelegatingScorable&lt;Item,Score&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit WhereScoreScorable`2&lt;Item, Score&gt; extends Microsoft.Bot.Builder.Scorables.Internals.DelegatingScorable`2&lt;!Item, !Score&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.WhereScoreScorable`2" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="Item" />
+    <TypeParameter Name="Score" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Scorables.Internals.DelegatingScorable&lt;Item,Score&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="Item">Item</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="Score">Score</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="Item">To be added.</typeparam>
+    <typeparam name="Score">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WhereScoreScorable (Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt; scorable, Func&lt;Item,Score,bool&gt; predicate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !Score&gt; scorable, class System.Func`3&lt;!Item, !Score, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.WhereScoreScorable`2.#ctor(Microsoft.Bot.Builder.Scorables.IScorable{`0,`1},System.Func{`0,`1,System.Boolean})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="scorable" Type="Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;" />
+        <Parameter Name="predicate" Type="System.Func&lt;Item,Score,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="scorable">To be added.</param>
+        <param name="predicate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasScore">
+      <MemberSignature Language="C#" Value="public override bool HasScore (Item item, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool HasScore(!Item item, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.WhereScoreScorable`2.HasScore(`0,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Item" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

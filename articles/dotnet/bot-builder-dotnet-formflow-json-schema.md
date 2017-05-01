@@ -1,18 +1,16 @@
 ---
-title: Define a form using a JSON schema and FormFlow | Microsoft Docs
-description: Learn how to simplify maintenance by replacing type definitions with data-driven forms using a JSON schema and FormFlow with the Bot Builder SDK for .NET.
+title: Define a form using JSON schema and FormFlow | Microsoft Docs
+description: Learn how to define a form using JSON schema and FormFlow with the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 03/29/2017
+ms.date: 
 ms.reviewer:
-
 ---
 
-# Define a form using a JSON schema and FormFlow
+# Define a form using JSON schema
 
 If you use a [C# class](~/dotnet/bot-builder-dotnet-formflow.md#create-class) to define the form 
 when you create a bot with FormFlow, 
@@ -115,10 +113,10 @@ Special global variables include:
 
 Fields that are defined via JSON schema have the same ability to extend or override the definitions programatically as any other field. They can also be localized in the same way.
 
-## Example JSON schema
+## JSON schema example
 
 The simplest way to define a form is to define everything, including any C# code, directly in the 
-JSON schema definition. 
+JSON schema. 
 This example shows the JSON schema for the annotated sandwich bot that is described in 
 [Customize a form using FormBuilder](~/dotnet/bot-builder-dotnet-formflow-formbuilder.md).
 
@@ -329,7 +327,7 @@ that is described in [Customize a form using FormBuilder](~/dotnet/bot-builder-d
 
 ## Additional resources
 
-- [FormFlow](~/dotnet/bot-builder-dotnet-formflow.md)
+- [Basic features of FormFlow](~/dotnet/bot-builder-dotnet-formflow.md)
 - [Advanced features of FormFlow](~/dotnet/bot-builder-dotnet-formflow-advanced.md)
 - [Customize a form using FormBuilder](~/dotnet/bot-builder-dotnet-formflow-formbuilder.md)
 - [Localize form content](~/dotnet/bot-builder-dotnet-formflow-localize.md)

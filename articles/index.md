@@ -102,7 +102,7 @@ description:
                     <a href="#developing">Developing Bots</a>
                     <ul id="developing" class="cardsC">
                         <li>
-                            <a href="/bot-framework/dotnet/">
+                            <a href="/bot-framework/dotnet/bot-builder-dotnet-overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -307,7 +307,7 @@ description:
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Search</h3>
+                                            <h3>Web search</h3>
                                             <p>Learn how to add intelligent web search capabilities to your bot.</p>
                                         </div>
                                     </div>

@@ -1,4 +1,4 @@
-# [Downloads](../resources-tools-downloads.md)
+# [SDKs and tools](../resources-tools-downloads.md)
 # [Support](../resources-support.md)
 # [FAQ](../resources-bot-framework-faq.md)
 # [StackOverflow](http://stackoverflow.com/questions/tagged/botframework)

@@ -6,10 +6,8 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 02/24/2017
-ms.reviewer: rstand
-
+ms.date: 
+ms.reviewer: 
 ---
 
 # Support localization

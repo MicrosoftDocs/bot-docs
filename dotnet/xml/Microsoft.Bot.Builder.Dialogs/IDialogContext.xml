@@ -1,0 +1,24 @@
+<Type Name="IDialogContext" FullName="Microsoft.Bot.Builder.Dialogs.IDialogContext">
+  <TypeSignature Language="C#" Value="public interface IDialogContext : Microsoft.Bot.Builder.Dialogs.IBotContext, Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDialogContext implements class Microsoft.Bot.Builder.Dialogs.IBotContext, class Microsoft.Bot.Builder.Dialogs.Internals.IBotData, class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser, class Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IDialogContext" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.IBotContext</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            The context for the execution of a dialog's conversational process.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

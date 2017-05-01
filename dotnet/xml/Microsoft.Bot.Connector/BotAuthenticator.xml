@@ -1,0 +1,167 @@
+<Type Name="BotAuthenticator" FullName="Microsoft.Bot.Connector.BotAuthenticator">
+  <TypeSignature Language="C#" Value="public sealed class BotAuthenticator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BotAuthenticator extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.BotAuthenticator" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.5.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BotAuthenticator (Microsoft.Bot.Connector.ICredentialProvider credentialProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.ICredentialProvider credentialProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthenticator.#ctor(Microsoft.Bot.Connector.ICredentialProvider)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="credentialProvider" Type="Microsoft.Bot.Connector.ICredentialProvider" />
+      </Parameters>
+      <Docs>
+        <param name="credentialProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BotAuthenticator (string microsoftAppId, string microsoftAppPassword);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string microsoftAppId, string microsoftAppPassword) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthenticator.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="microsoftAppId" Type="System.String" />
+        <Parameter Name="microsoftAppPassword" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="microsoftAppId"> The Microsoft app Id.</param>
+        <param name="microsoftAppPassword"> The Microsoft app password.</param>
+        <summary>
+            Creates an instance of bot authenticator. 
+            </summary>
+        <remarks> This constructor sets the <see cref="F:Microsoft.Bot.Connector.BotAuthenticator.openIdConfigurationUrl" /> to 
+            <see cref="F:Microsoft.Bot.Connector.JwtConfig.ToBotFromChannelOpenIdMetadataUrl" />  and doesn't disable 
+            the self issued tokens used by emulator.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BotAuthenticator (Microsoft.Bot.Connector.ICredentialProvider credentialProvider, string openIdConfigurationUrl, bool disableEmulatorTokens);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.ICredentialProvider credentialProvider, string openIdConfigurationUrl, bool disableEmulatorTokens) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthenticator.#ctor(Microsoft.Bot.Connector.ICredentialProvider,System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="credentialProvider" Type="Microsoft.Bot.Connector.ICredentialProvider" />
+        <Parameter Name="openIdConfigurationUrl" Type="System.String" />
+        <Parameter Name="disableEmulatorTokens" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="credentialProvider">To be added.</param>
+        <param name="openIdConfigurationUrl">To be added.</param>
+        <param name="disableEmulatorTokens">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateUnauthorizedResponse">
+      <MemberSignature Language="C#" Value="public static System.Net.Http.HttpResponseMessage GenerateUnauthorizedResponse (System.Net.Http.HttpRequestMessage request);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.Http.HttpResponseMessage GenerateUnauthorizedResponse(class System.Net.Http.HttpRequestMessage request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthenticator.GenerateUnauthorizedResponse(System.Net.Http.HttpRequestMessage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.HttpResponseMessage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.Net.Http.HttpRequestMessage" />
+      </Parameters>
+      <Docs>
+        <param name="request">The request.</param>
+        <summary>
+            Generates <see cref="F:System.Net.HttpStatusCode.Unauthorized" /> response for the request.
+            </summary>
+        <returns>A response with status code unauthorized.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryAuthenticateAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; TryAuthenticateAsync (System.Net.Http.HttpRequestMessage request, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Connector.IActivity&gt; activities, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; TryAuthenticateAsync(class System.Net.Http.HttpRequestMessage request, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Connector.IActivity&gt; activities, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthenticator.TryAuthenticateAsync(System.Net.Http.HttpRequestMessage,System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.IActivity},System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BotAuthenticator/&lt;TryAuthenticateAsync&gt;d__6))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.Net.Http.HttpRequestMessage" />
+        <Parameter Name="activities" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Connector.IActivity&gt;" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="request"> The request that should be authenticated.</param>
+        <param name="activities"> The activities extracted from request.</param>
+        <param name="token"> The cancellation token.</param>
+        <summary>
+            Authenticates the incoming request and add the <see cref="P:Microsoft.Bot.Connector.IActivity.ServiceUrl" /> for each
+            activities to <see cref="F:Microsoft.Bot.Connector.MicrosoftAppCredentials.TrustedHostNames" /> if the request is authenticated.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryAuthenticateAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.IdentityToken&gt; TryAuthenticateAsync (string scheme, string token, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.IdentityToken&gt; TryAuthenticateAsync(string scheme, string token, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthenticator.TryAuthenticateAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BotAuthenticator/&lt;TryAuthenticateAsync&gt;d__10))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.IdentityToken&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scheme" Type="System.String" />
+        <Parameter Name="token" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="scheme">To be added.</param>
+        <param name="token">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

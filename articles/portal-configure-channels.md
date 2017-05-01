@@ -6,10 +6,8 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 02/06/2017
+ms.date: 
 ms.reviewer:
-
 ---
 
 # Configure a bot to run on one or more channels
@@ -45,7 +43,7 @@ After you've configured the channel, users on that channel can start using your 
 
 ## Next steps
 
-After you've configured your bot to run on the channels where your users are, the last step in the bot publication process is to [publish](~/portal-submit-bot-directory.md) your bot to Bot Directory. 
+After you've configured your bot to run on one or more channels, you can [publish](~/portal-submit-bot-directory.md) your bot to Bot Directory. 
 
 
 

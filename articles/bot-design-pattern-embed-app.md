@@ -1,48 +1,48 @@
 ---
 title: Embed a bot in an app | Microsoft Docs
-description: Learn how to design a conversational bot that will be embedded within another app.
+description: Learn how to design a bot that will be embedded within another app.
 author: matvelloso
 ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date:
-ms.reviewer: rstand
-
+ms.reviewer: 
 ---
+
 # Embed a bot in an app
 
-Although bots most commonly exist outside of apps, they can also be integrating with apps. A mobile app that runs across multiple platforms can also run a bot. 
-
-For example, you could embed a [knowledge bot](~/bot-design-pattern-knowledge-base.md) within an app 
+Although bots most commonly exist outside of apps, they can also be integrated with apps. For example, you could embed a [knowledge bot](~/bot-design-pattern-knowledge-base.md) within an app 
 to help users find information that might otherwise be challenging to locate within complex app structures. 
-
 You could embed a bot within a help desk app to act as the first responder to incoming user requests. 
-The bot could independently resolve simple issues and [handoff](~/bot-design-pattern-handoff-human.md) more complex issues to a human agent. 
- 
+The bot could independently resolve simple issues and [hand off](~/bot-design-pattern-handoff-human.md) more complex issues to a human agent. 
 
 ## Integrating bot with app
 
 The way to integrate a bot with an app varies depending on the type of app. 
 
 ### Native mobile app
+
 An app that is created in native code can communicate with the Bot Framework by using 
 the [Direct Line API][directLineAPI], 
 either via REST or websockets.
 
 ### Web-based mobile app
+
 A mobile app that is built by using web language and frameworks such as <a href="https://cordova.apache.org/" target="_blank">Cordova</a> 
 may communicate with the Bot Framework by using the same components that a 
 [bot embedded within a website](~/bot-design-pattern-embed-web-site.md) would use, 
 just encapsulated within a native app's shell.
 
 ### IoT app
+
 An IoT app can communicate with the Bot Framework by using 
 the [Direct Line API][directLineAPI]. 
 In some scenarios, it may also use <a href="https://www.microsoft.com/cognitive-services/" target="_blank">Microsoft Cognitive Services</a> 
 to enable capabilities such as image recognition and speech.
 
 ### Other types of apps and games
+
 Other types of apps and games can communicate with the Bot Framework by using 
 the [Direct Line API][directLineAPI]. 
 
@@ -84,6 +84,6 @@ For a complete sample that shows how to create a cross-platform mobile app that 
 
 - [Direct Line API][directLineAPI]
 - <a href="https://www.microsoft.com/cognitive-services/" target="_blank">Microsoft Cognitive Services</a>
-- [Add smarts to your bot with Microsoft Cognitive Services](~/intelligent-bots.md)
+- [Artificial intelligence in bots](~/intelligent-bots.md)
 
 [directLineAPI]: https://docs.botframework.com/en-us/restapi/directline3/#navtitle

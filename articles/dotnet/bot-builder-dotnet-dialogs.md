@@ -1,20 +1,16 @@
 ---
-title: Explore and create dialogs | Microsoft Docs
-description: Learn how to chunk complex conversation flows into manageable Dialogs using the Bot Builder SDK for .NET.
+title: Dialogs overview | Microsoft Docs
+description: Learn how to use dialogs within the Bot Builder SDK for .NET to model conversations and manage conversation flow.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 03/17/2017
+ms.date: 
 ms.reviewer:
-
 ---
 
-# Explore and create dialogs
-
-This article explores the fundamentals of dialogs in the Bot Builder SDK for .NET. 
+# Dialogs in the Bot Builder SDK for .NET
 
 When you create a bot using the Bot Builder SDK for .NET, you can use dialogs to model 
 a conversation and manage [conversation flow](~/bot-design-conversation-flow.md). 
@@ -27,20 +23,18 @@ When you use dialogs in the Bot Builder SDK for .NET, conversation state
 using the Bot Framework State service. This enables your bot to be stateless, 
 much like a web application that does not need to store session state in web server memory. 
 
-## Examples
-
-### Echo bot
+## Echo bot example
 
 Consider this echo bot example, which describes how to change the bot that's created in the 
-[Get started](~/dotnet/bot-builder-dotnet-quickstart.md) tutorial so that it uses dialogs to 
+[Quickstart](~/dotnet/bot-builder-dotnet-quickstart.md) tutorial so that it uses dialogs to 
 exchange messages with the user.
 
 > [!TIP]
 > To follow along with this example, use the instructions in the 
-> [Get started](~/dotnet/bot-builder-dotnet-quickstart.md) tutorial to create a bot, and then 
+> [Quickstart](~/dotnet/bot-builder-dotnet-quickstart.md) tutorial to create a bot, and then 
 > update its **MessagesController.cs** file as described below.
 
-#### MessagesController.cs 
+### MessagesController.cs 
 
 In the Bot Builder SDK for .NET, the [Builder][builderLibrary] library enables you to implement dialogs. 
 To access the relevant classes, import the `Dialogs` namespace.
@@ -55,7 +49,7 @@ Then, wire the `EchoDialog` class to the `Post` method by calling the `Conversat
 
 [!code-csharp[Post method](~/includes/code/dotnet-dialogs.cs#echobot2)]
 
-#### Implementation details 
+### Implementation details 
 
 The `Post` method is marked `async` because Bot Builder uses the C# facilities for handling 
 asynchronous communication. 
@@ -86,7 +80,7 @@ echoing back the user's message prefixed with the text 'You said: '.
 Because the bot is created using dialogs, it can evolve to support more complex conversations without having 
 to explicitly manage state.
 
-### Echo bot with state
+## Echo bot with state example
 
 This next example builds upon the one above by adding the ability to track dialog state. 
 When the `EchoDialog` class is updated as shown in the code sample below, 
@@ -94,11 +88,11 @@ the bot will reply to each message that the user sends by echoing back the user'
 message prefixed with a number (`count`) followed by the text 'You said: '. 
 The bot will continue to increment `count` with each reply, until the user elects to reset the count.
 
-#### MessagesController.cs 
+### MessagesController.cs 
 
 [!code-csharp[EchoDialog class](~/includes/code/dotnet-dialogs.cs#echobot3)]
 
-#### Implementation details
+### Implementation details
 
 As in the first example, the `MessageReceivedAsync` method is called when a new message is received. 
 This time though, the `MessageReceivedAsync` method evaluates the user's message before responding. 
@@ -208,9 +202,9 @@ If `Chain.Switch<T, R>` returns a nested `IDialog<IDialog<T>>`, then the inner `
 ## Additional resources
 
 - [Key concepts in the Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-concepts.md)
-- [Designing conversation flow](~/bot-design-conversation-flow.md)
-- [Manage conversation flow using dialogs](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
-- [Enable language understanding](~/dotnet/bot-builder-dotnet-luis-dialogs.md)
+- [Design and control conversation flow](~/bot-design-conversation-flow.md)
+- [Manage conversation flow with dialogs](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
+- [Enable language understanding with LUIS](~/dotnet/bot-builder-dotnet-luis-dialogs.md)
 - [Bot Framework troubleshooting guide](~/troubleshoot-general-problems.md#implement-dialogs)
 - [Builder library][builderLibrary]
 

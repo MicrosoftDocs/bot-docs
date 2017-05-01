@@ -6,10 +6,8 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 02/24/2017
+ms.date: 
 ms.reviewer:
-
 ---
 
 # Add rich card attachments to messages

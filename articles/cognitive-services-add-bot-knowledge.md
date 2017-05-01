@@ -7,8 +7,7 @@ manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 
-ms.reviewer: rstand
-
+ms.reviewer: 
 ---
 
 # Add knowledge extraction to a bot
@@ -16,7 +15,7 @@ ms.reviewer: rstand
 The Knowledge APIs can arm your bots with your own knowledge base and user history, allowing them to efficiently navigate your product catalogs to provide recommendations.
 
 > [!IMPORTANT]
-> Before you get started, you need to obtain your own subscription key from the <a href="https://www.microsoft.com/cognitive-services/" target="_blank">Microsoft Cognitive Services site</a>.
+> Before you get started, you must obtain your own subscription key from the <a href="https://www.microsoft.com/cognitive-services/" target="_blank">Microsoft Cognitive Services site</a>.
 
 ## QnA Maker example
 This is a very simple Bot which uses simple heuristics to determine whether the incoming user message has a question intent, and if that's the case simply forwards the message to the QnA Maker service.
@@ -136,5 +135,6 @@ public virtual async Task<HttpResponseMessage> Post([FromBody] Activity activity
 }
 ```
 
-## Next steps
+## Additional resources
+
 You can find detailed documentation about the Cognitive Services Knowledge APIs, including developer guides and API references, by visiting the Microsoft Cognitive Services <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/kes/overview" target="_blank">documentation site</a>.

@@ -1,16 +1,15 @@
 ---
 title: Design knowledge bots | Microsoft Docs
-description: Learn what options are available for designing a knowledge bot to find and return information in response to the user's input or query.
+description: Learn about different ways to design a knowledge bot that finds and returns information in response to the user's input or query.
 author: matvelloso
 ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
 ms.date: 
-ms.reviewer: rstand
-
+ms.reviewer: 
 ---
+
 # Design knowledge bots
 
 A knowledge bot can be designed to provide information about virtually any topic. 
@@ -214,9 +213,9 @@ For a complete sample that shows how to create a basic knowledge bot using the B
 
 ## Additional resources
 
-- [Add smarts to your bot with Microsoft Cognitive Services](~/intelligent-bots.md)
-- [Add knowledge extraction to your bot](~/cognitive-services-add-bot-knowledge.md)
-- [Add language understanding to your bot](~/cognitive-services-add-bot-language.md)
-- [Add search capabilities to your bot](~/cognitive-services-add-bot-search.md)
+- [Artificial intelligence in bots](~/intelligent-bots.md)
+- [Add knowledge extraction to a bot](~/cognitive-services-add-bot-knowledge.md)
+- [Add language understanding to a bot](~/cognitive-services-add-bot-language.md)
+- [Add search capabilities to a bot](~/cognitive-services-add-bot-search.md)
 
 [qnamakerTemplate]: https://docs.botframework.com/en-us/azure-bot-service/templates/qnamaker/#navtitle

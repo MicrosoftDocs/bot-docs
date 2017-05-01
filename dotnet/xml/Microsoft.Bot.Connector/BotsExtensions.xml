@@ -1,0 +1,381 @@
+<Type Name="BotsExtensions" FullName="Microsoft.Bot.Connector.BotsExtensions">
+  <TypeSignature Language="C#" Value="public static class BotsExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit BotsExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.BotsExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetConversationData">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.BotData GetConversationData (this Microsoft.Bot.Connector.IBots operations, string botId, string conversationId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.BotData GetConversationData(class Microsoft.Bot.Connector.IBots operations, string botId, string conversationId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotsExtensions.GetConversationData(Microsoft.Bot.Connector.IBots,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.BotData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IBots" RefType="this" />
+        <Parameter Name="botId" Type="System.String" />
+        <Parameter Name="conversationId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="operations">To be added.</param>
+        <param name="botId">To be added.</param>
+        <param name="conversationId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConversationDataAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; GetConversationDataAsync (this Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; GetConversationDataAsync(class Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotsExtensions.GetConversationDataAsync(Microsoft.Bot.Connector.IBots,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BotsExtensions/&lt;GetConversationDataAsync&gt;d__5))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IBots" RefType="this" />
+        <Parameter Name="botId" Type="System.String" />
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">To be added.</param>
+        <param name="botId">To be added.</param>
+        <param name="conversationId">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPerUserConversationData">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.BotData GetPerUserConversationData (this Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, string userId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.BotData GetPerUserConversationData(class Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, string userId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotsExtensions.GetPerUserConversationData(Microsoft.Bot.Connector.IBots,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.BotData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IBots" RefType="this" />
+        <Parameter Name="botId" Type="System.String" />
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="userId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="operations">To be added.</param>
+        <param name="botId">To be added.</param>
+        <param name="conversationId">To be added.</param>
+        <param name="userId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPerUserConversationDataAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; GetPerUserConversationDataAsync (this Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, string userId, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; GetPerUserConversationDataAsync(class Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, string userId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotsExtensions.GetPerUserConversationDataAsync(Microsoft.Bot.Connector.IBots,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BotsExtensions/&lt;GetPerUserConversationDataAsync&gt;d__9))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IBots" RefType="this" />
+        <Parameter Name="botId" Type="System.String" />
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">To be added.</param>
+        <param name="botId">To be added.</param>
+        <param name="conversationId">To be added.</param>
+        <param name="userId">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUserData">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.BotData GetUserData (this Microsoft.Bot.Connector.IBots operations, string botId, string userId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.BotData GetUserData(class Microsoft.Bot.Connector.IBots operations, string botId, string userId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotsExtensions.GetUserData(Microsoft.Bot.Connector.IBots,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.BotData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IBots" RefType="this" />
+        <Parameter Name="botId" Type="System.String" />
+        <Parameter Name="userId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="operations">To be added.</param>
+        <param name="botId">To be added.</param>
+        <param name="userId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUserDataAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; GetUserDataAsync (this Microsoft.Bot.Connector.IBots operations, string botId, string userId, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; GetUserDataAsync(class Microsoft.Bot.Connector.IBots operations, string botId, string userId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotsExtensions.GetUserDataAsync(Microsoft.Bot.Connector.IBots,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BotsExtensions/&lt;GetUserDataAsync&gt;d__1))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IBots" RefType="this" />
+        <Parameter Name="botId" Type="System.String" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">To be added.</param>
+        <param name="botId">To be added.</param>
+        <param name="userId">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetConversationData">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.BotData SetConversationData (this Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, Microsoft.Bot.Connector.BotData botData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.BotData SetConversationData(class Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, class Microsoft.Bot.Connector.BotData botData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotsExtensions.SetConversationData(Microsoft.Bot.Connector.IBots,System.String,System.String,Microsoft.Bot.Connector.BotData)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.BotData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IBots" RefType="this" />
+        <Parameter Name="botId" Type="System.String" />
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="botData" Type="Microsoft.Bot.Connector.BotData" />
+      </Parameters>
+      <Docs>
+        <param name="operations">To be added.</param>
+        <param name="botId">To be added.</param>
+        <param name="conversationId">To be added.</param>
+        <param name="botData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetConversationDataAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; SetConversationDataAsync (this Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, Microsoft.Bot.Connector.BotData botData, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; SetConversationDataAsync(class Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, class Microsoft.Bot.Connector.BotData botData, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotsExtensions.SetConversationDataAsync(Microsoft.Bot.Connector.IBots,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BotsExtensions/&lt;SetConversationDataAsync&gt;d__7))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IBots" RefType="this" />
+        <Parameter Name="botId" Type="System.String" />
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="botData" Type="Microsoft.Bot.Connector.BotData" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">To be added.</param>
+        <param name="botId">To be added.</param>
+        <param name="conversationId">To be added.</param>
+        <param name="botData">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPerUserInConversationData">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.BotData SetPerUserInConversationData (this Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, string userId, Microsoft.Bot.Connector.BotData botData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.BotData SetPerUserInConversationData(class Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, string userId, class Microsoft.Bot.Connector.BotData botData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotsExtensions.SetPerUserInConversationData(Microsoft.Bot.Connector.IBots,System.String,System.String,System.String,Microsoft.Bot.Connector.BotData)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.BotData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IBots" RefType="this" />
+        <Parameter Name="botId" Type="System.String" />
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="botData" Type="Microsoft.Bot.Connector.BotData" />
+      </Parameters>
+      <Docs>
+        <param name="operations">To be added.</param>
+        <param name="botId">To be added.</param>
+        <param name="conversationId">To be added.</param>
+        <param name="userId">To be added.</param>
+        <param name="botData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPerUserInConversationDataAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; SetPerUserInConversationDataAsync (this Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, string userId, Microsoft.Bot.Connector.BotData botData, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; SetPerUserInConversationDataAsync(class Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, string userId, class Microsoft.Bot.Connector.BotData botData, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotsExtensions.SetPerUserInConversationDataAsync(Microsoft.Bot.Connector.IBots,System.String,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BotsExtensions/&lt;SetPerUserInConversationDataAsync&gt;d__11))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IBots" RefType="this" />
+        <Parameter Name="botId" Type="System.String" />
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="botData" Type="Microsoft.Bot.Connector.BotData" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">To be added.</param>
+        <param name="botId">To be added.</param>
+        <param name="conversationId">To be added.</param>
+        <param name="userId">To be added.</param>
+        <param name="botData">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetUserData">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.BotData SetUserData (this Microsoft.Bot.Connector.IBots operations, string botId, string userId, Microsoft.Bot.Connector.BotData botData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.BotData SetUserData(class Microsoft.Bot.Connector.IBots operations, string botId, string userId, class Microsoft.Bot.Connector.BotData botData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotsExtensions.SetUserData(Microsoft.Bot.Connector.IBots,System.String,System.String,Microsoft.Bot.Connector.BotData)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.BotData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IBots" RefType="this" />
+        <Parameter Name="botId" Type="System.String" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="botData" Type="Microsoft.Bot.Connector.BotData" />
+      </Parameters>
+      <Docs>
+        <param name="operations">To be added.</param>
+        <param name="botId">To be added.</param>
+        <param name="userId">To be added.</param>
+        <param name="botData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetUserDataAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; SetUserDataAsync (this Microsoft.Bot.Connector.IBots operations, string botId, string userId, Microsoft.Bot.Connector.BotData botData, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; SetUserDataAsync(class Microsoft.Bot.Connector.IBots operations, string botId, string userId, class Microsoft.Bot.Connector.BotData botData, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotsExtensions.SetUserDataAsync(Microsoft.Bot.Connector.IBots,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BotsExtensions/&lt;SetUserDataAsync&gt;d__3))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IBots" RefType="this" />
+        <Parameter Name="botId" Type="System.String" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="botData" Type="Microsoft.Bot.Connector.BotData" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">To be added.</param>
+        <param name="botId">To be added.</param>
+        <param name="userId">To be added.</param>
+        <param name="botData">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

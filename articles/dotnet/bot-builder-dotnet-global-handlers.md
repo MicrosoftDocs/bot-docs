@@ -6,22 +6,15 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 02/21/2017
+ms.date: 
 ms.reviewer:
-
 ---
 
 # Implement global message handlers
 
-<!--
-> [!div class="op_single_selector"]
-> * [.NET](~/dotnet/bot-builder-dotnet-howto-global-handlers.md)
-> * [Node.js](~/nodejs/bot-builder-nodejs-global-handlers.md)
->
--->
-
 [!include[Introduction to global message handlers](~/includes/snippet-global-handlers-intro.md)]
+
+## Listen for keywords in user input
 
 The following walk through shows how to implement global message handlers by using the Bot Builder SDK for .NET.
 
@@ -101,7 +94,8 @@ For a complete sample that shows how to implement global message handlers using 
 
 ## Additional resources
 
-- [Designing conversation flow](~/bot-design-conversation-flow.md)
+- [Design and control conversation flow](~/bot-design-conversation-flow.md)
 - [Builder library][builderLibrary]
+- <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-GlobalMessageHandlers" target="_blank">Global Message Handlers sample (GitHub)</a>
 
 [builderLibrary]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html

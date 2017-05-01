@@ -1,0 +1,42 @@
+<Type Name="IWaitFactory&lt;C&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory&lt;C&gt;">
+  <TypeSignature Language="C#" Value="public interface IWaitFactory&lt;C&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWaitFactory`1&lt;C&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory`1" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="C" />
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="C">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Make&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C,T&gt; Make&lt;T&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.Internals.Fibers.IWait`2&lt;!C, !!T&gt; Make&lt;T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory`1.Make``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C,T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

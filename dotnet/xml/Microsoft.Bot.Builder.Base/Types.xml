@@ -1,0 +1,40 @@
+<Type Name="Types" FullName="Microsoft.Bot.Builder.Base.Types">
+  <TypeSignature Language="C#" Value="public static class Types" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Types extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Base.Types" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="MethodOf">
+      <MemberSignature Language="C#" Value="public static System.Reflection.MethodInfo MethodOf (System.Linq.Expressions.Expression&lt;Action&gt; action);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MethodInfo MethodOf(class System.Linq.Expressions.Expression`1&lt;class System.Action&gt; action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Base.Types.MethodOf(System.Linq.Expressions.Expression{System.Action})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="System.Linq.Expressions.Expression&lt;System.Action&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="action">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
