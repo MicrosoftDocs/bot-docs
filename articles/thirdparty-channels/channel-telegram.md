@@ -37,7 +37,10 @@ https://telegram.me/botfather
 
 Paste the token you copied previously into the **Access Token** field and click **Submit**.
 
+## Enable the bot
 Check **Enable this bot on Telegram**.
 
-Click **I'm done configuring Telegram**
+Click **I'm done configuring Telegram**.
+
+When you have completed these steps, your bot will be successfully configured to communicate with users in Telegram.
 

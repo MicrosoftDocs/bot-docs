@@ -40,7 +40,10 @@ On the Configuration tab, copy the **Name** and **API key**.
 
 Click **Submit Kik Credentials**.
 
+## Enable the bot
 Check **Enable this bot on Kik**.
 
-Click **I'm done configuring Kik**
+Click **I'm done configuring Kik**. 
+
+When you have completed these steps, your bot will be successfully configured to communicate with users in Kik.
 

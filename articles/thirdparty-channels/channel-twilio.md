@@ -50,8 +50,10 @@ Click on the lock icon to see the Auth Token.
 
 Enter the phone number, accountSID and Auth Token you copied earlier and click **Submit Twilio Credentials**.
 
-
+## Enable the bot
 Check **Enable this bot on SMS**.
 
-Click **I'm done configuring SMS**
+Click **I'm done configuring SMS**.
+
+When you have completed these steps, your bot will be successfully configured to communicate with users using Twilio.
 

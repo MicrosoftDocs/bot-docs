@@ -40,7 +40,8 @@ Copy the **Client ID** section from the redirect URL.
 2. Click **Submit GroupMe Credentials**.
 ![Enter credentials](~/media/channels/GM-StepApp.png)
 
-Check **Enable this bot on GroupMe**.
+## Enable the bot
+Check **Enable this bot on GroupMe**. Click **I'm done configuring GroupMe**.
 
-Click **I'm done configuring GroupMe**
+When you have completed these steps, your bot will be successfully configured to communicate with users in GroupMe.
 

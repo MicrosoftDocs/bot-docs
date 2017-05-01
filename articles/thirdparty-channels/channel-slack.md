@@ -54,7 +54,10 @@ The **Landing Page URL** is optional. You may remove or change it.
 
 Click **Submit Slack Credentials**.
 
+## Enable the bot
 Check **Enable this bot on Slack**.
 
-Click **I'm done configuring Slack**
+Click **I'm done configuring Slack**.
+
+When you have completed these steps, your bot will be successfully configured to communicate with users in Slack.
 
