@@ -6,7 +6,7 @@ ms.author: v-jaype
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date:
+ms.date: 05/01/2017
 ms.reviewer:
 
 ---
