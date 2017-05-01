@@ -20,7 +20,8 @@ You can configure your bot to communicate with people using the Telegram messagi
 
 ![Visit Bot Father](~/media/channels/tg-StepVisitBotFather.png)
 
-## To create a new Telegram bot, send this command: /newbot
+## Create a new Telegram bot
+To create a new Telegram bot, send command `/newbot`.
 
 ![Create new bot](~/media/channels/tg-StepNewBot.png)
 
