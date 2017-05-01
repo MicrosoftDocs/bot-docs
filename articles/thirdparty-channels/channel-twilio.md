@@ -12,23 +12,21 @@ ms.reviewer:
 ---
 # Connect a bot to Twilio
 
-Configure a bot to communicate using the Twilio cloud communication platform.
+You can configure your bot to communicate with people using the Twilio cloud communication platform.
 
 ## Log in to or create a Twilio account for sending and receiving SMS messages
 
-https://www.twilio.com/try-twilio
+If you don't have a Twilio account, [create a new account](https://www.twilio.com/try-twilio).
 
 ## Create a TwiML Application
 
-https://www.twilio.com/user/account/messaging/dev-tools/twiml-apps/add 
+[Create a TwiML application](https://www.twilio.com/user/account/messaging/dev-tools/twiml-apps/add).
 
 ![Create app](~/media/channels/twi-StepTwiml.png)
 
 ## Select or add a phone number
 
-https://www.twilio.com/user/account/phone-numbers/incoming 
-
-Click on the number to add it to the TwiML application you created.
+[Select or add a phone number](https://www.twilio.com/user/account/phone-numbers/incoming). Click  the number to add it to the TwiML application you created.
 
 ![Set phone number](~/media/channels/twi-StepPhone.png)
 
@@ -40,20 +38,16 @@ Copy the **Phone Number** value for later use.
 
 ## Gather credentials
 
-https://www.twilio.com/user/account/settings 
-
-Click on the lock icon to see the Auth Token.
+[Gather credentials](https://www.twilio.com/user/account/settings) and then click the lock icon to see the Auth Token.
 
 ![Gather app credentials](~/media/channels/twi-StepAuth.png)
 
 ## Submit credentials
 
-Enter the phone number, accountSID and Auth Token you copied earlier and click **Submit Twilio Credentials**.
+Enter the phone number, accountSID, and Auth Token you copied earlier and click **Submit Twilio Credentials**.
 
 ## Enable the bot
-Check **Enable this bot on SMS**.
-
-Click **I'm done configuring SMS**.
+Check **Enable this bot on SMS**. Then click **I'm done configuring SMS**.
 
 When you have completed these steps, your bot will be successfully configured to communicate with users using Twilio.
 

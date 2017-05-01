@@ -12,11 +12,11 @@ ms.reviewer:
 ---
 # Connect a bot to Slack
 
-Configure a bot to communicate using the Slack messaging app.
+You can configure your bot to communicate with people using the Slack messaging app.
 
 ## Log in to Slack and create a Slack Application
 
-https://api.slack.com/applications/new 
+Log into Slack and [create a Slack application](https://api.slack.com/applications/new).
 
 ![Set up bot](~/media/channels/slack-NewApp.png)
 
@@ -55,9 +55,7 @@ The **Landing Page URL** is optional. You may remove or change it.
 Click **Submit Slack Credentials**.
 
 ## Enable the bot
-Check **Enable this bot on Slack**.
-
-Click **I'm done configuring Slack**.
+Check **Enable this bot on Slack**. Then click **I'm done configuring Slack**.
 
 When you have completed these steps, your bot will be successfully configured to communicate with users in Slack.
 
