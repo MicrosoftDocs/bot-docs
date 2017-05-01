@@ -82,6 +82,3 @@ A bot may send an **endOfConversation** activity to indicate to the user that th
 
 - [Send and receive activities](~/dotnet/bot-builder-dotnet-connector.md)
 - [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
-- [Add media attachments to messages](~/dotnet/bot-builder-dotnet-add-media-attachments.md)
-- [Add rich cards to messages](~/dotnet/bot-builder-dotnet-add-rich-card-attachments.md)
-- [Implement channel-specific functionality](~/dotnet/bot-builder-dotnet-channeldata.md)

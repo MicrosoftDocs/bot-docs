@@ -26,12 +26,12 @@ and the `Locale` property (as the locale of the sender).
 [!code-csharp[Set message properties](~/includes/code/dotnet-create-messages.cs#setBasicProperties)]
 
 The `TextFormat` property of a message can be used to specify the format of the text. 
-`TextFormat` defaults to `markdown` and interprets text using Markdown formatting standards, 
-but you can also specify `plain` to interpret text as plain text or `xml` to interpret text as XML markup.
+`TextFormat` defaults to **markdown** and interprets text using Markdown formatting standards, 
+but you can also specify **plain** to interpret text as plain text or `xml` to interpret text as XML markup.
 
 If a channel is not capable of rendering the specified formatting, the message will be rendered using reasonable approximation. For example, Markdown **bold** text for a message sent via text messaging will be rendered as \*bold\*. Only channels that support fixed width formats and HTML can render standard table markdown.
 
-These styles are supported when `TextFormat` is set to `markdown`:
+These styles are supported when `TextFormat` is set to **markdown**:
 
 | Style | Markdown | Example | 
 | ---- | ---- | ---- | 
@@ -41,10 +41,11 @@ These styles are supported when `TextFormat` is set to `markdown`:
 | strikethrough | \~\~text\~\~ | ~~text~~ |
 | horizontal rule | --- |  |
 | unordered list | \* text |  <ul><li>text</li></ul> |
-| preformatted text | \`text\` |  |
+| ordered list | 1. text | 1. text |
+| preformatted text | \`text\` | `text` |
 | blockquote | \> text | <blockquote>text</blockquote> |
 | hyperlink | \[bing](http://www.bing.com) | [bing](http://www.bing.com) |
-| image link| \[duck](http://aka.ms/Fo983c) | [duck](http://aka.ms/Fo983c) |
+| image link| !\[duck](http://aka.ms/Fo983c) | ![duck](http://aka.ms/Fo983c) |
 
 These styles are supported when `TextFormat` is set to "xml":
 
@@ -57,7 +58,7 @@ These styles are supported when `TextFormat` is set to "xml":
 | hyperlink | \<a href="http://www.bing.com"\>bing\</a\> | <a href="http://www.bing.com">bing</a> |
 
 > [!NOTE]
-> The `xml` value of for `TextFormat` is supported by the Skype channel only. 
+> The `TextFormat` **xml** is supported only by the Skype channel. 
 
 ## Attachments
 
