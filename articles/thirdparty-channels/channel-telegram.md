@@ -6,20 +6,22 @@ ms.author: v-jaype
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date:
+ms.date: 05/01/2017
 ms.reviewer:
 
 ---
 # Connect a bot to Telegram
 
-Configure a bot to communicate using the Telegram messaging app.
+You can configure your bot to communicate with people using the Telegram messaging app.
 
 ## Visit the Bot Father to create a new Telegram bot
 
-https://telegram.me/botfather 
+[Create a new Telegram bot](https://telegram.me/botfather) using the Bot Father.
+
 ![Visit Bot Father](~/media/channels/tg-StepVisitBotFather.png)
 
-## To create a new Telegram bot, send this command: /newbot
+## Create a new Telegram bot
+To create a new Telegram bot, send command `/newbot`.
 
 ![Create new bot](~/media/channels/tg-StepNewBot.png)
 
@@ -37,7 +39,8 @@ https://telegram.me/botfather
 
 Paste the token you copied previously into the **Access Token** field and click **Submit**.
 
-Check **Enable this bot on Telegram**.
+## Enable the bot
+Check **Enable this bot on Telegram**. Then click **I'm done configuring Telegram**.
 
-Click **I'm done configuring Telegram**
+When you have completed these steps, your bot will be successfully configured to communicate with users in Telegram.
 

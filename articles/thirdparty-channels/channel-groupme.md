@@ -6,25 +6,23 @@ ms.author: v-jaype
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date:
+ms.date: 05/01/2017
 ms.reviewer:
 
 ---
 # Connect a bot to GroupMe
 
-Configure a bot to communicate using the GroupMe group messaging app.
+You can configure a bot to communicate with people using the GroupMe group messaging app.
 
 ## Sign up for a GroupMe account
 
-https://web.groupme.com/signup 
+If you don't have a GroupMe account, [sign up for a new account](https://web.groupme.com/signup).
 
 ## Create a GroupMe application
 
-https://dev.groupme.com/applications/new 
+[Create a GroupMe application](https://dev.groupme.com/applications/new) for your bot.
 
 Use this callback URL: <code>https://groupme.botframework.com/Home/Login</code>
-
-<!-- verify that this is the correct callback for everyone or if they need to specify something specific because reasons-->
 
 ![Create app](~/media/channels/GM-StepApp.png)
 
@@ -40,7 +38,8 @@ Copy the **Client ID** section from the redirect URL.
 2. Click **Submit GroupMe Credentials**.
 ![Enter credentials](~/media/channels/GM-StepApp.png)
 
-Check **Enable this bot on GroupMe**.
+## Enable the bot
+Check **Enable this bot on GroupMe**. Then click **I'm done configuring GroupMe**.
 
-Click **I'm done configuring GroupMe**
+When you have completed these steps, your bot will be successfully configured to communicate with users in GroupMe.
 
