@@ -10,7 +10,7 @@
 ## [Design](design/TOC.md)
 ## [Develop with .NET](~/dotnet/bot-builder-dotnet-overview.md)
 ### [Key concepts](~/dotnet/bot-builder-dotnet-concepts.md)
-### Activities
+### Messages and activities
 #### [Activities overview](~/dotnet/bot-builder-dotnet-activities.md)
 #### [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
 #### [Add media attachments to messages](~/dotnet/bot-builder-dotnet-add-media-attachments.md)
