@@ -46,6 +46,22 @@ A `message` is the most common type of `activity`. A message can be as simple as
 ### Dialog
 Dialogs help organize the logic in your bot and manage [conversation flow](~/bot-design-conversation-flow.md). Dialogs are arranged in a [stack](~/bot-design-conversation-flow.md#dialog-stack), and the top dialog in the stack processes all incoming messages until it is closed or a different dialog is invoked. For example, a *BrowseProducts* dialog would contain only the logic and UI related to the user browsing the products; clicking the *Order* button would invoke the *PlaceOrder* dialog.
 
+### Rich cards
+A rich card comprises a title, description, link, and images. A message can contain multiple rich cards, displayed in either list format or carousel format.
+The Bot Framework supports the following rich cards: 
+
+| Card type | Description |
+|----|----|
+| Animation card | A card that can play animated GIFs or short videos. |
+| Audio card | A card that can play an audio file. |
+| Hero card | A card that typically contains a single large image, one or more buttons, and text. |
+| Thumbnail card | A card that typically contains a single thumbnail image, one or more buttons, and text. |
+| Receipt card | A card that enables a bot to provide a receipt to the user. It typically contains the list of items to include on the receipt, tax and total information, and other text. |
+| SignIn card | A card that enables a bot to request that a user sign-in. It typically contains text and one or more buttons that the user can click to initiate the sign-in process. |
+| Video card | A card that can play videos. |
+
+Learn more about adding rich cards using the [Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-add-rich-card-attachments.md) and the [Bot Builder SDK for Node.js](~/nodejs/bot-builder-nodejs-send-rich-cards.md).
+
 ## Test and debug
 The [Bot Framework Emulator](~/debug-bots-emulator.md) is a desktop application that allows developers to test and debug their bots. The Emulator can communicate with a bot running on `localhost` or remotely through a tunnel. As you chat with your bot, the emulator displays messages as they would appear in the web chat UI and logs JSON requests and responses for later evaluation.
 
