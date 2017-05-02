@@ -41,7 +41,7 @@ Take a look at [Troubleshooting Bot Framework Authentication][TroubleshootingAut
 
 ### I'm using the C# Bot Builder SDK. How can I troubleshoot my Bot?
 
-* **Look for exceptions**. In Visual Studio 2015, go to <code>Debug|Windows|Exception Settings</code> and select the "Break When Thrown" checkbox next to "Common Language Runtime Exceptions".  You may also see diagnostics output in your "Output Window" when there are thrown or unhandled exceptions.
+* **Look for exceptions**. In Visual Studio 2017, go to **Debug** > **Windows** > **Exception Settings**. In the **Exceptions Settings** window, select the **Break When Thrown** checkbox next to **Common Language Runtime Exceptions**.  You may also see diagnostics output in your "Output Window" when there are thrown or unhandled exceptions.
 
 * **Look at the call stack**. In Visual Studio, you can choose whether you're debugging [Just My Code](https://msdn.microsoft.com/en-us/library/dn457346.aspx) or not.  Seeing the full call stack may provide more insight into any issues.
 

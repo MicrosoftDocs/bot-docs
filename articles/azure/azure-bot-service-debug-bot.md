@@ -103,7 +103,7 @@ First, open a command prompt and navigate to the folder where the **project.json
 > [!NOTE]
 > Visual Studio 2017 RC changes how Visual Studio handles dependencies. 
 > While Visual Studio 2015 uses **project.json** to handle dependencies, 
-> Visual Studio 2017 uses a .csproj model when loading in Visual Studio. 
+> Visual Studio 2017 uses a **.csproj** model when loading in Visual Studio. 
 > If you are using Visual Studio 2017, <a href="https://aka.ms/bf-debug-project">download this **.csproj** file</a> 
 > to the **/messages** folder in your repository before you run the `dotnet restore` command.
 

@@ -56,7 +56,7 @@ Click **Publish** to publish your bot to Microsoft Azure. <br/><br/>
 ![Select Release Configuration and click Publish](~/media/connector-getstarted-publish-configuration.png)
 
 > [!NOTE]
-> During the publishing process, you will see a number of messages displayed in the Visual Studio 2015 Output window.
+> During the publishing process, you will see a number of messages displayed in the Visual Studio 2017 Output window.
 > When publishing completes, your bot's HTML page will be displayed in your default browser.
 
 ## Step 3: Test the connection to your bot
