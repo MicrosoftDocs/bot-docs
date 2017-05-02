@@ -10,7 +10,7 @@ ms.date: 4/25/2017
 
 ---
 # How the Bot Framework works
-The Bot Framework provides a platform and a comprehensive toolkit to simplify common development tasks, debugging, securing, managing, and connecting bots to popular communication services. The Bot Framework provides tools and services to help you build, deploy, and publish bots, including the Bot Builder SDK, the Developer Portal, and the Bot Connector.
+The Bot Framework provides tools and services to help you build, deploy, and publish bots, including the Bot Builder SDK, the Developer Portal, and the Bot Connector.
 
 ## Building bots
 Bots are apps that offer a conversational interface as the best solution to the user's needs. Like other apps, bot development starts with your business logic and data. Choose the model your bot will use to interact with users. Users can interact with your bot with inline forms and cards, simple menus, or natural language. You can build your bot with the Bot Builder SDK using C# or Node.js, or you can use the Azure Bot Service (currently in preview). Add artificial intelligence to your bot with Cognitive Services. Register your bot on the Developer Portal and connect it to users through the channels they use, such as Facebook, Kik, and Microsoft Teams. When you are ready to share your bot with the world, deploy it to a cloud service such as Microsoft Azure.
