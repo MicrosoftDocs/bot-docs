@@ -1,4 +1,5 @@
 ---
+redirect_url: /bot-framework/nodejs/bot-builder-nodejs-dialog-prompt
 title: Use a prompt with a waterfall | Microsoft Docs
 description: Learn how to collect information from the user through prompts included in the Bot Builder SDK for Node.js.
 author: DeniseMak
@@ -6,11 +7,10 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 02/17/2017
+ms.date: 
 ms.reviewer:
-
 ---
+
 # Prompts and waterfalls
 
 A common pattern is for a bot to ask the user a sequence of questions before performing some action.
