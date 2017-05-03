@@ -6,8 +6,7 @@ ms.author: rstand
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 04/25/2017
-
+ms.date: 05/03/2017
 ---
 # Manage a conversation with dialogs
 
