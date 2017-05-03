@@ -1,0 +1,42 @@
+---
+title: Add suggested actions to messages | Microsoft Docs
+description: Learn how to send suggested actions within messages using the Bot Builder SDK for Node.js.
+author: kbrandl
+ms.author: v-kibran
+manager: rstand
+ms.topic: article
+ms.prod: bot-framework
+ms.date: 
+ms.reviewer: 
+---
+
+# Send suggested actions
+
+[!include[Introduction to suggested actions](~/includes/snippet-suggested-actions-intro.md)] 
+
+> [!TIP]
+> To learn how various channels render suggested actions, see the [Channel Inspector][channelInspector].
+
+## Suggested actions example
+
+To add suggested actions to a message, set the `suggestedActions` property of the message to a list of [card actions][ICardAction] that represent the buttons to be presented to the user.
+
+This code example shows how to send a message that presents three suggested actions to the user:
+
+[!code-javascript[Send suggested actions](~/includes/code/node-send-suggested-actions.js#sendSuggestedActions)]
+
+When the user taps one of the suggested actions, the bot will receive a message from the user that contains the `value` of the corresponding action.
+
+## Additional resources
+
+* [IMessage][IMessage]
+* [ICardAction][ICardAction]
+* [session.send][SessionSend]
+
+[channelInspector]: https://docs.botframework.com/en-us/channel-inspector/channels/Facebook/#navtitle
+
+[IMessage]: http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.imessage
+
+[SessionSend]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#send
+
+[ICardAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.icardaction.html

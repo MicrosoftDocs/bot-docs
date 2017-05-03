@@ -31,8 +31,7 @@ The following activity types are supported by the Bot Builder SDK for .NET.
 ## message
 
 Your bot will send **message** activities to communicate information to and receive **message** activities from users. 
-Some messages may be plain text, while others may contain richer content such as 
-[media attachments](~/dotnet/bot-builder-dotnet-add-media-attachments.md), [buttons, and cards](~/dotnet/bot-builder-dotnet-add-rich-card-attachments.md) or 
+Some messages may simply consist of plain text, while others may contain richer content such as [suggested actions](~/dotnet/bot-builder-dotnet-add-suggested-actions.md), [media attachments](~/dotnet/bot-builder-dotnet-add-media-attachments.md), [rich cards](~/dotnet/bot-builder-dotnet-add-rich-card-attachments.md), and 
 [channel-specific data](~/dotnet/bot-builder-dotnet-channeldata.md). 
 For information about commonly-used message properties, see [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md).
 

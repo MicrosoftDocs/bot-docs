@@ -27,9 +27,9 @@ The Connector also normalizes the messages that the bot sends to channels so tha
 
 ## Messages
 
-Messages can consist of text strings, attachments, and rich cards. You use the [session.send][SessionSend] method to send messages in response to a message from the user. Your bot may call **send** as many times as it likes in response to a message from the user. For an example that demonstrates this, see [Respond to user messages][RespondMessages].
+Messages can consist of text strings, attachments, rich cards, and suggested actions. You use the [session.send][SessionSend] method to send messages in response to a message from the user. Your bot may call **send** as many times as it likes in response to a message from the user. For an example that demonstrates this, see [Respond to user messages][RespondMessages].
 
-For an example that demonstrates how to send a rich graphical card containing interactive buttons that the user clicks to initiate an action, see [Send a rich card](~/nodejs/bot-builder-nodejs-send-rich-cards.md). For an example that demonstrates how to send and receive attachments, see [Send attachments](~/nodejs/bot-builder-nodejs-send-receive-attachments.md).
+For an example that demonstrates how to send a rich graphical card containing interactive buttons that the user clicks to initiate an action, see [Send a rich card](~/nodejs/bot-builder-nodejs-send-rich-cards.md). For an example that demonstrates how to send and receive attachments, see [Send attachments](~/nodejs/bot-builder-nodejs-send-receive-attachments.md). For an example that demonstrates how to send suggested actions, see [Send suggested actions](~/nodejs/bot-builder-nodejs-send-suggested-actions.md).
 
 ## Dialogs
 Dialogs help you organize the conversational logic in your bot and are fundamental to [designing conversation flow](../bot-design-conversation-flow.md). For an introduction to dialogs, see [Manage conversation flow](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md).
@@ -79,6 +79,7 @@ The following task-focused articles demonstrate features of the Bot Builder SDK 
 * [Recognize user intent](~/nodejs/bot-builder-nodejs-recognize-intent.md)
 * [Send a rich card](~/nodejs/bot-builder-nodejs-send-rich-cards.md)
 * [Send attachments](~/nodejs/bot-builder-nodejs-send-receive-attachments.md)
+* [Send suggested actions](~/nodejs/bot-builder-nodejs-send-suggested-actions.md)
 * [Saving user data](~/nodejs/bot-builder-nodejs-save-user-data.md)
 * [How to send a typing indicator](~/nodejs/bot-builder-nodejs-send-typing-indicator.md)
 
@@ -102,6 +103,3 @@ The following task-focused articles demonstrate features of the Bot Builder SDK 
 
 [LUISRecognizer]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.luisrecognizer
 [LUISVideo]: https://vimeo.com/145499419
-
-
-
