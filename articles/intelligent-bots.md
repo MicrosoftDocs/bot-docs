@@ -1,4 +1,5 @@
 ---
+redirect_url: /bot-framework/cognitive-services-bot-intelligence-overview
 title: Artificial intelligence in bots | Microsoft Docs
 description: Learn how to add artificial intelligence to your bots with Microsoft Cognitive Services to make them more useful and engaging.
 author: RobStand
