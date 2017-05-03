@@ -1,7 +1,7 @@
 # Overview
 ## [About Bot Framework](overview-introduction-bot-framework.md)
 ## [How it works](overview-how-bot-framework-works.md)
-# Quickstart
+# Get started
 ## [Start building bots](bot-builder-overview-getstarted.md)
 ## [Create your first bot with .NET](~/dotnet/bot-builder-dotnet-quickstart.md)
 ## [Create your first bot with Node.js](~/nodejs/bot-builder-nodejs-quickstart.md)
@@ -10,7 +10,7 @@
 ## [Design](design/TOC.md)
 ## [Develop with .NET](~/dotnet/index.md)
 ### [Key concepts](~/dotnet/bot-builder-dotnet-concepts.md)
-### Activities
+### Messages and activities
 #### [Activities overview](~/dotnet/bot-builder-dotnet-activities.md)
 #### [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
 #### [Add media attachments to messages](~/dotnet/bot-builder-dotnet-add-media-attachments.md)
