@@ -52,6 +52,7 @@ The Bot Framework supports the following rich cards:
 
 | Card type | Description |
 |----|----|
+| Adaptive card | A card that can contain any combination of text, speech, images, buttons, and input fields.  |
 | Animation card | A card that can play animated GIFs or short videos. |
 | Audio card | A card that can play an audio file. |
 | Hero card | A card that typically contains a single large image, one or more buttons, and text. |

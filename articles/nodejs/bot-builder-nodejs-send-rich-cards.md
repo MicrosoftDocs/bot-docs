@@ -17,10 +17,11 @@ The SDK provides several message and card builder classes which can be used to c
 
 ## Types of rich cards 
 
-There are seven types of rich cards.
+There are eight types of rich cards.
 
 | Card type | Description |
 |------|------|
+| <a href="https://github.com/Microsoft/AdaptiveCards" target="_blank">AdaptiveCard</a> | A card that can contain any combination of text, speech, images, buttons, and input fields.  |
 | [AnimationCard][animationCard] | A card that can play animated GIFs or short videos. |
 | [AudioCard][audioCard] | A card that can play an audio file. |
 | [HeroCard][heroCard] | A card that typically contains a single large image, one or more buttons, and text. |
@@ -145,9 +146,24 @@ The Bot Framework implements a batching to try to prevent multiple messages from
 
 The message batching delay is configurable. To disable the SDK’s auto-batching logic, set the default delay to a large number and then manually call **sendBatch()** with a callback to invoke after the batch is delivered.
 
+## Send an Adaptive card
+
+The Adaptive Card can can contain any combination of text, speech, images, buttons, and input fields. 
+Adaptive Cards are created using the JSON format specified in <a href="https://github.com/Microsoft/AdaptiveCards" target="_blank">Adaptive Cards</a>, which gives you full control over card content and format. 
+
+To create an Adaptive Card using Node.js, leverage the information in the <a href="https://github.com/Microsoft/AdaptiveCards" target="_blank">Adaptive Cards</a> repository to understand Adaptive Card schema, explore Adaptive Card elements, and see JSON samples that can be used to create cards of varying composition and complexity. Additionally, you can use the <a href="https://microsoft.github.io/AdaptiveCards" target="_blank">Interactive Visualizer</a> to design Adaptive Card payloads and preview card output.
+
+This code example shows how to create a message that contains an Adaptive Card for a calendar reminder: 
+
+[!code-javascript[Add Adaptive Card attachment](~/includes/code/node-send-card-buttons.js#addAdaptiveCardAttachment)]
+
+The resulting card contains three blocks of text, an input field (choice list), and three buttons:
+
+![Adaptive Card calendar reminder](~/media/adaptive-card-reminder.png)
 
 ## Additional resources
 
+* <a href="https://github.com/Microsoft/AdaptiveCards" target="_blank">Adaptive Cards</a>
 * [AnimationCard][animationCard]
 * [AudioCard][audioCard]
 * [HeroCard][heroCard]

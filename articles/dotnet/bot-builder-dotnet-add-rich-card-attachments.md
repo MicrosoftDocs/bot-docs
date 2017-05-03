@@ -13,7 +13,7 @@ ms.reviewer:
 # Add rich card attachments to messages
 
 A message exchange between user and bot can contain one or more rich cards rendered as a list or carousel. 
-The `Attachments` property of the `Activity` object contains an array of `Attachment` objects that represent the rich cards and [media attachments](~/dotnet/bot-builder-dotnet-add-media-attachments.md) within the message. 
+The `Attachments` property of the `Activity` object contains an array of `Attachment` objects that represent the rich cards and media attachments within the message. 
 
 > [!NOTE]
 > For information about how to add media attachments to messages, see 
@@ -21,12 +21,11 @@ The `Attachments` property of the `Activity` object contains an array of `Attach
 
 ## Types of rich cards
 
-A rich card comprises a title, description, link, and images. 
-A message can contain multiple rich cards, displayed in either list format or carousel format.
-The Bot Framework currently supports seven types of rich cards: 
+The Bot Framework currently supports eight types of rich cards: 
 
 | Card type | Description |
 |----|----|
+| <a href="https://github.com/Microsoft/AdaptiveCards" target="_blank">AdaptiveCard</a> | A card that can contain any combination of text, speech, images, buttons, and input fields.  |
 | [AnimationCard][animationCard] | A card that can play animated GIFs or short videos. |
 | [AudioCard][audioCard] | A card that can play an audio file. |
 | [HeroCard][heroCard] | A card that typically contains a single large image, one or more buttons, and text. |
@@ -50,6 +49,12 @@ To process events within rich cards, define `CardAction` objects to specify what
 | Title | string | title of the button |
 | Image | string | image URL for the button |
 | Value | string | value needed to perform the specified type of action |
+
+> [!NOTE]
+> Buttons within Adaptive Cards are not created using `CardAction` objects, 
+> but instead using the schema that is defined by <a href="https://github.com/Microsoft/AdaptiveCards" target="_blank">Adaptive Cards</a>. 
+> See [Add an Adaptive Card to a message](#adaptive-card) for an example that shows how to 
+> add buttons to an Adaptive Card.
 
 This table lists the valid values for `CardAction.Type` and describes 
 the expected contents of `CardAction.Value` for each type:
@@ -100,8 +105,24 @@ This code example shows how to create a reply message that contains a Sign-in ca
 
 [!code-csharp[Add SignInCard attachment](~/includes/code/dotnet-add-attachments.cs#addSignInCardAttachment)]
 
+##<a id="adaptive-card"></a> Add an Adaptive card to a message
+
+The Adaptive Card can can contain any combination of text, speech, images, buttons, and input fields. 
+Adaptive Cards are created using the JSON format specified in <a href="https://github.com/Microsoft/AdaptiveCards" target="_blank">Adaptive Cards</a>, which gives you full control over card content and format. 
+
+To create an Adaptive Card using .NET, install the `AdaptiveCards` NuGet package. Then, leverage the information in the <a href="https://github.com/Microsoft/AdaptiveCards" target="_blank">Adaptive Cards</a> repository to understand Adaptive Card schema, explore Adaptive Card elements, and see JSON samples that can be used to create cards of varying composition and complexity. Additionally, you can use the <a href="https://microsoft.github.io/AdaptiveCards" target="_blank">Interactive Visualizer</a> to design Adaptive Card payloads and preview card output.
+
+This code example shows how to create a message that contains an Adaptive Card for a calendar reminder: 
+
+[!code-csharp[Add Adaptive Card attachment](~/includes/code/dotnet-add-attachments.cs#addAdaptiveCardAttachment)]
+
+The resulting card contains three blocks of text, an input field (choice list), and three buttons:
+
+![Adaptive Card calendar reminder](~/media/adaptive-card-reminder.png)
+
 ## Additional resources
 
+- <a href="https://github.com/Microsoft/AdaptiveCards" target="_blank">Adaptive Cards</a>
 - [Activities overview](~/dotnet/bot-builder-dotnet-activities.md)
 - [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
 - [Add media attachments to messages](~/dotnet/bot-builder-dotnet-add-media-attachments.md)

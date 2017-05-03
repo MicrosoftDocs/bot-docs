@@ -14,7 +14,7 @@ ms.reviewer:
 
 A message exchange between user and bot can contain media attachments (e.g., image, video, audio, file). 
 The `Attachments` property of the `Activity` object contains an array of `Attachment` objects 
-that represent the media attachments and [rich cards](~/dotnet/bot-builder-dotnet-add-rich-card-attachments.md) attached to the message. 
+that represent the media attachments and rich cards within to the message. 
 
 > [!NOTE]
 > For information about how to add rich cards to messages, see 
