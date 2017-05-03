@@ -8,6 +8,7 @@
         ],
         "exclude": [
           "api/overwrites/**",
+          "**/toc.yml",
           "**/obj/**",
           "**/includes/**",
           "README.md",
@@ -15,6 +16,13 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ]
+      },
+      {
+        "files": [
+          "**/toc.yml"
+        ],
+        "src": ".",
+        "dest": "bot_dotnet_toc"
       }
     ],
     "resource": [
