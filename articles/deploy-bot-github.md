@@ -1,35 +1,37 @@
 ---
-title: Deploy a bot to Azure from Github | Microsoft Docs
-description: Learn how to deploy a bot to Azure from Github and enable continuous integration.
+title: Deploy a bot to Azure from GitHub | Microsoft Docs
+description: Learn how to deploy a bot to Azure from GitHub and enable continuous integration.
 author: RobStand
 ms.author: rstand
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date:
-ms.reviewer: rstand
-
+ms.reviewer: 
 ---
-# Deploy a bot to Azure from Github
+
+# Deploy a bot to Azure from GitHub
 
 Azure allows continuous integration of your Git repository with your Azure deployment.
 With continuous integration, when you change and build your bot's code, the bot will automatically deploy to Azure.
-This tutorial shows you how to deploy a bot to Azure via continuous integration from Github.
+This tutorial shows you how to deploy a bot to Azure via continuous integration from GitHub.
+
+> [!NOTE]
+> If you created a bot with the Azure Bot Service, your bot deployment was part of the Azure Bot Service bot 
+> creation process.
 
 ## Prerequisites
-- A <a href="http://github.com/" target="_blank">GitHub account</a>
-- Git
-- An Azure account
-- Etc.
+
+You must have a Microsoft Azure subscription before you can deploy a bot to Azure. If you do not already have a subscription, you can register for a <a href="https://azure.microsoft.com/en-us/free/" target="_blank">free trial</a>. Additionally, the process described by this article requires <a href="https://git-scm.com/downloads" target="_blank">Git</a> and a <a href="http://GitHub.com/" target="_blank">GitHub</a> account.
 
 [!include[Pre-deployment considerations](~/includes/snippet-deploy-considerations.md)]
 
 ## Step 1: Get a GitHub repository
 
-Start by <a href="https://help.github.com/articles/fork-a-repo/" target="_blank">forking</a> the GitHub repository that contains the code for the bot that you want to deploy. 
+Start by <a href="https://help.GitHub.com/articles/fork-a-repo/" target="_blank">forking</a> the GitHub repository that contains the code for the bot that you want to deploy. 
 
 > [!NOTE]
-> This tutorial uses the <a href="https://github.com/fuselabs/echobot" target="_blank">echobot</a> GitHub repository, which contains the Node.js code for creating a simple bot. Be sure to replace "*echobotsample*" with your bot ID in all settings and URLs that are shown in the examples.
+> This tutorial uses the <a href="https://GitHub.com/fuselabs/echobot" target="_blank">echobot</a> GitHub repository, which contains the Node.js code for creating a simple bot. Be sure to replace "*echobotsample*" with your bot ID in all settings and URLs that are shown in the examples.
 
 ## Step 2: Create an Azure web app
 
@@ -42,7 +44,7 @@ Next, log in to the <a href="http://portal.azure.com/" target="_blank">Azure Por
 Specify GitHub as the **Deployment Source** for your web app.
 When you are asked to authorize Azure access to your GitHub repo, choose the branch from which to deploy.
 
-![Set up continuous deployment to Azure from your Github repo](~/media/azure-deployment.png)
+![Set up continuous deployment to Azure from your GitHub repo](~/media/azure-deployment.png)
 
 The deployment process may take a minute or two to complete.
 You can verify that the deployment has completed by visiting the web app in a browser.
