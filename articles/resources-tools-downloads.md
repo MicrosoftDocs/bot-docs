@@ -23,7 +23,7 @@ To install the SDK within a Visual Studio project, complete the following steps:
 2. On the **Browse** tab, type "Microsoft.Bot.Builder" into the search box.
 3. Select **Microsoft.Bot.Builder** in the list of results, click **Install**, and accept the changes.
 
-You can also [download the Bot Builder SDK for .NET source code from Github](https://github.com/Microsoft/BotBuilder/tree/master/CSharp).
+You can also [download the Bot Builder SDK for .NET source code from GitHub](https://github.com/Microsoft/BotBuilder/tree/master/CSharp).
 
 ## Bot Builder SDK for Node.js
 
@@ -41,7 +41,7 @@ npm install --save botbuilder
 npm install --save restify
 ```
 
-You can also [download the Bot Builder SDK for Node.js source code from Github](https://github.com/Microsoft/BotBuilder/tree/master/Node).
+You can also [download the Bot Builder SDK for Node.js source code from GitHub](https://github.com/Microsoft/BotBuilder/tree/master/Node).
 
 ## Bot Framework tools
 

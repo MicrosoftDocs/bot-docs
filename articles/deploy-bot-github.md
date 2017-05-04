@@ -1,6 +1,6 @@
 ---
-title: Deploy a bot to Azure from Github | Microsoft Docs
-description: Learn how to deploy a bot to Azure from Github and enable continuous integration.
+title: Deploy a bot to Azure from GitHub | Microsoft Docs
+description: Learn how to deploy a bot to Azure from GitHub and enable continuous integration.
 author: RobStand
 ms.author: rstand
 manager: rstand
@@ -10,11 +10,11 @@ ms.date:
 ms.reviewer: 
 ---
 
-# Deploy a bot to Azure from Github
+# Deploy a bot to Azure from GitHub
 
 Azure allows continuous integration of your Git repository with your Azure deployment.
 With continuous integration, when you change and build your bot's code, the bot will automatically deploy to Azure.
-This tutorial shows you how to deploy a bot to Azure via continuous integration from Github.
+This tutorial shows you how to deploy a bot to Azure via continuous integration from GitHub.
 
 > [!NOTE]
 > If you created a bot with the Azure Bot Service, your bot deployment was part of the Azure Bot Service bot 
@@ -44,7 +44,7 @@ Next, log in to the <a href="http://portal.azure.com/" target="_blank">Azure Por
 Specify GitHub as the **Deployment Source** for your web app.
 When you are asked to authorize Azure access to your GitHub repo, choose the branch from which to deploy.
 
-![Set up continuous deployment to Azure from your Github repo](~/media/azure-deployment.png)
+![Set up continuous deployment to Azure from your GitHub repo](~/media/azure-deployment.png)
 
 The deployment process may take a minute or two to complete.
 You can verify that the deployment has completed by visiting the web app in a browser.
