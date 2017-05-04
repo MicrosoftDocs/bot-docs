@@ -8,7 +8,7 @@ ms.prod: bot-framework
 ms.date: 04/12/2017
 ms.reviewer:
 ---
-# Build a Cortana skill using the Bot Builder SDK for Node.js
+# Build a speech-enabled bot with Cortana skills
 
 The Bot Builder SDK enables you to a build speech-enabled bot by connecting it to the Cortana channel as a Cortana skill. 
 Cortana skills let you provide functionality through Cortana in response to spoken input from a user.
