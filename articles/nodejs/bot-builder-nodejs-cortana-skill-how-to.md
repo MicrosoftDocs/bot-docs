@@ -404,7 +404,7 @@ bot.dialog('PlayGameDialog', function (session, args) {
 ```
 
 ## Next steps
-If you have a bot running locally or deployed in the cloud, you can invoke it from Cortana. See [Test a Cortana skill](../cortana-skill-invoke.md) for the steps required to try out your Cortana Skill.
+If you have a bot running locally or deployed in the cloud, you can invoke it from Cortana. See [Test a Cortana skill](../debug-bots-cortana-skill-invoke.md) for the steps required to try out your Cortana Skill.
 
 
 ## Additional resources

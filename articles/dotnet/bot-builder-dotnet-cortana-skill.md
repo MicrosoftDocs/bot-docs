@@ -312,7 +312,7 @@ The `PlayGameDialog` renders the results both by displaying them in a `HeroCard`
 ```
 ## Next steps
 
-If your bot is running locally or deployed in the cloud, you can invoke it from Cortana. See [Test a Cortana skill](../cortana-skill-invoke.md) for the steps required to try out your Cortana skill.
+If your bot is running locally or deployed in the cloud, you can invoke it from Cortana. See [Test a Cortana skill](../debug-bots-cortana-skill-invoke.md) for the steps required to try out your Cortana skill.
 
 
 ## Additional resources
