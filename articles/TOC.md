@@ -75,7 +75,7 @@
 ### [Web search](./cognitive-services-add-bot-search.md)
 ### [Computer vision](./cognitive-services-add-bot-vision.md)
 ### [Location control](./cognitive-services-add-bot-location-control.md)
-## [Debug](debug/TOC.md)
+## [Test and debug](debug/TOC.md)
 ## [Deploy](~/publish-bot-overview.md)
 ### [Deploy from local git repo](deploy-bot-local-git.md)
 ### [Deploy from Github](deploy-bot-github.md)
