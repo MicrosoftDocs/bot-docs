@@ -1,4 +1,5 @@
 ---
+redirect_url: /bot-framework/cognitive-services-bot-intelligence-overview#image-and-video-understanding
 title: Add image detection to a bot | Microsoft Docs
 description: Enable your bot to identify and process information derived from images through various APIs available in the Bot Framework and Cognitive Services.
 author: RobStand

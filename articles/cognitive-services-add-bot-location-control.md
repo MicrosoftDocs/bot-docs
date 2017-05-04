@@ -1,4 +1,5 @@
 ---
+redirect_url: /bot-framework/cognitive-services-bot-intelligence-overview#location-control
 title: Add location control to a bot | Microsoft Docs
 description: Enable your bot to determine a user's location with the Bot Framework and Cognitive Services.
 author: RobStand

@@ -1,4 +1,5 @@
 ---
+redirect_url: /bot-framework/cognitive-services-bot-intelligence-overview#speech-recognition-and-conversion
 title: Add speech recognition to a bot | Microsoft Docs
 description: Enable your bot to listen to and process spoken input, convert speech to text, and even identify user voiceprints with the Bot Framework and Cognitive Services.
 author: RobStand

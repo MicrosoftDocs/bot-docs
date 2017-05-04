@@ -1,4 +1,5 @@
 ---
+redirect_url: /bot-framework/cognitive-services-bot-intelligence-overview#knowledge-extraction
 title: Add knowledge extraction to a bot | Microsoft Docs
 description: Enable your bot to understand the context of a conversation and respond appropriately with the Bot Framework and Cognitive Services.
 author: RobStand

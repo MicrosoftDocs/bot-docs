@@ -1,4 +1,5 @@
 ---
+redirect_url: /bot-framework/cognitive-services-bot-intelligence-overview#language-understanding
 title: Add language understanding to a bot | Microsoft Docs
 description: Enable your bot to understand natural language and recognize a user's intent using Cognitive Services.
 author: RobStand

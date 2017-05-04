@@ -1,4 +1,5 @@
 ---
+redirect_url: /bot-framework/cognitive-services-bot-intelligence-overview#web-search
 title: Add web search to a bot | Microsoft Docs
 description: Add search capabilities to your bot with the Bot Framework and Cognitive Services.
 author: RobStand

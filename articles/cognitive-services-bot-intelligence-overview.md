@@ -32,7 +32,7 @@ Cognitive Services provides five APIs for language understanding:
 
 - The <a href="https://www.microsoft.com/cognitive-services/en-us/web-language-model-api" target="_blank">Web Language Model (WebLM) API</a> can be used to automate a variety of natural language processing tasks, such as word frequency or next-word prediction, using advanced language modeling algorithms.
 
-Learn [how to add language understanding](cognitive-services-add-bot-language.md) to your bot.
+Learn more about [language understanding][language] with Microsoft Cognitive Services.
 
 ## Knowledge extraction
 
@@ -48,7 +48,7 @@ Cognitive Services provides five knowledge APIs that enable you to identify name
 
 - The  <a href="https://qnamaker.ai" target="_blank">QnA Maker</a> is a free, easy-to-use, REST API and web-based service that trains AI to respond to users’ questions in a natural, conversational way. With optimized machine learning logic and the ability to integrate industry-leading language processing, QnA Maker distills semi-structured data like question and answer pairs into distinct, helpful answers.
 
-Learn [how to add knowledge extraction](cognitive-services-add-bot-knowledge.md) to your bot.
+Learn more about [knowledge extraction][knowledge] with Microsoft Cognitive Services.
 
 ## Speech recognition and conversion
 
@@ -62,9 +62,9 @@ There are three Speech APIs available in Cognitive Services to process or synthe
 - The <a href="https://www.microsoft.com/cognitive-services/en-us/custom-recognition-intelligent-service-cris" target="_blank">Custom Recognition Intelligent Service (CRIS)</a> allows you to create custom speech recognition models to tailor the speech-to-text conversion to an application's vocabulary or user's speaking style.
 - The <a href="https://www.microsoft.com/cognitive-services/en-us/speaker-recognition-api" target="_blank">Speaker Recognition API</a> enables speaker identification and verification through voice.
 
-Learn [how to add speech recognition and conversion](cognitive-services-add-bot-speech.md) to your bot.
+Learn more about [speech recognition and conversion][speech] with Microsoft Cognitive Services.
 
-## Search
+## Web search
 
 The Bing Search APIs enable you to add intelligent web search capabilities to your bots. With a few lines of code, you can access billions of webpages, images, videos, news, and other result types. You can configure the APIs to return results by geographical location, market, or language for better relevance. You can further customize your search using the supported search parameters, such as Safesearch to filter out adult content, and Freshness to return results according to a specific date.
 
@@ -80,7 +80,7 @@ There are five Bing Search APIs available in Cognitive Services.
 
 - The  <a href="https://www.microsoft.com/cognitive-services/en-us/bing-autosuggest-api" target="_blank">Autosuggest API</a> offers instant query completion suggestions to complete your search query faster and with less typing. 
 
-Learn [how to add search](cognitive-services-add-bot-search.md) to your bot. 
+Learn more about [web search][search] with Microsoft Cognitive Services.
 
 ## Image and video understanding
 
@@ -99,7 +99,7 @@ Cognitive Services provide four APIs you can use to process images or videos:
 
 - The <a href="https://www.microsoft.com/cognitive-services/en-us/video-api" target="_blank">Video API</a> analyzes and processes video to stabilize video output, detects motion, tracks faces, and can generate a motion thumbnail summary of the video.
 
-Learn [how to add image and video understanding](cognitive-services-add-bot-vision.md) to your bot.    
+Learn more about [image and video understanding][vision] with Microsoft Cognitive Services.
 
 ## Location control
 
@@ -115,10 +115,16 @@ The Bing location control makes this process easy by abstracting away the tediou
 - Support for FB Messenger's location picker GUI dialog
 - Open-source code (C# and Node.js) with customizable dialog strings
 
-Learn [how to add the location control](cognitive-services-add-bot-location-control.md) to your bot.
+Learn more about the [location control][location] with Microsoft Cognitive Services.
 
 ## Additional resources
 
 You can find comprehensive documentation of each product and their corresponding API references in the <a href="https://docs.microsoft.com/azure/cognitive-services" target="_blank">Cognitive Services documentation</a>.
 
 
+[language]: https://docs.microsoft.com/en-us/azure/cognitive-services/luis/home
+[search]: https://docs.microsoft.com/en-us/azure/cognitive-services/bing-web-search/overview
+[vision]: https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/home
+[knowledge]: https://docs.microsoft.com/en-us/azure/cognitive-services/kes/overview
+[speech]: https://docs.microsoft.com/en-us/azure/cognitive-services/speech/home
+[location]: https://docs.microsoft.com/en-us/azure/cognitive-services/

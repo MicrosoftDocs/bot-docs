@@ -221,7 +221,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/bot-framework/cognitive-services-add-bot-language">
+                            <a href="/bot-framework/cognitive-services-bot-intelligence-overview#language-understanding">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -240,7 +240,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/bot-framework/cognitive-services-add-bot-vision">
+                            <a href="/bot-framework/cognitive-services-bot-intelligence-overview#image-and-video-understanding">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -259,7 +259,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/bot-framework/cognitive-services-add-bot-speech">
+                            <a href="/bot-framework/cognitive-services-bot-intelligence-overview#speech-recognition-and-conversion">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -278,7 +278,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/bot-framework/cognitive-services-add-bot-knowledge">
+                            <a href="/bot-framework/cognitive-services-bot-intelligence-overview#knowledge-extraction">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -297,7 +297,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/bot-framework/cognitive-services-add-bot-search">
+                            <a href="/bot-framework/cognitive-services-bot-intelligence-overview#web-search">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -316,7 +316,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/bot-framework/cognitive-services-add-bot-location-control">
+                            <a href="/bot-framework/cognitive-services-bot-intelligence-overview#location-control">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
