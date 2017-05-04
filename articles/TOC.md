@@ -55,7 +55,7 @@
 ### [Recognize user intent](~/nodejs/bot-builder-nodejs-recognize-intent.md)
 ### [Handle user and conversation events](~/nodejs/bot-builder-nodejs-handle-conversation-events.md)
 ### [Support localization](~/nodejs/bot-builder-nodejs-localization.md)
-### [Build a Cortana skill](~/nodejs/bot-builder-nodejs-cortana-skill-how-to.md)
+### [Build a Cortana skill](~/nodejs/bot-builder-nodejs-cortana-skill.md)
 ### [Intercept messages](~/nodejs/bot-builder-nodejs-intercept-messages.md)
 ### [Use backchannel mechanism](~/nodejs/bot-builder-nodejs-backchannel.md)
 ### [Conduct audio calls](~/nodejs/bot-builder-nodejs-conduct-audio-calls.md)

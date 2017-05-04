@@ -1,26 +1,22 @@
 ---
-title: Build a Cortana skill using Node.js | Microsoft Docs
-description: Learn core concepts for building a Cortana skill in the Bot Builder SDK for Node.js.
-keywords: Bot Framework, Cortana skill, speech, Node.js, Bot Builder, SDK, key concepts, core concepts
+title: Build a speech-enabled bot with Cortana skills | Microsoft Docs
+description: Learn how to build a speech-enabled bot with Cortana skills and the Bot Builder SDK for Node.js.
 author: DeniseMak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
 ms.date: 04/12/2017
 ms.reviewer:
-#ROBOTS: Index
 ---
-
 # Build a Cortana skill using the Bot Builder SDK for Node.js
- 
 
-The Bot Builder SDK allows you to a build speech-enabled bot, which can be connected to the Cortana channel as a Cortana skill. 
+The Bot Builder SDK enables you to a build speech-enabled bot by connecting it to the Cortana channel as a Cortana skill. 
 Cortana skills let you provide functionality through Cortana in response to spoken input from a user.
 
-For more information on what a skill is, and what they can do, see [The Cortana Skills Kit][CortanaGetStarted].
+> [!TIP]
+> For more information on what a skill is, and what they can do, see [The Cortana Skills Kit][CortanaGetStarted].
 
-Creating a Cortana skill using Bot Framework requires very little Cortana-specific knowledge and primarily consists of building a bot. One of the likely key differences from other bots that you may have created in the past is that Cortana has both a visual and an audio component. For the visual component, Cortana provides an area of the canvas for rendering content such as cards. For the audio component, you provide text or SSML in your bot's messages, which Cortana reads to the user, giving your bot a voice. 
+Creating a Cortana skill using Bot Framework requires very little Cortana-specific knowledge and primarily consists of building a bot. One of the key differences from other bots that you may have created is that Cortana has both visual and audio components. For the visual component, Cortana provides an area of the canvas for rendering content such as cards. For the audio component, you provide text or SSML in your bot's messages, which Cortana reads to the user, giving your bot a voice. 
 
 > [!NOTE]
 > Cortana is available on many different devices. Some have a screen while others, like a standalone speaker, might not. You should make sure that your bot is capable of handling both scenarios. See [Cortana-specific entities][CortanaSpecificEntities] to learn how to check device information.
@@ -31,7 +27,7 @@ Spoken messages from your bot are represented as Speech Synthesis Markup Languag
 
 ### session.say
 
-You bot uses the **session.say** method to speak to the user, in place of **session.send**. It includes optional parameters for sending SSML output, as well as attachments like cards. 
+Your bot uses the **session.say** method to speak to the user, in place of **session.send**. It includes optional parameters for sending SSML output, as well as attachments like cards. 
 
 The method has this format:
 
@@ -147,7 +143,7 @@ In addition to spoken responses, Cortana can also display card attachments. Cort
 
 See [Card design best practices][CardDesign] to see what these cards look like inside Cortana. For an example of how to add a rich card to a bot, see [Send rich cards](bot-builder-nodejs-send-rich-cards.md). 
 
-The following code demonstrates how to add the **speak** and **inputHint** properties to a message containing a HeroCard.
+The following code demonstrates how to add the **speak** and **inputHint** properties to a message containing a Hero card.
 
 ```javascript 
 
