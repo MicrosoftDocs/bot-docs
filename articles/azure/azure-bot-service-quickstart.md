@@ -9,8 +9,11 @@ ms.prod: bot-framework
 ms.date: 
 ms.reviewer: 
 ---
-
 # Create a bot with the Azure Bot Service
+> [!div class="op_single_selector"]
+> - [.NET](../dotnet/bot-builder-dotnet-quickstart.md)
+> - [Node.js](../nodejs/bot-builder-nodejs-quickstart.md)
+> - [Azure Bot Service](../azure/azure-bot-service-quickstart.md)
 
 The Azure Bot Service accelerates the process of developing a bot 
 by providing an integrated environment that is purpose-built for bot development. 
