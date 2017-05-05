@@ -12,8 +12,8 @@ ms.reviewer:
 #ROBOTS: Index
 ---
 > [!div class="op_single_selector"]
-> - [.NET](~/dotnet/bot-builder-dotnet-cortana-skill)
-> - [Node.js](~/nodejs/bot-builder-nodejs-cortana-skill)
+> - [.NET](../dotnet/bot-builder-dotnet-cortana-skill.md)
+> - [Node.js](../nodejs/bot-builder-nodejs-cortana-skill.md)
 
 # Build a Cortana skill using the Bot Builder SDK for .NET
 

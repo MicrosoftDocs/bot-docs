@@ -9,8 +9,8 @@ ms.date: 04/12/2017
 ms.reviewer:
 ---
 > [!div class="op_single_selector"]
-> - [.NET](~/dotnet/bot-builder-dotnet-cortana-skill)
-> - [Node.js](~/nodejs/bot-builder-nodejs-cortana-skill)
+> - [.NET](../dotnet/bot-builder-dotnet-cortana-skill/)
+> - [Node.js](../nodejs/bot-builder-nodejs-cortana-skill/)
 
 # Build a speech-enabled bot with Cortana skills
 
