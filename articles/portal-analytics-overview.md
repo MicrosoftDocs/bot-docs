@@ -1,6 +1,6 @@
 ---
-title: Application Analytics | Microsoft Docs
-description: Learn how to enable data collection and analysis and use it to improve a bot.
+title: Bot analytics | Microsoft Docs
+description: Learn how to take advantage of data collection and analysis to improve bots with the Bot Framework.
 author: JaymeMPerlman
 ms.author: v-jaype
 manager: rstand
@@ -8,9 +8,8 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date:
 ms.reviewer:
-ROBOTS: Index, Follow
 ---
-# Analytics
+# Bot analytics
 Analytics is an extension of [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-analytics). Application Insights provides **service-level** and instrumentation data like traffic, latency, and integrations. Analytics provides **conversation-level** reporting on user, message, and channel data. 
 
 Analytics are not available until Application Insights has been enabled and configured. Application Insights will begin collecting data as soon as it is enabled. For example, if Application Insights was enabled a week ago for a six-month-old bot, it will have collected one week of data.
@@ -26,11 +25,14 @@ To access Application Insights, open the bot in the [developer portal](https://m
 
 ![Connect Insights](~/media/analytics-enable.png)
 
-**AppInsights Instrumentation Key**: To find this value, open Application Insights and navigate to **Configure** > **Properties**.
+### AppInsights Instrumentation Key
+To find this value, open Application Insights and navigate to **Configure** > **Properties**.
 
-**AppInsights API key**: Provide an Azure App Insights API key. Learn how to [generate a new API key](https://dev.applicationinsights.io/documentation/Authorization/API-key-and-App-ID). Only **Read** permission is required.
+### AppInsights API key 
+Provide an Azure App Insights API key. Learn how to [generate a new API key](https://dev.applicationinsights.io/documentation/Authorization/API-key-and-App-ID). Only **Read** permission is required.
 
-**AppInsights Application ID**: To find this value, open Application Insights and navigate to **Configure** > **API Access**.
+### AppInsights Application ID
+To find this value, open Application Insights and navigate to **Configure** > **API Access**.
 
 ## View Analytics 
 To access Analytics, open the bot in the developer portal and click **Analytics**.
@@ -83,5 +85,5 @@ The Message graph tracks how many messages were sent and received using which ch
 * The line graph indicates how many messages were sent and received over the specified time frame.
 * The legend for the line graph indicates which line color represents each channel and the total number of messages sent and received on that channel during the specified time period.
 
-
-
+## Additional resources
+* [Application Insights keys](resources-app-insights-keys.md)
