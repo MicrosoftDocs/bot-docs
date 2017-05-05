@@ -1,0 +1,920 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.Extensions
+  commentId: T:Microsoft.Bot.Connector.Extensions
+  id: Extensions
+  children:
+  - Microsoft.Bot.Connector.Extensions.CreateReplyMessage(Microsoft.Bot.Connector.Message,System.String,System.String)
+  - Microsoft.Bot.Connector.Extensions.GetBotConversationData``1(Microsoft.Bot.Connector.Message,System.String)
+  - Microsoft.Bot.Connector.Extensions.GetBotPerUserInConversationData``1(Microsoft.Bot.Connector.Message,System.String)
+  - Microsoft.Bot.Connector.Extensions.GetBotUserData``1(Microsoft.Bot.Connector.Message,System.String)
+  - Microsoft.Bot.Connector.Extensions.GetChannelData``1(Microsoft.Bot.Connector.Message)
+  - Microsoft.Bot.Connector.Extensions.GetProperty``1(Microsoft.Bot.Connector.BotData,System.String)
+  - Microsoft.Bot.Connector.Extensions.HasContent(Microsoft.Bot.Connector.Message)
+  - Microsoft.Bot.Connector.Extensions.SetBotConversationData(Microsoft.Bot.Connector.Message,System.String,System.Object)
+  - Microsoft.Bot.Connector.Extensions.SetBotPerUserInConversationData(Microsoft.Bot.Connector.Message,System.String,System.Object)
+  - Microsoft.Bot.Connector.Extensions.SetBotUserData(Microsoft.Bot.Connector.Message,System.String,System.Object)
+  - Microsoft.Bot.Connector.Extensions.SetProperty(Microsoft.Bot.Connector.BotData,System.String,System.Object)
+  - Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.AnimationCard)
+  - Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.AudioCard)
+  - Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.HeroCard)
+  - Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.ReceiptCard)
+  - Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.SigninCard)
+  - Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.ThumbnailCard)
+  - Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.VideoCard)
+  langs:
+  - csharp
+  name: Extensions
+  nameWithType: Extensions
+  fullName: Microsoft.Bot.Connector.Extensions
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public static class Extensions
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  - botconnector-1.1.0
+  monikers:
+  - botbuilder-3.5.5
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.CreateReplyMessage(Microsoft.Bot.Connector.Message,System.String,System.String)
+  commentId: M:Microsoft.Bot.Connector.Extensions.CreateReplyMessage(Microsoft.Bot.Connector.Message,System.String,System.String)
+  id: CreateReplyMessage(Microsoft.Bot.Connector.Message,System.String,System.String)
+  parent: Microsoft.Bot.Connector.Extensions
+  langs:
+  - csharp
+  name: CreateReplyMessage(Message, String, String)
+  nameWithType: Extensions.CreateReplyMessage(Message, String, String)
+  fullName: Extensions.CreateReplyMessage(Message, String, String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public static Microsoft.Bot.Connector.Message CreateReplyMessage (this Microsoft.Bot.Connector.Message sourceMessage, string text = null, string language = null);
+    parameters:
+    - id: sourceMessage
+      type: Microsoft.Bot.Connector.Message
+      description: To be added.
+    - id: text
+      type: System.String
+      description: To be added.
+    - id: language
+      type: System.String
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Connector.Message
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Extensions.CreateReplyMessage*
+  exceptions: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.GetBotConversationData``1(Microsoft.Bot.Connector.Message,System.String)
+  commentId: M:Microsoft.Bot.Connector.Extensions.GetBotConversationData``1(Microsoft.Bot.Connector.Message,System.String)
+  id: GetBotConversationData``1(Microsoft.Bot.Connector.Message,System.String)
+  parent: Microsoft.Bot.Connector.Extensions
+  langs:
+  - csharp
+  name: GetBotConversationData<TypeT>(Message, String)
+  nameWithType: Extensions.GetBotConversationData<TypeT>(Message, String)
+  fullName: Extensions.GetBotConversationData<TypeT>(Message, String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public static TypeT GetBotConversationData<TypeT> (this Microsoft.Bot.Connector.Message message, string property);
+    parameters:
+    - id: message
+      type: Microsoft.Bot.Connector.Message
+      description: To be added.
+    - id: property
+      type: System.String
+      description: To be added.
+    typeParameters:
+    - id: TypeT
+      description: To be added.
+    return:
+      type: TypeT
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Extensions.GetBotConversationData``1*
+  exceptions: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.GetBotPerUserInConversationData``1(Microsoft.Bot.Connector.Message,System.String)
+  commentId: M:Microsoft.Bot.Connector.Extensions.GetBotPerUserInConversationData``1(Microsoft.Bot.Connector.Message,System.String)
+  id: GetBotPerUserInConversationData``1(Microsoft.Bot.Connector.Message,System.String)
+  parent: Microsoft.Bot.Connector.Extensions
+  langs:
+  - csharp
+  name: GetBotPerUserInConversationData<TypeT>(Message, String)
+  nameWithType: Extensions.GetBotPerUserInConversationData<TypeT>(Message, String)
+  fullName: Extensions.GetBotPerUserInConversationData<TypeT>(Message, String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public static TypeT GetBotPerUserInConversationData<TypeT> (this Microsoft.Bot.Connector.Message message, string property);
+    parameters:
+    - id: message
+      type: Microsoft.Bot.Connector.Message
+      description: To be added.
+    - id: property
+      type: System.String
+      description: To be added.
+    typeParameters:
+    - id: TypeT
+      description: To be added.
+    return:
+      type: TypeT
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Extensions.GetBotPerUserInConversationData``1*
+  exceptions: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.GetBotUserData``1(Microsoft.Bot.Connector.Message,System.String)
+  commentId: M:Microsoft.Bot.Connector.Extensions.GetBotUserData``1(Microsoft.Bot.Connector.Message,System.String)
+  id: GetBotUserData``1(Microsoft.Bot.Connector.Message,System.String)
+  parent: Microsoft.Bot.Connector.Extensions
+  langs:
+  - csharp
+  name: GetBotUserData<TypeT>(Message, String)
+  nameWithType: Extensions.GetBotUserData<TypeT>(Message, String)
+  fullName: Extensions.GetBotUserData<TypeT>(Message, String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public static TypeT GetBotUserData<TypeT> (this Microsoft.Bot.Connector.Message message, string property);
+    parameters:
+    - id: message
+      type: Microsoft.Bot.Connector.Message
+      description: To be added.
+    - id: property
+      type: System.String
+      description: To be added.
+    typeParameters:
+    - id: TypeT
+      description: To be added.
+    return:
+      type: TypeT
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Extensions.GetBotUserData``1*
+  exceptions: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.GetChannelData``1(Microsoft.Bot.Connector.Message)
+  commentId: M:Microsoft.Bot.Connector.Extensions.GetChannelData``1(Microsoft.Bot.Connector.Message)
+  id: GetChannelData``1(Microsoft.Bot.Connector.Message)
+  parent: Microsoft.Bot.Connector.Extensions
+  langs:
+  - csharp
+  name: GetChannelData<TypeT>(Message)
+  nameWithType: Extensions.GetChannelData<TypeT>(Message)
+  fullName: Extensions.GetChannelData<TypeT>(Message)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public static TypeT GetChannelData<TypeT> (this Microsoft.Bot.Connector.Message message);
+    parameters:
+    - id: message
+      type: Microsoft.Bot.Connector.Message
+      description: To be added.
+    typeParameters:
+    - id: TypeT
+      description: To be added.
+    return:
+      type: TypeT
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Extensions.GetChannelData``1*
+  exceptions: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.GetProperty``1(Microsoft.Bot.Connector.BotData,System.String)
+  commentId: M:Microsoft.Bot.Connector.Extensions.GetProperty``1(Microsoft.Bot.Connector.BotData,System.String)
+  id: GetProperty``1(Microsoft.Bot.Connector.BotData,System.String)
+  parent: Microsoft.Bot.Connector.Extensions
+  langs:
+  - csharp
+  name: GetProperty<TypeT>(BotData, String)
+  nameWithType: Extensions.GetProperty<TypeT>(BotData, String)
+  fullName: Extensions.GetProperty<TypeT>(BotData, String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public static TypeT GetProperty<TypeT> (this Microsoft.Bot.Connector.BotData botData, string property);
+    parameters:
+    - id: botData
+      type: Microsoft.Bot.Connector.BotData
+      description: To be added.
+    - id: property
+      type: System.String
+      description: To be added.
+    typeParameters:
+    - id: TypeT
+      description: To be added.
+    return:
+      type: TypeT
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Extensions.GetProperty``1*
+  exceptions: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.HasContent(Microsoft.Bot.Connector.Message)
+  commentId: M:Microsoft.Bot.Connector.Extensions.HasContent(Microsoft.Bot.Connector.Message)
+  id: HasContent(Microsoft.Bot.Connector.Message)
+  parent: Microsoft.Bot.Connector.Extensions
+  langs:
+  - csharp
+  name: HasContent(Message)
+  nameWithType: Extensions.HasContent(Message)
+  fullName: Extensions.HasContent(Message)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public static bool HasContent (this Microsoft.Bot.Connector.Message message);
+    parameters:
+    - id: message
+      type: Microsoft.Bot.Connector.Message
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Extensions.HasContent*
+  exceptions: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.SetBotConversationData(Microsoft.Bot.Connector.Message,System.String,System.Object)
+  commentId: M:Microsoft.Bot.Connector.Extensions.SetBotConversationData(Microsoft.Bot.Connector.Message,System.String,System.Object)
+  id: SetBotConversationData(Microsoft.Bot.Connector.Message,System.String,System.Object)
+  parent: Microsoft.Bot.Connector.Extensions
+  langs:
+  - csharp
+  name: SetBotConversationData(Message, String, Object)
+  nameWithType: Extensions.SetBotConversationData(Message, String, Object)
+  fullName: Extensions.SetBotConversationData(Message, String, Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public static void SetBotConversationData (this Microsoft.Bot.Connector.Message message, string property, object data);
+    parameters:
+    - id: message
+      type: Microsoft.Bot.Connector.Message
+      description: To be added.
+    - id: property
+      type: System.String
+      description: To be added.
+    - id: data
+      type: System.Object
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Extensions.SetBotConversationData*
+  exceptions: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.SetBotPerUserInConversationData(Microsoft.Bot.Connector.Message,System.String,System.Object)
+  commentId: M:Microsoft.Bot.Connector.Extensions.SetBotPerUserInConversationData(Microsoft.Bot.Connector.Message,System.String,System.Object)
+  id: SetBotPerUserInConversationData(Microsoft.Bot.Connector.Message,System.String,System.Object)
+  parent: Microsoft.Bot.Connector.Extensions
+  langs:
+  - csharp
+  name: SetBotPerUserInConversationData(Message, String, Object)
+  nameWithType: Extensions.SetBotPerUserInConversationData(Message, String, Object)
+  fullName: Extensions.SetBotPerUserInConversationData(Message, String, Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public static void SetBotPerUserInConversationData (this Microsoft.Bot.Connector.Message message, string property, object data);
+    parameters:
+    - id: message
+      type: Microsoft.Bot.Connector.Message
+      description: To be added.
+    - id: property
+      type: System.String
+      description: To be added.
+    - id: data
+      type: System.Object
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Extensions.SetBotPerUserInConversationData*
+  exceptions: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.SetBotUserData(Microsoft.Bot.Connector.Message,System.String,System.Object)
+  commentId: M:Microsoft.Bot.Connector.Extensions.SetBotUserData(Microsoft.Bot.Connector.Message,System.String,System.Object)
+  id: SetBotUserData(Microsoft.Bot.Connector.Message,System.String,System.Object)
+  parent: Microsoft.Bot.Connector.Extensions
+  langs:
+  - csharp
+  name: SetBotUserData(Message, String, Object)
+  nameWithType: Extensions.SetBotUserData(Message, String, Object)
+  fullName: Extensions.SetBotUserData(Message, String, Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public static void SetBotUserData (this Microsoft.Bot.Connector.Message message, string property, object data);
+    parameters:
+    - id: message
+      type: Microsoft.Bot.Connector.Message
+      description: To be added.
+    - id: property
+      type: System.String
+      description: To be added.
+    - id: data
+      type: System.Object
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Extensions.SetBotUserData*
+  exceptions: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.SetProperty(Microsoft.Bot.Connector.BotData,System.String,System.Object)
+  commentId: M:Microsoft.Bot.Connector.Extensions.SetProperty(Microsoft.Bot.Connector.BotData,System.String,System.Object)
+  id: SetProperty(Microsoft.Bot.Connector.BotData,System.String,System.Object)
+  parent: Microsoft.Bot.Connector.Extensions
+  langs:
+  - csharp
+  name: SetProperty(BotData, String, Object)
+  nameWithType: Extensions.SetProperty(BotData, String, Object)
+  fullName: Extensions.SetProperty(BotData, String, Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public static void SetProperty (this Microsoft.Bot.Connector.BotData botData, string property, object data);
+    parameters:
+    - id: botData
+      type: Microsoft.Bot.Connector.BotData
+      description: To be added.
+    - id: property
+      type: System.String
+      description: To be added.
+    - id: data
+      type: System.Object
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Extensions.SetProperty*
+  exceptions: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.AnimationCard)
+  commentId: M:Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.AnimationCard)
+  id: ToAttachment(Microsoft.Bot.Connector.AnimationCard)
+  parent: Microsoft.Bot.Connector.Extensions
+  langs:
+  - csharp
+  name: ToAttachment(AnimationCard)
+  nameWithType: Extensions.ToAttachment(AnimationCard)
+  fullName: Extensions.ToAttachment(AnimationCard)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Creates a new attachment from <xref href="Microsoft.Bot.Connector.AnimationCard"></xref>.
+  syntax:
+    content: public static Microsoft.Bot.Connector.Attachment ToAttachment (this Microsoft.Bot.Connector.AnimationCard card);
+    parameters:
+    - id: card
+      type: Microsoft.Bot.Connector.AnimationCard
+      description: The instance of <xref href="Microsoft.Bot.Connector.AnimationCard"></xref>.
+    return:
+      type: Microsoft.Bot.Connector.Attachment
+      description: The generated attachment.
+  overload: Microsoft.Bot.Connector.Extensions.ToAttachment*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.AudioCard)
+  commentId: M:Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.AudioCard)
+  id: ToAttachment(Microsoft.Bot.Connector.AudioCard)
+  parent: Microsoft.Bot.Connector.Extensions
+  langs:
+  - csharp
+  name: ToAttachment(AudioCard)
+  nameWithType: Extensions.ToAttachment(AudioCard)
+  fullName: Extensions.ToAttachment(AudioCard)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Creates a new attachment from <xref href="Microsoft.Bot.Connector.AudioCard"></xref>.
+  syntax:
+    content: public static Microsoft.Bot.Connector.Attachment ToAttachment (this Microsoft.Bot.Connector.AudioCard card);
+    parameters:
+    - id: card
+      type: Microsoft.Bot.Connector.AudioCard
+      description: The instance of <xref href="Microsoft.Bot.Connector.AudioCard"></xref>.
+    return:
+      type: Microsoft.Bot.Connector.Attachment
+      description: The generated attachment.
+  overload: Microsoft.Bot.Connector.Extensions.ToAttachment*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.HeroCard)
+  commentId: M:Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.HeroCard)
+  id: ToAttachment(Microsoft.Bot.Connector.HeroCard)
+  parent: Microsoft.Bot.Connector.Extensions
+  langs:
+  - csharp
+  name: ToAttachment(HeroCard)
+  nameWithType: Extensions.ToAttachment(HeroCard)
+  fullName: Extensions.ToAttachment(HeroCard)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Creates a new attachment from <xref href="Microsoft.Bot.Connector.HeroCard"></xref>.
+  syntax:
+    content: public static Microsoft.Bot.Connector.Attachment ToAttachment (this Microsoft.Bot.Connector.HeroCard card);
+    parameters:
+    - id: card
+      type: Microsoft.Bot.Connector.HeroCard
+      description: The instance of <xref href="Microsoft.Bot.Connector.HeroCard"></xref>.
+    return:
+      type: Microsoft.Bot.Connector.Attachment
+      description: The generated attachment.
+  overload: Microsoft.Bot.Connector.Extensions.ToAttachment*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.ReceiptCard)
+  commentId: M:Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.ReceiptCard)
+  id: ToAttachment(Microsoft.Bot.Connector.ReceiptCard)
+  parent: Microsoft.Bot.Connector.Extensions
+  langs:
+  - csharp
+  name: ToAttachment(ReceiptCard)
+  nameWithType: Extensions.ToAttachment(ReceiptCard)
+  fullName: Extensions.ToAttachment(ReceiptCard)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Creates a new attachment from <xref href="Microsoft.Bot.Connector.ReceiptCard"></xref>.
+  syntax:
+    content: public static Microsoft.Bot.Connector.Attachment ToAttachment (this Microsoft.Bot.Connector.ReceiptCard card);
+    parameters:
+    - id: card
+      type: Microsoft.Bot.Connector.ReceiptCard
+      description: The instance of <xref href="Microsoft.Bot.Connector.ReceiptCard"></xref>.
+    return:
+      type: Microsoft.Bot.Connector.Attachment
+      description: The generated attachment.
+  overload: Microsoft.Bot.Connector.Extensions.ToAttachment*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.SigninCard)
+  commentId: M:Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.SigninCard)
+  id: ToAttachment(Microsoft.Bot.Connector.SigninCard)
+  parent: Microsoft.Bot.Connector.Extensions
+  langs:
+  - csharp
+  name: ToAttachment(SigninCard)
+  nameWithType: Extensions.ToAttachment(SigninCard)
+  fullName: Extensions.ToAttachment(SigninCard)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Creates a new attachment from <xref href="Microsoft.Bot.Connector.SigninCard"></xref>.
+  syntax:
+    content: public static Microsoft.Bot.Connector.Attachment ToAttachment (this Microsoft.Bot.Connector.SigninCard card);
+    parameters:
+    - id: card
+      type: Microsoft.Bot.Connector.SigninCard
+      description: The instance of <xref href="Microsoft.Bot.Connector.SigninCard"></xref>.
+    return:
+      type: Microsoft.Bot.Connector.Attachment
+      description: The generated attachment.
+  overload: Microsoft.Bot.Connector.Extensions.ToAttachment*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.ThumbnailCard)
+  commentId: M:Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.ThumbnailCard)
+  id: ToAttachment(Microsoft.Bot.Connector.ThumbnailCard)
+  parent: Microsoft.Bot.Connector.Extensions
+  langs:
+  - csharp
+  name: ToAttachment(ThumbnailCard)
+  nameWithType: Extensions.ToAttachment(ThumbnailCard)
+  fullName: Extensions.ToAttachment(ThumbnailCard)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Creates a new attachment from <xref href="Microsoft.Bot.Connector.ThumbnailCard"></xref>.
+  syntax:
+    content: public static Microsoft.Bot.Connector.Attachment ToAttachment (this Microsoft.Bot.Connector.ThumbnailCard card);
+    parameters:
+    - id: card
+      type: Microsoft.Bot.Connector.ThumbnailCard
+      description: The instance of <xref href="Microsoft.Bot.Connector.ThumbnailCard"></xref>.
+    return:
+      type: Microsoft.Bot.Connector.Attachment
+      description: The generated attachment.
+  overload: Microsoft.Bot.Connector.Extensions.ToAttachment*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.VideoCard)
+  commentId: M:Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.VideoCard)
+  id: ToAttachment(Microsoft.Bot.Connector.VideoCard)
+  parent: Microsoft.Bot.Connector.Extensions
+  langs:
+  - csharp
+  name: ToAttachment(VideoCard)
+  nameWithType: Extensions.ToAttachment(VideoCard)
+  fullName: Extensions.ToAttachment(VideoCard)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Creates a new attachment from <xref href="Microsoft.Bot.Connector.VideoCard"></xref>.
+  syntax:
+    content: public static Microsoft.Bot.Connector.Attachment ToAttachment (this Microsoft.Bot.Connector.VideoCard card);
+    parameters:
+    - id: card
+      type: Microsoft.Bot.Connector.VideoCard
+      description: The instance of <xref href="Microsoft.Bot.Connector.VideoCard"></xref>.
+    return:
+      type: Microsoft.Bot.Connector.Attachment
+      description: The generated attachment.
+  overload: Microsoft.Bot.Connector.Extensions.ToAttachment*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.Extensions.CreateReplyMessage(Microsoft.Bot.Connector.Message,System.String,System.String)
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: CreateReplyMessage(Message, String, String)
+  nameWithType: Extensions.CreateReplyMessage(Message, String, String)
+  fullName: Extensions.CreateReplyMessage(Message, String, String)
+- uid: Microsoft.Bot.Connector.Message
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: Message
+  nameWithType: Message
+  fullName: Microsoft.Bot.Connector.Message
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.Extensions.GetBotConversationData``1(Microsoft.Bot.Connector.Message,System.String)
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: GetBotConversationData<TypeT>(Message, String)
+  nameWithType: Extensions.GetBotConversationData<TypeT>(Message, String)
+  fullName: Extensions.GetBotConversationData<TypeT>(Message, String)
+- uid: TypeT
+  isExternal: true
+  name: TypeT
+  nameWithType: TypeT
+  fullName: TypeT
+- uid: Microsoft.Bot.Connector.Extensions.GetBotPerUserInConversationData``1(Microsoft.Bot.Connector.Message,System.String)
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: GetBotPerUserInConversationData<TypeT>(Message, String)
+  nameWithType: Extensions.GetBotPerUserInConversationData<TypeT>(Message, String)
+  fullName: Extensions.GetBotPerUserInConversationData<TypeT>(Message, String)
+- uid: Microsoft.Bot.Connector.Extensions.GetBotUserData``1(Microsoft.Bot.Connector.Message,System.String)
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: GetBotUserData<TypeT>(Message, String)
+  nameWithType: Extensions.GetBotUserData<TypeT>(Message, String)
+  fullName: Extensions.GetBotUserData<TypeT>(Message, String)
+- uid: Microsoft.Bot.Connector.Extensions.GetChannelData``1(Microsoft.Bot.Connector.Message)
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: GetChannelData<TypeT>(Message)
+  nameWithType: Extensions.GetChannelData<TypeT>(Message)
+  fullName: Extensions.GetChannelData<TypeT>(Message)
+- uid: Microsoft.Bot.Connector.Extensions.GetProperty``1(Microsoft.Bot.Connector.BotData,System.String)
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: GetProperty<TypeT>(BotData, String)
+  nameWithType: Extensions.GetProperty<TypeT>(BotData, String)
+  fullName: Extensions.GetProperty<TypeT>(BotData, String)
+- uid: Microsoft.Bot.Connector.BotData
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: BotData
+  nameWithType: BotData
+  fullName: Microsoft.Bot.Connector.BotData
+- uid: Microsoft.Bot.Connector.Extensions.HasContent(Microsoft.Bot.Connector.Message)
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: HasContent(Message)
+  nameWithType: Extensions.HasContent(Message)
+  fullName: Extensions.HasContent(Message)
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Bot.Connector.Extensions.SetBotConversationData(Microsoft.Bot.Connector.Message,System.String,System.Object)
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: SetBotConversationData(Message, String, Object)
+  nameWithType: Extensions.SetBotConversationData(Message, String, Object)
+  fullName: Extensions.SetBotConversationData(Message, String, Object)
+- uid: Microsoft.Bot.Connector.Extensions.SetBotPerUserInConversationData(Microsoft.Bot.Connector.Message,System.String,System.Object)
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: SetBotPerUserInConversationData(Message, String, Object)
+  nameWithType: Extensions.SetBotPerUserInConversationData(Message, String, Object)
+  fullName: Extensions.SetBotPerUserInConversationData(Message, String, Object)
+- uid: Microsoft.Bot.Connector.Extensions.SetBotUserData(Microsoft.Bot.Connector.Message,System.String,System.Object)
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: SetBotUserData(Message, String, Object)
+  nameWithType: Extensions.SetBotUserData(Message, String, Object)
+  fullName: Extensions.SetBotUserData(Message, String, Object)
+- uid: Microsoft.Bot.Connector.Extensions.SetProperty(Microsoft.Bot.Connector.BotData,System.String,System.Object)
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: SetProperty(BotData, String, Object)
+  nameWithType: Extensions.SetProperty(BotData, String, Object)
+  fullName: Extensions.SetProperty(BotData, String, Object)
+- uid: Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.AnimationCard)
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: ToAttachment(AnimationCard)
+  nameWithType: Extensions.ToAttachment(AnimationCard)
+  fullName: Extensions.ToAttachment(AnimationCard)
+- uid: Microsoft.Bot.Connector.Attachment
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: Attachment
+  nameWithType: Attachment
+  fullName: Microsoft.Bot.Connector.Attachment
+- uid: Microsoft.Bot.Connector.AnimationCard
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: AnimationCard
+  nameWithType: AnimationCard
+  fullName: Microsoft.Bot.Connector.AnimationCard
+- uid: Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.AudioCard)
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: ToAttachment(AudioCard)
+  nameWithType: Extensions.ToAttachment(AudioCard)
+  fullName: Extensions.ToAttachment(AudioCard)
+- uid: Microsoft.Bot.Connector.AudioCard
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: AudioCard
+  nameWithType: AudioCard
+  fullName: Microsoft.Bot.Connector.AudioCard
+- uid: Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.HeroCard)
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: ToAttachment(HeroCard)
+  nameWithType: Extensions.ToAttachment(HeroCard)
+  fullName: Extensions.ToAttachment(HeroCard)
+- uid: Microsoft.Bot.Connector.HeroCard
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: HeroCard
+  nameWithType: HeroCard
+  fullName: Microsoft.Bot.Connector.HeroCard
+- uid: Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.ReceiptCard)
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: ToAttachment(ReceiptCard)
+  nameWithType: Extensions.ToAttachment(ReceiptCard)
+  fullName: Extensions.ToAttachment(ReceiptCard)
+- uid: Microsoft.Bot.Connector.ReceiptCard
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: ReceiptCard
+  nameWithType: ReceiptCard
+  fullName: Microsoft.Bot.Connector.ReceiptCard
+- uid: Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.SigninCard)
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: ToAttachment(SigninCard)
+  nameWithType: Extensions.ToAttachment(SigninCard)
+  fullName: Extensions.ToAttachment(SigninCard)
+- uid: Microsoft.Bot.Connector.SigninCard
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: SigninCard
+  nameWithType: SigninCard
+  fullName: Microsoft.Bot.Connector.SigninCard
+- uid: Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.ThumbnailCard)
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: ToAttachment(ThumbnailCard)
+  nameWithType: Extensions.ToAttachment(ThumbnailCard)
+  fullName: Extensions.ToAttachment(ThumbnailCard)
+- uid: Microsoft.Bot.Connector.ThumbnailCard
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: ThumbnailCard
+  nameWithType: ThumbnailCard
+  fullName: Microsoft.Bot.Connector.ThumbnailCard
+- uid: Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.VideoCard)
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: ToAttachment(VideoCard)
+  nameWithType: Extensions.ToAttachment(VideoCard)
+  fullName: Extensions.ToAttachment(VideoCard)
+- uid: Microsoft.Bot.Connector.VideoCard
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: VideoCard
+  nameWithType: VideoCard
+  fullName: Microsoft.Bot.Connector.VideoCard
+- uid: Microsoft.Bot.Connector.Extensions.CreateReplyMessage*
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: CreateReplyMessage
+  nameWithType: Extensions.CreateReplyMessage
+  fullName: Extensions.CreateReplyMessage
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.GetBotConversationData``1*
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: GetBotConversationData<TypeT>
+  nameWithType: Extensions.GetBotConversationData<TypeT>
+  fullName: Extensions.GetBotConversationData<TypeT>
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.GetBotPerUserInConversationData``1*
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: GetBotPerUserInConversationData<TypeT>
+  nameWithType: Extensions.GetBotPerUserInConversationData<TypeT>
+  fullName: Extensions.GetBotPerUserInConversationData<TypeT>
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.GetBotUserData``1*
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: GetBotUserData<TypeT>
+  nameWithType: Extensions.GetBotUserData<TypeT>
+  fullName: Extensions.GetBotUserData<TypeT>
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.GetChannelData``1*
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: GetChannelData<TypeT>
+  nameWithType: Extensions.GetChannelData<TypeT>
+  fullName: Extensions.GetChannelData<TypeT>
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.GetProperty``1*
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: GetProperty<TypeT>
+  nameWithType: Extensions.GetProperty<TypeT>
+  fullName: Extensions.GetProperty<TypeT>
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.HasContent*
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: HasContent
+  nameWithType: Extensions.HasContent
+  fullName: Extensions.HasContent
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.SetBotConversationData*
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: SetBotConversationData
+  nameWithType: Extensions.SetBotConversationData
+  fullName: Extensions.SetBotConversationData
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.SetBotPerUserInConversationData*
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: SetBotPerUserInConversationData
+  nameWithType: Extensions.SetBotPerUserInConversationData
+  fullName: Extensions.SetBotPerUserInConversationData
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.SetBotUserData*
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: SetBotUserData
+  nameWithType: Extensions.SetBotUserData
+  fullName: Extensions.SetBotUserData
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.SetProperty*
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: SetProperty
+  nameWithType: Extensions.SetProperty
+  fullName: Extensions.SetProperty
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml
+- uid: Microsoft.Bot.Connector.Extensions.ToAttachment*
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: ToAttachment
+  nameWithType: Extensions.ToAttachment
+  fullName: Extensions.ToAttachment
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Extensions.xml

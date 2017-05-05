@@ -1,0 +1,122 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+  commentId: T:Microsoft.Bot.Builder.Scorables.Internals.IResolver
+  id: IResolver
+  children:
+  - Microsoft.Bot.Builder.Scorables.Internals.IResolver.TryResolve(System.Type,System.Object,System.Object@)
+  langs:
+  - csharp
+  name: IResolver
+  nameWithType: IResolver
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  summary: Allow the resolution of values based on type and optionally tag.
+  remarks: The tag should be restrictive to services registered with that tag.
+  syntax:
+    content: public interface IResolver
+  derivedClasses:
+  - Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver
+  - Microsoft.Bot.Builder.Scorables.Internals.NoneResolver
+  - Microsoft.Bot.Builder.Scorables.Internals.NullResolver
+  - Microsoft.Bot.Builder.Scorables.Internals.ResolverScope`1
+  implements: []
+  extensionMethods:
+  - Microsoft.Bot.Builder.Scorables.Internals.Extensions.CanResolve(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Type,System.Object)
+  - Microsoft.Bot.Builder.Scorables.Internals.Extensions.Resolve(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Type,System.Object)
+  - Microsoft.Bot.Builder.Scorables.Internals.Extensions.TryResolve``1(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object,``0@)
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/IResolver.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IResolver.TryResolve(System.Type,System.Object,System.Object@)
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.IResolver.TryResolve(System.Type,System.Object,System.Object@)
+  id: TryResolve(System.Type,System.Object,System.Object@)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+  langs:
+  - csharp
+  name: TryResolve(Type, Object, Object)
+  nameWithType: IResolver.TryResolve(Type, Object, Object)
+  fullName: IResolver.TryResolve(Type, Object, Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public bool TryResolve (Type type, object tag, out object value);
+    parameters:
+    - id: type
+      type: System.Type
+      description: To be added.
+    - id: tag
+      type: System.Object
+      description: To be added.
+    - id: value
+      type: System.Object
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Internals.IResolver.TryResolve*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/IResolver.xml
+references:
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IResolver.TryResolve(System.Type,System.Object,System.Object@)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+  isExternal: false
+  name: TryResolve(Type, Object, Object)
+  nameWithType: IResolver.TryResolve(Type, Object, Object)
+  fullName: IResolver.TryResolve(Type, Object, Object)
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IResolver.TryResolve*
+  parent: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+  isExternal: false
+  name: TryResolve
+  nameWithType: IResolver.TryResolve
+  fullName: IResolver.TryResolve
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/IResolver.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.Extensions.CanResolve(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Type,System.Object)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.Extensions
+  isExternal: false
+  name: CanResolve(IResolver, Type, Object)
+  nameWithType: Extensions.CanResolve(IResolver, Type, Object)
+  fullName: Extensions.CanResolve(IResolver, Type, Object)
+- uid: Microsoft.Bot.Builder.Scorables.Internals.Extensions.Resolve(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Type,System.Object)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.Extensions
+  isExternal: false
+  name: Resolve(IResolver, Type, Object)
+  nameWithType: Extensions.Resolve(IResolver, Type, Object)
+  fullName: Extensions.Resolve(IResolver, Type, Object)
+- uid: Microsoft.Bot.Builder.Scorables.Internals.Extensions.TryResolve``1(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object,``0@)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.Extensions
+  isExternal: false
+  name: TryResolve<T>(IResolver, Object, T)
+  nameWithType: Extensions.TryResolve<T>(IResolver, Object, T)
+  fullName: Extensions.TryResolve<T>(IResolver, Object, T)

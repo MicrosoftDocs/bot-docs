@@ -1,0 +1,161 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.ErrorResponse
+  commentId: T:Microsoft.Bot.Connector.ErrorResponse
+  id: ErrorResponse
+  children:
+  - Microsoft.Bot.Connector.ErrorResponse.#ctor
+  - Microsoft.Bot.Connector.ErrorResponse.#ctor(Microsoft.Bot.Connector.Error)
+  - Microsoft.Bot.Connector.ErrorResponse.Error
+  langs:
+  - csharp
+  name: ErrorResponse
+  nameWithType: ErrorResponse
+  fullName: Microsoft.Bot.Connector.ErrorResponse
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: An HTTP API response
+  syntax:
+    content: public class ErrorResponse
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ErrorResponse.xml
+- uid: Microsoft.Bot.Connector.ErrorResponse.#ctor
+  commentId: M:Microsoft.Bot.Connector.ErrorResponse.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Connector.ErrorResponse
+  langs:
+  - csharp
+  name: ErrorResponse()
+  nameWithType: ErrorResponse.ErrorResponse()
+  fullName: ErrorResponse.ErrorResponse()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the ErrorResponse class.
+  syntax:
+    content: public ErrorResponse ();
+    parameters: []
+  overload: Microsoft.Bot.Connector.ErrorResponse.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ErrorResponse.xml
+- uid: Microsoft.Bot.Connector.ErrorResponse.#ctor(Microsoft.Bot.Connector.Error)
+  commentId: M:Microsoft.Bot.Connector.ErrorResponse.#ctor(Microsoft.Bot.Connector.Error)
+  id: '#ctor(Microsoft.Bot.Connector.Error)'
+  parent: Microsoft.Bot.Connector.ErrorResponse
+  langs:
+  - csharp
+  name: ErrorResponse(Error)
+  nameWithType: ErrorResponse.ErrorResponse(Error)
+  fullName: ErrorResponse.ErrorResponse(Error)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the ErrorResponse class.
+  syntax:
+    content: public ErrorResponse (Microsoft.Bot.Connector.Error error = null);
+    parameters:
+    - id: error
+      type: Microsoft.Bot.Connector.Error
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ErrorResponse.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ErrorResponse.xml
+- uid: Microsoft.Bot.Connector.ErrorResponse.Error
+  commentId: P:Microsoft.Bot.Connector.ErrorResponse.Error
+  id: Error
+  parent: Microsoft.Bot.Connector.ErrorResponse
+  langs:
+  - csharp
+  name: Error
+  nameWithType: ErrorResponse.Error
+  fullName: ErrorResponse.Error
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Error message
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="error")]
+
+      public Microsoft.Bot.Connector.Error Error { get; set; }
+    return:
+      type: Microsoft.Bot.Connector.Error
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ErrorResponse.Error*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ErrorResponse.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.ErrorResponse.#ctor
+  parent: Microsoft.Bot.Connector.ErrorResponse
+  isExternal: false
+  name: ErrorResponse()
+  nameWithType: ErrorResponse.ErrorResponse()
+  fullName: ErrorResponse.ErrorResponse()
+- uid: Microsoft.Bot.Connector.ErrorResponse.#ctor(Microsoft.Bot.Connector.Error)
+  parent: Microsoft.Bot.Connector.ErrorResponse
+  isExternal: false
+  name: ErrorResponse(Error)
+  nameWithType: ErrorResponse.ErrorResponse(Error)
+  fullName: ErrorResponse.ErrorResponse(Error)
+- uid: Microsoft.Bot.Connector.Error
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: Error
+  nameWithType: Error
+  fullName: Microsoft.Bot.Connector.Error
+- uid: Microsoft.Bot.Connector.ErrorResponse.Error
+  parent: Microsoft.Bot.Connector.ErrorResponse
+  isExternal: false
+  name: Error
+  nameWithType: ErrorResponse.Error
+  fullName: ErrorResponse.Error
+- uid: Microsoft.Bot.Connector.ErrorResponse.#ctor*
+  parent: Microsoft.Bot.Connector.ErrorResponse
+  isExternal: false
+  name: ErrorResponse
+  nameWithType: ErrorResponse.ErrorResponse
+  fullName: ErrorResponse.ErrorResponse
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ErrorResponse.xml
+- uid: Microsoft.Bot.Connector.ErrorResponse.Error*
+  parent: Microsoft.Bot.Connector.ErrorResponse
+  isExternal: false
+  name: Error
+  nameWithType: ErrorResponse.Error
+  fullName: ErrorResponse.Error
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ErrorResponse.xml

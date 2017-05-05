@@ -1,0 +1,263 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory
+  commentId: T:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory
+  id: RegexMatchScorableFactory
+  children:
+  - Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory.#ctor(System.Func{System.String,System.Text.RegularExpressions.Regex})
+  - Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory.Microsoft#Bot#Builder#Scorables#Internals#IScorableFactory{Microsoft#Bot#Builder#Scorables#Internals#IResolver,System#Text#RegularExpressions#Match}#ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})
+  langs:
+  - csharp
+  name: RegexMatchScorableFactory
+  nameWithType: RegexMatchScorableFactory
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: 'public sealed class RegexMatchScorableFactory : Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory<Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match>'
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match}
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/RegexMatchScorableFactory.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory.#ctor(System.Func{System.String,System.Text.RegularExpressions.Regex})
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory.#ctor(System.Func{System.String,System.Text.RegularExpressions.Regex})
+  id: '#ctor(System.Func{System.String,System.Text.RegularExpressions.Regex})'
+  parent: Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory
+  langs:
+  - csharp
+  name: RegexMatchScorableFactory(Func<String,Regex>)
+  nameWithType: RegexMatchScorableFactory.RegexMatchScorableFactory(Func<String,Regex>)
+  fullName: RegexMatchScorableFactory.RegexMatchScorableFactory(Func<String,Regex>)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public RegexMatchScorableFactory (Func<string,System.Text.RegularExpressions.Regex> make);
+    parameters:
+    - id: make
+      type: System.Func{System.String,System.Text.RegularExpressions.Regex}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/RegexMatchScorableFactory.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory.Microsoft#Bot#Builder#Scorables#Internals#IScorableFactory{Microsoft#Bot#Builder#Scorables#Internals#IResolver,System#Text#RegularExpressions#Match}#ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory.Microsoft#Bot#Builder#Scorables#Internals#IScorableFactory<Microsoft#Bot#Builder#Scorables#Internals#IResolver,System#Text#RegularExpressions#Match>#ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})
+  id: Microsoft#Bot#Builder#Scorables#Internals#IScorableFactory{Microsoft#Bot#Builder#Scorables#Internals#IResolver,System#Text#RegularExpressions#Match}#ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})
+  isEii: true
+  parent: Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory
+  langs:
+  - csharp
+  name: IScorableFactory<IResolver,Match>.ScorableFor(IEnumerable<MethodInfo>)
+  nameWithType: RegexMatchScorableFactory.IScorableFactory<IResolver,Match>.ScorableFor(IEnumerable<MethodInfo>)
+  fullName: RegexMatchScorableFactory.IScorableFactory<IResolver,Match>.ScorableFor(IEnumerable<MethodInfo>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match> IScorableFactory<IResolver,Match>.ScorableFor (System.Collections.Generic.IEnumerable<System.Reflection.MethodInfo> methods);
+    parameters:
+    - id: methods
+      type: System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo}
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory.Microsoft#Bot#Builder#Scorables#Internals#IScorableFactory{Microsoft#Bot#Builder#Scorables#Internals#IResolver,System#Text#RegularExpressions#Match}#ScorableFor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/RegexMatchScorableFactory.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory.#ctor(System.Func{System.String,System.Text.RegularExpressions.Regex})
+  parent: Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory
+  isExternal: false
+  name: RegexMatchScorableFactory(Func<String,Regex>)
+  nameWithType: RegexMatchScorableFactory.RegexMatchScorableFactory(Func<String,Regex>)
+  fullName: RegexMatchScorableFactory.RegexMatchScorableFactory(Func<String,Regex>)
+- uid: System.Func`2
+  name: Func
+  nameWithType: Func
+  fullName: System.Func
+- uid: System.String
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Text.RegularExpressions.Regex
+  name: Regex
+  nameWithType: Regex
+  fullName: System.Text.RegularExpressions.Regex
+- uid: System.Func{System.String,System.Text.RegularExpressions.Regex}
+  parent: System
+  isExternal: true
+  name: Func<String,Regex>
+  nameWithType: Func<String,Regex>
+  fullName: System.Func<System.String,System.Text.RegularExpressions.Regex>
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.Text.RegularExpressions.Regex
+    name: Regex
+    nameWithType: Regex
+    fullName: System.Text.RegularExpressions.Regex
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory.Microsoft#Bot#Builder#Scorables#Internals#IScorableFactory{Microsoft#Bot#Builder#Scorables#Internals#IResolver,System#Text#RegularExpressions#Match}#ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})
+  parent: Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory
+  isExternal: false
+  name: IScorableFactory<IResolver,Match>.ScorableFor(IEnumerable<MethodInfo>)
+  nameWithType: RegexMatchScorableFactory.IScorableFactory<IResolver,Match>.ScorableFor(IEnumerable<MethodInfo>)
+  fullName: RegexMatchScorableFactory.IScorableFactory<IResolver,Match>.ScorableFor(IEnumerable<MethodInfo>)
+- uid: Microsoft.Bot.Builder.Scorables.IScorable`2
+  name: IScorable<Item,Score>
+  nameWithType: IScorable<Item,Score>
+  fullName: Microsoft.Bot.Builder.Scorables.IScorable<Item,Score>
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+  name: IResolver
+  nameWithType: IResolver
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+- uid: System.Text.RegularExpressions.Match
+  name: Match
+  nameWithType: Match
+  fullName: System.Text.RegularExpressions.Match
+- uid: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match}
+  parent: Microsoft.Bot.Builder.Scorables
+  isExternal: false
+  name: IScorable<IResolver,Match>
+  nameWithType: IScorable<IResolver,Match>
+  fullName: Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Scorables.IScorable`2
+    name: IScorable
+    nameWithType: IScorable
+    fullName: Microsoft.Bot.Builder.Scorables.IScorable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+    name: IResolver
+    nameWithType: IResolver
+    fullName: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.Text.RegularExpressions.Match
+    name: Match
+    nameWithType: Match
+    fullName: System.Text.RegularExpressions.Match
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.Generic.IEnumerable
+- uid: System.Reflection.MethodInfo
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<MethodInfo>
+  nameWithType: IEnumerable<MethodInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.MethodInfo>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    nameWithType: MethodInfo
+    fullName: System.Reflection.MethodInfo
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory.#ctor*
+  parent: Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory
+  isExternal: false
+  name: RegexMatchScorableFactory
+  nameWithType: RegexMatchScorableFactory.RegexMatchScorableFactory
+  fullName: RegexMatchScorableFactory.RegexMatchScorableFactory
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/RegexMatchScorableFactory.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory.Microsoft#Bot#Builder#Scorables#Internals#IScorableFactory{Microsoft#Bot#Builder#Scorables#Internals#IResolver,System#Text#RegularExpressions#Match}#ScorableFor*
+  parent: Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory
+  isExternal: false
+  name: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory<Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match>.ScorableFor
+  nameWithType: RegexMatchScorableFactory.Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory<Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match>.ScorableFor
+  fullName: RegexMatchScorableFactory.Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory<Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match>.ScorableFor
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/RegexMatchScorableFactory.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2
+  name: IScorableFactory<Item,Score>
+  nameWithType: IScorableFactory<Item,Score>
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory<Item,Score>
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match}
+  parent: Microsoft.Bot.Builder.Scorables.Internals
+  isExternal: false
+  name: IScorableFactory<IResolver,Match>
+  nameWithType: IScorableFactory<IResolver,Match>
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory<Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2
+    name: IScorableFactory
+    nameWithType: IScorableFactory
+    fullName: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+    name: IResolver
+    nameWithType: IResolver
+    fullName: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.Text.RegularExpressions.Match
+    name: Match
+    nameWithType: Match
+    fullName: System.Text.RegularExpressions.Match
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'

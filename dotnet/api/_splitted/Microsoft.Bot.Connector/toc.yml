@@ -1,0 +1,389 @@
+- uid: Microsoft.Bot.Connector
+  name: Microsoft.Bot.Connector
+  items:
+  - uid: Microsoft.Bot.Connector.Action
+    name: Action
+    version:
+    - botconnector-1.1.0
+  - uid: Microsoft.Bot.Connector.ActionTypes
+    name: ActionTypes
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.Activity
+    name: Activity
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.ActivityTypes
+    name: ActivityTypes
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.AnimationCard
+    name: AnimationCard
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.APIResponse
+    name: APIResponse
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.Attachment
+    name: Attachment
+    version:
+    - botbuilder-3.5.5
+    - botconnector-1.1.0
+  - uid: Microsoft.Bot.Connector.AttachmentData
+    name: AttachmentData
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.AttachmentInfo
+    name: AttachmentInfo
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.AttachmentLayoutTypes
+    name: AttachmentLayoutTypes
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.Attachments
+    name: Attachments
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.AttachmentsExtensions
+    name: AttachmentsExtensions
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.AttachmentView
+    name: AttachmentView
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.AudioCard
+    name: AudioCard
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.BasicAuthentication
+    name: BasicAuthentication
+    version:
+    - botconnector-1.1.0
+  - uid: Microsoft.Bot.Connector.BasicAuthIdentity
+    name: BasicAuthIdentity
+    version:
+    - botconnector-1.1.0
+  - uid: Microsoft.Bot.Connector.BotAuthentication
+    name: BotAuthentication
+    version:
+    - botbuilder-3.5.5
+    - botconnector-1.1.0
+  - uid: Microsoft.Bot.Connector.BotAuthenticationFromSetting
+    name: BotAuthenticationFromSetting
+    version:
+    - botconnector-1.1.0
+  - uid: Microsoft.Bot.Connector.BotAuthenticator
+    name: BotAuthenticator
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.BotData
+    name: BotData
+    version:
+    - botbuilder-3.5.5
+    - botconnector-1.1.0
+  - uid: Microsoft.Bot.Connector.Bots
+    name: Bots
+    version:
+    - botconnector-1.1.0
+  - uid: Microsoft.Bot.Connector.BotsExtensions
+    name: BotsExtensions
+    version:
+    - botconnector-1.1.0
+  - uid: Microsoft.Bot.Connector.BotState
+    name: BotState
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.BotStateExtensions
+    name: BotStateExtensions
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.CardAction
+    name: CardAction
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.CardImage
+    name: CardImage
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.ChannelAccount
+    name: ChannelAccount
+    version:
+    - botbuilder-3.5.5
+    - botconnector-1.1.0
+  - uid: Microsoft.Bot.Connector.ClaimsIdentityEx
+    name: ClaimsIdentityEx
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.ConnectorClient
+    name: ConnectorClient
+    version:
+    - botbuilder-3.5.5
+    - botconnector-1.1.0
+  - uid: Microsoft.Bot.Connector.ConnectorClientCredentials
+    name: ConnectorClientCredentials
+    version:
+    - botconnector-1.1.0
+  - uid: Microsoft.Bot.Connector.ConnectorClientExtensions
+    name: ConnectorClientExtensions
+    version:
+    - botbuilder-3.5.5
+    - botconnector-1.1.0
+  - uid: Microsoft.Bot.Connector.ContactRelationUpdateActionTypes
+    name: ContactRelationUpdateActionTypes
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.ConversationAccount
+    name: ConversationAccount
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.ConversationParameters
+    name: ConversationParameters
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.ConversationReference
+    name: ConversationReference
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.ConversationResourceResponse
+    name: ConversationResourceResponse
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.Conversations
+    name: Conversations
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.ConversationsExtensions
+    name: ConversationsExtensions
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.Entity
+    name: Entity
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.Error
+    name: Error
+    version:
+    - botbuilder-3.5.5
+    - botconnector-1.1.0
+  - uid: Microsoft.Bot.Connector.ErrorCodes
+    name: ErrorCodes
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.ErrorHandling
+    name: ErrorHandling
+    version:
+    - botbuilder-3.5.5
+    - botconnector-1.1.0
+  - uid: Microsoft.Bot.Connector.ErrorMessage
+    name: ErrorMessage
+    version:
+    - botconnector-1.1.0
+  - uid: Microsoft.Bot.Connector.ErrorResponse
+    name: ErrorResponse
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.Extensions
+    name: Extensions
+    version:
+    - botbuilder-3.5.5
+    - botconnector-1.1.0
+  - uid: Microsoft.Bot.Connector.Fact
+    name: Fact
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.GeoCoordinates
+    name: GeoCoordinates
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.HeroCard
+    name: HeroCard
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.HttpClientEx
+    name: HttpClientEx
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.IActivity
+    name: IActivity
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.IAttachments
+    name: IAttachments
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.IBots
+    name: IBots
+    version:
+    - botconnector-1.1.0
+  - uid: Microsoft.Bot.Connector.IBotState
+    name: IBotState
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.IConnectorClient
+    name: IConnectorClient
+    version:
+    - botbuilder-3.5.5
+    - botconnector-1.1.0
+  - uid: Microsoft.Bot.Connector.IContactRelationUpdateActivity
+    name: IContactRelationUpdateActivity
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.IConversations
+    name: IConversations
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.IConversationUpdateActivity
+    name: IConversationUpdateActivity
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.ICredentialProvider
+    name: ICredentialProvider
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.IdentityToken
+    name: IdentityToken
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.IEndOfConversationActivity
+    name: IEndOfConversationActivity
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.IEventActivity
+    name: IEventActivity
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.IInvokeActivity
+    name: IInvokeActivity
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.IMessageActivity
+    name: IMessageActivity
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.IMessages
+    name: IMessages
+    version:
+    - botconnector-1.1.0
+  - uid: Microsoft.Bot.Connector.IStateClient
+    name: IStateClient
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.ITriggerActivity
+    name: ITriggerActivity
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.ITypingActivity
+    name: ITypingActivity
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.JwtConfig
+    name: JwtConfig
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.JwtTokenExtractor
+    name: JwtTokenExtractor
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.JwtTokenRefresher
+    name: JwtTokenRefresher
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.Location
+    name: Location
+    version:
+    - botconnector-1.1.0
+  - uid: Microsoft.Bot.Connector.MediaUrl
+    name: MediaUrl
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.Mention
+    name: Mention
+    version:
+    - botbuilder-3.5.5
+    - botconnector-1.1.0
+  - uid: Microsoft.Bot.Connector.Message
+    name: Message
+    version:
+    - botconnector-1.1.0
+  - uid: Microsoft.Bot.Connector.Messages
+    name: Messages
+    version:
+    - botconnector-1.1.0
+  - uid: Microsoft.Bot.Connector.MessagesExtensions
+    name: MessagesExtensions
+    version:
+    - botconnector-1.1.0
+  - uid: Microsoft.Bot.Connector.MicrosoftAppCredentials
+    name: MicrosoftAppCredentials
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.MicrosoftAppCredentials.OAuthException
+    name: MicrosoftAppCredentials.OAuthException
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.MicrosoftAppCredentials.OAuthResponse
+    name: MicrosoftAppCredentials.OAuthResponse
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.Place
+    name: Place
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.ReceiptCard
+    name: ReceiptCard
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.ReceiptItem
+    name: ReceiptItem
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.ResourceResponse
+    name: ResourceResponse
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.SettingsCredentialProvider
+    name: SettingsCredentialProvider
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.SigninCard
+    name: SigninCard
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.SimpleCredentialProvider
+    name: SimpleCredentialProvider
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.StateClient
+    name: StateClient
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.StateClientExtensions
+    name: StateClientExtensions
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.StaticCredentialProvider
+    name: StaticCredentialProvider
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.TextFormatTypes
+    name: TextFormatTypes
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.ThumbnailCard
+    name: ThumbnailCard
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.ThumbnailUrl
+    name: ThumbnailUrl
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Connector.VideoCard
+    name: VideoCard
+    version:
+    - botbuilder-3.5.5
+  version:
+  - botbuilder-3.5.5
+  - botconnector-1.1.0

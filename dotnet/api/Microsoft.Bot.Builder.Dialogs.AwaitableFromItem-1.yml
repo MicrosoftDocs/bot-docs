@@ -1,0 +1,296 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1
+  commentId: T:Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1
+  id: AwaitableFromItem`1
+  children:
+  - Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.#ctor(`0)
+  - Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Dialogs#IAwaitable{T}#GetAwaiter
+  - Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter{T}#GetResult
+  - Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter{T}#IsCompleted
+  - Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.System#Runtime#CompilerServices#INotifyCompletion#OnCompleted(System.Action)
+  langs:
+  - csharp
+  name: AwaitableFromItem<T>
+  nameWithType: AwaitableFromItem<T>
+  fullName: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem<T>
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Creates a <xref href="Microsoft.Bot.Builder.Dialogs.IAwaitable`1"></xref> from item passed to constructor.
+  syntax:
+    content: 'public sealed class AwaitableFromItem<T> : Microsoft.Bot.Builder.Dialogs.IAwaitable<T>, Microsoft.Bot.Builder.Internals.Fibers.IAwaiter<T>, System.Runtime.CompilerServices.INotifyCompletion'
+    typeParameters:
+    - id: T
+      description: The type of the item.
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Bot.Builder.Dialogs.IAwaitable{T}
+  - Microsoft.Bot.Builder.Internals.Fibers.IAwaiter{T}
+  - System.Runtime.CompilerServices.INotifyCompletion
+  inheritedMembers: []
+  extensionMethods:
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.ToTask``1(Microsoft.Bot.Builder.Dialogs.IAwaitable{``0})
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/AwaitableFromItem`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.#ctor(`0)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.#ctor(`0)
+  id: '#ctor(`0)'
+  parent: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1
+  langs:
+  - csharp
+  name: AwaitableFromItem<T>(T)
+  nameWithType: AwaitableFromItem<T>.AwaitableFromItem<T>(T)
+  fullName: AwaitableFromItem<T>.AwaitableFromItem<T>(T)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: public AwaitableFromItem (T item);
+    parameters:
+    - id: item
+      type: T
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/AwaitableFromItem`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Dialogs#IAwaitable{T}#GetAwaiter
+  commentId: M:Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Dialogs#IAwaitable<T>#GetAwaiter
+  id: Microsoft#Bot#Builder#Dialogs#IAwaitable{T}#GetAwaiter
+  isEii: true
+  parent: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1
+  langs:
+  - csharp
+  name: IAwaitable<T>.GetAwaiter()
+  nameWithType: AwaitableFromItem<T>.IAwaitable<T>.GetAwaiter()
+  fullName: AwaitableFromItem<T>.IAwaitable<T>.GetAwaiter()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: Microsoft.Bot.Builder.Internals.Fibers.IAwaiter<T> IAwaitable<T>.GetAwaiter ();
+    parameters: []
+    return:
+      type: Microsoft.Bot.Builder.Internals.Fibers.IAwaiter`1
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Dialogs#IAwaitable{T}#GetAwaiter*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/AwaitableFromItem`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter{T}#GetResult
+  commentId: M:Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter<T>#GetResult
+  id: Microsoft#Bot#Builder#Internals#Fibers#IAwaiter{T}#GetResult
+  isEii: true
+  parent: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1
+  langs:
+  - csharp
+  name: IAwaiter<T>.GetResult()
+  nameWithType: AwaitableFromItem<T>.IAwaiter<T>.GetResult()
+  fullName: AwaitableFromItem<T>.IAwaiter<T>.GetResult()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: T IAwaiter<T>.GetResult ();
+    parameters: []
+    return:
+      type: T
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter{T}#GetResult*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/AwaitableFromItem`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter{T}#IsCompleted
+  commentId: P:Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter<T>#IsCompleted
+  id: Microsoft#Bot#Builder#Internals#Fibers#IAwaiter{T}#IsCompleted
+  isEii: true
+  parent: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1
+  langs:
+  - csharp
+  name: IAwaiter<T>.IsCompleted
+  nameWithType: AwaitableFromItem<T>.IAwaiter<T>.IsCompleted
+  fullName: AwaitableFromItem<T>.IAwaiter<T>.IsCompleted
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: bool Microsoft.Bot.Builder.Internals.Fibers.IAwaiter<T>.IsCompleted { get; }
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter{T}#IsCompleted*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/AwaitableFromItem`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.System#Runtime#CompilerServices#INotifyCompletion#OnCompleted(System.Action)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.System#Runtime#CompilerServices#INotifyCompletion#OnCompleted(System.Action)
+  id: System#Runtime#CompilerServices#INotifyCompletion#OnCompleted(System.Action)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1
+  langs:
+  - csharp
+  name: INotifyCompletion.OnCompleted(Action)
+  nameWithType: AwaitableFromItem<T>.INotifyCompletion.OnCompleted(Action)
+  fullName: AwaitableFromItem<T>.INotifyCompletion.OnCompleted(Action)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: void INotifyCompletion.OnCompleted (Action continuation);
+    parameters:
+    - id: continuation
+      type: System.Action
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.System#Runtime#CompilerServices#INotifyCompletion#OnCompleted*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/AwaitableFromItem`1.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.#ctor(`0)
+  parent: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1
+  isExternal: false
+  name: AwaitableFromItem<T>(T)
+  nameWithType: AwaitableFromItem<T>.AwaitableFromItem<T>(T)
+  fullName: AwaitableFromItem<T>.AwaitableFromItem<T>(T)
+- uid: T
+  isExternal: true
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Dialogs#IAwaitable{T}#GetAwaiter
+  parent: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1
+  isExternal: false
+  name: IAwaitable<T>.GetAwaiter()
+  nameWithType: AwaitableFromItem<T>.IAwaitable<T>.GetAwaiter()
+  fullName: AwaitableFromItem<T>.IAwaitable<T>.GetAwaiter()
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IAwaiter`1
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: IAwaiter<T>
+  nameWithType: IAwaiter<T>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IAwaiter<T>
+- uid: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter{T}#GetResult
+  parent: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1
+  isExternal: false
+  name: IAwaiter<T>.GetResult()
+  nameWithType: AwaitableFromItem<T>.IAwaiter<T>.GetResult()
+  fullName: AwaitableFromItem<T>.IAwaiter<T>.GetResult()
+- uid: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter{T}#IsCompleted
+  parent: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1
+  isExternal: false
+  name: IAwaiter<T>.IsCompleted
+  nameWithType: AwaitableFromItem<T>.IAwaiter<T>.IsCompleted
+  fullName: AwaitableFromItem<T>.IAwaiter<T>.IsCompleted
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.System#Runtime#CompilerServices#INotifyCompletion#OnCompleted(System.Action)
+  parent: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1
+  isExternal: false
+  name: INotifyCompletion.OnCompleted(Action)
+  nameWithType: AwaitableFromItem<T>.INotifyCompletion.OnCompleted(Action)
+  fullName: AwaitableFromItem<T>.INotifyCompletion.OnCompleted(Action)
+- uid: System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.#ctor*
+  parent: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1
+  isExternal: false
+  name: AwaitableFromItem<T>
+  nameWithType: AwaitableFromItem<T>.AwaitableFromItem<T>
+  fullName: AwaitableFromItem<T>.AwaitableFromItem<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/AwaitableFromItem`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Dialogs#IAwaitable{T}#GetAwaiter*
+  parent: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1
+  isExternal: false
+  name: Microsoft.Bot.Builder.Dialogs.IAwaitable<T>.GetAwaiter
+  nameWithType: AwaitableFromItem<T>.Microsoft.Bot.Builder.Dialogs.IAwaitable<T>.GetAwaiter
+  fullName: AwaitableFromItem<T>.Microsoft.Bot.Builder.Dialogs.IAwaitable<T>.GetAwaiter
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/AwaitableFromItem`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter{T}#GetResult*
+  parent: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1
+  isExternal: false
+  name: Microsoft.Bot.Builder.Internals.Fibers.IAwaiter<T>.GetResult
+  nameWithType: AwaitableFromItem<T>.Microsoft.Bot.Builder.Internals.Fibers.IAwaiter<T>.GetResult
+  fullName: AwaitableFromItem<T>.Microsoft.Bot.Builder.Internals.Fibers.IAwaiter<T>.GetResult
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/AwaitableFromItem`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter{T}#IsCompleted*
+  parent: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1
+  isExternal: false
+  name: Microsoft.Bot.Builder.Internals.Fibers.IAwaiter<T>.IsCompleted
+  nameWithType: AwaitableFromItem<T>.Microsoft.Bot.Builder.Internals.Fibers.IAwaiter<T>.IsCompleted
+  fullName: AwaitableFromItem<T>.Microsoft.Bot.Builder.Internals.Fibers.IAwaiter<T>.IsCompleted
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/AwaitableFromItem`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.System#Runtime#CompilerServices#INotifyCompletion#OnCompleted*
+  parent: Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1
+  isExternal: false
+  name: System.Runtime.CompilerServices.INotifyCompletion.OnCompleted
+  nameWithType: AwaitableFromItem<T>.System.Runtime.CompilerServices.INotifyCompletion.OnCompleted
+  fullName: AwaitableFromItem<T>.System.Runtime.CompilerServices.INotifyCompletion.OnCompleted
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/AwaitableFromItem`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.ToTask``1(Microsoft.Bot.Builder.Dialogs.IAwaitable{``0})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: ToTask<T>(IAwaitable<T>)
+  nameWithType: Extensions.ToTask<T>(IAwaitable<T>)
+  fullName: Extensions.ToTask<T>(IAwaitable<T>)
+- uid: Microsoft.Bot.Builder.Dialogs.IAwaitable`1
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: IAwaitable<T>
+  nameWithType: IAwaitable<T>
+  fullName: Microsoft.Bot.Builder.Dialogs.IAwaitable<T>
+- uid: System.Runtime.CompilerServices.INotifyCompletion
+  parent: System.Runtime.CompilerServices
+  isExternal: true
+  name: INotifyCompletion
+  nameWithType: INotifyCompletion
+  fullName: System.Runtime.CompilerServices.INotifyCompletion

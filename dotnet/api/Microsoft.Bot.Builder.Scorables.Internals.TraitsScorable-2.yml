@@ -1,0 +1,391 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Scorables.Internals.TraitsScorable`2
+  commentId: T:Microsoft.Bot.Builder.Scorables.Internals.TraitsScorable`2
+  id: TraitsScorable`2
+  children:
+  - Microsoft.Bot.Builder.Scorables.Internals.TraitsScorable`2.#ctor(Microsoft.Bot.Builder.Internals.Fibers.ITraits{`1},System.Collections.Generic.IComparer{`1},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{`0,`1}})
+  - Microsoft.Bot.Builder.Scorables.Internals.TraitsScorable`2.OnStageHandler(Microsoft.Bot.Builder.Scorables.Internals.FoldStage,Microsoft.Bot.Builder.Scorables.IScorable{`0,`1},`0,System.Object,`1)
+  langs:
+  - csharp
+  name: TraitsScorable<Item,Score>
+  nameWithType: TraitsScorable<Item,Score>
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.TraitsScorable<Item,Score>
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: 'public sealed class TraitsScorable<Item,Score> : Microsoft.Bot.Builder.Scorables.Internals.DelegatingFoldScorable<Item,Score>'
+    typeParameters:
+    - id: Item
+      description: To be added.
+    - id: Score
+      description: To be added.
+  inheritance:
+  - System.Object
+  - Microsoft.Bot.Builder.Scorables.Internals.ScorableBase`3
+  - Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2
+  - Microsoft.Bot.Builder.Scorables.Internals.DelegatingFoldScorable`2
+  implements: []
+  inheritedMembers:
+  - Microsoft.Bot.Builder.Scorables.Internals.DelegatingFoldScorable`2.OnStage
+  - Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.comparer
+  - Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.DoneAsync(`0,System.Collections.Generic.IReadOnlyList{Microsoft.Bot.Builder.Scorables.Internals.FoldScorable{`0,`1}.State},System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.GetScore(`0,System.Collections.Generic.IReadOnlyList{Microsoft.Bot.Builder.Scorables.Internals.FoldScorable{`0,`1}.State})
+  - Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.HasScore(`0,System.Collections.Generic.IReadOnlyList{Microsoft.Bot.Builder.Scorables.Internals.FoldScorable{`0,`1}.State})
+  - Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.PostAsync(`0,System.Collections.Generic.IReadOnlyList{Microsoft.Bot.Builder.Scorables.Internals.FoldScorable{`0,`1}.State},System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.PrepareAsync(`0,System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.scorables
+  - Microsoft.Bot.Builder.Scorables.Internals.ScorableBase`3.DoneAsync(`0,`1,System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Scorables.Internals.ScorableBase`3.GetScore(`0,`1)
+  - Microsoft.Bot.Builder.Scorables.Internals.ScorableBase`3.HasScore(`0,`1)
+  - Microsoft.Bot.Builder.Scorables.Internals.ScorableBase`3.Microsoft#Bot#Builder#Scorables#IScorable{Item,Score}#DoneAsync(`0,System.Object,System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Scorables.Internals.ScorableBase`3.Microsoft#Bot#Builder#Scorables#IScorable{Item,Score}#GetScore(`0,System.Object)
+  - Microsoft.Bot.Builder.Scorables.Internals.ScorableBase`3.Microsoft#Bot#Builder#Scorables#IScorable{Item,Score}#HasScore(`0,System.Object)
+  - Microsoft.Bot.Builder.Scorables.Internals.ScorableBase`3.Microsoft#Bot#Builder#Scorables#IScorable{Item,Score}#PostAsync(`0,System.Object,System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Scorables.Internals.ScorableBase`3.Microsoft#Bot#Builder#Scorables#IScorable{Item,Score}#PrepareAsync(`0,System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Scorables.Internals.ScorableBase`3.PostAsync(`0,`1,System.Threading.CancellationToken)
+  extensionMethods:
+  - Microsoft.Bot.Builder.Scorables.Actions.Normalize(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Luis.Models.IntentRecommendation})
+  - Microsoft.Bot.Builder.Scorables.Actions.Normalize(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding})
+  - Microsoft.Bot.Builder.Scorables.Actions.Normalize(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match})
+  - Microsoft.Bot.Builder.Scorables.Actions.When``1(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},Microsoft.Bot.Builder.Luis.ILuisModel,Microsoft.Bot.Builder.Dialogs.LuisIntentAttribute,Microsoft.Bot.Builder.Luis.ILuisService)
+  - Microsoft.Bot.Builder.Scorables.Actions.When``1(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Text.RegularExpressions.Regex)
+  - Microsoft.Bot.Builder.Scorables.Actions.Where``2(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,System.Boolean})
+  - Microsoft.Bot.Builder.Scorables.Actions.Where``2(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,System.Threading.Tasks.Task{System.Boolean}})
+  - Microsoft.Bot.Builder.Scorables.Actions.Where``3(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,System.Boolean})
+  - Microsoft.Bot.Builder.Scorables.Actions.Where``3(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,System.Threading.Tasks.Task{System.Boolean}})
+  - Microsoft.Bot.Builder.Scorables.Actions.Where``4(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,``3,System.Boolean})
+  - Microsoft.Bot.Builder.Scorables.Actions.Where``4(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,``3,System.Threading.Tasks.Task{System.Boolean}})
+  - Microsoft.Bot.Builder.Scorables.Scorable.SelectItem``3(Microsoft.Bot.Builder.Scorables.IScorable{``1,``2},System.Func{``0,``1})
+  - Microsoft.Bot.Builder.Scorables.Scorable.SelectScore``3(Microsoft.Bot.Builder.Scorables.IScorable{``0,``1},System.Func{``0,``1,``2})
+  - Microsoft.Bot.Builder.Scorables.Scorable.TryPostAsync``2(Microsoft.Bot.Builder.Scorables.IScorable{``0,``1},``0,System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Scorables.Scorable.WhereScore``2(Microsoft.Bot.Builder.Scorables.IScorable{``0,``1},System.Func{``0,``1,System.Boolean})
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/TraitsScorable`2.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.TraitsScorable`2.#ctor(Microsoft.Bot.Builder.Internals.Fibers.ITraits{`1},System.Collections.Generic.IComparer{`1},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{`0,`1}})
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.TraitsScorable`2.#ctor(Microsoft.Bot.Builder.Internals.Fibers.ITraits{`1},System.Collections.Generic.IComparer{`1},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{`0,`1}})
+  id: '#ctor(Microsoft.Bot.Builder.Internals.Fibers.ITraits{`1},System.Collections.Generic.IComparer{`1},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{`0,`1}})'
+  parent: Microsoft.Bot.Builder.Scorables.Internals.TraitsScorable`2
+  langs:
+  - csharp
+  name: TraitsScorable<Item,Score>(ITraits<Score>, IComparer<Score>, IEnumerable<IScorable<Item,Score>>)
+  nameWithType: TraitsScorable<Item,Score>.TraitsScorable<Item,Score>(ITraits<Score>, IComparer<Score>, IEnumerable<IScorable<Item,Score>>)
+  fullName: TraitsScorable<Item,Score>.TraitsScorable<Item,Score>(ITraits<Score>, IComparer<Score>, IEnumerable<IScorable<Item,Score>>)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public TraitsScorable (Microsoft.Bot.Builder.Internals.Fibers.ITraits<Score> traits, System.Collections.Generic.IComparer<Score> comparer, System.Collections.Generic.IEnumerable<Microsoft.Bot.Builder.Scorables.IScorable<Item,Score>> scorables);
+    parameters:
+    - id: traits
+      type: Microsoft.Bot.Builder.Internals.Fibers.ITraits{Score}
+      description: To be added.
+    - id: comparer
+      type: System.Collections.Generic.IComparer{Score}
+      description: To be added.
+    - id: scorables
+      type: System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{Item,Score}}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Internals.TraitsScorable`2.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/TraitsScorable`2.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.TraitsScorable`2.OnStageHandler(Microsoft.Bot.Builder.Scorables.Internals.FoldStage,Microsoft.Bot.Builder.Scorables.IScorable{`0,`1},`0,System.Object,`1)
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.TraitsScorable`2.OnStageHandler(Microsoft.Bot.Builder.Scorables.Internals.FoldStage,Microsoft.Bot.Builder.Scorables.IScorable{`0,`1},`0,System.Object,`1)
+  id: OnStageHandler(Microsoft.Bot.Builder.Scorables.Internals.FoldStage,Microsoft.Bot.Builder.Scorables.IScorable{`0,`1},`0,System.Object,`1)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.TraitsScorable`2
+  langs:
+  - csharp
+  name: OnStageHandler(FoldStage, IScorable<Item,Score>, Item, Object, Score)
+  nameWithType: TraitsScorable<Item,Score>.OnStageHandler(FoldStage, IScorable<Item,Score>, Item, Object, Score)
+  fullName: TraitsScorable<Item,Score>.OnStageHandler(FoldStage, IScorable<Item,Score>, Item, Object, Score)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public override bool OnStageHandler (Microsoft.Bot.Builder.Scorables.Internals.FoldStage stage, Microsoft.Bot.Builder.Scorables.IScorable<Item,Score> scorable, Item item, object state, Score score);
+    parameters:
+    - id: stage
+      type: Microsoft.Bot.Builder.Scorables.Internals.FoldStage
+      description: To be added.
+    - id: scorable
+      type: Microsoft.Bot.Builder.Scorables.IScorable`2
+      description: To be added.
+    - id: item
+      type: Item
+      description: To be added.
+    - id: state
+      type: System.Object
+      description: To be added.
+    - id: score
+      type: Score
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Internals.TraitsScorable`2.OnStageHandler*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/TraitsScorable`2.xml
+references:
+- uid: Microsoft.Bot.Builder.Scorables.Internals.DelegatingFoldScorable`2
+  parent: Microsoft.Bot.Builder.Scorables.Internals
+  isExternal: false
+  name: DelegatingFoldScorable<Item,Score>
+  nameWithType: DelegatingFoldScorable<Item,Score>
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.DelegatingFoldScorable<Item,Score>
+- uid: Microsoft.Bot.Builder.Scorables.Internals.TraitsScorable`2.#ctor(Microsoft.Bot.Builder.Internals.Fibers.ITraits{`1},System.Collections.Generic.IComparer{`1},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{`0,`1}})
+  parent: Microsoft.Bot.Builder.Scorables.Internals.TraitsScorable`2
+  isExternal: false
+  name: TraitsScorable<Item,Score>(ITraits<Score>, IComparer<Score>, IEnumerable<IScorable<Item,Score>>)
+  nameWithType: TraitsScorable<Item,Score>.TraitsScorable<Item,Score>(ITraits<Score>, IComparer<Score>, IEnumerable<IScorable<Item,Score>>)
+  fullName: TraitsScorable<Item,Score>.TraitsScorable<Item,Score>(ITraits<Score>, IComparer<Score>, IEnumerable<IScorable<Item,Score>>)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.ITraits`1
+  name: ITraits<T>
+  nameWithType: ITraits<T>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.ITraits<T>
+- uid: Score
+  name: Score
+  nameWithType: Score
+  fullName: Score
+- uid: Microsoft.Bot.Builder.Internals.Fibers.ITraits{Score}
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: ITraits<Score>
+  nameWithType: ITraits<Score>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.ITraits<Score>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.ITraits`1
+    name: ITraits
+    nameWithType: ITraits
+    fullName: Microsoft.Bot.Builder.Internals.Fibers.ITraits
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Score
+    name: Score
+    nameWithType: Score
+    fullName: Score
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Collections.Generic.IComparer`1
+  name: IComparer
+  nameWithType: IComparer
+  fullName: System.Collections.Generic.IComparer
+- uid: System.Collections.Generic.IComparer{Score}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IComparer<Score>
+  nameWithType: IComparer<Score>
+  fullName: System.Collections.Generic.IComparer<Score>
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    nameWithType: IComparer
+    fullName: System.Collections.Generic.IComparer
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Score
+    name: Score
+    nameWithType: Score
+    fullName: Score
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.Generic.IEnumerable
+- uid: Microsoft.Bot.Builder.Scorables.IScorable`2
+  name: IScorable<Item,Score>
+  nameWithType: IScorable<Item,Score>
+  fullName: Microsoft.Bot.Builder.Scorables.IScorable<Item,Score>
+- uid: Item
+  name: Item
+  nameWithType: Item
+  fullName: Item
+- uid: System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{Item,Score}}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<IScorable<Item,Score>>
+  nameWithType: IEnumerable<IScorable<Item,Score>>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.Bot.Builder.Scorables.IScorable<Item,Score>>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Scorables.IScorable`2
+    name: IScorable
+    nameWithType: IScorable
+    fullName: Microsoft.Bot.Builder.Scorables.IScorable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Item
+    name: Item
+    nameWithType: Item
+    fullName: Item
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: Score
+    name: Score
+    nameWithType: Score
+    fullName: Score
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Internals.TraitsScorable`2.OnStageHandler(Microsoft.Bot.Builder.Scorables.Internals.FoldStage,Microsoft.Bot.Builder.Scorables.IScorable{`0,`1},`0,System.Object,`1)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.TraitsScorable`2
+  isExternal: false
+  name: OnStageHandler(FoldStage, IScorable<Item,Score>, Item, Object, Score)
+  nameWithType: TraitsScorable<Item,Score>.OnStageHandler(FoldStage, IScorable<Item,Score>, Item, Object, Score)
+  fullName: TraitsScorable<Item,Score>.OnStageHandler(FoldStage, IScorable<Item,Score>, Item, Object, Score)
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Bot.Builder.Scorables.Internals.FoldStage
+  parent: Microsoft.Bot.Builder.Scorables.Internals
+  isExternal: false
+  name: FoldStage
+  nameWithType: FoldStage
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.FoldStage
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Scorables.Internals.TraitsScorable`2.#ctor*
+  parent: Microsoft.Bot.Builder.Scorables.Internals.TraitsScorable`2
+  isExternal: false
+  name: TraitsScorable<Item,Score>
+  nameWithType: TraitsScorable<Item,Score>.TraitsScorable<Item,Score>
+  fullName: TraitsScorable<Item,Score>.TraitsScorable<Item,Score>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/TraitsScorable`2.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.TraitsScorable`2.OnStageHandler*
+  parent: Microsoft.Bot.Builder.Scorables.Internals.TraitsScorable`2
+  isExternal: false
+  name: OnStageHandler
+  nameWithType: TraitsScorable<Item,Score>.OnStageHandler
+  fullName: TraitsScorable<Item,Score>.OnStageHandler
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/TraitsScorable`2.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Normalize(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Luis.Models.IntentRecommendation})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Normalize(IScorable<IResolver,IntentRecommendation>)
+  nameWithType: Actions.Normalize(IScorable<IResolver,IntentRecommendation>)
+  fullName: Actions.Normalize(IScorable<IResolver,IntentRecommendation>)
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Normalize(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Normalize(IScorable<IResolver,IBinding>)
+  nameWithType: Actions.Normalize(IScorable<IResolver,IBinding>)
+  fullName: Actions.Normalize(IScorable<IResolver,IBinding>)
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Normalize(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Normalize(IScorable<IResolver,Match>)
+  nameWithType: Actions.Normalize(IScorable<IResolver,Match>)
+  fullName: Actions.Normalize(IScorable<IResolver,Match>)
+- uid: Microsoft.Bot.Builder.Scorables.Actions.When``1(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},Microsoft.Bot.Builder.Luis.ILuisModel,Microsoft.Bot.Builder.Dialogs.LuisIntentAttribute,Microsoft.Bot.Builder.Luis.ILuisService)
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: When<InnerScore>(IScorable<IResolver,InnerScore>, ILuisModel, LuisIntentAttribute, ILuisService)
+  nameWithType: Actions.When<InnerScore>(IScorable<IResolver,InnerScore>, ILuisModel, LuisIntentAttribute, ILuisService)
+  fullName: Actions.When<InnerScore>(IScorable<IResolver,InnerScore>, ILuisModel, LuisIntentAttribute, ILuisService)
+- uid: Microsoft.Bot.Builder.Scorables.Actions.When``1(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Text.RegularExpressions.Regex)
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: When<InnerScore>(IScorable<IResolver,InnerScore>, Regex)
+  nameWithType: Actions.When<InnerScore>(IScorable<IResolver,InnerScore>, Regex)
+  fullName: Actions.When<InnerScore>(IScorable<IResolver,InnerScore>, Regex)
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Where``2(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,System.Boolean})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Where<Score,T1>(IScorable<IResolver,Score>, Func<T1,Boolean>)
+  nameWithType: Actions.Where<Score,T1>(IScorable<IResolver,Score>, Func<T1,Boolean>)
+  fullName: Actions.Where<Score,T1>(IScorable<IResolver,Score>, Func<T1,Boolean>)
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Where``2(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,System.Threading.Tasks.Task{System.Boolean}})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Where<Score,T1>(IScorable<IResolver,Score>, Func<T1,Task<Boolean>>)
+  nameWithType: Actions.Where<Score,T1>(IScorable<IResolver,Score>, Func<T1,Task<Boolean>>)
+  fullName: Actions.Where<Score,T1>(IScorable<IResolver,Score>, Func<T1,Task<Boolean>>)
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Where``3(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,System.Boolean})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Where<Score,T1,T2>(IScorable<IResolver,Score>, Func<T1,T2,Boolean>)
+  nameWithType: Actions.Where<Score,T1,T2>(IScorable<IResolver,Score>, Func<T1,T2,Boolean>)
+  fullName: Actions.Where<Score,T1,T2>(IScorable<IResolver,Score>, Func<T1,T2,Boolean>)
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Where``3(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,System.Threading.Tasks.Task{System.Boolean}})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Where<Score,T1,T2>(IScorable<IResolver,Score>, Func<T1,T2,Task<Boolean>>)
+  nameWithType: Actions.Where<Score,T1,T2>(IScorable<IResolver,Score>, Func<T1,T2,Task<Boolean>>)
+  fullName: Actions.Where<Score,T1,T2>(IScorable<IResolver,Score>, Func<T1,T2,Task<Boolean>>)
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Where``4(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,``3,System.Boolean})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Where<Score,T1,T2,T3>(IScorable<IResolver,Score>, Func<T1,T2,T3,Boolean>)
+  nameWithType: Actions.Where<Score,T1,T2,T3>(IScorable<IResolver,Score>, Func<T1,T2,T3,Boolean>)
+  fullName: Actions.Where<Score,T1,T2,T3>(IScorable<IResolver,Score>, Func<T1,T2,T3,Boolean>)
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Where``4(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,``3,System.Threading.Tasks.Task{System.Boolean}})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Where<Score,T1,T2,T3>(IScorable<IResolver,Score>, Func<T1,T2,T3,Task<Boolean>>)
+  nameWithType: Actions.Where<Score,T1,T2,T3>(IScorable<IResolver,Score>, Func<T1,T2,T3,Task<Boolean>>)
+  fullName: Actions.Where<Score,T1,T2,T3>(IScorable<IResolver,Score>, Func<T1,T2,T3,Task<Boolean>>)
+- uid: Microsoft.Bot.Builder.Scorables.Scorable.SelectItem``3(Microsoft.Bot.Builder.Scorables.IScorable{``1,``2},System.Func{``0,``1})
+  parent: Microsoft.Bot.Builder.Scorables.Scorable
+  isExternal: false
+  name: SelectItem<SourceItem,TargetItem,Score>(IScorable<TargetItem,Score>, Func<SourceItem,TargetItem>)
+  nameWithType: Scorable.SelectItem<SourceItem,TargetItem,Score>(IScorable<TargetItem,Score>, Func<SourceItem,TargetItem>)
+  fullName: Scorable.SelectItem<SourceItem,TargetItem,Score>(IScorable<TargetItem,Score>, Func<SourceItem,TargetItem>)
+- uid: Microsoft.Bot.Builder.Scorables.Scorable.SelectScore``3(Microsoft.Bot.Builder.Scorables.IScorable{``0,``1},System.Func{``0,``1,``2})
+  parent: Microsoft.Bot.Builder.Scorables.Scorable
+  isExternal: false
+  name: SelectScore<Item,SourceScore,TargetScore>(IScorable<Item,SourceScore>, Func<Item,SourceScore,TargetScore>)
+  nameWithType: Scorable.SelectScore<Item,SourceScore,TargetScore>(IScorable<Item,SourceScore>, Func<Item,SourceScore,TargetScore>)
+  fullName: Scorable.SelectScore<Item,SourceScore,TargetScore>(IScorable<Item,SourceScore>, Func<Item,SourceScore,TargetScore>)
+- uid: Microsoft.Bot.Builder.Scorables.Scorable.TryPostAsync``2(Microsoft.Bot.Builder.Scorables.IScorable{``0,``1},``0,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Scorables.Scorable
+  isExternal: false
+  name: TryPostAsync<Item,Score>(IScorable<Item,Score>, Item, CancellationToken)
+  nameWithType: Scorable.TryPostAsync<Item,Score>(IScorable<Item,Score>, Item, CancellationToken)
+  fullName: Scorable.TryPostAsync<Item,Score>(IScorable<Item,Score>, Item, CancellationToken)
+- uid: Microsoft.Bot.Builder.Scorables.Scorable.WhereScore``2(Microsoft.Bot.Builder.Scorables.IScorable{``0,``1},System.Func{``0,``1,System.Boolean})
+  parent: Microsoft.Bot.Builder.Scorables.Scorable
+  isExternal: false
+  name: WhereScore<Item,Score>(IScorable<Item,Score>, Func<Item,Score,Boolean>)
+  nameWithType: Scorable.WhereScore<Item,Score>(IScorable<Item,Score>, Func<Item,Score,Boolean>)
+  fullName: Scorable.WhereScore<Item,Score>(IScorable<Item,Score>, Func<Item,Score,Boolean>)

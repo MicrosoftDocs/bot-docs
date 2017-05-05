@@ -1,0 +1,73 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.IThunk
+  commentId: T:Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.IThunk
+  id: DialogTask.IThunk
+  children:
+  - Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.IThunk.Method
+  langs:
+  - csharp
+  name: DialogTask.IThunk
+  nameWithType: DialogTask.IThunk
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.IThunk
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: Adjust the calling convention from Dialog's to Fiber's delegates.
+  remarks: https://en.wikipedia.org/wiki/Thunk
+  syntax:
+    content: public interface DialogTask.IThunk
+  implements: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/DialogTask+IThunk.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.IThunk.Method
+  commentId: P:Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.IThunk.Method
+  id: Method
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.IThunk
+  langs:
+  - csharp
+  name: Method
+  nameWithType: DialogTask.IThunk.Method
+  fullName: DialogTask.IThunk.Method
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: public Delegate Method { get; }
+    return:
+      type: System.Delegate
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.IThunk.Method*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/DialogTask+IThunk.xml
+references:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.IThunk.Method
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.IThunk
+  isExternal: false
+  name: Method
+  nameWithType: DialogTask.IThunk.Method
+  fullName: DialogTask.IThunk.Method
+- uid: System.Delegate
+  parent: System
+  isExternal: true
+  name: Delegate
+  nameWithType: Delegate
+  fullName: System.Delegate
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.IThunk.Method*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.IThunk
+  isExternal: false
+  name: Method
+  nameWithType: DialogTask.IThunk.Method
+  fullName: DialogTask.IThunk.Method
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/DialogTask+IThunk.xml

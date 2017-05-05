@@ -1,0 +1,71 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogSystem
+  commentId: T:Microsoft.Bot.Builder.Dialogs.Internals.IDialogSystem
+  id: IDialogSystem
+  children: []
+  langs:
+  - csharp
+  name: IDialogSystem
+  nameWithType: IDialogSystem
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.IDialogSystem
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: The dialog system represents the top-level interface for the dialog tasks and their event loop.
+  syntax:
+    content: 'public interface IDialogSystem : Microsoft.Bot.Builder.Base.IEventLoop, Microsoft.Bot.Builder.Base.IEventProducer<Microsoft.Bot.Connector.IActivity>, Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks'
+  derivedClasses:
+  - Microsoft.Bot.Builder.Dialogs.Internals.DialogSystem
+  implements:
+  - Microsoft.Bot.Builder.Base.IEventLoop
+  - Microsoft.Bot.Builder.Base.IEventProducer{Microsoft.Bot.Connector.IActivity}
+  - Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IDialogSystem.xml
+references:
+- uid: Microsoft.Bot.Builder.Base.IEventLoop
+  parent: Microsoft.Bot.Builder.Base
+  isExternal: false
+  name: IEventLoop
+  nameWithType: IEventLoop
+  fullName: Microsoft.Bot.Builder.Base.IEventLoop
+- uid: Microsoft.Bot.Builder.Base.IEventProducer`1
+  name: IEventProducer<Event>
+  nameWithType: IEventProducer<Event>
+  fullName: Microsoft.Bot.Builder.Base.IEventProducer<Event>
+- uid: Microsoft.Bot.Connector.IActivity
+  name: IActivity
+  nameWithType: IActivity
+  fullName: Microsoft.Bot.Connector.IActivity
+- uid: Microsoft.Bot.Builder.Base.IEventProducer{Microsoft.Bot.Connector.IActivity}
+  parent: Microsoft.Bot.Builder.Base
+  isExternal: false
+  name: IEventProducer<IActivity>
+  nameWithType: IEventProducer<IActivity>
+  fullName: Microsoft.Bot.Builder.Base.IEventProducer<Microsoft.Bot.Connector.IActivity>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Base.IEventProducer`1
+    name: IEventProducer
+    nameWithType: IEventProducer
+    fullName: Microsoft.Bot.Builder.Base.IEventProducer
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.IActivity
+    name: IActivity
+    nameWithType: IActivity
+    fullName: Microsoft.Bot.Connector.IActivity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks
+  parent: Microsoft.Bot.Builder.Dialogs.Internals
+  isExternal: false
+  name: IDialogTasks
+  nameWithType: IDialogTasks
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks

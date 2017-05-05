@@ -1,0 +1,117 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder
+  commentId: T:Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder
+  id: ILocaleFinder
+  children:
+  - Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder.FindLocale(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  name: ILocaleFinder
+  nameWithType: ILocaleFinder
+  fullName: Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.ConnectorEx
+  summary: The interface for finding and setting locale for <xref href="Microsoft.Bot.Builder.Base.LocalizedScope"></xref> in <xref href="Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture"></xref>.
+  syntax:
+    content: public interface ILocaleFinder
+  derivedClasses:
+  - Microsoft.Bot.Builder.ConnectorEx.LocaleFinder
+  implements: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/ILocaleFinder.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder.FindLocale(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder.FindLocale(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  id: FindLocale(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder
+  langs:
+  - csharp
+  name: FindLocale(IActivity, CancellationToken)
+  nameWithType: ILocaleFinder.FindLocale(IActivity, CancellationToken)
+  fullName: ILocaleFinder.FindLocale(IActivity, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.ConnectorEx
+  summary: Given an activity it finds the locale.
+  syntax:
+    content: public System.Threading.Tasks.Task<string> FindLocale (Microsoft.Bot.Connector.IActivity activity, System.Threading.CancellationToken token);
+    parameters:
+    - id: activity
+      type: Microsoft.Bot.Connector.IActivity
+      description: The activity.
+    - id: token
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder.FindLocale*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/ILocaleFinder.xml
+references:
+- uid: Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder.FindLocale(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder
+  isExternal: false
+  name: FindLocale(IActivity, CancellationToken)
+  nameWithType: ILocaleFinder.FindLocale(IActivity, CancellationToken)
+  fullName: ILocaleFinder.FindLocale(IActivity, CancellationToken)
+- uid: System.Threading.Tasks.Task`1
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.String
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: System.Threading.Tasks.Task<System.String>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Connector.IActivity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IActivity
+  nameWithType: IActivity
+  fullName: Microsoft.Bot.Connector.IActivity
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder.FindLocale*
+  parent: Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder
+  isExternal: false
+  name: FindLocale
+  nameWithType: ILocaleFinder.FindLocale
+  fullName: ILocaleFinder.FindLocale
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/ILocaleFinder.xml

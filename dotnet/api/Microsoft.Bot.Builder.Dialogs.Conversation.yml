@@ -1,0 +1,312 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.Conversation
+  commentId: T:Microsoft.Bot.Builder.Dialogs.Conversation
+  id: Conversation
+  children:
+  - Microsoft.Bot.Builder.Dialogs.Conversation.Container
+  - Microsoft.Bot.Builder.Dialogs.Conversation.ResumeAsync(Microsoft.Bot.Builder.Dialogs.ResumptionCookie,Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Dialogs.Conversation.ResumeAsync(Microsoft.Bot.Connector.ConversationReference,Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Dialogs.Conversation.SendAsync(Microsoft.Bot.Connector.IMessageActivity,System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{System.Object}},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  name: Conversation
+  nameWithType: Conversation
+  fullName: Microsoft.Bot.Builder.Dialogs.Conversation
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder.Autofac
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: The top level composition root for the SDK.
+  syntax:
+    content: public static class Conversation
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/Conversation.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Conversation.Container
+  commentId: F:Microsoft.Bot.Builder.Dialogs.Conversation.Container
+  id: Container
+  parent: Microsoft.Bot.Builder.Dialogs.Conversation
+  langs:
+  - csharp
+  name: Container
+  nameWithType: Conversation.Container
+  fullName: Conversation.Container
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: public static readonly Autofac.IContainer Container;
+    return:
+      type: Autofac.IContainer
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/Conversation.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Conversation.ResumeAsync(Microsoft.Bot.Builder.Dialogs.ResumptionCookie,Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Conversation.ResumeAsync(Microsoft.Bot.Builder.Dialogs.ResumptionCookie,Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  id: ResumeAsync(Microsoft.Bot.Builder.Dialogs.ResumptionCookie,Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Conversation
+  langs:
+  - csharp
+  name: ResumeAsync(ResumptionCookie, IActivity, CancellationToken)
+  nameWithType: Conversation.ResumeAsync(ResumptionCookie, IActivity, CancellationToken)
+  fullName: Conversation.ResumeAsync(ResumptionCookie, IActivity, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Resume a conversation and post the data to the dialog waiting.
+  syntax:
+    content: >-
+      [System.Obsolete("Use the overload that uses ConversationReference instead of ResumptionCookie")]
+
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Conversation/<ResumeAsync>d__3))]
+
+      public static System.Threading.Tasks.Task ResumeAsync (Microsoft.Bot.Builder.Dialogs.ResumptionCookie resumptionCookie, Microsoft.Bot.Connector.IActivity toBot, System.Threading.CancellationToken token = null);
+    parameters:
+    - id: resumptionCookie
+      type: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+      description: The resumption cookie.
+    - id: toBot
+      type: Microsoft.Bot.Connector.IActivity
+      description: The data sent to bot.
+    - id: token
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task that represent the message to send back to the user after resumption of the conversation.
+  overload: Microsoft.Bot.Builder.Dialogs.Conversation.ResumeAsync*
+  exceptions: []
+  attributes:
+  - type: System.Obsolete
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/Conversation.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Conversation.ResumeAsync(Microsoft.Bot.Connector.ConversationReference,Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Conversation.ResumeAsync(Microsoft.Bot.Connector.ConversationReference,Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  id: ResumeAsync(Microsoft.Bot.Connector.ConversationReference,Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Conversation
+  langs:
+  - csharp
+  name: ResumeAsync(ConversationReference, IActivity, CancellationToken)
+  nameWithType: Conversation.ResumeAsync(ConversationReference, IActivity, CancellationToken)
+  fullName: Conversation.ResumeAsync(ConversationReference, IActivity, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Resume a conversation and post the data to the dialog waiting.
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Conversation/<ResumeAsync>d__4))]
+
+      public static System.Threading.Tasks.Task ResumeAsync (Microsoft.Bot.Connector.ConversationReference conversationReference, Microsoft.Bot.Connector.IActivity toBot, System.Threading.CancellationToken token = null);
+    parameters:
+    - id: conversationReference
+      type: Microsoft.Bot.Connector.ConversationReference
+      description: The resumption cookie.
+    - id: toBot
+      type: Microsoft.Bot.Connector.IActivity
+      description: The data sent to bot.
+    - id: token
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task that represent the message to send back to the user after resumption of the conversation.
+  overload: Microsoft.Bot.Builder.Dialogs.Conversation.ResumeAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/Conversation.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Conversation.SendAsync(Microsoft.Bot.Connector.IMessageActivity,System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{System.Object}},System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Conversation.SendAsync(Microsoft.Bot.Connector.IMessageActivity,System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{System.Object}},System.Threading.CancellationToken)
+  id: SendAsync(Microsoft.Bot.Connector.IMessageActivity,System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{System.Object}},System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Conversation
+  langs:
+  - csharp
+  name: SendAsync(IMessageActivity, Func<IDialog<Object>>, CancellationToken)
+  nameWithType: Conversation.SendAsync(IMessageActivity, Func<IDialog<Object>>, CancellationToken)
+  fullName: Conversation.SendAsync(IMessageActivity, Func<IDialog<Object>>, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Process an incoming message within the conversation.
+  remarks: "This method:\n            1. Instantiates and composes the required components.\n            2. Deserializes the dialog state (the dialog stack and each dialog's state) from the <code>toBot</code><xref href=\"Microsoft.Bot.Connector.IMessageActivity\"></xref>.\n            3. Resumes the conversation processes where the dialog suspended to wait for a <xref href=\"Microsoft.Bot.Connector.IMessageActivity\"></xref>.\n            4. Queues <xref href=\"Microsoft.Bot.Connector.IMessageActivity\"></xref>s to be sent to the user.\n            5. Serializes the updated dialog state in the messages to be sent to the user.\n            \n            The <code>MakeRoot</code> factory method is invoked for new conversations only,\n            because existing conversations have the dialog stack and state serialized in the <xref href=\"Microsoft.Bot.Connector.IMessageActivity\"></xref> data."
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Conversation/<SendAsync>d__2))]
+
+      public static System.Threading.Tasks.Task SendAsync (Microsoft.Bot.Connector.IMessageActivity toBot, Func<Microsoft.Bot.Builder.Dialogs.IDialog<object>> MakeRoot, System.Threading.CancellationToken token = null);
+    parameters:
+    - id: toBot
+      type: Microsoft.Bot.Connector.IMessageActivity
+      description: The message sent to the bot.
+    - id: MakeRoot
+      type: System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{System.Object}}
+      description: The factory method to make the root dialog.
+    - id: token
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task that represents the message to send inline back to the user.
+  overload: Microsoft.Bot.Builder.Dialogs.Conversation.SendAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/Conversation.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Dialogs.Conversation.Container
+  parent: Microsoft.Bot.Builder.Dialogs.Conversation
+  isExternal: false
+  name: Container
+  nameWithType: Conversation.Container
+  fullName: Conversation.Container
+- uid: Autofac.IContainer
+  parent: Autofac
+  isExternal: true
+  name: IContainer
+  nameWithType: IContainer
+  fullName: Autofac.IContainer
+- uid: Microsoft.Bot.Builder.Dialogs.Conversation.ResumeAsync(Microsoft.Bot.Builder.Dialogs.ResumptionCookie,Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Conversation
+  isExternal: false
+  name: ResumeAsync(ResumptionCookie, IActivity, CancellationToken)
+  nameWithType: Conversation.ResumeAsync(ResumptionCookie, IActivity, CancellationToken)
+  fullName: Conversation.ResumeAsync(ResumptionCookie, IActivity, CancellationToken)
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: ResumptionCookie
+  nameWithType: ResumptionCookie
+  fullName: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+- uid: Microsoft.Bot.Connector.IActivity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IActivity
+  nameWithType: IActivity
+  fullName: Microsoft.Bot.Connector.IActivity
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Builder.Dialogs.Conversation.ResumeAsync(Microsoft.Bot.Connector.ConversationReference,Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Conversation
+  isExternal: false
+  name: ResumeAsync(ConversationReference, IActivity, CancellationToken)
+  nameWithType: Conversation.ResumeAsync(ConversationReference, IActivity, CancellationToken)
+  fullName: Conversation.ResumeAsync(ConversationReference, IActivity, CancellationToken)
+- uid: Microsoft.Bot.Connector.ConversationReference
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: ConversationReference
+  nameWithType: ConversationReference
+  fullName: Microsoft.Bot.Connector.ConversationReference
+- uid: Microsoft.Bot.Builder.Dialogs.Conversation.SendAsync(Microsoft.Bot.Connector.IMessageActivity,System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{System.Object}},System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Conversation
+  isExternal: false
+  name: SendAsync(IMessageActivity, Func<IDialog<Object>>, CancellationToken)
+  nameWithType: Conversation.SendAsync(IMessageActivity, Func<IDialog<Object>>, CancellationToken)
+  fullName: Conversation.SendAsync(IMessageActivity, Func<IDialog<Object>>, CancellationToken)
+- uid: Microsoft.Bot.Connector.IMessageActivity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IMessageActivity
+  nameWithType: IMessageActivity
+  fullName: Microsoft.Bot.Connector.IMessageActivity
+- uid: System.Func`1
+  name: Func
+  nameWithType: Func
+  fullName: System.Func
+- uid: Microsoft.Bot.Builder.Dialogs.IDialog`1
+  name: IDialog<TResult>
+  nameWithType: IDialog<TResult>
+  fullName: Microsoft.Bot.Builder.Dialogs.IDialog<TResult>
+- uid: System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{System.Object}}
+  parent: System
+  isExternal: true
+  name: Func<IDialog<Object>>
+  nameWithType: Func<IDialog<Object>>
+  fullName: System.Func<Microsoft.Bot.Builder.Dialogs.IDialog<System.Object>>
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Dialogs.IDialog`1
+    name: IDialog
+    nameWithType: IDialog
+    fullName: Microsoft.Bot.Builder.Dialogs.IDialog
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.Conversation.ResumeAsync*
+  parent: Microsoft.Bot.Builder.Dialogs.Conversation
+  isExternal: false
+  name: ResumeAsync
+  nameWithType: Conversation.ResumeAsync
+  fullName: Conversation.ResumeAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/Conversation.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Conversation.SendAsync*
+  parent: Microsoft.Bot.Builder.Dialogs.Conversation
+  isExternal: false
+  name: SendAsync
+  nameWithType: Conversation.SendAsync
+  fullName: Conversation.SendAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/Conversation.xml

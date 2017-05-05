@@ -1,0 +1,84 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.MultipleResumeHandlerException
+  commentId: T:Microsoft.Bot.Builder.Dialogs.MultipleResumeHandlerException
+  id: MultipleResumeHandlerException
+  children:
+  - Microsoft.Bot.Builder.Dialogs.MultipleResumeHandlerException.#ctor(System.Exception)
+  langs:
+  - csharp
+  name: MultipleResumeHandlerException
+  nameWithType: MultipleResumeHandlerException
+  fullName: Microsoft.Bot.Builder.Dialogs.MultipleResumeHandlerException
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: The exception representing multiple resume handlers specified for the dialog stack.
+  syntax:
+    content: 'public sealed class MultipleResumeHandlerException : Microsoft.Bot.Builder.Dialogs.DialogStackException'
+  inheritance:
+  - System.Exception
+  - Microsoft.Bot.Builder.Dialogs.DialogStackException
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/MultipleResumeHandlerException.xml
+- uid: Microsoft.Bot.Builder.Dialogs.MultipleResumeHandlerException.#ctor(System.Exception)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.MultipleResumeHandlerException.#ctor(System.Exception)
+  id: '#ctor(System.Exception)'
+  parent: Microsoft.Bot.Builder.Dialogs.MultipleResumeHandlerException
+  langs:
+  - csharp
+  name: MultipleResumeHandlerException(Exception)
+  nameWithType: MultipleResumeHandlerException.MultipleResumeHandlerException(Exception)
+  fullName: MultipleResumeHandlerException.MultipleResumeHandlerException(Exception)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Initializes a new instance of the MultipleResumeHandlerException class.
+  syntax:
+    content: public MultipleResumeHandlerException (Exception inner);
+    parameters:
+    - id: inner
+      type: System.Exception
+      description: The exception that is the cause of the current exception, or a null reference (Nothing in Visual Basic) if no inner exception is specified.
+  overload: Microsoft.Bot.Builder.Dialogs.MultipleResumeHandlerException.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/MultipleResumeHandlerException.xml
+references:
+- uid: Microsoft.Bot.Builder.Dialogs.DialogStackException
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: DialogStackException
+  nameWithType: DialogStackException
+  fullName: Microsoft.Bot.Builder.Dialogs.DialogStackException
+- uid: Microsoft.Bot.Builder.Dialogs.MultipleResumeHandlerException.#ctor(System.Exception)
+  parent: Microsoft.Bot.Builder.Dialogs.MultipleResumeHandlerException
+  isExternal: false
+  name: MultipleResumeHandlerException(Exception)
+  nameWithType: MultipleResumeHandlerException.MultipleResumeHandlerException(Exception)
+  fullName: MultipleResumeHandlerException.MultipleResumeHandlerException(Exception)
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Microsoft.Bot.Builder.Dialogs.MultipleResumeHandlerException.#ctor*
+  parent: Microsoft.Bot.Builder.Dialogs.MultipleResumeHandlerException
+  isExternal: false
+  name: MultipleResumeHandlerException
+  nameWithType: MultipleResumeHandlerException.MultipleResumeHandlerException
+  fullName: MultipleResumeHandlerException.MultipleResumeHandlerException
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/MultipleResumeHandlerException.xml

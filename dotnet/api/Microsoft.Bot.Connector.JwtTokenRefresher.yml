@@ -1,0 +1,175 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.JwtTokenRefresher
+  commentId: T:Microsoft.Bot.Connector.JwtTokenRefresher
+  id: JwtTokenRefresher
+  children:
+  - Microsoft.Bot.Connector.JwtTokenRefresher.#ctor(Microsoft.Bot.Connector.MicrosoftAppCredentials)
+  - Microsoft.Bot.Connector.JwtTokenRefresher.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  name: JwtTokenRefresher
+  nameWithType: JwtTokenRefresher
+  fullName: Microsoft.Bot.Connector.JwtTokenRefresher
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: 'public class JwtTokenRefresher : System.Net.Http.DelegatingHandler'
+  inheritance:
+  - System.Net.Http.DelegatingHandler
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/JwtTokenRefresher.xml
+- uid: Microsoft.Bot.Connector.JwtTokenRefresher.#ctor(Microsoft.Bot.Connector.MicrosoftAppCredentials)
+  commentId: M:Microsoft.Bot.Connector.JwtTokenRefresher.#ctor(Microsoft.Bot.Connector.MicrosoftAppCredentials)
+  id: '#ctor(Microsoft.Bot.Connector.MicrosoftAppCredentials)'
+  parent: Microsoft.Bot.Connector.JwtTokenRefresher
+  langs:
+  - csharp
+  name: JwtTokenRefresher(MicrosoftAppCredentials)
+  nameWithType: JwtTokenRefresher.JwtTokenRefresher(MicrosoftAppCredentials)
+  fullName: JwtTokenRefresher.JwtTokenRefresher(MicrosoftAppCredentials)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public JwtTokenRefresher (Microsoft.Bot.Connector.MicrosoftAppCredentials credentials);
+    parameters:
+    - id: credentials
+      type: Microsoft.Bot.Connector.MicrosoftAppCredentials
+      description: To be added.
+  overload: Microsoft.Bot.Connector.JwtTokenRefresher.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/JwtTokenRefresher.xml
+- uid: Microsoft.Bot.Connector.JwtTokenRefresher.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.JwtTokenRefresher.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  id: SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.JwtTokenRefresher
+  langs:
+  - csharp
+  name: SendAsync(HttpRequestMessage, CancellationToken)
+  nameWithType: JwtTokenRefresher.SendAsync(HttpRequestMessage, CancellationToken)
+  fullName: JwtTokenRefresher.SendAsync(HttpRequestMessage, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.JwtTokenRefresher/<SendAsync>d__2))]
+
+      protected override System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage> SendAsync (System.Net.Http.HttpRequestMessage request, System.Threading.CancellationToken cancellationToken);
+    parameters:
+    - id: request
+      type: System.Net.Http.HttpRequestMessage
+      description: To be added.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.JwtTokenRefresher.SendAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/JwtTokenRefresher.xml
+references:
+- uid: System.Net.Http.DelegatingHandler
+  parent: System.Net.Http
+  isExternal: true
+  name: DelegatingHandler
+  nameWithType: DelegatingHandler
+  fullName: System.Net.Http.DelegatingHandler
+- uid: Microsoft.Bot.Connector.JwtTokenRefresher.#ctor(Microsoft.Bot.Connector.MicrosoftAppCredentials)
+  parent: Microsoft.Bot.Connector.JwtTokenRefresher
+  isExternal: false
+  name: JwtTokenRefresher(MicrosoftAppCredentials)
+  nameWithType: JwtTokenRefresher.JwtTokenRefresher(MicrosoftAppCredentials)
+  fullName: JwtTokenRefresher.JwtTokenRefresher(MicrosoftAppCredentials)
+- uid: Microsoft.Bot.Connector.MicrosoftAppCredentials
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: MicrosoftAppCredentials
+  nameWithType: MicrosoftAppCredentials
+  fullName: Microsoft.Bot.Connector.MicrosoftAppCredentials
+- uid: Microsoft.Bot.Connector.JwtTokenRefresher.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.JwtTokenRefresher
+  isExternal: false
+  name: SendAsync(HttpRequestMessage, CancellationToken)
+  nameWithType: JwtTokenRefresher.SendAsync(HttpRequestMessage, CancellationToken)
+  fullName: JwtTokenRefresher.SendAsync(HttpRequestMessage, CancellationToken)
+- uid: System.Threading.Tasks.Task`1
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Net.Http.HttpResponseMessage
+  name: HttpResponseMessage
+  nameWithType: HttpResponseMessage
+  fullName: System.Net.Http.HttpResponseMessage
+- uid: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<HttpResponseMessage>
+  nameWithType: Task<HttpResponseMessage>
+  fullName: System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Net.Http.HttpResponseMessage
+    name: HttpResponseMessage
+    nameWithType: HttpResponseMessage
+    fullName: System.Net.Http.HttpResponseMessage
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Net.Http.HttpRequestMessage
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpRequestMessage
+  nameWithType: HttpRequestMessage
+  fullName: System.Net.Http.HttpRequestMessage
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Connector.JwtTokenRefresher.#ctor*
+  parent: Microsoft.Bot.Connector.JwtTokenRefresher
+  isExternal: false
+  name: JwtTokenRefresher
+  nameWithType: JwtTokenRefresher.JwtTokenRefresher
+  fullName: JwtTokenRefresher.JwtTokenRefresher
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/JwtTokenRefresher.xml
+- uid: Microsoft.Bot.Connector.JwtTokenRefresher.SendAsync*
+  parent: Microsoft.Bot.Connector.JwtTokenRefresher
+  isExternal: false
+  name: SendAsync
+  nameWithType: JwtTokenRefresher.SendAsync
+  fullName: JwtTokenRefresher.SendAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/JwtTokenRefresher.xml

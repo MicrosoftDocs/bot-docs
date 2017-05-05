@@ -1,0 +1,572 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.IMessageActivity
+  commentId: T:Microsoft.Bot.Connector.IMessageActivity
+  id: IMessageActivity
+  children:
+  - Microsoft.Bot.Connector.IMessageActivity.AttachmentLayout
+  - Microsoft.Bot.Connector.IMessageActivity.Attachments
+  - Microsoft.Bot.Connector.IMessageActivity.Entities
+  - Microsoft.Bot.Connector.IMessageActivity.GetChannelData``1
+  - Microsoft.Bot.Connector.IMessageActivity.GetMentions
+  - Microsoft.Bot.Connector.IMessageActivity.HasContent
+  - Microsoft.Bot.Connector.IMessageActivity.Locale
+  - Microsoft.Bot.Connector.IMessageActivity.Summary
+  - Microsoft.Bot.Connector.IMessageActivity.Text
+  - Microsoft.Bot.Connector.IMessageActivity.TextFormat
+  langs:
+  - csharp
+  name: IMessageActivity
+  nameWithType: IMessageActivity
+  fullName: Microsoft.Bot.Connector.IMessageActivity
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: A message in a conversation
+  syntax:
+    content: 'public interface IMessageActivity : Microsoft.Bot.Connector.IActivity'
+  derivedClasses:
+  - Microsoft.Bot.Connector.Activity
+  implements:
+  - Microsoft.Bot.Connector.IActivity
+  extensionMethods:
+  - Microsoft.Bot.Builder.ConnectorEx.Extensions.ToConversationReference(Microsoft.Bot.Connector.IActivity)
+  - Microsoft.Bot.Builder.Dialogs.Extensions.AddHeroCard``1(Microsoft.Bot.Connector.IMessageActivity,System.String,System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{System.String})
+  - Microsoft.Bot.Builder.Dialogs.Extensions.AddKeyboardCard``1(Microsoft.Bot.Connector.IMessageActivity,System.String,System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{System.String})
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IMessageActivity.xml
+- uid: Microsoft.Bot.Connector.IMessageActivity.AttachmentLayout
+  commentId: P:Microsoft.Bot.Connector.IMessageActivity.AttachmentLayout
+  id: AttachmentLayout
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  langs:
+  - csharp
+  name: AttachmentLayout
+  nameWithType: IMessageActivity.AttachmentLayout
+  fullName: IMessageActivity.AttachmentLayout
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: 'Hint for how to deal with multiple attachments: [list|carousel] Default:list'
+  syntax:
+    content: public string AttachmentLayout { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IMessageActivity.AttachmentLayout*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IMessageActivity.xml
+- uid: Microsoft.Bot.Connector.IMessageActivity.Attachments
+  commentId: P:Microsoft.Bot.Connector.IMessageActivity.Attachments
+  id: Attachments
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  langs:
+  - csharp
+  name: Attachments
+  nameWithType: IMessageActivity.Attachments
+  fullName: IMessageActivity.Attachments
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Attachments
+  syntax:
+    content: public System.Collections.Generic.IList<Microsoft.Bot.Connector.Attachment> Attachments { get; set; }
+    return:
+      type: System.Collections.Generic.IList{Microsoft.Bot.Connector.Attachment}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IMessageActivity.Attachments*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IMessageActivity.xml
+- uid: Microsoft.Bot.Connector.IMessageActivity.Entities
+  commentId: P:Microsoft.Bot.Connector.IMessageActivity.Entities
+  id: Entities
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  langs:
+  - csharp
+  name: Entities
+  nameWithType: IMessageActivity.Entities
+  fullName: IMessageActivity.Entities
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Collection of Entity objects, each of which contains metadata about this activity. Each Entity object is typed.
+  syntax:
+    content: public System.Collections.Generic.IList<Microsoft.Bot.Connector.Entity> Entities { get; set; }
+    return:
+      type: System.Collections.Generic.IList{Microsoft.Bot.Connector.Entity}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IMessageActivity.Entities*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IMessageActivity.xml
+- uid: Microsoft.Bot.Connector.IMessageActivity.GetChannelData``1
+  commentId: M:Microsoft.Bot.Connector.IMessageActivity.GetChannelData``1
+  id: GetChannelData``1
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  langs:
+  - csharp
+  name: GetChannelData<TypeT>()
+  nameWithType: IMessageActivity.GetChannelData<TypeT>()
+  fullName: IMessageActivity.GetChannelData<TypeT>()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Get channeldata as typed structure
+  syntax:
+    content: public TypeT GetChannelData<TypeT> ();
+    parameters: []
+    typeParameters:
+    - id: TypeT
+      description: type to use
+    return:
+      type: TypeT
+      description: typed object or default(TypeT)
+  overload: Microsoft.Bot.Connector.IMessageActivity.GetChannelData``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IMessageActivity.xml
+- uid: Microsoft.Bot.Connector.IMessageActivity.GetMentions
+  commentId: M:Microsoft.Bot.Connector.IMessageActivity.GetMentions
+  id: GetMentions
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  langs:
+  - csharp
+  name: GetMentions()
+  nameWithType: IMessageActivity.GetMentions()
+  fullName: IMessageActivity.GetMentions()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Get mentions
+  syntax:
+    content: public Microsoft.Bot.Connector.Mention[] GetMentions ();
+    parameters: []
+    return:
+      type: Microsoft.Bot.Connector.Mention[]
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IMessageActivity.GetMentions*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IMessageActivity.xml
+- uid: Microsoft.Bot.Connector.IMessageActivity.HasContent
+  commentId: M:Microsoft.Bot.Connector.IMessageActivity.HasContent
+  id: HasContent
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  langs:
+  - csharp
+  name: HasContent()
+  nameWithType: IMessageActivity.HasContent()
+  fullName: IMessageActivity.HasContent()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: True if this activity has text, attachments, or channelData
+  syntax:
+    content: public bool HasContent ();
+    parameters: []
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IMessageActivity.HasContent*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IMessageActivity.xml
+- uid: Microsoft.Bot.Connector.IMessageActivity.Locale
+  commentId: P:Microsoft.Bot.Connector.IMessageActivity.Locale
+  id: Locale
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  langs:
+  - csharp
+  name: Locale
+  nameWithType: IMessageActivity.Locale
+  fullName: IMessageActivity.Locale
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: The language code of the Text field
+  remarks: See https://msdn.microsoft.com/en-us/library/hh456380.aspx for a list of valid language codes
+  syntax:
+    content: public string Locale { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IMessageActivity.Locale*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IMessageActivity.xml
+- uid: Microsoft.Bot.Connector.IMessageActivity.Summary
+  commentId: P:Microsoft.Bot.Connector.IMessageActivity.Summary
+  id: Summary
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  langs:
+  - csharp
+  name: Summary
+  nameWithType: IMessageActivity.Summary
+  fullName: IMessageActivity.Summary
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Text to display if the channel cannot render cards
+  syntax:
+    content: public string Summary { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IMessageActivity.Summary*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IMessageActivity.xml
+- uid: Microsoft.Bot.Connector.IMessageActivity.Text
+  commentId: P:Microsoft.Bot.Connector.IMessageActivity.Text
+  id: Text
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  langs:
+  - csharp
+  name: Text
+  nameWithType: IMessageActivity.Text
+  fullName: IMessageActivity.Text
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Content for the message
+  syntax:
+    content: public string Text { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IMessageActivity.Text*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IMessageActivity.xml
+- uid: Microsoft.Bot.Connector.IMessageActivity.TextFormat
+  commentId: P:Microsoft.Bot.Connector.IMessageActivity.TextFormat
+  id: TextFormat
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  langs:
+  - csharp
+  name: TextFormat
+  nameWithType: IMessageActivity.TextFormat
+  fullName: IMessageActivity.TextFormat
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Format of text fields [plain|markdown] Default:markdown
+  syntax:
+    content: public string TextFormat { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IMessageActivity.TextFormat*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IMessageActivity.xml
+references:
+- uid: Microsoft.Bot.Connector.IMessageActivity.AttachmentLayout
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  isExternal: false
+  name: AttachmentLayout
+  nameWithType: IMessageActivity.AttachmentLayout
+  fullName: IMessageActivity.AttachmentLayout
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.IMessageActivity.Attachments
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  isExternal: false
+  name: Attachments
+  nameWithType: IMessageActivity.Attachments
+  fullName: IMessageActivity.Attachments
+- uid: System.Collections.Generic.IList`1
+  name: IList
+  nameWithType: IList
+  fullName: System.Collections.Generic.IList
+- uid: Microsoft.Bot.Connector.Attachment
+  name: Attachment
+  nameWithType: Attachment
+  fullName: Microsoft.Bot.Connector.Attachment
+- uid: System.Collections.Generic.IList{Microsoft.Bot.Connector.Attachment}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IList<Attachment>
+  nameWithType: IList<Attachment>
+  fullName: System.Collections.Generic.IList<Microsoft.Bot.Connector.Attachment>
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.Attachment
+    name: Attachment
+    nameWithType: Attachment
+    fullName: Microsoft.Bot.Connector.Attachment
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Connector.IMessageActivity.Entities
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  isExternal: false
+  name: Entities
+  nameWithType: IMessageActivity.Entities
+  fullName: IMessageActivity.Entities
+- uid: Microsoft.Bot.Connector.Entity
+  name: Entity
+  nameWithType: Entity
+  fullName: Microsoft.Bot.Connector.Entity
+- uid: System.Collections.Generic.IList{Microsoft.Bot.Connector.Entity}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IList<Entity>
+  nameWithType: IList<Entity>
+  fullName: System.Collections.Generic.IList<Microsoft.Bot.Connector.Entity>
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.Entity
+    name: Entity
+    nameWithType: Entity
+    fullName: Microsoft.Bot.Connector.Entity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Connector.IMessageActivity.GetChannelData``1
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  isExternal: false
+  name: GetChannelData<TypeT>()
+  nameWithType: IMessageActivity.GetChannelData<TypeT>()
+  fullName: IMessageActivity.GetChannelData<TypeT>()
+- uid: TypeT
+  isExternal: true
+  name: TypeT
+  nameWithType: TypeT
+  fullName: TypeT
+- uid: Microsoft.Bot.Connector.IMessageActivity.GetMentions
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  isExternal: false
+  name: GetMentions()
+  nameWithType: IMessageActivity.GetMentions()
+  fullName: IMessageActivity.GetMentions()
+- uid: Microsoft.Bot.Connector.Mention
+  name: Mention
+  nameWithType: Mention
+  fullName: Microsoft.Bot.Connector.Mention
+- uid: Microsoft.Bot.Connector.Mention[]
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: Mention[]
+  nameWithType: Mention[]
+  fullName: Microsoft.Bot.Connector.Mention[]
+  spec.csharp:
+  - uid: Microsoft.Bot.Connector.Mention
+    name: Mention
+    nameWithType: Mention
+    fullName: Microsoft.Bot.Connector.Mention
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: Microsoft.Bot.Connector.IMessageActivity.HasContent
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  isExternal: false
+  name: HasContent()
+  nameWithType: IMessageActivity.HasContent()
+  fullName: IMessageActivity.HasContent()
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Bot.Connector.IMessageActivity.Locale
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  isExternal: false
+  name: Locale
+  nameWithType: IMessageActivity.Locale
+  fullName: IMessageActivity.Locale
+- uid: Microsoft.Bot.Connector.IMessageActivity.Summary
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  isExternal: false
+  name: Summary
+  nameWithType: IMessageActivity.Summary
+  fullName: IMessageActivity.Summary
+- uid: Microsoft.Bot.Connector.IMessageActivity.Text
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  isExternal: false
+  name: Text
+  nameWithType: IMessageActivity.Text
+  fullName: IMessageActivity.Text
+- uid: Microsoft.Bot.Connector.IMessageActivity.TextFormat
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  isExternal: false
+  name: TextFormat
+  nameWithType: IMessageActivity.TextFormat
+  fullName: IMessageActivity.TextFormat
+- uid: Microsoft.Bot.Connector.IMessageActivity.AttachmentLayout*
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  isExternal: false
+  name: AttachmentLayout
+  nameWithType: IMessageActivity.AttachmentLayout
+  fullName: IMessageActivity.AttachmentLayout
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IMessageActivity.xml
+- uid: Microsoft.Bot.Connector.IMessageActivity.Attachments*
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  isExternal: false
+  name: Attachments
+  nameWithType: IMessageActivity.Attachments
+  fullName: IMessageActivity.Attachments
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IMessageActivity.xml
+- uid: Microsoft.Bot.Connector.IMessageActivity.Entities*
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  isExternal: false
+  name: Entities
+  nameWithType: IMessageActivity.Entities
+  fullName: IMessageActivity.Entities
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IMessageActivity.xml
+- uid: Microsoft.Bot.Connector.IMessageActivity.GetChannelData``1*
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  isExternal: false
+  name: GetChannelData<TypeT>
+  nameWithType: IMessageActivity.GetChannelData<TypeT>
+  fullName: IMessageActivity.GetChannelData<TypeT>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IMessageActivity.xml
+- uid: Microsoft.Bot.Connector.IMessageActivity.GetMentions*
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  isExternal: false
+  name: GetMentions
+  nameWithType: IMessageActivity.GetMentions
+  fullName: IMessageActivity.GetMentions
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IMessageActivity.xml
+- uid: Microsoft.Bot.Connector.IMessageActivity.HasContent*
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  isExternal: false
+  name: HasContent
+  nameWithType: IMessageActivity.HasContent
+  fullName: IMessageActivity.HasContent
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IMessageActivity.xml
+- uid: Microsoft.Bot.Connector.IMessageActivity.Locale*
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  isExternal: false
+  name: Locale
+  nameWithType: IMessageActivity.Locale
+  fullName: IMessageActivity.Locale
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IMessageActivity.xml
+- uid: Microsoft.Bot.Connector.IMessageActivity.Summary*
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  isExternal: false
+  name: Summary
+  nameWithType: IMessageActivity.Summary
+  fullName: IMessageActivity.Summary
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IMessageActivity.xml
+- uid: Microsoft.Bot.Connector.IMessageActivity.Text*
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  isExternal: false
+  name: Text
+  nameWithType: IMessageActivity.Text
+  fullName: IMessageActivity.Text
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IMessageActivity.xml
+- uid: Microsoft.Bot.Connector.IMessageActivity.TextFormat*
+  parent: Microsoft.Bot.Connector.IMessageActivity
+  isExternal: false
+  name: TextFormat
+  nameWithType: IMessageActivity.TextFormat
+  fullName: IMessageActivity.TextFormat
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IMessageActivity.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.Extensions.ToConversationReference(Microsoft.Bot.Connector.IActivity)
+  parent: Microsoft.Bot.Builder.ConnectorEx.Extensions
+  isExternal: false
+  name: ToConversationReference(IActivity)
+  nameWithType: Extensions.ToConversationReference(IActivity)
+  fullName: Extensions.ToConversationReference(IActivity)
+- uid: Microsoft.Bot.Builder.Dialogs.Extensions.AddHeroCard``1(Microsoft.Bot.Connector.IMessageActivity,System.String,System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.Bot.Builder.Dialogs.Extensions
+  isExternal: false
+  name: AddHeroCard<T>(IMessageActivity, String, IEnumerable<T>, IEnumerable<String>)
+  nameWithType: Extensions.AddHeroCard<T>(IMessageActivity, String, IEnumerable<T>, IEnumerable<String>)
+  fullName: Extensions.AddHeroCard<T>(IMessageActivity, String, IEnumerable<T>, IEnumerable<String>)
+- uid: Microsoft.Bot.Builder.Dialogs.Extensions.AddKeyboardCard``1(Microsoft.Bot.Connector.IMessageActivity,System.String,System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.Bot.Builder.Dialogs.Extensions
+  isExternal: false
+  name: AddKeyboardCard<T>(IMessageActivity, String, IEnumerable<T>, IEnumerable<String>)
+  nameWithType: Extensions.AddKeyboardCard<T>(IMessageActivity, String, IEnumerable<T>, IEnumerable<String>)
+  fullName: Extensions.AddKeyboardCard<T>(IMessageActivity, String, IEnumerable<T>, IEnumerable<String>)
+- uid: Microsoft.Bot.Connector.IActivity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IActivity
+  nameWithType: IActivity
+  fullName: Microsoft.Bot.Connector.IActivity

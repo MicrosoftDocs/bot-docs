@@ -1,0 +1,487 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  commentId: T:Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  id: Range`1
+  children:
+  - Microsoft.Bot.Builder.Internals.Fibers.Range`1.#ctor(`0,`0)
+  - Microsoft.Bot.Builder.Internals.Fibers.Range`1.After
+  - Microsoft.Bot.Builder.Internals.Fibers.Range`1.CompareTo(Microsoft.Bot.Builder.Internals.Fibers.Range{`0})
+  - Microsoft.Bot.Builder.Internals.Fibers.Range`1.Equals(Microsoft.Bot.Builder.Internals.Fibers.Range{`0})
+  - Microsoft.Bot.Builder.Internals.Fibers.Range`1.Equals(System.Object)
+  - Microsoft.Bot.Builder.Internals.Fibers.Range`1.GetHashCode
+  - Microsoft.Bot.Builder.Internals.Fibers.Range`1.Start
+  - Microsoft.Bot.Builder.Internals.Fibers.Range`1.ToString
+  langs:
+  - csharp
+  name: Range<T>
+  nameWithType: Range<T>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.Range<T>
+  type: Struct
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: 'public struct Range<T> : IComparable<Microsoft.Bot.Builder.Internals.Fibers.Range<T>>, IEquatable<Microsoft.Bot.Builder.Internals.Fibers.Range<T>> where T : IEquatable<T>, IComparable<T>'
+    typeParameters:
+    - id: T
+      description: To be added.
+  inheritance:
+  - System.ValueType
+  implements:
+  - System.IComparable{Microsoft.Bot.Builder.Internals.Fibers.Range{T}}
+  - System.IEquatable{Microsoft.Bot.Builder.Internals.Fibers.Range{T}}
+  extensionMethods:
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.Enumerate(Microsoft.Bot.Builder.Internals.Fibers.Range{System.Int32})
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Range`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1.#ctor(`0,`0)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Range`1.#ctor(`0,`0)
+  id: '#ctor(`0,`0)'
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  langs:
+  - csharp
+  name: Range<T>(T, T)
+  nameWithType: Range<T>.Range<T>(T, T)
+  fullName: Range<T>.Range<T>(T, T)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public Range (T start, T after);
+    parameters:
+    - id: start
+      type: T
+      description: To be added.
+    - id: after
+      type: T
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Range`1.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Range`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1.After
+  commentId: P:Microsoft.Bot.Builder.Internals.Fibers.Range`1.After
+  id: After
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  langs:
+  - csharp
+  name: After
+  nameWithType: Range<T>.After
+  fullName: Range<T>.After
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public T After { get; }
+    return:
+      type: T
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Range`1.After*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Range`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1.CompareTo(Microsoft.Bot.Builder.Internals.Fibers.Range{`0})
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Range`1.CompareTo(Microsoft.Bot.Builder.Internals.Fibers.Range{`0})
+  id: CompareTo(Microsoft.Bot.Builder.Internals.Fibers.Range{`0})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  langs:
+  - csharp
+  name: CompareTo(Range<T>)
+  nameWithType: Range<T>.CompareTo(Range<T>)
+  fullName: Range<T>.CompareTo(Range<T>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public int CompareTo (Microsoft.Bot.Builder.Internals.Fibers.Range<T> other);
+    parameters:
+    - id: other
+      type: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+      description: To be added.
+    return:
+      type: System.Int32
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Range`1.CompareTo*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Range`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1.Equals(Microsoft.Bot.Builder.Internals.Fibers.Range{`0})
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Range`1.Equals(Microsoft.Bot.Builder.Internals.Fibers.Range{`0})
+  id: Equals(Microsoft.Bot.Builder.Internals.Fibers.Range{`0})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  langs:
+  - csharp
+  name: Equals(Range<T>)
+  nameWithType: Range<T>.Equals(Range<T>)
+  fullName: Range<T>.Equals(Range<T>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public bool Equals (Microsoft.Bot.Builder.Internals.Fibers.Range<T> other);
+    parameters:
+    - id: other
+      type: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Range`1.Equals*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Range`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1.Equals(System.Object)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Range`1.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  langs:
+  - csharp
+  name: Equals(Object)
+  nameWithType: Range<T>.Equals(Object)
+  fullName: Range<T>.Equals(Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public override bool Equals (object other);
+    parameters:
+    - id: other
+      type: System.Object
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Range`1.Equals*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Range`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1.GetHashCode
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Range`1.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  langs:
+  - csharp
+  name: GetHashCode()
+  nameWithType: Range<T>.GetHashCode()
+  fullName: Range<T>.GetHashCode()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public override int GetHashCode ();
+    parameters: []
+    return:
+      type: System.Int32
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Range`1.GetHashCode*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Range`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1.Start
+  commentId: P:Microsoft.Bot.Builder.Internals.Fibers.Range`1.Start
+  id: Start
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  langs:
+  - csharp
+  name: Start
+  nameWithType: Range<T>.Start
+  fullName: Range<T>.Start
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public T Start { get; }
+    return:
+      type: T
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Range`1.Start*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Range`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1.ToString
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Range`1.ToString
+  id: ToString
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  langs:
+  - csharp
+  name: ToString()
+  nameWithType: Range<T>.ToString()
+  fullName: Range<T>.ToString()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public override string ToString ();
+    parameters: []
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Range`1.ToString*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Range`1.xml
+references:
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1.#ctor(`0,`0)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  isExternal: false
+  name: Range<T>(T, T)
+  nameWithType: Range<T>.Range<T>(T, T)
+  fullName: Range<T>.Range<T>(T, T)
+- uid: T
+  isExternal: true
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1.After
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  isExternal: false
+  name: After
+  nameWithType: Range<T>.After
+  fullName: Range<T>.After
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1.CompareTo(Microsoft.Bot.Builder.Internals.Fibers.Range{`0})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  isExternal: false
+  name: CompareTo(Range<T>)
+  nameWithType: Range<T>.CompareTo(Range<T>)
+  fullName: Range<T>.CompareTo(Range<T>)
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: Range<T>
+  nameWithType: Range<T>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.Range<T>
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1.Equals(Microsoft.Bot.Builder.Internals.Fibers.Range{`0})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  isExternal: false
+  name: Equals(Range<T>)
+  nameWithType: Range<T>.Equals(Range<T>)
+  fullName: Range<T>.Equals(Range<T>)
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1.Equals(System.Object)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  isExternal: false
+  name: Equals(Object)
+  nameWithType: Range<T>.Equals(Object)
+  fullName: Range<T>.Equals(Object)
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1.GetHashCode
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  isExternal: false
+  name: GetHashCode()
+  nameWithType: Range<T>.GetHashCode()
+  fullName: Range<T>.GetHashCode()
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1.Start
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  isExternal: false
+  name: Start
+  nameWithType: Range<T>.Start
+  fullName: Range<T>.Start
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1.ToString
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  isExternal: false
+  name: ToString()
+  nameWithType: Range<T>.ToString()
+  fullName: Range<T>.ToString()
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1.#ctor*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  isExternal: false
+  name: Range<T>
+  nameWithType: Range<T>.Range<T>
+  fullName: Range<T>.Range<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Range`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1.After*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  isExternal: false
+  name: After
+  nameWithType: Range<T>.After
+  fullName: Range<T>.After
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Range`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1.CompareTo*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  isExternal: false
+  name: CompareTo
+  nameWithType: Range<T>.CompareTo
+  fullName: Range<T>.CompareTo
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Range`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1.Equals*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  isExternal: false
+  name: Equals
+  nameWithType: Range<T>.Equals
+  fullName: Range<T>.Equals
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Range`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1.GetHashCode*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  isExternal: false
+  name: GetHashCode
+  nameWithType: Range<T>.GetHashCode
+  fullName: Range<T>.GetHashCode
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Range`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1.Start*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  isExternal: false
+  name: Start
+  nameWithType: Range<T>.Start
+  fullName: Range<T>.Start
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Range`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1.ToString*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  isExternal: false
+  name: ToString
+  nameWithType: Range<T>.ToString
+  fullName: Range<T>.ToString
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Range`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Enumerate(Microsoft.Bot.Builder.Internals.Fibers.Range{System.Int32})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Enumerate(Range<Int32>)
+  nameWithType: Extensions.Enumerate(Range<Int32>)
+  fullName: Extensions.Enumerate(Range<Int32>)
+- uid: System.IComparable`1
+  name: IComparable
+  nameWithType: IComparable
+  fullName: System.IComparable
+- uid: System.IComparable{Microsoft.Bot.Builder.Internals.Fibers.Range{T}}
+  parent: System
+  isExternal: true
+  name: IComparable<Range<T>>
+  nameWithType: IComparable<Range<T>>
+  fullName: System.IComparable<Microsoft.Bot.Builder.Internals.Fibers.Range<T>>
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: System.IComparable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+    name: Range
+    nameWithType: Range
+    fullName: Microsoft.Bot.Builder.Internals.Fibers.Range
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T
+    name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.IEquatable`1
+  name: IEquatable
+  nameWithType: IEquatable
+  fullName: System.IEquatable
+- uid: System.IEquatable{Microsoft.Bot.Builder.Internals.Fibers.Range{T}}
+  parent: System
+  isExternal: true
+  name: IEquatable<Range<T>>
+  nameWithType: IEquatable<Range<T>>
+  fullName: System.IEquatable<Microsoft.Bot.Builder.Internals.Fibers.Range<T>>
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+    name: Range
+    nameWithType: Range
+    fullName: Microsoft.Bot.Builder.Internals.Fibers.Range
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T
+    name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'

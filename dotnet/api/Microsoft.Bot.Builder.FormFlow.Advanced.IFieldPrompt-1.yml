@@ -1,0 +1,447 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1
+  commentId: T:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1
+  id: IFieldPrompt`1
+  children:
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Active(`0)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.DefineAsync(`0)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Help
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Next(System.Object,`0)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Prompt
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Template(Microsoft.Bot.Builder.FormFlow.TemplateUsage)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.ValidateAsync(`0,System.Object)
+  langs:
+  - csharp
+  name: IFieldPrompt<T>
+  nameWithType: IFieldPrompt<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt<T>
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: This provides control information about a field.
+  syntax:
+    content: 'public interface IFieldPrompt<T> where T : class'
+    typeParameters:
+    - id: T
+      description: Form state that is being completed.
+  derivedClasses:
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IField`1
+  implements: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldPrompt`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Active(`0)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Active(`0)
+  id: Active(`0)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1
+  langs:
+  - csharp
+  name: Active(T)
+  nameWithType: IFieldPrompt<T>.Active(T)
+  fullName: IFieldPrompt<T>.Active(T)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Test to see if field is currently active based on the current state.
+  remarks: "One way to control this is to supply a <xref href=\"Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1\"></xref> to the \n            <xref href=\"Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})\"></xref> or <xref href=\"Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})\"></xref> steps."
+  syntax:
+    content: public bool Active (T state);
+    parameters:
+    - id: state
+      type: T
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: True if field is active.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Active*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldPrompt`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.DefineAsync(`0)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.DefineAsync(`0)
+  id: DefineAsync(`0)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1
+  langs:
+  - csharp
+  name: DefineAsync(T)
+  nameWithType: IFieldPrompt<T>.DefineAsync(T)
+  fullName: IFieldPrompt<T>.DefineAsync(T)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Build the prompt and recognizer for dynamically defined fields.
+  remarks: "This method is called before asking for <xref href=\"Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Prompt\"></xref>.\n                     This provides an opportunity to dynamically define the field based on the current\n                     state or external information.  The <xref href=\"Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Dependencies\"></xref> method \n                     identifies fields that this one depends on.  All of them will be complete before the field\n                     will be shown to the user, but this method might be called earlier in order to define the field\n                     for things like status and initial matching or validation."
+  syntax:
+    content: public System.Threading.Tasks.Task<bool> DefineAsync (T state);
+    parameters:
+    - id: state
+      type: T
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: True if field is defined.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.DefineAsync*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldPrompt`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Help
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Help
+  id: Help
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1
+  langs:
+  - csharp
+  name: Help
+  nameWithType: IFieldPrompt<T>.Help
+  fullName: IFieldPrompt<T>.Help
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Return the help description for this field.
+  remarks: Help is a mixture of field specific help, what a recognizer understands and available commands.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt<T> Help { get; }
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1
+      description: The prompt to use for generating help.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Help*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldPrompt`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Next(System.Object,`0)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Next(System.Object,`0)
+  id: Next(System.Object,`0)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1
+  langs:
+  - csharp
+  name: Next(Object, T)
+  nameWithType: IFieldPrompt<T>.Next(Object, T)
+  fullName: IFieldPrompt<T>.Next(Object, T)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Next step to execute.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.Advanced.NextStep Next (object value, T state);
+    parameters:
+    - id: value
+      type: System.Object
+      description: Value in response to prompt.
+    - id: state
+      type: T
+      description: Current form state.
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.Advanced.NextStep
+      description: Next step to execute.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Next*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldPrompt`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Prompt
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Prompt
+  id: Prompt
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1
+  langs:
+  - csharp
+  name: Prompt
+  nameWithType: IFieldPrompt<T>.Prompt
+  fullName: IFieldPrompt<T>.Prompt
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Returns the prompt description.
+  remarks: If a prompt is dynamically computed this should be null until <xref href="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.DefineAsync(`0)"></xref> is called.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt<T> Prompt { get; }
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1
+      description: An <xref href="Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1"></xref> describing prompt and recognizer.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Prompt*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldPrompt`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Template(Microsoft.Bot.Builder.FormFlow.TemplateUsage)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Template(Microsoft.Bot.Builder.FormFlow.TemplateUsage)
+  id: Template(Microsoft.Bot.Builder.FormFlow.TemplateUsage)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1
+  langs:
+  - csharp
+  name: Template(TemplateUsage)
+  nameWithType: IFieldPrompt<T>.Template(TemplateUsage)
+  fullName: IFieldPrompt<T>.Template(TemplateUsage)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Return a template for building a prompt.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.TemplateAttribute Template (Microsoft.Bot.Builder.FormFlow.TemplateUsage usage);
+    parameters:
+    - id: usage
+      type: Microsoft.Bot.Builder.FormFlow.TemplateUsage
+      description: Kind of template we are looking for.
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+      description: NULL if no template, otherwise a template annotation.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Template*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldPrompt`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.ValidateAsync(`0,System.Object)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.ValidateAsync(`0,System.Object)
+  id: ValidateAsync(`0,System.Object)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1
+  langs:
+  - csharp
+  name: ValidateAsync(T, Object)
+  nameWithType: IFieldPrompt<T>.ValidateAsync(T, Object)
+  fullName: IFieldPrompt<T>.ValidateAsync(T, Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Validate value to be set on state and return feedback if not valid.
+  remarks: "One way to control this is to supply a <xref href=\"Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate`1\"></xref> to the \n            <xref href=\"Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})\"></xref> or <xref href=\"Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})\"></xref> steps."
+  syntax:
+    content: public System.Threading.Tasks.Task<Microsoft.Bot.Builder.FormFlow.ValidateResult> ValidateAsync (T state, object value);
+    parameters:
+    - id: state
+      type: T
+      description: State before setting value.
+    - id: value
+      type: System.Object
+      description: Value to be set in field.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Builder.FormFlow.ValidateResult}
+      description: Result including feedback and if valid.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.ValidateAsync*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldPrompt`1.xml
+references:
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Active(`0)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1
+  isExternal: false
+  name: Active(T)
+  nameWithType: IFieldPrompt<T>.Active(T)
+  fullName: IFieldPrompt<T>.Active(T)
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: T
+  isExternal: true
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.DefineAsync(`0)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1
+  isExternal: false
+  name: DefineAsync(T)
+  nameWithType: IFieldPrompt<T>.DefineAsync(T)
+  fullName: IFieldPrompt<T>.DefineAsync(T)
+- uid: System.Threading.Tasks.Task`1
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Help
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1
+  isExternal: false
+  name: Help
+  nameWithType: IFieldPrompt<T>.Help
+  fullName: IFieldPrompt<T>.Help
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced
+  isExternal: false
+  name: IPrompt<T>
+  nameWithType: IPrompt<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt<T>
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Next(System.Object,`0)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1
+  isExternal: false
+  name: Next(Object, T)
+  nameWithType: IFieldPrompt<T>.Next(Object, T)
+  fullName: IFieldPrompt<T>.Next(Object, T)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.NextStep
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced
+  isExternal: false
+  name: NextStep
+  nameWithType: NextStep
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.NextStep
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Prompt
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1
+  isExternal: false
+  name: Prompt
+  nameWithType: IFieldPrompt<T>.Prompt
+  fullName: IFieldPrompt<T>.Prompt
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Template(Microsoft.Bot.Builder.FormFlow.TemplateUsage)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1
+  isExternal: false
+  name: Template(TemplateUsage)
+  nameWithType: IFieldPrompt<T>.Template(TemplateUsage)
+  fullName: IFieldPrompt<T>.Template(TemplateUsage)
+- uid: Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: TemplateAttribute
+  nameWithType: TemplateAttribute
+  fullName: Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+- uid: Microsoft.Bot.Builder.FormFlow.TemplateUsage
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: TemplateUsage
+  nameWithType: TemplateUsage
+  fullName: Microsoft.Bot.Builder.FormFlow.TemplateUsage
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.ValidateAsync(`0,System.Object)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1
+  isExternal: false
+  name: ValidateAsync(T, Object)
+  nameWithType: IFieldPrompt<T>.ValidateAsync(T, Object)
+  fullName: IFieldPrompt<T>.ValidateAsync(T, Object)
+- uid: Microsoft.Bot.Builder.FormFlow.ValidateResult
+  name: ValidateResult
+  nameWithType: ValidateResult
+  fullName: Microsoft.Bot.Builder.FormFlow.ValidateResult
+- uid: System.Threading.Tasks.Task{Microsoft.Bot.Builder.FormFlow.ValidateResult}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<ValidateResult>
+  nameWithType: Task<ValidateResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.Bot.Builder.FormFlow.ValidateResult>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.FormFlow.ValidateResult
+    name: ValidateResult
+    nameWithType: ValidateResult
+    fullName: Microsoft.Bot.Builder.FormFlow.ValidateResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Active*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1
+  isExternal: false
+  name: Active
+  nameWithType: IFieldPrompt<T>.Active
+  fullName: IFieldPrompt<T>.Active
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldPrompt`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.DefineAsync*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1
+  isExternal: false
+  name: DefineAsync
+  nameWithType: IFieldPrompt<T>.DefineAsync
+  fullName: IFieldPrompt<T>.DefineAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldPrompt`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Help*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1
+  isExternal: false
+  name: Help
+  nameWithType: IFieldPrompt<T>.Help
+  fullName: IFieldPrompt<T>.Help
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldPrompt`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Next*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1
+  isExternal: false
+  name: Next
+  nameWithType: IFieldPrompt<T>.Next
+  fullName: IFieldPrompt<T>.Next
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldPrompt`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Prompt*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1
+  isExternal: false
+  name: Prompt
+  nameWithType: IFieldPrompt<T>.Prompt
+  fullName: IFieldPrompt<T>.Prompt
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldPrompt`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Template*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1
+  isExternal: false
+  name: Template
+  nameWithType: IFieldPrompt<T>.Template
+  fullName: IFieldPrompt<T>.Template
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldPrompt`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.ValidateAsync*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1
+  isExternal: false
+  name: ValidateAsync
+  nameWithType: IFieldPrompt<T>.ValidateAsync
+  fullName: IFieldPrompt<T>.ValidateAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldPrompt`1.xml

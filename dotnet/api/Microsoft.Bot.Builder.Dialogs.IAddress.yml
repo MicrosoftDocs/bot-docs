@@ -1,0 +1,246 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.IAddress
+  commentId: T:Microsoft.Bot.Builder.Dialogs.IAddress
+  id: IAddress
+  children:
+  - Microsoft.Bot.Builder.Dialogs.IAddress.BotId
+  - Microsoft.Bot.Builder.Dialogs.IAddress.ChannelId
+  - Microsoft.Bot.Builder.Dialogs.IAddress.ConversationId
+  - Microsoft.Bot.Builder.Dialogs.IAddress.ServiceUrl
+  - Microsoft.Bot.Builder.Dialogs.IAddress.UserId
+  langs:
+  - csharp
+  name: IAddress
+  nameWithType: IAddress
+  fullName: Microsoft.Bot.Builder.Dialogs.IAddress
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: The key that minimally and completely identifies a bot's conversation with a user on a channel.
+  syntax:
+    content: public interface IAddress
+  derivedClasses:
+  - Microsoft.Bot.Builder.Dialogs.Address
+  implements: []
+  extensionMethods:
+  - Microsoft.Bot.Builder.ConnectorEx.Extensions.ToConversationReference(Microsoft.Bot.Builder.Dialogs.IAddress)
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/IAddress.xml
+- uid: Microsoft.Bot.Builder.Dialogs.IAddress.BotId
+  commentId: P:Microsoft.Bot.Builder.Dialogs.IAddress.BotId
+  id: BotId
+  parent: Microsoft.Bot.Builder.Dialogs.IAddress
+  langs:
+  - csharp
+  name: BotId
+  nameWithType: IAddress.BotId
+  fullName: IAddress.BotId
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: public string BotId { get; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.IAddress.BotId*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/IAddress.xml
+- uid: Microsoft.Bot.Builder.Dialogs.IAddress.ChannelId
+  commentId: P:Microsoft.Bot.Builder.Dialogs.IAddress.ChannelId
+  id: ChannelId
+  parent: Microsoft.Bot.Builder.Dialogs.IAddress
+  langs:
+  - csharp
+  name: ChannelId
+  nameWithType: IAddress.ChannelId
+  fullName: IAddress.ChannelId
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: public string ChannelId { get; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.IAddress.ChannelId*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/IAddress.xml
+- uid: Microsoft.Bot.Builder.Dialogs.IAddress.ConversationId
+  commentId: P:Microsoft.Bot.Builder.Dialogs.IAddress.ConversationId
+  id: ConversationId
+  parent: Microsoft.Bot.Builder.Dialogs.IAddress
+  langs:
+  - csharp
+  name: ConversationId
+  nameWithType: IAddress.ConversationId
+  fullName: IAddress.ConversationId
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: public string ConversationId { get; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.IAddress.ConversationId*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/IAddress.xml
+- uid: Microsoft.Bot.Builder.Dialogs.IAddress.ServiceUrl
+  commentId: P:Microsoft.Bot.Builder.Dialogs.IAddress.ServiceUrl
+  id: ServiceUrl
+  parent: Microsoft.Bot.Builder.Dialogs.IAddress
+  langs:
+  - csharp
+  name: ServiceUrl
+  nameWithType: IAddress.ServiceUrl
+  fullName: IAddress.ServiceUrl
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: public string ServiceUrl { get; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.IAddress.ServiceUrl*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/IAddress.xml
+- uid: Microsoft.Bot.Builder.Dialogs.IAddress.UserId
+  commentId: P:Microsoft.Bot.Builder.Dialogs.IAddress.UserId
+  id: UserId
+  parent: Microsoft.Bot.Builder.Dialogs.IAddress
+  langs:
+  - csharp
+  name: UserId
+  nameWithType: IAddress.UserId
+  fullName: IAddress.UserId
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: public string UserId { get; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.IAddress.UserId*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/IAddress.xml
+references:
+- uid: Microsoft.Bot.Builder.Dialogs.IAddress.BotId
+  parent: Microsoft.Bot.Builder.Dialogs.IAddress
+  isExternal: false
+  name: BotId
+  nameWithType: IAddress.BotId
+  fullName: IAddress.BotId
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Builder.Dialogs.IAddress.ChannelId
+  parent: Microsoft.Bot.Builder.Dialogs.IAddress
+  isExternal: false
+  name: ChannelId
+  nameWithType: IAddress.ChannelId
+  fullName: IAddress.ChannelId
+- uid: Microsoft.Bot.Builder.Dialogs.IAddress.ConversationId
+  parent: Microsoft.Bot.Builder.Dialogs.IAddress
+  isExternal: false
+  name: ConversationId
+  nameWithType: IAddress.ConversationId
+  fullName: IAddress.ConversationId
+- uid: Microsoft.Bot.Builder.Dialogs.IAddress.ServiceUrl
+  parent: Microsoft.Bot.Builder.Dialogs.IAddress
+  isExternal: false
+  name: ServiceUrl
+  nameWithType: IAddress.ServiceUrl
+  fullName: IAddress.ServiceUrl
+- uid: Microsoft.Bot.Builder.Dialogs.IAddress.UserId
+  parent: Microsoft.Bot.Builder.Dialogs.IAddress
+  isExternal: false
+  name: UserId
+  nameWithType: IAddress.UserId
+  fullName: IAddress.UserId
+- uid: Microsoft.Bot.Builder.Dialogs.IAddress.BotId*
+  parent: Microsoft.Bot.Builder.Dialogs.IAddress
+  isExternal: false
+  name: BotId
+  nameWithType: IAddress.BotId
+  fullName: IAddress.BotId
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/IAddress.xml
+- uid: Microsoft.Bot.Builder.Dialogs.IAddress.ChannelId*
+  parent: Microsoft.Bot.Builder.Dialogs.IAddress
+  isExternal: false
+  name: ChannelId
+  nameWithType: IAddress.ChannelId
+  fullName: IAddress.ChannelId
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/IAddress.xml
+- uid: Microsoft.Bot.Builder.Dialogs.IAddress.ConversationId*
+  parent: Microsoft.Bot.Builder.Dialogs.IAddress
+  isExternal: false
+  name: ConversationId
+  nameWithType: IAddress.ConversationId
+  fullName: IAddress.ConversationId
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/IAddress.xml
+- uid: Microsoft.Bot.Builder.Dialogs.IAddress.ServiceUrl*
+  parent: Microsoft.Bot.Builder.Dialogs.IAddress
+  isExternal: false
+  name: ServiceUrl
+  nameWithType: IAddress.ServiceUrl
+  fullName: IAddress.ServiceUrl
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/IAddress.xml
+- uid: Microsoft.Bot.Builder.Dialogs.IAddress.UserId*
+  parent: Microsoft.Bot.Builder.Dialogs.IAddress
+  isExternal: false
+  name: UserId
+  nameWithType: IAddress.UserId
+  fullName: IAddress.UserId
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/IAddress.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.Extensions.ToConversationReference(Microsoft.Bot.Builder.Dialogs.IAddress)
+  parent: Microsoft.Bot.Builder.ConnectorEx.Extensions
+  isExternal: false
+  name: ToConversationReference(IAddress)
+  nameWithType: Extensions.ToConversationReference(IAddress)
+  fullName: Extensions.ToConversationReference(IAddress)

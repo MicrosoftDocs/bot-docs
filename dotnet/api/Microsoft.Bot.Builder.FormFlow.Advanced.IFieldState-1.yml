@@ -1,0 +1,537 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  commentId: T:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  id: IFieldState`1
+  children:
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Dependencies
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.GetValue(`0)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.IsNullable
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.IsUnknown(`0)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Limits(System.Double@,System.Double@)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Optional
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Pattern
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.SetUnknown(`0)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.SetValue(`0,System.Object)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Type
+  langs:
+  - csharp
+  name: IFieldState<T>
+  nameWithType: IFieldState<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState<T>
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Interface that defines basic access to a field.
+  syntax:
+    content: public interface IFieldState<T>
+    typeParameters:
+    - id: T
+      description: The form state that is read or written to.
+  derivedClasses:
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IField`1
+  implements: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldState`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Dependencies
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Dependencies
+  id: Dependencies
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  langs:
+  - csharp
+  name: Dependencies
+  nameWithType: IFieldState<T>.Dependencies
+  fullName: IFieldState<T>.Dependencies
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Returns the other fields this one depends on.
+  remarks: This is mainly useful for <xref href="Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation`1"></xref> fields.
+  syntax:
+    content: public System.Collections.Generic.IEnumerable<string> Dependencies { get; }
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: List of field names this one depends on.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Dependencies*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldState`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.GetValue(`0)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.GetValue(`0)
+  id: GetValue(`0)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  langs:
+  - csharp
+  name: GetValue(T)
+  nameWithType: IFieldState<T>.GetValue(T)
+  fullName: IFieldState<T>.GetValue(T)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Get this field value from form state.
+  syntax:
+    content: public object GetValue (T state);
+    parameters:
+    - id: state
+      type: T
+      description: Form state to get field value from.
+    return:
+      type: System.Object
+      description: Current value found in state.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.GetValue*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldState`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.IsNullable
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.IsNullable
+  id: IsNullable
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  langs:
+  - csharp
+  name: IsNullable
+  nameWithType: IFieldState<T>.IsNullable
+  fullName: IFieldState<T>.IsNullable
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Test to see if field is nullable.
+  syntax:
+    content: public bool IsNullable { get; }
+    return:
+      type: System.Boolean
+      description: True if field is nullable.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.IsNullable*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldState`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.IsUnknown(`0)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.IsUnknown(`0)
+  id: IsUnknown(`0)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  langs:
+  - csharp
+  name: IsUnknown(T)
+  nameWithType: IFieldState<T>.IsUnknown(T)
+  fullName: IFieldState<T>.IsUnknown(T)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Test to see if the field value form state has a value.
+  remarks: >-
+    For value types (numbers, bools, date time) a value is unknown only if the field is nullable and it is null.
+                For enum based values (both simple and enumerated) they can also be nullable or the 0 enum value if not nullable.
+                For non value types like string the test is to see if the field is actually null.
+  syntax:
+    content: public bool IsUnknown (T state);
+    parameters:
+    - id: state
+      type: T
+      description: Form state to check.
+    return:
+      type: System.Boolean
+      description: True if value is unknown.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.IsUnknown*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldState`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Limits(System.Double@,System.Double@)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Limits(System.Double@,System.Double@)
+  id: Limits(System.Double@,System.Double@)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  langs:
+  - csharp
+  name: Limits(Double, Double)
+  nameWithType: IFieldState<T>.Limits(Double, Double)
+  fullName: IFieldState<T>.Limits(Double, Double)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Limits of numeric values.
+  remarks: This typically reflects the result of setting <xref href="Microsoft.Bot.Builder.FormFlow.NumericAttribute"></xref> limits on the possible values.
+  syntax:
+    content: public bool Limits (out double min, out double max);
+    parameters:
+    - id: min
+      type: System.Double
+      description: Minimum possible value.
+    - id: max
+      type: System.Double
+      description: Maximum possible value.
+    return:
+      type: System.Boolean
+      description: True if limits limit the underlying data type.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Limits*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldState`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Optional
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Optional
+  id: Optional
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  langs:
+  - csharp
+  name: Optional
+  nameWithType: IFieldState<T>.Optional
+  fullName: IFieldState<T>.Optional
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Test to see if field is optional which means that an unknown value is legal.
+  syntax:
+    content: public bool Optional { get; }
+    return:
+      type: System.Boolean
+      description: True if field is optional.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Optional*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldState`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Pattern
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Pattern
+  id: Pattern
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  langs:
+  - csharp
+  name: Pattern
+  nameWithType: IFieldState<T>.Pattern
+  fullName: IFieldState<T>.Pattern
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Regular expression for validating a string.
+  remarks: This typically reflects the result of setting <xref href="Microsoft.Bot.Builder.FormFlow.PatternAttribute"></xref>.
+  syntax:
+    content: public string Pattern { get; }
+    return:
+      type: System.String
+      description: Validation regular expression.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Pattern*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldState`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.SetUnknown(`0)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.SetUnknown(`0)
+  id: SetUnknown(`0)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  langs:
+  - csharp
+  name: SetUnknown(T)
+  nameWithType: IFieldState<T>.SetUnknown(T)
+  fullName: IFieldState<T>.SetUnknown(T)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Set this field value in form state to unknown.
+  remarks: "For value types (numbers, bools, date time) the value is set to null if nullable.\n            For enum types it is set to null if nullable or 0 if not.  \n            For non value types like string set the value to null."
+  syntax:
+    content: public void SetUnknown (T state);
+    parameters:
+    - id: state
+      type: T
+      description: Form state with field value to set to unknown.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.SetUnknown*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldState`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.SetValue(`0,System.Object)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.SetValue(`0,System.Object)
+  id: SetValue(`0,System.Object)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  langs:
+  - csharp
+  name: SetValue(T, Object)
+  nameWithType: IFieldState<T>.SetValue(T, Object)
+  fullName: IFieldState<T>.SetValue(T, Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Set this field value in form state.
+  syntax:
+    content: public void SetValue (T state, object value);
+    parameters:
+    - id: state
+      type: T
+      description: Form state to set field value in.
+    - id: value
+      type: System.Object
+      description: New value.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.SetValue*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldState`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Type
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Type
+  id: Type
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  langs:
+  - csharp
+  name: Type
+  nameWithType: IFieldState<T>.Type
+  fullName: IFieldState<T>.Type
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Gets the type of the field.
+  syntax:
+    content: public Type Type { get; }
+    return:
+      type: System.Type
+      description: The type.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Type*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldState`1.xml
+references:
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Dependencies
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  isExternal: false
+  name: Dependencies
+  nameWithType: IFieldState<T>.Dependencies
+  fullName: IFieldState<T>.Dependencies
+- uid: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.Generic.IEnumerable
+- uid: System.String
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.GetValue(`0)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  isExternal: false
+  name: GetValue(T)
+  nameWithType: IFieldState<T>.GetValue(T)
+  fullName: IFieldState<T>.GetValue(T)
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: T
+  isExternal: true
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.IsNullable
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  isExternal: false
+  name: IsNullable
+  nameWithType: IFieldState<T>.IsNullable
+  fullName: IFieldState<T>.IsNullable
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.IsUnknown(`0)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  isExternal: false
+  name: IsUnknown(T)
+  nameWithType: IFieldState<T>.IsUnknown(T)
+  fullName: IFieldState<T>.IsUnknown(T)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Limits(System.Double@,System.Double@)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  isExternal: false
+  name: Limits(Double, Double)
+  nameWithType: IFieldState<T>.Limits(Double, Double)
+  fullName: IFieldState<T>.Limits(Double, Double)
+- uid: System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Optional
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  isExternal: false
+  name: Optional
+  nameWithType: IFieldState<T>.Optional
+  fullName: IFieldState<T>.Optional
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Pattern
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  isExternal: false
+  name: Pattern
+  nameWithType: IFieldState<T>.Pattern
+  fullName: IFieldState<T>.Pattern
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.SetUnknown(`0)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  isExternal: false
+  name: SetUnknown(T)
+  nameWithType: IFieldState<T>.SetUnknown(T)
+  fullName: IFieldState<T>.SetUnknown(T)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.SetValue(`0,System.Object)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  isExternal: false
+  name: SetValue(T, Object)
+  nameWithType: IFieldState<T>.SetValue(T, Object)
+  fullName: IFieldState<T>.SetValue(T, Object)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Type
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  isExternal: false
+  name: Type
+  nameWithType: IFieldState<T>.Type
+  fullName: IFieldState<T>.Type
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Dependencies*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  isExternal: false
+  name: Dependencies
+  nameWithType: IFieldState<T>.Dependencies
+  fullName: IFieldState<T>.Dependencies
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldState`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.GetValue*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  isExternal: false
+  name: GetValue
+  nameWithType: IFieldState<T>.GetValue
+  fullName: IFieldState<T>.GetValue
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldState`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.IsNullable*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  isExternal: false
+  name: IsNullable
+  nameWithType: IFieldState<T>.IsNullable
+  fullName: IFieldState<T>.IsNullable
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldState`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.IsUnknown*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  isExternal: false
+  name: IsUnknown
+  nameWithType: IFieldState<T>.IsUnknown
+  fullName: IFieldState<T>.IsUnknown
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldState`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Limits*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  isExternal: false
+  name: Limits
+  nameWithType: IFieldState<T>.Limits
+  fullName: IFieldState<T>.Limits
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldState`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Optional*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  isExternal: false
+  name: Optional
+  nameWithType: IFieldState<T>.Optional
+  fullName: IFieldState<T>.Optional
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldState`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Pattern*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  isExternal: false
+  name: Pattern
+  nameWithType: IFieldState<T>.Pattern
+  fullName: IFieldState<T>.Pattern
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldState`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.SetUnknown*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  isExternal: false
+  name: SetUnknown
+  nameWithType: IFieldState<T>.SetUnknown
+  fullName: IFieldState<T>.SetUnknown
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldState`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.SetValue*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  isExternal: false
+  name: SetValue
+  nameWithType: IFieldState<T>.SetValue
+  fullName: IFieldState<T>.SetValue
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldState`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Type*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  isExternal: false
+  name: Type
+  nameWithType: IFieldState<T>.Type
+  fullName: IFieldState<T>.Type
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IFieldState`1.xml

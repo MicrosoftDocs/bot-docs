@@ -1,0 +1,149 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException
+  commentId: T:Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException
+  id: InvalidTypeException
+  children:
+  - Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException.#ctor(Microsoft.Bot.Builder.Internals.Fibers.IWait,System.Type)
+  - Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  langs:
+  - csharp
+  name: InvalidTypeException
+  nameWithType: InvalidTypeException
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: 'public sealed class InvalidTypeException : Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException'
+  inheritance:
+  - System.InvalidOperationException
+  - Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException
+  implements: []
+  inheritedMembers:
+  - Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException.Wait
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/InvalidTypeException.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException.#ctor(Microsoft.Bot.Builder.Internals.Fibers.IWait,System.Type)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException.#ctor(Microsoft.Bot.Builder.Internals.Fibers.IWait,System.Type)
+  id: '#ctor(Microsoft.Bot.Builder.Internals.Fibers.IWait,System.Type)'
+  parent: Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException
+  langs:
+  - csharp
+  name: InvalidTypeException(IWait, Type)
+  nameWithType: InvalidTypeException.InvalidTypeException(IWait, Type)
+  fullName: InvalidTypeException.InvalidTypeException(IWait, Type)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public InvalidTypeException (Microsoft.Bot.Builder.Internals.Fibers.IWait wait, Type type);
+    parameters:
+    - id: wait
+      type: Microsoft.Bot.Builder.Internals.Fibers.IWait
+      description: To be added.
+    - id: type
+      type: System.Type
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/InvalidTypeException.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException
+  langs:
+  - csharp
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: InvalidTypeException.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: InvalidTypeException.GetObjectData(SerializationInfo, StreamingContext)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: To be added.
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException.GetObjectData*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/InvalidTypeException.xml
+references:
+- uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: InvalidWaitException
+  nameWithType: InvalidWaitException
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException
+- uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException.#ctor(Microsoft.Bot.Builder.Internals.Fibers.IWait,System.Type)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException
+  isExternal: false
+  name: InvalidTypeException(IWait, Type)
+  nameWithType: InvalidTypeException.InvalidTypeException(IWait, Type)
+  fullName: InvalidTypeException.InvalidTypeException(IWait, Type)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IWait
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: IWait
+  nameWithType: IWait
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IWait
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException
+  isExternal: false
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: InvalidTypeException.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: InvalidTypeException.GetObjectData(SerializationInfo, StreamingContext)
+- uid: System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+- uid: System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+- uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException.#ctor*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException
+  isExternal: false
+  name: InvalidTypeException
+  nameWithType: InvalidTypeException.InvalidTypeException
+  fullName: InvalidTypeException.InvalidTypeException
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/InvalidTypeException.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException.GetObjectData*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException
+  isExternal: false
+  name: GetObjectData
+  nameWithType: InvalidTypeException.GetObjectData
+  fullName: InvalidTypeException.GetObjectData
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/InvalidTypeException.xml

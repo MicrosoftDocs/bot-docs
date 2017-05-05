@@ -1,0 +1,101 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot
+  commentId: T:Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot
+  id: IPostToBot
+  children:
+  - Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot.PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  name: IPostToBot
+  nameWithType: IPostToBot
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: Methods to send a message from the user to the bot.
+  syntax:
+    content: public interface IPostToBot
+  derivedClasses:
+  - Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask
+  - Microsoft.Bot.Builder.Dialogs.Internals.ExceptionTranslationDialogTask
+  - Microsoft.Bot.Builder.Dialogs.Internals.LogPostToBot
+  - Microsoft.Bot.Builder.Dialogs.Internals.NullPostToBot
+  - Microsoft.Bot.Builder.Dialogs.Internals.PersistentDialogTask
+  - Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser
+  - Microsoft.Bot.Builder.Dialogs.Internals.SerializeByConversation
+  - Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture
+  implements: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IPostToBot.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot.PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot.PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  id: PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot
+  langs:
+  - csharp
+  name: PostAsync(IActivity, CancellationToken)
+  nameWithType: IPostToBot.PostAsync(IActivity, CancellationToken)
+  fullName: IPostToBot.PostAsync(IActivity, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: Post an item (e.g. message or other external event) to the bot.
+  syntax:
+    content: public System.Threading.Tasks.Task PostAsync (Microsoft.Bot.Connector.IActivity activity, System.Threading.CancellationToken token);
+    parameters:
+    - id: activity
+      type: Microsoft.Bot.Connector.IActivity
+      description: The item for the bot.
+    - id: token
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task that represents the post operation.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot.PostAsync*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IPostToBot.xml
+references:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot.PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot
+  isExternal: false
+  name: PostAsync(IActivity, CancellationToken)
+  nameWithType: IPostToBot.PostAsync(IActivity, CancellationToken)
+  fullName: IPostToBot.PostAsync(IActivity, CancellationToken)
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.Bot.Connector.IActivity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IActivity
+  nameWithType: IActivity
+  fullName: Microsoft.Bot.Connector.IActivity
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot.PostAsync*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot
+  isExternal: false
+  name: PostAsync
+  nameWithType: IPostToBot.PostAsync
+  fullName: IPostToBot.PostAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IPostToBot.xml

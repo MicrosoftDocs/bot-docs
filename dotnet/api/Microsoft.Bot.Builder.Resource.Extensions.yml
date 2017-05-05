@@ -1,0 +1,284 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Resource.Extensions
+  commentId: T:Microsoft.Bot.Builder.Resource.Extensions
+  id: Extensions
+  children:
+  - Microsoft.Bot.Builder.Resource.Extensions.ESCAPED_SEPARATOR
+  - Microsoft.Bot.Builder.Resource.Extensions.MakeList(System.String[])
+  - Microsoft.Bot.Builder.Resource.Extensions.MakeList(System.Collections.Generic.IEnumerable{System.String},System.String,System.String)
+  - Microsoft.Bot.Builder.Resource.Extensions.SEPARATOR
+  - Microsoft.Bot.Builder.Resource.Extensions.SplitList(System.String,System.String,System.String)
+  langs:
+  - csharp
+  name: Extensions
+  nameWithType: Extensions
+  fullName: Microsoft.Bot.Builder.Resource.Extensions
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Resource
+  summary: Extensions for resources.
+  syntax:
+    content: public static class Extensions
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Resource/Extensions.xml
+- uid: Microsoft.Bot.Builder.Resource.Extensions.ESCAPED_SEPARATOR
+  commentId: F:Microsoft.Bot.Builder.Resource.Extensions.ESCAPED_SEPARATOR
+  id: ESCAPED_SEPARATOR
+  parent: Microsoft.Bot.Builder.Resource.Extensions
+  langs:
+  - csharp
+  name: ESCAPED_SEPARATOR
+  nameWithType: Extensions.ESCAPED_SEPARATOR
+  fullName: Extensions.ESCAPED_SEPARATOR
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Resource
+  summary: When the <xref href="Microsoft.Bot.Builder.Resource.Extensions.SEPARATOR"></xref> is found in a string list, the escaped replacement.
+  syntax:
+    content: public const string ESCAPED_SEPARATOR;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Resource/Extensions.xml
+- uid: Microsoft.Bot.Builder.Resource.Extensions.MakeList(System.String[])
+  commentId: M:Microsoft.Bot.Builder.Resource.Extensions.MakeList(System.String[])
+  id: MakeList(System.String[])
+  parent: Microsoft.Bot.Builder.Resource.Extensions
+  langs:
+  - csharp
+  name: MakeList(String[])
+  nameWithType: Extensions.MakeList(String[])
+  fullName: Extensions.MakeList(String[])
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Resource
+  summary: Makes a list from parameters.
+  syntax:
+    content: public static string MakeList (string[] elements);
+    parameters:
+    - id: elements
+      type: System.String[]
+      description: The elements to combine into a list.
+    return:
+      type: System.String
+      description: A string.
+  overload: Microsoft.Bot.Builder.Resource.Extensions.MakeList*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Resource/Extensions.xml
+- uid: Microsoft.Bot.Builder.Resource.Extensions.MakeList(System.Collections.Generic.IEnumerable{System.String},System.String,System.String)
+  commentId: M:Microsoft.Bot.Builder.Resource.Extensions.MakeList(System.Collections.Generic.IEnumerable{System.String},System.String,System.String)
+  id: MakeList(System.Collections.Generic.IEnumerable{System.String},System.String,System.String)
+  parent: Microsoft.Bot.Builder.Resource.Extensions
+  langs:
+  - csharp
+  name: MakeList(IEnumerable<String>, String, String)
+  nameWithType: Extensions.MakeList(IEnumerable<String>, String, String)
+  fullName: Extensions.MakeList(IEnumerable<String>, String, String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Resource
+  summary: Makes a string list.
+  syntax:
+    content: public static string MakeList (System.Collections.Generic.IEnumerable<string> elements, string separator = ";", string escape = "__semi");
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: The elements to combine into a list.
+    - id: separator
+      type: System.String
+      description: The separator character between elements in a string list.
+    - id: escape
+      type: System.String
+      description: The escape string for separator characters.
+    return:
+      type: System.String
+      description: A string.
+  overload: Microsoft.Bot.Builder.Resource.Extensions.MakeList*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Resource/Extensions.xml
+- uid: Microsoft.Bot.Builder.Resource.Extensions.SEPARATOR
+  commentId: F:Microsoft.Bot.Builder.Resource.Extensions.SEPARATOR
+  id: SEPARATOR
+  parent: Microsoft.Bot.Builder.Resource.Extensions
+  langs:
+  - csharp
+  name: SEPARATOR
+  nameWithType: Extensions.SEPARATOR
+  fullName: Extensions.SEPARATOR
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Resource
+  summary: The separator character between elements in a string list.
+  syntax:
+    content: public const string SEPARATOR;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Resource/Extensions.xml
+- uid: Microsoft.Bot.Builder.Resource.Extensions.SplitList(System.String,System.String,System.String)
+  commentId: M:Microsoft.Bot.Builder.Resource.Extensions.SplitList(System.String,System.String,System.String)
+  id: SplitList(System.String,System.String,System.String)
+  parent: Microsoft.Bot.Builder.Resource.Extensions
+  langs:
+  - csharp
+  name: SplitList(String, String, String)
+  nameWithType: Extensions.SplitList(String, String, String)
+  fullName: Extensions.SplitList(String, String, String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Resource
+  summary: A string extension method that splits a list.
+  syntax:
+    content: public static string[] SplitList (this string str, string separator = ";", string escape = "__semi");
+    parameters:
+    - id: str
+      type: System.String
+      description: The str to act on.
+    - id: separator
+      type: System.String
+      description: The separator character between elements in a string list.
+    - id: escape
+      type: System.String
+      description: The escape string for separator characters.
+    return:
+      type: System.String[]
+      description: A string[].
+  overload: Microsoft.Bot.Builder.Resource.Extensions.SplitList*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Resource/Extensions.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Resource.Extensions.ESCAPED_SEPARATOR
+  parent: Microsoft.Bot.Builder.Resource.Extensions
+  isExternal: false
+  name: ESCAPED_SEPARATOR
+  nameWithType: Extensions.ESCAPED_SEPARATOR
+  fullName: Extensions.ESCAPED_SEPARATOR
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Builder.Resource.Extensions.MakeList(System.String[])
+  parent: Microsoft.Bot.Builder.Resource.Extensions
+  isExternal: false
+  name: MakeList(String[])
+  nameWithType: Extensions.MakeList(String[])
+  fullName: Extensions.MakeList(String[])
+- uid: System.String[]
+  parent: System
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: Microsoft.Bot.Builder.Resource.Extensions.MakeList(System.Collections.Generic.IEnumerable{System.String},System.String,System.String)
+  parent: Microsoft.Bot.Builder.Resource.Extensions
+  isExternal: false
+  name: MakeList(IEnumerable<String>, String, String)
+  nameWithType: Extensions.MakeList(IEnumerable<String>, String, String)
+  fullName: Extensions.MakeList(IEnumerable<String>, String, String)
+- uid: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.Generic.IEnumerable
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Resource.Extensions.SEPARATOR
+  parent: Microsoft.Bot.Builder.Resource.Extensions
+  isExternal: false
+  name: SEPARATOR
+  nameWithType: Extensions.SEPARATOR
+  fullName: Extensions.SEPARATOR
+- uid: Microsoft.Bot.Builder.Resource.Extensions.SplitList(System.String,System.String,System.String)
+  parent: Microsoft.Bot.Builder.Resource.Extensions
+  isExternal: false
+  name: SplitList(String, String, String)
+  nameWithType: Extensions.SplitList(String, String, String)
+  fullName: Extensions.SplitList(String, String, String)
+- uid: Microsoft.Bot.Builder.Resource.Extensions.MakeList*
+  parent: Microsoft.Bot.Builder.Resource.Extensions
+  isExternal: false
+  name: MakeList
+  nameWithType: Extensions.MakeList
+  fullName: Extensions.MakeList
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Resource/Extensions.xml
+- uid: Microsoft.Bot.Builder.Resource.Extensions.SplitList*
+  parent: Microsoft.Bot.Builder.Resource.Extensions
+  isExternal: false
+  name: SplitList
+  nameWithType: Extensions.SplitList
+  fullName: Extensions.SplitList
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Resource/Extensions.xml

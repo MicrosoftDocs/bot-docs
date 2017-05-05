@@ -1,0 +1,980 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher
+  commentId: T:Microsoft.Bot.Builder.Scorables.Dispatcher
+  id: Dispatcher
+  children:
+  - Microsoft.Bot.Builder.Scorables.Dispatcher.#ctor
+  - Microsoft.Bot.Builder.Scorables.Dispatcher.ContinueWithNextGroup
+  - Microsoft.Bot.Builder.Scorables.Dispatcher.MakeBindingFlags
+  - Microsoft.Bot.Builder.Scorables.Dispatcher.MakeComparer
+  - Microsoft.Bot.Builder.Scorables.Dispatcher.MakeFactory
+  - Microsoft.Bot.Builder.Scorables.Dispatcher.MakeMethods
+  - Microsoft.Bot.Builder.Scorables.Dispatcher.MakeRegex(System.String)
+  - Microsoft.Bot.Builder.Scorables.Dispatcher.MakeResolver
+  - Microsoft.Bot.Builder.Scorables.Dispatcher.MakeScorable
+  - Microsoft.Bot.Builder.Scorables.Dispatcher.MakeService(Microsoft.Bot.Builder.Luis.ILuisModel)
+  - Microsoft.Bot.Builder.Scorables.Dispatcher.MakeServices
+  - Microsoft.Bot.Builder.Scorables.Dispatcher.MakeType
+  - Microsoft.Bot.Builder.Scorables.Dispatcher.OnFailAsync
+  - Microsoft.Bot.Builder.Scorables.Dispatcher.OnPostAsync
+  - Microsoft.Bot.Builder.Scorables.Dispatcher.OnStage(Microsoft.Bot.Builder.Scorables.Internals.FoldStage,Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object},Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object,System.Object)
+  - Microsoft.Bot.Builder.Scorables.Dispatcher.Microsoft#Bot#Builder#Scorables#IDispatcher#TryPostAsync(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  name: Dispatcher
+  nameWithType: Dispatcher
+  fullName: Microsoft.Bot.Builder.Scorables.Dispatcher
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: 'public class Dispatcher : Microsoft.Bot.Builder.Scorables.IDispatcher'
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Microsoft.Bot.Builder.Dialogs.DispatchDialog`1
+  implements:
+  - Microsoft.Bot.Builder.Scorables.IDispatcher
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.#ctor
+  commentId: M:Microsoft.Bot.Builder.Scorables.Dispatcher.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  langs:
+  - csharp
+  name: Dispatcher()
+  nameWithType: Dispatcher.Dispatcher()
+  fullName: Dispatcher.Dispatcher()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: public Dispatcher ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.Scorables.Dispatcher.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.ContinueWithNextGroup
+  commentId: M:Microsoft.Bot.Builder.Scorables.Dispatcher.ContinueWithNextGroup
+  id: ContinueWithNextGroup
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  langs:
+  - csharp
+  name: ContinueWithNextGroup()
+  nameWithType: Dispatcher.ContinueWithNextGroup()
+  fullName: Dispatcher.ContinueWithNextGroup()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: protected void ContinueWithNextGroup ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.Scorables.Dispatcher.ContinueWithNextGroup*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeBindingFlags
+  commentId: M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeBindingFlags
+  id: MakeBindingFlags
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  langs:
+  - csharp
+  name: MakeBindingFlags()
+  nameWithType: Dispatcher.MakeBindingFlags()
+  fullName: Dispatcher.MakeBindingFlags()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: protected virtual System.Reflection.BindingFlags MakeBindingFlags ();
+    parameters: []
+    return:
+      type: System.Reflection.BindingFlags
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeBindingFlags*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeComparer
+  commentId: M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeComparer
+  id: MakeComparer
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  langs:
+  - csharp
+  name: MakeComparer()
+  nameWithType: Dispatcher.MakeComparer()
+  fullName: Dispatcher.MakeComparer()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: protected virtual System.Collections.Generic.IComparer<object> MakeComparer ();
+    parameters: []
+    return:
+      type: System.Collections.Generic.IComparer{System.Object}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeComparer*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeFactory
+  commentId: M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeFactory
+  id: MakeFactory
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  langs:
+  - csharp
+  name: MakeFactory()
+  nameWithType: Dispatcher.MakeFactory()
+  fullName: Dispatcher.MakeFactory()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: protected virtual Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory<Microsoft.Bot.Builder.Scorables.Internals.IResolver,object> MakeFactory ();
+    parameters: []
+    return:
+      type: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeFactory*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeMethods
+  commentId: M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeMethods
+  id: MakeMethods
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  langs:
+  - csharp
+  name: MakeMethods()
+  nameWithType: Dispatcher.MakeMethods()
+  fullName: Dispatcher.MakeMethods()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: protected virtual System.Collections.Generic.IEnumerable<System.Reflection.MethodInfo> MakeMethods ();
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeMethods*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeRegex(System.String)
+  commentId: M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeRegex(System.String)
+  id: MakeRegex(System.String)
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  langs:
+  - csharp
+  name: MakeRegex(String)
+  nameWithType: Dispatcher.MakeRegex(String)
+  fullName: Dispatcher.MakeRegex(String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: protected virtual System.Text.RegularExpressions.Regex MakeRegex (string pattern);
+    parameters:
+    - id: pattern
+      type: System.String
+      description: To be added.
+    return:
+      type: System.Text.RegularExpressions.Regex
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeRegex*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeResolver
+  commentId: M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeResolver
+  id: MakeResolver
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  langs:
+  - csharp
+  name: MakeResolver()
+  nameWithType: Dispatcher.MakeResolver()
+  fullName: Dispatcher.MakeResolver()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: protected virtual Microsoft.Bot.Builder.Scorables.Internals.IResolver MakeResolver ();
+    parameters: []
+    return:
+      type: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeResolver*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeScorable
+  commentId: M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeScorable
+  id: MakeScorable
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  langs:
+  - csharp
+  name: MakeScorable()
+  nameWithType: Dispatcher.MakeScorable()
+  fullName: Dispatcher.MakeScorable()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: protected virtual Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,object> MakeScorable ();
+    parameters: []
+    return:
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeScorable*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeService(Microsoft.Bot.Builder.Luis.ILuisModel)
+  commentId: M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeService(Microsoft.Bot.Builder.Luis.ILuisModel)
+  id: MakeService(Microsoft.Bot.Builder.Luis.ILuisModel)
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  langs:
+  - csharp
+  name: MakeService(ILuisModel)
+  nameWithType: Dispatcher.MakeService(ILuisModel)
+  fullName: Dispatcher.MakeService(ILuisModel)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: protected virtual Microsoft.Bot.Builder.Luis.ILuisService MakeService (Microsoft.Bot.Builder.Luis.ILuisModel model);
+    parameters:
+    - id: model
+      type: Microsoft.Bot.Builder.Luis.ILuisModel
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Luis.ILuisService
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeService*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeServices
+  commentId: M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeServices
+  id: MakeServices
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  langs:
+  - csharp
+  name: MakeServices()
+  nameWithType: Dispatcher.MakeServices()
+  fullName: Dispatcher.MakeServices()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: protected virtual System.Collections.Generic.IReadOnlyList<object> MakeServices ();
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.Object}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeServices*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeType
+  commentId: M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeType
+  id: MakeType
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  langs:
+  - csharp
+  name: MakeType()
+  nameWithType: Dispatcher.MakeType()
+  fullName: Dispatcher.MakeType()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: protected virtual Type MakeType ();
+    parameters: []
+    return:
+      type: System.Type
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeType*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.OnFailAsync
+  commentId: M:Microsoft.Bot.Builder.Scorables.Dispatcher.OnFailAsync
+  id: OnFailAsync
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  langs:
+  - csharp
+  name: OnFailAsync()
+  nameWithType: Dispatcher.OnFailAsync()
+  fullName: Dispatcher.OnFailAsync()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Scorables.Dispatcher/<OnFailAsync>d__14))]
+
+      protected virtual System.Threading.Tasks.Task OnFailAsync ();
+    parameters: []
+    return:
+      type: System.Threading.Tasks.Task
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Dispatcher.OnFailAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.OnPostAsync
+  commentId: M:Microsoft.Bot.Builder.Scorables.Dispatcher.OnPostAsync
+  id: OnPostAsync
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  langs:
+  - csharp
+  name: OnPostAsync()
+  nameWithType: Dispatcher.OnPostAsync()
+  fullName: Dispatcher.OnPostAsync()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Scorables.Dispatcher/<OnPostAsync>d__13))]
+
+      protected virtual System.Threading.Tasks.Task OnPostAsync ();
+    parameters: []
+    return:
+      type: System.Threading.Tasks.Task
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Dispatcher.OnPostAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.OnStage(Microsoft.Bot.Builder.Scorables.Internals.FoldStage,Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object},Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object,System.Object)
+  commentId: M:Microsoft.Bot.Builder.Scorables.Dispatcher.OnStage(Microsoft.Bot.Builder.Scorables.Internals.FoldStage,Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object},Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object,System.Object)
+  id: OnStage(Microsoft.Bot.Builder.Scorables.Internals.FoldStage,Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object},Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object,System.Object)
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  langs:
+  - csharp
+  name: OnStage(FoldStage, IScorable<IResolver,Object>, IResolver, Object, Object)
+  nameWithType: Dispatcher.OnStage(FoldStage, IScorable<IResolver,Object>, IResolver, Object, Object)
+  fullName: Dispatcher.OnStage(FoldStage, IScorable<IResolver,Object>, IResolver, Object, Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: protected virtual bool OnStage (Microsoft.Bot.Builder.Scorables.Internals.FoldStage stage, Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,object> scorable, Microsoft.Bot.Builder.Scorables.Internals.IResolver item, object state, object score);
+    parameters:
+    - id: stage
+      type: Microsoft.Bot.Builder.Scorables.Internals.FoldStage
+      description: To be added.
+    - id: scorable
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object}
+      description: To be added.
+    - id: item
+      type: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+      description: To be added.
+    - id: state
+      type: System.Object
+      description: To be added.
+    - id: score
+      type: System.Object
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Dispatcher.OnStage*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.Microsoft#Bot#Builder#Scorables#IDispatcher#TryPostAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Scorables.Dispatcher.Microsoft#Bot#Builder#Scorables#IDispatcher#TryPostAsync(System.Threading.CancellationToken)
+  id: Microsoft#Bot#Builder#Scorables#IDispatcher#TryPostAsync(System.Threading.CancellationToken)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  langs:
+  - csharp
+  name: IDispatcher.TryPostAsync(CancellationToken)
+  nameWithType: Dispatcher.IDispatcher.TryPostAsync(CancellationToken)
+  fullName: Dispatcher.IDispatcher.TryPostAsync(CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Scorables.Dispatcher/<Microsoft-Bot-Builder-Scorables-IDispatcher-TryPostAsync>d__15))]
+
+      System.Threading.Tasks.Task<bool> IDispatcher.TryPostAsync (System.Threading.CancellationToken token);
+    parameters:
+    - id: token
+      type: System.Threading.CancellationToken
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Dispatcher.Microsoft#Bot#Builder#Scorables#IDispatcher#TryPostAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.#ctor
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: Dispatcher()
+  nameWithType: Dispatcher.Dispatcher()
+  fullName: Dispatcher.Dispatcher()
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.ContinueWithNextGroup
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: ContinueWithNextGroup()
+  nameWithType: Dispatcher.ContinueWithNextGroup()
+  fullName: Dispatcher.ContinueWithNextGroup()
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeBindingFlags
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: MakeBindingFlags()
+  nameWithType: Dispatcher.MakeBindingFlags()
+  fullName: Dispatcher.MakeBindingFlags()
+- uid: System.Reflection.BindingFlags
+  parent: System.Reflection
+  isExternal: true
+  name: BindingFlags
+  nameWithType: BindingFlags
+  fullName: System.Reflection.BindingFlags
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeComparer
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: MakeComparer()
+  nameWithType: Dispatcher.MakeComparer()
+  fullName: Dispatcher.MakeComparer()
+- uid: System.Collections.Generic.IComparer`1
+  name: IComparer
+  nameWithType: IComparer
+  fullName: System.Collections.Generic.IComparer
+- uid: System.Collections.Generic.IComparer{System.Object}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IComparer<Object>
+  nameWithType: IComparer<Object>
+  fullName: System.Collections.Generic.IComparer<System.Object>
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    nameWithType: IComparer
+    fullName: System.Collections.Generic.IComparer
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeFactory
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: MakeFactory()
+  nameWithType: Dispatcher.MakeFactory()
+  fullName: Dispatcher.MakeFactory()
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2
+  name: IScorableFactory<Item,Score>
+  nameWithType: IScorableFactory<Item,Score>
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory<Item,Score>
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+  name: IResolver
+  nameWithType: IResolver
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object}
+  parent: Microsoft.Bot.Builder.Scorables.Internals
+  isExternal: false
+  name: IScorableFactory<IResolver,Object>
+  nameWithType: IScorableFactory<IResolver,Object>
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory<Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2
+    name: IScorableFactory
+    nameWithType: IScorableFactory
+    fullName: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+    name: IResolver
+    nameWithType: IResolver
+    fullName: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeMethods
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: MakeMethods()
+  nameWithType: Dispatcher.MakeMethods()
+  fullName: Dispatcher.MakeMethods()
+- uid: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.Generic.IEnumerable
+- uid: System.Reflection.MethodInfo
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<MethodInfo>
+  nameWithType: IEnumerable<MethodInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.MethodInfo>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    nameWithType: MethodInfo
+    fullName: System.Reflection.MethodInfo
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeRegex(System.String)
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: MakeRegex(String)
+  nameWithType: Dispatcher.MakeRegex(String)
+  fullName: Dispatcher.MakeRegex(String)
+- uid: System.Text.RegularExpressions.Regex
+  parent: System.Text.RegularExpressions
+  isExternal: true
+  name: Regex
+  nameWithType: Regex
+  fullName: System.Text.RegularExpressions.Regex
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeResolver
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: MakeResolver()
+  nameWithType: Dispatcher.MakeResolver()
+  fullName: Dispatcher.MakeResolver()
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeScorable
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: MakeScorable()
+  nameWithType: Dispatcher.MakeScorable()
+  fullName: Dispatcher.MakeScorable()
+- uid: Microsoft.Bot.Builder.Scorables.IScorable`2
+  name: IScorable<Item,Score>
+  nameWithType: IScorable<Item,Score>
+  fullName: Microsoft.Bot.Builder.Scorables.IScorable<Item,Score>
+- uid: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object}
+  parent: Microsoft.Bot.Builder.Scorables
+  isExternal: false
+  name: IScorable<IResolver,Object>
+  nameWithType: IScorable<IResolver,Object>
+  fullName: Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Scorables.IScorable`2
+    name: IScorable
+    nameWithType: IScorable
+    fullName: Microsoft.Bot.Builder.Scorables.IScorable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+    name: IResolver
+    nameWithType: IResolver
+    fullName: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeService(Microsoft.Bot.Builder.Luis.ILuisModel)
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: MakeService(ILuisModel)
+  nameWithType: Dispatcher.MakeService(ILuisModel)
+  fullName: Dispatcher.MakeService(ILuisModel)
+- uid: Microsoft.Bot.Builder.Luis.ILuisService
+  parent: Microsoft.Bot.Builder.Luis
+  isExternal: false
+  name: ILuisService
+  nameWithType: ILuisService
+  fullName: Microsoft.Bot.Builder.Luis.ILuisService
+- uid: Microsoft.Bot.Builder.Luis.ILuisModel
+  parent: Microsoft.Bot.Builder.Luis
+  isExternal: false
+  name: ILuisModel
+  nameWithType: ILuisModel
+  fullName: Microsoft.Bot.Builder.Luis.ILuisModel
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeServices
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: MakeServices()
+  nameWithType: Dispatcher.MakeServices()
+  fullName: Dispatcher.MakeServices()
+- uid: System.Collections.Generic.IReadOnlyList`1
+  name: IReadOnlyList
+  nameWithType: IReadOnlyList
+  fullName: System.Collections.Generic.IReadOnlyList
+- uid: System.Collections.Generic.IReadOnlyList{System.Object}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IReadOnlyList<Object>
+  nameWithType: IReadOnlyList<Object>
+  fullName: System.Collections.Generic.IReadOnlyList<System.Object>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeType
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: MakeType()
+  nameWithType: Dispatcher.MakeType()
+  fullName: Dispatcher.MakeType()
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.OnFailAsync
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: OnFailAsync()
+  nameWithType: Dispatcher.OnFailAsync()
+  fullName: Dispatcher.OnFailAsync()
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.OnPostAsync
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: OnPostAsync()
+  nameWithType: Dispatcher.OnPostAsync()
+  fullName: Dispatcher.OnPostAsync()
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.OnStage(Microsoft.Bot.Builder.Scorables.Internals.FoldStage,Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object},Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object,System.Object)
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: OnStage(FoldStage, IScorable<IResolver,Object>, IResolver, Object, Object)
+  nameWithType: Dispatcher.OnStage(FoldStage, IScorable<IResolver,Object>, IResolver, Object, Object)
+  fullName: Dispatcher.OnStage(FoldStage, IScorable<IResolver,Object>, IResolver, Object, Object)
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Bot.Builder.Scorables.Internals.FoldStage
+  parent: Microsoft.Bot.Builder.Scorables.Internals
+  isExternal: false
+  name: FoldStage
+  nameWithType: FoldStage
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.FoldStage
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.Microsoft#Bot#Builder#Scorables#IDispatcher#TryPostAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: IDispatcher.TryPostAsync(CancellationToken)
+  nameWithType: Dispatcher.IDispatcher.TryPostAsync(CancellationToken)
+  fullName: Dispatcher.IDispatcher.TryPostAsync(CancellationToken)
+- uid: System.Threading.Tasks.Task`1
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.#ctor*
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: Dispatcher
+  nameWithType: Dispatcher.Dispatcher
+  fullName: Dispatcher.Dispatcher
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.ContinueWithNextGroup*
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: ContinueWithNextGroup
+  nameWithType: Dispatcher.ContinueWithNextGroup
+  fullName: Dispatcher.ContinueWithNextGroup
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeBindingFlags*
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: MakeBindingFlags
+  nameWithType: Dispatcher.MakeBindingFlags
+  fullName: Dispatcher.MakeBindingFlags
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeComparer*
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: MakeComparer
+  nameWithType: Dispatcher.MakeComparer
+  fullName: Dispatcher.MakeComparer
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeFactory*
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: MakeFactory
+  nameWithType: Dispatcher.MakeFactory
+  fullName: Dispatcher.MakeFactory
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeMethods*
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: MakeMethods
+  nameWithType: Dispatcher.MakeMethods
+  fullName: Dispatcher.MakeMethods
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeRegex*
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: MakeRegex
+  nameWithType: Dispatcher.MakeRegex
+  fullName: Dispatcher.MakeRegex
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeResolver*
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: MakeResolver
+  nameWithType: Dispatcher.MakeResolver
+  fullName: Dispatcher.MakeResolver
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeScorable*
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: MakeScorable
+  nameWithType: Dispatcher.MakeScorable
+  fullName: Dispatcher.MakeScorable
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeService*
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: MakeService
+  nameWithType: Dispatcher.MakeService
+  fullName: Dispatcher.MakeService
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeServices*
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: MakeServices
+  nameWithType: Dispatcher.MakeServices
+  fullName: Dispatcher.MakeServices
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.MakeType*
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: MakeType
+  nameWithType: Dispatcher.MakeType
+  fullName: Dispatcher.MakeType
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.OnFailAsync*
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: OnFailAsync
+  nameWithType: Dispatcher.OnFailAsync
+  fullName: Dispatcher.OnFailAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.OnPostAsync*
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: OnPostAsync
+  nameWithType: Dispatcher.OnPostAsync
+  fullName: Dispatcher.OnPostAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.OnStage*
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: OnStage
+  nameWithType: Dispatcher.OnStage
+  fullName: Dispatcher.OnStage
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.Dispatcher.Microsoft#Bot#Builder#Scorables#IDispatcher#TryPostAsync*
+  parent: Microsoft.Bot.Builder.Scorables.Dispatcher
+  isExternal: false
+  name: Microsoft.Bot.Builder.Scorables.IDispatcher.TryPostAsync
+  nameWithType: Dispatcher.Microsoft.Bot.Builder.Scorables.IDispatcher.TryPostAsync
+  fullName: Dispatcher.Microsoft.Bot.Builder.Scorables.IDispatcher.TryPostAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Dispatcher.xml
+- uid: Microsoft.Bot.Builder.Scorables.IDispatcher
+  parent: Microsoft.Bot.Builder.Scorables
+  isExternal: false
+  name: IDispatcher
+  nameWithType: IDispatcher
+  fullName: Microsoft.Bot.Builder.Scorables.IDispatcher

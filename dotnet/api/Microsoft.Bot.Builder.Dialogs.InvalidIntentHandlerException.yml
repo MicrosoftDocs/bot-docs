@@ -1,0 +1,122 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.InvalidIntentHandlerException
+  commentId: T:Microsoft.Bot.Builder.Dialogs.InvalidIntentHandlerException
+  id: InvalidIntentHandlerException
+  children:
+  - Microsoft.Bot.Builder.Dialogs.InvalidIntentHandlerException.#ctor(System.String,System.Reflection.MethodInfo)
+  - Microsoft.Bot.Builder.Dialogs.InvalidIntentHandlerException.Method
+  langs:
+  - csharp
+  name: InvalidIntentHandlerException
+  nameWithType: InvalidIntentHandlerException
+  fullName: Microsoft.Bot.Builder.Dialogs.InvalidIntentHandlerException
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: An exception for invalid intent handlers.
+  syntax:
+    content: 'public sealed class InvalidIntentHandlerException : InvalidOperationException'
+  inheritance:
+  - System.InvalidOperationException
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/InvalidIntentHandlerException.xml
+- uid: Microsoft.Bot.Builder.Dialogs.InvalidIntentHandlerException.#ctor(System.String,System.Reflection.MethodInfo)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.InvalidIntentHandlerException.#ctor(System.String,System.Reflection.MethodInfo)
+  id: '#ctor(System.String,System.Reflection.MethodInfo)'
+  parent: Microsoft.Bot.Builder.Dialogs.InvalidIntentHandlerException
+  langs:
+  - csharp
+  name: InvalidIntentHandlerException(String, MethodInfo)
+  nameWithType: InvalidIntentHandlerException.InvalidIntentHandlerException(String, MethodInfo)
+  fullName: InvalidIntentHandlerException.InvalidIntentHandlerException(String, MethodInfo)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: public InvalidIntentHandlerException (string message, System.Reflection.MethodInfo method);
+    parameters:
+    - id: message
+      type: System.String
+      description: To be added.
+    - id: method
+      type: System.Reflection.MethodInfo
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.InvalidIntentHandlerException.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/InvalidIntentHandlerException.xml
+- uid: Microsoft.Bot.Builder.Dialogs.InvalidIntentHandlerException.Method
+  commentId: F:Microsoft.Bot.Builder.Dialogs.InvalidIntentHandlerException.Method
+  id: Method
+  parent: Microsoft.Bot.Builder.Dialogs.InvalidIntentHandlerException
+  langs:
+  - csharp
+  name: Method
+  nameWithType: InvalidIntentHandlerException.Method
+  fullName: InvalidIntentHandlerException.Method
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: public readonly System.Reflection.MethodInfo Method;
+    return:
+      type: System.Reflection.MethodInfo
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/InvalidIntentHandlerException.xml
+references:
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: true
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: Microsoft.Bot.Builder.Dialogs.InvalidIntentHandlerException.#ctor(System.String,System.Reflection.MethodInfo)
+  parent: Microsoft.Bot.Builder.Dialogs.InvalidIntentHandlerException
+  isExternal: false
+  name: InvalidIntentHandlerException(String, MethodInfo)
+  nameWithType: InvalidIntentHandlerException.InvalidIntentHandlerException(String, MethodInfo)
+  fullName: InvalidIntentHandlerException.InvalidIntentHandlerException(String, MethodInfo)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: Microsoft.Bot.Builder.Dialogs.InvalidIntentHandlerException.Method
+  parent: Microsoft.Bot.Builder.Dialogs.InvalidIntentHandlerException
+  isExternal: false
+  name: Method
+  nameWithType: InvalidIntentHandlerException.Method
+  fullName: InvalidIntentHandlerException.Method
+- uid: Microsoft.Bot.Builder.Dialogs.InvalidIntentHandlerException.#ctor*
+  parent: Microsoft.Bot.Builder.Dialogs.InvalidIntentHandlerException
+  isExternal: false
+  name: InvalidIntentHandlerException
+  nameWithType: InvalidIntentHandlerException.InvalidIntentHandlerException
+  fullName: InvalidIntentHandlerException.InvalidIntentHandlerException
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/InvalidIntentHandlerException.xml

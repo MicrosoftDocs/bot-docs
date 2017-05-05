@@ -1,0 +1,334 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.ActionTypes
+  commentId: T:Microsoft.Bot.Connector.ActionTypes
+  id: ActionTypes
+  children:
+  - Microsoft.Bot.Connector.ActionTypes.#ctor
+  - Microsoft.Bot.Connector.ActionTypes.DownloadFile
+  - Microsoft.Bot.Connector.ActionTypes.ImBack
+  - Microsoft.Bot.Connector.ActionTypes.OpenUrl
+  - Microsoft.Bot.Connector.ActionTypes.PlayAudio
+  - Microsoft.Bot.Connector.ActionTypes.PlayVideo
+  - Microsoft.Bot.Connector.ActionTypes.PostBack
+  - Microsoft.Bot.Connector.ActionTypes.ShowImage
+  - Microsoft.Bot.Connector.ActionTypes.Signin
+  langs:
+  - csharp
+  name: ActionTypes
+  nameWithType: ActionTypes
+  fullName: Microsoft.Bot.Connector.ActionTypes
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public class ActionTypes
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ActionTypes.xml
+- uid: Microsoft.Bot.Connector.ActionTypes.#ctor
+  commentId: M:Microsoft.Bot.Connector.ActionTypes.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Connector.ActionTypes
+  langs:
+  - csharp
+  name: ActionTypes()
+  nameWithType: ActionTypes.ActionTypes()
+  fullName: ActionTypes.ActionTypes()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public ActionTypes ();
+    parameters: []
+  overload: Microsoft.Bot.Connector.ActionTypes.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ActionTypes.xml
+- uid: Microsoft.Bot.Connector.ActionTypes.DownloadFile
+  commentId: F:Microsoft.Bot.Connector.ActionTypes.DownloadFile
+  id: DownloadFile
+  parent: Microsoft.Bot.Connector.ActionTypes
+  langs:
+  - csharp
+  name: DownloadFile
+  nameWithType: ActionTypes.DownloadFile
+  fullName: ActionTypes.DownloadFile
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: download file referenced by url
+  syntax:
+    content: public const string DownloadFile;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ActionTypes.xml
+- uid: Microsoft.Bot.Connector.ActionTypes.ImBack
+  commentId: F:Microsoft.Bot.Connector.ActionTypes.ImBack
+  id: ImBack
+  parent: Microsoft.Bot.Connector.ActionTypes
+  langs:
+  - csharp
+  name: ImBack
+  nameWithType: ActionTypes.ImBack
+  fullName: ActionTypes.ImBack
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Client will post message to bot, so all other participants will see that was posted to the bot and who posted this.
+  syntax:
+    content: public const string ImBack;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ActionTypes.xml
+- uid: Microsoft.Bot.Connector.ActionTypes.OpenUrl
+  commentId: F:Microsoft.Bot.Connector.ActionTypes.OpenUrl
+  id: OpenUrl
+  parent: Microsoft.Bot.Connector.ActionTypes
+  langs:
+  - csharp
+  name: OpenUrl
+  nameWithType: ActionTypes.OpenUrl
+  fullName: ActionTypes.OpenUrl
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Client will open given url in the built-in browser.
+  syntax:
+    content: public const string OpenUrl;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ActionTypes.xml
+- uid: Microsoft.Bot.Connector.ActionTypes.PlayAudio
+  commentId: F:Microsoft.Bot.Connector.ActionTypes.PlayAudio
+  id: PlayAudio
+  parent: Microsoft.Bot.Connector.ActionTypes
+  langs:
+  - csharp
+  name: PlayAudio
+  nameWithType: ActionTypes.PlayAudio
+  fullName: ActionTypes.PlayAudio
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: playback audio container referenced by url
+  syntax:
+    content: public const string PlayAudio;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ActionTypes.xml
+- uid: Microsoft.Bot.Connector.ActionTypes.PlayVideo
+  commentId: F:Microsoft.Bot.Connector.ActionTypes.PlayVideo
+  id: PlayVideo
+  parent: Microsoft.Bot.Connector.ActionTypes
+  langs:
+  - csharp
+  name: PlayVideo
+  nameWithType: ActionTypes.PlayVideo
+  fullName: ActionTypes.PlayVideo
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: playback video container referenced by url
+  syntax:
+    content: public const string PlayVideo;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ActionTypes.xml
+- uid: Microsoft.Bot.Connector.ActionTypes.PostBack
+  commentId: F:Microsoft.Bot.Connector.ActionTypes.PostBack
+  id: PostBack
+  parent: Microsoft.Bot.Connector.ActionTypes
+  langs:
+  - csharp
+  name: PostBack
+  nameWithType: ActionTypes.PostBack
+  fullName: ActionTypes.PostBack
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Client will post message to bot privately, so other participants inside conversation will not see that was posted.
+  syntax:
+    content: public const string PostBack;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ActionTypes.xml
+- uid: Microsoft.Bot.Connector.ActionTypes.ShowImage
+  commentId: F:Microsoft.Bot.Connector.ActionTypes.ShowImage
+  id: ShowImage
+  parent: Microsoft.Bot.Connector.ActionTypes
+  langs:
+  - csharp
+  name: ShowImage
+  nameWithType: ActionTypes.ShowImage
+  fullName: ActionTypes.ShowImage
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: show image referenced by url
+  syntax:
+    content: public const string ShowImage;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ActionTypes.xml
+- uid: Microsoft.Bot.Connector.ActionTypes.Signin
+  commentId: F:Microsoft.Bot.Connector.ActionTypes.Signin
+  id: Signin
+  parent: Microsoft.Bot.Connector.ActionTypes
+  langs:
+  - csharp
+  name: Signin
+  nameWithType: ActionTypes.Signin
+  fullName: ActionTypes.Signin
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Signin button
+  syntax:
+    content: public const string Signin;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ActionTypes.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.ActionTypes.#ctor
+  parent: Microsoft.Bot.Connector.ActionTypes
+  isExternal: false
+  name: ActionTypes()
+  nameWithType: ActionTypes.ActionTypes()
+  fullName: ActionTypes.ActionTypes()
+- uid: Microsoft.Bot.Connector.ActionTypes.DownloadFile
+  parent: Microsoft.Bot.Connector.ActionTypes
+  isExternal: false
+  name: DownloadFile
+  nameWithType: ActionTypes.DownloadFile
+  fullName: ActionTypes.DownloadFile
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.ActionTypes.ImBack
+  parent: Microsoft.Bot.Connector.ActionTypes
+  isExternal: false
+  name: ImBack
+  nameWithType: ActionTypes.ImBack
+  fullName: ActionTypes.ImBack
+- uid: Microsoft.Bot.Connector.ActionTypes.OpenUrl
+  parent: Microsoft.Bot.Connector.ActionTypes
+  isExternal: false
+  name: OpenUrl
+  nameWithType: ActionTypes.OpenUrl
+  fullName: ActionTypes.OpenUrl
+- uid: Microsoft.Bot.Connector.ActionTypes.PlayAudio
+  parent: Microsoft.Bot.Connector.ActionTypes
+  isExternal: false
+  name: PlayAudio
+  nameWithType: ActionTypes.PlayAudio
+  fullName: ActionTypes.PlayAudio
+- uid: Microsoft.Bot.Connector.ActionTypes.PlayVideo
+  parent: Microsoft.Bot.Connector.ActionTypes
+  isExternal: false
+  name: PlayVideo
+  nameWithType: ActionTypes.PlayVideo
+  fullName: ActionTypes.PlayVideo
+- uid: Microsoft.Bot.Connector.ActionTypes.PostBack
+  parent: Microsoft.Bot.Connector.ActionTypes
+  isExternal: false
+  name: PostBack
+  nameWithType: ActionTypes.PostBack
+  fullName: ActionTypes.PostBack
+- uid: Microsoft.Bot.Connector.ActionTypes.ShowImage
+  parent: Microsoft.Bot.Connector.ActionTypes
+  isExternal: false
+  name: ShowImage
+  nameWithType: ActionTypes.ShowImage
+  fullName: ActionTypes.ShowImage
+- uid: Microsoft.Bot.Connector.ActionTypes.Signin
+  parent: Microsoft.Bot.Connector.ActionTypes
+  isExternal: false
+  name: Signin
+  nameWithType: ActionTypes.Signin
+  fullName: ActionTypes.Signin
+- uid: Microsoft.Bot.Connector.ActionTypes.#ctor*
+  parent: Microsoft.Bot.Connector.ActionTypes
+  isExternal: false
+  name: ActionTypes
+  nameWithType: ActionTypes.ActionTypes
+  fullName: ActionTypes.ActionTypes
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ActionTypes.xml

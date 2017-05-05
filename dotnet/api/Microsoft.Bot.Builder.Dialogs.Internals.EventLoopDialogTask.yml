@@ -1,0 +1,218 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask
+  commentId: T:Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask
+  id: EventLoopDialogTask
+  children:
+  - Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask.#ctor(System.Func{Microsoft.Bot.Builder.Base.IEventLoop},Microsoft.Bot.Builder.Base.IEventProducer{Microsoft.Bot.Connector.IActivity},Microsoft.Bot.Builder.Dialogs.Internals.IBotData)
+  - Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask.Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  name: EventLoopDialogTask
+  nameWithType: EventLoopDialogTask
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: 'public sealed class EventLoopDialogTask : Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot'
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/EventLoopDialogTask.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask.#ctor(System.Func{Microsoft.Bot.Builder.Base.IEventLoop},Microsoft.Bot.Builder.Base.IEventProducer{Microsoft.Bot.Connector.IActivity},Microsoft.Bot.Builder.Dialogs.Internals.IBotData)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask.#ctor(System.Func{Microsoft.Bot.Builder.Base.IEventLoop},Microsoft.Bot.Builder.Base.IEventProducer{Microsoft.Bot.Connector.IActivity},Microsoft.Bot.Builder.Dialogs.Internals.IBotData)
+  id: '#ctor(System.Func{Microsoft.Bot.Builder.Base.IEventLoop},Microsoft.Bot.Builder.Base.IEventProducer{Microsoft.Bot.Connector.IActivity},Microsoft.Bot.Builder.Dialogs.Internals.IBotData)'
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask
+  langs:
+  - csharp
+  name: EventLoopDialogTask(Func<IEventLoop>, IEventProducer<IActivity>, IBotData)
+  nameWithType: EventLoopDialogTask.EventLoopDialogTask(Func<IEventLoop>, IEventProducer<IActivity>, IBotData)
+  fullName: EventLoopDialogTask.EventLoopDialogTask(Func<IEventLoop>, IEventProducer<IActivity>, IBotData)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: public EventLoopDialogTask (Func<Microsoft.Bot.Builder.Base.IEventLoop> makeInner, Microsoft.Bot.Builder.Base.IEventProducer<Microsoft.Bot.Connector.IActivity> queue, Microsoft.Bot.Builder.Dialogs.Internals.IBotData botData);
+    parameters:
+    - id: makeInner
+      type: System.Func{Microsoft.Bot.Builder.Base.IEventLoop}
+      description: To be added.
+    - id: queue
+      type: Microsoft.Bot.Builder.Base.IEventProducer{Microsoft.Bot.Connector.IActivity}
+      description: To be added.
+    - id: botData
+      type: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/EventLoopDialogTask.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask.Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask.Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  id: Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask
+  langs:
+  - csharp
+  name: IPostToBot.PostAsync(IActivity, CancellationToken)
+  nameWithType: EventLoopDialogTask.IPostToBot.PostAsync(IActivity, CancellationToken)
+  fullName: EventLoopDialogTask.IPostToBot.PostAsync(IActivity, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask/<Microsoft-Bot-Builder-Dialogs-Internals-IPostToBot-PostAsync>d__3))]
+
+      System.Threading.Tasks.Task IPostToBot.PostAsync (Microsoft.Bot.Connector.IActivity activity, System.Threading.CancellationToken token);
+    parameters:
+    - id: activity
+      type: Microsoft.Bot.Connector.IActivity
+      description: To be added.
+    - id: token
+      type: System.Threading.CancellationToken
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask.Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/EventLoopDialogTask.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask.#ctor(System.Func{Microsoft.Bot.Builder.Base.IEventLoop},Microsoft.Bot.Builder.Base.IEventProducer{Microsoft.Bot.Connector.IActivity},Microsoft.Bot.Builder.Dialogs.Internals.IBotData)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask
+  isExternal: false
+  name: EventLoopDialogTask(Func<IEventLoop>, IEventProducer<IActivity>, IBotData)
+  nameWithType: EventLoopDialogTask.EventLoopDialogTask(Func<IEventLoop>, IEventProducer<IActivity>, IBotData)
+  fullName: EventLoopDialogTask.EventLoopDialogTask(Func<IEventLoop>, IEventProducer<IActivity>, IBotData)
+- uid: System.Func`1
+  name: Func
+  nameWithType: Func
+  fullName: System.Func
+- uid: Microsoft.Bot.Builder.Base.IEventLoop
+  name: IEventLoop
+  nameWithType: IEventLoop
+  fullName: Microsoft.Bot.Builder.Base.IEventLoop
+- uid: System.Func{Microsoft.Bot.Builder.Base.IEventLoop}
+  parent: System
+  isExternal: true
+  name: Func<IEventLoop>
+  nameWithType: Func<IEventLoop>
+  fullName: System.Func<Microsoft.Bot.Builder.Base.IEventLoop>
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Base.IEventLoop
+    name: IEventLoop
+    nameWithType: IEventLoop
+    fullName: Microsoft.Bot.Builder.Base.IEventLoop
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Base.IEventProducer`1
+  name: IEventProducer<Event>
+  nameWithType: IEventProducer<Event>
+  fullName: Microsoft.Bot.Builder.Base.IEventProducer<Event>
+- uid: Microsoft.Bot.Connector.IActivity
+  name: IActivity
+  nameWithType: IActivity
+  fullName: Microsoft.Bot.Connector.IActivity
+- uid: Microsoft.Bot.Builder.Base.IEventProducer{Microsoft.Bot.Connector.IActivity}
+  parent: Microsoft.Bot.Builder.Base
+  isExternal: false
+  name: IEventProducer<IActivity>
+  nameWithType: IEventProducer<IActivity>
+  fullName: Microsoft.Bot.Builder.Base.IEventProducer<Microsoft.Bot.Connector.IActivity>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Base.IEventProducer`1
+    name: IEventProducer
+    nameWithType: IEventProducer
+    fullName: Microsoft.Bot.Builder.Base.IEventProducer
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.IActivity
+    name: IActivity
+    nameWithType: IActivity
+    fullName: Microsoft.Bot.Connector.IActivity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals
+  isExternal: false
+  name: IBotData
+  nameWithType: IBotData
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask.Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask
+  isExternal: false
+  name: IPostToBot.PostAsync(IActivity, CancellationToken)
+  nameWithType: EventLoopDialogTask.IPostToBot.PostAsync(IActivity, CancellationToken)
+  fullName: EventLoopDialogTask.IPostToBot.PostAsync(IActivity, CancellationToken)
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask.#ctor*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask
+  isExternal: false
+  name: EventLoopDialogTask
+  nameWithType: EventLoopDialogTask.EventLoopDialogTask
+  fullName: EventLoopDialogTask.EventLoopDialogTask
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/EventLoopDialogTask.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask.Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask
+  isExternal: false
+  name: Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot.PostAsync
+  nameWithType: EventLoopDialogTask.Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot.PostAsync
+  fullName: EventLoopDialogTask.Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot.PostAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/EventLoopDialogTask.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot
+  parent: Microsoft.Bot.Builder.Dialogs.Internals
+  isExternal: false
+  name: IPostToBot
+  nameWithType: IPostToBot
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot

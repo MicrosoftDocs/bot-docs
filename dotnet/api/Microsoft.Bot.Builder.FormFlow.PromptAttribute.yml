@@ -1,0 +1,159 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.PromptAttribute
+  commentId: T:Microsoft.Bot.Builder.FormFlow.PromptAttribute
+  id: PromptAttribute
+  children:
+  - Microsoft.Bot.Builder.FormFlow.PromptAttribute.#ctor(Microsoft.Bot.Builder.FormFlow.TemplateAttribute)
+  - Microsoft.Bot.Builder.FormFlow.PromptAttribute.#ctor(System.String[])
+  langs:
+  - csharp
+  name: PromptAttribute
+  nameWithType: PromptAttribute
+  fullName: Microsoft.Bot.Builder.FormFlow.PromptAttribute
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Define the prompt used when asking about a field.
+  remarks: "Prompts by default will come from \\ref Templates.  \n            This attribute allows you to override this with one more \\ref patterns strings. \n            The actual prompt will be randomly selected from the alternatives you provide."
+  syntax:
+    content: >-
+      [System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field)]
+
+      public class PromptAttribute : Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  inheritance:
+  - System.Attribute
+  - Microsoft.Bot.Builder.FormFlow.FormFlowAttribute
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  implements: []
+  inheritedMembers:
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.AllowDefault
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ApplyDefaults(Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceCase
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceFormat
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceLastSeparator
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceParens
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceSeparator
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceStyle
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Feedback
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.FieldCase
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.LastSeparator
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Pattern
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Patterns
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Separator
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ValueCase
+  - Microsoft.Bot.Builder.FormFlow.FormFlowAttribute.IsLocalizable
+  attributes:
+  - type: System.AttributeUsage
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/PromptAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.PromptAttribute.#ctor(Microsoft.Bot.Builder.FormFlow.TemplateAttribute)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.PromptAttribute.#ctor(Microsoft.Bot.Builder.FormFlow.TemplateAttribute)
+  id: '#ctor(Microsoft.Bot.Builder.FormFlow.TemplateAttribute)'
+  parent: Microsoft.Bot.Builder.FormFlow.PromptAttribute
+  langs:
+  - csharp
+  name: PromptAttribute(TemplateAttribute)
+  nameWithType: PromptAttribute.PromptAttribute(TemplateAttribute)
+  fullName: PromptAttribute.PromptAttribute(TemplateAttribute)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Define a prompt based on a <xref href="Microsoft.Bot.Builder.FormFlow.TemplateAttribute"></xref>.
+  syntax:
+    content: public PromptAttribute (Microsoft.Bot.Builder.FormFlow.TemplateAttribute pattern);
+    parameters:
+    - id: pattern
+      type: Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+      description: Template to use.
+  overload: Microsoft.Bot.Builder.FormFlow.PromptAttribute.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/PromptAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.PromptAttribute.#ctor(System.String[])
+  commentId: M:Microsoft.Bot.Builder.FormFlow.PromptAttribute.#ctor(System.String[])
+  id: '#ctor(System.String[])'
+  parent: Microsoft.Bot.Builder.FormFlow.PromptAttribute
+  langs:
+  - csharp
+  name: PromptAttribute(String[])
+  nameWithType: PromptAttribute.PromptAttribute(String[])
+  fullName: PromptAttribute.PromptAttribute(String[])
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Define a prompt with one or more \ref patterns patterns to choose from randomly.
+  syntax:
+    content: public PromptAttribute (string[] patterns);
+    parameters:
+    - id: patterns
+      type: System.String[]
+      description: Patterns to select from.
+  overload: Microsoft.Bot.Builder.FormFlow.PromptAttribute.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/PromptAttribute.xml
+references:
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced
+  isExternal: false
+  name: TemplateBaseAttribute
+  nameWithType: TemplateBaseAttribute
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+- uid: Microsoft.Bot.Builder.FormFlow.PromptAttribute.#ctor(Microsoft.Bot.Builder.FormFlow.TemplateAttribute)
+  parent: Microsoft.Bot.Builder.FormFlow.PromptAttribute
+  isExternal: false
+  name: PromptAttribute(TemplateAttribute)
+  nameWithType: PromptAttribute.PromptAttribute(TemplateAttribute)
+  fullName: PromptAttribute.PromptAttribute(TemplateAttribute)
+- uid: Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: TemplateAttribute
+  nameWithType: TemplateAttribute
+  fullName: Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+- uid: Microsoft.Bot.Builder.FormFlow.PromptAttribute.#ctor(System.String[])
+  parent: Microsoft.Bot.Builder.FormFlow.PromptAttribute
+  isExternal: false
+  name: PromptAttribute(String[])
+  nameWithType: PromptAttribute.PromptAttribute(String[])
+  fullName: PromptAttribute.PromptAttribute(String[])
+- uid: System.String
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.String[]
+  parent: System
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: Microsoft.Bot.Builder.FormFlow.PromptAttribute.#ctor*
+  parent: Microsoft.Bot.Builder.FormFlow.PromptAttribute
+  isExternal: false
+  name: PromptAttribute
+  nameWithType: PromptAttribute.PromptAttribute
+  fullName: PromptAttribute.PromptAttribute
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/PromptAttribute.xml

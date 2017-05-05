@@ -1,0 +1,119 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IScope`1
+  commentId: T:Microsoft.Bot.Builder.Internals.Fibers.IScope`1
+  id: IScope`1
+  children:
+  - Microsoft.Bot.Builder.Internals.Fibers.IScope`1.WithScopeAsync(`0,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  name: IScope<T>
+  nameWithType: IScope<T>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IScope<T>
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  summary: Provide an abstraction to serialize access to an item for a using-block scope of code.
+  syntax:
+    content: public interface IScope<T>
+    typeParameters:
+    - id: T
+      description: The item type.
+  derivedClasses:
+  - Microsoft.Bot.Builder.Internals.Fibers.LocalMutualExclusion`1
+  implements: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/IScope`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IScope`1.WithScopeAsync(`0,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.IScope`1.WithScopeAsync(`0,System.Threading.CancellationToken)
+  id: WithScopeAsync(`0,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.IScope`1
+  langs:
+  - csharp
+  name: WithScopeAsync(T, CancellationToken)
+  nameWithType: IScope<T>.WithScopeAsync(T, CancellationToken)
+  fullName: IScope<T>.WithScopeAsync(T, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  summary: Enter a scope of code keyed by item.
+  syntax:
+    content: public System.Threading.Tasks.Task<IDisposable> WithScopeAsync (T item, System.Threading.CancellationToken token);
+    parameters:
+    - id: item
+      type: T
+      description: The item.
+    - id: token
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.IDisposable}
+      description: A task whose completion produces an IDisposable for the scope.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.IScope`1.WithScopeAsync*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/IScope`1.xml
+references:
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IScope`1.WithScopeAsync(`0,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.IScope`1
+  isExternal: false
+  name: WithScopeAsync(T, CancellationToken)
+  nameWithType: IScope<T>.WithScopeAsync(T, CancellationToken)
+  fullName: IScope<T>.WithScopeAsync(T, CancellationToken)
+- uid: System.Threading.Tasks.Task`1
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.IDisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Threading.Tasks.Task{System.IDisposable}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<IDisposable>
+  nameWithType: Task<IDisposable>
+  fullName: System.Threading.Tasks.Task<System.IDisposable>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.IDisposable
+    name: IDisposable
+    nameWithType: IDisposable
+    fullName: System.IDisposable
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: T
+  isExternal: true
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IScope`1.WithScopeAsync*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.IScope`1
+  isExternal: false
+  name: WithScopeAsync
+  nameWithType: IScope<T>.WithScopeAsync
+  fullName: IScope<T>.WithScopeAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/IScope`1.xml

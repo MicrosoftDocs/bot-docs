@@ -1,0 +1,218 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer
+  commentId: T:Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer
+  id: ConversationAddressComparer
+  children:
+  - Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer.#ctor
+  - Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer.System#Collections#Generic#IEqualityComparer{Microsoft#Bot#Builder#Dialogs#IAddress}#Equals(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.IAddress)
+  - Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer.System#Collections#Generic#IEqualityComparer{Microsoft#Bot#Builder#Dialogs#IAddress}#GetHashCode(Microsoft.Bot.Builder.Dialogs.IAddress)
+  langs:
+  - csharp
+  name: ConversationAddressComparer
+  nameWithType: ConversationAddressComparer
+  fullName: Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Compare two Address instances for equality, excluding the user information.
+  remarks: >-
+    This equality comparer excludes the user from the Address identity
+                so that dialog execution can be serialized by conversation, thereby
+                making it less likely to encounter 412 "precondition failed" when
+                updating the bot state data bags with optimistic concurrency.  Updates
+                to the user's data bags may still conflict across multiple conversations.
+  syntax:
+    content: 'public sealed class ConversationAddressComparer : System.Collections.Generic.IEqualityComparer<Microsoft.Bot.Builder.Dialogs.IAddress>'
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.IEqualityComparer{Microsoft.Bot.Builder.Dialogs.IAddress}
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ConversationAddressComparer.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer.#ctor
+  commentId: M:Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer
+  langs:
+  - csharp
+  name: ConversationAddressComparer()
+  nameWithType: ConversationAddressComparer.ConversationAddressComparer()
+  fullName: ConversationAddressComparer.ConversationAddressComparer()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: public ConversationAddressComparer ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ConversationAddressComparer.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer.System#Collections#Generic#IEqualityComparer{Microsoft#Bot#Builder#Dialogs#IAddress}#Equals(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.IAddress)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer.System#Collections#Generic#IEqualityComparer<Microsoft#Bot#Builder#Dialogs#IAddress>#Equals(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.IAddress)
+  id: System#Collections#Generic#IEqualityComparer{Microsoft#Bot#Builder#Dialogs#IAddress}#Equals(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.IAddress)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer
+  langs:
+  - csharp
+  name: IEqualityComparer<IAddress>.Equals(IAddress, IAddress)
+  nameWithType: ConversationAddressComparer.IEqualityComparer<IAddress>.Equals(IAddress, IAddress)
+  fullName: ConversationAddressComparer.IEqualityComparer<IAddress>.Equals(IAddress, IAddress)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: bool IEqualityComparer<IAddress>.Equals (Microsoft.Bot.Builder.Dialogs.IAddress one, Microsoft.Bot.Builder.Dialogs.IAddress two);
+    parameters:
+    - id: one
+      type: Microsoft.Bot.Builder.Dialogs.IAddress
+      description: To be added.
+    - id: two
+      type: Microsoft.Bot.Builder.Dialogs.IAddress
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer.System#Collections#Generic#IEqualityComparer{Microsoft#Bot#Builder#Dialogs#IAddress}#Equals*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ConversationAddressComparer.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer.System#Collections#Generic#IEqualityComparer{Microsoft#Bot#Builder#Dialogs#IAddress}#GetHashCode(Microsoft.Bot.Builder.Dialogs.IAddress)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer.System#Collections#Generic#IEqualityComparer<Microsoft#Bot#Builder#Dialogs#IAddress>#GetHashCode(Microsoft.Bot.Builder.Dialogs.IAddress)
+  id: System#Collections#Generic#IEqualityComparer{Microsoft#Bot#Builder#Dialogs#IAddress}#GetHashCode(Microsoft.Bot.Builder.Dialogs.IAddress)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer
+  langs:
+  - csharp
+  name: IEqualityComparer<IAddress>.GetHashCode(IAddress)
+  nameWithType: ConversationAddressComparer.IEqualityComparer<IAddress>.GetHashCode(IAddress)
+  fullName: ConversationAddressComparer.IEqualityComparer<IAddress>.GetHashCode(IAddress)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: int IEqualityComparer<IAddress>.GetHashCode (Microsoft.Bot.Builder.Dialogs.IAddress address);
+    parameters:
+    - id: address
+      type: Microsoft.Bot.Builder.Dialogs.IAddress
+      description: To be added.
+    return:
+      type: System.Int32
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer.System#Collections#Generic#IEqualityComparer{Microsoft#Bot#Builder#Dialogs#IAddress}#GetHashCode*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ConversationAddressComparer.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer.#ctor
+  parent: Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer
+  isExternal: false
+  name: ConversationAddressComparer()
+  nameWithType: ConversationAddressComparer.ConversationAddressComparer()
+  fullName: ConversationAddressComparer.ConversationAddressComparer()
+- uid: Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer.System#Collections#Generic#IEqualityComparer{Microsoft#Bot#Builder#Dialogs#IAddress}#Equals(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.IAddress)
+  parent: Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer
+  isExternal: false
+  name: IEqualityComparer<IAddress>.Equals(IAddress, IAddress)
+  nameWithType: ConversationAddressComparer.IEqualityComparer<IAddress>.Equals(IAddress, IAddress)
+  fullName: ConversationAddressComparer.IEqualityComparer<IAddress>.Equals(IAddress, IAddress)
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Bot.Builder.Dialogs.IAddress
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: IAddress
+  nameWithType: IAddress
+  fullName: Microsoft.Bot.Builder.Dialogs.IAddress
+- uid: Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer.System#Collections#Generic#IEqualityComparer{Microsoft#Bot#Builder#Dialogs#IAddress}#GetHashCode(Microsoft.Bot.Builder.Dialogs.IAddress)
+  parent: Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer
+  isExternal: false
+  name: IEqualityComparer<IAddress>.GetHashCode(IAddress)
+  nameWithType: ConversationAddressComparer.IEqualityComparer<IAddress>.GetHashCode(IAddress)
+  fullName: ConversationAddressComparer.IEqualityComparer<IAddress>.GetHashCode(IAddress)
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer.#ctor*
+  parent: Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer
+  isExternal: false
+  name: ConversationAddressComparer
+  nameWithType: ConversationAddressComparer.ConversationAddressComparer
+  fullName: ConversationAddressComparer.ConversationAddressComparer
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ConversationAddressComparer.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer.System#Collections#Generic#IEqualityComparer{Microsoft#Bot#Builder#Dialogs#IAddress}#Equals*
+  parent: Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer
+  isExternal: false
+  name: System.Collections.Generic.IEqualityComparer<Microsoft.Bot.Builder.Dialogs.IAddress>.Equals
+  nameWithType: ConversationAddressComparer.System.Collections.Generic.IEqualityComparer<Microsoft.Bot.Builder.Dialogs.IAddress>.Equals
+  fullName: ConversationAddressComparer.System.Collections.Generic.IEqualityComparer<Microsoft.Bot.Builder.Dialogs.IAddress>.Equals
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ConversationAddressComparer.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer.System#Collections#Generic#IEqualityComparer{Microsoft#Bot#Builder#Dialogs#IAddress}#GetHashCode*
+  parent: Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer
+  isExternal: false
+  name: System.Collections.Generic.IEqualityComparer<Microsoft.Bot.Builder.Dialogs.IAddress>.GetHashCode
+  nameWithType: ConversationAddressComparer.System.Collections.Generic.IEqualityComparer<Microsoft.Bot.Builder.Dialogs.IAddress>.GetHashCode
+  fullName: ConversationAddressComparer.System.Collections.Generic.IEqualityComparer<Microsoft.Bot.Builder.Dialogs.IAddress>.GetHashCode
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ConversationAddressComparer.xml
+- uid: System.Collections.Generic.IEqualityComparer`1
+  name: IEqualityComparer
+  nameWithType: IEqualityComparer
+  fullName: System.Collections.Generic.IEqualityComparer
+- uid: System.Collections.Generic.IEqualityComparer{Microsoft.Bot.Builder.Dialogs.IAddress}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEqualityComparer<IAddress>
+  nameWithType: IEqualityComparer<IAddress>
+  fullName: System.Collections.Generic.IEqualityComparer<Microsoft.Bot.Builder.Dialogs.IAddress>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    nameWithType: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Dialogs.IAddress
+    name: IAddress
+    nameWithType: IAddress
+    fullName: Microsoft.Bot.Builder.Dialogs.IAddress
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'

@@ -1,0 +1,136 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IFrameLoop`1
+  commentId: T:Microsoft.Bot.Builder.Internals.Fibers.IFrameLoop`1
+  id: IFrameLoop`1
+  children:
+  - Microsoft.Bot.Builder.Internals.Fibers.IFrameLoop`1.PollAsync(Microsoft.Bot.Builder.Internals.Fibers.IFiber{`0},`0,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  name: IFrameLoop<C>
+  nameWithType: IFrameLoop<C>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IFrameLoop<C>
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public interface IFrameLoop<C>
+    typeParameters:
+    - id: C
+      description: To be added.
+  derivedClasses:
+  - Microsoft.Bot.Builder.Internals.Fibers.Frame`1
+  - Microsoft.Bot.Builder.Internals.Fibers.IFrame`1
+  implements: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/IFrameLoop`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IFrameLoop`1.PollAsync(Microsoft.Bot.Builder.Internals.Fibers.IFiber{`0},`0,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.IFrameLoop`1.PollAsync(Microsoft.Bot.Builder.Internals.Fibers.IFiber{`0},`0,System.Threading.CancellationToken)
+  id: PollAsync(Microsoft.Bot.Builder.Internals.Fibers.IFiber{`0},`0,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.IFrameLoop`1
+  langs:
+  - csharp
+  name: PollAsync(IFiber<C>, C, CancellationToken)
+  nameWithType: IFrameLoop<C>.PollAsync(IFiber<C>, C, CancellationToken)
+  fullName: IFrameLoop<C>.PollAsync(IFiber<C>, C, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public System.Threading.Tasks.Task<Microsoft.Bot.Builder.Internals.Fibers.IWait<C>> PollAsync (Microsoft.Bot.Builder.Internals.Fibers.IFiber<C> fiber, C context, System.Threading.CancellationToken token);
+    parameters:
+    - id: fiber
+      type: Microsoft.Bot.Builder.Internals.Fibers.IFiber`1
+      description: To be added.
+    - id: context
+      type: C
+      description: To be added.
+    - id: token
+      type: System.Threading.CancellationToken
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Builder.Internals.Fibers.IWait{C}}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.IFrameLoop`1.PollAsync*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/IFrameLoop`1.xml
+references:
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IFrameLoop`1.PollAsync(Microsoft.Bot.Builder.Internals.Fibers.IFiber{`0},`0,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.IFrameLoop`1
+  isExternal: false
+  name: PollAsync(IFiber<C>, C, CancellationToken)
+  nameWithType: IFrameLoop<C>.PollAsync(IFiber<C>, C, CancellationToken)
+  fullName: IFrameLoop<C>.PollAsync(IFiber<C>, C, CancellationToken)
+- uid: System.Threading.Tasks.Task`1
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IWait`1
+  name: IWait<C>
+  nameWithType: IWait<C>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IWait<C>
+- uid: C
+  name: C
+  nameWithType: C
+  fullName: C
+- uid: System.Threading.Tasks.Task{Microsoft.Bot.Builder.Internals.Fibers.IWait{C}}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<IWait<C>>
+  nameWithType: Task<IWait<C>>
+  fullName: System.Threading.Tasks.Task<Microsoft.Bot.Builder.Internals.Fibers.IWait<C>>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.IWait`1
+    name: IWait
+    nameWithType: IWait
+    fullName: Microsoft.Bot.Builder.Internals.Fibers.IWait
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: C
+    name: C
+    nameWithType: C
+    fullName: C
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IFiber`1
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: IFiber<C>
+  nameWithType: IFiber<C>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IFiber<C>
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IFrameLoop`1.PollAsync*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.IFrameLoop`1
+  isExternal: false
+  name: PollAsync
+  nameWithType: IFrameLoop<C>.PollAsync
+  fullName: IFrameLoop<C>.PollAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/IFrameLoop`1.xml

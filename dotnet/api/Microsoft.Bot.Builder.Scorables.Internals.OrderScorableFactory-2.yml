@@ -1,0 +1,345 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2
+  commentId: T:Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2
+  id: OrderScorableFactory`2
+  children:
+  - Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2.#ctor(Microsoft.Bot.Builder.Scorables.Internals.FoldScorable{`0,`1}.OnStageDelegate,System.Collections.Generic.IComparer{`1},Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory{`0,`1}[])
+  - Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2.#ctor(Microsoft.Bot.Builder.Scorables.Internals.FoldScorable{`0,`1}.OnStageDelegate,System.Collections.Generic.IComparer{`1},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory{`0,`1}})
+  - Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2.Microsoft#Bot#Builder#Scorables#Internals#IScorableFactory{Item,Score}#ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})
+  langs:
+  - csharp
+  name: OrderScorableFactory<Item,Score>
+  nameWithType: OrderScorableFactory<Item,Score>
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory<Item,Score>
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: 'public sealed class OrderScorableFactory<Item,Score> : Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory<Item,Score>'
+    typeParameters:
+    - id: Item
+      description: To be added.
+    - id: Score
+      description: To be added.
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory{Item,Score}
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/OrderScorableFactory`2.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2.#ctor(Microsoft.Bot.Builder.Scorables.Internals.FoldScorable{`0,`1}.OnStageDelegate,System.Collections.Generic.IComparer{`1},Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory{`0,`1}[])
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2.#ctor(Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.OnStageDelegate{`0,`1},System.Collections.Generic.IComparer{`1},Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory{`0,`1}[])
+  id: '#ctor(Microsoft.Bot.Builder.Scorables.Internals.FoldScorable{`0,`1}.OnStageDelegate,System.Collections.Generic.IComparer{`1},Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory{`0,`1}[])'
+  parent: Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2
+  langs:
+  - csharp
+  name: OrderScorableFactory<Item,Score>(FoldScorable<Item,Score>, IComparer<Score>, IScorableFactory<Item,Score>[])
+  nameWithType: OrderScorableFactory<Item,Score>.OrderScorableFactory<Item,Score>(FoldScorable<Item,Score>, IComparer<Score>, IScorableFactory<Item,Score>[])
+  fullName: OrderScorableFactory<Item,Score>.OrderScorableFactory<Item,Score>(FoldScorable<Item,Score>, IComparer<Score>, IScorableFactory<Item,Score>[])
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public OrderScorableFactory (Microsoft.Bot.Builder.Scorables.Internals.FoldScorable<Item,Score>.OnStageDelegate onStage, System.Collections.Generic.IComparer<Score> comparer, Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory<Item,Score>[] factories);
+    parameters:
+    - id: onStage
+      type: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable{Item,Score}
+      description: To be added.
+    - id: comparer
+      type: System.Collections.Generic.IComparer{Score}
+      description: To be added.
+    - id: factories
+      type: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory{Item,Score}[]
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/OrderScorableFactory`2.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2.#ctor(Microsoft.Bot.Builder.Scorables.Internals.FoldScorable{`0,`1}.OnStageDelegate,System.Collections.Generic.IComparer{`1},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory{`0,`1}})
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2.#ctor(Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.OnStageDelegate{`0,`1},System.Collections.Generic.IComparer{`1},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory{`0,`1}})
+  id: '#ctor(Microsoft.Bot.Builder.Scorables.Internals.FoldScorable{`0,`1}.OnStageDelegate,System.Collections.Generic.IComparer{`1},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory{`0,`1}})'
+  parent: Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2
+  langs:
+  - csharp
+  name: OrderScorableFactory<Item,Score>(FoldScorable<Item,Score>, IComparer<Score>, IEnumerable<IScorableFactory<Item,Score>>)
+  nameWithType: OrderScorableFactory<Item,Score>.OrderScorableFactory<Item,Score>(FoldScorable<Item,Score>, IComparer<Score>, IEnumerable<IScorableFactory<Item,Score>>)
+  fullName: OrderScorableFactory<Item,Score>.OrderScorableFactory<Item,Score>(FoldScorable<Item,Score>, IComparer<Score>, IEnumerable<IScorableFactory<Item,Score>>)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public OrderScorableFactory (Microsoft.Bot.Builder.Scorables.Internals.FoldScorable<Item,Score>.OnStageDelegate onStage, System.Collections.Generic.IComparer<Score> comparer, System.Collections.Generic.IEnumerable<Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory<Item,Score>> factories);
+    parameters:
+    - id: onStage
+      type: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable{Item,Score}
+      description: To be added.
+    - id: comparer
+      type: System.Collections.Generic.IComparer{Score}
+      description: To be added.
+    - id: factories
+      type: System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory{Item,Score}}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/OrderScorableFactory`2.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2.Microsoft#Bot#Builder#Scorables#Internals#IScorableFactory{Item,Score}#ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2.Microsoft#Bot#Builder#Scorables#Internals#IScorableFactory<Item,Score>#ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})
+  id: Microsoft#Bot#Builder#Scorables#Internals#IScorableFactory{Item,Score}#ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})
+  isEii: true
+  parent: Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2
+  langs:
+  - csharp
+  name: IScorableFactory<Item,Score>.ScorableFor(IEnumerable<MethodInfo>)
+  nameWithType: OrderScorableFactory<Item,Score>.IScorableFactory<Item,Score>.ScorableFor(IEnumerable<MethodInfo>)
+  fullName: OrderScorableFactory<Item,Score>.IScorableFactory<Item,Score>.ScorableFor(IEnumerable<MethodInfo>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: Microsoft.Bot.Builder.Scorables.IScorable<Item,Score> IScorableFactory<Item,Score>.ScorableFor (System.Collections.Generic.IEnumerable<System.Reflection.MethodInfo> methods);
+    parameters:
+    - id: methods
+      type: System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo}
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Scorables.IScorable`2
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2.Microsoft#Bot#Builder#Scorables#Internals#IScorableFactory{Item,Score}#ScorableFor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/OrderScorableFactory`2.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2.#ctor(Microsoft.Bot.Builder.Scorables.Internals.FoldScorable{`0,`1}.OnStageDelegate,System.Collections.Generic.IComparer{`1},Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory{`0,`1}[])
+  parent: Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2
+  isExternal: false
+  name: OrderScorableFactory<Item,Score>(FoldScorable<Item,Score>, IComparer<Score>, IScorableFactory<Item,Score>[])
+  nameWithType: OrderScorableFactory<Item,Score>.OrderScorableFactory<Item,Score>(FoldScorable<Item,Score>, IComparer<Score>, IScorableFactory<Item,Score>[])
+  fullName: OrderScorableFactory<Item,Score>.OrderScorableFactory<Item,Score>(FoldScorable<Item,Score>, IComparer<Score>, IScorableFactory<Item,Score>[])
+- uid: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2
+  name: FoldScorable<Item,Score>
+  nameWithType: FoldScorable<Item,Score>
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable<Item,Score>
+- uid: Item
+  name: Item
+  nameWithType: Item
+  fullName: Item
+- uid: Score
+  name: Score
+  nameWithType: Score
+  fullName: Score
+- uid: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable{Item,Score}
+  parent: Microsoft.Bot.Builder.Scorables.Internals
+  isExternal: false
+  name: FoldScorable<Item,Score>
+  nameWithType: FoldScorable<Item,Score>
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable<Item,Score>+OnStageDelegate
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2
+    name: FoldScorable
+    nameWithType: FoldScorable
+    fullName: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Item
+    name: Item
+    nameWithType: Item
+    fullName: Item
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: Score
+    name: Score
+    nameWithType: Score
+    fullName: Score
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Collections.Generic.IComparer`1
+  name: IComparer
+  nameWithType: IComparer
+  fullName: System.Collections.Generic.IComparer
+- uid: System.Collections.Generic.IComparer{Score}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IComparer<Score>
+  nameWithType: IComparer<Score>
+  fullName: System.Collections.Generic.IComparer<Score>
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    nameWithType: IComparer
+    fullName: System.Collections.Generic.IComparer
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Score
+    name: Score
+    nameWithType: Score
+    fullName: Score
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2
+  name: IScorableFactory<Item,Score>
+  nameWithType: IScorableFactory<Item,Score>
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory<Item,Score>
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory{Item,Score}[]
+  parent: Microsoft.Bot.Builder.Scorables.Internals
+  isExternal: false
+  name: IScorableFactory<Item,Score>[]
+  nameWithType: IScorableFactory<Item,Score>[]
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory<Item,Score>[]
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2
+    name: IScorableFactory
+    nameWithType: IScorableFactory
+    fullName: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Item
+    name: Item
+    nameWithType: Item
+    fullName: Item
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: Score
+    name: Score
+    nameWithType: Score
+    fullName: Score
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2.#ctor(Microsoft.Bot.Builder.Scorables.Internals.FoldScorable{`0,`1}.OnStageDelegate,System.Collections.Generic.IComparer{`1},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory{`0,`1}})
+  parent: Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2
+  isExternal: false
+  name: OrderScorableFactory<Item,Score>(FoldScorable<Item,Score>, IComparer<Score>, IEnumerable<IScorableFactory<Item,Score>>)
+  nameWithType: OrderScorableFactory<Item,Score>.OrderScorableFactory<Item,Score>(FoldScorable<Item,Score>, IComparer<Score>, IEnumerable<IScorableFactory<Item,Score>>)
+  fullName: OrderScorableFactory<Item,Score>.OrderScorableFactory<Item,Score>(FoldScorable<Item,Score>, IComparer<Score>, IEnumerable<IScorableFactory<Item,Score>>)
+- uid: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.Generic.IEnumerable
+- uid: System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory{Item,Score}}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<IScorableFactory<Item,Score>>
+  nameWithType: IEnumerable<IScorableFactory<Item,Score>>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory<Item,Score>>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2
+    name: IScorableFactory
+    nameWithType: IScorableFactory
+    fullName: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Item
+    name: Item
+    nameWithType: Item
+    fullName: Item
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: Score
+    name: Score
+    nameWithType: Score
+    fullName: Score
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2.Microsoft#Bot#Builder#Scorables#Internals#IScorableFactory{Item,Score}#ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})
+  parent: Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2
+  isExternal: false
+  name: IScorableFactory<Item,Score>.ScorableFor(IEnumerable<MethodInfo>)
+  nameWithType: OrderScorableFactory<Item,Score>.IScorableFactory<Item,Score>.ScorableFor(IEnumerable<MethodInfo>)
+  fullName: OrderScorableFactory<Item,Score>.IScorableFactory<Item,Score>.ScorableFor(IEnumerable<MethodInfo>)
+- uid: Microsoft.Bot.Builder.Scorables.IScorable`2
+  parent: Microsoft.Bot.Builder.Scorables
+  isExternal: false
+  name: IScorable<Item,Score>
+  nameWithType: IScorable<Item,Score>
+  fullName: Microsoft.Bot.Builder.Scorables.IScorable<Item,Score>
+- uid: System.Reflection.MethodInfo
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<MethodInfo>
+  nameWithType: IEnumerable<MethodInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.MethodInfo>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    nameWithType: MethodInfo
+    fullName: System.Reflection.MethodInfo
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2.#ctor*
+  parent: Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2
+  isExternal: false
+  name: OrderScorableFactory<Item,Score>
+  nameWithType: OrderScorableFactory<Item,Score>.OrderScorableFactory<Item,Score>
+  fullName: OrderScorableFactory<Item,Score>.OrderScorableFactory<Item,Score>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/OrderScorableFactory`2.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2.Microsoft#Bot#Builder#Scorables#Internals#IScorableFactory{Item,Score}#ScorableFor*
+  parent: Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2
+  isExternal: false
+  name: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory<Item,Score>.ScorableFor
+  nameWithType: OrderScorableFactory<Item,Score>.Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory<Item,Score>.ScorableFor
+  fullName: OrderScorableFactory<Item,Score>.Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory<Item,Score>.ScorableFor
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/OrderScorableFactory`2.xml

@@ -1,0 +1,417 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Luis.Extensions
+  commentId: T:Microsoft.Bot.Builder.Luis.Extensions
+  id: Extensions
+  children:
+  - Microsoft.Bot.Builder.Luis.Extensions.BuildUri(Microsoft.Bot.Builder.Luis.ILuisService,System.String)
+  - Microsoft.Bot.Builder.Luis.Extensions.Next(Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart)
+  - Microsoft.Bot.Builder.Luis.Extensions.ParseResolutions(Microsoft.Bot.Builder.Luis.IResolutionParser,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation})
+  - Microsoft.Bot.Builder.Luis.Extensions.QueryAsync(Microsoft.Bot.Builder.Luis.ILuisService,System.String,System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Luis.Extensions.TryFindEntity(Microsoft.Bot.Builder.Luis.Models.LuisResult,System.String,Microsoft.Bot.Builder.Luis.Models.EntityRecommendation@)
+  langs:
+  - csharp
+  name: Extensions
+  nameWithType: Extensions
+  fullName: Microsoft.Bot.Builder.Luis.Extensions
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Luis
+  summary: LUIS extension methods.
+  syntax:
+    content: public static class Extensions
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/Extensions.xml
+- uid: Microsoft.Bot.Builder.Luis.Extensions.BuildUri(Microsoft.Bot.Builder.Luis.ILuisService,System.String)
+  commentId: M:Microsoft.Bot.Builder.Luis.Extensions.BuildUri(Microsoft.Bot.Builder.Luis.ILuisService,System.String)
+  id: BuildUri(Microsoft.Bot.Builder.Luis.ILuisService,System.String)
+  parent: Microsoft.Bot.Builder.Luis.Extensions
+  langs:
+  - csharp
+  name: BuildUri(ILuisService, String)
+  nameWithType: Extensions.BuildUri(ILuisService, String)
+  fullName: Extensions.BuildUri(ILuisService, String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  summary: Builds luis uri with text query.
+  syntax:
+    content: public static Uri BuildUri (this Microsoft.Bot.Builder.Luis.ILuisService service, string text);
+    parameters:
+    - id: service
+      type: Microsoft.Bot.Builder.Luis.ILuisService
+      description: LUIS service.
+    - id: text
+      type: System.String
+      description: The query text.
+    return:
+      type: System.Uri
+      description: The LUIS request Uri.
+  overload: Microsoft.Bot.Builder.Luis.Extensions.BuildUri*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/Extensions.xml
+- uid: Microsoft.Bot.Builder.Luis.Extensions.Next(Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart)
+  commentId: M:Microsoft.Bot.Builder.Luis.Extensions.Next(Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart)
+  id: Next(Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart)
+  parent: Microsoft.Bot.Builder.Luis.Extensions
+  langs:
+  - csharp
+  name: Next(BuiltIn+DateTime+DayPart)
+  nameWithType: Extensions.Next(BuiltIn+DateTime+DayPart)
+  fullName: Extensions.Next(BuiltIn+DateTime+DayPart)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  summary: Return the next <xref href="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart"></xref>.
+  syntax:
+    content: public static Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart Next (this Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart part);
+    parameters:
+    - id: part
+      type: Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+DayPart
+      description: The <xref href="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart"></xref> query.
+    return:
+      type: Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+DayPart
+      description: The next <xref href="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart"></xref> after the query.
+  overload: Microsoft.Bot.Builder.Luis.Extensions.Next*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/Extensions.xml
+- uid: Microsoft.Bot.Builder.Luis.Extensions.ParseResolutions(Microsoft.Bot.Builder.Luis.IResolutionParser,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation})
+  commentId: M:Microsoft.Bot.Builder.Luis.Extensions.ParseResolutions(Microsoft.Bot.Builder.Luis.IResolutionParser,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation})
+  id: ParseResolutions(Microsoft.Bot.Builder.Luis.IResolutionParser,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation})
+  parent: Microsoft.Bot.Builder.Luis.Extensions
+  langs:
+  - csharp
+  name: ParseResolutions(IResolutionParser, IEnumerable<EntityRecommendation>)
+  nameWithType: Extensions.ParseResolutions(IResolutionParser, IEnumerable<EntityRecommendation>)
+  fullName: Extensions.ParseResolutions(IResolutionParser, IEnumerable<EntityRecommendation>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  summary: Parse all resolutions from a LUIS result.
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Luis.Extensions/<ParseResolutions>d__1))]
+
+      public static System.Collections.Generic.IEnumerable<Microsoft.Bot.Builder.Luis.Resolution> ParseResolutions (this Microsoft.Bot.Builder.Luis.IResolutionParser parser, System.Collections.Generic.IEnumerable<Microsoft.Bot.Builder.Luis.Models.EntityRecommendation> entities);
+    parameters:
+    - id: parser
+      type: Microsoft.Bot.Builder.Luis.IResolutionParser
+      description: The resolution parser.
+    - id: entities
+      type: System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation}
+      description: The LUIS entities.
+    return:
+      type: System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Resolution}
+      description: The parsed resolutions.
+  overload: Microsoft.Bot.Builder.Luis.Extensions.ParseResolutions*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.IteratorStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/Extensions.xml
+- uid: Microsoft.Bot.Builder.Luis.Extensions.QueryAsync(Microsoft.Bot.Builder.Luis.ILuisService,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Luis.Extensions.QueryAsync(Microsoft.Bot.Builder.Luis.ILuisService,System.String,System.Threading.CancellationToken)
+  id: QueryAsync(Microsoft.Bot.Builder.Luis.ILuisService,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Luis.Extensions
+  langs:
+  - csharp
+  name: QueryAsync(ILuisService, String, CancellationToken)
+  nameWithType: Extensions.QueryAsync(ILuisService, String, CancellationToken)
+  fullName: Extensions.QueryAsync(ILuisService, String, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  summary: Query the LUIS service using this text.
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Luis.Extensions/<QueryAsync>d__3))]
+
+      public static System.Threading.Tasks.Task<Microsoft.Bot.Builder.Luis.Models.LuisResult> QueryAsync (this Microsoft.Bot.Builder.Luis.ILuisService service, string text, System.Threading.CancellationToken token);
+    parameters:
+    - id: service
+      type: Microsoft.Bot.Builder.Luis.ILuisService
+      description: LUIS service.
+    - id: text
+      type: System.String
+      description: The query text.
+    - id: token
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Builder.Luis.Models.LuisResult}
+      description: The LUIS result.
+  overload: Microsoft.Bot.Builder.Luis.Extensions.QueryAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/Extensions.xml
+- uid: Microsoft.Bot.Builder.Luis.Extensions.TryFindEntity(Microsoft.Bot.Builder.Luis.Models.LuisResult,System.String,Microsoft.Bot.Builder.Luis.Models.EntityRecommendation@)
+  commentId: M:Microsoft.Bot.Builder.Luis.Extensions.TryFindEntity(Microsoft.Bot.Builder.Luis.Models.LuisResult,System.String,Microsoft.Bot.Builder.Luis.Models.EntityRecommendation@)
+  id: TryFindEntity(Microsoft.Bot.Builder.Luis.Models.LuisResult,System.String,Microsoft.Bot.Builder.Luis.Models.EntityRecommendation@)
+  parent: Microsoft.Bot.Builder.Luis.Extensions
+  langs:
+  - csharp
+  name: TryFindEntity(LuisResult, String, EntityRecommendation)
+  nameWithType: Extensions.TryFindEntity(LuisResult, String, EntityRecommendation)
+  fullName: Extensions.TryFindEntity(LuisResult, String, EntityRecommendation)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  summary: Try to find an entity within the result.
+  syntax:
+    content: public static bool TryFindEntity (this Microsoft.Bot.Builder.Luis.Models.LuisResult result, string type, out Microsoft.Bot.Builder.Luis.Models.EntityRecommendation entity);
+    parameters:
+    - id: result
+      type: Microsoft.Bot.Builder.Luis.Models.LuisResult
+      description: The LUIS result.
+    - id: type
+      type: System.String
+      description: The entity type.
+    - id: entity
+      type: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+      description: The found entity.
+    return:
+      type: System.Boolean
+      description: True if the entity was found, false otherwise.
+  overload: Microsoft.Bot.Builder.Luis.Extensions.TryFindEntity*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/Extensions.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Luis.Extensions.BuildUri(Microsoft.Bot.Builder.Luis.ILuisService,System.String)
+  parent: Microsoft.Bot.Builder.Luis.Extensions
+  isExternal: false
+  name: BuildUri(ILuisService, String)
+  nameWithType: Extensions.BuildUri(ILuisService, String)
+  fullName: Extensions.BuildUri(ILuisService, String)
+- uid: System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: Microsoft.Bot.Builder.Luis.ILuisService
+  parent: Microsoft.Bot.Builder.Luis
+  isExternal: false
+  name: ILuisService
+  nameWithType: ILuisService
+  fullName: Microsoft.Bot.Builder.Luis.ILuisService
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Builder.Luis.Extensions.Next(Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart)
+  parent: Microsoft.Bot.Builder.Luis.Extensions
+  isExternal: false
+  name: Next(BuiltIn+DateTime+DayPart)
+  nameWithType: Extensions.Next(BuiltIn+DateTime+DayPart)
+  fullName: Extensions.Next(BuiltIn+DateTime+DayPart)
+- uid: Microsoft.Bot.Builder.Luis.BuiltIn
+  parent: Microsoft.Bot.Builder.Luis
+  isExternal: false
+  name: BuiltIn
+  nameWithType: BuiltIn
+  fullName: Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+DayPart
+- uid: Microsoft.Bot.Builder.Luis.Extensions.ParseResolutions(Microsoft.Bot.Builder.Luis.IResolutionParser,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation})
+  parent: Microsoft.Bot.Builder.Luis.Extensions
+  isExternal: false
+  name: ParseResolutions(IResolutionParser, IEnumerable<EntityRecommendation>)
+  nameWithType: Extensions.ParseResolutions(IResolutionParser, IEnumerable<EntityRecommendation>)
+  fullName: Extensions.ParseResolutions(IResolutionParser, IEnumerable<EntityRecommendation>)
+- uid: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.Generic.IEnumerable
+- uid: Microsoft.Bot.Builder.Luis.Resolution
+  name: Resolution
+  nameWithType: Resolution
+  fullName: Microsoft.Bot.Builder.Luis.Resolution
+- uid: System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Resolution}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<Resolution>
+  nameWithType: IEnumerable<Resolution>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.Bot.Builder.Luis.Resolution>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Luis.Resolution
+    name: Resolution
+    nameWithType: Resolution
+    fullName: Microsoft.Bot.Builder.Luis.Resolution
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Luis.IResolutionParser
+  parent: Microsoft.Bot.Builder.Luis
+  isExternal: false
+  name: IResolutionParser
+  nameWithType: IResolutionParser
+  fullName: Microsoft.Bot.Builder.Luis.IResolutionParser
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  name: EntityRecommendation
+  nameWithType: EntityRecommendation
+  fullName: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+- uid: System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<EntityRecommendation>
+  nameWithType: IEnumerable<EntityRecommendation>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.Bot.Builder.Luis.Models.EntityRecommendation>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+    name: EntityRecommendation
+    nameWithType: EntityRecommendation
+    fullName: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Luis.Extensions.QueryAsync(Microsoft.Bot.Builder.Luis.ILuisService,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Luis.Extensions
+  isExternal: false
+  name: QueryAsync(ILuisService, String, CancellationToken)
+  nameWithType: Extensions.QueryAsync(ILuisService, String, CancellationToken)
+  fullName: Extensions.QueryAsync(ILuisService, String, CancellationToken)
+- uid: System.Threading.Tasks.Task`1
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.Bot.Builder.Luis.Models.LuisResult
+  name: LuisResult
+  nameWithType: LuisResult
+  fullName: Microsoft.Bot.Builder.Luis.Models.LuisResult
+- uid: System.Threading.Tasks.Task{Microsoft.Bot.Builder.Luis.Models.LuisResult}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<LuisResult>
+  nameWithType: Task<LuisResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.Bot.Builder.Luis.Models.LuisResult>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Luis.Models.LuisResult
+    name: LuisResult
+    nameWithType: LuisResult
+    fullName: Microsoft.Bot.Builder.Luis.Models.LuisResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Builder.Luis.Extensions.TryFindEntity(Microsoft.Bot.Builder.Luis.Models.LuisResult,System.String,Microsoft.Bot.Builder.Luis.Models.EntityRecommendation@)
+  parent: Microsoft.Bot.Builder.Luis.Extensions
+  isExternal: false
+  name: TryFindEntity(LuisResult, String, EntityRecommendation)
+  nameWithType: Extensions.TryFindEntity(LuisResult, String, EntityRecommendation)
+  fullName: Extensions.TryFindEntity(LuisResult, String, EntityRecommendation)
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Bot.Builder.Luis.Extensions.BuildUri*
+  parent: Microsoft.Bot.Builder.Luis.Extensions
+  isExternal: false
+  name: BuildUri
+  nameWithType: Extensions.BuildUri
+  fullName: Extensions.BuildUri
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/Extensions.xml
+- uid: Microsoft.Bot.Builder.Luis.Extensions.Next*
+  parent: Microsoft.Bot.Builder.Luis.Extensions
+  isExternal: false
+  name: Next
+  nameWithType: Extensions.Next
+  fullName: Extensions.Next
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/Extensions.xml
+- uid: Microsoft.Bot.Builder.Luis.Extensions.ParseResolutions*
+  parent: Microsoft.Bot.Builder.Luis.Extensions
+  isExternal: false
+  name: ParseResolutions
+  nameWithType: Extensions.ParseResolutions
+  fullName: Extensions.ParseResolutions
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/Extensions.xml
+- uid: Microsoft.Bot.Builder.Luis.Extensions.QueryAsync*
+  parent: Microsoft.Bot.Builder.Luis.Extensions
+  isExternal: false
+  name: QueryAsync
+  nameWithType: Extensions.QueryAsync
+  fullName: Extensions.QueryAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/Extensions.xml
+- uid: Microsoft.Bot.Builder.Luis.Extensions.TryFindEntity*
+  parent: Microsoft.Bot.Builder.Luis.Extensions
+  isExternal: false
+  name: TryFindEntity
+  nameWithType: Extensions.TryFindEntity
+  fullName: Extensions.TryFindEntity
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/Extensions.xml

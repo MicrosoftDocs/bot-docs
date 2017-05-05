@@ -1,0 +1,692 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.ConversationReference
+  commentId: T:Microsoft.Bot.Connector.ConversationReference
+  id: ConversationReference
+  children:
+  - Microsoft.Bot.Connector.ConversationReference.#ctor
+  - Microsoft.Bot.Connector.ConversationReference.#ctor(System.String,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ConversationAccount,System.String,System.String)
+  - Microsoft.Bot.Connector.ConversationReference.ActivityId
+  - Microsoft.Bot.Connector.ConversationReference.Bot
+  - Microsoft.Bot.Connector.ConversationReference.ChannelId
+  - Microsoft.Bot.Connector.ConversationReference.Conversation
+  - Microsoft.Bot.Connector.ConversationReference.Equals(Microsoft.Bot.Connector.ConversationReference)
+  - Microsoft.Bot.Connector.ConversationReference.Equals(System.Object)
+  - Microsoft.Bot.Connector.ConversationReference.GetHashCode
+  - Microsoft.Bot.Connector.ConversationReference.GetPostToBotMessage
+  - Microsoft.Bot.Connector.ConversationReference.GetPostToUserMessage
+  - Microsoft.Bot.Connector.ConversationReference.ServiceUrl
+  - Microsoft.Bot.Connector.ConversationReference.User
+  langs:
+  - csharp
+  name: ConversationReference
+  nameWithType: ConversationReference
+  fullName: Microsoft.Bot.Connector.ConversationReference
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: An object relating to a particular point in a conversation
+  syntax:
+    content: 'public class ConversationReference : IEquatable<Microsoft.Bot.Connector.ConversationReference>'
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{Microsoft.Bot.Connector.ConversationReference}
+  inheritedMembers: []
+  extensionMethods:
+  - Microsoft.Bot.Builder.ConnectorEx.Extensions.GZipSerialize(Microsoft.Bot.Connector.ConversationReference)
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationReference.xml
+- uid: Microsoft.Bot.Connector.ConversationReference.#ctor
+  commentId: M:Microsoft.Bot.Connector.ConversationReference.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Connector.ConversationReference
+  langs:
+  - csharp
+  name: ConversationReference()
+  nameWithType: ConversationReference.ConversationReference()
+  fullName: ConversationReference.ConversationReference()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the ConversationReference class.
+  syntax:
+    content: public ConversationReference ();
+    parameters: []
+  overload: Microsoft.Bot.Connector.ConversationReference.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationReference.xml
+- uid: Microsoft.Bot.Connector.ConversationReference.#ctor(System.String,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ConversationAccount,System.String,System.String)
+  commentId: M:Microsoft.Bot.Connector.ConversationReference.#ctor(System.String,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ConversationAccount,System.String,System.String)
+  id: '#ctor(System.String,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ConversationAccount,System.String,System.String)'
+  parent: Microsoft.Bot.Connector.ConversationReference
+  langs:
+  - csharp
+  name: ConversationReference(String, ChannelAccount, ChannelAccount, ConversationAccount, String, String)
+  nameWithType: ConversationReference.ConversationReference(String, ChannelAccount, ChannelAccount, ConversationAccount, String, String)
+  fullName: ConversationReference.ConversationReference(String, ChannelAccount, ChannelAccount, ConversationAccount, String, String)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the ConversationReference class.
+  syntax:
+    content: public ConversationReference (string activityId = null, Microsoft.Bot.Connector.ChannelAccount user = null, Microsoft.Bot.Connector.ChannelAccount bot = null, Microsoft.Bot.Connector.ConversationAccount conversation = null, string channelId = null, string serviceUrl = null);
+    parameters:
+    - id: activityId
+      type: System.String
+      description: To be added.
+    - id: user
+      type: Microsoft.Bot.Connector.ChannelAccount
+      description: To be added.
+    - id: bot
+      type: Microsoft.Bot.Connector.ChannelAccount
+      description: To be added.
+    - id: conversation
+      type: Microsoft.Bot.Connector.ConversationAccount
+      description: To be added.
+    - id: channelId
+      type: System.String
+      description: To be added.
+    - id: serviceUrl
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationReference.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationReference.xml
+- uid: Microsoft.Bot.Connector.ConversationReference.ActivityId
+  commentId: P:Microsoft.Bot.Connector.ConversationReference.ActivityId
+  id: ActivityId
+  parent: Microsoft.Bot.Connector.ConversationReference
+  langs:
+  - csharp
+  name: ActivityId
+  nameWithType: ConversationReference.ActivityId
+  fullName: ConversationReference.ActivityId
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: (Optional) ID of the activity to refer to
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="activityId")]
+
+      public string ActivityId { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationReference.ActivityId*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationReference.xml
+- uid: Microsoft.Bot.Connector.ConversationReference.Bot
+  commentId: P:Microsoft.Bot.Connector.ConversationReference.Bot
+  id: Bot
+  parent: Microsoft.Bot.Connector.ConversationReference
+  langs:
+  - csharp
+  name: Bot
+  nameWithType: ConversationReference.Bot
+  fullName: ConversationReference.Bot
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Bot participating in this conversation
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="bot")]
+
+      public Microsoft.Bot.Connector.ChannelAccount Bot { get; set; }
+    return:
+      type: Microsoft.Bot.Connector.ChannelAccount
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationReference.Bot*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationReference.xml
+- uid: Microsoft.Bot.Connector.ConversationReference.ChannelId
+  commentId: P:Microsoft.Bot.Connector.ConversationReference.ChannelId
+  id: ChannelId
+  parent: Microsoft.Bot.Connector.ConversationReference
+  langs:
+  - csharp
+  name: ChannelId
+  nameWithType: ConversationReference.ChannelId
+  fullName: ConversationReference.ChannelId
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Channel ID
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="channelId")]
+
+      public string ChannelId { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationReference.ChannelId*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationReference.xml
+- uid: Microsoft.Bot.Connector.ConversationReference.Conversation
+  commentId: P:Microsoft.Bot.Connector.ConversationReference.Conversation
+  id: Conversation
+  parent: Microsoft.Bot.Connector.ConversationReference
+  langs:
+  - csharp
+  name: Conversation
+  nameWithType: ConversationReference.Conversation
+  fullName: ConversationReference.Conversation
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Conversation reference
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="conversation")]
+
+      public Microsoft.Bot.Connector.ConversationAccount Conversation { get; set; }
+    return:
+      type: Microsoft.Bot.Connector.ConversationAccount
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationReference.Conversation*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationReference.xml
+- uid: Microsoft.Bot.Connector.ConversationReference.Equals(Microsoft.Bot.Connector.ConversationReference)
+  commentId: M:Microsoft.Bot.Connector.ConversationReference.Equals(Microsoft.Bot.Connector.ConversationReference)
+  id: Equals(Microsoft.Bot.Connector.ConversationReference)
+  parent: Microsoft.Bot.Connector.ConversationReference
+  langs:
+  - csharp
+  name: Equals(ConversationReference)
+  nameWithType: ConversationReference.Equals(ConversationReference)
+  fullName: ConversationReference.Equals(ConversationReference)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public bool Equals (Microsoft.Bot.Connector.ConversationReference other);
+    parameters:
+    - id: other
+      type: Microsoft.Bot.Connector.ConversationReference
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationReference.Equals*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationReference.xml
+- uid: Microsoft.Bot.Connector.ConversationReference.Equals(System.Object)
+  commentId: M:Microsoft.Bot.Connector.ConversationReference.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Bot.Connector.ConversationReference
+  langs:
+  - csharp
+  name: Equals(Object)
+  nameWithType: ConversationReference.Equals(Object)
+  fullName: ConversationReference.Equals(Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public override bool Equals (object other);
+    parameters:
+    - id: other
+      type: System.Object
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationReference.Equals*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationReference.xml
+- uid: Microsoft.Bot.Connector.ConversationReference.GetHashCode
+  commentId: M:Microsoft.Bot.Connector.ConversationReference.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Bot.Connector.ConversationReference
+  langs:
+  - csharp
+  name: GetHashCode()
+  nameWithType: ConversationReference.GetHashCode()
+  fullName: ConversationReference.GetHashCode()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public override int GetHashCode ();
+    parameters: []
+    return:
+      type: System.Int32
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationReference.GetHashCode*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationReference.xml
+- uid: Microsoft.Bot.Connector.ConversationReference.GetPostToBotMessage
+  commentId: M:Microsoft.Bot.Connector.ConversationReference.GetPostToBotMessage
+  id: GetPostToBotMessage
+  parent: Microsoft.Bot.Connector.ConversationReference
+  langs:
+  - csharp
+  name: GetPostToBotMessage()
+  nameWithType: ConversationReference.GetPostToBotMessage()
+  fullName: ConversationReference.GetPostToBotMessage()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Creates <xref href="Microsoft.Bot.Connector.Activity"></xref> from conversation reference as it is posted to bot.
+  syntax:
+    content: public Microsoft.Bot.Connector.Activity GetPostToBotMessage ();
+    parameters: []
+    return:
+      type: Microsoft.Bot.Connector.Activity
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationReference.GetPostToBotMessage*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationReference.xml
+- uid: Microsoft.Bot.Connector.ConversationReference.GetPostToUserMessage
+  commentId: M:Microsoft.Bot.Connector.ConversationReference.GetPostToUserMessage
+  id: GetPostToUserMessage
+  parent: Microsoft.Bot.Connector.ConversationReference
+  langs:
+  - csharp
+  name: GetPostToUserMessage()
+  nameWithType: ConversationReference.GetPostToUserMessage()
+  fullName: ConversationReference.GetPostToUserMessage()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Creates <xref href="Microsoft.Bot.Connector.Activity"></xref> from conversation reference that can be posted to user as reply.
+  syntax:
+    content: public Microsoft.Bot.Connector.Activity GetPostToUserMessage ();
+    parameters: []
+    return:
+      type: Microsoft.Bot.Connector.Activity
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationReference.GetPostToUserMessage*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationReference.xml
+- uid: Microsoft.Bot.Connector.ConversationReference.ServiceUrl
+  commentId: P:Microsoft.Bot.Connector.ConversationReference.ServiceUrl
+  id: ServiceUrl
+  parent: Microsoft.Bot.Connector.ConversationReference
+  langs:
+  - csharp
+  name: ServiceUrl
+  nameWithType: ConversationReference.ServiceUrl
+  fullName: ConversationReference.ServiceUrl
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: >-
+    Service endpoint where operations concerning the referenced
+                conversation may be performed
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="serviceUrl")]
+
+      public string ServiceUrl { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationReference.ServiceUrl*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationReference.xml
+- uid: Microsoft.Bot.Connector.ConversationReference.User
+  commentId: P:Microsoft.Bot.Connector.ConversationReference.User
+  id: User
+  parent: Microsoft.Bot.Connector.ConversationReference
+  langs:
+  - csharp
+  name: User
+  nameWithType: ConversationReference.User
+  fullName: ConversationReference.User
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: (Optional) User participating in this conversation
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="user")]
+
+      public Microsoft.Bot.Connector.ChannelAccount User { get; set; }
+    return:
+      type: Microsoft.Bot.Connector.ChannelAccount
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationReference.User*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationReference.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.ConversationReference.#ctor
+  parent: Microsoft.Bot.Connector.ConversationReference
+  isExternal: false
+  name: ConversationReference()
+  nameWithType: ConversationReference.ConversationReference()
+  fullName: ConversationReference.ConversationReference()
+- uid: Microsoft.Bot.Connector.ConversationReference.#ctor(System.String,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ConversationAccount,System.String,System.String)
+  parent: Microsoft.Bot.Connector.ConversationReference
+  isExternal: false
+  name: ConversationReference(String, ChannelAccount, ChannelAccount, ConversationAccount, String, String)
+  nameWithType: ConversationReference.ConversationReference(String, ChannelAccount, ChannelAccount, ConversationAccount, String, String)
+  fullName: ConversationReference.ConversationReference(String, ChannelAccount, ChannelAccount, ConversationAccount, String, String)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.ChannelAccount
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: ChannelAccount
+  nameWithType: ChannelAccount
+  fullName: Microsoft.Bot.Connector.ChannelAccount
+- uid: Microsoft.Bot.Connector.ConversationAccount
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: ConversationAccount
+  nameWithType: ConversationAccount
+  fullName: Microsoft.Bot.Connector.ConversationAccount
+- uid: Microsoft.Bot.Connector.ConversationReference.ActivityId
+  parent: Microsoft.Bot.Connector.ConversationReference
+  isExternal: false
+  name: ActivityId
+  nameWithType: ConversationReference.ActivityId
+  fullName: ConversationReference.ActivityId
+- uid: Microsoft.Bot.Connector.ConversationReference.Bot
+  parent: Microsoft.Bot.Connector.ConversationReference
+  isExternal: false
+  name: Bot
+  nameWithType: ConversationReference.Bot
+  fullName: ConversationReference.Bot
+- uid: Microsoft.Bot.Connector.ConversationReference.ChannelId
+  parent: Microsoft.Bot.Connector.ConversationReference
+  isExternal: false
+  name: ChannelId
+  nameWithType: ConversationReference.ChannelId
+  fullName: ConversationReference.ChannelId
+- uid: Microsoft.Bot.Connector.ConversationReference.Conversation
+  parent: Microsoft.Bot.Connector.ConversationReference
+  isExternal: false
+  name: Conversation
+  nameWithType: ConversationReference.Conversation
+  fullName: ConversationReference.Conversation
+- uid: Microsoft.Bot.Connector.ConversationReference.Equals(Microsoft.Bot.Connector.ConversationReference)
+  parent: Microsoft.Bot.Connector.ConversationReference
+  isExternal: false
+  name: Equals(ConversationReference)
+  nameWithType: ConversationReference.Equals(ConversationReference)
+  fullName: ConversationReference.Equals(ConversationReference)
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Bot.Connector.ConversationReference
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: ConversationReference
+  nameWithType: ConversationReference
+  fullName: Microsoft.Bot.Connector.ConversationReference
+- uid: Microsoft.Bot.Connector.ConversationReference.Equals(System.Object)
+  parent: Microsoft.Bot.Connector.ConversationReference
+  isExternal: false
+  name: Equals(Object)
+  nameWithType: ConversationReference.Equals(Object)
+  fullName: ConversationReference.Equals(Object)
+- uid: Microsoft.Bot.Connector.ConversationReference.GetHashCode
+  parent: Microsoft.Bot.Connector.ConversationReference
+  isExternal: false
+  name: GetHashCode()
+  nameWithType: ConversationReference.GetHashCode()
+  fullName: ConversationReference.GetHashCode()
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Bot.Connector.ConversationReference.GetPostToBotMessage
+  parent: Microsoft.Bot.Connector.ConversationReference
+  isExternal: false
+  name: GetPostToBotMessage()
+  nameWithType: ConversationReference.GetPostToBotMessage()
+  fullName: ConversationReference.GetPostToBotMessage()
+- uid: Microsoft.Bot.Connector.Activity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: Activity
+  nameWithType: Activity
+  fullName: Microsoft.Bot.Connector.Activity
+- uid: Microsoft.Bot.Connector.ConversationReference.GetPostToUserMessage
+  parent: Microsoft.Bot.Connector.ConversationReference
+  isExternal: false
+  name: GetPostToUserMessage()
+  nameWithType: ConversationReference.GetPostToUserMessage()
+  fullName: ConversationReference.GetPostToUserMessage()
+- uid: Microsoft.Bot.Connector.ConversationReference.ServiceUrl
+  parent: Microsoft.Bot.Connector.ConversationReference
+  isExternal: false
+  name: ServiceUrl
+  nameWithType: ConversationReference.ServiceUrl
+  fullName: ConversationReference.ServiceUrl
+- uid: Microsoft.Bot.Connector.ConversationReference.User
+  parent: Microsoft.Bot.Connector.ConversationReference
+  isExternal: false
+  name: User
+  nameWithType: ConversationReference.User
+  fullName: ConversationReference.User
+- uid: Microsoft.Bot.Connector.ConversationReference.#ctor*
+  parent: Microsoft.Bot.Connector.ConversationReference
+  isExternal: false
+  name: ConversationReference
+  nameWithType: ConversationReference.ConversationReference
+  fullName: ConversationReference.ConversationReference
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationReference.xml
+- uid: Microsoft.Bot.Connector.ConversationReference.ActivityId*
+  parent: Microsoft.Bot.Connector.ConversationReference
+  isExternal: false
+  name: ActivityId
+  nameWithType: ConversationReference.ActivityId
+  fullName: ConversationReference.ActivityId
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationReference.xml
+- uid: Microsoft.Bot.Connector.ConversationReference.Bot*
+  parent: Microsoft.Bot.Connector.ConversationReference
+  isExternal: false
+  name: Bot
+  nameWithType: ConversationReference.Bot
+  fullName: ConversationReference.Bot
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationReference.xml
+- uid: Microsoft.Bot.Connector.ConversationReference.ChannelId*
+  parent: Microsoft.Bot.Connector.ConversationReference
+  isExternal: false
+  name: ChannelId
+  nameWithType: ConversationReference.ChannelId
+  fullName: ConversationReference.ChannelId
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationReference.xml
+- uid: Microsoft.Bot.Connector.ConversationReference.Conversation*
+  parent: Microsoft.Bot.Connector.ConversationReference
+  isExternal: false
+  name: Conversation
+  nameWithType: ConversationReference.Conversation
+  fullName: ConversationReference.Conversation
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationReference.xml
+- uid: Microsoft.Bot.Connector.ConversationReference.Equals*
+  parent: Microsoft.Bot.Connector.ConversationReference
+  isExternal: false
+  name: Equals
+  nameWithType: ConversationReference.Equals
+  fullName: ConversationReference.Equals
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationReference.xml
+- uid: Microsoft.Bot.Connector.ConversationReference.GetHashCode*
+  parent: Microsoft.Bot.Connector.ConversationReference
+  isExternal: false
+  name: GetHashCode
+  nameWithType: ConversationReference.GetHashCode
+  fullName: ConversationReference.GetHashCode
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationReference.xml
+- uid: Microsoft.Bot.Connector.ConversationReference.GetPostToBotMessage*
+  parent: Microsoft.Bot.Connector.ConversationReference
+  isExternal: false
+  name: GetPostToBotMessage
+  nameWithType: ConversationReference.GetPostToBotMessage
+  fullName: ConversationReference.GetPostToBotMessage
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationReference.xml
+- uid: Microsoft.Bot.Connector.ConversationReference.GetPostToUserMessage*
+  parent: Microsoft.Bot.Connector.ConversationReference
+  isExternal: false
+  name: GetPostToUserMessage
+  nameWithType: ConversationReference.GetPostToUserMessage
+  fullName: ConversationReference.GetPostToUserMessage
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationReference.xml
+- uid: Microsoft.Bot.Connector.ConversationReference.ServiceUrl*
+  parent: Microsoft.Bot.Connector.ConversationReference
+  isExternal: false
+  name: ServiceUrl
+  nameWithType: ConversationReference.ServiceUrl
+  fullName: ConversationReference.ServiceUrl
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationReference.xml
+- uid: Microsoft.Bot.Connector.ConversationReference.User*
+  parent: Microsoft.Bot.Connector.ConversationReference
+  isExternal: false
+  name: User
+  nameWithType: ConversationReference.User
+  fullName: ConversationReference.User
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationReference.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.Extensions.GZipSerialize(Microsoft.Bot.Connector.ConversationReference)
+  parent: Microsoft.Bot.Builder.ConnectorEx.Extensions
+  isExternal: false
+  name: GZipSerialize(ConversationReference)
+  nameWithType: Extensions.GZipSerialize(ConversationReference)
+  fullName: Extensions.GZipSerialize(ConversationReference)
+- uid: System.IEquatable`1
+  name: IEquatable
+  nameWithType: IEquatable
+  fullName: System.IEquatable
+- uid: System.IEquatable{Microsoft.Bot.Connector.ConversationReference}
+  parent: System
+  isExternal: true
+  name: IEquatable<ConversationReference>
+  nameWithType: IEquatable<ConversationReference>
+  fullName: System.IEquatable<Microsoft.Bot.Connector.ConversationReference>
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.ConversationReference
+    name: ConversationReference
+    nameWithType: ConversationReference
+    fullName: Microsoft.Bot.Connector.ConversationReference
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'

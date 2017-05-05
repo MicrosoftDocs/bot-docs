@@ -1,0 +1,239 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.ErrorCodes
+  commentId: T:Microsoft.Bot.Connector.ErrorCodes
+  id: ErrorCodes
+  children:
+  - Microsoft.Bot.Connector.ErrorCodes.#ctor
+  - Microsoft.Bot.Connector.ErrorCodes.BadArgument
+  - Microsoft.Bot.Connector.ErrorCodes.BadSyntax
+  - Microsoft.Bot.Connector.ErrorCodes.MessageSizeTooBig
+  - Microsoft.Bot.Connector.ErrorCodes.MissingProperty
+  - Microsoft.Bot.Connector.ErrorCodes.ServiceError
+  langs:
+  - csharp
+  name: ErrorCodes
+  nameWithType: ErrorCodes
+  fullName: Microsoft.Bot.Connector.ErrorCodes
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: Error codes to communicate when throwing an APIException
+  syntax:
+    content: public class ErrorCodes
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ErrorCodes.xml
+- uid: Microsoft.Bot.Connector.ErrorCodes.#ctor
+  commentId: M:Microsoft.Bot.Connector.ErrorCodes.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Connector.ErrorCodes
+  langs:
+  - csharp
+  name: ErrorCodes()
+  nameWithType: ErrorCodes.ErrorCodes()
+  fullName: ErrorCodes.ErrorCodes()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public ErrorCodes ();
+    parameters: []
+  overload: Microsoft.Bot.Connector.ErrorCodes.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ErrorCodes.xml
+- uid: Microsoft.Bot.Connector.ErrorCodes.BadArgument
+  commentId: F:Microsoft.Bot.Connector.ErrorCodes.BadArgument
+  id: BadArgument
+  parent: Microsoft.Bot.Connector.ErrorCodes
+  langs:
+  - csharp
+  name: BadArgument
+  nameWithType: ErrorCodes.BadArgument
+  fullName: ErrorCodes.BadArgument
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Bad argument
+  syntax:
+    content: public const string BadArgument;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ErrorCodes.xml
+- uid: Microsoft.Bot.Connector.ErrorCodes.BadSyntax
+  commentId: F:Microsoft.Bot.Connector.ErrorCodes.BadSyntax
+  id: BadSyntax
+  parent: Microsoft.Bot.Connector.ErrorCodes
+  langs:
+  - csharp
+  name: BadSyntax
+  nameWithType: ErrorCodes.BadSyntax
+  fullName: ErrorCodes.BadSyntax
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Error parsing request
+  syntax:
+    content: public const string BadSyntax;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ErrorCodes.xml
+- uid: Microsoft.Bot.Connector.ErrorCodes.MessageSizeTooBig
+  commentId: F:Microsoft.Bot.Connector.ErrorCodes.MessageSizeTooBig
+  id: MessageSizeTooBig
+  parent: Microsoft.Bot.Connector.ErrorCodes
+  langs:
+  - csharp
+  name: MessageSizeTooBig
+  nameWithType: ErrorCodes.MessageSizeTooBig
+  fullName: ErrorCodes.MessageSizeTooBig
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Message exceeded size limits
+  syntax:
+    content: public const string MessageSizeTooBig;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ErrorCodes.xml
+- uid: Microsoft.Bot.Connector.ErrorCodes.MissingProperty
+  commentId: F:Microsoft.Bot.Connector.ErrorCodes.MissingProperty
+  id: MissingProperty
+  parent: Microsoft.Bot.Connector.ErrorCodes
+  langs:
+  - csharp
+  name: MissingProperty
+  nameWithType: ErrorCodes.MissingProperty
+  fullName: ErrorCodes.MissingProperty
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Mandatory property was not specified
+  syntax:
+    content: public const string MissingProperty;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ErrorCodes.xml
+- uid: Microsoft.Bot.Connector.ErrorCodes.ServiceError
+  commentId: F:Microsoft.Bot.Connector.ErrorCodes.ServiceError
+  id: ServiceError
+  parent: Microsoft.Bot.Connector.ErrorCodes
+  langs:
+  - csharp
+  name: ServiceError
+  nameWithType: ErrorCodes.ServiceError
+  fullName: ErrorCodes.ServiceError
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Other error, not specified
+  syntax:
+    content: public const string ServiceError;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ErrorCodes.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.ErrorCodes.#ctor
+  parent: Microsoft.Bot.Connector.ErrorCodes
+  isExternal: false
+  name: ErrorCodes()
+  nameWithType: ErrorCodes.ErrorCodes()
+  fullName: ErrorCodes.ErrorCodes()
+- uid: Microsoft.Bot.Connector.ErrorCodes.BadArgument
+  parent: Microsoft.Bot.Connector.ErrorCodes
+  isExternal: false
+  name: BadArgument
+  nameWithType: ErrorCodes.BadArgument
+  fullName: ErrorCodes.BadArgument
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.ErrorCodes.BadSyntax
+  parent: Microsoft.Bot.Connector.ErrorCodes
+  isExternal: false
+  name: BadSyntax
+  nameWithType: ErrorCodes.BadSyntax
+  fullName: ErrorCodes.BadSyntax
+- uid: Microsoft.Bot.Connector.ErrorCodes.MessageSizeTooBig
+  parent: Microsoft.Bot.Connector.ErrorCodes
+  isExternal: false
+  name: MessageSizeTooBig
+  nameWithType: ErrorCodes.MessageSizeTooBig
+  fullName: ErrorCodes.MessageSizeTooBig
+- uid: Microsoft.Bot.Connector.ErrorCodes.MissingProperty
+  parent: Microsoft.Bot.Connector.ErrorCodes
+  isExternal: false
+  name: MissingProperty
+  nameWithType: ErrorCodes.MissingProperty
+  fullName: ErrorCodes.MissingProperty
+- uid: Microsoft.Bot.Connector.ErrorCodes.ServiceError
+  parent: Microsoft.Bot.Connector.ErrorCodes
+  isExternal: false
+  name: ServiceError
+  nameWithType: ErrorCodes.ServiceError
+  fullName: ErrorCodes.ServiceError
+- uid: Microsoft.Bot.Connector.ErrorCodes.#ctor*
+  parent: Microsoft.Bot.Connector.ErrorCodes
+  isExternal: false
+  name: ErrorCodes
+  nameWithType: ErrorCodes.ErrorCodes
+  fullName: ErrorCodes.ErrorCodes
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ErrorCodes.xml

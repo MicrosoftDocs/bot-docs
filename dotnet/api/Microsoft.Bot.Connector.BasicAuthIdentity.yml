@@ -1,0 +1,188 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.BasicAuthIdentity
+  commentId: T:Microsoft.Bot.Connector.BasicAuthIdentity
+  id: BasicAuthIdentity
+  children:
+  - Microsoft.Bot.Connector.BasicAuthIdentity.#ctor(System.String,System.String)
+  - Microsoft.Bot.Connector.BasicAuthIdentity.Id
+  - Microsoft.Bot.Connector.BasicAuthIdentity.Password
+  langs:
+  - csharp
+  name: BasicAuthIdentity
+  nameWithType: BasicAuthIdentity
+  fullName: Microsoft.Bot.Connector.BasicAuthIdentity
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: 'public class BasicAuthIdentity : System.Security.Claims.ClaimsIdentity'
+  inheritance:
+  - System.Security.Claims.ClaimsIdentity
+  implements: []
+  inheritedMembers: []
+  extensionMethods:
+  - Microsoft.Bot.Connector.ClaimsIdentityEx.GetAppIdFromClaims(System.Security.Claims.ClaimsIdentity)
+  - Microsoft.Bot.Connector.ClaimsIdentityEx.GetAppPasswordFromClaims(System.Security.Claims.ClaimsIdentity)
+  - Microsoft.Bot.Connector.ClaimsIdentityEx.GetCredentialsFromClaims(System.Security.Claims.ClaimsIdentity)
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BasicAuthIdentity.xml
+- uid: Microsoft.Bot.Connector.BasicAuthIdentity.#ctor(System.String,System.String)
+  commentId: M:Microsoft.Bot.Connector.BasicAuthIdentity.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: Microsoft.Bot.Connector.BasicAuthIdentity
+  langs:
+  - csharp
+  name: BasicAuthIdentity(String, String)
+  nameWithType: BasicAuthIdentity.BasicAuthIdentity(String, String)
+  fullName: BasicAuthIdentity.BasicAuthIdentity(String, String)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public BasicAuthIdentity (string id, string password);
+    parameters:
+    - id: id
+      type: System.String
+      description: To be added.
+    - id: password
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BasicAuthIdentity.#ctor*
+  exceptions: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BasicAuthIdentity.xml
+- uid: Microsoft.Bot.Connector.BasicAuthIdentity.Id
+  commentId: P:Microsoft.Bot.Connector.BasicAuthIdentity.Id
+  id: Id
+  parent: Microsoft.Bot.Connector.BasicAuthIdentity
+  langs:
+  - csharp
+  name: Id
+  nameWithType: BasicAuthIdentity.Id
+  fullName: BasicAuthIdentity.Id
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public string Id { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BasicAuthIdentity.Id*
+  exceptions: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BasicAuthIdentity.xml
+- uid: Microsoft.Bot.Connector.BasicAuthIdentity.Password
+  commentId: P:Microsoft.Bot.Connector.BasicAuthIdentity.Password
+  id: Password
+  parent: Microsoft.Bot.Connector.BasicAuthIdentity
+  langs:
+  - csharp
+  name: Password
+  nameWithType: BasicAuthIdentity.Password
+  fullName: BasicAuthIdentity.Password
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public string Password { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BasicAuthIdentity.Password*
+  exceptions: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BasicAuthIdentity.xml
+references:
+- uid: System.Security.Claims.ClaimsIdentity
+  parent: System.Security.Claims
+  isExternal: true
+  name: ClaimsIdentity
+  nameWithType: ClaimsIdentity
+  fullName: System.Security.Claims.ClaimsIdentity
+- uid: Microsoft.Bot.Connector.BasicAuthIdentity.#ctor(System.String,System.String)
+  parent: Microsoft.Bot.Connector.BasicAuthIdentity
+  isExternal: false
+  name: BasicAuthIdentity(String, String)
+  nameWithType: BasicAuthIdentity.BasicAuthIdentity(String, String)
+  fullName: BasicAuthIdentity.BasicAuthIdentity(String, String)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.BasicAuthIdentity.Id
+  parent: Microsoft.Bot.Connector.BasicAuthIdentity
+  isExternal: false
+  name: Id
+  nameWithType: BasicAuthIdentity.Id
+  fullName: BasicAuthIdentity.Id
+- uid: Microsoft.Bot.Connector.BasicAuthIdentity.Password
+  parent: Microsoft.Bot.Connector.BasicAuthIdentity
+  isExternal: false
+  name: Password
+  nameWithType: BasicAuthIdentity.Password
+  fullName: BasicAuthIdentity.Password
+- uid: Microsoft.Bot.Connector.BasicAuthIdentity.#ctor*
+  parent: Microsoft.Bot.Connector.BasicAuthIdentity
+  isExternal: false
+  name: BasicAuthIdentity
+  nameWithType: BasicAuthIdentity.BasicAuthIdentity
+  fullName: BasicAuthIdentity.BasicAuthIdentity
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BasicAuthIdentity.xml
+- uid: Microsoft.Bot.Connector.BasicAuthIdentity.Id*
+  parent: Microsoft.Bot.Connector.BasicAuthIdentity
+  isExternal: false
+  name: Id
+  nameWithType: BasicAuthIdentity.Id
+  fullName: BasicAuthIdentity.Id
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BasicAuthIdentity.xml
+- uid: Microsoft.Bot.Connector.BasicAuthIdentity.Password*
+  parent: Microsoft.Bot.Connector.BasicAuthIdentity
+  isExternal: false
+  name: Password
+  nameWithType: BasicAuthIdentity.Password
+  fullName: BasicAuthIdentity.Password
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BasicAuthIdentity.xml
+- uid: Microsoft.Bot.Connector.ClaimsIdentityEx.GetAppIdFromClaims(System.Security.Claims.ClaimsIdentity)
+  parent: Microsoft.Bot.Connector.ClaimsIdentityEx
+  isExternal: false
+  name: GetAppIdFromClaims(ClaimsIdentity)
+  nameWithType: ClaimsIdentityEx.GetAppIdFromClaims(ClaimsIdentity)
+  fullName: ClaimsIdentityEx.GetAppIdFromClaims(ClaimsIdentity)
+- uid: Microsoft.Bot.Connector.ClaimsIdentityEx.GetAppPasswordFromClaims(System.Security.Claims.ClaimsIdentity)
+  parent: Microsoft.Bot.Connector.ClaimsIdentityEx
+  isExternal: false
+  name: GetAppPasswordFromClaims(ClaimsIdentity)
+  nameWithType: ClaimsIdentityEx.GetAppPasswordFromClaims(ClaimsIdentity)
+  fullName: ClaimsIdentityEx.GetAppPasswordFromClaims(ClaimsIdentity)
+- uid: Microsoft.Bot.Connector.ClaimsIdentityEx.GetCredentialsFromClaims(System.Security.Claims.ClaimsIdentity)
+  parent: Microsoft.Bot.Connector.ClaimsIdentityEx
+  isExternal: false
+  name: GetCredentialsFromClaims(ClaimsIdentity)
+  nameWithType: ClaimsIdentityEx.GetCredentialsFromClaims(ClaimsIdentity)
+  fullName: ClaimsIdentityEx.GetCredentialsFromClaims(ClaimsIdentity)

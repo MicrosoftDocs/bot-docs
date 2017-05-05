@@ -1,0 +1,128 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.FormFlowAttribute
+  commentId: T:Microsoft.Bot.Builder.FormFlow.FormFlowAttribute
+  id: FormFlowAttribute
+  children:
+  - Microsoft.Bot.Builder.FormFlow.FormFlowAttribute.#ctor
+  - Microsoft.Bot.Builder.FormFlow.FormFlowAttribute.IsLocalizable
+  langs:
+  - csharp
+  name: FormFlowAttribute
+  nameWithType: FormFlowAttribute
+  fullName: Microsoft.Bot.Builder.FormFlow.FormFlowAttribute
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Abstract base class for FormFlow attributes.
+  syntax:
+    content: 'public abstract class FormFlowAttribute : Attribute'
+  inheritance:
+  - System.Attribute
+  derivedClasses:
+  - Microsoft.Bot.Builder.FormFlow.DescribeAttribute
+  - Microsoft.Bot.Builder.FormFlow.TermsAttribute
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/FormFlowAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.FormFlowAttribute.#ctor
+  commentId: M:Microsoft.Bot.Builder.FormFlow.FormFlowAttribute.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Builder.FormFlow.FormFlowAttribute
+  langs:
+  - csharp
+  name: FormFlowAttribute()
+  nameWithType: FormFlowAttribute.FormFlowAttribute()
+  fullName: FormFlowAttribute.FormFlowAttribute()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  syntax:
+    content: protected FormFlowAttribute ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.FormFlow.FormFlowAttribute.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/FormFlowAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.FormFlowAttribute.IsLocalizable
+  commentId: P:Microsoft.Bot.Builder.FormFlow.FormFlowAttribute.IsLocalizable
+  id: IsLocalizable
+  parent: Microsoft.Bot.Builder.FormFlow.FormFlowAttribute
+  langs:
+  - csharp
+  name: IsLocalizable
+  nameWithType: FormFlowAttribute.IsLocalizable
+  fullName: FormFlowAttribute.IsLocalizable
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: True if attribute is localizable.
+  remarks: >-
+    Attributes that are used on classes, fields and properties should have this set.
+                That way those attributes will be in the localization files that are generated.
+  syntax:
+    content: public bool IsLocalizable { get; set; }
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.FormFlowAttribute.IsLocalizable*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/FormFlowAttribute.xml
+references:
+- uid: System.Attribute
+  parent: System
+  isExternal: true
+  name: Attribute
+  nameWithType: Attribute
+  fullName: System.Attribute
+- uid: Microsoft.Bot.Builder.FormFlow.FormFlowAttribute.#ctor
+  parent: Microsoft.Bot.Builder.FormFlow.FormFlowAttribute
+  isExternal: false
+  name: FormFlowAttribute()
+  nameWithType: FormFlowAttribute.FormFlowAttribute()
+  fullName: FormFlowAttribute.FormFlowAttribute()
+- uid: Microsoft.Bot.Builder.FormFlow.FormFlowAttribute.IsLocalizable
+  parent: Microsoft.Bot.Builder.FormFlow.FormFlowAttribute
+  isExternal: false
+  name: IsLocalizable
+  nameWithType: FormFlowAttribute.IsLocalizable
+  fullName: FormFlowAttribute.IsLocalizable
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Bot.Builder.FormFlow.FormFlowAttribute.#ctor*
+  parent: Microsoft.Bot.Builder.FormFlow.FormFlowAttribute
+  isExternal: false
+  name: FormFlowAttribute
+  nameWithType: FormFlowAttribute.FormFlowAttribute
+  fullName: FormFlowAttribute.FormFlowAttribute
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/FormFlowAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.FormFlowAttribute.IsLocalizable*
+  parent: Microsoft.Bot.Builder.FormFlow.FormFlowAttribute
+  isExternal: false
+  name: IsLocalizable
+  nameWithType: FormFlowAttribute.IsLocalizable
+  fullName: FormFlowAttribute.IsLocalizable
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/FormFlowAttribute.xml

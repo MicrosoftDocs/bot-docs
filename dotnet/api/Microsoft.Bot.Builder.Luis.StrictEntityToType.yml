@@ -1,0 +1,407 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Luis.StrictEntityToType
+  commentId: T:Microsoft.Bot.Builder.Luis.StrictEntityToType
+  id: StrictEntityToType
+  children:
+  - Microsoft.Bot.Builder.Luis.StrictEntityToType.#ctor(Microsoft.Bot.Builder.Luis.IResolutionParser,Microsoft.Bot.Builder.Luis.ICalendarPlus)
+  - Microsoft.Bot.Builder.Luis.StrictEntityToType.Interpret(Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution,System.DateTime,System.Globalization.Calendar,System.Globalization.CalendarWeekRule,System.DayOfWeek,System.Func{Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart,System.Int32})
+  - Microsoft.Bot.Builder.Luis.StrictEntityToType.Microsoft#Bot#Builder#Luis#IEntityToType#TryMapToDateRanges(System.DateTime,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{System.DateTime}}@)
+  - Microsoft.Bot.Builder.Luis.StrictEntityToType.Microsoft#Bot#Builder#Luis#IEntityToType#TryMapToTimeSpan(System.DateTime,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},System.TimeSpan@)
+  langs:
+  - csharp
+  name: StrictEntityToType
+  nameWithType: StrictEntityToType
+  fullName: Microsoft.Bot.Builder.Luis.StrictEntityToType
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Luis
+  syntax:
+    content: 'public sealed class StrictEntityToType : Microsoft.Bot.Builder.Luis.IEntityToType'
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Bot.Builder.Luis.IEntityToType
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/StrictEntityToType.xml
+- uid: Microsoft.Bot.Builder.Luis.StrictEntityToType.#ctor(Microsoft.Bot.Builder.Luis.IResolutionParser,Microsoft.Bot.Builder.Luis.ICalendarPlus)
+  commentId: M:Microsoft.Bot.Builder.Luis.StrictEntityToType.#ctor(Microsoft.Bot.Builder.Luis.IResolutionParser,Microsoft.Bot.Builder.Luis.ICalendarPlus)
+  id: '#ctor(Microsoft.Bot.Builder.Luis.IResolutionParser,Microsoft.Bot.Builder.Luis.ICalendarPlus)'
+  parent: Microsoft.Bot.Builder.Luis.StrictEntityToType
+  langs:
+  - csharp
+  name: StrictEntityToType(IResolutionParser, ICalendarPlus)
+  nameWithType: StrictEntityToType.StrictEntityToType(IResolutionParser, ICalendarPlus)
+  fullName: StrictEntityToType.StrictEntityToType(IResolutionParser, ICalendarPlus)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  syntax:
+    content: public StrictEntityToType (Microsoft.Bot.Builder.Luis.IResolutionParser parser, Microsoft.Bot.Builder.Luis.ICalendarPlus calendar);
+    parameters:
+    - id: parser
+      type: Microsoft.Bot.Builder.Luis.IResolutionParser
+      description: To be added.
+    - id: calendar
+      type: Microsoft.Bot.Builder.Luis.ICalendarPlus
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Luis.StrictEntityToType.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/StrictEntityToType.xml
+- uid: Microsoft.Bot.Builder.Luis.StrictEntityToType.Interpret(Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution,System.DateTime,System.Globalization.Calendar,System.Globalization.CalendarWeekRule,System.DayOfWeek,System.Func{Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart,System.Int32})
+  commentId: M:Microsoft.Bot.Builder.Luis.StrictEntityToType.Interpret(Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution,System.DateTime,System.Globalization.Calendar,System.Globalization.CalendarWeekRule,System.DayOfWeek,System.Func{Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart,System.Int32})
+  id: Interpret(Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution,System.DateTime,System.Globalization.Calendar,System.Globalization.CalendarWeekRule,System.DayOfWeek,System.Func{Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart,System.Int32})
+  parent: Microsoft.Bot.Builder.Luis.StrictEntityToType
+  langs:
+  - csharp
+  name: Interpret(BuiltIn+DateTime+DateTimeResolution, DateTime, Calendar, CalendarWeekRule, DayOfWeek, Func<BuiltIn,Int32>)
+  nameWithType: StrictEntityToType.Interpret(BuiltIn+DateTime+DateTimeResolution, DateTime, Calendar, CalendarWeekRule, DayOfWeek, Func<BuiltIn,Int32>)
+  fullName: StrictEntityToType.Interpret(BuiltIn+DateTime+DateTimeResolution, DateTime, Calendar, CalendarWeekRule, DayOfWeek, Func<BuiltIn,Int32>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  summary: Interpret a parsed DateTimeResolution to provide a series of DateTime ranges
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Luis.StrictEntityToType/<Interpret>d__5))]
+
+      public static System.Collections.Generic.IEnumerable<Microsoft.Bot.Builder.Internals.Fibers.Range<DateTime>> Interpret (Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution resolution, DateTime now, System.Globalization.Calendar calendar, System.Globalization.CalendarWeekRule rule, DayOfWeek firstDayOfWeek, Func<Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart,int> HourFor);
+    parameters:
+    - id: resolution
+      type: Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+DateTimeResolution
+      description: The DateTimeResolution parsed from a LUIS response.
+    - id: now
+      type: System.DateTime
+      description: The reference point of "now".
+    - id: calendar
+      type: System.Globalization.Calendar
+      description: The calendar to use for date math.
+    - id: rule
+      type: System.Globalization.CalendarWeekRule
+      description: The calendar week rule to use for date math.
+    - id: firstDayOfWeek
+      type: System.DayOfWeek
+      description: The first day of the week to use for date math.
+    - id: HourFor
+      type: System.Func{Microsoft.Bot.Builder.Luis.BuiltIn,System.Int32}
+      description: The hour that corresponds to the <xref href="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart"></xref> enumeration.
+    return:
+      type: System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{System.DateTime}}
+      description: A potentially infinite series of DateTime ranges.
+  overload: Microsoft.Bot.Builder.Luis.StrictEntityToType.Interpret*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.IteratorStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/StrictEntityToType.xml
+- uid: Microsoft.Bot.Builder.Luis.StrictEntityToType.Microsoft#Bot#Builder#Luis#IEntityToType#TryMapToDateRanges(System.DateTime,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{System.DateTime}}@)
+  commentId: M:Microsoft.Bot.Builder.Luis.StrictEntityToType.Microsoft#Bot#Builder#Luis#IEntityToType#TryMapToDateRanges(System.DateTime,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{System.DateTime}}@)
+  id: Microsoft#Bot#Builder#Luis#IEntityToType#TryMapToDateRanges(System.DateTime,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{System.DateTime}}@)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Luis.StrictEntityToType
+  langs:
+  - csharp
+  name: IEntityToType.TryMapToDateRanges(DateTime, IEnumerable<EntityRecommendation>, IEnumerable<Range<DateTime>>)
+  nameWithType: StrictEntityToType.IEntityToType.TryMapToDateRanges(DateTime, IEnumerable<EntityRecommendation>, IEnumerable<Range<DateTime>>)
+  fullName: StrictEntityToType.IEntityToType.TryMapToDateRanges(DateTime, IEnumerable<EntityRecommendation>, IEnumerable<Range<DateTime>>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  syntax:
+    content: bool IEntityToType.TryMapToDateRanges (DateTime now, System.Collections.Generic.IEnumerable<Microsoft.Bot.Builder.Luis.Models.EntityRecommendation> entities, out System.Collections.Generic.IEnumerable<Microsoft.Bot.Builder.Internals.Fibers.Range<DateTime>> ranges);
+    parameters:
+    - id: now
+      type: System.DateTime
+      description: To be added.
+    - id: entities
+      type: System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation}
+      description: To be added.
+    - id: ranges
+      type: System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{System.DateTime}}
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Luis.StrictEntityToType.Microsoft#Bot#Builder#Luis#IEntityToType#TryMapToDateRanges*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/StrictEntityToType.xml
+- uid: Microsoft.Bot.Builder.Luis.StrictEntityToType.Microsoft#Bot#Builder#Luis#IEntityToType#TryMapToTimeSpan(System.DateTime,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},System.TimeSpan@)
+  commentId: M:Microsoft.Bot.Builder.Luis.StrictEntityToType.Microsoft#Bot#Builder#Luis#IEntityToType#TryMapToTimeSpan(System.DateTime,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},System.TimeSpan@)
+  id: Microsoft#Bot#Builder#Luis#IEntityToType#TryMapToTimeSpan(System.DateTime,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},System.TimeSpan@)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Luis.StrictEntityToType
+  langs:
+  - csharp
+  name: IEntityToType.TryMapToTimeSpan(DateTime, IEnumerable<EntityRecommendation>, TimeSpan)
+  nameWithType: StrictEntityToType.IEntityToType.TryMapToTimeSpan(DateTime, IEnumerable<EntityRecommendation>, TimeSpan)
+  fullName: StrictEntityToType.IEntityToType.TryMapToTimeSpan(DateTime, IEnumerable<EntityRecommendation>, TimeSpan)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  syntax:
+    content: bool IEntityToType.TryMapToTimeSpan (DateTime now, System.Collections.Generic.IEnumerable<Microsoft.Bot.Builder.Luis.Models.EntityRecommendation> entities, out TimeSpan span);
+    parameters:
+    - id: now
+      type: System.DateTime
+      description: To be added.
+    - id: entities
+      type: System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation}
+      description: To be added.
+    - id: span
+      type: System.TimeSpan
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Luis.StrictEntityToType.Microsoft#Bot#Builder#Luis#IEntityToType#TryMapToTimeSpan*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/StrictEntityToType.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Luis.StrictEntityToType.#ctor(Microsoft.Bot.Builder.Luis.IResolutionParser,Microsoft.Bot.Builder.Luis.ICalendarPlus)
+  parent: Microsoft.Bot.Builder.Luis.StrictEntityToType
+  isExternal: false
+  name: StrictEntityToType(IResolutionParser, ICalendarPlus)
+  nameWithType: StrictEntityToType.StrictEntityToType(IResolutionParser, ICalendarPlus)
+  fullName: StrictEntityToType.StrictEntityToType(IResolutionParser, ICalendarPlus)
+- uid: Microsoft.Bot.Builder.Luis.IResolutionParser
+  parent: Microsoft.Bot.Builder.Luis
+  isExternal: false
+  name: IResolutionParser
+  nameWithType: IResolutionParser
+  fullName: Microsoft.Bot.Builder.Luis.IResolutionParser
+- uid: Microsoft.Bot.Builder.Luis.ICalendarPlus
+  parent: Microsoft.Bot.Builder.Luis
+  isExternal: false
+  name: ICalendarPlus
+  nameWithType: ICalendarPlus
+  fullName: Microsoft.Bot.Builder.Luis.ICalendarPlus
+- uid: Microsoft.Bot.Builder.Luis.StrictEntityToType.Interpret(Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution,System.DateTime,System.Globalization.Calendar,System.Globalization.CalendarWeekRule,System.DayOfWeek,System.Func{Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart,System.Int32})
+  parent: Microsoft.Bot.Builder.Luis.StrictEntityToType
+  isExternal: false
+  name: Interpret(BuiltIn+DateTime+DateTimeResolution, DateTime, Calendar, CalendarWeekRule, DayOfWeek, Func<BuiltIn,Int32>)
+  nameWithType: StrictEntityToType.Interpret(BuiltIn+DateTime+DateTimeResolution, DateTime, Calendar, CalendarWeekRule, DayOfWeek, Func<BuiltIn,Int32>)
+  fullName: StrictEntityToType.Interpret(BuiltIn+DateTime+DateTimeResolution, DateTime, Calendar, CalendarWeekRule, DayOfWeek, Func<BuiltIn,Int32>)
+- uid: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.Generic.IEnumerable
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  name: Range<T>
+  nameWithType: Range<T>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.Range<T>
+- uid: System.DateTime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{System.DateTime}}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<Range<DateTime>>
+  nameWithType: IEnumerable<Range<DateTime>>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.Bot.Builder.Internals.Fibers.Range<System.DateTime>>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+    name: Range
+    nameWithType: Range
+    fullName: Microsoft.Bot.Builder.Internals.Fibers.Range
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: System.DateTime
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Luis.BuiltIn
+  parent: Microsoft.Bot.Builder.Luis
+  isExternal: false
+  name: BuiltIn
+  nameWithType: BuiltIn
+  fullName: Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+DateTimeResolution
+- uid: System.Globalization.Calendar
+  parent: System.Globalization
+  isExternal: true
+  name: Calendar
+  nameWithType: Calendar
+  fullName: System.Globalization.Calendar
+- uid: System.Globalization.CalendarWeekRule
+  parent: System.Globalization
+  isExternal: true
+  name: CalendarWeekRule
+  nameWithType: CalendarWeekRule
+  fullName: System.Globalization.CalendarWeekRule
+- uid: System.DayOfWeek
+  parent: System
+  isExternal: true
+  name: DayOfWeek
+  nameWithType: DayOfWeek
+  fullName: System.DayOfWeek
+- uid: System.Func`2
+  name: Func
+  nameWithType: Func
+  fullName: System.Func
+- uid: System.Int32
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Func{Microsoft.Bot.Builder.Luis.BuiltIn,System.Int32}
+  parent: System
+  isExternal: true
+  name: Func<BuiltIn,Int32>
+  nameWithType: Func<BuiltIn,Int32>
+  fullName: System.Func<Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+DayPart,System.Int32>
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Luis.BuiltIn
+    name: BuiltIn
+    nameWithType: BuiltIn
+    fullName: Microsoft.Bot.Builder.Luis.BuiltIn
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Luis.StrictEntityToType.Microsoft#Bot#Builder#Luis#IEntityToType#TryMapToDateRanges(System.DateTime,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{System.DateTime}}@)
+  parent: Microsoft.Bot.Builder.Luis.StrictEntityToType
+  isExternal: false
+  name: IEntityToType.TryMapToDateRanges(DateTime, IEnumerable<EntityRecommendation>, IEnumerable<Range<DateTime>>)
+  nameWithType: StrictEntityToType.IEntityToType.TryMapToDateRanges(DateTime, IEnumerable<EntityRecommendation>, IEnumerable<Range<DateTime>>)
+  fullName: StrictEntityToType.IEntityToType.TryMapToDateRanges(DateTime, IEnumerable<EntityRecommendation>, IEnumerable<Range<DateTime>>)
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  name: EntityRecommendation
+  nameWithType: EntityRecommendation
+  fullName: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+- uid: System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<EntityRecommendation>
+  nameWithType: IEnumerable<EntityRecommendation>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.Bot.Builder.Luis.Models.EntityRecommendation>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+    name: EntityRecommendation
+    nameWithType: EntityRecommendation
+    fullName: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Luis.StrictEntityToType.Microsoft#Bot#Builder#Luis#IEntityToType#TryMapToTimeSpan(System.DateTime,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},System.TimeSpan@)
+  parent: Microsoft.Bot.Builder.Luis.StrictEntityToType
+  isExternal: false
+  name: IEntityToType.TryMapToTimeSpan(DateTime, IEnumerable<EntityRecommendation>, TimeSpan)
+  nameWithType: StrictEntityToType.IEntityToType.TryMapToTimeSpan(DateTime, IEnumerable<EntityRecommendation>, TimeSpan)
+  fullName: StrictEntityToType.IEntityToType.TryMapToTimeSpan(DateTime, IEnumerable<EntityRecommendation>, TimeSpan)
+- uid: System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Microsoft.Bot.Builder.Luis.StrictEntityToType.#ctor*
+  parent: Microsoft.Bot.Builder.Luis.StrictEntityToType
+  isExternal: false
+  name: StrictEntityToType
+  nameWithType: StrictEntityToType.StrictEntityToType
+  fullName: StrictEntityToType.StrictEntityToType
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/StrictEntityToType.xml
+- uid: Microsoft.Bot.Builder.Luis.StrictEntityToType.Interpret*
+  parent: Microsoft.Bot.Builder.Luis.StrictEntityToType
+  isExternal: false
+  name: Interpret
+  nameWithType: StrictEntityToType.Interpret
+  fullName: StrictEntityToType.Interpret
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/StrictEntityToType.xml
+- uid: Microsoft.Bot.Builder.Luis.StrictEntityToType.Microsoft#Bot#Builder#Luis#IEntityToType#TryMapToDateRanges*
+  parent: Microsoft.Bot.Builder.Luis.StrictEntityToType
+  isExternal: false
+  name: Microsoft.Bot.Builder.Luis.IEntityToType.TryMapToDateRanges
+  nameWithType: StrictEntityToType.Microsoft.Bot.Builder.Luis.IEntityToType.TryMapToDateRanges
+  fullName: StrictEntityToType.Microsoft.Bot.Builder.Luis.IEntityToType.TryMapToDateRanges
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/StrictEntityToType.xml
+- uid: Microsoft.Bot.Builder.Luis.StrictEntityToType.Microsoft#Bot#Builder#Luis#IEntityToType#TryMapToTimeSpan*
+  parent: Microsoft.Bot.Builder.Luis.StrictEntityToType
+  isExternal: false
+  name: Microsoft.Bot.Builder.Luis.IEntityToType.TryMapToTimeSpan
+  nameWithType: StrictEntityToType.Microsoft.Bot.Builder.Luis.IEntityToType.TryMapToTimeSpan
+  fullName: StrictEntityToType.Microsoft.Bot.Builder.Luis.IEntityToType.TryMapToTimeSpan
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/StrictEntityToType.xml
+- uid: Microsoft.Bot.Builder.Luis.IEntityToType
+  parent: Microsoft.Bot.Builder.Luis
+  isExternal: false
+  name: IEntityToType
+  nameWithType: IEntityToType
+  fullName: Microsoft.Bot.Builder.Luis.IEntityToType

@@ -1,0 +1,337 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.SigninCard
+  commentId: T:Microsoft.Bot.Connector.SigninCard
+  id: SigninCard
+  children:
+  - Microsoft.Bot.Connector.SigninCard.#ctor
+  - Microsoft.Bot.Connector.SigninCard.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction})
+  - Microsoft.Bot.Connector.SigninCard.Buttons
+  - Microsoft.Bot.Connector.SigninCard.ContentType
+  - Microsoft.Bot.Connector.SigninCard.Create(System.String,System.String,System.String)
+  - Microsoft.Bot.Connector.SigninCard.Text
+  langs:
+  - csharp
+  name: SigninCard
+  nameWithType: SigninCard
+  fullName: Microsoft.Bot.Connector.SigninCard
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: A card representing a request to sign in
+  syntax:
+    content: public class SigninCard
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  extensionMethods:
+  - Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.SigninCard)
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/SigninCard.xml
+- uid: Microsoft.Bot.Connector.SigninCard.#ctor
+  commentId: M:Microsoft.Bot.Connector.SigninCard.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Connector.SigninCard
+  langs:
+  - csharp
+  name: SigninCard()
+  nameWithType: SigninCard.SigninCard()
+  fullName: SigninCard.SigninCard()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the SigninCard class.
+  syntax:
+    content: public SigninCard ();
+    parameters: []
+  overload: Microsoft.Bot.Connector.SigninCard.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/SigninCard.xml
+- uid: Microsoft.Bot.Connector.SigninCard.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction})
+  commentId: M:Microsoft.Bot.Connector.SigninCard.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction})
+  id: '#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction})'
+  parent: Microsoft.Bot.Connector.SigninCard
+  langs:
+  - csharp
+  name: SigninCard(String, IList<CardAction>)
+  nameWithType: SigninCard.SigninCard(String, IList<CardAction>)
+  fullName: SigninCard.SigninCard(String, IList<CardAction>)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the SigninCard class.
+  syntax:
+    content: public SigninCard (string text = null, System.Collections.Generic.IList<Microsoft.Bot.Connector.CardAction> buttons = null);
+    parameters:
+    - id: text
+      type: System.String
+      description: To be added.
+    - id: buttons
+      type: System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.SigninCard.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/SigninCard.xml
+- uid: Microsoft.Bot.Connector.SigninCard.Buttons
+  commentId: P:Microsoft.Bot.Connector.SigninCard.Buttons
+  id: Buttons
+  parent: Microsoft.Bot.Connector.SigninCard
+  langs:
+  - csharp
+  name: Buttons
+  nameWithType: SigninCard.Buttons
+  fullName: SigninCard.Buttons
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Action to use to perform signin
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="buttons")]
+
+      public System.Collections.Generic.IList<Microsoft.Bot.Connector.CardAction> Buttons { get; set; }
+    return:
+      type: System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.SigninCard.Buttons*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/SigninCard.xml
+- uid: Microsoft.Bot.Connector.SigninCard.ContentType
+  commentId: F:Microsoft.Bot.Connector.SigninCard.ContentType
+  id: ContentType
+  parent: Microsoft.Bot.Connector.SigninCard
+  langs:
+  - csharp
+  name: ContentType
+  nameWithType: SigninCard.ContentType
+  fullName: SigninCard.ContentType
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public const string ContentType;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/SigninCard.xml
+- uid: Microsoft.Bot.Connector.SigninCard.Create(System.String,System.String,System.String)
+  commentId: M:Microsoft.Bot.Connector.SigninCard.Create(System.String,System.String,System.String)
+  id: Create(System.String,System.String,System.String)
+  parent: Microsoft.Bot.Connector.SigninCard
+  langs:
+  - csharp
+  name: Create(String, String, String)
+  nameWithType: SigninCard.Create(String, String, String)
+  fullName: SigninCard.Create(String, String, String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Creates a <xref href="Microsoft.Bot.Connector.SigninCard"></xref>
+  syntax:
+    content: public static Microsoft.Bot.Connector.SigninCard Create (string text, string buttonLabel, string url);
+    parameters:
+    - id: text
+      type: System.String
+      description: The <xref href="Microsoft.Bot.Connector.SigninCard.Text"></xref>
+    - id: buttonLabel
+      type: System.String
+      description: The signin button label.
+    - id: url
+      type: System.String
+      description: The sigin url.
+    return:
+      type: Microsoft.Bot.Connector.SigninCard
+      description: The created sigin card.
+  overload: Microsoft.Bot.Connector.SigninCard.Create*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/SigninCard.xml
+- uid: Microsoft.Bot.Connector.SigninCard.Text
+  commentId: P:Microsoft.Bot.Connector.SigninCard.Text
+  id: Text
+  parent: Microsoft.Bot.Connector.SigninCard
+  langs:
+  - csharp
+  name: Text
+  nameWithType: SigninCard.Text
+  fullName: SigninCard.Text
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Text for signin request
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="text")]
+
+      public string Text { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.SigninCard.Text*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/SigninCard.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.SigninCard.#ctor
+  parent: Microsoft.Bot.Connector.SigninCard
+  isExternal: false
+  name: SigninCard()
+  nameWithType: SigninCard.SigninCard()
+  fullName: SigninCard.SigninCard()
+- uid: Microsoft.Bot.Connector.SigninCard.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction})
+  parent: Microsoft.Bot.Connector.SigninCard
+  isExternal: false
+  name: SigninCard(String, IList<CardAction>)
+  nameWithType: SigninCard.SigninCard(String, IList<CardAction>)
+  fullName: SigninCard.SigninCard(String, IList<CardAction>)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic.IList`1
+  name: IList
+  nameWithType: IList
+  fullName: System.Collections.Generic.IList
+- uid: Microsoft.Bot.Connector.CardAction
+  name: CardAction
+  nameWithType: CardAction
+  fullName: Microsoft.Bot.Connector.CardAction
+- uid: System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IList<CardAction>
+  nameWithType: IList<CardAction>
+  fullName: System.Collections.Generic.IList<Microsoft.Bot.Connector.CardAction>
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.CardAction
+    name: CardAction
+    nameWithType: CardAction
+    fullName: Microsoft.Bot.Connector.CardAction
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Connector.SigninCard.Buttons
+  parent: Microsoft.Bot.Connector.SigninCard
+  isExternal: false
+  name: Buttons
+  nameWithType: SigninCard.Buttons
+  fullName: SigninCard.Buttons
+- uid: Microsoft.Bot.Connector.SigninCard.ContentType
+  parent: Microsoft.Bot.Connector.SigninCard
+  isExternal: false
+  name: ContentType
+  nameWithType: SigninCard.ContentType
+  fullName: SigninCard.ContentType
+- uid: Microsoft.Bot.Connector.SigninCard.Create(System.String,System.String,System.String)
+  parent: Microsoft.Bot.Connector.SigninCard
+  isExternal: false
+  name: Create(String, String, String)
+  nameWithType: SigninCard.Create(String, String, String)
+  fullName: SigninCard.Create(String, String, String)
+- uid: Microsoft.Bot.Connector.SigninCard
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: SigninCard
+  nameWithType: SigninCard
+  fullName: Microsoft.Bot.Connector.SigninCard
+- uid: Microsoft.Bot.Connector.SigninCard.Text
+  parent: Microsoft.Bot.Connector.SigninCard
+  isExternal: false
+  name: Text
+  nameWithType: SigninCard.Text
+  fullName: SigninCard.Text
+- uid: Microsoft.Bot.Connector.SigninCard.#ctor*
+  parent: Microsoft.Bot.Connector.SigninCard
+  isExternal: false
+  name: SigninCard
+  nameWithType: SigninCard.SigninCard
+  fullName: SigninCard.SigninCard
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/SigninCard.xml
+- uid: Microsoft.Bot.Connector.SigninCard.Buttons*
+  parent: Microsoft.Bot.Connector.SigninCard
+  isExternal: false
+  name: Buttons
+  nameWithType: SigninCard.Buttons
+  fullName: SigninCard.Buttons
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/SigninCard.xml
+- uid: Microsoft.Bot.Connector.SigninCard.Create*
+  parent: Microsoft.Bot.Connector.SigninCard
+  isExternal: false
+  name: Create
+  nameWithType: SigninCard.Create
+  fullName: SigninCard.Create
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/SigninCard.xml
+- uid: Microsoft.Bot.Connector.SigninCard.Text*
+  parent: Microsoft.Bot.Connector.SigninCard
+  isExternal: false
+  name: Text
+  nameWithType: SigninCard.Text
+  fullName: SigninCard.Text
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/SigninCard.xml
+- uid: Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.SigninCard)
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: ToAttachment(SigninCard)
+  nameWithType: Extensions.ToAttachment(SigninCard)
+  fullName: Extensions.ToAttachment(SigninCard)

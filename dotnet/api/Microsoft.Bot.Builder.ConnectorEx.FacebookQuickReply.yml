@@ -1,0 +1,275 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply
+  commentId: T:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply
+  id: FacebookQuickReply
+  children:
+  - Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.#ctor(System.String,System.String,System.String,System.String)
+  - Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentType
+  - Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.Image
+  - Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.Payload
+  - Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.Title
+  langs:
+  - csharp
+  name: FacebookQuickReply
+  nameWithType: FacebookQuickReply
+  fullName: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.ConnectorEx
+  summary: Facebook quick reply. See https://developers.facebook.com/docs/messenger-platform/send-api-reference/quick-replies.
+  syntax:
+    content: public sealed class FacebookQuickReply
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/FacebookQuickReply.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.#ctor(System.String,System.String,System.String,System.String)
+  commentId: M:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.#ctor(System.String,System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.String,System.String)'
+  parent: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply
+  langs:
+  - csharp
+  name: FacebookQuickReply(String, String, String, String)
+  nameWithType: FacebookQuickReply.FacebookQuickReply(String, String, String, String)
+  fullName: FacebookQuickReply.FacebookQuickReply(String, String, String, String)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.ConnectorEx
+  syntax:
+    content: public FacebookQuickReply (string contentType, string title, string payload, string image = null);
+    parameters:
+    - id: contentType
+      type: System.String
+      description: To be added.
+    - id: title
+      type: System.String
+      description: To be added.
+    - id: payload
+      type: System.String
+      description: To be added.
+    - id: image
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/FacebookQuickReply.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentType
+  commentId: P:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentType
+  id: ContentType
+  parent: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply
+  langs:
+  - csharp
+  name: ContentType
+  nameWithType: FacebookQuickReply.ContentType
+  fullName: FacebookQuickReply.ContentType
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.ConnectorEx
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="content_type")]
+
+      public string ContentType { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentType*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/FacebookQuickReply.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.Image
+  commentId: P:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.Image
+  id: Image
+  parent: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply
+  langs:
+  - csharp
+  name: Image
+  nameWithType: FacebookQuickReply.Image
+  fullName: FacebookQuickReply.Image
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.ConnectorEx
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="image_url")]
+
+      public string Image { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.Image*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/FacebookQuickReply.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.Payload
+  commentId: P:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.Payload
+  id: Payload
+  parent: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply
+  langs:
+  - csharp
+  name: Payload
+  nameWithType: FacebookQuickReply.Payload
+  fullName: FacebookQuickReply.Payload
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.ConnectorEx
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="payload")]
+
+      public string Payload { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.Payload*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/FacebookQuickReply.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.Title
+  commentId: P:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.Title
+  id: Title
+  parent: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply
+  langs:
+  - csharp
+  name: Title
+  nameWithType: FacebookQuickReply.Title
+  fullName: FacebookQuickReply.Title
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.ConnectorEx
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="title")]
+
+      public string Title { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.Title*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/FacebookQuickReply.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.#ctor(System.String,System.String,System.String,System.String)
+  parent: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply
+  isExternal: false
+  name: FacebookQuickReply(String, String, String, String)
+  nameWithType: FacebookQuickReply.FacebookQuickReply(String, String, String, String)
+  fullName: FacebookQuickReply.FacebookQuickReply(String, String, String, String)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentType
+  parent: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply
+  isExternal: false
+  name: ContentType
+  nameWithType: FacebookQuickReply.ContentType
+  fullName: FacebookQuickReply.ContentType
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.Image
+  parent: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply
+  isExternal: false
+  name: Image
+  nameWithType: FacebookQuickReply.Image
+  fullName: FacebookQuickReply.Image
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.Payload
+  parent: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply
+  isExternal: false
+  name: Payload
+  nameWithType: FacebookQuickReply.Payload
+  fullName: FacebookQuickReply.Payload
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.Title
+  parent: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply
+  isExternal: false
+  name: Title
+  nameWithType: FacebookQuickReply.Title
+  fullName: FacebookQuickReply.Title
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.#ctor*
+  parent: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply
+  isExternal: false
+  name: FacebookQuickReply
+  nameWithType: FacebookQuickReply.FacebookQuickReply
+  fullName: FacebookQuickReply.FacebookQuickReply
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/FacebookQuickReply.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentType*
+  parent: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply
+  isExternal: false
+  name: ContentType
+  nameWithType: FacebookQuickReply.ContentType
+  fullName: FacebookQuickReply.ContentType
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/FacebookQuickReply.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.Image*
+  parent: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply
+  isExternal: false
+  name: Image
+  nameWithType: FacebookQuickReply.Image
+  fullName: FacebookQuickReply.Image
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/FacebookQuickReply.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.Payload*
+  parent: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply
+  isExternal: false
+  name: Payload
+  nameWithType: FacebookQuickReply.Payload
+  fullName: FacebookQuickReply.Payload
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/FacebookQuickReply.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.Title*
+  parent: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply
+  isExternal: false
+  name: Title
+  nameWithType: FacebookQuickReply.Title
+  fullName: FacebookQuickReply.Title
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/FacebookQuickReply.xml

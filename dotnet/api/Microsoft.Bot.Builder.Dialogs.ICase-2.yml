@@ -1,0 +1,162 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.ICase`2
+  commentId: T:Microsoft.Bot.Builder.Dialogs.ICase`2
+  id: ICase`2
+  children:
+  - Microsoft.Bot.Builder.Dialogs.ICase`2.Condition
+  - Microsoft.Bot.Builder.Dialogs.ICase`2.Selector
+  langs:
+  - csharp
+  name: ICase<T,R>
+  nameWithType: ICase<T,R>
+  fullName: Microsoft.Bot.Builder.Dialogs.ICase<T,R>
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: The interface for cases evaluated by switch.
+  syntax:
+    content: public interface ICase<in T,R>
+    typeParameters:
+    - id: T
+      description: The type of incoming value to case.
+    - id: R
+      description: The type of the object returned by selector.
+  derivedClasses:
+  - Microsoft.Bot.Builder.Dialogs.Case`2
+  implements: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ICase`2.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ICase`2.Condition
+  commentId: P:Microsoft.Bot.Builder.Dialogs.ICase`2.Condition
+  id: Condition
+  parent: Microsoft.Bot.Builder.Dialogs.ICase`2
+  langs:
+  - csharp
+  name: Condition
+  nameWithType: ICase<T,R>.Condition
+  fullName: ICase<T,R>.Condition
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: The condition field of the case.
+  syntax:
+    content: public Func<in T,bool> Condition { get; }
+    return:
+      type: System.Func{T,System.Boolean}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.ICase`2.Condition*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ICase`2.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ICase`2.Selector
+  commentId: P:Microsoft.Bot.Builder.Dialogs.ICase`2.Selector
+  id: Selector
+  parent: Microsoft.Bot.Builder.Dialogs.ICase`2
+  langs:
+  - csharp
+  name: Selector
+  nameWithType: ICase<T,R>.Selector
+  fullName: ICase<T,R>.Selector
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: The selector that will be invoked if condition is met.
+  syntax:
+    content: public Microsoft.Bot.Builder.Dialogs.ContextualSelector<in T,R> Selector { get; }
+    return:
+      type: Microsoft.Bot.Builder.Dialogs.ContextualSelector`2
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.ICase`2.Selector*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ICase`2.xml
+references:
+- uid: Microsoft.Bot.Builder.Dialogs.ICase`2.Condition
+  parent: Microsoft.Bot.Builder.Dialogs.ICase`2
+  isExternal: false
+  name: Condition
+  nameWithType: ICase<T,R>.Condition
+  fullName: ICase<T,R>.Condition
+- uid: System.Func`2
+  name: Func
+  nameWithType: Func
+  fullName: System.Func
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Func{T,System.Boolean}
+  parent: System
+  isExternal: true
+  name: Func<T,Boolean>
+  nameWithType: Func<T,Boolean>
+  fullName: System.Func<T,System.Boolean>
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T
+    name: T
+    nameWithType: T
+    fullName: T
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.ICase`2.Selector
+  parent: Microsoft.Bot.Builder.Dialogs.ICase`2
+  isExternal: false
+  name: Selector
+  nameWithType: ICase<T,R>.Selector
+  fullName: ICase<T,R>.Selector
+- uid: Microsoft.Bot.Builder.Dialogs.ContextualSelector`2
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: ContextualSelector<T,R>
+  nameWithType: ContextualSelector<T,R>
+  fullName: Microsoft.Bot.Builder.Dialogs.ContextualSelector<T,R>
+- uid: Microsoft.Bot.Builder.Dialogs.ICase`2.Condition*
+  parent: Microsoft.Bot.Builder.Dialogs.ICase`2
+  isExternal: false
+  name: Condition
+  nameWithType: ICase<T,R>.Condition
+  fullName: ICase<T,R>.Condition
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ICase`2.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ICase`2.Selector*
+  parent: Microsoft.Bot.Builder.Dialogs.ICase`2
+  isExternal: false
+  name: Selector
+  nameWithType: ICase<T,R>.Selector
+  fullName: ICase<T,R>.Selector
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ICase`2.xml

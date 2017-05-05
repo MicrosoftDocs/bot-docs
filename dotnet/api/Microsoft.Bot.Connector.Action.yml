@@ -1,0 +1,304 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.Action
+  commentId: T:Microsoft.Bot.Connector.Action
+  id: Action
+  children:
+  - Microsoft.Bot.Connector.Action.#ctor
+  - Microsoft.Bot.Connector.Action.#ctor(System.String,System.String,System.String,System.String)
+  - Microsoft.Bot.Connector.Action.Image
+  - Microsoft.Bot.Connector.Action.Message
+  - Microsoft.Bot.Connector.Action.Title
+  - Microsoft.Bot.Connector.Action.Url
+  langs:
+  - csharp
+  name: Action
+  nameWithType: Action
+  fullName: Microsoft.Bot.Connector.Action
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public class Action
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Action.xml
+- uid: Microsoft.Bot.Connector.Action.#ctor
+  commentId: M:Microsoft.Bot.Connector.Action.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Connector.Action
+  langs:
+  - csharp
+  name: Action()
+  nameWithType: Action.Action()
+  fullName: Action.Action()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public Action ();
+    parameters: []
+  overload: Microsoft.Bot.Connector.Action.#ctor*
+  exceptions: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Action.xml
+- uid: Microsoft.Bot.Connector.Action.#ctor(System.String,System.String,System.String,System.String)
+  commentId: M:Microsoft.Bot.Connector.Action.#ctor(System.String,System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.String,System.String)'
+  parent: Microsoft.Bot.Connector.Action
+  langs:
+  - csharp
+  name: Action(String, String, String, String)
+  nameWithType: Action.Action(String, String, String, String)
+  fullName: Action.Action(String, String, String, String)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public Action (string title = null, string image = null, string message = null, string url = null);
+    parameters:
+    - id: title
+      type: System.String
+      description: To be added.
+    - id: image
+      type: System.String
+      description: To be added.
+    - id: message
+      type: System.String
+      description: To be added.
+    - id: url
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Action.#ctor*
+  exceptions: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Action.xml
+- uid: Microsoft.Bot.Connector.Action.Image
+  commentId: P:Microsoft.Bot.Connector.Action.Image
+  id: Image
+  parent: Microsoft.Bot.Connector.Action
+  langs:
+  - csharp
+  name: Image
+  nameWithType: Action.Image
+  fullName: Action.Image
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="image")]
+
+      public string Image { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Action.Image*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Action.xml
+- uid: Microsoft.Bot.Connector.Action.Message
+  commentId: P:Microsoft.Bot.Connector.Action.Message
+  id: Message
+  parent: Microsoft.Bot.Connector.Action
+  langs:
+  - csharp
+  name: Message
+  nameWithType: Action.Message
+  fullName: Action.Message
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="message")]
+
+      public string Message { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Action.Message*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Action.xml
+- uid: Microsoft.Bot.Connector.Action.Title
+  commentId: P:Microsoft.Bot.Connector.Action.Title
+  id: Title
+  parent: Microsoft.Bot.Connector.Action
+  langs:
+  - csharp
+  name: Title
+  nameWithType: Action.Title
+  fullName: Action.Title
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="title")]
+
+      public string Title { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Action.Title*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Action.xml
+- uid: Microsoft.Bot.Connector.Action.Url
+  commentId: P:Microsoft.Bot.Connector.Action.Url
+  id: Url
+  parent: Microsoft.Bot.Connector.Action
+  langs:
+  - csharp
+  name: Url
+  nameWithType: Action.Url
+  fullName: Action.Url
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="url")]
+
+      public string Url { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Action.Url*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Action.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.Action.#ctor
+  parent: Microsoft.Bot.Connector.Action
+  isExternal: false
+  name: Action()
+  nameWithType: Action.Action()
+  fullName: Action.Action()
+- uid: Microsoft.Bot.Connector.Action.#ctor(System.String,System.String,System.String,System.String)
+  parent: Microsoft.Bot.Connector.Action
+  isExternal: false
+  name: Action(String, String, String, String)
+  nameWithType: Action.Action(String, String, String, String)
+  fullName: Action.Action(String, String, String, String)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.Action.Image
+  parent: Microsoft.Bot.Connector.Action
+  isExternal: false
+  name: Image
+  nameWithType: Action.Image
+  fullName: Action.Image
+- uid: Microsoft.Bot.Connector.Action.Message
+  parent: Microsoft.Bot.Connector.Action
+  isExternal: false
+  name: Message
+  nameWithType: Action.Message
+  fullName: Action.Message
+- uid: Microsoft.Bot.Connector.Action.Title
+  parent: Microsoft.Bot.Connector.Action
+  isExternal: false
+  name: Title
+  nameWithType: Action.Title
+  fullName: Action.Title
+- uid: Microsoft.Bot.Connector.Action.Url
+  parent: Microsoft.Bot.Connector.Action
+  isExternal: false
+  name: Url
+  nameWithType: Action.Url
+  fullName: Action.Url
+- uid: Microsoft.Bot.Connector.Action.#ctor*
+  parent: Microsoft.Bot.Connector.Action
+  isExternal: false
+  name: Action
+  nameWithType: Action.Action
+  fullName: Action.Action
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Action.xml
+- uid: Microsoft.Bot.Connector.Action.Image*
+  parent: Microsoft.Bot.Connector.Action
+  isExternal: false
+  name: Image
+  nameWithType: Action.Image
+  fullName: Action.Image
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Action.xml
+- uid: Microsoft.Bot.Connector.Action.Message*
+  parent: Microsoft.Bot.Connector.Action
+  isExternal: false
+  name: Message
+  nameWithType: Action.Message
+  fullName: Action.Message
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Action.xml
+- uid: Microsoft.Bot.Connector.Action.Title*
+  parent: Microsoft.Bot.Connector.Action
+  isExternal: false
+  name: Title
+  nameWithType: Action.Title
+  fullName: Action.Title
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Action.xml
+- uid: Microsoft.Bot.Connector.Action.Url*
+  parent: Microsoft.Bot.Connector.Action
+  isExternal: false
+  name: Url
+  nameWithType: Action.Url
+  fullName: Action.Url
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Action.xml

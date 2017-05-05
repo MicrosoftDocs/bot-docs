@@ -1,0 +1,174 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Scorables.Internals.EnumResolver
+  commentId: T:Microsoft.Bot.Builder.Scorables.Internals.EnumResolver
+  id: EnumResolver
+  children:
+  - Microsoft.Bot.Builder.Scorables.Internals.EnumResolver.#ctor(Microsoft.Bot.Builder.Scorables.Internals.IResolver)
+  - Microsoft.Bot.Builder.Scorables.Internals.EnumResolver.TryResolve(System.Type,System.Object,System.Object@)
+  langs:
+  - csharp
+  name: EnumResolver
+  nameWithType: EnumResolver
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.EnumResolver
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: 'public sealed class EnumResolver : Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver'
+  inheritance:
+  - System.Object
+  - Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver
+  implements: []
+  inheritedMembers:
+  - Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver.inner
+  extensionMethods:
+  - Microsoft.Bot.Builder.Scorables.Internals.Extensions.CanResolve(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Type,System.Object)
+  - Microsoft.Bot.Builder.Scorables.Internals.Extensions.Resolve(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Type,System.Object)
+  - Microsoft.Bot.Builder.Scorables.Internals.Extensions.TryResolve``1(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object,``0@)
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/EnumResolver.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.EnumResolver.#ctor(Microsoft.Bot.Builder.Scorables.Internals.IResolver)
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.EnumResolver.#ctor(Microsoft.Bot.Builder.Scorables.Internals.IResolver)
+  id: '#ctor(Microsoft.Bot.Builder.Scorables.Internals.IResolver)'
+  parent: Microsoft.Bot.Builder.Scorables.Internals.EnumResolver
+  langs:
+  - csharp
+  name: EnumResolver(IResolver)
+  nameWithType: EnumResolver.EnumResolver(IResolver)
+  fullName: EnumResolver.EnumResolver(IResolver)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public EnumResolver (Microsoft.Bot.Builder.Scorables.Internals.IResolver inner);
+    parameters:
+    - id: inner
+      type: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Internals.EnumResolver.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/EnumResolver.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.EnumResolver.TryResolve(System.Type,System.Object,System.Object@)
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.EnumResolver.TryResolve(System.Type,System.Object,System.Object@)
+  id: TryResolve(System.Type,System.Object,System.Object@)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.EnumResolver
+  langs:
+  - csharp
+  name: TryResolve(Type, Object, Object)
+  nameWithType: EnumResolver.TryResolve(Type, Object, Object)
+  fullName: EnumResolver.TryResolve(Type, Object, Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public override bool TryResolve (Type type, object tag, out object value);
+    parameters:
+    - id: type
+      type: System.Type
+      description: To be added.
+    - id: tag
+      type: System.Object
+      description: To be added.
+    - id: value
+      type: System.Object
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Internals.EnumResolver.TryResolve*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/EnumResolver.xml
+references:
+- uid: Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver
+  parent: Microsoft.Bot.Builder.Scorables.Internals
+  isExternal: false
+  name: DelegatingResolver
+  nameWithType: DelegatingResolver
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver
+- uid: Microsoft.Bot.Builder.Scorables.Internals.EnumResolver.#ctor(Microsoft.Bot.Builder.Scorables.Internals.IResolver)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.EnumResolver
+  isExternal: false
+  name: EnumResolver(IResolver)
+  nameWithType: EnumResolver.EnumResolver(IResolver)
+  fullName: EnumResolver.EnumResolver(IResolver)
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+  parent: Microsoft.Bot.Builder.Scorables.Internals
+  isExternal: false
+  name: IResolver
+  nameWithType: IResolver
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+- uid: Microsoft.Bot.Builder.Scorables.Internals.EnumResolver.TryResolve(System.Type,System.Object,System.Object@)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.EnumResolver
+  isExternal: false
+  name: TryResolve(Type, Object, Object)
+  nameWithType: EnumResolver.TryResolve(Type, Object, Object)
+  fullName: EnumResolver.TryResolve(Type, Object, Object)
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Scorables.Internals.EnumResolver.#ctor*
+  parent: Microsoft.Bot.Builder.Scorables.Internals.EnumResolver
+  isExternal: false
+  name: EnumResolver
+  nameWithType: EnumResolver.EnumResolver
+  fullName: EnumResolver.EnumResolver
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/EnumResolver.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.EnumResolver.TryResolve*
+  parent: Microsoft.Bot.Builder.Scorables.Internals.EnumResolver
+  isExternal: false
+  name: TryResolve
+  nameWithType: EnumResolver.TryResolve
+  fullName: EnumResolver.TryResolve
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/EnumResolver.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.Extensions.CanResolve(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Type,System.Object)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.Extensions
+  isExternal: false
+  name: CanResolve(IResolver, Type, Object)
+  nameWithType: Extensions.CanResolve(IResolver, Type, Object)
+  fullName: Extensions.CanResolve(IResolver, Type, Object)
+- uid: Microsoft.Bot.Builder.Scorables.Internals.Extensions.Resolve(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Type,System.Object)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.Extensions
+  isExternal: false
+  name: Resolve(IResolver, Type, Object)
+  nameWithType: Extensions.Resolve(IResolver, Type, Object)
+  fullName: Extensions.Resolve(IResolver, Type, Object)
+- uid: Microsoft.Bot.Builder.Scorables.Internals.Extensions.TryResolve``1(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object,``0@)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.Extensions
+  isExternal: false
+  name: TryResolve<T>(IResolver, Object, T)
+  nameWithType: Extensions.TryResolve<T>(IResolver, Object, T)
+  fullName: Extensions.TryResolve<T>(IResolver, Object, T)

@@ -1,0 +1,690 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  commentId: T:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  id: Extensions
+  children:
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateHeroCard(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateHeroCards(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateMessages(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt,Microsoft.Bot.Connector.IMessageActivity,Microsoft.Bot.Connector.IMessageActivity)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GetGenericElementType(System.Type)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsDouble(System.Type)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsGenericCollectionType(System.Type)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsGenericEnumerableType(System.Type)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsICollection(System.Type)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIEnumerable(System.Type)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIList(System.Type)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIntegral(System.Type)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsListCollectionType(System.Type)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsNullable(System.Type)
+  langs:
+  - csharp
+  name: Extensions
+  nameWithType: Extensions
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public static class Extensions
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateHeroCard(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateHeroCard(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt)
+  id: GenerateHeroCard(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  langs:
+  - csharp
+  name: GenerateHeroCard(FormPrompt)
+  nameWithType: Extensions.GenerateHeroCard(FormPrompt)
+  fullName: Extensions.GenerateHeroCard(FormPrompt)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Generate a hero card from a FormPrompt.
+  syntax:
+    content: public static System.Collections.Generic.IList<Microsoft.Bot.Connector.Attachment> GenerateHeroCard (this Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt prompt);
+    parameters:
+    - id: prompt
+      type: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+      description: Prompt definition.
+    return:
+      type: System.Collections.Generic.IList{Microsoft.Bot.Connector.Attachment}
+      description: Either an empty list if no buttons or a list with one hero card.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateHeroCard*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateHeroCards(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateHeroCards(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt)
+  id: GenerateHeroCards(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  langs:
+  - csharp
+  name: GenerateHeroCards(FormPrompt)
+  nameWithType: Extensions.GenerateHeroCards(FormPrompt)
+  fullName: Extensions.GenerateHeroCards(FormPrompt)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Generate a list of hero cards from a prompt definition.
+  syntax:
+    content: public static System.Collections.Generic.IList<Microsoft.Bot.Connector.Attachment> GenerateHeroCards (this Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt prompt);
+    parameters:
+    - id: prompt
+      type: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+      description: Prompt definition.
+    return:
+      type: System.Collections.Generic.IList{Microsoft.Bot.Connector.Attachment}
+      description: List of hero cards.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateHeroCards*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateMessages(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt,Microsoft.Bot.Connector.IMessageActivity,Microsoft.Bot.Connector.IMessageActivity)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateMessages(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt,Microsoft.Bot.Connector.IMessageActivity,Microsoft.Bot.Connector.IMessageActivity)
+  id: GenerateMessages(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt,Microsoft.Bot.Connector.IMessageActivity,Microsoft.Bot.Connector.IMessageActivity)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  langs:
+  - csharp
+  name: GenerateMessages(FormPrompt, IMessageActivity, IMessageActivity)
+  nameWithType: Extensions.GenerateMessages(FormPrompt, IMessageActivity, IMessageActivity)
+  fullName: Extensions.GenerateMessages(FormPrompt, IMessageActivity, IMessageActivity)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Given a prompt definition generate messages to send back.
+  syntax:
+    content: public static bool GenerateMessages (this Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt prompt, Microsoft.Bot.Connector.IMessageActivity preamble, Microsoft.Bot.Connector.IMessageActivity promptMessage);
+    parameters:
+    - id: prompt
+      type: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+      description: Prompt definition.
+    - id: preamble
+      type: Microsoft.Bot.Connector.IMessageActivity
+      description: Simple text message with all except last line of prompt to allow markdown in prompts.
+    - id: promptMessage
+      type: Microsoft.Bot.Connector.IMessageActivity
+      description: Message with prompt definition including cards.
+    return:
+      type: System.Boolean
+      description: True if preamble should be sent.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateMessages*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GetGenericElementType(System.Type)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GetGenericElementType(System.Type)
+  id: GetGenericElementType(System.Type)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  langs:
+  - csharp
+  name: GetGenericElementType(Type)
+  nameWithType: Extensions.GetGenericElementType(Type)
+  fullName: Extensions.GetGenericElementType(Type)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Return the underlying type of generic IEnumerable.
+  syntax:
+    content: public static Type GetGenericElementType (this Type type);
+    parameters:
+    - id: type
+      type: System.Type
+      description: Type to check.
+    return:
+      type: System.Type
+      description: True if implements generic IEnumerable.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GetGenericElementType*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsDouble(System.Type)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsDouble(System.Type)
+  id: IsDouble(System.Type)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  langs:
+  - csharp
+  name: IsDouble(Type)
+  nameWithType: Extensions.IsDouble(Type)
+  fullName: Extensions.IsDouble(Type)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Type is float or double.
+  syntax:
+    content: public static bool IsDouble (this Type type);
+    parameters:
+    - id: type
+      type: System.Type
+      description: Type to check.
+    return:
+      type: System.Boolean
+      description: True if float or double.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsDouble*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsGenericCollectionType(System.Type)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsGenericCollectionType(System.Type)
+  id: IsGenericCollectionType(System.Type)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  langs:
+  - csharp
+  name: IsGenericCollectionType(Type)
+  nameWithType: Extensions.IsGenericCollectionType(Type)
+  fullName: Extensions.IsGenericCollectionType(Type)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Type implements generic ICollection.
+  syntax:
+    content: public static bool IsGenericCollectionType (this Type type);
+    parameters:
+    - id: type
+      type: System.Type
+      description: Type to check.
+    return:
+      type: System.Boolean
+      description: True if implements generic ICollection.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsGenericCollectionType*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsGenericEnumerableType(System.Type)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsGenericEnumerableType(System.Type)
+  id: IsGenericEnumerableType(System.Type)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  langs:
+  - csharp
+  name: IsGenericEnumerableType(Type)
+  nameWithType: Extensions.IsGenericEnumerableType(Type)
+  fullName: Extensions.IsGenericEnumerableType(Type)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Type implements generic IEnumerable.
+  syntax:
+    content: public static bool IsGenericEnumerableType (this Type type);
+    parameters:
+    - id: type
+      type: System.Type
+      description: Type to check.
+    return:
+      type: System.Boolean
+      description: True if implements generic IEnumerable.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsGenericEnumerableType*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsICollection(System.Type)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsICollection(System.Type)
+  id: IsICollection(System.Type)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  langs:
+  - csharp
+  name: IsICollection(Type)
+  nameWithType: Extensions.IsICollection(Type)
+  fullName: Extensions.IsICollection(Type)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Type implements ICollection.
+  syntax:
+    content: public static bool IsICollection (this Type type);
+    parameters:
+    - id: type
+      type: System.Type
+      description: Type to check.
+    return:
+      type: System.Boolean
+      description: True if implements ICollection.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsICollection*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIEnumerable(System.Type)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIEnumerable(System.Type)
+  id: IsIEnumerable(System.Type)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  langs:
+  - csharp
+  name: IsIEnumerable(Type)
+  nameWithType: Extensions.IsIEnumerable(Type)
+  fullName: Extensions.IsIEnumerable(Type)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Type implements IEnumerable.
+  syntax:
+    content: public static bool IsIEnumerable (this Type type);
+    parameters:
+    - id: type
+      type: System.Type
+      description: Type to check.
+    return:
+      type: System.Boolean
+      description: True if implements IEnumerable.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIEnumerable*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIList(System.Type)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIList(System.Type)
+  id: IsIList(System.Type)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  langs:
+  - csharp
+  name: IsIList(Type)
+  nameWithType: Extensions.IsIList(Type)
+  fullName: Extensions.IsIList(Type)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Type implements IList.
+  syntax:
+    content: public static bool IsIList (this Type type);
+    parameters:
+    - id: type
+      type: System.Type
+      description: Type to check.
+    return:
+      type: System.Boolean
+      description: True if implements IList.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIList*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIntegral(System.Type)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIntegral(System.Type)
+  id: IsIntegral(System.Type)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  langs:
+  - csharp
+  name: IsIntegral(Type)
+  nameWithType: Extensions.IsIntegral(Type)
+  fullName: Extensions.IsIntegral(Type)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Type is integral.
+  syntax:
+    content: public static bool IsIntegral (this Type type);
+    parameters:
+    - id: type
+      type: System.Type
+      description: Type to check.
+    return:
+      type: System.Boolean
+      description: True if integral.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIntegral*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsListCollectionType(System.Type)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsListCollectionType(System.Type)
+  id: IsListCollectionType(System.Type)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  langs:
+  - csharp
+  name: IsListCollectionType(Type)
+  nameWithType: Extensions.IsListCollectionType(Type)
+  fullName: Extensions.IsListCollectionType(Type)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Type implements generic IList.
+  syntax:
+    content: public static bool IsListCollectionType (this Type type);
+    parameters:
+    - id: type
+      type: System.Type
+      description: Type to check.
+    return:
+      type: System.Boolean
+      description: True if implements generic IList.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsListCollectionType*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsNullable(System.Type)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsNullable(System.Type)
+  id: IsNullable(System.Type)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  langs:
+  - csharp
+  name: IsNullable(Type)
+  nameWithType: Extensions.IsNullable(Type)
+  fullName: Extensions.IsNullable(Type)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Type is nullable.
+  syntax:
+    content: public static bool IsNullable (this Type type);
+    parameters:
+    - id: type
+      type: System.Type
+      description: Type to check.
+    return:
+      type: System.Boolean
+      description: True if nullable.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsNullable*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateHeroCard(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: GenerateHeroCard(FormPrompt)
+  nameWithType: Extensions.GenerateHeroCard(FormPrompt)
+  fullName: Extensions.GenerateHeroCard(FormPrompt)
+- uid: System.Collections.Generic.IList`1
+  name: IList
+  nameWithType: IList
+  fullName: System.Collections.Generic.IList
+- uid: Microsoft.Bot.Connector.Attachment
+  name: Attachment
+  nameWithType: Attachment
+  fullName: Microsoft.Bot.Connector.Attachment
+- uid: System.Collections.Generic.IList{Microsoft.Bot.Connector.Attachment}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IList<Attachment>
+  nameWithType: IList<Attachment>
+  fullName: System.Collections.Generic.IList<Microsoft.Bot.Connector.Attachment>
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.Attachment
+    name: Attachment
+    nameWithType: Attachment
+    fullName: Microsoft.Bot.Connector.Attachment
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced
+  isExternal: false
+  name: FormPrompt
+  nameWithType: FormPrompt
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateHeroCards(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: GenerateHeroCards(FormPrompt)
+  nameWithType: Extensions.GenerateHeroCards(FormPrompt)
+  fullName: Extensions.GenerateHeroCards(FormPrompt)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateMessages(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt,Microsoft.Bot.Connector.IMessageActivity,Microsoft.Bot.Connector.IMessageActivity)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: GenerateMessages(FormPrompt, IMessageActivity, IMessageActivity)
+  nameWithType: Extensions.GenerateMessages(FormPrompt, IMessageActivity, IMessageActivity)
+  fullName: Extensions.GenerateMessages(FormPrompt, IMessageActivity, IMessageActivity)
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Bot.Connector.IMessageActivity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IMessageActivity
+  nameWithType: IMessageActivity
+  fullName: Microsoft.Bot.Connector.IMessageActivity
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GetGenericElementType(System.Type)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: GetGenericElementType(Type)
+  nameWithType: Extensions.GetGenericElementType(Type)
+  fullName: Extensions.GetGenericElementType(Type)
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsDouble(System.Type)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: IsDouble(Type)
+  nameWithType: Extensions.IsDouble(Type)
+  fullName: Extensions.IsDouble(Type)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsGenericCollectionType(System.Type)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: IsGenericCollectionType(Type)
+  nameWithType: Extensions.IsGenericCollectionType(Type)
+  fullName: Extensions.IsGenericCollectionType(Type)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsGenericEnumerableType(System.Type)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: IsGenericEnumerableType(Type)
+  nameWithType: Extensions.IsGenericEnumerableType(Type)
+  fullName: Extensions.IsGenericEnumerableType(Type)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsICollection(System.Type)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: IsICollection(Type)
+  nameWithType: Extensions.IsICollection(Type)
+  fullName: Extensions.IsICollection(Type)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIEnumerable(System.Type)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: IsIEnumerable(Type)
+  nameWithType: Extensions.IsIEnumerable(Type)
+  fullName: Extensions.IsIEnumerable(Type)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIList(System.Type)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: IsIList(Type)
+  nameWithType: Extensions.IsIList(Type)
+  fullName: Extensions.IsIList(Type)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIntegral(System.Type)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: IsIntegral(Type)
+  nameWithType: Extensions.IsIntegral(Type)
+  fullName: Extensions.IsIntegral(Type)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsListCollectionType(System.Type)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: IsListCollectionType(Type)
+  nameWithType: Extensions.IsListCollectionType(Type)
+  fullName: Extensions.IsListCollectionType(Type)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsNullable(System.Type)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: IsNullable(Type)
+  nameWithType: Extensions.IsNullable(Type)
+  fullName: Extensions.IsNullable(Type)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateHeroCard*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: GenerateHeroCard
+  nameWithType: Extensions.GenerateHeroCard
+  fullName: Extensions.GenerateHeroCard
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateHeroCards*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: GenerateHeroCards
+  nameWithType: Extensions.GenerateHeroCards
+  fullName: Extensions.GenerateHeroCards
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateMessages*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: GenerateMessages
+  nameWithType: Extensions.GenerateMessages
+  fullName: Extensions.GenerateMessages
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GetGenericElementType*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: GetGenericElementType
+  nameWithType: Extensions.GetGenericElementType
+  fullName: Extensions.GetGenericElementType
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsDouble*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: IsDouble
+  nameWithType: Extensions.IsDouble
+  fullName: Extensions.IsDouble
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsGenericCollectionType*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: IsGenericCollectionType
+  nameWithType: Extensions.IsGenericCollectionType
+  fullName: Extensions.IsGenericCollectionType
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsGenericEnumerableType*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: IsGenericEnumerableType
+  nameWithType: Extensions.IsGenericEnumerableType
+  fullName: Extensions.IsGenericEnumerableType
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsICollection*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: IsICollection
+  nameWithType: Extensions.IsICollection
+  fullName: Extensions.IsICollection
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIEnumerable*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: IsIEnumerable
+  nameWithType: Extensions.IsIEnumerable
+  fullName: Extensions.IsIEnumerable
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIList*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: IsIList
+  nameWithType: Extensions.IsIList
+  fullName: Extensions.IsIList
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIntegral*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: IsIntegral
+  nameWithType: Extensions.IsIntegral
+  fullName: Extensions.IsIntegral
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsListCollectionType*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: IsListCollectionType
+  nameWithType: Extensions.IsListCollectionType
+  fullName: Extensions.IsListCollectionType
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsNullable*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: IsNullable
+  nameWithType: Extensions.IsNullable
+  fullName: Extensions.IsNullable
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Extensions.xml

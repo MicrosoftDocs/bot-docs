@@ -1,0 +1,265 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+  commentId: T:Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+  id: IBotData
+  children:
+  - Microsoft.Bot.Builder.Dialogs.Internals.IBotData.ConversationData
+  - Microsoft.Bot.Builder.Dialogs.Internals.IBotData.FlushAsync(System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Dialogs.Internals.IBotData.LoadAsync(System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Dialogs.Internals.IBotData.PrivateConversationData
+  - Microsoft.Bot.Builder.Dialogs.Internals.IBotData.UserData
+  langs:
+  - csharp
+  name: IBotData
+  nameWithType: IBotData
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: Private bot data.
+  syntax:
+    content: public interface IBotData
+  derivedClasses:
+  - Microsoft.Bot.Builder.Dialogs.IBotContext
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  - Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader
+  implements: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IBotData.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotData.ConversationData
+  commentId: P:Microsoft.Bot.Builder.Dialogs.Internals.IBotData.ConversationData
+  id: ConversationData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+  langs:
+  - csharp
+  name: ConversationData
+  nameWithType: IBotData.ConversationData
+  fullName: IBotData.ConversationData
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: Private bot data associated with a conversation.
+  syntax:
+    content: public Microsoft.Bot.Builder.Dialogs.IBotDataBag ConversationData { get; }
+    return:
+      type: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.IBotData.ConversationData*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IBotData.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotData.FlushAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.IBotData.FlushAsync(System.Threading.CancellationToken)
+  id: FlushAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+  langs:
+  - csharp
+  name: FlushAsync(CancellationToken)
+  nameWithType: IBotData.FlushAsync(CancellationToken)
+  fullName: IBotData.FlushAsync(CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: Flushes the bot data to <xref href="Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1"></xref>
+  syntax:
+    content: public System.Threading.Tasks.Task FlushAsync (System.Threading.CancellationToken cancellationToken);
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.IBotData.FlushAsync*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IBotData.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotData.LoadAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.IBotData.LoadAsync(System.Threading.CancellationToken)
+  id: LoadAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+  langs:
+  - csharp
+  name: LoadAsync(CancellationToken)
+  nameWithType: IBotData.LoadAsync(CancellationToken)
+  fullName: IBotData.LoadAsync(CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: Loads the bot data from <xref href="Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1"></xref>
+  syntax:
+    content: public System.Threading.Tasks.Task LoadAsync (System.Threading.CancellationToken cancellationToken);
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.IBotData.LoadAsync*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IBotData.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotData.PrivateConversationData
+  commentId: P:Microsoft.Bot.Builder.Dialogs.Internals.IBotData.PrivateConversationData
+  id: PrivateConversationData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+  langs:
+  - csharp
+  name: PrivateConversationData
+  nameWithType: IBotData.PrivateConversationData
+  fullName: IBotData.PrivateConversationData
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: Private bot data associated with a user in a conversation.
+  syntax:
+    content: public Microsoft.Bot.Builder.Dialogs.IBotDataBag PrivateConversationData { get; }
+    return:
+      type: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.IBotData.PrivateConversationData*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IBotData.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotData.UserData
+  commentId: P:Microsoft.Bot.Builder.Dialogs.Internals.IBotData.UserData
+  id: UserData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+  langs:
+  - csharp
+  name: UserData
+  nameWithType: IBotData.UserData
+  fullName: IBotData.UserData
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: Private bot data associated with a user (across all channels and conversations).
+  syntax:
+    content: public Microsoft.Bot.Builder.Dialogs.IBotDataBag UserData { get; }
+    return:
+      type: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.IBotData.UserData*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IBotData.xml
+references:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotData.ConversationData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+  isExternal: false
+  name: ConversationData
+  nameWithType: IBotData.ConversationData
+  fullName: IBotData.ConversationData
+- uid: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: IBotDataBag
+  nameWithType: IBotDataBag
+  fullName: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotData.FlushAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+  isExternal: false
+  name: FlushAsync(CancellationToken)
+  nameWithType: IBotData.FlushAsync(CancellationToken)
+  fullName: IBotData.FlushAsync(CancellationToken)
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotData.LoadAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+  isExternal: false
+  name: LoadAsync(CancellationToken)
+  nameWithType: IBotData.LoadAsync(CancellationToken)
+  fullName: IBotData.LoadAsync(CancellationToken)
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotData.PrivateConversationData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+  isExternal: false
+  name: PrivateConversationData
+  nameWithType: IBotData.PrivateConversationData
+  fullName: IBotData.PrivateConversationData
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotData.UserData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+  isExternal: false
+  name: UserData
+  nameWithType: IBotData.UserData
+  fullName: IBotData.UserData
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotData.ConversationData*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+  isExternal: false
+  name: ConversationData
+  nameWithType: IBotData.ConversationData
+  fullName: IBotData.ConversationData
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IBotData.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotData.FlushAsync*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+  isExternal: false
+  name: FlushAsync
+  nameWithType: IBotData.FlushAsync
+  fullName: IBotData.FlushAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IBotData.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotData.LoadAsync*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+  isExternal: false
+  name: LoadAsync
+  nameWithType: IBotData.LoadAsync
+  fullName: IBotData.LoadAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IBotData.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotData.PrivateConversationData*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+  isExternal: false
+  name: PrivateConversationData
+  nameWithType: IBotData.PrivateConversationData
+  fullName: IBotData.PrivateConversationData
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IBotData.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotData.UserData*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+  isExternal: false
+  name: UserData
+  nameWithType: IBotData.UserData
+  fullName: IBotData.UserData
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IBotData.xml

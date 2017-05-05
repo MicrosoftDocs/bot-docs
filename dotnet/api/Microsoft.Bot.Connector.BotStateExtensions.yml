@@ -1,0 +1,933 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.BotStateExtensions
+  commentId: T:Microsoft.Bot.Connector.BotStateExtensions
+  id: BotStateExtensions
+  children:
+  - Microsoft.Bot.Connector.BotStateExtensions.DeleteStateForUser(Microsoft.Bot.Connector.IBotState,System.String,System.String)
+  - Microsoft.Bot.Connector.BotStateExtensions.DeleteStateForUserAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.BotStateExtensions.GetConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String)
+  - Microsoft.Bot.Connector.BotStateExtensions.GetConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.BotStateExtensions.GetPrivateConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String)
+  - Microsoft.Bot.Connector.BotStateExtensions.GetPrivateConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.BotStateExtensions.GetUserData(Microsoft.Bot.Connector.IBotState,System.String,System.String)
+  - Microsoft.Bot.Connector.BotStateExtensions.GetUserDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.BotStateExtensions.SetConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData)
+  - Microsoft.Bot.Connector.BotStateExtensions.SetConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.BotStateExtensions.SetPrivateConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String,Microsoft.Bot.Connector.BotData)
+  - Microsoft.Bot.Connector.BotStateExtensions.SetPrivateConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.BotStateExtensions.SetUserData(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData)
+  - Microsoft.Bot.Connector.BotStateExtensions.SetUserDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  name: BotStateExtensions
+  nameWithType: BotStateExtensions
+  fullName: Microsoft.Bot.Connector.BotStateExtensions
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: Extension methods for BotState.
+  syntax:
+    content: public static class BotStateExtensions
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.DeleteStateForUser(Microsoft.Bot.Connector.IBotState,System.String,System.String)
+  commentId: M:Microsoft.Bot.Connector.BotStateExtensions.DeleteStateForUser(Microsoft.Bot.Connector.IBotState,System.String,System.String)
+  id: DeleteStateForUser(Microsoft.Bot.Connector.IBotState,System.String,System.String)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  langs:
+  - csharp
+  name: DeleteStateForUser(IBotState, String, String)
+  nameWithType: BotStateExtensions.DeleteStateForUser(IBotState, String, String)
+  fullName: BotStateExtensions.DeleteStateForUser(IBotState, String, String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: DeleteStateForUser
+  syntax:
+    content: public static string[] DeleteStateForUser (this Microsoft.Bot.Connector.IBotState operations, string channelId, string userId);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IBotState
+      description: The operations group for this extension method.
+    - id: channelId
+      type: System.String
+      description: channelId
+    - id: userId
+      type: System.String
+      description: id for the user on the channel
+    return:
+      type: System.String[]
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotStateExtensions.DeleteStateForUser*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.DeleteStateForUserAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.BotStateExtensions.DeleteStateForUserAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.Threading.CancellationToken)
+  id: DeleteStateForUserAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  langs:
+  - csharp
+  name: DeleteStateForUserAsync(IBotState, String, String, CancellationToken)
+  nameWithType: BotStateExtensions.DeleteStateForUserAsync(IBotState, String, String, CancellationToken)
+  fullName: BotStateExtensions.DeleteStateForUserAsync(IBotState, String, String, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: DeleteStateForUser
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BotStateExtensions/<DeleteStateForUserAsync>d__5))]
+
+      public static System.Threading.Tasks.Task<string[]> DeleteStateForUserAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string userId, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IBotState
+      description: The operations group for this extension method.
+    - id: channelId
+      type: System.String
+      description: channelId
+    - id: userId
+      type: System.String
+      description: id for the user on the channel
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.String[]}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotStateExtensions.DeleteStateForUserAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.GetConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String)
+  commentId: M:Microsoft.Bot.Connector.BotStateExtensions.GetConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String)
+  id: GetConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  langs:
+  - csharp
+  name: GetConversationData(IBotState, String, String)
+  nameWithType: BotStateExtensions.GetConversationData(IBotState, String, String)
+  fullName: BotStateExtensions.GetConversationData(IBotState, String, String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: GetConversationData
+  syntax:
+    content: public static Microsoft.Bot.Connector.BotData GetConversationData (this Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IBotState
+      description: The operations group for this extension method.
+    - id: channelId
+      type: System.String
+      description: the channelId
+    - id: conversationId
+      type: System.String
+      description: The id for the conversation on the channel
+    return:
+      type: Microsoft.Bot.Connector.BotData
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotStateExtensions.GetConversationData*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.GetConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.BotStateExtensions.GetConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.Threading.CancellationToken)
+  id: GetConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  langs:
+  - csharp
+  name: GetConversationDataAsync(IBotState, String, String, CancellationToken)
+  nameWithType: BotStateExtensions.GetConversationDataAsync(IBotState, String, String, CancellationToken)
+  fullName: BotStateExtensions.GetConversationDataAsync(IBotState, String, String, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: GetConversationData
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BotStateExtensions/<GetConversationDataAsync>d__7))]
+
+      public static System.Threading.Tasks.Task<Microsoft.Bot.Connector.BotData> GetConversationDataAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IBotState
+      description: The operations group for this extension method.
+    - id: channelId
+      type: System.String
+      description: the channelId
+    - id: conversationId
+      type: System.String
+      description: The id for the conversation on the channel
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Connector.BotData}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotStateExtensions.GetConversationDataAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.GetPrivateConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String)
+  commentId: M:Microsoft.Bot.Connector.BotStateExtensions.GetPrivateConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String)
+  id: GetPrivateConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  langs:
+  - csharp
+  name: GetPrivateConversationData(IBotState, String, String, String)
+  nameWithType: BotStateExtensions.GetPrivateConversationData(IBotState, String, String, String)
+  fullName: BotStateExtensions.GetPrivateConversationData(IBotState, String, String, String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: GetPrivateConversationData
+  syntax:
+    content: public static Microsoft.Bot.Connector.BotData GetPrivateConversationData (this Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, string userId);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IBotState
+      description: The operations group for this extension method.
+    - id: channelId
+      type: System.String
+      description: channelId
+    - id: conversationId
+      type: System.String
+      description: The id for the conversation on the channel
+    - id: userId
+      type: System.String
+      description: id for the user on the channel
+    return:
+      type: Microsoft.Bot.Connector.BotData
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotStateExtensions.GetPrivateConversationData*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.GetPrivateConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.BotStateExtensions.GetPrivateConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: GetPrivateConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  langs:
+  - csharp
+  name: GetPrivateConversationDataAsync(IBotState, String, String, String, CancellationToken)
+  nameWithType: BotStateExtensions.GetPrivateConversationDataAsync(IBotState, String, String, String, CancellationToken)
+  fullName: BotStateExtensions.GetPrivateConversationDataAsync(IBotState, String, String, String, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: GetPrivateConversationData
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BotStateExtensions/<GetPrivateConversationDataAsync>d__11))]
+
+      public static System.Threading.Tasks.Task<Microsoft.Bot.Connector.BotData> GetPrivateConversationDataAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, string userId, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IBotState
+      description: The operations group for this extension method.
+    - id: channelId
+      type: System.String
+      description: channelId
+    - id: conversationId
+      type: System.String
+      description: The id for the conversation on the channel
+    - id: userId
+      type: System.String
+      description: id for the user on the channel
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Connector.BotData}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotStateExtensions.GetPrivateConversationDataAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.GetUserData(Microsoft.Bot.Connector.IBotState,System.String,System.String)
+  commentId: M:Microsoft.Bot.Connector.BotStateExtensions.GetUserData(Microsoft.Bot.Connector.IBotState,System.String,System.String)
+  id: GetUserData(Microsoft.Bot.Connector.IBotState,System.String,System.String)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  langs:
+  - csharp
+  name: GetUserData(IBotState, String, String)
+  nameWithType: BotStateExtensions.GetUserData(IBotState, String, String)
+  fullName: BotStateExtensions.GetUserData(IBotState, String, String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: GetUserData
+  syntax:
+    content: public static Microsoft.Bot.Connector.BotData GetUserData (this Microsoft.Bot.Connector.IBotState operations, string channelId, string userId);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IBotState
+      description: The operations group for this extension method.
+    - id: channelId
+      type: System.String
+      description: channelId
+    - id: userId
+      type: System.String
+      description: id for the user on the channel
+    return:
+      type: Microsoft.Bot.Connector.BotData
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotStateExtensions.GetUserData*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.GetUserDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.BotStateExtensions.GetUserDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.Threading.CancellationToken)
+  id: GetUserDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  langs:
+  - csharp
+  name: GetUserDataAsync(IBotState, String, String, CancellationToken)
+  nameWithType: BotStateExtensions.GetUserDataAsync(IBotState, String, String, CancellationToken)
+  fullName: BotStateExtensions.GetUserDataAsync(IBotState, String, String, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: GetUserData
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BotStateExtensions/<GetUserDataAsync>d__1))]
+
+      public static System.Threading.Tasks.Task<Microsoft.Bot.Connector.BotData> GetUserDataAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string userId, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IBotState
+      description: The operations group for this extension method.
+    - id: channelId
+      type: System.String
+      description: channelId
+    - id: userId
+      type: System.String
+      description: id for the user on the channel
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Connector.BotData}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotStateExtensions.GetUserDataAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.SetConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData)
+  commentId: M:Microsoft.Bot.Connector.BotStateExtensions.SetConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData)
+  id: SetConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  langs:
+  - csharp
+  name: SetConversationData(IBotState, String, String, BotData)
+  nameWithType: BotStateExtensions.SetConversationData(IBotState, String, String, BotData)
+  fullName: BotStateExtensions.SetConversationData(IBotState, String, String, BotData)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: SetConversationData
+  syntax:
+    content: public static Microsoft.Bot.Connector.BotData SetConversationData (this Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, Microsoft.Bot.Connector.BotData botData);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IBotState
+      description: The operations group for this extension method.
+    - id: channelId
+      type: System.String
+      description: channelId
+    - id: conversationId
+      type: System.String
+      description: The id for the conversation on the channel
+    - id: botData
+      type: Microsoft.Bot.Connector.BotData
+      description: the new botdata
+    return:
+      type: Microsoft.Bot.Connector.BotData
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotStateExtensions.SetConversationData*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.SetConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.BotStateExtensions.SetConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)
+  id: SetConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  langs:
+  - csharp
+  name: SetConversationDataAsync(IBotState, String, String, BotData, CancellationToken)
+  nameWithType: BotStateExtensions.SetConversationDataAsync(IBotState, String, String, BotData, CancellationToken)
+  fullName: BotStateExtensions.SetConversationDataAsync(IBotState, String, String, BotData, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: SetConversationData
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BotStateExtensions/<SetConversationDataAsync>d__9))]
+
+      public static System.Threading.Tasks.Task<Microsoft.Bot.Connector.BotData> SetConversationDataAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, Microsoft.Bot.Connector.BotData botData, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IBotState
+      description: The operations group for this extension method.
+    - id: channelId
+      type: System.String
+      description: channelId
+    - id: conversationId
+      type: System.String
+      description: The id for the conversation on the channel
+    - id: botData
+      type: Microsoft.Bot.Connector.BotData
+      description: the new botdata
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Connector.BotData}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotStateExtensions.SetConversationDataAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.SetPrivateConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String,Microsoft.Bot.Connector.BotData)
+  commentId: M:Microsoft.Bot.Connector.BotStateExtensions.SetPrivateConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String,Microsoft.Bot.Connector.BotData)
+  id: SetPrivateConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String,Microsoft.Bot.Connector.BotData)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  langs:
+  - csharp
+  name: SetPrivateConversationData(IBotState, String, String, String, BotData)
+  nameWithType: BotStateExtensions.SetPrivateConversationData(IBotState, String, String, String, BotData)
+  fullName: BotStateExtensions.SetPrivateConversationData(IBotState, String, String, String, BotData)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: SetPrivateConversationData
+  syntax:
+    content: public static Microsoft.Bot.Connector.BotData SetPrivateConversationData (this Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, string userId, Microsoft.Bot.Connector.BotData botData);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IBotState
+      description: The operations group for this extension method.
+    - id: channelId
+      type: System.String
+      description: channelId
+    - id: conversationId
+      type: System.String
+      description: The id for the conversation on the channel
+    - id: userId
+      type: System.String
+      description: id for the user on the channel
+    - id: botData
+      type: Microsoft.Bot.Connector.BotData
+      description: the new botdata
+    return:
+      type: Microsoft.Bot.Connector.BotData
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotStateExtensions.SetPrivateConversationData*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.SetPrivateConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.BotStateExtensions.SetPrivateConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)
+  id: SetPrivateConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  langs:
+  - csharp
+  name: SetPrivateConversationDataAsync(IBotState, String, String, String, BotData, CancellationToken)
+  nameWithType: BotStateExtensions.SetPrivateConversationDataAsync(IBotState, String, String, String, BotData, CancellationToken)
+  fullName: BotStateExtensions.SetPrivateConversationDataAsync(IBotState, String, String, String, BotData, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: SetPrivateConversationData
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BotStateExtensions/<SetPrivateConversationDataAsync>d__13))]
+
+      public static System.Threading.Tasks.Task<Microsoft.Bot.Connector.BotData> SetPrivateConversationDataAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, string userId, Microsoft.Bot.Connector.BotData botData, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IBotState
+      description: The operations group for this extension method.
+    - id: channelId
+      type: System.String
+      description: channelId
+    - id: conversationId
+      type: System.String
+      description: The id for the conversation on the channel
+    - id: userId
+      type: System.String
+      description: id for the user on the channel
+    - id: botData
+      type: Microsoft.Bot.Connector.BotData
+      description: the new botdata
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Connector.BotData}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotStateExtensions.SetPrivateConversationDataAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.SetUserData(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData)
+  commentId: M:Microsoft.Bot.Connector.BotStateExtensions.SetUserData(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData)
+  id: SetUserData(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  langs:
+  - csharp
+  name: SetUserData(IBotState, String, String, BotData)
+  nameWithType: BotStateExtensions.SetUserData(IBotState, String, String, BotData)
+  fullName: BotStateExtensions.SetUserData(IBotState, String, String, BotData)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: SetUserData
+  syntax:
+    content: public static Microsoft.Bot.Connector.BotData SetUserData (this Microsoft.Bot.Connector.IBotState operations, string channelId, string userId, Microsoft.Bot.Connector.BotData botData);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IBotState
+      description: The operations group for this extension method.
+    - id: channelId
+      type: System.String
+      description: channelId
+    - id: userId
+      type: System.String
+      description: id for the user on the channel
+    - id: botData
+      type: Microsoft.Bot.Connector.BotData
+      description: the new botdata
+    return:
+      type: Microsoft.Bot.Connector.BotData
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotStateExtensions.SetUserData*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.SetUserDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.BotStateExtensions.SetUserDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)
+  id: SetUserDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  langs:
+  - csharp
+  name: SetUserDataAsync(IBotState, String, String, BotData, CancellationToken)
+  nameWithType: BotStateExtensions.SetUserDataAsync(IBotState, String, String, BotData, CancellationToken)
+  fullName: BotStateExtensions.SetUserDataAsync(IBotState, String, String, BotData, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: SetUserData
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BotStateExtensions/<SetUserDataAsync>d__3))]
+
+      public static System.Threading.Tasks.Task<Microsoft.Bot.Connector.BotData> SetUserDataAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string userId, Microsoft.Bot.Connector.BotData botData, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IBotState
+      description: The operations group for this extension method.
+    - id: channelId
+      type: System.String
+      description: channelId
+    - id: userId
+      type: System.String
+      description: id for the user on the channel
+    - id: botData
+      type: Microsoft.Bot.Connector.BotData
+      description: the new botdata
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Connector.BotData}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotStateExtensions.SetUserDataAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.BotStateExtensions.DeleteStateForUser(Microsoft.Bot.Connector.IBotState,System.String,System.String)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: DeleteStateForUser(IBotState, String, String)
+  nameWithType: BotStateExtensions.DeleteStateForUser(IBotState, String, String)
+  fullName: BotStateExtensions.DeleteStateForUser(IBotState, String, String)
+- uid: System.String
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.String[]
+  parent: System
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: Microsoft.Bot.Connector.IBotState
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IBotState
+  nameWithType: IBotState
+  fullName: Microsoft.Bot.Connector.IBotState
+- uid: Microsoft.Bot.Connector.BotStateExtensions.DeleteStateForUserAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: DeleteStateForUserAsync(IBotState, String, String, CancellationToken)
+  nameWithType: BotStateExtensions.DeleteStateForUserAsync(IBotState, String, String, CancellationToken)
+  fullName: BotStateExtensions.DeleteStateForUserAsync(IBotState, String, String, CancellationToken)
+- uid: System.Threading.Tasks.Task`1
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks.Task{System.String[]}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<String[]>
+  nameWithType: Task<String[]>
+  fullName: System.Threading.Tasks.Task<System.String[]>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Connector.BotStateExtensions.GetConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: GetConversationData(IBotState, String, String)
+  nameWithType: BotStateExtensions.GetConversationData(IBotState, String, String)
+  fullName: BotStateExtensions.GetConversationData(IBotState, String, String)
+- uid: Microsoft.Bot.Connector.BotData
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: BotData
+  nameWithType: BotData
+  fullName: Microsoft.Bot.Connector.BotData
+- uid: Microsoft.Bot.Connector.BotStateExtensions.GetConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: GetConversationDataAsync(IBotState, String, String, CancellationToken)
+  nameWithType: BotStateExtensions.GetConversationDataAsync(IBotState, String, String, CancellationToken)
+  fullName: BotStateExtensions.GetConversationDataAsync(IBotState, String, String, CancellationToken)
+- uid: System.Threading.Tasks.Task{Microsoft.Bot.Connector.BotData}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<BotData>
+  nameWithType: Task<BotData>
+  fullName: System.Threading.Tasks.Task<Microsoft.Bot.Connector.BotData>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.BotData
+    name: BotData
+    nameWithType: BotData
+    fullName: Microsoft.Bot.Connector.BotData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Connector.BotStateExtensions.GetPrivateConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: GetPrivateConversationData(IBotState, String, String, String)
+  nameWithType: BotStateExtensions.GetPrivateConversationData(IBotState, String, String, String)
+  fullName: BotStateExtensions.GetPrivateConversationData(IBotState, String, String, String)
+- uid: Microsoft.Bot.Connector.BotStateExtensions.GetPrivateConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: GetPrivateConversationDataAsync(IBotState, String, String, String, CancellationToken)
+  nameWithType: BotStateExtensions.GetPrivateConversationDataAsync(IBotState, String, String, String, CancellationToken)
+  fullName: BotStateExtensions.GetPrivateConversationDataAsync(IBotState, String, String, String, CancellationToken)
+- uid: Microsoft.Bot.Connector.BotStateExtensions.GetUserData(Microsoft.Bot.Connector.IBotState,System.String,System.String)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: GetUserData(IBotState, String, String)
+  nameWithType: BotStateExtensions.GetUserData(IBotState, String, String)
+  fullName: BotStateExtensions.GetUserData(IBotState, String, String)
+- uid: Microsoft.Bot.Connector.BotStateExtensions.GetUserDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: GetUserDataAsync(IBotState, String, String, CancellationToken)
+  nameWithType: BotStateExtensions.GetUserDataAsync(IBotState, String, String, CancellationToken)
+  fullName: BotStateExtensions.GetUserDataAsync(IBotState, String, String, CancellationToken)
+- uid: Microsoft.Bot.Connector.BotStateExtensions.SetConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: SetConversationData(IBotState, String, String, BotData)
+  nameWithType: BotStateExtensions.SetConversationData(IBotState, String, String, BotData)
+  fullName: BotStateExtensions.SetConversationData(IBotState, String, String, BotData)
+- uid: Microsoft.Bot.Connector.BotStateExtensions.SetConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: SetConversationDataAsync(IBotState, String, String, BotData, CancellationToken)
+  nameWithType: BotStateExtensions.SetConversationDataAsync(IBotState, String, String, BotData, CancellationToken)
+  fullName: BotStateExtensions.SetConversationDataAsync(IBotState, String, String, BotData, CancellationToken)
+- uid: Microsoft.Bot.Connector.BotStateExtensions.SetPrivateConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String,Microsoft.Bot.Connector.BotData)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: SetPrivateConversationData(IBotState, String, String, String, BotData)
+  nameWithType: BotStateExtensions.SetPrivateConversationData(IBotState, String, String, String, BotData)
+  fullName: BotStateExtensions.SetPrivateConversationData(IBotState, String, String, String, BotData)
+- uid: Microsoft.Bot.Connector.BotStateExtensions.SetPrivateConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: SetPrivateConversationDataAsync(IBotState, String, String, String, BotData, CancellationToken)
+  nameWithType: BotStateExtensions.SetPrivateConversationDataAsync(IBotState, String, String, String, BotData, CancellationToken)
+  fullName: BotStateExtensions.SetPrivateConversationDataAsync(IBotState, String, String, String, BotData, CancellationToken)
+- uid: Microsoft.Bot.Connector.BotStateExtensions.SetUserData(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: SetUserData(IBotState, String, String, BotData)
+  nameWithType: BotStateExtensions.SetUserData(IBotState, String, String, BotData)
+  fullName: BotStateExtensions.SetUserData(IBotState, String, String, BotData)
+- uid: Microsoft.Bot.Connector.BotStateExtensions.SetUserDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: SetUserDataAsync(IBotState, String, String, BotData, CancellationToken)
+  nameWithType: BotStateExtensions.SetUserDataAsync(IBotState, String, String, BotData, CancellationToken)
+  fullName: BotStateExtensions.SetUserDataAsync(IBotState, String, String, BotData, CancellationToken)
+- uid: Microsoft.Bot.Connector.BotStateExtensions.DeleteStateForUser*
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: DeleteStateForUser
+  nameWithType: BotStateExtensions.DeleteStateForUser
+  fullName: BotStateExtensions.DeleteStateForUser
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.DeleteStateForUserAsync*
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: DeleteStateForUserAsync
+  nameWithType: BotStateExtensions.DeleteStateForUserAsync
+  fullName: BotStateExtensions.DeleteStateForUserAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.GetConversationData*
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: GetConversationData
+  nameWithType: BotStateExtensions.GetConversationData
+  fullName: BotStateExtensions.GetConversationData
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.GetConversationDataAsync*
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: GetConversationDataAsync
+  nameWithType: BotStateExtensions.GetConversationDataAsync
+  fullName: BotStateExtensions.GetConversationDataAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.GetPrivateConversationData*
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: GetPrivateConversationData
+  nameWithType: BotStateExtensions.GetPrivateConversationData
+  fullName: BotStateExtensions.GetPrivateConversationData
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.GetPrivateConversationDataAsync*
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: GetPrivateConversationDataAsync
+  nameWithType: BotStateExtensions.GetPrivateConversationDataAsync
+  fullName: BotStateExtensions.GetPrivateConversationDataAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.GetUserData*
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: GetUserData
+  nameWithType: BotStateExtensions.GetUserData
+  fullName: BotStateExtensions.GetUserData
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.GetUserDataAsync*
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: GetUserDataAsync
+  nameWithType: BotStateExtensions.GetUserDataAsync
+  fullName: BotStateExtensions.GetUserDataAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.SetConversationData*
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: SetConversationData
+  nameWithType: BotStateExtensions.SetConversationData
+  fullName: BotStateExtensions.SetConversationData
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.SetConversationDataAsync*
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: SetConversationDataAsync
+  nameWithType: BotStateExtensions.SetConversationDataAsync
+  fullName: BotStateExtensions.SetConversationDataAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.SetPrivateConversationData*
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: SetPrivateConversationData
+  nameWithType: BotStateExtensions.SetPrivateConversationData
+  fullName: BotStateExtensions.SetPrivateConversationData
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.SetPrivateConversationDataAsync*
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: SetPrivateConversationDataAsync
+  nameWithType: BotStateExtensions.SetPrivateConversationDataAsync
+  fullName: BotStateExtensions.SetPrivateConversationDataAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.SetUserData*
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: SetUserData
+  nameWithType: BotStateExtensions.SetUserData
+  fullName: BotStateExtensions.SetUserData
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml
+- uid: Microsoft.Bot.Connector.BotStateExtensions.SetUserDataAsync*
+  parent: Microsoft.Bot.Connector.BotStateExtensions
+  isExternal: false
+  name: SetUserDataAsync
+  nameWithType: BotStateExtensions.SetUserDataAsync
+  fullName: BotStateExtensions.SetUserDataAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotStateExtensions.xml

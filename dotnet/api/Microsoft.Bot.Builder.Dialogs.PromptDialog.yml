@@ -1,0 +1,733 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.PromptDialog
+  commentId: T:Microsoft.Bot.Builder.Dialogs.PromptDialog
+  id: PromptDialog
+  children:
+  - Microsoft.Bot.Builder.Dialogs.PromptDialog.#ctor
+  - Microsoft.Bot.Builder.Dialogs.PromptDialog.Attachment(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.Attachment}},System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.Int32)
+  - Microsoft.Bot.Builder.Dialogs.PromptDialog.Choice``1(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},Microsoft.Bot.Builder.Dialogs.PromptOptions{``0})
+  - Microsoft.Bot.Builder.Dialogs.PromptDialog.Choice``1(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IEnumerable{System.String})
+  - Microsoft.Bot.Builder.Dialogs.PromptDialog.Confirm(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Boolean},Microsoft.Bot.Builder.Dialogs.PromptOptions{System.String})
+  - Microsoft.Bot.Builder.Dialogs.PromptDialog.Confirm(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Boolean},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle)
+  - Microsoft.Bot.Builder.Dialogs.PromptDialog.Number(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Double},System.String,System.String,System.Int32)
+  - Microsoft.Bot.Builder.Dialogs.PromptDialog.Number(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Int64},System.String,System.String,System.Int32)
+  - Microsoft.Bot.Builder.Dialogs.PromptDialog.Text(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.String},System.String,System.String,System.Int32)
+  langs:
+  - csharp
+  name: PromptDialog
+  nameWithType: PromptDialog
+  fullName: Microsoft.Bot.Builder.Dialogs.PromptDialog
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Dialog factory for simple prompts.
+  remarks: The exception <xref href="Microsoft.Bot.Builder.Dialogs.TooManyAttemptsException"></xref> will be thrown if the number of allowed attempts is exceeded.
+  syntax:
+    content: public class PromptDialog
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptDialog.xml
+- uid: Microsoft.Bot.Builder.Dialogs.PromptDialog.#ctor
+  commentId: M:Microsoft.Bot.Builder.Dialogs.PromptDialog.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Builder.Dialogs.PromptDialog
+  langs:
+  - csharp
+  name: PromptDialog()
+  nameWithType: PromptDialog.PromptDialog()
+  fullName: PromptDialog.PromptDialog()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: public PromptDialog ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.Dialogs.PromptDialog.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptDialog.xml
+- uid: Microsoft.Bot.Builder.Dialogs.PromptDialog.Attachment(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.Attachment}},System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.Int32)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Attachment(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.Attachment}},System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.Int32)
+  id: Attachment(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.Attachment}},System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.Int32)
+  parent: Microsoft.Bot.Builder.Dialogs.PromptDialog
+  langs:
+  - csharp
+  name: Attachment(IDialogContext, ResumeAfter<IEnumerable<Attachment>>, String, IEnumerable<String>, String, Int32)
+  nameWithType: PromptDialog.Attachment(IDialogContext, ResumeAfter<IEnumerable<Attachment>>, String, IEnumerable<String>, String, Int32)
+  fullName: PromptDialog.Attachment(IDialogContext, ResumeAfter<IEnumerable<Attachment>>, String, IEnumerable<String>, String, Int32)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Prompt for an attachment
+  syntax:
+    content: public static void Attachment (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Builder.Dialogs.ResumeAfter<System.Collections.Generic.IEnumerable<Microsoft.Bot.Connector.Attachment>> resume, string prompt, System.Collections.Generic.IEnumerable<string> contentTypes = null, string retry = null, int attempts = 3);
+    parameters:
+    - id: context
+      type: Microsoft.Bot.Builder.Dialogs.IDialogContext
+      description: The dialog context.
+    - id: resume
+      type: Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.Attachment}}
+      description: Resume handler.
+    - id: prompt
+      type: System.String
+      description: The prompt to show to the user.
+    - id: contentTypes
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: The optional content types the attachment type should be part of
+    - id: retry
+      type: System.String
+      description: What to show on retry
+    - id: attempts
+      type: System.Int32
+      description: The number of times to retry
+  overload: Microsoft.Bot.Builder.Dialogs.PromptDialog.Attachment*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptDialog.xml
+- uid: Microsoft.Bot.Builder.Dialogs.PromptDialog.Choice``1(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},Microsoft.Bot.Builder.Dialogs.PromptOptions{``0})
+  commentId: M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Choice``1(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},Microsoft.Bot.Builder.Dialogs.PromptOptions{``0})
+  id: Choice``1(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},Microsoft.Bot.Builder.Dialogs.PromptOptions{``0})
+  parent: Microsoft.Bot.Builder.Dialogs.PromptDialog
+  langs:
+  - csharp
+  name: Choice<T>(IDialogContext, ResumeAfter<T>, PromptOptions<T>)
+  nameWithType: PromptDialog.Choice<T>(IDialogContext, ResumeAfter<T>, PromptOptions<T>)
+  fullName: PromptDialog.Choice<T>(IDialogContext, ResumeAfter<T>, PromptOptions<T>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Prompt for one of a set of choices.
+  remarks: <code>T</code> should implement <xref href="System.Object.ToString"></xref>
+  syntax:
+    content: public static void Choice<T> (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Builder.Dialogs.ResumeAfter<T> resume, Microsoft.Bot.Builder.Dialogs.PromptOptions<T> promptOptions);
+    parameters:
+    - id: context
+      type: Microsoft.Bot.Builder.Dialogs.IDialogContext
+      description: The dialog context.
+    - id: resume
+      type: Microsoft.Bot.Builder.Dialogs.ResumeAfter`1
+      description: Resume handler.
+    - id: promptOptions
+      type: Microsoft.Bot.Builder.Dialogs.PromptOptions`1
+      description: The prompt options.
+    typeParameters:
+    - id: T
+      description: The type of the options.
+  overload: Microsoft.Bot.Builder.Dialogs.PromptDialog.Choice``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptDialog.xml
+- uid: Microsoft.Bot.Builder.Dialogs.PromptDialog.Choice``1(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Choice``1(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IEnumerable{System.String})
+  id: Choice``1(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.Bot.Builder.Dialogs.PromptDialog
+  langs:
+  - csharp
+  name: Choice<T>(IDialogContext, ResumeAfter<T>, IEnumerable<T>, String, String, Int32, PromptStyle, IEnumerable<String>)
+  nameWithType: PromptDialog.Choice<T>(IDialogContext, ResumeAfter<T>, IEnumerable<T>, String, String, Int32, PromptStyle, IEnumerable<String>)
+  fullName: PromptDialog.Choice<T>(IDialogContext, ResumeAfter<T>, IEnumerable<T>, String, String, Int32, PromptStyle, IEnumerable<String>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Prompt for one of a set of choices.
+  syntax:
+    content: public static void Choice<T> (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Builder.Dialogs.ResumeAfter<T> resume, System.Collections.Generic.IEnumerable<T> options, string prompt, string retry = null, int attempts = 3, Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle = Microsoft.Bot.Builder.Dialogs.PromptStyle.Auto, System.Collections.Generic.IEnumerable<string> descriptions = null);
+    parameters:
+    - id: context
+      type: Microsoft.Bot.Builder.Dialogs.IDialogContext
+      description: The context.
+    - id: resume
+      type: Microsoft.Bot.Builder.Dialogs.ResumeAfter`1
+      description: Resume handler.
+    - id: options
+      type: System.Collections.Generic.IEnumerable{T}
+      description: The possible options all of which must be convertible to a string.
+    - id: prompt
+      type: System.String
+      description: The prompt to show to the user.
+    - id: retry
+      type: System.String
+      description: What to show on retry.
+    - id: attempts
+      type: System.Int32
+      description: The number of times to retry.
+    - id: promptStyle
+      type: Microsoft.Bot.Builder.Dialogs.PromptStyle
+      description: Style of the prompt <xref href="Microsoft.Bot.Builder.Dialogs.PromptStyle"></xref>
+    - id: descriptions
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: Descriptions to display for choices.
+    typeParameters:
+    - id: T
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.PromptDialog.Choice``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptDialog.xml
+- uid: Microsoft.Bot.Builder.Dialogs.PromptDialog.Confirm(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Boolean},Microsoft.Bot.Builder.Dialogs.PromptOptions{System.String})
+  commentId: M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Confirm(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Boolean},Microsoft.Bot.Builder.Dialogs.PromptOptions{System.String})
+  id: Confirm(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Boolean},Microsoft.Bot.Builder.Dialogs.PromptOptions{System.String})
+  parent: Microsoft.Bot.Builder.Dialogs.PromptDialog
+  langs:
+  - csharp
+  name: Confirm(IDialogContext, ResumeAfter<Boolean>, PromptOptions<String>)
+  nameWithType: PromptDialog.Confirm(IDialogContext, ResumeAfter<Boolean>, PromptOptions<String>)
+  fullName: PromptDialog.Confirm(IDialogContext, ResumeAfter<Boolean>, PromptOptions<String>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Ask a yes/no questions.
+  syntax:
+    content: public static void Confirm (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Builder.Dialogs.ResumeAfter<bool> resume, Microsoft.Bot.Builder.Dialogs.PromptOptions<string> promptOptions);
+    parameters:
+    - id: context
+      type: Microsoft.Bot.Builder.Dialogs.IDialogContext
+      description: The dialog context.
+    - id: resume
+      type: Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Boolean}
+      description: Resume handler.
+    - id: promptOptions
+      type: Microsoft.Bot.Builder.Dialogs.PromptOptions{System.String}
+      description: The options for the prompt, <xref href="Microsoft.Bot.Builder.Dialogs.PromptOptions`1"></xref>.
+  overload: Microsoft.Bot.Builder.Dialogs.PromptDialog.Confirm*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptDialog.xml
+- uid: Microsoft.Bot.Builder.Dialogs.PromptDialog.Confirm(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Boolean},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Confirm(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Boolean},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle)
+  id: Confirm(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Boolean},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle)
+  parent: Microsoft.Bot.Builder.Dialogs.PromptDialog
+  langs:
+  - csharp
+  name: Confirm(IDialogContext, ResumeAfter<Boolean>, String, String, Int32, PromptStyle)
+  nameWithType: PromptDialog.Confirm(IDialogContext, ResumeAfter<Boolean>, String, String, Int32, PromptStyle)
+  fullName: PromptDialog.Confirm(IDialogContext, ResumeAfter<Boolean>, String, String, Int32, PromptStyle)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Ask a yes/no question.
+  syntax:
+    content: public static void Confirm (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Builder.Dialogs.ResumeAfter<bool> resume, string prompt, string retry = null, int attempts = 3, Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle = Microsoft.Bot.Builder.Dialogs.PromptStyle.Auto);
+    parameters:
+    - id: context
+      type: Microsoft.Bot.Builder.Dialogs.IDialogContext
+      description: The context.
+    - id: resume
+      type: Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Boolean}
+      description: Resume handler.
+    - id: prompt
+      type: System.String
+      description: The prompt to show to the user.
+    - id: retry
+      type: System.String
+      description: What to show on retry.
+    - id: attempts
+      type: System.Int32
+      description: The number of times to retry.
+    - id: promptStyle
+      type: Microsoft.Bot.Builder.Dialogs.PromptStyle
+      description: Style of the prompt <xref href="Microsoft.Bot.Builder.Dialogs.PromptStyle"></xref>
+  overload: Microsoft.Bot.Builder.Dialogs.PromptDialog.Confirm*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptDialog.xml
+- uid: Microsoft.Bot.Builder.Dialogs.PromptDialog.Number(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Double},System.String,System.String,System.Int32)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Number(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Double},System.String,System.String,System.Int32)
+  id: Number(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Double},System.String,System.String,System.Int32)
+  parent: Microsoft.Bot.Builder.Dialogs.PromptDialog
+  langs:
+  - csharp
+  name: Number(IDialogContext, ResumeAfter<Double>, String, String, Int32)
+  nameWithType: PromptDialog.Number(IDialogContext, ResumeAfter<Double>, String, String, Int32)
+  fullName: PromptDialog.Number(IDialogContext, ResumeAfter<Double>, String, String, Int32)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Prompt for a double.
+  syntax:
+    content: public static void Number (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Builder.Dialogs.ResumeAfter<double> resume, string prompt, string retry = null, int attempts = 3);
+    parameters:
+    - id: context
+      type: Microsoft.Bot.Builder.Dialogs.IDialogContext
+      description: The context.
+    - id: resume
+      type: Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Double}
+      description: Resume handler.
+    - id: prompt
+      type: System.String
+      description: The prompt to show to the user.
+    - id: retry
+      type: System.String
+      description: What to show on retry.
+    - id: attempts
+      type: System.Int32
+      description: The number of times to retry.
+  overload: Microsoft.Bot.Builder.Dialogs.PromptDialog.Number*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptDialog.xml
+- uid: Microsoft.Bot.Builder.Dialogs.PromptDialog.Number(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Int64},System.String,System.String,System.Int32)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Number(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Int64},System.String,System.String,System.Int32)
+  id: Number(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Int64},System.String,System.String,System.Int32)
+  parent: Microsoft.Bot.Builder.Dialogs.PromptDialog
+  langs:
+  - csharp
+  name: Number(IDialogContext, ResumeAfter<Int64>, String, String, Int32)
+  nameWithType: PromptDialog.Number(IDialogContext, ResumeAfter<Int64>, String, String, Int32)
+  fullName: PromptDialog.Number(IDialogContext, ResumeAfter<Int64>, String, String, Int32)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Prompt for a long.
+  syntax:
+    content: public static void Number (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Builder.Dialogs.ResumeAfter<long> resume, string prompt, string retry = null, int attempts = 3);
+    parameters:
+    - id: context
+      type: Microsoft.Bot.Builder.Dialogs.IDialogContext
+      description: The context.
+    - id: resume
+      type: Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Int64}
+      description: Resume handler.
+    - id: prompt
+      type: System.String
+      description: The prompt to show to the user.
+    - id: retry
+      type: System.String
+      description: What to show on retry.
+    - id: attempts
+      type: System.Int32
+      description: The number of times to retry.
+  overload: Microsoft.Bot.Builder.Dialogs.PromptDialog.Number*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptDialog.xml
+- uid: Microsoft.Bot.Builder.Dialogs.PromptDialog.Text(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.String},System.String,System.String,System.Int32)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Text(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.String},System.String,System.String,System.Int32)
+  id: Text(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.String},System.String,System.String,System.Int32)
+  parent: Microsoft.Bot.Builder.Dialogs.PromptDialog
+  langs:
+  - csharp
+  name: Text(IDialogContext, ResumeAfter<String>, String, String, Int32)
+  nameWithType: PromptDialog.Text(IDialogContext, ResumeAfter<String>, String, String, Int32)
+  fullName: PromptDialog.Text(IDialogContext, ResumeAfter<String>, String, String, Int32)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Prompt for a string.
+  syntax:
+    content: public static void Text (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Builder.Dialogs.ResumeAfter<string> resume, string prompt, string retry = null, int attempts = 3);
+    parameters:
+    - id: context
+      type: Microsoft.Bot.Builder.Dialogs.IDialogContext
+      description: The context.
+    - id: resume
+      type: Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.String}
+      description: Resume handler.
+    - id: prompt
+      type: System.String
+      description: The prompt to show to the user.
+    - id: retry
+      type: System.String
+      description: What to show on retry.
+    - id: attempts
+      type: System.Int32
+      description: The number of times to retry.
+  overload: Microsoft.Bot.Builder.Dialogs.PromptDialog.Text*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptDialog.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Dialogs.PromptDialog.#ctor
+  parent: Microsoft.Bot.Builder.Dialogs.PromptDialog
+  isExternal: false
+  name: PromptDialog()
+  nameWithType: PromptDialog.PromptDialog()
+  fullName: PromptDialog.PromptDialog()
+- uid: Microsoft.Bot.Builder.Dialogs.PromptDialog.Attachment(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.Attachment}},System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.Int32)
+  parent: Microsoft.Bot.Builder.Dialogs.PromptDialog
+  isExternal: false
+  name: Attachment(IDialogContext, ResumeAfter<IEnumerable<Attachment>>, String, IEnumerable<String>, String, Int32)
+  nameWithType: PromptDialog.Attachment(IDialogContext, ResumeAfter<IEnumerable<Attachment>>, String, IEnumerable<String>, String, Int32)
+  fullName: PromptDialog.Attachment(IDialogContext, ResumeAfter<IEnumerable<Attachment>>, String, IEnumerable<String>, String, Int32)
+- uid: Microsoft.Bot.Builder.Dialogs.IDialogContext
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: IDialogContext
+  nameWithType: IDialogContext
+  fullName: Microsoft.Bot.Builder.Dialogs.IDialogContext
+- uid: Microsoft.Bot.Builder.Dialogs.ResumeAfter`1
+  name: ResumeAfter<T>
+  nameWithType: ResumeAfter<T>
+  fullName: Microsoft.Bot.Builder.Dialogs.ResumeAfter<T>
+- uid: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.Generic.IEnumerable
+- uid: Microsoft.Bot.Connector.Attachment
+  name: Attachment
+  nameWithType: Attachment
+  fullName: Microsoft.Bot.Connector.Attachment
+- uid: Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.Attachment}}
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: ResumeAfter<IEnumerable<Attachment>>
+  nameWithType: ResumeAfter<IEnumerable<Attachment>>
+  fullName: Microsoft.Bot.Builder.Dialogs.ResumeAfter<System.Collections.Generic.IEnumerable<Microsoft.Bot.Connector.Attachment>>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Dialogs.ResumeAfter`1
+    name: ResumeAfter
+    nameWithType: ResumeAfter
+    fullName: Microsoft.Bot.Builder.Dialogs.ResumeAfter
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.Attachment
+    name: Attachment
+    nameWithType: Attachment
+    fullName: Microsoft.Bot.Connector.Attachment
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Bot.Builder.Dialogs.PromptDialog.Choice``1(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},Microsoft.Bot.Builder.Dialogs.PromptOptions{``0})
+  parent: Microsoft.Bot.Builder.Dialogs.PromptDialog
+  isExternal: false
+  name: Choice<T>(IDialogContext, ResumeAfter<T>, PromptOptions<T>)
+  nameWithType: PromptDialog.Choice<T>(IDialogContext, ResumeAfter<T>, PromptOptions<T>)
+  fullName: PromptDialog.Choice<T>(IDialogContext, ResumeAfter<T>, PromptOptions<T>)
+- uid: Microsoft.Bot.Builder.Dialogs.PromptOptions`1
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: PromptOptions<T>
+  nameWithType: PromptOptions<T>
+  fullName: Microsoft.Bot.Builder.Dialogs.PromptOptions<T>
+- uid: Microsoft.Bot.Builder.Dialogs.PromptDialog.Choice``1(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.Bot.Builder.Dialogs.PromptDialog
+  isExternal: false
+  name: Choice<T>(IDialogContext, ResumeAfter<T>, IEnumerable<T>, String, String, Int32, PromptStyle, IEnumerable<String>)
+  nameWithType: PromptDialog.Choice<T>(IDialogContext, ResumeAfter<T>, IEnumerable<T>, String, String, Int32, PromptStyle, IEnumerable<String>)
+  fullName: PromptDialog.Choice<T>(IDialogContext, ResumeAfter<T>, IEnumerable<T>, String, String, Int32, PromptStyle, IEnumerable<String>)
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Collections.Generic.IEnumerable{T}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T
+    name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.PromptStyle
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: PromptStyle
+  nameWithType: PromptStyle
+  fullName: Microsoft.Bot.Builder.Dialogs.PromptStyle
+- uid: Microsoft.Bot.Builder.Dialogs.PromptDialog.Confirm(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Boolean},Microsoft.Bot.Builder.Dialogs.PromptOptions{System.String})
+  parent: Microsoft.Bot.Builder.Dialogs.PromptDialog
+  isExternal: false
+  name: Confirm(IDialogContext, ResumeAfter<Boolean>, PromptOptions<String>)
+  nameWithType: PromptDialog.Confirm(IDialogContext, ResumeAfter<Boolean>, PromptOptions<String>)
+  fullName: PromptDialog.Confirm(IDialogContext, ResumeAfter<Boolean>, PromptOptions<String>)
+- uid: System.Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Boolean}
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: ResumeAfter<Boolean>
+  nameWithType: ResumeAfter<Boolean>
+  fullName: Microsoft.Bot.Builder.Dialogs.ResumeAfter<System.Boolean>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Dialogs.ResumeAfter`1
+    name: ResumeAfter
+    nameWithType: ResumeAfter
+    fullName: Microsoft.Bot.Builder.Dialogs.ResumeAfter
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.PromptOptions{System.String}
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: PromptOptions<String>
+  nameWithType: PromptOptions<String>
+  fullName: Microsoft.Bot.Builder.Dialogs.PromptOptions<System.String>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Dialogs.PromptOptions`1
+    name: PromptOptions
+    nameWithType: PromptOptions
+    fullName: Microsoft.Bot.Builder.Dialogs.PromptOptions
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.PromptDialog.Confirm(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Boolean},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle)
+  parent: Microsoft.Bot.Builder.Dialogs.PromptDialog
+  isExternal: false
+  name: Confirm(IDialogContext, ResumeAfter<Boolean>, String, String, Int32, PromptStyle)
+  nameWithType: PromptDialog.Confirm(IDialogContext, ResumeAfter<Boolean>, String, String, Int32, PromptStyle)
+  fullName: PromptDialog.Confirm(IDialogContext, ResumeAfter<Boolean>, String, String, Int32, PromptStyle)
+- uid: Microsoft.Bot.Builder.Dialogs.PromptDialog.Number(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Double},System.String,System.String,System.Int32)
+  parent: Microsoft.Bot.Builder.Dialogs.PromptDialog
+  isExternal: false
+  name: Number(IDialogContext, ResumeAfter<Double>, String, String, Int32)
+  nameWithType: PromptDialog.Number(IDialogContext, ResumeAfter<Double>, String, String, Int32)
+  fullName: PromptDialog.Number(IDialogContext, ResumeAfter<Double>, String, String, Int32)
+- uid: System.Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Double}
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: ResumeAfter<Double>
+  nameWithType: ResumeAfter<Double>
+  fullName: Microsoft.Bot.Builder.Dialogs.ResumeAfter<System.Double>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Dialogs.ResumeAfter`1
+    name: ResumeAfter
+    nameWithType: ResumeAfter
+    fullName: Microsoft.Bot.Builder.Dialogs.ResumeAfter
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.PromptDialog.Number(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Int64},System.String,System.String,System.Int32)
+  parent: Microsoft.Bot.Builder.Dialogs.PromptDialog
+  isExternal: false
+  name: Number(IDialogContext, ResumeAfter<Int64>, String, String, Int32)
+  nameWithType: PromptDialog.Number(IDialogContext, ResumeAfter<Int64>, String, String, Int32)
+  fullName: PromptDialog.Number(IDialogContext, ResumeAfter<Int64>, String, String, Int32)
+- uid: System.Int64
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Int64}
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: ResumeAfter<Int64>
+  nameWithType: ResumeAfter<Int64>
+  fullName: Microsoft.Bot.Builder.Dialogs.ResumeAfter<System.Int64>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Dialogs.ResumeAfter`1
+    name: ResumeAfter
+    nameWithType: ResumeAfter
+    fullName: Microsoft.Bot.Builder.Dialogs.ResumeAfter
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.PromptDialog.Text(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.String},System.String,System.String,System.Int32)
+  parent: Microsoft.Bot.Builder.Dialogs.PromptDialog
+  isExternal: false
+  name: Text(IDialogContext, ResumeAfter<String>, String, String, Int32)
+  nameWithType: PromptDialog.Text(IDialogContext, ResumeAfter<String>, String, String, Int32)
+  fullName: PromptDialog.Text(IDialogContext, ResumeAfter<String>, String, String, Int32)
+- uid: Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.String}
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: ResumeAfter<String>
+  nameWithType: ResumeAfter<String>
+  fullName: Microsoft.Bot.Builder.Dialogs.ResumeAfter<System.String>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Dialogs.ResumeAfter`1
+    name: ResumeAfter
+    nameWithType: ResumeAfter
+    fullName: Microsoft.Bot.Builder.Dialogs.ResumeAfter
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.PromptDialog.#ctor*
+  parent: Microsoft.Bot.Builder.Dialogs.PromptDialog
+  isExternal: false
+  name: PromptDialog
+  nameWithType: PromptDialog.PromptDialog
+  fullName: PromptDialog.PromptDialog
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptDialog.xml
+- uid: Microsoft.Bot.Builder.Dialogs.PromptDialog.Attachment*
+  parent: Microsoft.Bot.Builder.Dialogs.PromptDialog
+  isExternal: false
+  name: Attachment
+  nameWithType: PromptDialog.Attachment
+  fullName: PromptDialog.Attachment
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptDialog.xml
+- uid: Microsoft.Bot.Builder.Dialogs.PromptDialog.Choice``1*
+  parent: Microsoft.Bot.Builder.Dialogs.PromptDialog
+  isExternal: false
+  name: Choice<T>
+  nameWithType: PromptDialog.Choice<T>
+  fullName: PromptDialog.Choice<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptDialog.xml
+- uid: Microsoft.Bot.Builder.Dialogs.PromptDialog.Confirm*
+  parent: Microsoft.Bot.Builder.Dialogs.PromptDialog
+  isExternal: false
+  name: Confirm
+  nameWithType: PromptDialog.Confirm
+  fullName: PromptDialog.Confirm
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptDialog.xml
+- uid: Microsoft.Bot.Builder.Dialogs.PromptDialog.Number*
+  parent: Microsoft.Bot.Builder.Dialogs.PromptDialog
+  isExternal: false
+  name: Number
+  nameWithType: PromptDialog.Number
+  fullName: PromptDialog.Number
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptDialog.xml
+- uid: Microsoft.Bot.Builder.Dialogs.PromptDialog.Text*
+  parent: Microsoft.Bot.Builder.Dialogs.PromptDialog
+  isExternal: false
+  name: Text
+  nameWithType: PromptDialog.Text
+  fullName: PromptDialog.Text
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptDialog.xml

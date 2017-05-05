@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.Fact
+  commentId: T:Microsoft.Bot.Connector.Fact
+  id: Fact
+  children:
+  - Microsoft.Bot.Connector.Fact.#ctor
+  - Microsoft.Bot.Connector.Fact.#ctor(System.String,System.String)
+  - Microsoft.Bot.Connector.Fact.Key
+  - Microsoft.Bot.Connector.Fact.Value
+  langs:
+  - csharp
+  name: Fact
+  nameWithType: Fact
+  fullName: Microsoft.Bot.Connector.Fact
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: >-
+    Set of key-value pairs. Advantage of this section is that key and
+                value properties will be
+                rendered with default style information with some
+                delimiter between them. So there is no need for developer to specify
+                style information.
+  syntax:
+    content: public class Fact
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Fact.xml
+- uid: Microsoft.Bot.Connector.Fact.#ctor
+  commentId: M:Microsoft.Bot.Connector.Fact.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Connector.Fact
+  langs:
+  - csharp
+  name: Fact()
+  nameWithType: Fact.Fact()
+  fullName: Fact.Fact()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the Fact class.
+  syntax:
+    content: public Fact ();
+    parameters: []
+  overload: Microsoft.Bot.Connector.Fact.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Fact.xml
+- uid: Microsoft.Bot.Connector.Fact.#ctor(System.String,System.String)
+  commentId: M:Microsoft.Bot.Connector.Fact.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: Microsoft.Bot.Connector.Fact
+  langs:
+  - csharp
+  name: Fact(String, String)
+  nameWithType: Fact.Fact(String, String)
+  fullName: Fact.Fact(String, String)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the Fact class.
+  syntax:
+    content: public Fact (string key = null, string value = null);
+    parameters:
+    - id: key
+      type: System.String
+      description: To be added.
+    - id: value
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Fact.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Fact.xml
+- uid: Microsoft.Bot.Connector.Fact.Key
+  commentId: P:Microsoft.Bot.Connector.Fact.Key
+  id: Key
+  parent: Microsoft.Bot.Connector.Fact
+  langs:
+  - csharp
+  name: Key
+  nameWithType: Fact.Key
+  fullName: Fact.Key
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: The key for this Fact
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="key")]
+
+      public string Key { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Fact.Key*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Fact.xml
+- uid: Microsoft.Bot.Connector.Fact.Value
+  commentId: P:Microsoft.Bot.Connector.Fact.Value
+  id: Value
+  parent: Microsoft.Bot.Connector.Fact
+  langs:
+  - csharp
+  name: Value
+  nameWithType: Fact.Value
+  fullName: Fact.Value
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: The value for this Fact
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="value")]
+
+      public string Value { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Fact.Value*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Fact.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.Fact.#ctor
+  parent: Microsoft.Bot.Connector.Fact
+  isExternal: false
+  name: Fact()
+  nameWithType: Fact.Fact()
+  fullName: Fact.Fact()
+- uid: Microsoft.Bot.Connector.Fact.#ctor(System.String,System.String)
+  parent: Microsoft.Bot.Connector.Fact
+  isExternal: false
+  name: Fact(String, String)
+  nameWithType: Fact.Fact(String, String)
+  fullName: Fact.Fact(String, String)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.Fact.Key
+  parent: Microsoft.Bot.Connector.Fact
+  isExternal: false
+  name: Key
+  nameWithType: Fact.Key
+  fullName: Fact.Key
+- uid: Microsoft.Bot.Connector.Fact.Value
+  parent: Microsoft.Bot.Connector.Fact
+  isExternal: false
+  name: Value
+  nameWithType: Fact.Value
+  fullName: Fact.Value
+- uid: Microsoft.Bot.Connector.Fact.#ctor*
+  parent: Microsoft.Bot.Connector.Fact
+  isExternal: false
+  name: Fact
+  nameWithType: Fact.Fact
+  fullName: Fact.Fact
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Fact.xml
+- uid: Microsoft.Bot.Connector.Fact.Key*
+  parent: Microsoft.Bot.Connector.Fact
+  isExternal: false
+  name: Key
+  nameWithType: Fact.Key
+  fullName: Fact.Key
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Fact.xml
+- uid: Microsoft.Bot.Connector.Fact.Value*
+  parent: Microsoft.Bot.Connector.Fact
+  isExternal: false
+  name: Value
+  nameWithType: Fact.Value
+  fullName: Fact.Value
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Fact.xml

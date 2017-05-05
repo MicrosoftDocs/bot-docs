@@ -1,0 +1,113 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Base.Types
+  commentId: T:Microsoft.Bot.Builder.Base.Types
+  id: Types
+  children:
+  - Microsoft.Bot.Builder.Base.Types.MethodOf(System.Linq.Expressions.Expression{System.Action})
+  langs:
+  - csharp
+  name: Types
+  nameWithType: Types
+  fullName: Microsoft.Bot.Builder.Base.Types
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Base
+  syntax:
+    content: public static class Types
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Base/Types.xml
+- uid: Microsoft.Bot.Builder.Base.Types.MethodOf(System.Linq.Expressions.Expression{System.Action})
+  commentId: M:Microsoft.Bot.Builder.Base.Types.MethodOf(System.Linq.Expressions.Expression{System.Action})
+  id: MethodOf(System.Linq.Expressions.Expression{System.Action})
+  parent: Microsoft.Bot.Builder.Base.Types
+  langs:
+  - csharp
+  name: MethodOf(Expression<Action>)
+  nameWithType: Types.MethodOf(Expression<Action>)
+  fullName: Types.MethodOf(Expression<Action>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Base
+  syntax:
+    content: public static System.Reflection.MethodInfo MethodOf (System.Linq.Expressions.Expression<Action> action);
+    parameters:
+    - id: action
+      type: System.Linq.Expressions.Expression{System.Action}
+      description: To be added.
+    return:
+      type: System.Reflection.MethodInfo
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Base.Types.MethodOf*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Base/Types.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Base.Types.MethodOf(System.Linq.Expressions.Expression{System.Action})
+  parent: Microsoft.Bot.Builder.Base.Types
+  isExternal: false
+  name: MethodOf(Expression<Action>)
+  nameWithType: Types.MethodOf(Expression<Action>)
+  fullName: Types.MethodOf(Expression<Action>)
+- uid: System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.Linq.Expressions.Expression`1
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: System.Action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: System.Linq.Expressions.Expression{System.Action}
+  parent: System.Linq.Expressions
+  isExternal: true
+  name: Expression<Action>
+  nameWithType: Expression<Action>
+  fullName: System.Linq.Expressions.Expression<System.Action>
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Base.Types.MethodOf*
+  parent: Microsoft.Bot.Builder.Base.Types
+  isExternal: false
+  name: MethodOf
+  nameWithType: Types.MethodOf
+  fullName: Types.MethodOf
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Base/Types.xml

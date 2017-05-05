@@ -1,0 +1,360 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore
+  commentId: T:Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore
+  id: CachingBotDataStore
+  children:
+  - Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData},Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy)
+  - Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore{Microsoft#Bot#Connector#BotData}#FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore{Microsoft#Bot#Connector#BotData}#LoadAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore{Microsoft#Bot#Connector#BotData}#SaveAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  name: CachingBotDataStore
+  nameWithType: CachingBotDataStore
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: Caches data for <xref href="Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1"></xref> and wraps the data in <xref href="Microsoft.Bot.Connector.BotData"></xref> to be stored in <xref href="Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.inner"></xref>
+  syntax:
+    content: 'public class CachingBotDataStore : Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore<Microsoft.Bot.Connector.BotData>'
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData}
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/CachingBotDataStore.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData},Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData},Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy)
+  id: '#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData},Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy)'
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore
+  langs:
+  - csharp
+  name: CachingBotDataStore(IBotDataStore<BotData>, CachingBotDataStoreConsistencyPolicy)
+  nameWithType: CachingBotDataStore.CachingBotDataStore(IBotDataStore<BotData>, CachingBotDataStoreConsistencyPolicy)
+  fullName: CachingBotDataStore.CachingBotDataStore(IBotDataStore<BotData>, CachingBotDataStoreConsistencyPolicy)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: public CachingBotDataStore (Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore<Microsoft.Bot.Connector.BotData> inner, Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy dataConsistencyPolicy);
+    parameters:
+    - id: inner
+      type: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData}
+      description: To be added.
+    - id: dataConsistencyPolicy
+      type: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/CachingBotDataStore.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore{Microsoft#Bot#Connector#BotData}#FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore<Microsoft#Bot#Connector#BotData>#FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)
+  id: Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore{Microsoft#Bot#Connector#BotData}#FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore
+  langs:
+  - csharp
+  name: IBotDataStore<BotData>.FlushAsync(IAddress, CancellationToken)
+  nameWithType: CachingBotDataStore.IBotDataStore<BotData>.FlushAsync(IAddress, CancellationToken)
+  fullName: CachingBotDataStore.IBotDataStore<BotData>.FlushAsync(IAddress, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore/<Microsoft-Bot-Builder-Dialogs-Internals-IBotDataStore<Microsoft-Bot-Connector-BotData>-FlushAsync>d__5))]
+
+      System.Threading.Tasks.Task<bool> IBotDataStore<BotData>.FlushAsync (Microsoft.Bot.Builder.Dialogs.IAddress key, System.Threading.CancellationToken cancellationToken);
+    parameters:
+    - id: key
+      type: Microsoft.Bot.Builder.Dialogs.IAddress
+      description: To be added.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore{Microsoft#Bot#Connector#BotData}#FlushAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/CachingBotDataStore.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore{Microsoft#Bot#Connector#BotData}#LoadAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore<Microsoft#Bot#Connector#BotData>#LoadAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,System.Threading.CancellationToken)
+  id: Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore{Microsoft#Bot#Connector#BotData}#LoadAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,System.Threading.CancellationToken)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore
+  langs:
+  - csharp
+  name: IBotDataStore<BotData>.LoadAsync(IAddress, BotStoreType, CancellationToken)
+  nameWithType: CachingBotDataStore.IBotDataStore<BotData>.LoadAsync(IAddress, BotStoreType, CancellationToken)
+  fullName: CachingBotDataStore.IBotDataStore<BotData>.LoadAsync(IAddress, BotStoreType, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore/<Microsoft-Bot-Builder-Dialogs-Internals-IBotDataStore<Microsoft-Bot-Connector-BotData>-LoadAsync>d__6))]
+
+      System.Threading.Tasks.Task<Microsoft.Bot.Connector.BotData> IBotDataStore<BotData>.LoadAsync (Microsoft.Bot.Builder.Dialogs.IAddress key, Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType botStoreType, System.Threading.CancellationToken cancellationToken);
+    parameters:
+    - id: key
+      type: Microsoft.Bot.Builder.Dialogs.IAddress
+      description: To be added.
+    - id: botStoreType
+      type: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType
+      description: To be added.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Connector.BotData}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore{Microsoft#Bot#Connector#BotData}#LoadAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/CachingBotDataStore.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore{Microsoft#Bot#Connector#BotData}#SaveAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore<Microsoft#Bot#Connector#BotData>#SaveAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)
+  id: Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore{Microsoft#Bot#Connector#BotData}#SaveAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore
+  langs:
+  - csharp
+  name: IBotDataStore<BotData>.SaveAsync(IAddress, BotStoreType, BotData, CancellationToken)
+  nameWithType: CachingBotDataStore.IBotDataStore<BotData>.SaveAsync(IAddress, BotStoreType, BotData, CancellationToken)
+  fullName: CachingBotDataStore.IBotDataStore<BotData>.SaveAsync(IAddress, BotStoreType, BotData, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore/<Microsoft-Bot-Builder-Dialogs-Internals-IBotDataStore<Microsoft-Bot-Connector-BotData>-SaveAsync>d__7))]
+
+      System.Threading.Tasks.Task IBotDataStore<BotData>.SaveAsync (Microsoft.Bot.Builder.Dialogs.IAddress key, Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType botStoreType, Microsoft.Bot.Connector.BotData value, System.Threading.CancellationToken cancellationToken);
+    parameters:
+    - id: key
+      type: Microsoft.Bot.Builder.Dialogs.IAddress
+      description: To be added.
+    - id: botStoreType
+      type: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType
+      description: To be added.
+    - id: value
+      type: Microsoft.Bot.Connector.BotData
+      description: To be added.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore{Microsoft#Bot#Connector#BotData}#SaveAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/CachingBotDataStore.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData},Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore
+  isExternal: false
+  name: CachingBotDataStore(IBotDataStore<BotData>, CachingBotDataStoreConsistencyPolicy)
+  nameWithType: CachingBotDataStore.CachingBotDataStore(IBotDataStore<BotData>, CachingBotDataStoreConsistencyPolicy)
+  fullName: CachingBotDataStore.CachingBotDataStore(IBotDataStore<BotData>, CachingBotDataStoreConsistencyPolicy)
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1
+  name: IBotDataStore<T>
+  nameWithType: IBotDataStore<T>
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore<T>
+- uid: Microsoft.Bot.Connector.BotData
+  name: BotData
+  nameWithType: BotData
+  fullName: Microsoft.Bot.Connector.BotData
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData}
+  parent: Microsoft.Bot.Builder.Dialogs.Internals
+  isExternal: false
+  name: IBotDataStore<BotData>
+  nameWithType: IBotDataStore<BotData>
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore<Microsoft.Bot.Connector.BotData>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1
+    name: IBotDataStore
+    nameWithType: IBotDataStore
+    fullName: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.BotData
+    name: BotData
+    nameWithType: BotData
+    fullName: Microsoft.Bot.Connector.BotData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy
+  parent: Microsoft.Bot.Builder.Dialogs.Internals
+  isExternal: false
+  name: CachingBotDataStoreConsistencyPolicy
+  nameWithType: CachingBotDataStoreConsistencyPolicy
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore{Microsoft#Bot#Connector#BotData}#FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore
+  isExternal: false
+  name: IBotDataStore<BotData>.FlushAsync(IAddress, CancellationToken)
+  nameWithType: CachingBotDataStore.IBotDataStore<BotData>.FlushAsync(IAddress, CancellationToken)
+  fullName: CachingBotDataStore.IBotDataStore<BotData>.FlushAsync(IAddress, CancellationToken)
+- uid: System.Threading.Tasks.Task`1
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.IAddress
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: IAddress
+  nameWithType: IAddress
+  fullName: Microsoft.Bot.Builder.Dialogs.IAddress
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore{Microsoft#Bot#Connector#BotData}#LoadAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore
+  isExternal: false
+  name: IBotDataStore<BotData>.LoadAsync(IAddress, BotStoreType, CancellationToken)
+  nameWithType: CachingBotDataStore.IBotDataStore<BotData>.LoadAsync(IAddress, BotStoreType, CancellationToken)
+  fullName: CachingBotDataStore.IBotDataStore<BotData>.LoadAsync(IAddress, BotStoreType, CancellationToken)
+- uid: System.Threading.Tasks.Task{Microsoft.Bot.Connector.BotData}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<BotData>
+  nameWithType: Task<BotData>
+  fullName: System.Threading.Tasks.Task<Microsoft.Bot.Connector.BotData>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.BotData
+    name: BotData
+    nameWithType: BotData
+    fullName: Microsoft.Bot.Connector.BotData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType
+  parent: Microsoft.Bot.Builder.Dialogs.Internals
+  isExternal: false
+  name: BotStoreType
+  nameWithType: BotStoreType
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore{Microsoft#Bot#Connector#BotData}#SaveAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore
+  isExternal: false
+  name: IBotDataStore<BotData>.SaveAsync(IAddress, BotStoreType, BotData, CancellationToken)
+  nameWithType: CachingBotDataStore.IBotDataStore<BotData>.SaveAsync(IAddress, BotStoreType, BotData, CancellationToken)
+  fullName: CachingBotDataStore.IBotDataStore<BotData>.SaveAsync(IAddress, BotStoreType, BotData, CancellationToken)
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.#ctor*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore
+  isExternal: false
+  name: CachingBotDataStore
+  nameWithType: CachingBotDataStore.CachingBotDataStore
+  fullName: CachingBotDataStore.CachingBotDataStore
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/CachingBotDataStore.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore{Microsoft#Bot#Connector#BotData}#FlushAsync*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore
+  isExternal: false
+  name: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore<Microsoft.Bot.Connector.BotData>.FlushAsync
+  nameWithType: CachingBotDataStore.Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore<Microsoft.Bot.Connector.BotData>.FlushAsync
+  fullName: CachingBotDataStore.Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore<Microsoft.Bot.Connector.BotData>.FlushAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/CachingBotDataStore.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore{Microsoft#Bot#Connector#BotData}#LoadAsync*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore
+  isExternal: false
+  name: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore<Microsoft.Bot.Connector.BotData>.LoadAsync
+  nameWithType: CachingBotDataStore.Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore<Microsoft.Bot.Connector.BotData>.LoadAsync
+  fullName: CachingBotDataStore.Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore<Microsoft.Bot.Connector.BotData>.LoadAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/CachingBotDataStore.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore{Microsoft#Bot#Connector#BotData}#SaveAsync*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore
+  isExternal: false
+  name: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore<Microsoft.Bot.Connector.BotData>.SaveAsync
+  nameWithType: CachingBotDataStore.Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore<Microsoft.Bot.Connector.BotData>.SaveAsync
+  fullName: CachingBotDataStore.Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore<Microsoft.Bot.Connector.BotData>.SaveAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/CachingBotDataStore.xml

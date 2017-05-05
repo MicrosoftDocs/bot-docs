@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.ConnectorClientExtensions
+  commentId: T:Microsoft.Bot.Connector.ConnectorClientExtensions
+  id: ConnectorClientExtensions
+  children: []
+  langs:
+  - csharp
+  name: ConnectorClientExtensions
+  nameWithType: ConnectorClientExtensions
+  fullName: Microsoft.Bot.Connector.ConnectorClientExtensions
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public static class ConnectorClientExtensions
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  - botconnector-1.1.0
+  monikers:
+  - botbuilder-3.5.5
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConnectorClientExtensions.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object

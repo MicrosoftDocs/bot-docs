@@ -1,0 +1,453 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.ConversationAccount
+  commentId: T:Microsoft.Bot.Connector.ConversationAccount
+  id: ConversationAccount
+  children:
+  - Microsoft.Bot.Connector.ConversationAccount.#ctor
+  - Microsoft.Bot.Connector.ConversationAccount.#ctor(System.Nullable{System.Boolean},System.String,System.String)
+  - Microsoft.Bot.Connector.ConversationAccount.Equals(Microsoft.Bot.Connector.ConversationAccount)
+  - Microsoft.Bot.Connector.ConversationAccount.Equals(System.Object)
+  - Microsoft.Bot.Connector.ConversationAccount.GetHashCode
+  - Microsoft.Bot.Connector.ConversationAccount.Id
+  - Microsoft.Bot.Connector.ConversationAccount.IsGroup
+  - Microsoft.Bot.Connector.ConversationAccount.Name
+  langs:
+  - csharp
+  name: ConversationAccount
+  nameWithType: ConversationAccount
+  fullName: Microsoft.Bot.Connector.ConversationAccount
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: Channel account information for a conversation
+  syntax:
+    content: 'public class ConversationAccount : IEquatable<Microsoft.Bot.Connector.ConversationAccount>'
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{Microsoft.Bot.Connector.ConversationAccount}
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationAccount.xml
+- uid: Microsoft.Bot.Connector.ConversationAccount.#ctor
+  commentId: M:Microsoft.Bot.Connector.ConversationAccount.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Connector.ConversationAccount
+  langs:
+  - csharp
+  name: ConversationAccount()
+  nameWithType: ConversationAccount.ConversationAccount()
+  fullName: ConversationAccount.ConversationAccount()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the ConversationAccount class.
+  syntax:
+    content: public ConversationAccount ();
+    parameters: []
+  overload: Microsoft.Bot.Connector.ConversationAccount.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationAccount.xml
+- uid: Microsoft.Bot.Connector.ConversationAccount.#ctor(System.Nullable{System.Boolean},System.String,System.String)
+  commentId: M:Microsoft.Bot.Connector.ConversationAccount.#ctor(System.Nullable{System.Boolean},System.String,System.String)
+  id: '#ctor(System.Nullable{System.Boolean},System.String,System.String)'
+  parent: Microsoft.Bot.Connector.ConversationAccount
+  langs:
+  - csharp
+  name: ConversationAccount(Nullable<Boolean>, String, String)
+  nameWithType: ConversationAccount.ConversationAccount(Nullable<Boolean>, String, String)
+  fullName: ConversationAccount.ConversationAccount(Nullable<Boolean>, String, String)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the ConversationAccount class.
+  syntax:
+    content: public ConversationAccount (Nullable<bool> isGroup = null, string id = null, string name = null);
+    parameters:
+    - id: isGroup
+      type: System.Nullable{System.Boolean}
+      description: To be added.
+    - id: id
+      type: System.String
+      description: To be added.
+    - id: name
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationAccount.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationAccount.xml
+- uid: Microsoft.Bot.Connector.ConversationAccount.Equals(Microsoft.Bot.Connector.ConversationAccount)
+  commentId: M:Microsoft.Bot.Connector.ConversationAccount.Equals(Microsoft.Bot.Connector.ConversationAccount)
+  id: Equals(Microsoft.Bot.Connector.ConversationAccount)
+  parent: Microsoft.Bot.Connector.ConversationAccount
+  langs:
+  - csharp
+  name: Equals(ConversationAccount)
+  nameWithType: ConversationAccount.Equals(ConversationAccount)
+  fullName: ConversationAccount.Equals(ConversationAccount)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public bool Equals (Microsoft.Bot.Connector.ConversationAccount other);
+    parameters:
+    - id: other
+      type: Microsoft.Bot.Connector.ConversationAccount
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationAccount.Equals*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationAccount.xml
+- uid: Microsoft.Bot.Connector.ConversationAccount.Equals(System.Object)
+  commentId: M:Microsoft.Bot.Connector.ConversationAccount.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Bot.Connector.ConversationAccount
+  langs:
+  - csharp
+  name: Equals(Object)
+  nameWithType: ConversationAccount.Equals(Object)
+  fullName: ConversationAccount.Equals(Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public override bool Equals (object obj);
+    parameters:
+    - id: obj
+      type: System.Object
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationAccount.Equals*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationAccount.xml
+- uid: Microsoft.Bot.Connector.ConversationAccount.GetHashCode
+  commentId: M:Microsoft.Bot.Connector.ConversationAccount.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Bot.Connector.ConversationAccount
+  langs:
+  - csharp
+  name: GetHashCode()
+  nameWithType: ConversationAccount.GetHashCode()
+  fullName: ConversationAccount.GetHashCode()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public override int GetHashCode ();
+    parameters: []
+    return:
+      type: System.Int32
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationAccount.GetHashCode*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationAccount.xml
+- uid: Microsoft.Bot.Connector.ConversationAccount.Id
+  commentId: P:Microsoft.Bot.Connector.ConversationAccount.Id
+  id: Id
+  parent: Microsoft.Bot.Connector.ConversationAccount
+  langs:
+  - csharp
+  name: Id
+  nameWithType: ConversationAccount.Id
+  fullName: ConversationAccount.Id
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: >-
+    Channel id for the user or bot on this channel (Example:
+                joe@smith.com, or @joesmith or 123456)
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="id")]
+
+      public string Id { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationAccount.Id*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationAccount.xml
+- uid: Microsoft.Bot.Connector.ConversationAccount.IsGroup
+  commentId: P:Microsoft.Bot.Connector.ConversationAccount.IsGroup
+  id: IsGroup
+  parent: Microsoft.Bot.Connector.ConversationAccount
+  langs:
+  - csharp
+  name: IsGroup
+  nameWithType: ConversationAccount.IsGroup
+  fullName: ConversationAccount.IsGroup
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Is this a reference to a group
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="isGroup")]
+
+      public Nullable<bool> IsGroup { get; set; }
+    return:
+      type: System.Nullable{System.Boolean}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationAccount.IsGroup*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationAccount.xml
+- uid: Microsoft.Bot.Connector.ConversationAccount.Name
+  commentId: P:Microsoft.Bot.Connector.ConversationAccount.Name
+  id: Name
+  parent: Microsoft.Bot.Connector.ConversationAccount
+  langs:
+  - csharp
+  name: Name
+  nameWithType: ConversationAccount.Name
+  fullName: ConversationAccount.Name
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Display friendly name
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="name")]
+
+      public string Name { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationAccount.Name*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationAccount.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.ConversationAccount.#ctor
+  parent: Microsoft.Bot.Connector.ConversationAccount
+  isExternal: false
+  name: ConversationAccount()
+  nameWithType: ConversationAccount.ConversationAccount()
+  fullName: ConversationAccount.ConversationAccount()
+- uid: Microsoft.Bot.Connector.ConversationAccount.#ctor(System.Nullable{System.Boolean},System.String,System.String)
+  parent: Microsoft.Bot.Connector.ConversationAccount
+  isExternal: false
+  name: ConversationAccount(Nullable<Boolean>, String, String)
+  nameWithType: ConversationAccount.ConversationAccount(Nullable<Boolean>, String, String)
+  fullName: ConversationAccount.ConversationAccount(Nullable<Boolean>, String, String)
+- uid: System.Nullable`1
+  name: Nullable
+  nameWithType: Nullable
+  fullName: System.Nullable
+- uid: System.Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Nullable{System.Boolean}
+  parent: System
+  isExternal: true
+  name: Nullable<Boolean>
+  nameWithType: Nullable<Boolean>
+  fullName: System.Nullable<System.Boolean>
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.ConversationAccount.Equals(Microsoft.Bot.Connector.ConversationAccount)
+  parent: Microsoft.Bot.Connector.ConversationAccount
+  isExternal: false
+  name: Equals(ConversationAccount)
+  nameWithType: ConversationAccount.Equals(ConversationAccount)
+  fullName: ConversationAccount.Equals(ConversationAccount)
+- uid: Microsoft.Bot.Connector.ConversationAccount
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: ConversationAccount
+  nameWithType: ConversationAccount
+  fullName: Microsoft.Bot.Connector.ConversationAccount
+- uid: Microsoft.Bot.Connector.ConversationAccount.Equals(System.Object)
+  parent: Microsoft.Bot.Connector.ConversationAccount
+  isExternal: false
+  name: Equals(Object)
+  nameWithType: ConversationAccount.Equals(Object)
+  fullName: ConversationAccount.Equals(Object)
+- uid: Microsoft.Bot.Connector.ConversationAccount.GetHashCode
+  parent: Microsoft.Bot.Connector.ConversationAccount
+  isExternal: false
+  name: GetHashCode()
+  nameWithType: ConversationAccount.GetHashCode()
+  fullName: ConversationAccount.GetHashCode()
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Bot.Connector.ConversationAccount.Id
+  parent: Microsoft.Bot.Connector.ConversationAccount
+  isExternal: false
+  name: Id
+  nameWithType: ConversationAccount.Id
+  fullName: ConversationAccount.Id
+- uid: Microsoft.Bot.Connector.ConversationAccount.IsGroup
+  parent: Microsoft.Bot.Connector.ConversationAccount
+  isExternal: false
+  name: IsGroup
+  nameWithType: ConversationAccount.IsGroup
+  fullName: ConversationAccount.IsGroup
+- uid: Microsoft.Bot.Connector.ConversationAccount.Name
+  parent: Microsoft.Bot.Connector.ConversationAccount
+  isExternal: false
+  name: Name
+  nameWithType: ConversationAccount.Name
+  fullName: ConversationAccount.Name
+- uid: Microsoft.Bot.Connector.ConversationAccount.#ctor*
+  parent: Microsoft.Bot.Connector.ConversationAccount
+  isExternal: false
+  name: ConversationAccount
+  nameWithType: ConversationAccount.ConversationAccount
+  fullName: ConversationAccount.ConversationAccount
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationAccount.xml
+- uid: Microsoft.Bot.Connector.ConversationAccount.Equals*
+  parent: Microsoft.Bot.Connector.ConversationAccount
+  isExternal: false
+  name: Equals
+  nameWithType: ConversationAccount.Equals
+  fullName: ConversationAccount.Equals
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationAccount.xml
+- uid: Microsoft.Bot.Connector.ConversationAccount.GetHashCode*
+  parent: Microsoft.Bot.Connector.ConversationAccount
+  isExternal: false
+  name: GetHashCode
+  nameWithType: ConversationAccount.GetHashCode
+  fullName: ConversationAccount.GetHashCode
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationAccount.xml
+- uid: Microsoft.Bot.Connector.ConversationAccount.Id*
+  parent: Microsoft.Bot.Connector.ConversationAccount
+  isExternal: false
+  name: Id
+  nameWithType: ConversationAccount.Id
+  fullName: ConversationAccount.Id
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationAccount.xml
+- uid: Microsoft.Bot.Connector.ConversationAccount.IsGroup*
+  parent: Microsoft.Bot.Connector.ConversationAccount
+  isExternal: false
+  name: IsGroup
+  nameWithType: ConversationAccount.IsGroup
+  fullName: ConversationAccount.IsGroup
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationAccount.xml
+- uid: Microsoft.Bot.Connector.ConversationAccount.Name*
+  parent: Microsoft.Bot.Connector.ConversationAccount
+  isExternal: false
+  name: Name
+  nameWithType: ConversationAccount.Name
+  fullName: ConversationAccount.Name
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationAccount.xml
+- uid: System.IEquatable`1
+  name: IEquatable
+  nameWithType: IEquatable
+  fullName: System.IEquatable
+- uid: System.IEquatable{Microsoft.Bot.Connector.ConversationAccount}
+  parent: System
+  isExternal: true
+  name: IEquatable<ConversationAccount>
+  nameWithType: IEquatable<ConversationAccount>
+  fullName: System.IEquatable<Microsoft.Bot.Connector.ConversationAccount>
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.ConversationAccount
+    name: ConversationAccount
+    nameWithType: ConversationAccount
+    fullName: Microsoft.Bot.Connector.ConversationAccount
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'

@@ -1,0 +1,233 @@
+- uid: Microsoft.Bot.Builder.Internals.Fibers
+  name: Microsoft.Bot.Builder.Internals.Fibers
+  items:
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException
+    name: ClosureCaptureException
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.ErrorResilientStore`1
+    name: ErrorResilientStore<T>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+    name: Extensions
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.FactoryStore`1
+    name: FactoryStore<T>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+    name: Fiber<C>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.FiberModule
+    name: FiberModule
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.FiberModule`1
+    name: FiberModule<C>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.FormatterStore`1
+    name: FormatterStore<T>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Frame`1
+    name: Frame<C>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.FrameFactory`1
+    name: FrameFactory<C>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.IAwaiter`1
+    name: IAwaiter<T>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.IFiber`1
+    name: IFiber<C>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop`1
+    name: IFiberLoop<C>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.IFrame`1
+    name: IFrame<C>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory`1
+    name: IFrameFactory<C>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.IFrameLoop`1
+    name: IFrameLoop<C>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.IItem`1
+    name: IItem<T>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidNeedException
+    name: InvalidNeedException
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidNextException
+    name: InvalidNextException
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException
+    name: InvalidTypeException
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException
+    name: InvalidWaitException
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.IPost`1
+    name: IPost<T>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.IScope`1
+    name: IScope<T>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.IStackStoreFactory`1
+    name: IStackStoreFactory<C>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.IStore`1
+    name: IStore<T>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.ITraits`1
+    name: ITraits<T>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.IWait
+    name: IWait
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.IWait`1
+    name: IWait<C>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.IWait`2
+    name: IWait<C,T>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.IWaiter`1
+    name: IWaiter<C>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory`1
+    name: IWaitFactory<C>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.LocalMutualExclusion`1
+    name: LocalMutualExclusion<T>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Methods
+    name: Methods
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Need
+    name: Need
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.NormalizedTraits
+    name: NormalizedTraits
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.NullWait`1
+    name: NullWait<C>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Pair
+    name: Pair
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Pair`2
+    name: Pair<T1,T2>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1
+    name: PostStruct<T>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Range
+    name: Range
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+    name: Range<T>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.ReflectionSurrogateModule
+    name: ReflectionSurrogateModule
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Rest`2
+    name: Rest<C,T>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Serialization
+    name: Serialization
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Serialization.ClosureCaptureErrorSurrogate
+    name: Serialization.ClosureCaptureErrorSurrogate
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Serialization.ISurrogateProvider
+    name: Serialization.ISurrogateProvider
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Serialization.JObjectSurrogate
+    name: Serialization.JObjectSurrogate
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByFieldsSurrogate
+    name: Serialization.StoreInstanceByFieldsSurrogate
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate
+    name: Serialization.StoreInstanceByTypeSurrogate
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference
+    name: Serialization.StoreInstanceByTypeSurrogate.ObjectReference
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateLogDecorator
+    name: Serialization.SurrogateLogDecorator
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateSelector
+    name: Serialization.SurrogateSelector
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.SetField
+    name: SetField
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack`1
+    name: StoreFromStack<C>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Tasks`1
+    name: Tasks<T>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+    name: Wait<C,T>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.WaitFactory`1
+    name: WaitFactory<C>
+    version:
+    - botbuilder-3.5.5
+  version:
+  - botbuilder-3.5.5

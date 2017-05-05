@@ -1,0 +1,180 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.MessagesExtensions
+  commentId: T:Microsoft.Bot.Connector.MessagesExtensions
+  id: MessagesExtensions
+  children:
+  - Microsoft.Bot.Connector.MessagesExtensions.SendMessage(Microsoft.Bot.Connector.IMessages,Microsoft.Bot.Connector.Message)
+  - Microsoft.Bot.Connector.MessagesExtensions.SendMessageAsync(Microsoft.Bot.Connector.IMessages,Microsoft.Bot.Connector.Message,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  name: MessagesExtensions
+  nameWithType: MessagesExtensions
+  fullName: Microsoft.Bot.Connector.MessagesExtensions
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public static class MessagesExtensions
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/MessagesExtensions.xml
+- uid: Microsoft.Bot.Connector.MessagesExtensions.SendMessage(Microsoft.Bot.Connector.IMessages,Microsoft.Bot.Connector.Message)
+  commentId: M:Microsoft.Bot.Connector.MessagesExtensions.SendMessage(Microsoft.Bot.Connector.IMessages,Microsoft.Bot.Connector.Message)
+  id: SendMessage(Microsoft.Bot.Connector.IMessages,Microsoft.Bot.Connector.Message)
+  parent: Microsoft.Bot.Connector.MessagesExtensions
+  langs:
+  - csharp
+  name: SendMessage(IMessages, Message)
+  nameWithType: MessagesExtensions.SendMessage(IMessages, Message)
+  fullName: MessagesExtensions.SendMessage(IMessages, Message)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public static Microsoft.Bot.Connector.Message SendMessage (this Microsoft.Bot.Connector.IMessages operations, Microsoft.Bot.Connector.Message message);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IMessages
+      description: To be added.
+    - id: message
+      type: Microsoft.Bot.Connector.Message
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Connector.Message
+      description: To be added.
+  overload: Microsoft.Bot.Connector.MessagesExtensions.SendMessage*
+  exceptions: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/MessagesExtensions.xml
+- uid: Microsoft.Bot.Connector.MessagesExtensions.SendMessageAsync(Microsoft.Bot.Connector.IMessages,Microsoft.Bot.Connector.Message,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.MessagesExtensions.SendMessageAsync(Microsoft.Bot.Connector.IMessages,Microsoft.Bot.Connector.Message,System.Threading.CancellationToken)
+  id: SendMessageAsync(Microsoft.Bot.Connector.IMessages,Microsoft.Bot.Connector.Message,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.MessagesExtensions
+  langs:
+  - csharp
+  name: SendMessageAsync(IMessages, Message, CancellationToken)
+  nameWithType: MessagesExtensions.SendMessageAsync(IMessages, Message, CancellationToken)
+  fullName: MessagesExtensions.SendMessageAsync(IMessages, Message, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.MessagesExtensions/<SendMessageAsync>d__1))]
+
+      public static System.Threading.Tasks.Task<Microsoft.Bot.Connector.Message> SendMessageAsync (this Microsoft.Bot.Connector.IMessages operations, Microsoft.Bot.Connector.Message message, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IMessages
+      description: To be added.
+    - id: message
+      type: Microsoft.Bot.Connector.Message
+      description: To be added.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Connector.Message}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.MessagesExtensions.SendMessageAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/MessagesExtensions.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.MessagesExtensions.SendMessage(Microsoft.Bot.Connector.IMessages,Microsoft.Bot.Connector.Message)
+  parent: Microsoft.Bot.Connector.MessagesExtensions
+  isExternal: false
+  name: SendMessage(IMessages, Message)
+  nameWithType: MessagesExtensions.SendMessage(IMessages, Message)
+  fullName: MessagesExtensions.SendMessage(IMessages, Message)
+- uid: Microsoft.Bot.Connector.Message
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: Message
+  nameWithType: Message
+  fullName: Microsoft.Bot.Connector.Message
+- uid: Microsoft.Bot.Connector.IMessages
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IMessages
+  nameWithType: IMessages
+  fullName: Microsoft.Bot.Connector.IMessages
+- uid: Microsoft.Bot.Connector.MessagesExtensions.SendMessageAsync(Microsoft.Bot.Connector.IMessages,Microsoft.Bot.Connector.Message,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.MessagesExtensions
+  isExternal: false
+  name: SendMessageAsync(IMessages, Message, CancellationToken)
+  nameWithType: MessagesExtensions.SendMessageAsync(IMessages, Message, CancellationToken)
+  fullName: MessagesExtensions.SendMessageAsync(IMessages, Message, CancellationToken)
+- uid: System.Threading.Tasks.Task`1
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks.Task{Microsoft.Bot.Connector.Message}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<Message>
+  nameWithType: Task<Message>
+  fullName: System.Threading.Tasks.Task<Microsoft.Bot.Connector.Message>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.Message
+    name: Message
+    nameWithType: Message
+    fullName: Microsoft.Bot.Connector.Message
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Connector.MessagesExtensions.SendMessage*
+  parent: Microsoft.Bot.Connector.MessagesExtensions
+  isExternal: false
+  name: SendMessage
+  nameWithType: MessagesExtensions.SendMessage
+  fullName: MessagesExtensions.SendMessage
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/MessagesExtensions.xml
+- uid: Microsoft.Bot.Connector.MessagesExtensions.SendMessageAsync*
+  parent: Microsoft.Bot.Connector.MessagesExtensions
+  isExternal: false
+  name: SendMessageAsync
+  nameWithType: MessagesExtensions.SendMessageAsync
+  fullName: MessagesExtensions.SendMessageAsync
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/MessagesExtensions.xml

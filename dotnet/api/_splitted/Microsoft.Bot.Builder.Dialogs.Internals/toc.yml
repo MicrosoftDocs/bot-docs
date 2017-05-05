@@ -1,0 +1,201 @@
+- uid: Microsoft.Bot.Builder.Dialogs.Internals
+  name: Microsoft.Bot.Builder.Dialogs.Internals
+  items:
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.AlwaysSendDirect_BotToUser
+    name: AlwaysSendDirect_BotToUser
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream
+    name: BotDataBagStream
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+    name: BotDataBase<T>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType
+    name: BotStoreType
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue
+    name: BotToUserQueue
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.BotToUserTextWriter
+    name: BotToUserTextWriter
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore
+    name: CachingBotDataStore
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy
+    name: CachingBotDataStoreConsistencyPolicy
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory
+    name: ConnectorClientFactory
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.ConnectorStore
+    name: ConnectorStore
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogContext
+    name: DialogContext
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogModule
+    name: DialogModule
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogModule_MakeRoot
+    name: DialogModule_MakeRoot
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogRouter
+    name: DialogRouter
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogSystem
+    name: DialogSystem
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTask
+    name: DialogTask
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.IThunk
+    name: DialogTask.IThunk
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManager
+    name: DialogTaskManager
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader
+    name: DialogTaskManagerBotDataLoader
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData
+    name: DictionaryBotData
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask
+    name: EventLoopDialogTask
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.ExceptionTranslationDialogTask
+    name: ExceptionTranslationDialogTask
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.Extensions
+    name: Extensions
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+    name: IBotData
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1
+    name: IBotDataStore<T>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser
+    name: IBotToUser
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory
+    name: IConnectorClientFactory
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+    name: IDialogStack
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogSystem
+    name: IDialogSystem
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask
+    name: IDialogTask
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager
+    name: IDialogTaskManager
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks
+    name: IDialogTasks
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.IMessageActivityMapper
+    name: IMessageActivityMapper
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.InMemoryDataStore
+    name: InMemoryDataStore
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot
+    name: IPostToBot
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.JObjectBotData
+    name: JObjectBotData
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.KeyboardCardMapper
+    name: KeyboardCardMapper
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.LogBotToUser
+    name: LogBotToUser
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.LogPostToBot
+    name: LogPostToBot
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.MapToChannelData_BotToUser
+    name: MapToChannelData_BotToUser
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser
+    name: NullBotToUser
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.NullPostToBot
+    name: NullPostToBot
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.PersistentDialogTask
+    name: PersistentDialogTask
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser
+    name: PostUnhandledExceptionToUser
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2
+    name: Prompt<T,U>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask
+    name: ReactiveDialogTask
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.ScoringEventLoop`1
+    name: ScoringEventLoop<Score>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.SerializeByConversation
+    name: SerializeByConversation
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture
+    name: SetAmbientThreadCulture
+    version:
+    - botbuilder-3.5.5
+  version:
+  - botbuilder-3.5.5

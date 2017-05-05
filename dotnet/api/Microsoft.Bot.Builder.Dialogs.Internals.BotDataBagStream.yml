@@ -1,0 +1,168 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream
+  commentId: T:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream
+  id: BotDataBagStream
+  children:
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream.#ctor(Microsoft.Bot.Builder.Dialogs.IBotDataBag,System.String)
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream.Close
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream.Flush
+  langs:
+  - csharp
+  name: BotDataBagStream
+  nameWithType: BotDataBagStream
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: 'public sealed class BotDataBagStream : System.IO.MemoryStream'
+  inheritance:
+  - System.IO.MemoryStream
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotDataBagStream.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream.#ctor(Microsoft.Bot.Builder.Dialogs.IBotDataBag,System.String)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream.#ctor(Microsoft.Bot.Builder.Dialogs.IBotDataBag,System.String)
+  id: '#ctor(Microsoft.Bot.Builder.Dialogs.IBotDataBag,System.String)'
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream
+  langs:
+  - csharp
+  name: BotDataBagStream(IBotDataBag, String)
+  nameWithType: BotDataBagStream.BotDataBagStream(IBotDataBag, String)
+  fullName: BotDataBagStream.BotDataBagStream(IBotDataBag, String)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: public BotDataBagStream (Microsoft.Bot.Builder.Dialogs.IBotDataBag bag, string key);
+    parameters:
+    - id: bag
+      type: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+      description: To be added.
+    - id: key
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotDataBagStream.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream.Close
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream.Close
+  id: Close
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream
+  langs:
+  - csharp
+  name: Close()
+  nameWithType: BotDataBagStream.Close()
+  fullName: BotDataBagStream.Close()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: public override void Close ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream.Close*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotDataBagStream.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream.Flush
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream.Flush
+  id: Flush
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream
+  langs:
+  - csharp
+  name: Flush()
+  nameWithType: BotDataBagStream.Flush()
+  fullName: BotDataBagStream.Flush()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: public override void Flush ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream.Flush*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotDataBagStream.xml
+references:
+- uid: System.IO.MemoryStream
+  parent: System.IO
+  isExternal: true
+  name: MemoryStream
+  nameWithType: MemoryStream
+  fullName: System.IO.MemoryStream
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream.#ctor(Microsoft.Bot.Builder.Dialogs.IBotDataBag,System.String)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream
+  isExternal: false
+  name: BotDataBagStream(IBotDataBag, String)
+  nameWithType: BotDataBagStream.BotDataBagStream(IBotDataBag, String)
+  fullName: BotDataBagStream.BotDataBagStream(IBotDataBag, String)
+- uid: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: IBotDataBag
+  nameWithType: IBotDataBag
+  fullName: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream.Close
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream
+  isExternal: false
+  name: Close()
+  nameWithType: BotDataBagStream.Close()
+  fullName: BotDataBagStream.Close()
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream.Flush
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream
+  isExternal: false
+  name: Flush()
+  nameWithType: BotDataBagStream.Flush()
+  fullName: BotDataBagStream.Flush()
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream.#ctor*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream
+  isExternal: false
+  name: BotDataBagStream
+  nameWithType: BotDataBagStream.BotDataBagStream
+  fullName: BotDataBagStream.BotDataBagStream
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotDataBagStream.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream.Close*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream
+  isExternal: false
+  name: Close
+  nameWithType: BotDataBagStream.Close
+  fullName: BotDataBagStream.Close
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotDataBagStream.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream.Flush*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream
+  isExternal: false
+  name: Flush
+  nameWithType: BotDataBagStream.Flush
+  fullName: BotDataBagStream.Flush
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotDataBagStream.xml

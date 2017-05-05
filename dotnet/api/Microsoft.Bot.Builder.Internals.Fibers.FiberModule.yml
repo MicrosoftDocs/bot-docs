@@ -1,0 +1,191 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Internals.Fibers.FiberModule
+  commentId: T:Microsoft.Bot.Builder.Internals.Fibers.FiberModule
+  id: FiberModule
+  children:
+  - Microsoft.Bot.Builder.Internals.Fibers.FiberModule.#ctor
+  - Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Key_DoNotSerialize
+  - Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Key_SurrogateProvider
+  - Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Load(Autofac.ContainerBuilder)
+  langs:
+  - csharp
+  name: FiberModule
+  nameWithType: FiberModule
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.FiberModule
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder.Autofac
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  summary: Autofac module for Fiber components.
+  syntax:
+    content: 'public abstract class FiberModule : Autofac.Module'
+  inheritance:
+  - Autofac.Module
+  derivedClasses:
+  - Microsoft.Bot.Builder.Internals.Fibers.FiberModule`1
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/FiberModule.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.FiberModule.#ctor
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.FiberModule.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Builder.Internals.Fibers.FiberModule
+  langs:
+  - csharp
+  name: FiberModule()
+  nameWithType: FiberModule.FiberModule()
+  fullName: FiberModule.FiberModule()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: protected FiberModule ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.Internals.Fibers.FiberModule.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/FiberModule.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Key_DoNotSerialize
+  commentId: F:Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Key_DoNotSerialize
+  id: Key_DoNotSerialize
+  parent: Microsoft.Bot.Builder.Internals.Fibers.FiberModule
+  langs:
+  - csharp
+  name: Key_DoNotSerialize
+  nameWithType: FiberModule.Key_DoNotSerialize
+  fullName: FiberModule.Key_DoNotSerialize
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public static readonly object Key_DoNotSerialize;
+    return:
+      type: System.Object
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/FiberModule.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Key_SurrogateProvider
+  commentId: F:Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Key_SurrogateProvider
+  id: Key_SurrogateProvider
+  parent: Microsoft.Bot.Builder.Internals.Fibers.FiberModule
+  langs:
+  - csharp
+  name: Key_SurrogateProvider
+  nameWithType: FiberModule.Key_SurrogateProvider
+  fullName: FiberModule.Key_SurrogateProvider
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public static readonly object Key_SurrogateProvider;
+    return:
+      type: System.Object
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/FiberModule.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Load(Autofac.ContainerBuilder)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Load(Autofac.ContainerBuilder)
+  id: Load(Autofac.ContainerBuilder)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.FiberModule
+  langs:
+  - csharp
+  name: Load(ContainerBuilder)
+  nameWithType: FiberModule.Load(ContainerBuilder)
+  fullName: FiberModule.Load(ContainerBuilder)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: protected override void Load (Autofac.ContainerBuilder builder);
+    parameters:
+    - id: builder
+      type: Autofac.ContainerBuilder
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Load*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/FiberModule.xml
+references:
+- uid: Autofac.Module
+  parent: Autofac
+  isExternal: true
+  name: Module
+  nameWithType: Module
+  fullName: Autofac.Module
+- uid: Microsoft.Bot.Builder.Internals.Fibers.FiberModule.#ctor
+  parent: Microsoft.Bot.Builder.Internals.Fibers.FiberModule
+  isExternal: false
+  name: FiberModule()
+  nameWithType: FiberModule.FiberModule()
+  fullName: FiberModule.FiberModule()
+- uid: Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Key_DoNotSerialize
+  parent: Microsoft.Bot.Builder.Internals.Fibers.FiberModule
+  isExternal: false
+  name: Key_DoNotSerialize
+  nameWithType: FiberModule.Key_DoNotSerialize
+  fullName: FiberModule.Key_DoNotSerialize
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Key_SurrogateProvider
+  parent: Microsoft.Bot.Builder.Internals.Fibers.FiberModule
+  isExternal: false
+  name: Key_SurrogateProvider
+  nameWithType: FiberModule.Key_SurrogateProvider
+  fullName: FiberModule.Key_SurrogateProvider
+- uid: Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Load(Autofac.ContainerBuilder)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.FiberModule
+  isExternal: false
+  name: Load(ContainerBuilder)
+  nameWithType: FiberModule.Load(ContainerBuilder)
+  fullName: FiberModule.Load(ContainerBuilder)
+- uid: Autofac.ContainerBuilder
+  parent: Autofac
+  isExternal: true
+  name: ContainerBuilder
+  nameWithType: ContainerBuilder
+  fullName: Autofac.ContainerBuilder
+- uid: Microsoft.Bot.Builder.Internals.Fibers.FiberModule.#ctor*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.FiberModule
+  isExternal: false
+  name: FiberModule
+  nameWithType: FiberModule.FiberModule
+  fullName: FiberModule.FiberModule
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/FiberModule.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Load*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.FiberModule
+  isExternal: false
+  name: Load
+  nameWithType: FiberModule.Load
+  fullName: FiberModule.Load
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/FiberModule.xml

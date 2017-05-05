@@ -1,0 +1,125 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory
+  commentId: T:Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory
+  id: IConnectorClientFactory
+  children:
+  - Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeConnectorClient
+  - Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeStateClient
+  langs:
+  - csharp
+  name: IConnectorClientFactory
+  nameWithType: IConnectorClientFactory
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: Factory for IConnectorClient.
+  syntax:
+    content: public interface IConnectorClientFactory
+  derivedClasses:
+  - Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory
+  implements: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IConnectorClientFactory.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeConnectorClient
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeConnectorClient
+  id: MakeConnectorClient
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory
+  langs:
+  - csharp
+  name: MakeConnectorClient()
+  nameWithType: IConnectorClientFactory.MakeConnectorClient()
+  fullName: IConnectorClientFactory.MakeConnectorClient()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: Make the IConnectorClient implementation.
+  syntax:
+    content: public Microsoft.Bot.Connector.IConnectorClient MakeConnectorClient ();
+    parameters: []
+    return:
+      type: Microsoft.Bot.Connector.IConnectorClient
+      description: The IConnectorClient implementation.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeConnectorClient*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IConnectorClientFactory.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeStateClient
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeStateClient
+  id: MakeStateClient
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory
+  langs:
+  - csharp
+  name: MakeStateClient()
+  nameWithType: IConnectorClientFactory.MakeStateClient()
+  fullName: IConnectorClientFactory.MakeStateClient()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: Make the <xref href="Microsoft.Bot.Connector.IStateClient"></xref> implementation.
+  syntax:
+    content: public Microsoft.Bot.Connector.IStateClient MakeStateClient ();
+    parameters: []
+    return:
+      type: Microsoft.Bot.Connector.IStateClient
+      description: The <xref href="Microsoft.Bot.Connector.IStateClient"></xref> implementation.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeStateClient*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IConnectorClientFactory.xml
+references:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeConnectorClient
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory
+  isExternal: false
+  name: MakeConnectorClient()
+  nameWithType: IConnectorClientFactory.MakeConnectorClient()
+  fullName: IConnectorClientFactory.MakeConnectorClient()
+- uid: Microsoft.Bot.Connector.IConnectorClient
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IConnectorClient
+  nameWithType: IConnectorClient
+  fullName: Microsoft.Bot.Connector.IConnectorClient
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeStateClient
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory
+  isExternal: false
+  name: MakeStateClient()
+  nameWithType: IConnectorClientFactory.MakeStateClient()
+  fullName: IConnectorClientFactory.MakeStateClient()
+- uid: Microsoft.Bot.Connector.IStateClient
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IStateClient
+  nameWithType: IStateClient
+  fullName: Microsoft.Bot.Connector.IStateClient
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeConnectorClient*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory
+  isExternal: false
+  name: MakeConnectorClient
+  nameWithType: IConnectorClientFactory.MakeConnectorClient
+  fullName: IConnectorClientFactory.MakeConnectorClient
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IConnectorClientFactory.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeStateClient*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory
+  isExternal: false
+  name: MakeStateClient
+  nameWithType: IConnectorClientFactory.MakeStateClient
+  fullName: IConnectorClientFactory.MakeStateClient
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IConnectorClientFactory.xml

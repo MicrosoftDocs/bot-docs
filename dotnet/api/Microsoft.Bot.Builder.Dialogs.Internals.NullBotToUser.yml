@@ -1,0 +1,200 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser
+  commentId: T:Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser
+  id: NullBotToUser
+  children:
+  - Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser.#ctor(Microsoft.Bot.Connector.IMessageActivity)
+  - Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#MakeMessage
+  - Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#PostAsync(Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  name: NullBotToUser
+  nameWithType: NullBotToUser
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: 'public sealed class NullBotToUser : Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser'
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser
+  inheritedMembers: []
+  extensionMethods:
+  - Microsoft.Bot.Builder.Dialogs.Extensions.PostAsync(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.String,System.String,System.Threading.CancellationToken)
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/NullBotToUser.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser.#ctor(Microsoft.Bot.Connector.IMessageActivity)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser.#ctor(Microsoft.Bot.Connector.IMessageActivity)
+  id: '#ctor(Microsoft.Bot.Connector.IMessageActivity)'
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser
+  langs:
+  - csharp
+  name: NullBotToUser(IMessageActivity)
+  nameWithType: NullBotToUser.NullBotToUser(IMessageActivity)
+  fullName: NullBotToUser.NullBotToUser(IMessageActivity)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: public NullBotToUser (Microsoft.Bot.Connector.IMessageActivity toBot);
+    parameters:
+    - id: toBot
+      type: Microsoft.Bot.Connector.IMessageActivity
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/NullBotToUser.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#MakeMessage
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#MakeMessage
+  id: Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#MakeMessage
+  isEii: true
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser
+  langs:
+  - csharp
+  name: IBotToUser.MakeMessage()
+  nameWithType: NullBotToUser.IBotToUser.MakeMessage()
+  fullName: NullBotToUser.IBotToUser.MakeMessage()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: Microsoft.Bot.Connector.IMessageActivity IBotToUser.MakeMessage ();
+    parameters: []
+    return:
+      type: Microsoft.Bot.Connector.IMessageActivity
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#MakeMessage*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/NullBotToUser.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#PostAsync(Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#PostAsync(Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)
+  id: Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#PostAsync(Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser
+  langs:
+  - csharp
+  name: IBotToUser.PostAsync(IMessageActivity, CancellationToken)
+  nameWithType: NullBotToUser.IBotToUser.PostAsync(IMessageActivity, CancellationToken)
+  fullName: NullBotToUser.IBotToUser.PostAsync(IMessageActivity, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: System.Threading.Tasks.Task IBotToUser.PostAsync (Microsoft.Bot.Connector.IMessageActivity message, System.Threading.CancellationToken cancellationToken);
+    parameters:
+    - id: message
+      type: Microsoft.Bot.Connector.IMessageActivity
+      description: To be added.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#PostAsync*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/NullBotToUser.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser.#ctor(Microsoft.Bot.Connector.IMessageActivity)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser
+  isExternal: false
+  name: NullBotToUser(IMessageActivity)
+  nameWithType: NullBotToUser.NullBotToUser(IMessageActivity)
+  fullName: NullBotToUser.NullBotToUser(IMessageActivity)
+- uid: Microsoft.Bot.Connector.IMessageActivity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IMessageActivity
+  nameWithType: IMessageActivity
+  fullName: Microsoft.Bot.Connector.IMessageActivity
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#MakeMessage
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser
+  isExternal: false
+  name: IBotToUser.MakeMessage()
+  nameWithType: NullBotToUser.IBotToUser.MakeMessage()
+  fullName: NullBotToUser.IBotToUser.MakeMessage()
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#PostAsync(Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser
+  isExternal: false
+  name: IBotToUser.PostAsync(IMessageActivity, CancellationToken)
+  nameWithType: NullBotToUser.IBotToUser.PostAsync(IMessageActivity, CancellationToken)
+  fullName: NullBotToUser.IBotToUser.PostAsync(IMessageActivity, CancellationToken)
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser.#ctor*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser
+  isExternal: false
+  name: NullBotToUser
+  nameWithType: NullBotToUser.NullBotToUser
+  fullName: NullBotToUser.NullBotToUser
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/NullBotToUser.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#MakeMessage*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser
+  isExternal: false
+  name: Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.MakeMessage
+  nameWithType: NullBotToUser.Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.MakeMessage
+  fullName: NullBotToUser.Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.MakeMessage
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/NullBotToUser.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#PostAsync*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser
+  isExternal: false
+  name: Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.PostAsync
+  nameWithType: NullBotToUser.Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.PostAsync
+  fullName: NullBotToUser.Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.PostAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/NullBotToUser.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Extensions.PostAsync(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Extensions
+  isExternal: false
+  name: PostAsync(IBotToUser, String, String, CancellationToken)
+  nameWithType: Extensions.PostAsync(IBotToUser, String, String, CancellationToken)
+  fullName: Extensions.PostAsync(IBotToUser, String, String, CancellationToken)
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser
+  parent: Microsoft.Bot.Builder.Dialogs.Internals
+  isExternal: false
+  name: IBotToUser
+  nameWithType: IBotToUser
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser

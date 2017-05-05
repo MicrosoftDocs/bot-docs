@@ -1,0 +1,127 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Base.LocalizedScope
+  commentId: T:Microsoft.Bot.Builder.Base.LocalizedScope
+  id: LocalizedScope
+  children:
+  - Microsoft.Bot.Builder.Base.LocalizedScope.#ctor(System.String)
+  - Microsoft.Bot.Builder.Base.LocalizedScope.Dispose
+  langs:
+  - csharp
+  name: LocalizedScope
+  nameWithType: LocalizedScope
+  fullName: Microsoft.Bot.Builder.Base.LocalizedScope
+  type: Struct
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Base
+  summary: This class sets the ambient thread culture for a scope of code with a using-block.
+  syntax:
+    content: 'public struct LocalizedScope : IDisposable'
+  inheritance:
+  - System.ValueType
+  implements:
+  - System.IDisposable
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Base/LocalizedScope.xml
+- uid: Microsoft.Bot.Builder.Base.LocalizedScope.#ctor(System.String)
+  commentId: M:Microsoft.Bot.Builder.Base.LocalizedScope.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Microsoft.Bot.Builder.Base.LocalizedScope
+  langs:
+  - csharp
+  name: LocalizedScope(String)
+  nameWithType: LocalizedScope.LocalizedScope(String)
+  fullName: LocalizedScope.LocalizedScope(String)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Base
+  syntax:
+    content: public LocalizedScope (string locale);
+    parameters:
+    - id: locale
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Base.LocalizedScope.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Base/LocalizedScope.xml
+- uid: Microsoft.Bot.Builder.Base.LocalizedScope.Dispose
+  commentId: M:Microsoft.Bot.Builder.Base.LocalizedScope.Dispose
+  id: Dispose
+  parent: Microsoft.Bot.Builder.Base.LocalizedScope
+  langs:
+  - csharp
+  name: Dispose()
+  nameWithType: LocalizedScope.Dispose()
+  fullName: LocalizedScope.Dispose()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Base
+  syntax:
+    content: public void Dispose ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.Base.LocalizedScope.Dispose*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Base/LocalizedScope.xml
+references:
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: Microsoft.Bot.Builder.Base.LocalizedScope.#ctor(System.String)
+  parent: Microsoft.Bot.Builder.Base.LocalizedScope
+  isExternal: false
+  name: LocalizedScope(String)
+  nameWithType: LocalizedScope.LocalizedScope(String)
+  fullName: LocalizedScope.LocalizedScope(String)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Builder.Base.LocalizedScope.Dispose
+  parent: Microsoft.Bot.Builder.Base.LocalizedScope
+  isExternal: false
+  name: Dispose()
+  nameWithType: LocalizedScope.Dispose()
+  fullName: LocalizedScope.Dispose()
+- uid: Microsoft.Bot.Builder.Base.LocalizedScope.#ctor*
+  parent: Microsoft.Bot.Builder.Base.LocalizedScope
+  isExternal: false
+  name: LocalizedScope
+  nameWithType: LocalizedScope.LocalizedScope
+  fullName: LocalizedScope.LocalizedScope
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Base/LocalizedScope.xml
+- uid: Microsoft.Bot.Builder.Base.LocalizedScope.Dispose*
+  parent: Microsoft.Bot.Builder.Base.LocalizedScope
+  isExternal: false
+  name: Dispose
+  nameWithType: LocalizedScope.Dispose
+  fullName: LocalizedScope.Dispose
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Base/LocalizedScope.xml
+- uid: System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable

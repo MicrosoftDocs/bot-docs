@@ -1,0 +1,207 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IStore`1
+  commentId: T:Microsoft.Bot.Builder.Internals.Fibers.IStore`1
+  id: IStore`1
+  children:
+  - Microsoft.Bot.Builder.Internals.Fibers.IStore`1.Flush
+  - Microsoft.Bot.Builder.Internals.Fibers.IStore`1.Reset
+  - Microsoft.Bot.Builder.Internals.Fibers.IStore`1.Save(`0)
+  - Microsoft.Bot.Builder.Internals.Fibers.IStore`1.TryLoad(`0@)
+  langs:
+  - csharp
+  name: IStore<T>
+  nameWithType: IStore<T>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IStore<T>
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public interface IStore<T>
+    typeParameters:
+    - id: T
+      description: To be added.
+  derivedClasses:
+  - Microsoft.Bot.Builder.Internals.Fibers.ErrorResilientStore`1
+  - Microsoft.Bot.Builder.Internals.Fibers.FactoryStore`1
+  - Microsoft.Bot.Builder.Internals.Fibers.FormatterStore`1
+  implements: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/IStore`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IStore`1.Flush
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.IStore`1.Flush
+  id: Flush
+  parent: Microsoft.Bot.Builder.Internals.Fibers.IStore`1
+  langs:
+  - csharp
+  name: Flush()
+  nameWithType: IStore<T>.Flush()
+  fullName: IStore<T>.Flush()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public void Flush ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.Internals.Fibers.IStore`1.Flush*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/IStore`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IStore`1.Reset
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.IStore`1.Reset
+  id: Reset
+  parent: Microsoft.Bot.Builder.Internals.Fibers.IStore`1
+  langs:
+  - csharp
+  name: Reset()
+  nameWithType: IStore<T>.Reset()
+  fullName: IStore<T>.Reset()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public void Reset ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.Internals.Fibers.IStore`1.Reset*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/IStore`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IStore`1.Save(`0)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.IStore`1.Save(`0)
+  id: Save(`0)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.IStore`1
+  langs:
+  - csharp
+  name: Save(T)
+  nameWithType: IStore<T>.Save(T)
+  fullName: IStore<T>.Save(T)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public void Save (T item);
+    parameters:
+    - id: item
+      type: T
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.IStore`1.Save*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/IStore`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IStore`1.TryLoad(`0@)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.IStore`1.TryLoad(`0@)
+  id: TryLoad(`0@)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.IStore`1
+  langs:
+  - csharp
+  name: TryLoad(T)
+  nameWithType: IStore<T>.TryLoad(T)
+  fullName: IStore<T>.TryLoad(T)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public bool TryLoad (out T item);
+    parameters:
+    - id: item
+      type: T
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.IStore`1.TryLoad*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/IStore`1.xml
+references:
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IStore`1.Flush
+  parent: Microsoft.Bot.Builder.Internals.Fibers.IStore`1
+  isExternal: false
+  name: Flush()
+  nameWithType: IStore<T>.Flush()
+  fullName: IStore<T>.Flush()
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IStore`1.Reset
+  parent: Microsoft.Bot.Builder.Internals.Fibers.IStore`1
+  isExternal: false
+  name: Reset()
+  nameWithType: IStore<T>.Reset()
+  fullName: IStore<T>.Reset()
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IStore`1.Save(`0)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.IStore`1
+  isExternal: false
+  name: Save(T)
+  nameWithType: IStore<T>.Save(T)
+  fullName: IStore<T>.Save(T)
+- uid: T
+  isExternal: true
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IStore`1.TryLoad(`0@)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.IStore`1
+  isExternal: false
+  name: TryLoad(T)
+  nameWithType: IStore<T>.TryLoad(T)
+  fullName: IStore<T>.TryLoad(T)
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IStore`1.Flush*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.IStore`1
+  isExternal: false
+  name: Flush
+  nameWithType: IStore<T>.Flush
+  fullName: IStore<T>.Flush
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/IStore`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IStore`1.Reset*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.IStore`1
+  isExternal: false
+  name: Reset
+  nameWithType: IStore<T>.Reset
+  fullName: IStore<T>.Reset
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/IStore`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IStore`1.Save*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.IStore`1
+  isExternal: false
+  name: Save
+  nameWithType: IStore<T>.Save
+  fullName: IStore<T>.Save
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/IStore`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IStore`1.TryLoad*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.IStore`1
+  isExternal: false
+  name: TryLoad
+  nameWithType: IStore<T>.TryLoad
+  fullName: IStore<T>.TryLoad
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/IStore`1.xml

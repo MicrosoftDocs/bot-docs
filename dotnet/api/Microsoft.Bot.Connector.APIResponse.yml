@@ -1,0 +1,159 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.APIResponse
+  commentId: T:Microsoft.Bot.Connector.APIResponse
+  id: APIResponse
+  children:
+  - Microsoft.Bot.Connector.APIResponse.#ctor
+  - Microsoft.Bot.Connector.APIResponse.#ctor(System.String)
+  - Microsoft.Bot.Connector.APIResponse.Message
+  langs:
+  - csharp
+  name: APIResponse
+  nameWithType: APIResponse
+  fullName: Microsoft.Bot.Connector.APIResponse
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public class APIResponse
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/APIResponse.xml
+- uid: Microsoft.Bot.Connector.APIResponse.#ctor
+  commentId: M:Microsoft.Bot.Connector.APIResponse.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Connector.APIResponse
+  langs:
+  - csharp
+  name: APIResponse()
+  nameWithType: APIResponse.APIResponse()
+  fullName: APIResponse.APIResponse()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the APIResponse class.
+  syntax:
+    content: public APIResponse ();
+    parameters: []
+  overload: Microsoft.Bot.Connector.APIResponse.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/APIResponse.xml
+- uid: Microsoft.Bot.Connector.APIResponse.#ctor(System.String)
+  commentId: M:Microsoft.Bot.Connector.APIResponse.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Microsoft.Bot.Connector.APIResponse
+  langs:
+  - csharp
+  name: APIResponse(String)
+  nameWithType: APIResponse.APIResponse(String)
+  fullName: APIResponse.APIResponse(String)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the APIResponse class.
+  syntax:
+    content: public APIResponse (string message = null);
+    parameters:
+    - id: message
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.APIResponse.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/APIResponse.xml
+- uid: Microsoft.Bot.Connector.APIResponse.Message
+  commentId: P:Microsoft.Bot.Connector.APIResponse.Message
+  id: Message
+  parent: Microsoft.Bot.Connector.APIResponse
+  langs:
+  - csharp
+  name: Message
+  nameWithType: APIResponse.Message
+  fullName: APIResponse.Message
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="message")]
+
+      public string Message { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.APIResponse.Message*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/APIResponse.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.APIResponse.#ctor
+  parent: Microsoft.Bot.Connector.APIResponse
+  isExternal: false
+  name: APIResponse()
+  nameWithType: APIResponse.APIResponse()
+  fullName: APIResponse.APIResponse()
+- uid: Microsoft.Bot.Connector.APIResponse.#ctor(System.String)
+  parent: Microsoft.Bot.Connector.APIResponse
+  isExternal: false
+  name: APIResponse(String)
+  nameWithType: APIResponse.APIResponse(String)
+  fullName: APIResponse.APIResponse(String)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.APIResponse.Message
+  parent: Microsoft.Bot.Connector.APIResponse
+  isExternal: false
+  name: Message
+  nameWithType: APIResponse.Message
+  fullName: APIResponse.Message
+- uid: Microsoft.Bot.Connector.APIResponse.#ctor*
+  parent: Microsoft.Bot.Connector.APIResponse
+  isExternal: false
+  name: APIResponse
+  nameWithType: APIResponse.APIResponse
+  fullName: APIResponse.APIResponse
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/APIResponse.xml
+- uid: Microsoft.Bot.Connector.APIResponse.Message*
+  parent: Microsoft.Bot.Connector.APIResponse
+  isExternal: false
+  name: Message
+  nameWithType: APIResponse.Message
+  fullName: APIResponse.Message
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/APIResponse.xml

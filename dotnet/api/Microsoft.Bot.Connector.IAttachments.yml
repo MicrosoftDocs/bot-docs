@@ -1,0 +1,278 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.IAttachments
+  commentId: T:Microsoft.Bot.Connector.IAttachments
+  id: IAttachments
+  children:
+  - Microsoft.Bot.Connector.IAttachments.GetAttachmentInfoWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.IAttachments.GetAttachmentWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  name: IAttachments
+  nameWithType: IAttachments
+  fullName: Microsoft.Bot.Connector.IAttachments
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: Attachments operations.
+  syntax:
+    content: public interface IAttachments
+  derivedClasses:
+  - Microsoft.Bot.Connector.Attachments
+  implements: []
+  extensionMethods:
+  - Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachment(Microsoft.Bot.Connector.IAttachments,System.String,System.String)
+  - Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentAsync(Microsoft.Bot.Connector.IAttachments,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentInfo(Microsoft.Bot.Connector.IAttachments,System.String)
+  - Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentInfoAsync(Microsoft.Bot.Connector.IAttachments,System.String,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentStream(Microsoft.Bot.Connector.IAttachments,System.String,System.String)
+  - Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentStreamAsync(Microsoft.Bot.Connector.IAttachments,System.String,System.String,System.Threading.CancellationToken)
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IAttachments.xml
+- uid: Microsoft.Bot.Connector.IAttachments.GetAttachmentInfoWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.IAttachments.GetAttachmentInfoWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  id: GetAttachmentInfoWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.IAttachments
+  langs:
+  - csharp
+  name: GetAttachmentInfoWithHttpMessagesAsync(String, Dictionary<String,List<String>>, CancellationToken)
+  nameWithType: IAttachments.GetAttachmentInfoWithHttpMessagesAsync(String, Dictionary<String,List<String>>, CancellationToken)
+  fullName: IAttachments.GetAttachmentInfoWithHttpMessagesAsync(String, Dictionary<String,List<String>>, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: GetAttachmentInfo
+  syntax:
+    content: public System.Threading.Tasks.Task<Microsoft.Rest.HttpOperationResponse<object>> GetAttachmentInfoWithHttpMessagesAsync (string attachmentId, System.Collections.Generic.Dictionary<string,System.Collections.Generic.List<string>> customHeaders = null, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: attachmentId
+      type: System.String
+      description: attachment id
+    - id: customHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}
+      description: The headers that will be added to request.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Rest.HttpOperationResponse{System.Object}}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IAttachments.GetAttachmentInfoWithHttpMessagesAsync*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IAttachments.xml
+- uid: Microsoft.Bot.Connector.IAttachments.GetAttachmentWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.IAttachments.GetAttachmentWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  id: GetAttachmentWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.IAttachments
+  langs:
+  - csharp
+  name: GetAttachmentWithHttpMessagesAsync(String, String, Dictionary<String,List<String>>, CancellationToken)
+  nameWithType: IAttachments.GetAttachmentWithHttpMessagesAsync(String, String, Dictionary<String,List<String>>, CancellationToken)
+  fullName: IAttachments.GetAttachmentWithHttpMessagesAsync(String, String, Dictionary<String,List<String>>, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: GetAttachment
+  syntax:
+    content: public System.Threading.Tasks.Task<Microsoft.Rest.HttpOperationResponse<object>> GetAttachmentWithHttpMessagesAsync (string attachmentId, string viewId, System.Collections.Generic.Dictionary<string,System.Collections.Generic.List<string>> customHeaders = null, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: attachmentId
+      type: System.String
+      description: attachment id
+    - id: viewId
+      type: System.String
+      description: View id from attachmentInfo
+    - id: customHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}
+      description: The headers that will be added to request.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Rest.HttpOperationResponse{System.Object}}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IAttachments.GetAttachmentWithHttpMessagesAsync*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IAttachments.xml
+references:
+- uid: Microsoft.Bot.Connector.IAttachments.GetAttachmentInfoWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.IAttachments
+  isExternal: false
+  name: GetAttachmentInfoWithHttpMessagesAsync(String, Dictionary<String,List<String>>, CancellationToken)
+  nameWithType: IAttachments.GetAttachmentInfoWithHttpMessagesAsync(String, Dictionary<String,List<String>>, CancellationToken)
+  fullName: IAttachments.GetAttachmentInfoWithHttpMessagesAsync(String, Dictionary<String,List<String>>, CancellationToken)
+- uid: System.Threading.Tasks.Task`1
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.Rest.HttpOperationResponse`1
+  name: HttpOperationResponse
+  nameWithType: HttpOperationResponse
+  fullName: Microsoft.Rest.HttpOperationResponse
+- uid: System.Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Threading.Tasks.Task{Microsoft.Rest.HttpOperationResponse{System.Object}}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<HttpOperationResponse<Object>>
+  nameWithType: Task<HttpOperationResponse<Object>>
+  fullName: System.Threading.Tasks.Task<Microsoft.Rest.HttpOperationResponse<System.Object>>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Rest.HttpOperationResponse`1
+    name: HttpOperationResponse
+    nameWithType: HttpOperationResponse
+    fullName: Microsoft.Rest.HttpOperationResponse
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic.Dictionary`2
+  name: Dictionary
+  nameWithType: Dictionary
+  fullName: System.Collections.Generic.Dictionary
+- uid: System.Collections.Generic.List`1
+  name: List
+  nameWithType: List
+  fullName: System.Collections.Generic.List
+- uid: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: Dictionary<String,List<String>>
+  nameWithType: Dictionary<String,List<String>>
+  fullName: System.Collections.Generic.Dictionary<System.String,System.Collections.Generic.List<System.String>>
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Connector.IAttachments.GetAttachmentWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.IAttachments
+  isExternal: false
+  name: GetAttachmentWithHttpMessagesAsync(String, String, Dictionary<String,List<String>>, CancellationToken)
+  nameWithType: IAttachments.GetAttachmentWithHttpMessagesAsync(String, String, Dictionary<String,List<String>>, CancellationToken)
+  fullName: IAttachments.GetAttachmentWithHttpMessagesAsync(String, String, Dictionary<String,List<String>>, CancellationToken)
+- uid: Microsoft.Bot.Connector.IAttachments.GetAttachmentInfoWithHttpMessagesAsync*
+  parent: Microsoft.Bot.Connector.IAttachments
+  isExternal: false
+  name: GetAttachmentInfoWithHttpMessagesAsync
+  nameWithType: IAttachments.GetAttachmentInfoWithHttpMessagesAsync
+  fullName: IAttachments.GetAttachmentInfoWithHttpMessagesAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IAttachments.xml
+- uid: Microsoft.Bot.Connector.IAttachments.GetAttachmentWithHttpMessagesAsync*
+  parent: Microsoft.Bot.Connector.IAttachments
+  isExternal: false
+  name: GetAttachmentWithHttpMessagesAsync
+  nameWithType: IAttachments.GetAttachmentWithHttpMessagesAsync
+  fullName: IAttachments.GetAttachmentWithHttpMessagesAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IAttachments.xml
+- uid: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachment(Microsoft.Bot.Connector.IAttachments,System.String,System.String)
+  parent: Microsoft.Bot.Connector.AttachmentsExtensions
+  isExternal: false
+  name: GetAttachment(IAttachments, String, String)
+  nameWithType: AttachmentsExtensions.GetAttachment(IAttachments, String, String)
+  fullName: AttachmentsExtensions.GetAttachment(IAttachments, String, String)
+- uid: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentAsync(Microsoft.Bot.Connector.IAttachments,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.AttachmentsExtensions
+  isExternal: false
+  name: GetAttachmentAsync(IAttachments, String, String, CancellationToken)
+  nameWithType: AttachmentsExtensions.GetAttachmentAsync(IAttachments, String, String, CancellationToken)
+  fullName: AttachmentsExtensions.GetAttachmentAsync(IAttachments, String, String, CancellationToken)
+- uid: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentInfo(Microsoft.Bot.Connector.IAttachments,System.String)
+  parent: Microsoft.Bot.Connector.AttachmentsExtensions
+  isExternal: false
+  name: GetAttachmentInfo(IAttachments, String)
+  nameWithType: AttachmentsExtensions.GetAttachmentInfo(IAttachments, String)
+  fullName: AttachmentsExtensions.GetAttachmentInfo(IAttachments, String)
+- uid: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentInfoAsync(Microsoft.Bot.Connector.IAttachments,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.AttachmentsExtensions
+  isExternal: false
+  name: GetAttachmentInfoAsync(IAttachments, String, CancellationToken)
+  nameWithType: AttachmentsExtensions.GetAttachmentInfoAsync(IAttachments, String, CancellationToken)
+  fullName: AttachmentsExtensions.GetAttachmentInfoAsync(IAttachments, String, CancellationToken)
+- uid: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentStream(Microsoft.Bot.Connector.IAttachments,System.String,System.String)
+  parent: Microsoft.Bot.Connector.AttachmentsExtensions
+  isExternal: false
+  name: GetAttachmentStream(IAttachments, String, String)
+  nameWithType: AttachmentsExtensions.GetAttachmentStream(IAttachments, String, String)
+  fullName: AttachmentsExtensions.GetAttachmentStream(IAttachments, String, String)
+- uid: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentStreamAsync(Microsoft.Bot.Connector.IAttachments,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.AttachmentsExtensions
+  isExternal: false
+  name: GetAttachmentStreamAsync(IAttachments, String, String, CancellationToken)
+  nameWithType: AttachmentsExtensions.GetAttachmentStreamAsync(IAttachments, String, String, CancellationToken)
+  fullName: AttachmentsExtensions.GetAttachmentStreamAsync(IAttachments, String, String, CancellationToken)

@@ -1,0 +1,554 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+  commentId: T:Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+  id: Fiber`1
+  children:
+  - Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.#ctor(Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory{`0},Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory{`0})
+  - Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber{C}#Done
+  - Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber{C}#Frames
+  - Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber{C}#Push
+  - Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber{C}#Waits
+  - Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiberLoop{C}#PollAsync(`0,System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IWaiter{C}#Mark
+  - Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IWaiter{C}#Wait
+  langs:
+  - csharp
+  name: Fiber<C>
+  nameWithType: Fiber<C>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.Fiber<C>
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: 'public sealed class Fiber<C> : Microsoft.Bot.Builder.Internals.Fibers.IFiber<C>, Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop<C>, Microsoft.Bot.Builder.Internals.Fibers.IWaiter<C>'
+    typeParameters:
+    - id: C
+      description: To be added.
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Bot.Builder.Internals.Fibers.IFiber{C}
+  - Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop{C}
+  - Microsoft.Bot.Builder.Internals.Fibers.IWaiter{C}
+  inheritedMembers: []
+  extensionMethods:
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.Call``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1},``1)
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.Call``3(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1},``1,Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``2})
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.Done``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},``1)
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.Fail``1(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},System.Exception)
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.Post``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},``1)
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.Reset``1(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0})
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.Wait``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1})
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Fiber`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.#ctor(Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory{`0},Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory{`0})
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.#ctor(Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory{`0},Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory{`0})
+  id: '#ctor(Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory{`0},Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory{`0})'
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+  langs:
+  - csharp
+  name: Fiber<C>(IFrameFactory<C>, IWaitFactory<C>)
+  nameWithType: Fiber<C>.Fiber<C>(IFrameFactory<C>, IWaitFactory<C>)
+  fullName: Fiber<C>.Fiber<C>(IFrameFactory<C>, IWaitFactory<C>)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public Fiber (Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory<C> factory, Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory<C> waits);
+    parameters:
+    - id: factory
+      type: Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory`1
+      description: To be added.
+    - id: waits
+      type: Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory`1
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Fiber`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber{C}#Done
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber<C>#Done
+  id: Microsoft#Bot#Builder#Internals#Fibers#IFiber{C}#Done
+  isEii: true
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+  langs:
+  - csharp
+  name: IFiber<C>.Done()
+  nameWithType: Fiber<C>.IFiber<C>.Done()
+  fullName: Fiber<C>.IFiber<C>.Done()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: void IFiber<C>.Done ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber{C}#Done*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Fiber`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber{C}#Frames
+  commentId: P:Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber<C>#Frames
+  id: Microsoft#Bot#Builder#Internals#Fibers#IFiber{C}#Frames
+  isEii: true
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+  langs:
+  - csharp
+  name: IFiber<C>.Frames
+  nameWithType: Fiber<C>.IFiber<C>.Frames
+  fullName: Fiber<C>.IFiber<C>.Frames
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: System.Collections.Generic.IReadOnlyList<Microsoft.Bot.Builder.Internals.Fibers.IFrame<C>> Microsoft.Bot.Builder.Internals.Fibers.IFiber<C>.Frames { get; }
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Microsoft.Bot.Builder.Internals.Fibers.IFrame{C}}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber{C}#Frames*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Fiber`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber{C}#Push
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber<C>#Push
+  id: Microsoft#Bot#Builder#Internals#Fibers#IFiber{C}#Push
+  isEii: true
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+  langs:
+  - csharp
+  name: IFiber<C>.Push()
+  nameWithType: Fiber<C>.IFiber<C>.Push()
+  fullName: Fiber<C>.IFiber<C>.Push()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: void IFiber<C>.Push ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber{C}#Push*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Fiber`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber{C}#Waits
+  commentId: P:Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber<C>#Waits
+  id: Microsoft#Bot#Builder#Internals#Fibers#IFiber{C}#Waits
+  isEii: true
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+  langs:
+  - csharp
+  name: IFiber<C>.Waits
+  nameWithType: Fiber<C>.IFiber<C>.Waits
+  fullName: Fiber<C>.IFiber<C>.Waits
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory<C> Microsoft.Bot.Builder.Internals.Fibers.IFiber<C>.Waits { get; }
+    return:
+      type: Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory`1
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber{C}#Waits*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Fiber`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiberLoop{C}#PollAsync(`0,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiberLoop<C>#PollAsync(`0,System.Threading.CancellationToken)
+  id: Microsoft#Bot#Builder#Internals#Fibers#IFiberLoop{C}#PollAsync(`0,System.Threading.CancellationToken)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+  langs:
+  - csharp
+  name: IFiberLoop<C>.PollAsync(C, CancellationToken)
+  nameWithType: Fiber<C>.IFiberLoop<C>.PollAsync(C, CancellationToken)
+  fullName: Fiber<C>.IFiberLoop<C>.PollAsync(C, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Internals.Fibers.Fiber`1/<Microsoft-Bot-Builder-Internals-Fibers-IFiberLoop<C>-PollAsync>d__16))]
+
+      System.Threading.Tasks.Task<Microsoft.Bot.Builder.Internals.Fibers.IWait<C>> IFiberLoop<C>.PollAsync (C context, System.Threading.CancellationToken token);
+    parameters:
+    - id: context
+      type: C
+      description: To be added.
+    - id: token
+      type: System.Threading.CancellationToken
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Builder.Internals.Fibers.IWait{C}}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiberLoop{C}#PollAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Fiber`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IWaiter{C}#Mark
+  commentId: P:Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IWaiter<C>#Mark
+  id: Microsoft#Bot#Builder#Internals#Fibers#IWaiter{C}#Mark
+  isEii: true
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+  langs:
+  - csharp
+  name: IWaiter<C>.Mark
+  nameWithType: Fiber<C>.IWaiter<C>.Mark
+  fullName: Fiber<C>.IWaiter<C>.Mark
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: Microsoft.Bot.Builder.Internals.Fibers.IWait<C> Microsoft.Bot.Builder.Internals.Fibers.IWaiter<C>.Mark { get; set; }
+    return:
+      type: Microsoft.Bot.Builder.Internals.Fibers.IWait`1
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IWaiter{C}#Mark*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Fiber`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IWaiter{C}#Wait
+  commentId: P:Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IWaiter<C>#Wait
+  id: Microsoft#Bot#Builder#Internals#Fibers#IWaiter{C}#Wait
+  isEii: true
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+  langs:
+  - csharp
+  name: IWaiter<C>.Wait
+  nameWithType: Fiber<C>.IWaiter<C>.Wait
+  fullName: Fiber<C>.IWaiter<C>.Wait
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: Microsoft.Bot.Builder.Internals.Fibers.IWait<C> Microsoft.Bot.Builder.Internals.Fibers.IWaiter<C>.Wait { get; set; }
+    return:
+      type: Microsoft.Bot.Builder.Internals.Fibers.IWait`1
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IWaiter{C}#Wait*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Fiber`1.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.#ctor(Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory{`0},Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory{`0})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+  isExternal: false
+  name: Fiber<C>(IFrameFactory<C>, IWaitFactory<C>)
+  nameWithType: Fiber<C>.Fiber<C>(IFrameFactory<C>, IWaitFactory<C>)
+  fullName: Fiber<C>.Fiber<C>(IFrameFactory<C>, IWaitFactory<C>)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory`1
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: IFrameFactory<C>
+  nameWithType: IFrameFactory<C>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory<C>
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory`1
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: IWaitFactory<C>
+  nameWithType: IWaitFactory<C>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory<C>
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber{C}#Done
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+  isExternal: false
+  name: IFiber<C>.Done()
+  nameWithType: Fiber<C>.IFiber<C>.Done()
+  fullName: Fiber<C>.IFiber<C>.Done()
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber{C}#Frames
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+  isExternal: false
+  name: IFiber<C>.Frames
+  nameWithType: Fiber<C>.IFiber<C>.Frames
+  fullName: Fiber<C>.IFiber<C>.Frames
+- uid: System.Collections.Generic.IReadOnlyList`1
+  name: IReadOnlyList
+  nameWithType: IReadOnlyList
+  fullName: System.Collections.Generic.IReadOnlyList
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IFrame`1
+  name: IFrame<C>
+  nameWithType: IFrame<C>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IFrame<C>
+- uid: C
+  name: C
+  nameWithType: C
+  fullName: C
+- uid: System.Collections.Generic.IReadOnlyList{Microsoft.Bot.Builder.Internals.Fibers.IFrame{C}}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IReadOnlyList<IFrame<C>>
+  nameWithType: IReadOnlyList<IFrame<C>>
+  fullName: System.Collections.Generic.IReadOnlyList<Microsoft.Bot.Builder.Internals.Fibers.IFrame<C>>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.IFrame`1
+    name: IFrame
+    nameWithType: IFrame
+    fullName: Microsoft.Bot.Builder.Internals.Fibers.IFrame
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: C
+    name: C
+    nameWithType: C
+    fullName: C
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber{C}#Push
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+  isExternal: false
+  name: IFiber<C>.Push()
+  nameWithType: Fiber<C>.IFiber<C>.Push()
+  fullName: Fiber<C>.IFiber<C>.Push()
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber{C}#Waits
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+  isExternal: false
+  name: IFiber<C>.Waits
+  nameWithType: Fiber<C>.IFiber<C>.Waits
+  fullName: Fiber<C>.IFiber<C>.Waits
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiberLoop{C}#PollAsync(`0,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+  isExternal: false
+  name: IFiberLoop<C>.PollAsync(C, CancellationToken)
+  nameWithType: Fiber<C>.IFiberLoop<C>.PollAsync(C, CancellationToken)
+  fullName: Fiber<C>.IFiberLoop<C>.PollAsync(C, CancellationToken)
+- uid: System.Threading.Tasks.Task`1
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IWait`1
+  name: IWait<C>
+  nameWithType: IWait<C>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IWait<C>
+- uid: System.Threading.Tasks.Task{Microsoft.Bot.Builder.Internals.Fibers.IWait{C}}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<IWait<C>>
+  nameWithType: Task<IWait<C>>
+  fullName: System.Threading.Tasks.Task<Microsoft.Bot.Builder.Internals.Fibers.IWait<C>>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.IWait`1
+    name: IWait
+    nameWithType: IWait
+    fullName: Microsoft.Bot.Builder.Internals.Fibers.IWait
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: C
+    name: C
+    nameWithType: C
+    fullName: C
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IWaiter{C}#Mark
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+  isExternal: false
+  name: IWaiter<C>.Mark
+  nameWithType: Fiber<C>.IWaiter<C>.Mark
+  fullName: Fiber<C>.IWaiter<C>.Mark
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IWaiter{C}#Wait
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+  isExternal: false
+  name: IWaiter<C>.Wait
+  nameWithType: Fiber<C>.IWaiter<C>.Wait
+  fullName: Fiber<C>.IWaiter<C>.Wait
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.#ctor*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+  isExternal: false
+  name: Fiber<C>
+  nameWithType: Fiber<C>.Fiber<C>
+  fullName: Fiber<C>.Fiber<C>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Fiber`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber{C}#Done*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+  isExternal: false
+  name: Microsoft.Bot.Builder.Internals.Fibers.IFiber<C>.Done
+  nameWithType: Fiber<C>.Microsoft.Bot.Builder.Internals.Fibers.IFiber<C>.Done
+  fullName: Fiber<C>.Microsoft.Bot.Builder.Internals.Fibers.IFiber<C>.Done
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Fiber`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber{C}#Frames*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+  isExternal: false
+  name: Microsoft.Bot.Builder.Internals.Fibers.IFiber<C>.Frames
+  nameWithType: Fiber<C>.Microsoft.Bot.Builder.Internals.Fibers.IFiber<C>.Frames
+  fullName: Fiber<C>.Microsoft.Bot.Builder.Internals.Fibers.IFiber<C>.Frames
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Fiber`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber{C}#Push*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+  isExternal: false
+  name: Microsoft.Bot.Builder.Internals.Fibers.IFiber<C>.Push
+  nameWithType: Fiber<C>.Microsoft.Bot.Builder.Internals.Fibers.IFiber<C>.Push
+  fullName: Fiber<C>.Microsoft.Bot.Builder.Internals.Fibers.IFiber<C>.Push
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Fiber`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber{C}#Waits*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+  isExternal: false
+  name: Microsoft.Bot.Builder.Internals.Fibers.IFiber<C>.Waits
+  nameWithType: Fiber<C>.Microsoft.Bot.Builder.Internals.Fibers.IFiber<C>.Waits
+  fullName: Fiber<C>.Microsoft.Bot.Builder.Internals.Fibers.IFiber<C>.Waits
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Fiber`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiberLoop{C}#PollAsync*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+  isExternal: false
+  name: Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop<C>.PollAsync
+  nameWithType: Fiber<C>.Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop<C>.PollAsync
+  fullName: Fiber<C>.Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop<C>.PollAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Fiber`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IWaiter{C}#Mark*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+  isExternal: false
+  name: Microsoft.Bot.Builder.Internals.Fibers.IWaiter<C>.Mark
+  nameWithType: Fiber<C>.Microsoft.Bot.Builder.Internals.Fibers.IWaiter<C>.Mark
+  fullName: Fiber<C>.Microsoft.Bot.Builder.Internals.Fibers.IWaiter<C>.Mark
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Fiber`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IWaiter{C}#Wait*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Fiber`1
+  isExternal: false
+  name: Microsoft.Bot.Builder.Internals.Fibers.IWaiter<C>.Wait
+  nameWithType: Fiber<C>.Microsoft.Bot.Builder.Internals.Fibers.IWaiter<C>.Wait
+  fullName: Fiber<C>.Microsoft.Bot.Builder.Internals.Fibers.IWaiter<C>.Wait
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Fiber`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Call``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1},``1)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Call<C,T>(IFiber<C>, Rest<C,T>, T)
+  nameWithType: Extensions.Call<C,T>(IFiber<C>, Rest<C,T>, T)
+  fullName: Extensions.Call<C,T>(IFiber<C>, Rest<C,T>, T)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Call``3(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1},``1,Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``2})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Call<C,T,R>(IFiber<C>, Rest<C,T>, T, Rest<C,R>)
+  nameWithType: Extensions.Call<C,T,R>(IFiber<C>, Rest<C,T>, T, Rest<C,R>)
+  fullName: Extensions.Call<C,T,R>(IFiber<C>, Rest<C,T>, T, Rest<C,R>)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Done``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},``1)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Done<C,T>(IFiber<C>, T)
+  nameWithType: Extensions.Done<C,T>(IFiber<C>, T)
+  fullName: Extensions.Done<C,T>(IFiber<C>, T)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Fail``1(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},System.Exception)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Fail<C>(IFiber<C>, Exception)
+  nameWithType: Extensions.Fail<C>(IFiber<C>, Exception)
+  fullName: Extensions.Fail<C>(IFiber<C>, Exception)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Post``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},``1)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Post<C,T>(IFiber<C>, T)
+  nameWithType: Extensions.Post<C,T>(IFiber<C>, T)
+  fullName: Extensions.Post<C,T>(IFiber<C>, T)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Reset``1(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Reset<C>(IFiber<C>)
+  nameWithType: Extensions.Reset<C>(IFiber<C>)
+  fullName: Extensions.Reset<C>(IFiber<C>)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Wait``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Wait<C,T>(IFiber<C>, Rest<C,T>)
+  nameWithType: Extensions.Wait<C,T>(IFiber<C>, Rest<C,T>)
+  fullName: Extensions.Wait<C,T>(IFiber<C>, Rest<C,T>)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IFiber`1
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: IFiber<C>
+  nameWithType: IFiber<C>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IFiber<C>
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop`1
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: IFiberLoop<C>
+  nameWithType: IFiberLoop<C>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop<C>
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IWaiter`1
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: IWaiter<C>
+  nameWithType: IWaiter<C>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IWaiter<C>

@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1.TermsDelegate
+  commentId: T:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1.TermsDelegate
+  id: RecognizeEnumeration`1.TermsDelegate
+  langs:
+  - csharp
+  name: RecognizeEnumeration<T>.TermsDelegate
+  nameWithType: RecognizeEnumeration<T>.TermsDelegate
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration<T>.TermsDelegate
+  type: Delegate
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Delegate to return the terms to match on for a C# value.
+  syntax:
+    content: 'public delegate System.Collections.Generic.IEnumerable<string> RecognizeEnumeration<T>.TermsDelegate(object value) where T : class;'
+    typeParameters:
+    - id: T
+      description: To be added.
+  inheritance:
+  - System.Delegate
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizeEnumeration`1+TermsDelegate.xml
+references:
+- uid: System.Delegate
+  parent: System
+  isExternal: true
+  name: Delegate
+  nameWithType: Delegate
+  fullName: System.Delegate

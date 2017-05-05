@@ -1,0 +1,610 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.ChannelAccount
+  commentId: T:Microsoft.Bot.Connector.ChannelAccount
+  id: ChannelAccount
+  children:
+  - Microsoft.Bot.Connector.ChannelAccount.#ctor
+  - Microsoft.Bot.Connector.ChannelAccount.#ctor(System.String,System.String)
+  - Microsoft.Bot.Connector.ChannelAccount.#ctor(System.String,System.String,System.String,System.String,System.Nullable{System.Boolean})
+  - Microsoft.Bot.Connector.ChannelAccount.Address
+  - Microsoft.Bot.Connector.ChannelAccount.ChannelId
+  - Microsoft.Bot.Connector.ChannelAccount.Equals(Microsoft.Bot.Connector.ChannelAccount)
+  - Microsoft.Bot.Connector.ChannelAccount.Equals(System.Object)
+  - Microsoft.Bot.Connector.ChannelAccount.GetHashCode
+  - Microsoft.Bot.Connector.ChannelAccount.Id
+  - Microsoft.Bot.Connector.ChannelAccount.IsBot
+  - Microsoft.Bot.Connector.ChannelAccount.Name
+  - Microsoft.Bot.Connector.ChannelAccount.Validate
+  langs:
+  - csharp
+  name: ChannelAccount
+  nameWithType: ChannelAccount
+  fullName: Microsoft.Bot.Connector.ChannelAccount
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: Channel account information needed to route a message
+  syntax:
+    content: public class ChannelAccount
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  - botconnector-1.1.0
+  monikers:
+  - botbuilder-3.5.5
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ChannelAccount.xml
+- uid: Microsoft.Bot.Connector.ChannelAccount.#ctor
+  commentId: M:Microsoft.Bot.Connector.ChannelAccount.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  langs:
+  - csharp
+  name: ChannelAccount()
+  nameWithType: ChannelAccount.ChannelAccount()
+  fullName: ChannelAccount.ChannelAccount()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the ChannelAccount class.
+  syntax:
+    content: public ChannelAccount ();
+    parameters: []
+  overload: Microsoft.Bot.Connector.ChannelAccount.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  - botconnector-1.1.0
+  monikers:
+  - botbuilder-3.5.5
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ChannelAccount.xml
+- uid: Microsoft.Bot.Connector.ChannelAccount.#ctor(System.String,System.String)
+  commentId: M:Microsoft.Bot.Connector.ChannelAccount.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  langs:
+  - csharp
+  name: ChannelAccount(String, String)
+  nameWithType: ChannelAccount.ChannelAccount(String, String)
+  fullName: ChannelAccount.ChannelAccount(String, String)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the ChannelAccount class.
+  syntax:
+    content: public ChannelAccount (string id = null, string name = null);
+    parameters:
+    - id: id
+      type: System.String
+      description: To be added.
+    - id: name
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ChannelAccount.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ChannelAccount.xml
+- uid: Microsoft.Bot.Connector.ChannelAccount.#ctor(System.String,System.String,System.String,System.String,System.Nullable{System.Boolean})
+  commentId: M:Microsoft.Bot.Connector.ChannelAccount.#ctor(System.String,System.String,System.String,System.String,System.Nullable{System.Boolean})
+  id: '#ctor(System.String,System.String,System.String,System.String,System.Nullable{System.Boolean})'
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  langs:
+  - csharp
+  name: ChannelAccount(String, String, String, String, Nullable<Boolean>)
+  nameWithType: ChannelAccount.ChannelAccount(String, String, String, String, Nullable<Boolean>)
+  fullName: ChannelAccount.ChannelAccount(String, String, String, String, Nullable<Boolean>)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public ChannelAccount (string channelId, string name = null, string address = null, string id = null, Nullable<bool> isBot = null);
+    parameters:
+    - id: channelId
+      type: System.String
+      description: To be added.
+    - id: name
+      type: System.String
+      description: To be added.
+    - id: address
+      type: System.String
+      description: To be added.
+    - id: id
+      type: System.String
+      description: To be added.
+    - id: isBot
+      type: System.Nullable{System.Boolean}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ChannelAccount.#ctor*
+  exceptions: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ChannelAccount.xml
+- uid: Microsoft.Bot.Connector.ChannelAccount.Address
+  commentId: P:Microsoft.Bot.Connector.ChannelAccount.Address
+  id: Address
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  langs:
+  - csharp
+  name: Address
+  nameWithType: ChannelAccount.Address
+  fullName: ChannelAccount.Address
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="address")]
+
+      public string Address { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ChannelAccount.Address*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ChannelAccount.xml
+- uid: Microsoft.Bot.Connector.ChannelAccount.ChannelId
+  commentId: P:Microsoft.Bot.Connector.ChannelAccount.ChannelId
+  id: ChannelId
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  langs:
+  - csharp
+  name: ChannelId
+  nameWithType: ChannelAccount.ChannelId
+  fullName: ChannelAccount.ChannelId
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="channelId")]
+
+      public string ChannelId { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ChannelAccount.ChannelId*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ChannelAccount.xml
+- uid: Microsoft.Bot.Connector.ChannelAccount.Equals(Microsoft.Bot.Connector.ChannelAccount)
+  commentId: M:Microsoft.Bot.Connector.ChannelAccount.Equals(Microsoft.Bot.Connector.ChannelAccount)
+  id: Equals(Microsoft.Bot.Connector.ChannelAccount)
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  langs:
+  - csharp
+  name: Equals(ChannelAccount)
+  nameWithType: ChannelAccount.Equals(ChannelAccount)
+  fullName: ChannelAccount.Equals(ChannelAccount)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public bool Equals (Microsoft.Bot.Connector.ChannelAccount other);
+    parameters:
+    - id: other
+      type: Microsoft.Bot.Connector.ChannelAccount
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ChannelAccount.Equals*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ChannelAccount.xml
+- uid: Microsoft.Bot.Connector.ChannelAccount.Equals(System.Object)
+  commentId: M:Microsoft.Bot.Connector.ChannelAccount.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  langs:
+  - csharp
+  name: Equals(Object)
+  nameWithType: ChannelAccount.Equals(Object)
+  fullName: ChannelAccount.Equals(Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public override bool Equals (object obj);
+    parameters:
+    - id: obj
+      type: System.Object
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ChannelAccount.Equals*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ChannelAccount.xml
+- uid: Microsoft.Bot.Connector.ChannelAccount.GetHashCode
+  commentId: M:Microsoft.Bot.Connector.ChannelAccount.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  langs:
+  - csharp
+  name: GetHashCode()
+  nameWithType: ChannelAccount.GetHashCode()
+  fullName: ChannelAccount.GetHashCode()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public override int GetHashCode ();
+    parameters: []
+    return:
+      type: System.Int32
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ChannelAccount.GetHashCode*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ChannelAccount.xml
+- uid: Microsoft.Bot.Connector.ChannelAccount.Id
+  commentId: P:Microsoft.Bot.Connector.ChannelAccount.Id
+  id: Id
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  langs:
+  - csharp
+  name: Id
+  nameWithType: ChannelAccount.Id
+  fullName: ChannelAccount.Id
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: >-
+    Channel id for the user or bot on this channel (Example:
+                joe@smith.com, or @joesmith or 123456)
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="id")]
+
+      public string Id { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ChannelAccount.Id*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  - botconnector-1.1.0
+  monikers:
+  - botbuilder-3.5.5
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ChannelAccount.xml
+- uid: Microsoft.Bot.Connector.ChannelAccount.IsBot
+  commentId: P:Microsoft.Bot.Connector.ChannelAccount.IsBot
+  id: IsBot
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  langs:
+  - csharp
+  name: IsBot
+  nameWithType: ChannelAccount.IsBot
+  fullName: ChannelAccount.IsBot
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="isBot")]
+
+      public Nullable<bool> IsBot { get; set; }
+    return:
+      type: System.Nullable{System.Boolean}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ChannelAccount.IsBot*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ChannelAccount.xml
+- uid: Microsoft.Bot.Connector.ChannelAccount.Name
+  commentId: P:Microsoft.Bot.Connector.ChannelAccount.Name
+  id: Name
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  langs:
+  - csharp
+  name: Name
+  nameWithType: ChannelAccount.Name
+  fullName: ChannelAccount.Name
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Display friendly name
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="name")]
+
+      public string Name { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ChannelAccount.Name*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  - botconnector-1.1.0
+  monikers:
+  - botbuilder-3.5.5
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ChannelAccount.xml
+- uid: Microsoft.Bot.Connector.ChannelAccount.Validate
+  commentId: M:Microsoft.Bot.Connector.ChannelAccount.Validate
+  id: Validate
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  langs:
+  - csharp
+  name: Validate()
+  nameWithType: ChannelAccount.Validate()
+  fullName: ChannelAccount.Validate()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public virtual void Validate ();
+    parameters: []
+  overload: Microsoft.Bot.Connector.ChannelAccount.Validate*
+  exceptions: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ChannelAccount.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.ChannelAccount.#ctor
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  isExternal: false
+  name: ChannelAccount()
+  nameWithType: ChannelAccount.ChannelAccount()
+  fullName: ChannelAccount.ChannelAccount()
+- uid: Microsoft.Bot.Connector.ChannelAccount.#ctor(System.String,System.String)
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  isExternal: false
+  name: ChannelAccount(String, String)
+  nameWithType: ChannelAccount.ChannelAccount(String, String)
+  fullName: ChannelAccount.ChannelAccount(String, String)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.ChannelAccount.#ctor(System.String,System.String,System.String,System.String,System.Nullable{System.Boolean})
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  isExternal: false
+  name: ChannelAccount(String, String, String, String, Nullable<Boolean>)
+  nameWithType: ChannelAccount.ChannelAccount(String, String, String, String, Nullable<Boolean>)
+  fullName: ChannelAccount.ChannelAccount(String, String, String, String, Nullable<Boolean>)
+- uid: System.Nullable`1
+  name: Nullable
+  nameWithType: Nullable
+  fullName: System.Nullable
+- uid: System.Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Nullable{System.Boolean}
+  parent: System
+  isExternal: true
+  name: Nullable<Boolean>
+  nameWithType: Nullable<Boolean>
+  fullName: System.Nullable<System.Boolean>
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Connector.ChannelAccount.Address
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  isExternal: false
+  name: Address
+  nameWithType: ChannelAccount.Address
+  fullName: ChannelAccount.Address
+- uid: Microsoft.Bot.Connector.ChannelAccount.ChannelId
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  isExternal: false
+  name: ChannelId
+  nameWithType: ChannelAccount.ChannelId
+  fullName: ChannelAccount.ChannelId
+- uid: Microsoft.Bot.Connector.ChannelAccount.Equals(Microsoft.Bot.Connector.ChannelAccount)
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  isExternal: false
+  name: Equals(ChannelAccount)
+  nameWithType: ChannelAccount.Equals(ChannelAccount)
+  fullName: ChannelAccount.Equals(ChannelAccount)
+- uid: Microsoft.Bot.Connector.ChannelAccount
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: ChannelAccount
+  nameWithType: ChannelAccount
+  fullName: Microsoft.Bot.Connector.ChannelAccount
+- uid: Microsoft.Bot.Connector.ChannelAccount.Equals(System.Object)
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  isExternal: false
+  name: Equals(Object)
+  nameWithType: ChannelAccount.Equals(Object)
+  fullName: ChannelAccount.Equals(Object)
+- uid: Microsoft.Bot.Connector.ChannelAccount.GetHashCode
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  isExternal: false
+  name: GetHashCode()
+  nameWithType: ChannelAccount.GetHashCode()
+  fullName: ChannelAccount.GetHashCode()
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Bot.Connector.ChannelAccount.Id
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  isExternal: false
+  name: Id
+  nameWithType: ChannelAccount.Id
+  fullName: ChannelAccount.Id
+- uid: Microsoft.Bot.Connector.ChannelAccount.IsBot
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  isExternal: false
+  name: IsBot
+  nameWithType: ChannelAccount.IsBot
+  fullName: ChannelAccount.IsBot
+- uid: Microsoft.Bot.Connector.ChannelAccount.Name
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  isExternal: false
+  name: Name
+  nameWithType: ChannelAccount.Name
+  fullName: ChannelAccount.Name
+- uid: Microsoft.Bot.Connector.ChannelAccount.Validate
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  isExternal: false
+  name: Validate()
+  nameWithType: ChannelAccount.Validate()
+  fullName: ChannelAccount.Validate()
+- uid: Microsoft.Bot.Connector.ChannelAccount.#ctor*
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  isExternal: false
+  name: ChannelAccount
+  nameWithType: ChannelAccount.ChannelAccount
+  fullName: ChannelAccount.ChannelAccount
+  monikers:
+  - botbuilder-3.5.5
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ChannelAccount.xml
+- uid: Microsoft.Bot.Connector.ChannelAccount.Address*
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  isExternal: false
+  name: Address
+  nameWithType: ChannelAccount.Address
+  fullName: ChannelAccount.Address
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ChannelAccount.xml
+- uid: Microsoft.Bot.Connector.ChannelAccount.ChannelId*
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  isExternal: false
+  name: ChannelId
+  nameWithType: ChannelAccount.ChannelId
+  fullName: ChannelAccount.ChannelId
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ChannelAccount.xml
+- uid: Microsoft.Bot.Connector.ChannelAccount.Equals*
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  isExternal: false
+  name: Equals
+  nameWithType: ChannelAccount.Equals
+  fullName: ChannelAccount.Equals
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ChannelAccount.xml
+- uid: Microsoft.Bot.Connector.ChannelAccount.GetHashCode*
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  isExternal: false
+  name: GetHashCode
+  nameWithType: ChannelAccount.GetHashCode
+  fullName: ChannelAccount.GetHashCode
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ChannelAccount.xml
+- uid: Microsoft.Bot.Connector.ChannelAccount.Id*
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  isExternal: false
+  name: Id
+  nameWithType: ChannelAccount.Id
+  fullName: ChannelAccount.Id
+  monikers:
+  - botbuilder-3.5.5
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ChannelAccount.xml
+- uid: Microsoft.Bot.Connector.ChannelAccount.IsBot*
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  isExternal: false
+  name: IsBot
+  nameWithType: ChannelAccount.IsBot
+  fullName: ChannelAccount.IsBot
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ChannelAccount.xml
+- uid: Microsoft.Bot.Connector.ChannelAccount.Name*
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  isExternal: false
+  name: Name
+  nameWithType: ChannelAccount.Name
+  fullName: ChannelAccount.Name
+  monikers:
+  - botbuilder-3.5.5
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ChannelAccount.xml
+- uid: Microsoft.Bot.Connector.ChannelAccount.Validate*
+  parent: Microsoft.Bot.Connector.ChannelAccount
+  isExternal: false
+  name: Validate
+  nameWithType: ChannelAccount.Validate
+  fullName: ChannelAccount.Validate
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ChannelAccount.xml

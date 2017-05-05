@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException
+  commentId: T:Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException
+  id: ClosureCaptureException
+  children:
+  - Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException.#ctor(System.Object)
+  - Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException.Instance
+  langs:
+  - csharp
+  name: ClosureCaptureException
+  nameWithType: ClosureCaptureException
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: 'public sealed class ClosureCaptureException : System.Runtime.Serialization.SerializationException'
+  inheritance:
+  - System.Runtime.Serialization.SerializationException
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/ClosureCaptureException.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException.#ctor(System.Object)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException.#ctor(System.Object)
+  id: '#ctor(System.Object)'
+  parent: Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException
+  langs:
+  - csharp
+  name: ClosureCaptureException(Object)
+  nameWithType: ClosureCaptureException.ClosureCaptureException(Object)
+  fullName: ClosureCaptureException.ClosureCaptureException(Object)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public ClosureCaptureException (object instance);
+    parameters:
+    - id: instance
+      type: System.Object
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/ClosureCaptureException.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException.Instance
+  commentId: F:Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException.Instance
+  id: Instance
+  parent: Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException
+  langs:
+  - csharp
+  name: Instance
+  nameWithType: ClosureCaptureException.Instance
+  fullName: ClosureCaptureException.Instance
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public readonly object Instance;
+    return:
+      type: System.Object
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/ClosureCaptureException.xml
+references:
+- uid: System.Runtime.Serialization.SerializationException
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: SerializationException
+  nameWithType: SerializationException
+  fullName: System.Runtime.Serialization.SerializationException
+- uid: Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException.#ctor(System.Object)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException
+  isExternal: false
+  name: ClosureCaptureException(Object)
+  nameWithType: ClosureCaptureException.ClosureCaptureException(Object)
+  fullName: ClosureCaptureException.ClosureCaptureException(Object)
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException.Instance
+  parent: Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException
+  isExternal: false
+  name: Instance
+  nameWithType: ClosureCaptureException.Instance
+  fullName: ClosureCaptureException.Instance
+- uid: Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException.#ctor*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException
+  isExternal: false
+  name: ClosureCaptureException
+  nameWithType: ClosureCaptureException.ClosureCaptureException
+  fullName: ClosureCaptureException.ClosureCaptureException
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/ClosureCaptureException.xml

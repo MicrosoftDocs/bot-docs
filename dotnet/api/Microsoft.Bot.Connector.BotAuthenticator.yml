@@ -1,0 +1,419 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.BotAuthenticator
+  commentId: T:Microsoft.Bot.Connector.BotAuthenticator
+  id: BotAuthenticator
+  children:
+  - Microsoft.Bot.Connector.BotAuthenticator.#ctor(Microsoft.Bot.Connector.ICredentialProvider)
+  - Microsoft.Bot.Connector.BotAuthenticator.#ctor(System.String,System.String)
+  - Microsoft.Bot.Connector.BotAuthenticator.#ctor(Microsoft.Bot.Connector.ICredentialProvider,System.String,System.Boolean)
+  - Microsoft.Bot.Connector.BotAuthenticator.GenerateUnauthorizedResponse(System.Net.Http.HttpRequestMessage)
+  - Microsoft.Bot.Connector.BotAuthenticator.TryAuthenticateAsync(System.Net.Http.HttpRequestMessage,System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.IActivity},System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.BotAuthenticator.TryAuthenticateAsync(System.String,System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  name: BotAuthenticator
+  nameWithType: BotAuthenticator
+  fullName: Microsoft.Bot.Connector.BotAuthenticator
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public sealed class BotAuthenticator
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthenticator.xml
+- uid: Microsoft.Bot.Connector.BotAuthenticator.#ctor(Microsoft.Bot.Connector.ICredentialProvider)
+  commentId: M:Microsoft.Bot.Connector.BotAuthenticator.#ctor(Microsoft.Bot.Connector.ICredentialProvider)
+  id: '#ctor(Microsoft.Bot.Connector.ICredentialProvider)'
+  parent: Microsoft.Bot.Connector.BotAuthenticator
+  langs:
+  - csharp
+  name: BotAuthenticator(ICredentialProvider)
+  nameWithType: BotAuthenticator.BotAuthenticator(ICredentialProvider)
+  fullName: BotAuthenticator.BotAuthenticator(ICredentialProvider)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public BotAuthenticator (Microsoft.Bot.Connector.ICredentialProvider credentialProvider);
+    parameters:
+    - id: credentialProvider
+      type: Microsoft.Bot.Connector.ICredentialProvider
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotAuthenticator.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthenticator.xml
+- uid: Microsoft.Bot.Connector.BotAuthenticator.#ctor(System.String,System.String)
+  commentId: M:Microsoft.Bot.Connector.BotAuthenticator.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: Microsoft.Bot.Connector.BotAuthenticator
+  langs:
+  - csharp
+  name: BotAuthenticator(String, String)
+  nameWithType: BotAuthenticator.BotAuthenticator(String, String)
+  fullName: BotAuthenticator.BotAuthenticator(String, String)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Creates an instance of bot authenticator.
+  remarks: "This constructor sets the <xref href=\"Microsoft.Bot.Connector.BotAuthenticator.openIdConfigurationUrl\"></xref> to \n            <xref href=\"Microsoft.Bot.Connector.JwtConfig.ToBotFromChannelOpenIdMetadataUrl\"></xref>  and doesn't disable \n            the self issued tokens used by emulator."
+  syntax:
+    content: public BotAuthenticator (string microsoftAppId, string microsoftAppPassword);
+    parameters:
+    - id: microsoftAppId
+      type: System.String
+      description: The Microsoft app Id.
+    - id: microsoftAppPassword
+      type: System.String
+      description: The Microsoft app password.
+  overload: Microsoft.Bot.Connector.BotAuthenticator.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthenticator.xml
+- uid: Microsoft.Bot.Connector.BotAuthenticator.#ctor(Microsoft.Bot.Connector.ICredentialProvider,System.String,System.Boolean)
+  commentId: M:Microsoft.Bot.Connector.BotAuthenticator.#ctor(Microsoft.Bot.Connector.ICredentialProvider,System.String,System.Boolean)
+  id: '#ctor(Microsoft.Bot.Connector.ICredentialProvider,System.String,System.Boolean)'
+  parent: Microsoft.Bot.Connector.BotAuthenticator
+  langs:
+  - csharp
+  name: BotAuthenticator(ICredentialProvider, String, Boolean)
+  nameWithType: BotAuthenticator.BotAuthenticator(ICredentialProvider, String, Boolean)
+  fullName: BotAuthenticator.BotAuthenticator(ICredentialProvider, String, Boolean)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public BotAuthenticator (Microsoft.Bot.Connector.ICredentialProvider credentialProvider, string openIdConfigurationUrl, bool disableEmulatorTokens);
+    parameters:
+    - id: credentialProvider
+      type: Microsoft.Bot.Connector.ICredentialProvider
+      description: To be added.
+    - id: openIdConfigurationUrl
+      type: System.String
+      description: To be added.
+    - id: disableEmulatorTokens
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotAuthenticator.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthenticator.xml
+- uid: Microsoft.Bot.Connector.BotAuthenticator.GenerateUnauthorizedResponse(System.Net.Http.HttpRequestMessage)
+  commentId: M:Microsoft.Bot.Connector.BotAuthenticator.GenerateUnauthorizedResponse(System.Net.Http.HttpRequestMessage)
+  id: GenerateUnauthorizedResponse(System.Net.Http.HttpRequestMessage)
+  parent: Microsoft.Bot.Connector.BotAuthenticator
+  langs:
+  - csharp
+  name: GenerateUnauthorizedResponse(HttpRequestMessage)
+  nameWithType: BotAuthenticator.GenerateUnauthorizedResponse(HttpRequestMessage)
+  fullName: BotAuthenticator.GenerateUnauthorizedResponse(HttpRequestMessage)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Generates <xref href="System.Net.HttpStatusCode.Unauthorized"></xref> response for the request.
+  syntax:
+    content: public static System.Net.Http.HttpResponseMessage GenerateUnauthorizedResponse (System.Net.Http.HttpRequestMessage request);
+    parameters:
+    - id: request
+      type: System.Net.Http.HttpRequestMessage
+      description: The request.
+    return:
+      type: System.Net.Http.HttpResponseMessage
+      description: A response with status code unauthorized.
+  overload: Microsoft.Bot.Connector.BotAuthenticator.GenerateUnauthorizedResponse*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthenticator.xml
+- uid: Microsoft.Bot.Connector.BotAuthenticator.TryAuthenticateAsync(System.Net.Http.HttpRequestMessage,System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.IActivity},System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.BotAuthenticator.TryAuthenticateAsync(System.Net.Http.HttpRequestMessage,System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.IActivity},System.Threading.CancellationToken)
+  id: TryAuthenticateAsync(System.Net.Http.HttpRequestMessage,System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.IActivity},System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.BotAuthenticator
+  langs:
+  - csharp
+  name: TryAuthenticateAsync(HttpRequestMessage, IEnumerable<IActivity>, CancellationToken)
+  nameWithType: BotAuthenticator.TryAuthenticateAsync(HttpRequestMessage, IEnumerable<IActivity>, CancellationToken)
+  fullName: BotAuthenticator.TryAuthenticateAsync(HttpRequestMessage, IEnumerable<IActivity>, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: >-
+    Authenticates the incoming request and add the <xref href="Microsoft.Bot.Connector.IActivity.ServiceUrl"></xref> for each
+                activities to <xref href="Microsoft.Bot.Connector.MicrosoftAppCredentials.TrustedHostNames"></xref> if the request is authenticated.
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BotAuthenticator/<TryAuthenticateAsync>d__6))]
+
+      public System.Threading.Tasks.Task<bool> TryAuthenticateAsync (System.Net.Http.HttpRequestMessage request, System.Collections.Generic.IEnumerable<Microsoft.Bot.Connector.IActivity> activities, System.Threading.CancellationToken token);
+    parameters:
+    - id: request
+      type: System.Net.Http.HttpRequestMessage
+      description: The request that should be authenticated.
+    - id: activities
+      type: System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.IActivity}
+      description: The activities extracted from request.
+    - id: token
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotAuthenticator.TryAuthenticateAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthenticator.xml
+- uid: Microsoft.Bot.Connector.BotAuthenticator.TryAuthenticateAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.BotAuthenticator.TryAuthenticateAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: TryAuthenticateAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.BotAuthenticator
+  langs:
+  - csharp
+  name: TryAuthenticateAsync(String, String, CancellationToken)
+  nameWithType: BotAuthenticator.TryAuthenticateAsync(String, String, CancellationToken)
+  fullName: BotAuthenticator.TryAuthenticateAsync(String, String, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BotAuthenticator/<TryAuthenticateAsync>d__10))]
+
+      public System.Threading.Tasks.Task<Microsoft.Bot.Connector.IdentityToken> TryAuthenticateAsync (string scheme, string token, System.Threading.CancellationToken cancellationToken);
+    parameters:
+    - id: scheme
+      type: System.String
+      description: To be added.
+    - id: token
+      type: System.String
+      description: To be added.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Connector.IdentityToken}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotAuthenticator.TryAuthenticateAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthenticator.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.BotAuthenticator.#ctor(Microsoft.Bot.Connector.ICredentialProvider)
+  parent: Microsoft.Bot.Connector.BotAuthenticator
+  isExternal: false
+  name: BotAuthenticator(ICredentialProvider)
+  nameWithType: BotAuthenticator.BotAuthenticator(ICredentialProvider)
+  fullName: BotAuthenticator.BotAuthenticator(ICredentialProvider)
+- uid: Microsoft.Bot.Connector.ICredentialProvider
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: ICredentialProvider
+  nameWithType: ICredentialProvider
+  fullName: Microsoft.Bot.Connector.ICredentialProvider
+- uid: Microsoft.Bot.Connector.BotAuthenticator.#ctor(System.String,System.String)
+  parent: Microsoft.Bot.Connector.BotAuthenticator
+  isExternal: false
+  name: BotAuthenticator(String, String)
+  nameWithType: BotAuthenticator.BotAuthenticator(String, String)
+  fullName: BotAuthenticator.BotAuthenticator(String, String)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.BotAuthenticator.#ctor(Microsoft.Bot.Connector.ICredentialProvider,System.String,System.Boolean)
+  parent: Microsoft.Bot.Connector.BotAuthenticator
+  isExternal: false
+  name: BotAuthenticator(ICredentialProvider, String, Boolean)
+  nameWithType: BotAuthenticator.BotAuthenticator(ICredentialProvider, String, Boolean)
+  fullName: BotAuthenticator.BotAuthenticator(ICredentialProvider, String, Boolean)
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Bot.Connector.BotAuthenticator.GenerateUnauthorizedResponse(System.Net.Http.HttpRequestMessage)
+  parent: Microsoft.Bot.Connector.BotAuthenticator
+  isExternal: false
+  name: GenerateUnauthorizedResponse(HttpRequestMessage)
+  nameWithType: BotAuthenticator.GenerateUnauthorizedResponse(HttpRequestMessage)
+  fullName: BotAuthenticator.GenerateUnauthorizedResponse(HttpRequestMessage)
+- uid: System.Net.Http.HttpResponseMessage
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpResponseMessage
+  nameWithType: HttpResponseMessage
+  fullName: System.Net.Http.HttpResponseMessage
+- uid: System.Net.Http.HttpRequestMessage
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpRequestMessage
+  nameWithType: HttpRequestMessage
+  fullName: System.Net.Http.HttpRequestMessage
+- uid: Microsoft.Bot.Connector.BotAuthenticator.TryAuthenticateAsync(System.Net.Http.HttpRequestMessage,System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.IActivity},System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.BotAuthenticator
+  isExternal: false
+  name: TryAuthenticateAsync(HttpRequestMessage, IEnumerable<IActivity>, CancellationToken)
+  nameWithType: BotAuthenticator.TryAuthenticateAsync(HttpRequestMessage, IEnumerable<IActivity>, CancellationToken)
+  fullName: BotAuthenticator.TryAuthenticateAsync(HttpRequestMessage, IEnumerable<IActivity>, CancellationToken)
+- uid: System.Threading.Tasks.Task`1
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.Generic.IEnumerable
+- uid: Microsoft.Bot.Connector.IActivity
+  name: IActivity
+  nameWithType: IActivity
+  fullName: Microsoft.Bot.Connector.IActivity
+- uid: System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.IActivity}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<IActivity>
+  nameWithType: IEnumerable<IActivity>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.Bot.Connector.IActivity>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.IActivity
+    name: IActivity
+    nameWithType: IActivity
+    fullName: Microsoft.Bot.Connector.IActivity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Connector.BotAuthenticator.TryAuthenticateAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.BotAuthenticator
+  isExternal: false
+  name: TryAuthenticateAsync(String, String, CancellationToken)
+  nameWithType: BotAuthenticator.TryAuthenticateAsync(String, String, CancellationToken)
+  fullName: BotAuthenticator.TryAuthenticateAsync(String, String, CancellationToken)
+- uid: Microsoft.Bot.Connector.IdentityToken
+  name: IdentityToken
+  nameWithType: IdentityToken
+  fullName: Microsoft.Bot.Connector.IdentityToken
+- uid: System.Threading.Tasks.Task{Microsoft.Bot.Connector.IdentityToken}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<IdentityToken>
+  nameWithType: Task<IdentityToken>
+  fullName: System.Threading.Tasks.Task<Microsoft.Bot.Connector.IdentityToken>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.IdentityToken
+    name: IdentityToken
+    nameWithType: IdentityToken
+    fullName: Microsoft.Bot.Connector.IdentityToken
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Connector.BotAuthenticator.#ctor*
+  parent: Microsoft.Bot.Connector.BotAuthenticator
+  isExternal: false
+  name: BotAuthenticator
+  nameWithType: BotAuthenticator.BotAuthenticator
+  fullName: BotAuthenticator.BotAuthenticator
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthenticator.xml
+- uid: Microsoft.Bot.Connector.BotAuthenticator.GenerateUnauthorizedResponse*
+  parent: Microsoft.Bot.Connector.BotAuthenticator
+  isExternal: false
+  name: GenerateUnauthorizedResponse
+  nameWithType: BotAuthenticator.GenerateUnauthorizedResponse
+  fullName: BotAuthenticator.GenerateUnauthorizedResponse
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthenticator.xml
+- uid: Microsoft.Bot.Connector.BotAuthenticator.TryAuthenticateAsync*
+  parent: Microsoft.Bot.Connector.BotAuthenticator
+  isExternal: false
+  name: TryAuthenticateAsync
+  nameWithType: BotAuthenticator.TryAuthenticateAsync
+  fullName: BotAuthenticator.TryAuthenticateAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthenticator.xml

@@ -1,0 +1,592 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  commentId: T:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  id: EntityRecommendation
+  children:
+  - Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.#ctor
+  - Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.#ctor(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Double},System.Collections.Generic.IDictionary{System.String,System.String})
+  - Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.EndIndex
+  - Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Entity
+  - Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Resolution
+  - Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Role
+  - Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Score
+  - Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.StartIndex
+  - Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Type
+  - Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Validate
+  langs:
+  - csharp
+  name: EntityRecommendation
+  nameWithType: EntityRecommendation
+  fullName: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Luis.Models
+  summary: >-
+    Luis entity recommendation. Look at https://www.luis.ai/Help for more
+                information.
+  syntax:
+    content: public class EntityRecommendation
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/EntityRecommendation.xml
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.#ctor
+  commentId: M:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  langs:
+  - csharp
+  name: EntityRecommendation()
+  nameWithType: EntityRecommendation.EntityRecommendation()
+  fullName: EntityRecommendation.EntityRecommendation()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis.Models
+  summary: Initializes a new instance of the EntityRecommendation class.
+  syntax:
+    content: public EntityRecommendation ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/EntityRecommendation.xml
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.#ctor(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Double},System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.#ctor(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Double},System.Collections.Generic.IDictionary{System.String,System.String})
+  id: '#ctor(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Double},System.Collections.Generic.IDictionary{System.String,System.String})'
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  langs:
+  - csharp
+  name: EntityRecommendation(String, String, String, Nullable<Int32>, Nullable<Int32>, Nullable<Double>, IDictionary<String,String>)
+  nameWithType: EntityRecommendation.EntityRecommendation(String, String, String, Nullable<Int32>, Nullable<Int32>, Nullable<Double>, IDictionary<String,String>)
+  fullName: EntityRecommendation.EntityRecommendation(String, String, String, Nullable<Int32>, Nullable<Int32>, Nullable<Double>, IDictionary<String,String>)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis.Models
+  summary: Initializes a new instance of the EntityRecommendation class.
+  syntax:
+    content: public EntityRecommendation (string type, string role = null, string entity = null, Nullable<int> startIndex = null, Nullable<int> endIndex = null, Nullable<double> score = null, System.Collections.Generic.IDictionary<string,string> resolution = null);
+    parameters:
+    - id: type
+      type: System.String
+      description: To be added.
+    - id: role
+      type: System.String
+      description: To be added.
+    - id: entity
+      type: System.String
+      description: To be added.
+    - id: startIndex
+      type: System.Nullable{System.Int32}
+      description: To be added.
+    - id: endIndex
+      type: System.Nullable{System.Int32}
+      description: To be added.
+    - id: score
+      type: System.Nullable{System.Double}
+      description: To be added.
+    - id: resolution
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/EntityRecommendation.xml
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.EndIndex
+  commentId: P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.EndIndex
+  id: EndIndex
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  langs:
+  - csharp
+  name: EndIndex
+  nameWithType: EntityRecommendation.EndIndex
+  fullName: EntityRecommendation.EndIndex
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis.Models
+  summary: End index of the entity in the LUIS query string.
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="endIndex")]
+
+      public Nullable<int> EndIndex { get; set; }
+    return:
+      type: System.Nullable{System.Int32}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.EndIndex*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/EntityRecommendation.xml
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Entity
+  commentId: P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Entity
+  id: Entity
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  langs:
+  - csharp
+  name: Entity
+  nameWithType: EntityRecommendation.Entity
+  fullName: EntityRecommendation.Entity
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis.Models
+  summary: Entity extracted by LUIS.
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="entity")]
+
+      public string Entity { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Entity*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/EntityRecommendation.xml
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Resolution
+  commentId: P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Resolution
+  id: Resolution
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  langs:
+  - csharp
+  name: Resolution
+  nameWithType: EntityRecommendation.Resolution
+  fullName: EntityRecommendation.Resolution
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis.Models
+  summary: >-
+    A machine readable dictionary with more information about the
+                entity Look at builtin.datetime for an example in the
+                https://www.luis.ai/Help#PreBuiltEntities.
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="resolution")]
+
+      public System.Collections.Generic.IDictionary<string,string> Resolution { get; set; }
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Resolution*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/EntityRecommendation.xml
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Role
+  commentId: P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Role
+  id: Role
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  langs:
+  - csharp
+  name: Role
+  nameWithType: EntityRecommendation.Role
+  fullName: EntityRecommendation.Role
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis.Models
+  summary: Role of the entity.
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="role")]
+
+      public string Role { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Role*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/EntityRecommendation.xml
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Score
+  commentId: P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Score
+  id: Score
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  langs:
+  - csharp
+  name: Score
+  nameWithType: EntityRecommendation.Score
+  fullName: EntityRecommendation.Score
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis.Models
+  summary: Score assigned by LUIS to detected entity.
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="score")]
+
+      public Nullable<double> Score { get; set; }
+    return:
+      type: System.Nullable{System.Double}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Score*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/EntityRecommendation.xml
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.StartIndex
+  commentId: P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.StartIndex
+  id: StartIndex
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  langs:
+  - csharp
+  name: StartIndex
+  nameWithType: EntityRecommendation.StartIndex
+  fullName: EntityRecommendation.StartIndex
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis.Models
+  summary: Start index of the entity in the LUIS query string.
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="startIndex")]
+
+      public Nullable<int> StartIndex { get; set; }
+    return:
+      type: System.Nullable{System.Int32}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.StartIndex*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/EntityRecommendation.xml
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Type
+  commentId: P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Type
+  id: Type
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  langs:
+  - csharp
+  name: Type
+  nameWithType: EntityRecommendation.Type
+  fullName: EntityRecommendation.Type
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis.Models
+  summary: Type of the entity.
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="type")]
+
+      public string Type { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Type*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/EntityRecommendation.xml
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Validate
+  commentId: M:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Validate
+  id: Validate
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  langs:
+  - csharp
+  name: Validate()
+  nameWithType: EntityRecommendation.Validate()
+  fullName: EntityRecommendation.Validate()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis.Models
+  summary: Validate the object. Throws ValidationException if validation fails.
+  syntax:
+    content: public virtual void Validate ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Validate*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/EntityRecommendation.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.#ctor
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  isExternal: false
+  name: EntityRecommendation()
+  nameWithType: EntityRecommendation.EntityRecommendation()
+  fullName: EntityRecommendation.EntityRecommendation()
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.#ctor(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Double},System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  isExternal: false
+  name: EntityRecommendation(String, String, String, Nullable<Int32>, Nullable<Int32>, Nullable<Double>, IDictionary<String,String>)
+  nameWithType: EntityRecommendation.EntityRecommendation(String, String, String, Nullable<Int32>, Nullable<Int32>, Nullable<Double>, IDictionary<String,String>)
+  fullName: EntityRecommendation.EntityRecommendation(String, String, String, Nullable<Int32>, Nullable<Int32>, Nullable<Double>, IDictionary<String,String>)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Nullable`1
+  name: Nullable
+  nameWithType: Nullable
+  fullName: System.Nullable
+- uid: System.Int32
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Nullable{System.Int32}
+  parent: System
+  isExternal: true
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: System.Nullable{System.Double}
+  parent: System
+  isExternal: true
+  name: Nullable<Double>
+  nameWithType: Nullable<Double>
+  fullName: System.Nullable<System.Double>
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Collections.Generic.IDictionary`2
+  name: IDictionary
+  nameWithType: IDictionary
+  fullName: System.Collections.Generic.IDictionary
+- uid: System.Collections.Generic.IDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IDictionary<String,String>
+  nameWithType: IDictionary<String,String>
+  fullName: System.Collections.Generic.IDictionary<System.String,System.String>
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.EndIndex
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  isExternal: false
+  name: EndIndex
+  nameWithType: EntityRecommendation.EndIndex
+  fullName: EntityRecommendation.EndIndex
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Entity
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  isExternal: false
+  name: Entity
+  nameWithType: EntityRecommendation.Entity
+  fullName: EntityRecommendation.Entity
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Resolution
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  isExternal: false
+  name: Resolution
+  nameWithType: EntityRecommendation.Resolution
+  fullName: EntityRecommendation.Resolution
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Role
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  isExternal: false
+  name: Role
+  nameWithType: EntityRecommendation.Role
+  fullName: EntityRecommendation.Role
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Score
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  isExternal: false
+  name: Score
+  nameWithType: EntityRecommendation.Score
+  fullName: EntityRecommendation.Score
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.StartIndex
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  isExternal: false
+  name: StartIndex
+  nameWithType: EntityRecommendation.StartIndex
+  fullName: EntityRecommendation.StartIndex
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Type
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  isExternal: false
+  name: Type
+  nameWithType: EntityRecommendation.Type
+  fullName: EntityRecommendation.Type
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Validate
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  isExternal: false
+  name: Validate()
+  nameWithType: EntityRecommendation.Validate()
+  fullName: EntityRecommendation.Validate()
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.#ctor*
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  isExternal: false
+  name: EntityRecommendation
+  nameWithType: EntityRecommendation.EntityRecommendation
+  fullName: EntityRecommendation.EntityRecommendation
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/EntityRecommendation.xml
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.EndIndex*
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  isExternal: false
+  name: EndIndex
+  nameWithType: EntityRecommendation.EndIndex
+  fullName: EntityRecommendation.EndIndex
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/EntityRecommendation.xml
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Entity*
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  isExternal: false
+  name: Entity
+  nameWithType: EntityRecommendation.Entity
+  fullName: EntityRecommendation.Entity
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/EntityRecommendation.xml
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Resolution*
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  isExternal: false
+  name: Resolution
+  nameWithType: EntityRecommendation.Resolution
+  fullName: EntityRecommendation.Resolution
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/EntityRecommendation.xml
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Role*
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  isExternal: false
+  name: Role
+  nameWithType: EntityRecommendation.Role
+  fullName: EntityRecommendation.Role
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/EntityRecommendation.xml
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Score*
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  isExternal: false
+  name: Score
+  nameWithType: EntityRecommendation.Score
+  fullName: EntityRecommendation.Score
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/EntityRecommendation.xml
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.StartIndex*
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  isExternal: false
+  name: StartIndex
+  nameWithType: EntityRecommendation.StartIndex
+  fullName: EntityRecommendation.StartIndex
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/EntityRecommendation.xml
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Type*
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  isExternal: false
+  name: Type
+  nameWithType: EntityRecommendation.Type
+  fullName: EntityRecommendation.Type
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/EntityRecommendation.xml
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Validate*
+  parent: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  isExternal: false
+  name: Validate
+  nameWithType: EntityRecommendation.Validate
+  fullName: EntityRecommendation.Validate
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/EntityRecommendation.xml

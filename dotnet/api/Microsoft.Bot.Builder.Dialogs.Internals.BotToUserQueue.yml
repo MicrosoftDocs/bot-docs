@@ -1,0 +1,233 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue
+  commentId: T:Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue
+  id: BotToUserQueue
+  children:
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue.#ctor(Microsoft.Bot.Connector.IMessageActivity,System.Collections.Generic.Queue{Microsoft.Bot.Connector.IMessageActivity})
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#MakeMessage
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#PostAsync(Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  name: BotToUserQueue
+  nameWithType: BotToUserQueue
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: 'public sealed class BotToUserQueue : Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser'
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser
+  inheritedMembers: []
+  extensionMethods:
+  - Microsoft.Bot.Builder.Dialogs.Extensions.PostAsync(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.String,System.String,System.Threading.CancellationToken)
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotToUserQueue.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue.#ctor(Microsoft.Bot.Connector.IMessageActivity,System.Collections.Generic.Queue{Microsoft.Bot.Connector.IMessageActivity})
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue.#ctor(Microsoft.Bot.Connector.IMessageActivity,System.Collections.Generic.Queue{Microsoft.Bot.Connector.IMessageActivity})
+  id: '#ctor(Microsoft.Bot.Connector.IMessageActivity,System.Collections.Generic.Queue{Microsoft.Bot.Connector.IMessageActivity})'
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue
+  langs:
+  - csharp
+  name: BotToUserQueue(IMessageActivity, Queue<IMessageActivity>)
+  nameWithType: BotToUserQueue.BotToUserQueue(IMessageActivity, Queue<IMessageActivity>)
+  fullName: BotToUserQueue.BotToUserQueue(IMessageActivity, Queue<IMessageActivity>)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: public BotToUserQueue (Microsoft.Bot.Connector.IMessageActivity toBot, System.Collections.Generic.Queue<Microsoft.Bot.Connector.IMessageActivity> queue);
+    parameters:
+    - id: toBot
+      type: Microsoft.Bot.Connector.IMessageActivity
+      description: To be added.
+    - id: queue
+      type: System.Collections.Generic.Queue{Microsoft.Bot.Connector.IMessageActivity}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotToUserQueue.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#MakeMessage
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#MakeMessage
+  id: Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#MakeMessage
+  isEii: true
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue
+  langs:
+  - csharp
+  name: IBotToUser.MakeMessage()
+  nameWithType: BotToUserQueue.IBotToUser.MakeMessage()
+  fullName: BotToUserQueue.IBotToUser.MakeMessage()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: Microsoft.Bot.Connector.IMessageActivity IBotToUser.MakeMessage ();
+    parameters: []
+    return:
+      type: Microsoft.Bot.Connector.IMessageActivity
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#MakeMessage*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotToUserQueue.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#PostAsync(Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#PostAsync(Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)
+  id: Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#PostAsync(Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue
+  langs:
+  - csharp
+  name: IBotToUser.PostAsync(IMessageActivity, CancellationToken)
+  nameWithType: BotToUserQueue.IBotToUser.PostAsync(IMessageActivity, CancellationToken)
+  fullName: BotToUserQueue.IBotToUser.PostAsync(IMessageActivity, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue/<Microsoft-Bot-Builder-Dialogs-Internals-IBotToUser-PostAsync>d__4))]
+
+      System.Threading.Tasks.Task IBotToUser.PostAsync (Microsoft.Bot.Connector.IMessageActivity message, System.Threading.CancellationToken cancellationToken);
+    parameters:
+    - id: message
+      type: Microsoft.Bot.Connector.IMessageActivity
+      description: To be added.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#PostAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotToUserQueue.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue.#ctor(Microsoft.Bot.Connector.IMessageActivity,System.Collections.Generic.Queue{Microsoft.Bot.Connector.IMessageActivity})
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue
+  isExternal: false
+  name: BotToUserQueue(IMessageActivity, Queue<IMessageActivity>)
+  nameWithType: BotToUserQueue.BotToUserQueue(IMessageActivity, Queue<IMessageActivity>)
+  fullName: BotToUserQueue.BotToUserQueue(IMessageActivity, Queue<IMessageActivity>)
+- uid: Microsoft.Bot.Connector.IMessageActivity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IMessageActivity
+  nameWithType: IMessageActivity
+  fullName: Microsoft.Bot.Connector.IMessageActivity
+- uid: System.Collections.Generic.Queue`1
+  name: Queue
+  nameWithType: Queue
+  fullName: System.Collections.Generic.Queue
+- uid: System.Collections.Generic.Queue{Microsoft.Bot.Connector.IMessageActivity}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: Queue<IMessageActivity>
+  nameWithType: Queue<IMessageActivity>
+  fullName: System.Collections.Generic.Queue<Microsoft.Bot.Connector.IMessageActivity>
+  spec.csharp:
+  - uid: System.Collections.Generic.Queue`1
+    name: Queue
+    nameWithType: Queue
+    fullName: System.Collections.Generic.Queue
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.IMessageActivity
+    name: IMessageActivity
+    nameWithType: IMessageActivity
+    fullName: Microsoft.Bot.Connector.IMessageActivity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#MakeMessage
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue
+  isExternal: false
+  name: IBotToUser.MakeMessage()
+  nameWithType: BotToUserQueue.IBotToUser.MakeMessage()
+  fullName: BotToUserQueue.IBotToUser.MakeMessage()
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#PostAsync(Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue
+  isExternal: false
+  name: IBotToUser.PostAsync(IMessageActivity, CancellationToken)
+  nameWithType: BotToUserQueue.IBotToUser.PostAsync(IMessageActivity, CancellationToken)
+  fullName: BotToUserQueue.IBotToUser.PostAsync(IMessageActivity, CancellationToken)
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue.#ctor*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue
+  isExternal: false
+  name: BotToUserQueue
+  nameWithType: BotToUserQueue.BotToUserQueue
+  fullName: BotToUserQueue.BotToUserQueue
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotToUserQueue.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#MakeMessage*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue
+  isExternal: false
+  name: Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.MakeMessage
+  nameWithType: BotToUserQueue.Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.MakeMessage
+  fullName: BotToUserQueue.Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.MakeMessage
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotToUserQueue.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#PostAsync*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue
+  isExternal: false
+  name: Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.PostAsync
+  nameWithType: BotToUserQueue.Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.PostAsync
+  fullName: BotToUserQueue.Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.PostAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotToUserQueue.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Extensions.PostAsync(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Extensions
+  isExternal: false
+  name: PostAsync(IBotToUser, String, String, CancellationToken)
+  nameWithType: Extensions.PostAsync(IBotToUser, String, String, CancellationToken)
+  fullName: Extensions.PostAsync(IBotToUser, String, String, CancellationToken)
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser
+  parent: Microsoft.Bot.Builder.Dialogs.Internals
+  isExternal: false
+  name: IBotToUser
+  nameWithType: IBotToUser
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser

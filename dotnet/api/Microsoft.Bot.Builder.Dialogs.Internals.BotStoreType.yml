@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType
+  commentId: T:Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType
+  id: BotStoreType
+  children:
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType.BotConversationData
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType.BotPrivateConversationData
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType.BotUserData
+  langs:
+  - csharp
+  name: BotStoreType
+  nameWithType: BotStoreType
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType
+  type: Enum
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: public enum BotStoreType
+  inheritance:
+  - System.Enum
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotStoreType.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType.BotConversationData
+  commentId: F:Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType.BotConversationData
+  id: BotConversationData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType
+  langs:
+  - csharp
+  name: BotConversationData
+  nameWithType: BotStoreType.BotConversationData
+  fullName: BotStoreType.BotConversationData
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: BotConversationData
+    return:
+      type: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotStoreType.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType.BotPrivateConversationData
+  commentId: F:Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType.BotPrivateConversationData
+  id: BotPrivateConversationData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType
+  langs:
+  - csharp
+  name: BotPrivateConversationData
+  nameWithType: BotStoreType.BotPrivateConversationData
+  fullName: BotStoreType.BotPrivateConversationData
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: BotPrivateConversationData
+    return:
+      type: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotStoreType.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType.BotUserData
+  commentId: F:Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType.BotUserData
+  id: BotUserData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType
+  langs:
+  - csharp
+  name: BotUserData
+  nameWithType: BotStoreType.BotUserData
+  fullName: BotStoreType.BotUserData
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: BotUserData
+    return:
+      type: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotStoreType.xml
+references:
+- uid: System.Enum
+  parent: System
+  isExternal: true
+  name: Enum
+  nameWithType: Enum
+  fullName: System.Enum
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType.BotConversationData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType
+  isExternal: false
+  name: BotConversationData
+  nameWithType: BotStoreType.BotConversationData
+  fullName: BotStoreType.BotConversationData
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType
+  parent: Microsoft.Bot.Builder.Dialogs.Internals
+  isExternal: false
+  name: BotStoreType
+  nameWithType: BotStoreType
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType.BotPrivateConversationData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType
+  isExternal: false
+  name: BotPrivateConversationData
+  nameWithType: BotStoreType.BotPrivateConversationData
+  fullName: BotStoreType.BotPrivateConversationData
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType.BotUserData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType
+  isExternal: false
+  name: BotUserData
+  nameWithType: BotStoreType.BotUserData
+  fullName: BotStoreType.BotUserData

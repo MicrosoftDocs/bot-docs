@@ -1,0 +1,186 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.IInvokeActivity
+  commentId: T:Microsoft.Bot.Connector.IInvokeActivity
+  id: IInvokeActivity
+  children:
+  - Microsoft.Bot.Connector.IInvokeActivity.Name
+  - Microsoft.Bot.Connector.IInvokeActivity.RelatesTo
+  - Microsoft.Bot.Connector.IInvokeActivity.Value
+  langs:
+  - csharp
+  name: IInvokeActivity
+  nameWithType: IInvokeActivity
+  fullName: Microsoft.Bot.Connector.IInvokeActivity
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: Synchronous request to invoke an operation
+  syntax:
+    content: 'public interface IInvokeActivity : Microsoft.Bot.Connector.IActivity'
+  derivedClasses:
+  - Microsoft.Bot.Connector.Activity
+  implements:
+  - Microsoft.Bot.Connector.IActivity
+  extensionMethods:
+  - Microsoft.Bot.Builder.ConnectorEx.Extensions.ToConversationReference(Microsoft.Bot.Connector.IActivity)
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IInvokeActivity.xml
+- uid: Microsoft.Bot.Connector.IInvokeActivity.Name
+  commentId: P:Microsoft.Bot.Connector.IInvokeActivity.Name
+  id: Name
+  parent: Microsoft.Bot.Connector.IInvokeActivity
+  langs:
+  - csharp
+  name: Name
+  nameWithType: IInvokeActivity.Name
+  fullName: IInvokeActivity.Name
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Name of the operation to invoke
+  syntax:
+    content: public string Name { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IInvokeActivity.Name*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IInvokeActivity.xml
+- uid: Microsoft.Bot.Connector.IInvokeActivity.RelatesTo
+  commentId: P:Microsoft.Bot.Connector.IInvokeActivity.RelatesTo
+  id: RelatesTo
+  parent: Microsoft.Bot.Connector.IInvokeActivity
+  langs:
+  - csharp
+  name: RelatesTo
+  nameWithType: IInvokeActivity.RelatesTo
+  fullName: IInvokeActivity.RelatesTo
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Reference to another conversation or activity
+  syntax:
+    content: public Microsoft.Bot.Connector.ConversationReference RelatesTo { get; set; }
+    return:
+      type: Microsoft.Bot.Connector.ConversationReference
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IInvokeActivity.RelatesTo*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IInvokeActivity.xml
+- uid: Microsoft.Bot.Connector.IInvokeActivity.Value
+  commentId: P:Microsoft.Bot.Connector.IInvokeActivity.Value
+  id: Value
+  parent: Microsoft.Bot.Connector.IInvokeActivity
+  langs:
+  - csharp
+  name: Value
+  nameWithType: IInvokeActivity.Value
+  fullName: IInvokeActivity.Value
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Open-ended value
+  syntax:
+    content: public object Value { get; set; }
+    return:
+      type: System.Object
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IInvokeActivity.Value*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IInvokeActivity.xml
+references:
+- uid: Microsoft.Bot.Connector.IInvokeActivity.Name
+  parent: Microsoft.Bot.Connector.IInvokeActivity
+  isExternal: false
+  name: Name
+  nameWithType: IInvokeActivity.Name
+  fullName: IInvokeActivity.Name
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.IInvokeActivity.RelatesTo
+  parent: Microsoft.Bot.Connector.IInvokeActivity
+  isExternal: false
+  name: RelatesTo
+  nameWithType: IInvokeActivity.RelatesTo
+  fullName: IInvokeActivity.RelatesTo
+- uid: Microsoft.Bot.Connector.ConversationReference
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: ConversationReference
+  nameWithType: ConversationReference
+  fullName: Microsoft.Bot.Connector.ConversationReference
+- uid: Microsoft.Bot.Connector.IInvokeActivity.Value
+  parent: Microsoft.Bot.Connector.IInvokeActivity
+  isExternal: false
+  name: Value
+  nameWithType: IInvokeActivity.Value
+  fullName: IInvokeActivity.Value
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.IInvokeActivity.Name*
+  parent: Microsoft.Bot.Connector.IInvokeActivity
+  isExternal: false
+  name: Name
+  nameWithType: IInvokeActivity.Name
+  fullName: IInvokeActivity.Name
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IInvokeActivity.xml
+- uid: Microsoft.Bot.Connector.IInvokeActivity.RelatesTo*
+  parent: Microsoft.Bot.Connector.IInvokeActivity
+  isExternal: false
+  name: RelatesTo
+  nameWithType: IInvokeActivity.RelatesTo
+  fullName: IInvokeActivity.RelatesTo
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IInvokeActivity.xml
+- uid: Microsoft.Bot.Connector.IInvokeActivity.Value*
+  parent: Microsoft.Bot.Connector.IInvokeActivity
+  isExternal: false
+  name: Value
+  nameWithType: IInvokeActivity.Value
+  fullName: IInvokeActivity.Value
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IInvokeActivity.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.Extensions.ToConversationReference(Microsoft.Bot.Connector.IActivity)
+  parent: Microsoft.Bot.Builder.ConnectorEx.Extensions
+  isExternal: false
+  name: ToConversationReference(IActivity)
+  nameWithType: Extensions.ToConversationReference(IActivity)
+  fullName: Extensions.ToConversationReference(IActivity)
+- uid: Microsoft.Bot.Connector.IActivity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IActivity
+  nameWithType: IActivity
+  fullName: Microsoft.Bot.Connector.IActivity

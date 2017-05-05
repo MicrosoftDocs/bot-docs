@@ -1,0 +1,291 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData
+  commentId: T:Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData
+  id: DictionaryBotData
+  children:
+  - Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData.#ctor(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData})
+  - Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData.MakeData
+  - Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData.WrapData(System.Collections.Generic.Dictionary{System.String,System.Object})
+  langs:
+  - csharp
+  name: DictionaryBotData
+  nameWithType: DictionaryBotData
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: 'public sealed class DictionaryBotData : Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase<System.Collections.Generic.Dictionary<string,object>>'
+  inheritance:
+  - System.Object
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  implements: []
+  inheritedMembers:
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.botDataKey
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.botDataStore
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.FlushAsync(System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.LoadAsync(System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#ConversationData
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#PrivateConversationData
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#UserData
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.WrapData(`0)
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/DictionaryBotData.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData.#ctor(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData})
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData.#ctor(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData})
+  id: '#ctor(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData})'
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData
+  langs:
+  - csharp
+  name: DictionaryBotData(IAddress, IBotDataStore<BotData>)
+  nameWithType: DictionaryBotData.DictionaryBotData(IAddress, IBotDataStore<BotData>)
+  fullName: DictionaryBotData.DictionaryBotData(IAddress, IBotDataStore<BotData>)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: public DictionaryBotData (Microsoft.Bot.Builder.Dialogs.IAddress botDataKey, Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore<Microsoft.Bot.Connector.BotData> botDataStore);
+    parameters:
+    - id: botDataKey
+      type: Microsoft.Bot.Builder.Dialogs.IAddress
+      description: To be added.
+    - id: botDataStore
+      type: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/DictionaryBotData.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData.MakeData
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData.MakeData
+  id: MakeData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData
+  langs:
+  - csharp
+  name: MakeData()
+  nameWithType: DictionaryBotData.MakeData()
+  fullName: DictionaryBotData.MakeData()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: protected override System.Collections.Generic.Dictionary<string,object> MakeData ();
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData.MakeData*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/DictionaryBotData.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData.WrapData(System.Collections.Generic.Dictionary{System.String,System.Object})
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData.WrapData(System.Collections.Generic.Dictionary{System.String,System.Object})
+  id: WrapData(System.Collections.Generic.Dictionary{System.String,System.Object})
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData
+  langs:
+  - csharp
+  name: WrapData(Dictionary<String,Object>)
+  nameWithType: DictionaryBotData.WrapData(Dictionary<String,Object>)
+  fullName: DictionaryBotData.WrapData(Dictionary<String,Object>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: protected override Microsoft.Bot.Builder.Dialogs.IBotDataBag WrapData (System.Collections.Generic.Dictionary<string,object> data);
+    parameters:
+    - id: data
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData.WrapData*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/DictionaryBotData.xml
+references:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  name: BotDataBase<T>
+  nameWithType: BotDataBase<T>
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase<T>
+- uid: System.Collections.Generic.Dictionary`2
+  name: Dictionary
+  nameWithType: Dictionary
+  fullName: System.Collections.Generic.Dictionary
+- uid: System.String
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase{System.Collections.Generic.Dictionary{System.String,System.Object}}
+  parent: Microsoft.Bot.Builder.Dialogs.Internals
+  isExternal: false
+  name: BotDataBase<Dictionary<String,Object>>
+  nameWithType: BotDataBase<Dictionary<String,Object>>
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase<System.Collections.Generic.Dictionary<System.String,System.Object>>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+    name: BotDataBase
+    nameWithType: BotDataBase
+    fullName: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData.#ctor(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData})
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData
+  isExternal: false
+  name: DictionaryBotData(IAddress, IBotDataStore<BotData>)
+  nameWithType: DictionaryBotData.DictionaryBotData(IAddress, IBotDataStore<BotData>)
+  fullName: DictionaryBotData.DictionaryBotData(IAddress, IBotDataStore<BotData>)
+- uid: Microsoft.Bot.Builder.Dialogs.IAddress
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: IAddress
+  nameWithType: IAddress
+  fullName: Microsoft.Bot.Builder.Dialogs.IAddress
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1
+  name: IBotDataStore<T>
+  nameWithType: IBotDataStore<T>
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore<T>
+- uid: Microsoft.Bot.Connector.BotData
+  name: BotData
+  nameWithType: BotData
+  fullName: Microsoft.Bot.Connector.BotData
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData}
+  parent: Microsoft.Bot.Builder.Dialogs.Internals
+  isExternal: false
+  name: IBotDataStore<BotData>
+  nameWithType: IBotDataStore<BotData>
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore<Microsoft.Bot.Connector.BotData>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1
+    name: IBotDataStore
+    nameWithType: IBotDataStore
+    fullName: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.BotData
+    name: BotData
+    nameWithType: BotData
+    fullName: Microsoft.Bot.Connector.BotData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData.MakeData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData
+  isExternal: false
+  name: MakeData()
+  nameWithType: DictionaryBotData.MakeData()
+  fullName: DictionaryBotData.MakeData()
+- uid: System.Collections.Generic.Dictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: Dictionary<String,Object>
+  nameWithType: Dictionary<String,Object>
+  fullName: System.Collections.Generic.Dictionary<System.String,System.Object>
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData.WrapData(System.Collections.Generic.Dictionary{System.String,System.Object})
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData
+  isExternal: false
+  name: WrapData(Dictionary<String,Object>)
+  nameWithType: DictionaryBotData.WrapData(Dictionary<String,Object>)
+  fullName: DictionaryBotData.WrapData(Dictionary<String,Object>)
+- uid: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: IBotDataBag
+  nameWithType: IBotDataBag
+  fullName: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData.#ctor*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData
+  isExternal: false
+  name: DictionaryBotData
+  nameWithType: DictionaryBotData.DictionaryBotData
+  fullName: DictionaryBotData.DictionaryBotData
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/DictionaryBotData.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData.MakeData*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData
+  isExternal: false
+  name: MakeData
+  nameWithType: DictionaryBotData.MakeData
+  fullName: DictionaryBotData.MakeData
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/DictionaryBotData.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData.WrapData*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData
+  isExternal: false
+  name: WrapData
+  nameWithType: DictionaryBotData.WrapData
+  fullName: DictionaryBotData.WrapData
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/DictionaryBotData.xml

@@ -1,0 +1,633 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2
+  commentId: T:Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2
+  id: Prompt`2
+  children:
+  - Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.#ctor(Microsoft.Bot.Builder.Dialogs.PromptOptions{`1})
+  - Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.MakePrompt(Microsoft.Bot.Builder.Dialogs.IDialogContext,System.String,System.Collections.Generic.IReadOnlyList{`1},System.Collections.Generic.IReadOnlyList{System.String})
+  - Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.MessageReceivedAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Connector.IMessageActivity})
+  - Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.promptOptions
+  - Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.TryParse(Microsoft.Bot.Connector.IMessageActivity,`0@)
+  - Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.Microsoft#Bot#Builder#Dialogs#IDialog{T}#StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)
+  langs:
+  - csharp
+  name: Prompt<T,U>
+  nameWithType: Prompt<T,U>
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.Prompt<T,U>
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: 'public abstract class Prompt<T,U> : Microsoft.Bot.Builder.Dialogs.IDialog<T>'
+    typeParameters:
+    - id: T
+      description: To be added.
+    - id: U
+      description: To be added.
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptAttachment
+  - Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1
+  - Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm
+  - Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble
+  - Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64
+  - Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptString
+  implements:
+  - Microsoft.Bot.Builder.Dialogs.IDialog{T}
+  inheritedMembers: []
+  extensionMethods:
+  - Microsoft.Bot.Builder.Dialogs.Chain.Catch``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Exception,Microsoft.Bot.Builder.Dialogs.IDialog{``0}})
+  - Microsoft.Bot.Builder.Dialogs.Chain.Catch``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{``0},``1,Microsoft.Bot.Builder.Dialogs.IDialog{``0}})
+  - Microsoft.Bot.Builder.Dialogs.Chain.ContinueWith``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.Chain.Continuation{``0,``1})
+  - Microsoft.Bot.Builder.Dialogs.Chain.DefaultIfException``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0})
+  - Microsoft.Bot.Builder.Dialogs.Chain.DefaultIfException``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0})
+  - Microsoft.Bot.Builder.Dialogs.Chain.Do``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{Microsoft.Bot.Builder.Dialogs.IBotContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{``0},System.Threading.Tasks.Task})
+  - Microsoft.Bot.Builder.Dialogs.Chain.Fold``1(Microsoft.Bot.Builder.Dialogs.IDialog{System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Dialogs.IDialog{``0}}},System.Func{``0,``0,``0})
+  - Microsoft.Bot.Builder.Dialogs.Chain.Loop``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0})
+  - Microsoft.Bot.Builder.Dialogs.Chain.PostEvent``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},``1)
+  - Microsoft.Bot.Builder.Dialogs.Chain.PostToUser``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0})
+  - Microsoft.Bot.Builder.Dialogs.Chain.Select``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{``0,``1})
+  - Microsoft.Bot.Builder.Dialogs.Chain.SelectMany``3(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{``0,Microsoft.Bot.Builder.Dialogs.IDialog{``1}},System.Func{``0,``1,``2})
+  - Microsoft.Bot.Builder.Dialogs.Chain.Switch``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ICase{``0,``1}[])
+  - Microsoft.Bot.Builder.Dialogs.Chain.Then``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{Microsoft.Bot.Builder.Dialogs.IBotContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{``0},System.Threading.Tasks.Task{``1}})
+  - Microsoft.Bot.Builder.Dialogs.Chain.Unwrap``1(Microsoft.Bot.Builder.Dialogs.IDialog{Microsoft.Bot.Builder.Dialogs.IDialog{``0}})
+  - Microsoft.Bot.Builder.Dialogs.Chain.Void``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack)
+  - Microsoft.Bot.Builder.Dialogs.Chain.Void``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0})
+  - Microsoft.Bot.Builder.Dialogs.Chain.WaitToBot``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0})
+  - Microsoft.Bot.Builder.Dialogs.Chain.Where``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{``0,System.Boolean})
+  - Microsoft.Bot.Builder.Dialogs.Chain.While``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{``0,Microsoft.Bot.Builder.Dialogs.IDialog{System.Boolean}},System.Func{``0,Microsoft.Bot.Builder.Dialogs.IDialog{``0}})
+  - Microsoft.Bot.Builder.Dialogs.Chain.WithScorable``3(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Scorables.IScorable{``1,``2})
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/Prompt`2.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.#ctor(Microsoft.Bot.Builder.Dialogs.PromptOptions{`1})
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.#ctor(Microsoft.Bot.Builder.Dialogs.PromptOptions{`1})
+  id: '#ctor(Microsoft.Bot.Builder.Dialogs.PromptOptions{`1})'
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2
+  langs:
+  - csharp
+  name: Prompt<T,U>(PromptOptions<U>)
+  nameWithType: Prompt<T,U>.Prompt<T,U>(PromptOptions<U>)
+  fullName: Prompt<T,U>.Prompt<T,U>(PromptOptions<U>)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: public Prompt (Microsoft.Bot.Builder.Dialogs.PromptOptions<U> promptOptions);
+    parameters:
+    - id: promptOptions
+      type: Microsoft.Bot.Builder.Dialogs.PromptOptions{U}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/Prompt`2.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.MakePrompt(Microsoft.Bot.Builder.Dialogs.IDialogContext,System.String,System.Collections.Generic.IReadOnlyList{`1},System.Collections.Generic.IReadOnlyList{System.String})
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.MakePrompt(Microsoft.Bot.Builder.Dialogs.IDialogContext,System.String,System.Collections.Generic.IReadOnlyList{`1},System.Collections.Generic.IReadOnlyList{System.String})
+  id: MakePrompt(Microsoft.Bot.Builder.Dialogs.IDialogContext,System.String,System.Collections.Generic.IReadOnlyList{`1},System.Collections.Generic.IReadOnlyList{System.String})
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2
+  langs:
+  - csharp
+  name: MakePrompt(IDialogContext, String, IReadOnlyList<U>, IReadOnlyList<String>)
+  nameWithType: Prompt<T,U>.MakePrompt(IDialogContext, String, IReadOnlyList<U>, IReadOnlyList<String>)
+  fullName: Prompt<T,U>.MakePrompt(IDialogContext, String, IReadOnlyList<U>, IReadOnlyList<String>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: protected virtual Microsoft.Bot.Connector.IMessageActivity MakePrompt (Microsoft.Bot.Builder.Dialogs.IDialogContext context, string prompt, System.Collections.Generic.IReadOnlyList<U> options = null, System.Collections.Generic.IReadOnlyList<string> descriptions = null);
+    parameters:
+    - id: context
+      type: Microsoft.Bot.Builder.Dialogs.IDialogContext
+      description: To be added.
+    - id: prompt
+      type: System.String
+      description: To be added.
+    - id: options
+      type: System.Collections.Generic.IReadOnlyList{U}
+      description: To be added.
+    - id: descriptions
+      type: System.Collections.Generic.IReadOnlyList{System.String}
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Connector.IMessageActivity
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.MakePrompt*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/Prompt`2.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.MessageReceivedAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Connector.IMessageActivity})
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.MessageReceivedAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Connector.IMessageActivity})
+  id: MessageReceivedAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Connector.IMessageActivity})
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2
+  langs:
+  - csharp
+  name: MessageReceivedAsync(IDialogContext, IAwaitable<IMessageActivity>)
+  nameWithType: Prompt<T,U>.MessageReceivedAsync(IDialogContext, IAwaitable<IMessageActivity>)
+  fullName: Prompt<T,U>.MessageReceivedAsync(IDialogContext, IAwaitable<IMessageActivity>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2/<MessageReceivedAsync>d__3))]
+
+      protected virtual System.Threading.Tasks.Task MessageReceivedAsync (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Builder.Dialogs.IAwaitable<Microsoft.Bot.Connector.IMessageActivity> message);
+    parameters:
+    - id: context
+      type: Microsoft.Bot.Builder.Dialogs.IDialogContext
+      description: To be added.
+    - id: message
+      type: Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Connector.IMessageActivity}
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.MessageReceivedAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/Prompt`2.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.promptOptions
+  commentId: F:Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.promptOptions
+  id: promptOptions
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2
+  langs:
+  - csharp
+  name: promptOptions
+  nameWithType: Prompt<T,U>.promptOptions
+  fullName: Prompt<T,U>.promptOptions
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: protected readonly Microsoft.Bot.Builder.Dialogs.PromptOptions<U> promptOptions;
+    return:
+      type: Microsoft.Bot.Builder.Dialogs.PromptOptions{U}
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/Prompt`2.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.TryParse(Microsoft.Bot.Connector.IMessageActivity,`0@)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.TryParse(Microsoft.Bot.Connector.IMessageActivity,`0@)
+  id: TryParse(Microsoft.Bot.Connector.IMessageActivity,`0@)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2
+  langs:
+  - csharp
+  name: TryParse(IMessageActivity, T)
+  nameWithType: Prompt<T,U>.TryParse(IMessageActivity, T)
+  fullName: Prompt<T,U>.TryParse(IMessageActivity, T)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: protected abstract bool TryParse (Microsoft.Bot.Connector.IMessageActivity message, out T result);
+    parameters:
+    - id: message
+      type: Microsoft.Bot.Connector.IMessageActivity
+      description: To be added.
+    - id: result
+      type: T
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.TryParse*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/Prompt`2.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.Microsoft#Bot#Builder#Dialogs#IDialog{T}#StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.Microsoft#Bot#Builder#Dialogs#IDialog<T>#StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)
+  id: Microsoft#Bot#Builder#Dialogs#IDialog{T}#StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2
+  langs:
+  - csharp
+  name: IDialog<T>.StartAsync(IDialogContext)
+  nameWithType: Prompt<T,U>.IDialog<T>.StartAsync(IDialogContext)
+  fullName: Prompt<T,U>.IDialog<T>.StartAsync(IDialogContext)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2/<Microsoft-Bot-Builder-Dialogs-IDialog<T>-StartAsync>d__2))]
+
+      System.Threading.Tasks.Task IDialog<T>.StartAsync (Microsoft.Bot.Builder.Dialogs.IDialogContext context);
+    parameters:
+    - id: context
+      type: Microsoft.Bot.Builder.Dialogs.IDialogContext
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.Microsoft#Bot#Builder#Dialogs#IDialog{T}#StartAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/Prompt`2.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.#ctor(Microsoft.Bot.Builder.Dialogs.PromptOptions{`1})
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2
+  isExternal: false
+  name: Prompt<T,U>(PromptOptions<U>)
+  nameWithType: Prompt<T,U>.Prompt<T,U>(PromptOptions<U>)
+  fullName: Prompt<T,U>.Prompt<T,U>(PromptOptions<U>)
+- uid: Microsoft.Bot.Builder.Dialogs.PromptOptions`1
+  name: PromptOptions<T>
+  nameWithType: PromptOptions<T>
+  fullName: Microsoft.Bot.Builder.Dialogs.PromptOptions<T>
+- uid: U
+  name: U
+  nameWithType: U
+  fullName: U
+- uid: Microsoft.Bot.Builder.Dialogs.PromptOptions{U}
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: PromptOptions<U>
+  nameWithType: PromptOptions<U>
+  fullName: Microsoft.Bot.Builder.Dialogs.PromptOptions<U>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Dialogs.PromptOptions`1
+    name: PromptOptions
+    nameWithType: PromptOptions
+    fullName: Microsoft.Bot.Builder.Dialogs.PromptOptions
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: U
+    name: U
+    nameWithType: U
+    fullName: U
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.MakePrompt(Microsoft.Bot.Builder.Dialogs.IDialogContext,System.String,System.Collections.Generic.IReadOnlyList{`1},System.Collections.Generic.IReadOnlyList{System.String})
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2
+  isExternal: false
+  name: MakePrompt(IDialogContext, String, IReadOnlyList<U>, IReadOnlyList<String>)
+  nameWithType: Prompt<T,U>.MakePrompt(IDialogContext, String, IReadOnlyList<U>, IReadOnlyList<String>)
+  fullName: Prompt<T,U>.MakePrompt(IDialogContext, String, IReadOnlyList<U>, IReadOnlyList<String>)
+- uid: Microsoft.Bot.Connector.IMessageActivity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IMessageActivity
+  nameWithType: IMessageActivity
+  fullName: Microsoft.Bot.Connector.IMessageActivity
+- uid: Microsoft.Bot.Builder.Dialogs.IDialogContext
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: IDialogContext
+  nameWithType: IDialogContext
+  fullName: Microsoft.Bot.Builder.Dialogs.IDialogContext
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic.IReadOnlyList`1
+  name: IReadOnlyList
+  nameWithType: IReadOnlyList
+  fullName: System.Collections.Generic.IReadOnlyList
+- uid: System.Collections.Generic.IReadOnlyList{U}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IReadOnlyList<U>
+  nameWithType: IReadOnlyList<U>
+  fullName: System.Collections.Generic.IReadOnlyList<U>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: U
+    name: U
+    nameWithType: U
+    fullName: U
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Collections.Generic.IReadOnlyList{System.String}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IReadOnlyList<String>
+  nameWithType: IReadOnlyList<String>
+  fullName: System.Collections.Generic.IReadOnlyList<System.String>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.MessageReceivedAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Connector.IMessageActivity})
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2
+  isExternal: false
+  name: MessageReceivedAsync(IDialogContext, IAwaitable<IMessageActivity>)
+  nameWithType: Prompt<T,U>.MessageReceivedAsync(IDialogContext, IAwaitable<IMessageActivity>)
+  fullName: Prompt<T,U>.MessageReceivedAsync(IDialogContext, IAwaitable<IMessageActivity>)
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.Bot.Builder.Dialogs.IAwaitable`1
+  name: IAwaitable<T>
+  nameWithType: IAwaitable<T>
+  fullName: Microsoft.Bot.Builder.Dialogs.IAwaitable<T>
+- uid: Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Connector.IMessageActivity}
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: IAwaitable<IMessageActivity>
+  nameWithType: IAwaitable<IMessageActivity>
+  fullName: Microsoft.Bot.Builder.Dialogs.IAwaitable<Microsoft.Bot.Connector.IMessageActivity>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Dialogs.IAwaitable`1
+    name: IAwaitable
+    nameWithType: IAwaitable
+    fullName: Microsoft.Bot.Builder.Dialogs.IAwaitable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.IMessageActivity
+    name: IMessageActivity
+    nameWithType: IMessageActivity
+    fullName: Microsoft.Bot.Connector.IMessageActivity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.promptOptions
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2
+  isExternal: false
+  name: promptOptions
+  nameWithType: Prompt<T,U>.promptOptions
+  fullName: Prompt<T,U>.promptOptions
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.TryParse(Microsoft.Bot.Connector.IMessageActivity,`0@)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2
+  isExternal: false
+  name: TryParse(IMessageActivity, T)
+  nameWithType: Prompt<T,U>.TryParse(IMessageActivity, T)
+  fullName: Prompt<T,U>.TryParse(IMessageActivity, T)
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: T
+  isExternal: true
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.Microsoft#Bot#Builder#Dialogs#IDialog{T}#StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2
+  isExternal: false
+  name: IDialog<T>.StartAsync(IDialogContext)
+  nameWithType: Prompt<T,U>.IDialog<T>.StartAsync(IDialogContext)
+  fullName: Prompt<T,U>.IDialog<T>.StartAsync(IDialogContext)
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.#ctor*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2
+  isExternal: false
+  name: Prompt<T,U>
+  nameWithType: Prompt<T,U>.Prompt<T,U>
+  fullName: Prompt<T,U>.Prompt<T,U>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/Prompt`2.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.MakePrompt*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2
+  isExternal: false
+  name: MakePrompt
+  nameWithType: Prompt<T,U>.MakePrompt
+  fullName: Prompt<T,U>.MakePrompt
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/Prompt`2.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.MessageReceivedAsync*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2
+  isExternal: false
+  name: MessageReceivedAsync
+  nameWithType: Prompt<T,U>.MessageReceivedAsync
+  fullName: Prompt<T,U>.MessageReceivedAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/Prompt`2.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.TryParse*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2
+  isExternal: false
+  name: TryParse
+  nameWithType: Prompt<T,U>.TryParse
+  fullName: Prompt<T,U>.TryParse
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/Prompt`2.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.Microsoft#Bot#Builder#Dialogs#IDialog{T}#StartAsync*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2
+  isExternal: false
+  name: Microsoft.Bot.Builder.Dialogs.IDialog<T>.StartAsync
+  nameWithType: Prompt<T,U>.Microsoft.Bot.Builder.Dialogs.IDialog<T>.StartAsync
+  fullName: Prompt<T,U>.Microsoft.Bot.Builder.Dialogs.IDialog<T>.StartAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/Prompt`2.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Chain.Catch``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Exception,Microsoft.Bot.Builder.Dialogs.IDialog{``0}})
+  parent: Microsoft.Bot.Builder.Dialogs.Chain
+  isExternal: false
+  name: Catch<T>(IDialog<T>, Func<IDialog<T>,Exception,IDialog<T>>)
+  nameWithType: Chain.Catch<T>(IDialog<T>, Func<IDialog<T>,Exception,IDialog<T>>)
+  fullName: Chain.Catch<T>(IDialog<T>, Func<IDialog<T>,Exception,IDialog<T>>)
+- uid: Microsoft.Bot.Builder.Dialogs.Chain.Catch``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{``0},``1,Microsoft.Bot.Builder.Dialogs.IDialog{``0}})
+  parent: Microsoft.Bot.Builder.Dialogs.Chain
+  isExternal: false
+  name: Catch<T,E>(IDialog<T>, Func<IDialog<T>,E,IDialog<T>>)
+  nameWithType: Chain.Catch<T,E>(IDialog<T>, Func<IDialog<T>,E,IDialog<T>>)
+  fullName: Chain.Catch<T,E>(IDialog<T>, Func<IDialog<T>,E,IDialog<T>>)
+- uid: Microsoft.Bot.Builder.Dialogs.Chain.ContinueWith``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.Chain.Continuation{``0,``1})
+  parent: Microsoft.Bot.Builder.Dialogs.Chain
+  isExternal: false
+  name: ContinueWith<T,R>(IDialog<T>, Chain)
+  nameWithType: Chain.ContinueWith<T,R>(IDialog<T>, Chain)
+  fullName: Chain.ContinueWith<T,R>(IDialog<T>, Chain)
+- uid: Microsoft.Bot.Builder.Dialogs.Chain.DefaultIfException``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0})
+  parent: Microsoft.Bot.Builder.Dialogs.Chain
+  isExternal: false
+  name: DefaultIfException<T>(IDialog<T>)
+  nameWithType: Chain.DefaultIfException<T>(IDialog<T>)
+  fullName: Chain.DefaultIfException<T>(IDialog<T>)
+- uid: Microsoft.Bot.Builder.Dialogs.Chain.DefaultIfException``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0})
+  parent: Microsoft.Bot.Builder.Dialogs.Chain
+  isExternal: false
+  name: DefaultIfException<T,E>(IDialog<T>)
+  nameWithType: Chain.DefaultIfException<T,E>(IDialog<T>)
+  fullName: Chain.DefaultIfException<T,E>(IDialog<T>)
+- uid: Microsoft.Bot.Builder.Dialogs.Chain.Do``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{Microsoft.Bot.Builder.Dialogs.IBotContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{``0},System.Threading.Tasks.Task})
+  parent: Microsoft.Bot.Builder.Dialogs.Chain
+  isExternal: false
+  name: Do<T>(IDialog<T>, Func<IBotContext,IAwaitable<T>,Task>)
+  nameWithType: Chain.Do<T>(IDialog<T>, Func<IBotContext,IAwaitable<T>,Task>)
+  fullName: Chain.Do<T>(IDialog<T>, Func<IBotContext,IAwaitable<T>,Task>)
+- uid: Microsoft.Bot.Builder.Dialogs.Chain.Fold``1(Microsoft.Bot.Builder.Dialogs.IDialog{System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Dialogs.IDialog{``0}}},System.Func{``0,``0,``0})
+  parent: Microsoft.Bot.Builder.Dialogs.Chain
+  isExternal: false
+  name: Fold<T>(IDialog<IEnumerable<IDialog<T>>>, Func<T,T,T>)
+  nameWithType: Chain.Fold<T>(IDialog<IEnumerable<IDialog<T>>>, Func<T,T,T>)
+  fullName: Chain.Fold<T>(IDialog<IEnumerable<IDialog<T>>>, Func<T,T,T>)
+- uid: Microsoft.Bot.Builder.Dialogs.Chain.Loop``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0})
+  parent: Microsoft.Bot.Builder.Dialogs.Chain
+  isExternal: false
+  name: Loop<T>(IDialog<T>)
+  nameWithType: Chain.Loop<T>(IDialog<T>)
+  fullName: Chain.Loop<T>(IDialog<T>)
+- uid: Microsoft.Bot.Builder.Dialogs.Chain.PostEvent``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},``1)
+  parent: Microsoft.Bot.Builder.Dialogs.Chain
+  isExternal: false
+  name: PostEvent<T,E>(IDialog<T>, E)
+  nameWithType: Chain.PostEvent<T,E>(IDialog<T>, E)
+  fullName: Chain.PostEvent<T,E>(IDialog<T>, E)
+- uid: Microsoft.Bot.Builder.Dialogs.Chain.PostToUser``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0})
+  parent: Microsoft.Bot.Builder.Dialogs.Chain
+  isExternal: false
+  name: PostToUser<T>(IDialog<T>)
+  nameWithType: Chain.PostToUser<T>(IDialog<T>)
+  fullName: Chain.PostToUser<T>(IDialog<T>)
+- uid: Microsoft.Bot.Builder.Dialogs.Chain.Select``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{``0,``1})
+  parent: Microsoft.Bot.Builder.Dialogs.Chain
+  isExternal: false
+  name: Select<T,R>(IDialog<T>, Func<T,R>)
+  nameWithType: Chain.Select<T,R>(IDialog<T>, Func<T,R>)
+  fullName: Chain.Select<T,R>(IDialog<T>, Func<T,R>)
+- uid: Microsoft.Bot.Builder.Dialogs.Chain.SelectMany``3(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{``0,Microsoft.Bot.Builder.Dialogs.IDialog{``1}},System.Func{``0,``1,``2})
+  parent: Microsoft.Bot.Builder.Dialogs.Chain
+  isExternal: false
+  name: SelectMany<T,C,R>(IDialog<T>, Func<T,IDialog<C>>, Func<T,C,R>)
+  nameWithType: Chain.SelectMany<T,C,R>(IDialog<T>, Func<T,IDialog<C>>, Func<T,C,R>)
+  fullName: Chain.SelectMany<T,C,R>(IDialog<T>, Func<T,IDialog<C>>, Func<T,C,R>)
+- uid: Microsoft.Bot.Builder.Dialogs.Chain.Switch``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ICase{``0,``1}[])
+  parent: Microsoft.Bot.Builder.Dialogs.Chain
+  isExternal: false
+  name: Switch<T,R>(IDialog<T>, ICase<T,R>[])
+  nameWithType: Chain.Switch<T,R>(IDialog<T>, ICase<T,R>[])
+  fullName: Chain.Switch<T,R>(IDialog<T>, ICase<T,R>[])
+- uid: Microsoft.Bot.Builder.Dialogs.Chain.Then``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{Microsoft.Bot.Builder.Dialogs.IBotContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{``0},System.Threading.Tasks.Task{``1}})
+  parent: Microsoft.Bot.Builder.Dialogs.Chain
+  isExternal: false
+  name: Then<T,R>(IDialog<T>, Func<IBotContext,IAwaitable<T>,Task<R>>)
+  nameWithType: Chain.Then<T,R>(IDialog<T>, Func<IBotContext,IAwaitable<T>,Task<R>>)
+  fullName: Chain.Then<T,R>(IDialog<T>, Func<IBotContext,IAwaitable<T>,Task<R>>)
+- uid: Microsoft.Bot.Builder.Dialogs.Chain.Unwrap``1(Microsoft.Bot.Builder.Dialogs.IDialog{Microsoft.Bot.Builder.Dialogs.IDialog{``0}})
+  parent: Microsoft.Bot.Builder.Dialogs.Chain
+  isExternal: false
+  name: Unwrap<T>(IDialog<IDialog<T>>)
+  nameWithType: Chain.Unwrap<T>(IDialog<IDialog<T>>)
+  fullName: Chain.Unwrap<T>(IDialog<IDialog<T>>)
+- uid: Microsoft.Bot.Builder.Dialogs.Chain.Void``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack)
+  parent: Microsoft.Bot.Builder.Dialogs.Chain
+  isExternal: false
+  name: Void<T>(IDialog<T>, IDialogStack)
+  nameWithType: Chain.Void<T>(IDialog<T>, IDialogStack)
+  fullName: Chain.Void<T>(IDialog<T>, IDialogStack)
+- uid: Microsoft.Bot.Builder.Dialogs.Chain.Void``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0})
+  parent: Microsoft.Bot.Builder.Dialogs.Chain
+  isExternal: false
+  name: Void<T,R>(IDialog<T>)
+  nameWithType: Chain.Void<T,R>(IDialog<T>)
+  fullName: Chain.Void<T,R>(IDialog<T>)
+- uid: Microsoft.Bot.Builder.Dialogs.Chain.WaitToBot``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0})
+  parent: Microsoft.Bot.Builder.Dialogs.Chain
+  isExternal: false
+  name: WaitToBot<T>(IDialog<T>)
+  nameWithType: Chain.WaitToBot<T>(IDialog<T>)
+  fullName: Chain.WaitToBot<T>(IDialog<T>)
+- uid: Microsoft.Bot.Builder.Dialogs.Chain.Where``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{``0,System.Boolean})
+  parent: Microsoft.Bot.Builder.Dialogs.Chain
+  isExternal: false
+  name: Where<T>(IDialog<T>, Func<T,Boolean>)
+  nameWithType: Chain.Where<T>(IDialog<T>, Func<T,Boolean>)
+  fullName: Chain.Where<T>(IDialog<T>, Func<T,Boolean>)
+- uid: Microsoft.Bot.Builder.Dialogs.Chain.While``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{``0,Microsoft.Bot.Builder.Dialogs.IDialog{System.Boolean}},System.Func{``0,Microsoft.Bot.Builder.Dialogs.IDialog{``0}})
+  parent: Microsoft.Bot.Builder.Dialogs.Chain
+  isExternal: false
+  name: While<T>(IDialog<T>, Func<T,IDialog<Boolean>>, Func<T,IDialog<T>>)
+  nameWithType: Chain.While<T>(IDialog<T>, Func<T,IDialog<Boolean>>, Func<T,IDialog<T>>)
+  fullName: Chain.While<T>(IDialog<T>, Func<T,IDialog<Boolean>>, Func<T,IDialog<T>>)
+- uid: Microsoft.Bot.Builder.Dialogs.Chain.WithScorable``3(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Scorables.IScorable{``1,``2})
+  parent: Microsoft.Bot.Builder.Dialogs.Chain
+  isExternal: false
+  name: WithScorable<T,Item,Score>(IDialog<T>, IScorable<Item,Score>)
+  nameWithType: Chain.WithScorable<T,Item,Score>(IDialog<T>, IScorable<Item,Score>)
+  fullName: Chain.WithScorable<T,Item,Score>(IDialog<T>, IScorable<Item,Score>)
+- uid: Microsoft.Bot.Builder.Dialogs.IDialog`1
+  name: IDialog<TResult>
+  nameWithType: IDialog<TResult>
+  fullName: Microsoft.Bot.Builder.Dialogs.IDialog<TResult>
+- uid: Microsoft.Bot.Builder.Dialogs.IDialog{T}
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: IDialog<T>
+  nameWithType: IDialog<T>
+  fullName: Microsoft.Bot.Builder.Dialogs.IDialog<T>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Dialogs.IDialog`1
+    name: IDialog
+    nameWithType: IDialog
+    fullName: Microsoft.Bot.Builder.Dialogs.IDialog
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T
+    name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'

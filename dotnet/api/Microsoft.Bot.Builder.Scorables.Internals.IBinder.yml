@@ -1,0 +1,260 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IBinder
+  commentId: T:Microsoft.Bot.Builder.Scorables.Internals.IBinder
+  id: IBinder
+  children:
+  - Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind(System.Delegate,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding@)
+  - Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind(System.Reflection.MethodBase,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding@)
+  - Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind``1(System.Delegate,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding{``0}@)
+  - Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind``1(System.Reflection.MethodInfo,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding{``0}@)
+  langs:
+  - csharp
+  name: IBinder
+  nameWithType: IBinder
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.IBinder
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public interface IBinder
+  derivedClasses:
+  - Microsoft.Bot.Builder.Scorables.Internals.Binder
+  implements: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/IBinder.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind(System.Delegate,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding@)
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind(System.Delegate,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding@)
+  id: TryBind(System.Delegate,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding@)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.IBinder
+  langs:
+  - csharp
+  name: TryBind(Delegate, IResolver, IBinding)
+  nameWithType: IBinder.TryBind(Delegate, IResolver, IBinding)
+  fullName: IBinder.TryBind(Delegate, IResolver, IBinding)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public bool TryBind (Delegate lambda, Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, out Microsoft.Bot.Builder.Scorables.Internals.IBinding binding);
+    parameters:
+    - id: lambda
+      type: System.Delegate
+      description: To be added.
+    - id: resolver
+      type: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+      description: To be added.
+    - id: binding
+      type: Microsoft.Bot.Builder.Scorables.Internals.IBinding
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/IBinder.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind(System.Reflection.MethodBase,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding@)
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind(System.Reflection.MethodBase,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding@)
+  id: TryBind(System.Reflection.MethodBase,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding@)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.IBinder
+  langs:
+  - csharp
+  name: TryBind(MethodBase, IResolver, IBinding)
+  nameWithType: IBinder.TryBind(MethodBase, IResolver, IBinding)
+  fullName: IBinder.TryBind(MethodBase, IResolver, IBinding)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public bool TryBind (System.Reflection.MethodBase method, Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, out Microsoft.Bot.Builder.Scorables.Internals.IBinding binding);
+    parameters:
+    - id: method
+      type: System.Reflection.MethodBase
+      description: To be added.
+    - id: resolver
+      type: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+      description: To be added.
+    - id: binding
+      type: Microsoft.Bot.Builder.Scorables.Internals.IBinding
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/IBinder.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind``1(System.Delegate,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding{``0}@)
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind``1(System.Delegate,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding{``0}@)
+  id: TryBind``1(System.Delegate,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding{``0}@)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.IBinder
+  langs:
+  - csharp
+  name: TryBind<R>(Delegate, IResolver, IBinding<R>)
+  nameWithType: IBinder.TryBind<R>(Delegate, IResolver, IBinding<R>)
+  fullName: IBinder.TryBind<R>(Delegate, IResolver, IBinding<R>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public bool TryBind<R> (Delegate lambda, Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, out Microsoft.Bot.Builder.Scorables.Internals.IBinding<R> binding);
+    parameters:
+    - id: lambda
+      type: System.Delegate
+      description: To be added.
+    - id: resolver
+      type: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+      description: To be added.
+    - id: binding
+      type: Microsoft.Bot.Builder.Scorables.Internals.IBinding`1
+      description: To be added.
+    typeParameters:
+    - id: R
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/IBinder.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind``1(System.Reflection.MethodInfo,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding{``0}@)
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind``1(System.Reflection.MethodInfo,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding{``0}@)
+  id: TryBind``1(System.Reflection.MethodInfo,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding{``0}@)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.IBinder
+  langs:
+  - csharp
+  name: TryBind<R>(MethodInfo, IResolver, IBinding<R>)
+  nameWithType: IBinder.TryBind<R>(MethodInfo, IResolver, IBinding<R>)
+  fullName: IBinder.TryBind<R>(MethodInfo, IResolver, IBinding<R>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public bool TryBind<R> (System.Reflection.MethodInfo method, Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, out Microsoft.Bot.Builder.Scorables.Internals.IBinding<R> binding);
+    parameters:
+    - id: method
+      type: System.Reflection.MethodInfo
+      description: To be added.
+    - id: resolver
+      type: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+      description: To be added.
+    - id: binding
+      type: Microsoft.Bot.Builder.Scorables.Internals.IBinding`1
+      description: To be added.
+    typeParameters:
+    - id: R
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/IBinder.xml
+references:
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind(System.Delegate,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding@)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.IBinder
+  isExternal: false
+  name: TryBind(Delegate, IResolver, IBinding)
+  nameWithType: IBinder.TryBind(Delegate, IResolver, IBinding)
+  fullName: IBinder.TryBind(Delegate, IResolver, IBinding)
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Delegate
+  parent: System
+  isExternal: true
+  name: Delegate
+  nameWithType: Delegate
+  fullName: System.Delegate
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+  parent: Microsoft.Bot.Builder.Scorables.Internals
+  isExternal: false
+  name: IResolver
+  nameWithType: IResolver
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IBinding
+  parent: Microsoft.Bot.Builder.Scorables.Internals
+  isExternal: false
+  name: IBinding
+  nameWithType: IBinding
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.IBinding
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind(System.Reflection.MethodBase,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding@)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.IBinder
+  isExternal: false
+  name: TryBind(MethodBase, IResolver, IBinding)
+  nameWithType: IBinder.TryBind(MethodBase, IResolver, IBinding)
+  fullName: IBinder.TryBind(MethodBase, IResolver, IBinding)
+- uid: System.Reflection.MethodBase
+  parent: System.Reflection
+  isExternal: true
+  name: MethodBase
+  nameWithType: MethodBase
+  fullName: System.Reflection.MethodBase
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind``1(System.Delegate,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding{``0}@)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.IBinder
+  isExternal: false
+  name: TryBind<R>(Delegate, IResolver, IBinding<R>)
+  nameWithType: IBinder.TryBind<R>(Delegate, IResolver, IBinding<R>)
+  fullName: IBinder.TryBind<R>(Delegate, IResolver, IBinding<R>)
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IBinding`1
+  parent: Microsoft.Bot.Builder.Scorables.Internals
+  isExternal: false
+  name: IBinding<R>
+  nameWithType: IBinding<R>
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.IBinding<R>
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind``1(System.Reflection.MethodInfo,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding{``0}@)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.IBinder
+  isExternal: false
+  name: TryBind<R>(MethodInfo, IResolver, IBinding<R>)
+  nameWithType: IBinder.TryBind<R>(MethodInfo, IResolver, IBinding<R>)
+  fullName: IBinder.TryBind<R>(MethodInfo, IResolver, IBinding<R>)
+- uid: System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind*
+  parent: Microsoft.Bot.Builder.Scorables.Internals.IBinder
+  isExternal: false
+  name: TryBind
+  nameWithType: IBinder.TryBind
+  fullName: IBinder.TryBind
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/IBinder.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind``1*
+  parent: Microsoft.Bot.Builder.Scorables.Internals.IBinder
+  isExternal: false
+  name: TryBind<R>
+  nameWithType: IBinder.TryBind<R>
+  fullName: IBinder.TryBind<R>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/IBinder.xml

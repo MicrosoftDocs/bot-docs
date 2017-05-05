@@ -1,0 +1,524 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  commentId: T:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  id: BotDataBase`1
+  children:
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.#ctor(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData})
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.botDataKey
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.botDataStore
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.FlushAsync(System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.LoadAsync(System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.MakeData
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.WrapData(`0)
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#ConversationData
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#PrivateConversationData
+  - Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#UserData
+  langs:
+  - csharp
+  name: BotDataBase<T>
+  nameWithType: BotDataBase<T>
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase<T>
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: 'public abstract class BotDataBase<T> : Microsoft.Bot.Builder.Dialogs.Internals.IBotData'
+    typeParameters:
+    - id: T
+      description: To be added.
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData
+  - Microsoft.Bot.Builder.Dialogs.Internals.JObjectBotData
+  implements:
+  - Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotDataBase`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.#ctor(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData})
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.#ctor(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData})
+  id: '#ctor(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData})'
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  langs:
+  - csharp
+  name: BotDataBase<T>(IAddress, IBotDataStore<BotData>)
+  nameWithType: BotDataBase<T>.BotDataBase<T>(IAddress, IBotDataStore<BotData>)
+  fullName: BotDataBase<T>.BotDataBase<T>(IAddress, IBotDataStore<BotData>)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: public BotDataBase (Microsoft.Bot.Builder.Dialogs.IAddress botDataKey, Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore<Microsoft.Bot.Connector.BotData> botDataStore);
+    parameters:
+    - id: botDataKey
+      type: Microsoft.Bot.Builder.Dialogs.IAddress
+      description: To be added.
+    - id: botDataStore
+      type: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotDataBase`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.botDataKey
+  commentId: F:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.botDataKey
+  id: botDataKey
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  langs:
+  - csharp
+  name: botDataKey
+  nameWithType: BotDataBase<T>.botDataKey
+  fullName: BotDataBase<T>.botDataKey
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: protected readonly Microsoft.Bot.Builder.Dialogs.IAddress botDataKey;
+    return:
+      type: Microsoft.Bot.Builder.Dialogs.IAddress
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotDataBase`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.botDataStore
+  commentId: F:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.botDataStore
+  id: botDataStore
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  langs:
+  - csharp
+  name: botDataStore
+  nameWithType: BotDataBase<T>.botDataStore
+  fullName: BotDataBase<T>.botDataStore
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: protected readonly Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore<Microsoft.Bot.Connector.BotData> botDataStore;
+    return:
+      type: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData}
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotDataBase`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.FlushAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.FlushAsync(System.Threading.CancellationToken)
+  id: FlushAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  langs:
+  - csharp
+  name: FlushAsync(CancellationToken)
+  nameWithType: BotDataBase<T>.FlushAsync(CancellationToken)
+  fullName: BotDataBase<T>.FlushAsync(CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1/<FlushAsync>d__9))]
+
+      public System.Threading.Tasks.Task FlushAsync (System.Threading.CancellationToken cancellationToken);
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.FlushAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotDataBase`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.LoadAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.LoadAsync(System.Threading.CancellationToken)
+  id: LoadAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  langs:
+  - csharp
+  name: LoadAsync(CancellationToken)
+  nameWithType: BotDataBase<T>.LoadAsync(CancellationToken)
+  fullName: BotDataBase<T>.LoadAsync(CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1/<LoadAsync>d__8))]
+
+      public System.Threading.Tasks.Task LoadAsync (System.Threading.CancellationToken cancellationToken);
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.LoadAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotDataBase`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.MakeData
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.MakeData
+  id: MakeData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  langs:
+  - csharp
+  name: MakeData()
+  nameWithType: BotDataBase<T>.MakeData()
+  fullName: BotDataBase<T>.MakeData()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: protected abstract T MakeData ();
+    parameters: []
+    return:
+      type: T
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.MakeData*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotDataBase`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.WrapData(`0)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.WrapData(`0)
+  id: WrapData(`0)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  langs:
+  - csharp
+  name: WrapData(T)
+  nameWithType: BotDataBase<T>.WrapData(T)
+  fullName: BotDataBase<T>.WrapData(T)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: protected abstract Microsoft.Bot.Builder.Dialogs.IBotDataBag WrapData (T data);
+    parameters:
+    - id: data
+      type: T
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.WrapData*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotDataBase`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#ConversationData
+  commentId: P:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#ConversationData
+  id: Microsoft#Bot#Builder#Dialogs#Internals#IBotData#ConversationData
+  isEii: true
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  langs:
+  - csharp
+  name: IBotData.ConversationData
+  nameWithType: BotDataBase<T>.IBotData.ConversationData
+  fullName: BotDataBase<T>.IBotData.ConversationData
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: Microsoft.Bot.Builder.Dialogs.IBotDataBag Microsoft.Bot.Builder.Dialogs.Internals.IBotData.ConversationData { get; }
+    return:
+      type: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#ConversationData*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotDataBase`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#PrivateConversationData
+  commentId: P:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#PrivateConversationData
+  id: Microsoft#Bot#Builder#Dialogs#Internals#IBotData#PrivateConversationData
+  isEii: true
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  langs:
+  - csharp
+  name: IBotData.PrivateConversationData
+  nameWithType: BotDataBase<T>.IBotData.PrivateConversationData
+  fullName: BotDataBase<T>.IBotData.PrivateConversationData
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: Microsoft.Bot.Builder.Dialogs.IBotDataBag Microsoft.Bot.Builder.Dialogs.Internals.IBotData.PrivateConversationData { get; }
+    return:
+      type: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#PrivateConversationData*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotDataBase`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#UserData
+  commentId: P:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#UserData
+  id: Microsoft#Bot#Builder#Dialogs#Internals#IBotData#UserData
+  isEii: true
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  langs:
+  - csharp
+  name: IBotData.UserData
+  nameWithType: BotDataBase<T>.IBotData.UserData
+  fullName: BotDataBase<T>.IBotData.UserData
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: Microsoft.Bot.Builder.Dialogs.IBotDataBag Microsoft.Bot.Builder.Dialogs.Internals.IBotData.UserData { get; }
+    return:
+      type: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#UserData*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotDataBase`1.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.#ctor(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData})
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  isExternal: false
+  name: BotDataBase<T>(IAddress, IBotDataStore<BotData>)
+  nameWithType: BotDataBase<T>.BotDataBase<T>(IAddress, IBotDataStore<BotData>)
+  fullName: BotDataBase<T>.BotDataBase<T>(IAddress, IBotDataStore<BotData>)
+- uid: Microsoft.Bot.Builder.Dialogs.IAddress
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: IAddress
+  nameWithType: IAddress
+  fullName: Microsoft.Bot.Builder.Dialogs.IAddress
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1
+  name: IBotDataStore<T>
+  nameWithType: IBotDataStore<T>
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore<T>
+- uid: Microsoft.Bot.Connector.BotData
+  name: BotData
+  nameWithType: BotData
+  fullName: Microsoft.Bot.Connector.BotData
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData}
+  parent: Microsoft.Bot.Builder.Dialogs.Internals
+  isExternal: false
+  name: IBotDataStore<BotData>
+  nameWithType: IBotDataStore<BotData>
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore<Microsoft.Bot.Connector.BotData>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1
+    name: IBotDataStore
+    nameWithType: IBotDataStore
+    fullName: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.BotData
+    name: BotData
+    nameWithType: BotData
+    fullName: Microsoft.Bot.Connector.BotData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.botDataKey
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  isExternal: false
+  name: botDataKey
+  nameWithType: BotDataBase<T>.botDataKey
+  fullName: BotDataBase<T>.botDataKey
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.botDataStore
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  isExternal: false
+  name: botDataStore
+  nameWithType: BotDataBase<T>.botDataStore
+  fullName: BotDataBase<T>.botDataStore
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.FlushAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  isExternal: false
+  name: FlushAsync(CancellationToken)
+  nameWithType: BotDataBase<T>.FlushAsync(CancellationToken)
+  fullName: BotDataBase<T>.FlushAsync(CancellationToken)
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.LoadAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  isExternal: false
+  name: LoadAsync(CancellationToken)
+  nameWithType: BotDataBase<T>.LoadAsync(CancellationToken)
+  fullName: BotDataBase<T>.LoadAsync(CancellationToken)
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.MakeData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  isExternal: false
+  name: MakeData()
+  nameWithType: BotDataBase<T>.MakeData()
+  fullName: BotDataBase<T>.MakeData()
+- uid: T
+  isExternal: true
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.WrapData(`0)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  isExternal: false
+  name: WrapData(T)
+  nameWithType: BotDataBase<T>.WrapData(T)
+  fullName: BotDataBase<T>.WrapData(T)
+- uid: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: IBotDataBag
+  nameWithType: IBotDataBag
+  fullName: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#ConversationData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  isExternal: false
+  name: IBotData.ConversationData
+  nameWithType: BotDataBase<T>.IBotData.ConversationData
+  fullName: BotDataBase<T>.IBotData.ConversationData
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#PrivateConversationData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  isExternal: false
+  name: IBotData.PrivateConversationData
+  nameWithType: BotDataBase<T>.IBotData.PrivateConversationData
+  fullName: BotDataBase<T>.IBotData.PrivateConversationData
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#UserData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  isExternal: false
+  name: IBotData.UserData
+  nameWithType: BotDataBase<T>.IBotData.UserData
+  fullName: BotDataBase<T>.IBotData.UserData
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.#ctor*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  isExternal: false
+  name: BotDataBase<T>
+  nameWithType: BotDataBase<T>.BotDataBase<T>
+  fullName: BotDataBase<T>.BotDataBase<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotDataBase`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.FlushAsync*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  isExternal: false
+  name: FlushAsync
+  nameWithType: BotDataBase<T>.FlushAsync
+  fullName: BotDataBase<T>.FlushAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotDataBase`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.LoadAsync*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  isExternal: false
+  name: LoadAsync
+  nameWithType: BotDataBase<T>.LoadAsync
+  fullName: BotDataBase<T>.LoadAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotDataBase`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.MakeData*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  isExternal: false
+  name: MakeData
+  nameWithType: BotDataBase<T>.MakeData
+  fullName: BotDataBase<T>.MakeData
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotDataBase`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.WrapData*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  isExternal: false
+  name: WrapData
+  nameWithType: BotDataBase<T>.WrapData
+  fullName: BotDataBase<T>.WrapData
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotDataBase`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#ConversationData*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  isExternal: false
+  name: Microsoft.Bot.Builder.Dialogs.Internals.IBotData.ConversationData
+  nameWithType: BotDataBase<T>.Microsoft.Bot.Builder.Dialogs.Internals.IBotData.ConversationData
+  fullName: BotDataBase<T>.Microsoft.Bot.Builder.Dialogs.Internals.IBotData.ConversationData
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotDataBase`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#PrivateConversationData*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  isExternal: false
+  name: Microsoft.Bot.Builder.Dialogs.Internals.IBotData.PrivateConversationData
+  nameWithType: BotDataBase<T>.Microsoft.Bot.Builder.Dialogs.Internals.IBotData.PrivateConversationData
+  fullName: BotDataBase<T>.Microsoft.Bot.Builder.Dialogs.Internals.IBotData.PrivateConversationData
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotDataBase`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#UserData*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1
+  isExternal: false
+  name: Microsoft.Bot.Builder.Dialogs.Internals.IBotData.UserData
+  nameWithType: BotDataBase<T>.Microsoft.Bot.Builder.Dialogs.Internals.IBotData.UserData
+  fullName: BotDataBase<T>.Microsoft.Bot.Builder.Dialogs.Internals.IBotData.UserData
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/BotDataBase`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals
+  isExternal: false
+  name: IBotData
+  nameWithType: IBotData
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.IBotData

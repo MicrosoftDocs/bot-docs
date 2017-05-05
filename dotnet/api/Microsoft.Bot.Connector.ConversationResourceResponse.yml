@@ -1,0 +1,267 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.ConversationResourceResponse
+  commentId: T:Microsoft.Bot.Connector.ConversationResourceResponse
+  id: ConversationResourceResponse
+  children:
+  - Microsoft.Bot.Connector.ConversationResourceResponse.#ctor
+  - Microsoft.Bot.Connector.ConversationResourceResponse.#ctor(System.String,System.String,System.String)
+  - Microsoft.Bot.Connector.ConversationResourceResponse.ActivityId
+  - Microsoft.Bot.Connector.ConversationResourceResponse.Id
+  - Microsoft.Bot.Connector.ConversationResourceResponse.ServiceUrl
+  langs:
+  - csharp
+  name: ConversationResourceResponse
+  nameWithType: ConversationResourceResponse
+  fullName: Microsoft.Bot.Connector.ConversationResourceResponse
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: A response containing a resource
+  syntax:
+    content: public class ConversationResourceResponse
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationResourceResponse.xml
+- uid: Microsoft.Bot.Connector.ConversationResourceResponse.#ctor
+  commentId: M:Microsoft.Bot.Connector.ConversationResourceResponse.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Connector.ConversationResourceResponse
+  langs:
+  - csharp
+  name: ConversationResourceResponse()
+  nameWithType: ConversationResourceResponse.ConversationResourceResponse()
+  fullName: ConversationResourceResponse.ConversationResourceResponse()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: >-
+    Initializes a new instance of the ConversationResourceResponse
+                class.
+  syntax:
+    content: public ConversationResourceResponse ();
+    parameters: []
+  overload: Microsoft.Bot.Connector.ConversationResourceResponse.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationResourceResponse.xml
+- uid: Microsoft.Bot.Connector.ConversationResourceResponse.#ctor(System.String,System.String,System.String)
+  commentId: M:Microsoft.Bot.Connector.ConversationResourceResponse.#ctor(System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.String)'
+  parent: Microsoft.Bot.Connector.ConversationResourceResponse
+  langs:
+  - csharp
+  name: ConversationResourceResponse(String, String, String)
+  nameWithType: ConversationResourceResponse.ConversationResourceResponse(String, String, String)
+  fullName: ConversationResourceResponse.ConversationResourceResponse(String, String, String)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: >-
+    Initializes a new instance of the ConversationResourceResponse
+                class.
+  syntax:
+    content: public ConversationResourceResponse (string activityId = null, string serviceUrl = null, string id = null);
+    parameters:
+    - id: activityId
+      type: System.String
+      description: To be added.
+    - id: serviceUrl
+      type: System.String
+      description: To be added.
+    - id: id
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationResourceResponse.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationResourceResponse.xml
+- uid: Microsoft.Bot.Connector.ConversationResourceResponse.ActivityId
+  commentId: P:Microsoft.Bot.Connector.ConversationResourceResponse.ActivityId
+  id: ActivityId
+  parent: Microsoft.Bot.Connector.ConversationResourceResponse
+  langs:
+  - csharp
+  name: ActivityId
+  nameWithType: ConversationResourceResponse.ActivityId
+  fullName: ConversationResourceResponse.ActivityId
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: ID of the Activity (if sent)
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="activityId")]
+
+      public string ActivityId { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationResourceResponse.ActivityId*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationResourceResponse.xml
+- uid: Microsoft.Bot.Connector.ConversationResourceResponse.Id
+  commentId: P:Microsoft.Bot.Connector.ConversationResourceResponse.Id
+  id: Id
+  parent: Microsoft.Bot.Connector.ConversationResourceResponse
+  langs:
+  - csharp
+  name: Id
+  nameWithType: ConversationResourceResponse.Id
+  fullName: ConversationResourceResponse.Id
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Id of the resource
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="id")]
+
+      public string Id { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationResourceResponse.Id*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationResourceResponse.xml
+- uid: Microsoft.Bot.Connector.ConversationResourceResponse.ServiceUrl
+  commentId: P:Microsoft.Bot.Connector.ConversationResourceResponse.ServiceUrl
+  id: ServiceUrl
+  parent: Microsoft.Bot.Connector.ConversationResourceResponse
+  langs:
+  - csharp
+  name: ServiceUrl
+  nameWithType: ConversationResourceResponse.ServiceUrl
+  fullName: ConversationResourceResponse.ServiceUrl
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: >-
+    Service endpoint where operations concerning the conversation may
+                be performed
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="serviceUrl")]
+
+      public string ServiceUrl { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationResourceResponse.ServiceUrl*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationResourceResponse.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.ConversationResourceResponse.#ctor
+  parent: Microsoft.Bot.Connector.ConversationResourceResponse
+  isExternal: false
+  name: ConversationResourceResponse()
+  nameWithType: ConversationResourceResponse.ConversationResourceResponse()
+  fullName: ConversationResourceResponse.ConversationResourceResponse()
+- uid: Microsoft.Bot.Connector.ConversationResourceResponse.#ctor(System.String,System.String,System.String)
+  parent: Microsoft.Bot.Connector.ConversationResourceResponse
+  isExternal: false
+  name: ConversationResourceResponse(String, String, String)
+  nameWithType: ConversationResourceResponse.ConversationResourceResponse(String, String, String)
+  fullName: ConversationResourceResponse.ConversationResourceResponse(String, String, String)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.ConversationResourceResponse.ActivityId
+  parent: Microsoft.Bot.Connector.ConversationResourceResponse
+  isExternal: false
+  name: ActivityId
+  nameWithType: ConversationResourceResponse.ActivityId
+  fullName: ConversationResourceResponse.ActivityId
+- uid: Microsoft.Bot.Connector.ConversationResourceResponse.Id
+  parent: Microsoft.Bot.Connector.ConversationResourceResponse
+  isExternal: false
+  name: Id
+  nameWithType: ConversationResourceResponse.Id
+  fullName: ConversationResourceResponse.Id
+- uid: Microsoft.Bot.Connector.ConversationResourceResponse.ServiceUrl
+  parent: Microsoft.Bot.Connector.ConversationResourceResponse
+  isExternal: false
+  name: ServiceUrl
+  nameWithType: ConversationResourceResponse.ServiceUrl
+  fullName: ConversationResourceResponse.ServiceUrl
+- uid: Microsoft.Bot.Connector.ConversationResourceResponse.#ctor*
+  parent: Microsoft.Bot.Connector.ConversationResourceResponse
+  isExternal: false
+  name: ConversationResourceResponse
+  nameWithType: ConversationResourceResponse.ConversationResourceResponse
+  fullName: ConversationResourceResponse.ConversationResourceResponse
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationResourceResponse.xml
+- uid: Microsoft.Bot.Connector.ConversationResourceResponse.ActivityId*
+  parent: Microsoft.Bot.Connector.ConversationResourceResponse
+  isExternal: false
+  name: ActivityId
+  nameWithType: ConversationResourceResponse.ActivityId
+  fullName: ConversationResourceResponse.ActivityId
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationResourceResponse.xml
+- uid: Microsoft.Bot.Connector.ConversationResourceResponse.Id*
+  parent: Microsoft.Bot.Connector.ConversationResourceResponse
+  isExternal: false
+  name: Id
+  nameWithType: ConversationResourceResponse.Id
+  fullName: ConversationResourceResponse.Id
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationResourceResponse.xml
+- uid: Microsoft.Bot.Connector.ConversationResourceResponse.ServiceUrl*
+  parent: Microsoft.Bot.Connector.ConversationResourceResponse
+  isExternal: false
+  name: ServiceUrl
+  nameWithType: ConversationResourceResponse.ServiceUrl
+  fullName: ConversationResourceResponse.ServiceUrl
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationResourceResponse.xml

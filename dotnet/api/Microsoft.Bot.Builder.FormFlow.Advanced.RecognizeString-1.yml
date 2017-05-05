@@ -1,0 +1,335 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1
+  commentId: T:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1
+  id: RecognizeString`1
+  children:
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.#ctor(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.Help(`0,System.Object)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.Parse(System.String)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.ValidInputs(System.Object)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.ValueDescription(System.Object)
+  langs:
+  - csharp
+  name: RecognizeString<T>
+  nameWithType: RecognizeString<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString<T>
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Recognize a string field.
+  syntax:
+    content: 'public sealed class RecognizeString<T> : Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive<T> where T : class'
+    typeParameters:
+    - id: T
+      description: Form state.
+  inheritance:
+  - System.Object
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  implements: []
+  inheritedMembers:
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1._field
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.HelpArgs(`0,System.Object)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Matches(System.String,System.Object)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.PromptArgs
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.ValueDescriptions
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Values
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizeString`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.#ctor(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.#ctor(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})
+  id: '#ctor(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})'
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1
+  langs:
+  - csharp
+  name: RecognizeString<T>(IField<T>)
+  nameWithType: RecognizeString<T>.RecognizeString<T>(IField<T>)
+  fullName: RecognizeString<T>.RecognizeString<T>(IField<T>)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Construct a string recognizer for a field.
+  syntax:
+    content: public RecognizeString (Microsoft.Bot.Builder.FormFlow.Advanced.IField<T> field);
+    parameters:
+    - id: field
+      type: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1
+      description: String field.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizeString`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.Help(`0,System.Object)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.Help(`0,System.Object)
+  id: Help(`0,System.Object)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1
+  langs:
+  - csharp
+  name: Help(T, Object)
+  nameWithType: RecognizeString<T>.Help(T, Object)
+  fullName: RecognizeString<T>.Help(T, Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public override string Help (T state, object defaultValue);
+    parameters:
+    - id: state
+      type: T
+      description: To be added.
+    - id: defaultValue
+      type: System.Object
+      description: To be added.
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.Help*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizeString`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.Parse(System.String)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.Parse(System.String)
+  id: Parse(System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1
+  langs:
+  - csharp
+  name: Parse(String)
+  nameWithType: RecognizeString<T>.Parse(String)
+  fullName: RecognizeString<T>.Parse(String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public override Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch Parse (string input);
+    parameters:
+    - id: input
+      type: System.String
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.Parse*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizeString`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.ValidInputs(System.Object)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.ValidInputs(System.Object)
+  id: ValidInputs(System.Object)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1
+  langs:
+  - csharp
+  name: ValidInputs(Object)
+  nameWithType: RecognizeString<T>.ValidInputs(Object)
+  fullName: RecognizeString<T>.ValidInputs(Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1/<ValidInputs>d__1))]
+
+      public override System.Collections.Generic.IEnumerable<string> ValidInputs (object value);
+    parameters:
+    - id: value
+      type: System.Object
+      description: To be added.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.ValidInputs*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.IteratorStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizeString`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.ValueDescription(System.Object)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.ValueDescription(System.Object)
+  id: ValueDescription(System.Object)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1
+  langs:
+  - csharp
+  name: ValueDescription(Object)
+  nameWithType: RecognizeString<T>.ValueDescription(Object)
+  fullName: RecognizeString<T>.ValueDescription(Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public override Microsoft.Bot.Builder.FormFlow.DescribeAttribute ValueDescription (object value);
+    parameters:
+    - id: value
+      type: System.Object
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.DescribeAttribute
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.ValueDescription*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizeString`1.xml
+references:
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced
+  isExternal: false
+  name: RecognizePrimitive<T>
+  nameWithType: RecognizePrimitive<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive<T>
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.#ctor(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1
+  isExternal: false
+  name: RecognizeString<T>(IField<T>)
+  nameWithType: RecognizeString<T>.RecognizeString<T>(IField<T>)
+  fullName: RecognizeString<T>.RecognizeString<T>(IField<T>)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced
+  isExternal: false
+  name: IField<T>
+  nameWithType: IField<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.IField<T>
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.Help(`0,System.Object)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1
+  isExternal: false
+  name: Help(T, Object)
+  nameWithType: RecognizeString<T>.Help(T, Object)
+  fullName: RecognizeString<T>.Help(T, Object)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: T
+  isExternal: true
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.Parse(System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1
+  isExternal: false
+  name: Parse(String)
+  nameWithType: RecognizeString<T>.Parse(String)
+  fullName: RecognizeString<T>.Parse(String)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced
+  isExternal: false
+  name: TermMatch
+  nameWithType: TermMatch
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.ValidInputs(System.Object)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1
+  isExternal: false
+  name: ValidInputs(Object)
+  nameWithType: RecognizeString<T>.ValidInputs(Object)
+  fullName: RecognizeString<T>.ValidInputs(Object)
+- uid: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.Generic.IEnumerable
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.ValueDescription(System.Object)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1
+  isExternal: false
+  name: ValueDescription(Object)
+  nameWithType: RecognizeString<T>.ValueDescription(Object)
+  fullName: RecognizeString<T>.ValueDescription(Object)
+- uid: Microsoft.Bot.Builder.FormFlow.DescribeAttribute
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: DescribeAttribute
+  nameWithType: DescribeAttribute
+  fullName: Microsoft.Bot.Builder.FormFlow.DescribeAttribute
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.#ctor*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1
+  isExternal: false
+  name: RecognizeString<T>
+  nameWithType: RecognizeString<T>.RecognizeString<T>
+  fullName: RecognizeString<T>.RecognizeString<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizeString`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.Help*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1
+  isExternal: false
+  name: Help
+  nameWithType: RecognizeString<T>.Help
+  fullName: RecognizeString<T>.Help
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizeString`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.Parse*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1
+  isExternal: false
+  name: Parse
+  nameWithType: RecognizeString<T>.Parse
+  fullName: RecognizeString<T>.Parse
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizeString`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.ValidInputs*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1
+  isExternal: false
+  name: ValidInputs
+  nameWithType: RecognizeString<T>.ValidInputs
+  fullName: RecognizeString<T>.ValidInputs
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizeString`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.ValueDescription*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1
+  isExternal: false
+  name: ValueDescription
+  nameWithType: RecognizeString<T>.ValueDescription
+  fullName: RecognizeString<T>.ValueDescription
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizeString`1.xml

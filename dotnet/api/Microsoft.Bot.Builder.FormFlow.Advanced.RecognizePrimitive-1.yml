@@ -1,0 +1,691 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  commentId: T:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  id: RecognizePrimitive`1
+  children:
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.#ctor(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1._field
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Help(`0,System.Object)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.HelpArgs(`0,System.Object)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Matches(System.String,System.Object)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Parse(System.String)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.PromptArgs
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.ValidInputs(System.Object)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.ValueDescription(System.Object)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.ValueDescriptions
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Values
+  langs:
+  - csharp
+  name: RecognizePrimitive<T>
+  nameWithType: RecognizePrimitive<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive<T>
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Abstract class for constructing primitive value recognizers.
+  syntax:
+    content: 'public abstract class RecognizePrimitive<T> : Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize<T> where T : class'
+    typeParameters:
+    - id: T
+      description: Form state.
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeBool`1
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeDateTime`1
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeDouble`1
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeNumber`1
+  - Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1
+  implements:
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize{T}
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizePrimitive`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.#ctor(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.#ctor(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})
+  id: '#ctor(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})'
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  langs:
+  - csharp
+  name: RecognizePrimitive<T>(IField<T>)
+  nameWithType: RecognizePrimitive<T>.RecognizePrimitive<T>(IField<T>)
+  fullName: RecognizePrimitive<T>.RecognizePrimitive<T>(IField<T>)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Constructor using <xref href="Microsoft.Bot.Builder.FormFlow.Advanced.IField`1"></xref>.
+  syntax:
+    content: public RecognizePrimitive (Microsoft.Bot.Builder.FormFlow.Advanced.IField<T> field);
+    parameters:
+    - id: field
+      type: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1
+      description: Field to build recognizer for.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizePrimitive`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1._field
+  commentId: F:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1._field
+  id: _field
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  langs:
+  - csharp
+  name: _field
+  nameWithType: RecognizePrimitive<T>._field
+  fullName: RecognizePrimitive<T>._field
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Field being filled information.
+  syntax:
+    content: protected Microsoft.Bot.Builder.FormFlow.Advanced.IField<T> _field;
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizePrimitive`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Help(`0,System.Object)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Help(`0,System.Object)
+  id: Help(`0,System.Object)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  langs:
+  - csharp
+  name: Help(T, Object)
+  nameWithType: RecognizePrimitive<T>.Help(T, Object)
+  fullName: RecognizePrimitive<T>.Help(T, Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public abstract string Help (T state, object defaultValue);
+    parameters:
+    - id: state
+      type: T
+      description: To be added.
+    - id: defaultValue
+      type: System.Object
+      description: To be added.
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Help*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizePrimitive`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.HelpArgs(`0,System.Object)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.HelpArgs(`0,System.Object)
+  id: HelpArgs(`0,System.Object)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  langs:
+  - csharp
+  name: HelpArgs(T, Object)
+  nameWithType: RecognizePrimitive<T>.HelpArgs(T, Object)
+  fullName: RecognizePrimitive<T>.HelpArgs(T, Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Return the help template args for current choice and no preference.
+  syntax:
+    content: protected System.Collections.Generic.List<object> HelpArgs (T state, object defaultValue);
+    parameters:
+    - id: state
+      type: T
+      description: Form state.
+    - id: defaultValue
+      type: System.Object
+      description: Current value of field.
+    return:
+      type: System.Collections.Generic.List{System.Object}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.HelpArgs*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizePrimitive`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Matches(System.String,System.Object)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Matches(System.String,System.Object)
+  id: Matches(System.String,System.Object)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  langs:
+  - csharp
+  name: Matches(String, Object)
+  nameWithType: RecognizePrimitive<T>.Matches(String, Object)
+  fullName: RecognizePrimitive<T>.Matches(String, Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1/<Matches>d__3))]
+
+      public virtual System.Collections.Generic.IEnumerable<Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch> Matches (string input, object defaultValue = null);
+    parameters:
+    - id: input
+      type: System.String
+      description: To be added.
+    - id: defaultValue
+      type: System.Object
+      description: To be added.
+    return:
+      type: System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Matches*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.IteratorStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizePrimitive`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Parse(System.String)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Parse(System.String)
+  id: Parse(System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  langs:
+  - csharp
+  name: Parse(String)
+  nameWithType: RecognizePrimitive<T>.Parse(String)
+  fullName: RecognizePrimitive<T>.Parse(String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Abstract method for parsing input.
+  syntax:
+    content: public abstract Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch Parse (string input);
+    parameters:
+    - id: input
+      type: System.String
+      description: Input to match.
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch
+      description: TermMatch if input is a match.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Parse*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizePrimitive`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.PromptArgs
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.PromptArgs
+  id: PromptArgs
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  langs:
+  - csharp
+  name: PromptArgs()
+  nameWithType: RecognizePrimitive<T>.PromptArgs()
+  fullName: RecognizePrimitive<T>.PromptArgs()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public virtual object[] PromptArgs ();
+    parameters: []
+    return:
+      type: System.Object[]
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.PromptArgs*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizePrimitive`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.ValidInputs(System.Object)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.ValidInputs(System.Object)
+  id: ValidInputs(System.Object)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  langs:
+  - csharp
+  name: ValidInputs(Object)
+  nameWithType: RecognizePrimitive<T>.ValidInputs(Object)
+  fullName: RecognizePrimitive<T>.ValidInputs(Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public abstract System.Collections.Generic.IEnumerable<string> ValidInputs (object value);
+    parameters:
+    - id: value
+      type: System.Object
+      description: To be added.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.ValidInputs*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizePrimitive`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.ValueDescription(System.Object)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.ValueDescription(System.Object)
+  id: ValueDescription(System.Object)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  langs:
+  - csharp
+  name: ValueDescription(Object)
+  nameWithType: RecognizePrimitive<T>.ValueDescription(Object)
+  fullName: RecognizePrimitive<T>.ValueDescription(Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public abstract Microsoft.Bot.Builder.FormFlow.DescribeAttribute ValueDescription (object value);
+    parameters:
+    - id: value
+      type: System.Object
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.DescribeAttribute
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.ValueDescription*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizePrimitive`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.ValueDescriptions
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.ValueDescriptions
+  id: ValueDescriptions
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  langs:
+  - csharp
+  name: ValueDescriptions()
+  nameWithType: RecognizePrimitive<T>.ValueDescriptions()
+  fullName: RecognizePrimitive<T>.ValueDescriptions()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public virtual System.Collections.Generic.IEnumerable<Microsoft.Bot.Builder.FormFlow.DescribeAttribute> ValueDescriptions ();
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.FormFlow.DescribeAttribute}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.ValueDescriptions*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizePrimitive`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Values
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Values
+  id: Values
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  langs:
+  - csharp
+  name: Values()
+  nameWithType: RecognizePrimitive<T>.Values()
+  fullName: RecognizePrimitive<T>.Values()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public virtual System.Collections.Generic.IEnumerable<object> Values ();
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Object}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Values*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizePrimitive`1.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.#ctor(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  isExternal: false
+  name: RecognizePrimitive<T>(IField<T>)
+  nameWithType: RecognizePrimitive<T>.RecognizePrimitive<T>(IField<T>)
+  fullName: RecognizePrimitive<T>.RecognizePrimitive<T>(IField<T>)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced
+  isExternal: false
+  name: IField<T>
+  nameWithType: IField<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.IField<T>
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1._field
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  isExternal: false
+  name: _field
+  nameWithType: RecognizePrimitive<T>._field
+  fullName: RecognizePrimitive<T>._field
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Help(`0,System.Object)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  isExternal: false
+  name: Help(T, Object)
+  nameWithType: RecognizePrimitive<T>.Help(T, Object)
+  fullName: RecognizePrimitive<T>.Help(T, Object)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: T
+  isExternal: true
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.HelpArgs(`0,System.Object)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  isExternal: false
+  name: HelpArgs(T, Object)
+  nameWithType: RecognizePrimitive<T>.HelpArgs(T, Object)
+  fullName: RecognizePrimitive<T>.HelpArgs(T, Object)
+- uid: System.Collections.Generic.List`1
+  name: List
+  nameWithType: List
+  fullName: System.Collections.Generic.List
+- uid: System.Collections.Generic.List{System.Object}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: List<Object>
+  nameWithType: List<Object>
+  fullName: System.Collections.Generic.List<System.Object>
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Matches(System.String,System.Object)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  isExternal: false
+  name: Matches(String, Object)
+  nameWithType: RecognizePrimitive<T>.Matches(String, Object)
+  fullName: RecognizePrimitive<T>.Matches(String, Object)
+- uid: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.Generic.IEnumerable
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch
+  name: TermMatch
+  nameWithType: TermMatch
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch
+- uid: System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<TermMatch>
+  nameWithType: IEnumerable<TermMatch>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch
+    name: TermMatch
+    nameWithType: TermMatch
+    fullName: Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Parse(System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  isExternal: false
+  name: Parse(String)
+  nameWithType: RecognizePrimitive<T>.Parse(String)
+  fullName: RecognizePrimitive<T>.Parse(String)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.PromptArgs
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  isExternal: false
+  name: PromptArgs()
+  nameWithType: RecognizePrimitive<T>.PromptArgs()
+  fullName: RecognizePrimitive<T>.PromptArgs()
+- uid: System.Object[]
+  parent: System
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.ValidInputs(System.Object)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  isExternal: false
+  name: ValidInputs(Object)
+  nameWithType: RecognizePrimitive<T>.ValidInputs(Object)
+  fullName: RecognizePrimitive<T>.ValidInputs(Object)
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.ValueDescription(System.Object)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  isExternal: false
+  name: ValueDescription(Object)
+  nameWithType: RecognizePrimitive<T>.ValueDescription(Object)
+  fullName: RecognizePrimitive<T>.ValueDescription(Object)
+- uid: Microsoft.Bot.Builder.FormFlow.DescribeAttribute
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: DescribeAttribute
+  nameWithType: DescribeAttribute
+  fullName: Microsoft.Bot.Builder.FormFlow.DescribeAttribute
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.ValueDescriptions
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  isExternal: false
+  name: ValueDescriptions()
+  nameWithType: RecognizePrimitive<T>.ValueDescriptions()
+  fullName: RecognizePrimitive<T>.ValueDescriptions()
+- uid: System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.FormFlow.DescribeAttribute}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<DescribeAttribute>
+  nameWithType: IEnumerable<DescribeAttribute>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.Bot.Builder.FormFlow.DescribeAttribute>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.FormFlow.DescribeAttribute
+    name: DescribeAttribute
+    nameWithType: DescribeAttribute
+    fullName: Microsoft.Bot.Builder.FormFlow.DescribeAttribute
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Values
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  isExternal: false
+  name: Values()
+  nameWithType: RecognizePrimitive<T>.Values()
+  fullName: RecognizePrimitive<T>.Values()
+- uid: System.Collections.Generic.IEnumerable{System.Object}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<Object>
+  nameWithType: IEnumerable<Object>
+  fullName: System.Collections.Generic.IEnumerable<System.Object>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.#ctor*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  isExternal: false
+  name: RecognizePrimitive<T>
+  nameWithType: RecognizePrimitive<T>.RecognizePrimitive<T>
+  fullName: RecognizePrimitive<T>.RecognizePrimitive<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizePrimitive`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Help*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  isExternal: false
+  name: Help
+  nameWithType: RecognizePrimitive<T>.Help
+  fullName: RecognizePrimitive<T>.Help
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizePrimitive`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.HelpArgs*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  isExternal: false
+  name: HelpArgs
+  nameWithType: RecognizePrimitive<T>.HelpArgs
+  fullName: RecognizePrimitive<T>.HelpArgs
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizePrimitive`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Matches*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  isExternal: false
+  name: Matches
+  nameWithType: RecognizePrimitive<T>.Matches
+  fullName: RecognizePrimitive<T>.Matches
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizePrimitive`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Parse*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  isExternal: false
+  name: Parse
+  nameWithType: RecognizePrimitive<T>.Parse
+  fullName: RecognizePrimitive<T>.Parse
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizePrimitive`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.PromptArgs*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  isExternal: false
+  name: PromptArgs
+  nameWithType: RecognizePrimitive<T>.PromptArgs
+  fullName: RecognizePrimitive<T>.PromptArgs
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizePrimitive`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.ValidInputs*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  isExternal: false
+  name: ValidInputs
+  nameWithType: RecognizePrimitive<T>.ValidInputs
+  fullName: RecognizePrimitive<T>.ValidInputs
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizePrimitive`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.ValueDescription*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  isExternal: false
+  name: ValueDescription
+  nameWithType: RecognizePrimitive<T>.ValueDescription
+  fullName: RecognizePrimitive<T>.ValueDescription
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizePrimitive`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.ValueDescriptions*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  isExternal: false
+  name: ValueDescriptions
+  nameWithType: RecognizePrimitive<T>.ValueDescriptions
+  fullName: RecognizePrimitive<T>.ValueDescriptions
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizePrimitive`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Values*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1
+  isExternal: false
+  name: Values
+  nameWithType: RecognizePrimitive<T>.Values
+  fullName: RecognizePrimitive<T>.Values
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/RecognizePrimitive`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced
+  isExternal: false
+  name: IRecognize<T>
+  nameWithType: IRecognize<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize<T>

@@ -1,0 +1,310 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.Entity
+  commentId: T:Microsoft.Bot.Connector.Entity
+  id: Entity
+  children:
+  - Microsoft.Bot.Connector.Entity.#ctor
+  - Microsoft.Bot.Connector.Entity.#ctor(System.String)
+  - Microsoft.Bot.Connector.Entity.GetAs``1
+  - Microsoft.Bot.Connector.Entity.Properties
+  - Microsoft.Bot.Connector.Entity.SetAs``1(``0)
+  - Microsoft.Bot.Connector.Entity.Type
+  langs:
+  - csharp
+  name: Entity
+  nameWithType: Entity
+  fullName: Microsoft.Bot.Connector.Entity
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: Object of schema.org types
+  syntax:
+    content: public class Entity
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Entity.xml
+- uid: Microsoft.Bot.Connector.Entity.#ctor
+  commentId: M:Microsoft.Bot.Connector.Entity.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Connector.Entity
+  langs:
+  - csharp
+  name: Entity()
+  nameWithType: Entity.Entity()
+  fullName: Entity.Entity()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the Entity class.
+  syntax:
+    content: public Entity ();
+    parameters: []
+  overload: Microsoft.Bot.Connector.Entity.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Entity.xml
+- uid: Microsoft.Bot.Connector.Entity.#ctor(System.String)
+  commentId: M:Microsoft.Bot.Connector.Entity.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Microsoft.Bot.Connector.Entity
+  langs:
+  - csharp
+  name: Entity(String)
+  nameWithType: Entity.Entity(String)
+  fullName: Entity.Entity(String)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the Entity class.
+  syntax:
+    content: public Entity (string type = null);
+    parameters:
+    - id: type
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Entity.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Entity.xml
+- uid: Microsoft.Bot.Connector.Entity.GetAs``1
+  commentId: M:Microsoft.Bot.Connector.Entity.GetAs``1
+  id: GetAs``1
+  parent: Microsoft.Bot.Connector.Entity
+  langs:
+  - csharp
+  name: GetAs<T>()
+  nameWithType: Entity.GetAs<T>()
+  fullName: Entity.GetAs<T>()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Retrieve internal payload.
+  syntax:
+    content: public T GetAs<T> ();
+    parameters: []
+    typeParameters:
+    - id: T
+      description: To be added.
+    return:
+      type: T
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Entity.GetAs``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Entity.xml
+- uid: Microsoft.Bot.Connector.Entity.Properties
+  commentId: P:Microsoft.Bot.Connector.Entity.Properties
+  id: Properties
+  parent: Microsoft.Bot.Connector.Entity
+  langs:
+  - csharp
+  name: Properties
+  nameWithType: Entity.Properties
+  fullName: Entity.Properties
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonExtensionData(ReadData=true, WriteData=true)]
+
+      public Newtonsoft.Json.Linq.JObject Properties { get; set; }
+    return:
+      type: Newtonsoft.Json.Linq.JObject
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Entity.Properties*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonExtensionData
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Entity.xml
+- uid: Microsoft.Bot.Connector.Entity.SetAs``1(``0)
+  commentId: M:Microsoft.Bot.Connector.Entity.SetAs``1(``0)
+  id: SetAs``1(``0)
+  parent: Microsoft.Bot.Connector.Entity
+  langs:
+  - csharp
+  name: SetAs<T>(T)
+  nameWithType: Entity.SetAs<T>(T)
+  fullName: Entity.SetAs<T>(T)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Set internal payload.
+  syntax:
+    content: public void SetAs<T> (T obj);
+    parameters:
+    - id: obj
+      type: T
+      description: To be added.
+    typeParameters:
+    - id: T
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Entity.SetAs``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Entity.xml
+- uid: Microsoft.Bot.Connector.Entity.Type
+  commentId: P:Microsoft.Bot.Connector.Entity.Type
+  id: Type
+  parent: Microsoft.Bot.Connector.Entity
+  langs:
+  - csharp
+  name: Type
+  nameWithType: Entity.Type
+  fullName: Entity.Type
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Entity Type (typically from schema.org types)
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="type")]
+
+      public string Type { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Entity.Type*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Entity.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.Entity.#ctor
+  parent: Microsoft.Bot.Connector.Entity
+  isExternal: false
+  name: Entity()
+  nameWithType: Entity.Entity()
+  fullName: Entity.Entity()
+- uid: Microsoft.Bot.Connector.Entity.#ctor(System.String)
+  parent: Microsoft.Bot.Connector.Entity
+  isExternal: false
+  name: Entity(String)
+  nameWithType: Entity.Entity(String)
+  fullName: Entity.Entity(String)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.Entity.GetAs``1
+  parent: Microsoft.Bot.Connector.Entity
+  isExternal: false
+  name: GetAs<T>()
+  nameWithType: Entity.GetAs<T>()
+  fullName: Entity.GetAs<T>()
+- uid: T
+  isExternal: true
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.Bot.Connector.Entity.Properties
+  parent: Microsoft.Bot.Connector.Entity
+  isExternal: false
+  name: Properties
+  nameWithType: Entity.Properties
+  fullName: Entity.Properties
+- uid: Newtonsoft.Json.Linq.JObject
+  parent: Newtonsoft.Json.Linq
+  isExternal: true
+  name: JObject
+  nameWithType: JObject
+  fullName: Newtonsoft.Json.Linq.JObject
+- uid: Microsoft.Bot.Connector.Entity.SetAs``1(``0)
+  parent: Microsoft.Bot.Connector.Entity
+  isExternal: false
+  name: SetAs<T>(T)
+  nameWithType: Entity.SetAs<T>(T)
+  fullName: Entity.SetAs<T>(T)
+- uid: Microsoft.Bot.Connector.Entity.Type
+  parent: Microsoft.Bot.Connector.Entity
+  isExternal: false
+  name: Type
+  nameWithType: Entity.Type
+  fullName: Entity.Type
+- uid: Microsoft.Bot.Connector.Entity.#ctor*
+  parent: Microsoft.Bot.Connector.Entity
+  isExternal: false
+  name: Entity
+  nameWithType: Entity.Entity
+  fullName: Entity.Entity
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Entity.xml
+- uid: Microsoft.Bot.Connector.Entity.GetAs``1*
+  parent: Microsoft.Bot.Connector.Entity
+  isExternal: false
+  name: GetAs<T>
+  nameWithType: Entity.GetAs<T>
+  fullName: Entity.GetAs<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Entity.xml
+- uid: Microsoft.Bot.Connector.Entity.Properties*
+  parent: Microsoft.Bot.Connector.Entity
+  isExternal: false
+  name: Properties
+  nameWithType: Entity.Properties
+  fullName: Entity.Properties
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Entity.xml
+- uid: Microsoft.Bot.Connector.Entity.SetAs``1*
+  parent: Microsoft.Bot.Connector.Entity
+  isExternal: false
+  name: SetAs<T>
+  nameWithType: Entity.SetAs<T>
+  fullName: Entity.SetAs<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Entity.xml
+- uid: Microsoft.Bot.Connector.Entity.Type*
+  parent: Microsoft.Bot.Connector.Entity
+  isExternal: false
+  name: Type
+  nameWithType: Entity.Type
+  fullName: Entity.Type
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Entity.xml

@@ -1,0 +1,243 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command
+  commentId: T:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command
+  id: CommandDialog`1.Command
+  children:
+  - Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.#ctor
+  - Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.CommandHandler
+  - Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.CommandId
+  - Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.Expression
+  langs:
+  - csharp
+  name: CommandDialog<T>.Command
+  nameWithType: CommandDialog<T>.Command
+  fullName: Microsoft.Bot.Builder.Dialogs.CommandDialog<T>.Command
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: A single command.
+  syntax:
+    content: public class CommandDialog<T>.Command
+    typeParameters:
+    - id: T
+      description: To be added.
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/CommandDialog`1+Command.xml
+- uid: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.#ctor
+  commentId: M:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command
+  langs:
+  - csharp
+  name: CommandDialog<T>.Command()
+  nameWithType: CommandDialog<T>.Command.CommandDialog<T>.Command()
+  fullName: CommandDialog<T>.Command.CommandDialog<T>.Command()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: public Command ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/CommandDialog`1+Command.xml
+- uid: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.CommandHandler
+  commentId: P:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.CommandHandler
+  id: CommandHandler
+  parent: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command
+  langs:
+  - csharp
+  name: CommandHandler
+  nameWithType: CommandDialog<T>.Command.CommandHandler
+  fullName: CommandDialog<T>.Command.CommandHandler
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Gets or sets the command handler.
+  syntax:
+    content: public Microsoft.Bot.Builder.Dialogs.ResumeAfter<Microsoft.Bot.Connector.IMessageActivity> CommandHandler { get; set; }
+    return:
+      type: Microsoft.Bot.Builder.Dialogs.ResumeAfter{Microsoft.Bot.Connector.IMessageActivity}
+      description: The command handler.
+  overload: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.CommandHandler*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/CommandDialog`1+Command.xml
+- uid: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.CommandId
+  commentId: P:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.CommandId
+  id: CommandId
+  parent: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command
+  langs:
+  - csharp
+  name: CommandId
+  nameWithType: CommandDialog<T>.Command.CommandId
+  fullName: CommandDialog<T>.Command.CommandId
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Gets or sets the command ID used for persisting currently running command handler.
+  syntax:
+    content: public string CommandId { get; set; }
+    return:
+      type: System.String
+      description: Command ID.
+  overload: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.CommandId*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/CommandDialog`1+Command.xml
+- uid: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.Expression
+  commentId: P:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.Expression
+  id: Expression
+  parent: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command
+  langs:
+  - csharp
+  name: Expression
+  nameWithType: CommandDialog<T>.Command.Expression
+  fullName: CommandDialog<T>.Command.Expression
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Gets or sets the regular expression for matching command.
+  syntax:
+    content: public System.Text.RegularExpressions.Regex Expression { get; set; }
+    return:
+      type: System.Text.RegularExpressions.Regex
+      description: The regular expression.
+  overload: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.Expression*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/CommandDialog`1+Command.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.#ctor
+  parent: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command
+  isExternal: false
+  name: CommandDialog<T>.Command()
+  nameWithType: CommandDialog<T>.Command.CommandDialog<T>.Command()
+  fullName: CommandDialog<T>.Command.CommandDialog<T>.Command()
+- uid: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.CommandHandler
+  parent: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command
+  isExternal: false
+  name: CommandHandler
+  nameWithType: CommandDialog<T>.Command.CommandHandler
+  fullName: CommandDialog<T>.Command.CommandHandler
+- uid: Microsoft.Bot.Builder.Dialogs.ResumeAfter`1
+  name: ResumeAfter<T>
+  nameWithType: ResumeAfter<T>
+  fullName: Microsoft.Bot.Builder.Dialogs.ResumeAfter<T>
+- uid: Microsoft.Bot.Connector.IMessageActivity
+  name: IMessageActivity
+  nameWithType: IMessageActivity
+  fullName: Microsoft.Bot.Connector.IMessageActivity
+- uid: Microsoft.Bot.Builder.Dialogs.ResumeAfter{Microsoft.Bot.Connector.IMessageActivity}
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: ResumeAfter<IMessageActivity>
+  nameWithType: ResumeAfter<IMessageActivity>
+  fullName: Microsoft.Bot.Builder.Dialogs.ResumeAfter<Microsoft.Bot.Connector.IMessageActivity>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Dialogs.ResumeAfter`1
+    name: ResumeAfter
+    nameWithType: ResumeAfter
+    fullName: Microsoft.Bot.Builder.Dialogs.ResumeAfter
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.IMessageActivity
+    name: IMessageActivity
+    nameWithType: IMessageActivity
+    fullName: Microsoft.Bot.Connector.IMessageActivity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.CommandId
+  parent: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command
+  isExternal: false
+  name: CommandId
+  nameWithType: CommandDialog<T>.Command.CommandId
+  fullName: CommandDialog<T>.Command.CommandId
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.Expression
+  parent: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command
+  isExternal: false
+  name: Expression
+  nameWithType: CommandDialog<T>.Command.Expression
+  fullName: CommandDialog<T>.Command.Expression
+- uid: System.Text.RegularExpressions.Regex
+  parent: System.Text.RegularExpressions
+  isExternal: true
+  name: Regex
+  nameWithType: Regex
+  fullName: System.Text.RegularExpressions.Regex
+- uid: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.#ctor*
+  parent: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command
+  isExternal: false
+  name: CommandDialog<T>.Command
+  nameWithType: CommandDialog<T>.Command.CommandDialog<T>.Command
+  fullName: CommandDialog<T>.Command.CommandDialog<T>.Command
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/CommandDialog`1+Command.xml
+- uid: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.CommandHandler*
+  parent: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command
+  isExternal: false
+  name: CommandHandler
+  nameWithType: CommandDialog<T>.Command.CommandHandler
+  fullName: CommandDialog<T>.Command.CommandHandler
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/CommandDialog`1+Command.xml
+- uid: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.CommandId*
+  parent: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command
+  isExternal: false
+  name: CommandId
+  nameWithType: CommandDialog<T>.Command.CommandId
+  fullName: CommandDialog<T>.Command.CommandId
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/CommandDialog`1+Command.xml
+- uid: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.Expression*
+  parent: Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command
+  isExternal: false
+  name: Expression
+  nameWithType: CommandDialog<T>.Command.Expression
+  fullName: CommandDialog<T>.Command.Expression
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/CommandDialog`1+Command.xml

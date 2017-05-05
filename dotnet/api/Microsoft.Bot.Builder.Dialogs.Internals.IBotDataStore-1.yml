@@ -1,0 +1,270 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1
+  commentId: T:Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1
+  id: IBotDataStore`1
+  children:
+  - Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.LoadAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.SaveAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,`0,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  name: IBotDataStore<T>
+  nameWithType: IBotDataStore<T>
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore<T>
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: public interface IBotDataStore<T>
+    typeParameters:
+    - id: T
+      description: To be added.
+  derivedClasses:
+  - Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore
+  - Microsoft.Bot.Builder.Dialogs.Internals.ConnectorStore
+  - Microsoft.Bot.Builder.Dialogs.Internals.InMemoryDataStore
+  implements: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IBotDataStore`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)
+  id: FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1
+  langs:
+  - csharp
+  name: FlushAsync(IAddress, CancellationToken)
+  nameWithType: IBotDataStore<T>.FlushAsync(IAddress, CancellationToken)
+  fullName: IBotDataStore<T>.FlushAsync(IAddress, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: public System.Threading.Tasks.Task<bool> FlushAsync (Microsoft.Bot.Builder.Dialogs.IAddress key, System.Threading.CancellationToken cancellationToken);
+    parameters:
+    - id: key
+      type: Microsoft.Bot.Builder.Dialogs.IAddress
+      description: To be added.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.FlushAsync*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IBotDataStore`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.LoadAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.LoadAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,System.Threading.CancellationToken)
+  id: LoadAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1
+  langs:
+  - csharp
+  name: LoadAsync(IAddress, BotStoreType, CancellationToken)
+  nameWithType: IBotDataStore<T>.LoadAsync(IAddress, BotStoreType, CancellationToken)
+  fullName: IBotDataStore<T>.LoadAsync(IAddress, BotStoreType, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: Return BotData with Data pointing to a JObject or an empty BotData() record with ETag:""
+  syntax:
+    content: public System.Threading.Tasks.Task<T> LoadAsync (Microsoft.Bot.Builder.Dialogs.IAddress key, Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType botStoreType, System.Threading.CancellationToken cancellationToken);
+    parameters:
+    - id: key
+      type: Microsoft.Bot.Builder.Dialogs.IAddress
+      description: The key.
+    - id: botStoreType
+      type: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType
+      description: The bot store type.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{T}
+      description: Bot record that is stored for this key, or "empty" bot record ready to be stored
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.LoadAsync*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IBotDataStore`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.SaveAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,`0,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.SaveAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,`0,System.Threading.CancellationToken)
+  id: SaveAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,`0,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1
+  langs:
+  - csharp
+  name: SaveAsync(IAddress, BotStoreType, T, CancellationToken)
+  nameWithType: IBotDataStore<T>.SaveAsync(IAddress, BotStoreType, T, CancellationToken)
+  fullName: IBotDataStore<T>.SaveAsync(IAddress, BotStoreType, T, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: >-
+    Save a BotData using the ETag.
+                Etag consistency checks
+                    If ETag is null or empty, this will set the value if nobody has set it yet
+                    If ETag is "*" then this will unconditionally set the value
+                    If ETag matches then this will update the value if it is unchanged.
+                If Data is null this removes record, otherwise it stores
+  syntax:
+    content: public System.Threading.Tasks.Task SaveAsync (Microsoft.Bot.Builder.Dialogs.IAddress key, Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType botStoreType, T data, System.Threading.CancellationToken cancellationToken);
+    parameters:
+    - id: key
+      type: Microsoft.Bot.Builder.Dialogs.IAddress
+      description: The key.
+    - id: botStoreType
+      type: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType
+      description: The bot store type.
+    - id: data
+      type: T
+      description: The data that should be saved.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+      description: throw HttpException(HttpStatusCode.PreconditionFailed) if update fails
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.SaveAsync*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IBotDataStore`1.xml
+references:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1
+  isExternal: false
+  name: FlushAsync(IAddress, CancellationToken)
+  nameWithType: IBotDataStore<T>.FlushAsync(IAddress, CancellationToken)
+  fullName: IBotDataStore<T>.FlushAsync(IAddress, CancellationToken)
+- uid: System.Threading.Tasks.Task`1
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.IAddress
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: IAddress
+  nameWithType: IAddress
+  fullName: Microsoft.Bot.Builder.Dialogs.IAddress
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.LoadAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1
+  isExternal: false
+  name: LoadAsync(IAddress, BotStoreType, CancellationToken)
+  nameWithType: IBotDataStore<T>.LoadAsync(IAddress, BotStoreType, CancellationToken)
+  fullName: IBotDataStore<T>.LoadAsync(IAddress, BotStoreType, CancellationToken)
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Threading.Tasks.Task{T}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: System.Threading.Tasks.Task<T>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T
+    name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType
+  parent: Microsoft.Bot.Builder.Dialogs.Internals
+  isExternal: false
+  name: BotStoreType
+  nameWithType: BotStoreType
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.SaveAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,`0,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1
+  isExternal: false
+  name: SaveAsync(IAddress, BotStoreType, T, CancellationToken)
+  nameWithType: IBotDataStore<T>.SaveAsync(IAddress, BotStoreType, T, CancellationToken)
+  fullName: IBotDataStore<T>.SaveAsync(IAddress, BotStoreType, T, CancellationToken)
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.FlushAsync*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1
+  isExternal: false
+  name: FlushAsync
+  nameWithType: IBotDataStore<T>.FlushAsync
+  fullName: IBotDataStore<T>.FlushAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IBotDataStore`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.LoadAsync*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1
+  isExternal: false
+  name: LoadAsync
+  nameWithType: IBotDataStore<T>.LoadAsync
+  fullName: IBotDataStore<T>.LoadAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IBotDataStore`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.SaveAsync*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1
+  isExternal: false
+  name: SaveAsync
+  nameWithType: IBotDataStore<T>.SaveAsync
+  fullName: IBotDataStore<T>.SaveAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IBotDataStore`1.xml

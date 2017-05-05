@@ -1,0 +1,500 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.BotAuthentication
+  commentId: T:Microsoft.Bot.Connector.BotAuthentication
+  id: BotAuthentication
+  children:
+  - Microsoft.Bot.Connector.BotAuthentication.#ctor
+  - Microsoft.Bot.Connector.BotAuthentication.#ctor(System.String,System.String)
+  - Microsoft.Bot.Connector.BotAuthentication.CredentialProviderType
+  - Microsoft.Bot.Connector.BotAuthentication.DisableEmulatorTokens
+  - Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppId
+  - Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppIdSettingName
+  - Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppPassword
+  - Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppPasswordSettingName
+  - Microsoft.Bot.Connector.BotAuthentication.OnActionExecutingAsync(System.Web.Http.Controllers.HttpActionContext,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.BotAuthentication.OpenIdConfigurationUrl
+  langs:
+  - csharp
+  name: BotAuthentication
+  nameWithType: BotAuthentication
+  fullName: Microsoft.Bot.Connector.BotAuthentication
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: 'public class BotAuthentication : Microsoft.Bot.Connector.BasicAuthentication'
+  inheritance:
+  - System.Web.Http.Filters.AuthorizationFilterAttribute
+  - Microsoft.Bot.Connector.BasicAuthentication
+  implements: []
+  inheritedMembers:
+  - Microsoft.Bot.Connector.BasicAuthentication.OnAuthorizationAsync(System.Web.Http.Controllers.HttpActionContext,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.BasicAuthentication.OnAuthorizeUser(Microsoft.Bot.Connector.BasicAuthIdentity,System.Web.Http.Controllers.HttpActionContext)
+  - Microsoft.Bot.Connector.BasicAuthentication.ParseAuthorizationHeaderAsync(System.Web.Http.Controllers.HttpActionContext)
+  version:
+  - botbuilder-3.5.5
+  - botconnector-1.1.0
+  monikers:
+  - botbuilder-3.5.5
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthentication.xml
+- uid: Microsoft.Bot.Connector.BotAuthentication.#ctor
+  commentId: M:Microsoft.Bot.Connector.BotAuthentication.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  langs:
+  - csharp
+  name: BotAuthentication()
+  nameWithType: BotAuthentication.BotAuthentication()
+  fullName: BotAuthentication.BotAuthentication()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public BotAuthentication ();
+    parameters: []
+  overload: Microsoft.Bot.Connector.BotAuthentication.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthentication.xml
+- uid: Microsoft.Bot.Connector.BotAuthentication.#ctor(System.String,System.String)
+  commentId: M:Microsoft.Bot.Connector.BotAuthentication.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  langs:
+  - csharp
+  name: BotAuthentication(String, String)
+  nameWithType: BotAuthentication.BotAuthentication(String, String)
+  fullName: BotAuthentication.BotAuthentication(String, String)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public BotAuthentication (string appId = null, string appSecret = null);
+    parameters:
+    - id: appId
+      type: System.String
+      description: To be added.
+    - id: appSecret
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotAuthentication.#ctor*
+  exceptions: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthentication.xml
+- uid: Microsoft.Bot.Connector.BotAuthentication.CredentialProviderType
+  commentId: P:Microsoft.Bot.Connector.BotAuthentication.CredentialProviderType
+  id: CredentialProviderType
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  langs:
+  - csharp
+  name: CredentialProviderType
+  nameWithType: BotAuthentication.CredentialProviderType
+  fullName: BotAuthentication.CredentialProviderType
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Type which implements ICredentialProvider interface to allow multiple bot AppIds to be registered for the same endpoint
+  syntax:
+    content: public Type CredentialProviderType { get; set; }
+    return:
+      type: System.Type
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotAuthentication.CredentialProviderType*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthentication.xml
+- uid: Microsoft.Bot.Connector.BotAuthentication.DisableEmulatorTokens
+  commentId: P:Microsoft.Bot.Connector.BotAuthentication.DisableEmulatorTokens
+  id: DisableEmulatorTokens
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  langs:
+  - csharp
+  name: DisableEmulatorTokens
+  nameWithType: BotAuthentication.DisableEmulatorTokens
+  fullName: BotAuthentication.DisableEmulatorTokens
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public bool DisableEmulatorTokens { get; set; }
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotAuthentication.DisableEmulatorTokens*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthentication.xml
+- uid: Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppId
+  commentId: P:Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppId
+  id: MicrosoftAppId
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  langs:
+  - csharp
+  name: MicrosoftAppId
+  nameWithType: BotAuthentication.MicrosoftAppId
+  fullName: BotAuthentication.MicrosoftAppId
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Microsoft AppId for the bot
+  remarks: Needs to be used with MicrosoftAppPassword.  Ignored if CredentialProviderType is specified.
+  syntax:
+    content: public string MicrosoftAppId { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppId*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthentication.xml
+- uid: Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppIdSettingName
+  commentId: P:Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppIdSettingName
+  id: MicrosoftAppIdSettingName
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  langs:
+  - csharp
+  name: MicrosoftAppIdSettingName
+  nameWithType: BotAuthentication.MicrosoftAppIdSettingName
+  fullName: BotAuthentication.MicrosoftAppIdSettingName
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Name of Setting in web.config which has the Microsoft AppId for the bot
+  remarks: Needs to be used with MicrosoftAppPasswordSettingName. Ignored if CredentialProviderType is specified.
+  syntax:
+    content: public string MicrosoftAppIdSettingName { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppIdSettingName*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthentication.xml
+- uid: Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppPassword
+  commentId: P:Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppPassword
+  id: MicrosoftAppPassword
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  langs:
+  - csharp
+  name: MicrosoftAppPassword
+  nameWithType: BotAuthentication.MicrosoftAppPassword
+  fullName: BotAuthentication.MicrosoftAppPassword
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Microsoft AppPassword for the bot (needs to be used with MicrosoftAppId)
+  remarks: Needs to be used with MicrosoftAppId. Ignored if CredentialProviderType is specified.
+  syntax:
+    content: public string MicrosoftAppPassword { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppPassword*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthentication.xml
+- uid: Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppPasswordSettingName
+  commentId: P:Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppPasswordSettingName
+  id: MicrosoftAppPasswordSettingName
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  langs:
+  - csharp
+  name: MicrosoftAppPasswordSettingName
+  nameWithType: BotAuthentication.MicrosoftAppPasswordSettingName
+  fullName: BotAuthentication.MicrosoftAppPasswordSettingName
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Name of Setting in web.config which has the Microsoft App Password for the bot
+  remarks: Needs to be used with MicrosoftAppIdSettingName. Ignored if CredentialProviderType is specified.
+  syntax:
+    content: public string MicrosoftAppPasswordSettingName { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppPasswordSettingName*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthentication.xml
+- uid: Microsoft.Bot.Connector.BotAuthentication.OnActionExecutingAsync(System.Web.Http.Controllers.HttpActionContext,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.BotAuthentication.OnActionExecutingAsync(System.Web.Http.Controllers.HttpActionContext,System.Threading.CancellationToken)
+  id: OnActionExecutingAsync(System.Web.Http.Controllers.HttpActionContext,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  langs:
+  - csharp
+  name: OnActionExecutingAsync(HttpActionContext, CancellationToken)
+  nameWithType: BotAuthentication.OnActionExecutingAsync(HttpActionContext, CancellationToken)
+  fullName: BotAuthentication.OnActionExecutingAsync(HttpActionContext, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BotAuthentication/<OnActionExecutingAsync>d__28))]
+
+      public override System.Threading.Tasks.Task OnActionExecutingAsync (System.Web.Http.Controllers.HttpActionContext actionContext, System.Threading.CancellationToken cancellationToken);
+    parameters:
+    - id: actionContext
+      type: System.Web.Http.Controllers.HttpActionContext
+      description: To be added.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotAuthentication.OnActionExecutingAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthentication.xml
+- uid: Microsoft.Bot.Connector.BotAuthentication.OpenIdConfigurationUrl
+  commentId: P:Microsoft.Bot.Connector.BotAuthentication.OpenIdConfigurationUrl
+  id: OpenIdConfigurationUrl
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  langs:
+  - csharp
+  name: OpenIdConfigurationUrl
+  nameWithType: BotAuthentication.OpenIdConfigurationUrl
+  fullName: BotAuthentication.OpenIdConfigurationUrl
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public virtual string OpenIdConfigurationUrl { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BotAuthentication.OpenIdConfigurationUrl*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthentication.xml
+references:
+- uid: Microsoft.Bot.Connector.BasicAuthentication
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: BasicAuthentication
+  nameWithType: BasicAuthentication
+  fullName: Microsoft.Bot.Connector.BasicAuthentication
+- uid: Microsoft.Bot.Connector.BotAuthentication.#ctor
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  isExternal: false
+  name: BotAuthentication()
+  nameWithType: BotAuthentication.BotAuthentication()
+  fullName: BotAuthentication.BotAuthentication()
+- uid: Microsoft.Bot.Connector.BotAuthentication.#ctor(System.String,System.String)
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  isExternal: false
+  name: BotAuthentication(String, String)
+  nameWithType: BotAuthentication.BotAuthentication(String, String)
+  fullName: BotAuthentication.BotAuthentication(String, String)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.BotAuthentication.CredentialProviderType
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  isExternal: false
+  name: CredentialProviderType
+  nameWithType: BotAuthentication.CredentialProviderType
+  fullName: BotAuthentication.CredentialProviderType
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Microsoft.Bot.Connector.BotAuthentication.DisableEmulatorTokens
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  isExternal: false
+  name: DisableEmulatorTokens
+  nameWithType: BotAuthentication.DisableEmulatorTokens
+  fullName: BotAuthentication.DisableEmulatorTokens
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppId
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  isExternal: false
+  name: MicrosoftAppId
+  nameWithType: BotAuthentication.MicrosoftAppId
+  fullName: BotAuthentication.MicrosoftAppId
+- uid: Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppIdSettingName
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  isExternal: false
+  name: MicrosoftAppIdSettingName
+  nameWithType: BotAuthentication.MicrosoftAppIdSettingName
+  fullName: BotAuthentication.MicrosoftAppIdSettingName
+- uid: Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppPassword
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  isExternal: false
+  name: MicrosoftAppPassword
+  nameWithType: BotAuthentication.MicrosoftAppPassword
+  fullName: BotAuthentication.MicrosoftAppPassword
+- uid: Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppPasswordSettingName
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  isExternal: false
+  name: MicrosoftAppPasswordSettingName
+  nameWithType: BotAuthentication.MicrosoftAppPasswordSettingName
+  fullName: BotAuthentication.MicrosoftAppPasswordSettingName
+- uid: Microsoft.Bot.Connector.BotAuthentication.OnActionExecutingAsync(System.Web.Http.Controllers.HttpActionContext,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  isExternal: false
+  name: OnActionExecutingAsync(HttpActionContext, CancellationToken)
+  nameWithType: BotAuthentication.OnActionExecutingAsync(HttpActionContext, CancellationToken)
+  fullName: BotAuthentication.OnActionExecutingAsync(HttpActionContext, CancellationToken)
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Web.Http.Controllers.HttpActionContext
+  parent: System.Web.Http.Controllers
+  isExternal: true
+  name: HttpActionContext
+  nameWithType: HttpActionContext
+  fullName: System.Web.Http.Controllers.HttpActionContext
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Connector.BotAuthentication.OpenIdConfigurationUrl
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  isExternal: false
+  name: OpenIdConfigurationUrl
+  nameWithType: BotAuthentication.OpenIdConfigurationUrl
+  fullName: BotAuthentication.OpenIdConfigurationUrl
+- uid: Microsoft.Bot.Connector.BotAuthentication.#ctor*
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  isExternal: false
+  name: BotAuthentication
+  nameWithType: BotAuthentication.BotAuthentication
+  fullName: BotAuthentication.BotAuthentication
+  monikers:
+  - botbuilder-3.5.5
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthentication.xml
+- uid: Microsoft.Bot.Connector.BotAuthentication.CredentialProviderType*
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  isExternal: false
+  name: CredentialProviderType
+  nameWithType: BotAuthentication.CredentialProviderType
+  fullName: BotAuthentication.CredentialProviderType
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthentication.xml
+- uid: Microsoft.Bot.Connector.BotAuthentication.DisableEmulatorTokens*
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  isExternal: false
+  name: DisableEmulatorTokens
+  nameWithType: BotAuthentication.DisableEmulatorTokens
+  fullName: BotAuthentication.DisableEmulatorTokens
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthentication.xml
+- uid: Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppId*
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  isExternal: false
+  name: MicrosoftAppId
+  nameWithType: BotAuthentication.MicrosoftAppId
+  fullName: BotAuthentication.MicrosoftAppId
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthentication.xml
+- uid: Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppIdSettingName*
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  isExternal: false
+  name: MicrosoftAppIdSettingName
+  nameWithType: BotAuthentication.MicrosoftAppIdSettingName
+  fullName: BotAuthentication.MicrosoftAppIdSettingName
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthentication.xml
+- uid: Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppPassword*
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  isExternal: false
+  name: MicrosoftAppPassword
+  nameWithType: BotAuthentication.MicrosoftAppPassword
+  fullName: BotAuthentication.MicrosoftAppPassword
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthentication.xml
+- uid: Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppPasswordSettingName*
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  isExternal: false
+  name: MicrosoftAppPasswordSettingName
+  nameWithType: BotAuthentication.MicrosoftAppPasswordSettingName
+  fullName: BotAuthentication.MicrosoftAppPasswordSettingName
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthentication.xml
+- uid: Microsoft.Bot.Connector.BotAuthentication.OnActionExecutingAsync*
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  isExternal: false
+  name: OnActionExecutingAsync
+  nameWithType: BotAuthentication.OnActionExecutingAsync
+  fullName: BotAuthentication.OnActionExecutingAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthentication.xml
+- uid: Microsoft.Bot.Connector.BotAuthentication.OpenIdConfigurationUrl*
+  parent: Microsoft.Bot.Connector.BotAuthentication
+  isExternal: false
+  name: OpenIdConfigurationUrl
+  nameWithType: BotAuthentication.OpenIdConfigurationUrl
+  fullName: BotAuthentication.OpenIdConfigurationUrl
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BotAuthentication.xml

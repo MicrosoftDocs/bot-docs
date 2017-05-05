@@ -1,0 +1,482 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.AttachmentsExtensions
+  commentId: T:Microsoft.Bot.Connector.AttachmentsExtensions
+  id: AttachmentsExtensions
+  children:
+  - Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachment(Microsoft.Bot.Connector.IAttachments,System.String,System.String)
+  - Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentAsync(Microsoft.Bot.Connector.IAttachments,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentInfo(Microsoft.Bot.Connector.IAttachments,System.String)
+  - Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentInfoAsync(Microsoft.Bot.Connector.IAttachments,System.String,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentStream(Microsoft.Bot.Connector.IAttachments,System.String,System.String)
+  - Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentStreamAsync(Microsoft.Bot.Connector.IAttachments,System.String,System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  name: AttachmentsExtensions
+  nameWithType: AttachmentsExtensions
+  fullName: Microsoft.Bot.Connector.AttachmentsExtensions
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: Extension methods for Attachments.
+  syntax:
+    content: public static class AttachmentsExtensions
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/AttachmentsExtensions.xml
+- uid: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachment(Microsoft.Bot.Connector.IAttachments,System.String,System.String)
+  commentId: M:Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachment(Microsoft.Bot.Connector.IAttachments,System.String,System.String)
+  id: GetAttachment(Microsoft.Bot.Connector.IAttachments,System.String,System.String)
+  parent: Microsoft.Bot.Connector.AttachmentsExtensions
+  langs:
+  - csharp
+  name: GetAttachment(IAttachments, String, String)
+  nameWithType: AttachmentsExtensions.GetAttachment(IAttachments, String, String)
+  fullName: AttachmentsExtensions.GetAttachment(IAttachments, String, String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: GetAttachment
+  syntax:
+    content: public static byte[] GetAttachment (this Microsoft.Bot.Connector.IAttachments operations, string attachmentId, string viewId);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IAttachments
+      description: The operations group for this extension method.
+    - id: attachmentId
+      type: System.String
+      description: attachment id
+    - id: viewId
+      type: System.String
+      description: View id from attachmentInfo
+    return:
+      type: System.Byte[]
+      description: To be added.
+  overload: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachment*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/AttachmentsExtensions.xml
+- uid: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentAsync(Microsoft.Bot.Connector.IAttachments,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentAsync(Microsoft.Bot.Connector.IAttachments,System.String,System.String,System.Threading.CancellationToken)
+  id: GetAttachmentAsync(Microsoft.Bot.Connector.IAttachments,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.AttachmentsExtensions
+  langs:
+  - csharp
+  name: GetAttachmentAsync(IAttachments, String, String, CancellationToken)
+  nameWithType: AttachmentsExtensions.GetAttachmentAsync(IAttachments, String, String, CancellationToken)
+  fullName: AttachmentsExtensions.GetAttachmentAsync(IAttachments, String, String, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: GetAttachment
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.AttachmentsExtensions/<GetAttachmentAsync>d__3))]
+
+      public static System.Threading.Tasks.Task<byte[]> GetAttachmentAsync (this Microsoft.Bot.Connector.IAttachments operations, string attachmentId, string viewId, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IAttachments
+      description: The operations group for this extension method.
+    - id: attachmentId
+      type: System.String
+      description: attachment id
+    - id: viewId
+      type: System.String
+      description: View id from attachmentInfo
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.Byte[]}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/AttachmentsExtensions.xml
+- uid: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentInfo(Microsoft.Bot.Connector.IAttachments,System.String)
+  commentId: M:Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentInfo(Microsoft.Bot.Connector.IAttachments,System.String)
+  id: GetAttachmentInfo(Microsoft.Bot.Connector.IAttachments,System.String)
+  parent: Microsoft.Bot.Connector.AttachmentsExtensions
+  langs:
+  - csharp
+  name: GetAttachmentInfo(IAttachments, String)
+  nameWithType: AttachmentsExtensions.GetAttachmentInfo(IAttachments, String)
+  fullName: AttachmentsExtensions.GetAttachmentInfo(IAttachments, String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: GetAttachmentInfo
+  syntax:
+    content: public static Microsoft.Bot.Connector.AttachmentInfo GetAttachmentInfo (this Microsoft.Bot.Connector.IAttachments operations, string attachmentId);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IAttachments
+      description: The operations group for this extension method.
+    - id: attachmentId
+      type: System.String
+      description: attachment id
+    return:
+      type: Microsoft.Bot.Connector.AttachmentInfo
+      description: To be added.
+  overload: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentInfo*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/AttachmentsExtensions.xml
+- uid: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentInfoAsync(Microsoft.Bot.Connector.IAttachments,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentInfoAsync(Microsoft.Bot.Connector.IAttachments,System.String,System.Threading.CancellationToken)
+  id: GetAttachmentInfoAsync(Microsoft.Bot.Connector.IAttachments,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.AttachmentsExtensions
+  langs:
+  - csharp
+  name: GetAttachmentInfoAsync(IAttachments, String, CancellationToken)
+  nameWithType: AttachmentsExtensions.GetAttachmentInfoAsync(IAttachments, String, CancellationToken)
+  fullName: AttachmentsExtensions.GetAttachmentInfoAsync(IAttachments, String, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: GetAttachmentInfo
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.AttachmentsExtensions/<GetAttachmentInfoAsync>d__1))]
+
+      public static System.Threading.Tasks.Task<Microsoft.Bot.Connector.AttachmentInfo> GetAttachmentInfoAsync (this Microsoft.Bot.Connector.IAttachments operations, string attachmentId, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IAttachments
+      description: The operations group for this extension method.
+    - id: attachmentId
+      type: System.String
+      description: attachment id
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Connector.AttachmentInfo}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentInfoAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/AttachmentsExtensions.xml
+- uid: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentStream(Microsoft.Bot.Connector.IAttachments,System.String,System.String)
+  commentId: M:Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentStream(Microsoft.Bot.Connector.IAttachments,System.String,System.String)
+  id: GetAttachmentStream(Microsoft.Bot.Connector.IAttachments,System.String,System.String)
+  parent: Microsoft.Bot.Connector.AttachmentsExtensions
+  langs:
+  - csharp
+  name: GetAttachmentStream(IAttachments, String, String)
+  nameWithType: AttachmentsExtensions.GetAttachmentStream(IAttachments, String, String)
+  fullName: AttachmentsExtensions.GetAttachmentStream(IAttachments, String, String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: GetAttachmentStream
+  syntax:
+    content: public static System.IO.Stream GetAttachmentStream (this Microsoft.Bot.Connector.IAttachments operations, string attachmentId, string viewId);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IAttachments
+      description: The operations group for this extension method.
+    - id: attachmentId
+      type: System.String
+      description: attachment id
+    - id: viewId
+      type: System.String
+      description: View id from attachmentInfo
+    return:
+      type: System.IO.Stream
+      description: To be added.
+  overload: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentStream*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/AttachmentsExtensions.xml
+- uid: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentStreamAsync(Microsoft.Bot.Connector.IAttachments,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentStreamAsync(Microsoft.Bot.Connector.IAttachments,System.String,System.String,System.Threading.CancellationToken)
+  id: GetAttachmentStreamAsync(Microsoft.Bot.Connector.IAttachments,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.AttachmentsExtensions
+  langs:
+  - csharp
+  name: GetAttachmentStreamAsync(IAttachments, String, String, CancellationToken)
+  nameWithType: AttachmentsExtensions.GetAttachmentStreamAsync(IAttachments, String, String, CancellationToken)
+  fullName: AttachmentsExtensions.GetAttachmentStreamAsync(IAttachments, String, String, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: GetAttachmentStreamAsync
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.AttachmentsExtensions/<GetAttachmentStreamAsync>d__5))]
+
+      public static System.Threading.Tasks.Task<System.IO.Stream> GetAttachmentStreamAsync (this Microsoft.Bot.Connector.IAttachments operations, string attachmentId, string viewId, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IAttachments
+      description: The operations group for this extension method.
+    - id: attachmentId
+      type: System.String
+      description: attachment id
+    - id: viewId
+      type: System.String
+      description: View id from attachmentInfo
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.IO.Stream}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentStreamAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/AttachmentsExtensions.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachment(Microsoft.Bot.Connector.IAttachments,System.String,System.String)
+  parent: Microsoft.Bot.Connector.AttachmentsExtensions
+  isExternal: false
+  name: GetAttachment(IAttachments, String, String)
+  nameWithType: AttachmentsExtensions.GetAttachment(IAttachments, String, String)
+  fullName: AttachmentsExtensions.GetAttachment(IAttachments, String, String)
+- uid: System.Byte
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: System.Byte[]
+  parent: System
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: Microsoft.Bot.Connector.IAttachments
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IAttachments
+  nameWithType: IAttachments
+  fullName: Microsoft.Bot.Connector.IAttachments
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentAsync(Microsoft.Bot.Connector.IAttachments,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.AttachmentsExtensions
+  isExternal: false
+  name: GetAttachmentAsync(IAttachments, String, String, CancellationToken)
+  nameWithType: AttachmentsExtensions.GetAttachmentAsync(IAttachments, String, String, CancellationToken)
+  fullName: AttachmentsExtensions.GetAttachmentAsync(IAttachments, String, String, CancellationToken)
+- uid: System.Threading.Tasks.Task`1
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks.Task{System.Byte[]}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<Byte[]>
+  nameWithType: Task<Byte[]>
+  fullName: System.Threading.Tasks.Task<System.Byte[]>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentInfo(Microsoft.Bot.Connector.IAttachments,System.String)
+  parent: Microsoft.Bot.Connector.AttachmentsExtensions
+  isExternal: false
+  name: GetAttachmentInfo(IAttachments, String)
+  nameWithType: AttachmentsExtensions.GetAttachmentInfo(IAttachments, String)
+  fullName: AttachmentsExtensions.GetAttachmentInfo(IAttachments, String)
+- uid: Microsoft.Bot.Connector.AttachmentInfo
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: AttachmentInfo
+  nameWithType: AttachmentInfo
+  fullName: Microsoft.Bot.Connector.AttachmentInfo
+- uid: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentInfoAsync(Microsoft.Bot.Connector.IAttachments,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.AttachmentsExtensions
+  isExternal: false
+  name: GetAttachmentInfoAsync(IAttachments, String, CancellationToken)
+  nameWithType: AttachmentsExtensions.GetAttachmentInfoAsync(IAttachments, String, CancellationToken)
+  fullName: AttachmentsExtensions.GetAttachmentInfoAsync(IAttachments, String, CancellationToken)
+- uid: System.Threading.Tasks.Task{Microsoft.Bot.Connector.AttachmentInfo}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<AttachmentInfo>
+  nameWithType: Task<AttachmentInfo>
+  fullName: System.Threading.Tasks.Task<Microsoft.Bot.Connector.AttachmentInfo>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.AttachmentInfo
+    name: AttachmentInfo
+    nameWithType: AttachmentInfo
+    fullName: Microsoft.Bot.Connector.AttachmentInfo
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentStream(Microsoft.Bot.Connector.IAttachments,System.String,System.String)
+  parent: Microsoft.Bot.Connector.AttachmentsExtensions
+  isExternal: false
+  name: GetAttachmentStream(IAttachments, String, String)
+  nameWithType: AttachmentsExtensions.GetAttachmentStream(IAttachments, String, String)
+  fullName: AttachmentsExtensions.GetAttachmentStream(IAttachments, String, String)
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentStreamAsync(Microsoft.Bot.Connector.IAttachments,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.AttachmentsExtensions
+  isExternal: false
+  name: GetAttachmentStreamAsync(IAttachments, String, String, CancellationToken)
+  nameWithType: AttachmentsExtensions.GetAttachmentStreamAsync(IAttachments, String, String, CancellationToken)
+  fullName: AttachmentsExtensions.GetAttachmentStreamAsync(IAttachments, String, String, CancellationToken)
+- uid: System.Threading.Tasks.Task{System.IO.Stream}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<Stream>
+  nameWithType: Task<Stream>
+  fullName: System.Threading.Tasks.Task<System.IO.Stream>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachment*
+  parent: Microsoft.Bot.Connector.AttachmentsExtensions
+  isExternal: false
+  name: GetAttachment
+  nameWithType: AttachmentsExtensions.GetAttachment
+  fullName: AttachmentsExtensions.GetAttachment
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/AttachmentsExtensions.xml
+- uid: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentAsync*
+  parent: Microsoft.Bot.Connector.AttachmentsExtensions
+  isExternal: false
+  name: GetAttachmentAsync
+  nameWithType: AttachmentsExtensions.GetAttachmentAsync
+  fullName: AttachmentsExtensions.GetAttachmentAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/AttachmentsExtensions.xml
+- uid: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentInfo*
+  parent: Microsoft.Bot.Connector.AttachmentsExtensions
+  isExternal: false
+  name: GetAttachmentInfo
+  nameWithType: AttachmentsExtensions.GetAttachmentInfo
+  fullName: AttachmentsExtensions.GetAttachmentInfo
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/AttachmentsExtensions.xml
+- uid: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentInfoAsync*
+  parent: Microsoft.Bot.Connector.AttachmentsExtensions
+  isExternal: false
+  name: GetAttachmentInfoAsync
+  nameWithType: AttachmentsExtensions.GetAttachmentInfoAsync
+  fullName: AttachmentsExtensions.GetAttachmentInfoAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/AttachmentsExtensions.xml
+- uid: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentStream*
+  parent: Microsoft.Bot.Connector.AttachmentsExtensions
+  isExternal: false
+  name: GetAttachmentStream
+  nameWithType: AttachmentsExtensions.GetAttachmentStream
+  fullName: AttachmentsExtensions.GetAttachmentStream
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/AttachmentsExtensions.xml
+- uid: Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentStreamAsync*
+  parent: Microsoft.Bot.Connector.AttachmentsExtensions
+  isExternal: false
+  name: GetAttachmentStreamAsync
+  nameWithType: AttachmentsExtensions.GetAttachmentStreamAsync
+  fullName: AttachmentsExtensions.GetAttachmentStreamAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/AttachmentsExtensions.xml

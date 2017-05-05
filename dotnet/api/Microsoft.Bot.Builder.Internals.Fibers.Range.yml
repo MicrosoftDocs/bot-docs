@@ -1,0 +1,95 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range
+  commentId: T:Microsoft.Bot.Builder.Internals.Fibers.Range
+  id: Range
+  children:
+  - Microsoft.Bot.Builder.Internals.Fibers.Range.From``1(``0,``0)
+  langs:
+  - csharp
+  name: Range
+  nameWithType: Range
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.Range
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public static class Range
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Range.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range.From``1(``0,``0)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Range.From``1(``0,``0)
+  id: From``1(``0,``0)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Range
+  langs:
+  - csharp
+  name: From<T>(T, T)
+  nameWithType: Range.From<T>(T, T)
+  fullName: Range.From<T>(T, T)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: 'public static Microsoft.Bot.Builder.Internals.Fibers.Range<T> From<T> (T start, T after) where T : IEquatable<T>, IComparable<T>;'
+    parameters:
+    - id: start
+      type: T
+      description: To be added.
+    - id: after
+      type: T
+      description: To be added.
+    typeParameters:
+    - id: T
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Range.From``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Range.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range.From``1(``0,``0)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Range
+  isExternal: false
+  name: From<T>(T, T)
+  nameWithType: Range.From<T>(T, T)
+  fullName: Range.From<T>(T, T)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: Range<T>
+  nameWithType: Range<T>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.Range<T>
+- uid: T
+  isExternal: true
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range.From``1*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Range
+  isExternal: false
+  name: From<T>
+  nameWithType: Range.From<T>
+  fullName: Range.From<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Range.xml

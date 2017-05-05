@@ -1,0 +1,802 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.IConversations
+  commentId: T:Microsoft.Bot.Connector.IConversations
+  id: IConversations
+  children:
+  - Microsoft.Bot.Connector.IConversations.CreateConversationWithHttpMessagesAsync(Microsoft.Bot.Connector.ConversationParameters,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.IConversations.DeleteActivityWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.IConversations.GetActivityMembersWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.IConversations.GetConversationMembersWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.IConversations.ReplyToActivityWithHttpMessagesAsync(System.String,System.String,Microsoft.Bot.Connector.Activity,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.IConversations.SendToConversationWithHttpMessagesAsync(Microsoft.Bot.Connector.Activity,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.IConversations.UpdateActivityWithHttpMessagesAsync(System.String,System.String,Microsoft.Bot.Connector.Activity,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.IConversations.UploadAttachmentWithHttpMessagesAsync(System.String,Microsoft.Bot.Connector.AttachmentData,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  name: IConversations
+  nameWithType: IConversations
+  fullName: Microsoft.Bot.Connector.IConversations
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: Conversations operations.
+  syntax:
+    content: public interface IConversations
+  derivedClasses:
+  - Microsoft.Bot.Connector.Conversations
+  implements: []
+  extensionMethods:
+  - Microsoft.Bot.Connector.ConversationsExtensions.CreateConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ConversationParameters)
+  - Microsoft.Bot.Connector.ConversationsExtensions.CreateConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ConversationParameters,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.Activity)
+  - Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversation(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity)
+  - Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversationAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.ConversationsExtensions.DeleteActivity(Microsoft.Bot.Connector.IConversations,System.String,System.String)
+  - Microsoft.Bot.Connector.ConversationsExtensions.DeleteActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembers(Microsoft.Bot.Connector.IConversations,System.String,System.String)
+  - Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembersAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembers(Microsoft.Bot.Connector.IConversations,System.String)
+  - Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembersAsync(Microsoft.Bot.Connector.IConversations,System.String,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivity(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity)
+  - Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivity(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity)
+  - Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivityAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.ConversationsExtensions.SendToConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity)
+  - Microsoft.Bot.Connector.ConversationsExtensions.SendToConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.String)
+  - Microsoft.Bot.Connector.ConversationsExtensions.SendToConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.String,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.ConversationsExtensions.SendToConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivity(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity)
+  - Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivity(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity)
+  - Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivityAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachment(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Connector.AttachmentData)
+  - Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachmentAsync(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Connector.AttachmentData,System.Threading.CancellationToken)
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IConversations.xml
+- uid: Microsoft.Bot.Connector.IConversations.CreateConversationWithHttpMessagesAsync(Microsoft.Bot.Connector.ConversationParameters,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.IConversations.CreateConversationWithHttpMessagesAsync(Microsoft.Bot.Connector.ConversationParameters,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  id: CreateConversationWithHttpMessagesAsync(Microsoft.Bot.Connector.ConversationParameters,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.IConversations
+  langs:
+  - csharp
+  name: CreateConversationWithHttpMessagesAsync(ConversationParameters, Dictionary<String,List<String>>, CancellationToken)
+  nameWithType: IConversations.CreateConversationWithHttpMessagesAsync(ConversationParameters, Dictionary<String,List<String>>, CancellationToken)
+  fullName: IConversations.CreateConversationWithHttpMessagesAsync(ConversationParameters, Dictionary<String,List<String>>, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: CreateConversation
+  syntax:
+    content: public System.Threading.Tasks.Task<Microsoft.Rest.HttpOperationResponse<object>> CreateConversationWithHttpMessagesAsync (Microsoft.Bot.Connector.ConversationParameters parameters, System.Collections.Generic.Dictionary<string,System.Collections.Generic.List<string>> customHeaders = null, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: parameters
+      type: Microsoft.Bot.Connector.ConversationParameters
+      description: Parameters to create the conversation from
+    - id: customHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}
+      description: The headers that will be added to request.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Rest.HttpOperationResponse{System.Object}}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IConversations.CreateConversationWithHttpMessagesAsync*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IConversations.xml
+- uid: Microsoft.Bot.Connector.IConversations.DeleteActivityWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.IConversations.DeleteActivityWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  id: DeleteActivityWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.IConversations
+  langs:
+  - csharp
+  name: DeleteActivityWithHttpMessagesAsync(String, String, Dictionary<String,List<String>>, CancellationToken)
+  nameWithType: IConversations.DeleteActivityWithHttpMessagesAsync(String, String, Dictionary<String,List<String>>, CancellationToken)
+  fullName: IConversations.DeleteActivityWithHttpMessagesAsync(String, String, Dictionary<String,List<String>>, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: DeleteActivity
+  syntax:
+    content: public System.Threading.Tasks.Task<Microsoft.Rest.HttpOperationResponse<Microsoft.Bot.Connector.ErrorResponse>> DeleteActivityWithHttpMessagesAsync (string conversationId, string activityId, System.Collections.Generic.Dictionary<string,System.Collections.Generic.List<string>> customHeaders = null, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: conversationId
+      type: System.String
+      description: Conversation ID
+    - id: activityId
+      type: System.String
+      description: activityId to delete
+    - id: customHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}
+      description: The headers that will be added to request.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Rest.HttpOperationResponse{Microsoft.Bot.Connector.ErrorResponse}}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IConversations.DeleteActivityWithHttpMessagesAsync*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IConversations.xml
+- uid: Microsoft.Bot.Connector.IConversations.GetActivityMembersWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.IConversations.GetActivityMembersWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  id: GetActivityMembersWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.IConversations
+  langs:
+  - csharp
+  name: GetActivityMembersWithHttpMessagesAsync(String, String, Dictionary<String,List<String>>, CancellationToken)
+  nameWithType: IConversations.GetActivityMembersWithHttpMessagesAsync(String, String, Dictionary<String,List<String>>, CancellationToken)
+  fullName: IConversations.GetActivityMembersWithHttpMessagesAsync(String, String, Dictionary<String,List<String>>, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: GetActivityMembers
+  syntax:
+    content: public System.Threading.Tasks.Task<Microsoft.Rest.HttpOperationResponse<object>> GetActivityMembersWithHttpMessagesAsync (string conversationId, string activityId, System.Collections.Generic.Dictionary<string,System.Collections.Generic.List<string>> customHeaders = null, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: conversationId
+      type: System.String
+      description: Conversation ID
+    - id: activityId
+      type: System.String
+      description: Activity ID
+    - id: customHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}
+      description: The headers that will be added to request.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Rest.HttpOperationResponse{System.Object}}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IConversations.GetActivityMembersWithHttpMessagesAsync*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IConversations.xml
+- uid: Microsoft.Bot.Connector.IConversations.GetConversationMembersWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.IConversations.GetConversationMembersWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  id: GetConversationMembersWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.IConversations
+  langs:
+  - csharp
+  name: GetConversationMembersWithHttpMessagesAsync(String, Dictionary<String,List<String>>, CancellationToken)
+  nameWithType: IConversations.GetConversationMembersWithHttpMessagesAsync(String, Dictionary<String,List<String>>, CancellationToken)
+  fullName: IConversations.GetConversationMembersWithHttpMessagesAsync(String, Dictionary<String,List<String>>, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: GetConversationMembers
+  syntax:
+    content: public System.Threading.Tasks.Task<Microsoft.Rest.HttpOperationResponse<object>> GetConversationMembersWithHttpMessagesAsync (string conversationId, System.Collections.Generic.Dictionary<string,System.Collections.Generic.List<string>> customHeaders = null, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: conversationId
+      type: System.String
+      description: Conversation ID
+    - id: customHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}
+      description: The headers that will be added to request.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Rest.HttpOperationResponse{System.Object}}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IConversations.GetConversationMembersWithHttpMessagesAsync*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IConversations.xml
+- uid: Microsoft.Bot.Connector.IConversations.ReplyToActivityWithHttpMessagesAsync(System.String,System.String,Microsoft.Bot.Connector.Activity,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.IConversations.ReplyToActivityWithHttpMessagesAsync(System.String,System.String,Microsoft.Bot.Connector.Activity,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  id: ReplyToActivityWithHttpMessagesAsync(System.String,System.String,Microsoft.Bot.Connector.Activity,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.IConversations
+  langs:
+  - csharp
+  name: ReplyToActivityWithHttpMessagesAsync(String, String, Activity, Dictionary<String,List<String>>, CancellationToken)
+  nameWithType: IConversations.ReplyToActivityWithHttpMessagesAsync(String, String, Activity, Dictionary<String,List<String>>, CancellationToken)
+  fullName: IConversations.ReplyToActivityWithHttpMessagesAsync(String, String, Activity, Dictionary<String,List<String>>, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: ReplyToActivity
+  syntax:
+    content: public System.Threading.Tasks.Task<Microsoft.Rest.HttpOperationResponse<object>> ReplyToActivityWithHttpMessagesAsync (string conversationId, string activityId, Microsoft.Bot.Connector.Activity activity, System.Collections.Generic.Dictionary<string,System.Collections.Generic.List<string>> customHeaders = null, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: conversationId
+      type: System.String
+      description: Conversation ID
+    - id: activityId
+      type: System.String
+      description: activityId the reply is to (OPTIONAL)
+    - id: activity
+      type: Microsoft.Bot.Connector.Activity
+      description: Activity to send
+    - id: customHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}
+      description: The headers that will be added to request.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Rest.HttpOperationResponse{System.Object}}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IConversations.ReplyToActivityWithHttpMessagesAsync*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IConversations.xml
+- uid: Microsoft.Bot.Connector.IConversations.SendToConversationWithHttpMessagesAsync(Microsoft.Bot.Connector.Activity,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.IConversations.SendToConversationWithHttpMessagesAsync(Microsoft.Bot.Connector.Activity,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  id: SendToConversationWithHttpMessagesAsync(Microsoft.Bot.Connector.Activity,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.IConversations
+  langs:
+  - csharp
+  name: SendToConversationWithHttpMessagesAsync(Activity, String, Dictionary<String,List<String>>, CancellationToken)
+  nameWithType: IConversations.SendToConversationWithHttpMessagesAsync(Activity, String, Dictionary<String,List<String>>, CancellationToken)
+  fullName: IConversations.SendToConversationWithHttpMessagesAsync(Activity, String, Dictionary<String,List<String>>, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: SendToConversation
+  syntax:
+    content: public System.Threading.Tasks.Task<Microsoft.Rest.HttpOperationResponse<object>> SendToConversationWithHttpMessagesAsync (Microsoft.Bot.Connector.Activity activity, string conversationId, System.Collections.Generic.Dictionary<string,System.Collections.Generic.List<string>> customHeaders = null, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: activity
+      type: Microsoft.Bot.Connector.Activity
+      description: Activity to send
+    - id: conversationId
+      type: System.String
+      description: Conversation ID
+    - id: customHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}
+      description: The headers that will be added to request.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Rest.HttpOperationResponse{System.Object}}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IConversations.SendToConversationWithHttpMessagesAsync*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IConversations.xml
+- uid: Microsoft.Bot.Connector.IConversations.UpdateActivityWithHttpMessagesAsync(System.String,System.String,Microsoft.Bot.Connector.Activity,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.IConversations.UpdateActivityWithHttpMessagesAsync(System.String,System.String,Microsoft.Bot.Connector.Activity,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  id: UpdateActivityWithHttpMessagesAsync(System.String,System.String,Microsoft.Bot.Connector.Activity,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.IConversations
+  langs:
+  - csharp
+  name: UpdateActivityWithHttpMessagesAsync(String, String, Activity, Dictionary<String,List<String>>, CancellationToken)
+  nameWithType: IConversations.UpdateActivityWithHttpMessagesAsync(String, String, Activity, Dictionary<String,List<String>>, CancellationToken)
+  fullName: IConversations.UpdateActivityWithHttpMessagesAsync(String, String, Activity, Dictionary<String,List<String>>, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: UpdateActivity
+  syntax:
+    content: public System.Threading.Tasks.Task<Microsoft.Rest.HttpOperationResponse<object>> UpdateActivityWithHttpMessagesAsync (string conversationId, string activityId, Microsoft.Bot.Connector.Activity activity, System.Collections.Generic.Dictionary<string,System.Collections.Generic.List<string>> customHeaders = null, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: conversationId
+      type: System.String
+      description: Conversation ID
+    - id: activityId
+      type: System.String
+      description: activityId to update
+    - id: activity
+      type: Microsoft.Bot.Connector.Activity
+      description: replacement Activity
+    - id: customHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}
+      description: The headers that will be added to request.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Rest.HttpOperationResponse{System.Object}}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IConversations.UpdateActivityWithHttpMessagesAsync*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IConversations.xml
+- uid: Microsoft.Bot.Connector.IConversations.UploadAttachmentWithHttpMessagesAsync(System.String,Microsoft.Bot.Connector.AttachmentData,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.IConversations.UploadAttachmentWithHttpMessagesAsync(System.String,Microsoft.Bot.Connector.AttachmentData,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  id: UploadAttachmentWithHttpMessagesAsync(System.String,Microsoft.Bot.Connector.AttachmentData,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.IConversations
+  langs:
+  - csharp
+  name: UploadAttachmentWithHttpMessagesAsync(String, AttachmentData, Dictionary<String,List<String>>, CancellationToken)
+  nameWithType: IConversations.UploadAttachmentWithHttpMessagesAsync(String, AttachmentData, Dictionary<String,List<String>>, CancellationToken)
+  fullName: IConversations.UploadAttachmentWithHttpMessagesAsync(String, AttachmentData, Dictionary<String,List<String>>, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: UploadAttachment
+  syntax:
+    content: public System.Threading.Tasks.Task<Microsoft.Rest.HttpOperationResponse<object>> UploadAttachmentWithHttpMessagesAsync (string conversationId, Microsoft.Bot.Connector.AttachmentData attachmentUpload, System.Collections.Generic.Dictionary<string,System.Collections.Generic.List<string>> customHeaders = null, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: conversationId
+      type: System.String
+      description: Conversation ID
+    - id: attachmentUpload
+      type: Microsoft.Bot.Connector.AttachmentData
+      description: Attachment data
+    - id: customHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}
+      description: The headers that will be added to request.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Rest.HttpOperationResponse{System.Object}}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IConversations.UploadAttachmentWithHttpMessagesAsync*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IConversations.xml
+references:
+- uid: Microsoft.Bot.Connector.IConversations.CreateConversationWithHttpMessagesAsync(Microsoft.Bot.Connector.ConversationParameters,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.IConversations
+  isExternal: false
+  name: CreateConversationWithHttpMessagesAsync(ConversationParameters, Dictionary<String,List<String>>, CancellationToken)
+  nameWithType: IConversations.CreateConversationWithHttpMessagesAsync(ConversationParameters, Dictionary<String,List<String>>, CancellationToken)
+  fullName: IConversations.CreateConversationWithHttpMessagesAsync(ConversationParameters, Dictionary<String,List<String>>, CancellationToken)
+- uid: System.Threading.Tasks.Task`1
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.Rest.HttpOperationResponse`1
+  name: HttpOperationResponse
+  nameWithType: HttpOperationResponse
+  fullName: Microsoft.Rest.HttpOperationResponse
+- uid: System.Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Threading.Tasks.Task{Microsoft.Rest.HttpOperationResponse{System.Object}}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<HttpOperationResponse<Object>>
+  nameWithType: Task<HttpOperationResponse<Object>>
+  fullName: System.Threading.Tasks.Task<Microsoft.Rest.HttpOperationResponse<System.Object>>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Rest.HttpOperationResponse`1
+    name: HttpOperationResponse
+    nameWithType: HttpOperationResponse
+    fullName: Microsoft.Rest.HttpOperationResponse
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Connector.ConversationParameters
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: ConversationParameters
+  nameWithType: ConversationParameters
+  fullName: Microsoft.Bot.Connector.ConversationParameters
+- uid: System.Collections.Generic.Dictionary`2
+  name: Dictionary
+  nameWithType: Dictionary
+  fullName: System.Collections.Generic.Dictionary
+- uid: System.String
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic.List`1
+  name: List
+  nameWithType: List
+  fullName: System.Collections.Generic.List
+- uid: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: Dictionary<String,List<String>>
+  nameWithType: Dictionary<String,List<String>>
+  fullName: System.Collections.Generic.Dictionary<System.String,System.Collections.Generic.List<System.String>>
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Connector.IConversations.DeleteActivityWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.IConversations
+  isExternal: false
+  name: DeleteActivityWithHttpMessagesAsync(String, String, Dictionary<String,List<String>>, CancellationToken)
+  nameWithType: IConversations.DeleteActivityWithHttpMessagesAsync(String, String, Dictionary<String,List<String>>, CancellationToken)
+  fullName: IConversations.DeleteActivityWithHttpMessagesAsync(String, String, Dictionary<String,List<String>>, CancellationToken)
+- uid: Microsoft.Bot.Connector.ErrorResponse
+  name: ErrorResponse
+  nameWithType: ErrorResponse
+  fullName: Microsoft.Bot.Connector.ErrorResponse
+- uid: System.Threading.Tasks.Task{Microsoft.Rest.HttpOperationResponse{Microsoft.Bot.Connector.ErrorResponse}}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<HttpOperationResponse<ErrorResponse>>
+  nameWithType: Task<HttpOperationResponse<ErrorResponse>>
+  fullName: System.Threading.Tasks.Task<Microsoft.Rest.HttpOperationResponse<Microsoft.Bot.Connector.ErrorResponse>>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Rest.HttpOperationResponse`1
+    name: HttpOperationResponse
+    nameWithType: HttpOperationResponse
+    fullName: Microsoft.Rest.HttpOperationResponse
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.ErrorResponse
+    name: ErrorResponse
+    nameWithType: ErrorResponse
+    fullName: Microsoft.Bot.Connector.ErrorResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Connector.IConversations.GetActivityMembersWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.IConversations
+  isExternal: false
+  name: GetActivityMembersWithHttpMessagesAsync(String, String, Dictionary<String,List<String>>, CancellationToken)
+  nameWithType: IConversations.GetActivityMembersWithHttpMessagesAsync(String, String, Dictionary<String,List<String>>, CancellationToken)
+  fullName: IConversations.GetActivityMembersWithHttpMessagesAsync(String, String, Dictionary<String,List<String>>, CancellationToken)
+- uid: Microsoft.Bot.Connector.IConversations.GetConversationMembersWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.IConversations
+  isExternal: false
+  name: GetConversationMembersWithHttpMessagesAsync(String, Dictionary<String,List<String>>, CancellationToken)
+  nameWithType: IConversations.GetConversationMembersWithHttpMessagesAsync(String, Dictionary<String,List<String>>, CancellationToken)
+  fullName: IConversations.GetConversationMembersWithHttpMessagesAsync(String, Dictionary<String,List<String>>, CancellationToken)
+- uid: Microsoft.Bot.Connector.IConversations.ReplyToActivityWithHttpMessagesAsync(System.String,System.String,Microsoft.Bot.Connector.Activity,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.IConversations
+  isExternal: false
+  name: ReplyToActivityWithHttpMessagesAsync(String, String, Activity, Dictionary<String,List<String>>, CancellationToken)
+  nameWithType: IConversations.ReplyToActivityWithHttpMessagesAsync(String, String, Activity, Dictionary<String,List<String>>, CancellationToken)
+  fullName: IConversations.ReplyToActivityWithHttpMessagesAsync(String, String, Activity, Dictionary<String,List<String>>, CancellationToken)
+- uid: Microsoft.Bot.Connector.Activity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: Activity
+  nameWithType: Activity
+  fullName: Microsoft.Bot.Connector.Activity
+- uid: Microsoft.Bot.Connector.IConversations.SendToConversationWithHttpMessagesAsync(Microsoft.Bot.Connector.Activity,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.IConversations
+  isExternal: false
+  name: SendToConversationWithHttpMessagesAsync(Activity, String, Dictionary<String,List<String>>, CancellationToken)
+  nameWithType: IConversations.SendToConversationWithHttpMessagesAsync(Activity, String, Dictionary<String,List<String>>, CancellationToken)
+  fullName: IConversations.SendToConversationWithHttpMessagesAsync(Activity, String, Dictionary<String,List<String>>, CancellationToken)
+- uid: Microsoft.Bot.Connector.IConversations.UpdateActivityWithHttpMessagesAsync(System.String,System.String,Microsoft.Bot.Connector.Activity,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.IConversations
+  isExternal: false
+  name: UpdateActivityWithHttpMessagesAsync(String, String, Activity, Dictionary<String,List<String>>, CancellationToken)
+  nameWithType: IConversations.UpdateActivityWithHttpMessagesAsync(String, String, Activity, Dictionary<String,List<String>>, CancellationToken)
+  fullName: IConversations.UpdateActivityWithHttpMessagesAsync(String, String, Activity, Dictionary<String,List<String>>, CancellationToken)
+- uid: Microsoft.Bot.Connector.IConversations.UploadAttachmentWithHttpMessagesAsync(System.String,Microsoft.Bot.Connector.AttachmentData,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.IConversations
+  isExternal: false
+  name: UploadAttachmentWithHttpMessagesAsync(String, AttachmentData, Dictionary<String,List<String>>, CancellationToken)
+  nameWithType: IConversations.UploadAttachmentWithHttpMessagesAsync(String, AttachmentData, Dictionary<String,List<String>>, CancellationToken)
+  fullName: IConversations.UploadAttachmentWithHttpMessagesAsync(String, AttachmentData, Dictionary<String,List<String>>, CancellationToken)
+- uid: Microsoft.Bot.Connector.AttachmentData
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: AttachmentData
+  nameWithType: AttachmentData
+  fullName: Microsoft.Bot.Connector.AttachmentData
+- uid: Microsoft.Bot.Connector.IConversations.CreateConversationWithHttpMessagesAsync*
+  parent: Microsoft.Bot.Connector.IConversations
+  isExternal: false
+  name: CreateConversationWithHttpMessagesAsync
+  nameWithType: IConversations.CreateConversationWithHttpMessagesAsync
+  fullName: IConversations.CreateConversationWithHttpMessagesAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IConversations.xml
+- uid: Microsoft.Bot.Connector.IConversations.DeleteActivityWithHttpMessagesAsync*
+  parent: Microsoft.Bot.Connector.IConversations
+  isExternal: false
+  name: DeleteActivityWithHttpMessagesAsync
+  nameWithType: IConversations.DeleteActivityWithHttpMessagesAsync
+  fullName: IConversations.DeleteActivityWithHttpMessagesAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IConversations.xml
+- uid: Microsoft.Bot.Connector.IConversations.GetActivityMembersWithHttpMessagesAsync*
+  parent: Microsoft.Bot.Connector.IConversations
+  isExternal: false
+  name: GetActivityMembersWithHttpMessagesAsync
+  nameWithType: IConversations.GetActivityMembersWithHttpMessagesAsync
+  fullName: IConversations.GetActivityMembersWithHttpMessagesAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IConversations.xml
+- uid: Microsoft.Bot.Connector.IConversations.GetConversationMembersWithHttpMessagesAsync*
+  parent: Microsoft.Bot.Connector.IConversations
+  isExternal: false
+  name: GetConversationMembersWithHttpMessagesAsync
+  nameWithType: IConversations.GetConversationMembersWithHttpMessagesAsync
+  fullName: IConversations.GetConversationMembersWithHttpMessagesAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IConversations.xml
+- uid: Microsoft.Bot.Connector.IConversations.ReplyToActivityWithHttpMessagesAsync*
+  parent: Microsoft.Bot.Connector.IConversations
+  isExternal: false
+  name: ReplyToActivityWithHttpMessagesAsync
+  nameWithType: IConversations.ReplyToActivityWithHttpMessagesAsync
+  fullName: IConversations.ReplyToActivityWithHttpMessagesAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IConversations.xml
+- uid: Microsoft.Bot.Connector.IConversations.SendToConversationWithHttpMessagesAsync*
+  parent: Microsoft.Bot.Connector.IConversations
+  isExternal: false
+  name: SendToConversationWithHttpMessagesAsync
+  nameWithType: IConversations.SendToConversationWithHttpMessagesAsync
+  fullName: IConversations.SendToConversationWithHttpMessagesAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IConversations.xml
+- uid: Microsoft.Bot.Connector.IConversations.UpdateActivityWithHttpMessagesAsync*
+  parent: Microsoft.Bot.Connector.IConversations
+  isExternal: false
+  name: UpdateActivityWithHttpMessagesAsync
+  nameWithType: IConversations.UpdateActivityWithHttpMessagesAsync
+  fullName: IConversations.UpdateActivityWithHttpMessagesAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IConversations.xml
+- uid: Microsoft.Bot.Connector.IConversations.UploadAttachmentWithHttpMessagesAsync*
+  parent: Microsoft.Bot.Connector.IConversations
+  isExternal: false
+  name: UploadAttachmentWithHttpMessagesAsync
+  nameWithType: IConversations.UploadAttachmentWithHttpMessagesAsync
+  fullName: IConversations.UploadAttachmentWithHttpMessagesAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IConversations.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.CreateConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ConversationParameters)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: CreateConversation(IConversations, ConversationParameters)
+  nameWithType: ConversationsExtensions.CreateConversation(IConversations, ConversationParameters)
+  fullName: ConversationsExtensions.CreateConversation(IConversations, ConversationParameters)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.CreateConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ConversationParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: CreateConversationAsync(IConversations, ConversationParameters, CancellationToken)
+  nameWithType: ConversationsExtensions.CreateConversationAsync(IConversations, ConversationParameters, CancellationToken)
+  fullName: ConversationsExtensions.CreateConversationAsync(IConversations, ConversationParameters, CancellationToken)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.Activity)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: CreateDirectConversation(IConversations, ChannelAccount, ChannelAccount, Activity)
+  nameWithType: ConversationsExtensions.CreateDirectConversation(IConversations, ChannelAccount, ChannelAccount, Activity)
+  fullName: ConversationsExtensions.CreateDirectConversation(IConversations, ChannelAccount, ChannelAccount, Activity)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversation(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: CreateDirectConversation(IConversations, String, String, Activity)
+  nameWithType: ConversationsExtensions.CreateDirectConversation(IConversations, String, String, Activity)
+  fullName: ConversationsExtensions.CreateDirectConversation(IConversations, String, String, Activity)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: CreateDirectConversationAsync(IConversations, ChannelAccount, ChannelAccount, Activity, CancellationToken)
+  nameWithType: ConversationsExtensions.CreateDirectConversationAsync(IConversations, ChannelAccount, ChannelAccount, Activity, CancellationToken)
+  fullName: ConversationsExtensions.CreateDirectConversationAsync(IConversations, ChannelAccount, ChannelAccount, Activity, CancellationToken)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversationAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: CreateDirectConversationAsync(IConversations, String, String, Activity, CancellationToken)
+  nameWithType: ConversationsExtensions.CreateDirectConversationAsync(IConversations, String, String, Activity, CancellationToken)
+  fullName: ConversationsExtensions.CreateDirectConversationAsync(IConversations, String, String, Activity, CancellationToken)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.DeleteActivity(Microsoft.Bot.Connector.IConversations,System.String,System.String)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: DeleteActivity(IConversations, String, String)
+  nameWithType: ConversationsExtensions.DeleteActivity(IConversations, String, String)
+  fullName: ConversationsExtensions.DeleteActivity(IConversations, String, String)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.DeleteActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: DeleteActivityAsync(IConversations, String, String, CancellationToken)
+  nameWithType: ConversationsExtensions.DeleteActivityAsync(IConversations, String, String, CancellationToken)
+  fullName: ConversationsExtensions.DeleteActivityAsync(IConversations, String, String, CancellationToken)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembers(Microsoft.Bot.Connector.IConversations,System.String,System.String)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: GetActivityMembers(IConversations, String, String)
+  nameWithType: ConversationsExtensions.GetActivityMembers(IConversations, String, String)
+  fullName: ConversationsExtensions.GetActivityMembers(IConversations, String, String)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembersAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: GetActivityMembersAsync(IConversations, String, String, CancellationToken)
+  nameWithType: ConversationsExtensions.GetActivityMembersAsync(IConversations, String, String, CancellationToken)
+  fullName: ConversationsExtensions.GetActivityMembersAsync(IConversations, String, String, CancellationToken)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembers(Microsoft.Bot.Connector.IConversations,System.String)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: GetConversationMembers(IConversations, String)
+  nameWithType: ConversationsExtensions.GetConversationMembers(IConversations, String)
+  fullName: ConversationsExtensions.GetConversationMembers(IConversations, String)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembersAsync(Microsoft.Bot.Connector.IConversations,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: GetConversationMembersAsync(IConversations, String, CancellationToken)
+  nameWithType: ConversationsExtensions.GetConversationMembersAsync(IConversations, String, CancellationToken)
+  fullName: ConversationsExtensions.GetConversationMembersAsync(IConversations, String, CancellationToken)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivity(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: ReplyToActivity(IConversations, Activity)
+  nameWithType: ConversationsExtensions.ReplyToActivity(IConversations, Activity)
+  fullName: ConversationsExtensions.ReplyToActivity(IConversations, Activity)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivity(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: ReplyToActivity(IConversations, String, String, Activity)
+  nameWithType: ConversationsExtensions.ReplyToActivity(IConversations, String, String, Activity)
+  fullName: ConversationsExtensions.ReplyToActivity(IConversations, String, String, Activity)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivityAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: ReplyToActivityAsync(IConversations, Activity, CancellationToken)
+  nameWithType: ConversationsExtensions.ReplyToActivityAsync(IConversations, Activity, CancellationToken)
+  fullName: ConversationsExtensions.ReplyToActivityAsync(IConversations, Activity, CancellationToken)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: ReplyToActivityAsync(IConversations, String, String, Activity, CancellationToken)
+  nameWithType: ConversationsExtensions.ReplyToActivityAsync(IConversations, String, String, Activity, CancellationToken)
+  fullName: ConversationsExtensions.ReplyToActivityAsync(IConversations, String, String, Activity, CancellationToken)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.SendToConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: SendToConversation(IConversations, Activity)
+  nameWithType: ConversationsExtensions.SendToConversation(IConversations, Activity)
+  fullName: ConversationsExtensions.SendToConversation(IConversations, Activity)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.SendToConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.String)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: SendToConversation(IConversations, Activity, String)
+  nameWithType: ConversationsExtensions.SendToConversation(IConversations, Activity, String)
+  fullName: ConversationsExtensions.SendToConversation(IConversations, Activity, String)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.SendToConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: SendToConversationAsync(IConversations, Activity, String, CancellationToken)
+  nameWithType: ConversationsExtensions.SendToConversationAsync(IConversations, Activity, String, CancellationToken)
+  fullName: ConversationsExtensions.SendToConversationAsync(IConversations, Activity, String, CancellationToken)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.SendToConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: SendToConversationAsync(IConversations, Activity, CancellationToken)
+  nameWithType: ConversationsExtensions.SendToConversationAsync(IConversations, Activity, CancellationToken)
+  fullName: ConversationsExtensions.SendToConversationAsync(IConversations, Activity, CancellationToken)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivity(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: UpdateActivity(IConversations, Activity)
+  nameWithType: ConversationsExtensions.UpdateActivity(IConversations, Activity)
+  fullName: ConversationsExtensions.UpdateActivity(IConversations, Activity)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivity(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: UpdateActivity(IConversations, String, String, Activity)
+  nameWithType: ConversationsExtensions.UpdateActivity(IConversations, String, String, Activity)
+  fullName: ConversationsExtensions.UpdateActivity(IConversations, String, String, Activity)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivityAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: UpdateActivityAsync(IConversations, Activity, CancellationToken)
+  nameWithType: ConversationsExtensions.UpdateActivityAsync(IConversations, Activity, CancellationToken)
+  fullName: ConversationsExtensions.UpdateActivityAsync(IConversations, Activity, CancellationToken)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: UpdateActivityAsync(IConversations, String, String, Activity, CancellationToken)
+  nameWithType: ConversationsExtensions.UpdateActivityAsync(IConversations, String, String, Activity, CancellationToken)
+  fullName: ConversationsExtensions.UpdateActivityAsync(IConversations, String, String, Activity, CancellationToken)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachment(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Connector.AttachmentData)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: UploadAttachment(IConversations, String, AttachmentData)
+  nameWithType: ConversationsExtensions.UploadAttachment(IConversations, String, AttachmentData)
+  fullName: ConversationsExtensions.UploadAttachment(IConversations, String, AttachmentData)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachmentAsync(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Connector.AttachmentData,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: UploadAttachmentAsync(IConversations, String, AttachmentData, CancellationToken)
+  nameWithType: ConversationsExtensions.UploadAttachmentAsync(IConversations, String, AttachmentData, CancellationToken)
+  fullName: ConversationsExtensions.UploadAttachmentAsync(IConversations, String, AttachmentData, CancellationToken)

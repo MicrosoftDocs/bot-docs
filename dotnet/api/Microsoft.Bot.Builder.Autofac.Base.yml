@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Autofac.Base
+  id: Microsoft.Bot.Builder.Autofac.Base
+  children:
+  - Microsoft.Bot.Builder.Autofac.Base.Extensions
+  langs:
+  - csharp
+  name: Microsoft.Bot.Builder.Autofac.Base
+  nameWithType: Microsoft.Bot.Builder.Autofac.Base
+  fullName: Microsoft.Bot.Builder.Autofac.Base
+  type: Namespace
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/ns-Microsoft.Bot.Builder.Autofac.Base.xml
+references:
+- uid: Microsoft.Bot.Builder.Autofac.Base.Extensions
+  parent: Microsoft.Bot.Builder.Autofac.Base
+  isExternal: false
+  name: Extensions
+  nameWithType: Extensions
+  fullName: Microsoft.Bot.Builder.Autofac.Base.Extensions

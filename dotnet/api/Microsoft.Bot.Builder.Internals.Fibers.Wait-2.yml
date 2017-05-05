@@ -1,0 +1,1171 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  commentId: T:Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  id: Wait`2
+  children:
+  - Microsoft.Bot.Builder.Internals.Fibers.Wait`2.#ctor
+  - Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Equals(System.Object)
+  - Microsoft.Bot.Builder.Internals.Fibers.Wait`2.GetHashCode
+  - Microsoft.Bot.Builder.Internals.Fibers.Wait`2.ToString
+  - Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Dialogs#IAwaitable{T}#GetAwaiter
+  - Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter{T}#GetResult
+  - Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter{T}#IsCompleted
+  - Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IPost{T}#Post(`1)
+  - Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#Fail(System.Exception)
+  - Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#ItemType
+  - Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#Need
+  - Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#NeedType
+  - Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#Post``1(``0)
+  - Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#Rest
+  - Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait{C,T}#Wait(Microsoft.Bot.Builder.Internals.Fibers.Rest{`0,`1})
+  - Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait{C}#PollAsync(Microsoft.Bot.Builder.Internals.Fibers.IFiber{`0},`0,System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Internals.Fibers.Wait`2.System#ICloneable#Clone
+  - Microsoft.Bot.Builder.Internals.Fibers.Wait`2.System#IEquatable{Microsoft#Bot#Builder#Internals#Fibers#Wait{C,T}}#Equals(Microsoft.Bot.Builder.Internals.Fibers.Wait{`0,`1})
+  - Microsoft.Bot.Builder.Internals.Fibers.Wait`2.System#Runtime#CompilerServices#INotifyCompletion#OnCompleted(System.Action)
+  - Microsoft.Bot.Builder.Internals.Fibers.Wait`2.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  langs:
+  - csharp
+  name: Wait<C,T>
+  nameWithType: Wait<C,T>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.Wait<C,T>
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: 'public sealed class Wait<C,T> : ICloneable, IEquatable<Microsoft.Bot.Builder.Internals.Fibers.Wait<C,T>>, Microsoft.Bot.Builder.Dialogs.IAwaitable<T>, Microsoft.Bot.Builder.Internals.Fibers.IAwaiter<T>, Microsoft.Bot.Builder.Internals.Fibers.IItem<T>, Microsoft.Bot.Builder.Internals.Fibers.IPost<T>, Microsoft.Bot.Builder.Internals.Fibers.IWait<C,T>, Microsoft.Bot.Builder.Internals.Fibers.IWait<C>, System.Runtime.CompilerServices.INotifyCompletion, System.Runtime.Serialization.ISerializable'
+    typeParameters:
+    - id: C
+      description: To be added.
+    - id: T
+      description: To be added.
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Bot.Builder.Dialogs.IAwaitable{T}
+  - Microsoft.Bot.Builder.Internals.Fibers.IAwaiter{T}
+  - Microsoft.Bot.Builder.Internals.Fibers.IItem{T}
+  - Microsoft.Bot.Builder.Internals.Fibers.IPost{T}
+  - Microsoft.Bot.Builder.Internals.Fibers.IWait{C,T}
+  - Microsoft.Bot.Builder.Internals.Fibers.IWait{C}
+  - System.ICloneable
+  - System.IEquatable{Microsoft.Bot.Builder.Internals.Fibers.Wait{C,T}}
+  - System.Runtime.CompilerServices.INotifyCompletion
+  - System.Runtime.Serialization.ISerializable
+  inheritedMembers: []
+  extensionMethods:
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.CloneTyped``1(Microsoft.Bot.Builder.Internals.Fibers.IWait{``0})
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.ToTask``1(Microsoft.Bot.Builder.Dialogs.IAwaitable{``0})
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.ValidateNeed(Microsoft.Bot.Builder.Internals.Fibers.IWait,Microsoft.Bot.Builder.Internals.Fibers.Need)
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.#ctor
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Wait`2.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  langs:
+  - csharp
+  name: Wait<C,T>()
+  nameWithType: Wait<C,T>.Wait<C,T>()
+  fullName: Wait<C,T>.Wait<C,T>()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public Wait ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Equals(System.Object)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  langs:
+  - csharp
+  name: Equals(Object)
+  nameWithType: Wait<C,T>.Equals(Object)
+  fullName: Wait<C,T>.Equals(Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public override bool Equals (object other);
+    parameters:
+    - id: other
+      type: System.Object
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Equals*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.GetHashCode
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Wait`2.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  langs:
+  - csharp
+  name: GetHashCode()
+  nameWithType: Wait<C,T>.GetHashCode()
+  fullName: Wait<C,T>.GetHashCode()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public override int GetHashCode ();
+    parameters: []
+    return:
+      type: System.Int32
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.GetHashCode*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.ToString
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Wait`2.ToString
+  id: ToString
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  langs:
+  - csharp
+  name: ToString()
+  nameWithType: Wait<C,T>.ToString()
+  fullName: Wait<C,T>.ToString()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public override string ToString ();
+    parameters: []
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.ToString*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Dialogs#IAwaitable{T}#GetAwaiter
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Dialogs#IAwaitable<T>#GetAwaiter
+  id: Microsoft#Bot#Builder#Dialogs#IAwaitable{T}#GetAwaiter
+  isEii: true
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  langs:
+  - csharp
+  name: IAwaitable<T>.GetAwaiter()
+  nameWithType: Wait<C,T>.IAwaitable<T>.GetAwaiter()
+  fullName: Wait<C,T>.IAwaitable<T>.GetAwaiter()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: Microsoft.Bot.Builder.Internals.Fibers.IAwaiter<T> IAwaitable<T>.GetAwaiter ();
+    parameters: []
+    return:
+      type: Microsoft.Bot.Builder.Internals.Fibers.IAwaiter`1
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Dialogs#IAwaitable{T}#GetAwaiter*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter{T}#GetResult
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter<T>#GetResult
+  id: Microsoft#Bot#Builder#Internals#Fibers#IAwaiter{T}#GetResult
+  isEii: true
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  langs:
+  - csharp
+  name: IAwaiter<T>.GetResult()
+  nameWithType: Wait<C,T>.IAwaiter<T>.GetResult()
+  fullName: Wait<C,T>.IAwaiter<T>.GetResult()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: T IAwaiter<T>.GetResult ();
+    parameters: []
+    return:
+      type: T
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter{T}#GetResult*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter{T}#IsCompleted
+  commentId: P:Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter<T>#IsCompleted
+  id: Microsoft#Bot#Builder#Internals#Fibers#IAwaiter{T}#IsCompleted
+  isEii: true
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  langs:
+  - csharp
+  name: IAwaiter<T>.IsCompleted
+  nameWithType: Wait<C,T>.IAwaiter<T>.IsCompleted
+  fullName: Wait<C,T>.IAwaiter<T>.IsCompleted
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: bool Microsoft.Bot.Builder.Internals.Fibers.IAwaiter<T>.IsCompleted { get; }
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter{T}#IsCompleted*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IPost{T}#Post(`1)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IPost<T>#Post(`1)
+  id: Microsoft#Bot#Builder#Internals#Fibers#IPost{T}#Post(`1)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  langs:
+  - csharp
+  name: IPost<T>.Post(T)
+  nameWithType: Wait<C,T>.IPost<T>.Post(T)
+  fullName: Wait<C,T>.IPost<T>.Post(T)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: void IPost<T>.Post (T item);
+    parameters:
+    - id: item
+      type: T
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IPost{T}#Post*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#Fail(System.Exception)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#Fail(System.Exception)
+  id: Microsoft#Bot#Builder#Internals#Fibers#IWait#Fail(System.Exception)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  langs:
+  - csharp
+  name: IWait.Fail(Exception)
+  nameWithType: Wait<C,T>.IWait.Fail(Exception)
+  fullName: Wait<C,T>.IWait.Fail(Exception)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: void IWait.Fail (Exception fail);
+    parameters:
+    - id: fail
+      type: System.Exception
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#Fail*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#ItemType
+  commentId: P:Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#ItemType
+  id: Microsoft#Bot#Builder#Internals#Fibers#IWait#ItemType
+  isEii: true
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  langs:
+  - csharp
+  name: IWait.ItemType
+  nameWithType: Wait<C,T>.IWait.ItemType
+  fullName: Wait<C,T>.IWait.ItemType
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: Type Microsoft.Bot.Builder.Internals.Fibers.IWait.ItemType { get; }
+    return:
+      type: System.Type
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#ItemType*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#Need
+  commentId: P:Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#Need
+  id: Microsoft#Bot#Builder#Internals#Fibers#IWait#Need
+  isEii: true
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  langs:
+  - csharp
+  name: IWait.Need
+  nameWithType: Wait<C,T>.IWait.Need
+  fullName: Wait<C,T>.IWait.Need
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: Microsoft.Bot.Builder.Internals.Fibers.Need Microsoft.Bot.Builder.Internals.Fibers.IWait.Need { get; }
+    return:
+      type: Microsoft.Bot.Builder.Internals.Fibers.Need
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#Need*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#NeedType
+  commentId: P:Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#NeedType
+  id: Microsoft#Bot#Builder#Internals#Fibers#IWait#NeedType
+  isEii: true
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  langs:
+  - csharp
+  name: IWait.NeedType
+  nameWithType: Wait<C,T>.IWait.NeedType
+  fullName: Wait<C,T>.IWait.NeedType
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: Type Microsoft.Bot.Builder.Internals.Fibers.IWait.NeedType { get; }
+    return:
+      type: System.Type
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#NeedType*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#Post``1(``0)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#Post``1(``0)
+  id: Microsoft#Bot#Builder#Internals#Fibers#IWait#Post``1(``0)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  langs:
+  - csharp
+  name: IWait.Post<D>(D)
+  nameWithType: Wait<C,T>.IWait.Post<D>(D)
+  fullName: Wait<C,T>.IWait.Post<D>(D)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: void IWait.Post<D> (D item);
+    parameters:
+    - id: item
+      type: D
+      description: To be added.
+    typeParameters:
+    - id: D
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#Post``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#Rest
+  commentId: P:Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#Rest
+  id: Microsoft#Bot#Builder#Internals#Fibers#IWait#Rest
+  isEii: true
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  langs:
+  - csharp
+  name: IWait.Rest
+  nameWithType: Wait<C,T>.IWait.Rest
+  fullName: Wait<C,T>.IWait.Rest
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: Delegate Microsoft.Bot.Builder.Internals.Fibers.IWait.Rest { get; }
+    return:
+      type: System.Delegate
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#Rest*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait{C,T}#Wait(Microsoft.Bot.Builder.Internals.Fibers.Rest{`0,`1})
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait<C,T>#Wait(Microsoft.Bot.Builder.Internals.Fibers.Rest{`0,`1})
+  id: Microsoft#Bot#Builder#Internals#Fibers#IWait{C,T}#Wait(Microsoft.Bot.Builder.Internals.Fibers.Rest{`0,`1})
+  isEii: true
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  langs:
+  - csharp
+  name: IWait<C,T>.Wait(Rest<C,T>)
+  nameWithType: Wait<C,T>.IWait<C,T>.Wait(Rest<C,T>)
+  fullName: Wait<C,T>.IWait<C,T>.Wait(Rest<C,T>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: void IWait<C,T>.Wait (Microsoft.Bot.Builder.Internals.Fibers.Rest<C,T> rest);
+    parameters:
+    - id: rest
+      type: Microsoft.Bot.Builder.Internals.Fibers.Rest`2
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait{C,T}#Wait*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait{C}#PollAsync(Microsoft.Bot.Builder.Internals.Fibers.IFiber{`0},`0,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait<C>#PollAsync(Microsoft.Bot.Builder.Internals.Fibers.IFiber{`0},`0,System.Threading.CancellationToken)
+  id: Microsoft#Bot#Builder#Internals#Fibers#IWait{C}#PollAsync(Microsoft.Bot.Builder.Internals.Fibers.IFiber{`0},`0,System.Threading.CancellationToken)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  langs:
+  - csharp
+  name: IWait<C>.PollAsync(IFiber<C>, C, CancellationToken)
+  nameWithType: Wait<C,T>.IWait<C>.PollAsync(IFiber<C>, C, CancellationToken)
+  fullName: Wait<C,T>.IWait<C>.PollAsync(IFiber<C>, C, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Internals.Fibers.Wait`2/<Microsoft-Bot-Builder-Internals-Fibers-IWait<C>-PollAsync>d__19))]
+
+      System.Threading.Tasks.Task<Microsoft.Bot.Builder.Internals.Fibers.IWait<C>> IWait<C>.PollAsync (Microsoft.Bot.Builder.Internals.Fibers.IFiber<C> fiber, C context, System.Threading.CancellationToken token);
+    parameters:
+    - id: fiber
+      type: Microsoft.Bot.Builder.Internals.Fibers.IFiber`1
+      description: To be added.
+    - id: context
+      type: C
+      description: To be added.
+    - id: token
+      type: System.Threading.CancellationToken
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Builder.Internals.Fibers.IWait{C}}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait{C}#PollAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.System#ICloneable#Clone
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Wait`2.System#ICloneable#Clone
+  id: System#ICloneable#Clone
+  isEii: true
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  langs:
+  - csharp
+  name: ICloneable.Clone()
+  nameWithType: Wait<C,T>.ICloneable.Clone()
+  fullName: Wait<C,T>.ICloneable.Clone()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: object ICloneable.Clone ();
+    parameters: []
+    return:
+      type: System.Object
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.System#ICloneable#Clone*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.System#IEquatable{Microsoft#Bot#Builder#Internals#Fibers#Wait{C,T}}#Equals(Microsoft.Bot.Builder.Internals.Fibers.Wait{`0,`1})
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Wait`2.System#IEquatable<Microsoft#Bot#Builder#Internals#Fibers#Wait<C,T>>#Equals(Microsoft.Bot.Builder.Internals.Fibers.Wait{`0,`1})
+  id: System#IEquatable{Microsoft#Bot#Builder#Internals#Fibers#Wait{C,T}}#Equals(Microsoft.Bot.Builder.Internals.Fibers.Wait{`0,`1})
+  isEii: true
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  langs:
+  - csharp
+  name: IEquatable<Wait<C,T>>.Equals(Wait<C,T>)
+  nameWithType: Wait<C,T>.IEquatable<Wait<C,T>>.Equals(Wait<C,T>)
+  fullName: Wait<C,T>.IEquatable<Wait<C,T>>.Equals(Wait<C,T>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: bool IEquatable<Wait<C,T>>.Equals (Microsoft.Bot.Builder.Internals.Fibers.Wait<C,T> other);
+    parameters:
+    - id: other
+      type: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.System#IEquatable{Microsoft#Bot#Builder#Internals#Fibers#Wait{C,T}}#Equals*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.System#Runtime#CompilerServices#INotifyCompletion#OnCompleted(System.Action)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Wait`2.System#Runtime#CompilerServices#INotifyCompletion#OnCompleted(System.Action)
+  id: System#Runtime#CompilerServices#INotifyCompletion#OnCompleted(System.Action)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  langs:
+  - csharp
+  name: INotifyCompletion.OnCompleted(Action)
+  nameWithType: Wait<C,T>.INotifyCompletion.OnCompleted(Action)
+  fullName: Wait<C,T>.INotifyCompletion.OnCompleted(Action)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: void INotifyCompletion.OnCompleted (Action continuation);
+    parameters:
+    - id: continuation
+      type: System.Action
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.System#Runtime#CompilerServices#INotifyCompletion#OnCompleted*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Wait`2.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  langs:
+  - csharp
+  name: ISerializable.GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: Wait<C,T>.ISerializable.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: Wait<C,T>.ISerializable.GetObjectData(SerializationInfo, StreamingContext)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: To be added.
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.System#Runtime#Serialization#ISerializable#GetObjectData*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.#ctor
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: Wait<C,T>()
+  nameWithType: Wait<C,T>.Wait<C,T>()
+  fullName: Wait<C,T>.Wait<C,T>()
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Equals(System.Object)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: Equals(Object)
+  nameWithType: Wait<C,T>.Equals(Object)
+  fullName: Wait<C,T>.Equals(Object)
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.GetHashCode
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: GetHashCode()
+  nameWithType: Wait<C,T>.GetHashCode()
+  fullName: Wait<C,T>.GetHashCode()
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.ToString
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: ToString()
+  nameWithType: Wait<C,T>.ToString()
+  fullName: Wait<C,T>.ToString()
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Dialogs#IAwaitable{T}#GetAwaiter
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: IAwaitable<T>.GetAwaiter()
+  nameWithType: Wait<C,T>.IAwaitable<T>.GetAwaiter()
+  fullName: Wait<C,T>.IAwaitable<T>.GetAwaiter()
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IAwaiter`1
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: IAwaiter<T>
+  nameWithType: IAwaiter<T>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IAwaiter<T>
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter{T}#GetResult
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: IAwaiter<T>.GetResult()
+  nameWithType: Wait<C,T>.IAwaiter<T>.GetResult()
+  fullName: Wait<C,T>.IAwaiter<T>.GetResult()
+- uid: T
+  isExternal: true
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter{T}#IsCompleted
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: IAwaiter<T>.IsCompleted
+  nameWithType: Wait<C,T>.IAwaiter<T>.IsCompleted
+  fullName: Wait<C,T>.IAwaiter<T>.IsCompleted
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IPost{T}#Post(`1)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: IPost<T>.Post(T)
+  nameWithType: Wait<C,T>.IPost<T>.Post(T)
+  fullName: Wait<C,T>.IPost<T>.Post(T)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#Fail(System.Exception)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: IWait.Fail(Exception)
+  nameWithType: Wait<C,T>.IWait.Fail(Exception)
+  fullName: Wait<C,T>.IWait.Fail(Exception)
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#ItemType
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: IWait.ItemType
+  nameWithType: Wait<C,T>.IWait.ItemType
+  fullName: Wait<C,T>.IWait.ItemType
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#Need
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: IWait.Need
+  nameWithType: Wait<C,T>.IWait.Need
+  fullName: Wait<C,T>.IWait.Need
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Need
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: Need
+  nameWithType: Need
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.Need
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#NeedType
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: IWait.NeedType
+  nameWithType: Wait<C,T>.IWait.NeedType
+  fullName: Wait<C,T>.IWait.NeedType
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#Post``1(``0)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: IWait.Post<D>(D)
+  nameWithType: Wait<C,T>.IWait.Post<D>(D)
+  fullName: Wait<C,T>.IWait.Post<D>(D)
+- uid: D
+  isExternal: true
+  name: D
+  nameWithType: D
+  fullName: D
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#Rest
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: IWait.Rest
+  nameWithType: Wait<C,T>.IWait.Rest
+  fullName: Wait<C,T>.IWait.Rest
+- uid: System.Delegate
+  parent: System
+  isExternal: true
+  name: Delegate
+  nameWithType: Delegate
+  fullName: System.Delegate
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait{C,T}#Wait(Microsoft.Bot.Builder.Internals.Fibers.Rest{`0,`1})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: IWait<C,T>.Wait(Rest<C,T>)
+  nameWithType: Wait<C,T>.IWait<C,T>.Wait(Rest<C,T>)
+  fullName: Wait<C,T>.IWait<C,T>.Wait(Rest<C,T>)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Rest`2
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: Rest<C,T>
+  nameWithType: Rest<C,T>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.Rest<C,T>
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait{C}#PollAsync(Microsoft.Bot.Builder.Internals.Fibers.IFiber{`0},`0,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: IWait<C>.PollAsync(IFiber<C>, C, CancellationToken)
+  nameWithType: Wait<C,T>.IWait<C>.PollAsync(IFiber<C>, C, CancellationToken)
+  fullName: Wait<C,T>.IWait<C>.PollAsync(IFiber<C>, C, CancellationToken)
+- uid: System.Threading.Tasks.Task`1
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IWait`1
+  name: IWait<C>
+  nameWithType: IWait<C>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IWait<C>
+- uid: C
+  name: C
+  nameWithType: C
+  fullName: C
+- uid: System.Threading.Tasks.Task{Microsoft.Bot.Builder.Internals.Fibers.IWait{C}}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<IWait<C>>
+  nameWithType: Task<IWait<C>>
+  fullName: System.Threading.Tasks.Task<Microsoft.Bot.Builder.Internals.Fibers.IWait<C>>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.IWait`1
+    name: IWait
+    nameWithType: IWait
+    fullName: Microsoft.Bot.Builder.Internals.Fibers.IWait
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: C
+    name: C
+    nameWithType: C
+    fullName: C
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IFiber`1
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: IFiber<C>
+  nameWithType: IFiber<C>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IFiber<C>
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.System#ICloneable#Clone
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: ICloneable.Clone()
+  nameWithType: Wait<C,T>.ICloneable.Clone()
+  fullName: Wait<C,T>.ICloneable.Clone()
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.System#IEquatable{Microsoft#Bot#Builder#Internals#Fibers#Wait{C,T}}#Equals(Microsoft.Bot.Builder.Internals.Fibers.Wait{`0,`1})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: IEquatable<Wait<C,T>>.Equals(Wait<C,T>)
+  nameWithType: Wait<C,T>.IEquatable<Wait<C,T>>.Equals(Wait<C,T>)
+  fullName: Wait<C,T>.IEquatable<Wait<C,T>>.Equals(Wait<C,T>)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: Wait<C,T>
+  nameWithType: Wait<C,T>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.Wait<C,T>
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.System#Runtime#CompilerServices#INotifyCompletion#OnCompleted(System.Action)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: INotifyCompletion.OnCompleted(Action)
+  nameWithType: Wait<C,T>.INotifyCompletion.OnCompleted(Action)
+  fullName: Wait<C,T>.INotifyCompletion.OnCompleted(Action)
+- uid: System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: ISerializable.GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: Wait<C,T>.ISerializable.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: Wait<C,T>.ISerializable.GetObjectData(SerializationInfo, StreamingContext)
+- uid: System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+- uid: System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.#ctor*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: Wait<C,T>
+  nameWithType: Wait<C,T>.Wait<C,T>
+  fullName: Wait<C,T>.Wait<C,T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Equals*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: Equals
+  nameWithType: Wait<C,T>.Equals
+  fullName: Wait<C,T>.Equals
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.GetHashCode*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: GetHashCode
+  nameWithType: Wait<C,T>.GetHashCode
+  fullName: Wait<C,T>.GetHashCode
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.ToString*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: ToString
+  nameWithType: Wait<C,T>.ToString
+  fullName: Wait<C,T>.ToString
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Dialogs#IAwaitable{T}#GetAwaiter*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: Microsoft.Bot.Builder.Dialogs.IAwaitable<T>.GetAwaiter
+  nameWithType: Wait<C,T>.Microsoft.Bot.Builder.Dialogs.IAwaitable<T>.GetAwaiter
+  fullName: Wait<C,T>.Microsoft.Bot.Builder.Dialogs.IAwaitable<T>.GetAwaiter
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter{T}#GetResult*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: Microsoft.Bot.Builder.Internals.Fibers.IAwaiter<T>.GetResult
+  nameWithType: Wait<C,T>.Microsoft.Bot.Builder.Internals.Fibers.IAwaiter<T>.GetResult
+  fullName: Wait<C,T>.Microsoft.Bot.Builder.Internals.Fibers.IAwaiter<T>.GetResult
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter{T}#IsCompleted*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: Microsoft.Bot.Builder.Internals.Fibers.IAwaiter<T>.IsCompleted
+  nameWithType: Wait<C,T>.Microsoft.Bot.Builder.Internals.Fibers.IAwaiter<T>.IsCompleted
+  fullName: Wait<C,T>.Microsoft.Bot.Builder.Internals.Fibers.IAwaiter<T>.IsCompleted
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IPost{T}#Post*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: Microsoft.Bot.Builder.Internals.Fibers.IPost<T>.Post
+  nameWithType: Wait<C,T>.Microsoft.Bot.Builder.Internals.Fibers.IPost<T>.Post
+  fullName: Wait<C,T>.Microsoft.Bot.Builder.Internals.Fibers.IPost<T>.Post
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#Fail*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: Microsoft.Bot.Builder.Internals.Fibers.IWait.Fail
+  nameWithType: Wait<C,T>.Microsoft.Bot.Builder.Internals.Fibers.IWait.Fail
+  fullName: Wait<C,T>.Microsoft.Bot.Builder.Internals.Fibers.IWait.Fail
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#ItemType*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: Microsoft.Bot.Builder.Internals.Fibers.IWait.ItemType
+  nameWithType: Wait<C,T>.Microsoft.Bot.Builder.Internals.Fibers.IWait.ItemType
+  fullName: Wait<C,T>.Microsoft.Bot.Builder.Internals.Fibers.IWait.ItemType
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#Need*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: Microsoft.Bot.Builder.Internals.Fibers.IWait.Need
+  nameWithType: Wait<C,T>.Microsoft.Bot.Builder.Internals.Fibers.IWait.Need
+  fullName: Wait<C,T>.Microsoft.Bot.Builder.Internals.Fibers.IWait.Need
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#NeedType*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: Microsoft.Bot.Builder.Internals.Fibers.IWait.NeedType
+  nameWithType: Wait<C,T>.Microsoft.Bot.Builder.Internals.Fibers.IWait.NeedType
+  fullName: Wait<C,T>.Microsoft.Bot.Builder.Internals.Fibers.IWait.NeedType
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#Post``1*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: Microsoft.Bot.Builder.Internals.Fibers.IWait.Post<D>
+  nameWithType: Wait<C,T>.Microsoft.Bot.Builder.Internals.Fibers.IWait.Post<D>
+  fullName: Wait<C,T>.Microsoft.Bot.Builder.Internals.Fibers.IWait.Post<D>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#Rest*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: Microsoft.Bot.Builder.Internals.Fibers.IWait.Rest
+  nameWithType: Wait<C,T>.Microsoft.Bot.Builder.Internals.Fibers.IWait.Rest
+  fullName: Wait<C,T>.Microsoft.Bot.Builder.Internals.Fibers.IWait.Rest
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait{C,T}#Wait*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: Microsoft.Bot.Builder.Internals.Fibers.IWait<C,T>.Wait
+  nameWithType: Wait<C,T>.Microsoft.Bot.Builder.Internals.Fibers.IWait<C,T>.Wait
+  fullName: Wait<C,T>.Microsoft.Bot.Builder.Internals.Fibers.IWait<C,T>.Wait
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait{C}#PollAsync*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: Microsoft.Bot.Builder.Internals.Fibers.IWait<C>.PollAsync
+  nameWithType: Wait<C,T>.Microsoft.Bot.Builder.Internals.Fibers.IWait<C>.PollAsync
+  fullName: Wait<C,T>.Microsoft.Bot.Builder.Internals.Fibers.IWait<C>.PollAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.System#ICloneable#Clone*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: System.ICloneable.Clone
+  nameWithType: Wait<C,T>.System.ICloneable.Clone
+  fullName: Wait<C,T>.System.ICloneable.Clone
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.System#IEquatable{Microsoft#Bot#Builder#Internals#Fibers#Wait{C,T}}#Equals*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: System.IEquatable<Microsoft.Bot.Builder.Internals.Fibers.Wait<C,T>>.Equals
+  nameWithType: Wait<C,T>.System.IEquatable<Microsoft.Bot.Builder.Internals.Fibers.Wait<C,T>>.Equals
+  fullName: Wait<C,T>.System.IEquatable<Microsoft.Bot.Builder.Internals.Fibers.Wait<C,T>>.Equals
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.System#Runtime#CompilerServices#INotifyCompletion#OnCompleted*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: System.Runtime.CompilerServices.INotifyCompletion.OnCompleted
+  nameWithType: Wait<C,T>.System.Runtime.CompilerServices.INotifyCompletion.OnCompleted
+  fullName: Wait<C,T>.System.Runtime.CompilerServices.INotifyCompletion.OnCompleted
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2.System#Runtime#Serialization#ISerializable#GetObjectData*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+  isExternal: false
+  name: System.Runtime.Serialization.ISerializable.GetObjectData
+  nameWithType: Wait<C,T>.System.Runtime.Serialization.ISerializable.GetObjectData
+  fullName: Wait<C,T>.System.Runtime.Serialization.ISerializable.GetObjectData
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Wait`2.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.CloneTyped``1(Microsoft.Bot.Builder.Internals.Fibers.IWait{``0})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: CloneTyped<C>(IWait<C>)
+  nameWithType: Extensions.CloneTyped<C>(IWait<C>)
+  fullName: Extensions.CloneTyped<C>(IWait<C>)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.ToTask``1(Microsoft.Bot.Builder.Dialogs.IAwaitable{``0})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: ToTask<T>(IAwaitable<T>)
+  nameWithType: Extensions.ToTask<T>(IAwaitable<T>)
+  fullName: Extensions.ToTask<T>(IAwaitable<T>)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.ValidateNeed(Microsoft.Bot.Builder.Internals.Fibers.IWait,Microsoft.Bot.Builder.Internals.Fibers.Need)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: ValidateNeed(IWait, Need)
+  nameWithType: Extensions.ValidateNeed(IWait, Need)
+  fullName: Extensions.ValidateNeed(IWait, Need)
+- uid: Microsoft.Bot.Builder.Dialogs.IAwaitable`1
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: IAwaitable<T>
+  nameWithType: IAwaitable<T>
+  fullName: Microsoft.Bot.Builder.Dialogs.IAwaitable<T>
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IItem`1
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: IItem<T>
+  nameWithType: IItem<T>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IItem<T>
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IPost`1
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: IPost<T>
+  nameWithType: IPost<T>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IPost<T>
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IWait`2
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: IWait<C,T>
+  nameWithType: IWait<C,T>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IWait<C,T>
+- uid: System.ICloneable
+  parent: System
+  isExternal: true
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.IEquatable`1
+  name: IEquatable
+  nameWithType: IEquatable
+  fullName: System.IEquatable
+- uid: System.IEquatable{Microsoft.Bot.Builder.Internals.Fibers.Wait{C,T}}
+  parent: System
+  isExternal: true
+  name: IEquatable<Wait<C,T>>
+  nameWithType: IEquatable<Wait<C,T>>
+  fullName: System.IEquatable<Microsoft.Bot.Builder.Internals.Fibers.Wait<C,T>>
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Wait`2
+    name: Wait
+    nameWithType: Wait
+    fullName: Microsoft.Bot.Builder.Internals.Fibers.Wait
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: C
+    name: C
+    nameWithType: C
+    fullName: C
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T
+    name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Runtime.CompilerServices.INotifyCompletion
+  parent: System.Runtime.CompilerServices
+  isExternal: true
+  name: INotifyCompletion
+  nameWithType: INotifyCompletion
+  fullName: System.Runtime.CompilerServices.INotifyCompletion
+- uid: System.Runtime.Serialization.ISerializable
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: ISerializable
+  nameWithType: ISerializable
+  fullName: System.Runtime.Serialization.ISerializable

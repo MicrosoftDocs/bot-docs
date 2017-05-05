@@ -1,0 +1,550 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  commentId: T:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  id: IDialogStack
+  children:
+  - Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Call``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})
+  - Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Done``1(``0)
+  - Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Fail(System.Exception)
+  - Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Forward``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},``1,System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Frames
+  - Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Post``1(``0,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})
+  - Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Reset
+  - Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Wait``1(Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})
+  langs:
+  - csharp
+  name: IDialogStack
+  nameWithType: IDialogStack
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: The stack of dialogs in the conversational process.
+  syntax:
+    content: public interface IDialogStack
+  derivedClasses:
+  - Microsoft.Bot.Builder.Dialogs.IDialogContext
+  - Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask
+  implements: []
+  extensionMethods:
+  - Microsoft.Bot.Builder.Dialogs.Extensions.Forward``1(Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack,Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Dialogs.Extensions.Wait(Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack,Microsoft.Bot.Builder.Dialogs.ResumeAfter{Microsoft.Bot.Connector.IMessageActivity})
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IDialogStack.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Call``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Call``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})
+  id: Call``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  langs:
+  - csharp
+  name: Call<R>(IDialog<R>, ResumeAfter<R>)
+  nameWithType: IDialogStack.Call<R>(IDialog<R>, ResumeAfter<R>)
+  fullName: IDialogStack.Call<R>(IDialog<R>, ResumeAfter<R>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: Call a child dialog and add it to the top of the stack.
+  syntax:
+    content: public void Call<R> (Microsoft.Bot.Builder.Dialogs.IDialog<R> child, Microsoft.Bot.Builder.Dialogs.ResumeAfter<R> resume);
+    parameters:
+    - id: child
+      type: Microsoft.Bot.Builder.Dialogs.IDialog{R}
+      description: The child dialog.
+    - id: resume
+      type: Microsoft.Bot.Builder.Dialogs.ResumeAfter{R}
+      description: The method to resume when the child dialog has completed.
+    typeParameters:
+    - id: R
+      description: The type of result expected from the child dialog.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Call``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IDialogStack.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Done``1(``0)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Done``1(``0)
+  id: Done``1(``0)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  langs:
+  - csharp
+  name: Done<R>(R)
+  nameWithType: IDialogStack.Done<R>(R)
+  fullName: IDialogStack.Done<R>(R)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: Complete the current dialog and return a result to the parent dialog.
+  syntax:
+    content: public void Done<R> (R value);
+    parameters:
+    - id: value
+      type: R
+      description: The value of the result.
+    typeParameters:
+    - id: R
+      description: The type of the result dialog.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Done``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IDialogStack.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Fail(System.Exception)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Fail(System.Exception)
+  id: Fail(System.Exception)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  langs:
+  - csharp
+  name: Fail(Exception)
+  nameWithType: IDialogStack.Fail(Exception)
+  fullName: IDialogStack.Fail(Exception)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: Fail the current dialog and return an exception to the parent dialog.
+  syntax:
+    content: public void Fail (Exception error);
+    parameters:
+    - id: error
+      type: System.Exception
+      description: The error.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Fail*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IDialogStack.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Forward``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},``1,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Forward``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},``1,System.Threading.CancellationToken)
+  id: Forward``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},``1,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  langs:
+  - csharp
+  name: Forward<R,T>(IDialog<R>, ResumeAfter<R>, T, CancellationToken)
+  nameWithType: IDialogStack.Forward<R,T>(IDialog<R>, ResumeAfter<R>, T, CancellationToken)
+  fullName: IDialogStack.Forward<R,T>(IDialog<R>, ResumeAfter<R>, T, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: Call a child dialog, add it to the top of the stack and post the item to the child dialog.
+  syntax:
+    content: public System.Threading.Tasks.Task Forward<R,T> (Microsoft.Bot.Builder.Dialogs.IDialog<R> child, Microsoft.Bot.Builder.Dialogs.ResumeAfter<R> resume, T item, System.Threading.CancellationToken token);
+    parameters:
+    - id: child
+      type: Microsoft.Bot.Builder.Dialogs.IDialog{R}
+      description: The child dialog.
+    - id: resume
+      type: Microsoft.Bot.Builder.Dialogs.ResumeAfter{R}
+      description: The method to resume when the child dialog has completed.
+    - id: item
+      type: T
+      description: The item that will be posted to child dialog.
+    - id: token
+      type: System.Threading.CancellationToken
+      description: A cancellation token.
+    typeParameters:
+    - id: R
+      description: The type of result expected from the child dialog.
+    - id: T
+      description: The type of the item posted to child dialog.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the Forward operation.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Forward``2*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IDialogStack.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Frames
+  commentId: P:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Frames
+  id: Frames
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  langs:
+  - csharp
+  name: Frames
+  nameWithType: IDialogStack.Frames
+  fullName: IDialogStack.Frames
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: The dialog frames active on the stack.
+  syntax:
+    content: public System.Collections.Generic.IReadOnlyList<Delegate> Frames { get; }
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.Delegate}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Frames*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IDialogStack.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Post``1(``0,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Post``1(``0,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})
+  id: Post``1(``0,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  langs:
+  - csharp
+  name: Post<E>(E, ResumeAfter<E>)
+  nameWithType: IDialogStack.Post<E>(E, ResumeAfter<E>)
+  fullName: IDialogStack.Post<E>(E, ResumeAfter<E>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: Post an internal event to the queue.
+  syntax:
+    content: public void Post<E> (E event, Microsoft.Bot.Builder.Dialogs.ResumeAfter<E> resume);
+    parameters:
+    - id: event
+      type: E
+      description: The event to post to the queue.
+    - id: resume
+      type: Microsoft.Bot.Builder.Dialogs.ResumeAfter{E}
+      description: The method to resume when the event has been delivered.
+    typeParameters:
+    - id: E
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Post``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IDialogStack.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Reset
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Reset
+  id: Reset
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  langs:
+  - csharp
+  name: Reset()
+  nameWithType: IDialogStack.Reset()
+  fullName: IDialogStack.Reset()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: Resets the stack.
+  syntax:
+    content: public void Reset ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Reset*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IDialogStack.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Wait``1(Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Wait``1(Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})
+  id: Wait``1(Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  langs:
+  - csharp
+  name: Wait<R>(ResumeAfter<R>)
+  nameWithType: IDialogStack.Wait<R>(ResumeAfter<R>)
+  fullName: IDialogStack.Wait<R>(ResumeAfter<R>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: Suspend the current dialog until an external event has been sent to the bot.
+  syntax:
+    content: public void Wait<R> (Microsoft.Bot.Builder.Dialogs.ResumeAfter<R> resume);
+    parameters:
+    - id: resume
+      type: Microsoft.Bot.Builder.Dialogs.ResumeAfter{R}
+      description: The method to resume when the event has been received.
+    typeParameters:
+    - id: R
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Wait``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IDialogStack.xml
+references:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Call``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  isExternal: false
+  name: Call<R>(IDialog<R>, ResumeAfter<R>)
+  nameWithType: IDialogStack.Call<R>(IDialog<R>, ResumeAfter<R>)
+  fullName: IDialogStack.Call<R>(IDialog<R>, ResumeAfter<R>)
+- uid: Microsoft.Bot.Builder.Dialogs.IDialog`1
+  name: IDialog<TResult>
+  nameWithType: IDialog<TResult>
+  fullName: Microsoft.Bot.Builder.Dialogs.IDialog<TResult>
+- uid: R
+  name: R
+  nameWithType: R
+  fullName: R
+- uid: Microsoft.Bot.Builder.Dialogs.IDialog{R}
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: IDialog<R>
+  nameWithType: IDialog<R>
+  fullName: Microsoft.Bot.Builder.Dialogs.IDialog<R>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Dialogs.IDialog`1
+    name: IDialog
+    nameWithType: IDialog
+    fullName: Microsoft.Bot.Builder.Dialogs.IDialog
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R
+    name: R
+    nameWithType: R
+    fullName: R
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.ResumeAfter`1
+  name: ResumeAfter<T>
+  nameWithType: ResumeAfter<T>
+  fullName: Microsoft.Bot.Builder.Dialogs.ResumeAfter<T>
+- uid: Microsoft.Bot.Builder.Dialogs.ResumeAfter{R}
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: ResumeAfter<R>
+  nameWithType: ResumeAfter<R>
+  fullName: Microsoft.Bot.Builder.Dialogs.ResumeAfter<R>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Dialogs.ResumeAfter`1
+    name: ResumeAfter
+    nameWithType: ResumeAfter
+    fullName: Microsoft.Bot.Builder.Dialogs.ResumeAfter
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R
+    name: R
+    nameWithType: R
+    fullName: R
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Done``1(``0)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  isExternal: false
+  name: Done<R>(R)
+  nameWithType: IDialogStack.Done<R>(R)
+  fullName: IDialogStack.Done<R>(R)
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Fail(System.Exception)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  isExternal: false
+  name: Fail(Exception)
+  nameWithType: IDialogStack.Fail(Exception)
+  fullName: IDialogStack.Fail(Exception)
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Forward``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},``1,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  isExternal: false
+  name: Forward<R,T>(IDialog<R>, ResumeAfter<R>, T, CancellationToken)
+  nameWithType: IDialogStack.Forward<R,T>(IDialog<R>, ResumeAfter<R>, T, CancellationToken)
+  fullName: IDialogStack.Forward<R,T>(IDialog<R>, ResumeAfter<R>, T, CancellationToken)
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: T
+  isExternal: true
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Frames
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  isExternal: false
+  name: Frames
+  nameWithType: IDialogStack.Frames
+  fullName: IDialogStack.Frames
+- uid: System.Collections.Generic.IReadOnlyList`1
+  name: IReadOnlyList
+  nameWithType: IReadOnlyList
+  fullName: System.Collections.Generic.IReadOnlyList
+- uid: System.Delegate
+  name: Delegate
+  nameWithType: Delegate
+  fullName: System.Delegate
+- uid: System.Collections.Generic.IReadOnlyList{System.Delegate}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IReadOnlyList<Delegate>
+  nameWithType: IReadOnlyList<Delegate>
+  fullName: System.Collections.Generic.IReadOnlyList<System.Delegate>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Delegate
+    name: Delegate
+    nameWithType: Delegate
+    fullName: System.Delegate
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Post``1(``0,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  isExternal: false
+  name: Post<E>(E, ResumeAfter<E>)
+  nameWithType: IDialogStack.Post<E>(E, ResumeAfter<E>)
+  fullName: IDialogStack.Post<E>(E, ResumeAfter<E>)
+- uid: E
+  isExternal: true
+  name: E
+  nameWithType: E
+  fullName: E
+- uid: Microsoft.Bot.Builder.Dialogs.ResumeAfter{E}
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: ResumeAfter<E>
+  nameWithType: ResumeAfter<E>
+  fullName: Microsoft.Bot.Builder.Dialogs.ResumeAfter<E>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Dialogs.ResumeAfter`1
+    name: ResumeAfter
+    nameWithType: ResumeAfter
+    fullName: Microsoft.Bot.Builder.Dialogs.ResumeAfter
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: E
+    name: E
+    nameWithType: E
+    fullName: E
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Reset
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  isExternal: false
+  name: Reset()
+  nameWithType: IDialogStack.Reset()
+  fullName: IDialogStack.Reset()
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Wait``1(Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  isExternal: false
+  name: Wait<R>(ResumeAfter<R>)
+  nameWithType: IDialogStack.Wait<R>(ResumeAfter<R>)
+  fullName: IDialogStack.Wait<R>(ResumeAfter<R>)
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Call``1*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  isExternal: false
+  name: Call<R>
+  nameWithType: IDialogStack.Call<R>
+  fullName: IDialogStack.Call<R>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IDialogStack.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Done``1*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  isExternal: false
+  name: Done<R>
+  nameWithType: IDialogStack.Done<R>
+  fullName: IDialogStack.Done<R>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IDialogStack.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Fail*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  isExternal: false
+  name: Fail
+  nameWithType: IDialogStack.Fail
+  fullName: IDialogStack.Fail
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IDialogStack.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Forward``2*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  isExternal: false
+  name: Forward<R,T>
+  nameWithType: IDialogStack.Forward<R,T>
+  fullName: IDialogStack.Forward<R,T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IDialogStack.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Frames*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  isExternal: false
+  name: Frames
+  nameWithType: IDialogStack.Frames
+  fullName: IDialogStack.Frames
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IDialogStack.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Post``1*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  isExternal: false
+  name: Post<E>
+  nameWithType: IDialogStack.Post<E>
+  fullName: IDialogStack.Post<E>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IDialogStack.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Reset*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  isExternal: false
+  name: Reset
+  nameWithType: IDialogStack.Reset
+  fullName: IDialogStack.Reset
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IDialogStack.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Wait``1*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack
+  isExternal: false
+  name: Wait<R>
+  nameWithType: IDialogStack.Wait<R>
+  fullName: IDialogStack.Wait<R>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/IDialogStack.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Extensions.Forward``1(Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack,Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Extensions
+  isExternal: false
+  name: Forward<R>(IDialogStack, IDialog<R>, ResumeAfter<R>, IMessageActivity, CancellationToken)
+  nameWithType: Extensions.Forward<R>(IDialogStack, IDialog<R>, ResumeAfter<R>, IMessageActivity, CancellationToken)
+  fullName: Extensions.Forward<R>(IDialogStack, IDialog<R>, ResumeAfter<R>, IMessageActivity, CancellationToken)
+- uid: Microsoft.Bot.Builder.Dialogs.Extensions.Wait(Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack,Microsoft.Bot.Builder.Dialogs.ResumeAfter{Microsoft.Bot.Connector.IMessageActivity})
+  parent: Microsoft.Bot.Builder.Dialogs.Extensions
+  isExternal: false
+  name: Wait(IDialogStack, ResumeAfter<IMessageActivity>)
+  nameWithType: Extensions.Wait(IDialogStack, ResumeAfter<IMessageActivity>)
+  fullName: Extensions.Wait(IDialogStack, ResumeAfter<IMessageActivity>)

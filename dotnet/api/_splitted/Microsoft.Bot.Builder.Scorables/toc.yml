@@ -1,0 +1,49 @@
+- uid: Microsoft.Bot.Builder.Scorables
+  name: Microsoft.Bot.Builder.Scorables
+  items:
+  - uid: Microsoft.Bot.Builder.Scorables.Actions
+    name: Actions
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.Token
+    name: Actions.WhereScorable<Score>.Token
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1
+    name: Actions.WhereScorable<Score>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Dispatcher
+    name: Dispatcher
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.EntityAttribute
+    name: EntityAttribute
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.IDispatcher
+    name: IDispatcher
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.IScorable`2
+    name: IScorable<Item,Score>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.MethodBindAttribute
+    name: MethodBindAttribute
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.RegexPatternAttribute
+    name: RegexPatternAttribute
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Scorable
+    name: Scorable
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.ScorableGroupAttribute
+    name: ScorableGroupAttribute
+    version:
+    - botbuilder-3.5.5
+  version:
+  - botbuilder-3.5.5

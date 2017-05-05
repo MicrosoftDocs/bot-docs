@@ -1,0 +1,9 @@
+- uid: Microsoft.Bot.Builder.Autofac.Base
+  name: Microsoft.Bot.Builder.Autofac.Base
+  items:
+  - uid: Microsoft.Bot.Builder.Autofac.Base.Extensions
+    name: Extensions
+    version:
+    - botbuilder-3.5.5
+  version:
+  - botbuilder-3.5.5

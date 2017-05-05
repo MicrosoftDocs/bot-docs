@@ -1,0 +1,347 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.BasicAuthentication
+  commentId: T:Microsoft.Bot.Connector.BasicAuthentication
+  id: BasicAuthentication
+  children:
+  - Microsoft.Bot.Connector.BasicAuthentication.#ctor
+  - Microsoft.Bot.Connector.BasicAuthentication.#ctor(System.String,System.String)
+  - Microsoft.Bot.Connector.BasicAuthentication.OnAuthorizationAsync(System.Web.Http.Controllers.HttpActionContext,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.BasicAuthentication.OnAuthorizeUser(Microsoft.Bot.Connector.BasicAuthIdentity,System.Web.Http.Controllers.HttpActionContext)
+  - Microsoft.Bot.Connector.BasicAuthentication.ParseAuthorizationHeaderAsync(System.Web.Http.Controllers.HttpActionContext)
+  langs:
+  - csharp
+  name: BasicAuthentication
+  nameWithType: BasicAuthentication
+  fullName: Microsoft.Bot.Connector.BasicAuthentication
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: >-
+      [System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Method, AllowMultiple=false)]
+
+      public class BasicAuthentication : System.Web.Http.Filters.AuthorizationFilterAttribute
+  inheritance:
+  - System.Web.Http.Filters.AuthorizationFilterAttribute
+  derivedClasses:
+  - Microsoft.Bot.Connector.BotAuthentication
+  - Microsoft.Bot.Connector.BotAuthenticationFromSetting
+  implements: []
+  inheritedMembers: []
+  attributes:
+  - type: System.AttributeUsage
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BasicAuthentication.xml
+- uid: Microsoft.Bot.Connector.BasicAuthentication.#ctor
+  commentId: M:Microsoft.Bot.Connector.BasicAuthentication.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Connector.BasicAuthentication
+  langs:
+  - csharp
+  name: BasicAuthentication()
+  nameWithType: BasicAuthentication.BasicAuthentication()
+  fullName: BasicAuthentication.BasicAuthentication()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public BasicAuthentication ();
+    parameters: []
+  overload: Microsoft.Bot.Connector.BasicAuthentication.#ctor*
+  exceptions: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BasicAuthentication.xml
+- uid: Microsoft.Bot.Connector.BasicAuthentication.#ctor(System.String,System.String)
+  commentId: M:Microsoft.Bot.Connector.BasicAuthentication.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: Microsoft.Bot.Connector.BasicAuthentication
+  langs:
+  - csharp
+  name: BasicAuthentication(String, String)
+  nameWithType: BasicAuthentication.BasicAuthentication(String, String)
+  fullName: BasicAuthentication.BasicAuthentication(String, String)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public BasicAuthentication (string appId, string appSecret);
+    parameters:
+    - id: appId
+      type: System.String
+      description: To be added.
+    - id: appSecret
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BasicAuthentication.#ctor*
+  exceptions: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BasicAuthentication.xml
+- uid: Microsoft.Bot.Connector.BasicAuthentication.OnAuthorizationAsync(System.Web.Http.Controllers.HttpActionContext,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.BasicAuthentication.OnAuthorizationAsync(System.Web.Http.Controllers.HttpActionContext,System.Threading.CancellationToken)
+  id: OnAuthorizationAsync(System.Web.Http.Controllers.HttpActionContext,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.BasicAuthentication
+  langs:
+  - csharp
+  name: OnAuthorizationAsync(HttpActionContext, CancellationToken)
+  nameWithType: BasicAuthentication.OnAuthorizationAsync(HttpActionContext, CancellationToken)
+  fullName: BasicAuthentication.OnAuthorizationAsync(HttpActionContext, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BasicAuthentication/<OnAuthorizationAsync>d__6))]
+
+      public override System.Threading.Tasks.Task OnAuthorizationAsync (System.Web.Http.Controllers.HttpActionContext actionContext, System.Threading.CancellationToken cancellationToken);
+    parameters:
+    - id: actionContext
+      type: System.Web.Http.Controllers.HttpActionContext
+      description: To be added.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BasicAuthentication.OnAuthorizationAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BasicAuthentication.xml
+- uid: Microsoft.Bot.Connector.BasicAuthentication.OnAuthorizeUser(Microsoft.Bot.Connector.BasicAuthIdentity,System.Web.Http.Controllers.HttpActionContext)
+  commentId: M:Microsoft.Bot.Connector.BasicAuthentication.OnAuthorizeUser(Microsoft.Bot.Connector.BasicAuthIdentity,System.Web.Http.Controllers.HttpActionContext)
+  id: OnAuthorizeUser(Microsoft.Bot.Connector.BasicAuthIdentity,System.Web.Http.Controllers.HttpActionContext)
+  parent: Microsoft.Bot.Connector.BasicAuthentication
+  langs:
+  - csharp
+  name: OnAuthorizeUser(BasicAuthIdentity, HttpActionContext)
+  nameWithType: BasicAuthentication.OnAuthorizeUser(BasicAuthIdentity, HttpActionContext)
+  fullName: BasicAuthentication.OnAuthorizeUser(BasicAuthIdentity, HttpActionContext)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BasicAuthentication/<OnAuthorizeUser>d__7))]
+
+      protected virtual System.Threading.Tasks.Task<bool> OnAuthorizeUser (Microsoft.Bot.Connector.BasicAuthIdentity identity, System.Web.Http.Controllers.HttpActionContext actionContext);
+    parameters:
+    - id: identity
+      type: Microsoft.Bot.Connector.BasicAuthIdentity
+      description: To be added.
+    - id: actionContext
+      type: System.Web.Http.Controllers.HttpActionContext
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BasicAuthentication.OnAuthorizeUser*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BasicAuthentication.xml
+- uid: Microsoft.Bot.Connector.BasicAuthentication.ParseAuthorizationHeaderAsync(System.Web.Http.Controllers.HttpActionContext)
+  commentId: M:Microsoft.Bot.Connector.BasicAuthentication.ParseAuthorizationHeaderAsync(System.Web.Http.Controllers.HttpActionContext)
+  id: ParseAuthorizationHeaderAsync(System.Web.Http.Controllers.HttpActionContext)
+  parent: Microsoft.Bot.Connector.BasicAuthentication
+  langs:
+  - csharp
+  name: ParseAuthorizationHeaderAsync(HttpActionContext)
+  nameWithType: BasicAuthentication.ParseAuthorizationHeaderAsync(HttpActionContext)
+  fullName: BasicAuthentication.ParseAuthorizationHeaderAsync(HttpActionContext)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: protected virtual System.Threading.Tasks.Task<Microsoft.Bot.Connector.BasicAuthIdentity> ParseAuthorizationHeaderAsync (System.Web.Http.Controllers.HttpActionContext actionContext);
+    parameters:
+    - id: actionContext
+      type: System.Web.Http.Controllers.HttpActionContext
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Connector.BasicAuthIdentity}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.BasicAuthentication.ParseAuthorizationHeaderAsync*
+  exceptions: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BasicAuthentication.xml
+references:
+- uid: System.Web.Http.Filters.AuthorizationFilterAttribute
+  parent: System.Web.Http.Filters
+  isExternal: true
+  name: AuthorizationFilterAttribute
+  nameWithType: AuthorizationFilterAttribute
+  fullName: System.Web.Http.Filters.AuthorizationFilterAttribute
+- uid: Microsoft.Bot.Connector.BasicAuthentication.#ctor
+  parent: Microsoft.Bot.Connector.BasicAuthentication
+  isExternal: false
+  name: BasicAuthentication()
+  nameWithType: BasicAuthentication.BasicAuthentication()
+  fullName: BasicAuthentication.BasicAuthentication()
+- uid: Microsoft.Bot.Connector.BasicAuthentication.#ctor(System.String,System.String)
+  parent: Microsoft.Bot.Connector.BasicAuthentication
+  isExternal: false
+  name: BasicAuthentication(String, String)
+  nameWithType: BasicAuthentication.BasicAuthentication(String, String)
+  fullName: BasicAuthentication.BasicAuthentication(String, String)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.BasicAuthentication.OnAuthorizationAsync(System.Web.Http.Controllers.HttpActionContext,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.BasicAuthentication
+  isExternal: false
+  name: OnAuthorizationAsync(HttpActionContext, CancellationToken)
+  nameWithType: BasicAuthentication.OnAuthorizationAsync(HttpActionContext, CancellationToken)
+  fullName: BasicAuthentication.OnAuthorizationAsync(HttpActionContext, CancellationToken)
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Web.Http.Controllers.HttpActionContext
+  parent: System.Web.Http.Controllers
+  isExternal: true
+  name: HttpActionContext
+  nameWithType: HttpActionContext
+  fullName: System.Web.Http.Controllers.HttpActionContext
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Connector.BasicAuthentication.OnAuthorizeUser(Microsoft.Bot.Connector.BasicAuthIdentity,System.Web.Http.Controllers.HttpActionContext)
+  parent: Microsoft.Bot.Connector.BasicAuthentication
+  isExternal: false
+  name: OnAuthorizeUser(BasicAuthIdentity, HttpActionContext)
+  nameWithType: BasicAuthentication.OnAuthorizeUser(BasicAuthIdentity, HttpActionContext)
+  fullName: BasicAuthentication.OnAuthorizeUser(BasicAuthIdentity, HttpActionContext)
+- uid: System.Threading.Tasks.Task`1
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Connector.BasicAuthIdentity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: BasicAuthIdentity
+  nameWithType: BasicAuthIdentity
+  fullName: Microsoft.Bot.Connector.BasicAuthIdentity
+- uid: Microsoft.Bot.Connector.BasicAuthentication.ParseAuthorizationHeaderAsync(System.Web.Http.Controllers.HttpActionContext)
+  parent: Microsoft.Bot.Connector.BasicAuthentication
+  isExternal: false
+  name: ParseAuthorizationHeaderAsync(HttpActionContext)
+  nameWithType: BasicAuthentication.ParseAuthorizationHeaderAsync(HttpActionContext)
+  fullName: BasicAuthentication.ParseAuthorizationHeaderAsync(HttpActionContext)
+- uid: System.Threading.Tasks.Task{Microsoft.Bot.Connector.BasicAuthIdentity}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<BasicAuthIdentity>
+  nameWithType: Task<BasicAuthIdentity>
+  fullName: System.Threading.Tasks.Task<Microsoft.Bot.Connector.BasicAuthIdentity>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.BasicAuthIdentity
+    name: BasicAuthIdentity
+    nameWithType: BasicAuthIdentity
+    fullName: Microsoft.Bot.Connector.BasicAuthIdentity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Connector.BasicAuthentication.#ctor*
+  parent: Microsoft.Bot.Connector.BasicAuthentication
+  isExternal: false
+  name: BasicAuthentication
+  nameWithType: BasicAuthentication.BasicAuthentication
+  fullName: BasicAuthentication.BasicAuthentication
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BasicAuthentication.xml
+- uid: Microsoft.Bot.Connector.BasicAuthentication.OnAuthorizationAsync*
+  parent: Microsoft.Bot.Connector.BasicAuthentication
+  isExternal: false
+  name: OnAuthorizationAsync
+  nameWithType: BasicAuthentication.OnAuthorizationAsync
+  fullName: BasicAuthentication.OnAuthorizationAsync
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BasicAuthentication.xml
+- uid: Microsoft.Bot.Connector.BasicAuthentication.OnAuthorizeUser*
+  parent: Microsoft.Bot.Connector.BasicAuthentication
+  isExternal: false
+  name: OnAuthorizeUser
+  nameWithType: BasicAuthentication.OnAuthorizeUser
+  fullName: BasicAuthentication.OnAuthorizeUser
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BasicAuthentication.xml
+- uid: Microsoft.Bot.Connector.BasicAuthentication.ParseAuthorizationHeaderAsync*
+  parent: Microsoft.Bot.Connector.BasicAuthentication
+  isExternal: false
+  name: ParseAuthorizationHeaderAsync
+  nameWithType: BasicAuthentication.ParseAuthorizationHeaderAsync
+  fullName: BasicAuthentication.ParseAuthorizationHeaderAsync
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/BasicAuthentication.xml

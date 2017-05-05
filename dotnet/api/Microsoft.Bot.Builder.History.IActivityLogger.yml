@@ -1,0 +1,85 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.History.IActivityLogger
+  commentId: T:Microsoft.Bot.Builder.History.IActivityLogger
+  id: IActivityLogger
+  children:
+  - Microsoft.Bot.Builder.History.IActivityLogger.LogAsync(Microsoft.Bot.Connector.IActivity)
+  langs:
+  - csharp
+  name: IActivityLogger
+  nameWithType: IActivityLogger
+  fullName: Microsoft.Bot.Builder.History.IActivityLogger
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.History
+  summary: Log message activities between bots and users.
+  syntax:
+    content: public interface IActivityLogger
+  derivedClasses:
+  - Microsoft.Bot.Builder.History.NullActivityLogger
+  - Microsoft.Bot.Builder.History.TraceActivityLogger
+  implements: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.History/IActivityLogger.xml
+- uid: Microsoft.Bot.Builder.History.IActivityLogger.LogAsync(Microsoft.Bot.Connector.IActivity)
+  commentId: M:Microsoft.Bot.Builder.History.IActivityLogger.LogAsync(Microsoft.Bot.Connector.IActivity)
+  id: LogAsync(Microsoft.Bot.Connector.IActivity)
+  parent: Microsoft.Bot.Builder.History.IActivityLogger
+  langs:
+  - csharp
+  name: LogAsync(IActivity)
+  nameWithType: IActivityLogger.LogAsync(IActivity)
+  fullName: IActivityLogger.LogAsync(IActivity)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.History
+  syntax:
+    content: public System.Threading.Tasks.Task LogAsync (Microsoft.Bot.Connector.IActivity activity);
+    parameters:
+    - id: activity
+      type: Microsoft.Bot.Connector.IActivity
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task
+      description: To be added.
+  overload: Microsoft.Bot.Builder.History.IActivityLogger.LogAsync*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.History/IActivityLogger.xml
+references:
+- uid: Microsoft.Bot.Builder.History.IActivityLogger.LogAsync(Microsoft.Bot.Connector.IActivity)
+  parent: Microsoft.Bot.Builder.History.IActivityLogger
+  isExternal: false
+  name: LogAsync(IActivity)
+  nameWithType: IActivityLogger.LogAsync(IActivity)
+  fullName: IActivityLogger.LogAsync(IActivity)
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.Bot.Connector.IActivity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IActivity
+  nameWithType: IActivity
+  fullName: Microsoft.Bot.Connector.IActivity
+- uid: Microsoft.Bot.Builder.History.IActivityLogger.LogAsync*
+  parent: Microsoft.Bot.Builder.History.IActivityLogger
+  isExternal: false
+  name: LogAsync
+  nameWithType: IActivityLogger.LogAsync
+  fullName: IActivityLogger.LogAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.History/IActivityLogger.xml

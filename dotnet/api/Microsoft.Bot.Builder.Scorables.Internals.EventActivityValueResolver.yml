@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver
+  commentId: T:Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver
+  id: EventActivityValueResolver
+  children:
+  - Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver.#ctor(Microsoft.Bot.Builder.Scorables.Internals.IResolver)
+  - Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver.PropertyFrom(Microsoft.Bot.Connector.IEventActivity)
+  langs:
+  - csharp
+  name: EventActivityValueResolver
+  nameWithType: EventActivityValueResolver
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: 'public sealed class EventActivityValueResolver : Microsoft.Bot.Builder.Scorables.Internals.PropertyResolver<Microsoft.Bot.Connector.IEventActivity>'
+  inheritance:
+  - System.Object
+  - Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver
+  - Microsoft.Bot.Builder.Scorables.Internals.PropertyResolver`1
+  implements: []
+  inheritedMembers:
+  - Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver.inner
+  - Microsoft.Bot.Builder.Scorables.Internals.PropertyResolver`1.PropertyFrom(`0)
+  - Microsoft.Bot.Builder.Scorables.Internals.PropertyResolver`1.TryResolve(System.Type,System.Object,System.Object@)
+  extensionMethods:
+  - Microsoft.Bot.Builder.Scorables.Internals.Extensions.CanResolve(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Type,System.Object)
+  - Microsoft.Bot.Builder.Scorables.Internals.Extensions.Resolve(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Type,System.Object)
+  - Microsoft.Bot.Builder.Scorables.Internals.Extensions.TryResolve``1(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object,``0@)
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/EventActivityValueResolver.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver.#ctor(Microsoft.Bot.Builder.Scorables.Internals.IResolver)
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver.#ctor(Microsoft.Bot.Builder.Scorables.Internals.IResolver)
+  id: '#ctor(Microsoft.Bot.Builder.Scorables.Internals.IResolver)'
+  parent: Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver
+  langs:
+  - csharp
+  name: EventActivityValueResolver(IResolver)
+  nameWithType: EventActivityValueResolver.EventActivityValueResolver(IResolver)
+  fullName: EventActivityValueResolver.EventActivityValueResolver(IResolver)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public EventActivityValueResolver (Microsoft.Bot.Builder.Scorables.Internals.IResolver inner);
+    parameters:
+    - id: inner
+      type: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/EventActivityValueResolver.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver.PropertyFrom(Microsoft.Bot.Connector.IEventActivity)
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver.PropertyFrom(Microsoft.Bot.Connector.IEventActivity)
+  id: PropertyFrom(Microsoft.Bot.Connector.IEventActivity)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver
+  langs:
+  - csharp
+  name: PropertyFrom(IEventActivity)
+  nameWithType: EventActivityValueResolver.PropertyFrom(IEventActivity)
+  fullName: EventActivityValueResolver.PropertyFrom(IEventActivity)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: protected override object PropertyFrom (Microsoft.Bot.Connector.IEventActivity item);
+    parameters:
+    - id: item
+      type: Microsoft.Bot.Connector.IEventActivity
+      description: To be added.
+    return:
+      type: System.Object
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver.PropertyFrom*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/EventActivityValueResolver.xml
+references:
+- uid: Microsoft.Bot.Builder.Scorables.Internals.PropertyResolver`1
+  name: PropertyResolver<T>
+  nameWithType: PropertyResolver<T>
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.PropertyResolver<T>
+- uid: Microsoft.Bot.Connector.IEventActivity
+  name: IEventActivity
+  nameWithType: IEventActivity
+  fullName: Microsoft.Bot.Connector.IEventActivity
+- uid: Microsoft.Bot.Builder.Scorables.Internals.PropertyResolver{Microsoft.Bot.Connector.IEventActivity}
+  parent: Microsoft.Bot.Builder.Scorables.Internals
+  isExternal: false
+  name: PropertyResolver<IEventActivity>
+  nameWithType: PropertyResolver<IEventActivity>
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.PropertyResolver<Microsoft.Bot.Connector.IEventActivity>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.PropertyResolver`1
+    name: PropertyResolver
+    nameWithType: PropertyResolver
+    fullName: Microsoft.Bot.Builder.Scorables.Internals.PropertyResolver
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.IEventActivity
+    name: IEventActivity
+    nameWithType: IEventActivity
+    fullName: Microsoft.Bot.Connector.IEventActivity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver.#ctor(Microsoft.Bot.Builder.Scorables.Internals.IResolver)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver
+  isExternal: false
+  name: EventActivityValueResolver(IResolver)
+  nameWithType: EventActivityValueResolver.EventActivityValueResolver(IResolver)
+  fullName: EventActivityValueResolver.EventActivityValueResolver(IResolver)
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+  parent: Microsoft.Bot.Builder.Scorables.Internals
+  isExternal: false
+  name: IResolver
+  nameWithType: IResolver
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+- uid: Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver.PropertyFrom(Microsoft.Bot.Connector.IEventActivity)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver
+  isExternal: false
+  name: PropertyFrom(IEventActivity)
+  nameWithType: EventActivityValueResolver.PropertyFrom(IEventActivity)
+  fullName: EventActivityValueResolver.PropertyFrom(IEventActivity)
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver.#ctor*
+  parent: Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver
+  isExternal: false
+  name: EventActivityValueResolver
+  nameWithType: EventActivityValueResolver.EventActivityValueResolver
+  fullName: EventActivityValueResolver.EventActivityValueResolver
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/EventActivityValueResolver.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver.PropertyFrom*
+  parent: Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver
+  isExternal: false
+  name: PropertyFrom
+  nameWithType: EventActivityValueResolver.PropertyFrom
+  fullName: EventActivityValueResolver.PropertyFrom
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/EventActivityValueResolver.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.Extensions.CanResolve(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Type,System.Object)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.Extensions
+  isExternal: false
+  name: CanResolve(IResolver, Type, Object)
+  nameWithType: Extensions.CanResolve(IResolver, Type, Object)
+  fullName: Extensions.CanResolve(IResolver, Type, Object)
+- uid: Microsoft.Bot.Builder.Scorables.Internals.Extensions.Resolve(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Type,System.Object)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.Extensions
+  isExternal: false
+  name: Resolve(IResolver, Type, Object)
+  nameWithType: Extensions.Resolve(IResolver, Type, Object)
+  fullName: Extensions.Resolve(IResolver, Type, Object)
+- uid: Microsoft.Bot.Builder.Scorables.Internals.Extensions.TryResolve``1(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object,``0@)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.Extensions
+  isExternal: false
+  name: TryResolve<T>(IResolver, Object, T)
+  nameWithType: Extensions.TryResolve<T>(IResolver, Object, T)
+  fullName: Extensions.TryResolve<T>(IResolver, Object, T)

@@ -1,0 +1,13 @@
+- uid: Microsoft.Bot.Builder.Resource
+  name: Microsoft.Bot.Builder.Resource
+  items:
+  - uid: Microsoft.Bot.Builder.Resource.Extensions
+    name: Extensions
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Resource.Resources
+    name: Resources
+    version:
+    - botbuilder-3.5.5
+  version:
+  - botbuilder-3.5.5

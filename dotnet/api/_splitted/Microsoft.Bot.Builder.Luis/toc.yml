@@ -1,0 +1,85 @@
+- uid: Microsoft.Bot.Builder.Luis
+  name: Microsoft.Bot.Builder.Luis
+  items:
+  - uid: Microsoft.Bot.Builder.Luis.BuiltIn
+    name: BuiltIn
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.BuiltIn.DateTime
+    name: BuiltIn.DateTime
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution
+    name: BuiltIn.DateTime.DateTimeResolution
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart
+    name: BuiltIn.DateTime.DayPart
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DurationResolution
+    name: BuiltIn.DateTime.DurationResolution
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference
+    name: BuiltIn.DateTime.Reference
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.Extensions
+    name: Extensions
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.ICalendarPlus
+    name: ICalendarPlus
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.IEntityToType
+    name: IEntityToType
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.ILuisModel
+    name: ILuisModel
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.ILuisService
+    name: ILuisService
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.IResolutionParser
+    name: IResolutionParser
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.LuisApiVersion
+    name: LuisApiVersion
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+    name: LuisModelAttribute
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.LuisRequest
+    name: LuisRequest
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.LuisService
+    name: LuisService
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.Resolution
+    name: Resolution
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.ResolutionParser
+    name: ResolutionParser
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.StrictEntityToType
+    name: StrictEntityToType
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.WesternCalendarPlus
+    name: WesternCalendarPlus
+    version:
+    - botbuilder-3.5.5
+  version:
+  - botbuilder-3.5.5

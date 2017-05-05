@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.ResumeAfter`1
+  commentId: T:Microsoft.Bot.Builder.Dialogs.ResumeAfter`1
+  id: ResumeAfter`1
+  langs:
+  - csharp
+  name: ResumeAfter<T>
+  nameWithType: ResumeAfter<T>
+  fullName: Microsoft.Bot.Builder.Dialogs.ResumeAfter<T>
+  type: Delegate
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Encapsulates a method that represents the code to execute after a result is available.
+  remarks: The result is often a message from the user.
+  syntax:
+    content: public delegate System.Threading.Tasks.Task ResumeAfter<in T>(IDialogContext context, IAwaitable<in T> result);
+    typeParameters:
+    - id: T
+      description: The type of the result.
+  inheritance:
+  - System.Delegate
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ResumeAfter`1.xml
+references:
+- uid: System.Delegate
+  parent: System
+  isExternal: true
+  name: Delegate
+  nameWithType: Delegate
+  fullName: System.Delegate

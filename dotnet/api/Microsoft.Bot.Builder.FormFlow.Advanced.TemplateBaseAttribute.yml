@@ -1,0 +1,798 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  commentId: T:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  id: TemplateBaseAttribute
+  children:
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.#ctor(Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.#ctor(System.String[])
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.AllowDefault
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ApplyDefaults(Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceCase
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceFormat
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceLastSeparator
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceParens
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceSeparator
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceStyle
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Feedback
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.FieldCase
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.LastSeparator
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Pattern
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Patterns
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Separator
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ValueCase
+  langs:
+  - csharp
+  name: TemplateBaseAttribute
+  nameWithType: TemplateBaseAttribute
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Abstract base class used by all attributes that use \ref patterns.
+  syntax:
+    content: 'public abstract class TemplateBaseAttribute : Microsoft.Bot.Builder.FormFlow.FormFlowAttribute'
+  inheritance:
+  - System.Attribute
+  - Microsoft.Bot.Builder.FormFlow.FormFlowAttribute
+  derivedClasses:
+  - Microsoft.Bot.Builder.FormFlow.PromptAttribute
+  - Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+  implements: []
+  inheritedMembers:
+  - Microsoft.Bot.Builder.FormFlow.FormFlowAttribute.IsLocalizable
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.#ctor(Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.#ctor(Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute)
+  id: '#ctor(Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute)'
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  langs:
+  - csharp
+  name: TemplateBaseAttribute(TemplateBaseAttribute)
+  nameWithType: TemplateBaseAttribute.TemplateBaseAttribute(TemplateBaseAttribute)
+  fullName: TemplateBaseAttribute.TemplateBaseAttribute(TemplateBaseAttribute)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Initialize from another template.
+  syntax:
+    content: public TemplateBaseAttribute (Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute other);
+    parameters:
+    - id: other
+      type: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+      description: The template to copy from.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.#ctor(System.String[])
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.#ctor(System.String[])
+  id: '#ctor(System.String[])'
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  langs:
+  - csharp
+  name: TemplateBaseAttribute(String[])
+  nameWithType: TemplateBaseAttribute.TemplateBaseAttribute(String[])
+  fullName: TemplateBaseAttribute.TemplateBaseAttribute(String[])
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Initialize with multiple patterns that will be chosen from randomly.
+  syntax:
+    content: public TemplateBaseAttribute (string[] patterns);
+    parameters:
+    - id: patterns
+      type: System.String[]
+      description: Possible patterns.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.AllowDefault
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.AllowDefault
+  id: AllowDefault
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  langs:
+  - csharp
+  name: AllowDefault
+  nameWithType: TemplateBaseAttribute.AllowDefault
+  fullName: TemplateBaseAttribute.AllowDefault
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: When processing choices {||} in a \ref patterns string, provide a choice for the default value if present.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.BoolDefault AllowDefault { get; set; }
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.BoolDefault
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.AllowDefault*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ApplyDefaults(Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ApplyDefaults(Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute)
+  id: ApplyDefaults(Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  langs:
+  - csharp
+  name: ApplyDefaults(TemplateBaseAttribute)
+  nameWithType: TemplateBaseAttribute.ApplyDefaults(TemplateBaseAttribute)
+  fullName: TemplateBaseAttribute.ApplyDefaults(TemplateBaseAttribute)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Any default values in this template will be overridden by the supplied <code>defaultTemplate</code>.
+  syntax:
+    content: public void ApplyDefaults (Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute defaultTemplate);
+    parameters:
+    - id: defaultTemplate
+      type: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+      description: Default template to use to override default values.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ApplyDefaults*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceCase
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceCase
+  id: ChoiceCase
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  langs:
+  - csharp
+  name: ChoiceCase
+  nameWithType: TemplateBaseAttribute.ChoiceCase
+  fullName: TemplateBaseAttribute.ChoiceCase
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Control case when showing choices in {||} references in a \ref patterns string.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.CaseNormalization ChoiceCase { get; set; }
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.CaseNormalization
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceCase*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceFormat
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceFormat
+  id: ChoiceFormat
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  langs:
+  - csharp
+  name: ChoiceFormat
+  nameWithType: TemplateBaseAttribute.ChoiceFormat
+  fullName: TemplateBaseAttribute.ChoiceFormat
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Format string used for presenting each choice when showing {||} choices in a \ref patterns string.
+  remarks: The choice format is passed two arguments, {0} is the number of the choice and {1} is the field name.
+  syntax:
+    content: public string ChoiceFormat { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceFormat*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceLastSeparator
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceLastSeparator
+  id: ChoiceLastSeparator
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  langs:
+  - csharp
+  name: ChoiceLastSeparator
+  nameWithType: TemplateBaseAttribute.ChoiceLastSeparator
+  fullName: TemplateBaseAttribute.ChoiceLastSeparator
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: When constructing inline lists of choices using {||} in a \ref patterns string, the string used before the last choice.
+  syntax:
+    content: public string ChoiceLastSeparator { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceLastSeparator*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceParens
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceParens
+  id: ChoiceParens
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  langs:
+  - csharp
+  name: ChoiceParens
+  nameWithType: TemplateBaseAttribute.ChoiceParens
+  fullName: TemplateBaseAttribute.ChoiceParens
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: When constructing inline choice lists for {||} in a \ref patterns string controls whether to include parentheses around choices.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.BoolDefault ChoiceParens { get; set; }
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.BoolDefault
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceParens*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceSeparator
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceSeparator
+  id: ChoiceSeparator
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  langs:
+  - csharp
+  name: ChoiceSeparator
+  nameWithType: TemplateBaseAttribute.ChoiceSeparator
+  fullName: TemplateBaseAttribute.ChoiceSeparator
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: When constructing inline lists using {||} in a \ref patterns string, the string used between all choices except the last.
+  syntax:
+    content: public string ChoiceSeparator { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceSeparator*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceStyle
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceStyle
+  id: ChoiceStyle
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  langs:
+  - csharp
+  name: ChoiceStyle
+  nameWithType: TemplateBaseAttribute.ChoiceStyle
+  fullName: TemplateBaseAttribute.ChoiceStyle
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: How to display choices {||} when processed in a \ref patterns string.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions ChoiceStyle { get; set; }
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceStyle*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Feedback
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Feedback
+  id: Feedback
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  langs:
+  - csharp
+  name: Feedback
+  nameWithType: TemplateBaseAttribute.Feedback
+  fullName: TemplateBaseAttribute.Feedback
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Control what kind of feedback the user gets after each input.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.FeedbackOptions Feedback { get; set; }
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.FeedbackOptions
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Feedback*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.FieldCase
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.FieldCase
+  id: FieldCase
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  langs:
+  - csharp
+  name: FieldCase
+  nameWithType: TemplateBaseAttribute.FieldCase
+  fullName: TemplateBaseAttribute.FieldCase
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Control case when showing {&} field name references in a \ref patterns string.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.CaseNormalization FieldCase { get; set; }
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.CaseNormalization
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.FieldCase*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.LastSeparator
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.LastSeparator
+  id: LastSeparator
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  langs:
+  - csharp
+  name: LastSeparator
+  nameWithType: TemplateBaseAttribute.LastSeparator
+  fullName: TemplateBaseAttribute.LastSeparator
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: When constructing lists using {[]} in a \ref patterns string, the string used before the last value in the list.
+  syntax:
+    content: public string LastSeparator { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.LastSeparator*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Pattern
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Pattern
+  id: Pattern
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  langs:
+  - csharp
+  name: Pattern()
+  nameWithType: TemplateBaseAttribute.Pattern()
+  fullName: TemplateBaseAttribute.Pattern()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: The pattern to use when generating a string using <xref href="Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1"></xref>.
+  remarks: If multiple patterns were specified, then each call to this function will return a random pattern.
+  syntax:
+    content: public string Pattern ();
+    parameters: []
+    return:
+      type: System.String
+      description: Pattern to use.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Pattern*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Patterns
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Patterns
+  id: Patterns
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  langs:
+  - csharp
+  name: Patterns
+  nameWithType: TemplateBaseAttribute.Patterns
+  fullName: TemplateBaseAttribute.Patterns
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: All possible templates.
+  syntax:
+    content: public string[] Patterns { get; set; }
+    return:
+      type: System.String[]
+      description: The possible templates.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Patterns*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Separator
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Separator
+  id: Separator
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  langs:
+  - csharp
+  name: Separator
+  nameWithType: TemplateBaseAttribute.Separator
+  fullName: TemplateBaseAttribute.Separator
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: When constructing lists using {[]} in a \ref patterns string, the string used between all values except the last.
+  syntax:
+    content: public string Separator { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Separator*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ValueCase
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ValueCase
+  id: ValueCase
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  langs:
+  - csharp
+  name: ValueCase
+  nameWithType: TemplateBaseAttribute.ValueCase
+  fullName: TemplateBaseAttribute.ValueCase
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Control case when showing {} value references in a \ref patterns string.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.CaseNormalization ValueCase { get; set; }
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.CaseNormalization
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ValueCase*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+references:
+- uid: Microsoft.Bot.Builder.FormFlow.FormFlowAttribute
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: FormFlowAttribute
+  nameWithType: FormFlowAttribute
+  fullName: Microsoft.Bot.Builder.FormFlow.FormFlowAttribute
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.#ctor(Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: TemplateBaseAttribute(TemplateBaseAttribute)
+  nameWithType: TemplateBaseAttribute.TemplateBaseAttribute(TemplateBaseAttribute)
+  fullName: TemplateBaseAttribute.TemplateBaseAttribute(TemplateBaseAttribute)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced
+  isExternal: false
+  name: TemplateBaseAttribute
+  nameWithType: TemplateBaseAttribute
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.#ctor(System.String[])
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: TemplateBaseAttribute(String[])
+  nameWithType: TemplateBaseAttribute.TemplateBaseAttribute(String[])
+  fullName: TemplateBaseAttribute.TemplateBaseAttribute(String[])
+- uid: System.String
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.String[]
+  parent: System
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.AllowDefault
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: AllowDefault
+  nameWithType: TemplateBaseAttribute.AllowDefault
+  fullName: TemplateBaseAttribute.AllowDefault
+- uid: Microsoft.Bot.Builder.FormFlow.BoolDefault
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: BoolDefault
+  nameWithType: BoolDefault
+  fullName: Microsoft.Bot.Builder.FormFlow.BoolDefault
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ApplyDefaults(Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: ApplyDefaults(TemplateBaseAttribute)
+  nameWithType: TemplateBaseAttribute.ApplyDefaults(TemplateBaseAttribute)
+  fullName: TemplateBaseAttribute.ApplyDefaults(TemplateBaseAttribute)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceCase
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: ChoiceCase
+  nameWithType: TemplateBaseAttribute.ChoiceCase
+  fullName: TemplateBaseAttribute.ChoiceCase
+- uid: Microsoft.Bot.Builder.FormFlow.CaseNormalization
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: CaseNormalization
+  nameWithType: CaseNormalization
+  fullName: Microsoft.Bot.Builder.FormFlow.CaseNormalization
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceFormat
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: ChoiceFormat
+  nameWithType: TemplateBaseAttribute.ChoiceFormat
+  fullName: TemplateBaseAttribute.ChoiceFormat
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceLastSeparator
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: ChoiceLastSeparator
+  nameWithType: TemplateBaseAttribute.ChoiceLastSeparator
+  fullName: TemplateBaseAttribute.ChoiceLastSeparator
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceParens
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: ChoiceParens
+  nameWithType: TemplateBaseAttribute.ChoiceParens
+  fullName: TemplateBaseAttribute.ChoiceParens
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceSeparator
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: ChoiceSeparator
+  nameWithType: TemplateBaseAttribute.ChoiceSeparator
+  fullName: TemplateBaseAttribute.ChoiceSeparator
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceStyle
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: ChoiceStyle
+  nameWithType: TemplateBaseAttribute.ChoiceStyle
+  fullName: TemplateBaseAttribute.ChoiceStyle
+- uid: Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: ChoiceStyleOptions
+  nameWithType: ChoiceStyleOptions
+  fullName: Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Feedback
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: Feedback
+  nameWithType: TemplateBaseAttribute.Feedback
+  fullName: TemplateBaseAttribute.Feedback
+- uid: Microsoft.Bot.Builder.FormFlow.FeedbackOptions
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: FeedbackOptions
+  nameWithType: FeedbackOptions
+  fullName: Microsoft.Bot.Builder.FormFlow.FeedbackOptions
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.FieldCase
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: FieldCase
+  nameWithType: TemplateBaseAttribute.FieldCase
+  fullName: TemplateBaseAttribute.FieldCase
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.LastSeparator
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: LastSeparator
+  nameWithType: TemplateBaseAttribute.LastSeparator
+  fullName: TemplateBaseAttribute.LastSeparator
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Pattern
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: Pattern()
+  nameWithType: TemplateBaseAttribute.Pattern()
+  fullName: TemplateBaseAttribute.Pattern()
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Patterns
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: Patterns
+  nameWithType: TemplateBaseAttribute.Patterns
+  fullName: TemplateBaseAttribute.Patterns
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Separator
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: Separator
+  nameWithType: TemplateBaseAttribute.Separator
+  fullName: TemplateBaseAttribute.Separator
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ValueCase
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: ValueCase
+  nameWithType: TemplateBaseAttribute.ValueCase
+  fullName: TemplateBaseAttribute.ValueCase
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.#ctor*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: TemplateBaseAttribute
+  nameWithType: TemplateBaseAttribute.TemplateBaseAttribute
+  fullName: TemplateBaseAttribute.TemplateBaseAttribute
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.AllowDefault*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: AllowDefault
+  nameWithType: TemplateBaseAttribute.AllowDefault
+  fullName: TemplateBaseAttribute.AllowDefault
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ApplyDefaults*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: ApplyDefaults
+  nameWithType: TemplateBaseAttribute.ApplyDefaults
+  fullName: TemplateBaseAttribute.ApplyDefaults
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceCase*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: ChoiceCase
+  nameWithType: TemplateBaseAttribute.ChoiceCase
+  fullName: TemplateBaseAttribute.ChoiceCase
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceFormat*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: ChoiceFormat
+  nameWithType: TemplateBaseAttribute.ChoiceFormat
+  fullName: TemplateBaseAttribute.ChoiceFormat
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceLastSeparator*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: ChoiceLastSeparator
+  nameWithType: TemplateBaseAttribute.ChoiceLastSeparator
+  fullName: TemplateBaseAttribute.ChoiceLastSeparator
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceParens*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: ChoiceParens
+  nameWithType: TemplateBaseAttribute.ChoiceParens
+  fullName: TemplateBaseAttribute.ChoiceParens
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceSeparator*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: ChoiceSeparator
+  nameWithType: TemplateBaseAttribute.ChoiceSeparator
+  fullName: TemplateBaseAttribute.ChoiceSeparator
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceStyle*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: ChoiceStyle
+  nameWithType: TemplateBaseAttribute.ChoiceStyle
+  fullName: TemplateBaseAttribute.ChoiceStyle
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Feedback*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: Feedback
+  nameWithType: TemplateBaseAttribute.Feedback
+  fullName: TemplateBaseAttribute.Feedback
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.FieldCase*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: FieldCase
+  nameWithType: TemplateBaseAttribute.FieldCase
+  fullName: TemplateBaseAttribute.FieldCase
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.LastSeparator*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: LastSeparator
+  nameWithType: TemplateBaseAttribute.LastSeparator
+  fullName: TemplateBaseAttribute.LastSeparator
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Pattern*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: Pattern
+  nameWithType: TemplateBaseAttribute.Pattern
+  fullName: TemplateBaseAttribute.Pattern
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Patterns*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: Patterns
+  nameWithType: TemplateBaseAttribute.Patterns
+  fullName: TemplateBaseAttribute.Patterns
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Separator*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: Separator
+  nameWithType: TemplateBaseAttribute.Separator
+  fullName: TemplateBaseAttribute.Separator
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ValueCase*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  isExternal: false
+  name: ValueCase
+  nameWithType: TemplateBaseAttribute.ValueCase
+  fullName: TemplateBaseAttribute.ValueCase
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/TemplateBaseAttribute.xml

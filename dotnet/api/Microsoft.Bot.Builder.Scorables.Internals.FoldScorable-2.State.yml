@@ -1,0 +1,197 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State
+  commentId: T:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State
+  id: FoldScorable`2.State
+  children:
+  - Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.#ctor(System.Int32,Microsoft.Bot.Builder.Scorables.IScorable{`0,`1},System.Object)
+  - Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.ordinal
+  - Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.scorable
+  - Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.state
+  langs:
+  - csharp
+  name: FoldScorable<Item,Score>.State
+  nameWithType: FoldScorable<Item,Score>.State
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable<Item,Score>.State
+  type: Struct
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  summary: Per-scorable opaque state used during scoring process.
+  syntax:
+    content: public struct FoldScorable<Item,Score>.State
+    typeParameters:
+    - id: Item
+      description: To be added.
+    - id: Score
+      description: To be added.
+  inheritance:
+  - System.ValueType
+  implements: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/FoldScorable`2+State.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.#ctor(System.Int32,Microsoft.Bot.Builder.Scorables.IScorable{`0,`1},System.Object)
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.#ctor(System.Int32,Microsoft.Bot.Builder.Scorables.IScorable{`0,`1},System.Object)
+  id: '#ctor(System.Int32,Microsoft.Bot.Builder.Scorables.IScorable{`0,`1},System.Object)'
+  parent: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State
+  langs:
+  - csharp
+  name: FoldScorable<Item,Score>.State(Int32, IScorable<Item,Score>, Object)
+  nameWithType: FoldScorable<Item,Score>.State.FoldScorable<Item,Score>.State(Int32, IScorable<Item,Score>, Object)
+  fullName: FoldScorable<Item,Score>.State.FoldScorable<Item,Score>.State(Int32, IScorable<Item,Score>, Object)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public State (int ordinal, Microsoft.Bot.Builder.Scorables.IScorable<Item,Score> scorable, object state);
+    parameters:
+    - id: ordinal
+      type: System.Int32
+      description: To be added.
+    - id: scorable
+      type: Microsoft.Bot.Builder.Scorables.IScorable`2
+      description: To be added.
+    - id: state
+      type: System.Object
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/FoldScorable`2+State.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.ordinal
+  commentId: F:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.ordinal
+  id: ordinal
+  parent: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State
+  langs:
+  - csharp
+  name: ordinal
+  nameWithType: FoldScorable<Item,Score>.State.ordinal
+  fullName: FoldScorable<Item,Score>.State.ordinal
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public readonly int ordinal;
+    return:
+      type: System.Int32
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/FoldScorable`2+State.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.scorable
+  commentId: F:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.scorable
+  id: scorable
+  parent: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State
+  langs:
+  - csharp
+  name: scorable
+  nameWithType: FoldScorable<Item,Score>.State.scorable
+  fullName: FoldScorable<Item,Score>.State.scorable
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public readonly Microsoft.Bot.Builder.Scorables.IScorable<Item,Score> scorable;
+    return:
+      type: Microsoft.Bot.Builder.Scorables.IScorable`2
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/FoldScorable`2+State.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.state
+  commentId: F:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.state
+  id: state
+  parent: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State
+  langs:
+  - csharp
+  name: state
+  nameWithType: FoldScorable<Item,Score>.State.state
+  fullName: FoldScorable<Item,Score>.State.state
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public readonly object state;
+    return:
+      type: System.Object
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/FoldScorable`2+State.xml
+references:
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.#ctor(System.Int32,Microsoft.Bot.Builder.Scorables.IScorable{`0,`1},System.Object)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State
+  isExternal: false
+  name: FoldScorable<Item,Score>.State(Int32, IScorable<Item,Score>, Object)
+  nameWithType: FoldScorable<Item,Score>.State.FoldScorable<Item,Score>.State(Int32, IScorable<Item,Score>, Object)
+  fullName: FoldScorable<Item,Score>.State.FoldScorable<Item,Score>.State(Int32, IScorable<Item,Score>, Object)
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Bot.Builder.Scorables.IScorable`2
+  parent: Microsoft.Bot.Builder.Scorables
+  isExternal: false
+  name: IScorable<Item,Score>
+  nameWithType: IScorable<Item,Score>
+  fullName: Microsoft.Bot.Builder.Scorables.IScorable<Item,Score>
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.ordinal
+  parent: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State
+  isExternal: false
+  name: ordinal
+  nameWithType: FoldScorable<Item,Score>.State.ordinal
+  fullName: FoldScorable<Item,Score>.State.ordinal
+- uid: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.scorable
+  parent: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State
+  isExternal: false
+  name: scorable
+  nameWithType: FoldScorable<Item,Score>.State.scorable
+  fullName: FoldScorable<Item,Score>.State.scorable
+- uid: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.state
+  parent: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State
+  isExternal: false
+  name: state
+  nameWithType: FoldScorable<Item,Score>.State.state
+  fullName: FoldScorable<Item,Score>.State.state
+- uid: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.#ctor*
+  parent: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State
+  isExternal: false
+  name: FoldScorable<Item,Score>.State
+  nameWithType: FoldScorable<Item,Score>.State.FoldScorable<Item,Score>.State
+  fullName: FoldScorable<Item,Score>.State.FoldScorable<Item,Score>.State
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/FoldScorable`2+State.xml

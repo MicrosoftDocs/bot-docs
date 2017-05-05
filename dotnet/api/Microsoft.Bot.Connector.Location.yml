@@ -1,0 +1,333 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.Location
+  commentId: T:Microsoft.Bot.Connector.Location
+  id: Location
+  children:
+  - Microsoft.Bot.Connector.Location.#ctor
+  - Microsoft.Bot.Connector.Location.#ctor(System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},System.String)
+  - Microsoft.Bot.Connector.Location.Altitude
+  - Microsoft.Bot.Connector.Location.Latitude
+  - Microsoft.Bot.Connector.Location.Longitude
+  - Microsoft.Bot.Connector.Location.Name
+  langs:
+  - csharp
+  name: Location
+  nameWithType: Location
+  fullName: Microsoft.Bot.Connector.Location
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public class Location
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Location.xml
+- uid: Microsoft.Bot.Connector.Location.#ctor
+  commentId: M:Microsoft.Bot.Connector.Location.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Connector.Location
+  langs:
+  - csharp
+  name: Location()
+  nameWithType: Location.Location()
+  fullName: Location.Location()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public Location ();
+    parameters: []
+  overload: Microsoft.Bot.Connector.Location.#ctor*
+  exceptions: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Location.xml
+- uid: Microsoft.Bot.Connector.Location.#ctor(System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},System.String)
+  commentId: M:Microsoft.Bot.Connector.Location.#ctor(System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},System.String)
+  id: '#ctor(System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},System.String)'
+  parent: Microsoft.Bot.Connector.Location
+  langs:
+  - csharp
+  name: Location(Nullable<Double>, Nullable<Double>, Nullable<Double>, String)
+  nameWithType: Location.Location(Nullable<Double>, Nullable<Double>, Nullable<Double>, String)
+  fullName: Location.Location(Nullable<Double>, Nullable<Double>, Nullable<Double>, String)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public Location (Nullable<double> altitude = null, Nullable<double> latitude = null, Nullable<double> longitude = null, string name = null);
+    parameters:
+    - id: altitude
+      type: System.Nullable{System.Double}
+      description: To be added.
+    - id: latitude
+      type: System.Nullable{System.Double}
+      description: To be added.
+    - id: longitude
+      type: System.Nullable{System.Double}
+      description: To be added.
+    - id: name
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Location.#ctor*
+  exceptions: []
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Location.xml
+- uid: Microsoft.Bot.Connector.Location.Altitude
+  commentId: P:Microsoft.Bot.Connector.Location.Altitude
+  id: Altitude
+  parent: Microsoft.Bot.Connector.Location
+  langs:
+  - csharp
+  name: Altitude
+  nameWithType: Location.Altitude
+  fullName: Location.Altitude
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="altitude")]
+
+      public Nullable<double> Altitude { get; set; }
+    return:
+      type: System.Nullable{System.Double}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Location.Altitude*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Location.xml
+- uid: Microsoft.Bot.Connector.Location.Latitude
+  commentId: P:Microsoft.Bot.Connector.Location.Latitude
+  id: Latitude
+  parent: Microsoft.Bot.Connector.Location
+  langs:
+  - csharp
+  name: Latitude
+  nameWithType: Location.Latitude
+  fullName: Location.Latitude
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="latitude")]
+
+      public Nullable<double> Latitude { get; set; }
+    return:
+      type: System.Nullable{System.Double}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Location.Latitude*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Location.xml
+- uid: Microsoft.Bot.Connector.Location.Longitude
+  commentId: P:Microsoft.Bot.Connector.Location.Longitude
+  id: Longitude
+  parent: Microsoft.Bot.Connector.Location
+  langs:
+  - csharp
+  name: Longitude
+  nameWithType: Location.Longitude
+  fullName: Location.Longitude
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="longitude")]
+
+      public Nullable<double> Longitude { get; set; }
+    return:
+      type: System.Nullable{System.Double}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Location.Longitude*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Location.xml
+- uid: Microsoft.Bot.Connector.Location.Name
+  commentId: P:Microsoft.Bot.Connector.Location.Name
+  id: Name
+  parent: Microsoft.Bot.Connector.Location
+  langs:
+  - csharp
+  name: Name
+  nameWithType: Location.Name
+  fullName: Location.Name
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="name")]
+
+      public string Name { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.Location.Name*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botconnector-1.1.0
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Location.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.Location.#ctor
+  parent: Microsoft.Bot.Connector.Location
+  isExternal: false
+  name: Location()
+  nameWithType: Location.Location()
+  fullName: Location.Location()
+- uid: Microsoft.Bot.Connector.Location.#ctor(System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},System.String)
+  parent: Microsoft.Bot.Connector.Location
+  isExternal: false
+  name: Location(Nullable<Double>, Nullable<Double>, Nullable<Double>, String)
+  nameWithType: Location.Location(Nullable<Double>, Nullable<Double>, Nullable<Double>, String)
+  fullName: Location.Location(Nullable<Double>, Nullable<Double>, Nullable<Double>, String)
+- uid: System.Nullable`1
+  name: Nullable
+  nameWithType: Nullable
+  fullName: System.Nullable
+- uid: System.Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: System.Nullable{System.Double}
+  parent: System
+  isExternal: true
+  name: Nullable<Double>
+  nameWithType: Nullable<Double>
+  fullName: System.Nullable<System.Double>
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.Location.Altitude
+  parent: Microsoft.Bot.Connector.Location
+  isExternal: false
+  name: Altitude
+  nameWithType: Location.Altitude
+  fullName: Location.Altitude
+- uid: Microsoft.Bot.Connector.Location.Latitude
+  parent: Microsoft.Bot.Connector.Location
+  isExternal: false
+  name: Latitude
+  nameWithType: Location.Latitude
+  fullName: Location.Latitude
+- uid: Microsoft.Bot.Connector.Location.Longitude
+  parent: Microsoft.Bot.Connector.Location
+  isExternal: false
+  name: Longitude
+  nameWithType: Location.Longitude
+  fullName: Location.Longitude
+- uid: Microsoft.Bot.Connector.Location.Name
+  parent: Microsoft.Bot.Connector.Location
+  isExternal: false
+  name: Name
+  nameWithType: Location.Name
+  fullName: Location.Name
+- uid: Microsoft.Bot.Connector.Location.#ctor*
+  parent: Microsoft.Bot.Connector.Location
+  isExternal: false
+  name: Location
+  nameWithType: Location.Location
+  fullName: Location.Location
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Location.xml
+- uid: Microsoft.Bot.Connector.Location.Altitude*
+  parent: Microsoft.Bot.Connector.Location
+  isExternal: false
+  name: Altitude
+  nameWithType: Location.Altitude
+  fullName: Location.Altitude
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Location.xml
+- uid: Microsoft.Bot.Connector.Location.Latitude*
+  parent: Microsoft.Bot.Connector.Location
+  isExternal: false
+  name: Latitude
+  nameWithType: Location.Latitude
+  fullName: Location.Latitude
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Location.xml
+- uid: Microsoft.Bot.Connector.Location.Longitude*
+  parent: Microsoft.Bot.Connector.Location
+  isExternal: false
+  name: Longitude
+  nameWithType: Location.Longitude
+  fullName: Location.Longitude
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Location.xml
+- uid: Microsoft.Bot.Connector.Location.Name*
+  parent: Microsoft.Bot.Connector.Location
+  isExternal: false
+  name: Name
+  nameWithType: Location.Name
+  fullName: Location.Name
+  monikers:
+  - botconnector-1.1.0
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/Location.xml

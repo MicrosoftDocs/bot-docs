@@ -1,0 +1,1501 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  commentId: T:Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  id: Extensions
+  children:
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.Call``3(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1},``1,Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``2})
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.Call``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1},``1)
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.CloneTyped``1(Microsoft.Bot.Builder.Internals.Fibers.IWait{``0})
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.Done``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},``1)
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.Enumerate(Microsoft.Bot.Builder.Internals.Fibers.Range{System.Int32})
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.Equals``1(System.Collections.Generic.IReadOnlyList{``0},System.Collections.Generic.IReadOnlyList{``0},System.Collections.Generic.IEqualityComparer{``0})
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.Fail``1(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},System.Exception)
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.GetOrAdd``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``0,``1})
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.GetValue``1(System.Runtime.Serialization.SerializationInfo,System.String)
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.Min``1(``0,``0)
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.Peek``1(System.Collections.Generic.IReadOnlyList{``0})
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.Pop``1(System.Collections.Generic.List{``0})
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.Post``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},``1)
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.Push``1(System.Collections.Generic.IList{``0},``0)
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.Reset``1(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0})
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.SortedMerge``1(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{``0}},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{``0}})
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.ToList``2(System.Collections.Generic.IReadOnlyList{``0},System.Func{``0,``1})
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.ToTask``1(Microsoft.Bot.Builder.Dialogs.IAwaitable{``0})
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.ValidateNeed(Microsoft.Bot.Builder.Internals.Fibers.IWait,Microsoft.Bot.Builder.Internals.Fibers.Need)
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.Wait``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1})
+  langs:
+  - csharp
+  name: Extensions
+  nameWithType: Extensions
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public static class Extensions
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Call``3(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1},``1,Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``2})
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.Call``3(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1},``1,Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``2})
+  id: Call``3(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1},``1,Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``2})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  langs:
+  - csharp
+  name: Call<C,T,R>(IFiber<C>, Rest<C,T>, T, Rest<C,R>)
+  nameWithType: Extensions.Call<C,T,R>(IFiber<C>, Rest<C,T>, T, Rest<C,R>)
+  fullName: Extensions.Call<C,T,R>(IFiber<C>, Rest<C,T>, T, Rest<C,R>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  summary: Scheduled a wait for the return value, then invoke the <xref href="Microsoft.Bot.Builder.Internals.Fibers.Extensions.Call``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1},``1)"></xref> method.
+  syntax:
+    content: public static Microsoft.Bot.Builder.Internals.Fibers.IWait<C> Call<C,T,R> (this Microsoft.Bot.Builder.Internals.Fibers.IFiber<C> fiber, Microsoft.Bot.Builder.Internals.Fibers.Rest<C,T> invokeHandler, T item, Microsoft.Bot.Builder.Internals.Fibers.Rest<C,R> returnHandler);
+    parameters:
+    - id: fiber
+      type: Microsoft.Bot.Builder.Internals.Fibers.IFiber`1
+      description: To be added.
+    - id: invokeHandler
+      type: Microsoft.Bot.Builder.Internals.Fibers.Rest`2
+      description: To be added.
+    - id: item
+      type: T
+      description: To be added.
+    - id: returnHandler
+      type: Microsoft.Bot.Builder.Internals.Fibers.Rest{C,R}
+      description: To be added.
+    typeParameters:
+    - id: C
+      description: To be added.
+    - id: T
+      description: To be added.
+    - id: R
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Internals.Fibers.IWait`1
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Call``3*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Call``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1},``1)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.Call``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1},``1)
+  id: Call``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1},``1)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  langs:
+  - csharp
+  name: Call<C,T>(IFiber<C>, Rest<C,T>, T)
+  nameWithType: Extensions.Call<C,T>(IFiber<C>, Rest<C,T>, T)
+  fullName: Extensions.Call<C,T>(IFiber<C>, Rest<C,T>, T)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  summary: Push a frame on the stack, schedule a wait, and immediately satisfy that wait.
+  remarks: >-
+    This overload is used to allow a child to later call <xref href="Microsoft.Bot.Builder.Internals.Fibers.Extensions.Done``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},``1)"></xref>
+                to satisfy an existing wait without scheduling a new wait for the child's return value.
+  syntax:
+    content: public static Microsoft.Bot.Builder.Internals.Fibers.IWait<C> Call<C,T> (this Microsoft.Bot.Builder.Internals.Fibers.IFiber<C> fiber, Microsoft.Bot.Builder.Internals.Fibers.Rest<C,T> invokeHandler, T item);
+    parameters:
+    - id: fiber
+      type: Microsoft.Bot.Builder.Internals.Fibers.IFiber`1
+      description: To be added.
+    - id: invokeHandler
+      type: Microsoft.Bot.Builder.Internals.Fibers.Rest`2
+      description: To be added.
+    - id: item
+      type: T
+      description: To be added.
+    typeParameters:
+    - id: C
+      description: To be added.
+    - id: T
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Internals.Fibers.IWait`1
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Call``2*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.CloneTyped``1(Microsoft.Bot.Builder.Internals.Fibers.IWait{``0})
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.CloneTyped``1(Microsoft.Bot.Builder.Internals.Fibers.IWait{``0})
+  id: CloneTyped``1(Microsoft.Bot.Builder.Internals.Fibers.IWait{``0})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  langs:
+  - csharp
+  name: CloneTyped<C>(IWait<C>)
+  nameWithType: Extensions.CloneTyped<C>(IWait<C>)
+  fullName: Extensions.CloneTyped<C>(IWait<C>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public static Microsoft.Bot.Builder.Internals.Fibers.IWait<C> CloneTyped<C> (this Microsoft.Bot.Builder.Internals.Fibers.IWait<C> wait);
+    parameters:
+    - id: wait
+      type: Microsoft.Bot.Builder.Internals.Fibers.IWait`1
+      description: To be added.
+    typeParameters:
+    - id: C
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Internals.Fibers.IWait`1
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Extensions.CloneTyped``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Done``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},``1)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.Done``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},``1)
+  id: Done``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},``1)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  langs:
+  - csharp
+  name: Done<C,T>(IFiber<C>, T)
+  nameWithType: Extensions.Done<C,T>(IFiber<C>, T)
+  fullName: Extensions.Done<C,T>(IFiber<C>, T)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  summary: Remove the frame from the stack, and satisfy the existing wait with the return value.
+  syntax:
+    content: public static Microsoft.Bot.Builder.Internals.Fibers.IWait<C> Done<C,T> (this Microsoft.Bot.Builder.Internals.Fibers.IFiber<C> fiber, T item);
+    parameters:
+    - id: fiber
+      type: Microsoft.Bot.Builder.Internals.Fibers.IFiber`1
+      description: To be added.
+    - id: item
+      type: T
+      description: To be added.
+    typeParameters:
+    - id: C
+      description: To be added.
+    - id: T
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Internals.Fibers.IWait`1
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Done``2*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Enumerate(Microsoft.Bot.Builder.Internals.Fibers.Range{System.Int32})
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.Enumerate(Microsoft.Bot.Builder.Internals.Fibers.Range{System.Int32})
+  id: Enumerate(Microsoft.Bot.Builder.Internals.Fibers.Range{System.Int32})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  langs:
+  - csharp
+  name: Enumerate(Range<Int32>)
+  nameWithType: Extensions.Enumerate(Range<Int32>)
+  fullName: Extensions.Enumerate(Range<Int32>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Internals.Fibers.Extensions/<Enumerate>d__7))]
+
+      public static System.Collections.Generic.IEnumerable<int> Enumerate (this Microsoft.Bot.Builder.Internals.Fibers.Range<int> range);
+    parameters:
+    - id: range
+      type: Microsoft.Bot.Builder.Internals.Fibers.Range{System.Int32}
+      description: To be added.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Int32}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Enumerate*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.IteratorStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Equals``1(System.Collections.Generic.IReadOnlyList{``0},System.Collections.Generic.IReadOnlyList{``0},System.Collections.Generic.IEqualityComparer{``0})
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.Equals``1(System.Collections.Generic.IReadOnlyList{``0},System.Collections.Generic.IReadOnlyList{``0},System.Collections.Generic.IEqualityComparer{``0})
+  id: Equals``1(System.Collections.Generic.IReadOnlyList{``0},System.Collections.Generic.IReadOnlyList{``0},System.Collections.Generic.IEqualityComparer{``0})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  langs:
+  - csharp
+  name: Equals<T>(IReadOnlyList<T>, IReadOnlyList<T>, IEqualityComparer<T>)
+  nameWithType: Extensions.Equals<T>(IReadOnlyList<T>, IReadOnlyList<T>, IEqualityComparer<T>)
+  fullName: Extensions.Equals<T>(IReadOnlyList<T>, IReadOnlyList<T>, IEqualityComparer<T>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public static bool Equals<T> (this System.Collections.Generic.IReadOnlyList<T> one, System.Collections.Generic.IReadOnlyList<T> two, System.Collections.Generic.IEqualityComparer<T> comparer);
+    parameters:
+    - id: one
+      type: System.Collections.Generic.IReadOnlyList{T}
+      description: To be added.
+    - id: two
+      type: System.Collections.Generic.IReadOnlyList{T}
+      description: To be added.
+    - id: comparer
+      type: System.Collections.Generic.IEqualityComparer{T}
+      description: To be added.
+    typeParameters:
+    - id: T
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Equals``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Fail``1(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},System.Exception)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.Fail``1(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},System.Exception)
+  id: Fail``1(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},System.Exception)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  langs:
+  - csharp
+  name: Fail<C>(IFiber<C>, Exception)
+  nameWithType: Extensions.Fail<C>(IFiber<C>, Exception)
+  fullName: Extensions.Fail<C>(IFiber<C>, Exception)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public static Microsoft.Bot.Builder.Internals.Fibers.IWait<C> Fail<C> (this Microsoft.Bot.Builder.Internals.Fibers.IFiber<C> fiber, Exception error);
+    parameters:
+    - id: fiber
+      type: Microsoft.Bot.Builder.Internals.Fibers.IFiber`1
+      description: To be added.
+    - id: error
+      type: System.Exception
+      description: To be added.
+    typeParameters:
+    - id: C
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Internals.Fibers.IWait`1
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Fail``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.GetOrAdd``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``0,``1})
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.GetOrAdd``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``0,``1})
+  id: GetOrAdd``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``0,``1})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  langs:
+  - csharp
+  name: GetOrAdd<K,V>(IDictionary<K,V>, K, Func<K,V>)
+  nameWithType: Extensions.GetOrAdd<K,V>(IDictionary<K,V>, K, Func<K,V>)
+  fullName: Extensions.GetOrAdd<K,V>(IDictionary<K,V>, K, Func<K,V>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public static V GetOrAdd<K,V> (this System.Collections.Generic.IDictionary<K,V> valueByKey, K key, Func<K,V> make);
+    parameters:
+    - id: valueByKey
+      type: System.Collections.Generic.IDictionary{K,V}
+      description: To be added.
+    - id: key
+      type: K
+      description: To be added.
+    - id: make
+      type: System.Func{K,V}
+      description: To be added.
+    typeParameters:
+    - id: K
+      description: To be added.
+    - id: V
+      description: To be added.
+    return:
+      type: V
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Extensions.GetOrAdd``2*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.GetValue``1(System.Runtime.Serialization.SerializationInfo,System.String)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.GetValue``1(System.Runtime.Serialization.SerializationInfo,System.String)
+  id: GetValue``1(System.Runtime.Serialization.SerializationInfo,System.String)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  langs:
+  - csharp
+  name: GetValue<T>(SerializationInfo, String)
+  nameWithType: Extensions.GetValue<T>(SerializationInfo, String)
+  fullName: Extensions.GetValue<T>(SerializationInfo, String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public static T GetValue<T> (this System.Runtime.Serialization.SerializationInfo info, string name);
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: To be added.
+    - id: name
+      type: System.String
+      description: To be added.
+    typeParameters:
+    - id: T
+      description: To be added.
+    return:
+      type: T
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Extensions.GetValue``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Min``1(``0,``0)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.Min``1(``0,``0)
+  id: Min``1(``0,``0)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  langs:
+  - csharp
+  name: Min<T>(T, T)
+  nameWithType: Extensions.Min<T>(T, T)
+  fullName: Extensions.Min<T>(T, T)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: 'public static T Min<T> (T one, T two) where T : IComparable<T>;'
+    parameters:
+    - id: one
+      type: T
+      description: To be added.
+    - id: two
+      type: T
+      description: To be added.
+    typeParameters:
+    - id: T
+      description: To be added.
+    return:
+      type: T
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Min``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Peek``1(System.Collections.Generic.IReadOnlyList{``0})
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.Peek``1(System.Collections.Generic.IReadOnlyList{``0})
+  id: Peek``1(System.Collections.Generic.IReadOnlyList{``0})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  langs:
+  - csharp
+  name: Peek<T>(IReadOnlyList<T>)
+  nameWithType: Extensions.Peek<T>(IReadOnlyList<T>)
+  fullName: Extensions.Peek<T>(IReadOnlyList<T>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public static T Peek<T> (this System.Collections.Generic.IReadOnlyList<T> stack);
+    parameters:
+    - id: stack
+      type: System.Collections.Generic.IReadOnlyList{T}
+      description: To be added.
+    typeParameters:
+    - id: T
+      description: To be added.
+    return:
+      type: T
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Peek``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Pop``1(System.Collections.Generic.List{``0})
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.Pop``1(System.Collections.Generic.List{``0})
+  id: Pop``1(System.Collections.Generic.List{``0})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  langs:
+  - csharp
+  name: Pop<T>(List<T>)
+  nameWithType: Extensions.Pop<T>(List<T>)
+  fullName: Extensions.Pop<T>(List<T>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public static T Pop<T> (this System.Collections.Generic.List<T> stack);
+    parameters:
+    - id: stack
+      type: System.Collections.Generic.List{T}
+      description: To be added.
+    typeParameters:
+    - id: T
+      description: To be added.
+    return:
+      type: T
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Pop``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Post``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},``1)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.Post``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},``1)
+  id: Post``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},``1)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  langs:
+  - csharp
+  name: Post<C,T>(IFiber<C>, T)
+  nameWithType: Extensions.Post<C,T>(IFiber<C>, T)
+  fullName: Extensions.Post<C,T>(IFiber<C>, T)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public static Microsoft.Bot.Builder.Internals.Fibers.IWait<C> Post<C,T> (this Microsoft.Bot.Builder.Internals.Fibers.IFiber<C> fiber, T item);
+    parameters:
+    - id: fiber
+      type: Microsoft.Bot.Builder.Internals.Fibers.IFiber`1
+      description: To be added.
+    - id: item
+      type: T
+      description: To be added.
+    typeParameters:
+    - id: C
+      description: To be added.
+    - id: T
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Internals.Fibers.IWait`1
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Post``2*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Push``1(System.Collections.Generic.IList{``0},``0)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.Push``1(System.Collections.Generic.IList{``0},``0)
+  id: Push``1(System.Collections.Generic.IList{``0},``0)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  langs:
+  - csharp
+  name: Push<T>(IList<T>, T)
+  nameWithType: Extensions.Push<T>(IList<T>, T)
+  fullName: Extensions.Push<T>(IList<T>, T)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public static void Push<T> (this System.Collections.Generic.IList<T> stack, T item);
+    parameters:
+    - id: stack
+      type: System.Collections.Generic.IList{T}
+      description: To be added.
+    - id: item
+      type: T
+      description: To be added.
+    typeParameters:
+    - id: T
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Push``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Reset``1(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0})
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.Reset``1(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0})
+  id: Reset``1(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  langs:
+  - csharp
+  name: Reset<C>(IFiber<C>)
+  nameWithType: Extensions.Reset<C>(IFiber<C>)
+  fullName: Extensions.Reset<C>(IFiber<C>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public static void Reset<C> (this Microsoft.Bot.Builder.Internals.Fibers.IFiber<C> fiber);
+    parameters:
+    - id: fiber
+      type: Microsoft.Bot.Builder.Internals.Fibers.IFiber`1
+      description: To be added.
+    typeParameters:
+    - id: C
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Reset``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.SortedMerge``1(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{``0}},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{``0}})
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.SortedMerge``1(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{``0}},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{``0}})
+  id: SortedMerge``1(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{``0}},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{``0}})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  langs:
+  - csharp
+  name: SortedMerge<T>(IEnumerable<Range<T>>, IEnumerable<Range<T>>)
+  nameWithType: Extensions.SortedMerge<T>(IEnumerable<Range<T>>, IEnumerable<Range<T>>)
+  fullName: Extensions.SortedMerge<T>(IEnumerable<Range<T>>, IEnumerable<Range<T>>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Internals.Fibers.Extensions/<SortedMerge>d__10`1))]
+
+      public static System.Collections.Generic.IEnumerable<Microsoft.Bot.Builder.Internals.Fibers.Range<T>> SortedMerge<T> (this System.Collections.Generic.IEnumerable<Microsoft.Bot.Builder.Internals.Fibers.Range<T>> oneItems, System.Collections.Generic.IEnumerable<Microsoft.Bot.Builder.Internals.Fibers.Range<T>> twoItems) where T : IEquatable<T>, IComparable<T>;
+    parameters:
+    - id: oneItems
+      type: System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{T}}
+      description: To be added.
+    - id: twoItems
+      type: System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{T}}
+      description: To be added.
+    typeParameters:
+    - id: T
+      description: To be added.
+    return:
+      type: System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{T}}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Extensions.SortedMerge``1*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.IteratorStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.ToList``2(System.Collections.Generic.IReadOnlyList{``0},System.Func{``0,``1})
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.ToList``2(System.Collections.Generic.IReadOnlyList{``0},System.Func{``0,``1})
+  id: ToList``2(System.Collections.Generic.IReadOnlyList{``0},System.Func{``0,``1})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  langs:
+  - csharp
+  name: ToList<T,R>(IReadOnlyList<T>, Func<T,R>)
+  nameWithType: Extensions.ToList<T,R>(IReadOnlyList<T>, Func<T,R>)
+  fullName: Extensions.ToList<T,R>(IReadOnlyList<T>, Func<T,R>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public static System.Collections.Generic.IReadOnlyList<R> ToList<T,R> (this System.Collections.Generic.IReadOnlyList<T> source, Func<T,R> selector);
+    parameters:
+    - id: source
+      type: System.Collections.Generic.IReadOnlyList{T}
+      description: To be added.
+    - id: selector
+      type: System.Func{T,R}
+      description: To be added.
+    typeParameters:
+    - id: T
+      description: To be added.
+    - id: R
+      description: To be added.
+    return:
+      type: System.Collections.Generic.IReadOnlyList{R}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Extensions.ToList``2*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.ToTask``1(Microsoft.Bot.Builder.Dialogs.IAwaitable{``0})
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.ToTask``1(Microsoft.Bot.Builder.Dialogs.IAwaitable{``0})
+  id: ToTask``1(Microsoft.Bot.Builder.Dialogs.IAwaitable{``0})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  langs:
+  - csharp
+  name: ToTask<T>(IAwaitable<T>)
+  nameWithType: Extensions.ToTask<T>(IAwaitable<T>)
+  fullName: Extensions.ToTask<T>(IAwaitable<T>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public static System.Threading.Tasks.Task<T> ToTask<T> (this Microsoft.Bot.Builder.Dialogs.IAwaitable<T> item);
+    parameters:
+    - id: item
+      type: Microsoft.Bot.Builder.Dialogs.IAwaitable`1
+      description: To be added.
+    typeParameters:
+    - id: T
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task{T}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Extensions.ToTask``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.ValidateNeed(Microsoft.Bot.Builder.Internals.Fibers.IWait,Microsoft.Bot.Builder.Internals.Fibers.Need)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.ValidateNeed(Microsoft.Bot.Builder.Internals.Fibers.IWait,Microsoft.Bot.Builder.Internals.Fibers.Need)
+  id: ValidateNeed(Microsoft.Bot.Builder.Internals.Fibers.IWait,Microsoft.Bot.Builder.Internals.Fibers.Need)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  langs:
+  - csharp
+  name: ValidateNeed(IWait, Need)
+  nameWithType: Extensions.ValidateNeed(IWait, Need)
+  fullName: Extensions.ValidateNeed(IWait, Need)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public static void ValidateNeed (this Microsoft.Bot.Builder.Internals.Fibers.IWait wait, Microsoft.Bot.Builder.Internals.Fibers.Need need);
+    parameters:
+    - id: wait
+      type: Microsoft.Bot.Builder.Internals.Fibers.IWait
+      description: To be added.
+    - id: need
+      type: Microsoft.Bot.Builder.Internals.Fibers.Need
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Extensions.ValidateNeed*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Wait``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1})
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.Wait``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1})
+  id: Wait``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  langs:
+  - csharp
+  name: Wait<C,T>(IFiber<C>, Rest<C,T>)
+  nameWithType: Extensions.Wait<C,T>(IFiber<C>, Rest<C,T>)
+  fullName: Extensions.Wait<C,T>(IFiber<C>, Rest<C,T>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  summary: Without pushing or popping the stack, schedule a wait to be satisfied later.
+  syntax:
+    content: public static Microsoft.Bot.Builder.Internals.Fibers.IWait<C> Wait<C,T> (this Microsoft.Bot.Builder.Internals.Fibers.IFiber<C> fiber, Microsoft.Bot.Builder.Internals.Fibers.Rest<C,T> resumeHandler);
+    parameters:
+    - id: fiber
+      type: Microsoft.Bot.Builder.Internals.Fibers.IFiber`1
+      description: To be added.
+    - id: resumeHandler
+      type: Microsoft.Bot.Builder.Internals.Fibers.Rest`2
+      description: To be added.
+    typeParameters:
+    - id: C
+      description: To be added.
+    - id: T
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Internals.Fibers.IWait`1
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Wait``2*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Call``3(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1},``1,Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``2})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Call<C,T,R>(IFiber<C>, Rest<C,T>, T, Rest<C,R>)
+  nameWithType: Extensions.Call<C,T,R>(IFiber<C>, Rest<C,T>, T, Rest<C,R>)
+  fullName: Extensions.Call<C,T,R>(IFiber<C>, Rest<C,T>, T, Rest<C,R>)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IWait`1
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: IWait<C>
+  nameWithType: IWait<C>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IWait<C>
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IFiber`1
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: IFiber<C>
+  nameWithType: IFiber<C>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IFiber<C>
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Rest`2
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: Rest<C,T>
+  nameWithType: Rest<C,T>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.Rest<C,T>
+- uid: T
+  isExternal: true
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: C
+  name: C
+  nameWithType: C
+  fullName: C
+- uid: R
+  name: R
+  nameWithType: R
+  fullName: R
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Rest{C,R}
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: Rest<C,R>
+  nameWithType: Rest<C,R>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.Rest<C,R>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Rest`2
+    name: Rest
+    nameWithType: Rest
+    fullName: Microsoft.Bot.Builder.Internals.Fibers.Rest
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: C
+    name: C
+    nameWithType: C
+    fullName: C
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: R
+    name: R
+    nameWithType: R
+    fullName: R
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Call``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1},``1)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Call<C,T>(IFiber<C>, Rest<C,T>, T)
+  nameWithType: Extensions.Call<C,T>(IFiber<C>, Rest<C,T>, T)
+  fullName: Extensions.Call<C,T>(IFiber<C>, Rest<C,T>, T)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.CloneTyped``1(Microsoft.Bot.Builder.Internals.Fibers.IWait{``0})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: CloneTyped<C>(IWait<C>)
+  nameWithType: Extensions.CloneTyped<C>(IWait<C>)
+  fullName: Extensions.CloneTyped<C>(IWait<C>)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Done``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},``1)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Done<C,T>(IFiber<C>, T)
+  nameWithType: Extensions.Done<C,T>(IFiber<C>, T)
+  fullName: Extensions.Done<C,T>(IFiber<C>, T)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Enumerate(Microsoft.Bot.Builder.Internals.Fibers.Range{System.Int32})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Enumerate(Range<Int32>)
+  nameWithType: Extensions.Enumerate(Range<Int32>)
+  fullName: Extensions.Enumerate(Range<Int32>)
+- uid: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.Generic.IEnumerable
+- uid: System.Int32
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.IEnumerable{System.Int32}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<Int32>
+  nameWithType: IEnumerable<Int32>
+  fullName: System.Collections.Generic.IEnumerable<System.Int32>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+  name: Range<T>
+  nameWithType: Range<T>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.Range<T>
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Range{System.Int32}
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: Range<Int32>
+  nameWithType: Range<Int32>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.Range<System.Int32>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+    name: Range
+    nameWithType: Range
+    fullName: Microsoft.Bot.Builder.Internals.Fibers.Range
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Equals``1(System.Collections.Generic.IReadOnlyList{``0},System.Collections.Generic.IReadOnlyList{``0},System.Collections.Generic.IEqualityComparer{``0})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Equals<T>(IReadOnlyList<T>, IReadOnlyList<T>, IEqualityComparer<T>)
+  nameWithType: Extensions.Equals<T>(IReadOnlyList<T>, IReadOnlyList<T>, IEqualityComparer<T>)
+  fullName: Extensions.Equals<T>(IReadOnlyList<T>, IReadOnlyList<T>, IEqualityComparer<T>)
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.Generic.IReadOnlyList`1
+  name: IReadOnlyList
+  nameWithType: IReadOnlyList
+  fullName: System.Collections.Generic.IReadOnlyList
+- uid: System.Collections.Generic.IReadOnlyList{T}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T
+    name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Collections.Generic.IEqualityComparer`1
+  name: IEqualityComparer
+  nameWithType: IEqualityComparer
+  fullName: System.Collections.Generic.IEqualityComparer
+- uid: System.Collections.Generic.IEqualityComparer{T}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEqualityComparer<T>
+  nameWithType: IEqualityComparer<T>
+  fullName: System.Collections.Generic.IEqualityComparer<T>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    nameWithType: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T
+    name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Fail``1(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},System.Exception)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Fail<C>(IFiber<C>, Exception)
+  nameWithType: Extensions.Fail<C>(IFiber<C>, Exception)
+  fullName: Extensions.Fail<C>(IFiber<C>, Exception)
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.GetOrAdd``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``0,``1})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: GetOrAdd<K,V>(IDictionary<K,V>, K, Func<K,V>)
+  nameWithType: Extensions.GetOrAdd<K,V>(IDictionary<K,V>, K, Func<K,V>)
+  fullName: Extensions.GetOrAdd<K,V>(IDictionary<K,V>, K, Func<K,V>)
+- uid: V
+  isExternal: true
+  name: V
+  nameWithType: V
+  fullName: V
+- uid: System.Collections.Generic.IDictionary`2
+  name: IDictionary
+  nameWithType: IDictionary
+  fullName: System.Collections.Generic.IDictionary
+- uid: K
+  name: K
+  nameWithType: K
+  fullName: K
+- uid: System.Collections.Generic.IDictionary{K,V}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IDictionary<K,V>
+  nameWithType: IDictionary<K,V>
+  fullName: System.Collections.Generic.IDictionary<K,V>
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: K
+    name: K
+    nameWithType: K
+    fullName: K
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: V
+    name: V
+    nameWithType: V
+    fullName: V
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Func`2
+  name: Func
+  nameWithType: Func
+  fullName: System.Func
+- uid: System.Func{K,V}
+  parent: System
+  isExternal: true
+  name: Func<K,V>
+  nameWithType: Func<K,V>
+  fullName: System.Func<K,V>
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: K
+    name: K
+    nameWithType: K
+    fullName: K
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: V
+    name: V
+    nameWithType: V
+    fullName: V
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.GetValue``1(System.Runtime.Serialization.SerializationInfo,System.String)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: GetValue<T>(SerializationInfo, String)
+  nameWithType: Extensions.GetValue<T>(SerializationInfo, String)
+  fullName: Extensions.GetValue<T>(SerializationInfo, String)
+- uid: System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Min``1(``0,``0)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Min<T>(T, T)
+  nameWithType: Extensions.Min<T>(T, T)
+  fullName: Extensions.Min<T>(T, T)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Peek``1(System.Collections.Generic.IReadOnlyList{``0})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Peek<T>(IReadOnlyList<T>)
+  nameWithType: Extensions.Peek<T>(IReadOnlyList<T>)
+  fullName: Extensions.Peek<T>(IReadOnlyList<T>)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Pop``1(System.Collections.Generic.List{``0})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Pop<T>(List<T>)
+  nameWithType: Extensions.Pop<T>(List<T>)
+  fullName: Extensions.Pop<T>(List<T>)
+- uid: System.Collections.Generic.List`1
+  name: List
+  nameWithType: List
+  fullName: System.Collections.Generic.List
+- uid: System.Collections.Generic.List{T}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T
+    name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Post``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},``1)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Post<C,T>(IFiber<C>, T)
+  nameWithType: Extensions.Post<C,T>(IFiber<C>, T)
+  fullName: Extensions.Post<C,T>(IFiber<C>, T)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Push``1(System.Collections.Generic.IList{``0},``0)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Push<T>(IList<T>, T)
+  nameWithType: Extensions.Push<T>(IList<T>, T)
+  fullName: Extensions.Push<T>(IList<T>, T)
+- uid: System.Collections.Generic.IList`1
+  name: IList
+  nameWithType: IList
+  fullName: System.Collections.Generic.IList
+- uid: System.Collections.Generic.IList{T}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T
+    name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Reset``1(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Reset<C>(IFiber<C>)
+  nameWithType: Extensions.Reset<C>(IFiber<C>)
+  fullName: Extensions.Reset<C>(IFiber<C>)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.SortedMerge``1(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{``0}},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{``0}})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: SortedMerge<T>(IEnumerable<Range<T>>, IEnumerable<Range<T>>)
+  nameWithType: Extensions.SortedMerge<T>(IEnumerable<Range<T>>, IEnumerable<Range<T>>)
+  fullName: Extensions.SortedMerge<T>(IEnumerable<Range<T>>, IEnumerable<Range<T>>)
+- uid: System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{T}}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<Range<T>>
+  nameWithType: IEnumerable<Range<T>>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.Bot.Builder.Internals.Fibers.Range<T>>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.Range`1
+    name: Range
+    nameWithType: Range
+    fullName: Microsoft.Bot.Builder.Internals.Fibers.Range
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T
+    name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.ToList``2(System.Collections.Generic.IReadOnlyList{``0},System.Func{``0,``1})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: ToList<T,R>(IReadOnlyList<T>, Func<T,R>)
+  nameWithType: Extensions.ToList<T,R>(IReadOnlyList<T>, Func<T,R>)
+  fullName: Extensions.ToList<T,R>(IReadOnlyList<T>, Func<T,R>)
+- uid: System.Collections.Generic.IReadOnlyList{R}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IReadOnlyList<R>
+  nameWithType: IReadOnlyList<R>
+  fullName: System.Collections.Generic.IReadOnlyList<R>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R
+    name: R
+    nameWithType: R
+    fullName: R
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Func{T,R}
+  parent: System
+  isExternal: true
+  name: Func<T,R>
+  nameWithType: Func<T,R>
+  fullName: System.Func<T,R>
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T
+    name: T
+    nameWithType: T
+    fullName: T
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: R
+    name: R
+    nameWithType: R
+    fullName: R
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.ToTask``1(Microsoft.Bot.Builder.Dialogs.IAwaitable{``0})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: ToTask<T>(IAwaitable<T>)
+  nameWithType: Extensions.ToTask<T>(IAwaitable<T>)
+  fullName: Extensions.ToTask<T>(IAwaitable<T>)
+- uid: System.Threading.Tasks.Task`1
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks.Task{T}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: System.Threading.Tasks.Task<T>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T
+    name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.IAwaitable`1
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: IAwaitable<T>
+  nameWithType: IAwaitable<T>
+  fullName: Microsoft.Bot.Builder.Dialogs.IAwaitable<T>
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.ValidateNeed(Microsoft.Bot.Builder.Internals.Fibers.IWait,Microsoft.Bot.Builder.Internals.Fibers.Need)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: ValidateNeed(IWait, Need)
+  nameWithType: Extensions.ValidateNeed(IWait, Need)
+  fullName: Extensions.ValidateNeed(IWait, Need)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IWait
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: IWait
+  nameWithType: IWait
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IWait
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Need
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: Need
+  nameWithType: Need
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.Need
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Wait``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Wait<C,T>(IFiber<C>, Rest<C,T>)
+  nameWithType: Extensions.Wait<C,T>(IFiber<C>, Rest<C,T>)
+  fullName: Extensions.Wait<C,T>(IFiber<C>, Rest<C,T>)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Call``3*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Call<C,T,R>
+  nameWithType: Extensions.Call<C,T,R>
+  fullName: Extensions.Call<C,T,R>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Call``2*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Call<C,T>
+  nameWithType: Extensions.Call<C,T>
+  fullName: Extensions.Call<C,T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.CloneTyped``1*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: CloneTyped<C>
+  nameWithType: Extensions.CloneTyped<C>
+  fullName: Extensions.CloneTyped<C>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Done``2*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Done<C,T>
+  nameWithType: Extensions.Done<C,T>
+  fullName: Extensions.Done<C,T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Enumerate*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Enumerate
+  nameWithType: Extensions.Enumerate
+  fullName: Extensions.Enumerate
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Equals``1*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Equals<T>
+  nameWithType: Extensions.Equals<T>
+  fullName: Extensions.Equals<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Fail``1*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Fail<C>
+  nameWithType: Extensions.Fail<C>
+  fullName: Extensions.Fail<C>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.GetOrAdd``2*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: GetOrAdd<K,V>
+  nameWithType: Extensions.GetOrAdd<K,V>
+  fullName: Extensions.GetOrAdd<K,V>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.GetValue``1*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: GetValue<T>
+  nameWithType: Extensions.GetValue<T>
+  fullName: Extensions.GetValue<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Min``1*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Min<T>
+  nameWithType: Extensions.Min<T>
+  fullName: Extensions.Min<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Peek``1*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Peek<T>
+  nameWithType: Extensions.Peek<T>
+  fullName: Extensions.Peek<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Pop``1*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Pop<T>
+  nameWithType: Extensions.Pop<T>
+  fullName: Extensions.Pop<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Post``2*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Post<C,T>
+  nameWithType: Extensions.Post<C,T>
+  fullName: Extensions.Post<C,T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Push``1*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Push<T>
+  nameWithType: Extensions.Push<T>
+  fullName: Extensions.Push<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Reset``1*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Reset<C>
+  nameWithType: Extensions.Reset<C>
+  fullName: Extensions.Reset<C>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.SortedMerge``1*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: SortedMerge<T>
+  nameWithType: Extensions.SortedMerge<T>
+  fullName: Extensions.SortedMerge<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.ToList``2*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: ToList<T,R>
+  nameWithType: Extensions.ToList<T,R>
+  fullName: Extensions.ToList<T,R>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.ToTask``1*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: ToTask<T>
+  nameWithType: Extensions.ToTask<T>
+  fullName: Extensions.ToTask<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.ValidateNeed*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: ValidateNeed
+  nameWithType: Extensions.ValidateNeed
+  fullName: Extensions.ValidateNeed
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.Wait``2*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: Wait<C,T>
+  nameWithType: Extensions.Wait<C,T>
+  fullName: Extensions.Wait<C,T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Extensions.xml

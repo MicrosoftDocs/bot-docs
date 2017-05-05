@@ -1,0 +1,148 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.IBotContext
+  commentId: T:Microsoft.Bot.Builder.Dialogs.IBotContext
+  id: IBotContext
+  children:
+  - Microsoft.Bot.Builder.Dialogs.IBotContext.Activity
+  - Microsoft.Bot.Builder.Dialogs.IBotContext.CancellationToken
+  langs:
+  - csharp
+  name: IBotContext
+  nameWithType: IBotContext
+  fullName: Microsoft.Bot.Builder.Dialogs.IBotContext
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: The context for the bot.
+  syntax:
+    content: 'public interface IBotContext : Microsoft.Bot.Builder.Dialogs.Internals.IBotData, Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser'
+  derivedClasses:
+  - Microsoft.Bot.Builder.Dialogs.IDialogContext
+  implements:
+  - Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+  - Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser
+  extensionMethods:
+  - Microsoft.Bot.Builder.Dialogs.Extensions.PostAsync(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.String,System.String,System.Threading.CancellationToken)
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/IBotContext.xml
+- uid: Microsoft.Bot.Builder.Dialogs.IBotContext.Activity
+  commentId: P:Microsoft.Bot.Builder.Dialogs.IBotContext.Activity
+  id: Activity
+  parent: Microsoft.Bot.Builder.Dialogs.IBotContext
+  langs:
+  - csharp
+  name: Activity
+  nameWithType: IBotContext.Activity
+  fullName: IBotContext.Activity
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: The activity posted to bot.
+  remarks: >-
+    This is the incoming activity in reactive cases.
+                for proactive case, i.e. Conversation.ResumeAsync code path,
+                it will be the <xref href="Microsoft.Bot.Connector.IMessageActivity"></xref> returned by <xref href="Microsoft.Bot.Connector.ConversationReference.GetPostToBotMessage"></xref>.
+  syntax:
+    content: public Microsoft.Bot.Connector.IActivity Activity { get; }
+    return:
+      type: Microsoft.Bot.Connector.IActivity
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.IBotContext.Activity*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/IBotContext.xml
+- uid: Microsoft.Bot.Builder.Dialogs.IBotContext.CancellationToken
+  commentId: P:Microsoft.Bot.Builder.Dialogs.IBotContext.CancellationToken
+  id: CancellationToken
+  parent: Microsoft.Bot.Builder.Dialogs.IBotContext
+  langs:
+  - csharp
+  name: CancellationToken
+  nameWithType: IBotContext.CancellationToken
+  fullName: IBotContext.CancellationToken
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: public System.Threading.CancellationToken CancellationToken { get; }
+    return:
+      type: System.Threading.CancellationToken
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.IBotContext.CancellationToken*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/IBotContext.xml
+references:
+- uid: Microsoft.Bot.Builder.Dialogs.IBotContext.Activity
+  parent: Microsoft.Bot.Builder.Dialogs.IBotContext
+  isExternal: false
+  name: Activity
+  nameWithType: IBotContext.Activity
+  fullName: IBotContext.Activity
+- uid: Microsoft.Bot.Connector.IActivity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IActivity
+  nameWithType: IActivity
+  fullName: Microsoft.Bot.Connector.IActivity
+- uid: Microsoft.Bot.Builder.Dialogs.IBotContext.CancellationToken
+  parent: Microsoft.Bot.Builder.Dialogs.IBotContext
+  isExternal: false
+  name: CancellationToken
+  nameWithType: IBotContext.CancellationToken
+  fullName: IBotContext.CancellationToken
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Builder.Dialogs.IBotContext.Activity*
+  parent: Microsoft.Bot.Builder.Dialogs.IBotContext
+  isExternal: false
+  name: Activity
+  nameWithType: IBotContext.Activity
+  fullName: IBotContext.Activity
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/IBotContext.xml
+- uid: Microsoft.Bot.Builder.Dialogs.IBotContext.CancellationToken*
+  parent: Microsoft.Bot.Builder.Dialogs.IBotContext
+  isExternal: false
+  name: CancellationToken
+  nameWithType: IBotContext.CancellationToken
+  fullName: IBotContext.CancellationToken
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/IBotContext.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Extensions.PostAsync(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Extensions
+  isExternal: false
+  name: PostAsync(IBotToUser, String, String, CancellationToken)
+  nameWithType: Extensions.PostAsync(IBotToUser, String, String, CancellationToken)
+  fullName: Extensions.PostAsync(IBotToUser, String, String, CancellationToken)
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals
+  isExternal: false
+  name: IBotData
+  nameWithType: IBotData
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser
+  parent: Microsoft.Bot.Builder.Dialogs.Internals
+  isExternal: false
+  name: IBotToUser
+  nameWithType: IBotToUser
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser

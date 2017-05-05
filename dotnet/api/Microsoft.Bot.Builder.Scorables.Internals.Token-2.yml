@@ -1,0 +1,215 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Scorables.Internals.Token`2
+  commentId: T:Microsoft.Bot.Builder.Scorables.Internals.Token`2
+  id: Token`2
+  children:
+  - Microsoft.Bot.Builder.Scorables.Internals.Token`2.#ctor
+  - Microsoft.Bot.Builder.Scorables.Internals.Token`2.Item
+  - Microsoft.Bot.Builder.Scorables.Internals.Token`2.Scorable
+  - Microsoft.Bot.Builder.Scorables.Internals.Token`2.State
+  langs:
+  - csharp
+  name: Token<InnerItem,InnerScore>
+  nameWithType: Token<InnerItem,InnerScore>
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.Token<InnerItem,InnerScore>
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  summary: Provides the state to aggregate the state (and associated scorable) of multiple scorables.
+  syntax:
+    content: public class Token<InnerItem,InnerScore>
+    typeParameters:
+    - id: InnerItem
+      description: To be added.
+    - id: InnerScore
+      description: To be added.
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.Token
+  - Microsoft.Bot.Builder.Scorables.Internals.ResolverScope`1
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/Token`2.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.Token`2.#ctor
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.Token`2.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Builder.Scorables.Internals.Token`2
+  langs:
+  - csharp
+  name: Token<InnerItem,InnerScore>()
+  nameWithType: Token<InnerItem,InnerScore>.Token<InnerItem,InnerScore>()
+  fullName: Token<InnerItem,InnerScore>.Token<InnerItem,InnerScore>()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public Token ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.Scorables.Internals.Token`2.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/Token`2.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.Token`2.Item
+  commentId: F:Microsoft.Bot.Builder.Scorables.Internals.Token`2.Item
+  id: Item
+  parent: Microsoft.Bot.Builder.Scorables.Internals.Token`2
+  langs:
+  - csharp
+  name: Item
+  nameWithType: Token<InnerItem,InnerScore>.Item
+  fullName: Token<InnerItem,InnerScore>.Item
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public InnerItem Item;
+    return:
+      type: InnerItem
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/Token`2.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.Token`2.Scorable
+  commentId: F:Microsoft.Bot.Builder.Scorables.Internals.Token`2.Scorable
+  id: Scorable
+  parent: Microsoft.Bot.Builder.Scorables.Internals.Token`2
+  langs:
+  - csharp
+  name: Scorable
+  nameWithType: Token<InnerItem,InnerScore>.Scorable
+  fullName: Token<InnerItem,InnerScore>.Scorable
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public Microsoft.Bot.Builder.Scorables.IScorable<InnerItem,InnerScore> Scorable;
+    return:
+      type: Microsoft.Bot.Builder.Scorables.IScorable{InnerItem,InnerScore}
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/Token`2.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.Token`2.State
+  commentId: F:Microsoft.Bot.Builder.Scorables.Internals.Token`2.State
+  id: State
+  parent: Microsoft.Bot.Builder.Scorables.Internals.Token`2
+  langs:
+  - csharp
+  name: State
+  nameWithType: Token<InnerItem,InnerScore>.State
+  fullName: Token<InnerItem,InnerScore>.State
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public object State;
+    return:
+      type: System.Object
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/Token`2.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Scorables.Internals.Token`2.#ctor
+  parent: Microsoft.Bot.Builder.Scorables.Internals.Token`2
+  isExternal: false
+  name: Token<InnerItem,InnerScore>()
+  nameWithType: Token<InnerItem,InnerScore>.Token<InnerItem,InnerScore>()
+  fullName: Token<InnerItem,InnerScore>.Token<InnerItem,InnerScore>()
+- uid: Microsoft.Bot.Builder.Scorables.Internals.Token`2.Item
+  parent: Microsoft.Bot.Builder.Scorables.Internals.Token`2
+  isExternal: false
+  name: Item
+  nameWithType: Token<InnerItem,InnerScore>.Item
+  fullName: Token<InnerItem,InnerScore>.Item
+- uid: InnerItem
+  isExternal: true
+  name: InnerItem
+  nameWithType: InnerItem
+  fullName: InnerItem
+- uid: Microsoft.Bot.Builder.Scorables.Internals.Token`2.Scorable
+  parent: Microsoft.Bot.Builder.Scorables.Internals.Token`2
+  isExternal: false
+  name: Scorable
+  nameWithType: Token<InnerItem,InnerScore>.Scorable
+  fullName: Token<InnerItem,InnerScore>.Scorable
+- uid: Microsoft.Bot.Builder.Scorables.IScorable`2
+  name: IScorable<Item,Score>
+  nameWithType: IScorable<Item,Score>
+  fullName: Microsoft.Bot.Builder.Scorables.IScorable<Item,Score>
+- uid: InnerScore
+  name: InnerScore
+  nameWithType: InnerScore
+  fullName: InnerScore
+- uid: Microsoft.Bot.Builder.Scorables.IScorable{InnerItem,InnerScore}
+  parent: Microsoft.Bot.Builder.Scorables
+  isExternal: false
+  name: IScorable<InnerItem,InnerScore>
+  nameWithType: IScorable<InnerItem,InnerScore>
+  fullName: Microsoft.Bot.Builder.Scorables.IScorable<InnerItem,InnerScore>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Scorables.IScorable`2
+    name: IScorable
+    nameWithType: IScorable
+    fullName: Microsoft.Bot.Builder.Scorables.IScorable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: InnerItem
+    name: InnerItem
+    nameWithType: InnerItem
+    fullName: InnerItem
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: InnerScore
+    name: InnerScore
+    nameWithType: InnerScore
+    fullName: InnerScore
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Internals.Token`2.State
+  parent: Microsoft.Bot.Builder.Scorables.Internals.Token`2
+  isExternal: false
+  name: State
+  nameWithType: Token<InnerItem,InnerScore>.State
+  fullName: Token<InnerItem,InnerScore>.State
+- uid: Microsoft.Bot.Builder.Scorables.Internals.Token`2.#ctor*
+  parent: Microsoft.Bot.Builder.Scorables.Internals.Token`2
+  isExternal: false
+  name: Token<InnerItem,InnerScore>
+  nameWithType: Token<InnerItem,InnerScore>.Token<InnerItem,InnerScore>
+  fullName: Token<InnerItem,InnerScore>.Token<InnerItem,InnerScore>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/Token`2.xml

@@ -1,0 +1,477 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.ReceiptItem
+  commentId: T:Microsoft.Bot.Connector.ReceiptItem
+  id: ReceiptItem
+  children:
+  - Microsoft.Bot.Connector.ReceiptItem.#ctor
+  - Microsoft.Bot.Connector.ReceiptItem.#ctor(System.String,System.String,System.String,Microsoft.Bot.Connector.CardImage,System.String,System.String,Microsoft.Bot.Connector.CardAction)
+  - Microsoft.Bot.Connector.ReceiptItem.Image
+  - Microsoft.Bot.Connector.ReceiptItem.Price
+  - Microsoft.Bot.Connector.ReceiptItem.Quantity
+  - Microsoft.Bot.Connector.ReceiptItem.Subtitle
+  - Microsoft.Bot.Connector.ReceiptItem.Tap
+  - Microsoft.Bot.Connector.ReceiptItem.Text
+  - Microsoft.Bot.Connector.ReceiptItem.Title
+  langs:
+  - csharp
+  name: ReceiptItem
+  nameWithType: ReceiptItem
+  fullName: Microsoft.Bot.Connector.ReceiptItem
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: An item on a receipt card
+  syntax:
+    content: public class ReceiptItem
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ReceiptItem.xml
+- uid: Microsoft.Bot.Connector.ReceiptItem.#ctor
+  commentId: M:Microsoft.Bot.Connector.ReceiptItem.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Connector.ReceiptItem
+  langs:
+  - csharp
+  name: ReceiptItem()
+  nameWithType: ReceiptItem.ReceiptItem()
+  fullName: ReceiptItem.ReceiptItem()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the ReceiptItem class.
+  syntax:
+    content: public ReceiptItem ();
+    parameters: []
+  overload: Microsoft.Bot.Connector.ReceiptItem.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ReceiptItem.xml
+- uid: Microsoft.Bot.Connector.ReceiptItem.#ctor(System.String,System.String,System.String,Microsoft.Bot.Connector.CardImage,System.String,System.String,Microsoft.Bot.Connector.CardAction)
+  commentId: M:Microsoft.Bot.Connector.ReceiptItem.#ctor(System.String,System.String,System.String,Microsoft.Bot.Connector.CardImage,System.String,System.String,Microsoft.Bot.Connector.CardAction)
+  id: '#ctor(System.String,System.String,System.String,Microsoft.Bot.Connector.CardImage,System.String,System.String,Microsoft.Bot.Connector.CardAction)'
+  parent: Microsoft.Bot.Connector.ReceiptItem
+  langs:
+  - csharp
+  name: ReceiptItem(String, String, String, CardImage, String, String, CardAction)
+  nameWithType: ReceiptItem.ReceiptItem(String, String, String, CardImage, String, String, CardAction)
+  fullName: ReceiptItem.ReceiptItem(String, String, String, CardImage, String, String, CardAction)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the ReceiptItem class.
+  syntax:
+    content: public ReceiptItem (string title = null, string subtitle = null, string text = null, Microsoft.Bot.Connector.CardImage image = null, string price = null, string quantity = null, Microsoft.Bot.Connector.CardAction tap = null);
+    parameters:
+    - id: title
+      type: System.String
+      description: To be added.
+    - id: subtitle
+      type: System.String
+      description: To be added.
+    - id: text
+      type: System.String
+      description: To be added.
+    - id: image
+      type: Microsoft.Bot.Connector.CardImage
+      description: To be added.
+    - id: price
+      type: System.String
+      description: To be added.
+    - id: quantity
+      type: System.String
+      description: To be added.
+    - id: tap
+      type: Microsoft.Bot.Connector.CardAction
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ReceiptItem.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ReceiptItem.xml
+- uid: Microsoft.Bot.Connector.ReceiptItem.Image
+  commentId: P:Microsoft.Bot.Connector.ReceiptItem.Image
+  id: Image
+  parent: Microsoft.Bot.Connector.ReceiptItem
+  langs:
+  - csharp
+  name: Image
+  nameWithType: ReceiptItem.Image
+  fullName: ReceiptItem.Image
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Image
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="image")]
+
+      public Microsoft.Bot.Connector.CardImage Image { get; set; }
+    return:
+      type: Microsoft.Bot.Connector.CardImage
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ReceiptItem.Image*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ReceiptItem.xml
+- uid: Microsoft.Bot.Connector.ReceiptItem.Price
+  commentId: P:Microsoft.Bot.Connector.ReceiptItem.Price
+  id: Price
+  parent: Microsoft.Bot.Connector.ReceiptItem
+  langs:
+  - csharp
+  name: Price
+  nameWithType: ReceiptItem.Price
+  fullName: ReceiptItem.Price
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Amount with currency
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="price")]
+
+      public string Price { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ReceiptItem.Price*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ReceiptItem.xml
+- uid: Microsoft.Bot.Connector.ReceiptItem.Quantity
+  commentId: P:Microsoft.Bot.Connector.ReceiptItem.Quantity
+  id: Quantity
+  parent: Microsoft.Bot.Connector.ReceiptItem
+  langs:
+  - csharp
+  name: Quantity
+  nameWithType: ReceiptItem.Quantity
+  fullName: ReceiptItem.Quantity
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Number of items of given kind
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="quantity")]
+
+      public string Quantity { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ReceiptItem.Quantity*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ReceiptItem.xml
+- uid: Microsoft.Bot.Connector.ReceiptItem.Subtitle
+  commentId: P:Microsoft.Bot.Connector.ReceiptItem.Subtitle
+  id: Subtitle
+  parent: Microsoft.Bot.Connector.ReceiptItem
+  langs:
+  - csharp
+  name: Subtitle
+  nameWithType: ReceiptItem.Subtitle
+  fullName: ReceiptItem.Subtitle
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: >-
+    Subtitle appears just below Title field, differs from Title in
+                font styling only
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="subtitle")]
+
+      public string Subtitle { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ReceiptItem.Subtitle*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ReceiptItem.xml
+- uid: Microsoft.Bot.Connector.ReceiptItem.Tap
+  commentId: P:Microsoft.Bot.Connector.ReceiptItem.Tap
+  id: Tap
+  parent: Microsoft.Bot.Connector.ReceiptItem
+  langs:
+  - csharp
+  name: Tap
+  nameWithType: ReceiptItem.Tap
+  fullName: ReceiptItem.Tap
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: This action will be activated when user taps on the Item bubble.
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="tap")]
+
+      public Microsoft.Bot.Connector.CardAction Tap { get; set; }
+    return:
+      type: Microsoft.Bot.Connector.CardAction
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ReceiptItem.Tap*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ReceiptItem.xml
+- uid: Microsoft.Bot.Connector.ReceiptItem.Text
+  commentId: P:Microsoft.Bot.Connector.ReceiptItem.Text
+  id: Text
+  parent: Microsoft.Bot.Connector.ReceiptItem
+  langs:
+  - csharp
+  name: Text
+  nameWithType: ReceiptItem.Text
+  fullName: ReceiptItem.Text
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: >-
+    Text field appears just below subtitle, differs from Subtitle in
+                font styling only
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="text")]
+
+      public string Text { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ReceiptItem.Text*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ReceiptItem.xml
+- uid: Microsoft.Bot.Connector.ReceiptItem.Title
+  commentId: P:Microsoft.Bot.Connector.ReceiptItem.Title
+  id: Title
+  parent: Microsoft.Bot.Connector.ReceiptItem
+  langs:
+  - csharp
+  name: Title
+  nameWithType: ReceiptItem.Title
+  fullName: ReceiptItem.Title
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Title of the Card
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="title")]
+
+      public string Title { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ReceiptItem.Title*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ReceiptItem.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.ReceiptItem.#ctor
+  parent: Microsoft.Bot.Connector.ReceiptItem
+  isExternal: false
+  name: ReceiptItem()
+  nameWithType: ReceiptItem.ReceiptItem()
+  fullName: ReceiptItem.ReceiptItem()
+- uid: Microsoft.Bot.Connector.ReceiptItem.#ctor(System.String,System.String,System.String,Microsoft.Bot.Connector.CardImage,System.String,System.String,Microsoft.Bot.Connector.CardAction)
+  parent: Microsoft.Bot.Connector.ReceiptItem
+  isExternal: false
+  name: ReceiptItem(String, String, String, CardImage, String, String, CardAction)
+  nameWithType: ReceiptItem.ReceiptItem(String, String, String, CardImage, String, String, CardAction)
+  fullName: ReceiptItem.ReceiptItem(String, String, String, CardImage, String, String, CardAction)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.CardImage
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: CardImage
+  nameWithType: CardImage
+  fullName: Microsoft.Bot.Connector.CardImage
+- uid: Microsoft.Bot.Connector.CardAction
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: CardAction
+  nameWithType: CardAction
+  fullName: Microsoft.Bot.Connector.CardAction
+- uid: Microsoft.Bot.Connector.ReceiptItem.Image
+  parent: Microsoft.Bot.Connector.ReceiptItem
+  isExternal: false
+  name: Image
+  nameWithType: ReceiptItem.Image
+  fullName: ReceiptItem.Image
+- uid: Microsoft.Bot.Connector.ReceiptItem.Price
+  parent: Microsoft.Bot.Connector.ReceiptItem
+  isExternal: false
+  name: Price
+  nameWithType: ReceiptItem.Price
+  fullName: ReceiptItem.Price
+- uid: Microsoft.Bot.Connector.ReceiptItem.Quantity
+  parent: Microsoft.Bot.Connector.ReceiptItem
+  isExternal: false
+  name: Quantity
+  nameWithType: ReceiptItem.Quantity
+  fullName: ReceiptItem.Quantity
+- uid: Microsoft.Bot.Connector.ReceiptItem.Subtitle
+  parent: Microsoft.Bot.Connector.ReceiptItem
+  isExternal: false
+  name: Subtitle
+  nameWithType: ReceiptItem.Subtitle
+  fullName: ReceiptItem.Subtitle
+- uid: Microsoft.Bot.Connector.ReceiptItem.Tap
+  parent: Microsoft.Bot.Connector.ReceiptItem
+  isExternal: false
+  name: Tap
+  nameWithType: ReceiptItem.Tap
+  fullName: ReceiptItem.Tap
+- uid: Microsoft.Bot.Connector.ReceiptItem.Text
+  parent: Microsoft.Bot.Connector.ReceiptItem
+  isExternal: false
+  name: Text
+  nameWithType: ReceiptItem.Text
+  fullName: ReceiptItem.Text
+- uid: Microsoft.Bot.Connector.ReceiptItem.Title
+  parent: Microsoft.Bot.Connector.ReceiptItem
+  isExternal: false
+  name: Title
+  nameWithType: ReceiptItem.Title
+  fullName: ReceiptItem.Title
+- uid: Microsoft.Bot.Connector.ReceiptItem.#ctor*
+  parent: Microsoft.Bot.Connector.ReceiptItem
+  isExternal: false
+  name: ReceiptItem
+  nameWithType: ReceiptItem.ReceiptItem
+  fullName: ReceiptItem.ReceiptItem
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ReceiptItem.xml
+- uid: Microsoft.Bot.Connector.ReceiptItem.Image*
+  parent: Microsoft.Bot.Connector.ReceiptItem
+  isExternal: false
+  name: Image
+  nameWithType: ReceiptItem.Image
+  fullName: ReceiptItem.Image
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ReceiptItem.xml
+- uid: Microsoft.Bot.Connector.ReceiptItem.Price*
+  parent: Microsoft.Bot.Connector.ReceiptItem
+  isExternal: false
+  name: Price
+  nameWithType: ReceiptItem.Price
+  fullName: ReceiptItem.Price
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ReceiptItem.xml
+- uid: Microsoft.Bot.Connector.ReceiptItem.Quantity*
+  parent: Microsoft.Bot.Connector.ReceiptItem
+  isExternal: false
+  name: Quantity
+  nameWithType: ReceiptItem.Quantity
+  fullName: ReceiptItem.Quantity
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ReceiptItem.xml
+- uid: Microsoft.Bot.Connector.ReceiptItem.Subtitle*
+  parent: Microsoft.Bot.Connector.ReceiptItem
+  isExternal: false
+  name: Subtitle
+  nameWithType: ReceiptItem.Subtitle
+  fullName: ReceiptItem.Subtitle
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ReceiptItem.xml
+- uid: Microsoft.Bot.Connector.ReceiptItem.Tap*
+  parent: Microsoft.Bot.Connector.ReceiptItem
+  isExternal: false
+  name: Tap
+  nameWithType: ReceiptItem.Tap
+  fullName: ReceiptItem.Tap
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ReceiptItem.xml
+- uid: Microsoft.Bot.Connector.ReceiptItem.Text*
+  parent: Microsoft.Bot.Connector.ReceiptItem
+  isExternal: false
+  name: Text
+  nameWithType: ReceiptItem.Text
+  fullName: ReceiptItem.Text
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ReceiptItem.xml
+- uid: Microsoft.Bot.Connector.ReceiptItem.Title*
+  parent: Microsoft.Bot.Connector.ReceiptItem
+  isExternal: false
+  name: Title
+  nameWithType: ReceiptItem.Title
+  fullName: ReceiptItem.Title
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ReceiptItem.xml

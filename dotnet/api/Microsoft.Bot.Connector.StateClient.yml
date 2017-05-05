@@ -1,0 +1,886 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.StateClient
+  commentId: T:Microsoft.Bot.Connector.StateClient
+  id: StateClient
+  children:
+  - Microsoft.Bot.Connector.StateClient.#ctor(System.Net.Http.DelegatingHandler[])
+  - Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,System.String,System.String,System.Net.Http.DelegatingHandler[])
+  - Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])
+  - Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,Microsoft.Bot.Connector.MicrosoftAppCredentials,System.Boolean,System.Net.Http.DelegatingHandler[])
+  - Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,Microsoft.Bot.Connector.ICredentialProvider,System.Security.Claims.ClaimsIdentity,System.Net.Http.DelegatingHandler[])
+  - Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])
+  - Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])
+  - Microsoft.Bot.Connector.StateClient.#ctor(Microsoft.Bot.Connector.MicrosoftAppCredentials,System.Boolean,System.Net.Http.DelegatingHandler[])
+  - Microsoft.Bot.Connector.StateClient.#ctor(Microsoft.Bot.Connector.ICredentialProvider,System.Security.Claims.ClaimsIdentity,System.Net.Http.DelegatingHandler[])
+  - Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,System.Net.Http.DelegatingHandler[])
+  - Microsoft.Bot.Connector.StateClient.#ctor(System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])
+  - Microsoft.Bot.Connector.StateClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])
+  - Microsoft.Bot.Connector.StateClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])
+  - Microsoft.Bot.Connector.StateClient.BaseUri
+  - Microsoft.Bot.Connector.StateClient.BotState
+  - Microsoft.Bot.Connector.StateClient.Credentials
+  - Microsoft.Bot.Connector.StateClient.DeserializationSettings
+  - Microsoft.Bot.Connector.StateClient.SerializationSettings
+  langs:
+  - csharp
+  name: StateClient
+  nameWithType: StateClient
+  fullName: Microsoft.Bot.Connector.StateClient
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: "The Bot State REST API allows your bot to store and retrieve state\n            associated with conversations conducted through\n            the [Bot Connector REST API](/en-us/restapi/connector). The Bot State\n            REST API uses REST and HTTPS to send and receive\n            encoded content that your bot controls.\n            \n            Client libraries for this REST API are available. See below for a\n            list.\n            \n            Your bot may store data for a user, a conversation, or a single user\n            within a conversation (called \"private\" data).\n            Each payload may be up to 32 kilobytes in size. The data may be\n            removed by the bot or upon a user's request, e.g.\n            if the user requests the channel to inform the bot (and therefore, the\n            Bot Framework) to delete the user's data.\n            \n            The Bot State REST API is only useful in conjunction with the Bot\n            Connector REST API.\n            \n            Authentication for both the Bot State and Bot Connector REST APIs is\n            accomplished with JWT Bearer tokens, and is\n            described in detail in the [Connector\n            Authentication](/en-us/restapi/authentication) document.\n            \n            # Client Libraries for the Bot State REST API\n            \n            * [Bot Builder for C#](/en-us/csharp/builder/sdkreference/)\n            * [Bot Builder for Node.js](/en-us/node/builder/overview/)\n            * Generate your own from the [State API Swagger\n            file](https://raw.githubusercontent.com/Microsoft/BotBuilder/master/CSharp/Library/Microsoft.Bot.Connector/Swagger/StateAPI.json)\n            \n            © 2016 Microsoft"
+  syntax:
+    content: 'public class StateClient : Microsoft.Rest.ServiceClient<Microsoft.Bot.Connector.StateClient>, IDisposable, Microsoft.Bot.Connector.IStateClient'
+  inheritance:
+  - Microsoft.Rest.ServiceClient`1
+  implements:
+  - Microsoft.Bot.Connector.IStateClient
+  - System.IDisposable
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/StateClient.xml
+- uid: Microsoft.Bot.Connector.StateClient.#ctor(System.Net.Http.DelegatingHandler[])
+  commentId: M:Microsoft.Bot.Connector.StateClient.#ctor(System.Net.Http.DelegatingHandler[])
+  id: '#ctor(System.Net.Http.DelegatingHandler[])'
+  parent: Microsoft.Bot.Connector.StateClient
+  langs:
+  - csharp
+  name: StateClient(DelegatingHandler[])
+  nameWithType: StateClient.StateClient(DelegatingHandler[])
+  fullName: StateClient.StateClient(DelegatingHandler[])
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the StateClient class.
+  syntax:
+    content: protected StateClient (System.Net.Http.DelegatingHandler[] handlers);
+    parameters:
+    - id: handlers
+      type: System.Net.Http.DelegatingHandler[]
+      description: Optional. The delegating handlers to add to the http client pipeline.
+  overload: Microsoft.Bot.Connector.StateClient.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/StateClient.xml
+- uid: Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,System.String,System.String,System.Net.Http.DelegatingHandler[])
+  commentId: M:Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,System.String,System.String,System.Net.Http.DelegatingHandler[])
+  id: '#ctor(System.Uri,System.String,System.String,System.Net.Http.DelegatingHandler[])'
+  parent: Microsoft.Bot.Connector.StateClient
+  langs:
+  - csharp
+  name: StateClient(Uri, String, String, DelegatingHandler[])
+  nameWithType: StateClient.StateClient(Uri, String, String, DelegatingHandler[])
+  fullName: StateClient.StateClient(Uri, String, String, DelegatingHandler[])
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Create a new instance of the StateClient class
+  syntax:
+    content: public StateClient (Uri baseUri, string microsoftAppId = null, string microsoftAppPassword = null, System.Net.Http.DelegatingHandler[] handlers);
+    parameters:
+    - id: baseUri
+      type: System.Uri
+      description: Base URI for the State service
+    - id: microsoftAppId
+      type: System.String
+      description: Optional. Your Microsoft app id. If null, this setting is read from settings["MicrosoftAppId"]
+    - id: microsoftAppPassword
+      type: System.String
+      description: Optional. Your Microsoft app password. If null, this setting is read from settings["MicrosoftAppPassword"]
+    - id: handlers
+      type: System.Net.Http.DelegatingHandler[]
+      description: Optional. The delegating handlers to add to the http client pipeline.
+  overload: Microsoft.Bot.Connector.StateClient.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/StateClient.xml
+- uid: Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])
+  commentId: M:Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])
+  id: '#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])'
+  parent: Microsoft.Bot.Connector.StateClient
+  langs:
+  - csharp
+  name: StateClient(Uri, ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])
+  nameWithType: StateClient.StateClient(Uri, ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])
+  fullName: StateClient.StateClient(Uri, ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the StateClient class.
+  syntax:
+    content: protected StateClient (Uri baseUri, Microsoft.Rest.ServiceClientCredentials credentials, System.Net.Http.HttpClientHandler rootHandler, System.Net.Http.DelegatingHandler[] handlers);
+    parameters:
+    - id: baseUri
+      type: System.Uri
+      description: Optional. The base URI of the service.
+    - id: credentials
+      type: Microsoft.Rest.ServiceClientCredentials
+      description: Required. Subscription credentials which uniquely identify client subscription.
+    - id: rootHandler
+      type: System.Net.Http.HttpClientHandler
+      description: Optional. The http client handler used to handle http transport.
+    - id: handlers
+      type: System.Net.Http.DelegatingHandler[]
+      description: Optional. The delegating handlers to add to the http client pipeline.
+  overload: Microsoft.Bot.Connector.StateClient.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/StateClient.xml
+- uid: Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,Microsoft.Bot.Connector.MicrosoftAppCredentials,System.Boolean,System.Net.Http.DelegatingHandler[])
+  commentId: M:Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,Microsoft.Bot.Connector.MicrosoftAppCredentials,System.Boolean,System.Net.Http.DelegatingHandler[])
+  id: '#ctor(System.Uri,Microsoft.Bot.Connector.MicrosoftAppCredentials,System.Boolean,System.Net.Http.DelegatingHandler[])'
+  parent: Microsoft.Bot.Connector.StateClient
+  langs:
+  - csharp
+  name: StateClient(Uri, MicrosoftAppCredentials, Boolean, DelegatingHandler[])
+  nameWithType: StateClient.StateClient(Uri, MicrosoftAppCredentials, Boolean, DelegatingHandler[])
+  fullName: StateClient.StateClient(Uri, MicrosoftAppCredentials, Boolean, DelegatingHandler[])
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Create a new instance of the StateClient class
+  syntax:
+    content: public StateClient (Uri baseUri, Microsoft.Bot.Connector.MicrosoftAppCredentials credentials, bool addJwtTokenRefresher = true, System.Net.Http.DelegatingHandler[] handlers);
+    parameters:
+    - id: baseUri
+      type: System.Uri
+      description: Base URI for the State service
+    - id: credentials
+      type: Microsoft.Bot.Connector.MicrosoftAppCredentials
+      description: Credentials for the Connector service
+    - id: addJwtTokenRefresher
+      type: System.Boolean
+      description: True, if JwtTokenRefresher should be included; False otherwise.
+    - id: handlers
+      type: System.Net.Http.DelegatingHandler[]
+      description: Optional. The delegating handlers to add to the http client pipeline.
+  overload: Microsoft.Bot.Connector.StateClient.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/StateClient.xml
+- uid: Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,Microsoft.Bot.Connector.ICredentialProvider,System.Security.Claims.ClaimsIdentity,System.Net.Http.DelegatingHandler[])
+  commentId: M:Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,Microsoft.Bot.Connector.ICredentialProvider,System.Security.Claims.ClaimsIdentity,System.Net.Http.DelegatingHandler[])
+  id: '#ctor(System.Uri,Microsoft.Bot.Connector.ICredentialProvider,System.Security.Claims.ClaimsIdentity,System.Net.Http.DelegatingHandler[])'
+  parent: Microsoft.Bot.Connector.StateClient
+  langs:
+  - csharp
+  name: StateClient(Uri, ICredentialProvider, ClaimsIdentity, DelegatingHandler[])
+  nameWithType: StateClient.StateClient(Uri, ICredentialProvider, ClaimsIdentity, DelegatingHandler[])
+  fullName: StateClient.StateClient(Uri, ICredentialProvider, ClaimsIdentity, DelegatingHandler[])
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Create a new instance of the StateClient class using Credential source
+  syntax:
+    content: public StateClient (Uri baseUri, Microsoft.Bot.Connector.ICredentialProvider credentialProvider, System.Security.Claims.ClaimsIdentity claimsIdentity = null, System.Net.Http.DelegatingHandler[] handlers);
+    parameters:
+    - id: baseUri
+      type: System.Uri
+      description: Base URI for the State service
+    - id: credentialProvider
+      type: Microsoft.Bot.Connector.ICredentialProvider
+      description: Credential source to use
+    - id: claimsIdentity
+      type: System.Security.Claims.ClaimsIdentity
+      description: ClaimsIDentity to create the client for
+    - id: handlers
+      type: System.Net.Http.DelegatingHandler[]
+      description: Optional. The delegating handlers to add to the http client pipeline.
+  overload: Microsoft.Bot.Connector.StateClient.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/StateClient.xml
+- uid: Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])
+  commentId: M:Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])
+  id: '#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])'
+  parent: Microsoft.Bot.Connector.StateClient
+  langs:
+  - csharp
+  name: StateClient(Uri, ServiceClientCredentials, DelegatingHandler[])
+  nameWithType: StateClient.StateClient(Uri, ServiceClientCredentials, DelegatingHandler[])
+  fullName: StateClient.StateClient(Uri, ServiceClientCredentials, DelegatingHandler[])
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the StateClient class.
+  syntax:
+    content: protected StateClient (Uri baseUri, Microsoft.Rest.ServiceClientCredentials credentials, System.Net.Http.DelegatingHandler[] handlers);
+    parameters:
+    - id: baseUri
+      type: System.Uri
+      description: Optional. The base URI of the service.
+    - id: credentials
+      type: Microsoft.Rest.ServiceClientCredentials
+      description: Required. Subscription credentials which uniquely identify client subscription.
+    - id: handlers
+      type: System.Net.Http.DelegatingHandler[]
+      description: Optional. The delegating handlers to add to the http client pipeline.
+  overload: Microsoft.Bot.Connector.StateClient.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/StateClient.xml
+- uid: Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])
+  commentId: M:Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])
+  id: '#ctor(System.Uri,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])'
+  parent: Microsoft.Bot.Connector.StateClient
+  langs:
+  - csharp
+  name: StateClient(Uri, HttpClientHandler, DelegatingHandler[])
+  nameWithType: StateClient.StateClient(Uri, HttpClientHandler, DelegatingHandler[])
+  fullName: StateClient.StateClient(Uri, HttpClientHandler, DelegatingHandler[])
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the StateClient class.
+  syntax:
+    content: protected StateClient (Uri baseUri, System.Net.Http.HttpClientHandler rootHandler, System.Net.Http.DelegatingHandler[] handlers);
+    parameters:
+    - id: baseUri
+      type: System.Uri
+      description: Optional. The base URI of the service.
+    - id: rootHandler
+      type: System.Net.Http.HttpClientHandler
+      description: Optional. The http client handler used to handle http transport.
+    - id: handlers
+      type: System.Net.Http.DelegatingHandler[]
+      description: Optional. The delegating handlers to add to the http client pipeline.
+  overload: Microsoft.Bot.Connector.StateClient.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/StateClient.xml
+- uid: Microsoft.Bot.Connector.StateClient.#ctor(Microsoft.Bot.Connector.MicrosoftAppCredentials,System.Boolean,System.Net.Http.DelegatingHandler[])
+  commentId: M:Microsoft.Bot.Connector.StateClient.#ctor(Microsoft.Bot.Connector.MicrosoftAppCredentials,System.Boolean,System.Net.Http.DelegatingHandler[])
+  id: '#ctor(Microsoft.Bot.Connector.MicrosoftAppCredentials,System.Boolean,System.Net.Http.DelegatingHandler[])'
+  parent: Microsoft.Bot.Connector.StateClient
+  langs:
+  - csharp
+  name: StateClient(MicrosoftAppCredentials, Boolean, DelegatingHandler[])
+  nameWithType: StateClient.StateClient(MicrosoftAppCredentials, Boolean, DelegatingHandler[])
+  fullName: StateClient.StateClient(MicrosoftAppCredentials, Boolean, DelegatingHandler[])
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Create a new instance of the StateClient class
+  remarks: This constructor will use https://state.botframework.com as the baseUri
+  syntax:
+    content: public StateClient (Microsoft.Bot.Connector.MicrosoftAppCredentials credentials, bool addJwtTokenRefresher = true, System.Net.Http.DelegatingHandler[] handlers);
+    parameters:
+    - id: credentials
+      type: Microsoft.Bot.Connector.MicrosoftAppCredentials
+      description: Credentials for the Connector service
+    - id: addJwtTokenRefresher
+      type: System.Boolean
+      description: True, if JwtTokenRefresher should be included; False otherwise.
+    - id: handlers
+      type: System.Net.Http.DelegatingHandler[]
+      description: Optional. The delegating handlers to add to the http client pipeline.
+  overload: Microsoft.Bot.Connector.StateClient.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/StateClient.xml
+- uid: Microsoft.Bot.Connector.StateClient.#ctor(Microsoft.Bot.Connector.ICredentialProvider,System.Security.Claims.ClaimsIdentity,System.Net.Http.DelegatingHandler[])
+  commentId: M:Microsoft.Bot.Connector.StateClient.#ctor(Microsoft.Bot.Connector.ICredentialProvider,System.Security.Claims.ClaimsIdentity,System.Net.Http.DelegatingHandler[])
+  id: '#ctor(Microsoft.Bot.Connector.ICredentialProvider,System.Security.Claims.ClaimsIdentity,System.Net.Http.DelegatingHandler[])'
+  parent: Microsoft.Bot.Connector.StateClient
+  langs:
+  - csharp
+  name: StateClient(ICredentialProvider, ClaimsIdentity, DelegatingHandler[])
+  nameWithType: StateClient.StateClient(ICredentialProvider, ClaimsIdentity, DelegatingHandler[])
+  fullName: StateClient.StateClient(ICredentialProvider, ClaimsIdentity, DelegatingHandler[])
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Create a new instance of the StateClient class using Credential source
+  syntax:
+    content: public StateClient (Microsoft.Bot.Connector.ICredentialProvider credentialProvider, System.Security.Claims.ClaimsIdentity claimsIdentity = null, System.Net.Http.DelegatingHandler[] handlers);
+    parameters:
+    - id: credentialProvider
+      type: Microsoft.Bot.Connector.ICredentialProvider
+      description: Credential source to use
+    - id: claimsIdentity
+      type: System.Security.Claims.ClaimsIdentity
+      description: ClaimsIDentity to create the client for
+    - id: handlers
+      type: System.Net.Http.DelegatingHandler[]
+      description: Optional. The delegating handlers to add to the http client pipeline.
+  overload: Microsoft.Bot.Connector.StateClient.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/StateClient.xml
+- uid: Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,System.Net.Http.DelegatingHandler[])
+  commentId: M:Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,System.Net.Http.DelegatingHandler[])
+  id: '#ctor(System.Uri,System.Net.Http.DelegatingHandler[])'
+  parent: Microsoft.Bot.Connector.StateClient
+  langs:
+  - csharp
+  name: StateClient(Uri, DelegatingHandler[])
+  nameWithType: StateClient.StateClient(Uri, DelegatingHandler[])
+  fullName: StateClient.StateClient(Uri, DelegatingHandler[])
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the StateClient class.
+  syntax:
+    content: protected StateClient (Uri baseUri, System.Net.Http.DelegatingHandler[] handlers);
+    parameters:
+    - id: baseUri
+      type: System.Uri
+      description: Optional. The base URI of the service.
+    - id: handlers
+      type: System.Net.Http.DelegatingHandler[]
+      description: Optional. The delegating handlers to add to the http client pipeline.
+  overload: Microsoft.Bot.Connector.StateClient.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/StateClient.xml
+- uid: Microsoft.Bot.Connector.StateClient.#ctor(System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])
+  commentId: M:Microsoft.Bot.Connector.StateClient.#ctor(System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])
+  id: '#ctor(System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])'
+  parent: Microsoft.Bot.Connector.StateClient
+  langs:
+  - csharp
+  name: StateClient(HttpClientHandler, DelegatingHandler[])
+  nameWithType: StateClient.StateClient(HttpClientHandler, DelegatingHandler[])
+  fullName: StateClient.StateClient(HttpClientHandler, DelegatingHandler[])
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the StateClient class.
+  syntax:
+    content: protected StateClient (System.Net.Http.HttpClientHandler rootHandler, System.Net.Http.DelegatingHandler[] handlers);
+    parameters:
+    - id: rootHandler
+      type: System.Net.Http.HttpClientHandler
+      description: Optional. The http client handler used to handle http transport.
+    - id: handlers
+      type: System.Net.Http.DelegatingHandler[]
+      description: Optional. The delegating handlers to add to the http client pipeline.
+  overload: Microsoft.Bot.Connector.StateClient.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/StateClient.xml
+- uid: Microsoft.Bot.Connector.StateClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])
+  commentId: M:Microsoft.Bot.Connector.StateClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])
+  id: '#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])'
+  parent: Microsoft.Bot.Connector.StateClient
+  langs:
+  - csharp
+  name: StateClient(ServiceClientCredentials, DelegatingHandler[])
+  nameWithType: StateClient.StateClient(ServiceClientCredentials, DelegatingHandler[])
+  fullName: StateClient.StateClient(ServiceClientCredentials, DelegatingHandler[])
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the StateClient class.
+  syntax:
+    content: protected StateClient (Microsoft.Rest.ServiceClientCredentials credentials, System.Net.Http.DelegatingHandler[] handlers);
+    parameters:
+    - id: credentials
+      type: Microsoft.Rest.ServiceClientCredentials
+      description: Required. Subscription credentials which uniquely identify client subscription.
+    - id: handlers
+      type: System.Net.Http.DelegatingHandler[]
+      description: Optional. The delegating handlers to add to the http client pipeline.
+  overload: Microsoft.Bot.Connector.StateClient.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/StateClient.xml
+- uid: Microsoft.Bot.Connector.StateClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])
+  commentId: M:Microsoft.Bot.Connector.StateClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])
+  id: '#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])'
+  parent: Microsoft.Bot.Connector.StateClient
+  langs:
+  - csharp
+  name: StateClient(ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])
+  nameWithType: StateClient.StateClient(ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])
+  fullName: StateClient.StateClient(ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the StateClient class.
+  syntax:
+    content: protected StateClient (Microsoft.Rest.ServiceClientCredentials credentials, System.Net.Http.HttpClientHandler rootHandler, System.Net.Http.DelegatingHandler[] handlers);
+    parameters:
+    - id: credentials
+      type: Microsoft.Rest.ServiceClientCredentials
+      description: Required. Subscription credentials which uniquely identify client subscription.
+    - id: rootHandler
+      type: System.Net.Http.HttpClientHandler
+      description: Optional. The http client handler used to handle http transport.
+    - id: handlers
+      type: System.Net.Http.DelegatingHandler[]
+      description: Optional. The delegating handlers to add to the http client pipeline.
+  overload: Microsoft.Bot.Connector.StateClient.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/StateClient.xml
+- uid: Microsoft.Bot.Connector.StateClient.BaseUri
+  commentId: P:Microsoft.Bot.Connector.StateClient.BaseUri
+  id: BaseUri
+  parent: Microsoft.Bot.Connector.StateClient
+  langs:
+  - csharp
+  name: BaseUri
+  nameWithType: StateClient.BaseUri
+  fullName: StateClient.BaseUri
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: The base URI of the service.
+  syntax:
+    content: public Uri BaseUri { get; set; }
+    return:
+      type: System.Uri
+      description: To be added.
+  overload: Microsoft.Bot.Connector.StateClient.BaseUri*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/StateClient.xml
+- uid: Microsoft.Bot.Connector.StateClient.BotState
+  commentId: P:Microsoft.Bot.Connector.StateClient.BotState
+  id: BotState
+  parent: Microsoft.Bot.Connector.StateClient
+  langs:
+  - csharp
+  name: BotState
+  nameWithType: StateClient.BotState
+  fullName: StateClient.BotState
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Gets the IBotState.
+  syntax:
+    content: public Microsoft.Bot.Connector.IBotState BotState { get; }
+    return:
+      type: Microsoft.Bot.Connector.IBotState
+      description: To be added.
+  overload: Microsoft.Bot.Connector.StateClient.BotState*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/StateClient.xml
+- uid: Microsoft.Bot.Connector.StateClient.Credentials
+  commentId: P:Microsoft.Bot.Connector.StateClient.Credentials
+  id: Credentials
+  parent: Microsoft.Bot.Connector.StateClient
+  langs:
+  - csharp
+  name: Credentials
+  nameWithType: StateClient.Credentials
+  fullName: StateClient.Credentials
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Subscription credentials which uniquely identify client subscription.
+  syntax:
+    content: public Microsoft.Rest.ServiceClientCredentials Credentials { get; }
+    return:
+      type: Microsoft.Rest.ServiceClientCredentials
+      description: To be added.
+  overload: Microsoft.Bot.Connector.StateClient.Credentials*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/StateClient.xml
+- uid: Microsoft.Bot.Connector.StateClient.DeserializationSettings
+  commentId: P:Microsoft.Bot.Connector.StateClient.DeserializationSettings
+  id: DeserializationSettings
+  parent: Microsoft.Bot.Connector.StateClient
+  langs:
+  - csharp
+  name: DeserializationSettings
+  nameWithType: StateClient.DeserializationSettings
+  fullName: StateClient.DeserializationSettings
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Gets or sets json deserialization settings.
+  syntax:
+    content: public Newtonsoft.Json.JsonSerializerSettings DeserializationSettings { get; }
+    return:
+      type: Newtonsoft.Json.JsonSerializerSettings
+      description: To be added.
+  overload: Microsoft.Bot.Connector.StateClient.DeserializationSettings*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/StateClient.xml
+- uid: Microsoft.Bot.Connector.StateClient.SerializationSettings
+  commentId: P:Microsoft.Bot.Connector.StateClient.SerializationSettings
+  id: SerializationSettings
+  parent: Microsoft.Bot.Connector.StateClient
+  langs:
+  - csharp
+  name: SerializationSettings
+  nameWithType: StateClient.SerializationSettings
+  fullName: StateClient.SerializationSettings
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Gets or sets json serialization settings.
+  syntax:
+    content: public Newtonsoft.Json.JsonSerializerSettings SerializationSettings { get; }
+    return:
+      type: Newtonsoft.Json.JsonSerializerSettings
+      description: To be added.
+  overload: Microsoft.Bot.Connector.StateClient.SerializationSettings*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/StateClient.xml
+references:
+- uid: Microsoft.Rest.ServiceClient`1
+  name: ServiceClient
+  nameWithType: ServiceClient
+  fullName: Microsoft.Rest.ServiceClient
+- uid: Microsoft.Bot.Connector.StateClient
+  name: StateClient
+  nameWithType: StateClient
+  fullName: Microsoft.Bot.Connector.StateClient
+- uid: Microsoft.Rest.ServiceClient{Microsoft.Bot.Connector.StateClient}
+  parent: Microsoft.Rest
+  isExternal: true
+  name: ServiceClient<StateClient>
+  nameWithType: ServiceClient<StateClient>
+  fullName: Microsoft.Rest.ServiceClient<Microsoft.Bot.Connector.StateClient>
+  spec.csharp:
+  - uid: Microsoft.Rest.ServiceClient`1
+    name: ServiceClient
+    nameWithType: ServiceClient
+    fullName: Microsoft.Rest.ServiceClient
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.StateClient
+    name: StateClient
+    nameWithType: StateClient
+    fullName: Microsoft.Bot.Connector.StateClient
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Connector.StateClient.#ctor(System.Net.Http.DelegatingHandler[])
+  parent: Microsoft.Bot.Connector.StateClient
+  isExternal: false
+  name: StateClient(DelegatingHandler[])
+  nameWithType: StateClient.StateClient(DelegatingHandler[])
+  fullName: StateClient.StateClient(DelegatingHandler[])
+- uid: System.Net.Http.DelegatingHandler
+  name: DelegatingHandler
+  nameWithType: DelegatingHandler
+  fullName: System.Net.Http.DelegatingHandler
+- uid: System.Net.Http.DelegatingHandler[]
+  parent: System.Net.Http
+  isExternal: true
+  name: DelegatingHandler[]
+  nameWithType: DelegatingHandler[]
+  fullName: System.Net.Http.DelegatingHandler[]
+  spec.csharp:
+  - uid: System.Net.Http.DelegatingHandler
+    name: DelegatingHandler
+    nameWithType: DelegatingHandler
+    fullName: System.Net.Http.DelegatingHandler
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,System.String,System.String,System.Net.Http.DelegatingHandler[])
+  parent: Microsoft.Bot.Connector.StateClient
+  isExternal: false
+  name: StateClient(Uri, String, String, DelegatingHandler[])
+  nameWithType: StateClient.StateClient(Uri, String, String, DelegatingHandler[])
+  fullName: StateClient.StateClient(Uri, String, String, DelegatingHandler[])
+- uid: System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])
+  parent: Microsoft.Bot.Connector.StateClient
+  isExternal: false
+  name: StateClient(Uri, ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])
+  nameWithType: StateClient.StateClient(Uri, ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])
+  fullName: StateClient.StateClient(Uri, ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])
+- uid: Microsoft.Rest.ServiceClientCredentials
+  parent: Microsoft.Rest
+  isExternal: true
+  name: ServiceClientCredentials
+  nameWithType: ServiceClientCredentials
+  fullName: Microsoft.Rest.ServiceClientCredentials
+- uid: System.Net.Http.HttpClientHandler
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpClientHandler
+  nameWithType: HttpClientHandler
+  fullName: System.Net.Http.HttpClientHandler
+- uid: Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,Microsoft.Bot.Connector.MicrosoftAppCredentials,System.Boolean,System.Net.Http.DelegatingHandler[])
+  parent: Microsoft.Bot.Connector.StateClient
+  isExternal: false
+  name: StateClient(Uri, MicrosoftAppCredentials, Boolean, DelegatingHandler[])
+  nameWithType: StateClient.StateClient(Uri, MicrosoftAppCredentials, Boolean, DelegatingHandler[])
+  fullName: StateClient.StateClient(Uri, MicrosoftAppCredentials, Boolean, DelegatingHandler[])
+- uid: Microsoft.Bot.Connector.MicrosoftAppCredentials
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: MicrosoftAppCredentials
+  nameWithType: MicrosoftAppCredentials
+  fullName: Microsoft.Bot.Connector.MicrosoftAppCredentials
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,Microsoft.Bot.Connector.ICredentialProvider,System.Security.Claims.ClaimsIdentity,System.Net.Http.DelegatingHandler[])
+  parent: Microsoft.Bot.Connector.StateClient
+  isExternal: false
+  name: StateClient(Uri, ICredentialProvider, ClaimsIdentity, DelegatingHandler[])
+  nameWithType: StateClient.StateClient(Uri, ICredentialProvider, ClaimsIdentity, DelegatingHandler[])
+  fullName: StateClient.StateClient(Uri, ICredentialProvider, ClaimsIdentity, DelegatingHandler[])
+- uid: Microsoft.Bot.Connector.ICredentialProvider
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: ICredentialProvider
+  nameWithType: ICredentialProvider
+  fullName: Microsoft.Bot.Connector.ICredentialProvider
+- uid: System.Security.Claims.ClaimsIdentity
+  parent: System.Security.Claims
+  isExternal: true
+  name: ClaimsIdentity
+  nameWithType: ClaimsIdentity
+  fullName: System.Security.Claims.ClaimsIdentity
+- uid: Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])
+  parent: Microsoft.Bot.Connector.StateClient
+  isExternal: false
+  name: StateClient(Uri, ServiceClientCredentials, DelegatingHandler[])
+  nameWithType: StateClient.StateClient(Uri, ServiceClientCredentials, DelegatingHandler[])
+  fullName: StateClient.StateClient(Uri, ServiceClientCredentials, DelegatingHandler[])
+- uid: Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])
+  parent: Microsoft.Bot.Connector.StateClient
+  isExternal: false
+  name: StateClient(Uri, HttpClientHandler, DelegatingHandler[])
+  nameWithType: StateClient.StateClient(Uri, HttpClientHandler, DelegatingHandler[])
+  fullName: StateClient.StateClient(Uri, HttpClientHandler, DelegatingHandler[])
+- uid: Microsoft.Bot.Connector.StateClient.#ctor(Microsoft.Bot.Connector.MicrosoftAppCredentials,System.Boolean,System.Net.Http.DelegatingHandler[])
+  parent: Microsoft.Bot.Connector.StateClient
+  isExternal: false
+  name: StateClient(MicrosoftAppCredentials, Boolean, DelegatingHandler[])
+  nameWithType: StateClient.StateClient(MicrosoftAppCredentials, Boolean, DelegatingHandler[])
+  fullName: StateClient.StateClient(MicrosoftAppCredentials, Boolean, DelegatingHandler[])
+- uid: Microsoft.Bot.Connector.StateClient.#ctor(Microsoft.Bot.Connector.ICredentialProvider,System.Security.Claims.ClaimsIdentity,System.Net.Http.DelegatingHandler[])
+  parent: Microsoft.Bot.Connector.StateClient
+  isExternal: false
+  name: StateClient(ICredentialProvider, ClaimsIdentity, DelegatingHandler[])
+  nameWithType: StateClient.StateClient(ICredentialProvider, ClaimsIdentity, DelegatingHandler[])
+  fullName: StateClient.StateClient(ICredentialProvider, ClaimsIdentity, DelegatingHandler[])
+- uid: Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,System.Net.Http.DelegatingHandler[])
+  parent: Microsoft.Bot.Connector.StateClient
+  isExternal: false
+  name: StateClient(Uri, DelegatingHandler[])
+  nameWithType: StateClient.StateClient(Uri, DelegatingHandler[])
+  fullName: StateClient.StateClient(Uri, DelegatingHandler[])
+- uid: Microsoft.Bot.Connector.StateClient.#ctor(System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])
+  parent: Microsoft.Bot.Connector.StateClient
+  isExternal: false
+  name: StateClient(HttpClientHandler, DelegatingHandler[])
+  nameWithType: StateClient.StateClient(HttpClientHandler, DelegatingHandler[])
+  fullName: StateClient.StateClient(HttpClientHandler, DelegatingHandler[])
+- uid: Microsoft.Bot.Connector.StateClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])
+  parent: Microsoft.Bot.Connector.StateClient
+  isExternal: false
+  name: StateClient(ServiceClientCredentials, DelegatingHandler[])
+  nameWithType: StateClient.StateClient(ServiceClientCredentials, DelegatingHandler[])
+  fullName: StateClient.StateClient(ServiceClientCredentials, DelegatingHandler[])
+- uid: Microsoft.Bot.Connector.StateClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])
+  parent: Microsoft.Bot.Connector.StateClient
+  isExternal: false
+  name: StateClient(ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])
+  nameWithType: StateClient.StateClient(ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])
+  fullName: StateClient.StateClient(ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])
+- uid: Microsoft.Bot.Connector.StateClient.BaseUri
+  parent: Microsoft.Bot.Connector.StateClient
+  isExternal: false
+  name: BaseUri
+  nameWithType: StateClient.BaseUri
+  fullName: StateClient.BaseUri
+- uid: Microsoft.Bot.Connector.StateClient.BotState
+  parent: Microsoft.Bot.Connector.StateClient
+  isExternal: false
+  name: BotState
+  nameWithType: StateClient.BotState
+  fullName: StateClient.BotState
+- uid: Microsoft.Bot.Connector.IBotState
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IBotState
+  nameWithType: IBotState
+  fullName: Microsoft.Bot.Connector.IBotState
+- uid: Microsoft.Bot.Connector.StateClient.Credentials
+  parent: Microsoft.Bot.Connector.StateClient
+  isExternal: false
+  name: Credentials
+  nameWithType: StateClient.Credentials
+  fullName: StateClient.Credentials
+- uid: Microsoft.Bot.Connector.StateClient.DeserializationSettings
+  parent: Microsoft.Bot.Connector.StateClient
+  isExternal: false
+  name: DeserializationSettings
+  nameWithType: StateClient.DeserializationSettings
+  fullName: StateClient.DeserializationSettings
+- uid: Newtonsoft.Json.JsonSerializerSettings
+  parent: Newtonsoft.Json
+  isExternal: true
+  name: JsonSerializerSettings
+  nameWithType: JsonSerializerSettings
+  fullName: Newtonsoft.Json.JsonSerializerSettings
+- uid: Microsoft.Bot.Connector.StateClient.SerializationSettings
+  parent: Microsoft.Bot.Connector.StateClient
+  isExternal: false
+  name: SerializationSettings
+  nameWithType: StateClient.SerializationSettings
+  fullName: StateClient.SerializationSettings
+- uid: Microsoft.Bot.Connector.StateClient.#ctor*
+  parent: Microsoft.Bot.Connector.StateClient
+  isExternal: false
+  name: StateClient
+  nameWithType: StateClient.StateClient
+  fullName: StateClient.StateClient
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/StateClient.xml
+- uid: Microsoft.Bot.Connector.StateClient.BaseUri*
+  parent: Microsoft.Bot.Connector.StateClient
+  isExternal: false
+  name: BaseUri
+  nameWithType: StateClient.BaseUri
+  fullName: StateClient.BaseUri
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/StateClient.xml
+- uid: Microsoft.Bot.Connector.StateClient.BotState*
+  parent: Microsoft.Bot.Connector.StateClient
+  isExternal: false
+  name: BotState
+  nameWithType: StateClient.BotState
+  fullName: StateClient.BotState
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/StateClient.xml
+- uid: Microsoft.Bot.Connector.StateClient.Credentials*
+  parent: Microsoft.Bot.Connector.StateClient
+  isExternal: false
+  name: Credentials
+  nameWithType: StateClient.Credentials
+  fullName: StateClient.Credentials
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/StateClient.xml
+- uid: Microsoft.Bot.Connector.StateClient.DeserializationSettings*
+  parent: Microsoft.Bot.Connector.StateClient
+  isExternal: false
+  name: DeserializationSettings
+  nameWithType: StateClient.DeserializationSettings
+  fullName: StateClient.DeserializationSettings
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/StateClient.xml
+- uid: Microsoft.Bot.Connector.StateClient.SerializationSettings*
+  parent: Microsoft.Bot.Connector.StateClient
+  isExternal: false
+  name: SerializationSettings
+  nameWithType: StateClient.SerializationSettings
+  fullName: StateClient.SerializationSettings
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/StateClient.xml
+- uid: Microsoft.Bot.Connector.IStateClient
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IStateClient
+  nameWithType: IStateClient
+  fullName: Microsoft.Bot.Connector.IStateClient
+- uid: System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable

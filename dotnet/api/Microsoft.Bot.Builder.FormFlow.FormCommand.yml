@@ -1,0 +1,198 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.FormCommand
+  commentId: T:Microsoft.Bot.Builder.FormFlow.FormCommand
+  id: FormCommand
+  children:
+  - Microsoft.Bot.Builder.FormFlow.FormCommand.Backup
+  - Microsoft.Bot.Builder.FormFlow.FormCommand.Help
+  - Microsoft.Bot.Builder.FormFlow.FormCommand.Quit
+  - Microsoft.Bot.Builder.FormFlow.FormCommand.Reset
+  - Microsoft.Bot.Builder.FormFlow.FormCommand.Status
+  langs:
+  - csharp
+  name: FormCommand
+  nameWithType: FormCommand
+  fullName: Microsoft.Bot.Builder.FormFlow.FormCommand
+  type: Enum
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Commands supported in form dialogs.
+  syntax:
+    content: public enum FormCommand
+  inheritance:
+  - System.Enum
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/FormCommand.xml
+- uid: Microsoft.Bot.Builder.FormFlow.FormCommand.Backup
+  commentId: F:Microsoft.Bot.Builder.FormFlow.FormCommand.Backup
+  id: Backup
+  parent: Microsoft.Bot.Builder.FormFlow.FormCommand
+  langs:
+  - csharp
+  name: Backup
+  nameWithType: FormCommand.Backup
+  fullName: FormCommand.Backup
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Move back to the previous step.
+  syntax:
+    content: Backup
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.FormCommand
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/FormCommand.xml
+- uid: Microsoft.Bot.Builder.FormFlow.FormCommand.Help
+  commentId: F:Microsoft.Bot.Builder.FormFlow.FormCommand.Help
+  id: Help
+  parent: Microsoft.Bot.Builder.FormFlow.FormCommand
+  langs:
+  - csharp
+  name: Help
+  nameWithType: FormCommand.Help
+  fullName: FormCommand.Help
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Ask for help on responding to the current field.
+  syntax:
+    content: Help
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.FormCommand
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/FormCommand.xml
+- uid: Microsoft.Bot.Builder.FormFlow.FormCommand.Quit
+  commentId: F:Microsoft.Bot.Builder.FormFlow.FormCommand.Quit
+  id: Quit
+  parent: Microsoft.Bot.Builder.FormFlow.FormCommand
+  langs:
+  - csharp
+  name: Quit
+  nameWithType: FormCommand.Quit
+  fullName: FormCommand.Quit
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Quit filling in the current form and return failure to parent dialog.
+  syntax:
+    content: Quit
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.FormCommand
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/FormCommand.xml
+- uid: Microsoft.Bot.Builder.FormFlow.FormCommand.Reset
+  commentId: F:Microsoft.Bot.Builder.FormFlow.FormCommand.Reset
+  id: Reset
+  parent: Microsoft.Bot.Builder.FormFlow.FormCommand
+  langs:
+  - csharp
+  name: Reset
+  nameWithType: FormCommand.Reset
+  fullName: FormCommand.Reset
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Reset the status of the form dialog.
+  syntax:
+    content: Reset
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.FormCommand
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/FormCommand.xml
+- uid: Microsoft.Bot.Builder.FormFlow.FormCommand.Status
+  commentId: F:Microsoft.Bot.Builder.FormFlow.FormCommand.Status
+  id: Status
+  parent: Microsoft.Bot.Builder.FormFlow.FormCommand
+  langs:
+  - csharp
+  name: Status
+  nameWithType: FormCommand.Status
+  fullName: FormCommand.Status
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Provide feedback to the user on the current form state.
+  syntax:
+    content: Status
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.FormCommand
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/FormCommand.xml
+references:
+- uid: System.Enum
+  parent: System
+  isExternal: true
+  name: Enum
+  nameWithType: Enum
+  fullName: System.Enum
+- uid: Microsoft.Bot.Builder.FormFlow.FormCommand.Backup
+  parent: Microsoft.Bot.Builder.FormFlow.FormCommand
+  isExternal: false
+  name: Backup
+  nameWithType: FormCommand.Backup
+  fullName: FormCommand.Backup
+- uid: Microsoft.Bot.Builder.FormFlow.FormCommand
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: FormCommand
+  nameWithType: FormCommand
+  fullName: Microsoft.Bot.Builder.FormFlow.FormCommand
+- uid: Microsoft.Bot.Builder.FormFlow.FormCommand.Help
+  parent: Microsoft.Bot.Builder.FormFlow.FormCommand
+  isExternal: false
+  name: Help
+  nameWithType: FormCommand.Help
+  fullName: FormCommand.Help
+- uid: Microsoft.Bot.Builder.FormFlow.FormCommand.Quit
+  parent: Microsoft.Bot.Builder.FormFlow.FormCommand
+  isExternal: false
+  name: Quit
+  nameWithType: FormCommand.Quit
+  fullName: FormCommand.Quit
+- uid: Microsoft.Bot.Builder.FormFlow.FormCommand.Reset
+  parent: Microsoft.Bot.Builder.FormFlow.FormCommand
+  isExternal: false
+  name: Reset
+  nameWithType: FormCommand.Reset
+  fullName: FormCommand.Reset
+- uid: Microsoft.Bot.Builder.FormFlow.FormCommand.Status
+  parent: Microsoft.Bot.Builder.FormFlow.FormCommand
+  isExternal: false
+  name: Status
+  nameWithType: FormCommand.Status
+  fullName: FormCommand.Status

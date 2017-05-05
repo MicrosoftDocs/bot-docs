@@ -1,0 +1,879 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  commentId: T:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  id: IFormBuilder`1
+  children:
+  - Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.AddRemainingFields(System.Collections.Generic.IEnumerable{System.String})
+  - Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Build(System.Reflection.Assembly,System.String)
+  - Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Configuration
+  - Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm(Microsoft.Bot.Builder.FormFlow.MessageDelegate{`0},Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  - Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm(Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  - Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  - Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})
+  - Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})
+  - Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(System.String,Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})
+  - Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(System.String,System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})
+  - Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.HasField(System.String)
+  - Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Message(Microsoft.Bot.Builder.FormFlow.MessageDelegate{`0},Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  - Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Message(Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  - Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Message(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  - Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.OnCompletion(Microsoft.Bot.Builder.FormFlow.OnCompletionAsyncDelegate{`0})
+  - Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Prompter(Microsoft.Bot.Builder.FormFlow.Advanced.PromptAsyncDelegate{`0})
+  langs:
+  - csharp
+  name: IFormBuilder<T>
+  nameWithType: IFormBuilder<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.IFormBuilder<T>
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Interface for building a form.
+  remarks: "A form consists of a series of steps that can be one of:\n            \n            By default the steps are executed in the order of the <xref href=\"Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Message(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})\"></xref>, <xref href=\"Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})\"></xref> and <xref href=\"Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})\"></xref> calls.\n            If you do not take explicit control, the steps will be executed in the order defined in the \n            form state with a final confirmation.\n            This interface allows you to flently build a form by composing together fields,\n            messages and confirmation.  The fluent building blocks provide common patterns\n            like fields being based on your state class, but you can also build up your\n            own definition of a form by using Advanced.IField.  \n            If you want to build a form using C# reflection over your state class use FormBuilder.  \n            To declaratively build a form through JSON Schema you can use Json.FormBuilderJson.\n            \n            Forms are sensitive to the current thread UI culture.  The Microsoft.Bot.Builder strings will localize\n            to that culture if available.  You can also localize the strings generated for your form by calling IForm.SaveResources\n            or by using the RView tool and adding that resource to your project.  For strings in dynamic fields, messages or confirmations you will\n            need to use the normal C# mechanisms to localize them.  Look in the overview documentation for more information."
+  syntax:
+    content: 'public interface IFormBuilder<T> where T : class'
+    typeParameters:
+    - id: T
+      description: Form state.
+  derivedClasses:
+  - Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1
+  implements: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IFormBuilder`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.AddRemainingFields(System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.AddRemainingFields(System.Collections.Generic.IEnumerable{System.String})
+  id: AddRemainingFields(System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  langs:
+  - csharp
+  name: AddRemainingFields(IEnumerable<String>)
+  nameWithType: IFormBuilder<T>.AddRemainingFields(IEnumerable<String>)
+  fullName: IFormBuilder<T>.AddRemainingFields(IEnumerable<String>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Add all fields not already added to the form.
+  remarks: >-
+    This will add all fields defined in your form that have not already been
+                added if the fields are supported.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.IFormBuilder<T> AddRemainingFields (System.Collections.Generic.IEnumerable<string> exclude = null);
+    parameters:
+    - id: exclude
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: Fields not to include.
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+      description: Modified IFormBuilder.
+  overload: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.AddRemainingFields*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IFormBuilder`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Build(System.Reflection.Assembly,System.String)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Build(System.Reflection.Assembly,System.String)
+  id: Build(System.Reflection.Assembly,System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  langs:
+  - csharp
+  name: Build(Assembly, String)
+  nameWithType: IFormBuilder<T>.Build(Assembly, String)
+  fullName: IFormBuilder<T>.Build(Assembly, String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Build the form based on the methods called on the builder.
+  remarks: >-
+    The default assembly is the one that contains <code>T</code>
+                and the default resourceName if the name of that type.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.IForm<T> Build (System.Reflection.Assembly resourceAssembly = null, string resourceName = null);
+    parameters:
+    - id: resourceAssembly
+      type: System.Reflection.Assembly
+      description: Assembly for localization resources.
+    - id: resourceName
+      type: System.String
+      description: Name of resources to use for localization.
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.IForm`1
+      description: The constructed form.
+  overload: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Build*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IFormBuilder`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Configuration
+  commentId: P:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Configuration
+  id: Configuration
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  langs:
+  - csharp
+  name: Configuration
+  nameWithType: IFormBuilder<T>.Configuration
+  fullName: IFormBuilder<T>.Configuration
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: The form configuration supplies default templates and settings.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.FormConfiguration Configuration { get; }
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.FormConfiguration
+      description: The current form configuration.
+  overload: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Configuration*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IFormBuilder`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm(Microsoft.Bot.Builder.FormFlow.MessageDelegate{`0},Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm(Microsoft.Bot.Builder.FormFlow.MessageDelegate{`0},Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  id: Confirm(Microsoft.Bot.Builder.FormFlow.MessageDelegate{`0},Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  langs:
+  - csharp
+  name: Confirm(MessageDelegate<T>, ActiveDelegate<T>, IEnumerable<String>)
+  nameWithType: IFormBuilder<T>.Confirm(MessageDelegate<T>, ActiveDelegate<T>, IEnumerable<String>)
+  fullName: IFormBuilder<T>.Confirm(MessageDelegate<T>, ActiveDelegate<T>, IEnumerable<String>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Generate a confirmation using a delegate to dynamically build the message.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.IFormBuilder<T> Confirm (Microsoft.Bot.Builder.FormFlow.MessageDelegate<T> generateMessage, Microsoft.Bot.Builder.FormFlow.ActiveDelegate<T> condition = null, System.Collections.Generic.IEnumerable<string> dependencies = null);
+    parameters:
+    - id: generateMessage
+      type: Microsoft.Bot.Builder.FormFlow.MessageDelegate`1
+      description: Delegate for building message.
+    - id: condition
+      type: Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1
+      description: Whether or not this step is active.
+    - id: dependencies
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: What fields this confirmation depends on.
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+      description: Modified IFormBuilder.
+  overload: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IFormBuilder`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm(Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm(Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  id: Confirm(Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  langs:
+  - csharp
+  name: Confirm(PromptAttribute, ActiveDelegate<T>, IEnumerable<String>)
+  nameWithType: IFormBuilder<T>.Confirm(PromptAttribute, ActiveDelegate<T>, IEnumerable<String>)
+  fullName: IFormBuilder<T>.Confirm(PromptAttribute, ActiveDelegate<T>, IEnumerable<String>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Add a confirmation step.
+  remarks: Dependencies will by default be all active steps defined before this confirmation.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.IFormBuilder<T> Confirm (Microsoft.Bot.Builder.FormFlow.PromptAttribute prompt, Microsoft.Bot.Builder.FormFlow.ActiveDelegate<T> condition = null, System.Collections.Generic.IEnumerable<string> dependencies = null);
+    parameters:
+    - id: prompt
+      type: Microsoft.Bot.Builder.FormFlow.PromptAttribute
+      description: Prompt to use for confirmation.
+    - id: condition
+      type: Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1
+      description: Delegate to test if confirmation applies to the current form state.
+    - id: dependencies
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: What fields this confirmation depends on.
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+      description: Modified IFormBuilder.
+  overload: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IFormBuilder`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  id: Confirm(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  langs:
+  - csharp
+  name: Confirm(String, ActiveDelegate<T>, IEnumerable<String>)
+  nameWithType: IFormBuilder<T>.Confirm(String, ActiveDelegate<T>, IEnumerable<String>)
+  fullName: IFormBuilder<T>.Confirm(String, ActiveDelegate<T>, IEnumerable<String>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Add a confirmation step.
+  remarks: >-
+    If prompt is not supplied the \ref patterns element {*} will be used to confirm.
+                Dependencies will by default be all active steps defined before this confirmation.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.IFormBuilder<T> Confirm (string prompt = null, Microsoft.Bot.Builder.FormFlow.ActiveDelegate<T> condition = null, System.Collections.Generic.IEnumerable<string> dependencies = null);
+    parameters:
+    - id: prompt
+      type: System.String
+      description: Prompt to use for confirmation.
+    - id: condition
+      type: Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1
+      description: Delegate to test if confirmation applies to the current form state.
+    - id: dependencies
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: What fields this confirmation depends on.
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+      description: Modified IFormBuilder.
+  overload: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IFormBuilder`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})
+  commentId: M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})
+  id: Field(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  langs:
+  - csharp
+  name: Field(IField<T>)
+  nameWithType: IFormBuilder<T>.Field(IField<T>)
+  fullName: IFormBuilder<T>.Field(IField<T>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Derfine a field step by supplying your own field definition.
+  remarks: "You can provide your own implementation of <xref href=\"Microsoft.Bot.Builder.FormFlow.Advanced.IField`1\"></xref> or you can \n            use the <xref href=\"Microsoft.Bot.Builder.FormFlow.Advanced.Field`1\"></xref> class to provide fluent values, \n            <xref href=\"Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1\"></xref> to use reflection or Json.FieldJson to use JSON Schema."
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.IFormBuilder<T> Field (Microsoft.Bot.Builder.FormFlow.Advanced.IField<T> field);
+    parameters:
+    - id: field
+      type: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1
+      description: Field definition to use.
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+      description: Modified IFormBuilder.
+  overload: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IFormBuilder`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})
+  commentId: M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})
+  id: Field(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  langs:
+  - csharp
+  name: Field(String, ActiveDelegate<T>, ValidateAsyncDelegate<T>)
+  nameWithType: IFormBuilder<T>.Field(String, ActiveDelegate<T>, ValidateAsyncDelegate<T>)
+  fullName: IFormBuilder<T>.Field(String, ActiveDelegate<T>, ValidateAsyncDelegate<T>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Define a step for filling in a particular value in the form state.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.IFormBuilder<T> Field (string name, Microsoft.Bot.Builder.FormFlow.ActiveDelegate<T> active = null, Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate<T> validate = null);
+    parameters:
+    - id: name
+      type: System.String
+      description: Path in the form state to the value being filled in.
+    - id: active
+      type: Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1
+      description: Delegate to test form state to see if step is active.
+    - id: validate
+      type: Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate`1
+      description: Delegate to validate the field value.
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+      description: Modified IFormBuilder.
+  overload: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IFormBuilder`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(System.String,Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})
+  commentId: M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(System.String,Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})
+  id: Field(System.String,Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  langs:
+  - csharp
+  name: Field(String, PromptAttribute, ActiveDelegate<T>, ValidateAsyncDelegate<T>)
+  nameWithType: IFormBuilder<T>.Field(String, PromptAttribute, ActiveDelegate<T>, ValidateAsyncDelegate<T>)
+  fullName: IFormBuilder<T>.Field(String, PromptAttribute, ActiveDelegate<T>, ValidateAsyncDelegate<T>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Define a step for filling in a particular value in the form state.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.IFormBuilder<T> Field (string name, Microsoft.Bot.Builder.FormFlow.PromptAttribute prompt, Microsoft.Bot.Builder.FormFlow.ActiveDelegate<T> active = null, Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate<T> validate = null);
+    parameters:
+    - id: name
+      type: System.String
+      description: Path in the form state to the value being filled in.
+    - id: prompt
+      type: Microsoft.Bot.Builder.FormFlow.PromptAttribute
+      description: Prompt pattern with more formatting control to describe prompt for field.
+    - id: active
+      type: Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1
+      description: Delegate to test form state to see if step is active.n
+    - id: validate
+      type: Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate`1
+      description: Delegate to validate the field value.
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+      description: Modified IFormBuilder.
+  overload: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IFormBuilder`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(System.String,System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})
+  commentId: M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(System.String,System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})
+  id: Field(System.String,System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  langs:
+  - csharp
+  name: Field(String, String, ActiveDelegate<T>, ValidateAsyncDelegate<T>)
+  nameWithType: IFormBuilder<T>.Field(String, String, ActiveDelegate<T>, ValidateAsyncDelegate<T>)
+  fullName: IFormBuilder<T>.Field(String, String, ActiveDelegate<T>, ValidateAsyncDelegate<T>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Define a step for filling in a particular value in the form state.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.IFormBuilder<T> Field (string name, string prompt, Microsoft.Bot.Builder.FormFlow.ActiveDelegate<T> active = null, Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate<T> validate = null);
+    parameters:
+    - id: name
+      type: System.String
+      description: Path in the form state to the value being filled in.
+    - id: prompt
+      type: System.String
+      description: Simple \ref patterns to describe prompt for field.
+    - id: active
+      type: Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1
+      description: Delegate to test form state to see if step is active.n
+    - id: validate
+      type: Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate`1
+      description: Delegate to validate the field value.
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+      description: Modified IFormBuilder.
+  overload: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IFormBuilder`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.HasField(System.String)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.HasField(System.String)
+  id: HasField(System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  langs:
+  - csharp
+  name: HasField(String)
+  nameWithType: IFormBuilder<T>.HasField(String)
+  fullName: IFormBuilder<T>.HasField(String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Test to see if there is already a field with <code>name</code>.
+  syntax:
+    content: public bool HasField (string name);
+    parameters:
+    - id: name
+      type: System.String
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: True if field is already present.
+  overload: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.HasField*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IFormBuilder`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Message(Microsoft.Bot.Builder.FormFlow.MessageDelegate{`0},Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Message(Microsoft.Bot.Builder.FormFlow.MessageDelegate{`0},Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  id: Message(Microsoft.Bot.Builder.FormFlow.MessageDelegate{`0},Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  langs:
+  - csharp
+  name: Message(MessageDelegate<T>, ActiveDelegate<T>, IEnumerable<String>)
+  nameWithType: IFormBuilder<T>.Message(MessageDelegate<T>, ActiveDelegate<T>, IEnumerable<String>)
+  fullName: IFormBuilder<T>.Message(MessageDelegate<T>, ActiveDelegate<T>, IEnumerable<String>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Generate a message using a delegate to dynamically build the message.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.IFormBuilder<T> Message (Microsoft.Bot.Builder.FormFlow.MessageDelegate<T> generateMessage, Microsoft.Bot.Builder.FormFlow.ActiveDelegate<T> condition = null, System.Collections.Generic.IEnumerable<string> dependencies = null);
+    parameters:
+    - id: generateMessage
+      type: Microsoft.Bot.Builder.FormFlow.MessageDelegate`1
+      description: Delegate for building message.
+    - id: condition
+      type: Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1
+      description: Whether or not this step is active.
+    - id: dependencies
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: Fields message depends on.
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+      description: Modified IFormBuilder.
+  overload: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Message*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IFormBuilder`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Message(Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Message(Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  id: Message(Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  langs:
+  - csharp
+  name: Message(PromptAttribute, ActiveDelegate<T>, IEnumerable<String>)
+  nameWithType: IFormBuilder<T>.Message(PromptAttribute, ActiveDelegate<T>, IEnumerable<String>)
+  fullName: IFormBuilder<T>.Message(PromptAttribute, ActiveDelegate<T>, IEnumerable<String>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Show a message with more format control that does not require a response.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.IFormBuilder<T> Message (Microsoft.Bot.Builder.FormFlow.PromptAttribute prompt, Microsoft.Bot.Builder.FormFlow.ActiveDelegate<T> condition = null, System.Collections.Generic.IEnumerable<string> dependencies = null);
+    parameters:
+    - id: prompt
+      type: Microsoft.Bot.Builder.FormFlow.PromptAttribute
+      description: Message to fill in and send.
+    - id: condition
+      type: Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1
+      description: Whether or not this step is active.
+    - id: dependencies
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: Fields message depends on.
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+      description: Modified IFormBuilder.
+  overload: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Message*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IFormBuilder`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Message(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Message(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  id: Message(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  langs:
+  - csharp
+  name: Message(String, ActiveDelegate<T>, IEnumerable<String>)
+  nameWithType: IFormBuilder<T>.Message(String, ActiveDelegate<T>, IEnumerable<String>)
+  fullName: IFormBuilder<T>.Message(String, ActiveDelegate<T>, IEnumerable<String>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Show a message that does not require a response.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.IFormBuilder<T> Message (string message, Microsoft.Bot.Builder.FormFlow.ActiveDelegate<T> condition = null, System.Collections.Generic.IEnumerable<string> dependencies = null);
+    parameters:
+    - id: message
+      type: System.String
+      description: A \ref patterns string to fill in and send.
+    - id: condition
+      type: Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1
+      description: Whether or not this step is active.
+    - id: dependencies
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: Fields message depends on.
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+      description: Modified IFormBuilder.
+  overload: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Message*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IFormBuilder`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.OnCompletion(Microsoft.Bot.Builder.FormFlow.OnCompletionAsyncDelegate{`0})
+  commentId: M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.OnCompletion(Microsoft.Bot.Builder.FormFlow.OnCompletionAsyncDelegate{`0})
+  id: OnCompletion(Microsoft.Bot.Builder.FormFlow.OnCompletionAsyncDelegate{`0})
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  langs:
+  - csharp
+  name: OnCompletion(OnCompletionAsyncDelegate<T>)
+  nameWithType: IFormBuilder<T>.OnCompletion(OnCompletionAsyncDelegate<T>)
+  fullName: IFormBuilder<T>.OnCompletion(OnCompletionAsyncDelegate<T>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Delegate to call when form is completed.
+  remarks: >-
+    This should only be used for side effects such as calling your service with
+                the form state results.  In any case the completed form state will be passed
+                to the parent dialog.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.IFormBuilder<T> OnCompletion (Microsoft.Bot.Builder.FormFlow.OnCompletionAsyncDelegate<T> callback);
+    parameters:
+    - id: callback
+      type: Microsoft.Bot.Builder.FormFlow.OnCompletionAsyncDelegate`1
+      description: Delegate to call on completion.
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+      description: Modified IFormBuilder.
+  overload: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.OnCompletion*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IFormBuilder`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Prompter(Microsoft.Bot.Builder.FormFlow.Advanced.PromptAsyncDelegate{`0})
+  commentId: M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Prompter(Microsoft.Bot.Builder.FormFlow.Advanced.PromptAsyncDelegate{`0})
+  id: Prompter(Microsoft.Bot.Builder.FormFlow.Advanced.PromptAsyncDelegate{`0})
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  langs:
+  - csharp
+  name: Prompter(PromptAsyncDelegate<T>)
+  nameWithType: IFormBuilder<T>.Prompter(PromptAsyncDelegate<T>)
+  fullName: IFormBuilder<T>.Prompter(PromptAsyncDelegate<T>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Delegate to send prompt to user.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.IFormBuilder<T> Prompter (Microsoft.Bot.Builder.FormFlow.Advanced.PromptAsyncDelegate<T> prompter);
+    parameters:
+    - id: prompter
+      type: Microsoft.Bot.Builder.FormFlow.Advanced.PromptAsyncDelegate`1
+      description: Delegate.
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+      description: Modified IFormBuilder.
+  overload: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Prompter*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IFormBuilder`1.xml
+references:
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.AddRemainingFields(System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  isExternal: false
+  name: AddRemainingFields(IEnumerable<String>)
+  nameWithType: IFormBuilder<T>.AddRemainingFields(IEnumerable<String>)
+  fullName: IFormBuilder<T>.AddRemainingFields(IEnumerable<String>)
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: IFormBuilder<T>
+  nameWithType: IFormBuilder<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.IFormBuilder<T>
+- uid: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.Generic.IEnumerable
+- uid: System.String
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Build(System.Reflection.Assembly,System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  isExternal: false
+  name: Build(Assembly, String)
+  nameWithType: IFormBuilder<T>.Build(Assembly, String)
+  fullName: IFormBuilder<T>.Build(Assembly, String)
+- uid: Microsoft.Bot.Builder.FormFlow.IForm`1
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: IForm<T>
+  nameWithType: IForm<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.IForm<T>
+- uid: System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Configuration
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  isExternal: false
+  name: Configuration
+  nameWithType: IFormBuilder<T>.Configuration
+  fullName: IFormBuilder<T>.Configuration
+- uid: Microsoft.Bot.Builder.FormFlow.FormConfiguration
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: FormConfiguration
+  nameWithType: FormConfiguration
+  fullName: Microsoft.Bot.Builder.FormFlow.FormConfiguration
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm(Microsoft.Bot.Builder.FormFlow.MessageDelegate{`0},Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  isExternal: false
+  name: Confirm(MessageDelegate<T>, ActiveDelegate<T>, IEnumerable<String>)
+  nameWithType: IFormBuilder<T>.Confirm(MessageDelegate<T>, ActiveDelegate<T>, IEnumerable<String>)
+  fullName: IFormBuilder<T>.Confirm(MessageDelegate<T>, ActiveDelegate<T>, IEnumerable<String>)
+- uid: Microsoft.Bot.Builder.FormFlow.MessageDelegate`1
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: MessageDelegate<T>
+  nameWithType: MessageDelegate<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.MessageDelegate<T>
+- uid: Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: ActiveDelegate<T>
+  nameWithType: ActiveDelegate<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.ActiveDelegate<T>
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm(Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  isExternal: false
+  name: Confirm(PromptAttribute, ActiveDelegate<T>, IEnumerable<String>)
+  nameWithType: IFormBuilder<T>.Confirm(PromptAttribute, ActiveDelegate<T>, IEnumerable<String>)
+  fullName: IFormBuilder<T>.Confirm(PromptAttribute, ActiveDelegate<T>, IEnumerable<String>)
+- uid: Microsoft.Bot.Builder.FormFlow.PromptAttribute
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: PromptAttribute
+  nameWithType: PromptAttribute
+  fullName: Microsoft.Bot.Builder.FormFlow.PromptAttribute
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  isExternal: false
+  name: Confirm(String, ActiveDelegate<T>, IEnumerable<String>)
+  nameWithType: IFormBuilder<T>.Confirm(String, ActiveDelegate<T>, IEnumerable<String>)
+  fullName: IFormBuilder<T>.Confirm(String, ActiveDelegate<T>, IEnumerable<String>)
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  isExternal: false
+  name: Field(IField<T>)
+  nameWithType: IFormBuilder<T>.Field(IField<T>)
+  fullName: IFormBuilder<T>.Field(IField<T>)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced
+  isExternal: false
+  name: IField<T>
+  nameWithType: IField<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.IField<T>
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  isExternal: false
+  name: Field(String, ActiveDelegate<T>, ValidateAsyncDelegate<T>)
+  nameWithType: IFormBuilder<T>.Field(String, ActiveDelegate<T>, ValidateAsyncDelegate<T>)
+  fullName: IFormBuilder<T>.Field(String, ActiveDelegate<T>, ValidateAsyncDelegate<T>)
+- uid: Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate`1
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: ValidateAsyncDelegate<T>
+  nameWithType: ValidateAsyncDelegate<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate<T>
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(System.String,Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  isExternal: false
+  name: Field(String, PromptAttribute, ActiveDelegate<T>, ValidateAsyncDelegate<T>)
+  nameWithType: IFormBuilder<T>.Field(String, PromptAttribute, ActiveDelegate<T>, ValidateAsyncDelegate<T>)
+  fullName: IFormBuilder<T>.Field(String, PromptAttribute, ActiveDelegate<T>, ValidateAsyncDelegate<T>)
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(System.String,System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  isExternal: false
+  name: Field(String, String, ActiveDelegate<T>, ValidateAsyncDelegate<T>)
+  nameWithType: IFormBuilder<T>.Field(String, String, ActiveDelegate<T>, ValidateAsyncDelegate<T>)
+  fullName: IFormBuilder<T>.Field(String, String, ActiveDelegate<T>, ValidateAsyncDelegate<T>)
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.HasField(System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  isExternal: false
+  name: HasField(String)
+  nameWithType: IFormBuilder<T>.HasField(String)
+  fullName: IFormBuilder<T>.HasField(String)
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Message(Microsoft.Bot.Builder.FormFlow.MessageDelegate{`0},Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  isExternal: false
+  name: Message(MessageDelegate<T>, ActiveDelegate<T>, IEnumerable<String>)
+  nameWithType: IFormBuilder<T>.Message(MessageDelegate<T>, ActiveDelegate<T>, IEnumerable<String>)
+  fullName: IFormBuilder<T>.Message(MessageDelegate<T>, ActiveDelegate<T>, IEnumerable<String>)
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Message(Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  isExternal: false
+  name: Message(PromptAttribute, ActiveDelegate<T>, IEnumerable<String>)
+  nameWithType: IFormBuilder<T>.Message(PromptAttribute, ActiveDelegate<T>, IEnumerable<String>)
+  fullName: IFormBuilder<T>.Message(PromptAttribute, ActiveDelegate<T>, IEnumerable<String>)
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Message(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  isExternal: false
+  name: Message(String, ActiveDelegate<T>, IEnumerable<String>)
+  nameWithType: IFormBuilder<T>.Message(String, ActiveDelegate<T>, IEnumerable<String>)
+  fullName: IFormBuilder<T>.Message(String, ActiveDelegate<T>, IEnumerable<String>)
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.OnCompletion(Microsoft.Bot.Builder.FormFlow.OnCompletionAsyncDelegate{`0})
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  isExternal: false
+  name: OnCompletion(OnCompletionAsyncDelegate<T>)
+  nameWithType: IFormBuilder<T>.OnCompletion(OnCompletionAsyncDelegate<T>)
+  fullName: IFormBuilder<T>.OnCompletion(OnCompletionAsyncDelegate<T>)
+- uid: Microsoft.Bot.Builder.FormFlow.OnCompletionAsyncDelegate`1
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: OnCompletionAsyncDelegate<T>
+  nameWithType: OnCompletionAsyncDelegate<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.OnCompletionAsyncDelegate<T>
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Prompter(Microsoft.Bot.Builder.FormFlow.Advanced.PromptAsyncDelegate{`0})
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  isExternal: false
+  name: Prompter(PromptAsyncDelegate<T>)
+  nameWithType: IFormBuilder<T>.Prompter(PromptAsyncDelegate<T>)
+  fullName: IFormBuilder<T>.Prompter(PromptAsyncDelegate<T>)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.PromptAsyncDelegate`1
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced
+  isExternal: false
+  name: PromptAsyncDelegate<T>
+  nameWithType: PromptAsyncDelegate<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.PromptAsyncDelegate<T>
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.AddRemainingFields*
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  isExternal: false
+  name: AddRemainingFields
+  nameWithType: IFormBuilder<T>.AddRemainingFields
+  fullName: IFormBuilder<T>.AddRemainingFields
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IFormBuilder`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Build*
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  isExternal: false
+  name: Build
+  nameWithType: IFormBuilder<T>.Build
+  fullName: IFormBuilder<T>.Build
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IFormBuilder`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Configuration*
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  isExternal: false
+  name: Configuration
+  nameWithType: IFormBuilder<T>.Configuration
+  fullName: IFormBuilder<T>.Configuration
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IFormBuilder`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm*
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  isExternal: false
+  name: Confirm
+  nameWithType: IFormBuilder<T>.Confirm
+  fullName: IFormBuilder<T>.Confirm
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IFormBuilder`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field*
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  isExternal: false
+  name: Field
+  nameWithType: IFormBuilder<T>.Field
+  fullName: IFormBuilder<T>.Field
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IFormBuilder`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.HasField*
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  isExternal: false
+  name: HasField
+  nameWithType: IFormBuilder<T>.HasField
+  fullName: IFormBuilder<T>.HasField
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IFormBuilder`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Message*
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  isExternal: false
+  name: Message
+  nameWithType: IFormBuilder<T>.Message
+  fullName: IFormBuilder<T>.Message
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IFormBuilder`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.OnCompletion*
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  isExternal: false
+  name: OnCompletion
+  nameWithType: IFormBuilder<T>.OnCompletion
+  fullName: IFormBuilder<T>.OnCompletion
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IFormBuilder`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Prompter*
+  parent: Microsoft.Bot.Builder.FormFlow.IFormBuilder`1
+  isExternal: false
+  name: Prompter
+  nameWithType: IFormBuilder<T>.Prompter
+  fullName: IFormBuilder<T>.Prompter
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IFormBuilder`1.xml

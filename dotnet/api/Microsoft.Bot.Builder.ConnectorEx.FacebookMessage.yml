@@ -1,0 +1,206 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookMessage
+  commentId: T:Microsoft.Bot.Builder.ConnectorEx.FacebookMessage
+  id: FacebookMessage
+  children:
+  - Microsoft.Bot.Builder.ConnectorEx.FacebookMessage.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply})
+  - Microsoft.Bot.Builder.ConnectorEx.FacebookMessage.QuickReplies
+  - Microsoft.Bot.Builder.ConnectorEx.FacebookMessage.Text
+  langs:
+  - csharp
+  name: FacebookMessage
+  nameWithType: FacebookMessage
+  fullName: Microsoft.Bot.Builder.ConnectorEx.FacebookMessage
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.ConnectorEx
+  summary: Facebook message format for quick reply.
+  syntax:
+    content: public sealed class FacebookMessage
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/FacebookMessage.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookMessage.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply})
+  commentId: M:Microsoft.Bot.Builder.ConnectorEx.FacebookMessage.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply})
+  id: '#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply})'
+  parent: Microsoft.Bot.Builder.ConnectorEx.FacebookMessage
+  langs:
+  - csharp
+  name: FacebookMessage(String, IList<FacebookQuickReply>)
+  nameWithType: FacebookMessage.FacebookMessage(String, IList<FacebookQuickReply>)
+  fullName: FacebookMessage.FacebookMessage(String, IList<FacebookQuickReply>)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.ConnectorEx
+  syntax:
+    content: public FacebookMessage (string text, System.Collections.Generic.IList<Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply> quickReplies = null);
+    parameters:
+    - id: text
+      type: System.String
+      description: To be added.
+    - id: quickReplies
+      type: System.Collections.Generic.IList{Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.ConnectorEx.FacebookMessage.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/FacebookMessage.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookMessage.QuickReplies
+  commentId: P:Microsoft.Bot.Builder.ConnectorEx.FacebookMessage.QuickReplies
+  id: QuickReplies
+  parent: Microsoft.Bot.Builder.ConnectorEx.FacebookMessage
+  langs:
+  - csharp
+  name: QuickReplies
+  nameWithType: FacebookMessage.QuickReplies
+  fullName: FacebookMessage.QuickReplies
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.ConnectorEx
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="quick_replies")]
+
+      public System.Collections.Generic.IList<Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply> QuickReplies { get; set; }
+    return:
+      type: System.Collections.Generic.IList{Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.ConnectorEx.FacebookMessage.QuickReplies*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/FacebookMessage.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookMessage.Text
+  commentId: P:Microsoft.Bot.Builder.ConnectorEx.FacebookMessage.Text
+  id: Text
+  parent: Microsoft.Bot.Builder.ConnectorEx.FacebookMessage
+  langs:
+  - csharp
+  name: Text
+  nameWithType: FacebookMessage.Text
+  fullName: FacebookMessage.Text
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.ConnectorEx
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="text")]
+
+      public string Text { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.ConnectorEx.FacebookMessage.Text*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/FacebookMessage.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookMessage.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply})
+  parent: Microsoft.Bot.Builder.ConnectorEx.FacebookMessage
+  isExternal: false
+  name: FacebookMessage(String, IList<FacebookQuickReply>)
+  nameWithType: FacebookMessage.FacebookMessage(String, IList<FacebookQuickReply>)
+  fullName: FacebookMessage.FacebookMessage(String, IList<FacebookQuickReply>)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic.IList`1
+  name: IList
+  nameWithType: IList
+  fullName: System.Collections.Generic.IList
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply
+  name: FacebookQuickReply
+  nameWithType: FacebookQuickReply
+  fullName: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply
+- uid: System.Collections.Generic.IList{Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IList<FacebookQuickReply>
+  nameWithType: IList<FacebookQuickReply>
+  fullName: System.Collections.Generic.IList<Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply>
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply
+    name: FacebookQuickReply
+    nameWithType: FacebookQuickReply
+    fullName: Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookMessage.QuickReplies
+  parent: Microsoft.Bot.Builder.ConnectorEx.FacebookMessage
+  isExternal: false
+  name: QuickReplies
+  nameWithType: FacebookMessage.QuickReplies
+  fullName: FacebookMessage.QuickReplies
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookMessage.Text
+  parent: Microsoft.Bot.Builder.ConnectorEx.FacebookMessage
+  isExternal: false
+  name: Text
+  nameWithType: FacebookMessage.Text
+  fullName: FacebookMessage.Text
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookMessage.#ctor*
+  parent: Microsoft.Bot.Builder.ConnectorEx.FacebookMessage
+  isExternal: false
+  name: FacebookMessage
+  nameWithType: FacebookMessage.FacebookMessage
+  fullName: FacebookMessage.FacebookMessage
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/FacebookMessage.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookMessage.QuickReplies*
+  parent: Microsoft.Bot.Builder.ConnectorEx.FacebookMessage
+  isExternal: false
+  name: QuickReplies
+  nameWithType: FacebookMessage.QuickReplies
+  fullName: FacebookMessage.QuickReplies
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/FacebookMessage.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookMessage.Text*
+  parent: Microsoft.Bot.Builder.ConnectorEx.FacebookMessage
+  isExternal: false
+  name: Text
+  nameWithType: FacebookMessage.Text
+  fullName: FacebookMessage.Text
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/FacebookMessage.xml

@@ -1,0 +1,365 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.ActivityTypes
+  commentId: T:Microsoft.Bot.Connector.ActivityTypes
+  id: ActivityTypes
+  children:
+  - Microsoft.Bot.Connector.ActivityTypes.ContactRelationUpdate
+  - Microsoft.Bot.Connector.ActivityTypes.ConversationUpdate
+  - Microsoft.Bot.Connector.ActivityTypes.DeleteUserData
+  - Microsoft.Bot.Connector.ActivityTypes.EndOfConversation
+  - Microsoft.Bot.Connector.ActivityTypes.Event
+  - Microsoft.Bot.Connector.ActivityTypes.Invoke
+  - Microsoft.Bot.Connector.ActivityTypes.Message
+  - Microsoft.Bot.Connector.ActivityTypes.Ping
+  - Microsoft.Bot.Connector.ActivityTypes.Trigger
+  - Microsoft.Bot.Connector.ActivityTypes.Typing
+  langs:
+  - csharp
+  name: ActivityTypes
+  nameWithType: ActivityTypes
+  fullName: Microsoft.Bot.Connector.ActivityTypes
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: Types of Activities
+  syntax:
+    content: public static class ActivityTypes
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ActivityTypes.xml
+- uid: Microsoft.Bot.Connector.ActivityTypes.ContactRelationUpdate
+  commentId: F:Microsoft.Bot.Connector.ActivityTypes.ContactRelationUpdate
+  id: ContactRelationUpdate
+  parent: Microsoft.Bot.Connector.ActivityTypes
+  langs:
+  - csharp
+  name: ContactRelationUpdate
+  nameWithType: ActivityTypes.ContactRelationUpdate
+  fullName: ActivityTypes.ContactRelationUpdate
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Bot added removed to contact list
+  syntax:
+    content: public const string ContactRelationUpdate;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ActivityTypes.xml
+- uid: Microsoft.Bot.Connector.ActivityTypes.ConversationUpdate
+  commentId: F:Microsoft.Bot.Connector.ActivityTypes.ConversationUpdate
+  id: ConversationUpdate
+  parent: Microsoft.Bot.Connector.ActivityTypes
+  langs:
+  - csharp
+  name: ConversationUpdate
+  nameWithType: ActivityTypes.ConversationUpdate
+  fullName: ActivityTypes.ConversationUpdate
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: This notification is sent when the conversation's properties change, for example the topic name, or when user joins or leaves the group.
+  syntax:
+    content: public const string ConversationUpdate;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ActivityTypes.xml
+- uid: Microsoft.Bot.Connector.ActivityTypes.DeleteUserData
+  commentId: F:Microsoft.Bot.Connector.ActivityTypes.DeleteUserData
+  id: DeleteUserData
+  parent: Microsoft.Bot.Connector.ActivityTypes
+  langs:
+  - csharp
+  name: DeleteUserData
+  nameWithType: ActivityTypes.DeleteUserData
+  fullName: ActivityTypes.DeleteUserData
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Delete user data
+  syntax:
+    content: public const string DeleteUserData;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ActivityTypes.xml
+- uid: Microsoft.Bot.Connector.ActivityTypes.EndOfConversation
+  commentId: F:Microsoft.Bot.Connector.ActivityTypes.EndOfConversation
+  id: EndOfConversation
+  parent: Microsoft.Bot.Connector.ActivityTypes
+  langs:
+  - csharp
+  name: EndOfConversation
+  nameWithType: ActivityTypes.EndOfConversation
+  fullName: ActivityTypes.EndOfConversation
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: End a conversation
+  syntax:
+    content: public const string EndOfConversation;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ActivityTypes.xml
+- uid: Microsoft.Bot.Connector.ActivityTypes.Event
+  commentId: F:Microsoft.Bot.Connector.ActivityTypes.Event
+  id: Event
+  parent: Microsoft.Bot.Connector.ActivityTypes
+  langs:
+  - csharp
+  name: Event
+  nameWithType: ActivityTypes.Event
+  fullName: ActivityTypes.Event
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Asynchronous external event
+  syntax:
+    content: public const string Event;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ActivityTypes.xml
+- uid: Microsoft.Bot.Connector.ActivityTypes.Invoke
+  commentId: F:Microsoft.Bot.Connector.ActivityTypes.Invoke
+  id: Invoke
+  parent: Microsoft.Bot.Connector.ActivityTypes
+  langs:
+  - csharp
+  name: Invoke
+  nameWithType: ActivityTypes.Invoke
+  fullName: ActivityTypes.Invoke
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Synchronous request to invoke a command
+  syntax:
+    content: public const string Invoke;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ActivityTypes.xml
+- uid: Microsoft.Bot.Connector.ActivityTypes.Message
+  commentId: F:Microsoft.Bot.Connector.ActivityTypes.Message
+  id: Message
+  parent: Microsoft.Bot.Connector.ActivityTypes
+  langs:
+  - csharp
+  name: Message
+  nameWithType: ActivityTypes.Message
+  fullName: ActivityTypes.Message
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Message from a user -> bot or bot -> User
+  syntax:
+    content: public const string Message;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ActivityTypes.xml
+- uid: Microsoft.Bot.Connector.ActivityTypes.Ping
+  commentId: F:Microsoft.Bot.Connector.ActivityTypes.Ping
+  id: Ping
+  parent: Microsoft.Bot.Connector.ActivityTypes
+  langs:
+  - csharp
+  name: Ping
+  nameWithType: ActivityTypes.Ping
+  fullName: ActivityTypes.Ping
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Bounce a message off of the server without replying or changing it's state
+  syntax:
+    content: public const string Ping;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ActivityTypes.xml
+- uid: Microsoft.Bot.Connector.ActivityTypes.Trigger
+  commentId: F:Microsoft.Bot.Connector.ActivityTypes.Trigger
+  id: Trigger
+  parent: Microsoft.Bot.Connector.ActivityTypes
+  langs:
+  - csharp
+  name: Trigger
+  nameWithType: ActivityTypes.Trigger
+  fullName: ActivityTypes.Trigger
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: 'NOTE: Trigger activity has been renamed to Event activity'
+  syntax:
+    content: >-
+      [System.Obsolete]
+
+      public const string Trigger;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  attributes:
+  - type: System.Obsolete
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ActivityTypes.xml
+- uid: Microsoft.Bot.Connector.ActivityTypes.Typing
+  commentId: F:Microsoft.Bot.Connector.ActivityTypes.Typing
+  id: Typing
+  parent: Microsoft.Bot.Connector.ActivityTypes
+  langs:
+  - csharp
+  name: Typing
+  nameWithType: ActivityTypes.Typing
+  fullName: ActivityTypes.Typing
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: a user is typing
+  syntax:
+    content: public const string Typing;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ActivityTypes.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.ActivityTypes.ContactRelationUpdate
+  parent: Microsoft.Bot.Connector.ActivityTypes
+  isExternal: false
+  name: ContactRelationUpdate
+  nameWithType: ActivityTypes.ContactRelationUpdate
+  fullName: ActivityTypes.ContactRelationUpdate
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.ActivityTypes.ConversationUpdate
+  parent: Microsoft.Bot.Connector.ActivityTypes
+  isExternal: false
+  name: ConversationUpdate
+  nameWithType: ActivityTypes.ConversationUpdate
+  fullName: ActivityTypes.ConversationUpdate
+- uid: Microsoft.Bot.Connector.ActivityTypes.DeleteUserData
+  parent: Microsoft.Bot.Connector.ActivityTypes
+  isExternal: false
+  name: DeleteUserData
+  nameWithType: ActivityTypes.DeleteUserData
+  fullName: ActivityTypes.DeleteUserData
+- uid: Microsoft.Bot.Connector.ActivityTypes.EndOfConversation
+  parent: Microsoft.Bot.Connector.ActivityTypes
+  isExternal: false
+  name: EndOfConversation
+  nameWithType: ActivityTypes.EndOfConversation
+  fullName: ActivityTypes.EndOfConversation
+- uid: Microsoft.Bot.Connector.ActivityTypes.Event
+  parent: Microsoft.Bot.Connector.ActivityTypes
+  isExternal: false
+  name: Event
+  nameWithType: ActivityTypes.Event
+  fullName: ActivityTypes.Event
+- uid: Microsoft.Bot.Connector.ActivityTypes.Invoke
+  parent: Microsoft.Bot.Connector.ActivityTypes
+  isExternal: false
+  name: Invoke
+  nameWithType: ActivityTypes.Invoke
+  fullName: ActivityTypes.Invoke
+- uid: Microsoft.Bot.Connector.ActivityTypes.Message
+  parent: Microsoft.Bot.Connector.ActivityTypes
+  isExternal: false
+  name: Message
+  nameWithType: ActivityTypes.Message
+  fullName: ActivityTypes.Message
+- uid: Microsoft.Bot.Connector.ActivityTypes.Ping
+  parent: Microsoft.Bot.Connector.ActivityTypes
+  isExternal: false
+  name: Ping
+  nameWithType: ActivityTypes.Ping
+  fullName: ActivityTypes.Ping
+- uid: Microsoft.Bot.Connector.ActivityTypes.Trigger
+  parent: Microsoft.Bot.Connector.ActivityTypes
+  isExternal: false
+  name: Trigger
+  nameWithType: ActivityTypes.Trigger
+  fullName: ActivityTypes.Trigger
+- uid: Microsoft.Bot.Connector.ActivityTypes.Typing
+  parent: Microsoft.Bot.Connector.ActivityTypes
+  isExternal: false
+  name: Typing
+  nameWithType: ActivityTypes.Typing
+  fullName: ActivityTypes.Typing

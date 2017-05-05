@@ -7,4 +7,5 @@
 ## [Telegram](~/thirdparty-channels/channel-telegram.md)
 ## [Twilio](~/thirdparty-channels/channel-twilio.md)
 # [Publish to the directory](../portal-submit-bot-directory.md)
+# [Enable analytics](~/portal-analytics-overview.md)
 

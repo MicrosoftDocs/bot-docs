@@ -1,0 +1,131 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers
+  commentId: T:Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers
+  id: ConversationReferenceHelpers
+  children:
+  - Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers.#ctor
+  - Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers.GZipDeserialize(System.String)
+  langs:
+  - csharp
+  name: ConversationReferenceHelpers
+  nameWithType: ConversationReferenceHelpers
+  fullName: Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.ConnectorEx
+  summary: Helpers for <xref href="Microsoft.Bot.Connector.ConversationReference"></xref>
+  syntax:
+    content: public sealed class ConversationReferenceHelpers
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/ConversationReferenceHelpers.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers.#ctor
+  commentId: M:Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers
+  langs:
+  - csharp
+  name: ConversationReferenceHelpers()
+  nameWithType: ConversationReferenceHelpers.ConversationReferenceHelpers()
+  fullName: ConversationReferenceHelpers.ConversationReferenceHelpers()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.ConnectorEx
+  syntax:
+    content: public ConversationReferenceHelpers ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/ConversationReferenceHelpers.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers.GZipDeserialize(System.String)
+  commentId: M:Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers.GZipDeserialize(System.String)
+  id: GZipDeserialize(System.String)
+  parent: Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers
+  langs:
+  - csharp
+  name: GZipDeserialize(String)
+  nameWithType: ConversationReferenceHelpers.GZipDeserialize(String)
+  fullName: ConversationReferenceHelpers.GZipDeserialize(String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.ConnectorEx
+  summary: Deserializes the GZip serialized <xref href="Microsoft.Bot.Connector.ConversationReference"></xref> using <xref href="Microsoft.Bot.Builder.ConnectorEx.Extensions.GZipSerialize(Microsoft.Bot.Connector.ConversationReference)"></xref>.
+  syntax:
+    content: public static Microsoft.Bot.Connector.ConversationReference GZipDeserialize (string str);
+    parameters:
+    - id: str
+      type: System.String
+      description: The Base64 encoded string.
+    return:
+      type: Microsoft.Bot.Connector.ConversationReference
+      description: An instance of <xref href="Microsoft.Bot.Connector.ConversationReference"></xref>
+  overload: Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers.GZipDeserialize*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/ConversationReferenceHelpers.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers.#ctor
+  parent: Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers
+  isExternal: false
+  name: ConversationReferenceHelpers()
+  nameWithType: ConversationReferenceHelpers.ConversationReferenceHelpers()
+  fullName: ConversationReferenceHelpers.ConversationReferenceHelpers()
+- uid: Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers.GZipDeserialize(System.String)
+  parent: Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers
+  isExternal: false
+  name: GZipDeserialize(String)
+  nameWithType: ConversationReferenceHelpers.GZipDeserialize(String)
+  fullName: ConversationReferenceHelpers.GZipDeserialize(String)
+- uid: Microsoft.Bot.Connector.ConversationReference
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: ConversationReference
+  nameWithType: ConversationReference
+  fullName: Microsoft.Bot.Connector.ConversationReference
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers.#ctor*
+  parent: Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers
+  isExternal: false
+  name: ConversationReferenceHelpers
+  nameWithType: ConversationReferenceHelpers.ConversationReferenceHelpers
+  fullName: ConversationReferenceHelpers.ConversationReferenceHelpers
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/ConversationReferenceHelpers.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers.GZipDeserialize*
+  parent: Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers
+  isExternal: false
+  name: GZipDeserialize
+  nameWithType: ConversationReferenceHelpers.GZipDeserialize
+  fullName: ConversationReferenceHelpers.GZipDeserialize
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/ConversationReferenceHelpers.xml

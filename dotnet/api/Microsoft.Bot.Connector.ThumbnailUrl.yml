@@ -1,0 +1,211 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.ThumbnailUrl
+  commentId: T:Microsoft.Bot.Connector.ThumbnailUrl
+  id: ThumbnailUrl
+  children:
+  - Microsoft.Bot.Connector.ThumbnailUrl.#ctor
+  - Microsoft.Bot.Connector.ThumbnailUrl.#ctor(System.String,System.String)
+  - Microsoft.Bot.Connector.ThumbnailUrl.Alt
+  - Microsoft.Bot.Connector.ThumbnailUrl.Url
+  langs:
+  - csharp
+  name: ThumbnailUrl
+  nameWithType: ThumbnailUrl
+  fullName: Microsoft.Bot.Connector.ThumbnailUrl
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: Object describing a media thumbnail
+  syntax:
+    content: public class ThumbnailUrl
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ThumbnailUrl.xml
+- uid: Microsoft.Bot.Connector.ThumbnailUrl.#ctor
+  commentId: M:Microsoft.Bot.Connector.ThumbnailUrl.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Connector.ThumbnailUrl
+  langs:
+  - csharp
+  name: ThumbnailUrl()
+  nameWithType: ThumbnailUrl.ThumbnailUrl()
+  fullName: ThumbnailUrl.ThumbnailUrl()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the ThumbnailUrl class.
+  syntax:
+    content: public ThumbnailUrl ();
+    parameters: []
+  overload: Microsoft.Bot.Connector.ThumbnailUrl.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ThumbnailUrl.xml
+- uid: Microsoft.Bot.Connector.ThumbnailUrl.#ctor(System.String,System.String)
+  commentId: M:Microsoft.Bot.Connector.ThumbnailUrl.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: Microsoft.Bot.Connector.ThumbnailUrl
+  langs:
+  - csharp
+  name: ThumbnailUrl(String, String)
+  nameWithType: ThumbnailUrl.ThumbnailUrl(String, String)
+  fullName: ThumbnailUrl.ThumbnailUrl(String, String)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the ThumbnailUrl class.
+  syntax:
+    content: public ThumbnailUrl (string url = null, string alt = null);
+    parameters:
+    - id: url
+      type: System.String
+      description: To be added.
+    - id: alt
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ThumbnailUrl.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ThumbnailUrl.xml
+- uid: Microsoft.Bot.Connector.ThumbnailUrl.Alt
+  commentId: P:Microsoft.Bot.Connector.ThumbnailUrl.Alt
+  id: Alt
+  parent: Microsoft.Bot.Connector.ThumbnailUrl
+  langs:
+  - csharp
+  name: Alt
+  nameWithType: ThumbnailUrl.Alt
+  fullName: ThumbnailUrl.Alt
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Alt text to display for screen readers on the thumbnail image
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="alt")]
+
+      public string Alt { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ThumbnailUrl.Alt*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ThumbnailUrl.xml
+- uid: Microsoft.Bot.Connector.ThumbnailUrl.Url
+  commentId: P:Microsoft.Bot.Connector.ThumbnailUrl.Url
+  id: Url
+  parent: Microsoft.Bot.Connector.ThumbnailUrl
+  langs:
+  - csharp
+  name: Url
+  nameWithType: ThumbnailUrl.Url
+  fullName: ThumbnailUrl.Url
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: url pointing to an thumbnail to use for media content
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="url")]
+
+      public string Url { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ThumbnailUrl.Url*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ThumbnailUrl.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.ThumbnailUrl.#ctor
+  parent: Microsoft.Bot.Connector.ThumbnailUrl
+  isExternal: false
+  name: ThumbnailUrl()
+  nameWithType: ThumbnailUrl.ThumbnailUrl()
+  fullName: ThumbnailUrl.ThumbnailUrl()
+- uid: Microsoft.Bot.Connector.ThumbnailUrl.#ctor(System.String,System.String)
+  parent: Microsoft.Bot.Connector.ThumbnailUrl
+  isExternal: false
+  name: ThumbnailUrl(String, String)
+  nameWithType: ThumbnailUrl.ThumbnailUrl(String, String)
+  fullName: ThumbnailUrl.ThumbnailUrl(String, String)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.ThumbnailUrl.Alt
+  parent: Microsoft.Bot.Connector.ThumbnailUrl
+  isExternal: false
+  name: Alt
+  nameWithType: ThumbnailUrl.Alt
+  fullName: ThumbnailUrl.Alt
+- uid: Microsoft.Bot.Connector.ThumbnailUrl.Url
+  parent: Microsoft.Bot.Connector.ThumbnailUrl
+  isExternal: false
+  name: Url
+  nameWithType: ThumbnailUrl.Url
+  fullName: ThumbnailUrl.Url
+- uid: Microsoft.Bot.Connector.ThumbnailUrl.#ctor*
+  parent: Microsoft.Bot.Connector.ThumbnailUrl
+  isExternal: false
+  name: ThumbnailUrl
+  nameWithType: ThumbnailUrl.ThumbnailUrl
+  fullName: ThumbnailUrl.ThumbnailUrl
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ThumbnailUrl.xml
+- uid: Microsoft.Bot.Connector.ThumbnailUrl.Alt*
+  parent: Microsoft.Bot.Connector.ThumbnailUrl
+  isExternal: false
+  name: Alt
+  nameWithType: ThumbnailUrl.Alt
+  fullName: ThumbnailUrl.Alt
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ThumbnailUrl.xml
+- uid: Microsoft.Bot.Connector.ThumbnailUrl.Url*
+  parent: Microsoft.Bot.Connector.ThumbnailUrl
+  isExternal: false
+  name: Url
+  nameWithType: ThumbnailUrl.Url
+  fullName: ThumbnailUrl.Url
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ThumbnailUrl.xml

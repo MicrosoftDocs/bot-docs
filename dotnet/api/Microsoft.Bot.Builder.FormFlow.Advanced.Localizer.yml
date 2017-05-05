@@ -1,0 +1,1168 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  commentId: T:Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  id: Localizer
+  children:
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.#ctor
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Localizer._arrayTranslations
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Localizer._templateTranslations
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Localizer._translations
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add(System.String,System.Collections.Generic.IReadOnlyDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.TermsAttribute})
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add(System.String,System.Collections.Generic.IReadOnlyDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute})
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add(System.String,System.String)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add(System.String,System.Collections.Generic.IEnumerable{System.String})
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add(System.String,Microsoft.Bot.Builder.FormFlow.TemplateAttribute)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add(System.String,System.Collections.Generic.IReadOnlyDictionary{Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute})
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.AddPrefix(System.String,System.Collections.Generic.IEnumerable{System.String})
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Culture
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Load(System.Collections.IDictionaryEnumerator,System.Collections.Generic.IEnumerable{System.String}@,System.Collections.Generic.IEnumerable{System.String}@)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Lookup(System.String,System.String@)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.LookupDictionary(System.String,System.Collections.Generic.IDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute})
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.LookupDictionary(System.String,System.Collections.Generic.IDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.TermsAttribute})
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.LookupTemplates(System.String,System.Collections.Generic.IDictionary{Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute})
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.LookupValues(System.String,System.String[]@)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Remove(System.String)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Save(System.Resources.IResourceWriter)
+  langs:
+  - csharp
+  name: Localizer
+  nameWithType: Localizer
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: A resource localizer.
+  syntax:
+    content: 'public class Localizer : Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer'
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.#ctor
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  langs:
+  - csharp
+  name: Localizer()
+  nameWithType: Localizer.Localizer()
+  fullName: Localizer.Localizer()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public Localizer ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer._arrayTranslations
+  commentId: F:Microsoft.Bot.Builder.FormFlow.Advanced.Localizer._arrayTranslations
+  id: _arrayTranslations
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  langs:
+  - csharp
+  name: _arrayTranslations
+  nameWithType: Localizer._arrayTranslations
+  fullName: Localizer._arrayTranslations
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: protected System.Collections.Generic.Dictionary<string,string[]> _arrayTranslations;
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.String[]}
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer._templateTranslations
+  commentId: F:Microsoft.Bot.Builder.FormFlow.Advanced.Localizer._templateTranslations
+  id: _templateTranslations
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  langs:
+  - csharp
+  name: _templateTranslations
+  nameWithType: Localizer._templateTranslations
+  fullName: Localizer._templateTranslations
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: protected System.Collections.Generic.Dictionary<string,string[]> _templateTranslations;
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.String[]}
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer._translations
+  commentId: F:Microsoft.Bot.Builder.FormFlow.Advanced.Localizer._translations
+  id: _translations
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  langs:
+  - csharp
+  name: _translations
+  nameWithType: Localizer._translations
+  fullName: Localizer._translations
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: protected System.Collections.Generic.Dictionary<string,string> _translations;
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add(System.String,System.Collections.Generic.IReadOnlyDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.TermsAttribute})
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add(System.String,System.Collections.Generic.IReadOnlyDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.TermsAttribute})
+  id: Add(System.String,System.Collections.Generic.IReadOnlyDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.TermsAttribute})
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  langs:
+  - csharp
+  name: Add(String, IReadOnlyDictionary<Object,TermsAttribute>)
+  nameWithType: Localizer.Add(String, IReadOnlyDictionary<Object,TermsAttribute>)
+  fullName: Localizer.Add(String, IReadOnlyDictionary<Object,TermsAttribute>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public void Add (string prefix, System.Collections.Generic.IReadOnlyDictionary<object,Microsoft.Bot.Builder.FormFlow.TermsAttribute> dictionary);
+    parameters:
+    - id: prefix
+      type: System.String
+      description: To be added.
+    - id: dictionary
+      type: System.Collections.Generic.IReadOnlyDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.TermsAttribute}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add(System.String,System.Collections.Generic.IReadOnlyDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute})
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add(System.String,System.Collections.Generic.IReadOnlyDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute})
+  id: Add(System.String,System.Collections.Generic.IReadOnlyDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute})
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  langs:
+  - csharp
+  name: Add(String, IReadOnlyDictionary<Object,DescribeAttribute>)
+  nameWithType: Localizer.Add(String, IReadOnlyDictionary<Object,DescribeAttribute>)
+  fullName: Localizer.Add(String, IReadOnlyDictionary<Object,DescribeAttribute>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public void Add (string prefix, System.Collections.Generic.IReadOnlyDictionary<object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute> dictionary);
+    parameters:
+    - id: prefix
+      type: System.String
+      description: To be added.
+    - id: dictionary
+      type: System.Collections.Generic.IReadOnlyDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add(System.String,System.String)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add(System.String,System.String)
+  id: Add(System.String,System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  langs:
+  - csharp
+  name: Add(String, String)
+  nameWithType: Localizer.Add(String, String)
+  fullName: Localizer.Add(String, String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public void Add (string key, string translation);
+    parameters:
+    - id: key
+      type: System.String
+      description: To be added.
+    - id: translation
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add(System.String,System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add(System.String,System.Collections.Generic.IEnumerable{System.String})
+  id: Add(System.String,System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  langs:
+  - csharp
+  name: Add(String, IEnumerable<String>)
+  nameWithType: Localizer.Add(String, IEnumerable<String>)
+  fullName: Localizer.Add(String, IEnumerable<String>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public void Add (string key, System.Collections.Generic.IEnumerable<string> list);
+    parameters:
+    - id: key
+      type: System.String
+      description: To be added.
+    - id: list
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add(System.String,Microsoft.Bot.Builder.FormFlow.TemplateAttribute)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add(System.String,Microsoft.Bot.Builder.FormFlow.TemplateAttribute)
+  id: Add(System.String,Microsoft.Bot.Builder.FormFlow.TemplateAttribute)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  langs:
+  - csharp
+  name: Add(String, TemplateAttribute)
+  nameWithType: Localizer.Add(String, TemplateAttribute)
+  fullName: Localizer.Add(String, TemplateAttribute)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public void Add (string prefix, Microsoft.Bot.Builder.FormFlow.TemplateAttribute template);
+    parameters:
+    - id: prefix
+      type: System.String
+      description: To be added.
+    - id: template
+      type: Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add(System.String,System.Collections.Generic.IReadOnlyDictionary{Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute})
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add(System.String,System.Collections.Generic.IReadOnlyDictionary{Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute})
+  id: Add(System.String,System.Collections.Generic.IReadOnlyDictionary{Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute})
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  langs:
+  - csharp
+  name: Add(String, IReadOnlyDictionary<TemplateUsage,TemplateAttribute>)
+  nameWithType: Localizer.Add(String, IReadOnlyDictionary<TemplateUsage,TemplateAttribute>)
+  fullName: Localizer.Add(String, IReadOnlyDictionary<TemplateUsage,TemplateAttribute>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public void Add (string prefix, System.Collections.Generic.IReadOnlyDictionary<Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute> templates);
+    parameters:
+    - id: prefix
+      type: System.String
+      description: To be added.
+    - id: templates
+      type: System.Collections.Generic.IReadOnlyDictionary{Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.AddPrefix(System.String,System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.AddPrefix(System.String,System.Collections.Generic.IEnumerable{System.String})
+  id: AddPrefix(System.String,System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  langs:
+  - csharp
+  name: AddPrefix(String, IEnumerable<String>)
+  nameWithType: Localizer.AddPrefix(String, IEnumerable<String>)
+  fullName: Localizer.AddPrefix(String, IEnumerable<String>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: protected System.Collections.Generic.IEnumerable<string> AddPrefix (string prefix, System.Collections.Generic.IEnumerable<string> suffix);
+    parameters:
+    - id: prefix
+      type: System.String
+      description: To be added.
+    - id: suffix
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: To be added.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.AddPrefix*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Culture
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Culture
+  id: Culture
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  langs:
+  - csharp
+  name: Culture
+  nameWithType: Localizer.Culture
+  fullName: Localizer.Culture
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public System.Globalization.CultureInfo Culture { get; set; }
+    return:
+      type: System.Globalization.CultureInfo
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Culture*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Load(System.Collections.IDictionaryEnumerator,System.Collections.Generic.IEnumerable{System.String}@,System.Collections.Generic.IEnumerable{System.String}@)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Load(System.Collections.IDictionaryEnumerator,System.Collections.Generic.IEnumerable{System.String}@,System.Collections.Generic.IEnumerable{System.String}@)
+  id: Load(System.Collections.IDictionaryEnumerator,System.Collections.Generic.IEnumerable{System.String}@,System.Collections.Generic.IEnumerable{System.String}@)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  langs:
+  - csharp
+  name: Load(IDictionaryEnumerator, IEnumerable<String>, IEnumerable<String>)
+  nameWithType: Localizer.Load(IDictionaryEnumerator, IEnumerable<String>, IEnumerable<String>)
+  fullName: Localizer.Load(IDictionaryEnumerator, IEnumerable<String>, IEnumerable<String>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer Load (System.Collections.IDictionaryEnumerator reader, out System.Collections.Generic.IEnumerable<string> missing, out System.Collections.Generic.IEnumerable<string> extra);
+    parameters:
+    - id: reader
+      type: System.Collections.IDictionaryEnumerator
+      description: To be added.
+    - id: missing
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: To be added.
+    - id: extra
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Load*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Lookup(System.String,System.String@)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Lookup(System.String,System.String@)
+  id: Lookup(System.String,System.String@)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  langs:
+  - csharp
+  name: Lookup(String, String)
+  nameWithType: Localizer.Lookup(String, String)
+  fullName: Localizer.Lookup(String, String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public bool Lookup (string key, out string value);
+    parameters:
+    - id: key
+      type: System.String
+      description: To be added.
+    - id: value
+      type: System.String
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Lookup*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.LookupDictionary(System.String,System.Collections.Generic.IDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute})
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.LookupDictionary(System.String,System.Collections.Generic.IDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute})
+  id: LookupDictionary(System.String,System.Collections.Generic.IDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute})
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  langs:
+  - csharp
+  name: LookupDictionary(String, IDictionary<Object,DescribeAttribute>)
+  nameWithType: Localizer.LookupDictionary(String, IDictionary<Object,DescribeAttribute>)
+  fullName: Localizer.LookupDictionary(String, IDictionary<Object,DescribeAttribute>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public void LookupDictionary (string prefix, System.Collections.Generic.IDictionary<object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute> dictionary);
+    parameters:
+    - id: prefix
+      type: System.String
+      description: To be added.
+    - id: dictionary
+      type: System.Collections.Generic.IDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.LookupDictionary*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.LookupDictionary(System.String,System.Collections.Generic.IDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.TermsAttribute})
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.LookupDictionary(System.String,System.Collections.Generic.IDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.TermsAttribute})
+  id: LookupDictionary(System.String,System.Collections.Generic.IDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.TermsAttribute})
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  langs:
+  - csharp
+  name: LookupDictionary(String, IDictionary<Object,TermsAttribute>)
+  nameWithType: Localizer.LookupDictionary(String, IDictionary<Object,TermsAttribute>)
+  fullName: Localizer.LookupDictionary(String, IDictionary<Object,TermsAttribute>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public void LookupDictionary (string prefix, System.Collections.Generic.IDictionary<object,Microsoft.Bot.Builder.FormFlow.TermsAttribute> dictionary);
+    parameters:
+    - id: prefix
+      type: System.String
+      description: To be added.
+    - id: dictionary
+      type: System.Collections.Generic.IDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.TermsAttribute}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.LookupDictionary*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.LookupTemplates(System.String,System.Collections.Generic.IDictionary{Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute})
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.LookupTemplates(System.String,System.Collections.Generic.IDictionary{Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute})
+  id: LookupTemplates(System.String,System.Collections.Generic.IDictionary{Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute})
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  langs:
+  - csharp
+  name: LookupTemplates(String, IDictionary<TemplateUsage,TemplateAttribute>)
+  nameWithType: Localizer.LookupTemplates(String, IDictionary<TemplateUsage,TemplateAttribute>)
+  fullName: Localizer.LookupTemplates(String, IDictionary<TemplateUsage,TemplateAttribute>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public void LookupTemplates (string prefix, System.Collections.Generic.IDictionary<Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute> templates);
+    parameters:
+    - id: prefix
+      type: System.String
+      description: To be added.
+    - id: templates
+      type: System.Collections.Generic.IDictionary{Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.LookupTemplates*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.LookupValues(System.String,System.String[]@)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.LookupValues(System.String,System.String[]@)
+  id: LookupValues(System.String,System.String[]@)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  langs:
+  - csharp
+  name: LookupValues(String, String[])
+  nameWithType: Localizer.LookupValues(String, String[])
+  fullName: Localizer.LookupValues(String, String[])
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public bool LookupValues (string key, out string[] values);
+    parameters:
+    - id: key
+      type: System.String
+      description: To be added.
+    - id: values
+      type: System.String[]
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.LookupValues*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Remove(System.String)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Remove(System.String)
+  id: Remove(System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  langs:
+  - csharp
+  name: Remove(String)
+  nameWithType: Localizer.Remove(String)
+  fullName: Localizer.Remove(String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public void Remove (string key);
+    parameters:
+    - id: key
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Remove*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Save(System.Resources.IResourceWriter)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Save(System.Resources.IResourceWriter)
+  id: Save(System.Resources.IResourceWriter)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  langs:
+  - csharp
+  name: Save(IResourceWriter)
+  nameWithType: Localizer.Save(IResourceWriter)
+  fullName: Localizer.Save(IResourceWriter)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public void Save (System.Resources.IResourceWriter writer);
+    parameters:
+    - id: writer
+      type: System.Resources.IResourceWriter
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Save*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.#ctor
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: Localizer()
+  nameWithType: Localizer.Localizer()
+  fullName: Localizer.Localizer()
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer._arrayTranslations
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: _arrayTranslations
+  nameWithType: Localizer._arrayTranslations
+  fullName: Localizer._arrayTranslations
+- uid: System.Collections.Generic.Dictionary`2
+  name: Dictionary
+  nameWithType: Dictionary
+  fullName: System.Collections.Generic.Dictionary
+- uid: System.String
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic.Dictionary{System.String,System.String[]}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: Dictionary<String,String[]>
+  nameWithType: Dictionary<String,String[]>
+  fullName: System.Collections.Generic.Dictionary<System.String,System.String[]>
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer._templateTranslations
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: _templateTranslations
+  nameWithType: Localizer._templateTranslations
+  fullName: Localizer._templateTranslations
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer._translations
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: _translations
+  nameWithType: Localizer._translations
+  fullName: Localizer._translations
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: Dictionary<String,String>
+  nameWithType: Dictionary<String,String>
+  fullName: System.Collections.Generic.Dictionary<System.String,System.String>
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add(System.String,System.Collections.Generic.IReadOnlyDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.TermsAttribute})
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: Add(String, IReadOnlyDictionary<Object,TermsAttribute>)
+  nameWithType: Localizer.Add(String, IReadOnlyDictionary<Object,TermsAttribute>)
+  fullName: Localizer.Add(String, IReadOnlyDictionary<Object,TermsAttribute>)
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  name: IReadOnlyDictionary
+  nameWithType: IReadOnlyDictionary
+  fullName: System.Collections.Generic.IReadOnlyDictionary
+- uid: Microsoft.Bot.Builder.FormFlow.TermsAttribute
+  name: TermsAttribute
+  nameWithType: TermsAttribute
+  fullName: Microsoft.Bot.Builder.FormFlow.TermsAttribute
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.TermsAttribute}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IReadOnlyDictionary<Object,TermsAttribute>
+  nameWithType: IReadOnlyDictionary<Object,TermsAttribute>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<System.Object,Microsoft.Bot.Builder.FormFlow.TermsAttribute>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    nameWithType: IReadOnlyDictionary
+    fullName: System.Collections.Generic.IReadOnlyDictionary
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: Microsoft.Bot.Builder.FormFlow.TermsAttribute
+    name: TermsAttribute
+    nameWithType: TermsAttribute
+    fullName: Microsoft.Bot.Builder.FormFlow.TermsAttribute
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add(System.String,System.Collections.Generic.IReadOnlyDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute})
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: Add(String, IReadOnlyDictionary<Object,DescribeAttribute>)
+  nameWithType: Localizer.Add(String, IReadOnlyDictionary<Object,DescribeAttribute>)
+  fullName: Localizer.Add(String, IReadOnlyDictionary<Object,DescribeAttribute>)
+- uid: Microsoft.Bot.Builder.FormFlow.DescribeAttribute
+  name: DescribeAttribute
+  nameWithType: DescribeAttribute
+  fullName: Microsoft.Bot.Builder.FormFlow.DescribeAttribute
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IReadOnlyDictionary<Object,DescribeAttribute>
+  nameWithType: IReadOnlyDictionary<Object,DescribeAttribute>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<System.Object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    nameWithType: IReadOnlyDictionary
+    fullName: System.Collections.Generic.IReadOnlyDictionary
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: Microsoft.Bot.Builder.FormFlow.DescribeAttribute
+    name: DescribeAttribute
+    nameWithType: DescribeAttribute
+    fullName: Microsoft.Bot.Builder.FormFlow.DescribeAttribute
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add(System.String,System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: Add(String, String)
+  nameWithType: Localizer.Add(String, String)
+  fullName: Localizer.Add(String, String)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add(System.String,System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: Add(String, IEnumerable<String>)
+  nameWithType: Localizer.Add(String, IEnumerable<String>)
+  fullName: Localizer.Add(String, IEnumerable<String>)
+- uid: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.Generic.IEnumerable
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add(System.String,Microsoft.Bot.Builder.FormFlow.TemplateAttribute)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: Add(String, TemplateAttribute)
+  nameWithType: Localizer.Add(String, TemplateAttribute)
+  fullName: Localizer.Add(String, TemplateAttribute)
+- uid: Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: TemplateAttribute
+  nameWithType: TemplateAttribute
+  fullName: Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add(System.String,System.Collections.Generic.IReadOnlyDictionary{Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute})
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: Add(String, IReadOnlyDictionary<TemplateUsage,TemplateAttribute>)
+  nameWithType: Localizer.Add(String, IReadOnlyDictionary<TemplateUsage,TemplateAttribute>)
+  fullName: Localizer.Add(String, IReadOnlyDictionary<TemplateUsage,TemplateAttribute>)
+- uid: Microsoft.Bot.Builder.FormFlow.TemplateUsage
+  name: TemplateUsage
+  nameWithType: TemplateUsage
+  fullName: Microsoft.Bot.Builder.FormFlow.TemplateUsage
+- uid: System.Collections.Generic.IReadOnlyDictionary{Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IReadOnlyDictionary<TemplateUsage,TemplateAttribute>
+  nameWithType: IReadOnlyDictionary<TemplateUsage,TemplateAttribute>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    nameWithType: IReadOnlyDictionary
+    fullName: System.Collections.Generic.IReadOnlyDictionary
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.FormFlow.TemplateUsage
+    name: TemplateUsage
+    nameWithType: TemplateUsage
+    fullName: Microsoft.Bot.Builder.FormFlow.TemplateUsage
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+    name: TemplateAttribute
+    nameWithType: TemplateAttribute
+    fullName: Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.AddPrefix(System.String,System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: AddPrefix(String, IEnumerable<String>)
+  nameWithType: Localizer.AddPrefix(String, IEnumerable<String>)
+  fullName: Localizer.AddPrefix(String, IEnumerable<String>)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Culture
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: Culture
+  nameWithType: Localizer.Culture
+  fullName: Localizer.Culture
+- uid: System.Globalization.CultureInfo
+  parent: System.Globalization
+  isExternal: true
+  name: CultureInfo
+  nameWithType: CultureInfo
+  fullName: System.Globalization.CultureInfo
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Load(System.Collections.IDictionaryEnumerator,System.Collections.Generic.IEnumerable{System.String}@,System.Collections.Generic.IEnumerable{System.String}@)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: Load(IDictionaryEnumerator, IEnumerable<String>, IEnumerable<String>)
+  nameWithType: Localizer.Load(IDictionaryEnumerator, IEnumerable<String>, IEnumerable<String>)
+  fullName: Localizer.Load(IDictionaryEnumerator, IEnumerable<String>, IEnumerable<String>)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced
+  isExternal: false
+  name: ILocalizer
+  nameWithType: ILocalizer
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer
+- uid: System.Collections.IDictionaryEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IDictionaryEnumerator
+  nameWithType: IDictionaryEnumerator
+  fullName: System.Collections.IDictionaryEnumerator
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Lookup(System.String,System.String@)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: Lookup(String, String)
+  nameWithType: Localizer.Lookup(String, String)
+  fullName: Localizer.Lookup(String, String)
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.LookupDictionary(System.String,System.Collections.Generic.IDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute})
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: LookupDictionary(String, IDictionary<Object,DescribeAttribute>)
+  nameWithType: Localizer.LookupDictionary(String, IDictionary<Object,DescribeAttribute>)
+  fullName: Localizer.LookupDictionary(String, IDictionary<Object,DescribeAttribute>)
+- uid: System.Collections.Generic.IDictionary`2
+  name: IDictionary
+  nameWithType: IDictionary
+  fullName: System.Collections.Generic.IDictionary
+- uid: System.Collections.Generic.IDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IDictionary<Object,DescribeAttribute>
+  nameWithType: IDictionary<Object,DescribeAttribute>
+  fullName: System.Collections.Generic.IDictionary<System.Object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute>
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: Microsoft.Bot.Builder.FormFlow.DescribeAttribute
+    name: DescribeAttribute
+    nameWithType: DescribeAttribute
+    fullName: Microsoft.Bot.Builder.FormFlow.DescribeAttribute
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.LookupDictionary(System.String,System.Collections.Generic.IDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.TermsAttribute})
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: LookupDictionary(String, IDictionary<Object,TermsAttribute>)
+  nameWithType: Localizer.LookupDictionary(String, IDictionary<Object,TermsAttribute>)
+  fullName: Localizer.LookupDictionary(String, IDictionary<Object,TermsAttribute>)
+- uid: System.Collections.Generic.IDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.TermsAttribute}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IDictionary<Object,TermsAttribute>
+  nameWithType: IDictionary<Object,TermsAttribute>
+  fullName: System.Collections.Generic.IDictionary<System.Object,Microsoft.Bot.Builder.FormFlow.TermsAttribute>
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: Microsoft.Bot.Builder.FormFlow.TermsAttribute
+    name: TermsAttribute
+    nameWithType: TermsAttribute
+    fullName: Microsoft.Bot.Builder.FormFlow.TermsAttribute
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.LookupTemplates(System.String,System.Collections.Generic.IDictionary{Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute})
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: LookupTemplates(String, IDictionary<TemplateUsage,TemplateAttribute>)
+  nameWithType: Localizer.LookupTemplates(String, IDictionary<TemplateUsage,TemplateAttribute>)
+  fullName: Localizer.LookupTemplates(String, IDictionary<TemplateUsage,TemplateAttribute>)
+- uid: System.Collections.Generic.IDictionary{Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IDictionary<TemplateUsage,TemplateAttribute>
+  nameWithType: IDictionary<TemplateUsage,TemplateAttribute>
+  fullName: System.Collections.Generic.IDictionary<Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute>
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.FormFlow.TemplateUsage
+    name: TemplateUsage
+    nameWithType: TemplateUsage
+    fullName: Microsoft.Bot.Builder.FormFlow.TemplateUsage
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+    name: TemplateAttribute
+    nameWithType: TemplateAttribute
+    fullName: Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.LookupValues(System.String,System.String[]@)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: LookupValues(String, String[])
+  nameWithType: Localizer.LookupValues(String, String[])
+  fullName: Localizer.LookupValues(String, String[])
+- uid: System.String[]
+  parent: System
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Remove(System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: Remove(String)
+  nameWithType: Localizer.Remove(String)
+  fullName: Localizer.Remove(String)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Save(System.Resources.IResourceWriter)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: Save(IResourceWriter)
+  nameWithType: Localizer.Save(IResourceWriter)
+  fullName: Localizer.Save(IResourceWriter)
+- uid: System.Resources.IResourceWriter
+  parent: System.Resources
+  isExternal: true
+  name: IResourceWriter
+  nameWithType: IResourceWriter
+  fullName: System.Resources.IResourceWriter
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.#ctor*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: Localizer
+  nameWithType: Localizer.Localizer
+  fullName: Localizer.Localizer
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Add*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: Add
+  nameWithType: Localizer.Add
+  fullName: Localizer.Add
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.AddPrefix*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: AddPrefix
+  nameWithType: Localizer.AddPrefix
+  fullName: Localizer.AddPrefix
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Culture*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: Culture
+  nameWithType: Localizer.Culture
+  fullName: Localizer.Culture
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Load*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: Load
+  nameWithType: Localizer.Load
+  fullName: Localizer.Load
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Lookup*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: Lookup
+  nameWithType: Localizer.Lookup
+  fullName: Localizer.Lookup
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.LookupDictionary*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: LookupDictionary
+  nameWithType: Localizer.LookupDictionary
+  fullName: Localizer.LookupDictionary
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.LookupTemplates*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: LookupTemplates
+  nameWithType: Localizer.LookupTemplates
+  fullName: Localizer.LookupTemplates
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.LookupValues*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: LookupValues
+  nameWithType: Localizer.LookupValues
+  fullName: Localizer.LookupValues
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Remove*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: Remove
+  nameWithType: Localizer.Remove
+  fullName: Localizer.Remove
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Save*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Localizer
+  isExternal: false
+  name: Save
+  nameWithType: Localizer.Save
+  fullName: Localizer.Save
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Localizer.xml

@@ -1,0 +1,327 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.PromptStyler
+  commentId: T:Microsoft.Bot.Builder.Dialogs.PromptStyler
+  id: PromptStyler
+  children:
+  - Microsoft.Bot.Builder.Dialogs.PromptStyler.#ctor(Microsoft.Bot.Builder.Dialogs.PromptStyle)
+  - Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply(Microsoft.Bot.Connector.IMessageActivity@,System.String)
+  - Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply``1(Microsoft.Bot.Connector.IMessageActivity@,System.String,System.Collections.Generic.IReadOnlyList{``0},System.Collections.Generic.IReadOnlyList{System.String})
+  - Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply``1(Microsoft.Bot.Connector.IMessageActivity@,System.String,System.Collections.Generic.IReadOnlyList{``0},Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IReadOnlyList{System.String})
+  - Microsoft.Bot.Builder.Dialogs.PromptStyler.PromptStyle
+  langs:
+  - csharp
+  name: PromptStyler
+  nameWithType: PromptStyler
+  fullName: Microsoft.Bot.Builder.Dialogs.PromptStyler
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Styles a prompt
+  syntax:
+    content: public class PromptStyler
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptStyler.xml
+- uid: Microsoft.Bot.Builder.Dialogs.PromptStyler.#ctor(Microsoft.Bot.Builder.Dialogs.PromptStyle)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.PromptStyler.#ctor(Microsoft.Bot.Builder.Dialogs.PromptStyle)
+  id: '#ctor(Microsoft.Bot.Builder.Dialogs.PromptStyle)'
+  parent: Microsoft.Bot.Builder.Dialogs.PromptStyler
+  langs:
+  - csharp
+  name: PromptStyler(PromptStyle)
+  nameWithType: PromptStyler.PromptStyler(PromptStyle)
+  fullName: PromptStyler.PromptStyler(PromptStyle)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: public PromptStyler (Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle = Microsoft.Bot.Builder.Dialogs.PromptStyle.Auto);
+    parameters:
+    - id: promptStyle
+      type: Microsoft.Bot.Builder.Dialogs.PromptStyle
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.PromptStyler.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptStyler.xml
+- uid: Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply(Microsoft.Bot.Connector.IMessageActivity@,System.String)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply(Microsoft.Bot.Connector.IMessageActivity@,System.String)
+  id: Apply(Microsoft.Bot.Connector.IMessageActivity@,System.String)
+  parent: Microsoft.Bot.Builder.Dialogs.PromptStyler
+  langs:
+  - csharp
+  name: Apply(IMessageActivity, String)
+  nameWithType: PromptStyler.Apply(IMessageActivity, String)
+  fullName: PromptStyler.Apply(IMessageActivity, String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Style a prompt and populate the <xref href="Microsoft.Bot.Connector.IMessageActivity.Text"></xref>.
+  syntax:
+    content: public virtual void Apply (ref Microsoft.Bot.Connector.IMessageActivity message, string prompt);
+    parameters:
+    - id: message
+      type: Microsoft.Bot.Connector.IMessageActivity
+      description: The message that will contain the prompt.
+    - id: prompt
+      type: System.String
+      description: The prompt.
+  overload: Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptStyler.xml
+- uid: Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply``1(Microsoft.Bot.Connector.IMessageActivity@,System.String,System.Collections.Generic.IReadOnlyList{``0},System.Collections.Generic.IReadOnlyList{System.String})
+  commentId: M:Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply``1(Microsoft.Bot.Connector.IMessageActivity@,System.String,System.Collections.Generic.IReadOnlyList{``0},System.Collections.Generic.IReadOnlyList{System.String})
+  id: Apply``1(Microsoft.Bot.Connector.IMessageActivity@,System.String,System.Collections.Generic.IReadOnlyList{``0},System.Collections.Generic.IReadOnlyList{System.String})
+  parent: Microsoft.Bot.Builder.Dialogs.PromptStyler
+  langs:
+  - csharp
+  name: Apply<T>(IMessageActivity, String, IReadOnlyList<T>, IReadOnlyList<String>)
+  nameWithType: PromptStyler.Apply<T>(IMessageActivity, String, IReadOnlyList<T>, IReadOnlyList<String>)
+  fullName: PromptStyler.Apply<T>(IMessageActivity, String, IReadOnlyList<T>, IReadOnlyList<String>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Style a prompt and populate the message based on <xref href="Microsoft.Bot.Builder.Dialogs.PromptStyler.PromptStyle"></xref>.
+  remarks: <code>T</code> should implement <xref href="System.Object.ToString"></xref> unless descriptions are supplied.
+  syntax:
+    content: public virtual void Apply<T> (ref Microsoft.Bot.Connector.IMessageActivity message, string prompt, System.Collections.Generic.IReadOnlyList<T> options, System.Collections.Generic.IReadOnlyList<string> descriptions = null);
+    parameters:
+    - id: message
+      type: Microsoft.Bot.Connector.IMessageActivity
+      description: The message that will contain the prompt.
+    - id: prompt
+      type: System.String
+      description: The prompt.
+    - id: options
+      type: System.Collections.Generic.IReadOnlyList{T}
+      description: The options.
+    - id: descriptions
+      type: System.Collections.Generic.IReadOnlyList{System.String}
+      description: Descriptions to display for each option.
+    typeParameters:
+    - id: T
+      description: The type of the options.
+  overload: Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptStyler.xml
+- uid: Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply``1(Microsoft.Bot.Connector.IMessageActivity@,System.String,System.Collections.Generic.IReadOnlyList{``0},Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IReadOnlyList{System.String})
+  commentId: M:Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply``1(Microsoft.Bot.Connector.IMessageActivity@,System.String,System.Collections.Generic.IReadOnlyList{``0},Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IReadOnlyList{System.String})
+  id: Apply``1(Microsoft.Bot.Connector.IMessageActivity@,System.String,System.Collections.Generic.IReadOnlyList{``0},Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IReadOnlyList{System.String})
+  parent: Microsoft.Bot.Builder.Dialogs.PromptStyler
+  langs:
+  - csharp
+  name: Apply<T>(IMessageActivity, String, IReadOnlyList<T>, PromptStyle, IReadOnlyList<String>)
+  nameWithType: PromptStyler.Apply<T>(IMessageActivity, String, IReadOnlyList<T>, PromptStyle, IReadOnlyList<String>)
+  fullName: PromptStyler.Apply<T>(IMessageActivity, String, IReadOnlyList<T>, PromptStyle, IReadOnlyList<String>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: <xref href="Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply(Microsoft.Bot.Connector.IMessageActivity@,System.String)"></xref>.
+  syntax:
+    content: public static void Apply<T> (ref Microsoft.Bot.Connector.IMessageActivity message, string prompt, System.Collections.Generic.IReadOnlyList<T> options, Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle, System.Collections.Generic.IReadOnlyList<string> descriptions = null);
+    parameters:
+    - id: message
+      type: Microsoft.Bot.Connector.IMessageActivity
+      description: The message.
+    - id: prompt
+      type: System.String
+      description: The prompt.
+    - id: options
+      type: System.Collections.Generic.IReadOnlyList{T}
+      description: The options.
+    - id: promptStyle
+      type: Microsoft.Bot.Builder.Dialogs.PromptStyle
+      description: The prompt style.
+    - id: descriptions
+      type: System.Collections.Generic.IReadOnlyList{System.String}
+      description: Descriptions for each option.
+    typeParameters:
+    - id: T
+      description: The type of the options.
+  overload: Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptStyler.xml
+- uid: Microsoft.Bot.Builder.Dialogs.PromptStyler.PromptStyle
+  commentId: F:Microsoft.Bot.Builder.Dialogs.PromptStyler.PromptStyle
+  id: PromptStyle
+  parent: Microsoft.Bot.Builder.Dialogs.PromptStyler
+  langs:
+  - csharp
+  name: PromptStyle
+  nameWithType: PromptStyler.PromptStyle
+  fullName: PromptStyler.PromptStyle
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Style of the prompt <xref href="Microsoft.Bot.Builder.Dialogs.PromptStyle"></xref>.
+  syntax:
+    content: public readonly Microsoft.Bot.Builder.Dialogs.PromptStyle PromptStyle;
+    return:
+      type: Microsoft.Bot.Builder.Dialogs.PromptStyle
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptStyler.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Dialogs.PromptStyler.#ctor(Microsoft.Bot.Builder.Dialogs.PromptStyle)
+  parent: Microsoft.Bot.Builder.Dialogs.PromptStyler
+  isExternal: false
+  name: PromptStyler(PromptStyle)
+  nameWithType: PromptStyler.PromptStyler(PromptStyle)
+  fullName: PromptStyler.PromptStyler(PromptStyle)
+- uid: Microsoft.Bot.Builder.Dialogs.PromptStyle
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: PromptStyle
+  nameWithType: PromptStyle
+  fullName: Microsoft.Bot.Builder.Dialogs.PromptStyle
+- uid: Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply(Microsoft.Bot.Connector.IMessageActivity@,System.String)
+  parent: Microsoft.Bot.Builder.Dialogs.PromptStyler
+  isExternal: false
+  name: Apply(IMessageActivity, String)
+  nameWithType: PromptStyler.Apply(IMessageActivity, String)
+  fullName: PromptStyler.Apply(IMessageActivity, String)
+- uid: Microsoft.Bot.Connector.IMessageActivity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IMessageActivity
+  nameWithType: IMessageActivity
+  fullName: Microsoft.Bot.Connector.IMessageActivity
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply``1(Microsoft.Bot.Connector.IMessageActivity@,System.String,System.Collections.Generic.IReadOnlyList{``0},System.Collections.Generic.IReadOnlyList{System.String})
+  parent: Microsoft.Bot.Builder.Dialogs.PromptStyler
+  isExternal: false
+  name: Apply<T>(IMessageActivity, String, IReadOnlyList<T>, IReadOnlyList<String>)
+  nameWithType: PromptStyler.Apply<T>(IMessageActivity, String, IReadOnlyList<T>, IReadOnlyList<String>)
+  fullName: PromptStyler.Apply<T>(IMessageActivity, String, IReadOnlyList<T>, IReadOnlyList<String>)
+- uid: System.Collections.Generic.IReadOnlyList`1
+  name: IReadOnlyList
+  nameWithType: IReadOnlyList
+  fullName: System.Collections.Generic.IReadOnlyList
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Collections.Generic.IReadOnlyList{T}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T
+    name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Collections.Generic.IReadOnlyList{System.String}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IReadOnlyList<String>
+  nameWithType: IReadOnlyList<String>
+  fullName: System.Collections.Generic.IReadOnlyList<System.String>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply``1(Microsoft.Bot.Connector.IMessageActivity@,System.String,System.Collections.Generic.IReadOnlyList{``0},Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IReadOnlyList{System.String})
+  parent: Microsoft.Bot.Builder.Dialogs.PromptStyler
+  isExternal: false
+  name: Apply<T>(IMessageActivity, String, IReadOnlyList<T>, PromptStyle, IReadOnlyList<String>)
+  nameWithType: PromptStyler.Apply<T>(IMessageActivity, String, IReadOnlyList<T>, PromptStyle, IReadOnlyList<String>)
+  fullName: PromptStyler.Apply<T>(IMessageActivity, String, IReadOnlyList<T>, PromptStyle, IReadOnlyList<String>)
+- uid: Microsoft.Bot.Builder.Dialogs.PromptStyler.PromptStyle
+  parent: Microsoft.Bot.Builder.Dialogs.PromptStyler
+  isExternal: false
+  name: PromptStyle
+  nameWithType: PromptStyler.PromptStyle
+  fullName: PromptStyler.PromptStyle
+- uid: Microsoft.Bot.Builder.Dialogs.PromptStyler.#ctor*
+  parent: Microsoft.Bot.Builder.Dialogs.PromptStyler
+  isExternal: false
+  name: PromptStyler
+  nameWithType: PromptStyler.PromptStyler
+  fullName: PromptStyler.PromptStyler
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptStyler.xml
+- uid: Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply*
+  parent: Microsoft.Bot.Builder.Dialogs.PromptStyler
+  isExternal: false
+  name: Apply
+  nameWithType: PromptStyler.Apply
+  fullName: PromptStyler.Apply
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptStyler.xml
+- uid: Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply``1*
+  parent: Microsoft.Bot.Builder.Dialogs.PromptStyler
+  isExternal: false
+  name: Apply<T>
+  nameWithType: PromptStyler.Apply<T>
+  fullName: PromptStyler.Apply<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptStyler.xml

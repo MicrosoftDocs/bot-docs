@@ -1,0 +1,313 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.CardAction
+  commentId: T:Microsoft.Bot.Connector.CardAction
+  id: CardAction
+  children:
+  - Microsoft.Bot.Connector.CardAction.#ctor
+  - Microsoft.Bot.Connector.CardAction.#ctor(System.String,System.String,System.String,System.Object)
+  - Microsoft.Bot.Connector.CardAction.Image
+  - Microsoft.Bot.Connector.CardAction.Title
+  - Microsoft.Bot.Connector.CardAction.Type
+  - Microsoft.Bot.Connector.CardAction.Value
+  langs:
+  - csharp
+  name: CardAction
+  nameWithType: CardAction
+  fullName: Microsoft.Bot.Connector.CardAction
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: An action on a card
+  syntax:
+    content: public class CardAction
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/CardAction.xml
+- uid: Microsoft.Bot.Connector.CardAction.#ctor
+  commentId: M:Microsoft.Bot.Connector.CardAction.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Connector.CardAction
+  langs:
+  - csharp
+  name: CardAction()
+  nameWithType: CardAction.CardAction()
+  fullName: CardAction.CardAction()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the CardAction class.
+  syntax:
+    content: public CardAction ();
+    parameters: []
+  overload: Microsoft.Bot.Connector.CardAction.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/CardAction.xml
+- uid: Microsoft.Bot.Connector.CardAction.#ctor(System.String,System.String,System.String,System.Object)
+  commentId: M:Microsoft.Bot.Connector.CardAction.#ctor(System.String,System.String,System.String,System.Object)
+  id: '#ctor(System.String,System.String,System.String,System.Object)'
+  parent: Microsoft.Bot.Connector.CardAction
+  langs:
+  - csharp
+  name: CardAction(String, String, String, Object)
+  nameWithType: CardAction.CardAction(String, String, String, Object)
+  fullName: CardAction.CardAction(String, String, String, Object)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the CardAction class.
+  syntax:
+    content: public CardAction (string type = null, string title = null, string image = null, object value = null);
+    parameters:
+    - id: type
+      type: System.String
+      description: To be added.
+    - id: title
+      type: System.String
+      description: To be added.
+    - id: image
+      type: System.String
+      description: To be added.
+    - id: value
+      type: System.Object
+      description: To be added.
+  overload: Microsoft.Bot.Connector.CardAction.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/CardAction.xml
+- uid: Microsoft.Bot.Connector.CardAction.Image
+  commentId: P:Microsoft.Bot.Connector.CardAction.Image
+  id: Image
+  parent: Microsoft.Bot.Connector.CardAction
+  langs:
+  - csharp
+  name: Image
+  nameWithType: CardAction.Image
+  fullName: CardAction.Image
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: URL Picture which will appear on the button, next to text label.
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="image")]
+
+      public string Image { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.CardAction.Image*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/CardAction.xml
+- uid: Microsoft.Bot.Connector.CardAction.Title
+  commentId: P:Microsoft.Bot.Connector.CardAction.Title
+  id: Title
+  parent: Microsoft.Bot.Connector.CardAction
+  langs:
+  - csharp
+  name: Title
+  nameWithType: CardAction.Title
+  fullName: CardAction.Title
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Text description which appear on the button.
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="title")]
+
+      public string Title { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.CardAction.Title*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/CardAction.xml
+- uid: Microsoft.Bot.Connector.CardAction.Type
+  commentId: P:Microsoft.Bot.Connector.CardAction.Type
+  id: Type
+  parent: Microsoft.Bot.Connector.CardAction
+  langs:
+  - csharp
+  name: Type
+  nameWithType: CardAction.Type
+  fullName: CardAction.Type
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Defines the type of action implemented by this button.
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="type")]
+
+      public string Type { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.CardAction.Type*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/CardAction.xml
+- uid: Microsoft.Bot.Connector.CardAction.Value
+  commentId: P:Microsoft.Bot.Connector.CardAction.Value
+  id: Value
+  parent: Microsoft.Bot.Connector.CardAction
+  langs:
+  - csharp
+  name: Value
+  nameWithType: CardAction.Value
+  fullName: CardAction.Value
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: >-
+    Supplementary parameter for action. Content of this property
+                depends on the ActionType
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="value")]
+
+      public object Value { get; set; }
+    return:
+      type: System.Object
+      description: To be added.
+  overload: Microsoft.Bot.Connector.CardAction.Value*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/CardAction.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.CardAction.#ctor
+  parent: Microsoft.Bot.Connector.CardAction
+  isExternal: false
+  name: CardAction()
+  nameWithType: CardAction.CardAction()
+  fullName: CardAction.CardAction()
+- uid: Microsoft.Bot.Connector.CardAction.#ctor(System.String,System.String,System.String,System.Object)
+  parent: Microsoft.Bot.Connector.CardAction
+  isExternal: false
+  name: CardAction(String, String, String, Object)
+  nameWithType: CardAction.CardAction(String, String, String, Object)
+  fullName: CardAction.CardAction(String, String, String, Object)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.CardAction.Image
+  parent: Microsoft.Bot.Connector.CardAction
+  isExternal: false
+  name: Image
+  nameWithType: CardAction.Image
+  fullName: CardAction.Image
+- uid: Microsoft.Bot.Connector.CardAction.Title
+  parent: Microsoft.Bot.Connector.CardAction
+  isExternal: false
+  name: Title
+  nameWithType: CardAction.Title
+  fullName: CardAction.Title
+- uid: Microsoft.Bot.Connector.CardAction.Type
+  parent: Microsoft.Bot.Connector.CardAction
+  isExternal: false
+  name: Type
+  nameWithType: CardAction.Type
+  fullName: CardAction.Type
+- uid: Microsoft.Bot.Connector.CardAction.Value
+  parent: Microsoft.Bot.Connector.CardAction
+  isExternal: false
+  name: Value
+  nameWithType: CardAction.Value
+  fullName: CardAction.Value
+- uid: Microsoft.Bot.Connector.CardAction.#ctor*
+  parent: Microsoft.Bot.Connector.CardAction
+  isExternal: false
+  name: CardAction
+  nameWithType: CardAction.CardAction
+  fullName: CardAction.CardAction
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/CardAction.xml
+- uid: Microsoft.Bot.Connector.CardAction.Image*
+  parent: Microsoft.Bot.Connector.CardAction
+  isExternal: false
+  name: Image
+  nameWithType: CardAction.Image
+  fullName: CardAction.Image
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/CardAction.xml
+- uid: Microsoft.Bot.Connector.CardAction.Title*
+  parent: Microsoft.Bot.Connector.CardAction
+  isExternal: false
+  name: Title
+  nameWithType: CardAction.Title
+  fullName: CardAction.Title
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/CardAction.xml
+- uid: Microsoft.Bot.Connector.CardAction.Type*
+  parent: Microsoft.Bot.Connector.CardAction
+  isExternal: false
+  name: Type
+  nameWithType: CardAction.Type
+  fullName: CardAction.Type
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/CardAction.xml
+- uid: Microsoft.Bot.Connector.CardAction.Value*
+  parent: Microsoft.Bot.Connector.CardAction
+  isExternal: false
+  name: Value
+  nameWithType: CardAction.Value
+  fullName: CardAction.Value
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/CardAction.xml

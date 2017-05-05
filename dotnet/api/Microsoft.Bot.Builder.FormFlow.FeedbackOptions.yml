@@ -1,0 +1,166 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.FeedbackOptions
+  commentId: T:Microsoft.Bot.Builder.FormFlow.FeedbackOptions
+  id: FeedbackOptions
+  children:
+  - Microsoft.Bot.Builder.FormFlow.FeedbackOptions.Always
+  - Microsoft.Bot.Builder.FormFlow.FeedbackOptions.Auto
+  - Microsoft.Bot.Builder.FormFlow.FeedbackOptions.Default
+  - Microsoft.Bot.Builder.FormFlow.FeedbackOptions.Never
+  langs:
+  - csharp
+  name: FeedbackOptions
+  nameWithType: FeedbackOptions
+  fullName: Microsoft.Bot.Builder.FormFlow.FeedbackOptions
+  type: Enum
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Control how the user gets feedback after each entry.
+  syntax:
+    content: public enum FeedbackOptions
+  inheritance:
+  - System.Enum
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/FeedbackOptions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.FeedbackOptions.Always
+  commentId: F:Microsoft.Bot.Builder.FormFlow.FeedbackOptions.Always
+  id: Always
+  parent: Microsoft.Bot.Builder.FormFlow.FeedbackOptions
+  langs:
+  - csharp
+  name: Always
+  nameWithType: FeedbackOptions.Always
+  fullName: FeedbackOptions.Always
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Provide feedback after every user input.
+  syntax:
+    content: Always
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.FeedbackOptions
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/FeedbackOptions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.FeedbackOptions.Auto
+  commentId: F:Microsoft.Bot.Builder.FormFlow.FeedbackOptions.Auto
+  id: Auto
+  parent: Microsoft.Bot.Builder.FormFlow.FeedbackOptions
+  langs:
+  - csharp
+  name: Auto
+  nameWithType: FeedbackOptions.Auto
+  fullName: FeedbackOptions.Auto
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Provide feedback using the <xref href="Microsoft.Bot.Builder.FormFlow.TemplateUsage.Feedback"></xref> template only if part of the user input was not understood.
+  syntax:
+    content: Auto
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.FeedbackOptions
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/FeedbackOptions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.FeedbackOptions.Default
+  commentId: F:Microsoft.Bot.Builder.FormFlow.FeedbackOptions.Default
+  id: Default
+  parent: Microsoft.Bot.Builder.FormFlow.FeedbackOptions
+  langs:
+  - csharp
+  name: Default
+  nameWithType: FeedbackOptions.Default
+  fullName: FeedbackOptions.Default
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Use the default from the <xref href="Microsoft.Bot.Builder.FormFlow.FormConfiguration.DefaultPrompt"></xref>.
+  syntax:
+    content: Default
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.FeedbackOptions
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/FeedbackOptions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.FeedbackOptions.Never
+  commentId: F:Microsoft.Bot.Builder.FormFlow.FeedbackOptions.Never
+  id: Never
+  parent: Microsoft.Bot.Builder.FormFlow.FeedbackOptions
+  langs:
+  - csharp
+  name: Never
+  nameWithType: FeedbackOptions.Never
+  fullName: FeedbackOptions.Never
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Never provide feedback.
+  syntax:
+    content: Never
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.FeedbackOptions
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/FeedbackOptions.xml
+references:
+- uid: System.Enum
+  parent: System
+  isExternal: true
+  name: Enum
+  nameWithType: Enum
+  fullName: System.Enum
+- uid: Microsoft.Bot.Builder.FormFlow.FeedbackOptions.Always
+  parent: Microsoft.Bot.Builder.FormFlow.FeedbackOptions
+  isExternal: false
+  name: Always
+  nameWithType: FeedbackOptions.Always
+  fullName: FeedbackOptions.Always
+- uid: Microsoft.Bot.Builder.FormFlow.FeedbackOptions
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: FeedbackOptions
+  nameWithType: FeedbackOptions
+  fullName: Microsoft.Bot.Builder.FormFlow.FeedbackOptions
+- uid: Microsoft.Bot.Builder.FormFlow.FeedbackOptions.Auto
+  parent: Microsoft.Bot.Builder.FormFlow.FeedbackOptions
+  isExternal: false
+  name: Auto
+  nameWithType: FeedbackOptions.Auto
+  fullName: FeedbackOptions.Auto
+- uid: Microsoft.Bot.Builder.FormFlow.FeedbackOptions.Default
+  parent: Microsoft.Bot.Builder.FormFlow.FeedbackOptions
+  isExternal: false
+  name: Default
+  nameWithType: FeedbackOptions.Default
+  fullName: FeedbackOptions.Default
+- uid: Microsoft.Bot.Builder.FormFlow.FeedbackOptions.Never
+  parent: Microsoft.Bot.Builder.FormFlow.FeedbackOptions
+  isExternal: false
+  name: Never
+  nameWithType: FeedbackOptions.Never
+  fullName: FeedbackOptions.Never

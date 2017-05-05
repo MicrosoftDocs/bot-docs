@@ -1,0 +1,146 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.FormCanceledException`1
+  commentId: T:Microsoft.Bot.Builder.FormFlow.FormCanceledException`1
+  id: FormCanceledException`1
+  children:
+  - Microsoft.Bot.Builder.FormFlow.FormCanceledException`1.#ctor(System.String,System.Exception)
+  - Microsoft.Bot.Builder.FormFlow.FormCanceledException`1.LastForm
+  langs:
+  - csharp
+  name: FormCanceledException<T>
+  nameWithType: FormCanceledException<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.FormCanceledException<T>
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Exception generated when form filling is canceled by user quit or exception.
+  syntax:
+    content: 'public class FormCanceledException<T> : Microsoft.Bot.Builder.FormFlow.FormCanceledException'
+    typeParameters:
+    - id: T
+      description: Underlying form type.
+  inheritance:
+  - System.OperationCanceledException
+  - Microsoft.Bot.Builder.FormFlow.FormCanceledException
+  implements: []
+  inheritedMembers:
+  - Microsoft.Bot.Builder.FormFlow.FormCanceledException.Completed
+  - Microsoft.Bot.Builder.FormFlow.FormCanceledException.Last
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/FormCanceledException`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.FormCanceledException`1.#ctor(System.String,System.Exception)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.FormCanceledException`1.#ctor(System.String,System.Exception)
+  id: '#ctor(System.String,System.Exception)'
+  parent: Microsoft.Bot.Builder.FormFlow.FormCanceledException`1
+  langs:
+  - csharp
+  name: FormCanceledException<T>(String, Exception)
+  nameWithType: FormCanceledException<T>.FormCanceledException<T>(String, Exception)
+  fullName: FormCanceledException<T>.FormCanceledException<T>(String, Exception)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Constructor with message and inner exception.
+  remarks: In the case of user quit, the inner exception will be null.
+  syntax:
+    content: public FormCanceledException (string message, Exception inner = null);
+    parameters:
+    - id: message
+      type: System.String
+      description: Exception message.
+    - id: inner
+      type: System.Exception
+      description: Inner exception.
+  overload: Microsoft.Bot.Builder.FormFlow.FormCanceledException`1.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/FormCanceledException`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.FormCanceledException`1.LastForm
+  commentId: P:Microsoft.Bot.Builder.FormFlow.FormCanceledException`1.LastForm
+  id: LastForm
+  parent: Microsoft.Bot.Builder.FormFlow.FormCanceledException`1
+  langs:
+  - csharp
+  name: LastForm
+  nameWithType: FormCanceledException<T>.LastForm
+  fullName: FormCanceledException<T>.LastForm
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Gets the partial form when the user quits or there is an exception.
+  syntax:
+    content: public T LastForm { get; }
+    return:
+      type: T
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.FormCanceledException`1.LastForm*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/FormCanceledException`1.xml
+references:
+- uid: Microsoft.Bot.Builder.FormFlow.FormCanceledException
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: FormCanceledException
+  nameWithType: FormCanceledException
+  fullName: Microsoft.Bot.Builder.FormFlow.FormCanceledException
+- uid: Microsoft.Bot.Builder.FormFlow.FormCanceledException`1.#ctor(System.String,System.Exception)
+  parent: Microsoft.Bot.Builder.FormFlow.FormCanceledException`1
+  isExternal: false
+  name: FormCanceledException<T>(String, Exception)
+  nameWithType: FormCanceledException<T>.FormCanceledException<T>(String, Exception)
+  fullName: FormCanceledException<T>.FormCanceledException<T>(String, Exception)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Microsoft.Bot.Builder.FormFlow.FormCanceledException`1.LastForm
+  parent: Microsoft.Bot.Builder.FormFlow.FormCanceledException`1
+  isExternal: false
+  name: LastForm
+  nameWithType: FormCanceledException<T>.LastForm
+  fullName: FormCanceledException<T>.LastForm
+- uid: T
+  isExternal: true
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.Bot.Builder.FormFlow.FormCanceledException`1.#ctor*
+  parent: Microsoft.Bot.Builder.FormFlow.FormCanceledException`1
+  isExternal: false
+  name: FormCanceledException<T>
+  nameWithType: FormCanceledException<T>.FormCanceledException<T>
+  fullName: FormCanceledException<T>.FormCanceledException<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/FormCanceledException`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.FormCanceledException`1.LastForm*
+  parent: Microsoft.Bot.Builder.FormFlow.FormCanceledException`1
+  isExternal: false
+  name: LastForm
+  nameWithType: FormCanceledException<T>.LastForm
+  fullName: FormCanceledException<T>.LastForm
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/FormCanceledException`1.xml

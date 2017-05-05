@@ -1,0 +1,105 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Luis.LuisApiVersion
+  commentId: T:Microsoft.Bot.Builder.Luis.LuisApiVersion
+  id: LuisApiVersion
+  children:
+  - Microsoft.Bot.Builder.Luis.LuisApiVersion.V1
+  - Microsoft.Bot.Builder.Luis.LuisApiVersion.V2
+  langs:
+  - csharp
+  name: LuisApiVersion
+  nameWithType: LuisApiVersion
+  fullName: Microsoft.Bot.Builder.Luis.LuisApiVersion
+  type: Enum
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Luis
+  summary: Luis api version.
+  syntax:
+    content: public enum LuisApiVersion
+  inheritance:
+  - System.Enum
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisApiVersion.xml
+- uid: Microsoft.Bot.Builder.Luis.LuisApiVersion.V1
+  commentId: F:Microsoft.Bot.Builder.Luis.LuisApiVersion.V1
+  id: V1
+  parent: Microsoft.Bot.Builder.Luis.LuisApiVersion
+  langs:
+  - csharp
+  name: V1
+  nameWithType: LuisApiVersion.V1
+  fullName: LuisApiVersion.V1
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  syntax:
+    content: >-
+      [System.Obsolete]
+
+      V1
+    return:
+      type: Microsoft.Bot.Builder.Luis.LuisApiVersion
+      description: To be added.
+  exceptions: []
+  attributes:
+  - type: System.Obsolete
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisApiVersion.xml
+- uid: Microsoft.Bot.Builder.Luis.LuisApiVersion.V2
+  commentId: F:Microsoft.Bot.Builder.Luis.LuisApiVersion.V2
+  id: V2
+  parent: Microsoft.Bot.Builder.Luis.LuisApiVersion
+  langs:
+  - csharp
+  name: V2
+  nameWithType: LuisApiVersion.V2
+  fullName: LuisApiVersion.V2
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  syntax:
+    content: V2
+    return:
+      type: Microsoft.Bot.Builder.Luis.LuisApiVersion
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisApiVersion.xml
+references:
+- uid: System.Enum
+  parent: System
+  isExternal: true
+  name: Enum
+  nameWithType: Enum
+  fullName: System.Enum
+- uid: Microsoft.Bot.Builder.Luis.LuisApiVersion.V1
+  parent: Microsoft.Bot.Builder.Luis.LuisApiVersion
+  isExternal: false
+  name: V1
+  nameWithType: LuisApiVersion.V1
+  fullName: LuisApiVersion.V1
+- uid: Microsoft.Bot.Builder.Luis.LuisApiVersion
+  parent: Microsoft.Bot.Builder.Luis
+  isExternal: false
+  name: LuisApiVersion
+  nameWithType: LuisApiVersion
+  fullName: Microsoft.Bot.Builder.Luis.LuisApiVersion
+- uid: Microsoft.Bot.Builder.Luis.LuisApiVersion.V2
+  parent: Microsoft.Bot.Builder.Luis.LuisApiVersion
+  isExternal: false
+  name: V2
+  nameWithType: LuisApiVersion.V2
+  fullName: LuisApiVersion.V2

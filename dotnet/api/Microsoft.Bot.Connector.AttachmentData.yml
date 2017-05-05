@@ -1,0 +1,329 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.AttachmentData
+  commentId: T:Microsoft.Bot.Connector.AttachmentData
+  id: AttachmentData
+  children:
+  - Microsoft.Bot.Connector.AttachmentData.#ctor
+  - Microsoft.Bot.Connector.AttachmentData.#ctor(System.String,System.String,System.Byte[],System.Byte[])
+  - Microsoft.Bot.Connector.AttachmentData.Name
+  - Microsoft.Bot.Connector.AttachmentData.OriginalBase64
+  - Microsoft.Bot.Connector.AttachmentData.ThumbnailBase64
+  - Microsoft.Bot.Connector.AttachmentData.Type
+  langs:
+  - csharp
+  name: AttachmentData
+  nameWithType: AttachmentData
+  fullName: Microsoft.Bot.Connector.AttachmentData
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: Attachment data
+  syntax:
+    content: public class AttachmentData
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/AttachmentData.xml
+- uid: Microsoft.Bot.Connector.AttachmentData.#ctor
+  commentId: M:Microsoft.Bot.Connector.AttachmentData.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Connector.AttachmentData
+  langs:
+  - csharp
+  name: AttachmentData()
+  nameWithType: AttachmentData.AttachmentData()
+  fullName: AttachmentData.AttachmentData()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the AttachmentData class.
+  syntax:
+    content: public AttachmentData ();
+    parameters: []
+  overload: Microsoft.Bot.Connector.AttachmentData.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/AttachmentData.xml
+- uid: Microsoft.Bot.Connector.AttachmentData.#ctor(System.String,System.String,System.Byte[],System.Byte[])
+  commentId: M:Microsoft.Bot.Connector.AttachmentData.#ctor(System.String,System.String,System.Byte[],System.Byte[])
+  id: '#ctor(System.String,System.String,System.Byte[],System.Byte[])'
+  parent: Microsoft.Bot.Connector.AttachmentData
+  langs:
+  - csharp
+  name: AttachmentData(String, String, Byte[], Byte[])
+  nameWithType: AttachmentData.AttachmentData(String, String, Byte[], Byte[])
+  fullName: AttachmentData.AttachmentData(String, String, Byte[], Byte[])
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the AttachmentData class.
+  syntax:
+    content: public AttachmentData (string type = null, string name = null, byte[] originalBase64 = null, byte[] thumbnailBase64 = null);
+    parameters:
+    - id: type
+      type: System.String
+      description: To be added.
+    - id: name
+      type: System.String
+      description: To be added.
+    - id: originalBase64
+      type: System.Byte[]
+      description: To be added.
+    - id: thumbnailBase64
+      type: System.Byte[]
+      description: To be added.
+  overload: Microsoft.Bot.Connector.AttachmentData.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/AttachmentData.xml
+- uid: Microsoft.Bot.Connector.AttachmentData.Name
+  commentId: P:Microsoft.Bot.Connector.AttachmentData.Name
+  id: Name
+  parent: Microsoft.Bot.Connector.AttachmentData
+  langs:
+  - csharp
+  name: Name
+  nameWithType: AttachmentData.Name
+  fullName: AttachmentData.Name
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Name of the attachment
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="name")]
+
+      public string Name { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.AttachmentData.Name*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/AttachmentData.xml
+- uid: Microsoft.Bot.Connector.AttachmentData.OriginalBase64
+  commentId: P:Microsoft.Bot.Connector.AttachmentData.OriginalBase64
+  id: OriginalBase64
+  parent: Microsoft.Bot.Connector.AttachmentData
+  langs:
+  - csharp
+  name: OriginalBase64
+  nameWithType: AttachmentData.OriginalBase64
+  fullName: AttachmentData.OriginalBase64
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: original content
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="originalBase64")]
+
+      public byte[] OriginalBase64 { get; set; }
+    return:
+      type: System.Byte[]
+      description: To be added.
+  overload: Microsoft.Bot.Connector.AttachmentData.OriginalBase64*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/AttachmentData.xml
+- uid: Microsoft.Bot.Connector.AttachmentData.ThumbnailBase64
+  commentId: P:Microsoft.Bot.Connector.AttachmentData.ThumbnailBase64
+  id: ThumbnailBase64
+  parent: Microsoft.Bot.Connector.AttachmentData
+  langs:
+  - csharp
+  name: ThumbnailBase64
+  nameWithType: AttachmentData.ThumbnailBase64
+  fullName: AttachmentData.ThumbnailBase64
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Thumbnail
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="thumbnailBase64")]
+
+      public byte[] ThumbnailBase64 { get; set; }
+    return:
+      type: System.Byte[]
+      description: To be added.
+  overload: Microsoft.Bot.Connector.AttachmentData.ThumbnailBase64*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/AttachmentData.xml
+- uid: Microsoft.Bot.Connector.AttachmentData.Type
+  commentId: P:Microsoft.Bot.Connector.AttachmentData.Type
+  id: Type
+  parent: Microsoft.Bot.Connector.AttachmentData
+  langs:
+  - csharp
+  name: Type
+  nameWithType: AttachmentData.Type
+  fullName: AttachmentData.Type
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: content type of the attachmnet
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="type")]
+
+      public string Type { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.AttachmentData.Type*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/AttachmentData.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.AttachmentData.#ctor
+  parent: Microsoft.Bot.Connector.AttachmentData
+  isExternal: false
+  name: AttachmentData()
+  nameWithType: AttachmentData.AttachmentData()
+  fullName: AttachmentData.AttachmentData()
+- uid: Microsoft.Bot.Connector.AttachmentData.#ctor(System.String,System.String,System.Byte[],System.Byte[])
+  parent: Microsoft.Bot.Connector.AttachmentData
+  isExternal: false
+  name: AttachmentData(String, String, Byte[], Byte[])
+  nameWithType: AttachmentData.AttachmentData(String, String, Byte[], Byte[])
+  fullName: AttachmentData.AttachmentData(String, String, Byte[], Byte[])
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Byte
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: System.Byte[]
+  parent: System
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: Microsoft.Bot.Connector.AttachmentData.Name
+  parent: Microsoft.Bot.Connector.AttachmentData
+  isExternal: false
+  name: Name
+  nameWithType: AttachmentData.Name
+  fullName: AttachmentData.Name
+- uid: Microsoft.Bot.Connector.AttachmentData.OriginalBase64
+  parent: Microsoft.Bot.Connector.AttachmentData
+  isExternal: false
+  name: OriginalBase64
+  nameWithType: AttachmentData.OriginalBase64
+  fullName: AttachmentData.OriginalBase64
+- uid: Microsoft.Bot.Connector.AttachmentData.ThumbnailBase64
+  parent: Microsoft.Bot.Connector.AttachmentData
+  isExternal: false
+  name: ThumbnailBase64
+  nameWithType: AttachmentData.ThumbnailBase64
+  fullName: AttachmentData.ThumbnailBase64
+- uid: Microsoft.Bot.Connector.AttachmentData.Type
+  parent: Microsoft.Bot.Connector.AttachmentData
+  isExternal: false
+  name: Type
+  nameWithType: AttachmentData.Type
+  fullName: AttachmentData.Type
+- uid: Microsoft.Bot.Connector.AttachmentData.#ctor*
+  parent: Microsoft.Bot.Connector.AttachmentData
+  isExternal: false
+  name: AttachmentData
+  nameWithType: AttachmentData.AttachmentData
+  fullName: AttachmentData.AttachmentData
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/AttachmentData.xml
+- uid: Microsoft.Bot.Connector.AttachmentData.Name*
+  parent: Microsoft.Bot.Connector.AttachmentData
+  isExternal: false
+  name: Name
+  nameWithType: AttachmentData.Name
+  fullName: AttachmentData.Name
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/AttachmentData.xml
+- uid: Microsoft.Bot.Connector.AttachmentData.OriginalBase64*
+  parent: Microsoft.Bot.Connector.AttachmentData
+  isExternal: false
+  name: OriginalBase64
+  nameWithType: AttachmentData.OriginalBase64
+  fullName: AttachmentData.OriginalBase64
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/AttachmentData.xml
+- uid: Microsoft.Bot.Connector.AttachmentData.ThumbnailBase64*
+  parent: Microsoft.Bot.Connector.AttachmentData
+  isExternal: false
+  name: ThumbnailBase64
+  nameWithType: AttachmentData.ThumbnailBase64
+  fullName: AttachmentData.ThumbnailBase64
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/AttachmentData.xml
+- uid: Microsoft.Bot.Connector.AttachmentData.Type*
+  parent: Microsoft.Bot.Connector.AttachmentData
+  isExternal: false
+  name: Type
+  nameWithType: AttachmentData.Type
+  fullName: AttachmentData.Type
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/AttachmentData.xml

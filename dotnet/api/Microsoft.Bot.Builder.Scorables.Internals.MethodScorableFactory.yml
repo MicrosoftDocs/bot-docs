@@ -1,0 +1,220 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory
+  commentId: T:Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory
+  id: MethodScorableFactory
+  children:
+  - Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory.#ctor
+  - Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory.Microsoft#Bot#Builder#Scorables#Internals#IScorableFactory{Microsoft#Bot#Builder#Scorables#Internals#IResolver,Microsoft#Bot#Builder#Scorables#Internals#IBinding}#ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})
+  langs:
+  - csharp
+  name: MethodScorableFactory
+  nameWithType: MethodScorableFactory
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: 'public sealed class MethodScorableFactory : Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding>'
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding}
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/MethodScorableFactory.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory.#ctor
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory
+  langs:
+  - csharp
+  name: MethodScorableFactory()
+  nameWithType: MethodScorableFactory.MethodScorableFactory()
+  fullName: MethodScorableFactory.MethodScorableFactory()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public MethodScorableFactory ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/MethodScorableFactory.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory.Microsoft#Bot#Builder#Scorables#Internals#IScorableFactory{Microsoft#Bot#Builder#Scorables#Internals#IResolver,Microsoft#Bot#Builder#Scorables#Internals#IBinding}#ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory.Microsoft#Bot#Builder#Scorables#Internals#IScorableFactory<Microsoft#Bot#Builder#Scorables#Internals#IResolver,Microsoft#Bot#Builder#Scorables#Internals#IBinding>#ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})
+  id: Microsoft#Bot#Builder#Scorables#Internals#IScorableFactory{Microsoft#Bot#Builder#Scorables#Internals#IResolver,Microsoft#Bot#Builder#Scorables#Internals#IBinding}#ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})
+  isEii: true
+  parent: Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory
+  langs:
+  - csharp
+  name: IScorableFactory<IResolver,IBinding>.ScorableFor(IEnumerable<MethodInfo>)
+  nameWithType: MethodScorableFactory.IScorableFactory<IResolver,IBinding>.ScorableFor(IEnumerable<MethodInfo>)
+  fullName: MethodScorableFactory.IScorableFactory<IResolver,IBinding>.ScorableFor(IEnumerable<MethodInfo>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding> IScorableFactory<IResolver,IBinding>.ScorableFor (System.Collections.Generic.IEnumerable<System.Reflection.MethodInfo> methods);
+    parameters:
+    - id: methods
+      type: System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo}
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory.Microsoft#Bot#Builder#Scorables#Internals#IScorableFactory{Microsoft#Bot#Builder#Scorables#Internals#IResolver,Microsoft#Bot#Builder#Scorables#Internals#IBinding}#ScorableFor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/MethodScorableFactory.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory.#ctor
+  parent: Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory
+  isExternal: false
+  name: MethodScorableFactory()
+  nameWithType: MethodScorableFactory.MethodScorableFactory()
+  fullName: MethodScorableFactory.MethodScorableFactory()
+- uid: Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory.Microsoft#Bot#Builder#Scorables#Internals#IScorableFactory{Microsoft#Bot#Builder#Scorables#Internals#IResolver,Microsoft#Bot#Builder#Scorables#Internals#IBinding}#ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})
+  parent: Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory
+  isExternal: false
+  name: IScorableFactory<IResolver,IBinding>.ScorableFor(IEnumerable<MethodInfo>)
+  nameWithType: MethodScorableFactory.IScorableFactory<IResolver,IBinding>.ScorableFor(IEnumerable<MethodInfo>)
+  fullName: MethodScorableFactory.IScorableFactory<IResolver,IBinding>.ScorableFor(IEnumerable<MethodInfo>)
+- uid: Microsoft.Bot.Builder.Scorables.IScorable`2
+  name: IScorable<Item,Score>
+  nameWithType: IScorable<Item,Score>
+  fullName: Microsoft.Bot.Builder.Scorables.IScorable<Item,Score>
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+  name: IResolver
+  nameWithType: IResolver
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IBinding
+  name: IBinding
+  nameWithType: IBinding
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.IBinding
+- uid: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding}
+  parent: Microsoft.Bot.Builder.Scorables
+  isExternal: false
+  name: IScorable<IResolver,IBinding>
+  nameWithType: IScorable<IResolver,IBinding>
+  fullName: Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Scorables.IScorable`2
+    name: IScorable
+    nameWithType: IScorable
+    fullName: Microsoft.Bot.Builder.Scorables.IScorable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+    name: IResolver
+    nameWithType: IResolver
+    fullName: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.IBinding
+    name: IBinding
+    nameWithType: IBinding
+    fullName: Microsoft.Bot.Builder.Scorables.Internals.IBinding
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.Generic.IEnumerable
+- uid: System.Reflection.MethodInfo
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<MethodInfo>
+  nameWithType: IEnumerable<MethodInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.MethodInfo>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    nameWithType: MethodInfo
+    fullName: System.Reflection.MethodInfo
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory.#ctor*
+  parent: Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory
+  isExternal: false
+  name: MethodScorableFactory
+  nameWithType: MethodScorableFactory.MethodScorableFactory
+  fullName: MethodScorableFactory.MethodScorableFactory
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/MethodScorableFactory.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory.Microsoft#Bot#Builder#Scorables#Internals#IScorableFactory{Microsoft#Bot#Builder#Scorables#Internals#IResolver,Microsoft#Bot#Builder#Scorables#Internals#IBinding}#ScorableFor*
+  parent: Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory
+  isExternal: false
+  name: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding>.ScorableFor
+  nameWithType: MethodScorableFactory.Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding>.ScorableFor
+  fullName: MethodScorableFactory.Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding>.ScorableFor
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/MethodScorableFactory.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2
+  name: IScorableFactory<Item,Score>
+  nameWithType: IScorableFactory<Item,Score>
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory<Item,Score>
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding}
+  parent: Microsoft.Bot.Builder.Scorables.Internals
+  isExternal: false
+  name: IScorableFactory<IResolver,IBinding>
+  nameWithType: IScorableFactory<IResolver,IBinding>
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2
+    name: IScorableFactory
+    nameWithType: IScorableFactory
+    fullName: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+    name: IResolver
+    nameWithType: IResolver
+    fullName: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.IBinding
+    name: IBinding
+    nameWithType: IBinding
+    fullName: Microsoft.Bot.Builder.Scorables.Internals.IBinding
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'

@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser
+  commentId: T:Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser
+  id: PostUnhandledExceptionToUser
+  children:
+  - Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot,Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.Resources.ResourceManager,System.Diagnostics.TraceListener)
+  - Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser.Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  name: PostUnhandledExceptionToUser
+  nameWithType: PostUnhandledExceptionToUser
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: This IPostToBot service converts any unhandled exceptions to a message sent to the user.
+  syntax:
+    content: 'public sealed class PostUnhandledExceptionToUser : Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot'
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/PostUnhandledExceptionToUser.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot,Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.Resources.ResourceManager,System.Diagnostics.TraceListener)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot,Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.Resources.ResourceManager,System.Diagnostics.TraceListener)
+  id: '#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot,Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.Resources.ResourceManager,System.Diagnostics.TraceListener)'
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser
+  langs:
+  - csharp
+  name: PostUnhandledExceptionToUser(IPostToBot, IBotToUser, ResourceManager, TraceListener)
+  nameWithType: PostUnhandledExceptionToUser.PostUnhandledExceptionToUser(IPostToBot, IBotToUser, ResourceManager, TraceListener)
+  fullName: PostUnhandledExceptionToUser.PostUnhandledExceptionToUser(IPostToBot, IBotToUser, ResourceManager, TraceListener)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: public PostUnhandledExceptionToUser (Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot inner, Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser, System.Resources.ResourceManager resources, System.Diagnostics.TraceListener trace);
+    parameters:
+    - id: inner
+      type: Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot
+      description: To be added.
+    - id: botToUser
+      type: Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser
+      description: To be added.
+    - id: resources
+      type: System.Resources.ResourceManager
+      description: To be added.
+    - id: trace
+      type: System.Diagnostics.TraceListener
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/PostUnhandledExceptionToUser.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser.Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser.Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  id: Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser
+  langs:
+  - csharp
+  name: IPostToBot.PostAsync(IActivity, CancellationToken)
+  nameWithType: PostUnhandledExceptionToUser.IPostToBot.PostAsync(IActivity, CancellationToken)
+  fullName: PostUnhandledExceptionToUser.IPostToBot.PostAsync(IActivity, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser/<Microsoft-Bot-Builder-Dialogs-Internals-IPostToBot-PostAsync>d__5))]
+
+      System.Threading.Tasks.Task IPostToBot.PostAsync (Microsoft.Bot.Connector.IActivity activity, System.Threading.CancellationToken token);
+    parameters:
+    - id: activity
+      type: Microsoft.Bot.Connector.IActivity
+      description: To be added.
+    - id: token
+      type: System.Threading.CancellationToken
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser.Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/PostUnhandledExceptionToUser.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot,Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.Resources.ResourceManager,System.Diagnostics.TraceListener)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser
+  isExternal: false
+  name: PostUnhandledExceptionToUser(IPostToBot, IBotToUser, ResourceManager, TraceListener)
+  nameWithType: PostUnhandledExceptionToUser.PostUnhandledExceptionToUser(IPostToBot, IBotToUser, ResourceManager, TraceListener)
+  fullName: PostUnhandledExceptionToUser.PostUnhandledExceptionToUser(IPostToBot, IBotToUser, ResourceManager, TraceListener)
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot
+  parent: Microsoft.Bot.Builder.Dialogs.Internals
+  isExternal: false
+  name: IPostToBot
+  nameWithType: IPostToBot
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser
+  parent: Microsoft.Bot.Builder.Dialogs.Internals
+  isExternal: false
+  name: IBotToUser
+  nameWithType: IBotToUser
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser
+- uid: System.Resources.ResourceManager
+  parent: System.Resources
+  isExternal: true
+  name: ResourceManager
+  nameWithType: ResourceManager
+  fullName: System.Resources.ResourceManager
+- uid: System.Diagnostics.TraceListener
+  parent: System.Diagnostics
+  isExternal: true
+  name: TraceListener
+  nameWithType: TraceListener
+  fullName: System.Diagnostics.TraceListener
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser.Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser
+  isExternal: false
+  name: IPostToBot.PostAsync(IActivity, CancellationToken)
+  nameWithType: PostUnhandledExceptionToUser.IPostToBot.PostAsync(IActivity, CancellationToken)
+  fullName: PostUnhandledExceptionToUser.IPostToBot.PostAsync(IActivity, CancellationToken)
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.Bot.Connector.IActivity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IActivity
+  nameWithType: IActivity
+  fullName: Microsoft.Bot.Connector.IActivity
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser.#ctor*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser
+  isExternal: false
+  name: PostUnhandledExceptionToUser
+  nameWithType: PostUnhandledExceptionToUser.PostUnhandledExceptionToUser
+  fullName: PostUnhandledExceptionToUser.PostUnhandledExceptionToUser
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/PostUnhandledExceptionToUser.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser.Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser
+  isExternal: false
+  name: Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot.PostAsync
+  nameWithType: PostUnhandledExceptionToUser.Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot.PostAsync
+  fullName: PostUnhandledExceptionToUser.Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot.PostAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/PostUnhandledExceptionToUser.xml

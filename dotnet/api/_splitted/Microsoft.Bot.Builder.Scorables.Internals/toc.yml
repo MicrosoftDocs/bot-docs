@@ -1,0 +1,229 @@
+- uid: Microsoft.Bot.Builder.Scorables.Internals
+  name: Microsoft.Bot.Builder.Scorables.Internals
+  items:
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver
+    name: ActivityResolver
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.ArrayResolver
+    name: ArrayResolver
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+    name: AttributeString
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.AutofacResolver
+    name: AutofacResolver
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.Binder
+    name: Binder
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.Binding
+    name: Binding
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.Binding`1
+    name: Binding<R>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.BindingComparer
+    name: BindingComparer
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.DelegateScorable
+    name: DelegateScorable
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.DelegatingFoldScorable`2
+    name: DelegatingFoldScorable<Item,Score>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver
+    name: DelegatingResolver
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.DelegatingScorable`2
+    name: DelegatingScorable<Item,Score>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.EnumResolver
+    name: EnumResolver
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver
+    name: EventActivityValueResolver
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.Extensions
+    name: Extensions
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.FirstScorable`2
+    name: FirstScorable<Item,Score>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.OnStageDelegate
+    name: FoldScorable<Item,Score>.OnStageDelegate
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State
+    name: FoldScorable<Item,Score>.State
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2
+    name: FoldScorable<Item,Score>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.FoldStage
+    name: FoldStage
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.IBinder
+    name: IBinder
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.IBinding
+    name: IBinding
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.IBinding`1
+    name: IBinding<R>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.InheritedAttributes
+    name: InheritedAttributes
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.IntentComparer
+    name: IntentComparer
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.InvokeActivityValueResolver
+    name: InvokeActivityValueResolver
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+    name: IResolver
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2
+    name: IScorableFactory<Item,Score>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope
+    name: LuisIntentScorable<InnerState,InnerScore>.Scope
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2
+    name: LuisIntentScorable<InnerState,InnerScore>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorableFactory
+    name: LuisIntentScorableFactory
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.MatchComparer
+    name: MatchComparer
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.MethodResolutionException
+    name: MethodResolutionException
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.MethodScorable
+    name: MethodScorable
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.MethodScorableBase
+    name: MethodScorableBase
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory
+    name: MethodScorableFactory
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.NoneResolver
+    name: NoneResolver
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.NullComparer`1
+    name: NullComparer<T>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.NullResolver
+    name: NullResolver
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.NullScorable`2
+    name: NullScorable<Item,Score>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2
+    name: OrderScorableFactory<Item,Score>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.PropertyResolver`1
+    name: PropertyResolver<T>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable
+    name: RegexMatchScorable
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2.Scope
+    name: RegexMatchScorable<InnerState,InnerScore>.Scope
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2
+    name: RegexMatchScorable<InnerState,InnerScore>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory
+    name: RegexMatchScorableFactory
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.ResolverScope`1
+    name: ResolverScope<InnerScore>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.ResolverScorable`4
+    name: ResolverScorable<OuterState,OuterScore,InnerState,InnerScore>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.ScorableAggregator`6
+    name: ScorableAggregator<OuterItem,OuterState,OuterScore,InnerItem,InnerState,InnerScore>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.ScorableBase`3
+    name: ScorableBase<Item,State,Score>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.SelectItemScorable`3
+    name: SelectItemScorable<OuterItem,InnerItem,Score>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.SelectScoreScorable`3
+    name: SelectScoreScorable<Item,SourceScore,TargetScore>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.Token`2
+    name: Token<InnerItem,InnerScore>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.TraitsScorable`2
+    name: TraitsScorable<Item,Score>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.TryResolve
+    name: TryResolve
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.WhereScoreScorable`2
+    name: WhereScoreScorable<Item,Score>
+    version:
+    - botbuilder-3.5.5
+  version:
+  - botbuilder-3.5.5

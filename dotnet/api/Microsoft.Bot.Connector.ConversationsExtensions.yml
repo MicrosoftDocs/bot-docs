@@ -1,0 +1,1562 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.ConversationsExtensions
+  commentId: T:Microsoft.Bot.Connector.ConversationsExtensions
+  id: ConversationsExtensions
+  children:
+  - Microsoft.Bot.Connector.ConversationsExtensions.CreateConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ConversationParameters)
+  - Microsoft.Bot.Connector.ConversationsExtensions.CreateConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ConversationParameters,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.Activity)
+  - Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversation(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity)
+  - Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversationAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.ConversationsExtensions.DeleteActivity(Microsoft.Bot.Connector.IConversations,System.String,System.String)
+  - Microsoft.Bot.Connector.ConversationsExtensions.DeleteActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembers(Microsoft.Bot.Connector.IConversations,System.String,System.String)
+  - Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembersAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembers(Microsoft.Bot.Connector.IConversations,System.String)
+  - Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembersAsync(Microsoft.Bot.Connector.IConversations,System.String,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivity(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity)
+  - Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivity(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity)
+  - Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivityAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.ConversationsExtensions.SendToConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity)
+  - Microsoft.Bot.Connector.ConversationsExtensions.SendToConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.String)
+  - Microsoft.Bot.Connector.ConversationsExtensions.SendToConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.ConversationsExtensions.SendToConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.String,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivity(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity)
+  - Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivity(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity)
+  - Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivityAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  - Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachment(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Connector.AttachmentData)
+  - Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachmentAsync(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Connector.AttachmentData,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  name: ConversationsExtensions
+  nameWithType: ConversationsExtensions
+  fullName: Microsoft.Bot.Connector.ConversationsExtensions
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: Extension methods for Conversations.
+  syntax:
+    content: public static class ConversationsExtensions
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.CreateConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ConversationParameters)
+  commentId: M:Microsoft.Bot.Connector.ConversationsExtensions.CreateConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ConversationParameters)
+  id: CreateConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ConversationParameters)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  langs:
+  - csharp
+  name: CreateConversation(IConversations, ConversationParameters)
+  nameWithType: ConversationsExtensions.CreateConversation(IConversations, ConversationParameters)
+  fullName: ConversationsExtensions.CreateConversation(IConversations, ConversationParameters)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: CreateConversation
+  syntax:
+    content: public static Microsoft.Bot.Connector.ConversationResourceResponse CreateConversation (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Connector.ConversationParameters parameters);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IConversations
+      description: The operations group for this extension method.
+    - id: parameters
+      type: Microsoft.Bot.Connector.ConversationParameters
+      description: Parameters to create the conversation from
+    return:
+      type: Microsoft.Bot.Connector.ConversationResourceResponse
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationsExtensions.CreateConversation*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.CreateConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ConversationParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.ConversationsExtensions.CreateConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ConversationParameters,System.Threading.CancellationToken)
+  id: CreateConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ConversationParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  langs:
+  - csharp
+  name: CreateConversationAsync(IConversations, ConversationParameters, CancellationToken)
+  nameWithType: ConversationsExtensions.CreateConversationAsync(IConversations, ConversationParameters, CancellationToken)
+  fullName: ConversationsExtensions.CreateConversationAsync(IConversations, ConversationParameters, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: CreateConversation
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/<CreateConversationAsync>d__1))]
+
+      public static System.Threading.Tasks.Task<Microsoft.Bot.Connector.ConversationResourceResponse> CreateConversationAsync (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Connector.ConversationParameters parameters, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IConversations
+      description: The operations group for this extension method.
+    - id: parameters
+      type: Microsoft.Bot.Connector.ConversationParameters
+      description: Parameters to create the conversation from
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Connector.ConversationResourceResponse}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationsExtensions.CreateConversationAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.Activity)
+  commentId: M:Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.Activity)
+  id: CreateDirectConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.Activity)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  langs:
+  - csharp
+  name: CreateDirectConversation(IConversations, ChannelAccount, ChannelAccount, Activity)
+  nameWithType: ConversationsExtensions.CreateDirectConversation(IConversations, ChannelAccount, ChannelAccount, Activity)
+  fullName: ConversationsExtensions.CreateDirectConversation(IConversations, ChannelAccount, ChannelAccount, Activity)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Create a new direct conversation between a bot and a user
+  syntax:
+    content: public static Microsoft.Bot.Connector.ConversationResourceResponse CreateDirectConversation (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Connector.ChannelAccount bot, Microsoft.Bot.Connector.ChannelAccount user, Microsoft.Bot.Connector.Activity activity = null);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IConversations
+      description: The operations group for this extension method.
+    - id: bot
+      type: Microsoft.Bot.Connector.ChannelAccount
+      description: Bot to create conversation from
+    - id: user
+      type: Microsoft.Bot.Connector.ChannelAccount
+      description: User to create conversation with
+    - id: activity
+      type: Microsoft.Bot.Connector.Activity
+      description: (OPTIONAL) initial message to send to the new conversation
+    return:
+      type: Microsoft.Bot.Connector.ConversationResourceResponse
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversation*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversation(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity)
+  commentId: M:Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversation(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity)
+  id: CreateDirectConversation(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  langs:
+  - csharp
+  name: CreateDirectConversation(IConversations, String, String, Activity)
+  nameWithType: ConversationsExtensions.CreateDirectConversation(IConversations, String, String, Activity)
+  fullName: ConversationsExtensions.CreateDirectConversation(IConversations, String, String, Activity)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Create a new direct conversation between a bot and a user
+  syntax:
+    content: public static Microsoft.Bot.Connector.ConversationResourceResponse CreateDirectConversation (this Microsoft.Bot.Connector.IConversations operations, string botAddress, string userAddress, Microsoft.Bot.Connector.Activity activity = null);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IConversations
+      description: The operations group for this extension method.
+    - id: botAddress
+      type: System.String
+      description: Bot to create conversation from
+    - id: userAddress
+      type: System.String
+      description: User to create conversation with
+    - id: activity
+      type: Microsoft.Bot.Connector.Activity
+      description: (OPTIONAL) initial message to send to the new conversation
+    return:
+      type: Microsoft.Bot.Connector.ConversationResourceResponse
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversation*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  id: CreateDirectConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  langs:
+  - csharp
+  name: CreateDirectConversationAsync(IConversations, ChannelAccount, ChannelAccount, Activity, CancellationToken)
+  nameWithType: ConversationsExtensions.CreateDirectConversationAsync(IConversations, ChannelAccount, ChannelAccount, Activity, CancellationToken)
+  fullName: ConversationsExtensions.CreateDirectConversationAsync(IConversations, ChannelAccount, ChannelAccount, Activity, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Create a new direct conversation between a bot and a user
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/<CreateDirectConversationAsync>d__17))]
+
+      public static System.Threading.Tasks.Task<Microsoft.Bot.Connector.ConversationResourceResponse> CreateDirectConversationAsync (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Connector.ChannelAccount bot, Microsoft.Bot.Connector.ChannelAccount user, Microsoft.Bot.Connector.Activity activity = null, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IConversations
+      description: The operations group for this extension method.
+    - id: bot
+      type: Microsoft.Bot.Connector.ChannelAccount
+      description: Bot to create conversation from
+    - id: user
+      type: Microsoft.Bot.Connector.ChannelAccount
+      description: User to create conversation with
+    - id: activity
+      type: Microsoft.Bot.Connector.Activity
+      description: (OPTIONAL) initial message to send to the new conversation
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Connector.ConversationResourceResponse}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversationAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversationAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversationAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  id: CreateDirectConversationAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  langs:
+  - csharp
+  name: CreateDirectConversationAsync(IConversations, String, String, Activity, CancellationToken)
+  nameWithType: ConversationsExtensions.CreateDirectConversationAsync(IConversations, String, String, Activity, CancellationToken)
+  fullName: ConversationsExtensions.CreateDirectConversationAsync(IConversations, String, String, Activity, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Create a new direct conversation between a bot and a user
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/<CreateDirectConversationAsync>d__19))]
+
+      public static System.Threading.Tasks.Task<Microsoft.Bot.Connector.ConversationResourceResponse> CreateDirectConversationAsync (this Microsoft.Bot.Connector.IConversations operations, string botAddress, string userAddress, Microsoft.Bot.Connector.Activity activity = null, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IConversations
+      description: The operations group for this extension method.
+    - id: botAddress
+      type: System.String
+      description: Bot to create conversation from
+    - id: userAddress
+      type: System.String
+      description: User to create conversation with
+    - id: activity
+      type: Microsoft.Bot.Connector.Activity
+      description: (OPTIONAL) initial message to send to the new conversation
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Connector.ConversationResourceResponse}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversationAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.DeleteActivity(Microsoft.Bot.Connector.IConversations,System.String,System.String)
+  commentId: M:Microsoft.Bot.Connector.ConversationsExtensions.DeleteActivity(Microsoft.Bot.Connector.IConversations,System.String,System.String)
+  id: DeleteActivity(Microsoft.Bot.Connector.IConversations,System.String,System.String)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  langs:
+  - csharp
+  name: DeleteActivity(IConversations, String, String)
+  nameWithType: ConversationsExtensions.DeleteActivity(IConversations, String, String)
+  fullName: ConversationsExtensions.DeleteActivity(IConversations, String, String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: DeleteActivity
+  syntax:
+    content: public static Microsoft.Bot.Connector.ErrorResponse DeleteActivity (this Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IConversations
+      description: The operations group for this extension method.
+    - id: conversationId
+      type: System.String
+      description: Conversation ID
+    - id: activityId
+      type: System.String
+      description: activityId to delete
+    return:
+      type: Microsoft.Bot.Connector.ErrorResponse
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationsExtensions.DeleteActivity*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.DeleteActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.ConversationsExtensions.DeleteActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,System.Threading.CancellationToken)
+  id: DeleteActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  langs:
+  - csharp
+  name: DeleteActivityAsync(IConversations, String, String, CancellationToken)
+  nameWithType: ConversationsExtensions.DeleteActivityAsync(IConversations, String, String, CancellationToken)
+  fullName: ConversationsExtensions.DeleteActivityAsync(IConversations, String, String, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: DeleteActivity
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/<DeleteActivityAsync>d__9))]
+
+      public static System.Threading.Tasks.Task<Microsoft.Bot.Connector.ErrorResponse> DeleteActivityAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IConversations
+      description: The operations group for this extension method.
+    - id: conversationId
+      type: System.String
+      description: Conversation ID
+    - id: activityId
+      type: System.String
+      description: activityId to delete
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Connector.ErrorResponse}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationsExtensions.DeleteActivityAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembers(Microsoft.Bot.Connector.IConversations,System.String,System.String)
+  commentId: M:Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembers(Microsoft.Bot.Connector.IConversations,System.String,System.String)
+  id: GetActivityMembers(Microsoft.Bot.Connector.IConversations,System.String,System.String)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  langs:
+  - csharp
+  name: GetActivityMembers(IConversations, String, String)
+  nameWithType: ConversationsExtensions.GetActivityMembers(IConversations, String, String)
+  fullName: ConversationsExtensions.GetActivityMembers(IConversations, String, String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: GetActivityMembers
+  syntax:
+    content: public static Microsoft.Bot.Connector.ChannelAccount[] GetActivityMembers (this Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IConversations
+      description: The operations group for this extension method.
+    - id: conversationId
+      type: System.String
+      description: Conversation ID
+    - id: activityId
+      type: System.String
+      description: Activity ID
+    return:
+      type: Microsoft.Bot.Connector.ChannelAccount[]
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembers*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembersAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembersAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,System.Threading.CancellationToken)
+  id: GetActivityMembersAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  langs:
+  - csharp
+  name: GetActivityMembersAsync(IConversations, String, String, CancellationToken)
+  nameWithType: ConversationsExtensions.GetActivityMembersAsync(IConversations, String, String, CancellationToken)
+  fullName: ConversationsExtensions.GetActivityMembersAsync(IConversations, String, String, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: GetActivityMembers
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/<GetActivityMembersAsync>d__13))]
+
+      public static System.Threading.Tasks.Task<Microsoft.Bot.Connector.ChannelAccount[]> GetActivityMembersAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IConversations
+      description: The operations group for this extension method.
+    - id: conversationId
+      type: System.String
+      description: Conversation ID
+    - id: activityId
+      type: System.String
+      description: Activity ID
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Connector.ChannelAccount[]}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembersAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembers(Microsoft.Bot.Connector.IConversations,System.String)
+  commentId: M:Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembers(Microsoft.Bot.Connector.IConversations,System.String)
+  id: GetConversationMembers(Microsoft.Bot.Connector.IConversations,System.String)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  langs:
+  - csharp
+  name: GetConversationMembers(IConversations, String)
+  nameWithType: ConversationsExtensions.GetConversationMembers(IConversations, String)
+  fullName: ConversationsExtensions.GetConversationMembers(IConversations, String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: GetConversationMembers
+  syntax:
+    content: public static Microsoft.Bot.Connector.ChannelAccount[] GetConversationMembers (this Microsoft.Bot.Connector.IConversations operations, string conversationId);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IConversations
+      description: The operations group for this extension method.
+    - id: conversationId
+      type: System.String
+      description: Conversation ID
+    return:
+      type: Microsoft.Bot.Connector.ChannelAccount[]
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembers*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembersAsync(Microsoft.Bot.Connector.IConversations,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembersAsync(Microsoft.Bot.Connector.IConversations,System.String,System.Threading.CancellationToken)
+  id: GetConversationMembersAsync(Microsoft.Bot.Connector.IConversations,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  langs:
+  - csharp
+  name: GetConversationMembersAsync(IConversations, String, CancellationToken)
+  nameWithType: ConversationsExtensions.GetConversationMembersAsync(IConversations, String, CancellationToken)
+  fullName: ConversationsExtensions.GetConversationMembersAsync(IConversations, String, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: GetConversationMembers
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/<GetConversationMembersAsync>d__11))]
+
+      public static System.Threading.Tasks.Task<Microsoft.Bot.Connector.ChannelAccount[]> GetConversationMembersAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IConversations
+      description: The operations group for this extension method.
+    - id: conversationId
+      type: System.String
+      description: Conversation ID
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Connector.ChannelAccount[]}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembersAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivity(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity)
+  commentId: M:Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivity(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity)
+  id: ReplyToActivity(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  langs:
+  - csharp
+  name: ReplyToActivity(IConversations, String, String, Activity)
+  nameWithType: ConversationsExtensions.ReplyToActivity(IConversations, String, String, Activity)
+  fullName: ConversationsExtensions.ReplyToActivity(IConversations, String, String, Activity)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: ReplyToActivity
+  syntax:
+    content: public static Microsoft.Bot.Connector.ResourceResponse ReplyToActivity (this Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, Microsoft.Bot.Connector.Activity activity);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IConversations
+      description: The operations group for this extension method.
+    - id: conversationId
+      type: System.String
+      description: Conversation ID
+    - id: activityId
+      type: System.String
+      description: activityId the reply is to (OPTIONAL)
+    - id: activity
+      type: Microsoft.Bot.Connector.Activity
+      description: Activity to send
+    return:
+      type: Microsoft.Bot.Connector.ResourceResponse
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivity*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivity(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity)
+  commentId: M:Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivity(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity)
+  id: ReplyToActivity(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  langs:
+  - csharp
+  name: ReplyToActivity(IConversations, Activity)
+  nameWithType: ConversationsExtensions.ReplyToActivity(IConversations, Activity)
+  fullName: ConversationsExtensions.ReplyToActivity(IConversations, Activity)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Replyto an activity in an existing conversation
+  syntax:
+    content: public static Microsoft.Bot.Connector.ResourceResponse ReplyToActivity (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Connector.Activity activity);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IConversations
+      description: The operations group for this extension method.
+    - id: activity
+      type: Microsoft.Bot.Connector.Activity
+      description: Activity to send
+    return:
+      type: Microsoft.Bot.Connector.ResourceResponse
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivity*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivityAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivityAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  id: ReplyToActivityAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  langs:
+  - csharp
+  name: ReplyToActivityAsync(IConversations, Activity, CancellationToken)
+  nameWithType: ConversationsExtensions.ReplyToActivityAsync(IConversations, Activity, CancellationToken)
+  fullName: ConversationsExtensions.ReplyToActivityAsync(IConversations, Activity, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Reply to an activity in an existing conversation
+  syntax:
+    content: public static System.Threading.Tasks.Task<Microsoft.Bot.Connector.ResourceResponse> ReplyToActivityAsync (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Connector.Activity activity, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IConversations
+      description: The operations group for this extension method.
+    - id: activity
+      type: Microsoft.Bot.Connector.Activity
+      description: Activity to send
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Connector.ResourceResponse}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivityAsync*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  id: ReplyToActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  langs:
+  - csharp
+  name: ReplyToActivityAsync(IConversations, String, String, Activity, CancellationToken)
+  nameWithType: ConversationsExtensions.ReplyToActivityAsync(IConversations, String, String, Activity, CancellationToken)
+  fullName: ConversationsExtensions.ReplyToActivityAsync(IConversations, String, String, Activity, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: ReplyToActivity
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/<ReplyToActivityAsync>d__7))]
+
+      public static System.Threading.Tasks.Task<Microsoft.Bot.Connector.ResourceResponse> ReplyToActivityAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, Microsoft.Bot.Connector.Activity activity, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IConversations
+      description: The operations group for this extension method.
+    - id: conversationId
+      type: System.String
+      description: Conversation ID
+    - id: activityId
+      type: System.String
+      description: activityId the reply is to (OPTIONAL)
+    - id: activity
+      type: Microsoft.Bot.Connector.Activity
+      description: Activity to send
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Connector.ResourceResponse}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivityAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.SendToConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity)
+  commentId: M:Microsoft.Bot.Connector.ConversationsExtensions.SendToConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity)
+  id: SendToConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  langs:
+  - csharp
+  name: SendToConversation(IConversations, Activity)
+  nameWithType: ConversationsExtensions.SendToConversation(IConversations, Activity)
+  fullName: ConversationsExtensions.SendToConversation(IConversations, Activity)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Send an activity to a conversation
+  syntax:
+    content: public static Microsoft.Bot.Connector.ResourceResponse SendToConversation (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Connector.Activity activity);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IConversations
+      description: The operations group for this extension method.
+    - id: activity
+      type: Microsoft.Bot.Connector.Activity
+      description: Activity to send
+    return:
+      type: Microsoft.Bot.Connector.ResourceResponse
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationsExtensions.SendToConversation*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.SendToConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.String)
+  commentId: M:Microsoft.Bot.Connector.ConversationsExtensions.SendToConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.String)
+  id: SendToConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.String)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  langs:
+  - csharp
+  name: SendToConversation(IConversations, Activity, String)
+  nameWithType: ConversationsExtensions.SendToConversation(IConversations, Activity, String)
+  fullName: ConversationsExtensions.SendToConversation(IConversations, Activity, String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: SendToConversation
+  syntax:
+    content: public static Microsoft.Bot.Connector.ResourceResponse SendToConversation (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Connector.Activity activity, string conversationId);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IConversations
+      description: The operations group for this extension method.
+    - id: activity
+      type: Microsoft.Bot.Connector.Activity
+      description: Activity to send
+    - id: conversationId
+      type: System.String
+      description: Conversation ID
+    return:
+      type: Microsoft.Bot.Connector.ResourceResponse
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationsExtensions.SendToConversation*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.SendToConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.ConversationsExtensions.SendToConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  id: SendToConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  langs:
+  - csharp
+  name: SendToConversationAsync(IConversations, Activity, CancellationToken)
+  nameWithType: ConversationsExtensions.SendToConversationAsync(IConversations, Activity, CancellationToken)
+  fullName: ConversationsExtensions.SendToConversationAsync(IConversations, Activity, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Send an activity to a conversation
+  syntax:
+    content: public static System.Threading.Tasks.Task<Microsoft.Bot.Connector.ResourceResponse> SendToConversationAsync (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Connector.Activity activity, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IConversations
+      description: The operations group for this extension method.
+    - id: activity
+      type: Microsoft.Bot.Connector.Activity
+      description: Activity to send
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Connector.ResourceResponse}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationsExtensions.SendToConversationAsync*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.SendToConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.ConversationsExtensions.SendToConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.String,System.Threading.CancellationToken)
+  id: SendToConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  langs:
+  - csharp
+  name: SendToConversationAsync(IConversations, Activity, String, CancellationToken)
+  nameWithType: ConversationsExtensions.SendToConversationAsync(IConversations, Activity, String, CancellationToken)
+  fullName: ConversationsExtensions.SendToConversationAsync(IConversations, Activity, String, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: SendToConversation
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/<SendToConversationAsync>d__3))]
+
+      public static System.Threading.Tasks.Task<Microsoft.Bot.Connector.ResourceResponse> SendToConversationAsync (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Connector.Activity activity, string conversationId, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IConversations
+      description: The operations group for this extension method.
+    - id: activity
+      type: Microsoft.Bot.Connector.Activity
+      description: Activity to send
+    - id: conversationId
+      type: System.String
+      description: Conversation ID
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Connector.ResourceResponse}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationsExtensions.SendToConversationAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivity(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity)
+  commentId: M:Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivity(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity)
+  id: UpdateActivity(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  langs:
+  - csharp
+  name: UpdateActivity(IConversations, Activity)
+  nameWithType: ConversationsExtensions.UpdateActivity(IConversations, Activity)
+  fullName: ConversationsExtensions.UpdateActivity(IConversations, Activity)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Update an activity in an existing conversation
+  syntax:
+    content: public static Microsoft.Bot.Connector.ResourceResponse UpdateActivity (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Connector.Activity activity);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IConversations
+      description: The operations group for this extension method.
+    - id: activity
+      type: Microsoft.Bot.Connector.Activity
+      description: Activity to update
+    return:
+      type: Microsoft.Bot.Connector.ResourceResponse
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivity*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivity(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity)
+  commentId: M:Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivity(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity)
+  id: UpdateActivity(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  langs:
+  - csharp
+  name: UpdateActivity(IConversations, String, String, Activity)
+  nameWithType: ConversationsExtensions.UpdateActivity(IConversations, String, String, Activity)
+  fullName: ConversationsExtensions.UpdateActivity(IConversations, String, String, Activity)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: UpdateActivity
+  syntax:
+    content: public static Microsoft.Bot.Connector.ResourceResponse UpdateActivity (this Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, Microsoft.Bot.Connector.Activity activity);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IConversations
+      description: The operations group for this extension method.
+    - id: conversationId
+      type: System.String
+      description: Conversation ID
+    - id: activityId
+      type: System.String
+      description: activityId to update
+    - id: activity
+      type: Microsoft.Bot.Connector.Activity
+      description: replacement Activity
+    return:
+      type: Microsoft.Bot.Connector.ResourceResponse
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivity*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivityAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivityAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  id: UpdateActivityAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  langs:
+  - csharp
+  name: UpdateActivityAsync(IConversations, Activity, CancellationToken)
+  nameWithType: ConversationsExtensions.UpdateActivityAsync(IConversations, Activity, CancellationToken)
+  fullName: ConversationsExtensions.UpdateActivityAsync(IConversations, Activity, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Update an activity in an existing conversation
+  syntax:
+    content: public static System.Threading.Tasks.Task<Microsoft.Bot.Connector.ResourceResponse> UpdateActivityAsync (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Connector.Activity activity, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IConversations
+      description: The operations group for this extension method.
+    - id: activity
+      type: Microsoft.Bot.Connector.Activity
+      description: Activity to update
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Connector.ResourceResponse}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivityAsync*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  id: UpdateActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  langs:
+  - csharp
+  name: UpdateActivityAsync(IConversations, String, String, Activity, CancellationToken)
+  nameWithType: ConversationsExtensions.UpdateActivityAsync(IConversations, String, String, Activity, CancellationToken)
+  fullName: ConversationsExtensions.UpdateActivityAsync(IConversations, String, String, Activity, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: UpdateActivity
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/<UpdateActivityAsync>d__5))]
+
+      public static System.Threading.Tasks.Task<Microsoft.Bot.Connector.ResourceResponse> UpdateActivityAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, Microsoft.Bot.Connector.Activity activity, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IConversations
+      description: The operations group for this extension method.
+    - id: conversationId
+      type: System.String
+      description: Conversation ID
+    - id: activityId
+      type: System.String
+      description: activityId to update
+    - id: activity
+      type: Microsoft.Bot.Connector.Activity
+      description: replacement Activity
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Connector.ResourceResponse}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivityAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachment(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Connector.AttachmentData)
+  commentId: M:Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachment(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Connector.AttachmentData)
+  id: UploadAttachment(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Connector.AttachmentData)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  langs:
+  - csharp
+  name: UploadAttachment(IConversations, String, AttachmentData)
+  nameWithType: ConversationsExtensions.UploadAttachment(IConversations, String, AttachmentData)
+  fullName: ConversationsExtensions.UploadAttachment(IConversations, String, AttachmentData)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: UploadAttachment
+  syntax:
+    content: public static Microsoft.Bot.Connector.ResourceResponse UploadAttachment (this Microsoft.Bot.Connector.IConversations operations, string conversationId, Microsoft.Bot.Connector.AttachmentData attachmentUpload);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IConversations
+      description: The operations group for this extension method.
+    - id: conversationId
+      type: System.String
+      description: Conversation ID
+    - id: attachmentUpload
+      type: Microsoft.Bot.Connector.AttachmentData
+      description: Attachment data
+    return:
+      type: Microsoft.Bot.Connector.ResourceResponse
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachment*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachmentAsync(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Connector.AttachmentData,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachmentAsync(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Connector.AttachmentData,System.Threading.CancellationToken)
+  id: UploadAttachmentAsync(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Connector.AttachmentData,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  langs:
+  - csharp
+  name: UploadAttachmentAsync(IConversations, String, AttachmentData, CancellationToken)
+  nameWithType: ConversationsExtensions.UploadAttachmentAsync(IConversations, String, AttachmentData, CancellationToken)
+  fullName: ConversationsExtensions.UploadAttachmentAsync(IConversations, String, AttachmentData, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: UploadAttachment
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/<UploadAttachmentAsync>d__15))]
+
+      public static System.Threading.Tasks.Task<Microsoft.Bot.Connector.ResourceResponse> UploadAttachmentAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, Microsoft.Bot.Connector.AttachmentData attachmentUpload, System.Threading.CancellationToken cancellationToken = null);
+    parameters:
+    - id: operations
+      type: Microsoft.Bot.Connector.IConversations
+      description: The operations group for this extension method.
+    - id: conversationId
+      type: System.String
+      description: Conversation ID
+    - id: attachmentUpload
+      type: Microsoft.Bot.Connector.AttachmentData
+      description: Attachment data
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Bot.Connector.ResourceResponse}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachmentAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.CreateConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ConversationParameters)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: CreateConversation(IConversations, ConversationParameters)
+  nameWithType: ConversationsExtensions.CreateConversation(IConversations, ConversationParameters)
+  fullName: ConversationsExtensions.CreateConversation(IConversations, ConversationParameters)
+- uid: Microsoft.Bot.Connector.ConversationResourceResponse
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: ConversationResourceResponse
+  nameWithType: ConversationResourceResponse
+  fullName: Microsoft.Bot.Connector.ConversationResourceResponse
+- uid: Microsoft.Bot.Connector.IConversations
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IConversations
+  nameWithType: IConversations
+  fullName: Microsoft.Bot.Connector.IConversations
+- uid: Microsoft.Bot.Connector.ConversationParameters
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: ConversationParameters
+  nameWithType: ConversationParameters
+  fullName: Microsoft.Bot.Connector.ConversationParameters
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.CreateConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ConversationParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: CreateConversationAsync(IConversations, ConversationParameters, CancellationToken)
+  nameWithType: ConversationsExtensions.CreateConversationAsync(IConversations, ConversationParameters, CancellationToken)
+  fullName: ConversationsExtensions.CreateConversationAsync(IConversations, ConversationParameters, CancellationToken)
+- uid: System.Threading.Tasks.Task`1
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks.Task{Microsoft.Bot.Connector.ConversationResourceResponse}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<ConversationResourceResponse>
+  nameWithType: Task<ConversationResourceResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Bot.Connector.ConversationResourceResponse>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.ConversationResourceResponse
+    name: ConversationResourceResponse
+    nameWithType: ConversationResourceResponse
+    fullName: Microsoft.Bot.Connector.ConversationResourceResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.Activity)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: CreateDirectConversation(IConversations, ChannelAccount, ChannelAccount, Activity)
+  nameWithType: ConversationsExtensions.CreateDirectConversation(IConversations, ChannelAccount, ChannelAccount, Activity)
+  fullName: ConversationsExtensions.CreateDirectConversation(IConversations, ChannelAccount, ChannelAccount, Activity)
+- uid: Microsoft.Bot.Connector.ChannelAccount
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: ChannelAccount
+  nameWithType: ChannelAccount
+  fullName: Microsoft.Bot.Connector.ChannelAccount
+- uid: Microsoft.Bot.Connector.Activity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: Activity
+  nameWithType: Activity
+  fullName: Microsoft.Bot.Connector.Activity
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversation(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: CreateDirectConversation(IConversations, String, String, Activity)
+  nameWithType: ConversationsExtensions.CreateDirectConversation(IConversations, String, String, Activity)
+  fullName: ConversationsExtensions.CreateDirectConversation(IConversations, String, String, Activity)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: CreateDirectConversationAsync(IConversations, ChannelAccount, ChannelAccount, Activity, CancellationToken)
+  nameWithType: ConversationsExtensions.CreateDirectConversationAsync(IConversations, ChannelAccount, ChannelAccount, Activity, CancellationToken)
+  fullName: ConversationsExtensions.CreateDirectConversationAsync(IConversations, ChannelAccount, ChannelAccount, Activity, CancellationToken)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversationAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: CreateDirectConversationAsync(IConversations, String, String, Activity, CancellationToken)
+  nameWithType: ConversationsExtensions.CreateDirectConversationAsync(IConversations, String, String, Activity, CancellationToken)
+  fullName: ConversationsExtensions.CreateDirectConversationAsync(IConversations, String, String, Activity, CancellationToken)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.DeleteActivity(Microsoft.Bot.Connector.IConversations,System.String,System.String)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: DeleteActivity(IConversations, String, String)
+  nameWithType: ConversationsExtensions.DeleteActivity(IConversations, String, String)
+  fullName: ConversationsExtensions.DeleteActivity(IConversations, String, String)
+- uid: Microsoft.Bot.Connector.ErrorResponse
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: ErrorResponse
+  nameWithType: ErrorResponse
+  fullName: Microsoft.Bot.Connector.ErrorResponse
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.DeleteActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: DeleteActivityAsync(IConversations, String, String, CancellationToken)
+  nameWithType: ConversationsExtensions.DeleteActivityAsync(IConversations, String, String, CancellationToken)
+  fullName: ConversationsExtensions.DeleteActivityAsync(IConversations, String, String, CancellationToken)
+- uid: System.Threading.Tasks.Task{Microsoft.Bot.Connector.ErrorResponse}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<ErrorResponse>
+  nameWithType: Task<ErrorResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Bot.Connector.ErrorResponse>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.ErrorResponse
+    name: ErrorResponse
+    nameWithType: ErrorResponse
+    fullName: Microsoft.Bot.Connector.ErrorResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembers(Microsoft.Bot.Connector.IConversations,System.String,System.String)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: GetActivityMembers(IConversations, String, String)
+  nameWithType: ConversationsExtensions.GetActivityMembers(IConversations, String, String)
+  fullName: ConversationsExtensions.GetActivityMembers(IConversations, String, String)
+- uid: Microsoft.Bot.Connector.ChannelAccount[]
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: ChannelAccount[]
+  nameWithType: ChannelAccount[]
+  fullName: Microsoft.Bot.Connector.ChannelAccount[]
+  spec.csharp:
+  - uid: Microsoft.Bot.Connector.ChannelAccount
+    name: ChannelAccount
+    nameWithType: ChannelAccount
+    fullName: Microsoft.Bot.Connector.ChannelAccount
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembersAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: GetActivityMembersAsync(IConversations, String, String, CancellationToken)
+  nameWithType: ConversationsExtensions.GetActivityMembersAsync(IConversations, String, String, CancellationToken)
+  fullName: ConversationsExtensions.GetActivityMembersAsync(IConversations, String, String, CancellationToken)
+- uid: System.Threading.Tasks.Task{Microsoft.Bot.Connector.ChannelAccount[]}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<ChannelAccount[]>
+  nameWithType: Task<ChannelAccount[]>
+  fullName: System.Threading.Tasks.Task<Microsoft.Bot.Connector.ChannelAccount[]>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.ChannelAccount
+    name: ChannelAccount
+    nameWithType: ChannelAccount
+    fullName: Microsoft.Bot.Connector.ChannelAccount
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembers(Microsoft.Bot.Connector.IConversations,System.String)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: GetConversationMembers(IConversations, String)
+  nameWithType: ConversationsExtensions.GetConversationMembers(IConversations, String)
+  fullName: ConversationsExtensions.GetConversationMembers(IConversations, String)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembersAsync(Microsoft.Bot.Connector.IConversations,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: GetConversationMembersAsync(IConversations, String, CancellationToken)
+  nameWithType: ConversationsExtensions.GetConversationMembersAsync(IConversations, String, CancellationToken)
+  fullName: ConversationsExtensions.GetConversationMembersAsync(IConversations, String, CancellationToken)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivity(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: ReplyToActivity(IConversations, String, String, Activity)
+  nameWithType: ConversationsExtensions.ReplyToActivity(IConversations, String, String, Activity)
+  fullName: ConversationsExtensions.ReplyToActivity(IConversations, String, String, Activity)
+- uid: Microsoft.Bot.Connector.ResourceResponse
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: ResourceResponse
+  nameWithType: ResourceResponse
+  fullName: Microsoft.Bot.Connector.ResourceResponse
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivity(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: ReplyToActivity(IConversations, Activity)
+  nameWithType: ConversationsExtensions.ReplyToActivity(IConversations, Activity)
+  fullName: ConversationsExtensions.ReplyToActivity(IConversations, Activity)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivityAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: ReplyToActivityAsync(IConversations, Activity, CancellationToken)
+  nameWithType: ConversationsExtensions.ReplyToActivityAsync(IConversations, Activity, CancellationToken)
+  fullName: ConversationsExtensions.ReplyToActivityAsync(IConversations, Activity, CancellationToken)
+- uid: System.Threading.Tasks.Task{Microsoft.Bot.Connector.ResourceResponse}
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<ResourceResponse>
+  nameWithType: Task<ResourceResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Bot.Connector.ResourceResponse>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.ResourceResponse
+    name: ResourceResponse
+    nameWithType: ResourceResponse
+    fullName: Microsoft.Bot.Connector.ResourceResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: ReplyToActivityAsync(IConversations, String, String, Activity, CancellationToken)
+  nameWithType: ConversationsExtensions.ReplyToActivityAsync(IConversations, String, String, Activity, CancellationToken)
+  fullName: ConversationsExtensions.ReplyToActivityAsync(IConversations, String, String, Activity, CancellationToken)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.SendToConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: SendToConversation(IConversations, Activity)
+  nameWithType: ConversationsExtensions.SendToConversation(IConversations, Activity)
+  fullName: ConversationsExtensions.SendToConversation(IConversations, Activity)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.SendToConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.String)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: SendToConversation(IConversations, Activity, String)
+  nameWithType: ConversationsExtensions.SendToConversation(IConversations, Activity, String)
+  fullName: ConversationsExtensions.SendToConversation(IConversations, Activity, String)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.SendToConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: SendToConversationAsync(IConversations, Activity, CancellationToken)
+  nameWithType: ConversationsExtensions.SendToConversationAsync(IConversations, Activity, CancellationToken)
+  fullName: ConversationsExtensions.SendToConversationAsync(IConversations, Activity, CancellationToken)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.SendToConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: SendToConversationAsync(IConversations, Activity, String, CancellationToken)
+  nameWithType: ConversationsExtensions.SendToConversationAsync(IConversations, Activity, String, CancellationToken)
+  fullName: ConversationsExtensions.SendToConversationAsync(IConversations, Activity, String, CancellationToken)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivity(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: UpdateActivity(IConversations, Activity)
+  nameWithType: ConversationsExtensions.UpdateActivity(IConversations, Activity)
+  fullName: ConversationsExtensions.UpdateActivity(IConversations, Activity)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivity(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: UpdateActivity(IConversations, String, String, Activity)
+  nameWithType: ConversationsExtensions.UpdateActivity(IConversations, String, String, Activity)
+  fullName: ConversationsExtensions.UpdateActivity(IConversations, String, String, Activity)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivityAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: UpdateActivityAsync(IConversations, Activity, CancellationToken)
+  nameWithType: ConversationsExtensions.UpdateActivityAsync(IConversations, Activity, CancellationToken)
+  fullName: ConversationsExtensions.UpdateActivityAsync(IConversations, Activity, CancellationToken)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: UpdateActivityAsync(IConversations, String, String, Activity, CancellationToken)
+  nameWithType: ConversationsExtensions.UpdateActivityAsync(IConversations, String, String, Activity, CancellationToken)
+  fullName: ConversationsExtensions.UpdateActivityAsync(IConversations, String, String, Activity, CancellationToken)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachment(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Connector.AttachmentData)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: UploadAttachment(IConversations, String, AttachmentData)
+  nameWithType: ConversationsExtensions.UploadAttachment(IConversations, String, AttachmentData)
+  fullName: ConversationsExtensions.UploadAttachment(IConversations, String, AttachmentData)
+- uid: Microsoft.Bot.Connector.AttachmentData
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: AttachmentData
+  nameWithType: AttachmentData
+  fullName: Microsoft.Bot.Connector.AttachmentData
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachmentAsync(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Connector.AttachmentData,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: UploadAttachmentAsync(IConversations, String, AttachmentData, CancellationToken)
+  nameWithType: ConversationsExtensions.UploadAttachmentAsync(IConversations, String, AttachmentData, CancellationToken)
+  fullName: ConversationsExtensions.UploadAttachmentAsync(IConversations, String, AttachmentData, CancellationToken)
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.CreateConversation*
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: CreateConversation
+  nameWithType: ConversationsExtensions.CreateConversation
+  fullName: ConversationsExtensions.CreateConversation
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.CreateConversationAsync*
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: CreateConversationAsync
+  nameWithType: ConversationsExtensions.CreateConversationAsync
+  fullName: ConversationsExtensions.CreateConversationAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversation*
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: CreateDirectConversation
+  nameWithType: ConversationsExtensions.CreateDirectConversation
+  fullName: ConversationsExtensions.CreateDirectConversation
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversationAsync*
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: CreateDirectConversationAsync
+  nameWithType: ConversationsExtensions.CreateDirectConversationAsync
+  fullName: ConversationsExtensions.CreateDirectConversationAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.DeleteActivity*
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: DeleteActivity
+  nameWithType: ConversationsExtensions.DeleteActivity
+  fullName: ConversationsExtensions.DeleteActivity
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.DeleteActivityAsync*
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: DeleteActivityAsync
+  nameWithType: ConversationsExtensions.DeleteActivityAsync
+  fullName: ConversationsExtensions.DeleteActivityAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembers*
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: GetActivityMembers
+  nameWithType: ConversationsExtensions.GetActivityMembers
+  fullName: ConversationsExtensions.GetActivityMembers
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembersAsync*
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: GetActivityMembersAsync
+  nameWithType: ConversationsExtensions.GetActivityMembersAsync
+  fullName: ConversationsExtensions.GetActivityMembersAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembers*
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: GetConversationMembers
+  nameWithType: ConversationsExtensions.GetConversationMembers
+  fullName: ConversationsExtensions.GetConversationMembers
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembersAsync*
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: GetConversationMembersAsync
+  nameWithType: ConversationsExtensions.GetConversationMembersAsync
+  fullName: ConversationsExtensions.GetConversationMembersAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivity*
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: ReplyToActivity
+  nameWithType: ConversationsExtensions.ReplyToActivity
+  fullName: ConversationsExtensions.ReplyToActivity
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivityAsync*
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: ReplyToActivityAsync
+  nameWithType: ConversationsExtensions.ReplyToActivityAsync
+  fullName: ConversationsExtensions.ReplyToActivityAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.SendToConversation*
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: SendToConversation
+  nameWithType: ConversationsExtensions.SendToConversation
+  fullName: ConversationsExtensions.SendToConversation
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.SendToConversationAsync*
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: SendToConversationAsync
+  nameWithType: ConversationsExtensions.SendToConversationAsync
+  fullName: ConversationsExtensions.SendToConversationAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivity*
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: UpdateActivity
+  nameWithType: ConversationsExtensions.UpdateActivity
+  fullName: ConversationsExtensions.UpdateActivity
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivityAsync*
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: UpdateActivityAsync
+  nameWithType: ConversationsExtensions.UpdateActivityAsync
+  fullName: ConversationsExtensions.UpdateActivityAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachment*
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: UploadAttachment
+  nameWithType: ConversationsExtensions.UploadAttachment
+  fullName: ConversationsExtensions.UploadAttachment
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml
+- uid: Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachmentAsync*
+  parent: Microsoft.Bot.Connector.ConversationsExtensions
+  isExternal: false
+  name: UploadAttachmentAsync
+  nameWithType: ConversationsExtensions.UploadAttachmentAsync
+  fullName: ConversationsExtensions.UploadAttachmentAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ConversationsExtensions.xml

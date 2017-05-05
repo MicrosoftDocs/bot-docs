@@ -1,0 +1,157 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1
+  commentId: T:Microsoft.Bot.Builder.FormFlow.Advanced.IField`1
+  id: IField`1
+  children:
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IField`1.Form
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IField`1.Name
+  langs:
+  - csharp
+  name: IField<T>
+  nameWithType: IField<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.IField<T>
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Interface for all the information about a specific field.
+  syntax:
+    content: 'public interface IField<T> : Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription, Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt<T>, Microsoft.Bot.Builder.FormFlow.Advanced.IFieldResources, Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState<T> where T : class'
+    typeParameters:
+    - id: T
+      description: Form state interface applies to.
+  derivedClasses:
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1
+  implements:
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt{T}
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IFieldResources
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState{T}
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IField`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1.Form
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.IField`1.Form
+  id: Form
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1
+  langs:
+  - csharp
+  name: Form
+  nameWithType: IField<T>.Form
+  fullName: IField<T>.Form
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Form that owns this field
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.IForm<T> Form { get; set; }
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.IForm`1
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1.Form*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IField`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1.Name
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.IField`1.Name
+  id: Name
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1
+  langs:
+  - csharp
+  name: Name
+  nameWithType: IField<T>.Name
+  fullName: IField<T>.Name
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Name of this field.
+  remarks: >-
+    For a value field this is the path in the form state that leads to the value being filled in.
+                For a confirm field this is a randomly generated name.
+  syntax:
+    content: public string Name { get; }
+    return:
+      type: System.String
+      description: Name of this field.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1.Name*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IField`1.xml
+references:
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1.Form
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1
+  isExternal: false
+  name: Form
+  nameWithType: IField<T>.Form
+  fullName: IField<T>.Form
+- uid: Microsoft.Bot.Builder.FormFlow.IForm`1
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: IForm<T>
+  nameWithType: IForm<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.IForm<T>
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1.Name
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1
+  isExternal: false
+  name: Name
+  nameWithType: IField<T>.Name
+  fullName: IField<T>.Name
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1.Form*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1
+  isExternal: false
+  name: Form
+  nameWithType: IField<T>.Form
+  fullName: IField<T>.Form
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IField`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1.Name*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1
+  isExternal: false
+  name: Name
+  nameWithType: IField<T>.Name
+  fullName: IField<T>.Name
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/IField`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced
+  isExternal: false
+  name: IFieldDescription
+  nameWithType: IFieldDescription
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced
+  isExternal: false
+  name: IFieldPrompt<T>
+  nameWithType: IFieldPrompt<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt<T>
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldResources
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced
+  isExternal: false
+  name: IFieldResources
+  nameWithType: IFieldResources
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldResources
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced
+  isExternal: false
+  name: IFieldState<T>
+  nameWithType: IFieldState<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState<T>

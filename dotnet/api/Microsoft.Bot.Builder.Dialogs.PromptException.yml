@@ -1,0 +1,133 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.PromptException
+  commentId: T:Microsoft.Bot.Builder.Dialogs.PromptException
+  id: PromptException
+  children:
+  - Microsoft.Bot.Builder.Dialogs.PromptException.#ctor(System.String)
+  - Microsoft.Bot.Builder.Dialogs.PromptException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  langs:
+  - csharp
+  name: PromptException
+  nameWithType: PromptException
+  fullName: Microsoft.Bot.Builder.Dialogs.PromptException
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: The root of the exception hierarchy related to prompts.
+  syntax:
+    content: 'public abstract class PromptException : Exception'
+  inheritance:
+  - System.Exception
+  derivedClasses:
+  - Microsoft.Bot.Builder.Dialogs.TooManyAttemptsException
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptException.xml
+- uid: Microsoft.Bot.Builder.Dialogs.PromptException.#ctor(System.String)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.PromptException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Microsoft.Bot.Builder.Dialogs.PromptException
+  langs:
+  - csharp
+  name: PromptException(String)
+  nameWithType: PromptException.PromptException(String)
+  fullName: PromptException.PromptException(String)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Initializes a new instance of the PromptException class with a specified error message.
+  syntax:
+    content: public PromptException (string message);
+    parameters:
+    - id: message
+      type: System.String
+      description: The error message that explains the reason for the exception.
+  overload: Microsoft.Bot.Builder.Dialogs.PromptException.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptException.xml
+- uid: Microsoft.Bot.Builder.Dialogs.PromptException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.PromptException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: '#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)'
+  parent: Microsoft.Bot.Builder.Dialogs.PromptException
+  langs:
+  - csharp
+  name: PromptException(SerializationInfo, StreamingContext)
+  nameWithType: PromptException.PromptException(SerializationInfo, StreamingContext)
+  fullName: PromptException.PromptException(SerializationInfo, StreamingContext)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: protected PromptException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: To be added.
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.PromptException.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptException.xml
+references:
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Microsoft.Bot.Builder.Dialogs.PromptException.#ctor(System.String)
+  parent: Microsoft.Bot.Builder.Dialogs.PromptException
+  isExternal: false
+  name: PromptException(String)
+  nameWithType: PromptException.PromptException(String)
+  fullName: PromptException.PromptException(String)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Builder.Dialogs.PromptException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: Microsoft.Bot.Builder.Dialogs.PromptException
+  isExternal: false
+  name: PromptException(SerializationInfo, StreamingContext)
+  nameWithType: PromptException.PromptException(SerializationInfo, StreamingContext)
+  fullName: PromptException.PromptException(SerializationInfo, StreamingContext)
+- uid: System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+- uid: System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+- uid: Microsoft.Bot.Builder.Dialogs.PromptException.#ctor*
+  parent: Microsoft.Bot.Builder.Dialogs.PromptException
+  isExternal: false
+  name: PromptException
+  nameWithType: PromptException.PromptException
+  fullName: PromptException.PromptException
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/PromptException.xml

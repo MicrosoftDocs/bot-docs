@@ -1,0 +1,280 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask
+  commentId: T:Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask
+  id: ReactiveDialogTask
+  children:
+  - Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask,System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{System.Object}})
+  - Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask.Microsoft#Bot#Builder#Base#IEventLoop#PollAsync(System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask.Microsoft#Bot#Builder#Base#IEventProducer{Microsoft#Bot#Connector#IActivity}#Post(Microsoft.Bot.Connector.IActivity,System.Action)
+  langs:
+  - csharp
+  name: ReactiveDialogTask
+  nameWithType: ReactiveDialogTask
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: >-
+    A reactive dialog task (in contrast to a proactive dialog task) is a dialog task that
+                starts some root dialog when it receives the first <xref href="Microsoft.Bot.Connector.IActivity"></xref> activity.
+  syntax:
+    content: 'public sealed class ReactiveDialogTask : Microsoft.Bot.Builder.Base.IEventLoop, Microsoft.Bot.Builder.Base.IEventProducer<Microsoft.Bot.Connector.IActivity>'
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Bot.Builder.Base.IEventLoop
+  - Microsoft.Bot.Builder.Base.IEventProducer{Microsoft.Bot.Connector.IActivity}
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/ReactiveDialogTask.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask,System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{System.Object}})
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask,System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{System.Object}})
+  id: '#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask,System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{System.Object}})'
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask
+  langs:
+  - csharp
+  name: ReactiveDialogTask(IDialogTask, Func<IDialog<Object>>)
+  nameWithType: ReactiveDialogTask.ReactiveDialogTask(IDialogTask, Func<IDialog<Object>>)
+  fullName: ReactiveDialogTask.ReactiveDialogTask(IDialogTask, Func<IDialog<Object>>)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: public ReactiveDialogTask (Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask dialogTask, Func<Microsoft.Bot.Builder.Dialogs.IDialog<object>> makeRoot);
+    parameters:
+    - id: dialogTask
+      type: Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask
+      description: To be added.
+    - id: makeRoot
+      type: System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{System.Object}}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/ReactiveDialogTask.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask.Microsoft#Bot#Builder#Base#IEventLoop#PollAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask.Microsoft#Bot#Builder#Base#IEventLoop#PollAsync(System.Threading.CancellationToken)
+  id: Microsoft#Bot#Builder#Base#IEventLoop#PollAsync(System.Threading.CancellationToken)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask
+  langs:
+  - csharp
+  name: IEventLoop.PollAsync(CancellationToken)
+  nameWithType: ReactiveDialogTask.IEventLoop.PollAsync(CancellationToken)
+  fullName: ReactiveDialogTask.IEventLoop.PollAsync(CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask/<Microsoft-Bot-Builder-Base-IEventLoop-PollAsync>d__3))]
+
+      System.Threading.Tasks.Task IEventLoop.PollAsync (System.Threading.CancellationToken token);
+    parameters:
+    - id: token
+      type: System.Threading.CancellationToken
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask.Microsoft#Bot#Builder#Base#IEventLoop#PollAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/ReactiveDialogTask.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask.Microsoft#Bot#Builder#Base#IEventProducer{Microsoft#Bot#Connector#IActivity}#Post(Microsoft.Bot.Connector.IActivity,System.Action)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask.Microsoft#Bot#Builder#Base#IEventProducer<Microsoft#Bot#Connector#IActivity>#Post(Microsoft.Bot.Connector.IActivity,System.Action)
+  id: Microsoft#Bot#Builder#Base#IEventProducer{Microsoft#Bot#Connector#IActivity}#Post(Microsoft.Bot.Connector.IActivity,System.Action)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask
+  langs:
+  - csharp
+  name: IEventProducer<IActivity>.Post(IActivity, Action)
+  nameWithType: ReactiveDialogTask.IEventProducer<IActivity>.Post(IActivity, Action)
+  fullName: ReactiveDialogTask.IEventProducer<IActivity>.Post(IActivity, Action)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: void IEventProducer<IActivity>.Post (Microsoft.Bot.Connector.IActivity item, Action onPull);
+    parameters:
+    - id: item
+      type: Microsoft.Bot.Connector.IActivity
+      description: To be added.
+    - id: onPull
+      type: System.Action
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask.Microsoft#Bot#Builder#Base#IEventProducer{Microsoft#Bot#Connector#IActivity}#Post*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/ReactiveDialogTask.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask,System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{System.Object}})
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask
+  isExternal: false
+  name: ReactiveDialogTask(IDialogTask, Func<IDialog<Object>>)
+  nameWithType: ReactiveDialogTask.ReactiveDialogTask(IDialogTask, Func<IDialog<Object>>)
+  fullName: ReactiveDialogTask.ReactiveDialogTask(IDialogTask, Func<IDialog<Object>>)
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask
+  parent: Microsoft.Bot.Builder.Dialogs.Internals
+  isExternal: false
+  name: IDialogTask
+  nameWithType: IDialogTask
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask
+- uid: System.Func`1
+  name: Func
+  nameWithType: Func
+  fullName: System.Func
+- uid: Microsoft.Bot.Builder.Dialogs.IDialog`1
+  name: IDialog<TResult>
+  nameWithType: IDialog<TResult>
+  fullName: Microsoft.Bot.Builder.Dialogs.IDialog<TResult>
+- uid: System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{System.Object}}
+  parent: System
+  isExternal: true
+  name: Func<IDialog<Object>>
+  nameWithType: Func<IDialog<Object>>
+  fullName: System.Func<Microsoft.Bot.Builder.Dialogs.IDialog<System.Object>>
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Dialogs.IDialog`1
+    name: IDialog
+    nameWithType: IDialog
+    fullName: Microsoft.Bot.Builder.Dialogs.IDialog
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask.Microsoft#Bot#Builder#Base#IEventLoop#PollAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask
+  isExternal: false
+  name: IEventLoop.PollAsync(CancellationToken)
+  nameWithType: ReactiveDialogTask.IEventLoop.PollAsync(CancellationToken)
+  fullName: ReactiveDialogTask.IEventLoop.PollAsync(CancellationToken)
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask.Microsoft#Bot#Builder#Base#IEventProducer{Microsoft#Bot#Connector#IActivity}#Post(Microsoft.Bot.Connector.IActivity,System.Action)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask
+  isExternal: false
+  name: IEventProducer<IActivity>.Post(IActivity, Action)
+  nameWithType: ReactiveDialogTask.IEventProducer<IActivity>.Post(IActivity, Action)
+  fullName: ReactiveDialogTask.IEventProducer<IActivity>.Post(IActivity, Action)
+- uid: Microsoft.Bot.Connector.IActivity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IActivity
+  nameWithType: IActivity
+  fullName: Microsoft.Bot.Connector.IActivity
+- uid: System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask.#ctor*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask
+  isExternal: false
+  name: ReactiveDialogTask
+  nameWithType: ReactiveDialogTask.ReactiveDialogTask
+  fullName: ReactiveDialogTask.ReactiveDialogTask
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/ReactiveDialogTask.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask.Microsoft#Bot#Builder#Base#IEventLoop#PollAsync*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask
+  isExternal: false
+  name: Microsoft.Bot.Builder.Base.IEventLoop.PollAsync
+  nameWithType: ReactiveDialogTask.Microsoft.Bot.Builder.Base.IEventLoop.PollAsync
+  fullName: ReactiveDialogTask.Microsoft.Bot.Builder.Base.IEventLoop.PollAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/ReactiveDialogTask.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask.Microsoft#Bot#Builder#Base#IEventProducer{Microsoft#Bot#Connector#IActivity}#Post*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask
+  isExternal: false
+  name: Microsoft.Bot.Builder.Base.IEventProducer<Microsoft.Bot.Connector.IActivity>.Post
+  nameWithType: ReactiveDialogTask.Microsoft.Bot.Builder.Base.IEventProducer<Microsoft.Bot.Connector.IActivity>.Post
+  fullName: ReactiveDialogTask.Microsoft.Bot.Builder.Base.IEventProducer<Microsoft.Bot.Connector.IActivity>.Post
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/ReactiveDialogTask.xml
+- uid: Microsoft.Bot.Builder.Base.IEventLoop
+  parent: Microsoft.Bot.Builder.Base
+  isExternal: false
+  name: IEventLoop
+  nameWithType: IEventLoop
+  fullName: Microsoft.Bot.Builder.Base.IEventLoop
+- uid: Microsoft.Bot.Builder.Base.IEventProducer`1
+  name: IEventProducer<Event>
+  nameWithType: IEventProducer<Event>
+  fullName: Microsoft.Bot.Builder.Base.IEventProducer<Event>
+- uid: Microsoft.Bot.Builder.Base.IEventProducer{Microsoft.Bot.Connector.IActivity}
+  parent: Microsoft.Bot.Builder.Base
+  isExternal: false
+  name: IEventProducer<IActivity>
+  nameWithType: IEventProducer<IActivity>
+  fullName: Microsoft.Bot.Builder.Base.IEventProducer<Microsoft.Bot.Connector.IActivity>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Base.IEventProducer`1
+    name: IEventProducer
+    nameWithType: IEventProducer
+    fullName: Microsoft.Bot.Builder.Base.IEventProducer
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.IActivity
+    name: IActivity
+    nameWithType: IActivity
+    fullName: Microsoft.Bot.Connector.IActivity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'

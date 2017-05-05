@@ -1,0 +1,181 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.Choice
+  commentId: T:Microsoft.Bot.Builder.FormFlow.Choice
+  id: Choice
+  children:
+  - Microsoft.Bot.Builder.FormFlow.Choice.#ctor
+  - Microsoft.Bot.Builder.FormFlow.Choice.Description
+  - Microsoft.Bot.Builder.FormFlow.Choice.Terms
+  - Microsoft.Bot.Builder.FormFlow.Choice.Value
+  langs:
+  - csharp
+  name: Choice
+  nameWithType: Choice
+  fullName: Microsoft.Bot.Builder.FormFlow.Choice
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Choice for clarifying an ambiguous value in <xref href="Microsoft.Bot.Builder.FormFlow.ValidateResult"></xref>.
+  syntax:
+    content: public class Choice
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/Choice.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Choice.#ctor
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Choice.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Builder.FormFlow.Choice
+  langs:
+  - csharp
+  name: Choice()
+  nameWithType: Choice.Choice()
+  fullName: Choice.Choice()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  syntax:
+    content: public Choice ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.FormFlow.Choice.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/Choice.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Choice.Description
+  commentId: F:Microsoft.Bot.Builder.FormFlow.Choice.Description
+  id: Description
+  parent: Microsoft.Bot.Builder.FormFlow.Choice
+  langs:
+  - csharp
+  name: Description
+  nameWithType: Choice.Description
+  fullName: Choice.Description
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Description of value.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.DescribeAttribute Description;
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.DescribeAttribute
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/Choice.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Choice.Terms
+  commentId: F:Microsoft.Bot.Builder.FormFlow.Choice.Terms
+  id: Terms
+  parent: Microsoft.Bot.Builder.FormFlow.Choice
+  langs:
+  - csharp
+  name: Terms
+  nameWithType: Choice.Terms
+  fullName: Choice.Terms
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Terms to match value.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.TermsAttribute Terms;
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.TermsAttribute
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/Choice.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Choice.Value
+  commentId: F:Microsoft.Bot.Builder.FormFlow.Choice.Value
+  id: Value
+  parent: Microsoft.Bot.Builder.FormFlow.Choice
+  langs:
+  - csharp
+  name: Value
+  nameWithType: Choice.Value
+  fullName: Choice.Value
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Value to return if choice is selected.
+  syntax:
+    content: public object Value;
+    return:
+      type: System.Object
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/Choice.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.FormFlow.Choice.#ctor
+  parent: Microsoft.Bot.Builder.FormFlow.Choice
+  isExternal: false
+  name: Choice()
+  nameWithType: Choice.Choice()
+  fullName: Choice.Choice()
+- uid: Microsoft.Bot.Builder.FormFlow.Choice.Description
+  parent: Microsoft.Bot.Builder.FormFlow.Choice
+  isExternal: false
+  name: Description
+  nameWithType: Choice.Description
+  fullName: Choice.Description
+- uid: Microsoft.Bot.Builder.FormFlow.DescribeAttribute
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: DescribeAttribute
+  nameWithType: DescribeAttribute
+  fullName: Microsoft.Bot.Builder.FormFlow.DescribeAttribute
+- uid: Microsoft.Bot.Builder.FormFlow.Choice.Terms
+  parent: Microsoft.Bot.Builder.FormFlow.Choice
+  isExternal: false
+  name: Terms
+  nameWithType: Choice.Terms
+  fullName: Choice.Terms
+- uid: Microsoft.Bot.Builder.FormFlow.TermsAttribute
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: TermsAttribute
+  nameWithType: TermsAttribute
+  fullName: Microsoft.Bot.Builder.FormFlow.TermsAttribute
+- uid: Microsoft.Bot.Builder.FormFlow.Choice.Value
+  parent: Microsoft.Bot.Builder.FormFlow.Choice
+  isExternal: false
+  name: Value
+  nameWithType: Choice.Value
+  fullName: Choice.Value
+- uid: Microsoft.Bot.Builder.FormFlow.Choice.#ctor*
+  parent: Microsoft.Bot.Builder.FormFlow.Choice
+  isExternal: false
+  name: Choice
+  nameWithType: Choice.Choice
+  fullName: Choice.Choice
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/Choice.xml

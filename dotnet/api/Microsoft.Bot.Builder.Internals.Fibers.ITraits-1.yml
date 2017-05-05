@@ -1,0 +1,116 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Internals.Fibers.ITraits`1
+  commentId: T:Microsoft.Bot.Builder.Internals.Fibers.ITraits`1
+  id: ITraits`1
+  children:
+  - Microsoft.Bot.Builder.Internals.Fibers.ITraits`1.Maximum
+  - Microsoft.Bot.Builder.Internals.Fibers.ITraits`1.Minimum
+  langs:
+  - csharp
+  name: ITraits<T>
+  nameWithType: ITraits<T>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.ITraits<T>
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public interface ITraits<T>
+    typeParameters:
+    - id: T
+      description: To be added.
+  derivedClasses:
+  - Microsoft.Bot.Builder.Internals.Fibers.NormalizedTraits
+  implements: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/ITraits`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.ITraits`1.Maximum
+  commentId: P:Microsoft.Bot.Builder.Internals.Fibers.ITraits`1.Maximum
+  id: Maximum
+  parent: Microsoft.Bot.Builder.Internals.Fibers.ITraits`1
+  langs:
+  - csharp
+  name: Maximum
+  nameWithType: ITraits<T>.Maximum
+  fullName: ITraits<T>.Maximum
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public T Maximum { get; }
+    return:
+      type: T
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.ITraits`1.Maximum*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/ITraits`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.ITraits`1.Minimum
+  commentId: P:Microsoft.Bot.Builder.Internals.Fibers.ITraits`1.Minimum
+  id: Minimum
+  parent: Microsoft.Bot.Builder.Internals.Fibers.ITraits`1
+  langs:
+  - csharp
+  name: Minimum
+  nameWithType: ITraits<T>.Minimum
+  fullName: ITraits<T>.Minimum
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public T Minimum { get; }
+    return:
+      type: T
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.ITraits`1.Minimum*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/ITraits`1.xml
+references:
+- uid: Microsoft.Bot.Builder.Internals.Fibers.ITraits`1.Maximum
+  parent: Microsoft.Bot.Builder.Internals.Fibers.ITraits`1
+  isExternal: false
+  name: Maximum
+  nameWithType: ITraits<T>.Maximum
+  fullName: ITraits<T>.Maximum
+- uid: T
+  isExternal: true
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.Bot.Builder.Internals.Fibers.ITraits`1.Minimum
+  parent: Microsoft.Bot.Builder.Internals.Fibers.ITraits`1
+  isExternal: false
+  name: Minimum
+  nameWithType: ITraits<T>.Minimum
+  fullName: ITraits<T>.Minimum
+- uid: Microsoft.Bot.Builder.Internals.Fibers.ITraits`1.Maximum*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.ITraits`1
+  isExternal: false
+  name: Maximum
+  nameWithType: ITraits<T>.Maximum
+  fullName: ITraits<T>.Maximum
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/ITraits`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.ITraits`1.Minimum*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.ITraits`1
+  isExternal: false
+  name: Minimum
+  nameWithType: ITraits<T>.Minimum
+  fullName: ITraits<T>.Minimum
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/ITraits`1.xml

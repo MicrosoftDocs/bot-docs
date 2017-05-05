@@ -1,0 +1,1893 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Scorables.Actions
+  commentId: T:Microsoft.Bot.Builder.Scorables.Actions
+  id: Actions
+  children:
+  - Microsoft.Bot.Builder.Scorables.Actions.Bind``1(System.Func{``0})
+  - Microsoft.Bot.Builder.Scorables.Actions.Bind``2(System.Func{``0,``1})
+  - Microsoft.Bot.Builder.Scorables.Actions.Bind``3(System.Func{``0,``1,``2})
+  - Microsoft.Bot.Builder.Scorables.Actions.Bind``4(System.Func{``0,``1,``2,``3})
+  - Microsoft.Bot.Builder.Scorables.Actions.Bind``5(System.Func{``0,``1,``2,``3,``4})
+  - Microsoft.Bot.Builder.Scorables.Actions.Bind``6(System.Func{``0,``1,``2,``3,``4,``5})
+  - Microsoft.Bot.Builder.Scorables.Actions.Bind``7(System.Func{``0,``1,``2,``3,``4,``5,``6})
+  - Microsoft.Bot.Builder.Scorables.Actions.Bind``8(System.Func{``0,``1,``2,``3,``4,``5,``6,``7})
+  - Microsoft.Bot.Builder.Scorables.Actions.Normalize(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match})
+  - Microsoft.Bot.Builder.Scorables.Actions.Normalize(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding})
+  - Microsoft.Bot.Builder.Scorables.Actions.Normalize(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Luis.Models.IntentRecommendation})
+  - Microsoft.Bot.Builder.Scorables.Actions.When``1(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Text.RegularExpressions.Regex)
+  - Microsoft.Bot.Builder.Scorables.Actions.When``1(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},Microsoft.Bot.Builder.Luis.ILuisModel,Microsoft.Bot.Builder.Dialogs.LuisIntentAttribute,Microsoft.Bot.Builder.Luis.ILuisService)
+  - Microsoft.Bot.Builder.Scorables.Actions.Where``4(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,``3,System.Boolean})
+  - Microsoft.Bot.Builder.Scorables.Actions.Where``4(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,``3,System.Threading.Tasks.Task{System.Boolean}})
+  - Microsoft.Bot.Builder.Scorables.Actions.Where``3(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,System.Boolean})
+  - Microsoft.Bot.Builder.Scorables.Actions.Where``3(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,System.Threading.Tasks.Task{System.Boolean}})
+  - Microsoft.Bot.Builder.Scorables.Actions.Where``2(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,System.Boolean})
+  - Microsoft.Bot.Builder.Scorables.Actions.Where``2(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,System.Threading.Tasks.Task{System.Boolean}})
+  langs:
+  - csharp
+  name: Actions
+  nameWithType: Actions
+  fullName: Microsoft.Bot.Builder.Scorables.Actions
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Scorables
+  summary: Fluent methods related to <xref href="Microsoft.Bot.Builder.Scorables.IScorable`2"></xref>.
+  syntax:
+    content: public static class Actions
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Bind``1(System.Func{``0})
+  commentId: M:Microsoft.Bot.Builder.Scorables.Actions.Bind``1(System.Func{``0})
+  id: Bind``1(System.Func{``0})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  langs:
+  - csharp
+  name: Bind<R>(Func<R>)
+  nameWithType: Actions.Bind<R>(Func<R>)
+  fullName: Actions.Bind<R>(Func<R>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: public static Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding> Bind<R> (Func<R> method);
+    parameters:
+    - id: method
+      type: System.Func{R}
+      description: To be added.
+    typeParameters:
+    - id: R
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Actions.Bind``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Bind``2(System.Func{``0,``1})
+  commentId: M:Microsoft.Bot.Builder.Scorables.Actions.Bind``2(System.Func{``0,``1})
+  id: Bind``2(System.Func{``0,``1})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  langs:
+  - csharp
+  name: Bind<T1,R>(Func<T1,R>)
+  nameWithType: Actions.Bind<T1,R>(Func<T1,R>)
+  fullName: Actions.Bind<T1,R>(Func<T1,R>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: public static Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding> Bind<T1,R> (Func<T1,R> method);
+    parameters:
+    - id: method
+      type: System.Func{T1,R}
+      description: To be added.
+    typeParameters:
+    - id: T1
+      description: To be added.
+    - id: R
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Actions.Bind``2*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Bind``3(System.Func{``0,``1,``2})
+  commentId: M:Microsoft.Bot.Builder.Scorables.Actions.Bind``3(System.Func{``0,``1,``2})
+  id: Bind``3(System.Func{``0,``1,``2})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  langs:
+  - csharp
+  name: Bind<T1,T2,R>(Func<T1,T2,R>)
+  nameWithType: Actions.Bind<T1,T2,R>(Func<T1,T2,R>)
+  fullName: Actions.Bind<T1,T2,R>(Func<T1,T2,R>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: public static Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding> Bind<T1,T2,R> (Func<T1,T2,R> method);
+    parameters:
+    - id: method
+      type: System.Func{T1,T2,R}
+      description: To be added.
+    typeParameters:
+    - id: T1
+      description: To be added.
+    - id: T2
+      description: To be added.
+    - id: R
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Actions.Bind``3*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Bind``4(System.Func{``0,``1,``2,``3})
+  commentId: M:Microsoft.Bot.Builder.Scorables.Actions.Bind``4(System.Func{``0,``1,``2,``3})
+  id: Bind``4(System.Func{``0,``1,``2,``3})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  langs:
+  - csharp
+  name: Bind<T1,T2,T3,R>(Func<T1,T2,T3,R>)
+  nameWithType: Actions.Bind<T1,T2,T3,R>(Func<T1,T2,T3,R>)
+  fullName: Actions.Bind<T1,T2,T3,R>(Func<T1,T2,T3,R>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: public static Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding> Bind<T1,T2,T3,R> (Func<T1,T2,T3,R> method);
+    parameters:
+    - id: method
+      type: System.Func{T1,T2,T3,R}
+      description: To be added.
+    typeParameters:
+    - id: T1
+      description: To be added.
+    - id: T2
+      description: To be added.
+    - id: T3
+      description: To be added.
+    - id: R
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Actions.Bind``4*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Bind``5(System.Func{``0,``1,``2,``3,``4})
+  commentId: M:Microsoft.Bot.Builder.Scorables.Actions.Bind``5(System.Func{``0,``1,``2,``3,``4})
+  id: Bind``5(System.Func{``0,``1,``2,``3,``4})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  langs:
+  - csharp
+  name: Bind<T1,T2,T3,T4,R>(Func<T1,T2,T3,T4,R>)
+  nameWithType: Actions.Bind<T1,T2,T3,T4,R>(Func<T1,T2,T3,T4,R>)
+  fullName: Actions.Bind<T1,T2,T3,T4,R>(Func<T1,T2,T3,T4,R>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: public static Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding> Bind<T1,T2,T3,T4,R> (Func<T1,T2,T3,T4,R> method);
+    parameters:
+    - id: method
+      type: System.Func{T1,T2,T3,T4,R}
+      description: To be added.
+    typeParameters:
+    - id: T1
+      description: To be added.
+    - id: T2
+      description: To be added.
+    - id: T3
+      description: To be added.
+    - id: T4
+      description: To be added.
+    - id: R
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Actions.Bind``5*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Bind``6(System.Func{``0,``1,``2,``3,``4,``5})
+  commentId: M:Microsoft.Bot.Builder.Scorables.Actions.Bind``6(System.Func{``0,``1,``2,``3,``4,``5})
+  id: Bind``6(System.Func{``0,``1,``2,``3,``4,``5})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  langs:
+  - csharp
+  name: Bind<T1,T2,T3,T4,T5,R>(Func<T1,T2,T3,T4,T5,R>)
+  nameWithType: Actions.Bind<T1,T2,T3,T4,T5,R>(Func<T1,T2,T3,T4,T5,R>)
+  fullName: Actions.Bind<T1,T2,T3,T4,T5,R>(Func<T1,T2,T3,T4,T5,R>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: public static Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding> Bind<T1,T2,T3,T4,T5,R> (Func<T1,T2,T3,T4,T5,R> method);
+    parameters:
+    - id: method
+      type: System.Func{T1,T2,T3,T4,T5,R}
+      description: To be added.
+    typeParameters:
+    - id: T1
+      description: To be added.
+    - id: T2
+      description: To be added.
+    - id: T3
+      description: To be added.
+    - id: T4
+      description: To be added.
+    - id: T5
+      description: To be added.
+    - id: R
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Actions.Bind``6*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Bind``7(System.Func{``0,``1,``2,``3,``4,``5,``6})
+  commentId: M:Microsoft.Bot.Builder.Scorables.Actions.Bind``7(System.Func{``0,``1,``2,``3,``4,``5,``6})
+  id: Bind``7(System.Func{``0,``1,``2,``3,``4,``5,``6})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  langs:
+  - csharp
+  name: Bind<T1,T2,T3,T4,T5,T6,R>(Func<T1,T2,T3,T4,T5,T6,R>)
+  nameWithType: Actions.Bind<T1,T2,T3,T4,T5,T6,R>(Func<T1,T2,T3,T4,T5,T6,R>)
+  fullName: Actions.Bind<T1,T2,T3,T4,T5,T6,R>(Func<T1,T2,T3,T4,T5,T6,R>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: public static Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding> Bind<T1,T2,T3,T4,T5,T6,R> (Func<T1,T2,T3,T4,T5,T6,R> method);
+    parameters:
+    - id: method
+      type: System.Func{T1,T2,T3,T4,T5,T6,R}
+      description: To be added.
+    typeParameters:
+    - id: T1
+      description: To be added.
+    - id: T2
+      description: To be added.
+    - id: T3
+      description: To be added.
+    - id: T4
+      description: To be added.
+    - id: T5
+      description: To be added.
+    - id: T6
+      description: To be added.
+    - id: R
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Actions.Bind``7*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Bind``8(System.Func{``0,``1,``2,``3,``4,``5,``6,``7})
+  commentId: M:Microsoft.Bot.Builder.Scorables.Actions.Bind``8(System.Func{``0,``1,``2,``3,``4,``5,``6,``7})
+  id: Bind``8(System.Func{``0,``1,``2,``3,``4,``5,``6,``7})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  langs:
+  - csharp
+  name: Bind<T1,T2,T3,T4,T5,T6,T7,R>(Func<T1,T2,T3,T4,T5,T6,T7,R>)
+  nameWithType: Actions.Bind<T1,T2,T3,T4,T5,T6,T7,R>(Func<T1,T2,T3,T4,T5,T6,T7,R>)
+  fullName: Actions.Bind<T1,T2,T3,T4,T5,T6,T7,R>(Func<T1,T2,T3,T4,T5,T6,T7,R>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: public static Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding> Bind<T1,T2,T3,T4,T5,T6,T7,R> (Func<T1,T2,T3,T4,T5,T6,T7,R> method);
+    parameters:
+    - id: method
+      type: System.Func{T1,T2,T3,T4,T5,T6,T7,R}
+      description: To be added.
+    typeParameters:
+    - id: T1
+      description: To be added.
+    - id: T2
+      description: To be added.
+    - id: T3
+      description: To be added.
+    - id: T4
+      description: To be added.
+    - id: T5
+      description: To be added.
+    - id: T6
+      description: To be added.
+    - id: T7
+      description: To be added.
+    - id: R
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Actions.Bind``8*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Normalize(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match})
+  commentId: M:Microsoft.Bot.Builder.Scorables.Actions.Normalize(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match})
+  id: Normalize(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  langs:
+  - csharp
+  name: Normalize(IScorable<IResolver,Match>)
+  nameWithType: Actions.Normalize(IScorable<IResolver,Match>)
+  fullName: Actions.Normalize(IScorable<IResolver,Match>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: public static Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,double> Normalize (this Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match> scorable);
+    parameters:
+    - id: scorable
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match}
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Double}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Actions.Normalize*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Normalize(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding})
+  commentId: M:Microsoft.Bot.Builder.Scorables.Actions.Normalize(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding})
+  id: Normalize(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  langs:
+  - csharp
+  name: Normalize(IScorable<IResolver,IBinding>)
+  nameWithType: Actions.Normalize(IScorable<IResolver,IBinding>)
+  fullName: Actions.Normalize(IScorable<IResolver,IBinding>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: public static Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,double> Normalize (this Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding> scorable);
+    parameters:
+    - id: scorable
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding}
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Double}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Actions.Normalize*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Normalize(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Luis.Models.IntentRecommendation})
+  commentId: M:Microsoft.Bot.Builder.Scorables.Actions.Normalize(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Luis.Models.IntentRecommendation})
+  id: Normalize(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Luis.Models.IntentRecommendation})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  langs:
+  - csharp
+  name: Normalize(IScorable<IResolver,IntentRecommendation>)
+  nameWithType: Actions.Normalize(IScorable<IResolver,IntentRecommendation>)
+  fullName: Actions.Normalize(IScorable<IResolver,IntentRecommendation>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: public static Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,double> Normalize (this Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Luis.Models.IntentRecommendation> scorable);
+    parameters:
+    - id: scorable
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Luis.Models.IntentRecommendation}
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Double}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Actions.Normalize*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.When``1(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Text.RegularExpressions.Regex)
+  commentId: M:Microsoft.Bot.Builder.Scorables.Actions.When``1(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Text.RegularExpressions.Regex)
+  id: When``1(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Text.RegularExpressions.Regex)
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  langs:
+  - csharp
+  name: When<InnerScore>(IScorable<IResolver,InnerScore>, Regex)
+  nameWithType: Actions.When<InnerScore>(IScorable<IResolver,InnerScore>, Regex)
+  fullName: Actions.When<InnerScore>(IScorable<IResolver,InnerScore>, Regex)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: public static Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match> When<InnerScore> (this Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,InnerScore> scorable, System.Text.RegularExpressions.Regex regex);
+    parameters:
+    - id: scorable
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,InnerScore}
+      description: To be added.
+    - id: regex
+      type: System.Text.RegularExpressions.Regex
+      description: To be added.
+    typeParameters:
+    - id: InnerScore
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Actions.When``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.When``1(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},Microsoft.Bot.Builder.Luis.ILuisModel,Microsoft.Bot.Builder.Dialogs.LuisIntentAttribute,Microsoft.Bot.Builder.Luis.ILuisService)
+  commentId: M:Microsoft.Bot.Builder.Scorables.Actions.When``1(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},Microsoft.Bot.Builder.Luis.ILuisModel,Microsoft.Bot.Builder.Dialogs.LuisIntentAttribute,Microsoft.Bot.Builder.Luis.ILuisService)
+  id: When``1(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},Microsoft.Bot.Builder.Luis.ILuisModel,Microsoft.Bot.Builder.Dialogs.LuisIntentAttribute,Microsoft.Bot.Builder.Luis.ILuisService)
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  langs:
+  - csharp
+  name: When<InnerScore>(IScorable<IResolver,InnerScore>, ILuisModel, LuisIntentAttribute, ILuisService)
+  nameWithType: Actions.When<InnerScore>(IScorable<IResolver,InnerScore>, ILuisModel, LuisIntentAttribute, ILuisService)
+  fullName: Actions.When<InnerScore>(IScorable<IResolver,InnerScore>, ILuisModel, LuisIntentAttribute, ILuisService)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: public static Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Luis.Models.IntentRecommendation> When<InnerScore> (this Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,InnerScore> scorable, Microsoft.Bot.Builder.Luis.ILuisModel model, Microsoft.Bot.Builder.Dialogs.LuisIntentAttribute intent, Microsoft.Bot.Builder.Luis.ILuisService service = null);
+    parameters:
+    - id: scorable
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,InnerScore}
+      description: To be added.
+    - id: model
+      type: Microsoft.Bot.Builder.Luis.ILuisModel
+      description: To be added.
+    - id: intent
+      type: Microsoft.Bot.Builder.Dialogs.LuisIntentAttribute
+      description: To be added.
+    - id: service
+      type: Microsoft.Bot.Builder.Luis.ILuisService
+      description: To be added.
+    typeParameters:
+    - id: InnerScore
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Luis.Models.IntentRecommendation}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Actions.When``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Where``4(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,``3,System.Boolean})
+  commentId: M:Microsoft.Bot.Builder.Scorables.Actions.Where``4(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,``3,System.Boolean})
+  id: Where``4(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,``3,System.Boolean})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  langs:
+  - csharp
+  name: Where<Score,T1,T2,T3>(IScorable<IResolver,Score>, Func<T1,T2,T3,Boolean>)
+  nameWithType: Actions.Where<Score,T1,T2,T3>(IScorable<IResolver,Score>, Func<T1,T2,T3,Boolean>)
+  fullName: Actions.Where<Score,T1,T2,T3>(IScorable<IResolver,Score>, Func<T1,T2,T3,Boolean>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: public static Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score> Where<Score,T1,T2,T3> (this Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score> scorable, Func<T1,T2,T3,bool> predicate);
+    parameters:
+    - id: scorable
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score}
+      description: To be added.
+    - id: predicate
+      type: System.Func{T1,T2,T3,System.Boolean}
+      description: To be added.
+    typeParameters:
+    - id: Score
+      description: To be added.
+    - id: T1
+      description: To be added.
+    - id: T2
+      description: To be added.
+    - id: T3
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Actions.Where``4*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Where``4(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,``3,System.Threading.Tasks.Task{System.Boolean}})
+  commentId: M:Microsoft.Bot.Builder.Scorables.Actions.Where``4(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,``3,System.Threading.Tasks.Task{System.Boolean}})
+  id: Where``4(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,``3,System.Threading.Tasks.Task{System.Boolean}})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  langs:
+  - csharp
+  name: Where<Score,T1,T2,T3>(IScorable<IResolver,Score>, Func<T1,T2,T3,Task<Boolean>>)
+  nameWithType: Actions.Where<Score,T1,T2,T3>(IScorable<IResolver,Score>, Func<T1,T2,T3,Task<Boolean>>)
+  fullName: Actions.Where<Score,T1,T2,T3>(IScorable<IResolver,Score>, Func<T1,T2,T3,Task<Boolean>>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: public static Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score> Where<Score,T1,T2,T3> (this Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score> scorable, Func<T1,T2,T3,System.Threading.Tasks.Task<bool>> predicate);
+    parameters:
+    - id: scorable
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score}
+      description: To be added.
+    - id: predicate
+      type: System.Func{T1,T2,T3,System.Threading.Tasks.Task{System.Boolean}}
+      description: To be added.
+    typeParameters:
+    - id: Score
+      description: To be added.
+    - id: T1
+      description: To be added.
+    - id: T2
+      description: To be added.
+    - id: T3
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Actions.Where``4*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Where``3(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,System.Boolean})
+  commentId: M:Microsoft.Bot.Builder.Scorables.Actions.Where``3(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,System.Boolean})
+  id: Where``3(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,System.Boolean})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  langs:
+  - csharp
+  name: Where<Score,T1,T2>(IScorable<IResolver,Score>, Func<T1,T2,Boolean>)
+  nameWithType: Actions.Where<Score,T1,T2>(IScorable<IResolver,Score>, Func<T1,T2,Boolean>)
+  fullName: Actions.Where<Score,T1,T2>(IScorable<IResolver,Score>, Func<T1,T2,Boolean>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: public static Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score> Where<Score,T1,T2> (this Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score> scorable, Func<T1,T2,bool> predicate);
+    parameters:
+    - id: scorable
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score}
+      description: To be added.
+    - id: predicate
+      type: System.Func{T1,T2,System.Boolean}
+      description: To be added.
+    typeParameters:
+    - id: Score
+      description: To be added.
+    - id: T1
+      description: To be added.
+    - id: T2
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Actions.Where``3*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Where``3(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,System.Threading.Tasks.Task{System.Boolean}})
+  commentId: M:Microsoft.Bot.Builder.Scorables.Actions.Where``3(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,System.Threading.Tasks.Task{System.Boolean}})
+  id: Where``3(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,System.Threading.Tasks.Task{System.Boolean}})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  langs:
+  - csharp
+  name: Where<Score,T1,T2>(IScorable<IResolver,Score>, Func<T1,T2,Task<Boolean>>)
+  nameWithType: Actions.Where<Score,T1,T2>(IScorable<IResolver,Score>, Func<T1,T2,Task<Boolean>>)
+  fullName: Actions.Where<Score,T1,T2>(IScorable<IResolver,Score>, Func<T1,T2,Task<Boolean>>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: public static Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score> Where<Score,T1,T2> (this Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score> scorable, Func<T1,T2,System.Threading.Tasks.Task<bool>> predicate);
+    parameters:
+    - id: scorable
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score}
+      description: To be added.
+    - id: predicate
+      type: System.Func{T1,T2,System.Threading.Tasks.Task{System.Boolean}}
+      description: To be added.
+    typeParameters:
+    - id: Score
+      description: To be added.
+    - id: T1
+      description: To be added.
+    - id: T2
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Actions.Where``3*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Where``2(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,System.Boolean})
+  commentId: M:Microsoft.Bot.Builder.Scorables.Actions.Where``2(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,System.Boolean})
+  id: Where``2(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,System.Boolean})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  langs:
+  - csharp
+  name: Where<Score,T1>(IScorable<IResolver,Score>, Func<T1,Boolean>)
+  nameWithType: Actions.Where<Score,T1>(IScorable<IResolver,Score>, Func<T1,Boolean>)
+  fullName: Actions.Where<Score,T1>(IScorable<IResolver,Score>, Func<T1,Boolean>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: public static Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score> Where<Score,T1> (this Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score> scorable, Func<T1,bool> predicate);
+    parameters:
+    - id: scorable
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score}
+      description: To be added.
+    - id: predicate
+      type: System.Func{T1,System.Boolean}
+      description: To be added.
+    typeParameters:
+    - id: Score
+      description: To be added.
+    - id: T1
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Actions.Where``2*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Where``2(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,System.Threading.Tasks.Task{System.Boolean}})
+  commentId: M:Microsoft.Bot.Builder.Scorables.Actions.Where``2(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,System.Threading.Tasks.Task{System.Boolean}})
+  id: Where``2(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,System.Threading.Tasks.Task{System.Boolean}})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  langs:
+  - csharp
+  name: Where<Score,T1>(IScorable<IResolver,Score>, Func<T1,Task<Boolean>>)
+  nameWithType: Actions.Where<Score,T1>(IScorable<IResolver,Score>, Func<T1,Task<Boolean>>)
+  fullName: Actions.Where<Score,T1>(IScorable<IResolver,Score>, Func<T1,Task<Boolean>>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: public static Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score> Where<Score,T1> (this Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score> scorable, Func<T1,System.Threading.Tasks.Task<bool>> predicate);
+    parameters:
+    - id: scorable
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score}
+      description: To be added.
+    - id: predicate
+      type: System.Func{T1,System.Threading.Tasks.Task{System.Boolean}}
+      description: To be added.
+    typeParameters:
+    - id: Score
+      description: To be added.
+    - id: T1
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Actions.Where``2*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Bind``1(System.Func{``0})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Bind<R>(Func<R>)
+  nameWithType: Actions.Bind<R>(Func<R>)
+  fullName: Actions.Bind<R>(Func<R>)
+- uid: Microsoft.Bot.Builder.Scorables.IScorable`2
+  name: IScorable<Item,Score>
+  nameWithType: IScorable<Item,Score>
+  fullName: Microsoft.Bot.Builder.Scorables.IScorable<Item,Score>
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+  name: IResolver
+  nameWithType: IResolver
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IBinding
+  name: IBinding
+  nameWithType: IBinding
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.IBinding
+- uid: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding}
+  parent: Microsoft.Bot.Builder.Scorables
+  isExternal: false
+  name: IScorable<IResolver,IBinding>
+  nameWithType: IScorable<IResolver,IBinding>
+  fullName: Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Scorables.IScorable`2
+    name: IScorable
+    nameWithType: IScorable
+    fullName: Microsoft.Bot.Builder.Scorables.IScorable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+    name: IResolver
+    nameWithType: IResolver
+    fullName: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.IBinding
+    name: IBinding
+    nameWithType: IBinding
+    fullName: Microsoft.Bot.Builder.Scorables.Internals.IBinding
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Func`1
+  name: Func
+  nameWithType: Func
+  fullName: System.Func
+- uid: R
+  name: R
+  nameWithType: R
+  fullName: R
+- uid: System.Func{R}
+  parent: System
+  isExternal: true
+  name: Func<R>
+  nameWithType: Func<R>
+  fullName: System.Func<R>
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R
+    name: R
+    nameWithType: R
+    fullName: R
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Bind``2(System.Func{``0,``1})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Bind<T1,R>(Func<T1,R>)
+  nameWithType: Actions.Bind<T1,R>(Func<T1,R>)
+  fullName: Actions.Bind<T1,R>(Func<T1,R>)
+- uid: System.Func`2
+  name: Func
+  nameWithType: Func
+  fullName: System.Func
+- uid: T1
+  name: T1
+  nameWithType: T1
+  fullName: T1
+- uid: System.Func{T1,R}
+  parent: System
+  isExternal: true
+  name: Func<T1,R>
+  nameWithType: Func<T1,R>
+  fullName: System.Func<T1,R>
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T1
+    name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: R
+    name: R
+    nameWithType: R
+    fullName: R
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Bind``3(System.Func{``0,``1,``2})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Bind<T1,T2,R>(Func<T1,T2,R>)
+  nameWithType: Actions.Bind<T1,T2,R>(Func<T1,T2,R>)
+  fullName: Actions.Bind<T1,T2,R>(Func<T1,T2,R>)
+- uid: System.Func`3
+  name: Func
+  nameWithType: Func
+  fullName: System.Func
+- uid: T2
+  name: T2
+  nameWithType: T2
+  fullName: T2
+- uid: System.Func{T1,T2,R}
+  parent: System
+  isExternal: true
+  name: Func<T1,T2,R>
+  nameWithType: Func<T1,T2,R>
+  fullName: System.Func<T1,T2,R>
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T1
+    name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T2
+    name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: R
+    name: R
+    nameWithType: R
+    fullName: R
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Bind``4(System.Func{``0,``1,``2,``3})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Bind<T1,T2,T3,R>(Func<T1,T2,T3,R>)
+  nameWithType: Actions.Bind<T1,T2,T3,R>(Func<T1,T2,T3,R>)
+  fullName: Actions.Bind<T1,T2,T3,R>(Func<T1,T2,T3,R>)
+- uid: System.Func`4
+  name: Func
+  nameWithType: Func
+  fullName: System.Func
+- uid: T3
+  name: T3
+  nameWithType: T3
+  fullName: T3
+- uid: System.Func{T1,T2,T3,R}
+  parent: System
+  isExternal: true
+  name: Func<T1,T2,T3,R>
+  nameWithType: Func<T1,T2,T3,R>
+  fullName: System.Func<T1,T2,T3,R>
+  spec.csharp:
+  - uid: System.Func`4
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T1
+    name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T2
+    name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T3
+    name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: R
+    name: R
+    nameWithType: R
+    fullName: R
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Bind``5(System.Func{``0,``1,``2,``3,``4})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Bind<T1,T2,T3,T4,R>(Func<T1,T2,T3,T4,R>)
+  nameWithType: Actions.Bind<T1,T2,T3,T4,R>(Func<T1,T2,T3,T4,R>)
+  fullName: Actions.Bind<T1,T2,T3,T4,R>(Func<T1,T2,T3,T4,R>)
+- uid: System.Func`5
+  name: Func
+  nameWithType: Func
+  fullName: System.Func
+- uid: T4
+  name: T4
+  nameWithType: T4
+  fullName: T4
+- uid: System.Func{T1,T2,T3,T4,R}
+  parent: System
+  isExternal: true
+  name: Func<T1,T2,T3,T4,R>
+  nameWithType: Func<T1,T2,T3,T4,R>
+  fullName: System.Func<T1,T2,T3,T4,R>
+  spec.csharp:
+  - uid: System.Func`5
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T1
+    name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T2
+    name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T3
+    name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T4
+    name: T4
+    nameWithType: T4
+    fullName: T4
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: R
+    name: R
+    nameWithType: R
+    fullName: R
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Bind``6(System.Func{``0,``1,``2,``3,``4,``5})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Bind<T1,T2,T3,T4,T5,R>(Func<T1,T2,T3,T4,T5,R>)
+  nameWithType: Actions.Bind<T1,T2,T3,T4,T5,R>(Func<T1,T2,T3,T4,T5,R>)
+  fullName: Actions.Bind<T1,T2,T3,T4,T5,R>(Func<T1,T2,T3,T4,T5,R>)
+- uid: System.Func`6
+  name: Func
+  nameWithType: Func
+  fullName: System.Func
+- uid: T5
+  name: T5
+  nameWithType: T5
+  fullName: T5
+- uid: System.Func{T1,T2,T3,T4,T5,R}
+  parent: System
+  isExternal: true
+  name: Func<T1,T2,T3,T4,T5,R>
+  nameWithType: Func<T1,T2,T3,T4,T5,R>
+  fullName: System.Func<T1,T2,T3,T4,T5,R>
+  spec.csharp:
+  - uid: System.Func`6
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T1
+    name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T2
+    name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T3
+    name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T4
+    name: T4
+    nameWithType: T4
+    fullName: T4
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T5
+    name: T5
+    nameWithType: T5
+    fullName: T5
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: R
+    name: R
+    nameWithType: R
+    fullName: R
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Bind``7(System.Func{``0,``1,``2,``3,``4,``5,``6})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Bind<T1,T2,T3,T4,T5,T6,R>(Func<T1,T2,T3,T4,T5,T6,R>)
+  nameWithType: Actions.Bind<T1,T2,T3,T4,T5,T6,R>(Func<T1,T2,T3,T4,T5,T6,R>)
+  fullName: Actions.Bind<T1,T2,T3,T4,T5,T6,R>(Func<T1,T2,T3,T4,T5,T6,R>)
+- uid: System.Func`7
+  name: Func
+  nameWithType: Func
+  fullName: System.Func
+- uid: T6
+  name: T6
+  nameWithType: T6
+  fullName: T6
+- uid: System.Func{T1,T2,T3,T4,T5,T6,R}
+  parent: System
+  isExternal: true
+  name: Func<T1,T2,T3,T4,T5,T6,R>
+  nameWithType: Func<T1,T2,T3,T4,T5,T6,R>
+  fullName: System.Func<T1,T2,T3,T4,T5,T6,R>
+  spec.csharp:
+  - uid: System.Func`7
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T1
+    name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T2
+    name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T3
+    name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T4
+    name: T4
+    nameWithType: T4
+    fullName: T4
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T5
+    name: T5
+    nameWithType: T5
+    fullName: T5
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T6
+    name: T6
+    nameWithType: T6
+    fullName: T6
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: R
+    name: R
+    nameWithType: R
+    fullName: R
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Bind``8(System.Func{``0,``1,``2,``3,``4,``5,``6,``7})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Bind<T1,T2,T3,T4,T5,T6,T7,R>(Func<T1,T2,T3,T4,T5,T6,T7,R>)
+  nameWithType: Actions.Bind<T1,T2,T3,T4,T5,T6,T7,R>(Func<T1,T2,T3,T4,T5,T6,T7,R>)
+  fullName: Actions.Bind<T1,T2,T3,T4,T5,T6,T7,R>(Func<T1,T2,T3,T4,T5,T6,T7,R>)
+- uid: System.Func`8
+  name: Func
+  nameWithType: Func
+  fullName: System.Func
+- uid: T7
+  name: T7
+  nameWithType: T7
+  fullName: T7
+- uid: System.Func{T1,T2,T3,T4,T5,T6,T7,R}
+  parent: System
+  isExternal: true
+  name: Func<T1,T2,T3,T4,T5,T6,T7,R>
+  nameWithType: Func<T1,T2,T3,T4,T5,T6,T7,R>
+  fullName: System.Func<T1,T2,T3,T4,T5,T6,T7,R>
+  spec.csharp:
+  - uid: System.Func`8
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T1
+    name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T2
+    name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T3
+    name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T4
+    name: T4
+    nameWithType: T4
+    fullName: T4
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T5
+    name: T5
+    nameWithType: T5
+    fullName: T5
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T6
+    name: T6
+    nameWithType: T6
+    fullName: T6
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T7
+    name: T7
+    nameWithType: T7
+    fullName: T7
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: R
+    name: R
+    nameWithType: R
+    fullName: R
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Normalize(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Normalize(IScorable<IResolver,Match>)
+  nameWithType: Actions.Normalize(IScorable<IResolver,Match>)
+  fullName: Actions.Normalize(IScorable<IResolver,Match>)
+- uid: System.Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Double}
+  parent: Microsoft.Bot.Builder.Scorables
+  isExternal: false
+  name: IScorable<IResolver,Double>
+  nameWithType: IScorable<IResolver,Double>
+  fullName: Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Double>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Scorables.IScorable`2
+    name: IScorable
+    nameWithType: IScorable
+    fullName: Microsoft.Bot.Builder.Scorables.IScorable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+    name: IResolver
+    nameWithType: IResolver
+    fullName: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Text.RegularExpressions.Match
+  name: Match
+  nameWithType: Match
+  fullName: System.Text.RegularExpressions.Match
+- uid: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match}
+  parent: Microsoft.Bot.Builder.Scorables
+  isExternal: false
+  name: IScorable<IResolver,Match>
+  nameWithType: IScorable<IResolver,Match>
+  fullName: Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Scorables.IScorable`2
+    name: IScorable
+    nameWithType: IScorable
+    fullName: Microsoft.Bot.Builder.Scorables.IScorable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+    name: IResolver
+    nameWithType: IResolver
+    fullName: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.Text.RegularExpressions.Match
+    name: Match
+    nameWithType: Match
+    fullName: System.Text.RegularExpressions.Match
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Normalize(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Normalize(IScorable<IResolver,IBinding>)
+  nameWithType: Actions.Normalize(IScorable<IResolver,IBinding>)
+  fullName: Actions.Normalize(IScorable<IResolver,IBinding>)
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Normalize(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Luis.Models.IntentRecommendation})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Normalize(IScorable<IResolver,IntentRecommendation>)
+  nameWithType: Actions.Normalize(IScorable<IResolver,IntentRecommendation>)
+  fullName: Actions.Normalize(IScorable<IResolver,IntentRecommendation>)
+- uid: Microsoft.Bot.Builder.Luis.Models.IntentRecommendation
+  name: IntentRecommendation
+  nameWithType: IntentRecommendation
+  fullName: Microsoft.Bot.Builder.Luis.Models.IntentRecommendation
+- uid: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Luis.Models.IntentRecommendation}
+  parent: Microsoft.Bot.Builder.Scorables
+  isExternal: false
+  name: IScorable<IResolver,IntentRecommendation>
+  nameWithType: IScorable<IResolver,IntentRecommendation>
+  fullName: Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Luis.Models.IntentRecommendation>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Scorables.IScorable`2
+    name: IScorable
+    nameWithType: IScorable
+    fullName: Microsoft.Bot.Builder.Scorables.IScorable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+    name: IResolver
+    nameWithType: IResolver
+    fullName: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: Microsoft.Bot.Builder.Luis.Models.IntentRecommendation
+    name: IntentRecommendation
+    nameWithType: IntentRecommendation
+    fullName: Microsoft.Bot.Builder.Luis.Models.IntentRecommendation
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Actions.When``1(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Text.RegularExpressions.Regex)
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: When<InnerScore>(IScorable<IResolver,InnerScore>, Regex)
+  nameWithType: Actions.When<InnerScore>(IScorable<IResolver,InnerScore>, Regex)
+  fullName: Actions.When<InnerScore>(IScorable<IResolver,InnerScore>, Regex)
+- uid: InnerScore
+  name: InnerScore
+  nameWithType: InnerScore
+  fullName: InnerScore
+- uid: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,InnerScore}
+  parent: Microsoft.Bot.Builder.Scorables
+  isExternal: false
+  name: IScorable<IResolver,InnerScore>
+  nameWithType: IScorable<IResolver,InnerScore>
+  fullName: Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,InnerScore>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Scorables.IScorable`2
+    name: IScorable
+    nameWithType: IScorable
+    fullName: Microsoft.Bot.Builder.Scorables.IScorable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+    name: IResolver
+    nameWithType: IResolver
+    fullName: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: InnerScore
+    name: InnerScore
+    nameWithType: InnerScore
+    fullName: InnerScore
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Text.RegularExpressions.Regex
+  parent: System.Text.RegularExpressions
+  isExternal: true
+  name: Regex
+  nameWithType: Regex
+  fullName: System.Text.RegularExpressions.Regex
+- uid: Microsoft.Bot.Builder.Scorables.Actions.When``1(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},Microsoft.Bot.Builder.Luis.ILuisModel,Microsoft.Bot.Builder.Dialogs.LuisIntentAttribute,Microsoft.Bot.Builder.Luis.ILuisService)
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: When<InnerScore>(IScorable<IResolver,InnerScore>, ILuisModel, LuisIntentAttribute, ILuisService)
+  nameWithType: Actions.When<InnerScore>(IScorable<IResolver,InnerScore>, ILuisModel, LuisIntentAttribute, ILuisService)
+  fullName: Actions.When<InnerScore>(IScorable<IResolver,InnerScore>, ILuisModel, LuisIntentAttribute, ILuisService)
+- uid: Microsoft.Bot.Builder.Luis.ILuisModel
+  parent: Microsoft.Bot.Builder.Luis
+  isExternal: false
+  name: ILuisModel
+  nameWithType: ILuisModel
+  fullName: Microsoft.Bot.Builder.Luis.ILuisModel
+- uid: Microsoft.Bot.Builder.Dialogs.LuisIntentAttribute
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: LuisIntentAttribute
+  nameWithType: LuisIntentAttribute
+  fullName: Microsoft.Bot.Builder.Dialogs.LuisIntentAttribute
+- uid: Microsoft.Bot.Builder.Luis.ILuisService
+  parent: Microsoft.Bot.Builder.Luis
+  isExternal: false
+  name: ILuisService
+  nameWithType: ILuisService
+  fullName: Microsoft.Bot.Builder.Luis.ILuisService
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Where``4(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,``3,System.Boolean})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Where<Score,T1,T2,T3>(IScorable<IResolver,Score>, Func<T1,T2,T3,Boolean>)
+  nameWithType: Actions.Where<Score,T1,T2,T3>(IScorable<IResolver,Score>, Func<T1,T2,T3,Boolean>)
+  fullName: Actions.Where<Score,T1,T2,T3>(IScorable<IResolver,Score>, Func<T1,T2,T3,Boolean>)
+- uid: Score
+  name: Score
+  nameWithType: Score
+  fullName: Score
+- uid: Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score}
+  parent: Microsoft.Bot.Builder.Scorables
+  isExternal: false
+  name: IScorable<IResolver,Score>
+  nameWithType: IScorable<IResolver,Score>
+  fullName: Microsoft.Bot.Builder.Scorables.IScorable<Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Scorables.IScorable`2
+    name: IScorable
+    nameWithType: IScorable
+    fullName: Microsoft.Bot.Builder.Scorables.IScorable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+    name: IResolver
+    nameWithType: IResolver
+    fullName: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: Score
+    name: Score
+    nameWithType: Score
+    fullName: Score
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Func{T1,T2,T3,System.Boolean}
+  parent: System
+  isExternal: true
+  name: Func<T1,T2,T3,Boolean>
+  nameWithType: Func<T1,T2,T3,Boolean>
+  fullName: System.Func<T1,T2,T3,System.Boolean>
+  spec.csharp:
+  - uid: System.Func`4
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T1
+    name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T2
+    name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T3
+    name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Where``4(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,``3,System.Threading.Tasks.Task{System.Boolean}})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Where<Score,T1,T2,T3>(IScorable<IResolver,Score>, Func<T1,T2,T3,Task<Boolean>>)
+  nameWithType: Actions.Where<Score,T1,T2,T3>(IScorable<IResolver,Score>, Func<T1,T2,T3,Task<Boolean>>)
+  fullName: Actions.Where<Score,T1,T2,T3>(IScorable<IResolver,Score>, Func<T1,T2,T3,Task<Boolean>>)
+- uid: System.Threading.Tasks.Task`1
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Func{T1,T2,T3,System.Threading.Tasks.Task{System.Boolean}}
+  parent: System
+  isExternal: true
+  name: Func<T1,T2,T3,Task<Boolean>>
+  nameWithType: Func<T1,T2,T3,Task<Boolean>>
+  fullName: System.Func<T1,T2,T3,System.Threading.Tasks.Task<System.Boolean>>
+  spec.csharp:
+  - uid: System.Func`4
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T1
+    name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T2
+    name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T3
+    name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Where``3(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,System.Boolean})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Where<Score,T1,T2>(IScorable<IResolver,Score>, Func<T1,T2,Boolean>)
+  nameWithType: Actions.Where<Score,T1,T2>(IScorable<IResolver,Score>, Func<T1,T2,Boolean>)
+  fullName: Actions.Where<Score,T1,T2>(IScorable<IResolver,Score>, Func<T1,T2,Boolean>)
+- uid: System.Func{T1,T2,System.Boolean}
+  parent: System
+  isExternal: true
+  name: Func<T1,T2,Boolean>
+  nameWithType: Func<T1,T2,Boolean>
+  fullName: System.Func<T1,T2,System.Boolean>
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T1
+    name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T2
+    name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Where``3(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,System.Threading.Tasks.Task{System.Boolean}})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Where<Score,T1,T2>(IScorable<IResolver,Score>, Func<T1,T2,Task<Boolean>>)
+  nameWithType: Actions.Where<Score,T1,T2>(IScorable<IResolver,Score>, Func<T1,T2,Task<Boolean>>)
+  fullName: Actions.Where<Score,T1,T2>(IScorable<IResolver,Score>, Func<T1,T2,Task<Boolean>>)
+- uid: System.Func{T1,T2,System.Threading.Tasks.Task{System.Boolean}}
+  parent: System
+  isExternal: true
+  name: Func<T1,T2,Task<Boolean>>
+  nameWithType: Func<T1,T2,Task<Boolean>>
+  fullName: System.Func<T1,T2,System.Threading.Tasks.Task<System.Boolean>>
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T1
+    name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: T2
+    name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Where``2(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,System.Boolean})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Where<Score,T1>(IScorable<IResolver,Score>, Func<T1,Boolean>)
+  nameWithType: Actions.Where<Score,T1>(IScorable<IResolver,Score>, Func<T1,Boolean>)
+  fullName: Actions.Where<Score,T1>(IScorable<IResolver,Score>, Func<T1,Boolean>)
+- uid: System.Func{T1,System.Boolean}
+  parent: System
+  isExternal: true
+  name: Func<T1,Boolean>
+  nameWithType: Func<T1,Boolean>
+  fullName: System.Func<T1,System.Boolean>
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T1
+    name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Where``2(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,System.Threading.Tasks.Task{System.Boolean}})
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Where<Score,T1>(IScorable<IResolver,Score>, Func<T1,Task<Boolean>>)
+  nameWithType: Actions.Where<Score,T1>(IScorable<IResolver,Score>, Func<T1,Task<Boolean>>)
+  fullName: Actions.Where<Score,T1>(IScorable<IResolver,Score>, Func<T1,Task<Boolean>>)
+- uid: System.Func{T1,System.Threading.Tasks.Task{System.Boolean}}
+  parent: System
+  isExternal: true
+  name: Func<T1,Task<Boolean>>
+  nameWithType: Func<T1,Task<Boolean>>
+  fullName: System.Func<T1,System.Threading.Tasks.Task<System.Boolean>>
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T1
+    name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Bind``1*
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Bind<R>
+  nameWithType: Actions.Bind<R>
+  fullName: Actions.Bind<R>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Bind``2*
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Bind<T1,R>
+  nameWithType: Actions.Bind<T1,R>
+  fullName: Actions.Bind<T1,R>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Bind``3*
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Bind<T1,T2,R>
+  nameWithType: Actions.Bind<T1,T2,R>
+  fullName: Actions.Bind<T1,T2,R>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Bind``4*
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Bind<T1,T2,T3,R>
+  nameWithType: Actions.Bind<T1,T2,T3,R>
+  fullName: Actions.Bind<T1,T2,T3,R>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Bind``5*
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Bind<T1,T2,T3,T4,R>
+  nameWithType: Actions.Bind<T1,T2,T3,T4,R>
+  fullName: Actions.Bind<T1,T2,T3,T4,R>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Bind``6*
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Bind<T1,T2,T3,T4,T5,R>
+  nameWithType: Actions.Bind<T1,T2,T3,T4,T5,R>
+  fullName: Actions.Bind<T1,T2,T3,T4,T5,R>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Bind``7*
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Bind<T1,T2,T3,T4,T5,T6,R>
+  nameWithType: Actions.Bind<T1,T2,T3,T4,T5,T6,R>
+  fullName: Actions.Bind<T1,T2,T3,T4,T5,T6,R>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Bind``8*
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Bind<T1,T2,T3,T4,T5,T6,T7,R>
+  nameWithType: Actions.Bind<T1,T2,T3,T4,T5,T6,T7,R>
+  fullName: Actions.Bind<T1,T2,T3,T4,T5,T6,T7,R>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Normalize*
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Normalize
+  nameWithType: Actions.Normalize
+  fullName: Actions.Normalize
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.When``1*
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: When<InnerScore>
+  nameWithType: Actions.When<InnerScore>
+  fullName: Actions.When<InnerScore>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Where``4*
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Where<Score,T1,T2,T3>
+  nameWithType: Actions.Where<Score,T1,T2,T3>
+  fullName: Actions.Where<Score,T1,T2,T3>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Where``3*
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Where<Score,T1,T2>
+  nameWithType: Actions.Where<Score,T1,T2>
+  fullName: Actions.Where<Score,T1,T2>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml
+- uid: Microsoft.Bot.Builder.Scorables.Actions.Where``2*
+  parent: Microsoft.Bot.Builder.Scorables.Actions
+  isExternal: false
+  name: Where<Score,T1>
+  nameWithType: Actions.Where<Score,T1>
+  fullName: Actions.Where<Score,T1>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/Actions.xml

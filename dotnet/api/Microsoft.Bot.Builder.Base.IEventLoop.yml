@@ -1,0 +1,87 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Base.IEventLoop
+  commentId: T:Microsoft.Bot.Builder.Base.IEventLoop
+  id: IEventLoop
+  children:
+  - Microsoft.Bot.Builder.Base.IEventLoop.PollAsync(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  name: IEventLoop
+  nameWithType: IEventLoop
+  fullName: Microsoft.Bot.Builder.Base.IEventLoop
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Base
+  syntax:
+    content: public interface IEventLoop
+  derivedClasses:
+  - Microsoft.Bot.Builder.Dialogs.Internals.IDialogSystem
+  - Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask
+  - Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask
+  - Microsoft.Bot.Builder.Dialogs.Internals.ScoringEventLoop`1
+  implements: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Base/IEventLoop.xml
+- uid: Microsoft.Bot.Builder.Base.IEventLoop.PollAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Base.IEventLoop.PollAsync(System.Threading.CancellationToken)
+  id: PollAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Base.IEventLoop
+  langs:
+  - csharp
+  name: PollAsync(CancellationToken)
+  nameWithType: IEventLoop.PollAsync(CancellationToken)
+  fullName: IEventLoop.PollAsync(CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Base
+  summary: Poll the target for any work to be done.
+  syntax:
+    content: public System.Threading.Tasks.Task PollAsync (System.Threading.CancellationToken token);
+    parameters:
+    - id: token
+      type: System.Threading.CancellationToken
+      description: A cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the poll operation.
+  overload: Microsoft.Bot.Builder.Base.IEventLoop.PollAsync*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Base/IEventLoop.xml
+references:
+- uid: Microsoft.Bot.Builder.Base.IEventLoop.PollAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Base.IEventLoop
+  isExternal: false
+  name: PollAsync(CancellationToken)
+  nameWithType: IEventLoop.PollAsync(CancellationToken)
+  fullName: IEventLoop.PollAsync(CancellationToken)
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Builder.Base.IEventLoop.PollAsync*
+  parent: Microsoft.Bot.Builder.Base.IEventLoop
+  isExternal: false
+  name: PollAsync
+  nameWithType: IEventLoop.PollAsync
+  fullName: IEventLoop.PollAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Base/IEventLoop.xml

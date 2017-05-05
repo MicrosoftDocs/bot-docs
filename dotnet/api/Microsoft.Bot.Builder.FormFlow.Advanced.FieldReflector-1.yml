@@ -1,0 +1,699 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  commentId: T:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  id: FieldReflector`1
+  children:
+  - Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.#ctor(System.String,System.Boolean)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1._ignoreAnnotations
+  - Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1._path
+  - Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.AddField(System.Type,System.String[],System.Int32)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.GetValue(`0)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.IsUnknown(`0)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.ProcessEnumAttributes(System.Type)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.ProcessFieldAttributes(System.Object)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.ProcessTemplates(System.Type)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.SetUnknown(`0)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.SetValue(`0,System.Object)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.StepType(System.Object)
+  langs:
+  - csharp
+  name: FieldReflector<T>
+  nameWithType: FieldReflector<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector<T>
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Fill in field information through reflection.
+  remarks: The resulting information can be overridden through the fluent interface.
+  syntax:
+    content: 'public class FieldReflector<T> : Microsoft.Bot.Builder.FormFlow.Advanced.Field<T> where T : class'
+    typeParameters:
+    - id: T
+      description: The form state.
+  inheritance:
+  - System.Object
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1
+  implements: []
+  inheritedMembers:
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._allowsMultiple
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._buildPrompts
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._condition
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._define
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._dependencies
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._description
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._form
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._help
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._isNullable
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._keepZero
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._limited
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._max
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._min
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._name
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._next
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._optional
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._pattern
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._prompt
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._promptDefinition
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._promptSet
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._recognizer
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._role
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._templates
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._terms
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._type
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._validate
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._valueDescriptions
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._valueTerms
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Active(`0)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.AddDescription(System.Object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.AddDescription(System.Object,System.String,System.String,System.String)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.AddTemplate(Microsoft.Bot.Builder.FormFlow.TemplateAttribute)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.AddTerms(System.Object,Microsoft.Bot.Builder.FormFlow.TermsAttribute)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.AddTerms(System.Object,System.String[])
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.AllowDefault
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.AllowNumbers
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.AllowsMultiple
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.DefineAsync(`0)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.DefinePrompt
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.DefineRecognizer
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Dependencies
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.FieldDescription
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.FieldTerms
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Form
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Help
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.IsNullable
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Limits(System.Double@,System.Double@)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Localize
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Name
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Next(System.Object,`0)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Optional
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Pattern
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Prompt
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.RemoveValue(System.Object)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.RemoveValues
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.ReplaceTemplate(Microsoft.Bot.Builder.FormFlow.TemplateAttribute)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Role
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SaveResources
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetActive(Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0})
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetAllowsMultiple(System.Boolean)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetDefine(Microsoft.Bot.Builder.FormFlow.Advanced.DefineAsyncDelegate{`0})
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetDependencies(System.String[])
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetFieldDescription(Microsoft.Bot.Builder.FormFlow.DescribeAttribute)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetFieldDescription(System.String)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetFieldTerms(System.String[])
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetIsNullable(System.Boolean)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetLimits(System.Double,System.Double)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetLimits(System.Double,System.Double,System.Boolean)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetNext(Microsoft.Bot.Builder.FormFlow.Advanced.NextDelegate{`0})
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetOptional(System.Boolean)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetPattern(System.String)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetPrompt(Microsoft.Bot.Builder.FormFlow.PromptAttribute)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetRecognizer(Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize{`0})
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetType(System.Type)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetValidate(Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Template(Microsoft.Bot.Builder.FormFlow.TemplateUsage)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Terms(System.Object)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Type
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.ValidateAsync(`0,System.Object)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.ValueDescription(System.Object)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.ValueDescriptions
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Values
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FieldReflector`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.#ctor(System.String,System.Boolean)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.#ctor(System.String,System.Boolean)
+  id: '#ctor(System.String,System.Boolean)'
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  langs:
+  - csharp
+  name: FieldReflector<T>(String, Boolean)
+  nameWithType: FieldReflector<T>.FieldReflector<T>(String, Boolean)
+  fullName: FieldReflector<T>.FieldReflector<T>(String, Boolean)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Construct an <xref href="Microsoft.Bot.Builder.FormFlow.Advanced.IField`1"></xref> through reflection.
+  syntax:
+    content: public FieldReflector (string name, bool ignoreAnnotations = false);
+    parameters:
+    - id: name
+      type: System.String
+      description: Path to the field in your form state.
+    - id: ignoreAnnotations
+      type: System.Boolean
+      description: True to ignore annotations.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FieldReflector`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1._ignoreAnnotations
+  commentId: F:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1._ignoreAnnotations
+  id: _ignoreAnnotations
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  langs:
+  - csharp
+  name: _ignoreAnnotations
+  nameWithType: FieldReflector<T>._ignoreAnnotations
+  fullName: FieldReflector<T>._ignoreAnnotations
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: True to ignore annotations.
+  syntax:
+    content: protected bool _ignoreAnnotations;
+    return:
+      type: System.Boolean
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FieldReflector`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1._path
+  commentId: F:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1._path
+  id: _path
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  langs:
+  - csharp
+  name: _path
+  nameWithType: FieldReflector<T>._path
+  fullName: FieldReflector<T>._path
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Path to field value in state.
+  syntax:
+    content: protected System.Collections.Generic.List<object> _path;
+    return:
+      type: System.Collections.Generic.List{System.Object}
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FieldReflector`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.AddField(System.Type,System.String[],System.Int32)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.AddField(System.Type,System.String[],System.Int32)
+  id: AddField(System.Type,System.String[],System.Int32)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  langs:
+  - csharp
+  name: AddField(Type, String[], Int32)
+  nameWithType: FieldReflector<T>.AddField(Type, String[], Int32)
+  fullName: FieldReflector<T>.AddField(Type, String[], Int32)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: protected void AddField (Type type, string[] path, int ipath);
+    parameters:
+    - id: type
+      type: System.Type
+      description: To be added.
+    - id: path
+      type: System.String[]
+      description: To be added.
+    - id: ipath
+      type: System.Int32
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.AddField*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FieldReflector`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.GetValue(`0)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.GetValue(`0)
+  id: GetValue(`0)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  langs:
+  - csharp
+  name: GetValue(T)
+  nameWithType: FieldReflector<T>.GetValue(T)
+  fullName: FieldReflector<T>.GetValue(T)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public override object GetValue (T state);
+    parameters:
+    - id: state
+      type: T
+      description: To be added.
+    return:
+      type: System.Object
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.GetValue*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FieldReflector`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.IsUnknown(`0)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.IsUnknown(`0)
+  id: IsUnknown(`0)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  langs:
+  - csharp
+  name: IsUnknown(T)
+  nameWithType: FieldReflector<T>.IsUnknown(T)
+  fullName: FieldReflector<T>.IsUnknown(T)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public override bool IsUnknown (T state);
+    parameters:
+    - id: state
+      type: T
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.IsUnknown*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FieldReflector`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.ProcessEnumAttributes(System.Type)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.ProcessEnumAttributes(System.Type)
+  id: ProcessEnumAttributes(System.Type)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  langs:
+  - csharp
+  name: ProcessEnumAttributes(Type)
+  nameWithType: FieldReflector<T>.ProcessEnumAttributes(Type)
+  fullName: FieldReflector<T>.ProcessEnumAttributes(Type)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: protected void ProcessEnumAttributes (Type type);
+    parameters:
+    - id: type
+      type: System.Type
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.ProcessEnumAttributes*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FieldReflector`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.ProcessFieldAttributes(System.Object)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.ProcessFieldAttributes(System.Object)
+  id: ProcessFieldAttributes(System.Object)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  langs:
+  - csharp
+  name: ProcessFieldAttributes(Object)
+  nameWithType: FieldReflector<T>.ProcessFieldAttributes(Object)
+  fullName: FieldReflector<T>.ProcessFieldAttributes(Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: protected void ProcessFieldAttributes (object step);
+    parameters:
+    - id: step
+      type: System.Object
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.ProcessFieldAttributes*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FieldReflector`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.ProcessTemplates(System.Type)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.ProcessTemplates(System.Type)
+  id: ProcessTemplates(System.Type)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  langs:
+  - csharp
+  name: ProcessTemplates(Type)
+  nameWithType: FieldReflector<T>.ProcessTemplates(Type)
+  fullName: FieldReflector<T>.ProcessTemplates(Type)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: protected void ProcessTemplates (Type type);
+    parameters:
+    - id: type
+      type: System.Type
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.ProcessTemplates*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FieldReflector`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.SetUnknown(`0)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.SetUnknown(`0)
+  id: SetUnknown(`0)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  langs:
+  - csharp
+  name: SetUnknown(T)
+  nameWithType: FieldReflector<T>.SetUnknown(T)
+  fullName: FieldReflector<T>.SetUnknown(T)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public override void SetUnknown (T state);
+    parameters:
+    - id: state
+      type: T
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.SetUnknown*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FieldReflector`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.SetValue(`0,System.Object)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.SetValue(`0,System.Object)
+  id: SetValue(`0,System.Object)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  langs:
+  - csharp
+  name: SetValue(T, Object)
+  nameWithType: FieldReflector<T>.SetValue(T, Object)
+  fullName: FieldReflector<T>.SetValue(T, Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public override void SetValue (T state, object value);
+    parameters:
+    - id: state
+      type: T
+      description: To be added.
+    - id: value
+      type: System.Object
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.SetValue*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FieldReflector`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.StepType(System.Object)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.StepType(System.Object)
+  id: StepType(System.Object)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  langs:
+  - csharp
+  name: StepType(Object)
+  nameWithType: FieldReflector<T>.StepType(Object)
+  fullName: FieldReflector<T>.StepType(Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: protected Type StepType (object step);
+    parameters:
+    - id: step
+      type: System.Object
+      description: To be added.
+    return:
+      type: System.Type
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.StepType*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FieldReflector`1.xml
+references:
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Field`1
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced
+  isExternal: false
+  name: Field<T>
+  nameWithType: Field<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.Field<T>
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.#ctor(System.String,System.Boolean)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  isExternal: false
+  name: FieldReflector<T>(String, Boolean)
+  nameWithType: FieldReflector<T>.FieldReflector<T>(String, Boolean)
+  fullName: FieldReflector<T>.FieldReflector<T>(String, Boolean)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1._ignoreAnnotations
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  isExternal: false
+  name: _ignoreAnnotations
+  nameWithType: FieldReflector<T>._ignoreAnnotations
+  fullName: FieldReflector<T>._ignoreAnnotations
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1._path
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  isExternal: false
+  name: _path
+  nameWithType: FieldReflector<T>._path
+  fullName: FieldReflector<T>._path
+- uid: System.Collections.Generic.List`1
+  name: List
+  nameWithType: List
+  fullName: System.Collections.Generic.List
+- uid: System.Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Collections.Generic.List{System.Object}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: List<Object>
+  nameWithType: List<Object>
+  fullName: System.Collections.Generic.List<System.Object>
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.AddField(System.Type,System.String[],System.Int32)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  isExternal: false
+  name: AddField(Type, String[], Int32)
+  nameWithType: FieldReflector<T>.AddField(Type, String[], Int32)
+  fullName: FieldReflector<T>.AddField(Type, String[], Int32)
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.String[]
+  parent: System
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.GetValue(`0)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  isExternal: false
+  name: GetValue(T)
+  nameWithType: FieldReflector<T>.GetValue(T)
+  fullName: FieldReflector<T>.GetValue(T)
+- uid: T
+  isExternal: true
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.IsUnknown(`0)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  isExternal: false
+  name: IsUnknown(T)
+  nameWithType: FieldReflector<T>.IsUnknown(T)
+  fullName: FieldReflector<T>.IsUnknown(T)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.ProcessEnumAttributes(System.Type)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  isExternal: false
+  name: ProcessEnumAttributes(Type)
+  nameWithType: FieldReflector<T>.ProcessEnumAttributes(Type)
+  fullName: FieldReflector<T>.ProcessEnumAttributes(Type)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.ProcessFieldAttributes(System.Object)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  isExternal: false
+  name: ProcessFieldAttributes(Object)
+  nameWithType: FieldReflector<T>.ProcessFieldAttributes(Object)
+  fullName: FieldReflector<T>.ProcessFieldAttributes(Object)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.ProcessTemplates(System.Type)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  isExternal: false
+  name: ProcessTemplates(Type)
+  nameWithType: FieldReflector<T>.ProcessTemplates(Type)
+  fullName: FieldReflector<T>.ProcessTemplates(Type)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.SetUnknown(`0)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  isExternal: false
+  name: SetUnknown(T)
+  nameWithType: FieldReflector<T>.SetUnknown(T)
+  fullName: FieldReflector<T>.SetUnknown(T)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.SetValue(`0,System.Object)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  isExternal: false
+  name: SetValue(T, Object)
+  nameWithType: FieldReflector<T>.SetValue(T, Object)
+  fullName: FieldReflector<T>.SetValue(T, Object)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.StepType(System.Object)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  isExternal: false
+  name: StepType(Object)
+  nameWithType: FieldReflector<T>.StepType(Object)
+  fullName: FieldReflector<T>.StepType(Object)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.#ctor*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  isExternal: false
+  name: FieldReflector<T>
+  nameWithType: FieldReflector<T>.FieldReflector<T>
+  fullName: FieldReflector<T>.FieldReflector<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FieldReflector`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.AddField*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  isExternal: false
+  name: AddField
+  nameWithType: FieldReflector<T>.AddField
+  fullName: FieldReflector<T>.AddField
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FieldReflector`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.GetValue*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  isExternal: false
+  name: GetValue
+  nameWithType: FieldReflector<T>.GetValue
+  fullName: FieldReflector<T>.GetValue
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FieldReflector`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.IsUnknown*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  isExternal: false
+  name: IsUnknown
+  nameWithType: FieldReflector<T>.IsUnknown
+  fullName: FieldReflector<T>.IsUnknown
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FieldReflector`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.ProcessEnumAttributes*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  isExternal: false
+  name: ProcessEnumAttributes
+  nameWithType: FieldReflector<T>.ProcessEnumAttributes
+  fullName: FieldReflector<T>.ProcessEnumAttributes
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FieldReflector`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.ProcessFieldAttributes*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  isExternal: false
+  name: ProcessFieldAttributes
+  nameWithType: FieldReflector<T>.ProcessFieldAttributes
+  fullName: FieldReflector<T>.ProcessFieldAttributes
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FieldReflector`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.ProcessTemplates*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  isExternal: false
+  name: ProcessTemplates
+  nameWithType: FieldReflector<T>.ProcessTemplates
+  fullName: FieldReflector<T>.ProcessTemplates
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FieldReflector`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.SetUnknown*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  isExternal: false
+  name: SetUnknown
+  nameWithType: FieldReflector<T>.SetUnknown
+  fullName: FieldReflector<T>.SetUnknown
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FieldReflector`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.SetValue*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  isExternal: false
+  name: SetValue
+  nameWithType: FieldReflector<T>.SetValue
+  fullName: FieldReflector<T>.SetValue
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FieldReflector`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.StepType*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1
+  isExternal: false
+  name: StepType
+  nameWithType: FieldReflector<T>.StepType
+  fullName: FieldReflector<T>.StepType
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FieldReflector`1.xml

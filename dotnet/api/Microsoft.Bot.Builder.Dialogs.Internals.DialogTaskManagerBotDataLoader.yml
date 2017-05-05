@@ -1,0 +1,332 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader
+  commentId: T:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader
+  id: DialogTaskManagerBotDataLoader
+  children:
+  - Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IBotData,Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager)
+  - Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.ConversationData
+  - Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.FlushAsync(System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.LoadAsync(System.Threading.CancellationToken)
+  - Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.PrivateConversationData
+  - Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.UserData
+  langs:
+  - csharp
+  name: DialogTaskManagerBotDataLoader
+  nameWithType: DialogTaskManagerBotDataLoader
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: 'public sealed class DialogTaskManagerBotDataLoader : Microsoft.Bot.Builder.Dialogs.Internals.IBotData'
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/DialogTaskManagerBotDataLoader.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IBotData,Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IBotData,Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager)
+  id: '#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IBotData,Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager)'
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader
+  langs:
+  - csharp
+  name: DialogTaskManagerBotDataLoader(IBotData, IDialogTaskManager)
+  nameWithType: DialogTaskManagerBotDataLoader.DialogTaskManagerBotDataLoader(IBotData, IDialogTaskManager)
+  fullName: DialogTaskManagerBotDataLoader.DialogTaskManagerBotDataLoader(IBotData, IDialogTaskManager)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: public DialogTaskManagerBotDataLoader (Microsoft.Bot.Builder.Dialogs.Internals.IBotData inner, Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager dialogTaskManager);
+    parameters:
+    - id: inner
+      type: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+      description: To be added.
+    - id: dialogTaskManager
+      type: Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/DialogTaskManagerBotDataLoader.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.ConversationData
+  commentId: P:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.ConversationData
+  id: ConversationData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader
+  langs:
+  - csharp
+  name: ConversationData
+  nameWithType: DialogTaskManagerBotDataLoader.ConversationData
+  fullName: DialogTaskManagerBotDataLoader.ConversationData
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: public Microsoft.Bot.Builder.Dialogs.IBotDataBag ConversationData { get; }
+    return:
+      type: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.ConversationData*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/DialogTaskManagerBotDataLoader.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.FlushAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.FlushAsync(System.Threading.CancellationToken)
+  id: FlushAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader
+  langs:
+  - csharp
+  name: FlushAsync(CancellationToken)
+  nameWithType: DialogTaskManagerBotDataLoader.FlushAsync(CancellationToken)
+  fullName: DialogTaskManagerBotDataLoader.FlushAsync(CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader/<FlushAsync>d__10))]
+
+      public System.Threading.Tasks.Task FlushAsync (System.Threading.CancellationToken token);
+    parameters:
+    - id: token
+      type: System.Threading.CancellationToken
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.FlushAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/DialogTaskManagerBotDataLoader.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.LoadAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.LoadAsync(System.Threading.CancellationToken)
+  id: LoadAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader
+  langs:
+  - csharp
+  name: LoadAsync(CancellationToken)
+  nameWithType: DialogTaskManagerBotDataLoader.LoadAsync(CancellationToken)
+  fullName: DialogTaskManagerBotDataLoader.LoadAsync(CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader/<LoadAsync>d__9))]
+
+      public System.Threading.Tasks.Task LoadAsync (System.Threading.CancellationToken token);
+    parameters:
+    - id: token
+      type: System.Threading.CancellationToken
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.LoadAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/DialogTaskManagerBotDataLoader.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.PrivateConversationData
+  commentId: P:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.PrivateConversationData
+  id: PrivateConversationData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader
+  langs:
+  - csharp
+  name: PrivateConversationData
+  nameWithType: DialogTaskManagerBotDataLoader.PrivateConversationData
+  fullName: DialogTaskManagerBotDataLoader.PrivateConversationData
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: public Microsoft.Bot.Builder.Dialogs.IBotDataBag PrivateConversationData { get; }
+    return:
+      type: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.PrivateConversationData*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/DialogTaskManagerBotDataLoader.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.UserData
+  commentId: P:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.UserData
+  id: UserData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader
+  langs:
+  - csharp
+  name: UserData
+  nameWithType: DialogTaskManagerBotDataLoader.UserData
+  fullName: DialogTaskManagerBotDataLoader.UserData
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: public Microsoft.Bot.Builder.Dialogs.IBotDataBag UserData { get; }
+    return:
+      type: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.UserData*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/DialogTaskManagerBotDataLoader.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IBotData,Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader
+  isExternal: false
+  name: DialogTaskManagerBotDataLoader(IBotData, IDialogTaskManager)
+  nameWithType: DialogTaskManagerBotDataLoader.DialogTaskManagerBotDataLoader(IBotData, IDialogTaskManager)
+  fullName: DialogTaskManagerBotDataLoader.DialogTaskManagerBotDataLoader(IBotData, IDialogTaskManager)
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals
+  isExternal: false
+  name: IBotData
+  nameWithType: IBotData
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.IBotData
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager
+  parent: Microsoft.Bot.Builder.Dialogs.Internals
+  isExternal: false
+  name: IDialogTaskManager
+  nameWithType: IDialogTaskManager
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.ConversationData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader
+  isExternal: false
+  name: ConversationData
+  nameWithType: DialogTaskManagerBotDataLoader.ConversationData
+  fullName: DialogTaskManagerBotDataLoader.ConversationData
+- uid: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: IBotDataBag
+  nameWithType: IBotDataBag
+  fullName: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.FlushAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader
+  isExternal: false
+  name: FlushAsync(CancellationToken)
+  nameWithType: DialogTaskManagerBotDataLoader.FlushAsync(CancellationToken)
+  fullName: DialogTaskManagerBotDataLoader.FlushAsync(CancellationToken)
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.LoadAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader
+  isExternal: false
+  name: LoadAsync(CancellationToken)
+  nameWithType: DialogTaskManagerBotDataLoader.LoadAsync(CancellationToken)
+  fullName: DialogTaskManagerBotDataLoader.LoadAsync(CancellationToken)
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.PrivateConversationData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader
+  isExternal: false
+  name: PrivateConversationData
+  nameWithType: DialogTaskManagerBotDataLoader.PrivateConversationData
+  fullName: DialogTaskManagerBotDataLoader.PrivateConversationData
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.UserData
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader
+  isExternal: false
+  name: UserData
+  nameWithType: DialogTaskManagerBotDataLoader.UserData
+  fullName: DialogTaskManagerBotDataLoader.UserData
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.#ctor*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader
+  isExternal: false
+  name: DialogTaskManagerBotDataLoader
+  nameWithType: DialogTaskManagerBotDataLoader.DialogTaskManagerBotDataLoader
+  fullName: DialogTaskManagerBotDataLoader.DialogTaskManagerBotDataLoader
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/DialogTaskManagerBotDataLoader.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.ConversationData*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader
+  isExternal: false
+  name: ConversationData
+  nameWithType: DialogTaskManagerBotDataLoader.ConversationData
+  fullName: DialogTaskManagerBotDataLoader.ConversationData
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/DialogTaskManagerBotDataLoader.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.FlushAsync*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader
+  isExternal: false
+  name: FlushAsync
+  nameWithType: DialogTaskManagerBotDataLoader.FlushAsync
+  fullName: DialogTaskManagerBotDataLoader.FlushAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/DialogTaskManagerBotDataLoader.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.LoadAsync*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader
+  isExternal: false
+  name: LoadAsync
+  nameWithType: DialogTaskManagerBotDataLoader.LoadAsync
+  fullName: DialogTaskManagerBotDataLoader.LoadAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/DialogTaskManagerBotDataLoader.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.PrivateConversationData*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader
+  isExternal: false
+  name: PrivateConversationData
+  nameWithType: DialogTaskManagerBotDataLoader.PrivateConversationData
+  fullName: DialogTaskManagerBotDataLoader.PrivateConversationData
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/DialogTaskManagerBotDataLoader.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.UserData*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader
+  isExternal: false
+  name: UserData
+  nameWithType: DialogTaskManagerBotDataLoader.UserData
+  fullName: DialogTaskManagerBotDataLoader.UserData
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/DialogTaskManagerBotDataLoader.xml

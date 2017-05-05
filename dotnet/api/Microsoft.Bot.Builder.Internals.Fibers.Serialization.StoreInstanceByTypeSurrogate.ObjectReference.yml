@@ -1,0 +1,168 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference
+  commentId: T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference
+  id: Serialization.StoreInstanceByTypeSurrogate.ObjectReference
+  children:
+  - Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.#ctor
+  - Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.Type
+  - Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.System#Runtime#Serialization#IObjectReference#GetRealObject(System.Runtime.Serialization.StreamingContext)
+  langs:
+  - csharp
+  name: Serialization.StoreInstanceByTypeSurrogate.ObjectReference
+  nameWithType: Serialization.StoreInstanceByTypeSurrogate.ObjectReference
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: 'public sealed class Serialization.StoreInstanceByTypeSurrogate.ObjectReference : System.Runtime.Serialization.IObjectReference'
+  inheritance:
+  - System.Object
+  implements:
+  - System.Runtime.Serialization.IObjectReference
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Serialization+StoreInstanceByTypeSurrogate+ObjectReference.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.#ctor
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference
+  langs:
+  - csharp
+  name: StoreInstanceByTypeSurrogate.ObjectReference()
+  nameWithType: Serialization.StoreInstanceByTypeSurrogate.ObjectReference.StoreInstanceByTypeSurrogate.ObjectReference()
+  fullName: Serialization.StoreInstanceByTypeSurrogate.ObjectReference.StoreInstanceByTypeSurrogate.ObjectReference()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public ObjectReference ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Serialization+StoreInstanceByTypeSurrogate+ObjectReference.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.Type
+  commentId: F:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.Type
+  id: Type
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference
+  langs:
+  - csharp
+  name: Type
+  nameWithType: Serialization.StoreInstanceByTypeSurrogate.ObjectReference.Type
+  fullName: Serialization.StoreInstanceByTypeSurrogate.ObjectReference.Type
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public readonly Type Type;
+    return:
+      type: System.Type
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Serialization+StoreInstanceByTypeSurrogate+ObjectReference.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.System#Runtime#Serialization#IObjectReference#GetRealObject(System.Runtime.Serialization.StreamingContext)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.System#Runtime#Serialization#IObjectReference#GetRealObject(System.Runtime.Serialization.StreamingContext)
+  id: System#Runtime#Serialization#IObjectReference#GetRealObject(System.Runtime.Serialization.StreamingContext)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference
+  langs:
+  - csharp
+  name: IObjectReference.GetRealObject(StreamingContext)
+  nameWithType: Serialization.StoreInstanceByTypeSurrogate.ObjectReference.IObjectReference.GetRealObject(StreamingContext)
+  fullName: Serialization.StoreInstanceByTypeSurrogate.ObjectReference.IObjectReference.GetRealObject(StreamingContext)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: object IObjectReference.GetRealObject (System.Runtime.Serialization.StreamingContext context);
+    parameters:
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: To be added.
+    return:
+      type: System.Object
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.System#Runtime#Serialization#IObjectReference#GetRealObject*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Serialization+StoreInstanceByTypeSurrogate+ObjectReference.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.#ctor
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference
+  isExternal: false
+  name: StoreInstanceByTypeSurrogate.ObjectReference()
+  nameWithType: Serialization.StoreInstanceByTypeSurrogate.ObjectReference.StoreInstanceByTypeSurrogate.ObjectReference()
+  fullName: Serialization.StoreInstanceByTypeSurrogate.ObjectReference.StoreInstanceByTypeSurrogate.ObjectReference()
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.Type
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference
+  isExternal: false
+  name: Type
+  nameWithType: Serialization.StoreInstanceByTypeSurrogate.ObjectReference.Type
+  fullName: Serialization.StoreInstanceByTypeSurrogate.ObjectReference.Type
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.System#Runtime#Serialization#IObjectReference#GetRealObject(System.Runtime.Serialization.StreamingContext)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference
+  isExternal: false
+  name: IObjectReference.GetRealObject(StreamingContext)
+  nameWithType: Serialization.StoreInstanceByTypeSurrogate.ObjectReference.IObjectReference.GetRealObject(StreamingContext)
+  fullName: Serialization.StoreInstanceByTypeSurrogate.ObjectReference.IObjectReference.GetRealObject(StreamingContext)
+- uid: System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.#ctor*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference
+  isExternal: false
+  name: Serialization.StoreInstanceByTypeSurrogate.ObjectReference
+  nameWithType: Serialization.StoreInstanceByTypeSurrogate.ObjectReference.Serialization.StoreInstanceByTypeSurrogate.ObjectReference
+  fullName: Serialization.StoreInstanceByTypeSurrogate.ObjectReference.Serialization.StoreInstanceByTypeSurrogate.ObjectReference
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Serialization+StoreInstanceByTypeSurrogate+ObjectReference.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.System#Runtime#Serialization#IObjectReference#GetRealObject*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference
+  isExternal: false
+  name: System.Runtime.Serialization.IObjectReference.GetRealObject
+  nameWithType: Serialization.StoreInstanceByTypeSurrogate.ObjectReference.System.Runtime.Serialization.IObjectReference.GetRealObject
+  fullName: Serialization.StoreInstanceByTypeSurrogate.ObjectReference.System.Runtime.Serialization.IObjectReference.GetRealObject
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/Serialization+StoreInstanceByTypeSurrogate+ObjectReference.xml
+- uid: System.Runtime.Serialization.IObjectReference
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: IObjectReference
+  nameWithType: IObjectReference
+  fullName: System.Runtime.Serialization.IObjectReference

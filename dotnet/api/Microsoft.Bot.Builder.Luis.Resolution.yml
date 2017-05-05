@@ -1,0 +1,122 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Luis.Resolution
+  commentId: T:Microsoft.Bot.Builder.Luis.Resolution
+  id: Resolution
+  children:
+  - Microsoft.Bot.Builder.Luis.Resolution.#ctor
+  - Microsoft.Bot.Builder.Luis.Resolution.ToString
+  langs:
+  - csharp
+  name: Resolution
+  nameWithType: Resolution
+  fullName: Microsoft.Bot.Builder.Luis.Resolution
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Luis
+  syntax:
+    content: public abstract class Resolution
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/Resolution.xml
+- uid: Microsoft.Bot.Builder.Luis.Resolution.#ctor
+  commentId: M:Microsoft.Bot.Builder.Luis.Resolution.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Builder.Luis.Resolution
+  langs:
+  - csharp
+  name: Resolution()
+  nameWithType: Resolution.Resolution()
+  fullName: Resolution.Resolution()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  syntax:
+    content: protected Resolution ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.Luis.Resolution.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/Resolution.xml
+- uid: Microsoft.Bot.Builder.Luis.Resolution.ToString
+  commentId: M:Microsoft.Bot.Builder.Luis.Resolution.ToString
+  id: ToString
+  parent: Microsoft.Bot.Builder.Luis.Resolution
+  langs:
+  - csharp
+  name: ToString()
+  nameWithType: Resolution.ToString()
+  fullName: Resolution.ToString()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  syntax:
+    content: public override string ToString ();
+    parameters: []
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Luis.Resolution.ToString*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/Resolution.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Luis.Resolution.#ctor
+  parent: Microsoft.Bot.Builder.Luis.Resolution
+  isExternal: false
+  name: Resolution()
+  nameWithType: Resolution.Resolution()
+  fullName: Resolution.Resolution()
+- uid: Microsoft.Bot.Builder.Luis.Resolution.ToString
+  parent: Microsoft.Bot.Builder.Luis.Resolution
+  isExternal: false
+  name: ToString()
+  nameWithType: Resolution.ToString()
+  fullName: Resolution.ToString()
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Builder.Luis.Resolution.#ctor*
+  parent: Microsoft.Bot.Builder.Luis.Resolution
+  isExternal: false
+  name: Resolution
+  nameWithType: Resolution.Resolution
+  fullName: Resolution.Resolution
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/Resolution.xml
+- uid: Microsoft.Bot.Builder.Luis.Resolution.ToString*
+  parent: Microsoft.Bot.Builder.Luis.Resolution
+  isExternal: false
+  name: ToString
+  nameWithType: Resolution.ToString
+  fullName: Resolution.ToString
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/Resolution.xml

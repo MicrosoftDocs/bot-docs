@@ -1,0 +1,402 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Luis.LuisRequest
+  commentId: T:Microsoft.Bot.Builder.Luis.LuisRequest
+  id: LuisRequest
+  children:
+  - Microsoft.Bot.Builder.Luis.LuisRequest.#ctor(System.String,System.Nullable{System.Double},System.String,System.Nullable{System.Boolean},System.String,System.String)
+  - Microsoft.Bot.Builder.Luis.LuisRequest.AllowSampling
+  - Microsoft.Bot.Builder.Luis.LuisRequest.BuildUri(Microsoft.Bot.Builder.Luis.ILuisModel)
+  - Microsoft.Bot.Builder.Luis.LuisRequest.ContextId
+  - Microsoft.Bot.Builder.Luis.LuisRequest.ForceSet
+  - Microsoft.Bot.Builder.Luis.LuisRequest.Query
+  - Microsoft.Bot.Builder.Luis.LuisRequest.TimezoneOffset
+  - Microsoft.Bot.Builder.Luis.LuisRequest.Verbose
+  langs:
+  - csharp
+  name: LuisRequest
+  nameWithType: LuisRequest
+  fullName: Microsoft.Bot.Builder.Luis.LuisRequest
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Luis
+  summary: Object that contains all the possible parameters to build Luis request.
+  syntax:
+    content: public sealed class LuisRequest
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisRequest.xml
+- uid: Microsoft.Bot.Builder.Luis.LuisRequest.#ctor(System.String,System.Nullable{System.Double},System.String,System.Nullable{System.Boolean},System.String,System.String)
+  commentId: M:Microsoft.Bot.Builder.Luis.LuisRequest.#ctor(System.String,System.Nullable{System.Double},System.String,System.Nullable{System.Boolean},System.String,System.String)
+  id: '#ctor(System.String,System.Nullable{System.Double},System.String,System.Nullable{System.Boolean},System.String,System.String)'
+  parent: Microsoft.Bot.Builder.Luis.LuisRequest
+  langs:
+  - csharp
+  name: LuisRequest(String, Nullable<Double>, String, Nullable<Boolean>, String, String)
+  nameWithType: LuisRequest.LuisRequest(String, Nullable<Double>, String, Nullable<Boolean>, String, String)
+  fullName: LuisRequest.LuisRequest(String, Nullable<Double>, String, Nullable<Boolean>, String, String)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  summary: Constructs an instance of the LuisReqeuest.
+  syntax:
+    content: public LuisRequest (string query, Nullable<double> timezoneOffset = null, string contextId = null, Nullable<bool> verbose = null, string forceSet = null, string allowSampling = null);
+    parameters:
+    - id: query
+      type: System.String
+      description: The text query.
+    - id: timezoneOffset
+      type: System.Nullable{System.Double}
+      description: The time zone offset.
+    - id: contextId
+      type: System.String
+      description: The context id for Luis dialog.
+    - id: verbose
+      type: System.Nullable{System.Boolean}
+      description: Indicates if the <xref href="Microsoft.Bot.Builder.Luis.Models.LuisResult"></xref> should be verbose.
+    - id: forceSet
+      type: System.String
+      description: Force setting the parameter.
+    - id: allowSampling
+      type: System.String
+      description: Allow sampling.
+  overload: Microsoft.Bot.Builder.Luis.LuisRequest.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisRequest.xml
+- uid: Microsoft.Bot.Builder.Luis.LuisRequest.AllowSampling
+  commentId: F:Microsoft.Bot.Builder.Luis.LuisRequest.AllowSampling
+  id: AllowSampling
+  parent: Microsoft.Bot.Builder.Luis.LuisRequest
+  langs:
+  - csharp
+  name: AllowSampling
+  nameWithType: LuisRequest.AllowSampling
+  fullName: LuisRequest.AllowSampling
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  summary: Indicates if sampling is allowed.
+  syntax:
+    content: public readonly string AllowSampling;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisRequest.xml
+- uid: Microsoft.Bot.Builder.Luis.LuisRequest.BuildUri(Microsoft.Bot.Builder.Luis.ILuisModel)
+  commentId: M:Microsoft.Bot.Builder.Luis.LuisRequest.BuildUri(Microsoft.Bot.Builder.Luis.ILuisModel)
+  id: BuildUri(Microsoft.Bot.Builder.Luis.ILuisModel)
+  parent: Microsoft.Bot.Builder.Luis.LuisRequest
+  langs:
+  - csharp
+  name: BuildUri(ILuisModel)
+  nameWithType: LuisRequest.BuildUri(ILuisModel)
+  fullName: LuisRequest.BuildUri(ILuisModel)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  summary: Build the Uri for issuing the request for the specified Luis model.
+  syntax:
+    content: public Uri BuildUri (Microsoft.Bot.Builder.Luis.ILuisModel model);
+    parameters:
+    - id: model
+      type: Microsoft.Bot.Builder.Luis.ILuisModel
+      description: The Luis model.
+    return:
+      type: System.Uri
+      description: The request Uri.
+  overload: Microsoft.Bot.Builder.Luis.LuisRequest.BuildUri*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisRequest.xml
+- uid: Microsoft.Bot.Builder.Luis.LuisRequest.ContextId
+  commentId: F:Microsoft.Bot.Builder.Luis.LuisRequest.ContextId
+  id: ContextId
+  parent: Microsoft.Bot.Builder.Luis.LuisRequest
+  langs:
+  - csharp
+  name: ContextId
+  nameWithType: LuisRequest.ContextId
+  fullName: LuisRequest.ContextId
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  summary: The context id.
+  syntax:
+    content: public readonly string ContextId;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisRequest.xml
+- uid: Microsoft.Bot.Builder.Luis.LuisRequest.ForceSet
+  commentId: F:Microsoft.Bot.Builder.Luis.LuisRequest.ForceSet
+  id: ForceSet
+  parent: Microsoft.Bot.Builder.Luis.LuisRequest
+  langs:
+  - csharp
+  name: ForceSet
+  nameWithType: LuisRequest.ForceSet
+  fullName: LuisRequest.ForceSet
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  summary: Force setting the parameter.
+  syntax:
+    content: public readonly string ForceSet;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisRequest.xml
+- uid: Microsoft.Bot.Builder.Luis.LuisRequest.Query
+  commentId: F:Microsoft.Bot.Builder.Luis.LuisRequest.Query
+  id: Query
+  parent: Microsoft.Bot.Builder.Luis.LuisRequest
+  langs:
+  - csharp
+  name: Query
+  nameWithType: LuisRequest.Query
+  fullName: LuisRequest.Query
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  summary: The text query.
+  syntax:
+    content: public readonly string Query;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisRequest.xml
+- uid: Microsoft.Bot.Builder.Luis.LuisRequest.TimezoneOffset
+  commentId: F:Microsoft.Bot.Builder.Luis.LuisRequest.TimezoneOffset
+  id: TimezoneOffset
+  parent: Microsoft.Bot.Builder.Luis.LuisRequest
+  langs:
+  - csharp
+  name: TimezoneOffset
+  nameWithType: LuisRequest.TimezoneOffset
+  fullName: LuisRequest.TimezoneOffset
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  summary: The time zone offset.
+  syntax:
+    content: public readonly Nullable<double> TimezoneOffset;
+    return:
+      type: System.Nullable{System.Double}
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisRequest.xml
+- uid: Microsoft.Bot.Builder.Luis.LuisRequest.Verbose
+  commentId: F:Microsoft.Bot.Builder.Luis.LuisRequest.Verbose
+  id: Verbose
+  parent: Microsoft.Bot.Builder.Luis.LuisRequest
+  langs:
+  - csharp
+  name: Verbose
+  nameWithType: LuisRequest.Verbose
+  fullName: LuisRequest.Verbose
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  summary: The verbose flag.
+  syntax:
+    content: public readonly Nullable<bool> Verbose;
+    return:
+      type: System.Nullable{System.Boolean}
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisRequest.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Luis.LuisRequest.#ctor(System.String,System.Nullable{System.Double},System.String,System.Nullable{System.Boolean},System.String,System.String)
+  parent: Microsoft.Bot.Builder.Luis.LuisRequest
+  isExternal: false
+  name: LuisRequest(String, Nullable<Double>, String, Nullable<Boolean>, String, String)
+  nameWithType: LuisRequest.LuisRequest(String, Nullable<Double>, String, Nullable<Boolean>, String, String)
+  fullName: LuisRequest.LuisRequest(String, Nullable<Double>, String, Nullable<Boolean>, String, String)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Nullable`1
+  name: Nullable
+  nameWithType: Nullable
+  fullName: System.Nullable
+- uid: System.Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: System.Nullable{System.Double}
+  parent: System
+  isExternal: true
+  name: Nullable<Double>
+  nameWithType: Nullable<Double>
+  fullName: System.Nullable<System.Double>
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Nullable{System.Boolean}
+  parent: System
+  isExternal: true
+  name: Nullable<Boolean>
+  nameWithType: Nullable<Boolean>
+  fullName: System.Nullable<System.Boolean>
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Luis.LuisRequest.AllowSampling
+  parent: Microsoft.Bot.Builder.Luis.LuisRequest
+  isExternal: false
+  name: AllowSampling
+  nameWithType: LuisRequest.AllowSampling
+  fullName: LuisRequest.AllowSampling
+- uid: Microsoft.Bot.Builder.Luis.LuisRequest.BuildUri(Microsoft.Bot.Builder.Luis.ILuisModel)
+  parent: Microsoft.Bot.Builder.Luis.LuisRequest
+  isExternal: false
+  name: BuildUri(ILuisModel)
+  nameWithType: LuisRequest.BuildUri(ILuisModel)
+  fullName: LuisRequest.BuildUri(ILuisModel)
+- uid: System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: Microsoft.Bot.Builder.Luis.ILuisModel
+  parent: Microsoft.Bot.Builder.Luis
+  isExternal: false
+  name: ILuisModel
+  nameWithType: ILuisModel
+  fullName: Microsoft.Bot.Builder.Luis.ILuisModel
+- uid: Microsoft.Bot.Builder.Luis.LuisRequest.ContextId
+  parent: Microsoft.Bot.Builder.Luis.LuisRequest
+  isExternal: false
+  name: ContextId
+  nameWithType: LuisRequest.ContextId
+  fullName: LuisRequest.ContextId
+- uid: Microsoft.Bot.Builder.Luis.LuisRequest.ForceSet
+  parent: Microsoft.Bot.Builder.Luis.LuisRequest
+  isExternal: false
+  name: ForceSet
+  nameWithType: LuisRequest.ForceSet
+  fullName: LuisRequest.ForceSet
+- uid: Microsoft.Bot.Builder.Luis.LuisRequest.Query
+  parent: Microsoft.Bot.Builder.Luis.LuisRequest
+  isExternal: false
+  name: Query
+  nameWithType: LuisRequest.Query
+  fullName: LuisRequest.Query
+- uid: Microsoft.Bot.Builder.Luis.LuisRequest.TimezoneOffset
+  parent: Microsoft.Bot.Builder.Luis.LuisRequest
+  isExternal: false
+  name: TimezoneOffset
+  nameWithType: LuisRequest.TimezoneOffset
+  fullName: LuisRequest.TimezoneOffset
+- uid: Microsoft.Bot.Builder.Luis.LuisRequest.Verbose
+  parent: Microsoft.Bot.Builder.Luis.LuisRequest
+  isExternal: false
+  name: Verbose
+  nameWithType: LuisRequest.Verbose
+  fullName: LuisRequest.Verbose
+- uid: Microsoft.Bot.Builder.Luis.LuisRequest.#ctor*
+  parent: Microsoft.Bot.Builder.Luis.LuisRequest
+  isExternal: false
+  name: LuisRequest
+  nameWithType: LuisRequest.LuisRequest
+  fullName: LuisRequest.LuisRequest
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisRequest.xml
+- uid: Microsoft.Bot.Builder.Luis.LuisRequest.BuildUri*
+  parent: Microsoft.Bot.Builder.Luis.LuisRequest
+  isExternal: false
+  name: BuildUri
+  nameWithType: LuisRequest.BuildUri
+  fullName: LuisRequest.BuildUri
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisRequest.xml

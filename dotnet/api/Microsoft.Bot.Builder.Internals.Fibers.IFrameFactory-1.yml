@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory`1
+  commentId: T:Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory`1
+  id: IFrameFactory`1
+  children:
+  - Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory`1.Make
+  langs:
+  - csharp
+  name: IFrameFactory<C>
+  nameWithType: IFrameFactory<C>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory<C>
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public interface IFrameFactory<C>
+    typeParameters:
+    - id: C
+      description: To be added.
+  derivedClasses:
+  - Microsoft.Bot.Builder.Internals.Fibers.FrameFactory`1
+  implements: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/IFrameFactory`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory`1.Make
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory`1.Make
+  id: Make
+  parent: Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory`1
+  langs:
+  - csharp
+  name: Make()
+  nameWithType: IFrameFactory<C>.Make()
+  fullName: IFrameFactory<C>.Make()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public Microsoft.Bot.Builder.Internals.Fibers.IFrame<C> Make ();
+    parameters: []
+    return:
+      type: Microsoft.Bot.Builder.Internals.Fibers.IFrame`1
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory`1.Make*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/IFrameFactory`1.xml
+references:
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory`1.Make
+  parent: Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory`1
+  isExternal: false
+  name: Make()
+  nameWithType: IFrameFactory<C>.Make()
+  fullName: IFrameFactory<C>.Make()
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IFrame`1
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: IFrame<C>
+  nameWithType: IFrame<C>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IFrame<C>
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory`1.Make*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory`1
+  isExternal: false
+  name: Make
+  nameWithType: IFrameFactory<C>.Make
+  fullName: IFrameFactory<C>.Make
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/IFrameFactory`1.xml

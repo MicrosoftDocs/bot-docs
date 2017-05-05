@@ -1,0 +1,440 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1
+  commentId: T:Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1
+  id: Fields`1
+  children:
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.#ctor
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1._fields
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.Add(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.Field(System.String)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.GetEnumerator
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.System#Collections#IEnumerable#GetEnumerator
+  langs:
+  - csharp
+  name: Fields<T>
+  nameWithType: Fields<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.Fields<T>
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Dictionary of all fields indexed by name.
+  syntax:
+    content: 'public class Fields<T> : Microsoft.Bot.Builder.FormFlow.Advanced.IFields<T>, System.Collections.Generic.IEnumerable<Microsoft.Bot.Builder.FormFlow.Advanced.IField<T>> where T : class'
+    typeParameters:
+    - id: T
+      description: Underlying form state.
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Bot.Builder.FormFlow.Advanced.IFields{T}
+  - System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.FormFlow.Advanced.IField{T}}
+  inheritedMembers: []
+  extensionMethods:
+  - Microsoft.Bot.Builder.Dialogs.Internals.Extensions.MaxBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})
+  - Microsoft.Bot.Builder.Internals.Fibers.Extensions.SortedMerge``1(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{``0}},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{``0}})
+  - Microsoft.Bot.Builder.Scorables.Scorable.First``2(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{``0,``1}})
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Fields`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.#ctor
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1
+  langs:
+  - csharp
+  name: Fields<T>()
+  nameWithType: Fields<T>.Fields<T>()
+  fullName: Fields<T>.Fields<T>()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public Fields ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Fields`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1._fields
+  commentId: F:Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1._fields
+  id: _fields
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1
+  langs:
+  - csharp
+  name: _fields
+  nameWithType: Fields<T>._fields
+  fullName: Fields<T>._fields
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Mapping from field name to field definition.
+  syntax:
+    content: protected System.Collections.Generic.Dictionary<string,Microsoft.Bot.Builder.FormFlow.Advanced.IField<T>> _fields;
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,Microsoft.Bot.Builder.FormFlow.Advanced.IField{T}}
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Fields`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.Add(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.Add(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})
+  id: Add(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1
+  langs:
+  - csharp
+  name: Add(IField<T>)
+  nameWithType: Fields<T>.Add(IField<T>)
+  fullName: Fields<T>.Add(IField<T>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public void Add (Microsoft.Bot.Builder.FormFlow.Advanced.IField<T> field);
+    parameters:
+    - id: field
+      type: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.Add*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Fields`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.Field(System.String)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.Field(System.String)
+  id: Field(System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1
+  langs:
+  - csharp
+  name: Field(String)
+  nameWithType: Fields<T>.Field(String)
+  fullName: Fields<T>.Field(String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.Advanced.IField<T> Field (string name);
+    parameters:
+    - id: name
+      type: System.String
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.Field*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Fields`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.GetEnumerator
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.GetEnumerator
+  id: GetEnumerator
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1
+  langs:
+  - csharp
+  name: GetEnumerator()
+  nameWithType: Fields<T>.GetEnumerator()
+  fullName: Fields<T>.GetEnumerator()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public System.Collections.Generic.IEnumerator<Microsoft.Bot.Builder.FormFlow.Advanced.IField<T>> GetEnumerator ();
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerator{Microsoft.Bot.Builder.FormFlow.Advanced.IField{T}}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.GetEnumerator*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Fields`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.System#Collections#IEnumerable#GetEnumerator
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  isEii: true
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1
+  langs:
+  - csharp
+  name: IEnumerable.GetEnumerator()
+  nameWithType: Fields<T>.IEnumerable.GetEnumerator()
+  fullName: Fields<T>.IEnumerable.GetEnumerator()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: System.Collections.IEnumerator IEnumerable.GetEnumerator ();
+    parameters: []
+    return:
+      type: System.Collections.IEnumerator
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.System#Collections#IEnumerable#GetEnumerator*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Fields`1.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.#ctor
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1
+  isExternal: false
+  name: Fields<T>()
+  nameWithType: Fields<T>.Fields<T>()
+  fullName: Fields<T>.Fields<T>()
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1._fields
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1
+  isExternal: false
+  name: _fields
+  nameWithType: Fields<T>._fields
+  fullName: Fields<T>._fields
+- uid: System.Collections.Generic.Dictionary`2
+  name: Dictionary
+  nameWithType: Dictionary
+  fullName: System.Collections.Generic.Dictionary
+- uid: System.String
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1
+  name: IField<T>
+  nameWithType: IField<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.IField<T>
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Collections.Generic.Dictionary{System.String,Microsoft.Bot.Builder.FormFlow.Advanced.IField{T}}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: Dictionary<String,IField<T>>
+  nameWithType: Dictionary<String,IField<T>>
+  fullName: System.Collections.Generic.Dictionary<System.String,Microsoft.Bot.Builder.FormFlow.Advanced.IField<T>>
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1
+    name: IField
+    nameWithType: IField
+    fullName: Microsoft.Bot.Builder.FormFlow.Advanced.IField
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T
+    name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.Add(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1
+  isExternal: false
+  name: Add(IField<T>)
+  nameWithType: Fields<T>.Add(IField<T>)
+  fullName: Fields<T>.Add(IField<T>)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.Field(System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1
+  isExternal: false
+  name: Field(String)
+  nameWithType: Fields<T>.Field(String)
+  fullName: Fields<T>.Field(String)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.GetEnumerator
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1
+  isExternal: false
+  name: GetEnumerator()
+  nameWithType: Fields<T>.GetEnumerator()
+  fullName: Fields<T>.GetEnumerator()
+- uid: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.Generic.IEnumerator
+- uid: System.Collections.Generic.IEnumerator{Microsoft.Bot.Builder.FormFlow.Advanced.IField{T}}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerator<IField<T>>
+  nameWithType: IEnumerator<IField<T>>
+  fullName: System.Collections.Generic.IEnumerator<Microsoft.Bot.Builder.FormFlow.Advanced.IField<T>>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1
+    name: IField
+    nameWithType: IField
+    fullName: Microsoft.Bot.Builder.FormFlow.Advanced.IField
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T
+    name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.System#Collections#IEnumerable#GetEnumerator
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1
+  isExternal: false
+  name: IEnumerable.GetEnumerator()
+  nameWithType: Fields<T>.IEnumerable.GetEnumerator()
+  fullName: Fields<T>.IEnumerable.GetEnumerator()
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.#ctor*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1
+  isExternal: false
+  name: Fields<T>
+  nameWithType: Fields<T>.Fields<T>
+  fullName: Fields<T>.Fields<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Fields`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.Add*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1
+  isExternal: false
+  name: Add
+  nameWithType: Fields<T>.Add
+  fullName: Fields<T>.Add
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Fields`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.Field*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1
+  isExternal: false
+  name: Field
+  nameWithType: Fields<T>.Field
+  fullName: Fields<T>.Field
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Fields`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.GetEnumerator*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1
+  isExternal: false
+  name: GetEnumerator
+  nameWithType: Fields<T>.GetEnumerator
+  fullName: Fields<T>.GetEnumerator
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Fields`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1.System#Collections#IEnumerable#GetEnumerator*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Fields`1
+  isExternal: false
+  name: System.Collections.IEnumerable.GetEnumerator
+  nameWithType: Fields<T>.System.Collections.IEnumerable.GetEnumerator
+  fullName: Fields<T>.System.Collections.IEnumerable.GetEnumerator
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Fields`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.Extensions.MaxBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.Extensions
+  isExternal: false
+  name: MaxBy<T,R>(IEnumerable<T>, Func<T,R>, IComparer<R>)
+  nameWithType: Extensions.MaxBy<T,R>(IEnumerable<T>, Func<T,R>, IComparer<R>)
+  fullName: Extensions.MaxBy<T,R>(IEnumerable<T>, Func<T,R>, IComparer<R>)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.Extensions.SortedMerge``1(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{``0}},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{``0}})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.Extensions
+  isExternal: false
+  name: SortedMerge<T>(IEnumerable<Range<T>>, IEnumerable<Range<T>>)
+  nameWithType: Extensions.SortedMerge<T>(IEnumerable<Range<T>>, IEnumerable<Range<T>>)
+  fullName: Extensions.SortedMerge<T>(IEnumerable<Range<T>>, IEnumerable<Range<T>>)
+- uid: Microsoft.Bot.Builder.Scorables.Scorable.First``2(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{``0,``1}})
+  parent: Microsoft.Bot.Builder.Scorables.Scorable
+  isExternal: false
+  name: First<Item,Score>(IEnumerable<IScorable<Item,Score>>)
+  nameWithType: Scorable.First<Item,Score>(IEnumerable<IScorable<Item,Score>>)
+  fullName: Scorable.First<Item,Score>(IEnumerable<IScorable<Item,Score>>)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFields`1
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced
+  isExternal: false
+  name: IFields<T>
+  nameWithType: IFields<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.IFields<T>
+- uid: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.Generic.IEnumerable
+- uid: System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.FormFlow.Advanced.IField{T}}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<IField<T>>
+  nameWithType: IEnumerable<IField<T>>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.Bot.Builder.FormFlow.Advanced.IField<T>>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.FormFlow.Advanced.IField`1
+    name: IField
+    nameWithType: IField
+    fullName: Microsoft.Bot.Builder.FormFlow.Advanced.IField
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T
+    name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'

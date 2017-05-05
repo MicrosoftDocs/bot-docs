@@ -1,0 +1,262 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.IForm`1
+  commentId: T:Microsoft.Bot.Builder.FormFlow.IForm`1
+  id: IForm`1
+  children:
+  - Microsoft.Bot.Builder.FormFlow.IForm`1.#ctor
+  - Microsoft.Bot.Builder.FormFlow.IForm`1.Fields
+  - Microsoft.Bot.Builder.FormFlow.IForm`1.Localize(System.Collections.IDictionaryEnumerator,System.Collections.Generic.IEnumerable{System.String}@,System.Collections.Generic.IEnumerable{System.String}@)
+  - Microsoft.Bot.Builder.FormFlow.IForm`1.SaveResources(System.Resources.IResourceWriter)
+  langs:
+  - csharp
+  name: IForm<T>
+  nameWithType: IForm<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.IForm<T>
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Form definition interface.
+  syntax:
+    content: 'public abstract class IForm<T> where T : class'
+    typeParameters:
+    - id: T
+      description: Form state.
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1.Form
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IForm`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IForm`1.#ctor
+  commentId: M:Microsoft.Bot.Builder.FormFlow.IForm`1.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Builder.FormFlow.IForm`1
+  langs:
+  - csharp
+  name: IForm<T>()
+  nameWithType: IForm<T>.IForm<T>()
+  fullName: IForm<T>.IForm<T>()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  syntax:
+    content: protected IForm ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.FormFlow.IForm`1.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IForm`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IForm`1.Fields
+  commentId: P:Microsoft.Bot.Builder.FormFlow.IForm`1.Fields
+  id: Fields
+  parent: Microsoft.Bot.Builder.FormFlow.IForm`1
+  langs:
+  - csharp
+  name: Fields
+  nameWithType: IForm<T>.Fields
+  fullName: IForm<T>.Fields
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Fields that make up form.
+  syntax:
+    content: public abstract Microsoft.Bot.Builder.FormFlow.Advanced.IFields<T> Fields { get; }
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.Advanced.IFields`1
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.IForm`1.Fields*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IForm`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IForm`1.Localize(System.Collections.IDictionaryEnumerator,System.Collections.Generic.IEnumerable{System.String}@,System.Collections.Generic.IEnumerable{System.String}@)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.IForm`1.Localize(System.Collections.IDictionaryEnumerator,System.Collections.Generic.IEnumerable{System.String}@,System.Collections.Generic.IEnumerable{System.String}@)
+  id: Localize(System.Collections.IDictionaryEnumerator,System.Collections.Generic.IEnumerable{System.String}@,System.Collections.Generic.IEnumerable{System.String}@)
+  parent: Microsoft.Bot.Builder.FormFlow.IForm`1
+  langs:
+  - csharp
+  name: Localize(IDictionaryEnumerator, IEnumerable<String>, IEnumerable<String>)
+  nameWithType: IForm<T>.Localize(IDictionaryEnumerator, IEnumerable<String>, IEnumerable<String>)
+  fullName: IForm<T>.Localize(IDictionaryEnumerator, IEnumerable<String>, IEnumerable<String>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Localize all string resources from binary stream.
+  remarks: >-
+    When you localize all form string resources will be overridden if present in the stream.
+                         Otherwise the value will remain unchanged.
+  syntax:
+    content: public abstract void Localize (System.Collections.IDictionaryEnumerator reader, out System.Collections.Generic.IEnumerable<string> missing, out System.Collections.Generic.IEnumerable<string> extra);
+    parameters:
+    - id: reader
+      type: System.Collections.IDictionaryEnumerator
+      description: Where to read resources.
+    - id: missing
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: '[out] Any values in the form, but missing from the stream.'
+    - id: extra
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: '[out] Any values in the stream, but missing from the form.'
+  overload: Microsoft.Bot.Builder.FormFlow.IForm`1.Localize*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IForm`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IForm`1.SaveResources(System.Resources.IResourceWriter)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.IForm`1.SaveResources(System.Resources.IResourceWriter)
+  id: SaveResources(System.Resources.IResourceWriter)
+  parent: Microsoft.Bot.Builder.FormFlow.IForm`1
+  langs:
+  - csharp
+  name: SaveResources(IResourceWriter)
+  nameWithType: IForm<T>.SaveResources(IResourceWriter)
+  fullName: IForm<T>.SaveResources(IResourceWriter)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Save all string resources to binary stream for future localization.
+  syntax:
+    content: public abstract void SaveResources (System.Resources.IResourceWriter writer);
+    parameters:
+    - id: writer
+      type: System.Resources.IResourceWriter
+      description: Where to write resources.
+  overload: Microsoft.Bot.Builder.FormFlow.IForm`1.SaveResources*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IForm`1.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.FormFlow.IForm`1.#ctor
+  parent: Microsoft.Bot.Builder.FormFlow.IForm`1
+  isExternal: false
+  name: IForm<T>()
+  nameWithType: IForm<T>.IForm<T>()
+  fullName: IForm<T>.IForm<T>()
+- uid: Microsoft.Bot.Builder.FormFlow.IForm`1.Fields
+  parent: Microsoft.Bot.Builder.FormFlow.IForm`1
+  isExternal: false
+  name: Fields
+  nameWithType: IForm<T>.Fields
+  fullName: IForm<T>.Fields
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.IFields`1
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced
+  isExternal: false
+  name: IFields<T>
+  nameWithType: IFields<T>
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.IFields<T>
+- uid: Microsoft.Bot.Builder.FormFlow.IForm`1.Localize(System.Collections.IDictionaryEnumerator,System.Collections.Generic.IEnumerable{System.String}@,System.Collections.Generic.IEnumerable{System.String}@)
+  parent: Microsoft.Bot.Builder.FormFlow.IForm`1
+  isExternal: false
+  name: Localize(IDictionaryEnumerator, IEnumerable<String>, IEnumerable<String>)
+  nameWithType: IForm<T>.Localize(IDictionaryEnumerator, IEnumerable<String>, IEnumerable<String>)
+  fullName: IForm<T>.Localize(IDictionaryEnumerator, IEnumerable<String>, IEnumerable<String>)
+- uid: System.Collections.IDictionaryEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IDictionaryEnumerator
+  nameWithType: IDictionaryEnumerator
+  fullName: System.Collections.IDictionaryEnumerator
+- uid: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.Generic.IEnumerable
+- uid: System.String
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.IForm`1.SaveResources(System.Resources.IResourceWriter)
+  parent: Microsoft.Bot.Builder.FormFlow.IForm`1
+  isExternal: false
+  name: SaveResources(IResourceWriter)
+  nameWithType: IForm<T>.SaveResources(IResourceWriter)
+  fullName: IForm<T>.SaveResources(IResourceWriter)
+- uid: System.Resources.IResourceWriter
+  parent: System.Resources
+  isExternal: true
+  name: IResourceWriter
+  nameWithType: IResourceWriter
+  fullName: System.Resources.IResourceWriter
+- uid: Microsoft.Bot.Builder.FormFlow.IForm`1.#ctor*
+  parent: Microsoft.Bot.Builder.FormFlow.IForm`1
+  isExternal: false
+  name: IForm<T>
+  nameWithType: IForm<T>.IForm<T>
+  fullName: IForm<T>.IForm<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IForm`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IForm`1.Fields*
+  parent: Microsoft.Bot.Builder.FormFlow.IForm`1
+  isExternal: false
+  name: Fields
+  nameWithType: IForm<T>.Fields
+  fullName: IForm<T>.Fields
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IForm`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IForm`1.Localize*
+  parent: Microsoft.Bot.Builder.FormFlow.IForm`1
+  isExternal: false
+  name: Localize
+  nameWithType: IForm<T>.Localize
+  fullName: IForm<T>.Localize
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IForm`1.xml
+- uid: Microsoft.Bot.Builder.FormFlow.IForm`1.SaveResources*
+  parent: Microsoft.Bot.Builder.FormFlow.IForm`1
+  isExternal: false
+  name: SaveResources
+  nameWithType: IForm<T>.SaveResources
+  fullName: IForm<T>.SaveResources
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/IForm`1.xml

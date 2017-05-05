@@ -1,0 +1,251 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Internals.Fibers.SetField
+  commentId: T:Microsoft.Bot.Builder.Internals.Fibers.SetField
+  id: SetField
+  children:
+  - Microsoft.Bot.Builder.Internals.Fibers.SetField.CheckNull``1(System.String,``0)
+  - Microsoft.Bot.Builder.Internals.Fibers.SetField.From``1(``0@,System.String,System.Runtime.Serialization.SerializationInfo)
+  - Microsoft.Bot.Builder.Internals.Fibers.SetField.NotNull``1(``0@,System.String,``0)
+  - Microsoft.Bot.Builder.Internals.Fibers.SetField.NotNullFrom``1(``0@,System.String,System.Runtime.Serialization.SerializationInfo)
+  langs:
+  - csharp
+  name: SetField
+  nameWithType: SetField
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.SetField
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public static class SetField
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/SetField.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.SetField.CheckNull``1(System.String,``0)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.SetField.CheckNull``1(System.String,``0)
+  id: CheckNull``1(System.String,``0)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.SetField
+  langs:
+  - csharp
+  name: CheckNull<T>(String, T)
+  nameWithType: SetField.CheckNull<T>(String, T)
+  fullName: SetField.CheckNull<T>(String, T)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: 'public static void CheckNull<T> (string name, T value) where T : class;'
+    parameters:
+    - id: name
+      type: System.String
+      description: To be added.
+    - id: value
+      type: T
+      description: To be added.
+    typeParameters:
+    - id: T
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.SetField.CheckNull``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/SetField.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.SetField.From``1(``0@,System.String,System.Runtime.Serialization.SerializationInfo)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.SetField.From``1(``0@,System.String,System.Runtime.Serialization.SerializationInfo)
+  id: From``1(``0@,System.String,System.Runtime.Serialization.SerializationInfo)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.SetField
+  langs:
+  - csharp
+  name: From<T>(T, String, SerializationInfo)
+  nameWithType: SetField.From<T>(T, String, SerializationInfo)
+  fullName: SetField.From<T>(T, String, SerializationInfo)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public static void From<T> (out T field, string name, System.Runtime.Serialization.SerializationInfo info);
+    parameters:
+    - id: field
+      type: T
+      description: To be added.
+    - id: name
+      type: System.String
+      description: To be added.
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: To be added.
+    typeParameters:
+    - id: T
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.SetField.From``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/SetField.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.SetField.NotNull``1(``0@,System.String,``0)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.SetField.NotNull``1(``0@,System.String,``0)
+  id: NotNull``1(``0@,System.String,``0)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.SetField
+  langs:
+  - csharp
+  name: NotNull<T>(T, String, T)
+  nameWithType: SetField.NotNull<T>(T, String, T)
+  fullName: SetField.NotNull<T>(T, String, T)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: 'public static void NotNull<T> (out T field, string name, T value) where T : class;'
+    parameters:
+    - id: field
+      type: T
+      description: To be added.
+    - id: name
+      type: System.String
+      description: To be added.
+    - id: value
+      type: T
+      description: To be added.
+    typeParameters:
+    - id: T
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.SetField.NotNull``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/SetField.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.SetField.NotNullFrom``1(``0@,System.String,System.Runtime.Serialization.SerializationInfo)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.SetField.NotNullFrom``1(``0@,System.String,System.Runtime.Serialization.SerializationInfo)
+  id: NotNullFrom``1(``0@,System.String,System.Runtime.Serialization.SerializationInfo)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.SetField
+  langs:
+  - csharp
+  name: NotNullFrom<T>(T, String, SerializationInfo)
+  nameWithType: SetField.NotNullFrom<T>(T, String, SerializationInfo)
+  fullName: SetField.NotNullFrom<T>(T, String, SerializationInfo)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: 'public static void NotNullFrom<T> (out T field, string name, System.Runtime.Serialization.SerializationInfo info) where T : class;'
+    parameters:
+    - id: field
+      type: T
+      description: To be added.
+    - id: name
+      type: System.String
+      description: To be added.
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: To be added.
+    typeParameters:
+    - id: T
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.SetField.NotNullFrom``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/SetField.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Internals.Fibers.SetField.CheckNull``1(System.String,``0)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.SetField
+  isExternal: false
+  name: CheckNull<T>(String, T)
+  nameWithType: SetField.CheckNull<T>(String, T)
+  fullName: SetField.CheckNull<T>(String, T)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: T
+  isExternal: true
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.Bot.Builder.Internals.Fibers.SetField.From``1(``0@,System.String,System.Runtime.Serialization.SerializationInfo)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.SetField
+  isExternal: false
+  name: From<T>(T, String, SerializationInfo)
+  nameWithType: SetField.From<T>(T, String, SerializationInfo)
+  fullName: SetField.From<T>(T, String, SerializationInfo)
+- uid: System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+- uid: Microsoft.Bot.Builder.Internals.Fibers.SetField.NotNull``1(``0@,System.String,``0)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.SetField
+  isExternal: false
+  name: NotNull<T>(T, String, T)
+  nameWithType: SetField.NotNull<T>(T, String, T)
+  fullName: SetField.NotNull<T>(T, String, T)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.SetField.NotNullFrom``1(``0@,System.String,System.Runtime.Serialization.SerializationInfo)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.SetField
+  isExternal: false
+  name: NotNullFrom<T>(T, String, SerializationInfo)
+  nameWithType: SetField.NotNullFrom<T>(T, String, SerializationInfo)
+  fullName: SetField.NotNullFrom<T>(T, String, SerializationInfo)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.SetField.CheckNull``1*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.SetField
+  isExternal: false
+  name: CheckNull<T>
+  nameWithType: SetField.CheckNull<T>
+  fullName: SetField.CheckNull<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/SetField.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.SetField.From``1*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.SetField
+  isExternal: false
+  name: From<T>
+  nameWithType: SetField.From<T>
+  fullName: SetField.From<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/SetField.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.SetField.NotNull``1*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.SetField
+  isExternal: false
+  name: NotNull<T>
+  nameWithType: SetField.NotNull<T>
+  fullName: SetField.NotNull<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/SetField.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.SetField.NotNullFrom``1*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.SetField
+  isExternal: false
+  name: NotNullFrom<T>
+  nameWithType: SetField.NotNullFrom<T>
+  fullName: SetField.NotNullFrom<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/SetField.xml

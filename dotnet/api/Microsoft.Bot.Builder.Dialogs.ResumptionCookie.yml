@@ -1,0 +1,642 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  commentId: T:Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  id: ResumptionCookie
+  children:
+  - Microsoft.Bot.Builder.Dialogs.ResumptionCookie.#ctor(Microsoft.Bot.Connector.IMessageActivity)
+  - Microsoft.Bot.Builder.Dialogs.ResumptionCookie.#ctor(Microsoft.Bot.Builder.Dialogs.Address,System.String,System.Boolean,System.String)
+  - Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Address
+  - Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Equals(Microsoft.Bot.Builder.Dialogs.ResumptionCookie)
+  - Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Equals(System.Object)
+  - Microsoft.Bot.Builder.Dialogs.ResumptionCookie.GetHashCode
+  - Microsoft.Bot.Builder.Dialogs.ResumptionCookie.GetMessage
+  - Microsoft.Bot.Builder.Dialogs.ResumptionCookie.GZipDeserialize(System.String)
+  - Microsoft.Bot.Builder.Dialogs.ResumptionCookie.IsGroup
+  - Microsoft.Bot.Builder.Dialogs.ResumptionCookie.IsTrustedServiceUrl
+  - Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Locale
+  - Microsoft.Bot.Builder.Dialogs.ResumptionCookie.UserName
+  langs:
+  - csharp
+  name: ResumptionCookie
+  nameWithType: ResumptionCookie
+  fullName: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: The resumption cookie that can be used to resume a conversation with a user.
+  syntax:
+    content: >-
+      [System.Obsolete("Use ConversationReference.")]
+
+      public sealed class ResumptionCookie : IEquatable<Microsoft.Bot.Builder.Dialogs.ResumptionCookie>
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{Microsoft.Bot.Builder.Dialogs.ResumptionCookie}
+  inheritedMembers: []
+  extensionMethods:
+  - Microsoft.Bot.Builder.ConnectorEx.Extensions.ToConversationReference(Microsoft.Bot.Builder.Dialogs.ResumptionCookie)
+  - Microsoft.Bot.Builder.Dialogs.Extensions.GZipSerialize(Microsoft.Bot.Builder.Dialogs.ResumptionCookie)
+  attributes:
+  - type: System.Obsolete
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ResumptionCookie.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.#ctor(Microsoft.Bot.Connector.IMessageActivity)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.ResumptionCookie.#ctor(Microsoft.Bot.Connector.IMessageActivity)
+  id: '#ctor(Microsoft.Bot.Connector.IMessageActivity)'
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  langs:
+  - csharp
+  name: ResumptionCookie(IMessageActivity)
+  nameWithType: ResumptionCookie.ResumptionCookie(IMessageActivity)
+  fullName: ResumptionCookie.ResumptionCookie(IMessageActivity)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Creates an instance of resumption cookie form a <xref href="Microsoft.Bot.Connector.IMessageActivity"></xref>
+  syntax:
+    content: public ResumptionCookie (Microsoft.Bot.Connector.IMessageActivity msg);
+    parameters:
+    - id: msg
+      type: Microsoft.Bot.Connector.IMessageActivity
+      description: The message.
+  overload: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ResumptionCookie.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.#ctor(Microsoft.Bot.Builder.Dialogs.Address,System.String,System.Boolean,System.String)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.ResumptionCookie.#ctor(Microsoft.Bot.Builder.Dialogs.Address,System.String,System.Boolean,System.String)
+  id: '#ctor(Microsoft.Bot.Builder.Dialogs.Address,System.String,System.Boolean,System.String)'
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  langs:
+  - csharp
+  name: ResumptionCookie(Address, String, Boolean, String)
+  nameWithType: ResumptionCookie.ResumptionCookie(Address, String, Boolean, String)
+  fullName: ResumptionCookie.ResumptionCookie(Address, String, Boolean, String)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Creates an instance of the resumption cookie.
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonConstructor]
+
+      public ResumptionCookie (Microsoft.Bot.Builder.Dialogs.Address address, string userName, bool isGroup, string locale);
+    parameters:
+    - id: address
+      type: Microsoft.Bot.Builder.Dialogs.Address
+      description: The address.
+    - id: userName
+      type: System.String
+      description: The user name.
+    - id: isGroup
+      type: System.Boolean
+      description: The IsGroup flag for conversation.
+    - id: locale
+      type: System.String
+      description: The locale of the message.
+  overload: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.#ctor*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonConstructor
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ResumptionCookie.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Address
+  commentId: P:Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Address
+  id: Address
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  langs:
+  - csharp
+  name: Address
+  nameWithType: ResumptionCookie.Address
+  fullName: ResumptionCookie.Address
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: The key that minimally and completely identifies a bot's conversation with a user on a channel.
+  syntax:
+    content: public Microsoft.Bot.Builder.Dialogs.IAddress Address { get; set; }
+    return:
+      type: Microsoft.Bot.Builder.Dialogs.IAddress
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Address*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ResumptionCookie.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Equals(Microsoft.Bot.Builder.Dialogs.ResumptionCookie)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Equals(Microsoft.Bot.Builder.Dialogs.ResumptionCookie)
+  id: Equals(Microsoft.Bot.Builder.Dialogs.ResumptionCookie)
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  langs:
+  - csharp
+  name: Equals(ResumptionCookie)
+  nameWithType: ResumptionCookie.Equals(ResumptionCookie)
+  fullName: ResumptionCookie.Equals(ResumptionCookie)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: public bool Equals (Microsoft.Bot.Builder.Dialogs.ResumptionCookie other);
+    parameters:
+    - id: other
+      type: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Equals*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ResumptionCookie.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Equals(System.Object)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  langs:
+  - csharp
+  name: Equals(Object)
+  nameWithType: ResumptionCookie.Equals(Object)
+  fullName: ResumptionCookie.Equals(Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: public override bool Equals (object other);
+    parameters:
+    - id: other
+      type: System.Object
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Equals*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ResumptionCookie.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.GetHashCode
+  commentId: M:Microsoft.Bot.Builder.Dialogs.ResumptionCookie.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  langs:
+  - csharp
+  name: GetHashCode()
+  nameWithType: ResumptionCookie.GetHashCode()
+  fullName: ResumptionCookie.GetHashCode()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: public override int GetHashCode ();
+    parameters: []
+    return:
+      type: System.Int32
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.GetHashCode*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ResumptionCookie.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.GetMessage
+  commentId: M:Microsoft.Bot.Builder.Dialogs.ResumptionCookie.GetMessage
+  id: GetMessage
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  langs:
+  - csharp
+  name: GetMessage()
+  nameWithType: ResumptionCookie.GetMessage()
+  fullName: ResumptionCookie.GetMessage()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Creates a message from the resumption cookie.
+  syntax:
+    content: public Microsoft.Bot.Connector.Activity GetMessage ();
+    parameters: []
+    return:
+      type: Microsoft.Bot.Connector.Activity
+      description: The message that can be sent to bot based on the resumption cookie
+  overload: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.GetMessage*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ResumptionCookie.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.GZipDeserialize(System.String)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.ResumptionCookie.GZipDeserialize(System.String)
+  id: GZipDeserialize(System.String)
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  langs:
+  - csharp
+  name: GZipDeserialize(String)
+  nameWithType: ResumptionCookie.GZipDeserialize(String)
+  fullName: ResumptionCookie.GZipDeserialize(String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Deserializes the GZip serialized <xref href="Microsoft.Bot.Builder.Dialogs.ResumptionCookie"></xref> using <xref href="Microsoft.Bot.Builder.Dialogs.Extensions.GZipSerialize(Microsoft.Bot.Builder.Dialogs.ResumptionCookie)"></xref>.
+  syntax:
+    content: public static Microsoft.Bot.Builder.Dialogs.ResumptionCookie GZipDeserialize (string str);
+    parameters:
+    - id: str
+      type: System.String
+      description: The Base64 encoded string.
+    return:
+      type: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+      description: An instance of <xref href="Microsoft.Bot.Builder.Dialogs.ResumptionCookie"></xref>
+  overload: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.GZipDeserialize*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ResumptionCookie.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.IsGroup
+  commentId: P:Microsoft.Bot.Builder.Dialogs.ResumptionCookie.IsGroup
+  id: IsGroup
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  langs:
+  - csharp
+  name: IsGroup
+  nameWithType: ResumptionCookie.IsGroup
+  fullName: ResumptionCookie.IsGroup
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: The IsGroup flag for conversation.
+  syntax:
+    content: public bool IsGroup { get; set; }
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.IsGroup*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ResumptionCookie.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.IsTrustedServiceUrl
+  commentId: P:Microsoft.Bot.Builder.Dialogs.ResumptionCookie.IsTrustedServiceUrl
+  id: IsTrustedServiceUrl
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  langs:
+  - csharp
+  name: IsTrustedServiceUrl
+  nameWithType: ResumptionCookie.IsTrustedServiceUrl
+  fullName: ResumptionCookie.IsTrustedServiceUrl
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: True if the <xref href="Microsoft.Bot.Builder.Dialogs.IAddress.ServiceUrl"></xref> is trusted; False otherwise.
+  remarks: "Conversation.ResumeAsync adds \n            the host of the <xref href=\"Microsoft.Bot.Builder.Dialogs.IAddress.ServiceUrl\"></xref> to <xref href=\"Microsoft.Bot.Connector.MicrosoftAppCredentials.TrustedHostNames\"></xref> if this flag is True."
+  syntax:
+    content: public bool IsTrustedServiceUrl { get; }
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.IsTrustedServiceUrl*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ResumptionCookie.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Locale
+  commentId: P:Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Locale
+  id: Locale
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  langs:
+  - csharp
+  name: Locale
+  nameWithType: ResumptionCookie.Locale
+  fullName: ResumptionCookie.Locale
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: The locale of message.
+  syntax:
+    content: public string Locale { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Locale*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ResumptionCookie.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.UserName
+  commentId: P:Microsoft.Bot.Builder.Dialogs.ResumptionCookie.UserName
+  id: UserName
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  langs:
+  - csharp
+  name: UserName
+  nameWithType: ResumptionCookie.UserName
+  fullName: ResumptionCookie.UserName
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: The user name.
+  syntax:
+    content: public string UserName { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.UserName*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ResumptionCookie.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.#ctor(Microsoft.Bot.Connector.IMessageActivity)
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  isExternal: false
+  name: ResumptionCookie(IMessageActivity)
+  nameWithType: ResumptionCookie.ResumptionCookie(IMessageActivity)
+  fullName: ResumptionCookie.ResumptionCookie(IMessageActivity)
+- uid: Microsoft.Bot.Connector.IMessageActivity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IMessageActivity
+  nameWithType: IMessageActivity
+  fullName: Microsoft.Bot.Connector.IMessageActivity
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.#ctor(Microsoft.Bot.Builder.Dialogs.Address,System.String,System.Boolean,System.String)
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  isExternal: false
+  name: ResumptionCookie(Address, String, Boolean, String)
+  nameWithType: ResumptionCookie.ResumptionCookie(Address, String, Boolean, String)
+  fullName: ResumptionCookie.ResumptionCookie(Address, String, Boolean, String)
+- uid: Microsoft.Bot.Builder.Dialogs.Address
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: Address
+  nameWithType: Address
+  fullName: Microsoft.Bot.Builder.Dialogs.Address
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Address
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  isExternal: false
+  name: Address
+  nameWithType: ResumptionCookie.Address
+  fullName: ResumptionCookie.Address
+- uid: Microsoft.Bot.Builder.Dialogs.IAddress
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: IAddress
+  nameWithType: IAddress
+  fullName: Microsoft.Bot.Builder.Dialogs.IAddress
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Equals(Microsoft.Bot.Builder.Dialogs.ResumptionCookie)
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  isExternal: false
+  name: Equals(ResumptionCookie)
+  nameWithType: ResumptionCookie.Equals(ResumptionCookie)
+  fullName: ResumptionCookie.Equals(ResumptionCookie)
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: ResumptionCookie
+  nameWithType: ResumptionCookie
+  fullName: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Equals(System.Object)
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  isExternal: false
+  name: Equals(Object)
+  nameWithType: ResumptionCookie.Equals(Object)
+  fullName: ResumptionCookie.Equals(Object)
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.GetHashCode
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  isExternal: false
+  name: GetHashCode()
+  nameWithType: ResumptionCookie.GetHashCode()
+  fullName: ResumptionCookie.GetHashCode()
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.GetMessage
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  isExternal: false
+  name: GetMessage()
+  nameWithType: ResumptionCookie.GetMessage()
+  fullName: ResumptionCookie.GetMessage()
+- uid: Microsoft.Bot.Connector.Activity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: Activity
+  nameWithType: Activity
+  fullName: Microsoft.Bot.Connector.Activity
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.GZipDeserialize(System.String)
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  isExternal: false
+  name: GZipDeserialize(String)
+  nameWithType: ResumptionCookie.GZipDeserialize(String)
+  fullName: ResumptionCookie.GZipDeserialize(String)
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.IsGroup
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  isExternal: false
+  name: IsGroup
+  nameWithType: ResumptionCookie.IsGroup
+  fullName: ResumptionCookie.IsGroup
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.IsTrustedServiceUrl
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  isExternal: false
+  name: IsTrustedServiceUrl
+  nameWithType: ResumptionCookie.IsTrustedServiceUrl
+  fullName: ResumptionCookie.IsTrustedServiceUrl
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Locale
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  isExternal: false
+  name: Locale
+  nameWithType: ResumptionCookie.Locale
+  fullName: ResumptionCookie.Locale
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.UserName
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  isExternal: false
+  name: UserName
+  nameWithType: ResumptionCookie.UserName
+  fullName: ResumptionCookie.UserName
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.#ctor*
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  isExternal: false
+  name: ResumptionCookie
+  nameWithType: ResumptionCookie.ResumptionCookie
+  fullName: ResumptionCookie.ResumptionCookie
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ResumptionCookie.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Address*
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  isExternal: false
+  name: Address
+  nameWithType: ResumptionCookie.Address
+  fullName: ResumptionCookie.Address
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ResumptionCookie.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Equals*
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  isExternal: false
+  name: Equals
+  nameWithType: ResumptionCookie.Equals
+  fullName: ResumptionCookie.Equals
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ResumptionCookie.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.GetHashCode*
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  isExternal: false
+  name: GetHashCode
+  nameWithType: ResumptionCookie.GetHashCode
+  fullName: ResumptionCookie.GetHashCode
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ResumptionCookie.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.GetMessage*
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  isExternal: false
+  name: GetMessage
+  nameWithType: ResumptionCookie.GetMessage
+  fullName: ResumptionCookie.GetMessage
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ResumptionCookie.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.GZipDeserialize*
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  isExternal: false
+  name: GZipDeserialize
+  nameWithType: ResumptionCookie.GZipDeserialize
+  fullName: ResumptionCookie.GZipDeserialize
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ResumptionCookie.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.IsGroup*
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  isExternal: false
+  name: IsGroup
+  nameWithType: ResumptionCookie.IsGroup
+  fullName: ResumptionCookie.IsGroup
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ResumptionCookie.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.IsTrustedServiceUrl*
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  isExternal: false
+  name: IsTrustedServiceUrl
+  nameWithType: ResumptionCookie.IsTrustedServiceUrl
+  fullName: ResumptionCookie.IsTrustedServiceUrl
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ResumptionCookie.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Locale*
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  isExternal: false
+  name: Locale
+  nameWithType: ResumptionCookie.Locale
+  fullName: ResumptionCookie.Locale
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ResumptionCookie.xml
+- uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie.UserName*
+  parent: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  isExternal: false
+  name: UserName
+  nameWithType: ResumptionCookie.UserName
+  fullName: ResumptionCookie.UserName
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/ResumptionCookie.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.Extensions.ToConversationReference(Microsoft.Bot.Builder.Dialogs.ResumptionCookie)
+  parent: Microsoft.Bot.Builder.ConnectorEx.Extensions
+  isExternal: false
+  name: ToConversationReference(ResumptionCookie)
+  nameWithType: Extensions.ToConversationReference(ResumptionCookie)
+  fullName: Extensions.ToConversationReference(ResumptionCookie)
+- uid: Microsoft.Bot.Builder.Dialogs.Extensions.GZipSerialize(Microsoft.Bot.Builder.Dialogs.ResumptionCookie)
+  parent: Microsoft.Bot.Builder.Dialogs.Extensions
+  isExternal: false
+  name: GZipSerialize(ResumptionCookie)
+  nameWithType: Extensions.GZipSerialize(ResumptionCookie)
+  fullName: Extensions.GZipSerialize(ResumptionCookie)
+- uid: System.IEquatable`1
+  name: IEquatable
+  nameWithType: IEquatable
+  fullName: System.IEquatable
+- uid: System.IEquatable{Microsoft.Bot.Builder.Dialogs.ResumptionCookie}
+  parent: System
+  isExternal: true
+  name: IEquatable<ResumptionCookie>
+  nameWithType: IEquatable<ResumptionCookie>
+  fullName: System.IEquatable<Microsoft.Bot.Builder.Dialogs.ResumptionCookie>
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+    name: ResumptionCookie
+    nameWithType: ResumptionCookie
+    fullName: Microsoft.Bot.Builder.Dialogs.ResumptionCookie
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'

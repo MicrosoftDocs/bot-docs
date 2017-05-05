@@ -1,0 +1,347 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+  commentId: T:Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+  id: AttributeString
+  children:
+  - Microsoft.Bot.Builder.Scorables.Internals.AttributeString.#ctor
+  - Microsoft.Bot.Builder.Scorables.Internals.AttributeString.Equals(System.Object)
+  - Microsoft.Bot.Builder.Scorables.Internals.AttributeString.GetHashCode
+  - Microsoft.Bot.Builder.Scorables.Internals.AttributeString.Text
+  - Microsoft.Bot.Builder.Scorables.Internals.AttributeString.ToString
+  - Microsoft.Bot.Builder.Scorables.Internals.AttributeString.System#IEquatable{Microsoft#Bot#Builder#Scorables#Internals#AttributeString}#Equals(Microsoft.Bot.Builder.Scorables.Internals.AttributeString)
+  langs:
+  - csharp
+  name: AttributeString
+  nameWithType: AttributeString
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: 'public abstract class AttributeString : Attribute, IEquatable<Microsoft.Bot.Builder.Scorables.Internals.AttributeString>'
+  inheritance:
+  - System.Attribute
+  derivedClasses:
+  - Microsoft.Bot.Builder.Dialogs.LuisIntentAttribute
+  - Microsoft.Bot.Builder.Scorables.RegexPatternAttribute
+  implements:
+  - System.IEquatable{Microsoft.Bot.Builder.Scorables.Internals.AttributeString}
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/AttributeString.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.AttributeString.#ctor
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.AttributeString.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+  langs:
+  - csharp
+  name: AttributeString()
+  nameWithType: AttributeString.AttributeString()
+  fullName: AttributeString.AttributeString()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: protected AttributeString ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.Scorables.Internals.AttributeString.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/AttributeString.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.AttributeString.Equals(System.Object)
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.AttributeString.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+  langs:
+  - csharp
+  name: Equals(Object)
+  nameWithType: AttributeString.Equals(Object)
+  fullName: AttributeString.Equals(Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public override bool Equals (object other);
+    parameters:
+    - id: other
+      type: System.Object
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Internals.AttributeString.Equals*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/AttributeString.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.AttributeString.GetHashCode
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.AttributeString.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+  langs:
+  - csharp
+  name: GetHashCode()
+  nameWithType: AttributeString.GetHashCode()
+  fullName: AttributeString.GetHashCode()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public override int GetHashCode ();
+    parameters: []
+    return:
+      type: System.Int32
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Internals.AttributeString.GetHashCode*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/AttributeString.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.AttributeString.Text
+  commentId: P:Microsoft.Bot.Builder.Scorables.Internals.AttributeString.Text
+  id: Text
+  parent: Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+  langs:
+  - csharp
+  name: Text
+  nameWithType: AttributeString.Text
+  fullName: AttributeString.Text
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: protected abstract string Text { get; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Internals.AttributeString.Text*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/AttributeString.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.AttributeString.ToString
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.AttributeString.ToString
+  id: ToString
+  parent: Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+  langs:
+  - csharp
+  name: ToString()
+  nameWithType: AttributeString.ToString()
+  fullName: AttributeString.ToString()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public override string ToString ();
+    parameters: []
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Internals.AttributeString.ToString*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/AttributeString.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.AttributeString.System#IEquatable{Microsoft#Bot#Builder#Scorables#Internals#AttributeString}#Equals(Microsoft.Bot.Builder.Scorables.Internals.AttributeString)
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.AttributeString.System#IEquatable<Microsoft#Bot#Builder#Scorables#Internals#AttributeString>#Equals(Microsoft.Bot.Builder.Scorables.Internals.AttributeString)
+  id: System#IEquatable{Microsoft#Bot#Builder#Scorables#Internals#AttributeString}#Equals(Microsoft.Bot.Builder.Scorables.Internals.AttributeString)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+  langs:
+  - csharp
+  name: IEquatable<AttributeString>.Equals(AttributeString)
+  nameWithType: AttributeString.IEquatable<AttributeString>.Equals(AttributeString)
+  fullName: AttributeString.IEquatable<AttributeString>.Equals(AttributeString)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: bool IEquatable<AttributeString>.Equals (Microsoft.Bot.Builder.Scorables.Internals.AttributeString other);
+    parameters:
+    - id: other
+      type: Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Internals.AttributeString.System#IEquatable{Microsoft#Bot#Builder#Scorables#Internals#AttributeString}#Equals*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/AttributeString.xml
+references:
+- uid: System.Attribute
+  parent: System
+  isExternal: true
+  name: Attribute
+  nameWithType: Attribute
+  fullName: System.Attribute
+- uid: Microsoft.Bot.Builder.Scorables.Internals.AttributeString.#ctor
+  parent: Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+  isExternal: false
+  name: AttributeString()
+  nameWithType: AttributeString.AttributeString()
+  fullName: AttributeString.AttributeString()
+- uid: Microsoft.Bot.Builder.Scorables.Internals.AttributeString.Equals(System.Object)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+  isExternal: false
+  name: Equals(Object)
+  nameWithType: AttributeString.Equals(Object)
+  fullName: AttributeString.Equals(Object)
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Scorables.Internals.AttributeString.GetHashCode
+  parent: Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+  isExternal: false
+  name: GetHashCode()
+  nameWithType: AttributeString.GetHashCode()
+  fullName: AttributeString.GetHashCode()
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Bot.Builder.Scorables.Internals.AttributeString.Text
+  parent: Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+  isExternal: false
+  name: Text
+  nameWithType: AttributeString.Text
+  fullName: AttributeString.Text
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Builder.Scorables.Internals.AttributeString.ToString
+  parent: Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+  isExternal: false
+  name: ToString()
+  nameWithType: AttributeString.ToString()
+  fullName: AttributeString.ToString()
+- uid: Microsoft.Bot.Builder.Scorables.Internals.AttributeString.System#IEquatable{Microsoft#Bot#Builder#Scorables#Internals#AttributeString}#Equals(Microsoft.Bot.Builder.Scorables.Internals.AttributeString)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+  isExternal: false
+  name: IEquatable<AttributeString>.Equals(AttributeString)
+  nameWithType: AttributeString.IEquatable<AttributeString>.Equals(AttributeString)
+  fullName: AttributeString.IEquatable<AttributeString>.Equals(AttributeString)
+- uid: Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+  parent: Microsoft.Bot.Builder.Scorables.Internals
+  isExternal: false
+  name: AttributeString
+  nameWithType: AttributeString
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+- uid: Microsoft.Bot.Builder.Scorables.Internals.AttributeString.#ctor*
+  parent: Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+  isExternal: false
+  name: AttributeString
+  nameWithType: AttributeString.AttributeString
+  fullName: AttributeString.AttributeString
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/AttributeString.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.AttributeString.Equals*
+  parent: Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+  isExternal: false
+  name: Equals
+  nameWithType: AttributeString.Equals
+  fullName: AttributeString.Equals
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/AttributeString.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.AttributeString.GetHashCode*
+  parent: Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+  isExternal: false
+  name: GetHashCode
+  nameWithType: AttributeString.GetHashCode
+  fullName: AttributeString.GetHashCode
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/AttributeString.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.AttributeString.Text*
+  parent: Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+  isExternal: false
+  name: Text
+  nameWithType: AttributeString.Text
+  fullName: AttributeString.Text
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/AttributeString.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.AttributeString.ToString*
+  parent: Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+  isExternal: false
+  name: ToString
+  nameWithType: AttributeString.ToString
+  fullName: AttributeString.ToString
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/AttributeString.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.AttributeString.System#IEquatable{Microsoft#Bot#Builder#Scorables#Internals#AttributeString}#Equals*
+  parent: Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+  isExternal: false
+  name: System.IEquatable<Microsoft.Bot.Builder.Scorables.Internals.AttributeString>.Equals
+  nameWithType: AttributeString.System.IEquatable<Microsoft.Bot.Builder.Scorables.Internals.AttributeString>.Equals
+  fullName: AttributeString.System.IEquatable<Microsoft.Bot.Builder.Scorables.Internals.AttributeString>.Equals
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/AttributeString.xml
+- uid: System.IEquatable`1
+  name: IEquatable
+  nameWithType: IEquatable
+  fullName: System.IEquatable
+- uid: System.IEquatable{Microsoft.Bot.Builder.Scorables.Internals.AttributeString}
+  parent: System
+  isExternal: true
+  name: IEquatable<AttributeString>
+  nameWithType: IEquatable<AttributeString>
+  fullName: System.IEquatable<Microsoft.Bot.Builder.Scorables.Internals.AttributeString>
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+    name: AttributeString
+    nameWithType: AttributeString
+    fullName: Microsoft.Bot.Builder.Scorables.Internals.AttributeString
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'

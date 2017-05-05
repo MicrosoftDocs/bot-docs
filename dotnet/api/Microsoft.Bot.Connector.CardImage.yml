@@ -1,0 +1,269 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.CardImage
+  commentId: T:Microsoft.Bot.Connector.CardImage
+  id: CardImage
+  children:
+  - Microsoft.Bot.Connector.CardImage.#ctor
+  - Microsoft.Bot.Connector.CardImage.#ctor(System.String,System.String,Microsoft.Bot.Connector.CardAction)
+  - Microsoft.Bot.Connector.CardImage.Alt
+  - Microsoft.Bot.Connector.CardImage.Tap
+  - Microsoft.Bot.Connector.CardImage.Url
+  langs:
+  - csharp
+  name: CardImage
+  nameWithType: CardImage
+  fullName: Microsoft.Bot.Connector.CardImage
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: An image on a card
+  syntax:
+    content: public class CardImage
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/CardImage.xml
+- uid: Microsoft.Bot.Connector.CardImage.#ctor
+  commentId: M:Microsoft.Bot.Connector.CardImage.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Connector.CardImage
+  langs:
+  - csharp
+  name: CardImage()
+  nameWithType: CardImage.CardImage()
+  fullName: CardImage.CardImage()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the CardImage class.
+  syntax:
+    content: public CardImage ();
+    parameters: []
+  overload: Microsoft.Bot.Connector.CardImage.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/CardImage.xml
+- uid: Microsoft.Bot.Connector.CardImage.#ctor(System.String,System.String,Microsoft.Bot.Connector.CardAction)
+  commentId: M:Microsoft.Bot.Connector.CardImage.#ctor(System.String,System.String,Microsoft.Bot.Connector.CardAction)
+  id: '#ctor(System.String,System.String,Microsoft.Bot.Connector.CardAction)'
+  parent: Microsoft.Bot.Connector.CardImage
+  langs:
+  - csharp
+  name: CardImage(String, String, CardAction)
+  nameWithType: CardImage.CardImage(String, String, CardAction)
+  fullName: CardImage.CardImage(String, String, CardAction)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the CardImage class.
+  syntax:
+    content: public CardImage (string url = null, string alt = null, Microsoft.Bot.Connector.CardAction tap = null);
+    parameters:
+    - id: url
+      type: System.String
+      description: To be added.
+    - id: alt
+      type: System.String
+      description: To be added.
+    - id: tap
+      type: Microsoft.Bot.Connector.CardAction
+      description: To be added.
+  overload: Microsoft.Bot.Connector.CardImage.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/CardImage.xml
+- uid: Microsoft.Bot.Connector.CardImage.Alt
+  commentId: P:Microsoft.Bot.Connector.CardImage.Alt
+  id: Alt
+  parent: Microsoft.Bot.Connector.CardImage
+  langs:
+  - csharp
+  name: Alt
+  nameWithType: CardImage.Alt
+  fullName: CardImage.Alt
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Image description intended for screen readers
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="alt")]
+
+      public string Alt { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.CardImage.Alt*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/CardImage.xml
+- uid: Microsoft.Bot.Connector.CardImage.Tap
+  commentId: P:Microsoft.Bot.Connector.CardImage.Tap
+  id: Tap
+  parent: Microsoft.Bot.Connector.CardImage
+  langs:
+  - csharp
+  name: Tap
+  nameWithType: CardImage.Tap
+  fullName: CardImage.Tap
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: >-
+    Action assigned to specific Attachment.E.g.navigate to specific
+                URL or play/open media content
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="tap")]
+
+      public Microsoft.Bot.Connector.CardAction Tap { get; set; }
+    return:
+      type: Microsoft.Bot.Connector.CardAction
+      description: To be added.
+  overload: Microsoft.Bot.Connector.CardImage.Tap*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/CardImage.xml
+- uid: Microsoft.Bot.Connector.CardImage.Url
+  commentId: P:Microsoft.Bot.Connector.CardImage.Url
+  id: Url
+  parent: Microsoft.Bot.Connector.CardImage
+  langs:
+  - csharp
+  name: Url
+  nameWithType: CardImage.Url
+  fullName: CardImage.Url
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: URL Thumbnail image for major content property.
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="url")]
+
+      public string Url { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.CardImage.Url*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/CardImage.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.CardImage.#ctor
+  parent: Microsoft.Bot.Connector.CardImage
+  isExternal: false
+  name: CardImage()
+  nameWithType: CardImage.CardImage()
+  fullName: CardImage.CardImage()
+- uid: Microsoft.Bot.Connector.CardImage.#ctor(System.String,System.String,Microsoft.Bot.Connector.CardAction)
+  parent: Microsoft.Bot.Connector.CardImage
+  isExternal: false
+  name: CardImage(String, String, CardAction)
+  nameWithType: CardImage.CardImage(String, String, CardAction)
+  fullName: CardImage.CardImage(String, String, CardAction)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.CardAction
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: CardAction
+  nameWithType: CardAction
+  fullName: Microsoft.Bot.Connector.CardAction
+- uid: Microsoft.Bot.Connector.CardImage.Alt
+  parent: Microsoft.Bot.Connector.CardImage
+  isExternal: false
+  name: Alt
+  nameWithType: CardImage.Alt
+  fullName: CardImage.Alt
+- uid: Microsoft.Bot.Connector.CardImage.Tap
+  parent: Microsoft.Bot.Connector.CardImage
+  isExternal: false
+  name: Tap
+  nameWithType: CardImage.Tap
+  fullName: CardImage.Tap
+- uid: Microsoft.Bot.Connector.CardImage.Url
+  parent: Microsoft.Bot.Connector.CardImage
+  isExternal: false
+  name: Url
+  nameWithType: CardImage.Url
+  fullName: CardImage.Url
+- uid: Microsoft.Bot.Connector.CardImage.#ctor*
+  parent: Microsoft.Bot.Connector.CardImage
+  isExternal: false
+  name: CardImage
+  nameWithType: CardImage.CardImage
+  fullName: CardImage.CardImage
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/CardImage.xml
+- uid: Microsoft.Bot.Connector.CardImage.Alt*
+  parent: Microsoft.Bot.Connector.CardImage
+  isExternal: false
+  name: Alt
+  nameWithType: CardImage.Alt
+  fullName: CardImage.Alt
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/CardImage.xml
+- uid: Microsoft.Bot.Connector.CardImage.Tap*
+  parent: Microsoft.Bot.Connector.CardImage
+  isExternal: false
+  name: Tap
+  nameWithType: CardImage.Tap
+  fullName: CardImage.Tap
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/CardImage.xml
+- uid: Microsoft.Bot.Connector.CardImage.Url*
+  parent: Microsoft.Bot.Connector.CardImage
+  isExternal: false
+  name: Url
+  nameWithType: CardImage.Url
+  fullName: CardImage.Url
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/CardImage.xml

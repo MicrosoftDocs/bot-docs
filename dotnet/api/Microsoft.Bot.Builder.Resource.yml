@@ -1,0 +1,31 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Resource
+  id: Microsoft.Bot.Builder.Resource
+  children:
+  - Microsoft.Bot.Builder.Resource.Extensions
+  - Microsoft.Bot.Builder.Resource.Resources
+  langs:
+  - csharp
+  name: Microsoft.Bot.Builder.Resource
+  nameWithType: Microsoft.Bot.Builder.Resource
+  fullName: Microsoft.Bot.Builder.Resource
+  type: Namespace
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/ns-Microsoft.Bot.Builder.Resource.xml
+references:
+- uid: Microsoft.Bot.Builder.Resource.Extensions
+  parent: Microsoft.Bot.Builder.Resource
+  isExternal: false
+  name: Extensions
+  nameWithType: Extensions
+  fullName: Microsoft.Bot.Builder.Resource.Extensions
+- uid: Microsoft.Bot.Builder.Resource.Resources
+  parent: Microsoft.Bot.Builder.Resource
+  isExternal: false
+  name: Resources
+  nameWithType: Resources
+  fullName: Microsoft.Bot.Builder.Resource.Resources

@@ -1,0 +1,152 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1
+  commentId: T:Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1
+  id: PostStruct`1
+  children:
+  - Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1.#ctor(Microsoft.Bot.Builder.Internals.Fibers.IPost{System.Object})
+  - Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1.Microsoft#Bot#Builder#Internals#Fibers#IPost{T}#Post(`0)
+  langs:
+  - csharp
+  name: PostStruct<T>
+  nameWithType: PostStruct<T>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.PostStruct<T>
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: 'public sealed class PostStruct<T> : Microsoft.Bot.Builder.Internals.Fibers.IPost<T>'
+    typeParameters:
+    - id: T
+      description: To be added.
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Bot.Builder.Internals.Fibers.IPost{T}
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/PostStruct`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1.#ctor(Microsoft.Bot.Builder.Internals.Fibers.IPost{System.Object})
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1.#ctor(Microsoft.Bot.Builder.Internals.Fibers.IPost{System.Object})
+  id: '#ctor(Microsoft.Bot.Builder.Internals.Fibers.IPost{System.Object})'
+  parent: Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1
+  langs:
+  - csharp
+  name: PostStruct<T>(IPost<Object>)
+  nameWithType: PostStruct<T>.PostStruct<T>(IPost<Object>)
+  fullName: PostStruct<T>.PostStruct<T>(IPost<Object>)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public PostStruct (Microsoft.Bot.Builder.Internals.Fibers.IPost<object> postBoxed);
+    parameters:
+    - id: postBoxed
+      type: Microsoft.Bot.Builder.Internals.Fibers.IPost{System.Object}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/PostStruct`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1.Microsoft#Bot#Builder#Internals#Fibers#IPost{T}#Post(`0)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1.Microsoft#Bot#Builder#Internals#Fibers#IPost<T>#Post(`0)
+  id: Microsoft#Bot#Builder#Internals#Fibers#IPost{T}#Post(`0)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1
+  langs:
+  - csharp
+  name: IPost<T>.Post(T)
+  nameWithType: PostStruct<T>.IPost<T>.Post(T)
+  fullName: PostStruct<T>.IPost<T>.Post(T)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: void IPost<T>.Post (T item);
+    parameters:
+    - id: item
+      type: T
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1.Microsoft#Bot#Builder#Internals#Fibers#IPost{T}#Post*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/PostStruct`1.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1.#ctor(Microsoft.Bot.Builder.Internals.Fibers.IPost{System.Object})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1
+  isExternal: false
+  name: PostStruct<T>(IPost<Object>)
+  nameWithType: PostStruct<T>.PostStruct<T>(IPost<Object>)
+  fullName: PostStruct<T>.PostStruct<T>(IPost<Object>)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IPost`1
+  name: IPost<T>
+  nameWithType: IPost<T>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IPost<T>
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IPost{System.Object}
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: IPost<Object>
+  nameWithType: IPost<Object>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IPost<System.Object>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.IPost`1
+    name: IPost
+    nameWithType: IPost
+    fullName: Microsoft.Bot.Builder.Internals.Fibers.IPost
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1.Microsoft#Bot#Builder#Internals#Fibers#IPost{T}#Post(`0)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1
+  isExternal: false
+  name: IPost<T>.Post(T)
+  nameWithType: PostStruct<T>.IPost<T>.Post(T)
+  fullName: PostStruct<T>.IPost<T>.Post(T)
+- uid: T
+  isExternal: true
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1.#ctor*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1
+  isExternal: false
+  name: PostStruct<T>
+  nameWithType: PostStruct<T>.PostStruct<T>
+  fullName: PostStruct<T>.PostStruct<T>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/PostStruct`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1.Microsoft#Bot#Builder#Internals#Fibers#IPost{T}#Post*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1
+  isExternal: false
+  name: Microsoft.Bot.Builder.Internals.Fibers.IPost<T>.Post
+  nameWithType: PostStruct<T>.Microsoft.Bot.Builder.Internals.Fibers.IPost<T>.Post
+  fullName: PostStruct<T>.Microsoft.Bot.Builder.Internals.Fibers.IPost<T>.Post
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/PostStruct`1.xml

@@ -1,0 +1,136 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.DetectChannelCapability
+  commentId: T:Microsoft.Bot.Builder.Dialogs.DetectChannelCapability
+  id: DetectChannelCapability
+  children:
+  - Microsoft.Bot.Builder.Dialogs.DetectChannelCapability.#ctor(Microsoft.Bot.Builder.Dialogs.IAddress)
+  - Microsoft.Bot.Builder.Dialogs.DetectChannelCapability.Detect
+  langs:
+  - csharp
+  name: DetectChannelCapability
+  nameWithType: DetectChannelCapability
+  fullName: Microsoft.Bot.Builder.Dialogs.DetectChannelCapability
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: 'public sealed class DetectChannelCapability : Microsoft.Bot.Builder.Dialogs.IDetectChannelCapability'
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Bot.Builder.Dialogs.IDetectChannelCapability
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/DetectChannelCapability.xml
+- uid: Microsoft.Bot.Builder.Dialogs.DetectChannelCapability.#ctor(Microsoft.Bot.Builder.Dialogs.IAddress)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.DetectChannelCapability.#ctor(Microsoft.Bot.Builder.Dialogs.IAddress)
+  id: '#ctor(Microsoft.Bot.Builder.Dialogs.IAddress)'
+  parent: Microsoft.Bot.Builder.Dialogs.DetectChannelCapability
+  langs:
+  - csharp
+  name: DetectChannelCapability(IAddress)
+  nameWithType: DetectChannelCapability.DetectChannelCapability(IAddress)
+  fullName: DetectChannelCapability.DetectChannelCapability(IAddress)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: public DetectChannelCapability (Microsoft.Bot.Builder.Dialogs.IAddress address);
+    parameters:
+    - id: address
+      type: Microsoft.Bot.Builder.Dialogs.IAddress
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.DetectChannelCapability.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/DetectChannelCapability.xml
+- uid: Microsoft.Bot.Builder.Dialogs.DetectChannelCapability.Detect
+  commentId: M:Microsoft.Bot.Builder.Dialogs.DetectChannelCapability.Detect
+  id: Detect
+  parent: Microsoft.Bot.Builder.Dialogs.DetectChannelCapability
+  langs:
+  - csharp
+  name: Detect()
+  nameWithType: DetectChannelCapability.Detect()
+  fullName: DetectChannelCapability.Detect()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  syntax:
+    content: public Microsoft.Bot.Builder.Dialogs.IChannelCapability Detect ();
+    parameters: []
+    return:
+      type: Microsoft.Bot.Builder.Dialogs.IChannelCapability
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.DetectChannelCapability.Detect*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/DetectChannelCapability.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Dialogs.DetectChannelCapability.#ctor(Microsoft.Bot.Builder.Dialogs.IAddress)
+  parent: Microsoft.Bot.Builder.Dialogs.DetectChannelCapability
+  isExternal: false
+  name: DetectChannelCapability(IAddress)
+  nameWithType: DetectChannelCapability.DetectChannelCapability(IAddress)
+  fullName: DetectChannelCapability.DetectChannelCapability(IAddress)
+- uid: Microsoft.Bot.Builder.Dialogs.IAddress
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: IAddress
+  nameWithType: IAddress
+  fullName: Microsoft.Bot.Builder.Dialogs.IAddress
+- uid: Microsoft.Bot.Builder.Dialogs.DetectChannelCapability.Detect
+  parent: Microsoft.Bot.Builder.Dialogs.DetectChannelCapability
+  isExternal: false
+  name: Detect()
+  nameWithType: DetectChannelCapability.Detect()
+  fullName: DetectChannelCapability.Detect()
+- uid: Microsoft.Bot.Builder.Dialogs.IChannelCapability
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: IChannelCapability
+  nameWithType: IChannelCapability
+  fullName: Microsoft.Bot.Builder.Dialogs.IChannelCapability
+- uid: Microsoft.Bot.Builder.Dialogs.DetectChannelCapability.#ctor*
+  parent: Microsoft.Bot.Builder.Dialogs.DetectChannelCapability
+  isExternal: false
+  name: DetectChannelCapability
+  nameWithType: DetectChannelCapability.DetectChannelCapability
+  fullName: DetectChannelCapability.DetectChannelCapability
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/DetectChannelCapability.xml
+- uid: Microsoft.Bot.Builder.Dialogs.DetectChannelCapability.Detect*
+  parent: Microsoft.Bot.Builder.Dialogs.DetectChannelCapability
+  isExternal: false
+  name: Detect
+  nameWithType: DetectChannelCapability.Detect
+  fullName: DetectChannelCapability.Detect
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/DetectChannelCapability.xml
+- uid: Microsoft.Bot.Builder.Dialogs.IDetectChannelCapability
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: IDetectChannelCapability
+  nameWithType: IDetectChannelCapability
+  fullName: Microsoft.Bot.Builder.Dialogs.IDetectChannelCapability

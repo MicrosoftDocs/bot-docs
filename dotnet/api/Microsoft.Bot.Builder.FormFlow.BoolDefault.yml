@@ -1,0 +1,135 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.BoolDefault
+  commentId: T:Microsoft.Bot.Builder.FormFlow.BoolDefault
+  id: BoolDefault
+  children:
+  - Microsoft.Bot.Builder.FormFlow.BoolDefault.Default
+  - Microsoft.Bot.Builder.FormFlow.BoolDefault.False
+  - Microsoft.Bot.Builder.FormFlow.BoolDefault.True
+  langs:
+  - csharp
+  name: BoolDefault
+  nameWithType: BoolDefault
+  fullName: Microsoft.Bot.Builder.FormFlow.BoolDefault
+  type: Enum
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Three state boolean value.
+  remarks: This is necessary because C# attributes do not support nullable properties.
+  syntax:
+    content: public enum BoolDefault
+  inheritance:
+  - System.Enum
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/BoolDefault.xml
+- uid: Microsoft.Bot.Builder.FormFlow.BoolDefault.Default
+  commentId: F:Microsoft.Bot.Builder.FormFlow.BoolDefault.Default
+  id: Default
+  parent: Microsoft.Bot.Builder.FormFlow.BoolDefault
+  langs:
+  - csharp
+  name: Default
+  nameWithType: BoolDefault.Default
+  fullName: BoolDefault.Default
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Use the default from the <xref href="Microsoft.Bot.Builder.FormFlow.FormConfiguration.DefaultPrompt"></xref>.
+  syntax:
+    content: Default
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.BoolDefault
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/BoolDefault.xml
+- uid: Microsoft.Bot.Builder.FormFlow.BoolDefault.False
+  commentId: F:Microsoft.Bot.Builder.FormFlow.BoolDefault.False
+  id: "False"
+  parent: Microsoft.Bot.Builder.FormFlow.BoolDefault
+  langs:
+  - csharp
+  name: "False"
+  nameWithType: BoolDefault.False
+  fullName: BoolDefault.False
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Boolean false.
+  syntax:
+    content: "False"
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.BoolDefault
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/BoolDefault.xml
+- uid: Microsoft.Bot.Builder.FormFlow.BoolDefault.True
+  commentId: F:Microsoft.Bot.Builder.FormFlow.BoolDefault.True
+  id: "True"
+  parent: Microsoft.Bot.Builder.FormFlow.BoolDefault
+  langs:
+  - csharp
+  name: "True"
+  nameWithType: BoolDefault.True
+  fullName: BoolDefault.True
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Boolean true.
+  syntax:
+    content: "True"
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.BoolDefault
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/BoolDefault.xml
+references:
+- uid: System.Enum
+  parent: System
+  isExternal: true
+  name: Enum
+  nameWithType: Enum
+  fullName: System.Enum
+- uid: Microsoft.Bot.Builder.FormFlow.BoolDefault.Default
+  parent: Microsoft.Bot.Builder.FormFlow.BoolDefault
+  isExternal: false
+  name: Default
+  nameWithType: BoolDefault.Default
+  fullName: BoolDefault.Default
+- uid: Microsoft.Bot.Builder.FormFlow.BoolDefault
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: BoolDefault
+  nameWithType: BoolDefault
+  fullName: Microsoft.Bot.Builder.FormFlow.BoolDefault
+- uid: Microsoft.Bot.Builder.FormFlow.BoolDefault.False
+  parent: Microsoft.Bot.Builder.FormFlow.BoolDefault
+  isExternal: false
+  name: "False"
+  nameWithType: BoolDefault.False
+  fullName: BoolDefault.False
+- uid: Microsoft.Bot.Builder.FormFlow.BoolDefault.True
+  parent: Microsoft.Bot.Builder.FormFlow.BoolDefault
+  isExternal: false
+  name: "True"
+  nameWithType: BoolDefault.True
+  fullName: BoolDefault.True

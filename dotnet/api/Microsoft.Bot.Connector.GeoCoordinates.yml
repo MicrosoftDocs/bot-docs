@@ -1,0 +1,396 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.GeoCoordinates
+  commentId: T:Microsoft.Bot.Connector.GeoCoordinates
+  id: GeoCoordinates
+  children:
+  - Microsoft.Bot.Connector.GeoCoordinates.#ctor
+  - Microsoft.Bot.Connector.GeoCoordinates.#ctor(System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},System.String,System.String)
+  - Microsoft.Bot.Connector.GeoCoordinates.Elevation
+  - Microsoft.Bot.Connector.GeoCoordinates.Latitude
+  - Microsoft.Bot.Connector.GeoCoordinates.Longitude
+  - Microsoft.Bot.Connector.GeoCoordinates.Name
+  - Microsoft.Bot.Connector.GeoCoordinates.Type
+  langs:
+  - csharp
+  name: GeoCoordinates
+  nameWithType: GeoCoordinates
+  fullName: Microsoft.Bot.Connector.GeoCoordinates
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: 'GeoCoordinates (entity type: "https://schema.org/GeoCoordinates")'
+  syntax:
+    content: public class GeoCoordinates
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/GeoCoordinates.xml
+- uid: Microsoft.Bot.Connector.GeoCoordinates.#ctor
+  commentId: M:Microsoft.Bot.Connector.GeoCoordinates.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Connector.GeoCoordinates
+  langs:
+  - csharp
+  name: GeoCoordinates()
+  nameWithType: GeoCoordinates.GeoCoordinates()
+  fullName: GeoCoordinates.GeoCoordinates()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the GeoCoordinates class.
+  syntax:
+    content: public GeoCoordinates ();
+    parameters: []
+  overload: Microsoft.Bot.Connector.GeoCoordinates.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/GeoCoordinates.xml
+- uid: Microsoft.Bot.Connector.GeoCoordinates.#ctor(System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},System.String,System.String)
+  commentId: M:Microsoft.Bot.Connector.GeoCoordinates.#ctor(System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},System.String,System.String)
+  id: '#ctor(System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},System.String,System.String)'
+  parent: Microsoft.Bot.Connector.GeoCoordinates
+  langs:
+  - csharp
+  name: GeoCoordinates(Nullable<Double>, Nullable<Double>, Nullable<Double>, String, String)
+  nameWithType: GeoCoordinates.GeoCoordinates(Nullable<Double>, Nullable<Double>, Nullable<Double>, String, String)
+  fullName: GeoCoordinates.GeoCoordinates(Nullable<Double>, Nullable<Double>, Nullable<Double>, String, String)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the GeoCoordinates class.
+  syntax:
+    content: public GeoCoordinates (Nullable<double> elevation = null, Nullable<double> latitude = null, Nullable<double> longitude = null, string type = null, string name = null);
+    parameters:
+    - id: elevation
+      type: System.Nullable{System.Double}
+      description: To be added.
+    - id: latitude
+      type: System.Nullable{System.Double}
+      description: To be added.
+    - id: longitude
+      type: System.Nullable{System.Double}
+      description: To be added.
+    - id: type
+      type: System.String
+      description: To be added.
+    - id: name
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.GeoCoordinates.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/GeoCoordinates.xml
+- uid: Microsoft.Bot.Connector.GeoCoordinates.Elevation
+  commentId: P:Microsoft.Bot.Connector.GeoCoordinates.Elevation
+  id: Elevation
+  parent: Microsoft.Bot.Connector.GeoCoordinates
+  langs:
+  - csharp
+  name: Elevation
+  nameWithType: GeoCoordinates.Elevation
+  fullName: GeoCoordinates.Elevation
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: >-
+    Elevation of the location [WGS
+                84](https://en.wikipedia.org/wiki/World_Geodetic_System)
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="elevation")]
+
+      public Nullable<double> Elevation { get; set; }
+    return:
+      type: System.Nullable{System.Double}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.GeoCoordinates.Elevation*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/GeoCoordinates.xml
+- uid: Microsoft.Bot.Connector.GeoCoordinates.Latitude
+  commentId: P:Microsoft.Bot.Connector.GeoCoordinates.Latitude
+  id: Latitude
+  parent: Microsoft.Bot.Connector.GeoCoordinates
+  langs:
+  - csharp
+  name: Latitude
+  nameWithType: GeoCoordinates.Latitude
+  fullName: GeoCoordinates.Latitude
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: >-
+    Latitude of the location [WGS
+                84](https://en.wikipedia.org/wiki/World_Geodetic_System)
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="latitude")]
+
+      public Nullable<double> Latitude { get; set; }
+    return:
+      type: System.Nullable{System.Double}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.GeoCoordinates.Latitude*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/GeoCoordinates.xml
+- uid: Microsoft.Bot.Connector.GeoCoordinates.Longitude
+  commentId: P:Microsoft.Bot.Connector.GeoCoordinates.Longitude
+  id: Longitude
+  parent: Microsoft.Bot.Connector.GeoCoordinates
+  langs:
+  - csharp
+  name: Longitude
+  nameWithType: GeoCoordinates.Longitude
+  fullName: GeoCoordinates.Longitude
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: >-
+    Longitude of the location [WGS
+                84](https://en.wikipedia.org/wiki/World_Geodetic_System)
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="longitude")]
+
+      public Nullable<double> Longitude { get; set; }
+    return:
+      type: System.Nullable{System.Double}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.GeoCoordinates.Longitude*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/GeoCoordinates.xml
+- uid: Microsoft.Bot.Connector.GeoCoordinates.Name
+  commentId: P:Microsoft.Bot.Connector.GeoCoordinates.Name
+  id: Name
+  parent: Microsoft.Bot.Connector.GeoCoordinates
+  langs:
+  - csharp
+  name: Name
+  nameWithType: GeoCoordinates.Name
+  fullName: GeoCoordinates.Name
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: The name of the thing
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="name")]
+
+      public string Name { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.GeoCoordinates.Name*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/GeoCoordinates.xml
+- uid: Microsoft.Bot.Connector.GeoCoordinates.Type
+  commentId: P:Microsoft.Bot.Connector.GeoCoordinates.Type
+  id: Type
+  parent: Microsoft.Bot.Connector.GeoCoordinates
+  langs:
+  - csharp
+  name: Type
+  nameWithType: GeoCoordinates.Type
+  fullName: GeoCoordinates.Type
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: The type of the thing
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="type")]
+
+      public string Type { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.GeoCoordinates.Type*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/GeoCoordinates.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.GeoCoordinates.#ctor
+  parent: Microsoft.Bot.Connector.GeoCoordinates
+  isExternal: false
+  name: GeoCoordinates()
+  nameWithType: GeoCoordinates.GeoCoordinates()
+  fullName: GeoCoordinates.GeoCoordinates()
+- uid: Microsoft.Bot.Connector.GeoCoordinates.#ctor(System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},System.String,System.String)
+  parent: Microsoft.Bot.Connector.GeoCoordinates
+  isExternal: false
+  name: GeoCoordinates(Nullable<Double>, Nullable<Double>, Nullable<Double>, String, String)
+  nameWithType: GeoCoordinates.GeoCoordinates(Nullable<Double>, Nullable<Double>, Nullable<Double>, String, String)
+  fullName: GeoCoordinates.GeoCoordinates(Nullable<Double>, Nullable<Double>, Nullable<Double>, String, String)
+- uid: System.Nullable`1
+  name: Nullable
+  nameWithType: Nullable
+  fullName: System.Nullable
+- uid: System.Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: System.Nullable{System.Double}
+  parent: System
+  isExternal: true
+  name: Nullable<Double>
+  nameWithType: Nullable<Double>
+  fullName: System.Nullable<System.Double>
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.GeoCoordinates.Elevation
+  parent: Microsoft.Bot.Connector.GeoCoordinates
+  isExternal: false
+  name: Elevation
+  nameWithType: GeoCoordinates.Elevation
+  fullName: GeoCoordinates.Elevation
+- uid: Microsoft.Bot.Connector.GeoCoordinates.Latitude
+  parent: Microsoft.Bot.Connector.GeoCoordinates
+  isExternal: false
+  name: Latitude
+  nameWithType: GeoCoordinates.Latitude
+  fullName: GeoCoordinates.Latitude
+- uid: Microsoft.Bot.Connector.GeoCoordinates.Longitude
+  parent: Microsoft.Bot.Connector.GeoCoordinates
+  isExternal: false
+  name: Longitude
+  nameWithType: GeoCoordinates.Longitude
+  fullName: GeoCoordinates.Longitude
+- uid: Microsoft.Bot.Connector.GeoCoordinates.Name
+  parent: Microsoft.Bot.Connector.GeoCoordinates
+  isExternal: false
+  name: Name
+  nameWithType: GeoCoordinates.Name
+  fullName: GeoCoordinates.Name
+- uid: Microsoft.Bot.Connector.GeoCoordinates.Type
+  parent: Microsoft.Bot.Connector.GeoCoordinates
+  isExternal: false
+  name: Type
+  nameWithType: GeoCoordinates.Type
+  fullName: GeoCoordinates.Type
+- uid: Microsoft.Bot.Connector.GeoCoordinates.#ctor*
+  parent: Microsoft.Bot.Connector.GeoCoordinates
+  isExternal: false
+  name: GeoCoordinates
+  nameWithType: GeoCoordinates.GeoCoordinates
+  fullName: GeoCoordinates.GeoCoordinates
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/GeoCoordinates.xml
+- uid: Microsoft.Bot.Connector.GeoCoordinates.Elevation*
+  parent: Microsoft.Bot.Connector.GeoCoordinates
+  isExternal: false
+  name: Elevation
+  nameWithType: GeoCoordinates.Elevation
+  fullName: GeoCoordinates.Elevation
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/GeoCoordinates.xml
+- uid: Microsoft.Bot.Connector.GeoCoordinates.Latitude*
+  parent: Microsoft.Bot.Connector.GeoCoordinates
+  isExternal: false
+  name: Latitude
+  nameWithType: GeoCoordinates.Latitude
+  fullName: GeoCoordinates.Latitude
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/GeoCoordinates.xml
+- uid: Microsoft.Bot.Connector.GeoCoordinates.Longitude*
+  parent: Microsoft.Bot.Connector.GeoCoordinates
+  isExternal: false
+  name: Longitude
+  nameWithType: GeoCoordinates.Longitude
+  fullName: GeoCoordinates.Longitude
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/GeoCoordinates.xml
+- uid: Microsoft.Bot.Connector.GeoCoordinates.Name*
+  parent: Microsoft.Bot.Connector.GeoCoordinates
+  isExternal: false
+  name: Name
+  nameWithType: GeoCoordinates.Name
+  fullName: GeoCoordinates.Name
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/GeoCoordinates.xml
+- uid: Microsoft.Bot.Connector.GeoCoordinates.Type*
+  parent: Microsoft.Bot.Connector.GeoCoordinates
+  isExternal: false
+  name: Type
+  nameWithType: GeoCoordinates.Type
+  fullName: GeoCoordinates.Type
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/GeoCoordinates.xml

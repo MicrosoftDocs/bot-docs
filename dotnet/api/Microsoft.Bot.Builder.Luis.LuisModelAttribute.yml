@@ -1,0 +1,505 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  commentId: T:Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  id: LuisModelAttribute
+  children:
+  - Microsoft.Bot.Builder.Luis.LuisModelAttribute.#ctor(System.String,System.String,Microsoft.Bot.Builder.Luis.LuisApiVersion)
+  - Microsoft.Bot.Builder.Luis.LuisModelAttribute.ApiVersion
+  - Microsoft.Bot.Builder.Luis.LuisModelAttribute.Equals(Microsoft.Bot.Builder.Luis.ILuisModel)
+  - Microsoft.Bot.Builder.Luis.LuisModelAttribute.Equals(System.Object)
+  - Microsoft.Bot.Builder.Luis.LuisModelAttribute.GetHashCode
+  - Microsoft.Bot.Builder.Luis.LuisModelAttribute.LuisEndpoints
+  - Microsoft.Bot.Builder.Luis.LuisModelAttribute.ModelID
+  - Microsoft.Bot.Builder.Luis.LuisModelAttribute.SubscriptionKey
+  - Microsoft.Bot.Builder.Luis.LuisModelAttribute.UriBase
+  langs:
+  - csharp
+  name: LuisModelAttribute
+  nameWithType: LuisModelAttribute
+  fullName: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Luis
+  summary: The LUIS model information.
+  syntax:
+    content: >-
+      [System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Method | System.AttributeTargets.Interface, AllowMultiple=true)]
+
+      public class LuisModelAttribute : Attribute, IEquatable<Microsoft.Bot.Builder.Luis.ILuisModel>, Microsoft.Bot.Builder.Luis.ILuisModel
+  inheritance:
+  - System.Attribute
+  implements:
+  - Microsoft.Bot.Builder.Luis.ILuisModel
+  - System.IEquatable{Microsoft.Bot.Builder.Luis.ILuisModel}
+  inheritedMembers: []
+  attributes:
+  - type: System.AttributeUsage
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisModelAttribute.xml
+- uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute.#ctor(System.String,System.String,Microsoft.Bot.Builder.Luis.LuisApiVersion)
+  commentId: M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.#ctor(System.String,System.String,Microsoft.Bot.Builder.Luis.LuisApiVersion)
+  id: '#ctor(System.String,System.String,Microsoft.Bot.Builder.Luis.LuisApiVersion)'
+  parent: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  langs:
+  - csharp
+  name: LuisModelAttribute(String, String, LuisApiVersion)
+  nameWithType: LuisModelAttribute.LuisModelAttribute(String, String, LuisApiVersion)
+  fullName: LuisModelAttribute.LuisModelAttribute(String, String, LuisApiVersion)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  summary: Construct the LUIS model information.
+  syntax:
+    content: public LuisModelAttribute (string modelID, string subscriptionKey, Microsoft.Bot.Builder.Luis.LuisApiVersion apiVersion = Microsoft.Bot.Builder.Luis.LuisApiVersion.V2);
+    parameters:
+    - id: modelID
+      type: System.String
+      description: The LUIS model ID.
+    - id: subscriptionKey
+      type: System.String
+      description: The LUIS subscription key.
+    - id: apiVersion
+      type: Microsoft.Bot.Builder.Luis.LuisApiVersion
+      description: The LUIS API version.
+  overload: Microsoft.Bot.Builder.Luis.LuisModelAttribute.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisModelAttribute.xml
+- uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute.ApiVersion
+  commentId: P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.ApiVersion
+  id: ApiVersion
+  parent: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  langs:
+  - csharp
+  name: ApiVersion
+  nameWithType: LuisModelAttribute.ApiVersion
+  fullName: LuisModelAttribute.ApiVersion
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  syntax:
+    content: public Microsoft.Bot.Builder.Luis.LuisApiVersion ApiVersion { get; }
+    return:
+      type: Microsoft.Bot.Builder.Luis.LuisApiVersion
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Luis.LuisModelAttribute.ApiVersion*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisModelAttribute.xml
+- uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute.Equals(Microsoft.Bot.Builder.Luis.ILuisModel)
+  commentId: M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Equals(Microsoft.Bot.Builder.Luis.ILuisModel)
+  id: Equals(Microsoft.Bot.Builder.Luis.ILuisModel)
+  parent: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  langs:
+  - csharp
+  name: Equals(ILuisModel)
+  nameWithType: LuisModelAttribute.Equals(ILuisModel)
+  fullName: LuisModelAttribute.Equals(ILuisModel)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  syntax:
+    content: public bool Equals (Microsoft.Bot.Builder.Luis.ILuisModel other);
+    parameters:
+    - id: other
+      type: Microsoft.Bot.Builder.Luis.ILuisModel
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Luis.LuisModelAttribute.Equals*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisModelAttribute.xml
+- uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute.Equals(System.Object)
+  commentId: M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  langs:
+  - csharp
+  name: Equals(Object)
+  nameWithType: LuisModelAttribute.Equals(Object)
+  fullName: LuisModelAttribute.Equals(Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  syntax:
+    content: public override bool Equals (object other);
+    parameters:
+    - id: other
+      type: System.Object
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Luis.LuisModelAttribute.Equals*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisModelAttribute.xml
+- uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute.GetHashCode
+  commentId: M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  langs:
+  - csharp
+  name: GetHashCode()
+  nameWithType: LuisModelAttribute.GetHashCode()
+  fullName: LuisModelAttribute.GetHashCode()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  syntax:
+    content: public override int GetHashCode ();
+    parameters: []
+    return:
+      type: System.Int32
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Luis.LuisModelAttribute.GetHashCode*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisModelAttribute.xml
+- uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute.LuisEndpoints
+  commentId: F:Microsoft.Bot.Builder.Luis.LuisModelAttribute.LuisEndpoints
+  id: LuisEndpoints
+  parent: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  langs:
+  - csharp
+  name: LuisEndpoints
+  nameWithType: LuisModelAttribute.LuisEndpoints
+  fullName: LuisModelAttribute.LuisEndpoints
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  syntax:
+    content: public static readonly System.Collections.Generic.IReadOnlyDictionary<Microsoft.Bot.Builder.Luis.LuisApiVersion,Uri> LuisEndpoints;
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{Microsoft.Bot.Builder.Luis.LuisApiVersion,System.Uri}
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisModelAttribute.xml
+- uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute.ModelID
+  commentId: P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.ModelID
+  id: ModelID
+  parent: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  langs:
+  - csharp
+  name: ModelID
+  nameWithType: LuisModelAttribute.ModelID
+  fullName: LuisModelAttribute.ModelID
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  syntax:
+    content: public string ModelID { get; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Luis.LuisModelAttribute.ModelID*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisModelAttribute.xml
+- uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute.SubscriptionKey
+  commentId: P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.SubscriptionKey
+  id: SubscriptionKey
+  parent: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  langs:
+  - csharp
+  name: SubscriptionKey
+  nameWithType: LuisModelAttribute.SubscriptionKey
+  fullName: LuisModelAttribute.SubscriptionKey
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  syntax:
+    content: public string SubscriptionKey { get; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Luis.LuisModelAttribute.SubscriptionKey*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisModelAttribute.xml
+- uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute.UriBase
+  commentId: P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.UriBase
+  id: UriBase
+  parent: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  langs:
+  - csharp
+  name: UriBase
+  nameWithType: LuisModelAttribute.UriBase
+  fullName: LuisModelAttribute.UriBase
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis
+  syntax:
+    content: public Uri UriBase { get; }
+    return:
+      type: System.Uri
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Luis.LuisModelAttribute.UriBase*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisModelAttribute.xml
+references:
+- uid: System.Attribute
+  parent: System
+  isExternal: true
+  name: Attribute
+  nameWithType: Attribute
+  fullName: System.Attribute
+- uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute.#ctor(System.String,System.String,Microsoft.Bot.Builder.Luis.LuisApiVersion)
+  parent: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  isExternal: false
+  name: LuisModelAttribute(String, String, LuisApiVersion)
+  nameWithType: LuisModelAttribute.LuisModelAttribute(String, String, LuisApiVersion)
+  fullName: LuisModelAttribute.LuisModelAttribute(String, String, LuisApiVersion)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Builder.Luis.LuisApiVersion
+  parent: Microsoft.Bot.Builder.Luis
+  isExternal: false
+  name: LuisApiVersion
+  nameWithType: LuisApiVersion
+  fullName: Microsoft.Bot.Builder.Luis.LuisApiVersion
+- uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute.ApiVersion
+  parent: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  isExternal: false
+  name: ApiVersion
+  nameWithType: LuisModelAttribute.ApiVersion
+  fullName: LuisModelAttribute.ApiVersion
+- uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute.Equals(Microsoft.Bot.Builder.Luis.ILuisModel)
+  parent: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  isExternal: false
+  name: Equals(ILuisModel)
+  nameWithType: LuisModelAttribute.Equals(ILuisModel)
+  fullName: LuisModelAttribute.Equals(ILuisModel)
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Bot.Builder.Luis.ILuisModel
+  parent: Microsoft.Bot.Builder.Luis
+  isExternal: false
+  name: ILuisModel
+  nameWithType: ILuisModel
+  fullName: Microsoft.Bot.Builder.Luis.ILuisModel
+- uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute.Equals(System.Object)
+  parent: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  isExternal: false
+  name: Equals(Object)
+  nameWithType: LuisModelAttribute.Equals(Object)
+  fullName: LuisModelAttribute.Equals(Object)
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute.GetHashCode
+  parent: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  isExternal: false
+  name: GetHashCode()
+  nameWithType: LuisModelAttribute.GetHashCode()
+  fullName: LuisModelAttribute.GetHashCode()
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute.LuisEndpoints
+  parent: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  isExternal: false
+  name: LuisEndpoints
+  nameWithType: LuisModelAttribute.LuisEndpoints
+  fullName: LuisModelAttribute.LuisEndpoints
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  name: IReadOnlyDictionary
+  nameWithType: IReadOnlyDictionary
+  fullName: System.Collections.Generic.IReadOnlyDictionary
+- uid: System.Uri
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: System.Collections.Generic.IReadOnlyDictionary{Microsoft.Bot.Builder.Luis.LuisApiVersion,System.Uri}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IReadOnlyDictionary<LuisApiVersion,Uri>
+  nameWithType: IReadOnlyDictionary<LuisApiVersion,Uri>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<Microsoft.Bot.Builder.Luis.LuisApiVersion,System.Uri>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    nameWithType: IReadOnlyDictionary
+    fullName: System.Collections.Generic.IReadOnlyDictionary
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Luis.LuisApiVersion
+    name: LuisApiVersion
+    nameWithType: LuisApiVersion
+    fullName: Microsoft.Bot.Builder.Luis.LuisApiVersion
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.Uri
+    name: Uri
+    nameWithType: Uri
+    fullName: System.Uri
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute.ModelID
+  parent: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  isExternal: false
+  name: ModelID
+  nameWithType: LuisModelAttribute.ModelID
+  fullName: LuisModelAttribute.ModelID
+- uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute.SubscriptionKey
+  parent: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  isExternal: false
+  name: SubscriptionKey
+  nameWithType: LuisModelAttribute.SubscriptionKey
+  fullName: LuisModelAttribute.SubscriptionKey
+- uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute.UriBase
+  parent: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  isExternal: false
+  name: UriBase
+  nameWithType: LuisModelAttribute.UriBase
+  fullName: LuisModelAttribute.UriBase
+- uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute.#ctor*
+  parent: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  isExternal: false
+  name: LuisModelAttribute
+  nameWithType: LuisModelAttribute.LuisModelAttribute
+  fullName: LuisModelAttribute.LuisModelAttribute
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisModelAttribute.xml
+- uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute.ApiVersion*
+  parent: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  isExternal: false
+  name: ApiVersion
+  nameWithType: LuisModelAttribute.ApiVersion
+  fullName: LuisModelAttribute.ApiVersion
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisModelAttribute.xml
+- uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute.Equals*
+  parent: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  isExternal: false
+  name: Equals
+  nameWithType: LuisModelAttribute.Equals
+  fullName: LuisModelAttribute.Equals
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisModelAttribute.xml
+- uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute.GetHashCode*
+  parent: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  isExternal: false
+  name: GetHashCode
+  nameWithType: LuisModelAttribute.GetHashCode
+  fullName: LuisModelAttribute.GetHashCode
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisModelAttribute.xml
+- uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute.ModelID*
+  parent: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  isExternal: false
+  name: ModelID
+  nameWithType: LuisModelAttribute.ModelID
+  fullName: LuisModelAttribute.ModelID
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisModelAttribute.xml
+- uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute.SubscriptionKey*
+  parent: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  isExternal: false
+  name: SubscriptionKey
+  nameWithType: LuisModelAttribute.SubscriptionKey
+  fullName: LuisModelAttribute.SubscriptionKey
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisModelAttribute.xml
+- uid: Microsoft.Bot.Builder.Luis.LuisModelAttribute.UriBase*
+  parent: Microsoft.Bot.Builder.Luis.LuisModelAttribute
+  isExternal: false
+  name: UriBase
+  nameWithType: LuisModelAttribute.UriBase
+  fullName: LuisModelAttribute.UriBase
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis/LuisModelAttribute.xml
+- uid: System.IEquatable`1
+  name: IEquatable
+  nameWithType: IEquatable
+  fullName: System.IEquatable
+- uid: System.IEquatable{Microsoft.Bot.Builder.Luis.ILuisModel}
+  parent: System
+  isExternal: true
+  name: IEquatable<ILuisModel>
+  nameWithType: IEquatable<ILuisModel>
+  fullName: System.IEquatable<Microsoft.Bot.Builder.Luis.ILuisModel>
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Luis.ILuisModel
+    name: ILuisModel
+    nameWithType: ILuisModel
+    fullName: Microsoft.Bot.Builder.Luis.ILuisModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'

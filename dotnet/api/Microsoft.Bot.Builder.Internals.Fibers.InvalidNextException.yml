@@ -1,0 +1,84 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidNextException
+  commentId: T:Microsoft.Bot.Builder.Internals.Fibers.InvalidNextException
+  id: InvalidNextException
+  children:
+  - Microsoft.Bot.Builder.Internals.Fibers.InvalidNextException.#ctor(Microsoft.Bot.Builder.Internals.Fibers.IWait)
+  langs:
+  - csharp
+  name: InvalidNextException
+  nameWithType: InvalidNextException
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.InvalidNextException
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: 'public sealed class InvalidNextException : Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException'
+  inheritance:
+  - System.InvalidOperationException
+  - Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException
+  implements: []
+  inheritedMembers:
+  - Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException.Wait
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/InvalidNextException.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidNextException.#ctor(Microsoft.Bot.Builder.Internals.Fibers.IWait)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.InvalidNextException.#ctor(Microsoft.Bot.Builder.Internals.Fibers.IWait)
+  id: '#ctor(Microsoft.Bot.Builder.Internals.Fibers.IWait)'
+  parent: Microsoft.Bot.Builder.Internals.Fibers.InvalidNextException
+  langs:
+  - csharp
+  name: InvalidNextException(IWait)
+  nameWithType: InvalidNextException.InvalidNextException(IWait)
+  fullName: InvalidNextException.InvalidNextException(IWait)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public InvalidNextException (Microsoft.Bot.Builder.Internals.Fibers.IWait wait);
+    parameters:
+    - id: wait
+      type: Microsoft.Bot.Builder.Internals.Fibers.IWait
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.InvalidNextException.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/InvalidNextException.xml
+references:
+- uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: InvalidWaitException
+  nameWithType: InvalidWaitException
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException
+- uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidNextException.#ctor(Microsoft.Bot.Builder.Internals.Fibers.IWait)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.InvalidNextException
+  isExternal: false
+  name: InvalidNextException(IWait)
+  nameWithType: InvalidNextException.InvalidNextException(IWait)
+  fullName: InvalidNextException.InvalidNextException(IWait)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IWait
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: IWait
+  nameWithType: IWait
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IWait
+- uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidNextException.#ctor*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.InvalidNextException
+  isExternal: false
+  name: InvalidNextException
+  nameWithType: InvalidNextException.InvalidNextException
+  fullName: InvalidNextException.InvalidNextException
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/InvalidNextException.xml

@@ -1,0 +1,103 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.ContactRelationUpdateActionTypes
+  commentId: T:Microsoft.Bot.Connector.ContactRelationUpdateActionTypes
+  id: ContactRelationUpdateActionTypes
+  children:
+  - Microsoft.Bot.Connector.ContactRelationUpdateActionTypes.Add
+  - Microsoft.Bot.Connector.ContactRelationUpdateActionTypes.Remove
+  langs:
+  - csharp
+  name: ContactRelationUpdateActionTypes
+  nameWithType: ContactRelationUpdateActionTypes
+  fullName: Microsoft.Bot.Connector.ContactRelationUpdateActionTypes
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public static class ContactRelationUpdateActionTypes
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ContactRelationUpdateActionTypes.xml
+- uid: Microsoft.Bot.Connector.ContactRelationUpdateActionTypes.Add
+  commentId: F:Microsoft.Bot.Connector.ContactRelationUpdateActionTypes.Add
+  id: Add
+  parent: Microsoft.Bot.Connector.ContactRelationUpdateActionTypes
+  langs:
+  - csharp
+  name: Add
+  nameWithType: ContactRelationUpdateActionTypes.Add
+  fullName: ContactRelationUpdateActionTypes.Add
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Bot added to user contacts
+  syntax:
+    content: public const string Add;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ContactRelationUpdateActionTypes.xml
+- uid: Microsoft.Bot.Connector.ContactRelationUpdateActionTypes.Remove
+  commentId: F:Microsoft.Bot.Connector.ContactRelationUpdateActionTypes.Remove
+  id: Remove
+  parent: Microsoft.Bot.Connector.ContactRelationUpdateActionTypes
+  langs:
+  - csharp
+  name: Remove
+  nameWithType: ContactRelationUpdateActionTypes.Remove
+  fullName: ContactRelationUpdateActionTypes.Remove
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Bot removed from user contacts
+  syntax:
+    content: public const string Remove;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ContactRelationUpdateActionTypes.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.ContactRelationUpdateActionTypes.Add
+  parent: Microsoft.Bot.Connector.ContactRelationUpdateActionTypes
+  isExternal: false
+  name: Add
+  nameWithType: ContactRelationUpdateActionTypes.Add
+  fullName: ContactRelationUpdateActionTypes.Add
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.ContactRelationUpdateActionTypes.Remove
+  parent: Microsoft.Bot.Connector.ContactRelationUpdateActionTypes
+  isExternal: false
+  name: Remove
+  nameWithType: ContactRelationUpdateActionTypes.Remove
+  fullName: ContactRelationUpdateActionTypes.Remove

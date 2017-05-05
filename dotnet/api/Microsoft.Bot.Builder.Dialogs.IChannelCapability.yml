@@ -1,0 +1,75 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.IChannelCapability
+  commentId: T:Microsoft.Bot.Builder.Dialogs.IChannelCapability
+  id: IChannelCapability
+  children:
+  - Microsoft.Bot.Builder.Dialogs.IChannelCapability.SupportButtons
+  langs:
+  - csharp
+  name: IChannelCapability
+  nameWithType: IChannelCapability
+  fullName: Microsoft.Bot.Builder.Dialogs.IChannelCapability
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Capability for a specific channel
+  syntax:
+    content: public interface IChannelCapability
+  derivedClasses:
+  - Microsoft.Bot.Builder.Dialogs.ChannelCapability
+  implements: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/IChannelCapability.xml
+- uid: Microsoft.Bot.Builder.Dialogs.IChannelCapability.SupportButtons
+  commentId: P:Microsoft.Bot.Builder.Dialogs.IChannelCapability.SupportButtons
+  id: SupportButtons
+  parent: Microsoft.Bot.Builder.Dialogs.IChannelCapability
+  langs:
+  - csharp
+  name: SupportButtons
+  nameWithType: IChannelCapability.SupportButtons
+  fullName: IChannelCapability.SupportButtons
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: True if the channel support buttons, false otherwise.
+  syntax:
+    content: public bool SupportButtons { get; }
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.IChannelCapability.SupportButtons*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/IChannelCapability.xml
+references:
+- uid: Microsoft.Bot.Builder.Dialogs.IChannelCapability.SupportButtons
+  parent: Microsoft.Bot.Builder.Dialogs.IChannelCapability
+  isExternal: false
+  name: SupportButtons
+  nameWithType: IChannelCapability.SupportButtons
+  fullName: IChannelCapability.SupportButtons
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Bot.Builder.Dialogs.IChannelCapability.SupportButtons*
+  parent: Microsoft.Bot.Builder.Dialogs.IChannelCapability
+  isExternal: false
+  name: SupportButtons
+  nameWithType: IChannelCapability.SupportButtons
+  fullName: IChannelCapability.SupportButtons
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/IChannelCapability.xml

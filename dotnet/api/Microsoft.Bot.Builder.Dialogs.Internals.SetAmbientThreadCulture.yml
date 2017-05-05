@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture
+  commentId: T:Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture
+  id: SetAmbientThreadCulture
+  children:
+  - Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot,Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder)
+  - Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture.Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  name: SetAmbientThreadCulture
+  nameWithType: SetAmbientThreadCulture
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: This IPostToBot service sets the ambient thread culture based on the <xref href="Microsoft.Bot.Connector.IMessageActivity.Locale"></xref>.
+  syntax:
+    content: 'public sealed class SetAmbientThreadCulture : Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot'
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/SetAmbientThreadCulture.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot,Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot,Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder)
+  id: '#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot,Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder)'
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture
+  langs:
+  - csharp
+  name: SetAmbientThreadCulture(IPostToBot, ILocaleFinder)
+  nameWithType: SetAmbientThreadCulture.SetAmbientThreadCulture(IPostToBot, ILocaleFinder)
+  fullName: SetAmbientThreadCulture.SetAmbientThreadCulture(IPostToBot, ILocaleFinder)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: public SetAmbientThreadCulture (Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot inner, Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder localeFinder);
+    parameters:
+    - id: inner
+      type: Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot
+      description: To be added.
+    - id: localeFinder
+      type: Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/SetAmbientThreadCulture.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture.Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture.Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  id: Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture
+  langs:
+  - csharp
+  name: IPostToBot.PostAsync(IActivity, CancellationToken)
+  nameWithType: SetAmbientThreadCulture.IPostToBot.PostAsync(IActivity, CancellationToken)
+  fullName: SetAmbientThreadCulture.IPostToBot.PostAsync(IActivity, CancellationToken)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture/<Microsoft-Bot-Builder-Dialogs-Internals-IPostToBot-PostAsync>d__3))]
+
+      System.Threading.Tasks.Task IPostToBot.PostAsync (Microsoft.Bot.Connector.IActivity activity, System.Threading.CancellationToken token);
+    parameters:
+    - id: activity
+      type: Microsoft.Bot.Connector.IActivity
+      description: To be added.
+    - id: token
+      type: System.Threading.CancellationToken
+      description: To be added.
+    return:
+      type: System.Threading.Tasks.Task
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture.Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.AsyncStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/SetAmbientThreadCulture.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot,Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture
+  isExternal: false
+  name: SetAmbientThreadCulture(IPostToBot, ILocaleFinder)
+  nameWithType: SetAmbientThreadCulture.SetAmbientThreadCulture(IPostToBot, ILocaleFinder)
+  fullName: SetAmbientThreadCulture.SetAmbientThreadCulture(IPostToBot, ILocaleFinder)
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot
+  parent: Microsoft.Bot.Builder.Dialogs.Internals
+  isExternal: false
+  name: IPostToBot
+  nameWithType: IPostToBot
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot
+- uid: Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder
+  parent: Microsoft.Bot.Builder.ConnectorEx
+  isExternal: false
+  name: ILocaleFinder
+  nameWithType: ILocaleFinder
+  fullName: Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture.Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture
+  isExternal: false
+  name: IPostToBot.PostAsync(IActivity, CancellationToken)
+  nameWithType: SetAmbientThreadCulture.IPostToBot.PostAsync(IActivity, CancellationToken)
+  fullName: SetAmbientThreadCulture.IPostToBot.PostAsync(IActivity, CancellationToken)
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.Bot.Connector.IActivity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IActivity
+  nameWithType: IActivity
+  fullName: Microsoft.Bot.Connector.IActivity
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture.#ctor*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture
+  isExternal: false
+  name: SetAmbientThreadCulture
+  nameWithType: SetAmbientThreadCulture.SetAmbientThreadCulture
+  fullName: SetAmbientThreadCulture.SetAmbientThreadCulture
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/SetAmbientThreadCulture.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture.Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync*
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture
+  isExternal: false
+  name: Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot.PostAsync
+  nameWithType: SetAmbientThreadCulture.Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot.PostAsync
+  fullName: SetAmbientThreadCulture.Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot.PostAsync
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/SetAmbientThreadCulture.xml

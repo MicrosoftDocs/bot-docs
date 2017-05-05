@@ -1,0 +1,387 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+  commentId: T:Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+  id: FormPrompt
+  children:
+  - Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.#ctor
+  - Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Buttons
+  - Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Clone
+  - Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Description
+  - Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Prompt
+  - Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Style
+  - Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.ToString
+  langs:
+  - csharp
+  name: FormPrompt
+  nameWithType: FormPrompt
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: The prompt that is returned by form prompter.
+  syntax:
+    content: 'public sealed class FormPrompt : ICloneable'
+  inheritance:
+  - System.Object
+  implements:
+  - System.ICloneable
+  inheritedMembers: []
+  extensionMethods:
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateHeroCard(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateHeroCards(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateMessages(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt,Microsoft.Bot.Connector.IMessageActivity,Microsoft.Bot.Connector.IMessageActivity)
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormPrompt.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.#ctor
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+  langs:
+  - csharp
+  name: FormPrompt()
+  nameWithType: FormPrompt.FormPrompt()
+  fullName: FormPrompt.FormPrompt()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public FormPrompt ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormPrompt.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Buttons
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Buttons
+  id: Buttons
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+  langs:
+  - csharp
+  name: Buttons
+  nameWithType: FormPrompt.Buttons
+  fullName: FormPrompt.Buttons
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: The buttons that will be mapped to Message.Attachments.
+  syntax:
+    content: public System.Collections.Generic.IList<Microsoft.Bot.Builder.FormFlow.DescribeAttribute> Buttons { get; set; }
+    return:
+      type: System.Collections.Generic.IList{Microsoft.Bot.Builder.FormFlow.DescribeAttribute}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Buttons*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormPrompt.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Clone
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Clone
+  id: Clone
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+  langs:
+  - csharp
+  name: Clone()
+  nameWithType: FormPrompt.Clone()
+  fullName: FormPrompt.Clone()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Deep clone the FormPrompt.
+  syntax:
+    content: public object Clone ();
+    parameters: []
+    return:
+      type: System.Object
+      description: A deep cloned instance of FormPrompt.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Clone*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormPrompt.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Description
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Description
+  id: Description
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+  langs:
+  - csharp
+  name: Description
+  nameWithType: FormPrompt.Description
+  fullName: FormPrompt.Description
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Description information for generating cards.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.DescribeAttribute Description { get; set; }
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.DescribeAttribute
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Description*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormPrompt.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Prompt
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Prompt
+  id: Prompt
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+  langs:
+  - csharp
+  name: Prompt
+  nameWithType: FormPrompt.Prompt
+  fullName: FormPrompt.Prompt
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: The text prompt that corresponds to Message.Text.
+  remarks: When generating cards this will be the card title.
+  syntax:
+    content: public string Prompt { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Prompt*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormPrompt.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Style
+  commentId: F:Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Style
+  id: Style
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+  langs:
+  - csharp
+  name: Style
+  nameWithType: FormPrompt.Style
+  fullName: FormPrompt.Style
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Desired prompt style.
+  syntax:
+    content: public Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions Style;
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormPrompt.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.ToString
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.ToString
+  id: ToString
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+  langs:
+  - csharp
+  name: ToString()
+  nameWithType: FormPrompt.ToString()
+  fullName: FormPrompt.ToString()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public override string ToString ();
+    parameters: []
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.ToString*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormPrompt.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.#ctor
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+  isExternal: false
+  name: FormPrompt()
+  nameWithType: FormPrompt.FormPrompt()
+  fullName: FormPrompt.FormPrompt()
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Buttons
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+  isExternal: false
+  name: Buttons
+  nameWithType: FormPrompt.Buttons
+  fullName: FormPrompt.Buttons
+- uid: System.Collections.Generic.IList`1
+  name: IList
+  nameWithType: IList
+  fullName: System.Collections.Generic.IList
+- uid: Microsoft.Bot.Builder.FormFlow.DescribeAttribute
+  name: DescribeAttribute
+  nameWithType: DescribeAttribute
+  fullName: Microsoft.Bot.Builder.FormFlow.DescribeAttribute
+- uid: System.Collections.Generic.IList{Microsoft.Bot.Builder.FormFlow.DescribeAttribute}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IList<DescribeAttribute>
+  nameWithType: IList<DescribeAttribute>
+  fullName: System.Collections.Generic.IList<Microsoft.Bot.Builder.FormFlow.DescribeAttribute>
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.FormFlow.DescribeAttribute
+    name: DescribeAttribute
+    nameWithType: DescribeAttribute
+    fullName: Microsoft.Bot.Builder.FormFlow.DescribeAttribute
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Clone
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+  isExternal: false
+  name: Clone()
+  nameWithType: FormPrompt.Clone()
+  fullName: FormPrompt.Clone()
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Description
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+  isExternal: false
+  name: Description
+  nameWithType: FormPrompt.Description
+  fullName: FormPrompt.Description
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Prompt
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+  isExternal: false
+  name: Prompt
+  nameWithType: FormPrompt.Prompt
+  fullName: FormPrompt.Prompt
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Style
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+  isExternal: false
+  name: Style
+  nameWithType: FormPrompt.Style
+  fullName: FormPrompt.Style
+- uid: Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: ChoiceStyleOptions
+  nameWithType: ChoiceStyleOptions
+  fullName: Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.ToString
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+  isExternal: false
+  name: ToString()
+  nameWithType: FormPrompt.ToString()
+  fullName: FormPrompt.ToString()
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.#ctor*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+  isExternal: false
+  name: FormPrompt
+  nameWithType: FormPrompt.FormPrompt
+  fullName: FormPrompt.FormPrompt
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormPrompt.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Buttons*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+  isExternal: false
+  name: Buttons
+  nameWithType: FormPrompt.Buttons
+  fullName: FormPrompt.Buttons
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormPrompt.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Clone*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+  isExternal: false
+  name: Clone
+  nameWithType: FormPrompt.Clone
+  fullName: FormPrompt.Clone
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormPrompt.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Description*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+  isExternal: false
+  name: Description
+  nameWithType: FormPrompt.Description
+  fullName: FormPrompt.Description
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormPrompt.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Prompt*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+  isExternal: false
+  name: Prompt
+  nameWithType: FormPrompt.Prompt
+  fullName: FormPrompt.Prompt
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormPrompt.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.ToString*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt
+  isExternal: false
+  name: ToString
+  nameWithType: FormPrompt.ToString
+  fullName: FormPrompt.ToString
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormPrompt.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateHeroCard(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: GenerateHeroCard(FormPrompt)
+  nameWithType: Extensions.GenerateHeroCard(FormPrompt)
+  fullName: Extensions.GenerateHeroCard(FormPrompt)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateHeroCards(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: GenerateHeroCards(FormPrompt)
+  nameWithType: Extensions.GenerateHeroCards(FormPrompt)
+  fullName: Extensions.GenerateHeroCards(FormPrompt)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateMessages(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt,Microsoft.Bot.Connector.IMessageActivity,Microsoft.Bot.Connector.IMessageActivity)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Extensions
+  isExternal: false
+  name: GenerateMessages(FormPrompt, IMessageActivity, IMessageActivity)
+  nameWithType: Extensions.GenerateMessages(FormPrompt, IMessageActivity, IMessageActivity)
+  fullName: Extensions.GenerateMessages(FormPrompt, IMessageActivity, IMessageActivity)
+- uid: System.ICloneable
+  parent: System
+  isExternal: true
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable

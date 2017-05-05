@@ -1,0 +1,199 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.CommandDescription
+  commentId: T:Microsoft.Bot.Builder.FormFlow.CommandDescription
+  id: CommandDescription
+  children:
+  - Microsoft.Bot.Builder.FormFlow.CommandDescription.#ctor(System.String,System.String[],System.String)
+  - Microsoft.Bot.Builder.FormFlow.CommandDescription.Description
+  - Microsoft.Bot.Builder.FormFlow.CommandDescription.Help
+  - Microsoft.Bot.Builder.FormFlow.CommandDescription.Terms
+  langs:
+  - csharp
+  name: CommandDescription
+  nameWithType: CommandDescription
+  fullName: Microsoft.Bot.Builder.FormFlow.CommandDescription
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Description of all the information needed for a built-in command.
+  syntax:
+    content: public class CommandDescription
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/CommandDescription.xml
+- uid: Microsoft.Bot.Builder.FormFlow.CommandDescription.#ctor(System.String,System.String[],System.String)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.CommandDescription.#ctor(System.String,System.String[],System.String)
+  id: '#ctor(System.String,System.String[],System.String)'
+  parent: Microsoft.Bot.Builder.FormFlow.CommandDescription
+  langs:
+  - csharp
+  name: CommandDescription(String, String[], String)
+  nameWithType: CommandDescription.CommandDescription(String, String[], String)
+  fullName: CommandDescription.CommandDescription(String, String[], String)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Construct the description of a built-in command.
+  syntax:
+    content: public CommandDescription (string description, string[] terms, string help);
+    parameters:
+    - id: description
+      type: System.String
+      description: Description of the command.
+    - id: terms
+      type: System.String[]
+      description: Terms that match the command.
+    - id: help
+      type: System.String
+      description: Help on what the command does.
+  overload: Microsoft.Bot.Builder.FormFlow.CommandDescription.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/CommandDescription.xml
+- uid: Microsoft.Bot.Builder.FormFlow.CommandDescription.Description
+  commentId: F:Microsoft.Bot.Builder.FormFlow.CommandDescription.Description
+  id: Description
+  parent: Microsoft.Bot.Builder.FormFlow.CommandDescription
+  langs:
+  - csharp
+  name: Description
+  nameWithType: CommandDescription.Description
+  fullName: CommandDescription.Description
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Description of the command.
+  syntax:
+    content: public string Description;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/CommandDescription.xml
+- uid: Microsoft.Bot.Builder.FormFlow.CommandDescription.Help
+  commentId: F:Microsoft.Bot.Builder.FormFlow.CommandDescription.Help
+  id: Help
+  parent: Microsoft.Bot.Builder.FormFlow.CommandDescription
+  langs:
+  - csharp
+  name: Help
+  nameWithType: CommandDescription.Help
+  fullName: CommandDescription.Help
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Help string for the command.
+  syntax:
+    content: public string Help;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/CommandDescription.xml
+- uid: Microsoft.Bot.Builder.FormFlow.CommandDescription.Terms
+  commentId: F:Microsoft.Bot.Builder.FormFlow.CommandDescription.Terms
+  id: Terms
+  parent: Microsoft.Bot.Builder.FormFlow.CommandDescription
+  langs:
+  - csharp
+  name: Terms
+  nameWithType: CommandDescription.Terms
+  fullName: CommandDescription.Terms
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Regexs for matching the command.
+  syntax:
+    content: public string[] Terms;
+    return:
+      type: System.String[]
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/CommandDescription.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.FormFlow.CommandDescription.#ctor(System.String,System.String[],System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.CommandDescription
+  isExternal: false
+  name: CommandDescription(String, String[], String)
+  nameWithType: CommandDescription.CommandDescription(String, String[], String)
+  fullName: CommandDescription.CommandDescription(String, String[], String)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.String[]
+  parent: System
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: Microsoft.Bot.Builder.FormFlow.CommandDescription.Description
+  parent: Microsoft.Bot.Builder.FormFlow.CommandDescription
+  isExternal: false
+  name: Description
+  nameWithType: CommandDescription.Description
+  fullName: CommandDescription.Description
+- uid: Microsoft.Bot.Builder.FormFlow.CommandDescription.Help
+  parent: Microsoft.Bot.Builder.FormFlow.CommandDescription
+  isExternal: false
+  name: Help
+  nameWithType: CommandDescription.Help
+  fullName: CommandDescription.Help
+- uid: Microsoft.Bot.Builder.FormFlow.CommandDescription.Terms
+  parent: Microsoft.Bot.Builder.FormFlow.CommandDescription
+  isExternal: false
+  name: Terms
+  nameWithType: CommandDescription.Terms
+  fullName: CommandDescription.Terms
+- uid: Microsoft.Bot.Builder.FormFlow.CommandDescription.#ctor*
+  parent: Microsoft.Bot.Builder.FormFlow.CommandDescription
+  isExternal: false
+  name: CommandDescription
+  nameWithType: CommandDescription.CommandDescription
+  fullName: CommandDescription.CommandDescription
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/CommandDescription.xml

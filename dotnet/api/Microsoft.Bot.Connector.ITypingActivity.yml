@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.ITypingActivity
+  commentId: T:Microsoft.Bot.Connector.ITypingActivity
+  id: ITypingActivity
+  children: []
+  langs:
+  - csharp
+  name: ITypingActivity
+  nameWithType: ITypingActivity
+  fullName: Microsoft.Bot.Connector.ITypingActivity
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: The From address is typing
+  syntax:
+    content: 'public interface ITypingActivity : Microsoft.Bot.Connector.IActivity'
+  derivedClasses:
+  - Microsoft.Bot.Connector.Activity
+  implements:
+  - Microsoft.Bot.Connector.IActivity
+  extensionMethods:
+  - Microsoft.Bot.Builder.ConnectorEx.Extensions.ToConversationReference(Microsoft.Bot.Connector.IActivity)
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/ITypingActivity.xml
+references:
+- uid: Microsoft.Bot.Builder.ConnectorEx.Extensions.ToConversationReference(Microsoft.Bot.Connector.IActivity)
+  parent: Microsoft.Bot.Builder.ConnectorEx.Extensions
+  isExternal: false
+  name: ToConversationReference(IActivity)
+  nameWithType: Extensions.ToConversationReference(IActivity)
+  fullName: Extensions.ToConversationReference(IActivity)
+- uid: Microsoft.Bot.Connector.IActivity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IActivity
+  nameWithType: IActivity
+  fullName: Microsoft.Bot.Connector.IActivity

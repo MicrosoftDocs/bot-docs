@@ -1,0 +1,80 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Luis.Models
+  id: Microsoft.Bot.Builder.Luis.Models
+  children:
+  - Microsoft.Bot.Builder.Luis.Models.Action
+  - Microsoft.Bot.Builder.Luis.Models.ActionParameter
+  - Microsoft.Bot.Builder.Luis.Models.CompositeChild
+  - Microsoft.Bot.Builder.Luis.Models.CompositeEntity
+  - Microsoft.Bot.Builder.Luis.Models.DialogResponse
+  - Microsoft.Bot.Builder.Luis.Models.DialogResponse.DialogStatus
+  - Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  - Microsoft.Bot.Builder.Luis.Models.IntentRecommendation
+  - Microsoft.Bot.Builder.Luis.Models.LuisResult
+  langs:
+  - csharp
+  name: Microsoft.Bot.Builder.Luis.Models
+  nameWithType: Microsoft.Bot.Builder.Luis.Models
+  fullName: Microsoft.Bot.Builder.Luis.Models
+  type: Namespace
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/ns-Microsoft.Bot.Builder.Luis.Models.xml
+references:
+- uid: Microsoft.Bot.Builder.Luis.Models.Action
+  parent: Microsoft.Bot.Builder.Luis.Models
+  isExternal: false
+  name: Action
+  nameWithType: Action
+  fullName: Microsoft.Bot.Builder.Luis.Models.Action
+- uid: Microsoft.Bot.Builder.Luis.Models.ActionParameter
+  parent: Microsoft.Bot.Builder.Luis.Models
+  isExternal: false
+  name: ActionParameter
+  nameWithType: ActionParameter
+  fullName: Microsoft.Bot.Builder.Luis.Models.ActionParameter
+- uid: Microsoft.Bot.Builder.Luis.Models.CompositeChild
+  parent: Microsoft.Bot.Builder.Luis.Models
+  isExternal: false
+  name: CompositeChild
+  nameWithType: CompositeChild
+  fullName: Microsoft.Bot.Builder.Luis.Models.CompositeChild
+- uid: Microsoft.Bot.Builder.Luis.Models.CompositeEntity
+  parent: Microsoft.Bot.Builder.Luis.Models
+  isExternal: false
+  name: CompositeEntity
+  nameWithType: CompositeEntity
+  fullName: Microsoft.Bot.Builder.Luis.Models.CompositeEntity
+- uid: Microsoft.Bot.Builder.Luis.Models.DialogResponse
+  parent: Microsoft.Bot.Builder.Luis.Models
+  isExternal: false
+  name: DialogResponse
+  nameWithType: DialogResponse
+  fullName: Microsoft.Bot.Builder.Luis.Models.DialogResponse
+- uid: Microsoft.Bot.Builder.Luis.Models.DialogResponse.DialogStatus
+  parent: Microsoft.Bot.Builder.Luis.Models
+  isExternal: false
+  name: DialogResponse.DialogStatus
+  nameWithType: DialogResponse.DialogStatus
+  fullName: Microsoft.Bot.Builder.Luis.Models.DialogResponse.DialogStatus
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  parent: Microsoft.Bot.Builder.Luis.Models
+  isExternal: false
+  name: EntityRecommendation
+  nameWithType: EntityRecommendation
+  fullName: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+- uid: Microsoft.Bot.Builder.Luis.Models.IntentRecommendation
+  parent: Microsoft.Bot.Builder.Luis.Models
+  isExternal: false
+  name: IntentRecommendation
+  nameWithType: IntentRecommendation
+  fullName: Microsoft.Bot.Builder.Luis.Models.IntentRecommendation
+- uid: Microsoft.Bot.Builder.Luis.Models.LuisResult
+  parent: Microsoft.Bot.Builder.Luis.Models
+  isExternal: false
+  name: LuisResult
+  nameWithType: LuisResult
+  fullName: Microsoft.Bot.Builder.Luis.Models.LuisResult

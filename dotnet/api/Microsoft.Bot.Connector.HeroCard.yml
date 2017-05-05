@@ -1,0 +1,504 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.HeroCard
+  commentId: T:Microsoft.Bot.Connector.HeroCard
+  id: HeroCard
+  children:
+  - Microsoft.Bot.Connector.HeroCard.#ctor
+  - Microsoft.Bot.Connector.HeroCard.#ctor(System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.CardImage},System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction},Microsoft.Bot.Connector.CardAction)
+  - Microsoft.Bot.Connector.HeroCard.Buttons
+  - Microsoft.Bot.Connector.HeroCard.ContentType
+  - Microsoft.Bot.Connector.HeroCard.Images
+  - Microsoft.Bot.Connector.HeroCard.Subtitle
+  - Microsoft.Bot.Connector.HeroCard.Tap
+  - Microsoft.Bot.Connector.HeroCard.Text
+  - Microsoft.Bot.Connector.HeroCard.Title
+  langs:
+  - csharp
+  name: HeroCard
+  nameWithType: HeroCard
+  fullName: Microsoft.Bot.Connector.HeroCard
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: A Hero card (card with a single, large image)
+  syntax:
+    content: public class HeroCard
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  extensionMethods:
+  - Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.HeroCard)
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/HeroCard.xml
+- uid: Microsoft.Bot.Connector.HeroCard.#ctor
+  commentId: M:Microsoft.Bot.Connector.HeroCard.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Connector.HeroCard
+  langs:
+  - csharp
+  name: HeroCard()
+  nameWithType: HeroCard.HeroCard()
+  fullName: HeroCard.HeroCard()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the HeroCard class.
+  syntax:
+    content: public HeroCard ();
+    parameters: []
+  overload: Microsoft.Bot.Connector.HeroCard.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/HeroCard.xml
+- uid: Microsoft.Bot.Connector.HeroCard.#ctor(System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.CardImage},System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction},Microsoft.Bot.Connector.CardAction)
+  commentId: M:Microsoft.Bot.Connector.HeroCard.#ctor(System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.CardImage},System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction},Microsoft.Bot.Connector.CardAction)
+  id: '#ctor(System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.CardImage},System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction},Microsoft.Bot.Connector.CardAction)'
+  parent: Microsoft.Bot.Connector.HeroCard
+  langs:
+  - csharp
+  name: HeroCard(String, String, String, IList<CardImage>, IList<CardAction>, CardAction)
+  nameWithType: HeroCard.HeroCard(String, String, String, IList<CardImage>, IList<CardAction>, CardAction)
+  fullName: HeroCard.HeroCard(String, String, String, IList<CardImage>, IList<CardAction>, CardAction)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Initializes a new instance of the HeroCard class.
+  syntax:
+    content: public HeroCard (string title = null, string subtitle = null, string text = null, System.Collections.Generic.IList<Microsoft.Bot.Connector.CardImage> images = null, System.Collections.Generic.IList<Microsoft.Bot.Connector.CardAction> buttons = null, Microsoft.Bot.Connector.CardAction tap = null);
+    parameters:
+    - id: title
+      type: System.String
+      description: To be added.
+    - id: subtitle
+      type: System.String
+      description: To be added.
+    - id: text
+      type: System.String
+      description: To be added.
+    - id: images
+      type: System.Collections.Generic.IList{Microsoft.Bot.Connector.CardImage}
+      description: To be added.
+    - id: buttons
+      type: System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction}
+      description: To be added.
+    - id: tap
+      type: Microsoft.Bot.Connector.CardAction
+      description: To be added.
+  overload: Microsoft.Bot.Connector.HeroCard.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/HeroCard.xml
+- uid: Microsoft.Bot.Connector.HeroCard.Buttons
+  commentId: P:Microsoft.Bot.Connector.HeroCard.Buttons
+  id: Buttons
+  parent: Microsoft.Bot.Connector.HeroCard
+  langs:
+  - csharp
+  name: Buttons
+  nameWithType: HeroCard.Buttons
+  fullName: HeroCard.Buttons
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Set of actions applicable to the current card
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="buttons")]
+
+      public System.Collections.Generic.IList<Microsoft.Bot.Connector.CardAction> Buttons { get; set; }
+    return:
+      type: System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.HeroCard.Buttons*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/HeroCard.xml
+- uid: Microsoft.Bot.Connector.HeroCard.ContentType
+  commentId: F:Microsoft.Bot.Connector.HeroCard.ContentType
+  id: ContentType
+  parent: Microsoft.Bot.Connector.HeroCard
+  langs:
+  - csharp
+  name: ContentType
+  nameWithType: HeroCard.ContentType
+  fullName: HeroCard.ContentType
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  syntax:
+    content: public const string ContentType;
+    return:
+      type: System.String
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/HeroCard.xml
+- uid: Microsoft.Bot.Connector.HeroCard.Images
+  commentId: P:Microsoft.Bot.Connector.HeroCard.Images
+  id: Images
+  parent: Microsoft.Bot.Connector.HeroCard
+  langs:
+  - csharp
+  name: Images
+  nameWithType: HeroCard.Images
+  fullName: HeroCard.Images
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Array of images for the card
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="images")]
+
+      public System.Collections.Generic.IList<Microsoft.Bot.Connector.CardImage> Images { get; set; }
+    return:
+      type: System.Collections.Generic.IList{Microsoft.Bot.Connector.CardImage}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.HeroCard.Images*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/HeroCard.xml
+- uid: Microsoft.Bot.Connector.HeroCard.Subtitle
+  commentId: P:Microsoft.Bot.Connector.HeroCard.Subtitle
+  id: Subtitle
+  parent: Microsoft.Bot.Connector.HeroCard
+  langs:
+  - csharp
+  name: Subtitle
+  nameWithType: HeroCard.Subtitle
+  fullName: HeroCard.Subtitle
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Subtitle of the card
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="subtitle")]
+
+      public string Subtitle { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.HeroCard.Subtitle*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/HeroCard.xml
+- uid: Microsoft.Bot.Connector.HeroCard.Tap
+  commentId: P:Microsoft.Bot.Connector.HeroCard.Tap
+  id: Tap
+  parent: Microsoft.Bot.Connector.HeroCard
+  langs:
+  - csharp
+  name: Tap
+  nameWithType: HeroCard.Tap
+  fullName: HeroCard.Tap
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: This action will be activated when user taps on the card itself
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="tap")]
+
+      public Microsoft.Bot.Connector.CardAction Tap { get; set; }
+    return:
+      type: Microsoft.Bot.Connector.CardAction
+      description: To be added.
+  overload: Microsoft.Bot.Connector.HeroCard.Tap*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/HeroCard.xml
+- uid: Microsoft.Bot.Connector.HeroCard.Text
+  commentId: P:Microsoft.Bot.Connector.HeroCard.Text
+  id: Text
+  parent: Microsoft.Bot.Connector.HeroCard
+  langs:
+  - csharp
+  name: Text
+  nameWithType: HeroCard.Text
+  fullName: HeroCard.Text
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Text for the card
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="text")]
+
+      public string Text { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.HeroCard.Text*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/HeroCard.xml
+- uid: Microsoft.Bot.Connector.HeroCard.Title
+  commentId: P:Microsoft.Bot.Connector.HeroCard.Title
+  id: Title
+  parent: Microsoft.Bot.Connector.HeroCard
+  langs:
+  - csharp
+  name: Title
+  nameWithType: HeroCard.Title
+  fullName: HeroCard.Title
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Title of the card
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="title")]
+
+      public string Title { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.HeroCard.Title*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/HeroCard.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.HeroCard.#ctor
+  parent: Microsoft.Bot.Connector.HeroCard
+  isExternal: false
+  name: HeroCard()
+  nameWithType: HeroCard.HeroCard()
+  fullName: HeroCard.HeroCard()
+- uid: Microsoft.Bot.Connector.HeroCard.#ctor(System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.CardImage},System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction},Microsoft.Bot.Connector.CardAction)
+  parent: Microsoft.Bot.Connector.HeroCard
+  isExternal: false
+  name: HeroCard(String, String, String, IList<CardImage>, IList<CardAction>, CardAction)
+  nameWithType: HeroCard.HeroCard(String, String, String, IList<CardImage>, IList<CardAction>, CardAction)
+  fullName: HeroCard.HeroCard(String, String, String, IList<CardImage>, IList<CardAction>, CardAction)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic.IList`1
+  name: IList
+  nameWithType: IList
+  fullName: System.Collections.Generic.IList
+- uid: Microsoft.Bot.Connector.CardImage
+  name: CardImage
+  nameWithType: CardImage
+  fullName: Microsoft.Bot.Connector.CardImage
+- uid: System.Collections.Generic.IList{Microsoft.Bot.Connector.CardImage}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IList<CardImage>
+  nameWithType: IList<CardImage>
+  fullName: System.Collections.Generic.IList<Microsoft.Bot.Connector.CardImage>
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.CardImage
+    name: CardImage
+    nameWithType: CardImage
+    fullName: Microsoft.Bot.Connector.CardImage
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Connector.CardAction
+  name: CardAction
+  nameWithType: CardAction
+  fullName: Microsoft.Bot.Connector.CardAction
+- uid: System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IList<CardAction>
+  nameWithType: IList<CardAction>
+  fullName: System.Collections.Generic.IList<Microsoft.Bot.Connector.CardAction>
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Connector.CardAction
+    name: CardAction
+    nameWithType: CardAction
+    fullName: Microsoft.Bot.Connector.CardAction
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Connector.HeroCard.Buttons
+  parent: Microsoft.Bot.Connector.HeroCard
+  isExternal: false
+  name: Buttons
+  nameWithType: HeroCard.Buttons
+  fullName: HeroCard.Buttons
+- uid: Microsoft.Bot.Connector.HeroCard.ContentType
+  parent: Microsoft.Bot.Connector.HeroCard
+  isExternal: false
+  name: ContentType
+  nameWithType: HeroCard.ContentType
+  fullName: HeroCard.ContentType
+- uid: Microsoft.Bot.Connector.HeroCard.Images
+  parent: Microsoft.Bot.Connector.HeroCard
+  isExternal: false
+  name: Images
+  nameWithType: HeroCard.Images
+  fullName: HeroCard.Images
+- uid: Microsoft.Bot.Connector.HeroCard.Subtitle
+  parent: Microsoft.Bot.Connector.HeroCard
+  isExternal: false
+  name: Subtitle
+  nameWithType: HeroCard.Subtitle
+  fullName: HeroCard.Subtitle
+- uid: Microsoft.Bot.Connector.HeroCard.Tap
+  parent: Microsoft.Bot.Connector.HeroCard
+  isExternal: false
+  name: Tap
+  nameWithType: HeroCard.Tap
+  fullName: HeroCard.Tap
+- uid: Microsoft.Bot.Connector.HeroCard.Text
+  parent: Microsoft.Bot.Connector.HeroCard
+  isExternal: false
+  name: Text
+  nameWithType: HeroCard.Text
+  fullName: HeroCard.Text
+- uid: Microsoft.Bot.Connector.HeroCard.Title
+  parent: Microsoft.Bot.Connector.HeroCard
+  isExternal: false
+  name: Title
+  nameWithType: HeroCard.Title
+  fullName: HeroCard.Title
+- uid: Microsoft.Bot.Connector.HeroCard.#ctor*
+  parent: Microsoft.Bot.Connector.HeroCard
+  isExternal: false
+  name: HeroCard
+  nameWithType: HeroCard.HeroCard
+  fullName: HeroCard.HeroCard
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/HeroCard.xml
+- uid: Microsoft.Bot.Connector.HeroCard.Buttons*
+  parent: Microsoft.Bot.Connector.HeroCard
+  isExternal: false
+  name: Buttons
+  nameWithType: HeroCard.Buttons
+  fullName: HeroCard.Buttons
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/HeroCard.xml
+- uid: Microsoft.Bot.Connector.HeroCard.Images*
+  parent: Microsoft.Bot.Connector.HeroCard
+  isExternal: false
+  name: Images
+  nameWithType: HeroCard.Images
+  fullName: HeroCard.Images
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/HeroCard.xml
+- uid: Microsoft.Bot.Connector.HeroCard.Subtitle*
+  parent: Microsoft.Bot.Connector.HeroCard
+  isExternal: false
+  name: Subtitle
+  nameWithType: HeroCard.Subtitle
+  fullName: HeroCard.Subtitle
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/HeroCard.xml
+- uid: Microsoft.Bot.Connector.HeroCard.Tap*
+  parent: Microsoft.Bot.Connector.HeroCard
+  isExternal: false
+  name: Tap
+  nameWithType: HeroCard.Tap
+  fullName: HeroCard.Tap
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/HeroCard.xml
+- uid: Microsoft.Bot.Connector.HeroCard.Text*
+  parent: Microsoft.Bot.Connector.HeroCard
+  isExternal: false
+  name: Text
+  nameWithType: HeroCard.Text
+  fullName: HeroCard.Text
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/HeroCard.xml
+- uid: Microsoft.Bot.Connector.HeroCard.Title*
+  parent: Microsoft.Bot.Connector.HeroCard
+  isExternal: false
+  name: Title
+  nameWithType: HeroCard.Title
+  fullName: HeroCard.Title
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/HeroCard.xml
+- uid: Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.HeroCard)
+  parent: Microsoft.Bot.Connector.Extensions
+  isExternal: false
+  name: ToAttachment(HeroCard)
+  nameWithType: Extensions.ToAttachment(HeroCard)
+  fullName: Extensions.ToAttachment(HeroCard)

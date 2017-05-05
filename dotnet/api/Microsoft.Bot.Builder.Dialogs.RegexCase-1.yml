@@ -1,0 +1,159 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.RegexCase`1
+  commentId: T:Microsoft.Bot.Builder.Dialogs.RegexCase`1
+  id: RegexCase`1
+  children:
+  - Microsoft.Bot.Builder.Dialogs.RegexCase`1.#ctor(System.Text.RegularExpressions.Regex,Microsoft.Bot.Builder.Dialogs.ContextualSelector{System.String,`0})
+  langs:
+  - csharp
+  name: RegexCase<R>
+  nameWithType: RegexCase<R>
+  fullName: Microsoft.Bot.Builder.Dialogs.RegexCase<R>
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: The regex case for switch.
+  remarks: The condition will be true if the regex matches the text.
+  syntax:
+    content: 'public sealed class RegexCase<R> : Microsoft.Bot.Builder.Dialogs.Case<string,R>'
+    typeParameters:
+    - id: R
+      description: To be added.
+  inheritance:
+  - System.Object
+  - Microsoft.Bot.Builder.Dialogs.Case`2
+  implements: []
+  inheritedMembers:
+  - Microsoft.Bot.Builder.Dialogs.Case`2.Condition
+  - Microsoft.Bot.Builder.Dialogs.Case`2.Selector
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/RegexCase`1.xml
+- uid: Microsoft.Bot.Builder.Dialogs.RegexCase`1.#ctor(System.Text.RegularExpressions.Regex,Microsoft.Bot.Builder.Dialogs.ContextualSelector{System.String,`0})
+  commentId: M:Microsoft.Bot.Builder.Dialogs.RegexCase`1.#ctor(System.Text.RegularExpressions.Regex,Microsoft.Bot.Builder.Dialogs.ContextualSelector{System.String,`0})
+  id: '#ctor(System.Text.RegularExpressions.Regex,Microsoft.Bot.Builder.Dialogs.ContextualSelector{System.String,`0})'
+  parent: Microsoft.Bot.Builder.Dialogs.RegexCase`1
+  langs:
+  - csharp
+  name: RegexCase<R>(Regex, ContextualSelector<String,R>)
+  nameWithType: RegexCase<R>.RegexCase<R>(Regex, ContextualSelector<String,R>)
+  fullName: RegexCase<R>.RegexCase<R>(Regex, ContextualSelector<String,R>)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: Constructs a case based on a regular expression.
+  syntax:
+    content: public RegexCase (System.Text.RegularExpressions.Regex regex, Microsoft.Bot.Builder.Dialogs.ContextualSelector<string,R> selector);
+    parameters:
+    - id: regex
+      type: System.Text.RegularExpressions.Regex
+      description: The regex for condition.
+    - id: selector
+      type: Microsoft.Bot.Builder.Dialogs.ContextualSelector{System.String,R}
+      description: The contextual selector for the case.
+  overload: Microsoft.Bot.Builder.Dialogs.RegexCase`1.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/RegexCase`1.xml
+references:
+- uid: Microsoft.Bot.Builder.Dialogs.Case`2
+  name: Case<T,R>
+  nameWithType: Case<T,R>
+  fullName: Microsoft.Bot.Builder.Dialogs.Case<T,R>
+- uid: System.String
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R
+  name: R
+  nameWithType: R
+  fullName: R
+- uid: Microsoft.Bot.Builder.Dialogs.Case{System.String,R}
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: Case<String,R>
+  nameWithType: Case<String,R>
+  fullName: Microsoft.Bot.Builder.Dialogs.Case<System.String,R>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Dialogs.Case`2
+    name: Case
+    nameWithType: Case
+    fullName: Microsoft.Bot.Builder.Dialogs.Case
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: R
+    name: R
+    nameWithType: R
+    fullName: R
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.RegexCase`1.#ctor(System.Text.RegularExpressions.Regex,Microsoft.Bot.Builder.Dialogs.ContextualSelector{System.String,`0})
+  parent: Microsoft.Bot.Builder.Dialogs.RegexCase`1
+  isExternal: false
+  name: RegexCase<R>(Regex, ContextualSelector<String,R>)
+  nameWithType: RegexCase<R>.RegexCase<R>(Regex, ContextualSelector<String,R>)
+  fullName: RegexCase<R>.RegexCase<R>(Regex, ContextualSelector<String,R>)
+- uid: System.Text.RegularExpressions.Regex
+  parent: System.Text.RegularExpressions
+  isExternal: true
+  name: Regex
+  nameWithType: Regex
+  fullName: System.Text.RegularExpressions.Regex
+- uid: Microsoft.Bot.Builder.Dialogs.ContextualSelector`2
+  name: ContextualSelector<T,R>
+  nameWithType: ContextualSelector<T,R>
+  fullName: Microsoft.Bot.Builder.Dialogs.ContextualSelector<T,R>
+- uid: Microsoft.Bot.Builder.Dialogs.ContextualSelector{System.String,R}
+  parent: Microsoft.Bot.Builder.Dialogs
+  isExternal: false
+  name: ContextualSelector<String,R>
+  nameWithType: ContextualSelector<String,R>
+  fullName: Microsoft.Bot.Builder.Dialogs.ContextualSelector<System.String,R>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Dialogs.ContextualSelector`2
+    name: ContextualSelector
+    nameWithType: ContextualSelector
+    fullName: Microsoft.Bot.Builder.Dialogs.ContextualSelector
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: R
+    name: R
+    nameWithType: R
+    fullName: R
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Dialogs.RegexCase`1.#ctor*
+  parent: Microsoft.Bot.Builder.Dialogs.RegexCase`1
+  isExternal: false
+  name: RegexCase<R>
+  nameWithType: RegexCase<R>.RegexCase<R>
+  fullName: RegexCase<R>.RegexCase<R>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/RegexCase`1.xml

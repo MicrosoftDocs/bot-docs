@@ -1,0 +1,263 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Autofac.Base.Extensions
+  commentId: T:Microsoft.Bot.Builder.Autofac.Base.Extensions
+  id: Extensions
+  children:
+  - Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterAdapterChain``1(Autofac.ContainerBuilder,System.Type[])
+  - Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterKeyedType``2(Autofac.ContainerBuilder)
+  langs:
+  - csharp
+  name: Extensions
+  nameWithType: Extensions
+  fullName: Microsoft.Bot.Builder.Autofac.Base.Extensions
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder.Autofac
+  namespace: Microsoft.Bot.Builder.Autofac.Base
+  syntax:
+    content: public static class Extensions
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Autofac.Base/Extensions.xml
+- uid: Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterAdapterChain``1(Autofac.ContainerBuilder,System.Type[])
+  commentId: M:Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterAdapterChain``1(Autofac.ContainerBuilder,System.Type[])
+  id: RegisterAdapterChain``1(Autofac.ContainerBuilder,System.Type[])
+  parent: Microsoft.Bot.Builder.Autofac.Base.Extensions
+  langs:
+  - csharp
+  name: RegisterAdapterChain<TLimit>(ContainerBuilder, Type[])
+  nameWithType: Extensions.RegisterAdapterChain<TLimit>(ContainerBuilder, Type[])
+  fullName: Extensions.RegisterAdapterChain<TLimit>(ContainerBuilder, Type[])
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Autofac.Base
+  summary: Register an adapter chain of components, exposing a shared service interface.
+  remarks: >-
+    This registers a factory method to create a adapter chain of components, based on wrapping each
+                inner component with an adapter outer component.
+  syntax:
+    content: public static Autofac.Builder.IRegistrationBuilder<TLimit,Autofac.Builder.SimpleActivatorData,Autofac.Builder.SingleRegistrationStyle> RegisterAdapterChain<TLimit> (this Autofac.ContainerBuilder builder, Type[] types);
+    parameters:
+    - id: builder
+      type: Autofac.ContainerBuilder
+      description: Container builder.
+    - id: types
+      type: System.Type[]
+      description: The services type keys that can be used to retrieve the components in the chain.
+    typeParameters:
+    - id: TLimit
+      description: The service type provided by the component.
+    return:
+      type: Autofac.Builder.IRegistrationBuilder{TLimit,Autofac.Builder.SimpleActivatorData,Autofac.Builder.SingleRegistrationStyle}
+      description: Registration builder allowing the registration to be configured.
+  overload: Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterAdapterChain``1*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Autofac.Base/Extensions.xml
+- uid: Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterKeyedType``2(Autofac.ContainerBuilder)
+  commentId: M:Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterKeyedType``2(Autofac.ContainerBuilder)
+  id: RegisterKeyedType``2(Autofac.ContainerBuilder)
+  parent: Microsoft.Bot.Builder.Autofac.Base.Extensions
+  langs:
+  - csharp
+  name: RegisterKeyedType<TImplementer,TLimit>(ContainerBuilder)
+  nameWithType: Extensions.RegisterKeyedType<TImplementer,TLimit>(ContainerBuilder)
+  fullName: Extensions.RegisterKeyedType<TImplementer,TLimit>(ContainerBuilder)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Autofac.Base
+  summary: >-
+    Register a component to be created through reflection, and
+                provide a key that can be used to retrieve the component.
+  remarks: >-
+    This method leverages Autofac's autowiring of components through reflection,
+                providing a key that directly reflects that component type, so that it might
+                be retrieved by that key and possibly replaced in an adapter chain.
+  syntax:
+    content: public static Autofac.Builder.IRegistrationBuilder<TImplementer,Autofac.Builder.ConcreteReflectionActivatorData,Autofac.Builder.SingleRegistrationStyle> RegisterKeyedType<TImplementer,TLimit> (this Autofac.ContainerBuilder builder);
+    parameters:
+    - id: builder
+      type: Autofac.ContainerBuilder
+      description: Container builder.
+    typeParameters:
+    - id: TImplementer
+      description: The type of the component implementation.
+    - id: TLimit
+      description: The service type provided by the component.
+    return:
+      type: Autofac.Builder.IRegistrationBuilder{TImplementer,Autofac.Builder.ConcreteReflectionActivatorData,Autofac.Builder.SingleRegistrationStyle}
+      description: Registration builder allowing the registration to be configured.
+  overload: Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterKeyedType``2*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Autofac.Base/Extensions.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterAdapterChain``1(Autofac.ContainerBuilder,System.Type[])
+  parent: Microsoft.Bot.Builder.Autofac.Base.Extensions
+  isExternal: false
+  name: RegisterAdapterChain<TLimit>(ContainerBuilder, Type[])
+  nameWithType: Extensions.RegisterAdapterChain<TLimit>(ContainerBuilder, Type[])
+  fullName: Extensions.RegisterAdapterChain<TLimit>(ContainerBuilder, Type[])
+- uid: Autofac.Builder.IRegistrationBuilder`3
+  name: IRegistrationBuilder
+  nameWithType: IRegistrationBuilder
+  fullName: Autofac.Builder.IRegistrationBuilder
+- uid: TLimit
+  name: TLimit
+  nameWithType: TLimit
+  fullName: TLimit
+- uid: Autofac.Builder.SimpleActivatorData
+  name: SimpleActivatorData
+  nameWithType: SimpleActivatorData
+  fullName: Autofac.Builder.SimpleActivatorData
+- uid: Autofac.Builder.SingleRegistrationStyle
+  name: SingleRegistrationStyle
+  nameWithType: SingleRegistrationStyle
+  fullName: Autofac.Builder.SingleRegistrationStyle
+- uid: Autofac.Builder.IRegistrationBuilder{TLimit,Autofac.Builder.SimpleActivatorData,Autofac.Builder.SingleRegistrationStyle}
+  parent: Autofac.Builder
+  isExternal: true
+  name: IRegistrationBuilder<TLimit,SimpleActivatorData,SingleRegistrationStyle>
+  nameWithType: IRegistrationBuilder<TLimit,SimpleActivatorData,SingleRegistrationStyle>
+  fullName: Autofac.Builder.IRegistrationBuilder<TLimit,Autofac.Builder.SimpleActivatorData,Autofac.Builder.SingleRegistrationStyle>
+  spec.csharp:
+  - uid: Autofac.Builder.IRegistrationBuilder`3
+    name: IRegistrationBuilder
+    nameWithType: IRegistrationBuilder
+    fullName: Autofac.Builder.IRegistrationBuilder
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: TLimit
+    name: TLimit
+    nameWithType: TLimit
+    fullName: TLimit
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: Autofac.Builder.SimpleActivatorData
+    name: SimpleActivatorData
+    nameWithType: SimpleActivatorData
+    fullName: Autofac.Builder.SimpleActivatorData
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: Autofac.Builder.SingleRegistrationStyle
+    name: SingleRegistrationStyle
+    nameWithType: SingleRegistrationStyle
+    fullName: Autofac.Builder.SingleRegistrationStyle
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Autofac.ContainerBuilder
+  parent: Autofac
+  isExternal: true
+  name: ContainerBuilder
+  nameWithType: ContainerBuilder
+  fullName: Autofac.ContainerBuilder
+- uid: System.Type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Type[]
+  parent: System
+  isExternal: true
+  name: Type[]
+  nameWithType: Type[]
+  fullName: System.Type[]
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterKeyedType``2(Autofac.ContainerBuilder)
+  parent: Microsoft.Bot.Builder.Autofac.Base.Extensions
+  isExternal: false
+  name: RegisterKeyedType<TImplementer,TLimit>(ContainerBuilder)
+  nameWithType: Extensions.RegisterKeyedType<TImplementer,TLimit>(ContainerBuilder)
+  fullName: Extensions.RegisterKeyedType<TImplementer,TLimit>(ContainerBuilder)
+- uid: TImplementer
+  name: TImplementer
+  nameWithType: TImplementer
+  fullName: TImplementer
+- uid: Autofac.Builder.ConcreteReflectionActivatorData
+  name: ConcreteReflectionActivatorData
+  nameWithType: ConcreteReflectionActivatorData
+  fullName: Autofac.Builder.ConcreteReflectionActivatorData
+- uid: Autofac.Builder.IRegistrationBuilder{TImplementer,Autofac.Builder.ConcreteReflectionActivatorData,Autofac.Builder.SingleRegistrationStyle}
+  parent: Autofac.Builder
+  isExternal: true
+  name: IRegistrationBuilder<TImplementer,ConcreteReflectionActivatorData,SingleRegistrationStyle>
+  nameWithType: IRegistrationBuilder<TImplementer,ConcreteReflectionActivatorData,SingleRegistrationStyle>
+  fullName: Autofac.Builder.IRegistrationBuilder<TImplementer,Autofac.Builder.ConcreteReflectionActivatorData,Autofac.Builder.SingleRegistrationStyle>
+  spec.csharp:
+  - uid: Autofac.Builder.IRegistrationBuilder`3
+    name: IRegistrationBuilder
+    nameWithType: IRegistrationBuilder
+    fullName: Autofac.Builder.IRegistrationBuilder
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: TImplementer
+    name: TImplementer
+    nameWithType: TImplementer
+    fullName: TImplementer
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: Autofac.Builder.ConcreteReflectionActivatorData
+    name: ConcreteReflectionActivatorData
+    nameWithType: ConcreteReflectionActivatorData
+    fullName: Autofac.Builder.ConcreteReflectionActivatorData
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: Autofac.Builder.SingleRegistrationStyle
+    name: SingleRegistrationStyle
+    nameWithType: SingleRegistrationStyle
+    fullName: Autofac.Builder.SingleRegistrationStyle
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterAdapterChain``1*
+  parent: Microsoft.Bot.Builder.Autofac.Base.Extensions
+  isExternal: false
+  name: RegisterAdapterChain<TLimit>
+  nameWithType: Extensions.RegisterAdapterChain<TLimit>
+  fullName: Extensions.RegisterAdapterChain<TLimit>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Autofac.Base/Extensions.xml
+- uid: Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterKeyedType``2*
+  parent: Microsoft.Bot.Builder.Autofac.Base.Extensions
+  isExternal: false
+  name: RegisterKeyedType<TImplementer,TLimit>
+  nameWithType: Extensions.RegisterKeyedType<TImplementer,TLimit>
+  fullName: Extensions.RegisterKeyedType<TImplementer,TLimit>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Autofac.Base/Extensions.xml

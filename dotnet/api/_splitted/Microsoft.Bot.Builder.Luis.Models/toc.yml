@@ -1,0 +1,41 @@
+- uid: Microsoft.Bot.Builder.Luis.Models
+  name: Microsoft.Bot.Builder.Luis.Models
+  items:
+  - uid: Microsoft.Bot.Builder.Luis.Models.Action
+    name: Action
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.Models.ActionParameter
+    name: ActionParameter
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.Models.CompositeChild
+    name: CompositeChild
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.Models.CompositeEntity
+    name: CompositeEntity
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.Models.DialogResponse
+    name: DialogResponse
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.Models.DialogResponse.DialogStatus
+    name: DialogResponse.DialogStatus
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+    name: EntityRecommendation
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.Models.IntentRecommendation
+    name: IntentRecommendation
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Luis.Models.LuisResult
+    name: LuisResult
+    version:
+    - botbuilder-3.5.5
+  version:
+  - botbuilder-3.5.5

@@ -1,0 +1,29 @@
+- uid: Microsoft.Bot.Builder.Base
+  name: Microsoft.Bot.Builder.Base
+  items:
+  - uid: Microsoft.Bot.Builder.Base.EventQueue`1
+    name: EventQueue<Event>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Base.IEventConsumer`1
+    name: IEventConsumer<Event>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Base.IEventLoop
+    name: IEventLoop
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Base.IEventProducer`1
+    name: IEventProducer<Event>
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Base.LocalizedScope
+    name: LocalizedScope
+    version:
+    - botbuilder-3.5.5
+  - uid: Microsoft.Bot.Builder.Base.Types
+    name: Types
+    version:
+    - botbuilder-3.5.5
+  version:
+  - botbuilder-3.5.5

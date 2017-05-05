@@ -1,0 +1,195 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx
+  commentId: T:Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx
+  id: KeyboardCardEx
+  children:
+  - Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx.ToAttachment(Microsoft.Bot.Builder.ConnectorEx.KeyboardCard)
+  - Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx.ToFacebookMessage(Microsoft.Bot.Builder.ConnectorEx.KeyboardCard)
+  - Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx.ToHeroCard(Microsoft.Bot.Builder.ConnectorEx.KeyboardCard)
+  langs:
+  - csharp
+  name: KeyboardCardEx
+  nameWithType: KeyboardCardEx
+  fullName: Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.ConnectorEx
+  summary: Extension methods for <xref href="Microsoft.Bot.Builder.ConnectorEx.KeyboardCard"></xref>
+  syntax:
+    content: public static class KeyboardCardEx
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/KeyboardCardEx.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx.ToAttachment(Microsoft.Bot.Builder.ConnectorEx.KeyboardCard)
+  commentId: M:Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx.ToAttachment(Microsoft.Bot.Builder.ConnectorEx.KeyboardCard)
+  id: ToAttachment(Microsoft.Bot.Builder.ConnectorEx.KeyboardCard)
+  parent: Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx
+  langs:
+  - csharp
+  name: ToAttachment(KeyboardCard)
+  nameWithType: KeyboardCardEx.ToAttachment(KeyboardCard)
+  fullName: KeyboardCardEx.ToAttachment(KeyboardCard)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.ConnectorEx
+  syntax:
+    content: public static Microsoft.Bot.Connector.Attachment ToAttachment (this Microsoft.Bot.Builder.ConnectorEx.KeyboardCard keyboard);
+    parameters:
+    - id: keyboard
+      type: Microsoft.Bot.Builder.ConnectorEx.KeyboardCard
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Connector.Attachment
+      description: To be added.
+  overload: Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx.ToAttachment*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/KeyboardCardEx.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx.ToFacebookMessage(Microsoft.Bot.Builder.ConnectorEx.KeyboardCard)
+  commentId: M:Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx.ToFacebookMessage(Microsoft.Bot.Builder.ConnectorEx.KeyboardCard)
+  id: ToFacebookMessage(Microsoft.Bot.Builder.ConnectorEx.KeyboardCard)
+  parent: Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx
+  langs:
+  - csharp
+  name: ToFacebookMessage(KeyboardCard)
+  nameWithType: KeyboardCardEx.ToFacebookMessage(KeyboardCard)
+  fullName: KeyboardCardEx.ToFacebookMessage(KeyboardCard)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.ConnectorEx
+  summary: Maps a <xref href="Microsoft.Bot.Builder.ConnectorEx.KeyboardCard"></xref> to a <xref href="Microsoft.Bot.Builder.ConnectorEx.FacebookMessage"></xref>
+  syntax:
+    content: public static Microsoft.Bot.Builder.ConnectorEx.FacebookMessage ToFacebookMessage (this Microsoft.Bot.Builder.ConnectorEx.KeyboardCard keyboard);
+    parameters:
+    - id: keyboard
+      type: Microsoft.Bot.Builder.ConnectorEx.KeyboardCard
+      description: The keyboard card.
+    return:
+      type: Microsoft.Bot.Builder.ConnectorEx.FacebookMessage
+      description: To be added.
+  overload: Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx.ToFacebookMessage*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/KeyboardCardEx.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx.ToHeroCard(Microsoft.Bot.Builder.ConnectorEx.KeyboardCard)
+  commentId: M:Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx.ToHeroCard(Microsoft.Bot.Builder.ConnectorEx.KeyboardCard)
+  id: ToHeroCard(Microsoft.Bot.Builder.ConnectorEx.KeyboardCard)
+  parent: Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx
+  langs:
+  - csharp
+  name: ToHeroCard(KeyboardCard)
+  nameWithType: KeyboardCardEx.ToHeroCard(KeyboardCard)
+  fullName: KeyboardCardEx.ToHeroCard(KeyboardCard)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.ConnectorEx
+  summary: Maps a <xref href="Microsoft.Bot.Builder.ConnectorEx.KeyboardCard"></xref> to a <xref href="Microsoft.Bot.Connector.HeroCard"></xref>
+  syntax:
+    content: public static Microsoft.Bot.Connector.HeroCard ToHeroCard (this Microsoft.Bot.Builder.ConnectorEx.KeyboardCard keyboard);
+    parameters:
+    - id: keyboard
+      type: Microsoft.Bot.Builder.ConnectorEx.KeyboardCard
+      description: The keyboard card.
+    return:
+      type: Microsoft.Bot.Connector.HeroCard
+      description: To be added.
+  overload: Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx.ToHeroCard*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/KeyboardCardEx.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx.ToAttachment(Microsoft.Bot.Builder.ConnectorEx.KeyboardCard)
+  parent: Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx
+  isExternal: false
+  name: ToAttachment(KeyboardCard)
+  nameWithType: KeyboardCardEx.ToAttachment(KeyboardCard)
+  fullName: KeyboardCardEx.ToAttachment(KeyboardCard)
+- uid: Microsoft.Bot.Connector.Attachment
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: Attachment
+  nameWithType: Attachment
+  fullName: Microsoft.Bot.Connector.Attachment
+- uid: Microsoft.Bot.Builder.ConnectorEx.KeyboardCard
+  parent: Microsoft.Bot.Builder.ConnectorEx
+  isExternal: false
+  name: KeyboardCard
+  nameWithType: KeyboardCard
+  fullName: Microsoft.Bot.Builder.ConnectorEx.KeyboardCard
+- uid: Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx.ToFacebookMessage(Microsoft.Bot.Builder.ConnectorEx.KeyboardCard)
+  parent: Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx
+  isExternal: false
+  name: ToFacebookMessage(KeyboardCard)
+  nameWithType: KeyboardCardEx.ToFacebookMessage(KeyboardCard)
+  fullName: KeyboardCardEx.ToFacebookMessage(KeyboardCard)
+- uid: Microsoft.Bot.Builder.ConnectorEx.FacebookMessage
+  parent: Microsoft.Bot.Builder.ConnectorEx
+  isExternal: false
+  name: FacebookMessage
+  nameWithType: FacebookMessage
+  fullName: Microsoft.Bot.Builder.ConnectorEx.FacebookMessage
+- uid: Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx.ToHeroCard(Microsoft.Bot.Builder.ConnectorEx.KeyboardCard)
+  parent: Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx
+  isExternal: false
+  name: ToHeroCard(KeyboardCard)
+  nameWithType: KeyboardCardEx.ToHeroCard(KeyboardCard)
+  fullName: KeyboardCardEx.ToHeroCard(KeyboardCard)
+- uid: Microsoft.Bot.Connector.HeroCard
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: HeroCard
+  nameWithType: HeroCard
+  fullName: Microsoft.Bot.Connector.HeroCard
+- uid: Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx.ToAttachment*
+  parent: Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx
+  isExternal: false
+  name: ToAttachment
+  nameWithType: KeyboardCardEx.ToAttachment
+  fullName: KeyboardCardEx.ToAttachment
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/KeyboardCardEx.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx.ToFacebookMessage*
+  parent: Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx
+  isExternal: false
+  name: ToFacebookMessage
+  nameWithType: KeyboardCardEx.ToFacebookMessage
+  fullName: KeyboardCardEx.ToFacebookMessage
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/KeyboardCardEx.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx.ToHeroCard*
+  parent: Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx
+  isExternal: false
+  name: ToHeroCard
+  nameWithType: KeyboardCardEx.ToHeroCard
+  fullName: KeyboardCardEx.ToHeroCard
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.ConnectorEx/KeyboardCardEx.xml

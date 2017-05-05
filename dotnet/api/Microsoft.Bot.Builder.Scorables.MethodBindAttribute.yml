@@ -1,0 +1,80 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Scorables.MethodBindAttribute
+  commentId: T:Microsoft.Bot.Builder.Scorables.MethodBindAttribute
+  id: MethodBindAttribute
+  children:
+  - Microsoft.Bot.Builder.Scorables.MethodBindAttribute.#ctor
+  langs:
+  - csharp
+  name: MethodBindAttribute
+  nameWithType: MethodBindAttribute
+  fullName: Microsoft.Bot.Builder.Scorables.MethodBindAttribute
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Scorables
+  summary: >-
+    This attribute is used to specify that a method will participate in the
+                scoring process for overload resolution.
+  syntax:
+    content: >-
+      [System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Method, AllowMultiple=true, Inherited=true)]
+
+      public sealed class MethodBindAttribute : Attribute
+  inheritance:
+  - System.Attribute
+  implements: []
+  inheritedMembers: []
+  attributes:
+  - type: System.AttributeUsage
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/MethodBindAttribute.xml
+- uid: Microsoft.Bot.Builder.Scorables.MethodBindAttribute.#ctor
+  commentId: M:Microsoft.Bot.Builder.Scorables.MethodBindAttribute.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Builder.Scorables.MethodBindAttribute
+  langs:
+  - csharp
+  name: MethodBindAttribute()
+  nameWithType: MethodBindAttribute.MethodBindAttribute()
+  fullName: MethodBindAttribute.MethodBindAttribute()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables
+  syntax:
+    content: public MethodBindAttribute ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.Scorables.MethodBindAttribute.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/MethodBindAttribute.xml
+references:
+- uid: System.Attribute
+  parent: System
+  isExternal: true
+  name: Attribute
+  nameWithType: Attribute
+  fullName: System.Attribute
+- uid: Microsoft.Bot.Builder.Scorables.MethodBindAttribute.#ctor
+  parent: Microsoft.Bot.Builder.Scorables.MethodBindAttribute
+  isExternal: false
+  name: MethodBindAttribute()
+  nameWithType: MethodBindAttribute.MethodBindAttribute()
+  fullName: MethodBindAttribute.MethodBindAttribute()
+- uid: Microsoft.Bot.Builder.Scorables.MethodBindAttribute.#ctor*
+  parent: Microsoft.Bot.Builder.Scorables.MethodBindAttribute
+  isExternal: false
+  name: MethodBindAttribute
+  nameWithType: MethodBindAttribute.MethodBindAttribute
+  fullName: MethodBindAttribute.MethodBindAttribute
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables/MethodBindAttribute.xml

@@ -1,0 +1,925 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Connector.IActivity
+  commentId: T:Microsoft.Bot.Connector.IActivity
+  id: IActivity
+  children:
+  - Microsoft.Bot.Connector.IActivity.AsContactRelationUpdateActivity
+  - Microsoft.Bot.Connector.IActivity.AsConversationUpdateActivity
+  - Microsoft.Bot.Connector.IActivity.AsEndOfConversationActivity
+  - Microsoft.Bot.Connector.IActivity.AsEventActivity
+  - Microsoft.Bot.Connector.IActivity.AsInvokeActivity
+  - Microsoft.Bot.Connector.IActivity.AsMessageActivity
+  - Microsoft.Bot.Connector.IActivity.AsTypingActivity
+  - Microsoft.Bot.Connector.IActivity.ChannelData
+  - Microsoft.Bot.Connector.IActivity.ChannelId
+  - Microsoft.Bot.Connector.IActivity.Conversation
+  - Microsoft.Bot.Connector.IActivity.From
+  - Microsoft.Bot.Connector.IActivity.Id
+  - Microsoft.Bot.Connector.IActivity.LocalTimestamp
+  - Microsoft.Bot.Connector.IActivity.Recipient
+  - Microsoft.Bot.Connector.IActivity.ReplyToId
+  - Microsoft.Bot.Connector.IActivity.ServiceUrl
+  - Microsoft.Bot.Connector.IActivity.Timestamp
+  - Microsoft.Bot.Connector.IActivity.Type
+  langs:
+  - csharp
+  name: IActivity
+  nameWithType: IActivity
+  fullName: Microsoft.Bot.Connector.IActivity
+  type: Interface
+  assemblies:
+  - Microsoft.Bot.Connector
+  namespace: Microsoft.Bot.Connector
+  summary: Shared properties for all activities
+  syntax:
+    content: public interface IActivity
+  derivedClasses:
+  - Microsoft.Bot.Connector.IContactRelationUpdateActivity
+  - Microsoft.Bot.Connector.IConversationUpdateActivity
+  - Microsoft.Bot.Connector.IEndOfConversationActivity
+  - Microsoft.Bot.Connector.IEventActivity
+  - Microsoft.Bot.Connector.IInvokeActivity
+  - Microsoft.Bot.Connector.IMessageActivity
+  - Microsoft.Bot.Connector.ITypingActivity
+  implements: []
+  extensionMethods:
+  - Microsoft.Bot.Builder.ConnectorEx.Extensions.ToConversationReference(Microsoft.Bot.Connector.IActivity)
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.AsContactRelationUpdateActivity
+  commentId: M:Microsoft.Bot.Connector.IActivity.AsContactRelationUpdateActivity
+  id: AsContactRelationUpdateActivity
+  parent: Microsoft.Bot.Connector.IActivity
+  langs:
+  - csharp
+  name: AsContactRelationUpdateActivity()
+  nameWithType: IActivity.AsContactRelationUpdateActivity()
+  fullName: IActivity.AsContactRelationUpdateActivity()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Return IContactRelationUpdateActivity if this is a contactRelationUpdate activity, null otherwise
+  syntax:
+    content: public Microsoft.Bot.Connector.IContactRelationUpdateActivity AsContactRelationUpdateActivity ();
+    parameters: []
+    return:
+      type: Microsoft.Bot.Connector.IContactRelationUpdateActivity
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IActivity.AsContactRelationUpdateActivity*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.AsConversationUpdateActivity
+  commentId: M:Microsoft.Bot.Connector.IActivity.AsConversationUpdateActivity
+  id: AsConversationUpdateActivity
+  parent: Microsoft.Bot.Connector.IActivity
+  langs:
+  - csharp
+  name: AsConversationUpdateActivity()
+  nameWithType: IActivity.AsConversationUpdateActivity()
+  fullName: IActivity.AsConversationUpdateActivity()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Return IConversationUpdateActivity if this is a conversationUpdate activity, null otherwise
+  syntax:
+    content: public Microsoft.Bot.Connector.IConversationUpdateActivity AsConversationUpdateActivity ();
+    parameters: []
+    return:
+      type: Microsoft.Bot.Connector.IConversationUpdateActivity
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IActivity.AsConversationUpdateActivity*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.AsEndOfConversationActivity
+  commentId: M:Microsoft.Bot.Connector.IActivity.AsEndOfConversationActivity
+  id: AsEndOfConversationActivity
+  parent: Microsoft.Bot.Connector.IActivity
+  langs:
+  - csharp
+  name: AsEndOfConversationActivity()
+  nameWithType: IActivity.AsEndOfConversationActivity()
+  fullName: IActivity.AsEndOfConversationActivity()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Return IEndOfConversationActivity if this is an end-of-conversation activity, null otherwise
+  syntax:
+    content: public Microsoft.Bot.Connector.IEndOfConversationActivity AsEndOfConversationActivity ();
+    parameters: []
+    return:
+      type: Microsoft.Bot.Connector.IEndOfConversationActivity
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IActivity.AsEndOfConversationActivity*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.AsEventActivity
+  commentId: M:Microsoft.Bot.Connector.IActivity.AsEventActivity
+  id: AsEventActivity
+  parent: Microsoft.Bot.Connector.IActivity
+  langs:
+  - csharp
+  name: AsEventActivity()
+  nameWithType: IActivity.AsEventActivity()
+  fullName: IActivity.AsEventActivity()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Returns IEventActivity if this is an event activity, null otherwise
+  syntax:
+    content: public Microsoft.Bot.Connector.IEventActivity AsEventActivity ();
+    parameters: []
+    return:
+      type: Microsoft.Bot.Connector.IEventActivity
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IActivity.AsEventActivity*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.AsInvokeActivity
+  commentId: M:Microsoft.Bot.Connector.IActivity.AsInvokeActivity
+  id: AsInvokeActivity
+  parent: Microsoft.Bot.Connector.IActivity
+  langs:
+  - csharp
+  name: AsInvokeActivity()
+  nameWithType: IActivity.AsInvokeActivity()
+  fullName: IActivity.AsInvokeActivity()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Returns IInvokeActivity if this is an invoke activity, null otherwise
+  syntax:
+    content: public Microsoft.Bot.Connector.IInvokeActivity AsInvokeActivity ();
+    parameters: []
+    return:
+      type: Microsoft.Bot.Connector.IInvokeActivity
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IActivity.AsInvokeActivity*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.AsMessageActivity
+  commentId: M:Microsoft.Bot.Connector.IActivity.AsMessageActivity
+  id: AsMessageActivity
+  parent: Microsoft.Bot.Connector.IActivity
+  langs:
+  - csharp
+  name: AsMessageActivity()
+  nameWithType: IActivity.AsMessageActivity()
+  fullName: IActivity.AsMessageActivity()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Return IMessageActivity if this is a message activity, null otherwise
+  syntax:
+    content: public Microsoft.Bot.Connector.IMessageActivity AsMessageActivity ();
+    parameters: []
+    return:
+      type: Microsoft.Bot.Connector.IMessageActivity
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IActivity.AsMessageActivity*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.AsTypingActivity
+  commentId: M:Microsoft.Bot.Connector.IActivity.AsTypingActivity
+  id: AsTypingActivity
+  parent: Microsoft.Bot.Connector.IActivity
+  langs:
+  - csharp
+  name: AsTypingActivity()
+  nameWithType: IActivity.AsTypingActivity()
+  fullName: IActivity.AsTypingActivity()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Return ITypingActivity if this is a typing activity, null otherwise
+  syntax:
+    content: public Microsoft.Bot.Connector.ITypingActivity AsTypingActivity ();
+    parameters: []
+    return:
+      type: Microsoft.Bot.Connector.ITypingActivity
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IActivity.AsTypingActivity*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.ChannelData
+  commentId: P:Microsoft.Bot.Connector.IActivity.ChannelData
+  id: ChannelData
+  parent: Microsoft.Bot.Connector.IActivity
+  langs:
+  - csharp
+  name: ChannelData
+  nameWithType: IActivity.ChannelData
+  fullName: IActivity.ChannelData
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Channel specific payload
+  remarks: "Some channels will provide channel specific data.\n            \n            For a message originating in the channel it might provide the original native schema object for the channel. \n            \n            For a message coming into the channel it might accept a payload allowing you to create a \"native\" response for the channel.\n            \n            Example:\n            * Email - The Email Channel will put the original Email metadata into the ChannelData object for outgoing messages, and will accep\n            on incoming message a Subject property, and a HtmlBody which can contain Html.  \n            \n            The channel data essentially allows a bot to have access to native functionality on a per channel basis."
+  syntax:
+    content: public dynamic ChannelData { get; set; }
+    return:
+      type: System.Object
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IActivity.ChannelData*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.ChannelId
+  commentId: P:Microsoft.Bot.Connector.IActivity.ChannelId
+  id: ChannelId
+  parent: Microsoft.Bot.Connector.IActivity
+  langs:
+  - csharp
+  name: ChannelId
+  nameWithType: IActivity.ChannelId
+  fullName: IActivity.ChannelId
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Channel this activity is associated with
+  syntax:
+    content: public string ChannelId { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IActivity.ChannelId*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.Conversation
+  commentId: P:Microsoft.Bot.Connector.IActivity.Conversation
+  id: Conversation
+  parent: Microsoft.Bot.Connector.IActivity
+  langs:
+  - csharp
+  name: Conversation
+  nameWithType: IActivity.Conversation
+  fullName: IActivity.Conversation
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Address for the conversation that this activity is associated with
+  syntax:
+    content: public Microsoft.Bot.Connector.ConversationAccount Conversation { get; set; }
+    return:
+      type: Microsoft.Bot.Connector.ConversationAccount
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IActivity.Conversation*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.From
+  commentId: P:Microsoft.Bot.Connector.IActivity.From
+  id: From
+  parent: Microsoft.Bot.Connector.IActivity
+  langs:
+  - csharp
+  name: From
+  nameWithType: IActivity.From
+  fullName: IActivity.From
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Sender address data
+  syntax:
+    content: public Microsoft.Bot.Connector.ChannelAccount From { get; set; }
+    return:
+      type: Microsoft.Bot.Connector.ChannelAccount
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IActivity.From*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.Id
+  commentId: P:Microsoft.Bot.Connector.IActivity.Id
+  id: Id
+  parent: Microsoft.Bot.Connector.IActivity
+  langs:
+  - csharp
+  name: Id
+  nameWithType: IActivity.Id
+  fullName: IActivity.Id
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Id for the activity
+  syntax:
+    content: public string Id { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IActivity.Id*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.LocalTimestamp
+  commentId: P:Microsoft.Bot.Connector.IActivity.LocalTimestamp
+  id: LocalTimestamp
+  parent: Microsoft.Bot.Connector.IActivity
+  langs:
+  - csharp
+  name: LocalTimestamp
+  nameWithType: IActivity.LocalTimestamp
+  fullName: IActivity.LocalTimestamp
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: 'Client Time when message was sent Ex: 2016-09-23T13:07:49.4714686-07:00'
+  syntax:
+    content: public Nullable<DateTimeOffset> LocalTimestamp { get; set; }
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IActivity.LocalTimestamp*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.Recipient
+  commentId: P:Microsoft.Bot.Connector.IActivity.Recipient
+  id: Recipient
+  parent: Microsoft.Bot.Connector.IActivity
+  langs:
+  - csharp
+  name: Recipient
+  nameWithType: IActivity.Recipient
+  fullName: IActivity.Recipient
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Address that received the message
+  syntax:
+    content: public Microsoft.Bot.Connector.ChannelAccount Recipient { get; set; }
+    return:
+      type: Microsoft.Bot.Connector.ChannelAccount
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IActivity.Recipient*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.ReplyToId
+  commentId: P:Microsoft.Bot.Connector.IActivity.ReplyToId
+  id: ReplyToId
+  parent: Microsoft.Bot.Connector.IActivity
+  langs:
+  - csharp
+  name: ReplyToId
+  nameWithType: IActivity.ReplyToId
+  fullName: IActivity.ReplyToId
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: The original id this message is a response to
+  syntax:
+    content: public string ReplyToId { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IActivity.ReplyToId*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.ServiceUrl
+  commentId: P:Microsoft.Bot.Connector.IActivity.ServiceUrl
+  id: ServiceUrl
+  parent: Microsoft.Bot.Connector.IActivity
+  langs:
+  - csharp
+  name: ServiceUrl
+  nameWithType: IActivity.ServiceUrl
+  fullName: IActivity.ServiceUrl
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: ServiceUrl
+  syntax:
+    content: public string ServiceUrl { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IActivity.ServiceUrl*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.Timestamp
+  commentId: P:Microsoft.Bot.Connector.IActivity.Timestamp
+  id: Timestamp
+  parent: Microsoft.Bot.Connector.IActivity
+  langs:
+  - csharp
+  name: Timestamp
+  nameWithType: IActivity.Timestamp
+  fullName: IActivity.Timestamp
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: UTC Time when message was sent
+  syntax:
+    content: public Nullable<DateTime> Timestamp { get; set; }
+    return:
+      type: System.Nullable{System.DateTime}
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IActivity.Timestamp*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.Type
+  commentId: P:Microsoft.Bot.Connector.IActivity.Type
+  id: Type
+  parent: Microsoft.Bot.Connector.IActivity
+  langs:
+  - csharp
+  name: Type
+  nameWithType: IActivity.Type
+  fullName: IActivity.Type
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Connector
+  summary: Activity type
+  syntax:
+    content: public string Type { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Connector.IActivity.Type*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+references:
+- uid: Microsoft.Bot.Connector.IActivity.AsContactRelationUpdateActivity
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: AsContactRelationUpdateActivity()
+  nameWithType: IActivity.AsContactRelationUpdateActivity()
+  fullName: IActivity.AsContactRelationUpdateActivity()
+- uid: Microsoft.Bot.Connector.IContactRelationUpdateActivity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IContactRelationUpdateActivity
+  nameWithType: IContactRelationUpdateActivity
+  fullName: Microsoft.Bot.Connector.IContactRelationUpdateActivity
+- uid: Microsoft.Bot.Connector.IActivity.AsConversationUpdateActivity
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: AsConversationUpdateActivity()
+  nameWithType: IActivity.AsConversationUpdateActivity()
+  fullName: IActivity.AsConversationUpdateActivity()
+- uid: Microsoft.Bot.Connector.IConversationUpdateActivity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IConversationUpdateActivity
+  nameWithType: IConversationUpdateActivity
+  fullName: Microsoft.Bot.Connector.IConversationUpdateActivity
+- uid: Microsoft.Bot.Connector.IActivity.AsEndOfConversationActivity
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: AsEndOfConversationActivity()
+  nameWithType: IActivity.AsEndOfConversationActivity()
+  fullName: IActivity.AsEndOfConversationActivity()
+- uid: Microsoft.Bot.Connector.IEndOfConversationActivity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IEndOfConversationActivity
+  nameWithType: IEndOfConversationActivity
+  fullName: Microsoft.Bot.Connector.IEndOfConversationActivity
+- uid: Microsoft.Bot.Connector.IActivity.AsEventActivity
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: AsEventActivity()
+  nameWithType: IActivity.AsEventActivity()
+  fullName: IActivity.AsEventActivity()
+- uid: Microsoft.Bot.Connector.IEventActivity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IEventActivity
+  nameWithType: IEventActivity
+  fullName: Microsoft.Bot.Connector.IEventActivity
+- uid: Microsoft.Bot.Connector.IActivity.AsInvokeActivity
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: AsInvokeActivity()
+  nameWithType: IActivity.AsInvokeActivity()
+  fullName: IActivity.AsInvokeActivity()
+- uid: Microsoft.Bot.Connector.IInvokeActivity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IInvokeActivity
+  nameWithType: IInvokeActivity
+  fullName: Microsoft.Bot.Connector.IInvokeActivity
+- uid: Microsoft.Bot.Connector.IActivity.AsMessageActivity
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: AsMessageActivity()
+  nameWithType: IActivity.AsMessageActivity()
+  fullName: IActivity.AsMessageActivity()
+- uid: Microsoft.Bot.Connector.IMessageActivity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: IMessageActivity
+  nameWithType: IMessageActivity
+  fullName: Microsoft.Bot.Connector.IMessageActivity
+- uid: Microsoft.Bot.Connector.IActivity.AsTypingActivity
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: AsTypingActivity()
+  nameWithType: IActivity.AsTypingActivity()
+  fullName: IActivity.AsTypingActivity()
+- uid: Microsoft.Bot.Connector.ITypingActivity
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: ITypingActivity
+  nameWithType: ITypingActivity
+  fullName: Microsoft.Bot.Connector.ITypingActivity
+- uid: Microsoft.Bot.Connector.IActivity.ChannelData
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: ChannelData
+  nameWithType: IActivity.ChannelData
+  fullName: IActivity.ChannelData
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Connector.IActivity.ChannelId
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: ChannelId
+  nameWithType: IActivity.ChannelId
+  fullName: IActivity.ChannelId
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Connector.IActivity.Conversation
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: Conversation
+  nameWithType: IActivity.Conversation
+  fullName: IActivity.Conversation
+- uid: Microsoft.Bot.Connector.ConversationAccount
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: ConversationAccount
+  nameWithType: ConversationAccount
+  fullName: Microsoft.Bot.Connector.ConversationAccount
+- uid: Microsoft.Bot.Connector.IActivity.From
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: From
+  nameWithType: IActivity.From
+  fullName: IActivity.From
+- uid: Microsoft.Bot.Connector.ChannelAccount
+  parent: Microsoft.Bot.Connector
+  isExternal: false
+  name: ChannelAccount
+  nameWithType: ChannelAccount
+  fullName: Microsoft.Bot.Connector.ChannelAccount
+- uid: Microsoft.Bot.Connector.IActivity.Id
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: Id
+  nameWithType: IActivity.Id
+  fullName: IActivity.Id
+- uid: Microsoft.Bot.Connector.IActivity.LocalTimestamp
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: LocalTimestamp
+  nameWithType: IActivity.LocalTimestamp
+  fullName: IActivity.LocalTimestamp
+- uid: System.Nullable`1
+  name: Nullable
+  nameWithType: Nullable
+  fullName: System.Nullable
+- uid: System.DateTimeOffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: System.Nullable{System.DateTimeOffset}
+  parent: System
+  isExternal: true
+  name: Nullable<DateTimeOffset>
+  nameWithType: Nullable<DateTimeOffset>
+  fullName: System.Nullable<System.DateTimeOffset>
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    nameWithType: DateTimeOffset
+    fullName: System.DateTimeOffset
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Connector.IActivity.Recipient
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: Recipient
+  nameWithType: IActivity.Recipient
+  fullName: IActivity.Recipient
+- uid: Microsoft.Bot.Connector.IActivity.ReplyToId
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: ReplyToId
+  nameWithType: IActivity.ReplyToId
+  fullName: IActivity.ReplyToId
+- uid: Microsoft.Bot.Connector.IActivity.ServiceUrl
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: ServiceUrl
+  nameWithType: IActivity.ServiceUrl
+  fullName: IActivity.ServiceUrl
+- uid: Microsoft.Bot.Connector.IActivity.Timestamp
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: Timestamp
+  nameWithType: IActivity.Timestamp
+  fullName: IActivity.Timestamp
+- uid: System.DateTime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: System.Nullable{System.DateTime}
+  parent: System
+  isExternal: true
+  name: Nullable<DateTime>
+  nameWithType: Nullable<DateTime>
+  fullName: System.Nullable<System.DateTime>
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: System.DateTime
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Connector.IActivity.Type
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: Type
+  nameWithType: IActivity.Type
+  fullName: IActivity.Type
+- uid: Microsoft.Bot.Connector.IActivity.AsContactRelationUpdateActivity*
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: AsContactRelationUpdateActivity
+  nameWithType: IActivity.AsContactRelationUpdateActivity
+  fullName: IActivity.AsContactRelationUpdateActivity
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.AsConversationUpdateActivity*
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: AsConversationUpdateActivity
+  nameWithType: IActivity.AsConversationUpdateActivity
+  fullName: IActivity.AsConversationUpdateActivity
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.AsEndOfConversationActivity*
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: AsEndOfConversationActivity
+  nameWithType: IActivity.AsEndOfConversationActivity
+  fullName: IActivity.AsEndOfConversationActivity
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.AsEventActivity*
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: AsEventActivity
+  nameWithType: IActivity.AsEventActivity
+  fullName: IActivity.AsEventActivity
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.AsInvokeActivity*
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: AsInvokeActivity
+  nameWithType: IActivity.AsInvokeActivity
+  fullName: IActivity.AsInvokeActivity
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.AsMessageActivity*
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: AsMessageActivity
+  nameWithType: IActivity.AsMessageActivity
+  fullName: IActivity.AsMessageActivity
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.AsTypingActivity*
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: AsTypingActivity
+  nameWithType: IActivity.AsTypingActivity
+  fullName: IActivity.AsTypingActivity
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.ChannelData*
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: ChannelData
+  nameWithType: IActivity.ChannelData
+  fullName: IActivity.ChannelData
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.ChannelId*
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: ChannelId
+  nameWithType: IActivity.ChannelId
+  fullName: IActivity.ChannelId
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.Conversation*
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: Conversation
+  nameWithType: IActivity.Conversation
+  fullName: IActivity.Conversation
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.From*
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: From
+  nameWithType: IActivity.From
+  fullName: IActivity.From
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.Id*
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: Id
+  nameWithType: IActivity.Id
+  fullName: IActivity.Id
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.LocalTimestamp*
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: LocalTimestamp
+  nameWithType: IActivity.LocalTimestamp
+  fullName: IActivity.LocalTimestamp
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.Recipient*
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: Recipient
+  nameWithType: IActivity.Recipient
+  fullName: IActivity.Recipient
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.ReplyToId*
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: ReplyToId
+  nameWithType: IActivity.ReplyToId
+  fullName: IActivity.ReplyToId
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.ServiceUrl*
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: ServiceUrl
+  nameWithType: IActivity.ServiceUrl
+  fullName: IActivity.ServiceUrl
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.Timestamp*
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: Timestamp
+  nameWithType: IActivity.Timestamp
+  fullName: IActivity.Timestamp
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Connector.IActivity.Type*
+  parent: Microsoft.Bot.Connector.IActivity
+  isExternal: false
+  name: Type
+  nameWithType: IActivity.Type
+  fullName: IActivity.Type
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Connector/IActivity.xml
+- uid: Microsoft.Bot.Builder.ConnectorEx.Extensions.ToConversationReference(Microsoft.Bot.Connector.IActivity)
+  parent: Microsoft.Bot.Builder.ConnectorEx.Extensions
+  isExternal: false
+  name: ToConversationReference(IActivity)
+  nameWithType: Extensions.ToConversationReference(IActivity)
+  fullName: Extensions.ToConversationReference(IActivity)

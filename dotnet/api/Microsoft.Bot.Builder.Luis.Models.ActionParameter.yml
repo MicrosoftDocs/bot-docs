@@ -1,0 +1,318 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Luis.Models.ActionParameter
+  commentId: T:Microsoft.Bot.Builder.Luis.Models.ActionParameter
+  id: ActionParameter
+  children:
+  - Microsoft.Bot.Builder.Luis.Models.ActionParameter.#ctor
+  - Microsoft.Bot.Builder.Luis.Models.ActionParameter.#ctor(System.String,System.Nullable{System.Boolean},System.Collections.Generic.IList{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation})
+  - Microsoft.Bot.Builder.Luis.Models.ActionParameter.Name
+  - Microsoft.Bot.Builder.Luis.Models.ActionParameter.Required
+  - Microsoft.Bot.Builder.Luis.Models.ActionParameter.Value
+  langs:
+  - csharp
+  name: ActionParameter
+  nameWithType: ActionParameter
+  fullName: Microsoft.Bot.Builder.Luis.Models.ActionParameter
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Luis.Models
+  syntax:
+    content: public class ActionParameter
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/ActionParameter.xml
+- uid: Microsoft.Bot.Builder.Luis.Models.ActionParameter.#ctor
+  commentId: M:Microsoft.Bot.Builder.Luis.Models.ActionParameter.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Builder.Luis.Models.ActionParameter
+  langs:
+  - csharp
+  name: ActionParameter()
+  nameWithType: ActionParameter.ActionParameter()
+  fullName: ActionParameter.ActionParameter()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis.Models
+  summary: Initializes a new instance of the ActionParameter class.
+  syntax:
+    content: public ActionParameter ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.Luis.Models.ActionParameter.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/ActionParameter.xml
+- uid: Microsoft.Bot.Builder.Luis.Models.ActionParameter.#ctor(System.String,System.Nullable{System.Boolean},System.Collections.Generic.IList{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation})
+  commentId: M:Microsoft.Bot.Builder.Luis.Models.ActionParameter.#ctor(System.String,System.Nullable{System.Boolean},System.Collections.Generic.IList{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation})
+  id: '#ctor(System.String,System.Nullable{System.Boolean},System.Collections.Generic.IList{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation})'
+  parent: Microsoft.Bot.Builder.Luis.Models.ActionParameter
+  langs:
+  - csharp
+  name: ActionParameter(String, Nullable<Boolean>, IList<EntityRecommendation>)
+  nameWithType: ActionParameter.ActionParameter(String, Nullable<Boolean>, IList<EntityRecommendation>)
+  fullName: ActionParameter.ActionParameter(String, Nullable<Boolean>, IList<EntityRecommendation>)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis.Models
+  summary: Initializes a new instance of the ActionParameter class.
+  syntax:
+    content: public ActionParameter (string name = null, Nullable<bool> required = null, System.Collections.Generic.IList<Microsoft.Bot.Builder.Luis.Models.EntityRecommendation> value = null);
+    parameters:
+    - id: name
+      type: System.String
+      description: To be added.
+    - id: required
+      type: System.Nullable{System.Boolean}
+      description: To be added.
+    - id: value
+      type: System.Collections.Generic.IList{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Luis.Models.ActionParameter.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/ActionParameter.xml
+- uid: Microsoft.Bot.Builder.Luis.Models.ActionParameter.Name
+  commentId: P:Microsoft.Bot.Builder.Luis.Models.ActionParameter.Name
+  id: Name
+  parent: Microsoft.Bot.Builder.Luis.Models.ActionParameter
+  langs:
+  - csharp
+  name: Name
+  nameWithType: ActionParameter.Name
+  fullName: ActionParameter.Name
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis.Models
+  summary: Name of the parameter.
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="name")]
+
+      public string Name { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Luis.Models.ActionParameter.Name*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/ActionParameter.xml
+- uid: Microsoft.Bot.Builder.Luis.Models.ActionParameter.Required
+  commentId: P:Microsoft.Bot.Builder.Luis.Models.ActionParameter.Required
+  id: Required
+  parent: Microsoft.Bot.Builder.Luis.Models.ActionParameter
+  langs:
+  - csharp
+  name: Required
+  nameWithType: ActionParameter.Required
+  fullName: ActionParameter.Required
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis.Models
+  summary: True if the parameter is required, false otherwise.
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="required")]
+
+      public Nullable<bool> Required { get; set; }
+    return:
+      type: System.Nullable{System.Boolean}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Luis.Models.ActionParameter.Required*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/ActionParameter.xml
+- uid: Microsoft.Bot.Builder.Luis.Models.ActionParameter.Value
+  commentId: P:Microsoft.Bot.Builder.Luis.Models.ActionParameter.Value
+  id: Value
+  parent: Microsoft.Bot.Builder.Luis.Models.ActionParameter
+  langs:
+  - csharp
+  name: Value
+  nameWithType: ActionParameter.Value
+  fullName: ActionParameter.Value
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Luis.Models
+  summary: Value of extracted entities for this parameter.
+  syntax:
+    content: >-
+      [Newtonsoft.Json.JsonProperty(PropertyName="value")]
+
+      public System.Collections.Generic.IList<Microsoft.Bot.Builder.Luis.Models.EntityRecommendation> Value { get; set; }
+    return:
+      type: System.Collections.Generic.IList{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Luis.Models.ActionParameter.Value*
+  exceptions: []
+  attributes:
+  - type: Newtonsoft.Json.JsonProperty
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/ActionParameter.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Luis.Models.ActionParameter.#ctor
+  parent: Microsoft.Bot.Builder.Luis.Models.ActionParameter
+  isExternal: false
+  name: ActionParameter()
+  nameWithType: ActionParameter.ActionParameter()
+  fullName: ActionParameter.ActionParameter()
+- uid: Microsoft.Bot.Builder.Luis.Models.ActionParameter.#ctor(System.String,System.Nullable{System.Boolean},System.Collections.Generic.IList{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation})
+  parent: Microsoft.Bot.Builder.Luis.Models.ActionParameter
+  isExternal: false
+  name: ActionParameter(String, Nullable<Boolean>, IList<EntityRecommendation>)
+  nameWithType: ActionParameter.ActionParameter(String, Nullable<Boolean>, IList<EntityRecommendation>)
+  fullName: ActionParameter.ActionParameter(String, Nullable<Boolean>, IList<EntityRecommendation>)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Nullable`1
+  name: Nullable
+  nameWithType: Nullable
+  fullName: System.Nullable
+- uid: System.Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Nullable{System.Boolean}
+  parent: System
+  isExternal: true
+  name: Nullable<Boolean>
+  nameWithType: Nullable<Boolean>
+  fullName: System.Nullable<System.Boolean>
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Collections.Generic.IList`1
+  name: IList
+  nameWithType: IList
+  fullName: System.Collections.Generic.IList
+- uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  name: EntityRecommendation
+  nameWithType: EntityRecommendation
+  fullName: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+- uid: System.Collections.Generic.IList{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IList<EntityRecommendation>
+  nameWithType: IList<EntityRecommendation>
+  fullName: System.Collections.Generic.IList<Microsoft.Bot.Builder.Luis.Models.EntityRecommendation>
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+    name: EntityRecommendation
+    nameWithType: EntityRecommendation
+    fullName: Microsoft.Bot.Builder.Luis.Models.EntityRecommendation
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Luis.Models.ActionParameter.Name
+  parent: Microsoft.Bot.Builder.Luis.Models.ActionParameter
+  isExternal: false
+  name: Name
+  nameWithType: ActionParameter.Name
+  fullName: ActionParameter.Name
+- uid: Microsoft.Bot.Builder.Luis.Models.ActionParameter.Required
+  parent: Microsoft.Bot.Builder.Luis.Models.ActionParameter
+  isExternal: false
+  name: Required
+  nameWithType: ActionParameter.Required
+  fullName: ActionParameter.Required
+- uid: Microsoft.Bot.Builder.Luis.Models.ActionParameter.Value
+  parent: Microsoft.Bot.Builder.Luis.Models.ActionParameter
+  isExternal: false
+  name: Value
+  nameWithType: ActionParameter.Value
+  fullName: ActionParameter.Value
+- uid: Microsoft.Bot.Builder.Luis.Models.ActionParameter.#ctor*
+  parent: Microsoft.Bot.Builder.Luis.Models.ActionParameter
+  isExternal: false
+  name: ActionParameter
+  nameWithType: ActionParameter.ActionParameter
+  fullName: ActionParameter.ActionParameter
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/ActionParameter.xml
+- uid: Microsoft.Bot.Builder.Luis.Models.ActionParameter.Name*
+  parent: Microsoft.Bot.Builder.Luis.Models.ActionParameter
+  isExternal: false
+  name: Name
+  nameWithType: ActionParameter.Name
+  fullName: ActionParameter.Name
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/ActionParameter.xml
+- uid: Microsoft.Bot.Builder.Luis.Models.ActionParameter.Required*
+  parent: Microsoft.Bot.Builder.Luis.Models.ActionParameter
+  isExternal: false
+  name: Required
+  nameWithType: ActionParameter.Required
+  fullName: ActionParameter.Required
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/ActionParameter.xml
+- uid: Microsoft.Bot.Builder.Luis.Models.ActionParameter.Value*
+  parent: Microsoft.Bot.Builder.Luis.Models.ActionParameter
+  isExternal: false
+  name: Value
+  nameWithType: ActionParameter.Value
+  fullName: ActionParameter.Value
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Luis.Models/ActionParameter.xml

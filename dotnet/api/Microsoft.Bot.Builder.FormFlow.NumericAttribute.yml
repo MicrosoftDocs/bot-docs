@@ -1,0 +1,156 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.NumericAttribute
+  commentId: T:Microsoft.Bot.Builder.FormFlow.NumericAttribute
+  id: NumericAttribute
+  children:
+  - Microsoft.Bot.Builder.FormFlow.NumericAttribute.#ctor(System.Double,System.Double)
+  - Microsoft.Bot.Builder.FormFlow.NumericAttribute.Max
+  - Microsoft.Bot.Builder.FormFlow.NumericAttribute.Min
+  langs:
+  - csharp
+  name: NumericAttribute
+  nameWithType: NumericAttribute
+  fullName: Microsoft.Bot.Builder.FormFlow.NumericAttribute
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Provide limits on the possible values in a numeric field or property.
+  remarks: By default the limits are the min and max of the underlying field type.
+  syntax:
+    content: >-
+      [System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field)]
+
+      public class NumericAttribute : Attribute
+  inheritance:
+  - System.Attribute
+  implements: []
+  inheritedMembers: []
+  attributes:
+  - type: System.AttributeUsage
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/NumericAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.NumericAttribute.#ctor(System.Double,System.Double)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.NumericAttribute.#ctor(System.Double,System.Double)
+  id: '#ctor(System.Double,System.Double)'
+  parent: Microsoft.Bot.Builder.FormFlow.NumericAttribute
+  langs:
+  - csharp
+  name: NumericAttribute(Double, Double)
+  nameWithType: NumericAttribute.NumericAttribute(Double, Double)
+  fullName: NumericAttribute.NumericAttribute(Double, Double)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Specify the range of possible values for a number field.
+  syntax:
+    content: public NumericAttribute (double min, double max);
+    parameters:
+    - id: min
+      type: System.Double
+      description: Min value allowed.
+    - id: max
+      type: System.Double
+      description: Max value allowed.
+  overload: Microsoft.Bot.Builder.FormFlow.NumericAttribute.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/NumericAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.NumericAttribute.Max
+  commentId: F:Microsoft.Bot.Builder.FormFlow.NumericAttribute.Max
+  id: Max
+  parent: Microsoft.Bot.Builder.FormFlow.NumericAttribute
+  langs:
+  - csharp
+  name: Max
+  nameWithType: NumericAttribute.Max
+  fullName: NumericAttribute.Max
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Max possible value.
+  syntax:
+    content: public readonly double Max;
+    return:
+      type: System.Double
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/NumericAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.NumericAttribute.Min
+  commentId: F:Microsoft.Bot.Builder.FormFlow.NumericAttribute.Min
+  id: Min
+  parent: Microsoft.Bot.Builder.FormFlow.NumericAttribute
+  langs:
+  - csharp
+  name: Min
+  nameWithType: NumericAttribute.Min
+  fullName: NumericAttribute.Min
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Min possible value.
+  syntax:
+    content: public readonly double Min;
+    return:
+      type: System.Double
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/NumericAttribute.xml
+references:
+- uid: System.Attribute
+  parent: System
+  isExternal: true
+  name: Attribute
+  nameWithType: Attribute
+  fullName: System.Attribute
+- uid: Microsoft.Bot.Builder.FormFlow.NumericAttribute.#ctor(System.Double,System.Double)
+  parent: Microsoft.Bot.Builder.FormFlow.NumericAttribute
+  isExternal: false
+  name: NumericAttribute(Double, Double)
+  nameWithType: NumericAttribute.NumericAttribute(Double, Double)
+  fullName: NumericAttribute.NumericAttribute(Double, Double)
+- uid: System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: Microsoft.Bot.Builder.FormFlow.NumericAttribute.Max
+  parent: Microsoft.Bot.Builder.FormFlow.NumericAttribute
+  isExternal: false
+  name: Max
+  nameWithType: NumericAttribute.Max
+  fullName: NumericAttribute.Max
+- uid: Microsoft.Bot.Builder.FormFlow.NumericAttribute.Min
+  parent: Microsoft.Bot.Builder.FormFlow.NumericAttribute
+  isExternal: false
+  name: Min
+  nameWithType: NumericAttribute.Min
+  fullName: NumericAttribute.Min
+- uid: Microsoft.Bot.Builder.FormFlow.NumericAttribute.#ctor*
+  parent: Microsoft.Bot.Builder.FormFlow.NumericAttribute
+  isExternal: false
+  name: NumericAttribute
+  nameWithType: NumericAttribute.NumericAttribute
+  fullName: NumericAttribute.NumericAttribute
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/NumericAttribute.xml

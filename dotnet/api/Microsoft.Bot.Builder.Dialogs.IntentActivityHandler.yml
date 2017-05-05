@@ -1,0 +1,31 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.IntentActivityHandler
+  commentId: T:Microsoft.Bot.Builder.Dialogs.IntentActivityHandler
+  id: IntentActivityHandler
+  langs:
+  - csharp
+  name: IntentActivityHandler
+  nameWithType: IntentActivityHandler
+  fullName: Microsoft.Bot.Builder.Dialogs.IntentActivityHandler
+  type: Delegate
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs
+  summary: The handler for a LUIS intent.
+  syntax:
+    content: public delegate System.Threading.Tasks.Task IntentActivityHandler(IDialogContext context, IAwaitable<IMessageActivity> message, LuisResult luisResult);
+  inheritance:
+  - System.Delegate
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs/IntentActivityHandler.xml
+references:
+- uid: System.Delegate
+  parent: System
+  isExternal: true
+  name: Delegate
+  nameWithType: Delegate
+  fullName: System.Delegate

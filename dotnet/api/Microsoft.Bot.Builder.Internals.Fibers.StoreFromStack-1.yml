@@ -1,0 +1,244 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack`1
+  commentId: T:Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack`1
+  id: StoreFromStack`1
+  children:
+  - Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack`1.#ctor(System.Func{System.String,Microsoft.Bot.Builder.Dialogs.IBotDataBag,Microsoft.Bot.Builder.Internals.Fibers.IStore{Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop{`0}}})
+  - Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack`1.Microsoft#Bot#Builder#Internals#Fibers#IStackStoreFactory{C}#StoreFrom(System.String,Microsoft.Bot.Builder.Dialogs.IBotDataBag)
+  langs:
+  - csharp
+  name: StoreFromStack<C>
+  nameWithType: StoreFromStack<C>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack<C>
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: 'public sealed class StoreFromStack<C> : Microsoft.Bot.Builder.Internals.Fibers.IStackStoreFactory<C>'
+    typeParameters:
+    - id: C
+      description: To be added.
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Bot.Builder.Internals.Fibers.IStackStoreFactory{C}
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/StoreFromStack`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack`1.#ctor(System.Func{System.String,Microsoft.Bot.Builder.Dialogs.IBotDataBag,Microsoft.Bot.Builder.Internals.Fibers.IStore{Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop{`0}}})
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack`1.#ctor(System.Func{System.String,Microsoft.Bot.Builder.Dialogs.IBotDataBag,Microsoft.Bot.Builder.Internals.Fibers.IStore{Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop{`0}}})
+  id: '#ctor(System.Func{System.String,Microsoft.Bot.Builder.Dialogs.IBotDataBag,Microsoft.Bot.Builder.Internals.Fibers.IStore{Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop{`0}}})'
+  parent: Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack`1
+  langs:
+  - csharp
+  name: StoreFromStack<C>(Func<String,IBotDataBag,IStore<IFiberLoop<C>>>)
+  nameWithType: StoreFromStack<C>.StoreFromStack<C>(Func<String,IBotDataBag,IStore<IFiberLoop<C>>>)
+  fullName: StoreFromStack<C>.StoreFromStack<C>(Func<String,IBotDataBag,IStore<IFiberLoop<C>>>)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public StoreFromStack (Func<string,Microsoft.Bot.Builder.Dialogs.IBotDataBag,Microsoft.Bot.Builder.Internals.Fibers.IStore<Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop<C>>> make);
+    parameters:
+    - id: make
+      type: System.Func{System.String,Microsoft.Bot.Builder.Dialogs.IBotDataBag,Microsoft.Bot.Builder.Internals.Fibers.IStore{Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop{C}}}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack`1.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/StoreFromStack`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack`1.Microsoft#Bot#Builder#Internals#Fibers#IStackStoreFactory{C}#StoreFrom(System.String,Microsoft.Bot.Builder.Dialogs.IBotDataBag)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack`1.Microsoft#Bot#Builder#Internals#Fibers#IStackStoreFactory<C>#StoreFrom(System.String,Microsoft.Bot.Builder.Dialogs.IBotDataBag)
+  id: Microsoft#Bot#Builder#Internals#Fibers#IStackStoreFactory{C}#StoreFrom(System.String,Microsoft.Bot.Builder.Dialogs.IBotDataBag)
+  isEii: true
+  parent: Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack`1
+  langs:
+  - csharp
+  name: IStackStoreFactory<C>.StoreFrom(String, IBotDataBag)
+  nameWithType: StoreFromStack<C>.IStackStoreFactory<C>.StoreFrom(String, IBotDataBag)
+  fullName: StoreFromStack<C>.IStackStoreFactory<C>.StoreFrom(String, IBotDataBag)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: Microsoft.Bot.Builder.Internals.Fibers.IStore<Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop<C>> IStackStoreFactory<C>.StoreFrom (string stackId, Microsoft.Bot.Builder.Dialogs.IBotDataBag dataBag);
+    parameters:
+    - id: stackId
+      type: System.String
+      description: To be added.
+    - id: dataBag
+      type: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+      description: To be added.
+    return:
+      type: Microsoft.Bot.Builder.Internals.Fibers.IStore{Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop{C}}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack`1.Microsoft#Bot#Builder#Internals#Fibers#IStackStoreFactory{C}#StoreFrom*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/StoreFromStack`1.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack`1.#ctor(System.Func{System.String,Microsoft.Bot.Builder.Dialogs.IBotDataBag,Microsoft.Bot.Builder.Internals.Fibers.IStore{Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop{`0}}})
+  parent: Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack`1
+  isExternal: false
+  name: StoreFromStack<C>(Func<String,IBotDataBag,IStore<IFiberLoop<C>>>)
+  nameWithType: StoreFromStack<C>.StoreFromStack<C>(Func<String,IBotDataBag,IStore<IFiberLoop<C>>>)
+  fullName: StoreFromStack<C>.StoreFromStack<C>(Func<String,IBotDataBag,IStore<IFiberLoop<C>>>)
+- uid: System.Func`3
+  name: Func
+  nameWithType: Func
+  fullName: System.Func
+- uid: System.String
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+  name: IBotDataBag
+  nameWithType: IBotDataBag
+  fullName: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IStore`1
+  name: IStore<T>
+  nameWithType: IStore<T>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IStore<T>
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop`1
+  name: IFiberLoop<C>
+  nameWithType: IFiberLoop<C>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop<C>
+- uid: C
+  name: C
+  nameWithType: C
+  fullName: C
+- uid: System.Func{System.String,Microsoft.Bot.Builder.Dialogs.IBotDataBag,Microsoft.Bot.Builder.Internals.Fibers.IStore{Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop{C}}}
+  parent: System
+  isExternal: true
+  name: Func<String,IBotDataBag,IStore<IFiberLoop<C>>>
+  nameWithType: Func<String,IBotDataBag,IStore<IFiberLoop<C>>>
+  fullName: System.Func<System.String,Microsoft.Bot.Builder.Dialogs.IBotDataBag,Microsoft.Bot.Builder.Internals.Fibers.IStore<Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop<C>>>
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+    name: IBotDataBag
+    nameWithType: IBotDataBag
+    fullName: Microsoft.Bot.Builder.Dialogs.IBotDataBag
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.IStore`1
+    name: IStore
+    nameWithType: IStore
+    fullName: Microsoft.Bot.Builder.Internals.Fibers.IStore
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop`1
+    name: IFiberLoop
+    nameWithType: IFiberLoop
+    fullName: Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: C
+    name: C
+    nameWithType: C
+    fullName: C
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack`1.Microsoft#Bot#Builder#Internals#Fibers#IStackStoreFactory{C}#StoreFrom(System.String,Microsoft.Bot.Builder.Dialogs.IBotDataBag)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack`1
+  isExternal: false
+  name: IStackStoreFactory<C>.StoreFrom(String, IBotDataBag)
+  nameWithType: StoreFromStack<C>.IStackStoreFactory<C>.StoreFrom(String, IBotDataBag)
+  fullName: StoreFromStack<C>.IStackStoreFactory<C>.StoreFrom(String, IBotDataBag)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IStore{Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop{C}}
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: IStore<IFiberLoop<C>>
+  nameWithType: IStore<IFiberLoop<C>>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IStore<Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop<C>>
+  spec.csharp:
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.IStore`1
+    name: IStore
+    nameWithType: IStore
+    fullName: Microsoft.Bot.Builder.Internals.Fibers.IStore
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop`1
+    name: IFiberLoop
+    nameWithType: IFiberLoop
+    fullName: Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: C
+    name: C
+    nameWithType: C
+    fullName: C
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack`1.#ctor*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack`1
+  isExternal: false
+  name: StoreFromStack<C>
+  nameWithType: StoreFromStack<C>.StoreFromStack<C>
+  fullName: StoreFromStack<C>.StoreFromStack<C>
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/StoreFromStack`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack`1.Microsoft#Bot#Builder#Internals#Fibers#IStackStoreFactory{C}#StoreFrom*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack`1
+  isExternal: false
+  name: Microsoft.Bot.Builder.Internals.Fibers.IStackStoreFactory<C>.StoreFrom
+  nameWithType: StoreFromStack<C>.Microsoft.Bot.Builder.Internals.Fibers.IStackStoreFactory<C>.StoreFrom
+  fullName: StoreFromStack<C>.Microsoft.Bot.Builder.Internals.Fibers.IStackStoreFactory<C>.StoreFrom
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/StoreFromStack`1.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IStackStoreFactory`1
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: IStackStoreFactory<C>
+  nameWithType: IStackStoreFactory<C>
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IStackStoreFactory<C>

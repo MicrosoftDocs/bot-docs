@@ -1,0 +1,340 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton
+  commentId: T:Microsoft.Bot.Builder.FormFlow.Advanced.FormButton
+  id: FormButton
+  children:
+  - Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.#ctor
+  - Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Clone
+  - Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Image
+  - Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Message
+  - Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Title
+  - Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.ToString
+  - Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Url
+  langs:
+  - csharp
+  name: FormButton
+  nameWithType: FormButton
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: A Form button that will be mapped to Connector.Action.
+  syntax:
+    content: 'public sealed class FormButton : ICloneable'
+  inheritance:
+  - System.Object
+  implements:
+  - System.ICloneable
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormButton.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.#ctor
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton
+  langs:
+  - csharp
+  name: FormButton()
+  nameWithType: FormButton.FormButton()
+  fullName: FormButton.FormButton()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public FormButton ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormButton.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Clone
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Clone
+  id: Clone
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton
+  langs:
+  - csharp
+  name: Clone()
+  nameWithType: FormButton.Clone()
+  fullName: FormButton.Clone()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Clone the FormButton
+  syntax:
+    content: public object Clone ();
+    parameters: []
+    return:
+      type: System.Object
+      description: A new cloned instance of object.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Clone*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormButton.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Image
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Image
+  id: Image
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton
+  langs:
+  - csharp
+  name: Image
+  nameWithType: FormButton.Image
+  fullName: FormButton.Image
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Picture which will appear on the button.
+  syntax:
+    content: public string Image { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Image*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormButton.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Message
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Message
+  id: Message
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton
+  langs:
+  - csharp
+  name: Message
+  nameWithType: FormButton.Message
+  fullName: FormButton.Message
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Message that will be sent to bot when this button is clicked.
+  syntax:
+    content: public string Message { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Message*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormButton.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Title
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Title
+  id: Title
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton
+  langs:
+  - csharp
+  name: Title
+  nameWithType: FormButton.Title
+  fullName: FormButton.Title
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Label of the button.
+  syntax:
+    content: public string Title { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Title*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormButton.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.ToString
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.ToString
+  id: ToString
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton
+  langs:
+  - csharp
+  name: ToString()
+  nameWithType: FormButton.ToString()
+  fullName: FormButton.ToString()
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: ToString() override.
+  syntax:
+    content: public override string ToString ();
+    parameters: []
+    return:
+      type: System.String
+      description: Title of the button.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.ToString*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormButton.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Url
+  commentId: P:Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Url
+  id: Url
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton
+  langs:
+  - csharp
+  name: Url
+  nameWithType: FormButton.Url
+  fullName: FormButton.Url
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: URL which will be opened in the browser built-into Client application.
+  syntax:
+    content: public string Url { get; set; }
+    return:
+      type: System.String
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Url*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormButton.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.#ctor
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton
+  isExternal: false
+  name: FormButton()
+  nameWithType: FormButton.FormButton()
+  fullName: FormButton.FormButton()
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Clone
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton
+  isExternal: false
+  name: Clone()
+  nameWithType: FormButton.Clone()
+  fullName: FormButton.Clone()
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Image
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton
+  isExternal: false
+  name: Image
+  nameWithType: FormButton.Image
+  fullName: FormButton.Image
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Message
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton
+  isExternal: false
+  name: Message
+  nameWithType: FormButton.Message
+  fullName: FormButton.Message
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Title
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton
+  isExternal: false
+  name: Title
+  nameWithType: FormButton.Title
+  fullName: FormButton.Title
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.ToString
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton
+  isExternal: false
+  name: ToString()
+  nameWithType: FormButton.ToString()
+  fullName: FormButton.ToString()
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Url
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton
+  isExternal: false
+  name: Url
+  nameWithType: FormButton.Url
+  fullName: FormButton.Url
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.#ctor*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton
+  isExternal: false
+  name: FormButton
+  nameWithType: FormButton.FormButton
+  fullName: FormButton.FormButton
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormButton.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Clone*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton
+  isExternal: false
+  name: Clone
+  nameWithType: FormButton.Clone
+  fullName: FormButton.Clone
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormButton.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Image*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton
+  isExternal: false
+  name: Image
+  nameWithType: FormButton.Image
+  fullName: FormButton.Image
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormButton.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Message*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton
+  isExternal: false
+  name: Message
+  nameWithType: FormButton.Message
+  fullName: FormButton.Message
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormButton.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Title*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton
+  isExternal: false
+  name: Title
+  nameWithType: FormButton.Title
+  fullName: FormButton.Title
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormButton.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.ToString*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton
+  isExternal: false
+  name: ToString
+  nameWithType: FormButton.ToString
+  fullName: FormButton.ToString
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormButton.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton.Url*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.FormButton
+  isExternal: false
+  name: Url
+  nameWithType: FormButton.Url
+  fullName: FormButton.Url
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/FormButton.xml
+- uid: System.ICloneable
+  parent: System
+  isExternal: true
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable

@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.FormOptions
+  commentId: T:Microsoft.Bot.Builder.FormFlow.FormOptions
+  id: FormOptions
+  children:
+  - Microsoft.Bot.Builder.FormFlow.FormOptions.None
+  - Microsoft.Bot.Builder.FormFlow.FormOptions.PromptFieldsWithValues
+  - Microsoft.Bot.Builder.FormFlow.FormOptions.PromptInStart
+  langs:
+  - csharp
+  name: FormOptions
+  nameWithType: FormOptions
+  fullName: Microsoft.Bot.Builder.FormFlow.FormOptions
+  type: Enum
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Options for form execution.
+  syntax:
+    content: >-
+      [System.Flags]
+
+      public enum FormOptions
+  inheritance:
+  - System.Enum
+  attributes:
+  - type: System.Flags
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/FormOptions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.FormOptions.None
+  commentId: F:Microsoft.Bot.Builder.FormFlow.FormOptions.None
+  id: None
+  parent: Microsoft.Bot.Builder.FormFlow.FormOptions
+  langs:
+  - csharp
+  name: None
+  nameWithType: FormOptions.None
+  fullName: FormOptions.None
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: No options.
+  syntax:
+    content: None
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.FormOptions
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/FormOptions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.FormOptions.PromptFieldsWithValues
+  commentId: F:Microsoft.Bot.Builder.FormFlow.FormOptions.PromptFieldsWithValues
+  id: PromptFieldsWithValues
+  parent: Microsoft.Bot.Builder.FormFlow.FormOptions
+  langs:
+  - csharp
+  name: PromptFieldsWithValues
+  nameWithType: FormOptions.PromptFieldsWithValues
+  fullName: FormOptions.PromptFieldsWithValues
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Prompt for fields that already have a value in the initial state when processing form.
+  syntax:
+    content: PromptFieldsWithValues
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.FormOptions
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/FormOptions.xml
+- uid: Microsoft.Bot.Builder.FormFlow.FormOptions.PromptInStart
+  commentId: F:Microsoft.Bot.Builder.FormFlow.FormOptions.PromptInStart
+  id: PromptInStart
+  parent: Microsoft.Bot.Builder.FormFlow.FormOptions
+  langs:
+  - csharp
+  name: PromptInStart
+  nameWithType: FormOptions.PromptInStart
+  fullName: FormOptions.PromptInStart
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Prompt when the dialog starts.
+  syntax:
+    content: PromptInStart
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.FormOptions
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/FormOptions.xml
+references:
+- uid: System.Enum
+  parent: System
+  isExternal: true
+  name: Enum
+  nameWithType: Enum
+  fullName: System.Enum
+- uid: Microsoft.Bot.Builder.FormFlow.FormOptions.None
+  parent: Microsoft.Bot.Builder.FormFlow.FormOptions
+  isExternal: false
+  name: None
+  nameWithType: FormOptions.None
+  fullName: FormOptions.None
+- uid: Microsoft.Bot.Builder.FormFlow.FormOptions
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: FormOptions
+  nameWithType: FormOptions
+  fullName: Microsoft.Bot.Builder.FormFlow.FormOptions
+- uid: Microsoft.Bot.Builder.FormFlow.FormOptions.PromptFieldsWithValues
+  parent: Microsoft.Bot.Builder.FormFlow.FormOptions
+  isExternal: false
+  name: PromptFieldsWithValues
+  nameWithType: FormOptions.PromptFieldsWithValues
+  fullName: FormOptions.PromptFieldsWithValues
+- uid: Microsoft.Bot.Builder.FormFlow.FormOptions.PromptInStart
+  parent: Microsoft.Bot.Builder.FormFlow.FormOptions
+  isExternal: false
+  name: PromptInStart
+  nameWithType: FormOptions.PromptInStart
+  fullName: FormOptions.PromptInStart

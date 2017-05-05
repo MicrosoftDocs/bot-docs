@@ -1,0 +1,102 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy
+  commentId: T:Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy
+  id: CachingBotDataStoreConsistencyPolicy
+  children:
+  - Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy.ETagBasedConsistency
+  - Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy.LastWriteWins
+  langs:
+  - csharp
+  name: CachingBotDataStoreConsistencyPolicy
+  nameWithType: CachingBotDataStoreConsistencyPolicy
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy
+  type: Enum
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: The data consistency policy for <xref href="Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore"></xref>
+  syntax:
+    content: public enum CachingBotDataStoreConsistencyPolicy
+  inheritance:
+  - System.Enum
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/CachingBotDataStoreConsistencyPolicy.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy.ETagBasedConsistency
+  commentId: F:Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy.ETagBasedConsistency
+  id: ETagBasedConsistency
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy
+  langs:
+  - csharp
+  name: ETagBasedConsistency
+  nameWithType: CachingBotDataStoreConsistencyPolicy.ETagBasedConsistency
+  fullName: CachingBotDataStoreConsistencyPolicy.ETagBasedConsistency
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: "Causes <xref href=\"Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore\"></xref> to write data with the same <xref href=\"Microsoft.Bot.Connector.BotData.ETag\"></xref> \n            returned by <xref href=\"Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.inner\"></xref>. As a result <xref href=\"Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)\"></xref>\n            might fail because of ETag inconsistencies."
+  syntax:
+    content: ETagBasedConsistency
+    return:
+      type: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/CachingBotDataStoreConsistencyPolicy.xml
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy.LastWriteWins
+  commentId: F:Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy.LastWriteWins
+  id: LastWriteWins
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy
+  langs:
+  - csharp
+  name: LastWriteWins
+  nameWithType: CachingBotDataStoreConsistencyPolicy.LastWriteWins
+  fullName: CachingBotDataStoreConsistencyPolicy.LastWriteWins
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Dialogs.Internals
+  summary: "Causes <xref href=\"Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore\"></xref> to set <xref href=\"Microsoft.Bot.Connector.BotData.ETag\"></xref> to \"*\" when it flushes the data to storage. \n            As a result last write will overwrite the data."
+  syntax:
+    content: LastWriteWins
+    return:
+      type: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Dialogs.Internals/CachingBotDataStoreConsistencyPolicy.xml
+references:
+- uid: System.Enum
+  parent: System
+  isExternal: true
+  name: Enum
+  nameWithType: Enum
+  fullName: System.Enum
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy.ETagBasedConsistency
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy
+  isExternal: false
+  name: ETagBasedConsistency
+  nameWithType: CachingBotDataStoreConsistencyPolicy.ETagBasedConsistency
+  fullName: CachingBotDataStoreConsistencyPolicy.ETagBasedConsistency
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy
+  parent: Microsoft.Bot.Builder.Dialogs.Internals
+  isExternal: false
+  name: CachingBotDataStoreConsistencyPolicy
+  nameWithType: CachingBotDataStoreConsistencyPolicy
+  fullName: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy
+- uid: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy.LastWriteWins
+  parent: Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy
+  isExternal: false
+  name: LastWriteWins
+  nameWithType: CachingBotDataStoreConsistencyPolicy.LastWriteWins
+  fullName: CachingBotDataStoreConsistencyPolicy.LastWriteWins

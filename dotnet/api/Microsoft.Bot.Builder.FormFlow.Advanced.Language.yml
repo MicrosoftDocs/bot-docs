@@ -1,0 +1,839 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  commentId: T:Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  id: Language
+  children:
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Language.#ctor
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Language.ANormalization(System.String)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Language.ArticleOrNone(System.String)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Language.Articles
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Language.BuildList(System.Collections.Generic.IEnumerable{System.String},System.String,System.String)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Language.CamelCase(System.String)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Language.GenerateTerms(System.String,System.Int32)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Language.NoiseResponse(System.String)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Language.NoiseWord(System.String)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonNoiseWords(System.Collections.Generic.IEnumerable{System.String})
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonWord(System.String)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Language.Normalize(System.String,Microsoft.Bot.Builder.FormFlow.CaseNormalization)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Language.OptionalPlurals(System.Collections.Generic.IEnumerable{System.String})
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Language.StopWords
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Language.WordBreak(System.String)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.Language.WordBreaker
+  langs:
+  - csharp
+  name: Language
+  nameWithType: Language
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Language related utilities.
+  syntax:
+    content: public class Language
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.#ctor
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.#ctor
+  id: '#ctor'
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  langs:
+  - csharp
+  name: Language()
+  nameWithType: Language.Language()
+  fullName: Language.Language()
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  syntax:
+    content: public Language ();
+    parameters: []
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Language.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.ANormalization(System.String)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.ANormalization(System.String)
+  id: ANormalization(System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  langs:
+  - csharp
+  name: ANormalization(String)
+  nameWithType: Language.ANormalization(String)
+  fullName: Language.ANormalization(String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Switch 'a' before consonants and 'an' before vowels.
+  remarks: This is not perfect because English is complex, but does a reasonable job.
+  syntax:
+    content: public static string ANormalization (string input);
+    parameters:
+    - id: input
+      type: System.String
+      description: String to fix.
+    return:
+      type: System.String
+      description: String with 'a' and 'an' normalized.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Language.ANormalization*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.ArticleOrNone(System.String)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.ArticleOrNone(System.String)
+  id: ArticleOrNone(System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  langs:
+  - csharp
+  name: ArticleOrNone(String)
+  nameWithType: Language.ArticleOrNone(String)
+  fullName: Language.ArticleOrNone(String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Test a word for articles or noise.
+  syntax:
+    content: public static bool ArticleOrNone (string word);
+    parameters:
+    - id: word
+      type: System.String
+      description: Word to test.
+    return:
+      type: System.Boolean
+      description: True if word is <xref href="Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonWord(System.String)"></xref> or <xref href="Microsoft.Bot.Builder.FormFlow.Advanced.Language.Articles"></xref>.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Language.ArticleOrNone*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.Articles
+  commentId: F:Microsoft.Bot.Builder.FormFlow.Advanced.Language.Articles
+  id: Articles
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  langs:
+  - csharp
+  name: Articles
+  nameWithType: Language.Articles
+  fullName: Language.Articles
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Language articles.
+  syntax:
+    content: public static System.Collections.Generic.HashSet<string> Articles;
+    return:
+      type: System.Collections.Generic.HashSet{System.String}
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.BuildList(System.Collections.Generic.IEnumerable{System.String},System.String,System.String)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.BuildList(System.Collections.Generic.IEnumerable{System.String},System.String,System.String)
+  id: BuildList(System.Collections.Generic.IEnumerable{System.String},System.String,System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  langs:
+  - csharp
+  name: BuildList(IEnumerable<String>, String, String)
+  nameWithType: Language.BuildList(IEnumerable<String>, String, String)
+  fullName: Language.BuildList(IEnumerable<String>, String, String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Given a list of string values generate a proper English list.
+  syntax:
+    content: public static string BuildList (System.Collections.Generic.IEnumerable<string> values, string separator, string lastSeparator);
+    parameters:
+    - id: values
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: Value in list.
+    - id: separator
+      type: System.String
+      description: Separator between all elements except last.
+    - id: lastSeparator
+      type: System.String
+      description: Last element separator.
+    return:
+      type: System.String
+      description: Value in a proper English list.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Language.BuildList*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.CamelCase(System.String)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.CamelCase(System.String)
+  id: CamelCase(System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  langs:
+  - csharp
+  name: CamelCase(String)
+  nameWithType: Language.CamelCase(String)
+  fullName: Language.CamelCase(String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Break a string into words based on _ and case changes.
+  syntax:
+    content: public static string CamelCase (string original);
+    parameters:
+    - id: original
+      type: System.String
+      description: Original string.
+    return:
+      type: System.String
+      description: String with words on case change or _ boundaries.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Language.CamelCase*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.GenerateTerms(System.String,System.Int32)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.GenerateTerms(System.String,System.Int32)
+  id: GenerateTerms(System.String,System.Int32)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  langs:
+  - csharp
+  name: GenerateTerms(String, Int32)
+  nameWithType: Language.GenerateTerms(String, Int32)
+  fullName: Language.GenerateTerms(String, Int32)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Generate regular expressions to match word sequences in original string.
+  remarks: "This function will call <xref href=\"Microsoft.Bot.Builder.FormFlow.Advanced.Language.CamelCase(System.String)\"></xref> and then will generate sub-phrases up to maxLength.  \n            For example an enumeration of AngusBeefAndGarlicPizza would generate: 'angus?', 'beefs?', 'garlics?', 'pizzas?', 'angus? beefs?', 'garlics? pizzas?' and 'angus beef and garlic pizza'.\n            You can call it directly, or it is used when <xref href=\"Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1\"></xref> generates terms or when <xref href=\"Microsoft.Bot.Builder.FormFlow.TermsAttribute\"></xref> is used with a <xref href=\"Microsoft.Bot.Builder.FormFlow.TermsAttribute.MaxPhrase\"></xref> argument."
+  syntax:
+    content: public static string[] GenerateTerms (string phrase, int maxLength);
+    parameters:
+    - id: phrase
+      type: System.String
+      description: Original string to be processed.
+    - id: maxLength
+      type: System.Int32
+      description: Maximum phrase length to support.
+    return:
+      type: System.String[]
+      description: Array of regular expressions to match subsequences in input.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Language.GenerateTerms*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.NoiseResponse(System.String)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.NoiseResponse(System.String)
+  id: NoiseResponse(System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  langs:
+  - csharp
+  name: NoiseResponse(String)
+  nameWithType: Language.NoiseResponse(String)
+  fullName: Language.NoiseResponse(String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Test to see if a word can be ignored in a resposne.
+  syntax:
+    content: public static bool NoiseResponse (string word);
+    parameters:
+    - id: word
+      type: System.String
+      description: Word to test.
+    return:
+      type: System.Boolean
+      description: True if word is a <xref href="Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonWord(System.String)"></xref> or a <xref href="Microsoft.Bot.Builder.FormFlow.Advanced.Language.StopWords"></xref>.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Language.NoiseResponse*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.NoiseWord(System.String)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.NoiseWord(System.String)
+  id: NoiseWord(System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  langs:
+  - csharp
+  name: NoiseWord(String)
+  nameWithType: Language.NoiseWord(String)
+  fullName: Language.NoiseWord(String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Test to see if a word is all noise.
+  syntax:
+    content: public static bool NoiseWord (string word);
+    parameters:
+    - id: word
+      type: System.String
+      description: Word to test.
+    return:
+      type: System.Boolean
+      description: True if word is a number, a <xref href="Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonWord(System.String)"></xref> or a <xref href="Microsoft.Bot.Builder.FormFlow.Advanced.Language.StopWords"></xref>.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Language.NoiseWord*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonNoiseWords(System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonNoiseWords(System.Collections.Generic.IEnumerable{System.String})
+  id: NonNoiseWords(System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  langs:
+  - csharp
+  name: NonNoiseWords(IEnumerable<String>)
+  nameWithType: Language.NonNoiseWords(IEnumerable<String>)
+  fullName: Language.NonNoiseWords(IEnumerable<String>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Test words to see if they are all ignorable in a response.
+  syntax:
+    content: public static System.Collections.Generic.IEnumerable<string> NonNoiseWords (System.Collections.Generic.IEnumerable<string> words);
+    parameters:
+    - id: words
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: To be added.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: To be added.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonNoiseWords*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonWord(System.String)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonWord(System.String)
+  id: NonWord(System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  langs:
+  - csharp
+  name: NonWord(String)
+  nameWithType: Language.NonWord(String)
+  fullName: Language.NonWord(String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Test to see if word is all punctuation or white space.
+  syntax:
+    content: public static bool NonWord (string word);
+    parameters:
+    - id: word
+      type: System.String
+      description: Word to check.
+    return:
+      type: System.Boolean
+      description: True if word is all punctuation or white space.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonWord*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.Normalize(System.String,Microsoft.Bot.Builder.FormFlow.CaseNormalization)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.Normalize(System.String,Microsoft.Bot.Builder.FormFlow.CaseNormalization)
+  id: Normalize(System.String,Microsoft.Bot.Builder.FormFlow.CaseNormalization)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  langs:
+  - csharp
+  name: Normalize(String, CaseNormalization)
+  nameWithType: Language.Normalize(String, CaseNormalization)
+  fullName: Language.Normalize(String, CaseNormalization)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Normalize a string.
+  syntax:
+    content: public static string Normalize (string value, Microsoft.Bot.Builder.FormFlow.CaseNormalization normalization);
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to normalize.
+    - id: normalization
+      type: Microsoft.Bot.Builder.FormFlow.CaseNormalization
+      description: The normalization to apply.
+    return:
+      type: System.String
+      description: A normalized string.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Language.Normalize*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.OptionalPlurals(System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.OptionalPlurals(System.Collections.Generic.IEnumerable{System.String})
+  id: OptionalPlurals(System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  langs:
+  - csharp
+  name: OptionalPlurals(IEnumerable<String>)
+  nameWithType: Language.OptionalPlurals(IEnumerable<String>)
+  fullName: Language.OptionalPlurals(IEnumerable<String>)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Make sure all words end with an optional s.
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.FormFlow.Advanced.Language/<OptionalPlurals>d__10))]
+
+      public static System.Collections.Generic.IEnumerable<string> OptionalPlurals (System.Collections.Generic.IEnumerable<string> words);
+    parameters:
+    - id: words
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: Words to pluralize.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: Enumeration of plural word regex.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Language.OptionalPlurals*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.IteratorStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.StopWords
+  commentId: F:Microsoft.Bot.Builder.FormFlow.Advanced.Language.StopWords
+  id: StopWords
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  langs:
+  - csharp
+  name: StopWords
+  nameWithType: Language.StopWords
+  fullName: Language.StopWords
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Language stop words.
+  syntax:
+    content: public static System.Collections.Generic.HashSet<string> StopWords;
+    return:
+      type: System.Collections.Generic.HashSet{System.String}
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.WordBreak(System.String)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.WordBreak(System.String)
+  id: WordBreak(System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  langs:
+  - csharp
+  name: WordBreak(String)
+  nameWithType: Language.WordBreak(String)
+  fullName: Language.WordBreak(String)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Break input into words.
+  syntax:
+    content: >-
+      [System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.FormFlow.Advanced.Language/<WordBreak>d__8))]
+
+      public static System.Collections.Generic.IEnumerable<string> WordBreak (string input);
+    parameters:
+    - id: input
+      type: System.String
+      description: String to be broken.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: Enumeration of words.
+  overload: Microsoft.Bot.Builder.FormFlow.Advanced.Language.WordBreak*
+  exceptions: []
+  attributes:
+  - type: System.Runtime.CompilerServices.IteratorStateMachine
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.WordBreaker
+  commentId: F:Microsoft.Bot.Builder.FormFlow.Advanced.Language.WordBreaker
+  id: WordBreaker
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  langs:
+  - csharp
+  name: WordBreaker
+  nameWithType: Language.WordBreaker
+  fullName: Language.WordBreaker
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow.Advanced
+  summary: Regular expression to break a string into words.
+  syntax:
+    content: public static System.Text.RegularExpressions.Regex WordBreaker;
+    return:
+      type: System.Text.RegularExpressions.Regex
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+references:
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.#ctor
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: Language()
+  nameWithType: Language.Language()
+  fullName: Language.Language()
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.ANormalization(System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: ANormalization(String)
+  nameWithType: Language.ANormalization(String)
+  fullName: Language.ANormalization(String)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.ArticleOrNone(System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: ArticleOrNone(String)
+  nameWithType: Language.ArticleOrNone(String)
+  fullName: Language.ArticleOrNone(String)
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.Articles
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: Articles
+  nameWithType: Language.Articles
+  fullName: Language.Articles
+- uid: System.Collections.Generic.HashSet`1
+  name: HashSet
+  nameWithType: HashSet
+  fullName: System.Collections.Generic.HashSet
+- uid: System.Collections.Generic.HashSet{System.String}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: HashSet<String>
+  nameWithType: HashSet<String>
+  fullName: System.Collections.Generic.HashSet<System.String>
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    nameWithType: HashSet
+    fullName: System.Collections.Generic.HashSet
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.BuildList(System.Collections.Generic.IEnumerable{System.String},System.String,System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: BuildList(IEnumerable<String>, String, String)
+  nameWithType: Language.BuildList(IEnumerable<String>, String, String)
+  fullName: Language.BuildList(IEnumerable<String>, String, String)
+- uid: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.Generic.IEnumerable
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.CamelCase(System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: CamelCase(String)
+  nameWithType: Language.CamelCase(String)
+  fullName: Language.CamelCase(String)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.GenerateTerms(System.String,System.Int32)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: GenerateTerms(String, Int32)
+  nameWithType: Language.GenerateTerms(String, Int32)
+  fullName: Language.GenerateTerms(String, Int32)
+- uid: System.String[]
+  parent: System
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.NoiseResponse(System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: NoiseResponse(String)
+  nameWithType: Language.NoiseResponse(String)
+  fullName: Language.NoiseResponse(String)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.NoiseWord(System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: NoiseWord(String)
+  nameWithType: Language.NoiseWord(String)
+  fullName: Language.NoiseWord(String)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonNoiseWords(System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: NonNoiseWords(IEnumerable<String>)
+  nameWithType: Language.NonNoiseWords(IEnumerable<String>)
+  fullName: Language.NonNoiseWords(IEnumerable<String>)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonWord(System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: NonWord(String)
+  nameWithType: Language.NonWord(String)
+  fullName: Language.NonWord(String)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.Normalize(System.String,Microsoft.Bot.Builder.FormFlow.CaseNormalization)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: Normalize(String, CaseNormalization)
+  nameWithType: Language.Normalize(String, CaseNormalization)
+  fullName: Language.Normalize(String, CaseNormalization)
+- uid: Microsoft.Bot.Builder.FormFlow.CaseNormalization
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: CaseNormalization
+  nameWithType: CaseNormalization
+  fullName: Microsoft.Bot.Builder.FormFlow.CaseNormalization
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.OptionalPlurals(System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: OptionalPlurals(IEnumerable<String>)
+  nameWithType: Language.OptionalPlurals(IEnumerable<String>)
+  fullName: Language.OptionalPlurals(IEnumerable<String>)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.StopWords
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: StopWords
+  nameWithType: Language.StopWords
+  fullName: Language.StopWords
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.WordBreak(System.String)
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: WordBreak(String)
+  nameWithType: Language.WordBreak(String)
+  fullName: Language.WordBreak(String)
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.WordBreaker
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: WordBreaker
+  nameWithType: Language.WordBreaker
+  fullName: Language.WordBreaker
+- uid: System.Text.RegularExpressions.Regex
+  parent: System.Text.RegularExpressions
+  isExternal: true
+  name: Regex
+  nameWithType: Regex
+  fullName: System.Text.RegularExpressions.Regex
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.#ctor*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: Language
+  nameWithType: Language.Language
+  fullName: Language.Language
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.ANormalization*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: ANormalization
+  nameWithType: Language.ANormalization
+  fullName: Language.ANormalization
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.ArticleOrNone*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: ArticleOrNone
+  nameWithType: Language.ArticleOrNone
+  fullName: Language.ArticleOrNone
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.BuildList*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: BuildList
+  nameWithType: Language.BuildList
+  fullName: Language.BuildList
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.CamelCase*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: CamelCase
+  nameWithType: Language.CamelCase
+  fullName: Language.CamelCase
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.GenerateTerms*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: GenerateTerms
+  nameWithType: Language.GenerateTerms
+  fullName: Language.GenerateTerms
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.NoiseResponse*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: NoiseResponse
+  nameWithType: Language.NoiseResponse
+  fullName: Language.NoiseResponse
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.NoiseWord*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: NoiseWord
+  nameWithType: Language.NoiseWord
+  fullName: Language.NoiseWord
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonNoiseWords*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: NonNoiseWords
+  nameWithType: Language.NonNoiseWords
+  fullName: Language.NonNoiseWords
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonWord*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: NonWord
+  nameWithType: Language.NonWord
+  fullName: Language.NonWord
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.Normalize*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: Normalize
+  nameWithType: Language.Normalize
+  fullName: Language.Normalize
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.OptionalPlurals*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: OptionalPlurals
+  nameWithType: Language.OptionalPlurals
+  fullName: Language.OptionalPlurals
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.Language.WordBreak*
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced.Language
+  isExternal: false
+  name: WordBreak
+  nameWithType: Language.WordBreak
+  fullName: Language.WordBreak
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow.Advanced/Language.xml

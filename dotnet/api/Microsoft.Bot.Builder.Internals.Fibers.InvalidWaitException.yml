@@ -1,0 +1,228 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException
+  commentId: T:Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException
+  id: InvalidWaitException
+  children:
+  - Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException.#ctor(System.String,Microsoft.Bot.Builder.Internals.Fibers.IWait)
+  - Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException.Wait
+  langs:
+  - csharp
+  name: InvalidWaitException
+  nameWithType: InvalidWaitException
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: 'public abstract class InvalidWaitException : InvalidOperationException'
+  inheritance:
+  - System.InvalidOperationException
+  derivedClasses:
+  - Microsoft.Bot.Builder.Internals.Fibers.InvalidNeedException
+  - Microsoft.Bot.Builder.Internals.Fibers.InvalidNextException
+  - Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException
+  implements: []
+  inheritedMembers: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/InvalidWaitException.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: '#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)'
+  parent: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException
+  langs:
+  - csharp
+  name: InvalidWaitException(SerializationInfo, StreamingContext)
+  nameWithType: InvalidWaitException.InvalidWaitException(SerializationInfo, StreamingContext)
+  fullName: InvalidWaitException.InvalidWaitException(SerializationInfo, StreamingContext)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: protected InvalidWaitException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: To be added.
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/InvalidWaitException.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException.#ctor(System.String,Microsoft.Bot.Builder.Internals.Fibers.IWait)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException.#ctor(System.String,Microsoft.Bot.Builder.Internals.Fibers.IWait)
+  id: '#ctor(System.String,Microsoft.Bot.Builder.Internals.Fibers.IWait)'
+  parent: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException
+  langs:
+  - csharp
+  name: InvalidWaitException(String, IWait)
+  nameWithType: InvalidWaitException.InvalidWaitException(String, IWait)
+  fullName: InvalidWaitException.InvalidWaitException(String, IWait)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: protected InvalidWaitException (string message, Microsoft.Bot.Builder.Internals.Fibers.IWait wait);
+    parameters:
+    - id: message
+      type: System.String
+      description: To be added.
+    - id: wait
+      type: Microsoft.Bot.Builder.Internals.Fibers.IWait
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/InvalidWaitException.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException
+  langs:
+  - csharp
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: InvalidWaitException.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: InvalidWaitException.GetObjectData(SerializationInfo, StreamingContext)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: To be added.
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException.GetObjectData*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/InvalidWaitException.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException.Wait
+  commentId: P:Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException.Wait
+  id: Wait
+  parent: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException
+  langs:
+  - csharp
+  name: Wait
+  nameWithType: InvalidWaitException.Wait
+  fullName: InvalidWaitException.Wait
+  type: Property
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Internals.Fibers
+  syntax:
+    content: public Microsoft.Bot.Builder.Internals.Fibers.IWait Wait { get; }
+    return:
+      type: Microsoft.Bot.Builder.Internals.Fibers.IWait
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException.Wait*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/InvalidWaitException.xml
+references:
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: true
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException
+  isExternal: false
+  name: InvalidWaitException(SerializationInfo, StreamingContext)
+  nameWithType: InvalidWaitException.InvalidWaitException(SerializationInfo, StreamingContext)
+  fullName: InvalidWaitException.InvalidWaitException(SerializationInfo, StreamingContext)
+- uid: System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+- uid: System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+- uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException.#ctor(System.String,Microsoft.Bot.Builder.Internals.Fibers.IWait)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException
+  isExternal: false
+  name: InvalidWaitException(String, IWait)
+  nameWithType: InvalidWaitException.InvalidWaitException(String, IWait)
+  fullName: InvalidWaitException.InvalidWaitException(String, IWait)
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Bot.Builder.Internals.Fibers.IWait
+  parent: Microsoft.Bot.Builder.Internals.Fibers
+  isExternal: false
+  name: IWait
+  nameWithType: IWait
+  fullName: Microsoft.Bot.Builder.Internals.Fibers.IWait
+- uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException
+  isExternal: false
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: InvalidWaitException.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: InvalidWaitException.GetObjectData(SerializationInfo, StreamingContext)
+- uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException.Wait
+  parent: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException
+  isExternal: false
+  name: Wait
+  nameWithType: InvalidWaitException.Wait
+  fullName: InvalidWaitException.Wait
+- uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException.#ctor*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException
+  isExternal: false
+  name: InvalidWaitException
+  nameWithType: InvalidWaitException.InvalidWaitException
+  fullName: InvalidWaitException.InvalidWaitException
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/InvalidWaitException.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException.GetObjectData*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException
+  isExternal: false
+  name: GetObjectData
+  nameWithType: InvalidWaitException.GetObjectData
+  fullName: InvalidWaitException.GetObjectData
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/InvalidWaitException.xml
+- uid: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException.Wait*
+  parent: Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException
+  isExternal: false
+  name: Wait
+  nameWithType: InvalidWaitException.Wait
+  fullName: InvalidWaitException.Wait
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Internals.Fibers/InvalidWaitException.xml

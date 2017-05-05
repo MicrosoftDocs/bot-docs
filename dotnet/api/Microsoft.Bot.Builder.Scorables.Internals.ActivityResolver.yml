@@ -1,0 +1,242 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver
+  commentId: T:Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver
+  id: ActivityResolver
+  children:
+  - Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver.#ctor(Microsoft.Bot.Builder.Scorables.Internals.IResolver)
+  - Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver.TryResolve(System.Type,System.Object,System.Object@)
+  - Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver.TypeByName
+  langs:
+  - csharp
+  name: ActivityResolver
+  nameWithType: ActivityResolver
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  summary: A resolver to recover C# type information from Activity schema types.
+  syntax:
+    content: 'public sealed class ActivityResolver : Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver'
+  inheritance:
+  - System.Object
+  - Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver
+  implements: []
+  inheritedMembers:
+  - Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver.inner
+  extensionMethods:
+  - Microsoft.Bot.Builder.Scorables.Internals.Extensions.CanResolve(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Type,System.Object)
+  - Microsoft.Bot.Builder.Scorables.Internals.Extensions.Resolve(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Type,System.Object)
+  - Microsoft.Bot.Builder.Scorables.Internals.Extensions.TryResolve``1(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object,``0@)
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/ActivityResolver.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver.#ctor(Microsoft.Bot.Builder.Scorables.Internals.IResolver)
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver.#ctor(Microsoft.Bot.Builder.Scorables.Internals.IResolver)
+  id: '#ctor(Microsoft.Bot.Builder.Scorables.Internals.IResolver)'
+  parent: Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver
+  langs:
+  - csharp
+  name: ActivityResolver(IResolver)
+  nameWithType: ActivityResolver.ActivityResolver(IResolver)
+  fullName: ActivityResolver.ActivityResolver(IResolver)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public ActivityResolver (Microsoft.Bot.Builder.Scorables.Internals.IResolver inner);
+    parameters:
+    - id: inner
+      type: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/ActivityResolver.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver.TryResolve(System.Type,System.Object,System.Object@)
+  commentId: M:Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver.TryResolve(System.Type,System.Object,System.Object@)
+  id: TryResolve(System.Type,System.Object,System.Object@)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver
+  langs:
+  - csharp
+  name: TryResolve(Type, Object, Object)
+  nameWithType: ActivityResolver.TryResolve(Type, Object, Object)
+  fullName: ActivityResolver.TryResolve(Type, Object, Object)
+  type: Method
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public override bool TryResolve (Type type, object tag, out object value);
+    parameters:
+    - id: type
+      type: System.Type
+      description: To be added.
+    - id: tag
+      type: System.Object
+      description: To be added.
+    - id: value
+      type: System.Object
+      description: To be added.
+    return:
+      type: System.Boolean
+      description: To be added.
+  overload: Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver.TryResolve*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/ActivityResolver.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver.TypeByName
+  commentId: F:Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver.TypeByName
+  id: TypeByName
+  parent: Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver
+  langs:
+  - csharp
+  name: TypeByName
+  nameWithType: ActivityResolver.TypeByName
+  fullName: ActivityResolver.TypeByName
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.Scorables.Internals
+  syntax:
+    content: public static readonly System.Collections.Generic.IReadOnlyDictionary<string,Type> TypeByName;
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,System.Type}
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/ActivityResolver.xml
+references:
+- uid: Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver
+  parent: Microsoft.Bot.Builder.Scorables.Internals
+  isExternal: false
+  name: DelegatingResolver
+  nameWithType: DelegatingResolver
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver
+- uid: Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver.#ctor(Microsoft.Bot.Builder.Scorables.Internals.IResolver)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver
+  isExternal: false
+  name: ActivityResolver(IResolver)
+  nameWithType: ActivityResolver.ActivityResolver(IResolver)
+  fullName: ActivityResolver.ActivityResolver(IResolver)
+- uid: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+  parent: Microsoft.Bot.Builder.Scorables.Internals
+  isExternal: false
+  name: IResolver
+  nameWithType: IResolver
+  fullName: Microsoft.Bot.Builder.Scorables.Internals.IResolver
+- uid: Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver.TryResolve(System.Type,System.Object,System.Object@)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver
+  isExternal: false
+  name: TryResolve(Type, Object, Object)
+  nameWithType: ActivityResolver.TryResolve(Type, Object, Object)
+  fullName: ActivityResolver.TryResolve(Type, Object, Object)
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver.TypeByName
+  parent: Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver
+  isExternal: false
+  name: TypeByName
+  nameWithType: ActivityResolver.TypeByName
+  fullName: ActivityResolver.TypeByName
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  name: IReadOnlyDictionary
+  nameWithType: IReadOnlyDictionary
+  fullName: System.Collections.Generic.IReadOnlyDictionary
+- uid: System.String
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,System.Type}
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IReadOnlyDictionary<String,Type>
+  nameWithType: IReadOnlyDictionary<String,Type>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<System.String,System.Type>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    nameWithType: IReadOnlyDictionary
+    fullName: System.Collections.Generic.IReadOnlyDictionary
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver.#ctor*
+  parent: Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver
+  isExternal: false
+  name: ActivityResolver
+  nameWithType: ActivityResolver.ActivityResolver
+  fullName: ActivityResolver.ActivityResolver
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/ActivityResolver.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver.TryResolve*
+  parent: Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver
+  isExternal: false
+  name: TryResolve
+  nameWithType: ActivityResolver.TryResolve
+  fullName: ActivityResolver.TryResolve
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.Scorables.Internals/ActivityResolver.xml
+- uid: Microsoft.Bot.Builder.Scorables.Internals.Extensions.CanResolve(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Type,System.Object)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.Extensions
+  isExternal: false
+  name: CanResolve(IResolver, Type, Object)
+  nameWithType: Extensions.CanResolve(IResolver, Type, Object)
+  fullName: Extensions.CanResolve(IResolver, Type, Object)
+- uid: Microsoft.Bot.Builder.Scorables.Internals.Extensions.Resolve(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Type,System.Object)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.Extensions
+  isExternal: false
+  name: Resolve(IResolver, Type, Object)
+  nameWithType: Extensions.Resolve(IResolver, Type, Object)
+  fullName: Extensions.Resolve(IResolver, Type, Object)
+- uid: Microsoft.Bot.Builder.Scorables.Internals.Extensions.TryResolve``1(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object,``0@)
+  parent: Microsoft.Bot.Builder.Scorables.Internals.Extensions
+  isExternal: false
+  name: TryResolve<T>(IResolver, Object, T)
+  nameWithType: Extensions.TryResolve<T>(IResolver, Object, T)
+  fullName: Extensions.TryResolve<T>(IResolver, Object, T)

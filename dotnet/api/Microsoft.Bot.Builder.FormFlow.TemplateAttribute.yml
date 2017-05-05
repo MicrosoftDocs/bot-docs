@@ -1,0 +1,200 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+  commentId: T:Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+  id: TemplateAttribute
+  children:
+  - Microsoft.Bot.Builder.FormFlow.TemplateAttribute.#ctor(Microsoft.Bot.Builder.FormFlow.TemplateAttribute)
+  - Microsoft.Bot.Builder.FormFlow.TemplateAttribute.#ctor(Microsoft.Bot.Builder.FormFlow.TemplateUsage,System.String[])
+  - Microsoft.Bot.Builder.FormFlow.TemplateAttribute.Usage
+  langs:
+  - csharp
+  name: TemplateAttribute
+  nameWithType: TemplateAttribute
+  fullName: Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+  type: Class
+  assemblies:
+  - Microsoft.Bot.Builder
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Define a template for generating strings.
+  remarks: "Templates provide a pattern that uses the template language defined in \\ref patterns.  See <xref href=\"Microsoft.Bot.Builder.FormFlow.TemplateUsage\"></xref> to see a description of all the different kinds of templates.\n            You can also look at <xref href=\"Microsoft.Bot.Builder.FormFlow.FormConfiguration.Templates\"></xref> to see all the default templates that are provided.  Templates can be overriden at the form, class/struct of field level.  \n            They also support randomly selecting between templates which is a good way to introduce some variation in your responses."
+  syntax:
+    content: >-
+      [System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Property | System.AttributeTargets.Field, AllowMultiple=true)]
+
+      public class TemplateAttribute : Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  inheritance:
+  - System.Attribute
+  - Microsoft.Bot.Builder.FormFlow.FormFlowAttribute
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  implements: []
+  inheritedMembers:
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.AllowDefault
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ApplyDefaults(Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute)
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceCase
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceFormat
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceLastSeparator
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceParens
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceSeparator
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceStyle
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Feedback
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.FieldCase
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.LastSeparator
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Pattern
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Patterns
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Separator
+  - Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ValueCase
+  - Microsoft.Bot.Builder.FormFlow.FormFlowAttribute.IsLocalizable
+  attributes:
+  - type: System.AttributeUsage
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/TemplateAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.TemplateAttribute.#ctor(Microsoft.Bot.Builder.FormFlow.TemplateAttribute)
+  commentId: M:Microsoft.Bot.Builder.FormFlow.TemplateAttribute.#ctor(Microsoft.Bot.Builder.FormFlow.TemplateAttribute)
+  id: '#ctor(Microsoft.Bot.Builder.FormFlow.TemplateAttribute)'
+  parent: Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+  langs:
+  - csharp
+  name: TemplateAttribute(TemplateAttribute)
+  nameWithType: TemplateAttribute.TemplateAttribute(TemplateAttribute)
+  fullName: TemplateAttribute.TemplateAttribute(TemplateAttribute)
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Initialize from another template.
+  syntax:
+    content: public TemplateAttribute (Microsoft.Bot.Builder.FormFlow.TemplateAttribute other);
+    parameters:
+    - id: other
+      type: Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+      description: The other template.
+  overload: Microsoft.Bot.Builder.FormFlow.TemplateAttribute.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/TemplateAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.TemplateAttribute.#ctor(Microsoft.Bot.Builder.FormFlow.TemplateUsage,System.String[])
+  commentId: M:Microsoft.Bot.Builder.FormFlow.TemplateAttribute.#ctor(Microsoft.Bot.Builder.FormFlow.TemplateUsage,System.String[])
+  id: '#ctor(Microsoft.Bot.Builder.FormFlow.TemplateUsage,System.String[])'
+  parent: Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+  langs:
+  - csharp
+  name: TemplateAttribute(TemplateUsage, String[])
+  nameWithType: TemplateAttribute.TemplateAttribute(TemplateUsage, String[])
+  fullName: TemplateAttribute.TemplateAttribute(TemplateUsage, String[])
+  type: Constructor
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: Specify a set of templates to randomly choose between for a particular usage.
+  syntax:
+    content: public TemplateAttribute (Microsoft.Bot.Builder.FormFlow.TemplateUsage usage, string[] patterns);
+    parameters:
+    - id: usage
+      type: Microsoft.Bot.Builder.FormFlow.TemplateUsage
+      description: How the template will be used.
+    - id: patterns
+      type: System.String[]
+      description: The set of \ref patterns to randomly choose from.
+  overload: Microsoft.Bot.Builder.FormFlow.TemplateAttribute.#ctor*
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/TemplateAttribute.xml
+- uid: Microsoft.Bot.Builder.FormFlow.TemplateAttribute.Usage
+  commentId: F:Microsoft.Bot.Builder.FormFlow.TemplateAttribute.Usage
+  id: Usage
+  parent: Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+  langs:
+  - csharp
+  name: Usage
+  nameWithType: TemplateAttribute.Usage
+  fullName: TemplateAttribute.Usage
+  type: Field
+  assemblies:
+  - 
+  namespace: Microsoft.Bot.Builder.FormFlow
+  summary: What kind of template this is.
+  syntax:
+    content: public readonly Microsoft.Bot.Builder.FormFlow.TemplateUsage Usage;
+    return:
+      type: Microsoft.Bot.Builder.FormFlow.TemplateUsage
+      description: To be added.
+  exceptions: []
+  version:
+  - botbuilder-3.5.5
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/TemplateAttribute.xml
+references:
+- uid: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+  parent: Microsoft.Bot.Builder.FormFlow.Advanced
+  isExternal: false
+  name: TemplateBaseAttribute
+  nameWithType: TemplateBaseAttribute
+  fullName: Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute
+- uid: Microsoft.Bot.Builder.FormFlow.TemplateAttribute.#ctor(Microsoft.Bot.Builder.FormFlow.TemplateAttribute)
+  parent: Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+  isExternal: false
+  name: TemplateAttribute(TemplateAttribute)
+  nameWithType: TemplateAttribute.TemplateAttribute(TemplateAttribute)
+  fullName: TemplateAttribute.TemplateAttribute(TemplateAttribute)
+- uid: Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: TemplateAttribute
+  nameWithType: TemplateAttribute
+  fullName: Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+- uid: Microsoft.Bot.Builder.FormFlow.TemplateAttribute.#ctor(Microsoft.Bot.Builder.FormFlow.TemplateUsage,System.String[])
+  parent: Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+  isExternal: false
+  name: TemplateAttribute(TemplateUsage, String[])
+  nameWithType: TemplateAttribute.TemplateAttribute(TemplateUsage, String[])
+  fullName: TemplateAttribute.TemplateAttribute(TemplateUsage, String[])
+- uid: Microsoft.Bot.Builder.FormFlow.TemplateUsage
+  parent: Microsoft.Bot.Builder.FormFlow
+  isExternal: false
+  name: TemplateUsage
+  nameWithType: TemplateUsage
+  fullName: Microsoft.Bot.Builder.FormFlow.TemplateUsage
+- uid: System.String
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.String[]
+  parent: System
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: Microsoft.Bot.Builder.FormFlow.TemplateAttribute.Usage
+  parent: Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+  isExternal: false
+  name: Usage
+  nameWithType: TemplateAttribute.Usage
+  fullName: TemplateAttribute.Usage
+- uid: Microsoft.Bot.Builder.FormFlow.TemplateAttribute.#ctor*
+  parent: Microsoft.Bot.Builder.FormFlow.TemplateAttribute
+  isExternal: false
+  name: TemplateAttribute
+  nameWithType: TemplateAttribute.TemplateAttribute
+  fullName: TemplateAttribute.TemplateAttribute
+  monikers:
+  - botbuilder-3.5.5
+  content_git_url: https://github.com/MicrosoftDocs/bot-docs-pr/blob/AppAnalytics/dotnet/xml/Microsoft.Bot.Builder.FormFlow/TemplateAttribute.xml
