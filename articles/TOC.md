@@ -76,14 +76,6 @@
 #### [Create a proactive bot](~/azure/azure-bot-service-template-proactive.md)
 #### [Create a question and answer bot](~/azure/azure-bot-service-template-question-and-answer.md)
 ### [Set up continuous integration](~/azure/azure-bot-service-continuous-integration.md)
-<!--
-### [Language understanding](./cognitive-services-add-bot-language.md)
-### [Knowledge extraction](./cognitive-services-add-bot-knowledge.md)
-### [Speech recognition](./cognitive-services-add-bot-speech.md)
-### [Web search](./cognitive-services-add-bot-search.md)
-### [Computer vision](./cognitive-services-add-bot-vision.md)
-### [Location control](./cognitive-services-add-bot-location-control.md)
--->
 ## [Test and debug](debug/TOC.md)
 ## [Deploy](~/publish-bot-overview.md)
 ### [Deploy from local git repo](deploy-bot-local-git.md)
