@@ -48,3 +48,6 @@ To get the API key, do the following:
 4. Copy the API key to the **AppInsights API key** field of your bot's settings. See the screen capture below for reference.
 
 ![Portal screen capture of the Application ID and API Key.](~/media/portal-app-insights-appid-apikey.png)
+
+## Additional resources
+- For more information on how to connect these fields into your bot's settings, see [Enable analytics](~/portal-analytics-overview.md).
