@@ -16,9 +16,10 @@ ms.reviewer:
 > - [.NET](../dotnet/bot-builder-dotnet-cortana-skill.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-cortana-skill.md)
 
-The Bot Builder SDK allows you to a build speech-enabled bot, which can be connected to the Cortana channel as a Cortana skill. 
-Cortana skills let you provide functionality through Cortana in response to spoken input from a user.
-For more information on what a skill is, and what they can do, see [The Cortana Skills Kit][CortanaGetStarted].
+The Bot Builder SDK for .NET enables you to a build speech-enabled bot by connecting it to the Cortana channel as a Cortana skill. 
+
+> [!TIP]
+> For more information on what a skill is, and what they can do, see [The Cortana Skills Kit][CortanaGetStarted].
 
 Creating a Cortana skill using Bot Framework requires very little Cortana-specific knowledge and primarily consists of building a bot. One of the likely key differences from other bots that you may have created in the past is that Cortana has both a visual and an audio component. For the visual component, Cortana provides an area of the canvas for rendering content such as cards. For the audio component, you provide text or SSML in your bot's messages, which Cortana reads to the user, giving your bot a voice. 
 
