@@ -38,13 +38,10 @@
       "breadcrumb_path": "/bot-framework/breadcrumb/TOC.json",
       "author": "RobStand",
       "ms.prod": "bot-framework",
-      "searchScope": ["Bot Framework"]
+      "searchScope": ["Bot Framework"],
+      "ms.date": "05/10/2017"
     },
     "fileMetadata": {
-      "ms.date":
-       {
-         "**/**.md": "04/25/2017"
-       },
        "ms.author":
        {
          "**/**.md": "rstand"
