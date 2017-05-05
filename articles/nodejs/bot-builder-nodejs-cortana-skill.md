@@ -5,7 +5,7 @@ author: DeniseMak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 04/12/2017
+ms.date: 05/10/2017
 ms.reviewer:
 ---
 # Build a speech-enabled bot with Cortana skills

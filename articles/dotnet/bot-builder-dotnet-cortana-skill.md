@@ -7,11 +7,11 @@ manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 
-ms.date: 04/12/2017
+ms.date: 05/10/2017
 ms.reviewer:
 #ROBOTS: Index
 ---
-# Build a Cortana skill using the Bot Builder SDK for .NET
+# Build a speech-enabled bot with Cortana skills
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-cortana-skill.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-cortana-skill.md)
