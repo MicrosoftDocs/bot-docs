@@ -7,7 +7,7 @@ manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 # date the article was updated in mm/dd/yyyy format
-ms.date: 
+ms.date: 05/01/2017
 ---
 # Markdown template for Bot Framework on Microsoft Docs (WIP)
 
@@ -46,7 +46,7 @@ You can also use so-called reference style links where you define the links at t
 
 ## Using 'Include' files
 
-Whenever the same piece of content exists in multiple places throughout the docs (ex: the same few sentences describing a term, or the same tip/note/warning/etc.), 
+Whenever the same piece of content exists in multiple places throughout the docs (ex: the same few sentences describing a term, or the same tip/note/warning/etc.),
 you can create that content inside a 'snippet' file (in the /includes folder), then simply reference that file in markdown to dynamically inject its contents into any article.
 
 For example, the following 'include' statement injects the contents that's defined in the `includes/snippet-tip-bot-config-settings.md` file.
