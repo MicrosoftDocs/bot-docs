@@ -17,6 +17,8 @@
 #### [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
 #### [Add media attachments to messages](~/dotnet/bot-builder-dotnet-add-media-attachments.md)
 #### [Add rich cards to messages](~/dotnet/bot-builder-dotnet-add-rich-card-attachments.md)
+#### [Add speech to messages](~/dotnet/bot-builder-dotnet-text-to-speech.md)
+#### [Add input hints to messages](~/dotnet/bot-builder-dotnet-add-input-hints.md)
 #### [Add suggested actions to messages](~/dotnet/bot-builder-dotnet-add-suggested-actions.md)
 #### [Implement channel-specific functionality](~/dotnet/bot-builder-dotnet-channeldata.md)
 #### [Send and receive activities](~/dotnet/bot-builder-dotnet-connector.md)
@@ -47,6 +49,8 @@
 #### [Send proactive messages](~/nodejs/bot-builder-nodejs-proactive-messages.md)
 #### [Respond to user messages](~/nodejs/bot-builder-nodejs-use-default-message-handler.md) 
 #### [Add rich cards to messages](~/nodejs/bot-builder-nodejs-send-rich-cards.md)
+#### [Add speech to messages](~/nodejs/bot-builder-nodejs-text-to-speech.md)
+#### [Add input hints to messages](~/nodejs/bot-builder-nodejs-send-input-hints.md)
 #### [Send suggested actions](~/nodejs/bot-builder-nodejs-send-suggested-actions.md)
 #### [Send a typing indicator](~/nodejs/bot-builder-nodejs-send-typing-indicator.md)
 ### Dialogs

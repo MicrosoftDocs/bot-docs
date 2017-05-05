@@ -12,10 +12,10 @@ ms.reviewer:
 
 # Create messages
 
-Your bot will send **message** [activities](~/dotnet/bot-builder-dotnet-activities.md) to communicate information to users, 
-and likewise, will also receive **message** activities from users. 
-Some messages may simply consist of plain text, while others may contain richer content such as [suggested actions](~/dotnet/bot-builder-dotnet-add-suggested-actions.md), 
-[media attachments](~/dotnet/bot-builder-dotnet-add-media-attachments.md), and [rich cards](~/dotnet/bot-builder-dotnet-add-rich-card-attachments.md). 
+Your bot will send **message** [activities](~/dotnet/bot-builder-dotnet-activities.md) to communicate information to users, and likewise, will also receive **message** activities from users. 
+Some messages may simply consist of plain text, while others may contain richer content such as [text to be spoken](~/dotnet/bot-builder-dotnet-text-to-speech.md), [suggested actions](~/dotnet/bot-builder-dotnet-add-suggested-actions.md), 
+[media attachments](~/dotnet/bot-builder-dotnet-add-media-attachments.md), [rich cards](~/dotnet/bot-builder-dotnet-add-rich-card-attachments.md), and [channel-specific data](~/dotnet/bot-builder-dotnet-channeldata.md). 
+
 This article describes some of the commonly-used message properties.
 
 ## Message text and format
@@ -140,6 +140,10 @@ This code example shows how to use a strongly-typed class to process an entity w
 The `ChannelData` property of a message activity can be used to implement channel-specific functionality. 
 For details, see [Implement channel-specific functionality](~/dotnet/bot-builder-dotnet-channeldata.md).
 
+## Text to speech
+
+The `Speak` property of a message activity can be used to specify the text to be spoken by your bot on a speech-enabled channel. The `InputHint` property of a message activity can be used to control the state of the client's microphone and input box (if any). For details, see [Add speech to messages](~/dotnet/bot-builder-dotnet-text-to-speech.md).
+
 ## Suggested actions
 
 The `SuggestedActions` property of a message activity can be used to present buttons that the user can tap to provide input. Unlike buttons that appear within rich cards (which remain visable and accessible to the user even after being tapped), buttons that appear within the suggested actions pane will disappear after the user makes a selection. For details, see [Add suggested actions to messages](~/dotnet/bot-builder-dotnet-add-suggested-actions.md).
@@ -150,5 +154,6 @@ The `SuggestedActions` property of a message activity can be used to present but
 - [Send and receive activities](~/dotnet/bot-builder-dotnet-connector.md)
 - [Add media attachments to messages](~/dotnet/bot-builder-dotnet-add-media-attachments.md)
 - [Add rich cards to messages](~/dotnet/bot-builder-dotnet-add-rich-card-attachments.md)
+- [Add speech to messages](~/dotnet/bot-builder-dotnet-text-to-speech.md)
 - [Add suggested actions to messages](~/dotnet/bot-builder-dotnet-add-suggested-actions.md)
 - [Implement channel-specific functionality](~/dotnet/bot-builder-dotnet-channeldata.md)

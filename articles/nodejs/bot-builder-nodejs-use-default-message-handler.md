@@ -52,14 +52,15 @@ For details about the template syntax, refer to the documentation for the [sprin
 ## Next steps
 
 * **Message handlers** - For a bot that's more complex that the previous example, you may want to use different forms of message handlers. You can add an *action* to a dialog to listen for user input as it occurs. See [Listen for messages using actions](bot-builder-nodejs-global-handlers.md) for information on using actions in your bot. Another form is a *waterfall*, which is a common way to guide the user through a series of steps or prompt the user with a series of questions before taking action. See [Ask questions](bot-builder-nodejs-prompts.md) for information on waterfalls.
-* **Attachments, rich cards, and suggested actions** - The contents of messages aren't limited to text strings. Your bot can also [send and receive attachments][SendAttachments], present the user with [rich cards][SendCardWithButtons] that contain images and buttons, and [send suggested actions](~/nodejs/bot-builder-nodejs-send-suggested-actions.md).
+* **Attachments, rich cards, suggested actions, and speech** - The contents of messages aren't limited to text strings. Your bot can also [send and receive attachments][SendAttachments], present the user with [rich cards][SendCardWithButtons] that contain images and buttons, [send suggested actions](~/nodejs/bot-builder-nodejs-send-suggested-actions.md), and [send text to be spoken by your bot](~/nodejs/bot-builder-nodejs-text-to-speech.md) on a speech-enabled channel.
 
 ## Additional resources
 
 * [session.send][SessionSend]
 * [sprintf][sprintf]
 * [Send attachments][SendAttachments]
-* [Send cards][SendCardWithButtons]
+* [Add rich cards to messages][SendCardWithButtons]
+* [Add speech to messages](~/nodejs/bot-builder-nodejs-text-to-speech.md)
 * [Send suggested actions](~/nodejs/bot-builder-nodejs-send-suggested-actions.md)
 * [Ask questions](~/nodejs/bot-builder-nodejs-prompts.md)
 * [Listen for messages using actions]( ~/nodejs/bot-builder-nodejs-global-handlers.md)
