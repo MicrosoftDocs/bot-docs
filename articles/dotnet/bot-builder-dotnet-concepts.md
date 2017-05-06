@@ -44,7 +44,7 @@ For example, a bot that takes sandwich orders must collect several pieces of inf
 
 [!include[State concept overview](~/includes/snippet-dotnet-concept-state.md)]
 For details about managing state using the Bot Builder SDK for .NET, 
-see [Manage state](~/dotnet/bot-builder-dotnet-state.md).
+see [Manage state data](~/dotnet/bot-builder-dotnet-state.md).
 
 ## Naming conventions
 
