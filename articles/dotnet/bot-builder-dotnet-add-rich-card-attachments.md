@@ -63,7 +63,7 @@ the expected contents of `CardAction.Value` for each type:
 |----|----|
 | openUrl | URL to be opened in the built-in browser |
 | imBack | Text of the message to send to the bot (from the user who clicked the button or tapped the card). This message (from user to bot) will be visible to all conversation participants via the client application that is hosting the conversation. |
-| postBack | Text of the message to send to the bot (from the user who clicked the button or tapped the card). This message will not be displayed by the client application that is hosting the conversation. |
+| postBack | Text of the message to send to the bot (from the user who clicked the button or tapped the card). Some client applications may display this text in the message feed, where it will be visible to all conversation participants. |
 | call | Destination for a phone call in this format: **tel:123123123123** |
 | playAudio | URL of audio to be played |
 | playVideo | URL of video to be played |
