@@ -22,8 +22,7 @@ This article describes how to manage state data using the State service via the 
 
 ## Bot state methods
 
-This table lists the methods within the `BotState` object of a [state client](#state-client) 
-that you can use to manage state data.
+This table lists the methods within Bot state service that you can use to manage state data.
 
 | Method | Scoped to | Objective |                                                
 |----|----|----|
@@ -31,62 +30,71 @@ that you can use to manage state data.
 | `GetConversationData` | Conversation | Get state data that has previously been saved for the conversation on the specified channel |
 | `GetPrivateConversationData` | User and Conversation | Get state data that has previously been saved for the user within the conversation on the specified channel |
 | `SetUserData` | User | Save state data for the user on the specified channel |
-| `SetConversationData` | Conversation | Save state data for the conversation on the specified channel |
+| `SetConversationData` | Conversation | Save state data for the conversation on the specified channel. <br/><br/>**Note**: Because the `DeleteStateForUser` method does not delete data that has been stored using the `SetConversationData` method, you must NOT use this method to store a user's personally identifiable information (PII). |
 | `SetPrivateConversationData` | User and Conversation | Save state data for the user within the conversation on the specified channel |
-| `DeleteStateForUser` | User | Delete state data for the user on the specified channel. Your bot should call this method when it receives an activity of type [deleteUserData](~/dotnet/bot-builder-dotnet-activities.md#deleteuserdata) or an activity of type [contactRelationUpdate](~/dotnet/bot-builder-dotnet-activities.md#contactrelationupdate) that indicates the bot has been removed from the user's contact list. |
+| `DeleteStateForUser` | User | Delete state data for the user that has previously been stored by using either the `SetUserData` method or the `SetPrivateConversationData` method. <br/><br/>**Note**: Your bot should call this method when it receives an activity of type [deleteUserData](~/dotnet/bot-builder-dotnet-activities.md#deleteuserdata) or an activity of type [contactRelationUpdate](~/dotnet/bot-builder-dotnet-activities.md#contactrelationupdate) that indicates the bot has been removed from the user's contact list. |
 
-If your bot saves state data by using one of the "**Set...**" methods, 
-future messages that your bot receives in the same context will contain that data, 
-which your bot can access by using one of the "**Get...**" methods.
+If your bot saves state data by using one of the "**Set...Data**" methods, future messages that your bot receives in the same context will contain that data, which your bot can access by using the corresponding "**Get...Data**" method.
+
+## Useful properties for managing state data
+
+Each [Activity][Activity] object contains properties that you will use to manage state data.
+
+| Property | Description | Use case |
+|----|----|----|
+| `From` | Uniquely identifies a user on a channel | Storing and retrieving state data that is associated with a user |
+| `Conversation` | Uniquely identifies a conversation | Storing and retrieving state data that is associated with a conversation |
+| `From` and `Conversation` | Uniquely identifies a user and conversation | Storing and retrieving state data that is associated with a specific user within the context of a specific conversation |
 
 > [!NOTE]
-> You may store up to 32 kilobytes of data 
-> for each user on a channel, each conversation on a channel, and each user within the context of a conversation on a channel. 
+> You may use these property values as keys even if you opt to store state data in your own database, rather than using the Bot Framework state data store.
 
 ##<a id="state-client"></a> Create a state client
 
 The `StateClient` object enables you to manage state data using the Bot Builder SDK for .NET. 
-To create a state client using an `Activity` object, call the `GetStateClient` method.
+If you have access to a message that belongs to the same context in which you want to manage state data, you can create a state client by calling the `GetStateClient` method on the `Activity` object.
 
 [!code-csharp[Get State client](~/includes/code/dotnet-state.cs#getStateClient1)]
 
-If you do not have access to an `Activity` object, you can create a state client by simply 
-creating a new instance of the `StateClient` class. In this example, `microsoftAppId` and `microsoftAppPassword` are the Bot Framework authentication 
-credentials that you acquire for your bot during the [bot registration](~/portal-register-bot.md) 
-process.
+If you do not have access to a message that belongs to the same context in which you want to manage state data, you can create a state client by simply creating a new instance of the `StateClient` class. In this example, `microsoftAppId` and `microsoftAppPassword` are the Bot Framework authentication credentials that you acquire for your bot during the [bot registration](~/portal-register-bot.md) process.
 
 [!code-csharp[Get State client](~/includes/code/dotnet-state.cs#getStateClient2)]
 
+> [!NOTE]
+> The default state client is stored in a central service. For some channels, you may want to use a state API that is hosted within the channel itself, so that state data can be stored in a compliant store that the channel supplies.
+
 ## Get state data
 
-Each of the "**Get...**" methods returns a `BotData` object that contains the state data for the specified user and/or conversation. 
-To get a specific property value from a `BotData` object, call the `GetProperty` method. 
+Each of the "**Get...Data**" methods returns a `BotData` object that contains the state data for the specified user and/or conversation. To get a specific property value from a `BotData` object, call the `GetProperty` method. 
 
-This code sample shows how to get a typed property from user data. 
+The following code example shows how to get a typed property from user data. 
 
 [!code-csharp[Get state property](~/includes/code/dotnet-state.cs#getProperty1)]
 
-This code sample shows how to get a property from a complex type within user data.
+The following code example shows how to get a property from a complex type within user data.
 
 [!code-csharp[Get state property](~/includes/code/dotnet-state.cs#getProperty2)]
 
-If no state data exists for the user and/or conversation that is specified in 
-a "**Get...**" method call, 
+If no state data exists for the user and/or conversation that is specified for a "**Get...Data**" method call, 
 the `BotData` object that is returned will contain these property values: 
 - `BotData.Data` = null
 - `BotData.ETag` = "*"
 
-## Set state data
+## Save state data
 
-To update state data, first get the `BotData` object by calling the appropriate "**Get...**" method, 
+To save state data, first get the `BotData` object by calling the appropriate "**Get...Data**" method, 
 then update it by calling the `SetProperty` method for each property you want to update, 
-and save it by calling the appropriate "**Set...**" method. 
+and save it by calling the appropriate "**Set...Data**" method. 
 
-This code sample shows how to update a typed property in user data.
+> [!NOTE]
+> You may store up to 32 kilobytes of data for each user on a channel, each conversation on a channel, 
+> and each user within the context of a conversation on a channel. 
+
+The following code example shows how to save a typed property in user data.
 
 [!code-csharp[Set state property](~/includes/code/dotnet-state.cs#setProperty1)]
 
-This code sample shows how to update a property in a complex type within user data. 
+The following code example shows how to save a property in a complex type within user data. 
 
 [!code-csharp[Set state property](~/includes/code/dotnet-state.cs#setProperty2)]
 
@@ -94,7 +102,7 @@ This code sample shows how to update a property in a complex type within user da
 
 Your bot may receive an error response with HTTP status code **412 Precondition Failed** 
 when it attempts to save state data, if another instance of the bot has changed the data. 
-You can design your bot to account for this scenario, as shown in this code sample.
+You can design your bot to account for this scenario, as shown in the following code example.
 
 [!code-csharp[Handle exception saving state](~/includes/code/dotnet-state.cs#handleException)]
 
@@ -104,3 +112,5 @@ You can design your bot to account for this scenario, as shown in this code samp
 - [Connector library][connectorLibrary]
 
 [connectorLibrary]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/db/dbb/namespace_microsoft_1_1_bot_1_1_connector.html
+
+[Activity]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/dc/d2f/class_microsoft_1_1_bot_1_1_connector_1_1_activity.html

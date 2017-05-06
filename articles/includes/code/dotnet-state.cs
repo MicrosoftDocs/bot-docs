@@ -15,8 +15,9 @@ var sentGreeting = userData.GetProperty<bool>("SentGreeting");
 
 
 // <getProperty2>
+MyCustomType myUserData = new MyCustomType();
 BotData botData = await botState.GetUserDataAsync(activity.ChannelId, activity.From.Id);
-var myUserData = botData.GetProperty<MyCustomType>("UserData");
+myUserData = botData.GetProperty<MyCustomType>("UserData");
 // </getProperty2>
 
 
