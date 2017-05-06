@@ -1,5 +1,5 @@
 ---
-title: Bot Framework overview | Microsoft Docs
+title: About the Bot Framework | Microsoft Docs
 description: Learn about the Microsoft Bot Framework, a comprehensive framework of tools and services to build and deploy high quality bots.
 author: RobStand
 ms.author: rstand
@@ -11,16 +11,13 @@ ms.date:
 
 # Bot Framework Overview
 
-The Bot Framework is a platform for building, connecting, testing, and deploying powerful and intelligent bots.
+The Bot Framework is a platform for building, connecting, testing, and deploying powerful and intelligent bots. With support for .NET, Node.js, and REST, you can quickly [start building bots](bot-builder-overview-getstarted.md) with the Bot Framework.
 
 ## What is a bot?
-A bot is a service which can perform an action, in reaction to user input or external events. 
-It can communicate conversationally with text (written), cards (interactively), or speech (audio). A bot may be as simple as basic pattern matching with a response, or it may be a sophisticated weaving of artificial intelligence techniques with complex conversational state tracking and integration to existing business services.
+Think of a bot as an app that users interact with in a conversational way. Bots can communicate conversationally with text, cards , or speech. A bot may be as simple as basic pattern matching with a response, or it may be a sophisticated weaving of artificial intelligence techniques with complex conversational state tracking and integration to existing business services.
 
-Think of a bot as an app that users interact with in a conversational way.
- 
 The Bot Framework enables you to build bots that support different types of interactions with users. You can design conversations in your bot to be freeform. Your bot can also have more guided interactions where it provides the user choices or actions. The conversation can use simple text strings or more complex rich cards that contain text, images, and action buttons. And you can add natural language interactions, which let your users interact with your bots in a natural and expressive way. 
-
+ 
 > [!TIP]
 > The types of bots that you can build with the Bot Framework are also commonly called <a href="https://en.wikipedia.org/wiki/Chatbot">chatbots</a>.
 
