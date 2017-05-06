@@ -1,6 +1,6 @@
 ---
-title: Manage state | Microsoft Docs
-description: Learn how to manage state data with the Bot Builder SDK for .NET.
+title: Manage state data | Microsoft Docs
+description: Learn how to save and retreive state data with the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
@@ -10,7 +10,7 @@ ms.date:
 ms.reviewer:
 ---
 
-# Manage state
+# Manage state data
 
 [!include[State concept overview](~/includes/snippet-dotnet-concept-state.md)]  
 This article describes how to manage state data using the State service via the Bot Builder SDK for .NET.

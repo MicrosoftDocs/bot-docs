@@ -39,7 +39,7 @@
 ### Channels
 #### [Build a Cortana skill](~/dotnet/bot-builder-dotnet-cortana-skill.md)
 #### [Conduct Skype calls](~/dotnet/bot-builder-dotnet-audio-calls.md)
-### [Manage state](~/dotnet/bot-builder-dotnet-state.md)
+### [Manage state data](~/dotnet/bot-builder-dotnet-state.md)
 ### [Secure your bot](~/dotnet/bot-builder-dotnet-security.md)
 ### [Release notes](~/dotnet/bot-builder-dotnet-release-notes.md)
 ## [Develop with Node.js](~/nodejs/index.md)
