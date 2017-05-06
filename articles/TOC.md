@@ -40,6 +40,7 @@
 #### [Build a Cortana skill](~/dotnet/bot-builder-dotnet-cortana-skill.md)
 #### [Conduct Skype calls](~/dotnet/bot-builder-dotnet-audio-calls.md)
 ### [Manage state data](~/dotnet/bot-builder-dotnet-state.md)
+### [Request payment](~/dotnet/bot-builder-dotnet-request-payment.md)
 ### [Secure your bot](~/dotnet/bot-builder-dotnet-security.md)
 ### [Release notes](~/dotnet/bot-builder-dotnet-release-notes.md)
 ## [Develop with Node.js](~/nodejs/index.md)
@@ -67,6 +68,7 @@
 ### [Support localization](~/nodejs/bot-builder-nodejs-localization.md)
 ### [Intercept messages](~/nodejs/bot-builder-nodejs-intercept-messages.md)
 ### [Use backchannel mechanism](~/nodejs/bot-builder-nodejs-backchannel.md)
+### [Request payment](~/nodejs/bot-builder-nodejs-request-payment.md)
 ## [Develop with Azure Bot Service](~/azure/index.md)
 ### Create a bot
 #### [Templates](~/azure/azure-bot-service-templates.md)

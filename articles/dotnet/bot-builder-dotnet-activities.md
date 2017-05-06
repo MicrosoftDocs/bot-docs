@@ -27,6 +27,8 @@ The following activity types are supported by the Bot Builder SDK for .NET.
 | ping | n/a | Represents an attempt to determine whether a bot's endpoint is accessible. | 
 | deleteUserData | n/a | Indicates to a bot that a user has requested that the bot delete any user data it may have stored. |
 | endOfConversation | IEndOfConversationActivity | Indicates the end of a conversation. |
+| event | IEventActivity | Represents a communication sent to a bot that is not visible to the user. |
+| invoke | IInvokeActivity | Represents a communication sent to a bot to request that it perform a specific operation. This activity type is reserved for internal use by the Microsoft Bot Framework. |
 
 ## message
 
@@ -75,6 +77,18 @@ for the user that made the request.
 
 A bot receives an **endOfConversation** activity to indicate that the user has ended the conversation. 
 A bot may send an **endOfConversation** activity to indicate to the user that the conversation is ending. 
+
+## event
+
+Your bot may receive an **event** activity from an external process or service that wants to 
+communicate information to your bot without that information being visible to users. The 
+sender of an **event** activity typically does not expect the bot to acknowledge receipt in any way.
+
+## invoke
+
+Your bot may receive an **invoke** activity that represents a request for it to perform a specific operation. 
+The sender of an **invoke** activity typically expects the bot to acknowledge receipt via HTTP response. 
+This activity type is reserved for internal use by the Microsoft Bot Framework.
 
 ## Additional resources
 

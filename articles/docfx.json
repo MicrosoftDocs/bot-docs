@@ -3,9 +3,9 @@
     "content": [
       {
         "files": [
-          "**/**.md",
-          "**/**.yml",
-          "dotnet/**.md",
+          "**/**.md", 
+          "**/**.yml", 
+          "dotnet/**.md", 
           "node/**.md"
         ],
         "exclude": [
