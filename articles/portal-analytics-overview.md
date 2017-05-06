@@ -1,6 +1,6 @@
 ---
-title: Application Analytics | Microsoft Docs
-description: Learn how to use data collection and analysis to improve your bot.
+title: Enable bot analytics | Microsoft Docs
+description: Learn how to use data collection and analysis to improve your bot with analytics in the Bot Framework.
 author: JaymeMPerlman
 ms.author: v-jaype
 manager: rstand
@@ -8,9 +8,8 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date:
 ms.reviewer:
-ROBOTS: Index, Follow
 ---
-# Bot analytics
+# Enable bot analytics
 Analytics is an extension of [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-analytics). Application Insights provides **service-level** and instrumentation data like traffic, latency, and integrations. Analytics provides **conversation-level** reporting on user, message, and channel data. 
 
 Analytics are not available until Application Insights has been enabled and configured. Application Insights will begin collecting data as soon as it is enabled. For example, if Application Insights was enabled a week ago for a six-month-old bot, it will have collected one week of data.
