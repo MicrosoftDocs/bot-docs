@@ -135,6 +135,7 @@ module.exports.speak = function (template, params, options) {
 
 > [!TIP]
 > You can find a small utility module (ssml.js) for building your bot's SSML-based responses in the [Roller sample skill](https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/demo-RollerSkill).
+> There are also several useful SSML libraries available through [npm](https://www.npmjs.com/search?q=ssml) which make it easy to create well formatted SSML.
 
 ## Display cards in Cortana
 
@@ -222,7 +223,7 @@ how many should be rolled. Once it has built the game structure
 it will pass it to a separate 'PlayGameDialog'.
  
 To start the dialog, the **triggerAction()** handler on this dialog allows a user to say
-something like "I'd like to roll some dice". It uses using a regular expression to match the user's input but you could just as easily use a LUIS intent. <!-- TODO: Add link to LUIS intent -->
+something like "I'd like to roll some dice". It uses a regular expression to match the user's input but you could just as easily use a LUIS [intent](./bot-builder-nodejs-recognize-intent.md). 
  
 
 ```javascript
@@ -408,26 +409,34 @@ If you have a bot running locally or deployed in the cloud, you can invoke it fr
 
 ## Additional resources
 * [The Cortana Skills Kit][CortanaGetStarted]
+* [Add speech to messages](bot-builder-nodejs-text-to-speech.md)
 * [SSML Reference][SSMLRef]
+* [Voice design best practices for Cortana][VoiceDesign]
+* [Card design best practices for Cortana][CardDesign]
 * [Cortana Dev Center][CortanaDevCenter]
+* [Testing and debugging best practices for Cortana][Cortana-TestBestPractice]
 
 
 [CortanaGetStarted]: https://docs.microsoft.com/en-us/cortana/getstarted
+[BFPortal]: https://dev.botframework.com/
 [Register]: https://docs.microsoft.com/en-us/bot-framework/portal-register-bot
 
-[BFPortal]: https://dev.botframework.com/
-[SSMLRef]: https://msdn.microsoft.com/en-us/library/hh378377(v=office.14).aspx
+
+[SSMLRef]: https://aka.ms/cortana-ssml
 [IMessage]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.imessage.html
 [Send]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#send
 [CortanaDevCenter]: https://developer.microsoft.com/en-us/cortana
 
 [CortanaSpecificEntities]: https://aka.ms/lgvcto
+[CortanaAuth]: https://aka.ms/vsdqcj
 
-[InvocationNameGuidelines]: https://docs.microsoft.com/en-us/cortana/design-guides/guide-invocation
-[VoiceDesign]: https://docs.microsoft.com/en-us/cortana/design-guides/voice-design-best-practices
-[CardDesign]: https://docs.microsoft.com/en-us/cortana/design-guides/card-design-best-practices
-[Cortana-Debug]: https://docs.microsoft.com/en-us/cortana/testing/testing-and-debugging?#Enabling-Debugging-of-Cortana-Skills
-[Cortana-Publish]: https://docs.microsoft.com/en-us/cortana/publishing/publishing
-[Cortana-DeployToSelf]: https://docs.microsoft.com/en-us/cortana/publishing/publishings#deploy-to-self
+[InvocationNameGuidelines]: https://aka.ms/cortana-invocation-guidelines
+[VoiceDesign]: https://aka.ms/cortana-design-voice
+[CardDesign]: https://aka.ms/cortana-design-card
+[Cortana-Debug]: https://aka.ms/cortana-enable-debug
+[Cortana-Publish]: https://aka.ms/cortana-publish
 
-[CortanaChannel]:https://aka.ms/try-cortana-bot
+
+[CortanaTry]: https://aka.ms/try-cortana-bot
+[CortanaChannel]: https://aka.ms/bot-cortana-channel
+[Cortana-TestBestPractice]: https://aka.ms/cortana-test-best-practice

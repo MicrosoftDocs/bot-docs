@@ -24,7 +24,7 @@ Log in to the [Bot Framework developer portal][BFPortal] using a [Microsoft acco
 ## Enable speech recognition priming
 If your bot uses any Language Understanding Intelligent Service (LUIS) model, make sure you register the LUIS application ID. In the **Settings** panel, under **Configuration**, enter the LUIS application ID in the **Speech recognition priming with LUIS** text box. This helps your bot recognize spoken utterances that are defined in your LUIS model.
 
-## Step 3: Add the Cortana channel
+## Add the Cortana channel
 Under **My bots**, select the bot you would like to connect to the Cortana channel. From the list of channels, click the button to add Cortana.
 
 
@@ -36,7 +36,7 @@ Under **My bots**, select the bot you would like to connect to the Cortana chann
 
 If you have already deployed your bot, make sure the **Messaging endpoint** is correctly set.
 
-If you are running the bot locally, you can get an endpoint to use for testing by running tunneling software, such as [ngrok](https://ngrok.com). First install ngrok, and then from a console window type: 
+If you are running the bot locally, you can get an endpoint to use for testing by running tunneling software, such as [ngrok](https://ngrok.com). To use ngrok to get an endpoint, from a console window type: 
 ```
 ngrok http 3978
 ``` 
@@ -56,7 +56,7 @@ When registering your bot with the Cortana channel, some basic information about
 <!-- TODO: Update screenshot when new UI is available -->
 ![Fill out channel information](~/media/cortana/cortana-register.png)
 
-## Step 5: Add user profile data (Optional)
+## Add user profile data (Optional)
 Cortana provides access to several different types of user profile information, that you can use to customize the bot for the user. 
 
 > [!NOTE] 
@@ -89,10 +89,10 @@ Now that your bot is available as a Cortana skill you should test it. At this po
 Type a message in the **Chat** window of the Bot Framework portal to verify that your bot is working.
 
 ## Test your Cortana skill
-
+You can invoke your Cortana skill by speaking an invocation phrase to Cortana. 
 1. Open the Notebook within Cortana and click **About me** to see which account you're using for Cortana. Make sure you are signed in with the same Microsoft account that you used to register your bot. 
    ![Sign in to Cortana's notebook](~/media/cortana/cortana-notebook.png)
-2. Click on Cortana's microphone to talk to Cortana and say your bot's [invocation phrase][InvocationNameGuidelines].
+2. Click on the microphone button in the Cortana app or in the "Ask me anything" search box in Windows, and say your bot's [invocation phrase][InvocationNameGuidelines]. The invocation phrase includes an *invocation name*, which uniquely identifies the skill to invoke. For example, if a skill's invocation name is "Northwind Photo", a proper invocation phrase could include "Ask Northwind Photo to..." or "Tell Northwind Photo that...".
 
    You specify your bot's *Invocation Name* when you configure it for Cortana.
    ![Enter the invocation name when you configure the Cortana channel](~/media/cortana/cortana-invocation-name-callout.png)
@@ -104,10 +104,10 @@ Type a message in the **Chat** window of the Bot Framework portal to verify that
 If your Cortana skill fails to launch, check the following:
 * Make sure you are signed in to Cortana using the same Microsoft account that you used to register your bot in the Bot Framework developer portal.
 * Check if the bot is working by typing a message to it in the **Chat** window of the Bot Framework portal.
-* Check if your invocation phrase meets the [guidelines][InvocationNameGuidelines]. If your invocation name is hard to pronounce or sounds similar to other words Cortana might have difficulty recognizing it.
+* Check if your invocation name meets the [guidelines][InvocationNameGuidelines]. If your invocation name is longer than three words, hard to pronounce, or sounds like other words, Cortana might have difficulty recognizing it.
 * If your skill uses a LUIS model, make sure you [enable speech recognition priming](https://aka.ms/prime-speech-luis).
 
-See the [Enable Debugging of Cortana Skills][Cortana-Debug] for information on how to enable debugging of your skill in the Cortana dashboard. 
+See the [Enable Debugging of Cortana skills][Cortana-Debug] for additional troubleshooting tips and information on how to enable debugging of your skill in the Cortana dashboard. 
 
 
 
@@ -118,15 +118,13 @@ Once you have tested your Cortana skill and verified that it works the way you'd
 ## Additional resources
 * [The Cortana Skills Kit][CortanaGetStarted]
 * [Cortana Dev Center][CortanaDevCenter]
+* [Testing and debugging best practices][Cortana-TestBestPractice]
 
 
 [CortanaGetStarted]: https://docs.microsoft.com/en-us/cortana/getstarted
 
 [BFPortal]: https://dev.botframework.com/
 [Register]: https://docs.microsoft.com/en-us/bot-framework/portal-register-bot
-[SSMLRef]: https://msdn.microsoft.com/en-us/library/hh378377(v=office.14).aspx
-[IMessage]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.imessage.html
-[Send]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#send
 [CortanaDevCenter]: https://developer.microsoft.com/en-us/cortana
 
 [CortanaSpecificEntities]: https://aka.ms/lgvcto
@@ -134,21 +132,15 @@ Once you have tested your Cortana skill and verified that it works the way you'd
 
 [InvocationNameGuidelines]: https://aka.ms/cortana-invocation-guidelines 
 
-[VoiceDesign]: https://docs.microsoft.com/en-us/cortana/design-guides/voice-design-best-practices
-[CardDesign]: https://docs.microsoft.com/en-us/cortana/design-guides/card-design-best-practices
-[Cortana-Debug]: https://docs.microsoft.com/en-us/cortana/testing/testing-and-debugging#Enabling-Debugging-of-Cortana-Skills
-[Cortana-Publish]: https://docs.microsoft.com/en-us/cortana/publishing/publishing
-[Cortana-DeployToSelf]: https://docs.microsoft.com/en-us/cortana/publishing/publishing#deploy-to-self
+
+[Cortana-Debug]: https://aka.ms/cortana-enable-debug
+[Cortana-TestBestPractice]: https://aka.ms/cortana-test-best-practice
+[Cortana-Publish]: https://aka.ms/cortana-publish
 
 
 
 
-[heroCard]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d4/dab/class_microsoft_1_1_bot_1_1_connector_1_1_hero_card.html 
 
-[thumbnailCard]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/da/da6/class_microsoft_1_1_bot_1_1_connector_1_1_thumbnail_card.html 
 
-[receiptCard]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d0/df9/class_microsoft_1_1_bot_1_1_connector_1_1_receipt_card.html 
-
-[signinCard]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/dc/d03/class_microsoft_1_1_bot_1_1_connector_1_1_signin_card.html 
 
 

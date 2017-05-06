@@ -16,7 +16,9 @@ ms.reviewer:
 > - [.NET](../dotnet/bot-builder-dotnet-cortana-skill.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-cortana-skill.md)
 
+
 The Bot Builder SDK for .NET enables you to a build speech-enabled bot by connecting it to the Cortana channel as a Cortana skill. 
+
 
 > [!TIP]
 > For more information on what a skill is, and what they can do, see [The Cortana Skills Kit][CortanaGetStarted].
@@ -318,15 +320,18 @@ If your bot is running locally or deployed in the cloud, you can invoke it from 
 
 ## Additional resources
 * [The Cortana Skills Kit][CortanaGetStarted]
+* [Add speech to messages](bot-builder-dotnet-text-to-speech.md)
 * [SSML Reference][SSMLRef]
+* [Voice design best practices for Cortana][VoiceDesign]
+* [Card design best practices for Cortana][CardDesign]
 * [Cortana Dev Center][CortanaDevCenter]
-
+* [Testing and debugging best practices for Cortana][Cortana-TestBestPractice]
 
 [CortanaGetStarted]: https://docs.microsoft.com/en-us/cortana/getstarted
-
 [BFPortal]: https://dev.botframework.com/
 [Register]: https://docs.microsoft.com/en-us/bot-framework/portal-register-bot
-[SSMLRef]: https://msdn.microsoft.com/en-us/library/hh378377(v=office.14).aspx
+
+[SSMLRef]: https://aka.ms/cortana-ssml
 [IMessage]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.imessage.html
 [Send]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#send
 [CortanaDevCenter]: https://developer.microsoft.com/en-us/cortana
@@ -334,16 +339,16 @@ If your bot is running locally or deployed in the cloud, you can invoke it from 
 [CortanaSpecificEntities]: https://aka.ms/lgvcto
 [CortanaAuth]: https://aka.ms/vsdqcj
 
-[InvocationNameGuidelines]: https://docs.microsoft.com/en-us/cortana/design-guides/guide-invocation  
-[VoiceDesign]: https://docs.microsoft.com/en-us/cortana/design-guides/voice-design-best-practices
-[CardDesign]: https://docs.microsoft.com/en-us/cortana/design-guides/card-design-best-practices
-[Cortana-Debug]: https://docs.microsoft.com/en-us/cortana/testing/testing-and-debugging#Enabling-Debugging-of-Cortana-Skills
-[Cortana-Publish]: https://docs.microsoft.com/en-us/cortana/publishing/publishing
-[Cortana-DeployToSelf]: https://docs.microsoft.com/en-us/cortana/publishing/publishing#deploy-to-self
-
-[CortanaChannel]:https://aka.ms/try-cortana-bot
+[InvocationNameGuidelines]: https://aka.ms/cortana-invocation-guidelines  
+[VoiceDesign]: https://aka.ms/cortana-design-voice
+[CardDesign]: https://aka.ms/cortana-design-card
+[Cortana-Debug]: https://aka.ms/cortana-enable-debug
+[Cortana-Publish]: https://aka.ms/cortana-publish
 
 
+[CortanaTry]: https://aka.ms/try-cortana-bot
+[CortanaChannel]: https://aka.ms/bot-cortana-channel
+[Cortana-TestBestPractice]: https://aka.ms/cortana-test-best-practice
 
 [heroCard]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d4/dab/class_microsoft_1_1_bot_1_1_connector_1_1_hero_card.html 
 
