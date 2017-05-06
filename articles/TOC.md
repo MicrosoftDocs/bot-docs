@@ -2,6 +2,7 @@
 ## [About Bot Framework](overview-introduction-bot-framework.md)
 ## [How it works](overview-how-bot-framework-works.md)
 ## [Make bots smarter](./cognitive-services-bot-intelligence-overview.md)
+## [Get the Bot Builder SDK](resources-tools-downloads.md)
 # Get started
 ## [Start building bots](bot-builder-overview-getstarted.md)
 ## [Create your first bot with .NET](~/dotnet/bot-builder-dotnet-quickstart.md)
