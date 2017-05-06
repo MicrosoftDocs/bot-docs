@@ -29,10 +29,10 @@ To access Application Insights, open the bot in the [developer portal](https://m
 ### AppInsights Instrumentation Key
 To find this value, open Application Insights and navigate to **Configure** > **Properties**.
 
-## AppInsights API key
+### AppInsights API key
 Provide an Azure App Insights API key. Learn how to [generate a new API key](https://dev.applicationinsights.io/documentation/Authorization/API-key-and-App-ID). Only **Read** permission is required.
 
-## AppInsights Application ID
+### AppInsights Application ID
 To find this value, open Application Insights and navigate to **Configure** > **API Access**.
 
 For more information on how to locate these values, see [Application Insights keys](~/resources-app-insights-keys.md).
