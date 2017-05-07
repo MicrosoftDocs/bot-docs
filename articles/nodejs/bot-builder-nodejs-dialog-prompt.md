@@ -29,14 +29,14 @@ The exact reason for a `null` response can be determined by examining the [Resum
 ## Prompt types
 The Bot Builder SDK for Node.js includes the following built-in prompts:
 
-|**Prompt Type**     | **Description**                                   
+|**Prompt Type**     | **Description**                              |     
 | -------------------| ---------------------------------------------
-|[Prompts.text](#promptstext) | Asks the user to enter a string of text.      
-|[Prompts.confirm](#promptsconfirm) | Asks the user to confirm an action.  
-|[Prompts.number](#promptsnumber) | Asks the user to enter a number.
-|[Prompts.time](#promptstime) | Asks the user for the time or date.
-|[Prompts.choice](#promptschoice) | Asks the user to choose from a list of choices.       
-|[Prompts.attachment](#promptsattachment) | Asks the user to upload a picture or video.       
+|[Prompts.text][PromptsText] | Asks the user to enter a string of text. |     
+|[Prompts.confirm][PromptsConfirm] | Asks the user to confirm an action.| 
+|[Prompts.number][PromptsNumber] | Asks the user to enter a number.     |
+|[Prompts.time][PromptsTime] | Asks the user for the time or date.      |
+|[Prompts.choice][PromptsChoice] | Asks the user to choose from a list of choices.    |       
+|[Prompts.attachment][PromptsAttachment] | Asks the user to upload a picture or video.|       
 
 ### Text String: `Prompts.text()`
 The [Prompts.text()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts.html#text) method asks the user for a **string of text**. The prompt returns the user's response as an [IPromptTextResult](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iprompttextresult.html) interface.

@@ -22,13 +22,15 @@ Log in to the [Bot Framework developer portal][BFPortal] using a [Microsoft acco
 > Support for work and school accounts is coming soon.
 
 ## Enable speech recognition priming
-If your bot uses any Language Understanding Intelligent Service (LUIS) model, make sure you register the LUIS application ID. In the **Settings** panel, under **Configuration**, enter the LUIS application ID in the **Speech recognition priming with LUIS** text box. This helps your bot recognize spoken utterances that are defined in your LUIS model.
+If your bot uses a Language Understanding Intelligent Service (LUIS) app, make sure you register the LUIS application ID. This helps your bot recognize spoken utterances that are defined in your LUIS model.
+
+In the **Settings** panel, under **Configuration**, enter the LUIS application ID in the **Speech recognition priming with LUIS** text box. 
+![Enable speech recognition priming](~/media/cortana/cortana-speech-luis-priming.png)
 
 ## Add the Cortana channel
 Under **My bots**, select the bot you would like to connect to the Cortana channel. From the list of channels, click the button to add Cortana.
 
 
-<!-- TODO: Update screenshot when new UI is available -->
 ![Add the Cortana channel ](~/media/cortana/cortana-add.png)
 
 > [!NOTE]
@@ -56,26 +58,25 @@ When registering your bot with the Cortana channel, some basic information about
 <!-- TODO: Update screenshot when new UI is available -->
 ![Fill out channel information](~/media/cortana/cortana-register.png)
 
-## Add user profile data (Optional)
+## Request user profile data (Optional)
 Cortana provides access to several different types of user profile information, that you can use to customize the bot for the user. 
 
 > [!NOTE] 
 > You can skip this step if you don't need to use user profile data in your bot.
 
-To add user profile information, click the **Add another field** link, then select the user profile information you want from the drop-down list. Add a friendly name to use to access this information from your bot's code. See [Cortana-specific entities][CortanaSpecificEntities] for more information on using these fields.
+To add user profile information, click the **Add a user profile request** link, then select the user profile information you want from the drop-down list. Add a friendly name to use to access this information from your bot's code. See [Cortana-specific entities][CortanaSpecificEntities] for more information on using these fields.
 
 ![Fill out user profile data](~/media/cortana/add-user-profile-data.png) 
 
-## Add connected accounts (Optional)
+## Manage user identity through connected services (Optional)
 If your skill requires authentication, you can connect an account so that Cortana will require users to log in into your skill before they can use it. Currently, only **Auth Code Grant** authentication is supported, and **Implicit Grant** is not supported. See [Secure your skill with authentication][CortanaAuth] for more information. 
 
 > [!NOTE] 
 > You can skip this step if your bot doesn't require authentication.
 
-<!-- TODO: table -->
 
 ## Connect to Cortana
-When you are done filling out the registration form for your Cortana skill, click **Connect to Cortana**  to complete the connection. This brings you back to your bot's main page in the Bot Framework developer center and you should see that it is now connected to Cortana.
+When you are done filling out the registration form for your Cortana skill, click **Save**  to complete the connection. This brings you back to your bot's main page in the Bot Framework developer center and you should see that it is now connected to Cortana.
 
 <!-- update image --> 
 ![Cortana is listed as a connected channel in the Bot Framework dashboard](~/media/cortana/cortana-edit.png)
@@ -86,7 +87,7 @@ When you are done filling out the registration form for your Cortana skill, clic
 ## Test your Cortana skill using the Chat control
 Now that your bot is available as a Cortana skill you should test it. At this point your bot has already been automatically deployed as a Cortana skill to your account. 
 
-Type a message in the **Chat** window of the Bot Framework portal to verify that your bot is working.
+Click **Test** to open the **Chat** window in the Bot Framework portal and type a message to verify that your bot is working.
 
 ## Test your Cortana skill
 You can invoke your Cortana skill by speaking an invocation phrase to Cortana. 
@@ -103,7 +104,7 @@ You can invoke your Cortana skill by speaking an invocation phrase to Cortana.
 
 If your Cortana skill fails to launch, check the following:
 * Make sure you are signed in to Cortana using the same Microsoft account that you used to register your bot in the Bot Framework developer portal.
-* Check if the bot is working by typing a message to it in the **Chat** window of the Bot Framework portal.
+* Check if the bot is working by clicking **Test** to open the **Chat** window of the Bot Framework portal and typing a message to it.
 * Check if your invocation name meets the [guidelines][InvocationNameGuidelines]. If your invocation name is longer than three words, hard to pronounce, or sounds like other words, Cortana might have difficulty recognizing it.
 * If your skill uses a LUIS model, make sure you [enable speech recognition priming](https://aka.ms/prime-speech-luis).
 

@@ -27,8 +27,8 @@ Use [RegExpRecognizer][RegExpRecognizer] to detect the user's intent using a reg
 bot.recognizer(new builder.RegExpRecognizer( "CancelIntent", { en-us: /^(cancel|nevermind)/i, ja-jp: /^(キャンセル)/ }));
 ```
 
-## Use an external web service
-You can configure your bot to use cloud-based intent recognition services like [Language Understanding Intelligent Service (LUIS)][LUIS] through an extensible set of recognizer plugins. Out of the box, Bot Builder comes with a [LuisRecognizer][LuisRecognizer] class that can be used to call a machine learning model you’ve trained via their web site. You can create a **LuisRecognizer** that’s pointed at your model and then pass that recognizer into your dialog.
+## Use Language Understanding Intelligent Service (LUIS) to recognize intents
+You can configure your bot to use cloud-based intent recognition services like [Language Understanding Intelligent Service (LUIS)][LUIS] through an extensible set of recognizer plugins. Out of the box, Bot Builder comes with a [LuisRecognizer][LuisRecognizer] class that can be used to call a machine learning model you’ve trained using the LUIS web site. You can create a **LuisRecognizer** that’s pointed at your model and then pass that recognizer into your dialog.
 
 ``` javascript
 // Add global LUIS recognizer to bot
