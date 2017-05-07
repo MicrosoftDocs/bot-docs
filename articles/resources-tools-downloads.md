@@ -22,9 +22,13 @@ To install the SDK in a Visual Studio project, complete the following steps:
 2. On the **Browse** tab, type "Microsoft.Bot.Builder" into the search box.
 3. Select **Microsoft.Bot.Builder** in the list of results, click **Install**, and accept the changes.
 
-When you build a bot with the Bot Builder SDK for .NET and Visual Studio, you can use the [Visual Studio template][bot-template].
-
 You can also download the Bot Builder SDK for .NET [source code](https://github.com/Microsoft/BotBuilder/tree/master/CSharp) from GitHub.
+
+### Visual Studio project templates
+Download Visual Studio project templates to accelerate bot development.
+
+* [Bot template for Visual Studio][bot-template] for developing bots with C#
+* [Cortana skill template for Visual Studio][cortana-template] for developing Cortana skills with C#
 
 ## Bot Builder SDK for Node.js
 
@@ -46,12 +50,6 @@ You can also download the Bot Builder SDK for Node.js [source code](https://gith
 
 ## Bot Framework Emulator
 The Bot Framework Emulator is a desktop application that allows you to test and debug you bots, either locally or remotely. Using the emulator, you can chat with your bot and inspect the messages that your bot sends and receives. [Learn more about the Bot Framework emulator](~/debug-bots-emulator.md) and [download the emulator](http://emulator.botframework.com) for your platform.
-
-## Visual Studio project templates
-Download Visual Studio project templates to accelerate bot development.
-
-* [Bot template for Visual Studio][bot-template] for developing bots with C#
-* [Cortana skill template for Visual Studio][cortana-template] for developing Cortana skills
 
 ## Bot Framework Channel Inspector
 Quickly see what bot features will look like on different channels with the the Bot Framework [Channel Inspector](https://docs.botframework.com/en-us/channel-inspector/channels/Skype/#navtitle).
