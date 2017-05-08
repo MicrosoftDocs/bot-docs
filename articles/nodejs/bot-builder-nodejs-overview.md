@@ -14,6 +14,7 @@ ms.reviewer:
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-overview.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-overview.md)
+> - [REST](../rest-api/bot-framework-rest-overview.md)
 
 The Bot Builder SDK for Node.js is a powerful, easy-to-use framework that provides a familiar way for Node.js developers to write bots.
 You can use it to build a wide variety of conversational user interfaces, from simple prompts to free-form conversations.

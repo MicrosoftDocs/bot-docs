@@ -14,6 +14,7 @@ ms.reviewer:
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-overview.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-overview.md)
+> - [REST](../rest-api/bot-framework-rest-overview.md)
 
 The Bot Builder SDK for .NET is a powerful framework for constructing bots that can handle both free-form interactions 
 and more guided conversations where the user selects from possible values. 

@@ -74,7 +74,7 @@
 ### [Use backchannel mechanism](~/nodejs/bot-builder-nodejs-backchannel.md)
 ### [Request payment](~/nodejs/bot-builder-nodejs-request-payment.md)
 ### [Add Azure Search](~/nodejs/bot-builder-nodejs-search-azure.md)
-## [Develop with Azure Bot Service](~/azure/index.md)
+## [Develop with Azure Bot Service](~/azure/azure-bot-service-overview.md)
 ### Create a bot
 #### [Templates](~/azure/azure-bot-service-templates.md)
 #### [Create a basic bot](~/azure/azure-bot-service-template-basic.md)
@@ -83,7 +83,7 @@
 #### [Create a proactive bot](~/azure/azure-bot-service-template-proactive.md)
 #### [Create a question and answer bot](~/azure/azure-bot-service-template-question-and-answer.md)
 ### [Set up continuous integration](~/azure/azure-bot-service-continuous-integration.md)
-## [Develop with REST](~/rest-api/index.md)
+## [Develop with REST](~/rest-api/bot-framework-rest-overview.md)
 ### Build a bot
 #### [Key concepts](~/rest-api/bot-framework-rest-connector-concepts.md)
 #### [Authentication](~/rest-api/bot-framework-rest-connector-authentication.md)

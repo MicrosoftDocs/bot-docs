@@ -14,6 +14,7 @@ ms.reviewer:
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-add-rich-card-attachments.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-send-rich-cards.md)
+> - [REST](../rest-api/bot-framework-rest-connector-add-rich-cards.md)
 
 A message exchange between user and bot can contain one or more rich cards rendered as a list or carousel. 
 The `Attachments` property of the `Activity` object contains an array of `Attachment` objects that represent the rich cards and media attachments within the message. 

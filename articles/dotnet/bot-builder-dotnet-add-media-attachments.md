@@ -14,6 +14,7 @@ ms.reviewer:
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-add-media-attachments.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-send-receive-attachments.md)
+> - [REST](../rest-api/bot-framework-rest-connector-add-media-attachments.md)
 
 A message exchange between user and bot can contain media attachments (e.g., image, video, audio, file). 
 The `Attachments` property of the `Activity` object contains an array of `Attachment` objects 

@@ -11,6 +11,10 @@ ms.reviewer:
 ---
 
 # Add rich card attachments to messages
+> [!div class="op_single_selector"]
+> - [.NET](../dotnet/bot-builder-dotnet-add-rich-card-attachments.md)
+> - [Node.js](../nodejs/bot-builder-nodejs-send-rich-cards.md)
+> - [REST](../rest-api/bot-framework-rest-connector-add-rich-cards.md)
 
 Bots and channels typically exchange text strings but some channels also support exchanging attachments, which lets your bot send richer messages to users. For example, your bot can send rich cards and media attachments (e.g., images, videos, audio, files). This article describes how to add rich card attachments to messages using the Bot Connector service.
 
