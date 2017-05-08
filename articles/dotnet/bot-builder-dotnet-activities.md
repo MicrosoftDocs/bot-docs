@@ -69,14 +69,11 @@ A bot receives a **ping** activity to determine whether its endpoint is accessib
 
 ## deleteUserData
 
-A bot receives a **deleteUserData** activity when a user requests deletion of any data that the bot has previously persisted for him or her. 
-If your bot receives this type of activity, it should delete any personally identifiable information (PII) 
-for the user that made the request.
+A bot receives a **deleteUserData** activity when a user requests deletion of any data that the bot has previously persisted for him or her. If your bot receives this type of activity, it should delete any personally identifiable information (PII) that it has previously stored for the user that made the request.
 
 ## endOfConversation 
 
-A bot receives an **endOfConversation** activity to indicate that the user has ended the conversation. 
-A bot may send an **endOfConversation** activity to indicate to the user that the conversation is ending. 
+A bot receives an **endOfConversation** activity to indicate that the user has ended the conversation. A bot may send an **endOfConversation** activity to indicate to the user that the conversation is ending. 
 
 ## event
 
