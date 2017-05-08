@@ -25,6 +25,5 @@ Before others can use your bot, you must deploy it to the cloud. You can deploy 
 - [Deploy from GitHub](~/deploy-bot-github.md) using continuous integration
 - [Deploy from Visual Studio](~/deploy-bot-visual-studio.md)
 
-## Configure your bot to run on one or more conversation channels
-
+## Next steps
 After you have registered your bot with the Bot Framework and deployed your bot to the cloud, you can [configure a bot to run on one or more channels](~/portal-configure-channels.md).
