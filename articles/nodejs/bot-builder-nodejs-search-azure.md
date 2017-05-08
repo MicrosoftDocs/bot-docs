@@ -18,8 +18,6 @@ You can add [Azure Search][search] to your bot to help the user navigate large a
 
 Azure Search is an Azure service that offers keyword search, built-in linguistics, custom scoring, faceted navigation and more. Azure Search can also index content from various sources, including Azure SQL DB, DocumentDB, Blob Storage, and Table Storage. It supports "push" indexing for other sources of data, and it can open PDFs, Office documents, and other formats containing unstructured data. Once collected, the content goes into an Azure Search index, which the bot can then query.
 
-This article will show you how to enable Azure Search capabilities in your bot with the Bot Builder SDK for Node.js. 
-
 ## Install dependencies
 
 From a command prompt, navigate to your bot's project directory and install the following modules with the Node Package Manager (NPM):
@@ -32,9 +30,9 @@ From a command prompt, navigate to your bot's project directory and install the 
 
 The following are **required**: 
 - Have an Azure subscription and an Azure Search Primary Key. You can find this in the Azure portal.
-- Copy this library to your bot's project directory: [SearchDialogLibrary](https://github.com/Microsoft/botBuilder-Samples/tree/master/Node/demo-Search/SearchDialogLibrary). This library contains general dialogs for the user to search, but can be customized as needed to suit your bot. 
+- Copy the [SearchDialogLibrary](https://github.com/Microsoft/botBuilder-Samples/tree/master/Node/demo-Search/SearchDialogLibrary) library to your bot's project directory. This library contains general dialogs for the user to search, but can be customized as needed to suit your bot. 
 
-- Copy this library to your bot's project directory [SearchProviders](https://github.com/Microsoft/botBuilder-Samples/tree/master/Node/demo-Search/SearchProviders). This library contains all of the components required to create a request and submit it to Azure Search.
+- Copy the [SearchProviders](https://github.com/Microsoft/botBuilder-Samples/tree/master/Node/demo-Search/SearchProviders) library to your bot's project directory. This library contains all of the components required to create a request and submit it to Azure Search.
 
 ## Connect to the Azure Service 
 
@@ -142,7 +140,7 @@ function searchHitAsCard(showSave, searchHit) {
 }
 ```
 
-## Sample Code
+## Sample code
 
 For two complete samples that show how to support Azure Search with bots using the Bot Builder SDK for Node.js, see the 
 [Real Estate Bot sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/demo-Search/RealEstateBot) or [Job Listing Bot sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/demo-Search/JobListingBot) in GitHub. 
