@@ -1,62 +1,57 @@
 {
-  "build": {
-    "content": [
-      {
-        "files": [
-          "**/**.md", 
-          "**/**.yml", 
-          "dotnet/**.md", 
-          "node/**.md"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "bot-framework/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "**/_deprecated/**"
-        ]
-      }
-    ],
-    "resource": [
-      {
-        "files": [
-          "**/*.png",
-          "**/*.jpg"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "bot-framework/**",
-          "~/includes/**"
-        ]
-      }
-    ],
-    "overwrite": [],
-    "externalReference": [],
-    "globalMetadata": {
-      "uhfHeaderId": "MSDocsHeader-BotFramework",
-      "breadcrumb_path": "/bot-framework/breadcrumb/TOC.json",
-      "author": "RobStand",
-      "ms.prod": "bot-framework",
-      "searchScope": ["Bot Framework"],
-      "ms.date": "05/10/2017"
-    },
-    "fileMetadata": {
-       "ms.author":
-       {
-         "**/**.md": "rstand"
-       },
-       "manager":
-       {
-         "**/**.md": "rstand"
-       },
-       "ms.technology":
-       {
-         "dotnet/**.md": "bf-bot-builder",
-         "nodejs/**.md": "bf-bot-builder"
-       }
-    },
-    "template": [],
-    "dest": "bot-framework"
-  }
+    "build": {
+        "content": [{
+            "files": [
+                "**/**.md",
+                "**/**.yml",
+                "dotnet/**.md",
+                "node/**.md"
+            ],
+            "exclude": [
+                "**/obj/**",
+                "bot-framework/**",
+                "README.md",
+                "LICENSE",
+                "LICENSE-CODE",
+                "**/_deprecated/**"
+            ]
+        }],
+        "resource": [{
+            "files": [
+                "**/*.png",
+                "**/*.jpg"
+            ],
+            "exclude": [
+                "**/obj/**",
+                "bot-framework/**",
+                "~/includes/**"
+            ]
+        }],
+        "overwrite": [],
+        "externalReference": [],
+        "globalMetadata": {
+            "uhfHeaderId": "MSDocsHeader-BotFramework",
+            "breadcrumb_path": "/bot-framework/breadcrumb/TOC.json",
+            "author": "RobStand",
+            "ms.prod": "bot-framework",
+            "searchScope": ["Bot Framework"],
+            "ms.date": "05/10/2017"
+        },
+        "fileMetadata": {
+            "ms.author": {
+                "**/**.md": "rstand"
+            },
+            "manager": {
+                "**/**.md": "rstand"
+            },
+            "ms.technology": {
+                "**/**.md": "bf-bot-builder"
+            },
+            "ms.date": {
+                "**/**.md": "05/10/2017"
+            }
+        },
+        "template": [],
+        "dest": "bot-framework"
+    }
 }
