@@ -38,6 +38,8 @@ To help you build your bot, the Bot Framework includes [Bot Builder](bot-builder
 ### Developer portal
 Managing your bot is easy with the developer portal. The developer portal gives you one convenient place to register, connect, publish, and manage your bot. It also provides diagnostic tools and a web chat control you can use to embed your bot on a web page.
 
+![Configure a bot in the developer portal](~/media/portal-configure-bot.png) 
+
 ### Channels
 The Bot Framework supports several popular channels for connecting your bots and people. Users can start conversations with your bot on any channel that you've configured your bot to work with, including email, Facebook, Skype, Slack, and SMS.
 
