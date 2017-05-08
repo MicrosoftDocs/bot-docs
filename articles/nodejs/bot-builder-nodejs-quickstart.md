@@ -74,7 +74,7 @@ You've successfully created a bot by using the Bot Builder SDK for Node.js!
 
 If you'd like to share your bot with others, you'll need to
 [register](~/portal-register-bot.md) it with the Bot Framework and
-[deploy](~/publish-bot-overview.md#deploy-your-bot-to-the-cloud) it to the cloud.
+[deploy](~/publish-bot-overview.md) it to the cloud.
 
 To learn more about building great bots with the Bot Framework, see the following articles:
 

@@ -68,7 +68,7 @@ the next step in the bot publication process will depend upon whether or not you
 
 ### If you have not yet deployed your bot to the cloud:
 
-1. [Deploy your bot to the cloud](~/publish-bot-overview.md#deploy-your-bot-to-the-cloud).
+1. Deploy your bot to the cloud by following the instructions found in [Deploy your bot to the cloud](~/publish-bot-overview.md).
 
 2. Return to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a> and [update your bot's registration data](~/portal-register-bot.md#maintain) to specify the **HTTPS** endpoint for the bot.
 

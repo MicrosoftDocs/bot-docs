@@ -101,6 +101,7 @@
 #### [Direct Line API 1.1](https://docs.botframework.com/en-us/restapi/directline/#navtitle)
 ## [Test and debug](debug/TOC.md)
 ## Deploy
+### [Deploy a bot](deploy-bot-overview.md)
 ### [Deploy from local git repo](deploy-bot-local-git.md)
 ### [Deploy from GitHub](deploy-bot-github.md)
 ### [Deploy from Visual Studio](deploy-bot-visual-studio.md)

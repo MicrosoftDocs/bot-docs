@@ -1,7 +1,7 @@
 ---
-redirect_url: /bot-framework/portal-register-bot
-title: Make a bot available | Microsoft Docs
-description: Learn how to deploy and register a bot and make it discoverable.
+redirect_url: /bot-framework/deploy-bot-overview
+title: Deploy a bot to the cloud | Microsoft Docs
+description: Learn how to deploy a bot to Azure.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
@@ -11,21 +11,17 @@ ms.date:
 ms.reviewer:
 
 ---
-# Deploy and publish bots
+# Deploy a bot to the cloud
 
-After you have built and tested a bot, the final steps are to register it,  deploy it to the cloud, configure it, and make it available to others.
+After you have built and tested your bots, you need to deploy it to the cloud.
 
 > [!NOTE]
 > Bots built using the Azure Bot Service do not need to be registered or deployed.
 > Bot registration and deployment are handled as part of the Azure Bot Service bot creation process.
 
-## Register the bot
+## Deploy your bot to the cloud
 
-[Registering a bot](~/portal-register-bot.md) is a simple process. Provide some information about the bot and then generate the app ID and password that the bot will use to authenticate with the Bot Framework.
-
-## Deploy the bot to the cloud
-
-<a id="deploy-your-bot-to-the-cloud"></a> Bots can be deployed to Azure or to any other cloud service. These articles describe various techniques for deploying to Azure: 
+Before others can use your bot, you must deploy it to the cloud. You can deploy it to Azure or to any other cloud service. These articles describe various techniques for deploying your bot to Azure: 
 
 - [Deploy from a local git repository](~/deploy-bot-local-git.md) using continuous integration
 - [Deploy from GitHub](~/deploy-bot-github.md) using continuous integration
