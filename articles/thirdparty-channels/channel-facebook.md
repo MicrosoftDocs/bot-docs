@@ -8,71 +8,76 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date: 05/01/2017
 ms.reviewer:
-
 ---
 
 # Connect a bot to Facebook Messenger
-
-To configure your bot to communicate with users using the Facebook Messenger app, 
-you need to create a Facebook page, enable Facebook Messenger on that page, and then connect your bot to that app.
-
 To learn more about developing for Facebook Messenger, see the [Messenger platform documentation](https://developers.facebook.com/docs/messenger-platform). 
 
-## Create a Facebook page
-Your bot is accessed through a Facebook Page.
-The Facebook Page ID can be found on your Facebook Page's **About** page. 
-
-[Create a new Facebook Page](https://www.facebook.com/bookmarks/pages) or go to an existing Page and copy the Facebook Page ID.
-
-## Create a Facebook app
-Connecting a bot also requires a Facebook App. If you don't already have a Facebook app, you can [create a new Facebook App](https://developers.facebook.com/quickstarts/?platform=web).
+To configure a bot to communicate using Facebook Messenger, enable Facebook Messenger on a Facebook page and then connect the bot to the app.
 
 > [!NOTE]
 > The Facebook UI may appear slightly different depending on which version you are using. 
 
+## Copy the Page ID
+The bot is accessed through a Facebook Page. [Create a new Facebook Page](https://www.facebook.com/bookmarks/pages) or go to an existing Page.
+
+* Open the Facebook Page's **About** page and then copy and save the **Page ID**.
+
+## Create a Facebook app
+[Create a new Facebook App](https://developers.facebook.com/quickstarts/?platform=web) on the Page and generate an App ID and App Secret for it.
+
 ![Create an App ID](~/media/channels/FB-CreateAppId.png)
 
-## Copy your App ID and App Secret and save them for later
+* Copy and save the **App ID** and the **App Secret**.
 
 ![Save App ID and secret](~/media/channels/FB-get-appid.png)
 
 ## Enable messenger
 
-Enable Facebook Messenger in your new Facebook App. 
-On the **Product Setup** page of the app, click **Get Started** and then click **Get Started** again. 
+Enable Facebook Messenger in the new Facebook App. 
+* On the **Product Setup** page of the app, click **Get Started** and then click **Get Started** again. 
 
 ![Enable messenger](~/media/channels/FB-AddMessaging1.png)
 
-## Generate page access token
-In the **Token Generation** panel of the Messenger section, select your Page.
-A Page Access Token will be generated for you. Copy this Access Token. 
+## Generate a Page Access Token
+In the **Token Generation** panel of the Messenger section, select the target Page. A Page Access Token will be generated. 
 
-![Enable messenger](~/media/channels/FB-generateToken.png)
+* Copy and save the **Page Access Token**. 
 
-## Set up webhook
-Enable webhooks to forward messaging events from Facebook Messenger to your bot.
+![Generate token](~/media/channels/FB-generateToken.png)
+
+## Enable webhooks
+Click **Set up Webhooks** to forward messaging events from Facebook Messenger to the bot.
 
 ![Enable webhook](~/media/channels/FB-webhook.png)
 
-## Configure webhook callback URL and verify token
+## Provide webhook callback URL and verify token
+Return to the Bot Framework [developer portal](https://dev.botframework.com/). Open the bot, click the **Channels** tab, and then click **Facebook Messenger**.
 
-Configure the webhook. 
-<!-- on the origial page, (https://dev.botframework.com/ConfigChannel.aspx?botId=<botname>&channelId=facebook)this immediately precedes the fields where the callback and verify tokens are actually generated -->
-1. Enter the URL below for the Callback URL
-2. Enter the Verify Token. 
-3. Under **Subscription Fields**, select message\_deliveries, messages, messaging\_options, and messaging_postbacks 
-4. Click **Verify** and then click **Save**. 
+* Copy the **Callback URL** and **Verify Token** values from the portal.
+
+![Copy values](~/media/channels/fb-callbackVerify.png)
+
+1. Return to Facebook Messenger and paste the **Callback URL** and **Verify Token** values.
+2. Under **Subscription Fields**, select *message\_deliveries*, *messages*, *messaging\_options*, and *messaging_postbacks*.
+3. Click **Verify and Save**. 
 
 ![Configure webhook](~/media/channels/FB-webhookConfig.png)
 
-## Enter your credentials
+## Provide Facebook credentials
+On the Bot Framework developer portal, paste the **Page ID**, **App ID**, **App Secret**, and **Page Access Token** values copied from Facebook Messenger previously.
 
-Enter the Page ID, App ID, Page Secret, and Access Token that you copied earlier.
-![Enter credentials](~/media/channels/FB-credentials.png)
+![Enter credentials](~/media/channels/fb-credentials2.png)
 
 ## Enable the bot
+If the app is not ready for release, leave the toggle set to *Disabled* and click **Save**. The bot can be finished and enabled later.
 
-Check **Enable this bot on Facebook Messenger**. Then click **I'm done configuring Facebook Messenger**. 
+To release the bot to the Facebook Messenger App Directory, click the toggle to set it to *Enabled* and then click **Save**. 
 
-When you have completed these steps, your bot will be successfully configured to communicate with users in Facebook Messenger.
+
+
+
+
+
+
 

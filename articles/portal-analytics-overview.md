@@ -17,7 +17,7 @@ Analytics are not available until Application Insights has been enabled and conf
 ## Connect Application Insights
 > [!NOTE]
 > Analytics requires both an Azure subscription and Application Insights [resource](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-create-new-resource).
-To access Application Insights, open the bot in the [developer portal](https://ms.portal.azure.com/) and click **Settings**.
+To access Application Insights, open the bot in the [developer portal](https://dev.botframework.com/) and click **Settings**.
 
 1. Create an Application Insights [resource](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-create-new-resource).
 2. Open the bot in the dashboard. Click **Settings** and scroll down to the **Analytics** section.

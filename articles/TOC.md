@@ -101,5 +101,17 @@
 ### [Deploy from GitHub](deploy-bot-github.md)
 ### [Deploy from Visual Studio](deploy-bot-visual-studio.md)
 ## [Manage](manage/TOC.md)
+## Connect to channels
+### [Configure a bot](portal-configure-channels.md) 
+### [Bing](~/channels/channel-bing.md) 
+### [Cortana](~/channels/channel-cortana.md) 
+### [Skype for Business](~/channels/channel-skypeForBusiness.md) 
+### Third party channels 
+#### [Facebook](~/thirdparty-channels/channel-facebook.md) 
+#### [GroupMe](~/thirdparty-channels/channel-groupme.md) 
+#### [Kik](~/thirdparty-channels/channel-kik.md) 
+#### [Slack](~/thirdparty-channels/channel-slack.md) 
+#### [Telegram](~/thirdparty-channels/channel-telegram.md) 
+#### [Twilio](~/thirdparty-channels/channel-twilio.md) 
 ## [Troubleshoot](troubleshoot/TOC.md)
 # [Resources](resources/TOC.md)

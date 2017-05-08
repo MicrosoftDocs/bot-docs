@@ -15,7 +15,7 @@ ms.reviewer:
 After you have [registered](~/portal-register-bot.md) your bot with the Bot Framework and [deployed](~/publish-bot-overview.md) your bot to the cloud, 
 you can configure it to run on one or more channels. 
 
-## Overview
+## Get started
 For most channels, you must provide channel configuration information to the framework to run your bot on the channel. Most channels require that your bot have an account on the channel, and others, like Facebook Messenger, require your bot to have an application registered with the channel also.
 
 When you register a bot with the Bot Framework, the following channels are automatically pre-configured:
