@@ -11,6 +11,9 @@ ms.reviewer:
 ---
 
 # Manage conversation flow with dialogs
+> [!div class="op_single_selector"]
+> - [.NET](../dotnet/bot-builder-dotnet-manage-conversation-flow.md)
+> - [Node.js](../nodejs/bot-builder-nodejs-dialog-manage-conversation.md)
 
 [!include[Dialog flow example](~/includes/snippet-dotnet-manage-conversation-flow-intro.md)]
 

@@ -11,6 +11,9 @@ ms.reviewer:
 ---
 
 # Send and receive attachments
+> [!div class="op_single_selector"]
+> - [.NET](../dotnet/bot-builder-dotnet-add-media-attachments.md)
+> - [Node.js](../nodejs/bot-builder-nodejs-send-receive-attachments.md)
 
 A message exchange between user and bot can contain media attachments, such as images, video, audio, and files. The types of attachments that can be sent varies by channel, but these are the basic types:
 

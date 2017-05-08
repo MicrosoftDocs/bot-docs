@@ -10,7 +10,10 @@ ms.date:
 ms.reviewer: 
 ---
 
-# Send suggested actions
+# Add suggested actions to messages
+> [!div class="op_single_selector"]
+> - [.NET](../dotnet/bot-builder-dotnet-add-suggested-actions.md)
+> - [Node.js](../nodejs/bot-builder-nodejs-send-suggested-actions.md)
 
 [!include[Introduction to suggested actions](~/includes/snippet-suggested-actions-intro.md)] 
 

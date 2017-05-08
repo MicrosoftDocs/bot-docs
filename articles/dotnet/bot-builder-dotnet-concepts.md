@@ -11,6 +11,9 @@ ms.reviewer:
 ---
 
 # Key concepts in the Bot Builder SDK for .NET
+> [!div class="op_single_selector"]
+> - [.NET](../dotnet/bot-builder-dotnet-concepts.md)
+> - [Node.js](../nodejs/bot-builder-nodejs-concepts.md)
 
 This article introduces key concepts in the Bot Builder SDK for .NET.
 

@@ -11,6 +11,9 @@ ms.reviewer:
 ---
 
 # Add speech to messages
+> [!div class="op_single_selector"]
+> - [.NET](../dotnet/bot-builder-dotnet-text-to-speech.md)
+> - [Node.js](../nodejs/bot-builder-nodejs-text-to-speech.md)
 
 If you are building a bot for a speech-enabled channel such as Cortana, you can construct messages that specify the text to be spoken by your bot. You can also attempt to influence the state of the client's microphone by specifying an [input hint](~/nodejs/bot-builder-nodejs-send-input-hints.md) to indicate whether your bot is accepting, expecting, or ignoring user input.
 

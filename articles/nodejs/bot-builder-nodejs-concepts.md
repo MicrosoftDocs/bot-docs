@@ -10,7 +10,10 @@ ms.date:
 ms.reviewer:
 ---
 
-# Key concepts
+# Key concepts in the Bot Builder SDK for Node.js
+> [!div class="op_single_selector"]
+> - [.NET](../dotnet/bot-builder-dotnet-concepts.md)
+> - [Node.js](../nodejs/bot-builder-nodejs-concepts.md)
 
 This article introduces key concepts in the Bot Builder SDK for Node.js.
 

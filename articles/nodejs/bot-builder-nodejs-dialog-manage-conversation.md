@@ -8,7 +8,10 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date: 05/03/2017
 ---
-# Manage a conversation with dialogs
+# Manage conversation flow with dialogs
+> [!div class="op_single_selector"]
+> - [.NET](../dotnet/bot-builder-dotnet-manage-conversation-flow.md)
+> - [Node.js](../nodejs/bot-builder-nodejs-dialog-manage-conversation.md)
 
 Dialogs help you encapsulate your bot's conversational logic into manageable components. The Bot Builder SDK provides powerful dialog objects that help simplify conversation flow management.
 

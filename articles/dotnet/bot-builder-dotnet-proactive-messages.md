@@ -9,8 +9,10 @@ ms.prod: bot-framework
 ms.date: 
 ms.reviewer:
 ---
-
 # Send proactive messages
+> [!div class="op_single_selector"]
+> - [.NET](../dotnet/bot-builder-dotnet-proactive-messages.md)
+> - [Node.js](../nodejs/bot-builder-nodejs-proactive-messages.md)
 
 [!include[Introduction to proactive messages - part 1](~/includes/snippet-proactive-messages-intro-1.md)] 
 

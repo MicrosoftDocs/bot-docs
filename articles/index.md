@@ -121,7 +121,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/bot-framework/nodejs/">
+                            <a href="/bot-framework/nodejs/bot-builder-nodejs-overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">

@@ -11,6 +11,9 @@ ms.reviewer:
 ---
 
 # Support audio calls with Skype
+> [!div class="op_single_selector"]
+> - [.NET](../dotnet/bot-builder-dotnet-audio-calls.md)
+> - [Node.js](../nodejs/bot-builder-nodejs-conduct-audio-calls.md)
 
 [!include[Introduction to conducting audio calls](~/includes/snippet-audio-call-intro.md)]
 

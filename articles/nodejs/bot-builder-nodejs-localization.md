@@ -85,11 +85,11 @@ bot.use({
 });
 ```
 
-Calling [session.preferredLocale()][preferredLocal] will automatically return the detected language if a user-selected locale hasn’t been assigned. The exact search order for **preferredLocale()** is:
-* Locale saved by calling **session.preferredLocale()**. This value is stored in **session.userData['BotBuilder.Data.PreferredLocale']**.
-* Detected locale assigned to **session.message.textLocale**.
+Calling [session.preferredLocale()][preferredLocal] will automatically return the detected language if a user-selected locale hasn’t been assigned. The exact search order for `referredLocale()` is:
+* Locale saved by calling `session.preferredLocale()`. This value is stored in `session.userData['BotBuilder.Data.PreferredLocale']`.
+* Detected locale assigned to `session.message.textLocale`.
 * The configured default locale for the bot.
-* English (‘en’).
+* English ('en').
 
 You can configure the bot's default locale using its constructor:
 
@@ -102,7 +102,7 @@ var bot = new builder.UniversalBot(connector, {
 ```
 
 ## Localize prompts
-The default localization system for the Bot Builder SDK is file-based and allows a bot to support multiple languages using JSON files stored on disk. By default, the localization system will search for the bot's prompts in the `./locale/<IETF TAG>/index.json` file where <IETF TAG> is a valid [IETF language tag][IEFT] representing the preferred locale for which to find prompts. 
+The default localization system for the Bot Builder SDK is file-based and allows a bot to support multiple languages using JSON files stored on disk. By default, the localization system will search for the bot's prompts in the **./locale/<IETF TAG>/index.json** file where <IETF TAG> is a valid [IETF language tag][IEFT] representing the preferred locale for which to find prompts. 
 
 The following screenshot shows the directory structure for a bot that supports three languages: English, Italian, and Spanish.
 
@@ -124,21 +124,21 @@ bot.dialog("/", [
     },
 ```
 
-Internally, the SDK calls [`session.preferredLocale()`][preferredLocale] to get the user's preferred locale and then uses that in a call to [`session.localizer.gettext()`][GetText] to map the message ID to its localized text string.  There are times where you may need to manually call the localizer. For instance, the enum values passed to [Prompts.choice()][promptsChoice] are never automatically localized so you may need to manually retrieve a localized list prior to calling the prompt:
+Internally, the SDK calls [`session.preferredLocale()`][preferredLocale] to get the user's preferred locale and then uses that in a call to [`session.localizer.gettext()`][GetText] to map the message ID to its localized text string.  There are times where you may need to manually call the localizer. For instance, the enum values passed to [`Prompts.choice()`][promptsChoice] are never automatically localized so you may need to manually retrieve a localized list prior to calling the prompt:
 
-```
-    var options = session.localizer.gettext(session.preferredLocale(), "choice_options");
-    builder.Prompts.choice(session, "choice_prompt", options);
+```javascript
+var options = session.localizer.gettext(session.preferredLocale(), "choice_options");
+builder.Prompts.choice(session, "choice_prompt", options);
 ```
 
 The default localizer searches for a message ID across multiple files and if it can’t find an ID (or if no localization files were provided) it will simply return the text of ID, making the use of localization files transparent and optional.  Files are searched in the following order:
 
-* First the `index.json` file under the locale returned by [`session.preferredLocale()`][preferredLocale] is searched.
-* Next, if the locale included an optional subtag like `en-US` then the root tag of `en` is searched.
+* First the **index.json** file under the locale returned by [`session.preferredLocale()`][preferredLocale] is searched.
+* Next, if the locale included an optional subtag like **en-US** then the root tag of **en** is searched.
 * Finally, the bot's configured default locale is searched.
 
 ## Use namespaces to customize and localize prompts
-The default localizer supports the namespacing of prompts to avoid collisions between message IDs.  Your bot can override namespaced prompts to customize or reword the prompts from another namespace.  You can leverage this capability to customize the SDK’s built-in messages, letting you either add support for additional languages or to simply reword the SDK's current messages.  For instance, you can change the SDK’s default error message by simply adding a file called `BotBuilder.json` to your bot's locale directory and then adding an entry for the `default_error` message ID:
+The default localizer supports the namespacing of prompts to avoid collisions between message IDs.  Your bot can override namespaced prompts to customize or reword the prompts from another namespace.  You can leverage this capability to customize the SDK’s built-in messages, letting you either add support for additional languages or to simply reword the SDK's current messages.  For instance, you can change the SDK’s default error message by simply adding a file called **BotBuilder.json** to your bot's locale directory and then adding an entry for the `default_error` message ID:
 
 ![BotBuilder.json for locale namespacing](~/media/locale-namespacing.png)
 

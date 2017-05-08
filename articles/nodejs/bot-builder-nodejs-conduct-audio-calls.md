@@ -11,6 +11,9 @@ ms.reviewer:
 ---
 
 # Support audio calls with Skype
+> [!div class="op_single_selector"]
+> - [.NET](../dotnet/bot-builder-dotnet-audio-calls.md)
+> - [Node.js](../nodejs/bot-builder-nodejs-conduct-audio-calls.md)
 
 Skype supports a rich feature called Calling Bots.  When enabled, users can place a voice call to your bot and interact with it using Interactive Voice Response (IVR).  The Bot Builder for Node.js SDK includes a special [Calling SDK][calling_sdk] which developers can use to add calling features to their chat bot.   
 
