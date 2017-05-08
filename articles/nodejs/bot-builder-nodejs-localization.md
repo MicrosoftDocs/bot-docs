@@ -110,7 +110,7 @@ The following screenshot shows the directory structure for a bot that supports t
 
 The structure of the file is a simple JSON map of message IDs to localized text strings. If the value is an array instead of a string, one prompt from the array is chosen at random when that value is retrieved using [session.localizer.gettext()][GetText]. 
 
-The bot automatically retrieves the localized version of a message if you pass the message ID in a call to [session.send()](/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#send) instead of language-specific text:
+The bot automatically retrieves the localized version of a message if you pass the message ID in a call to [session.send()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#send) instead of language-specific text:
 
 ```javascript
 bot.dialog("/", [
