@@ -15,7 +15,7 @@ ms.reviewer:
 > - [.NET](../dotnet/bot-builder-dotnet-request-payment.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-request-payment.md)
 
-If your bot enables users to purchase items or donate money, it can request payment by including 
+If your bot enables users to purchase items, it can request payment by including 
 a special type of button within a [rich card](~/dotnet/bot-builder-dotnet-add-rich-card-attachments.md). 
 This article describes how to send a payment request using the Bot Builder SDK for .NET.
 
