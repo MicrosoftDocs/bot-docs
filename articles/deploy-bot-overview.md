@@ -11,7 +11,7 @@ ms.reviewer:
 ---
 # Deploy a bot to the cloud
 
-After you have built and tested your bots, you need to deploy it to the cloud.
+After you have built and tested your bot, you need to deploy it to the cloud.
 
 > [!NOTE]
 > If you built your bot using the Azure Bot Service, you don't need to register or deploy your bot.
@@ -26,4 +26,5 @@ Before others can use your bot, you must deploy it to the cloud. You can deploy 
 - [Deploy from Visual Studio](~/deploy-bot-visual-studio.md)
 
 ## Next steps
-After you have registered your bot with the Bot Framework and deployed your bot to the cloud, you can [configure a bot to run on one or more channels](~/portal-configure-channels.md).
+* [Register a bot](portal-register-bot.md)
+* [Configure a bot to run on one or more channels](~/portal-configure-channels.md).
