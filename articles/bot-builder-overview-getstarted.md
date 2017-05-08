@@ -29,9 +29,6 @@ enabling you to build, connect, test, deploy, and manage intelligent bots, all f
 You can write your bot in C# or Node.js directly in the browser using the Azure editor. Your bot is automatically
 deployed to Azure.
 
-> [!NOTE]
-> The Azure Bot Service is currently in preview so it should not be used for building production bots.
-
 The [detailed walkthrough](~/azure/azure-bot-service-quickstart.md) will guide you through building a bot with the Azure Bot Service.
 
 ## REST API

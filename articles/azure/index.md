@@ -15,9 +15,6 @@ ms.reviewer:
 The Azure Bot Service provides an integrated environment that is purpose-built for bot development, enabling you to build, connect, test, deploy, and manage bots, all from one place. 
 It is powered by Microsoft Bot Framework and <a href="http://go.microsoft.com/fwlink/?linkID=747839" target="_blank">Azure Functions</a>, which means that your bot will run in a serverless environment on Azure that will scale based upon demand.
 
-> [!NOTE]
-> The Azure Bot Service is currently in preview so it should not be used for building production bots.
-
 ## Prerequisites
 
 You must have a Microsoft Azure subscription before you can use the Azure Bot Service. If you do not already have a subscription, you can register for a <a href="https://azure.microsoft.com/en-us/free/" target="_blank">free trial</a>.
