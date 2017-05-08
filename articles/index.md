@@ -69,8 +69,8 @@ description:
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Key concepts</h3>
-                                            <p>Explore the core concepts of building, deploying, and publishing bots with the Bot Framework SDK.</p>
+                                            <h3>How it works</h3>
+                                            <p>Learn about the core concepts of the Bot Framework and building bots.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -157,26 +157,7 @@ description:
                                 </div>
                             </div>
                             </a>
-                        </li>
-                        <li>
-                            <a href="/bot-framework/publish-bot-overview">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/botframework/bot-framework-developing-publish.svg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="cardText">
-                                            <h3>Deploy and publish bots</h3>
-                                            <p>Learn how to register bots with the portal, deploy a bot to Azure, and publish a bot to the Bot Directory.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </li>
+                        </li>                        
                         <li>
                             <a href="/bot-framework/sdk-reference-overview">
                             <div class="cardSize">
@@ -189,7 +170,7 @@ description:
                                         </div>
                                         <div class="cardText">
                                             <h3>Reference</h3>
-                                            <p>Explore the Bot Framework class libraries.</p>
+                                            <p>Explore the Bot Builder SDK reference documentation.</p>
                                         </div>
                                     </div>
                                 </div>
