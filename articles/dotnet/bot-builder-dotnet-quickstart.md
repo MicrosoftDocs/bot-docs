@@ -128,5 +128,5 @@ To learn more about building great bots with the Bot Framework, see the followin
 - [How the Bot Framework works](~/overview-how-bot-framework-works.md)
 - [Principles of bot design](~/bot-design-principles.md)
 - [Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-overview.md)
-- [Deploy and publish bots](~/publish-bot-overview.md)
+- [Deploy bots](~/publish-bot-overview.md)
 - [Bot Framework FAQ](~/resources-bot-framework-faq.md)

@@ -1,6 +1,6 @@
 ---
 title: How the Bot Framework works | Microsoft Docs
-description: Explore the core concepts of building, deploying, and publishing bots with the Bot Framework.
+description: Explore the core concepts of building and deploying bots with the Bot Framework.
 author: JaymeMPerlman
 ms.author: v-jaype
 manager: rstand
@@ -71,12 +71,13 @@ You may also use the debugger included in [Visual Studio Code](~/debug-bots-loca
 ## Deploy to the cloud
 You can host your bot on any reachable service, such as Azure. If you build a bot with the Bot Builder SDK for .NET, you can deploy directly from [Visual Studio](~/deploy-bot-visual-studio.md). You can also deploy a bot with continuous integration from a git repository or GitHub.
 
-## Register and publish
-When you finish your bot, [register](~/portal-register-bot.md) on the Developer Portal. The [Developer Portal](https://dev.botframework.com/) provides a dashboard interface to perform many bot management and connectivity tasks such as configuring channels, managing credentials, connecting to Azure App Insights, or generating web embed codes. 
+## Register a bot
+When you finish your bot, [register](~/portal-register-bot.md) it on the Developer Portal. The [Developer Portal](https://dev.botframework.com/) provides a dashboard interface to perform many bot management and connectivity tasks such as configuring channels, managing credentials, connecting to Azure App Insights, or generating web embed codes. Registering your bot with the Bot Framework generates unique credentials used for authentication.
 
+## Connect to channels
 You can use the Developer Portal to provide channel configuration information to the target channel(s). Many channels require a bot to have an account on the channel; some also require an application.
 
-**Registering** your bot with the Bot Framework generates unique credentials used for authentication. After registering, you can use the Developer Portal to perform maintenance and connectivity tasks. **Publishing** your bot makes it discoverable on the channels your bot is configured to support.
+To make a bot discoverable, [connect it to the Bing channel](~/channels/channel-bing.md). Users will be able to find the bot using Bing search and then interact with it using the channels it is configured to support. Note that not all bots should be discoverable. For example, a bot designed for private use by company employees should not be made generally available through Bing. 
 
 ## Make your bot smarter
 Connect the Microsoft Cognitive Services APIs to enhance your bot. Smart conversational bots respond more naturally, understand spoken commands, guide the user's search for data, determine user location, and even recognize a user's intention to interpret what the user meant to do. [Learn more][smartbots] about adding intelligence to a bot.

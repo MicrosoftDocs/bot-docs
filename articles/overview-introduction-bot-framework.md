@@ -36,7 +36,7 @@ Developers writing bots all face the same problems: bots require basic I/O, they
 To help you build your bot, the Bot Framework includes [Bot Builder](bot-builder-overview-getstarted.md), which provides rich and full-featured SDKs for the .NET and Node.js platforms. The SDKs provide features that make interactions between bots and users much simpler. Bot Builder also includes an emulator for debugging your bots, as well as a large set of sample bots you can use as building blocks. 
 
 ### Developer portal
-Managing your bot is easy with the developer portal. The developer portal gives you one convenient place to register, connect, publish, and manage your bot. It also provides diagnostic tools and a web chat control you can use to embed your bot on a web page.
+Managing your bot is easy with the developer portal. The developer portal gives you one convenient place to register, connect, and manage your bot. It also provides diagnostic tools and a web chat control you can use to embed your bot on a web page.
 
 ![Configure a bot in the developer portal](~/media/portal-configure-bot.png) 
 

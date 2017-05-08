@@ -23,9 +23,6 @@ When you register a bot with the Bot Framework, the following channels are autom
 - Skype
 - Web Chat
 
-> [!TIP]
-> To take full advantage of Skype, you must [publish](~/portal-submit-bot-directory.md) your bot to Bot Directory.
-
 ## Configure your bot to connect to another channel
 
 To configure your bot to connect to another channel, complete the following steps:
@@ -33,17 +30,28 @@ To configure your bot to connect to another channel, complete the following step
 1. Sign in to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a>.
 2. Click **My bots**. 
 3. Select the bot that you want to configure.
-4. Under **Add another channel** on the bot dashboard, click **Add** next to the channel on which you want to enable your bot.
-5. Complete the configuration steps. After you have configured the channel, it will appear under **Channels** on the bot dashboard. 
+4. Click the **Channels** tab.
+5. Under **Add channel** on the bot dashboard, click the channel to add.
 
 After you've configured the channel, users on that channel can start using your bot.
 
+To make a bot discoverable, [connect it to the Bing channel](~/channels/channel-bing.md). Users will be able to find the bot using Bing search and then interact with it using the channels it is configured to support.
+
+To change a bot's channel configuration or to disable a channel, click the **Channels** tab and then click **Edit** next to the channel's title. 
+
+## Publish a bot
+Some channels require the bot to be submitted for review and approval. 
+
+* Bing: Publish from the [configuration page](~/channels/channel-bing.md). 
+* Cortana: Publish from the [Cortana dashboard](https://aka.ms/cortana-publish)
+* Skype for Business: Publish from the [configuration page](~/channels/channel-skypeForBusiness.md). 
+
+To view the status of a review, open the bot in the [developer portal](https://dev.botframework.com/) and click **Channels**.
+
 > [!TIP]
-> To change a bot's configuration for a channel or to disable a bot on a channel, click **Edit** within the channel's tile under **Channels**. 
+> If the bot is not approved, the result will link to the reason why.
+> After making the required changes, resubmit the bot for review.
 
-## Next steps
-
-After you've configured your bot to run on one or more channels, you can [publish](~/portal-submit-bot-directory.md) your bot to Bot Directory. 
 
 
 

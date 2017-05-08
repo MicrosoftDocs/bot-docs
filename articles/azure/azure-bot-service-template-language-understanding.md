@@ -18,7 +18,7 @@ To create a bot that uses natural language models (LUIS) to understand user inte
 
 ## Customize the LUIS application model
 
-When you create a bot using the Language understanding template, Azure Bot Service creates a corresponding LUIS application that is empty (i.e., that always returns `None`). To update your LUIS application model so that it is capable of interpreting user input, you must sign-in to <a href="https://www.luis.ai" target="_blank">LUIS</a>, click **My applications**, select the application that the service created for you, and then create intents, specify entities, and train and publish the application.
+When you create a bot using the Language understanding template, Azure Bot Service creates a corresponding LUIS application that is empty (i.e., that always returns `None`). To update your LUIS application model so that it is capable of interpreting user input, you must sign-in to <a href="https://www.luis.ai" target="_blank">LUIS</a>, click **My applications**, select the application that the service created for you, and then create intents, specify entities, and train the application.
 
 > [!NOTE]
 > A bot that is created using the Language understanding template routes messages in the same manner as described for the 

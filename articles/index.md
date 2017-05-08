@@ -69,9 +69,10 @@ description:
                                             </div>
                                         </div>
                                         <div class="cardText">
+
                                             <h3>How it works</h3>
                                             <p>Learn about the core concepts of the Bot Framework and building bots.</p>
-                                        </div>
+</div>
                                     </div>
                                 </div>
                             </div>
@@ -157,6 +158,7 @@ description:
                                 </div>
                             </div>
                             </a>
+
                         </li>                        
                         <li>
                             <a href="/bot-framework/sdk-reference-overview">
