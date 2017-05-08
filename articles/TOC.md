@@ -45,6 +45,7 @@
 #### [Conduct Skype calls](~/dotnet/bot-builder-dotnet-audio-calls.md)
 ### [Manage state data](~/dotnet/bot-builder-dotnet-state.md)
 ### [Request payment](~/dotnet/bot-builder-dotnet-request-payment.md)
+### [Add Azure Search](~/dotnet/bot-builder-dotnet-search-azure.md)
 ### [Secure your bot](~/dotnet/bot-builder-dotnet-security.md)
 ### [Release notes](~/dotnet/bot-builder-dotnet-release-notes.md)
 ## [Develop with Node.js](~/nodejs/bot-builder-nodejs-overview.md)
@@ -72,6 +73,7 @@
 ### [Support localization](~/nodejs/bot-builder-nodejs-localization.md)
 ### [Use backchannel mechanism](~/nodejs/bot-builder-nodejs-backchannel.md)
 ### [Request payment](~/nodejs/bot-builder-nodejs-request-payment.md)
+### [Add Azure Search](~/nodejs/bot-builder-nodejs-search-azure.md)
 ## [Develop with Azure Bot Service](~/azure/index.md)
 ### Create a bot
 #### [Templates](~/azure/azure-bot-service-templates.md)
