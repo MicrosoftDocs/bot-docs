@@ -89,7 +89,7 @@ To view the status of a review, open the bot in the [developer portal](https://d
 * Cortana: Publish from the [Cortana dashboard](https://aka.ms/cortana-publish)
 * Skype for Business: Publish from the [configuration page](~/channels/channel-skypeForBusiness.md). 
 
-> [TIP]
+> [!TIP]
 > If the bot is not approved, the result will link to the reason why. After making the required changes, resubmit the bot for review.
 
 
