@@ -9,7 +9,9 @@
 ## [Create your first bot with Node.js](~/nodejs/bot-builder-nodejs-quickstart.md)
 ## [Create your first bot with Azure Bot Service](~/azure/azure-bot-service-quickstart.md)
 ## [Create your first bot with REST](~/rest-api/bot-framework-rest-connector-quickstart.md)
-## [Explore sample bots](bot-builder-overview-samples.md)
+# Samples
+## [.NET](~/dotnet/bot-builder-dotnet-samples.md)
+## [Node.js](~/nodejs/bot-builder-nodejs-samples.md)
 # How to
 ## [Design](design/TOC.md)
 ## [Develop with .NET](~/dotnet/bot-builder-dotnet-overview.md)
