@@ -10,7 +10,7 @@ ms.date: 05/03/2017
 ---
 # Prompt users for input
 
-The SDK provides a set of built-in prompts to simplify collecting input from a user. 
+The Bot Builder SDK for Node.js provides a set of built-in prompts to simplify collecting input from a user. 
 
 > [!NOTE] 
 > A *prompt* is best used when the bot is going to perform an action in direct response to the input: Stop, Repeat, Delete.
