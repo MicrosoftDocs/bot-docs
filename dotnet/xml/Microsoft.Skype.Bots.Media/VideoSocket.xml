@@ -1,0 +1,169 @@
+<Type Name="VideoSocket" FullName="Microsoft.Skype.Bots.Media.VideoSocket">
+  <TypeSignature Language="C#" Value="public sealed class VideoSocket : IDisposable, Microsoft.Skype.Bots.Media.IVideoSocket" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit VideoSocket extends System.Object implements class Microsoft.Skype.Bots.Media.IVideoSocket, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.VideoSocket" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Skype.Bots.Media.IVideoSocket</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Provides Send and Receive I/O access to a video stream.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VideoSocket (Microsoft.Skype.Bots.Media.VideoSocketSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Skype.Bots.Media.VideoSocketSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.VideoSocket.#ctor(Microsoft.Skype.Bots.Media.VideoSocketSettings)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="settings" Type="Microsoft.Skype.Bots.Media.VideoSocketSettings" />
+      </Parameters>
+      <Docs>
+        <param name="settings">Settings for VideoSocket like Direction, ReceiveColorFormat, etc.</param>
+        <summary>
+            Initializes a new instance of VideoSocket with VideoSocketSettings.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.VideoSocket.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Disposes the object.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Send">
+      <MemberSignature Language="C#" Value="public void Send (Microsoft.Skype.Bots.Media.VideoMediaBuffer buffer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Send(class Microsoft.Skype.Bots.Media.VideoMediaBuffer buffer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.VideoSocket.Send(Microsoft.Skype.Bots.Media.VideoMediaBuffer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="Microsoft.Skype.Bots.Media.VideoMediaBuffer" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">VideoMediaBuffer to send.</param>
+        <summary>
+            Allows the application to send a packet of video media if the application
+            has configured the VideoSocket to send media.
+            The application should be sending about 30 video frame buffers/second.
+            The application must create a concrete class which derives from the
+            VideoMediaBuffer abstract class. The buffer object passed to the Send
+            method is still potentially in-use after the method returns to the
+            caller. The application must not free the buffer's data until the
+            the buffer object's Dispose() method is invoked by the Media Platform.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SocketId">
+      <MemberSignature Language="C#" Value="public int SocketId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SocketId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoSocket.SocketId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The 0-based ID of the socket. This socket ID is useful to identify a socket in a 
+            multiview (ie. more than 1 video socket) call. The same ID is used in the event 
+            args of the VideoMediaReceived and VideoSendStatusChanged events that this class
+             may raise. The socket ID property will be present in both single view and multiview 
+            cases. The ID maps to the order in which the video sockets are provided to the 
+            CreateMediaConfiguration API. 
+            Eg., if the collection of IVideoSocket objects in the CreateMediaConfiguration API contains 
+            {socketA, socketB, socketC}, the sockets will have the ID mapping of: 0 for socketA, 
+            1 for socketB and 2 for socketC.
+            Before the call to CreateMediaConfiguration, the SocketId has a value of -1.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VideoMediaReceived">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Skype.Bots.Media.VideoMediaReceivedEventArgs&gt; VideoMediaReceived;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Skype.Bots.Media.VideoMediaReceivedEventArgs&gt; VideoMediaReceived" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Bots.Media.VideoSocket.VideoMediaReceived" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Skype.Bots.Media.VideoMediaReceivedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If the application has configured the VideoSocket to receive media, this
+            event is raised each time a packet of video media is received.
+            Once the application has consumed the buffer, it must call the buffer's
+            Dispose() method.
+            The application should be prepared to handle approximately 30 incoming
+            video buffers per second.
+            Events are serialized, so only one event at a time is raised to the app.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VideoSendStatusChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs&gt; VideoSendStatusChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs&gt; VideoSendStatusChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Bots.Media.VideoSocket.VideoSendStatusChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If the application has configured the VideoSocket to send media, this
+            event is raised to inform the application when it may begin sending
+            media and when it should stop. The application cannot send media before
+            receiving a VideoMediaSendStatusChanged event indicating the SendStatus is 
+            Active, such media will be discarded.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

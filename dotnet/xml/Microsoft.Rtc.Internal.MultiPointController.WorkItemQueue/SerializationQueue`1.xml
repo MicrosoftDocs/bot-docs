@@ -1,0 +1,278 @@
+<Type Name="SerializationQueue&lt;T&gt;" FullName="Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public abstract class SerializationQueue&lt;T&gt; where T : IWorkitem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SerializationQueue`1&lt;(class Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.IWorkitem) T&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <InterfaceName>Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.IWorkitem</InterfaceName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">A Workitem class</typeparam>
+    <summary>
+            Ensures that all items in the queue are processed in a
+            serialized manner. Not all items are necessarily processed 
+            by the same thread.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SerializationQueue (bool processAsync);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool processAsync) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="processAsync" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="processAsync">
+            true if processing should always use a thread pool thread; 
+            false if processing should be attempted on the current thread.
+            </param>
+        <summary>
+            Initializes a new instance of the SerializationQueue class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Return count of items in the queue.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enqueue">
+      <MemberSignature Language="C#" Value="public void Enqueue (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Enqueue(!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.Enqueue(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="item">The item to enqueue.</param>
+        <summary>
+            Enqueues an item for later processing.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnqueueAndProcess">
+      <MemberSignature Language="C#" Value="public void EnqueueAndProcess (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnqueueAndProcess(!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.EnqueueAndProcess(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="item">
+            The item to enqueue and process.
+            </param>
+        <summary>
+            Enqueues an item and starts the queue processing.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Process">
+      <MemberSignature Language="C#" Value="public void Process ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Process() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.Process" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Processes the items in the queue. Items added while processing
+            takes place will also be picked up, Start processing using the 
+            queue processing flag.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Process">
+      <MemberSignature Language="C#" Value="public void Process (bool processAsync);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Process(bool processAsync) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.Process(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="processAsync" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="processAsync">
+             To override the queue processing flag to process the workitem.
+             true if processing should always use a thread pool thread; 
+             false if processing should be attempted on the current thread.
+             </param>
+        <summary>
+             Processes the items in the queue. Items added while processing
+             takes place will also be picked up. Start process using the same 
+             thread or work thread depends on processAsync.
+             </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessAsync">
+      <MemberSignature Language="C#" Value="public bool ProcessAsync { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ProcessAsync" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.ProcessAsync" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Returns whether the queue was configured to process
+            async or not.
+            </summary>
+        <value>
+            Returns whether the queue was configured to process
+            async or not.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessItems">
+      <MemberSignature Language="C#" Value="protected abstract bool ProcessItems ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ProcessItems() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.ProcessItems" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Processes the items in the queue.
+            </summary>
+        <returns>
+            true if the processing is completed; false otherwise.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeProcessing">
+      <MemberSignature Language="C#" Value="protected void ResumeProcessing ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ResumeProcessing() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.ResumeProcessing" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Resumes processing the items in the queue. Items added while processing
+            takes place will also be processed.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProcessingStateIdle">
+      <MemberSignature Language="C#" Value="protected void SetProcessingStateIdle ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetProcessingStateIdle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.SetProcessingStateIdle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Sets the processing state to idle.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryDequeue">
+      <MemberSignature Language="C#" Value="protected bool TryDequeue (out T item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool TryDequeue(!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.TryDequeue(`0@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="item">
+            The dequeued item.
+            </param>
+        <summary>
+            Tries to dequeue an item from the queue for processing.
+            </summary>
+        <returns>
+            true if the item was successfully dequeued; false otherwise.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

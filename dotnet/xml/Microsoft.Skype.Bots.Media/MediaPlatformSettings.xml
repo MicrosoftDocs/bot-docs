@@ -1,0 +1,92 @@
+<Type Name="MediaPlatformSettings" FullName="Microsoft.Skype.Bots.Media.MediaPlatformSettings">
+  <TypeSignature Language="C#" Value="public class MediaPlatformSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MediaPlatformSettings extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.MediaPlatformSettings" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Class that stores settings needed to initialize Bot Media Platform.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MediaPlatformSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.MediaPlatformSettings.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationId">
+      <MemberSignature Language="C#" Value="public string ApplicationId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApplicationId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.MediaPlatformSettings.ApplicationId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            String that uniquely identifies the application that initializes the platform.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediaPlatformInstanceSettings">
+      <MemberSignature Language="C#" Value="public Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings MediaPlatformInstanceSettings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings MediaPlatformInstanceSettings" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.MediaPlatformSettings.MediaPlatformInstanceSettings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The media platform instance settings.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegionAffinity">
+      <MemberSignature Language="C#" Value="public string RegionAffinity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RegionAffinity" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.MediaPlatformSettings.RegionAffinity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Reserved for the internal use.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

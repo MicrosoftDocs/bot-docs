@@ -1,0 +1,135 @@
+<Type Name="AudioFormatSettings" FullName="Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings">
+  <TypeSignature Language="C#" Value="public class AudioFormatSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AudioFormatSettings extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary />
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AudioFormatSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AvgBytesPerSeconds">
+      <MemberSignature Language="C#" Value="public int AvgBytesPerSeconds { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AvgBytesPerSeconds" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.AvgBytesPerSeconds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlockAlign">
+      <MemberSignature Language="C#" Value="public short BlockAlign { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int16 BlockAlign" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.BlockAlign" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompressionCode">
+      <MemberSignature Language="C#" Value="public int CompressionCode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CompressionCode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.CompressionCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfChannels">
+      <MemberSignature Language="C#" Value="public int NumberOfChannels { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfChannels" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.NumberOfChannels" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SampleRate">
+      <MemberSignature Language="C#" Value="public int SampleRate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SampleRate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.SampleRate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignificantBitPerSample">
+      <MemberSignature Language="C#" Value="public short SignificantBitPerSample { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int16 SignificantBitPerSample" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.SignificantBitPerSample" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

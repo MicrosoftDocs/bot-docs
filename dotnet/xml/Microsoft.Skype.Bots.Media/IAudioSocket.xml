@@ -1,0 +1,135 @@
+<Type Name="IAudioSocket" FullName="Microsoft.Skype.Bots.Media.IAudioSocket">
+  <TypeSignature Language="C#" Value="public interface IAudioSocket : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAudioSocket implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.IAudioSocket" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Interface to an AudioSocket.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AudioMediaReceived">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Skype.Bots.Media.AudioMediaReceivedEventArgs&gt; AudioMediaReceived;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Skype.Bots.Media.AudioMediaReceivedEventArgs&gt; AudioMediaReceived" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Bots.Media.IAudioSocket.AudioMediaReceived" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Skype.Bots.Media.AudioMediaReceivedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If the application has configured the AudioSocket to receive media, this
+            event is raised each time a packet of audio media is received.
+            Once the application has consumed the buffer, it must call the buffer's
+            Dispose() method.
+            The application must be able to handle at least 50 incoming audio buffers
+            per second.
+            Events are serialized, so only one event at a time is raised to the app.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AudioSendStatusChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Skype.Bots.Media.AudioSendStatusChangedEventArgs&gt; AudioSendStatusChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Skype.Bots.Media.AudioSendStatusChangedEventArgs&gt; AudioSendStatusChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Bots.Media.IAudioSocket.AudioSendStatusChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Skype.Bots.Media.AudioSendStatusChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If the application has configured the AudioSocket to send media, this
+            event is raised to inform the application when it may begin sending
+            media and when it should stop. The application cannot send media before
+            receiving a MediaSendStatusChanged event indicating the SendStatus is 
+            Started.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DominantSpeakerChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Skype.Bots.Media.DominantSpeakerChangedEventArgs&gt; DominantSpeakerChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Skype.Bots.Media.DominantSpeakerChangedEventArgs&gt; DominantSpeakerChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Bots.Media.IAudioSocket.DominantSpeakerChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Skype.Bots.Media.DominantSpeakerChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            This event is raised when there is a change in the dominant speaker in the conference.
+            If there is no dominant speaker in the conference, the CurrentDominantSpeaker argument in the event will have the value None (0xFFFFFFFF).
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Send">
+      <MemberSignature Language="C#" Value="public void Send (Microsoft.Skype.Bots.Media.AudioMediaBuffer buffer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Send(class Microsoft.Skype.Bots.Media.AudioMediaBuffer buffer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.IAudioSocket.Send(Microsoft.Skype.Bots.Media.AudioMediaBuffer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="Microsoft.Skype.Bots.Media.AudioMediaBuffer" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">AudioMediaBuffer to send.</param>
+        <summary>
+            Allows the application to send a packet of audio media if the application
+            has configured the AudioSocket to send media.
+            The application should be sending about 50 packets of audio media per
+            second; each buffer containing 20 milliseconds worth of audio content.
+            The application must create a concrete class which derives from the
+            AudioMediaBuffer abstract class. The buffer object passed to the Send
+            method is still potentially in-use after the method returns to the
+            caller. The application must not free the buffer's data until the
+            the buffer object's Dispose() method is invoked by the Media Platform.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToneReceived">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Skype.Bots.Media.ToneReceivedEventArgs&gt; ToneReceived;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Skype.Bots.Media.ToneReceivedEventArgs&gt; ToneReceived" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Bots.Media.IAudioSocket.ToneReceived" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Skype.Bots.Media.ToneReceivedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            This event is raised when the DTMF tone is received. ToneId enum in the event arguments indicates the tone value.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

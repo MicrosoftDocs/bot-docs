@@ -1,0 +1,331 @@
+<Type Name="InternalMediaPlatform" FullName="Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform">
+  <TypeSignature Language="C#" Value="public class InternalMediaPlatform : IDisposable, Microsoft.Skype.Bots.Media.IMediaPlatform" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi InternalMediaPlatform extends System.Object implements class Microsoft.Skype.Bots.Media.IMediaPlatform, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Skype.Bots.Media.IMediaPlatform</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary />
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InternalMediaPlatform ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAudioSocket">
+      <MemberSignature Language="C#" Value="public static Microsoft.Skype.Bots.Media.IAudioSocket CreateAudioSocket (Microsoft.Skype.Bots.Media.AudioSocketSettings settings, bool isTest);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Skype.Bots.Media.IAudioSocket CreateAudioSocket(class Microsoft.Skype.Bots.Media.AudioSocketSettings settings, bool isTest) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.CreateAudioSocket(Microsoft.Skype.Bots.Media.AudioSocketSettings,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.IAudioSocket</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="settings" Type="Microsoft.Skype.Bots.Media.AudioSocketSettings" />
+        <Parameter Name="isTest" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="settings">
+        </param>
+        <param name="isTest">
+        </param>
+        <summary />
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFileSource">
+      <MemberSignature Language="C#" Value="public static Microsoft.Skype.Internal.Bots.Media.IFileSource CreateFileSource (Microsoft.Skype.Internal.Bots.Media.FileSourceSettings settings, bool isTest, System.IO.Stream stream = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Skype.Internal.Bots.Media.IFileSource CreateFileSource(class Microsoft.Skype.Internal.Bots.Media.FileSourceSettings settings, bool isTest, class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.CreateFileSource(Microsoft.Skype.Internal.Bots.Media.FileSourceSettings,System.Boolean,System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Internal.Bots.Media.IFileSource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="settings" Type="Microsoft.Skype.Internal.Bots.Media.FileSourceSettings" />
+        <Parameter Name="isTest" Type="System.Boolean" />
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="settings">
+        </param>
+        <param name="isTest">
+        </param>
+        <param name="stream">
+        </param>
+        <summary />
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateMediaConfiguration">
+      <MemberSignature Language="C#" Value="public Newtonsoft.Json.Linq.JObject CreateMediaConfiguration (Microsoft.Skype.Bots.Media.IAudioSocket audioSocket);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Newtonsoft.Json.Linq.JObject CreateMediaConfiguration(class Microsoft.Skype.Bots.Media.IAudioSocket audioSocket) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.Linq.JObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="audioSocket" Type="Microsoft.Skype.Bots.Media.IAudioSocket" />
+      </Parameters>
+      <Docs>
+        <param name="audioSocket">
+        </param>
+        <summary />
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateMediaConfiguration">
+      <MemberSignature Language="C#" Value="public Newtonsoft.Json.Linq.JObject CreateMediaConfiguration (Microsoft.Skype.Bots.Media.IVideoSocket vbssSocket);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Newtonsoft.Json.Linq.JObject CreateMediaConfiguration(class Microsoft.Skype.Bots.Media.IVideoSocket vbssSocket) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IVideoSocket)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.Linq.JObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vbssSocket" Type="Microsoft.Skype.Bots.Media.IVideoSocket" />
+      </Parameters>
+      <Docs>
+        <param name="vbssSocket">
+        </param>
+        <summary />
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateMediaConfiguration">
+      <MemberSignature Language="C#" Value="public Newtonsoft.Json.Linq.JObject CreateMediaConfiguration (Microsoft.Skype.Bots.Media.IAudioSocket audioSocket, Microsoft.Skype.Bots.Media.IVideoSocket videoSocket);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Newtonsoft.Json.Linq.JObject CreateMediaConfiguration(class Microsoft.Skype.Bots.Media.IAudioSocket audioSocket, class Microsoft.Skype.Bots.Media.IVideoSocket videoSocket) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,Microsoft.Skype.Bots.Media.IVideoSocket)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.Linq.JObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="audioSocket" Type="Microsoft.Skype.Bots.Media.IAudioSocket" />
+        <Parameter Name="videoSocket" Type="Microsoft.Skype.Bots.Media.IVideoSocket" />
+      </Parameters>
+      <Docs>
+        <param name="audioSocket">
+        </param>
+        <param name="videoSocket">
+        </param>
+        <summary />
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateMediaConfiguration">
+      <MemberSignature Language="C#" Value="public Newtonsoft.Json.Linq.JObject CreateMediaConfiguration (Microsoft.Skype.Bots.Media.IAudioSocket audioSocket, System.Collections.Generic.IList&lt;Microsoft.Skype.Bots.Media.IVideoSocket&gt; videoSockets);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Newtonsoft.Json.Linq.JObject CreateMediaConfiguration(class Microsoft.Skype.Bots.Media.IAudioSocket audioSocket, class System.Collections.Generic.IList`1&lt;class Microsoft.Skype.Bots.Media.IVideoSocket&gt; videoSockets) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.IVideoSocket})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.Linq.JObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="audioSocket" Type="Microsoft.Skype.Bots.Media.IAudioSocket" />
+        <Parameter Name="videoSockets" Type="System.Collections.Generic.IList&lt;Microsoft.Skype.Bots.Media.IVideoSocket&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="audioSocket">
+        </param>
+        <param name="videoSockets">
+        </param>
+        <summary />
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateMediaConfiguration">
+      <MemberSignature Language="C#" Value="public Newtonsoft.Json.Linq.JObject CreateMediaConfiguration (Microsoft.Skype.Bots.Media.IAudioSocket audioSocket, System.Collections.Generic.IList&lt;Microsoft.Skype.Bots.Media.IVideoSocket&gt; videoSockets, Microsoft.Skype.Bots.Media.IVideoSocket vbssSocket);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Newtonsoft.Json.Linq.JObject CreateMediaConfiguration(class Microsoft.Skype.Bots.Media.IAudioSocket audioSocket, class System.Collections.Generic.IList`1&lt;class Microsoft.Skype.Bots.Media.IVideoSocket&gt; videoSockets, class Microsoft.Skype.Bots.Media.IVideoSocket vbssSocket) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.IVideoSocket},Microsoft.Skype.Bots.Media.IVideoSocket)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.Linq.JObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="audioSocket" Type="Microsoft.Skype.Bots.Media.IAudioSocket" />
+        <Parameter Name="videoSockets" Type="System.Collections.Generic.IList&lt;Microsoft.Skype.Bots.Media.IVideoSocket&gt;" />
+        <Parameter Name="vbssSocket" Type="Microsoft.Skype.Bots.Media.IVideoSocket" />
+      </Parameters>
+      <Docs>
+        <param name="audioSocket">
+        </param>
+        <param name="videoSockets">
+        </param>
+        <param name="vbssSocket">
+        </param>
+        <summary />
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool userDisposeCalled);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool userDisposeCalled) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userDisposeCalled" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="userDisposeCalled">
+        </param>
+        <summary />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public void Initialize (Microsoft.Skype.Bots.Media.MediaPlatformSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(class Microsoft.Skype.Bots.Media.MediaPlatformSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.Initialize(Microsoft.Skype.Bots.Media.MediaPlatformSettings)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="settings" Type="Microsoft.Skype.Bots.Media.MediaPlatformSettings" />
+      </Parameters>
+      <Docs>
+        <param name="settings">
+        </param>
+        <summary />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public void Initialize (Microsoft.Skype.Bots.Media.MediaPlatformSettings settings, Microsoft.Skype.Internal.Bots.Media.IConfigurationManager configurationManager, Microsoft.Skype.Internal.Bots.Media.ILogger logger);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Initialize(class Microsoft.Skype.Bots.Media.MediaPlatformSettings settings, class Microsoft.Skype.Internal.Bots.Media.IConfigurationManager configurationManager, class Microsoft.Skype.Internal.Bots.Media.ILogger logger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.Initialize(Microsoft.Skype.Bots.Media.MediaPlatformSettings,Microsoft.Skype.Internal.Bots.Media.IConfigurationManager,Microsoft.Skype.Internal.Bots.Media.ILogger)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="settings" Type="Microsoft.Skype.Bots.Media.MediaPlatformSettings" />
+        <Parameter Name="configurationManager" Type="Microsoft.Skype.Internal.Bots.Media.IConfigurationManager" />
+        <Parameter Name="logger" Type="Microsoft.Skype.Internal.Bots.Media.ILogger" />
+      </Parameters>
+      <Docs>
+        <param name="settings">
+        </param>
+        <param name="configurationManager">
+        </param>
+        <param name="logger">
+        </param>
+        <summary />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public void Initialize (Microsoft.Skype.Bots.Media.MediaPlatformSettings settings, Microsoft.Skype.Internal.Bots.Media.IConfigurationManager configurationManager, Microsoft.Skype.Internal.Bots.Media.ILogger logger, bool isTest);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Initialize(class Microsoft.Skype.Bots.Media.MediaPlatformSettings settings, class Microsoft.Skype.Internal.Bots.Media.IConfigurationManager configurationManager, class Microsoft.Skype.Internal.Bots.Media.ILogger logger, bool isTest) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.Initialize(Microsoft.Skype.Bots.Media.MediaPlatformSettings,Microsoft.Skype.Internal.Bots.Media.IConfigurationManager,Microsoft.Skype.Internal.Bots.Media.ILogger,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="settings" Type="Microsoft.Skype.Bots.Media.MediaPlatformSettings" />
+        <Parameter Name="configurationManager" Type="Microsoft.Skype.Internal.Bots.Media.IConfigurationManager" />
+        <Parameter Name="logger" Type="Microsoft.Skype.Internal.Bots.Media.ILogger" />
+        <Parameter Name="isTest" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="settings">
+        </param>
+        <param name="configurationManager">
+        </param>
+        <param name="logger">
+        </param>
+        <param name="isTest">
+        </param>
+        <summary />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

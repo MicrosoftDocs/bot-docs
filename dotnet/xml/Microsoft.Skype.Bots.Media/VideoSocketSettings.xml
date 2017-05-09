@@ -1,0 +1,112 @@
+<Type Name="VideoSocketSettings" FullName="Microsoft.Skype.Bots.Media.VideoSocketSettings">
+  <TypeSignature Language="C#" Value="public class VideoSocketSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VideoSocketSettings extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.VideoSocketSettings" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            The video socket settings.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VideoSocketSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.VideoSocketSettings.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallId">
+      <MemberSignature Language="C#" Value="public string CallId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CallId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoSocketSettings.CallId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            An alphanumeric string that uniquely identifies a call.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveColorFormat">
+      <MemberSignature Language="C#" Value="public Microsoft.Skype.Bots.Media.VideoColorFormat ReceiveColorFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Skype.Bots.Media.VideoColorFormat ReceiveColorFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoSocketSettings.ReceiveColorFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoColorFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            What color format should received video be delivered in.
+            Currently only NV12 is allowed.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StreamDirections">
+      <MemberSignature Language="C#" Value="public Microsoft.Skype.Bots.Media.StreamDirection StreamDirections { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Skype.Bots.Media.StreamDirection StreamDirections" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoSocketSettings.StreamDirections" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.StreamDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The direction of the stream.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportedSendVideoFormats">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Skype.Bots.Media.VideoFormat&gt; SupportedSendVideoFormats { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Skype.Bots.Media.VideoFormat&gt; SupportedSendVideoFormats" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoSocketSettings.SupportedSendVideoFormats" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Skype.Bots.Media.VideoFormat&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The supported video formats the Bot supports sending.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,71 @@
+<Type Name="MediaType" FullName="Microsoft.Skype.Bots.Media.MediaType">
+  <TypeSignature Language="C#" Value="public enum MediaType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MediaType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.MediaType" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Indicates the media type of the socket.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Audio">
+      <MemberSignature Language="C#" Value="Audio" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.MediaType Audio = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.MediaType.Audio" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.MediaType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Audio
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Vbss">
+      <MemberSignature Language="C#" Value="Vbss" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.MediaType Vbss = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.MediaType.Vbss" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.MediaType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Video-based screen sharing (VBSS)
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Video">
+      <MemberSignature Language="C#" Value="Video" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.MediaType Video = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.MediaType.Video" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.MediaType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Video
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

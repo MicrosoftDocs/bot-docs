@@ -1,0 +1,92 @@
+<Type Name="AudioSocketSettings" FullName="Microsoft.Skype.Bots.Media.AudioSocketSettings">
+  <TypeSignature Language="C#" Value="public class AudioSocketSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AudioSocketSettings extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.AudioSocketSettings" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            The settings to initialize the AudioSocket.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AudioSocketSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.AudioSocketSettings.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallId">
+      <MemberSignature Language="C#" Value="public string CallId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CallId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.AudioSocketSettings.CallId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            An alphanumeric string that uniquely identifies a call
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StreamDirections">
+      <MemberSignature Language="C#" Value="public Microsoft.Skype.Bots.Media.StreamDirection StreamDirections { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Skype.Bots.Media.StreamDirection StreamDirections" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.AudioSocketSettings.StreamDirections" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.StreamDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The direction of the stream
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportedAudioFormat">
+      <MemberSignature Language="C#" Value="public Microsoft.Skype.Bots.Media.AudioFormat SupportedAudioFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Skype.Bots.Media.AudioFormat SupportedAudioFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.AudioSocketSettings.SupportedAudioFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.AudioFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The supported send/receive audio format.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

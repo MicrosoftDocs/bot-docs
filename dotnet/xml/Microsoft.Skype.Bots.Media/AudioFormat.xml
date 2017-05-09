@@ -1,0 +1,72 @@
+<Type Name="AudioFormat" FullName="Microsoft.Skype.Bots.Media.AudioFormat">
+  <TypeSignature Language="C#" Value="public enum AudioFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AudioFormat extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.AudioFormat" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            The audio format.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Pcm16K">
+      <MemberSignature Language="C#" Value="Pcm16K" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.AudioFormat Pcm16K = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.AudioFormat.Pcm16K" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember(Value="Pcm16K")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.AudioFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            PCM 16K
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Pcm44KStereo">
+      <MemberSignature Language="C#" Value="Pcm44KStereo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.AudioFormat Pcm44KStereo = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.AudioFormat.Pcm44KStereo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember(Value="Pcm44KStereo")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.AudioFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            PCM 44.1K Stereo
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
