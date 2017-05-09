@@ -122,7 +122,8 @@
 #### [Kik](~/thirdparty-channels/channel-kik.md) 
 #### [Slack](~/thirdparty-channels/channel-slack.md) 
 #### [Telegram](~/thirdparty-channels/channel-telegram.md) 
-#### [Twilio](~/thirdparty-channels/channel-twilio.md) 
+#### [Twilio](~/thirdparty-channels/channel-twilio.md)
+### [Bot review guidelines](portal-bot-review-guidelines.md) 
 ## [Troubleshoot](troubleshoot/TOC.md)
 # Reference
 ## [About the SDK reference](sdk-reference-overview.md)
