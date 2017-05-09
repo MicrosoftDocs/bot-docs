@@ -198,7 +198,7 @@ description:
                             </a>
                         </li>                        
                         <li>
-                            <a href="/bot-framework/sdk-reference-overview">
+                            <a href="/bot-framework/reference-overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
