@@ -72,16 +72,14 @@ You've successfully created a bot by using the Bot Builder SDK for Node.js!
 
 ## Next steps
 
-If you'd like to share your bot with others, you'll need to
-[register](~/portal-register-bot.md) it with the Bot Framework and
-[deploy](~/publish-bot-overview.md) it to the cloud.
+If you'd like to share your bot with others, you'll need to [register](~/portal-register-bot.md) it with the Bot Framework and [deploy](~/deploy-bot-overview.md) it to the cloud.
 
 To learn more about building great bots with the Bot Framework, see the following articles:
 
 - [How the Bot Framework works](~/overview-how-bot-framework-works.md)
 - [Principles of bot design](~/bot-design-principles.md)
 - [Bot Builder SDK for Node.js](~/nodejs/index.md)
-- [Deploy and publish bots](~/publish-bot-overview.md)
+- [Deploy a bot to the cloud](~/deploy-bot-overview.md)
 - [Bot Framework FAQ](~/resources-bot-framework-faq.md)
 
 [Install]: ~/nodejs/index.md#get-the-sdk

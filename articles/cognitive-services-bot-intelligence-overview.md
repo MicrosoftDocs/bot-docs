@@ -123,7 +123,7 @@ You can find comprehensive documentation of each product and their corresponding
 
 
 [language]: https://docs.microsoft.com/en-us/azure/cognitive-services/luis/home
-[search]: https://docs.microsoft.com/en-us/azure/cognitive-services/bing-web-search/overview
+[search]: https://docs.microsoft.com/en-us/azure/cognitive-services/bing-web-search/search-the-web
 [vision]: https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/home
 [knowledge]: https://docs.microsoft.com/en-us/azure/cognitive-services/kes/overview
 [speech]: https://docs.microsoft.com/en-us/azure/cognitive-services/speech/home

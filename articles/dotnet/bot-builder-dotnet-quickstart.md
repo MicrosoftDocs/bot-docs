@@ -121,12 +121,12 @@ In this tutorial, you created a simple bot by using the Bot Application template
 and verified the bot's functionality by using the Bot Framework Emulator.
 If you'd like to share your bot with others, you'll need to
 [register](~/portal-register-bot.md) it with the Bot Framework and
-[deploy](~/publish-bot-overview.md) it to the cloud.
+[deploy](~/deploy-bot-overview.md) it to the cloud.
 
 To learn more about building great bots with the Bot Framework, see the following articles:
 
 - [How the Bot Framework works](~/overview-how-bot-framework-works.md)
 - [Principles of bot design](~/bot-design-principles.md)
 - [Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-overview.md)
-- [Deploy bots](~/publish-bot-overview.md)
+- [Deploy a bot to the cloud](~/deploy-bot-overview.md)
 - [Bot Framework FAQ](~/resources-bot-framework-faq.md)

@@ -171,7 +171,7 @@ The search results are displayed to the user and you've successfully added Azure
 ## Samples
 
 For two complete samples that show how to support Azure Search with bots using the Bot Builder SDK for .NET, see the 
-[Real Estate bot sample](https://github.com/Microsoft/botBuilder-Samples/tree/master/CSharp/demo-Search/RealEstatebot) or [Job Listing bot sample](https://github.com/Microsoft/botBuilder-Samples/tree/master/CSharp/demo-Search/JobListingbot) in GitHub. 
+[Real Estate bot sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/demo-Search/RealEstateBot) or [Job Listing bot sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/demo-Search/JobListingBot) in GitHub. 
 
 ## Additional resources
 * [Azure Search][search]

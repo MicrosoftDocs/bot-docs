@@ -213,9 +213,6 @@ For a complete sample that shows how to create a basic knowledge bot using the B
 
 ## Additional resources
 
-- [Artificial intelligence in bots](~/intelligent-bots.md)
-- [Add knowledge extraction to a bot](~/cognitive-services-add-bot-knowledge.md)
-- [Add language understanding to a bot](~/cognitive-services-add-bot-language.md)
-- [Add search capabilities to a bot](~/cognitive-services-add-bot-search.md)
+- [Add intelligence to bots with Cognitive Services](~/cognitive-services-bot-intelligence-overview.md)
 
 [qnamakerTemplate]: https://docs.botframework.com/en-us/azure-bot-service/templates/qnamaker/#navtitle

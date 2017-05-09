@@ -347,63 +347,56 @@ As of May 1, 2017, the Bot Framework supports two versions of security protocol:
 
 #### OAuth login URL
 
-| | |
+| Protocol version | Valid value |
 |----|----|
 | v3.0 (June 2016 - July 31, 2017) | `https://login.microsoftonline.com/common/oauth2/v2.0/token` | 
 | v3.1 (starting December 2016) | `https://login.microsoftonline.com/botframework.com/oauth2/v2.0/token` |
-| | |
 
 #### OAuth scope
 
-| | |
+| Protocol version | Valid value |
 |----|----|
 | v3.0 (June 2016 - July 31, 2017) | `https://graph.microsoft.com/.default` | 
 | v3.1 (starting December 2016) |  `https://api.botframework.com/.default` |
-| | |
 
 ### [Connector to Bot authentication](#connector-to-bot)
 
 #### OpenID metadata document
 
-| | |
+| Protocol version | Valid value |
 |----|----|
 | v3.0 (June 2016 - July 31, 2017) | `https://api.aps.skype.com/v1/.well-known/openidconfiguration` | 
 | v3.1 (starting December 2016) | `https://login.botframework.com/v1/.well-known/openidconfiguration` |
-| | |
 
 #### JWT Issuer
 
-| | |
+| Protocol version | Valid value |
 |----|----|
 | v3.0 (June 2016 - July 31, 2017) | `https://api.botframework.com` | 
 | v3.1 (starting December 2016) | `https://api.botframework.com` |
-| | |
 
 ### [Emulator to Bot authentication](#emulator-to-bot)
 
 #### JWT Audience
 
-| | |
+| Protocol version | Valid value |
 |----|----|
 | v3.0 (June 2016 - July 31, 2017) | `https://graph.microsoft.com` | 
 | v3.1 (starting December 2016) | Your bot’s Microsoft App ID |
-| | |
 
 #### JWT Issuer
 
-| | |
+| Protocol version | Valid value |
 |----|----|
 | v3.0 (June 2016 - July 31, 2017) | `https://sts.windows.net/72f988bf-86f1-41af-91ab-2d7cd011db47/` | 
 | v3.1 (starting December 2016) | `https://sts.windows.net/d6d49420-f39b-4df7-a1dc-d59a935871db/` |
-| | |
 
 #### OpenID metadata document
 
-| | |
+| Protocol version | Valid value |
 |----|----|
 | v3.0 (June 2016 - July 31, 2017) | `https://login.microsoftonline.com/common/v2.0/.well-known/openid-configuration` | 
 | v3.1 (starting December 2016) | `https://login.microsoftonline.com/botframework.com/v2.0/.well-known/openid-configuration` |
-| | |
 
 ## Additional resources
 

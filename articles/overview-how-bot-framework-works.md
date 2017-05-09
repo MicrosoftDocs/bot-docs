@@ -88,4 +88,4 @@ Connect the Microsoft Cognitive Services APIs to enhance your bot. Smart convers
 - [Botbuilder SDK for .NET](~/dotnet/bot-builder-dotnet-overview.md)
 - [Botbuilder SDK for Node.js](~/nodejs/index.md)
 
-[smartbots]: ~/intelligent-bots.md
+[smartbots]: ~/cognitive-services-bot-intelligence-overview.md

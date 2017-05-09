@@ -115,6 +115,6 @@ bot.dialog('/ensureProfile', [
 If the bot is distributed across multiple compute nodes, every step of the waterfall could be processed by a different node. The `/ensureProfile` dialog uses [session.dialogData](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#dialogdata) to temporarily store the user's profile. The `dialogData` field ensures that the dialog's state is properly maintained between each step of the conversation. While you can store anything in the `dialogData` field, you should limit yourself to JavaScript primitives that can be properly serialized. 
 
 ## Additional resources
-- [Prompts class][PromptsRef]
+- [IPrompts interface][PromptsRef]
 
-[PromptsRef]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts.html
+[PromptsRef]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.__global.iprompts.html

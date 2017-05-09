@@ -100,5 +100,5 @@ For a complete sample that shows how to hand off conversations from bot to human
 - [Dialogs](~/dotnet/bot-builder-dotnet-dialogs.md)
 - [Manage conversation flow with dialogs (.NET)](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
 - [Manage conversation flow with dialogs (Node.js)](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
-- [Artificial intelligence in bots](~/intelligent-bots.md)
-- [Add language understanding to a bot](~/cognitive-services-add-bot-language.md)
+- [Add intelligence to bots with Cognitive Services](~/cognitive-services-bot-intelligence-overview.md)
+

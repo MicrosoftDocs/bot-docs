@@ -46,7 +46,7 @@ The Bot Framework supports several popular channels for connecting your bots and
 ![List of channels on the portal](~/media/portal-channels-list.png) 
 
 ## Build smart bots
-You can take advantage of Microsoft Cognitive Services to add smart features like natural language understanding, image recognition, speech, and more. [Learn more](~/intelligent-bots.md) about adding intelligence to your bot.
+You can take advantage of Microsoft Cognitive Services to add smart features like natural language understanding, image recognition, speech, and more. [Learn more](~/cognitive-services-bot-intelligence-overview.md) about adding intelligence to your bot.
 
 ## Next steps
 Dive deeper into [the capabilities](overview-how-bot-framework-works.md) of the Bot Framework. Get started  [building your first bot](bot-builder-overview-getstarted.md) and learn more about [designing great bots](~/bot-design-principles.md).

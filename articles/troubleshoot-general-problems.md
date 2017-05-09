@@ -159,7 +159,7 @@ There are a few options:
 
 * Don't store that dependency so it won't be serialized. This probably isn't helpful, but it's an option.
 * Use the reflection serialization surrogate. This still may not work and risks serializing too much.
-* Resolve the dependency through Autofac and [FiberModule.Key_DoNotSerialize](https://github.com/Microsoft/BotBuilder/blob/master/CSharp/Library/Fibers/FiberModule.cs#L59). This is the cleanest solution.
+* Resolve the dependency through Autofac and `FiberModule.Key_DoNotSerialize`. This is the cleanest solution.
 * Use [NonSerialized](https://msdn.microsoft.com/en-us/library/system.nonserializedattribute(v=vs.110).aspx) and [OnDeserialized](https://msdn.microsoft.com/en-us/library/system.runtime.serialization.ondeserializedattribute(v=vs.110).aspx) attributes to restore the dependency on deserialization This is the simplest solution.
 
 

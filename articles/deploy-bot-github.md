@@ -50,8 +50,8 @@ The deployment process may take a minute or two to complete.
 You can verify that the deployment has completed by visiting the web app in a browser.
 
 > [!NOTE]
-> The URL of the web app will be *https://appname.azurewebsites.net*, where *appname* is the value that you specified when creating the app.
-> In this example, the URL is <a href="http://echobotsample.azurewebsites.net" target="_blank">https://echobotsample.azurewebsites.net</a>.
+> The URL of the web app will be `https://appname.azurewebsites.net`, where **appname** is the value that you specified when creating the app.
+> In this example, the URL is `https://echobotsample.azurewebsites.net`.
 
 ![Hello world web app in browser](~/media/azure-browse.png)
 

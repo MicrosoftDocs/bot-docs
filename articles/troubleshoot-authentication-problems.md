@@ -54,8 +54,8 @@ var connector = new builder.ChatConnector({
 Now, follow these steps:
 
 1. Start your bot.
-2. Open the Bot Framework Emulator and make sure the "Emulator Url" has its default value of "http://localhost:9000/".
-3. Enter your bot's endpoint into the emulator field labeled "Bot Url." The default endpoint for the Bot builder SDK is http://localhost:3978/api/messages.
+2. Open the Bot Framework Emulator and make sure the "Emulator Url" has its default value of `http://localhost:9000/`.
+3. Enter your bot's endpoint into the emulator field labeled "Bot Url." The default endpoint for the Bot builder SDK is `http://localhost:3978/api/messages`.
 4. Make sure the "Microsoft App Id" and "Microsoft App Password" fields are empty.
 5. Type some text and press enter.
 
@@ -83,7 +83,7 @@ If your message was successful, you have verified that your bot responds on loca
 
 The next step is to confirm that your app ID and password are correct. You can visit the [Microsoft Application Registration Portal](https://apps.dev.microsoft.com) to see your list of apps. You can view your app IDs and generate new passwords there.
 
-To verify your app ID and password, create an HTTP request to the Microsoft login service. (This request should conform to the [Bot Framework authentication protocol](/en-us/restapi/authentication/), although you can follow the example below to create a request.)
+To verify your app ID and password, create an HTTP request to the Microsoft login service. (This request should conform to the [Bot Framework authentication protocol](~/rest-api/bot-framework-rest-connector-authentication.md), although you can follow the example below to create a request.)
 
 > [!WARNING]
 > These instructions disable SSL verification for login.microsoftonline.com. Only perform this step on a secure network. Consider changing your app password after making this call.
@@ -158,8 +158,8 @@ var connector = new builder.ChatConnector({
 Now, follow these steps:
 
 1. Start your bot.
-2. Open the Bot Framework Emulator and make sure the "Emulator Url" has its default value of "http://localhost:9000/".
-3. Enter your bot's endpoint into the emulator field labeled "Bot Url." The default endpoint for the Bot builder SDK is http://localhost:3978/api/messages.
+2. Open the Bot Framework Emulator and make sure the "Emulator Url" has its default value of `http://localhost:9000/`.
+3. Enter your bot's endpoint into the emulator field labeled "Bot Url." The default endpoint for the Bot builder SDK is `http://localhost:3978/api/messages`.
 4. Enter your bot's Microsoft App Id into the field labeled Microsoft App Id.
 5. Enter your bot's Microsoft App Password into the field labeled Microsoft App Password.
 5. Type some text and press enter.
@@ -280,7 +280,7 @@ If you continue to encounter difficulties, here are some additional resources:
 
 
 
-[BotConnectorAuthGuide]: https://docs.botframework.com/en-us/restapi/authentication
+[BotConnectorAuthGuide]: ~/rest-api/bot-framework-rest-connector-authentication.md
 [Support]: resources-support.md
 [Emulator]: debug-bots-emulator.md
 [DevPortalTestPanel]: ~/media/troubleshooting-bot-framework-authentication_3.png

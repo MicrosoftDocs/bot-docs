@@ -88,7 +88,7 @@ The following code demonstrates how to add the `Speak` and `InputHint` propertie
 
 
 ## Sample: RollerSkill
-The code in the following sections comes from a sample Cortana skill for rolling dice. Download the full code for the bot from the [BotBuilder-Samples repository](https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/demo-RollerSkill).
+The code in the following sections comes from a sample Cortana skill for rolling dice. Download the full code for the bot from the [BotBuilder-Samples repository](https://github.com/Microsoft/BotBuilder-Samples/).
 
 You invoke the skill by saying its [invocation name][InvocationNameGuidelines] to Cortana. For the roller skill, after you [add the bot to the Cortana channel][CortanaChannel] and register it as a Cortana skill, you can invoke it by telling Cortana "Ask Roller" or "Ask Roller to roll dice".
 

@@ -187,7 +187,7 @@ Content-Type: application/json
 
 In this tutorial, you obtained an access token from the Bot Framework and used the Bot Connector service to exchange messages with the user. 
 You can use the [Bot Framework Emulator](~/debug-bots-emulator.md) to test and debug your bot. 
-If you'd like to share your bot with others, you'll need to [configure](~/portal-configure-channels.md) it to run on one or more channels and [deploy](~/publish-bot-overview.md) it to the cloud.
+If you'd like to share your bot with others, you'll need to [configure](~/portal-configure-channels.md) it to run on one or more channels and [deploy](~/deploy-bot-overview.md) it to the cloud.
 
 To learn more about building great bots with the Bot Framework, see the following articles:
 
@@ -196,7 +196,7 @@ To learn more about building great bots with the Bot Framework, see the followin
 - [Bot Framework REST APIs](~/rest-api/index.md)
 - [Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-overview.md)
 - [Bot Builder SDK for Node.js](~/nodejs/index.md)
-- [Deploy and publish bots](~/publish-bot-overview.md)
+- [Deploy a bot to the cloud](~/deploy-bot-overview.md)
 - [Bot Framework FAQ](~/resources-bot-framework-faq.md)
 
 
