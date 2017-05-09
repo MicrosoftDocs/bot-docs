@@ -326,7 +326,7 @@ see [Authentication][authentication].
 - Updated **nuspec** with better description.
 - Added error-resilient context store.
 
-[authentication]: https://docs.botframework.com/en-us/restapi/authentication/#changes
+[authentication]: ~/rest-api/bot-framework-rest-connector-authentication.md#security-protocol-changes
 
 [connectorAPIv3]: https://docs.botframework.com/en-us/support/upgrade-to-v3/#navtitle
 
@@ -334,7 +334,7 @@ see [Authentication][authentication].
 
 [sendingReplies]: http://docs.botframework.com/en-us/support/upgrade-code-to-v3/#sending-replies
 
-[authenticationModel]: http://docs.botframework.com/en-us/restapi/authentication/#navtitle
+[authenticationModel]: ~/rest-api/bot-framework-rest-connector-authentication.md
 
 [stateAPI]: http://docs.botframework.com/en-us/csharp/builder/sdkreference/stateapi.html
 
