@@ -49,14 +49,14 @@ When you send a message on a speech-enabled channel, you can attempt to influenc
 
 ## Sample code 
 
-For a complete sample that shows how to create a speech-enabled bot using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/demo-RollerSkill" target="_blank">Roller sample</a> in GitHub.
+For a complete sample that shows how to create a speech-enabled bot using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Roller sample</a> in GitHub.
 
 ## Additional resources
 
 - [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
 - [Add input hints to messages](~/dotnet/bot-builder-dotnet-add-input-hints.md)
 - <a href="https://msdn.microsoft.com/en-us/library/hh378377(v=office.14).aspx" target="_blank">Speech Synthesis Markup Language (SSML)</a>
-- <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/demo-RollerSkill" target="_blank">Roller sample (GitHub)</a>
+- <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Roller sample (GitHub)</a>
 
 [IMessageActivity]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d1/de8/interface_microsoft_1_1_bot_1_1_connector_1_1_i_message_activity.html
 
