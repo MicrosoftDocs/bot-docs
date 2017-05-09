@@ -42,7 +42,12 @@
 #### [JSON schema](~/dotnet/bot-builder-dotnet-formflow-json-schema.md)
 ### Channels
 #### [Build a Cortana skill](~/dotnet/bot-builder-dotnet-cortana-skill.md)
-#### [Conduct Skype calls](~/dotnet/bot-builder-dotnet-audio-calls.md)
+#### [Conduct audio calls with Skype](~/dotnet/bot-builder-dotnet-audio-calls.md)
+#### Conduct real-time media calls with Skype
+##### [Real-time media calling concepts](~/dotnet/bot-builder-dotnet-real-time-media-concepts.md)
+##### [Requirements for real-time media bots](~/dotnet/bot-builder-dotnet-real-time-media-requirements.md)
+##### [Build a real-time media bot](~/dotnet/bot-builder-dotnet-real-time-audio-video-call-overview.md)
+##### [Deploy a real-time media bot](~/dotnet/bot-builder-dotnet-real-time-deploy-visual-studio.md)
 ### [Manage state data](~/dotnet/bot-builder-dotnet-state.md)
 ### [Request payment](~/dotnet/bot-builder-dotnet-request-payment.md)
 ### [Add Azure Search](~/dotnet/bot-builder-dotnet-search-azure.md)

@@ -1,5 +1,5 @@
 ---
-title: Support audio calls with Skype | Microsoft Docs
+title: Conduct audio calls with Skype | Microsoft Docs
 description: Learn how to conduct audio calls with Skype using the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
@@ -10,10 +10,7 @@ ms.date:
 ms.reviewer:
 ---
 
-# Support audio calls with Skype
-> [!div class="op_single_selector"]
-> - [.NET](../dotnet/bot-builder-dotnet-audio-calls.md)
-> - [Node.js](../nodejs/bot-builder-nodejs-conduct-audio-calls.md)
+# Conduct audio calls with Skype
 
 [!include[Introduction to conducting audio calls](~/includes/snippet-audio-call-intro.md)]
 
