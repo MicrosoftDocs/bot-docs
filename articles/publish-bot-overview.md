@@ -31,18 +31,7 @@ Before others can use your bot, you must deploy it to the cloud. You can deploy 
 
 After registering the bot with the Bot Framework and deployed it bot to the cloud, [configure the bot to connect on one or more channels](~/portal-configure-channels.md).
 
-## Make a bot discoverable
-To make a bot discoverable, [connect it to the Bing channel](~/channels/channel-bing.md). Users will be able to find the bot using Bing search and then interact with it using the channels it is configured to support.
-Note that not all bots should be discoverable. For example, a bot designed for private use by company employees should not be made generally available through Bing. 
-
 ## Publish a bot
-The process of publishing a bot to a channel means the bot has been submitted for review and approved.
+The publishing process is different for each channel. 
 
-To view the status of a review, open the bot in the [developer portal](https://dev.botframework.com/) and click **Channels**.
 
-* Bing: Publish from the [configuration page](~/channels/channel-bing.md). 
-* Cortana: Publish from the [Cortana dashboard](https://aka.ms/cortana-publish)
-* Skype for Business: Publish from the [configuration page](~/channels/channel-skypeForBusiness.md). 
-
-> [TIP]
-> If the bot is not approved, the result will link to the reason why. After making the required changes, resubmit the bot for review.

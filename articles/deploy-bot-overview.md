@@ -26,5 +26,5 @@ Before others can use your bot, you must deploy it to the cloud. You can deploy 
 - [Deploy from Visual Studio](~/deploy-bot-visual-studio.md)
 
 ## Next steps
-* [Register a bot](portal-register-bot.md)
+* [Register and publish a bot](portal-register-bot.md)
 * [Configure a bot to run on one or more channels](~/portal-configure-channels.md).

@@ -81,16 +81,9 @@ the next step in the bot publication process will depend upon whether or not you
 2. [Configure the bot to run on one or more channels](~/portal-configure-channels.md). To make a bot discoverable, [connect it to the Bing channel](~/channels/channel-bing.md). Users will be able to find the bot using Bing search and then interact with it using the channels it is configured to support.
 
 ## Publish a bot
-The process of publishing a bot to a channel means the bot has been submitted for review and approved.
+The publishing process is different for each channel. 
 
-To view the status of a review, open the bot in the [developer portal](https://dev.botframework.com/) and click **Channels**.
-
-* Bing: Publish from the [configuration page](~/channels/channel-bing.md). 
-* Cortana: Publish from the [Cortana dashboard](https://aka.ms/cortana-publish)
-* Skype for Business: Publish from the [configuration page](~/channels/channel-skypeForBusiness.md). 
-
-> [!TIP]
-> If the bot is not approved, the result will link to the reason why. After making the required changes, resubmit the bot for review.
+[!include[publishing](~/includes/snippet-publish-to-channel.md)]
 
 
 [terms]: https://aka.ms/bf-terms

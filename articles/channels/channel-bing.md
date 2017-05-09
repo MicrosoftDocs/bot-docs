@@ -19,21 +19,21 @@ Publishing a bot to Bing allows users to discover and interact with the bot via 
 ## General bot information
 All fields marked with an asterisk (*) are required. Bots must be [registered](~/portal-register-bot.md) on the Bot Framework before they can be connected to Bing.
 
-Open the bot on the [Developer Portal](https://dev.botframework.com/), click the **Channels** tab, and then click **Bing**.
+Open the bot on the [Bot Framework Portal](https://dev.botframework.com/), click the **Channels** tab, and then click **Bing**.
 
 ![General bot information](~/media/channels/bing-general.png)
 
 ### Display Name 
 Enter a name for this bot. This is the name that will appear in search results.
 
-### Description  
+### Long Description  
 Describe the bot's purpose and function. The bot must operate as described in its bot description.
 
 ### Website 
-Link to a website with more information about this bot.
+Link to a website with more information about this bot. There will be an additional verification step to link this bot to the site.
 
 ## Bot category
-Categories provide another way for users to find bots on the Bing Bot directory, Users can filter by category to find all "entertainment bots", "music bots", "news bots", and so on.
+Categories provide another way for users to find bots on the Bing Bot directory. Users can filter by category to find all "entertainment bots", "music bots", "news bots", and so on.
 
 ![Bot category](~/media/channels/bing-category.png)
 
@@ -60,7 +60,7 @@ These are required for published bots.
 
 ![Privacy statement](~/media/channels/bing-privacy.png)
  
- ### Privacy Statement URL 
+### Privacy Statement URL 
 
 If this bot handles users' personal data, provide a link to the applicable privacy policy. The [Code of Conduct][conduct] contains third party resource links to help create a privacy policy.
 
@@ -68,7 +68,7 @@ If this bot handles users' personal data, provide a link to the applicable priva
 
 A link to the bot's Terms of Service is required. The [Terms of Use][terms] contains sample terms to help create an appropriate Terms of Service document.
 
-### Submit for review
+### Submit for review and publish
 
 Click **Submit for review**.
 
@@ -77,7 +77,26 @@ After submitting this bot for review, click the **Test on Bing** link to preview
 > [!NOTE] 
 > Do **not** distribute the test link. Its only purpose is to provide a preview before the bot is approved.
 
-The review process takes a few business days and you may be contacted. Bots that are approved and enabled will appear in Bing search results. Bots that are not approved may be resubmitted if the required changes are made.
+The review process takes a few business days and you may be contacted. After approval, users can find the bot in Bing search results and use Bing, or any other supported channel, to interact with the bot. 
+
+Publishing to the Bing channel makes the bot discoverable by the widest possible audience. However, not all bots should be easily discoverable. For example, a bot designed for use by company employees should not be made generally available. A link to the bot can be privately distributed instead.
+
+> [!TIP]
+> To view the status of a review, open the bot in the [developer portal](https://dev.botframework.com/) and click **Channels**.
+> If the bot is not approved, the result will link to the reason why. After making the required changes, resubmit the bot for review.
+
+## Query Bing to find a bot
+
+To find a bot, go to [Bing.com](https://www.bing.com/) and enter a search query in the form of “*BotName* bot”. For example, if the bot’s name is “Contoso”, enter “Contoso bot”. 
+
+The bot will appear in Bing search results as a rich answer when the user queries specifically for the bot.
+Click **Chat on Bing** to launch the bot.
+
+![Bing search results](~/media/channels/bing-contosoResult.png)
+
+If a website has been associated with the bot, the link to the bot will appear **underneath** the website's Bing search result. Click the link to the bot to launch the bot.
+
+![Bing website search results](~/media/channels/bing-contosoWeb.png)
 
 [conduct]: http://aka.ms/bf-conduct
 [practices]: http://docs.botframework.com/directory/best-practices/

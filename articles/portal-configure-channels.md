@@ -35,22 +35,10 @@ To configure your bot to connect to another channel, complete the following step
 
 After you've configured the channel, users on that channel can start using your bot.
 
-To make a bot discoverable, [connect it to the Bing channel](~/channels/channel-bing.md). Users will be able to find the bot using Bing search and then interact with it using the channels it is configured to support.
-
-To change a bot's channel configuration or to disable a channel, click the **Channels** tab and then click **Edit** next to the channel's title. 
-
 ## Publish a bot
-Some channels require the bot to be submitted for review and approval. 
+The publishing process is different for each channel. 
 
-* Bing: Publish from the [configuration page](~/channels/channel-bing.md). 
-* Cortana: Publish from the [Cortana dashboard](https://aka.ms/cortana-publish)
-* Skype for Business: Publish from the [configuration page](~/channels/channel-skypeForBusiness.md). 
-
-To view the status of a review, open the bot in the [developer portal](https://dev.botframework.com/) and click **Channels**.
-
-> [!TIP]
-> If the bot is not approved, the result will link to the reason why.
-> After making the required changes, resubmit the bot for review.
+[!include[publishing](~/includes/snippet-publish-to-channel.md)]
 
 
 

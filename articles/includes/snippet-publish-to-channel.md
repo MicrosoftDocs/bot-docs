@@ -1,0 +1,17 @@
+### Bing
+Bots are published to Bing from the [configuration page](~/channels/channel-bing.md). Publishing a bot submits it for review. After approval, users can find the bot in Bing search results and use Bing, or any other supported channel, to interact with the bot. 
+
+Publishing to the Bing channel makes the bot discoverable by the widest possible audience. However, not all bots should be easily discoverable. For example, a bot designed for use by company employees should not be made generally available. A link to the bot can be privately distributed instead.
+
+### Cortana
+Bots are published to Cortana from the [dashboard](https://aka.ms/cortana-publish) and power Cortana skills. Cortana skills can be deployed for your own use, deployed to a small group, or published to the world.
+
+### Skype
+Bots are published to Skype from the [configuration page](~/channels/channel-skypeForBusiness.md). Publishing a bot submits it for review. Before review, the bot is limited to 100 contacts. Approved bots do not have limited contacts and you may opt to have the bot included in the Skype bot directory.
+
+### Skype for Business
+Skype for Business bots are registered with a [Skype for Business Online tenant](https://msdn.microsoft.com/en-us/skype/Skype-For-Business-Bot-Framework/docs/overview) by a Tenant Administrator.
+
+> [!TIP]
+> To view the status of a review, open the bot in the [developer portal](https://dev.botframework.com/) and click **Channels**.
+> If the bot is not approved, the result will link to the reason why. After making the required changes, resubmit the bot for review.
