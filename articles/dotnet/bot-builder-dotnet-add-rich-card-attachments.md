@@ -114,7 +114,7 @@ This code example shows how to create a reply message that contains a Sign-in ca
 The Adaptive Card can can contain any combination of text, speech, images, buttons, and input fields. 
 Adaptive Cards are created using the JSON format specified in <a href="https://github.com/Microsoft/AdaptiveCards" target="_blank">Adaptive Cards</a>, which gives you full control over card content and format. 
 
-To create an Adaptive Card using .NET, install the `AdaptiveCards` NuGet package. Then, leverage the information in the <a href="https://github.com/Microsoft/AdaptiveCards" target="_blank">Adaptive Cards</a> repository to understand Adaptive Card schema, explore Adaptive Card elements, and see JSON samples that can be used to create cards of varying composition and complexity. Additionally, you can use the <a href="https://microsoft.github.io/AdaptiveCards" target="_blank">Interactive Visualizer</a> to design Adaptive Card payloads and preview card output.
+To create an Adaptive Card using .NET, install the `Microsoft.AdaptiveCards` NuGet package. Then, leverage the information in the <a href="https://github.com/Microsoft/AdaptiveCards" target="_blank">Adaptive Cards</a> repository to understand Adaptive Card schema, explore Adaptive Card elements, and see JSON samples that can be used to create cards of varying composition and complexity. Additionally, you can use the <a href="https://microsoft.github.io/AdaptiveCards" target="_blank">Interactive Visualizer</a> to design Adaptive Card payloads and preview card output.
 
 This code example shows how to create a message that contains an Adaptive Card for a calendar reminder: 
 
