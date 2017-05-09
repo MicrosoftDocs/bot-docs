@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.JwtTokenRefresher" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.5.3.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Net.Http.DelegatingHandler</BaseTypeName>
@@ -21,7 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.JwtTokenRefresher.#ctor(Microsoft.Bot.Connector.MicrosoftAppCredentials)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentials" Type="Microsoft.Bot.Connector.MicrosoftAppCredentials" />
@@ -38,7 +38,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.JwtTokenRefresher.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

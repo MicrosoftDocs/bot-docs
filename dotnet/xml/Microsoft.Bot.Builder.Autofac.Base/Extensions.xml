@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Autofac.Base.Extensions" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
-    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,7 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterAdapterChain``1(Autofac.ContainerBuilder,System.Type[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Autofac.Builder.IRegistrationBuilder&lt;TLimit,Autofac.Builder.SimpleActivatorData,Autofac.Builder.SingleRegistrationStyle&gt;</ReturnType>
@@ -59,7 +59,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterKeyedType``2(Autofac.ContainerBuilder)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Autofac.Builder.IRegistrationBuilder&lt;TImplementer,Autofac.Builder.ConcreteReflectionActivatorData,Autofac.Builder.SingleRegistrationStyle&gt;</ReturnType>

@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.Binding" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,7 +28,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binding.#ctor(System.Reflection.MethodBase,System.Object,System.Object[])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="method" Type="System.Reflection.MethodBase" />
@@ -49,7 +49,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.Binding.arguments" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object[]</ReturnType>
@@ -65,7 +65,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binding.Equals(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -86,7 +86,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binding.GetHashCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -104,7 +104,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.Binding.instance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -120,7 +120,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binding.MakeArguments(System.Reflection.MethodBase,System.Collections.Generic.IReadOnlyList{System.Object},System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object[]</ReturnType>
@@ -145,7 +145,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.Binding.method" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodBase</ReturnType>
@@ -161,7 +161,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binding.Microsoft#Bot#Builder#Scorables#Internals#IBinding#InvokeAsync(System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -182,7 +182,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Scorables.Internals.Binding.Microsoft#Bot#Builder#Scorables#Internals#IBinding#Method" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodBase</ReturnType>
@@ -199,7 +199,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binding.System#IEquatable&lt;Microsoft#Bot#Builder#Scorables#Internals#Binding&gt;#Equals(Microsoft.Bot.Builder.Scorables.Internals.Binding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -220,7 +220,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binding.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

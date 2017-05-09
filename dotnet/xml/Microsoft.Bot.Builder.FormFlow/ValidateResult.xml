@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.ValidateResult" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +26,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.ValidateResult.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -40,7 +40,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ValidateResult.Choices" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.FormFlow.Choice&gt;</ReturnType>
@@ -58,7 +58,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ValidateResult.Feedback" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -74,7 +74,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ValidateResult.FeedbackCard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt</ReturnType>
@@ -92,7 +92,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ValidateResult.IsValid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -108,7 +108,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ValidateResult.Value" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>

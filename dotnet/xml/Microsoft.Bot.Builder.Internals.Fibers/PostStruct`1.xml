@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -29,7 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1.#ctor(Microsoft.Bot.Builder.Internals.Fibers.IPost{System.Object})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="postBoxed" Type="Microsoft.Bot.Builder.Internals.Fibers.IPost&lt;System.Object&gt;" />
@@ -46,7 +46,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1.Microsoft#Bot#Builder#Internals#Fibers#IPost&lt;T&gt;#Post(`0)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

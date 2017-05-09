@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.LuisActionDialog" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,6 +14,11 @@
       <InterfaceName>Microsoft.Bot.Builder.Dialogs.IDialog&lt;Microsoft.Bot.Builder.Luis.Models.LuisResult&gt;</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Action binding in LUIS should be replaced with code.")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             The dialog wrapping Luis dialog feature.
@@ -27,7 +32,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisActionDialog.#ctor(Microsoft.Bot.Builder.Luis.ILuisService,System.String,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="luisService" Type="Microsoft.Bot.Builder.Luis.ILuisService" />
@@ -50,7 +55,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisActionDialog.MessageReceivedAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Connector.IMessageActivity})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -78,7 +83,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisActionDialog.StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

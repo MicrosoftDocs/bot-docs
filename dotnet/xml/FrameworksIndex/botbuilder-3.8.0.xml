@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Framework Name="botbuilder-3.5.5">
+<Framework Name="botbuilder-3.8.0">
   <Namespace Name="Microsoft.Bot.Builder.Autofac.Base">
     <Type Name="Microsoft.Bot.Builder.Autofac.Base.Extensions" Id="T:Microsoft.Bot.Builder.Autofac.Base.Extensions">
       <Member Id="M:Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterAdapterChain``1(Autofac.ContainerBuilder,System.Type[])" />
@@ -107,33 +107,37 @@
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptAttachment.ContentTypes" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.PromptDialog/PromptChoice`1" Id="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1.#ctor(Microsoft.Bot.Builder.Dialogs.PromptOptions{`0})" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IEnumerable{System.String})" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1.ScoreMatch(`0,System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1.#ctor(Microsoft.Bot.Builder.Dialogs.IPromptOptions{`0},System.Boolean,System.Boolean,System.Boolean,System.Double)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1.#ctor(System.Collections.Generic.IDictionary{`0,System.Collections.Generic.IEnumerable{`0}},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Double)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Double)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1.TryParse(Microsoft.Bot.Connector.IMessageActivity,`0@)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.PromptDialog/PromptConfirm" Id="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.No" />
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.Yes" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.#ctor(Microsoft.Bot.Builder.Dialogs.PromptOptions{System.String})" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.#ctor(System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.#ctor(Microsoft.Bot.Builder.Dialogs.IPromptOptions{System.String},System.String[][])" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.#ctor(System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.String[],System.String[][])" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.TryParse(Microsoft.Bot.Connector.IMessageActivity,System.Boolean@)" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.DefaultRetry" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.Options" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.Patterns" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.PromptDialog/PromptDouble" Id="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble.#ctor(Microsoft.Bot.Builder.Dialogs.PromptOptions{System.Double})" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble.#ctor(System.String,System.String,System.Int32)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble.#ctor(Microsoft.Bot.Builder.Dialogs.PromptOptions{System.Double},System.Nullable{System.Double},System.Nullable{System.Double})" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble.#ctor(System.String,System.String,System.Int32,System.String,System.Nullable{System.Double},System.Nullable{System.Double})" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble.TryParse(Microsoft.Bot.Connector.IMessageActivity,System.Double@)" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble.Max" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble.Min" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.PromptDialog/PromptInt64" Id="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.#ctor(Microsoft.Bot.Builder.Dialogs.PromptOptions{System.Int64})" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.#ctor(System.String,System.String,System.Int32)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.#ctor(Microsoft.Bot.Builder.Dialogs.PromptOptions{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64})" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.#ctor(System.String,System.String,System.Int32,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64})" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.TryParse(Microsoft.Bot.Connector.IMessageActivity,System.Int64@)" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.Max" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.Min" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.PromptDialog/PromptString" Id="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptString">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptString.#ctor(Microsoft.Bot.Builder.Dialogs.PromptOptions{System.String})" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptString.#ctor(Microsoft.Bot.Builder.Dialogs.IPromptOptions{System.String})" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptString.#ctor(System.String,System.String,System.Int32)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptString.TryParse(Microsoft.Bot.Connector.IMessageActivity,System.String@)" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptString.DefaultRetry" />
@@ -265,6 +269,8 @@
       <Member Id="M:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2.Scope.#ctor(System.Text.RegularExpressions.Regex,System.Text.RegularExpressions.Match,Microsoft.Bot.Builder.Scorables.Internals.IResolver)" />
       <Member Id="M:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2.Scope.TryResolve(System.Type,System.Object,System.Object@)" />
     </Type>
+    <Type Name="Microsoft.Bot.Connector.BotAuthenticator/EndorsementsValidator" Id="T:Microsoft.Bot.Connector.BotAuthenticator.EndorsementsValidator" />
+    <Type Name="Microsoft.Bot.Connector.JwtTokenExtractor/EndorsementsValidator" Id="T:Microsoft.Bot.Connector.JwtTokenExtractor.EndorsementsValidator" />
     <Type Name="Microsoft.Bot.Connector.MicrosoftAppCredentials/OAuthException" Id="T:Microsoft.Bot.Connector.MicrosoftAppCredentials.OAuthException">
       <Member Id="M:Microsoft.Bot.Connector.MicrosoftAppCredentials.OAuthException.#ctor(System.String,System.Exception)" />
     </Type>
@@ -336,8 +342,41 @@
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Chain.WithScorable``3(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Scorables.IScorable{``1,``2})" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.ChannelCapability" Id="T:Microsoft.Bot.Builder.Dialogs.ChannelCapability">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.ChannelCapability.#ctor(System.Boolean)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.ChannelCapability.SupportButtons" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.ChannelCapability.#ctor(Microsoft.Bot.Builder.Dialogs.IAddress)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.ChannelCapability.NeedsInputHint" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.ChannelCapability.SupportsKeyboards(System.Int32)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.ChannelCapability.SupportsSpeak" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.ChannelCapabilityEx" Id="T:Microsoft.Bot.Builder.Dialogs.ChannelCapabilityEx">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.ChannelCapabilityEx.ShouldSetInputHint(Microsoft.Bot.Builder.Dialogs.IChannelCapability,Microsoft.Bot.Connector.IMessageActivity)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.ChannelIds" Id="T:Microsoft.Bot.Builder.Dialogs.ChannelIds">
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Console" />
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Cortana" />
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Directline" />
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Email" />
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Emulator" />
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Facebook" />
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Groupme" />
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Kik" />
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Msteams" />
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Skype" />
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Slack" />
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Sms" />
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Telegram" />
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Webchat" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.ChannelIds.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.ChronoDuration" Id="T:Microsoft.Bot.Builder.Dialogs.ChronoDuration">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.ChronoDuration.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.ChronoDuration.Entity" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.ChronoDuration.Resolution" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.ChronoDurationResolution" Id="T:Microsoft.Bot.Builder.Dialogs.ChronoDurationResolution">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.ChronoDurationResolution.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.ChronoDurationResolution.End" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.ChronoDurationResolution.ResolutionType" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.ChronoDurationResolution.Start" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.CommandDialog`1" Id="T:Microsoft.Bot.Builder.Dialogs.CommandDialog`1">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.#ctor" />
@@ -349,10 +388,11 @@
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.ContextualSelector`2" Id="T:Microsoft.Bot.Builder.Dialogs.ContextualSelector`2" />
     <Type Name="Microsoft.Bot.Builder.Dialogs.Conversation" Id="T:Microsoft.Bot.Builder.Dialogs.Conversation">
-      <Member Id="F:Microsoft.Bot.Builder.Dialogs.Conversation.Container" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Conversation.ResumeAsync(Microsoft.Bot.Builder.Dialogs.ResumptionCookie,Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Conversation.ResumeAsync(Microsoft.Bot.Connector.ConversationReference,Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Conversation.SendAsync(Microsoft.Bot.Connector.IMessageActivity,System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{System.Object}},System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Conversation.UpdateContainer(System.Action{Autofac.ContainerBuilder})" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Conversation.Container" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer" Id="T:Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer.#ctor" />
@@ -370,10 +410,6 @@
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.DeleteProfileScorable.PostAsync(Microsoft.Bot.Connector.IActivity,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.DeleteProfileScorable.PrepareAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)" />
     </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.DetectChannelCapability" Id="T:Microsoft.Bot.Builder.Dialogs.DetectChannelCapability">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.DetectChannelCapability.#ctor(Microsoft.Bot.Builder.Dialogs.IAddress)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.DetectChannelCapability.Detect" />
-    </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.DialogStackException" Id="T:Microsoft.Bot.Builder.Dialogs.DialogStackException">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.DialogStackException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.DialogStackException.#ctor(System.String,System.Exception)" />
@@ -387,13 +423,26 @@
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.DispatchDialog`1.MakeServices" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.DispatchDialog`1.StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)" />
     </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.EndConversationEvent" Id="T:Microsoft.Bot.Builder.Dialogs.EndConversationEvent">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.EndConversationEvent.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.EndConversationEvent.MakeScorable" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.EndConversationEvent.Code" />
+    </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Extensions" Id="T:Microsoft.Bot.Builder.Dialogs.Extensions">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Extensions.AddHeroCard``1(Microsoft.Bot.Connector.IMessageActivity,System.String,System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{System.String})" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Extensions.AddKeyboardCard``1(Microsoft.Bot.Connector.IMessageActivity,System.String,System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{System.String})" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Extensions.EndConversation(Microsoft.Bot.Builder.Dialogs.IDialogContext,System.String)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Extensions.Forward``1(Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack,Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Extensions.Get``1(Microsoft.Bot.Builder.Dialogs.IBotDataBag,System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Extensions.GetValue``1(Microsoft.Bot.Builder.Dialogs.IBotDataBag,System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Extensions.GetValueOrDefault``1(Microsoft.Bot.Builder.Dialogs.IBotDataBag,System.String,``0)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Extensions.GZipSerialize(Microsoft.Bot.Builder.Dialogs.ResumptionCookie)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Extensions.PostAsync(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.String,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Extensions.RecognizeDouble(Microsoft.Bot.Builder.Dialogs.IPromptRecognizer,Microsoft.Bot.Connector.IMessageActivity)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Extensions.RecognizeDoubleInRange(Microsoft.Bot.Builder.Dialogs.IPromptRecognizer,Microsoft.Bot.Connector.IMessageActivity,System.Nullable{System.Double},System.Nullable{System.Double})" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Extensions.RecognizeInteger(Microsoft.Bot.Builder.Dialogs.IPromptRecognizer,Microsoft.Bot.Connector.IMessageActivity)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Extensions.RecognizeIntegerInRange(Microsoft.Bot.Builder.Dialogs.IPromptRecognizer,Microsoft.Bot.Connector.IMessageActivity,System.Nullable{System.Int64},System.Nullable{System.Int64})" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Extensions.SayAsync(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.String,System.String,Microsoft.Bot.Builder.Dialogs.MessageOptions,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Extensions.Wait(Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack,Microsoft.Bot.Builder.Dialogs.ResumeAfter{Microsoft.Bot.Connector.IMessageActivity})" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.IAddress" Id="T:Microsoft.Bot.Builder.Dialogs.IAddress">
@@ -423,10 +472,9 @@
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.ICase`2.Selector" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.IChannelCapability" Id="T:Microsoft.Bot.Builder.Dialogs.IChannelCapability">
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.IChannelCapability.SupportButtons" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.IDetectChannelCapability" Id="T:Microsoft.Bot.Builder.Dialogs.IDetectChannelCapability">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.IDetectChannelCapability.Detect" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.IChannelCapability.NeedsInputHint" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.IChannelCapability.SupportsKeyboards(System.Int32)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.IChannelCapability.SupportsSpeak" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.IDialog" Id="T:Microsoft.Bot.Builder.Dialogs.IDialog" />
     <Type Name="Microsoft.Bot.Builder.Dialogs.IDialog`1" Id="T:Microsoft.Bot.Builder.Dialogs.IDialog`1">
@@ -438,6 +486,43 @@
     <Type Name="Microsoft.Bot.Builder.Dialogs.InvalidIntentHandlerException" Id="T:Microsoft.Bot.Builder.Dialogs.InvalidIntentHandlerException">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.InvalidIntentHandlerException.Method" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.InvalidIntentHandlerException.#ctor(System.String,System.Reflection.MethodInfo)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.IPromptOptions`1" Id="T:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1">
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1.Attempts" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1.Choices" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1.DefaultRetry" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1.DefaultRetrySpeak" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1.Descriptions" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1.Options" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1.Prompt" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1.PromptStyler" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1.Recognizer" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1.Retry" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1.RetrySpeak" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1.Speak" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1.TooManyAttempts" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions" Id="T:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions">
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions.ExcludeAction" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions.ExcludeValue" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions" Id="T:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions">
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions.IntegerOnly" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions.MaxValue" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions.MinValue" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.IPromptRecognizer" Id="T:Microsoft.Bot.Builder.Dialogs.IPromptRecognizer">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.IPromptRecognizer.RecognizeBooleans(Microsoft.Bot.Connector.IMessageActivity)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.IPromptRecognizer.RecognizeChoices``1(Microsoft.Bot.Connector.IMessageActivity,System.Collections.Generic.IReadOnlyDictionary{``0,System.Collections.Generic.IReadOnlyList{``0}},Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.IPromptRecognizer.RecognizeLocalizedChoices(Microsoft.Bot.Connector.IMessageActivity,System.String,System.Resources.ResourceManager,Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.IPromptRecognizer.RecognizeLocalizedRegExp(Microsoft.Bot.Connector.IMessageActivity,System.String,System.Resources.ResourceManager)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.IPromptRecognizer.RecognizeNumbers(Microsoft.Bot.Connector.IMessageActivity,Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.IPromptRecognizer.RecognizeOrdinals(Microsoft.Bot.Connector.IMessageActivity)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.IPromptRecognizer.RecognizeTimes(Microsoft.Bot.Connector.IMessageActivity)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.IPromptRecognizeValuesOptions" Id="T:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeValuesOptions">
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeValuesOptions.AllowPartialMatches" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeValuesOptions.MaxTokenDistance" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.LuisActionDialog" Id="T:Microsoft.Bot.Builder.Dialogs.LuisActionDialog">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.LuisActionDialog.#ctor(Microsoft.Bot.Builder.Luis.ILuisService,System.String,System.String)" />
@@ -457,6 +542,7 @@
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.MakeLuisActionDialog(Microsoft.Bot.Builder.Luis.ILuisService,System.String,System.String)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.MakeServicesFromAttributes" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.MessageReceived(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Connector.IMessageActivity})" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.ModifyLuisRequest(Microsoft.Bot.Builder.Luis.LuisRequest)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.LuisIntentAttribute" Id="T:Microsoft.Bot.Builder.Dialogs.LuisIntentAttribute">
@@ -470,6 +556,14 @@
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.LuisServiceResult.LuisService" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.LuisServiceResult.Result" />
     </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.MessageOptions" Id="T:Microsoft.Bot.Builder.Dialogs.MessageOptions">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.MessageOptions.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.MessageOptions.AttachmentLayout" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.MessageOptions.Attachments" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.MessageOptions.Entities" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.MessageOptions.InputHint" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.MessageOptions.TextFormat" />
+    </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.MultipleResumeHandlerException" Id="T:Microsoft.Bot.Builder.Dialogs.MultipleResumeHandlerException">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.MultipleResumeHandlerException.#ctor(System.Exception)" />
     </Type>
@@ -479,12 +573,13 @@
     <Type Name="Microsoft.Bot.Builder.Dialogs.PromptDialog" Id="T:Microsoft.Bot.Builder.Dialogs.PromptDialog">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.#ctor" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Attachment(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.Attachment}},System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Choice``1(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},Microsoft.Bot.Builder.Dialogs.PromptOptions{``0})" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Choice``1(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},Microsoft.Bot.Builder.Dialogs.IPromptOptions{``0},System.Boolean,System.Boolean,System.Boolean,System.Double)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Choice``1(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},System.Collections.Generic.IDictionary{``0,System.Collections.Generic.IEnumerable{``0}},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Double)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Choice``1(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IEnumerable{System.String})" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Confirm(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Boolean},Microsoft.Bot.Builder.Dialogs.PromptOptions{System.String})" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Confirm(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Boolean},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Number(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Double},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Number(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Int64},System.String,System.String,System.Int32)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Confirm(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Boolean},Microsoft.Bot.Builder.Dialogs.IPromptOptions{System.String},System.String[][])" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Confirm(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Boolean},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.String[],System.String[][])" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Number(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Double},System.String,System.String,System.Int32,System.String,System.Nullable{System.Double},System.Nullable{System.Double})" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Number(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Int64},System.String,System.String,System.Int32,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64})" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Text(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.String},System.String,System.String,System.Int32)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.PromptException" Id="T:Microsoft.Bot.Builder.Dialogs.PromptException">
@@ -492,16 +587,61 @@
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptException.#ctor(System.String)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.PromptOptions`1" Id="T:Microsoft.Bot.Builder.Dialogs.PromptOptions`1">
-      <Member Id="F:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Descriptions" />
-      <Member Id="F:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Options" />
-      <Member Id="F:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Prompt" />
-      <Member Id="F:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.PromptStyler" />
-      <Member Id="F:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Retry" />
-      <Member Id="F:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.TooManyAttempts" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.#ctor(System.String,System.String,System.String,System.Collections.Generic.IReadOnlyList{`0},System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyler,System.Collections.Generic.IReadOnlyList{System.String})" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.#ctor(System.String,System.String,System.String,System.Collections.Generic.IReadOnlyList{`0},System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyler,System.Collections.Generic.IReadOnlyList{System.String},System.String,System.String,Microsoft.Bot.Builder.Dialogs.IPromptRecognizer)" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Attempts" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Choices" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.DefaultRetry" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.DefaultRetrySpeak" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.DefaultTooManyAttempts" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Descriptions" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Options" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Prompt" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.PromptStyler" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Recognizer" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Retry" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.RetrySpeak" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Speak" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.TooManyAttempts" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.PromptOptionsWithSynonyms`1" Id="T:Microsoft.Bot.Builder.Dialogs.PromptOptionsWithSynonyms`1">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptOptionsWithSynonyms`1.#ctor(System.String,System.String,System.String,System.Collections.Generic.IReadOnlyDictionary{`0,System.Collections.Generic.IReadOnlyList{`0}},System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyler,System.Collections.Generic.IReadOnlyList{System.String},System.String,System.String,Microsoft.Bot.Builder.Dialogs.IPromptRecognizer)" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptionsWithSynonyms`1.Attempts" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptionsWithSynonyms`1.Choices" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptionsWithSynonyms`1.DefaultRetry" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptionsWithSynonyms`1.DefaultRetrySpeak" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptionsWithSynonyms`1.DefaultTooManyAttempts" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptionsWithSynonyms`1.Descriptions" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptionsWithSynonyms`1.Options" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptionsWithSynonyms`1.Prompt" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptionsWithSynonyms`1.PromptStyler" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptionsWithSynonyms`1.Recognizer" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptionsWithSynonyms`1.Retry" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptionsWithSynonyms`1.RetrySpeak" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptionsWithSynonyms`1.Speak" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptOptionsWithSynonyms`1.TooManyAttempts" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.PromptRecognizeChoicesOptions" Id="T:Microsoft.Bot.Builder.Dialogs.PromptRecognizeChoicesOptions">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizeChoicesOptions.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptRecognizeChoicesOptions.AllowPartialMatches" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptRecognizeChoicesOptions.ExcludeAction" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptRecognizeChoicesOptions.ExcludeValue" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptRecognizeChoicesOptions.MaxTokenDistance" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.PromptRecognizeNumbersOptions" Id="T:Microsoft.Bot.Builder.Dialogs.PromptRecognizeNumbersOptions">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizeNumbersOptions.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptRecognizeNumbersOptions.IntegerOnly" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptRecognizeNumbersOptions.MaxValue" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptRecognizeNumbersOptions.MinValue" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.PromptRecognizer" Id="T:Microsoft.Bot.Builder.Dialogs.PromptRecognizer">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeBooleans(Microsoft.Bot.Connector.IMessageActivity)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeChoices``1(Microsoft.Bot.Connector.IMessageActivity,System.Collections.Generic.IReadOnlyDictionary{``0,System.Collections.Generic.IReadOnlyList{``0}},Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeLocalizedChoices(Microsoft.Bot.Connector.IMessageActivity,System.String,System.Resources.ResourceManager,Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeLocalizedRegExp(Microsoft.Bot.Connector.IMessageActivity,System.String,System.Resources.ResourceManager)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeNumbers(Microsoft.Bot.Connector.IMessageActivity,Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeOrdinals(Microsoft.Bot.Connector.IMessageActivity)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeTimes(Microsoft.Bot.Connector.IMessageActivity)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.PromptStyle" Id="T:Microsoft.Bot.Builder.Dialogs.PromptStyle">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.PromptStyle.Auto" />
@@ -514,9 +654,14 @@
     <Type Name="Microsoft.Bot.Builder.Dialogs.PromptStyler" Id="T:Microsoft.Bot.Builder.Dialogs.PromptStyler">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.PromptStyler.PromptStyle" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptStyler.#ctor(Microsoft.Bot.Builder.Dialogs.PromptStyle)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply(Microsoft.Bot.Connector.IMessageActivity@,System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply``1(Microsoft.Bot.Connector.IMessageActivity@,System.String,System.Collections.Generic.IReadOnlyList{``0},Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IReadOnlyList{System.String})" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply``1(Microsoft.Bot.Connector.IMessageActivity@,System.String,System.Collections.Generic.IReadOnlyList{``0},System.Collections.Generic.IReadOnlyList{System.String})" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply(Microsoft.Bot.Connector.IMessageActivity@,System.String,System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply``1(Microsoft.Bot.Connector.IMessageActivity@,System.String,System.Collections.Generic.IReadOnlyList{``0},Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IReadOnlyList{System.String},System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply``1(Microsoft.Bot.Connector.IMessageActivity@,System.String,System.Collections.Generic.IReadOnlyList{``0},System.Collections.Generic.IReadOnlyList{System.String},System.String)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1" Id="T:Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1.Entity" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1.Score" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.RegexCase`1" Id="T:Microsoft.Bot.Builder.Dialogs.RegexCase`1">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.RegexCase`1.#ctor(System.Text.RegularExpressions.Regex,Microsoft.Bot.Builder.Dialogs.ContextualSelector{System.String,`0})" />
@@ -550,6 +695,11 @@
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.AlwaysSendDirect_BotToUser.#ctor(Microsoft.Bot.Connector.IMessageActivity,Microsoft.Bot.Connector.IConnectorClient)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.AlwaysSendDirect_BotToUser.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#MakeMessage" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.AlwaysSendDirect_BotToUser.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#PostAsync(Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.Internals.AutoInputHint_BotToUser" Id="T:Microsoft.Bot.Builder.Dialogs.Internals.AutoInputHint_BotToUser">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.AutoInputHint_BotToUser.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.AutoInputHint_BotToUser.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#MakeMessage" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.AutoInputHint_BotToUser.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#PostAsync(Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream" Id="T:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream.#ctor(Microsoft.Bot.Builder.Dialogs.IBotDataBag,System.String)" />
@@ -672,7 +822,7 @@
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManager.Microsoft#Bot#Builder#Dialogs#Internals#IDialogTasks#DialogTasks" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader" Id="T:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IBotData,Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IBotData,Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager,Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.FlushAsync(System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.LoadAsync(System.Threading.CancellationToken)" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.ConversationData" />
@@ -739,11 +889,20 @@
     <Type Name="Microsoft.Bot.Builder.Dialogs.Internals.IMessageActivityMapper" Id="T:Microsoft.Bot.Builder.Dialogs.Internals.IMessageActivityMapper">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.IMessageActivityMapper.Map(Microsoft.Bot.Connector.IMessageActivity)" />
     </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue" Id="T:Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue.DrainQueueAsync(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue.QueueMessageAsync(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)" />
+    </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Internals.InMemoryDataStore" Id="T:Microsoft.Bot.Builder.Dialogs.Internals.InMemoryDataStore">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.InMemoryDataStore.#ctor" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.InMemoryDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore&lt;Microsoft#Bot#Connector#BotData&gt;#FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.InMemoryDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore&lt;Microsoft#Bot#Connector#BotData&gt;#LoadAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.InMemoryDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore&lt;Microsoft#Bot#Connector#BotData&gt;#SaveAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.Internals.InputHintQueue" Id="T:Microsoft.Bot.Builder.Dialogs.Internals.InputHintQueue">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.InputHintQueue.#ctor(Microsoft.Bot.Builder.Dialogs.IChannelCapability,System.Func{Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack})" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.InputHintQueue.Microsoft#Bot#Builder#Dialogs#Internals#IMessageQueue#DrainQueueAsync(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.InputHintQueue.Microsoft#Bot#Builder#Dialogs#Internals#IMessageQueue#QueueMessageAsync(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" Id="T:Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot.PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)" />
@@ -790,11 +949,15 @@
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2" Id="T:Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.promptOptions" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.#ctor(Microsoft.Bot.Builder.Dialogs.PromptOptions{`1})" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.MakePrompt(Microsoft.Bot.Builder.Dialogs.IDialogContext,System.String,System.Collections.Generic.IReadOnlyList{`1},System.Collections.Generic.IReadOnlyList{System.String})" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.#ctor(Microsoft.Bot.Builder.Dialogs.IPromptOptions{`1})" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.MakePrompt(Microsoft.Bot.Builder.Dialogs.IDialogContext,System.String,System.Collections.Generic.IReadOnlyList{`1},System.Collections.Generic.IReadOnlyList{System.String},System.String)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.MessageReceivedAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Connector.IMessageActivity})" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.Microsoft#Bot#Builder#Dialogs#IDialog&lt;T&gt;#StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.TryParse(Microsoft.Bot.Connector.IMessageActivity,`0@)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.Internals.QueueDrainingDialogTask" Id="T:Microsoft.Bot.Builder.Dialogs.Internals.QueueDrainingDialogTask">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.QueueDrainingDialogTask.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot,Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.QueueDrainingDialogTask.Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask" Id="T:Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask,System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{System.Object}})" />
@@ -812,6 +975,10 @@
     <Type Name="Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture" Id="T:Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot,Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture.Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.Internals.SetLocalTimestampMapper" Id="T:Microsoft.Bot.Builder.Dialogs.Internals.SetLocalTimestampMapper">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.SetLocalTimestampMapper.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.SetLocalTimestampMapper.Map(Microsoft.Bot.Connector.IMessageActivity)" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Bot.Builder.FormFlow">
@@ -1730,6 +1897,7 @@
       <Member Id="M:Microsoft.Bot.Builder.Luis.Extensions.BuildUri(Microsoft.Bot.Builder.Luis.ILuisService,System.String)" />
       <Member Id="M:Microsoft.Bot.Builder.Luis.Extensions.Next(Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart)" />
       <Member Id="M:Microsoft.Bot.Builder.Luis.Extensions.ParseResolutions(Microsoft.Bot.Builder.Luis.IResolutionParser,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation})" />
+      <Member Id="M:Microsoft.Bot.Builder.Luis.Extensions.QueryAsync(Microsoft.Bot.Builder.Luis.ILuisService,Microsoft.Bot.Builder.Luis.LuisRequest,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Luis.Extensions.QueryAsync(Microsoft.Bot.Builder.Luis.ILuisService,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Luis.Extensions.TryFindEntity(Microsoft.Bot.Builder.Luis.Models.LuisResult,System.String,Microsoft.Bot.Builder.Luis.Models.EntityRecommendation@)" />
     </Type>
@@ -1744,6 +1912,7 @@
       <Member Id="M:Microsoft.Bot.Builder.Luis.IEntityToType.TryMapToTimeSpan(System.DateTime,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},System.TimeSpan@)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Luis.ILuisModel" Id="T:Microsoft.Bot.Builder.Luis.ILuisModel">
+      <Member Id="M:Microsoft.Bot.Builder.Luis.ILuisModel.ModifyRequest(Microsoft.Bot.Builder.Luis.LuisRequest)" />
       <Member Id="P:Microsoft.Bot.Builder.Luis.ILuisModel.ApiVersion" />
       <Member Id="P:Microsoft.Bot.Builder.Luis.ILuisModel.ModelID" />
       <Member Id="P:Microsoft.Bot.Builder.Luis.ILuisModel.SubscriptionKey" />
@@ -1751,40 +1920,50 @@
     </Type>
     <Type Name="Microsoft.Bot.Builder.Luis.ILuisService" Id="T:Microsoft.Bot.Builder.Luis.ILuisService">
       <Member Id="M:Microsoft.Bot.Builder.Luis.ILuisService.BuildUri(Microsoft.Bot.Builder.Luis.LuisRequest)" />
+      <Member Id="M:Microsoft.Bot.Builder.Luis.ILuisService.ModifyRequest(Microsoft.Bot.Builder.Luis.LuisRequest)" />
       <Member Id="M:Microsoft.Bot.Builder.Luis.ILuisService.QueryAsync(System.Uri,System.Threading.CancellationToken)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Luis.IResolutionParser" Id="T:Microsoft.Bot.Builder.Luis.IResolutionParser">
-      <Member Id="M:Microsoft.Bot.Builder.Luis.IResolutionParser.TryParse(System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.Bot.Builder.Luis.Resolution@)" />
+      <Member Id="M:Microsoft.Bot.Builder.Luis.IResolutionParser.TryParse(System.Collections.Generic.IDictionary{System.String,System.Object},Microsoft.Bot.Builder.Luis.Resolution@)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Luis.LuisApiVersion" Id="T:Microsoft.Bot.Builder.Luis.LuisApiVersion">
       <Member Id="F:Microsoft.Bot.Builder.Luis.LuisApiVersion.V1" />
       <Member Id="F:Microsoft.Bot.Builder.Luis.LuisApiVersion.V2" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Luis.LuisModelAttribute" Id="T:Microsoft.Bot.Builder.Luis.LuisModelAttribute">
-      <Member Id="F:Microsoft.Bot.Builder.Luis.LuisModelAttribute.LuisEndpoints" />
-      <Member Id="M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.#ctor(System.String,System.String,Microsoft.Bot.Builder.Luis.LuisApiVersion)" />
+      <Member Id="M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.#ctor(System.String,System.String,Microsoft.Bot.Builder.Luis.LuisApiVersion,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean)" />
       <Member Id="M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Equals(Microsoft.Bot.Builder.Luis.ILuisModel)" />
       <Member Id="M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Equals(System.Object)" />
       <Member Id="M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.GetHashCode" />
+      <Member Id="M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.ModifyRequest(Microsoft.Bot.Builder.Luis.LuisRequest)" />
       <Member Id="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.ApiVersion" />
+      <Member Id="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Domain" />
+      <Member Id="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Log" />
       <Member Id="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.ModelID" />
+      <Member Id="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.SpellCheck" />
+      <Member Id="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Staging" />
       <Member Id="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.SubscriptionKey" />
       <Member Id="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.UriBase" />
+      <Member Id="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Verbose" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Luis.LuisRequest" Id="T:Microsoft.Bot.Builder.Luis.LuisRequest">
-      <Member Id="F:Microsoft.Bot.Builder.Luis.LuisRequest.AllowSampling" />
       <Member Id="F:Microsoft.Bot.Builder.Luis.LuisRequest.ContextId" />
+      <Member Id="F:Microsoft.Bot.Builder.Luis.LuisRequest.ExtraParameters" />
       <Member Id="F:Microsoft.Bot.Builder.Luis.LuisRequest.ForceSet" />
+      <Member Id="F:Microsoft.Bot.Builder.Luis.LuisRequest.Log" />
       <Member Id="F:Microsoft.Bot.Builder.Luis.LuisRequest.Query" />
+      <Member Id="F:Microsoft.Bot.Builder.Luis.LuisRequest.SpellCheck" />
+      <Member Id="F:Microsoft.Bot.Builder.Luis.LuisRequest.Staging" />
       <Member Id="F:Microsoft.Bot.Builder.Luis.LuisRequest.TimezoneOffset" />
       <Member Id="F:Microsoft.Bot.Builder.Luis.LuisRequest.Verbose" />
-      <Member Id="M:Microsoft.Bot.Builder.Luis.LuisRequest.#ctor(System.String,System.Nullable{System.Double},System.String,System.Nullable{System.Boolean},System.String,System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.Luis.LuisRequest.#ctor(System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Double},System.Nullable{System.Boolean},System.String,System.String,System.String)" />
       <Member Id="M:Microsoft.Bot.Builder.Luis.LuisRequest.BuildUri(Microsoft.Bot.Builder.Luis.ILuisModel)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Luis.LuisService" Id="T:Microsoft.Bot.Builder.Luis.LuisService">
       <Member Id="M:Microsoft.Bot.Builder.Luis.LuisService.#ctor(Microsoft.Bot.Builder.Luis.ILuisModel)" />
       <Member Id="M:Microsoft.Bot.Builder.Luis.LuisService.Microsoft#Bot#Builder#Luis#ILuisService#BuildUri(Microsoft.Bot.Builder.Luis.LuisRequest)" />
       <Member Id="M:Microsoft.Bot.Builder.Luis.LuisService.Microsoft#Bot#Builder#Luis#ILuisService#QueryAsync(System.Uri,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Luis.LuisService.ModifyRequest(Microsoft.Bot.Builder.Luis.LuisRequest)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Luis.Resolution" Id="T:Microsoft.Bot.Builder.Luis.Resolution">
       <Member Id="M:Microsoft.Bot.Builder.Luis.Resolution.#ctor" />
@@ -1792,7 +1971,7 @@
     </Type>
     <Type Name="Microsoft.Bot.Builder.Luis.ResolutionParser" Id="T:Microsoft.Bot.Builder.Luis.ResolutionParser">
       <Member Id="M:Microsoft.Bot.Builder.Luis.ResolutionParser.#ctor" />
-      <Member Id="M:Microsoft.Bot.Builder.Luis.ResolutionParser.Microsoft#Bot#Builder#Luis#IResolutionParser#TryParse(System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.Bot.Builder.Luis.Resolution@)" />
+      <Member Id="M:Microsoft.Bot.Builder.Luis.ResolutionParser.Microsoft#Bot#Builder#Luis#IResolutionParser#TryParse(System.Collections.Generic.IDictionary{System.String,System.Object},Microsoft.Bot.Builder.Luis.Resolution@)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Luis.StrictEntityToType" Id="T:Microsoft.Bot.Builder.Luis.StrictEntityToType">
       <Member Id="M:Microsoft.Bot.Builder.Luis.StrictEntityToType.#ctor(Microsoft.Bot.Builder.Luis.IResolutionParser,Microsoft.Bot.Builder.Luis.ICalendarPlus)" />
@@ -1849,7 +2028,7 @@
     </Type>
     <Type Name="Microsoft.Bot.Builder.Luis.Models.EntityRecommendation" Id="T:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation">
       <Member Id="M:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.#ctor" />
-      <Member Id="M:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.#ctor(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Double},System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <Member Id="M:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.#ctor(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Double},System.Collections.Generic.IDictionary{System.String,System.Object})" />
       <Member Id="M:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Validate" />
       <Member Id="P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.EndIndex" />
       <Member Id="P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Entity" />
@@ -1888,6 +2067,7 @@
       <Member Id="M:Microsoft.Bot.Builder.Resource.Extensions.SplitList(System.String,System.String,System.String)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Resource.Resources" Id="T:Microsoft.Bot.Builder.Resource.Resources">
+      <Member Id="P:Microsoft.Bot.Builder.Resource.Resources.BooleanChoices" />
       <Member Id="P:Microsoft.Bot.Builder.Resource.Resources.CommandBack" />
       <Member Id="P:Microsoft.Bot.Builder.Resource.Resources.CommandBackHelp" />
       <Member Id="P:Microsoft.Bot.Builder.Resource.Resources.CommandBackTerms" />
@@ -1918,6 +2098,10 @@
       <Member Id="P:Microsoft.Bot.Builder.Resource.Resources.MatchNoPreference" />
       <Member Id="P:Microsoft.Bot.Builder.Resource.Resources.MatchYes" />
       <Member Id="P:Microsoft.Bot.Builder.Resource.Resources.Navigation" />
+      <Member Id="P:Microsoft.Bot.Builder.Resource.Resources.NumberExpression" />
+      <Member Id="P:Microsoft.Bot.Builder.Resource.Resources.NumberOrdinals" />
+      <Member Id="P:Microsoft.Bot.Builder.Resource.Resources.NumberReverseOrdinals" />
+      <Member Id="P:Microsoft.Bot.Builder.Resource.Resources.NumberTerms" />
       <Member Id="P:Microsoft.Bot.Builder.Resource.Resources.PromptRetry" />
       <Member Id="P:Microsoft.Bot.Builder.Resource.Resources.ResourceManager" />
       <Member Id="P:Microsoft.Bot.Builder.Resource.Resources.TemplateBool" />
@@ -2335,11 +2519,12 @@
     <Type Name="Microsoft.Bot.Connector.Activity" Id="T:Microsoft.Bot.Connector.Activity">
       <Member Id="F:Microsoft.Bot.Connector.Activity.ContentType" />
       <Member Id="M:Microsoft.Bot.Connector.Activity.#ctor" />
-      <Member Id="M:Microsoft.Bot.Connector.Activity.#ctor(System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ConversationAccount,Microsoft.Bot.Connector.ChannelAccount,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.ChannelAccount},System.Collections.Generic.IList{Microsoft.Bot.Connector.ChannelAccount},System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.Attachment},System.Collections.Generic.IList{Microsoft.Bot.Connector.Entity},System.Object,System.String,System.String,System.Object,System.String,Microsoft.Bot.Connector.ConversationReference)" />
+      <Member Id="M:Microsoft.Bot.Connector.Activity.#ctor(System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ConversationAccount,Microsoft.Bot.Connector.ChannelAccount,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.ChannelAccount},System.Collections.Generic.IList{Microsoft.Bot.Connector.ChannelAccount},System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,Microsoft.Bot.Connector.SuggestedActions,System.Collections.Generic.IList{Microsoft.Bot.Connector.Attachment},System.Collections.Generic.IList{Microsoft.Bot.Connector.Entity},System.Object,System.String,System.String,System.Object,System.String,Microsoft.Bot.Connector.ConversationReference,System.String)" />
       <Member Id="M:Microsoft.Bot.Connector.Activity.AsContactRelationUpdateActivity" />
       <Member Id="M:Microsoft.Bot.Connector.Activity.AsConversationUpdateActivity" />
       <Member Id="M:Microsoft.Bot.Connector.Activity.AsEndOfConversationActivity" />
       <Member Id="M:Microsoft.Bot.Connector.Activity.AsEventActivity" />
+      <Member Id="M:Microsoft.Bot.Connector.Activity.AsInstallationUpdateActivity" />
       <Member Id="M:Microsoft.Bot.Connector.Activity.AsInvokeActivity" />
       <Member Id="M:Microsoft.Bot.Connector.Activity.AsMessageActivity" />
       <Member Id="M:Microsoft.Bot.Connector.Activity.AsTypingActivity" />
@@ -2352,37 +2537,34 @@
       <Member Id="M:Microsoft.Bot.Connector.Activity.CreatePingActivity" />
       <Member Id="M:Microsoft.Bot.Connector.Activity.CreateReply(System.String,System.String)" />
       <Member Id="M:Microsoft.Bot.Connector.Activity.CreateTypingActivity" />
-      <Member Id="M:Microsoft.Bot.Connector.Activity.GetActivityType" />
       <Member Id="M:Microsoft.Bot.Connector.Activity.GetActivityType(System.String)" />
-      <Member Id="M:Microsoft.Bot.Connector.Activity.GetChannelData``1" />
       <Member Id="M:Microsoft.Bot.Connector.Activity.GetMentions" />
-      <Member Id="M:Microsoft.Bot.Connector.Activity.GetStateClient(Microsoft.Bot.Connector.MicrosoftAppCredentials,System.String,System.Net.Http.DelegatingHandler[])" />
-      <Member Id="M:Microsoft.Bot.Connector.Activity.GetStateClient(System.String,System.String,System.String,System.Net.Http.DelegatingHandler[])" />
       <Member Id="M:Microsoft.Bot.Connector.Activity.HasContent" />
       <Member Id="M:Microsoft.Bot.Connector.Activity.IsActivity(System.String)" />
-      <Member Id="M:Microsoft.Bot.Connector.Activity.MentionsId(System.String)" />
-      <Member Id="M:Microsoft.Bot.Connector.Activity.MentionsRecipient" />
-      <Member Id="M:Microsoft.Bot.Connector.Activity.RemoveMentionText(System.String)" />
-      <Member Id="M:Microsoft.Bot.Connector.Activity.RemoveRecipientMention" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.Action" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.AttachmentLayout" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.Attachments" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.ChannelData" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.ChannelId" />
+      <Member Id="P:Microsoft.Bot.Connector.Activity.Code" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.Conversation" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.Entities" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.From" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.HistoryDisclosed" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.Id" />
+      <Member Id="P:Microsoft.Bot.Connector.Activity.InputHint" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.Locale" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.LocalTimestamp" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.MembersAdded" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.MembersRemoved" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.Name" />
+      <Member Id="P:Microsoft.Bot.Connector.Activity.Properties" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.Recipient" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.RelatesTo" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.ReplyToId" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.ServiceUrl" />
+      <Member Id="P:Microsoft.Bot.Connector.Activity.Speak" />
+      <Member Id="P:Microsoft.Bot.Connector.Activity.SuggestedActions" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.Summary" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.Text" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.TextFormat" />
@@ -2391,12 +2573,26 @@
       <Member Id="P:Microsoft.Bot.Connector.Activity.Type" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.Value" />
     </Type>
+    <Type Name="Microsoft.Bot.Connector.ActivityExtensions" Id="T:Microsoft.Bot.Connector.ActivityExtensions">
+      <Member Id="M:Microsoft.Bot.Connector.ActivityExtensions.GetActivityType(Microsoft.Bot.Connector.IActivity)" />
+      <Member Id="M:Microsoft.Bot.Connector.ActivityExtensions.GetChannelData``1(Microsoft.Bot.Connector.IActivity)" />
+      <Member Id="M:Microsoft.Bot.Connector.ActivityExtensions.GetMentions(Microsoft.Bot.Connector.IMessageActivity)" />
+      <Member Id="M:Microsoft.Bot.Connector.ActivityExtensions.GetStateClient(Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Connector.MicrosoftAppCredentials,System.String,System.Net.Http.DelegatingHandler[])" />
+      <Member Id="M:Microsoft.Bot.Connector.ActivityExtensions.GetStateClient(Microsoft.Bot.Connector.IActivity,System.String,System.String,System.String,System.Net.Http.DelegatingHandler[])" />
+      <Member Id="M:Microsoft.Bot.Connector.ActivityExtensions.HasContent(Microsoft.Bot.Connector.IMessageActivity)" />
+      <Member Id="M:Microsoft.Bot.Connector.ActivityExtensions.MentionsId(Microsoft.Bot.Connector.IMessageActivity,System.String)" />
+      <Member Id="M:Microsoft.Bot.Connector.ActivityExtensions.MentionsRecipient(Microsoft.Bot.Connector.IMessageActivity)" />
+      <Member Id="M:Microsoft.Bot.Connector.ActivityExtensions.RemoveMentionText(Microsoft.Bot.Connector.IMessageActivity,System.String)" />
+      <Member Id="M:Microsoft.Bot.Connector.ActivityExtensions.RemoveRecipientMention(Microsoft.Bot.Connector.IMessageActivity)" />
+      <Member Id="M:Microsoft.Bot.Connector.ActivityExtensions.TryGetChannelData``1(Microsoft.Bot.Connector.IActivity,``0@)" />
+    </Type>
     <Type Name="Microsoft.Bot.Connector.ActivityTypes" Id="T:Microsoft.Bot.Connector.ActivityTypes">
       <Member Id="F:Microsoft.Bot.Connector.ActivityTypes.ContactRelationUpdate" />
       <Member Id="F:Microsoft.Bot.Connector.ActivityTypes.ConversationUpdate" />
       <Member Id="F:Microsoft.Bot.Connector.ActivityTypes.DeleteUserData" />
       <Member Id="F:Microsoft.Bot.Connector.ActivityTypes.EndOfConversation" />
       <Member Id="F:Microsoft.Bot.Connector.ActivityTypes.Event" />
+      <Member Id="F:Microsoft.Bot.Connector.ActivityTypes.InstallationUpdate" />
       <Member Id="F:Microsoft.Bot.Connector.ActivityTypes.Invoke" />
       <Member Id="F:Microsoft.Bot.Connector.ActivityTypes.Message" />
       <Member Id="F:Microsoft.Bot.Connector.ActivityTypes.Ping" />
@@ -2500,10 +2696,11 @@
       <Member Id="P:Microsoft.Bot.Connector.BotAuthentication.OpenIdConfigurationUrl" />
     </Type>
     <Type Name="Microsoft.Bot.Connector.BotAuthenticator" Id="T:Microsoft.Bot.Connector.BotAuthenticator">
-      <Member Id="M:Microsoft.Bot.Connector.BotAuthenticator.#ctor(Microsoft.Bot.Connector.ICredentialProvider)" />
-      <Member Id="M:Microsoft.Bot.Connector.BotAuthenticator.#ctor(Microsoft.Bot.Connector.ICredentialProvider,System.String,System.Boolean)" />
-      <Member Id="M:Microsoft.Bot.Connector.BotAuthenticator.#ctor(System.String,System.String)" />
-      <Member Id="M:Microsoft.Bot.Connector.BotAuthenticator.GenerateUnauthorizedResponse(System.Net.Http.HttpRequestMessage)" />
+      <Member Id="M:Microsoft.Bot.Connector.BotAuthenticator.#ctor(Microsoft.Bot.Connector.ICredentialProvider,Microsoft.Bot.Connector.BotAuthenticator.EndorsementsValidator)" />
+      <Member Id="M:Microsoft.Bot.Connector.BotAuthenticator.#ctor(Microsoft.Bot.Connector.ICredentialProvider,System.String,System.Boolean,Microsoft.Bot.Connector.BotAuthenticator.EndorsementsValidator)" />
+      <Member Id="M:Microsoft.Bot.Connector.BotAuthenticator.#ctor(System.String,System.String,Microsoft.Bot.Connector.BotAuthenticator.EndorsementsValidator)" />
+      <Member Id="M:Microsoft.Bot.Connector.BotAuthenticator.AuthenticateAsync(System.Net.Http.HttpRequestMessage,System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.IActivity},System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Connector.BotAuthenticator.GenerateUnauthorizedResponse(System.Net.Http.HttpRequestMessage,System.String)" />
       <Member Id="M:Microsoft.Bot.Connector.BotAuthenticator.TryAuthenticateAsync(System.Net.Http.HttpRequestMessage,System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.IActivity},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Connector.BotAuthenticator.TryAuthenticateAsync(System.String,System.String,System.Threading.CancellationToken)" />
     </Type>
@@ -2566,6 +2763,7 @@
       <Member Id="M:Microsoft.Bot.Connector.ChannelAccount.GetHashCode" />
       <Member Id="P:Microsoft.Bot.Connector.ChannelAccount.Id" />
       <Member Id="P:Microsoft.Bot.Connector.ChannelAccount.Name" />
+      <Member Id="P:Microsoft.Bot.Connector.ChannelAccount.Properties" />
     </Type>
     <Type Name="Microsoft.Bot.Connector.ClaimsIdentityEx" Id="T:Microsoft.Bot.Connector.ClaimsIdentityEx">
       <Member Id="F:Microsoft.Bot.Connector.ClaimsIdentityEx.AppPasswordClaim" />
@@ -2605,6 +2803,7 @@
       <Member Id="P:Microsoft.Bot.Connector.ConversationAccount.Id" />
       <Member Id="P:Microsoft.Bot.Connector.ConversationAccount.IsGroup" />
       <Member Id="P:Microsoft.Bot.Connector.ConversationAccount.Name" />
+      <Member Id="P:Microsoft.Bot.Connector.ConversationAccount.Properties" />
     </Type>
     <Type Name="Microsoft.Bot.Connector.ConversationParameters" Id="T:Microsoft.Bot.Connector.ConversationParameters">
       <Member Id="M:Microsoft.Bot.Connector.ConversationParameters.#ctor" />
@@ -2677,6 +2876,20 @@
       <Member Id="M:Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachment(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Connector.AttachmentData)" />
       <Member Id="M:Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachmentAsync(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Connector.AttachmentData,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.EndOfConversationCodes" Id="T:Microsoft.Bot.Connector.EndOfConversationCodes">
+      <Member Id="F:Microsoft.Bot.Connector.EndOfConversationCodes.BotIssuedInvalidMessage" />
+      <Member Id="F:Microsoft.Bot.Connector.EndOfConversationCodes.BotTimedOut" />
+      <Member Id="F:Microsoft.Bot.Connector.EndOfConversationCodes.ChannelFailed" />
+      <Member Id="F:Microsoft.Bot.Connector.EndOfConversationCodes.CompletedSuccessfully" />
+      <Member Id="F:Microsoft.Bot.Connector.EndOfConversationCodes.Unknown" />
+      <Member Id="F:Microsoft.Bot.Connector.EndOfConversationCodes.UserCancelled" />
+      <Member Id="M:Microsoft.Bot.Connector.EndOfConversationCodes.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.EndorsementsRetriever" Id="T:Microsoft.Bot.Connector.EndorsementsRetriever">
+      <Member Id="M:Microsoft.Bot.Connector.EndorsementsRetriever.#ctor" />
+      <Member Id="M:Microsoft.Bot.Connector.EndorsementsRetriever.GetConfigurationAsync(System.String,Microsoft.IdentityModel.Protocols.IDocumentRetriever,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Connector.EndorsementsRetriever.GetDocumentAsync(System.String,System.Threading.CancellationToken)" />
     </Type>
     <Type Name="Microsoft.Bot.Connector.Entity" Id="T:Microsoft.Bot.Connector.Entity">
       <Member Id="M:Microsoft.Bot.Connector.Entity.#ctor" />
@@ -2753,6 +2966,7 @@
       <Member Id="M:Microsoft.Bot.Connector.IActivity.AsConversationUpdateActivity" />
       <Member Id="M:Microsoft.Bot.Connector.IActivity.AsEndOfConversationActivity" />
       <Member Id="M:Microsoft.Bot.Connector.IActivity.AsEventActivity" />
+      <Member Id="M:Microsoft.Bot.Connector.IActivity.AsInstallationUpdateActivity" />
       <Member Id="M:Microsoft.Bot.Connector.IActivity.AsInvokeActivity" />
       <Member Id="M:Microsoft.Bot.Connector.IActivity.AsMessageActivity" />
       <Member Id="M:Microsoft.Bot.Connector.IActivity.AsTypingActivity" />
@@ -2818,11 +3032,21 @@
       <Member Id="F:Microsoft.Bot.Connector.IdentityToken.Identity" />
       <Member Id="M:Microsoft.Bot.Connector.IdentityToken.#ctor(System.Boolean,System.Security.Claims.ClaimsIdentity)" />
     </Type>
-    <Type Name="Microsoft.Bot.Connector.IEndOfConversationActivity" Id="T:Microsoft.Bot.Connector.IEndOfConversationActivity" />
+    <Type Name="Microsoft.Bot.Connector.IdentityTokenExtensions" Id="T:Microsoft.Bot.Connector.IdentityTokenExtensions">
+      <Member Id="M:Microsoft.Bot.Connector.IdentityTokenExtensions.ValidateServiceUrlClaim(Microsoft.Bot.Connector.IdentityToken,System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.IActivity})" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.IEndOfConversationActivity" Id="T:Microsoft.Bot.Connector.IEndOfConversationActivity">
+      <Member Id="P:Microsoft.Bot.Connector.IEndOfConversationActivity.Code" />
+      <Member Id="P:Microsoft.Bot.Connector.IEndOfConversationActivity.Entities" />
+      <Member Id="P:Microsoft.Bot.Connector.IEndOfConversationActivity.Text" />
+    </Type>
     <Type Name="Microsoft.Bot.Connector.IEventActivity" Id="T:Microsoft.Bot.Connector.IEventActivity">
       <Member Id="P:Microsoft.Bot.Connector.IEventActivity.Name" />
       <Member Id="P:Microsoft.Bot.Connector.IEventActivity.RelatesTo" />
       <Member Id="P:Microsoft.Bot.Connector.IEventActivity.Value" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.IInstallationUpdateActivity" Id="T:Microsoft.Bot.Connector.IInstallationUpdateActivity">
+      <Member Id="P:Microsoft.Bot.Connector.IInstallationUpdateActivity.Action" />
     </Type>
     <Type Name="Microsoft.Bot.Connector.IInvokeActivity" Id="T:Microsoft.Bot.Connector.IInvokeActivity">
       <Member Id="P:Microsoft.Bot.Connector.IInvokeActivity.Name" />
@@ -2830,16 +3054,24 @@
       <Member Id="P:Microsoft.Bot.Connector.IInvokeActivity.Value" />
     </Type>
     <Type Name="Microsoft.Bot.Connector.IMessageActivity" Id="T:Microsoft.Bot.Connector.IMessageActivity">
-      <Member Id="M:Microsoft.Bot.Connector.IMessageActivity.GetChannelData``1" />
       <Member Id="M:Microsoft.Bot.Connector.IMessageActivity.GetMentions" />
       <Member Id="M:Microsoft.Bot.Connector.IMessageActivity.HasContent" />
       <Member Id="P:Microsoft.Bot.Connector.IMessageActivity.AttachmentLayout" />
       <Member Id="P:Microsoft.Bot.Connector.IMessageActivity.Attachments" />
       <Member Id="P:Microsoft.Bot.Connector.IMessageActivity.Entities" />
+      <Member Id="P:Microsoft.Bot.Connector.IMessageActivity.InputHint" />
       <Member Id="P:Microsoft.Bot.Connector.IMessageActivity.Locale" />
+      <Member Id="P:Microsoft.Bot.Connector.IMessageActivity.Speak" />
+      <Member Id="P:Microsoft.Bot.Connector.IMessageActivity.SuggestedActions" />
       <Member Id="P:Microsoft.Bot.Connector.IMessageActivity.Summary" />
       <Member Id="P:Microsoft.Bot.Connector.IMessageActivity.Text" />
       <Member Id="P:Microsoft.Bot.Connector.IMessageActivity.TextFormat" />
+      <Member Id="P:Microsoft.Bot.Connector.IMessageActivity.Value" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.InputHints" Id="T:Microsoft.Bot.Connector.InputHints">
+      <Member Id="F:Microsoft.Bot.Connector.InputHints.AcceptingInput" />
+      <Member Id="F:Microsoft.Bot.Connector.InputHints.ExpectingInput" />
+      <Member Id="F:Microsoft.Bot.Connector.InputHints.IgnoringInput" />
     </Type>
     <Type Name="Microsoft.Bot.Connector.IStateClient" Id="T:Microsoft.Bot.Connector.IStateClient">
       <Member Id="P:Microsoft.Bot.Connector.IStateClient.BaseUri" />
@@ -2851,6 +3083,7 @@
     <Type Name="Microsoft.Bot.Connector.ITriggerActivity" Id="T:Microsoft.Bot.Connector.ITriggerActivity" />
     <Type Name="Microsoft.Bot.Connector.ITypingActivity" Id="T:Microsoft.Bot.Connector.ITypingActivity" />
     <Type Name="Microsoft.Bot.Connector.JwtConfig" Id="T:Microsoft.Bot.Connector.JwtConfig">
+      <Member Id="F:Microsoft.Bot.Connector.JwtConfig.ToBotFromChannelAllowedSigningAlgorithms" />
       <Member Id="F:Microsoft.Bot.Connector.JwtConfig.ToBotFromChannelOpenIdMetadataUrl" />
       <Member Id="F:Microsoft.Bot.Connector.JwtConfig.ToBotFromChannelTokenValidationParameters" />
       <Member Id="F:Microsoft.Bot.Connector.JwtConfig.ToBotFromEmulatorOpenIdMetadataUrl" />
@@ -2859,7 +3092,7 @@
       <Member Id="F:Microsoft.Bot.Connector.JwtConfig.ToChannelFromBotOAuthScope" />
     </Type>
     <Type Name="Microsoft.Bot.Connector.JwtTokenExtractor" Id="T:Microsoft.Bot.Connector.JwtTokenExtractor">
-      <Member Id="M:Microsoft.Bot.Connector.JwtTokenExtractor.#ctor(System.IdentityModel.Tokens.TokenValidationParameters,System.String)" />
+      <Member Id="M:Microsoft.Bot.Connector.JwtTokenExtractor.#ctor(System.IdentityModel.Tokens.TokenValidationParameters,System.String,System.String[],Microsoft.Bot.Connector.JwtTokenExtractor.EndorsementsValidator)" />
       <Member Id="M:Microsoft.Bot.Connector.JwtTokenExtractor.GetAppIdFromClaimsIdentity(System.Security.Claims.ClaimsIdentity)" />
       <Member Id="M:Microsoft.Bot.Connector.JwtTokenExtractor.GetAppIdFromEmulatorClaimsIdentity(System.Security.Claims.ClaimsIdentity)" />
       <Member Id="M:Microsoft.Bot.Connector.JwtTokenExtractor.GetIdentityAsync(System.Net.Http.HttpRequestMessage)" />
@@ -2978,6 +3211,12 @@
     <Type Name="Microsoft.Bot.Connector.StaticCredentialProvider" Id="T:Microsoft.Bot.Connector.StaticCredentialProvider">
       <Member Id="M:Microsoft.Bot.Connector.StaticCredentialProvider.#ctor(System.String,System.String)" />
     </Type>
+    <Type Name="Microsoft.Bot.Connector.SuggestedActions" Id="T:Microsoft.Bot.Connector.SuggestedActions">
+      <Member Id="M:Microsoft.Bot.Connector.SuggestedActions.#ctor" />
+      <Member Id="M:Microsoft.Bot.Connector.SuggestedActions.#ctor(System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction})" />
+      <Member Id="P:Microsoft.Bot.Connector.SuggestedActions.Actions" />
+      <Member Id="P:Microsoft.Bot.Connector.SuggestedActions.To" />
+    </Type>
     <Type Name="Microsoft.Bot.Connector.TextFormatTypes" Id="T:Microsoft.Bot.Connector.TextFormatTypes">
       <Member Id="F:Microsoft.Bot.Connector.TextFormatTypes.Markdown" />
       <Member Id="F:Microsoft.Bot.Connector.TextFormatTypes.Plain" />
@@ -3015,6 +3254,144 @@
       <Member Id="P:Microsoft.Bot.Connector.VideoCard.Subtitle" />
       <Member Id="P:Microsoft.Bot.Connector.VideoCard.Text" />
       <Member Id="P:Microsoft.Bot.Connector.VideoCard.Title" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Bot.Connector.Payments">
+    <Type Name="Microsoft.Bot.Connector.Payments.MicrosoftPayMethodData" Id="T:Microsoft.Bot.Connector.Payments.MicrosoftPayMethodData">
+      <Member Id="F:Microsoft.Bot.Connector.Payments.MicrosoftPayMethodData.MethodName" />
+      <Member Id="M:Microsoft.Bot.Connector.Payments.MicrosoftPayMethodData.#ctor" />
+      <Member Id="M:Microsoft.Bot.Connector.Payments.MicrosoftPayMethodData.#ctor(System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String})" />
+      <Member Id="M:Microsoft.Bot.Connector.Payments.MicrosoftPayMethodData.#ctor(System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String},System.Boolean)" />
+      <Member Id="M:Microsoft.Bot.Connector.Payments.MicrosoftPayMethodData.ToPaymentMethodData" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.MicrosoftPayMethodData.MerchantId" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.MicrosoftPayMethodData.Mode" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.MicrosoftPayMethodData.SupportedNetworks" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.MicrosoftPayMethodData.SupportedTypes" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.Payments.PaymentAddress" Id="T:Microsoft.Bot.Connector.Payments.PaymentAddress">
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentAddress.#ctor" />
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentAddress.#ctor(System.String,System.Collections.Generic.IList{System.String},System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentAddress.AddressLine" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentAddress.City" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentAddress.Country" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentAddress.DependentLocality" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentAddress.LanguageCode" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentAddress.Organization" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentAddress.Phone" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentAddress.PostalCode" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentAddress.Recipient" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentAddress.Region" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentAddress.SortingCode" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount" Id="T:Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount">
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount.#ctor" />
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount.#ctor(System.String,System.String,System.String)" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount.Currency" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount.CurrencySystem" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount.Value" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.Payments.PaymentDetails" Id="T:Microsoft.Bot.Connector.Payments.PaymentDetails">
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentDetails.#ctor" />
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentDetails.#ctor(Microsoft.Bot.Connector.Payments.PaymentItem,System.Collections.Generic.IList{Microsoft.Bot.Connector.Payments.PaymentItem},System.Collections.Generic.IList{Microsoft.Bot.Connector.Payments.PaymentShippingOption},System.Collections.Generic.IList{Microsoft.Bot.Connector.Payments.PaymentDetailsModifier},System.String)" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentDetails.DisplayItems" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentDetails.Error" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentDetails.Modifiers" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentDetails.ShippingOptions" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentDetails.Total" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.Payments.PaymentDetailsModifier" Id="T:Microsoft.Bot.Connector.Payments.PaymentDetailsModifier">
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentDetailsModifier.#ctor" />
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentDetailsModifier.#ctor(System.Collections.Generic.IList{System.String},Microsoft.Bot.Connector.Payments.PaymentItem,System.Collections.Generic.IList{Microsoft.Bot.Connector.Payments.PaymentItem},System.Object)" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentDetailsModifier.AdditionalDisplayItems" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentDetailsModifier.Data" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentDetailsModifier.SupportedMethods" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentDetailsModifier.Total" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.Payments.PaymentItem" Id="T:Microsoft.Bot.Connector.Payments.PaymentItem">
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentItem.#ctor" />
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentItem.#ctor(System.String,Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount,System.Nullable{System.Boolean})" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentItem.Amount" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentItem.Label" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentItem.Pending" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.Payments.PaymentMethodData" Id="T:Microsoft.Bot.Connector.Payments.PaymentMethodData">
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentMethodData.#ctor" />
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentMethodData.#ctor(System.Collections.Generic.IList{System.String},System.Object)" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentMethodData.Data" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentMethodData.SupportedMethods" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.Payments.PaymentOperations" Id="T:Microsoft.Bot.Connector.Payments.PaymentOperations">
+      <Member Id="F:Microsoft.Bot.Connector.Payments.PaymentOperations.PaymentCompleteOperationName" />
+      <Member Id="F:Microsoft.Bot.Connector.Payments.PaymentOperations.UpdateShippingAddressOperationName" />
+      <Member Id="F:Microsoft.Bot.Connector.Payments.PaymentOperations.UpdateShippingOptionOperationName" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.Payments.PaymentOptions" Id="T:Microsoft.Bot.Connector.Payments.PaymentOptions">
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentOptions.#ctor" />
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentOptions.#ctor(System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String)" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentOptions.RequestPayerEmail" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentOptions.RequestPayerName" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentOptions.RequestPayerPhone" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentOptions.RequestShipping" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentOptions.ShippingType" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.Payments.PaymentRequest" Id="T:Microsoft.Bot.Connector.Payments.PaymentRequest">
+      <Member Id="F:Microsoft.Bot.Connector.Payments.PaymentRequest.PaymentActionType" />
+      <Member Id="F:Microsoft.Bot.Connector.Payments.PaymentRequest.PaymentContentType" />
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentRequest.#ctor" />
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentRequest.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.Payments.PaymentMethodData},Microsoft.Bot.Connector.Payments.PaymentDetails,Microsoft.Bot.Connector.Payments.PaymentOptions,System.String)" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentRequest.Details" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentRequest.Expires" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentRequest.Id" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentRequest.MethodData" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentRequest.Options" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.Payments.PaymentRequestComplete" Id="T:Microsoft.Bot.Connector.Payments.PaymentRequestComplete">
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentRequestComplete.#ctor" />
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentRequestComplete.#ctor(System.String,Microsoft.Bot.Connector.Payments.PaymentRequest,Microsoft.Bot.Connector.Payments.PaymentResponse)" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentRequestComplete.Id" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentRequestComplete.PaymentRequest" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentRequestComplete.PaymentResponse" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.Payments.PaymentRequestCompleteResult" Id="T:Microsoft.Bot.Connector.Payments.PaymentRequestCompleteResult">
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentRequestCompleteResult.#ctor" />
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentRequestCompleteResult.#ctor(System.String)" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentRequestCompleteResult.Result" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.Payments.PaymentRequestUpdate" Id="T:Microsoft.Bot.Connector.Payments.PaymentRequestUpdate">
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentRequestUpdate.#ctor" />
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentRequestUpdate.#ctor(System.String,Microsoft.Bot.Connector.Payments.PaymentDetails,Microsoft.Bot.Connector.Payments.PaymentAddress,System.String)" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentRequestUpdate.Details" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentRequestUpdate.Id" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentRequestUpdate.ShippingAddress" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentRequestUpdate.ShippingOption" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.Payments.PaymentRequestUpdateResult" Id="T:Microsoft.Bot.Connector.Payments.PaymentRequestUpdateResult">
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentRequestUpdateResult.#ctor" />
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentRequestUpdateResult.#ctor(Microsoft.Bot.Connector.Payments.PaymentDetails)" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentRequestUpdateResult.Details" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.Payments.PaymentResponse" Id="T:Microsoft.Bot.Connector.Payments.PaymentResponse">
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentResponse.#ctor" />
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentResponse.#ctor(System.String,System.Object,Microsoft.Bot.Connector.Payments.PaymentAddress,System.String,System.String,System.String)" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentResponse.Details" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentResponse.MethodName" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentResponse.PayerEmail" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentResponse.PayerPhone" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentResponse.ShippingAddress" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentResponse.ShippingOption" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.Payments.PaymentShippingOption" Id="T:Microsoft.Bot.Connector.Payments.PaymentShippingOption">
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentShippingOption.#ctor" />
+      <Member Id="M:Microsoft.Bot.Connector.Payments.PaymentShippingOption.#ctor(System.String,System.String,Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount,System.Nullable{System.Boolean})" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentShippingOption.Amount" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentShippingOption.Id" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentShippingOption.Label" />
+      <Member Id="P:Microsoft.Bot.Connector.Payments.PaymentShippingOption.Selected" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.Payments.PaymentShippingTypes" Id="T:Microsoft.Bot.Connector.Payments.PaymentShippingTypes">
+      <Member Id="F:Microsoft.Bot.Connector.Payments.PaymentShippingTypes.Delivery" />
+      <Member Id="F:Microsoft.Bot.Connector.Payments.PaymentShippingTypes.PickUp" />
+      <Member Id="F:Microsoft.Bot.Connector.Payments.PaymentShippingTypes.Shipping" />
     </Type>
   </Namespace>
 </Framework>

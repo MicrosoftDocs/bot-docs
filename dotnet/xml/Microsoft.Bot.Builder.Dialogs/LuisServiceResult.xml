@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.LuisServiceResult" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -24,7 +24,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisServiceResult.#ctor(Microsoft.Bot.Builder.Luis.Models.LuisResult,Microsoft.Bot.Builder.Luis.Models.IntentRecommendation,Microsoft.Bot.Builder.Luis.ILuisService)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="result" Type="Microsoft.Bot.Builder.Luis.Models.LuisResult" />
@@ -45,7 +45,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.LuisServiceResult.BestIntent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.Models.IntentRecommendation</ReturnType>
@@ -62,7 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.LuisServiceResult.LuisService" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.ILuisService</ReturnType>
@@ -79,7 +79,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.LuisServiceResult.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.Models.LuisResult</ReturnType>

@@ -1,10 +1,10 @@
 <Type Name="PromptOptions&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.PromptOptions&lt;T&gt;">
-  <TypeSignature Language="C#" Value="public class PromptOptions&lt;T&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PromptOptions`1&lt;T&gt; extends System.Object" />
+  <TypeSignature Language="C#" Value="public class PromptOptions&lt;T&gt; : Microsoft.Bot.Builder.Dialogs.IPromptOptions&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PromptOptions`1&lt;T&gt; extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IPromptOptions`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptOptions`1" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -12,7 +12,11 @@
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
-  <Interfaces />
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.IPromptOptions&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Docs>
     <typeparam name="T"> The type of the options.</typeparam>
     <summary>
@@ -22,12 +26,12 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PromptOptions (string prompt, string retry = null, string tooManyAttempts = null, System.Collections.Generic.IReadOnlyList&lt;T&gt; options = null, int attempts = 3, Microsoft.Bot.Builder.Dialogs.PromptStyler promptStyler = null, System.Collections.Generic.IReadOnlyList&lt;string&gt; descriptions = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string prompt, string retry, string tooManyAttempts, class System.Collections.Generic.IReadOnlyList`1&lt;!T&gt; options, int32 attempts, class Microsoft.Bot.Builder.Dialogs.PromptStyler promptStyler, class System.Collections.Generic.IReadOnlyList`1&lt;string&gt; descriptions) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.#ctor(System.String,System.String,System.String,System.Collections.Generic.IReadOnlyList{`0},System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyler,System.Collections.Generic.IReadOnlyList{System.String})" />
+      <MemberSignature Language="C#" Value="public PromptOptions (string prompt, string retry = null, string tooManyAttempts = null, System.Collections.Generic.IReadOnlyList&lt;T&gt; options = null, int attempts = 3, Microsoft.Bot.Builder.Dialogs.PromptStyler promptStyler = null, System.Collections.Generic.IReadOnlyList&lt;string&gt; descriptions = null, string speak = null, string retrySpeak = null, Microsoft.Bot.Builder.Dialogs.IPromptRecognizer recognizer = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string prompt, string retry, string tooManyAttempts, class System.Collections.Generic.IReadOnlyList`1&lt;!T&gt; options, int32 attempts, class Microsoft.Bot.Builder.Dialogs.PromptStyler promptStyler, class System.Collections.Generic.IReadOnlyList`1&lt;string&gt; descriptions, string speak, string retrySpeak, class Microsoft.Bot.Builder.Dialogs.IPromptRecognizer recognizer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.#ctor(System.String,System.String,System.String,System.Collections.Generic.IReadOnlyList{`0},System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyler,System.Collections.Generic.IReadOnlyList{System.String},System.String,System.String,Microsoft.Bot.Builder.Dialogs.IPromptRecognizer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="prompt" Type="System.String" />
@@ -37,6 +41,9 @@
         <Parameter Name="attempts" Type="System.Int32" />
         <Parameter Name="promptStyler" Type="Microsoft.Bot.Builder.Dialogs.PromptStyler" />
         <Parameter Name="descriptions" Type="System.Collections.Generic.IReadOnlyList&lt;System.String&gt;" />
+        <Parameter Name="speak" Type="System.String" />
+        <Parameter Name="retrySpeak" Type="System.String" />
+        <Parameter Name="recognizer" Type="Microsoft.Bot.Builder.Dialogs.IPromptRecognizer" />
       </Parameters>
       <Docs>
         <param name="prompt"> The prompt.</param>
@@ -46,6 +53,9 @@
         <param name="attempts"> Maximum number of attempts.</param>
         <param name="promptStyler"> The prompt styler.</param>
         <param name="descriptions">Descriptions for each prompt.</param>
+        <param name="speak"> The Speak tag (SSML markup for text to speech).</param>
+        <param name="retrySpeak"> What to display on retry Speak (SSML markup for text to speech).</param>
+        <param name="recognizer"> Entity Recognizer to parse the message content.</param>
         <summary>
             Constructs the prompt options.
             </summary>
@@ -58,7 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Attempts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -71,20 +81,58 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Choices">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyDictionary&lt;T,System.Collections.Generic.IReadOnlyList&lt;T&gt;&gt; Choices { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyDictionary`2&lt;!T, class System.Collections.Generic.IReadOnlyList`1&lt;!T&gt;&gt; Choices" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Choices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;T,System.Collections.Generic.IReadOnlyList&lt;T&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The choices and synonyms to be returned when selected.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DefaultRetry">
       <MemberSignature Language="C#" Value="public string DefaultRetry { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultRetry" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.DefaultRetry" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Default retry prompt that is used if <see cref="F:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Retry" /> is null.
+            Default retry prompt that is used if <see cref="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Retry" /> is null.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultRetrySpeak">
+      <MemberSignature Language="C#" Value="public string DefaultRetrySpeak { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultRetrySpeak" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.DefaultRetrySpeak" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Default retry speak that is used if <see cref="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.RetrySpeak" /> is null.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -96,26 +144,26 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.DefaultTooManyAttempts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Default <see cref="F:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.TooManyAttempts" /> string that is used if <see cref="F:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.TooManyAttempts" /> is null.
+            Default <see cref="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.TooManyAttempts" /> string that is used if <see cref="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.TooManyAttempts" /> is null.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Descriptions">
-      <MemberSignature Language="C#" Value="public readonly System.Collections.Generic.IReadOnlyList&lt;string&gt; Descriptions;" />
-      <MemberSignature Language="ILAsm" Value=".field public initonly class System.Collections.Generic.IReadOnlyList`1&lt;string&gt; Descriptions" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Descriptions" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;string&gt; Descriptions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;string&gt; Descriptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Descriptions" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.String&gt;</ReturnType>
@@ -124,6 +172,7 @@
         <summary>
             The description of each possible option.
             </summary>
+        <value>To be added.</value>
         <remarks>
             If this is null, then the descriptions will be the options converted to strings.
             Otherwise this should have the same number of values as Options and it contains the string to describe the value being selected.
@@ -131,12 +180,12 @@
       </Docs>
     </Member>
     <Member MemberName="Options">
-      <MemberSignature Language="C#" Value="public readonly System.Collections.Generic.IReadOnlyList&lt;T&gt; Options;" />
-      <MemberSignature Language="ILAsm" Value=".field public initonly class System.Collections.Generic.IReadOnlyList`1&lt;!T&gt; Options" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Options" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;T&gt; Options { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;!T&gt; Options" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Options" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;T&gt;</ReturnType>
@@ -145,16 +194,17 @@
         <summary>
             The choices to be returned when selected.
             </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Prompt">
-      <MemberSignature Language="C#" Value="public readonly string Prompt;" />
-      <MemberSignature Language="ILAsm" Value=".field public initonly string Prompt" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Prompt" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public string Prompt { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Prompt" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Prompt" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -163,16 +213,17 @@
         <summary>
             The prompt.
             </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PromptStyler">
-      <MemberSignature Language="C#" Value="public readonly Microsoft.Bot.Builder.Dialogs.PromptStyler PromptStyler;" />
-      <MemberSignature Language="ILAsm" Value=".field public initonly class Microsoft.Bot.Builder.Dialogs.PromptStyler PromptStyler" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.PromptStyler" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.PromptStyler PromptStyler { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.PromptStyler PromptStyler" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.PromptStyler" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.PromptStyler</ReturnType>
@@ -181,16 +232,36 @@
         <summary>
             Styler of the prompt <see cref="T:Microsoft.Bot.Builder.Dialogs.PromptStyler" />.
             </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Recognizer">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.IPromptRecognizer Recognizer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.IPromptRecognizer Recognizer" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Recognizer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IPromptRecognizer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Entity Recognizer to parse the message content
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Retry">
-      <MemberSignature Language="C#" Value="public readonly string Retry;" />
-      <MemberSignature Language="ILAsm" Value=".field public initonly string Retry" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Retry" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public string Retry { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Retry" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Retry" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -199,16 +270,55 @@
         <summary>
             What to display on retry.
             </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RetrySpeak">
+      <MemberSignature Language="C#" Value="public string RetrySpeak { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RetrySpeak" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.RetrySpeak" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Retry Speak tag (SSML markup for text to speech)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Speak">
+      <MemberSignature Language="C#" Value="public string Speak { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Speak" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Speak" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Speak tag (SSML markup for text to speech)
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TooManyAttempts">
-      <MemberSignature Language="C#" Value="public readonly string TooManyAttempts;" />
-      <MemberSignature Language="ILAsm" Value=".field public initonly string TooManyAttempts" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.TooManyAttempts" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public string TooManyAttempts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TooManyAttempts" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.TooManyAttempts" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -217,6 +327,7 @@
         <summary>
             What to display when user didn't say a valid response after <see cref="P:Microsoft.Bot.Builder.Dialogs.PromptOptions`1.Attempts" />.
             </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

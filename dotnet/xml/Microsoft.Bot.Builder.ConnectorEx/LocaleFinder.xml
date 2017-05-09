@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ConnectorEx.LocaleFinder" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,7 +27,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.LocaleFinder.#ctor(Microsoft.Bot.Connector.ConversationReference,Microsoft.Bot.Builder.ConnectorEx.ResumptionContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="conversationReference" Type="Microsoft.Bot.Connector.ConversationReference" />
@@ -46,11 +46,11 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.LocaleFinder.FindLocale(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.ConnectorEx.LocaleFinder/&lt;FindLocale&gt;d__3))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.ConnectorEx.LocaleFinder/&lt;FindLocale&gt;d__4))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

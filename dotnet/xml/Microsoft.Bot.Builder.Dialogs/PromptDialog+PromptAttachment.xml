@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptAttachment" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Internals.Prompt&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Connector.Attachment&gt;,Microsoft.Bot.Connector.Attachment&gt;</BaseTypeName>
@@ -25,7 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptAttachment.#ctor(System.String,System.String,System.Int32,System.Collections.Generic.IEnumerable{System.String})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="prompt" Type="System.String" />
@@ -48,7 +48,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptAttachment.ContentTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -61,11 +61,11 @@
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="protected override bool TryParse (Microsoft.Bot.Connector.IMessageActivity message, out System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Connector.Attachment&gt; result);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool TryParse(class Microsoft.Bot.Connector.IMessageActivity message, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Connector.Attachment&gt; result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryParse(class Microsoft.Bot.Connector.IMessageActivity message, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Connector.Attachment&gt; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptAttachment.TryParse(Microsoft.Bot.Connector.IMessageActivity,System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.Attachment}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

@@ -1,7 +1,6 @@
 <Overview>
   <Assemblies>
-    <Assembly Name="Microsoft.Bot.Builder.Autofac" Version="3.5.5.0">
-      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+    <Assembly Name="Microsoft.Bot.Builder.Autofac" Version="3.8.0.0">
       <Attributes>
         <Attribute>
           <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
@@ -19,7 +18,7 @@
           <AttributeName>System.Reflection.AssemblyDescription("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Reflection.AssemblyFileVersion("3.5.5.0")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyFileVersion("3.8.0.0")</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Reflection.AssemblyProduct("Microsoft Bot Builder")</AttributeName>
@@ -31,10 +30,13 @@
           <AttributeName>System.Reflection.AssemblyTrademark("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Resources.NeutralResourcesLanguage("en")</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.CompilationRelaxations(8)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.CompilationRelaxations(8)</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("Microsoft.Bot.Builder.Tests")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("Microsoft.Bot.Sample.Tests")</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
@@ -50,8 +52,7 @@
         </Attribute>
       </Attributes>
     </Assembly>
-    <Assembly Name="Microsoft.Bot.Builder" Version="3.5.5.0">
-      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+    <Assembly Name="Microsoft.Bot.Builder" Version="3.8.0.0">
       <Attributes>
         <Attribute>
           <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
@@ -69,7 +70,7 @@
           <AttributeName>System.Reflection.AssemblyDescription("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Reflection.AssemblyFileVersion("3.5.5.0")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyFileVersion("3.8.0.0")</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Reflection.AssemblyProduct("Microsoft Bot Builder")</AttributeName>
@@ -87,6 +88,12 @@
           <AttributeName>System.Runtime.CompilerServices.CompilationRelaxations(8)</AttributeName>
         </Attribute>
         <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("Microsoft.Bot.Builder.Tests")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("Microsoft.Bot.Sample.Tests")</AttributeName>
+        </Attribute>
+        <Attribute>
           <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
         </Attribute>
         <Attribute>
@@ -100,8 +107,7 @@
         </Attribute>
       </Attributes>
     </Assembly>
-    <Assembly Name="Microsoft.Bot.Connector" Version="1.1.0.0">
-      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+    <Assembly Name="Microsoft.Bot.Connector" Version="3.8.0.0">
       <Attributes>
         <Attribute>
           <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
@@ -117,6 +123,9 @@
         </Attribute>
         <Attribute>
           <AttributeName>System.Reflection.AssemblyDescription("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyFileVersion("3.8.0.0")</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Reflection.AssemblyProduct("Microsoft Bot Framework")</AttributeName>
@@ -143,7 +152,6 @@
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.5", FrameworkDisplayName=".NET Framework 4.5")</AttributeName>
         </Attribute>
       </Attributes>
-      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
     </Assembly>
   </Assemblies>
   <Remarks>To be added.</Remarks>
@@ -182,6 +190,10 @@
       <Type Name="Chain+Continuation`2" DisplayName="Chain+Continuation&lt;T,R&gt;" Kind="Delegate" />
       <Type Name="Chain+WhereCanceledException" Kind="Class" />
       <Type Name="ChannelCapability" Kind="Class" />
+      <Type Name="ChannelCapabilityEx" Kind="Class" />
+      <Type Name="ChannelIds" Kind="Class" />
+      <Type Name="ChronoDuration" Kind="Class" />
+      <Type Name="ChronoDurationResolution" Kind="Class" />
       <Type Name="CommandDialog`1" DisplayName="CommandDialog&lt;T&gt;" Kind="Class" />
       <Type Name="CommandDialog`1+Command" DisplayName="CommandDialog&lt;T&gt;+Command" Kind="Class" />
       <Type Name="ContextualSelector`2" DisplayName="ContextualSelector&lt;T,R&gt;" Kind="Delegate" />
@@ -189,10 +201,10 @@
       <Type Name="ConversationAddressComparer" Kind="Class" />
       <Type Name="DefaultCase`2" DisplayName="DefaultCase&lt;T,R&gt;" Kind="Class" />
       <Type Name="DeleteProfileScorable" Kind="Class" />
-      <Type Name="DetectChannelCapability" Kind="Class" />
       <Type Name="DialogStackException" Kind="Class" />
       <Type Name="DispatchDialog" Kind="Class" />
       <Type Name="DispatchDialog`1" DisplayName="DispatchDialog&lt;TResult&gt;" Kind="Class" />
+      <Type Name="EndConversationEvent" Kind="Class" />
       <Type Name="Extensions" Kind="Class" />
       <Type Name="IAddress" Kind="Interface" />
       <Type Name="IAwaitable`1" DisplayName="IAwaitable&lt;T&gt;" Kind="Interface" />
@@ -200,17 +212,22 @@
       <Type Name="IBotDataBag" Kind="Interface" />
       <Type Name="ICase`2" DisplayName="ICase&lt;T,R&gt;" Kind="Interface" />
       <Type Name="IChannelCapability" Kind="Interface" />
-      <Type Name="IDetectChannelCapability" Kind="Interface" />
       <Type Name="IDialog" Kind="Interface" />
       <Type Name="IDialog`1" DisplayName="IDialog&lt;TResult&gt;" Kind="Interface" />
       <Type Name="IDialogContext" Kind="Interface" />
       <Type Name="IntentActivityHandler" Kind="Delegate" />
       <Type Name="IntentHandler" Kind="Delegate" />
       <Type Name="InvalidIntentHandlerException" Kind="Class" />
+      <Type Name="IPromptOptions`1" DisplayName="IPromptOptions&lt;T&gt;" Kind="Interface" />
+      <Type Name="IPromptRecognizeChoicesOptions" Kind="Interface" />
+      <Type Name="IPromptRecognizeNumbersOptions" Kind="Interface" />
+      <Type Name="IPromptRecognizer" Kind="Interface" />
+      <Type Name="IPromptRecognizeValuesOptions" Kind="Interface" />
       <Type Name="LuisActionDialog" Kind="Class" />
       <Type Name="LuisDialog`1" DisplayName="LuisDialog&lt;TResult&gt;" Kind="Class" />
       <Type Name="LuisIntentAttribute" Kind="Class" />
       <Type Name="LuisServiceResult" Kind="Class" />
+      <Type Name="MessageOptions" Kind="Class" />
       <Type Name="MultipleResumeHandlerException" Kind="Class" />
       <Type Name="NoResumeHandlerException" Kind="Class" />
       <Type Name="PromptDialog" Kind="Class" />
@@ -222,8 +239,13 @@
       <Type Name="PromptDialog+PromptString" Kind="Class" />
       <Type Name="PromptException" Kind="Class" />
       <Type Name="PromptOptions`1" DisplayName="PromptOptions&lt;T&gt;" Kind="Class" />
+      <Type Name="PromptOptionsWithSynonyms`1" DisplayName="PromptOptionsWithSynonyms&lt;T&gt;" Kind="Class" />
+      <Type Name="PromptRecognizeChoicesOptions" Kind="Class" />
+      <Type Name="PromptRecognizeNumbersOptions" Kind="Class" />
+      <Type Name="PromptRecognizer" Kind="Class" />
       <Type Name="PromptStyle" Kind="Enumeration" />
       <Type Name="PromptStyler" Kind="Class" />
+      <Type Name="RecognizeEntity`1" DisplayName="RecognizeEntity&lt;T&gt;" Kind="Class" />
       <Type Name="RegexCase`1" DisplayName="RegexCase&lt;R&gt;" Kind="Class" />
       <Type Name="ResumeAfter`1" DisplayName="ResumeAfter&lt;T&gt;" Kind="Delegate" />
       <Type Name="ResumptionCookie" Kind="Class" />
@@ -233,6 +255,7 @@
     </Namespace>
     <Namespace Name="Microsoft.Bot.Builder.Dialogs.Internals">
       <Type Name="AlwaysSendDirect_BotToUser" Kind="Class" />
+      <Type Name="AutoInputHint_BotToUser" Kind="Class" />
       <Type Name="BotDataBagStream" Kind="Class" />
       <Type Name="BotDataBase`1" DisplayName="BotDataBase&lt;T&gt;" Kind="Class" />
       <Type Name="BotStoreType" Kind="Enumeration" />
@@ -265,7 +288,9 @@
       <Type Name="IDialogTaskManager" Kind="Interface" />
       <Type Name="IDialogTasks" Kind="Interface" />
       <Type Name="IMessageActivityMapper" Kind="Interface" />
+      <Type Name="IMessageQueue" Kind="Interface" />
       <Type Name="InMemoryDataStore" Kind="Class" />
+      <Type Name="InputHintQueue" Kind="Class" />
       <Type Name="IPostToBot" Kind="Interface" />
       <Type Name="JObjectBotData" Kind="Class" />
       <Type Name="KeyboardCardMapper" Kind="Class" />
@@ -277,10 +302,12 @@
       <Type Name="PersistentDialogTask" Kind="Class" />
       <Type Name="PostUnhandledExceptionToUser" Kind="Class" />
       <Type Name="Prompt`2" DisplayName="Prompt&lt;T,U&gt;" Kind="Class" />
+      <Type Name="QueueDrainingDialogTask" Kind="Class" />
       <Type Name="ReactiveDialogTask" Kind="Class" />
       <Type Name="ScoringEventLoop`1" DisplayName="ScoringEventLoop&lt;Score&gt;" Kind="Class" />
       <Type Name="SerializeByConversation" Kind="Class" />
       <Type Name="SetAmbientThreadCulture" Kind="Class" />
+      <Type Name="SetLocalTimestampMapper" Kind="Class" />
     </Namespace>
     <Namespace Name="Microsoft.Bot.Builder.FormFlow">
       <Type Name="ActiveDelegate`1" DisplayName="ActiveDelegate&lt;T&gt;" Kind="Delegate" />
@@ -530,9 +557,9 @@
       <Type Name="WhereScoreScorable`2" DisplayName="WhereScoreScorable&lt;Item,Score&gt;" Kind="Class" />
     </Namespace>
     <Namespace Name="Microsoft.Bot.Connector">
-      <Type Name="Action" Kind="Class" />
       <Type Name="ActionTypes" Kind="Class" />
       <Type Name="Activity" Kind="Class" />
+      <Type Name="ActivityExtensions" Kind="Class" />
       <Type Name="ActivityTypes" Kind="Class" />
       <Type Name="AnimationCard" Kind="Class" />
       <Type Name="APIResponse" Kind="Class" />
@@ -544,14 +571,10 @@
       <Type Name="AttachmentsExtensions" Kind="Class" />
       <Type Name="AttachmentView" Kind="Class" />
       <Type Name="AudioCard" Kind="Class" />
-      <Type Name="BasicAuthentication" Kind="Class" />
-      <Type Name="BasicAuthIdentity" Kind="Class" />
       <Type Name="BotAuthentication" Kind="Class" />
-      <Type Name="BotAuthenticationFromSetting" Kind="Class" />
       <Type Name="BotAuthenticator" Kind="Class" />
+      <Type Name="BotAuthenticator+EndorsementsValidator" Kind="Delegate" />
       <Type Name="BotData" Kind="Class" />
-      <Type Name="Bots" Kind="Class" />
-      <Type Name="BotsExtensions" Kind="Class" />
       <Type Name="BotState" Kind="Class" />
       <Type Name="BotStateExtensions" Kind="Class" />
       <Type Name="CardAction" Kind="Class" />
@@ -559,7 +582,6 @@
       <Type Name="ChannelAccount" Kind="Class" />
       <Type Name="ClaimsIdentityEx" Kind="Class" />
       <Type Name="ConnectorClient" Kind="Class" />
-      <Type Name="ConnectorClientCredentials" Kind="Class" />
       <Type Name="ConnectorClientExtensions" Kind="Class" />
       <Type Name="ContactRelationUpdateActionTypes" Kind="Class" />
       <Type Name="ConversationAccount" Kind="Class" />
@@ -568,11 +590,12 @@
       <Type Name="ConversationResourceResponse" Kind="Class" />
       <Type Name="Conversations" Kind="Class" />
       <Type Name="ConversationsExtensions" Kind="Class" />
+      <Type Name="EndOfConversationCodes" Kind="Class" />
+      <Type Name="EndorsementsRetriever" Kind="Class" />
       <Type Name="Entity" Kind="Class" />
       <Type Name="Error" Kind="Class" />
       <Type Name="ErrorCodes" Kind="Class" />
       <Type Name="ErrorHandling" Kind="Class" />
-      <Type Name="ErrorMessage" Kind="Class" />
       <Type Name="ErrorResponse" Kind="Class" />
       <Type Name="Extensions" Kind="Class" />
       <Type Name="Fact" Kind="Class" />
@@ -581,7 +604,6 @@
       <Type Name="HttpClientEx" Kind="Class" />
       <Type Name="IActivity" Kind="Interface" />
       <Type Name="IAttachments" Kind="Interface" />
-      <Type Name="IBots" Kind="Interface" />
       <Type Name="IBotState" Kind="Interface" />
       <Type Name="IConnectorClient" Kind="Interface" />
       <Type Name="IContactRelationUpdateActivity" Kind="Interface" />
@@ -589,23 +611,22 @@
       <Type Name="IConversationUpdateActivity" Kind="Interface" />
       <Type Name="ICredentialProvider" Kind="Interface" />
       <Type Name="IdentityToken" Kind="Class" />
+      <Type Name="IdentityTokenExtensions" Kind="Class" />
       <Type Name="IEndOfConversationActivity" Kind="Interface" />
       <Type Name="IEventActivity" Kind="Interface" />
+      <Type Name="IInstallationUpdateActivity" Kind="Interface" />
       <Type Name="IInvokeActivity" Kind="Interface" />
       <Type Name="IMessageActivity" Kind="Interface" />
-      <Type Name="IMessages" Kind="Interface" />
+      <Type Name="InputHints" Kind="Class" />
       <Type Name="IStateClient" Kind="Interface" />
       <Type Name="ITriggerActivity" Kind="Interface" />
       <Type Name="ITypingActivity" Kind="Interface" />
       <Type Name="JwtConfig" Kind="Class" />
       <Type Name="JwtTokenExtractor" Kind="Class" />
+      <Type Name="JwtTokenExtractor+EndorsementsValidator" Kind="Delegate" />
       <Type Name="JwtTokenRefresher" Kind="Class" />
-      <Type Name="Location" Kind="Class" />
       <Type Name="MediaUrl" Kind="Class" />
       <Type Name="Mention" Kind="Class" />
-      <Type Name="Message" Kind="Class" />
-      <Type Name="Messages" Kind="Class" />
-      <Type Name="MessagesExtensions" Kind="Class" />
       <Type Name="MicrosoftAppCredentials" Kind="Class" />
       <Type Name="MicrosoftAppCredentials+OAuthException" Kind="Class" />
       <Type Name="MicrosoftAppCredentials+OAuthResponse" Kind="Class" />
@@ -619,10 +640,30 @@
       <Type Name="StateClient" Kind="Class" />
       <Type Name="StateClientExtensions" Kind="Class" />
       <Type Name="StaticCredentialProvider" Kind="Class" />
+      <Type Name="SuggestedActions" Kind="Class" />
       <Type Name="TextFormatTypes" Kind="Class" />
       <Type Name="ThumbnailCard" Kind="Class" />
       <Type Name="ThumbnailUrl" Kind="Class" />
       <Type Name="VideoCard" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Bot.Connector.Payments">
+      <Type Name="MicrosoftPayMethodData" Kind="Class" />
+      <Type Name="PaymentAddress" Kind="Class" />
+      <Type Name="PaymentCurrencyAmount" Kind="Class" />
+      <Type Name="PaymentDetails" Kind="Class" />
+      <Type Name="PaymentDetailsModifier" Kind="Class" />
+      <Type Name="PaymentItem" Kind="Class" />
+      <Type Name="PaymentMethodData" Kind="Class" />
+      <Type Name="PaymentOperations" Kind="Class" />
+      <Type Name="PaymentOptions" Kind="Class" />
+      <Type Name="PaymentRequest" Kind="Class" />
+      <Type Name="PaymentRequestComplete" Kind="Class" />
+      <Type Name="PaymentRequestCompleteResult" Kind="Class" />
+      <Type Name="PaymentRequestUpdate" Kind="Class" />
+      <Type Name="PaymentRequestUpdateResult" Kind="Class" />
+      <Type Name="PaymentResponse" Kind="Class" />
+      <Type Name="PaymentShippingOption" Kind="Class" />
+      <Type Name="PaymentShippingTypes" Kind="Class" />
     </Namespace>
   </Types>
   <Title>Untitled</Title>
@@ -1461,6 +1502,30 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
+        <Target Type="T:Microsoft.Bot.Builder.Dialogs.IChannelCapability" />
+      </Targets>
+      <Member MemberName="ShouldSetInputHint">
+        <MemberSignature Language="C#" Value="public static bool ShouldSetInputHint (this Microsoft.Bot.Builder.Dialogs.IChannelCapability channelCapability, Microsoft.Bot.Connector.IMessageActivity activity);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ShouldSetInputHint(class Microsoft.Bot.Builder.Dialogs.IChannelCapability channelCapability, class Microsoft.Bot.Connector.IMessageActivity activity) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ChannelCapabilityEx.ShouldSetInputHint(Microsoft.Bot.Builder.Dialogs.IChannelCapability,Microsoft.Bot.Connector.IMessageActivity)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Boolean</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="channelCapability" Type="Microsoft.Bot.Builder.Dialogs.IChannelCapability" RefType="this" />
+          <Parameter Name="activity" Type="Microsoft.Bot.Connector.IMessageActivity" />
+        </Parameters>
+        <Docs>
+          <param name="channelCapability">To be added.</param>
+          <param name="activity">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Builder.Dialogs.ChannelCapabilityEx" Member="M:Microsoft.Bot.Builder.Dialogs.ChannelCapabilityEx.ShouldSetInputHint(Microsoft.Bot.Builder.Dialogs.IChannelCapability,Microsoft.Bot.Connector.IMessageActivity)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
         <Target Type="T:Microsoft.Bot.Connector.IMessageActivity" />
       </Targets>
       <Member MemberName="AddHeroCard&lt;T&gt;">
@@ -1525,10 +1590,34 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
+        <Target Type="T:Microsoft.Bot.Builder.Dialogs.IDialogContext" />
+      </Targets>
+      <Member MemberName="EndConversation">
+        <MemberSignature Language="C#" Value="public static void EndConversation (this Microsoft.Bot.Builder.Dialogs.IDialogContext context, string code);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig void EndConversation(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, string code) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Extensions.EndConversation(Microsoft.Bot.Builder.Dialogs.IDialogContext,System.String)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Void</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.IDialogContext" RefType="this" />
+          <Parameter Name="code" Type="System.String" />
+        </Parameters>
+        <Docs>
+          <param name="context">To be added.</param>
+          <param name="code">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Builder.Dialogs.Extensions" Member="M:Microsoft.Bot.Builder.Dialogs.Extensions.EndConversation(Microsoft.Bot.Builder.Dialogs.IDialogContext,System.String)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
         <Target Type="T:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack" />
       </Targets>
       <Member MemberName="Forward&lt;R&gt;">
-        <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task Forward&lt;R&gt; (this Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack stack, Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt; child, Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;R&gt; resume, Microsoft.Bot.Connector.IMessageActivity message, System.Threading.CancellationToken token);" />
+        <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task Forward&lt;R&gt; (this Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack stack, Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt; child, Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;R&gt; resume, Microsoft.Bot.Connector.IMessageActivity message, System.Threading.CancellationToken token = null);" />
         <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task Forward&lt;R&gt;(class Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack stack, class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!R&gt; child, class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;!!R&gt; resume, class Microsoft.Bot.Connector.IMessageActivity message, valuetype System.Threading.CancellationToken token) cil managed" />
         <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Extensions.Forward``1(Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack,Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)" />
         <MemberType>ExtensionMethod</MemberType>
@@ -1587,6 +1676,64 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
+        <Target Type="T:Microsoft.Bot.Builder.Dialogs.IBotDataBag" />
+      </Targets>
+      <Member MemberName="GetValue&lt;T&gt;">
+        <MemberSignature Language="C#" Value="public static T GetValue&lt;T&gt; (this Microsoft.Bot.Builder.Dialogs.IBotDataBag bag, string key);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T GetValue&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IBotDataBag bag, string key) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Extensions.GetValue``1(Microsoft.Bot.Builder.Dialogs.IBotDataBag,System.String)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>T</ReturnType>
+        </ReturnValue>
+        <TypeParameters>
+          <TypeParameter Name="T" />
+        </TypeParameters>
+        <Parameters>
+          <Parameter Name="bag" Type="Microsoft.Bot.Builder.Dialogs.IBotDataBag" RefType="this" />
+          <Parameter Name="key" Type="System.String" />
+        </Parameters>
+        <Docs>
+          <typeparam name="T">To be added.</typeparam>
+          <param name="bag">To be added.</param>
+          <param name="key">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Builder.Dialogs.Extensions" Member="M:Microsoft.Bot.Builder.Dialogs.Extensions.GetValue``1(Microsoft.Bot.Builder.Dialogs.IBotDataBag,System.String)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Bot.Builder.Dialogs.IBotDataBag" />
+      </Targets>
+      <Member MemberName="GetValueOrDefault&lt;T&gt;">
+        <MemberSignature Language="C#" Value="public static T GetValueOrDefault&lt;T&gt; (this Microsoft.Bot.Builder.Dialogs.IBotDataBag bag, string key, T defaultValue = null);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T GetValueOrDefault&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IBotDataBag bag, string key, !!T defaultValue) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Extensions.GetValueOrDefault``1(Microsoft.Bot.Builder.Dialogs.IBotDataBag,System.String,``0)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>T</ReturnType>
+        </ReturnValue>
+        <TypeParameters>
+          <TypeParameter Name="T" />
+        </TypeParameters>
+        <Parameters>
+          <Parameter Name="bag" Type="Microsoft.Bot.Builder.Dialogs.IBotDataBag" RefType="this" />
+          <Parameter Name="key" Type="System.String" />
+          <Parameter Name="defaultValue" Type="T" />
+        </Parameters>
+        <Docs>
+          <typeparam name="T">To be added.</typeparam>
+          <param name="bag">To be added.</param>
+          <param name="key">To be added.</param>
+          <param name="defaultValue">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Builder.Dialogs.Extensions" Member="M:Microsoft.Bot.Builder.Dialogs.Extensions.GetValueOrDefault``1(Microsoft.Bot.Builder.Dialogs.IBotDataBag,System.String,``0)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
         <Target Type="T:Microsoft.Bot.Builder.Dialogs.ResumptionCookie" />
       </Targets>
       <Member MemberName="GZipSerialize">
@@ -1633,6 +1780,142 @@
           <summary>To be added.</summary>
         </Docs>
         <Link Type="Microsoft.Bot.Builder.Dialogs.Extensions" Member="M:Microsoft.Bot.Builder.Dialogs.Extensions.PostAsync(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.String,System.String,System.Threading.CancellationToken)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Bot.Builder.Dialogs.IPromptRecognizer" />
+      </Targets>
+      <Member MemberName="RecognizeDouble">
+        <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;double&gt;&gt; RecognizeDouble (this Microsoft.Bot.Builder.Dialogs.IPromptRecognizer recognizer, Microsoft.Bot.Connector.IMessageActivity message);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;float64&gt;&gt; RecognizeDouble(class Microsoft.Bot.Builder.Dialogs.IPromptRecognizer recognizer, class Microsoft.Bot.Connector.IMessageActivity message) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Extensions.RecognizeDouble(Microsoft.Bot.Builder.Dialogs.IPromptRecognizer,Microsoft.Bot.Connector.IMessageActivity)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;System.Double&gt;&gt;</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="recognizer" Type="Microsoft.Bot.Builder.Dialogs.IPromptRecognizer" RefType="this" />
+          <Parameter Name="message" Type="Microsoft.Bot.Connector.IMessageActivity" />
+        </Parameters>
+        <Docs>
+          <param name="recognizer">To be added.</param>
+          <param name="message">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Builder.Dialogs.Extensions" Member="M:Microsoft.Bot.Builder.Dialogs.Extensions.RecognizeDouble(Microsoft.Bot.Builder.Dialogs.IPromptRecognizer,Microsoft.Bot.Connector.IMessageActivity)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Bot.Builder.Dialogs.IPromptRecognizer" />
+      </Targets>
+      <Member MemberName="RecognizeDoubleInRange">
+        <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;double&gt;&gt; RecognizeDoubleInRange (this Microsoft.Bot.Builder.Dialogs.IPromptRecognizer recognizer, Microsoft.Bot.Connector.IMessageActivity message, Nullable&lt;double&gt; min, Nullable&lt;double&gt; max);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;float64&gt;&gt; RecognizeDoubleInRange(class Microsoft.Bot.Builder.Dialogs.IPromptRecognizer recognizer, class Microsoft.Bot.Connector.IMessageActivity message, valuetype System.Nullable`1&lt;float64&gt; min, valuetype System.Nullable`1&lt;float64&gt; max) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Extensions.RecognizeDoubleInRange(Microsoft.Bot.Builder.Dialogs.IPromptRecognizer,Microsoft.Bot.Connector.IMessageActivity,System.Nullable{System.Double},System.Nullable{System.Double})" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;System.Double&gt;&gt;</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="recognizer" Type="Microsoft.Bot.Builder.Dialogs.IPromptRecognizer" RefType="this" />
+          <Parameter Name="message" Type="Microsoft.Bot.Connector.IMessageActivity" />
+          <Parameter Name="min" Type="System.Nullable&lt;System.Double&gt;" />
+          <Parameter Name="max" Type="System.Nullable&lt;System.Double&gt;" />
+        </Parameters>
+        <Docs>
+          <param name="recognizer">To be added.</param>
+          <param name="message">To be added.</param>
+          <param name="min">To be added.</param>
+          <param name="max">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Builder.Dialogs.Extensions" Member="M:Microsoft.Bot.Builder.Dialogs.Extensions.RecognizeDoubleInRange(Microsoft.Bot.Builder.Dialogs.IPromptRecognizer,Microsoft.Bot.Connector.IMessageActivity,System.Nullable{System.Double},System.Nullable{System.Double})" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Bot.Builder.Dialogs.IPromptRecognizer" />
+      </Targets>
+      <Member MemberName="RecognizeInteger">
+        <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;long&gt;&gt; RecognizeInteger (this Microsoft.Bot.Builder.Dialogs.IPromptRecognizer recognizer, Microsoft.Bot.Connector.IMessageActivity message);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;int64&gt;&gt; RecognizeInteger(class Microsoft.Bot.Builder.Dialogs.IPromptRecognizer recognizer, class Microsoft.Bot.Connector.IMessageActivity message) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Extensions.RecognizeInteger(Microsoft.Bot.Builder.Dialogs.IPromptRecognizer,Microsoft.Bot.Connector.IMessageActivity)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;System.Int64&gt;&gt;</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="recognizer" Type="Microsoft.Bot.Builder.Dialogs.IPromptRecognizer" RefType="this" />
+          <Parameter Name="message" Type="Microsoft.Bot.Connector.IMessageActivity" />
+        </Parameters>
+        <Docs>
+          <param name="recognizer">To be added.</param>
+          <param name="message">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Builder.Dialogs.Extensions" Member="M:Microsoft.Bot.Builder.Dialogs.Extensions.RecognizeInteger(Microsoft.Bot.Builder.Dialogs.IPromptRecognizer,Microsoft.Bot.Connector.IMessageActivity)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Bot.Builder.Dialogs.IPromptRecognizer" />
+      </Targets>
+      <Member MemberName="RecognizeIntegerInRange">
+        <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;long&gt;&gt; RecognizeIntegerInRange (this Microsoft.Bot.Builder.Dialogs.IPromptRecognizer recognizer, Microsoft.Bot.Connector.IMessageActivity message, Nullable&lt;long&gt; min, Nullable&lt;long&gt; max);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;int64&gt;&gt; RecognizeIntegerInRange(class Microsoft.Bot.Builder.Dialogs.IPromptRecognizer recognizer, class Microsoft.Bot.Connector.IMessageActivity message, valuetype System.Nullable`1&lt;int64&gt; min, valuetype System.Nullable`1&lt;int64&gt; max) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Extensions.RecognizeIntegerInRange(Microsoft.Bot.Builder.Dialogs.IPromptRecognizer,Microsoft.Bot.Connector.IMessageActivity,System.Nullable{System.Int64},System.Nullable{System.Int64})" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;System.Int64&gt;&gt;</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="recognizer" Type="Microsoft.Bot.Builder.Dialogs.IPromptRecognizer" RefType="this" />
+          <Parameter Name="message" Type="Microsoft.Bot.Connector.IMessageActivity" />
+          <Parameter Name="min" Type="System.Nullable&lt;System.Int64&gt;" />
+          <Parameter Name="max" Type="System.Nullable&lt;System.Int64&gt;" />
+        </Parameters>
+        <Docs>
+          <param name="recognizer">To be added.</param>
+          <param name="message">To be added.</param>
+          <param name="min">To be added.</param>
+          <param name="max">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Builder.Dialogs.Extensions" Member="M:Microsoft.Bot.Builder.Dialogs.Extensions.RecognizeIntegerInRange(Microsoft.Bot.Builder.Dialogs.IPromptRecognizer,Microsoft.Bot.Connector.IMessageActivity,System.Nullable{System.Int64},System.Nullable{System.Int64})" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
+      </Targets>
+      <Member MemberName="SayAsync">
+        <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task SayAsync (this Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser, string text, string speak = null, Microsoft.Bot.Builder.Dialogs.MessageOptions options = null, string locale = null, System.Threading.CancellationToken cancellationToken = null);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task SayAsync(class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser, string text, string speak, class Microsoft.Bot.Builder.Dialogs.MessageOptions options, string locale, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Extensions.SayAsync(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.String,System.String,Microsoft.Bot.Builder.Dialogs.MessageOptions,System.String,System.Threading.CancellationToken)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Threading.Tasks.Task</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="botToUser" Type="Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" RefType="this" />
+          <Parameter Name="text" Type="System.String" />
+          <Parameter Name="speak" Type="System.String" />
+          <Parameter Name="options" Type="Microsoft.Bot.Builder.Dialogs.MessageOptions" />
+          <Parameter Name="locale" Type="System.String" />
+          <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        </Parameters>
+        <Docs>
+          <param name="botToUser">To be added.</param>
+          <param name="text">To be added.</param>
+          <param name="speak">To be added.</param>
+          <param name="options">To be added.</param>
+          <param name="locale">To be added.</param>
+          <param name="cancellationToken">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Builder.Dialogs.Extensions" Member="M:Microsoft.Bot.Builder.Dialogs.Extensions.SayAsync(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.String,System.String,Microsoft.Bot.Builder.Dialogs.MessageOptions,System.String,System.Threading.CancellationToken)" />
       </Member>
     </ExtensionMethod>
     <ExtensionMethod>
@@ -2633,6 +2916,32 @@
         <Target Type="T:Microsoft.Bot.Builder.Luis.ILuisService" />
       </Targets>
       <Member MemberName="QueryAsync">
+        <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Luis.Models.LuisResult&gt; QueryAsync (this Microsoft.Bot.Builder.Luis.ILuisService service, Microsoft.Bot.Builder.Luis.LuisRequest request, System.Threading.CancellationToken token);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Luis.Models.LuisResult&gt; QueryAsync(class Microsoft.Bot.Builder.Luis.ILuisService service, class Microsoft.Bot.Builder.Luis.LuisRequest request, valuetype System.Threading.CancellationToken token) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Extensions.QueryAsync(Microsoft.Bot.Builder.Luis.ILuisService,Microsoft.Bot.Builder.Luis.LuisRequest,System.Threading.CancellationToken)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Luis.Models.LuisResult&gt;</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="service" Type="Microsoft.Bot.Builder.Luis.ILuisService" RefType="this" />
+          <Parameter Name="request" Type="Microsoft.Bot.Builder.Luis.LuisRequest" />
+          <Parameter Name="token" Type="System.Threading.CancellationToken" />
+        </Parameters>
+        <Docs>
+          <param name="service">To be added.</param>
+          <param name="request">To be added.</param>
+          <param name="token">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Builder.Luis.Extensions" Member="M:Microsoft.Bot.Builder.Luis.Extensions.QueryAsync(Microsoft.Bot.Builder.Luis.ILuisService,Microsoft.Bot.Builder.Luis.LuisRequest,System.Threading.CancellationToken)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Bot.Builder.Luis.ILuisService" />
+      </Targets>
+      <Member MemberName="QueryAsync">
         <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Luis.Models.LuisResult&gt; QueryAsync (this Microsoft.Bot.Builder.Luis.ILuisService service, string text, System.Threading.CancellationToken token);" />
         <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Luis.Models.LuisResult&gt; QueryAsync(class Microsoft.Bot.Builder.Luis.ILuisService service, string text, valuetype System.Threading.CancellationToken token) cil managed" />
         <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Extensions.QueryAsync(Microsoft.Bot.Builder.Luis.ILuisService,System.String,System.Threading.CancellationToken)" />
@@ -3338,6 +3647,288 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
+        <Target Type="T:Microsoft.Bot.Connector.IActivity" />
+      </Targets>
+      <Member MemberName="GetActivityType">
+        <MemberSignature Language="C#" Value="public static string GetActivityType (this Microsoft.Bot.Connector.IActivity activity);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetActivityType(class Microsoft.Bot.Connector.IActivity activity) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ActivityExtensions.GetActivityType(Microsoft.Bot.Connector.IActivity)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.String</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="activity" Type="Microsoft.Bot.Connector.IActivity" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="activity">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Connector.ActivityExtensions" Member="M:Microsoft.Bot.Connector.ActivityExtensions.GetActivityType(Microsoft.Bot.Connector.IActivity)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Bot.Connector.IActivity" />
+      </Targets>
+      <Member MemberName="GetChannelData&lt;TypeT&gt;">
+        <MemberSignature Language="C#" Value="public static TypeT GetChannelData&lt;TypeT&gt; (this Microsoft.Bot.Connector.IActivity activity);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TypeT GetChannelData&lt;TypeT&gt;(class Microsoft.Bot.Connector.IActivity activity) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ActivityExtensions.GetChannelData``1(Microsoft.Bot.Connector.IActivity)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>TypeT</ReturnType>
+        </ReturnValue>
+        <TypeParameters>
+          <TypeParameter Name="TypeT" />
+        </TypeParameters>
+        <Parameters>
+          <Parameter Name="activity" Type="Microsoft.Bot.Connector.IActivity" RefType="this" />
+        </Parameters>
+        <Docs>
+          <typeparam name="TypeT">To be added.</typeparam>
+          <param name="activity">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Connector.ActivityExtensions" Member="M:Microsoft.Bot.Connector.ActivityExtensions.GetChannelData``1(Microsoft.Bot.Connector.IActivity)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Bot.Connector.IMessageActivity" />
+      </Targets>
+      <Member MemberName="GetMentions">
+        <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.Mention[] GetMentions (this Microsoft.Bot.Connector.IMessageActivity activity);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.Mention[] GetMentions(class Microsoft.Bot.Connector.IMessageActivity activity) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ActivityExtensions.GetMentions(Microsoft.Bot.Connector.IMessageActivity)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>Microsoft.Bot.Connector.Mention[]</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="activity" Type="Microsoft.Bot.Connector.IMessageActivity" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="activity">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Connector.ActivityExtensions" Member="M:Microsoft.Bot.Connector.ActivityExtensions.GetMentions(Microsoft.Bot.Connector.IMessageActivity)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Bot.Connector.IActivity" />
+      </Targets>
+      <Member MemberName="GetStateClient">
+        <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.StateClient GetStateClient (this Microsoft.Bot.Connector.IActivity activity, Microsoft.Bot.Connector.MicrosoftAppCredentials credentials, string serviceUrl = null, System.Net.Http.DelegatingHandler[] handlers);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.StateClient GetStateClient(class Microsoft.Bot.Connector.IActivity activity, class Microsoft.Bot.Connector.MicrosoftAppCredentials credentials, string serviceUrl, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ActivityExtensions.GetStateClient(Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Connector.MicrosoftAppCredentials,System.String,System.Net.Http.DelegatingHandler[])" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>Microsoft.Bot.Connector.StateClient</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="activity" Type="Microsoft.Bot.Connector.IActivity" RefType="this" />
+          <Parameter Name="credentials" Type="Microsoft.Bot.Connector.MicrosoftAppCredentials" />
+          <Parameter Name="serviceUrl" Type="System.String" />
+          <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
+            <Attributes>
+              <Attribute>
+                <AttributeName>System.ParamArray</AttributeName>
+              </Attribute>
+            </Attributes>
+          </Parameter>
+        </Parameters>
+        <Docs>
+          <param name="activity">To be added.</param>
+          <param name="credentials">To be added.</param>
+          <param name="serviceUrl">To be added.</param>
+          <param name="handlers">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Connector.ActivityExtensions" Member="M:Microsoft.Bot.Connector.ActivityExtensions.GetStateClient(Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Connector.MicrosoftAppCredentials,System.String,System.Net.Http.DelegatingHandler[])" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Bot.Connector.IActivity" />
+      </Targets>
+      <Member MemberName="GetStateClient">
+        <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.StateClient GetStateClient (this Microsoft.Bot.Connector.IActivity activity, string microsoftAppId = null, string microsoftAppPassword = null, string serviceUrl = null, System.Net.Http.DelegatingHandler[] handlers);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.StateClient GetStateClient(class Microsoft.Bot.Connector.IActivity activity, string microsoftAppId, string microsoftAppPassword, string serviceUrl, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ActivityExtensions.GetStateClient(Microsoft.Bot.Connector.IActivity,System.String,System.String,System.String,System.Net.Http.DelegatingHandler[])" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>Microsoft.Bot.Connector.StateClient</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="activity" Type="Microsoft.Bot.Connector.IActivity" RefType="this" />
+          <Parameter Name="microsoftAppId" Type="System.String" />
+          <Parameter Name="microsoftAppPassword" Type="System.String" />
+          <Parameter Name="serviceUrl" Type="System.String" />
+          <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
+            <Attributes>
+              <Attribute>
+                <AttributeName>System.ParamArray</AttributeName>
+              </Attribute>
+            </Attributes>
+          </Parameter>
+        </Parameters>
+        <Docs>
+          <param name="activity">To be added.</param>
+          <param name="microsoftAppId">To be added.</param>
+          <param name="microsoftAppPassword">To be added.</param>
+          <param name="serviceUrl">To be added.</param>
+          <param name="handlers">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Connector.ActivityExtensions" Member="M:Microsoft.Bot.Connector.ActivityExtensions.GetStateClient(Microsoft.Bot.Connector.IActivity,System.String,System.String,System.String,System.Net.Http.DelegatingHandler[])" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Bot.Connector.IMessageActivity" />
+      </Targets>
+      <Member MemberName="HasContent">
+        <MemberSignature Language="C#" Value="public static bool HasContent (this Microsoft.Bot.Connector.IMessageActivity activity);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasContent(class Microsoft.Bot.Connector.IMessageActivity activity) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ActivityExtensions.HasContent(Microsoft.Bot.Connector.IMessageActivity)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Boolean</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="activity" Type="Microsoft.Bot.Connector.IMessageActivity" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="activity">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Connector.ActivityExtensions" Member="M:Microsoft.Bot.Connector.ActivityExtensions.HasContent(Microsoft.Bot.Connector.IMessageActivity)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Bot.Connector.IMessageActivity" />
+      </Targets>
+      <Member MemberName="MentionsId">
+        <MemberSignature Language="C#" Value="public static bool MentionsId (this Microsoft.Bot.Connector.IMessageActivity activity, string id);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool MentionsId(class Microsoft.Bot.Connector.IMessageActivity activity, string id) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ActivityExtensions.MentionsId(Microsoft.Bot.Connector.IMessageActivity,System.String)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Boolean</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="activity" Type="Microsoft.Bot.Connector.IMessageActivity" RefType="this" />
+          <Parameter Name="id" Type="System.String" />
+        </Parameters>
+        <Docs>
+          <param name="activity">To be added.</param>
+          <param name="id">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Connector.ActivityExtensions" Member="M:Microsoft.Bot.Connector.ActivityExtensions.MentionsId(Microsoft.Bot.Connector.IMessageActivity,System.String)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Bot.Connector.IMessageActivity" />
+      </Targets>
+      <Member MemberName="MentionsRecipient">
+        <MemberSignature Language="C#" Value="public static bool MentionsRecipient (this Microsoft.Bot.Connector.IMessageActivity activity);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool MentionsRecipient(class Microsoft.Bot.Connector.IMessageActivity activity) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ActivityExtensions.MentionsRecipient(Microsoft.Bot.Connector.IMessageActivity)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Boolean</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="activity" Type="Microsoft.Bot.Connector.IMessageActivity" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="activity">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Connector.ActivityExtensions" Member="M:Microsoft.Bot.Connector.ActivityExtensions.MentionsRecipient(Microsoft.Bot.Connector.IMessageActivity)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Bot.Connector.IMessageActivity" />
+      </Targets>
+      <Member MemberName="RemoveMentionText">
+        <MemberSignature Language="C#" Value="public static string RemoveMentionText (this Microsoft.Bot.Connector.IMessageActivity activity, string id);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig string RemoveMentionText(class Microsoft.Bot.Connector.IMessageActivity activity, string id) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ActivityExtensions.RemoveMentionText(Microsoft.Bot.Connector.IMessageActivity,System.String)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.String</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="activity" Type="Microsoft.Bot.Connector.IMessageActivity" RefType="this" />
+          <Parameter Name="id" Type="System.String" />
+        </Parameters>
+        <Docs>
+          <param name="activity">To be added.</param>
+          <param name="id">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Connector.ActivityExtensions" Member="M:Microsoft.Bot.Connector.ActivityExtensions.RemoveMentionText(Microsoft.Bot.Connector.IMessageActivity,System.String)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Bot.Connector.IMessageActivity" />
+      </Targets>
+      <Member MemberName="RemoveRecipientMention">
+        <MemberSignature Language="C#" Value="public static string RemoveRecipientMention (this Microsoft.Bot.Connector.IMessageActivity activity);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig string RemoveRecipientMention(class Microsoft.Bot.Connector.IMessageActivity activity) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ActivityExtensions.RemoveRecipientMention(Microsoft.Bot.Connector.IMessageActivity)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.String</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="activity" Type="Microsoft.Bot.Connector.IMessageActivity" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="activity">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Connector.ActivityExtensions" Member="M:Microsoft.Bot.Connector.ActivityExtensions.RemoveRecipientMention(Microsoft.Bot.Connector.IMessageActivity)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Bot.Connector.IActivity" />
+      </Targets>
+      <Member MemberName="TryGetChannelData&lt;TypeT&gt;">
+        <MemberSignature Language="C#" Value="public static bool TryGetChannelData&lt;TypeT&gt; (this Microsoft.Bot.Connector.IActivity activity, out TypeT instance);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetChannelData&lt;TypeT&gt;(class Microsoft.Bot.Connector.IActivity activity, !!TypeT instance) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ActivityExtensions.TryGetChannelData``1(Microsoft.Bot.Connector.IActivity,``0@)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Boolean</ReturnType>
+        </ReturnValue>
+        <TypeParameters>
+          <TypeParameter Name="TypeT" />
+        </TypeParameters>
+        <Parameters>
+          <Parameter Name="activity" Type="Microsoft.Bot.Connector.IActivity" RefType="this" />
+          <Parameter Name="instance" Type="TypeT&amp;" RefType="out" />
+        </Parameters>
+        <Docs>
+          <typeparam name="TypeT">To be added.</typeparam>
+          <param name="activity">To be added.</param>
+          <param name="instance">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Connector.ActivityExtensions" Member="M:Microsoft.Bot.Connector.ActivityExtensions.TryGetChannelData``1(Microsoft.Bot.Connector.IActivity,``0@)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
         <Target Type="T:Microsoft.Bot.Connector.IAttachments" />
       </Targets>
       <Member MemberName="GetAttachment">
@@ -3492,350 +4083,6 @@
           <summary>To be added.</summary>
         </Docs>
         <Link Type="Microsoft.Bot.Connector.AttachmentsExtensions" Member="M:Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentStreamAsync(Microsoft.Bot.Connector.IAttachments,System.String,System.String,System.Threading.CancellationToken)" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Bot.Connector.IBots" />
-      </Targets>
-      <Member MemberName="GetConversationData">
-        <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.BotData GetConversationData (this Microsoft.Bot.Connector.IBots operations, string botId, string conversationId);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.BotData GetConversationData(class Microsoft.Bot.Connector.IBots operations, string botId, string conversationId) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotsExtensions.GetConversationData(Microsoft.Bot.Connector.IBots,System.String,System.String)" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>Microsoft.Bot.Connector.BotData</ReturnType>
-        </ReturnValue>
-        <Parameters>
-          <Parameter Name="operations" Type="Microsoft.Bot.Connector.IBots" RefType="this" />
-          <Parameter Name="botId" Type="System.String" />
-          <Parameter Name="conversationId" Type="System.String" />
-        </Parameters>
-        <Docs>
-          <param name="operations">To be added.</param>
-          <param name="botId">To be added.</param>
-          <param name="conversationId">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Connector.BotsExtensions" Member="M:Microsoft.Bot.Connector.BotsExtensions.GetConversationData(Microsoft.Bot.Connector.IBots,System.String,System.String)" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Bot.Connector.IBots" />
-      </Targets>
-      <Member MemberName="GetConversationDataAsync">
-        <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; GetConversationDataAsync (this Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, System.Threading.CancellationToken cancellationToken = null);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; GetConversationDataAsync(class Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotsExtensions.GetConversationDataAsync(Microsoft.Bot.Connector.IBots,System.String,System.String,System.Threading.CancellationToken)" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;</ReturnType>
-        </ReturnValue>
-        <Parameters>
-          <Parameter Name="operations" Type="Microsoft.Bot.Connector.IBots" RefType="this" />
-          <Parameter Name="botId" Type="System.String" />
-          <Parameter Name="conversationId" Type="System.String" />
-          <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-        </Parameters>
-        <Docs>
-          <param name="operations">To be added.</param>
-          <param name="botId">To be added.</param>
-          <param name="conversationId">To be added.</param>
-          <param name="cancellationToken">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Connector.BotsExtensions" Member="M:Microsoft.Bot.Connector.BotsExtensions.GetConversationDataAsync(Microsoft.Bot.Connector.IBots,System.String,System.String,System.Threading.CancellationToken)" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Bot.Connector.IBots" />
-      </Targets>
-      <Member MemberName="GetPerUserConversationData">
-        <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.BotData GetPerUserConversationData (this Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, string userId);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.BotData GetPerUserConversationData(class Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, string userId) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotsExtensions.GetPerUserConversationData(Microsoft.Bot.Connector.IBots,System.String,System.String,System.String)" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>Microsoft.Bot.Connector.BotData</ReturnType>
-        </ReturnValue>
-        <Parameters>
-          <Parameter Name="operations" Type="Microsoft.Bot.Connector.IBots" RefType="this" />
-          <Parameter Name="botId" Type="System.String" />
-          <Parameter Name="conversationId" Type="System.String" />
-          <Parameter Name="userId" Type="System.String" />
-        </Parameters>
-        <Docs>
-          <param name="operations">To be added.</param>
-          <param name="botId">To be added.</param>
-          <param name="conversationId">To be added.</param>
-          <param name="userId">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Connector.BotsExtensions" Member="M:Microsoft.Bot.Connector.BotsExtensions.GetPerUserConversationData(Microsoft.Bot.Connector.IBots,System.String,System.String,System.String)" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Bot.Connector.IBots" />
-      </Targets>
-      <Member MemberName="GetPerUserConversationDataAsync">
-        <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; GetPerUserConversationDataAsync (this Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, string userId, System.Threading.CancellationToken cancellationToken = null);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; GetPerUserConversationDataAsync(class Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, string userId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotsExtensions.GetPerUserConversationDataAsync(Microsoft.Bot.Connector.IBots,System.String,System.String,System.String,System.Threading.CancellationToken)" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;</ReturnType>
-        </ReturnValue>
-        <Parameters>
-          <Parameter Name="operations" Type="Microsoft.Bot.Connector.IBots" RefType="this" />
-          <Parameter Name="botId" Type="System.String" />
-          <Parameter Name="conversationId" Type="System.String" />
-          <Parameter Name="userId" Type="System.String" />
-          <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-        </Parameters>
-        <Docs>
-          <param name="operations">To be added.</param>
-          <param name="botId">To be added.</param>
-          <param name="conversationId">To be added.</param>
-          <param name="userId">To be added.</param>
-          <param name="cancellationToken">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Connector.BotsExtensions" Member="M:Microsoft.Bot.Connector.BotsExtensions.GetPerUserConversationDataAsync(Microsoft.Bot.Connector.IBots,System.String,System.String,System.String,System.Threading.CancellationToken)" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Bot.Connector.IBots" />
-      </Targets>
-      <Member MemberName="GetUserData">
-        <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.BotData GetUserData (this Microsoft.Bot.Connector.IBots operations, string botId, string userId);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.BotData GetUserData(class Microsoft.Bot.Connector.IBots operations, string botId, string userId) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotsExtensions.GetUserData(Microsoft.Bot.Connector.IBots,System.String,System.String)" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>Microsoft.Bot.Connector.BotData</ReturnType>
-        </ReturnValue>
-        <Parameters>
-          <Parameter Name="operations" Type="Microsoft.Bot.Connector.IBots" RefType="this" />
-          <Parameter Name="botId" Type="System.String" />
-          <Parameter Name="userId" Type="System.String" />
-        </Parameters>
-        <Docs>
-          <param name="operations">To be added.</param>
-          <param name="botId">To be added.</param>
-          <param name="userId">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Connector.BotsExtensions" Member="M:Microsoft.Bot.Connector.BotsExtensions.GetUserData(Microsoft.Bot.Connector.IBots,System.String,System.String)" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Bot.Connector.IBots" />
-      </Targets>
-      <Member MemberName="GetUserDataAsync">
-        <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; GetUserDataAsync (this Microsoft.Bot.Connector.IBots operations, string botId, string userId, System.Threading.CancellationToken cancellationToken = null);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; GetUserDataAsync(class Microsoft.Bot.Connector.IBots operations, string botId, string userId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotsExtensions.GetUserDataAsync(Microsoft.Bot.Connector.IBots,System.String,System.String,System.Threading.CancellationToken)" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;</ReturnType>
-        </ReturnValue>
-        <Parameters>
-          <Parameter Name="operations" Type="Microsoft.Bot.Connector.IBots" RefType="this" />
-          <Parameter Name="botId" Type="System.String" />
-          <Parameter Name="userId" Type="System.String" />
-          <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-        </Parameters>
-        <Docs>
-          <param name="operations">To be added.</param>
-          <param name="botId">To be added.</param>
-          <param name="userId">To be added.</param>
-          <param name="cancellationToken">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Connector.BotsExtensions" Member="M:Microsoft.Bot.Connector.BotsExtensions.GetUserDataAsync(Microsoft.Bot.Connector.IBots,System.String,System.String,System.Threading.CancellationToken)" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Bot.Connector.IBots" />
-      </Targets>
-      <Member MemberName="SetConversationData">
-        <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.BotData SetConversationData (this Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, Microsoft.Bot.Connector.BotData botData);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.BotData SetConversationData(class Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, class Microsoft.Bot.Connector.BotData botData) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotsExtensions.SetConversationData(Microsoft.Bot.Connector.IBots,System.String,System.String,Microsoft.Bot.Connector.BotData)" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>Microsoft.Bot.Connector.BotData</ReturnType>
-        </ReturnValue>
-        <Parameters>
-          <Parameter Name="operations" Type="Microsoft.Bot.Connector.IBots" RefType="this" />
-          <Parameter Name="botId" Type="System.String" />
-          <Parameter Name="conversationId" Type="System.String" />
-          <Parameter Name="botData" Type="Microsoft.Bot.Connector.BotData" />
-        </Parameters>
-        <Docs>
-          <param name="operations">To be added.</param>
-          <param name="botId">To be added.</param>
-          <param name="conversationId">To be added.</param>
-          <param name="botData">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Connector.BotsExtensions" Member="M:Microsoft.Bot.Connector.BotsExtensions.SetConversationData(Microsoft.Bot.Connector.IBots,System.String,System.String,Microsoft.Bot.Connector.BotData)" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Bot.Connector.IBots" />
-      </Targets>
-      <Member MemberName="SetConversationDataAsync">
-        <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; SetConversationDataAsync (this Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, Microsoft.Bot.Connector.BotData botData, System.Threading.CancellationToken cancellationToken = null);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; SetConversationDataAsync(class Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, class Microsoft.Bot.Connector.BotData botData, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotsExtensions.SetConversationDataAsync(Microsoft.Bot.Connector.IBots,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;</ReturnType>
-        </ReturnValue>
-        <Parameters>
-          <Parameter Name="operations" Type="Microsoft.Bot.Connector.IBots" RefType="this" />
-          <Parameter Name="botId" Type="System.String" />
-          <Parameter Name="conversationId" Type="System.String" />
-          <Parameter Name="botData" Type="Microsoft.Bot.Connector.BotData" />
-          <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-        </Parameters>
-        <Docs>
-          <param name="operations">To be added.</param>
-          <param name="botId">To be added.</param>
-          <param name="conversationId">To be added.</param>
-          <param name="botData">To be added.</param>
-          <param name="cancellationToken">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Connector.BotsExtensions" Member="M:Microsoft.Bot.Connector.BotsExtensions.SetConversationDataAsync(Microsoft.Bot.Connector.IBots,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Bot.Connector.IBots" />
-      </Targets>
-      <Member MemberName="SetPerUserInConversationData">
-        <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.BotData SetPerUserInConversationData (this Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, string userId, Microsoft.Bot.Connector.BotData botData);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.BotData SetPerUserInConversationData(class Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, string userId, class Microsoft.Bot.Connector.BotData botData) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotsExtensions.SetPerUserInConversationData(Microsoft.Bot.Connector.IBots,System.String,System.String,System.String,Microsoft.Bot.Connector.BotData)" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>Microsoft.Bot.Connector.BotData</ReturnType>
-        </ReturnValue>
-        <Parameters>
-          <Parameter Name="operations" Type="Microsoft.Bot.Connector.IBots" RefType="this" />
-          <Parameter Name="botId" Type="System.String" />
-          <Parameter Name="conversationId" Type="System.String" />
-          <Parameter Name="userId" Type="System.String" />
-          <Parameter Name="botData" Type="Microsoft.Bot.Connector.BotData" />
-        </Parameters>
-        <Docs>
-          <param name="operations">To be added.</param>
-          <param name="botId">To be added.</param>
-          <param name="conversationId">To be added.</param>
-          <param name="userId">To be added.</param>
-          <param name="botData">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Connector.BotsExtensions" Member="M:Microsoft.Bot.Connector.BotsExtensions.SetPerUserInConversationData(Microsoft.Bot.Connector.IBots,System.String,System.String,System.String,Microsoft.Bot.Connector.BotData)" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Bot.Connector.IBots" />
-      </Targets>
-      <Member MemberName="SetPerUserInConversationDataAsync">
-        <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; SetPerUserInConversationDataAsync (this Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, string userId, Microsoft.Bot.Connector.BotData botData, System.Threading.CancellationToken cancellationToken = null);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; SetPerUserInConversationDataAsync(class Microsoft.Bot.Connector.IBots operations, string botId, string conversationId, string userId, class Microsoft.Bot.Connector.BotData botData, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotsExtensions.SetPerUserInConversationDataAsync(Microsoft.Bot.Connector.IBots,System.String,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;</ReturnType>
-        </ReturnValue>
-        <Parameters>
-          <Parameter Name="operations" Type="Microsoft.Bot.Connector.IBots" RefType="this" />
-          <Parameter Name="botId" Type="System.String" />
-          <Parameter Name="conversationId" Type="System.String" />
-          <Parameter Name="userId" Type="System.String" />
-          <Parameter Name="botData" Type="Microsoft.Bot.Connector.BotData" />
-          <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-        </Parameters>
-        <Docs>
-          <param name="operations">To be added.</param>
-          <param name="botId">To be added.</param>
-          <param name="conversationId">To be added.</param>
-          <param name="userId">To be added.</param>
-          <param name="botData">To be added.</param>
-          <param name="cancellationToken">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Connector.BotsExtensions" Member="M:Microsoft.Bot.Connector.BotsExtensions.SetPerUserInConversationDataAsync(Microsoft.Bot.Connector.IBots,System.String,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Bot.Connector.IBots" />
-      </Targets>
-      <Member MemberName="SetUserData">
-        <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.BotData SetUserData (this Microsoft.Bot.Connector.IBots operations, string botId, string userId, Microsoft.Bot.Connector.BotData botData);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.BotData SetUserData(class Microsoft.Bot.Connector.IBots operations, string botId, string userId, class Microsoft.Bot.Connector.BotData botData) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotsExtensions.SetUserData(Microsoft.Bot.Connector.IBots,System.String,System.String,Microsoft.Bot.Connector.BotData)" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>Microsoft.Bot.Connector.BotData</ReturnType>
-        </ReturnValue>
-        <Parameters>
-          <Parameter Name="operations" Type="Microsoft.Bot.Connector.IBots" RefType="this" />
-          <Parameter Name="botId" Type="System.String" />
-          <Parameter Name="userId" Type="System.String" />
-          <Parameter Name="botData" Type="Microsoft.Bot.Connector.BotData" />
-        </Parameters>
-        <Docs>
-          <param name="operations">To be added.</param>
-          <param name="botId">To be added.</param>
-          <param name="userId">To be added.</param>
-          <param name="botData">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Connector.BotsExtensions" Member="M:Microsoft.Bot.Connector.BotsExtensions.SetUserData(Microsoft.Bot.Connector.IBots,System.String,System.String,Microsoft.Bot.Connector.BotData)" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Bot.Connector.IBots" />
-      </Targets>
-      <Member MemberName="SetUserDataAsync">
-        <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; SetUserDataAsync (this Microsoft.Bot.Connector.IBots operations, string botId, string userId, Microsoft.Bot.Connector.BotData botData, System.Threading.CancellationToken cancellationToken = null);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; SetUserDataAsync(class Microsoft.Bot.Connector.IBots operations, string botId, string userId, class Microsoft.Bot.Connector.BotData botData, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotsExtensions.SetUserDataAsync(Microsoft.Bot.Connector.IBots,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;</ReturnType>
-        </ReturnValue>
-        <Parameters>
-          <Parameter Name="operations" Type="Microsoft.Bot.Connector.IBots" RefType="this" />
-          <Parameter Name="botId" Type="System.String" />
-          <Parameter Name="userId" Type="System.String" />
-          <Parameter Name="botData" Type="Microsoft.Bot.Connector.BotData" />
-          <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-        </Parameters>
-        <Docs>
-          <param name="operations">To be added.</param>
-          <param name="botId">To be added.</param>
-          <param name="userId">To be added.</param>
-          <param name="botData">To be added.</param>
-          <param name="cancellationToken">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Connector.BotsExtensions" Member="M:Microsoft.Bot.Connector.BotsExtensions.SetUserDataAsync(Microsoft.Bot.Connector.IBots,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)" />
       </Member>
     </ExtensionMethod>
     <ExtensionMethod>
@@ -5004,54 +5251,6 @@
       <Targets>
         <Target Type="T:Microsoft.Rest.HttpOperationResponse`1" />
       </Targets>
-      <Member MemberName="HandleError">
-        <MemberSignature Language="C#" Value="public static void HandleError (this Microsoft.Rest.HttpOperationResponse&lt;object&gt; result);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig void HandleError(class Microsoft.Rest.HttpOperationResponse`1&lt;object&gt; result) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ErrorHandling.HandleError(Microsoft.Rest.HttpOperationResponse{System.Object})" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>System.Void</ReturnType>
-        </ReturnValue>
-        <Parameters>
-          <Parameter Name="result" Type="Microsoft.Rest.HttpOperationResponse&lt;System.Object&gt;" RefType="this" />
-        </Parameters>
-        <Docs>
-          <param name="result">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Connector.ErrorHandling" Member="M:Microsoft.Bot.Connector.ErrorHandling.HandleError(Microsoft.Rest.HttpOperationResponse{System.Object})" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Rest.HttpOperationResponse`1" />
-      </Targets>
-      <Member MemberName="HandleError&lt;ObjectT&gt;">
-        <MemberSignature Language="C#" Value="public static ObjectT HandleError&lt;ObjectT&gt; (this Microsoft.Rest.HttpOperationResponse&lt;object&gt; result);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!ObjectT HandleError&lt;ObjectT&gt;(class Microsoft.Rest.HttpOperationResponse`1&lt;object&gt; result) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ErrorHandling.HandleError``1(Microsoft.Rest.HttpOperationResponse{System.Object})" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>ObjectT</ReturnType>
-        </ReturnValue>
-        <TypeParameters>
-          <TypeParameter Name="ObjectT" />
-        </TypeParameters>
-        <Parameters>
-          <Parameter Name="result" Type="Microsoft.Rest.HttpOperationResponse&lt;System.Object&gt;" RefType="this" />
-        </Parameters>
-        <Docs>
-          <typeparam name="ObjectT">To be added.</typeparam>
-          <param name="result">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Connector.ErrorHandling" Member="M:Microsoft.Bot.Connector.ErrorHandling.HandleError``1(Microsoft.Rest.HttpOperationResponse{System.Object})" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Rest.HttpOperationResponse`1" />
-      </Targets>
       <Member MemberName="HandleErrorAsync">
         <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ErrorResponse&gt; HandleErrorAsync (this Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ErrorResponse&gt; result);" />
         <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.ErrorResponse&gt; HandleErrorAsync(class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Bot.Connector.ErrorResponse&gt; result) cil managed" />
@@ -5116,296 +5315,6 @@
           <summary>To be added.</summary>
         </Docs>
         <Link Type="Microsoft.Bot.Connector.ErrorHandling" Member="M:Microsoft.Bot.Connector.ErrorHandling.HandleErrorAsync``1(Microsoft.Rest.HttpOperationResponse{System.Object})" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Bot.Connector.Message" />
-      </Targets>
-      <Member MemberName="CreateReplyMessage">
-        <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.Message CreateReplyMessage (this Microsoft.Bot.Connector.Message sourceMessage, string text = null, string language = null);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.Message CreateReplyMessage(class Microsoft.Bot.Connector.Message sourceMessage, string text, string language) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Extensions.CreateReplyMessage(Microsoft.Bot.Connector.Message,System.String,System.String)" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>Microsoft.Bot.Connector.Message</ReturnType>
-        </ReturnValue>
-        <Parameters>
-          <Parameter Name="sourceMessage" Type="Microsoft.Bot.Connector.Message" RefType="this" />
-          <Parameter Name="text" Type="System.String" />
-          <Parameter Name="language" Type="System.String" />
-        </Parameters>
-        <Docs>
-          <param name="sourceMessage">To be added.</param>
-          <param name="text">To be added.</param>
-          <param name="language">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Connector.Extensions" Member="M:Microsoft.Bot.Connector.Extensions.CreateReplyMessage(Microsoft.Bot.Connector.Message,System.String,System.String)" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Bot.Connector.Message" />
-      </Targets>
-      <Member MemberName="GetBotConversationData&lt;TypeT&gt;">
-        <MemberSignature Language="C#" Value="public static TypeT GetBotConversationData&lt;TypeT&gt; (this Microsoft.Bot.Connector.Message message, string property);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TypeT GetBotConversationData&lt;TypeT&gt;(class Microsoft.Bot.Connector.Message message, string property) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Extensions.GetBotConversationData``1(Microsoft.Bot.Connector.Message,System.String)" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>TypeT</ReturnType>
-        </ReturnValue>
-        <TypeParameters>
-          <TypeParameter Name="TypeT" />
-        </TypeParameters>
-        <Parameters>
-          <Parameter Name="message" Type="Microsoft.Bot.Connector.Message" RefType="this" />
-          <Parameter Name="property" Type="System.String" />
-        </Parameters>
-        <Docs>
-          <typeparam name="TypeT">To be added.</typeparam>
-          <param name="message">To be added.</param>
-          <param name="property">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Connector.Extensions" Member="M:Microsoft.Bot.Connector.Extensions.GetBotConversationData``1(Microsoft.Bot.Connector.Message,System.String)" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Bot.Connector.Message" />
-      </Targets>
-      <Member MemberName="GetBotPerUserInConversationData&lt;TypeT&gt;">
-        <MemberSignature Language="C#" Value="public static TypeT GetBotPerUserInConversationData&lt;TypeT&gt; (this Microsoft.Bot.Connector.Message message, string property);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TypeT GetBotPerUserInConversationData&lt;TypeT&gt;(class Microsoft.Bot.Connector.Message message, string property) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Extensions.GetBotPerUserInConversationData``1(Microsoft.Bot.Connector.Message,System.String)" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>TypeT</ReturnType>
-        </ReturnValue>
-        <TypeParameters>
-          <TypeParameter Name="TypeT" />
-        </TypeParameters>
-        <Parameters>
-          <Parameter Name="message" Type="Microsoft.Bot.Connector.Message" RefType="this" />
-          <Parameter Name="property" Type="System.String" />
-        </Parameters>
-        <Docs>
-          <typeparam name="TypeT">To be added.</typeparam>
-          <param name="message">To be added.</param>
-          <param name="property">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Connector.Extensions" Member="M:Microsoft.Bot.Connector.Extensions.GetBotPerUserInConversationData``1(Microsoft.Bot.Connector.Message,System.String)" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Bot.Connector.Message" />
-      </Targets>
-      <Member MemberName="GetBotUserData&lt;TypeT&gt;">
-        <MemberSignature Language="C#" Value="public static TypeT GetBotUserData&lt;TypeT&gt; (this Microsoft.Bot.Connector.Message message, string property);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TypeT GetBotUserData&lt;TypeT&gt;(class Microsoft.Bot.Connector.Message message, string property) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Extensions.GetBotUserData``1(Microsoft.Bot.Connector.Message,System.String)" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>TypeT</ReturnType>
-        </ReturnValue>
-        <TypeParameters>
-          <TypeParameter Name="TypeT" />
-        </TypeParameters>
-        <Parameters>
-          <Parameter Name="message" Type="Microsoft.Bot.Connector.Message" RefType="this" />
-          <Parameter Name="property" Type="System.String" />
-        </Parameters>
-        <Docs>
-          <typeparam name="TypeT">To be added.</typeparam>
-          <param name="message">To be added.</param>
-          <param name="property">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Connector.Extensions" Member="M:Microsoft.Bot.Connector.Extensions.GetBotUserData``1(Microsoft.Bot.Connector.Message,System.String)" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Bot.Connector.Message" />
-      </Targets>
-      <Member MemberName="GetChannelData&lt;TypeT&gt;">
-        <MemberSignature Language="C#" Value="public static TypeT GetChannelData&lt;TypeT&gt; (this Microsoft.Bot.Connector.Message message);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TypeT GetChannelData&lt;TypeT&gt;(class Microsoft.Bot.Connector.Message message) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Extensions.GetChannelData``1(Microsoft.Bot.Connector.Message)" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>TypeT</ReturnType>
-        </ReturnValue>
-        <TypeParameters>
-          <TypeParameter Name="TypeT" />
-        </TypeParameters>
-        <Parameters>
-          <Parameter Name="message" Type="Microsoft.Bot.Connector.Message" RefType="this" />
-        </Parameters>
-        <Docs>
-          <typeparam name="TypeT">To be added.</typeparam>
-          <param name="message">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Connector.Extensions" Member="M:Microsoft.Bot.Connector.Extensions.GetChannelData``1(Microsoft.Bot.Connector.Message)" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Bot.Connector.BotData" />
-      </Targets>
-      <Member MemberName="GetProperty&lt;TypeT&gt;">
-        <MemberSignature Language="C#" Value="public static TypeT GetProperty&lt;TypeT&gt; (this Microsoft.Bot.Connector.BotData botData, string property);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TypeT GetProperty&lt;TypeT&gt;(class Microsoft.Bot.Connector.BotData botData, string property) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Extensions.GetProperty``1(Microsoft.Bot.Connector.BotData,System.String)" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>TypeT</ReturnType>
-        </ReturnValue>
-        <TypeParameters>
-          <TypeParameter Name="TypeT" />
-        </TypeParameters>
-        <Parameters>
-          <Parameter Name="botData" Type="Microsoft.Bot.Connector.BotData" RefType="this" />
-          <Parameter Name="property" Type="System.String" />
-        </Parameters>
-        <Docs>
-          <typeparam name="TypeT">To be added.</typeparam>
-          <param name="botData">To be added.</param>
-          <param name="property">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Connector.Extensions" Member="M:Microsoft.Bot.Connector.Extensions.GetProperty``1(Microsoft.Bot.Connector.BotData,System.String)" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Bot.Connector.Message" />
-      </Targets>
-      <Member MemberName="HasContent">
-        <MemberSignature Language="C#" Value="public static bool HasContent (this Microsoft.Bot.Connector.Message message);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasContent(class Microsoft.Bot.Connector.Message message) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Extensions.HasContent(Microsoft.Bot.Connector.Message)" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>System.Boolean</ReturnType>
-        </ReturnValue>
-        <Parameters>
-          <Parameter Name="message" Type="Microsoft.Bot.Connector.Message" RefType="this" />
-        </Parameters>
-        <Docs>
-          <param name="message">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Connector.Extensions" Member="M:Microsoft.Bot.Connector.Extensions.HasContent(Microsoft.Bot.Connector.Message)" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Bot.Connector.Message" />
-      </Targets>
-      <Member MemberName="SetBotConversationData">
-        <MemberSignature Language="C#" Value="public static void SetBotConversationData (this Microsoft.Bot.Connector.Message message, string property, object data);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetBotConversationData(class Microsoft.Bot.Connector.Message message, string property, object data) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Extensions.SetBotConversationData(Microsoft.Bot.Connector.Message,System.String,System.Object)" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>System.Void</ReturnType>
-        </ReturnValue>
-        <Parameters>
-          <Parameter Name="message" Type="Microsoft.Bot.Connector.Message" RefType="this" />
-          <Parameter Name="property" Type="System.String" />
-          <Parameter Name="data" Type="System.Object" />
-        </Parameters>
-        <Docs>
-          <param name="message">To be added.</param>
-          <param name="property">To be added.</param>
-          <param name="data">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Connector.Extensions" Member="M:Microsoft.Bot.Connector.Extensions.SetBotConversationData(Microsoft.Bot.Connector.Message,System.String,System.Object)" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Bot.Connector.Message" />
-      </Targets>
-      <Member MemberName="SetBotPerUserInConversationData">
-        <MemberSignature Language="C#" Value="public static void SetBotPerUserInConversationData (this Microsoft.Bot.Connector.Message message, string property, object data);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetBotPerUserInConversationData(class Microsoft.Bot.Connector.Message message, string property, object data) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Extensions.SetBotPerUserInConversationData(Microsoft.Bot.Connector.Message,System.String,System.Object)" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>System.Void</ReturnType>
-        </ReturnValue>
-        <Parameters>
-          <Parameter Name="message" Type="Microsoft.Bot.Connector.Message" RefType="this" />
-          <Parameter Name="property" Type="System.String" />
-          <Parameter Name="data" Type="System.Object" />
-        </Parameters>
-        <Docs>
-          <param name="message">To be added.</param>
-          <param name="property">To be added.</param>
-          <param name="data">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Connector.Extensions" Member="M:Microsoft.Bot.Connector.Extensions.SetBotPerUserInConversationData(Microsoft.Bot.Connector.Message,System.String,System.Object)" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Bot.Connector.Message" />
-      </Targets>
-      <Member MemberName="SetBotUserData">
-        <MemberSignature Language="C#" Value="public static void SetBotUserData (this Microsoft.Bot.Connector.Message message, string property, object data);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetBotUserData(class Microsoft.Bot.Connector.Message message, string property, object data) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Extensions.SetBotUserData(Microsoft.Bot.Connector.Message,System.String,System.Object)" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>System.Void</ReturnType>
-        </ReturnValue>
-        <Parameters>
-          <Parameter Name="message" Type="Microsoft.Bot.Connector.Message" RefType="this" />
-          <Parameter Name="property" Type="System.String" />
-          <Parameter Name="data" Type="System.Object" />
-        </Parameters>
-        <Docs>
-          <param name="message">To be added.</param>
-          <param name="property">To be added.</param>
-          <param name="data">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Connector.Extensions" Member="M:Microsoft.Bot.Connector.Extensions.SetBotUserData(Microsoft.Bot.Connector.Message,System.String,System.Object)" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Bot.Connector.BotData" />
-      </Targets>
-      <Member MemberName="SetProperty">
-        <MemberSignature Language="C#" Value="public static void SetProperty (this Microsoft.Bot.Connector.BotData botData, string property, object data);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetProperty(class Microsoft.Bot.Connector.BotData botData, string property, object data) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Extensions.SetProperty(Microsoft.Bot.Connector.BotData,System.String,System.Object)" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>System.Void</ReturnType>
-        </ReturnValue>
-        <Parameters>
-          <Parameter Name="botData" Type="Microsoft.Bot.Connector.BotData" RefType="this" />
-          <Parameter Name="property" Type="System.String" />
-          <Parameter Name="data" Type="System.Object" />
-        </Parameters>
-        <Docs>
-          <param name="botData">To be added.</param>
-          <param name="property">To be added.</param>
-          <param name="data">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Connector.Extensions" Member="M:Microsoft.Bot.Connector.Extensions.SetProperty(Microsoft.Bot.Connector.BotData,System.String,System.Object)" />
       </Member>
     </ExtensionMethod>
     <ExtensionMethod>
@@ -5590,52 +5499,26 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
-        <Target Type="T:Microsoft.Bot.Connector.IMessages" />
+        <Target Type="T:Microsoft.Bot.Connector.IdentityToken" />
       </Targets>
-      <Member MemberName="SendMessage">
-        <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.Message SendMessage (this Microsoft.Bot.Connector.IMessages operations, Microsoft.Bot.Connector.Message message);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.Message SendMessage(class Microsoft.Bot.Connector.IMessages operations, class Microsoft.Bot.Connector.Message message) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.MessagesExtensions.SendMessage(Microsoft.Bot.Connector.IMessages,Microsoft.Bot.Connector.Message)" />
+      <Member MemberName="ValidateServiceUrlClaim">
+        <MemberSignature Language="C#" Value="public static void ValidateServiceUrlClaim (this Microsoft.Bot.Connector.IdentityToken token, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Connector.IActivity&gt; activities);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ValidateServiceUrlClaim(class Microsoft.Bot.Connector.IdentityToken token, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Connector.IActivity&gt; activities) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IdentityTokenExtensions.ValidateServiceUrlClaim(Microsoft.Bot.Connector.IdentityToken,System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.IActivity})" />
         <MemberType>ExtensionMethod</MemberType>
         <ReturnValue>
-          <ReturnType>Microsoft.Bot.Connector.Message</ReturnType>
+          <ReturnType>System.Void</ReturnType>
         </ReturnValue>
         <Parameters>
-          <Parameter Name="operations" Type="Microsoft.Bot.Connector.IMessages" RefType="this" />
-          <Parameter Name="message" Type="Microsoft.Bot.Connector.Message" />
+          <Parameter Name="token" Type="Microsoft.Bot.Connector.IdentityToken" RefType="this" />
+          <Parameter Name="activities" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Connector.IActivity&gt;" />
         </Parameters>
         <Docs>
-          <param name="operations">To be added.</param>
-          <param name="message">To be added.</param>
+          <param name="token">To be added.</param>
+          <param name="activities">To be added.</param>
           <summary>To be added.</summary>
         </Docs>
-        <Link Type="Microsoft.Bot.Connector.MessagesExtensions" Member="M:Microsoft.Bot.Connector.MessagesExtensions.SendMessage(Microsoft.Bot.Connector.IMessages,Microsoft.Bot.Connector.Message)" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Bot.Connector.IMessages" />
-      </Targets>
-      <Member MemberName="SendMessageAsync">
-        <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.Message&gt; SendMessageAsync (this Microsoft.Bot.Connector.IMessages operations, Microsoft.Bot.Connector.Message message, System.Threading.CancellationToken cancellationToken = null);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.Message&gt; SendMessageAsync(class Microsoft.Bot.Connector.IMessages operations, class Microsoft.Bot.Connector.Message message, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.MessagesExtensions.SendMessageAsync(Microsoft.Bot.Connector.IMessages,Microsoft.Bot.Connector.Message,System.Threading.CancellationToken)" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.Message&gt;</ReturnType>
-        </ReturnValue>
-        <Parameters>
-          <Parameter Name="operations" Type="Microsoft.Bot.Connector.IMessages" RefType="this" />
-          <Parameter Name="message" Type="Microsoft.Bot.Connector.Message" />
-          <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-        </Parameters>
-        <Docs>
-          <param name="operations">To be added.</param>
-          <param name="message">To be added.</param>
-          <param name="cancellationToken">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Connector.MessagesExtensions" Member="M:Microsoft.Bot.Connector.MessagesExtensions.SendMessageAsync(Microsoft.Bot.Connector.IMessages,Microsoft.Bot.Connector.Message,System.Threading.CancellationToken)" />
+        <Link Type="Microsoft.Bot.Connector.IdentityTokenExtensions" Member="M:Microsoft.Bot.Connector.IdentityTokenExtensions.ValidateServiceUrlClaim(Microsoft.Bot.Connector.IdentityToken,System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.IActivity})" />
       </Member>
     </ExtensionMethod>
   </ExtensionMethods>

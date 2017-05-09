@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IActivity" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.5.3.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -20,7 +20,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IActivity.AsContactRelationUpdateActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IContactRelationUpdateActivity</ReturnType>
@@ -40,7 +40,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IActivity.AsConversationUpdateActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IConversationUpdateActivity</ReturnType>
@@ -60,7 +60,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IActivity.AsEndOfConversationActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IEndOfConversationActivity</ReturnType>
@@ -80,7 +80,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IActivity.AsEventActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IEventActivity</ReturnType>
@@ -94,13 +94,33 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="AsInstallationUpdateActivity">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.IInstallationUpdateActivity AsInstallationUpdateActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.IInstallationUpdateActivity AsInstallationUpdateActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IActivity.AsInstallationUpdateActivity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.IInstallationUpdateActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Return IInstallationUpdateActivity if this is a installationUpdate activity, null otherwise
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="AsInvokeActivity">
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.IInvokeActivity AsInvokeActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.IInvokeActivity AsInvokeActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IActivity.AsInvokeActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IInvokeActivity</ReturnType>
@@ -120,7 +140,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IActivity.AsMessageActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IMessageActivity</ReturnType>
@@ -140,7 +160,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IActivity.AsTypingActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ITypingActivity</ReturnType>
@@ -160,7 +180,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IActivity.ChannelData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -191,7 +211,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IActivity.ChannelId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -210,7 +230,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IActivity.Conversation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ConversationAccount</ReturnType>
@@ -229,7 +249,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IActivity.From" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ChannelAccount</ReturnType>
@@ -248,7 +268,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IActivity.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -267,7 +287,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IActivity.LocalTimestamp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
@@ -286,7 +306,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IActivity.Recipient" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ChannelAccount</ReturnType>
@@ -305,7 +325,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IActivity.ReplyToId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -324,7 +344,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IActivity.ServiceUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -343,7 +363,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IActivity.Timestamp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
@@ -362,7 +382,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IActivity.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

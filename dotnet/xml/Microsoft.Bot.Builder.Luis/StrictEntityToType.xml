@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.StrictEntityToType" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,7 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.StrictEntityToType.#ctor(Microsoft.Bot.Builder.Luis.IResolutionParser,Microsoft.Bot.Builder.Luis.ICalendarPlus)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="parser" Type="Microsoft.Bot.Builder.Luis.IResolutionParser" />
@@ -44,7 +44,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.StrictEntityToType.Interpret(Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution,System.DateTime,System.Globalization.Calendar,System.Globalization.CalendarWeekRule,System.DayOfWeek,System.Func{Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart,System.Int32})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -82,7 +82,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.StrictEntityToType.Microsoft#Bot#Builder#Luis#IEntityToType#TryMapToDateRanges(System.DateTime,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{System.DateTime}}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -107,7 +107,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.StrictEntityToType.Microsoft#Bot#Builder#Luis#IEntityToType#TryMapToTimeSpan(System.DateTime,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},System.TimeSpan@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

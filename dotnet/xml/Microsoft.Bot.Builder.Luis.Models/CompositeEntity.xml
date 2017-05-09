@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.Models.CompositeEntity" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -24,7 +24,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.CompositeEntity.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -40,7 +40,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.CompositeEntity.#ctor(System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Builder.Luis.Models.CompositeChild})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="parentType" Type="System.String" />
@@ -63,7 +63,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.CompositeEntity.Children" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -85,7 +85,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.CompositeEntity.ParentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -109,7 +109,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.CompositeEntity.Validate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -128,7 +128,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.CompositeEntity.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.JwtConfig" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.5.3.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,13 +17,31 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="ToBotFromChannelAllowedSigningAlgorithms">
+      <MemberSignature Language="C#" Value="public static readonly string[] ToBotFromChannelAllowedSigningAlgorithms;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string[] ToBotFromChannelAllowedSigningAlgorithms" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.JwtConfig.ToBotFromChannelAllowedSigningAlgorithms" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            TO BOT FROM CHANNEL: Allowed token signing algorithms
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ToBotFromChannelOpenIdMetadataUrl">
       <MemberSignature Language="C#" Value="public const string ToBotFromChannelOpenIdMetadataUrl;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ToBotFromChannelOpenIdMetadataUrl" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.JwtConfig.ToBotFromChannelOpenIdMetadataUrl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -41,7 +59,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.JwtConfig.ToBotFromChannelTokenValidationParameters" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IdentityModel.Tokens.TokenValidationParameters</ReturnType>
@@ -59,7 +77,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.JwtConfig.ToBotFromEmulatorOpenIdMetadataUrl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -77,7 +95,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.JwtConfig.ToBotFromEmulatorTokenValidationParameters" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IdentityModel.Tokens.TokenValidationParameters</ReturnType>
@@ -95,7 +113,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.JwtConfig.ToChannelFromBotLoginUrl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -113,7 +131,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.JwtConfig.ToChannelFromBotOAuthScope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

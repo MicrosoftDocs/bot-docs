@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.WesternCalendarPlus" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,7 +27,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.WesternCalendarPlus.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -41,7 +41,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.WesternCalendarPlus.Microsoft#Bot#Builder#Luis#ICalendarPlus#Calendar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Globalization.Calendar</ReturnType>
@@ -58,7 +58,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.WesternCalendarPlus.Microsoft#Bot#Builder#Luis#ICalendarPlus#FirstDayOfWeek" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DayOfWeek</ReturnType>
@@ -75,7 +75,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.WesternCalendarPlus.Microsoft#Bot#Builder#Luis#ICalendarPlus#HourFor(Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -96,7 +96,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.WesternCalendarPlus.Microsoft#Bot#Builder#Luis#ICalendarPlus#WeekRule" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Globalization.CalendarWeekRule</ReturnType>

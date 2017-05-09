@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.TemplateUsage" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -23,7 +23,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Bool" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -40,7 +40,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.BoolHelp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -60,7 +60,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Clarify" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -78,7 +78,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Confirmation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -95,7 +95,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.CurrentChoice" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -117,7 +117,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.DateTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -134,7 +134,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.DateTimeHelp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -157,7 +157,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Double" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -178,7 +178,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.DoubleHelp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -203,7 +203,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumManyNumberHelp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -223,7 +223,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumManyWordHelp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -243,7 +243,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumOneNumberHelp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -263,7 +263,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumOneWordHelp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -283,7 +283,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumSelectMany" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -300,7 +300,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumSelectOne" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -317,7 +317,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Feedback" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -337,7 +337,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Help" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -357,7 +357,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.HelpClarify" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -377,7 +377,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.HelpConfirm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -397,7 +397,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.HelpNavigation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -417,7 +417,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Integer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -438,7 +438,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.IntegerHelp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -458,7 +458,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Navigation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -475,7 +475,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.NavigationCommandHelp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -495,7 +495,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.NavigationFormat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -512,7 +512,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.NavigationHelp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -533,7 +533,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -548,7 +548,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.NoPreference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -565,7 +565,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.NotUnderstood" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -585,7 +585,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.StatusFormat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -602,7 +602,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -619,7 +619,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.StringHelp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
@@ -639,7 +639,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>

@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -22,7 +22,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions</ReturnType>
@@ -39,7 +39,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.AutoText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions</ReturnType>
@@ -56,7 +56,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.Buttons" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions</ReturnType>
@@ -73,7 +73,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.Carousel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions</ReturnType>
@@ -90,7 +90,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions</ReturnType>
@@ -107,7 +107,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.Inline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions</ReturnType>
@@ -124,7 +124,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.InlineNoParen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions</ReturnType>
@@ -139,7 +139,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.PerLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions</ReturnType>

@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -21,7 +21,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy.ETagBasedConsistency" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy</ReturnType>
@@ -40,7 +40,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy.LastWriteWins" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy</ReturnType>

@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="Item" />
@@ -31,7 +31,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2.#ctor(Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.OnStageDelegate{`0,`1},System.Collections.Generic.IComparer{`1},Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory{`0,`1}[])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="onStage" Type="Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;+OnStageDelegate" />
@@ -58,7 +58,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2.#ctor(Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.OnStageDelegate{`0,`1},System.Collections.Generic.IComparer{`1},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory{`0,`1}})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="onStage" Type="Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;+OnStageDelegate" />
@@ -79,7 +79,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2.Microsoft#Bot#Builder#Scorables#Internals#IScorableFactory&lt;Item,Score&gt;#ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;</ReturnType>

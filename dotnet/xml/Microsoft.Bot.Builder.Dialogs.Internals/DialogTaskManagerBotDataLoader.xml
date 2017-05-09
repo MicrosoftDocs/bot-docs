@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,20 +20,24 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DialogTaskManagerBotDataLoader (Microsoft.Bot.Builder.Dialogs.Internals.IBotData inner, Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager dialogTaskManager);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.Internals.IBotData inner, class Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager dialogTaskManager) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IBotData,Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager)" />
+      <MemberSignature Language="C#" Value="public DialogTaskManagerBotDataLoader (Microsoft.Bot.Builder.Dialogs.Internals.IBotData inner, Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager dialogTaskManager, Microsoft.Bot.Connector.IActivity activity, Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder localeFinder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.Internals.IBotData inner, class Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager dialogTaskManager, class Microsoft.Bot.Connector.IActivity activity, class Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder localeFinder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IBotData,Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager,Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="inner" Type="Microsoft.Bot.Builder.Dialogs.Internals.IBotData" />
         <Parameter Name="dialogTaskManager" Type="Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.IActivity" />
+        <Parameter Name="localeFinder" Type="Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder" />
       </Parameters>
       <Docs>
         <param name="inner">To be added.</param>
         <param name="dialogTaskManager">To be added.</param>
+        <param name="activity">To be added.</param>
+        <param name="localeFinder">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -44,7 +48,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.ConversationData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IBotDataBag</ReturnType>
@@ -61,11 +65,11 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.FlushAsync(System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader/&lt;FlushAsync&gt;d__10))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader/&lt;FlushAsync&gt;d__12))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -87,11 +91,11 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.LoadAsync(System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader/&lt;LoadAsync&gt;d__9))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader/&lt;LoadAsync&gt;d__11))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -113,7 +117,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.PrivateConversationData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IBotDataBag</ReturnType>
@@ -130,7 +134,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.UserData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IBotDataBag</ReturnType>

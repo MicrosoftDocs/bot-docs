@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.JwtTokenExtractor" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.5.3.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -16,20 +16,24 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public JwtTokenExtractor (System.IdentityModel.Tokens.TokenValidationParameters tokenValidationParameters, string metadataUrl);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.TokenValidationParameters tokenValidationParameters, string metadataUrl) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.JwtTokenExtractor.#ctor(System.IdentityModel.Tokens.TokenValidationParameters,System.String)" />
+      <MemberSignature Language="C#" Value="public JwtTokenExtractor (System.IdentityModel.Tokens.TokenValidationParameters tokenValidationParameters, string metadataUrl, string[] allowedSigningAlgorithms, Microsoft.Bot.Connector.JwtTokenExtractor.EndorsementsValidator validator);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.TokenValidationParameters tokenValidationParameters, string metadataUrl, string[] allowedSigningAlgorithms, class Microsoft.Bot.Connector.JwtTokenExtractor/EndorsementsValidator validator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.JwtTokenExtractor.#ctor(System.IdentityModel.Tokens.TokenValidationParameters,System.String,System.String[],Microsoft.Bot.Connector.JwtTokenExtractor.EndorsementsValidator)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="tokenValidationParameters" Type="System.IdentityModel.Tokens.TokenValidationParameters" />
         <Parameter Name="metadataUrl" Type="System.String" />
+        <Parameter Name="allowedSigningAlgorithms" Type="System.String[]" />
+        <Parameter Name="validator" Type="Microsoft.Bot.Connector.JwtTokenExtractor+EndorsementsValidator" />
       </Parameters>
       <Docs>
         <param name="tokenValidationParameters">To be added.</param>
         <param name="metadataUrl">To be added.</param>
+        <param name="allowedSigningAlgorithms">To be added.</param>
+        <param name="validator">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -40,7 +44,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.JwtTokenExtractor.GetAppIdFromClaimsIdentity(System.Security.Claims.ClaimsIdentity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -61,7 +65,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.JwtTokenExtractor.GetAppIdFromEmulatorClaimsIdentity(System.Security.Claims.ClaimsIdentity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -82,11 +86,11 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.JwtTokenExtractor.GetIdentityAsync(System.Net.Http.HttpRequestMessage)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.JwtTokenExtractor/&lt;GetIdentityAsync&gt;d__4))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.JwtTokenExtractor/&lt;GetIdentityAsync&gt;d__9))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -108,11 +112,11 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.JwtTokenExtractor.GetIdentityAsync(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.JwtTokenExtractor/&lt;GetIdentityAsync&gt;d__5))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.JwtTokenExtractor/&lt;GetIdentityAsync&gt;d__10))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -134,11 +138,11 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.JwtTokenExtractor.GetIdentityAsync(System.String,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.JwtTokenExtractor/&lt;GetIdentityAsync&gt;d__6))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.JwtTokenExtractor/&lt;GetIdentityAsync&gt;d__11))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

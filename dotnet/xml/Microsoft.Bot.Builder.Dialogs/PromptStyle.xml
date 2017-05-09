@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptStyle" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -22,7 +22,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.PromptStyle.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.PromptStyle</ReturnType>
@@ -39,7 +39,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.PromptStyle.AutoText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.PromptStyle</ReturnType>
@@ -57,7 +57,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.PromptStyle.Inline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.PromptStyle</ReturnType>
@@ -74,20 +74,16 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.PromptStyle.Keyboard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.PromptStyle</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Generate keyboard card for choices that will be mapped to a 
-            <see cref="T:Microsoft.Bot.Connector.HeroCard" /> or a keyboard, e.g. Facebook quick replies
+            Map choices to a list of suggested actions that depending on the channel will be a keyboard, quick replies or a 
+            <see cref="T:Microsoft.Bot.Connector.HeroCard" />.
             </summary>
-        <remarks>
-            Make sure to use <see cref="T:Microsoft.Bot.Builder.Dialogs.Internals.MapToChannelData_BotToUser" /> with <see cref="T:Microsoft.Bot.Builder.Dialogs.Internals.KeyboardCardMapper" />
-            when you use this option
-            </remarks>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -96,7 +92,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.PromptStyle.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.PromptStyle</ReturnType>
@@ -113,7 +109,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.PromptStyle.PerLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.PromptStyle</ReturnType>

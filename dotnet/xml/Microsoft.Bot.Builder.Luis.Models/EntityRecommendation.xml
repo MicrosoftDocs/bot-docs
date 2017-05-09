@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -24,7 +24,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -35,12 +35,12 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public EntityRecommendation (string type, string role = null, string entity = null, Nullable&lt;int&gt; startIndex = null, Nullable&lt;int&gt; endIndex = null, Nullable&lt;double&gt; score = null, System.Collections.Generic.IDictionary&lt;string,string&gt; resolution = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string role, string entity, valuetype System.Nullable`1&lt;int32&gt; startIndex, valuetype System.Nullable`1&lt;int32&gt; endIndex, valuetype System.Nullable`1&lt;float64&gt; score, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; resolution) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.#ctor(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Double},System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="C#" Value="public EntityRecommendation (string type, string role = null, string entity = null, Nullable&lt;int&gt; startIndex = null, Nullable&lt;int&gt; endIndex = null, Nullable&lt;double&gt; score = null, System.Collections.Generic.IDictionary&lt;string,object&gt; resolution = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string role, string entity, valuetype System.Nullable`1&lt;int32&gt; startIndex, valuetype System.Nullable`1&lt;int32&gt; endIndex, valuetype System.Nullable`1&lt;float64&gt; score, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; resolution) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.#ctor(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Double},System.Collections.Generic.IDictionary{System.String,System.Object})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.String" />
@@ -49,7 +49,7 @@
         <Parameter Name="startIndex" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="endIndex" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="score" Type="System.Nullable&lt;System.Double&gt;" />
-        <Parameter Name="resolution" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="resolution" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
       </Parameters>
       <Docs>
         <param name="type">To be added.</param>
@@ -71,7 +71,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.EndIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -95,7 +95,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Entity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -114,12 +114,12 @@
       </Docs>
     </Member>
     <Member MemberName="Resolution">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; Resolution { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; Resolution" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,object&gt; Resolution { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; Resolution" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Resolution" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -127,13 +127,14 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            A machine readable dictionary with more information about the
-            entity Look at builtin.datetime for an example in the
-            https://www.luis.ai/Help#PreBuiltEntities.
+            A machine interpretable resolution of the entity.  For example the
+            string "one thousand" would have the resolution "1000".  The
+            exact form of the resolution is defined by the entity type and is
+            documented here: https://www.luis.ai/Help#PreBuiltEntities.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -145,7 +146,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Role" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -169,7 +170,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Score" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -193,7 +194,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.StartIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -217,7 +218,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -241,7 +242,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Validate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

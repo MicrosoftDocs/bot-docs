@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.Extensions" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,7 +23,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Extensions.BuildUri(Microsoft.Bot.Builder.Luis.ILuisService,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -48,7 +48,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Extensions.Next(Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+DayPart</ReturnType>
@@ -71,7 +71,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Extensions.ParseResolutions(Microsoft.Bot.Builder.Luis.IResolutionParser,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -96,12 +96,44 @@
       </Docs>
     </Member>
     <Member MemberName="QueryAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Luis.Models.LuisResult&gt; QueryAsync (this Microsoft.Bot.Builder.Luis.ILuisService service, Microsoft.Bot.Builder.Luis.LuisRequest request, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Luis.Models.LuisResult&gt; QueryAsync(class Microsoft.Bot.Builder.Luis.ILuisService service, class Microsoft.Bot.Builder.Luis.LuisRequest request, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Extensions.QueryAsync(Microsoft.Bot.Builder.Luis.ILuisService,Microsoft.Bot.Builder.Luis.LuisRequest,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Luis.Extensions/&lt;QueryAsync&gt;d__4))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Luis.Models.LuisResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="service" Type="Microsoft.Bot.Builder.Luis.ILuisService" RefType="this" />
+        <Parameter Name="request" Type="Microsoft.Bot.Builder.Luis.LuisRequest" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="service">LUIS service.</param>
+        <param name="request">Query request.</param>
+        <param name="token">Cancellation token.</param>
+        <summary>
+            Query the LUIS service using this request.
+            </summary>
+        <returns>LUIS result.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryAsync">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Luis.Models.LuisResult&gt; QueryAsync (this Microsoft.Bot.Builder.Luis.ILuisService service, string text, System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Luis.Models.LuisResult&gt; QueryAsync(class Microsoft.Bot.Builder.Luis.ILuisService service, string text, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Extensions.QueryAsync(Microsoft.Bot.Builder.Luis.ILuisService,System.String,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -133,7 +165,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Extensions.TryFindEntity(Microsoft.Bot.Builder.Luis.Models.LuisResult,System.String,Microsoft.Bot.Builder.Luis.Models.EntityRecommendation@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

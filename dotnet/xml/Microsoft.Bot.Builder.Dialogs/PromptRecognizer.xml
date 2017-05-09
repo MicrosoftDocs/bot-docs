@@ -1,0 +1,204 @@
+<Type Name="PromptRecognizer" FullName="Microsoft.Bot.Builder.Dialogs.PromptRecognizer">
+  <TypeSignature Language="C#" Value="public class PromptRecognizer : Microsoft.Bot.Builder.Dialogs.IPromptRecognizer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PromptRecognizer extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IPromptRecognizer" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptRecognizer" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.IPromptRecognizer</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PromptRecognizer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeBooleans">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;bool&gt;&gt; RecognizeBooleans (Microsoft.Bot.Connector.IMessageActivity message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;bool&gt;&gt; RecognizeBooleans(class Microsoft.Bot.Connector.IMessageActivity message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeBooleans(Microsoft.Bot.Connector.IMessageActivity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;System.Boolean&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="Microsoft.Bot.Connector.IMessageActivity" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeChoices&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;T&gt;&gt; RecognizeChoices&lt;T&gt; (Microsoft.Bot.Connector.IMessageActivity message, System.Collections.Generic.IReadOnlyDictionary&lt;T,System.Collections.Generic.IReadOnlyList&lt;T&gt;&gt; choicesDictionary, Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;!!T&gt;&gt; RecognizeChoices&lt;T&gt;(class Microsoft.Bot.Connector.IMessageActivity message, class System.Collections.Generic.IReadOnlyDictionary`2&lt;!!T, class System.Collections.Generic.IReadOnlyList`1&lt;!!T&gt;&gt; choicesDictionary, class Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeChoices``1(Microsoft.Bot.Connector.IMessageActivity,System.Collections.Generic.IReadOnlyDictionary{``0,System.Collections.Generic.IReadOnlyList{``0}},Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;T&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="message" Type="Microsoft.Bot.Connector.IMessageActivity" />
+        <Parameter Name="choicesDictionary" Type="System.Collections.Generic.IReadOnlyDictionary&lt;T,System.Collections.Generic.IReadOnlyList&lt;T&gt;&gt;" />
+        <Parameter Name="options" Type="Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="message">To be added.</param>
+        <param name="choicesDictionary">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeLocalizedChoices">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;string&gt;&gt; RecognizeLocalizedChoices (Microsoft.Bot.Connector.IMessageActivity message, string choicesKey, System.Resources.ResourceManager resourceManager, Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;string&gt;&gt; RecognizeLocalizedChoices(class Microsoft.Bot.Connector.IMessageActivity message, string choicesKey, class System.Resources.ResourceManager resourceManager, class Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeLocalizedChoices(Microsoft.Bot.Connector.IMessageActivity,System.String,System.Resources.ResourceManager,Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;System.String&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="Microsoft.Bot.Connector.IMessageActivity" />
+        <Parameter Name="choicesKey" Type="System.String" />
+        <Parameter Name="resourceManager" Type="System.Resources.ResourceManager" />
+        <Parameter Name="options" Type="Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <param name="choicesKey">To be added.</param>
+        <param name="resourceManager">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeLocalizedRegExp">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;string&gt;&gt; RecognizeLocalizedRegExp (Microsoft.Bot.Connector.IMessageActivity message, string expressionKey, System.Resources.ResourceManager resourceManager);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;string&gt;&gt; RecognizeLocalizedRegExp(class Microsoft.Bot.Connector.IMessageActivity message, string expressionKey, class System.Resources.ResourceManager resourceManager) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeLocalizedRegExp(Microsoft.Bot.Connector.IMessageActivity,System.String,System.Resources.ResourceManager)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;System.String&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="Microsoft.Bot.Connector.IMessageActivity" />
+        <Parameter Name="expressionKey" Type="System.String" />
+        <Parameter Name="resourceManager" Type="System.Resources.ResourceManager" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <param name="expressionKey">To be added.</param>
+        <param name="resourceManager">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeNumbers">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;double&gt;&gt; RecognizeNumbers (Microsoft.Bot.Connector.IMessageActivity message, Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;float64&gt;&gt; RecognizeNumbers(class Microsoft.Bot.Connector.IMessageActivity message, class Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeNumbers(Microsoft.Bot.Connector.IMessageActivity,Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;System.Double&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="Microsoft.Bot.Connector.IMessageActivity" />
+        <Parameter Name="options" Type="Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeOrdinals">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;long&gt;&gt; RecognizeOrdinals (Microsoft.Bot.Connector.IMessageActivity message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;int64&gt;&gt; RecognizeOrdinals(class Microsoft.Bot.Connector.IMessageActivity message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeOrdinals(Microsoft.Bot.Connector.IMessageActivity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;System.Int64&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="Microsoft.Bot.Connector.IMessageActivity" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeTimes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;string&gt;&gt; RecognizeTimes (Microsoft.Bot.Connector.IMessageActivity message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;string&gt;&gt; RecognizeTimes(class Microsoft.Bot.Connector.IMessageActivity message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeTimes(Microsoft.Bot.Connector.IMessageActivity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;System.String&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="Microsoft.Bot.Connector.IMessageActivity" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

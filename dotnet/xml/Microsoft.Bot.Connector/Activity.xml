@@ -1,10 +1,10 @@
 <Type Name="Activity" FullName="Microsoft.Bot.Connector.Activity">
-  <TypeSignature Language="C#" Value="public class Activity : Microsoft.Bot.Connector.IContactRelationUpdateActivity, Microsoft.Bot.Connector.IConversationUpdateActivity, Microsoft.Bot.Connector.IEndOfConversationActivity, Microsoft.Bot.Connector.IEventActivity, Microsoft.Bot.Connector.IInvokeActivity, Microsoft.Bot.Connector.IMessageActivity, Microsoft.Bot.Connector.ITypingActivity" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Activity extends System.Object implements class Microsoft.Bot.Connector.IActivity, class Microsoft.Bot.Connector.IContactRelationUpdateActivity, class Microsoft.Bot.Connector.IConversationUpdateActivity, class Microsoft.Bot.Connector.IEndOfConversationActivity, class Microsoft.Bot.Connector.IEventActivity, class Microsoft.Bot.Connector.IInvokeActivity, class Microsoft.Bot.Connector.IMessageActivity, class Microsoft.Bot.Connector.ITypingActivity" />
+  <TypeSignature Language="C#" Value="public class Activity : Microsoft.Bot.Connector.IContactRelationUpdateActivity, Microsoft.Bot.Connector.IConversationUpdateActivity, Microsoft.Bot.Connector.IEndOfConversationActivity, Microsoft.Bot.Connector.IEventActivity, Microsoft.Bot.Connector.IInstallationUpdateActivity, Microsoft.Bot.Connector.IInvokeActivity, Microsoft.Bot.Connector.IMessageActivity, Microsoft.Bot.Connector.ITypingActivity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Activity extends System.Object implements class Microsoft.Bot.Connector.IActivity, class Microsoft.Bot.Connector.IContactRelationUpdateActivity, class Microsoft.Bot.Connector.IConversationUpdateActivity, class Microsoft.Bot.Connector.IEndOfConversationActivity, class Microsoft.Bot.Connector.IEventActivity, class Microsoft.Bot.Connector.IInstallationUpdateActivity, class Microsoft.Bot.Connector.IInvokeActivity, class Microsoft.Bot.Connector.IMessageActivity, class Microsoft.Bot.Connector.ITypingActivity" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Activity" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.5.3.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,6 +21,9 @@
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Bot.Connector.IEventActivity</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Connector.IInstallationUpdateActivity</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Bot.Connector.IInvokeActivity</InterfaceName>
@@ -52,7 +55,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -63,12 +66,12 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Activity (string type = null, string id = null, Nullable&lt;DateTime&gt; timestamp = null, Nullable&lt;DateTime&gt; localTimestamp = null, string serviceUrl = null, string channelId = null, Microsoft.Bot.Connector.ChannelAccount from = null, Microsoft.Bot.Connector.ConversationAccount conversation = null, Microsoft.Bot.Connector.ChannelAccount recipient = null, string textFormat = null, string attachmentLayout = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; membersAdded = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; membersRemoved = null, string topicName = null, Nullable&lt;bool&gt; historyDisclosed = null, string locale = null, string text = null, string summary = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt; attachments = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Entity&gt; entities = null, object channelData = null, string action = null, string replyToId = null, object value = null, string name = null, Microsoft.Bot.Connector.ConversationReference relatesTo = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string id, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; timestamp, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; localTimestamp, string serviceUrl, string channelId, class Microsoft.Bot.Connector.ChannelAccount from, class Microsoft.Bot.Connector.ConversationAccount conversation, class Microsoft.Bot.Connector.ChannelAccount recipient, string textFormat, string attachmentLayout, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ChannelAccount&gt; membersAdded, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ChannelAccount&gt; membersRemoved, string topicName, valuetype System.Nullable`1&lt;bool&gt; historyDisclosed, string locale, string text, string summary, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Attachment&gt; attachments, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Entity&gt; entities, object channelData, string action, string replyToId, object value, string name, class Microsoft.Bot.Connector.ConversationReference relatesTo) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.#ctor(System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ConversationAccount,Microsoft.Bot.Connector.ChannelAccount,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.ChannelAccount},System.Collections.Generic.IList{Microsoft.Bot.Connector.ChannelAccount},System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.Attachment},System.Collections.Generic.IList{Microsoft.Bot.Connector.Entity},System.Object,System.String,System.String,System.Object,System.String,Microsoft.Bot.Connector.ConversationReference)" />
+      <MemberSignature Language="C#" Value="public Activity (string type = null, string id = null, Nullable&lt;DateTime&gt; timestamp = null, Nullable&lt;DateTime&gt; localTimestamp = null, string serviceUrl = null, string channelId = null, Microsoft.Bot.Connector.ChannelAccount from = null, Microsoft.Bot.Connector.ConversationAccount conversation = null, Microsoft.Bot.Connector.ChannelAccount recipient = null, string textFormat = null, string attachmentLayout = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; membersAdded = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; membersRemoved = null, string topicName = null, Nullable&lt;bool&gt; historyDisclosed = null, string locale = null, string text = null, string speak = null, string inputHint = null, string summary = null, Microsoft.Bot.Connector.SuggestedActions suggestedActions = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt; attachments = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Entity&gt; entities = null, object channelData = null, string action = null, string replyToId = null, object value = null, string name = null, Microsoft.Bot.Connector.ConversationReference relatesTo = null, string code = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string id, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; timestamp, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; localTimestamp, string serviceUrl, string channelId, class Microsoft.Bot.Connector.ChannelAccount from, class Microsoft.Bot.Connector.ConversationAccount conversation, class Microsoft.Bot.Connector.ChannelAccount recipient, string textFormat, string attachmentLayout, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ChannelAccount&gt; membersAdded, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ChannelAccount&gt; membersRemoved, string topicName, valuetype System.Nullable`1&lt;bool&gt; historyDisclosed, string locale, string text, string speak, string inputHint, string summary, class Microsoft.Bot.Connector.SuggestedActions suggestedActions, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Attachment&gt; attachments, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Entity&gt; entities, object channelData, string action, string replyToId, object value, string name, class Microsoft.Bot.Connector.ConversationReference relatesTo, string code) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.#ctor(System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ConversationAccount,Microsoft.Bot.Connector.ChannelAccount,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.ChannelAccount},System.Collections.Generic.IList{Microsoft.Bot.Connector.ChannelAccount},System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,Microsoft.Bot.Connector.SuggestedActions,System.Collections.Generic.IList{Microsoft.Bot.Connector.Attachment},System.Collections.Generic.IList{Microsoft.Bot.Connector.Entity},System.Object,System.String,System.String,System.Object,System.String,Microsoft.Bot.Connector.ConversationReference,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.String" />
@@ -88,7 +91,10 @@
         <Parameter Name="historyDisclosed" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="locale" Type="System.String" />
         <Parameter Name="text" Type="System.String" />
+        <Parameter Name="speak" Type="System.String" />
+        <Parameter Name="inputHint" Type="System.String" />
         <Parameter Name="summary" Type="System.String" />
+        <Parameter Name="suggestedActions" Type="Microsoft.Bot.Connector.SuggestedActions" />
         <Parameter Name="attachments" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt;" />
         <Parameter Name="entities" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Entity&gt;" />
         <Parameter Name="channelData" Type="System.Object" />
@@ -97,6 +103,7 @@
         <Parameter Name="value" Type="System.Object" />
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="relatesTo" Type="Microsoft.Bot.Connector.ConversationReference" />
+        <Parameter Name="code" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="type">To be added.</param>
@@ -116,7 +123,10 @@
         <param name="historyDisclosed">To be added.</param>
         <param name="locale">To be added.</param>
         <param name="text">To be added.</param>
+        <param name="speak">To be added.</param>
+        <param name="inputHint">To be added.</param>
         <param name="summary">To be added.</param>
+        <param name="suggestedActions">To be added.</param>
         <param name="attachments">To be added.</param>
         <param name="entities">To be added.</param>
         <param name="channelData">To be added.</param>
@@ -125,6 +135,7 @@
         <param name="value">To be added.</param>
         <param name="name">To be added.</param>
         <param name="relatesTo">To be added.</param>
+        <param name="code">To be added.</param>
         <summary>
             Initializes a new instance of the Activity class.
             </summary>
@@ -137,7 +148,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -161,7 +172,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.AsContactRelationUpdateActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IContactRelationUpdateActivity</ReturnType>
@@ -181,7 +192,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.AsConversationUpdateActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IConversationUpdateActivity</ReturnType>
@@ -201,7 +212,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.AsEndOfConversationActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IEndOfConversationActivity</ReturnType>
@@ -221,7 +232,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.AsEventActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IEventActivity</ReturnType>
@@ -235,13 +246,33 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="AsInstallationUpdateActivity">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.IInstallationUpdateActivity AsInstallationUpdateActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.IInstallationUpdateActivity AsInstallationUpdateActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.AsInstallationUpdateActivity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.IInstallationUpdateActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Return an IInstallationUpdateActivity mask if this is a installation update activity
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="AsInvokeActivity">
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.IInvokeActivity AsInvokeActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.IInvokeActivity AsInvokeActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.AsInvokeActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IInvokeActivity</ReturnType>
@@ -261,7 +292,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.AsMessageActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IMessageActivity</ReturnType>
@@ -281,7 +312,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.AsTypingActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ITypingActivity</ReturnType>
@@ -301,7 +332,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.AttachmentLayout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -326,7 +357,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Attachments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -350,7 +381,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.ChannelData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -374,7 +405,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.ChannelId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -392,13 +423,37 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Code">
+      <MemberSignature Language="C#" Value="public string Code { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Code" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Code" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="code")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Code indicating why the conversation has ended
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ContentType">
       <MemberSignature Language="C#" Value="public const string ContentType;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ContentType" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.Activity.ContentType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -416,7 +471,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Conversation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -440,7 +495,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.CreateContactRelationUpdateActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IContactRelationUpdateActivity</ReturnType>
@@ -460,7 +515,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.CreateConversationUpdateActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IConversationUpdateActivity</ReturnType>
@@ -480,7 +535,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.CreateEndOfConversationActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IEndOfConversationActivity</ReturnType>
@@ -500,7 +555,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.CreateEventActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IEventActivity</ReturnType>
@@ -520,7 +575,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.CreateInvokeActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IInvokeActivity</ReturnType>
@@ -540,7 +595,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.CreateMessageActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IMessageActivity</ReturnType>
@@ -560,7 +615,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.CreatePingActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IActivity</ReturnType>
@@ -580,7 +635,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.CreateReply(System.String,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.Activity</ReturnType>
@@ -606,7 +661,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.CreateTypingActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ITypingActivity</ReturnType>
@@ -626,7 +681,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Entities" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -651,7 +706,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.From" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -670,32 +725,12 @@
       </Docs>
     </Member>
     <Member MemberName="GetActivityType">
-      <MemberSignature Language="C#" Value="public string GetActivityType ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetActivityType() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.GetActivityType" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>
-            Return the "major" portion of the activity
-            </summary>
-        <returns>normalized major portion of the activity, aka message/... will return "message"</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetActivityType">
       <MemberSignature Language="C#" Value="public static string GetActivityType (string type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetActivityType(string type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.GetActivityType(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -704,33 +739,11 @@
         <Parameter Name="type" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetChannelData&lt;TypeT&gt;">
-      <MemberSignature Language="C#" Value="public TypeT GetChannelData&lt;TypeT&gt; ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!TypeT GetChannelData&lt;TypeT&gt;() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.GetChannelData``1" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>TypeT</ReturnType>
-      </ReturnValue>
-      <TypeParameters>
-        <TypeParameter Name="TypeT" />
-      </TypeParameters>
-      <Parameters />
-      <Docs>
-        <typeparam name="TypeT">type to use</typeparam>
+        <param name="type"> The type.</param>
         <summary>
-            Get channeldata as typed structure
+            Maps type to activity types 
             </summary>
-        <returns>typed object or default(TypeT)</returns>
+        <returns> The activity type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -740,89 +753,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.GetMentions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.Mention[]</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-            Get mentions 
-            </summary>
-        <returns />
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetStateClient">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.StateClient GetStateClient (Microsoft.Bot.Connector.MicrosoftAppCredentials credentials, string serviceUrl = null, System.Net.Http.DelegatingHandler[] handlers);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Connector.StateClient GetStateClient(class Microsoft.Bot.Connector.MicrosoftAppCredentials credentials, string serviceUrl, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.GetStateClient(Microsoft.Bot.Connector.MicrosoftAppCredentials,System.String,System.Net.Http.DelegatingHandler[])" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Bot.Connector.StateClient</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="credentials" Type="Microsoft.Bot.Connector.MicrosoftAppCredentials" />
-        <Parameter Name="serviceUrl" Type="System.String" />
-        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
-          <Attributes>
-            <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
-            </Attribute>
-          </Attributes>
-        </Parameter>
-      </Parameters>
-      <Docs>
-        <param name="credentials">credentials for bot to access state api</param>
-        <param name="serviceUrl">alternate serviceurl to use for state service</param>
-        <param name="handlers">
-        </param>
-        <summary>
-            Get StateClient appropriate for this activity
-            </summary>
-        <returns />
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetStateClient">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.StateClient GetStateClient (string microsoftAppId = null, string microsoftAppPassword = null, string serviceUrl = null, System.Net.Http.DelegatingHandler[] handlers);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Connector.StateClient GetStateClient(string microsoftAppId, string microsoftAppPassword, string serviceUrl, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.GetStateClient(System.String,System.String,System.String,System.Net.Http.DelegatingHandler[])" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Bot.Connector.StateClient</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="microsoftAppId" Type="System.String" />
-        <Parameter Name="microsoftAppPassword" Type="System.String" />
-        <Parameter Name="serviceUrl" Type="System.String" />
-        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
-          <Attributes>
-            <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
-            </Attribute>
-          </Attributes>
-        </Parameter>
-      </Parameters>
-      <Docs>
-        <param name="microsoftAppId">
-        </param>
-        <param name="microsoftAppPassword">
-        </param>
-        <param name="serviceUrl">alternate serviceurl to use for state service</param>
-        <param name="handlers">
-        </param>
-        <summary>
-            Get StateClient appropriate for this activity
-            </summary>
-        <returns />
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -832,17 +771,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.HasContent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-            Check if the message has content
-            </summary>
-        <returns>Returns true if this message has any content to send</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -852,7 +789,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.HistoryDisclosed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -876,7 +813,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -894,13 +831,38 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="InputHint">
+      <MemberSignature Language="C#" Value="public string InputHint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InputHint" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.InputHint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="inputHint")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indicates whether the bot is accepting, expecting, or ignoring
+            input
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsActivity">
       <MemberSignature Language="C#" Value="protected bool IsActivity (string activity);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsActivity(string activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.IsActivity(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -923,7 +885,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Locale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -947,7 +909,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.LocalTimestamp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -972,7 +934,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.MembersAdded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -996,7 +958,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.MembersRemoved" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1014,56 +976,13 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="MentionsId">
-      <MemberSignature Language="C#" Value="public bool MentionsId (string id);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool MentionsId(string id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.MentionsId(System.String)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="id" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="id">ChannelAccount.Id</param>
-        <summary>
-            Is there a mention of Id in the Text Property 
-            </summary>
-        <returns>true if this id is mentioned in the text</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="MentionsRecipient">
-      <MemberSignature Language="C#" Value="public bool MentionsRecipient ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool MentionsRecipient() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.MentionsRecipient" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>
-            Is there a mention of Recipient.Id in the Text Property 
-            </summary>
-        <returns>true if this id is mentioned in the text</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Name">
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1081,13 +1000,37 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public Newtonsoft.Json.Linq.JObject Properties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Newtonsoft.Json.Linq.JObject Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonExtensionData(ReadData=true, WriteData=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.Linq.JObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Extension data for overflow of properties
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Recipient">
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.ChannelAccount Recipient { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.ChannelAccount Recipient" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Recipient" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1111,7 +1054,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.RelatesTo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1129,56 +1072,13 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="RemoveMentionText">
-      <MemberSignature Language="C#" Value="public string RemoveMentionText (string id);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string RemoveMentionText(string id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.RemoveMentionText(System.String)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="id" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="id">id to match</param>
-        <summary>
-            Replace any mention text for given id from Text property
-            </summary>
-        <returns>new .Text property value</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RemoveRecipientMention">
-      <MemberSignature Language="C#" Value="public string RemoveRecipientMention ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string RemoveRecipientMention() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.RemoveRecipientMention" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>
-            Remove recipient mention text from Text property
-            </summary>
-        <returns>new .Text property value</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="ReplyToId">
       <MemberSignature Language="C#" Value="public string ReplyToId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ReplyToId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.ReplyToId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1202,7 +1102,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.ServiceUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1221,13 +1121,62 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Speak">
+      <MemberSignature Language="C#" Value="public string Speak { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Speak" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Speak" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="speak")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            SSML Speak for TTS audio response
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuggestedActions">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.SuggestedActions SuggestedActions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.SuggestedActions SuggestedActions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.SuggestedActions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="suggestedActions")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.SuggestedActions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            SuggestedActions are used to provide keyboard/quickreply like
+            behavior in many clients
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Summary">
       <MemberSignature Language="C#" Value="public string Summary { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Summary" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Summary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1251,7 +1200,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1275,7 +1224,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.TextFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1299,7 +1248,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Timestamp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1323,7 +1272,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.TopicName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1347,7 +1296,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1372,7 +1321,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.ILuisModel" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -20,7 +20,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisModel.ApiVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.LuisApiVersion</ReturnType>
@@ -39,7 +39,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisModel.ModelID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -52,13 +52,36 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ModifyRequest">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Luis.LuisRequest ModifyRequest (Microsoft.Bot.Builder.Luis.LuisRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.Luis.LuisRequest ModifyRequest(class Microsoft.Bot.Builder.Luis.LuisRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.ILuisModel.ModifyRequest(Microsoft.Bot.Builder.Luis.LuisRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Luis.LuisRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.Bot.Builder.Luis.LuisRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Request so far.</param>
+        <summary>
+            Modify a Luis request to specify query parameters like spelling or logging.
+            </summary>
+        <returns>Modified request.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SubscriptionKey">
       <MemberSignature Language="C#" Value="public string SubscriptionKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SubscriptionKey" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisModel.SubscriptionKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -77,7 +100,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisModel.UriBase" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>

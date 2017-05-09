@@ -1,0 +1,190 @@
+<Type Name="PaymentOptions" FullName="Microsoft.Bot.Connector.Payments.PaymentOptions">
+  <TypeSignature Language="C#" Value="public class PaymentOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaymentOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Payments.PaymentOptions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Provides information about the options desired for the payment request
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PaymentOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.PaymentOptions.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the PaymentOptions class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PaymentOptions (Nullable&lt;bool&gt; requestPayerName = null, Nullable&lt;bool&gt; requestPayerEmail = null, Nullable&lt;bool&gt; requestPayerPhone = null, Nullable&lt;bool&gt; requestShipping = null, string shippingType = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;bool&gt; requestPayerName, valuetype System.Nullable`1&lt;bool&gt; requestPayerEmail, valuetype System.Nullable`1&lt;bool&gt; requestPayerPhone, valuetype System.Nullable`1&lt;bool&gt; requestShipping, string shippingType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.PaymentOptions.#ctor(System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="requestPayerName" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="requestPayerEmail" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="requestPayerPhone" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="requestShipping" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="shippingType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="requestPayerName">To be added.</param>
+        <param name="requestPayerEmail">To be added.</param>
+        <param name="requestPayerPhone">To be added.</param>
+        <param name="requestShipping">To be added.</param>
+        <param name="shippingType">To be added.</param>
+        <summary>
+            Initializes a new instance of the PaymentOptions class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestPayerEmail">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; RequestPayerEmail { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; RequestPayerEmail" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentOptions.RequestPayerEmail" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="requestPayerEmail")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indicates whether the user agent should collect and return the
+            payer's email address as part of the payment request
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestPayerName">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; RequestPayerName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; RequestPayerName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentOptions.RequestPayerName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="requestPayerName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indicates whether the user agent should collect and return the
+            payer's name as part of the payment request
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestPayerPhone">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; RequestPayerPhone { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; RequestPayerPhone" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentOptions.RequestPayerPhone" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="requestPayerPhone")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indicates whether the user agent should collect and return the
+            payer's phone number as part of the payment request
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestShipping">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; RequestShipping { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; RequestShipping" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentOptions.RequestShipping" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="requestShipping")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indicates whether the user agent should collect and return a
+            shipping address as part of the payment request
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShippingType">
+      <MemberSignature Language="C#" Value="public string ShippingType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ShippingType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentOptions.ShippingType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="shippingType")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If requestShipping is set to true, then the shippingType field may
+            be used to influence the way the user agent presents the user
+            interface for gathering the shipping address
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

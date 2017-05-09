@@ -4,8 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.BotData" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>1.1.0.0</AssemblyVersion>
-    <AssemblyVersion>3.5.3.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,8 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotData.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -34,31 +32,12 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BotData (object data = null, string eTag = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object data, string eTag) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotData.#ctor(System.Object,System.String)" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="data" Type="System.Object" />
-        <Parameter Name="eTag" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="data">To be added.</param>
-        <param name="eTag">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public BotData (string eTag = null, object data = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string eTag, object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotData.#ctor(System.String,System.Object)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="eTag" Type="System.String" />
@@ -79,8 +58,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotData.Data" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -102,8 +80,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotData.ETag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -125,7 +102,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotData.GetProperty``1(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TypeT</ReturnType>
@@ -152,7 +129,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotData.RemoveProperty(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -174,7 +151,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotData.SetProperty``1(System.String,``0)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.LuisService" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,7 +27,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisService.#ctor(Microsoft.Bot.Builder.Luis.ILuisModel)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="model" Type="Microsoft.Bot.Builder.Luis.ILuisModel" />
@@ -46,7 +46,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisService.Microsoft#Bot#Builder#Luis#ILuisService#BuildUri(Microsoft.Bot.Builder.Luis.LuisRequest)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -67,11 +67,11 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisService.Microsoft#Bot#Builder#Luis#ILuisService#QueryAsync(System.Uri,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Luis.LuisService/&lt;Microsoft-Bot-Builder-Luis-ILuisService-QueryAsync&gt;d__3))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Luis.LuisService/&lt;Microsoft-Bot-Builder-Luis-ILuisService-QueryAsync&gt;d__4))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -84,6 +84,27 @@
       <Docs>
         <param name="uri">To be added.</param>
         <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifyRequest">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Luis.LuisRequest ModifyRequest (Microsoft.Bot.Builder.Luis.LuisRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.Luis.LuisRequest ModifyRequest(class Microsoft.Bot.Builder.Luis.LuisRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisService.ModifyRequest(Microsoft.Bot.Builder.Luis.LuisRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Luis.LuisRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.Bot.Builder.Luis.LuisRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

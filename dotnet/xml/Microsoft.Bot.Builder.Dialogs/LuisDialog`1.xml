@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.LuisDialog`1" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TResult" />
@@ -31,7 +31,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.#ctor(Microsoft.Bot.Builder.Luis.ILuisService[])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="services" Type="Microsoft.Bot.Builder.Luis.ILuisService[]">
@@ -56,7 +56,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.BestIntentFrom(Microsoft.Bot.Builder.Luis.Models.LuisResult)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.Models.IntentRecommendation</ReturnType>
@@ -79,7 +79,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.BestResultFrom(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Dialogs.LuisServiceResult})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.LuisServiceResult</ReturnType>
@@ -99,16 +99,16 @@
       </Docs>
     </Member>
     <Member MemberName="DispatchToIntentHandler">
-      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task DispatchToIntentHandler (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt; item, Microsoft.Bot.Builder.Luis.Models.IntentRecommendation bestInent, Microsoft.Bot.Builder.Luis.Models.LuisResult result);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task DispatchToIntentHandler(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;class Microsoft.Bot.Connector.IMessageActivity&gt; item, class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation bestInent, class Microsoft.Bot.Builder.Luis.Models.LuisResult result) cil managed" />
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task DispatchToIntentHandler (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt; item, Microsoft.Bot.Builder.Luis.Models.IntentRecommendation bestIntent, Microsoft.Bot.Builder.Luis.Models.LuisResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task DispatchToIntentHandler(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;class Microsoft.Bot.Connector.IMessageActivity&gt; item, class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation bestIntent, class Microsoft.Bot.Builder.Luis.Models.LuisResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.DispatchToIntentHandler(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Connector.IMessageActivity},Microsoft.Bot.Builder.Luis.Models.IntentRecommendation,Microsoft.Bot.Builder.Luis.Models.LuisResult)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.LuisDialog`1/&lt;DispatchToIntentHandler&gt;d__8))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.LuisDialog`1/&lt;DispatchToIntentHandler&gt;d__9))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -117,13 +117,13 @@
       <Parameters>
         <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.IDialogContext" />
         <Parameter Name="item" Type="Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt;" />
-        <Parameter Name="bestInent" Type="Microsoft.Bot.Builder.Luis.Models.IntentRecommendation" />
+        <Parameter Name="bestIntent" Type="Microsoft.Bot.Builder.Luis.Models.IntentRecommendation" />
         <Parameter Name="result" Type="Microsoft.Bot.Builder.Luis.Models.LuisResult" />
       </Parameters>
       <Docs>
         <param name="context">To be added.</param>
         <param name="item">To be added.</param>
-        <param name="bestInent">To be added.</param>
+        <param name="bestIntent">To be added.</param>
         <param name="result">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -136,7 +136,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.GetHandlersByIntent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,Microsoft.Bot.Builder.Dialogs.IntentActivityHandler&gt;</ReturnType>
@@ -154,7 +154,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.GetLuisQueryTextAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Connector.IMessageActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -177,7 +177,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.handlerByIntent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,Microsoft.Bot.Builder.Dialogs.IntentActivityHandler&gt;</ReturnType>
@@ -193,11 +193,11 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.LuisActionDialogFinished(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Builder.Luis.Models.LuisResult})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.LuisDialog`1/&lt;LuisActionDialogFinished&gt;d__12))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.LuisDialog`1/&lt;LuisActionDialogFinished&gt;d__13))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -221,11 +221,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.MakeLuisActionDialog(Microsoft.Bot.Builder.Luis.ILuisService,System.String,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.LuisDialog`1/&lt;MakeLuisActionDialog&gt;d__11))</AttributeName>
+          <AttributeName>System.Obsolete("Action binding in LUIS should be replaced with code.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.LuisDialog`1/&lt;MakeLuisActionDialog&gt;d__12))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -251,7 +254,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.MakeServicesFromAttributes" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.ILuisService[]</ReturnType>
@@ -269,11 +272,11 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.MessageReceived(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Connector.IMessageActivity})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.LuisDialog`1/&lt;MessageReceived&gt;d__7))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.LuisDialog`1/&lt;MessageReceived&gt;d__8))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -291,13 +294,36 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ModifyLuisRequest">
+      <MemberSignature Language="C#" Value="protected virtual Microsoft.Bot.Builder.Luis.LuisRequest ModifyLuisRequest (Microsoft.Bot.Builder.Luis.LuisRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.Bot.Builder.Luis.LuisRequest ModifyLuisRequest(class Microsoft.Bot.Builder.Luis.LuisRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.ModifyLuisRequest(Microsoft.Bot.Builder.Luis.LuisRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Luis.LuisRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.Bot.Builder.Luis.LuisRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Request so far.</param>
+        <summary>
+            Modify LUIS request before it is sent.
+            </summary>
+        <returns>Modified request.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="services">
       <MemberSignature Language="C#" Value="protected readonly System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Luis.ILuisService&gt; services;" />
       <MemberSignature Language="ILAsm" Value=".field family initonly class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Bot.Builder.Luis.ILuisService&gt; services" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.services" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Luis.ILuisService&gt;</ReturnType>
@@ -313,7 +339,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

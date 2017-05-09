@@ -1,16 +1,20 @@
 <Type Name="BotAuthentication" FullName="Microsoft.Bot.Connector.BotAuthentication">
-  <TypeSignature Language="C#" Value="public class BotAuthentication : Microsoft.Bot.Connector.BasicAuthentication" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BotAuthentication extends Microsoft.Bot.Connector.BasicAuthentication" />
+  <TypeSignature Language="C#" Value="public class BotAuthentication : System.Web.Http.Filters.ActionFilterAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BotAuthentication extends System.Web.Http.Filters.ActionFilterAttribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.BotAuthentication" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>1.1.0.0</AssemblyVersion>
-    <AssemblyVersion>3.5.3.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Microsoft.Bot.Connector.BasicAuthentication</BaseTypeName>
+    <BaseTypeName>System.Web.Http.Filters.ActionFilterAttribute</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Method, AllowMultiple=false)</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>To be added.</summary>
     <remarks>To be added.</remarks>
@@ -22,29 +26,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthentication.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BotAuthentication (string appId = null, string appSecret = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string appId, string appSecret) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthentication.#ctor(System.String,System.String)" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="appId" Type="System.String" />
-        <Parameter Name="appSecret" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="appId">To be added.</param>
-        <param name="appSecret">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -55,7 +40,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotAuthentication.CredentialProviderType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -74,7 +59,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotAuthentication.DisableEmulatorTokens" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -91,7 +76,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -112,7 +97,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppIdSettingName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -133,7 +118,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppPassword" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -154,7 +139,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppPasswordSettingName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -175,7 +160,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthentication.OnActionExecutingAsync(System.Web.Http.Controllers.HttpActionContext,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -203,7 +188,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotAuthentication.OpenIdConfigurationUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.3.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

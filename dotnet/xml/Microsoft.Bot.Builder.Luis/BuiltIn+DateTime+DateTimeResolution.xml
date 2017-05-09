@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.5.5.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Luis.Resolution</BaseTypeName>
@@ -25,7 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.#ctor(System.DateTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dateTime" Type="System.DateTime" />
@@ -42,7 +42,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.#ctor(System.Nullable{Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.DayOfWeek},System.Nullable{Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="reference" Type="System.Nullable&lt;Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+Reference&gt;" />
@@ -77,7 +77,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Day" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -94,7 +94,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.DayOfWeek" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DayOfWeek&gt;</ReturnType>
@@ -111,7 +111,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.DayPart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+DayPart&gt;</ReturnType>
@@ -128,7 +128,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Equals(Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -149,7 +149,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Equals(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -170,7 +170,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.GetHashCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -188,7 +188,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Hour" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -205,7 +205,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Minute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -222,7 +222,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Month" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -239,7 +239,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Options" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.RegularExpressions.RegexOptions</ReturnType>
@@ -256,7 +256,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Pattern" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -272,7 +272,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.PatternDate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -288,7 +288,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.PatternTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -304,7 +304,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Reference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+Reference&gt;</ReturnType>
@@ -321,7 +321,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Regex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.RegularExpressions.Regex</ReturnType>
@@ -337,7 +337,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Second" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -354,7 +354,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.TryParse(System.String,Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -377,7 +377,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Week" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -394,7 +394,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Year" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.5.5.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
