@@ -160,6 +160,25 @@ description:
                             </a>
                         </li>
                         <li>
+                            <a href="/bot-framework/rest-api/bot-framework-rest-overview">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage bgdAccent1">
+                                                <img src="/media/hubs/botframework/botframework-developing-rest.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Build bots with REST</h3>
+                                            <p>Learn how to build bots with the Bot Framework REST APIs.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>                
+                        <li>
                             <a href="/bot-framework/deploy-bot-overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
