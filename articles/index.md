@@ -158,7 +158,25 @@ description:
                                 </div>
                             </div>
                             </a>
-
+                        </li>
+                        <li>
+                            <a href="/bot-framework/deploy-bot-overview">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage bgdAccent1">
+                                                <img src="/media/hubs/botframework/bot-framework-developing-publish.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Deploy bots</h3>
+                                            <p>Learn about the different ways you can deploy bots.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
                         </li>                        
                         <li>
                             <a href="/bot-framework/sdk-reference-overview">
@@ -172,7 +190,7 @@ description:
                                         </div>
                                         <div class="cardText">
                                             <h3>Reference</h3>
-                                            <p>Explore the Bot Builder SDK reference documentation.</p>
+                                            <p>Explore the Bot Framework reference documentation.</p>
                                         </div>
                                     </div>
                                 </div>

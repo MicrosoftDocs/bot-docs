@@ -119,4 +119,8 @@
 #### [Telegram](~/thirdparty-channels/channel-telegram.md) 
 #### [Twilio](~/thirdparty-channels/channel-twilio.md) 
 ## [Troubleshoot](troubleshoot/TOC.md)
+# Reference
+## [About the SDK reference](sdk-reference-overview.md)
+## [.NET](/dotnet/api/?view=bot-builder-3.8)
+## [Node](https://docs.botframework.com/en-us/node/builder/chat-reference/modules/_botbuilder_d_.html)
 # [Resources](resources/TOC.md)
