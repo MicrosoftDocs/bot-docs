@@ -28,10 +28,10 @@ You must have a Microsoft Azure subscription before you can deploy a bot to Azur
 
 ## Step 1: Get a GitHub repository
 
-Start by <a href="https://help.github.com/articles/fork-a-repo/" target="_blank">forking</a> the GitHub repository that contains the code for the bot that you want to deploy. 
+Start by <a href="https://help.GitHub.com/articles/fork-a-repo/" target="_blank">forking</a> the GitHub repository that contains the code for the bot that you want to deploy. 
 
 > [!NOTE]
-> This tutorial uses the <a href="https://github.com/fuselabs/echobot" target="_blank">echobot</a> GitHub repository, which contains the Node.js code for creating a simple bot. Be sure to replace "*echobotsample*" with your bot ID in all settings and URLs that are shown in the examples.
+> This tutorial uses the <a href="https://GitHub.com/fuselabs/echobot" target="_blank">echobot</a> GitHub repository, which contains the Node.js code for creating a simple bot. Be sure to replace "*echobotsample*" with your bot ID in all settings and URLs that are shown in the examples.
 
 ## Step 2: Create an Azure web app
 
