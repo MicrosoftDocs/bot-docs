@@ -11,12 +11,13 @@ ms.reviewer:
 ---
 
 # Bot Builder SDK for Node.js
+
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-overview.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-overview.md)
 > - [REST](../rest-api/bot-framework-rest-overview.md)
 
-The Bot Builder SDK for Node.js is a powerful, easy-to-use framework that provides a familiar way for Node.js developers to write bots.
+Bot Builder SDK for Node.js is a powerful, easy-to-use framework that provides a familiar way for Node.js developers to write bots.
 You can use it to build a wide variety of conversational user interfaces, from simple prompts to free-form conversations.
 
 The conversational logic for your bot is hosted as a web service. The Bot Builder SDK uses <a href="http://restify.com">restify</a>, a popular framework for building web services, to create the bot's web server. 
@@ -25,44 +26,23 @@ The SDK is also compatible with <a href="http://expressjs.com/">Express</a> and 
 Using the SDK, you can take advantage of the following SDK features: 
 
 - Powerful system for building dialogs to encapsulate conversational logic.
-- Built-in prompts for simple things such as Yes/No, strings, numbers, and enumerations, as well as support for messages containing images and attachments, 
-and rich cards containing buttons.
+- Built-in prompts for simple things such as Yes/No, strings, numbers, and enumerations, as well as support for messages containing images and attachments, and rich cards containing buttons.
 - Built-in support for powerful AI frameworks such as <a href="http://luis.ai" target="_blank">LUIS</a>.
-- Built-in recognizers and event handlers that guide the user through the 
-conversation, providing help, navigation, clarification, and confirmation as needed.
-
-## Get the SDK
-
-
-To install the SDK and its dependencies, first create a folder for your bot, navigate to it, and run the following **npm** command:
-
-```
-npm init
-```
-
-Next, install the Bot Builder SDK and <a href="http://restify.com/" target="_blank">Restify</a> modules by running the following **npm** commands:
-
-```
-npm install --save botbuilder
-npm install --save restify
-```
+- Built-in recognizers and event handlers that guide the user through the conversation, providing help, navigation, clarification, and confirmation as needed.
 
 ## Get started
 
-If you aren't ready to build a bot on your own, you can quickly [get started](~/nodejs/bot-builder-nodejs-quickstart.md) with building a bot with the Bot Builder SDK for Node.js.
+If you are new to writing bots, [create your first bot with Node.js](bot-builder-nodejs-quickstart.md) with step-by-step instructions to help you set up your project, install the SDK, and run your first bot. 
 
-For information on concepts that help you understand the rest of the documentation, see [Key concepts](~/nodejs/bot-builder-nodejs-concepts.md).
+If you are new to the Bot Builder SDK for Node.js, you can start with key concepts that help you understand the major components of the Bot Builder SDK, see [Key concepts](~/nodejs/bot-builder-nodejs-concepts.md).
 
-[Learn the principles][DesignGuide] of designing bots and [explore patterns][DesignPatterns] for guidance on what features your bot needs in order to best address the top user scenarios.
+To ensure your bot addresses the top user scenarios, review the [design principles](~/bot-design-principles.md) and [explore patterns](~/bot-design-pattern-task-automation.md) for guidance.
 
-Once you understand basic principles, the [How-to][HowTo] articles give you step-by-step instructions on adding features to your bot.
+## Get samples
+
+The [Bot Builder SDK for Node.js samples](bot-builder-nodejs-samples.md) demonstrate task-focused bots that show how to take advantage of features in the Bot Builder SDK for Node.js. You can use the samples to help you quickly get started with building great bots with rich capabilities.
 
 ## Additional resources
-
-The following articles get you started building bots using the Bot Builder SDK for Node.js.
-
-* [Get Started](~/nodejs/bot-builder-nodejs-quickstart.md): Quickly build and test a simple bot by following instructions in this step-by-step tutorial.
-* [Key concepts](~/nodejs/bot-builder-nodejs-concepts.md): Learn about key concepts in the Bot Builder SDK for Node.js.
 
 The following task-focused how-to guides demonstrate various features of the Bot Builder SDK for Node.js.
 
@@ -75,8 +55,7 @@ The following task-focused how-to guides demonstrate various features of the Bot
 
 
 If you encounter problems or have suggestions regarding the Bot Builder SDK for Node.js, 
-see [Support](~/resources-support.md) for a list of resources that provide opportunities 
-for support and feedback. 
+see [Support](~/resources-support.md) for a list of available resources. 
 
 
 [DesignGuide]: ~/bot-design-principles.md 

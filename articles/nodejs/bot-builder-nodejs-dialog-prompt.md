@@ -24,7 +24,8 @@ Prompts return an [IPromptResult][IPromptResult] to the caller. The user's respo
 The most common reasons for a `null` response are: 
 * The user cancelled an action by saying something like ‘cancel’ or ‘nevermind’ 
 * The user entered an improperly formatted response
-The exact reason for a `null` response can be determined by examining the [ResumeReason][ResumeReason] returned in [result.resumed][Result_Resumed], but
+
+The exact reason for a `null` response can be determined by examining the [ResumeReason][ResumeReason] returned in [result.resumed][Result_Resumed]. There are actually a number of reasons that can cause the prompt to return without a response, so checking for  [result.response](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptresult.html#response) isn't null tends to be the best approach.
 
 ## Prompt types
 The Bot Builder SDK for Node.js includes the following built-in prompts:
@@ -35,8 +36,9 @@ The Bot Builder SDK for Node.js includes the following built-in prompts:
 |[Prompts.confirm][PromptsConfirm] | Asks the user to confirm an action.| 
 |[Prompts.number][PromptsNumber] | Asks the user to enter a number.     |
 |[Prompts.time][PromptsTime] | Asks the user for the time or date.      |
-|[Prompts.choice][PromptsChoice] | Asks the user to choose from a list of choices.    |       
+|[Prompts.choice][PromptsChoice] | Asks the user to choose from a list of choices.    |
 |[Prompts.attachment][PromptsAttachment] | Asks the user to upload a picture or video.|       
+The following sections provide more details about each of these prompt types.
 
 ### Text String: `Prompts.text()`
 The [Prompts.text()][PromptsText] method asks the user for a **string of text**. The prompt returns the user's response as an [IPromptTextResult][IPromptTextResult] interface.
@@ -102,7 +104,7 @@ bot.dialog('/createAlarm', [
 
 The [Prompts.choice()][PromptsChoice] method asks the user to **choose from a list** of choices. The prompt returns the user's response as an [IPromptChoiceResult](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptchoiceresult.html) interface. To specify the style of the list that's shown to the user, use the [IPromptOptions.listStyle](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptoptions.html#liststyle) property. The user can express their choice by either entering the number associated with the choice or the choice's name itself. Both full and partial matches of the option's name are supported.
 
-To specify the list of choices, you can use a pipe-delimited ('\|') string:
+To specify the list of choices, you can use a pipe-delimited (`|`) string:
 
 ```javascript
 builder.Prompts.choice(session, "Which color?", "red|green|blue");

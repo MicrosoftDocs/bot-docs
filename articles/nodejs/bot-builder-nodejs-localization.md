@@ -29,8 +29,10 @@ bot.dialog('/localePicker', [
         switch (results.response.entity) {
             case 'English':
                 locale = 'en';
+                break;
             case 'Español':
                 locale = 'es';
+                break;
             case 'Italiano':
                 locale = 'it';
                 break;
@@ -49,9 +51,9 @@ bot.dialog('/localePicker', [
 ```
 
 ## Determine the locale by using analytics
-Another way to determine the user's locale is to install a piece of middleware that uses a service like the [Text Analytics API](https://www.microsoft.com/cognitive-services/en-us/text-analytics-api) to automatically 
-detect the user's language based upon the text of the message they sent.
+Another way to determine the user's locale is to use a service like the [Text Analytics API](https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-text-analytics-quick-start) to automatically detect the user's language based upon the text of the message they sent.
 
+The code snippet below illustrates how you can incorporate this service into your own bot.
 ``` javascript
 var request = require('request');
 
@@ -85,11 +87,10 @@ bot.use({
 });
 ```
 
-Calling [session.preferredLocale()][preferredLocal] will automatically return the detected language if a user-selected locale hasn’t been assigned. The exact search order for `referredLocale()` is:
-* Locale saved by calling `session.preferredLocale()`. This value is stored in `session.userData['BotBuilder.Data.PreferredLocale']`.
-* Detected locale assigned to `session.message.textLocale`.
-* The configured default locale for the bot.
-* English ('en').
+Once you add the above code snippet to your bot, calling [session.preferredLocale()][preferredLocal] will automatically return the detected language. The search order for `preferredLocale()` is as follows:
+1. Locale saved by calling `session.preferredLocale()`. This value is stored in `session.userData['BotBuilder.Data.PreferredLocale']`.
+2. Detected locale assigned to `session.message.textLocale`.
+3. The configured default locale for the bot (e.g.: English (‘en’)).
 
 You can configure the bot's default locale using its constructor:
 
@@ -133,9 +134,9 @@ builder.Prompts.choice(session, "choice_prompt", options);
 
 The default localizer searches for a message ID across multiple files and if it can’t find an ID (or if no localization files were provided) it will simply return the text of ID, making the use of localization files transparent and optional.  Files are searched in the following order:
 
-* First the **index.json** file under the locale returned by [`session.preferredLocale()`][preferredLocale] is searched.
-* Next, if the locale included an optional subtag like **en-US** then the root tag of **en** is searched.
-* Finally, the bot's configured default locale is searched.
+1. The **index.json** file under the locale returned by [`session.preferredLocale()`][preferredLocale] is searched.
+2. If the locale included an optional subtag like **en-US** then the root tag of **en** is searched.
+3. The bot's configured default locale is searched.
 
 ## Use namespaces to customize and localize prompts
 The default localizer supports the namespacing of prompts to avoid collisions between message IDs.  Your bot can override namespaced prompts to customize or reword the prompts from another namespace.  You can leverage this capability to customize the SDK’s built-in messages, letting you either add support for additional languages or to simply reword the SDK's current messages.  For instance, you can change the SDK’s default error message by simply adding a file called **BotBuilder.json** to your bot's locale directory and then adding an entry for the `default_error` message ID:

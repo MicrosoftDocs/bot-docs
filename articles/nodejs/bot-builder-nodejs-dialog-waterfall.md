@@ -10,7 +10,7 @@ ms.date: 05/03/2017
 ---
 # Define conversation steps with waterfalls
 
-A waterfall is a specific type of dialog handler. A waterfall contains an array of functions where the *results* of the first function are passed as *input* to the next function and so on. The bot prompts the user for input, waits for a response, and then passes the result to the next step. Waterfalls are most commonly used to collect information from the user. 
+A waterfall is a specific type of [dialog handler](bot-builder-nodejs-dialog-manage-conversation.md#dialog-handlers). A waterfall contains an array of functions where the *results* of the first function are passed as *input* to the next function and so on. The bot prompts the user for input, waits for a response, and then passes the result to the next step. Waterfalls are most commonly used to collect information from the user. 
 
 ## Prompt the user with a series of questions
 The Bot Builder SDK provides built-in [prompts](bot-builder-nodejs-dialog-prompt.md) to easily ask the user a series of questions. 
@@ -28,7 +28,9 @@ bot.dialog('/', [
     }
 ]);
 ```
- You can also create a child dialog to advance the conversation to the next step. This is a useful way of partitioning the conversation if you have multiple fields to populate. The following example calls `session.beginDialog()` to bring up a child dialog instead of a prompt.  
+ You can also create a child dialog to advance the conversation to the next step. This is a useful way of partitioning the conversation if you have multiple fields to populate. For more information, see [Manage conversation flow with dialogs](bot-builder-nodejs-dialog-manage-conversation.md#starting-and-ending-dialogs). 
+ 
+ The following example calls `session.beginDialog()` to bring up a child dialog instead of a prompt. 
 
 ```javascript
 bot.dialog('/', [
