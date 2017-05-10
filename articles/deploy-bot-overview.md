@@ -14,8 +14,7 @@ ms.reviewer:
 After you have built and tested your bot, you need to deploy it to the cloud.
 
 > [!NOTE]
-> If you built your bot using the Azure Bot Service, you don't need to register or deploy your bot.
-> Bot registration and deployment are handled as part of the Azure Bot Service bot creation process.
+> Bots created with the Azure Bot Service are automatically deployed to Azure as part of the creation process.
 
 ## Deploy your bot to the cloud
 

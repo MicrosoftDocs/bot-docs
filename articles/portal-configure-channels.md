@@ -35,7 +35,7 @@ To configure your bot to connect to another channel, complete the following step
 
 After you've configured the channel, users on that channel can start using your bot.
 
-## Publish a bot
+## Publish your bot
 The publishing process is different for each channel. 
 
 [!include[publishing](~/includes/snippet-publish-to-channel.md)]
