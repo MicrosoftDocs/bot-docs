@@ -24,7 +24,7 @@ The Bot Framework currently supports eight types of rich cards:
 
 | Card type | Description |
 |------|------|
-| <a href="https://github.com/Microsoft/AdaptiveCards" target="_blank">AdaptiveCard</a> | A card that can contain any combination of text, speech, images, buttons, and input fields.  |
+| <a href="http://adaptivecards.io" target="_blank">AdaptiveCard</a> | A card that can contain any combination of text, speech, images, buttons, and input fields.  |
 | [AnimationCard][animationCard] | A card that can play animated GIFs or short videos. |
 | [AudioCard][audioCard] | A card that can play an audio file. |
 | [HeroCard][heroCard] | A card that typically contains a single large image, one or more buttons, and text. |
@@ -152,9 +152,9 @@ The message batching delay is configurable. To disable the SDK’s auto-batching
 ## Send an Adaptive card
 
 The Adaptive Card can can contain any combination of text, speech, images, buttons, and input fields. 
-Adaptive Cards are created using the JSON format specified in <a href="https://github.com/Microsoft/AdaptiveCards" target="_blank">Adaptive Cards</a>, which gives you full control over card content and format. 
+Adaptive Cards are created using the JSON format specified in <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a>, which gives you full control over card content and format. 
 
-To create an Adaptive Card using Node.js, leverage the information in the <a href="https://github.com/Microsoft/AdaptiveCards" target="_blank">Adaptive Cards</a> repository to understand Adaptive Card schema, explore Adaptive Card elements, and see JSON samples that can be used to create cards of varying composition and complexity. Additionally, you can use the Interactive Visualizer to design Adaptive Card payloads and preview card output.
+To create an Adaptive Card using Node.js, leverage the information in the <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a> repository to understand Adaptive Card schema, explore Adaptive Card elements, and see JSON samples that can be used to create cards of varying composition and complexity. Additionally, you can use the Interactive Visualizer to design Adaptive Card payloads and preview card output.
 
 This code example shows how to create a message that contains an Adaptive Card for a calendar reminder: 
 
@@ -166,7 +166,7 @@ The resulting card contains three blocks of text, an input field (choice list), 
 
 ## Additional resources
 
-* <a href="https://github.com/Microsoft/AdaptiveCards" target="_blank">Adaptive Cards</a>
+* <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a>
 * [AnimationCard][animationCard]
 * [AudioCard][audioCard]
 * [HeroCard][heroCard]
