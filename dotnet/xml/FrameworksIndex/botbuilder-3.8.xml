@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Framework Name="botbuilder-3.8.0">
+<Framework Name="botbuilder-3.8">
   <Namespace Name="Microsoft.Bot.Builder.Autofac.Base">
     <Type Name="Microsoft.Bot.Builder.Autofac.Base.Extensions" Id="T:Microsoft.Bot.Builder.Autofac.Base.Extensions">
       <Member Id="M:Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterAdapterChain``1(Autofac.ContainerBuilder,System.Type[])" />
