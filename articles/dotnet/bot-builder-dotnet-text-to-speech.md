@@ -57,7 +57,10 @@ For a complete sample that shows how to create a speech-enabled bot using the Bo
 - [Add input hints to messages](~/dotnet/bot-builder-dotnet-add-input-hints.md)
 - <a href="https://msdn.microsoft.com/en-us/library/hh378377(v=office.14).aspx" target="_blank">Speech Synthesis Markup Language (SSML)</a>
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Roller sample (GitHub)</a>
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.8" target="_blank">Activity class</a>
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.imessageactivity?view=botbuilder-3.8" target="_blank">IMessageActivity interface</a>
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.internals.dialogcontext?view=botbuilder-3.8" target="_blank">DialogContext class</a>
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.internals.prompt-2?view=botbuilder-3.8" target="_blank">Prompt class</a>
 
-[IMessageActivity]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d1/de8/interface_microsoft_1_1_bot_1_1_connector_1_1_i_message_activity.html
+[IMessageActivity]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.imessageactivity?view=botbuilder-3.8
 
-[IDialogContext]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d1/dc6/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_dialog_context.html

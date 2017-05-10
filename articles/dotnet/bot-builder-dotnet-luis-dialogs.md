@@ -49,3 +49,4 @@ This code example shows the full dialog implementation for the Alarm bot.
 - [Manage conversation flow with dialogs](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
 - [Language understanding](~/cognitive-services-bot-intelligence-overview.md#language-understanding)
 - <a href="https://www.luis.ai" target="_blank">LUIS</a>
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>

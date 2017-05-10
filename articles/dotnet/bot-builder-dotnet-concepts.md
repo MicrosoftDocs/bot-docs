@@ -69,9 +69,8 @@ For more information on this topic, see [Secure your bot](~/dotnet/bot-builder-d
 - [Dialogs](~/dotnet/bot-builder-dotnet-dialogs.md)
 - [Design and control conversation flow](~/bot-design-conversation-flow.md)
 - [Secure your bot](~/dotnet/bot-builder-dotnet-security.md)
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
 
+[connectorLibrary]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector?view=botbuilder-3.8
 
-
-[connectorLibrary]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/db/dbb/namespace_microsoft_1_1_bot_1_1_connector.html
-
-[builderLibrary]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html
+[builderLibrary]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs?view=botbuilder-3.8

@@ -109,8 +109,6 @@ You can design your bot to account for this scenario, as shown in the following 
 ## Additional resources
 
 - [Bot Framework troubleshooting guide](~/troubleshoot-general-problems.md#state)
-- [Connector library][connectorLibrary]
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
 
-[connectorLibrary]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/db/dbb/namespace_microsoft_1_1_bot_1_1_connector.html
-
-[Activity]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/dc/d2f/class_microsoft_1_1_bot_1_1_connector_1_1_activity.html
+[Activity]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.8

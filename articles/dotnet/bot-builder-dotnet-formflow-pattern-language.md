@@ -138,21 +138,22 @@ What kind of sandwich would you like?
 - [Customize a form using FormBuilder](~/dotnet/bot-builder-dotnet-formflow-formbuilder.md)
 - [Localize form content](~/dotnet/bot-builder-dotnet-formflow-localize.md)
 - [Define a form using JSON schema](~/dotnet/bot-builder-dotnet-formflow-json-schema.md)
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
 
-[promptAttribute]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d0/d34/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_prompt_attribute.html
+[promptAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.promptattribute?view=botbuilder-3.8
 
-[field]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d4/d1c/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_i_form_builder.html#ad7881ee9b6a31bcd4acf2033eca8d097
+[field]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.iformbuilder-1.field?view=botbuilder-3.8
 
-[formConfiguration]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/de/db8/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_configuration.html#a40fe1b7c1bb62d7ae2accb8501a597a5
+[formConfiguration]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.formconfiguration?view=botbuilder-3.8
 
-[separator]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d7/d48/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_template_base_attribute.html#aa55384cb431ff75190efe7abd2fdb6a7
+[separator]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.templatebaseattribute.separator?view=botbuilder-3.8
 
-[lastSeparator]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d7/d48/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_template_base_attribute.html#a72a59330fcdc04cf70b922c6d217d44c
+[lastSeparator]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.templatebaseattribute.lastseparator?view=botbuilder-3.8
 
-[templateUsage]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/dd/df7/namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow.html#a28ef6a551a3611e4a6abe06659797313
+[templateUsage]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.templateusage?view=botbuilder-3.8
 
-[caseNormalization]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/dd/df7/namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow.html#a4b3fef3ebd0b6d6f84591f4430ae2fd5
+[caseNormalization]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.casenormalization?view=botbuilder-3.8
 
-[choiceStyleOptions]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/dd/df7/namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow.html#ac6396117e96818e92b4892d316e326d9
+[choiceStyleOptions]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.choicestyleoptions?view=botbuilder-3.8
 
-[feedbackOptions]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/dd/df7/namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow.html#ac4ead01e3c8eeb1424f886479af0adf5
+[feedbackOptions]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.feedbackoptions?view=botbuilder-3.8

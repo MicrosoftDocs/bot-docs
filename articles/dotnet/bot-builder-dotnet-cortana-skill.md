@@ -326,14 +326,13 @@ If your bot is running locally or deployed in the cloud, you can invoke it from 
 * [Card design best practices for Cortana][CardDesign]
 * [Cortana Dev Center][CortanaDevCenter]
 * [Testing and debugging best practices for Cortana][Cortana-TestBestPractice]
+* <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
 
 [CortanaGetStarted]: https://docs.microsoft.com/en-us/cortana/getstarted
 [BFPortal]: https://dev.botframework.com/
 [Register]: https://docs.microsoft.com/en-us/bot-framework/portal-register-bot
 
 [SSMLRef]: https://aka.ms/cortana-ssml
-[IMessage]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.imessage.html
-[Send]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#send
 [CortanaDevCenter]: https://developer.microsoft.com/en-us/cortana
 
 [CortanaSpecificEntities]: https://aka.ms/lgvcto
@@ -350,12 +349,12 @@ If your bot is running locally or deployed in the cloud, you can invoke it from 
 [CortanaChannel]: https://aka.ms/bot-cortana-channel
 [Cortana-TestBestPractice]: https://aka.ms/cortana-test-best-practice
 
-[heroCard]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d4/dab/class_microsoft_1_1_bot_1_1_connector_1_1_hero_card.html 
+[heroCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.herocard?view=botbuilder-3.8
 
-[thumbnailCard]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/da/da6/class_microsoft_1_1_bot_1_1_connector_1_1_thumbnail_card.html 
+[thumbnailCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.thumbnailcard?view=botbuilder-3.8 
 
-[receiptCard]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d0/df9/class_microsoft_1_1_bot_1_1_connector_1_1_receipt_card.html 
+[receiptCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.receiptcard?view=botbuilder-3.8 
 
-[signinCard]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/dc/d03/class_microsoft_1_1_bot_1_1_connector_1_1_signin_card.html 
+[signinCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.signincard?view=botbuilder-3.8 
 
 

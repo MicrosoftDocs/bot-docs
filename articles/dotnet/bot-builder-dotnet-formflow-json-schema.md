@@ -332,14 +332,14 @@ that is described in [Customize a form using FormBuilder](~/dotnet/bot-builder-d
 - [Customize a form using FormBuilder](~/dotnet/bot-builder-dotnet-formflow-formbuilder.md)
 - [Localize form content](~/dotnet/bot-builder-dotnet-formflow-localize.md)
 - [Customize user experience with pattern language](~/dotnet/bot-builder-dotnet-formflow-pattern-language.md)
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
 
+[numericAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.numericattribute?view=botbuilder-3.8
 
-[numericAttribute]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/df/d31/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_numeric_attribute.html
+[patternAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.patternattribute?view=botbuilder-3.8
 
-[patternAttribute]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/da/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_pattern_attribute.html
+[templateAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.templateattribute?view=botbuilder-3.8
 
-[templateAttribute]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d7/d0a/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_template_attribute.html
+[promptAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.promptattribute?view=botbuilder-3.8
 
-[promptAttribute]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d0/d34/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_prompt_attribute.html
-
-[describeAttribute]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/dd/d38/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_describe_attribute.html
+[describeAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.describeattribute?view=botbuilder-3.8

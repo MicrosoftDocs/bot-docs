@@ -99,18 +99,18 @@ In this example, the form executes these steps:
 - [Localize form content](~/dotnet/bot-builder-dotnet-formflow-localize.md)
 - [Define a form using JSON schema](~/dotnet/bot-builder-dotnet-formflow-json-schema.md)
 - [Customize user experience with pattern language](~/dotnet/bot-builder-dotnet-formflow-pattern-language.md)
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
 
+[formBuilder]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.formbuilder-1?view=botbuilder-3.8
 
-[formBuilder]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/de/d9d/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder.html
+[setType]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.field-1.settype?view=botbuilder-3.8
 
-[setType]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a84d27b92be458b51a367c732e19a1fc2
+[setActive]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.field-1.setactive?view=botbuilder-3.8
 
-[setActive]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a048ce0f4bd1841ad37f3ed5f6e2df933
+[setDefine]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.field-1.setdefine?view=botbuilder-3.8
 
-[setDefine]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html#a28233c49a6abf58c2397bd397151278a
+[field]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.field-1?view=botbuilder-3.8
 
-[field]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html
+[iField]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.ifield-1?view=botbuilder-3.8
 
-[iField]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d5/d09/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_field.html
-
-[FieldReflector]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d0/db3/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field_reflector.html
+[FieldReflector]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.fieldreflector-1?view=botbuilder-3.8

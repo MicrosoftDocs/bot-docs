@@ -57,7 +57,5 @@ For a complete sample that shows how to intercept and log messages using the Bot
 
 ## Additional resources
 
-- [Builder library][builderLibrary]
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
 - <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-Middleware" target="_blank">Middleware sample (GitHub)</a>
-
-[builderLibrary]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html
