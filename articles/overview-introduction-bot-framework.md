@@ -11,7 +11,7 @@ ms.date:
 
 # Bot Framework Overview
 
-The Bot Framework is a platform for building, connecting, testing, and deploying powerful and intelligent bots. With support for .NET, Node.js, and REST, you can quickly [start building bots](bot-builder-overview-getstarted.md) with the Bot Framework.
+The Bot Framework is a platform for building, connecting, testing, and deploying powerful and intelligent bots. With support for .NET, Node.js, and REST, you can [download the Bot Builder SDK](resources-tools-downloads.md) and quickly [start building bots](bot-builder-overview-getstarted.md) with the Bot Framework.
 
 ## What is a bot?
 Think of a bot as an app that users interact with in a conversational way. Bots can communicate conversationally with text, cards , or speech. A bot may be as simple as basic pattern matching with a response, or it may be a sophisticated weaving of artificial intelligence techniques with complex conversational state tracking and integration to existing business services.
