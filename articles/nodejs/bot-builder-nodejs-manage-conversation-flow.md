@@ -7,11 +7,11 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 03/31/2017
+ms.date: 
 ms.reviewer:
-
+ROBOTS: NoIndex, NoFollow
 ---
+
 # Manage message flow with dialogs
 
 Dialogs help you encapsulate your bot's conversational logic into manageable components. The Bot Builder SDK provides [Dialog][Dialogclass] objects that help you manage conversation flow. 

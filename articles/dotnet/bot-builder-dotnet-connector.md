@@ -1,15 +1,13 @@
 ---
 title: Send and receive activities | Microsoft Docs
-description: Learn how to exchange information with a user across various channels using a single REST API contained in the Bot Builder SDK for .NET.
+description: Learn how to exchange information with a user across various channels by using the Connector service via the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 03/09/2017
+ms.date: 
 ms.reviewer:
-
 ---
 
 # Send and receive activities
@@ -120,10 +118,7 @@ This code example uses the `CreateConversation` method to create a group convers
 ## Additional resources
 
 - [Connector library][connectorLibrary]
-- [Activity types](~/dotnet/bot-builder-dotnet-activities.md)
+- [Activities overview](~/dotnet/bot-builder-dotnet-activities.md)
 - [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
-- [Add media attachments to messages](~/dotnet/bot-builder-dotnet-add-media-attachments.md)
-- [Add rich cards to messages](~/dotnet/bot-builder-dotnet-add-rich-card-attachments.md)
-- [Implement channel-specific functionality](~/dotnet/bot-builder-dotnet-channeldata.md)
 
 [connectorLibrary]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/db/dbb/namespace_microsoft_1_1_bot_1_1_connector.html

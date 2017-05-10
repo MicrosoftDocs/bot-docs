@@ -6,29 +6,27 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 02/06/2017
+ms.date: 
 ms.reviewer:
-
 ---
+
 # Register a bot with the Bot Framework
 
 Before others can use your bot, you must register it with the Bot Framework.
 Registration is a simple process. You are prompted to provide some information about your bot and then the portal generates the app ID and password that your bot will use to authenticate with the Bot Framework.
 
 > [!NOTE]
-> If you created a bot with the Azure Bot Service, your bot registration was part of the bot creation process.
+> Bots created with the Azure Bot Service are automatically registered as part of the creation process.
  
 ## Register your bot
 
-To register your bot, sign in to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a>, click **Register a bot**, and complete the following steps.
+To register your bot, sign in to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a>, click **Register**, and complete the following steps.
   
 ### Complete the **Bot profile** section of the form.  
 
 1. Upload an icon that will represent your bot in the conversation.  
-2. Provide your bot's name. If you publish the bot to the <a href="https://bots.botframework.com/" target="_blank">Bot Directory</a>, this is the name that will appear in the directory.  
-3. Provide your bot's handle. This is the name that will represent your bot in the conversation. Choose this value carefully, because you cannot change it after you register the bot.  
-4. Provide a description of your bot. If you publish the bot to the <a href="https://bots.botframework.com/" target="_blank">Bot Directory</a>, this is the description that will appear directory, so it should describe what your bot does.  
+2. Provide your bot's **Display Name**. When users search for this bot, this is the name that will appear in the search results.  
+3. Provide a **Description** of your bot. This is the description that will appear in search results, so it should accurately describe what the bot does.  
 
 ### Complete the **Configuration** section of the form.  
 
@@ -40,30 +38,32 @@ To register your bot, sign in to the <a href="https://dev.botframework.com" targ
     - On the next page, click **Generate an app password to continue**.
     - Copy and securely store the password that is shown, and then click **Ok**.  
     - Click **Finish and go back to Bot Framework**.  
-    - Back in the Bot Framework Portal, the **app ID** field is now auto-populated for you.  
+    - Back in the Bot Framework Portal, the **App ID** field is now populated.  
 
-### Complete the **Admin** section of the form.  
+3. Check to indicate that you have read and accepted the the [Terms of Use][terms], [Privacy Statement][privacy], and [Code of Conduct][code]. 
 
-1. Provide a comma-delimited list of email addresses corresponding to of the owners of the bot.
-You must provide monitored emails because the framework will send all communications to these emails.  
-    - If you host your bot in Azure and use Azure App Insights, provide your insights key.  
-
-2. Click **Register** to complete the registration process.
+4. Click **Register** to complete the registration process.
 
 ##<a id="updateConfigSettings"></a> Update application configuration settings
 
 After you've registered your bot, update the Microsoft App Id and Microsoft App Password values in your application's configuration settings to specify the **app ID** and **password** values that were generated for your bot during the registration process.
 
+> [!TIP]
+> If you're using the Bot Builder SDK for Node.js, set the following environment variables:
+> <ul><li>MICROSOFT_APP_ID</li><li>MICROSOFT_APP_PASSWORD</li></ul>
+> If you're using the Bot Builder SDK for .NET, set the following key values in the web.config file:
+> <ul><li>MicrosoftAppId</li><li>MicrosoftAppPassword</li></ul>
+
 ## Update or delete registration
 
 <a id="maintain"></a>
-To update or delete the bot's registration data, 
-<ol><li>Sign in to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a>.</li><li>Click **My Bots**.</li><li>Select the bot that you want to configure, and in the Details section, click **Edit**.</li><li>Update settings.<ul><li>To generate a new password, click **Manage Microsoft App ID and password** (in the Configuration section) to access the Microsoft Application Registration Portal, where the bot's password is managed.</li></ul></li><li>Click **Save changes** (or click **Delete bot** to delete the bot registration altogether).</li></ol>
+To update or delete the bot's registration data:
 
-
-
-> [!TIP]
-[!include[Application configuration settings](~/includes/snippet-tip-bot-config-settings.md)]
+1. Sign in to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a>.
+2. Click **My Bots**.
+3. Select the bot that you want to configure and click **Settings**.
+    - To generate a new password, click **Manage Microsoft App ID and password**.
+    - To delete a bot, click **Delete bot**.
 
 ## Next steps
 
@@ -71,13 +71,19 @@ After you have registered your bot with the Bot Framework,
 the next step in the bot publication process will depend upon whether or not you've already deployed your bot to the cloud.
 
 ### If you have not yet deployed your bot to the cloud:
-1. Deploy your bot to the cloud by following the instructions found in [Deploy a bot to the cloud](~/publish-bot-overview.md).
+
+1. Deploy your bot to the cloud by following the instructions found in [Deploy a bot to the cloud](~/deploy-bot-overview.md).
 
 2. Return to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a> and [update your bot's registration data](~/portal-register-bot.md#maintain) to specify the **HTTPS** endpoint for the bot.
 
 3. [Configure the bot to run on one or more channels](~/portal-configure-channels.md).
 
 ### If you have already deployed your bot to the cloud:
-1. Update the Microsoft App Id and Microsoft App Password values in your deployed application's configuration settings to specify the **app ID** and **password** values that were generated for your bot during the registration process, as described [here](#updateConfigSettings).
 
-2. [Configure the bot to run on one or more channels](~/portal-configure-channels.md).
+1. Update the Microsoft App Id and Microsoft App Password values in your deployed application's configuration settings to specify the **app ID** and **password** values that were generated for your bot during the registration process, as described [here](#updateConfigSettings). 
+
+2. [Configure the bot to run on one or more channels](~/portal-configure-channels.md). 
+
+[terms]: https://aka.ms/bf-terms
+[code]: https://aka.ms/bf-conduct
+[privacy]: https://aka.ms/bf-privacy

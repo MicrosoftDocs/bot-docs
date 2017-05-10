@@ -1,0 +1,150 @@
+<Type Name="LuisIntentScorable&lt;InnerState,InnerScore&gt;" FullName="Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable&lt;InnerState,InnerScore&gt;">
+  <TypeSignature Language="C#" Value="public sealed class LuisIntentScorable&lt;InnerState,InnerScore&gt; : Microsoft.Bot.Builder.Scorables.Internals.ResolverScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable&lt;InnerState,InnerScore&gt;.Scope,Microsoft.Bot.Builder.Luis.Models.IntentRecommendation,InnerState,InnerScore&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit LuisIntentScorable`2&lt;InnerState, InnerScore&gt; extends Microsoft.Bot.Builder.Scorables.Internals.ResolverScorable`4&lt;class Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2/Scope&lt;!InnerState, !InnerScore&gt;, class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation, !InnerState, !InnerScore&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="InnerState" />
+    <TypeParameter Name="InnerScore" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Scorables.Internals.ResolverScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable&lt;InnerState,InnerScore&gt;+Scope,Microsoft.Bot.Builder.Luis.Models.IntentRecommendation,InnerState,InnerScore&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="OuterState">Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable&lt;InnerState,InnerScore&gt;+Scope</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="OuterScore">Microsoft.Bot.Builder.Luis.Models.IntentRecommendation</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="InnerState">InnerState</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="InnerScore">InnerScore</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="InnerState">To be added.</typeparam>
+    <typeparam name="InnerScore">To be added.</typeparam>
+    <summary>
+            Scorable to represent a specific LUIS intent recommendation.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LuisIntentScorable (Microsoft.Bot.Builder.Luis.ILuisService service, Microsoft.Bot.Builder.Luis.ILuisModel model, Microsoft.Bot.Builder.Dialogs.LuisIntentAttribute intent, Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,InnerScore&gt; inner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Luis.ILuisService service, class Microsoft.Bot.Builder.Luis.ILuisModel model, class Microsoft.Bot.Builder.Dialogs.LuisIntentAttribute intent, class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !InnerScore&gt; inner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.#ctor(Microsoft.Bot.Builder.Luis.ILuisService,Microsoft.Bot.Builder.Luis.ILuisModel,Microsoft.Bot.Builder.Dialogs.LuisIntentAttribute,Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,`1})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="service" Type="Microsoft.Bot.Builder.Luis.ILuisService" />
+        <Parameter Name="model" Type="Microsoft.Bot.Builder.Luis.ILuisModel" />
+        <Parameter Name="intent" Type="Microsoft.Bot.Builder.Dialogs.LuisIntentAttribute" />
+        <Parameter Name="inner" Type="Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,InnerScore&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="service">To be added.</param>
+        <param name="model">To be added.</param>
+        <param name="intent">To be added.</param>
+        <param name="inner">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoneAsync">
+      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task DoneAsync (Microsoft.Bot.Builder.Scorables.Internals.IResolver item, Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable&lt;InnerState,InnerScore&gt;.Scope state, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task DoneAsync(class Microsoft.Bot.Builder.Scorables.Internals.IResolver item, class Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2/Scope&lt;!InnerState, !InnerScore&gt; state, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.DoneAsync(Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope{`0,`1},System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
+        <Parameter Name="state" Type="Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable&lt;InnerState,InnerScore&gt;+Scope" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetScore">
+      <MemberSignature Language="C#" Value="protected override Microsoft.Bot.Builder.Luis.Models.IntentRecommendation GetScore (Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable&lt;InnerState,InnerScore&gt;.Scope state);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation GetScore(class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, class Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2/Scope&lt;!InnerState, !InnerScore&gt; state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.GetScore(Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope{`0,`1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Luis.Models.IntentRecommendation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resolver" Type="Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
+        <Parameter Name="state" Type="Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable&lt;InnerState,InnerScore&gt;+Scope" />
+      </Parameters>
+      <Docs>
+        <param name="resolver">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrepareAsync">
+      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable&lt;InnerState,InnerScore&gt;.Scope&gt; PrepareAsync (Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2/Scope&lt;!InnerState, !InnerScore&gt;&gt; PrepareAsync(class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.PrepareAsync(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2/&lt;PrepareAsync&gt;d__7))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable&lt;InnerState,InnerScore&gt;+Scope&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resolver" Type="Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resolver">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -6,10 +6,8 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 02/24/2017
-ms.reviewer: rstand
-
+ms.date: 
+ms.reviewer: 
 ---
 
 # Support localization
@@ -31,8 +29,10 @@ bot.dialog('/localePicker', [
         switch (results.response.entity) {
             case 'English':
                 locale = 'en';
+                break;
             case 'Español':
                 locale = 'es';
+                break;
             case 'Italiano':
                 locale = 'it';
                 break;
@@ -51,9 +51,9 @@ bot.dialog('/localePicker', [
 ```
 
 ## Determine the locale by using analytics
-Another way to determine the user's locale is to install a piece of middleware that uses a service like the [Text Analytics API](https://www.microsoft.com/cognitive-services/en-us/text-analytics-api) to automatically 
-detect the user's language based upon the text of the message they sent.
+Another way to determine the user's locale is to use a service like the [Text Analytics API](https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-text-analytics-quick-start) to automatically detect the user's language based upon the text of the message they sent.
 
+The code snippet below illustrates how you can incorporate this service into your own bot.
 ``` javascript
 var request = require('request');
 
@@ -87,11 +87,10 @@ bot.use({
 });
 ```
 
-Calling [session.preferredLocale()][preferredLocal] will automatically return the detected language if a user-selected locale hasn’t been assigned. The exact search order for **preferredLocale()** is:
-* Locale saved by calling **session.preferredLocale()**. This value is stored in **session.userData['BotBuilder.Data.PreferredLocale']**.
-* Detected locale assigned to **session.message.textLocale**.
-* The configured default locale for the bot.
-* English (‘en’).
+Once you add the above code snippet to your bot, calling [session.preferredLocale()][preferredLocal] will automatically return the detected language. The search order for `preferredLocale()` is as follows:
+1. Locale saved by calling `session.preferredLocale()`. This value is stored in `session.userData['BotBuilder.Data.PreferredLocale']`.
+2. Detected locale assigned to `session.message.textLocale`.
+3. The configured default locale for the bot (e.g.: English (‘en’)).
 
 You can configure the bot's default locale using its constructor:
 
@@ -104,7 +103,7 @@ var bot = new builder.UniversalBot(connector, {
 ```
 
 ## Localize prompts
-The default localization system for the Bot Builder SDK is file-based and allows a bot to support multiple languages using JSON files stored on disk. By default, the localization system will search for the bot's prompts in the `./locale/<IETF TAG>/index.json` file where <IETF TAG> is a valid [IETF language tag][IEFT] representing the preferred locale for which to find prompts. 
+The default localization system for the Bot Builder SDK is file-based and allows a bot to support multiple languages using JSON files stored on disk. By default, the localization system will search for the bot's prompts in the **./locale/<IETF TAG>/index.json** file where <IETF TAG> is a valid [IETF language tag][IEFT] representing the preferred locale for which to find prompts. 
 
 The following screenshot shows the directory structure for a bot that supports three languages: English, Italian, and Spanish.
 
@@ -112,7 +111,7 @@ The following screenshot shows the directory structure for a bot that supports t
 
 The structure of the file is a simple JSON map of message IDs to localized text strings. If the value is an array instead of a string, one prompt from the array is chosen at random when that value is retrieved using [session.localizer.gettext()][GetText]. 
 
-The bot automatically retrieves the localized version of a message if you pass the message ID in a call to [session.send()](/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#send) instead of language-specific text:
+The bot automatically retrieves the localized version of a message if you pass the message ID in a call to [session.send()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#send) instead of language-specific text:
 
 ```javascript
 bot.dialog("/", [
@@ -126,21 +125,21 @@ bot.dialog("/", [
     },
 ```
 
-Internally, the SDK calls [`session.preferredLocale()`][preferredLocale] to get the user's preferred locale and then uses that in a call to [`session.localizer.gettext()`][GetText] to map the message ID to its localized text string.  There are times where you may need to manually call the localizer. For instance, the enum values passed to [Prompts.choice()][promptsChoice] are never automatically localized so you may need to manually retrieve a localized list prior to calling the prompt:
+Internally, the SDK calls [`session.preferredLocale()`][preferredLocale] to get the user's preferred locale and then uses that in a call to [`session.localizer.gettext()`][GetText] to map the message ID to its localized text string.  There are times where you may need to manually call the localizer. For instance, the enum values passed to [`Prompts.choice()`][promptsChoice] are never automatically localized so you may need to manually retrieve a localized list prior to calling the prompt:
 
-```
-    var options = session.localizer.gettext(session.preferredLocale(), "choice_options");
-    builder.Prompts.choice(session, "choice_prompt", options);
+```javascript
+var options = session.localizer.gettext(session.preferredLocale(), "choice_options");
+builder.Prompts.choice(session, "choice_prompt", options);
 ```
 
 The default localizer searches for a message ID across multiple files and if it can’t find an ID (or if no localization files were provided) it will simply return the text of ID, making the use of localization files transparent and optional.  Files are searched in the following order:
 
-* First the `index.json` file under the locale returned by [`session.preferredLocale()`][preferredLocale] is searched.
-* Next, if the locale included an optional subtag like `en-US` then the root tag of `en` is searched.
-* Finally, the bot's configured default locale is searched.
+1. The **index.json** file under the locale returned by [`session.preferredLocale()`][preferredLocale] is searched.
+2. If the locale included an optional subtag like **en-US** then the root tag of **en** is searched.
+3. The bot's configured default locale is searched.
 
 ## Use namespaces to customize and localize prompts
-The default localizer supports the namespacing of prompts to avoid collisions between message IDs.  Your bot can override namespaced prompts to customize or reword the prompts from another namespace.  You can leverage this capability to customize the SDK’s built-in messages, letting you either add support for additional languages or to simply reword the SDK's current messages.  For instance, you can change the SDK’s default error message by simply adding a file called `BotBuilder.json` to your bot's locale directory and then adding an entry for the `default_error` message ID:
+The default localizer supports the namespacing of prompts to avoid collisions between message IDs.  Your bot can override namespaced prompts to customize or reword the prompts from another namespace.  You can leverage this capability to customize the SDK’s built-in messages, letting you either add support for additional languages or to simply reword the SDK's current messages.  For instance, you can change the SDK’s default error message by simply adding a file called **BotBuilder.json** to your bot's locale directory and then adding an entry for the `default_error` message ID:
 
 ![BotBuilder.json for locale namespacing](~/media/locale-namespacing.png)
 
@@ -158,7 +157,7 @@ To learn about how to localize a recognizer, see [Recognizing intent](~/nodejs/b
 [DisambiguationSample]: https://github.com/Microsoft/BotBuilder/tree/master/Node/examples/feature-onDisambiguateRoute
 [preferredLocal]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#preferredlocale
 [preferredLocale]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#preferredlocale
-[promptsChoice]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts.html#choice
+[promptsChoice]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.__global.iprompts.html#choice
 [GetText]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ilocalizer.html#gettext
 [IEFT]: https://en.wikipedia.org/wiki/IETF_language_tag
 

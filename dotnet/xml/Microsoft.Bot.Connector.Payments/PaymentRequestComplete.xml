@@ -1,0 +1,132 @@
+<Type Name="PaymentRequestComplete" FullName="Microsoft.Bot.Connector.Payments.PaymentRequestComplete">
+  <TypeSignature Language="C#" Value="public class PaymentRequestComplete" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaymentRequestComplete extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Payments.PaymentRequestComplete" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Payload delivered when completing a payment request
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PaymentRequestComplete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.PaymentRequestComplete.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the PaymentRequestComplete class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PaymentRequestComplete (string id = null, Microsoft.Bot.Connector.Payments.PaymentRequest paymentRequest = null, Microsoft.Bot.Connector.Payments.PaymentResponse paymentResponse = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, class Microsoft.Bot.Connector.Payments.PaymentRequest paymentRequest, class Microsoft.Bot.Connector.Payments.PaymentResponse paymentResponse) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.PaymentRequestComplete.#ctor(System.String,Microsoft.Bot.Connector.Payments.PaymentRequest,Microsoft.Bot.Connector.Payments.PaymentResponse)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="paymentRequest" Type="Microsoft.Bot.Connector.Payments.PaymentRequest" />
+        <Parameter Name="paymentResponse" Type="Microsoft.Bot.Connector.Payments.PaymentResponse" />
+      </Parameters>
+      <Docs>
+        <param name="id">To be added.</param>
+        <param name="paymentRequest">To be added.</param>
+        <param name="paymentResponse">To be added.</param>
+        <summary>
+            Initializes a new instance of the PaymentRequestComplete class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentRequestComplete.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="id")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Payment request ID
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PaymentRequest">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.Payments.PaymentRequest PaymentRequest { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.Payments.PaymentRequest PaymentRequest" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentRequestComplete.PaymentRequest" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="paymentRequest")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.Payments.PaymentRequest</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Initial payment request
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PaymentResponse">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.Payments.PaymentResponse PaymentResponse { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.Payments.PaymentResponse PaymentResponse" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentRequestComplete.PaymentResponse" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="paymentResponse")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.Payments.PaymentResponse</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Corresponding payment response
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

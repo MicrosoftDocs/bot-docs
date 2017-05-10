@@ -1,0 +1,54 @@
+<Type Name="MediaSendStatus" FullName="Microsoft.Skype.Bots.Media.MediaSendStatus">
+  <TypeSignature Language="C#" Value="public enum MediaSendStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MediaSendStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.MediaSendStatus" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Indicates whether an AudioSocket or VideoSocket is capable of sending media.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Active">
+      <MemberSignature Language="C#" Value="Active" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.MediaSendStatus Active = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.MediaSendStatus.Active" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.MediaSendStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Media can be sent
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Inactive">
+      <MemberSignature Language="C#" Value="Inactive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.MediaSendStatus Inactive = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.MediaSendStatus.Inactive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.MediaSendStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Media cannot be sent
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

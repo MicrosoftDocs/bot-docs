@@ -6,15 +6,13 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 03/29/2017
+ms.date: 
 ms.reviewer:
-
 ---
 
 # Customize a form using FormBuilder
 
-[FormFlow](~/dotnet/bot-builder-dotnet-formflow.md) describes a basic FormFlow implementation that 
+[Basic features of FormFlow](~/dotnet/bot-builder-dotnet-formflow.md) describes a basic FormFlow implementation that 
 delivers a fairly generic user experience, and [Advanced features of FormFlow](~/dotnet/bot-builder-dotnet-formflow-advanced.md) describes how you can 
 customize user experience by using business logic and attributes. 
 This article describes how you can use 
@@ -96,7 +94,7 @@ In this example, the form executes these steps:
 
 ## Additional resources
 
-- [FormFlow](~/dotnet/bot-builder-dotnet-formflow.md)
+- [Basic features of FormFlow](~/dotnet/bot-builder-dotnet-formflow.md)
 - [Advanced features of FormFlow](~/dotnet/bot-builder-dotnet-formflow-advanced.md)
 - [Localize form content](~/dotnet/bot-builder-dotnet-formflow-localize.md)
 - [Define a form using JSON schema](~/dotnet/bot-builder-dotnet-formflow-json-schema.md)

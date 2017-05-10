@@ -6,9 +6,8 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 04/18/2017
+ms.date: 
 ms.reviewer: 
-
 ---
 
 # Create a bot using the Question and Answer template
@@ -73,7 +72,7 @@ The Question and Answer template provides a good foundation that you can build u
 - [Design knowledge bots](~/bot-design-pattern-knowledge-base.md)
 - <a href="https://qnamaker.ai/" target="_blank">QnA Maker</a>
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub repository</a>
-- [Bot Builder SDK for .NET](~/dotnet/index.md)
+- [Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-overview.md)
 - [Bot Builder SDK for Node.js](~/nodejs/index.md)
 
 [qnaMaker]: https://qnamaker.ai/

@@ -6,13 +6,13 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 02/21/2017
+ms.date: 
 ms.reviewer:
-
 ---
-
 # Intercept messages
+> [!div class="op_single_selector"]
+> - [.NET](../dotnet/bot-builder-dotnet-middleware.md)
+> - [Node.js](../nodejs/bot-builder-nodejs-intercept-messages.md)
 
 [!include[Introduction to message logging](~/includes/snippet-message-logging-intro.md)]
 

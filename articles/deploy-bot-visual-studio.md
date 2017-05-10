@@ -3,22 +3,23 @@ title: Deploy a bot to Azure from Visual Studio | Microsoft Docs
 description: Learn how to deploy a bot to Azure using Visual Studio's built-in publishing feature.
 author: RobStand
 ms.author: rstand
-
-
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
 ms.date:
-ms.reviewer: rstand
-
+ms.reviewer: 
 ---
+
 # Deploy a bot to Azure from Visual Studio
 When you build a bot with Visual Studio, you can take advantage of its built-in publish capability. This tutorial shows you to how deploy a bot to Azure directly from Visual Studio.
 
+> [!NOTE]
+> If you created a bot with the Azure Bot Service, your bot deployment was part of the Azure Bot Service bot 
+> creation process.
+
 ## Prerequisites
-- Visual Studio
-- Azure
+
+You must have a Microsoft Azure subscription before you can deploy a bot to Azure. If you do not already have a subscription, you can register for a <a href="https://azure.microsoft.com/en-us/free/" target="_blank">free trial</a>. Additionally, the process described by this article requires Visual Studio. If you do not already have Visual Studio, you can download <a href="https://www.visualstudio.com/downloads/" target="_blank">Visual Studio 2017 Community</a> for free.
 
 [!include[Pre-deployment considerations](~/includes/snippet-deploy-considerations.md)]
 
@@ -55,7 +56,7 @@ Click **Publish** to publish your bot to Microsoft Azure. <br/><br/>
 ![Select Release Configuration and click Publish](~/media/connector-getstarted-publish-configuration.png)
 
 > [!NOTE]
-> During the publishing process, you will see a number of messages displayed in the Visual Studio 2015 Output window.
+> During the publishing process, you will see a number of messages displayed in the Visual Studio 2017 Output window.
 > When publishing completes, your bot's HTML page will be displayed in your default browser.
 
 ## Step 3: Test the connection to your bot

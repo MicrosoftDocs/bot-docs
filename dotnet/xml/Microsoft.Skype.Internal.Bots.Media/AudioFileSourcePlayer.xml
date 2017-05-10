@@ -1,0 +1,172 @@
+<Type Name="AudioFileSourcePlayer" FullName="Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer">
+  <TypeSignature Language="C#" Value="public class AudioFileSourcePlayer : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AudioFileSourcePlayer extends System.Object implements class Microsoft.Skype.Internal.Bots.Media.IFileSourcePlayer, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary />
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AudioFileSourcePlayer (string callId, Microsoft.Skype.Bots.Media.AudioSocket audioSocket, Microsoft.Skype.Internal.Bots.Media.IFileSource fileSource, Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayerSettings audioFileSourcePlayerSettings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string callId, class Microsoft.Skype.Bots.Media.AudioSocket audioSocket, class Microsoft.Skype.Internal.Bots.Media.IFileSource fileSource, class Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayerSettings audioFileSourcePlayerSettings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.#ctor(System.String,Microsoft.Skype.Bots.Media.AudioSocket,Microsoft.Skype.Internal.Bots.Media.IFileSource,Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayerSettings)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="callId" Type="System.String" />
+        <Parameter Name="audioSocket" Type="Microsoft.Skype.Bots.Media.AudioSocket" />
+        <Parameter Name="fileSource" Type="Microsoft.Skype.Internal.Bots.Media.IFileSource" />
+        <Parameter Name="audioFileSourcePlayerSettings" Type="Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayerSettings" />
+      </Parameters>
+      <Docs>
+        <param name="callId">
+        </param>
+        <param name="audioSocket">
+        </param>
+        <param name="fileSource">
+        </param>
+        <param name="audioFileSourcePlayerSettings">
+        </param>
+        <summary />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+        </param>
+        <summary />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileSourcePlayerEndOfFile">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Skype.Internal.Bots.Media.FileSourcePlayerEndOfFileEventArgs&gt; FileSourcePlayerEndOfFile;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Skype.Internal.Bots.Media.FileSourcePlayerEndOfFileEventArgs&gt; FileSourcePlayerEndOfFile" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.FileSourcePlayerEndOfFile" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Skype.Internal.Bots.Media.FileSourcePlayerEndOfFileEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Play">
+      <MemberSignature Language="C#" Value="public void Play ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Play() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.Play" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Stop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.Stop" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalBytesProvided">
+      <MemberSignature Language="C#" Value="public ulong TotalBytesProvided { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 TotalBytesProvided" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.TotalBytesProvided" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalSamplesProvided">
+      <MemberSignature Language="C#" Value="public uint TotalSamplesProvided { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 TotalSamplesProvided" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.TotalSamplesProvided" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

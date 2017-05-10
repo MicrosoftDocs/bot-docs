@@ -1,15 +1,13 @@
 ---
 title: Localize form content | Microsoft Docs
-description: Learn how to create and provide localized content with FormFlow and the Bot Builder SDK for .NET.
+description: Learn how to localize form content with FormFlow and the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 03/29/2017
+ms.date: 
 ms.reviewer:
-
 ---
 
 # Localize form content
@@ -166,7 +164,7 @@ Par pain "neuf" vouliez-vous dire (1. Neuf grains miel avoine, ou 2. Neuf grains
 
 ## Additional resources
 
-- [FormFlow](~/dotnet/bot-builder-dotnet-formflow.md)
+- [Basic features of FormFlow](~/dotnet/bot-builder-dotnet-formflow.md)
 - [Advanced features of FormFlow](~/dotnet/bot-builder-dotnet-formflow-advanced.md)
 - [Customize a form using FormBuilder](~/dotnet/bot-builder-dotnet-formflow-formbuilder.md)
 - [Define a form using JSON schema](~/dotnet/bot-builder-dotnet-formflow-json-schema.md)

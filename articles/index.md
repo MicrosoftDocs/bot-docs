@@ -69,9 +69,10 @@ description:
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Key concepts</h3>
-                                            <p>Explore the core concepts of building, deploying, and publishing bots with the Bot Framework SDK.</p>
-                                        </div>
+
+                                            <h3>How it works</h3>
+                                            <p>Learn about the core concepts of the Bot Framework and building bots.</p>
+</div>
                                     </div>
                                 </div>
                             </div>
@@ -102,7 +103,7 @@ description:
                     <a href="#developing">Developing Bots</a>
                     <ul id="developing" class="cardsC">
                         <li>
-                            <a href="/bot-framework/dotnet/">
+                            <a href="/bot-framework/dotnet/bot-builder-dotnet-overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -121,7 +122,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/bot-framework/nodejs/">
+                            <a href="/bot-framework/nodejs/bot-builder-nodejs-overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -140,7 +141,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/bot-framework/azure">
+                            <a href="/bot-framework/azure/azure-bot-service-overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -159,7 +160,26 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/bot-framework/publish-bot-overview">
+                            <a href="/bot-framework/rest-api/bot-framework-rest-overview">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage bgdAccent1">
+                                                <img src="/media/hubs/botframework/botframework-developing-rest.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Build bots with REST</h3>
+                                            <p>Learn how to build bots with the Bot Framework REST APIs.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>                
+                        <li>
+                            <a href="/bot-framework/deploy-bot-overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -169,16 +189,16 @@ description:
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Deploy and publish bots</h3>
-                                            <p>Learn how to register bots with the portal, deploy a bot to Azure, and publish a bot to the Bot Directory.</p>
+                                            <h3>Deploy bots</h3>
+                                            <p>Learn about the different ways you can deploy bots.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             </a>
-                        </li>
+                        </li>                        
                         <li>
-                            <a href="/bot-framework/sdk-reference-overview">
+                            <a href="/bot-framework/reference-overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -189,7 +209,7 @@ description:
                                         </div>
                                         <div class="cardText">
                                             <h3>Reference</h3>
-                                            <p>Explore the Bot Framework class libraries.</p>
+                                            <p>Explore the Bot Framework reference documentation.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -221,7 +241,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/bot-framework/cognitive-services-add-bot-language">
+                            <a href="/bot-framework/cognitive-services-bot-intelligence-overview#language-understanding">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -240,7 +260,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/bot-framework/cognitive-services-add-bot-vision">
+                            <a href="/bot-framework/cognitive-services-bot-intelligence-overview#image-and-video-understanding">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -259,7 +279,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/bot-framework/cognitive-services-add-bot-speech">
+                            <a href="/bot-framework/cognitive-services-bot-intelligence-overview#speech-recognition-and-conversion">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -278,7 +298,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/bot-framework/cognitive-services-add-bot-knowledge">
+                            <a href="/bot-framework/cognitive-services-bot-intelligence-overview#knowledge-extraction">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -297,7 +317,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/bot-framework/cognitive-services-add-bot-search">
+                            <a href="/bot-framework/cognitive-services-bot-intelligence-overview#web-search">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -316,7 +336,7 @@ description:
                             </a>
                         </li>
                         <li>
-                            <a href="/bot-framework/cognitive-services-add-bot-location-control">
+                            <a href="/bot-framework/cognitive-services-bot-intelligence-overview#location-control">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">

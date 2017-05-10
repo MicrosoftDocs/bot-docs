@@ -1,0 +1,227 @@
+<Type Name="Confirmation&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class Confirmation&lt;T&gt; : Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; where T : class" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Confirmation`1&lt;class T&gt; extends Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation`1" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">T</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">Form state.</typeparam>
+    <summary>
+            Confirmation 
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Confirmation (Microsoft.Bot.Builder.FormFlow.MessageDelegate&lt;T&gt; generateMessage, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; condition, System.Collections.Generic.IEnumerable&lt;string&gt; dependencies, Microsoft.Bot.Builder.FormFlow.IForm&lt;T&gt; form);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.FormFlow.MessageDelegate`1&lt;!T&gt; generateMessage, class Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1&lt;!T&gt; condition, class System.Collections.Generic.IEnumerable`1&lt;string&gt; dependencies, class Microsoft.Bot.Builder.FormFlow.IForm`1&lt;!T&gt; form) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation`1.#ctor(Microsoft.Bot.Builder.FormFlow.MessageDelegate{`0},Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String},Microsoft.Bot.Builder.FormFlow.IForm{`0})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="generateMessage" Type="Microsoft.Bot.Builder.FormFlow.MessageDelegate&lt;T&gt;" />
+        <Parameter Name="condition" Type="Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt;" />
+        <Parameter Name="dependencies" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="form" Type="Microsoft.Bot.Builder.FormFlow.IForm&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="generateMessage">Delegate for building confirmation.</param>
+        <param name="condition">Delegate to see if confirmation is active.</param>
+        <param name="dependencies">Fields that must have values before confirmation can run.</param>
+        <param name="form">Form that contains confirmation.</param>
+        <summary>
+            Construct a confirmation dynamically.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Confirmation (Microsoft.Bot.Builder.FormFlow.PromptAttribute prompt, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; condition, System.Collections.Generic.IEnumerable&lt;string&gt; dependencies, Microsoft.Bot.Builder.FormFlow.IForm&lt;T&gt; form);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.FormFlow.PromptAttribute prompt, class Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1&lt;!T&gt; condition, class System.Collections.Generic.IEnumerable`1&lt;string&gt; dependencies, class Microsoft.Bot.Builder.FormFlow.IForm`1&lt;!T&gt; form) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation`1.#ctor(Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String},Microsoft.Bot.Builder.FormFlow.IForm{`0})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="prompt" Type="Microsoft.Bot.Builder.FormFlow.PromptAttribute" />
+        <Parameter Name="condition" Type="Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt;" />
+        <Parameter Name="dependencies" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="form" Type="Microsoft.Bot.Builder.FormFlow.IForm&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="prompt">Confirmation prompt expressed using \ref patterns.</param>
+        <param name="condition">Delegate for whether confirmation applies.</param>
+        <param name="dependencies">Fields that must have values before confirmation can run.</param>
+        <param name="form">Form that contains confirmation.</param>
+        <summary>
+            Construct a confirmation.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Active">
+      <MemberSignature Language="C#" Value="public override bool Active (T state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Active(!T state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation`1.Active(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dependencies">
+      <MemberSignature Language="C#" Value="public override System.Collections.Generic.IEnumerable&lt;string&gt; Dependencies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; Dependencies" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation`1.Dependencies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public override object GetValue (T state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetValue(!T state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation`1.GetValue(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUnknown">
+      <MemberSignature Language="C#" Value="public override bool IsUnknown (T state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsUnknown(!T state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation`1.IsUnknown(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Next">
+      <MemberSignature Language="C#" Value="public override Microsoft.Bot.Builder.FormFlow.Advanced.NextStep Next (object value, T state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.FormFlow.Advanced.NextStep Next(object value, !T state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation`1.Next(System.Object,`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.NextStep</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="state" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetUnknown">
+      <MemberSignature Language="C#" Value="public override void SetUnknown (T state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetUnknown(!T state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation`1.SetUnknown(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue">
+      <MemberSignature Language="C#" Value="public override void SetValue (T state, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetValue(!T state, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation`1.SetValue(`0,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="T" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="state">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

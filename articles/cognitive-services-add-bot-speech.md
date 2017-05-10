@@ -1,4 +1,5 @@
 ---
+redirect_url: /bot-framework/cognitive-services-bot-intelligence-overview#speech-recognition-and-conversion
 title: Add speech recognition to a bot | Microsoft Docs
 description: Enable your bot to listen to and process spoken input, convert speech to text, and even identify user voiceprints with the Bot Framework and Cognitive Services.
 author: RobStand
@@ -7,9 +8,7 @@ manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 
-ms.reviewer: rstand
-
-
+ms.reviewer: 
 ---
 
 # Add speech recognition to a bot
@@ -389,5 +388,7 @@ public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
     return response;
 }
 ```
-## Next steps
+
+## Additional resources
+
 You can find detailed documentation about the Bing Speech API, including developer guides and API references, by visiting the Microsoft Cognitive Services <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/speech/home" target="_blank">documentation site</a>.

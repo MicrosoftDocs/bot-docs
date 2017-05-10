@@ -1,0 +1,81 @@
+<Type Name="IChannelCapability" FullName="Microsoft.Bot.Builder.Dialogs.IChannelCapability">
+  <TypeSignature Language="C#" Value="public interface IChannelCapability" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IChannelCapability" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IChannelCapability" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Capability for a specific channel
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="NeedsInputHint">
+      <MemberSignature Language="C#" Value="public bool NeedsInputHint ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool NeedsInputHint() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.IChannelCapability.NeedsInputHint" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Indicates if channel relies on <see cref="P:Microsoft.Bot.Connector.Activity.InputHint" />.
+            </summary>
+        <returns>True if channel expect bot setting <see cref="P:Microsoft.Bot.Connector.Activity.InputHint" />; false otherwise </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsKeyboards">
+      <MemberSignature Language="C#" Value="public bool SupportsKeyboards (int buttonCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SupportsKeyboards(int32 buttonCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.IChannelCapability.SupportsKeyboards(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buttonCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="buttonCount"> number of buttons.</param>
+        <summary>
+            Indicates if channel supports keyboard.
+            </summary>
+        <returns>True if the channel support number of buttons; false otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsSpeak">
+      <MemberSignature Language="C#" Value="public bool SupportsSpeak ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SupportsSpeak() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.IChannelCapability.SupportsSpeak" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Indicates if channel is TTS enabled.
+            </summary>
+        <returns>True if channel support TTS and the bot can set <see cref="P:Microsoft.Bot.Connector.Activity.Speak" />; false otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

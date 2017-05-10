@@ -1,0 +1,86 @@
+<Type Name="WorkitemQueue" FullName="Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.WorkitemQueue">
+  <TypeSignature Language="C#" Value="public class WorkitemQueue : Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue&lt;Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.IWorkitem&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkitemQueue extends Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1&lt;class Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.IWorkitem&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.WorkitemQueue" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue&lt;Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.IWorkitem&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.IWorkitem</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Defines a serialization queue for synchronous workitems.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkitemQueue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.WorkitemQueue.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the WorkItemQueue class.
+            Processing will be dispatched to a separate thread pool worker thread;
+            the workitems in the queue will not be processed on the current thread.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkitemQueue (bool processAsync);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool processAsync) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.WorkitemQueue.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="processAsync" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="processAsync">
+            true if item processing should happen on a worker thread; 
+            false if processing should be attempted on the current thread.
+            </param>
+        <summary>
+            Initializes a new instance of the WorkItemQueue class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessItems">
+      <MemberSignature Language="C#" Value="protected override sealed bool ProcessItems ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessItems() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.WorkitemQueue.ProcessItems" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Processes all workitems in the queue.
+            </summary>
+        <returns>
+            true when all items have been processed.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

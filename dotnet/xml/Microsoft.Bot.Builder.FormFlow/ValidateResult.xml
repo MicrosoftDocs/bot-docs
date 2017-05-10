@@ -1,0 +1,124 @@
+<Type Name="ValidateResult" FullName="Microsoft.Bot.Builder.FormFlow.ValidateResult">
+  <TypeSignature Language="C#" Value="public class ValidateResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ValidateResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.ValidateResult" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>   Encapsulates the result of a <see cref="T:Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate`1" /></summary>
+    <remarks>
+                     If <see cref="F:Microsoft.Bot.Builder.FormFlow.ValidateResult.IsValid" /> is true, then the field will be set to <see cref="F:Microsoft.Bot.Builder.FormFlow.ValidateResult.Value" />.
+                     Otherwise if <see cref="F:Microsoft.Bot.Builder.FormFlow.ValidateResult.Choices" /> is  non-null they will be used to select a clarifying value.
+                     if <see cref="F:Microsoft.Bot.Builder.FormFlow.ValidateResult.FeedbackCard" /> is non-null the resulting card will be displayed.
+                     Otherwise the <see cref="F:Microsoft.Bot.Builder.FormFlow.ValidateResult.Feedback" /> string will be shown to provide feedback on the value.
+                     </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ValidateResult ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.ValidateResult.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Choices">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.FormFlow.Choice&gt; Choices;" />
+      <MemberSignature Language="ILAsm" Value=".field public class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.FormFlow.Choice&gt; Choices" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ValidateResult.Choices" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.FormFlow.Choice&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Choices for clarifying response.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Feedback">
+      <MemberSignature Language="C#" Value="public string Feedback;" />
+      <MemberSignature Language="ILAsm" Value=".field public string Feedback" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ValidateResult.Feedback" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>   Feedback to provide back to the user on the input. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FeedbackCard">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt FeedbackCard;" />
+      <MemberSignature Language="ILAsm" Value=".field public class Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt FeedbackCard" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ValidateResult.FeedbackCard" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Fully specified feedback card.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValid">
+      <MemberSignature Language="C#" Value="public bool IsValid;" />
+      <MemberSignature Language="ILAsm" Value=".field public bool IsValid" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ValidateResult.IsValid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>   True if value is a valid response. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object Value;" />
+      <MemberSignature Language="ILAsm" Value=".field public object Value" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ValidateResult.Value" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Value to put in the field if result is valid.
+            </summary>
+        <remarks>This provides an opportunity for validation to compute the final value.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

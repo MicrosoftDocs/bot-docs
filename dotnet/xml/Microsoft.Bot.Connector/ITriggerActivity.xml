@@ -1,0 +1,26 @@
+<Type Name="ITriggerActivity" FullName="Microsoft.Bot.Connector.ITriggerActivity">
+  <TypeSignature Language="C#" Value="public interface ITriggerActivity : Microsoft.Bot.Connector.IEventActivity" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITriggerActivity implements class Microsoft.Bot.Connector.IActivity, class Microsoft.Bot.Connector.IEventActivity" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ITriggerActivity" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Connector.IEventActivity</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            NOTE: Trigger activity has been renamed to Event activity
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

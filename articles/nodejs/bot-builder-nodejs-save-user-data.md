@@ -6,11 +6,10 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 02/24/2017
+ms.date: 
 ms.reviewer:
-
 ---
+
 <!--this seems like a stub; it should be about saving user-provided data, but it seems to be about state data capture and use, which is covered elsewhere-->
 
 # Save user data 

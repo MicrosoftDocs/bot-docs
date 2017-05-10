@@ -1,0 +1,404 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "v1",
+    "title": "Bot Connector - Direct Line API - V1.1",
+    "description": "Direct Line 1.1\r\n===============\r\n\r\n\r\nThe Direct Line API is a simple REST API for connecting directly to a single bot. This API is intended for developers\r\nwriting their own client applications, web chat controls, mobile apps, or service-to-service applications that will\r\ntalk to their bot.\r\n\r\nWithin the Direct Line API, you will find:\r\n\r\n* An **authentication mechanism** using standard secret/token patterns\r\n* The ability to **send** messages from your client to your bot via an HTTP POST message\r\n* The ability to **receive** messages by **polling HTTP GET**\r\n* A stable **schema**, even if your bot changes its protocol version\r\n\r\nDirect Line 1.1 and 3.0 are both available and supported. This document describes Direct Line 1.1. For information\r\non Direct Line 3.0, visit the [Direct Line 3.0 reference documentation](/en-us/restapi/directline3/). **If you're\r\nbuilding a new Direct Line client, consider using Direct Line 3.0.**\r\n\r\n# Authentication: Secrets and Tokens\r\n\r\nDirect Line allows you to authenticate all calls with either a secret (retrieved from the Direct Line channel\r\nconfiguration page) or a token (which you may get at runtime by converting your secret).\r\n\r\nA Direct Line **secret** is a master key that can access any conversation, and create tokens. Secrets do not expire.\r\n\r\nA Direct Line **token** is a key for a single conversation. It expires but can be refreshed.\r\n\r\nIf you're writing a service-to-service application, using the secret may be simplest. If you're writing an\r\napplication where the client runs in a web browser or mobile app, you may want to exchange your secret for a token,\r\nwhich only works for a single conversation and will expire unless refreshed. You choose which security model works\r\nbest for you.\r\n\r\nYour secret or token is communicated in the ```Authorization``` header of every call. The caller may use either the\r\n\"Bearer\" or \"BotConnector\" authorization scheme. Examples in this document use \"Bearer\" except for the first\r\nexample, below.\r\n\r\n```\r\n-- connect to directline.botframework.com --\r\nPOST /api/conversations/abc123/messages HTTP/1.1\r\nAuthorization: BotConnector RCurR_XV9ZA.cwA.BKA.iaJrC8xpy8qbOF5xnR2vtCX7CZj0LdjAPGfiCpg4Fv0\r\n[other HTTP headers, omitted]\r\n```\r\n\r\nYou may notice that your Direct Line client credentials are different from your bot's credentials. This is\r\nintentional, and it allows you to revise your keys independently and lets you share client tokens without\r\ndisclosing your bot's password. \r\n\r\n## Exchanging a secret for a token\r\n\r\nThis operation is optional. Use this step if you want to prevent clients from accessing conversations they aren't\r\nparticipating in.\r\n\r\nTo exchange a secret for a token, POST to ```/api/tokens/conversation``` with your secret in the auth header and no\r\nHTTP body.\r\n\r\n```\r\n-- connect to directline.botframework.com --\r\nPOST /api/tokens/conversation HTTP/1.1\r\nAuthorization: Bearer RCurR_XV9ZA.cwA.BKA.iaJrC8xpy8qbOF5xnR2vtCX7CZj0LdjAPGfiCpg4Fv0\r\n[other headers]\r\n\r\n-- response from directline.botframework.com --\r\nHTTP/1.1 200 OK\r\n[other headers]\r\n\r\nRCurR_XV9ZA.cwA.BKA.iaJrC8xpy8qbOF5xnR2vtCX7CZj0LdjAPGfiCpg4Fv0y8qbOF5xPGfiCpg4Fv0y8qqbOF5x8qbOF5xn\r\n```\r\n\r\nIf successful, the response is a token suitable for one conversation. The token expires in 30 minutes and must\r\nbe refreshed before then to remain useful.\r\n\r\nThis call is similar to ```/api/conversations```. The difference is that the call to\r\n```/api/tokens/conversation``` does not start the conversation or contact the bot.\r\n* Call ```/api/tokens/conversation``` if you will distribute the token to client(s) and want them to\r\n  initiate the conversation.\r\n* Call ```/api/conversations``` if you intend to start the conversation immediately.\r\n\r\n## Refreshing a token\r\n\r\nA token may be refreshed an unlimited number of times unless it is expired. Tokens are valid for 30 minutes\r\nfrom the time they are generated.\r\n\r\nTo refresh a token, POST to ```/api/tokens/{conversationId}/renew```. This method is valid only for\r\nunexpired tokens.\r\n\r\n```\r\n-- connect to directline.botframework.com --\r\nPOST /api/tokens/{conversationId}/renew HTTP/1.1\r\nAuthorization: Bearer RCurR_XV9ZA.cwA.BKA.iaJrC8xpy8qbOF5xnR2vtCX7CZj0LdjAPGfiCpg4Fv0y8qbOF5xPGfiCpg4Fv0y8qqbOF5x8qbOF5xn\r\n[other headers]\r\n\r\n-- response from directline.botframework.com --\r\nHTTP/1.1 200 OK\r\n[other headers]\r\n\r\nRCurR_XV9ZA.cwA.BKA.y8qbOF5xPGfiCpg4Fv0y8qqbOF5x8qbOF5xniaJrC8xpy8qbOF5xnR2vtCX7CZj0LdjAPGfiCpg4Fv0\r\n```\r\n\r\n# REST calls for a Direct Line conversation\r\n\r\nDirect Line conversations are explicitly opened by clients and may run as long as the bot and client participate\r\n(and have valid credentials). While the conversation is open, the bot and client may both send messages. More\r\nthan one client may connect to a given conversation and each client may participate on behalf of multiple users.\r\n\r\n## Starting a conversation\r\n\r\nClients begin by explicitly starting a conversation. If successful, the Direct Line service replies with a JSON\r\nobject containing a conversation ID and a token.\r\n\r\n```\r\n-- connect to directline.botframework.com --\r\nPOST /api/conversations HTTP/1.1\r\nAuthorization: Bearer RCurR_XV9ZA.cwA.BKA.iaJrC8xpy8qbOF5xnR2vtCX7CZj0LdjAPGfiCpg4Fv0y8qbOF5xPGfiCpg4Fv0y8qqbOF5x8qbOF5xn\r\n[other headers]\r\n\r\n-- response from directline.botframework.com --\r\nHTTP/1.1 200 OK\r\n[other headers]\r\n\r\n{\r\n  \"conversationId\": \"abc123\",\r\n  \"token\": \"RCurR_XV9ZA.cwA.BKA.iaJrC8xpy8qbOF5xnR2vtCX7CZj0LdjAPGfiCpg4Fv0y8qbOF5xPGfiCpg4Fv0y8qqbOF5x8qbOF5xn\",\r\n  \"expires_in\": 1800\r\n}\r\n```\r\n\r\nThis call is similar to to ```/api/tokens/conversations```. The difference is that the call to\r\n```/api/tokens/conversation``` does not start the conversation or contact the bot.\r\n* Call ```/api/tokens/conversation``` if you will distribute the token to client(s) and want them to\r\n  initiate the conversation.\r\n* Call ```/api/conversations``` if you intend to start the conversation immediately.\r\n\r\n## Sending a message to the bot\r\n\r\nUsing the Direct Line 1.1 protocol, clients send and receive messages. These messages are converted to the schema\r\nthat the bot supports (Bot Framework v1 or Bot Framework v3).\r\n\r\nTo send a message to a bot,\r\n\r\n1. the client formulates the message according to the message schema (see below)\r\n2. the client issues a POST message to ```/api/conversations/{id}/messages```\r\n3. the service returns when the message was delivered to the bot, with an HTTP status code reflecting the bot's\r\nstatus code. If the POST was successful, the service returns an HTTP 204 status code.\r\n\r\nSee the section near the bottom of this document describing the Direct Line 1.1 schema.\r\n\r\nExample follows.\r\n\r\n```\r\n-- connect to directline.botframework.com --\r\nPOST /api/conversations/abc123/messages HTTP/1.1\r\nAuthorization: Bearer RCurR_XV9ZA.cwA.BKA.iaJrC8xpy8qbOF5xnR2vtCX7CZj0LdjAPGfiCpg4Fv0\r\n[other headers]\r\n\r\n{\r\n  \"text\": \"hello\",\r\n  \"from\": \"user1\"\r\n}\r\n\r\n-- response from directline.botframework.com --\r\nHTTP/1.1 204 No Content\r\n[other headers]\r\n```\r\n\r\nNo data is returned in this call. The client's message and any messages from the bot are available\r\nin the polling GET response.\r\n\r\nThe total time to POST a message to a Direct Line conversation is:\r\n\r\n* Transit time to the Direct Line service,\r\n* Internal processing time within Direct Line (typically less than 120ms)\r\n* Transit time to the bot\r\n* Processing time within the bot\r\n* Transit time for HTTP responses to travel back to the client.\r\n\r\nIf the bot generates an error, that error will trigger an HTTP 500 error in the ```POST /api/conversations/{id}/messages``` call.\r\n\r\n### Sending one or more attachments by URL\r\n\r\nClients may optionally send attachments, such as images or documents. If the client already has a URL for the\r\nattachment, the simplest way to send it is to include the URL in the attachments or images array on the message\r\nit sends.\r\n\r\n### Sending a single attachment by upload\r\n\r\nOften, clients have an image or document on a device but no URL that can be included in the message.\r\n\r\nTo upload an attachment, POST to the ```/api/conversations/{conversationId}/upload``` endpoint. You may\r\ninclude a single attachment or ```multipart/form-data``` web payload containing multiple attachments.\r\n\r\nIf uploading a single attachment, a message is sent to the bot when the upload completes.\r\n\r\nThe ```Content-Type``` and ```Content-Disposition``` headers control the attachment's type and filename,\r\nrespectively.\r\n\r\nYou may specify which user is uploading the attachment by including the ```?userId=``` query parameter\r\non the upload URL.\r\n\r\nOn completion, the service returns an HTTP 204 message.\r\n\r\n```\r\n-- connect to directline.botframework.com --\r\nPOST /v3/directline/conversations/abc123/users/user1/upload?userId=user1 HTTP/1.1\r\nAuthorization: Bearer RCurR_XV9ZA.cwA.BKA.iaJrC8xpy8qbOF5xnR2vtCX7CZj0LdjAPGfiCpg4Fv0\r\nContent-Type: image/jpeg\r\nContent-Disposition: name=\"file\"; filename=\"badjokeeel.jpg\"\r\n[other headers]\r\n\r\n[JPEG content]\r\n\r\n-- response from directline.botframework.com --\r\nHTTP/1.1 204 No Content\r\n[other headers]\r\n```\r\n\r\n### Sending multiple attachments by upload\r\n\r\nIf uploading multiple attachments, use ```multipart/form-data``` as the content type and include each\r\nattachment as a separate part.\r\n\r\nA message may be included by adding a part with content type of ```application/vnd.microsoft.bot.message```.\r\nThis allows the client to customize the message containing the attachment. Other file parts in the payload\r\nare attached to this message before it is sent.\r\n\r\n```\r\n-- connect to directline.botframework.com --\r\nPOST /api/conversations/abc123/upload HTTP/1.1\r\nAuthorization: Bearer RCurR_XV9ZA.cwA.BKA.iaJrC8xpy8qbOF5xnR2vtCX7CZj0LdjAPGfiCpg4Fv0\r\nContent-Type: multipart/form-data; boundary=----DD4E5147-E865-4652-B662-F223701A8A89\r\n[other headers]\r\n\r\n----DD4E5147-E865-4652-B662-F223701A8A89\r\nContent-Type: image/jpeg\r\nContent-Disposition: form-data; name=\"file\"; filename=\"badjokeeel.jpg\"\r\n[other headers]\r\n\r\n[JPEG content]\r\n\r\n----DD4E5147-E865-4652-B662-F223701A8A89\r\nContent-Type: application/vnd.microsoft.bot.message\r\n[other headers]\r\n\r\n{\r\n  \"text\": \"Hey I just IM'd you\\n\\nand this is crazy\\n\\nbut here's my webhook\\n\\nso POST me maybe\",\r\n  \"from\": \"user1\"\r\n}\r\n\r\n----DD4E5147-E865-4652-B662-F223701A8A89\r\n\r\n\r\n    \r\n-- response from directline.botframework.com --\r\nHTTP/1.1 204 No Content\r\n[other headers]\r\n```\r\n\r\n## Receiving Activities from the bot\r\n\r\nIn Direct Line 1.1, clients must poll an HTTP GET interface to receive messages.\r\n\r\nClients issue GET calls to the ```/api/conversations/{conversationId/messages``` endpoint and optionally supply a\r\nwatermark indicating the most recent message seen. An updated watermark field is returned as a property in the JSON\r\nresult, even if no messages are included.\r\n\r\n```\r\n-- connect to directline.botframework.com --\r\nGET /api/conversations/abc123/messages?watermark=0001a-94 HTTP/1.1\r\nAuthorization: Bearer RCurR_XV9ZA.cwA.BKA.iaJrC8xpy8qbOF5xnR2vtCX7CZj0LdjAPGfiCpg4Fv0\r\n[other headers]\r\n\r\n-- response from directline.botframework.com --\r\nHTTP/1.1 200 OK\r\n[other headers]\r\n\r\n{\r\n  \"messages\": [{\r\n    \"conversation\": \"abc123\",\r\n    \"id\": \"abc123|0000\",\r\n    \"text\": \"hello\",\r\n    \"from\": \"user1\"\r\n  }, {\r\n    \"conversation\": \"abc123\",\r\n    \"id\": \"abc123|0001\",\r\n    \"text\": \"Nice to see you, user1!\",\r\n    \"from\": \"bot1\"\r\n  }],\r\n  \"watermark\": \"0001a-95\"\r\n}\r\n```\r\n\r\nClients should page through the available messages by advancing the \"watermark\" value until no messages are returned.\r\n\r\nDo not attempt to construct the watermark field on your own as its format may change in the future.\r\n\r\n### Timing considerations \r\n\r\nThe \"watermark\" field sent in GET responses is reliable. You will not miss messages as long as you replay\r\nthe watermark verbatim.\r\n\r\nClients should choose a polling interval that matches their intended use.\r\n\r\n* Service-to-service applications often use a polling interval of 5s or 10s.\r\n* Client-facing applications often use a polling interval of 1s, and fire an additional request ~300ms after\r\nevery message the client sends to rapidly pick up a bot's response. This 300ms delay should be adjusted based\r\non the bot's speed and transit time.\r\n\r\n## REST API errors\r\n\r\nHTTP calls to the Direct Line service follow standard HTTP error conventions:\r\n\r\n* 2xx status codes indicate success. (Direct Line 1.1 uses 200 and 204.)\r\n* 4xx status codes indicate an error in your request.\r\n  * 401 indicates a missing or malformed Authorization header (or URL token, in calls where a token parameter\r\n    is allowed).\r\n  * 403 indicates an unauthorized client.\r\n  * 404 indicates a missing path, site, conversation, etc.\r\n* 5xx status codes indicate a service-side error.\r\n  * 500 indicates an error inside the Direct Line service or a failure within the bot.\r\n  * If you receive a 500 error when POSTing to send a message to a bot, it is possible that the 500 was\r\n    triggered by a failure in the bot. **This is a common error code.**\r\n\r\n# Schema\r\n\r\nThe Direct Line 1.1 schema is a simplified copy of the Bot Framework v1 protocol. The core type is a ```message```,\r\nwhich is what clients send and receive.\r\n\r\n|Property|Description|\r\n|--------|-----------|\r\n|Id|Message ID (assigned by Direct Line)|\r\n|ConversationId|Conversation ID|\r\n|Created|Message creation timestamp|\r\n|From&#x2071;|ID of the user sending the message.|\r\n|Text|Message text|\r\n|ChannelData&#x2071;&#x2071;|Data sent unmodified between client and bot|\r\n|Images&#x2071;&#x2071;&#x2071;|Array of strings, each the URL to an image|\r\n|Attachemnts&#x2071;&#x2071;&#x2071;|Array of non-image attachments. Each attachment contains a ```Url``` and a ```ContentType``` property.|\r\n\r\n&#x2071; Clients should set the From field to a stable user ID. **Direct Line assigns a user ID if none is supplied, which\r\ntypically results in unexpected behavior.**\r\n\r\n&#x2071;&#x2071; ChannelData should be a complex object, or empty. Do not set it to a string, number, or other simple type.\r\n\r\n&#x2071;&#x2071;&#x2071; Images and Attachment arrays are, in some cases, relative URLs. If you see an image or attachment URL\r\nthat does not already start with HTTP or HTTPS, prepend ```https://directline.botframework.com``` to the URL.\r\n\r\nExample message follows. All message properties are shown; in most cases, the client only needs to supply the\r\n```From``` property and a content field (```Text```, ```Images```, ```Attachments```, or ```ChannelData```).\r\n\r\n```\r\n{\r\n  \"id\": \"CuvLPID4kDb|000000000000000004\",\r\n  \"conversationId\": \"CuvLPID4kDb\",\r\n  \"created\": \"2016-10-28T21:19:51.0357965Z\",\r\n  \"from\": \"examplebot\",\r\n  \"text\": \"Hello!\",\r\n  \"channelData\": {\r\n    \"examplefield\": \"abc123\"\r\n  },\r\n  \"images\": [\r\n    \"/attachments/CuvLPID4kDb/0.jpg?...\"\r\n  ],\r\n  \"attachments\": [{\r\n    \"url\": \"https://example.com/example.docx\",\r\n    \"contentType\": \"application/vnd.openxmlformats-officedocument.wordprocessingml.document\"\r\n  }, {\r\n    \"url\": \"https://example.com/example.doc\",\r\n    \"contentType\": \"application/msword\"\r\n  }]\r\n}\r\n```\r\n\r\n\r\n# Libraries for the Direct Line API\r\n\r\nThe Direct Line API is designed to be coded directly, but the Bot Framework includes libraries and controls\r\nthat help you to embed Direct-Line-powered bots into your application.\r\n\r\n* The Bot Framework Web Chat control is an easy way to embed the Direct Line channel into a webpage.\r\n* [Direct Line Nuget package](https://www.nuget.org/packages/Microsoft.Bot.Connector.DirectLine) with libraries\r\n  for .Net 4.5+, UWP, and .Net Standard.\r\n* You may generate your own from the [Direct Line Swagger file](swagger.json)\r\n",
+    "termsOfService": "https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx",
+    "contact": {
+      "name": "Bot Framework",
+      "url": "https://botframework.com",
+      "email": "botframework@microsoft.com"
+    },
+    "license": {
+      "name": "The MIT License (MIT)",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "directline.botframework.com",
+  "schemes": [ "https" ],
+  "paths": {
+    "/api/conversations": {
+      "post": {
+        "tags": [ "Conversations" ],
+        "summary": "Start a new conversation",
+        "operationId": "Conversations_NewConversation",
+        "consumes": [],
+        "produces": [ "application/json", "text/json", "text/html", "application/xml", "text/xml" ],
+        "responses": {
+          "200": {
+            "description": "The conversation was successfully created, updated, or retrieved.",
+            "schema": { "$ref": "#/definitions/Conversation" }
+          },
+          "401": {
+            "description": "The operation included an invalid or missing Authorization header.",
+            "schema": { "$ref": "#/definitions/ErrorMessage" }
+          },
+          "403": {
+            "description": "You are forbidden from performing this action because your token or secret is invalid.",
+            "schema": { "$ref": "#/definitions/ErrorMessage" }
+          },
+          "404": {
+            "description": "The requested resource was not found.",
+            "schema": { "$ref": "#/definitions/ErrorMessage" }
+          },
+          "409": {
+            "description": "The object you are trying to create already exists.",
+            "schema": { "$ref": "#/definitions/ErrorMessage" }
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/conversations/{conversationId}/messages": {
+      "get": {
+        "tags": [ "Conversations" ],
+        "summary": "Get messages in this conversation. This method is paged with the 'watermark' parameter.",
+        "operationId": "Conversations_GetMessages",
+        "consumes": [],
+        "produces": [ "application/json", "text/json", "text/html", "application/xml", "text/xml" ],
+        "parameters": [
+          {
+            "name": "conversationId",
+            "in": "path",
+            "description": "Conversation ID",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "watermark",
+            "in": "query",
+            "description": "(Optional) only returns messages newer than this watermark",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A set of messages and a watermark are returned.",
+            "schema": { "$ref": "#/definitions/MessageSet" }
+          },
+          "401": {
+            "description": "The operation included an invalid or missing Authorization header.",
+            "schema": { "$ref": "#/definitions/ErrorMessage" }
+          },
+          "403": {
+            "description": "You are forbidden from performing this action because your token or secret is invalid.",
+            "schema": { "$ref": "#/definitions/ErrorMessage" }
+          },
+          "404": {
+            "description": "The requested resource was not found.",
+            "schema": { "$ref": "#/definitions/ErrorMessage" }
+          }
+        },
+        "deprecated": false
+      },
+      "post": {
+        "tags": [ "Conversations" ],
+        "summary": "Send a message",
+        "operationId": "Conversations_PostMessage",
+        "consumes": [ "application/json", "text/json", "text/html", "application/xml", "text/xml", "application/x-www-form-urlencoded" ],
+        "produces": [],
+        "parameters": [
+          {
+            "name": "conversationId",
+            "in": "path",
+            "description": "Conversation ID",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "message",
+            "in": "body",
+            "description": "Message to send",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Message" }
+          }
+        ],
+        "responses": {
+          "204": { "description": "The operation succeeded. No content was returned." },
+          "401": {
+            "description": "The operation included an invalid or missing Authorization header.",
+            "schema": { "$ref": "#/definitions/ErrorMessage" }
+          },
+          "403": {
+            "description": "You are forbidden from performing this action because your token or secret is invalid.",
+            "schema": { "$ref": "#/definitions/ErrorMessage" }
+          },
+          "404": {
+            "description": "The requested resource was not found.",
+            "schema": { "$ref": "#/definitions/ErrorMessage" }
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/conversations/{conversationId}/upload": {
+      "post": {
+        "tags": [ "Conversations" ],
+        "summary": "Upload file(s) and send as attachment(s)",
+        "operationId": "Conversations_Upload",
+        "consumes": [ "multipart/form-data" ],
+        "produces": [],
+        "parameters": [
+          {
+            "name": "conversationId",
+            "in": "path",
+            "description": "Conversation ID",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "userId",
+            "in": "query",
+            "description": "User ID (optional)",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "file",
+            "in": "formData",
+            "required": true,
+            "type": "file"
+          }
+        ],
+        "responses": {
+          "204": { "description": "The operation succeeded. No content was returned." },
+          "401": {
+            "description": "The operation included an invalid or missing Authorization header.",
+            "schema": { "$ref": "#/definitions/ErrorMessage" }
+          },
+          "403": {
+            "description": "You are forbidden from performing this action because your token or secret is invalid.",
+            "schema": { "$ref": "#/definitions/ErrorMessage" }
+          },
+          "404": {
+            "description": "The requested resource was not found.",
+            "schema": { "$ref": "#/definitions/ErrorMessage" }
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/tokens": {
+      "get": {
+        "tags": [ "Tokens" ],
+        "summary": "Generate a token for a new conversation",
+        "operationId": "Tokens_Get",
+        "consumes": [],
+        "produces": [ "application/json", "text/json", "text/html", "application/xml", "text/xml" ],
+        "responses": {
+          "200": {
+            "description": "A string is returned.",
+            "schema": { "type": "string" }
+          },
+          "401": {
+            "description": "The operation included an invalid or missing Authorization header.",
+            "schema": { "$ref": "#/definitions/ErrorMessage" }
+          },
+          "403": {
+            "description": "You are forbidden from performing this action because your token or secret is invalid.",
+            "schema": { "$ref": "#/definitions/ErrorMessage" }
+          },
+          "404": {
+            "description": "The requested resource was not found.",
+            "schema": { "$ref": "#/definitions/ErrorMessage" }
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/tokens/{conversationId}/renew": {
+      "get": {
+        "tags": [ "Tokens" ],
+        "summary": "Renew a token for a conversation",
+        "operationId": "Tokens_RenewToken",
+        "consumes": [],
+        "produces": [ "application/json", "text/json", "text/html", "application/xml", "text/xml" ],
+        "parameters": [
+          {
+            "name": "conversationId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A string is returned.",
+            "schema": { "type": "string" }
+          },
+          "401": {
+            "description": "The operation included an invalid or missing Authorization header.",
+            "schema": { "$ref": "#/definitions/ErrorMessage" }
+          },
+          "403": {
+            "description": "You are forbidden from performing this action because your token or secret is invalid.",
+            "schema": { "$ref": "#/definitions/ErrorMessage" }
+          },
+          "404": {
+            "description": "The requested resource was not found.",
+            "schema": { "$ref": "#/definitions/ErrorMessage" }
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/tokens/conversation": {
+      "post": {
+        "tags": [ "Tokens" ],
+        "summary": "Generate a token for a new conversation",
+        "operationId": "Tokens_GenerateTokenForNewConversation",
+        "consumes": [],
+        "produces": [ "application/json", "text/json", "text/html", "application/xml", "text/xml" ],
+        "responses": {
+          "200": {
+            "description": "A string is returned.",
+            "schema": { "type": "string" }
+          },
+          "401": {
+            "description": "The operation included an invalid or missing Authorization header.",
+            "schema": { "$ref": "#/definitions/ErrorMessage" }
+          },
+          "403": {
+            "description": "You are forbidden from performing this action because your token or secret is invalid.",
+            "schema": { "$ref": "#/definitions/ErrorMessage" }
+          },
+          "404": {
+            "description": "The requested resource was not found.",
+            "schema": { "$ref": "#/definitions/ErrorMessage" }
+          }
+        },
+        "deprecated": false
+      }
+    }
+  },
+  "definitions": {
+    "Conversation": {
+      "description": "An object representing a conversation or a conversation token",
+      "type": "object",
+      "properties": {
+        "conversationId": {
+          "description": "ID for this conversation",
+          "type": "string"
+        },
+        "token": {
+          "description": "Token scoped to this conversation",
+          "type": "string"
+        },
+        "expires_in": {
+          "format": "int32",
+          "description": "Expiration for token",
+          "type": "integer"
+        },
+        "eTag": { "type": "string" }
+      }
+    },
+    "ErrorMessage": {
+      "description": "A standardized message error payload",
+      "type": "object",
+      "properties": {
+        "error": {
+          "$ref": "#/definitions/Error",
+          "description": "Error message"
+        }
+      }
+    },
+    "Error": {
+      "description": "An error message",
+      "type": "object",
+      "properties": {
+        "code": {
+          "description": "Error code",
+          "enum": [ "MissingProperty", "MalformedData", "NotFound", "ServiceError", "Internal", "InvalidRange", "NotSupported", "NotAllowed", "BadCertificate" ],
+          "type": "string"
+        },
+        "message": {
+          "description": "Error message",
+          "type": "string"
+        },
+        "statusCode": {
+          "format": "int32",
+          "description": "Status code",
+          "type": "integer"
+        }
+      }
+    },
+    "MessageSet": {
+      "description": "A collection of messages",
+      "type": "object",
+      "properties": {
+        "messages": {
+          "description": "Messages",
+          "type": "array",
+          "items": { "$ref": "#/definitions/Message" }
+        },
+        "watermark": {
+          "description": "Maximum watermark included in this set of messages",
+          "type": "string"
+        },
+        "eTag": { "type": "string" }
+      }
+    },
+    "Message": {
+      "description": "A communication message sent to/from Direct Line",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "ID for this message",
+          "type": "string"
+        },
+        "conversationId": {
+          "description": "Conversation ID for this message",
+          "type": "string"
+        },
+        "created": {
+          "format": "date-time",
+          "description": "UTC timestamp when this message was created",
+          "type": "string"
+        },
+        "from": {
+          "description": "Identity of the sender of this message",
+          "type": "string"
+        },
+        "text": {
+          "description": "Text in this message",
+          "type": "string"
+        },
+        "channelData": {
+          "$ref": "#/definitions/Object",
+          "description": "Opaque block of data passed to/from bot via the ChannelData field"
+        },
+        "images": {
+          "description": "Array of URLs for images included in this message",
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "attachments": {
+          "description": "Array of non-image attachments included in this message",
+          "type": "array",
+          "items": { "$ref": "#/definitions/Attachment" }
+        },
+        "eTag": { "type": "string" }
+      }
+    },
+    "Object": {
+      "type": "object",
+      "properties": {}
+    },
+    "Attachment": {
+      "description": "An attachment",
+      "type": "object",
+      "properties": {
+        "url": {
+          "description": "URL for this attachment",
+          "type": "string"
+        },
+        "contentType": {
+          "description": "Content type for this attachment",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

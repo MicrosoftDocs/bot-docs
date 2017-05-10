@@ -6,14 +6,12 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 02/21/2017
+ms.date: 
 ms.reviewer:
-
-# Include the following line commented out
-
 ---
+
 # Bot Framework Frequently Asked Questions
+
 This article contains answers to some frequently asked questions about the Bot Framework.
 
 ## Background and availability
@@ -54,7 +52,7 @@ We have not provided a general mechanism for developers to add new channels to B
 
 ### If I want to create a bot for Skype, what tools and services should I use?
 
-The Bot Framework is designed to build, connect and publish high quality, responsive, performant and scalable bots for Skype and many other channels. The SDK can be used to create text/sms, image, button and card-capable bots (which constitute the majority of bot interactions today across conversation experiences) as well as bot interactions which are Skype-specific such as rich audio and video experiences.
+The Bot Framework is designed to build, connect, and deploy high quality, responsive, performant and scalable bots for Skype and many other channels. The SDK can be used to create text/sms, image, button and card-capable bots (which constitute the majority of bot interactions today across conversation experiences) as well as bot interactions which are Skype-specific such as rich audio and video experiences.
 
 If you already have a great bot and would like to reach the Skype audience, your bot can easily be connected to Skype (or any supported channel) via the Bot Builder for REST API (provided it has an internet-accessible REST endpoint).
 

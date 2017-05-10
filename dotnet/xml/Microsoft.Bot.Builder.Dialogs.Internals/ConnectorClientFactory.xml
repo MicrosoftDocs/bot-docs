@@ -1,0 +1,99 @@
+<Type Name="ConnectorClientFactory" FullName="Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory">
+  <TypeSignature Language="C#" Value="public sealed class ConnectorClientFactory : Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConnectorClientFactory extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConnectorClientFactory (Microsoft.Bot.Builder.Dialogs.IAddress address, Microsoft.Bot.Connector.MicrosoftAppCredentials credentials);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.IAddress address, class Microsoft.Bot.Connector.MicrosoftAppCredentials credentials) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory.#ctor(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Connector.MicrosoftAppCredentials)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="address" Type="Microsoft.Bot.Builder.Dialogs.IAddress" />
+        <Parameter Name="credentials" Type="Microsoft.Bot.Connector.MicrosoftAppCredentials" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEmulator">
+      <MemberSignature Language="C#" Value="public static bool IsEmulator (Microsoft.Bot.Builder.Dialogs.IAddress address);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsEmulator(class Microsoft.Bot.Builder.Dialogs.IAddress address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory.IsEmulator(Microsoft.Bot.Builder.Dialogs.IAddress)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="Microsoft.Bot.Builder.Dialogs.IAddress" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeConnectorClient">
+      <MemberSignature Language="C#" Value="Microsoft.Bot.Connector.IConnectorClient IConnectorClientFactory.MakeConnectorClient ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.Bot.Connector.IConnectorClient Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeConnectorClient() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory.Microsoft#Bot#Builder#Dialogs#Internals#IConnectorClientFactory#MakeConnectorClient" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.IConnectorClient</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeStateClient">
+      <MemberSignature Language="C#" Value="Microsoft.Bot.Connector.IStateClient IConnectorClientFactory.MakeStateClient ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.Bot.Connector.IStateClient Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeStateClient() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory.Microsoft#Bot#Builder#Dialogs#Internals#IConnectorClientFactory#MakeStateClient" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.IStateClient</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

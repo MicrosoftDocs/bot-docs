@@ -1,0 +1,122 @@
+<Type Name="LuisIntentScorable&lt;InnerState,InnerScore&gt;+Scope" FullName="Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable&lt;InnerState,InnerScore&gt;+Scope">
+  <TypeSignature Language="C#" Value="public sealed class LuisIntentScorable&lt;InnerState,InnerScore&gt;.Scope : Microsoft.Bot.Builder.Scorables.Internals.ResolverScope&lt;InnerScore&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit LuisIntentScorable`2/Scope&lt;InnerState, InnerScore&gt; extends Microsoft.Bot.Builder.Scorables.Internals.ResolverScope`1&lt;!InnerScore&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="InnerState" />
+    <TypeParameter Name="InnerScore" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Scorables.Internals.ResolverScope&lt;InnerScore&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="InnerScore">InnerScore</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Scope (Microsoft.Bot.Builder.Luis.ILuisModel model, Microsoft.Bot.Builder.Luis.Models.LuisResult result, Microsoft.Bot.Builder.Luis.Models.IntentRecommendation intent, Microsoft.Bot.Builder.Scorables.Internals.IResolver inner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Luis.ILuisModel model, class Microsoft.Bot.Builder.Luis.Models.LuisResult result, class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation intent, class Microsoft.Bot.Builder.Scorables.Internals.IResolver inner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope.#ctor(Microsoft.Bot.Builder.Luis.ILuisModel,Microsoft.Bot.Builder.Luis.Models.LuisResult,Microsoft.Bot.Builder.Luis.Models.IntentRecommendation,Microsoft.Bot.Builder.Scorables.Internals.IResolver)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="model" Type="Microsoft.Bot.Builder.Luis.ILuisModel" />
+        <Parameter Name="result" Type="Microsoft.Bot.Builder.Luis.Models.LuisResult" />
+        <Parameter Name="intent" Type="Microsoft.Bot.Builder.Luis.Models.IntentRecommendation" />
+        <Parameter Name="inner" Type="Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
+      </Parameters>
+      <Docs>
+        <param name="model">To be added.</param>
+        <param name="result">To be added.</param>
+        <param name="intent">To be added.</param>
+        <param name="inner">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Intent">
+      <MemberSignature Language="C#" Value="public readonly Microsoft.Bot.Builder.Luis.Models.IntentRecommendation Intent;" />
+      <MemberSignature Language="ILAsm" Value=".field public initonly class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation Intent" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope.Intent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Luis.Models.IntentRecommendation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Model">
+      <MemberSignature Language="C#" Value="public readonly Microsoft.Bot.Builder.Luis.ILuisModel Model;" />
+      <MemberSignature Language="ILAsm" Value=".field public initonly class Microsoft.Bot.Builder.Luis.ILuisModel Model" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope.Model" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Luis.ILuisModel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Result">
+      <MemberSignature Language="C#" Value="public readonly Microsoft.Bot.Builder.Luis.Models.LuisResult Result;" />
+      <MemberSignature Language="ILAsm" Value=".field public initonly class Microsoft.Bot.Builder.Luis.Models.LuisResult Result" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope.Result" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Luis.Models.LuisResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryResolve">
+      <MemberSignature Language="C#" Value="public override bool TryResolve (Type type, object tag, out object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryResolve(class System.Type type, object tag, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope.TryResolve(System.Type,System.Object,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="tag" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <param name="tag">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

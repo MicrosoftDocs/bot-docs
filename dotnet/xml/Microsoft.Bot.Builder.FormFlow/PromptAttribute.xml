@@ -1,0 +1,74 @@
+<Type Name="PromptAttribute" FullName="Microsoft.Bot.Builder.FormFlow.PromptAttribute">
+  <TypeSignature Language="C#" Value="public class PromptAttribute : Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PromptAttribute extends Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.PromptAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Define the prompt used when asking about a field.
+            </summary>
+    <remarks>
+            Prompts by default will come from \ref Templates.  
+            This attribute allows you to override this with one more \ref patterns strings. 
+            The actual prompt will be randomly selected from the alternatives you provide.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PromptAttribute (Microsoft.Bot.Builder.FormFlow.TemplateAttribute pattern);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.FormFlow.TemplateAttribute pattern) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.PromptAttribute.#ctor(Microsoft.Bot.Builder.FormFlow.TemplateAttribute)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="pattern" Type="Microsoft.Bot.Builder.FormFlow.TemplateAttribute" />
+      </Parameters>
+      <Docs>
+        <param name="pattern">Template to use.</param>
+        <summary>
+            Define a prompt based on a <see cref="T:Microsoft.Bot.Builder.FormFlow.TemplateAttribute" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PromptAttribute (string[] patterns);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] patterns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.PromptAttribute.#ctor(System.String[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="patterns" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="patterns">Patterns to select from.</param>
+        <summary>
+            Define a prompt with one or more \ref patterns patterns to choose from randomly.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

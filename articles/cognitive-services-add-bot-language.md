@@ -1,4 +1,5 @@
 ---
+redirect_url: /bot-framework/cognitive-services-bot-intelligence-overview#language-understanding
 title: Add language understanding to a bot | Microsoft Docs
 description: Enable your bot to understand natural language and recognize a user's intent using Cognitive Services.
 author: RobStand
@@ -7,9 +8,7 @@ manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 
-ms.reviewer: rstand
-
-
+ms.reviewer: 
 ---
 
 # Add language understanding to a bot
@@ -226,5 +225,6 @@ public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
 }
 ```
 
-## Next steps
+## Additional resources
+
 You can find detailed documentation about the Language Understanding APIs, including developer guides and API references, by visiting the Microsoft Cognitive Services <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/luis/home" target="_blank">documentation site</a>.

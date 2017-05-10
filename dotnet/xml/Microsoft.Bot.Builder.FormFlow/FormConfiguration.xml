@@ -1,0 +1,231 @@
+<Type Name="FormConfiguration" FullName="Microsoft.Bot.Builder.FormFlow.FormConfiguration">
+  <TypeSignature Language="C#" Value="public class FormConfiguration" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FormConfiguration extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.FormConfiguration" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Default values for the form.
+            </summary>
+    <remarks>
+            These defaults can all be overridden when you create a form and before you add steps.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FormConfiguration ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormConfiguration.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Construct configuration.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Commands">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;Microsoft.Bot.Builder.FormFlow.FormCommand,Microsoft.Bot.Builder.FormFlow.CommandDescription&gt; Commands;" />
+      <MemberSignature Language="ILAsm" Value=".field public class System.Collections.Generic.Dictionary`2&lt;valuetype Microsoft.Bot.Builder.FormFlow.FormCommand, class Microsoft.Bot.Builder.FormFlow.CommandDescription&gt; Commands" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FormConfiguration.Commands" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;Microsoft.Bot.Builder.FormFlow.FormCommand,Microsoft.Bot.Builder.FormFlow.CommandDescription&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Definitions of the built-in commands.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Confirmation">
+      <MemberSignature Language="C#" Value="public string Confirmation;" />
+      <MemberSignature Language="ILAsm" Value=".field public string Confirmation" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FormConfiguration.Confirmation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            String for naming "Confirmation" fields.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentChoice">
+      <MemberSignature Language="C#" Value="public string[] CurrentChoice;" />
+      <MemberSignature Language="ILAsm" Value=".field public string[] CurrentChoice" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FormConfiguration.CurrentChoice" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Enumeration of strings for interpreting a user response as asking for the current value.
+            </summary>
+        <remarks>
+            The first value is also used to describe the option of keeping the current value.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultPrompt">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.PromptAttribute DefaultPrompt;" />
+      <MemberSignature Language="ILAsm" Value=".field public class Microsoft.Bot.Builder.FormFlow.PromptAttribute DefaultPrompt" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FormConfiguration.DefaultPrompt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.PromptAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Default prompt and template format settings.
+            </summary>
+        <remarks>
+            When you specify a <see cref="T:Microsoft.Bot.Builder.FormFlow.PromptAttribute" /> or <see cref="T:Microsoft.Bot.Builder.FormFlow.TemplateAttribute" />, any format 
+            value you do not specify will come from this default.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Navigation">
+      <MemberSignature Language="C#" Value="public string Navigation;" />
+      <MemberSignature Language="ILAsm" Value=".field public string Navigation" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FormConfiguration.Navigation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            String for naming the "navigation" field.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="No">
+      <MemberSignature Language="C#" Value="public string[] No;" />
+      <MemberSignature Language="ILAsm" Value=".field public string[] No" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FormConfiguration.No" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Enumeration of values for a "no" response for boolean fields or confirmations.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoPreference">
+      <MemberSignature Language="C#" Value="public string[] NoPreference;" />
+      <MemberSignature Language="ILAsm" Value=".field public string[] NoPreference" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FormConfiguration.NoPreference" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Enumeration of strings for interpreting a user response as setting an optional field to be unspecified.
+            </summary>
+        <remarks>
+            The first string is also used to describe not having a preference for an optional field.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Template">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.TemplateAttribute Template (Microsoft.Bot.Builder.FormFlow.TemplateUsage usage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.TemplateAttribute Template(valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage usage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormConfiguration.Template(Microsoft.Bot.Builder.FormFlow.TemplateUsage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateAttribute</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="usage" Type="Microsoft.Bot.Builder.FormFlow.TemplateUsage" />
+      </Parameters>
+      <Docs>
+        <param name="usage">Desired template.</param>
+        <summary>
+            Look up a particular template.
+            </summary>
+        <returns>Matching template.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Templates">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Bot.Builder.FormFlow.TemplateAttribute&gt; Templates;" />
+      <MemberSignature Language="ILAsm" Value=".field public class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.FormFlow.TemplateAttribute&gt; Templates" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FormConfiguration.Templates" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.FormFlow.TemplateAttribute&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Default templates to use if not override on the class or field level.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yes">
+      <MemberSignature Language="C#" Value="public string[] Yes;" />
+      <MemberSignature Language="ILAsm" Value=".field public string[] Yes" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FormConfiguration.Yes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Enumeration of values for a "yes" response for boolean fields or confirmations.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

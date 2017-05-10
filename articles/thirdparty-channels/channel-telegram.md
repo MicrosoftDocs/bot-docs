@@ -8,8 +8,8 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date: 05/01/2017
 ms.reviewer:
-
 ---
+
 # Connect a bot to Telegram
 
 You can configure your bot to communicate with people using the Telegram messaging app.
@@ -25,16 +25,24 @@ To create a new Telegram bot, send command `/newbot`.
 
 ![Create new bot](~/media/channels/tg-StepNewBot.png)
 
-## Give the Telegram bot a friendly name
+### Specify a friendly name
+
+Give the Telegram bot a friendly name.
 
 ![Give bot a friendly name](~/media/channels/tg-StepNameBot.png)
 
-## Give the Telegram bot a unique username
+### Specify a username
+
+Give the Telegram bot a unique username.
 
 ![Give bot a unique name](~/media/channels/tg-StepUsername.png)
-## Copy the Telegram bot's access token
+
+### Copy the access token
+
+Copy the Telegram bot's access token.
 
 ![Copy access token](~/media/channels/tg-StepBotCreated.png)
+
 ## Enter the Telegram bot's access token
 
 Paste the token you copied previously into the **Access Token** field and click **Submit**.

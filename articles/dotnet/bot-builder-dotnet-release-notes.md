@@ -1,20 +1,18 @@
 ---
 title: Release notes | Microsoft Docs
-description: View the release notes and changelog for the Bot Builder SDK for .NET 
+description: View the release notes and changelog for the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 03/27/2017
+ms.date: 
 ms.reviewer:
-
 ---
 
 # Release notes
 
-A record of changes introduced by each version of the Bot Builder SDK for .NET. 
+This article describes changes introduced by each version of the Bot Builder SDK for .NET. 
 
 > [!IMPORTANT]
 > As long as the Microsoft Bot Framework is in Preview mode, 
@@ -328,7 +326,7 @@ see [Authentication][authentication].
 - Updated **nuspec** with better description.
 - Added error-resilient context store.
 
-[authentication]: https://docs.botframework.com/en-us/restapi/authentication/#changes
+[authentication]: ~/rest-api/bot-framework-rest-connector-authentication.md#security-protocol-changes
 
 [connectorAPIv3]: https://docs.botframework.com/en-us/support/upgrade-to-v3/#navtitle
 
@@ -336,7 +334,7 @@ see [Authentication][authentication].
 
 [sendingReplies]: http://docs.botframework.com/en-us/support/upgrade-code-to-v3/#sending-replies
 
-[authenticationModel]: http://docs.botframework.com/en-us/restapi/authentication/#navtitle
+[authenticationModel]: ~/rest-api/bot-framework-rest-connector-authentication.md
 
 [stateAPI]: http://docs.botframework.com/en-us/csharp/builder/sdkreference/stateapi.html
 

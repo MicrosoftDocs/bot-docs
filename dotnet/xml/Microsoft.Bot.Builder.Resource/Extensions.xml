@@ -1,0 +1,128 @@
+<Type Name="Extensions" FullName="Microsoft.Bot.Builder.Resource.Extensions">
+  <TypeSignature Language="C#" Value="public static class Extensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Extensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Resource.Extensions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>   Extensions for resources. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ESCAPED_SEPARATOR">
+      <MemberSignature Language="C#" Value="public const string ESCAPED_SEPARATOR;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ESCAPED_SEPARATOR" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Resource.Extensions.ESCAPED_SEPARATOR" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>   When the <see cref="F:Microsoft.Bot.Builder.Resource.Extensions.SEPARATOR" /> is found in a string list, the escaped replacement.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeList">
+      <MemberSignature Language="C#" Value="public static string MakeList (string[] elements);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string MakeList(string[] elements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Resource.Extensions.MakeList(System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elements" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="elements"> The elements to combine into a list. </param>
+        <summary>   Makes a list from parameters. </summary>
+        <returns>   A string. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeList">
+      <MemberSignature Language="C#" Value="public static string MakeList (System.Collections.Generic.IEnumerable&lt;string&gt; elements, string separator = &quot;;&quot;, string escape = &quot;__semi&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string MakeList(class System.Collections.Generic.IEnumerable`1&lt;string&gt; elements, string separator, string escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Resource.Extensions.MakeList(System.Collections.Generic.IEnumerable{System.String},System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elements" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="separator" Type="System.String" />
+        <Parameter Name="escape" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="elements">     The elements to combine into a list. </param>
+        <param name="separator">    The separator character between elements in a string list. </param>
+        <param name="escape">       The escape string for separator characters. </param>
+        <summary>   Makes a string list. </summary>
+        <returns>   A string. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SEPARATOR">
+      <MemberSignature Language="C#" Value="public const string SEPARATOR;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string SEPARATOR" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Resource.Extensions.SEPARATOR" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>   The separator character between elements in a string list. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SplitList">
+      <MemberSignature Language="C#" Value="public static string[] SplitList (this string str, string separator = &quot;;&quot;, string escape = &quot;__semi&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] SplitList(string str, string separator, string escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Resource.Extensions.SplitList(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" RefType="this" />
+        <Parameter Name="separator" Type="System.String" />
+        <Parameter Name="escape" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="str">          The str to act on. </param>
+        <param name="separator">    The separator character between elements in a string list. </param>
+        <param name="escape">       The escape string for separator characters. </param>
+        <summary>   A string extension method that splits a list. </summary>
+        <returns>   A string[]. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

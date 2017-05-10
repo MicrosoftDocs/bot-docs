@@ -1,0 +1,39 @@
+<Type Name="IResolutionParser" FullName="Microsoft.Bot.Builder.Luis.IResolutionParser">
+  <TypeSignature Language="C#" Value="public interface IResolutionParser" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IResolutionParser" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.IResolutionParser" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="TryParse">
+      <MemberSignature Language="C#" Value="public bool TryParse (System.Collections.Generic.IDictionary&lt;string,object&gt; properties, out Microsoft.Bot.Builder.Luis.Resolution resolution);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryParse(class System.Collections.Generic.IDictionary`2&lt;string, object&gt; properties, class Microsoft.Bot.Builder.Luis.Resolution resolution) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.IResolutionParser.TryParse(System.Collections.Generic.IDictionary{System.String,System.Object},Microsoft.Bot.Builder.Luis.Resolution@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="properties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+        <Parameter Name="resolution" Type="Microsoft.Bot.Builder.Luis.Resolution&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="properties">To be added.</param>
+        <param name="resolution">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

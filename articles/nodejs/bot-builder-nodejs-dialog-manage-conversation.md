@@ -6,12 +6,14 @@ ms.author: rstand
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 04/25/2017
-
+ms.date: 05/03/2017
 ---
-# Manage a conversation with dialogs
+# Manage conversation flow with dialogs
+> [!div class="op_single_selector"]
+> - [.NET](../dotnet/bot-builder-dotnet-manage-conversation-flow.md)
+> - [Node.js](../nodejs/bot-builder-nodejs-dialog-manage-conversation.md)
 
-Dialogs help you encapsulate your bot's conversational logic into manageable components. The Bot Builder SDK provides powerful dialog objects that help simplify conversation flow management.
+Dialogs help you encapsulate your bot's conversational logic into manageable components. These components can cross reference each other to allow code reuse. Each time a dialog is executed, it is pushed onto a dialog stack and when the dialog is finished, it is popped off the dialog stack. A dialog context maintains the dialog stack that are active in the conversation at any point in time. Having a good understanding of dialogs can help you design better bots.
 
 ## Dialog stack
 
@@ -19,11 +21,65 @@ You can use dialogs to organize your bot's conversations with the user. The bot 
 
 When the bot receives the first message from a user it will push the bot's [default dialog](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iuniversalbotsettings.html#defaultdialogid) onto the stack and pass the message to that dialog. The dialog can either process the incoming message and send a reply directly to the user or it can start other dialogs.
 
-The `session` includes several methods for managing the dialog stack, which changes where the bot is conversationally with the user. After you get the hang of working with the dialog stack, you can use a combination of dialogs and stack manipulation methods to achieve just about any conversational flow you can dream of.
+The `session` object includes several methods for managing the dialog stack, which changes where the bot is conversationally with the user. After you get the hang of working with the dialog stack, you can use a combination of dialogs and stack manipulation methods to achieve just about any conversational flow you can dream of.
+
+## Dialog handlers
+
+Message handlers for a dialog can take different forms:
+- It can handle simple dialogs starting from the root `/` dialog.
+- You can add an *action* to a dialog to listen for user input as it occurs. For more information on using actions, See [Listen for messages using actions](bot-builder-nodejs-global-handlers.md).
+- You can combine multiple dialogs into a [waterfall](bot-builder-nodejs-dialog-waterfall.md), which is a common way to guide the user through a series of steps or prompt the user with a series of questions.
+
+## Dialog lifecycle
+
+When a dialog is invoked, it is pushed onto the dialog stack and it takes control of the conversation flow. Every new message will be subject to processing by that dialog until it either closes or redirects to another dialog. 
+
+You can invoke one dialog from another by using `session.beginDialog()`. 
+To close a dialog and remove it from the stack, use `session.endDialog()`. This will return the user to the previous dialog in the stack.
+
+## Root and child dialogs
+All bots will have at least one root `/` dialog. When the bot receives a message from the user, it will be routed to the root `/` dialog for processing. Depending on the nature of the request, the bot will redirect to other child dialogs and eventually returning back to the root dialog at the end of the conversation.
+
+The following code shows a bot with two dialogs: a root `/` dialog and a `/profile` dialog. 
+
+```javascript
+var builder = require('botbuilder');
+
+var connector = new builder.ConsoleConnector().listen();
+var bot = new builder.UniversalBot(connector);
+bot.dialog('/', [
+    function (session, args, next) {
+        if (!session.userData.name) {
+            session.beginDialog('/profile');
+        } else {
+            next();
+        }
+    },
+    function (session, results) {
+        session.send('Hello %s!', session.userData.name);
+    }
+]);
+
+bot.dialog('/profile', [
+    function (session) {
+        builder.Prompts.text(session, 'Hi! What is your name?');
+    },
+    function (session, results) {
+        session.userData.name = results.response;
+        session.endDialog();
+    }
+]);
+```
+
+At run time, the [dialog handler](#dialog-handlers) will route the user messages to the root `/` dialog. This function receives a [session](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html) object. The `session` object contains information that the bot can use to inspect the user's message, send a reply to the user, save state on behalf of the user, or redirect to another dialog. In this case, the root dialog checks to see if it knows who the current user is. If it does, then it greets the user by name. Otherwise, it redirects the user to the `/profile` dialog. The `/profile` dialog ask for the user's name. When the user reply with a name, the bot persisted this information in the [session.userData](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#userdata) object then ends the dialog. This returns the conversation to the root dialog and it sends the user a personalized greeting message.
+
+The bot maintains a stack of dialogs for each conversation. The conversations dialog stack helps the bot know where to route the user's reply to. If you were to inspect the bot's dialog stack from the code above, it would look like this: [`/`, `/profile`, `BotBuilder:Prompts`]. Noticed that the call to [Prompts.text()](https://review.docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-dialog-prompt) is a build-in prompt that is also a dialog. This is why we see `BotBuilder:Prompts` on the stack.  
+
+Note that the built-in prompts will let the user cancel an action by saying something like "nevermind" or "cancel". It’s up to the dialog that called the prompt to determine what "cancel" means. To detect that the user canceled a prompt, you can check the [ResumeReason](http://docs.botframework.com/en-us/node/builder/chat-reference/enums/_botbuilder_d_.resumereason.html) code returned in [result.resumed](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptresult.html#resumed) or simply check that [result.response](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptresult.html#response) isn't null. There are actually a number of reasons that can cause the prompt to return without a response, so checking for a null response tends to be the best approach. In this example bot, if the user responds with "cancel", the bot would simply ask them for their name again because the response would be null. 
 
 ## Starting and ending dialogs
 
-Use [session.beginDialog()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#begindialog) to call a dialog (pushing it onto the stack) and then either [session.endDialog()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#enddialog) or [session.endDialogWithResults()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#enddialogwithresults) to return control back to the caller (pop it off the stack). When paired with [waterfalls](bot-builder-nodejs-dialog-waterfall.md)), you have a simple, effective mechanism for driving conversations forward. 
+Use [session.beginDialog()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#begindialog) to call another dialog (pushing it onto the stack) and then either [session.endDialog()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#enddialog) or [session.endDialogWithResults()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#enddialogwithresults) to return control back to the caller (pop it off the stack). When paired with [waterfalls](bot-builder-nodejs-dialog-waterfall.md), you have a simple, effective mechanism for driving conversations forward. 
 
 The following code uses two waterfalls to prompt the user for their name and then responds with a custom greeting. 
 
@@ -68,7 +124,7 @@ ChatConnector: message received.
 / - session.sendBatch() sending 1 messages
 ```
 
-The output shows that the user sent two messages to the bot. The first message pushed the default root (`/`) dialog onto the stack, entering step 1 of the first waterfall. That step called `beginDialog()` and pushed the `/askName` dialog onto the stack, entering step 1 of the second waterfall. That step then called [Prompts.text()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.prompts#text) to ask the user their name. [Prompts](bot-builder-nodejs-dialog-prompt.md) are themselves dialogs. You can tell the current stack depth by the number of dots prefixing each line, such as `..Prompts.text`.
+The output shows that the user sent two messages to the bot. The first message pushed the default root (`/`) dialog onto the stack, entering step 1 of the first waterfall. That step called `beginDialog()` and pushed the `/askName` dialog onto the stack, entering step 1 of the second waterfall. That step then called [Prompts.text()](https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.__global.iprompts.html#text) to ask the user their name. [Prompts](bot-builder-nodejs-dialog-prompt.md) are themselves dialogs. You can tell the current stack depth by the number of dots prefixing each line, such as `..Prompts.text`.
 
 When the user replies with their name, the `text()` prompt returns the user's input to the second waterfall using `endDialogWithResult()`. The waterfall then passes this value to step 2 which itself calls `endDialogWithResult()` to pass it back to the first waterfall. The first waterfall passes that result to step 2 which responds with the personalized greeting to the user.
 
@@ -117,71 +173,11 @@ bot.dialog('/ensureProfile', [
     }
 ]);
 ```
-The example uses [session.userData](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#userdata) to remember the user's `profile` between conversations. The root dialog gets the user's profile data and passes it to the “/ensureProfile” dialog in the `beginDialog()` call. 
+The example uses [session.userData](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#userdata) to remember the user's `profile` between conversations. The root dialog gets the user's profile data and passes it to the `/ensureProfile` dialog in the `beginDialog()` call. 
 
 If a dialog collects data over multiple steps, it should use [session.dialogData](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#dialogdata) to temporarily hold values being collected. The `/ensureProfile` dialog uses `dialogData` to hold the `profile` object. Each step passes the `next()` function which is used to skip the step if the profile already contains that data element. For example, if the profile already contains the user's name, the waterfall skips to the next step and collects the user's email address if it doesn't exist.
 
 After the profile dialog collects all of the profile data, it returns the profile data back to the root dialog which saves the profile in `userData`. 
-
-## Dialog handlers
-
-Message handlers for a dialog can take different forms. You can add an *action* to a dialog to listen for user input as it occurs. See [Listen for messages using actions](bot-builder-nodejs-global-handlers.md) for information on using actions in your bot.
-
-Another form is a [waterfall](bot-builder-nodejs-dialog-waterfall.md), which is a common way to guide the user through a series of steps or prompt the user with a series of questions.
-
-## Dialog lifecycle
-
-When a dialog is invoked, it takes control of the conversation flow. 
-Every new message will be subject to processing by that dialog until it either closes or redirects to another dialog. 
-
-You can invoke one dialog from another by using `session.beginDialog()`. 
-To close a dialog and remove it from the stack, use `session.endDialog()`. This will return the user to the previous dialog in the stack.
-
-## Root and child dialogs
-Think of dialogs as the equivalent of routes for a website. All bots will have at least one root `/` dialog just like all websites typically have at least one root `/` route. When the bot receives a message from the user, it will be routed to the root `/` dialog for processing. For most bots, the single root `/` dialog is all that’s needed, but just like websites often have multiple routes, bots will often have multiple dialogs.
-
-The following example shows a bot with two dialogs. 
-
-```javascript
-var builder = require('botbuilder');
-
-var connector = new builder.ConsoleConnector().listen();
-var bot = new builder.UniversalBot(connector);
-bot.dialog('/', [
-    function (session, args, next) {
-        if (!session.userData.name) {
-            session.beginDialog('/profile');
-        } else {
-            next();
-        }
-    },
-    function (session, results) {
-        session.send('Hello %s!', session.userData.name);
-    }
-]);
-
-bot.dialog('/profile', [
-    function (session) {
-        builder.Prompts.text(session, 'Hi! What is your name?');
-    },
-    function (session, results) {
-        session.userData.name = results.response;
-        session.endDialog();
-    }
-]);
-```
-
-The first message from a user will be routed to the Dialog Handler for the root ‘/’ dialog. This function receives a [session](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html) object that the bot uses to inspect the user's message, send a reply to the user, save state on behalf of the user, or redirect to another dialog.
-
-When a user starts a conversation with the bot, it first checks to see whether the user is known by checking the `name` property of the [session.userData](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#userdata) object. The bot persists the `userData` object across all of the user's interactions with the bot. If this is the first time the user has used the bot, the bot calls [session.beginDialog()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#begindialog) to start the `/profile` dialog, which asks the user their name.
-
-The `/profile` dialog is implemented as a [waterfall](#waterfall). The fisrt step of the waterfall simply calls [Prompts.text()](bot-builder-nodejs-dialog-prompt.md) to ask the user their name. This built-in prompt is just another dialog that gets redirected to.
-
-The bot maintains a stack of dialogs for each conversation. If you were to inspect the bot's dialog stack at this point, it would look like [`/`, `/profile`, `BotBuilder:Prompts`]. The conversations dialog stack helps the bot know where to route the user's reply to. 
-
-When the user replies with their name, the prompt will call [session.endDialogWithResult()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#enddialogwithresult) with the user's response. This response is then passed as an argument to the second step of the `/profile` dialog's waterfall. In this step, the bot saves the user's name to the `session.userData.name` property and return control back to the root `/` dialog through a call to [endDialog()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#enddialog). At that point, the next step of the root `/` dialog's waterfall will be executed, which sends the user a greeting.
-
-Note that the built-in prompts will let the user cancel an action by saying something like "nevermind" or "cancel". It’s up to the dialog that called the prompt to determine what "cancel" means. To detect that the user canceled a prompt, you can check the [ResumeReason](http://docs.botframework.com/en-us/node/builder/chat-reference/enums/_botbuilder_d_.resumereason.html) code returned in [result.resumed](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptresult.html#resumed) or simply check that [result.response](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptresult.html#response) isn't null. There are actually a number of reasons that can cause the prompt to return without a response, so checking for a null response tends to be the best approach. In this example bot, if the user responds with "nevermind", the bot would simply ask them for their name again. 
 
 ## Replacing dialogs
 
@@ -227,7 +223,7 @@ bot.dialog('/', [
         builder.Prompts.choice(session, "command?", ["north", "look"]);
     },
     function (session, results) {
-        switch (results.repsonse.entity) {
+        switch (results.response.entity) {
             case "north":
                 session.replaceDialog("/room1");
                 break;
@@ -243,7 +239,7 @@ bot.dialog('/room1', [
         builder.Prompts.choice(session, "command?", ["open gate", "south", "west", "look"]);
     },
     function (session, results) {
-        switch (results.repsonse.entity) {
+        switch (results.response.entity) {
             case "open gate":
                 session.replaceDialog("/room2");
                 break;
@@ -294,6 +290,7 @@ bot.dialog('/location', [
     }
 ]);
 ```
+
 ## Canceling dialogs
 
 Sometimes you may want to do more extensive stack manipulation. For example, you can use the [session.cancelDialog()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#canceldialog) to end a dialog at any arbitrary point in the dialog stack and optionally start a new dialog in its place. You can call `session.cancelDialog('/placeOrder')` with the ID of a dialog to cancel. The stack will be searched backwards and the first occurrence of that dialog will be canceled causing that dialog plus all of its children to be removed from the stack. Control will be returned to the original caller and they can check for a [results.resumed](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptresult.html#resumed) code equal to [ResumeReason.notCompleted](http://docs.botframework.com/en-us/node/builder/chat-reference/enums/_botbuilder_d_.resumereason.html#notcompleted) to detect the cancellation.

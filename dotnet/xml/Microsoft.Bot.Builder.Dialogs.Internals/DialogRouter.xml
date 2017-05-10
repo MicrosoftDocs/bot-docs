@@ -1,0 +1,115 @@
+<Type Name="DialogRouter" FullName="Microsoft.Bot.Builder.Dialogs.Internals.DialogRouter">
+  <TypeSignature Language="C#" Value="public sealed class DialogRouter : Microsoft.Bot.Builder.Scorables.Internals.DelegatingScorable&lt;Microsoft.Bot.Connector.IActivity,double&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DialogRouter extends Microsoft.Bot.Builder.Scorables.Internals.DelegatingScorable`2&lt;class Microsoft.Bot.Connector.IActivity, float64&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.DialogRouter" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Scorables.Internals.DelegatingScorable&lt;Microsoft.Bot.Connector.IActivity,System.Double&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="Item">Microsoft.Bot.Connector.IActivity</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="Score">System.Double</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Scorable for Dialog module routing.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DialogRouter (Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack stack, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Connector.IActivity,double&gt;&gt; fromActivity, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,double&gt;&gt; fromResolver, Func&lt;Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Builder.Scorables.Internals.IResolver&gt; makeResolver, Microsoft.Bot.Builder.Internals.Fibers.ITraits&lt;double&gt; traits, System.Collections.Generic.IComparer&lt;double&gt; comparer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack stack, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Connector.IActivity, float64&gt;&gt; fromActivity, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, float64&gt;&gt; fromResolver, class System.Func`2&lt;class Microsoft.Bot.Connector.IActivity, class Microsoft.Bot.Builder.Scorables.Internals.IResolver&gt; makeResolver, class Microsoft.Bot.Builder.Internals.Fibers.ITraits`1&lt;float64&gt; traits, class System.Collections.Generic.IComparer`1&lt;float64&gt; comparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogRouter.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Connector.IActivity,System.Double}},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Double}},System.Func{Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Builder.Scorables.Internals.IResolver},Microsoft.Bot.Builder.Internals.Fibers.ITraits{System.Double},System.Collections.Generic.IComparer{System.Double})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="stack" Type="Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack" />
+        <Parameter Name="fromActivity" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Connector.IActivity,System.Double&gt;&gt;" />
+        <Parameter Name="fromResolver" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Double&gt;&gt;" />
+        <Parameter Name="makeResolver" Type="System.Func&lt;Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Builder.Scorables.Internals.IResolver&gt;" />
+        <Parameter Name="traits" Type="Microsoft.Bot.Builder.Internals.Fibers.ITraits&lt;System.Double&gt;" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="stack">To be added.</param>
+        <param name="fromActivity">To be added.</param>
+        <param name="fromResolver">To be added.</param>
+        <param name="makeResolver">To be added.</param>
+        <param name="traits">To be added.</param>
+        <param name="comparer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumerateRelevant">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Connector.IActivity,double&gt;&gt; EnumerateRelevant (Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack stack, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Connector.IActivity,double&gt;&gt; fromActivity, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,double&gt;&gt; fromResolver, Func&lt;Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Builder.Scorables.Internals.IResolver&gt; makeResolver);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Connector.IActivity, float64&gt;&gt; EnumerateRelevant(class Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack stack, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Connector.IActivity, float64&gt;&gt; fromActivity, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, float64&gt;&gt; fromResolver, class System.Func`2&lt;class Microsoft.Bot.Connector.IActivity, class Microsoft.Bot.Builder.Scorables.Internals.IResolver&gt; makeResolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogRouter.EnumerateRelevant(Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Connector.IActivity,System.Double}},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Double}},System.Func{Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Builder.Scorables.Internals.IResolver})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Internals.DialogRouter/&lt;EnumerateRelevant&gt;d__0))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Connector.IActivity,System.Double&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stack" Type="Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack" />
+        <Parameter Name="fromActivity" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Connector.IActivity,System.Double&gt;&gt;" />
+        <Parameter Name="fromResolver" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Double&gt;&gt;" />
+        <Parameter Name="makeResolver" Type="System.Func&lt;Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Builder.Scorables.Internals.IResolver&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="stack">To be added.</param>
+        <param name="fromActivity">To be added.</param>
+        <param name="fromResolver">To be added.</param>
+        <param name="makeResolver">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeDelegate">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Connector.IActivity,double&gt; MakeDelegate (Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack stack, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Connector.IActivity,double&gt;&gt; fromActivity, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,double&gt;&gt; fromResolver, Func&lt;Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Builder.Scorables.Internals.IResolver&gt; makeResolver, Microsoft.Bot.Builder.Internals.Fibers.ITraits&lt;double&gt; traits, System.Collections.Generic.IComparer&lt;double&gt; comparer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Connector.IActivity, float64&gt; MakeDelegate(class Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack stack, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Connector.IActivity, float64&gt;&gt; fromActivity, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, float64&gt;&gt; fromResolver, class System.Func`2&lt;class Microsoft.Bot.Connector.IActivity, class Microsoft.Bot.Builder.Scorables.Internals.IResolver&gt; makeResolver, class Microsoft.Bot.Builder.Internals.Fibers.ITraits`1&lt;float64&gt; traits, class System.Collections.Generic.IComparer`1&lt;float64&gt; comparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogRouter.MakeDelegate(Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Connector.IActivity,System.Double}},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Double}},System.Func{Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Builder.Scorables.Internals.IResolver},Microsoft.Bot.Builder.Internals.Fibers.ITraits{System.Double},System.Collections.Generic.IComparer{System.Double})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Connector.IActivity,System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stack" Type="Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack" />
+        <Parameter Name="fromActivity" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Connector.IActivity,System.Double&gt;&gt;" />
+        <Parameter Name="fromResolver" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Double&gt;&gt;" />
+        <Parameter Name="makeResolver" Type="System.Func&lt;Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Builder.Scorables.Internals.IResolver&gt;" />
+        <Parameter Name="traits" Type="Microsoft.Bot.Builder.Internals.Fibers.ITraits&lt;System.Double&gt;" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="stack">To be added.</param>
+        <param name="fromActivity">To be added.</param>
+        <param name="fromResolver">To be added.</param>
+        <param name="makeResolver">To be added.</param>
+        <param name="traits">To be added.</param>
+        <param name="comparer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

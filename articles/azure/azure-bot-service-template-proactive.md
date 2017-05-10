@@ -6,9 +6,8 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 04/13/2017
+ms.date: 
 ms.reviewer: 
-
 ---
 
 # Create a bot using the Proactive template
@@ -109,10 +108,10 @@ The Proactive template provides a good foundation that you can build upon and cu
 - [Templates in the Azure Bot Service](~/azure/azure-bot-service-templates.md)
 - <a href="https://azure.microsoft.com/en-us/documentation/services/functions/" target="_blank">Azure Functions</a>
 - <a href="https://azure.microsoft.com/en-us/documentation/articles/functions-bindings-storage-queue" target="_blank">Azure Functions Storage queue bindings</a>
-- [Send proactive messages with .NET](~/dotnet/bot-builder-dotnet-proactive-messages.md) 
-- [Send proactive messages with Node.js](~/nodejs/bot-builder-nodejs-proactive-messages.md)
+- [Send proactive messages (.NET)](~/dotnet/bot-builder-dotnet-proactive-messages.md) 
+- [Send proactive messages (Node.js)](~/nodejs/bot-builder-nodejs-proactive-messages.md)
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub repository</a>
-- [Bot Builder SDK for .NET](~/dotnet/index.md)
+- [Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-overview.md)
 - [Bot Builder SDK for Node.js](~/nodejs/index.md)
 
 [directLine]: https://docs.botframework.com/en-us/restapi/directline3/#navtitle

@@ -8,8 +8,8 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date: 05/01/2017
 ms.reviewer:
-
 ---
+
 # Connect a bot to GroupMe
 
 You can configure a bot to communicate with people using the GroupMe group messaging app.

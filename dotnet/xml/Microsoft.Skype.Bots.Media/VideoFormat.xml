@@ -1,0 +1,1214 @@
+<Type Name="VideoFormat" FullName="Microsoft.Skype.Bots.Media.VideoFormat">
+  <TypeSignature Language="C#" Value="public class VideoFormat : IEquatable&lt;Microsoft.Skype.Bots.Media.VideoFormat&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VideoFormat extends System.Object implements class System.IEquatable`1&lt;class Microsoft.Skype.Bots.Media.VideoFormat&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.VideoFormat" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;Microsoft.Skype.Bots.Media.VideoFormat&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            VideoFormat
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Microsoft.Skype.Bots.Media.VideoFormat videoFormat);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class Microsoft.Skype.Bots.Media.VideoFormat videoFormat) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.VideoFormat.Equals(Microsoft.Skype.Bots.Media.VideoFormat)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="videoFormat" Type="Microsoft.Skype.Bots.Media.VideoFormat" />
+      </Parameters>
+      <Docs>
+        <param name="videoFormat">
+        </param>
+        <summary>
+            Equals to compare videoformat objects
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.VideoFormat.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>
+            Overrides base Equals to compare objects
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FrameRate">
+      <MemberSignature Language="C#" Value="public int FrameRate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FrameRate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoFormat.FrameRate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Frame rate
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.VideoFormat.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Custom GetHashCode implementation
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public int Height { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Height" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoFormat.Height" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Height
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NV12_1080x1920_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat NV12_1080x1920_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_1080x1920_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_1080x1920_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            NV12 1080x1920 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NV12_1280x720_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat NV12_1280x720_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_1280x720_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_1280x720_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            NV12 1280x720 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NV12_180x320_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat NV12_180x320_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_180x320_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_180x320_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            NV12 180x320 15fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NV12_1920x1080_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat NV12_1920x1080_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_1920x1080_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_1920x1080_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            NV12 1920x1080 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NV12_240x424_15Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat NV12_240x424_15Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_240x424_15Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_240x424_15Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            NV12 240x424 15fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NV12_270x480_15Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat NV12_270x480_15Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_270x480_15Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_270x480_15Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            NV12 270x480 15fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NV12_320x180_15Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat NV12_320x180_15Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_320x180_15Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_320x180_15Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            NV12 320x180 15fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NV12_360x640_15Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat NV12_360x640_15Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_360x640_15Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_360x640_15Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            NV12 360x640 15fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NV12_360x640_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat NV12_360x640_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_360x640_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_360x640_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            NV12 360x640 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NV12_424x240_15Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat NV12_424x240_15Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_424x240_15Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_424x240_15Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            NV12 424x240 15fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NV12_480x270_15Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat NV12_480x270_15Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_480x270_15Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_480x270_15Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            NV12 480x270 15fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NV12_480x848_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat NV12_480x848_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_480x848_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_480x848_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            NV12 480x848 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NV12_540x960_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat NV12_540x960_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_540x960_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_540x960_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            NV12 540x960 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NV12_640x360_15Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat NV12_640x360_15Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_640x360_15Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_640x360_15Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            NV12 640x360 15fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NV12_640x360_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat NV12_640x360_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_640x360_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_640x360_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            NV12 640x360 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NV12_720x1280_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat NV12_720x1280_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_720x1280_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_720x1280_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            NV12 720x1280 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NV12_848x480_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat NV12_848x480_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_848x480_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_848x480_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            NV12 848x480 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NV12_960x540_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat NV12_960x540_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_960x540_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_960x540_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            NV12 960x540 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (Microsoft.Skype.Bots.Media.VideoFormat a, Microsoft.Skype.Bots.Media.VideoFormat b);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class Microsoft.Skype.Bots.Media.VideoFormat a, class Microsoft.Skype.Bots.Media.VideoFormat b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.VideoFormat.op_Equality(Microsoft.Skype.Bots.Media.VideoFormat,Microsoft.Skype.Bots.Media.VideoFormat)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="Microsoft.Skype.Bots.Media.VideoFormat" />
+        <Parameter Name="b" Type="Microsoft.Skype.Bots.Media.VideoFormat" />
+      </Parameters>
+      <Docs>
+        <param name="a">
+        </param>
+        <param name="b">
+        </param>
+        <summary>
+            Overload == operator to do VideoFormat comparison
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (Microsoft.Skype.Bots.Media.VideoFormat a, Microsoft.Skype.Bots.Media.VideoFormat b);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class Microsoft.Skype.Bots.Media.VideoFormat a, class Microsoft.Skype.Bots.Media.VideoFormat b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.VideoFormat.op_Inequality(Microsoft.Skype.Bots.Media.VideoFormat,Microsoft.Skype.Bots.Media.VideoFormat)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="Microsoft.Skype.Bots.Media.VideoFormat" />
+        <Parameter Name="b" Type="Microsoft.Skype.Bots.Media.VideoFormat" />
+      </Parameters>
+      <Docs>
+        <param name="a">
+        </param>
+        <param name="b">
+        </param>
+        <summary>
+            Overload != operator to do VideoFormat comparison
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rgb24_1080x1920_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Rgb24_1080x1920_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_1080x1920_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_1080x1920_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rgb24 1080x1920 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rgb24_1280x720_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Rgb24_1280x720_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_1280x720_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_1280x720_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rgb24 1280x720 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rgb24_180x320_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Rgb24_180x320_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_180x320_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_180x320_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rgb24 180x320 15fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rgb24_1920x1080_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Rgb24_1920x1080_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_1920x1080_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_1920x1080_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rgb24 1920x1080 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rgb24_240x424_15Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Rgb24_240x424_15Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_240x424_15Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_240x424_15Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rgb24 240x424 15fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rgb24_270x480_15Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Rgb24_270x480_15Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_270x480_15Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_270x480_15Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rgb24 270x480 15fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rgb24_320x180_15Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Rgb24_320x180_15Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_320x180_15Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_320x180_15Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rgb24 320x180 15fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rgb24_360x640_15Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Rgb24_360x640_15Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_360x640_15Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_360x640_15Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rgb24 360x640 15fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rgb24_360x640_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Rgb24_360x640_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_360x640_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_360x640_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rgb24 360x640 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rgb24_424x240_15Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Rgb24_424x240_15Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_424x240_15Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_424x240_15Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rgb24 424x240 15fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rgb24_480x270_15Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Rgb24_480x270_15Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_480x270_15Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_480x270_15Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rgb24 480x270 15fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rgb24_480x848_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Rgb24_480x848_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_480x848_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_480x848_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rgb24 480x848 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rgb24_540x960_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Rgb24_540x960_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_540x960_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_540x960_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rgb24 540x960 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rgb24_640x360_15Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Rgb24_640x360_15Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_640x360_15Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_640x360_15Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rgb24 640x360 15fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rgb24_640x360_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Rgb24_640x360_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_640x360_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_640x360_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rgb24 640x360 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rgb24_720x1280_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Rgb24_720x1280_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_720x1280_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_720x1280_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rgb24 720x1280 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rgb24_848x480_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Rgb24_848x480_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_848x480_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_848x480_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rgb24 848x480 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rgb24_960x540_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Rgb24_960x540_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_960x540_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_960x540_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rgb24 960x540 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.VideoFormat.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Provides video format details by overriding the default ToString().
+            </summary>
+        <returns>Details of VideoFormat.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VideoColorFormat">
+      <MemberSignature Language="C#" Value="public Microsoft.Skype.Bots.Media.VideoColorFormat VideoColorFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Skype.Bots.Media.VideoColorFormat VideoColorFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoFormat.VideoColorFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoColorFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            VideoColorFormat
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public int Width { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Width" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoFormat.Width" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Width
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yuy2_1080x1920_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Yuy2_1080x1920_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_1080x1920_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_1080x1920_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            YUY2 1080x1920 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yuy2_1280x720_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Yuy2_1280x720_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_1280x720_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_1280x720_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            YUY2 1280x720 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yuy2_180x320_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Yuy2_180x320_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_180x320_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_180x320_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            YUY2 180x320 15fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yuy2_1920x1080_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Yuy2_1920x1080_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_1920x1080_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_1920x1080_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            YUY2 1920x1080 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yuy2_240x424_15Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Yuy2_240x424_15Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_240x424_15Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_240x424_15Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            YUY2 240x424 15fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yuy2_270x480_15Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Yuy2_270x480_15Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_270x480_15Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_270x480_15Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            YUY2 270x480 15fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yuy2_320x180_15Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Yuy2_320x180_15Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_320x180_15Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_320x180_15Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            YUY2 320x180 15fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yuy2_360x640_15Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Yuy2_360x640_15Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_360x640_15Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_360x640_15Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            YUY2 360x640 15fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yuy2_360x640_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Yuy2_360x640_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_360x640_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_360x640_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            YUY2 360x640 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yuy2_424x240_15Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Yuy2_424x240_15Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_424x240_15Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_424x240_15Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            YUY2 424x240 15fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yuy2_480x270_15Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Yuy2_480x270_15Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_480x270_15Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_480x270_15Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            YUY2 480x270 15fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yuy2_480x848_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Yuy2_480x848_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_480x848_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_480x848_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            YUY2 480x848 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yuy2_540x960_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Yuy2_540x960_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_540x960_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_540x960_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            YUY2 540x960 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yuy2_640x360_15Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Yuy2_640x360_15Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_640x360_15Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_640x360_15Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            YUY2 640x360 15fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yuy2_640x360_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Yuy2_640x360_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_640x360_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_640x360_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            YUY2 640x360 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yuy2_720x1280_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Yuy2_720x1280_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_720x1280_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_720x1280_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            YUY2 720x1280 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yuy2_848x480_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Yuy2_848x480_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_848x480_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_848x480_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            YUY2 848x480 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yuy2_960x540_30Fps">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Skype.Bots.Media.VideoFormat Yuy2_960x540_30Fps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_960x540_30Fps" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_960x540_30Fps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            YUY2 960x540 30fps video format
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

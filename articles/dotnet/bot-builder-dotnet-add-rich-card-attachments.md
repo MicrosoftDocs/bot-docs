@@ -1,22 +1,23 @@
 ---
 title: Add rich card attachments to messages | Microsoft Docs
-description: Learn how to add rich cards to enhance and expand message capability using the Bot Builder SDK for .NET.
+description: Learn how to add rich cards to messages using the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 04/11/2017
+ms.date: 
 ms.reviewer:
-
 ---
 
 # Add rich card attachments to messages
+> [!div class="op_single_selector"]
+> - [.NET](../dotnet/bot-builder-dotnet-add-rich-card-attachments.md)
+> - [Node.js](../nodejs/bot-builder-nodejs-send-rich-cards.md)
+> - [REST](../rest-api/bot-framework-rest-connector-add-rich-cards.md)
 
 A message exchange between user and bot can contain one or more rich cards rendered as a list or carousel. 
-
-The `Attachments` property of the `Activity` object contains an array of `Attachment` objects that represent the rich cards and [media attachments](~/dotnet/bot-builder-dotnet-add-media-attachments.md) within the message. 
+The `Attachments` property of the `Activity` object contains an array of `Attachment` objects that represent the rich cards and media attachments within the message. 
 
 > [!NOTE]
 > For information about how to add media attachments to messages, see 
@@ -24,12 +25,11 @@ The `Attachments` property of the `Activity` object contains an array of `Attach
 
 ## Types of rich cards
 
-A rich card comprises a title, description, link, and images. 
-A message can contain multiple rich cards, displayed in either list format or carousel format.
-The Bot Framework currently supports seven types of rich cards: 
+The Bot Framework currently supports eight types of rich cards: 
 
 | Card type | Description |
 |----|----|
+| <a href="https://github.com/Microsoft/AdaptiveCards" target="_blank">AdaptiveCard</a> | A card that can contain any combination of text, speech, images, buttons, and input fields.  |
 | [AnimationCard][animationCard] | A card that can play animated GIFs or short videos. |
 | [AudioCard][audioCard] | A card that can play an audio file. |
 | [HeroCard][heroCard] | A card that typically contains a single large image, one or more buttons, and text. |
@@ -45,8 +45,7 @@ The Bot Framework currently supports seven types of rich cards:
 
 ## Process events within rich cards
 
-Define `CardAction` objects to specify what should happen when the user clicks a button or taps a section of the card. 
-Each `CardAction` object contains these properties:
+To process events within rich cards, define `CardAction` objects to specify what should happen when the user clicks a button or taps a section of the card. Each `CardAction` object contains these properties:
 
 | Property | Type | Description | 
 |----|----|----|
@@ -55,6 +54,12 @@ Each `CardAction` object contains these properties:
 | Image | string | image URL for the button |
 | Value | string | value needed to perform the specified type of action |
 
+> [!NOTE]
+> Buttons within Adaptive Cards are not created using `CardAction` objects, 
+> but instead using the schema that is defined by <a href="https://github.com/Microsoft/AdaptiveCards" target="_blank">Adaptive Cards</a>. 
+> See [Add an Adaptive Card to a message](#adaptive-card) for an example that shows how to 
+> add buttons to an Adaptive Card.
+
 This table lists the valid values for `CardAction.Type` and describes 
 the expected contents of `CardAction.Value` for each type:
 
@@ -62,7 +67,7 @@ the expected contents of `CardAction.Value` for each type:
 |----|----|
 | openUrl | URL to be opened in the built-in browser |
 | imBack | Text of the message to send to the bot (from the user who clicked the button or tapped the card). This message (from user to bot) will be visible to all conversation participants via the client application that is hosting the conversation. |
-| postBack | Text of the message to send to the bot (from the user who clicked the button or tapped the card). This message will not be displayed by the client application that is hosting the conversation. |
+| postBack | Text of the message to send to the bot (from the user who clicked the button or tapped the card). Some client applications may display this text in the message feed, where it will be visible to all conversation participants. |
 | call | Destination for a phone call in this format: **tel:123123123123** |
 | playAudio | URL of audio to be played |
 | playVideo | URL of video to be played |
@@ -70,11 +75,7 @@ the expected contents of `CardAction.Value` for each type:
 | downloadFile | URL of file to be downloaded |
 | signin | URL of OAuth flow to be initiated |
 
-## Examples
-
-How to create buttons within different kinds of rich cards with the `CardAction` object. 
-
-### Add a Hero card
+## Add a Hero card to a message
 
 The Hero card typically contains a single large image, one or more buttons, and text. 
 
@@ -82,7 +83,7 @@ This code example shows how to create a reply message that contains three Hero c
 
 [!code-csharp[Add HeroCard attachment](~/includes/code/dotnet-add-attachments.cs#addHeroCardAttachment)]
 
-### Add a Thumbnail card to a message
+## Add a Thumbnail card to a message
 
 The Thumbnail card typically contains a single thumbnail image, one or more buttons, and text. 
 
@@ -108,13 +109,27 @@ This code example shows how to create a reply message that contains a Sign-in ca
 
 [!code-csharp[Add SignInCard attachment](~/includes/code/dotnet-add-attachments.cs#addSignInCardAttachment)]
 
+##<a id="adaptive-card"></a> Add an Adaptive card to a message
+
+The Adaptive Card can can contain any combination of text, speech, images, buttons, and input fields. 
+Adaptive Cards are created using the JSON format specified in <a href="https://github.com/Microsoft/AdaptiveCards" target="_blank">Adaptive Cards</a>, which gives you full control over card content and format. 
+
+To create an Adaptive Card using .NET, install the `Microsoft.AdaptiveCards` NuGet package. Then, leverage the information in the <a href="https://github.com/Microsoft/AdaptiveCards" target="_blank">Adaptive Cards</a> repository to understand Adaptive Card schema, explore Adaptive Card elements, and see JSON samples that can be used to create cards of varying composition and complexity. Additionally, you can use the Interactive Visualizer to design Adaptive Card payloads and preview card output.
+
+This code example shows how to create a message that contains an Adaptive Card for a calendar reminder: 
+
+[!code-csharp[Add Adaptive Card attachment](~/includes/code/dotnet-add-attachments.cs#addAdaptiveCardAttachment)]
+
+The resulting card contains three blocks of text, an input field (choice list), and three buttons:
+
+![Adaptive Card calendar reminder](~/media/adaptive-card-reminder.png)
+
 ## Additional resources
 
-- [Activity types](~/dotnet/bot-builder-dotnet-activities.md)
-- [Send and receive activities](~/dotnet/bot-builder-dotnet-connector.md)
+- <a href="https://github.com/Microsoft/AdaptiveCards" target="_blank">Adaptive Cards</a>
+- [Activities overview](~/dotnet/bot-builder-dotnet-activities.md)
 - [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
 - [Add media attachments to messages](~/dotnet/bot-builder-dotnet-add-media-attachments.md)
-- [Implement channel-specific functionality](~/dotnet/bot-builder-dotnet-channeldata.md)
 
 [animationCard]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d9/d78/class_microsoft_1_1_bot_1_1_connector_1_1_animation_card.html
 

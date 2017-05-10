@@ -1,15 +1,15 @@
 ---
 title: Design the user experience | Microsoft Docs
-description: Learn how to design an engaging user experience with rich user controls, natural language understanding, and speech capability.
+description: Learn how to design your bot to deliver an engaging user experience, by using rich user controls, natural language understanding, and speech.
 author: matvelloso
 ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date:
-ms.reviewer: rstand
-
+ms.reviewer: 
 ---
+
 # Design the user experience
 
 Bots typically use some combination of **rich user controls**, **text and natural language**, and **speech** 
@@ -75,7 +75,7 @@ For example, imagine a bot that can answer questions based on the contents of th
 <a href="https://qnamaker.ai" target="_blank">QnA Maker</a> and 
 <a href="https://azure.microsoft.com/en-us/services/search/" target="_blank">Azure Search</a> are 
 both technologies which are designed specifically for this type of scenario. 
-For more information, see [Knowledge base bots](bot-design-pattern-knowledge-base.md).
+For more information, see [Design knowledge bots](bot-design-pattern-knowledge-base.md).
 
 > [!TIP]
 > If you are designing a bot that will answer questions based on structured or unstructured data from 

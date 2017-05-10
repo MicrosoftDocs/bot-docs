@@ -6,9 +6,8 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 04/17/2017
+ms.date: 
 ms.reviewer: 
-
 ---
 
 # Create a bot using the Language understanding template
@@ -19,7 +18,7 @@ To create a bot that uses natural language models (LUIS) to understand user inte
 
 ## Customize the LUIS application model
 
-When you create a bot using the Language understanding template, Azure Bot Service creates a corresponding LUIS application that is empty (i.e., that always returns `None`). To update your LUIS application model so that it is capable of interpreting user input, you must sign-in to <a href="https://www.luis.ai" target="_blank">LUIS</a>, click **My applications**, select the application that the service created for you, and then create intents, specify entities, and train and publish the application.
+When you create a bot using the Language understanding template, Azure Bot Service creates a corresponding LUIS application that is empty (i.e., that always returns `None`). To update your LUIS application model so that it is capable of interpreting user input, you must sign-in to <a href="https://www.luis.ai" target="_blank">LUIS</a>, click **My applications**, select the application that the service created for you, and then create intents, specify entities, and train the application.
 
 > [!NOTE]
 > A bot that is created using the Language understanding template routes messages in the same manner as described for the 
@@ -50,10 +49,10 @@ The Language understanding template provides a good foundation that you can buil
 - [Create a bot with the Azure Bot Service](~/azure/azure-bot-service-quickstart.md)
 - [Templates in the Azure Bot Service](~/azure/azure-bot-service-templates.md)
 - <a href="https://www.luis.ai" target="_blank">LUIS</a>
-- [Enable language understanding in .NET](~/dotnet/bot-builder-dotnet-luis-dialogs.md)
-- [Recognize user intent in Node.js](~/nodejs/bot-builder-nodejs-recognize-intent.md)
+- [Enable language understanding with LUIS (.NET)](~/dotnet/bot-builder-dotnet-luis-dialogs.md)
+- [Recognize user intent (Node.js)](~/nodejs/bot-builder-nodejs-recognize-intent.md)
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub repository</a>
-- [Bot Builder SDK for .NET](~/dotnet/index.md)
+- [Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-overview.md)
 - [Bot Builder SDK for Node.js](~/nodejs/index.md)
 
 [LuisDialog]: https://docs.botframework.com//en-us/csharp/builder/sdkreference/d8/df9/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_luis_dialog.html

@@ -1,20 +1,18 @@
 ---
 title: Advanced features of FormFlow | Microsoft Docs
-description: Learn how to further customize user experiences and conversation handling using FormFlow and the Bot Builder SDK for .NET.
+description: Learn how to customize user experience using FormFlow and the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 03/29/2017
+ms.date: 
 ms.reviewer:
-
 ---
 
 # Advanced features of FormFlow
 
-[FormFlow](~/dotnet/bot-builder-dotnet-formflow.md) describes a basic FormFlow 
+[Basic features of FormFlow](~/dotnet/bot-builder-dotnet-formflow.md) describes a basic FormFlow 
 implementation that delivers a fairly generic user experience. 
 To deliver a more customized user experience using FormFlow, you can specify initial form state, 
 add business logic to manage interdependencies between fields and process user input, 
@@ -325,7 +323,7 @@ see [Customize a form using FormBuilder](~/dotnet/bot-builder-dotnet-formflow-fo
 
 ## Additional resources
 
-- [FormFlow](~/dotnet/bot-builder-dotnet-formflow.md)
+- [Basic features of FormFlow](~/dotnet/bot-builder-dotnet-formflow.md)
 - [Customize a form using FormBuilder](~/dotnet/bot-builder-dotnet-formflow-formbuilder.md)
 - [Localize form content](~/dotnet/bot-builder-dotnet-formflow-localize.md)
 - [Define a form using JSON schema](~/dotnet/bot-builder-dotnet-formflow-json-schema.md)

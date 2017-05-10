@@ -1,0 +1,51 @@
+<Type Name="IScorableFactory&lt;Item,Score&gt;" FullName="Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory&lt;Item,Score&gt;">
+  <TypeSignature Language="C#" Value="public interface IScorableFactory&lt;in Item,out Score&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IScorableFactory`2&lt;- Item, + Score&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="Item">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="Score">
+      <Constraints>
+        <ParameterAttribute>Covariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="Item">To be added.</typeparam>
+    <typeparam name="Score">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ScorableFor">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Scorables.IScorable&lt;in Item,out Score&gt; ScorableFor (System.Collections.Generic.IEnumerable&lt;System.Reflection.MethodInfo&gt; methods);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !Score&gt; ScorableFor(class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.MethodInfo&gt; methods) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2.ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="methods" Type="System.Collections.Generic.IEnumerable&lt;System.Reflection.MethodInfo&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="methods">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

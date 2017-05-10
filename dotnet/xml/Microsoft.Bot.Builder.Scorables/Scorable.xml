@@ -1,0 +1,274 @@
+<Type Name="Scorable" FullName="Microsoft.Bot.Builder.Scorables.Scorable">
+  <TypeSignature Language="C#" Value="public static class Scorable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Scorable extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Scorable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="First&lt;Item,Score&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt; First&lt;Item,Score&gt; (this System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;&gt; scorables);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!Score&gt; First&lt;Item, Score&gt;(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!Score&gt;&gt; scorables) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Scorable.First``2(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{``0,``1}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="Item" />
+        <TypeParameter Name="Score" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="scorables" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="Item">To be added.</typeparam>
+        <typeparam name="Score">To be added.</typeparam>
+        <param name="scorables">To be added.</param>
+        <summary>
+            Select the first scorable that produces a score.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fold&lt;Item,Score&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt; Fold&lt;Item,Score&gt; (this System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;&gt; scorables, System.Collections.Generic.IComparer&lt;Score&gt; comparer = null, Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;.OnStageDelegate onStage = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!Score&gt; Fold&lt;Item, Score&gt;(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!Score&gt;&gt; scorables, class System.Collections.Generic.IComparer`1&lt;!!Score&gt; comparer, class Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/OnStageDelegate&lt;!!Item, !!Score&gt; onStage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Scorable.Fold``2(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{``0,``1}},System.Collections.Generic.IComparer{``1},Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.OnStageDelegate{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="Item" />
+        <TypeParameter Name="Score" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="scorables" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;&gt;" RefType="this" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;Score&gt;" />
+        <Parameter Name="onStage" Type="Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;+OnStageDelegate" />
+      </Parameters>
+      <Docs>
+        <typeparam name="Item">To be added.</typeparam>
+        <typeparam name="Score">To be added.</typeparam>
+        <param name="scorables">To be added.</param>
+        <param name="comparer">To be added.</param>
+        <param name="onStage">To be added.</param>
+        <summary>
+            Fold an enumeration of scorables using a score comparer.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Keep&lt;Item,Score&gt;">
+      <MemberSignature Language="C#" Value="public static bool Keep&lt;Item,Score&gt; (Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt; scorable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Keep&lt;Item, Score&gt;(class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!Score&gt; scorable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Scorable.Keep``2(Microsoft.Bot.Builder.Scorables.IScorable{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="Item" />
+        <TypeParameter Name="Score" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="scorable" Type="Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="Item">To be added.</typeparam>
+        <typeparam name="Score">To be added.</typeparam>
+        <param name="scorable">To be added.</param>
+        <summary>
+            True if the scorable is non-null, false otherwise.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectItem&lt;SourceItem,TargetItem,Score&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Scorables.IScorable&lt;SourceItem,Score&gt; SelectItem&lt;SourceItem,TargetItem,Score&gt; (this Microsoft.Bot.Builder.Scorables.IScorable&lt;TargetItem,Score&gt; scorable, Func&lt;SourceItem,TargetItem&gt; selector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!SourceItem, !!Score&gt; SelectItem&lt;SourceItem, TargetItem, Score&gt;(class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!TargetItem, !!Score&gt; scorable, class System.Func`2&lt;!!SourceItem, !!TargetItem&gt; selector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Scorable.SelectItem``3(Microsoft.Bot.Builder.Scorables.IScorable{``1,``2},System.Func{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Scorables.IScorable&lt;SourceItem,Score&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="SourceItem" />
+        <TypeParameter Name="TargetItem" />
+        <TypeParameter Name="Score" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="scorable" Type="Microsoft.Bot.Builder.Scorables.IScorable&lt;TargetItem,Score&gt;" RefType="this" />
+        <Parameter Name="selector" Type="System.Func&lt;SourceItem,TargetItem&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="SourceItem">To be added.</typeparam>
+        <typeparam name="TargetItem">To be added.</typeparam>
+        <typeparam name="Score">To be added.</typeparam>
+        <param name="scorable">To be added.</param>
+        <param name="selector">To be added.</param>
+        <summary>
+            Project the item of a scorable using a lambda expression.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectScore&lt;Item,SourceScore,TargetScore&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,TargetScore&gt; SelectScore&lt;Item,SourceScore,TargetScore&gt; (this Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,SourceScore&gt; scorable, Func&lt;Item,SourceScore,TargetScore&gt; selector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!TargetScore&gt; SelectScore&lt;Item, SourceScore, TargetScore&gt;(class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!SourceScore&gt; scorable, class System.Func`3&lt;!!Item, !!SourceScore, !!TargetScore&gt; selector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Scorable.SelectScore``3(Microsoft.Bot.Builder.Scorables.IScorable{``0,``1},System.Func{``0,``1,``2})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,TargetScore&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="Item" />
+        <TypeParameter Name="SourceScore" />
+        <TypeParameter Name="TargetScore" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="scorable" Type="Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,SourceScore&gt;" RefType="this" />
+        <Parameter Name="selector" Type="System.Func&lt;Item,SourceScore,TargetScore&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="Item">To be added.</typeparam>
+        <typeparam name="SourceScore">To be added.</typeparam>
+        <typeparam name="TargetScore">To be added.</typeparam>
+        <param name="scorable">To be added.</param>
+        <param name="selector">To be added.</param>
+        <summary>
+            Project the score of a scorable using a lambda expression.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryPostAsync&lt;Item,Score&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; TryPostAsync&lt;Item,Score&gt; (this Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt; scorable, Item item, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; TryPostAsync&lt;Item, Score&gt;(class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!Score&gt; scorable, !!Item item, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Scorable.TryPostAsync``2(Microsoft.Bot.Builder.Scorables.IScorable{``0,``1},``0,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Scorables.Scorable/&lt;TryPostAsync&gt;d__0`2))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="Item" />
+        <TypeParameter Name="Score" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="scorable" Type="Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;" RefType="this" />
+        <Parameter Name="item" Type="Item" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="Item">To be added.</typeparam>
+        <typeparam name="Score">To be added.</typeparam>
+        <param name="scorable">To be added.</param>
+        <param name="item">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>
+            Invoke the scorable calling protocol against a single scorable.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryReduce&lt;Item,Score&gt;">
+      <MemberSignature Language="C#" Value="public static bool TryReduce&lt;Item,Score&gt; (ref System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;&gt; scorables, out Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt; scorable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReduce&lt;Item, Score&gt;(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!Score&gt;&gt; scorables, class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!Score&gt; scorable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Scorable.TryReduce``2(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{``0,``1}}@,Microsoft.Bot.Builder.Scorables.IScorable{``0,``1}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="Item" />
+        <TypeParameter Name="Score" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="scorables" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;&gt;&amp;" RefType="ref" />
+        <Parameter Name="scorable" Type="Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="Item">To be added.</typeparam>
+        <typeparam name="Score">To be added.</typeparam>
+        <param name="scorables">The simplified list of scorables.</param>
+        <param name="scorable">The single scorable representing the list, if possible.</param>
+        <summary>
+            Try to simplify a list of scorables.
+            </summary>
+        <returns>True if it were possible to reduce the list of scorables to a single scorable, false otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WhereScore&lt;Item,Score&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt; WhereScore&lt;Item,Score&gt; (this Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt; scorable, Func&lt;Item,Score,bool&gt; predicate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!Score&gt; WhereScore&lt;Item, Score&gt;(class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!Score&gt; scorable, class System.Func`3&lt;!!Item, !!Score, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Scorable.WhereScore``2(Microsoft.Bot.Builder.Scorables.IScorable{``0,``1},System.Func{``0,``1,System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="Item" />
+        <TypeParameter Name="Score" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="scorable" Type="Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;" RefType="this" />
+        <Parameter Name="predicate" Type="System.Func&lt;Item,Score,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="Item">To be added.</typeparam>
+        <typeparam name="Score">To be added.</typeparam>
+        <param name="scorable">To be added.</param>
+        <param name="predicate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

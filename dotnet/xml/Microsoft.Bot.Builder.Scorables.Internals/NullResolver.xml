@@ -1,0 +1,64 @@
+<Type Name="NullResolver" FullName="Microsoft.Bot.Builder.Scorables.Internals.NullResolver">
+  <TypeSignature Language="C#" Value="public sealed class NullResolver : Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NullResolver extends System.Object implements class Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.NullResolver" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Scorables.Internals.IResolver</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Instance">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Bot.Builder.Scorables.Internals.IResolver Instance;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Bot.Builder.Scorables.Internals.IResolver Instance" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.NullResolver.Instance" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Scorables.Internals.IResolver</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Scorables.Internals.IResolver.TryResolve">
+      <MemberSignature Language="C#" Value="bool IResolver.TryResolve (Type type, object tag, out object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Scorables.Internals.IResolver.TryResolve(class System.Type type, object tag, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.NullResolver.Microsoft#Bot#Builder#Scorables#Internals#IResolver#TryResolve(System.Type,System.Object,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="tag" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <param name="tag">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

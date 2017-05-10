@@ -1,0 +1,196 @@
+<Type Name="IFieldPrompt&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public interface IFieldPrompt&lt;T&gt; where T : class" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFieldPrompt`1&lt;class T&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">Form state that is being completed.</typeparam>
+    <summary>
+            This provides control information about a field.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Active">
+      <MemberSignature Language="C#" Value="public bool Active (T state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Active(!T state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Active(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="state">To be added.</param>
+        <summary>
+            Test to see if field is currently active based on the current state.
+            </summary>
+        <returns>True if field is active.</returns>
+        <remarks>
+            One way to control this is to supply a <see cref="T:Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1" /> to the 
+            <see cref="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})" /> or <see cref="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})" /> steps.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; DefineAsync (T state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; DefineAsync(!T state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.DefineAsync(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="state">To be added.</param>
+        <summary>
+            Build the prompt and recognizer for dynamically defined fields.
+            </summary>
+        <returns>True if field is defined.</returns>
+        <remarks>
+                     This method is called before asking for <see cref="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Prompt" />.
+                     This provides an opportunity to dynamically define the field based on the current
+                     state or external information.  The <see cref="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Dependencies" /> method 
+                     identifies fields that this one depends on.  All of them will be complete before the field
+                     will be shown to the user, but this method might be called earlier in order to define the field
+                     for things like status and initial matching or validation.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Help">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt&lt;T&gt; Help { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1&lt;!T&gt; Help" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Help" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Return the help description for this field.
+            </summary>
+        <value>The prompt to use for generating help.</value>
+        <remarks>
+            Help is a mixture of field specific help, what a recognizer understands and available commands.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Next">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.NextStep Next (object value, T state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.Advanced.NextStep Next(object value, !T state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Next(System.Object,`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.NextStep</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="state" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="value">Value in response to prompt.</param>
+        <param name="state">Current form state.</param>
+        <summary>
+            Next step to execute.
+            </summary>
+        <returns>Next step to execute.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Prompt">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt&lt;T&gt; Prompt { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1&lt;!T&gt; Prompt" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Prompt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>   Returns the prompt description. </summary>
+        <value>   An <see cref="T:Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1" /> describing prompt and recognizer. </value>
+        <remarks>If a prompt is dynamically computed this should be null until <see cref="M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.DefineAsync(`0)" /> is called.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Template">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.TemplateAttribute Template (Microsoft.Bot.Builder.FormFlow.TemplateUsage usage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.TemplateAttribute Template(valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage usage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Template(Microsoft.Bot.Builder.FormFlow.TemplateUsage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateAttribute</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="usage" Type="Microsoft.Bot.Builder.FormFlow.TemplateUsage" />
+      </Parameters>
+      <Docs>
+        <param name="usage">Kind of template we are looking for.</param>
+        <summary>
+            Return a template for building a prompt.
+            </summary>
+        <returns>NULL if no template, otherwise a template annotation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.FormFlow.ValidateResult&gt; ValidateAsync (T state, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.FormFlow.ValidateResult&gt; ValidateAsync(!T state, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.ValidateAsync(`0,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.FormFlow.ValidateResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="T" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="state">State before setting value.</param>
+        <param name="value">Value to be set in field.</param>
+        <summary>
+            Validate value to be set on state and return feedback if not valid.
+            </summary>
+        <returns>Result including feedback and if valid.</returns>
+        <remarks>
+            One way to control this is to supply a <see cref="T:Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate`1" /> to the 
+            <see cref="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})" /> or <see cref="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})" /> steps.
+            </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

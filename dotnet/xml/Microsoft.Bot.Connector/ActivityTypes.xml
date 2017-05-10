@@ -1,0 +1,224 @@
+<Type Name="ActivityTypes" FullName="Microsoft.Bot.Connector.ActivityTypes">
+  <TypeSignature Language="C#" Value="public static class ActivityTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ActivityTypes extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ActivityTypes" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Types of Activities
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ContactRelationUpdate">
+      <MemberSignature Language="C#" Value="public const string ContactRelationUpdate;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ContactRelationUpdate" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.ContactRelationUpdate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Bot added removed to contact list
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConversationUpdate">
+      <MemberSignature Language="C#" Value="public const string ConversationUpdate;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ConversationUpdate" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.ConversationUpdate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            This notification is sent when the conversation's properties change, for example the topic name, or when user joins or leaves the group.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteUserData">
+      <MemberSignature Language="C#" Value="public const string DeleteUserData;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DeleteUserData" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.DeleteUserData" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Delete user data
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndOfConversation">
+      <MemberSignature Language="C#" Value="public const string EndOfConversation;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string EndOfConversation" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.EndOfConversation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            End a conversation
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Event">
+      <MemberSignature Language="C#" Value="public const string Event;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Event" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.Event" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Asynchronous external event
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstallationUpdate">
+      <MemberSignature Language="C#" Value="public const string InstallationUpdate;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string InstallationUpdate" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.InstallationUpdate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Bot added or removed from channel
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invoke">
+      <MemberSignature Language="C#" Value="public const string Invoke;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Invoke" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.Invoke" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Synchronous request to invoke a command
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public const string Message;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Message" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.Message" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Message from a user -&gt; bot or bot -&gt; User
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ping">
+      <MemberSignature Language="C#" Value="public const string Ping;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Ping" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.Ping" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Bounce a message off of the server without replying or changing it's state
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Trigger">
+      <MemberSignature Language="C#" Value="public const string Trigger;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Trigger" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.Trigger" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            NOTE: Trigger activity has been renamed to Event activity
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Typing">
+      <MemberSignature Language="C#" Value="public const string Typing;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Typing" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.Typing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            a user is typing
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

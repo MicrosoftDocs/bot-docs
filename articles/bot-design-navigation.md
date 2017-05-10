@@ -1,15 +1,15 @@
 ---
 title: Design bot navigation | Microsoft Docs
-description: Learn what makes a good navigation structure for conversational bots and how to avoid the most common navigation design errors.
+description: Learn how to design a good navigation structure for your bot and how to avoid the most common navigation design errors.
 author: matvelloso
 ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 
-ms.reviewer: rstand
-
+ms.reviewer: 
 ---
+
 # Design bot navigation
 
 Users can navigate websites using breadcrumbs, apps using menus, and a web browsers using buttons like **forward** and **back**. 

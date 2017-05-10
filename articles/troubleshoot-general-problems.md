@@ -6,10 +6,11 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 02/21/2017
-
+ms.date: 
+ms.reviewer: 
 ---
-# Bot Framework Troubleshooting Guide
+
+# Bot Framework troubleshooting guide
 These Frequently Asked Questions (FAQ) for the Bot Framework can help you with troubleshooting.
 
 ## General questions
@@ -40,7 +41,7 @@ Take a look at [Troubleshooting Bot Framework Authentication][TroubleshootingAut
 
 ### I'm using the C# Bot Builder SDK. How can I troubleshoot my Bot?
 
-* **Look for exceptions**. In Visual Studio 2015, go to <code>Debug|Windows|Exception Settings</code> and select the "Break When Thrown" checkbox next to "Common Language Runtime Exceptions".  You may also see diagnostics output in your "Output Window" when there are thrown or unhandled exceptions.
+* **Look for exceptions**. In Visual Studio 2017, go to **Debug** > **Windows** > **Exception Settings**. In the **Exceptions Settings** window, select the **Break When Thrown** checkbox next to **Common Language Runtime Exceptions**.  You may also see diagnostics output in your "Output Window" when there are thrown or unhandled exceptions.
 
 * **Look at the call stack**. In Visual Studio, you can choose whether you're debugging [Just My Code](https://msdn.microsoft.com/en-us/library/dn457346.aspx) or not.  Seeing the full call stack may provide more insight into any issues.
 
@@ -158,7 +159,7 @@ There are a few options:
 
 * Don't store that dependency so it won't be serialized. This probably isn't helpful, but it's an option.
 * Use the reflection serialization surrogate. This still may not work and risks serializing too much.
-* Resolve the dependency through Autofac and [FiberModule.Key_DoNotSerialize](https://github.com/Microsoft/BotBuilder/blob/master/CSharp/Library/Fibers/FiberModule.cs#L59). This is the cleanest solution.
+* Resolve the dependency through Autofac and `FiberModule.Key_DoNotSerialize`. This is the cleanest solution.
 * Use [NonSerialized](https://msdn.microsoft.com/en-us/library/system.nonserializedattribute(v=vs.110).aspx) and [OnDeserialized](https://msdn.microsoft.com/en-us/library/system.runtime.serialization.ondeserializedattribute(v=vs.110).aspx) attributes to restore the dependency on deserialization This is the simplest solution.
 
 

@@ -1,0 +1,222 @@
+<Type Name="PaymentResponse" FullName="Microsoft.Bot.Connector.Payments.PaymentResponse">
+  <TypeSignature Language="C#" Value="public class PaymentResponse" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaymentResponse extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Payments.PaymentResponse" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A PaymentResponse is returned when a user has selected a payment
+            method and approved a payment request
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PaymentResponse ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.PaymentResponse.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the PaymentResponse class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PaymentResponse (string methodName = null, object details = null, Microsoft.Bot.Connector.Payments.PaymentAddress shippingAddress = null, string shippingOption = null, string payerEmail = null, string payerPhone = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string methodName, object details, class Microsoft.Bot.Connector.Payments.PaymentAddress shippingAddress, string shippingOption, string payerEmail, string payerPhone) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.PaymentResponse.#ctor(System.String,System.Object,Microsoft.Bot.Connector.Payments.PaymentAddress,System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="methodName" Type="System.String" />
+        <Parameter Name="details" Type="System.Object" />
+        <Parameter Name="shippingAddress" Type="Microsoft.Bot.Connector.Payments.PaymentAddress" />
+        <Parameter Name="shippingOption" Type="System.String" />
+        <Parameter Name="payerEmail" Type="System.String" />
+        <Parameter Name="payerPhone" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="methodName">To be added.</param>
+        <param name="details">To be added.</param>
+        <param name="shippingAddress">To be added.</param>
+        <param name="shippingOption">To be added.</param>
+        <param name="payerEmail">To be added.</param>
+        <param name="payerPhone">To be added.</param>
+        <summary>
+            Initializes a new instance of the PaymentResponse class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Details">
+      <MemberSignature Language="C#" Value="public object Details { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Details" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentResponse.Details" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="details")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A JSON-serializable object that provides a payment method specific
+            message used by the merchant to process the transaction and
+            determine successful fund transfer
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MethodName">
+      <MemberSignature Language="C#" Value="public string MethodName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MethodName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentResponse.MethodName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="methodName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The payment method identifier for the payment method that the user
+            selected to fulfil the transaction
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PayerEmail">
+      <MemberSignature Language="C#" Value="public string PayerEmail { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PayerEmail" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentResponse.PayerEmail" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="payerEmail")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If the requestPayerEmail flag was set to true in the
+            PaymentOptions passed to the PaymentRequest constructor, then
+            payerEmail will be the email address chosen by the user
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PayerPhone">
+      <MemberSignature Language="C#" Value="public string PayerPhone { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PayerPhone" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentResponse.PayerPhone" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="payerPhone")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If the requestPayerPhone flag was set to true in the
+            PaymentOptions passed to the PaymentRequest constructor, then
+            payerPhone will be the phone number chosen by the user
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShippingAddress">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.Payments.PaymentAddress ShippingAddress { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.Payments.PaymentAddress ShippingAddress" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentResponse.ShippingAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="shippingAddress")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.Payments.PaymentAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If the requestShipping flag was set to true in the PaymentOptions
+            passed to the PaymentRequest constructor, then shippingAddress
+            will be the full and final shipping address chosen by the user
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShippingOption">
+      <MemberSignature Language="C#" Value="public string ShippingOption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ShippingOption" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentResponse.ShippingOption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="shippingOption")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If the requestShipping flag was set to true in the PaymentOptions
+            passed to the PaymentRequest constructor, then shippingOption
+            will be the id attribute of the selected shipping option
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,52 @@
+<Type Name="RegexCase&lt;R&gt;" FullName="Microsoft.Bot.Builder.Dialogs.RegexCase&lt;R&gt;">
+  <TypeSignature Language="C#" Value="public sealed class RegexCase&lt;R&gt; : Microsoft.Bot.Builder.Dialogs.Case&lt;string,R&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit RegexCase`1&lt;R&gt; extends Microsoft.Bot.Builder.Dialogs.Case`2&lt;string, !R&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.RegexCase`1" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="R" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Case&lt;System.String,R&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">System.String</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="R">R</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="R">To be added.</typeparam>
+    <summary>
+            The regex case for switch.
+            </summary>
+    <remarks>
+            The condition will be true if the regex matches the text.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RegexCase (System.Text.RegularExpressions.Regex regex, Microsoft.Bot.Builder.Dialogs.ContextualSelector&lt;string,R&gt; selector);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Text.RegularExpressions.Regex regex, class Microsoft.Bot.Builder.Dialogs.ContextualSelector`2&lt;string, !R&gt; selector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.RegexCase`1.#ctor(System.Text.RegularExpressions.Regex,Microsoft.Bot.Builder.Dialogs.ContextualSelector{System.String,`0})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="regex" Type="System.Text.RegularExpressions.Regex" />
+        <Parameter Name="selector" Type="Microsoft.Bot.Builder.Dialogs.ContextualSelector&lt;System.String,R&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="regex"> The regex for condition.</param>
+        <param name="selector"> The contextual selector for the case.</param>
+        <summary>
+            Constructs a case based on a regular expression.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

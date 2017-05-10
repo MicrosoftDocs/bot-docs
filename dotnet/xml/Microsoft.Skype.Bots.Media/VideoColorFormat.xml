@@ -1,0 +1,71 @@
+<Type Name="VideoColorFormat" FullName="Microsoft.Skype.Bots.Media.VideoColorFormat">
+  <TypeSignature Language="C#" Value="public enum VideoColorFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VideoColorFormat extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.VideoColorFormat" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            VideoColorFormat
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="NV12">
+      <MemberSignature Language="C#" Value="NV12" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.VideoColorFormat NV12 = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoColorFormat.NV12" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoColorFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            NV12
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rgb24">
+      <MemberSignature Language="C#" Value="Rgb24" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.VideoColorFormat Rgb24 = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoColorFormat.Rgb24" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoColorFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            RGB24
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Yuy2">
+      <MemberSignature Language="C#" Value="Yuy2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.VideoColorFormat Yuy2 = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoColorFormat.Yuy2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoColorFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            YUY2
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

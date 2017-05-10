@@ -22,7 +22,7 @@ This tutorial shows you how to deploy a bot to Azure via continuous integration 
 
 ## Prerequisites
 
-You must have a Microsoft Azure subscription before you can deploy a bot to Azure. If you do not already have a subscription, you can register for a <a href="https://azure.microsoft.com/en-us/free/" target="_blank">free trial</a>. Additionally, the process described by this article requires <a href="https://git-scm.com/downloads" target="_blank">Git</a> and a <a href="http://GitHub.com/" target="_blank">GitHub</a> account.
+You must have a Microsoft Azure subscription before you can deploy a bot to Azure. If you do not already have a subscription, you can register for a <a href="https://azure.microsoft.com/en-us/free/" target="_blank">free trial</a>. Additionally, the process described by this article requires <a href="https://git-scm.com/downloads" target="_blank">Git</a> and a <a href="http://github.com/" target="_blank">GitHub</a> account.
 
 [!include[Pre-deployment considerations](~/includes/snippet-deploy-considerations.md)]
 
@@ -50,8 +50,8 @@ The deployment process may take a minute or two to complete.
 You can verify that the deployment has completed by visiting the web app in a browser.
 
 > [!NOTE]
-> The URL of the web app will be *https://appname.azurewebsites.net*, where *appname* is the value that you specified when creating the app.
-> In this example, the URL is <a href="http://echobotsample.azurewebsites.net" target="_blank">https://echobotsample.azurewebsites.net</a>.
+> The URL of the web app will be `https://appname.azurewebsites.net`, where **appname** is the value that you specified when creating the app.
+> In this example, the URL is `https://echobotsample.azurewebsites.net`.
 
 ![Hello world web app in browser](~/media/azure-browse.png)
 

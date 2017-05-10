@@ -1,17 +1,18 @@
 ---
 title: Send proactive messages | Microsoft Docs
-description: Learn how to interrupt the current conversation flow with a proactive message using the Bot Builder SDK for .NET.
+description: Learn how to send proactive messages using the Bot Builder SDK for .NET.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-
-ms.date: 02/22/2017
+ms.date: 
 ms.reviewer:
-
 ---
 # Send proactive messages
+> [!div class="op_single_selector"]
+> - [.NET](../dotnet/bot-builder-dotnet-proactive-messages.md)
+> - [Node.js](../nodejs/bot-builder-nodejs-proactive-messages.md)
 
 [!include[Introduction to proactive messages - part 1](~/includes/snippet-proactive-messages-intro-1.md)] 
 
@@ -51,7 +52,7 @@ public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitabl
 > For simplicity, this example does not specify how to store the user data. It does not matter how the data is
 > stored as long as the bot can retrieve it later.
 
-Now that the data has been stored, the bot can simply retrieve the data, construct the ad hoc proactive message, and send it. This kind of message can be initiated from asynchronous triggers such as http requests, timers, queues, or from anywhere else that the developer chooses.
+Now that the data has been stored, the bot can simply retrieve the data, construct the ad hoc proactive message, and send it. 
 
 ```cs
 // Use the data stored previously to create the required objects.
@@ -84,8 +85,7 @@ await connector.Conversations.SendToConversationAsync((Activity)message);
 
 > [!NOTE]
 > If the bot specifies a conversation ID that was stored previously, the message will likely be delivered to the user in the existing conversation window on the client. 
-> If the bot generates a new conversation ID, the message will be delivered to the user in a new conversation window on the client provided that the client supports multiple conversation windows. 
-
+> If the bot generates a new conversation ID, the message will be delivered to the user in a new conversation window on the client, provided that the client supports multiple conversation windows. 
 
 ## Send a dialog-based proactive message
 
@@ -136,7 +136,7 @@ public static async Task Resume()
     }
 }
 ```
-The SurveyDialog controls the conversation until it finishes. When its task is finished, it calls `context.Done` and closes, returning control to the previous dialog. 
+The `SurveyDialog` controls the conversation until it finishes. When its task is finished, it calls `context.Done` and closes, returning control to the previous dialog. 
 
 ```cs
 [Serializable]
@@ -171,7 +171,8 @@ Within the Proactive Messages sample, <a href="https://github.com/Microsoft/BotB
 
 ## Additional resources
 
-- [Designing conversation flow](~/bot-design-conversation-flow.md)
+- [Design and control conversation flow](~/bot-design-conversation-flow.md)
 - [Builder library][builderLibrary]
+- <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-proactiveMessages" target="_blank">Proactive Messages sample (GitHub)</a>
 
 [builderLibrary]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html

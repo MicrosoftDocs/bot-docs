@@ -1,43 +1,37 @@
 ---
-title: Deploy and publish a bot | Microsoft Docs
-description: Learn how to deploy and publish a bot.
-keywords: Bot Framework, Bot Builder, register, deploy, configure, publish, Bot Directory
+redirect_url: /bot-framework/deploy-bot-overview
+title: Deploy a bot to the cloud | Microsoft Docs
+description: Learn how to deploy a bot to Azure.
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date:
-ms.reviewer: rstand
+ms.reviewer:
 
 ---
+# Deploy a bot to the cloud
 
-# Deploy and publish bots
-
-After you have built and tested your bots, you need to register your bot,  deploy it to the cloud, configure it, and make it available to others in the Bot Directory.
+After you have built and tested your bots, you need to deploy it to the cloud.
 
 > [!NOTE]
-> If you built your bot using the Azure Bot Service, you don't need to register or deploy your bot.
+> Bots built using the Azure Bot Service do not need to be registered or deployed.
 > Bot registration and deployment are handled as part of the Azure Bot Service bot creation process.
-
-## Register your bot with the Bot Framework
-
-[Registering a bot](~/portal-register-bot.md) is a simple process. You provide some information about your bot and then generate the app ID and password that your bot will use to authenticate with the Bot Framework.
 
 ## Deploy your bot to the cloud
 
-Before others can use your bot, you must deploy it to the cloud. You have a few different options:
+Before others can use your bot, you must deploy it to the cloud. You can deploy it to Azure or to any other cloud service. These articles describe various techniques for deploying your bot to Azure: 
 
 - [Deploy from a local git repository](~/deploy-bot-local-git.md) using continuous integration
-- [Deploy from Github](~/deploy-bot-github.md) using continuous integration
+- [Deploy from GitHub](~/deploy-bot-github.md) using continuous integration
 - [Deploy from Visual Studio](~/deploy-bot-visual-studio.md)
 
-## Configure your bot to run on one or more conversation channels
+## Connect the bot to one or more channels
 
-After you have registered your bot with the Bot Framework and deployed your bot to the cloud, you can [configure a bot to run on one or more channels](~/portal-configure-channels.md).
+After registering the bot with the Bot Framework and deployed it bot to the cloud, [configure the bot to connect on one or more channels](~/portal-configure-channels.md).
 
-## Publish your bot to the directory
+## Publish a bot
+The publishing process is different for each channel. 
 
-After you have registered your bot with the Bot Framework, deployed your bot to the cloud, and configured your bot to run on one or more channels, you can [publish it to the Bot Directory](~/portal-submit-bot-directory.md).
-The Bot Directory is a public directory of all bots that are registered and published with Microsoft Bot Framework.
-By publishing your bot to the directory, you're making it available for users to find it there and add it to the channel(s) that they use.
+

@@ -1,0 +1,322 @@
+<Type Name="Extensions" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.Extensions">
+  <TypeSignature Language="C#" Value="public static class Extensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Extensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GenerateHeroCard">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt; GenerateHeroCard (this Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt prompt);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Attachment&gt; GenerateHeroCard(class Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt prompt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateHeroCard(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prompt" Type="Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="prompt">Prompt definition.</param>
+        <summary>
+            Generate a hero card from a FormPrompt.
+            </summary>
+        <returns>Either an empty list if no buttons or a list with one hero card.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateHeroCards">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt; GenerateHeroCards (this Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt prompt);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Attachment&gt; GenerateHeroCards(class Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt prompt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateHeroCards(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prompt" Type="Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="prompt">Prompt definition.</param>
+        <summary>
+            Generate a list of hero cards from a prompt definition.
+            </summary>
+        <returns>List of hero cards.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateMessages">
+      <MemberSignature Language="C#" Value="public static bool GenerateMessages (this Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt prompt, Microsoft.Bot.Connector.IMessageActivity preamble, Microsoft.Bot.Connector.IMessageActivity promptMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GenerateMessages(class Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt prompt, class Microsoft.Bot.Connector.IMessageActivity preamble, class Microsoft.Bot.Connector.IMessageActivity promptMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateMessages(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt,Microsoft.Bot.Connector.IMessageActivity,Microsoft.Bot.Connector.IMessageActivity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prompt" Type="Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt" RefType="this" />
+        <Parameter Name="preamble" Type="Microsoft.Bot.Connector.IMessageActivity" />
+        <Parameter Name="promptMessage" Type="Microsoft.Bot.Connector.IMessageActivity" />
+      </Parameters>
+      <Docs>
+        <param name="prompt">Prompt definition.</param>
+        <param name="preamble">Simple text message with all except last line of prompt to allow markdown in prompts.</param>
+        <param name="promptMessage">Message with prompt definition including cards.</param>
+        <summary>
+            Given a prompt definition generate messages to send back.
+            </summary>
+        <returns>True if preamble should be sent.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGenericElementType">
+      <MemberSignature Language="C#" Value="public static Type GetGenericElementType (this Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetGenericElementType(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GetGenericElementType(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="type">Type to check.</param>
+        <summary>
+            Return the underlying type of generic IEnumerable.
+            </summary>
+        <returns>True if implements generic IEnumerable.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDouble">
+      <MemberSignature Language="C#" Value="public static bool IsDouble (this Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsDouble(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsDouble(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="type">Type to check.</param>
+        <summary>
+            Type is float or double.
+            </summary>
+        <returns>True if float or double.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsGenericCollectionType">
+      <MemberSignature Language="C#" Value="public static bool IsGenericCollectionType (this Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsGenericCollectionType(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsGenericCollectionType(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="type">Type to check.</param>
+        <summary>
+            Type implements generic ICollection.
+            </summary>
+        <returns>True if implements generic ICollection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsGenericEnumerableType">
+      <MemberSignature Language="C#" Value="public static bool IsGenericEnumerableType (this Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsGenericEnumerableType(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsGenericEnumerableType(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="type">Type to check.</param>
+        <summary>
+            Type implements generic IEnumerable.
+            </summary>
+        <returns>True if implements generic IEnumerable.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsICollection">
+      <MemberSignature Language="C#" Value="public static bool IsICollection (this Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsICollection(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsICollection(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="type">Type to check.</param>
+        <summary>
+            Type implements ICollection.
+            </summary>
+        <returns>True if implements ICollection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsIEnumerable">
+      <MemberSignature Language="C#" Value="public static bool IsIEnumerable (this Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsIEnumerable(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIEnumerable(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="type">Type to check.</param>
+        <summary>
+            Type implements IEnumerable.
+            </summary>
+        <returns>True if implements IEnumerable.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsIList">
+      <MemberSignature Language="C#" Value="public static bool IsIList (this Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsIList(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIList(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="type">Type to check.</param>
+        <summary>
+            Type implements IList.
+            </summary>
+        <returns>True if implements IList.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsIntegral">
+      <MemberSignature Language="C#" Value="public static bool IsIntegral (this Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsIntegral(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIntegral(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="type">Type to check.</param>
+        <summary>
+            Type is integral.
+            </summary>
+        <returns>True if integral.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsListCollectionType">
+      <MemberSignature Language="C#" Value="public static bool IsListCollectionType (this Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsListCollectionType(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsListCollectionType(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="type">Type to check.</param>
+        <summary>
+            Type implements generic IList.
+            </summary>
+        <returns>True if implements generic IList.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNullable">
+      <MemberSignature Language="C#" Value="public static bool IsNullable (this Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsNullable(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsNullable(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="type">Type to check.</param>
+        <summary>
+            Type is nullable.
+            </summary>
+        <returns>True if nullable.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

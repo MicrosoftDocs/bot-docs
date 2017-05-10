@@ -4,28 +4,19 @@ description: This guide describes the characteristics of ID fields present in th
 keywords: id, bots, protocol
 author: RobStand
 ms.author: rstand
-
-
 manager: rstand
 ms.topic: article
-
 ms.prod: bot-framework
-
-ms.date: 03/01/2017
+ms.date: 
 ms.reviewer:
-
-# Include the following line commented out
-
-#REVIEW
 ---
-> [!WARNING]
-> The content in this article is still under development. The article may have errors in content, formatting,
-> and copy. The content may change dramatically as the article is developed.
 
 # ID fields in the Bot Framework
+
 This guide describes the characteristics of ID fields in the Bot Framework.
 
 ## Channel ID
+
 Every Bot Framework channel is identified by a unique ID.
 
 Example: `"channelId": "skype"`
@@ -38,11 +29,12 @@ By convention all channel IDs are lowercase. Channels guarantee that the channel
 casing, and thus bots may use ordinal comparisons to establish equivalence.
 
 ### Rules for channel IDs
-- Channel IDs are case-sensitive
+
+- Channel IDs are case-sensitive.
 
 ## Bot Handle
 
-Every bot registered in the Bot Framework developer has a bot handle.
+Every bot that has been registered with the Bot Framework has a bot handle.
 
 Example: `FooBot`
 
@@ -54,15 +46,15 @@ uniqueness check (meaning that case variations of bot handle are treated as a si
 a characteristic of the dev portal, and not necessarily the bot handle itself.
 
 ### Rules for bot handles
-* Bot handles are unique (case-insensitive) within the Bot Framework dev portal
+
+* Bot handles are unique (case-insensitive) within the Bot Framework.
 
 ## App ID
 
-Every bot has a corresponding App registration.
+Every bot that has been registered with the Bot Framework has an App ID.
 
-NOTE: Apps are sometimes referred to as "MSA Apps" or "MSA/AAD Apps" although we are beginning to drop the MSA and
-AAD names as the Identity team is simply calling them "apps." However, some protocol elements will likely
-refer to them as "MSA Apps" in perpetuity.
+> [!NOTE]
+> Previously, apps were commonly referred to as "MSA Apps" or "MSA/AAD Apps." Apps are now more commonly referred to simply as "apps", but some protocol elements may refer to apps as "MSA Apps" in perpetuity.
 
 Example: `"msaAppId": "353826a6-4557-45f8-8d88-6aa0526b8f77"`
 
@@ -70,9 +62,8 @@ An app represents a registration with the Identity team's App portal, and serves
 identity mechanism within the Bot Framework runtime protocol. Apps may have other non-bot associations, such
 as websites and mobile/desktop applications.
 
-Every registered bot has exactly one app. Although we don't supply machinery for a bot owner to change which
-app is associated with their bot, it is possible and we've changed them by hand in a small number of exceptional
-cases.
+Every registered bot has exactly one app. Although it's not possible for a bot owner to independently change which
+app is associated with their bot, the Bot Framework team can do so in a small number of exceptional cases.
 
 Bots and channels may use app IDs to uniquely identify a registered bot.
 
@@ -80,9 +71,10 @@ App IDs are guaranteed to be GUIDs. App IDs should
 be compared without case sensitivity.
 
 ### Rules for app IDs
-* App IDs are unique (GUID comparison) within the Microsoft App platform
-* Every bot has exactly one corresponding App
-* A bot may change which app it's associated with under certain circumstances
+
+* App IDs are unique (GUID comparison) within the Microsoft App platform.
+* Every bot has exactly one corresponding app.
+* Changing which app a bot is associated with requires the assistance of the Bot Framework team.
 
 ## Channel Account
 
@@ -92,8 +84,8 @@ informative bot non-structural data, like an optional name.
 Example: `"from": { "id": "john.doe@contoso.com", "name": "John Doe" }`
 
 This account describes the address within the channel where messages may be sent and received. In some
-cases, these registrations exist within a single service (Skype, Facebook). In others, they are registered
-across many systems (email addresses, phone numbers). In more anonymous channels (Web Chat), the registration
+cases, these registrations exist within a single service (e.g., Skype, Facebook). In others, they are registered
+across many systems (email addresses, phone numbers). In more anonymous channels (e.g., Web Chat), the registration
 may be ephemeral.
 
 Channel accounts are nested within channels. A Facebook account, for example, is simply a number. This
@@ -117,12 +109,13 @@ and is in many cases not possible.
 A bot is informed of its channel account address via the `recipient` field on activities sent to the bot.
 
 ### Rules for channel accounts
-* Channel accounts have meaning only within their associated channel
-* More than one ID may resolve to the same account
-* Ordinal comparison may be used to establish that two IDs are the same
-* However, there is generally no comparison that can be used to identify whether two different IDs resolve
-  to the same account, bot or person
-* The stability of associations between IDs, accounts, mailboxes, and people depends on the channel
+
+* Channel accounts have meaning only within their associated channel.
+* More than one ID may resolve to the same account.
+* Ordinal comparison may be used to establish that two IDs are the same.
+* There is generally no comparison that can be used to identify whether two different IDs resolve
+  to the same account, bot or person.
+* The stability of associations between IDs, accounts, mailboxes, and people depends on the channel.
 
 ## Conversation ID
 
@@ -140,7 +133,7 @@ The activities within a conversation are sent by users and bots. The definition 
 in a conversation varies by channel, and can theoretically include present users, users who have ever
 received a message, users who sent a message.
 
-Several channels (SMS, Skype, possibly others) have the quirk that the conversation ID assigned to a 1:1
+Several channels (e.g., SMS, Skype, and possibly others) have the quirk that the conversation ID assigned to a 1:1
 conversation is the remote channel account ID. This quirk has two side-effects:
 1. The conversation ID is subjective based on who is viewing it. If Participants A and B are talking,
    participant A sees the conversation ID to be "B" and participant B sees the conversation ID to be "A."
@@ -151,8 +144,9 @@ Thus, a conversation ID does not necessarily uniquely identify a single conversa
 for a single bot.
 
 ### Rules for conversation IDs
-* Conversations have meaning only within their associated channel
-* More than one ID may resolve to the same conversation
+
+* Conversations have meaning only within their associated channel.
+* More than one ID may resolve to the same conversation.
 * Ordinal equality does not necessarily establish that two conversation IDs are the same conversation, although
   in most cases, it does.
 
