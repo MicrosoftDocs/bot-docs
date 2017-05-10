@@ -53,7 +53,7 @@
 ### [Add Azure Search](~/dotnet/bot-builder-dotnet-search-azure.md)
 ### [Secure your bot](~/dotnet/bot-builder-dotnet-security.md)
 ### [Release notes](~/dotnet/bot-builder-dotnet-release-notes.md)
-### [SDK reference](/dotnet/api/?view=bot-builder-3.8)
+### [SDK reference](/dotnet/api/?view=botbuilder-3.8)
 ## [Develop with Node.js](~/nodejs/bot-builder-nodejs-overview.md)
 ### [Key concepts](~/nodejs/bot-builder-nodejs-concepts.md)
 ### Messages
@@ -129,7 +129,7 @@
 ## [Troubleshoot](troubleshoot/TOC.md)
 # Reference
 ## [Bot Framework reference](reference-overview.md)
-## [.NET](/dotnet/api/?view=bot-builder-3.8)
+## [.NET](/dotnet/api/?view=botbuilder-3.8)
 ## [Node](https://docs.botframework.com/en-us/node/builder/chat-reference/modules/_botbuilder_d_.html)
 ## [REST API](~/rest-api-reference.md)
 # [Resources](resources/TOC.md)
