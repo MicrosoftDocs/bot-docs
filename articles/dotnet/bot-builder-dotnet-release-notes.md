@@ -21,6 +21,15 @@ This article describes changes introduced by each version of the Bot Builder SDK
 > <a href="https://github.com/Microsoft/BotBuilder/issues" target="_blank">Bot Builder SDK GitHub repository</a> 
 > for a list of known issues.
 
+## <a href="https://www.nuget.org/packages/Microsoft.Bot.Builder/3.8.0" target="_blank">v3.8</a>
+
+### Changes
+
+- Add Support for speech enabled channels, e.g. [Cortana](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-cortana-skill)
+- Add support for [payments](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-request-payment)
+- Add prompt recognizers to improve PromptDialog parser
+- General bug fixes and improvements
+
 ## <a href="https://www.nuget.org/packages/Microsoft.Bot.Builder/3.5.5" target="_blank">v3.5.5</a>
 
 ### Changes
