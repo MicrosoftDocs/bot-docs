@@ -116,12 +116,21 @@ Each callback will be an event that contains these property values:
 
 ### Shipping Address Update and Shipping Option Update callbacks
 
-[!include[Process shipping address and shipping option callbacks](~/includes/snippet-payment-process-callbacks-1.md)]
+When receiving a Shipping Address Update or a Shipping Option Update callback, 
+your bot will be provided with the current state of the payment details from the client in the event's `value` property.
+As a merchant, you should treat these callbacks as static, given input payment details you will calculate some output payment details and 
+fail if the input state provided by the client is invalid for any reason. 
+If the bot determines the given information is valid as-is, simply send HTTP status code `200 OK` along with the unmodified payment 
+details. Alternatively, the bot may send HTTP status code `200 OK` along with an updated payment details that should be applied before the order can be processed. 
+In some cases, your bot may determine that the updated information is invalid and the 
+order cannot be processed as-is. For example, the user's shipping address may specify a country to which the 
+product supplier does not ship. In that case, the bot may send HTTP status code `200 OK` and a message populating the error property of the payment details object. 
+Sending any HTTP status code in the `400` or `500` range to will result in a generic error  for the customer.
 
 ### Payment Complete callbacks
 
 When receiving a Payment Complete callback, your bot will be provided with a copy of the initial, unmodified payment request as 
-well as the payment response objects in the `Activity.Value` property. The payment response object will contain the final selections 
+well as the payment response objects in the event's `value` property. The payment response object will contain the final selections 
 made by the customer along with a payment token. Your bot should take the opportunity to recalculate the final payment request based on
 the initial payment request and the customer's final selections. Assuming the customer's selections are determined to be valid, the bot
 should verify the amount and currency in the payment token header to ensure that they match the final payment request.  If the bot 

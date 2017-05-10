@@ -27,7 +27,7 @@ Before you can send a payment request using the Bot Builder SDK for .NET, you mu
 
 1. [Register](~/portal-register-bot.md) your bot with the Bot Framework.
 
-2. Update your bot's **web.config** file to set `MicrosoftAppId` and `MicrosoftAppPassword` to the app ID and password values that were generated for your bot during the registration process. 
+2. Update your bot's **Web.config** file to set `MicrosoftAppId` and `MicrosoftAppPassword` to the app ID and password values that were generated for your bot during the registration process. 
 
 ### Create and configure merchant account
 
@@ -39,7 +39,7 @@ Before you can send a payment request using the Bot Builder SDK for .NET, you mu
 
 4. Within Seller Center, navigate to the Dashboard and copy the value of **MerchantID**.
 
-5. Update your bot's **web.config** file to set `MerchantId` to the value that you copied from the Seller Center Dashboard. 
+5. Update your bot's **Web.config** file to set `MerchantId` to the value that you copied from the Seller Center Dashboard. 
 
 [!include[Payment process overview](~/includes/snippet-payment-process-overview.md)]
 
@@ -57,7 +57,7 @@ contact</a>.
 > you must specify a valid credit card or debit card within your Microsoft account 
 > (i.e., a valid card from a U.S. card issuer). 
 > Your card will not be charged and the card's CVV will not be verified, 
-> because the **Payments Bot** sample runs in test mode (i.e., `LiveMode` is set to `false` in **web.config**).
+> because the **Payments Bot** sample runs in test mode (i.e., `LiveMode` is set to `false` in **Web.config**).
 
 The next few sections of this article describe the three parts of the payment process, 
 in the context of the **Payments Bot** sample.
@@ -151,7 +151,7 @@ within the <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_bl
 
 [!include[Test a payments bot](~/includes/snippet-payment-test-bot.md)]
 
-In the <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Payments Bot</a> sample, the `LiveMode` configuration setting in `Web.config` determines whether 
+In the <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Payments Bot</a> sample, the `LiveMode` configuration setting in **Web.config** determines whether 
 Payment Complete callbacks will contain emulated payment tokens or real payment tokens. If `LiveMode` is set to `false`, a header is added to the bot's outbound payment request to indicate that the bot is in test mode, and the Payment Complete callback will contain an emulated payment token that cannot be charged. If `LiveMode` is set to `true`, the header which indicates that the bot is in test mode is omitted from the bot's outbound payment request, and the Payment Complete callback will contain a real payment token that the bot will submit to Stripe for payment processing. This will be a real transaction that results in charges to the specified payment instrument. 
 
 ## Additional resources
