@@ -38,5 +38,6 @@ After you've configured the channel, users on that channel can start using your 
 ## Publish a bot
 The publishing process is different for each channel. If the channel requires a review, ensure that the bot meets the [review guidelines](~/portal-bot-review-guidelines.md) before submitting it for publishing.
 
+
 [!include[publishing](~/includes/snippet-publish-to-channel.md)]
 

@@ -16,7 +16,7 @@ Before others can use your bot, you must register it with the Bot Framework.
 Registration is a simple process. You are prompted to provide some information about your bot and then the portal generates the app ID and password that your bot will use to authenticate with the Bot Framework.
 
 > [!NOTE]
-> Bots created with the Azure Bot Service are registered as part of the creation process.
+> Bots created with the Azure Bot Service are automatically registered as part of the creation process.
  
 ## Register your bot
 
@@ -48,7 +48,11 @@ To register your bot, sign in to the <a href="https://dev.botframework.com" targ
 
 After you've registered your bot, update the Microsoft App Id and Microsoft App Password values in your application's configuration settings to specify the **app ID** and **password** values that were generated for your bot during the registration process.
 
-[!include [Application configuration settings](~/includes/snippet-tip-bot-config-settings.md)]
+> [!TIP]
+> If you're using the Bot Builder SDK for Node.js, set the following environment variables:
+> <ul><li>MICROSOFT_APP_ID</li><li>MICROSOFT_APP_PASSWORD</li></ul>
+> If you're using the Bot Builder SDK for .NET, set the following key values in the web.config file:
+> <ul><li>MicrosoftAppId</li><li>MicrosoftAppPassword</li></ul>
 
 ## Update or delete registration
 
@@ -61,7 +65,7 @@ To update or delete the bot's registration data:
     - To generate a new password, click **Manage Microsoft App ID and password**.
     - To delete a bot, click **Delete bot**.
 
-## Connect the bot to channels
+## Next steps
 
 After you have registered your bot with the Bot Framework,
 the next step in the bot publication process will depend upon whether or not you've already deployed your bot to the cloud.
@@ -78,13 +82,7 @@ the next step in the bot publication process will depend upon whether or not you
 
 1. Update the Microsoft App Id and Microsoft App Password values in your deployed application's configuration settings to specify the **app ID** and **password** values that were generated for your bot during the registration process, as described [here](#updateConfigSettings). 
 
-2. [Configure the bot to run on one or more channels](~/portal-configure-channels.md). To make a bot discoverable, [connect it to the Bing channel](~/channels/channel-bing.md). Users will be able to find the bot using Bing search and then interact with it using the channels it is configured to support.
-
-## Publish a bot
-The publishing process is different for each channel. 
-
-[!include[publishing](~/includes/snippet-publish-to-channel.md)]
-
+2. [Configure the bot to run on one or more channels](~/portal-configure-channels.md). 
 
 [terms]: https://aka.ms/bf-terms
 [code]: https://aka.ms/bf-conduct
