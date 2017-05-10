@@ -10,14 +10,28 @@ ms.date:
 ms.reviewer:
 ---
 # Connect a bot to Bing 
+Connecting your bot to the Bing channel allows people to discover and chat with your bot directly in the Bing search results page. You can build Bing bots using the [Bot Builder SDK](~/bot-builder-overview-getstarted.md) and connect them to the Bing channel. The Bing bot development experience allows you to publish your bots to Bing. People will also be able to chat with the bot directly on Bing.com.
 
-Publishing a bot to Bing allows users to discover and interact with the bot via a web chat control.
+![Bing business bot](~/media/channels/bing_business_bot.png)
+
+To find a bot on Bing, go to [Bing.com](https://www.bing.com/) and enter a search query in the form of "*BotName* bot." For example, if the bot’s name is "Contoso," enter "Contoso bot."
+
+The bot will appear in Bing search results as a rich answer when the user queries specifically for the bot.
+Click **Chat on Bing** to launch the bot.
+
+![Bing search results](~/media/channels/bing-contosoResult.png)
+
+If a website has been associated with the bot, the link to the bot will appear **underneath** the website's Bing search result. Click the link to the bot to launch the bot.
+
+## Publish your bot on Bing
+Publishing a bot on Bing is easy. Open the bot on the [Developer Portal](https://dev.botframework.com/bots), click the Channels tab, and then click Bing.
+
+![Connect to Bing](~/media/channels/connect-to-bing.png)
+
+All fields marked with an asterisk (*) are required. Bots must be [registered](~/portal-register-bot.md) on the Bot Framework before they can be connected to Bing.
 
 > [!NOTE] 
-> Read the [Review Guidelines](~/portal-bot-review-guidelines.md), [Terms of Use][terms] and [Code of Conduct][conduct] before publishing a bot. 
-
-## General bot information
-All fields marked with an asterisk (*) are required. Bots must be [registered](~/portal-register-bot.md) on the Bot Framework before they can be connected to Bing.
+> Be sure you read the [Review Guidelines](~/portal-bot-review-guidelines.md), [Terms of Use][terms] and [Code of Conduct][conduct] before publishing a bot on Bing. 
 
 Open the bot on the [Bot Framework Portal](https://dev.botframework.com/), click the **Channels** tab, and then click **Bing**.
 
@@ -85,16 +99,6 @@ Publishing to the Bing channel makes the bot discoverable by the widest possible
 > To view the status of a review, open the bot in the [developer portal](https://dev.botframework.com/) and click **Channels**.
 > If the bot is not approved, the result will link to the reason why. After making the required changes, resubmit the bot for review.
 
-## Query Bing to find a bot
-
-To find a bot, go to [Bing.com](https://www.bing.com/) and enter a search query in the form of “*BotName* bot”. For example, if the bot’s name is “Contoso”, enter “Contoso bot”. 
-
-The bot will appear in Bing search results as a rich answer when the user queries specifically for the bot.
-Click **Chat on Bing** to launch the bot.
-
-![Bing search results](~/media/channels/bing-contosoResult.png)
-
-If a website has been associated with the bot, the link to the bot will appear **underneath** the website's Bing search result. Click the link to the bot to launch the bot.
 
 ![Bing website search results](~/media/channels/bing-contosoWeb.png)
 
