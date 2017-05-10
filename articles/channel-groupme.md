@@ -1,5 +1,4 @@
 ---
-redirect_url: ~/channel-groupme
 title: Connect a bot to GroupMe | Microsoft Docs
 description: Learn how to configure a bot's connection to GroupMe.
 author: JaymeMPerlman
