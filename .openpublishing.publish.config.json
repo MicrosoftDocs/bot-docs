@@ -8,7 +8,8 @@
       "build_output_subfolder": "bot-framework",
       "locale": "en-us",
       "monikers": [
-        "botbuilder-3.8"
+        "botbuilder-3.8",
+        "skypebotsmedia-1.5.0.1177-alpha"
       ],
       "open_to_public_contributors": false,
       "type_mapping": {
@@ -40,7 +41,10 @@
       "build_source_folder": "dotnet",
       "build_output_subfolder": "bot-framework-dotnet-api",
       "locale": "en-us",
-      "monikers": ["botbuilder-3.5.5", "botconnector-1.1.0"],
+      "monikers": [        
+        "botbuilder-3.8",
+        "skypebotsmedia-1.5.0.1177-alpha"
+      ],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
