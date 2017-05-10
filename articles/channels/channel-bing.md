@@ -14,7 +14,7 @@ ms.reviewer:
 Publishing a bot to Bing allows users to discover and interact with the bot via a web chat control.
 
 > [!NOTE] 
-> Read the [Best Practices][practices], [Review Guidelines][review], [Terms of Use][terms] and [Code of Conduct][conduct] before publishing the bot. 
+> Read the [Review Guidelines](~/portal-bot-review-guidelines.md), [Terms of Use][terms] and [Code of Conduct][conduct] before publishing a bot. 
 
 ## General bot information
 All fields marked with an asterisk (*) are required. Bots must be [registered](~/portal-register-bot.md) on the Bot Framework before they can be connected to Bing.
