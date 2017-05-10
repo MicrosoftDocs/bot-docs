@@ -36,11 +36,9 @@ var bot = new builder.UniversalBot(connector, (session) => {
 connector.onInvoke((invoke, callback) => {
   console.log('onInvoke', invoke);
 
-  // This is to workaround the fact that the channelId for webchat is mapped to directline in the RelatesTo object.
+  // This is a temporary workaround for the issue that the channelId for "webchat" is mapped to "directline" in the incoming RelatesTo object
   invoke.relatesTo.channelId = invoke.relatesTo.channelId === 'directline' ? 'webchat' : invoke.relatesTo.channelId;
 
-  // This is to workaround the fact that invoke.relatesto.user can be null.
-  // Keep the userId in context.ConversationData[cartId].
   var storageCtx = {
     address: invoke.relatesTo,
     persistConversationData: true,
@@ -50,6 +48,7 @@ connector.onInvoke((invoke, callback) => {
   connector.getData(storageCtx, (err, data) => {
     var cartId = data.conversationData[CartIdKey];
     if (!invoke.relatesTo.user && cartId) {
+      // Bot keeps the userId in context.ConversationData[cartId]
       var userId = data.conversationData[cartId];
       invoke.relatesTo.useAuth = true;
       invoke.relatesTo.user = { id: userId };

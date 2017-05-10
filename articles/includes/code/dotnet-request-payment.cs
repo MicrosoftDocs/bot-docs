@@ -50,21 +50,23 @@ private async Task OnInvoke(IInvokeActivity invoke, IConnectorClient connectorCl
     {
         throw new ArgumentException("Request payload must be a valid json object.");
     }
-
-    // This is to workaround the fact that the channelId for webchat is mapped to directline in the RelatesTo object.
+    
+    // This is a temporary workaround for the issue that the channelId for "webchat" is mapped to "directline" in the incoming RelatesTo object
     invoke.RelatesTo.ChannelId = (invoke.RelatesTo.ChannelId == "directline") ? "webchat" : invoke.RelatesTo.ChannelId;
 
-    // This is to workaround the fact that invoke.relatesto.user can be null.
-    // Keep the userId in context.ConversationData[cartId].
-    var conversationData = await stateClient.BotState.GetConversationDataAsync(invoke.RelatesTo.ChannelId, invoke.RelatesTo.Conversation.Id, token);
-    var cartId = conversationData.GetProperty<string>(RootDialog.CART_KEY);
-
-    if (invoke.RelatesTo.User == null && !string.IsNullOrEmpty(cartId))
+    if (invoke.RelatesTo.User == null)
     {
-        invoke.RelatesTo.User = new ChannelAccount
+        // Bot keeps the userId in context.ConversationData[cartId]
+        var conversationData = await stateClient.BotState.GetConversationDataAsync(invoke.RelatesTo.ChannelId, invoke.RelatesTo.Conversation.Id, token);
+        var cartId = conversationData.GetProperty<string>(RootDialog.CARTKEY);
+
+        if (!string.IsNullOrEmpty(cartId))
         {
-            Id = conversationData.GetProperty<string>(cartId)
-        };
+            invoke.RelatesTo.User = new ChannelAccount
+            {
+                Id = conversationData.GetProperty<string>(cartId)
+            };
+        }
     }
 
     var updateResponse = default(object);
