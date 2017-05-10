@@ -1,7 +1,7 @@
 To fully test a bot that requests payment, you must first [deploy](~/publish-bot-overview.md) it 
 to the cloud. Your bot will not be able to receive the HTTP callbacks if it is running locally. 
 After you have deployed your bot to the cloud, [configure](~/portal-configure-channels.md) 
-it to run on Web Chat and/or Skype (the channels that currently support Bot Framework request payment functionality). 
+it to run on channels that support Bot Framework payments, like Web Chat and Skype. 
 Since the [Bot Framework Emulator](~/debug-bots-emulator.md) does not currently support 
 request payment functionality, you can test your bot using either Web Chat or Skype. 
 
