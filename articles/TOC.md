@@ -121,7 +121,7 @@
 ### [Direct Line](https://docs.botframework.com/en-us/restapi/directline3/#navtitle)
 ### [Microsoft Teams](https://msdn.microsoft.com/en-us/microsoft-teams/bots)
 ### [Skype](https://dev.skype.com/bots)
-### [Web Chat](https://docs.microsoft.com/en-us/bot-framework/embed-chat-control-web-page)
+### [Web Chat](~/channels/channel-webchat.md)
 ### [GroupMe](~/channel-groupme.md) 
 ### Third party channels 
 #### [Facebook](~/thirdparty-channels/channel-facebook.md) 
