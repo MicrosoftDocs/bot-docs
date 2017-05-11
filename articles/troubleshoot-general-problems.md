@@ -6,7 +6,7 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
+ms.date: 5/11/2017
 ms.reviewer: 
 ---
 
@@ -64,6 +64,10 @@ The Connector library is the exposition of the REST API.  The Builder library ad
 
 One possible source for HTTP status code 429 is [ngrok](https://ngrok.com/).  Ngrok is used to provide a secure tunnel to localhost.  For example, you might be configuring ngrok with the Bot Framework Emulator to locally debug your Bot in the cloud.
 
+### How can I run background tasks in ASP.NET? 
+
+To initiate an asynchronous task that waits for a few seconds and then executes some code to clear the user profile or reset conversation/dialog state, for example, read [How to run Background Tasks in ASP.NET](https://www.hanselman.com/blog/HowToRunBackgroundTasksInASPNET.aspx).  In particular, consider using [HostingEnvironment.QueueBackgroundWorkItem](https://msdn.microsoft.com/en-us/library/dn636893(v=vs.110).aspx). 
+
 ## Transmitting messages
 
 ### How do user messages relate to HTTPS method calls?
@@ -82,6 +86,9 @@ In Azure, you can enable a Web App or API App to be "always on" by navigating to
 
 The Bot Framework will preserve message ordering to the extent possible, such that if you wait for the completion of the http operation to send message A before initiating another http operation to send message B, we will respect the ordering that A comes before B .  In general, however, you cannot guarantee message delivery order, as delivery is done by the channel, and the channel may reorder messages.  For example, you have likely seen email and text messages being delivered out of order.  You might choose to put a time delay between your messages as a mitigation.
 
+### How do identifiers work in the Bot Framework? 
+
+Take a look at the [Bot Framework resource identifiers guide](resources-identifiers-guide.md). 
 
 ### How can I intercept all messages between the user and my bot?
 
@@ -90,6 +97,10 @@ In C#, you can provide implementations of the IPostToBot and IBotToUser interfac
 ### Why are parts of my message text being dropped?
 
 The Bot Framework and many Channels interpret text as Markdown.  Check to see if your text uses reserved Markdown characters.
+
+### How can I support multiple bots at the same bot service endpoint? 
+
+Take a look at this [sample](https://github.com/Microsoft/BotBuilder/issues/2258#issuecomment-280506334). It explains how to configure the `Conversation.Container` with the right MicrosoftAppCredentials and use a simple `MultiCredentialProvider` to authenticate multiple MicrosoftAppIds and MicrosoftAppPasswords.
 
 ## Identifiers
 
@@ -123,15 +134,16 @@ Some channels provide unscoped addresses. SMS and email are examples. The ID app
 
 Other channels give you either scoped or tenanted addresses (e.g. Skype, Facebook, Slack), and they typically do so in a way that prevents the bot from predicting the user’s ID ahead of time.  For these channels, you need to authenticate the user on your own (via a login link or shared secret) before you know whether or not they are authorized to use the bot.
 
-
-
-### Why does my Direct Line conversation start over after every message?
+### Why does my Direct Line 1.1 conversation start over after every message?
 
 If your Direct Line conversation appears to start over after every message, you are likely omitting the "from" field on the messages you sent from your Direct Line client. Direct Line auto-allocates IDs when the "from" property is null, so every message sent from your client appears to your bot to be a new user.
 
 To fix this, set the "from" field to a stable value that represents the user.
 
 The value of the field is up to you. If you already have a signed-in user in your webpage or app, you can use the existing user ID. If not, you could generate a random user ID on page/app load, optionally store that ID in a cookie or device state, and use that ID.
+
+### Why am I seeing HTTP 502 errors from the Direct Line service? 
+Direct Line 3.0 returns HTTP 502 when it tries to contact your bot but the request does not complete successfully. This can happen if the bot returns an error or if it times out. You can find more information about your bot's errors by visiting the Bot Framework developer portal and checking the "Issues" column next to the affected channel. If you have Application Insights configured for your bot, you can find detailed error messages there. 
 
 ##<a id="implement-dialogs"></a> Implementing dialogs and conversations
 
