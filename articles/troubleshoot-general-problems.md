@@ -86,10 +86,6 @@ In Azure, you can enable a Web App or API App to be "always on" by navigating to
 
 The Bot Framework will preserve message ordering to the extent possible, such that if you wait for the completion of the http operation to send message A before initiating another http operation to send message B, we will respect the ordering that A comes before B .  In general, however, you cannot guarantee message delivery order, as delivery is done by the channel, and the channel may reorder messages.  For example, you have likely seen email and text messages being delivered out of order.  You might choose to put a time delay between your messages as a mitigation.
 
-### How do identifiers work in the Bot Framework? 
-
-Take a look at the [Bot Framework resource identifiers guide](resources-identifiers-guide.md). 
-
 ### How can I intercept all messages between the user and my bot?
 
 In C#, you can provide implementations of the IPostToBot and IBotToUser interfaces to the Autofac dependency injection container.  In Node, you can use middleware for much the same purpose. The [BotBuilder-Azure](https://github.com/Microsoft/BotBuilder-Azure) repo contains C# and Node.js libraries that will log this data to an Azure table.
