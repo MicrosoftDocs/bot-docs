@@ -91,3 +91,4 @@ This activity type is reserved for internal use by the Microsoft Bot Framework.
 
 - [Send and receive activities](~/dotnet/bot-builder-dotnet-connector.md)
 - [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.8" target="_blank">Activity class</a>

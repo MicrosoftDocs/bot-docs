@@ -154,7 +154,7 @@ The message batching delay is configurable. To disable the SDK’s auto-batching
 The Adaptive Card can can contain any combination of text, speech, images, buttons, and input fields. 
 Adaptive Cards are created using the JSON format specified in <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a>, which gives you full control over card content and format. 
 
-To create an Adaptive Card using Node.js, leverage the information in the <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a> repository to understand Adaptive Card schema, explore Adaptive Card elements, and see JSON samples that can be used to create cards of varying composition and complexity. Additionally, you can use the Interactive Visualizer to design Adaptive Card payloads and preview card output.
+To create an Adaptive Card using Node.js, leverage the information within the <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a> site to understand Adaptive Card schema, explore Adaptive Card elements, and see JSON samples that can be used to create cards of varying composition and complexity. Additionally, you can use the Interactive Visualizer to design Adaptive Card payloads and preview card output.
 
 This code example shows how to create a message that contains an Adaptive Card for a calendar reminder: 
 

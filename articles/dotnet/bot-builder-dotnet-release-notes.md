@@ -21,14 +21,14 @@ This article describes changes introduced by each version of the Bot Builder SDK
 > <a href="https://github.com/Microsoft/BotBuilder/issues" target="_blank">Bot Builder SDK GitHub repository</a> 
 > for a list of known issues.
 
-## <a href="https://www.nuget.org/packages/Microsoft.Bot.Builder/3.8.0" target="_blank">v3.8</a>
+## <a href="https://www.nuget.org/packages/Microsoft.Bot.Builder/3.8.0" target="_blank">v3.8.0</a>
 
 ### Changes
 
-- Add Support for speech enabled channels, e.g. [Cortana](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-cortana-skill)
-- Add support for [payments](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-request-payment)
-- Add prompt recognizers to improve PromptDialog parser
-- General bug fixes and improvements
+- Added support for speech-enabled channels (e.g., [Cortana](~/dotnet/bot-builder-dotnet-cortana-skill.md)).
+- Added support for [payment requests](~/dotnet/bot-builder-dotnet-request-payment.md).
+- Added prompt recognizers to improve the `PromptDialog` parser.
+- Implemented general bug fixes and improvements.
 
 ## <a href="https://www.nuget.org/packages/Microsoft.Bot.Builder/3.5.5" target="_blank">v3.5.5</a>
 
@@ -169,12 +169,12 @@ see [Authentication][authentication].
 ## <a href="https://www.nuget.org/packages/Microsoft.Bot.Builder/3.0.0" target="_blank">v3.0.0</a>
 
 > [!NOTE]
-> This version of the SDK reflects changes that were implemented in [version 3 of the Bot Connector API][connectorAPIv3]. 
+> This version of the SDK reflects changes that were implemented in version 3 of the Bot Connector API. 
 
 ### Breaking changes
 
-- Updated schema to v3. `Message` is now [Activity](~/dotnet/bot-builder-dotnet-activities.md) and there is a [new addressing scheme][addressing].
-- [Changed reply model][sendingReplies] such that replies to the user will be sent asynchronously over a separately initiated HTTP request rather than inline with the HTTP POST for the incoming message to bot.
+- Updated schema to v3. `Message` is now [Activity](~/dotnet/bot-builder-dotnet-activities.md) and there is a new addressing scheme.
+- Changed reply model such that replies to the user will be sent asynchronously over a separately initiated HTTP request rather than inline with the HTTP POST for the incoming message to bot.
 - Updated [Authentication model][authenticationModel].
 - Decoupled bot data storage [Bot State][stateAPI] from messaging API.
 - Added [new card format](~/dotnet/bot-builder-dotnet-add-rich-card-attachments.md) for attachments.
@@ -337,14 +337,8 @@ see [Authentication][authentication].
 
 [authentication]: ~/rest-api/bot-framework-rest-connector-authentication.md#security-protocol-changes
 
-[connectorAPIv3]: https://docs.botframework.com/en-us/support/upgrade-to-v3/#navtitle
-
-[addressing]: http://docs.botframework.com/en-us/support/upgrade-code-to-v3/#addressing
-
-[sendingReplies]: http://docs.botframework.com/en-us/support/upgrade-code-to-v3/#sending-replies
-
 [authenticationModel]: ~/rest-api/bot-framework-rest-connector-authentication.md
 
-[stateAPI]: http://docs.botframework.com/en-us/csharp/builder/sdkreference/stateapi.html
+[stateAPI]: ~/dotnet/bot-builder-dotnet-state.md
 
-[skypeCallingBot]: http://docs.botframework.com/en-us/skype/calling/#navtitle
+[skypeCallingBot]: https://dev.skype.com/bots

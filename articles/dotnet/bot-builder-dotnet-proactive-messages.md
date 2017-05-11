@@ -172,7 +172,5 @@ Within the Proactive Messages sample, <a href="https://github.com/Microsoft/BotB
 ## Additional resources
 
 - [Design and control conversation flow](~/bot-design-conversation-flow.md)
-- [Builder library][builderLibrary]
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
 - <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-proactiveMessages" target="_blank">Proactive Messages sample (GitHub)</a>
-
-[builderLibrary]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html

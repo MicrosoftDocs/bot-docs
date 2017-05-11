@@ -157,3 +157,5 @@ The `SuggestedActions` property of a message activity can be used to present but
 - [Add speech to messages](~/dotnet/bot-builder-dotnet-text-to-speech.md)
 - [Add suggested actions to messages](~/dotnet/bot-builder-dotnet-add-suggested-actions.md)
 - [Implement channel-specific functionality](~/dotnet/bot-builder-dotnet-channeldata.md)
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.8" target="_blank">Activity class</a>
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.imessageactivity?view=botbuilder-3.8" target="_blank">IMessageActivity interface</a>

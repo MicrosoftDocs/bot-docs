@@ -206,18 +206,18 @@ If `Chain.Switch<T, R>` returns a nested `IDialog<IDialog<T>>`, then the inner `
 - [Manage conversation flow with dialogs](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
 - [Enable language understanding with LUIS](~/dotnet/bot-builder-dotnet-luis-dialogs.md)
 - [Bot Framework troubleshooting guide](~/troubleshoot-general-problems.md#implement-dialogs)
-- [Builder library][builderLibrary]
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
 
-[builderLibrary]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html
+[builderLibrary]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs?view=botbuilder-3.8
 
-[iBotData]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/db/d9b/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_i_bot_data.html
+[iBotData]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.internals.ibotdata?view=botbuilder-3.8
 
-[iBotToUser]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d9/d2c/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_i_bot_to_user.html 
+[iBotToUser]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.internals.ibottouser?view=botbuilder-3.8 
 
-[iDialogStack]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/de/db4/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_internals_1_1_i_dialog_stack.html 
+[iDialogStack]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.internals.idialogstack?view=botbuilder-3.8
 
-[iBotDataBag]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d7/dea/interface_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_i_bot_data_bag.html 
+[iBotDataBag]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.ibotdatabag?view=botbuilder-3.8 
 
-[autofac]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/df/dd3/namespace_microsoft_1_1_bot_1_1_builder_1_1_autofac.html
+[autofac]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.autofac.base?view=botbuilder-3.8
 
-[chain]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/de/dab/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_chain.html
+[chain]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.chain?view=botbuilder-3.8

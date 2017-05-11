@@ -328,25 +328,26 @@ see [Customize a form using FormBuilder](~/dotnet/bot-builder-dotnet-formflow-fo
 - [Localize form content](~/dotnet/bot-builder-dotnet-formflow-localize.md)
 - [Define a form using JSON schema](~/dotnet/bot-builder-dotnet-formflow-json-schema.md)
 - [Customize user experience with pattern language](~/dotnet/bot-builder-dotnet-formflow-pattern-language.md)
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
 
-[formDialog]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/db/de5/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_dialog.html
+[formDialog]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.formdialog?view=botbuilder-3.8
 
-[promptFieldsWithValues]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/dd/df7/namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow.html#a27be39918296ad3536d6a5c8d6ed5394aa796e574d8cf50f288b2e44ecd64764a
+[promptFieldsWithValues]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.formoptions.promptfieldswithvalues?view=botbuilder-3.8
 
-[validateResult]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d4/d7b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_validate_result.html
+[validateResult]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.validateresult?view=botbuilder-3.8
 
-[describeAttribute]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/dd/d38/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_describe_attribute.html
+[describeAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.describeattribute?view=botbuilder-3.8
 
-[numericAttribute]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/df/d31/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_numeric_attribute.html
+[numericAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.numericattribute?view=botbuilder-3.8
 
-[optionalAttribute]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d7/d6f/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_optional_attribute.html
+[optionalAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.optionalattribute?view=botbuilder-3.8
 
-[patternAttribute]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/da/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_pattern_attribute.html
+[patternAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.patternattribute?view=botbuilder-3.8
 
-[promptAttribute]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d0/d34/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_prompt_attribute.html
+[promptAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.promptattribute?view=botbuilder-3.8
 
-[templateAttribute]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d7/d0a/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_template_attribute.html
+[templateAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.templateattribute?view=botbuilder-3.8
 
-[termsAttribute]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d2/d27/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_terms_attribute.html
+[termsAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.termsattribute?view=botbuilder-3.8
 
-[notUnderstood]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/dd/df7/namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow.html#a28ef6a551a3611e4a6abe06659797313aca296fd71c8deadb1bccdad8e097bc50
+[notUnderstood]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.templateusage.notunderstood?view=botbuilder-3.8

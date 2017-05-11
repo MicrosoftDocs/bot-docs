@@ -98,7 +98,5 @@ For a complete sample that shows how to manage a conversation by using dialogs i
 
 - [Dialogs](~/dotnet/bot-builder-dotnet-dialogs.md)
 - [Design and control conversation flow](~/bot-design-conversation-flow.md)
-- [Builder library][builderLibrary]
 - <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-BasicMultiDialog" target="_blank">Basic Multi-Dialog sample (GitHub)</a>
-
-[builderLibrary]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d3/ddb/namespace_microsoft_1_1_bot_1_1_builder.html
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>

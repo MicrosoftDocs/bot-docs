@@ -1,2 +1,2 @@
-The [Connector](~/dotnet/bot-builder-dotnet-concepts.md#connector) uses an `Activity` object to pass information back and forth between bot and channel (user). 
+The [Connector](~/dotnet/bot-builder-dotnet-concepts.md#connector) uses an <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.8" target="_blank">Activity</a> object to pass information back and forth between bot and channel (user). 
 The most common type of activity is **message**, but there are other activity types that can be used to communicate various types of information to a bot or channel. 

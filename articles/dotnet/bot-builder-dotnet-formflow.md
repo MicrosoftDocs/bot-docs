@@ -355,11 +355,12 @@ For more information, see [Advanced features of FormFlow](~/dotnet/bot-builder-d
 - [Localize form content](~/dotnet/bot-builder-dotnet-formflow-localize.md)
 - [Define a form using JSON schema](~/dotnet/bot-builder-dotnet-formflow-json-schema.md)
 - [Customize user experience with pattern language](~/dotnet/bot-builder-dotnet-formflow-pattern-language.md)
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
 
-[LuisDialog]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d8/df9/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_luis_dialog.html
+[LuisDialog]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.luisdialog-1?view=botbuilder-3.8
 
-[iField]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d5/d09/interface_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_i_field.html
+[iField]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.ifield-1?view=botbuilder-3.8
 
-[field]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d2/d1b/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_advanced_1_1_field.html
+[field]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.field-1?view=botbuilder-3.8
 
-[formBuilder]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/de/d9d/class_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_form_builder.html
+[formBuilder]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.formbuilder-1?view=botbuilder-3.8

@@ -17,7 +17,7 @@ ms.reviewer:
 > - [REST](../rest-api/bot-framework-rest-connector-add-rich-cards.md)
 
 A message exchange between user and bot can contain one or more rich cards rendered as a list or carousel. 
-The `Attachments` property of the `Activity` object contains an array of `Attachment` objects that represent the rich cards and media attachments within the message. 
+The `Attachments` property of the <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.8" target="_blank">Activity</a> object contains an array of <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.attachment?view=botbuilder-3.8" target="_blank">Attachment</a> objects that represent the rich cards and media attachments within the message. 
 
 > [!NOTE]
 > For information about how to add media attachments to messages, see 
@@ -114,7 +114,7 @@ This code example shows how to create a reply message that contains a Sign-in ca
 The Adaptive Card can can contain any combination of text, speech, images, buttons, and input fields. 
 Adaptive Cards are created using the JSON format specified in <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a>, which gives you full control over card content and format. 
 
-To create an Adaptive Card using .NET, install the `Microsoft.AdaptiveCards` NuGet package. Then, leverage the information in the <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a> repository to understand Adaptive Card schema, explore Adaptive Card elements, and see JSON samples that can be used to create cards of varying composition and complexity. Additionally, you can use the Interactive Visualizer to design Adaptive Card payloads and preview card output.
+To create an Adaptive Card using .NET, install the `Microsoft.AdaptiveCards` NuGet package. Then, leverage the information within the <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a> site to understand Adaptive Card schema, explore Adaptive Card elements, and see JSON samples that can be used to create cards of varying composition and complexity. Additionally, you can use the Interactive Visualizer to design Adaptive Card payloads and preview card output.
 
 This code example shows how to create a message that contains an Adaptive Card for a calendar reminder: 
 
@@ -130,17 +130,19 @@ The resulting card contains three blocks of text, an input field (choice list), 
 - [Activities overview](~/dotnet/bot-builder-dotnet-activities.md)
 - [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
 - [Add media attachments to messages](~/dotnet/bot-builder-dotnet-add-media-attachments.md)
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.8" target="_blank">Activity class</a>
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.attachment?view=botbuilder-3.8" target="_blank">Attachment class</a>
 
-[animationCard]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d9/d78/class_microsoft_1_1_bot_1_1_connector_1_1_animation_card.html
+[animationCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.animationcard?view=botbuilder-3.8
 
-[audioCard]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/db/d71/class_microsoft_1_1_bot_1_1_connector_1_1_audio_card.html 
+[audioCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.audiocard?view=botbuilder-3.8 
 
-[heroCard]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d4/dab/class_microsoft_1_1_bot_1_1_connector_1_1_hero_card.html 
+[heroCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.herocard?view=botbuilder-3.8 
 
-[thumbnailCard]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/da/da6/class_microsoft_1_1_bot_1_1_connector_1_1_thumbnail_card.html 
+[thumbnailCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.thumbnailcard?view=botbuilder-3.8 
 
-[receiptCard]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d0/df9/class_microsoft_1_1_bot_1_1_connector_1_1_receipt_card.html 
+[receiptCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.receiptcard?view=botbuilder-3.8 
 
-[signinCard]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/dc/d03/class_microsoft_1_1_bot_1_1_connector_1_1_signin_card.html 
+[signinCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.signincard?view=botbuilder-3.8 
 
-[videoCard]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/d6/da6/class_microsoft_1_1_bot_1_1_connector_1_1_video_card.html
+[videoCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.videocard?view=botbuilder-3.8
