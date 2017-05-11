@@ -45,7 +45,7 @@ If confidence level is low, the bot may respond with "Hmm... were you looking fo
 ### Using Search to Guide a Conversation
 
 If your motivation for building a bot is to enable basic search engine functionality, 
-then you may not need a bot at all. What does a conversational interface off that users can't get from a typical search engine in a web browser? 
+then you may not need a bot at all. What does a conversational interface offer that users can't get from a typical search engine in a web browser? 
 
 Knowledge bots are generally most effective when they are designed to guide the conversation. 
 A conversation is composed of a back-and-forth exchange between user and bot, which presents the bot 
