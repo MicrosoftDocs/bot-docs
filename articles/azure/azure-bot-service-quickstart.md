@@ -34,7 +34,7 @@ sign in to <a href="https://portal.azure.com" target="_blank">Azure</a> and comp
 
 1. Select **New** in the menu blade. 
 
-2. In the **New** blade, navigate to the Intelligence + analytics category, and select Bot Service. 
+2. In the **New** blade, navigate to the Data + Analytics category, and select Bot Service. 
 
 3. In the Bot Service blade, provide the requested information, and click **Create** to create the bot service and deploy it to the cloud. 
 
