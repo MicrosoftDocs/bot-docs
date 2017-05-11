@@ -10,7 +10,7 @@ ms.date:
 ms.reviewer:
 ---
 # Connect a bot to channels
-A channel is the connection between the Bot Framework and communication apps. You configure bot to connect to the channels you want it to be available on. For example, a business bot connected to the Bing channel will show up in Bing search results and people can interact with it on Bing. Connecting to channels is quick and easy in the [Developer Portal](https://dev.botframework.com).
+A channel is the connection between the Bot Framework and communication apps. You configure a bot to connect to the channels you want it to be available on. For example, a business bot connected to the Bing channel will show up in Bing search results and people can interact with it on Bing. Connecting to channels is quick and easy in the [Developer Portal](https://dev.botframework.com).
 
 ![Connect to channels](~/media/channels/connect-to-channels.png)
 
