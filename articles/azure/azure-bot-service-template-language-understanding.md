@@ -6,7 +6,7 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
+ms.date: 05/11/2017
 ms.reviewer: 
 ---
 
@@ -55,4 +55,4 @@ The Language understanding template provides a good foundation that you can buil
 - [Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-overview.md)
 - [Bot Builder SDK for Node.js](~/nodejs/index.md)
 
-[LuisDialog]: https://docs.botframework.com//en-us/csharp/builder/sdkreference/d8/df9/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_luis_dialog.html
+[LuisDialog]: https://review.docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.luisdialog-1?view=botbuilder-3.8
