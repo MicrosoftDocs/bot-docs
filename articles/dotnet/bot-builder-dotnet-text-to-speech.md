@@ -6,7 +6,7 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/11/2017
+ms.date: 05/12/2017
 ms.reviewer: 
 ---
 
@@ -14,6 +14,7 @@ ms.reviewer:
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-text-to-speech.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-text-to-speech.md)
+> - [REST](../rest-api/bot-framework-rest-connector-text-to-speech.md)
 
 If you are building a bot for a speech-enabled channel such as Cortana, you can construct messages that specify the text to be spoken by your bot. You can also attempt to influence the state of the client's microphone by specifying an [input hint](~/dotnet/bot-builder-dotnet-add-input-hints.md) to indicate whether your bot is accepting, expecting, or ignoring user input.
 

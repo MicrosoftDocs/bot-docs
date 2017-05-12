@@ -1,0 +1,66 @@
+---
+title: Add speech to messages | Microsoft Docs
+description: Learn how to add speech to messages using the Bot Connector service.
+author: kbrandl
+ms.author: v-kibran
+manager: rstand
+ms.topic: article
+ms.prod: bot-framework
+ms.date: 05/12/2017
+ms.reviewer: 
+---
+
+# Add speech to messages
+> [!div class="op_single_selector"]
+> - [.NET](../dotnet/bot-builder-dotnet-text-to-speech.md)
+> - [Node.js](../nodejs/bot-builder-nodejs-text-to-speech.md)
+> - [REST](../rest-api/bot-framework-rest-connector-text-to-speech.md)
+
+If you are building a bot for a speech-enabled channel such as Cortana, you can construct messages that specify the text to be spoken by your bot. You can also attempt to influence the state of the client's microphone by specifying an [input hint](~/rest-api/bot-framework-rest-connector-add-input-hints.md) to indicate whether your bot is accepting, expecting, or ignoring user input.
+
+## Specify text to be spoken by your bot
+
+To specify text to be spoken by your bot on a speech-enabled channel, set the `speak` property within the [Activity][Activity] object that represents your message. You can set the `speak` property to either a plain text string or a string that is formatted as <a href="https://msdn.microsoft.com/en-us/library/hh378377(v=office.14).aspx" target="_blank">Speech Synthesis Markup Language (SSML)</a>, an XML-based markup language that enables you to control various characteristics of your bot's speech such as voice, rate, volume, pronunciation, pitch, and more. 
+
+The following request sends a message that specifies text to be displayed and text to be spoken and indicates that the bot is [expecting user input](~/rest-api/bot-framework-rest-connector-add-input-hints.md). It specifies the `speak` property using <a href="https://msdn.microsoft.com/en-us/library/hh378377(v=office.14).aspx" target="_blank">SSML</a> format to indicate that the word "sure" should be spoken with a moderate amount of emphasis.
+
+```http
+POST https://api.botframework.com/v3/conversations/abcd1234/activities/5d5cdc723
+Authorization: Bearer ACCESS_TOKEN
+Content-Type: application/json
+```
+
+```json
+{
+    "type": "message",
+    "from": {
+        "id": "12345678",
+        "name": "sender's name"
+    },
+    "conversation": {
+        "id": "abcd1234",
+        "name": "conversation's name"
+   },
+   "recipient": {
+        "id": "1234abcd",
+        "name": "recipient's name"
+    },
+    "text": "Are you sure that you want to cancel this transaction?",
+    "speak": "Are you <emphasis level='moderate'>sure</emphasis> that you want to cancel this transaction?",
+    "inputHint": "expectingInput",
+    "replyToId": "5d5cdc723"
+}
+```
+
+## Input hints
+
+When you send a message on a speech-enabled channel, you can attempt to influence the state of the client's microphone by also including an input hint to indicate whether your bot is accepting, expecting, or ignoring user input. For more information, see [Add input hints to messages](~/rest-api/bot-framework-rest-connector-add-input-hints.md).
+
+## Additional resources
+
+- [Create messages](~/rest-api/bot-framework-rest-connector-create-messages.md)
+- [Send and receive messages](~/rest-api/bot-framework-rest-connector-send-and-receive-messages.md)
+- [Add input hints to messages](~/rest-api/bot-framework-rest-connector-add-input-hints.md)
+- <a href="https://msdn.microsoft.com/en-us/library/hh378377(v=office.14).aspx" target="_blank">Speech Synthesis Markup Language (SSML)</a>
+
+[Activity]: ~/rest-api/bot-framework-rest-connector-api-reference.md#activity-object
