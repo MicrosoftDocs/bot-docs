@@ -6,7 +6,7 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
+ms.date: 05/12/2017
 ms.reviewer: 
 ---
 
@@ -29,7 +29,7 @@ When the user sends a message to your bot, your bot will receive the message as 
 | replyToId | Set this property to the contents of the `id` property in the user's message. |
 | type | Set this property to **message**. |
 
-Next, set the properties that specify the information that you want to communicate to the user. For example, you can set the `text` property to specify text for the message and you can set the `attachments` property to specify media attachments or rich cards to include in the message. For detailed information about commonly-used message properties, see [Create messages](~/rest-api/bot-framework-rest-connector-create-messages.md).
+Next, set the properties that specify the information that you want to communicate to the user. For example, you can set the `text` property to specify the text to be displayed in the message, set the `speak` property to specify text to be spoken by your bot, and set the `attachments` property to specify media attachments or rich cards to include in the message. For detailed information about commonly-used message properties, see [Create messages](~/rest-api/bot-framework-rest-connector-create-messages.md).
 
 ### Send the reply
 

@@ -16,20 +16,21 @@ ms.reviewer:
 > - [Azure Bot Service](../azure/azure-bot-service-quickstart.md)
 > - [REST](../rest-api/bot-framework-rest-connector-quickstart.md)
 
-The <a href="https://github.com/Microsoft/BotBuilder" target="_blank">Bot Builder SDK for .NET</a> is an easy to use framework for developing bots. The SDK leverages C# to provide a familiar way for .NET developers to create powerful bots.
+The <a href="https://github.com/Microsoft/BotBuilder" target="_blank">Bot Builder SDK for .NET</a> is an easy to use framework for developing bots using Visual Studio and Windows. The SDK leverages C# to provide a familiar way for .NET developers to create powerful bots.
+
 
 This tutorial walks you through building a bot by using
 the Bot Application template and the Bot Builder SDK for .NET,
 and then testing it with the Bot Framework Emulator.
 
 > [!IMPORTANT]
-> The Bot Builder SDK for .NET currently supports C#.
+> The Bot Builder SDK for .NET currently supports C#. Visual Studio for Mac is not supported.
 
 ## Prerequisites
 
 Get started by completing the following prerequisite tasks:
 
-1. Install Visual Studio 2017.  
+1. Install Visual Studio 2017 for Windows.  
 > [!TIP]
 > You can build bots for free with <a href="https://www.visualstudio.com/downloads/" target="_blank">Visual Studio 2017 Community</a>.
 

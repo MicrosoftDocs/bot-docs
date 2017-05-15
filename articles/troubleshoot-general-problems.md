@@ -219,7 +219,7 @@ pessimistically serialize the handling of a single conversations with an in-memo
 
 If your bot is not connected to external services or if processing messages in parallel from the same conversation is acceptable, you can add this code to ignore any collisions that occur in the Bot State API. This will allow the last reply to set the conversation state.
 
-~~~~
+```cs
 var builder = new ContainerBuilder();
 builder
     .Register(c => new CachingBotDataStore(c.Resolve<ConnectorStore>(), CachingBotDataStoreConsistencyPolicy.LastWriteWins))
@@ -227,7 +227,7 @@ builder
     .AsSelf()
     .InstancePerLifetimeScope();
 builder.Update(Conversation.Container);
-~~~~
+```
 
 ### Is there a limit on the amount of data I can store using the State API?
 

@@ -18,7 +18,7 @@ Intelligent bots respond as if they can see the world as people see it. They dis
 
 ## Language understanding
 
-The interaction between users and bots is mostly free-form, so buts need to understand language naturally and contextually. The Cognitive Service Language APIs provide powerful language models to determine what users want, to identify concepts and entities in a given sentence, and ultimately to allow your bots to respond with the appropriate action. The five APIs support several text analytics capabilities, such as spell checking, sentiment detection, language modeling, and extraction of accurate and rich insights from text. 
+The interaction between users and bots is mostly free-form, so bots need to understand language naturally and contextually. The Cognitive Service Language APIs provide powerful language models to determine what users want, to identify concepts and entities in a given sentence, and ultimately to allow your bots to respond with the appropriate action. The five APIs support several text analytics capabilities, such as spell checking, sentiment detection, language modeling, and extraction of accurate and rich insights from text. 
 
 Cognitive Services provides five APIs for language understanding:
 

@@ -6,7 +6,7 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
+ms.date: 05/11/2017
 ms.reviewer: 
 ---
 
@@ -41,7 +41,7 @@ The process begins when the user sends a message to your bot via Bot Framework s
 When the bot receives a message from the user (step 2), it adds the message to the Azure Storage queue (step 3), and notifies the user (via the Bot Framework servers) that the message has been queued (step 4). 
 The message is encapsulated within an object that contains information that will eventually be needed to send the proactive message to the user on the correct channel. 
 
-This code snippet uses C# to receive a message from the user, add the message to the Azure Storage queue, and notify the user that the message has been queued. The [ResumptionCookie][resumptionCookie] object contains the information that is needed to respond to the user on the correct channel.
+This code snippet uses C# to receive a message from the user, add the message to the Azure Storage queue, and notify the user that the message has been queued. The [RelatesTo][RelatesTo] property of the queue message is set to a [ConversationReference][ConversationReference] object, which contains the information that is needed to respond to the user on the correct channel.
 
 [!code-csharp[Receive message](~/includes/code/azure-bot-service-template-proactive.cs#receiveMessage)]
 
@@ -116,6 +116,8 @@ The Proactive template provides a good foundation that you can build upon and cu
 
 [directLine]: https://docs.botframework.com/en-us/restapi/directline3/#navtitle
 
-[resumptionCookie]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/dc/d2b/class_microsoft_1_1_bot_1_1_builder_1_1_dialogs_1_1_resumption_cookie.html
-
 [sessionMessageAddress]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iaddress.html
+
+[RelatesTo]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity.relatesto?view=botbuilder-3.8#Microsoft_Bot_Connector_Activity_RelatesTo
+
+[ConversationReference]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.conversationreference?view=botbuilder-3.8

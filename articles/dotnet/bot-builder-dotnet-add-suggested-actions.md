@@ -6,7 +6,7 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
+ms.date: 05/12/2017
 ms.reviewer: 
 ---
 
@@ -14,6 +14,7 @@ ms.reviewer:
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-add-suggested-actions.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-send-suggested-actions.md)
+> - [REST](../rest-api/bot-framework-rest-connector-add-suggested-actions.md)
 
 [!include[Introduction to suggested actions](~/includes/snippet-suggested-actions-intro.md)] 
 

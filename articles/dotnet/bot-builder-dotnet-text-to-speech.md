@@ -6,7 +6,7 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
+ms.date: 05/12/2017
 ms.reviewer: 
 ---
 
@@ -14,6 +14,7 @@ ms.reviewer:
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-text-to-speech.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-text-to-speech.md)
+> - [REST](../rest-api/bot-framework-rest-connector-text-to-speech.md)
 
 If you are building a bot for a speech-enabled channel such as Cortana, you can construct messages that specify the text to be spoken by your bot. You can also attempt to influence the state of the client's microphone by specifying an [input hint](~/dotnet/bot-builder-dotnet-add-input-hints.md) to indicate whether your bot is accepting, expecting, or ignoring user input.
 
@@ -49,14 +50,14 @@ When you send a message on a speech-enabled channel, you can attempt to influenc
 
 ## Sample code 
 
-For a complete sample that shows how to create a speech-enabled bot using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Roller sample</a> in GitHub.
+For a complete sample that shows how to create a speech-enabled bot using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/demo-RollerSkill" target="_blank">Roller Skill sample</a> in GitHub.
 
 ## Additional resources
 
 - [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
 - [Add input hints to messages](~/dotnet/bot-builder-dotnet-add-input-hints.md)
 - <a href="https://msdn.microsoft.com/en-us/library/hh378377(v=office.14).aspx" target="_blank">Speech Synthesis Markup Language (SSML)</a>
-- <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Roller sample (GitHub)</a>
+- <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/demo-RollerSkill" target="_blank">Roller Skill sample (GitHub)</a>
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.8" target="_blank">Activity class</a>
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.imessageactivity?view=botbuilder-3.8" target="_blank">IMessageActivity interface</a>
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.internals.dialogcontext?view=botbuilder-3.8" target="_blank">DialogContext class</a>

@@ -35,7 +35,8 @@
             "author": "RobStand",
             "ms.prod": "bot-framework",
             "searchScope": ["Bot Framework"],
-            "ms.date": "05/10/2017"
+            "ms.date": "05/10/2017",
+            "titleSuffix": "Bot Framework"
         },
         "fileMetadata": {
             "ms.author": {

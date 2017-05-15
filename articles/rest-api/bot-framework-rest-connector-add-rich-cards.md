@@ -26,10 +26,11 @@ Bots and channels typically exchange text strings but some channels also support
 
 A rich card comprises a title, description, link, and images. 
 A message can contain multiple rich cards, displayed in either list format or carousel format.
-The Bot Framework currently supports seven types of rich cards: 
+The Bot Framework currently supports eight types of rich cards: 
 
 | Card type | Description |
 |----|----|
+| <a href="http://adaptivecards.io" target="_blank">AdaptiveCard</a> | A card that can contain any combination of text, speech, images, buttons, and input fields.  |
 | [AnimationCard][animationCard] | A card that can play animated GIFs or short videos. |
 | [AudioCard][audioCard] | A card that can play an audio file. |
 | [HeroCard][heroCard] | A card that typically contains a single large image, one or more buttons, and text. |
@@ -53,6 +54,12 @@ To process events within rich cards, use [CardAction][CardAction] objects to spe
 | title | string | title of the button |
 | image | string | image URL for the button |
 | value | string | value needed to perform the specified type of action |
+
+> [!NOTE]
+> Buttons within Adaptive Cards are not created using `CardAction` objects, 
+> but instead using the schema that is defined by <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a>. 
+> See [Add an Adaptive Card to a message](#adaptive-card) for an example that shows how to 
+> add buttons to an Adaptive Card.
 
 This table lists the valid values for the `type` property of a [CardAction][CardAction] object and describes the expected contents of the `value` property for each type:
 
@@ -101,8 +108,8 @@ Content-Type: application/json
     "conversation": {
         "id": "abcd1234",
         "name": "conversation's name"
-   },
-   "recipient": {
+    },
+    "recipient": {
         "id": "1234abcd",
         "name": "recipient's name"
     },
@@ -143,12 +150,120 @@ Content-Type: application/json
 }
 ```
 
+##<a id="adaptive-card"></a> Add an Adaptive card to a message
+
+The Adaptive Card can can contain any combination of text, speech, images, buttons, and input fields. 
+Adaptive Cards are created using the JSON format specified in <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a>, which gives you full control over card content and format. 
+
+Leverage the information within the <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a> site to understand Adaptive Card schema, explore Adaptive Card elements, and see JSON samples that can be used to create cards of varying composition and complexity. Additionally, you can use the Interactive Visualizer to design Adaptive Card payloads and preview card output.
+
+This example shows a request that sends a message containing a single Adaptive Card for a calendar reminder.
+
+```http
+POST https://api.botframework.com/v3/conversations/abcd1234/activities/5d5cdc723 
+Authorization: Bearer ACCESS_TOKEN
+Content-Type: application/json
+```
+
+```json
+{
+    "type": "message",
+    "from": {
+        "id": "12345678",
+        "name": "sender's name"
+    },
+    "conversation": {
+        "id": "abcd1234",
+        "name": "conversation's name"
+    },
+    "recipient": {
+        "id": "1234abcd",
+        "name": "recipient's name"
+    },
+    "attachments": [
+        {
+            "contentType": "application/vnd.microsoft.card.adaptive",
+            "content": {
+                "type": "AdaptiveCard",
+                "body": [
+                    {
+                        "type": "TextBlock",
+                        "text": "Adaptive Card design session",
+                        "size": "large",
+                        "weight": "bolder"
+                    },
+                    {
+                        "type": "TextBlock",
+                        "text": "Conf Room 112/3377 (10)"
+                    },
+                    {
+                        "type": "TextBlock",
+                        "text": "12:30 PM - 1:30 PM"
+                    },
+                    {
+                        "type": "TextBlock",
+                        "text": "Snooze for"
+                    },
+                    {
+                        "type": "Input.ChoiceSet",
+                        "id": "snooze",
+                        "style": "compact",
+                        "choices": [
+                            {
+                                "title": "5 minutes",
+                                "value": "5",
+                                "isSelected": true
+                            },
+                            {
+                                "title": "15 minutes",
+                                "value": "15"
+                            },
+                            {
+                                "title": "30 minutes",
+                                "value": "30"
+                            }
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "type": "Action.Http",
+                        "method": "POST",
+                        "url": "http://foo.com",
+                        "title": "Snooze"
+                    },
+                    {
+                        "type": "Action.Http",
+                        "method": "POST",
+                        "url": "http://foo.com",
+                        "title": "I'll be late"
+                    },
+                    {
+                        "type": "Action.Http",
+                        "method": "POST",
+                        "url": "http://foo.com",
+                        "title": "Dismiss"
+                    }
+                ]
+            }
+        }
+    ],
+    "replyToId": "5d5cdc723"
+}
+```
+
+The resulting card contains three blocks of text, an input field (choice list), and three buttons:
+
+![Adaptive Card calendar reminder](~/media/adaptive-card-reminder.png)
+
+
 ## Additional resources
 
 - [Create messages](~/rest-api/bot-framework-rest-connector-create-messages.md)
 - [Send and receive messages](~/rest-api/bot-framework-rest-connector-send-and-receive-messages.md)
 - [Add media attachments to messages](~/rest-api/bot-framework-rest-connector-add-media-attachments.md)
 - [Channel Inspector][ChannelInspector]
+- <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a>
 
 [ChannelInspector]: https://docs.botframework.com/en-us/channel-inspector/channels/Skype/#navtitle
 

@@ -2,14 +2,17 @@
 public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> argument)
 {
     var message = await argument;
+
+    // Create a queue Message
     var queueMessage = new Message
     {
-        ResumptionCookie = new ResumptionCookie(message),
+        RelatesTo = context.Activity.ToConversationReference(),
         Text = message.Text
     };
-    
+
+    // Write the queue Message to the queue
     // AddMessageToQueue() is a utility method you can find in the template
-    AddMessageToQueue(JsonConvert.SerializeObject(queueMessage));
+    await AddMessageToQueue(JsonConvert.SerializeObject(queueMessage));
     await context.PostAsync($"{this.count++}: You said {queueMessage.Text}. Message added to the queue.");
     context.Wait(MessageReceivedAsync);
 }
@@ -48,19 +51,14 @@ switch (activity.GetActivityType())
 {
     case ActivityTypes.Trigger:
         // handle proactive Message from function
-        var jactivity = JsonConvert.DeserializeObject<JObject>(jsonContent);
-        var jobjectvalue = JsonConvert.DeserializeObject<JObject>(jactivity.GetValue("value").ToString());
-        var message = JsonConvert.DeserializeObject<Message>(jobjectvalue.GetValue("Message").ToString());
-        var messageactivity = (Activity)message.ResumptionCookie.GetMessage();
-            
-        using (var scope = DialogModule.BeginLifetimeScope(Conversation.Container, messageactivity))
-        {
-            var client = scope.Resolve<IConnectorClient>();
-            var reply = messageactivity.CreateReply();
-            reply.Text = $"This is coming back from the trigger! {message.Text}";
-            await client.Conversations.ReplyToActivityAsync(reply);
-        }
+        IEventActivity triggerEvent = activity;
+        var message = JsonConvert.DeserializeObject<Message>(((JObject) triggerEvent.Value).GetValue("Message").ToString());
+        var messageactivity = (Activity)message.RelatesTo.GetPostToBotMessage();
         
+        client = new ConnectorClient(new Uri(messageactivity.ServiceUrl));
+        var triggerReply = messageactivity.CreateReply();
+        triggerReply.Text = $"This is coming back from the trigger! {message.Text}";
+        await client.Conversations.ReplyToActivityAsync(triggerReply);
         break;
     default:
         break;

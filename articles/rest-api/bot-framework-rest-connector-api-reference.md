@@ -6,7 +6,7 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
+ms.date: 05/12/2017
 ms.reviewer: 
 ---
 
@@ -277,14 +277,15 @@ Defines a message that is exchanged between bot and user.<br/><br/>
 | **conversation** | [ConversationAccount](#conversationaccount-object) | A **ConversationAccount** object that defines the conversation to which the activity belongs. |
 | **entities** | object[] | Array of objects that represents the entities that were mentioned in the message. Objects in this array may be any <a href="http://schema.org/" target="_blank">Schema.org</a> object. For example, the array may include [Mention](#mention-object) objects that identify someone who was mentioned in the conversation and [Place](#place-object) objects that identify a place that was mentioned in the conversation. |
 | **from** | [ChannelAccount](#channelaccount-object) | A **ChannelAccount** object that specifies the sender of the message. |
-| **id** | string | ID that uniquely identifies the activity on the channel. | 
-| **inputHint** | string | Value that indicates whether your bot is accepting, expecting, or ignoring user input after the message is delivered to the client. |
-| **membersAdded** | [ChannelAccount](#channelaccount-object)[] | Array of **ChannelAccount** objects that represents the list of users that joined the conversation. Present only if activity **type** is "conversationUpdate" and users joined the conversation. | 
-| **membersRemoved** | [ChannelAccount](#channelaccount-object)[] | Array of **ChannelAccount** objects that represents the list of users that left the conversation. Present only if activity **type** is "conversationUpdate" and users left the conversation. | 
 | **historyDisclosed** | boolean | Flag that indicates whether or not history is disclosed. Default value is **false**. |
+| **id** | string | ID that uniquely identifies the activity on the channel. | 
+| **inputHint** | string | Value that indicates whether your bot is accepting, expecting, or ignoring user input after the message is delivered to the client. One of these values: **acceptingInput**, **expectingInput**, **ignoringInput**. |
 | **locale** | string | Locale of the language that should be used to display text within the message, in the format `<language>-<country>`. The channel uses this property to indicate the user's language, so that your bot may specify display strings in that language. Default value is **en-US**. |
 | **localTimestamp** | string | Date and time that the message was sent in the local time zone, expressed in <a href="https://en.wikipedia.org/wiki/ISO_8601" target="_blank">ISO-8601</a> format. |
+| **membersAdded** | [ChannelAccount](#channelaccount-object)[] | Array of **ChannelAccount** objects that represents the list of users that joined the conversation. Present only if activity **type** is "conversationUpdate" and users joined the conversation. | 
+| **membersRemoved** | [ChannelAccount](#channelaccount-object)[] | Array of **ChannelAccount** objects that represents the list of users that left the conversation. Present only if activity **type** is "conversationUpdate" and users left the conversation. | 
 | **recipient** | [ChannelAccount](#channelaccount-object) | A **ChannelAccount** object that specifies the recipient of the message. |
+| **relatesTo** | [ConversationReference](#conversationreference-object) | A **ConversationReference** object that defines a particular point in a conversation. |
 | **replyToId** | string | The ID of the message to which this message replies. To reply to a message that the user sent, set this property to the ID of the user's message. Not all channels support threaded replies. In these cases, the channel will ignore this property and use time ordered semantics (timestamp) to append the message to the converasation. | 
 | **serviceUrl** | string | URL that specifies the channel's service endpoint. Set by the channel. | 
 | **speak** | string | Text to be spoken by your bot on a speech-enabled channel. To control various characteristics of your bot's speech such as voice, rate, volume, pronunciation, and pitch, specify this property in <a href="https://msdn.microsoft.com/en-us/library/hh378377(v=office.14).aspx" target="_blank">Speech Synthesis Markup Language (SSML)</a> format. |
@@ -316,7 +317,7 @@ Defines additional information to include in the message. An attachment may be a
 
 | Property | Type | Description |
 |----|----|----|
-| **contentType** | string | The media type of the content in the attachment. For media files, set this property to known media types such as **image/png**, **audio/wav**, and **video/mp4**. For rich cards, set this property to one of these vendor-specific types:<ul><li>**application/vnd.microsoft.card.animation**: A rich card that plays animation. Set the **content** property to an [AnimationCard](#animationcard-object) object.</li><li>**application/vnd.microsoft.card.audio**: A rich card that plays audio files. Set the **content** property to an [AudioCard](#audiocard-object) object.</li><li>**application/vnd.microsoft.card.video**: A rich card that plays videos. Set the **content** property to a [VideoCard](#videocard-object) object.</li><li>**application/vnd.microsoft.card.hero**: A Hero card. Set the **content** property to a [HeroCard](#herocard-object) object.</li><li>**application/vnd.microsoft.card.thumbnail**: A Thumbnail card. Set the **content** property to a [ThumbnailCard](#thumbnailcard-object) object.</li><li>**application/vnd.microsoft.com.card.receipt**: A Receipt card. Set the **content** property to a [ReceiptCard](#receiptcard-object) object.</li><li>**application/vnd.microsoft.com.card.signin**: A user Sign In card. Set the **content** property to a [SignInCard](#signincard-object) object.</li></ul> |
+| **contentType** | string | The media type of the content in the attachment. For media files, set this property to known media types such as **image/png**, **audio/wav**, and **video/mp4**. For rich cards, set this property to one of these vendor-specific types:<ul><li>**application/vnd.microsoft.card.adaptive**: A rich card that can contain any combination of text, speech, images, buttons, and input fields. Set the **content** property to an <a href="http://adaptivecards.io/documentation/#create-cardschema" target="_blank">AdaptiveCard</a> object.</li><li>**application/vnd.microsoft.card.animation**: A rich card that plays animation. Set the **content** property to an [AnimationCard](#animationcard-object) object.</li><li>**application/vnd.microsoft.card.audio**: A rich card that plays audio files. Set the **content** property to an [AudioCard](#audiocard-object) object.</li><li>**application/vnd.microsoft.card.video**: A rich card that plays videos. Set the **content** property to a [VideoCard](#videocard-object) object.</li><li>**application/vnd.microsoft.card.hero**: A Hero card. Set the **content** property to a [HeroCard](#herocard-object) object.</li><li>**application/vnd.microsoft.card.thumbnail**: A Thumbnail card. Set the **content** property to a [ThumbnailCard](#thumbnailcard-object) object.</li><li>**application/vnd.microsoft.com.card.receipt**: A Receipt card. Set the **content** property to a [ReceiptCard](#receiptcard-object) object.</li><li>**application/vnd.microsoft.com.card.signin**: A user Sign In card. Set the **content** property to a [SignInCard](#signincard-object) object.</li></ul> |
 | **contentUrl** | string | URL for the content of the attachment. For example, if the attachment is an image, set **contentUrl** to the URL that represents the location of the image. Supported protocols are: HTTP, HTTPS, File, and Data. |
 | **content** | object | The content of the attachment. If the attachment is a rich card, set this property to the rich card object. This property and the **contentUrl** property are mutually exclusive. |
 | **name** | string | Name of the attachment. |
@@ -419,6 +420,18 @@ Defines a conversation in a channel.<br/><br/>
 | **id** | string | The ID that identifies the conversation. The ID is unique per channel. If the channel starts the conversion, it sets this ID; otherwise, the bot sets this property to the ID that it gets back in the response when it starts the conversation (see Starting a conversation). |
 | **isGroup** | boolean | Flag to indicate whether or not this is a group conversation. Set to **true** if this is a group conversation; otherwise, **false**. The default is **false**. |
 | **name** | string | A display name that can be used to identify the conversation. |
+
+### ConversationReference object
+Defines a particular point in a conversation.<br/><br/>
+
+| Property | Type | Description |
+|----|----|----|
+| **activityId** | string | ID that uniquely identifies the activity that this object references. | 
+| **bot** | [ChannelAccount](#channelaccount-object) | A **ChannelAccount** object that identifies the bot in the conversation that this object references. |
+| **channelId** | string | An ID that uniquely identifies the channel in the conversation that this object references. | 
+| **conversation** | [ConversationAccount](#conversationaccount-object) | A **ConversationAccount** object that defines the conversation that this object references. |
+| **serviceUrl** | string | URL that specifies the channel's service endpoint in the conversation that this object references. | 
+| **user** | [ChannelAccount](#channelaccount-object) | A **ChannelAccount** object that identifies the user in the conversation that this object references. |
 
 ### Error object
 Defines an error.<br/><br/>
