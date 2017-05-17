@@ -39,9 +39,10 @@ Next, log in to the <a href="http://portal.azure.com/" target="_blank">Azure Por
 
 ![Create an Azure web app](~/media/azure-create-webapp.png)
 
+
 ## Step 3: Set up continuous deployment from your GitHub repository to Azure
 
-Specify GitHub as the **Deployment Source** for your web app.
+Specify GitHub as the **Deployment Option** for your web app.
 When you are asked to authorize Azure access to your GitHub repo, choose the branch from which to deploy.
 
 ![Set up continuous deployment to Azure from your GitHub repo](~/media/azure-deployment.png)

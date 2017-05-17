@@ -74,6 +74,7 @@
 #### [Build a Cortana skill](~/nodejs/bot-builder-nodejs-cortana-skill.md)
 #### [Conduct Skype calls](~/nodejs/bot-builder-nodejs-conduct-audio-calls.md)
 ### [Save user data](~/nodejs/bot-builder-nodejs-save-user-data.md)
+### [Listen for messages](~/nodejs/bot-builder-nodejs-global-handlers.md)
 ### [Recognize user intent](~/nodejs/bot-builder-nodejs-recognize-intent.md)
 ### [Handle user and conversation events](~/nodejs/bot-builder-nodejs-handle-conversation-events.md)
 ### [Support localization](~/nodejs/bot-builder-nodejs-localization.md)
