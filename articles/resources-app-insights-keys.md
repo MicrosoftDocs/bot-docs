@@ -6,7 +6,7 @@ ms.author: v-ducvo
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
+ms.date: 05/17/2017
 ms.reviewer: 
 ---
 
