@@ -29,9 +29,9 @@ You can create a bot with any programming language by using the Bot Connector se
 
 To learn more about building bots using the Bot Connector service and the Bot State service, see [Key concepts](~/rest-api/bot-framework-rest-connector-concepts.md).
 
-## Connect your bot to a client
+## Build a client
 
 You can enable your own client application to communicate with your bot by using the Direct Line API. 
-The Direct Line API implements an authentication mechanism that uses standard secret/token patterns and provides a stable schema, even if your bot changes its protocol version. Your client can use the Direct Line API to send messages to your bot via an `HTTP POST` request. Your bot can use the Direct Line API to receive messages from a client either via `WebSocket` stream or by polling using `HTTP GET`. To learn more about connecting a client to your bot using the Direct Line API, see [Key concepts](~/rest-api/bot-framework-rest-direct-line-concepts.md). 
+The Direct Line API implements an authentication mechanism that uses standard secret/token patterns and provides a stable schema, even if your bot changes its protocol version. For details about using the Direct Line API to enable communication between a client and your bot, see [Key concepts](~/rest-api/bot-framework-rest-direct-line-concepts.md). 
 
 
