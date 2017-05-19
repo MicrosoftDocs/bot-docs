@@ -6,7 +6,7 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: get-started-article
 ms.prod: bot-framework
-ms.date:
+ms.date: 05/19/2017
 ms.reviewer: 
 ---
 # Create a bot with the Bot Builder SDK for .NET
@@ -65,15 +65,13 @@ take a quick look at some of the code that the Bot Application template provided
 
 ## Explore the code
 
-The `Post` method within **Controllers\MessagesController.cs** represents the
-core functionality of your bot.
+First, the `Post` method within **Controllers\MessagesController.cs** receives the message from the user and invokes the root dialog.
 
-[!code-csharp[echobot code sample C#](~/includes/code/dotnet-getstarted.cs#echobot)]
+[!code-csharp[MessagesController code sample C#](~/includes/code/dotnet-getstarted.cs#MessagesController)]
 
-This method receives a message from the user and creates a reply
-(by using the `CreateReply` function) that echos back the user's message,
-prefixed with the text 'You sent' and ending in the text 'which was *##* characters', where *##* represents the number of characters in the user's message.
-The `[BotAuthentication]` decoration on the method validates your Bot Connector credentials over HTTPS.
+The root dialog processes the message and generates a response. The `MessageReceivedAsync` method within **Dialogs\RootDialog.cs** sends a reply that echos back the user's message, prefixed with the text 'You sent' and ending in the text 'which was *##* characters', where *##* represents the number of characters in the user's message.
+
+[!code-csharp[RootDialog code sample C#](~/includes/code/dotnet-getstarted.cs#RootDialog)]
 
 ## Test your bot
 
