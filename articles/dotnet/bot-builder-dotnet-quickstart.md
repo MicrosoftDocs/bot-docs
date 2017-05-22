@@ -104,7 +104,7 @@ Next, start the emulator and then connect to your bot in the emulator:
 2. Click **Connect**. You won't need to specify **Microsoft App ID** and **Microsoft App Password**. You can leave these fields blank for now. You'll get this information later when you register your bot.
 
 > [!TIP]
-> In the example shown above, the application is running on port number **3978**, so the emulator address would be set to: `http://localhost:3978/api/messages`.
+> In the example shown above, the application is running on port number **3979**, so the emulator address would be set to: `http://localhost:3979/api/messages`.
 
 ### Test your bot
 
