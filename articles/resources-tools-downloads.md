@@ -1,19 +1,20 @@
 ---
-title: Download and use the Bot Framework SDKs and tools | Microsoft Docs
+title: Download the Bot Builder SDK and tools | Microsoft Docs
 description: Get the Bot Builder SDKs and tools for developing bots with the Bot Framework.
 author: RobStand
 ms.author: rstand
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
+ms.date: 05/22/2017
 ms.reviewer:
 ---
 # Bot Framework SDKs and tools
 
-Get started building bots with the Bot Builder SDK. With the Bot Builder SDK, you can build bots using .NET or Node.js.
+The Bot Builder SDKs provide libraries, samples, and tools to help you build and debug bots. To get started building bots, download the SDK for the platform you are using, either C# on .NET or Node.js. You can download the SDKs as packages or you can get the source code.
 
 ## Get the Bot Builder SDK for .NET
+The Bot Builder SDK for .NET leverages C# to provide a familiar way for .NET developers to write bots. It is a powerful framework for constructing bots that can handle both free-form interactions and more guided conversations where the user selects from possible values.
 
 The Bot Builder SDK for .NET is available as a [NuGet package](https://www.nuget.org/packages/Microsoft.Bot.Builder/).
 To install the SDK in a Visual Studio project, complete the following steps:
@@ -31,6 +32,7 @@ Download Visual Studio project templates to accelerate bot development.
 * [Cortana skill template for Visual Studio][cortana-template] for developing Cortana skills with C#
 
 ## Bot Builder SDK for Node.js
+The Bot Builder SDK for Node.js provides a familiar way for Node.js developers to write bots. You can use it to build a wide variety of conversational user interfaces, from simple prompts to free-form conversations. The Bot Builder SDK for Node.js uses restify, a popular framework for building web services, to create the bot's web server. The SDK is also compatible with Express.
 
 The Bot Builder SDK for Node.js is available as an npm package. 
 To install the Bot Builder for Node.js SDK and its dependencies, first create a folder for your bot, navigate to it, and run the following **npm** command:
