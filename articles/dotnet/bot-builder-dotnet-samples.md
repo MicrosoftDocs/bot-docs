@@ -33,7 +33,7 @@ Sample | Description
 [Receive Attachment](https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-ReceiveAttachment) | A sample bot that receives attachments sent by the user and downloads them. 
 [Create New Conversation](https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-CreateNewConversation)  | A sample bot that starts a new conversation using a previously stored user address.
 [Get Members of a Conversation](https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-GetConversationMembers) | A sample bot that retrieves the conversation's members list and detects when it changes. 
-[Direct Line](https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-DirectLine)] | A sample bot and a custom client that communicate with each other using the Direct Line API. 
+[Direct Line](https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-DirectLine) | A sample bot and a custom client that communicate with each other using the Direct Line API. 
 [Direct Line (WebSockets)](https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-DirectLineWebSockets) | A sample bot and a custom client that communicate with each other using the Direct Line API + WebSockets. 
 [Multi Dialogs](https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-MultiDialogs) | A sample bot that shows various kinds of dialogs.
 [State API](https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-State) | A stateless sample bot that tracks the context of a conversation.

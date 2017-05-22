@@ -24,6 +24,8 @@ If you don't have a Twilio account, [create a new account](https://www.twilio.co
 
 ![Create app](~/media/channels/twi-StepTwiml.png)
 
+ Under Messaging, the Request URL should be **`https://sms.botframework.com/api/sms`**.
+
 ## Select or add a phone number
 
 [Select or add a phone number](https://www.twilio.com/user/account/phone-numbers/incoming). Click  the number to add it to the TwiML application you created.
