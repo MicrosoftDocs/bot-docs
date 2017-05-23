@@ -25,10 +25,10 @@ ms.reviewer:
 
 To add suggested actions to a message, set the `suggestedActions` property of the [Activity][Activity] to specify the list of [CardAction][CardAction] objects that represent the buttons to be presented to the user. 
 
-The following request sends a message that presents three suggested actions to the user.
+The following request sends a message that presents three suggested actions to the user, where **[baseURI]** should be replaced with the value of the `serviceUrl` property in a message that the bot previously received from the user.
 
 ```http
-POST https://api.botframework.com/v3/conversations/abcd1234/activities/5d5cdc723
+POST [baseURI]/v3/conversations/abcd1234/activities/5d5cdc723
 Authorization: Bearer ACCESS_TOKEN
 Content-Type: application/json
 ```

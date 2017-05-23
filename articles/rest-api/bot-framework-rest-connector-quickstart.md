@@ -100,10 +100,12 @@ When your bot's endpoint receives a `POST` request that represents a message fro
 3. Set the **recipient** property to the contents of the **from** property in the user's message.
 4. Set the **text** and **attachments** properties as appropriate.
 
-To send the response, `POST` your [Activity][Activity] object to `https://api.botframework.com/v3/conversations/{conversationId}/activities/{activityId}`, as shown in the following example. The body of this request is an [Activity][Activity] object that prompts the user to select an available appointment time.
+Use the `serviceUrl` property in the incoming request to [identify the base URI](~/rest-api/bot-framework-rest-connector-api-reference.md#base-uri) that your bot should use to issue its response. 
+
+To send the response, `POST` your [Activity][Activity] object to `[baseURI]/v3/conversations/{conversationId}/activities/{activityId}`, as shown in the following example. The body of this request is an [Activity][Activity] object that prompts the user to select an available appointment time.
 
 ```http
-POST https://api.botframework.com/v3/conversations/abcd1234/activities/bf3cc9a2f5de... 
+POST [baseURI]/v3/conversations/abcd1234/activities/bf3cc9a2f5de... 
 Authorization: Bearer eyJhbGciOiJIUzI1Ni...
 Content-Type: application/json
 ```
@@ -134,7 +136,7 @@ Content-Type: application/json
 To send another message that enables a user to select an available appointment time by clicking a button, `POST` another request to the same endpoint:
 
 ```http
-POST https://api.botframework.com/v3/conversations/abcd1234/activities/bf3cc9a2f5de... 
+POST [baseURI]/v3/conversations/abcd1234/activities/bf3cc9a2f5de... 
 Authorization: Bearer eyJhbGciOiJIUzI1Ni...
 Content-Type: application/json
 ```

@@ -26,10 +26,10 @@ Bots and channels typically exchange text strings but some channels also support
 
 To add a media attachment to a message, create an [Attachment][Attachment] object, set the `name` property, set the `contentUrl` property to the URL of the media file, and set the `contentType` property to the appropriate media type (e.g., **image/png**, **audio/wav**, **video/mp4**). Then within the [Activity][Activity] object that represents your message, specify your [Attachment][Attachment] object within the `attachments` array. 
 
-This example shows a request that sends a message containing text and a single image attachment.
+This example shows a request that sends a message containing text and a single image attachment, where **[baseURI]** should be replaced with the value of the `serviceUrl` property in a message that the bot previously received from the user.
 
 ```http
-POST https://api.botframework.com/v3/conversations/abcd1234/activities/5d5cdc723
+POST [baseURI]/v3/conversations/abcd1234/activities/5d5cdc723
 Authorization: Bearer ACCESS_TOKEN
 Content-Type: application/json
 ```
