@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Framework Name="botbuilder-rtmcalling-1.0.4-alpha">
+  <Namespace Name="Microsoft.Bot.Builder.RealTimeMediaCalling.Events">
+    <Type Name="Microsoft.Bot.Builder.RealTimeMediaCalling.Events.AnswerAppHostedMediaOutcomeEvent" Id="T:Microsoft.Bot.Builder.RealTimeMediaCalling.Events.AnswerAppHostedMediaOutcomeEvent">
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.Events.AnswerAppHostedMediaOutcomeEvent.#ctor(Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationResult,Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RealTimeMediaWorkflow,Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.AnswerAppHostedMediaOutcome)" />
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.Events.AnswerAppHostedMediaOutcomeEvent.AnswerAppHostedMediaOutcome" />
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.Events.AnswerAppHostedMediaOutcomeEvent.RealTimeMediaWorkflow" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.RealTimeMediaCalling.Events.RealTimeMediaIncomingCallEvent" Id="T:Microsoft.Bot.Builder.RealTimeMediaCalling.Events.RealTimeMediaIncomingCallEvent">
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.Events.RealTimeMediaIncomingCallEvent.#ctor(Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation,Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RealTimeMediaWorkflow)" />
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.Events.RealTimeMediaIncomingCallEvent.RealTimeMediaWorkflow" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.RealTimeMediaCalling.Events.RealTimeMediaWorkflowValidationOutcomeEvent" Id="T:Microsoft.Bot.Builder.RealTimeMediaCalling.Events.RealTimeMediaWorkflowValidationOutcomeEvent">
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.Events.RealTimeMediaWorkflowValidationOutcomeEvent.#ctor(Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationResult,Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RealTimeMediaWorkflow,Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.WorkflowValidationOutcome)" />
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.Events.RealTimeMediaWorkflowValidationOutcomeEvent.RealTimeMediaWorkflow" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Bot.Builder.RealTimeMediaCalling">
+    <Type Name="Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCall" Id="T:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCall">
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCall.CallService" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService" Id="T:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService">
+      <Member Id="E:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService.OnAnswerAppHostedMediaCompleted" />
+      <Member Id="E:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService.OnCallCleanup" />
+      <Member Id="E:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService.OnCallStateChangeNotification" />
+      <Member Id="E:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService.OnIncomingCallReceived" />
+      <Member Id="E:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService.OnRosterUpdateNotification" />
+      <Member Id="E:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService.OnWorkflowValidationFailed" />
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService.EndCall" />
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService.Subscribe(Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.VideoSubscription)" />
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService.CorrelationId" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallServiceSettings" Id="T:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallServiceSettings">
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallServiceSettings.CallbackUrl" />
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallServiceSettings.NotificationUrl" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeCallProcessor" Id="T:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeCallProcessor">
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeCallProcessor.#ctor(Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallServiceSettings,System.Func{Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService,Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCall})" />
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeCallProcessor.ProcessCallbackAsync(System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeCallProcessor.ProcessIncomingCallAsync(System.String,System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeCallProcessor.ProcessNotificationAsync(System.String)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeMediaCalling" Id="T:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeMediaCalling">
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeMediaCalling.RegisterRealTimeMediaCallingBot(System.Func{Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService,Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCall},Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallServiceSettings)" />
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeMediaCalling.SendAsync(System.Net.Http.HttpRequestMessage,Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeMediaCallRequestType)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeMediaCallRequestType" Id="T:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeMediaCallRequestType">
+      <Member Id="F:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeMediaCallRequestType.CallingEvent" />
+      <Member Id="F:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeMediaCallRequestType.IncomingCall" />
+      <Member Id="F:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeMediaCallRequestType.NotificationEvent" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseResult" Id="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseResult">
+      <Member Id="F:Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseResult.Content" />
+      <Member Id="F:Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseResult.ResponseType" />
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseResult.#ctor(Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseType,System.String)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseType" Id="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseType">
+      <Member Id="F:Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseType.Accepted" />
+      <Member Id="F:Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseType.BadRequest" />
+      <Member Id="F:Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseType.NotFound" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts">
+    <Type Name="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.AnswerAppHostedMedia" Id="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.AnswerAppHostedMedia">
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.AnswerAppHostedMedia.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.AnswerAppHostedMedia.Validate" />
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.AnswerAppHostedMedia.MediaConfiguration" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.AnswerAppHostedMediaOutcome" Id="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.AnswerAppHostedMediaOutcome">
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.AnswerAppHostedMediaOutcome.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.CallStateChangeNotification" Id="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.CallStateChangeNotification">
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.CallStateChangeNotification.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.CallStateChangeNotification.CurrentState" />
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.CallStateChangeNotification.StateChangeCode" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole" Id="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole">
+      <Member Id="F:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole.Attendee" />
+      <Member Id="F:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole.None" />
+      <Member Id="F:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole.Presenter" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationBase" Id="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationBase">
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationBase.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationBase.Validate" />
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationBase.AdditionalData" />
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationBase.Id" />
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationBase.Type" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationResponse" Id="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationResponse">
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationResponse.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationResponse.Validate" />
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationResponse.AppState" />
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationResponse.Links" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationType" Id="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationType">
+      <Member Id="F:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationType.CallStateChange" />
+      <Member Id="F:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationType.RosterUpdate" />
+      <Member Id="F:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationType.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RealTimeMediaValidOutcomes" Id="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RealTimeMediaValidOutcomes">
+      <Member Id="F:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RealTimeMediaValidOutcomes.AnswerAppHostedMediaOutcome" />
+      <Member Id="F:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RealTimeMediaValidOutcomes.VideoSubscriptionOutcome" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RealTimeMediaWorkflow" Id="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RealTimeMediaWorkflow">
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RealTimeMediaWorkflow.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RealTimeMediaWorkflow.Validate(System.Boolean)" />
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RealTimeMediaWorkflow.NotificationSubscriptions" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterParticipant" Id="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterParticipant">
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterParticipant.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterParticipant.Validate" />
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterParticipant.ContentSharingRole" />
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterParticipant.Identity" />
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterParticipant.LegId" />
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterParticipant.MediaStreamDirection" />
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterParticipant.MediaStreamId" />
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterParticipant.MediaType" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterUpdateNotification" Id="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterUpdateNotification">
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterUpdateNotification.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterUpdateNotification.Validate" />
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterUpdateNotification.Participants" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.VideoSubscription" Id="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.VideoSubscription">
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.VideoSubscription.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.VideoSubscription.Validate" />
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.VideoSubscription.ParticipantIdentity" />
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.VideoSubscription.SocketId" />
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.VideoSubscription.VideoModality" />
+      <Member Id="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.VideoSubscription.VideoResolution" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.VideoSubscriptionOutcome" Id="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.VideoSubscriptionOutcome">
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.VideoSubscriptionOutcome.#ctor" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Misc">
+    <Type Name="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Misc.RealTimeMediaSerializer" Id="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Misc.RealTimeMediaSerializer">
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Misc.RealTimeMediaSerializer.DeserializeFromJson``1(System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Misc.RealTimeMediaSerializer.DeserializeFromJToken``1(Newtonsoft.Json.Linq.JToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Misc.RealTimeMediaSerializer.GetSerializerSettings(Newtonsoft.Json.Formatting)" />
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Misc.RealTimeMediaSerializer.SerializeToJson(System.Object,System.Boolean)" />
+      <Member Id="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Misc.RealTimeMediaSerializer.SerializeToJToken(System.Object)" />
+    </Type>
+  </Namespace>
+</Framework>

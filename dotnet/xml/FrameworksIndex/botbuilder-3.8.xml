@@ -2621,10 +2621,14 @@
     <Type Name="Microsoft.Bot.Connector.Attachment" Id="T:Microsoft.Bot.Connector.Attachment">
       <Member Id="M:Microsoft.Bot.Connector.Attachment.#ctor" />
       <Member Id="M:Microsoft.Bot.Connector.Attachment.#ctor(System.String,System.String,System.Object,System.String,System.String)" />
+      <Member Id="M:Microsoft.Bot.Connector.Attachment.Equals(Microsoft.Bot.Connector.Attachment)" />
+      <Member Id="M:Microsoft.Bot.Connector.Attachment.Equals(System.Object)" />
+      <Member Id="M:Microsoft.Bot.Connector.Attachment.GetHashCode" />
       <Member Id="P:Microsoft.Bot.Connector.Attachment.Content" />
       <Member Id="P:Microsoft.Bot.Connector.Attachment.ContentType" />
       <Member Id="P:Microsoft.Bot.Connector.Attachment.ContentUrl" />
       <Member Id="P:Microsoft.Bot.Connector.Attachment.Name" />
+      <Member Id="P:Microsoft.Bot.Connector.Attachment.Properties" />
       <Member Id="P:Microsoft.Bot.Connector.Attachment.ThumbnailUrl" />
     </Type>
     <Type Name="Microsoft.Bot.Connector.AttachmentData" Id="T:Microsoft.Bot.Connector.AttachmentData">
@@ -2777,6 +2781,7 @@
       <Member Id="M:Microsoft.Bot.Connector.ConnectorClient.#ctor(System.Net.Http.DelegatingHandler[])" />
       <Member Id="M:Microsoft.Bot.Connector.ConnectorClient.#ctor(System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])" />
       <Member Id="M:Microsoft.Bot.Connector.ConnectorClient.#ctor(System.Uri,Microsoft.Bot.Connector.MicrosoftAppCredentials,System.Boolean,System.Net.Http.DelegatingHandler[])" />
+      <Member Id="M:Microsoft.Bot.Connector.ConnectorClient.#ctor(System.Uri,Microsoft.Bot.Connector.MicrosoftAppCredentials,System.Net.Http.HttpClientHandler,System.Boolean,System.Net.Http.DelegatingHandler[])" />
       <Member Id="M:Microsoft.Bot.Connector.ConnectorClient.#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])" />
       <Member Id="M:Microsoft.Bot.Connector.ConnectorClient.#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])" />
       <Member Id="M:Microsoft.Bot.Connector.ConnectorClient.#ctor(System.Uri,System.Net.Http.DelegatingHandler[])" />
@@ -2876,6 +2881,10 @@
       <Member Id="M:Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachment(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Connector.AttachmentData)" />
       <Member Id="M:Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachmentAsync(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Connector.AttachmentData,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.CustomRedirectHandler" Id="T:Microsoft.Bot.Connector.CustomRedirectHandler">
+      <Member Id="M:Microsoft.Bot.Connector.CustomRedirectHandler.#ctor" />
+      <Member Id="M:Microsoft.Bot.Connector.CustomRedirectHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)" />
     </Type>
     <Type Name="Microsoft.Bot.Connector.EndOfConversationCodes" Id="T:Microsoft.Bot.Connector.EndOfConversationCodes">
       <Member Id="F:Microsoft.Bot.Connector.EndOfConversationCodes.BotIssuedInvalidMessage" />
