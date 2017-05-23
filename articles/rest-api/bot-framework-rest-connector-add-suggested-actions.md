@@ -25,10 +25,10 @@ ms.reviewer:
 
 To add suggested actions to a message, set the `suggestedActions` property of the [Activity][Activity] to specify the list of [CardAction][CardAction] objects that represent the buttons to be presented to the user. 
 
-The following request sends a message that presents three suggested actions to the user, where **[baseURI]** should be replaced with the value of the `serviceUrl` property in a message that the bot previously received from the user.
+The following request sends a message that presents three suggested actions to the user. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](~/rest-api/bot-framework-rest-connector-api-reference.md#base-uri).
 
 ```http
-POST [baseURI]/v3/conversations/abcd1234/activities/5d5cdc723
+POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/5d5cdc723
 Authorization: Bearer ACCESS_TOKEN
 Content-Type: application/json
 ```

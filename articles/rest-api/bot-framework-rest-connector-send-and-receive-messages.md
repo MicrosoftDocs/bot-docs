@@ -38,15 +38,15 @@ Use the `serviceUrl` property in the incoming activity to [identify the base URI
 To send the reply, issue this request: 
 
 ```http
-POST [baseURI]/v3/conversations/{conversationId}/activities/{activityId}
+POST /v3/conversations/{conversationId}/activities/{activityId}
 ```
 
-In this request URI, replace **[baseURI]** with the value of the `serviceUrl` property in the message that the bot previously received from the user, replace **{conversationId}** with the value of the `conversation` object's `id` property within your (reply) Activity, and replace **{activityId}** with the value of the `replyToId` property within your (reply) Activity. Set the body of the request to the [Activity][Activity] object that you created to represent your reply.
+In this request URI, replace **{conversationId}** with the value of the `conversation` object's `id` property within your (reply) Activity and replace **{activityId}** with the value of the `replyToId` property within your (reply) Activity. Set the body of the request to the [Activity][Activity] object that you created to represent your reply.
 
-This example shows a request that sends a simple text-only reply to a user's message, where **[baseURI]** should be replaced with the value of the `serviceUrl` property in a message that the bot previously received from the user.: 
+The following example shows a request that sends a simple text-only reply to a user's message. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](~/rest-api/bot-framework-rest-connector-api-reference.md#base-uri).
 
 ```http
-POST [baseURI]/v3/conversations/abcd1234/activities/5d5cdc723 
+POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/5d5cdc723 
 Authorization: Bearer ACCESS_TOKEN 
 Content-Type: application/json 
 ```
@@ -78,10 +78,10 @@ A majority of the messages that your bot sends will be in reply to messages that
 To send a message to a conversation that is not a direct reply to any message from the user, issue this request: 
 
 ```http
-POST [baseURI]/v3/conversations/{conversationId}/activities
+POST /v3/conversations/{conversationId}/activities
 ```
 
-In this request URI, replace **[baseURI]** with the value of the `serviceUrl` property in a message that the bot previously received from the user and replace **{conversationId}** with the ID of the conversation. 
+In this request URI, replace **{conversationId}** with the ID of the conversation. 
     
 Set the body of the request to an [Activity][Activity] object that you create to represent your reply.
 
@@ -101,18 +101,18 @@ To start a conversation with a user on a channel, your bot must know its account
 To start a conversation, issue this request: 
 
 ```http
-POST [baseURI]/v3/conversations
+POST /v3/conversations
 ```
 
-In this request URI, replace **[baseURI]** with the value of the `serviceUrl` property in a message that the bot previously received from the user. Set the body of the request to a [Conversation][Conversation] object that specifies your bot's account information and the account information of the user(s) that you want to include in the conversation.
+Set the body of the request to a [Conversation][Conversation] object that specifies your bot's account information and the account information of the user(s) that you want to include in the conversation.
 
 > [!NOTE]
 > Not all channels support group conversations. Consult the channel's documentation to determine whether a channel supports group conversations and to identify the maximum number of participants that a channel allows in a conversation.
 
-This example shows a request that starts a conversation, where **[baseURI]** should be replaced with the value of the `serviceUrl` property in a message that the bot previously received from the user: 
+The following example shows a request that starts a conversation. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](~/rest-api/bot-framework-rest-connector-api-reference.md#base-uri).
 
 ```http
-POST [baseURI]/v3/conversations 
+POST https://smba.trafficmanager.net/apis/v3/conversations 
 Authorization: Bearer ACCESS_TOKEN
 Content-Type: application/json
 ```

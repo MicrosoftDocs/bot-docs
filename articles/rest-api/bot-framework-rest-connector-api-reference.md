@@ -16,7 +16,60 @@ Within the Bot Framework, the Bot Connector service enables your bot to exchange
 
 ## Base URI
 
-When a user sends a message to your bot, the incoming request contains an [Activity](#activity-object) object with a `serviceUrl` property that specifies the endpoint to which your bot should send its response. To access the Bot Connector service or the Bot State service, use the `serviceUrl` value as the base URI for API requests.
+When a user sends a message to your bot, the incoming request contains an [Activity](#activity-object) object with a `serviceUrl` property that specifies the endpoint to which your bot should send its response. To access the Bot Connector service or the Bot State service, use the `serviceUrl` value as the base URI for API requests. 
+
+For example, assume that your bot receives the following activity when the user sends a message to the bot.
+
+```json
+{
+    "type": "message",
+    "id": "bf3cc9a2f5de...",
+    "timestamp": "2016-10-19T20:17:52.2891902Z",
+    "serviceUrl": "https://smba.trafficmanager.net/apis",
+    "channelId": "channel's name/id",
+    "from": {
+        "id": "1234abcd",
+        "name": "user's name"
+    },
+    "conversation": {
+        "id": "abcd1234",
+        "name": "conversation's name"
+    },
+    "recipient": {
+        "id": "12345678",
+        "name": "bot's name"
+    },
+    "text": "Haircut on Saturday"
+}
+```
+
+The `serviceUrl` property within the user's message indicates that the bot should send its response to the endpoint `https://smba.trafficmanager.net/apis`; this will be the base URI for any subsequent requests that the bot issues in the context of this conversation. The following example shows the request that the bot issues to respond to the user's message. 
+
+```http
+POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/bf3cc9a2f5de... 
+Authorization: Bearer eyJhbGciOiJIUzI1Ni...
+Content-Type: application/json
+```
+
+```json
+{
+    "type": "message",
+    "from": {
+        "id": "12345678",
+        "name": "bot's name"
+    },
+    "conversation": {
+        "id": "abcd1234",
+        "name": "conversation's name"
+    },
+   "recipient": {
+        "id": "1234abcd",
+        "name": "user's name"
+    },
+    "text": "I have several times available on Saturday!",
+    "replyToId": "bf3cc9a2f5de..."
+}
+```
 
 ## Headers
 

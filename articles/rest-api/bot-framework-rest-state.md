@@ -37,10 +37,10 @@ For example, if you issue a `GET` request to retrieve user data from the store, 
 To save state data for a user on a specific channel, issue this request:
 
 ```http
-POST [baseURI]/v3/botstate/{channelId}/users/{userId}
+POST /v3/botstate/{channelId}/users/{userId}
 ```
 
-In this request URI, replace **[baseURI]** with the value of the `serviceUrl` property in a message that the bot previously received from the user, replace **{channelId}** with the channel’s ID, and replace **{userId}** with the user's ID on that channel. The `channelId` and `from` properties within any message that your bot has previously received from the user will contain these IDs. You may also choose to cache these values in a secure location so that you can access the user's data in the future without having to extract them from a message.
+In this request URI, replace **{channelId}** with the channel’s ID and replace **{userId}** with the user's ID on that channel. The `channelId` and `from` properties within any message that your bot has previously received from the user will contain these IDs. You may also choose to cache these values in a secure location so that you can access the user's data in the future without having to extract them from a message.
 
 Set the body of the request to a [BotData][BotData] object, where the `data` property specifies the data that you want to save. If you use entity tags for [concurrency control](#concurrency), set the `eTag` property to the ETag that you received in the response the last time you saved or retrieved the user's data (whichever is the most recent). If you do not use entity tags for concurrency, then do not include the `eTag` property in the request.
 
@@ -49,10 +49,10 @@ Set the body of the request to a [BotData][BotData] object, where the `data` pro
 
 ### Request 
 
-This example shows a request that saves data for a user on a specific channel, where **[baseURI]** should be replaced with the value of the `serviceUrl` property in a message that the bot previously received from the user:
+The following example shows a request that saves data for a user on a specific channel. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](~/rest-api/bot-framework-rest-connector-api-reference.md#base-uri).
 
 ```http
-POST [baseURI]/v3/botstate/abcd1234/users/12345678
+POST https://smba.trafficmanager.net/apis/v3/botstate/abcd1234/users/12345678
 Authorization: Bearer ACCESS_TOKEN
 Content-Type: application/json
 ```
@@ -84,17 +84,17 @@ The response will contain a [BotData][BotData] object with a new `eTag` value.
 To get state data that has previously been saved for the user on a specific channel, issue this request:
 
 ```http
-GET [baseURI]/v3/botstate/{channelId}/users/{userId}
+GET /v3/botstate/{channelId}/users/{userId}
 ```
 
-In this request URI, replace **[baseURI]** with the value of the `serviceUrl` property in a message that the bot previously received from the user, replace **{channelId}** with the channel’s ID, and replace **{userId}** with the user's ID on that channel. The `channelId` and `from` properties within any message that your bot has previously received from the user will contain these IDs. You may also choose to cache these values in a secure location so that you can access the user's data in the future without having to extract them from a message.
+In this request URI, replace **{channelId}** with the channel’s ID and replace **{userId}** with the user's ID on that channel. The `channelId` and `from` properties within any message that your bot has previously received from the user will contain these IDs. You may also choose to cache these values in a secure location so that you can access the user's data in the future without having to extract them from a message.
 
 ### Request
 
-This example shows a request that gets data that has previously been saved for the user, where **[baseURI]** should be replaced with the value of the `serviceUrl` property in a message that the bot previously received from the user:
+The following example shows a request that gets data that has previously been saved for the user. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](~/rest-api/bot-framework-rest-connector-api-reference.md#base-uri).
 
 ```http
-GET [baseURI]/v3/botstate/abcd1234/users/12345678
+GET https://smba.trafficmanager.net/apis/v3/botstate/abcd1234/users/12345678
 Authorization: Bearer ACCESS_TOKEN
 Content-Type: application/json
 ```
@@ -128,10 +128,10 @@ This example shows the response to the `GET` request:
 To save state data for a conversation on a specific channel, issue this request:
 
 ```http
-POST [baseURI]/v3/botstate/{channelId}/conversations/{conversationId}
+POST /v3/botstate/{channelId}/conversations/{conversationId}
 ```
 
-In this request URI, replace **[baseURI]** with the value of the `serviceUrl` property in a message that the bot previously received from the user, replace **{channelId}** with the channel’s ID, and replace **{conversationId}** with ID of the conversation. The `channelId` and `conversation` properties within any message that your bot has previously sent to or received in the context of the conversation will contain these IDs. You may also choose to cache these values in a secure location so that you can access the converation's data in the future without having to extract them from a message.
+In this request URI, replace **{channelId}** with the channel’s ID, and replace **{conversationId}** with ID of the conversation. The `channelId` and `conversation` properties within any message that your bot has previously sent to or received in the context of the conversation will contain these IDs. You may also choose to cache these values in a secure location so that you can access the converation's data in the future without having to extract them from a message.
 
 Set the request body to a [BotData][BotData] object, as described in [Save user data](#save-user-data).
 
@@ -149,10 +149,10 @@ The response will contain a [BotData][BotData] object with a new `eTag` value.
 To get state data that has previously been saved for a conversation on a specific channel, issue this request:
 
 ```http
-GET [baseURI]/v3/botstate/{channelId}/conversations/{conversationId}
+GET /v3/botstate/{channelId}/conversations/{conversationId}
 ```
 
-In this request URI, replace **[baseURI]** with the value of the `serviceUrl` property in a message that the bot previously received from the user, replace **{channelId}** with the channel’s ID, and replace **{conversationId}** with ID of the conversation. The `channelId` and `conversation` properties within any message that your bot has previously sent or received in the context of the conversation will contain these IDs. You may also choose to cache these values in a secure location so that you can access the converation's data in the future without having to extract them from a message.
+In this request URI, replace **{channelId}** with the channel’s ID and replace **{conversationId}** with ID of the conversation. The `channelId` and `conversation` properties within any message that your bot has previously sent or received in the context of the conversation will contain these IDs. You may also choose to cache these values in a secure location so that you can access the converation's data in the future without having to extract them from a message.
 
 ### Response
 
@@ -163,10 +163,10 @@ The response will contain a [BotData][BotData] object with a new `eTag` value.
 To save state data for a user within the context of a specific conversation, issue this request:
 
 ```http
-POST [baseURI]/v3/botstate/{channelId}/conversations/{conversationId}/users/{userId}
+POST /v3/botstate/{channelId}/conversations/{conversationId}/users/{userId}
 ```
 
-In this request URI, replace **[baseURI]** with the value of the `serviceUrl` property in a message that the bot previously received from the user, replace **{channelId}** with the channel’s ID, replace **{conversationId}** with ID of the conversation, and replace **{userId}** with the user's ID on that channel. The `channelId`, `conversation`, and `from` properties within any message that your bot has previously received from the user in the context of the conversation will contain these IDs. You may also choose to cache these values in a secure location so that you can access the converation's data in the future without having to extract them from a message.
+In this request URI, replace **{channelId}** with the channel’s ID, replace **{conversationId}** with ID of the conversation, and replace **{userId}** with the user's ID on that channel. The `channelId`, `conversation`, and `from` properties within any message that your bot has previously received from the user in the context of the conversation will contain these IDs. You may also choose to cache these values in a secure location so that you can access the converation's data in the future without having to extract them from a message.
 
 Set the request body to a [BotData][BotData] object, as described in [Save user data](#save-user-data).
 
@@ -179,10 +179,10 @@ The response will contain a [BotData][BotData] object with a new `eTag` value.
 To get state data that has previously been saved for a user within the context of a specific conversation, issue this request: 
 
 ```http
-GET [baseURI]/v3/botstate/{channelId}/conversations/{conversationId}/users/{userId}
+GET /v3/botstate/{channelId}/conversations/{conversationId}/users/{userId}
 ```
 
-In this request URI, replace **[baseURI]** with the value of the `serviceUrl` property in a message that the bot previously received from the user, replace **{channelId}** with the channel’s ID, replace **{conversationId}** with ID of the conversation, and replace **{userId}** with the user's ID on that channel. The `channelId`, `conversation`, and `from` properties within any message that your bot has previously received from the user in the context of the conversation will contain these IDs. You may also choose to cache these values in a secure location so that you can access the converation's data in the future without having to extract them from a message.
+In this request URI, replace **{channelId}** with the channel’s ID, replace **{conversationId}** with ID of the conversation, and replace **{userId}** with the user's ID on that channel. The `channelId`, `conversation`, and `from` properties within any message that your bot has previously received from the user in the context of the conversation will contain these IDs. You may also choose to cache these values in a secure location so that you can access the converation's data in the future without having to extract them from a message.
 
 ### Response
 
@@ -193,9 +193,9 @@ The response will contain a [BotData][BotData] object with a new `eTag` value.
 To delete state data for a user on a specific channel, issue this request:
 
 ```http
-DELETE [baseURI]/v3/botstate/{channelId}/users/{userId}
+DELETE /v3/botstate/{channelId}/users/{userId}
 ```
-In this request URI, replace **[baseURI]** with the value of the `serviceUrl` property in a message that the bot previously received from the user, replace **{channelId}** with the channel’s ID, and replace **{userId}** with the user's ID on that channel. The `channelId` and `from` properties within any message that your bot has previously received from the user will contain these IDs. You may also choose to cache these values in a secure location so that you can access the user's data in the future without having to extract them from a message.
+In this request URI, replace **{channelId}** with the channel’s ID and replace **{userId}** with the user's ID on that channel. The `channelId` and `from` properties within any message that your bot has previously received from the user will contain these IDs. You may also choose to cache these values in a secure location so that you can access the user's data in the future without having to extract them from a message.
 
 > [!IMPORTANT]
 > This operation deletes data that has previously been stored for the user by using either the [Save user data](#save-user-data) operation or the [Save private conversation data](#save-private-conversation-data) operation. 

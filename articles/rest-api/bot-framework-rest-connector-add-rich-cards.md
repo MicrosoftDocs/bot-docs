@@ -90,10 +90,10 @@ Some channels allow you to add multiple rich cards to the `attachments` array wi
 > To display multiple rich cards in carousel format, set the [Activity][Activity] object's `attachmentLayout` property to "carousel". 
 > If the channel does not support carousel format, it will display the rich cards in list format, even if the `attachmentLayout` property specifies "carousel".
 
-This example shows a request that sends a message containing a single Hero card attachment, where **[baseURI]** should be replaced with the value of the `serviceUrl` property in a message that the bot previously received from the user.
+The following example shows a request that sends a message containing a single Hero card attachment. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](~/rest-api/bot-framework-rest-connector-api-reference.md#base-uri).
 
 ```http
-POST [baseURI]/v3/conversations/abcd1234/activities/5d5cdc723 
+POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/5d5cdc723 
 Authorization: Bearer ACCESS_TOKEN
 Content-Type: application/json
 ```
@@ -157,10 +157,10 @@ Adaptive Cards are created using the JSON format specified in <a href="http://ad
 
 Leverage the information within the <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a> site to understand Adaptive Card schema, explore Adaptive Card elements, and see JSON samples that can be used to create cards of varying composition and complexity. Additionally, you can use the Interactive Visualizer to design Adaptive Card payloads and preview card output.
 
-This example shows a request that sends a message containing a single Adaptive Card for a calendar reminder, where **[baseURI]** should be replaced with the value of the `serviceUrl` property in a message that the bot previously received from the user.
+The following example shows a request that sends a message containing a single Adaptive Card for a calendar reminder. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](~/rest-api/bot-framework-rest-connector-api-reference.md#base-uri).
 
 ```http
-POST [baseURI]/v3/conversations/abcd1234/activities/5d5cdc723 
+POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/5d5cdc723 
 Authorization: Bearer ACCESS_TOKEN
 Content-Type: application/json
 ```
