@@ -6,7 +6,7 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
+ms.date: 05/22/2017
 ms.reviewer:
 ---
 
@@ -48,7 +48,6 @@ Launch the Bot Framework Emulator and enter your bot's endpoint into the emulato
 
 > [!TIP]
 > If your bot was built using the Bot Builder SDK, the default endpoint for local debugging is `http://localhost:3978/api/messages`. This is where the bot will be listening for messages when hosted locally.
-
 Next, if your bot is running with Microsoft Account (MSA) credentials, enter those values into the **Microsoft App ID** and **Microsoft App Password** fields. For localhost debugging, you will not typically need to populate these fields, although doing so is supported if your bot requires it.
 
 Finally, click **Connect** to connect the emulator to your bot. After the emulator has connected to your bot, you can send and receive messages using the embedded chat control.
@@ -71,6 +70,9 @@ Finally, click **Connect** to connect the emulator to your bot. After the emulat
 > <a href="https://dev.botframework.com/" target="_blank">Bot Framework Portal</a>. 
 > If you do not know your bot's MSA Password, you can [generate a new password](portal-register-bot.md#maintain).
 
+## Enable speech recognition
+The Bot Framework Emulator supports speech recognition via the [Cognitive Services Speech API](https://docs.microsoft.com/en-us/azure/cognitive-services/Speech/home). This allows you to exercise your speech-enabled bot, or Cortana skill, via speech in the emulator during development. The Bot Framework Emulator provides speech recognition free of charge for up to three hours per bot per day. 
+
 ## Send system activities
 
 You can use the Bot Framework Emulator to emulate specific activities within the context of a conversation, by selecting from the available options under **Conversation** > **Send System Activity** in the emulator's settings menu:
@@ -82,6 +84,9 @@ You can use the Bot Framework Emulator to emulate specific activities within the
 * typing
 * ping 
 * deleteUserData
+
+## Emulate payment processing
+You can use the Bot Framework Emulator to emulate payment processing. In emulation mode, no real payment will be processed. Instead, the process payment logic simply returns a successful payment record. For payment processing, the emulator remembers your payment methods, shipping addresses, and it support form field validation. 
 
 ## Additional resources
 

@@ -45,12 +45,12 @@ Before you can send a payment request using the Bot Builder SDK for Node.js, you
 
 ## Payment Bot sample
 
-The <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/sample-payments" target="_blank">Payment Bot</a> sample provides a example of a bot that sends a payment request 
+The <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/sample-payments" target="_blank">Payment Bot</a> sample provides an example of a bot that sends a payment request 
 by using Node.js. 
 To see this sample bot in action, you can 
-<a href="https://webchat.botframework.com/embed/paymentsample?s=d39Bk7JOMzQ.cwA.Rig.dumLki9bs3uqfWFMjXPn5PFnQVmT2VAVR1Zl1iPi07k" target="_blank">try it out in web chat</a> or
+<a href="https://webchat.botframework.com/embed/paymentsample?s=d39Bk7JOMzQ.cwA.Rig.dumLki9bs3uqfWFMjXPn5PFnQVmT2VAVR1Zl1iPi07k" target="_blank">try it out in web chat</a>,
 <a href="https://join.skype.com/bot/9fbc0f17-43eb-40fe-bf3b-af151e6ce45e" target="_blank">add it as a Skype 
-contact</a>. 
+contact</a>, or download the payment bot sample and run it locally using the Bot Framework Emulator. 
 
 > [!NOTE]
 > To complete the end-to-end payment process using the **Payment Bot** sample in web chat or Skype, 

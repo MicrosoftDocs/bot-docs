@@ -62,6 +62,13 @@ There are three Speech APIs available in Cognitive Services to process or synthe
 - The <a href="https://www.microsoft.com/cognitive-services/en-us/custom-recognition-intelligent-service-cris" target="_blank">Custom Recognition Intelligent Service (CRIS)</a> allows you to create custom speech recognition models to tailor the speech-to-text conversion to an application's vocabulary or user's speaking style.
 - The <a href="https://www.microsoft.com/cognitive-services/en-us/speaker-recognition-api" target="_blank">Speaker Recognition API</a> enables speaker identification and verification through voice.
 
+The following resources provide additional information about adding speech recognition to your bot.
+
+* [Bot Conversations for Apps video overview](https://channel9.msdn.com/events/Build/2017/P4114)
+* [Microsoft.Bot.Client library for UWP or Xamarin apps](https://aka.ms/BotClient)
+* [Bot Client Library Sample](https://aka.ms/BotClientSample)
+* [Speech-enabled WebChat Client](https://aka.ms/BFWebChat)
+
 Learn more about [speech recognition and conversion][speech] with Microsoft Cognitive Services.
 
 ## Web search
