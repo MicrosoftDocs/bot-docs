@@ -143,7 +143,7 @@ To fix this, set the "from" field to a stable value that represents the user.
 The value of the field is up to you. If you already have a signed-in user in your webpage or app, you can use the existing user ID. If not, you could generate a random user ID on page/app load, optionally store that ID in a cookie or device state, and use that ID.
 
 ### Why am I seeing HTTP 502 errors from the Direct Line service? 
-Direct Line 3.0 returns HTTP 502 when it tries to contact your bot but the request does not complete successfully. This can happen if the bot returns an error or if it times out. You can find more information about your bot's errors by visiting the Bot Framework developer portal and checking the "Issues" column next to the affected channel. If you have Application Insights configured for your bot, you can find detailed error messages there. 
+Direct Line 3.0 returns HTTP 502 when it tries to contact your bot but the request does not complete successfully. This can happen if the bot returns an error or if it times out. You can find more information about your bot's errors by visiting the Bot Framework Portal and checking the "Issues" column next to the affected channel. If you have Application Insights configured for your bot, you can find detailed error messages there. 
 
 ##<a id="implement-dialogs"></a> Implementing dialogs and conversations
 

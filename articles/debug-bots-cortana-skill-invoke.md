@@ -14,7 +14,7 @@ ms.reviewer:
 If you've built a Cortana skill using the Bot Builder SDK, you can test it by invoking it from Cortana. The following instructions walk you through the steps required to try out your Cortana skill.
 
 ## Register your bot
-Log in to the [Bot Framework developer portal][BFPortal] using a [Microsoft account](https://account.microsoft.com/account). If you haven't [registered][Register] your bot yet, you can do so now.
+Log in to the [Bot Framework Portal][BFPortal] using a [Microsoft account](https://account.microsoft.com/account). If you haven't [registered][Register] your bot yet, you can do so now.
 
 > [!NOTE]
 > To register a bot as Cortana skill, you must be signed in with a Microsoft account. 
@@ -42,7 +42,7 @@ If you are running the bot locally, you can get an endpoint to use for testing b
 ```
 ngrok http 3978
 ``` 
-This configures and displays an ngrok forwarding link that forwards requests to your bot, which is running on port 3978. The URL to the forwarding link should look something like this: `https://0d6c4024.ngrok.io`.  Append `/api/messages` to the link, to form an endpoint URL in this format: `https://0d6c4024.ngrok.io/api/messages`. Enter this endpoint URL in the **Configuration** section for your bot in the [Bot Framework developer portal][BFPortal].
+This configures and displays an ngrok forwarding link that forwards requests to your bot, which is running on port 3978. The URL to the forwarding link should look something like this: `https://0d6c4024.ngrok.io`.  Append `/api/messages` to the link, to form an endpoint URL in this format: `https://0d6c4024.ngrok.io/api/messages`. Enter this endpoint URL in the **Configuration** section for your bot in the [Bot Framework Portal][BFPortal].
 
 ## Configure Cortana
 When registering your bot with the Cortana channel, some basic information about your bot will be pre-filled into the registration form. Review this information carefully. This form consists of the following fields.
@@ -103,7 +103,7 @@ You can invoke your Cortana skill by speaking an invocation phrase to Cortana.
 ## Troubleshoot
 
 If your Cortana skill fails to launch, check the following:
-* Make sure you are signed in to Cortana using the same Microsoft account that you used to register your bot in the Bot Framework developer portal.
+* Make sure you are signed in to Cortana using the same Microsoft account that you used to register your bot in the Bot Framework Portal.
 * Check if the bot is working by clicking **Test** to open the **Chat** window of the Bot Framework portal and typing a message to it.
 * Check if your invocation name meets the [guidelines][InvocationNameGuidelines]. If your invocation name is longer than three words, hard to pronounce, or sounds like other words, Cortana might have difficulty recognizing it.
 * If your skill uses a LUIS model, make sure you [enable speech recognition priming](https://aka.ms/prime-speech-luis).

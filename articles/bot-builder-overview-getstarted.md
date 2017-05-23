@@ -35,7 +35,7 @@ The [detailed walkthrough](~/azure/azure-bot-service-quickstart.md) will guide y
 
 You can create a bot with any programming language by using the Bot Framework REST API. There are three REST APIs in the Bot Framework:
 
- - The [Bot Connector REST API][connectorAPI] enables your bot to send and receive messages to channels configured in the [Bot Framework Developer Portal](https://dev.botframework.com/). 
+ - The [Bot Connector REST API][connectorAPI] enables your bot to send and receive messages to channels configured in the [Bot Framework Portal](https://dev.botframework.com/). 
 
 - The [Bot State REST API][stateAPI] enables your bot to store and retrieve state associated with the conversations that are conducted through the Bot Connector REST API.
 

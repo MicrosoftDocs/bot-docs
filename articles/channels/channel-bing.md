@@ -24,7 +24,7 @@ Click **Chat on Bing** to launch the bot.
 If a website has been associated with the bot, the link to the bot will appear **underneath** the website's Bing search result. Click the link to the bot to launch the bot.
 
 ## Publish your bot on Bing
-Publishing a bot on Bing is easy. Open the bot on the [Developer Portal](https://dev.botframework.com/bots), click the Channels tab, and then click Bing.
+Publishing a bot on Bing is easy. Open the bot on the [Bot Framework Portal](https://dev.botframework.com/bots), click the Channels tab, and then click Bing.
 
 ![Connect to Bing](~/media/channels/connect-to-bing.png)
 
@@ -96,7 +96,7 @@ The review process takes a few business days and you may be contacted. After app
 Publishing to the Bing channel makes the bot discoverable by the widest possible audience. However, not all bots should be easily discoverable. For example, a bot designed for use by company employees should not be made generally available. A link to the bot can be privately distributed instead.
 
 > [!TIP]
-> To view the status of a review, open the bot in the [developer portal](https://dev.botframework.com/) and click **Channels**.
+> To view the status of a review, open the bot in the [Bot Framework Portal](https://dev.botframework.com/) and click **Channels**.
 > If the bot is not approved, the result will link to the reason why. After making the required changes, resubmit the bot for review.
 
 

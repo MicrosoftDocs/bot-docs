@@ -72,7 +72,7 @@ You may also use the debugger included in [Visual Studio Code](~/debug-bots-loca
 You can host your bot on any reachable service, such as Azure. If you build a bot with the Bot Builder SDK for .NET, you can deploy directly from [Visual Studio](~/deploy-bot-visual-studio.md). You can also deploy a bot with continuous integration from a git repository or GitHub.
 
 ## Register a bot
-When you finish your bot, [register](~/portal-register-bot.md) it on the Developer Portal. The [Developer Portal](https://dev.botframework.com/) provides a dashboard interface to perform many bot management and connectivity tasks such as configuring channels, managing credentials, connecting to Azure App Insights, or generating web embed codes. Registering your bot with the Bot Framework generates unique credentials used for authentication.
+When you finish your bot, [register](~/portal-register-bot.md) it on the Developer Portal. The [Bot Framework Portal](https://dev.botframework.com/) provides a dashboard interface to perform many bot management and connectivity tasks such as configuring channels, managing credentials, connecting to Azure App Insights, or generating web embed codes. Registering your bot with the Bot Framework generates unique credentials used for authentication.
 
 ## Connect to channels
 You can use the Developer Portal to provide channel configuration information to the target channel(s). Many channels require a bot to have an account on the channel; some also require an application.

@@ -20,7 +20,7 @@ ms.reviewer:
 This article introduces key concepts for building a Cortana skill in the Bot Builder SDK for Node.js. 
 
 ## What is a Cortana skill?
-A Cortana skill is a bot you can invoke by using a Cortana client, like the one built in to Windows 10. The user launches the bot by saying some keywords or phrases associated with the bot. You use the Bot Framework Developer Portal to configure which keywords are used to launch your bot. 
+A Cortana skill is a bot you can invoke by using a Cortana client, like the one built in to Windows 10. The user launches the bot by saying some keywords or phrases associated with the bot. You use the Bot Framework Portal to configure which keywords are used to launch your bot. 
 
 Cortana can be thought of as speech-enabled channel that can send and receive voice messages in addition to textual conversation. A bot that is published as a Cortana skill should be designed for speech as well as text. The Bot Framework provides methods for specifying Speech Synthesis Markup Language (SSML) to define spoken messages that your bot sends.
 

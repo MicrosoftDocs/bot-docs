@@ -52,7 +52,7 @@ Click **Set up Webhooks** to forward messaging events from Facebook Messenger to
 ![Enable webhook](~/media/channels/FB-webhook.png)
 
 ## Provide webhook callback URL and verify token
-Return to the Bot Framework [developer portal](https://dev.botframework.com/). Open the bot, click the **Channels** tab, and then click **Facebook Messenger**.
+Return to the [Bot Framework Portal](https://dev.botframework.com/). Open the bot, click the **Channels** tab, and then click **Facebook Messenger**.
 
 * Copy the **Callback URL** and **Verify Token** values from the portal.
 
@@ -65,7 +65,7 @@ Return to the Bot Framework [developer portal](https://dev.botframework.com/). O
 ![Configure webhook](~/media/channels/FB-webhookConfig.png)
 
 ## Provide Facebook credentials
-On the Bot Framework developer portal, paste the **Page ID**, **App ID**, **App Secret**, and **Page Access Token** values copied from Facebook Messenger previously.
+On the Bot Framework Portal, paste the **Page ID**, **App ID**, **App Secret**, and **Page Access Token** values copied from Facebook Messenger previously.
 
 ![Enter credentials](~/media/channels/fb-credentials2.png)
 

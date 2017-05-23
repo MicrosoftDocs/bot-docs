@@ -67,7 +67,7 @@ The Message graph tracks how many messages were sent and received using which ch
 Analytics are not available until Application Insights has been enabled and configured. Application Insights will begin collecting data as soon as it is enabled. For example, if Application Insights was enabled a week ago for a six-month-old bot, it will have collected one week of data.
 > [!NOTE]
 > Analytics requires both an Azure subscription and Application Insights [resource](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-create-new-resource).
-To access Application Insights, open the bot in the [developer portal](https://dev.botframework.com/) and click **Settings**.
+To access Application Insights, open the bot in the [Bot Framework Portal](https://dev.botframework.com/) and click **Settings**.
 
 1. Create an Application Insights [resource](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-create-new-resource).
 2. Open the bot in the dashboard. Click **Settings** and scroll down to the **Analytics** section.
