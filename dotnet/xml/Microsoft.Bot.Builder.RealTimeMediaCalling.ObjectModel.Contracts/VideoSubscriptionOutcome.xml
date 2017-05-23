@@ -1,0 +1,42 @@
+<Type Name="VideoSubscriptionOutcome" FullName="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.VideoSubscriptionOutcome">
+  <TypeSignature Language="C#" Value="public class VideoSubscriptionOutcome : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VideoSubscriptionOutcome extends Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.VideoSubscriptionOutcome" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Newtonsoft.Json.JsonObject(Newtonsoft.Json.MemberSerialization.OptOut)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            This is the outcome of the "videoSubscription" action. 
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VideoSubscriptionOutcome ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.VideoSubscriptionOutcome.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates outcome of type VideoSubscriptionOutcome.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

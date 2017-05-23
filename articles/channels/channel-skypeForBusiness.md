@@ -18,7 +18,7 @@ Skype for Business Online keeps you connected with co-workers and business partn
 
 ## Enable the channel
 
-Open the bot on the [Developer Portal](https://dev.botframework.com/), click the **Channels** tab, and then click **Skype for Business**. The bot is now enabled. 
+Open the bot on the [Bot Framework Portal](https://dev.botframework.com/), click the **Channels** tab, and then click **Skype for Business**. The bot is now enabled. 
 
 Registering the bot with Skype for Business Online is performed by a **Tenant Administrator** of that Skype for Business tenant.
 

@@ -119,7 +119,7 @@ If your request was successful, you have verified that your app ID and password 
 
 The third step is to enable security and use the emulator to test that security works on your local machine. This step assumes the bot's endpoint is responding. If you're unsure if your bot's endpoint is working, perform step 1, above.
 
-To enable security on your bot, you must retrieve a registration from the Bot Framework Developer Portal. Your bot's security relies on Microsoft services -- even when your bot is running only on localhost -- and the Developer Portal is where you can create and retrieve your registration.
+To enable security on your bot, you must retrieve a registration from the Bot Framework Portal. Your bot's security relies on Microsoft services -- even when your bot is running only on localhost -- and the Developer Portal is where you can create and retrieve your registration.
 
 If you haven't created a registration, follow these steps. You may jump ahead if you already have a Microsoft App ID and Microsoft App Password.
 
@@ -134,7 +134,7 @@ If you haven't created a registration, follow these steps. You may jump ahead if
 7. Click the "Complete and go back" button to navigate back to the bot registration page.
 8. Complete the bot registration form and click "Create Bot" to save and continue.
 
-Now that your bot is created in the Bot Framework Developer Portal, you can enable its security. Make sure the Microsoft App Id and Microsoft App Password you generated earlier are present in your configuration file.
+Now that your bot is created in the Bot Framework Portal, you can enable its security. Make sure the Microsoft App Id and Microsoft App Password you generated earlier are present in your configuration file.
 
 **C# Bot Builder SDK web.config file:**
 
@@ -181,7 +181,7 @@ Common errors:
 
 If your message was successful, you have verified that your bot responds on localhost when security is enabled.
 
-## Step 4: Connect to your bot using the Bot Framework Developer Portal
+## Step 4: Connect to your bot using the Bot Framework Portal
 
 Once you have established that your bot's endpoint can be reached (step 1), your app ID and password are correct (step 2), and your bot responds when security is enabled (step 3), you can deploy your bot to the cloud and try security there.
 
@@ -189,15 +189,15 @@ Bot Framework requires that bots be accessible from the internet. If you already
 
 Once you have a hosting provider, deploy your bot with its security configuration enabled as described in step 2.
 
-The [Bot Framework Developer Portal](https://dev.botframework.com) contains a test panel where you can test the connection from the Bot Connector service to your bot. The security model used by the Bot Connector differs slightly from the security model used by the Emulator, and this is the most realistic step in testing your bot's authentication.
+The [Bot Framework Portal](https://dev.botframework.com) contains a test panel where you can test the connection from the Bot Connector service to your bot. The security model used by the Bot Connector differs slightly from the security model used by the Emulator, and this is the most realistic step in testing your bot's authentication.
 
 Follow these steps to test your bot in the cloud with security enabled:
 
 1. Make sure your bot is deployed and running
-2. Log in to the [Bot Framework Developer Portal](https://dev.botframework.com), click on "My bots," and if necessary, select the bot you want to debug from the list.
+2. Log in to the [Bot Framework Portal](https://dev.botframework.com), click on "My bots," and if necessary, select the bot you want to debug from the list.
 3. Locate the test panel in the bottom-left corner of the screen and click the blue "Test" button. The results of the test appear just below the button.
 
-![Bot Framework Developer Portal test panel](~/media/troubleshooting-bot-framework-authentication_3.png)
+![Bot Framework Portal test panel](~/media/troubleshooting-bot-framework-authentication_3.png)
 
 Your request is successful if:
 
@@ -267,7 +267,7 @@ Common errors:
 
 If your message was successful, you have verified that your bot responds to the emulator while in the cloud and with security enabled.
 
-The emulator uses a special security model and a final test with the Bot Framework Developer Portal is necessary to establish that the bot is operating properly.
+The emulator uses a special security model and a final test with the Bot Framework Portal is necessary to establish that the bot is operating properly.
 
 ## Step 5: Advanced troubleshooting
 

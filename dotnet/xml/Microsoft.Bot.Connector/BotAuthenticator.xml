@@ -116,7 +116,7 @@
       </Docs>
     </Member>
     <Member MemberName="GenerateUnauthorizedResponse">
-      <MemberSignature Language="C#" Value="public static System.Net.Http.HttpResponseMessage GenerateUnauthorizedResponse (System.Net.Http.HttpRequestMessage request, string reason);" />
+      <MemberSignature Language="C#" Value="public static System.Net.Http.HttpResponseMessage GenerateUnauthorizedResponse (System.Net.Http.HttpRequestMessage request, string reason = &quot;&quot;);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.Http.HttpResponseMessage GenerateUnauthorizedResponse(class System.Net.Http.HttpRequestMessage request, string reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthenticator.GenerateUnauthorizedResponse(System.Net.Http.HttpRequestMessage,System.String)" />
       <MemberType>Method</MemberType>

@@ -1,6 +1,7 @@
 <Overview>
   <Assemblies>
     <Assembly Name="Microsoft.Bot.Builder.Autofac" Version="3.8.0.0">
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
         <Attribute>
           <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
@@ -33,12 +34,6 @@
           <AttributeName>System.Runtime.CompilerServices.CompilationRelaxations(8)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("Microsoft.Bot.Builder.Tests")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("Microsoft.Bot.Sample.Tests")</AttributeName>
-        </Attribute>
-        <Attribute>
           <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
         </Attribute>
         <Attribute>
@@ -53,6 +48,7 @@
       </Attributes>
     </Assembly>
     <Assembly Name="Microsoft.Bot.Builder" Version="3.8.0.0">
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
         <Attribute>
           <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
@@ -88,12 +84,6 @@
           <AttributeName>System.Runtime.CompilerServices.CompilationRelaxations(8)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("Microsoft.Bot.Builder.Tests")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("Microsoft.Bot.Sample.Tests")</AttributeName>
-        </Attribute>
-        <Attribute>
           <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
         </Attribute>
         <Attribute>
@@ -108,6 +98,7 @@
       </Attributes>
     </Assembly>
     <Assembly Name="Microsoft.Bot.Connector" Version="3.8.0.0">
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
         <Attribute>
           <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
@@ -150,6 +141,53 @@
         </Attribute>
         <Attribute>
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.5", FrameworkDisplayName=".NET Framework 4.5")</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Assembly>
+    <Assembly Name="Microsoft.Bot.Builder.RealTimeMediaCalling" Version="1.0.2.0">
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCompany("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyConfiguration("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCopyright("Copyright ©  2017")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyDescription("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyFileVersion("1.0.2.0")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyProduct("Microsoft.Bot.Builder.RealTimeMediaCalling")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyTitle("Microsoft.Bot.Builder.RealTimeMediaCalling")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyTrademark("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.CompilationRelaxations(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.Guid("f1bfb900-f608-44ba-8a04-fdf5ec27ec1c")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.6", FrameworkDisplayName=".NET Framework 4.6")</AttributeName>
         </Attribute>
       </Attributes>
     </Assembly>
@@ -537,6 +575,39 @@
       <Type Name="IntentRecommendation" Kind="Class" />
       <Type Name="LuisResult" Kind="Class" />
     </Namespace>
+    <Namespace Name="Microsoft.Bot.Builder.RealTimeMediaCalling">
+      <Type Name="IRealTimeMediaCall" Kind="Interface" />
+      <Type Name="IRealTimeMediaCallService" Kind="Interface" />
+      <Type Name="IRealTimeMediaCallServiceSettings" Kind="Interface" />
+      <Type Name="RealTimeCallProcessor" Kind="Class" />
+      <Type Name="RealTimeMediaCalling" Kind="Class" />
+      <Type Name="RealTimeMediaCallRequestType" Kind="Enumeration" />
+      <Type Name="ResponseResult" Kind="Class" />
+      <Type Name="ResponseType" Kind="Enumeration" />
+    </Namespace>
+    <Namespace Name="Microsoft.Bot.Builder.RealTimeMediaCalling.Events">
+      <Type Name="AnswerAppHostedMediaOutcomeEvent" Kind="Class" />
+      <Type Name="RealTimeMediaIncomingCallEvent" Kind="Class" />
+      <Type Name="RealTimeMediaWorkflowValidationOutcomeEvent" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts">
+      <Type Name="AnswerAppHostedMedia" Kind="Class" />
+      <Type Name="AnswerAppHostedMediaOutcome" Kind="Class" />
+      <Type Name="CallStateChangeNotification" Kind="Class" />
+      <Type Name="ContentSharingRole" Kind="Enumeration" />
+      <Type Name="NotificationBase" Kind="Class" />
+      <Type Name="NotificationResponse" Kind="Class" />
+      <Type Name="NotificationType" Kind="Enumeration" />
+      <Type Name="RealTimeMediaValidOutcomes" Kind="Class" />
+      <Type Name="RealTimeMediaWorkflow" Kind="Class" />
+      <Type Name="RosterParticipant" Kind="Class" />
+      <Type Name="RosterUpdateNotification" Kind="Class" />
+      <Type Name="VideoSubscription" Kind="Class" />
+      <Type Name="VideoSubscriptionOutcome" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Misc">
+      <Type Name="RealTimeMediaSerializer" Kind="Class" />
+    </Namespace>
     <Namespace Name="Microsoft.Bot.Builder.Resource">
       <Type Name="Extensions" Kind="Class" />
       <Type Name="Resources" Kind="Class" />
@@ -646,6 +717,7 @@
       <Type Name="ConversationResourceResponse" Kind="Class" />
       <Type Name="Conversations" Kind="Class" />
       <Type Name="ConversationsExtensions" Kind="Class" />
+      <Type Name="CustomRedirectHandler" Kind="Class" />
       <Type Name="EndOfConversationCodes" Kind="Class" />
       <Type Name="EndorsementsRetriever" Kind="Class" />
       <Type Name="Entity" Kind="Class" />

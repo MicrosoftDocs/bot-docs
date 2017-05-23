@@ -16,9 +16,60 @@ Within the Bot Framework, the Bot Connector service enables your bot to exchange
 
 ## Base URI
 
-To access the latest version of the service (v3), use this base URI for all API requests:
+When a user sends a message to your bot, the incoming request contains an [Activity](#activity-object) object with a `serviceUrl` property that specifies the endpoint to which your bot should send its response. To access the Bot Connector service or the Bot State service, use the `serviceUrl` value as the base URI for API requests. 
 
-`https://api.botframework.com/v3`
+For example, assume that your bot receives the following activity when the user sends a message to the bot.
+
+```json
+{
+    "type": "message",
+    "id": "bf3cc9a2f5de...",
+    "timestamp": "2016-10-19T20:17:52.2891902Z",
+    "serviceUrl": "https://smba.trafficmanager.net/apis",
+    "channelId": "channel's name/id",
+    "from": {
+        "id": "1234abcd",
+        "name": "user's name"
+    },
+    "conversation": {
+        "id": "abcd1234",
+        "name": "conversation's name"
+    },
+    "recipient": {
+        "id": "12345678",
+        "name": "bot's name"
+    },
+    "text": "Haircut on Saturday"
+}
+```
+
+The `serviceUrl` property within the user's message indicates that the bot should send its response to the endpoint `https://smba.trafficmanager.net/apis`; this will be the base URI for any subsequent requests that the bot issues in the context of this conversation. The following example shows the request that the bot issues to respond to the user's message. 
+
+```http
+POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/bf3cc9a2f5de... 
+Authorization: Bearer eyJhbGciOiJIUzI1Ni...
+Content-Type: application/json
+```
+
+```json
+{
+    "type": "message",
+    "from": {
+        "id": "12345678",
+        "name": "bot's name"
+    },
+    "conversation": {
+        "id": "abcd1234",
+        "name": "conversation's name"
+    },
+   "recipient": {
+        "id": "1234abcd",
+        "name": "user's name"
+    },
+    "text": "I have several times available on Saturday!",
+    "replyToId": "bf3cc9a2f5de..."
+}
+```
 
 ## Headers
 
@@ -74,7 +125,7 @@ Use these operations to create conversations, send messages (activities), and ma
 ### Create Conversation
 Creates a new conversation. 
 ```http 
-POST /conversations
+POST /v3/conversations
 ```
 | | |
 |----|----|
@@ -84,7 +135,7 @@ POST /conversations
 ### Send to Conversation
 Sends an activity (message) to the specified conversation. The activity will be appended to the end of the conversation according to the timestamp or semantics of the channel. To reply to a specific message within the conversation, use [Reply to Activity](#reply-to-activity) instead.
 ```http
-POST /conversations/{conversationId}/activities
+POST /v3/conversations/{conversationId}/activities
 ```
 | | |
 |----|----|
@@ -94,7 +145,7 @@ POST /conversations/{conversationId}/activities
 ### Reply to Activity
 Sends an activity (message) to the specified conversation, as a reply to the specified activity. The activity will be added as a reply to another activity, if the channel supports it. If the channel does not support nested replies, then this operation behaves like [Send to Conversation](#send-to-conversation).
 ```http
-POST /conversations/{conversationId}/activities/{activityId}
+POST /v3/conversations/{conversationId}/activities/{activityId}
 ```
 | | |
 |----|----|
@@ -104,7 +155,7 @@ POST /conversations/{conversationId}/activities/{activityId}
 ### Get Conversation Members
 Gets the members of the specified conversation.
 ```http
-GET /conversations/{conversationId}/members
+GET /v3/conversations/{conversationId}/members
 ```
 | | |
 |----|----|
@@ -114,7 +165,7 @@ GET /conversations/{conversationId}/members
 ### Get Activity Members
 Gets the members of the specified activity within the specified conversation.
 ```http
-GET /conversations/{conversationId}/activities/{activityId}/members
+GET /v3/conversations/{conversationId}/activities/{activityId}/members
 ```
 | | |
 |----|----|
@@ -124,7 +175,7 @@ GET /conversations/{conversationId}/activities/{activityId}/members
 ### Update Activity
 Some channels allow you to edit an existing activity to reflect the new state of a bot conversation. For example, you might remove buttons from a message in the conversation after the user has clicked one of the buttons. If successful, this operation updates the specified activity within the specified conversation. 
 ```http
-PUT /conversations/{conversationId}/activities/{activityId}
+PUT /v3/conversations/{conversationId}/activities/{activityId}
 ```
 | | |
 |----|----|
@@ -134,7 +185,7 @@ PUT /conversations/{conversationId}/activities/{activityId}
 ### Delete Activity
 Some channels allow you to delete an existing activity. If successful, this operation removes the specified activity from the specified conversation.
 ```http
-DELETE /conversations/{conversationId}/activities/{activityId}
+DELETE /v3/conversations/{conversationId}/activities/{activityId}
 ```
 | | |
 |----|----|
@@ -144,7 +195,7 @@ DELETE /conversations/{conversationId}/activities/{activityId}
 ### Upload Attachment to Channel
 Uploads an attachment for the specified conversation directly into a channel's blob storage. This enables you to store data in a compliant store. 
 ```http 
-POST /conversations/{conversationId}/attachments
+POST /v3/conversations/{conversationId}/attachments
 ```
 | | |
 |----|----|
@@ -162,7 +213,7 @@ Use these operations to retrieve information about an attachment as well the bin
 ### Get Attachment Info 
 Gets information about the specified attachment, including file name, type, and the available views (e.g., original or thumbnail).
 ```http
-GET /attachments/{attachmentId}
+GET /v3/attachments/{attachmentId}
 ```
 | | |
 |----|----|
@@ -172,7 +223,7 @@ GET /attachments/{attachmentId}
 ### Get Attachment
 Gets the specified view of the specified attachment as binary content.
 ```http
-GET /attachments/{attachmentId}/views/{viewId}
+GET /v3/attachments/{attachmentId}/views/{viewId}
 ```
 | | |
 |----|----|
@@ -195,7 +246,7 @@ Use these operations to store and retrieve state data.
 ### Set User Data
 Stores state data for the specified user on the specified channel.
 ```http
-POST /botstate/{channelId}/users/{userId} 
+POST /v3/botstate/{channelId}/users/{userId} 
 ```
 | | |
 |----|----|
@@ -205,7 +256,7 @@ POST /botstate/{channelId}/users/{userId}
 ### Set Conversation Data
 Stores state data for the specified conversation on the specified channel.
 ```http
-POST /botstate/{channelId}/conversations/{conversationId}
+POST /v3/botstate/{channelId}/conversations/{conversationId}
 ```
 | | |
 |----|----|
@@ -215,7 +266,7 @@ POST /botstate/{channelId}/conversations/{conversationId}
 ### Set Private Conversation Data
 Stores state data for the specified user within the context of the specified conversation on the specified channel.
 ```http
-POST /botstate/{channelId}/conversations/{conversationId}/users/{userId} 
+POST /v3/botstate/{channelId}/conversations/{conversationId}/users/{userId} 
 ```
 | | |
 |----|----|
@@ -225,7 +276,7 @@ POST /botstate/{channelId}/conversations/{conversationId}/users/{userId}
 ### Get User Data
 Retrieves state data that has previously been stored for the specified user across all conversations on the specified channel.
 ```http
-GET /botstate/{channelId}/users/{userId} 
+GET /v3/botstate/{channelId}/users/{userId} 
 ```
 | | |
 |----|----|
@@ -235,7 +286,7 @@ GET /botstate/{channelId}/users/{userId}
 ### Get Conversation Data
 Retrieves state data that has previously been stored for the specified conversation on the specified channel.
 ```http
-GET /botstate/{channelId}/conversations/{conversationId} 
+GET /v3/botstate/{channelId}/conversations/{conversationId} 
 ```
 | | |
 |----|----|
@@ -245,7 +296,7 @@ GET /botstate/{channelId}/conversations/{conversationId}
 ### Get Private Conversation Data
 Retrieves state data that has previously been stored for the specified user within the context of the specified conversation on the specified channel.
 ```http
-GET /botstate/{channelId}/conversations/{conversationId}/users/{userId} 
+GET /v3/botstate/{channelId}/conversations/{conversationId}/users/{userId} 
 ```
 | | |
 |----|----|
@@ -255,7 +306,7 @@ GET /botstate/{channelId}/conversations/{conversationId}/users/{userId}
 ### Delete State For User
 Deletes state data that has previously been stored for the specified user on the specified channel by using either the [Set User Data](#set-user-data) operation or the [Set Private Conversation Data](#set-private-conversation-data) operation.
 ```http
-DELETE /botstate/{channelId}/users/{userId} 
+DELETE /v3/botstate/{channelId}/users/{userId} 
 ```
 | | |
 |----|----|

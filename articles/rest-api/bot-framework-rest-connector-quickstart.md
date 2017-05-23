@@ -66,14 +66,14 @@ A conversation is a series of messages exchanged between a user and your bot.
 
 ### Receive a message from the user
 
-When the user sends a message, the Bot Framework Connector POSTs a request to the endpoint that you specified when you [registered](~/portal-register-bot.md) your bot. The body of the request is an [Activity][Activity] object. This example shows the request body that your bot will receive when the user sends a simple message to your bot:
+When the user sends a message, the Bot Framework Connector POSTs a request to the endpoint that you specified when you [registered](~/portal-register-bot.md) your bot. The body of the request is an [Activity][Activity] object. The following example shows the request body that a bot receives when the user sends a simple message to the bot. 
 
 ```json
 {
     "type": "message",
     "id": "bf3cc9a2f5de...",
     "timestamp": "2016-10-19T20:17:52.2891902Z",
-    "serviceUrl": "channel's service URL",
+    "serviceUrl": "https://smba.trafficmanager.net/apis",
     "channelId": "channel's name/id",
     "from": {
         "id": "1234abcd",
@@ -82,8 +82,8 @@ When the user sends a message, the Bot Framework Connector POSTs a request to th
     "conversation": {
         "id": "abcd1234",
         "name": "conversation's name"
-   },
-   "recipient": {
+    },
+    "recipient": {
         "id": "12345678",
         "name": "bot's name"
     },
@@ -100,10 +100,12 @@ When your bot's endpoint receives a `POST` request that represents a message fro
 3. Set the **recipient** property to the contents of the **from** property in the user's message.
 4. Set the **text** and **attachments** properties as appropriate.
 
-To send the response, `POST` your [Activity][Activity] object to `https://api.botframework.com/v3/conversations/{conversationId}/activities/{activityId}`, as shown in the following example. The body of this request is an [Activity][Activity] object that prompts the user to select an available appointment time.
+Use the `serviceUrl` property in the incoming request to [identify the base URI](~/rest-api/bot-framework-rest-connector-api-reference.md#base-uri) that your bot should use to issue its response. 
+
+To send the response, `POST` your [Activity][Activity] object to `/v3/conversations/{conversationId}/activities/{activityId}`, as shown in the following example. The body of this request is an [Activity][Activity] object that prompts the user to select an available appointment time.
 
 ```http
-POST https://api.botframework.com/v3/conversations/abcd1234/activities/bf3cc9a2f5de... 
+POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/bf3cc9a2f5de... 
 Authorization: Bearer eyJhbGciOiJIUzI1Ni...
 Content-Type: application/json
 ```
@@ -128,13 +130,15 @@ Content-Type: application/json
 }
 ```
 
+In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](~/rest-api/bot-framework-rest-connector-api-reference.md#base-uri). 
+
 > [!IMPORTANT]
 > As shown in this example, the `Authorization` header of each API request that you send must contain the word **Bearer** followed by the access token that you [obtained from the Bot Framework](#get-token).
 
 To send another message that enables a user to select an available appointment time by clicking a button, `POST` another request to the same endpoint:
 
 ```http
-POST https://api.botframework.com/v3/conversations/abcd1234/activities/bf3cc9a2f5de... 
+POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/bf3cc9a2f5de... 
 Authorization: Bearer eyJhbGciOiJIUzI1Ni...
 Content-Type: application/json
 ```
