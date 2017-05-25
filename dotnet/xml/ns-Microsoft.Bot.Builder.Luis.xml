@@ -1,6 +1,6 @@
 <Namespace Name="Microsoft.Bot.Builder.Luis">
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>This namespace contains additional classes and interfaces that support querying the Language Understanding Intelligence Service REST API.</summary>
+    <remarks>This namespace contains additional classes and interfaces that support querying the Language Understanding Intelligence Service REST API.</remarks>
   </Docs>
 </Namespace>

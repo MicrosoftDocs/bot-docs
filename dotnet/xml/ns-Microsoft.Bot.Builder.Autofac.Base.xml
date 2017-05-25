@@ -1,6 +1,6 @@
 <Namespace Name="Microsoft.Bot.Builder.Autofac.Base">
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>This namespace contains classes and interfaces that extend the Autofac dependency injection container.</summary>
+    <remarks>This namespace contains classes and interfaces that extend the Autofac dependency injection container.</remarks>
   </Docs>
 </Namespace>

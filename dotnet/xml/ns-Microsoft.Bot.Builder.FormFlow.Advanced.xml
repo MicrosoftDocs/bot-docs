@@ -1,6 +1,6 @@
 <Namespace Name="Microsoft.Bot.Builder.FormFlow.Advanced">
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>This namespace contains additional classes and interfaces that extend the FormFlow library.</summary>
+    <remarks>This namespace contains additional classes and interfaces that extend the FormFlow library.</remarks>
   </Docs>
 </Namespace>

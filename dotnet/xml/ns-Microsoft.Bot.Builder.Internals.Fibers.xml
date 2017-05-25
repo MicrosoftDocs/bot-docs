@@ -1,6 +1,6 @@
 <Namespace Name="Microsoft.Bot.Builder.Internals.Fibers">
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>This namespace contains additional classes and interfaces used in the implementation of the primary interface to the Fibers library.</summary>
+    <remarks>This namespace contains additional classes and interfaces used in the implementation of the primary interface to the Fibers library.</remarks>
   </Docs>
 </Namespace>

@@ -1,6 +1,6 @@
 <Namespace Name="Microsoft.Bot.Builder.Scorables">
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>This namespace contains additional classes and interfaces for creating scorable trees for global or local message dispatch and handling.</summary>
+    <remarks>This namespace contains additional classes and interfaces for creating scorable trees for global or local message dispatch and handling.</remarks>
   </Docs>
 </Namespace>

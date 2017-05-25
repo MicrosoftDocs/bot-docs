@@ -1,6 +1,6 @@
 <Namespace Name="Microsoft.Bot.Builder.ConnectorEx">
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>This namespace contains additional classes and interfaces that extend the Connector REST API. </summary>
+    <remarks>This namespace contains additional classes and interfaces that extend the Connector REST API.</remarks>
   </Docs>
 </Namespace>

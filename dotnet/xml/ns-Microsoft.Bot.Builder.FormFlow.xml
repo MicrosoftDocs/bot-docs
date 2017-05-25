@@ -1,6 +1,6 @@
 <Namespace Name="Microsoft.Bot.Builder.FormFlow">
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>This namespace contains classes and interfaces that assist in creating Form-filling conversational components.</summary>
+    <remarks>This namespace contains classes and interfaces that assist in creating Form-filling conversational components.</remarks>
   </Docs>
 </Namespace>

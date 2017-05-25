@@ -1,6 +1,6 @@
 <Namespace Name="Microsoft.Bot.Connector">
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>This namespace contains classes and interfaces to interact with the BF Connector REST API.</summary>
+    <remarks>This namespace contains classes and interfaces to interact with the BF Connector REST API.</remarks>
   </Docs>
 </Namespace>
