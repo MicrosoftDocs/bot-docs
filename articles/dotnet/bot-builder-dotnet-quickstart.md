@@ -34,7 +34,7 @@ Get started by completing the following prerequisite tasks:
 > [!TIP]
 > You can build bots for free with <a href="https://www.visualstudio.com/downloads/" target="_blank">Visual Studio 2017 Community</a>.
 
-2. In Visual Studio, <a href="https://msdn.microsoft.com/en-us/library/dd997169.aspx" target="_blank">update all extensions</a> to their latest versions.
+2. In Visual Studio, <a href="https://docs.microsoft.com/en-us/visualstudio/extensibility/how-to-update-a-visual-studio-extension" target="_blank">update all extensions</a> to their latest versions.
 
 3. [Download](http://aka.ms/bf-bc-vstemplate) the Bot Application template
 and install the template by saving the .zip file to your Visual Studio 2017 project templates directory.  
