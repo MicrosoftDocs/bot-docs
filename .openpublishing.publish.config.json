@@ -11,7 +11,7 @@
         "botbuilder-3.8",
         "skypebotsmedia-1.5.0.1177-alpha"
       ],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
