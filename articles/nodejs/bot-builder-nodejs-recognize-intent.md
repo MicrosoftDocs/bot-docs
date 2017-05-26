@@ -21,20 +21,25 @@ Intent recognizers interpret the user’s intent based on user input. Once the i
 
 ## Use the built-in regular expression recognizer
 Use [RegExpRecognizer][RegExpRecognizer] to detect the user's intent using a regular expression. You can pass multiple expressions to the recognizer to support multiple languages. 
-
+<!--
 ``` javascript
 // Add regular expression recognizer to bot
-bot.recognizer(new builder.RegExpRecognizer( "CancelIntent", { en-us: /^(cancel|nevermind)/i, ja-jp: /^(キャンセル)/ }));
+bot.recognizer(new builder.RegExpRecognizer( "CancelIntent", { en_us: /^(cancel|nevermind)/i, ja_jp: /^(キャンセル)/ }));
 ```
+-->
+[!code-js[Add a regular expression recognizer (Javascript)](~/includes/code/node-regex-recognizer.js#addRegexRecognizer)]
 
 ## Use Language Understanding Intelligent Service (LUIS) to recognize intents
 You can configure your bot to use cloud-based intent recognition services like [Language Understanding Intelligent Service (LUIS)][LUIS] through an extensible set of recognizer plugins. Out of the box, Bot Builder comes with a [LuisRecognizer][LuisRecognizer] class that can be used to call a machine learning model you’ve trained using the LUIS web site. You can create a **LuisRecognizer** that’s pointed at your model and then pass that recognizer into your dialog.
 
+<!--
 ``` javascript
 // Add global LUIS recognizer to bot
 var model = process.env.model || 'https://api.projectoxford.ai/luis/v2.0/apps/c413b2ef-382c-45bd-8ff0-f76d60e2a821?subscription-key=6d0966209c6e4f6b835ce34492f3e6d9';
 bot.recognizer(new builder.LuisRecognizer(model));
 ```
+-->
+[!code-js[Add a global LUIS recognizer (Javascript)](~/includes/code/node-regex-recognizer.js#addPrebuiltModelRecognizer)]
 
 The Bot Builder SDK includes a [sample][LUISSample] that demonstrates how to add a cloud-based LUIS recognizer to a bot.
 
