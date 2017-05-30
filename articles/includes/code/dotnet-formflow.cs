@@ -79,6 +79,7 @@ public virtual async Task<HttpResponseMessage> Post([FromBody] Activity activity
             case ActivityTypes.DeleteUserData:
             default:
                 Trace.TraceError($"Unknown activity type ignored: {activity.GetActivityType()}");
+                break;
         }
     }
     ...
