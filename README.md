@@ -23,7 +23,7 @@ Thank you for your interest in Bot Framework documentation!
 ## Ways to contribute
 You can submit updates to the [Bot Framework documentation](https://docs.microsoft.com/bot-framework) as follows:
 
-* You can easily contribute to technical articles in the GitHub user interface. Either find the article in this repository, or visit the article on [https://docs.microsoft.com/Bot Framework](https://docs.microsoft.com/Bot Framework) and click the link in the article that goes to the GitHub source for the article.
+* You can easily contribute to technical articles in the GitHub user interface. Either find the article in this repository, or visit the article on [https://docs.microsoft.com/bot-framework](https://docs.microsoft.com/bot-framework) and click the link in the article that goes to the GitHub source for the article.
 * If you are making substantial changes to an existing article, adding or changing images, or contributing a new article, you need to fork this repository, install Git Bash, Markdown Pad, and learn some git commands.
 
 ## About your contributions to Bot Framework content
