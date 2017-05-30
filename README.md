@@ -34,7 +34,7 @@ Minor corrections or clarifications you submit for documentation and code exampl
 If you submit a pull request with new or significant changes to documentation and code examples, we'll send a comment in GitHub asking you to submit an online Contribution License Agreement (CLA) if you are not an employee of Microsoft. We need you to complete the online form before we can accept your pull request.
 
 ## Repository organization
-The content in the Bot Framework-docs repository follows the organization of documentation on https://docs.microsoft.com/Bot Framework. This repository contains two root folders:
+The content in the Bot Framework-docs repository follows the organization of documentation on https://docs.microsoft.com/bot-framework. This repository contains two root folders:
 
 ### \articles
 The *\articles* folder contains the documentation articles formatted as markdown files with an *.md* extension. Articles are typically grouped by Bot Framework service.
