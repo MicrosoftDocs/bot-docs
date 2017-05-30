@@ -11,7 +11,7 @@ ms.reviewer:
 ---
 
 # Connect a bot to Facebook Messenger
-To learn more about developing for Facebook Messenger, see the [Messenger platform documentation](https://developers.facebook.com/docs/messenger-platform). 
+To learn more about developing for Facebook Messenger, see the [Messenger platform documentation](https://developers.facebook.com/docs/messenger-platform). You may wish to review Facebook's [pre-launch guidelines](https://developers.facebook.com/docs/messenger-platform/product-overview/launch#app_public), [quick start](https://developers.facebook.com/docs/messenger-platform/guides/quick-start), and [setup guide](https://developers.facebook.com/docs/messenger-platform/guides/setup).
 
 To configure a bot to communicate using Facebook Messenger, enable Facebook Messenger on a Facebook page and then connect the bot to the app.
 
@@ -69,12 +69,15 @@ On the Bot Framework Portal, paste the **Page ID**, **App ID**, **App Secret**, 
 
 ![Enter credentials](~/media/channels/fb-credentials2.png)
 
-## Enable the bot
-If the app is not ready for release, leave the toggle set to *Disabled* and click **Save**. The bot can be finished and enabled later.
+## Submit for review
+After the bot is finished, Facebook has its own [review process](https://developers.facebook.com/docs/messenger-platform/app-review) for apps that are published to Messenger. The bot will be tested to ensure it is compliant with Facebook's [Platform Policies](https://developers.facebook.com/docs/messenger-platform/policy-overview).
 
-To release the bot to the Facebook Messenger App Directory, click the toggle to set it to *Enabled* and then click **Save**. 
+## Make the App public and publish the Page
+> [!NOTE]
+> Until an app is published, it is in [Development Mode](https://developers.facebook.com/docs/apps/managing-development-cycle). Plugin and API functionality will only work for admins, developers, and testers.
 
-
+After the review is successful, in the App Dashboard under App Review, set the app to Public.
+Ensure that the Facebook Page associated with this bot is published. Status appears in Pages settings.
 
 
 
