@@ -12,7 +12,7 @@ ms.reviewer:
 
 # Design bot navigation
 
-Users can navigate websites using breadcrumbs, apps using menus, and a web browsers using buttons like **forward** and **back**. 
+Users can navigate websites using breadcrumbs, apps using menus, and web browsers using buttons like **forward** and **back**. 
 However, none of these well-established navigation techniques entirely address navigation requirements within a bot. 
 As discussed [previously](~/bot-design-conversation-flow.md#dialogs-stacks-and-humans), 
 users often interact with bots in a non-linear fashion, 
