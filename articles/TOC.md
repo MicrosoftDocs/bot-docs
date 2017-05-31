@@ -1,7 +1,5 @@
 # Overview
 ## [About Bot Framework](overview-introduction-bot-framework.md)
-## [How it works](overview-how-bot-framework-works.md)
-## [Make bots smarter](./cognitive-services-bot-intelligence-overview.md)
 ## [Get the Bot Builder SDK](resources-tools-downloads.md)
 # Quickstarts
 ## [Start building bots](bot-builder-overview-getstarted.md)
@@ -12,8 +10,11 @@
 # Samples
 ## [.NET](~/dotnet/bot-builder-dotnet-samples.md)
 ## [Node.js](~/nodejs/bot-builder-nodejs-samples.md)
-# How to
-## [Design](design/TOC.md)
+# Concepts
+## [How it works](overview-how-bot-framework-works.md)
+## [Make bots smarter](./cognitive-services-bot-intelligence-overview.md)
+# How-To guides
+## [Design bots](design/TOC.md)
 ## [Develop with .NET](~/dotnet/bot-builder-dotnet-overview.md)
 ### [Key concepts](~/dotnet/bot-builder-dotnet-concepts.md)
 ### Messages and activities
