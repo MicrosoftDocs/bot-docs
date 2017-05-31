@@ -5,10 +5,10 @@
 ## [Get the Bot Builder SDK](resources-tools-downloads.md)
 # Quickstarts
 ## [Start building bots](bot-builder-overview-getstarted.md)
-## [Create your first bot with .NET](~/dotnet/bot-builder-dotnet-quickstart.md)
-## [Create your first bot with Node.js](~/nodejs/bot-builder-nodejs-quickstart.md)
-## [Create your first bot with Azure Bot Service](~/azure/azure-bot-service-quickstart.md)
-## [Create your first bot with REST](~/rest-api/bot-framework-rest-connector-quickstart.md)
+## [Create a bot with .NET](~/dotnet/bot-builder-dotnet-quickstart.md)
+## [Create a bot with Node.js](~/nodejs/bot-builder-nodejs-quickstart.md)
+## [Create a bot with Azure Bot Service](~/azure/azure-bot-service-quickstart.md)
+## [Create a bot with REST](~/rest-api/bot-framework-rest-connector-quickstart.md)
 # Samples
 ## [.NET](~/dotnet/bot-builder-dotnet-samples.md)
 ## [Node.js](~/nodejs/bot-builder-nodejs-samples.md)
