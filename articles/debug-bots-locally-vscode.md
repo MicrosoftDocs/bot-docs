@@ -12,7 +12,7 @@ ms.reviewer:
 
 # Debug a bot with Visual Studio Code
 
-While the [Bot Framework Emulator](~/debug-bots-emulator.md) provides useful features for debugging your bots, you can also use the debugger included in [Visual Studio Code](https://code.visualstudio.com/) to debug your your bot's source code. 
+While the [Bot Framework Emulator](~/debug-bots-emulator.md) provides useful features for debugging your bots, you can also use the debugger included in [Visual Studio Code](https://code.visualstudio.com/) to debug your bot's source code. 
 
 > [!NOTE]
 > Visual Studio Code has built-in debugging support for the Node.js runtime. 
