@@ -42,7 +42,7 @@ This code example shows how to dynamically set the value of the `Specials` field
 In this example, the [Advanced.Field.SetType][setType] method specifies 
 the field type (`null` represents an enumeration field). 
 The [Advanced.Field.SetActive][setActive] method specifies that the field 
-should only be enabled if the the length of the sandwich is `Length.FootLong`. 
+should only be enabled if the length of the sandwich is `Length.FootLong`. 
 Finally, the [Advanced.Field.SetDefine][setDefine] method specifies an async 
 delegate that defines the field. 
 The delegate is passed the current state object and the [Advanced.Field][field] that is being dynamically defined. 
