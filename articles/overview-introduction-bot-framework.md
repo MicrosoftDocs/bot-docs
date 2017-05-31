@@ -6,12 +6,15 @@ ms.author: rstand
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
+ms.date: 05/31/2017
 ---
 
 # About the Bot Framework
 
-The Bot Framework is a platform for building, connecting, testing, and deploying powerful and intelligent bots. With support for .NET, Node.js, and REST, you can [download the Bot Builder SDK](resources-tools-downloads.md) and quickly [start building bots](bot-builder-overview-getstarted.md) with the Bot Framework.
+The Bot Framework is a platform for building, connecting, testing, and deploying powerful and intelligent bots. With support for .NET, Node.js, and REST, you can [get the Bot Builder SDK](resources-tools-downloads.md) and quickly [start building bots](bot-builder-overview-getstarted.md) with the Bot Framework.
+
+The following 15 minute video provides an overview of Bot Framework features.
+<iframe src="https://channel9.msdn.com/Events/Build/2017/C9R03/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
 ## What is a bot?
 Think of a bot as an app that users interact with in a conversational way. Bots can communicate conversationally with text, cards, or speech. A bot may be as simple as basic pattern matching with a response, or it may be a sophisticated weaving of artificial intelligence techniques with complex conversational state tracking and integration to existing business services.
@@ -32,8 +35,8 @@ Developers writing bots all face the same problems: bots require basic I/O, they
 ### Bot Builder
 To help you build your bot, the Bot Framework includes [Bot Builder](bot-builder-overview-getstarted.md), which provides rich and full-featured SDKs for the .NET and Node.js platforms. The SDKs provide features that make interactions between bots and users much simpler. Bot Builder also includes an emulator for debugging your bots, as well as a large set of sample bots you can use as building blocks. 
 
-### Developer portal
-Managing your bot is easy with the developer portal. The developer portal gives you one convenient place to register, connect, and manage your bot. It also provides diagnostic tools and a web chat control you can use to embed your bot on a web page.
+### Bot Framework portal
+Managing your bot is easy with the Bot Framework  portal. The Bot Framework  portal gives you one convenient place to register, connect, and manage your bot. It also provides diagnostic tools and a web chat control you can use to embed your bot on a web page.
 
 ![Configure a bot in the developer portal](~/media/portal-configure-bot.png) 
 

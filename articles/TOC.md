@@ -1,19 +1,20 @@
 # Overview
 ## [About Bot Framework](overview-introduction-bot-framework.md)
-## [How it works](overview-how-bot-framework-works.md)
-## [Make bots smarter](./cognitive-services-bot-intelligence-overview.md)
 ## [Get the Bot Builder SDK](resources-tools-downloads.md)
-# Get started
+# Quickstarts
 ## [Start building bots](bot-builder-overview-getstarted.md)
-## [Create your first bot with .NET](~/dotnet/bot-builder-dotnet-quickstart.md)
-## [Create your first bot with Node.js](~/nodejs/bot-builder-nodejs-quickstart.md)
-## [Create your first bot with Azure Bot Service](~/azure/azure-bot-service-quickstart.md)
-## [Create your first bot with REST](~/rest-api/bot-framework-rest-connector-quickstart.md)
+## [Create a bot with .NET](~/dotnet/bot-builder-dotnet-quickstart.md)
+## [Create a bot with Node.js](~/nodejs/bot-builder-nodejs-quickstart.md)
+## [Create a bot with Azure Bot Service](~/azure/azure-bot-service-quickstart.md)
+## [Create a bot with REST](~/rest-api/bot-framework-rest-connector-quickstart.md)
 # Samples
 ## [.NET](~/dotnet/bot-builder-dotnet-samples.md)
 ## [Node.js](~/nodejs/bot-builder-nodejs-samples.md)
-# How to
-## [Design](design/TOC.md)
+# Concepts
+## [How it works](overview-how-bot-framework-works.md)
+## [Make bots smarter](./cognitive-services-bot-intelligence-overview.md)
+# How-To guides
+## [Design bots](design/TOC.md)
 ## [Develop with .NET](~/dotnet/bot-builder-dotnet-overview.md)
 ### [Key concepts](~/dotnet/bot-builder-dotnet-concepts.md)
 ### Messages and activities
@@ -111,8 +112,7 @@
 #### [Direct Line API 3.0](https://docs.botframework.com/en-us/restapi/directline3/#navtitle)
 #### [Direct Line API 1.1](https://docs.botframework.com/en-us/restapi/directline/#navtitle)
 ## [Test and debug](debug/TOC.md)
-## Deploy
-### [Deploy a bot](deploy-bot-overview.md)
+## [Deploy bots](deploy-bot-overview.md)
 ### [Deploy from local git repo](deploy-bot-local-git.md)
 ### [Deploy from GitHub](deploy-bot-github.md)
 ### [Deploy from Visual Studio](deploy-bot-visual-studio.md)
