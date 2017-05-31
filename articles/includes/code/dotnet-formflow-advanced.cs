@@ -4,7 +4,10 @@ public static IForm<SandwichOrder> BuildForm()
     ...
     return new FormBuilder<SandwichOrder>()
         .Message("Welcome to the sandwich order bot!")
-        ...
+        .Field(nameof(Sandwich))
+        .Field(nameof(Length))
+        .Field(nameof(Bread))
+        .Field(nameof(Cheese))
         .Field(nameof(Toppings),
             validate: async (state, value) =>
             {
@@ -17,9 +20,11 @@ public static IForm<SandwichOrder> BuildForm()
                                     select topping).ToList();
                 }
                 return result;
-        })
+            })
         .Message("For sandwich toppings you have selected {Toppings}.")
-.Message("For sandwich toppings you have selected {Toppings}.")
+        ...
+        .Build();
+}
 // </validationFunction>
 
 
