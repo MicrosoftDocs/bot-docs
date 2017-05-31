@@ -3,7 +3,7 @@
 ## [How it works](overview-how-bot-framework-works.md)
 ## [Make bots smarter](./cognitive-services-bot-intelligence-overview.md)
 ## [Get the Bot Builder SDK](resources-tools-downloads.md)
-# Get started
+# Quickstarts
 ## [Start building bots](bot-builder-overview-getstarted.md)
 ## [Create your first bot with .NET](~/dotnet/bot-builder-dotnet-quickstart.md)
 ## [Create your first bot with Node.js](~/nodejs/bot-builder-nodejs-quickstart.md)
