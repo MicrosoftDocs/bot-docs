@@ -14,6 +14,9 @@ ms.reviewer:
 
 These resources provide additional information and support for developing bots with the Bot Framework.
 
+> [!IMPORTANT]
+> Please use one of these resources for support rather than posting comments on this article.
+
 |**Support type**                    | **Contact**                                                
 |----------------------------|---------------------------------
 |**Community support** | [StackOverflow](https://stackoverflow.com/questions/tagged/botframework)
