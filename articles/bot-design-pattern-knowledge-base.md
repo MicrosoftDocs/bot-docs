@@ -132,7 +132,7 @@ LUIS enables you to use existing, pre-built models from Bing and Cortana wheneve
 
 When working with huge datasets, it's not necessarily feasible to train an NLP model with every variation of an entity. 
 In a music playing bot, for example, a user might message "Play Reggae", "Play Bob Marley", or "Play One Love". 
-Although a bot could map each of these messages map to the intent "playMusic", 
+Although a bot could map each of these messages to the intent "playMusic", 
 without being trained with every artist, genre and song name, 
 an NLP model would not be able to identify whether the entity is a genre, artist or song. 
 By using an NLP model to identify the generic entity of type "music", the bot could search 

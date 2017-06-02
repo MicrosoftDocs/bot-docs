@@ -6,7 +6,7 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
+ms.date: 06/01/2017
 ms.reviewer:
 ---
 # Send proactive messages
@@ -98,8 +98,9 @@ public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitabl
 {
     var message = await result;
     
-    // Store the resumption cookie so that the bot can resume this conversation later.
-    var resumptionCookie = new ResumptionCookie(message).GZipSerialize();
+    // Store information about this specific point the conversation, so that the bot can resume this conversation later.
+    var conversationReference = message.ToConversationReference();
+    ConversationStarter.conversationReference = JsonConvert.SerializeObject(conversationReference);
 
     await context.PostAsync("Greetings, user! I now know how to start a proactive message to you."); 
     context.Wait(MessageReceivedAsync);
@@ -108,13 +109,11 @@ public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitabl
 
 When it is time to send the message, the bot creates a new dialog and adds it to the top of the dialog stack. The new dialog takes control of the conversation, delivers the proactive message, closes, and then returns control to the previous dialog in the stack. 
 
-The resumption cookie provides a simple way of serializing and deserializing the entire message received from the user.
-
 ```cs
 public static async Task Resume() 
 {
-    // Recreate the message from the resumption cookie that was saved previously.
-    var message = ResumptionCookie.GZipDeserialize(resumptionCookie).GetMessage();
+    // Recreate the message from the conversation reference that was saved previously.
+    var message = JsonConvert.DeserializeObject<ConversationReference>(conversationReference).GetPostToBotMessage(); 
     var client = new ConnectorClient(new Uri(message.ServiceUrl));
 
     // Create a scope that can be used to work with state from bot framework.
