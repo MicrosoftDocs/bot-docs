@@ -126,6 +126,7 @@
 ### [Microsoft Teams](https://msdn.microsoft.com/en-us/microsoft-teams/bots)
 ### [Skype](https://dev.skype.com/bots)
 ### [Web Chat](channel-connect-webchat.md)
+### [Email](channel-connect-email.md)
 ### [GroupMe](channel-connect-groupme.md) 
 ### Third party channels 
 #### [Facebook](channel-connect-facebook.md) 
