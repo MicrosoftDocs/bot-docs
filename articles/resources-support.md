@@ -6,16 +6,16 @@ ms.author: rstand
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
-ms.reviewer:
+ms.date: 06/05/2017
 ---
 
-# Additional resources for the Bot Framework
+# Additional support resources
 
 These resources provide additional information and support for developing bots with the Bot Framework.
 
 > [!IMPORTANT]
-> Please use one of these resources for support rather than posting comments on this article.
+> Please use one of these resources for support rather than posting comments on this article. This article is not monitored
+> for support requests.
 
 |**Support type**                    | **Contact**                                                
 |----------------------------|---------------------------------
