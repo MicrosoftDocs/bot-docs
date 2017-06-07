@@ -6,13 +6,14 @@ ms.author: v-jaype
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/24/2017
-ms.reviewer:
+ms.date: 06/06/2017
 ---
 
 # Connect a bot to Slack
 
 You can configure your bot to communicate with people using the Slack messaging app.
+
+[!include[Channel Inspector intro](~/includes/snippet-channel-inspector.md)]
 
 ## Log in to Slack and create a Slack Application
 
@@ -58,4 +59,5 @@ Click **Submit Slack Credentials**.
 Check **Enable this bot on Slack**. Then click **I'm done configuring Slack**.
 
 When you have completed these steps, your bot will be successfully configured to communicate with users in Slack.
+
 

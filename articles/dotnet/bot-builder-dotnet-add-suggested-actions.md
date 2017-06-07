@@ -6,8 +6,7 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/12/2017
-ms.reviewer: 
+ms.date: 06/06/2017
 ---
 
 # Add suggested actions to messages
@@ -19,7 +18,7 @@ ms.reviewer:
 [!include[Introduction to suggested actions](~/includes/snippet-suggested-actions-intro.md)] 
 
 > [!TIP]
-> To learn how various channels render suggested actions, see the [Channel Inspector][channelInspector].
+> Use the [Channel Inspector][channelInspector] to see how suggested actions look and work on various channels.
 
 ## Send suggested actions
 
@@ -33,6 +32,7 @@ When the user taps one of the suggested actions, the bot will receive a message 
 
 ## Additional resources
 
+- [Preview features with the Channel Inspector][inspector]
 - [Activities overview](~/dotnet/bot-builder-dotnet-activities.md)
 - [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.8" target="_blank">Activity class</a>
@@ -40,6 +40,8 @@ When the user taps one of the suggested actions, the bot will receive a message 
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.cardaction?view=botbuilder-3.8" target="_blank">CardAction class</a>
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.suggestedactions?view=botbuilder-3.8" target="_blank">SuggestedActions class</a>
 
-[channelInspector]: https://docs.botframework.com/en-us/channel-inspector/channels/Facebook/#navtitle
-
 [cardAction]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.cardaction?view=botbuilder-3.8
+
+[inspector]: ../portal-channel-inspector.md
+
+[channelInspector]: https://docs.botframework.com/en-us/channel-inspector/channels/Skype/

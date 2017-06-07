@@ -6,8 +6,7 @@ ms.author: rstand
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/24/2017
-ms.reviewer:
+ms.date: 06/06/2017
 ---
 
 # Connect a bot to Web Chat
@@ -16,6 +15,8 @@ When you register a bot with the Bot Framework, the Web Chat channel is automati
 ![Web chat sample](~/media/channel-webchat/webchat-sample.png)
 
 The Web Chat channel in the Bot Framework Portal contains everything you need to embed the web chat control in a web page. All you have to do to use the web chat control is get your bot's secret key and embed the control in a web page.
+
+[!include[Channel Inspector intro](~/includes/snippet-channel-inspector.md)]
 
 ##<a id="step-1"></a> Get your bot secret key
 
