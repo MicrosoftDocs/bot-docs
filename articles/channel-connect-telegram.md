@@ -6,13 +6,14 @@ ms.author: v-jaype
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/24/2017
-ms.reviewer:
+ms.date: 06/06/2017
 ---
 
 # Connect a bot to Telegram
 
 You can configure your bot to communicate with people using the Telegram messaging app.
+
+[!include[Channel Inspector intro](~/includes/snippet-channel-inspector.md)]
 
 ## Visit the Bot Father to create a new Telegram bot
 
@@ -51,4 +52,5 @@ Paste the token you copied previously into the **Access Token** field and click 
 Check **Enable this bot on Telegram**. Then click **I'm done configuring Telegram**.
 
 When you have completed these steps, your bot will be successfully configured to communicate with users in Telegram.
+
 

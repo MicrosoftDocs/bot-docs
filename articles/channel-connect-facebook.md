@@ -6,14 +6,15 @@ ms.author: v-jaype
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/24/2017
-ms.reviewer:
+ms.date: 06/06/2017
 ---
 
 # Connect a bot to Facebook Messenger
 To learn more about developing for Facebook Messenger, see the [Messenger platform documentation](https://developers.facebook.com/docs/messenger-platform). You may wish to review Facebook's [pre-launch guidelines](https://developers.facebook.com/docs/messenger-platform/product-overview/launch#app_public), [quick start](https://developers.facebook.com/docs/messenger-platform/guides/quick-start), and [setup guide](https://developers.facebook.com/docs/messenger-platform/guides/setup).
 
 To configure a bot to communicate using Facebook Messenger, enable Facebook Messenger on a Facebook page and then connect the bot to the app.
+
+[!include[Channel Inspector intro](~/includes/snippet-channel-inspector.md)]
 
 > [!NOTE]
 > The Facebook UI may appear slightly different depending on which version you are using. 
@@ -78,9 +79,3 @@ After the bot is finished, Facebook has its own [review process](https://develop
 
 After the review is successful, in the App Dashboard under App Review, set the app to Public.
 Ensure that the Facebook Page associated with this bot is published. Status appears in Pages settings.
-
-
-
-
-
-

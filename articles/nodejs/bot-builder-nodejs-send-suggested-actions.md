@@ -6,8 +6,7 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date:  05/12/2017
-ms.reviewer: 
+ms.date:  06/06/2017
 ---
 
 # Add suggested actions to messages
@@ -19,7 +18,7 @@ ms.reviewer:
 [!include[Introduction to suggested actions](~/includes/snippet-suggested-actions-intro.md)] 
 
 > [!TIP]
-> To learn how various channels render suggested actions, see the [Channel Inspector][channelInspector].
+> Use the [Channel Inspector][channelInspector] to see how suggested actions look and work on various channels.
 
 ## Suggested actions example
 
@@ -33,14 +32,17 @@ When the user taps one of the suggested actions, the bot will receive a message 
 
 ## Additional resources
 
+* [Preview features with the Channel Inspector][inspector]
 * [IMessage][IMessage]
 * [ICardAction][ICardAction]
 * [session.send][SessionSend]
-
-[channelInspector]: https://docs.botframework.com/en-us/channel-inspector/channels/Facebook/#navtitle
 
 [IMessage]: http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.imessage
 
 [SessionSend]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#send
 
 [ICardAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.icardaction.html
+
+[inspector]: ../portal-channel-inspector.md
+
+[channelInspector]: https://docs.botframework.com/en-us/channel-inspector/channels/Skype/
