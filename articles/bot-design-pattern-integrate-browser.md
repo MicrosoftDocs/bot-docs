@@ -6,8 +6,7 @@ ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
-ms.reviewer: 
+ms.date: 06/05/2017
 ---
 
 # Integrate your bot with a web browser
@@ -45,7 +44,7 @@ bot to web browser, and back again.
 
 This diagram shows the high-level flow for integration between bot and web browser. 
 
-![Bot to web interaction](~/media/designing-bots/patterns/bot-to-web1.png)
+![Bot to web interaction](~/media/bot-design-pattern-integrate-browser/bot-to-web1.png)
 
 Consider each step of the flow:
 
@@ -55,7 +54,6 @@ The hyperlink typically includes data via querystring parameters on the target U
 2. The user clicks the hyperlink and is redirected to the target URL within a web browser. 
 
 3. The bot enters a state awaiting communication from the website to indicate that the website flow is complete.  
-
 > [!TIP]
 > Design this flow so that the bot will not permanently remain in the 'waiting' state if 
 > the user never completes the website flow. In other words, if the user abandons the web

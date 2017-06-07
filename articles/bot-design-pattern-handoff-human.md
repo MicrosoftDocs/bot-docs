@@ -27,7 +27,7 @@ As the first responder to inbound requests from users, a bot could collect the u
 
 ### Escalation
 
-In the help desk scenario, a bot may be able to answer basic questions and resolving simple issues in addition to collecting information. For example, bots are commonly used to reset a user's password. 
+In the help desk scenario, a bot may be able to answer basic questions and resolve simple issues in addition to collecting information. For example, bots are commonly used to reset a user's password. 
 However, if a conversation indicates that a user's issue is complex enough to require human involvement, 
 the bot will need to escalate the issue to a human agent. 
 To implement this type of scenario, a bot must be capable of differentiating between issues it can resolve independently 

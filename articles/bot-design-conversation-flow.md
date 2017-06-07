@@ -53,7 +53,7 @@ Although it would be great if users always traveled such a linear, logical path,
 Humans do not communicate in "stacks." They tend to frequently change their minds. 
 Consider the following example: 
 
-![bot](~/media/designing-bots/core/stack-issue.png)
+![bot](~/media/bot-design-conversation-flow/stack-issue.png)
 
 While your bot may have logically constructed a stack of dialogs, 
  the user may decide to do something entirely different or ask a question that may be unrelated to the current topic. 

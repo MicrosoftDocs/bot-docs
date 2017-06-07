@@ -30,17 +30,17 @@ without requiring that the user provide precise input.
 For example, if the user asks a music knowledge bot for information about "impala" (instead of "Tame Impala"), 
 the bot can respond with information that's most likely to be relevant to that input.
 
-![Dialog Structure](~/media/designing-bots/patterns/fuzzySearch2.png)
+![Dialog Structure](~/media/bot-design-pattern-knowledge-base/fuzzySearch2.png)
 
 Search scores indicate the level of confidence for the results of a specific search, 
 enabling a bot to order its results accordingly, or even tailor its communication based upon confidence level. 
 For example, if confidence level is high, the bot may respond with "Here is the event that best matches your search:".
 
-![Dialog Structure](~/media/designing-bots/patterns/searchScore2.png)
+![Dialog Structure](~/media/bot-design-pattern-knowledge-base/searchScore2.png)
 
 If confidence level is low, the bot may respond with "Hmm... were you looking for any of these events?"
 
-![Dialog Structure](~/media/designing-bots/patterns/searchScore1.png)
+![Dialog Structure](~/media/bot-design-pattern-knowledge-base/searchScore1.png)
 
 ### Using Search to Guide a Conversation
 
@@ -54,17 +54,17 @@ in a way that a basic search is incapable of doing.
 For example, the following bot guides a user through a conversation that facets and filters a dataset until it 
 locates the information that the user is seeking.
 
-![Dialog Structure](~/media/designing-bots/patterns/guidedConvo1.png)
+![Dialog Structure](~/media/bot-design-pattern-knowledge-base/guidedConvo1.png)
 
-![Dialog Structure](~/media/designing-bots/patterns/guidedConvo2.png)
+![Dialog Structure](~/media/bot-design-pattern-knowledge-base/guidedConvo2.png)
 
-![Dialog Structure](~/media/designing-bots/patterns/guidedConvo3.png)
+![Dialog Structure](~/media/bot-design-pattern-knowledge-base/guidedConvo3.png)
 
-![Dialog Structure](~/media/designing-bots/patterns/guidedConvo4.png)
+![Dialog Structure](~/media/bot-design-pattern-knowledge-base/guidedConvo4.png)
 
 By processing the user's input in each step and presenting the relevant options, the bot guides the user to the information that they're seeking. Once the bot delivers that information, it can even provide guidance about more efficient ways to find similar information in the future. 
 
-![Dialog Structure](~/media/designing-bots/patterns/Training.png)
+![Dialog Structure](~/media/bot-design-pattern-knowledge-base/Training.png)
 
 ### Azure Search
 
@@ -72,7 +72,7 @@ By using <a href="https://azure.microsoft.com/en-us/services/search/" target="_b
 you can create an efficient search index that a bot can easily search, facet, and filter. 
 Consider a search index that is created using the Azure portal.
 
-![Dialog Structure](~/media/designing-bots/patterns/search3.PNG)
+![Dialog Structure](~/media/bot-design-pattern-knowledge-base/search3.PNG)
 
 You want to be able to access all properties of the data store, so you set each property as "retrievable." 
 You want to be able to find musicians by name, so you set the **Name** property as "searchable." 
@@ -81,7 +81,7 @@ Finally, you want to be able to facet filter over musicians' eras, so you mark t
 Faceting determines the values that exist in the data store for a given property, along with the magnitude of each value. 
 For example, this screenshot shows that there are 5 distinct eras in the data store:
 
-![Dialog Structure](~/media/designing-bots/patterns/facet.png)
+![Dialog Structure](~/media/bot-design-pattern-knowledge-base/facet.png)
 
 Filtering, in turn, selects only the specified instances of a certain property. 
 For example, you could filter the result set above to contain only items where **Era** is equal to "Romantic." 
@@ -107,11 +107,11 @@ It cannot determine that a puppy is a type of dog, for example.
 
 Using the QnA Maker web interface, you can configure a knowledge base with three question and answer pairs: 
 
-![Dialog Structure](~/media/designing-bots/patterns/KnowledgeBaseConfig.png)
+![Dialog Structure](~/media/bot-design-pattern-knowledge-base/KnowledgeBaseConfig.png)
 
 Then, you can test it by asking a series of questions: 
 
-![Dialog Structure](~/media/designing-bots/patterns/exampleQnAConvo.png)
+![Dialog Structure](~/media/bot-design-pattern-knowledge-base/exampleQnAConvo.png)
 
 The bot correctly answers the questions that directly map to the ones that were configured in the knowledge base. 
 However, it incorrectly responds to the question "can I bring my rum?". 
@@ -156,15 +156,15 @@ potential values, but you could provide enough representative examples for
 LUIS to properly identify the entity at hand.  For example, consider that you 
 train your model by providing examples of musicians: 
 
-![Dialog Structure](~/media/designing-bots/patterns/answerGenre.png)
-![Dialog Structure](~/media/designing-bots/patterns/answerGenreOneWord.png)
+![Dialog Structure](~/media/bot-design-pattern-knowledge-base/answerGenre.png)
+![Dialog Structure](~/media/bot-design-pattern-knowledge-base/answerGenreOneWord.png)
 
 When you test this model with new utterances like, "what kind of music do the beatles play?", 
 LUIS successfully determines the intent "answerGenre" and the identifies entity "the beatles." 
 However, if you submit a longer question such as "what kind of music does the devil makes three play?",
 LUIS identifies "the devil" as the entity.
 
-![Dialog Structure](~/media/designing-bots/patterns/devilMakesThreeScore.png)
+![Dialog Structure](~/media/bot-design-pattern-knowledge-base/devilMakesThreeScore.png)
 
 By training the model with example entities that are representative of the underlying dataset, you 
 can increase the accuracy of your bot's language understanding. 
