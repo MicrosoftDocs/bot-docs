@@ -55,7 +55,7 @@ First, create a simple web view component and use it to host a
 <a href="https://github.com/Microsoft/BotFramework-WebChat" target="_blank">web chat control</a>. 
 Then, using the Bot Framework Portal, [connect the bot](~/portal-configure-channels.md) to the Web Chat channel. 
 
-![Bot configuration settings](~/media/designing-bots/patterns/webchat-channel.png)
+![Bot configuration settings](~/media/bot-design-pattern-embed-app/webchat-channel.png)
 
 Next, specify the registered web chat URL as the source for the web view control in the Xamarin app:
 
@@ -74,7 +74,7 @@ public class WebPage : ContentPage
 Using this process, you can create a cross-platform mobile application 
 that renders the embedded web view with the web chat control.
 
-![Back-channel](~/media/designing-bots/patterns/xamarin-apps.png)
+![Back-channel](~/media/bot-design-pattern-embed-app/xamarin-apps.png)
 
 ## Sample code
 
