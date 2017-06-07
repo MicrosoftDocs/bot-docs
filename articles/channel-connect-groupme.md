@@ -6,13 +6,14 @@ ms.author: v-jaype
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/24/2017
-ms.reviewer:
+ms.date: 06/06/2017
 ---
 
 # Connect a bot to GroupMe
 
 You can configure a bot to communicate with people using the GroupMe group messaging app.
+
+[!include[Channel Inspector intro](~/includes/snippet-channel-inspector.md)]
 
 ## Sign up for a GroupMe account
 
@@ -42,4 +43,5 @@ Copy the **Client ID** section from the redirect URL.
 Check **Enable this bot on GroupMe**. Then click **I'm done configuring GroupMe**.
 
 When you have completed these steps, your bot will be successfully configured to communicate with users in GroupMe.
+
 

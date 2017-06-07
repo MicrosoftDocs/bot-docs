@@ -28,12 +28,12 @@ Consider the following two designs:
 
 ### Design 1
 
-![bot](~/media/designing-bots/core/hello1.png)
+![bot](~/media/bot-design-first-interaction/hello1.png)
 
 
 ### Design 2
 
-![bot](~/media/designing-bots/core/hello2.png)
+![bot](~/media/bot-design-first-interaction/hello2.png)
 
 Starting the bot with an open-ended question such as "How can I help you?" is generally not recommended. 
 If your bot has a hundred different things it can do, chances are users won’t be able to guess most of them. 
