@@ -35,7 +35,7 @@ The stubborn bot insists upon maintaining the current course of conversation,
 even when the user attempts to steer things in a different direction. 
 Consider the following scenario: 
 
-![bot](~/media/designing-bots/core/stubborn-bot.png)
+![bot](~/media/bot-design-navigation/stubborn-bot.png)
 
 Users often change their minds. They can decide to cancel. Sometimes they want to start over altogether. 
 
@@ -56,7 +56,7 @@ The clueless bot responds in a nonsensical manner when it doesn't understand a u
 
 Consider the following scenario: 
 
-![bot](~/media/designing-bots/core/clueless-bot.png)
+![bot](~/media/bot-design-navigation/clueless-bot.png)
 
 Although you may be tempted to design every dialog within your bot to listen for, and respond appropriately to, certain keywords, this approach is not recommended. <!-- because it makes the bot too slow? -->
 
@@ -74,7 +74,7 @@ Using this approach, individual dialogs and prompts can be made to safely ignore
 The mysterious bot fails to immediately acknowledge the user's input in any way. 
 Consider the following scenario: 
 
-![bot](~/media/designing-bots/core/mysterious-bot.png)
+![bot](~/media/bot-design-navigation/mysterious-bot.png)
 
 In some cases, this situation might be an indication that the bot is having an outage. 
 However, it could just be that the bot is busy processing the user's input and hasn't yet finished compiling its response. 
@@ -91,7 +91,7 @@ By immediately acknowledging the user's input, you eliminate any potential for c
 The captain obvious bot provides unsolicited information that is completely obvious and therefore useless to the user. 
 Consider the following scenario:
 
-![bot](~/media/designing-bots/core/captainobvious-bot.png)
+![bot](~/media/bot-design-navigation/captainobvious-bot.png)
 
 > [!TIP]
 > <b>Do</b>: Design your bot to provide information that will be useful to the user. 
@@ -106,7 +106,7 @@ The bot that can't forget inappropriately integrates information from past conve
 
 Consider the following scenario:
 
-![bot](~/media/designing-bots/core/rememberall-bot.png)
+![bot](~/media/bot-design-navigation/rememberall-bot.png)
 
 > [!TIP]
 > <b>Do</b>: Design your bot to maintain the current topic of conversation, unless/until the user expresses a desire to revisit a prior topic. 

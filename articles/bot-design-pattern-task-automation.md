@@ -30,7 +30,7 @@ He begins by writing a design specification for the bot, just as he would do if 
 
 The specification defines the navigation model:
 
-![Dialog Structure](~/media/designing-bots/patterns/simple-task1.png)
+![Dialog Structure](~/media/bot-design-pattern-task-automation/simple-task1.png)
 
 The user begins at the `RootDialog`. When they request a password reset, they  
 will be directed to the `ResetPasswordDialog`. 
@@ -56,7 +56,7 @@ The root dialog provides the user with two options:
 
 The specification describes the root dialog as shown in the following screenshot.
 
-![Dialog Structure](~/media/designing-bots/patterns/simple-task2.png)
+![Dialog Structure](~/media/bot-design-pattern-task-automation/simple-task2.png)
 
 #### ResetPassword dialog
 
@@ -73,7 +73,7 @@ Then it invokes the `PromptDate` dialog to collect the user's date of birth.
 
 The specification describes the `ResetPassword` dialog.
 
-![Dialog Structure](~/media/designing-bots/patterns/simple-task3.png)
+![Dialog Structure](~/media/bot-design-pattern-task-automation/simple-task3.png)
 
 #### PromptStringRegex dialog
 
@@ -82,13 +82,13 @@ that the user provides matches the expected format.
 It also accounts for the scenario where the user repeatedly provides invalid input. 
 The spec describes the `PromptStringRegex` dialog.
 
-![Dialog Structure](~/media/designing-bots/patterns/simple-task4.png)
+![Dialog Structure](~/media/bot-design-pattern-task-automation/simple-task4.png)
 
 ### Prototype
 
 Finally, the spec provides an example of a user communicating with the bot to successfully complete the password-reset task.
 
-![Dialog Structure](~/media/designing-bots/patterns/simple-task5.png)
+![Dialog Structure](~/media/bot-design-pattern-task-automation/simple-task5.png)
 
 ## Bot, app, or website?
 
