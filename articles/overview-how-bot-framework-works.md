@@ -1,8 +1,8 @@
 ---
 title: How the Bot Framework works | Microsoft Docs
 description: Explore the core concepts of building and deploying bots with the Bot Framework.
-author: JaymeMPerlman
-ms.author: v-jaype
+author: RobStand
+ms.author: rstand
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
