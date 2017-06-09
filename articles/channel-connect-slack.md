@@ -36,7 +36,7 @@ Select the **OAuth & Permissions** tab, select **Add a new Redirect URL**, enter
 
 ## Create a Slack Bot User
 
-Select the **Bot Users** tab, then select **Add a Bot User**
+Select the **Bot Users** tab, and then select **Add a Bot User**
 
 ![Create bot](~/media/channels/slack-CreateBot.png)
 
