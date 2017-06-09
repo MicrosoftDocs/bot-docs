@@ -48,7 +48,7 @@ In a call with a single Skype caller, the bot will automatically receive the vid
 
 To develop a real-time media bot, you must install these NuGet packages within your Visual Studio project:
 
-- [Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-overview.md)
+- [Bot Builder SDK for .NET](bot-builder-dotnet-overview.md)
 - [Bot Builder Real-Time Media Calling for .NET](https://www.nuget.org/packages?q=Bot.Builder.RealTimeMediaCalling)
 - [Microsoft.Skype.Bots.Media .NET library](https://www.nuget.org/packages?q=Microsoft.Skype.Bots.Media)
 

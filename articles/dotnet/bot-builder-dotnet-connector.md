@@ -23,7 +23,7 @@ exchange information between bot and user on a channel.
 > [!NOTE]
 > While it is possible to construct a bot by exclusively using the techniques that are described
 > in this article, the Bot Builder SDK provides additional features like 
-> [dialogs](~/dotnet/bot-builder-dotnet-dialogs.md) and [FormFlow](~/dotnet/bot-builder-dotnet-formflow.md) that 
+> [dialogs](bot-builder-dotnet-dialogs.md) and [FormFlow](bot-builder-dotnet-formflow.md) that 
 > can streamline the process of managing conversation flow and state and 
 > make it simpler to incorporate cognitive services such as language understanding.
 
@@ -34,7 +34,7 @@ When your bot receives an <a href="https://docs.microsoft.com/en-us/dotnet/api/m
 it should use the `ServiceUrl` specified for that activity to create the connector client that it'll 
 subsequently use to generate a response. 
 
-[!code-csharp[Create connector client](~/includes/code/dotnet-send-and-receive.cs#createConnectorClient)]
+[!code-csharp[Create connector client](../includes/code/dotnet-send-and-receive.cs#createConnectorClient)]
 
 > [!TIP]
 > Because a channel's endpoint may not be stable, your bot should direct communications to the endpoint 
@@ -45,7 +45,7 @@ subsequently use to generate a response.
 
 ##<a id="create-reply"></a> Create a reply
 
-The Connector uses an [Activity](~/dotnet/bot-builder-dotnet-activities.md) object to pass information back and forth between bot and channel (user). 
+The Connector uses an [Activity](bot-builder-dotnet-activities.md) object to pass information back and forth between bot and channel (user). 
 Every activity contains information used for routing the message to the appropriate destination 
 along with information about who created the message (`From` property), 
 the context of the message, and the recipient of the message (`Recipient` property).
@@ -62,14 +62,14 @@ By using the incoming activity's `CreateReply` method,
 you simply specify the message text for the response, and the outgoing activity is created 
 with the `Recipient`, `From`, and `Conversation` properties automatically populated.
 
-[!code-csharp[Create reply](~/includes/code/dotnet-send-and-receive.cs#createReply)]
+[!code-csharp[Create reply](../includes/code/dotnet-send-and-receive.cs#createReply)]
 
 ## Send a reply
 
 Once you've created a reply, you can send it by calling the connector client's `ReplyToActivity` method. 
 The Connector will deliver the reply using the appropriate channel semantics. 
 
-[!code-csharp[Send reply](~/includes/code/dotnet-send-and-receive.cs#sendReply)]
+[!code-csharp[Send reply](../includes/code/dotnet-send-and-receive.cs#sendReply)]
 
 > [!TIP]
 > If your bot is replying to a user's message, always use the `ReplyToActivity` method.
@@ -79,7 +79,7 @@ The Connector will deliver the reply using the appropriate channel semantics.
 If your bot is part of a conversation, it can send a message that is not a direct reply to 
 any message from the user by calling the `SendToConversation` method. 
 
-[!code-csharp[Send non-reply message](~/includes/code/dotnet-send-and-receive.cs#sendNonReplyMessage)]
+[!code-csharp[Send non-reply message](../includes/code/dotnet-send-and-receive.cs#sendNonReplyMessage)]
 
 You may use the `CreateReply` method to initialize the new message (which would automatically set 
 the `Recipient`, `From`, and `Conversation` properties for the message). 
@@ -109,16 +109,16 @@ you must first [create the connector client](#create-a-connector-client) by usin
 
 This code example uses the `CreateDirectConversation` method to create a private conversation with a single user.
 
-[!code-csharp[Start private conversation](~/includes/code/dotnet-send-and-receive.cs#startPrivateConversation)]
+[!code-csharp[Start private conversation](../includes/code/dotnet-send-and-receive.cs#startPrivateConversation)]
 
 This code example uses the `CreateConversation` method to create a group conversation with multiple users.
 
-[!code-csharp[Start group conversation](~/includes/code/dotnet-send-and-receive.cs#startGroupConversation)]
+[!code-csharp[Start group conversation](../includes/code/dotnet-send-and-receive.cs#startGroupConversation)]
 
 ## Additional resources
 
-- [Activities overview](~/dotnet/bot-builder-dotnet-activities.md)
-- [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
+- [Activities overview](bot-builder-dotnet-activities.md)
+- [Create messages](bot-builder-dotnet-create-messages.md)
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.8" target="_blank">Activity class</a>
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.connectorclient?view=botbuilder-3.8" target="_blank">ConnectorClient class</a>

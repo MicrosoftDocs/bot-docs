@@ -12,7 +12,7 @@ ms.reviewer:
 
 # Advanced features of FormFlow
 
-[Basic features of FormFlow](~/dotnet/bot-builder-dotnet-formflow.md) describes a basic FormFlow 
+[Basic features of FormFlow](bot-builder-dotnet-formflow.md) describes a basic FormFlow 
 implementation that delivers a fairly generic user experience. 
 To deliver a more customized user experience using FormFlow, you can specify initial form state, 
 add business logic to manage interdependencies between fields and process user input, 
@@ -49,12 +49,12 @@ This code example shows a validation function for the `Toppings` field.
 If input for the field contains the `ToppingOptions.Everything` enumeration value, the function 
 ensures that the `Toppings` field value contains the full list of toppings.
 
-[!code-csharp[Validation function](~/includes/code/dotnet-formflow-advanced.cs#validationFunction)]
+[!code-csharp[Validation function](../includes/code/dotnet-formflow-advanced.cs#validationFunction)]
 
 In addition to the validation function, you can add the [Term](#match-user-input-using-the-terms-attribute) attribute 
 to match user expressions such as "everything" or "not".
 
-[!code-csharp[Terms for Toppings](~/includes/code/dotnet-formflow-advanced.cs#toppingsTerms)]
+[!code-csharp[Terms for Toppings](../includes/code/dotnet-formflow-advanced.cs#toppingsTerms)]
 
 Using the validation function shown above, this snippet shows the 
 interaction between bot and user when the user requests "everything but Jalapenos." 
@@ -98,9 +98,9 @@ but you can specify a custom prompt for any field by using the `Prompt` attribut
 For example, if the default prompt for the `SandwichOrder.Sandwich` field is "Please select a sandwich", 
 you can add the `Prompt` attribute to specify a custom prompt for that field.
 
-[!code-csharp[Prompt attribute](~/includes/code/dotnet-formflow-advanced.cs#promptAttribute)]
+[!code-csharp[Prompt attribute](../includes/code/dotnet-formflow-advanced.cs#promptAttribute)]
 
-This example uses [pattern language](~/dotnet/bot-builder-dotnet-formflow-pattern-language.md) 
+This example uses [pattern language](bot-builder-dotnet-formflow-pattern-language.md) 
 to dynamically populate the prompt with form data at runtime: `{&}` is replaced with the description 
 of the field and `{||}` is replaced with the list of choices in the enumeration. 
 
@@ -133,7 +133,7 @@ What kind of sandwich would you like?
 A `Prompt` attribute may also specify parameters that affect how the form displays the prompt. 
 For example, the `ChoiceFormat` parameter determines how the form renders the list of choices.
 
-[!code-csharp[Prompt attribute ChoiceFormat parameter](~/includes/code/dotnet-formflow-advanced.cs#promptChoice)]
+[!code-csharp[Prompt attribute ChoiceFormat parameter](../includes/code/dotnet-formflow-advanced.cs#promptChoice)]
 
 In this example, the value of the `ChoiceFormat` parameter indicates that the choices should be 
 displayed as a bulleted list (instead of a numbered list).
@@ -165,10 +165,10 @@ the `Template` attribute enables you to replace the default templates that FormF
 generate prompts. 
 This code example uses the `Template` attribute to redefine how the form handles 
 all enumeration fields. The attribute indicates that the user may select only one item, 
-sets the prompt text by using [pattern language](~/dotnet/bot-builder-dotnet-formflow-pattern-language.md), 
+sets the prompt text by using [pattern language](bot-builder-dotnet-formflow-pattern-language.md), 
 and specifies that the form should display only one item per line. 
 
-[!code-csharp[Template attribute](~/includes/code/dotnet-formflow-advanced.cs#templateAttribute)]
+[!code-csharp[Template attribute](../includes/code/dotnet-formflow-advanced.cs#templateAttribute)]
 
 This snippet shows the resulting prompts for the `Bread` field and `Cheese` field.
 
@@ -192,7 +192,7 @@ If you use the `Template` attribute to replace the default templates that FormFl
 generate prompts, you may want to interject some variation into the prompts and messages 
 that the form generates. 
 To do so, you can define multiple text strings using 
-[pattern language](~/dotnet/bot-builder-dotnet-formflow-pattern-language.md), and the form will randomly choose 
+[pattern language](bot-builder-dotnet-formflow-pattern-language.md), and the form will randomly choose 
 from the available options each time it needs to display a prompt or message.
 
 This code example redefines the [TemplateUsage.NotUnderstood][notUnderstood] 
@@ -200,7 +200,7 @@ template to specify two different variations of
 message. When the bot needs to communicate that it does not understand a user's input, it will 
 determine message contents by randomly selecting one of the two text strings. 
 
-[!code-csharp[Template variations of message](~/includes/code/dotnet-formflow-advanced.cs#templateMessages)]
+[!code-csharp[Template variations of message](../includes/code/dotnet-formflow-advanced.cs#templateMessages)]
 
 This snippet shows an example of the resulting the interaction between bot and user. 
 
@@ -218,7 +218,7 @@ Try again, I don't get "two feet"
 To designate a field as optional, use the `Optional` attribute. 
 This code example specifies that the `Cheese` field is optional.
 
-[!code-csharp[Optional attribute](~/includes/code/dotnet-formflow-advanced.cs#optionalAttribute)]
+[!code-csharp[Optional attribute](../includes/code/dotnet-formflow-advanced.cs#optionalAttribute)]
 
 If a field is optional and no value has been specified, 
 the current choice will be displayed as "No Preference".
@@ -268,7 +268,7 @@ user input to a field or a value in a field, use the `Terms` attribute.
 For example, you may use the `Terms` attribute (with a regular expression) to account for the fact that users are 
 likely to misspell the word "rotisserie." 
 
-[!code-csharp[Terms attribute](~/includes/code/dotnet-formflow-advanced.cs#termsAttribute)]
+[!code-csharp[Terms attribute](../includes/code/dotnet-formflow-advanced.cs#termsAttribute)]
 
 By using the `Terms` attribute, you increase the likelihood of 
 being able to match user input with one of the valid choices. 
@@ -303,13 +303,13 @@ To restrict the range of allowed values for a numeric field, use the `Numeric` a
 This code example uses the `Numeric` attribute to specify that input for the `Rating` field 
 must be a number between 1 and 5. 
 
-[!code-csharp[Numeric attribute](~/includes/code/dotnet-formflow-advanced.cs#numericAttribute)]
+[!code-csharp[Numeric attribute](../includes/code/dotnet-formflow-advanced.cs#numericAttribute)]
 
 To specify the required format for the value of a particular field, use the `Pattern` attribute. 
 This code example uses the `Pattern` attribute to specify the required format for the value of the 
 `PhoneNumber` field.
 
-[!code-csharp[Pattern attribute](~/includes/code/dotnet-formflow-advanced.cs#patternAttribute)]
+[!code-csharp[Pattern attribute](../includes/code/dotnet-formflow-advanced.cs#patternAttribute)]
 
 ## Summary
 
@@ -319,15 +319,15 @@ adding business logic to manage interdependencies between fields and process use
 and using attributes to customize prompts, override templates, 
 designate optional fields, match user input, and validate user input. 
 For information about additional ways to customize the user experience with FormFlow, 
-see [Customize a form using FormBuilder](~/dotnet/bot-builder-dotnet-formflow-formbuilder.md).
+see [Customize a form using FormBuilder](bot-builder-dotnet-formflow-formbuilder.md).
 
 ## Additional resources
 
-- [Basic features of FormFlow](~/dotnet/bot-builder-dotnet-formflow.md)
-- [Customize a form using FormBuilder](~/dotnet/bot-builder-dotnet-formflow-formbuilder.md)
-- [Localize form content](~/dotnet/bot-builder-dotnet-formflow-localize.md)
-- [Define a form using JSON schema](~/dotnet/bot-builder-dotnet-formflow-json-schema.md)
-- [Customize user experience with pattern language](~/dotnet/bot-builder-dotnet-formflow-pattern-language.md)
+- [Basic features of FormFlow](bot-builder-dotnet-formflow.md)
+- [Customize a form using FormBuilder](bot-builder-dotnet-formflow-formbuilder.md)
+- [Localize form content](bot-builder-dotnet-formflow-localize.md)
+- [Define a form using JSON schema](bot-builder-dotnet-formflow-json-schema.md)
+- [Customize user experience with pattern language](bot-builder-dotnet-formflow-pattern-language.md)
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
 
 [formDialog]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.formdialog?view=botbuilder-3.8

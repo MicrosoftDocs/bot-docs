@@ -12,7 +12,7 @@ ms.reviewer:
 
 # Debug an Azure Bot Service bot
 
-Azure Bot Service bots are built upon the Azure Functions serverless architecture. When you create a bot using Azure Bot Service, the source code for your bot is initially accessible only via Azure and therefore cannot be debugged locally. However, if you [set up continuous integration](~/azure/azure-bot-service-continuous-integration.md), you can manage the application's files using the integrated development environment (IDE) and source control system of your choice and will be able to debug your bot locally. This article describes how to debug your bot after you have enabled continuous integration.
+Azure Bot Service bots are built upon the Azure Functions serverless architecture. When you create a bot using Azure Bot Service, the source code for your bot is initially accessible only via Azure and therefore cannot be debugged locally. However, if you [set up continuous integration](azure-bot-service-continuous-integration.md), you can manage the application's files using the integrated development environment (IDE) and source control system of your choice and will be able to debug your bot locally. This article describes how to debug your bot after you have enabled continuous integration.
 
 ## Debug a Node.js bot
 
@@ -20,27 +20,27 @@ Azure Bot Service bots are built upon the Azure Functions serverless architectur
 
 Before you can debug your Node.js bot, you must complete these tasks.
 
-- Download the source code for your bot (from Azure), as described in [Set up continuous integration](~/azure/azure-bot-service-continuous-integration.md).
-- Download and install the [Bot Framework Emulator](~/debug-bots-emulator.md).
+- Download the source code for your bot (from Azure), as described in [Set up continuous integration](azure-bot-service-continuous-integration.md).
+- Download and install the [Bot Framework Emulator](../debug-bots-emulator.md).
 - Download and install a code editor such as <a href="https://code.visualstudio.com" target="_blank">Visual Studio Code</a>.
 
 ### Debug a Node.js bot using the Bot Framework Emulator
 
 The simplest way to debug your bot locally is to start the bot in Node and then connect to it from Bot Framework Emulator. First, you must set the `NODE_ENV` environment variable. This screenshot shows how to set the `NODE_ENV` environment variable and start the bot.
 
-![run bot](~/media/mac-azureservice-debug-config.png)
+![run bot](../media/mac-azureservice-debug-config.png)
 
 At this point, the bot is running locally. Copy the bot's endpoint from the terminal window (in this example, `http://localhost:3978/api/messages`), start the Bot Framework Emulator, and paste the endpoint into the address bar of the emulator. Since you do not need security for local debugging, you can leave the **Microsoft App ID** and **Microsoft App Password** fields blank. Click **Connect** to establish a connection to your bot using the specified endpoint.
 
-![configure emulator](~/media/mac-azureservice-emulator-config.png)
+![configure emulator](../media/mac-azureservice-emulator-config.png)
 
 After you have connected the emulator to your bot, send a message to your bot by typing some text into the textbox that is located at the bottom of the emulator window (i.e., where **Type your message...** appears in the lower-left corner). By using the **Log** and **Inspector** panels on the right side of the emulator window, you can view the requests and responses as messages are exchanged between the emulator and the bot.
 
-![test via emulator](~/media/mac-azureservice-debug-emulator.png)
+![test via emulator](../media/mac-azureservice-debug-emulator.png)
 
 Additionally, you can view log details from the Node runtime in the terminal window.
 
-![terminal window](~/media/mac-azureservice-debug-logging.png)
+![terminal window](../media/mac-azureservice-debug-logging.png)
 
 ### Debug a Node.js bot using breakpoints in Visual Studio Code
 
@@ -48,11 +48,11 @@ If you need more than logs and request / response traces to debug your bot, you 
 
 First, launch VS Code and open the local folder where the source code for your bot is located.
 
-![open VS Code](~/media/mac-azureservice-debug-vs-config.png)
+![open VS Code](../media/mac-azureservice-debug-vs-config.png)
 
 Switch to the debugging view, and click **run**. If you are prompted to select a runtime engine to run your code, select Node.js.
 
-![VS Code debugging view](~/media/mac-azureservice-debug-vsruntime.png)
+![VS Code debugging view](../media/mac-azureservice-debug-vsruntime.png)
 
 Next, depending on whether you have synced the repository or modified files, you may be prompted to configure the **launch.json** file. If you are prompted, add the `env` configuration setting to the **launch.json** file (to tell the template that you are going to work with the emulator). 
 
@@ -62,17 +62,17 @@ Next, depending on whether you have synced the repository or modified files, you
 }
 ```
 
-![VS Code debugging view](~/media/mac-azureservice-debug-launchjson.png)
+![VS Code debugging view](../media/mac-azureservice-debug-launchjson.png)
 
 Save your changes to the **launch.json** file and click **run** again. Your bot should now be running in the VS Code environment with Node. You can open the debug console to see logging output and set breakpoints as needed.
 
-![VS Code set breakpoints](~/media/mac-azureservice-debug-vsrunning.png)
+![VS Code set breakpoints](../media/mac-azureservice-debug-vsrunning.png)
 
 At this point, the bot is running locally. Copy the bot's endpoint from the debug console in VS Code, start the Bot Framework Emulator, and paste the endpoint into the address bar of the emulator. Since you do not need security for local debugging, you can leave the **Microsoft App ID** and **Microsoft App Password** fields blank. Click **Connect** to establish a connection to your bot using the specified endpoint. 
 
 After you have connected the emulator to your bot, send a message to your bot by typing some text into the textbox that is located at the bottom of the emulator window (i.e., where **Type your message...** appears in the lower-left corner). As messages are exchanged between the emulator and the bot, you should hit the breakpoints that you set in VS Code.
 
-![Debug in VS Code](~/media/mac-azureservice-debug-vsbreakpoint.png)
+![Debug in VS Code](../media/mac-azureservice-debug-vsbreakpoint.png)
 
 ##<a id="debug-csharp"></a> Debug a C\# bot
 
@@ -82,8 +82,8 @@ The C\# environment in Azure Bot Service has more in common with Node.js than a 
 
 Before you can debug your C# bot, you must complete these tasks.
 
-- Download the source code for your bot (from Azure), as described in [Set up continuous integration](~/azure/azure-bot-service-continuous-integration.md).
-- Download and install the [Bot Framework Emulator](~/debug-bots-emulator.md).
+- Download the source code for your bot (from Azure), as described in [Set up continuous integration](azure-bot-service-continuous-integration.md).
+- Download and install the [Bot Framework Emulator](../debug-bots-emulator.md).
 - Install the <a href="https://www.npmjs.com/package/azure-functions-cli" target="_blank">Azure Functions CLI</a>.
 - Install the <a href="https://github.com/dotnet/cli" target="_blank">DotNet CLI</a>.
   
@@ -107,50 +107,50 @@ First, open a command prompt and navigate to the folder where the **project.json
 > If you are using Visual Studio 2017, <a href="https://aka.ms/bf-debug-project">download this **.csproj** file</a> 
 > to the **/messages** folder in your repository before you run the `dotnet restore` command.
 
-![Command prompt](~/media/csharp-azureservice-debug-envconfig.png)
+![Command prompt](../media/csharp-azureservice-debug-envconfig.png)
 
 Next, run `debughost.cmd` to load and start your bot. 
 
-![Command prompt run debughost.cmd](~/media/csharp-azureservice-debug-debughost.png)
+![Command prompt run debughost.cmd](../media/csharp-azureservice-debug-debughost.png)
 
 At this point, the bot is running locally. From the console window, copy the endpoint that debughost is listening on (in this example, `http://localhost:3978`). Then, start the Bot Framework Emulator and paste the endpoint into the address bar of the emulator. For this example, you must also append `/api/messages` to the endpoint. Since you do not need security for local debugging, you can leave the **Microsoft App ID** and **Microsoft App Password** fields blank. Click **Connect** to establish a connection to your bot using the specified endpoint.
 
-![Configure emulator](~/media/mac-azureservice-emulator-config.png)
+![Configure emulator](../media/mac-azureservice-emulator-config.png)
 
 After you have connected the emulator to your bot, send a message to your bot by typing some text into the textbox that is located at the bottom of the emulator window (i.e., where **Type your message...** appears in the lower-left corner). By using the **Log** and **Inspector** panels on the right side of the emulator window, you can view the requests and responses as messages are exchanged between the emulator and the bot.
 
-![test via emulator](~/media/mac-azureservice-debug-emulator.png)
+![test via emulator](../media/mac-azureservice-debug-emulator.png)
 
 Additionally, you can view log details the console window.
 
-![Console window](~/media/csharp-azureservice-debug-debughostlogging.png)
+![Console window](../media/csharp-azureservice-debug-debughostlogging.png)
 
 ### Debug a C# bot using breakpoints in Visual Studio
 
 To debug your bot using breakpoints in Visual Studio 2017, stop the **DebugHost.cmd** script, and load the solution for your project (included as part of the repository) in Visual Studio. Then, click **Task Runner Explorer** at the bottom of the Visual Studio window.
 
-![Visual Studio Task Runner Explorer](~/media/csharp-azureservice-debug-vsopen.png)
+![Visual Studio Task Runner Explorer](../media/csharp-azureservice-debug-vsopen.png)
 
 You will see the bot loading in the debug host environment in the **Task Runner Explorer** window. Your bot is now running locally. Copy the bot's endpoint from the **Task Runner Explorer** window, start the Bot Framework Emulator, and paste the endpoint into the address bar of the emulator. For this example, you must also append `/api/messages` to the endpoint. Since you do not need security for local debugging, you can leave the **Microsoft App Id** and **Microsoft App Password** fields blank. Click **Connect** to establish a connection to your bot using the specified endpoint.
 
 After you have connected the emulator to your bot, send a message to your bot by typing some text into the textbox that is located at the bottom of the emulator window (i.e., where **Type your message...** appears in the lower-left corner). As messages are exchanged between the emulator and the bot, you will see the responses as well as logged output within **Task Runner Explorer** in Visual Studio.
 
-![Debug in Visual Studio](~/media/csharp-azureservice-debug-logging.png)
+![Debug in Visual Studio](../media/csharp-azureservice-debug-logging.png)
 
 You can also set breakpoints for your bot. The breakpoints are hit only after clicking **Start** in the Visual Studio environment, which will attach to the Azure Function host (`func` command from Azure Functions CLI). Chat with your bot again using the emulator and you should hit the breakpoints that you set in Visual Studio.
 
 > [!TIP]
 > If you cannot successfully set a breakpoint, a syntax error likely exists in your code. To troubleshoot, look for compile errors in the **Task Runner Explorer** window after you try to send messages to your bot.
 
-![Debug in Visual Studio](~/media/csharp-azureservice-debug-breakpoint.png)
+![Debug in Visual Studio](../media/csharp-azureservice-debug-breakpoint.png)
 
 > [!NOTE]
 > By following the steps that are described in this article, you will be able to debug a majority of bots 
 > that you might build using Azure Bot Service. 
-> However, if you create a bot using the [Proactive template](~/azure/azure-bot-service-template-proactive.md), 
+> However, if you create a bot using the [Proactive template](azure-bot-service-template-proactive.md), 
 > you must do some additional work to enable queue storage that is used between the trigger function 
 > and the bot function. More information on this topic will be made available soon.
 
 ## Additional resources
 
-- [Set up continuous integration](~/azure/azure-bot-service-continuous-integration.md)
+- [Set up continuous integration](azure-bot-service-continuous-integration.md)

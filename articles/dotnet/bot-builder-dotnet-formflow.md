@@ -12,7 +12,7 @@ ms.reviewer:
 
 # Basic features of FormFlow
 
-[Dialogs](~/dotnet/bot-builder-dotnet-dialogs.md) are very powerful and flexible, but handling a guided conversation such as ordering a sandwich can require a lot of effort. At each point in the conversation, there are many possibilities of what will happen next. For example, you may need to clarify an ambiguity, provide help, go back, or show progress. 
+[Dialogs](bot-builder-dotnet-dialogs.md) are very powerful and flexible, but handling a guided conversation such as ordering a sandwich can require a lot of effort. At each point in the conversation, there are many possibilities of what will happen next. For example, you may need to clarify an ambiguity, provide help, go back, or show progress. 
 By using **FormFlow** within the Bot Builder SDK for .NET, you can greatly simplify the process of managing 
 a guided conversation like this. 
 
@@ -50,14 +50,14 @@ and you should start your enumeration values at **1**.
 FormFlow ignores all other property types and methods.
 
 For complex objects, you must create a form for the top-level C# class and another form for the complex object. 
-You can compose the forms together by using typical [dialog](~/dotnet/bot-builder-dotnet-dialogs.md) semantics. 
+You can compose the forms together by using typical [dialog](bot-builder-dotnet-dialogs.md) semantics. 
 It is also possible to define a form directly by implementing [Advanced.IField][iField] 
 or using [Advanced.Field][field] and populating the dictionaries within it. 
 
 > [!NOTE]
 > You can define a form by using either a C# class or JSON schema. 
 > This article describes how to define a form using a C# class. 
-> For more information about using JSON schema, see [Define a form using JSON schema](~/dotnet/bot-builder-dotnet-formflow-json-schema.md).
+> For more information about using JSON schema, see [Define a form using JSON schema](bot-builder-dotnet-formflow-json-schema.md).
 
 ## Simple sandwich bot
 
@@ -71,7 +71,7 @@ to create the form and define a simple welcome message.
 
 To use FormFlow, you must first import the `Microsoft.Bot.Builder.FormFlow` namespace.
 
-[!code-csharp[Define form](~/includes/code/dotnet-formflow.cs#defineForm)]
+[!code-csharp[Define form](../includes/code/dotnet-formflow.cs#defineForm)]
 
 ### Connect the form to the framework 
 
@@ -79,7 +79,7 @@ To connect the form to the framework, you must add it to the controller.
 In this example, the `Conversation.SendAsync` method calls the static `MakeRootDialog` method, 
 which in turn, calls the `FormDialog.FromForm` method to create the `SandwichOrder` form. 
 
-[!code-csharp[Connect form to framework](~/includes/code/dotnet-formflow.cs#connectToFramework)]
+[!code-csharp[Connect form to framework](../includes/code/dotnet-formflow.cs#connectToFramework)]
 
 ### See it in action
 
@@ -330,7 +330,7 @@ The form returns this information via the `FormCanceledException<T>` class.
 
 This code example shows how to catch the exception and display a message according to the event that occurred. 
 
-[!code-csharp[Handle exception or quit](~/includes/code/dotnet-formflow.cs#handleExceptionOrQuit)]
+[!code-csharp[Handle exception or quit](../includes/code/dotnet-formflow.cs#handleExceptionOrQuit)]
 
 ## Summary
 
@@ -346,15 +346,15 @@ This article has described how to use the basic features of FormFlow to create a
 Although basic FormFlow functionality is sufficient in some cases, 
 you should consider the potential benefits of incorporating some of the more advanced 
 features of FormFlow into your bot. 
-For more information, see [Advanced features of FormFlow](~/dotnet/bot-builder-dotnet-formflow-advanced.md) and [Customize a form using FormBuilder](~/dotnet/bot-builder-dotnet-formflow-formbuilder.md).
+For more information, see [Advanced features of FormFlow](bot-builder-dotnet-formflow-advanced.md) and [Customize a form using FormBuilder](bot-builder-dotnet-formflow-formbuilder.md).
 
 ## Additional resources
 
-- [Advanced features of FormFlow](~/dotnet/bot-builder-dotnet-formflow-advanced.md)
-- [Customize a form using FormBuilder](~/dotnet/bot-builder-dotnet-formflow-formbuilder.md)
-- [Localize form content](~/dotnet/bot-builder-dotnet-formflow-localize.md)
-- [Define a form using JSON schema](~/dotnet/bot-builder-dotnet-formflow-json-schema.md)
-- [Customize user experience with pattern language](~/dotnet/bot-builder-dotnet-formflow-pattern-language.md)
+- [Advanced features of FormFlow](bot-builder-dotnet-formflow-advanced.md)
+- [Customize a form using FormBuilder](bot-builder-dotnet-formflow-formbuilder.md)
+- [Localize form content](bot-builder-dotnet-formflow-localize.md)
+- [Define a form using JSON schema](bot-builder-dotnet-formflow-json-schema.md)
+- [Customize user experience with pattern language](bot-builder-dotnet-formflow-pattern-language.md)
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
 
 [LuisDialog]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.luisdialog-1?view=botbuilder-3.8

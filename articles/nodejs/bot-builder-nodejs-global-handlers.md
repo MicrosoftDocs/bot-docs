@@ -18,7 +18,7 @@ This often occurs in the middle of a conversation, when the bot is expecting a d
 By implementing **actions**, you can design your bot to gracefully handle such requests.
 The handlers will examine user input for the keywords that you specify, such as "help", "cancel", or "start over", and respond appropriately. 
 
-![how users talk](~/media/designing-bots/capabilities/trigger-actions.png)
+![how users talk](../media/designing-bots/capabilities/trigger-actions.png)
 
 
 
@@ -221,7 +221,7 @@ For a complete sample that shows how to implement global message handlers using 
 ## Additional resources
 
 - [matches][matches]
-- [Designing conversation flow](~/bot-design-conversation-flow.md)
+- [Designing conversation flow](../bot-design-conversation-flow.md)
 
 [ClickAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.cardaction#dialogaction
 [EndConversation]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#endconversation

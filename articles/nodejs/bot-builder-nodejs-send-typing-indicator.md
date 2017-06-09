@@ -37,7 +37,7 @@ var bot = new builder.UniversalBot(connector, function (session) {
 
 Typing indicators are also useful when inserting a message delay to prevent messages that contain images from being sent out of order.
 
-To learn more, see [How to send a rich card](~/nodejs/bot-builder-nodejs-send-rich-cards.md).
+To learn more, see [How to send a rich card](bot-builder-nodejs-send-rich-cards.md).
 
 
 ## Additional resources

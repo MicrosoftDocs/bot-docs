@@ -20,7 +20,7 @@ Bots and channels typically exchange text strings but some channels also support
 
 > [!NOTE]
 > For information about how to add media attachments to messages, see 
-> [Add media attachments to messages](~/rest-api/bot-framework-rest-connector-add-media-attachments.md).
+> [Add media attachments to messages](bot-framework-rest-connector-add-media-attachments.md).
 
 ##<a id="types-of-cards"></a> Types of rich cards
 
@@ -90,7 +90,7 @@ Some channels allow you to add multiple rich cards to the `attachments` array wi
 > To display multiple rich cards in carousel format, set the [Activity][Activity] object's `attachmentLayout` property to "carousel". 
 > If the channel does not support carousel format, it will display the rich cards in list format, even if the `attachmentLayout` property specifies "carousel".
 
-The following example shows a request that sends a message containing a single Hero card attachment. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](~/rest-api/bot-framework-rest-connector-api-reference.md#base-uri).
+The following example shows a request that sends a message containing a single Hero card attachment. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 
 ```http
 POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/5d5cdc723 
@@ -157,7 +157,7 @@ Adaptive Cards are created using the JSON format specified in <a href="http://ad
 
 Leverage the information within the <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a> site to understand Adaptive Card schema, explore Adaptive Card elements, and see JSON samples that can be used to create cards of varying composition and complexity. Additionally, you can use the Interactive Visualizer to design Adaptive Card payloads and preview card output.
 
-The following example shows a request that sends a message containing a single Adaptive Card for a calendar reminder. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](~/rest-api/bot-framework-rest-connector-api-reference.md#base-uri).
+The following example shows a request that sends a message containing a single Adaptive Card for a calendar reminder. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 
 ```http
 POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/5d5cdc723 
@@ -254,27 +254,27 @@ Content-Type: application/json
 
 The resulting card contains three blocks of text, an input field (choice list), and three buttons:
 
-![Adaptive Card calendar reminder](~/media/adaptive-card-reminder.png)
+![Adaptive Card calendar reminder](../media/adaptive-card-reminder.png)
 
 
 ## Additional resources
 
-- [Create messages](~/rest-api/bot-framework-rest-connector-create-messages.md)
-- [Send and receive messages](~/rest-api/bot-framework-rest-connector-send-and-receive-messages.md)
-- [Add media attachments to messages](~/rest-api/bot-framework-rest-connector-add-media-attachments.md)
+- [Create messages](bot-framework-rest-connector-create-messages.md)
+- [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md)
+- [Add media attachments to messages](bot-framework-rest-connector-add-media-attachments.md)
 - [Channel Inspector][ChannelInspector]
 - <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a>
 
 [ChannelInspector]: https://docs.botframework.com/en-us/channel-inspector/channels/Skype/#navtitle
 
-[animationCard]: ~/rest-api/bot-framework-rest-connector-api-reference.md#animationcard-object
-[audioCard]: ~/rest-api/bot-framework-rest-connector-api-reference.md#audiocard-object
-[heroCard]: ~/rest-api/bot-framework-rest-connector-api-reference.md#herocard-object
-[thumbnailCard]: ~/rest-api/bot-framework-rest-connector-api-reference.md#thumbnailcard-object
-[receiptCard]: ~/rest-api/bot-framework-rest-connector-api-reference.md#receiptcard-object
-[signinCard]: ~/rest-api/bot-framework-rest-connector-api-reference.md#signincard-object
-[videoCard]: ~/rest-api/bot-framework-rest-connector-api-reference.md#videocard-object
+[animationCard]: bot-framework-rest-connector-api-reference.md#animationcard-object
+[audioCard]: bot-framework-rest-connector-api-reference.md#audiocard-object
+[heroCard]: bot-framework-rest-connector-api-reference.md#herocard-object
+[thumbnailCard]: bot-framework-rest-connector-api-reference.md#thumbnailcard-object
+[receiptCard]: bot-framework-rest-connector-api-reference.md#receiptcard-object
+[signinCard]: bot-framework-rest-connector-api-reference.md#signincard-object
+[videoCard]: bot-framework-rest-connector-api-reference.md#videocard-object
 
-[CardAction]: ~/rest-api/bot-framework-rest-connector-api-reference.md#cardaction-object
-[Activity]: ~/rest-api/bot-framework-rest-connector-api-reference.md#activity-object
-[Attachment]: ~/rest-api/bot-framework-rest-connector-api-reference.md#attachment-object
+[CardAction]: bot-framework-rest-connector-api-reference.md#cardaction-object
+[Activity]: bot-framework-rest-connector-api-reference.md#activity-object
+[Attachment]: bot-framework-rest-connector-api-reference.md#attachment-object

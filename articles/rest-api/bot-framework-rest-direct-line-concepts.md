@@ -32,7 +32,7 @@ Using the Direct Line API, a client can send messages to your bot by issuing `HT
 
 ## Additional resources
 
-If you encounter problems or have suggestions regarding the Direct Line API, see [Support](~/resources-support.md) for a list of available resources. 
+If you encounter problems or have suggestions regarding the Direct Line API, see [Support](../resources-support.md) for a list of available resources. 
 
 [DirectLine3]: https://docs.botframework.com/en-us/restapi/directline3/#navtitle
 
