@@ -6,8 +6,7 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
-ms.reviewer:
+ms.date: 06/06/2017
 ---
 
 # Add rich card attachments to messages
@@ -166,6 +165,7 @@ The resulting card contains three blocks of text, an input field (choice list), 
 
 ## Additional resources
 
+* [Preview features with the Channel Inspector][inspector]
 * <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a>
 * [AnimationCard][animationCard]
 * [AudioCard][audioCard]
@@ -194,3 +194,5 @@ The resulting card contains three blocks of text, an input field (choice list), 
 [signinCard]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.signincard.html 
 
 [videoCard]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.videocard.html
+
+[inspector]: ../portal-channel-inspector.md

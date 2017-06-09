@@ -6,8 +6,7 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
-ms.reviewer:
+ms.date: 06/06/2017
 ---
 
 # Add media attachments to messages
@@ -34,8 +33,12 @@ If an attachment is an image, audio, or video, the Connector service will commun
 
 ## Additional resources
 
+- [Preview features with the Channel Inspector][inspector]
 - [Activities overview](~/dotnet/bot-builder-dotnet-activities.md)
 - [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
 - [Add rich cards to messages](~/dotnet/bot-builder-dotnet-add-rich-card-attachments.md)
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.8" target="_blank">Activity class</a>
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.attachment?view=botbuilder-3.8" target="_blank">Attachment class</a>
+
+[inspector]: ../portal-channel-inspector.md
+

@@ -119,10 +119,11 @@
 ## [Manage](manage/TOC.md)
 ## Connect to channels
 ### [Configure a bot](portal-configure-channels.md) 
+### [Channel Inspector](~/portal-channel-inspector.md)
 ### [Bing](channel-connect-bing.md) 
 ### [Cortana](channel-connect-cortana.md) 
 ### [Skype for Business](channel-connect-skypeforbusiness.md)
-### [Direct Line](https://docs.botframework.com/en-us/restapi/directline3/#navtitle)
+### [Direct Line](channel-connect-directline.md)
 ### [Microsoft Teams](https://msdn.microsoft.com/en-us/microsoft-teams/bots)
 ### [Skype](https://dev.skype.com/bots)
 ### [Web Chat](channel-connect-webchat.md)

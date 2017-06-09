@@ -6,8 +6,7 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
-ms.reviewer:
+ms.date: 06/06/2017
 ---
 
 # Send and receive attachments
@@ -52,10 +51,9 @@ var bot = new builder.UniversalBot(connector, function (session) {
 });
 
 ```
-
-
 ## Additional resources
 
+* [Preview features with the Channel Inspector][inspector]
 * [IMessage][IMessage]
 * [Send a rich card][SendRichCard]
 * [session.send][SessionSend]
@@ -64,3 +62,4 @@ var bot = new builder.UniversalBot(connector, function (session) {
 [SendRichCard]: bot-builder-nodejs-send-rich-cards.md
 [SessionSend]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#send
 [IAttachment]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iattachment.html
+[inspector]: ../portal-channel-inspector.md

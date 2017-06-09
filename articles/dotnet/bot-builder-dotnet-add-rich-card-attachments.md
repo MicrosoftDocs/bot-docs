@@ -6,8 +6,7 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
-ms.reviewer:
+ms.date: 06/06/2017
 ---
 
 # Add rich card attachments to messages
@@ -126,6 +125,7 @@ The resulting card contains three blocks of text, an input field (choice list), 
 
 ## Additional resources
 
+- [Preview features with the Channel Inspector][inspector]
 - <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a>
 - [Activities overview](~/dotnet/bot-builder-dotnet-activities.md)
 - [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
@@ -146,3 +146,5 @@ The resulting card contains three blocks of text, an input field (choice list), 
 [signinCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.signincard?view=botbuilder-3.8 
 
 [videoCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.videocard?view=botbuilder-3.8
+
+[inspector]: ../portal-channel-inspector.md

@@ -44,7 +44,7 @@ bot to web browser, and back again.
 
 This diagram shows the high-level flow for integration between bot and web browser. 
 
-![Bot to web interaction](~/media/designing-bots/patterns/bot-to-web1.png)
+![Bot to web interaction](~/media/bot-design-pattern-integrate-browser/bot-to-web1.png)
 
 Consider each step of the flow:
 

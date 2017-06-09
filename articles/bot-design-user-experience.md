@@ -91,7 +91,7 @@ Using the APIs, your bot can extract the key components of the user's text to id
 When implementing natural language understanding capabilities in your bot, 
 set realistic expectations for the level of detail that users are likely to provide in their input. 
 
-![how users talk](~/media/designing-bots/core/buy-house.png)
+![how users talk](~/media/bot-design-user-experience/buy-house.png)
 
 > [!TIP]
 > When building natural language models, do not assume that users will provide all the required information in their initial query. 
