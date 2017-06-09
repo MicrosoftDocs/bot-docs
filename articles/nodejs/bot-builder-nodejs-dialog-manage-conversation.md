@@ -169,7 +169,7 @@ bot.dialog('/ensureProfile', [
         if (results.response) {
             session.dialogData.profile.email = results.response;
         }
-        session.endDialogWithResults({ repsonse: session.dialogData.profile })
+        session.endDialogWithResults({ response: session.dialogData.profile })
     }
 ]);
 ```
