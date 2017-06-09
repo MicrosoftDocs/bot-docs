@@ -50,7 +50,7 @@ If your bot will use Slack-specific functionality such as buttons, select the **
 
 ![Enable messages](~/media/channels/slack-EnableMessages.png)
 
-Set the Request URL for Interactive Messages to be https://slack.botframework.com/api/Actions, then select the **Enable Interactive Messages** button and  **Save changes** once the URL is successfully validated.
+Set the Request URL for Interactive Messages to be https://slack.botframework.com/api/Actions, then select the **Enable Interactive Messages** button and **Save changes** once the URL is successfully validated.
 
 ![Enable messages](~/media/channels/slack-MessageURL.png)
 
