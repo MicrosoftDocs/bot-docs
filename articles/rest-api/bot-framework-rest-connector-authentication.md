@@ -375,6 +375,20 @@ As of May 1, 2017, the Bot Framework supports two versions of security protocol:
 
 ### [Emulator to Bot authentication](#emulator-to-bot)
 
+#### OAuth login URL
+
+| Protocol version | Valid value |
+|----|----|
+| v3.0 (June 2016 - July 31, 2017) | `https://login.microsoftonline.com/common/oauth2/v2.0/token` | 
+| v3.1 (starting December 2016) | `https://login.microsoftonline.com/botframework.com/oauth2/v2.0/token` |
+
+#### OAuth scope
+
+| Protocol version | Valid value |
+|----|----|
+| v3.0 (June 2016 - July 31, 2017) | `https://graph.microsoft.com/.default` | 
+| v3.1 (starting December 2016) |  Your bot’s Microsoft App ID + `/.default` |
+
 #### JWT Audience
 
 | Protocol version | Valid value |
