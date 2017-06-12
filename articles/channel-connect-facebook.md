@@ -1,8 +1,8 @@
 ---
 title: Connect a bot to Facebook Messenger | Microsoft Docs
 description: Learn how to configure a bot's connection to Facebook Messenger.
-author: JaymeMPerlman
-ms.author: v-jaype
+author: RobStand
+ms.author: rstand
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

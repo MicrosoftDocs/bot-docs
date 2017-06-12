@@ -15,9 +15,9 @@ ms.reviewer:
 > - [.NET](../dotnet/bot-builder-dotnet-manage-conversation-flow.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-dialog-manage-conversation.md)
 
-[!include[Dialog flow example](~/includes/snippet-dotnet-manage-conversation-flow-intro.md)]
+[!include[Dialog flow example](../includes/snippet-dotnet-manage-conversation-flow-intro.md)]
 
-This article describes how to model this conversation flow by using [dialogs](~/dotnet/bot-builder-dotnet-dialogs.md) and the Bot Builder SDK for .NET. 
+This article describes how to model this conversation flow by using [dialogs](bot-builder-dotnet-dialogs.md) and the Bot Builder SDK for .NET. 
 
 ## Invoke the root dialog
 
@@ -96,7 +96,7 @@ For a complete sample that shows how to manage a conversation by using dialogs i
 
 ## Additional resources
 
-- [Dialogs](~/dotnet/bot-builder-dotnet-dialogs.md)
-- [Design and control conversation flow](~/bot-design-conversation-flow.md)
+- [Dialogs](bot-builder-dotnet-dialogs.md)
+- [Design and control conversation flow](../bot-design-conversation-flow.md)
 - <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-BasicMultiDialog" target="_blank">Basic Multi-Dialog sample (GitHub)</a>
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>

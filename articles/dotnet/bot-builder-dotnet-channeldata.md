@@ -12,7 +12,7 @@ ms.reviewer:
 
 # Implement channel-specific functionality
 
-Some channels provide features that cannot be implemented by using only [message text and attachments](~/dotnet/bot-builder-dotnet-create-messages.md). To implement channel-specific functionality, you can pass native metadata to a channel in the `Activity` object's `ChannelData` property. For example, your bot can use the `ChannelData` property to instruct Telegram to send a sticker or to instruct Office365 to send an email.
+Some channels provide features that cannot be implemented by using only [message text and attachments](bot-builder-dotnet-create-messages.md). To implement channel-specific functionality, you can pass native metadata to a channel in the `Activity` object's `ChannelData` property. For example, your bot can use the `ChannelData` property to instruct Telegram to send a sticker or to instruct Office365 to send an email.
 
 This article describes how to use a message activity's `ChannelData` property to implement this channel-specific functionality:
 
@@ -65,7 +65,7 @@ set the `Activity` object's `ChannelData` property to a JSON object that specifi
 
 > [!NOTE]
 > To support buttons in Slack messages, you must enable **Interactive Messages** when you 
-> [connect your bot](~/portal-configure-channels.md) to the Slack channel.
+> [connect your bot](../portal-configure-channels.md) to the Slack channel.
 
 This snippet shows an example of the `channelData` property for a custom Slack message.
 
@@ -146,7 +146,7 @@ when a user clicks a button in the Slack message.
 }
 ```
 
-Your bot can reply to this message in the [normal manner](~/dotnet/bot-builder-dotnet-connector.md#create-reply), 
+Your bot can reply to this message in the [normal manner](bot-builder-dotnet-connector.md#create-reply), 
 or it can post its response directly to the endpoint that is specified by 
 the `payload` object's `response_url` property.
 For information about when and how to post a response to the `response_url`, see 
@@ -295,6 +295,6 @@ This snippet shows an example of the `channelData` property for a native Kik mes
 
 ## Additional resources
 
-- [Activities overview](~/dotnet/bot-builder-dotnet-activities.md)
-- [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
+- [Activities overview](bot-builder-dotnet-activities.md)
+- [Create messages](bot-builder-dotnet-create-messages.md)
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.8" target="_blank">Activity class</a>

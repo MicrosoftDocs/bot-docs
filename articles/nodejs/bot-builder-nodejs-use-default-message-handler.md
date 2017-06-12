@@ -52,7 +52,7 @@ For details about the template syntax, refer to the documentation for the [sprin
 
 * **Message handlers** - For a bot that's more complex than the previous example, you may want to use different forms of message handlers. You can add an *action* to a dialog to listen for user input as it occurs. See [Listen for messages using actions](bot-builder-nodejs-global-handlers.md) for information on using actions in your bot. Another form is a [waterfall](bot-builder-nodejs-dialog-waterfall.md), which is a common way to guide the user through a series of steps or prompt the user with a series of questions before taking action. 
 
-* **Attachments, rich cards, suggested actions, and speech** - The contents of messages aren't limited to text strings. Your bot can also [send and receive attachments][SendAttachments], present the user with [rich cards][SendCardWithButtons] that contain images and buttons, [send suggested actions](~/nodejs/bot-builder-nodejs-send-suggested-actions.md), and [send text to be spoken by your bot](~/nodejs/bot-builder-nodejs-text-to-speech.md) on a speech-enabled channel.
+* **Attachments, rich cards, suggested actions, and speech** - The contents of messages aren't limited to text strings. Your bot can also [send and receive attachments][SendAttachments], present the user with [rich cards][SendCardWithButtons] that contain images and buttons, [send suggested actions](bot-builder-nodejs-send-suggested-actions.md), and [send text to be spoken by your bot](bot-builder-nodejs-text-to-speech.md) on a speech-enabled channel.
 
 ## Additional resources
 
@@ -60,15 +60,15 @@ For details about the template syntax, refer to the documentation for the [sprin
 * [sprintf][sprintf]
 * [Send attachments][SendAttachments]
 * [Add rich cards to messages][SendCardWithButtons]
-* [Add speech to messages](~/nodejs/bot-builder-nodejs-text-to-speech.md)
-* [Send suggested actions](~/nodejs/bot-builder-nodejs-send-suggested-actions.md)
-* [Ask questions](~/nodejs/bot-builder-nodejs-prompts.md)
-* [Listen for messages using actions]( ~/nodejs/bot-builder-nodejs-global-handlers.md)
+* [Add speech to messages](bot-builder-nodejs-text-to-speech.md)
+* [Send suggested actions](bot-builder-nodejs-send-suggested-actions.md)
+* [Ask questions](bot-builder-nodejs-prompts.md)
+* [Listen for messages using actions]( bot-builder-nodejs-global-handlers.md)
 
-[SendAttachments]: ~/nodejs/bot-builder-nodejs-send-receive-attachments.md
-[SendCardWithButtons]: ~/nodejs/bot-builder-nodejs-send-rich-cards.md
+[SendAttachments]: bot-builder-nodejs-send-receive-attachments.md
+[SendCardWithButtons]: bot-builder-nodejs-send-rich-cards.md
 [sprintf]: https://github.com/alexei/sprintf.js
-[emulator]: ~/debug-bots-emulator.md
+[emulator]: ../debug-bots-emulator.md
 [appId]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ichatconnectorsettings.html#appid
 [appPassword]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ichatconnectorsettings.html#apppassword
 [SessionSend]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#send

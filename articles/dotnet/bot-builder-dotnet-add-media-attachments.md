@@ -20,23 +20,29 @@ The `Attachments` property of the <a href="https://docs.microsoft.com/en-us/dotn
 
 > [!NOTE]
 > For information about how to add rich cards to messages, see 
-> [Add rich cards to messages](~/dotnet/bot-builder-dotnet-add-rich-card-attachments.md).
+> [Add rich cards to messages](bot-builder-dotnet-add-rich-card-attachments.md).
 
 ## Add a media attachment  
 
 To add a media attachment to a message, create an `Attachment` object for the `message` activity and set 
 the `ContentType`, `ContentUrl`, and `Name` properties. 
 
-[!code-csharp[Add media attachment](~/includes/code/dotnet-add-attachments.cs#addMediaAttachment)]
+[!code-csharp[Add media attachment](../includes/code/dotnet-add-attachments.cs#addMediaAttachment)]
 
-If an attachment is an image, audio, or video, the Connector service will communicate attachment data to the channel in a way that enables the [channel](~/dotnet/bot-builder-dotnet-channeldata.md) to render that attachment within the conversation. If the attachment is a file, the file URL will be rendered as a hyperlink within the conversation.
+If an attachment is an image, audio, or video, the Connector service will communicate attachment data to the channel in a way that enables the [channel](bot-builder-dotnet-channeldata.md) to render that attachment within the conversation. If the attachment is a file, the file URL will be rendered as a hyperlink within the conversation.
 
 ## Additional resources
 
 - [Preview features with the Channel Inspector][inspector]
+<<<<<<< HEAD
 - [Activities overview](~/dotnet/bot-builder-dotnet-activities.md)
 - [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
 - [Add rich cards to messages](~/dotnet/bot-builder-dotnet-add-rich-card-attachments.md)
+=======
+- [Activities overview](bot-builder-dotnet-activities.md)
+- [Create messages](bot-builder-dotnet-create-messages.md)
+- [Add rich cards to messages](bot-builder-dotnet-add-rich-card-attachments.md)
+>>>>>>> adca8cd6829c530d37b27c7cab69ad770530b391
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.8" target="_blank">Activity class</a>
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.attachment?view=botbuilder-3.8" target="_blank">Attachment class</a>
 

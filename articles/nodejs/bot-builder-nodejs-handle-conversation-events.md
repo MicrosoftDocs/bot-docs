@@ -20,14 +20,14 @@ The Bot Framework provides the [conversationUpdate][conversationUpdate] event fo
 
 Your bot can greet the user or perform other first-run activities when a user joins the conversation. 
 
-[!include[conversationUpdate sample Node.js](~/includes/snippet-code-node-contactrelationupdate-1.md)]
+[!include[conversationUpdate sample Node.js](../includes/snippet-code-node-contactrelationupdate-1.md)]
 
 ## Acknowledge add to contacts list
 
 The [contactRelationUpdate][contactRelationUpdate] event notifies your bot that a user has added you to their contacts list.
 
 
-[!include[contactRelationUpdate sample Node.js](~/includes/snippet-code-node-contactrelationupdate-1.md)]
+[!include[contactRelationUpdate sample Node.js](../includes/snippet-code-node-contactrelationupdate-1.md)]
 
 ## Add a first-run dialog
 
@@ -37,7 +37,7 @@ a universal way to greet a user who joins a conversation is to add a first-run d
 In the following example we’ve added a function that triggers the dialog any time we’ve never seen a user before. 
 You can customize the way an action is triggered by providing an [onFindAction][onFindAction] handler for your action. 
 
-[!include[first-run sample Node.js](~/includes/snippet-code-node-first-run-dialog-1.md)]
+[!include[first-run sample Node.js](../includes/snippet-code-node-first-run-dialog-1.md)]
 
 
 You can also customize what an action does after its been triggered by providing an [onSelectAction][onSelectAction] handler. 

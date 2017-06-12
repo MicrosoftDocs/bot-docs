@@ -16,7 +16,7 @@ ms.reviewer:
 > - [Node.js](../nodejs/bot-builder-nodejs-text-to-speech.md)
 > - [REST](../rest-api/bot-framework-rest-connector-text-to-speech.md)
 
-If you are building a bot for a speech-enabled channel such as Cortana, you can construct messages that specify the text to be spoken by your bot. You can also attempt to influence the state of the client's microphone by specifying an [input hint](~/dotnet/bot-builder-dotnet-add-input-hints.md) to indicate whether your bot is accepting, expecting, or ignoring user input.
+If you are building a bot for a speech-enabled channel such as Cortana, you can construct messages that specify the text to be spoken by your bot. You can also attempt to influence the state of the client's microphone by specifying an [input hint](bot-builder-dotnet-add-input-hints.md) to indicate whether your bot is accepting, expecting, or ignoring user input.
 
 ## Specify text to be spoken by your bot
 
@@ -24,21 +24,21 @@ Using the Bot Builder SDK for .NET, there are multiple ways to specify the text 
 
 ###<a id="message-speak"></a> IMessageActivity.Speak
 
-If you are creating a [message][IMessageActivity] and setting its individual properties, you can set the `Speak` property of the message to specify the text to be spoken by your bot. The following code example creates a message that specifies text to be displayed and text to be spoken and indicates that the bot is [accepting user input](~/dotnet/bot-builder-dotnet-add-input-hints.md).
+If you are creating a [message][IMessageActivity] and setting its individual properties, you can set the `Speak` property of the message to specify the text to be spoken by your bot. The following code example creates a message that specifies text to be displayed and text to be spoken and indicates that the bot is [accepting user input](bot-builder-dotnet-add-input-hints.md).
 
-[!code-csharp[Set speak property](~/includes/code/dotnet-text-to-speech.cs#Speak1)]
+[!code-csharp[Set speak property](../includes/code/dotnet-text-to-speech.cs#Speak1)]
 
 ###<a id="say-async"></a> IDialogContext.SayAsync()
 
-If you are using [dialogs](~/dotnet/bot-builder-dotnet-dialogs.md), you can call the `SayAsync()` method to create and send a message that specifies the text to be spoken, in addition to the text to be displayed and other options. The following code example creates a message that specifies text to be displayed and text to be spoken.
+If you are using [dialogs](bot-builder-dotnet-dialogs.md), you can call the `SayAsync()` method to create and send a message that specifies the text to be spoken, in addition to the text to be displayed and other options. The following code example creates a message that specifies text to be displayed and text to be spoken.
 
-[!code-csharp[Call SayAsync()](~/includes/code/dotnet-text-to-speech.cs#Speak2)]
+[!code-csharp[Call SayAsync()](../includes/code/dotnet-text-to-speech.cs#Speak2)]
 
 ###<a id="prompt-options"></a> Prompt options
 
 Using any of the built-in prompts, you can set the options `speak` and `retrySpeak` to specify the text to be spoken by your bot. The following code example creates a prompt that specifies text to be displayed, text to be spoken initially, and text to be spoken after waiting a while for user input. It uses [SSML](#ssml) formatting to indicate that the word "sure" should be spoken with a moderate amount of emphasis.
 
-[!code-csharp[Set Prompt options](~/includes/code/dotnet-text-to-speech.cs#Speak3)]
+[!code-csharp[Set Prompt options](../includes/code/dotnet-text-to-speech.cs#Speak3)]
 
 ##<a id="ssml"></a> Speech Synthesis Markup Language (SSML)
 
@@ -46,7 +46,7 @@ To specify text to be spoken by your bot, you can use either a plain text string
 
 ## Input hints
 
-When you send a message on a speech-enabled channel, you can attempt to influence the state of the client's microphone by also including an input hint to indicate whether your bot is accepting, expecting, or ignoring user input. For more information, see [Add input hints to messages](~/dotnet/bot-builder-dotnet-add-input-hints.md).
+When you send a message on a speech-enabled channel, you can attempt to influence the state of the client's microphone by also including an input hint to indicate whether your bot is accepting, expecting, or ignoring user input. For more information, see [Add input hints to messages](bot-builder-dotnet-add-input-hints.md).
 
 ## Sample code 
 
@@ -54,8 +54,8 @@ For a complete sample that shows how to create a speech-enabled bot using the Bo
 
 ## Additional resources
 
-- [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
-- [Add input hints to messages](~/dotnet/bot-builder-dotnet-add-input-hints.md)
+- [Create messages](bot-builder-dotnet-create-messages.md)
+- [Add input hints to messages](bot-builder-dotnet-add-input-hints.md)
 - <a href="https://msdn.microsoft.com/en-us/library/hh378377(v=office.14).aspx" target="_blank">Speech Synthesis Markup Language (SSML)</a>
 - <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/demo-RollerSkill" target="_blank">Roller Skill sample (GitHub)</a>
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.8" target="_blank">Activity class</a>

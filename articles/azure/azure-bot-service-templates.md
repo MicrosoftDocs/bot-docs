@@ -14,7 +14,7 @@ ms.reviewer:
 
 The Azure Bot Service enables you to quickly and easily create a bot in either C# or Node.js by using one of five templates. 
 
-[!include[Azure Bot Service templates](~/includes/snippet-abs-templates.md)] 
+[!include[Azure Bot Service templates](../includes/snippet-abs-templates.md)] 
 
 All bots that are created using the Azure Bot Service will initially contain a core set of files (specific to the development language that you choose), along with additional files that contain code that is specific to the selected template.
 
@@ -28,9 +28,9 @@ If you choose C# as the language for your bot, the application that is created w
 
 | File | Description |
 |----|----|
-| **Bot.sln** | The Microsoft Visual Studio solutions file. It is used locally if you [set up continuous integration](~/azure/azure-bot-service-continuous-integration.md). |
+| **Bot.sln** | The Microsoft Visual Studio solutions file. It is used locally if you [set up continuous integration](azure-bot-service-continuous-integration.md). |
 | **commands.json** | This file contains the commands that start **debughost** in Task Runner Explorer when you open the **Bot.sln** file. If you do not install Task Runner Explorer, you can delete this file. |
-| **debughost.cmd** | This file contains the commands to load and run your bot. It is used locally if you [set up continuous integration](~/azure/azure-bot-service-continuous-integration.md) and debug your bot locally. For more information, see [Debug a C# bot using the Azure Bot Service on Windows](~/azure/azure-bot-service-debug-bot.md#debug-csharp). This file also contains your bot's App ID and password. To debug authentication, set the App ID and password in this file and also specify the App ID and password when testing your bot using the [emulator}(~/debug-bots-emulator.md). |
+| **debughost.cmd** | This file contains the commands to load and run your bot. It is used locally if you [set up continuous integration](azure-bot-service-continuous-integration.md) and debug your bot locally. For more information, see [Debug a C# bot using the Azure Bot Service on Windows](azure-bot-service-debug-bot.md#debug-csharp). This file also contains your bot's App ID and password. To debug authentication, set the App ID and password in this file and also specify the App ID and password when testing your bot using the [emulator}(../debug-bots-emulator.md). |
 | **function.json** | This file contains the function’s bindings. Do not modify this file. |
 | **host.json** | This metadata file contains the global configuration options that affect the function. |
 | **project.json** | This file contains the project’s NuGet references. You can modify this file to add a new reference. |

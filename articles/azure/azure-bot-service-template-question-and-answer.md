@@ -12,11 +12,11 @@ ms.reviewer:
 
 # Create a bot using the Question and Answer template
 
-To create a bot that can answer frequently asked questions (FAQs), choose the [Question and Answer template](~/azure/azure-bot-service-templates.md) when creating the bot using Azure Bot Service. This article describes how to specify a knowledge base for your bot and provides a walkthrough of the code that is automatically generated when you create a bot using the Question and Answer template.
+To create a bot that can answer frequently asked questions (FAQs), choose the [Question and Answer template](azure-bot-service-templates.md) when creating the bot using Azure Bot Service. This article describes how to specify a knowledge base for your bot and provides a walkthrough of the code that is automatically generated when you create a bot using the Question and Answer template.
 
 > [!NOTE]
 > A bot that is created using the Question and Answer template routes messages 
-> in the same manner as described for the [Basic template](~/azure/azure-bot-service-template-basic.md).
+> in the same manner as described for the [Basic template](azure-bot-service-template-basic.md).
 
 ## Specify a knowledge base for your bot
 
@@ -26,15 +26,15 @@ When you use the Question and Answer template to create a bot with the Azure Bot
 
 ## Code walkthrough
 
-Most activities that the bot receives will be of [type](~/dotnet/bot-builder-dotnet-activities.md) `Message` and will contain the text and attachments that the user sent to the bot. To process an incoming message, the bot posts the message to `BasicQnAMakerDialog` (in **BasicQnAMakerDialog.csx**). 
+Most activities that the bot receives will be of [type](../dotnet/bot-builder-dotnet-activities.md) `Message` and will contain the text and attachments that the user sent to the bot. To process an incoming message, the bot posts the message to `BasicQnAMakerDialog` (in **BasicQnAMakerDialog.csx**). 
 
 This code snippet uses C# to post an incoming message to `BasicQnAMakerDialog`.
 
-[!code-csharp[process message](~/includes/code/azure-bot-service-template-question-and-answer.cs#processMessage)]
+[!code-csharp[process message](../includes/code/azure-bot-service-template-question-and-answer.cs#processMessage)]
 
 This code snippet uses Node.js to post an incoming message to `BasicQnAMakerDialog`.
 
-[!code-javascript[process message](~/includes/code/azure-bot-service-template-question-and-answer.js#processMessage)]
+[!code-javascript[process message](../includes/code/azure-bot-service-template-question-and-answer.js#processMessage)]
 
 ### BasicQnAMakerDialog.csx
 
@@ -55,25 +55,25 @@ The call to invoke the QnA Maker service can include up to four parameters:
 
 This code snippet uses C# to invoke the QnA Maker service.
 
-[!code-csharp[BasicQnAMakerDialog](~/includes/code/azure-bot-service-template-question-and-answer.cs#BasicQnAMakerDialog)]
+[!code-csharp[BasicQnAMakerDialog](../includes/code/azure-bot-service-template-question-and-answer.cs#BasicQnAMakerDialog)]
 
 This code snippet uses Node.js to invoke the QnA Maker service.
 
-[!code-javascript[BasicQnAMakerDialog](~/includes/code/azure-bot-service-template-question-and-answer.js#BasicQnAMakerDialog)]
+[!code-javascript[BasicQnAMakerDialog](../includes/code/azure-bot-service-template-question-and-answer.js#BasicQnAMakerDialog)]
 
 ## Extend default functionality
 
-The Question and Answer template provides a good foundation that you can build upon and customize to create a bot that can answer frequently asked questions (FAQs). To learn more about using QnA Maker with your bot, see [Design knowledge bots](~/bot-design-pattern-knowledge-base.md#qna-maker) and [QnA Maker][qnaMaker].
+The Question and Answer template provides a good foundation that you can build upon and customize to create a bot that can answer frequently asked questions (FAQs). To learn more about using QnA Maker with your bot, see [Design knowledge bots](../bot-design-pattern-knowledge-base.md#qna-maker) and [QnA Maker][qnaMaker].
 
 ## Additional resources
 
-- [Create a bot with the Azure Bot Service](~/azure/azure-bot-service-quickstart.md)
-- [Templates in the Azure Bot Service](~/azure/azure-bot-service-templates.md)
-- [Design knowledge bots](~/bot-design-pattern-knowledge-base.md)
+- [Create a bot with the Azure Bot Service](azure-bot-service-quickstart.md)
+- [Templates in the Azure Bot Service](azure-bot-service-templates.md)
+- [Design knowledge bots](../bot-design-pattern-knowledge-base.md)
 - <a href="https://qnamaker.ai/" target="_blank">QnA Maker</a>
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub repository</a>
-- [Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-overview.md)
-- [Bot Builder SDK for Node.js](~/nodejs/index.md)
+- [Bot Builder SDK for .NET](../dotnet/bot-builder-dotnet-overview.md)
+- [Bot Builder SDK for Node.js](../nodejs/index.md)
 
 [qnaMaker]: https://qnamaker.ai/
 

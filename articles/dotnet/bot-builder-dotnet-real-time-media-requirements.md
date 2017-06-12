@@ -33,7 +33,7 @@ Not all guidance that applies to developing messaging and IVR calling bots appli
 
 - Because of the public IP address requirement, real-time media bots must be hosted in either an "IaaS" Azure Virtual Machine, or a "classic" Azure Cloud Service. Other runtime environments, such as Azure Bot Service or Service Fabric with VM Scale Sets, are not supported, as these do not support ILPIP.
 
-- Real-time media bots are also not supported by the [Bot Framework Emulator](~/debug-bots-emulator.md).
+- Real-time media bots are also not supported by the [Bot Framework Emulator](../debug-bots-emulator.md).
 
 ## Scalability and performance considerations
 

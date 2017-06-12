@@ -163,7 +163,7 @@ var bot = new builder.UniversalBot(connector, [
 
 If you run the previous waterfall example, you’ll notice that while it will ask for your name and give you a personalized greeting it won’t remember your name.
 After the last step of the waterfall is reached it will simply start over with the next message. 
-To add logic to remember the user's name so that we only have to ask it once, see [Save user data](~/nodejs/bot-builder-nodejs-save-user-data.md) for an example. 
+To add logic to remember the user's name so that we only have to ask it once, see [Save user data](bot-builder-nodejs-save-user-data.md) for an example. 
 
 
 ## Handling cancel
@@ -309,10 +309,10 @@ For a complete sample that shows how to manage a conversation by using dialogs i
 - [Save user data][SaveUserData]
 
 
-[SendAttachments]: ~/nodejs/bot-builder-nodejs-send-receive-attachments.md
-[SendCardWithButtons]: ~/nodejs/bot-builder-nodejs-send-rich-cards.md
-[RecognizeUserIntent]: ~/nodejs/bot-builder-nodejs-recognize-intent.md
-[SaveUserData]: ~/nodejs/bot-builder-nodejs-save-user-data.md
+[SendAttachments]: bot-builder-nodejs-send-receive-attachments.md
+[SendCardWithButtons]: bot-builder-nodejs-send-rich-cards.md
+[RecognizeUserIntent]: bot-builder-nodejs-recognize-intent.md
+[SaveUserData]: bot-builder-nodejs-save-user-data.md
 
 [UniversalBot]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.universalbot.html
 [ChatConnector]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.chatconnector.html

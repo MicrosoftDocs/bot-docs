@@ -22,20 +22,20 @@ By specifying an input hint for a message, you can indicate whether your bot is 
 
 To indicate that your bot is passively ready for input but is not awaiting a response from the user, set the message's input hint to `builder.InputHint.acceptingInput`. On many channels, this will cause the client's input box to be enabled and microphone to be closed, but still accessible to the user. For example, Cortana will open the microphone to accept input from the user if the user holds down the microphone button. The following code example creates a message that indicates the bot is accepting user input.
 
-[!code-javascript[IMessage.speak](~/includes/code/node-input-hints.js#InputHintAcceptingInput)]
+[!code-javascript[IMessage.speak](../includes/code/node-input-hints.js#InputHintAcceptingInput)]
 
 ## Expecting input
 
 To indicate that your bot is awaiting a response from the user, set the message's input hint to `builder.InputHint.expectingInput`. On many channels, this will cause the client's input box to be enabled and microphone to be open. The following code example creates a prompt that indicates the bot is expecting user input.
 
-[!code-javascript[Prompt](~/includes/code/node-input-hints.js#InputHintExpectingInput)]
+[!code-javascript[Prompt](../includes/code/node-input-hints.js#InputHintExpectingInput)]
 
 ## Ignoring input
 
 To indicate that your bot is not ready to receive input from the user, set the message's input hint to `builder.InputHint.ignoringInput`. 
 On many channels, this will cause the client's input box to be disabled and microphone to be closed. The following code example uses the `session.say()` method to send a message that indicates the bot is ignoring user input.
 
-[!code-javascript[Session.say()](~/includes/code/node-input-hints.js#InputHintIgnoringInput)]
+[!code-javascript[Session.say()](../includes/code/node-input-hints.js#InputHintIgnoringInput)]
 
 ## Default values for input hint
 
@@ -47,7 +47,7 @@ If you do not set the input hint for a message, the Bot Builder SDK will automat
 
 ## Additional resources
 
-- [Add speech to messages](~/nodejs/bot-builder-nodejs-text-to-speech.md)
+- [Add speech to messages](bot-builder-nodejs-text-to-speech.md)
 - [Bot Builder SDK for Node.js Reference][SDKReference]
 
 [SDKReference]: https://docs.botframework.com/en-us/node/builder/chat-reference/modules/_botbuilder_d_.html

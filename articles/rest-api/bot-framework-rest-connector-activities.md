@@ -32,9 +32,9 @@ The following activity types are supported by the Bot Connector service.
 
 Your bot will send **message** activities to communicate information to and receive **message** activities from users. 
 Some messages may be plain text, while others may contain richer content such as 
-[media attachments](~/rest-api/bot-framework-rest-connector-add-media-attachments.md), [buttons, and cards](~/rest-api/bot-framework-rest-connector-add-rich-cards.md) or 
-[channel-specific data](~/rest-api/bot-framework-rest-connector-channeldata.md). 
-For information about commonly-used message properties, see [Create messages](~/rest-api/bot-framework-rest-connector-create-messages.md). For information about how to send and receive messages, see [Send and receive messages](~/rest-api/bot-framework-rest-connector-send-and-receive-messages.md). 
+[media attachments](bot-framework-rest-connector-add-media-attachments.md), [buttons, and cards](bot-framework-rest-connector-add-rich-cards.md) or 
+[channel-specific data](bot-framework-rest-connector-channeldata.md). 
+For information about commonly-used message properties, see [Create messages](bot-framework-rest-connector-create-messages.md). For information about how to send and receive messages, see [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md). 
 
 ## conversationUpdate
 
@@ -70,7 +70,7 @@ A bot receives an **endOfConversation** activity to indicate that the user has e
 
 ## Additional resources
 
-- [Create messages](~/rest-api/bot-framework-rest-connector-create-messages.md)
-- [Send and receive messages](~/rest-api/bot-framework-rest-connector-send-and-receive-messages.md)
+- [Create messages](bot-framework-rest-connector-create-messages.md)
+- [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md)
 
-[Activity]: ~/rest-api/bot-framework-rest-connector-api-reference.md#activity-object
+[Activity]: bot-framework-rest-connector-api-reference.md#activity-object

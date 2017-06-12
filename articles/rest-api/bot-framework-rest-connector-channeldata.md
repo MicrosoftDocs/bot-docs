@@ -12,7 +12,7 @@ ms.reviewer:
 
 # Implement channel-specific functionality
 
-Some channels provide features that cannot be implemented by using only [message text and attachments](~/rest-api/bot-framework-rest-connector-create-messages.md). To implement channel-specific functionality, you can pass native metadata to a channel in the [Activity][Activity] object's `channelData` property. For example, your bot can use the `channelData` property to instruct Telegram to send a sticker or to instruct Office365 to send an email.
+Some channels provide features that cannot be implemented by using only [message text and attachments](bot-framework-rest-connector-create-messages.md). To implement channel-specific functionality, you can pass native metadata to a channel in the [Activity][Activity] object's `channelData` property. For example, your bot can use the `channelData` property to instruct Telegram to send a sticker or to instruct Office365 to send an email.
 
 This article describes how to use a message activity's `channelData` property to implement this channel-specific functionality:
 
@@ -55,7 +55,7 @@ To create a full-fidelity Slack message, set the [Activity][Activity] object's `
 
 > [!NOTE]
 > To support buttons in Slack messages, you must enable **Interactive Messages** when you 
-> [connect your bot](~/portal-configure-channels.md) to the Slack channel.
+> [connect your bot](../portal-configure-channels.md) to the Slack channel.
 
 This snippet shows an example of the `channelData` property for a custom Slack message.
 
@@ -133,7 +133,7 @@ This snippet shows an example of the `channelData` property in the message that 
 }
 ```
 
-Your bot can reply to this message in the [normal manner](~/rest-api/bot-framework-rest-connector-send-and-receive-messages.md#create-reply), or it can post its response directly to the endpoint that is specified by the `payload` object's `response_url` property. For information about when and how to post a response to the `response_url`, see <a href="https://api.slack.com/docs/message-buttons" target="_blank">Slack Buttons</a>. 
+Your bot can reply to this message in the [normal manner](bot-framework-rest-connector-send-and-receive-messages.md#create-reply), or it can post its response directly to the endpoint that is specified by the `payload` object's `response_url` property. For information about when and how to post a response to the `response_url`, see <a href="https://api.slack.com/docs/message-buttons" target="_blank">Slack Buttons</a>. 
 
 ## Create a Facebook notification
 
@@ -277,8 +277,8 @@ This snippet shows an example of the `channelData` property for a native Kik mes
 
 ## Additional resources
 
-- [Activities overview](~/rest-api/bot-framework-rest-connector-activities.md)
-- [Create messages](~/rest-api/bot-framework-rest-connector-create-messages.md)
-- [Send and receive messages](~/rest-api/bot-framework-rest-connector-send-and-receive-messages.md)
+- [Activities overview](bot-framework-rest-connector-activities.md)
+- [Create messages](bot-framework-rest-connector-create-messages.md)
+- [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md)
 
-[Activity]: ~/rest-api/bot-framework-rest-connector-api-reference.md#activity-object
+[Activity]: bot-framework-rest-connector-api-reference.md#activity-object

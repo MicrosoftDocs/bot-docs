@@ -23,10 +23,10 @@ You must have a Microsoft Azure subscription before you can use the Azure Bot Se
 
 The Azure Bot Service enables you to quickly and easily create a bot in either C# or Node.js by using one of five templates.
 
-[!include[Azure Bot Service templates](~/includes/snippet-abs-templates.md)] 
+[!include[Azure Bot Service templates](../includes/snippet-abs-templates.md)] 
 
-For more information about templates, see [Templates in the Azure Bot Service](~/azure/azure-bot-service-templates.md). 
-For a step-by-step tutorial that shows how to quickly build and test a simple bot using Azure Bot Service, see [Create a bot with Azure Bot Service](~/azure/azure-bot-service-quickstart.md).
+For more information about templates, see [Templates in the Azure Bot Service](azure-bot-service-templates.md). 
+For a step-by-step tutorial that shows how to quickly build and test a simple bot using Azure Bot Service, see [Create a bot with Azure Bot Service](azure-bot-service-quickstart.md).
 
 ## Choose development tool(s)
 
@@ -35,7 +35,7 @@ The integrated chat window sits side-by-side with the Azure editor, which lets y
 
 Although using Azure editor eliminates the need for a local editor and source control, 
 Azure editor does not allow you to manage files (e.g., add files, rename files, or delete files). 
-If you want to the ability to manage files within your application, you can [set up continuous integration](azure-bot-service-continuous-integration.md) and use the integrated development environment (IDE) and source control system of your choice (e.g., Visual Studio Team, GitHub, Bitbucket). With continuous integration configured, any code changes that you commit to source control will automatically be deployed to Azure. Additionally, you will be able to [debug your bot locally](~/azure/azure-bot-service-debug-bot.md) if you configure continuous integration. 
+If you want to the ability to manage files within your application, you can [set up continuous integration](azure-bot-service-continuous-integration.md) and use the integrated development environment (IDE) and source control system of your choice (e.g., Visual Studio Team, GitHub, Bitbucket). With continuous integration configured, any code changes that you commit to source control will automatically be deployed to Azure. Additionally, you will be able to [debug your bot locally](azure-bot-service-debug-bot.md) if you configure continuous integration. 
 
 > [!NOTE]
 > If you configure continuous integration for your bot, you will no longer be able to edit code in the Azure editor.
@@ -48,9 +48,9 @@ During the process of creating a bot using Azure Bot Service, you specify a name
 
 Learn more about building bots using the Azure Bot Service by reviewing these articles: 
 
-- [Create a bot with Azure Bot Service](~/azure/azure-bot-service-quickstart.md)
-- [Templates in the Azure Bot Service](~/azure/azure-bot-service-templates.md)
-- [Set up continuous integration](~/azure/azure-bot-service-continuous-integration.md)
-- [Debug an Azure Bot Service bot](~/azure/azure-bot-service-debug-bot.md)
+- [Create a bot with Azure Bot Service](azure-bot-service-quickstart.md)
+- [Templates in the Azure Bot Service](azure-bot-service-templates.md)
+- [Set up continuous integration](azure-bot-service-continuous-integration.md)
+- [Debug an Azure Bot Service bot](azure-bot-service-debug-bot.md)
 
-If you encounter problems or have suggestions regarding the Azure Bot Service, see [Support](~/resources-support.md) for a list of available resources. 
+If you encounter problems or have suggestions regarding the Azure Bot Service, see [Support](../resources-support.md) for a list of available resources. 

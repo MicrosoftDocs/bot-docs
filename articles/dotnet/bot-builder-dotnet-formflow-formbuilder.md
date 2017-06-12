@@ -12,8 +12,8 @@ ms.reviewer:
 
 # Customize a form using FormBuilder
 
-[Basic features of FormFlow](~/dotnet/bot-builder-dotnet-formflow.md) describes a basic FormFlow implementation that 
-delivers a fairly generic user experience, and [Advanced features of FormFlow](~/dotnet/bot-builder-dotnet-formflow-advanced.md) describes how you can 
+[Basic features of FormFlow](bot-builder-dotnet-formflow.md) describes a basic FormFlow implementation that 
+delivers a fairly generic user experience, and [Advanced features of FormFlow](bot-builder-dotnet-formflow-advanced.md) describes how you can 
 customize user experience by using business logic and attributes. 
 This article describes how you can use 
 [FormBuilder][formBuilder] to customize user experience even further, by 
@@ -33,11 +33,11 @@ for each order according to whether or not the order contains a foot-long sandwi
 
 The `Specials` field is specified as optional and "None" is designated as text for the choice that indicates no preference.
 
-[!code-csharp[Field definition](~/includes/code/dotnet-formflow-formbuilder.cs#fieldDefinition)]
+[!code-csharp[Field definition](../includes/code/dotnet-formflow-formbuilder.cs#fieldDefinition)]
 
 This code example shows how to dynamically set the value of the `Specials` field. 
 
-[!code-csharp[Define value](~/includes/code/dotnet-formflow-formbuilder.cs#defineValue)]
+[!code-csharp[Define value](../includes/code/dotnet-formflow-formbuilder.cs#defineValue)]
 
 In this example, the [Advanced.Field.SetType][setType] method specifies 
 the field type (`null` represents an enumeration field). 
@@ -61,17 +61,17 @@ Each message and confirmation runs only when prior steps in the form are inactiv
 
 This code example shows a dynamically generated confirmation that computes the cost of the sandwich. 
 
-[!code-csharp[Define confirmation](~/includes/code/dotnet-formflow-formbuilder.cs#defineConfirmation)]
+[!code-csharp[Define confirmation](../includes/code/dotnet-formflow-formbuilder.cs#defineConfirmation)]
 
 ## Customize a form using FormBuilder
 
 This code example uses FormBuilder to define the steps of the form, 
-[validate selections](~/dotnet/bot-builder-dotnet-formflow-advanced.md#add-business-logic), 
+[validate selections](bot-builder-dotnet-formflow-advanced.md#add-business-logic), 
 and [dynamically define a field value and confirmation](#dynamically-define-field-values-confirmations-and-messages). 
 By default, steps in the form will be executed in the sequence in which they are listed. 
 However, steps might be skipped for fields that already contain values or if explicit navigation is specified. 
 
-[!code-csharp[FormBuilder form](~/includes/code/dotnet-formflow-formbuilder.cs#formBuilderForm)]
+[!code-csharp[FormBuilder form](../includes/code/dotnet-formflow-formbuilder.cs#formBuilderForm)]
 
 In this example, the form executes these steps:
 
@@ -85,7 +85,7 @@ In this example, the form executes these steps:
 - Fills in `SandwichOrder.Sauces`. 
 - [Dynamically defines](#dynamically-define-field-values) the field value for `SandwichOrder.Specials`. 
 - [Dynamically defines](#dynamically-define-messages-and-confirmations) the confirmation for cost of the sandwich. 
-- Fills in `SandwichOrder.DeliveryAddress` and [verifies](~/dotnet/bot-builder-dotnet-formflow-advanced.md#add-business-logic) the resulting string. If the address does not start with a number, the form returns a message. 
+- Fills in `SandwichOrder.DeliveryAddress` and [verifies](bot-builder-dotnet-formflow-advanced.md#add-business-logic) the resulting string. If the address does not start with a number, the form returns a message. 
 - Fills in `SandwichOrder.DeliveryTime` with a custom prompt. 
 - Confirms the order. 
 - Adds any remaining fields that were defined in the class but not explicitly referenced by `Field`. (If the example did not call the `AddRemainingFields` method, the form would not include any fields that were not explicity referenced.) 
@@ -94,11 +94,11 @@ In this example, the form executes these steps:
 
 ## Additional resources
 
-- [Basic features of FormFlow](~/dotnet/bot-builder-dotnet-formflow.md)
-- [Advanced features of FormFlow](~/dotnet/bot-builder-dotnet-formflow-advanced.md)
-- [Localize form content](~/dotnet/bot-builder-dotnet-formflow-localize.md)
-- [Define a form using JSON schema](~/dotnet/bot-builder-dotnet-formflow-json-schema.md)
-- [Customize user experience with pattern language](~/dotnet/bot-builder-dotnet-formflow-pattern-language.md)
+- [Basic features of FormFlow](bot-builder-dotnet-formflow.md)
+- [Advanced features of FormFlow](bot-builder-dotnet-formflow-advanced.md)
+- [Localize form content](bot-builder-dotnet-formflow-localize.md)
+- [Define a form using JSON schema](bot-builder-dotnet-formflow-json-schema.md)
+- [Customize user experience with pattern language](bot-builder-dotnet-formflow-pattern-language.md)
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
 
 [formBuilder]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.formbuilder-1?view=botbuilder-3.8

@@ -12,7 +12,7 @@ ms.reviewer:
 
 # Activities overview
 
-[!include[Activity concept overview](~/includes/snippet-dotnet-concept-activity.md)]
+[!include[Activity concept overview](../includes/snippet-dotnet-concept-activity.md)]
 
 ## Activity types in the Bot Builder SDK for .NET
 
@@ -33,8 +33,8 @@ The following activity types are supported by the Bot Builder SDK for .NET.
 ## message
 
 Your bot will send **message** activities to communicate information to and receive **message** activities from users. 
-Some messages may simply consist of plain text, while others may contain richer content such as [text to be spoken](~/dotnet/bot-builder-dotnet-text-to-speech.md), [suggested actions](~/dotnet/bot-builder-dotnet-add-suggested-actions.md), [media attachments](~/dotnet/bot-builder-dotnet-add-media-attachments.md), [rich cards](~/dotnet/bot-builder-dotnet-add-rich-card-attachments.md), and [channel-specific data](~/dotnet/bot-builder-dotnet-channeldata.md). 
-For information about commonly-used message properties, see [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md).
+Some messages may simply consist of plain text, while others may contain richer content such as [text to be spoken](bot-builder-dotnet-text-to-speech.md), [suggested actions](bot-builder-dotnet-add-suggested-actions.md), [media attachments](bot-builder-dotnet-add-media-attachments.md), [rich cards](bot-builder-dotnet-add-rich-card-attachments.md), and [channel-specific data](bot-builder-dotnet-channeldata.md). 
+For information about commonly-used message properties, see [Create messages](bot-builder-dotnet-create-messages.md).
 
 ## conversationUpdate
 
@@ -89,6 +89,6 @@ This activity type is reserved for internal use by the Microsoft Bot Framework.
 
 ## Additional resources
 
-- [Send and receive activities](~/dotnet/bot-builder-dotnet-connector.md)
-- [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
+- [Send and receive activities](bot-builder-dotnet-connector.md)
+- [Create messages](bot-builder-dotnet-create-messages.md)
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.8" target="_blank">Activity class</a>

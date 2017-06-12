@@ -11,7 +11,7 @@ ms.date: 06/05/2017
 
 # Use the backchannel mechanism
 
-[!include[Introduction to backchannel mechanism](~/includes/snippet-backchannel.md)]
+[!include[Introduction to backchannel mechanism](../includes/snippet-backchannel.md)]
 
 ## Walk through
 
@@ -23,7 +23,7 @@ both the control and the page will be capable of sending and receiving activitie
 The following diagram shows the high-level architecture of a website that supports bot functionality by 
 using the open source web (chat) control and the Direct Line API. 
 
-![Backchannel](~/media/designing-bots/patterns/back-channel.png)
+![Backchannel](../media/designing-bots/patterns/back-channel.png)
 
 ### Sample code 
 

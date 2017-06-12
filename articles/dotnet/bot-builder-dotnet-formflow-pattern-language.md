@@ -17,10 +17,10 @@ use pattern language to specify the contents and/or format of the prompt.
 
 ## Prompts and templates
 
-A [prompt][promptAttribute] defines the message that is sent to the user to request a piece of information or ask for confirmation. You can customize a prompt by using the [Prompt attribute](~/dotnet/bot-builder-dotnet-formflow-advanced.md#customize-prompts-using-the-prompt-attribute) or implicitly through [IFormBuilder<T>.Field][field]. 
+A [prompt][promptAttribute] defines the message that is sent to the user to request a piece of information or ask for confirmation. You can customize a prompt by using the [Prompt attribute](bot-builder-dotnet-formflow-advanced.md#customize-prompts-using-the-prompt-attribute) or implicitly through [IFormBuilder<T>.Field][field]. 
 
 Forms use templates to automatically construct prompts and other things such as help. 
-You can override the default template of a class or field by using the [Template attribute](~/dotnet/bot-builder-dotnet-formflow-advanced.md#customize-prompts-using-the-template-attribute). 
+You can override the default template of a class or field by using the [Template attribute](bot-builder-dotnet-formflow-advanced.md#customize-prompts-using-the-template-attribute). 
 
 > [!TIP]
 > The [FormConfiguration.Templates][formConfiguration] 
@@ -59,7 +59,7 @@ For the elements listed above:
 This example uses the `{&}` element to show the description of the `Sandwich` field and the 
 `{||}` element to show the list of choices for that field.
 
-[!code-csharp[Patterns example](~/includes/code/dotnet-formflow-pattern-language.cs#patterns1)]
+[!code-csharp[Patterns example](../includes/code/dotnet-formflow-pattern-language.cs#patterns1)]
 
 This is the resulting prompt:
 
@@ -107,7 +107,7 @@ Prompts and templates support these formatting parameters.
 This example uses the `ChoiceFormat` parameter to specify that the list of choices should be displayed 
 as a bulleted list.
 
-[!code-csharp[Patterns example](~/includes/code/dotnet-formflow-pattern-language.cs#patterns2)]
+[!code-csharp[Patterns example](../includes/code/dotnet-formflow-pattern-language.cs#patterns2)]
 
 This is the resulting prompt:
 
@@ -133,11 +133,11 @@ What kind of sandwich would you like?
 
 ## Additional resources
 
-- [Basic features of FormFlow](~/dotnet/bot-builder-dotnet-formflow.md)
-- [Advanced features of FormFlow](~/dotnet/bot-builder-dotnet-formflow-advanced.md)
-- [Customize a form using FormBuilder](~/dotnet/bot-builder-dotnet-formflow-formbuilder.md)
-- [Localize form content](~/dotnet/bot-builder-dotnet-formflow-localize.md)
-- [Define a form using JSON schema](~/dotnet/bot-builder-dotnet-formflow-json-schema.md)
+- [Basic features of FormFlow](bot-builder-dotnet-formflow.md)
+- [Advanced features of FormFlow](bot-builder-dotnet-formflow-advanced.md)
+- [Customize a form using FormBuilder](bot-builder-dotnet-formflow-formbuilder.md)
+- [Localize form content](bot-builder-dotnet-formflow-localize.md)
+- [Define a form using JSON schema](bot-builder-dotnet-formflow-json-schema.md)
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
 
 [promptAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.promptattribute?view=botbuilder-3.8
