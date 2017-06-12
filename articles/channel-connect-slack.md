@@ -68,6 +68,7 @@ Select the **Basic Information** tab, and scroll to the **App Credentials** sect
 
 ## Submit credentials
 
+
 In a separate browser window, return to the Bot Framework site at http://dev.botframework.com/.
 
 1. Select **My bots** and choose the Bot that you want to connect to Slack.
