@@ -34,9 +34,9 @@ Click Create App. Slack will create your app and generate a Client ID and Client
 ## Add a new Redirect URL
 Next you will add a new Redirect URL.
 
-1. Select the **OAuth & Permissions** tab. 
+1. Select the **OAuth & Permissions** tab.
 2. Click **Add a new Redirect URL**.
-3. Enter https://slack.botframework.com. 
+3. Enter https://slack.botframework.com.
 4. Click **Add**.
 5. Click **Save URLs**.
 
@@ -50,9 +50,9 @@ Adding a Bot User allows you to assign a username for your bot and choose whethe
 
 ![Create bot](~/media/channels/slack-CreateBot.png)
 
-Select **Add Bot User** to validate your settings, and then select **Save Changes**. 
+Select **Add Bot User** to validate your settings, and then select **Save Changes**.
 
-![Create bot](~/media/channels/slack-CreateBot-AddBotUser.png)
+![Create bot](~/media/channels/slack-CreateApp-AddBotUser.png)
 
 ## Add and Configure Interactive Messages (optional)
 
@@ -77,17 +77,15 @@ In a separate browser window, return to the Bot Framework site at http://dev.bot
 
 1. Select **My bots** and choose the Bot that you want to connect to Slack.
 2. In the **Add a channel** section, click the Slack icon.
-3. In the **Submit your Credentials** section, paste the App Credentials from the Slack website into the appropriate fields. 
+3. In the **Submit your Credentials** section, paste the App Credentials from the Slack website into the appropriate fields.
 4. The **Landing Page URL** is optional. You may remove or change it.
 5. Click **Submit Slack Credentials**.
 
 ![Submit credentials](~/media/channels/slack-SubmitCredentials.png)
 
-Follow the instructions to authorize your Slack app's access to your Development Slack Team. 
+Follow the instructions to authorize your Slack app's access to your Development Slack Team.
 
 ## Enable the bot
 Check **Enable this bot on Slack**. Then click **I'm done configuring Slack**.
 
 When you have completed these steps, your bot will be successfully configured to communicate with users in Slack.
-
-
