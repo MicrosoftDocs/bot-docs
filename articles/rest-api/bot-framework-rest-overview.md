@@ -6,8 +6,7 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
-ms.reviewer: 
+ms.date: 06/13/2017
 ---
 
 # Bot Framework REST APIs
@@ -31,7 +30,4 @@ To learn more about building bots using the Bot Connector service and the Bot St
 
 ## Build a client
 
-You can enable your own client application to communicate with your bot by using the Direct Line API. 
-The Direct Line API implements an authentication mechanism that uses standard secret/token patterns and provides a stable schema, even if your bot changes its protocol version. For details about using the Direct Line API to enable communication between a client and your bot, see [Key concepts](bot-framework-rest-direct-line-concepts.md). 
-
-
+You can enable your own client application to communicate with your bot by using the Direct Line API. The Direct Line API implements an authentication mechanism that uses standard secret/token patterns and provides a stable schema, even if your bot changes its protocol version. To learn more about using the Direct Line API to enable communication between a client and your bot, see [Key concepts](bot-framework-rest-direct-line-3-0-concepts.md). 

@@ -7,7 +7,6 @@ manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 05/12/2017
-ms.reviewer: 
 ---
 
 # Add input hints to messages
