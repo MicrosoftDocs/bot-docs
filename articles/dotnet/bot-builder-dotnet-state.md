@@ -12,11 +12,11 @@ ms.reviewer:
 
 # Manage state data
 
-[!include[State concept overview](~/includes/snippet-dotnet-concept-state.md)]  
+[!include[State concept overview](../includes/snippet-dotnet-concept-state.md)]  
 This article describes how to manage state data using the State service via the Bot Builder SDK for .NET.
 
 > [!IMPORTANT]
-> If your bot uses [dialogs](~/dotnet/bot-builder-dotnet-dialogs.md), 
+> If your bot uses [dialogs](bot-builder-dotnet-dialogs.md), 
 > conversation state (the dialog stack and the state of each dialog in the stack) is automatically stored 
 > using the Bot Framework State service. 
 
@@ -32,7 +32,7 @@ This table lists the methods within Bot state service that you can use to manage
 | `SetUserData` | User | Save state data for the user on the specified channel |
 | `SetConversationData` | Conversation | Save state data for the conversation on the specified channel. <br/><br/>**Note**: Because the `DeleteStateForUser` method does not delete data that has been stored using the `SetConversationData` method, you must NOT use this method to store a user's personally identifiable information (PII). |
 | `SetPrivateConversationData` | User and Conversation | Save state data for the user within the conversation on the specified channel |
-| `DeleteStateForUser` | User | Delete state data for the user that has previously been stored by using either the `SetUserData` method or the `SetPrivateConversationData` method. <br/><br/>**Note**: Your bot should call this method when it receives an activity of type [deleteUserData](~/dotnet/bot-builder-dotnet-activities.md#deleteuserdata) or an activity of type [contactRelationUpdate](~/dotnet/bot-builder-dotnet-activities.md#contactrelationupdate) that indicates the bot has been removed from the user's contact list. |
+| `DeleteStateForUser` | User | Delete state data for the user that has previously been stored by using either the `SetUserData` method or the `SetPrivateConversationData` method. <br/><br/>**Note**: Your bot should call this method when it receives an activity of type [deleteUserData](bot-builder-dotnet-activities.md#deleteuserdata) or an activity of type [contactRelationUpdate](bot-builder-dotnet-activities.md#contactrelationupdate) that indicates the bot has been removed from the user's contact list. |
 
 If your bot saves state data by using one of the "**Set...Data**" methods, future messages that your bot receives in the same context will contain that data, which your bot can access by using the corresponding "**Get...Data**" method.
 
@@ -54,11 +54,11 @@ Each [Activity][Activity] object contains properties that you will use to manage
 The `StateClient` object enables you to manage state data using the Bot Builder SDK for .NET. 
 If you have access to a message that belongs to the same context in which you want to manage state data, you can create a state client by calling the `GetStateClient` method on the `Activity` object.
 
-[!code-csharp[Get State client](~/includes/code/dotnet-state.cs#getStateClient1)]
+[!code-csharp[Get State client](../includes/code/dotnet-state.cs#getStateClient1)]
 
-If you do not have access to a message that belongs to the same context in which you want to manage state data, you can create a state client by simply creating a new instance of the `StateClient` class. In this example, `microsoftAppId` and `microsoftAppPassword` are the Bot Framework authentication credentials that you acquire for your bot during the [bot registration](~/portal-register-bot.md) process.
+If you do not have access to a message that belongs to the same context in which you want to manage state data, you can create a state client by simply creating a new instance of the `StateClient` class. In this example, `microsoftAppId` and `microsoftAppPassword` are the Bot Framework authentication credentials that you acquire for your bot during the [bot registration](../portal-register-bot.md) process.
 
-[!code-csharp[Get State client](~/includes/code/dotnet-state.cs#getStateClient2)]
+[!code-csharp[Get State client](../includes/code/dotnet-state.cs#getStateClient2)]
 
 > [!NOTE]
 > The default state client is stored in a central service. For some channels, you may want to use a state API that is hosted within the channel itself, so that state data can be stored in a compliant store that the channel supplies.
@@ -69,11 +69,11 @@ Each of the "**Get...Data**" methods returns a `BotData` object that contains th
 
 The following code example shows how to get a typed property from user data. 
 
-[!code-csharp[Get state property](~/includes/code/dotnet-state.cs#getProperty1)]
+[!code-csharp[Get state property](../includes/code/dotnet-state.cs#getProperty1)]
 
 The following code example shows how to get a property from a complex type within user data.
 
-[!code-csharp[Get state property](~/includes/code/dotnet-state.cs#getProperty2)]
+[!code-csharp[Get state property](../includes/code/dotnet-state.cs#getProperty2)]
 
 If no state data exists for the user and/or conversation that is specified for a "**Get...Data**" method call, 
 the `BotData` object that is returned will contain these property values: 
@@ -92,11 +92,11 @@ and save it by calling the appropriate "**Set...Data**" method.
 
 The following code example shows how to save a typed property in user data.
 
-[!code-csharp[Set state property](~/includes/code/dotnet-state.cs#setProperty1)]
+[!code-csharp[Set state property](../includes/code/dotnet-state.cs#setProperty1)]
 
 The following code example shows how to save a property in a complex type within user data. 
 
-[!code-csharp[Set state property](~/includes/code/dotnet-state.cs#setProperty2)]
+[!code-csharp[Set state property](../includes/code/dotnet-state.cs#setProperty2)]
 
 ## Handle concurrency issues
 
@@ -104,11 +104,11 @@ Your bot may receive an error response with HTTP status code **412 Precondition 
 when it attempts to save state data, if another instance of the bot has changed the data. 
 You can design your bot to account for this scenario, as shown in the following code example.
 
-[!code-csharp[Handle exception saving state](~/includes/code/dotnet-state.cs#handleException)]
+[!code-csharp[Handle exception saving state](../includes/code/dotnet-state.cs#handleException)]
 
 ## Additional resources
 
-- [Bot Framework troubleshooting guide](~/troubleshoot-general-problems.md#state)
+- [Bot Framework troubleshooting guide](../troubleshoot-general-problems.md#state)
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
 
 [Activity]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.8

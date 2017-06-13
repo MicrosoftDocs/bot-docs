@@ -7,12 +7,11 @@ manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 05/12/2017
-ms.reviewer: 
 ---
 
 # Send and receive messages
 
-The Bot Connector service enables a bot to communicate across multiple channels such as Skype, Email, Slack, and more. It facilitates communication between bot and user, by relaying [activities](~/rest-api/bot-framework-rest-connector-activities.md) from bot to channel and from channel to bot. Every activity contains information used for routing the message to the appropriate destination along with information about who created the message, the context of the message, and the recipient of the message. This article describes how to use the Bot Connector service to exchange **message** activities between bot and user on a channel. 
+The Bot Connector service enables a bot to communicate across multiple channels such as Skype, Email, Slack, and more. It facilitates communication between bot and user, by relaying [activities](bot-framework-rest-connector-activities.md) from bot to channel and from channel to bot. Every activity contains information used for routing the message to the appropriate destination along with information about who created the message, the context of the message, and the recipient of the message. This article describes how to use the Bot Connector service to exchange **message** activities between bot and user on a channel. 
 
 ##<a id="create-reply"></a> Reply to a message
 
@@ -29,11 +28,11 @@ When the user sends a message to your bot, your bot will receive the message as 
 | replyToId | Set this property to the contents of the `id` property in the user's message. |
 | type | Set this property to **message**. |
 
-Next, set the properties that specify the information that you want to communicate to the user. For example, you can set the `text` property to specify the text to be displayed in the message, set the `speak` property to specify text to be spoken by your bot, and set the `attachments` property to specify media attachments or rich cards to include in the message. For detailed information about commonly-used message properties, see [Create messages](~/rest-api/bot-framework-rest-connector-create-messages.md).
+Next, set the properties that specify the information that you want to communicate to the user. For example, you can set the `text` property to specify the text to be displayed in the message, set the `speak` property to specify text to be spoken by your bot, and set the `attachments` property to specify media attachments or rich cards to include in the message. For detailed information about commonly-used message properties, see [Create messages](bot-framework-rest-connector-create-messages.md).
 
 ### Send the reply
 
-Use the `serviceUrl` property in the incoming activity to [identify the base URI](~/rest-api/bot-framework-rest-connector-api-reference.md#base-uri) that your bot should use to issue its response. 
+Use the `serviceUrl` property in the incoming activity to [identify the base URI](bot-framework-rest-connector-api-reference.md#base-uri) that your bot should use to issue its response. 
 
 To send the reply, issue this request: 
 
@@ -43,7 +42,7 @@ POST /v3/conversations/{conversationId}/activities/{activityId}
 
 In this request URI, replace **{conversationId}** with the value of the `conversation` object's `id` property within your (reply) Activity and replace **{activityId}** with the value of the `replyToId` property within your (reply) Activity. Set the body of the request to the [Activity][Activity] object that you created to represent your reply.
 
-The following example shows a request that sends a simple text-only reply to a user's message. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](~/rest-api/bot-framework-rest-connector-api-reference.md#base-uri).
+The following example shows a request that sends a simple text-only reply to a user's message. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 
 ```http
 POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/5d5cdc723 
@@ -109,7 +108,7 @@ Set the body of the request to a [Conversation][Conversation] object that specif
 > [!NOTE]
 > Not all channels support group conversations. Consult the channel's documentation to determine whether a channel supports group conversations and to identify the maximum number of participants that a channel allows in a conversation.
 
-The following example shows a request that starts a conversation. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](~/rest-api/bot-framework-rest-connector-api-reference.md#base-uri).
+The following example shows a request that starts a conversation. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 
 ```http
 POST https://smba.trafficmanager.net/apis/v3/conversations 
@@ -146,10 +145,10 @@ Your bot can then use this conversation ID to [send a message](#send-message) to
 
 ## Additional resources
 
-- [Activities overview](~/rest-api/bot-framework-rest-connector-activities.md)
-- [Create messages](~/rest-api/bot-framework-rest-connector-create-messages.md)
+- [Activities overview](bot-framework-rest-connector-activities.md)
+- [Create messages](bot-framework-rest-connector-create-messages.md)
 
-[Activity]: ~/rest-api/bot-framework-rest-connector-api-reference.md#activity-object
-[ConversationAccount]: ~/rest-api/bot-framework-rest-connector-api-reference.md#conversationaccount-object
-[Conversation]: ~/rest-api/bot-framework-rest-connector-api-reference.md#conversation-object
+[Activity]: bot-framework-rest-connector-api-reference.md#activity-object
+[ConversationAccount]: bot-framework-rest-connector-api-reference.md#conversationaccount-object
+[Conversation]: bot-framework-rest-connector-api-reference.md#conversation-object
 

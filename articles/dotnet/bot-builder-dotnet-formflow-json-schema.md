@@ -12,7 +12,7 @@ ms.reviewer:
 
 # Define a form using JSON schema
 
-If you use a [C# class](~/dotnet/bot-builder-dotnet-formflow.md#create-class) to define the form 
+If you use a [C# class](bot-builder-dotnet-formflow.md#create-class) to define the form 
 when you create a bot with FormFlow, 
 the form derives from the static definition of your type in C#. 
 As an alternative, you may instead define the form by using 
@@ -118,7 +118,7 @@ Fields that are defined via JSON schema have the same ability to extend or overr
 The simplest way to define a form is to define everything, including any C# code, directly in the 
 JSON schema. 
 This example shows the JSON schema for the annotated sandwich bot that is described in 
-[Customize a form using FormBuilder](~/dotnet/bot-builder-dotnet-formflow-formbuilder.md).
+[Customize a form using FormBuilder](bot-builder-dotnet-formflow-formbuilder.md).
 
 ```json
 {
@@ -321,17 +321,17 @@ This example shows the JSON schema for the annotated sandwich bot that is descri
 ## Implement FormFlow with JSON schema
 
 To implement FormFlow with a JSON schema, use `FormBuilderJson`, which supports the same fluent interface as `FormBuilder`. This code example shows how to implement the JSON schema for the annotated sandwich bot 
-that is described in [Customize a form using FormBuilder](~/dotnet/bot-builder-dotnet-formflow-formbuilder.md).
+that is described in [Customize a form using FormBuilder](bot-builder-dotnet-formflow-formbuilder.md).
 
-[!code-csharp[Use JSON schema](~/includes/code/dotnet-formflow-json-schema.cs#useSchema)]
+[!code-csharp[Use JSON schema](../includes/code/dotnet-formflow-json-schema.cs#useSchema)]
 
 ## Additional resources
 
-- [Basic features of FormFlow](~/dotnet/bot-builder-dotnet-formflow.md)
-- [Advanced features of FormFlow](~/dotnet/bot-builder-dotnet-formflow-advanced.md)
-- [Customize a form using FormBuilder](~/dotnet/bot-builder-dotnet-formflow-formbuilder.md)
-- [Localize form content](~/dotnet/bot-builder-dotnet-formflow-localize.md)
-- [Customize user experience with pattern language](~/dotnet/bot-builder-dotnet-formflow-pattern-language.md)
+- [Basic features of FormFlow](bot-builder-dotnet-formflow.md)
+- [Advanced features of FormFlow](bot-builder-dotnet-formflow-advanced.md)
+- [Customize a form using FormBuilder](bot-builder-dotnet-formflow-formbuilder.md)
+- [Localize form content](bot-builder-dotnet-formflow-localize.md)
+- [Customize user experience with pattern language](bot-builder-dotnet-formflow-pattern-language.md)
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
 
 [numericAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.numericattribute?view=botbuilder-3.8

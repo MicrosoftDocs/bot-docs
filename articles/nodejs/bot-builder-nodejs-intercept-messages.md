@@ -14,7 +14,7 @@ ms.reviewer:
 > - [.NET](../dotnet/bot-builder-dotnet-middleware.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-intercept-messages.md)
 
-[!include[Introduction to message logging](~/includes/snippet-message-logging-intro.md)]
+[!include[Introduction to message logging](../includes/snippet-message-logging-intro.md)]
 
 ## Example
 

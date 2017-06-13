@@ -7,7 +7,6 @@ manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 05/12/2017
-ms.reviewer: 
 ---
 
 # API reference
@@ -106,7 +105,7 @@ The <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html" target="_bl
 
 ### Errors
 
-Any response that specifies an HTTP status code in the 4xx range or 5xx range will include an [Error](#error-object) object (in the body of the response) that provides information about the error. If you receive an error response in the 4xx range, inspect the **Error** object to identify the cause of the error and resolve your issue prior to resubmitting the request.
+Any response that specifies an HTTP status code in the 4xx range or 5xx range will include an [ErrorResponse](#errorresponse-object) object in the body of the response that provides information about the error. If you receive an error response in the 4xx range, inspect the **ErrorResponse** object to identify the cause of the error and resolve your issue prior to resubmitting the request.
 
 ## Conversation operations 
 Use these operations to create conversations, send messages (activities), and manage the contents of conversations.
@@ -313,7 +312,7 @@ DELETE /v3/botstate/{channelId}/users/{userId}
 | **Request body** | n/a |
 | **Returns** | An array of strings (IDs) | 
 
-## Objects
+##<a id="objects"></a> Schema
 
 ### Activity object
 Defines a message that is exchanged between bot and user.<br/><br/> 
@@ -322,8 +321,8 @@ Defines a message that is exchanged between bot and user.<br/><br/>
 |----|----|----|
 | **action** | string | The action to apply or that was applied. Use the **type** property to determine context for the action. For example, if **type** is **contactRelationUpdate**, the value of the **action** property would be **add** if the user added your bot to their contacts list, or **remove** if they removed your bot from their contacts list. |
 | **attachments** | [Attachment](#attachment-object)[] | Array of **Attachment** objects that defines additional information to include in the message. Each attachment may be either a media file (e.g., audio, video, image, file) or a rich card. |
-| **attachmentLayout** | string | Layout of the rich card **attachments** that the message includes. One of these values: **carousel**, **list**. For more information about rich card attachments, see [Add rich card attachments to messages](~/rest-api/bot-framework-rest-connector-add-rich-cards.md). |
-| **channelData** | object | An object that contains channel-specific content. Some channels provide features that require additional information that cannot be represented using the attachment schema. For those cases, set this property to the channel-specific content as defined in the channel's documentation. For more information, see [Implement channel-specific functionality](~/rest-api/bot-framework-rest-connector-channeldata.md). |
+| **attachmentLayout** | string | Layout of the rich card **attachments** that the message includes. One of these values: **carousel**, **list**. For more information about rich card attachments, see [Add rich card attachments to messages](bot-framework-rest-connector-add-rich-cards.md). |
+| **channelData** | object | An object that contains channel-specific content. Some channels provide features that require additional information that cannot be represented using the attachment schema. For those cases, set this property to the channel-specific content as defined in the channel's documentation. For more information, see [Implement channel-specific functionality](bot-framework-rest-connector-channeldata.md). |
 | **channelId** | string | An ID that uniquely identifies the channel. Set by the channel. | 
 | **conversation** | [ConversationAccount](#conversationaccount-object) | A **ConversationAccount** object that defines the conversation to which the activity belongs. |
 | **entities** | object[] | Array of objects that represents the entities that were mentioned in the message. Objects in this array may be any <a href="http://schema.org/" target="_blank">Schema.org</a> object. For example, the array may include [Mention](#mention-object) objects that identify someone who was mentioned in the conversation and [Place](#place-object) objects that identify a place that was mentioned in the conversation. |
@@ -343,10 +342,10 @@ Defines a message that is exchanged between bot and user.<br/><br/>
 | **suggestedActions** | [SuggestedActions](#suggestedactions-object) | A **SuggestedActions** object that defines the options from which the user can choose. |
 | **summary** | string | Summary of the information that the message contains. For example, for a message that is sent on an email channel, this property may specify the first 50 characters of the email message. |
 | **text** | string | Text of the message that is sent from user to bot or bot to user. See the channel's documentation for limits imposed upon the contents of this property. |
-| **textFormat** | string | Format of the message's **text**. One of these values: **markdown**, **plain**, **xml**. For details about text format, see [Create messages](~/rest-api/bot-framework-rest-connector-create-messages.md). |
+| **textFormat** | string | Format of the message's **text**. One of these values: **markdown**, **plain**, **xml**. For details about text format, see [Create messages](bot-framework-rest-connector-create-messages.md). |
 | **timestamp** | string | Date and time that the message was sent in the UTC time zone, expressed in <a href="https://en.wikipedia.org/wiki/ISO_8601" target="_blank">ISO-8601</a> format. |
 | **topicName** | string | Topic of the conversation to which the activity belongs. |
-| **type** | string | Type of activity. One of these values: **contactRelationUpdate**, **conversationUpdate**, **deleteUserData**, **message**, **ping**, **typing**, **endOfConversation**. For details about activity types, see [Activities overview](~/rest-api/bot-framework-rest-connector-activities.md). |
+| **type** | string | Type of activity. One of these values: **contactRelationUpdate**, **conversationUpdate**, **deleteUserData**, **message**, **ping**, **typing**, **endOfConversation**. For details about activity types, see [Activities overview](bot-framework-rest-connector-activities.md). |
 
 ### AnimationCard object
 Defines a card that can play animated GIFs or short videos.<br/><br/> 
@@ -430,10 +429,10 @@ Defines an action to perform.<br/><br/>
 
 | Property | Type | Description |
 |----|----|----|
-| **type** | string | Type of action to perform. For a list of valid values, see [Add rich card attachments to messages](~/rest-api/bot-framework-rest-connector-add-rich-cards.md). |
+| **type** | string | Type of action to perform. For a list of valid values, see [Add rich card attachments to messages](bot-framework-rest-connector-add-rich-cards.md). |
 | **title** | string | Text of the button. Only applicable for a button's action. |
 | **image** | string | URL of an image to display on the button. Only applicable for a button's action. |
-| **value** | string | Contents of the action. The value of this property will vary according to the action **type**. For more information, see [Add rich card attachments to messages](~/rest-api/bot-framework-rest-connector-add-rich-cards.md). |
+| **value** | string | Contents of the action. The value of this property will vary according to the action **type**. For more information, see [Add rich card attachments to messages](bot-framework-rest-connector-add-rich-cards.md). |
 
 ### CardImage object
 Defines an image to display on a card.<br/><br/> 
@@ -492,6 +491,13 @@ Defines an error.<br/><br/>
 | **code** | string | Error code. |
 | **message** | string | A description of the error. |
 
+### ErrorResponse object
+Defines an HTTP API response.<br/><br/> 
+
+| Property | Type | Description |
+|----|----|----|
+| **error** | [Error](#error-object) | An **Error** object that contains information about the error. |
+
 ### Fact object
 Defines a key-value pair that contains a fact.<br/><br/> 
 
@@ -543,7 +549,7 @@ Defines a user or bot that was mentioned in the conversation.<br/><br/>
 
 | Property | Type | Description |
 |----|----|----|
-| **mentioned** | [ChannelAccount](#channelaccount-object) | A **ChannelAccount** object that specifies the user or the bot that was mentioned. Note that some channels such as Slack assign names per conversation, so it is possible that your bot's mentioned name (in the message's **recipient** property) may be different from the handle that you specified when you [registered](~/portal-register-bot.md) your bot. However, the account IDs for both would be the same. |
+| **mentioned** | [ChannelAccount](#channelaccount-object) | A **ChannelAccount** object that specifies the user or the bot that was mentioned. Note that some channels such as Slack assign names per conversation, so it is possible that your bot's mentioned name (in the message's **recipient** property) may be different from the handle that you specified when you [registered](../portal-register-bot.md) your bot. However, the account IDs for both would be the same. |
 | **text** | string | The user or bot as mentioned in the conversation. For example, if the message is "@ColorBot pick me a new color," this property would be set to **@ColorBot**. Not all channels set this property. |
 | **type** | string | This object's type. Always set to **Mention**. |
 

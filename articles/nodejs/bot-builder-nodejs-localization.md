@@ -107,7 +107,7 @@ The default localization system for the Bot Builder SDK is file-based and allows
 
 The following screenshot shows the directory structure for a bot that supports three languages: English, Italian, and Spanish.
 
-![Directory structure for three locales](~/media/locale-dir.png)
+![Directory structure for three locales](../media/locale-dir.png)
 
 The structure of the file is a simple JSON map of message IDs to localized text strings. If the value is an array instead of a string, one prompt from the array is chosen at random when that value is retrieved using [session.localizer.gettext()][GetText]. 
 
@@ -141,12 +141,12 @@ The default localizer searches for a message ID across multiple files and if it 
 ## Use namespaces to customize and localize prompts
 The default localizer supports the namespacing of prompts to avoid collisions between message IDs.  Your bot can override namespaced prompts to customize or reword the prompts from another namespace.  You can leverage this capability to customize the SDK’s built-in messages, letting you either add support for additional languages or to simply reword the SDK's current messages.  For instance, you can change the SDK’s default error message by simply adding a file called **BotBuilder.json** to your bot's locale directory and then adding an entry for the `default_error` message ID:
 
-![BotBuilder.json for locale namespacing](~/media/locale-namespacing.png)
+![BotBuilder.json for locale namespacing](../media/locale-namespacing.png)
 
 
 ## Additional resources
 
-To learn about how to localize a recognizer, see [Recognizing intent](~/nodejs/bot-builder-nodejs-recognize-intent.md).
+To learn about how to localize a recognizer, see [Recognizing intent](bot-builder-nodejs-recognize-intent.md).
 
 
 [LUIS]: https://www.luis.ai/

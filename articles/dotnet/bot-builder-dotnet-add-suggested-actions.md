@@ -15,7 +15,7 @@ ms.date: 06/06/2017
 > - [Node.js](../nodejs/bot-builder-nodejs-send-suggested-actions.md)
 > - [REST](../rest-api/bot-framework-rest-connector-add-suggested-actions.md)
 
-[!include[Introduction to suggested actions](~/includes/snippet-suggested-actions-intro.md)] 
+[!include[Introduction to suggested actions](../includes/snippet-suggested-actions-intro.md)] 
 
 > [!TIP]
 > Use the [Channel Inspector][channelInspector] to see how suggested actions look and work on various channels.
@@ -26,15 +26,20 @@ To add suggested actions to a message, set the `SuggestedActions` property of th
 
 This code example shows how to create a message that presents three suggested actions to the user:
 
-[!code-csharp[Add suggested actions](~/includes/code/dotnet-add-suggested-actions.cs#addSuggestedActions)]
+[!code-csharp[Add suggested actions](../includes/code/dotnet-add-suggested-actions.cs#addSuggestedActions)]
 
 When the user taps one of the suggested actions, the bot will receive a message from the user that contains the `Value` of the corresponding action.
 
 ## Additional resources
 
 - [Preview features with the Channel Inspector][inspector]
+<<<<<<< HEAD
 - [Activities overview](~/dotnet/bot-builder-dotnet-activities.md)
 - [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
+=======
+- [Activities overview](bot-builder-dotnet-activities.md)
+- [Create messages](bot-builder-dotnet-create-messages.md)
+>>>>>>> adca8cd6829c530d37b27c7cab69ad770530b391
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.8" target="_blank">Activity class</a>
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.imessageactivity?view=botbuilder-3.8" target="_blank">IMessageActivity interface</a>
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.cardaction?view=botbuilder-3.8" target="_blank">CardAction class</a>

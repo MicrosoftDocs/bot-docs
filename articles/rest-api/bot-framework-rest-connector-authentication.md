@@ -21,7 +21,7 @@ This article describes the authentication technologies and requirements for the 
 > By implementing all steps in this article, you can mitigate the risk of an attacker being able to read messages that 
 > are sent to your bot, send messages that impersonate your bot, and steal secret keys. 
 
-If you are using the [Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-overview.md) or the [Bot Builder SDK for Node.js](~/nodejs/index.md), you do not need to implement the security procedures described in this article, because the SDK automatically does it for you. Simply configure your project with the App ID and password that you obtained for your bot during [registration](~/portal-register-bot.md) and the SDK will handle the rest.
+If you are using the [Bot Builder SDK for .NET](../dotnet/bot-builder-dotnet-overview.md) or the [Bot Builder SDK for Node.js](../nodejs/index.md), you do not need to implement the security procedures described in this article, because the SDK automatically does it for you. Simply configure your project with the App ID and password that you obtained for your bot during [registration](../portal-register-bot.md) and the SDK will handle the rest.
 
 > [!WARNING]
 > In December 2016, v3.1 of the Bot Framework security protocol introduced changes to several values that are 
@@ -51,14 +51,14 @@ Authorization: Bearer ACCESS_TOKEN
 
 This diagram shows the steps for bot-to-connector authentication:
 
-![Authenticate to the MSA login service and then to the bot](~/media/connector/auth_bot_to_bot_connector.png)
+![Authenticate to the MSA login service and then to the bot](../media/connector/auth_bot_to_bot_connector.png)
 
 > [!IMPORTANT]
-> If you have not already done so, you must [register](~/portal-register-bot.md) your bot with the Bot Framework to obtain its App ID and password. You will need the bot's App ID and password to request an access token.
+> If you have not already done so, you must [register](../portal-register-bot.md) your bot with the Bot Framework to obtain its App ID and password. You will need the bot's App ID and password to request an access token.
 
 ### Step 1: Request an access token from the MSA/AAD v2 login service
 
-To request an access token from the MSA/AAD v2 login service, issue the following request, replacing **MICROSOFT-APP-ID** and **MICROSOFT-APP-PASSWORD** with the App ID and password that you obtained when you [registered](~/portal-register-bot.md) your bot with the Bot Framework.
+To request an access token from the MSA/AAD v2 login service, issue the following request, replacing **MICROSOFT-APP-ID** and **MICROSOFT-APP-PASSWORD** with the App ID and password that you obtained when you [registered](../portal-register-bot.md) your bot with the Bot Framework.
 
 ```http
 POST https://login.microsoftonline.com/botframework.com/oauth2/v2.0/token
@@ -146,7 +146,7 @@ When the Bot Connector service sends a request to your bot, it specifies a signe
 
 This diagram shows the steps for connector-to-bot authentication:
 
-![Authenticate calls from the Bot Connector to your bot](~/media/connector/auth_bot_connector_to_bot.png)
+![Authenticate calls from the Bot Connector to your bot](../media/connector/auth_bot_connector_to_bot.png)
 
 ###<a id="openid-metadata-document"></a> Step 2: Get the OpenID metadata document
 
@@ -239,7 +239,7 @@ payload:
 
 ##<a id="emulator-to-bot"></a> Authenticate requests from the Bot Framework Emulator to your bot
 
-The [Bot Framework Emulator](~/debug-bots-emulator.md) is a desktop tool that you can use to test the functionality of your bot. Although the Bot Framework Emulator uses the same [authentication technologies](#authentication-technologies) as described above, it is unable to impersonate the real Bot Connector service. 
+The [Bot Framework Emulator](../debug-bots-emulator.md) is a desktop tool that you can use to test the functionality of your bot. Although the Bot Framework Emulator uses the same [authentication technologies](#authentication-technologies) as described above, it is unable to impersonate the real Bot Connector service. 
 Instead, it uses the Microsoft App ID and Microsoft App Password that you specify when you connect the emulator to your bot to create tokens that are identical to those that the bot creates. 
 When the emulator sends a request to your bot, it specifies the JWT token in the `Authorization` header of the request -- in essence, using the bot's own credentials to authenticate the request. 
 
@@ -247,7 +247,7 @@ If you are implementing an authentication library and want to accept requests fr
 
 This diagram shows the steps for emulator-to-bot authentication:
 
-![Authenticate calls from the Bot Framework Emulator to your bot](~/media/connector/auth_bot_framework_emulator_to_bot.png)
+![Authenticate calls from the Bot Framework Emulator to your bot](../media/connector/auth_bot_framework_emulator_to_bot.png)
 
 ---
 ### Step 2: Get the MSA OpenID metadata document
@@ -375,6 +375,20 @@ As of May 1, 2017, the Bot Framework supports two versions of security protocol:
 
 ### [Emulator to Bot authentication](#emulator-to-bot)
 
+#### OAuth login URL
+
+| Protocol version | Valid value |
+|----|----|
+| v3.0 (June 2016 - July 31, 2017) | `https://login.microsoftonline.com/common/oauth2/v2.0/token` | 
+| v3.1 (starting December 2016) | `https://login.microsoftonline.com/botframework.com/oauth2/v2.0/token` |
+
+#### OAuth scope
+
+| Protocol version | Valid value |
+|----|----|
+| v3.0 (June 2016 - July 31, 2017) | `https://graph.microsoft.com/.default` | 
+| v3.1 (starting December 2016) |  Your bot’s Microsoft App ID + `/.default` |
+
 #### JWT Audience
 
 | Protocol version | Valid value |
@@ -398,9 +412,9 @@ As of May 1, 2017, the Bot Framework supports two versions of security protocol:
 
 ## Additional resources
 
-- [Troubleshooting Bot Framework authentication](~/troubleshoot-authentication-problems.md)
+- [Troubleshooting Bot Framework authentication](../troubleshoot-authentication-problems.md)
 - [JSON Web Token (JWT) draft-jones-json-web-token-07](http://openid.net/specs/draft-jones-json-web-token-07.html)
 - [JSON Web Signature (JWS) draft-jones-json-web-signature-04](https://tools.ietf.org/html/draft-jones-json-web-signature-04)
 - [JSON Web Key (JWK) RFC 7517](https://tools.ietf.org/html/rfc7517)
 
-[Activity]: ~/rest-api/bot-framework-rest-connector-api-reference.md#activity-object
+[Activity]: bot-framework-rest-connector-api-reference.md#activity-object

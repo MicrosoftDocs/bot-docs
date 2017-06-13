@@ -1,8 +1,8 @@
 ---
 title: Bot analytics | Microsoft Docs
 description: Learn how to use data collection and analysis to improve your bot with analytics in the Bot Framework.
-author: JaymeMPerlman
-ms.author: v-jaype
+author: RobStand
+ms.author: rstand
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

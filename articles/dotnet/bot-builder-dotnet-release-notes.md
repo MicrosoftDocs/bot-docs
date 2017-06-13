@@ -25,8 +25,8 @@ This article describes changes introduced by each version of the Bot Builder SDK
 
 ### Changes
 
-- Added support for speech-enabled channels (e.g., [Cortana](~/dotnet/bot-builder-dotnet-cortana-skill.md)).
-- Added support for [payment requests](~/dotnet/bot-builder-dotnet-request-payment.md).
+- Added support for speech-enabled channels (e.g., [Cortana](bot-builder-dotnet-cortana-skill.md)).
+- Added support for [payment requests](bot-builder-dotnet-request-payment.md).
 - Added prompt recognizers to improve the `PromptDialog` parser.
 - Implemented general bug fixes and improvements.
 
@@ -96,7 +96,7 @@ see [Authentication][authentication].
 
 ### Changes
 
-- Added support for new ~/media card types (e.g. `AnimationCard`, `VideoCard`, and `AudioCard`).
+- Added support for new ../media card types (e.g. `AnimationCard`, `VideoCard`, and `AudioCard`).
 - Added new `BotAuthenticator` utility class that can be used for bot authentication instead of using the `BotAuthentication` attribute.
 - Implemented general bug fixes.
 
@@ -173,11 +173,11 @@ see [Authentication][authentication].
 
 ### Breaking changes
 
-- Updated schema to v3. `Message` is now [Activity](~/dotnet/bot-builder-dotnet-activities.md) and there is a new addressing scheme.
+- Updated schema to v3. `Message` is now [Activity](bot-builder-dotnet-activities.md) and there is a new addressing scheme.
 - Changed reply model such that replies to the user will be sent asynchronously over a separately initiated HTTP request rather than inline with the HTTP POST for the incoming message to bot.
 - Updated [Authentication model][authenticationModel].
 - Decoupled bot data storage [Bot State][stateAPI] from messaging API.
-- Added [new card format](~/dotnet/bot-builder-dotnet-add-rich-card-attachments.md) for attachments.
+- Added [new card format](bot-builder-dotnet-add-rich-card-attachments.md) for attachments.
 
 ### Changes
 
@@ -335,10 +335,10 @@ see [Authentication][authentication].
 - Updated **nuspec** with better description.
 - Added error-resilient context store.
 
-[authentication]: ~/rest-api/bot-framework-rest-connector-authentication.md#security-protocol-changes
+[authentication]: ../rest-api/bot-framework-rest-connector-authentication.md#security-protocol-changes
 
-[authenticationModel]: ~/rest-api/bot-framework-rest-connector-authentication.md
+[authenticationModel]: ../rest-api/bot-framework-rest-connector-authentication.md
 
-[stateAPI]: ~/dotnet/bot-builder-dotnet-state.md
+[stateAPI]: bot-builder-dotnet-state.md
 
 [skypeCallingBot]: https://dev.skype.com/bots

@@ -14,7 +14,7 @@ ms.reviewer:
 > - [.NET](../dotnet/bot-builder-dotnet-middleware.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-intercept-messages.md)
 
-[!include[Introducton to message logging](~/includes/snippet-message-logging-intro.md)]
+[!include[Introducton to message logging](../includes/snippet-message-logging-intro.md)]
 
 ## Intercept and log messages
 

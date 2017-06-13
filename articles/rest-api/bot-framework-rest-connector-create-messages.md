@@ -7,12 +7,11 @@ manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 05/12/2017
-ms.reviewer: 
 ---
 
 # Create messages
 
-Your bot will send [Activity][Activity] objects of type **message** to communicate information to users, and likewise, will also receive **message** activities from users. Some messages may simply consist of plain text, while others may contain richer content such as [text to be spoken](~/rest-api/bot-framework-rest-connector-text-to-speech.md), [suggested actions](~/rest-api/bot-framework-rest-connector-add-suggested-actions.md), [media attachments](~/rest-api/bot-framework-rest-connector-add-media-attachments.md), [rich cards](~/rest-api/bot-framework-rest-connector-add-rich-cards.md), and [channel-specific data](~/rest-api/bot-framework-rest-connector-channeldata.md). This article describes some of the commonly-used message properties.
+Your bot will send [Activity][Activity] objects of type **message** to communicate information to users, and likewise, will also receive **message** activities from users. Some messages may simply consist of plain text, while others may contain richer content such as [text to be spoken](bot-framework-rest-connector-text-to-speech.md), [suggested actions](bot-framework-rest-connector-add-suggested-actions.md), [media attachments](bot-framework-rest-connector-add-media-attachments.md), [rich cards](bot-framework-rest-connector-add-rich-cards.md), and [channel-specific data](bot-framework-rest-connector-channeldata.md). This article describes some of the commonly-used message properties.
 
 ## Message text and format
 
@@ -55,7 +54,7 @@ These styles are supported when `textFormat` is set to **xml**:
 ## Attachments
 
 The `attachments` property of the [Activity][Activity] object can be used to send simple media attachments 
-(image, audio, video, file) and rich cards. For details, see [Add media attachments to messages](~/rest-api/bot-framework-rest-connector-add-media-attachments.md) and [Add rich cards to messages](~/rest-api/bot-framework-rest-connector-add-rich-cards.md).
+(image, audio, video, file) and rich cards. For details, see [Add media attachments to messages](bot-framework-rest-connector-add-media-attachments.md) and [Add rich cards to messages](bot-framework-rest-connector-add-rich-cards.md).
 
 ## Entities
 
@@ -73,27 +72,27 @@ To convey <a href="https://schema.org/Place" target="_blank">location-related in
 ## Channel data
 
 The `channelData` property of the [Activity][Activity] object can be used to implement channel-specific functionality. 
-For details, see [Implement channel-specific functionality](~/rest-api/bot-framework-rest-connector-channeldata.md).
+For details, see [Implement channel-specific functionality](bot-framework-rest-connector-channeldata.md).
 
 ## Text to speech
 
-The `speak` property of the [Activity][Activity] object can be used to specify the text to be spoken by your bot on a speech-enabled channel and the `inputHint` property of the [Activity][Activity] object can be used to influence the state of the client's microphone. For details, see [Add speech to messages](~/rest-api/bot-framework-rest-connector-text-to-speech.md) and [Add input hints to messages](~/rest-api/bot-framework-rest-connector-add-input-hints.md).
+The `speak` property of the [Activity][Activity] object can be used to specify the text to be spoken by your bot on a speech-enabled channel and the `inputHint` property of the [Activity][Activity] object can be used to influence the state of the client's microphone. For details, see [Add speech to messages](bot-framework-rest-connector-text-to-speech.md) and [Add input hints to messages](bot-framework-rest-connector-add-input-hints.md).
 
 ## Suggested actions
 
-The `suggestedActions` property of the [Activity][Activity] object can be used to present buttons that the user can tap to provide input. Unlike buttons that appear within rich cards (which remain visable and accessible to the user even after being tapped), buttons that appear within the suggested actions pane will disappear after the user makes a selection. For details, see [Add suggested actions to messages](~/rest-api/bot-framework-rest-connector-add-suggested-actions.md).
+The `suggestedActions` property of the [Activity][Activity] object can be used to present buttons that the user can tap to provide input. Unlike buttons that appear within rich cards (which remain visable and accessible to the user even after being tapped), buttons that appear within the suggested actions pane will disappear after the user makes a selection. For details, see [Add suggested actions to messages](bot-framework-rest-connector-add-suggested-actions.md).
 
 ## Additional resources
 
-- [Activities overview](~/rest-api/bot-framework-rest-connector-activities.md)
-- [Send and receive messages](~/rest-api/bot-framework-rest-connector-send-and-receive-messages.md)
-- [Add media attachments to messages](~/rest-api/bot-framework-rest-connector-add-media-attachments.md)
-- [Add rich cards to messages](~/rest-api/bot-framework-rest-connector-add-rich-cards.md)
-- [Add speech to messages](~/rest-api/bot-framework-rest-connector-text-to-speech.md)
-- [Add input hints to messages](~/rest-api/bot-framework-rest-connector-add-input-hints.md)
-- [Add suggested actions to messages](~/rest-api/bot-framework-rest-connector-add-suggested-actions.md)
-- [Implement channel-specific functionality](~/rest-api/bot-framework-rest-connector-channeldata.md)
+- [Activities overview](bot-framework-rest-connector-activities.md)
+- [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md)
+- [Add media attachments to messages](bot-framework-rest-connector-add-media-attachments.md)
+- [Add rich cards to messages](bot-framework-rest-connector-add-rich-cards.md)
+- [Add speech to messages](bot-framework-rest-connector-text-to-speech.md)
+- [Add input hints to messages](bot-framework-rest-connector-add-input-hints.md)
+- [Add suggested actions to messages](bot-framework-rest-connector-add-suggested-actions.md)
+- [Implement channel-specific functionality](bot-framework-rest-connector-channeldata.md)
 
-[Mention]: ~/rest-api/bot-framework-rest-connector-api-reference.md#mention-object
-[Place]: ~/rest-api/bot-framework-rest-connector-api-reference.md#place-object
-[Activity]: ~/rest-api/bot-framework-rest-connector-api-reference.md#activity-object
+[Mention]: bot-framework-rest-connector-api-reference.md#mention-object
+[Place]: bot-framework-rest-connector-api-reference.md#place-object
+[Activity]: bot-framework-rest-connector-api-reference.md#activity-object

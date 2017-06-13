@@ -21,7 +21,7 @@ The bot needs to be configured with a valid certificate from a trusted Certifica
 
 ## Configure application settings
 For your bot to function properly in the cloud, you must ensure that its application settings are correct.
-If you've already [registered](~/portal-register-bot.md) your bot with the Bot Framework,
+If you've already [registered](../portal-register-bot.md) your bot with the Bot Framework,
 update the Microsoft App Id and Microsoft App Password values in your application's configuration settings
 as part of the deployment process.
 Specify the **app ID** and **password** values that were generated for your bot during registration.

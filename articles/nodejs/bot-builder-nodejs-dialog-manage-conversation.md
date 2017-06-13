@@ -73,7 +73,7 @@ bot.dialog('/profile', [
 
 At run time, the [dialog handler](#dialog-handlers) will route the user messages to the root `/` dialog. This function receives a [session](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html) object. The `session` object contains information that the bot can use to inspect the user's message, send a reply to the user, save state on behalf of the user, or redirect to another dialog. In this case, the root dialog checks to see if it knows who the current user is. If it does, then it greets the user by name. Otherwise, it redirects the user to the `/profile` dialog. The `/profile` dialog ask for the user's name. When the user reply with a name, the bot persisted this information in the [session.userData](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#userdata) object then ends the dialog. This returns the conversation to the root dialog and it sends the user a personalized greeting message.
 
-The bot maintains a stack of dialogs for each conversation. The conversations dialog stack helps the bot know where to route the user's reply to. If you were to inspect the bot's dialog stack from the code above, it would look like this: [`/`, `/profile`, `BotBuilder:Prompts`]. Noticed that the call to [Prompts.text()](~/nodejs/bot-builder-nodejs-dialog-prompt.md) is a built-in prompt that is also a dialog. This is why we see `BotBuilder:Prompts` on the stack.  
+The bot maintains a stack of dialogs for each conversation. The conversations dialog stack helps the bot know where to route the user's reply to. If you were to inspect the bot's dialog stack from the code above, it would look like this: [`/`, `/profile`, `BotBuilder:Prompts`]. Noticed that the call to [Prompts.text()](bot-builder-nodejs-dialog-prompt.md) is a built-in prompt that is also a dialog. This is why we see `BotBuilder:Prompts` on the stack.  
 
 Note that the built-in prompts will let the user cancel an action by saying something like "nevermind" or "cancel". It’s up to the dialog that called the prompt to determine what "cancel" means. To detect that the user canceled a prompt, you can check the [ResumeReason](http://docs.botframework.com/en-us/node/builder/chat-reference/enums/_botbuilder_d_.resumereason.html) code returned in [result.resumed](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptresult.html#resumed) or simply check that [result.response](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptresult.html#response) isn't null. There are actually a number of reasons that can cause the prompt to return without a response, so checking for a null response tends to be the best approach. In this example bot, if the user responds with "cancel", the bot would simply ask them for their name again because the response would be null. 
 
@@ -169,7 +169,7 @@ bot.dialog('/ensureProfile', [
         if (results.response) {
             session.dialogData.profile.email = results.response;
         }
-        session.endDialogWithResults({ repsonse: session.dialogData.profile })
+        session.endDialogWithResults({ response: session.dialogData.profile })
     }
 ]);
 ```

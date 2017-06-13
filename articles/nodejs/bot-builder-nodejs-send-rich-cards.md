@@ -141,7 +141,7 @@ bot.dialog('buyButtonClick', [
 Some channels tend to download images before displaying a message to the user so that if you send a message containing an image followed immediately by a message without images you’ll sometimes see the messages flipped in the user's feed. To minimize the chance of this you can try to insure that your images are coming from content deliver networks (CDNs) and avoid the use of overly large images. In extreme cases you may even need to insert a 1-2 second delay between the message with the image and the one that follows it. You can make this delay feel a bit more natural to the user by calling **session.sendTyping()** to send a typying indicator before starting your delay. 
 
 <!-- 
-To learn more about sending a typing indicator, see [How to send a typing indicator](~/nodejs/bot-builder-nodejs-send-typing-indicator.md).
+To learn more about sending a typing indicator, see [How to send a typing indicator](bot-builder-nodejs-send-typing-indicator.md).
 -->
 
 The Bot Framework implements a batching to try to prevent multiple messages from the bot from being displayed out of order. <!-- Unfortunately, not all channels can guarantee this. --> When your bot sends multiple replies to the user, the individual messages will be automatically grouped into a batch and delivered to the user as a set in an effort to preserve the original order of the messages. This automatic batching waits a default of 250ms after every call to **session.send()** before initiating the next call to **send()**.
@@ -157,11 +157,11 @@ To create an Adaptive Card using Node.js, leverage the information within the <a
 
 This code example shows how to create a message that contains an Adaptive Card for a calendar reminder: 
 
-[!code-javascript[Add Adaptive Card attachment](~/includes/code/node-send-card-buttons.js#addAdaptiveCardAttachment)]
+[!code-javascript[Add Adaptive Card attachment](../includes/code/node-send-card-buttons.js#addAdaptiveCardAttachment)]
 
 The resulting card contains three blocks of text, an input field (choice list), and three buttons:
 
-![Adaptive Card calendar reminder](~/media/adaptive-card-reminder.png)
+![Adaptive Card calendar reminder](../media/adaptive-card-reminder.png)
 
 ## Additional resources
 
@@ -175,9 +175,9 @@ The resulting card contains three blocks of text, an input field (choice list), 
 * [SigninCard][signinCard]
 * [VideoCard][videoCard]
 * [Message][Message]
-* [How to send attachments](~/nodejs/bot-builder-nodejs-send-receive-attachments.md)
+* [How to send attachments](bot-builder-nodejs-send-receive-attachments.md)
 
-[MessageOrder]: ~/nodejs/bot-builder-nodejs-manage-conversation-flow.md#message-ordering
+[MessageOrder]: bot-builder-nodejs-manage-conversation-flow.md#message-ordering
 [Message]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.message
 [IMessage]: http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.imessage
 

@@ -1,8 +1,8 @@
 ---
 title: Connect a bot to Skype for Business  | Microsoft Docs
 description: Learn how to register a bot with the Skype for Business tenant.
-author: JaymeMPerlman
-ms.author: v-jaype
+author: RobStand
+ms.author: rstand
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

@@ -98,17 +98,17 @@ var bot = new builder.UniversalBot(connector, function (session) {
 * [Send attachments][SendAttachments]
 * [Send cards][SendCardWithButtons]
 
-* [Ask questions](~/nodejs/bot-builder-nodejs-prompts.md)
+* [Ask questions](bot-builder-nodejs-prompts.md)
 
-* [Listen for messages using actions]( ~/nodejs/bot-builder-nodejs-global-handlers.md)
+* [Listen for messages using actions]( bot-builder-nodejs-global-handlers.md)
 
 
 [DialogClass]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html
 [session]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session
-[SendAttachments]: ~/nodejs/bot-builder-nodejs-send-receive-attachments.md
-[SendCardWithButtons]: ~/nodejs/bot-builder-nodejs-send-rich-cards.md
+[SendAttachments]: bot-builder-nodejs-send-receive-attachments.md
+[SendCardWithButtons]: bot-builder-nodejs-send-rich-cards.md
 [sprintf]: https://github.com/alexei/sprintf.js
-[emulator]: ~/debug-bots-emulator.md
+[emulator]: ../debug-bots-emulator.md
 [appId]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ichatconnectorsettings.html#appid
 [appPassword]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ichatconnectorsettings.html#apppassword
 [SessionSend]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#send

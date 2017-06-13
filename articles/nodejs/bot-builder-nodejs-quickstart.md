@@ -51,12 +51,12 @@ For your first bot, you will create a bot that simply echoes back any user input
 1. In the folder that you created earlier for your bot, create a new file named **app.js**.
 2. Open **app.js** in a text editor or an IDE of your choice. Add the following code to the file: 
 
-   [!code-javascript[echobot code sample Node.js](~/includes/code/node-getstarted.js#echobot)]
+   [!code-javascript[echobot code sample Node.js](../includes/code/node-getstarted.js#echobot)]
 
 3. Save the file. Now you are ready to run and test out your bot.
 
 ## Test your bot
-Next, test your bot by using the [Bot Framework Emulator](~/debug-bots-emulator.md) to see it in action. The emulator is a desktop application that lets you test and debug your bot on localhost or running remotely through a tunnel.
+Next, test your bot by using the [Bot Framework Emulator](../debug-bots-emulator.md) to see it in action. The emulator is a desktop application that lets you test and debug your bot on localhost or running remotely through a tunnel.
 
 First, you'll need to [download](https://emulator.botframework.com) and install the emulator. After the download completes, launch the executable and complete the installation process.
 
@@ -74,7 +74,7 @@ Your bot is now running locally.
 After you start your bot, connect to your bot in the emulator:
 
 1. Type `http://localhost:3978/api/messages` into the address bar. (This is the default endpoint that your bot listens to when hosted locally.)
-2. Click **Connect**. You won't need to specify **Microsoft App ID** and **Microsoft App Password**. You can leave these fields blank for now. You'll get this information later when you [register your bot](~/portal-register-bot.md).
+2. Click **Connect**. You won't need to specify **Microsoft App ID** and **Microsoft App Password**. You can leave these fields blank for now. You'll get this information later when you [register your bot](../portal-register-bot.md).
 
 ### Try out your bot
 
@@ -87,10 +87,10 @@ You've successfully created your first bot using the Bot Builder SDK for Node.js
 
 To learn more about building great bots with the Bot Framework, see the following articles:
 
-- [How the Bot Framework works](~/overview-how-bot-framework-works.md)
-- [Principles of bot design](~/bot-design-principles.md)
-- [Bot Builder SDK for Node.js](~/nodejs/index.md)
-- [Deploy and publish bots](~/publish-bot-overview.md)
+- [How the Bot Framework works](../overview-how-bot-framework-works.md)
+- [Principles of bot design](../bot-design-principles.md)
+- [Bot Builder SDK for Node.js](index.md)
+- [Deploy and publish bots](../publish-bot-overview.md)
 - [Bot Builder SDK for Node.js samples](bot-builder-nodejs-samples.md)
-- [Bot Framework FAQ](~/resources-bot-framework-faq.md)
+- [Bot Framework FAQ](../resources-bot-framework-faq.md)
 

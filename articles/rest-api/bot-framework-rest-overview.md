@@ -6,8 +6,7 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
-ms.reviewer: 
+ms.date: 06/13/2017
 ---
 
 # Bot Framework REST APIs
@@ -24,14 +23,11 @@ You can create a bot with any programming language by using the Bot Connector se
 
 > [!TIP]
 > The Bot Framework provides client libraries that can be used to build bots in either C# or Node.js. 
-> To build a bot using C#, use the [Bot Builder SDK for C#](~/dotnet/bot-builder-dotnet-overview.md). 
-> To build a bot using Node.js, use the [Bot Builder SDK for Node.js](~/nodejs/index.md). 
+> To build a bot using C#, use the [Bot Builder SDK for C#](../dotnet/bot-builder-dotnet-overview.md). 
+> To build a bot using Node.js, use the [Bot Builder SDK for Node.js](../nodejs/index.md). 
 
-To learn more about building bots using the Bot Connector service and the Bot State service, see [Key concepts](~/rest-api/bot-framework-rest-connector-concepts.md).
+To learn more about building bots using the Bot Connector service and the Bot State service, see [Key concepts](bot-framework-rest-connector-concepts.md).
 
 ## Build a client
 
-You can enable your own client application to communicate with your bot by using the Direct Line API. 
-The Direct Line API implements an authentication mechanism that uses standard secret/token patterns and provides a stable schema, even if your bot changes its protocol version. For details about using the Direct Line API to enable communication between a client and your bot, see [Key concepts](~/rest-api/bot-framework-rest-direct-line-concepts.md). 
-
-
+You can enable your own client application to communicate with your bot by using the Direct Line API. The Direct Line API implements an authentication mechanism that uses standard secret/token patterns and provides a stable schema, even if your bot changes its protocol version. To learn more about using the Direct Line API to enable communication between a client and your bot, see [Key concepts](bot-framework-rest-direct-line-3-0-concepts.md). 

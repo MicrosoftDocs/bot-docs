@@ -14,7 +14,7 @@ ms.reviewer:
 
 If a user sends a message such as "get news about virtual reality companies," your bot can use LUIS to interpret the meaning of the message. Using <a href="https://www.luis.ai" target="_blank">LUIS</a>, you can quickly deploy an HTTP endpoint that will interpret user input in terms of the intention that it conveys (find news) and the key entities that are present (virtual reality companies). LUIS enables you to specify the set of intents and entities that are relevant to your application, and then guides you through the process of building a language understanding application.
 
-To create a bot that uses natural language models (LUIS) to understand user intent, choose the [Language understanding template](~/azure/azure-bot-service-templates.md) when creating the bot using Azure Bot Service. This article provides a walkthrough of the code that is automatically generated when you create a bot using the Language understanding template.
+To create a bot that uses natural language models (LUIS) to understand user intent, choose the [Language understanding template](azure-bot-service-templates.md) when creating the bot using Azure Bot Service. This article provides a walkthrough of the code that is automatically generated when you create a bot using the Language understanding template.
 
 ## Customize the LUIS application model
 
@@ -22,13 +22,13 @@ When you create a bot using the Language understanding template, Azure Bot Servi
 
 > [!NOTE]
 > A bot that is created using the Language understanding template routes messages in the same manner as described for the 
-> [Basic template](~/azure/azure-bot-service-template-basic.md).
+> [Basic template](azure-bot-service-template-basic.md).
 
 ## Code walkthrough
 
-Most activities that the bot receives will be of [type](~/dotnet/bot-builder-dotnet-activities.md) `Message` and will contain the text and attachments that the user sent to the bot. To process an incoming message, the bot posts the message to `BasicLuisDialog` (in **BasicLuisDialog.csx**). 
+Most activities that the bot receives will be of [type](../dotnet/bot-builder-dotnet-activities.md) `Message` and will contain the text and attachments that the user sent to the bot. To process an incoming message, the bot posts the message to `BasicLuisDialog` (in **BasicLuisDialog.csx**). 
 
-[!code-csharp[process Message activity](~/includes/code/azure-bot-service-template-language-understanding.cs#processMessage)]
+[!code-csharp[process Message activity](../includes/code/azure-bot-service-template-language-understanding.cs#processMessage)]
 
 ### BasicLuisDialog.csx
 
@@ -38,21 +38,21 @@ The `BasicLuisDialog` object inherits from the [LuisDialog][LuisDialog] object, 
 
 The `MessageReceived` method calls your LUIS application model to determine intent and then calls the appropriate intent handler in the `BasicLuisDialog` object. The handler processes the intent and then waits for the next message from the user.
 
-[!code-csharp[BasicLuisDialog class](~/includes/code/azure-bot-service-template-language-understanding.cs#BasicLuisDialog)]
+[!code-csharp[BasicLuisDialog class](../includes/code/azure-bot-service-template-language-understanding.cs#BasicLuisDialog)]
 
 ## Extend default functionality
 
-The Language understanding template provides a good foundation that you can build upon to create a bot that is capable of using natural language models to understand user intent. To learn more about developing bots with LUIS in .NET, see [Enable language understanding with LUIS](~/dotnet/bot-builder-dotnet-luis-dialogs.md). To learn more about developing bots with LUIS in Node.js, see [Recognize user intent](~/nodejs/bot-builder-nodejs-recognize-intent.md).
+The Language understanding template provides a good foundation that you can build upon to create a bot that is capable of using natural language models to understand user intent. To learn more about developing bots with LUIS in .NET, see [Enable language understanding with LUIS](../dotnet/bot-builder-dotnet-luis-dialogs.md). To learn more about developing bots with LUIS in Node.js, see [Recognize user intent](../nodejs/bot-builder-nodejs-recognize-intent.md).
 
 ## Additional resources
 
-- [Create a bot with the Azure Bot Service](~/azure/azure-bot-service-quickstart.md)
-- [Templates in the Azure Bot Service](~/azure/azure-bot-service-templates.md)
+- [Create a bot with the Azure Bot Service](azure-bot-service-quickstart.md)
+- [Templates in the Azure Bot Service](azure-bot-service-templates.md)
 - <a href="https://www.luis.ai" target="_blank">LUIS</a>
-- [Enable language understanding with LUIS (.NET)](~/dotnet/bot-builder-dotnet-luis-dialogs.md)
-- [Recognize user intent (Node.js)](~/nodejs/bot-builder-nodejs-recognize-intent.md)
+- [Enable language understanding with LUIS (.NET)](../dotnet/bot-builder-dotnet-luis-dialogs.md)
+- [Recognize user intent (Node.js)](../nodejs/bot-builder-nodejs-recognize-intent.md)
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub repository</a>
-- [Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-overview.md)
-- [Bot Builder SDK for Node.js](~/nodejs/index.md)
+- [Bot Builder SDK for .NET](../dotnet/bot-builder-dotnet-overview.md)
+- [Bot Builder SDK for Node.js](../nodejs/index.md)
 
 [LuisDialog]: https://review.docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.luisdialog-1?view=botbuilder-3.8

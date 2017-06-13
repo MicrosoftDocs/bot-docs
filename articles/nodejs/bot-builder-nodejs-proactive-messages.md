@@ -14,11 +14,11 @@ ms.reviewer:
 > - [.NET](../dotnet/bot-builder-dotnet-proactive-messages.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-proactive-messages.md)
 
-[!include[Introduction to proactive messages - part 1](~/includes/snippet-proactive-messages-intro-1.md)] 
+[!include[Introduction to proactive messages - part 1](../includes/snippet-proactive-messages-intro-1.md)] 
 
 ## Types of proactive messages
 
-[!include[Introduction to proactive messages - part 2](~/includes/snippet-proactive-messages-intro-2.md)] 
+[!include[Introduction to proactive messages - part 2](../includes/snippet-proactive-messages-intro-2.md)] 
 
 ## Send an ad hoc proactive message
 
@@ -118,4 +118,4 @@ Within the Proactive Messages sample, <a href="https://github.com/Microsoft/BotB
 
 ## Additional resources
 
-- [Designing conversation flow](~/bot-design-conversation-flow.md)
+- [Designing conversation flow](../bot-design-conversation-flow.md)

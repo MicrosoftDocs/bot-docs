@@ -111,7 +111,7 @@ This code example builds upon the one in [Customize a form using FormBuilder](bo
 In this example, the `DynamicSandwich` class (not shown here) contains localization information for 
 dynamically-computed fields, messages and confirmations.
 
-[!code-csharp[Build localized form](~/includes/code/dotnet-formflow-localize.cs#buildLocalizedForm)]
+[!code-csharp[Build localized form](../includes/code/dotnet-formflow-localize.cs#buildLocalizedForm)]
 
 This snippet shows the resulting interaction between bot and user when `CurrentUICulture` is **French**.
 
@@ -164,11 +164,11 @@ Par pain "neuf" vouliez-vous dire (1. Neuf grains miel avoine, ou 2. Neuf grains
 
 ## Additional resources
 
-- [Basic features of FormFlow](~/dotnet/bot-builder-dotnet-formflow.md)
-- [Advanced features of FormFlow](~/dotnet/bot-builder-dotnet-formflow-advanced.md)
-- [Customize a form using FormBuilder](~/dotnet/bot-builder-dotnet-formflow-formbuilder.md)
-- [Define a form using JSON schema](~/dotnet/bot-builder-dotnet-formflow-json-schema.md)
-- [Customize user experience with pattern language](~/dotnet/bot-builder-dotnet-formflow-pattern-language.md)
+- [Basic features of FormFlow](bot-builder-dotnet-formflow.md)
+- [Advanced features of FormFlow](bot-builder-dotnet-formflow-advanced.md)
+- [Customize a form using FormBuilder](bot-builder-dotnet-formflow-formbuilder.md)
+- [Define a form using JSON schema](bot-builder-dotnet-formflow-json-schema.md)
+- [Customize user experience with pattern language](bot-builder-dotnet-formflow-pattern-language.md)
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
 
 [build]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.formbuilder-1.build?view=botbuilder-3.8 

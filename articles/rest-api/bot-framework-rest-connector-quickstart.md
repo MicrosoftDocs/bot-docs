@@ -6,8 +6,7 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
-ms.reviewer: 
+ms.date: 05/12/2017
 ---
 
 # Create a bot with the Bot Connector service
@@ -22,7 +21,7 @@ The Bot Connector service enables your bot to exchange messages with channels th
 ##<a id="get-token"></a> Get an access token
 
 > [!IMPORTANT]
-> If you have not already done so, you must [register](~/portal-register-bot.md) your bot with the Bot Framework to obtain its App ID and password. You will need the bot's App ID and password to get an access token.
+> If you have not already done so, you must [register](../portal-register-bot.md) your bot with the Bot Framework to obtain its App ID and password. You will need the bot's App ID and password to get an access token.
 
 To communicate with the Bot Connector service, you must specify an access token in the `Authorization` header of each API request, using this format: 
 
@@ -34,7 +33,7 @@ You can obtain the access token for your bot by issuing an API request.
 
 ### Request
 
-To request an access token that can be used to authenticate requests to the Bot Connector service, issue the following request, replacing **MICROSOFT-APP-ID** and **MICROSOFT-APP-PASSWORD** with the App ID and password that you obtained when you [registered](~/portal-register-bot.md) your bot with the Bot Framework.
+To request an access token that can be used to authenticate requests to the Bot Connector service, issue the following request, replacing **MICROSOFT-APP-ID** and **MICROSOFT-APP-PASSWORD** with the App ID and password that you obtained when you [registered](../portal-register-bot.md) your bot with the Bot Framework.
 
 ```http
 POST https://login.microsoftonline.com/botframework.com/oauth2/v2.0/token
@@ -66,7 +65,7 @@ A conversation is a series of messages exchanged between a user and your bot.
 
 ### Receive a message from the user
 
-When the user sends a message, the Bot Framework Connector POSTs a request to the endpoint that you specified when you [registered](~/portal-register-bot.md) your bot. The body of the request is an [Activity][Activity] object. The following example shows the request body that a bot receives when the user sends a simple message to the bot. 
+When the user sends a message, the Bot Framework Connector POSTs a request to the endpoint that you specified when you [registered](../portal-register-bot.md) your bot. The body of the request is an [Activity][Activity] object. The following example shows the request body that a bot receives when the user sends a simple message to the bot. 
 
 ```json
 {
@@ -100,7 +99,7 @@ When your bot's endpoint receives a `POST` request that represents a message fro
 3. Set the **recipient** property to the contents of the **from** property in the user's message.
 4. Set the **text** and **attachments** properties as appropriate.
 
-Use the `serviceUrl` property in the incoming request to [identify the base URI](~/rest-api/bot-framework-rest-connector-api-reference.md#base-uri) that your bot should use to issue its response. 
+Use the `serviceUrl` property in the incoming request to [identify the base URI](bot-framework-rest-connector-api-reference.md#base-uri) that your bot should use to issue its response. 
 
 To send the response, `POST` your [Activity][Activity] object to `/v3/conversations/{conversationId}/activities/{activityId}`, as shown in the following example. The body of this request is an [Activity][Activity] object that prompts the user to select an available appointment time.
 
@@ -130,7 +129,7 @@ Content-Type: application/json
 }
 ```
 
-In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](~/rest-api/bot-framework-rest-connector-api-reference.md#base-uri). 
+In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri). 
 
 > [!IMPORTANT]
 > As shown in this example, the `Authorization` header of each API request that you send must contain the word **Bearer** followed by the access token that you [obtained from the Bot Framework](#get-token).
@@ -190,18 +189,18 @@ Content-Type: application/json
 ## Next steps
 
 In this tutorial, you obtained an access token from the Bot Framework and used the Bot Connector service to exchange messages with the user. 
-You can use the [Bot Framework Emulator](~/debug-bots-emulator.md) to test and debug your bot. 
-If you'd like to share your bot with others, you'll need to [configure](~/portal-configure-channels.md) it to run on one or more channels and [deploy](~/deploy-bot-overview.md) it to the cloud.
+You can use the [Bot Framework Emulator](../debug-bots-emulator.md) to test and debug your bot. 
+If you'd like to share your bot with others, you'll need to [configure](../portal-configure-channels.md) it to run on one or more channels and [deploy](../deploy-bot-overview.md) it to the cloud.
 
 To learn more about building great bots with the Bot Framework, see the following articles:
 
-- [How the Bot Framework works](~/overview-how-bot-framework-works.md)
-- [Principles of bot design](~/bot-design-principles.md)
-- [Bot Framework REST APIs](~/rest-api/index.md)
-- [Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-overview.md)
-- [Bot Builder SDK for Node.js](~/nodejs/index.md)
-- [Deploy a bot to the cloud](~/deploy-bot-overview.md)
-- [Bot Framework FAQ](~/resources-bot-framework-faq.md)
+- [How the Bot Framework works](../overview-how-bot-framework-works.md)
+- [Principles of bot design](../bot-design-principles.md)
+- [Bot Framework REST APIs](index.md)
+- [Bot Builder SDK for .NET](../dotnet/bot-builder-dotnet-overview.md)
+- [Bot Builder SDK for Node.js](../nodejs/index.md)
+- [Deploy a bot to the cloud](../deploy-bot-overview.md)
+- [Bot Framework FAQ](../resources-bot-framework-faq.md)
 
 
-[Activity]: ~/rest-api/bot-framework-rest-connector-api-reference.md#activity-object
+[Activity]: bot-framework-rest-connector-api-reference.md#activity-object

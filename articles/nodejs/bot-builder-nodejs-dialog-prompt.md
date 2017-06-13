@@ -159,14 +159,14 @@ builder.Prompts.attachment(session, "Upload a picture for me to transform.");
 ## Additional resources
 - [Define conversation steps with waterfalls](bot-builder-nodejs-dialog-waterfall.md)
 - [Send and receive attachments](bot-builder-nodejs-send-receive-attachments.md)
-- [Save user data](~/nodejs/bot-builder-nodejs-save-user-data.md)
+- [Save user data](bot-builder-nodejs-save-user-data.md)
 - [Prompts interface][PromptsRef]
 
 
-[SendAttachments]: ~/nodejs/bot-builder-nodejs-send-receive-attachments.md
-[SendCardWithButtons]: ~/nodejs/bot-builder-nodejs-send-rich-cards.md
-[RecognizeUserIntent]: ~/nodejs/bot-builder-nodejs-recognize-intent.md
-[SaveUserData]: ~/nodejs/bot-builder-nodejs-save-user-data.md
+[SendAttachments]: bot-builder-nodejs-send-receive-attachments.md
+[SendCardWithButtons]: bot-builder-nodejs-send-rich-cards.md
+[RecognizeUserIntent]: bot-builder-nodejs-recognize-intent.md
+[SaveUserData]: bot-builder-nodejs-save-user-data.md
 
 [UniversalBot]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.universalbot.html
 [ChatConnector]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.chatconnector.html

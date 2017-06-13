@@ -20,7 +20,7 @@ The `Attachments` property of the <a href="https://docs.microsoft.com/en-us/dotn
 
 > [!NOTE]
 > For information about how to add media attachments to messages, see 
-> [Add media attachments to messages](~/dotnet/bot-builder-dotnet-add-media-attachments.md).
+> [Add media attachments to messages](bot-builder-dotnet-add-media-attachments.md).
 
 ## Types of rich cards
 
@@ -80,7 +80,7 @@ The Hero card typically contains a single large image, one or more buttons, and 
 
 This code example shows how to create a reply message that contains three Hero cards rendered in carousel format: 
 
-[!code-csharp[Add HeroCard attachment](~/includes/code/dotnet-add-attachments.cs#addHeroCardAttachment)]
+[!code-csharp[Add HeroCard attachment](../includes/code/dotnet-add-attachments.cs#addHeroCardAttachment)]
 
 ## Add a Thumbnail card to a message
 
@@ -88,7 +88,7 @@ The Thumbnail card typically contains a single thumbnail image, one or more butt
 
 This code example shows how to create a reply message that contains two Thumbnail cards rendered in list format: 
 
-[!code-csharp[Add ThumbnailCard attachment](~/includes/code/dotnet-add-attachments.cs#addThumbnailCardAttachment)]
+[!code-csharp[Add ThumbnailCard attachment](../includes/code/dotnet-add-attachments.cs#addThumbnailCardAttachment)]
 
 ## Add a Receipt card to a message
 
@@ -97,7 +97,7 @@ It typically contains the list of items to include on the receipt, tax and total
 
 This code example shows how to create a reply message that contains a Receipt card: 
 
-[!code-csharp[Add ReceiptCard attachment](~/includes/code/dotnet-add-attachments.cs#addReceiptCardAttachment)]
+[!code-csharp[Add ReceiptCard attachment](../includes/code/dotnet-add-attachments.cs#addReceiptCardAttachment)]
 
 ## Add a Sign-in card to a message
 
@@ -106,7 +106,7 @@ It typically contains text and one or more buttons that the user can click to in
 
 This code example shows how to create a reply message that contains a Sign-in card:
 
-[!code-csharp[Add SignInCard attachment](~/includes/code/dotnet-add-attachments.cs#addSignInCardAttachment)]
+[!code-csharp[Add SignInCard attachment](../includes/code/dotnet-add-attachments.cs#addSignInCardAttachment)]
 
 ##<a id="adaptive-card"></a> Add an Adaptive card to a message
 
@@ -117,19 +117,19 @@ To create an Adaptive Card using .NET, install the `Microsoft.AdaptiveCards` NuG
 
 This code example shows how to create a message that contains an Adaptive Card for a calendar reminder: 
 
-[!code-csharp[Add Adaptive Card attachment](~/includes/code/dotnet-add-attachments.cs#addAdaptiveCardAttachment)]
+[!code-csharp[Add Adaptive Card attachment](../includes/code/dotnet-add-attachments.cs#addAdaptiveCardAttachment)]
 
 The resulting card contains three blocks of text, an input field (choice list), and three buttons:
 
-![Adaptive Card calendar reminder](~/media/adaptive-card-reminder.png)
+![Adaptive Card calendar reminder](../media/adaptive-card-reminder.png)
 
 ## Additional resources
 
 - [Preview features with the Channel Inspector][inspector]
 - <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a>
-- [Activities overview](~/dotnet/bot-builder-dotnet-activities.md)
-- [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
-- [Add media attachments to messages](~/dotnet/bot-builder-dotnet-add-media-attachments.md)
+- [Activities overview](bot-builder-dotnet-activities.md)
+- [Create messages](bot-builder-dotnet-create-messages.md)
+- [Add media attachments to messages](bot-builder-dotnet-add-media-attachments.md)
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.8" target="_blank">Activity class</a>
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.attachment?view=botbuilder-3.8" target="_blank">Attachment class</a>
 

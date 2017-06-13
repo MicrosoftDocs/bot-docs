@@ -6,8 +6,7 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
-ms.reviewer: 
+ms.date: 05/12/2017
 ---
 
 # Manage state data
@@ -49,7 +48,7 @@ Set the body of the request to a [BotData][BotData] object, where the `data` pro
 
 ### Request 
 
-The following example shows a request that saves data for a user on a specific channel. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](~/rest-api/bot-framework-rest-connector-api-reference.md#base-uri).
+The following example shows a request that saves data for a user on a specific channel. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 
 ```http
 POST https://smba.trafficmanager.net/apis/v3/botstate/abcd1234/users/12345678
@@ -91,7 +90,7 @@ In this request URI, replace **{channelId}** with the channel’s ID and replace
 
 ### Request
 
-The following example shows a request that gets data that has previously been saved for the user. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](~/rest-api/bot-framework-rest-connector-api-reference.md#base-uri).
+The following example shows a request that gets data that has previously been saved for the user. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 
 ```http
 GET https://smba.trafficmanager.net/apis/v3/botstate/abcd1234/users/12345678
@@ -202,12 +201,12 @@ In this request URI, replace **{channelId}** with the channel’s ID and replace
 > It does NOT delete data that has previously been stored by using the [Save conversation data](#save-conversation-data) operation. 
 > Therefore, you must NOT use the **Save conversation data** operation to store a user's personally identifiable information (PII).
 
-Your bot should execute the **Delete user data** operation when it receives an [Activity][Activity] of type [deleteUserData](~/rest-api/bot-framework-rest-connector-activities.md#deleteuserdata) or an activity of type [contactRelationUpdate](~/rest-api/bot-framework-rest-connector-activities.md#contactrelationupdate) that indicates the bot has been removed from the user's contact list.
+Your bot should execute the **Delete user data** operation when it receives an [Activity][Activity] of type [deleteUserData](bot-framework-rest-connector-activities.md#deleteuserdata) or an activity of type [contactRelationUpdate](bot-framework-rest-connector-activities.md#contactrelationupdate) that indicates the bot has been removed from the user's contact list.
 
 ## Additional resources
 
-- [Key concepts](~/rest-api/bot-framework-rest-connector-concepts.md)
-- [Activities overview](~/rest-api/bot-framework-rest-connector-activities.md)
+- [Key concepts](bot-framework-rest-connector-concepts.md)
+- [Activities overview](bot-framework-rest-connector-activities.md)
 
-[BotData]: ~/rest-api/bot-framework-rest-connector-api-reference.md#botdata-object
-[Activity]: ~/rest-api/bot-framework-rest-connector-api-reference.md#activity-object
+[BotData]: bot-framework-rest-connector-api-reference.md#botdata-object
+[Activity]: bot-framework-rest-connector-api-reference.md#activity-object
