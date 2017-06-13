@@ -27,11 +27,11 @@ Next, add a new site that represents the client application that you want to con
 
 ## Manage secret keys
 
-When your site is created, the Bot Framework generates secret keys that your client application can use to authenticate the [Direct Line API](~/rest-api/bot-framework-rest-direct-line-concepts.md) requests that it issues to communicate with your bot. To view a key in plain text, click **Show** for the corresponding key. 
+When your site is created, the Bot Framework generates secret keys that your client application can use to [authenticate](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md) the Direct Line API requests that it issues to communicate with your bot. To view a key in plain text, click **Show** for the corresponding key. 
 
 ![Show Direct Line key](~/media/channel-connect-directline/directline-showkey.png)
 
-Copy and securely store the key that is shown. You can use the key to authenticate the [Direct Line API](~/rest-api/bot-framework-rest-direct-line-concepts.md) requests that your client issues to communicate with your bot, or alternatively, use the Direct Line API to exchange the key for a token that your client can use to authenticate its subsequent requests within the scope of a single conversation.
+Copy and securely store the key that is shown. Then use the key to [authenticate](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md) the Direct Line API requests that your client issues to communicate with your bot, or alternatively, use the Direct Line API to [exchange the key for a token](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md#generate-token) that your client can use to authenticate its subsequent requests within the scope of a single conversation.
 
 ![Copy Direct Line key](~/media/channel-connect-directline/directline-copykey.png)
 

@@ -7,7 +7,6 @@ manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 05/12/2017
-ms.reviewer: 
 ---
 
 # API reference
@@ -106,7 +105,7 @@ The <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html" target="_bl
 
 ### Errors
 
-Any response that specifies an HTTP status code in the 4xx range or 5xx range will include an [Error](#error-object) object (in the body of the response) that provides information about the error. If you receive an error response in the 4xx range, inspect the **Error** object to identify the cause of the error and resolve your issue prior to resubmitting the request.
+Any response that specifies an HTTP status code in the 4xx range or 5xx range will include an [ErrorResponse](#errorresponse-object) object in the body of the response that provides information about the error. If you receive an error response in the 4xx range, inspect the **ErrorResponse** object to identify the cause of the error and resolve your issue prior to resubmitting the request.
 
 ## Conversation operations 
 Use these operations to create conversations, send messages (activities), and manage the contents of conversations.
@@ -313,7 +312,7 @@ DELETE /v3/botstate/{channelId}/users/{userId}
 | **Request body** | n/a |
 | **Returns** | An array of strings (IDs) | 
 
-## Objects
+##<a id="objects"></a> Schema
 
 ### Activity object
 Defines a message that is exchanged between bot and user.<br/><br/> 
@@ -491,6 +490,13 @@ Defines an error.<br/><br/>
 |----|----|----|
 | **code** | string | Error code. |
 | **message** | string | A description of the error. |
+
+### ErrorResponse object
+Defines an HTTP API response.<br/><br/> 
+
+| Property | Type | Description |
+|----|----|----|
+| **error** | [Error](#error-object) | An **Error** object that contains information about the error. |
 
 ### Fact object
 Defines a key-value pair that contains a fact.<br/><br/> 
