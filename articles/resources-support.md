@@ -1,3 +1,3 @@
 ---
-redirect_url: /bot-framework/resources-links-help.md
+redirect_url: /bot-framework/resources-links-help
 ---
