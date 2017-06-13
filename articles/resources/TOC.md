@@ -1,5 +1,5 @@
 # [StackOverflow](http://stackoverflow.com/questions/tagged/botframework)
-# [How to get support](../resources-support.md)
+# [How to get help](../resources-links-help.md)
 # [FAQ](../resources-bot-framework-faq.md)
 # [Guide to identifiers](../resources-identifiers-guide.md)
 # [App Insights keys](../resources-app-insights-keys.md)
