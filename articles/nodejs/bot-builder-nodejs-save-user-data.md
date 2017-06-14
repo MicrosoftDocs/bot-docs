@@ -6,8 +6,7 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
-ms.reviewer:
+ms.date: 06/14/2017
 ---
 
 <!--this seems like a stub; it should be about saving user-provided data, but it seems to be about state data capture and use, which is covered elsewhere-->
@@ -19,6 +18,9 @@ which step of a dialog is active, and data that the bot remembers about the user
 
 The [ChatConnector][ChatConnector] class automatically provides an implementation of this storage system, that uses Bot Framework Service to store this data for you. 
 You can access stored data using [session.userData][session_userData]. 
+
+> [!IMPORTANT]
+> By default, the Bot Framework SDK for Node.js stores state data using the Bot Framework State service, which is intended for prototyping only and is not designed for use by bots in a production environment. For performance and security reasons in the production environment, you should either use the [Bot Builder SDK Azure Extensions](https://github.com/Microsoft/BotBuilder-Azure) to store state data in your own Azure Table storage or Azure DocumentDB store or create a custom implementation of `IBotStorage` to store state data in the destination that you specify.
 
 ## Save the user's name
 

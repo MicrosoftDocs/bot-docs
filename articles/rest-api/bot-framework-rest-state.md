@@ -6,15 +6,15 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/12/2017
+ms.date: 06/14/2017
 ---
 
 # Manage state data
 
-The Bot State service enables your bot to store and retrieve state data that is associated with a user, a conversation, or a specific user within the context of a specific conversation. State data can be used for many purposes, such as determining where a prior conversation left off or simply greeting a returning user by name. If you store a user's preferences, you can use that information to customize the conversation the next time you chat. For example, you might alert the user to a news article about a topic that interests her, or alert a user when an appointment becomes available. 
+The Bot State service enables your bot to store and retrieve state data that is associated with a user, a conversation, or a specific user within the context of a specific conversation. You may store up to 32 kilobytes of data for each user on a channel, each conversation on a channel, and each user within the context of a conversation on a channel. State data can be used for many purposes, such as determining where a prior conversation left off or simply greeting a returning user by name. If you store a user's preferences, you can use that information to customize the conversation the next time you chat. For example, you might alert the user to a news article about a topic that interests her, or alert a user when an appointment becomes available. 
 
-> [!NOTE]
-> You may store up to 32 kilobytes of data for each user on a channel, each conversation on a channel, and each user within the context of a conversation on a channel. 
+> [!IMPORTANT]
+> The Bot State service is intended for prototyping only and is not designed for use by bots in a production environment. For performance and security reasons, you should implement your own mechanism for managing state data in the production environment.
 
 ##<a id="concurrency"></a> Data concurrency
 

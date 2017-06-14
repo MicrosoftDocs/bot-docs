@@ -6,19 +6,17 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
-ms.reviewer:
+ms.date: 06/14/2017
 ---
 
 # Manage state data
 
 [!include[State concept overview](../includes/snippet-dotnet-concept-state.md)]  
-This article describes how to manage state data using the State service via the Bot Builder SDK for .NET.
+
+If your bot uses [dialogs](bot-builder-dotnet-dialogs.md), conversation state (the dialog stack and the state of each dialog in the stack) is automatically stored using the Bot Framework State service. 
 
 > [!IMPORTANT]
-> If your bot uses [dialogs](bot-builder-dotnet-dialogs.md), 
-> conversation state (the dialog stack and the state of each dialog in the stack) is automatically stored 
-> using the Bot Framework State service. 
+> By default, the Bot Framework SDK for .NET stores state data using the Bot Framework State service, which is intended for prototyping only and is not designed for use by bots in a production environment. For performance and security reasons in the production environment, you should either use the [Bot Builder SDK Azure Extensions](https://github.com/Microsoft/BotBuilder-Azure) to store state data in your own Azure Table storage or Azure DocumentDB store or create a custom implementation of `IBotDataStore` to store state data in the destination that you specify.
 
 ## Bot state methods
 
