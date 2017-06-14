@@ -34,15 +34,9 @@ If an attachment is an image, audio, or video, the Connector service will commun
 ## Additional resources
 
 - [Preview features with the Channel Inspector][inspector]
-<<<<<<< HEAD
-- [Activities overview](~/dotnet/bot-builder-dotnet-activities.md)
-- [Create messages](~/dotnet/bot-builder-dotnet-create-messages.md)
-- [Add rich cards to messages](~/dotnet/bot-builder-dotnet-add-rich-card-attachments.md)
-=======
 - [Activities overview](bot-builder-dotnet-activities.md)
 - [Create messages](bot-builder-dotnet-create-messages.md)
 - [Add rich cards to messages](bot-builder-dotnet-add-rich-card-attachments.md)
->>>>>>> adca8cd6829c530d37b27c7cab69ad770530b391
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.8" target="_blank">Activity class</a>
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.attachment?view=botbuilder-3.8" target="_blank">Attachment class</a>
 
