@@ -68,9 +68,11 @@
 #### [Send a typing indicator](~/nodejs/bot-builder-nodejs-send-typing-indicator.md)
 #### [Intercept messages](~/nodejs/bot-builder-nodejs-intercept-messages.md)
 ### Dialogs
-#### [Manage conversation flow](~/nodejs/bot-builder-nodejs-dialog-manage-conversation.md)
+#### [Dialogs overview](~/nodejs/bot-builder-nodejs-dialog-overview.md)
 #### [Prompt for user input](~/nodejs/bot-builder-nodejs-dialog-prompt.md)
 #### [Define conversation steps](~/nodejs/bot-builder-nodejs-dialog-waterfall.md)
+#### [Manage conversation flow](~/nodejs/bot-builder-nodejs-dialog-manage-conversation-flow.md)
+#### [Replace dialogs](~/nodejs/bot-builder-nodejs-dialog-replace.md)
 ### Channels
 #### [Build a Cortana skill](~/nodejs/bot-builder-nodejs-cortana-skill.md)
 #### [Conduct Skype calls](~/nodejs/bot-builder-nodejs-conduct-audio-calls.md)

@@ -1,75 +1,210 @@
 ---
-title: Prompt users for input | Microsoft Docs
-description: Learn how to use prompts to collect user input in your bot with the Bot Builder SDK for Node.js
-author: RobStand
-ms.author: rstand
+title: Prompt for user input | Microsoft Docs
+description: Learn how to use prompts to collect user input with the Bot Builder SDK for Node.js.
+author: DucVo
+ms.author: v-ducvo
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/03/2017
+ms.date: 06/14/2017
 ---
-# Prompt users for input
 
-The Bot Builder SDK for Node.js provides a set of built-in prompts to simplify collecting input from a user. 
+# Prompt for user input
 
-> [!NOTE] 
-> A *prompt* is best used when the bot is going to perform an action in direct response to the input: Stop, Repeat, Delete.
-> To ask the user a *series* of questions, create a [waterfall](bot-builder-nodejs-dialog-waterfall.md).
+The Bot Builder SDK for Node.js provides a set of built-in prompts to simplify collecting inputs from a user. 
+
+A *prompt* is used whenever a bot needs input from the user. You can use prompts to ask a user for a series of inputs by chaining the prompts in a waterfall. You can use prompts in conjunction with [waterfall](bot-builder-nodejs-dialog-waterfall.md) to help you [manage conversation flow](bot-builder-nodejs-manage-conversation-flow.md) in your bot. 
+
+This article will help you understand how prompts work and how you can use them to collect information from users.
+
+## Prompts and responses
+
+Whenever you need input from a user, you can send a prompt, wait for the user to respond with input, and then process the input and send a response to the user.
+
+The following code sample shows prompts the user for their name and responds with a greeting message.
+
+```javascript
+bot.dialog('greetings', [
+    // Step 1
+    function (session) {
+        builder.Prompts.text(session, 'Hi! What is your name?');
+    },
+    // Step 2
+    function (session, results) {
+        session.endDialog('Hello %s!', results.response);
+    }
+]);
+```
+
+Using this basic construct, you can model your conversation flow by adding as many prompts and responses as your bot requires.
 
 ## Prompt results 
-Built-in prompts are implemented as [dialogs](bot-builder-nodejs-dialog-manage-conversation.md). They return the user's response by calling [session.endDialogWithresult()][EndDialogWithResult]. Any type of dialog message handler can receive the result of a prompt.
 
-Prompts return an [IPromptResult][IPromptResult] to the caller. The user's response will be contained in the [results.response][Result_Response] field and may be `null`. 
+Built-in prompts are implemented as [dialogs](bot-builder-nodejs-dialog-overview.md) that return the user's response in the `results.response` field. For JSON objects, responses are returned in the `results.response.entity` field. Any type of [dialog handler](bot-builder-nodejs-dialog-overview.md#dialog-handlers) can receive the result of a prompt. Once the bot receives a response, it can consume it or pass it back to the calling dialog by calling the [`session.endDialogWithResult`][EndDialogWithResult] method.
 
-The most common reasons for a `null` response are: 
-* The user cancelled an action by saying something like ‘cancel’ or ‘nevermind’ 
-* The user entered an improperly formatted response
+The following code sample shows how to return a prompt result to the calling dialog by using the `session.endDialogWithResult` method. In this example, the `greetings` dialog uses the prompt result that the `askName` dialog returns to greet the user by name.
 
-The exact reason for a `null` response can be determined by examining the [ResumeReason][ResumeReason] returned in [result.resumed][Result_Resumed]. There are actually a number of reasons that can cause the prompt to return without a response, so checking for  [result.response](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptresult.html#response) isn't null tends to be the best approach.
+```javascript
+// Ask the user for their name and greet them by name.
+bot.dialog('greetings', [
+    function (session) {
+        session.beginDialog('askName');
+    },
+    function (session, results) {
+        session.endDialog('Hello %s!', results.response);
+    }
+]);
+bot.dialog('askName', [
+    function (session) {
+        builder.Prompts.text(session, 'Hi! What is your name?');
+    },
+    function (session, results) {
+        session.endDialogWithResult(results);
+    }
+]);
+```
+
+### Null response
+
+Prompts return an [IPromptResult][IPromptResult] to the caller, where the user's response is contained within the [results.response][Result_Response] field. 
+
+At times, the `results.response` field may be `null`. The most common reasons for a `null` response are: 
+
+* The user cancelled an action by saying something such as "cancel" or "nevermind".
+* The user entered an improperly formatted response.
+* The user have exceeded the maximum number of retries.
+
+To determine the reason for a `null` response, examine the [ResumeReason][ResumeReason] that is returned in [result.resumed][Result_Resumed] field. For example:
+
+```javascript
+if(builder.ResumeReason[results.resumed] === "canceled"){
+    // The previous prompt was canceled. 
+}
+```
+
+Since there are a number of reasons that a prompt may return with a `null` response, it is good practice to always check for a `null` value in the [results.response][Result_Response] field. In cases where the response is `null`, you might choose to examine the `results.resumed` field to determine the reason for the `null` response so that your bot can handle each case specifically.
+
+The following code sample shows how to determine the meaning of the `results.resumed` field value in the context of the `greetings` dialog.
+
+```javascript
+// Ask the user for their name and greet them by name.
+bot.dialog('greetings', [
+    function (session) {
+        session.beginDialog('askName');
+    },
+    function (session, results) {
+        if(!results.response){
+            switch(builder.ResumeReason[results.resumed]){
+                case "canceled":
+                    session.endDialog("Ok. Canceled.");
+                    break;
+                case "back":
+                    session.send("Ok, Let's back up a step.");
+                    session.replaceDialog("greetings"); 
+                    break;
+                case "forward":
+                    session.endDialog("Ok. skipping.");
+                    break;
+                case "notCompleted":
+                    session.endDialog("Sorry, I didn't catch your name.");
+                    break;
+                // Other cases to catch...
+            }
+        }
+        else{
+            session.endDialog('Hello %s!', results.response);
+        }
+    }
+]);
+bot.dialog('askName', [
+    function (session) {
+        builder.Prompts.text(session, 'Hi! What is your name?');
+    },
+    function (session, results) {
+        if(results.response){
+            if(results.response.match(/^back$/i)){
+                // User request to go back a step
+                session.endDialogWithResult({
+                    response: null,
+                    resumed: builder.ResumeReason.back
+                });
+            }
+            else if(results.response.match(/^forward$/i)){
+                // User request to skip this step
+                session.endDialogWithResult({
+                    response: null,
+                    resumed: builder.ResumeReason.forward
+                });
+            }
+            else{
+                session.endDialogWithResult(results);
+            }
+        }
+        else{
+            // We didn't get a response
+            session.endDialogWithResult({
+                resumed: builder.ResumeReason.notCompleted
+            });
+        }
+    }
+])
+.cancelAction("cancel", "Type 'Hi' to continue.", 
+    {
+        matches: /^cancel$/i,
+        confirmPrompt: "Are you sure?"
+    }
+);
+```
 
 ## Prompt types
-The Bot Builder SDK for Node.js includes the following built-in prompts:
+The Bot Builder SDK for Node.js includes several different types of built-in prompts. 
 
-|**Prompt Type**     | **Description**                              |     
+|**Prompt type**     | **Description**                              |     
 | -------------------| ---------------------------------------------
 |[Prompts.text][PromptsText] | Asks the user to enter a string of text. |     
 |[Prompts.confirm][PromptsConfirm] | Asks the user to confirm an action.| 
 |[Prompts.number][PromptsNumber] | Asks the user to enter a number.     |
-|[Prompts.time][PromptsTime] | Asks the user for the time or date.      |
-|[Prompts.choice][PromptsChoice] | Asks the user to choose from a list of choices.    |
+|[Prompts.time][PromptsTime] | Asks the user for a time or date/time.      |
+|[Prompts.choice][PromptsChoice] | Asks the user to choose from a list of options.    |
 |[Prompts.attachment][PromptsAttachment] | Asks the user to upload a picture or video.|       
-The following sections provide more details about each of these prompt types.
 
-### Text String: `Prompts.text()`
-The [Prompts.text()][PromptsText] method asks the user for a **string of text**. The prompt returns the user's response as an [IPromptTextResult][IPromptTextResult] interface.
+The following sections provide additional details about each type of prompt.
+
+### Prompts.text
+
+Use the [Prompts.text()][PromptsText] method to ask the user for a **string of text**. The prompt returns the user's response as an [IPromptTextResult][IPromptTextResult].
 
 ```javascript
 builder.Prompts.text(session, "What is your name?");
 ```
 
-### Yes / No:  `Prompts.confirm()`
+### Prompts.confirm
 
-The [Prompts.confirm()][PromptsConfirm] method asks the user to confirm an action with a **yes/no** response. The prompt returns the user's response as an [IPromptConfirmResult](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptconfirmresult.html) interface.
+Use the [Prompts.confirm()][PromptsConfirm] method to ask the user to confirm an action with a **yes/no** response. The prompt returns the user's response as an [IPromptConfirmResult](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptconfirmresult.html).
 
 ```javascript
 builder.Prompts.confirm(session, "Are you sure you wish to cancel your order?");
 ```
-### Numerical response: `Prompts.number()`
 
-The [Prompts.number()][PromptsNumber] method asks the user to reply with a **number**. The prompt returns the user's response as an [IPromptNumberResult](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptnumberresult.html).
+### Prompts.number
+
+Use the [Prompts.number()][PromptsNumber] method to ask the user for a **number**. The prompt returns the user's response as an [IPromptNumberResult](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptnumberresult.html).
 
 ```javascript
 builder.Prompts.number(session, "How many would you like to order?");
 ```
 
-### Time and Date: `Prompts.time()`
+### Prompts.time
 
-The [Prompts.time()][PromptsTime] method asks the user to reply with the **time**. The prompt returns the user's response as an [IPromptTimeResult](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iprompttimeresult.html) interface. The framework uses the [Chrono](https://github.com/wanasit/chrono) library to parse the user's response and supports both relative ("in 5 minutes") and non-relative ("June 6th at 2pm") types of responses.
+Use the [Prompts.time()][PromptsTime] method to ask the user for a **time** or **date/time**. The prompt returns the user's response as an [IPromptTimeResult](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iprompttimeresult.html). The framework uses the [Chrono](https://github.com/wanasit/chrono) library to parse the user's response and supports both relative responses (e.g., "in 5 minutes") and non-relative responses (e.g., "June 6th at 2pm").
 
-The [results.response](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iprompttimeresult.html#response) contains an [entity](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ientity.html) object, which contains the date and time. To resolve the date and time into a JavaScript `Date` object, use the [EntityRecognizer.resolveTime()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.entityrecognizer.html#resolvetime) method.
+The [results.response](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iprompttimeresult.html#response) field, which represents the user's response, contains an [entity](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ientity.html) object that specifies the date and time. To resolve the date and time into a JavaScript `Date` object, use the [EntityRecognizer.resolveTime()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.entityrecognizer.html#resolvetime) method.
+
+> [!TIP] 
+> The time that the user enters is converted to UTC time based upon the time zone of the server that hosts the bot. Since the server may be located in a different time zone than the user, be sure to take time zones into consideration. To convert date and time to the user's local time, consider asking the user what time zone they are in.
 
 ```javascript
-bot.dialog('/createAlarm', [
+bot.dialog('createAlarm', [
     function (session) {
         session.dialogData.alarm = {};
         builder.Prompts.text(session, "What would you like to name this alarm?");
@@ -100,11 +235,14 @@ bot.dialog('/createAlarm', [
     }
 ]);
 ```
-### Choose from a list: `Prompts.choice()`
 
-The [Prompts.choice()][PromptsChoice] method asks the user to **choose from a list** of choices. The prompt returns the user's response as an [IPromptChoiceResult](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptchoiceresult.html) interface. To specify the style of the list that's shown to the user, use the [IPromptOptions.listStyle](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptoptions.html#liststyle) property. The user can express their choice by either entering the number associated with the choice or the choice's name itself. Both full and partial matches of the option's name are supported.
+### Prompts.choice
 
-To specify the list of choices, you can use a pipe-delimited (`|`) string:
+Use the [Prompts.choice()][PromptsChoice] method to ask the user to **choose from a list of options**. The prompt returns the user's response as an [IPromptChoiceResult](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptchoiceresult.html). To specify the style of the list that is presented to the user, set the [IPromptOptions.listStyle](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptoptions.html#liststyle) property. The user can convey their selection either by entering the number associated with the option that they choose or by entering the name of the option that they choose. Both full and partial matches of the option's name are supported.
+
+To specify the list of options, you can use a pipe-delimited (`|`) string, an array of strings, or an object map.
+
+A pipe-delimited string: 
 
 ```javascript
 builder.Prompts.choice(session, "Which color?", "red|green|blue");
@@ -116,7 +254,7 @@ An array of strings:
 builder.Prompts.choice(session, "Which color?", ["red","green","blue"]);
 ```
 
-Or an object map. With this option, the object's keys are used to determine the choice.
+An object map: 
 
 ```javascript
 var salesData = {
@@ -134,7 +272,7 @@ var salesData = {
     }
 };
 
-bot.dialog('/', [
+bot.dialog('getSalesData', [
     function (session) {
         builder.Prompts.choice(session, "Which region would you like sales for?", salesData); 
     },
@@ -143,24 +281,28 @@ bot.dialog('/', [
             var region = salesData[results.response.entity];
             session.send("We sold %(units)d units for a total of %(total)s.", region); 
         } else {
-            session.send("ok");
+            session.send("OK");
         }
     }
 ]);
 ```
-### Upload an attachment: `Prompts.attachment()`
 
-The [Prompts.attachment()][PromptsAttachment] method asks the user to *upload a file attachment* like an image or video. The prompt returns the user's response as an [IPromptAttachmentResult](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptattachmentresult.html) interface.
+### Prompts.attachment
+
+Use the [Prompts.attachment()][PromptsAttachment] method to ask the user to upload a file such an image or video. The prompt returns the user's response as an [IPromptAttachmentResult](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptattachmentresult.html).
 
 ```javascript
 builder.Prompts.attachment(session, "Upload a picture for me to transform.");
 ```
 
 ## Additional resources
+- [Dialogs overview](bot-builder-nodejs-dialog-overview.md)
+- [Manage conversation flow](bot-builder-nodejs-dialog-manage-conversation-flow.md)
+- [Replace dialogs](bot-builder-nodejs-dialog-replace.md)
 - [Define conversation steps with waterfalls](bot-builder-nodejs-dialog-waterfall.md)
-- [Send and receive attachments](bot-builder-nodejs-send-receive-attachments.md)
+- [Listen for messages by using actions](bot-builder-nodejs-global-handlers.md)
 - [Save user data](bot-builder-nodejs-save-user-data.md)
-- [Prompts interface][PromptsRef]
+- [Prompts Reference interface][PromptsRef]
 
 
 [SendAttachments]: bot-builder-nodejs-send-receive-attachments.md
