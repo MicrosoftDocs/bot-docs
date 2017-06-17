@@ -1,7 +1,7 @@
 ---
 title: Manage a conversation flow with dialogs | Microsoft Docs
 description: Learn how to manage a conversation between a bot and a user with dialogs in the Bot Builder SDK for Node.js.
-author: DucVo
+author: v-ducvo
 ms.author: v-ducvo
 manager: rstand
 ms.topic: article
