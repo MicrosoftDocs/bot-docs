@@ -6,14 +6,13 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
-ms.reviewer:
+ms.date: 06/14/2017
 ---
 
 # Manage conversation flow with dialogs
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-manage-conversation-flow.md)
-> - [Node.js](../nodejs/bot-builder-nodejs-dialog-manage-conversation.md)
+> - [Node.js](../nodejs/bot-builder-nodejs-dialog-manage-conversation-flow.md)
 
 [!include[Dialog flow example](../includes/snippet-dotnet-manage-conversation-flow-intro.md)]
 

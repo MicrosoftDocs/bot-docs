@@ -6,12 +6,10 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
-ms.reviewer: 
+ms.date: 06/14/2017
 ---
 
 # Listen for messages by using actions
-
 
 Users commonly attempt to access certain functionality within a bot by using keywords like "help", "cancel", or "start over". 
 This often occurs in the middle of a conversation, when the bot is expecting a different response. 
@@ -20,15 +18,12 @@ The handlers will examine user input for the keywords that you specify, such as 
 
 ![how users talk](../media/designing-bots/capabilities/trigger-actions.png)
 
-
-
 > [!NOTE]
 > By defining the logic in an **action**, you're making it accessible to all dialogs. 
 > However, individual dialogs and prompts can be configured to safely ignore the keywords when necessary.
 
-
 Either user utterances or button clicks can *trigger* an action, which is associated with a [dialog](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html).
-If 'matches' is specifed, the action will listen for the user to say a word or a phrase that triggers the action.  The 'matches' method can take a regular expression or the name of a [recognizer][RecognizeIntent].
+If 'matches' is specified, the action will listen for the user to say a word or a phrase that triggers the action.  The 'matches' method can take a regular expression or the name of a [recognizer][RecognizeIntent].
 To bind the action to a button click, use [CardAction.dialogAction()][ClickAction] to trigger the action.
 
 There are five types of actions.
@@ -43,7 +38,7 @@ There are five types of actions.
 ## Trigger a help dialog
 
 With the Bot Builder SDK for Node.js, you can use `triggerAction` to specify the triggers that will cause the 
-invokation of specific dialogs. 
+invocation of specific dialogs. 
 
 For example, the `triggerAction` in the following code sample invokes the **help** dialog 
 if the user's message is "help", thereby adding the **help** dialog to the top of the dialog stack and 

@@ -11,6 +11,9 @@ ms.reviewer:
 ---
 
 # Dialogs in the Bot Builder SDK for .NET
+> [!div class="op_single_selector"]
+> - [.NET](../dotnet/bot-builder-dotnet-dialogs.md)
+> - [Node.js](../nodejs/bot-builder-nodejs-dialog-overview.md)
 
 When you create a bot using the Bot Builder SDK for .NET, you can use dialogs to model 
 a conversation and manage [conversation flow](../bot-design-conversation-flow.md). 
