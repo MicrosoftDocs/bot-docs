@@ -1,7 +1,7 @@
 ---
 title: Replace dialogs | Microsoft Docs
 description: Learn how to replace dialogs to re-prompt for input and manage conversation flow using the Bot Builder SDK for Node.js.
-author: DucVo
+author: v-ducvo
 ms.author: v-ducvo
 manager: rstand
 ms.topic: article
