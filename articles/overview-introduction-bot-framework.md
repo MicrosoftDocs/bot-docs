@@ -45,6 +45,8 @@ The Bot Framework supports several popular channels for connecting your bots and
 
 ![List of channels on the portal](~/media/portal-channels-list.png) 
 
+ Hey guys, I saw wechat icon, This is great, But is it ready for now? I can not see it in the dev.botframework.com portal.
+
 ## Build smart bots
 You can take advantage of Microsoft Cognitive Services to add smart features like natural language understanding, image recognition, speech, and more. [Learn more](~/cognitive-services-bot-intelligence-overview.md) about adding intelligence to your bot.
 
