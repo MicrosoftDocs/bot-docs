@@ -6,7 +6,7 @@ ms.author: v-ducvo
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 06/14/2017
+ms.date: 06/19/2017
 ---
 
 # Define conversation steps with waterfalls
@@ -145,7 +145,7 @@ bot.dialog('ensureProfile', [
 ```
 
 > [!NOTE]
-> This example uses two different data bags to store data: `dialogData` and `userData`. If the bot is distributed across multiple compute nodes, each step of the waterfall could be processed by a different node, therefore it's important to store bot data in the appropriate data bag. For more infomation about storing bot data, see [Save user data](bot-builder-nodejs-save-user-data.md).
+> This example uses two different data bags to store data: `dialogData` and `userData`. If the bot is distributed across multiple compute nodes, each step of the waterfall could be processed by a different node, therefore it's important to store bot data in the appropriate data bag. For more infomation about storing bot data, see [Manage state data](bot-builder-nodejs-state.md).
 
 ## End a waterfall
 
@@ -191,4 +191,4 @@ bot.dialog('dinnerOrder', [
 - [Replace dialogs](bot-builder-nodejs-dialog-replace.md)
 - [Prompt for user input](bot-builder-nodejs-dialog-prompt.md)
 - [Listen for messages by using actions](bot-builder-nodejs-global-handlers.md)
-- [Save user data](bot-builder-nodejs-save-user-data.md)
+- [Manage state data](bot-builder-nodejs-state.md)
