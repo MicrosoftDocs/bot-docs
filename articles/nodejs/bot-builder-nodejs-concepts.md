@@ -6,8 +6,7 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
-ms.reviewer:
+ms.date: 06/19/2017
 ---
 
 # Key concepts in the Bot Builder SDK for Node.js
@@ -59,7 +58,7 @@ Bots built using Bot Builder SDK are designed to be be stateless so that they ca
 * **privateConversationData** stores information globally for a single conversation but it is private data specific to the current user. This data spans all dialogs so it’s useful for storing temporary state that you want cleaned up when the conversation ends.
 * **dialogData** persists information for a single dialog instance. This is essential for storing temporary information in between the steps of a [waterfall](bot-builder-nodejs-dialog-waterfall.md) in a dialog.
 
-For an example that demonstrates how user data are saved, see [Saving user data](bot-builder-nodejs-save-user-data.md).
+For examples that demonstrate how to use these properties to store and retrieve data, see [Manage state data](bot-builder-nodejs-state.md).
 
 ## Natural language understanding
 

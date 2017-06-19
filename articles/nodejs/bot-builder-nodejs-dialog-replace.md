@@ -1,12 +1,12 @@
 ---
 title: Replace dialogs | Microsoft Docs
 description: Learn how to replace dialogs to re-prompt for input and manage conversation flow using the Bot Builder SDK for Node.js.
-author: DucVo
+author: v-ducvo
 ms.author: v-ducvo
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 06/14/2017
+ms.date: 06/19/2017
 ---
 
 # Replace dialogs
@@ -221,7 +221,7 @@ bot.dialog("addDinnerItem", [
 In this example, orders are stored in a bot data store that is scoped to the current conversation,  `session.conversationData.orders`. For every new order, the variable is re-initialized with a new array and for every item the user chooses, the bot adds that item to the `orders` array and adds the price to the total, which is stored in the checkout's `Price` variable. When the user finishes selecting items for their order, they can say "check out" and then continue with the remainder of the order process.
 
 > [!NOTE]
-> For more information about bot data storage, see [Save user data](bot-builder-nodejs-save-user-data.md). 
+> For more information about bot data storage, see [Manage state data](bot-builder-nodejs-state.md). 
 
 Finally, update the second step of the waterfall within the `orderDinner` dialog to process the order with confirmation. 
 
@@ -331,4 +331,4 @@ By using the `session.cancelDialog` method in this way, you can implement whatev
 - [Prompt for user input](bot-builder-nodejs-dialog-prompt.md)
 - [Define conversation steps with waterfalls](bot-builder-nodejs-dialog-waterfall.md)
 - [Listen for messages by using actions](bot-builder-nodejs-global-handlers.md)
-- [Save user data](bot-builder-nodejs-save-user-data.md)
+- [Manage state data](bot-builder-nodejs-state.md)

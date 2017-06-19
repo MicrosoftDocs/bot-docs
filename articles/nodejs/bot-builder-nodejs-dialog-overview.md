@@ -1,12 +1,12 @@
 ---
 title: Dialogs overview | Microsoft Docs
 description: Learn how to use dialogs within the Bot Builder SDK for Node.js to model conversations and manage conversation flow.
-author: DucVo
+author: v-ducvo
 ms.author: v-ducvo
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 06/14/2017
+ms.date: 06/19/2017
 ---
 
 # Dialogs in the Bot Builder SDK for Node.js
@@ -188,7 +188,7 @@ The example uses [`session.userData`](http://docs.botframework.com/en-us/node/bu
 
 If a dialog collects data over multiple steps, it should use [`session.dialogData`](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#dialogdata) to temporarily hold values being collected. The `ensureProfile` dialog uses `dialogData` to hold the `profile` object. Each step passes the `next()` function which is used to skip the step if the profile already contains that data element. For example, if the profile already contains the user's name, the waterfall proceeds to the next step and collects the user's email address.
 
-After the profile dialog collects all of the profile data, it returns the profile data back to the default dialog which saves the profile in `userData`. For more information on storing user data, see [Save user data](bot-builder-nodejs-save-user-data.md).
+After the profile dialog collects all of the profile data, it returns the profile data back to the default dialog which saves the profile in `userData`. For more information on storing user data, see [Manage state data](bot-builder-nodejs-state.md).
 
 ## Additional resources
 
@@ -197,4 +197,4 @@ After the profile dialog collects all of the profile data, it returns the profil
 - [Define conversation steps with waterfalls](bot-builder-nodejs-dialog-waterfall.md)
 - [Prompt for user input](bot-builder-nodejs-dialog-prompt.md)
 - [Send and receive messages](bot-builder-nodejs-use-default-message-handler.md)
-- [Save user data](bot-builder-nodejs-save-user-data.md)
+- [Manage state data](bot-builder-nodejs-state.md)

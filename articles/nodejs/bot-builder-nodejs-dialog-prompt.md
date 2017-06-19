@@ -1,12 +1,12 @@
 ---
 title: Prompt for user input | Microsoft Docs
 description: Learn how to use prompts to collect user input with the Bot Builder SDK for Node.js.
-author: DucVo
+author: v-ducvo
 ms.author: v-ducvo
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 06/14/2017
+ms.date: 06/19/2017
 ---
 
 # Prompt for user input
@@ -301,7 +301,7 @@ builder.Prompts.attachment(session, "Upload a picture for me to transform.");
 - [Replace dialogs](bot-builder-nodejs-dialog-replace.md)
 - [Define conversation steps with waterfalls](bot-builder-nodejs-dialog-waterfall.md)
 - [Listen for messages by using actions](bot-builder-nodejs-global-handlers.md)
-- [Save user data](bot-builder-nodejs-save-user-data.md)
+- [Manage state data](bot-builder-nodejs-state.md)
 - [Prompts Reference interface][PromptsRef]
 
 
