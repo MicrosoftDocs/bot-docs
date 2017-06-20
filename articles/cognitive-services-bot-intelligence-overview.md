@@ -108,22 +108,6 @@ Cognitive Services provide four APIs you can use to process images or videos:
 
 Learn more about [image and video understanding][vision] with Microsoft Cognitive Services.
 
-## Location control
-
-Bots often need the user to input a location to complete a task. For example, a Taxi bot requires the user's pickup and destination address before requesting a ride. Similarly, a Pizza bot must know the user's delivery address to submit the order, and so on. Normally, bot developers need to use a combination of location or place APIs so that their bots engage in a multi-turn dialog with users to get their desired location and subsequently validate it. Unfortunately, the development steps are usually complicated and error-prone. 
-
-![Basic Scenario](~/media/skype_multiaddress_1.png)
-
-The Bing location control makes this process easy by abstracting away the tedious coding steps to let the user pick a location and reliably validate it. The control offers the following capabilities:
-
-- Address look up and validation using Bing's Maps REST services
-- Address disambiguation when more than one address is found
-- Support for declaring required location fields
-- Support for FB Messenger's location picker GUI dialog
-- Open-source code (C# and Node.js) with customizable dialog strings
-
-Learn more about the [location control][location] with Microsoft Cognitive Services.
-
 ## Additional resources
 
 You can find comprehensive documentation of each product and their corresponding API references in the <a href="https://docs.microsoft.com/azure/cognitive-services" target="_blank">Cognitive Services documentation</a>.
