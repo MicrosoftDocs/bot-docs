@@ -37,7 +37,7 @@ Consider the following two designs:
 
 Starting the bot with an open-ended question such as "How can I help you?" is generally not recommended. 
 If your bot has a hundred different things it can do, chances are users won’t be able to guess most of them. 
-Your bot didn’t tell them what it can do, so how can they possibly know?
+So if your bot didn’t tell them what it can do, how can they possibly know?
 
 Menus provide a simple solution to that problem. 
 First, by listing the available options, your bot is conveying its capabilities to the user. 
