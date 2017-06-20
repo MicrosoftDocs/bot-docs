@@ -261,7 +261,7 @@ bot.dialog('orderDinner', [
 
 ## Cancel a dialog
 
-While the `session.replaceDialog` method can be used to replace the *current* dialog with a new one, it cannot be used to replace a dialog that is located any further down the dialog stack. To replace a dialog within the dialog stack that is not the *current* dialog, use the [`session.cancelDialog`](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#canceldialog) method instead. 
+While the `session.replaceDialog` method can be used to replace the *current* dialog with a new one, it cannot be used to replace a dialog that is located further down the dialog stack. To replace a dialog within the dialog stack that is not the *current* dialog, use the [`session.cancelDialog`](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#canceldialog) method instead. 
 
 The `session.cancelDialog` method can be used to end a dialog regardless of where it exists in the dialog stack and optionally invoke a new dialog in its place. To call the `session.cancelDialog` method, specify the ID of the dialog to cancel and optionally, specify the ID of the dialog to invoke in its place. For example, this code snippet cancels the `orderDinner` dialog and replaces it with the `mainMenu` dialog:
 
@@ -277,7 +277,7 @@ As an alternative to specifying the ID of the dialog to cancel when you call the
 session.cancelDialog(0, 'mainMenu');
 ```
 
-Consider the sample that is discussed in [dialog loops](#dialog-loops). When the user reaches the item selection menu, that dialog (`addDinnerItem`) is the fourth dialog in the dialog stack: `[default dialog, mainMenu, orderDinner, addDinnerItem]`. How can you enable the user to cancel their order from within the `addDinnerItem` dialog? If you attach a `cancelAction` trigger to the `addDinnerItem` dialog, it will only return the user back to the previous dialog (`orderDinner`), which will send the user right back into the `addDinnerItem` dialog. 
+Consider the sample that is discussed in [dialog loops](#dialog-loops) above. When the user reaches the item selection menu, that dialog (`addDinnerItem`) is the fourth dialog in the dialog stack: `[default dialog, mainMenu, orderDinner, addDinnerItem]`. How can you enable the user to cancel their order from within the `addDinnerItem` dialog? If you attach a `cancelAction` trigger to the `addDinnerItem` dialog, it will only return the user back to the previous dialog (`orderDinner`), which will send the user right back into the `addDinnerItem` dialog.
 
 This is where the `session.cancelDialog` method is useful. Starting with the [dialog loops example](#dialog-loops), add "Cancel order" as an explicit option within the dinner menu.
 

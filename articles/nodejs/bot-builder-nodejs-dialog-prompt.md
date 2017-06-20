@@ -6,7 +6,7 @@ ms.author: v-ducvo
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 06/19/2017
+ms.date: 06/20/2017
 ---
 
 # Prompt for user input
@@ -21,7 +21,7 @@ This article will help you understand how prompts work and how you can use them 
 
 Whenever you need input from a user, you can send a prompt, wait for the user to respond with input, and then process the input and send a response to the user.
 
-The following code sample shows prompts the user for their name and responds with a greeting message.
+The following code sample prompts the user for their name and responds with a greeting message.
 
 ```javascript
 bot.dialog('greetings', [
@@ -238,7 +238,27 @@ bot.dialog('createAlarm', [
 
 ### Prompts.choice
 
-Use the [Prompts.choice()][PromptsChoice] method to ask the user to **choose from a list of options**. The prompt returns the user's response as an [IPromptChoiceResult](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptchoiceresult.html). To specify the style of the list that is presented to the user, set the [IPromptOptions.listStyle](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptoptions.html#liststyle) property. The user can convey their selection either by entering the number associated with the option that they choose or by entering the name of the option that they choose. Both full and partial matches of the option's name are supported.
+Use the [Prompts.choice()][PromptsChoice] method to ask the user to **choose from a list of options**. The user can convey their selection either by entering the number associated with the option that they choose or by entering the name of the option that they choose. Both full and partial matches of the option's name are supported. The prompt returns the user's response as an [IPromptChoiceResult](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptchoiceresult.html). 
+
+To specify the style of the list that is presented to the user, set the [IPromptOptions.listStyle](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptoptions.html#liststyle) property. The following table shows the `ListStyle` enumeration values for this property.
+
+| Index | Name | Description |
+| ---- | ---- | ---- |
+| 0 | none | No list is rendered. Use this style of list when the list is included as part of a prompt. |
+| 1 | inline | Choices are rendered as an inline list of the form "1. red, 2. green, or 3. blue". |
+| 2 | list | Choices are rendered as a numbered list. |
+| 3 | button | On channels that support buttons, choices are rendered as buttons. On channels that do not support buttons, choices are rendered as text. |
+| 4 | auto | The style is selected automatically based on the channel and number of options. | 
+
+You can access this enum from the `builder` object or you can specify the style by name. For example, both statements in the following code snippet accomplish the same thing.
+
+```javascript
+// ListStyle specified as enum
+builder.Prompts.choice(session, "Which color?", "red|green|blue", builder.ListStyle.button);
+
+// ListStyle specified by name
+builder.Prompts.choice(session, "Which color?", "red|green|blue", "button");
+```
 
 To specify the list of options, you can use a pipe-delimited (`|`) string, an array of strings, or an object map.
 
