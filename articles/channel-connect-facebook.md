@@ -33,6 +33,8 @@ The bot is accessed through a Facebook Page. [Create a new Facebook Page](https:
 
 ![Save App ID and secret](~/media/channels/FB-get-appid.png)
 
+Configure the Facebook app setting of "Allow API Access to App Settings" to "Yes".
+
 ## Enable messenger
 
 Enable Facebook Messenger in the new Facebook App. 
