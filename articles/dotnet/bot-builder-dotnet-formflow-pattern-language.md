@@ -6,8 +6,7 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
-ms.reviewer:
+ms.date: 06/21/2017
 ---
 
 # Customize user experience with pattern language
@@ -130,6 +129,10 @@ What kind of sandwich would you like?
 * Veggie
 >
 ```
+
+## Sample code
+
+[!include[Sample code](../includes/snippet-dotnet-formflow-samples.md)]
 
 ## Additional resources
 

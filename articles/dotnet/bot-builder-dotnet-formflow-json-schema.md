@@ -6,8 +6,7 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
-ms.reviewer:
+ms.date: 06/21/2017
 ---
 
 # Define a form using JSON schema
@@ -324,6 +323,10 @@ To implement FormFlow with a JSON schema, use `FormBuilderJson`, which supports 
 that is described in [Customize a form using FormBuilder](bot-builder-dotnet-formflow-formbuilder.md).
 
 [!code-csharp[Use JSON schema](../includes/code/dotnet-formflow-json-schema.cs#useSchema)]
+
+## Sample code
+
+[!include[Sample code](../includes/snippet-dotnet-formflow-samples.md)]
 
 ## Additional resources
 
