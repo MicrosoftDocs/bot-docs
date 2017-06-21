@@ -74,7 +74,7 @@ The following screenshot shows the results of this bot running in the [Bot Frame
 
 ## Create a conversation with multiple waterfalls
 
-You can use multiple waterfalls within a conversation to define whatever conversation structure your bot requires. For example, you might use one waterfall to manage the conversation flow and use additional waterfalls to collect information from the user. Each waterfall is encapsulated in a dialog and can be invoked by calling the `session.beginDialog` function.
+You can use multiple waterfalls within a conversation to define whatever conversation structure your bot requires. For example, you might use one waterfall to manage the conversation flow and use additional waterfalls to collect information from the user. Each waterfall is encapsulated in a dialog and that can be invoked by calling the `session.beginDialog` function.
  
 The following code sample shows how to use multiple waterfalls in a conversation. The waterfall within the `greetings` dialog manages the flow of the conversation, while the waterfall within the `askName` dialog collects information from the user. 
 
