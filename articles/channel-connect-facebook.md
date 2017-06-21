@@ -33,7 +33,9 @@ The bot is accessed through a Facebook Page. [Create a new Facebook Page](https:
 
 ![Save App ID and secret](~/media/channels/FB-get-appid.png)
 
-Configure the Facebook app setting of "Allow API Access to App Settings" to "Yes".
+Set the "Allow API Access to App Settings" slider to "Yes".
+
+![App settings](../media/channels/channel-connect-facebook/api_settings.png)
 
 ## Enable messenger
 
