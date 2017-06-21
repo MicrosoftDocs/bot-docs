@@ -6,8 +6,7 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
-ms.reviewer:
+ms.date: 06/21/2017
 ---
 
 # Advanced features of FormFlow
@@ -320,6 +319,10 @@ and using attributes to customize prompts, override templates,
 designate optional fields, match user input, and validate user input. 
 For information about additional ways to customize the user experience with FormFlow, 
 see [Customize a form using FormBuilder](bot-builder-dotnet-formflow-formbuilder.md).
+
+## Sample code
+
+[!include[Sample code](../includes/snippet-dotnet-formflow-samples.md)]
 
 ## Additional resources
 
