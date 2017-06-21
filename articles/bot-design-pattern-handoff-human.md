@@ -93,7 +93,7 @@ Likewise, it receives messages from the agent and sends those messages to the us
 
 ## Sample code
 
-For a complete sample that shows how to hand off conversations from bot to human using the Bot Builder SDK for Node.js, see the <a href="https://github.com/palindromed/Bot-HandOff" target="_blank">Bot-HandOff sample</a> in GitHub.
+For a complete sample that shows how to hand off conversations from bot to human using the Bot Builder SDK for C#, see the <a href="https://github.com/tompaana/intermediator-bot-sample" target="_blank">Intermediator Bot Sample</a> on GitHub. For an example in Node.js take a look at the <a href="https://github.com/palindromed/Bot-HandOff" target="_blank">Bot-HandOff sample</a>
 
 ## Additional resources
 
