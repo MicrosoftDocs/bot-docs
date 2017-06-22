@@ -48,7 +48,7 @@ Next, add this `EchoDialog` class to **MessagesController.cs** to represent the 
 
 [!code-csharp[EchoDialog class](../includes/code/dotnet-dialogs.cs#echobot1)]
 
-Then, wire the `EchoDialog` class to the `Post` method by calling the `Conversation.SendAsync` method.
+Then, from the `MessagesController` class `Post` method, wire the `EchoDialog` class by calling the `Conversation.SendAsync` method.
 
 [!code-csharp[Post method](../includes/code/dotnet-dialogs.cs#echobot2)]
 
