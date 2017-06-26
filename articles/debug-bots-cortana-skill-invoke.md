@@ -30,6 +30,7 @@ In the **Settings** panel, under **Configuration**, enter the LUIS application I
 ## Add the Cortana channel
 Under **My bots**, select the bot you would like to connect to the Cortana channel. From the list of channels, click the button to add Cortana.
 
+[Secure your bot](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-security) by configuring the **AppID** and **AppPassword** in the Bot Framework portal and in your **Web.config** file.
 
 ![Add the Cortana channel ](~/media/cortana/cortana-add.png)
 
@@ -40,7 +41,7 @@ If you have already deployed your bot, make sure the **Messaging endpoint** is c
 
 If you are running the bot locally, you can get an endpoint to use for testing by running tunneling software, such as [ngrok](https://ngrok.com). To use ngrok to get an endpoint, from a console window type: 
 ```
-ngrok http 3978
+ ngrok.exe http 3979 -host-header="localhost:3979"
 ``` 
 This configures and displays an ngrok forwarding link that forwards requests to your bot, which is running on port 3978. The URL to the forwarding link should look something like this: `https://0d6c4024.ngrok.io`.  Append `/api/messages` to the link, to form an endpoint URL in this format: `https://0d6c4024.ngrok.io/api/messages`. Enter this endpoint URL in the **Configuration** section for your bot in the [Bot Framework Portal][BFPortal].
 
