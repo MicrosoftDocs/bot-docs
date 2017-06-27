@@ -1,5 +1,5 @@
 // <classDefinition>
-[LuisModel("c413b2ef-382c-45bd-8ff0-f76d60e2a821", "6d0966209c6e4f6b835ce34492f3e6d9")]
+[LuisModel("c413b2ef-382c-45bd-8ff0-f76d60e2a821", "6d0966209c6e4f6b835ce34492f3e6d9", domain: "westus2.api.cognitive.microsoft.com", staging: true)]
 [Serializable]
 public class SimpleAlarmDialog : LuisDialog<object>
 {
@@ -7,7 +7,14 @@ public class SimpleAlarmDialog : LuisDialog<object>
 }
 // </classDefinition>
 
-
+// <classDefinitionLogFalse>
+[LuisModel("c413b2ef-382c-45bd-8ff0-f76d60e2a821", "6d0966209c6e4f6b835ce34492f3e6d9", log: false)]
+[Serializable]
+public class SimpleAlarmDialog : LuisDialog<object>
+{
+    ...
+}
+// </classDefinitionLogFalse>
 
 // <turnOffAlarmHandler>
 [LuisIntent("builtin.intent.alarm.turn_off_alarm")]
@@ -39,7 +46,8 @@ using Microsoft.Bot.Builder.Luis.Models;
 
 namespace Microsoft.Bot.Sample.SimpleAlarmBot
 {
-    [LuisModel("c413b2ef-382c-45bd-8ff0-f76d60e2a821", "6d0966209c6e4f6b835ce34492f3e6d9")]
+    // domain defaults to westus2.api.cognitive.microsoft.com if not provided
+    [LuisModel("c413b2ef-382c-45bd-8ff0-f76d60e2a821", "6d0966209c6e4f6b835ce34492f3e6d9", domain: "westus2.api.cognitive.microsoft.com", staging: true)]
     [Serializable]
     public class SimpleAlarmDialog : LuisDialog<object>
     {

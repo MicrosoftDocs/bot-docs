@@ -17,7 +17,7 @@ You can configure your bot to communicate with people using the Telegram messagi
 
 ## Visit the Bot Father to create a new Telegram bot
 
-[Create a new Telegram bot](https://telegram.me/botfather) using the Bot Father.
+<a href="https://telegram.me/botfather" target="_blank">Create a new Telegram bot</a> using the Bot Father.
 
 ![Visit Bot Father](~/media/channels/tg-StepVisitBotFather.png)
 

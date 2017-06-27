@@ -17,11 +17,11 @@ You can configure your bot to communicate with people using the Kik messaging ap
 
 ## Install Kik on your phone
 
-If you don't have Kik installed on your phone, you can install it via your phone's app store or at [the Kik website](https://www.kik.com/).
+If you don't have Kik installed on your phone, you can install it via your phone's app store or at <a href="https://www.kik.com/" target="_blank">the Kik website</a>
 
 ## Log into the dev portal with your mobile phone
 
-[Log into the Kik portal](https://dev.kik.com) on your mobile phone.
+<a href="https://dev.kik.com" target="_blank">Log into the Kik portal</a> on your mobile phone.
 
 ## Follow the bot setup process
 
