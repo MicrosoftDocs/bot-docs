@@ -30,7 +30,7 @@ In the **Settings** panel, under **Configuration**, enter the LUIS application I
 ## Add the Cortana channel
 Under **My bots**, select the bot you would like to connect to the Cortana channel. From the list of channels, click the button to add Cortana.
 
-[Secure your bot](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-security) by configuring the **AppID** and **AppPassword** in the Bot Framework portal and in your **Web.config** file.
+[Secure your bot](dotnet/bot-builder-dotnet-security.md) by configuring the **AppID** and **AppPassword** in the Bot Framework portal and in your **Web.config** file.
 
 ![Add the Cortana channel ](~/media/cortana/cortana-add.png)
 
