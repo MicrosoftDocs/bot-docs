@@ -170,8 +170,8 @@ description:
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Build bots with REST</h3>
-                                            <p>Learn how to build bots with the Bot Framework REST APIs.</p>
+                                            <h3>Build bots with REST and Direct Line</h3>
+                                            <p>Learn how to build bots with the Bot Framework REST API and Direct Line.</p>
                                         </div>
                                     </div>
                                 </div>
