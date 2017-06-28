@@ -100,7 +100,7 @@ Some knowledge bots may simply aim to answer frequently asked questions (FAQs).
 <a href="https://www.microsoft.com/cognitive-services/en-us/qnamaker" target="_blank">QnA Maker</a> 
 is a powerful tool that's designed specifically for this use case. 
 QnA Maker has the built-in ability to scrape questions and answers from an existing FAQ site. It also allows you to manually configure your own custom list of questions and answers. 
-QnA Maker has natural languaging processing (NLP) abilities, enabling it to even provide answers to questions that are worded 
+QnA Maker has natural language processing (NLP) abilities, enabling it to even provide answers to questions that are worded 
 slightly differently than expected. 
 However, it does not have semantic language understanding abilities. 
 It cannot determine that a puppy is a type of dog, for example. 
