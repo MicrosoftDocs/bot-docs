@@ -335,25 +335,6 @@ description:
                             </div>
                             </a>
                         </li>
-                        <li>
-                            <a href="/bot-framework/cognitive-services-bot-intelligence-overview#location-control">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/botframework/bot-framework-intelligence-location.svg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="cardText">
-                                            <h3>Location control</h3>
-                                            <p>Learn how to add location control capabilities to your bot.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </li>
                     </ul>
                 </li>
                 <li>
