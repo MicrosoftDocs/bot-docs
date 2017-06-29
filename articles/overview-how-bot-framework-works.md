@@ -13,12 +13,12 @@ ms.date:
 The Bot Framework provides tools and services to help you build, deploy, and publish bots, including the Bot Builder SDK, the Developer Portal, and the Bot Connector.
 
 ## Building bots
-Bots are apps that offer a conversational interface as the best solution to the user's needs. Like other apps, bot development starts with your business logic and data. Choose the model your bot will use to interact with users. Users can interact with your bot with inline forms and cards, simple menus, or natural language. You can build your bot with the Bot Builder SDK using C# or Node.js, or you can use the Azure Bot Service (currently in preview). Add artificial intelligence to your bot with Cognitive Services. Register your bot on the Developer Portal and connect it to users through the channels they use, such as Facebook, Kik, and Microsoft Teams. When you are ready to share your bot with the world, deploy it to a cloud service such as Microsoft Azure.
+Bots are apps that offer a conversational interface as the best solution to the user's needs. Like other apps, bot development starts with your business logic and data. Users can interact with your bot with inline forms and cards, simple menus, or natural language. Choose the model your bot will use to interact with users. You can build your bot with the Bot Builder SDK using C# or Node.js, or you can use the Azure Bot Service (currently in preview). Add artificial intelligence to your bot with Cognitive Services. Register your bot on the Developer Portal and connect it to users through the channels they use, such as Facebook, Kik, and Microsoft Teams. When you are ready to share your bot with the world, deploy it to a cloud service such as Microsoft Azure.
 
 ![Architecture overview diagram](~/media/how-it-works/architecture-resize.png)
 
 ### Bot Builder
-To help you build bots with C# or Javascript, the Bot Framework includes Bot Builder SDKs. The SDKs provide libraries, samples, and tools to help you build and debug bots. The SDKs contain built-in dialogs to handle user interactions ranging from a basic Yes/No to complex disambiguation. Built-in recognizers and event handlers help guide the user through a conversation. 
+To help you build bots with C# or JavaScript, the Bot Framework includes Bot Builder SDKs. The SDKs provide libraries, samples, and tools to help you build and debug bots. The SDKs contain built-in dialogs to handle user interactions ranging from a basic Yes/No to complex disambiguation. Built-in recognizers and event handlers help guide the user through a conversation. 
 
 The [Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-overview.md) leverages C# to provide a familiar way for .NET developers to write bots. It is a powerful framework for constructing bots that can handle both free-form interactions and more guided conversations where the user selects from possible values.
 
@@ -38,7 +38,7 @@ A channel is the connection between the Bot Framework and communication apps suc
 The Bot Connector service connects a bot to one or more channels and handles the message exchange between them. This connecting service allows the bot to communicate over many channels without manually designing a specific message for each channel's schema.
 
 ### Activity
-The Connector uses an `activity` object to exchange information between bot and channel. Any communication going back and forth is an `activity` of some type. Some activities are invisible to the user, such as the notification that the bot has been added to a user's contact list. 
+The Bot Connector uses an `activity` object to exchange information between bot and channel. Any communication going back and forth is an `activity` of some type. Some activities are invisible to the user, such as the notification that the bot has been added to a user's contact list. 
 
 ### Message
 A `message` is the most common type of `activity`. A message can be as simple as a text string or contain attachments, interactive elements, and rich cards. For example, adding a bot to the user's contact list could trigger the bot to respond with a `message` containing a string saying "Thank you!" and an image of a happy face.
