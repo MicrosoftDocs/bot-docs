@@ -32,7 +32,7 @@ Get started by completing the following prerequisite tasks:
 npm init
 ```
 
-Follow the on screen prompt to enter information about your bot and npm will create a **package.json** file that contains the information you provided. 
+Follow the prompt on the screen to enter information about your bot and npm will create a **package.json** file that contains the information you provided. 
 
 ## Install the SDK
 Next, install the Bot Builder SDK for Node.js and <a href="http://restify.com/" target="_blank">restify</a> by running the following **npm** commands:

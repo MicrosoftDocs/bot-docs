@@ -37,7 +37,12 @@ conversation, providing help, navigation, clarification, and confirmation as nee
 
 ## Get the SDK
 
-The SDK is available as a NuGet package and as open source on <a href="https://github.com/Microsoft/BotBuilder" target="_blank">GitHub</a>. 
+The SDK is available as a NuGet package and as open source on <a href="https://github.com/Microsoft/BotBuilder" target="_blank">GitHub</a>.
+
+> [!IMPORTANT]
+> The Bot Builder SDK for .NET supports .NET Framework 4.6 or newer. If you are adding the SDK to an existing project
+> targeting a lower version of the .NET Framework, you will need to update your project to target .NET Framework 4.6.
+
 To install the SDK within a Visual Studio project, complete the following steps:
 
 1. In **Solution Explorer**, right-click the project name and select **Manage NuGet Packages...**.
