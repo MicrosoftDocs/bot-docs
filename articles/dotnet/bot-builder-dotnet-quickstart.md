@@ -112,6 +112,10 @@ Now that your bot is running locally and is connected to the emulator, test your
 You should see that the bot responds to each message you send by echoing back your message prefixed with the text 'You sent'
 and ending with the text 'which was *##* characters', where *##* is the total number of characters in the message that you sent.
 
+
+> [!TIP]
+> In the emulator, click on any speech bubble in your conversation. Details about the message will appear in the Details pane, in JSON format.
+
 You've successfully created a bot by using the Bot Application template Bot Builder SDK for .NET!
 
 ## Next steps
