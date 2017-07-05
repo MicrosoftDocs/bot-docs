@@ -1,6 +1,6 @@
 ---
-title: Bot Framework Troubleshooting Guide | Microsoft Docs
-description: Assistance with troubleshooting bots and the Bot Framework. Includes the Troubleshooting Guide and Technical FAQ.
+title: Troubleshooting bots | Microsoft Docs
+description: Troubleshoot general problems in bot development using technical frequently asked questions.
 author: DeniseMak
 ms.author: v-demak
 manager: rstand
@@ -9,12 +9,10 @@ ms.prod: bot-framework
 ms.date: 06/02/2017
 ---
 
-# Bot Framework troubleshooting guide
-These Frequently Asked Questions (FAQ) for the Bot Framework can help you to troubleshoot common bot development or operational issues.
+# Troubleshooting general problems
+These frequently asked questions can help you to troubleshoot common bot development or operational issues.
 
-## General questions
-
-### How can I troubleshoot issues with my bot?
+## How can I troubleshoot issues with my bot?
 
 1. Debug your bot's source code with [Visual Studio Code](debug-bots-locally-vscode.md) or Visual Studio.
 2. Test your bot using the [emulator](debug-bots-emulator.md) before you deploy it to the cloud.
@@ -23,11 +21,11 @@ These Frequently Asked Questions (FAQ) for the Bot Framework can help you to tro
 5. Test your bot on Skype. This will help you to validate the end-to-end user experience.
 6. Consider testing your bot on channels that have additional authentication requirements such as Direct Line or Web Chat.
 
-### How can I troubleshoot authentication issues?
+## How can I troubleshoot authentication issues?
 
 For details about troubleshooting authentication issues with your bot, see [Troubleshooting Bot Framework authentication][TroubleshootingAuth].
 
-### I'm using the Bot Builder SDK for .NET. How can I troubleshoot issues with my bot?
+## I'm using the Bot Builder SDK for .NET. How can I troubleshoot issues with my bot?
 
 **Look for exceptions.**  
 In Visual Studio 2017, go to **Debug** > **Windows** > **Exception Settings**. In the **Exceptions Settings** window, select the **Break When Thrown** checkbox next to **Common Language Runtime Exceptions**. You may also see diagnostics output in your Output window when there are thrown or unhandled exceptions.
@@ -41,94 +39,89 @@ All `IDialog` methods should complete with `IDialogStack.Call`, `IDialogStack.Wa
 **Ensure that all dialogs are serializable.**  
 This can be as simple as using the `[Serializable]` attribute on your `IDialog` implementations. However, be aware that anonymous method closures are not serializable if they reference their outside environment to capture variables. The Bot Framework supports a reflection-based serialization surrogate to help serialize types that are not marked as serializable.
 
-### Why doesn't the Typing activity do anything?
+## Why doesn't the Typing activity do anything?
 Some channels do not support transient typing updates in their client.
 
-### What is the difference between the Connector library and Builder library in the SDK?
+## What is the difference between the Connector library and Builder library in the SDK?
 
 The Connector library is the exposition of the REST API. The Builder library adds the conversational dialog programming model and other features such as prompts, waterfalls, chains, and guided form completion. The Builder library also provides access to cognitive services such as LUIS.
 
-### What causes an error with HTTP status code 429 "Too Many Requests"?
+## What causes an error with HTTP status code 429 "Too Many Requests"?
 
  An error response with HTTP status code 429 indicates that too many requests have been issued in a given amount of time. One possible source for this error is [ngrok](https://ngrok.com/). The body of the response should include an explanation of the problem and may also specify the minimum required interval between requests.
 
-### How can I run background tasks in ASP.NET? 
+## How can I run background tasks in ASP.NET? 
 
 In some cases, you may want to initiate an asynchronous task that waits for a few seconds and then executes some code to clear the user profile or reset conversation/dialog state. For details about how to achieve this, see [How to run Background Tasks in ASP.NET](https://www.hanselman.com/blog/HowToRunBackgroundTasksInASPNET.aspx). In particular, consider using [HostingEnvironment.QueueBackgroundWorkItem](https://msdn.microsoft.com/en-us/library/dn636893(v=vs.110).aspx). 
 
-## Transmitting messages
 
-### How do user messages relate to HTTPS method calls?
+## How do user messages relate to HTTPS method calls?
 
 When the user sends a message over a channel, the Bot Framework web service will issue an HTTPS POST to the bot's web service endpoint. The bot may send zero, one, or many messages back to the user on that channel, by issuing a separate HTTPS POST to the Bot Framework for each message that it sends.
 
-### My bot is slow to respond to the first message it receives. How can I make it faster?
+## My bot is slow to respond to the first message it receives. How can I make it faster?
 
 Bots are web services and some hosting platforms, including Azure, automatically put the service to sleep if it does not receive traffic for a certain period of time. If this happens to your bot, it must restart from scratch the next time it receives a message, which makes its response much slower than if it was already running.
 
 Some hosting platforms enable you to configure your service so that it will not be put to sleep. To do this in Azure, navigate to your bot's service in the [Azure Portal](https://portal.azure.com), select **Application settings**, and then select **Always on**. This option is available in most, but not all, service plans.
 
-### How can I guarantee message delivery order?
+## How can I guarantee message delivery order?
 
 The Bot Framework will preserve message ordering as much as possible. For example, if you send message A and wait for the completion of that HTTP operation before you initiate another HTTP operation to send message B, the Bot Framework will automatically understand that message A should precede message B. However, in general, message delivery order cannot be guaranteed since the channel is ultimately responsible for message delivery and may reorder messages. To mitigate the risk of messages being delivered in the wrong order, you might choose to implement a time delay between messages.
 
-### How can I intercept all messages between the user and my bot?
+## How can I intercept all messages between the user and my bot?
 
 Using the Bot Builder SDK for .NET, you can provide implementations of the `IPostToBot` and `IBotToUser` interfaces to the `Autofac` dependency injection container. Using the Bot Builder SDK for Node.js, you can use middleware for much the same purpose. The [BotBuilder-Azure](https://github.com/Microsoft/BotBuilder-Azure) repository contains C# and Node.js libraries that will log this data to an Azure table.
 
-### Why are parts of my message text being dropped?
+## Why are parts of my message text being dropped?
 
 The Bot Framework and many channels interpret text as if it were formatted with [Markdown](https://en.wikipedia.org/wiki/Markdown). Check to see if your text contains characters that may be interpreted as Markdown syntax.
 
-### How can I support multiple bots at the same bot service endpoint? 
+## How can I support multiple bots at the same bot service endpoint? 
 
 This [sample](https://github.com/Microsoft/BotBuilder/issues/2258#issuecomment-280506334) shows how to configure the `Conversation.Container` with the right `MicrosoftAppCredentials` and use a simple `MultiCredentialProvider` to authenticate multiple App IDs and passwords.
 
 ## Identifiers
 
-### How do identifiers work in the Bot Framework?
+## How do identifiers work in the Bot Framework?
 
 For details about identifiers in the Bot Framework, see the [Bot Framework guide to identifiers][BotFrameworkIDGuide].
 
-### How can I get access to the user ID?
+## How can I get access to the user ID?
 
 SMS and email messages will provide the raw user ID in the `from.Id` property. In Skype messages, the `from.Id` property will contain a unique ID for the user which differs from the user's Skype ID. If you need to connect to an existing account, you can use a sign-in card and implement your own OAuth flow to connect the user ID to your own service's user ID.
 
-## Working with channels
-
-### Why are my Facebook user names not showing anymore?
+## Why are my Facebook user names not showing anymore?
 
 Did you change your Facebook password? Doing so will invalidate the access token, and you will need to update your bot's configuration settings for the Facebook Messenger channel in the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a>.
 
-### Why is my Kik bot replying "I'm sorry, I can't talk right now"?
+## Why is my Kik bot replying "I'm sorry, I can't talk right now"?
 
 Bots in development on Kik are allowed 50 subscribers. After 50 unique users have interacted with your bot, any new user that attempts to chat with your bot will receive the message "I'm sorry, I can't talk right now." For more information, see [Kik documentation](https://botsupport.kik.com/hc/en-us/articles/225764648-How-can-I-share-my-bot-with-Kik-users-while-in-development-).
 
-### How can I use authenticated services from my bot?
+## How can I use authenticated services from my bot?
 
 For Azure Active Directory authentication, consider using the [AuthBot NuGet](https://www.nuget.org/packages/AuthBot) library. For Facebook authentication examples, see the [Bot Builder SDK for .NET samples](https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples) on GitHub. 
 
 > [!NOTE] 
 > If you add authentication and security functionality to your bot, you should ensure that the patterns you implement in your code comply with the security standards that are appropriate for your application.
 
-### How can I limit access to my bot to a pre-determined list of users?
+## How can I limit access to my bot to a pre-determined list of users?
 
 Some channels, such as SMS and email, provide unscoped addresses. In these cases, messages from the user will contain the raw user ID in the `from.Id` property.
 
 Other channels, such as Skype, Facebook, and Slack, provide either scoped or tenanted addresses in a way that prevents a bot from being able to predict a user’s ID ahead of time. In these cases, you will need to authenticate the user via a login link or shared secret in order to determine whether or not they are authorized to use the bot.
 
-### Why does my Direct Line 1.1 conversation start over after every message?
+## Why does my Direct Line 1.1 conversation start over after every message?
 
 If your Direct Line conversation appears to start over after every message, the `from` property is likely missing or `null` in messages that your Direct Line client sent to the bot. When a Direct Line client sends a message with the `from` property either missing or `null`, the Direct Line service automatically allocates an ID, so every message that the client sends will appear to originate from a new, different user.
 
 To fix this, set the `from` property in each message that the Direct Line client sends to a stable value that uniquely represents the user who is sending the message. For example, if a user is already signed-in to a webpage or app, you might use that existing user ID as the value of the `from` property in messages that the user sends. Alternatively, you might choose to generate a random user ID on page-load or on application-load, store that ID in a cookie or device state, and use that ID as the value of the `from` property in messages that the user sends.
 
-### What causes the Direct Line 3.0 service to respond with HTTP status code 502 "Bad Gateway"?
+## What causes the Direct Line 3.0 service to respond with HTTP status code 502 "Bad Gateway"?
 Direct Line 3.0 returns HTTP status code 502 when it tries to contact your bot but the request does not complete successfully. This error indicates that either the bot returned an error or the request timed out. For more information about errors that your bot generates, go to the bot's dashboard within the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a> and click the "Issues" link for the affected channel. If you have Application Insights configured for your bot, you can also find detailed error information there. 
 
-## Implementing dialogs and conversations <a id="implement-dialogs"></a> 
-
-### What is the IDialogStack.Forward method in the Bot Builder SDK for .NET?
+## What is the IDialogStack.Forward method in the Bot Builder SDK for .NET?
 
 The primary purpose of `IDialogStack.Forward` is to reuse an existing child dialog that is often "reactive", where the child dialog (in `IDialog.StartAsync`) waits for an object `T` with some `ResumeAfter` handler. In particular, if you have a child dialog that waits for an `IMessageActivity` `T`, you can forward the incoming `IMessageActivity` (already received by some parent dialog) by using the `IDialogStack.Forward` method. For example, to forward an incoming `IMessageActivity` to a `LuisDialog`, call `IDialogStack.Forward` to push the `LuisDialog` onto the dialog stack, run the code in `LuisDialog.StartAsync` until it schedules a wait for the next message, and then immediately satisfy that wait with the forwarded `IMessageActivity`.
 
@@ -137,15 +130,15 @@ some processing before forwarding the message to an existing `LuisDialog`. Alter
 
 You would expect to find the forwarded item in the first `ResumeAfter` handler (e.g. `LuisDialog.MessageReceived`) that is scheduled by `StartAsync`.
 
-### What is the difference between "proactive" and "reactive"?
+## What is the difference between "proactive" and "reactive"?
 
 From the perspective of your bot, "reactive" means that the user initiates the conversation by sending a message to the bot, and the bot reacts by responding to that message. In contrast, "proactive" means that the bot initiates the conversation by sending the first message to the user. For example, a bot may send a proactive message to notify a user when a timer expires or an event occurs.
 
-### How can I send proactive messages to the user?
+## How can I send proactive messages to the user?
 
 For examples that show how to send proactive messages, see the [C# samples](https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-proactiveMessages) and [Node.js samples](https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/core-proactiveMessages) within the BotBuilder-Samples repository on GitHub.
 
-### How can I reference non-serializable services from my C# dialogs?
+## How can I reference non-serializable services from my C# dialogs?
 
 There are multiple options:
 
@@ -154,9 +147,7 @@ There are multiple options:
 * Do not store that dependency, so that it won't be serialized. This solution, while technically feasible, is not recommended.
 * Use the reflection serialization surrogate. This solution may not be feasible in some cases and risks serializing too much.
 
-## State and data storage <a id="state"></a> 
-
-### Where is conversation state stored?
+## Where is conversation state stored?
 
 Data in the user, conversation, and private conversation property bags is stored using the Connector's `IBotState` interface. Each property bag is scoped by the bot's ID. The user property bag is keyed by user ID, the conversation property bag is keyed by conversation ID, and the private conversation property bag is keyed by both user ID and conversation ID. 
 
@@ -172,20 +163,20 @@ If you want to store this data within your data centers, you can provide a custo
 * Use the REST layer to provide a custom `IBotState` service.
 * Use the Builder interfaces in the language (Node.js or C#) layer.
 
-### What is an ETag?  How does it relate to bot data bag storage?
+## What is an ETag?  How does it relate to bot data bag storage?
 
 An [ETag](https://en.wikipedia.org/wiki/HTTP_ETag) is a mechanism for [optimistic concurrency control](https://en.wikipedia.org/wiki/Optimistic_concurrency_control). The bot data bag storage uses ETags to prevent conflicting updates to the data. An ETag error with HTTP status code 412 "Precondition Failed" indicates that there were multiple "read-modify-write" sequences executing concurrently for that bot data bag.
 
 The dialog stack and state are stored in bot data bags. For example, you might see the "Precondition Failed" ETag error if your bot is still processing a previous message when it receives a new message for that conversation.
 
-### What causes an error with HTTP status code 412 "Precondition Failed" or HTTP status code 409 "Conflict"?
+## What causes an error with HTTP status code 412 "Precondition Failed" or HTTP status code 409 "Conflict"?
 
 The Connector's `IBotState` service is used to store the bot data bags (i.e., the user, conversation, and private bot data bags, where the private bot data bag includes the dialog stack "control flow" state). Concurrency control in the `IBotState` service is managed by optimistic concurrency via ETags. If there is an update conflict (due to a concurrent update to a single bot data bag) during a "read-modify-write" sequence, then:
 
 * If ETags are preserved, an error with HTTP status code 412 "Precondition Failed" is thrown from the `IBotState` service. This is the default behavior in the Bot Builder SDK for .NET.
 * If ETags are not preserved (i.e., ETag is set to `\*`), then the "last write wins" policy will be in effect, which prevents the "Precondition Failed" error but risks data loss. This is the default behavior in the Bot Builder SDK for Node.js.
 
-### How can I fix "Precondition Failed" (412) or "Conflict" (409) errors?
+## How can I fix "Precondition Failed" (412) or "Conflict" (409) errors?
 
 These errors indicate that your bot processed multiple messages for the same conversation at once. If your bot is connected to services that require precisely ordered messages,
 you should consider locking the conversation state to make sure messages are not processed in parallel. The Bot Builder SDK for .NET provides a mechanism (class `LocalMutualExclusion` which implements `IScope`) to
@@ -203,11 +194,11 @@ builder
 builder.Update(Conversation.Container);
 ```
 
-### Is there a limit on the amount of data I can store using the State API?
+## Is there a limit on the amount of data I can store using the State API?
 
 Yes, each state store (i.e., user, conversation, and private bot data bag) may contain up to 64kb of data. For more information, see [Manage State data][StateAPI].
 
-### How do I version the bot data stored through the State API?
+## How do I version the bot data stored through the State API?
 
 The State service enables you to persist progress through the dialogs in a conversation so that a user can return to a conversation with a bot later without losing their position. To preserve this, the bot data property bags that are stored via the State API are not automatically cleared when you modify the bot's code. You should decide whether or not the bot data should be cleared, based upon whether your modified code is compatible with older versions of your data. 
 
@@ -216,18 +207,15 @@ The State service enables you to persist progress through the dialogs in a conve
 
 > [!NOTE]
 > If the dialog stack cannot be deserialized correctly, due to serialization format changes or because the code has changed too much, the conversation state will be reset.
-
-## LUIS
-
-### What are the possible machine-readable resolutions of the LUIS built-in date, time, duration, and set entities?
+## What are the possible machine-readable resolutions of the LUIS built-in date, time, duration, and set entities?
 
 For a list of examples, see the [Pre-built entities section][LUISPreBuiltEntities] of the LUIS documentation.
 
-### How can I use more than the maximum number of LUIS intents?
+## How can I use more than the maximum number of LUIS intents?
 
 You might consider splitting up your model and calling the LUIS service in series or parallel.
 
-### How can I use more than one LUIS model?
+## How can I use more than one LUIS model?
 
 Both the Bot Builder SDK for Node.js and the Bot Builder SDK for .NET support calling multiple LUIS models from a single LUIS intent dialog. Keep in mind the following caveats:
 
@@ -235,25 +223,24 @@ Both the Bot Builder SDK for Node.js and the Bot Builder SDK for .NET support ca
 * Using multiple LUIS models assumes the scores from different models are comparable, to select the "best matched intent" across multiple models.
 * Using multiple LUIS models means that if an intent matches one model, it will also strongly match the "none" intent of the other models. You can avoid selecting the "none" intent in this situation; the Bot Builder SDK for Node.js will automatically scale down the score for "none" intents to avoid this issue.
 
-### Where can I get more help on LUIS?
+## Where can I get more help on LUIS?
 
 * [Introduction to Language Understanding Intelligent Service (LUIS) - Microsoft Cognitive Services](https://www.youtube.com/watch?v=jWeLajon9M8) (video)
 * [Advanced Learning Session for Language Understanding Intelligent Service (LUIS) ](https://www.youtube.com/watch?v=39L0Gv2EcSk) (video)
 * [LUIS documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/Home)
 * [Language Understanding Intelligent Service Forum](https://social.msdn.microsoft.com/forums/azure/en-US/home?forum=LUIS) 
 
-## Additional resources
 
-### What are some community-authored dialogs?
+## What are some community-authored dialogs?
 
 * [AuthBot](https://www.nuget.org/packages/AuthBot) - Azure Active Directory authentication
 * [BestMatchDialog](http://www.garypretty.co.uk/2016/08/01/bestmatchdialog-for-microsoft-bot-framework-now-available-via-nuget/) - Regular expression-based dispatch of user text to dialog methods
 
-### What are some community-authored templates?
+## What are some community-authored templates?
 
 * [ES6 BotBuilder](https://github.com/brene/botbuilder-es6-template) - ES6 Bot Builder template
 
-### Where can I get more help?
+## Where can I get more help?
 
 * Leverage the information in previously answered questions on [Stack Overflow](http://stackoverflow.com/questions/tagged/botframework), or post your own questions using the `botframework` tag.
 * Consult [BotBuilder issues](https://github.com/Microsoft/BotBuilder/issues) in GitHub for information about known issues with the Bot Builder SDK, or to report a new issue.
