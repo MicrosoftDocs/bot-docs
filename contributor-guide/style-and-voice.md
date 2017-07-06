@@ -38,8 +38,8 @@ Our technical articles are translated into many other languages, and some are mo
 * Bot Framework uses sentence casing for all titles.
 * Use "sign-in" and not "log-in."
 * Include the words "following" or "as follows" in every sentence that precedes a list or code snippet.
-* "SQL Database" is the Bot Framework feature. A "SQL database" is a database instance running on SQL Database.
-* Bot Framework Storage includes several "data management services" that include the Table service, the Blob service, and the Queue service. (It's not called the "Bot Framework Table storage service".)
+* "SQL Database" is the feature. A "SQL database" is a database instance running on SQL Database.
+* Azure Storage includes several "data management services" that include the Table service, the Blob service, and the Queue service. (It's not called the "Azure Table storage service".)
 
 ### Contributors' Guide Links
 * [Overview article](../README.md)
