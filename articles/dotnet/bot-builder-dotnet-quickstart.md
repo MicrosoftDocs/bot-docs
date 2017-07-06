@@ -7,7 +7,6 @@ manager: rstand
 ms.topic: get-started-article
 ms.prod: bot-framework
 ms.date: 06/29/2017
-ms.reviewer: 
 ---
 # Create a bot with the Bot Builder SDK for .NET
 > [!div class="op_single_selector"]
@@ -30,9 +29,7 @@ and then testing it with the Bot Framework Emulator.
 
 Get started by completing the following prerequisite tasks:
 
-1. Install Visual Studio 2017 for Windows.  
-> [!TIP]
-> You can build bots for free with <a href="https://www.visualstudio.com/downloads/" target="_blank">Visual Studio 2017 Community</a>.
+1. Install <a href="https://www.visualstudio.com/downloads/" target="_blank">Visual Studio 2017</a> for Windows. 
 
 2. In Visual Studio, <a href="https://docs.microsoft.com/en-us/visualstudio/extensibility/how-to-update-a-visual-studio-extension" target="_blank">update all extensions</a> to their latest versions.
 
