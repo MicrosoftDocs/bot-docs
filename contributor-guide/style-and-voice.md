@@ -33,8 +33,7 @@ Our technical articles are translated into many other languages, and some are mo
 ## Other style and voice issues to watch for
 * Don't break up steps with commentary or asides.
 * For steps that include code snippets, put additional information about the step into the code as comments. This reduces the amount of text people have to read through, and the key information gets copied into the code project to remind people of what the code is doing when they refer to it later.
-* The official product name is “Microsoft Azure”, but we can almost always just say “Azure”, as in "Bot Framework Mobile Services".
-* Don’t create acronyms that start with "MA" or "A." Just use “Azure” at first reference before a service or feature name and then drop it (e.g. "Bot Framework Mobile Services" becomes "Mobile Services" after first use). Try to avoid acronyms in general - they just confuse people.
+* The official product name is “Microsoft Bot Framework”, but we can almost always just say “Bot Framework."
 * Bot Framework uses sentence casing for all titles.
 * Use "sign-in" and not "log-in."
 * Include the words "following" or "as follows" in every sentence that precedes a list or code snippet.
