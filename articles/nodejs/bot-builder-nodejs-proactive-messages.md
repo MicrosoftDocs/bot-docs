@@ -31,7 +31,7 @@ The **address** property of the message includes all of the information that the
 bot.dialog('/', function(session, args) {
     var savedAddress = session.message.address;
 
-    // (Save this information somewhere that it can be accessed later, such as in a database. or session.userData)
+    // (Save this information somewhere that it can be accessed later, such as in a database, or session.userData)
 
     var message = 'Hello user, good to meet you! I now know your address and can send you notifications in the future.';
     session.send(message);
