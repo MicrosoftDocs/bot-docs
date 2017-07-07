@@ -1,6 +1,6 @@
 ---
 title: Send proactive messages | Microsoft Docs
-description:  LEarn how to interrupt the current conversation flow with a proactive message using the Bot Builder SDK for Node.js
+description:  Learn how to interrupt the current conversation flow with a proactive message using the Bot Builder SDK for Node.js
 author: kbrandl
 ms.author: v-kibran
 manager: rstand
@@ -31,7 +31,7 @@ The **address** property of the message includes all of the information that the
 bot.dialog('/', function(session, args) {
     var savedAddress = session.message.address;
 
-     // (Save this information somewhere that it can be accessed later, such as in a database.)
+    // (Save this information somewhere that it can be accessed later, such as in a database, or session.userData)
 
     var message = 'Hello user, good to meet you! I now know your address and can send you notifications in the future.';
     session.send(message);
@@ -62,29 +62,36 @@ function sendProactiveMessage(address) {
 
 ## Send a dialog-based proactive message
 
-The following code samples show how to send a dialog-based proactive message by using the Bot Builder SDK for Node.js.
+The following code samples show how to send a dialog-based proactive message by using the Bot Builder SDK for Node.js. You can find the complete working example in the [Microsoft/BotBuilder-Samples/Node/core-proactiveMessages/startNewDialog](https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/core-proactiveMessages/startNewDialog) folder.
 
 To be able to send a dialog-based message to a user, the bot must first collect (and save) information from the current conversation. 
-The **address** property of the message includes all of the information that the bot will need to send an dialog-based proactive message to the user. 
+The `session.message.address` object includes all of the information that the bot will need to send a dialog-based proactive message to the user. 
 
 ```javascript
-bot.dialog('/', function(session, args) {
-    var savedAddress = session.message.address;
+// root dialog
+bot.dialog('/', function (session, args) {
 
-     // (Save this information somewhere that it can be accessed later, such as in a database.)
+    savedAddress = session.message.address;
 
-    var message = 'Hello user, good to meet you! I now know your address and can send you notifications in the future.';
+    var message = 'Hey there, I\'m going to interrupt our conversation and start a survey in five seconds...';
     session.send(message);
-})
+
+    message = 'You can also make me send a message by accessing: ';
+    message += 'http://localhost:' + server.address().port + '/api/CustomWebApi';
+    session.send(message);
+
+    setTimeout(() => {
+        startProactiveDialog(savedAddress);
+    }, 5000);
+});
 ```
 
 When it is time to send the message, the bot creates a new dialog and adds it to the top of the dialog stack. The new dialog takes control of the conversation, delivers the proactive message, closes, and then returns control to the previous dialog in the stack. 
 
 ```javascript
-function startProactiveDialog(addr) {
-    // Set resume:true to resume the previous dialog;
-    // else, set resume:false to resume at the root dialog.
-    bot.beginDialog(savedAddress, "*:/survey", {}, { resume: true });  
+// initiate a dialog proactively 
+function startProactiveDialog(address) {
+    bot.beginDialog(address, "*:/survey");
 }
 ```
 
@@ -96,18 +103,15 @@ Then, it closes (by calling `session.endDialog()`), thereby returning control ba
 
 
 ```javascript
-bot.dialog('/survey', [
-    function (session, args, next) {
-        if (session.message.text=="done"){
-            session.send("Great, back to the original conversation");
-            session.endDialog();
-        }else{
-            session.send('Hello, I\'m the survey dialog. I\'m interrupting your conversation to ask you a question. Type "done" to resume');
-        }
-    },
-    function (session, results) {
-    }
-]);
+// handle the proactive initiated dialog
+bot.dialog('/survey', function (session, args, next) {
+  if (session.message.text === "done") {
+    session.send("Great, back to the original conversation");
+    session.endDialog();
+  } else {
+    session.send('Hello, I\'m the survey dialog. I\'m interrupting your conversation to ask you a question. Type "done" to resume');
+  }
+});
 ```
 
 ## Sample code
