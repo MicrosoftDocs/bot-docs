@@ -6,8 +6,7 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
-ms.reviewer:
+ms.date: 06/21/2017
 ---
 
 # Customize a form using FormBuilder
@@ -91,6 +90,10 @@ In this example, the form executes these steps:
 - Adds any remaining fields that were defined in the class but not explicitly referenced by `Field`. (If the example did not call the `AddRemainingFields` method, the form would not include any fields that were not explicity referenced.) 
 - Shows a thank you message. 
 - Defines an `OnCompletionAsync` handler to process the order. 
+
+## Sample code
+
+[!include[Sample code](../includes/snippet-dotnet-formflow-samples.md)]
 
 ## Additional resources
 

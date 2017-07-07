@@ -6,7 +6,7 @@ ms.author: rstand
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/22/2017
+ms.date: 06/27/2017
 ms.reviewer:
 ---
 # Bot Framework SDKs and tools
@@ -17,7 +17,12 @@ The Bot Builder SDKs provide libraries, samples, and tools to help you build and
 The Bot Builder SDK for .NET leverages C# to provide a familiar way for .NET developers to write bots. It is a powerful framework for constructing bots that can handle both free-form interactions and more guided conversations where the user selects from possible values.
 
 The Bot Builder SDK for .NET is available as a [NuGet package](https://www.nuget.org/packages/Microsoft.Bot.Builder/).
-To install the SDK in a Visual Studio project, complete the following steps:
+
+> [!IMPORTANT]
+> The Bot Builder SDK for .NET supports .NET Framework 4.6 or newer. If you are adding the SDK to an existing project
+> targeting a lower version of the .NET Framework, you will need to update your project to target .NET Framework 4.6.
+
+To install the SDK in an existing Visual Studio project, complete the following steps:
 
 1. In **Solution Explorer**, right-click the project name and select **Manage NuGet Packages...**.
 2. On the **Browse** tab, type "Microsoft.Bot.Builder" into the search box.

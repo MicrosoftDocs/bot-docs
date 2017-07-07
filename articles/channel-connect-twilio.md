@@ -16,11 +16,11 @@ You can configure your bot to communicate with people using the Twilio cloud com
 
 ## Log in to or create a Twilio account for sending and receiving SMS messages
 
-If you don't have a Twilio account, [create a new account](https://www.twilio.com/try-twilio).
+If you don't have a Twilio account, <a href="https://www.twilio.com/try-twilio" target="_blank">create a new account</a>
 
 ## Create a TwiML Application
 
-[Create a TwiML application](https://www.twilio.com/user/account/messaging/dev-tools/twiml-apps/add).
+<a href="https://www.twilio.com/user/account/messaging/dev-tools/twiml-apps/add" target="_blank">Create a TwiML application</a>
 
 ![Create app](~/media/channels/twi-StepTwiml.png)
 
@@ -28,7 +28,7 @@ If you don't have a Twilio account, [create a new account](https://www.twilio.co
 
 ## Select or add a phone number
 
-[Select or add a phone number](https://www.twilio.com/user/account/phone-numbers/incoming). Click  the number to add it to the TwiML application you created.
+<a href="https://www.twilio.com/user/account/phone-numbers/incoming" target="_blank">elect or add a phone number</a>. Click  the number to add it to the TwiML application you created.
 
 ![Set phone number](~/media/channels/twi-StepPhone.png)
 
@@ -40,7 +40,7 @@ Copy the **Phone Number** value for later use.
 
 ## Gather credentials
 
-[Gather credentials](https://www.twilio.com/user/account/settings) and then click the lock icon to see the Auth Token.
+<a href="https://www.twilio.com/user/account/settings" target="_blank">Gather credentials</a> and then click the "eye" icon to see the Auth Token.
 
 ![Gather app credentials](~/media/channels/twi-StepAuth.png)
 

@@ -170,8 +170,8 @@ description:
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Build bots with REST</h3>
-                                            <p>Learn how to build bots with the Bot Framework REST APIs.</p>
+                                            <h3>Build bots with REST and Direct Line</h3>
+                                            <p>Learn how to build bots with the Bot Framework REST API and Direct Line.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -329,25 +329,6 @@ description:
                                         <div class="cardText">
                                             <h3>Web search</h3>
                                             <p>Learn how to add intelligent web search capabilities to your bot.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/bot-framework/cognitive-services-bot-intelligence-overview#location-control">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/botframework/bot-framework-intelligence-location.svg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="cardText">
-                                            <h3>Location control</h3>
-                                            <p>Learn how to add location control capabilities to your bot.</p>
                                         </div>
                                     </div>
                                 </div>

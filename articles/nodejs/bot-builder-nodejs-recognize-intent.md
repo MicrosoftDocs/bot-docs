@@ -27,7 +27,7 @@ Use [RegExpRecognizer][RegExpRecognizer] to detect the user's intent using a reg
 bot.recognizer(new builder.RegExpRecognizer( "CancelIntent", { en_us: /^(cancel|nevermind)/i, ja_jp: /^(キャンセル)/ }));
 ```
 -->
-[!code-js[Add a regular expression recognizer (Javascript)](../includes/code/node-regex-recognizer.js#addRegexRecognizer)]
+[!code-js[Add a regular expression recognizer (JavaScript)](../includes/code/node-regex-recognizer.js#addRegexRecognizer)]
 
 ## Use Language Understanding Intelligent Service (LUIS) to recognize intents
 You can configure your bot to use cloud-based intent recognition services like [Language Understanding Intelligent Service (LUIS)][LUIS] through an extensible set of recognizer plugins. Out of the box, Bot Builder comes with a [LuisRecognizer][LuisRecognizer] class that can be used to call a machine learning model you’ve trained using the LUIS web site. You can create a **LuisRecognizer** that’s pointed at your model and then pass that recognizer into your dialog.
@@ -39,7 +39,7 @@ var model = process.env.model || 'https://api.projectoxford.ai/luis/v2.0/apps/c4
 bot.recognizer(new builder.LuisRecognizer(model));
 ```
 -->
-[!code-js[Add a global LUIS recognizer (Javascript)](../includes/code/node-regex-recognizer.js#addPrebuiltModelRecognizer)]
+[!code-js[Add a global LUIS recognizer (JavaScript)](../includes/code/node-regex-recognizer.js#addPrebuiltModelRecognizer)]
 
 The Bot Builder SDK includes a [sample][LUISSample] that demonstrates how to add a cloud-based LUIS recognizer to a bot.
 
@@ -48,11 +48,11 @@ The Bot Builder SDK includes a [sample][LUISSample] that demonstrates how to add
 You can also implement a custom recognizer. This example adds a simple recognizer that looks for the user to say 'help' or 'goodbye' but you could easily add a recognizer that does more complex processing, such as one that recognizes when the user sends an image. 
 
 
-[!code-js[Add a custom recognizer (Javascript)](../includes/code/node-howto-recognize-intent.js#addCustomRecognizer)]
+[!code-js[Add a custom recognizer (JavaScript)](../includes/code/node-howto-recognize-intent.js#addCustomRecognizer)]
 
 Once you've registered a recognizer, you can associate the recognizer with an action using a `matches` clause.
 
-[!code-js[Bind intents to actions (Javascript)](../includes/code/node-howto-recognize-intent.js#bindIntentsToActions)]
+[!code-js[Bind intents to actions (JavaScript)](../includes/code/node-howto-recognize-intent.js#bindIntentsToActions)]
 
 ## Disambiguate between multiple intents
 

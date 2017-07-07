@@ -71,7 +71,7 @@ repeat themselves several times, or explain things that the bot should automatic
 > [!TIP]
 > Regardless of the type of application you're creating (bot, website, or app), make user experience a top priority.
 
-The process of designing a bot is like the process of designing an app or website, so  
+The process of designing a bot is like the process of designing an app or website, so
 the lessons learned from decades of building UI and delivering UX for apps and websites still apply 
 when it comes to designing bots. Whenever you are unsure about the right design approach for your bot, 
 step back and ask yourself the following question: how would you solve that problem in an app or a website? 

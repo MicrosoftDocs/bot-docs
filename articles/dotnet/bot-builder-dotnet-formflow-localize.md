@@ -6,8 +6,7 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
-ms.reviewer:
+ms.date: 06/21/2017
 ---
 
 # Localize form content
@@ -161,6 +160,10 @@ Quel genre de pain vous souhaitez sur votre "sandwich"?
 > neuf
 Par pain "neuf" vouliez-vous dire (1. Neuf grains miel avoine, ou 2. Neuf grains de blé)
 ```
+
+## Sample code
+
+[!include[Sample code](../includes/snippet-dotnet-formflow-samples.md)]
 
 ## Additional resources
 

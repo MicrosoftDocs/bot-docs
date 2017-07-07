@@ -6,8 +6,7 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: get-started-article
 ms.prod: bot-framework
-ms.date: 05/19/2017
-ms.reviewer: 
+ms.date: 06/29/2017
 ---
 # Create a bot with the Bot Builder SDK for .NET
 > [!div class="op_single_selector"]
@@ -16,7 +15,7 @@ ms.reviewer:
 > - [Azure Bot Service](../azure/azure-bot-service-quickstart.md)
 > - [REST](../rest-api/bot-framework-rest-connector-quickstart.md)
 
-The <a href="https://github.com/Microsoft/BotBuilder" target="_blank">Bot Builder SDK for .NET</a> is an easy to use framework for developing bots using Visual Studio and Windows. The SDK leverages C# to provide a familiar way for .NET developers to create powerful bots.
+The <a href="https://github.com/Microsoft/BotBuilder" target="_blank">Bot Builder SDK for .NET</a> is an easy-to-use framework for developing bots using Visual Studio and Windows. The SDK leverages C# to provide a familiar way for .NET developers to create powerful bots.
 
 
 This tutorial walks you through building a bot by using
@@ -30,23 +29,28 @@ and then testing it with the Bot Framework Emulator.
 
 Get started by completing the following prerequisite tasks:
 
-1. Install Visual Studio 2017 for Windows.  
-> [!TIP]
-> You can build bots for free with <a href="https://www.visualstudio.com/downloads/" target="_blank">Visual Studio 2017 Community</a>.
+1. Install <a href="https://www.visualstudio.com/downloads/" target="_blank">Visual Studio 2017</a> for Windows. 
 
 2. In Visual Studio, <a href="https://docs.microsoft.com/en-us/visualstudio/extensibility/how-to-update-a-visual-studio-extension" target="_blank">update all extensions</a> to their latest versions.
 
-3. [Download](http://aka.ms/bf-bc-vstemplate) the Bot Application template
+4. [Download](http://aka.ms/bf-bc-vstemplate) the Bot Application template
 and install the template by saving the .zip file to your Visual Studio 2017 project templates directory.  
 > [!TIP]
 > The Visual Studio 2017 project templates directory is typically located here:
 > `%USERPROFILE%\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\`
+
+
+
 
 ## Create your bot
 
 Next, open Visual Studio and create a new C# project. Choose the Bot Application template for your new project.
 
 ![Visual Studio create project](../media/connector-getstarted-create-project.png)
+
+> [!NOTE]
+> Visual Studio might say you need to [download and install IIS Express](https://www.microsoft.com/en-us/download/details.aspx?id=1038). 
+
 
 By using the Bot Application template, you're creating a project that already contains all of the
 components that are required to build a simple bot, including a reference to
@@ -111,6 +115,10 @@ Next, start the emulator and then connect to your bot in the emulator:
 Now that your bot is running locally and is connected to the emulator, test your bot by typing a few messages in the emulator.
 You should see that the bot responds to each message you send by echoing back your message prefixed with the text 'You sent'
 and ending with the text 'which was *##* characters', where *##* is the total number of characters in the message that you sent.
+
+
+> [!TIP]
+> In the emulator, click on any speech bubble in your conversation. Details about the message will appear in the Details pane, in JSON format.
 
 You've successfully created a bot by using the Bot Application template Bot Builder SDK for .NET!
 

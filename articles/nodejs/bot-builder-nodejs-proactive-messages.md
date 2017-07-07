@@ -96,8 +96,7 @@ function startProactiveDialog(address) {
 ```
 
 > [!NOTE]
-> The code sample above requires a custom file: **botadapter.js**. 
-> You can find a copy of that file [here](https://github.com/Microsoft/BotBuilder-Samples/blob/master/Node/core-proactiveMessages/startNewDialog/botadapter.js).
+> The code sample above requires a custom file, **botadapter.js**, which you can [download from GitHub](https://github.com/Microsoft/BotBuilder-Samples/blob/master/Node/core-proactiveMessages/startNewDialog/botadapter.js).
 
 The survey dialog controls the conversation until it finishes. 
 Then, it closes (by calling `session.endDialog()`), thereby returning control back to the previous dialog. 

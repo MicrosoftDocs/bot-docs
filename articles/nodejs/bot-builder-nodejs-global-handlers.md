@@ -96,7 +96,7 @@ option to your triggerAction() or cancelAction().
 // Add dialog to handle 'Buy' button click
 bot.dialog('buyButtonClick', [ ... waterfall steps ... ])
     .triggerAction({ 
-        matches: /(buy|add)\s.*shirt/i
+        matches: /(buy|add)\s.*shirt/i,
         confirmPrompt: "This will cancel adding the current item. Are you sure?" 
     })
     .cancelAction('cancelBuy', "Ok... Item canceled", { 
@@ -115,7 +115,7 @@ The [reloadAction][reloadAction] handler binds an action to a dialog that causes
 // Add dialog to handle 'Buy' button click
 bot.dialog('buyButtonClick', [ ... waterfall steps ... ])
     .triggerAction({ 
-        matches: /(buy|add)\s.*shirt/i
+        matches: /(buy|add)\s.*shirt/i,
         confirmPrompt: "This will cancel adding the current item. Are you sure?" 
     })
     .cancelAction('cancelBuy', "Ok... Item canceled", { 

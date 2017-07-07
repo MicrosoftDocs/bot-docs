@@ -6,8 +6,7 @@ ms.author: v-kibran
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
-ms.reviewer:
+ms.date: 06/21/2017
 ---
 
 # Basic features of FormFlow
@@ -347,6 +346,10 @@ Although basic FormFlow functionality is sufficient in some cases,
 you should consider the potential benefits of incorporating some of the more advanced 
 features of FormFlow into your bot. 
 For more information, see [Advanced features of FormFlow](bot-builder-dotnet-formflow-advanced.md) and [Customize a form using FormBuilder](bot-builder-dotnet-formflow-formbuilder.md).
+
+## Sample code
+
+[!include[Sample code](../includes/snippet-dotnet-formflow-samples.md)]
 
 ## Additional resources
 
