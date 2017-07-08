@@ -79,7 +79,7 @@ message.From = botAccount;
 message.Recipient = userAccount;
 message.Conversation = new ConversationAccount(id: conversationId);
 message.Text = "Hello, this is a notification";
-message.Locale = "en-Us";
+message.Locale = "en-us";
 await connector.Conversations.SendToConversationAsync((Activity)message);
 ```
 
