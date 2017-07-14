@@ -1,4 +1,4 @@
-# [Make bots smarter](../intelligent-bots.md)
+# [Make bots more intelligent](../intelligent-bots.md)
 # [Add language understanding](../cognitive-services-add-bot-language.md)
 # [Add knowledge extraction](../cognitive-services-add-bot-knowledge.md)
 # [Add speech recognition](../cognitive-services-add-bot-speech.md)
