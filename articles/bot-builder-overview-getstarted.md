@@ -7,7 +7,6 @@ manager: rstand
 ms.topic: get-started-article
 ms.prod: bot-framework
 ms.date: 
-ms.reviewer: 
 ---
 
 # Start building bots with the Bot Framework
