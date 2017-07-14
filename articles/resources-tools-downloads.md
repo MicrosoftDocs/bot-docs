@@ -36,6 +36,8 @@ Download Visual Studio project templates to accelerate bot development.
 * [Bot template for Visual Studio][bot-template] for developing bots with C#
 * [Cortana skill template for Visual Studio][cortana-template] for developing Cortana skills with C#
 
+[Note: for details on installing Visual Studio project templates in Visual Studio 2017 review this article https://docs.microsoft.com/en-us/visualstudio/ide/how-to-locate-and-organize-project-and-item-templates and for other versions see this other article https://msdn.microsoft.com/en-us/library/y3kkate1.aspx]
+
 ## Bot Builder SDK for Node.js
 The Bot Builder SDK for Node.js provides a familiar way for Node.js developers to write bots. You can use it to build a wide variety of conversational user interfaces, from simple prompts to free-form conversations. The Bot Builder SDK for Node.js uses restify, a popular framework for building web services, to create the bot's web server. The SDK is also compatible with Express.
 
