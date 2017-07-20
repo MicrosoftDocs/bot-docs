@@ -42,12 +42,16 @@ To ensure your bot addresses the top user scenarios, review the [design principl
 
 The [Bot Builder SDK for Node.js samples](bot-builder-nodejs-samples.md) demonstrate task-focused bots that show how to take advantage of features in the Bot Builder SDK for Node.js. You can use the samples to help you quickly get started with building great bots with rich capabilities.
 
+## Next steps
+> [!div class="nextstepaction"]
+> [Key concepts](bot-builder-nodejs-concepts.md)
+
 ## Additional resources
 
 The following task-focused how-to guides demonstrate various features of the Bot Builder SDK for Node.js.
 
 * [Respond to messages](bot-builder-nodejs-use-default-message-handler.md)
-* [Triggering actions](bot-builder-nodejs-global-handlers.md)
+* [Handle user actions](bot-builder-nodejs-dialog-actions.md)
 * [Recognize user intent](bot-builder-nodejs-recognize-intent.md)
 * [Send a rich card](bot-builder-nodejs-send-rich-cards.md)
 * [Send attachments](bot-builder-nodejs-send-receive-attachments.md)

@@ -64,109 +64,17 @@ bot.dialog('askName', [
 ]);
 ```
 
-### Null response
-
-Prompts return an [IPromptResult][IPromptResult] to the caller, where the user's response is contained within the [results.response][Result_Response] field. 
-
-At times, the `results.response` field may be `null`. The most common reasons for a `null` response are: 
-
-* The user cancelled an action by saying something such as "cancel" or "nevermind".
-* The user entered an improperly formatted response.
-* The user have exceeded the maximum number of retries.
-
-To determine the reason for a `null` response, examine the [ResumeReason][ResumeReason] that is returned in [result.resumed][Result_Resumed] field. For example:
-
-```javascript
-if(builder.ResumeReason[results.resumed] === "canceled"){
-    // The previous prompt was canceled. 
-}
-```
-
-Since there are a number of reasons that a prompt may return with a `null` response, it is good practice to always check for a `null` value in the [results.response][Result_Response] field. In cases where the response is `null`, you might choose to examine the `results.resumed` field to determine the reason for the `null` response so that your bot can handle each case specifically.
-
-The following code sample shows how to determine the meaning of the `results.resumed` field value in the context of the `greetings` dialog.
-
-```javascript
-// Ask the user for their name and greet them by name.
-bot.dialog('greetings', [
-    function (session) {
-        session.beginDialog('askName');
-    },
-    function (session, results) {
-        if(!results.response){
-            switch(builder.ResumeReason[results.resumed]){
-                case "canceled":
-                    session.endDialog("Ok. Canceled.");
-                    break;
-                case "back":
-                    session.send("Ok, Let's back up a step.");
-                    session.replaceDialog("greetings"); 
-                    break;
-                case "forward":
-                    session.endDialog("Ok. skipping.");
-                    break;
-                case "notCompleted":
-                    session.endDialog("Sorry, I didn't catch your name.");
-                    break;
-                // Other cases to catch...
-            }
-        }
-        else{
-            session.endDialog('Hello %s!', results.response);
-        }
-    }
-]);
-bot.dialog('askName', [
-    function (session) {
-        builder.Prompts.text(session, 'Hi! What is your name?');
-    },
-    function (session, results) {
-        if(results.response){
-            if(results.response.match(/^back$/i)){
-                // User request to go back a step
-                session.endDialogWithResult({
-                    response: null,
-                    resumed: builder.ResumeReason.back
-                });
-            }
-            else if(results.response.match(/^forward$/i)){
-                // User request to skip this step
-                session.endDialogWithResult({
-                    response: null,
-                    resumed: builder.ResumeReason.forward
-                });
-            }
-            else{
-                session.endDialogWithResult(results);
-            }
-        }
-        else{
-            // We didn't get a response
-            session.endDialogWithResult({
-                resumed: builder.ResumeReason.notCompleted
-            });
-        }
-    }
-])
-.cancelAction("cancel", "Type 'Hi' to continue.", 
-    {
-        matches: /^cancel$/i,
-        confirmPrompt: "Are you sure?"
-    }
-);
-```
-
 ## Prompt types
 The Bot Builder SDK for Node.js includes several different types of built-in prompts. 
 
-|**Prompt type**     | **Description**                              |     
-| -------------------| ---------------------------------------------
-|[Prompts.text][PromptsText] | Asks the user to enter a string of text. |     
-|[Prompts.confirm][PromptsConfirm] | Asks the user to confirm an action.| 
-|[Prompts.number][PromptsNumber] | Asks the user to enter a number.     |
-|[Prompts.time][PromptsTime] | Asks the user for a time or date/time.      |
-|[Prompts.choice][PromptsChoice] | Asks the user to choose from a list of options.    |
-|[Prompts.attachment][PromptsAttachment] | Asks the user to upload a picture or video.|       
+|**Prompt type**     | **Description** |     
+| ------------------ | --------------- |
+|[Prompts.text](#prompts.text) | Asks the user to enter a string of text. |     
+|[Prompts.confirm](#prompts.confirm) | Asks the user to confirm an action.| 
+|[Prompts.number](#prompts.number) | Asks the user to enter a number.     |
+|[Prompts.time](#prompts.time) | Asks the user for a time or date/time.      |
+|[Prompts.choice](#prompts.choice) | Asks the user to choose from a list of options.    |
+|[Prompts.attachment](#prompts.attachment) | Asks the user to upload a picture or video.|       
 
 The following sections provide additional details about each type of prompt.
 
@@ -260,6 +168,25 @@ builder.Prompts.choice(session, "Which color?", "red|green|blue", builder.ListSt
 builder.Prompts.choice(session, "Which color?", "red|green|blue", "button");
 ```
 
+Possible `ListStyle` enum values are as follows:
+| Index | Name | Description |
+| ---- | ---- | ---- |
+| 0 | none | No list is rendered. This is used when the list is included as part of the prompt. |
+| 1 | inline | Choices are rendered as an inline list of the form "1. red, 2. green, or 3. blue". |
+| 2 | list | Choices are rendered as a numbered list. |
+| 3 | button | Choices are rendered as buttons for channels that support buttons. For other channels they will be rendered as text. |
+| 4 | auto | The style is selected automatically based on the channel and number of options. | 
+
+You can access this enum from the `builder` object or you can specified the option by name. For example, both statements in the following code snippet accomplished the same thing.
+
+```javascript
+// ListStyle passed in as Enum
+builder.Prompts.choice(session, "Which color?", "red|green|blue", builder.ListStyle.button);
+
+// ListStyle passed in as name
+builder.Prompts.choice(session, "Which color?", "red|green|blue", "button");
+```
+
 To specify the list of options, you can use a pipe-delimited (`|`) string, an array of strings, or an object map.
 
 A pipe-delimited string: 
@@ -315,14 +242,12 @@ Use the [Prompts.attachment()][PromptsAttachment] method to ask the user to uplo
 builder.Prompts.attachment(session, "Upload a picture for me to transform.");
 ```
 
-## Additional resources
-- [Dialogs overview](bot-builder-nodejs-dialog-overview.md)
-- [Manage conversation flow](bot-builder-nodejs-dialog-manage-conversation-flow.md)
-- [Replace dialogs](bot-builder-nodejs-dialog-replace.md)
-- [Define conversation steps with waterfalls](bot-builder-nodejs-dialog-waterfall.md)
-- [Listen for messages by using actions](bot-builder-nodejs-global-handlers.md)
-- [Manage state data](bot-builder-nodejs-state.md)
-- [Prompts Reference interface][PromptsRef]
+## Next steps
+
+Now that you know how to step users through a waterfall and prompt them for information, lets take a look at ways to help you better manage the conversation flow.
+
+> [!div class="nextstepaction"]
+> [Manage conversation flow](bot-builder-nodejs-dialog-manage-conversation-flow.md)
 
 
 [SendAttachments]: bot-builder-nodejs-send-receive-attachments.md

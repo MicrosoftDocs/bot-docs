@@ -64,7 +64,7 @@ The Bot Builder SDK includes a [sample][DisambiguationSample] that demonstrates 
 
 ## Additional resources
 
-To learn more about the actions you can associate with a recognized intent, see [Managing conversation flow](bot-builder-nodejs-manage-conversation-flow.md) and [Trigger actions using global handlers](bot-builder-nodejs-global-handlers.md).
+To learn more about the actions you can associate with a recognized intent, see [Managing conversation flow](bot-builder-nodejs-manage-conversation-flow.md) and [Handle user actions](bot-builder-nodejs-dialog-actions.md).
 
 For more information on LUIS see the [LUIS documentation][LUISAzureDocs].
 

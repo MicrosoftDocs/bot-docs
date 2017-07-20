@@ -85,12 +85,5 @@ You've successfully created your first bot using the Bot Builder SDK for Node.js
 
 ## Next steps
 
-To learn more about building great bots with the Bot Framework, see the following articles:
-
-- [How the Bot Framework works](../overview-how-bot-framework-works.md)
-- [Principles of bot design](../bot-design-principles.md)
-- [Bot Builder SDK for Node.js](index.md)
-- [Deploy and publish bots](../publish-bot-overview.md)
-- [Bot Builder SDK for Node.js samples](bot-builder-nodejs-samples.md)
-- [Bot Framework FAQ](../resources-bot-framework-faq.md)
-
+> [!div class="nextstepaction"]
+> [Bot Builder SDK for Node.js](bot-builder-nodejs-overview.md)

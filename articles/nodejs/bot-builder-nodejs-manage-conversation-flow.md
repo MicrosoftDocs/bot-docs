@@ -63,7 +63,7 @@ bot.dialog('/profile', [
 
 ## Dialog handlers
 
-Message handlers for a dialog can take different forms. You can add an *action* to a dialog to listen for user input as it occurs. See [Listen for messages using actions](bot-builder-nodejs-global-handlers.md) for information on using actions in your bot.
+Message handlers for a dialog can take different forms. You can add an *action* to a dialog to listen for user input as it occurs. See [Handle user actions](bot-builder-nodejs-dialog-actions.md) for information on using actions in your bot.
 
 Another form is a *waterfall*, which is a common way to guide the user through a series of steps or prompt the user with a series of questions. See [waterfall prompt sequences](bot-builder-nodejs-prompts.md) for information on waterfalls.
 
@@ -100,7 +100,7 @@ var bot = new builder.UniversalBot(connector, function (session) {
 
 * [Ask questions](bot-builder-nodejs-prompts.md)
 
-* [Listen for messages using actions]( bot-builder-nodejs-global-handlers.md)
+* [Handle user actions](bot-builder-nodejs-dialog-actions.md)
 
 
 [DialogClass]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html
