@@ -2,7 +2,7 @@
 title: Create a bot with the Bot Builder SDK for .NET | Microsoft Docs
 description: Create a bot with the Bot Builder SDK for .NET, a powerful bot construction framework.
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: get-started-article
 ms.prod: bot-framework
@@ -125,16 +125,9 @@ You've successfully created a bot by using the Bot Application template Bot Buil
 
 ## Next steps
 
-In this tutorial, you created a simple bot by using the Bot Application template and the Bot Builder SDK for .NET
-and verified the bot's functionality by using the Bot Framework Emulator.
-If you'd like to share your bot with others, you'll need to
-[register](../portal-register-bot.md) it with the Bot Framework and
-[deploy](../deploy-bot-overview.md) it to the cloud.
+In this tutorial, you created a simple bot by using the Bot Application template and the Bot Builder SDK for .NET and verified the bot's functionality by using the Bot Framework Emulator.
 
-To learn more about building great bots with the Bot Framework, see the following articles:
+Next, learn about the key concepts of bot programming.
 
-- [How the Bot Framework works](../overview-how-bot-framework-works.md)
-- [Principles of bot design](../bot-design-principles.md)
-- [Bot Builder SDK for .NET](bot-builder-dotnet-overview.md)
-- [Deploy a bot to the cloud](../deploy-bot-overview.md)
-- [Bot Framework FAQ](../resources-bot-framework-faq.md)
+> [!div class="nextstepaction"]
+> [Key concepts in the Bot Builder SDK for .NET](bot-builder-dotnet-concepts.md)

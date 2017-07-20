@@ -2,7 +2,7 @@
 title: Dialogs overview | Microsoft Docs
 description: Learn how to use dialogs within the Bot Builder SDK for .NET to model conversations and manage conversation flow.
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
@@ -202,14 +202,13 @@ If `Chain.Switch<T, R>` returns a nested `IDialog<IDialog<T>>`, then the inner `
 
 [!code-csharp[Chain.Switch](../includes/code/dotnet-dialogs.cs#chain5)]
 
-## Additional resources
+## Next steps
 
-- [Key concepts in the Bot Builder SDK for .NET](bot-builder-dotnet-concepts.md)
-- [Design and control conversation flow](../bot-design-conversation-flow.md)
-- [Manage conversation flow with dialogs](bot-builder-dotnet-manage-conversation-flow.md)
-- [Enable language understanding with LUIS](bot-builder-dotnet-luis-dialogs.md)
-- [Bot Framework troubleshooting guide](../troubleshoot-general-problems.md)
-- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
+Dialogs manage conversation flow between a bot and a user. A dialog defines how to interact with a user. A bot can use many dialogs organized in stacks to guide the conversation with the user. In the next section, see how the dialog stack grows and shrinks as you create and dismiss dialogs in the stack.
+
+> [!div class="nextstepaction"]
+> [Manage conversation flow with dialogs](bot-builder-dotnet-manage-conversation-flow.md)
+
 
 [builderLibrary]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs?view=botbuilder-3.8
 

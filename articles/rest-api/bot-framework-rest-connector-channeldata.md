@@ -2,7 +2,7 @@
 title: Implement channel-specific functionality | Microsoft Docs
 description: Learn how to implement channel-specific functionality using the Bot Connector API. 
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

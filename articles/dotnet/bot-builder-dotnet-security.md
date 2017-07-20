@@ -2,7 +2,7 @@
 title: Secure your bot | Microsoft Docs
 description: Learn how to secure your bot by using HTTPS and Bot Framework Authentication.
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

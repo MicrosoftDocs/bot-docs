@@ -2,7 +2,7 @@
 title: Send and receive messages | Microsoft Docs
 description: Learn how to send and receive messages using the Bot Connector service. 
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

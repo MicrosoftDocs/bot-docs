@@ -2,7 +2,7 @@
 title: Key concepts in the Bot Framework Direct Line API 3.0  | Microsoft Docs
 description: Understand key concepts in the Bot Framework Direct Line API 3.0. 
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

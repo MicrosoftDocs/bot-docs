@@ -2,7 +2,7 @@
 title: Create messages with the Bot Connector API  | Microsoft Docs
 description: Learn about commonly-used message properties within the Bot Connector API. 
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

@@ -23,25 +23,23 @@ If you don't have a GroupMe account, [sign up for a new account](https://web.gro
 
 [Create a GroupMe application](https://dev.groupme.com/applications/new) for your bot.
 
-Use this callback URL: <code>https://groupme.botframework.com/Home/Login</code>
+Use this callback URL: `https://groupme.botframework.com/Home/Login`
 
 ![Create app](~/media/channels/GM-StepApp.png)
 
 ## Gather credentials
 
-Copy the **Client ID** section from the redirect URL.
+1. In the **Redirect URL** field, copy the value after **client_id=**.
+2. Copy the **Access Token** value.
 
-![Copy client ID](~/media/channels/GM-StepClientId.png)
+![Copy client ID and access token](~/media/channels/GM-StepClientId.png)
+
 
 ## Submit credentials
 
-1. Paste the Client ID you just copied into the **Client ID** field.
-2. Click **Submit GroupMe Credentials**.
-![Enter credentials](~/media/channels/GM-StepApp.png)
+1. On dev.botframework.com, paste the **client_id** value you just copied into the **Client ID** field.
+2. Paste the **Access Token** value into the **Access Token** field.
+2. Click **Save**.
 
-## Enable the bot
-Check **Enable this bot on GroupMe**. Then click **I'm done configuring GroupMe**.
-
-When you have completed these steps, your bot will be successfully configured to communicate with users in GroupMe.
-
+![Enter credentials](~/media/channels/GM-StepClientIDToken.png)
 

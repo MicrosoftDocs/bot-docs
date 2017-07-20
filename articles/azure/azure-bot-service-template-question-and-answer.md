@@ -2,7 +2,7 @@
 title: Create a question and answer bot using Azure Bot Service | Microsoft Docs
 description: Learn how to create a question and answer bot using Azure Bot Service.
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

@@ -2,7 +2,7 @@
 title: Bot Builder REST APIs  | Microsoft Docs
 description: Get started with the Bot Framework REST APIs that can be used to build bots and clients that connect to bots.
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

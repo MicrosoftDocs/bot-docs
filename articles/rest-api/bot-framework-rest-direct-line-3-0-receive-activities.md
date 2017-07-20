@@ -2,7 +2,7 @@
 title: Receive activities from the bot | Microsoft Docs
 description: Learn how to receive activities from the bot using Direct Line API v3.0. 
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

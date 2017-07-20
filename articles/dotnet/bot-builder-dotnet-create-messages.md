@@ -2,7 +2,7 @@
 title: Create messages with the Bot Builder SDK for .NET | Microsoft Docs
 description: Learn about commonly-used message properties within the Bot Builder SDK for .NET.
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
@@ -147,6 +147,13 @@ The `Speak` property of a message activity can be used to specify the text to be
 ## Suggested actions
 
 The `SuggestedActions` property of a message activity can be used to present buttons that the user can tap to provide input. Unlike buttons that appear within rich cards (which remain visable and accessible to the user even after being tapped), buttons that appear within the suggested actions pane will disappear after the user makes a selection. For details, see [Add suggested actions to messages](bot-builder-dotnet-add-suggested-actions.md).
+
+## Next steps
+
+A bot and a user can send messages to each other. When the message is more complex, your bot can send a rich card in a message to the user. Rich cards cover many presentation and interaction scenarios commonly needed in most bots.
+
+> [!div class="nextstepaction"]
+> [Send a rich card in a message](bot-builder-dotnet-add-rich-card-attachments.md)
 
 ## Additional resources
 

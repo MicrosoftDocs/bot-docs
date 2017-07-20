@@ -2,7 +2,7 @@
 title: Authenticate requests | Microsoft Docs
 description: Learn how to authenticate API requests in the Bot Connector API and Bot State API. 
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
