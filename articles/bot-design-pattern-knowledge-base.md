@@ -206,10 +206,8 @@ you could trigger a [BasicQnAMakerDialog][qnamakerTemplate] to initiate the proc
 
 ## Sample code
 
-For a complete sample that shows how to create a basic knowledge bot using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/sample-KnowledgeBot" target="_blank">Knowledge Bot sample</a> in GitHub. 
-For a complete samples that show how to create more complex knowledge bots using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples/SearchPoweredBots" target="_blank">Search-powered Bots sample</a> in GitHub.
-
-For a complete sample that shows how to create a basic knowledge bot using the Bot Builder SDK for Node.js, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/sample-knowledgeBot" target="_blank">Knowledge Bot sample</a> in GitHub.
+- For a sample that shows how to create a basic knowledge bot using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/sample-KnowledgeBot" target="_blank">Knowledge Bot sample</a> in GitHub. 
+- For a sample that shows how to create more complex knowledge bots using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/demo-Search" target="_blank">Search-powered Bots sample</a> in GitHub.
 
 ## Additional resources
 
