@@ -2,7 +2,7 @@
 title: API reference - Direct Line API 3.0 | Microsoft Docs
 description: Learn about headers, HTTP status codes, schema, operations, and objects in Direct Line API 3.0. 
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

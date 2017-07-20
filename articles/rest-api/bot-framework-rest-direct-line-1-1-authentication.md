@@ -2,7 +2,7 @@
 title: Authentication | Microsoft Docs
 description: Learn how to authenticate API requests in Direct Line API v1.1. 
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

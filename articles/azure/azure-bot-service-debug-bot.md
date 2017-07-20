@@ -2,7 +2,7 @@
 title: Debug a bot built using Azure Bot Service | Microsoft Docs
 description: Learn how to debug a bot built using Azure Bot Service.
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

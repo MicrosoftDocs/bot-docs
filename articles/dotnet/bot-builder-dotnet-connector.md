@@ -2,7 +2,7 @@
 title: Send and receive activities | Microsoft Docs
 description: Learn how to exchange information with a user across various channels by using the Connector service via the Bot Builder SDK for .NET.
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
