@@ -148,11 +148,15 @@ Under the hood, the Bot Builder SDK for Node.js stores state data using the Bot 
 
 With either of these data storage options, the mechanism for setting and persisting data via the Bot Framework SDK for Node.js remains the same as described previously in this article.
 
+## Next steps
+
+Now that you understand how to manage user state data, let's take a look at how you can use it to better manage conversation flow.
+
+> [!div class="nextstepaction"]
+> [Manage conversation flow](bot-builder-nodejs-dialog-manage-conversation-flow.md).
+
 ## Additional resources
 - [Prompt user for input](bot-builder-nodejs-dialog-prompt.md)
-- [Define conversation step with waterfall](bot-builder-nodejs-dialog-waterfall.md)
-- [Listen for messages by using actions](bot-builder-nodejs-global-handlers.md)
-- [Manage conversation flow](bot-builder-nodejs-dialog-manage-conversation-flow.md)
 
 [userDataURL]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#userdata
 [conversationDataURL]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#conversationdata

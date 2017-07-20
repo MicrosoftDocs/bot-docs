@@ -57,6 +57,13 @@
 ### [SDK reference](/dotnet/api/?view=botbuilder-3.8)
 ## [Develop with Node.js](~/nodejs/bot-builder-nodejs-overview.md)
 ### [Key concepts](~/nodejs/bot-builder-nodejs-concepts.md)
+### Dialogs
+#### [Dialogs overview](~/nodejs/bot-builder-nodejs-dialog-overview.md)
+#### [Define conversation steps](~/nodejs/bot-builder-nodejs-dialog-waterfall.md)
+#### [Prompt for user input](~/nodejs/bot-builder-nodejs-dialog-prompt.md)
+#### [Manage conversation flow](~/nodejs/bot-builder-nodejs-dialog-manage-conversation-flow.md)
+#### [Replace dialogs](~/nodejs/bot-builder-nodejs-dialog-replace.md)
+#### [Handle user actions](~/nodejs/bot-builder-nodejs-dialog-actions.md)
 ### Messages
 #### [Send and receive messages](~/nodejs/bot-builder-nodejs-use-default-message-handler.md) 
 #### [Send and receive attachments](~/nodejs/bot-builder-nodejs-send-receive-attachments.md) 
@@ -67,17 +74,10 @@
 #### [Add suggested actions to messages](~/nodejs/bot-builder-nodejs-send-suggested-actions.md)
 #### [Send a typing indicator](~/nodejs/bot-builder-nodejs-send-typing-indicator.md)
 #### [Intercept messages](~/nodejs/bot-builder-nodejs-intercept-messages.md)
-### Dialogs
-#### [Dialogs overview](~/nodejs/bot-builder-nodejs-dialog-overview.md)
-#### [Prompt for user input](~/nodejs/bot-builder-nodejs-dialog-prompt.md)
-#### [Define conversation steps](~/nodejs/bot-builder-nodejs-dialog-waterfall.md)
-#### [Manage conversation flow](~/nodejs/bot-builder-nodejs-dialog-manage-conversation-flow.md)
-#### [Replace dialogs](~/nodejs/bot-builder-nodejs-dialog-replace.md)
 ### Channels
 #### [Build a Cortana skill](~/nodejs/bot-builder-nodejs-cortana-skill.md)
 #### [Conduct Skype calls](~/nodejs/bot-builder-nodejs-conduct-audio-calls.md)
 ### [Manage state data](~/nodejs/bot-builder-nodejs-state.md)
-### [Listen for messages](~/nodejs/bot-builder-nodejs-global-handlers.md)
 ### [Recognize user intent](~/nodejs/bot-builder-nodejs-recognize-intent.md)
 ### [Handle user and conversation events](~/nodejs/bot-builder-nodejs-handle-conversation-events.md)
 ### [Support localization](~/nodejs/bot-builder-nodejs-localization.md)

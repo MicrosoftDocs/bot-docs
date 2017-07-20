@@ -38,7 +38,7 @@ Dialogs help you organize the conversational logic in your bot and are fundament
 
 ## Actions
 You'll want to design your bot to be able to handle interruptions like requests for cancellation or help at any time during the conversation flow. The Bot Builder SDK for Node.js provides global message handlers that trigger actions like cancellation or invoking other dialogs. 
- See <!--[Handling cancel](bot-builder-nodejs-manage-conversation-flow.md#handling-cancel), [Confirming interruptions](bot-builder-nodejs-manage-conversation-flow.md#confirming-interruptions) and-->[Listen for messages using actions](bot-builder-nodejs-global-handlers.md) for examples of how to use [triggerAction][triggerAction] handlers.
+ See <!--[Handling cancel](bot-builder-nodejs-manage-conversation-flow.md#handling-cancel), [Confirming interruptions](bot-builder-nodejs-manage-conversation-flow.md#confirming-interruptions) and-->[Handle user actions](bot-builder-nodejs-dialog-actions.md) for examples of how to use [triggerAction][triggerAction] handlers.
 
 
 ## Recognizers
@@ -54,7 +54,7 @@ A key to good bot design is to track the context of a conversation, so that your
 Bots built using Bot Builder SDK are designed to be be stateless so that they can easily be scaled to run across multiple compute nodes. The Bot Framework provides a storage system that stores bot data, so that the bot web service can be scaled. Because of that you should generally avoid saving state using a global variable or function closure. Doing so will create issues when you want to scale out your bot. Instead, use the following properties of your bot's [session][Session] object to save data relative to a user or conversation:
 
 * **userData** stores information globally for the user across all conversations.
-* **conversationData** stores information globally for a single conversation. This data is visible to everyone within the conversation so exercise with care when storing data to this property. It’s disabled by default and needs to be enabled using the bot's [persistConversationData][PersistConversationData] setting.
+* **conversationData** stores information globally for a single conversation. This data is visible to everyone within the conversation so exercise with care when storing data to this property. It’s enabled by default and you can disable it using the bot's [persistConversationData][PersistConversationData] setting.
 * **privateConversationData** stores information globally for a single conversation but it is private data specific to the current user. This data spans all dialogs so it’s useful for storing temporary state that you want cleaned up when the conversation ends.
 * **dialogData** persists information for a single dialog instance. This is essential for storing temporary information in between the steps of a [waterfall](bot-builder-nodejs-dialog-waterfall.md) in a dialog.
 
@@ -66,24 +66,10 @@ Bot Builder lets you use LUIS to add natural language understanding to your bot 
 
 * [Microsoft LUIS Tutorial][LUISVideo] (video)
 
-## Additional resources
+## Next steps
+> [!div class="nextstepaction"]
+> [Dialogs overview](bot-builder-nodejs-dialog-overview.md)
 
-The following articles walk you through building your first bot and adding basic conversational abilities to it.
-
-* [Create a bot with the Bot Builder SDK for Node.js](bot-builder-nodejs-quickstart.md)
-* [Send and receive messages](bot-builder-nodejs-use-default-message-handler.md)
-* [Prompt users for input](bot-builder-nodejs-prompts.md)
-* [Listen for messages by using actions](bot-builder-nodejs-global-handlers.md)
-
-The following task-focused articles demonstrate features of the Bot Builder SDK for Node.js.
-
-* [Recognize user intent](bot-builder-nodejs-recognize-intent.md)
-* [Add rich cards to messages](bot-builder-nodejs-send-rich-cards.md)
-* [Send and receive attachments](bot-builder-nodejs-send-receive-attachments.md)
-* [Add speech to messages](bot-builder-nodejs-text-to-speech.md)
-* [Add suggested actions to messages](bot-builder-nodejs-send-suggested-actions.md)
-* [Saving user data](bot-builder-nodejs-save-user-data.md)
-* [Send a typing indicator](bot-builder-nodejs-send-typing-indicator.md)
 
 
 [PersistConversationData]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iuniversalbotsettings.html#persistconversationdata
@@ -94,11 +80,10 @@ The following task-focused articles demonstrate features of the Bot Builder SDK 
 
 [Session]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html
 [SessionSend]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#send
-[SessionSendTyping]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#sendtyping
+
 [triggerAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#triggeraction
 [waterfall]: bot-builder-nodejs-prompts.md
-[SaveUserData]: bot-builder-nodejs-save-user-data.md
-[GetStarted]: bot-builder-nodejs-quickstart.md
+
 [RespondMessages]:bot-builder-nodejs-use-default-message-handler.md
 
 [LUISRecognizer]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.luisrecognizer

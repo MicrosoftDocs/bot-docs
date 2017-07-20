@@ -325,10 +325,9 @@ bot.dialog("addDinnerItem", [
 
 By using the `session.cancelDialog` method in this way, you can implement whatever conversation flow your bot requires.
 
-## Additional resources
-- [Dialogs overview](bot-builder-nodejs-dialog-overview.md)
-- [Manage conversation flow](bot-builder-nodejs-dialog-manage-conversation-flow.md)
-- [Prompt for user input](bot-builder-nodejs-dialog-prompt.md)
-- [Define conversation steps with waterfalls](bot-builder-nodejs-dialog-waterfall.md)
-- [Listen for messages by using actions](bot-builder-nodejs-global-handlers.md)
-- [Manage state data](bot-builder-nodejs-state.md)
+## Next steps
+
+As you can see, to replace dialogs on the stack, you use various types of **actions** to accomplish that task. Actions gives you great flexibilities in managing conversation flow. Let's take a closer look at **actions** and how to better handle user actions.
+
+> [!div class="nextstepaction"]
+> [Handle user actions](bot-builder-nodejs-dialog-actions.md)
