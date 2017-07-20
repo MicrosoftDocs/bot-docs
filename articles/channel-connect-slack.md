@@ -25,9 +25,10 @@ Enter an App Name and select a Development Slack Team. If you are not already a 
 
 ![Create app](~/media/channels/slack-CreateApp.png)
 
-Click Create App. Slack will create your app and generate a Client ID and Client Secret.
+Click **Create App**. Slack will create your app and generate a Client ID and Client Secret.
 
 ## Add a new Redirect URL
+
 Next you will add a new Redirect URL.
 
 1. Select the **OAuth & Permissions** tab. 
@@ -38,7 +39,28 @@ Next you will add a new Redirect URL.
 
 ![Add Redirect URL](~/media/channels/slack-RedirectURL.png)
 
+## Subscribe to Bot Events
+
+By subscribing to bot events, your app will be notified of user activities at the URL you specify.
+
+1. Select the **Event Subscriptions** tab.
+2. Click **Enable Events** to **On**.
+3. In **Request URL**, enter this URL, but replace `{YourBotHandle}` with your bot handle.
+        `https://slack.botframework.com/api/Events/{YourBotHandle}`
+4. In **Subscribe to Bot Events**, click **Add Bot User Event**.
+5. In the list of events, click Add **Bot User Event** to subscribe to these six event types:
+    * `member_joined_channel`
+    * `member_left_channel`
+    * `message.channels`
+    * `message.groups`
+    * `message.im`
+    * `message.mpim`
+6. Click **Save Changes**.
+
+![Subscribe to Events](~/media/channels/slack-EnableEvents.png)
+
 ## Create a Slack Bot User
+
 Adding a Bot User allows you to assign a username for your bot and choose whether it is always shown as online.
 
 1. Select the **Bot Users** tab.
@@ -46,13 +68,13 @@ Adding a Bot User allows you to assign a username for your bot and choose whethe
 
 ![Create bot](~/media/channels/slack-CreateBot.png)
 
-Click **Add Bot User** to validate your settings, and then click **Save Changes**. 
+Click **Add Bot User** to validate your settings, click **Always Show My Bot as Online** to **On**, and then click **Save Changes**.
 
 ![Create bot](~/media/channels/slack-CreateApp-AddBotUser.png)
 
 ## Add and Configure Interactive Messages (optional)
 
-If your bot will use Slack-specific functionality such as buttons, select the **Interactive Messages** tab and click **Enable Interactive Messages.
+If your bot will use Slack-specific functionality such as buttons, select the **Interactive Messages** tab and click **Enable Interactive Messages**.
 
 1. Enter https://slack.botframework.com/api/Actions as the Request URL for Interactive Messages.
 2. Click the **Enable Interactive Messages** button and **Save changes** once the URL is successfully validated.
@@ -60,7 +82,7 @@ If your bot will use Slack-specific functionality such as buttons, select the **
 ![Enable messages](~/media/channels/slack-MessageURL.png)
 
 ## Gather credentials
-Select the **Basic Information** tab and scroll to the **App Credentials** section. The Client ID, Client Secret and optional Verification Token required for configuration of your Slack bot are displayed.
+Select the **Basic Information** tab and scroll to the **App Credentials** section. The Client ID, Client Secret, and Verification Token required for configuration of your Slack bot are displayed.
 
 ![Gather credentials](~/media/channels/slack-AppCredentials.png)
 
