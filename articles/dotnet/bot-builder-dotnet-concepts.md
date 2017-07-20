@@ -61,15 +61,12 @@ transported over the wire.
 You should ensure that your bot's endpoint can only be called by the Bot Framework Connector service. 
 For more information on this topic, see [Secure your bot](bot-builder-dotnet-security.md).
 
-## Additional resources
+## Next steps
 
-- [Bot Builder SDK for .NET](bot-builder-dotnet-overview.md)
-- [Create a bot with the Bot Builder SDK for .NET](bot-builder-dotnet-quickstart.md)
-- [Activities overview](bot-builder-dotnet-activities.md)
-- [Dialogs](bot-builder-dotnet-dialogs.md)
-- [Design and control conversation flow](../bot-design-conversation-flow.md)
-- [Secure your bot](bot-builder-dotnet-security.md)
-- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
+Now you know the concepts behind every bot. You can quickly [build a bot using Visual Studio](bot-builder-dotnet-quickstart.md) using a template. Next, study each key concept in more detail, starting with dialogs.
+
+> [!div class="nextstepaction"]
+> [Dialogs in the Bot Builder SDK for .NET](bot-builder-dotnet-dialogs.md)
 
 [connectorLibrary]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector?view=botbuilder-3.8
 

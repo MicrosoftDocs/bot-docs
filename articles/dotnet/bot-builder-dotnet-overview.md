@@ -40,8 +40,8 @@ conversation, providing help, navigation, clarification, and confirmation as nee
 The SDK is available as a NuGet package and as open source on <a href="https://github.com/Microsoft/BotBuilder" target="_blank">GitHub</a>.
 
 > [!IMPORTANT]
-> The Bot Builder SDK for .NET supports .NET Framework 4.6 or newer. If you are adding the SDK to an existing project
-> targeting a lower version of the .NET Framework, you will need to update your project to target .NET Framework 4.6.
+> The Bot Builder SDK for .NET requires .NET Framework 4.6 or newer. If you are adding the SDK to an existing project
+> targeting a lower version of the .NET Framework, you will need to update your project to target .NET Framework 4.6 first.
 
 To install the SDK within a Visual Studio project, complete the following steps:
 
@@ -51,23 +51,7 @@ To install the SDK within a Visual Studio project, complete the following steps:
 
 ## Get code samples
 
-The <a href="https://github.com/Microsoft/BotBuilder" target="_blank">BotBuilder</a> GitHub repository 
-contains numerous code samples that show how to build bots using the Bot Builder SDK for .NET. 
-To access these code samples, clone the repository and navigate to the **Samples** folder.
-
-```
-git clone https://github.com/Microsoft/BotBuilder.git
-cd BotBuilder/CSharp/Samples
-```
-
-The <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">BotBuilder-Samples</a> GitHub repository 
-contains numerous task-focused code samples that show how to use various features of the Bot Builder SDK for .NET. 
-To access these code samples, clone the repository and navigate to the **CSharp** folder.
-
-```
-git clone https://github.com/Microsoft/BotBuilder-Samples.git
-cd BotBuilder-Samples/CSharp
-```
+This SDK includes [sample source code](bot-builder-dotnet-samples.md) that uses the features of the Bot Builder SDK for .NET.
 
 ## Next steps
 

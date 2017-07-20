@@ -351,9 +351,15 @@ For more information, see [Advanced features of FormFlow](bot-builder-dotnet-for
 
 [!include[Sample code](../includes/snippet-dotnet-formflow-samples.md)]
 
+## Next steps
+
+FormFlow simplifies dialog development. The advanced features of FormFlow let you customize how a FormFlow object behaves.
+
+> [!div class="nextstepaction"]
+> [Advanced features of FormFlow](bot-builder-dotnet-formflow-advanced.md)
+
 ## Additional resources
 
-- [Advanced features of FormFlow](bot-builder-dotnet-formflow-advanced.md)
 - [Customize a form using FormBuilder](bot-builder-dotnet-formflow-formbuilder.md)
 - [Localize form content](bot-builder-dotnet-formflow-localize.md)
 - [Define a form using JSON schema](bot-builder-dotnet-formflow-json-schema.md)
