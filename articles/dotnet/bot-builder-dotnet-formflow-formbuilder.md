@@ -2,7 +2,7 @@
 title: Customize a form using FormBuilder | Microsoft Docs
 description: Learn how to dynamically change and customize the conversation flow and contents using FormBuilder for the Bot Builder SDK for .NET.
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

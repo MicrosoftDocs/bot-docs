@@ -2,7 +2,7 @@
 title: Deploy a bot to the cloud | Microsoft Docs
 description: Learn how to deploy a bot to Azure.
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

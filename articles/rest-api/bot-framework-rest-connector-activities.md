@@ -2,7 +2,7 @@
 title: Activities overview  | Microsoft Docs
 description: Learn about the different activity types available within the Bot Connector service. 
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

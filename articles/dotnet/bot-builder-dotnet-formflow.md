@@ -2,7 +2,7 @@
 title: Basic features of FormFlow | Microsoft Docs
 description: Learn how to guide conversation flows using FormFlow within the Bot Builder SDK for .NET.
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

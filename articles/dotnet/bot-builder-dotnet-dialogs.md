@@ -2,7 +2,7 @@
 title: Dialogs overview | Microsoft Docs
 description: Learn how to use dialogs within the Bot Builder SDK for .NET to model conversations and manage conversation flow.
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

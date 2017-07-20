@@ -2,7 +2,7 @@
 title: Create messages with the Bot Builder SDK for .NET | Microsoft Docs
 description: Learn about commonly-used message properties within the Bot Builder SDK for .NET.
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

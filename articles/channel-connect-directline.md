@@ -2,7 +2,7 @@
 title: Connect a bot to Direct Line | Microsoft Docs
 description: Learn how to configure a bot's connection to Direct Line.
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

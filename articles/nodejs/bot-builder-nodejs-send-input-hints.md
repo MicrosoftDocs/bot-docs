@@ -2,7 +2,7 @@
 title: Add input hints to messages | Microsoft Docs
 description: Learn how to add input hints to messages using the Bot Builder SDK for .NET.
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

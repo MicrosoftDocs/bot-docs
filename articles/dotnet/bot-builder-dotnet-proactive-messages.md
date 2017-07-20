@@ -2,7 +2,7 @@
 title: Send proactive messages | Microsoft Docs
 description: Learn how to send proactive messages using the Bot Builder SDK for .NET.
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

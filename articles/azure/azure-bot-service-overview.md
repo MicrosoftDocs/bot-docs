@@ -2,7 +2,7 @@
 title: Azure Bot Service | Microsoft Docs
 description: Learn about the Azure Bot Service.
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework

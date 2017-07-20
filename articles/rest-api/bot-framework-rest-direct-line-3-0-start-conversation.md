@@ -2,7 +2,7 @@
 title: Start a conversation | Microsoft Docs
 description: Learn how to start a conversation using Direct Line API v3.0. 
 author: kbrandl
-ms.author: v-kibran
+ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
