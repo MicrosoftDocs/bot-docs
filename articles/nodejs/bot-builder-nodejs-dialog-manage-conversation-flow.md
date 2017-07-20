@@ -155,7 +155,7 @@ With this technique, you can separate the conversation flow from the task logic.
 
 In the process of guiding the user through a series of tasks, if the user has questions or wants to request additional information before answering, how would you handle those requests? For example, regardless of where the user is in the conversation, how would the bot respond if the user enters "Help", "Support" or "Cancel"? What if the user wants additional information about a step? What happens if the user changes their mind and wants to abandon the current task to start a completely different task?
 
-The Bot Builder SDK for Node.js allows a bot to listen for certain input within a global context or within a local context in the scope of the current dialog. These inputs are called [actions](bot-builder-nodejs-global-handlers.md), which allow the bot to listen for user input based on a `matches` clause. It's up to the bot to decide how to react to specific user inputs.
+The Bot Builder SDK for Node.js allows a bot to listen for certain input within a global context or within a local context in the scope of the current dialog. These inputs are called [actions](bot-builder-nodejs-dialog-actions.md), which allow the bot to listen for user input based on a `matches` clause. It's up to the bot to decide how to react to specific user inputs.
 
 ### Handle global action
 
@@ -222,7 +222,7 @@ bot.dialog('partySizeHelp', function(session, args, next) {
 
 In this example, whenever the user enters "help", the bot will push the `partySizeHelp` dialog onto the stack. That dialog sends a help message to the user and then ends the dialog, returning control back to the `askForPartySize` dialog which reprompts the user for a party size.
 
-It is important to note that this context-sensitive help is only executed when the user is in the `askForPartySize` dialog. Otherwise, the general help message from the `triggerAction` will execute instead. In other words, the local `matches` clause always takes precedence over the global `matches` clause. For example, if a `beginDialogAction` matches for **help**, then the matches for **help** in the `triggerAction` will not be executed. 
+It is important to note that this context-sensitive help is only executed when the user is in the `askForPartySize` dialog. Otherwise, the general help message from the `triggerAction` will execute instead. In other words, the local `matches` clause always takes precedence over the global `matches` clause. For example, if a `beginDialogAction` matches for **help**, then the matches for **help** in the `triggerAction` will not be executed. For more information, see [Action precedence](bot-builder-nodejs-dialog-actions.md#action-precedence).
 
 ### Change the topic of conversation
 
@@ -360,10 +360,10 @@ bot.dialog('dinnerOrder', [
 
 Since ending a conversation with `session.endConversation` or `endConversationAction` will clear the dialog stack and force the user to start over, you should include a `confirmPrompt` to ensure that the user really wants to do so.
 
-## Additional resources
-- [Dialogs overview](bot-builder-nodejs-dialog-overview.md)
-- [Replace dialogs](bot-builder-nodejs-dialog-replace.md)
-- [Prompt for user input](bot-builder-nodejs-dialog-prompt.md)
-- [Define conversation steps with waterfalls](bot-builder-nodejs-dialog-waterfall.md)
-- [Listen for messages by using actions](bot-builder-nodejs-global-handlers.md)
-- [Manage state data](bot-builder-nodejs-state.md)
+## Next steps
+
+In this article, you explore ways to manage conversations that are sequential in nature. What if you want to repeat a dialog or use looping pattern in your conversation? Let's see how you can do that by replacing dialogs on the stack.
+
+> [!div class="nextstepaction"]
+> [Replace dialogs](bot-builder-nodejs-dialog-replace.md)
+

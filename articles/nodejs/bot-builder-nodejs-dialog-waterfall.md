@@ -185,10 +185,9 @@ bot.dialog('dinnerOrder', [
 );
 ```
 
-## Additional resources
-- [Dialogs overview](bot-builder-nodejs-dialog-overview.md)
-- [Manage conversation flow](bot-builder-nodejs-dialog-manage-conversation-flow.md)
-- [Replace dialogs](bot-builder-nodejs-dialog-replace.md)
-- [Prompt for user input](bot-builder-nodejs-dialog-prompt.md)
-- [Listen for messages by using actions](bot-builder-nodejs-global-handlers.md)
-- [Manage state data](bot-builder-nodejs-state.md)
+## Next steps
+
+Using waterfall, you can collect information from the user with *prompts*. Let's dive into how you can prompt user for input. 
+
+> [!div class="nextstepaction"]
+> [Prompt user for input](bot-builder-nodejs-dialog-prompt.md)
