@@ -1,3 +1,2 @@
-For complete samples that show how to implement FormFlow using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples/SimpleSandwichBot" target="_blank">Simple Sandwich Bot sample</a> and the <a href="https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples/AnnotatedSandwichBot" target="_blank">Annotated Sandwich Bot sample</a> in GitHub.
-
+For complete samples that show how to implement FormFlow using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-MultiDialogs" target="_blank">Multi-Dialog Bot sample</a> and the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/demo-ContosoFlowers" target="_blank">Contoso Flowers Bot sample</a> in GitHub.
 
