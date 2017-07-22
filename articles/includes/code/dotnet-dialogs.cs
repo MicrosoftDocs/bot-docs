@@ -10,6 +10,7 @@ public class EchoDialog : IDialog<object>
     public async Task StartAsync(IDialogContext context)
     {
         context.Wait(MessageReceivedAsync);
+        return Task.CompletedTask;
     }
 
     public async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> argument)
