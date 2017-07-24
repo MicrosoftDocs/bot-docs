@@ -48,7 +48,7 @@ var bot = new builder.UniversalBot(connector, [
     },
     function (session, results) {
         session.dialogData.partySize = results.response;
-        builder.Prompts.text(session, "Who's name will this reservation be under?");
+        builder.Prompts.text(session, "Whose name will this reservation be under?");
     },
     function (session, results) {
         session.dialogData.reservationName = results.response;
