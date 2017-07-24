@@ -6,7 +6,7 @@ manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 07/04/2017
-
+ROBOTS: NoIndex, NoFollow
 ---
 
 # Create a new Conversation Designer bot

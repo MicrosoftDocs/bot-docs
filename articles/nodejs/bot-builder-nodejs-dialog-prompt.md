@@ -69,12 +69,12 @@ The Bot Builder SDK for Node.js includes several different types of built-in pro
 
 |**Prompt type**     | **Description** |     
 | ------------------ | --------------- |
-|[Prompts.text](#prompts.text) | Asks the user to enter a string of text. |     
-|[Prompts.confirm](#prompts.confirm) | Asks the user to confirm an action.| 
-|[Prompts.number](#prompts.number) | Asks the user to enter a number.     |
-|[Prompts.time](#prompts.time) | Asks the user for a time or date/time.      |
-|[Prompts.choice](#prompts.choice) | Asks the user to choose from a list of options.    |
-|[Prompts.attachment](#prompts.attachment) | Asks the user to upload a picture or video.|       
+|[Prompts.text](#promptstext) | Asks the user to enter a string of text. |     
+|[Prompts.confirm](#promptsconfirm) | Asks the user to confirm an action.| 
+|[Prompts.number](#promptsnumber) | Asks the user to enter a number.     |
+|[Prompts.time](#promptstime) | Asks the user for a time or date/time.      |
+|[Prompts.choice](#promptschoice) | Asks the user to choose from a list of options.    |
+|[Prompts.attachment](#promptsattachment) | Asks the user to upload a picture or video.|       
 
 The following sections provide additional details about each type of prompt.
 

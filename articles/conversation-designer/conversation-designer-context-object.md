@@ -6,7 +6,7 @@ manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 07/11/2017
-
+ROBOTS: NoIndex, NoFollow
 ---
 # API Reference
 
