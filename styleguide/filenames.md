@@ -5,9 +5,9 @@ URLs must be consistent, hierarchical, and as shallow as possible to perform wel
 To ensure well-structured URLs, use one of following URL patterns:
 
 
-    https://docs.microsoft.com/en-us/botframework/{technology}/{filename}
+    https://docs.microsoft.com/en-us/bot-framework/{technology}/{filename}
 
-    https://docs.microsoft.com/en-us/botframework/{technology}/{userjourney-or-secondary-category}/{filename}
+    https://docs.microsoft.com/en-us/bot-framework/{technology}/{userjourney-or-secondary-category}/{filename}
     Use this option if the content set is large and requires deeper hierarchies.
 
 >[!IMPORTANT]
@@ -34,5 +34,5 @@ You may use industry-standard acronyms or abbreviations, such as DNS or URL. .
 
 Here are examples of descriptive, relevant file names:
 
-conversations-control-templates.md
-install-botbuilder-sdk.md
+bot-builder-dotnet-conversations-control-templates.md
+resources-install-botbuilder-sdk.md
