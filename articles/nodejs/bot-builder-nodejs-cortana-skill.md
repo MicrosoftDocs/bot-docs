@@ -143,7 +143,6 @@ In addition to spoken responses, Cortana can also display card attachments. Cort
 * [HeroCard](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.herocard.html)
 * [ReceiptCard](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.receiptcard.html)
 * [ThumbnailCard](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.thumbnailcard.html)
-* [SigninCard](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.signincard.html) 
 
 See [Card design best practices][CardDesign] to see what these cards look like inside Cortana. For an example of how to add a rich card to a bot, see [Send rich cards](bot-builder-nodejs-send-rich-cards.md). 
 
