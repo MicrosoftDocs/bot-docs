@@ -50,7 +50,7 @@ Next, open Visual Studio and create a new C# project. Choose the Bot Application
 ![Visual Studio create project](../media/connector-getstarted-create-project.png)
 
 > [!NOTE]
-> Visual Studio might say you need to [download and install IIS Express](https://www.microsoft.com/en-us/download/details.aspx?id=1038). 
+> Visual Studio might say you need to [download and install IIS Express](https://www.microsoft.com/en-us/download/details.aspx?id=48264). 
 
 
 By using the Bot Application template, you're creating a project that already contains all of the
