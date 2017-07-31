@@ -6,7 +6,7 @@ ms.author: rstand
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 06/12/2017
+ms.date: 07/31/2017
 ---
 
 # Bot Framework additional resources
@@ -22,4 +22,6 @@ These resources provide additional information and support for developing bots w
 |**Community support** | [StackOverflow](https://stackoverflow.com/questions/tagged/botframework)
 |**Using a bot** | Contact the bot's developer through their publisher e-mail                 
 |**Bot Builder SDK issues/suggestions**| Use the issues tab on the <a href="https://github.com/Microsoft/BotBuilder/" target="_blank">GitHub repo</a>
-|**Reporting Abuse**| Contact us at [bf-reports@microsoft.com](mailto://bf-reports@microsoft.com)
+|**Documentation issues**| Submit an <a href="https://github.com/Microsoft/bot-framework-docs/issues" target="_blank">issue</a> to the Bot Framework documentation GitHub repo.
+|**Documentation updates**| Click the Edit link on an article and submit a pull request to the <a href="https://github.com/Microsoft/bot-framework-docs" target="_blank">Bot Framework documentation GitHub repo</a>.
+|**Reporting abuse**| Contact us at [bf-reports@microsoft.com](mailto://bf-reports@microsoft.com)
