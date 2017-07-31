@@ -192,8 +192,7 @@ card.Speak = "<s>Your  meeting about \"Adaptive Card design session\"<break stre
 // Add text to the card.
 card.Body.Add(new TextBlock()
 {
-    Text = "Adaptive Card design session",
-    Size = TextSize.Large,
+    Text = "Adaptive Card design session",    Size = TextSize.Large,
     Weight = TextWeight.Bolder
 });
 
