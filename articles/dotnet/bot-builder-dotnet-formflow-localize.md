@@ -106,7 +106,7 @@ Install **MAT**, then enable it for your project by completing these steps:
 
 ## See it in action
 
-This code example builds upon the one in [Customize a form using FormBuilder](bot-builder-dotnet-formflow-formbuilder.md#customize-a-form-using-formbuilder-1) to implement localization as described above. 
+This code example builds upon the one in [Customize a form using FormBuilder](bot-builder-dotnet-formflow-formbuilder.md) to implement localization as described above. 
 In this example, the `DynamicSandwich` class (not shown here) contains localization information for 
 dynamically-computed fields, messages and confirmations.
 
