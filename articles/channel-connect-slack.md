@@ -6,14 +6,14 @@ ms.author: rstand
 manager: tomlm
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 06/12/2017
+ms.date: 07/31/2017
 ---
 
 # Connect a bot to Slack
 
 You can configure your bot to communicate with people using the Slack messaging app.
 
-## Log in to Slack and create a Slack Application for your bot
+## Create a Slack Application for your bot
 
 Log into Slack and [create a Slack application](https://api.slack.com/applications/new).
 
@@ -41,7 +41,12 @@ Next you will add a new Redirect URL.
 
 ## Subscribe to Bot Events
 
-By subscribing to bot events, your app will be notified of user activities at the URL you specify.
+Follow these steps to subscribe to six particular bot events. By subscribing to bot events, your app will be notified of user activities at the URL you specify. 
+
+> [!TIP] 
+> Your bot handle is a property of your bot. To find a bot's handle, 
+> visit [https://dev.botframework.com/bots](https://dev.botframework.com/bots),
+> choose a bot, and click **SETTINGS**. 
 
 1. Select the **Event Subscriptions** tab.
 2. Click **Enable Events** to **On**.
@@ -74,10 +79,11 @@ Click **Add Bot User** to validate your settings, click **Always Show My Bot as 
 
 ## Add and Configure Interactive Messages (optional)
 
-If your bot will use Slack-specific functionality such as buttons, select the **Interactive Messages** tab and click **Enable Interactive Messages**.
+If your bot will use Slack-specific functionality such as buttons, follow these steps:
 
-1. Enter https://slack.botframework.com/api/Actions as the Request URL for Interactive Messages.
-2. Click the **Enable Interactive Messages** button and **Save changes** once the URL is successfully validated.
+1. Select the **Interactive Messages** tab and click **Enable Interactive Messages**.
+2. Enter https://slack.botframework.com/api/Actions as the **Request URL**.
+3. Click the **Enable Interactive Messages** button, and then click the **Save changes** button.
 
 ![Enable messages](~/media/channels/slack-MessageURL.png)
 
@@ -92,15 +98,13 @@ In a separate browser window, return to the Bot Framework site at http://dev.bot
 
 1. Select **My bots** and choose the Bot that you want to connect to Slack.
 2. In the **Add a channel** section, click the Slack icon.
-3. In the **Submit your Credentials** section, paste the App Credentials from the Slack website into the appropriate fields. 
+3. In the **Enter your Slack credentials** section, paste the App Credentials from the Slack website into the appropriate fields. 
 4. The **Landing Page URL** is optional. You may remove or change it.
-5. Click **Submit Slack Credentials**.
+5. Click **Save**.
 
 ![Submit credentials](~/media/channels/slack-SubmitCredentials.png)
 
 Follow the instructions to authorize your Slack app's access to your Development Slack Team. 
 
 ## Enable the bot
-Check **Enable this bot on Slack**. Then click **I'm done configuring Slack**.
-
-When you have completed these steps, your bot will be successfully configured to communicate with users in Slack.
+On the Configure Slack page, confirm the slider by the Save button is set to **Enabled**. Your bot is configured to communicate with users in Slack.

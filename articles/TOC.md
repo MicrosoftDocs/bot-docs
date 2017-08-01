@@ -34,6 +34,7 @@
 #### [Dialogs overview](~/dotnet/bot-builder-dotnet-dialogs.md)
 #### [Manage conversation flow](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
 #### [Enable language understanding](~/dotnet/bot-builder-dotnet-luis-dialogs.md)
+#### [Scorable dialogs](~/dotnet/bot-builder-dotnet-scorable-dialogs.md)
 ### FormFlow
 #### [Basic features of FormFlow](~/dotnet/bot-builder-dotnet-formflow.md)
 #### [Advanced features of FormFlow](~/dotnet/bot-builder-dotnet-formflow-advanced.md)

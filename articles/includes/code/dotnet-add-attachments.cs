@@ -11,7 +11,7 @@ replyMessage.Attachments.Add(new Attachment()
 
 // <addHeroCardAttachment>
 Activity replyToConversation = message.CreateReply("Should go to conversation, in carousel format");
-replyToConversation.AttachmentLayout = AttachmentLayouts.Carousel;
+replyToConversation.AttachmentLayout = AttachmentLayoutTypes.Carousel;
 replyToConversation.Attachments = new List<Attachment>();
 
 Dictionary<string, string> cardContentList = new Dictionary<string, string>();
@@ -54,7 +54,7 @@ var reply = await connector.Conversations.SendToConversationAsync(replyToConvers
 
 // <addThumbnailCardAttachment>
 Activity replyToConversation = message.CreateReply("Should go to conversation, in list format");
-replyToConversation.AttachmentLayout = AttachmentLayouts.List;
+replyToConversation.AttachmentLayout = AttachmentLayoutTypes.List;
 replyToConversation.Attachments = new List<Attachment>();
 
 Dictionary<string, string> cardContentList = new Dictionary<string, string>();
