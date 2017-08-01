@@ -1,5 +1,5 @@
 ---
-title: Global message handlers using Scorables 
+title: Global message handlers using scorables
 description: Create more flexible dialogs using scorables within the  Bot Builder SDK for .NET.
 author: matthewshim-ms
 ms.author: v-shimma
@@ -8,22 +8,17 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date: 07/12/2017
 ---
-# Global message handlers using Scorables
+# Global message handlers using scorables
 
-Within the Bot Framework .NET SDK, `Scorables` allow you to create dialogs as flexible components which act as global message handlers, in lieu of the traditional dialog model. 
+Users attempt to access certain functionality within a bot by using words like "help," "cancel," or "start over" in the middle of a conversation when the bot is expecting a different response. You can design your bot to gracefully handle such requests using scorable dialogs.
 
-Scorable dialogs within a bot monitor all incoming messages, and determine wether or not that message is actionable in some way. Messages that are scorable are assigned a score between 0 - 1 (one being the highest) by each scorable dialog in the bot. The scorable dialog which determines the highest score then handles the response to the user. 
+Scorable dialogs monitor all incoming messages and determine whether a message is actionable in some way. Messages that are scorable are assigned a score between [0 – 1] by each scorable dialog. The scorable dialog that determines the highest score is added to the top of the dialog stack and then hands the response to the user. After the scorable dialog completes execution, the conversation continues from where it left off.
 
-When a user triggers a scorable dialog, that dialogue is then added to the top of the [dialog stack](../bot-design-conversation-flow.md#dialog-stack). After the scorable dialog is resolved, the conversation will continue from where it left off. This allows you to create more flexible conversations by allowing your users to 'interrupt' the normal hierarchal dialog structure. 
+Scorables enable you to create more flexible conversations by allowing your users to 'interrupt' the normal conversation flow you find in regular dialogs.
 
->[!NOTE]
-> Scorables is one of the ways that the .NET SDK uses [AutoFac](https://autofac.org/). AutoFac is used in the .NET BotBuilder SDK 
-> for [inversion of control and dependency injection](https://martinfowler.com/articles/injection.html). You can learn more about
-> Autofac in this [quick start guide](http://autofac.readthedocs.io/en/latest/getting-started/index.html). 
+## Create a scorable dialog
 
-## Creating a Scorable dialog
-
-First, you can define a new [dialog](bot-builder-dotnet-dialogs.md). If you've created a bot before, the following example will look very familiar, it is a typical dialog which uses the `IDialog` interface. 
+First, define a new [dialog](bot-builder-dotnet-dialogs.md). The following code uses a dialog that is derived from the `IDialog` interface.
 
 ```cs
 public class SampleDialog : IDialog<object>
@@ -50,7 +45,7 @@ public class SampleDialog : IDialog<object>
     }
 }
 ```
-To make a dialog scorable, you create a class which provides implementation of the abstract `ScorableBase` class. The `ScorableBase` class implements the `IScorable` interface that's defined in the Scorables class in the Bot Builder SDK for .NET. 
+To make a scorable dialog, create a class that inherits from the `ScorableBase` abstract class. The following code shows a `SampleScorable` class.
 
 ```cs
 using Microsoft.Bot.Builder.Dialogs;
@@ -68,36 +63,55 @@ public class SampleScorable : ScorableBase<IActivity, string, double>
     }
 }
 ```
+The `ScorableBase` abstract class inherits from the `IScorable` interface. You will need to implement the following `IScorable` methods in your class:
 
-The **ScorableBase** abstract class uses the **IScorable** interface which requires that this class must include the following methods: 
+- `PrepareAsync` is the first method that is called in the scorable instance. It accepts incoming message activity, analyzes and sets the dialog's state, which is passed to all the other methods of the `IScorable` interface.
 
 ```cs
-public interface IScorable<in Item, out Score>
+protected override async Task<string> PrepareAsync(IActivity item, CancellationToken token)
 {
-    Task<object> PrepareAsync(Item item, CancellationToken token);
-
-    bool HasScore(Item item, object state);
-
-    Score GetScore(Item item, object state);
-
-    Task PostAsync(Item item, object state, CancellationToken token);
-
-    Task DoneAsync(Item item, object state, CancellationToken token);
+        // TODO: insert your code here
 }
 ```
-* **PrepareAsync**: This first method in the scorable instance accepts incoming message activity, analyzes and sets the dialog's `state`, which is passed to all the other methods in the interface.
 
-* **HasScore**: This boolean method checks the state property to determine if the Scorable Dialog should provide a score for the message. If it returns false, the message will be ignored by the Scorable dialog.  
+- The `HasScore` method checks the state property to determine if the scorable dialog should provide a score for the message. If it returns false, the message will be ignored by the scorable dialog.
 
-* **GetScore**: Will only trigger if `HasScore` returns true, provision the logic here to determine the score for a message between 0 - 1.0  
+```cs
+protected override bool HasScore(IActivity item, string state)
+{
+        // TODO: insert your code here
+}
+```
 
-* **PostAsync**: In this method you define core actions to be performed for the scorable class. All scorable dialogs will monitor all incoming messages, and assign scores to valid messages based on the scorables' `GetScore` method. The scorable class which determines the highest score (between 0 - 1.0) will then trigger that scorable's `PostAsync` method. 
+- `GetScore` will only trigger if `HasScore` returns true. You’ll provision the logic in this method to determine the score for a message between 0 - 1.
 
-* **DoneAsync**: Here you should dispose of any scoped resources as it is called when the scoring process has completed.
+```cs
+protected override double GetScore(IActivity item, string state)
+{
+        // TODO: insert your code here
+}
+```
+- In the `PostAsync` method, define core actions to be performed for the scorable class. All scorable dialogs will monitor incoming messages, and assign scores to valid messages based on the scorables' GetScore method. The scorable class which determines the highest score (between 0 - 1.0) will then trigger that scorable's `PostAsync` method.
 
-## Create a module to register the IScorable service 
+```cs
+protected override Task PostAsync(IActivity item, string state, CancellationToken token)
+{
+        //TODO: insert your code here
+}
+```
 
-Define a `Module` which will register the `SampleScorable` as a component which provisions the `IScorable` service. 
+- `DoneAsync` is called after the scoring process is complete. Use this method to dispose of any scoped resources.
+
+```cs
+protected override Task DoneAsync(IActivity item, string state, CancellationToken token)
+{
+        //TODO: insert your code here
+}
+```
+
+## Create a module to register the IScorable service
+
+Next, define a `Module` that will register the `SampleScorable` class as a component. This will provision the `IScorable` service.
 
 ```cs
 public class GlobalMessageHandlersBotModule : Module
@@ -113,11 +127,9 @@ public class GlobalMessageHandlersBotModule : Module
     }
 }
 ```
-## Register the module with 
+## Register the module  
 
-Lastly, you need to apply the `SampleScorable` to the bot's Conversation Container. This will register the scorable service within the bot builder framework's message handling pipeline. 
-
-Simply update the `Conversation.Container` as shown below within the bot app's initialization in **Global.asax.cs** as shown: 
+The last step in the process is to apply the `SampleScorable` to the bot's Conversation Container. This will register the scorable service within the Bot Framework's message handling pipeline. The following code shows to update the `Conversation.Container` within the bot app's initialization in **Global.asax.cs**:
 
 ```cs
 public class WebApiApplication : System.Web.HttpApplication
@@ -133,7 +145,7 @@ public class WebApiApplication : System.Web.HttpApplication
         var builder = new ContainerBuilder();
         builder.RegisterModule(new ReflectionSurrogateModule());
 
-        //Register the module within the Conversation container 
+        //Register the module within the Conversation container
         builder.RegisterModule<GlobalMessageHandlersBotModule>();
 
         builder.Update(Conversation.Container);
