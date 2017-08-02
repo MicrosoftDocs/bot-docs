@@ -125,9 +125,9 @@ You've successfully created a bot by using the Bot Application template Bot Buil
 
 ## Next steps
 
-In this tutorial, you created a simple bot by using the Bot Application template and the Bot Builder SDK for .NET and verified the bot's functionality by using the Bot Framework Emulator.
+In this quickstart, you created a simple bot by using the Bot Application template and the Bot Builder SDK for .NET and verified the bot's functionality by using the Bot Framework Emulator.
 
-Next, learn about the key concepts of bot programming.
+Next, learn about the key concepts of the Bot Builder SDK for .NET.
 
 > [!div class="nextstepaction"]
 > [Key concepts in the Bot Builder SDK for .NET](bot-builder-dotnet-concepts.md)
