@@ -6,7 +6,7 @@ ms.author: rstand
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
+ms.date: 08/04/2017
 ---
 # Bot Framework reference
 The Bot Framework includes comprehensive reference documentation for the Bot Builder SDK for .NET, the Bot Builder SDK for Node.js, and the Bot Framework REST APIs.
