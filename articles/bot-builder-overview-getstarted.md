@@ -6,7 +6,7 @@ ms.author: kibrandl
 manager: rstand
 ms.topic: get-started-article
 ms.prod: bot-framework
-ms.date: 
+ms.date: 08/04/2017
 ---
 
 # Start building bots with the Bot Framework

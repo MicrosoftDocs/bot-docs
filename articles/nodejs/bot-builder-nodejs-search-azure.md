@@ -6,7 +6,7 @@ ms.author: v-shimma
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
+ms.date: 08/04/2017
 ---
 
 # Create data-driven experiences with Azure Search 

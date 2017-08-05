@@ -6,7 +6,7 @@ ms.author: ssulzer
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
+ms.date: 08/04/2017
 ---
 # Real-time media calling with Skype
 

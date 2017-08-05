@@ -6,7 +6,7 @@ ms.author: mateusv
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date:
+ms.date: 08/04/2017
 ms.reviewer: 
 ---
 
