@@ -1,5 +1,5 @@
 ---
-title: Key concepts in the Bot Connector service and Bot State service  | Microsoft Docs
+title: Key concepts in the Bot Connector service and Bot State service | Microsoft Docs
 description: Understand key concepts in the Bot Framework's Bot Connector service and Bot State service. 
 author: kbrandl
 ms.author: kibrandl
