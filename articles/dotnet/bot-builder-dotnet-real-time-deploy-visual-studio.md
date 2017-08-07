@@ -1,6 +1,6 @@
 ---
-title: Deploy a Skype real-time audio video bot from Visual Studio to Azure | Microsoft Docs
-description: Learn how to deploy a bot to Azure using Visual Studio's built-in publishing feature.
+title: Deploy a Skype real-time media bot to Azure | Microsoft Docs
+description: Learn how to deploy a Skype real-time audio-video bot to Azure using Visual Studio's built-in publishing feature.
 author: MalarGit
 ms.author: malarch
 manager: ssulzer
@@ -9,7 +9,7 @@ ms.prod: bot-framework
 ms.date: 08/04/2017
 ---
 
-# Deploy a real-time audio-video bot from Visual Studio to Azure
+# Deploy a real-time media bot from Visual Studio to Azure
 Real-time media bots can be hosted in either an "IaaS" Azure Virtual Machine or a "classic" Azure Cloud Service. This article shows how to deploy a bot, hosted in an Azure Cloud Service Worker Role, from Visual Studio using its built-in publish capability.
 
 ## Prerequisites
