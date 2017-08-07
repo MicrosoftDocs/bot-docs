@@ -67,4 +67,4 @@ For more information about using `channelData`, see the [Node.js](https://github
 
 * Connect a bot to [channels](~/portal-configure-channels.md)
 * [Implement channel-specific functionality](dotnet/bot-builder-dotnet-channeldata.md) with the Bot Builder SDK for .NET
-
+* Use the [Channel Inspector](portal-channel-inspector.md) to see how a channel renders a particular feature of your bot application

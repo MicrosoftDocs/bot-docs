@@ -1,7 +1,7 @@
 {
-  "need_generate_pdf": false,
+  "need_generate_pdf_url_template": true,
   "need_generate_intellisense": false,
-  "Targets": {
+    "Targets": {
     "Pdf": {
       "template_folder": "_themes.pdf"
     }
@@ -100,12 +100,15 @@
       "Publish",
       "Pdf"
     ],
+    "enable-pdf": [
+      "Publish",
+      "Pdf"
+    ],
     "master": [
       "Publish",
       "Pdf"
     ]
   },
-  "need_generate_pdf_url_template": false,
   "template_folder": "_themes",
   "dependent_packages": [
     {
