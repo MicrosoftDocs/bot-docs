@@ -6,7 +6,7 @@ ms.author: malarch
 manager: ssulzer
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
+ms.date: 08/04/2017
 ---
 
 # Deploy a real-time audio-video bot from Visual Studio to Azure

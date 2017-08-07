@@ -20,6 +20,7 @@ These resources provide additional information and support for developing bots w
 |**Support type**                    | **Contact**                                                
 |----------------------------|---------------------------------
 |**Community support** | [StackOverflow](https://stackoverflow.com/questions/tagged/botframework)
+|**Community chat group** | [Gitter.IM](https://gitter.im/Microsoft/BotBuilder)
 |**Using a bot** | Contact the bot's developer through their publisher e-mail                 
 |**Bot Builder SDK issues/suggestions**| Use the issues tab on the <a href="https://github.com/Microsoft/BotBuilder/" target="_blank">GitHub repo</a>
 |**Documentation issues**| Submit an <a href="https://github.com/Microsoft/bot-framework-docs/issues" target="_blank">issue</a> to the Bot Framework documentation GitHub repo.

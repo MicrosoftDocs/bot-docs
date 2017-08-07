@@ -33,14 +33,12 @@ Get started by completing the following prerequisite tasks:
 
 2. In Visual Studio, <a href="https://docs.microsoft.com/en-us/visualstudio/extensibility/how-to-update-a-visual-studio-extension" target="_blank">update all extensions</a> to their latest versions.
 
+
 4. Download the [Bot Application](http://aka.ms/bf-bc-vstemplate), [Bot Controller](http://aka.ms/bf-bc-vscontrollertemplate), and [Bot Dialog](http://aka.ms/bf-bc-vsdialogtemplate) templates
 and install the template by saving the .zip file to your Visual Studio 2017 project templates directory.  
 
 > [!TIP]
-> The Visual Studio 2017 project templates directory is typically located here:
-> `%USERPROFILE%\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\`
-
-
+> The Visual Studio 2017 project templates directory is typically located at `%USERPROFILE%\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\`.
 
 
 ## Create your bot
@@ -125,9 +123,9 @@ You've successfully created a bot by using the Bot Application template Bot Buil
 
 ## Next steps
 
-In this tutorial, you created a simple bot by using the Bot Application template and the Bot Builder SDK for .NET and verified the bot's functionality by using the Bot Framework Emulator.
+In this quickstart, you created a simple bot by using the Bot Application template and the Bot Builder SDK for .NET and verified the bot's functionality by using the Bot Framework Emulator.
 
-Next, learn about the key concepts of bot programming.
+Next, learn about the key concepts of the Bot Builder SDK for .NET.
 
 > [!div class="nextstepaction"]
 > [Key concepts in the Bot Builder SDK for .NET](bot-builder-dotnet-concepts.md)

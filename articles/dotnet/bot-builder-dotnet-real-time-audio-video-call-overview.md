@@ -6,7 +6,7 @@ ms.author: malarch
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 
+ms.date: 08/04/2017
 ---
 
 # Build a real-time media bot for Skype
