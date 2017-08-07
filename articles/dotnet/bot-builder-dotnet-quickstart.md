@@ -38,7 +38,6 @@ Get started by completing the following prerequisite tasks:
 > [!TIP]
 > The Visual Studio 2017 project templates directory is typically located at `%USERPROFILE%\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\`.
 
-
 ## Create your bot
 
 Next, open Visual Studio and create a new C# project. Choose the Bot Application template for your new project.
