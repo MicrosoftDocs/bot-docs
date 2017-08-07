@@ -45,5 +45,3 @@ Click **Submit Kik Credentials**.
 Check **Enable this bot on Kik**. Then click **I'm done configuring Kik**. 
 
 When you have completed these steps, your bot will be successfully configured to communicate with users in Kik.
-
-
