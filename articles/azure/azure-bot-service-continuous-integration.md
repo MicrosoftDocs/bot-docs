@@ -1,5 +1,5 @@
 ---
-title: Set up continuous integration for a bot that is built using Azure Bot Service | Microsoft Docs
+title: Set up continuous integration for a bot using Azure Bot Service | Microsoft Docs
 description: Learn how to set up continuous integration for a bot that is built using Azure Bot Service.
 author: kbrandl
 ms.author: kibrandl
