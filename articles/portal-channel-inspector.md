@@ -1,6 +1,7 @@
 ---
-title: Preview features with the Channel Inspector | Microsoft Docs
+title: Preview bot features with the Channel Inspector | Microsoft Docs
 description: Learn how various Bot Framework features look and work on different channels by using the Channel Inspector.
+keyword: bot, features, channel, display
 author: Kbrandl
 ms.author: kibrandl
 manager: rstand
@@ -9,7 +10,7 @@ ms.prod: bot-framework
 ms.date: 06/06/2017
 ---
 
-# Preview features with the Channel Inspector
+# Preview bot features with the Channel Inspector
 
 The Bot Framework enables you to create bots with a variety of features such as buttons, images, rich cards displayed in carousel or list format, and more. However, each channel ultimately controls how features are rendered by its messaging clients. 
 

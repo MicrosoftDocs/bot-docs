@@ -135,7 +135,7 @@
 ## [Manage](manage/TOC.md)
 ## Connect to channels
 ### [Configure a bot](portal-configure-channels.md) 
-### [Channel Inspector](~/portal-channel-inspector.md)
+### [Preview bot features](~/portal-channel-inspector.md)
 ### [Bing](channel-connect-bing.md) 
 ### [Cortana](channel-connect-cortana.md) 
 ### [Skype for Business](channel-connect-skypeforbusiness.md)

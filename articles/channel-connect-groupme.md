@@ -42,4 +42,3 @@ Use this callback URL: `https://groupme.botframework.com/Home/Login`
 2. Click **Save**.
 
 ![Enter credentials](~/media/channels/GM-StepClientIDToken.png)
-
