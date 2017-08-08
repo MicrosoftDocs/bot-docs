@@ -42,7 +42,7 @@ The `MessageReceived` method calls your LUIS application model to determine inte
 
 ## Extend default functionality
 
-The Language understanding template provides a good foundation that you can build upon to create a bot that is capable of using natural language models to understand user intent. To learn more about developing bots with LUIS in .NET, see [Enable language understanding with LUIS](../dotnet/bot-builder-dotnet-luis-dialogs.md). To learn more about developing bots with LUIS in Node.js, see [Recognize user intent](../nodejs/bot-builder-nodejs-recognize-intent.md).
+The Language understanding template provides a good foundation that you can build upon to create a bot that is capable of using natural language models to understand user intent. To learn more about developing bots with LUIS in .NET, see [Enable language understanding with LUIS](../dotnet/bot-builder-dotnet-luis-dialogs.md). To learn more about developing bots with LUIS in Node.js, see [Recognize intents and entities with LUIS](../nodejs/bot-builder-nodejs-recognize-intent-luis.md).
 
 ## Additional resources
 
@@ -50,7 +50,7 @@ The Language understanding template provides a good foundation that you can buil
 - [Templates in the Azure Bot Service](azure-bot-service-templates.md)
 - <a href="https://www.luis.ai" target="_blank">LUIS</a>
 - [Enable language understanding with LUIS (.NET)](../dotnet/bot-builder-dotnet-luis-dialogs.md)
-- [Recognize user intent (Node.js)](../nodejs/bot-builder-nodejs-recognize-intent.md)
+- [Recognize intents and entities with LUIS (Node.js)](../nodejs/bot-builder-nodejs-recognize-intent-luis.md)
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub repository</a>
 - [Bot Builder SDK for .NET](../dotnet/bot-builder-dotnet-overview.md)
 - [Bot Builder SDK for Node.js](../nodejs/index.md)
