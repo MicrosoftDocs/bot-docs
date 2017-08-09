@@ -331,13 +331,8 @@ payload:
 
 ## Security protocol changes
 
-As of May 1, 2017, the Bot Framework supports two versions of security protocol: 
-
-- **v3.0**: for bots that were written before November 2016 and have not been upgraded to v3.1
-- **v3.1**: for bots that have been upgraded to the latest Bot Builder SDK
-
 > [!WARNING]
-> Support for v3.0 of the security protocol will be discontinued on **July 31, 2017**. 
+> Support for v3.0 of the security protocol was discontinued on **July 31, 2017**. 
 > If you have written your own authentication code (i.e., did not use the Bot Builder SDK to create your bot), 
 > you must upgrade to v3.1 of the security protocol by updating your application to use the v3.1 values that are listed below. 
 
@@ -347,14 +342,12 @@ As of May 1, 2017, the Bot Framework supports two versions of security protocol:
 
 | Protocol version | Valid value |
 |----|----|
-| v3.0 (June 2016 - July 31, 2017) | `https://login.microsoftonline.com/common/oauth2/v2.0/token` | 
 | v3.1 (starting December 2016) | `https://login.microsoftonline.com/botframework.com/oauth2/v2.0/token` |
 
 #### OAuth scope
 
 | Protocol version | Valid value |
 |----|----|
-| v3.0 (June 2016 - July 31, 2017) | `https://graph.microsoft.com/.default` | 
 | v3.1 (starting December 2016) |  `https://api.botframework.com/.default` |
 
 ### [Connector to Bot authentication](#connector-to-bot)
@@ -363,14 +356,12 @@ As of May 1, 2017, the Bot Framework supports two versions of security protocol:
 
 | Protocol version | Valid value |
 |----|----|
-| v3.0 (June 2016 - July 31, 2017) | `https://api.aps.skype.com/v1/.well-known/openidconfiguration` | 
 | v3.1 (starting December 2016) | `https://login.botframework.com/v1/.well-known/openidconfiguration` |
 
 #### JWT Issuer
 
 | Protocol version | Valid value |
 |----|----|
-| v3.0 (June 2016 - July 31, 2017) | `https://api.botframework.com` | 
 | v3.1 (starting December 2016) | `https://api.botframework.com` |
 
 ### [Emulator to Bot authentication](#emulator-to-bot)
@@ -379,35 +370,30 @@ As of May 1, 2017, the Bot Framework supports two versions of security protocol:
 
 | Protocol version | Valid value |
 |----|----|
-| v3.0 (June 2016 - July 31, 2017) | `https://login.microsoftonline.com/common/oauth2/v2.0/token` | 
 | v3.1 (starting December 2016) | `https://login.microsoftonline.com/botframework.com/oauth2/v2.0/token` |
 
 #### OAuth scope
 
 | Protocol version | Valid value |
 |----|----|
-| v3.0 (June 2016 - July 31, 2017) | `https://graph.microsoft.com/.default` | 
 | v3.1 (starting December 2016) |  Your bot’s Microsoft App ID + `/.default` |
 
 #### JWT Audience
 
 | Protocol version | Valid value |
 |----|----|
-| v3.0 (June 2016 - July 31, 2017) | `https://graph.microsoft.com` | 
 | v3.1 (starting December 2016) | Your bot’s Microsoft App ID |
 
 #### JWT Issuer
 
 | Protocol version | Valid value |
 |----|----|
-| v3.0 (June 2016 - July 31, 2017) | `https://sts.windows.net/72f988bf-86f1-41af-91ab-2d7cd011db47/` | 
 | v3.1 (starting December 2016) | `https://sts.windows.net/d6d49420-f39b-4df7-a1dc-d59a935871db/` |
 
 #### OpenID metadata document
 
 | Protocol version | Valid value |
 |----|----|
-| v3.0 (June 2016 - July 31, 2017) | `https://login.microsoftonline.com/common/v2.0/.well-known/openid-configuration` | 
 | v3.1 (starting December 2016) | `https://login.microsoftonline.com/botframework.com/v2.0/.well-known/openid-configuration` |
 
 ## Additional resources
