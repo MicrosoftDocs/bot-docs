@@ -62,7 +62,7 @@ This example uses the `{&}` element to show the description of the `Sandwich` fi
 
 This is the resulting prompt:
 
-```
+```console
 What kind of sandwich would you like?
 1. BLT
 2. Black Forest Ham
@@ -110,7 +110,7 @@ as a bulleted list.
 
 This is the resulting prompt:
 
-```
+```console
 What kind of sandwich would you like?
 * BLT
 * Black Forest Ham

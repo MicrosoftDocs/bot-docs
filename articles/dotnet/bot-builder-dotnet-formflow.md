@@ -96,7 +96,7 @@ where the word "sandwich" in the prompt derives from the property name `Sandwich
 The `SandwichOptions` enumeration defines the choices that are presented to the user, 
 with each enumeration value being automatically broken into words based upon changes in case and underscores.
 
-```
+```console
 Please select a sandwich
 1. BLT
 2. Black Forest Ham
@@ -121,7 +121,7 @@ Please select a sandwich
 The user can enter "help" at any point in the conversation to get guidance with filling out the form. 
 For example, if the user enters "help" at the sandwich prompt, the bot will respond with this guidance. 
 
-```
+```console
 > help
 * You are filling in the sandwich field. Possible responses:
 * You can enter a number 1-15 or words from the descriptions. (BLT, Black Forest Ham, Buffalo Chicken, Chicken And Bacon Ranch Melt, Cold Cut Combo, Meatball Marinara, Oven Roasted Chicken, Roast Beef, Rotisserie Style Chicken, Spicy Italian, Steak And Cheese, Sweet Onion Teriyaki, Tuna, Turkey Breast, and Veggie)
@@ -138,7 +138,7 @@ For example, if the user enters "help" at the sandwich prompt, the bot will resp
 If the user enters "2" in response to the initial sandwich prompt, 
 the bot then displays a prompt for the next property that is defined by the form: `SandwichOrder.Length`.
 
-```
+```console
 Please select a sandwich
  1. BLT
  2. Black Forest Ham
@@ -166,7 +166,7 @@ If the user enters "back" at this point in the conversation, the bot will return
 The prompt shows the user's current choice ("Black Forest Ham"); the user may change that selection by 
 entering a different number or confirm that selection by entering "c".
 
-```
+```console
 > back
 Please select a sandwich(current choice: Black Forest Ham)
  1. BLT
@@ -194,7 +194,7 @@ Please select a length (1. Six Inch, 2. Foot Long)
 If the user responds with text (instead of a number) to indicate a choice, 
 the bot will automatically ask for clarification if user input matches more than one choice. 
 
-```
+```console
 Please select a bread
  1. Nine Grain Wheat
  2. Nine Grain Honey Oat
@@ -209,7 +209,7 @@ By "nine grain" bread did you mean (1. Nine Grain Honey Oat, 2. Nine Grain Wheat
 If user input does not directly match any of the valid choices, the bot will 
 automatically prompt the user for clarification.
 
-```
+```console
 Please select a cheese (1. American, 2. Monterey Cheddar, 3. Pepperjack)
 > amercan
 "amercan" is not a cheese option.
@@ -220,7 +220,7 @@ For cheese I understood American. "smoked" is not an option.
 If user input specifies multiple choices for a property and the bot does not understand any of the 
 specified choices, it will automatically prompt the user for clarification.
 
-```
+```console
 Please select one or more toppings
  1. Banana Peppers
  2. Cucumbers
@@ -242,7 +242,7 @@ By "peppers" toppings did you mean (1. Green Bell Peppers, 2. Banana Peppers)
 If the user enters "status" at any point in the order, the bot's response will indicate 
 which values have already been specified and which values remain to be specified. 
 
-```
+```console
 Please select one or more sauce
  1. Honey Mustard
  2. Light Mayonnaise
@@ -266,7 +266,7 @@ Please select one or more sauce
 
 When the user completes the form, the bot will ask the user to confirm their selections.
 
-```
+```console
 Please select one or more sauce
  1. Honey Mustard
  2. Light Mayonnaise
@@ -291,7 +291,7 @@ Is this your selection?
 If the user responds by entering "no", the bot allows the user to update any of the prior selections. 
 If the user responds by entering "yes", the form has been completed and control is returned to the calling dialog. 
 
-```
+```console
 Is this your selection?
 * Sandwich: Black Forest Ham
 * Length: Six Inch

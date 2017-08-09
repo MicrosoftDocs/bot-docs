@@ -71,6 +71,17 @@ to provide the I/O service, the Bot Framework transmits your message and message
 
 Users have a way to report a misbehaving bot via the bot’s contact card in the directory. Developers must abide by Microsoft terms of service to participate in the service.
 
+### Which specific URLs do I need to whitelist in my corporate firewall to access bot services?
+
+You'll need to whitelist the following URLs in your corporate firewall:
+- login.botframework.com (Bot authentication)
+- login.microsoftonline.com (Bot authentication)
+- westus.api.cognitive.microsoft.com (for Luis.ai NLP integration)
+- state.botframework.com (Bot state storage for prototyping)
+- cortanabfchanneleastus.azurewebsites.net (Cortana channel)
+- cortanabfchannelwestus.azurewebsites.net (Cortana Channel)
+- *.botFramework.com (channels)
+
 ## Related Services
 ### How does the Bot Framework relate to Cognitive Services?
 

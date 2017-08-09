@@ -58,7 +58,7 @@ to match user expressions such as "everything" or "not".
 Using the validation function shown above, this snippet shows the 
 interaction between bot and user when the user requests "everything but Jalapenos." 
 
-```
+```console
 Please select one or more toppings (current choice: No Preference)
  1. Everything
  2. Avocado
@@ -109,7 +109,7 @@ of the field and `{||}` is replaced with the list of choices in the enumeration.
 
 This snippet shows the customized prompt that is specified by the example above.
 
-```
+```console
 What kind of sandwich would you like?
 1. BLT
 2. Black Forest Ham
@@ -137,7 +137,7 @@ For example, the `ChoiceFormat` parameter determines how the form renders the li
 In this example, the value of the `ChoiceFormat` parameter indicates that the choices should be 
 displayed as a bulleted list (instead of a numbered list).
 
-```
+```console
 What kind of sandwich would you like?
 - BLT
 - Black Forest Ham
@@ -171,7 +171,7 @@ and specifies that the form should display only one item per line.
 
 This snippet shows the resulting prompts for the `Bread` field and `Cheese` field.
 
-```
+```console
 What kind of bread would you like on your sandwich?
  1. Nine Grain Wheat
  2. Nine Grain Honey Oat
@@ -203,7 +203,7 @@ determine message contents by randomly selecting one of the two text strings.
 
 This snippet shows an example of the resulting the interaction between bot and user. 
 
-```
+```console
 What size of sandwich do you want? (1. Six Inch, 2. Foot Long)
 > two feet
 I do not understand "two feet".
@@ -222,7 +222,7 @@ This code example specifies that the `Cheese` field is optional.
 If a field is optional and no value has been specified, 
 the current choice will be displayed as "No Preference".
 
-```
+```console
 What kind of cheese would you like on your sandwich? (current choice: No Preference)
   1. American
   2. Monterey Cheddar
@@ -233,7 +233,7 @@ What kind of cheese would you like on your sandwich? (current choice: No Prefere
 If a field is optional and the user has specified a value, 
 "No Preference" will be displayed as the last choice in the list.
 
-```
+```console
 What kind of cheese would you like on your sandwich? (current choice: American)
  1. American
  2. Monterey Cheddar
@@ -275,7 +275,7 @@ The `Terms.MaxPhrase` parameter in this example causes the `Language.GenerateTer
 
 This snippet shows the resulting interaction between bot and user when the user misspells "Rotisserie."
 
-```
+```console
 What kind of sandwich would you like?
  1. BLT
  2. Black Forest Ham
