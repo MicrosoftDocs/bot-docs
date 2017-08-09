@@ -111,14 +111,14 @@ Authorization: Bearer eyJhbGciOiJIUzI1Ni...
 ```
 
 > [!IMPORTANT]
-> Only specify the JWT token in the `Authorization` header of requests the you send to the Bot Connector service. 
+> Only specify the JWT token in the `Authorization` header of requests you send to the Bot Connector service. 
 > Do NOT send the token over unsecured channels and do NOT include it in HTTP requests that you send to other services. 
 > The JWT token that you obtain from the MSA/AAD v2 login service is like a password and should be handled with 
 > great care. Anyone that possesses the token may use it to perform operations on behalf of your bot. 
 
 #### Bot to Connector: example JWT components
 
-```
+```json
 header:
 {
   typ: "JWT",
@@ -216,7 +216,7 @@ Implementers should not expose a way to disable validation of the JWT token that
 
 #### Connector to Bot: example JWT components
 
-```
+```json
 header:
 {
   typ: "JWT",
@@ -308,7 +308,7 @@ If the token does not meet all of these requirements, your bot should terminate 
 
 #### Emulator to Bot: example JWT components
 
-```
+```json
 header:
 {
   typ: "JWT",

@@ -42,7 +42,7 @@ tool that is included in the BotBuilder SDK for .NET.
 To generate the .resx file, execute **rview** and specify the assembly that contains your static form-building method and the path to that method. 
 This snippet shows how to generate the `Microsoft.Bot.Sample.AnnotatedSandwichBot.SandwichOrder.resx` resource file using **RView**. 
 
-```
+```csharp
 rview -g Microsoft.Bot.Sample.AnnotatedSandwichBot.dll Microsoft.Bot.Sample.AnnotatedSandwichBot.SandwichOrder.BuildForm
 ```
 
@@ -114,7 +114,7 @@ dynamically-computed fields, messages and confirmations.
 
 This snippet shows the resulting interaction between bot and user when `CurrentUICulture` is **French**.
 
-```
+```console
 Bienvenue sur le bot d'ordre "sandwich" !
 Quel genre de "sandwich" vous souhaitez sur votre "sandwich"?
  1. BLT

@@ -62,14 +62,14 @@ To exchange your secret for a token and generate the embed:
 
 ##### Example request
 
-```
+```request
 GET https://webchat.botframework.com/api/tokens
 Authorization: BotConnector YOUR_SECRET_HERE
 ```
 
 ##### Example response 
 
-```
+```response
 "IIbSpLnn8sA.dBB.MQBhAFMAZwBXAHoANgBQAGcAZABKAEcAMwB2ADQASABjAFMAegBuAHYANwA.bbguxyOv0gE.cccJjH-TFDs.ruXQyivVZIcgvosGaFs_4jRj1AyPnDt1wk1HMBb5Fuw"
 ```
 
