@@ -252,7 +252,7 @@ Now that you know how to step users through a waterfall and prompt them for info
 
 [SendAttachments]: bot-builder-nodejs-send-receive-attachments.md
 [SendCardWithButtons]: bot-builder-nodejs-send-rich-cards.md
-[RecognizeUserIntent]: bot-builder-nodejs-recognize-intent.md
+[RecognizeUserIntent]: bot-builder-nodejs-recognize-intent-messages.md
 [SaveUserData]: bot-builder-nodejs-save-user-data.md
 
 [UniversalBot]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.universalbot.html

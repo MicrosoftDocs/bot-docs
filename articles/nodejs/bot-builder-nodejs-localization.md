@@ -146,7 +146,7 @@ The default localizer supports the namespacing of prompts to avoid collisions be
 
 ## Additional resources
 
-To learn about how to localize a recognizer, see [Recognizing intent](bot-builder-nodejs-recognize-intent.md).
+To learn about how to localize a recognizer, see [Recognizing intent](bot-builder-nodejs-recognize-intent-messages.md).
 
 
 [LUIS]: https://www.luis.ai/

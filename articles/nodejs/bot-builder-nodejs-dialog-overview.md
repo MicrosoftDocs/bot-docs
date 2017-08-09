@@ -53,7 +53,7 @@ var bot = new builder.UniversalBot(connector, [
     ]);
 ```
 
-The default dialog runs whenever the dialog stack is empty and no other dialog is [triggered](bot-builder-nodejs-dialog-actions.md) via LUIS or another [recognizer](bot-builder-nodejs-recognize-intent.md). As the default dialog is the bot's first response to the user, the default dialog should provide some contextual information to the user, such as a list of available commands or an overview of what the bot can do.
+The default dialog runs whenever the dialog stack is empty and no other dialog is [triggered](bot-builder-nodejs-dialog-actions.md) via LUIS or another [recognizer](bot-builder-nodejs-recognize-intent-messages.md). As the default dialog is the bot's first response to the user, the default dialog should provide some contextual information to the user, such as a list of available commands or an overview of what the bot can do.
 
 ## Dialog handlers
 

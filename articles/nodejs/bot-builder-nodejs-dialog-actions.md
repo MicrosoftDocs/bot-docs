@@ -284,6 +284,6 @@ Once this action is triggered, it will ask the user "Are you sure?" The user wil
 
 [endConversationAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#endconversationaction
 
-[RecognizeIntent]: bot-builder-nodejs-recognize-intent.md
+[RecognizeIntent]: bot-builder-nodejs-recognize-intent-messages.md
 
 [CardAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.cardaction#dialogaction

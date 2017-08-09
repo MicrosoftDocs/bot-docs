@@ -222,7 +222,7 @@ how many should be rolled. Once it has built the game structure
 it will pass it to a separate 'PlayGameDialog'.
  
 To start the dialog, the **triggerAction()** handler on this dialog allows a user to say
-something like "I'd like to roll some dice". It uses a regular expression to match the user's input but you could just as easily use a LUIS [intent](./bot-builder-nodejs-recognize-intent.md). 
+something like "I'd like to roll some dice". It uses a regular expression to match the user's input but you could just as easily use a [LUIS intent](./bot-builder-nodejs-recognize-intent-luis.md). 
  
 
 ```javascript
