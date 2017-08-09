@@ -23,6 +23,12 @@ bot.recognizer(new builder.LuisRecognizer(model));
 bot.recognizer(new builder.RegExpRecognizer( "CancelIntent", { en_us: /^(cancel|nevermind)/i, ja_jp: /^(キャンセル)/ }));
 // </addRegexRecognizer>
 
+// <bindCancelDialogToRegexRecognizer>
+bot.dialog('CancelDialog', function (session) {
+    session.endConversation("Ok, I'm canceling your order.");
+}).triggerAction({ matches: 'CancelIntent' });
+// </bindCancelDialogToRegexRecognizer>
+
 // Set Alarm dialog
 bot.dialog('/setAlarm', [
     function (session, args, next) {

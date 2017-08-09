@@ -11,5 +11,6 @@
 ## [Response templates](conversation-designer-response-templates.md)
 ## [Adaptive cards](conversation-designer-adaptive-cards.md)
 ## [Connect to channels](conversation-designer-deploy.md)
+## [Videos](conversation-designer-videos.md)
 ## [API reference](conversation-designer-context-object.md)
 ## [Release notes](conversation-designer-release-notes.md)

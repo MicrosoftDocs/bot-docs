@@ -52,7 +52,7 @@ The following task-focused how-to guides demonstrate various features of the Bot
 
 * [Respond to messages](bot-builder-nodejs-use-default-message-handler.md)
 * [Handle user actions](bot-builder-nodejs-dialog-actions.md)
-* [Recognize user intent](bot-builder-nodejs-recognize-intent.md)
+* [Recognize user intent](bot-builder-nodejs-recognize-intent-messages.md)
 * [Send a rich card](bot-builder-nodejs-send-rich-cards.md)
 * [Send attachments](bot-builder-nodejs-send-receive-attachments.md)
 * [Saving user data](bot-builder-nodejs-save-user-data.md)
