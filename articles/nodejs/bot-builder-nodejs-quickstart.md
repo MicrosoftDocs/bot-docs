@@ -28,7 +28,7 @@ Get started by completing the following prerequisite tasks:
 2. Create a folder for your bot.
 3. From a command prompt or terminal, navigate to the folder you just created.
 4. Run the following **npm** command:
-```
+```nodejs
 npm init
 ```
 
@@ -37,10 +37,10 @@ Follow the prompt on the screen to enter information about your bot and npm will
 ## Install the SDK
 Next, install the Bot Builder SDK for Node.js and <a href="http://restify.com/" target="_blank">restify</a> by running the following **npm** commands:
 
-   ```
-   npm install --save botbuilder
-   npm install --save restify
-   ```
+```nodejs
+npm install --save botbuilder
+npm install --save restify
+```
 
 Once you have the SDK and Restify in place, you're ready to write your bot.
 
@@ -64,7 +64,7 @@ First, you'll need to [download](https://emulator.botframework.com) and install 
 
 After installing the emulator, navigate to your bot's directory in a console window and start your bot:
 
-```
+```nodejs
 node app.js
 ```
    

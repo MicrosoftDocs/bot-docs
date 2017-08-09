@@ -15,7 +15,7 @@ These samples demonstrate task-focused bots that show how to take advantage of f
 ## Get the samples
 To get the samples, clone the [BotBuilder-Samples](https://github.com/Microsoft/BotBuilder-Samples) GitHub repository using Git.
 
-```
+```cmd
 git clone https://github.com/Microsoft/BotBuilder-Samples.git
 cd BotBuilder-Samples
 ```

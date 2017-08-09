@@ -77,7 +77,7 @@ Your URL will look similar to `https://<UserName>@<MyBotHandle>.scm.azurewebsite
 
 Connect your local Git repository to the bot hosted on Azure. A dialog will appear where you must provide the user name and password credentials you created earlier.
 
-```cli
+```cmd
 cd <MyGitRepo>
 git remote add azure <URLResultFromLastStep>
 git push azure master
@@ -87,7 +87,7 @@ git push azure master
 
 To update the site with your latest changes, run the following commands to commit the changes and push those changes to the Azure site:
 
-```cli
+```cmd
 git add .
 git commit -m "<your commit message>"
 git push azure master
