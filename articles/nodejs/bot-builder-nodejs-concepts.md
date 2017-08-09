@@ -45,7 +45,7 @@ You'll want to design your bot to be able to handle interruptions like requests 
 When users ask your bot for something, like "help" or "find news", your bot needs to understand what the user is asking for and then take the appropriate action. You can design your bot to recognize intents based on the user’s input and associate that intent with actions. 
 
 You can use the built-in regular expression recognizer that the Bot Builder SDK provides, call an external service such as the LUIS API, or implement a custom recognizer to determine the user's intent. 
-See [Recognize user intent](bot-builder-nodejs-recognize-intent.md) for examples that demonstrate how to add recognizers to your bot and use them to trigger actions.
+See [Recognize user intent](bot-builder-nodejs-recognize-intent-messages.md) for examples that demonstrate how to add recognizers to your bot and use them to trigger actions.
 
 
 ## Saving State

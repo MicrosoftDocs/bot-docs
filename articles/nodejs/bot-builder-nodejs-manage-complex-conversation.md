@@ -311,7 +311,7 @@ For a complete sample that shows how to manage a conversation by using dialogs i
 
 [SendAttachments]: bot-builder-nodejs-send-receive-attachments.md
 [SendCardWithButtons]: bot-builder-nodejs-send-rich-cards.md
-[RecognizeUserIntent]: bot-builder-nodejs-recognize-intent.md
+[RecognizeUserIntent]: bot-builder-nodejs-recognize-intent-messages.md
 [SaveUserData]: bot-builder-nodejs-save-user-data.md
 
 [UniversalBot]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.universalbot.html
