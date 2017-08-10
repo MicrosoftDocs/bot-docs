@@ -10,6 +10,9 @@ ROBOTS: NoIndex, NoFollow
 ---
 
 # Shared dialogs
+> [!IMPORTANT]
+> Conversation Designer is not available to all customers yet. More details on
+> availability of Conversation Designer will come later this year.
 
 Shared dialogs are reusable dialogs that you can share across multiple dialogs within your bot. For example, a Cafe bot could use the same order confirmation sub-flow in several different tasks. 
 

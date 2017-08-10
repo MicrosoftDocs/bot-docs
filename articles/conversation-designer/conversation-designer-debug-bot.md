@@ -10,6 +10,9 @@ ROBOTS: NoIndex, NoFollow
 ---
 
 # Test your Conversation Designer bot
+> [!IMPORTANT]
+> Conversation Designer is not available to all customers yet. More details on
+> availability of Conversation Designer will come later this year.
 
 The Conversation Designer offer useful debugging tools through several different Output window (located at the bottom of the screen). You can start testing and debugging by clicking on the **Test** button found on the upper right corner of the window. 
 

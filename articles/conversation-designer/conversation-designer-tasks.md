@@ -10,6 +10,9 @@ ROBOTS: NoIndex, NoFollow
 ---
 
 # Tasks in Conversation Designer
+> [!IMPORTANT]
+> Conversation Designer is not available to all customers yet. More details on
+> availability of Conversation Designer will come later this year.
 
 A Task represents a single conversation topic that your bot supports. For example, a cafe bot would have individual tasks to "find locations," "book a table," "order food," and "manage reservations."
 
