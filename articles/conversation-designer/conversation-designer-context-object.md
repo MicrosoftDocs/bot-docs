@@ -9,6 +9,9 @@ ms.date: 07/11/2017
 ROBOTS: NoIndex, NoFollow
 ---
 # API Reference
+> [!IMPORTANT]
+> Conversation Designer is not available to all customers yet. More details on
+> availability of Conversation Designer will come later this year.
 
 Conversation Designer gives you the ability to add custom business logic to your bot. These script functions are implemented in the **Scripts** editor. The functions are hooked up in various places like the conditional response templates, the task's *triggers* or *actions*, or the dialog states and they all receives a `context` object that is of type **[IConversationContext]** in their function parameters.
 

@@ -10,7 +10,9 @@ ROBOTS: NoIndex, NoFollow
 ---
 
 # Create a new Conversation Designer bot
-
+> [!IMPORTANT]
+> Conversation Designer is not available to all customers yet. More details on
+> availability of Conversation Designer will come later this year.
 
 This tutorial walks you through step-by-step instructions for creating a new bot. 
 

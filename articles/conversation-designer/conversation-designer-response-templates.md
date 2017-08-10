@@ -10,6 +10,9 @@ ROBOTS: NoIndex, NoFollow
 ---
 
 # Response template for Conversation Designer bots
+> [!IMPORTANT]
+> Conversation Designer is not available to all customers yet. More details on
+> availability of Conversation Designer will come later this year.
 
 Language generation enables your bot to communicate with the user in a rich and natural manner using variable response messages. These messages are managed through response templates in Conversation Designer.
 

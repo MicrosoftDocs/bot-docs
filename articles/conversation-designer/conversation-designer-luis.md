@@ -10,6 +10,9 @@ ROBOTS: NoIndex, NoFollow
 ---
 
 # Natural language understanding using LUIS.ai as the task trigger
+> [!IMPORTANT]
+> Conversation Designer is not available to all customers yet. More details on
+> availability of Conversation Designer will come later this year.
 
 Most often, user express their intent to perform a task in natural language. With Conversation Designer, you can easily 
 set up a natural language understanding task trigger for your bot powered by <a href="http://luis.ai" target="_blank">LUIS.ai</a>.

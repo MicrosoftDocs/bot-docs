@@ -9,6 +9,9 @@ ms.date: 07/04/2017
 ROBOTS: NoIndex, NoFollow
 ---
 # Task actions
+> [!IMPORTANT]
+> Conversation Designer is not available to all customers yet. More details on
+> availability of Conversation Designer will come later this year.
 
 Actions represent how a bot should respond to a specific task trigger. Available options are:
 
