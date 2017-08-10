@@ -150,25 +150,8 @@ Use the [Prompts.choice()][PromptsChoice] method to ask the user to **choose fro
 
 To specify the style of the list that is presented to the user, set the [IPromptOptions.listStyle](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ipromptoptions.html#liststyle) property. The following table shows the `ListStyle` enumeration values for this property.
 
-| Index | Name | Description |
-| ---- | ---- | ---- |
-| 0 | none | No list is rendered. Use this style of list when the list is included as part of a prompt. |
-| 1 | inline | Choices are rendered as an inline list of the form "1. red, 2. green, or 3. blue". |
-| 2 | list | Choices are rendered as a numbered list. |
-| 3 | button | On channels that support buttons, choices are rendered as buttons. On channels that do not support buttons, choices are rendered as text. |
-| 4 | auto | The style is selected automatically based on the channel and number of options. | 
 
-You can access this enum from the `builder` object or you can specify the style by name. For example, both statements in the following code snippet accomplish the same thing.
-
-```javascript
-// ListStyle specified as enum
-builder.Prompts.choice(session, "Which color?", "red|green|blue", builder.ListStyle.button);
-
-// ListStyle specified by name
-builder.Prompts.choice(session, "Which color?", "red|green|blue", "button");
-```
-
-Possible `ListStyle` enum values are as follows:
+The `ListStyle` enum values are as follows:
 | Index | Name | Description |
 | ---- | ---- | ---- |
 | 0 | none | No list is rendered. This is used when the list is included as part of the prompt. |
@@ -177,14 +160,14 @@ Possible `ListStyle` enum values are as follows:
 | 3 | button | Choices are rendered as buttons for channels that support buttons. For other channels they will be rendered as text. |
 | 4 | auto | The style is selected automatically based on the channel and number of options. | 
 
-You can access this enum from the `builder` object or you can specified the option by name. For example, both statements in the following code snippet accomplished the same thing.
+You can access this enum from the `builder` object or you can provide an index to choose a `ListStyle`. For example, both statements in the following code snippet accomplish the same thing.
 
 ```javascript
 // ListStyle passed in as Enum
-builder.Prompts.choice(session, "Which color?", "red|green|blue", builder.ListStyle.button);
+builder.Prompts.choice(session, "Which color?", "red|green|blue", { listStyle: builder.ListStyle.button });
 
-// ListStyle passed in as name
-builder.Prompts.choice(session, "Which color?", "red|green|blue", "button");
+// ListStyle passed in as index
+builder.Prompts.choice(session, "Which color?", "red|green|blue", { listStyle: 3 });
 ```
 
 To specify the list of options, you can use a pipe-delimited (`|`) string, an array of strings, or an object map.
