@@ -10,6 +10,9 @@ ROBOTS: NoIndex, NoFollow
 ---
 
 # Code recognizer as task trigger
+> [!IMPORTANT]
+> Conversation Designer is not available to all customers yet. More details on
+> availability of Conversation Designer will come later this year.
 
 Code recognizers enable you to write custom scripts to help perform a task. Regex-based expression evaluation or calling into other services can be used to help determine the user's intent. The custom script will instruct the conversation runtime to trigger a task. 
 

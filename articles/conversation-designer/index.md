@@ -9,6 +9,9 @@ ms.date: 07/04/2017
 ROBOTS: NoIndex, NoFollow
 ---
 # Conversation Designer
+> [!IMPORTANT]
+> Conversation Designer is not available to all customers yet. More details on
+> availability of Conversation Designer will come later this year.
 
 Conversation Designer is a powerful framework that provides a visual bot builder, a declarative model for defining bots, and a runtime that makes creating bots simple.
 

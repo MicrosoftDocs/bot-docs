@@ -10,6 +10,9 @@ ROBOTS: NoIndex, NoFollow
 ---
 
 # Connect to Microsoft Bot Framework Channels
+> [!IMPORTANT]
+> Conversation Designer is not available to all customers yet. More details on
+> availability of Conversation Designer will come later this year.
 
 Open the bot in the developer portal, click the **Settings** tab, and follow the instructions to [connect the bot to the channel](../portal-configure-channels.md).
 
