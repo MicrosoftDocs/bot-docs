@@ -10,6 +10,10 @@ ROBOTS: NoIndex, NoFollow
 ---
 
 # Conversation Designer videos
+> [!IMPORTANT]
+> Conversation Designer is not available to all customers yet. More details on
+> availability of Conversation Designer will come later this year.
+
 Conversation Designer has a YouTube channel where we post videos to help you learn about it. Here is the list of videos currently available on the YouTube channel: 
 
 - [Conversation Designer overview](https://www.youtube.com/watch?v=HVWl2nTeN5c&index=1&list=PL8bc0pP2kCO51qUAL4RaBOwybJjamaiic)

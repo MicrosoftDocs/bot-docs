@@ -10,6 +10,9 @@ ROBOTS: NoIndex, NoFollow
 ---
 
 # Define a dialog as a Do action
+> [!IMPORTANT]
+> Conversation Designer is not available to all customers yet. More details on
+> availability of Conversation Designer will come later this year.
 
 A dialog covers the conversational model for a specific task. For example, a cafe bot that helps users book a table could define a task called "Book Table". The **Do** action would be bound to a dialog that models the conversational flow between the bot and user. 
 
