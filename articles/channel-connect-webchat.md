@@ -1,6 +1,6 @@
 ---
 title: Connect a bot to the Web Chat channel | Microsoft Docs
-description: Learn how to use the web chat control control in your web page for a bot connected to the Web Chat channel.
+description: Learn how to use the web chat control in your web page for a bot connected to the Web Chat channel.
 author: RobStand
 ms.author: rstand
 manager: rstand
