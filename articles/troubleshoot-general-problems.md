@@ -48,7 +48,8 @@ The Connector library is the exposition of the REST API. The Builder library add
 
 ## What causes an error with HTTP status code 429 "Too Many Requests"?
 
- An error response with HTTP status code 429 indicates that too many requests have been issued in a given amount of time. One possible source for this error is [ngrok](https://ngrok.com/). The body of the response should include an explanation of the problem and may also specify the minimum required interval between requests.
+An error response with HTTP status code 429 indicates that too many requests have been issued in a given amount of time. The body of the response should include an explanation of the problem and may also specify the minimum required interval between requests. One possible source for this error is [ngrok](https://ngrok.com/). If you are on a free plan and running into ngrok's limits, go to the pricing and limits page on their website for more [options](https://ngrok.com/product#pricing). 
+ 
 
 ## How can I run background tasks in ASP.NET? 
 
