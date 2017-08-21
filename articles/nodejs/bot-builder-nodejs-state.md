@@ -48,7 +48,7 @@ bot.set(`persistConversationData`, false);
 
 ## Set data
 
-Since the Bot Builder SDK for Node.js implements each storage container as a JavaScript object, you can store any type of data that a JavaScript object supports. The following code samples show how to store primitive data, an array, and an object map.
+You can store simple JavaScript objects by saving them directly to a storage container. For complex object like Date, consider converting it to string. This is because state data are serialized and stored as JSON. The following code samples show how to store primitive data, an array, an object map, and a complex Date object.
 
 **Store primitive data**
 
@@ -81,6 +81,16 @@ session.userData.about = {
 }
 ```
 
+**Store Date and Time**
+For complex JavaScript object, convert it to a string before saving to storage container.
+
+```javascript
+var startDate = builder.EntityRecognizer.resolveTime([results.response]);
+
+// Date as string: "2017-08-23T05:00:00.000Z"
+session.userdata.start = startDate.toISOString();
+```
+
 ### Saving data
 
 Data that is created in each storage container will remain in memory until the container is saved. The Bot Builder SDK for Node.js sends data to the `ChatConnector` service in batches to be saved when there are messages to be sent. To save the data that exists in the storage containers without sending any messages, you can manually call the [`save`](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#save) method. If you do not call the `save` method, the data that exists in the storage containers will be persisted as part of the batch processing.
@@ -93,7 +103,7 @@ session.save();
 
 ## Get data
 
-To access the data that is saved in a particular storage container, simply reference the corresponding property. The following code samples show how to access data that was previously stored as primitive data, an array, and an object map.
+To access the data that is saved in a particular storage container, simply reference the corresponding property. The following code samples show how to access data that was previously stored as primitive data, an array, an object map, and a complex Date object.
 
 **Access primitive data**
 
@@ -122,6 +132,15 @@ var about = session.userData.about;
 session.send("User %s works at %s.", about.Profile.Name, about.Job.Company);
 ```
 
+**Access a Date object**
+
+Retrieve date data as string then convert it into a JavaScript's Date object.
+
+```javascript
+// startDate as a JavaScript Date object.
+var startDate = new Date(session.userdata.start);
+```
+
 ## Delete data
 
 By default, data that is stored in the `dialogData` container is cleared when a dialog is removed from the dialog stack. Likewise, data that is stored in the `conversationData` container and `privateConversationData` container is cleared when the `endConversation` method is called. However, to delete data stored in the `userData` container, you have to explicitly clear it.
@@ -140,20 +159,20 @@ Never set a data container `null` or remove it from the `session` object, as doi
 
 ## Manage data storage
 
-Under the hood, the Bot Builder SDK for Node.js stores state data using the Bot Framework State service, which is intended for prototyping only and is not designed for use by bots in a production environment. For performance and security reasons in the production environment, consider implementing one of the following data storage options:
+Under the hood, the Bot Builder SDK for Node.js stores state data using the Bot Connector State service, which is intended for prototyping only and is not designed for use by bots in a production environment. For performance and security reasons in the production environment, consider implementing one of the following data storage options:
 
-1. Use [Bot Builder SDK Azure Extensions](https://github.com/Microsoft/BotBuilder-Azure) to store bot data in your own Azure Table storage or Azure DocumentDB store.
+1. [Manage state data with Cosmos DB](bot-builder-nodejs-state-azure-cosmosdb.md)
 
-2. Create a custom implementation of `IBotStorage` to store bot data in the destination that you specify.
+2. [Manage state data with Table storage](bot-builder-nodejs-state-azure-table-storage.md)
 
-With either of these data storage options, the mechanism for setting and persisting data via the Bot Framework SDK for Node.js remains the same as described previously in this article.
+With either of these [Azure Extensions](https://www.npmjs.com/package/botbuilder-azure) options, the mechanism for setting and persisting data via the Bot Framework SDK for Node.js remains the same as described previously in this article.
 
 ## Next steps
 
 Now that you understand how to manage user state data, let's take a look at how you can use it to better manage conversation flow.
 
 > [!div class="nextstepaction"]
-> [Manage conversation flow](bot-builder-nodejs-dialog-manage-conversation-flow.md).
+> [Manage conversation flow](bot-builder-nodejs-dialog-manage-conversation-flow.md)
 
 ## Additional resources
 - [Prompt user for input](bot-builder-nodejs-dialog-prompt.md)
