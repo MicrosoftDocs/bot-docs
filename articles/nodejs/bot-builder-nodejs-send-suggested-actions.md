@@ -30,6 +30,8 @@ This code example shows how to send a message that presents three suggested acti
 
 When the user taps one of the suggested actions, the bot will receive a message from the user that contains the `value` of the corresponding action.
 
+Be aware that the `imBack` method will post the `value` to the chat window of the channel you are using. If this is not the desired effect, you can use the `postBack` method, which will still post the selection back to your bot, but will not display the selection in the chat window. Some channels do not support `postBack`, however, and in those instances the method will behave like `imBack`.
+
 ## Additional resources
 
 * [Preview features with the Channel Inspector][inspector]
