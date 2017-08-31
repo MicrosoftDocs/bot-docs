@@ -20,7 +20,7 @@ The Bot Framework provides the [conversationUpdate][conversationUpdate] event fo
 
 Your bot can greet the user or perform other first-run activities when a user joins the conversation. 
 
-[!include[conversationUpdate sample Node.js](../includes/snippet-code-node-contactrelationupdate-1.md)]
+[!include[conversationUpdate sample Node.js](../includes/snippet-code-node-conversationupdate-1.md)]
 
 ## Acknowledge add to contacts list
 
