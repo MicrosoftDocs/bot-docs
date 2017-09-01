@@ -44,7 +44,7 @@ var bot = new builder.UniversalBot(connector, [
     },
     function (session, results) {
         session.dialogData.reservationDate = builder.EntityRecognizer.resolveTime([results.response]);
-        builder.Prompts.text(session, "How many people are in your party?");
+        builder.Prompts.number(session, "How many people are in your party?");
     },
     function (session, results) {
         session.dialogData.partySize = results.response;
