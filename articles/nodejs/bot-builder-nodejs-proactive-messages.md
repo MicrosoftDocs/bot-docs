@@ -76,8 +76,7 @@ bot.dialog('/', function (session, args) {
     var message = 'Hey there, I\'m going to interrupt our conversation and start a survey in five seconds...';
     session.send(message);
 
-    message = 'You can also make me send a message by accessing: ';
-    message += 'http://localhost:' + server.address().port + '/api/CustomWebApi';
+    message = `You can also make me send a message by accessing: http://localhost:${server.address().port}/api/CustomWebApi`;
     session.send(message);
 
     setTimeout(() => {

@@ -31,7 +31,7 @@ bot.dialog('greetings', [
     },
     // Step 2
     function (session, results) {
-        session.endDialog('Hello %s!', results.response);
+        session.endDialog(`Hello ${results.response}!`);
     }
 ]);
 ```
@@ -59,8 +59,7 @@ var bot = new builder.UniversalBot(connector, [
         session.dialogData.reservationName = results.response;
         
         // Process request and display reservation details
-        session.send("Reservation confirmed. Reservation details: <br/>Date/Time: %s <br/>Party size: %s <br/>Reservation name: %s",
-            session.dialogData.reservationDate, session.dialogData.partySize, session.dialogData.reservationName);
+        session.send(`Reservation confirmed. Reservation details: <br/>Date/Time: ${session.dialogData.reservationDate} <br/>Party size: ${session.dialogData.partySize} <br/>Reservation name: ${session.dialogData.reservationName}`);
         session.endDialog();
     }
 ]);
@@ -111,7 +110,7 @@ var bot = new builder.UniversalBot(connector, [
     },
     function (session, results) {
         session.userData.profile = results.response; // Save user profile.
-        session.send('Hello %(name)s! I love %(company)s!', session.userData.profile);
+        session.send(`Hello ${session.userData.profile.name}! I love ${session.userData.profile.company}!`);
     }
 ]);
 bot.dialog('ensureProfile', [
@@ -171,8 +170,8 @@ bot.dialog('dinnerOrder', [
     function(session, results){
         if(results.response){
             session.dialogData.room = results.response;
-            var msg = "Thank you. Your order will be delivered to room #%s";
-            session.endConversation(msg, session.dialogData.room);
+            var msg = `Thank you. Your order will be delivered to room #${session.dialogData.room}`;
+            session.endConversation(msg);
         }
     }
 ])

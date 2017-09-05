@@ -76,7 +76,7 @@ bot.dialog('greetings', [
         builder.Prompts.text(session, 'Hi! What is your name?');
     },
     function (session, results) {
-        session.endDialog('Hello %s!', results.response);
+        session.endDialog(`Hello ${results.response}!`);
     }
 ]);
 ```

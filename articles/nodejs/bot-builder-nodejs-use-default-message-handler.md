@@ -36,7 +36,7 @@ server.post('/api/messages', connector.listen());
 // Create your bot with a function to receive messages from the user
 var bot = new builder.UniversalBot(connector, function (session) {
     // echo the user's message
-    session.send("You said: %s", session.message.text);
+    session.send(`You said: ${session.message.text}`);
 });
 ```
 
@@ -46,7 +46,7 @@ var bot = new builder.UniversalBot(connector, function (session) {
 
 Your message handler takes a session object which can be used to read the user's message and compose replies. 
 The [session.send()][SessionSend] method, which sends a reply to the user who sent the message, supports a flexible template syntax for formatting strings.
-For details about the template syntax, refer to the documentation for the [sprintf][sprintf] library.
+For details about the template syntax, refer to the documentation for JavaScript [Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals).
 
 ## Next steps
 
@@ -57,7 +57,6 @@ For details about the template syntax, refer to the documentation for the [sprin
 ## Additional resources
 
 * [session.send][SessionSend]
-* [sprintf][sprintf]
 * [Send attachments][SendAttachments]
 * [Add rich cards to messages][SendCardWithButtons]
 * [Add speech to messages](bot-builder-nodejs-text-to-speech.md)
@@ -67,7 +66,6 @@ For details about the template syntax, refer to the documentation for the [sprin
 
 [SendAttachments]: bot-builder-nodejs-send-receive-attachments.md
 [SendCardWithButtons]: bot-builder-nodejs-send-rich-cards.md
-[sprintf]: https://github.com/alexei/sprintf.js
 [emulator]: ../debug-bots-emulator.md
 [appId]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ichatconnectorsettings.html#appid
 [appPassword]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.ichatconnectorsettings.html#apppassword
