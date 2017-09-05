@@ -28,10 +28,11 @@ To be able to send an ad hoc message to a user, the bot must first collect and s
 The **address** property of the message includes all of the information that the bot will need to send an ad hoc message to the user later. 
 
 ```javascript
-bot.dialog('/', function(session, args) {
+bot.dialog('adhocDialog', function(session, args) {
     var savedAddress = session.message.address;
 
     // (Save this information somewhere that it can be accessed later, such as in a database, or session.userData)
+    session.userData.savedAddress = savedAddress;
 
     var message = 'Hello user, good to meet you! I now know your address and can send you notifications in the future.';
     session.send(message);
@@ -39,7 +40,6 @@ bot.dialog('/', function(session, args) {
 ```
 
 > [!NOTE]
-> For simplicity, this example does not specify how to store the user data. 
 > The bot can store the user data in any manner as long as the bot can access it later.
 
 After the bot has collected information about the user, it can send an ad hoc proactive message to the user at any time. 
@@ -68,8 +68,8 @@ To be able to send a dialog-based message to a user, the bot must first collect 
 The `session.message.address` object includes all of the information that the bot will need to send a dialog-based proactive message to the user. 
 
 ```javascript
-// root dialog
-bot.dialog('/', function (session, args) {
+// proactiveDialog dialog
+bot.dialog('proactiveDialog', function (session, args) {
 
     savedAddress = session.message.address;
 
@@ -90,7 +90,7 @@ When it is time to send the message, the bot creates a new dialog and adds it to
 ```javascript
 // initiate a dialog proactively 
 function startProactiveDialog(address) {
-    bot.beginDialog(address, "*:/survey");
+    bot.beginDialog(address, "*:survey");
 }
 ```
 
@@ -103,7 +103,7 @@ Then, it closes (by calling `session.endDialog()`), thereby returning control ba
 
 ```javascript
 // handle the proactive initiated dialog
-bot.dialog('/survey', function (session, args, next) {
+bot.dialog('survey', function (session, args, next) {
   if (session.message.text === "done") {
     session.send("Great, back to the original conversation");
     session.endDialog();
