@@ -31,7 +31,7 @@ bot.dialog('greetings', [
     },
     // Step 2
     function (session, results) {
-        session.endDialog('Hello %s!', results.response);
+        session.endDialog(`Hello ${results.response}!`);
     }
 ]);
 ```
@@ -51,7 +51,7 @@ bot.dialog('greetings', [
         session.beginDialog('askName');
     },
     function (session, results) {
-        session.endDialog('Hello %s!', results.response);
+        session.endDialog(`Hello ${results.response}!`);
     }
 ]);
 bot.dialog('askName', [
@@ -209,7 +209,7 @@ bot.dialog('getSalesData', [
     function (session, results) {
         if (results.response) {
             var region = salesData[results.response.entity];
-            session.send("We sold %(units)d units for a total of %(total)s.", region); 
+            session.send(`We sold ${region.units} units for a total of $${region.total}.`); 
         } else {
             session.send("OK");
         }
@@ -240,7 +240,6 @@ Now that you know how to step users through a waterfall and prompt them for info
 
 [UniversalBot]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.universalbot.html
 [ChatConnector]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.chatconnector.html
-[sprintf]: http://www.diveintojavascript.com/projects/javascript-sprintf
 [Session]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session
 
 

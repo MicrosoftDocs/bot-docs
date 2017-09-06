@@ -28,7 +28,7 @@ If you don't have a Twilio account, <a href="https://www.twilio.com/try-twilio" 
 
 ## Select or add a phone number
 
-<a href="https://www.twilio.com/user/account/phone-numbers/incoming" target="_blank">elect or add a phone number</a>. Click  the number to add it to the TwiML application you created.
+<a href="https://www.twilio.com/user/account/phone-numbers/incoming" target="_blank">Select or add a phone number</a>. Click  the number to add it to the TwiML application you created.
 
 ![Set phone number](~/media/channels/twi-StepPhone.png)
 

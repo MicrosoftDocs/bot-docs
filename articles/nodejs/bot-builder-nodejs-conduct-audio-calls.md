@@ -26,7 +26,7 @@ var calling = require('botbuilder-calling');
 // Setup Restify Server
 var server = restify.createServer();
 server.listen(process.env.port || process.env.PORT || 3978, function () {
-   console.log('%s listening to %s', server.name, server.url); 
+   console.log(`${server.name} listening to ${server.url}`); 
 });
 
 // Create calling bot

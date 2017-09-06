@@ -28,14 +28,14 @@ The Bot Framework currently supports eight types of rich cards:
 
 | Card type | Description |
 |----|----|
-| <a href="http://adaptivecards.io" target="_blank">AdaptiveCard</a> | A card that can contain any combination of text, speech, images, buttons, and input fields.  |
-| [AnimationCard][animationCard] | A card that can play animated GIFs or short videos. |
-| [AudioCard][audioCard] | A card that can play an audio file. |
-| [HeroCard][heroCard] | A card that typically contains a single large image, one or more buttons, and text. |
-| [ThumbnailCard][thumbnailCard] | A card that typically contains a single thumbnail image, one or more buttons, and text. |
-| [ReceiptCard][receiptCard] | A card that enables a bot to provide a receipt to the user. It typically contains the list of items to include on the receipt, tax and total information, and other text. |
-| [SignInCard][signinCard] | A card that enables a bot to request that a user sign-in. It typically contains text and one or more buttons that the user can click to initiate the sign-in process. |
-| [VideoCard][videoCard] | A card that can play videos. |
+| <a href="https://docs.microsoft.com/en-us/adaptive-cards/get-started/bots" target="_blank">Adaptive Card</a> | A card that can contain any combination of text, speech, images, buttons, and input fields.  |
+| [Animation Card][animationCard] | A card that can play animated GIFs or short videos. |
+| [Audio Card][audioCard] | A card that can play an audio file. |
+| [Hero Card][heroCard] | A card that typically contains a single large image, one or more buttons, and text. |
+| [Thumbnail Card][thumbnailCard] | A card that typically contains a single thumbnail image, one or more buttons, and text. |
+| [Receipt Card][receiptCard] | A card that enables a bot to provide a receipt to the user. It typically contains the list of items to include on the receipt, tax and total information, and other text. |
+| [SignIn Card][signinCard] | A card that enables a bot to request that a user sign-in. It typically contains text and one or more buttons that the user can click to initiate the sign-in process. |
+| [Video Card][videoCard] | A card that can play videos. |
 
 > [!TIP]
 > To display multiple rich cards in list format, set the activity's `AttachmentLayout` property to "list". 

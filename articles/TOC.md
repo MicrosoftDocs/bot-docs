@@ -78,7 +78,10 @@
 ### Channels
 #### [Build a Cortana skill](~/nodejs/bot-builder-nodejs-cortana-skill.md)
 #### [Conduct Skype calls](~/nodejs/bot-builder-nodejs-conduct-audio-calls.md)
-### [Manage state data](~/nodejs/bot-builder-nodejs-state.md)
+### State Data
+#### [Manage state data](~/nodejs/bot-builder-nodejs-state.md)
+#### [Manage state data with Cosmos DB](~/nodejs/bot-builder-nodejs-state-azure-cosmosdb.md)
+#### [Manage state data with Table storage](~/nodejs/bot-builder-nodejs-state-azure-table-storage.md)
 ### [Recognize intent from message content](~/nodejs/bot-builder-nodejs-recognize-intent-messages.md)
 ### [Recognize intent with LUIS](~/nodejs/bot-builder-nodejs-recognize-intent-luis.md)
 ### [Handle user and conversation events](~/nodejs/bot-builder-nodejs-handle-conversation-events.md)
