@@ -126,12 +126,11 @@ bot.dialog('orderDinner', [
 // Show dinner items in cart
 bot.dialog('showDinnerCart', function(session){
     for(var i = 1; i < session.conversationData.orders.length; i++){
-        session.send("You ordered: %(Description)s for a total of $%(Price)f.", 
-        session.conversationData.orders[i]);
+        session.send(`You ordered: ${session.conversationData.orders[i].Description} for a total of $${session.conversationData.orders[i].Price}.`);
     }
 
     // End this dialog
-    session.endDialog("Your total is: $%(Price)f", session.conversationData.orders[0]);
+    session.endDialog(`Your total is: $${session.conversationData.orders[0].Price}`);
 });
 ```
 
@@ -156,13 +155,12 @@ bot.dialog('orderDinner', [
 // Show dinner items in cart with the option to show total or not.
 bot.dialog('showDinnerCart', function(session, args){
     for(var i = 1; i < session.conversationData.orders.length; i++){
-        session.send("You ordered: %(Description)s for a total of $%(Price)f.", 
-        session.conversationData.orders[i]);
+        session.send(`You ordered: ${session.conversationData.orders[i].Description} for a total of $${session.conversationData.orders[i].Price}.`);
     }
 
     if(args && args.showTotal){
         // End this dialog with total.
-        session.endDialog("Your total is: $%(Price)f", session.conversationData.orders[0]);
+        session.endDialog(`Your total is: $${session.conversationData.orders[0].Price}`);
     }
     else{
         session.endDialog(); // Ends without a message.

@@ -40,7 +40,7 @@ bot.dialog('/localePicker', [
         session.preferredLocale(locale, function (err) {
             if (!err) {
                 // Locale files loaded
-                session.endDialog("Your preferred language is now %s.", results.response.entity);
+                session.endDialog(`Your preferred language is now ${results.response.entity}`);
             } else {
                 // Problem loading the selected locale
                 session.error(err);
@@ -114,7 +114,7 @@ The structure of the file is a simple JSON map of message IDs to localized text 
 The bot automatically retrieves the localized version of a message if you pass the message ID in a call to [session.send()](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#send) instead of language-specific text:
 
 ```javascript
-bot.dialog("/", [
+var bot = new builder.UniversalBot(connector, [
     function (session) {
         session.send("greeting");
         session.send("instructions");
@@ -122,7 +122,8 @@ bot.dialog("/", [
     },
     function (session) {
         builder.Prompts.text(session, "text_prompt");
-    },
+    }
+]);
 ```
 
 Internally, the SDK calls [`session.preferredLocale()`][preferredLocale] to get the user's preferred locale and then uses that in a call to [`session.localizer.gettext()`][GetText] to map the message ID to its localized text string.  There are times where you may need to manually call the localizer. For instance, the enum values passed to [`Prompts.choice()`][promptsChoice] are never automatically localized so you may need to manually retrieve a localized list prior to calling the prompt:
