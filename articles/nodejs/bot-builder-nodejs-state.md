@@ -159,13 +159,12 @@ Never set a data container `null` or remove it from the `session` object, as doi
 
 ## Manage data storage
 
-Under the hood, the Bot Builder SDK for Node.js stores state data using the Bot Framework State service, which is intended for prototyping only and is not designed for use by bots in a production environment. For performance and security reasons in the production environment, consider implementing one of the following data storage options:
+Under the hood, the Bot Builder SDK for Node.js stores state data using the Bot Connector State service, which is intended for prototyping only and is not designed for use by bots in a production environment. For performance and security reasons in the production environment, consider implementing one of the following data storage options:
 
-1. Use [Bot Builder SDK Azure Extensions](https://github.com/Microsoft/BotBuilder-Azure) to store bot data in your own Azure Table storage or Azure DocumentDB store.
+1. [Manage state data with Cosmos DB](bot-builder-nodejs-state-azure-cosmosdb.md)
+2. [Manage state data with Table storage](bot-builder-nodejs-state-azure-table-storage.md)
 
-2. Create a custom implementation of `IBotStorage` to store bot data in the destination that you specify.
-
-With either of these data storage options, the mechanism for setting and persisting data via the Bot Builder SDK for Node.js remains the same as described previously in this article.
+With either of these [Azure Extensions](https://www.npmjs.com/package/botbuilder-azure) options, the mechanism for setting and persisting data via the Bot Framework SDK for Node.js remains the same as described previously in this article.
 
 ## Next steps
 
