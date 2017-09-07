@@ -43,11 +43,11 @@ The message is encapsulated within an object that contains information that will
 
 This code snippet uses C# to receive a message from the user, add the message to the Azure Storage queue, and notify the user that the message has been queued. The [RelatesTo][RelatesTo] property of the queue message is set to a [ConversationReference][ConversationReference] object, which contains the information that is needed to respond to the user on the correct channel.
 
-[!code-csharp[Receive message](../includes/code/azure-bot-service-template-proactive.cs#receiveMessage)]
+[!code-csharp[Receive message](../includes/code/azure-bot-service-serverless-template-proactive.cs#receiveMessage)]
 
 This code snippet uses Node.js to receive a message from the user, add the message to the Azure Storage queue, and notify the user that the message has been queued. The [session.message.address][sessionMessageAddress] object contains the information that is needed to respond to the user on the correct channel.
 
-[!code-javascript[Receive message](../includes/code/azure-bot-service-template-proactive.js#receiveMessage)]
+[!code-javascript[Receive message](../includes/code/azure-bot-service-serverless-template-proactive.js#receiveMessage)]
 
 ### Trigger an Azure Function and send the message to the bot
 
@@ -80,11 +80,11 @@ After the message is added to the queue, the function is automatically triggered
 
 This code snippet shows the Function code in C#.
 
-[!code-csharp[queue trigger](../includes/code/azure-bot-service-template-proactive.cs#queueTrigger)]
+[!code-csharp[queue trigger](../includes/code/azure-bot-service-serverless-template-proactive.cs#queueTrigger)]
 
 This code snippet shows the Function code in Node.js.
 
-[!code-javascript[queue trigger](../includes/code/azure-bot-service-template-proactive.js#queueTrigger)]
+[!code-javascript[queue trigger](../includes/code/azure-bot-service-serverless-template-proactive.js#queueTrigger)]
 
 ### Receive the message from the Azure Function and send proactive message
 
@@ -92,11 +92,11 @@ Finally, the bot receives the message from the trigger function (step 7) and sen
 
 This code snippet uses C# to receive the message from the Azure Function and send a message to the user.
 
-[!code-csharp[handle message from function](../includes/code/azure-bot-service-template-proactive.cs#handleMessageFromFunction)]
+[!code-csharp[handle message from function](../includes/code/azure-bot-service-serverless-template-proactive.cs#handleMessageFromFunction)]
 
 This code snippet uses Node.js to receive the message from the Azure Function and send a message to the user.
 
-[!code-javascript[handle message from function](../includes/code/azure-bot-service-template-proactive.js#handleMessageFromFunction)]
+[!code-javascript[handle message from function](../includes/code/azure-bot-service-serverless-template-proactive.js#handleMessageFromFunction)]
 
 ## Extend default functionality
 

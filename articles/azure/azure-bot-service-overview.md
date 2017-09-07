@@ -12,8 +12,10 @@ ms.reviewer:
 
 # Azure Bot Service
 
-The Azure Bot Service provides an integrated environment that is purpose-built for bot development, enabling you to build, connect, test, deploy, and manage bots, all from one place. 
-It is powered by Microsoft Bot Framework and <a href="http://go.microsoft.com/fwlink/?linkID=747839" target="_blank">Azure Functions</a>, which means that your bot will run in a serverless environment on Azure that will scale based upon demand.
+The Azure Bot Service accelerates the process of developing a bot. It provisions a web host with one of five bot templates you can modify in 
+an integrated environment.
+
+[!include[Azure Bot Service hosting plans](../includes/snippet-abs-hosting-plans.md)] 
 
 ## Prerequisites
 
@@ -33,24 +35,22 @@ For a step-by-step tutorial that shows how to quickly build and test a simple bo
 By default, Azure Bot Service enables you to develop your bot directly in the browser using the Azure editor, without any need for a tool chain (i.e., local editor and source control). 
 The integrated chat window sits side-by-side with the Azure editor, which lets you test your bot on-the-fly as you write code in the browser. 
 
-Although using Azure editor eliminates the need for a local editor and source control, 
-Azure editor does not allow you to manage files (e.g., add files, rename files, or delete files). 
-If you want to the ability to manage files within your application, you can [set up continuous integration](azure-bot-service-continuous-integration.md) and use the integrated development environment (IDE) and source control system of your choice (e.g., Visual Studio Team, GitHub, Bitbucket). With continuous integration configured, any code changes that you commit to source control will automatically be deployed to Azure. Additionally, you will be able to [debug your bot locally](azure-bot-service-debug-bot.md) if you configure continuous integration. 
+Although using Azure editor eliminates the need for an editor and source control on your local computer, Azure editor does not allow you to manage files (e.g., add files, rename files, or delete files). If you have Visual Studio Community or above, you can develop and debug your C# bot locally, and publish your bot to Azure. Also, you can [set up continuous deployment](azure-bot-service-continuous-deployment.md) by using the  source control system of your choice, with easy setup for Visual Studio Online and Github. With continuous deployment configured, you can develop and debug in an IDE on your local computer, and any code changes that you commit to source control automatically deploy to Azure.  
 
 > [!NOTE]
-> If you configure continuous integration for your bot, you will no longer be able to edit code in the Azure editor.
+> After enabling continuous deployment, be sure to modify your code through continuous deployment only and not through other mechanisms to avoid conflict.
 
 ## Manage your bot 
 
-During the process of creating a bot using Azure Bot Service, you specify a name for your bot and generate its App ID and password. After your bot has been created, you can update its settings, configure it to run on one or more channels, or publish it to one or more channels. 
+During the process of creating a bot using Azure Bot Service, you specify a name for your bot and generate its App ID and password. After your bot has been created, you can change its settings, configure it to run on one or more channels, or publish it to one or more channels. 
 
 ## Next steps
 
-Learn more about building bots using the Azure Bot Service by reviewing these articles: 
+> [!div class="nextstepaction"]
+> [Create a bot with the Azure Bot Service](azure-bot-service-quickstart.md)
 
-- [Create a bot with Azure Bot Service](azure-bot-service-quickstart.md)
-- [Templates in the Azure Bot Service](azure-bot-service-templates.md)
-- [Set up continuous integration](azure-bot-service-continuous-integration.md)
-- [Debug an Azure Bot Service bot](azure-bot-service-debug-bot.md)
+
+## Additional resources
+
 
 If you encounter problems or have suggestions regarding the Azure Bot Service, see [Support](../resources-support.md) for a list of available resources. 

@@ -49,7 +49,7 @@ public static HttpResponseMessage Run(string myQueueItem, out BotMessage message
 // <handleMessageFromFunction>
 switch (activity.GetActivityType())
 {
-    case ActivityTypes.Trigger:
+    case ActivityTypes.Event:
         // handle proactive Message from function
         IEventActivity triggerEvent = activity;
         var message = JsonConvert.DeserializeObject<Message>(((JObject) triggerEvent.Value).GetValue("Message").ToString());
