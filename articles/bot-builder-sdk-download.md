@@ -1,3 +1,3 @@
 ---
-redirect_url: /bot-framework/resources-tools-downloads.md
+redirect_url: /bot-framework/resources-tools-downloads
 ---

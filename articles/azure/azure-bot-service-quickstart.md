@@ -17,7 +17,8 @@ ms.reviewer:
 > - [REST](../rest-api/bot-framework-rest-connector-quickstart.md)
 
 The Azure Bot Service accelerates the process of developing a bot 
-by providing an integrated environment that is purpose-built for bot development. 
+by provisioning a web host with one of five bot templates you can modify in 
+an integrated environment that is purpose-built for bot development. 
 This tutorial walks you through the process of creating and testing a bot by using the Azure Bot Service.
 
 ## Prerequisites
@@ -34,13 +35,13 @@ sign in to <a href="https://portal.azure.com" target="_blank">Azure</a> and comp
 
 1. Select **New** in the menu blade. 
 
-2. In the **New** blade, navigate to the Data + Analytics category, and select Bot Service. 
+2. In the **New** blade, navigate to the Data + Analytics category, and select **Bot Service**. 
 
 3. In the Bot Service blade, provide the requested information, and click **Create** to create the bot service and deploy it to the cloud. 
 
     - Set **App name** to your bot’s name. The name is used as the subdomain when your bot is deployed to the cloud (for example, *mybasicbot*.azurewebsites.net). 
     - Select the subscription to use.  
-    - Select the <a href="https://azure.microsoft.com/en-us/documentation/articles/resource-group-overview/" target="_blank">resource group</a> and <a href="https://azure.microsoft.com/en-us/regions/" target="_blank">location</a>.<br/>  
+    - Select the <a href="https://azure.microsoft.com/en-us/documentation/articles/resource-group-overview/" target="_blank">resource group</a>, [hosting plan](azure-bot-service-hosting.md), and <a href="https://azure.microsoft.com/en-us/regions/" target="_blank">location</a>.<br/>  
     ![Bot Service blade](../media/azure-bot-service-create-bot.png)
 
 4. Confirm that the bot service has been deployed.
@@ -62,8 +63,7 @@ Next, create an app ID and password for your bot, so that it will be able to aut
 
 4. Click **Finish and go back to Bot Framework**.
 
-5. Back in the Azure Portal, the **app ID** field is now auto-populated for you. 
-Paste the password that you copied (in step 3 above) into the password field.
+5. Back in the Azure Portal, assure the **app ID** field is auto-populated for you, and paste the password that you copied (in step 3 above) into the password field.
 > [!TIP]
 > If the **app ID** field is not auto-populated, you can retrieve it by signing in to the 
 > <a href="https://apps.dev.microsoft.com" target="_blank">Microsoft Application Registration Portal</a> 
@@ -71,9 +71,6 @@ Paste the password that you copied (in step 3 above) into the password field.
 
     ![password](../media/azure-bot-service-password.png)  
 
-> [!NOTE]
-> Click **Manage Microsoft App ID and password** only if you want to generate a secondary password for your bot now. 
-> In the future, you can manage app ID and password at any time by using the Bot Framework Portal, as described [here](../portal-register-bot.md#maintain). 
 
 ### Select your programming language 
 
@@ -107,12 +104,30 @@ Now that your bot is running in the cloud, try it out by typing a few messages i
 that's located to the right of the code editor in Azure. 
 You should see that the bot responds to each message you send by echoing back your message prefixed with the text *You said*. 
 
-![azure editor](../media/azure-bot-service-editor.png)  
+![azure bot service channels test](../media/azure-bot-service-editor.png)  
+
+
+## Deploy changes to your web app bot
+
+If you chose the App Service plan, follow these steps to modify your bot source and re-deploy your changes.
+
+1. In Azure, click your bot's **BUILD** tab, and click **Open online code editor**.
+2. Open the Dialogs folder, and click `EchoDialog.cs`.
+3. Change text in line 22 from `You said` to `You just said`.
+4. To deploy your changed source, click the Open Console icon.  
+    ![Console Icon](../media/azure-bot-service-console-icon.png)
+2. In the Console window, type **deploy.cmd**, and press the enter key.
+
+The console window shows the deployment's progress until it's complete.
+
+  
+> [!NOTE]
+> A bot on a consumption plan automatically deploys each time you modify a source file in the online editor.
 
 ## Next steps
 
 In this tutorial, you created a simple bot by using the Azure Bot Service 
 and verified the bot's functionality by using the built-in chat control within Azure. 
-At this point, you may want to [add more functionality](../bot-design-principles.md) to your bot or set up [continuous integration](azure-bot-service-continuous-integration.md). 
+At this point, you may want to [add more functionality](../bot-design-principles.md) to your bot or set up [continuous deployment](azure-bot-service-continuous-deployment.md). 
 You can also configure your bot to run on one or more channels and publish your bot, without ever leaving 
 the Azure portal. 
