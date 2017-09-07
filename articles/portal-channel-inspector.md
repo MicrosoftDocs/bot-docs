@@ -30,7 +30,23 @@ To see how a channel renders a particular feature, select the channel from **Cha
 The Channel Inspector shows a preview of the selected feature as it will be rendered by the specified channel. The **Notes** section conveys important information about message limitations and/or display changes. For example, some types of rich cards support only one image and some features may be down-rendered on certain channels. 
 
 > [!NOTE]
-> The Channel Inspector currently supports these channels: Email, Facebook, GroupMe, Kik, Skype, Slack, SMS, Microsoft Teams, Telegram, WebChat. Additional channels may be added in the future.
+> The Channel Inspector currently supports these channels: 
+> * Bing
+> * Cortana
+> * Email
+> * Facebook
+> * GroupMe
+> * Kik
+> * Skype
+> * Skype for Business
+> * Slack
+> * SMS
+> * Microsoft Teams
+> * Telegram
+> * WeChat
+> * WebChat
+> 
+> Additional channels may be added in the future.
 
 ## Features that can be previewed
 
@@ -38,7 +54,8 @@ The Channel Inspector currently allows you to preview the following features.
 
 |Feature | Description|
 | --- | ----|
- Buttons| Buttons that the user can click. Buttons appear on the conversation canvas with the message they belong to. |
+| Adaptive Cards | A card that can contain any combination of text, speech, images, buttons, and input fields. |
+| Buttons| Buttons that the user can click. Buttons appear on the conversation canvas with the message they belong to. |
 | Carousel| A compact, scrollable horizontal list of cards. For a vertical layout, use List.|
 | ChannelData| A way to pass metadata to access channel-specific functionality beyond cards, text, and attachments.|
 | Codesample| A multi-line, pre-formatted block of text designed to display computer code.|
@@ -48,15 +65,16 @@ The Channel Inspector currently allows you to preview the following features.
 | GroupChat| Bot sends messages to participate in group conversations. |
 | HeroCard| A formatted attachment typically containing a single large image, a tap action, and buttons (optional), along with descriptive text content. |
 | Images| Display of image attachments. |
-| List| A vertical list of cards. For a horizontal, scrollable layout, use Carousel.|
+| List Layout| A vertical list of cards. For a horizontal, scrollable layout, use Carousel.|
 | Location| Share the user's physical location with the bot. |
 | Markdown| Renders text formatted with Markdown.|
 | Members| Shares the list of members in the conversation with the bot during a group chat. |
-| ReceiptCard| Display a receipt to the user. |
-| SigninCard| Request the user to enter authentication credentials.|
-| ThumbnailCard| A formatted attachment containing a single small image (thumbnail), a tap action, and buttons (optional), along with descriptive text content. |
+| Receipt Card| Display a receipt to the user. |
+| Signin Card| Request the user to enter authentication credentials.|
+| Suggested Actions | Actions presented as buttons that the user can tap to provide input. |
+| Thumbnail Card| A formatted attachment containing a single small image (thumbnail), a tap action, and buttons (optional), along with descriptive text content. |
 | Typing| Displays a typing indicator. This is helpful to inform the user that the bot is still functioning, but performing some action in the background.|
-|  Video| Displays video attachments and play controls.|
+| Video| Displays video attachments and play controls.|
 
 ## Additional resources
 
