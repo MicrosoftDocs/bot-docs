@@ -22,27 +22,27 @@ When you create a bot using the Language understanding template, Azure Bot Servi
 
 > [!NOTE]
 > A bot that is created using the Language understanding template routes messages in the same manner as described for the 
-> [Basic template](azure-bot-service-template-basic.md).
+> [Basic template](azure-bot-service-serverless-template-basic.md).
 
 ## Code walkthrough
 
-Most activities that the bot receives will be of [type](../dotnet/bot-builder-dotnet-activities.md) `Message` and will contain the text and attachments that the user sent to the bot. To process an incoming message, the bot posts the message to `BasicLuisDialog` (in **BasicLuisDialog.csx**). 
+Most activities that the bot receives will be of [type](../dotnet/bot-builder-dotnet-activities.md) `Message` and will contain the text and attachments that the user sent to the bot. To process an incoming message, the bot posts the message to `BasicLuisDialog` (in **BasicLuisDialog.cs** or **BasicLuisDialog.csx**). 
 
-[!code-csharp[process Message activity](../includes/code/azure-bot-service-template-language-understanding.cs#processMessage)]
+[!code-csharp[process Message activity](../includes/code/azure-bot-service-serverless-template-language-understanding.cs#processMessage)]
 
-### BasicLuisDialog.csx
+### BasicLuisDialog
 
-**BasicLuisDialog.csx** contains the root dialog that controls the conversation with the user. The `BasicLuisDialog` object defines an intent method handler for each intent that you define in your LUIS application model. The naming convention for intent handlers is **\<intent name\>+Intent** (for example, `NoneIntent`). The `LuisIntent` method attribute defines a method as an intent handler and the name specified in the `LuisIntent` attribute must match the name of the corresponding intent that is specified in the LUIS application model. In this example, the dialog will handle the `None` intent (which LUIS returns if it cannot determine the intent) and the `MyIntent` intent (which you will need to define in your LUIS application model). 
+The **BasicLuisDialog.cs** or **BasicLuisDialog.csx** source file contains the root dialog that controls the conversation with the user. The `BasicLuisDialog` object defines an intent method handler for each intent that you define in your LUIS application model. The naming convention for intent handlers is **\<intent name\>+Intent** (for example, `NoneIntent`). The `LuisIntent` method attribute defines a method as an intent handler and the name specified in the `LuisIntent` attribute must match the name of the corresponding intent that is specified in the LUIS application model. In this example, the dialog will handle the `None` intent (which LUIS returns if it cannot determine the intent) and the `MyIntent` intent (which you will need to define in your LUIS application model). 
 
 The `BasicLuisDialog` object inherits from the [LuisDialog][LuisDialog] object, which contains the `StartAsync` and `MessageReceived` methods. When the dialog is instantiated, its `StartAsync` method runs and calls `IDialogContext.Wait` with the continuation delegate that will be called when there is a new message. In the initial case, there is an immediate message available (the one that launched the dialog) and the message is immediately passed to the `MessageReceived` method (in the `LuisDialog` object).
 
 The `MessageReceived` method calls your LUIS application model to determine intent and then calls the appropriate intent handler in the `BasicLuisDialog` object. The handler processes the intent and then waits for the next message from the user.
 
-[!code-csharp[BasicLuisDialog class](../includes/code/azure-bot-service-template-language-understanding.cs#BasicLuisDialog)]
+[!code-csharp[BasicLuisDialog class](../includes/code/azure-bot-service-serverless-template-language-understanding.cs#BasicLuisDialog)]
 
 ## Extend default functionality
 
-The Language understanding template provides a good foundation that you can build upon to create a bot that is capable of using natural language models to understand user intent. To learn more about developing bots with LUIS in .NET, see [Enable language understanding with LUIS](../dotnet/bot-builder-dotnet-luis-dialogs.md). To learn more about developing bots with LUIS in Node.js, see [Recognize intents and entities with LUIS](../nodejs/bot-builder-nodejs-recognize-intent-luis.md).
+The Language understanding template provides a good foundation that you can build upon to create a bot that is capable of using natural language models to understand user intent. To learn more about developing bots with LUIS in .NET, see [Enable language understanding with LUIS](../dotnet/bot-builder-dotnet-luis-dialogs.md). To learn more about developing bots with LUIS in Node.js, see [Recognize user intent](../nodejs/bot-builder-nodejs-recognize-intent.md).
 
 ## Additional resources
 
@@ -50,7 +50,7 @@ The Language understanding template provides a good foundation that you can buil
 - [Templates in the Azure Bot Service](azure-bot-service-templates.md)
 - <a href="https://www.luis.ai" target="_blank">LUIS</a>
 - [Enable language understanding with LUIS (.NET)](../dotnet/bot-builder-dotnet-luis-dialogs.md)
-- [Recognize intents and entities with LUIS (Node.js)](../nodejs/bot-builder-nodejs-recognize-intent-luis.md)
+- [Recognize user intent (Node.js)](../nodejs/bot-builder-nodejs-recognize-intent.md)
 - <a href="https://github.com/Microsoft/BotBuilder-Samples" target="_blank">Bot Builder Samples GitHub repository</a>
 - [Bot Builder SDK for .NET](../dotnet/bot-builder-dotnet-overview.md)
 - [Bot Builder SDK for Node.js](../nodejs/index.md)

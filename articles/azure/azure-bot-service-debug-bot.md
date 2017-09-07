@@ -6,21 +6,27 @@ ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 08/04/2017
+ms.date: 08/09/2017
 ms.reviewer: 
 ---
 
 # Debug an Azure Bot Service bot
 
-Azure Bot Service bots are built upon the Azure Functions serverless architecture. When you create a bot using Azure Bot Service, the source code for your bot is initially accessible only via Azure and therefore cannot be debugged locally. However, if you [set up continuous integration](azure-bot-service-continuous-integration.md), you can manage the application's files using the integrated development environment (IDE) and source control system of your choice and will be able to debug your bot locally. This article describes how to debug your bot after you have enabled continuous integration.
+Azure Bot Service bots are built as Azure App Service web apps, or as code running in a consumption plan upon the Azure Functions serverless architecture. This article describes how to debug your bot after you have set up a publishing process. By downloading a zip file that contains your bot source, you can develop and debug using an integrated development environment (IDE) such as Visual Studio or Visual Studio Code. From your computer, you can update your bot on Azure Bot Service by publishing from Visual Studio, or by publishing with every check-in to your source control service through continuous deployment.
+
+## Publish any bot source using continuous deployment
+
+You can publish bot source to Azure using continuous deployment. To set up continuous deployment, [follow these steps](azure-bot-service-continuous-deployment.md) before proceeding.  
 
 ## Debug a Node.js bot
+
+Follow steps in this section to debug a bot written in Node.js.
 
 ### Prerequisites
 
 Before you can debug your Node.js bot, you must complete these tasks.
 
-- Download the source code for your bot (from Azure), as described in [Set up continuous integration](azure-bot-service-continuous-integration.md).
+- Download the source code for your bot (from Azure), as described in [Set up continuous deployment](azure-bot-service-continuous-deployment.md).
 - Download and install the [Bot Framework Emulator](../debug-bots-emulator.md).
 - Download and install a code editor such as <a href="https://code.visualstudio.com" target="_blank">Visual Studio Code</a>.
 
@@ -44,7 +50,7 @@ Additionally, you can view log details from the Node runtime in the terminal win
 
 ### Debug a Node.js bot using breakpoints in Visual Studio Code
 
-If you need more than logs and request / response traces to debug your bot, you can use a local IDE such as Visual Studio Code to debug your code using breakpoints. Using VS Code to debug your bot can be beneficial because you can make changes locally within the editor while you are debugging, and when you push changes to the remote repository, those changes will automatically be applied to your bot in the cloud (since you have enabled continuous integration). 
+If you need more than logs and request / response traces to debug your bot, you can use a local IDE such as Visual Studio Code to debug your code using breakpoints. Using VS Code to debug your bot can be beneficial because you can make changes locally within the editor while you are debugging, and when you push changes to the remote repository, those changes will automatically be applied to your bot in the cloud (since you have enabled continuous deployment). 
 
 First, launch VS Code and open the local folder where the source code for your bot is located.
 
@@ -74,15 +80,15 @@ After you have connected the emulator to your bot, send a message to your bot by
 
 ![Debug in VS Code](../media/mac-azureservice-debug-vsbreakpoint.png)
 
-##<a id="debug-csharp"></a> Debug a C\# bot
+##<a id="debug-csharp-serverless"></a> Debug a consumption plan C\# script bot
 
-The C\# environment in Azure Bot Service has more in common with Node.js than a typical C\# application because it requires a runtime host, much like the Node engine. In Azure, the runtime is part of the hosting environment in the cloud, but you must replicate that environment locally on your desktop. 
+The consumption plan serverless C\# environment in Azure Bot Service has more in common with Node.js than a typical C\# application because it requires a runtime host, much like the Node engine. In Azure, the runtime is part of the hosting environment in the cloud, but you must replicate that environment locally on your desktop. 
 
 ### Prerequisites
 
-Before you can debug your C# bot, you must complete these tasks.
+Before you can debug your consumption plan C# bot, you must complete these tasks.
 
-- Download the source code for your bot (from Azure), as described in [Set up continuous integration](azure-bot-service-continuous-integration.md).
+- Download the source code for your bot (from Azure), as described in [Set up continuous deployment](azure-bot-service-continuous-deployment.md).
 - Download and install the [Bot Framework Emulator](../debug-bots-emulator.md).
 - Install the <a href="https://www.npmjs.com/package/azure-functions-cli" target="_blank">Azure Functions CLI</a>.
 - Install the <a href="https://github.com/dotnet/cli" target="_blank">DotNet CLI</a>.
@@ -95,13 +101,13 @@ If you want to be able to debug your code by using breakpoints in Visual Studio 
 > [!NOTE]
 > Visual Studio Code is not currently supported.
 
-### Debug a C# bot using the Bot Framework Emulator
+### Debug a consumption plan C# script bot using the Bot Framework Emulator
 
 The simplest way to debug your bot locally is to start the bot and then connect to it from Bot Framework Emulator. 
 First, open a command prompt and navigate to the folder where the **project.json** file is located in your repository. Then, run the command `dotnet restore` to restore the various packages that are referenced in your bot.
 
 > [!NOTE]
-> Visual Studio 2017 RC changes how Visual Studio handles dependencies. 
+> Visual Studio 2017 changes how Visual Studio handles dependencies. 
 > While Visual Studio 2015 uses **project.json** to handle dependencies, 
 > Visual Studio 2017 uses a **.csproj** model when loading in Visual Studio. 
 > If you are using Visual Studio 2017, <a href="https://aka.ms/bf-debug-project">download this **.csproj** file</a> 
@@ -125,7 +131,7 @@ Additionally, you can view log details the console window.
 
 ![Console window](../media/csharp-azureservice-debug-debughostlogging.png)
 
-### Debug a C# bot using breakpoints in Visual Studio
+### Debug a consumption plan C# bot using breakpoints in Visual Studio
 
 To debug your bot using breakpoints in Visual Studio 2017, stop the **DebugHost.cmd** script, and load the solution for your project (included as part of the repository) in Visual Studio. Then, click **Task Runner Explorer** at the bottom of the Visual Studio window.
 
@@ -151,6 +157,26 @@ You can also set breakpoints for your bot. The breakpoints are hit only after cl
 > you must do some additional work to enable queue storage that is used between the trigger function 
 > and the bot function. More information on this topic will be made available soon.
 
-## Additional resources
+## Debug an Azure App Service web app C# bot
 
-- [Set up continuous integration](azure-bot-service-continuous-integration.md)
+You can debug a C# bot Azure Bot Service web app locally in Visual Studio. 
+
+
+### Prerequisites
+
+Before you can debug your web app C# bot, you must complete these tasks.
+
+- Download and install the [Bot Framework Channel Emulator](../debug-bots-emulator.md).
+- Download and install <a href="https://www.visualstudio.com/downloads/" target="_blank">Visual Studio 2017</a> (Community Edition or above).
+
+### Get and debug your source code
+
+Follow these steps to download your C# bot source. 
+
+1. In the Azure Portal, click your Bot Service, click the **BUILD** tab, and click **Download zip file**.
+3. Extract the contents of the downloaded zip file to a local folder.
+4. In Explorer, double-click the .sln file.
+5. Click **Debug**, and click **Start Debugging**. Your bot's `default.htm` page appears. Note the address in the location bar.
+6. In the Bot Framework Channel Emulator, click the blue location bar, and enter an address similar to `http://localhost:3984/api/messages`. Your port number might be different.
+
+You are now debugging locally. You can simulate user activity in the emulator, and set breakpoints on your code in Visual Studio. You can then [re-publish your bot to Azure](azure-bot-service-continuous-deployment.md).

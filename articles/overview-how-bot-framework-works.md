@@ -69,7 +69,7 @@ The [Bot Framework Emulator](~/debug-bots-emulator.md) is a desktop application 
 You may also use the debugger included in [Visual Studio Code](~/debug-bots-locally-vscode.md). Debugging some languages may require additional extensions and configuration.
 
 ## Deploy to the cloud
-You can host your bot on any reachable service, such as Azure. If you build a bot with the Bot Builder SDK for .NET, you can deploy directly from [Visual Studio](~/deploy-bot-visual-studio.md). You can also deploy a bot with continuous integration from a git repository or GitHub.
+You can host your bot on any reachable service, such as Azure. If you build a bot with the Bot Builder SDK for .NET, you can deploy directly from [Visual Studio](~/deploy-bot-visual-studio.md). You can also deploy a bot with continuous deployment from a git repository or GitHub.
 
 ## Register a bot
 When you finish your bot, [register](~/portal-register-bot.md) it on the Developer Portal. The [Bot Framework Portal](https://dev.botframework.com/) provides a dashboard interface to perform many bot management and connectivity tasks such as configuring channels, managing credentials, connecting to Azure App Insights, or generating web embed codes. Registering your bot with the Bot Framework generates unique credentials used for authentication.

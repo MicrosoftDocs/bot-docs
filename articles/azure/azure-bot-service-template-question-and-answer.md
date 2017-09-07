@@ -16,7 +16,7 @@ To create a bot that can answer frequently asked questions (FAQs), choose the [Q
 
 > [!NOTE]
 > A bot that is created using the Question and Answer template routes messages 
-> in the same manner as described for the [Basic template](azure-bot-service-template-basic.md).
+> in the same manner as described for the [Basic template](azure-bot-service-serverless-template-basic.md).
 
 ## Specify a knowledge base for your bot
 
@@ -26,17 +26,17 @@ When you use the Question and Answer template to create a bot with the Azure Bot
 
 ## Code walkthrough
 
-Most activities that the bot receives will be of [type](../dotnet/bot-builder-dotnet-activities.md) `Message` and will contain the text and attachments that the user sent to the bot. To process an incoming message, the bot posts the message to `BasicQnAMakerDialog` (in **BasicQnAMakerDialog.csx**). 
+Most activities that the bot receives will be of [type](../dotnet/bot-builder-dotnet-activities.md) `Message` and will contain the text and attachments that the user sent to the bot. To process an incoming message, the bot posts the message to `BasicQnAMakerDialog` (in **BasicQnAMakerDialog.cs** or **BasicQnAMakerDialog.csx**). 
 
 This code snippet uses C# to post an incoming message to `BasicQnAMakerDialog`.
 
-[!code-csharp[process message](../includes/code/azure-bot-service-template-question-and-answer.cs#processMessage)]
+[!code-csharp[process message](../includes/code/azure-bot-service-serverless-template-question-and-answer.cs#processMessage)]
 
 This code snippet uses Node.js to post an incoming message to `BasicQnAMakerDialog`.
 
-[!code-javascript[process message](../includes/code/azure-bot-service-template-question-and-answer.js#processMessage)]
+[!code-javascript[process message](../includes/code/azure-bot-service-serverless-template-question-and-answer.js#processMessage)]
 
-### BasicQnAMakerDialog.csx
+### BasicQnAMakerDialog
 
 The `BasicQnAMakerDialog` object inherits from the `QnAMakerDialog` object, which contains the `StartAsync` and `MessageReceived` methods. When the dialog is instantiated, its `StartAsync` method runs and calls `IDialogContext.Wait` with the continuation delegate that will be called when there is a new message. In the initial case, there is an immediate message available (the one that launched the dialog) and the message is immediately passed to the `MessageReceived` method. The `MessageReceived` method calls the QnA Maker service and returns the response to the user.
 
@@ -55,11 +55,11 @@ The call to invoke the QnA Maker service can include up to four parameters:
 
 This code snippet uses C# to invoke the QnA Maker service.
 
-[!code-csharp[BasicQnAMakerDialog](../includes/code/azure-bot-service-template-question-and-answer.cs#BasicQnAMakerDialog)]
+[!code-csharp[BasicQnAMakerDialog](../includes/code/azure-bot-service-serverless-template-question-and-answer.cs#BasicQnAMakerDialog)]
 
 This code snippet uses Node.js to invoke the QnA Maker service.
 
-[!code-javascript[BasicQnAMakerDialog](../includes/code/azure-bot-service-template-question-and-answer.js#BasicQnAMakerDialog)]
+[!code-javascript[BasicQnAMakerDialog](../includes/code/azure-bot-service-serverless-template-question-and-answer.js#BasicQnAMakerDialog)]
 
 ## Extend default functionality
 
