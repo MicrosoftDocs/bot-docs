@@ -28,6 +28,7 @@ Get started by completing the following prerequisite tasks:
 2. Create a folder for your bot.
 3. From a command prompt or terminal, navigate to the folder you just created.
 4. Run the following **npm** command:
+
 ```nodejs
 npm init
 ```
