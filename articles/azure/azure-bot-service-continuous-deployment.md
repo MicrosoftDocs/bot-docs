@@ -73,8 +73,8 @@ Follow these steps if you want to use a source control service *other than* Visu
 
 Choose the deployment source for your bot and connect your repository. 
 
-1. Within the Azure Poral, in your Azure bot, click the **Settings** tab and expand the **Continuous deployment** section.  
-2. Click **Set up integration source**.   
+1. Within the Azure Poral, in your Azure bot, click the **SETTINGS** tab and click **Configure** to expand the **Continuous deployment** section.  
+2. Follow the steps and click the checkbox to confirm you're ready. 
 3. Click **Configure**, select the deployment source that corresponds to the source control system where you previously created the empty repository, and complete the steps to connect it.   
 
 

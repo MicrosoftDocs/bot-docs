@@ -66,7 +66,7 @@
 #### [Replace dialogs](~/nodejs/bot-builder-nodejs-dialog-replace.md)
 #### [Handle user actions](~/nodejs/bot-builder-nodejs-dialog-actions.md)
 ### Messages
-#### [Send and receive messages](~/nodejs/bot-builder-nodejs-use-default-message-handler.md) 
+#### [Create messages](~/nodejs/bot-builder-nodejs-message-create.md) 
 #### [Send and receive attachments](~/nodejs/bot-builder-nodejs-send-receive-attachments.md) 
 #### [Send proactive messages](~/nodejs/bot-builder-nodejs-proactive-messages.md)
 #### [Add rich cards to messages](~/nodejs/bot-builder-nodejs-send-rich-cards.md)
