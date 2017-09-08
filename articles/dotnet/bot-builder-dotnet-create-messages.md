@@ -58,7 +58,7 @@ These styles are supported when `TextFormat` is set to "xml":
 | hyperlink | \<a href="http://www.bing.com"\>bing\</a\> | <a href="http://www.bing.com">bing</a> |
 
 > [!NOTE]
-> The `TextFormat` **xml** is supported only by the Skype channel. 
+> The `TextFormat` **xml** is supported only by the Microsoft Teams and Skype channels. 
 
 ## Attachments
 
