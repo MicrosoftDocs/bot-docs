@@ -35,11 +35,11 @@ When you change a source file in the online code editor, you must run the deploy
 
 ## Download source code
 
-You can download a zip file that contains all source files, a Visual Studio solution file, and a configuration file that lets you publish from Visual Studio. Using these files, you can modify and debug your bot in Visual Studio, or your favorite IDE, and test it with the Bot Framework Emulator. Once you are ready to publish, you can setup publishing directly from Visual Studio by importing the publish profile saved in the `.PublishSettings` file within the PostDeployScripts folder. For more information, see [Publish C# bot on App Service plan from Visual Studio](azure-bot-service-continuous-deployment.md).
+You can download a zip file that contains your bot's full source code in a Visual Studio solution. You can then edit and debug your bot in Visual Studio, or your favorite IDE, and test it with the Bot Framework Emulator. Once you are ready to publish, you can setup publishing directly from Visual Studio by importing the publish profile saved in the `.PublishSettings` file within the PostDeployScripts folder. For more information, see [Publish C# bot on App Service plan from Visual Studio](azure-bot-service-continuous-deployment.md).
 
 ## Continuous deployment from source control
 
-Continuous deployment lets you re-publish to Azure whenever you check a code change in to your source control service. If you work in a team and need to share code in a source control system, then you should setup continuous deployment and use the integrated development environment (IDE) and source control system of your choice. 
+If you work in a team and need to share code in a source control system, then you should setup continuous deployment and use the integrated development environment (IDE) and source control system of your choice. Using continuous deployment, any code changes that you commit to source control are automatically deployed to Azure.
 
 > [!NOTE]
 > Some templates provided by the Azure Bot Service, and especially templates on a consumption plan, 
