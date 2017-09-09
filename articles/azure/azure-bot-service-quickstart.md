@@ -42,7 +42,10 @@ sign in to <a href="https://portal.azure.com" target="_blank">Azure</a> and comp
     - Set **App name** to your bot’s name. The name is used as the subdomain when your bot is deployed to the cloud (for example, *mybasicbot*.azurewebsites.net). 
     - Select the subscription to use.  
     - Select the <a href="https://azure.microsoft.com/en-us/documentation/articles/resource-group-overview/" target="_blank">resource group</a>, [hosting plan](azure-bot-service-hosting.md), and <a href="https://azure.microsoft.com/en-us/regions/" target="_blank">location</a>.<br/>  
+
     ![Bot Service blade](../media/azure-bot-service-create-bot.png)
+
+    >[!WARNING] Do not check the **Pin to dashboard** checkbox. There is a known issue when this checkbox is checked. This issue will be fixed soon.
 
 4. Confirm that the bot service has been deployed.
     - Click **Notifications** (the bell icon that is located along the top edge of the Azure portal). The notification will change from **Deployment started** to **Deployment succeeded**. 
