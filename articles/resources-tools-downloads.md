@@ -9,9 +9,9 @@ ms.prod: bot-framework
 ms.date: 06/27/2017
 ms.reviewer:
 ---
-# Bot Framework SDKs and tools
+# Bot Framework SDK and tools
 
-The Bot Builder SDKs provide libraries, samples, and tools to help you build and debug bots. To get started building bots, download the SDK for the platform you are using, either C# on .NET or Node.js. You can download the SDKs as packages or you can get the source code.
+The Bot Builder SDK provides libraries, samples, and tools to help you build and debug bots. To get started building bots, download the SDK for the platform you are using, either C# on .NET or Node.js. You can download the SDK as packages or you can get the source code.
 
 ## Get the Bot Builder SDK for .NET
 The Bot Builder SDK for .NET leverages C# to provide a familiar way for .NET developers to write bots. It is a powerful framework for constructing bots that can handle both free-form interactions and more guided conversations where the user selects from possible values.

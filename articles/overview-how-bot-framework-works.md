@@ -18,7 +18,7 @@ Bots are apps that offer a conversational interface as the best solution to the 
 ![Architecture overview diagram](~/media/how-it-works/architecture-resize.png)
 
 ### Bot Builder
-To help you build bots with C# or JavaScript, the Bot Framework includes Bot Builder SDKs. The SDKs provide libraries, samples, and tools to help you build and debug bots. The SDKs contain built-in dialogs to handle user interactions ranging from a basic Yes/No to complex disambiguation. Built-in recognizers and event handlers help guide the user through a conversation. 
+To help you build bots with C# or JavaScript, the Bot Framework includes Bot Builder SDK. The SDK provides libraries, samples, and tools to help you build and debug bots. The SDK contains built-in dialogs to handle user interactions ranging from a basic Yes/No to complex disambiguation. Built-in recognizers and event handlers help guide the user through a conversation. 
 
 The [Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-overview.md) leverages C# to provide a familiar way for .NET developers to write bots. It is a powerful framework for constructing bots that can handle both free-form interactions and more guided conversations where the user selects from possible values.
 
