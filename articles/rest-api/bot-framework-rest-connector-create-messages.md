@@ -17,20 +17,20 @@ Your bot will send [Activity][Activity] objects of type **message** to communica
 
 To create a basic message that contains only plain text, set the `text` property of the [Activity][Activity] object to the contents of the message and set the `locale` property to the locale of the sender. 
 
-The `textFormat` property the [Activity][Activity] object can be used to specify the format of the text. The value of the `textFormat` property defaults to **markdown** and interprets text using Markdown formatting standards, 
-but you can also specify **plain** to interpret text as plain text or **xml** to interpret text as XML markup.
+The `textFormat` property the [Activity][Activity] object can be used to specify the format of the text. The value of the `textFormat` property defaults to **markdown** and interprets text using Markdown formatting standards, but you can also specify **plain** to interpret text as plain text or **xml** to interpret text as XML markup.
 
-If a channel is not capable of rendering the specified formatting, the message will be rendered using reasonable approximation. For example, Markdown **bold** text for a message sent via text messaging will be rendered as \*bold\*. Only channels that support fixed width formats and HTML can render standard table markdown.
+If a channel is not capable of rendering the specified formatting, the message will be rendered using reasonable approximation. For example, Markdown **bold** text for a message sent via text messaging will be rendered as \*bold\*. 
 
+### Markdown text format
 These styles are supported when `textFormat` is set to **markdown**:  
 
 | Style | Markdown | Example | 
 | ---- | ---- | ---- | 
 | bold | \*\*text\*\* | **text** |
 | italic | \*text\* | *text* |
-| header (1-5) | # H1 | #H1 |
+| header (1-5) | # H1 | # H1 |
 | strikethrough | \~\~text\~\~ | ~~text~~ |
-| horizontal rule | --- |  |
+| horizontal rule | ---- |  |
 | unordered list | \* text |  <ul><li>text</li></ul> |
 | ordered list | 1. text | 1. text |
 | preformatted text | \`text\` | `text`  |
@@ -38,7 +38,11 @@ These styles are supported when `textFormat` is set to **markdown**:
 | hyperlink | \[bing](http://www.bing.com) | [bing](http://www.bing.com) |
 | image link| !\[duck](http://aka.ms/Fo983c) | ![duck](http://aka.ms/Fo983c) |
 
-These styles are supported when `textFormat` is set to **xml**:  
+> [!NOTE]
+> HTML tags in **Markdown** is not supported in Microsoft Botframework Web Chat channels. If you need to use HTML tags in your **Markdown**, you can render them in a [Direct Line](~/channel-connect-directline.md) channel that supports it. Alternatively, you can use the HTML tags below by setting the `textFormat` to **xml** and connect your bot to Skype channel.
+
+### XML text format
+These styles are supported when `textFormat` is set to **xml**: 
 
 | Style | Markdown | Example | 
 |----|----|----|----|
