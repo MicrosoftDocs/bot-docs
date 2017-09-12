@@ -2,7 +2,7 @@
 	- What is the Bot Framework?
 	- Scenarios
 	- Key Concepts
-	- SDKs and Tools
+	- SDK and Tools
 - Developing Bots
 	- Build Your First Bot in 5 Minutes
 	- Designing Bots

@@ -351,7 +351,7 @@ description:
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>SDKs and tools</h3>
+                                            <h3>SDK and tools</h3>
                                             <p>Get the Bot Framework SDK and tools for building bots.</p>
                                         </div>
                                     </div>
