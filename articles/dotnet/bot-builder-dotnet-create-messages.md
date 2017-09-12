@@ -58,7 +58,7 @@ These styles are supported when `TextFormat` is set to "xml":
 | hyperlink | \<a href="http://www.bing.com"\>bing\</a\> | <a href="http://www.bing.com">bing</a> |
 
 > [!NOTE]
-> The `TextFormat` **xml** is supported only by the Skype channel. 
+> The `TextFormat` **xml** is supported only by the Microsoft Teams and Skype channels. 
 
 ## Attachments
 
@@ -146,7 +146,7 @@ The `Speak` property of a message activity can be used to specify the text to be
 
 ## Suggested actions
 
-The `SuggestedActions` property of a message activity can be used to present buttons that the user can tap to provide input. Unlike buttons that appear within rich cards (which remain visable and accessible to the user even after being tapped), buttons that appear within the suggested actions pane will disappear after the user makes a selection. For details, see [Add suggested actions to messages](bot-builder-dotnet-add-suggested-actions.md).
+The `SuggestedActions` property of a message activity can be used to present buttons that the user can tap to provide input. Unlike buttons that appear within rich cards (which remain visible and accessible to the user even after being tapped), buttons that appear within the suggested actions pane will disappear after the user makes a selection. For details, see [Add suggested actions to messages](bot-builder-dotnet-add-suggested-actions.md).
 
 ## Next steps
 

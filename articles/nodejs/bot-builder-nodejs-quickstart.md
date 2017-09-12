@@ -28,6 +28,7 @@ Get started by completing the following prerequisite tasks:
 2. Create a folder for your bot.
 3. From a command prompt or terminal, navigate to the folder you just created.
 4. Run the following **npm** command:
+
 ```nodejs
 npm init
 ```
@@ -35,25 +36,58 @@ npm init
 Follow the prompt on the screen to enter information about your bot and npm will create a **package.json** file that contains the information you provided. 
 
 ## Install the SDK
-Next, install the Bot Builder SDK for Node.js and <a href="http://restify.com/" target="_blank">restify</a> by running the following **npm** commands:
+Next, install the Bot Builder SDK for Node.js by running the following **npm** command:
 
 ```nodejs
 npm install --save botbuilder
-npm install --save restify
 ```
 
-Once you have the SDK and Restify in place, you're ready to write your bot.
-
-## Create your bot
+Once you have the SDK installed, you are ready to write your first bot.
 
 For your first bot, you will create a bot that simply echoes back any user input. To create your bot, follow these steps:
 
 1. In the folder that you created earlier for your bot, create a new file named **app.js**.
 2. Open **app.js** in a text editor or an IDE of your choice. Add the following code to the file: 
 
+   [!code-javascript[consolebot code sample Node.js](../includes/code/node-getstarted.js#consolebot)]
+
+3. Save the file. Now you are ready to run and test out your bot.
+
+### Start your bot
+
+Navigate to your bot's directory in a console window and start your bot:
+
+```nodejs
+node app.js
+```
+
+Your bot is now running locally. Try out your bot by typing a few messages in the console window.
+You should see that the bot responds to each message you send by echoing back your message prefixed with the text *"You said:"*.
+
+## Install Restify
+
+Console bots are good text-based clients, but in order to use any of the Bot Framework channels (or run your bot in the emulator), your bot will need to run on an API endpoint. Install <a href="http://restify.com/" target="_blank">restify</a> by running the following **npm** command:
+
+```nodejs
+npm install --save restify
+```
+
+Once you have Restify in place, you're ready to make some changes to your bot.
+
+## Edit your bot
+
+You will need to make some changes to your **app.js** file. 
+
+1. Add a line to require the `restify` module.
+2. Change the `ConsoleConnector` to a `ChatConnector`.
+3. Include your Microsoft App ID and App Password.
+4. Have the connector listen on an API endpoint.
+
    [!code-javascript[echobot code sample Node.js](../includes/code/node-getstarted.js#echobot)]
 
 3. Save the file. Now you are ready to run and test out your bot.
+
+Please note that you do not need a Microsoft App ID or App Password to run your bot in the Bot Framework Emulator.
 
 ## Test your bot
 Next, test your bot by using the [Bot Framework Emulator](../debug-bots-emulator.md) to see it in action. The emulator is a desktop application that lets you test and debug your bot on localhost or running remotely through a tunnel.
