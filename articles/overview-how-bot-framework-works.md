@@ -32,7 +32,7 @@ The Azure Bot Service provides an integrated environment purpose-built for bot d
 Understanding the core concepts of the Bot Framework will help you build bots that provide the features your users need. These concepts are covered in more detail in the [Develop with .NET](~/dotnet/bot-builder-dotnet-concepts.md) and [Develop with Node.js](~/nodejs/bot-builder-nodejs-concepts.md) sections of the documentation.
 
 ### Channel
-A channel is the connection between the Bot Framework and communication apps such as Skype, Slack, Facebook Messenger, Office 365 mail, and others. Use the Developer Portal to configure each channel you want the bot to be available on. The Skype and web chat channels are automatically pre-configured.
+A channel is the connection between the Bot Framework and communication apps such as Skype, Slack, Facebook Messenger, Office 365 mail, and others. Use the Developer Portal to configure each channel you want the bot to be available on. Use the [Channel Inspector](portal-channel-inspector.md) to preview if a particular feature you want to use is supported on the channel you are targeting. The Skype and web chat channels are automatically pre-configured.
 
 ### Bot Connector
 The Bot Connector service connects a bot to one or more channels and handles the message exchange between them. This connecting service allows the bot to communicate over many channels without manually designing a specific message for each channel's schema.

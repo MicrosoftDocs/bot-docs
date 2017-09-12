@@ -41,6 +41,9 @@ You can create a bot with any programming language by using the Bot Framework RE
 
 - The [Direct Line REST API][directLineAPI] enables you to connect your own application, such as a client application, web chat control, or mobile app, directly to a single bot.
 
+## Bot Framework Channel Inspector
+Quickly see what bot features will look like on different channels with the Bot Framework [Channel Inspector](portal-channel-inspector.md).
+
 [connectorAPI]: https://docs.botframework.com/en-us/restapi/connector/#navtitle
  
 [stateAPI]: https://docs.botframework.com/en-us/restapi/state/#navtitle

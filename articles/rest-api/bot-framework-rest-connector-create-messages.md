@@ -84,6 +84,7 @@ The `suggestedActions` property of the [Activity][Activity] object can be used t
 
 ## Additional resources
 
+- [Preview features with the Channel Inspector](../portal-channel-inspector.md)
 - [Activities overview](bot-framework-rest-connector-activities.md)
 - [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md)
 - [Add media attachments to messages](bot-framework-rest-connector-add-media-attachments.md)

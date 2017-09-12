@@ -76,7 +76,7 @@ You can attach a video file or audio file to a message by using the same process
 - [Add rich cards to messages](bot-framework-rest-connector-add-rich-cards.md)
 - [Channel Inspector][ChannelInspector]
 
-[ChannelInspector]: https://docs.botframework.com/en-us/channel-inspector/channels/Skype/#navtitle
+[ChannelInspector]: ../portal-channel-inspector.md
 
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object
 [Attachment]: bot-framework-rest-connector-api-reference.md#attachment-object
