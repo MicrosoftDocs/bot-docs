@@ -121,7 +121,7 @@ Once you have tested your Cortana skill and verified that it works the way you'd
 * [The Cortana Skills Kit][CortanaGetStarted]
 * [Cortana Dev Center][CortanaDevCenter]
 * [Testing and debugging best practices][Cortana-TestBestPractice]
-
+* [Preview features with the Channel Inspector](portal-channel-inspector.md)
 
 [CortanaGetStarted]: https://docs.microsoft.com/en-us/cortana/getstarted
 

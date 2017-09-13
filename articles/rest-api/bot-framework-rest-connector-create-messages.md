@@ -1,4 +1,4 @@
----
+----
 title: Create messages with the Bot Connector API  | Microsoft Docs
 description: Learn about commonly-used message properties within the Bot Connector API. 
 author: kbrandl
@@ -17,20 +17,20 @@ Your bot will send [Activity][Activity] objects of type **message** to communica
 
 To create a basic message that contains only plain text, set the `text` property of the [Activity][Activity] object to the contents of the message and set the `locale` property to the locale of the sender. 
 
-The `textFormat` property the [Activity][Activity] object can be used to specify the format of the text. The value of the `textFormat` property defaults to **markdown** and interprets text using Markdown formatting standards, 
-but you can also specify **plain** to interpret text as plain text or **xml** to interpret text as XML markup.
+The `textFormat` property the [Activity][Activity] object can be used to specify the format of the text. The value of the `textFormat` property defaults to **markdown** and interprets text using Markdown formatting standards, but you can also specify **plain** to interpret text as plain text or **xml** to interpret text as XML markup.
 
-If a channel is not capable of rendering the specified formatting, the message will be rendered using reasonable approximation. For example, Markdown **bold** text for a message sent via text messaging will be rendered as \*bold\*. Only channels that support fixed width formats and HTML can render standard table markdown.
+If a channel is not capable of rendering the specified formatting, the message will be rendered using reasonable approximation. For example, Markdown **bold** text for a message sent via text messaging will be rendered as \*bold\*. 
 
+### Markdown text format
 These styles are supported when `textFormat` is set to **markdown**:  
 
 | Style | Markdown | Example | 
 | ---- | ---- | ---- | 
 | bold | \*\*text\*\* | **text** |
 | italic | \*text\* | *text* |
-| header (1-5) | # H1 | #H1 |
+| header (1-5) | # H1 | # H1 |
 | strikethrough | \~\~text\~\~ | ~~text~~ |
-| horizontal rule | --- |  |
+| horizontal rule | ---- | ---- |
 | unordered list | \* text |  <ul><li>text</li></ul> |
 | ordered list | 1. text | 1. text |
 | preformatted text | \`text\` | `text`  |
@@ -38,15 +38,25 @@ These styles are supported when `textFormat` is set to **markdown**:
 | hyperlink | \[bing](http://www.bing.com) | [bing](http://www.bing.com) |
 | image link| !\[duck](http://aka.ms/Fo983c) | ![duck](http://aka.ms/Fo983c) |
 
-These styles are supported when `textFormat` is set to **xml**:  
+> [!NOTE]
+> HTML tags in **Markdown** is not supported in Microsoft Botframework Web Chat channels. If you need to use HTML tags in your **Markdown**, you can render them in a [Direct Line](~/channel-connect-directline.md) channel that supports it. Alternatively, you can use the HTML tags below by setting the `textFormat` to **xml** and connect your bot to Skype channel.
 
-| Style | Markdown | Example | 
+### XML text format
+These styles are supported when `textFormat` is set to **xml**: 
+
+| Style | XML | Example | 
 |----|----|----|----|
 | bold | \<b\>text\</b\> | **text** | 
 | italic | \<i\>text\</i\> | *text* |
 | underline | \<u\>text\</u\> | <u>text</u> |
 | strikethrough | \<s\>text\</s\> | <s>text</s> |
 | hyperlink | \<a href="http://www.bing.com"\>bing\</a\> | <a href="http://www.bing.com">bing</a> |
+| paragraph | \<p\>text\</p\> | <p>Paragraph text</p> |
+| line break | \<br/\> | line 1 <br/>line 2 |
+| horizontal rule | \<hr/\> | <hr/> |
+| header (1-4) | \<h1\>text\</h1\> | <h1>Heading 1</h1> |
+| code | \<code\>code block\</code\> | <code>code block</code> |
+| image | \<img src="http://aka.ms/Fo983c" alt="Duck"\> | <img src="http://aka.ms/Fo983c" alt="Duck"> 
 
 > [!NOTE]
 > The `textFormat` **xml** is supported only by the Skype channel. 
@@ -84,6 +94,7 @@ The `suggestedActions` property of the [Activity][Activity] object can be used t
 
 ## Additional resources
 
+- [Preview features with the Channel Inspector](../portal-channel-inspector.md)
 - [Activities overview](bot-framework-rest-connector-activities.md)
 - [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md)
 - [Add media attachments to messages](bot-framework-rest-connector-add-media-attachments.md)

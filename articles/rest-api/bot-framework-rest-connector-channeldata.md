@@ -279,5 +279,6 @@ This snippet shows an example of the `channelData` property for a native Kik mes
 - [Activities overview](bot-framework-rest-connector-activities.md)
 - [Create messages](bot-framework-rest-connector-create-messages.md)
 - [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md)
+- [Preview features with the Channel Inspector](../portal-channel-inspector.md)
 
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object

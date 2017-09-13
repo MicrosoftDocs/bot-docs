@@ -19,7 +19,7 @@ ms.reviewer:
 
 The Bot Builder SDK for Node.js is a framework for developing bots. It is easy to use and models frameworks like Express & restify to provide a familiar way for JavaScript developers to write bots.
 
-This tutorial walks you through building a bot by using the Bot Builder SDK for Node.js, and then testing it with the Bot Framework Emulator.
+This tutorial walks you through building a bot by using the Bot Builder SDK for Node.js. You can test the bot in a console window and with the Bot Framework Emulator.
 
 ## Prerequisites
 Get started by completing the following prerequisite tasks:
@@ -85,7 +85,10 @@ You will need to make some changes to your **app.js** file.
 
    [!code-javascript[echobot code sample Node.js](../includes/code/node-getstarted.js#echobot)]
 
-3. Save the file. Now you are ready to run and test out your bot.
+3. Save the file. Now you are ready to run and test out your bot in the emulator.
+
+> [!NOTE] 
+> You do not need a **Microsoft App ID** or **Microsoft App Password** to run your bot in the Bot Framework Emulator.
 
 Please note that you do not need a Microsoft App ID or App Password to run your bot in the Bot Framework Emulator.
 
