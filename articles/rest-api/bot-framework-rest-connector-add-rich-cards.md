@@ -264,7 +264,7 @@ The resulting card contains three blocks of text, an input field (choice list), 
 - [Channel Inspector][ChannelInspector]
 - <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a>
 
-[ChannelInspector]: https://docs.botframework.com/en-us/channel-inspector/channels/Skype/#navtitle
+[ChannelInspector]: ../portal-channel-inspector.md
 
 [animationCard]: bot-framework-rest-connector-api-reference.md#animationcard-object
 [audioCard]: bot-framework-rest-connector-api-reference.md#audiocard-object

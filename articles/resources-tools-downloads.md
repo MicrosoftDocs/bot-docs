@@ -62,7 +62,7 @@ You can also download the Bot Builder SDK for Node.js [source code](https://gith
 The Bot Framework Emulator is a desktop application that allows you to test and debug you bots, either locally or remotely. Using the emulator, you can chat with your bot and inspect the messages that your bot sends and receives. [Learn more about the Bot Framework emulator](~/debug-bots-emulator.md) and [download the emulator](http://emulator.botframework.com) for your platform.
 
 ## Bot Framework Channel Inspector
-Quickly see what bot features will look like on different channels with the the Bot Framework [Channel Inspector](https://docs.botframework.com/en-us/channel-inspector/channels/Skype/#navtitle).
+Quickly see what bot features will look like on different channels with the Bot Framework [Channel Inspector](portal-channel-inspector.md).
 
 [bot-template]: http://aka.ms/bf-bc-vstemplate
 [cortana-template]: https://aka.ms/bf-cortanaskill-template

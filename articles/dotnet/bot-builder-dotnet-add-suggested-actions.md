@@ -44,4 +44,4 @@ When the user taps one of the suggested actions, the bot will receive a message 
 
 [inspector]: ../portal-channel-inspector.md
 
-[channelInspector]: https://docs.botframework.com/en-us/channel-inspector/channels/Skype/
+[channelInspector]: ../portal-channel-inspector.md
