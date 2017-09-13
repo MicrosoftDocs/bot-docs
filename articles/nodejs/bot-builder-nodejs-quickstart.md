@@ -19,7 +19,7 @@ ms.reviewer:
 
 The Bot Builder SDK for Node.js is a framework for developing bots. It is easy to use and models frameworks like Express & restify to provide a familiar way for JavaScript developers to write bots.
 
-This tutorial walks you through building a bot by using the Bot Builder SDK for Node.js, and then testing it with the Bot Framework Emulator.
+This tutorial walks you through building a bot by using the Bot Builder SDK for Node.js. You can test the bot in a console window and with the Bot Framework Emulator.
 
 ## Prerequisites
 Get started by completing the following prerequisite tasks:
@@ -44,14 +44,15 @@ npm install --save botbuilder
 
 Once you have the SDK installed, you are ready to write your first bot.
 
-For your first bot, you will create a bot that simply echoes back any user input. To create your bot, follow these steps:
+## Create a console bot
+For your first bot, you will create a bot that simply echoes back any user input. To create your console bot, follow these steps:
 
 1. In the folder that you created earlier for your bot, create a new file named **app.js**.
 2. Open **app.js** in a text editor or an IDE of your choice. Add the following code to the file: 
 
    [!code-javascript[consolebot code sample Node.js](../includes/code/node-getstarted.js#consolebot)]
 
-3. Save the file. Now you are ready to run and test out your bot.
+3. Save the file. Now you are ready to run and test out your bot in a console window.
 
 ### Start your bot
 
@@ -61,33 +62,35 @@ Navigate to your bot's directory in a console window and start your bot:
 node app.js
 ```
 
-Your bot is now running locally. Try out your bot by typing a few messages in the console window.
-You should see that the bot responds to each message you send by echoing back your message prefixed with the text *"You said:"*.
+Your bot is now running locally. Try out your bot by typing a few messages in the console window. You should see that the bot responds to each message you send by echoing back your message prefixed with the text *"You said:"*.
 
-## Install Restify
+## Create a chat bot
+Console bots are good text-based clients, but in order to use any of the Bot Framework channels or run your bot in the emulator, your bot will need to run on an API endpoint. To do that, you will need to install restify and modify your console bot slightly so you can test it in the Bot Framework Emulator.
 
-Console bots are good text-based clients, but in order to use any of the Bot Framework channels (or run your bot in the emulator), your bot will need to run on an API endpoint. Install <a href="http://restify.com/" target="_blank">restify</a> by running the following **npm** command:
+### Install Restify
+
+Install <a href="http://restify.com/" target="_blank">restify</a> by running the following **npm** command:
 
 ```nodejs
 npm install --save restify
 ```
 
-Once you have Restify in place, you're ready to make some changes to your bot.
+Once you have restify in place, you're ready to make some changes to your console bot that you created earlier.
 
 ## Edit your bot
 
-You will need to make some changes to your **app.js** file. 
+Open your console bot's **app.js** file in a text editor and do the following: 
 
 1. Add a line to require the `restify` module.
 2. Change the `ConsoleConnector` to a `ChatConnector`.
-3. Include your Microsoft App ID and App Password.
-4. Have the connector listen on an API endpoint.
+3. Have the connector listen on an API endpoint. Your bot code should look something like this:
 
    [!code-javascript[echobot code sample Node.js](../includes/code/node-getstarted.js#echobot)]
 
-3. Save the file. Now you are ready to run and test out your bot.
+3. Save the file. Now you are ready to run and test out your bot in the emulator.
 
-Please note that you do not need a Microsoft App ID or App Password to run your bot in the Bot Framework Emulator.
+> [!NOTE] 
+> You do not need a **Microsoft App ID** or **Microsoft App Password** to run your bot in the Bot Framework Emulator.
 
 ## Test your bot
 Next, test your bot by using the [Bot Framework Emulator](../debug-bots-emulator.md) to see it in action. The emulator is a desktop application that lets you test and debug your bot on localhost or running remotely through a tunnel.
