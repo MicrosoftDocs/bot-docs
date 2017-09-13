@@ -1,4 +1,4 @@
----
+----
 title: Create messages with the Bot Connector API  | Microsoft Docs
 description: Learn about commonly-used message properties within the Bot Connector API. 
 author: kbrandl
@@ -30,7 +30,7 @@ These styles are supported when `textFormat` is set to **markdown**:
 | italic | \*text\* | *text* |
 | header (1-5) | # H1 | # H1 |
 | strikethrough | \~\~text\~\~ | ~~text~~ |
-| horizontal rule | ---- |  |
+| horizontal rule | ---- | ---- |
 | unordered list | \* text |  <ul><li>text</li></ul> |
 | ordered list | 1. text | 1. text |
 | preformatted text | \`text\` | `text`  |
@@ -44,13 +44,19 @@ These styles are supported when `textFormat` is set to **markdown**:
 ### XML text format
 These styles are supported when `textFormat` is set to **xml**: 
 
-| Style | Markdown | Example | 
+| Style | XML | Example | 
 |----|----|----|----|
 | bold | \<b\>text\</b\> | **text** | 
 | italic | \<i\>text\</i\> | *text* |
 | underline | \<u\>text\</u\> | <u>text</u> |
 | strikethrough | \<s\>text\</s\> | <s>text</s> |
 | hyperlink | \<a href="http://www.bing.com"\>bing\</a\> | <a href="http://www.bing.com">bing</a> |
+| paragraph | \<p\>text\</p\> | <p>Paragraph text</p> |
+| line break | \<br/\> | line 1 <br/>line 2 |
+| horizontal rule | \<hr/\> | <hr/> |
+| header (1-4) | \<h1\>text\</h1\> | <h1>Heading 1</h1> |
+| code | \<code\>code block\</code\> | <code>code block</code> |
+| image | \<img src="http://aka.ms/Fo983c" alt="Duck"\> | <img src="http://aka.ms/Fo983c" alt="Duck"> 
 
 > [!NOTE]
 > The `textFormat` **xml** is supported only by the Skype channel. 
