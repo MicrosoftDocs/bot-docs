@@ -79,7 +79,7 @@ When the user taps one of the suggested actions, the bot will receive a message 
 - [Create messages](bot-framework-rest-connector-create-messages.md)
 - [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md)
 
-[channelInspector]: https://docs.botframework.com/en-us/channel-inspector/channels/Facebook/#navtitle
+[channelInspector]: ../portal-channel-inspector.md
 
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object
 

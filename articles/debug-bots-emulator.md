@@ -105,6 +105,8 @@ For information about troubleshooting issues with your bot, see:
 * [Bot Framework troubleshooting guide][TroubleshootingGuide]
 * [Troubleshooting Bot Framework authentication][TroubleshootingAuth]
 
+To preview if a feature is supported in a targeted channel, see [Channel Inspector](portal-channel-inspector.md)
+
 [EmulatorGithub]: https://github.com/Microsoft/BotFramework-Emulator
 [EmulatorGithubContribute]: https://github.com/Microsoft/BotFramework-Emulator/wiki/How-to-Contribute
 [EmulatorGithubBugs]: https://github.com/Microsoft/BotFramework-Emulator/wiki/Submitting-Bugs-%26-Suggestions

@@ -38,7 +38,7 @@ Managing your bot is easy with the Bot Framework  portal. The Bot Framework  por
 ![Configure a bot in the developer portal](~/media/portal-configure-bot.png)
 
 ### Channels
-The Bot Framework supports several popular channels for connecting your bots and people. Users can start conversations with your bot on any channel that you've configured your bot to work with, including email, Facebook, Skype, Slack, and SMS.
+The Bot Framework supports several popular channels for connecting your bots and people. Users can start conversations with your bot on any channel that you've configured your bot to work with, including email, Facebook, Skype, Slack, and SMS. You can use the [Channel Inspector](portal-channel-inspector.md) to preview features you want to use on these targeted channels.
 
 ![List of channels on the portal](~/media/portal-channels-list.png)
 
