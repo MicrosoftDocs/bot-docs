@@ -21,7 +21,7 @@ The following code sample shows the signature for a conditional response functio
 /**
 * @param {IConversationContext} context
 */
-export function NewConditionalResponse_onRun(context) {
+export function NewConditionalResponse_onRun = function(context) {
     // Business logic here
     return true; // Returns a boolean
 }
@@ -77,8 +77,8 @@ The `context` object exposes the following methods.
 | `containsContextEntity` | **boolean** | `context.containsContextEntity("entityName", "entityValue");` | Indicates if **contextEntities** contains the entity. |
 | `containsTaskEntity` | **boolean** | `context.containsTaskEntity("entityName", "entityValue");` | Indicates if **taskEntities** contains the entity. |
 | `getCurrentTurn` | **number**| `context.getCurrentTurn();` | Get the turn from the Frame on top of the stack if you are executing a reprompt. |
-| `removeContextEntity` | **IConversationContext** | `context.removeContextEntity("entityName", "entityValue");` | Remove a context entity. |
-| `removeTaskEntity` | **IConversationContext** | `context.removeTaskEntity("entityName", "entityValue");` | Remove a task entity. |
+| `removeContextEntity` | **IConversationContext** | `context.removeContextEntity("entityName");` | Remove a context entity. |
+| `removeTaskEntity` | **IConversationContext** | `context.removeTaskEntity("entityName");` | Remove a task entity. |
 
 ## Entity interface
 
