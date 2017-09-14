@@ -120,7 +120,7 @@ If you chose the App Service plan, follow these steps to modify your bot source 
 3. Change text in line 22 from `You said` to `You just said`.
 4. To deploy your changed source, click the Open Console icon.  
     ![Console Icon](~/media/azure-bot-service-console-icon.png)
-2. In the Console window, type **deploy.cmd**, and press the enter key.
+2. In the Console window, type **build.cmd**, and press the enter key.
 
 The console window shows the deployment's progress until it's complete.
 

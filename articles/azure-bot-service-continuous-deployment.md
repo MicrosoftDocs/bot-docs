@@ -21,7 +21,7 @@ If you have not configured continuous deployment, you can modify your source fil
 
 4. Click the Open Console icon.  
     ![Console Icon](~/media/azure-bot-service-console-icon.png)
-2. In the Console window, type **deploy.cmd**, and press the enter key.
+2. In the Console window, type **build.cmd**, and press the enter key.
 
 
 ## Publish C# bot on App Service plan from Visual Studio 
