@@ -69,7 +69,7 @@ Required properties for decision state:
 The following sample callback function returns a decision that instruct the conversation runtime which branch to execute.
 
 ```javascript
-export function fnDecisionState = function(context) {
+module.exports.fnDecisionState = function(context) {
     var a = context.taskEntities['a'];
     if (a[0].value === '0') {
         return 'yes';
@@ -94,7 +94,7 @@ Required properties for process state:
 The following sample callback function gets the weather and returns the weather information to the user.
 
 ```javascript
-export function fnGetWeather = function(context) {
+module.exports.fnGetWeather = function(context) {
     var options =  {
         host: 'mock',
         path: '/get?a=b',
@@ -147,7 +147,7 @@ You can specify two different callback functions on a prompt state.
 This code snippet shows an example for **before executing** callback.
 
 ```javascript
-export function fnBeforeExecuting = function(context) {
+module.exports.fnBeforeExecuting = function(context) {
     if(context.responses[0].text === "C") {
         return false;
     }
@@ -158,7 +158,7 @@ export function fnBeforeExecuting = function(context) {
 This code snippet shows an example for **On prompting** callback.
 
 ```javascript
-export function fnOnPrompting = function(context) {
+module.exports.fnOnPrompting = function(context) {
     // include a hint card
     var activity = context.responses.slice(-1).pop();
     activity.attachments.push({
@@ -185,7 +185,7 @@ export function fnOnPrompting = function(context) {
 This code snippet shows an example for **Before reprompting** callback.
 
 ```javascript
-export function fnBeforeReprompting = function(context) {
+module.exports.fnBeforeReprompting = function(context) {
     if(context.responses[0].text === "C") {
         return false;
     }
@@ -203,7 +203,7 @@ Each feedback state also allows for an **On responding** callback function where
 
 
 ```javascript
-export function fnOnResponding = function(context) {
+module.exports.fnOnResponding = function(context) {
     // include a hint card
     var activity = context.responses.slice(-1).pop();
     activity.attachments.push({
