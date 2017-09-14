@@ -29,7 +29,7 @@ The Bot Framework currently supports eight types of rich cards:
 
 | Card type | Description |
 |----|----|
-| <a href="http://adaptivecards.io" target="_blank">AdaptiveCard</a> | A card that can contain any combination of text, speech, images, buttons, and input fields.  |
+| <a href="https://docs.microsoft.com/en-us/adaptive-cards/get-started/bots">AdaptiveCard</a> | A customizable card that can contain any combination of text, speech, images, buttons, and input fields. See [per-channel support](https://docs.microsoft.com/en-us/adaptive-cards/get-started/bots#channel-status).  |
 | [AnimationCard][animationCard] | A card that can play animated GIFs or short videos. |
 | [AudioCard][audioCard] | A card that can play an audio file. |
 | [HeroCard][heroCard] | A card that typically contains a single large image, one or more buttons, and text. |

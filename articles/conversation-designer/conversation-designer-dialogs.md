@@ -69,7 +69,7 @@ Required properties for decision state:
 The following sample callback function returns a decision that instruct the conversation runtime which branch to execute.
 
 ```javascript
-export function fnDecisionState(context) {
+export function fnDecisionState = function(context) {
     var a = context.taskEntities['a'];
     if (a[0].value === '0') {
         return 'yes';
@@ -94,7 +94,7 @@ Required properties for process state:
 The following sample callback function gets the weather and returns the weather information to the user.
 
 ```javascript
-export function fnGetWeather(context) {
+export function fnGetWeather = function(context) {
     var options =  {
         host: 'mock',
         path: '/get?a=b',
@@ -137,18 +137,17 @@ Use the re-prompt section to specify a response for each attempt. Each row in th
 
 #### Prompt callback functions
 
-You can specify three different callback functions on a prompt state. 
+You can specify two different callback functions on a prompt state. 
 
-1. **Before executing**: Execute this function once before processing this prompt. This callback function expects a boolean return value where `true` means execute this prompt and `false` means do not this prompt.
-2. **On prompting**: Execute this function every time a prompt has been generated but before it has been sent to the user (including reprompt response). This enables the script to modify the message sent to the user.
-3. **Before reprompting**: Execute this function before reprompting. This function expects a boolean return value where `true` means reprompt and `false` means do not reprompt.
+1. **Before every prompt and reprompt**: Execute this function before every prompt or rerompt. This callback function expects a boolean return value where true means execute this prompt or reprompt and false means do not execute this prompt or reprompt. You can use `getTurnIndex()` to get the current turn index for that prompt execution.
+2. **On responding**: Execute this function every time a prompt has been generated but before it has been sent to the user (including reprompt response). This enables the script to modify the message sent to the user.
 
 #### Sample code
 
 This code snippet shows an example for **before executing** callback.
 
 ```javascript
-export function fnBeforeExecuting(context) {
+export function fnBeforeExecuting = function(context) {
     if(context.responses[0].text === "C") {
         return false;
     }
@@ -159,7 +158,7 @@ export function fnBeforeExecuting(context) {
 This code snippet shows an example for **On prompting** callback.
 
 ```javascript
-export function fnOnPrompting(context) {
+export function fnOnPrompting = function(context) {
     // include a hint card
     var activity = context.responses.slice(-1).pop();
     activity.attachments.push({
@@ -186,7 +185,7 @@ export function fnOnPrompting(context) {
 This code snippet shows an example for **Before reprompting** callback.
 
 ```javascript
-export function fnBeforeReprompting(context) {
+export function fnBeforeReprompting = function(context) {
     if(context.responses[0].text === "C") {
         return false;
     }
@@ -204,7 +203,7 @@ Each feedback state also allows for an **On responding** callback function where
 
 
 ```javascript
-export function fnOnResponding(context) {
+export function fnOnResponding = function(context) {
     // include a hint card
     var activity = context.responses.slice(-1).pop();
     activity.attachments.push({
