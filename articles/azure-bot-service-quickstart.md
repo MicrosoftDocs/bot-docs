@@ -45,9 +45,6 @@ sign in to <a href="https://portal.azure.com" target="_blank">Azure</a> and comp
 
     ![Bot Service blade](~/media/azure-bot-service-create-bot.png)
 
-    > [!WARNING] 
-    > Do not check the **Pin to dashboard** checkbox. There is a known issue when this checkbox is checked. This issue will be fixed soon.
-
 4. Confirm that the bot service has been deployed.
     - Click **Notifications** (the bell icon that is located along the top edge of the Azure portal). The notification will change from **Deployment started** to **Deployment succeeded**. 
     - After the notification changes to **Deployment succeeded**, click that notification.<br/><br/>
