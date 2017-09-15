@@ -32,7 +32,7 @@ The `context` object includes both `taskEntities` and `contextEntities`. Task en
 The following code sample uses regex to process the request and returns a boolean so the conversation runtime can determine which script trigger to execute.
 
 ```javascript
-export function fnFindPhoneTrigger = function(context) {
+module.exports.fnFindPhoneTrigger = function(context) {
     if (context.request.text.includes("call") || context.request.text.includes("ring")) {
         return true;
     } else {

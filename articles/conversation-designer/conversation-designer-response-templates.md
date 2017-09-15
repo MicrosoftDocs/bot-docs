@@ -59,7 +59,7 @@ To add a conditional response template, do the following:
 Sample code for the *fnResolveTimeOfDayTemplate* callback function. This function will return the string that will match either the "morning" or "evening" **Condition name** specified by the response.
 
 ```javascript
-export function fnTimeOfDayTemplate = function(context) {
+module.exports.fnTimeOfDayTemplate = function(context) {
     var currentTime = new Date().getHours();
     if(currentTime >= 12) {
         return "evening!";

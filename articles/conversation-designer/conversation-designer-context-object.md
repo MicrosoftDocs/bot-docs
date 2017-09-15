@@ -21,7 +21,7 @@ The following code sample shows the signature for a conditional response functio
 /**
 * @param {IConversationContext} context
 */
-export function NewConditionalResponse_onRun = function(context) {
+module.exports.NewConditionalResponse_onRun = function(context) {
     // Business logic here
     return true; // Returns a boolean
 }

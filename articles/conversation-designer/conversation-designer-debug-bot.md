@@ -30,7 +30,7 @@ There are several conditions under which validation errors occur. For example:
 You can attach a script to the execution of a response to provide additional functionality. If there is an error in the script, it will be displayed here. You can add `console.log()` or `error.log()` or `debug.log()` to your bot's business logic, which will list messages in the output window. For example:
 
 ``` javascript
-export function Respond_beforeResponse = function(context) {
+module.exports.Respond_beforeResponse = function(context) {
     console.log(JSON.stringify(context));
 }
 ```
