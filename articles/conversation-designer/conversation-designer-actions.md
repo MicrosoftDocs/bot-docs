@@ -49,7 +49,7 @@ TODO TBD -->
 The following sample function makes an HTTP call to get a response before returning a trigger matched.
 
 ```javascript
-export function NewTask_do_onRun = function(context) {
+module.exports.NewTask_do_onRun = function(context) {
     var options =  {
         host: 'HOST',
         path: 'PATH',
