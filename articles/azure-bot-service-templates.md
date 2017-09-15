@@ -33,7 +33,7 @@ Bots created in an App Service plan are based on standard Web apps. Here's a lis
 | Folder | File | Description |
 |----|----|----|
 | / | **&ast;.sln** | The Microsoft Visual Studio solutions file. It is used locally if you [set up continuous deployment](azure-bot-service-continuous-deployment.md). |
-| / | **deploy.cmd** | This file is needed to deploy your code when you are editing it online via the Azure App Service editor. If you're working locally, you don't need this file. |
+| / | **build.cmd** | This file is needed to deploy your code when you are editing it online via the Azure App Service editor. If you're working locally, you don't need this file. |
 | /Dialogs | **&ast;.cs** | The classes that define your bot dialogs. |
 | /Controllers | **MessagesController.cs** | The main controller of your bot application. |
 | /PostDeployScripts | **&ast;.PublishSettings** | The publish profile for your bot. You can use this file to publish directly from Visual Studio. |

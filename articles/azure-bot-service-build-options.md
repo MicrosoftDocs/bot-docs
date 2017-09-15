@@ -31,7 +31,7 @@ When you change a source file in the online code editor, you must run the deploy
  1. In the App Service Editor, click the Open Console icon.  
     ![Console Icon](~/media/azure-bot-service-console-icon.png)
 
- 2. In the Console window, type **deploy.cmd**, and press the enter key.
+ 2. In the Console window, type **build.cmd**, and press the enter key.
 
 ## Download source code
 
