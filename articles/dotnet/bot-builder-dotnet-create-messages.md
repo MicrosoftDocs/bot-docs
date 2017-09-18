@@ -18,47 +18,15 @@ Some messages may simply consist of plain text, while others may contain richer 
 
 This article describes some of the commonly-used message properties.
 
-## Message text and format
+## Customizing a message
 
-To create a basic message that contains only plain text, simply specify the `Text` property (as contents of the message) 
-and the `Locale` property (as the locale of the sender). 
+To have more control over the text formatting of your messages, you can create a custom message using the [Activity](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.8) object and set the properties necessary before sending it to the user.
+
+This sample shows how to create a custom `message` object and set the `Text`, `TextFormat`, and `Local` properties.
 
 [!code-csharp[Set message properties](../includes/code/dotnet-create-messages.cs#setBasicProperties)]
 
-The `TextFormat` property of a message can be used to specify the format of the text. 
-`TextFormat` defaults to **markdown** and interprets text using Markdown formatting standards, 
-but you can also specify **plain** to interpret text as plain text or `xml` to interpret text as XML markup.
-
-If a channel is not capable of rendering the specified formatting, the message will be rendered using reasonable approximation. For example, Markdown **bold** text for a message sent via text messaging will be rendered as \*bold\*. Only channels that support fixed width formats and HTML can render standard table markdown.
-
-These styles are supported when `TextFormat` is set to **markdown**:
-
-| Style | Markdown | Example | 
-| ---- | ---- | ---- | 
-| bold | \*\*text\*\* | **text** |
-| italic | \*text\* | *text* |
-| header (1-5) | # H1 | #H1 |
-| strikethrough | \~\~text\~\~ | ~~text~~ |
-| horizontal rule | --- |  |
-| unordered list | \* text |  <ul><li>text</li></ul> |
-| ordered list | 1. text | 1. text |
-| preformatted text | \`text\` | `text` |
-| blockquote | \> text | <blockquote>text</blockquote> |
-| hyperlink | \[bing](http://www.bing.com) | [bing](http://www.bing.com) |
-| image link| !\[duck](http://aka.ms/Fo983c) | ![duck](http://aka.ms/Fo983c) |
-
-These styles are supported when `TextFormat` is set to "xml":
-
-| Style | Markdown | Example | 
-|----|----|----|----|
-| bold | \<b\>text\</b\> | **text** | 
-| italic | \<i\>text\</i\> | *text* |
-| underline | \<u\>text\</u\> | <u>text</u> |
-| strikethrough | \<s\>text\</s\> | <s>text</s> |
-| hyperlink | \<a href="http://www.bing.com"\>bing\</a\> | <a href="http://www.bing.com">bing</a> |
-
-> [!NOTE]
-> The `TextFormat` **xml** is supported only by the Microsoft Teams and Skype channels. 
+The `TextFormat` property of a message can be used to specify the format of the text. The `TextFormat` property can be set to **plain**, **markdown**, or **xml**. The default value for `TextFormat` is **markdown**. For more information on the `TextFormat` property, see [Message text and formatting](../rest-api/bot-framework-rest-connector-create-messages.md#message-text-and-formatting).
 
 ## Attachments
 

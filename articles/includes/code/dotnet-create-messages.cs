@@ -1,6 +1,7 @@
 // <setBasicProperties>
 IMessageActivity message =  Activity.CreateMessageActivity();
 message.Text = "Hello!";
+message.TextFormat = "plain";
 message.Locale = "en-Us";
 // </setBasicProperties>
 
