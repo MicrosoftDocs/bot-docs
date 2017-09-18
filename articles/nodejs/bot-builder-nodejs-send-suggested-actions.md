@@ -47,4 +47,4 @@ Be aware that the `imBack` method will post the `value` to the chat window of th
 
 [inspector]: ../portal-channel-inspector.md
 
-[channelInspector]: https://docs.botframework.com/en-us/channel-inspector/channels/Skype/
+[channelInspector]: ../portal-channel-inspector.md

@@ -43,56 +43,21 @@ var userMessage = session.message.text;
 
 ## Customizing a message
 
-To have more control over the text formating of your messages, you can create a custom [`message`](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.message.html) object and set the properties necessary before sending it to the user.
+To have more control over the text formatting of your messages, you can create a custom [`message`](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.message.html) object and set the properties necessary before sending it to the user.
 
-This sample shows how to create a custom `message` object and set a few properties.
+This sample shows how to create a custom `message` object and set `text`, `textFormat`, and `textLocale` properties.
 
 ```javascript
 var customMessage = new builder.Message(session)
-    .text("**Good morning**.")
-    .textFormat("markdown")
+    .text("Hello!")
+    .textFormat("plain")
     .textLocale("en-us");
-session.send(customMessage); // Sends a markdown formated message
+session.send(customMessage);
 ```
 
-In cases where you do not have the `session` object in scope, you can use `bot.send` method to send a formated message to the user.
+In cases where you do not have the `session` object in scope, you can use `bot.send` method to send a formatted message to the user.
 
-## Text formating
-
-The `textFormat` property of a message can be used to specify the display style of the text message. `textFormat` defaults to **markdown** and interprets text using Markdown formatting standards. Alternatively, you can specify **plain** to interpret text as plain text or **xml** to interpret text as XML markup.
-
-If a channel is not capable of rendering the specified formatting, the message will be rendered using reasonable approximation. For example, Markdown **bold** text for a message sent via text messaging will be rendered as \*bold\*. 
-
-### Text format using Markdown
-These styles are supported when `textFormat` is set to **markdown**:
-
-| Style | Markdown | Example | 
-| ---- | ---- | ---- | 
-| bold | \*\*text\*\* | **text** |
-| italic | \*text\* | *text* |
-| header (1-5) | # H1 | #H1 |
-| strikethrough | \~\~text\~\~ | ~~text~~ |
-| horizontal rule | --- |  |
-| unordered list | \* text |  <ul><li>text</li></ul> |
-| ordered list | 1. text | 1. text |
-| preformatted text | \`text\` | `text` |
-| blockquote | \> text | <blockquote>text</blockquote> |
-| hyperlink | \[bing](http://www.bing.com) | [bing](http://www.bing.com) |
-| image link| !\[duck](http://aka.ms/Fo983c) | ![duck](http://aka.ms/Fo983c) |
-
-### Text format using XML
-These styles are supported when `textFormat` is set to "xml":
-
-| Style | Markdown | Example | 
-|----|----|----|----|
-| bold | \<b\>text\</b\> | **text** | 
-| italic | \<i\>text\</i\> | *text* |
-| underline | \<u\>text\</u\> | <u>text</u> |
-| strikethrough | \<s\>text\</s\> | <s>text</s> |
-| hyperlink | \<a href="http://www.bing.com"\>bing\</a\> | <a href="http://www.bing.com">bing</a> |
-
-> [!NOTE]
-> The `textFormat` **xml** is supported only by the Skype channel. 
+The `textFormat` property of a message can be used to specify the format of the text. The `textFormat` property can be set to **plain**, **markdown**, or **xml**. The default value for `textFormat` is **markdown**. For more information on the `textFormat` property, see [Message text and formatting](../rest-api/bot-framework-rest-connector-create-messages.md#message-text-and-formatting).
 
 ## Message property
 
