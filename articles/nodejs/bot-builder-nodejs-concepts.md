@@ -79,7 +79,7 @@ Bot Builder lets you use LUIS to add natural language understanding to your bot 
 [ChatConnector]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.chatconnector.html
 [ConsoleConnector]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.consoleconnector.html
 
-[ChannelInspector]: https://docs.botframework.com/en-us/channel-inspector/channels/Skype
+[ChannelInspector]: ../portal-channel-inspector.md
 
 [Session]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html
 [SessionSend]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#send
