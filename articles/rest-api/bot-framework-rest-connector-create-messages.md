@@ -1,4 +1,4 @@
-----
+---
 title: Create messages with the Bot Connector API  | Microsoft Docs
 description: Learn about commonly-used message properties within the Bot Connector API. 
 author: kbrandl
@@ -13,11 +13,11 @@ ms.date: 05/12/2017
 
 Your bot will send [Activity][Activity] objects of type **message** to communicate information to users, and likewise, will also receive **message** activities from users. Some messages may simply consist of plain text, while others may contain richer content such as [text to be spoken](bot-framework-rest-connector-text-to-speech.md), [suggested actions](bot-framework-rest-connector-add-suggested-actions.md), [media attachments](bot-framework-rest-connector-add-media-attachments.md), [rich cards](bot-framework-rest-connector-add-rich-cards.md), and [channel-specific data](bot-framework-rest-connector-channeldata.md). This article describes some of the commonly-used message properties.
 
-## Message text and format
+## Message text and formatting
 
-To create a basic message that contains only plain text, set the `text` property of the [Activity][Activity] object to the contents of the message and set the `locale` property to the locale of the sender. 
+Message text can be formatted using **plain**, **markdown**, or **xml**. The default format for the `textFormat` property is **markdown** and interprets text using Markdown formatting standards. The level of text format support varies across channels. To see if a feature you want to use is supported on the channel you target, preview the feature using [Channel Inspector][ChannelInspector]. 
 
-The `textFormat` property the [Activity][Activity] object can be used to specify the format of the text. The value of the `textFormat` property defaults to **markdown** and interprets text using Markdown formatting standards, but you can also specify **plain** to interpret text as plain text or **xml** to interpret text as XML markup.
+The `textFormat` property of the [Activity][Activity] object can be used to specify the format of the text. For example, to create a basic message that contains only plain text, set the `textFormat` property of the [Activity][Activity] object to **plain**, set the `text` property to the contents of the message and set the `locale` property to the locale of the sender. 
 
 If a channel is not capable of rendering the specified formatting, the message will be rendered using reasonable approximation. For example, Markdown **bold** text for a message sent via text messaging will be rendered as \*bold\*. 
 
@@ -39,7 +39,7 @@ These styles are supported when `textFormat` is set to **markdown**:
 | image link| !\[duck](http://aka.ms/Fo983c) | ![duck](http://aka.ms/Fo983c) |
 
 > [!NOTE]
-> HTML tags in **Markdown** is not supported in Microsoft Botframework Web Chat channels. If you need to use HTML tags in your **Markdown**, you can render them in a [Direct Line](~/channel-connect-directline.md) channel that supports it. Alternatively, you can use the HTML tags below by setting the `textFormat` to **xml** and connect your bot to Skype channel.
+> HTML tags in **Markdown** are not supported in Microsoft Bot Framework Web Chat channels. If you need to use HTML tags in your **Markdown**, you can render them in a [Direct Line](~/channel-connect-directline.md) channel that supports it. Alternatively, you can use the HTML tags below by setting the `textFormat` to **xml** and connect your bot to Skype channel.
 
 ### XML text format
 These styles are supported when `textFormat` is set to **xml**: 
@@ -51,7 +51,7 @@ These styles are supported when `textFormat` is set to **xml**:
 | underline | \<u\>text\</u\> | <u>text</u> |
 | strikethrough | \<s\>text\</s\> | <s>text</s> |
 | hyperlink | \<a href="http://www.bing.com"\>bing\</a\> | <a href="http://www.bing.com">bing</a> |
-| paragraph | \<p\>text\</p\> | <p>Paragraph text</p> |
+| paragraph | \<p\>text\</p\> | <p>text</p> |
 | line break | \<br/\> | line 1 <br/>line 2 |
 | horizontal rule | \<hr/\> | <hr/> |
 | header (1-4) | \<h1\>text\</h1\> | <h1>Heading 1</h1> |
@@ -90,11 +90,11 @@ The `speak` property of the [Activity][Activity] object can be used to specify t
 
 ## Suggested actions
 
-The `suggestedActions` property of the [Activity][Activity] object can be used to present buttons that the user can tap to provide input. Unlike buttons that appear within rich cards (which remain visable and accessible to the user even after being tapped), buttons that appear within the suggested actions pane will disappear after the user makes a selection. For details, see [Add suggested actions to messages](bot-framework-rest-connector-add-suggested-actions.md).
+The `suggestedActions` property of the [Activity][Activity] object can be used to present buttons that the user can tap to provide input. Unlike buttons that appear within rich cards (which remain visible and accessible to the user even after being tapped), buttons that appear within the suggested actions pane will disappear after the user makes a selection. For details, see [Add suggested actions to messages](bot-framework-rest-connector-add-suggested-actions.md).
 
 ## Additional resources
 
-- [Preview features with the Channel Inspector](../portal-channel-inspector.md)
+- [Preview features with the Channel Inspector][ChannelInspector]
 - [Activities overview](bot-framework-rest-connector-activities.md)
 - [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md)
 - [Add media attachments to messages](bot-framework-rest-connector-add-media-attachments.md)
@@ -107,3 +107,4 @@ The `suggestedActions` property of the [Activity][Activity] object can be used t
 [Mention]: bot-framework-rest-connector-api-reference.md#mention-object
 [Place]: bot-framework-rest-connector-api-reference.md#place-object
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object
+[ChannelInspector]: ../portal-channel-inspector.md
