@@ -33,7 +33,6 @@
 ### Dialogs
 #### [Dialogs overview](~/dotnet/bot-builder-dotnet-dialogs.md)
 #### [Manage conversation flow](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
-#### [Enable language understanding](~/dotnet/bot-builder-dotnet-luis-dialogs.md)
 #### [Scorable dialogs](~/dotnet/bot-builder-dotnet-scorable-dialogs.md)
 ### FormFlow
 #### [Basic features of FormFlow](~/dotnet/bot-builder-dotnet-formflow.md)
@@ -50,6 +49,7 @@
 ##### [Requirements for real-time media bots](~/dotnet/bot-builder-dotnet-real-time-media-requirements.md)
 ##### [Build a real-time media bot](~/dotnet/bot-builder-dotnet-real-time-audio-video-call-overview.md)
 ##### [Deploy a real-time media bot](~/dotnet/bot-builder-dotnet-real-time-deploy-visual-studio.md)
+### [Recognize intent with LUIS](~/dotnet/bot-builder-dotnet-luis-dialogs.md)
 ### [Manage state data](~/dotnet/bot-builder-dotnet-state.md)
 ### [Request payment](~/dotnet/bot-builder-dotnet-request-payment.md)
 ### [Add Azure Search](~/dotnet/bot-builder-dotnet-search-azure.md)
