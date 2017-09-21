@@ -16,7 +16,7 @@ When you build a bot with Visual Studio, you can take advantage of its built-in 
 > [!NOTE]
 > If you created a bot with the Azure Bot Service, your bot deployment was part of the Azure Bot Service bot 
 > creation process. You can re-deploy an Azure Bot Service bot from Visual studio
-> [using the .PublishSettings file](azure/azure-bot-service-debug-bot.md).
+> [using the .PublishSettings file](azure-bot-service-continuous-deployment.md#publish-c-bot-on-app-service-plan-from-visual-studio).
 
 ## Prerequisites
 
