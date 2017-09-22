@@ -49,8 +49,11 @@
 ##### [Requirements for real-time media bots](~/dotnet/bot-builder-dotnet-real-time-media-requirements.md)
 ##### [Build a real-time media bot](~/dotnet/bot-builder-dotnet-real-time-audio-video-call-overview.md)
 ##### [Deploy a real-time media bot](~/dotnet/bot-builder-dotnet-real-time-deploy-visual-studio.md)
+### State Data
+#### [Manage state data](~/dotnet/bot-builder-dotnet-state.md)
+#### [Manage state data using Cosmos DB](~/dotnet/bot-builder-dotnet-state-azure-cosmosdb.md)
+#### [Manage state data using Table storage](~/dotnet/bot-builder-dotnet-state-azure-table-storage.md)
 ### [Recognize intent with LUIS](~/dotnet/bot-builder-dotnet-luis-dialogs.md)
-### [Manage state data](~/dotnet/bot-builder-dotnet-state.md)
 ### [Request payment](~/dotnet/bot-builder-dotnet-request-payment.md)
 ### [Add Azure Search](~/dotnet/bot-builder-dotnet-search-azure.md)
 ### [Secure your bot](~/dotnet/bot-builder-dotnet-security.md)

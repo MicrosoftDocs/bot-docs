@@ -18,9 +18,6 @@ ms.date: 06/14/2017
 
 If your bot uses [dialogs](bot-builder-dotnet-dialogs.md), conversation state (the dialog stack and the state of each dialog in the stack) is automatically stored using the Bot Framework State service. 
 
-> [!IMPORTANT]
-> By default, the Bot Framework SDK for .NET stores state data using the Bot Framework State service, which is intended for prototyping only and is not designed for use by bots in a production environment. For performance and security reasons in the production environment, you should either use the [Bot Builder SDK Azure Extensions](https://github.com/Microsoft/BotBuilder-Azure) to store state data in your own Azure Table storage or Azure DocumentDB store or create a custom implementation of `IBotDataStore` to store state data in the destination that you specify.
-
 ## Bot state methods
 
 This table lists the methods within Bot state service that you can use to manage state data.
@@ -106,6 +103,16 @@ when it attempts to save state data, if another instance of the bot has changed 
 You can design your bot to account for this scenario, as shown in the following code example.
 
 [!code-csharp[Handle exception saving state](../includes/code/dotnet-state.cs#handleException)]
+ 
+## Manage data storage
+
+Under the hood, the Bot Builder SDK for Node.js stores state data using the Bot Connector State service, which is intended for prototyping only and is not designed for use by bots in a production environment. For performance and security reasons in the production environment, consider implementing one of the following data storage options:
+
+1. [Manage state data with Cosmos DB](bot-builder-dotnet-state-azure-cosmosdb.md)
+
+2. [Manage state data with Table storage](bot-builder-dotnet-state-azure-table-storage.md)
+
+With either of these [Azure Extensions](https://www.npmjs.com/package/botbuilder-azure) options, the mechanism for setting and persisting data via the Bot Framework SDK for .NET remains the same as described previously in this article.
 
 ## Additional resources
 
