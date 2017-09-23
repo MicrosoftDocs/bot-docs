@@ -29,6 +29,7 @@ Using Conversation Designer, you can build bots that adapt easily to available i
 ## Prerequisites
 
 - Conversation Designer requires an Azure subscription. You can get started <a href="https://azure.microsoft.com/en-us/" target="_blank">here</a>
+- You must at least once manually sign in to the <a href="http://luis.ai/" target="_blank">here</a>LUIS portal</a>
 - Familiarity with JavaScript programming. Custom script functions are written in JavaScript.
 - Microsoft Edge or Google Chrome
 
