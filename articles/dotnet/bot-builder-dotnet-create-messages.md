@@ -26,7 +26,9 @@ This sample shows how to create a custom `message` object and set the `Text`, `T
 
 [!code-csharp[Set message properties](../includes/code/dotnet-create-messages.cs#setBasicProperties)]
 
-The `TextFormat` property of a message can be used to specify the format of the text. The `TextFormat` property can be set to **plain**, **markdown**, or **xml**. The default value for `TextFormat` is **markdown**. For more information on the `TextFormat` property, see [Message text and formatting](../rest-api/bot-framework-rest-connector-create-messages.md#message-text-and-formatting).
+The `TextFormat` property of a message can be used to specify the format of the text. The `TextFormat` property can be set to **plain**, **markdown**, or **xml**. The default value for `TextFormat` is **markdown**. 
+
+For a list of commonly supported text formatting, see [Text formatting](../portal-channel-inspector.md#text-formatting). To ensure that the feature(s) you want to use is supported by the target channel, preview the feature(s) using the [Channel Inspector](../portal-channel-inspector.md).
 
 ## Attachments
 
@@ -134,3 +136,4 @@ A bot and a user can send messages to each other. When the message is more compl
 - [Implement channel-specific functionality](bot-builder-dotnet-channeldata.md)
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.8" target="_blank">Activity class</a>
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.imessageactivity?view=botbuilder-3.8" target="_blank">IMessageActivity interface</a>
+

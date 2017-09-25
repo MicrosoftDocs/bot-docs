@@ -45,7 +45,7 @@ var userMessage = session.message.text;
 
 To have more control over the text formatting of your messages, you can create a custom [`message`](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.message.html) object and set the properties necessary before sending it to the user.
 
-This sample shows how to create a custom `message` object and set `text`, `textFormat`, and `textLocale` properties.
+This sample shows how to create a custom `message` object and set the `text`, `textFormat`, and `textLocale` properties.
 
 ```javascript
 var customMessage = new builder.Message(session)
@@ -57,7 +57,9 @@ session.send(customMessage);
 
 In cases where you do not have the `session` object in scope, you can use `bot.send` method to send a formatted message to the user.
 
-The `textFormat` property of a message can be used to specify the format of the text. The `textFormat` property can be set to **plain**, **markdown**, or **xml**. The default value for `textFormat` is **markdown**. For more information on the `textFormat` property, see [Message text and formatting](../rest-api/bot-framework-rest-connector-create-messages.md#message-text-and-formatting).
+The `textFormat` property of a message can be used to specify the format of the text. The `textFormat` property can be set to **plain**, **markdown**, or **xml**. The default value for `textFormat` is **markdown**. 
+
+For a list of commonly supported text formatting, see [Text formatting](../portal-channel-inspector.md#text-formatting). To ensure that the feature(s) you want to use is supported by the target channel, preview the feature(s) using the [Channel Inspector](../portal-channel-inspector.md).
 
 ## Message property
 
@@ -94,3 +96,4 @@ Message properties are set and retrieved through the object's methods. The table
 
 > [!div class="nextstepaction"]
 > [Send and receive attachments](bot-builder-nodejs-send-receive-attachments.md)
+

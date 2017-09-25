@@ -19,47 +19,7 @@ Message text can be formatted using **plain**, **markdown**, or **xml**. The def
 
 The `textFormat` property of the [Activity][Activity] object can be used to specify the format of the text. For example, to create a basic message that contains only plain text, set the `textFormat` property of the [Activity][Activity] object to **plain**, set the `text` property to the contents of the message and set the `locale` property to the locale of the sender. 
 
-If a channel is not capable of rendering the specified formatting, the message will be rendered using reasonable approximation. For example, Markdown **bold** text for a message sent via text messaging will be rendered as \*bold\*. 
-
-### Markdown text format
-These styles are supported when `textFormat` is set to **markdown**:  
-
-| Style | Markdown | Example | 
-| ---- | ---- | ---- | 
-| bold | \*\*text\*\* | **text** |
-| italic | \*text\* | *text* |
-| header (1-5) | # H1 | # H1 |
-| strikethrough | \~\~text\~\~ | ~~text~~ |
-| horizontal rule | ---- | ---- |
-| unordered list | \* text |  <ul><li>text</li></ul> |
-| ordered list | 1. text | 1. text |
-| preformatted text | \`text\` | `text`  |
-| blockquote | \> text | <blockquote>text</blockquote> |
-| hyperlink | \[bing](http://www.bing.com) | [bing](http://www.bing.com) |
-| image link| !\[duck](http://aka.ms/Fo983c) | ![duck](http://aka.ms/Fo983c) |
-
-> [!NOTE]
-> HTML tags in **Markdown** are not supported in Microsoft Bot Framework Web Chat channels. If you need to use HTML tags in your **Markdown**, you can render them in a [Direct Line](~/channel-connect-directline.md) channel that supports it. Alternatively, you can use the HTML tags below by setting the `textFormat` to **xml** and connect your bot to Skype channel.
-
-### XML text format
-These styles are supported when `textFormat` is set to **xml**: 
-
-| Style | XML | Example | 
-|----|----|----|----|
-| bold | \<b\>text\</b\> | **text** | 
-| italic | \<i\>text\</i\> | *text* |
-| underline | \<u\>text\</u\> | <u>text</u> |
-| strikethrough | \<s\>text\</s\> | <s>text</s> |
-| hyperlink | \<a href="http://www.bing.com"\>bing\</a\> | <a href="http://www.bing.com">bing</a> |
-| paragraph | \<p\>text\</p\> | <p>text</p> |
-| line break | \<br/\> | line 1 <br/>line 2 |
-| horizontal rule | \<hr/\> | <hr/> |
-| header (1-4) | \<h1\>text\</h1\> | <h1>Heading 1</h1> |
-| code | \<code\>code block\</code\> | <code>code block</code> |
-| image | \<img src="http://aka.ms/Fo983c" alt="Duck"\> | <img src="http://aka.ms/Fo983c" alt="Duck"> 
-
-> [!NOTE]
-> The `textFormat` **xml** is supported only by the Skype channel. 
+For a list of commonly supported text formatting, see [Text formatting](../portal-channel-inspector.md#text-formatting).
 
 ## Attachments
 
@@ -108,3 +68,4 @@ The `suggestedActions` property of the [Activity][Activity] object can be used t
 [Place]: bot-framework-rest-connector-api-reference.md#place-object
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object
 [ChannelInspector]: ../portal-channel-inspector.md
+[textFormating]: ../portal-channel-inspector.md#text-formatting
