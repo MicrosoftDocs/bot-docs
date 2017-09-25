@@ -1,134 +1,130 @@
 ---
-title: Create a bot with the Azure Bot Service | Microsoft Docs
-description: Create a bot with the Azure Bot Service, an integrated, dedicated bot development environment.
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+title: "透過 Azure Bot Service 建立一個機器人 | Microsoft Docs"
+description: "使用Azure Bot Service創建機器人，這是一個集成的專用bot開發環境。"
+author: 
+ms.author: 
+manager: 
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 08/04/2017
+ms.date: 
 ms.reviewer: 
 ---
-# Create a bot with the Azure Bot Service
+# <a name="create-a-bot-with-the-azure-bot-service"></a>用Azure Bot Service創建一個機器人
 > [!div class="op_single_selector"]
 > - [.NET](~/dotnet/bot-builder-dotnet-quickstart.md)
 > - [Node.js](~/nodejs/bot-builder-nodejs-quickstart.md)
 > - [Azure Bot Service](azure-bot-service-quickstart.md)
 > - [REST](rest-api/bot-framework-rest-connector-quickstart.md)
 
-The Azure Bot Service accelerates the process of developing a bot 
-by provisioning a web host with one of five bot templates you can modify in 
-an integrated environment that is purpose-built for bot development. 
-This tutorial walks you through the process of creating and testing a bot by using the Azure Bot Service.
+Azure Bot Service 的集成環境，可以加速開發機器人的過程， 
+從預設五個模板選一個進行開發設計在發佈到虛擬主機中。 
+本教程將引導您使用Azure Bot Service創建和測試機器人的過程。
 
-## Prerequisites
+## <a name="Prerequisites"></a>先決條件
 
-You must have a Microsoft Azure subscription before you can use the Azure Bot Service. 
-If you do not already have a subscription, you can register for a <a href="https://azure.microsoft.com/en-us/free/" target="_blank">free trial</a>.
+您必須使用Microsoft Azure訂閱，然後才能使用Azure Bot Service。 
+如果你尚未訂閱，你可以在此註冊 <a href="https://azure.microsoft.com/en-us/free/" target="_blank">免費試用</a>.
 
-## Create your bot
+## <a name="create-your-bot"></a>建立你的機器人
 
-To create a bot by using the Azure Bot Service, 
-sign in to <a href="https://portal.azure.com" target="_blank">Azure</a> and complete the following steps. 
+要通過使用Azure Bot服務來創建機器人，
+登入 <a href="https://portal.azure.com" target="_blank">Azure</a> ， 並遵循下列步驟。
 
-### Create a new bot service
+### 建立新的bot服務
 
-1. Select **New** in the menu blade. 
+1. 選擇 menu 選單的 **New**。 
 
-2. In the **New** blade, navigate to the Data + Analytics category, and select **Bot Service**. 
+2. 在 **New** 欄中， 導覽至 Data + Analytics category，並選擇 **Bot Service**。 
 
-3. In the Bot Service blade, provide the requested information, and click **Create** to create the bot service and deploy it to the cloud. 
+3. 在 Bot Service blade 中，提供所需的資訊，點擊 **Create** 來建立機器人服務並部署到雲端。 
 
-    - Set **App name** to your bot’s name. The name is used as the subdomain when your bot is deployed to the cloud (for example, *mybasicbot*.azurewebsites.net). 
-    - Select the subscription to use.  
-    - Select the <a href="https://azure.microsoft.com/en-us/documentation/articles/resource-group-overview/" target="_blank">resource group</a>, [hosting plan](azure-bot-service-hosting-plan.md), and <a href="https://azure.microsoft.com/en-us/regions/" target="_blank">location</a>.<br/>  
+    - 設置 **App name** 為你的機器人命名。 此名稱將用來作為你的 Bot 的子網域 (例如： *mybasicbot*.azurewebsites.net)。 
+    - 選擇要使用的訂閱。
+    - 選擇 <a href="https://azure.microsoft.com/en-us/documentation/articles/resource-group-overview/" target="_blank">資源群組</a>, [部署方案](azure-bot-service-hosting-plan.md)， 及 <a href="https://azure.microsoft.com/en-us/regions/" target="_blank">位置</a>。<br/>  
 
     ![Bot Service blade](~/media/azure-bot-service-create-bot.png)
 
-4. Confirm that the bot service has been deployed.
-    - Click **Notifications** (the bell icon that is located along the top edge of the Azure portal). The notification will change from **Deployment started** to **Deployment succeeded**. 
-    - After the notification changes to **Deployment succeeded**, click that notification.<br/><br/>
+4. 確認已經部署了機器人服務。
+    - 點選 **Notifications** (位於Azure Portal 頂部的鈴鐺圖標)。 通知將會由 **Deployment started** 轉變為 **Deployment succeeded**。 
+    - 當通知變換為 **Deployment succeeded**， 點選該通知.<br/><br/>
     ![Azure notification](~/media/azure-bot-service-first-bot-notification.png)
 
-### Create App ID and password  
+### 建立應用程式 ID 及金鑰
 
-Next, create an app ID and password for your bot, so that it will be able to authenticate with the Bot Framework.
+接下來，為您的機器人創建一個應用程序ID和金鑰，以便它能夠使用Bot框架進行身份驗證。
 
-1. Click **Create Microsoft App ID and password**.  
+1. 點選 **Create Microsoft App ID and password**.  
 
     ![create app id](~/media/azure-bot-service-create-app-id.png)  
 
-2. On the page that opens in a new browser tab, click **Generate an app password to continue**.
+2. 將會開啟新頁面，點選 **Generate an app password to continue**。
 
-3. Copy and securely store the password that is shown, and then click **Ok**.
+3. 顯示後複製並確定儲存金鑰，點選 **Ok**.
 
-4. Click **Finish and go back to Bot Framework**.
+4. 點選 **Finish and go back to Bot Framework**.
 
-5. Back in the Azure Portal, assure the **app ID** field is auto-populated for you, and paste the password that you copied (in step 3 above) into the password field.
+5. 回到 Azure Portal，確定 **app ID** 欄已經自動填入，貼上在先前複製的金鑰 (在步驟3) 在金鑰欄中。
 > [!TIP]
-> If the **app ID** field is not auto-populated, you can retrieve it by signing in to the 
+> 如果 **app ID** 欄並未自動填入，你可以找回他在 
 > <a href="https://apps.dev.microsoft.com" target="_blank">Microsoft Application Registration Portal</a> 
-> and copying the application ID from your application's registration settings.
+> 從應用程序的註冊設置複製應用程序ID。
 
     ![password](~/media/azure-bot-service-password.png)  
 
 
-### Select your programming language 
+### 選擇您的編程語言 
 
-Choose the programming language that you want to use to develop your bot.  
+選擇您要用於開發機器人的編程語言。  
 
 ![language](~/media/azure-bot-service-coding-language.png)  
 
-### Select a template and create the bot
+### 選擇模板並建立機器人
 
-Select the template to use as the starting point for developing your bot. 
-For this tutorial, choose the **Basic** template. 
+選擇要用作開發機器人的起點的模板。 
+在本教程中，使用 **Basic** 模板 。
 
 ![template](~/media/azure-bot-service-template.png)  
 
-Then, click **Create bot** to create the bot based upon the programming language and template that you've chosen. 
+然後，點選 **Create bot** 將會根據您選擇的編程語言和模板創建機器人。
 
 > [!IMPORTANT]
-> When you click **Create bot**, there may be a slight delay before a splash screen renders to indicate that the bot service is generating your bot. *Do not* click **Create bot** again. Please wait for the splash screen to appear.
+> 當您點擊 **創建機器人** 後，可能會有一個輕微的延遲，系統將在背景為你建立機器人。 *請勿* 再次點選 **Create bot** 。等候頁面重新出現。
 
-When the bot service finishes generating your bot, the Azure editor will contain the bot's source files. 
-At this point, the bot has been created, registered with the Bot Framework, deployed to the cloud, and is fully functional. 
-If you sign in to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a>, 
-you'll see that your bot is now listed under **My bots**. 
-Congratulations! You've successfully created a bot by using the Azure Bot Service! 
+當機器人服務完成生成機器人時，Azure 編輯器將包含機器人的源文件。
+在這時，機器人已經被創建，使用 Bot Framework，部署到雲端，並具備完整功能。
+當你登入 <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a>，
+你將看到你的機器人位於 **My bots** 下。 
+恭喜！ 您已經通過使用Azure Bot服務成功創建了機器人！
 
 ![bot settings in portal](~/media/azure-bot-service-bf-portal.png)
 
-## Test your bot
+## 測試你的機器人
 
-Now that your bot is running in the cloud, try it out by typing a few messages into the built-in chat control 
-that's located to the right of the code editor in Azure. 
-You should see that the bot responds to each message you send by echoing back your message prefixed with the text *You said*. 
+現在，您的機器人在雲端中運行，通過在Azure代碼編輯器右側的內置聊天視窗中輸入一些消息來嘗試。
+你將會看到機器人回應你發送的每條消息，重複你的訊息前方加上的 *You said*。 
 
 ![azure bot service channels test](~/media/azure-bot-service-editor.png)  
 
 
-## Deploy changes to your web app bot
+## 更改你的Web app bot部署
 
-If you chose the App Service plan, follow these steps to modify your bot source and re-deploy your changes.
+如果您選擇App Service計劃，請按照以下步驟修改 bot 文件並重新部署更改。
 
-1. In Azure, click your bot's **BUILD** tab, and click **Open online code editor**.
-2. Open the Dialogs folder, and click `EchoDialog.cs`.
-3. Change text in line 22 from `You said` to `You just said`.
-4. To deploy your changed source, click the Open Console icon.  
+1. 在 Azure 中， 選擇 Bot 的 **BUILD** ，然後點選 **Open online code editor**.
+2. 打開 Dialogs 文件夾， 點選 `EchoDialog.cs`。
+3. 更改 line 22 從 `You said` 替換為 `You just said`。
+4. 要部署更改的源，請單擊打開控制台圖標。
     ![Console Icon](~/media/azure-bot-service-console-icon.png)
-2. In the Console window, type **build.cmd**, and press the enter key.
+2. 在控制台窗口中，輸入 **build.cmd** ，然後按確定鍵。
 
-The console window shows the deployment's progress until it's complete.
+控制台窗口顯示部署的進度，直到完成。
 
   
 > [!NOTE]
-> A bot on a consumption plan automatically deploys each time you modify a source file in the online editor.
+> 在線編輯器中修改源文件時，儲存後將會自動部署。
 
-## Next steps
+## 下一步
 
-In this tutorial, you created a simple bot by using the Azure Bot Service 
-and verified the bot's functionality by using the built-in chat control within Azure. 
-At this point, you may want to [add more functionality](bot-design-principles.md) to your bot or set up [continuous deployment](azure-bot-service-continuous-deployment.md). 
-You can also configure your bot to run on one or more channels and publish your bot, without ever leaving 
-the Azure portal. 
+在本教程中，您使用Azure Bot Service創建了一個簡單的機器人，並通過在Azure中的內置的聊天視窗來測試機器人的功能。 
+此時，您可能希望為您的機器人[添加更多功能](bot-design-principles.md)或設置[持續部署](azure-bot-service-continuous-deployment.md)。
+您還可以配置您的機器人在一個或多個平台上運行，並發布您的機器人，而不用離開Azure Portal。
