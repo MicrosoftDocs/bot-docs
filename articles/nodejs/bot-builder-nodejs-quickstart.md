@@ -14,7 +14,7 @@ ms.reviewer:
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-quickstart.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-quickstart.md)
-> - [Azure Bot Service](../azure/azure-bot-service-quickstart.md)
+> - [Azure Bot Service](../azure-bot-service-quickstart.md)
 > - [REST](../rest-api/bot-framework-rest-connector-quickstart.md)
 
 The Bot Builder SDK for Node.js is a framework for developing bots. It is easy to use and models frameworks like Express & restify to provide a familiar way for JavaScript developers to write bots.
