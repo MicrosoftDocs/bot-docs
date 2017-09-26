@@ -1,6 +1,6 @@
 ---
-title: Language understanding | Microsoft Docs
-description: How to set up language understanding task trigger using LUIS
+title: Define a dialogue as a Do action | Microsoft Docs
+description: Learn how to set up dialogue as a Do action.
 author: vkannan
 manager: rstand
 ms.topic: article
@@ -9,56 +9,56 @@ ms.date: 07/04/2017
 ROBOTS: NoIndex, NoFollow
 ---
 
-# Define a dialog as a Do action
+# Define a dialogue as a Do action
 > [!IMPORTANT]
 > Conversation Designer is not available to all customers yet. More details on
 > availability of Conversation Designer will come later this year.
 
-A dialog covers the conversational model for a specific task. For example, a cafe bot that helps users book a table could define a task called "Book Table". The **Do** action would be bound to a dialog that models the conversational flow between the bot and user. 
+A dialogue covers the conversational model for a specific task. For example, a cafe bot that helps users book a table could define a task called "Book Table". The **Do** action would be bound to a dialogue that models the conversational flow between the bot and user. 
 
-Dialogs are particularly useful when a bot engages in a back and forth conversation with the user to help complete a task.  Users rarely express all required values to complete a task in a single utterance. 
+Dialogues are particularly useful when a bot engages in a back and forth conversation with the user to help complete a task.  Users rarely express all required values to complete a task in a single utterance. 
 
 Booking a table requires the location, party size, date, and time preference. A bot that books tables needs to understand and handle various possible phrases the user could say. 
 
 - *book a table*: In this case, none of the required entities were captured. The bot must now engage in a conversation with the user.
 - *book a table for 7PM this Saturday*: In this case, date and time preference is specified but the bot must still gather the intended location and party size.
 
-During a conversation, some entities may change based on user input. For example, if the user says "Book a table in Redmond for this Sunday at 7 pm." but the Redmond location closes at six on Sundays, the bot's dialog should handle such invalid requests. 
+During a conversation, some entities may change based on user input. For example, if the user says "Book a table in Redmond for this Sunday at 7 pm." but the Redmond location closes at six on Sundays, the bot's dialogue should handle such invalid requests. 
 
-Conversation Designer provides a drag-and-drop dialog designer to help you visualize your conversation flow. The dialog designer offers seven *dialog states* you can use to model your conversation flow.
+Conversation Designer provides a drag-and-drop dialogue designer to help you visualize your conversation flow. The dialogue designer offers seven *dialogue states* you can use to model your conversation flow.
 
-## Dialog states
+## Dialogue states
 
-A dialog is made up of conversational states. The dialog itself is modeled as a structured, directed flow that provide the conversation runtime a structure for how to execute the conversational flow.
+A dialogue is made up of conversational states. The dialogue itself is modeled as a structured, directed flow that provide the conversation runtime a structure for how to execute the conversational flow.
 
-Dialogs come with many builtin states you can use. Supported builtin states include the following:
+Dialogues come with many builtin states you can use. Supported builtin states include the following:
 
-- [**Start**](#start-state): Represents the starting state for a conversational flow. All dialogs must have at least one start state defined.
-- [**Return**](#return-state): Represents completion of the specific conversational flow. Given that conversational flows are composable, return instructs the conversation runtime to return execution to any possible callers of this dialog.
+- [**Start**](#start-state): Represents the starting state for a conversational flow. All dialogues must have at least one start state defined.
+- [**Return**](#return-state): Represents completion of the specific conversational flow. Given that conversational flows are composable, return instructs the conversation runtime to return execution to any possible callers of this dialogue.
 - [**Decision**](#decision-state): Represents a point of branching in the conversational flow.
 - [**Process**](#process-state): Represents a state where your bot is executing business logic.
 - [**Prompt**](#prompt-state): Represents a state you can prompt the user for input. 
-- [**Feedback**](#feedback-state): Represent a state you can provide feedback or confirmation to the user. For example, a dialog confirming that the reservation has been made.
-- [**Module**](#module-state): Represents a call to another dialog. Since dialog flows are composable by default,  this state can call either a shared dialog or some other dialog as defined under this task.
+- [**Feedback**](#feedback-state): Represent a state you can provide feedback or confirmation to the user. For example, a dialogue confirming that the reservation has been made.
+- [**Module**](#module-state): Represents a call to another dialogue. Since dialogue flows are composable by default,  this state can call either a shared dialogue or some other dialogue as defined under this task.
 
-Each conversational state is connected to another using dialog connectors in the dialog designer.
+Each conversational state is connected to another using dialogue connectors in the dialogue designer.
 
-Every dialog state has an associated state editor that is used to specify the properties for that state, including callback function names for custom scripts. The **State Editor** located as a resize pane at the bottom of the dialog designer main view port. To bring up the editor, double-click a state from the dialog designer and a **State Editor** will display the properties for that state.
+Every dialogue state has an associated state editor that is used to specify the properties for that state, including callback function names for custom scripts. The **State Editor** located as a resize pane at the bottom of the dialogue designer main view port. To bring up the editor, double-click a state from the dialogue designer and a **State Editor** will display the properties for that state.
 <!-- TODO: insert screenshot of the wrench in horizontal menu -->
 
-The following sub-sections provide more details about each of these builtin dialog states.
+The following sub-sections provide more details about each of these builtin dialogue states.
 
 ### Start state
 
-Start state denotes the starting point of a dialog. Required value is state **name**. The name is defaulted to "Start" and you can edit it to rename this state.
+Start state denotes the starting point of a dialogue. Required value is state **name**. The name is defaulted to "Start" and you can edit it to rename this state.
 
 ### Return state
 
-Return state represents completion of the specific branch of the conversational flow. Since dialogs are composable, the state also instructs the conversation runtime to return execution to the caller dialog. Required value is state **name**. The name is defaulted to "Return" and you can edit it to rename this state.
+Return state represents completion of the specific branch of the conversational flow. Since dialogues are composable, the state also instructs the conversation runtime to return execution to the caller dialogue. Required value is state **name**. The name is defaulted to "Return" and you can edit it to rename this state.
 
 ### Decision state
 
-A decision state represents branching in the conversational flow. You can write custom script to evaluate which branch to follow. Depending on user input and business logic, the script will return one of the possible transition values. Each transition value prompts the conversation runtime to run a different branch of the dialog.
+A decision state represents branching in the conversational flow. You can write custom script to evaluate which branch to follow. Depending on user input and business logic, the script will return one of the possible transition values. Each transition value prompts the conversation runtime to run a different branch of the dialogue.
 
 Required properties for decision state:
 - **Name**: Unique name for the decision state.
@@ -83,7 +83,7 @@ module.exports.fnDecisionState = function(context) {
 
 ### Process state
 
-Process state represents a point in the dialog where the bot is either driving the conversation forward or attempting to perform the final task completion action. 
+Process state represents a point in the dialogue where the bot is either driving the conversation forward or attempting to perform the final task completion action. 
 
 Required properties for process state:
 - **Name**: Unique name for the process state
@@ -114,7 +114,7 @@ module.exports.fnGetWeather = function(context) {
 
 ### Prompt state
 
-Prompt state asks the user for a specific piece of information. Prompt states embody a sub-dialog system within them and so by definition are complex states. 
+Prompt state asks the user for a specific piece of information. Prompt states embody a sub-dialogue system within them and so by definition are complex states. 
 
 Within a prompt state, you can define the actual response to provide to the user and optionally include an adaptive card. You can then specify a trigger to parse and understand the user's response. This trigger can be either LUIS or a custom code recognizer using regex.  
 
@@ -229,16 +229,16 @@ module.exports.fnOnResponding = function(context) {
 
 ### Module state
 
-A module state is used to add a reference to execute a sub-dialog. Use this state to string dialogs together. 
+A module state is used to add a reference to execute a sub-dialogue. Use this state to string dialogues together. 
 
-Each module state requires a unique name and a pointer to a specific dialog to execute. Possible options for dialogs to execute must live under **Shared Dialogs** or under the specific **Tasks**.
+Each module state requires a unique name and a pointer to a specific dialogue to execute. Possible options for dialogues to execute must live under **Shared dialogues** or under the specific **Tasks**.
 
-## Multiple dialogs under a task
+## Multiple dialogues under a task
 
-A task can have multiple dialogs. To add a dialog to a task, simply select the task and click on the **Add** button in the left tree panel then click **Add dialog**. This will add a new dialog under the selected task. 
+A task can have multiple dialogues. To add a dialogue to a task, simply select the task and click on the **Add** button in the left tree panel then click **Add dialogue**. This will add a new dialogue under the selected task. 
 
-Since Dialogs are composable, you can bound the root dialog flow to the task that calls other dialogs under the task or those defined under [shared dialogs](conversation-designer-dialogs-shared.md). This allows you to encapsulate sub-tasks and enable reuse. This also enables you to chain these dialogs in a conversational flow using *module* states.
+Since dialogues are composable, you can bound the root dialogue flow to the task that calls other dialogues under the task. This allows you to encapsulate sub-tasks and enable reuse. This also enables you to chain these dialogues in a conversational flow using *module* states.
 
 ## Next step
 > [!div class="nextstepaction"]
-> [Shared Dialogs](conversation-designer-dialogs-shared.md)
+> [Response templates](conversation-designer-response-templates.md)
