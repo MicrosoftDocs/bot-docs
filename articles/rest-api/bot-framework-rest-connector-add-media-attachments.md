@@ -69,6 +69,77 @@ You can attach a video file or audio file to a message by using the same process
 > For example, a message that your bot receives may contain an attachment 
 > if the channel enables the user to upload a photo to be analyzed or a document to be stored.
 
+## Add an AudioCard attachment
+
+Adding an [AudioCard](bot-framework-rest-connector-api-reference.md#audiocard-object) or [VideoCard](bot-framework-rest-connector-api-reference.md#videocard-object) attachment is the same as adding a media attachment. For example, the following JSON shows how to add an audio card in the media attachment.
+
+```json
+{
+    "type": "message",
+    "from": {
+        "id": "12345678",
+        "name": "sender's name"
+    },
+    "conversation": {
+        "id": "abcd1234",
+        "name": "conversation's name"
+   },
+   "recipient": {
+        "id": "1234abcd",
+        "name": "recipient's name"
+    },
+    "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.audio",
+      "content": {
+        "title": "Allegro in C Major",
+        "subtitle": "Allegro Duet",
+        "text": "No Image, No Buttons, Autoloop, Autostart, Sharable",
+        "media": [
+          {
+            "url": "https://contoso.com/media/AllegrofromDuetinCMajor.mp3"
+          }
+        ],
+        "shareable": true,
+        "autoloop": true,
+        "autostart": true,
+        "value": {
+            // Supplementary parameter for this card
+        }
+      }
+    }],
+    "replyToId": "5d5cdc723"
+}
+```
+
+Once the channel receives this attachment, it will start playing the audio file. If a user interacts with audio by clicking the **Pause** button, for example, the channel will send a callback to the bot with a JSON that look something like this:
+
+```json
+{
+    ...
+    "type": "event",
+    "name": "media/pause",
+    "value": {
+        "url": // URL for media
+        "cardValue": {
+            // Supplementary parameter for this card
+        }
+    }
+}
+
+```
+
+The media event name **media/pause** will appear in the `activity.name` field. Reference the below table for a list of all media event names.
+
+| Event | Description |
+| ---- | ---- |
+| **media/next** | The client skipped to the next media |
+| **media/pause** | The client paused playing media |
+| **media/play** | The client began playing media |
+| **media/previous** | The client skipped to the previous media |
+| **media/resume** | The client resumed playing media |
+| **media/stop** | The client stopped playing media |
+
 ## Additional resources
 
 - [Create messages](bot-framework-rest-connector-create-messages.md)

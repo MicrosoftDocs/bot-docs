@@ -314,6 +314,49 @@ DELETE /v3/botstate/{channelId}/users/{userId}
 
 ##<a id="objects"></a> Schema
 
+Schema defines the object and its properties that your bot can use to communicate with a user. 
+
+| Object | Description |
+| ---- | ---- |
+| [Activity object](#activity-object) | Defines a message that is exchanged between bot and user. |
+| [AnimationCard object](#animationcard-object) | Defines a card that can play animated GIFs or short videos. |
+| [Attachment object](#attachment-object) | Defines additional information to include in the message. An attachment may be a media file (e.g., audio, video, image, file) or a rich card. |
+| [AttachmentData object](#attachmentdata-object) |Describes an attachment data. |
+| [AttachmentInfo object](#attachmentinfo-object) | Describes an attachment. |
+| [AttachmentView object](#attachmentview-object) | Defines a attachment view. |
+| [AttachmentUpload object](#attachmentupload-object) | Defines an attachment to be uploaded. |
+| [AudioCard object](#audiocard-object) | Defines a card that can play an audio file. |
+| [BotData object](#botdata-object) | Defines state data for a user, a conversation, or a user in the context of a specific conversation that is stored using the Bot State service. |
+| [CardAction object](#cardaction-object) | Defines an action to perform. |
+| [CardImage object](#cardimage-object) | Defines an image to display on a card. |
+| [ChannelAccount object](#channelaccount-object) | Defines a bot or user account on the channel. |
+| [Conversation object](#conversation-object) | Defines a conversation, including the bot and users that are included within the conversation. |
+| [ConversationAccount object](#conversationaccount-object) | Defines a conversation in a channel. |
+| [ConversationParameters object](#conversationparameters-object) | Define parameters for creating a new conversation |
+| [ConversationReference object](#conversationreference-object) | Defines a particular point in a conversation. |
+| [ConversationResourceResponse object](#conversationresourceresponse-object) | "A response containing a resource |
+| [Entity object](#entity-object) | Defines an entity object. |
+| [Error object](#error-object) | Defines an error. |
+| [ErrorResponse object](#errorresponse-object) | Defines an HTTP API response. |
+| [Fact object](#fact-object) | Defines a key-value pair that contains a fact. |
+| [Geocoordinates object](#geocoordinates-object) | Defines a geographical location using World Geodetic System (WSG84) coordinates. |
+| [HeroCard object](#herocard-object) | Defines a card with a large image, title, text, and action buttons. |
+| [Identification object](#identification-object) | Identifies a resource. |
+| [MediaEventValue object](#mediaeventvalue-object) |Supplementary parameter for media events.|
+| [MediaUrl object](#mediaurl-object) | Defines the URL to a media file's source. |
+| [Mention object](#mention-object) | Defines a user or bot that was mentioned in the conversation. |
+| [MessageReaction object](#messagereaction-object) | Defines a reaction to a message. |
+| [Place object](#place-object) | Defines a place that was mentioned in the conversation. |
+| [ReceiptCard object](#receiptcard-object) | Defines a card that contains a receipt for a purchase. |
+| [ReceiptItem object](#receiptitem-object) | Defines a line item within a receipt. |
+| [ResourceResponse object](#resourceresponse-object) | Defines a resource. |
+| [SignInCard object](#signincard-object) | Defines a card that lets a user sign in to a service. |
+| [SuggestedActions object](#suggestedactions-object) | Defines the options from which a user can choose. |
+| [ThumbnailCard object](#thumbnailcard-object) | Defines a card with a thumbnail image, title, text, and action buttons. |
+| [ThumbnailUrl object](#thumbnailurl-object) | Defines the URL to an image's source. |
+| [VideoCard object](#videocard-object) | Defines a card that can play videos. |
+
+
 ### Activity object
 Defines a message that is exchanged between bot and user.<br/><br/> 
 
@@ -325,6 +368,7 @@ Defines a message that is exchanged between bot and user.<br/><br/>
 | **channelData** | object | An object that contains channel-specific content. Some channels provide features that require additional information that cannot be represented using the attachment schema. For those cases, set this property to the channel-specific content as defined in the channel's documentation. For more information, see [Implement channel-specific functionality](bot-framework-rest-connector-channeldata.md). |
 | **channelId** | string | An ID that uniquely identifies the channel. Set by the channel. | 
 | **conversation** | [ConversationAccount](#conversationaccount-object) | A **ConversationAccount** object that defines the conversation to which the activity belongs. |
+| **code** | string | Code indicating why the conversation has ended. |
 | **entities** | object[] | Array of objects that represents the entities that were mentioned in the message. Objects in this array may be any <a href="http://schema.org/" target="_blank">Schema.org</a> object. For example, the array may include [Mention](#mention-object) objects that identify someone who was mentioned in the conversation and [Place](#place-object) objects that identify a place that was mentioned in the conversation. |
 | **from** | [ChannelAccount](#channelaccount-object) | A **ChannelAccount** object that specifies the sender of the message. |
 | **historyDisclosed** | boolean | Flag that indicates whether or not history is disclosed. Default value is **false**. |
@@ -334,6 +378,7 @@ Defines a message that is exchanged between bot and user.<br/><br/>
 | **localTimestamp** | string | Date and time that the message was sent in the local time zone, expressed in <a href="https://en.wikipedia.org/wiki/ISO_8601" target="_blank">ISO-8601</a> format. |
 | **membersAdded** | [ChannelAccount](#channelaccount-object)[] | Array of **ChannelAccount** objects that represents the list of users that joined the conversation. Present only if activity **type** is "conversationUpdate" and users joined the conversation. | 
 | **membersRemoved** | [ChannelAccount](#channelaccount-object)[] | Array of **ChannelAccount** objects that represents the list of users that left the conversation. Present only if activity **type** is "conversationUpdate" and users left the conversation. | 
+| **name** | string | Name of the operation to invoke or the name of the event. |
 | **recipient** | [ChannelAccount](#channelaccount-object) | A **ChannelAccount** object that specifies the recipient of the message. |
 | **relatesTo** | [ConversationReference](#conversationreference-object) | A **ConversationReference** object that defines a particular point in a conversation. |
 | **replyToId** | string | The ID of the message to which this message replies. To reply to a message that the user sent, set this property to the ID of the user's message. Not all channels support threaded replies. In these cases, the channel will ignore this property and use time ordered semantics (timestamp) to append the message to the converasation. | 
@@ -346,6 +391,9 @@ Defines a message that is exchanged between bot and user.<br/><br/>
 | **timestamp** | string | Date and time that the message was sent in the UTC time zone, expressed in <a href="https://en.wikipedia.org/wiki/ISO_8601" target="_blank">ISO-8601</a> format. |
 | **topicName** | string | Topic of the conversation to which the activity belongs. |
 | **type** | string | Type of activity. One of these values: **contactRelationUpdate**, **conversationUpdate**, **deleteUserData**, **message**, **ping**, **typing**, **endOfConversation**. For details about activity types, see [Activities overview](bot-framework-rest-connector-activities.md). |
+| **value** | object | Open-ended value. |
+
+<a href="#objects">Back to Schema table</a>
 
 ### AnimationCard object
 Defines a card that can play animated GIFs or short videos.<br/><br/> 
@@ -361,6 +409,9 @@ Defines a card that can play animated GIFs or short videos.<br/><br/>
 | **subtitle** | string | Subtitle to display under the card's title. |
 | **text** | string | Description or prompt to display under the card's title or subtitle. |
 | **title** | string | Title of the card. |
+| **value** | object | Supplementary parameter for this card |
+
+<a href="#objects">Back to Schema table</a>
 
 ### Attachment object
 Defines additional information to include in the message. An attachment may be a media file (e.g., audio, video, image, file) or a rich card.<br/><br/> 
@@ -373,6 +424,18 @@ Defines additional information to include in the message. An attachment may be a
 | **name** | string | Name of the attachment. |
 | **thumbnailUrl** | string | URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of **content** or **contentUrl**. For example, if you set **contentType** to **application/word** and set **contentUrl** to the location of the Word document, you might include a thumbnail image that represents the document. The channel could display the thumbnail image instead of the document. When the user clicks the image, the channel would open the document. |
 
+<a href="#objects">Back to Schema table</a>
+
+### AttachmentData object 
+Describes an attachment data.
+
+| Property | Type | Description |
+|----|----|----|
+| **name** | string | Name of the attachment. |
+| **originalBase64** | string | Attachment content. |
+| **thumbnailBase64** | string | Attachment thumbnail content. |
+| **type** | string | Content-type of the attachment. |
+
 ### AttachmentInfo object
 Describes an attachment.<br/><br/> 
 
@@ -382,6 +445,8 @@ Describes an attachment.<br/><br/>
 | **type** | string | ContentType of the attachment. |
 | **views** | [AttachmentView](#attachmentview-object)[] | Array of **AttachmentView** objects that represent the available views for the attachment. |
 
+<a href="#objects">Back to Schema table</a>
+
 ### AttachmentView object
 Defines a attachment view.<br/><br/> 
 
@@ -390,6 +455,9 @@ Defines a attachment view.<br/><br/>
 | **viewId** | string | View ID. |
 | **size** | number | Size of the file. |
 
+<a href="#objects">Back to Schema table</a>
+
+<!-- TODO - can't find in swagger file -->
 ### AttachmentUpload object
 Defines an attachment to be uploaded.<br/><br/> 
 
@@ -399,6 +467,8 @@ Defines an attachment to be uploaded.<br/><br/>
 | **name** | string | Name of the attachment. | 
 | **originalBase64** | string | Binary data that represents the contents of the original version of the file. |
 | **thumbnailBase64** | string | Binary data that represents the contents of the thumbnail version of the file. |
+
+<a href="#objects">Back to Schema table</a>
 
 ### AudioCard object
 Defines a card that can play an audio file.<br/><br/> 
@@ -415,7 +485,11 @@ Defines a card that can play an audio file.<br/><br/>
 | **subtitle** | string | Subtitle to display under the card's title. |
 | **text** | string | Description or prompt to display under the card's title or subtitle. |
 | **title** | string | Title of the card. |
+| **value** | object | Supplementary parameter for this card |
 
+<a href="#objects">Back to Schema table</a>
+
+<!-- TODO - can't find in swagger file -->
 ### BotData object
 Defines state data for a user, a conversation, or a user in the context of a specific conversation that is stored using the Bot State service.<br/><br/>
 
@@ -424,15 +498,21 @@ Defines state data for a user, a conversation, or a user in the context of a spe
 | **data** | object | In a request, a JSON object that specifies the properties and values to store using the Bot State service. In a response, a JSON object that specifies the properties and values that have been stored using the Bot State service. | 
 | **eTag** | string | The entity tag value that you can use to control data concurrency for the data that you store using the Bot State service. For more information, see [Manage state data](bot-framework-rest-state.md). | 
 
+<a href="#objects">Back to Schema table</a>
+
 ### CardAction object
 Defines an action to perform.<br/><br/> 
 
 | Property | Type | Description |
 |----|----|----|
-| **type** | string | Type of action to perform. For a list of valid values, see [Add rich card attachments to messages](bot-framework-rest-connector-add-rich-cards.md). |
+| **image** | string | URL of an image to display on the | 
+| **text** | string | Text for the action |
 | **title** | string | Text of the button. Only applicable for a button's action. |
-| **image** | string | URL of an image to display on the button. Only applicable for a button's action. |
-| **value** | string | Contents of the action. The value of this property will vary according to the action **type**. For more information, see [Add rich card attachments to messages](bot-framework-rest-connector-add-rich-cards.md). |
+button. Only applicable for a button's action. |
+| **type** | string | Type of action to perform. For a list of valid values, see [Add rich card attachments to messages](bot-framework-rest-connector-add-rich-cards.md). |
+| **value** | object | Supplementary parameter for the action. The value of this property will vary according to the action **type**. For more information, see [Add rich card attachments to messages](bot-framework-rest-connector-add-rich-cards.md). |
+
+<a href="#objects">Back to Schema table</a>
 
 ### CardImage object
 Defines an image to display on a card.<br/><br/> 
@@ -443,6 +523,8 @@ Defines an image to display on a card.<br/><br/>
 | **tap** | [CardAction](#cardaction-object) | A **CardAction** object that specifies the action to perform if the user taps or clicks the image. |
 | **url** | string | URL to the source of the image or the base64 binary of the image (for example, `data:image/png;base64,iVBORw0KGgo...`). |
 
+<a href="#objects">Back to Schema table</a>
+
 ### ChannelAccount object
 Defines a bot or user account on the channel.<br/><br/>
 
@@ -451,6 +533,9 @@ Defines a bot or user account on the channel.<br/><br/>
 | **id** | string | ID that uniquely identifies the bot or user on the channel. |
 | **name** | string | Name of the bot or user. |
 
+<a href="#objects">Back to Schema table</a>
+
+<!--TODO can't find-->
 ### Conversation object
 Defines a conversation, including the bot and users that are included within the conversation.<br/><br/> 
 
@@ -462,6 +547,8 @@ Defines a conversation, including the bot and users that are included within the
 | **topicName** | string | Title of the conversation. |
 | **activity** | [Activity](#activity-object) | In a [Create Conversation](#create-conversation) request, an **Activity** object that defines the first message to post to the new conversation. |
 
+<a href="#objects">Back to Schema table</a>
+
 ### ConversationAccount object
 Defines a conversation in a channel.<br/><br/>
 
@@ -470,6 +557,20 @@ Defines a conversation in a channel.<br/><br/>
 | **id** | string | The ID that identifies the conversation. The ID is unique per channel. If the channel starts the conversion, it sets this ID; otherwise, the bot sets this property to the ID that it gets back in the response when it starts the conversation (see Starting a conversation). |
 | **isGroup** | boolean | Flag to indicate whether or not this is a group conversation. Set to **true** if this is a group conversation; otherwise, **false**. The default is **false**. |
 | **name** | string | A display name that can be used to identify the conversation. |
+
+<a href="#objects">Back to Schema table</a>
+
+### ConversationParameters object
+Define parameters for creating a new conversation
+
+| Property | Type | Description |
+|----|----|----|
+| **isGroup** | boolean | Indicates if this is a group conversation. |
+| **bot** | [ChannelAccount](#channelaccount-object) | Address of the bot in the conversation. |
+| **members** | array | List of members to add to the conversation. |
+| **topicName** | string | Topic title of a conversation. This property is only used if a channel supports it. |
+| **activity** | [Activity](#activity-object) | (optional) Use this activity as the initial message to the conversation when creating a new conversation. |
+| **channelData** | object | Channel specific payload for creating the conversation. |
 
 ### ConversationReference object
 Defines a particular point in a conversation.<br/><br/>
@@ -483,6 +584,17 @@ Defines a particular point in a conversation.<br/><br/>
 | **serviceUrl** | string | URL that specifies the channel's service endpoint in the conversation that this object references. | 
 | **user** | [ChannelAccount](#channelaccount-object) | A **ChannelAccount** object that identifies the user in the conversation that this object references. |
 
+<a href="#objects">Back to Schema table</a>
+
+### ConversationResourceResponse object
+Defines a response that contains a resource.
+
+| Property | Type | Description |
+|----|----|----|
+| **activityId** | string | ID of the activity. |
+| **id** | string | ID of the resource. |
+| **serviceUrl** | string | Service endpoint. |
+
 ### Error object
 Defines an error.<br/><br/>
 
@@ -491,12 +603,24 @@ Defines an error.<br/><br/>
 | **code** | string | Error code. |
 | **message** | string | A description of the error. |
 
+<a href="#objects">Back to Schema table</a>
+
+### Entity object
+Defines an entity object.
+
+| Property | Type | Description |
+|----|----|----|
+| **type** | string | Entity type. Typically contain types from schema.org. |
+
+
 ### ErrorResponse object
 Defines an HTTP API response.<br/><br/> 
 
 | Property | Type | Description |
 |----|----|----|
 | **error** | [Error](#error-object) | An **Error** object that contains information about the error. |
+
+<a href="#objects">Back to Schema table</a>
 
 ### Fact object
 Defines a key-value pair that contains a fact.<br/><br/> 
@@ -505,6 +629,8 @@ Defines a key-value pair that contains a fact.<br/><br/>
 |----|----|----|
 | **key** | string | Name of the fact. For example, **Check-in**. The key is used as a label when displaying the fact's value. |
 | **value** | string | Value of the fact. For example, **10 October 2016**. |
+
+<a href="#objects">Back to Schema table</a>
 
 ### Geocoordinates object
 Defines a geographical location using World Geodetic System (WSG84) coordinates.<br/><br/> 
@@ -516,6 +642,8 @@ Defines a geographical location using World Geodetic System (WSG84) coordinates.
 | **latitude** | number | Latitude of the location. |
 | **longitude** | number | Longitude of the location. |
 | **type** | string | The type of this object. Always set to **GeoCoordinates**. |
+
+<a href="#objects">Back to Schema table</a>
 
 ### HeroCard object
 Defines a card with a large image, title, text, and action buttons.<br/><br/> 
@@ -529,12 +657,24 @@ Defines a card with a large image, title, text, and action buttons.<br/><br/>
 | **text** | string | Description or prompt to display under the card's title or subtitle. |
 | **title** | string | Title of the card. |
 
+<a href="#objects">Back to Schema table</a>
+
+<!--TODO can't find-->
 ### Identification object
 Identifies a resource.<br/><br/> 
 
 | Property | Type | Description |
 |----|----|----|
 | **id** | string | ID that uniquely identifies the resource. |
+
+<a href="#objects">Back to Schema table</a>
+
+### MediaEventValue object 
+Supplementary parameter for media events.
+
+| Property | Type | Description |
+|----|----|----|
+| **cardValue** | object | Callback parameter specified in the **Value** field of the media card that originated this event. |
 
 ### MediaUrl object
 Defines the URL to a media file's source.<br/><br/> 
@@ -544,6 +684,9 @@ Defines the URL to a media file's source.<br/><br/>
 | **profile** | string | Hint that describes the media's content. |
 | **url** | string | URL to the source of the media file. |
 
+<a href="#objects">Back to Schema table</a>
+
+<!--TODO can't find-->
 ### Mention object
 Defines a user or bot that was mentioned in the conversation.<br/><br/> 
 
@@ -553,14 +696,27 @@ Defines a user or bot that was mentioned in the conversation.<br/><br/>
 | **text** | string | The user or bot as mentioned in the conversation. For example, if the message is "@ColorBot pick me a new color," this property would be set to **@ColorBot**. Not all channels set this property. |
 | **type** | string | This object's type. Always set to **Mention**. |
 
+<a href="#objects">Back to Schema table</a>
+
+### MessageReaction object
+Defines a reaction to a message.
+
+| Property | Type | Description |
+|----|----|----|
+| **type** | string | Type of reaction. |
+
 ### Place object
 Defines a place that was mentioned in the conversation.<br/><br/> 
 
 | Property | Type | Description |
 |----|----|----|
+| **address** | object |  Address of a place. This property can be a `string` or a complex object of type `PostalAddress`. |
 | **geo** | [GeoCoordinates](#geocoordinates-object) | A **GeoCoordinates** object that specifies the geographical coordinates of the place. |
+| **hasMap** | object | Map to the place. This property can be a `string` (URL) or a complex object of type `Map`. |
 | **name** | string | Name of the place. |
 | **type** | string | This object's type. Always set to **Place**. |
+
+<a href="#objects">Back to Schema table</a>
 
 ### ReceiptCard object
 Defines a card that contains a receipt for a purchase.<br/><br/>
@@ -576,6 +732,8 @@ Defines a card that contains a receipt for a purchase.<br/><br/>
 | **total** | string | A currency-formatted string that specifies the total purchase price, including all applicable taxes. |
 | **vat** | string | A currency-formatted string that specifies the amount of value added tax (VAT) applied to the purchase price. |
 
+<a href="#objects">Back to Schema table</a>
+
 ### ReceiptItem object
 Defines a line item within a receipt.<br/><br/> 
 
@@ -589,14 +747,15 @@ Defines a line item within a receipt.<br/><br/>
 | **text** | string | Description of the line item. |
 | **title** | string | Title of the line item. |
 
+<a href="#objects">Back to Schema table</a>
+
 ### ResourceResponse object
-Defines a resource.<br/><br/>
+Defines a response that contains a resource ID.<br/><br/>
 
 | Property | Type | Description |
 |----|----|----|
-| **activityId** | string | ID that uniquely identifies the activity. | 
-| **serviceUrl** | string | Service endpoint for the channel where operations for the conversation may be performed. | 
 | **id** | string | ID that uniquely identifies the resource. | 
+<a href="#objects">Back to Schema table</a>
 
 ### SignInCard object
 Defines a card that lets a user sign in to a service.<br/><br/>
@@ -606,13 +765,17 @@ Defines a card that lets a user sign in to a service.<br/><br/>
 | **buttons** | [CardAction](#cardaction-object)[] | Array of **CardAction** objects that enable the user to sign in to a service. The channel determines the number of buttons that you may specify. |
 | **text** | string | Description or prompt to include on the sign in card. |
 
+<a href="#objects">Back to Schema table</a>
+
 ### SuggestedActions object
 Defines the options from which a user can choose.<br/><br/> 
 
 | Property | Type | Description |
 |----|----|----|
-| **to** | string[] | Array of strings that contains the IDs of the recipients to whom the suggested actions should be displayed. |
 | **actions** | [CardAction](#cardaction-object)[] | Array of **CardAction** objects that define the suggested actions. |
+| **to** | string[] | Array of strings that contains the IDs of the recipients to whom the suggested actions should be displayed. |
+
+<a href="#objects">Back to Schema table</a>
 
 ### ThumbnailCard object
 Defines a card with a thumbnail image, title, text, and action buttons.<br/><br/>
@@ -626,6 +789,8 @@ Defines a card with a thumbnail image, title, text, and action buttons.<br/><br/
 | **text** | string | Description or prompt to display under the card's title or subtitle. |
 | **title** | string | Title of the card. |
 
+<a href="#objects">Back to Schema table</a>
+
 ### ThumbnailUrl object
 Defines the URL to an image's source.<br/><br/> 
 
@@ -634,11 +799,14 @@ Defines the URL to an image's source.<br/><br/>
 | **alt** | string | Description of the image. You should include the description to support accessibility. |
 | **url** | string | URL to the source of the image or the base64 binary of the image (for example, `data:image/png;base64,iVBORw0KGgo...`). |
 
+<a href="#objects">Back to Schema table</a>
+
 ### VideoCard object
 Defines a card that can play videos.<br/><br/>
 
 | Property | Type | Description |
 |----|----|----|
+| **aspect** | string | Aspect ratio of a video (e.g.: 16:9, 4:3).|
 | **autoloop** | boolean | Flag that indicates whether to replay the list of videos when the last one ends. Set this property to **true** to automatically replay the videos; otherwise, **false**. The default value is **true**. |
 | **autostart** | boolean | Flag that indicates whether to automatically play the videos when the card is displayed. Set this property to **true** to automatically play the videos; otherwise, **false**. The default value is **true**. |
 | **buttons** | [CardAction](#cardaction-object)[] | Array of **CardAction** objects that enable the user to perform one or more actions. The channel determines the number of buttons that you may specify. |
@@ -648,3 +816,6 @@ Defines a card that can play videos.<br/><br/>
 | **subtitle** | string | Subtitle to display under the card's title. |
 | **text** | string | Description or prompt to display under the card's title or subtitle. |
 | **title** | string | Title of the card. |
+| **value** | object | Supplementary parameter for this card|
+
+<a href="#objects">Back to Schema table</a>
