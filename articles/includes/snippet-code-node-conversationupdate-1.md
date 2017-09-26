@@ -12,7 +12,7 @@ bot.on('conversationUpdate', function (message) {
         // See if bot was removed
         var botId = message.address.bot.id;
         for (var i = 0; i < message.membersRemoved.length; i++) {
-            if (message.membersRemoved[i].id != botId) {
+            if (message.membersRemoved[i].id === botId) {
                 // Say goodbye
                 var reply = new builder.Message()
                         .address(message.address)
