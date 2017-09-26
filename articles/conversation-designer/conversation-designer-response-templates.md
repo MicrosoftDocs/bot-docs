@@ -1,6 +1,6 @@
 ---
 title: Response template | Microsoft Docs
-description: How to set up response template for Conversation Designer bots.
+description: Learn how to set up response template for Conversation Designer bots.
 author: vkannan
 manager: rstand
 ms.topic: article

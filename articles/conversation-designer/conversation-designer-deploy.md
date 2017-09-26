@@ -35,4 +35,4 @@ Supported channels are:
 
 ## Next step
 > [!div class="nextstepaction"]
-> [API reference](conversation-designer-context-object.md)
+> [Videos](conversation-designer-videos.md)

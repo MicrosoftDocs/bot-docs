@@ -1,5 +1,5 @@
 ---
-title: Adaptive cards | Microsoft Docs
+title: Configure adaptive cards | Microsoft Docs
 description: Learn how to configure adaptive cards.
 author: vkannan
 manager: rstand
@@ -21,9 +21,9 @@ Conversation Designer provides a deeply integrated authoring environment to auth
 
 Adaptive cards can be defined in several different key places.
 
-- A simple response to [action](conversation-designer-actions.md) for a task.
-- In feedback state in a dialog.
-- In prompt states in a dialog. Note that prompts can have separate cards: one for the response and another for re-prompting.
+- A simple response to [action](conversation-designer-tasks.md) for a task.
+- In feedback state in a dialogue.
+- In prompt states in a dialogue. Note that prompts can have separate cards: one for the response and another for re-prompting.
 
 To define an adaptive card, navigate to the relevant editor. Browse and choose from one of the existing Adaptive Card 
 Templates or build your own in the JSON code editor. 
@@ -35,6 +35,36 @@ As you are building a card, a rich preview of the card is rendered in the author
 > [!NOTE]
 > Features of adaptive cards remain under ongoing development. All channels do not support all adaptive card features at this time. To see which features each channel supports, see the [Channel status](https://docs.microsoft.com/en-us/adaptive-cards/get-started/bots#channel-status) section.
 
+## Input form
+
+Adaptive cards can contain input forms. In Conversation Designer, forms are integrated with task entities. For example, if a field has an `id` of **myName** and the form `Submit` action is performed, a `taskEntity` with the name **myName** will be created and will contain the value of the field. 
+
+The code snippet below shows how the **myName** entity is defined in code:
+
+``javascript
+{
+   "type": "Input.Text",
+   "id": "myName",
+   "placeholder": "Last, First"
+}
+``
+
+Additionally, if a field has an id of `@task` then the value of the field will be used as a task name. When this field is triggered (e.g.: a button click), then the named task will be executed. 
+
+Take this snippet code for example:
+
+``javascript
+{
+  'type': 'Action.Submit',
+  'title': 'Search',
+  'speak': '<s>Search</s>',
+  'data': {
+    '@task': 'Hotel Search'
+  }
+}
+``
+
+When this button is clicked, a submit action is triggered and the `context.sticky` will be set to `Hotel Search`. This will result in the **Hotel Search** task to execute. To use this feature, make sure the `@task` matches a task name that you have defined in Conversation Designer.
 
 ## Use entities and language generation templates
 Adaptive cards support full language generation resolution.
