@@ -152,7 +152,9 @@
 ### [Direct Line](channel-connect-directline.md)
 ### [Microsoft Teams](https://msdn.microsoft.com/en-us/microsoft-teams/bots)
 ### [Skype](https://dev.skype.com/bots)
-### [Web Chat](channel-connect-webchat.md)
+### Web Chat
+#### [Connect a bot to Web Chat](channel-connect-webchat.md)
+#### [Enable speech in Web Chat](channel-connect-webchat-speech.md)
 ### [Email](channel-connect-email.md)
 ### [GroupMe](channel-connect-groupme.md) 
 ### Third party channels 

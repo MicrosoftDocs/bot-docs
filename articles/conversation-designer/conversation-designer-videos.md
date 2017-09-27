@@ -1,6 +1,6 @@
 ---
 title: Conversation Designer videos | Microsoft Docs
-description: Learn about Conversation Designer bots
+description: Learn about Conversation Designer through videos.
 author: vkannan
 manager: rstand
 ms.topic: article
@@ -26,8 +26,8 @@ Conversation Designer has a YouTube channel where we post videos to help you lea
   A Task represents a single conversation topic that your bot supports. Teach your bot how to perform a new task
 - [Script triggers and script actions](https://www.youtube.com/watch?v=bXHA7-XBQSU&index=5&list=PL8bc0pP2kCO51qUAL4RaBOwybJjamaiic) </br>
   Manage tasks in your bot using scripts
-- [Dialogs](https://www.youtube.com/watch?v=EEIpLeFrHFE&index=6&list=PL8bc0pP2kCO51qUAL4RaBOwybJjamaiic) </br>
-  Dialogs provide a conversational model for interacting with users; see one in action
+- [dialogues](https://www.youtube.com/watch?v=EEIpLeFrHFE&index=6&list=PL8bc0pP2kCO51qUAL4RaBOwybJjamaiic) </br>
+  dialogues provide a conversational model for interacting with users; see one in action
 - [Response templates](https://www.youtube.com/watch?v=6QYxJmU_wkA&index=7&list=PL8bc0pP2kCO51qUAL4RaBOwybJjamaiic) </br>
   Enable response reuse and help maintain a consistent tone and language in your bot responses 
 - [Adaptive Cards](https://www.youtube.com/watch?v=KajqaslTTho&index=8&list=PL8bc0pP2kCO51qUAL4RaBOwybJjamaiic) </br>
@@ -36,9 +36,13 @@ Conversation Designer has a YouTube channel where we post videos to help you lea
   Learn how to create and access context entities to retrieve data
 - [API walkthrough](https://www.youtube.com/watch?v=SfP4tffl52I&index=10&list=PL8bc0pP2kCO51qUAL4RaBOwybJjamaiic) </br>
   Guidance on using Conversation Designer APIs
-- [Shared dialogs](https://www.youtube.com/watch?v=obaNMPGVzJY&index=11&list=PL8bc0pP2kCO51qUAL4RaBOwybJjamaiic) </br>
-  Use reusable dialogs that you can share across multiple dialogs within your bot
+- [Shared dialogues](https://www.youtube.com/watch?v=obaNMPGVzJY&index=11&list=PL8bc0pP2kCO51qUAL4RaBOwybJjamaiic) </br>
+  Use reusable dialogues that you can share across multiple dialogues within your bot
 - [Bot intelligence](https://www.youtube.com/watch?v=3RRKvlcgTdY&index=12&list=PL8bc0pP2kCO51qUAL4RaBOwybJjamaiic) </br>
   Learn about intents and entities along with examples of when and what type of entity to use
 
 Enjoy!
+
+## Next step
+> [!div class="nextstepaction"]
+> [API reference](conversation-designer-context-object.md)
