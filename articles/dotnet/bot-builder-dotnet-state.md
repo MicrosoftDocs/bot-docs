@@ -106,7 +106,7 @@ You can design your bot to account for this scenario, as shown in the following 
  
 ## Manage data storage
 
-Under the hood, the Bot Builder SDK for Node.js stores state data using the Bot Connector State service, which is intended for prototyping only and is not designed for use by bots in a production environment. For performance and security reasons in the production environment, consider implementing one of the following data storage options:
+Under the hood, the Bot Builder SDK for .NET stores state data using the Bot Connector State service, which is intended for prototyping only and is not designed for use by bots in a production environment. For performance and security reasons in the production environment, consider implementing one of the following data storage options:
 
 1. [Manage state data with Cosmos DB](bot-builder-dotnet-state-azure-cosmosdb.md)
 
