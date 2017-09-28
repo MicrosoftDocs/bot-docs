@@ -1,6 +1,6 @@
 ---
-title: Create a basic bot using Azure Bot Service | Microsoft Docs
-description: Learn how to create a basic bot using Azure Bot Service.
+title: 使用 Azure Bot Service 創建一個基本的bot | Microsoft Docs
+description: 學習如何使用 Azure Bot Service 創建一個基本的bot。
 author: kbrandl
 ms.author: kibrandl
 manager: rstand
@@ -10,7 +10,7 @@ ms.date: 05/11/2017
 ms.reviewer: 
 ---
 
-# Create a bot using the Basic template
+# 創建一個使用基本模板的bot
 
 To create a bot that uses dialogs to respond to user input, choose the [Basic template](azure-bot-service-templates.md) when creating the bot using Azure Bot Service. This article provides a walkthrough of the code that is automatically generated when you create a consumption plan bot using the Basic template and describes some ways in which you might extend the bot's default functionality. 
 
