@@ -6,7 +6,7 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 08/04/2017
+ms.date: 09/27/2017
 ---
 
 # Recognize intents and entities with LUIS 
@@ -28,7 +28,7 @@ To create the LUIS app, which is the web service you configure at [www.luis.ai][
 To create a bot that uses the LUIS app, you can first start with the sample code in [Create a bot with Node.js](https://docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-quickstart#create-your-bot), and add code according to the instructions in the following sections.
 
 > [!TIP] 
-> You can also find the sample code described in this article at [Notes bot sample][NotesSample].
+> You can also find the sample code described in this article in the [Notes bot sample][NotesSample].
 
 ## How LUIS passes intents and entities to your bot
 The following diagram shows the sequence of events that happen after the bot receives an utterance from the user. First, the bot passes the utterance to the LUIS app and gets a JSON result from LUIS that contains intents and entities. Next, your bot automatically invokes any matching [Dialog][Dialog] that your bot associates with the high-scoring intent in the LUIS result. The full details of the match, including the list of intents and entities that LUIS detected, are passed to the `args` parameter of the matching dialog.
@@ -105,7 +105,7 @@ From trying the bot, you can see that the recognizer can trigger interruption of
 
 [LUIS]: https://www.luis.ai/
 
-[NotesSample]: https://aka.ms/notes-bot-sample
+[NotesSample]: https://github.com/Microsoft/BotFramework-Samples/tree/master/docs-samples/Node/basics-naturalLanguage
 
 [triggerAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#triggeraction
 
