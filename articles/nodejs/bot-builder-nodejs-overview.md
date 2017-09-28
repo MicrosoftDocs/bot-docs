@@ -1,65 +1,64 @@
 ---
-title: Bot Builder SDK for Node.js | Microsoft Docs
-description: Explore the Bot Builder SDK for Node.js, a powerful, easy-to-use bot building framework.
-author: DeniseMak
-ms.author: v-demak
-manager: rstand
+title: Node.js的Bot Builder SDK | Microsoft Docs
+description: 探索Node.js的Bot Builder SDK，這是一個功能強大，易於使用的bot框架。
+author: 
+ms.author: 
+manager: 
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 08/04/2017
+ms.date: 
 ms.reviewer: 
 ---
 
-# Bot Builder SDK for Node.js
+# Node.js的Bot Builder SDK
 
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-overview.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-overview.md)
 > - [REST](../rest-api/bot-framework-rest-overview.md)
 
-Bot Builder SDK for Node.js is a powerful, easy-to-use framework that provides a familiar way for Node.js developers to write bots.
-You can use it to build a wide variety of conversational user interfaces, from simple prompts to free-form conversations.
+Node.js的Bot Builder SDK是一個功能強大，易於使用的框架，為Node.js開發人員編寫機器人提供了一種熟悉的方法。
+您可以使用它來構建各種會話用戶界面，從簡單的提示到自由格式的對話。
 
-The conversational logic for your bot is hosted as a web service. The Bot Builder SDK uses <a href="http://restify.com">restify</a>, a popular framework for building web services, to create the bot's web server. 
-The SDK is also compatible with <a href="http://expressjs.com/">Express</a> and the use of other web app frameworks is possible with some adaption. 
+您的機器人的會話邏輯會作為網頁服務託管。Bot Builder SDK使用 <a href="http://restify.com">restify</a>，構建Web服務的流行框架，創建bot的Web服務器。
+這個SDK也兼容 <a href="http://expressjs.com/">Express</a>，並且可以使用其他Web應用程序框架，是有可能。
 
-Using the SDK, you can take advantage of the following SDK features: 
+使用SDK，您可以利用以下SDK功能： 
 
-- Powerful system for building dialogs to encapsulate conversational logic.
-- Built-in prompts for simple things such as Yes/No, strings, numbers, and enumerations, as well as support for messages containing images and attachments, and rich cards containing buttons.
-- Built-in support for powerful AI frameworks such as <a href="http://luis.ai" target="_blank">LUIS</a>.
-- Built-in recognizers and event handlers that guide the user through the conversation, providing help, navigation, clarification, and confirmation as needed.
+- 強大的系統建立對話封裝會話邏輯。
+- 內置提示，例如是/否，字符串，數字和枚舉等簡單的內容，以及支持包含圖像和附件的消息以及包含按鈕的rich card。
+- 內置支持強大的AI框架，如 <a href="http://luis.ai" target="_blank">LUIS</a>.
+- 內置識別器和事件處理程序，用於指導用戶通過對話，根據需要提供幫助、導航、認證。
 
-## Get started
+## 開始使用
 
-If you are new to writing bots, [create your first bot with Node.js](bot-builder-nodejs-quickstart.md) with step-by-step instructions to help you set up your project, install the SDK, and run your first bot. 
+如果您是新手編寫機器人，[使用Node.js創建您的第一個機器人](bot-builder-nodejs-quickstart.md)具有步驟說明，可以用來幫助您設置項目，安裝SDK並運行 你的第一個機器人。
 
-If you are new to the Bot Builder SDK for Node.js, you can start with key concepts that help you understand the major components of the Bot Builder SDK, see [Key concepts](bot-builder-nodejs-concepts.md).
+如果您是Node.js的Bot Builder SDK的新手，您可以從幫助您了解Bot Builder SDK的主要組件的關鍵概念開始，參見[主要概念](bot-builder-nodejs-concepts.md)。
 
-To ensure your bot addresses the top user scenarios, review the [design principles](../bot-design-principles.md) and [explore patterns](../bot-design-pattern-task-automation.md) for guidance.
+為了確保您的機器人流程適當，請查看[設計原則](../bot-design-principles.md)和[探索模式](../bot-design-pattern-task-automation.md)中的指南。
 
-## Get samples
+## 取得樣本
 
-The [Bot Builder SDK for Node.js samples](bot-builder-nodejs-samples.md) demonstrate task-focused bots that show how to take advantage of features in the Bot Builder SDK for Node.js. You can use the samples to help you quickly get started with building great bots with rich capabilities.
+用於Node.js示例的[Bot Builder SDK](bot-builder-nodejs-samples.md)演示了以任務為中心的機器人，展示如何利用Bot Builder SDK中Node.js的功能。您可以使用示例來幫助您快速開始構建具有豐富功能的機器人。
 
-## Next steps
+## 下一步
 > [!div class="nextstepaction"]
-> [Key concepts](bot-builder-nodejs-concepts.md)
+> [關鍵概念](bot-builder-nodejs-concepts.md)
 
-## Additional resources
+## 額外的資源
 
-The following task-focused how-to guides demonstrate various features of the Bot Builder SDK for Node.js.
+以下以任務為中心的how-to指南演示了Node.js的Bot Builder SDK的各種功能。
 
-* [Respond to messages](bot-builder-nodejs-use-default-message-handler.md)
-* [Handle user actions](bot-builder-nodejs-dialog-actions.md)
-* [Recognize user intent](bot-builder-nodejs-recognize-intent-messages.md)
-* [Send a rich card](bot-builder-nodejs-send-rich-cards.md)
-* [Send attachments](bot-builder-nodejs-send-receive-attachments.md)
-* [Saving user data](bot-builder-nodejs-save-user-data.md)
+* [回覆消息](bot-builder-nodejs-use-default-message-handler.md)
+* [處理用戶操作](bot-builder-nodejs-dialog-actions.md)
+* [識別用戶意圖](bot-builder-nodejs-recognize-intent-messages.md)
+* [發一張 rich card](bot-builder-nodejs-send-rich-cards.md)
+* [發送附件](bot-builder-nodejs-send-receive-attachments.md)
+* [保存用戶數據](bot-builder-nodejs-save-user-data.md)
 
 
-If you encounter problems or have suggestions regarding the Bot Builder SDK for Node.js, 
-see [Support](../resources-support.md) for a list of available resources. 
+如果您遇到問題或有關於Node.js的Bot Builder SDK的建議，可以參閱[支援](../resources-support.md)中的資源。 
 
 
 [DesignGuide]: ../bot-design-principles.md 
