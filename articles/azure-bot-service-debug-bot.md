@@ -1,30 +1,30 @@
 ---
-title: Debug a bot built using Azure Bot Service | Microsoft Docs
-description: Learn how to debug a bot built using Azure Bot Service.
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+title: 為使用 Azure Bot Service 的 Bot 除錯| Microsoft Docs
+description: 學習如何為使用 Azure Bot Service 的 Bot 除錯。
+author: 
+ms.author: 
+manager: 
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 08/09/2017
+ms.date: 
 ms.reviewer: 
 ---
 
-# Debug an Azure Bot Service bot
+# 調試Azure Bot Service機器人
 
-Azure Bot Service bots are built as Azure App Service web apps, or as code running in a consumption plan upon the Azure Functions serverless architecture. This article describes how to debug your bot after you have set up a publishing process. By downloading a zip file that contains your bot source, you can develop and debug using an integrated development environment (IDE) such as Visual Studio or Visual Studio Code. From your computer, you can update your bot on Azure Bot Service by publishing from Visual Studio, or by publishing with every check-in to your source control service through continuous deployment.
+Azure Bot Service機器人構建 為Azure App Service Web應用程序，或者作為 Azure Function Serverless 上的消費計劃中運行的代碼。本文介紹如何在設置發布流程之後調試您的機器人。通過下載包含您的bot源的壓縮文件，您可以使用集成開發環境（IDE）（如Visual Studio或Visual Studio Code）進行開發和調試。從您的計算機，您可以通過從Visual Studio發布，或通過持續部署通過每個簽入到源控制服務發布Azure Bot Service來更新您的機器人。
 
-## Publish any bot source using continuous deployment
+## 使用持續部署發布任何bot
 
-You can publish bot source to Azure using continuous deployment. To set up continuous deployment, [follow these steps](azure-bot-service-continuous-deployment.md) before proceeding.  
+您可以使用持續部署將bot源發佈到Azure。 要進行連續部署前先按照[以下步驟](azure-bot-service-continuous-deployment.md)操作。
 
-## Debug a Node.js bot
+## 為Node.js機器人除錯
 
-Follow steps in this section to debug a bot written in Node.js.
+按照本節中的步驟測試在Node.js中編寫的bot。
 
 ### Prerequisites
 
-Before you can debug your Node.js bot, you must complete these tasks.
+在測試Node.js bot之前，您必須完成這些任務。
 
 - Download the source code for your bot (from Azure), as described in [Set up continuous deployment](azure-bot-service-continuous-deployment.md).
 - Download and install the [Bot Framework Emulator](debug-bots-emulator.md).
