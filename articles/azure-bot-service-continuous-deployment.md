@@ -20,7 +20,7 @@ After you update your C# bot source code, you can publish it into a running bot 
 If you have not configured continuous deployment, you can modify your source files in the online code editor. To deploy your modified source, follow these steps.
 
 4. Click the Open Console icon.  
-    ![Console Icon](~/media/azure-bot-service-console-icon.png)
+    ![Console Icon](./media/azure-bot-service-console-icon.png)
 2. In the Console window, type **build.cmd**, and press the enter key.
 
 
@@ -64,7 +64,7 @@ Follow these steps if you want to use a source control service *other than* Visu
 3. For a bot on an App Service plan, find your bot page on Azure, click the **BUILD** tab, find the **Download source code** section, and click **Download zip file**.
 1. Create an empty repository within one of the source control systems that Azure supports.
 
-    ![Source control system](~/media/continuous-integration-sourcecontrolsystem.png)
+    ![Source control system](./media/continuous-integration-sourcecontrolsystem.png)
 
 3. Extract the contents of the downloaded zip file to the local folder where you are planning to sync your deployment source.
 4. Click **Configure** and follow the steps that appear. 
