@@ -1,84 +1,84 @@
 ---
-title: Templates in the Azure Bot Service | Microsoft Docs
-description: Learn about templates in the Azure Bot Service.
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
-ms.topic: article
+title: Azure Bot Service 的模板 | Microsoft Docs
+description: 學習如何使用 Azure Bot Service 的模板。
+author: 
+ms.author: 
+manager: 
+ms.topic: 
 ms.prod: bot-framework
-ms.date: 08/04/2017
+ms.date: 
 ms.reviewer: 
 ---
 
-# Templates in the Azure Bot Service
+# Azure Bot Service 的模板
 
-The Azure Bot Service enables you to quickly and easily create a consumption plan or app service plan bot in either C# or Node.js by using one of five templates. 
+Azure Bot Service 使您能夠通過使用五個模板之一快速輕鬆地在C＃或Node.js中創建消費計劃或應用程序服務計劃 bot。
 
-[!include[Azure Bot Service templates](~/includes/snippet-abs-templates.md)] 
+[!include[Azure Bot Service 的模板](~/includes/snippet-abs-templates.md)] 
 
-All bots that are created using the Azure Bot Service will initially contain a core set of files specific to the development language and the hosting plan that you choose, along with additional files that contain code that is specific to the selected template.
+使用 Azure Bot Service 創建的所有機器人最初都將包含特定於開發語言和所選託管計劃的一組核心文件，以及包含特定於所選模板的代碼的其他文件。
 
-## Files for a bot created in an App Service plan
+## 在 App Service 計劃中創建的機器人文件
 
-Bots created in an App Service plan are based on standard Web apps. Here's a list of some important files you'll find in the zip file (in addition to files that are specific to the selected template).
+應用服務計劃中創建的機器人基於標準Web應用程序。 以下是您在壓縮文件中找到的一些重要文件的列表（除了特定於所選模板的文件）。
 
-### Common files (both C# and Node.js)
+### 共同文件(both C# 和 Node.js)
 
+| 資料夾 | 文件 | 說明 |
+|----|----|----|
+| / | **readme.md** | 此文件包含有關使用 Azure Bot Service 構建機器人的信息。 在使用或修改機器人之前，請先閱讀此文件。 |
+| /PostDeployScripts | **&ast;.&ast;** | 執行一些後期部署任務所需的文件。不要修改這些文件。 |
+
+### C# 專屬文件
 | Folder | File | Description |
 |----|----|----|
-| / | **readme.md** | This file contains information about building bots with the Azure Bot Service. Read this file before you use or modify the bot. |
-| /PostDeployScripts | **&ast;.&ast;** | Files needed to run some post deployment tasks. Do not touch these files. |
+| / | **&ast;.sln** | Microsoft Visual Studio解決方案文件。 如果[設置連續部署](azure-bot-service-continuous-deployment.md)，則在本地使用。 |
+| / | **build.cmd** | 當您通過 Azure App Service 編輯器在線編輯程式時，需要此文件。如果您在本地工作，則不需要此文件。 |
+| /Dialogs | **&ast;.cs** | 定義你的機器人對話框的類別。 |
+| /Controllers | **MessagesController.cs** | 您的機器人應用程序的主控制器。 |
+| /PostDeployScripts | **&ast;.PublishSettings** | 您的機器人的發布配置文件。 您可以使用此文件直接從  Visual Studio發布。 |
 
-### C# specific files
-| Folder | File | Description |
+### Node.js 專屬文件
+
+| 資料夾 | 文件 | 說明 |
 |----|----|----|
-| / | **&ast;.sln** | The Microsoft Visual Studio solutions file. It is used locally if you [set up continuous deployment](azure-bot-service-continuous-deployment.md). |
-| / | **build.cmd** | This file is needed to deploy your code when you are editing it online via the Azure App Service editor. If you're working locally, you don't need this file. |
-| /Dialogs | **&ast;.cs** | The classes that define your bot dialogs. |
-| /Controllers | **MessagesController.cs** | The main controller of your bot application. |
-| /PostDeployScripts | **&ast;.PublishSettings** | The publish profile for your bot. You can use this file to publish directly from Visual Studio. |
+| / | **app.js** | 你的機器人的主要 .js文件。 |
+| / | **package.json** | 此文件包含項目的npm引用。您可以修改此文件以添加新的引用。 |
 
-### Node.js specific files
+## 在消費計劃中創建的機器人文件
 
-| Folder | File | Description |
+消費計劃中的機器人基於Azure功能。以下是您在壓縮文件中找到的一些重要文件的列表（除了特定於所選模板的文件）。
+
+### 共同文件(both C# 和 Node.js)
+
+| 資料夾 | 文件 | 說明 |
 |----|----|----|
-| / | **app.js** | The main .js file of your bot. |
-| / | **package.json** | This file contains the project’s npm references. You can modify this file to add a new reference. |
+| / | **readme.md** | 此文件包含有關使用Azure Bot服務構建機器人的信息。在使用或修改機器人之前，請先閱讀此文件。 |
+| /messages | **function.json** | 此文件包含函數的綁定。不要修改此文件。 |
+| /messages | **host.json** | 此元數據文件包含影響該功能的全局配置選項。 |
+| /PostDeployScripts | **&ast;.&ast;** | 執行一些後期部署任務所需的文件。不要修改這些文件。 |
 
-## Files for a bot created in a consumption plan
-
-Bots in a consumption plan are based on Azure Functions. Here's a list of some important files you'll find in the zip file (in addition to files that are specific to the selected template).
-
-### Common files (both C# and Node.js)
-
-| Folder | File | Description |
+### C# 專屬文件
+| 資料夾 | 文件 | 說明 |
 |----|----|----|
-| / | **readme.md** | This file contains information about building bots with the Azure Bot Service. Read this file before you use or modify the bot. |
-| /messages | **function.json** | This file contains the function’s bindings. Do not modify this file. |
-| /messages | **host.json** | This metadata file contains the global configuration options that affect the function. |
-| /PostDeployScripts | **&ast;.&ast;** | Files needed to run some post deployment tasks. Do not touch these files. |
+| / | **Bot.sln** | Microsoft Visual Studio解決方案文件。 如果[設置連續部署](azure-bot-service-continuous-deployment.md)，則在本地使用。 |
+| / | **commands.json** | 當您打開 **Bot.sln** 文件時，此文件包含在任務運行器資源管理器中啟動 **debughost** 的命令。如果不安裝Task Runner Explorer，可以刪除該文件。 |
+  | / | **debughost.cmd** | 該文件包含加載和運行機器人的命令。如果[設置連續部署](azure-bot-service-continuous-deployment.md)並在本地調試您的漫遊器，則會在本地使用。詳細信息請參閱[使用 Windows 上的 Azure Bot Service 測試 C＃bot](azure-bot-service-debug-bot.md#debug-csharp-serverless)。此文件還包含您的機器人的應用程序ID和金鑰。要調試身份驗證，請在此文件中設置App ID和密碼，並在使用[emulator](debug-bots-emulator.md)測試您的bot時指定App ID和密碼。 |
+| /messages | **project.json** | 該文件包含項目的NuGet引用。您可以修改此文件以添加新的引用。 |
+| /messages | **project.lock.json** | 此文件自動生成。不要修改此文件。 |
+| /messages | **run.csx** | 定義在傳入請求中執行的初始Run方法。 |
 
-### C# specific files
-| Folder | File | Description |
+### Node.js 專屬文件
+
+| 資料夾 | 文件 | 說明 |
 |----|----|----|
-| / | **Bot.sln** | The Microsoft Visual Studio solutions file. It is used locally if you [set up continuous deployment](azure-bot-service-continuous-deployment.md). |
-| / | **commands.json** | This file contains the commands that start **debughost** in Task Runner Explorer when you open the **Bot.sln** file. If you do not install Task Runner Explorer, you can delete this file. |
-| / | **debughost.cmd** | This file contains the commands to load and run your bot. It is used locally if you [set up continuous deployment](azure-bot-service-continuous-deployment.md) and debug your bot locally. For more information, see [Debug a C# bot using the Azure Bot Service on Windows](azure-bot-service-debug-bot.md#debug-csharp-serverless). This file also contains your bot's App ID and password. To debug authentication, set the App ID and password in this file and also specify the App ID and password when testing your bot using the [emulator](debug-bots-emulator.md). |
-| /messages | **project.json** | This file contains the project’s NuGet references. You can modify this file to add a new reference. |
-| /messages | **project.lock.json** | This file is generated automatically. Do not modify this file. |
-| /messages | **run.csx** | Defines the initial Run method that gets executed on an incoming request. |
+| /messages | **index.js** | 你的機器人的主要 .js文件。 |
+| /messages | **package.json** | 此文件包含項目的npm引用。您可以修改此文件以添加新的引用。 |
 
-### Node.js specific files
+## 額外資源
 
-| Folder | File | Description |
-|----|----|----|
-| /messages | **index.js** | The main .js file of your bot. |
-| /messages | **package.json** | This file contains the project’s npm references. You can modify this file to add a new reference. |
-
-## Additional resources
-
-- [Create a bot using the Basic template](azure-bot-service-serverless-template-basic.md)
-- [Create a bot using the Form template](azure-bot-service-serverless-template-form.md)
-- [Create a bot using the Language understanding template](azure-bot-service-template-language-understanding.md)
-- [Create a bot using the Proactive template](azure-bot-service-template-proactive.md)
-- [Create a bot using the Question and Answer template](azure-bot-service-template-question-answer.md)
+- [使用基本模板創建機器人](azure-bot-service-serverless-template-basic.md)
+- [使用表單模板創建機器人](azure-bot-service-serverless-template-form.md)
+- [使用語言理解模板創建機器人](azure-bot-service-template-language-understanding.md)
+- [使用主動模板創建機器人](azure-bot-service-template-proactive.md)
+- [使用問答模板創建機器人](azure-bot-service-template-question-answer.md)
