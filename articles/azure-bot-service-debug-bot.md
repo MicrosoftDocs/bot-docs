@@ -26,17 +26,17 @@ Azure Bot Service機器人構建 為Azure App Service Web應用程序，或者�
 
 在測試Node.js bot之前，您必須完成這些任務。
 
-- Download the source code for your bot (from Azure), as described in [Set up continuous deployment](azure-bot-service-continuous-deployment.md).
-- Download and install the [Bot Framework Emulator](debug-bots-emulator.md).
-- Download and install a code editor such as <a href="https://code.visualstudio.com" target="_blank">Visual Studio Code</a>.
+- 下載您的機器人的源代碼（從Azure），如[設置連續部署](azure-bot-service-continuous-deployment.md)。
+- 下載並安裝[Bot Framework Emulator](debug-bots-emulator.md).
+- 下載並安裝文字編輯器，如 <a href="https://code.visualstudio.com" target="_blank">Visual Studio Code</a>.
 
-### Debug a Node.js bot using the Bot Framework Emulator
+### 使用Bot Framework模擬器測試Node.js bot
 
-The simplest way to debug your bot locally is to start the bot in Node and then connect to it from Bot Framework Emulator. First, you must set the `NODE_ENV` environment variable. This screenshot shows how to set the `NODE_ENV` environment variable and start the bot.
+在本地測試您的機器人的最簡單的方法是在Node中啟動機器人，然後從Bot Framework Emulator連接到它。首先，您必須先設定 `NODE_ENV` 的環境變量。此屏幕截圖顯示如何設置 `NODE_ENV` 環境變量並啟動Bot。
 
 ![run bot](./media/mac-azureservice-debug-config.png)
 
-At this point, the bot is running locally. Copy the bot's endpoint from the terminal window (in this example, `http://localhost:3978/api/messages`), start the Bot Framework Emulator, and paste the endpoint into the address bar of the emulator. Since you do not need security for local debugging, you can leave the **Microsoft App ID** and **Microsoft App Password** fields blank. Click **Connect** to establish a connection to your bot using the specified endpoint.
+此時，機器人在本地運行。從終端窗口複製機器人的端點(in this example, `http://localhost:3978/api/messages`), start the Bot Framework Emulator, and paste the endpoint into the address bar of the emulator. Since you do not need security for local debugging, you can leave the **Microsoft App ID** and **Microsoft App Password** fields blank. Click **Connect** to establish a connection to your bot using the specified endpoint.
 
 ![configure emulator](./media/mac-azureservice-emulator-config.png)
 
