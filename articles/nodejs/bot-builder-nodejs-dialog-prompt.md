@@ -209,7 +209,7 @@ bot.dialog('getSalesData', [
     function (session, results) {
         if (results.response) {
             var region = salesData[results.response.entity];
-            session.send(`We sold ${region.units} units for a total of $${region.total}.`); 
+            session.send(`We sold ${region.units} units for a total of ${region.total}.`); 
         } else {
             session.send("OK");
         }
