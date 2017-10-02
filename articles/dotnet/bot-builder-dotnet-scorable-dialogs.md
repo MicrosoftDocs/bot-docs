@@ -6,7 +6,7 @@ ms.author: v-shimma
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 07/12/2017
+ms.date: 09/27/2017
 ---
 # Global message handlers using scorables
 
@@ -155,6 +155,6 @@ public class WebApiApplication : System.Web.HttpApplication
 
 ## Additional resources
 * [Global Message Handlers sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-GlobalMessageHandlers)
-* [Simple Scorable Bot sample](https://github.com/Microsoft/BotFramework-Samples/tree/master/CSharp/ScorableBotSample)
+* [Simple Scorable Bot sample](https://github.com/Microsoft/BotFramework-Samples/tree/master/blog-samples/CSharp/ScorableBotSample)
 * [Dialogs overview](bot-builder-dotnet-dialogs.md)
 * [AutoFac](https://autofac.org/)

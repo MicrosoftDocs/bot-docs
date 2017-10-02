@@ -1,5 +1,5 @@
 ---
-title: Code recognizer | Microsoft Docs
+title: Define code recognizer as task trigger | Microsoft Docs
 description: Learn how to use a custom code recognizer as a task trigger.
 author: vkannan
 manager: rstand
@@ -9,14 +9,15 @@ ms.date: 07/04/2017
 ROBOTS: NoIndex, NoFollow
 ---
 
-# Code recognizer as task trigger
+# Define code recognizer as task trigger
 > [!IMPORTANT]
 > Conversation Designer is not available to all customers yet. More details on
 > availability of Conversation Designer will come later this year.
 
 Code recognizers enable you to write custom scripts to help perform a task. Regex-based expression evaluation or calling into other services can be used to help determine the user's intent. The custom script will instruct the conversation runtime to trigger a task. 
 
-To use a script as a task trigger, choose "Script trigger" as the trigger type in the **Task** editor and then specify the name of the function that implements the custom script function. Click **Edit** to start editing the function. 
+## Create a script function
+To use a script as a recognizer, in the task editor, choose "Script function" as the recognizer, specify the name of the function, and Click **Create/view function** to start editing a script. You can also click **Create/view function** without specifying a script name and an empty function will be created for you with the default name. 
 
 ## Script trigger function parameter
 
@@ -43,4 +44,4 @@ module.exports.fnFindPhoneTrigger = function(context) {
 
 ## Next step
 > [!div class="nextstepaction"]
-> [Task actions](conversation-designer-actions.md)
+> [Reply action](conversation-designer-reply.md)

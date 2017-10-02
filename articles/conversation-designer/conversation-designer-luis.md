@@ -1,6 +1,6 @@
 ---
-title: Language understanding | Microsoft Docs
-description: How to set up language understanding task trigger using LUIS
+title: Define a LUIS recognizer as task trigger | Microsoft Docs
+description: Learn how to set up language understanding recognizer as task trigger using LUIS.ai
 author: vkannan
 manager: rstand
 ms.topic: article
@@ -9,23 +9,22 @@ ms.date: 07/04/2017
 ROBOTS: NoIndex, NoFollow
 ---
 
-# Natural language understanding using LUIS.ai as the task trigger
+# Define a LUIS recognizer as task trigger
 > [!IMPORTANT]
 > Conversation Designer is not available to all customers yet. More details on
 > availability of Conversation Designer will come later this year.
 
-Most often, user express their intent to perform a task in natural language. With Conversation Designer, you can easily 
-set up a natural language understanding task trigger for your bot powered by <a href="http://luis.ai" target="_blank">LUIS.ai</a>.
+Most often, user express their intent to perform a task in natural language. With Conversation Designer, you can easily set up a natural language understanding model for your bot powered by <a href="http://luis.ai" target="_blank">LUIS.ai</a>.
 
-To do this, select the trigger type `User says`. This will provide you with the option to specify the intent name. 
+To do this, select the trigger type **User says or types something**. This will provide you with the option to specify the **intent** name. 
 
-You can search for existing intents or create a new one in the **Intent name** text box.
+You can search for existing intents or create a new one in the **Which language intent?** field.
 
 ## Create a new intent
 
 To create a new intent, type in the name for the intent and click **Create new intent**. Enter example utterances for the possible things you expect your users to say that should trigger this specific task.
 
-For example, a cafe bot should be able to perform the task of finding cafe locations near the user. To handle this scenario, select **User says** and set the **Intent name** to "LocationNearMe". Then, provide example utterances for this intent. For example: 
+For example, a cafe bot should be able to perform the task of finding cafe locations near the user. To handle this scenario, select **User says or types something** and set the **Intent name** to "LocationNearMe". Then, provide example utterances for this intent. For example: 
 - *find locations near me*
 - *find cafe locations near me*
 - *is the Redmond store open now?*
@@ -40,10 +39,10 @@ Enter as many utterances as you can possibly think of that help express the user
 ## Default intents provisioned for your bot
 
 By default, your bot is provisioned with 4 intents. 
-- **Greeting**: Set up with example utterances that help match Greeting intent such as *Hi, Hello, Good morning, How are you bot* and so on.
-- **Help**: Set up with example utterances that help determine if user needs help. *Help, I need help, what can I say?, I'm stuck* and so on.
-- **Cancel**: Set up with example utterances for cancel intent. *Stop, Cancel that, do not do it, revert* and so on.
 - **None**: This is the fallback (default) intent for your bot. Use this intent to help capture things that your bot does not yet know how to respond to.
+- **Help**: Set up with example utterances that help determine if user needs help. *Help, I need help, what can I say?, I'm stuck* and so on.
+- **Greeting**: Set up with example utterances that help match Greeting intent such as *Hi, Hello, Good morning, How are you bot* and so on.
+- **Cancel**: Set up with example utterances for cancel intent. *Stop, Cancel that, do not do it, revert* and so on.
 
 ## Create and label entities
 
@@ -68,8 +67,7 @@ Available types are :
 
 # Entities in use
 
-As you create and add entities to the language understanding section, the **Entities in use** table updates with the list of entities this 
-specific task uses. You can manually add other entities used in this task to the list. 
+As you create and add entities to the language understanding section, the **Entities in use** table updates with the list of entities this specific task uses. You can manually add other entities used in this task to the list. 
 
 Available options are:
 
@@ -79,4 +77,4 @@ Available options are:
 
 ## Next step
 > [!div class="nextstepaction"]
-> [Task actions](conversation-designer-actions.md)
+> [Code recognizer](conversation-designer-code-recognizer.md)

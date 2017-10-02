@@ -6,7 +6,7 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 09/19/2017
+ms.date: 09/27/2017
 ---
 
 # Recognize intents and entities with LUIS using a prebuilt domain 
@@ -133,5 +133,5 @@ From trying the bot, you can see how tasks are invoked by a LUIS intent. However
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
 
 [LUIS]: https://www.luis.ai/
-[NotesSample]: https://github.com/Microsoft/BotFramework-Samples/tree/master/CSharp/Simple-LUIS-Notes-Sample
-[NotesSampleJSON]: https://github.com/Microsoft/BotFramework-Samples/blob/master/CSharp/Simple-LUIS-Notes-Sample/Notes.json
+[NotesSample]: https://github.com/Microsoft/BotFramework-Samples/tree/master/docs-samples/CSharp/Simple-LUIS-Notes-Sample
+[NotesSampleJSON]: https://github.com/Microsoft/BotFramework-Samples/blob/master/docs-samples/CSharp/Simple-LUIS-Notes-Sample/Notes.json
