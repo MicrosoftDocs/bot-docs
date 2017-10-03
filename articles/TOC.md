@@ -141,7 +141,9 @@
 ## [Deploy bots](deploy-bot-overview.md)
 ### [Deploy from local git repo](deploy-bot-local-git.md)
 ### [Deploy from GitHub](deploy-bot-github.md)
-### [Deploy from Visual Studio](deploy-bot-visual-studio.md)
+### Deploy from Visual Studio
+#### [Deploy a .NET bot](deploy-dotnet-bot-visual-studio.md)
+#### [Deploy a Node.js bot](deploy-nodejs-bot-visual-studio.md)
 ## [Manage](manage/TOC.md)
 ## Connect to channels
 ### [Configure a bot](portal-configure-channels.md) 

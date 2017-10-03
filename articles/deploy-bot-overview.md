@@ -22,7 +22,8 @@ Before others can use your bot, you must deploy it to the cloud. You can deploy 
 
 - [Deploy from a local git repository](~/deploy-bot-local-git.md) using continuous deployment
 - [Deploy from GitHub](~/deploy-bot-github.md) using continuous deployment
-- [Deploy from Visual Studio](~/deploy-bot-visual-studio.md)
+- [Deploy a .NET bot from Visual Studio](~/deploy-dotnet-bot-visual-studio.md) 
+- [Deploy a Node.js bot from Visual Studio](~/deploy-nodejs-bot-visual-studio.md)
 
 ## Next steps
 * [Register and publish a bot](portal-register-bot.md)
