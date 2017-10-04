@@ -102,6 +102,25 @@ description:
                 <li>
                     <a href="#developing">Developing Bots</a>
                     <ul id="developing" class="cardsC">
+                    <li>
+                            <a href="/bot-framework/azure-bot-service-overview">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage bgdAccent1">
+                                                <img src="/media/hubs/botframework/bot-framework-developing-azure.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Build bots with Azure Bot Service</h3>
+                                            <p>Learn how to build bots with the Azure Bot Service.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
                         <li>
                             <a href="/bot-framework/dotnet/bot-builder-dotnet-overview">
                             <div class="cardSize">
@@ -139,26 +158,7 @@ description:
                                 </div>
                             </div>
                             </a>
-                        </li>
-                        <li>
-                            <a href="/bot-framework/azure-bot-service-overview">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/botframework/bot-framework-developing-azure.svg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="cardText">
-                                            <h3>Build bots with Azure Bot Service</h3>
-                                            <p>Learn how to build bots with the Azure Bot Service.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </li>
+                        </li>                        
                         <li>
                             <a href="/bot-framework/rest-api/bot-framework-rest-overview">
                             <div class="cardSize">
