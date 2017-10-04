@@ -1,87 +1,87 @@
-# Microsoft Open Source Code of Conduct
+# Microsoft 開放原始碼管理辦法
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+此專案採用 [Microsoft 開放原始碼管理辦法](https://opensource.microsoft.com/codeofconduct/)。
+如需詳細資訊，請參閱[管理辦法常見問題集](https://opensource.microsoft.com/codeofconduct/faq/)，如有任何其他問題或意見請連絡 [opencode@microsoft.com](mailto:opencode@microsoft.com)。
 
-# Bot Framework Technical Documentation Contributor Guide
-You've found the GitHub repository that houses the source for the Bot Framework technical documentation that is published on [https://docs.microsoft.com/bot-framework](https://docs.microsoft.com/bot-framework).
+# Bot Framework 技術文件貢獻指南
+您已經找到在 GitHub 上的存儲庫，其中包含發佈在[https://docs.microsoft.com/bot-framework](https://docs.microsoft.com/bot-framework)的 Bot Framework技術文檔的源始文件。
 
-This repository also contains guidance to help you contribute to our technical documentation. For a list of the articles in the contributors' guide, see [the index](contributor-guide/contributor-guide-index.md).
+此存儲庫還包含指導文件，協助您幫助我們的技術文檔。 有關貢獻者指南中的文章列表，請參閱[目錄](contributor-guide/contributor-guide-index.md)。
 
-## Contribute to Bot Framework documentation
-Thank you for your interest in Bot Framework documentation!
+## 參與編輯 Bot Framework 技術文件
+感謝您對Bot Framework文檔的關注！
 
-* [Ways to contribute](#ways-to-contribute)
+* [編輯方法](#ways-to-contribute)
 * [Code of conduct](#code-of-conduct)
-* [About your contributions to Bot Framework content](#about-your-contributions-to-Bot-Framework-content)
-* [Repository organization](#repository-organization)
-* [Use GitHub, Git, and this repository](#use-github-git-and-this-repository)
-* [How to use markdown to format your topic](#how-to-use-markdown-to-format-your-topic)
-* [More resources](#more-resources)
-* [Index of all contributors' guide articles](contributor-guide/contributor-guide-index.md) (opens new page)
+* [關於您對 Bot Framework 內容的參與](#about-your-contributions-to-Bot-Framework-content)
+* [儲存機制組織方式](#repository-organization)
+* [使用GitHub、Git，或其他儲存庫](#use-github-git-and-this-repository)
+* [如何在你的主題中使用 markdown](#how-to-use-markdown-to-format-your-topic)
+* [更多資源](#more-resources)
+* [所有貢獻者指南的目錄](contributor-guide/contributor-guide-index.md) (opens new page)
 
-## Ways to contribute
-You can submit updates to the [Bot Framework documentation](https://docs.microsoft.com/bot-framework) as follows:
+## <a name="ways-to-contribute"></a>編輯方法
+您可以提交 [Bot Framework](https://docs.microsoft.com/bot-framework) 文檔的更新如下：
 
-* You can easily contribute to technical articles in the GitHub user interface. Either find the article in this repository, or visit the article on [https://docs.microsoft.com/bot-framework](https://docs.microsoft.com/bot-framework) and click the link in the article that goes to the GitHub source for the article.
-* If you are making substantial changes to an existing article, adding or changing images, or contributing a new article, you need to fork this repository, install Git Bash, Markdown Pad, and learn some git commands.
+* 您可以輕鬆地在 GitHub 用戶界面中的技術文章做出貢獻。 包括在此儲存庫的文章， 或者是瀏覽在[https://docs.microsoft.com/bot-framework](https://docs.microsoft.com/bot-framework) 後，點擊文章上的連結前往該文章在 GitHub 上的文件。
+* 如果您對現有文章內文更改、添加或更改圖像或貢獻新文章，則需要 fork 此存儲庫，安裝 Git Bash ， Markdown Pad 並學習一些git命令。
 
-## About your contributions to Bot Framework content
-### Minor corrections
-Minor corrections or clarifications you submit for documentation and code examples in this repo are covered by the [docs.microsoft.com Terms of Use](https://docs.microsoft.com/legal/termsofuse).
+## <a name="about-your-contributions-to-Bot-Framework-content"></a>關於您對 Bot Framework 內容的參與
+### 小幅度修正
+您在此儲存機制中針對文件和程式碼範例所提交的小幅度修正或釐清，將受到 [docs.microsoft.com 使用規定](https://docs.microsoft.com/legal/termsofuse)的約束。
 
-### Larger submissions
-If you submit a pull request with new or significant changes to documentation and code examples, we'll send a comment in GitHub asking you to submit an online Contribution License Agreement (CLA) if you are not an employee of Microsoft. We need you to complete the online form before we can accept your pull request.
+### 較大範圍的提交內容
+如果您提交提取要求是為了對文件和程式碼範例進行全新或大幅度的變更，而且您不是 Microsoft 的員工，我們會在 GitHub 中傳送註解，要求您提交線上版的參與授權合約 (Contribution License Agreement, CLA)： 您必須先填寫線上表單，我們才會接受您的提取要求。
 
-## Repository organization
-The content in the Bot Framework-docs repository follows the organization of documentation on https://docs.microsoft.com/bot-framework. This repository contains two root folders:
+## <a name="repository-organization"></a>儲存機制組織方式
+Bot Framework-docs 存放庫中的內容會遵循 https://docs.microsoft.com/bot-framework 上文件的組織方式。  此儲存機制包含兩個根資料夾：
 
 ### \articles
-The *\articles* folder contains the documentation articles formatted as markdown files with an *.md* extension. Articles are typically grouped by Bot Framework service.
+*\articles* 資料夾包含格式化為 Markdown 檔的文件文章，其副檔名為 *.md*。 文章通常會依 Bot Framework 服務分入群組。
 
-Articles need to follow strict file naming guidelines - for details, see [our file naming guidance](contributor-guide/file-names-and-locations.md).
+文章需要遵循文件的命名指南 - 詳細情形, 請見 [our file naming guidance](contributor-guide/file-names-and-locations.md)。
 
-The *\articles* folder contains the *\media* folder for root directory article media files, inside which are subfolders with the images for each article.  The service folders contain a separate media folder for the articles within each service folder. The article image folders are named identically to the article file, minus the *.md* file extension.
+*\articles* 資料夾內有 *\media* 資料夾可供存放根目錄文章媒體檔，而在 \media 資料夾內則是存有各文章內圖片的子資料夾。  每個服務資料夾內都含有不同的媒體資料夾來存放文章。 文章圖片資料夾的名稱和文章檔案的名稱相同，但不會有 *.md* 副檔名。
 
 ### \includes
-You can create reusable content sections to be included in one or more articles. See [Custom extensions used in our technical content](contributor-guide/custom-markdown-extensions.md).
+您也可以建立特定的內容區段，以便重複地用來加入一個或多個文章之中。  請見 [Custom extensions used in our technical content](contributor-guide/custom-markdown-extensions.md)。
 
 ### \markdown templates
-This folder contains our standard markdown template with the basic markdown formatting you need for an article.
+此文件夾包含我們的 markdown 模板，其中包含文章所需的基本標記格式。
 
 ### \contributor-guide
-This folder contains articles that are part of our contributors' guide.
+該文件夾包含作為我們貢獻者指南的一部分的文章。
 
-## Use GitHub, Git, and this repository
-For information about how to contribute, how to use the GitHub UI to contribute small changes, and how to fork and clone the repository for more significant contributions, see [Install and set up tools for authoring in GitHub](contributor-guide/tools-and-setup.md).
+## <a name="use-github-git-and-this-repository"></a>使用GitHub、Git，或其他儲存庫
+有關如何貢獻的信息。如何使用GitHub UI提供小幅度的更改，以及如何 fork 和 clone 存儲庫以獲得更重要的貢獻，請參閱[安裝和設置在 GitHub 編輯的工具](contributor-guide/tools-and-setup.md)。
 
-If you install GitBash and choose to work locally, the steps for creating a new local working branch, making changes, and submitting the changes back to the main branch are listed in [Git commands for creating a new article or updating an existing article](contributor-guide/git-commands-for-master.md)
+如果您安裝 GitBash 並選擇在本地工作，則創建新的本地工作分支，進行更改後並將更改提交回主分支的步驟列在 [創建新文章或更新現有文章的 Git 命令](contributor-guide/git-commands-for-master.md)。
 
-### Branches
-We recommend that you create local working branches that target a specific scope of change. Each branch should be limited to a single concept/article both to streamline work flow and reduce the possibility of merge conflicts.  The following efforts are of the appropriate scope for a new branch:
+### 分支
+我們建議您創建針對特定變更範圍的本地工作分支。 每個分支應該被限制在一個概念/文章中，以簡化工作流程並減少合併衝突的可能性。 以下努力適用於新分支的適用範圍：
 
-* A new article (and associated images)
-* Spelling and grammar edits on an article.
-* Applying a single formatting change across a large set of articles (e.g. new copyright footer).
+* 新文章（和相關圖片）
+* 一篇文章的拼寫和文法編輯
+* 在大量文章（例如：copyright footer）上應用相同格式更改
 
-## How to use markdown to format your topic
-All the articles in this repository use GitHub flavored markdown.  Here's a list of resources.
+## <a name="how-to-use-markdown-to-format-your-topic"></a>如何在你的主題中使用 markdown
+在此存儲庫中的所有文章都使用 GitHub 樣式的 markdown。 以下是資源列表：
 
 * [Markdown basics](https://help.github.com/articles/markdown-basics/)
 * [Printable markdown cheatsheet](./contributor-guide/media/documents/markdown-cheatsheet.pdf?raw=true)
 
-## Article metadata
-Article metadata enables certain functionalities, such as author attribution, contributor attribution, breadcrumbs, article descriptions, and SEO optimizations as well as reporting Microsoft uses to evaluate the performance of the content. So, the metadata is important! [Here's the guidance for making sure your metadata is done right](contributor-guide/article-metadata.md).
+## 文章元資料
+文章元資料允許某些功能，例如作者歸屬，貢獻者歸屬，麵包屑，文章描述和SEO優化，以及Microsoft用於評估內容性能的報告。 所以元資料是很重要的！ [以下是確保您的元資料正確完成的指南](contributor-guide/article-metadata.md)。
 
-### Labels
-Automated labels are assigned to pull requests to help us manage the pull request workflow and to help let you know what's going on with your pull request:
+### 標籤
+分配自動標籤以提取請求，以幫助我們管理拉取請求工作流程，並幫助您了解您的拉取請求發生了什麼：
 
-* Contribution License Agreement related
-  * cla-not-required: The change is relatively minor and does not require that you sign a CLA.
-  * cla-required: The scope of the change is relatively large and requires that you sign a CLA.
-  * cla-signed: The contributor signed the CLA, so the pull request can now move forward for review.
-* Pillar labels: Labels such as PnP, Modern Apps, and TDC help categorize the pull requests by the internal organization that needs to review the pull request.
-* Change sent to author: The author has been notified of the pending pull request.
+* 貢獻協議相關
+  * cla-not-required： 這種變化相對較小，不要求您簽署 CLA 。
+  * cla-required： 變更的範圍比較大，要求您簽署 CLA 。
+  * cla-signed： 貢獻者簽署了 CLA ，所以拉動請求現在可以向前進行審查。
+* 支柱標籤： 諸如PnP，Modern Apps和TDC之類的標籤可以幫助內部組織對需要查看拉動請求的拉動請求進行分類。
+* 更改發送給作者： 作者已被通知有待處理的請求。
 
-## More resources
-See the [index of our contributor's guide](contributor-guide/contributor-guide-index.md) for all our guidance topics.
+## <a name="more-resources"></a>更多資源
+詳閱我們所有的 [貢獻者指南](contributor-guide/contributor-guide-index.md)。

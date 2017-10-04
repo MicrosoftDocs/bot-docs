@@ -1,54 +1,52 @@
 ---
-title: Build tab features of Azure Bot Service | Microsoft Docs
-description: Online code editor, source download, and continuous deployment are the build tab features of Azure Bot Service. 
-author: johnd-ms
-ms.author: v-jodemp
-manager: rstand
+title: 透過 Azure Bot Service 構建選項卡功能 | Microsoft Docs
+description: 在線代碼編輯器，源代碼下載和持續部署是Azure Bot Service的構建選項卡功能。 
+author: 
+ms.author: 
+manager: 
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 08/07/2017
+ms.date: 
 ---
-# Build tab features of Azure Bot Service
+# 構建Azure Bot服務的選項卡功能
 
-An Azure Bot Service bot that uses an App Service plan includes these features on its **Build** tab.
-
-> [!NOTE]
-> The **Build** tab of an Azure Bot Service bot that uses a consumption plan only provides a basic browser-based code editor. 
-> You can download source code and configure continuous deployment for a consumption plan bot using features located 
-> on its **Settings** tab, in the **Continuous deployment** section.
-
-## Online code editor
-
-The online code editor lets you change the source code of your bot via the [Azure App Service Editor](https://github.com/projectkudu/kudu/wiki/App-Service-Editor). The editor provides IntelliSense in C# source files. 
-
-The online code editor is a great way to start, but if you need advanced debugging and file management, get the bot code locally by downloading it and optionally by setting up continuous deployment.
-
-
-### Deploy from the online code editor
-
-When you change a source file in the online code editor, you must run the deployment script before your changes take effect. Follow these steps to run the deployment script.
-
- 1. In the App Service Editor, click the Open Console icon.  
-    ![Console Icon](~/media/azure-bot-service-console-icon.png)
-
- 2. In the Console window, type **build.cmd**, and press the enter key.
-
-## Download source code
-
-You can download a zip file that contains all source files, a Visual Studio solution file, and a configuration file that lets you publish from Visual Studio. Using these files, you can modify and debug your bot in Visual Studio, or your favorite IDE, and test it with the Bot Framework Emulator. Once you are ready to publish, you can setup publishing directly from Visual Studio by importing the publish profile saved in the `.PublishSettings` file within the PostDeployScripts folder. For more information, see [Publish C# bot on App Service plan from Visual Studio](azure-bot-service-continuous-deployment.md).
-
-## Continuous deployment from source control
-
-Continuous deployment lets you re-publish to Azure whenever you check a code change in to your source control service. If you work in a team and need to share code in a source control system, then you should setup continuous deployment and use the integrated development environment (IDE) and source control system of your choice. 
+使用App Service的Azure Bot Service機器人可以在其 **Build** 選項卡上包含這些功能。
 
 > [!NOTE]
-> Some templates provided by the Azure Bot Service, and especially templates on a consumption plan, 
-> require additional setup steps to [debug on your local computer](azure-bot-service-debug-bot.md). 
+> 使用消費計劃的Azure Bot Service機器人的 **Build** 選項卡僅提供基本的基於瀏覽器的代碼編輯器。
+> 您可以下載源代碼，並使用位於的功能為消費計劃機器人配置持續部署 
+> 在其 **設置** 選項卡的 **連續部署** 部分。
 
-The Azure Bot Service provides a quick way to set up continuous deployment for Visual Studio Online and GitHub, by providing an access token issued to you on those web sites. For other source control systems, select **other** and follow the steps that appear. For more help setting up continuous deployment on a source control other than Visual Studio Online or Github, see [Set up continuous deployment](azure-bot-service-continuous-deployment.md).
+## 線上編輯器
 
+在線代碼編輯器可以通過[Azure App Service Editor](https://github.com/projectkudu/kudu/wiki/App-Service-Editor)來更改機器人的源代碼。編輯器在C＃源文件中提供IntelliSense。
+
+在線上編輯器是一個很好的開始，但如果您需要自行測試和文件管理，請通過下載來獲取程式碼，並可選擇通過設置持續部署。
+
+### 從在線上編輯器部署
+
+在在線代碼編輯器中更改源文件時，必須在更改生效之前運行部署腳本。按照以下步驟運行部署腳本。
+
+ 1. 在應用服務編輯器中，單擊打開控制台圖標。  
+    ![Console Icon](./media/azure-bot-service-console-icon.png)
+
+ 2. 在控制台窗口中，輸入 **build.cmd** ，然後按確定鍵。
+
+## 下載程式碼
+
+您可以下載包含所有文件的壓縮文件、Visual Studio解決方案文件和允許從Visual Studio發布的配置文件。使用這些文件，您可以在Visual Studio或您最喜歡的IDE中修改和測試您的機器人，並使用Bot Framework模擬器進行測試。當你要發布時，您可以通過導入保存在PostDeployScripts文件夾中的`.PublishSettings`文件中的發布配置文件直接從Visual Studio進行發布。更多資訊請參閱 [從Visual Studio發布C＃bot到app service](azure-bot-service-continuous-deployment.md).
+
+## 從源代碼管理持續部署
+
+只要您檢查源代碼管理服務中的代碼更改，持續部署就可以重新發佈到Azure。如果您在團隊中工作，需要在源代碼管理系統中共享代碼，那麼您應該設置連續部署，並使用您選擇的集成開發環境（IDE）和源代碼控制系統。
+
+> [!NOTE]
+> Azure Bot Service提供的一些模板，特別是消費計劃的模板，
+> 需要額外的設置步驟來[在本地計算機上進行調試](azure-bot-service-debug-bot.md). 
+
+Azure Bot服務提供了一種快速方法，可以通過提供在這些網站上發給您的訪問金鑰來設置Visual Studio Online和GitHub的連續部署。對於其他源控制系統，選擇 **other** 並按照出現的步驟。有關在Visual Studio Online或Github以外的源代碼控制上設置連續部署的更多幫助，請參閱[設置連續部署](azure-bot-service-continuous-deployment.md)。
 
 > [!WARNING]
-> When you use continuous deployment, be sure to only modify code by checking it into your source control service. 
-> Do not use the online code editor to change source code when continuous deployment is enabled. 
-> For consumption plan bots, the online code editor is read-only when continuous deployment is enabled.
+> 當您使用持續部署時，請確保僅通過將其檢入源控制服務來修改代碼。
+> 啟用持續部署時，不要使用在線代碼編輯器來更改源代碼。
+> 對於消費計劃機器人，在啟用連續部署時，在線代碼編輯器是唯獨的。

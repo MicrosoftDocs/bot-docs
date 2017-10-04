@@ -1,56 +1,54 @@
 ---
 title: Azure Bot Service | Microsoft Docs
-description: Learn about the Azure Bot Service.
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+description: 認識 Azure Bot Service.
+author: 
+ms.author: 
+manager: 
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 08/04/2017
+ms.date: 
 ms.reviewer: 
 ---
 
 # Azure Bot Service
 
-The Azure Bot Service accelerates the process of developing a bot. It provisions a web host with one of five bot templates you can modify in 
-an integrated environment.
+Azure Bot Service加速了開發聊天機器人的過程。 它提供了一個網頁主機，可以在開發環境中五個模板選一個修改修改。
 
-[!include[Azure Bot Service hosting plans](~/includes/snippet-abs-hosting-plans.md)] 
+[!include[Azure Bot服務託管計劃](~/includes/snippet-abs-hosting-plans.md)] 
 
-## Prerequisites
+## 前置條件
 
-You must have a Microsoft Azure subscription before you can use the Azure Bot Service. If you do not already have a subscription, you can register for a <a href="https://azure.microsoft.com/en-us/free/" target="_blank">free trial</a>.
+您需要有 Microsoft Azure 訂閱，然後才能使用 Azure Bot Service。 如果您還沒有，要先註冊一個 <a href="https://azure.microsoft.com/en-us/free/" target="_blank">免費試用</a>.
 
-## Create a bot in seconds
+## 在幾秒內建立一個 Bot
 
-The Azure Bot Service enables you to quickly and easily create a bot in either C# or Node.js by using one of five templates.
+Azure Bot 服務使您能夠使用五個模板之一快速輕鬆地在C＃或Node.js中創建聊天機器人。
 
-[!include[Azure Bot Service templates](~/includes/snippet-abs-templates.md)] 
+[!include[Azure Bot Service 模板](~/includes/snippet-abs-templates.md)] 
 
-For more information about templates, see [Templates in the Azure Bot Service](azure-bot-service-templates.md). 
-For a step-by-step tutorial that shows how to quickly build and test a simple bot using Azure Bot Service, see [Create a bot with Azure Bot Service](azure-bot-service-quickstart.md).
+獲得更多模板相關資訊，可以參閱 [Azure Bot Service 的模板](azure-bot-service-templates.md). 
+有關如何使用 Azure Bot Service 快速構建和測試簡單機器人的教程，請參閱[使用Azure Bot服務創建機器人](azure-bot-service-quickstart.md).
 
-## Choose development tool(s)
+## 選擇開發工具
 
-By default, Azure Bot Service enables you to develop your bot directly in the browser using the Azure editor, without any need for a tool chain (i.e., local editor and source control). 
-The integrated chat window sits side-by-side with the Azure editor, which lets you test your bot on-the-fly as you write code in the browser. 
+預設情況下，Azure Bot Service 使您可以使用 Azure 編輯器在瀏覽器中直接開發您的 bot，而無需任何額外（即本地編輯器和程式碼控制）。
+整合的聊天視窗與 Azure 編輯器並排，可以讓您在瀏覽器中編寫程式時即時測試您的機器人。
 
-Although using Azure editor eliminates the need for an editor and source control on your local computer, Azure editor does not allow you to manage files (e.g., add files, rename files, or delete files). If you have Visual Studio Community or above, you can develop and debug your C# bot locally, and publish your bot to Azure. Also, you can [set up continuous deployment](azure-bot-service-continuous-deployment.md) by using the  source control system of your choice, with easy setup for Visual Studio Online and Github. With continuous deployment configured, you can develop and debug in an IDE on your local computer, and any code changes that you commit to source control automatically deploy to Azure.  
+雖然使用 Azure 編輯器不需要在本地計算機上編輯器和源代碼控制，Azure 編輯器不允許您管理文件（例如，添加文件，重命名文件或刪除文件）。如果您有Visual Studio Community 或以上版本，您可以在本地開發和測試您的 C＃bot，並將您的機器人發佈到Azure。此外，您可以使用您選擇的版本控制系統，通過 Visual Studio Online 和 GitHub 的簡單設置來[設置持續部署](azure-bot-service-continuous-deployment.md)。通過持續部署，您可以在本地 IDE 中開發和測試，並且您提交到源代碼控制的任何代碼更改都將自動部署到 Azure。
 
 > [!NOTE]
-> After enabling continuous deployment, be sure to modify your code through continuous deployment only and not through other mechanisms to avoid conflict.
+> 啟用持續部署後，請務必僅通過持續部署來修改代碼，而不是通過其他機制來避免衝突。
 
-## Manage your bot 
+## 管理你的機器人
 
-During the process of creating a bot using Azure Bot Service, you specify a name for your bot and generate its App ID and password. After your bot has been created, you can change its settings, configure it to run on one or more channels, or publish it to one or more channels. 
+在使用Azure Bot Service創建機器人的過程中，您可以為您的機器人指定一個名稱，並生成其應用程序ID和密碼。創建機器人後，您可以更改其設置，將其配置為在一個或多個平台上運行，或將其發佈到一個或多個平台。
 
-## Next steps
+## 下一步
 
 > [!div class="nextstepaction"]
-> [Create a bot with the Azure Bot Service](azure-bot-service-quickstart.md)
+> [用 Azure Bot  服務創建一個機器人](azure-bot-service-quickstart.md)
 
 
-## Additional resources
+## 額外的資源
 
-
-If you encounter problems or have suggestions regarding the Azure Bot Service, see [Support](resources-support.md) for a list of available resources. 
+如果您遇到問題或有關Azure Bot服務的建議，參閱[支援](resources-support.md)來獲取可用資源列表。

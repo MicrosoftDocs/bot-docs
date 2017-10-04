@@ -1,126 +1,128 @@
 ---
-title: Create a bot with the Bot Builder SDK for Node.js | Microsoft Docs
-description: Create a bot with the Bot Builder SDK for Node.js, a powerful bot construction framework.
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+title: 用Node.js的Bot Builder SDK創建一個機器人 | Microsoft Docs
+description: 使用Bot Builder SDK為Node.js創建一個機器人，這是一個強大的機器人構造框架。
+author: 
+ms.author: 
+manager: 
 ms.topic: get-started-article
 ms.prod: bot-framework
-ms.date: 08/04/2017
+ms.date: 
 ms.reviewer:
 ---
 
-# Create a bot with the Bot Builder SDK for Node.js
+# 用Node.js的Bot Builder SDK創建一個機器人
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-quickstart.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-quickstart.md)
 > - [Azure Bot Service](../azure-bot-service-quickstart.md)
 > - [REST](../rest-api/bot-framework-rest-connector-quickstart.md)
 
-The Bot Builder SDK for Node.js is a framework for developing bots. It is easy to use and models frameworks like Express & restify to provide a familiar way for JavaScript developers to write bots.
+Node.js的Bot Builder SDK是開發機器人的框架。它很容易使用其他框架，如Express＆restify，為JavaScript開發人員編寫機器人提供了一種熟悉的方式。
 
-This tutorial walks you through building a bot by using the Bot Builder SDK for Node.js. You can test the bot in a console window and with the Bot Framework Emulator.
+本教程將引導您使用Node.js的Bot Builder SDK構建機器人。您可以在終端機和Bot框架模擬器中測試機器人。
 
-## Prerequisites
-Get started by completing the following prerequisite tasks:
+## 前置條件
+完成以下前提再開始：
 
-1. Install [Node.js](https://nodejs.org).
-2. Create a folder for your bot.
-3. From a command prompt or terminal, navigate to the folder you just created.
-4. Run the following **npm** command:
+1. 安裝 [Node.js](https://nodejs.org)
+2. 為你的Bot建立資料夾
+3. 從終端機進入到剛創建的文件夾。
+4. 執行下列 **npm** 指令：
 
 ```nodejs
 npm init
 ```
 
-Follow the prompt on the screen to enter information about your bot and npm will create a **package.json** file that contains the information you provided. 
+按照屏幕上的提示輸入有關您的機器人的信息，npm將創建一個包含您提供的信息的 **package.json** 文件。
 
-## Install the SDK
-Next, install the Bot Builder SDK for Node.js by running the following **npm** command:
+## 安裝SDK
+接下來，通過運行以下 **npm** 命令為Node.js安裝Bot Builder SDK：
 
 ```nodejs
 npm install --save botbuilder
 ```
 
-Once you have the SDK installed, you are ready to write your first bot.
+一旦你安裝了SDK，你就可以寫下你的第一個機器人了。
 
-For your first bot, you will create a bot that simply echoes back any user input. To create your bot, follow these steps:
+對於您的第一個機器人，您將創建一個簡單的回覆任何用戶輸入的機器人。要創建機器人，請按照下列步驟操作：
 
-1. In the folder that you created earlier for your bot, create a new file named **app.js**.
-2. Open **app.js** in a text editor or an IDE of your choice. Add the following code to the file: 
+1. 在您為您的機器人創建的文件夾中，創建一個名為 **app.js** 的新文件。
+2. 在您選擇的文本編輯器或IDE中打開 **app.js**。將以下代碼添加到文件中：
 
    [!code-javascript[consolebot code sample Node.js](../includes/code/node-getstarted.js#consolebot)]
 
-3. Save the file. Now you are ready to run and test out your bot.
+3. 保存文件。現在你準備好運行並測試你的機器人了。
 
-### Start your bot
+### 開始你的 bot
 
-Navigate to your bot's directory in a console window and start your bot:
+在控制台窗口中導航到您的機器人目錄並啟動您的機器人：
 
 ```nodejs
 node app.js
 ```
 
-Your bot is now running locally. Try out your bot by typing a few messages in the console window.
-You should see that the bot responds to each message you send by echoing back your message prefixed with the text *"You said:"*.
+你的機器人現在在本地運行。通過在控制台窗口中輸入幾條消息來嘗試您的機器人。
+您應該看到機器人回覆您發送的每個消息，回覆您的消息前綴為文本*“您說：”*。
 
-## Install Restify
+## 安裝 Restify
 
-Console bots are good text-based clients, but in order to use any of the Bot Framework channels (or run your bot in the emulator), your bot will need to run on an API endpoint. Install <a href="http://restify.com/" target="_blank">restify</a> by running the following **npm** command:
+本地機器人是良好的基於文本的客戶端，但為了使用任何Bot框架通道（或在模擬器中運行您的機器人），您的機器人將需要在API端點上運行。安裝<a href="http://restify.com/" target="_blank">restify</a> 透過 **npm** 指令:
 
 ```nodejs
 npm install --save restify
 ```
 
-Once you have Restify in place, you're ready to make some changes to your bot.
+一旦您進行了Restify，您就可以對機器人進行一些更改。
 
-## Edit your bot
+## 編輯你的 bot
 
-You will need to make some changes to your **app.js** file. 
+您將需要對 **app.js** 文件進行一些更改。
 
-1. Add a line to require the `restify` module.
-2. Change the `ConsoleConnector` to a `ChatConnector`.
-3. Include your Microsoft App ID and App Password.
-4. Have the connector listen on an API endpoint.
+1. 添加一行程式碼導入 `restify` 模組
+2. 將 `ConsoleConnector` 改成 `ChatConnector`
+3. 加入你的 Microsoft App ID 和金鑰
+4. 連接器在API端點上進行偵聽
 
    [!code-javascript[echobot code sample Node.js](../includes/code/node-getstarted.js#echobot)]
 
-3. Save the file. Now you are ready to run and test out your bot in the emulator.
+3. 保存文件。現在你已經準備好在模擬器中運行並測試你的機器人了。
 
 > [!NOTE] 
-> You do not need a **Microsoft App ID** or **Microsoft App Password** to run your bot in the Bot Framework Emulator.
+> 您不需要一個 **Microsoft應用程序ID** 或 **Microsoft應用程序密碼** 在Bot Framework Emulator中運行您的機器人。
 
-Please note that you do not need a Microsoft App ID or App Password to run your bot in the Bot Framework Emulator.
+請注意，Bot Framework Emulator中運行您的機器人時，不需要Microsoft應用程序ID或應用程序密碼。
 
-## Test your bot
-Next, test your bot by using the [Bot Framework Emulator](../debug-bots-emulator.md) to see it in action. The emulator is a desktop application that lets you test and debug your bot on localhost or running remotely through a tunnel.
+## 測試你的機器人
 
-First, you'll need to [download](https://emulator.botframework.com) and install the emulator. After the download completes, launch the executable and complete the installation process.
+接下來，使用[Bot Framework Emulator]（../ debug-bots-emulator.md）來測試你的機器人。模擬器是一個桌面應用程序，可讓您在本地主機上測試機器人，或通過隧道遠程運行。
 
-### Start your bot
+首先，你需要[下載](https://emulator.botframework.com)並安裝模擬器。下載完成後，啟動可執行文件並完成安裝過程。
 
-After installing the emulator, navigate to your bot's directory in a console window and start your bot:
+### 開始你的機器人
+
+安裝模擬器後，在控制台窗口中導航到您的機器人目錄並啟動您的機器人：
 
 ```nodejs
 node app.js
 ```
    
-Your bot is now running locally.
+你的機器人現在在本地運行。
 
-### Start the emulator and connect your bot
-After you start your bot, connect to your bot in the emulator:
+### 啟動模擬器並連接您的機器人
 
-1. Type `http://localhost:3978/api/messages` into the address bar. (This is the default endpoint that your bot listens to when hosted locally.)
-2. Click **Connect**. You won't need to specify **Microsoft App ID** and **Microsoft App Password**. You can leave these fields blank for now. You'll get this information later when you [register your bot](../portal-register-bot.md).
+開始之後，連接到你的機器人在模擬器：
 
-### Try out your bot
+1. 在網址列輸入 `http://localhost:3978/api/messages`。（這是您的bot在本地託管時監聽的默認端點。）
+2. 點擊 **連接**。您不需要指定 **Microsoft應用程序ID** 和 **Microsoft應用程序密碼**。現在可以將這些字段留空。在[註冊您的機器人](../portal-register-bot.md)時，您會收到輸入ID、金鑰的信息。
 
-Now that your bot is running locally and is connected to the emulator, try out your bot by typing a few messages in the emulator.
-You should see that the bot responds to each message you send by echoing back your message prefixed with the text *"You said:"*.
+### 試試你的機器人
 
-You've successfully created your first bot using the Bot Builder SDK for Node.js!
+現在，您的機器人在本地運行，並連接到模擬器，嘗試在模擬器中鍵入一些消息。
+您應該看到機器人響應您發送的每個消息，回覆您的消息前綴為文本 *“您說：”*。
 
-## Next steps
+您已經使用Node.js的Bot Builder SDK成功創建了第一個機器人！
+
+## 下一步
 
 > [!div class="nextstepaction"]
-> [Bot Builder SDK for Node.js](bot-builder-nodejs-overview.md)
+> [Node.js的Bot Builder SDK](bot-builder-nodejs-overview.md)
