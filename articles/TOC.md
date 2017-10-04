@@ -1,20 +1,29 @@
 # Overview
 ## [About Bot Framework](overview-introduction-bot-framework.md)
-## [Get the Bot Builder SDK](resources-tools-downloads.md)
+## [How it works](overview-how-bot-framework-works.md)
+## [Add intelligence to bots](cognitive-services-bot-intelligence-overview.md)
 # Quickstarts
 ## [Start building bots](bot-builder-overview-getstarted.md)
+## [Create a bot with Azure Bot Service](~/azure-bot-service-quickstart.md)
 ## [Create a bot with .NET](~/dotnet/bot-builder-dotnet-quickstart.md)
 ## [Create a bot with Node.js](~/nodejs/bot-builder-nodejs-quickstart.md)
-## [Create a bot with Azure Bot Service](~/azure-bot-service-quickstart.md)
 ## [Create a bot with REST](~/rest-api/bot-framework-rest-connector-quickstart.md)
 # Samples
 ## [.NET](~/dotnet/bot-builder-dotnet-samples.md)
 ## [Node.js](~/nodejs/bot-builder-nodejs-samples.md)
-# Concepts
-## [How it works](overview-how-bot-framework-works.md)
-## [Make bots smarter](./cognitive-services-bot-intelligence-overview.md)
 # How-To guides
 ## [Design bots](design/TOC.md)
+## [Develop with Azure Bot Service](~/azure-bot-service-overview.md)
+### [Choose a hosting plan](~/azure-bot-service-hosting-plan.md)
+### [Bot templates](~/azure-bot-service-templates.md)
+#### [Create a basic bot](~/azure-bot-service-serverless-template-basic.md)
+#### [Create a form bot](~/azure-bot-service-serverless-template-form.md)
+#### [Create a language understanding bot](~/azure-bot-service-template-language-understanding.md)
+#### [Create a proactive bot](~/azure-bot-service-template-proactive.md)
+#### [Create a question and answer bot](~/azure-bot-service-template-question-answer.md)
+### [Build features](~/azure-bot-service-build-options.md)
+### [Publish a bot](~/azure-bot-service-continuous-deployment.md)
+### [Migrate a consumption plan bot into a web app bot](~/azure-bot-service-migration-plans.md)
 ## [Develop with .NET](~/dotnet/bot-builder-dotnet-overview.md)
 ### [Key concepts](~/dotnet/bot-builder-dotnet-concepts.md)
 ### Messages and activities
@@ -49,7 +58,7 @@
 ##### [Requirements for real-time media bots](~/dotnet/bot-builder-dotnet-real-time-media-requirements.md)
 ##### [Build a real-time media bot](~/dotnet/bot-builder-dotnet-real-time-audio-video-call-overview.md)
 ##### [Deploy a real-time media bot](~/dotnet/bot-builder-dotnet-real-time-deploy-visual-studio.md)
-### State Data
+### State data
 #### [Manage state data](~/dotnet/bot-builder-dotnet-state.md)
 #### [Manage state data using Cosmos DB](~/dotnet/bot-builder-dotnet-state-azure-cosmosdb.md)
 #### [Manage state data using Table storage](~/dotnet/bot-builder-dotnet-state-azure-table-storage.md)
@@ -93,18 +102,6 @@
 ### [Request payment](~/nodejs/bot-builder-nodejs-request-payment.md)
 ### [Add Azure Search](~/nodejs/bot-builder-nodejs-search-azure.md)
 ### [SDK reference](https://docs.botframework.com/en-us/node/builder/chat-reference/modules/_botbuilder_d_.html)
-## [Develop with Azure Bot Service](~/azure-bot-service-overview.md)
-### [Choose a hosting plan](~/azure-bot-service-hosting-plan.md)
-### Create a bot
-#### [Templates](~/azure-bot-service-templates.md)
-#### [Create a basic bot](~/azure-bot-service-serverless-template-basic.md)
-#### [Create a form bot](~/azure-bot-service-serverless-template-form.md)
-#### [Create a language understanding bot](~/azure-bot-service-template-language-understanding.md)
-#### [Create a proactive bot](~/azure-bot-service-template-proactive.md)
-#### [Create a question and answer bot](~/azure-bot-service-template-question-answer.md)
-### [Use the build tab](~/azure-bot-service-build-options.md)
-### [Publish a bot](~/azure-bot-service-continuous-deployment.md)
-### [Migrate a consumption plan bot into a web app bot](~/azure-bot-service-migration-plans.md)
 ## [Develop with REST](~/rest-api/bot-framework-rest-overview.md)
 ### Build a bot
 #### [Key concepts](~/rest-api/bot-framework-rest-connector-concepts.md)
@@ -159,12 +156,11 @@
 #### [Enable speech in Web Chat](channel-connect-webchat-speech.md)
 ### [Email](channel-connect-email.md)
 ### [GroupMe](channel-connect-groupme.md) 
-### Third party channels 
-#### [Facebook](channel-connect-facebook.md) 
-#### [Kik](channel-connect-kik.md) 
-#### [Slack](channel-connect-slack.md) 
-#### [Telegram](channel-connect-telegram.md) 
-#### [Twilio](channel-connect-twilio.md)
+### [Facebook](channel-connect-facebook.md) 
+### [Kik](channel-connect-kik.md) 
+### [Slack](channel-connect-slack.md) 
+### [Telegram](channel-connect-telegram.md) 
+### [Twilio](channel-connect-twilio.md)
 ### [Bot review guidelines](portal-bot-review-guidelines.md) 
 ## [Troubleshoot](troubleshoot/TOC.md)
 # Reference
