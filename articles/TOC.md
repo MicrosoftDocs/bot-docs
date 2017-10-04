@@ -5,8 +5,8 @@
 # Quickstarts
 ## [Start building bots](bot-builder-overview-getstarted.md)
 ## [Create a bot with Azure Bot Service](~/azure-bot-service-quickstart.md)
-## [Create a bot with .NET](~/dotnet/bot-builder-dotnet-quickstart.md)
-## [Create a bot with Node.js](~/nodejs/bot-builder-nodejs-quickstart.md)
+## [Create a bot with .NET SDK](~/dotnet/bot-builder-dotnet-quickstart.md)
+## [Create a bot with Node.js SDK](~/nodejs/bot-builder-nodejs-quickstart.md)
 ## [Create a bot with REST](~/rest-api/bot-framework-rest-connector-quickstart.md)
 # Samples
 ## [.NET](~/dotnet/bot-builder-dotnet-samples.md)
