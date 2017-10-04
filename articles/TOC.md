@@ -2,6 +2,7 @@
 ## [About Bot Framework](overview-introduction-bot-framework.md)
 ## [How it works](overview-how-bot-framework-works.md)
 ## [Add intelligence to bots](cognitive-services-bot-intelligence-overview.md)
+## [Get the SDK and tools](resources-tools-downloads.md)
 # Quickstarts
 ## [Start building bots](bot-builder-overview-getstarted.md)
 ## [Create a bot with Azure Bot Service](~/azure-bot-service-quickstart.md)
