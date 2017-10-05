@@ -12,7 +12,7 @@ ms.reviewer:
 
 # Debug an Azure Bot Service bot
 
-Azure Bot Service bots are built as Azure App Service web apps, or as code running in a consumption plan upon the Azure Functions serverless architecture. This article describes how to debug your bot after you have set up a publishing process. By downloading a zip file that contains your bot source, you can develop and debug using an integrated development environment (IDE) such as Visual Studio or Visual Studio Code. From your computer, you can update your bot on Azure Bot Service by publishing from Visual Studio, or by publishing with every check-in to your source control service through continuous deployment.
+Azure Bot Service bots are built as Azure App Service web apps, or as code running in a Consumption plan upon the Azure Functions serverless architecture. This article describes how to debug your bot after you have set up a publishing process. By downloading a zip file that contains your bot source, you can develop and debug using an integrated development environment (IDE) such as Visual Studio or Visual Studio Code. From your computer, you can update your bot on Azure Bot Service by publishing from Visual Studio, or by publishing with every check-in to your source control service through continuous deployment.
 
 ## Publish any bot source using continuous deployment
 
@@ -80,13 +80,13 @@ After you have connected the emulator to your bot, send a message to your bot by
 
 ![Debug in VS Code](~/media/mac-azureservice-debug-vsbreakpoint.png)
 
-##<a id="debug-csharp-serverless"></a> Debug a consumption plan C\# script bot
+##<a id="debug-csharp-serverless"></a> Debug a Consumption plan C\# script bot
 
-The consumption plan serverless C\# environment in Azure Bot Service has more in common with Node.js than a typical C\# application because it requires a runtime host, much like the Node engine. In Azure, the runtime is part of the hosting environment in the cloud, but you must replicate that environment locally on your desktop. 
+The Consumption plan serverless C\# environment in Azure Bot Service has more in common with Node.js than a typical C\# application because it requires a runtime host, much like the Node engine. In Azure, the runtime is part of the hosting environment in the cloud, but you must replicate that environment locally on your desktop. 
 
 ### Prerequisites
 
-Before you can debug your consumption plan C# bot, you must complete these tasks.
+Before you can debug your Consumption plan C# bot, you must complete these tasks.
 
 - Download the source code for your bot (from Azure), as described in [Set up continuous deployment](azure-bot-service-continuous-deployment.md).
 - Download and install the [Bot Framework Emulator](debug-bots-emulator.md).
@@ -101,7 +101,7 @@ If you want to be able to debug your code by using breakpoints in Visual Studio 
 > [!NOTE]
 > Visual Studio Code is not currently supported.
 
-### Debug a consumption plan C# script bot using the Bot Framework Emulator
+### Debug a Consumption plan C# script bot using the Bot Framework Emulator
 
 The simplest way to debug your bot locally is to start the bot and then connect to it from Bot Framework Emulator. 
 First, open a command prompt and navigate to the folder where the **project.json** file is located in your repository. Then, run the command `dotnet restore` to restore the various packages that are referenced in your bot.
@@ -131,7 +131,7 @@ Additionally, you can view log details the console window.
 
 ![Console window](~/media/csharp-azureservice-debug-debughostlogging.png)
 
-### Debug a consumption plan C# bot using breakpoints in Visual Studio
+### Debug a Consumption plan C# bot using breakpoints in Visual Studio
 
 To debug your bot using breakpoints in Visual Studio 2017, stop the **DebugHost.cmd** script, and load the solution for your project (included as part of the repository) in Visual Studio. Then, click **Task Runner Explorer** at the bottom of the Visual Studio window.
 

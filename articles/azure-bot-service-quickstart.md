@@ -47,8 +47,24 @@ sign in to <a href="https://portal.azure.com" target="_blank">Azure</a> and comp
 
 4. Confirm that the bot service has been deployed.
     - Click **Notifications** (the bell icon that is located along the top edge of the Azure portal). The notification will change from **Deployment started** to **Deployment succeeded**. 
-    - After the notification changes to **Deployment succeeded**, click that notification.<br/><br/>
+    - After the notification changes to **Deployment succeeded**, click **Go to resource** on that notification.<br/><br/>
     ![Azure notification](~/media/azure-bot-service-first-bot-notification.png)
+
+
+### Select your programming language 
+
+Choose the programming language that you want to use to develop your bot.  
+
+![language](~/media/azure-bot-service-coding-language.png)  
+
+### Select a template and create the bot
+
+Select the template to use as the starting point for developing your bot. 
+For this tutorial, choose the **Basic** template. 
+
+![template](~/media/azure-bot-service-template.png)  
+
+Then, click **Next** to create the bot based on the programming language and template that you've chosen. 
 
 ### Create App ID and password  
 
@@ -72,21 +88,7 @@ Next, create an app ID and password for your bot, so that it will be able to aut
 
     ![password](~/media/azure-bot-service-password.png)  
 
-
-### Select your programming language 
-
-Choose the programming language that you want to use to develop your bot.  
-
-![language](~/media/azure-bot-service-coding-language.png)  
-
-### Select a template and create the bot
-
-Select the template to use as the starting point for developing your bot. 
-For this tutorial, choose the **Basic** template. 
-
-![template](~/media/azure-bot-service-template.png)  
-
-Then, click **Create bot** to create the bot based upon the programming language and template that you've chosen. 
+6. Agree to terms, and click **Create bot**.
 
 > [!IMPORTANT]
 > When you click **Create bot**, there may be a slight delay before a splash screen renders to indicate that the bot service is generating your bot. *Do not* click **Create bot** again. Please wait for the splash screen to appear.
@@ -98,6 +100,7 @@ you'll see that your bot is now listed under **My bots**.
 Congratulations! You've successfully created a bot by using the Azure Bot Service! 
 
 ![bot settings in portal](~/media/azure-bot-service-bf-portal.png)
+
 
 ## Test your bot
 
@@ -123,7 +126,7 @@ The console window shows the deployment's progress until it's complete.
 
   
 > [!NOTE]
-> A bot on a consumption plan automatically deploys each time you modify a source file in the online editor.
+> A bot on a Consumption plan automatically deploys each time you modify a source file in the online editor.
 
 ## Next steps
 
@@ -132,3 +135,7 @@ and verified the bot's functionality by using the built-in chat control within A
 At this point, you may want to [add more functionality](bot-design-principles.md) to your bot or set up [continuous deployment](azure-bot-service-continuous-deployment.md). 
 You can also configure your bot to run on one or more channels and publish your bot, without ever leaving 
 the Azure portal. 
+
+
+
+
