@@ -12,10 +12,10 @@ ms.reviewer:
 
 # Create a bot using the Basic template
 
-To create a bot that uses dialogs to respond to user input, choose the [Basic template](azure-bot-service-templates.md) when creating the bot using Azure Bot Service. This article provides a walkthrough of the code that is automatically generated when you create a consumption plan bot using the Basic template and describes some ways in which you might extend the bot's default functionality. 
+To create a bot that uses dialogs to respond to user input, choose the [Basic template](azure-bot-service-templates.md) when creating the bot using Azure Bot Service. This article provides a walkthrough of the code that is automatically generated when you create a Consumption plan bot using the Basic template and describes some ways in which you might extend the bot's default functionality. 
 
 > [!TIP]
-> This article examines the source code provided by the Basic template for a consumption plan C# bot. The code in the Basic template for a web app C# bot is similar. For a walkthrough of code in a basic web app bot, see
+> This article examines the source code provided by the Basic template for a Consumption plan C# bot. The code in the Basic template for a web app C# bot is similar. For a walkthrough of code in a basic web app bot, see
 > [Dialogs in the Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-dialogs.md).
 
 ## Code walkthrough

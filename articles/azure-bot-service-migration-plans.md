@@ -1,6 +1,6 @@
 ---
-title: Migrate a C# bot from a consumption plan to an app service plan | Microsoft Docs
-description: Migrate an Azure Bot Service C# bot from a consumption hosting plan to an app service hosting plan.
+title: Migrate a C# bot from a Consumption plan to an App Service plan | Microsoft Docs
+description: Migrate an Azure Bot Service C# bot from a Consumption hosting plan to an App Service hosting plan.
 author: johnd-ms
 ms.author: v-jodemp
 manager: rstand
@@ -8,19 +8,19 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date: 08/16/2017
 ---
-# Migrate a bot from a consumption plan to an app service plan
+# Migrate a bot from a Consumption plan to an App Service plan
 
-This article shows you how you can migrate a C# script bot with a consumption plan into a C# bot with an app service plan. 
+This article shows you how you can migrate a C# script bot with a Consumption plan into a C# bot with an App Service plan. 
 
 This migration assumes you have Visual Studio (Community or above).
 
-## Advantages of a bot on an app service plan
+## Advantages of a bot on an App Service plan
 
-Bots on an app service plan run as Azure web apps. Web app bots can do things that consumption plan bots cannot:
+Bots on an App Service plan run as Azure web apps. Web app bots can do things that Consumption plan bots cannot:
 
 - A web app bot can add custom route definitions.
 - A web app bot can enable a Websocket server. 
-- A bot that uses a consumption hosting plan has the same limitations as all code running on Azure Functions. For more information, see <a target='_blank' href='https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale'>Azure Functions Consumption and App Service plans</a>.
+- A bot that uses a Consumption hosting plan has the same limitations as all code running on Azure Functions. For more information, see <a target='_blank' href='https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale'>Azure Functions Consumption and App Service plans</a>.
 
 ## Download your existing bot source
 
@@ -34,7 +34,7 @@ Follow these steps to download the source code of your existing bot:
 
 ## Create a bot template
 
-Azure Bot Service has the same templates for consumption plan and app service plan bots. To migrate from a consumption plan bot, create a new app service plan bot in Azure Bot Service, based on the same template. Underlying code can differ between the two hosting types for the same template, but the new web app has similar structure and configuration features that your existing bot uses.
+Azure Bot Service has the same templates for Consumption plan and App Service plan bots. To migrate from a Consumption plan bot, create a new App Service plan bot in Azure Bot Service, based on the same template. Underlying code can differ between the two hosting types for the same template, but the new web app has similar structure and configuration features that your existing bot uses.
 
 ## Download the new bot source
 
@@ -57,11 +57,11 @@ C# script files can include a reference module using the `#r` keyword. Remove th
 
 ## Add references from project.json
 
-If your consumption plan bot adds NuGet references in its `project.json` file, add these references to your new Visual Studio solution by right-clicking the project in the Solution Explorer pane, and clicking **Add Reference**.
+If your Consumption plan bot adds NuGet references in its `project.json` file, add these references to your new Visual Studio solution by right-clicking the project in the Solution Explorer pane, and clicking **Add Reference**.
 
 ### Add references that were implicit
 
-An Azure Bot Service bot on a consumption plan implicitly includes these references in all .csx source files. Source migrated into .cs source files may need to add explicit references for these classes:
+An Azure Bot Service bot on a Consumption plan implicitly includes these references in all .csx source files. Source migrated into .cs source files may need to add explicit references for these classes:
 
 - `TraceWriter` in the NuGet package `Microsoft.Azure.WebJobs` that provides the `Microsoft.Azure.WebJobs.Host` namespace types. 
 - timer triggers in the NuGet package `Microsoft.Azure.WebJobs.Extensions`
@@ -72,7 +72,7 @@ For additional guidance, see *Converting to class files* in <a target='_blank' h
 
 ## Debug your new bot
 
-A bot on an app service plan is much easier than a bot on a consumption plan to debug locally. You can use [the emulator](debug-bots-emulator.md) to debug your migrated code locally.
+A bot on an App Service plan is much easier than a bot on a Consumption plan to debug locally. You can use [the emulator](debug-bots-emulator.md) to debug your migrated code locally.
 
 ## Publish from Visual Studio, or set up continuous deployment
 
