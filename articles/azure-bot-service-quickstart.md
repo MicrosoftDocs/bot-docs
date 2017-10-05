@@ -123,7 +123,7 @@ The console window shows the deployment's progress until it's complete.
 
   
 > [!NOTE]
-> A bot on a consumption plan automatically deploys each time you modify a source file in the online editor.
+> A bot on a Consumption plan automatically deploys each time you modify a source file in the online editor.
 
 ## Next steps
 

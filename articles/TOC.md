@@ -24,7 +24,7 @@
 #### [Create a question and answer bot](~/azure-bot-service-template-question-answer.md)
 ### [Build features](~/azure-bot-service-build-options.md)
 ### [Publish a bot](~/azure-bot-service-continuous-deployment.md)
-### [Migrate a consumption plan bot into a web app bot](~/azure-bot-service-migration-plans.md)
+### [Migrate a Consumption plan bot into a web app bot](~/azure-bot-service-migration-plans.md)
 ## [Develop with .NET](~/dotnet/bot-builder-dotnet-overview.md)
 ### [Key concepts](~/dotnet/bot-builder-dotnet-concepts.md)
 ### Messages and activities

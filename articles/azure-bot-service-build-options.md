@@ -13,8 +13,8 @@ ms.date: 08/07/2017
 An Azure Bot Service bot that uses an App Service plan includes these features on its **Build** tab.
 
 > [!NOTE]
-> The **Build** tab of an Azure Bot Service bot that uses a consumption plan only provides a basic browser-based code editor. 
-> You can download source code and configure continuous deployment for a consumption plan bot using features located 
+> The **Build** tab of an Azure Bot Service bot that uses a Consumption plan only provides a basic browser-based code editor. 
+> You can download source code and configure continuous deployment for a Consumption plan bot using features located 
 > on its **Settings** tab, in the **Continuous deployment** section.
 
 ## Online code editor
@@ -42,7 +42,7 @@ You can download a zip file that contains all source files, a Visual Studio solu
 Continuous deployment lets you re-publish to Azure whenever you check a code change in to your source control service. If you work in a team and need to share code in a source control system, then you should setup continuous deployment and use the integrated development environment (IDE) and source control system of your choice. 
 
 > [!NOTE]
-> Some templates provided by the Azure Bot Service, and especially templates on a consumption plan, 
+> Some templates provided by the Azure Bot Service, and especially templates on a Consumption plan, 
 > require additional setup steps to [debug on your local computer](azure-bot-service-debug-bot.md). 
 
 The Azure Bot Service provides a quick way to set up continuous deployment for Visual Studio Online and GitHub, by providing an access token issued to you on those web sites. For other source control systems, select **other** and follow the steps that appear. For more help setting up continuous deployment on a source control other than Visual Studio Online or Github, see [Set up continuous deployment](azure-bot-service-continuous-deployment.md).
@@ -51,4 +51,4 @@ The Azure Bot Service provides a quick way to set up continuous deployment for V
 > [!WARNING]
 > When you use continuous deployment, be sure to only modify code by checking it into your source control service. 
 > Do not use the online code editor to change source code when continuous deployment is enabled. 
-> For consumption plan bots, the online code editor is read-only when continuous deployment is enabled.
+> For Consumption plan bots, the online code editor is read-only when continuous deployment is enabled.
