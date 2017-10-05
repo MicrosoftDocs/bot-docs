@@ -12,7 +12,7 @@ ms.reviewer:
 
 # Templates in the Azure Bot Service
 
-The Azure Bot Service enables you to quickly and easily create a consumption plan or app service plan bot in either C# or Node.js by using one of five templates. 
+The Azure Bot Service enables you to quickly and easily create a Consumption plan or App Service plan bot in either C# or Node.js by using one of five templates. 
 
 [!include[Azure Bot Service templates](~/includes/snippet-abs-templates.md)] 
 
@@ -45,9 +45,9 @@ Bots created in an App Service plan are based on standard Web apps. Here's a lis
 | / | **app.js** | The main .js file of your bot. |
 | / | **package.json** | This file contains the project’s npm references. You can modify this file to add a new reference. |
 
-## Files for a bot created in a consumption plan
+## Files for a bot created in a Consumption plan
 
-Bots in a consumption plan are based on Azure Functions. Here's a list of some important files you'll find in the zip file (in addition to files that are specific to the selected template).
+Bots in a Consumption plan are based on Azure Functions. Here's a list of some important files you'll find in the zip file (in addition to files that are specific to the selected template).
 
 ### Common files (both C# and Node.js)
 

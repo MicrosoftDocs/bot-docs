@@ -69,7 +69,7 @@ Follow these steps if you want to use a source control service *other than* Visu
 3. Extract the contents of the downloaded zip file to the local folder where you are planning to sync your deployment source.
 4. Click **Configure** and follow the steps that appear. 
 
-## Set up continuous deployment for a bot on a consumption plan 
+## Set up continuous deployment for a bot on a Consumption plan 
 
 Choose the deployment source for your bot and connect your repository. 
 
@@ -83,7 +83,7 @@ Choose the deployment source for your bot and connect your repository.
 When you disable continuous deployment, your source control service continues functioning, but changes you check in are not automatically published to Azure. To disable continuous deployment, perform the following steps:
 
 1. If your bot has an App Service hosting plan, within the Azure Portal, find your Azure bot, click the **BUILD** tab and find the **Continuous deployment from source control** section, *or...* 
-2. if your bot has a consumption plan, click the **Settings** tab, expand the **Continuous deployment** section, and click **Configure**.
+2. if your bot has a Consumption plan, click the **Settings** tab, expand the **Continuous deployment** section, and click **Configure**.
 3. In the **Deployments** pane, select the source control service where continuous deployment is enabled, and click **Disconnect**.  
 
 
