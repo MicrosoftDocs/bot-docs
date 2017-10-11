@@ -6,7 +6,7 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 06/02/2017
+ms.date: 10/10/2017
 ---
 
 # Troubleshooting general problems
@@ -243,7 +243,7 @@ Both the Bot Builder SDK for Node.js and the Bot Builder SDK for .NET support ca
 
 ## Where can I get more help?
 
-* Leverage the information in previously answered questions on [Stack Overflow](http://stackoverflow.com/questions/tagged/botframework), or post your own questions using the `botframework` tag.
+* Leverage the information in previously answered questions on [Stack Overflow](http://stackoverflow.com/questions/tagged/botframework), or post your own questions using the `botframework` tag. Please note that Stack Overflow has guidelines such as requiring a descriptive title, a complete and concise problem statement, and sufficient details to reproduce your issue. Feature requests or overly broad questions are off-topic; new users should visit the [Stack Overflow Help Center](https://stackoverflow.com/help/how-to-ask) for more details.
 * Consult [BotBuilder issues](https://github.com/Microsoft/BotBuilder/issues) in GitHub for information about known issues with the Bot Builder SDK, or to report a new issue.
 * Leverage the information in the BotBuilder community discussion on [Gitter](https://gitter.im/Microsoft/BotBuilder).
 
