@@ -25,7 +25,8 @@ If you are using the [Bot Builder SDK for .NET](../dotnet/bot-builder-dotnet-ove
 
 > [!WARNING]
 > In December 2016, v3.1 of the Bot Framework security protocol introduced changes to several values that are 
-> used during token generation and validation. 
+> used during token generation and validation. In late fall of 2017, v3.2 of the Bot Framework security protocol will be introduced 
+> which will again include changes to values that are used during token generation and validation.
 > For more information, see [Security protocol changes](#security-protocol-changes).
 
 ## Authentication technologies
@@ -239,6 +240,11 @@ payload:
 
 ##<a id="emulator-to-bot"></a> Authenticate requests from the Bot Framework Emulator to your bot
 
+> [!WARNING]
+> In late fall of 2017, v3.2 of the Bot Framework security protocol will be introduced. This new version includes a new "issuer" value within tokens
+> that are exchanged between the Bot Framework Eumaltor and your bot. To prepare for this change, the below steps outline how to check for both the 
+> v3.1 and v3.2 issuer values. 
+
 The [Bot Framework Emulator](../debug-bots-emulator.md) is a desktop tool that you can use to test the functionality of your bot. Although the Bot Framework Emulator uses the same [authentication technologies](#authentication-technologies) as described above, it is unable to impersonate the real Bot Connector service. 
 Instead, it uses the Microsoft App ID and Microsoft App Password that you specify when you connect the emulator to your bot to create tokens that are identical to those that the bot creates. 
 When the emulator sends a request to your bot, it specifies the JWT token in the `Authorization` header of the request -- in essence, using the bot's own credentials to authenticate the request. 
@@ -290,7 +296,7 @@ When parsing the token, you must configure the parsing library or write your own
 
 1. The token was sent in the HTTP `Authorization` header with "Bearer" scheme.
 2. The token is valid JSON that conforms to the [JWT standard](http://openid.net/specs/draft-jones-json-web-token-07.html).
-3. The token contains an "issuer" claim with value of `https://sts.windows.net/d6d49420-f39b-4df7-a1dc-d59a935871db/`.
+3. The token contains an "issuer" claim with value of `https://sts.windows.net/d6d49420-f39b-4df7-a1dc-d59a935871db/` or `https://sts.windows.net/f8cdef31-a31e-4b4a-93e4-5f571e91255a/`. (Checking for both issuer values will ensure you are checking for both the security protocol v3.1 and v3.2 issuer values)
 4. The token contains an "audience" claim with a value equal to the bot's Microsoft App ID.
 5. The token contains an "appid" claim with the value equal to the bot's Microsoft App ID.
 6. The token has not yet expired. Industry-standard clock-skew is 5 minutes.
@@ -342,13 +348,13 @@ payload:
 
 | Protocol version | Valid value |
 |----|----|
-| v3.1 (starting December 2016) | `https://login.microsoftonline.com/botframework.com/oauth2/v2.0/token` |
+| v3.1 & v3.2 | `https://login.microsoftonline.com/botframework.com/oauth2/v2.0/token` |
 
 #### OAuth scope
 
 | Protocol version | Valid value |
 |----|----|
-| v3.1 (starting December 2016) |  `https://api.botframework.com/.default` |
+| v3.1 & v3.2 |  `https://api.botframework.com/.default` |
 
 ### [Connector to Bot authentication](#connector-to-bot)
 
@@ -356,13 +362,13 @@ payload:
 
 | Protocol version | Valid value |
 |----|----|
-| v3.1 (starting December 2016) | `https://login.botframework.com/v1/.well-known/openidconfiguration` |
+| v3.1 & v3.2 | `https://login.botframework.com/v1/.well-known/openidconfiguration` |
 
 #### JWT Issuer
 
 | Protocol version | Valid value |
 |----|----|
-| v3.1 (starting December 2016) | `https://api.botframework.com` |
+| v3.1 & v3.2 | `https://api.botframework.com` |
 
 ### [Emulator to Bot authentication](#emulator-to-bot)
 
@@ -370,31 +376,32 @@ payload:
 
 | Protocol version | Valid value |
 |----|----|
-| v3.1 (starting December 2016) | `https://login.microsoftonline.com/botframework.com/oauth2/v2.0/token` |
+| v3.1 & v3.2 | `https://login.microsoftonline.com/botframework.com/oauth2/v2.0/token` |
 
 #### OAuth scope
 
 | Protocol version | Valid value |
 |----|----|
-| v3.1 (starting December 2016) |  Your bot’s Microsoft App ID + `/.default` |
+| v3.1 & v3.2 |  Your bot’s Microsoft App ID + `/.default` |
 
 #### JWT Audience
 
 | Protocol version | Valid value |
 |----|----|
-| v3.1 (starting December 2016) | Your bot’s Microsoft App ID |
+| v3.1 & v3.2 | Your bot’s Microsoft App ID |
 
 #### JWT Issuer
 
 | Protocol version | Valid value |
 |----|----|
-| v3.1 (starting December 2016) | `https://sts.windows.net/d6d49420-f39b-4df7-a1dc-d59a935871db/` |
+| v3.1 | `https://sts.windows.net/d6d49420-f39b-4df7-a1dc-d59a935871db/` |
+| v3.2 | `https://sts.windows.net/f8cdef31-a31e-4b4a-93e4-5f571e91255a/` |
 
 #### OpenID metadata document
 
 | Protocol version | Valid value |
 |----|----|
-| v3.1 (starting December 2016) | `https://login.microsoftonline.com/botframework.com/v2.0/.well-known/openid-configuration` |
+| v3.1 & v3.2 | `https://login.microsoftonline.com/botframework.com/v2.0/.well-known/openid-configuration` |
 
 ## Additional resources
 

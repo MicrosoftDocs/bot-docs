@@ -24,7 +24,6 @@ ms.author: tysonn
 * [Contribute to Bot Framework documentation](../README.md)
 * [Content channel guidance](content-channel-guidance.md)
 * [Style and voice](style-and-voice.md)
-* [Feedback, comments, and support](feedback-and-comments.md)
 
 ## Authoring articles: tools, processes, guidance
 * [Tools and setup for authoring in GitHub](tools-and-setup.md)
@@ -48,6 +47,5 @@ ms.author: tysonn
 * [Create images in markdown](create-images-markdown.md)
 * [Use syntax highlighting for code snippets in markdown](syntax-highlighting-markdown.md)
 * [Custom markdown extensions used in our technical articles](custom-markdown-extensions.md)
-* [Markdown template for technical articles](../markdown templates/markdown-template-for-new-articles.md)
 * [Metadata for Bot Framework technical articles](article-metadata.md)
 
