@@ -1,4 +1,3 @@
-# [Support](http://stackoverflow.com/questions/tagged/botframework)
 # [FAQ](../resources-bot-framework-faq.md)
 # [Additional resources](../resources-links-help.md)
 # [Guide to identifiers](../resources-identifiers-guide.md)
