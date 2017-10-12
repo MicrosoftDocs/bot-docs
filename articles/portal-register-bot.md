@@ -19,7 +19,7 @@ Registration is a simple process. You are prompted to provide some information a
  
 ## Register your bot
 
-To register your bot, you must sign in to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a>. After you sign in, click **My bots**, then click **Create a bot**, and finally, click **Register**. Then complete the following steps.
+To register your bot, you must sign in to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a>. After you sign in, click **My bots**, then click **Create a bot**, then select **Register an existing bot built using Bot Builder SDK.**, and finally, click **Ok**. Then complete the following steps.
 
 ### Complete the **Bot profile** section of the form.  
 
