@@ -20,15 +20,16 @@ The following activity types are supported by the Bot Builder SDK for .NET.
 
 | Activity.Type | Interface | Description |
 |------|------|------|
-| message | IMessageActivity | Represents a communication between bot and user. |
-| conversationUpdate | IConversationUpdateActivity | Indicates that the bot was added to a conversation, other members were added to or removed from the conversation, or conversation metadata has changed. |
-| contactRelationUpdate | IContactRelationUpdateActivity | Indicates that the bot was added or removed from a user's contact list. |
-| typing | ITypingActivity | Indicates that the user or bot on the other end of the conversation is compiling a response. | 
-| ping | n/a | Represents an attempt to determine whether a bot's endpoint is accessible. | 
-| deleteUserData | n/a | Indicates to a bot that a user has requested that the bot delete any user data it may have stored. |
-| endOfConversation | IEndOfConversationActivity | Indicates the end of a conversation. |
-| event | IEventActivity | Represents a communication sent to a bot that is not visible to the user. |
-| invoke | IInvokeActivity | Represents a communication sent to a bot to request that it perform a specific operation. This activity type is reserved for internal use by the Microsoft Bot Framework. |
+| [message](#messag) | IMessageActivity | Represents a communication between bot and user. |
+| [conversationUpdate](#conversationupdate) | IConversationUpdateActivity | Indicates that the bot was added to a conversation, other members were added to or removed from the conversation, or conversation metadata has changed. |
+| [contactRelationUpdate](#contactrelationupdate) | IContactRelationUpdateActivity | Indicates that the bot was added or removed from a user's contact list. |
+| [typing](#typing) | ITypingActivity | Indicates that the user or bot on the other end of the conversation is compiling a response. | 
+| [ping](#ping) | n/a | Represents an attempt to determine whether a bot's endpoint is accessible. | 
+| [deleteUserData](#deleteuserdata) | n/a | Indicates to a bot that a user has requested that the bot delete any user data it may have stored. |
+| [endOfConversation](#endofconversation) | IEndOfConversationActivity | Indicates the end of a conversation. |
+| [event](#event) | IEventActivity | Represents a communication sent to a bot that is not visible to the user. |
+| [invoke](#invoke) | IInvokeActivity | Represents a communication sent to a bot to request that it perform a specific operation. This activity type is reserved for internal use by the Microsoft Bot Framework. |
+| [messageReaction](#messagereaction) | IMessageReactionActivity | Indicates that a user has reacted to an existing activity. For example, a user clicks the "Like" button on a message. |
 
 ## message
 
@@ -86,6 +87,12 @@ sender of an **event** activity typically does not expect the bot to acknowledge
 Your bot may receive an **invoke** activity that represents a request for it to perform a specific operation. 
 The sender of an **invoke** activity typically expects the bot to acknowledge receipt via HTTP response. 
 This activity type is reserved for internal use by the Microsoft Bot Framework.
+
+## messageReaction
+
+Some channels will send **messageReaction** activities to your bot when a user reacted to an existing activity. For example, a user clicks the "Like" button on a message. The **ReplyToId** property will indicate which activity the user reacted to.
+
+The **messageReaction** activity may correspond to any number of **messageReactionTypes** that the channel defined. For example, "Like" or "PlusOne" as reaction types that a channel may sent. 
 
 ## Additional resources
 
