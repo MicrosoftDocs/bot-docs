@@ -38,9 +38,9 @@ The custom script callback functions you create may take many forms. While you c
 | ---- | ---- | ---- | ---- |
 | Before response function | context | **void** or **promise** | Function that is executed before a response is given. |
 | Process function | context | **void** or **promise** | Function that performs business logic. |
-| Decision function | context | **string** or **promise** | Function that makes decisions and conditional response based on business logic. |
-| Code recognizer function | context | **boolean** or **promise** | Custom business logic that gets run when a **Script trigger** occurs. |
-| Prompt function | context | **boolean** or **promise** | Function that executes as part of a prompt. |
+| Decision function | context | **string** or **promise** | Function that makes decisions based on business logic. The return string should match a condition from a [decision](conversation-designer-dialogues.md#decision-state) block. |
+| Code recognizer function | context | **boolean** or **promise** | Custom business logic that gets run when a **Script trigger** occurs. Return `true` to indicate a match. Otherwise, return `false` to cancel the match. |
+| onRecognize function | context | **boolean** or **promise** | Function that executes only if there is a match from a LUIS recognizer. Use this callback function to process LUIS entities and return an appropriate **boolean** value. Return `true` to indicate a match. Otherwise, return `false` to cancel the match. |
 
 ## IConversationContext interface
 
@@ -51,8 +51,6 @@ The `context` object exposes the following properties.
 
 | Name |  Code | Description |
 | ---- | ---- | ---- |
-| `contextEntities` | `context.contextEntities["entityName"][index].value` | Read-only. The **contextEntities** property persists until explicitly cleared or until the bot receives a new conversation (conversation update activity). |
-| `taskEntities` | `context.taskEntities["entityName"][index].value` | Read-only. The **taskEntities** property are cleared at the end of the current task execution. |
 | `request` | `context.request` | Get the request object that contains the bot's activity.  |
 | | `context.request.attachment` | An attachment activity that may contains an adaptive card. |
 | | `context.request.text` | A text activity that contains the incoming text message from the client. |
@@ -61,28 +59,16 @@ The `context` object exposes the following properties.
 | `responses` | `context.responses` | Maintains an array of activities that will be sent back to the client at the end of the current state or code behind execution. |
 | | `context.responses.push` | Add an activity to the response. |
 | `global` | `context.global` | A JavaScript object that contains conversational data you defined. This object persists throughout the conversation. |
+| `local` | `context.local` | A JavaScript object that contains task data you defined. This object persists for the duration of a specific task. LUIS intents are always returned to the local context. If you want to persist LUIS results, consider copying it to the `context.global` context. |
+| | `context.local['@description']` | Returns the raw Entities received from LUIS. |
 | `sticky` | `context.sticky` | Indicates the current task name |
+| `currentTemplate` | `context.currentTemplate` | A [conditional response template](conversation-designer-response-templates.md#conditional-response-templates) that is called for both the display and speak evaluations. This object contains three properties: <br/>1. **name**: The name of the current template. <br/>2. **modalityDisplay**: A boolean that indicates the modality is associated with a display evaluation. <br/>3. **modalitySpeak**: A boolean that indicates the modality is associated with a speak evaluation. |
 
 ## Context methods
 The `context` object exposes the following methods.
 | Name | Return type | Code | Description |
 | ---- | ---- | ---- | ---- |
-| `addTaskEntity` | **IConversationContext** | `context.addTaskEntity("entityName", "entityValue");` | Add a task entity. Task entities are cleared at the end of the current task execution. |
-| `containsTaskEntity` | **boolean** | `context.containsTaskEntity("entityName", "entityValue");` | Indicates if **taskEntities** contains the entity. |
-| `getCurrentTurn` | **number**| `context.getCurrentTurn();` | Get the turn from the Frame on top of the stack if you are executing a reprompt. |
-| `removeTaskEntity` | **IConversationContext** | `context.removeTaskEntity("entityName");` | Remove a task entity. |
-## Entity interface
-
-The **Entity** interface exposes the following **read-only** properties.
-
-| Name | Return type | Description |
-| ---- | ---- | ---- |
-| `type` | **string** | The entity type (e.g.: color, city, sport, etc...). |
-| `value` | **string** | The value of the entity extracted from the utterance (e.g.: red, Seattle, Football). |
-| `startIndex` | **number** | The starting index of the entity extracted from the utterance. |
-| `endIndex` | **number** | The ending index of the entity extracted from the utterance. |
-| `score` | **number** | The confidence score of an entity (e.g.: range between 0 to 1). |
-| `resolution` | **EntityResolution** | A property bag with more information about an entity. Look at [builtin.datetime](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/pre-builtentities) for an example of how the **score** is used. |
+| `getCurrentTurn` | **number** | `context.getCurrentTurn();` | Get the turn from the Frame on top of the stack if you are executing a reprompt. |
 
 ## Next step
 > [!div class="nextstepaction"]
