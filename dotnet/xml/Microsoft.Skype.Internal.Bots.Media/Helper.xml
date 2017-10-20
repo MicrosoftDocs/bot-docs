@@ -1,4 +1,4 @@
-<Type Name="Helper" FullName="Microsoft.Skype.Internal.Bots.Media.Helper">
+﻿<Type Name="Helper" FullName="Microsoft.Skype.Internal.Bots.Media.Helper">
   <TypeSignature Language="C#" Value="public static class Helper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Helper extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.Helper" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.Helper.CreateConfigurationManager(System.Action{Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.Helper.GetBitsPerPixel(Microsoft.Skype.Bots.Media.VideoColorFormat)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -51,8 +53,7 @@
         <Parameter Name="format" Type="Microsoft.Skype.Bots.Media.VideoColorFormat" />
       </Parameters>
       <Docs>
-        <param name="format">
-        </param>
+        <param name="format"></param>
         <summary />
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.Helper.GetStride(Microsoft.Skype.Bots.Media.VideoFormat)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -73,8 +75,7 @@
         <Parameter Name="format" Type="Microsoft.Skype.Bots.Media.VideoFormat" />
       </Parameters>
       <Docs>
-        <param name="format">
-        </param>
+        <param name="format"></param>
         <summary />
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Internal.Bots.Media.Helper.MediaApiComponentName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

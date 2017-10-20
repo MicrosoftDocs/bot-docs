@@ -1,4 +1,4 @@
-<Type Name="IMediaPlatform" FullName="Microsoft.Skype.Bots.Media.IMediaPlatform">
+﻿<Type Name="IMediaPlatform" FullName="Microsoft.Skype.Bots.Media.IMediaPlatform">
   <TypeSignature Language="C#" Value="public interface IMediaPlatform : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMediaPlatform implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.IMediaPlatform" />
@@ -24,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.IMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.IMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IVideoSocket)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.IMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,Microsoft.Skype.Bots.Media.IVideoSocket)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.IMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.IVideoSocket})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.IMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.IVideoSocket},Microsoft.Skype.Bots.Media.IVideoSocket)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.IMediaPlatform.Initialize(Microsoft.Skype.Bots.Media.MediaPlatformSettings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -1,10 +1,10 @@
-<Type Name="PromptDialog+PromptInt64" FullName="Microsoft.Bot.Builder.Dialogs.PromptDialog+PromptInt64">
-  <TypeSignature Language="C#" Value="public sealed class PromptDialog.PromptInt64 : Microsoft.Bot.Builder.Dialogs.Internals.Prompt&lt;long,long&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable sealed beforefieldinit PromptDialog/PromptInt64 extends Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2&lt;int64, int64&gt;" />
+﻿<Type Name="PromptDialog+PromptInt64" FullName="Microsoft.Bot.Builder.Dialogs.PromptDialog+PromptInt64">
+  <TypeSignature Language="C#" Value="public class PromptDialog.PromptInt64 : Microsoft.Bot.Builder.Dialogs.Internals.Prompt&lt;long,long&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable beforefieldinit PromptDialog/PromptInt64 extends Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2&lt;int64, int64&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Internals.Prompt&lt;System.Int64,System.Int64&gt;</BaseTypeName>
@@ -25,7 +25,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.#ctor(Microsoft.Bot.Builder.Dialogs.PromptOptions{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="promptOptions" Type="Microsoft.Bot.Builder.Dialogs.PromptOptions&lt;System.Int64&gt;" />
@@ -46,7 +47,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.#ctor(System.String,System.String,System.Int32,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="prompt" Type="System.String" />
@@ -73,7 +75,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.Max" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
@@ -92,7 +95,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.Min" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
@@ -107,11 +111,12 @@
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="protected override bool TryParse (Microsoft.Bot.Connector.IMessageActivity message, out long result);" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryParse(class Microsoft.Bot.Connector.IMessageActivity message, int64 result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryParse(class Microsoft.Bot.Connector.IMessageActivity message, [out] int64&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.TryParse(Microsoft.Bot.Connector.IMessageActivity,System.Int64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

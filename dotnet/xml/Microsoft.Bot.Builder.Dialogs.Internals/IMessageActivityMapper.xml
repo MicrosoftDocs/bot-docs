@@ -1,10 +1,10 @@
-<Type Name="IMessageActivityMapper" FullName="Microsoft.Bot.Builder.Dialogs.Internals.IMessageActivityMapper">
+﻿<Type Name="IMessageActivityMapper" FullName="Microsoft.Bot.Builder.Dialogs.Internals.IMessageActivityMapper">
   <TypeSignature Language="C#" Value="public interface IMessageActivityMapper" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMessageActivityMapper" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.IMessageActivityMapper" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -18,7 +18,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IMessageActivityMapper.Map(Microsoft.Bot.Connector.IMessageActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IMessageActivity</ReturnType>

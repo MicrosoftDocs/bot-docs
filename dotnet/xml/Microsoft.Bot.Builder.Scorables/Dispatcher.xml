@@ -1,10 +1,10 @@
-<Type Name="Dispatcher" FullName="Microsoft.Bot.Builder.Scorables.Dispatcher">
+﻿<Type Name="Dispatcher" FullName="Microsoft.Bot.Builder.Scorables.Dispatcher">
   <TypeSignature Language="C#" Value="public class Dispatcher : Microsoft.Bot.Builder.Scorables.IDispatcher" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit Dispatcher extends System.Object implements class Microsoft.Bot.Builder.Scorables.IDispatcher" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Dispatcher" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,7 +25,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -39,7 +40,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.ContinueWithNextGroup" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -56,7 +58,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeBindingFlags" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
@@ -74,7 +77,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeComparer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IComparer&lt;System.Object&gt;</ReturnType>
@@ -92,7 +96,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeFactory" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object&gt;</ReturnType>
@@ -110,7 +115,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeMethods" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Reflection.MethodInfo&gt;</ReturnType>
@@ -128,7 +134,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeRegex(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.RegularExpressions.Regex</ReturnType>
@@ -149,7 +156,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeResolver" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Scorables.Internals.IResolver</ReturnType>
@@ -167,7 +175,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeScorable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object&gt;</ReturnType>
@@ -185,7 +194,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeService(Microsoft.Bot.Builder.Luis.ILuisModel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.ILuisService</ReturnType>
@@ -206,7 +216,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeServices" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.Object&gt;</ReturnType>
@@ -224,7 +235,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -242,7 +254,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.Microsoft#Bot#Builder#Scorables#IDispatcher#TryPostAsync(System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -268,7 +281,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.OnFailAsync" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -291,7 +305,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.OnPostAsync" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -314,7 +329,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.OnStage(Microsoft.Bot.Builder.Scorables.Internals.FoldStage,Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object},Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

@@ -1,4 +1,4 @@
-<Type Name="RealTimeMediaIncomingCallEvent" FullName="Microsoft.Bot.Builder.RealTimeMediaCalling.Events.RealTimeMediaIncomingCallEvent">
+﻿<Type Name="RealTimeMediaIncomingCallEvent" FullName="Microsoft.Bot.Builder.RealTimeMediaCalling.Events.RealTimeMediaIncomingCallEvent">
   <TypeSignature Language="C#" Value="public class RealTimeMediaIncomingCallEvent : Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RealTimeMediaIncomingCallEvent extends Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.RealTimeMediaCalling.Events.RealTimeMediaIncomingCallEvent" />
@@ -23,6 +23,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.Events.RealTimeMediaIncomingCallEvent.#ctor(Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation,Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RealTimeMediaWorkflow)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.RealTimeMediaCalling.Events.RealTimeMediaIncomingCallEvent.RealTimeMediaWorkflow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

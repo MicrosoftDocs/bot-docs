@@ -1,4 +1,4 @@
-<Type Name="IFileSourcePlayer" FullName="Microsoft.Skype.Internal.Bots.Media.IFileSourcePlayer">
+﻿<Type Name="IFileSourcePlayer" FullName="Microsoft.Skype.Internal.Bots.Media.IFileSourcePlayer">
   <TypeSignature Language="C#" Value="public interface IFileSourcePlayer : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFileSourcePlayer implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.IFileSourcePlayer" />
@@ -22,6 +22,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Internal.Bots.Media.IFileSourcePlayer.FileSourcePlayerEndOfFile" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.IFileSourcePlayer.Play" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.IFileSourcePlayer.Stop" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

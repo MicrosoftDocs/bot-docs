@@ -1,10 +1,10 @@
-<Type Name="LuisIntentScorable&lt;InnerState,InnerScore&gt;+Scope" FullName="Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable&lt;InnerState,InnerScore&gt;+Scope">
+﻿<Type Name="LuisIntentScorable&lt;InnerState,InnerScore&gt;+Scope" FullName="Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable&lt;InnerState,InnerScore&gt;+Scope">
   <TypeSignature Language="C#" Value="public sealed class LuisIntentScorable&lt;InnerState,InnerScore&gt;.Scope : Microsoft.Bot.Builder.Scorables.Internals.ResolverScope&lt;InnerScore&gt;" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit LuisIntentScorable`2/Scope&lt;InnerState, InnerScore&gt; extends Microsoft.Bot.Builder.Scorables.Internals.ResolverScope`1&lt;!InnerScore&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="InnerState" />
@@ -28,7 +28,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope.#ctor(Microsoft.Bot.Builder.Luis.ILuisModel,Microsoft.Bot.Builder.Luis.Models.LuisResult,Microsoft.Bot.Builder.Luis.Models.IntentRecommendation,Microsoft.Bot.Builder.Scorables.Internals.IResolver)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="model" Type="Microsoft.Bot.Builder.Luis.ILuisModel" />
@@ -51,7 +52,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope.Intent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.Models.IntentRecommendation</ReturnType>
@@ -67,7 +69,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope.Model" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.ILuisModel</ReturnType>
@@ -83,7 +86,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope.Result" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.Models.LuisResult</ReturnType>
@@ -95,11 +99,12 @@
     </Member>
     <Member MemberName="TryResolve">
       <MemberSignature Language="C#" Value="public override bool TryResolve (Type type, object tag, out object value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryResolve(class System.Type type, object tag, object value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryResolve(class System.Type type, object tag, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope.TryResolve(System.Type,System.Object,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

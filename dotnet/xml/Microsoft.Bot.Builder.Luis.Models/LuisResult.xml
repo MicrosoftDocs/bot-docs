@@ -1,10 +1,10 @@
-<Type Name="LuisResult" FullName="Microsoft.Bot.Builder.Luis.Models.LuisResult">
+﻿<Type Name="LuisResult" FullName="Microsoft.Bot.Builder.Luis.Models.LuisResult">
   <TypeSignature Language="C#" Value="public class LuisResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LuisResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.Models.LuisResult" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,7 +21,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.LuisResult.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -37,7 +38,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.LuisResult.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},Microsoft.Bot.Builder.Luis.Models.IntentRecommendation,System.Collections.Generic.IList{Microsoft.Bot.Builder.Luis.Models.IntentRecommendation},System.Collections.Generic.IList{Microsoft.Bot.Builder.Luis.Models.CompositeEntity},Microsoft.Bot.Builder.Luis.Models.DialogResponse,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="query" Type="System.String" />
@@ -68,7 +70,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.LuisResult.AlteredQuery" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -94,7 +97,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.LuisResult.CompositeEntities" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -118,7 +122,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.LuisResult.Dialog" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -140,7 +145,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.LuisResult.Entities" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -164,7 +170,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.LuisResult.Intents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -188,7 +195,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.LuisResult.Query" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -212,7 +220,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.LuisResult.TopScoringIntent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -234,7 +243,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.LuisResult.Validate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

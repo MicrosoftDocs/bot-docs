@@ -1,4 +1,4 @@
-<Type Name="IWorkitem" FullName="Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.IWorkitem">
+﻿<Type Name="IWorkitem" FullName="Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.IWorkitem">
   <TypeSignature Language="C#" Value="public interface IWorkitem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWorkitem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.IWorkitem" />
@@ -22,6 +22,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.IWorkitem.Process" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

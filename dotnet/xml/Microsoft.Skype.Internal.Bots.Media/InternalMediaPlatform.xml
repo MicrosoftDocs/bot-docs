@@ -1,4 +1,4 @@
-<Type Name="InternalMediaPlatform" FullName="Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform">
+﻿<Type Name="InternalMediaPlatform" FullName="Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform">
   <TypeSignature Language="C#" Value="public class InternalMediaPlatform : IDisposable, Microsoft.Skype.Bots.Media.IMediaPlatform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi InternalMediaPlatform extends System.Object implements class Microsoft.Skype.Bots.Media.IMediaPlatform, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform" />
@@ -28,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.CreateAudioSocket(Microsoft.Skype.Bots.Media.AudioSocketSettings,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -52,10 +54,8 @@
         <Parameter Name="isTest" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="settings">
-        </param>
-        <param name="isTest">
-        </param>
+        <param name="settings"></param>
+        <param name="isTest"></param>
         <summary />
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -67,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.CreateFileSource(Microsoft.Skype.Internal.Bots.Media.FileSourceSettings,System.Boolean,System.IO.Stream)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -78,12 +79,9 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="settings">
-        </param>
-        <param name="isTest">
-        </param>
-        <param name="stream">
-        </param>
+        <param name="settings"></param>
+        <param name="isTest"></param>
+        <param name="stream"></param>
         <summary />
         <returns />
         <remarks>To be added.</remarks>
@@ -95,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,8 +103,7 @@
         <Parameter Name="audioSocket" Type="Microsoft.Skype.Bots.Media.IAudioSocket" />
       </Parameters>
       <Docs>
-        <param name="audioSocket">
-        </param>
+        <param name="audioSocket"></param>
         <summary />
         <returns />
         <remarks>To be added.</remarks>
@@ -117,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IVideoSocket)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -126,8 +125,7 @@
         <Parameter Name="vbssSocket" Type="Microsoft.Skype.Bots.Media.IVideoSocket" />
       </Parameters>
       <Docs>
-        <param name="vbssSocket">
-        </param>
+        <param name="vbssSocket"></param>
         <summary />
         <returns />
         <remarks>To be added.</remarks>
@@ -139,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,Microsoft.Skype.Bots.Media.IVideoSocket)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -149,10 +148,8 @@
         <Parameter Name="videoSocket" Type="Microsoft.Skype.Bots.Media.IVideoSocket" />
       </Parameters>
       <Docs>
-        <param name="audioSocket">
-        </param>
-        <param name="videoSocket">
-        </param>
+        <param name="audioSocket"></param>
+        <param name="videoSocket"></param>
         <summary />
         <returns />
         <remarks>To be added.</remarks>
@@ -164,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.IVideoSocket})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -174,10 +172,8 @@
         <Parameter Name="videoSockets" Type="System.Collections.Generic.IList&lt;Microsoft.Skype.Bots.Media.IVideoSocket&gt;" />
       </Parameters>
       <Docs>
-        <param name="audioSocket">
-        </param>
-        <param name="videoSockets">
-        </param>
+        <param name="audioSocket"></param>
+        <param name="videoSockets"></param>
         <summary />
         <returns />
         <remarks>To be added.</remarks>
@@ -189,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.IVideoSocket},Microsoft.Skype.Bots.Media.IVideoSocket)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -200,12 +197,9 @@
         <Parameter Name="vbssSocket" Type="Microsoft.Skype.Bots.Media.IVideoSocket" />
       </Parameters>
       <Docs>
-        <param name="audioSocket">
-        </param>
-        <param name="videoSockets">
-        </param>
-        <param name="vbssSocket">
-        </param>
+        <param name="audioSocket"></param>
+        <param name="videoSockets"></param>
+        <param name="vbssSocket"></param>
         <summary />
         <returns />
         <remarks>To be added.</remarks>
@@ -217,6 +211,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.Dispose" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -234,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.Dispose(System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -243,8 +239,7 @@
         <Parameter Name="userDisposeCalled" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="userDisposeCalled">
-        </param>
+        <param name="userDisposeCalled"></param>
         <summary />
         <remarks>To be added.</remarks>
       </Docs>
@@ -255,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.Initialize(Microsoft.Skype.Bots.Media.MediaPlatformSettings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -264,8 +260,7 @@
         <Parameter Name="settings" Type="Microsoft.Skype.Bots.Media.MediaPlatformSettings" />
       </Parameters>
       <Docs>
-        <param name="settings">
-        </param>
+        <param name="settings"></param>
         <summary />
         <remarks>To be added.</remarks>
       </Docs>
@@ -276,6 +271,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.Initialize(Microsoft.Skype.Bots.Media.MediaPlatformSettings,Microsoft.Skype.Internal.Bots.Media.IConfigurationManager,Microsoft.Skype.Internal.Bots.Media.ILogger)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -287,12 +283,9 @@
         <Parameter Name="logger" Type="Microsoft.Skype.Internal.Bots.Media.ILogger" />
       </Parameters>
       <Docs>
-        <param name="settings">
-        </param>
-        <param name="configurationManager">
-        </param>
-        <param name="logger">
-        </param>
+        <param name="settings"></param>
+        <param name="configurationManager"></param>
+        <param name="logger"></param>
         <summary />
         <remarks>To be added.</remarks>
       </Docs>
@@ -303,6 +296,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.Initialize(Microsoft.Skype.Bots.Media.MediaPlatformSettings,Microsoft.Skype.Internal.Bots.Media.IConfigurationManager,Microsoft.Skype.Internal.Bots.Media.ILogger,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -315,14 +309,10 @@
         <Parameter Name="isTest" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="settings">
-        </param>
-        <param name="configurationManager">
-        </param>
-        <param name="logger">
-        </param>
-        <param name="isTest">
-        </param>
+        <param name="settings"></param>
+        <param name="configurationManager"></param>
+        <param name="logger"></param>
+        <param name="isTest"></param>
         <summary />
         <remarks>To be added.</remarks>
       </Docs>

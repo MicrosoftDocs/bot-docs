@@ -1,10 +1,10 @@
-<Type Name="IFormDialog&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.IFormDialog&lt;T&gt;">
+﻿<Type Name="IFormDialog&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.IFormDialog&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IFormDialog&lt;T&gt; : Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; where T : class" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFormDialog`1&lt;class T&gt; implements class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.IFormDialog`1" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
@@ -35,7 +35,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.IFormDialog`1.Form" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.IForm&lt;T&gt;</ReturnType>

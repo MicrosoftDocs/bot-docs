@@ -1,10 +1,10 @@
-<Type Name="IPromptRecognizeChoicesOptions" FullName="Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions">
+﻿<Type Name="IPromptRecognizeChoicesOptions" FullName="Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions">
   <TypeSignature Language="C#" Value="public interface IPromptRecognizeChoicesOptions : Microsoft.Bot.Builder.Dialogs.IPromptRecognizeValuesOptions" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPromptRecognizeChoicesOptions implements class Microsoft.Bot.Builder.Dialogs.IPromptRecognizeValuesOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -22,7 +22,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions.ExcludeAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -39,7 +40,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions.ExcludeValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>

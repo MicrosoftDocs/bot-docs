@@ -1,10 +1,10 @@
-<Type Name="IEntityToType" FullName="Microsoft.Bot.Builder.Luis.IEntityToType">
+﻿<Type Name="IEntityToType" FullName="Microsoft.Bot.Builder.Luis.IEntityToType">
   <TypeSignature Language="C#" Value="public interface IEntityToType" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEntityToType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.IEntityToType" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -16,11 +16,12 @@
   <Members>
     <Member MemberName="TryMapToDateRanges">
       <MemberSignature Language="C#" Value="public bool TryMapToDateRanges (DateTime now, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; entities, out System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Internals.Fibers.Range&lt;DateTime&gt;&gt; ranges);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryMapToDateRanges(valuetype System.DateTime now, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; entities, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Bot.Builder.Internals.Fibers.Range`1&lt;valuetype System.DateTime&gt;&gt; ranges) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryMapToDateRanges(valuetype System.DateTime now, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; entities, [out] class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Bot.Builder.Internals.Fibers.Range`1&lt;valuetype System.DateTime&gt;&gt;&amp; ranges) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.IEntityToType.TryMapToDateRanges(System.DateTime,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{System.DateTime}}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -43,11 +44,12 @@
     </Member>
     <Member MemberName="TryMapToTimeSpan">
       <MemberSignature Language="C#" Value="public bool TryMapToTimeSpan (DateTime now, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; entities, out TimeSpan span);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryMapToTimeSpan(valuetype System.DateTime now, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; entities, valuetype System.TimeSpan span) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryMapToTimeSpan(valuetype System.DateTime now, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; entities, [out] valuetype System.TimeSpan&amp; span) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.IEntityToType.TryMapToTimeSpan(System.DateTime,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},System.TimeSpan@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

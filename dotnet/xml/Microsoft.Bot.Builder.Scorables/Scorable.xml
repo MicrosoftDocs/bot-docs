@@ -1,10 +1,10 @@
-<Type Name="Scorable" FullName="Microsoft.Bot.Builder.Scorables.Scorable">
+﻿<Type Name="Scorable" FullName="Microsoft.Bot.Builder.Scorables.Scorable">
   <TypeSignature Language="C#" Value="public static class Scorable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Scorable extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Scorable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,7 +21,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Scorable.First``2(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{``0,``1}})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;</ReturnType>
@@ -50,7 +51,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Scorable.Fold``2(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{``0,``1}},System.Collections.Generic.IComparer{``1},Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.OnStageDelegate{``0,``1})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;</ReturnType>
@@ -83,7 +85,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Scorable.Keep``2(Microsoft.Bot.Builder.Scorables.IScorable{``0,``1})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -112,7 +115,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Scorable.SelectItem``3(Microsoft.Bot.Builder.Scorables.IScorable{``1,``2},System.Func{``0,``1})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Scorables.IScorable&lt;SourceItem,Score&gt;</ReturnType>
@@ -145,7 +149,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Scorable.SelectScore``3(Microsoft.Bot.Builder.Scorables.IScorable{``0,``1},System.Func{``0,``1,``2})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,TargetScore&gt;</ReturnType>
@@ -178,7 +183,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Scorable.TryPostAsync``2(Microsoft.Bot.Builder.Scorables.IScorable{``0,``1},``0,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -212,11 +218,12 @@
     </Member>
     <Member MemberName="TryReduce&lt;Item,Score&gt;">
       <MemberSignature Language="C#" Value="public static bool TryReduce&lt;Item,Score&gt; (ref System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;&gt; scorables, out Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt; scorable);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReduce&lt;Item, Score&gt;(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!Score&gt;&gt; scorables, class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!Score&gt; scorable) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReduce&lt;Item, Score&gt;(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!Score&gt;&gt;&amp; scorables, [out] class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!Score&gt;&amp; scorable) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Scorable.TryReduce``2(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{``0,``1}}@,Microsoft.Bot.Builder.Scorables.IScorable{``0,``1}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -247,7 +254,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Scorable.WhereScore``2(Microsoft.Bot.Builder.Scorables.IScorable{``0,``1},System.Func{``0,``1,System.Boolean})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;</ReturnType>

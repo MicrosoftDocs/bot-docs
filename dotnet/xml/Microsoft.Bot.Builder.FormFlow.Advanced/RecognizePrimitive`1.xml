@@ -1,10 +1,10 @@
-<Type Name="RecognizePrimitive&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive&lt;T&gt;">
+﻿<Type Name="RecognizePrimitive&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive&lt;T&gt;">
   <TypeSignature Language="C#" Value="public abstract class RecognizePrimitive&lt;T&gt; : Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize&lt;T&gt; where T : class" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit RecognizePrimitive`1&lt;class T&gt; extends System.Object implements class Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
@@ -35,7 +35,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.#ctor(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="field" Type="Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;T&gt;" />
@@ -54,7 +55,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1._field" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;T&gt;</ReturnType>
@@ -72,7 +74,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Help(`0,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -95,7 +98,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.HelpArgs(`0,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;System.Object&gt;</ReturnType>
@@ -115,12 +119,13 @@
       </Docs>
     </Member>
     <Member MemberName="Matches">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch&gt; Matches (string input, object defaultValue = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch&gt; Matches(string input, object defaultValue) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Matches(System.String,System.Object)" />
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch&gt; Matches (Microsoft.Bot.Connector.IMessageActivity input, object defaultValue = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch&gt; Matches(class Microsoft.Bot.Connector.IMessageActivity input, object defaultValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Matches(Microsoft.Bot.Connector.IMessageActivity,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -131,7 +136,7 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="input" Type="System.String" />
+        <Parameter Name="input" Type="Microsoft.Bot.Connector.IMessageActivity" />
         <Parameter Name="defaultValue" Type="System.Object" />
       </Parameters>
       <Docs>
@@ -148,7 +153,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Parse(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch</ReturnType>
@@ -171,7 +177,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.PromptArgs" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object[]</ReturnType>
@@ -189,7 +196,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.ValidInputs(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -210,7 +218,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.ValueDescription(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.DescribeAttribute</ReturnType>
@@ -231,7 +240,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.ValueDescriptions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt;</ReturnType>
@@ -249,7 +259,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Object&gt;</ReturnType>

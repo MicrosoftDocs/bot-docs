@@ -1,4 +1,4 @@
-<Type Name="MediaPlatform" FullName="Microsoft.Skype.Bots.Media.MediaPlatform">
+﻿<Type Name="MediaPlatform" FullName="Microsoft.Skype.Bots.Media.MediaPlatform">
   <TypeSignature Language="C#" Value="public static class MediaPlatform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MediaPlatform extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.MediaPlatform" />
@@ -23,6 +23,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.MediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.MediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IVideoSocket)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.MediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,Microsoft.Skype.Bots.Media.IVideoSocket)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.MediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.IVideoSocket})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.MediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.IVideoSocket},Microsoft.Skype.Bots.Media.IVideoSocket)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -133,8 +138,7 @@
         <Parameter Name="vbssSocket" Type="Microsoft.Skype.Bots.Media.IVideoSocket" />
       </Parameters>
       <Docs>
-        <param name="audioSocket">
-        </param>
+        <param name="audioSocket"></param>
         <param name="videoSockets">Ordered list of video sockets. The order in which the sockets are provided maps to the order of the streams exposed by MediaPaaS 
             (eg. the first video socket in the list will correspond to the first video stream exposed in the list of MediaStreams in MediaPaaS' MediaFlow resource). 
             If multiview sockets are provided, only the first one can have a send direction (ie. send only or send receive) and all the sockets should have
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.MediaPlatform.Initialize(Microsoft.Skype.Bots.Media.MediaPlatformSettings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -175,6 +180,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.MediaPlatform.MaxNumberOfVideoSocketsPerCall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.MediaPlatform.MaxNumberOfVideoVbssSocketsPerMediaPlatform" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -213,6 +220,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.MediaPlatform.MinNumberOfCoresRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -232,6 +240,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.MediaPlatform.Name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -250,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.MediaPlatform.Shutdown" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

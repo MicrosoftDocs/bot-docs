@@ -1,4 +1,4 @@
-<Type Name="AudioMediaBuffer" FullName="Microsoft.Skype.Bots.Media.AudioMediaBuffer">
+﻿<Type Name="AudioMediaBuffer" FullName="Microsoft.Skype.Bots.Media.AudioMediaBuffer">
   <TypeSignature Language="C#" Value="public abstract class AudioMediaBuffer : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AudioMediaBuffer extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.AudioMediaBuffer" />
@@ -27,6 +27,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.AudioMediaBuffer.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.AudioMediaBuffer.ActiveSpeakers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.AudioMediaBuffer.AudioFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.AudioMediaBuffer.Data" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.AudioMediaBuffer.Dispose" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -119,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.AudioMediaBuffer.Dispose(System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -145,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.AudioMediaBuffer.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -164,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.AudioMediaBuffer.Timestamp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

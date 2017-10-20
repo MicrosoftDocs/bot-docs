@@ -1,4 +1,4 @@
-<Type Name="ILogger" FullName="Microsoft.Skype.Internal.Bots.Media.ILogger">
+﻿<Type Name="ILogger" FullName="Microsoft.Skype.Internal.Bots.Media.ILogger">
   <TypeSignature Language="C#" Value="public interface ILogger" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ILogger" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.ILogger" />
@@ -18,6 +18,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ILogger.AddListener(System.Diagnostics.TraceListener)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ILogger.AddListeners(System.Collections.Generic.IList{System.Diagnostics.TraceListener})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ILogger.Flush" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ILogger.RemoveListener(System.Diagnostics.TraceListener)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ILogger.SetLoggingLevel(System.String,Microsoft.Skype.Internal.Bots.Media.LogLevel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -105,20 +110,19 @@
         <Parameter Name="level" Type="Microsoft.Skype.Internal.Bots.Media.LogLevel" />
       </Parameters>
       <Docs>
-        <param name="component">
-        </param>
-        <param name="level">
-        </param>
+        <param name="component"></param>
+        <param name="level"></param>
         <summary />
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public void Write (string component, Microsoft.Skype.Internal.Bots.Media.LogLevel level, string format, object[] args);" />
+      <MemberSignature Language="C#" Value="public void Write (string component, Microsoft.Skype.Internal.Bots.Media.LogLevel level, string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(string component, valuetype Microsoft.Skype.Internal.Bots.Media.LogLevel level, string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ILogger.Write(System.String,Microsoft.Skype.Internal.Bots.Media.LogLevel,System.String,System.Object[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -137,24 +141,21 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="component">
-        </param>
-        <param name="level">
-        </param>
-        <param name="format">
-        </param>
-        <param name="args">
-        </param>
+        <param name="component"></param>
+        <param name="level"></param>
+        <param name="format"></param>
+        <param name="args"></param>
         <summary />
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public void Write (string component, string correlationId, Microsoft.Skype.Internal.Bots.Media.LogLevel level, string format, object[] args);" />
+      <MemberSignature Language="C#" Value="public void Write (string component, string correlationId, Microsoft.Skype.Internal.Bots.Media.LogLevel level, string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(string component, string correlationId, valuetype Microsoft.Skype.Internal.Bots.Media.LogLevel level, string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ILogger.Write(System.String,System.String,Microsoft.Skype.Internal.Bots.Media.LogLevel,System.String,System.Object[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -174,16 +175,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="component">
-        </param>
-        <param name="correlationId">
-        </param>
-        <param name="level">
-        </param>
-        <param name="format">
-        </param>
-        <param name="args">
-        </param>
+        <param name="component"></param>
+        <param name="correlationId"></param>
+        <param name="level"></param>
+        <param name="format"></param>
+        <param name="args"></param>
         <summary />
         <remarks>To be added.</remarks>
       </Docs>

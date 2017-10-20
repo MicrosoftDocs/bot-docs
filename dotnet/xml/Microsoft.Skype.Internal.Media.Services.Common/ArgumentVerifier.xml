@@ -1,4 +1,4 @@
-<Type Name="ArgumentVerifier" FullName="Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier">
+﻿<Type Name="ArgumentVerifier" FullName="Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier">
   <TypeSignature Language="C#" Value="public static class ArgumentVerifier" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ArgumentVerifier extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier.ThrowIfIntOutOfRange(System.Int64,System.Int64,System.Int64,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier.ThrowOnNullArgument(System.Object,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier.ThrowOnNullMemberInCollection(System.Collections.Generic.IEnumerable{System.Object},System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier.ThrowOnNullMemberInCollection``1(System.Collections.Generic.IEnumerable{``0},System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier.ThrowOnNullOrEmptyCollection(System.Collections.Generic.IEnumerable{System.Object},System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier.ThrowOnNullOrEmptyString(System.String,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

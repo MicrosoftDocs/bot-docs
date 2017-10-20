@@ -1,10 +1,10 @@
-<Type Name="IPrompt&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt&lt;T&gt;">
+﻿<Type Name="IPrompt&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IPrompt&lt;T&gt; where T : class" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPrompt`1&lt;class T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
@@ -30,7 +30,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1.Annotation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute</ReturnType>
@@ -44,12 +45,13 @@
       </Docs>
     </Member>
     <Member MemberName="Prompt">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt Prompt (T state, Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;T&gt; field, object[] args);" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt Prompt (T state, Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;T&gt; field, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt Prompt(!T state, class Microsoft.Bot.Builder.FormFlow.Advanced.IField`1&lt;!T&gt; field, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1.Prompt(`0,Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0},System.Object[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt</ReturnType>
@@ -82,7 +84,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1.Recognizer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize&lt;T&gt;</ReturnType>

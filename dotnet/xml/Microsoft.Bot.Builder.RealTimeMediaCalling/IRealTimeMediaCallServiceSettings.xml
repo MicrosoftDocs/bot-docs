@@ -1,4 +1,4 @@
-<Type Name="IRealTimeMediaCallServiceSettings" FullName="Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallServiceSettings">
+﻿<Type Name="IRealTimeMediaCallServiceSettings" FullName="Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallServiceSettings">
   <TypeSignature Language="C#" Value="public interface IRealTimeMediaCallServiceSettings" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRealTimeMediaCallServiceSettings" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallServiceSettings" />
@@ -20,6 +20,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallServiceSettings.CallbackUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallServiceSettings.NotificationUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -1,10 +1,10 @@
-<Type Name="StartAsync" FullName="Microsoft.Bot.Builder.Dialogs.StartAsync">
+﻿<Type Name="StartAsync" FullName="Microsoft.Bot.Builder.Dialogs.StartAsync">
   <TypeSignature Language="C#" Value="public delegate System.Threading.Tasks.Task StartAsync(IDialogContext context);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StartAsync extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.StartAsync" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>

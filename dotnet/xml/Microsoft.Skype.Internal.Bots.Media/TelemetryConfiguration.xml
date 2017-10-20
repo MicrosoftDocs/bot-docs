@@ -1,4 +1,4 @@
-<Type Name="TelemetryConfiguration" FullName="Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration">
+﻿<Type Name="TelemetryConfiguration" FullName="Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration">
   <TypeSignature Language="C#" Value="public class TelemetryConfiguration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TelemetryConfiguration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration" />
@@ -26,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration.AriaTenantToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration.MonitorSocketMetrics" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration.MonitorUnhandledExceptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>

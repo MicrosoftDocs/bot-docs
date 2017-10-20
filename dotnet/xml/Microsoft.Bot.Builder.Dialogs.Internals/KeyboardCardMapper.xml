@@ -1,10 +1,10 @@
-<Type Name="KeyboardCardMapper" FullName="Microsoft.Bot.Builder.Dialogs.Internals.KeyboardCardMapper">
+﻿<Type Name="KeyboardCardMapper" FullName="Microsoft.Bot.Builder.Dialogs.Internals.KeyboardCardMapper">
   <TypeSignature Language="C#" Value="public sealed class KeyboardCardMapper : Microsoft.Bot.Builder.Dialogs.Internals.IMessageActivityMapper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit KeyboardCardMapper extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IMessageActivityMapper" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.KeyboardCardMapper" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,7 +25,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.KeyboardCardMapper.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -39,7 +40,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.KeyboardCardMapper.Map(Microsoft.Bot.Connector.IMessageActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IMessageActivity</ReturnType>

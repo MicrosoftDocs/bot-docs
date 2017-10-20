@@ -1,10 +1,10 @@
-<Type Name="EntityRecommendation" FullName="Microsoft.Bot.Builder.Luis.Models.EntityRecommendation">
+﻿<Type Name="EntityRecommendation" FullName="Microsoft.Bot.Builder.Luis.Models.EntityRecommendation">
   <TypeSignature Language="C#" Value="public class EntityRecommendation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit EntityRecommendation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -24,7 +24,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -40,7 +41,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.#ctor(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Double},System.Collections.Generic.IDictionary{System.String,System.Object})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.String" />
@@ -71,7 +73,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.EndIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -95,7 +98,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Entity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -119,11 +123,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Resolution" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="resolution")</AttributeName>
+          <AttributeName>Newtonsoft.Json.JsonProperty(ItemConverterType=typeof(Microsoft.Bot.Builder.Luis.Models.EntityRecommendation/ResolutionConverter), PropertyName="resolution")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -146,7 +151,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Role" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -170,7 +176,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Score" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -194,7 +201,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.StartIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -218,7 +226,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -242,7 +251,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Validate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

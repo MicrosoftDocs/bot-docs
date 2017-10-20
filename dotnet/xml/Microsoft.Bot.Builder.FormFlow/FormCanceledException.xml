@@ -1,10 +1,10 @@
-<Type Name="FormCanceledException" FullName="Microsoft.Bot.Builder.FormFlow.FormCanceledException">
+﻿<Type Name="FormCanceledException" FullName="Microsoft.Bot.Builder.FormFlow.FormCanceledException">
   <TypeSignature Language="C#" Value="public class FormCanceledException : OperationCanceledException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit FormCanceledException extends System.OperationCanceledException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.FormCanceledException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.OperationCanceledException</BaseTypeName>
@@ -22,7 +22,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormCanceledException.#ctor(System.String,System.Exception)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
@@ -41,7 +42,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.FormCanceledException.Completed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -58,7 +60,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.FormCanceledException.Last" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

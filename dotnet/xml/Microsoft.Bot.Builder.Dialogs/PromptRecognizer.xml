@@ -1,10 +1,10 @@
-<Type Name="PromptRecognizer" FullName="Microsoft.Bot.Builder.Dialogs.PromptRecognizer">
+﻿<Type Name="PromptRecognizer" FullName="Microsoft.Bot.Builder.Dialogs.PromptRecognizer">
   <TypeSignature Language="C#" Value="public class PromptRecognizer : Microsoft.Bot.Builder.Dialogs.IPromptRecognizer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PromptRecognizer extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IPromptRecognizer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptRecognizer" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,7 +25,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -39,7 +40,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeBooleans(Microsoft.Bot.Connector.IMessageActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;System.Boolean&gt;&gt;</ReturnType>
@@ -60,7 +62,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeChoices``1(Microsoft.Bot.Connector.IMessageActivity,System.Collections.Generic.IReadOnlyDictionary{``0,System.Collections.Generic.IReadOnlyList{``0}},Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;T&gt;&gt;</ReturnType>
@@ -89,7 +92,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeLocalizedChoices(Microsoft.Bot.Connector.IMessageActivity,System.String,System.Resources.ResourceManager,Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;System.String&gt;&gt;</ReturnType>
@@ -116,7 +120,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeLocalizedRegExp(Microsoft.Bot.Connector.IMessageActivity,System.String,System.Resources.ResourceManager)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;System.String&gt;&gt;</ReturnType>
@@ -141,7 +146,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeNumbers(Microsoft.Bot.Connector.IMessageActivity,Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;System.Double&gt;&gt;</ReturnType>
@@ -164,7 +170,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeOrdinals(Microsoft.Bot.Connector.IMessageActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;System.Int64&gt;&gt;</ReturnType>
@@ -185,7 +192,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeTimes(Microsoft.Bot.Connector.IMessageActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;System.String&gt;&gt;</ReturnType>

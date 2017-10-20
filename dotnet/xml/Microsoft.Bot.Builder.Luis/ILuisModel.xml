@@ -1,10 +1,10 @@
-<Type Name="ILuisModel" FullName="Microsoft.Bot.Builder.Luis.ILuisModel">
+﻿<Type Name="ILuisModel" FullName="Microsoft.Bot.Builder.Luis.ILuisModel">
   <TypeSignature Language="C#" Value="public interface ILuisModel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ILuisModel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.ILuisModel" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -20,7 +20,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisModel.ApiVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.LuisApiVersion</ReturnType>
@@ -39,7 +40,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisModel.ModelID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -58,7 +60,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.ILuisModel.ModifyRequest(Microsoft.Bot.Builder.Luis.LuisRequest)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.LuisRequest</ReturnType>
@@ -81,7 +84,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisModel.SubscriptionKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -100,7 +104,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisModel.UriBase" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>

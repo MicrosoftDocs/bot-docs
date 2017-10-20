@@ -1,10 +1,10 @@
-<Type Name="BuildFormDelegate&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.BuildFormDelegate&lt;T&gt;">
+﻿<Type Name="BuildFormDelegate&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.BuildFormDelegate&lt;T&gt;">
   <TypeSignature Language="C#" Value="public delegate Microsoft.Bot.Builder.FormFlow.IForm&lt;T&gt; BuildFormDelegate&lt;T&gt;() where T : class;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuildFormDelegate`1&lt;class T&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.BuildFormDelegate`1" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">

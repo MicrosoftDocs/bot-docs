@@ -1,10 +1,10 @@
-<Type Name="FormBuilderBase&lt;T&gt;+Form" FullName="Microsoft.Bot.Builder.FormFlow.FormBuilderBase&lt;T&gt;+Form">
+﻿<Type Name="FormBuilderBase&lt;T&gt;+Form" FullName="Microsoft.Bot.Builder.FormFlow.FormBuilderBase&lt;T&gt;+Form">
   <TypeSignature Language="C#" Value="protected sealed class FormBuilderBase&lt;T&gt;.Form : Microsoft.Bot.Builder.FormFlow.IForm&lt;T&gt; where T : class" />
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi sealed beforefieldinit FormBuilderBase`1/Form&lt;class T&gt; extends Microsoft.Bot.Builder.FormFlow.IForm`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1.Form" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
@@ -31,7 +31,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1.Form.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,7 +46,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1.Form.Fields" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.IFields&lt;T&gt;</ReturnType>
@@ -58,11 +60,12 @@
     </Member>
     <Member MemberName="Localize">
       <MemberSignature Language="C#" Value="public override void Localize (System.Collections.IDictionaryEnumerator reader, out System.Collections.Generic.IEnumerable&lt;string&gt; missing, out System.Collections.Generic.IEnumerable&lt;string&gt; extra);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Localize(class System.Collections.IDictionaryEnumerator reader, class System.Collections.Generic.IEnumerable`1&lt;string&gt; missing, class System.Collections.Generic.IEnumerable`1&lt;string&gt; extra) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Localize(class System.Collections.IDictionaryEnumerator reader, [out] class System.Collections.Generic.IEnumerable`1&lt;string&gt;&amp; missing, [out] class System.Collections.Generic.IEnumerable`1&lt;string&gt;&amp; extra) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1.Form.Localize(System.Collections.IDictionaryEnumerator,System.Collections.Generic.IEnumerable{System.String}@,System.Collections.Generic.IEnumerable{System.String}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -86,7 +89,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1.Form.SaveResources(System.Resources.IResourceWriter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

@@ -1,10 +1,10 @@
-<Type Name="ClosureCaptureException" FullName="Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException">
+﻿<Type Name="ClosureCaptureException" FullName="Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException">
   <TypeSignature Language="C#" Value="public sealed class ClosureCaptureException : System.Runtime.Serialization.SerializationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ClosureCaptureException extends System.Runtime.Serialization.SerializationException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Runtime.Serialization.SerializationException</BaseTypeName>
@@ -21,7 +21,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException.#ctor(System.Object)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="instance" Type="System.Object" />
@@ -38,7 +39,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException.Instance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>

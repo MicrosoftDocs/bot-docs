@@ -1,4 +1,4 @@
-<Type Name="FileSourceFormat" FullName="Microsoft.Skype.Internal.Bots.Media.FileSourceFormat">
+﻿<Type Name="FileSourceFormat" FullName="Microsoft.Skype.Internal.Bots.Media.FileSourceFormat">
   <TypeSignature Language="C#" Value="public class FileSourceFormat" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileSourceFormat extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.FileSourceFormat" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.FileSourceFormat.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.FileSourceFormat.AudioFormatSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.FileSourceFormat.VideoFormatSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

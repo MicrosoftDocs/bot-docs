@@ -47,7 +47,7 @@
       "build_output_subfolder": "bot-framework-dotnet-api",
       "locale": "en-us",
       "monikers": [
-        "botbuilder-3.8",
+        "botbuilder-3.11.0",
         "skypebotsmedia-1.5.0.1177-alpha"
       ],
       "open_to_public_contributors": true,

@@ -1,10 +1,10 @@
-<Type Name="ResolutionParser" FullName="Microsoft.Bot.Builder.Luis.ResolutionParser">
+﻿<Type Name="ResolutionParser" FullName="Microsoft.Bot.Builder.Luis.ResolutionParser">
   <TypeSignature Language="C#" Value="public sealed class ResolutionParser : Microsoft.Bot.Builder.Luis.IResolutionParser" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ResolutionParser extends System.Object implements class Microsoft.Bot.Builder.Luis.IResolutionParser" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.ResolutionParser" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,7 +25,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.ResolutionParser.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -35,11 +36,12 @@
     </Member>
     <Member MemberName="Microsoft.Bot.Builder.Luis.IResolutionParser.TryParse">
       <MemberSignature Language="C#" Value="bool IResolutionParser.TryParse (System.Collections.Generic.IDictionary&lt;string,object&gt; properties, out Microsoft.Bot.Builder.Luis.Resolution resolution);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Luis.IResolutionParser.TryParse(class System.Collections.Generic.IDictionary`2&lt;string, object&gt; properties, class Microsoft.Bot.Builder.Luis.Resolution resolution) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Luis.IResolutionParser.TryParse(class System.Collections.Generic.IDictionary`2&lt;string, object&gt; properties, [out] class Microsoft.Bot.Builder.Luis.Resolution&amp; resolution) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.ResolutionParser.Microsoft#Bot#Builder#Luis#IResolutionParser#TryParse(System.Collections.Generic.IDictionary{System.String,System.Object},Microsoft.Bot.Builder.Luis.Resolution@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

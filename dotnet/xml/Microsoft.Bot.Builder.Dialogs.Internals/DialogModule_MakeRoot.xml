@@ -1,10 +1,10 @@
-<Type Name="DialogModule_MakeRoot" FullName="Microsoft.Bot.Builder.Dialogs.Internals.DialogModule_MakeRoot">
+﻿<Type Name="DialogModule_MakeRoot" FullName="Microsoft.Bot.Builder.Dialogs.Internals.DialogModule_MakeRoot">
   <TypeSignature Language="C#" Value="public sealed class DialogModule_MakeRoot : Autofac.Module" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DialogModule_MakeRoot extends Autofac.Module" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.DialogModule_MakeRoot" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.10.5.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Autofac.Module</BaseTypeName>
@@ -21,7 +21,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogModule_MakeRoot.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
+        <AssemblyVersion>3.10.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -35,7 +36,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogModule_MakeRoot.Load(Autofac.ContainerBuilder)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
+        <AssemblyVersion>3.10.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -55,7 +57,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogModule_MakeRoot.Register(Autofac.ILifetimeScope,System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{System.Object}})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
+        <AssemblyVersion>3.10.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

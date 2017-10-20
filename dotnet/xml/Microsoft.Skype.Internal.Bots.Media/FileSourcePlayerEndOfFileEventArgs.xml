@@ -1,4 +1,4 @@
-<Type Name="FileSourcePlayerEndOfFileEventArgs" FullName="Microsoft.Skype.Internal.Bots.Media.FileSourcePlayerEndOfFileEventArgs">
+﻿<Type Name="FileSourcePlayerEndOfFileEventArgs" FullName="Microsoft.Skype.Internal.Bots.Media.FileSourcePlayerEndOfFileEventArgs">
   <TypeSignature Language="C#" Value="public class FileSourcePlayerEndOfFileEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileSourcePlayerEndOfFileEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.FileSourcePlayerEndOfFileEventArgs" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.FileSourcePlayerEndOfFileEventArgs.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />

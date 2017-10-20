@@ -1,10 +1,10 @@
-<Type Name="IAwaiter&lt;T&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.IAwaiter&lt;T&gt;">
+﻿<Type Name="IAwaiter&lt;T&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.IAwaiter&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IAwaiter&lt;out T&gt; : System.Runtime.CompilerServices.INotifyCompletion" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAwaiter`1&lt;+ T&gt; implements class System.Runtime.CompilerServices.INotifyCompletion" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.IAwaiter`1" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
@@ -30,7 +30,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.IAwaiter`1.GetResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -48,7 +49,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.IAwaiter`1.IsCompleted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

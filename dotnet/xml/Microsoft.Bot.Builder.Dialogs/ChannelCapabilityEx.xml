@@ -1,10 +1,10 @@
-<Type Name="ChannelCapabilityEx" FullName="Microsoft.Bot.Builder.Dialogs.ChannelCapabilityEx">
+﻿<Type Name="ChannelCapabilityEx" FullName="Microsoft.Bot.Builder.Dialogs.ChannelCapabilityEx">
   <TypeSignature Language="C#" Value="public static class ChannelCapabilityEx" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ChannelCapabilityEx extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.ChannelCapabilityEx" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,7 +21,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ChannelCapabilityEx.ShouldSetInputHint(Microsoft.Bot.Builder.Dialogs.IChannelCapability,Microsoft.Bot.Connector.IMessageActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

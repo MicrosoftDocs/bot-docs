@@ -1,4 +1,4 @@
-<Type Name="SkypeMediaException" FullName="Microsoft.Skype.Bots.Media.SkypeMediaException">
+﻿<Type Name="SkypeMediaException" FullName="Microsoft.Skype.Bots.Media.SkypeMediaException">
   <TypeSignature Language="C#" Value="public class SkypeMediaException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SkypeMediaException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.SkypeMediaException" />

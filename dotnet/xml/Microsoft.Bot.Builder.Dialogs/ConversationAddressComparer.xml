@@ -1,10 +1,10 @@
-<Type Name="ConversationAddressComparer" FullName="Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer">
+﻿<Type Name="ConversationAddressComparer" FullName="Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer">
   <TypeSignature Language="C#" Value="public sealed class ConversationAddressComparer : System.Collections.Generic.IEqualityComparer&lt;Microsoft.Bot.Builder.Dialogs.IAddress&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConversationAddressComparer extends System.Object implements class System.Collections.Generic.IEqualityComparer`1&lt;class Microsoft.Bot.Builder.Dialogs.IAddress&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -33,7 +33,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -47,7 +48,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer.System#Collections#Generic#IEqualityComparer&lt;Microsoft#Bot#Builder#Dialogs#IAddress&gt;#Equals(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.IAddress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -70,7 +72,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer.System#Collections#Generic#IEqualityComparer&lt;Microsoft#Bot#Builder#Dialogs#IAddress&gt;#GetHashCode(Microsoft.Bot.Builder.Dialogs.IAddress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

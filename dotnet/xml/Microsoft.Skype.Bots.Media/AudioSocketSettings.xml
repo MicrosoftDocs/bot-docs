@@ -1,4 +1,4 @@
-<Type Name="AudioSocketSettings" FullName="Microsoft.Skype.Bots.Media.AudioSocketSettings">
+﻿<Type Name="AudioSocketSettings" FullName="Microsoft.Skype.Bots.Media.AudioSocketSettings">
   <TypeSignature Language="C#" Value="public class AudioSocketSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AudioSocketSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.AudioSocketSettings" />
@@ -23,6 +23,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.AudioSocketSettings.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.AudioSocketSettings.CallId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.AudioSocketSettings.StreamDirections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.AudioSocketSettings.SupportedAudioFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -1,4 +1,4 @@
-<Type Name="ITelemetryWriter" FullName="Microsoft.Skype.Internal.Bots.Media.ITelemetryWriter">
+﻿<Type Name="ITelemetryWriter" FullName="Microsoft.Skype.Internal.Bots.Media.ITelemetryWriter">
   <TypeSignature Language="C#" Value="public interface ITelemetryWriter : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITelemetryWriter implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.ITelemetryWriter" />
@@ -22,6 +22,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ITelemetryWriter.Initialize(System.String,Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration,System.Boolean,System.String,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -35,16 +36,11 @@
         <Parameter Name="mediaBotsVersion" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="applicationId">
-        </param>
-        <param name="configuration">
-        </param>
-        <param name="isTest">
-        </param>
-        <param name="mediaStackVersion">
-        </param>
-        <param name="mediaBotsVersion">
-        </param>
+        <param name="applicationId"></param>
+        <param name="configuration"></param>
+        <param name="isTest"></param>
+        <param name="mediaStackVersion"></param>
+        <param name="mediaBotsVersion"></param>
         <summary />
         <remarks>To be added.</remarks>
       </Docs>
@@ -55,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ITelemetryWriter.SetTelemetryConfiguration(Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -64,8 +61,7 @@
         <Parameter Name="configuration" Type="Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration" />
       </Parameters>
       <Docs>
-        <param name="configuration">
-        </param>
+        <param name="configuration"></param>
         <summary />
         <remarks>To be added.</remarks>
       </Docs>
@@ -76,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ITelemetryWriter.TryLogFilePlayerMetrics(System.Collections.Generic.IList{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -86,10 +83,8 @@
         <Parameter Name="isTest" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="metricsData">
-        </param>
-        <param name="isTest">
-        </param>
+        <param name="metricsData"></param>
+        <param name="isTest"></param>
         <summary />
         <returns />
         <remarks>To be added.</remarks>
@@ -101,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ITelemetryWriter.TryLogSocketMetrics(System.Collections.Generic.IList{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -111,10 +107,8 @@
         <Parameter Name="isTest" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="metricsData">
-        </param>
-        <param name="isTest">
-        </param>
+        <param name="metricsData"></param>
+        <param name="isTest"></param>
         <summary />
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -126,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ITelemetryWriter.TryLogWavValidationFailure(System.Collections.Generic.IList{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -136,10 +131,8 @@
         <Parameter Name="isTest" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="metricsData">
-        </param>
-        <param name="isTest">
-        </param>
+        <param name="metricsData"></param>
+        <param name="isTest"></param>
         <summary />
         <returns />
         <remarks>To be added.</remarks>

@@ -1,10 +1,10 @@
-<Type Name="IScorableFactory&lt;Item,Score&gt;" FullName="Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory&lt;Item,Score&gt;">
+﻿<Type Name="IScorableFactory&lt;Item,Score&gt;" FullName="Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory&lt;Item,Score&gt;">
   <TypeSignature Language="C#" Value="public interface IScorableFactory&lt;in Item,out Score&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IScorableFactory`2&lt;- Item, + Score&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="Item">
@@ -32,7 +32,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2.ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;</ReturnType>

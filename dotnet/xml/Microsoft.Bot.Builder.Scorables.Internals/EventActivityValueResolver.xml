@@ -1,10 +1,10 @@
-<Type Name="EventActivityValueResolver" FullName="Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver">
+﻿<Type Name="EventActivityValueResolver" FullName="Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver">
   <TypeSignature Language="C#" Value="public sealed class EventActivityValueResolver : Microsoft.Bot.Builder.Scorables.Internals.PropertyResolver&lt;Microsoft.Bot.Connector.IEventActivity&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EventActivityValueResolver extends Microsoft.Bot.Builder.Scorables.Internals.PropertyResolver`1&lt;class Microsoft.Bot.Connector.IEventActivity&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Scorables.Internals.PropertyResolver&lt;Microsoft.Bot.Connector.IEventActivity&gt;</BaseTypeName>
@@ -24,7 +24,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver.#ctor(Microsoft.Bot.Builder.Scorables.Internals.IResolver)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="inner" Type="Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
@@ -41,7 +42,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.EventActivityValueResolver.PropertyFrom(Microsoft.Bot.Connector.IEventActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>

@@ -1,10 +1,10 @@
-<Type Name="AutoInputHint_BotToUser" FullName="Microsoft.Bot.Builder.Dialogs.Internals.AutoInputHint_BotToUser">
+﻿<Type Name="AutoInputHint_BotToUser" FullName="Microsoft.Bot.Builder.Dialogs.Internals.AutoInputHint_BotToUser">
   <TypeSignature Language="C#" Value="public sealed class AutoInputHint_BotToUser : Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AutoInputHint_BotToUser extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.AutoInputHint_BotToUser" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,7 +25,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.AutoInputHint_BotToUser.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="inner" Type="Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
@@ -44,7 +45,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.AutoInputHint_BotToUser.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#MakeMessage" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IMessageActivity</ReturnType>
@@ -62,7 +64,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.AutoInputHint_BotToUser.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#PostAsync(Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

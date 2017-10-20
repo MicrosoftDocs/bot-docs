@@ -1,10 +1,10 @@
-<Type Name="IBinding&lt;R&gt;" FullName="Microsoft.Bot.Builder.Scorables.Internals.IBinding&lt;R&gt;">
+﻿<Type Name="IBinding&lt;R&gt;" FullName="Microsoft.Bot.Builder.Scorables.Internals.IBinding&lt;R&gt;">
   <TypeSignature Language="C#" Value="public interface IBinding&lt;R&gt; : Microsoft.Bot.Builder.Scorables.Internals.IBinding" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBinding`1&lt;R&gt; implements class Microsoft.Bot.Builder.Scorables.Internals.IBinding" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.IBinding`1" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="R" />
@@ -29,7 +29,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.IBinding`1.InvokeAsync(System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;R&gt;</ReturnType>

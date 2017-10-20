@@ -1,10 +1,10 @@
-<Type Name="RegexPatternAttribute" FullName="Microsoft.Bot.Builder.Scorables.RegexPatternAttribute">
+﻿<Type Name="RegexPatternAttribute" FullName="Microsoft.Bot.Builder.Scorables.RegexPatternAttribute">
   <TypeSignature Language="C#" Value="public sealed class RegexPatternAttribute : Microsoft.Bot.Builder.Scorables.Internals.AttributeString" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit RegexPatternAttribute extends Microsoft.Bot.Builder.Scorables.Internals.AttributeString" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.RegexPatternAttribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Scorables.Internals.AttributeString</BaseTypeName>
@@ -29,7 +29,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.RegexPatternAttribute.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="pattern" Type="System.String" />
@@ -48,7 +49,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.RegexPatternAttribute.Pattern" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -66,7 +68,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Scorables.RegexPatternAttribute.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

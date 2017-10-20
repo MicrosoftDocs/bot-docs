@@ -1,4 +1,4 @@
-<Type Name="VideoSocket" FullName="Microsoft.Skype.Bots.Media.VideoSocket">
+﻿<Type Name="VideoSocket" FullName="Microsoft.Skype.Bots.Media.VideoSocket">
   <TypeSignature Language="C#" Value="public sealed class VideoSocket : IDisposable, Microsoft.Skype.Bots.Media.IVideoSocket" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit VideoSocket extends System.Object implements class Microsoft.Skype.Bots.Media.IVideoSocket, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.VideoSocket" />
@@ -30,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.VideoSocket.#ctor(Microsoft.Skype.Bots.Media.VideoSocketSettings)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.VideoSocket.Dispose" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.VideoSocket.Send(Microsoft.Skype.Bots.Media.VideoMediaBuffer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoSocket.SocketId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Bots.Media.VideoSocket.VideoMediaReceived" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Bots.Media.VideoSocket.VideoSendStatusChanged" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

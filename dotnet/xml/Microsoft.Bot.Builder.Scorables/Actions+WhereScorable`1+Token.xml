@@ -1,10 +1,10 @@
-<Type Name="Actions+WhereScorable&lt;Score&gt;+Token" FullName="Microsoft.Bot.Builder.Scorables.Actions+WhereScorable&lt;Score&gt;+Token">
+﻿<Type Name="Actions+WhereScorable&lt;Score&gt;+Token" FullName="Microsoft.Bot.Builder.Scorables.Actions+WhereScorable&lt;Score&gt;+Token">
   <TypeSignature Language="C#" Value="public sealed class Actions.WhereScorable&lt;Score&gt;.Token : Microsoft.Bot.Builder.Scorables.Internals.Token&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score&gt;" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit Actions/WhereScorable`1/Token&lt;Score&gt; extends Microsoft.Bot.Builder.Scorables.Internals.Token`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !Score&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.Token" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="Score" />
@@ -28,7 +28,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.Token.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -42,7 +43,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.Token.HasScore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

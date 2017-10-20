@@ -1,10 +1,10 @@
-<Type Name="LuisModelAttribute" FullName="Microsoft.Bot.Builder.Luis.LuisModelAttribute">
-  <TypeSignature Language="C#" Value="public class LuisModelAttribute : Attribute, IEquatable&lt;Microsoft.Bot.Builder.Luis.ILuisModel&gt;, Microsoft.Bot.Builder.Luis.ILuisModel" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit LuisModelAttribute extends System.Attribute implements class Microsoft.Bot.Builder.Luis.ILuisModel, class System.IEquatable`1&lt;class Microsoft.Bot.Builder.Luis.ILuisModel&gt;" />
+﻿<Type Name="LuisModelAttribute" FullName="Microsoft.Bot.Builder.Luis.LuisModelAttribute">
+  <TypeSignature Language="C#" Value="public class LuisModelAttribute : Attribute, IEquatable&lt;Microsoft.Bot.Builder.Luis.ILuisModel&gt;, Microsoft.Bot.Builder.Luis.ILuisModel, Microsoft.Bot.Builder.Luis.ILuisOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit LuisModelAttribute extends System.Attribute implements class Microsoft.Bot.Builder.Luis.ILuisModel, class Microsoft.Bot.Builder.Luis.ILuisOptions, class System.IEquatable`1&lt;class Microsoft.Bot.Builder.Luis.ILuisModel&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.LuisModelAttribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -12,6 +12,9 @@
   <Interfaces>
     <Interface>
       <InterfaceName>Microsoft.Bot.Builder.Luis.ILuisModel</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Luis.ILuisOptions</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>System.IEquatable&lt;Microsoft.Bot.Builder.Luis.ILuisModel&gt;</InterfaceName>
@@ -30,32 +33,25 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public LuisModelAttribute (string modelID, string subscriptionKey, Microsoft.Bot.Builder.Luis.LuisApiVersion apiVersion = Microsoft.Bot.Builder.Luis.LuisApiVersion.V2, string domain = null, bool log = true, bool spellCheck = false, bool staging = false, bool verbose = false);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string modelID, string subscriptionKey, valuetype Microsoft.Bot.Builder.Luis.LuisApiVersion apiVersion, string domain, bool log, bool spellCheck, bool staging, bool verbose) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.#ctor(System.String,System.String,Microsoft.Bot.Builder.Luis.LuisApiVersion,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="C#" Value="public LuisModelAttribute (string modelID, string subscriptionKey, Microsoft.Bot.Builder.Luis.LuisApiVersion apiVersion = Microsoft.Bot.Builder.Luis.LuisApiVersion.V2, string domain = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string modelID, string subscriptionKey, valuetype Microsoft.Bot.Builder.Luis.LuisApiVersion apiVersion, string domain) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.#ctor(System.String,System.String,Microsoft.Bot.Builder.Luis.LuisApiVersion,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="modelID" Type="System.String" />
         <Parameter Name="subscriptionKey" Type="System.String" />
         <Parameter Name="apiVersion" Type="Microsoft.Bot.Builder.Luis.LuisApiVersion" />
         <Parameter Name="domain" Type="System.String" />
-        <Parameter Name="log" Type="System.Boolean" />
-        <Parameter Name="spellCheck" Type="System.Boolean" />
-        <Parameter Name="staging" Type="System.Boolean" />
-        <Parameter Name="verbose" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="modelID">The LUIS model ID.</param>
         <param name="subscriptionKey">The LUIS subscription key.</param>
         <param name="apiVersion">The LUIS API version.</param>
         <param name="domain">Domain where LUIS model is located.</param>
-        <param name="log">Allow LUIS to log query.</param>
-        <param name="spellCheck">Control spell checking.</param>
-        <param name="staging">Control whether or not to use staging endpoint.</param>
-        <param name="verbose">Control verbose results.</param>
         <summary>
             Construct the LUIS model information.
             </summary>
@@ -68,7 +64,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.ApiVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.LuisApiVersion</ReturnType>
@@ -87,7 +84,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Domain" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -106,7 +104,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Equals(Microsoft.Bot.Builder.Luis.ILuisModel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -127,7 +126,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Equals(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -148,7 +148,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.GetHashCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -161,20 +162,111 @@
       </Docs>
     </Member>
     <Member MemberName="Log">
-      <MemberSignature Language="C#" Value="public bool Log { get; }" />
+      <MemberSignature Language="C#" Value="public bool Log { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Log" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Log" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Indicates if this query can be logged by LUIS.
+            Indicates if logging of queries to LUIS is allowed.
             </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Luis.ILuisOptions.Log">
+      <MemberSignature Language="C#" Value="Nullable&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.Log { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.Log" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Luis#ILuisOptions#Log" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Luis.ILuisOptions.SpellCheck">
+      <MemberSignature Language="C#" Value="Nullable&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.SpellCheck { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.SpellCheck" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Luis#ILuisOptions#SpellCheck" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Luis.ILuisOptions.Staging">
+      <MemberSignature Language="C#" Value="Nullable&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.Staging { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.Staging" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Luis#ILuisOptions#Staging" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Luis.ILuisOptions.TimezoneOffset">
+      <MemberSignature Language="C#" Value="Nullable&lt;double&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.TimezoneOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.TimezoneOffset" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Luis#ILuisOptions#TimezoneOffset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Luis.ILuisOptions.Verbose">
+      <MemberSignature Language="C#" Value="Nullable&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.Verbose { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.Verbose" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Luis#ILuisOptions#Verbose" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -185,7 +277,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.ModelID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -204,7 +297,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.ModifyRequest(Microsoft.Bot.Builder.Luis.LuisRequest)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.LuisRequest</ReturnType>
@@ -220,38 +314,40 @@
       </Docs>
     </Member>
     <Member MemberName="SpellCheck">
-      <MemberSignature Language="C#" Value="public bool SpellCheck { get; }" />
+      <MemberSignature Language="C#" Value="public bool SpellCheck { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SpellCheck" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.SpellCheck" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Control spell checking.
+            Turn on spell checking.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Staging">
-      <MemberSignature Language="C#" Value="public bool Staging { get; }" />
+      <MemberSignature Language="C#" Value="public bool Staging { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Staging" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Staging" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Whether to use staging or production endpoint.
+            Use the staging endpoint.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -263,7 +359,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.SubscriptionKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -276,13 +373,34 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="TimezoneOffset">
+      <MemberSignature Language="C#" Value="public double TimezoneOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 TimezoneOffset" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.TimezoneOffset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The time zone offset.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="UriBase">
       <MemberSignature Language="C#" Value="public Uri UriBase { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri UriBase" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.UriBase" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -295,20 +413,45 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="UriFor">
+      <MemberSignature Language="C#" Value="public static Uri UriFor (Microsoft.Bot.Builder.Luis.LuisApiVersion apiVersion, string domain = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Uri UriFor(valuetype Microsoft.Bot.Builder.Luis.LuisApiVersion apiVersion, string domain) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.UriFor(Microsoft.Bot.Builder.Luis.LuisApiVersion,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="apiVersion" Type="Microsoft.Bot.Builder.Luis.LuisApiVersion" />
+        <Parameter Name="domain" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="apiVersion">To be added.</param>
+        <param name="domain">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Verbose">
-      <MemberSignature Language="C#" Value="public bool Verbose { get; }" />
+      <MemberSignature Language="C#" Value="public bool Verbose { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Verbose" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Verbose" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Return verbose results from a query.
+            The verbose flag.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
