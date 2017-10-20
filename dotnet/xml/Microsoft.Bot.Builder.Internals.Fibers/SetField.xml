@@ -1,10 +1,10 @@
-<Type Name="SetField" FullName="Microsoft.Bot.Builder.Internals.Fibers.SetField">
+﻿<Type Name="SetField" FullName="Microsoft.Bot.Builder.Internals.Fibers.SetField">
   <TypeSignature Language="C#" Value="public static class SetField" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SetField extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.SetField" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,7 +21,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.SetField.CheckNull``1(System.String,``0)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -47,11 +48,12 @@
     </Member>
     <Member MemberName="From&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static void From&lt;T&gt; (out T field, string name, System.Runtime.Serialization.SerializationInfo info);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void From&lt;T&gt;(!!T field, string name, class System.Runtime.Serialization.SerializationInfo info) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void From&lt;T&gt;([out] !!T&amp; field, string name, class System.Runtime.Serialization.SerializationInfo info) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.SetField.From``1(``0@,System.String,System.Runtime.Serialization.SerializationInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -75,11 +77,12 @@
     </Member>
     <Member MemberName="NotNull&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static void NotNull&lt;T&gt; (out T field, string name, T value) where T : class;" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void NotNull&lt;class T&gt;(!!T field, string name, !!T value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void NotNull&lt;class T&gt;([out] !!T&amp; field, string name, !!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.SetField.NotNull``1(``0@,System.String,``0)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -107,11 +110,12 @@
     </Member>
     <Member MemberName="NotNullFrom&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static void NotNullFrom&lt;T&gt; (out T field, string name, System.Runtime.Serialization.SerializationInfo info) where T : class;" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void NotNullFrom&lt;class T&gt;(!!T field, string name, class System.Runtime.Serialization.SerializationInfo info) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void NotNullFrom&lt;class T&gt;([out] !!T&amp; field, string name, class System.Runtime.Serialization.SerializationInfo info) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.SetField.NotNullFrom``1(``0@,System.String,System.Runtime.Serialization.SerializationInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

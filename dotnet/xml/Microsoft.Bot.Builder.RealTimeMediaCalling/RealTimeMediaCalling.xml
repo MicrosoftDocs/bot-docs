@@ -1,4 +1,4 @@
-<Type Name="RealTimeMediaCalling" FullName="Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeMediaCalling">
+﻿<Type Name="RealTimeMediaCalling" FullName="Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeMediaCalling">
   <TypeSignature Language="C#" Value="public static class RealTimeMediaCalling" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed RealTimeMediaCalling extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeMediaCalling" />
@@ -23,6 +23,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeMediaCalling.RegisterRealTimeMediaCallingBot(System.Func{Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService,Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCall},Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallServiceSettings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeMediaCalling.SendAsync(System.Net.Http.HttpRequestMessage,Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeMediaCallRequestType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>

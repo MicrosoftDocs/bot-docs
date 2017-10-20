@@ -1,10 +1,10 @@
-<Type Name="TemplateAttribute" FullName="Microsoft.Bot.Builder.FormFlow.TemplateAttribute">
+﻿<Type Name="TemplateAttribute" FullName="Microsoft.Bot.Builder.FormFlow.TemplateAttribute">
   <TypeSignature Language="C#" Value="public class TemplateAttribute : Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TemplateAttribute extends Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.TemplateAttribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute</BaseTypeName>
@@ -32,7 +32,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.TemplateAttribute.#ctor(Microsoft.Bot.Builder.FormFlow.TemplateAttribute)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="other" Type="Microsoft.Bot.Builder.FormFlow.TemplateAttribute" />
@@ -44,12 +45,13 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TemplateAttribute (Microsoft.Bot.Builder.FormFlow.TemplateUsage usage, string[] patterns);" />
+      <MemberSignature Language="C#" Value="public TemplateAttribute (Microsoft.Bot.Builder.FormFlow.TemplateUsage usage, params string[] patterns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage usage, string[] patterns) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.TemplateAttribute.#ctor(Microsoft.Bot.Builder.FormFlow.TemplateUsage,System.String[])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="usage" Type="Microsoft.Bot.Builder.FormFlow.TemplateUsage" />
@@ -76,7 +78,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateAttribute.Usage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>

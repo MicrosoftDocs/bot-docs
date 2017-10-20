@@ -1,4 +1,4 @@
-<Type Name="AudioFileSourcePlayerSettings" FullName="Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayerSettings">
+﻿<Type Name="AudioFileSourcePlayerSettings" FullName="Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayerSettings">
   <TypeSignature Language="C#" Value="public class AudioFileSourcePlayerSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AudioFileSourcePlayerSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayerSettings" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayerSettings.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayerSettings.AudioFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayerSettings.Loop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayerSettings.RepetitionNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -1,10 +1,10 @@
-<Type Name="Binder" FullName="Microsoft.Bot.Builder.Scorables.Internals.Binder">
+﻿<Type Name="Binder" FullName="Microsoft.Bot.Builder.Scorables.Internals.Binder">
   <TypeSignature Language="C#" Value="public sealed class Binder : Microsoft.Bot.Builder.Scorables.Internals.IBinder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Binder extends System.Object implements class Microsoft.Bot.Builder.Scorables.Internals.IBinder" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.Binder" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,7 +25,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.Binder.Instance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Scorables.Internals.IBinder</ReturnType>
@@ -37,11 +38,12 @@
     </Member>
     <Member MemberName="Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind">
       <MemberSignature Language="C#" Value="bool IBinder.TryBind (Delegate lambda, Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, out Microsoft.Bot.Builder.Scorables.Internals.IBinding binding);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind(class System.Delegate lambda, class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, class Microsoft.Bot.Builder.Scorables.Internals.IBinding binding) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind(class System.Delegate lambda, class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, [out] class Microsoft.Bot.Builder.Scorables.Internals.IBinding&amp; binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binder.Microsoft#Bot#Builder#Scorables#Internals#IBinder#TryBind(System.Delegate,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -62,11 +64,12 @@
     </Member>
     <Member MemberName="Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind">
       <MemberSignature Language="C#" Value="bool IBinder.TryBind (System.Reflection.MethodBase method, Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, out Microsoft.Bot.Builder.Scorables.Internals.IBinding binding);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind(class System.Reflection.MethodBase method, class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, class Microsoft.Bot.Builder.Scorables.Internals.IBinding binding) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind(class System.Reflection.MethodBase method, class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, [out] class Microsoft.Bot.Builder.Scorables.Internals.IBinding&amp; binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binder.Microsoft#Bot#Builder#Scorables#Internals#IBinder#TryBind(System.Reflection.MethodBase,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -87,11 +90,12 @@
     </Member>
     <Member MemberName="Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind&lt;R&gt;">
       <MemberSignature Language="C#" Value="bool IBinder.TryBind&lt;R&gt; (Delegate lambda, Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, out Microsoft.Bot.Builder.Scorables.Internals.IBinding&lt;R&gt; binding);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind&lt;R&gt;(class System.Delegate lambda, class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, class Microsoft.Bot.Builder.Scorables.Internals.IBinding`1&lt;!!R&gt; binding) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind&lt;R&gt;(class System.Delegate lambda, class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, [out] class Microsoft.Bot.Builder.Scorables.Internals.IBinding`1&lt;!!R&gt;&amp; binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binder.Microsoft#Bot#Builder#Scorables#Internals#IBinder#TryBind``1(System.Delegate,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding{``0}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -116,11 +120,12 @@
     </Member>
     <Member MemberName="Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind&lt;R&gt;">
       <MemberSignature Language="C#" Value="bool IBinder.TryBind&lt;R&gt; (System.Reflection.MethodInfo method, Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, out Microsoft.Bot.Builder.Scorables.Internals.IBinding&lt;R&gt; binding);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind&lt;R&gt;(class System.Reflection.MethodInfo method, class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, class Microsoft.Bot.Builder.Scorables.Internals.IBinding`1&lt;!!R&gt; binding) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind&lt;R&gt;(class System.Reflection.MethodInfo method, class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, [out] class Microsoft.Bot.Builder.Scorables.Internals.IBinding`1&lt;!!R&gt;&amp; binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binder.Microsoft#Bot#Builder#Scorables#Internals#IBinder#TryBind``1(System.Reflection.MethodInfo,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding{``0}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -145,11 +150,12 @@
     </Member>
     <Member MemberName="TryBind">
       <MemberSignature Language="C#" Value="public static bool TryBind (System.Reflection.MethodBase method, object target, Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, out Microsoft.Bot.Builder.Scorables.Internals.IBinding binding);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryBind(class System.Reflection.MethodBase method, object target, class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, class Microsoft.Bot.Builder.Scorables.Internals.IBinding binding) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryBind(class System.Reflection.MethodBase method, object target, class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, [out] class Microsoft.Bot.Builder.Scorables.Internals.IBinding&amp; binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binder.TryBind(System.Reflection.MethodBase,System.Object,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -172,11 +178,12 @@
     </Member>
     <Member MemberName="TryBind&lt;R&gt;">
       <MemberSignature Language="C#" Value="public static bool TryBind&lt;R&gt; (System.Reflection.MethodInfo method, object target, Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, out Microsoft.Bot.Builder.Scorables.Internals.IBinding&lt;R&gt; binding);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryBind&lt;R&gt;(class System.Reflection.MethodInfo method, object target, class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, class Microsoft.Bot.Builder.Scorables.Internals.IBinding`1&lt;!!R&gt; binding) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryBind&lt;R&gt;(class System.Reflection.MethodInfo method, object target, class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, [out] class Microsoft.Bot.Builder.Scorables.Internals.IBinding`1&lt;!!R&gt;&amp; binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binder.TryBind``1(System.Reflection.MethodInfo,System.Object,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding{``0}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -203,11 +210,12 @@
     </Member>
     <Member MemberName="TryResolveArgument">
       <MemberSignature Language="C#" Value="public static bool TryResolveArgument (Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, System.Reflection.ParameterInfo parameter, out object argument);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryResolveArgument(class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, class System.Reflection.ParameterInfo parameter, object argument) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryResolveArgument(class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, class System.Reflection.ParameterInfo parameter, [out] object&amp; argument) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binder.TryResolveArgument(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Reflection.ParameterInfo,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -228,11 +236,12 @@
     </Member>
     <Member MemberName="TryResolveArguments">
       <MemberSignature Language="C#" Value="public static bool TryResolveArguments (Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, System.Reflection.MethodBase method, out object[] arguments);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryResolveArguments(class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, class System.Reflection.MethodBase method, object[] arguments) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryResolveArguments(class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, class System.Reflection.MethodBase method, [out] object[]&amp; arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binder.TryResolveArguments(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Reflection.MethodBase,System.Object[]@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -253,11 +262,12 @@
     </Member>
     <Member MemberName="TryResolveInstance">
       <MemberSignature Language="C#" Value="public static bool TryResolveInstance (Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, System.Reflection.MethodBase method, object target, out object instance);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryResolveInstance(class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, class System.Reflection.MethodBase method, object target, object instance) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryResolveInstance(class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, class System.Reflection.MethodBase method, object target, [out] object&amp; instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binder.TryResolveInstance(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Reflection.MethodBase,System.Object,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -284,7 +294,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binder.TryResolveReturnType``1(System.Reflection.MethodInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

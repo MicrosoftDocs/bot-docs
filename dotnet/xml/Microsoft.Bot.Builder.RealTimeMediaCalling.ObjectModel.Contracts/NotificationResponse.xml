@@ -1,4 +1,4 @@
-<Type Name="NotificationResponse" FullName="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationResponse">
+﻿<Type Name="NotificationResponse" FullName="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationResponse">
   <TypeSignature Language="C#" Value="public class NotificationResponse" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NotificationResponse extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationResponse" />
@@ -28,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationResponse.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationResponse.AppState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationResponse.Links" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationResponse.Validate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

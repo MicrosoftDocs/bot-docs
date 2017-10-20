@@ -1,10 +1,10 @@
-<Type Name="DialogRouter" FullName="Microsoft.Bot.Builder.Dialogs.Internals.DialogRouter">
+﻿<Type Name="DialogRouter" FullName="Microsoft.Bot.Builder.Dialogs.Internals.DialogRouter">
   <TypeSignature Language="C#" Value="public sealed class DialogRouter : Microsoft.Bot.Builder.Scorables.Internals.DelegatingScorable&lt;Microsoft.Bot.Connector.IActivity,double&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DialogRouter extends Microsoft.Bot.Builder.Scorables.Internals.DelegatingScorable`2&lt;class Microsoft.Bot.Connector.IActivity, float64&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.DialogRouter" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Scorables.Internals.DelegatingScorable&lt;Microsoft.Bot.Connector.IActivity,System.Double&gt;</BaseTypeName>
@@ -27,7 +27,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogRouter.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Connector.IActivity,System.Double}},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Double}},System.Func{Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Builder.Scorables.Internals.IResolver},Microsoft.Bot.Builder.Internals.Fibers.ITraits{System.Double},System.Collections.Generic.IComparer{System.Double})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="stack" Type="Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack" />
@@ -54,7 +55,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogRouter.EnumerateRelevant(Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Connector.IActivity,System.Double}},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Double}},System.Func{Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Builder.Scorables.Internals.IResolver})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -86,7 +88,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogRouter.MakeDelegate(Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Connector.IActivity,System.Double}},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Double}},System.Func{Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Builder.Scorables.Internals.IResolver},Microsoft.Bot.Builder.Internals.Fibers.ITraits{System.Double},System.Collections.Generic.IComparer{System.Double})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Connector.IActivity,System.Double&gt;</ReturnType>

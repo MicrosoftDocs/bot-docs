@@ -1,10 +1,10 @@
-<Type Name="TryResolve" FullName="Microsoft.Bot.Builder.Scorables.Internals.TryResolve">
+﻿<Type Name="TryResolve" FullName="Microsoft.Bot.Builder.Scorables.Internals.TryResolve">
   <TypeSignature Language="C#" Value="public delegate bool TryResolve(Type type, object tag, out object value);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TryResolve extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.TryResolve" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>

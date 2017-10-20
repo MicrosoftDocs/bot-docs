@@ -1,10 +1,10 @@
-<Type Name="MatchComparer" FullName="Microsoft.Bot.Builder.Scorables.Internals.MatchComparer">
+﻿<Type Name="MatchComparer" FullName="Microsoft.Bot.Builder.Scorables.Internals.MatchComparer">
   <TypeSignature Language="C#" Value="public sealed class MatchComparer : System.Collections.Generic.IComparer&lt;System.Text.RegularExpressions.Match&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MatchComparer extends System.Object implements class System.Collections.Generic.IComparer`1&lt;class System.Text.RegularExpressions.Match&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.MatchComparer" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,7 +25,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.MatchComparer.Instance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IComparer&lt;System.Text.RegularExpressions.Match&gt;</ReturnType>
@@ -41,7 +42,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.MatchComparer.System#Collections#Generic#IComparer&lt;System#Text#RegularExpressions#Match&gt;#Compare(System.Text.RegularExpressions.Match,System.Text.RegularExpressions.Match)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

@@ -1,10 +1,10 @@
-<Type Name="TraceActivityLogger" FullName="Microsoft.Bot.Builder.History.TraceActivityLogger">
+﻿<Type Name="TraceActivityLogger" FullName="Microsoft.Bot.Builder.History.TraceActivityLogger">
   <TypeSignature Language="C#" Value="public sealed class TraceActivityLogger : Microsoft.Bot.Builder.History.IActivityLogger" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TraceActivityLogger extends System.Object implements class Microsoft.Bot.Builder.History.IActivityLogger" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.History.TraceActivityLogger" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -35,7 +35,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.History.TraceActivityLogger.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -49,7 +50,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.History.TraceActivityLogger.Microsoft#Bot#Builder#History#IActivityLogger#LogAsync(Microsoft.Bot.Connector.IActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

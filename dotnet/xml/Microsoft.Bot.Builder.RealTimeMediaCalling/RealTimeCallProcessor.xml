@@ -1,4 +1,4 @@
-<Type Name="RealTimeCallProcessor" FullName="Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeCallProcessor">
+﻿<Type Name="RealTimeCallProcessor" FullName="Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeCallProcessor">
   <TypeSignature Language="C#" Value="public class RealTimeCallProcessor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RealTimeCallProcessor extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeCallProcessor" />
@@ -23,6 +23,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeCallProcessor.#ctor(Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallServiceSettings,System.Func{Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService,Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCall})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeCallProcessor.ProcessCallbackAsync(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeCallProcessor.ProcessIncomingCallAsync(System.String,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeCallProcessor.ProcessNotificationAsync(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>

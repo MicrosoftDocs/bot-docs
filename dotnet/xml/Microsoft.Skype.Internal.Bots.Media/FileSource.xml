@@ -1,4 +1,4 @@
-<Type Name="FileSource" FullName="Microsoft.Skype.Internal.Bots.Media.FileSource">
+﻿<Type Name="FileSource" FullName="Microsoft.Skype.Internal.Bots.Media.FileSource">
   <TypeSignature Language="C#" Value="public sealed class FileSource : Microsoft.Skype.Internal.Bots.Media.IFileSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FileSource extends System.Object implements class Microsoft.Skype.Internal.Bots.Media.IFileSource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.FileSource" />
@@ -25,14 +25,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.FileSource.#ctor(Microsoft.Skype.Internal.Bots.Media.FileSourceSettings)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="fileSourceSettings" Type="Microsoft.Skype.Internal.Bots.Media.FileSourceSettings" />
       </Parameters>
       <Docs>
-        <param name="fileSourceSettings">
-        </param>
+        <param name="fileSourceSettings"></param>
         <summary />
         <remarks>To be added.</remarks>
       </Docs>
@@ -43,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.FileSource.#ctor(Microsoft.Skype.Internal.Bots.Media.FileSourceSettings,System.IO.Stream)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -50,10 +51,8 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="fileSourceSettings">
-        </param>
-        <param name="stream">
-        </param>
+        <param name="fileSourceSettings"></param>
+        <param name="stream"></param>
         <summary />
         <remarks>To be added.</remarks>
       </Docs>
@@ -64,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.FileSource.FileSourceFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -81,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.FileSource.FileSourceSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -98,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.FileSource.RawFileSizeInBytes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.FileSource.ReadNextBlock(System.Byte[],System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -126,12 +129,9 @@
         <Parameter Name="bytesToRead" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="readBytes">
-        </param>
-        <param name="currentPosition">
-        </param>
-        <param name="bytesToRead">
-        </param>
+        <param name="readBytes"></param>
+        <param name="currentPosition"></param>
+        <param name="bytesToRead"></param>
         <summary />
         <returns />
         <remarks>To be added.</remarks>

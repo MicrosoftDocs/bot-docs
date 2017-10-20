@@ -1,10 +1,10 @@
-<Type Name="CaseNormalization" FullName="Microsoft.Bot.Builder.FormFlow.CaseNormalization">
+﻿<Type Name="CaseNormalization" FullName="Microsoft.Bot.Builder.FormFlow.CaseNormalization">
   <TypeSignature Language="C#" Value="public enum CaseNormalization" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CaseNormalization extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.CaseNormalization" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -22,7 +22,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.CaseNormalization.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.CaseNormalization</ReturnType>
@@ -39,7 +40,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.CaseNormalization.InitialUpper" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.CaseNormalization</ReturnType>
@@ -56,7 +58,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.CaseNormalization.Lower" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.CaseNormalization</ReturnType>
@@ -73,7 +76,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.CaseNormalization.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.CaseNormalization</ReturnType>
@@ -90,7 +94,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.CaseNormalization.Upper" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.CaseNormalization</ReturnType>

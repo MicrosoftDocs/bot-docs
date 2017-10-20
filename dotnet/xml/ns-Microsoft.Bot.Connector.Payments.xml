@@ -1,6 +1,0 @@
-<Namespace Name="Microsoft.Bot.Connector.Payments">
-  <Docs>
-    <summary>This namespace contains classes and interfaces to interact with the Bot Connector Payment REST API.</summary>
-    <remarks>This namespace contains classes and interfaces to interact with the Bot Connector Payment REST API.</remarks>
-  </Docs>
-</Namespace>

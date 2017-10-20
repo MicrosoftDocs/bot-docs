@@ -1,10 +1,10 @@
-<Type Name="EventLoopDialogTask" FullName="Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask">
+﻿<Type Name="EventLoopDialogTask" FullName="Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask">
   <TypeSignature Language="C#" Value="public sealed class EventLoopDialogTask : Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EventLoopDialogTask extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,7 +25,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask.#ctor(System.Func{Microsoft.Bot.Builder.Base.IEventLoop},Microsoft.Bot.Builder.Base.IEventProducer{Microsoft.Bot.Connector.IActivity},Microsoft.Bot.Builder.Dialogs.Internals.IBotData)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="makeInner" Type="System.Func&lt;Microsoft.Bot.Builder.Base.IEventLoop&gt;" />
@@ -46,7 +47,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask.Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

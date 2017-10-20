@@ -1,10 +1,10 @@
-<Type Name="EndConversationEvent" FullName="Microsoft.Bot.Builder.Dialogs.EndConversationEvent">
+﻿<Type Name="EndConversationEvent" FullName="Microsoft.Bot.Builder.Dialogs.EndConversationEvent">
   <TypeSignature Language="C#" Value="public sealed class EndConversationEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EndConversationEvent extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.EndConversationEvent" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -24,7 +24,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.EndConversationEvent.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="code" Type="System.String" />
@@ -43,7 +44,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.EndConversationEvent.Code" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -61,7 +63,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.EndConversationEvent.MakeScorable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Double&gt;</ReturnType>

@@ -1,10 +1,10 @@
-<Type Name="StoreFromStack&lt;C&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack&lt;C&gt;">
+﻿<Type Name="StoreFromStack&lt;C&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack&lt;C&gt;">
   <TypeSignature Language="C#" Value="public sealed class StoreFromStack&lt;C&gt; : Microsoft.Bot.Builder.Internals.Fibers.IStackStoreFactory&lt;C&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StoreFromStack`1&lt;C&gt; extends System.Object implements class Microsoft.Bot.Builder.Internals.Fibers.IStackStoreFactory`1&lt;!C&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack`1" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="C" />
@@ -29,7 +29,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack`1.#ctor(System.Func{System.String,Microsoft.Bot.Builder.Dialogs.IBotDataBag,Microsoft.Bot.Builder.Internals.Fibers.IStore{Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop{`0}}})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="make" Type="System.Func&lt;System.String,Microsoft.Bot.Builder.Dialogs.IBotDataBag,Microsoft.Bot.Builder.Internals.Fibers.IStore&lt;Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop&lt;C&gt;&gt;&gt;" />
@@ -46,7 +47,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack`1.Microsoft#Bot#Builder#Internals#Fibers#IStackStoreFactory&lt;C&gt;#StoreFrom(System.String,Microsoft.Bot.Builder.Dialogs.IBotDataBag)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Internals.Fibers.IStore&lt;Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop&lt;C&gt;&gt;</ReturnType>

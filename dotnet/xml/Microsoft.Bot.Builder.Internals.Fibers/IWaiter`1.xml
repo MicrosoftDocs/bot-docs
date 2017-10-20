@@ -1,10 +1,10 @@
-<Type Name="IWaiter&lt;C&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;">
+﻿<Type Name="IWaiter&lt;C&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;">
   <TypeSignature Language="C#" Value="public interface IWaiter&lt;C&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWaiter`1&lt;C&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.IWaiter`1" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="C" />
@@ -26,7 +26,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.IWaiter`1.Mark" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C&gt;</ReturnType>
@@ -45,7 +46,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.IWaiter`1.Wait" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C&gt;</ReturnType>

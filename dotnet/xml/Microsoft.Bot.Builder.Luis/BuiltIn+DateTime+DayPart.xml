@@ -1,10 +1,10 @@
-<Type Name="BuiltIn+DateTime+DayPart" FullName="Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+DayPart">
+﻿<Type Name="BuiltIn+DateTime+DayPart" FullName="Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+DayPart">
   <TypeSignature Language="C#" Value="public enum BuiltIn.DateTime.DayPart" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed BuiltIn/DateTime/DayPart extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -20,7 +20,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.AF" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -40,7 +41,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.EV" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -60,7 +62,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.MI" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -80,7 +83,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.MO" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -100,7 +104,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.NI" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

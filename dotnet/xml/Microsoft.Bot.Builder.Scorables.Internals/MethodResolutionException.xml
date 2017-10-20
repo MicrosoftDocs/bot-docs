@@ -1,10 +1,10 @@
-<Type Name="MethodResolutionException" FullName="Microsoft.Bot.Builder.Scorables.Internals.MethodResolutionException">
+﻿<Type Name="MethodResolutionException" FullName="Microsoft.Bot.Builder.Scorables.Internals.MethodResolutionException">
   <TypeSignature Language="C#" Value="public sealed class MethodResolutionException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit MethodResolutionException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.MethodResolutionException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Exception</BaseTypeName>
@@ -21,7 +21,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.MethodResolutionException.#ctor(System.String,Microsoft.Bot.Builder.Scorables.Internals.IBinding,Microsoft.Bot.Builder.Scorables.Internals.IBinding)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />

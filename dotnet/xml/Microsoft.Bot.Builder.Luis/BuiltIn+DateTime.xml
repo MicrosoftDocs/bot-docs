@@ -1,10 +1,10 @@
-<Type Name="BuiltIn+DateTime" FullName="Microsoft.Bot.Builder.Luis.BuiltIn+DateTime">
+﻿<Type Name="BuiltIn+DateTime" FullName="Microsoft.Bot.Builder.Luis.BuiltIn+DateTime">
   <TypeSignature Language="C#" Value="public static class BuiltIn.DateTime" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit BuiltIn/DateTime extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>

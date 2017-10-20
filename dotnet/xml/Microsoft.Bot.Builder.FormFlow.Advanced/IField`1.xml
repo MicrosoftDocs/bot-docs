@@ -1,10 +1,10 @@
-<Type Name="IField&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;T&gt;">
+﻿<Type Name="IField&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IField&lt;T&gt; : Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription, Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt&lt;T&gt;, Microsoft.Bot.Builder.FormFlow.Advanced.IFieldResources, Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState&lt;T&gt; where T : class" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IField`1&lt;class T&gt; implements class Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription, class Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1&lt;!T&gt;, class Microsoft.Bot.Builder.FormFlow.Advanced.IFieldResources, class Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.IField`1" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
@@ -41,7 +41,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IField`1.Form" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.IForm&lt;T&gt;</ReturnType>
@@ -60,7 +61,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IField`1.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

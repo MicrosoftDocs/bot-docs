@@ -1,10 +1,10 @@
-<Type Name="ResumptionContext" FullName="Microsoft.Bot.Builder.ConnectorEx.ResumptionContext">
+﻿<Type Name="ResumptionContext" FullName="Microsoft.Bot.Builder.ConnectorEx.ResumptionContext">
   <TypeSignature Language="C#" Value="public sealed class ResumptionContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ResumptionContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ConnectorEx.ResumptionContext" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,7 +23,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.ResumptionContext.#ctor(System.Func{Microsoft.Bot.Builder.Dialogs.IBotDataBag})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="makeBotDataBag" Type="System.Func&lt;Microsoft.Bot.Builder.Dialogs.IBotDataBag&gt;" />
@@ -40,7 +41,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.ResumptionContext.LoadDataAsync(System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -68,7 +70,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.ConnectorEx.ResumptionContext.RESUMPTION_CONTEXT_KEY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -86,7 +89,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.ResumptionContext.SaveDataAsync(Microsoft.Bot.Builder.ConnectorEx.ResumptionData,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

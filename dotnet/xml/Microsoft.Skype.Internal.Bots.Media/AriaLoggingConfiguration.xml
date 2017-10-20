@@ -1,4 +1,4 @@
-<Type Name="AriaLoggingConfiguration" FullName="Microsoft.Skype.Internal.Bots.Media.AriaLoggingConfiguration">
+﻿<Type Name="AriaLoggingConfiguration" FullName="Microsoft.Skype.Internal.Bots.Media.AriaLoggingConfiguration">
   <TypeSignature Language="C#" Value="public class AriaLoggingConfiguration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AriaLoggingConfiguration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.AriaLoggingConfiguration" />
@@ -26,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.AriaLoggingConfiguration.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AriaLoggingConfiguration.AriaTenantToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AriaLoggingConfiguration.AriaTraceEventName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AriaLoggingConfiguration.SplitAriaTracesByLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>

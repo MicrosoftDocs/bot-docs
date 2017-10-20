@@ -1,10 +1,10 @@
-<Type Name="IFields&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.IFields&lt;T&gt;">
+﻿<Type Name="IFields&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.IFields&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IFields&lt;T&gt; : System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;T&gt;&gt; where T : class" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFields`1&lt;class T&gt; implements class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.FormFlow.Advanced.IField`1&lt;!T&gt;&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.IFields`1" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
@@ -19,8 +19,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="T">
-    </typeparam>
+    <typeparam name="T"></typeparam>
     <summary>
             Interface to track all of the fields in a form.
             </summary>
@@ -33,7 +32,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IFields`1.Field(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;T&gt;</ReturnType>

@@ -1,10 +1,10 @@
-<Type Name="IEventProducer&lt;Event&gt;" FullName="Microsoft.Bot.Builder.Base.IEventProducer&lt;Event&gt;">
+﻿<Type Name="IEventProducer&lt;Event&gt;" FullName="Microsoft.Bot.Builder.Base.IEventProducer&lt;Event&gt;">
   <TypeSignature Language="C#" Value="public interface IEventProducer&lt;in Event&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEventProducer`1&lt;- Event&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Base.IEventProducer`1" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="Event">
@@ -26,7 +26,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Base.IEventProducer`1.Post(`0,System.Action)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

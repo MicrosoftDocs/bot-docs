@@ -1,10 +1,10 @@
-<Type Name="ILuisService" FullName="Microsoft.Bot.Builder.Luis.ILuisService">
+﻿<Type Name="ILuisService" FullName="Microsoft.Bot.Builder.Luis.ILuisService">
   <TypeSignature Language="C#" Value="public interface ILuisService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ILuisService" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.ILuisService" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -20,7 +20,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.ILuisService.BuildUri(Microsoft.Bot.Builder.Luis.LuisRequest)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -43,7 +44,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.ILuisService.ModifyRequest(Microsoft.Bot.Builder.Luis.LuisRequest)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.LuisRequest</ReturnType>
@@ -66,7 +68,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.ILuisService.QueryAsync(System.Uri,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Luis.Models.LuisResult&gt;</ReturnType>

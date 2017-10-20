@@ -1,10 +1,10 @@
-<Type Name="FiberModule" FullName="Microsoft.Bot.Builder.Internals.Fibers.FiberModule">
+﻿<Type Name="FiberModule" FullName="Microsoft.Bot.Builder.Internals.Fibers.FiberModule">
   <TypeSignature Language="C#" Value="public abstract class FiberModule : Autofac.Module" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FiberModule extends Autofac.Module" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.FiberModule" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.10.5.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Autofac.Module</BaseTypeName>
@@ -23,7 +23,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.FiberModule.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
+        <AssemblyVersion>3.10.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -37,14 +38,19 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Key_DoNotSerialize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
+        <AssemblyVersion>3.10.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+            Services keyed with <see cref="F:Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Key_DoNotSerialize" /> will not be serialized.
+            </summary>
+        <remarks>
+            Services marked with <see cref="F:Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Key_DoNotSerialize" /> will not serialize their dependencies either.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="Key_SurrogateProvider">
@@ -53,7 +59,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Key_SurrogateProvider" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
+        <AssemblyVersion>3.10.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -69,7 +76,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Load(Autofac.ContainerBuilder)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
+        <AssemblyVersion>3.10.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

@@ -1,4 +1,4 @@
-<Type Name="RosterUpdateNotification" FullName="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterUpdateNotification">
+﻿<Type Name="RosterUpdateNotification" FullName="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterUpdateNotification">
   <TypeSignature Language="C#" Value="public class RosterUpdateNotification : Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RosterUpdateNotification extends Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterUpdateNotification" />
@@ -28,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterUpdateNotification.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterUpdateNotification.Participants" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterUpdateNotification.Validate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -1,4 +1,4 @@
-<Type Name="LoggingConfiguration" FullName="Microsoft.Skype.Internal.Bots.Media.LoggingConfiguration">
+﻿<Type Name="LoggingConfiguration" FullName="Microsoft.Skype.Internal.Bots.Media.LoggingConfiguration">
   <TypeSignature Language="C#" Value="public class LoggingConfiguration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LoggingConfiguration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.LoggingConfiguration" />
@@ -26,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.LoggingConfiguration.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.LoggingConfiguration.AriaLoggingConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.LoggingConfiguration.ClsLoggingConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.LoggingConfiguration.MediaAgentsPlatformLogLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.LoggingConfiguration.MediaApiLogLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>

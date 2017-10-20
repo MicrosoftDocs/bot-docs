@@ -1,10 +1,10 @@
-<Type Name="Chain+WhereCanceledException" FullName="Microsoft.Bot.Builder.Dialogs.Chain+WhereCanceledException">
+﻿<Type Name="Chain+WhereCanceledException" FullName="Microsoft.Bot.Builder.Dialogs.Chain+WhereCanceledException">
   <TypeSignature Language="C#" Value="public sealed class Chain.WhereCanceledException : OperationCanceledException" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable sealed beforefieldinit Chain/WhereCanceledException extends System.OperationCanceledException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Chain.WhereCanceledException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.OperationCanceledException</BaseTypeName>
@@ -23,7 +23,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.WhereCanceledException.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>

@@ -1,4 +1,4 @@
-<Type Name="MediaPlatformFactory" FullName="Microsoft.Skype.Bots.Media.MediaPlatformFactory">
+﻿<Type Name="MediaPlatformFactory" FullName="Microsoft.Skype.Bots.Media.MediaPlatformFactory">
   <TypeSignature Language="C#" Value="public static class MediaPlatformFactory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MediaPlatformFactory extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.MediaPlatformFactory" />
@@ -23,6 +23,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.MediaPlatformFactory.CreateMediaPlatform" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

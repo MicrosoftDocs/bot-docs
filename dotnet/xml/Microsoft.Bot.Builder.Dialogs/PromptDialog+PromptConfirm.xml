@@ -1,10 +1,10 @@
-<Type Name="PromptDialog+PromptConfirm" FullName="Microsoft.Bot.Builder.Dialogs.PromptDialog+PromptConfirm">
-  <TypeSignature Language="C#" Value="public sealed class PromptDialog.PromptConfirm : Microsoft.Bot.Builder.Dialogs.Internals.Prompt&lt;bool,string&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable sealed beforefieldinit PromptDialog/PromptConfirm extends Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2&lt;bool, string&gt;" />
+﻿<Type Name="PromptDialog+PromptConfirm" FullName="Microsoft.Bot.Builder.Dialogs.PromptDialog+PromptConfirm">
+  <TypeSignature Language="C#" Value="public class PromptDialog.PromptConfirm : Microsoft.Bot.Builder.Dialogs.Internals.Prompt&lt;bool,string&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable beforefieldinit PromptDialog/PromptConfirm extends Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2&lt;bool, string&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Internals.Prompt&lt;System.Boolean,System.String&gt;</BaseTypeName>
@@ -25,7 +25,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.#ctor(Microsoft.Bot.Builder.Dialogs.IPromptOptions{System.String},System.String[][])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="promptOptions" Type="Microsoft.Bot.Builder.Dialogs.IPromptOptions&lt;System.String&gt;" />
@@ -33,8 +34,7 @@
       </Parameters>
       <Docs>
         <param name="promptOptions"> THe prompt options.</param>
-        <param name="patterns">
-        </param>
+        <param name="patterns"></param>
         <summary>
             Constructor for a prompt confirmation dialog.
             </summary>
@@ -47,7 +47,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.#ctor(System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.String[],System.String[][])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="prompt" Type="System.String" />
@@ -74,7 +75,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.DefaultRetry" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -91,7 +93,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -110,7 +113,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.Options" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -129,7 +133,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.Patterns" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[][]</ReturnType>
@@ -144,11 +149,12 @@
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="protected override bool TryParse (Microsoft.Bot.Connector.IMessageActivity message, out bool result);" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryParse(class Microsoft.Bot.Connector.IMessageActivity message, bool result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryParse(class Microsoft.Bot.Connector.IMessageActivity message, [out] bool&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.TryParse(Microsoft.Bot.Connector.IMessageActivity,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -171,7 +177,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.Yes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

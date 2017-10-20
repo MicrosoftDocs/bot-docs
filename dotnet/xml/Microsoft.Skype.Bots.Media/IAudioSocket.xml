@@ -1,4 +1,4 @@
-<Type Name="IAudioSocket" FullName="Microsoft.Skype.Bots.Media.IAudioSocket">
+﻿<Type Name="IAudioSocket" FullName="Microsoft.Skype.Bots.Media.IAudioSocket">
   <TypeSignature Language="C#" Value="public interface IAudioSocket : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAudioSocket implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.IAudioSocket" />
@@ -24,6 +24,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Bots.Media.IAudioSocket.AudioMediaReceived" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Bots.Media.IAudioSocket.AudioSendStatusChanged" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Bots.Media.IAudioSocket.DominantSpeakerChanged" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.IAudioSocket.Send(Microsoft.Skype.Bots.Media.AudioMediaBuffer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Bots.Media.IAudioSocket.ToneReceived" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

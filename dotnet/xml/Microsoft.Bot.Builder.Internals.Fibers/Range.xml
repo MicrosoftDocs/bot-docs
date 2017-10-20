@@ -1,10 +1,10 @@
-<Type Name="Range" FullName="Microsoft.Bot.Builder.Internals.Fibers.Range">
+﻿<Type Name="Range" FullName="Microsoft.Bot.Builder.Internals.Fibers.Range">
   <TypeSignature Language="C#" Value="public static class Range" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Range extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.Range" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,7 +21,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Range.From``1(``0,``0)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Internals.Fibers.Range&lt;T&gt;</ReturnType>

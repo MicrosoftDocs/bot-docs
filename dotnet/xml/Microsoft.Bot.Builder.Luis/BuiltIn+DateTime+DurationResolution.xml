@@ -1,10 +1,10 @@
-<Type Name="BuiltIn+DateTime+DurationResolution" FullName="Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+DurationResolution">
+﻿<Type Name="BuiltIn+DateTime+DurationResolution" FullName="Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+DurationResolution">
   <TypeSignature Language="C#" Value="public sealed class BuiltIn.DateTime.DurationResolution" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit BuiltIn/DateTime/DurationResolution extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DurationResolution" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,7 +21,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DurationResolution.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>

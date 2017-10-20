@@ -1,10 +1,10 @@
-<Type Name="LuisApiVersion" FullName="Microsoft.Bot.Builder.Luis.LuisApiVersion">
+﻿<Type Name="LuisApiVersion" FullName="Microsoft.Bot.Builder.Luis.LuisApiVersion">
   <TypeSignature Language="C#" Value="public enum LuisApiVersion" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LuisApiVersion extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.LuisApiVersion" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -22,7 +22,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.LuisApiVersion.V1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -42,7 +43,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.LuisApiVersion.V2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.LuisApiVersion</ReturnType>

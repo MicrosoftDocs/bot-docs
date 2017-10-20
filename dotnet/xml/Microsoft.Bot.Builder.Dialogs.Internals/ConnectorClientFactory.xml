@@ -1,10 +1,10 @@
-<Type Name="ConnectorClientFactory" FullName="Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory">
+﻿<Type Name="ConnectorClientFactory" FullName="Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory">
   <TypeSignature Language="C#" Value="public sealed class ConnectorClientFactory : Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConnectorClientFactory extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,7 +25,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory.#ctor(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Connector.MicrosoftAppCredentials)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="address" Type="Microsoft.Bot.Builder.Dialogs.IAddress" />
@@ -44,7 +45,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory.IsEmulator(Microsoft.Bot.Builder.Dialogs.IAddress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -65,7 +67,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory.Microsoft#Bot#Builder#Dialogs#Internals#IConnectorClientFactory#MakeConnectorClient" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IConnectorClient</ReturnType>
@@ -83,7 +86,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory.Microsoft#Bot#Builder#Dialogs#Internals#IConnectorClientFactory#MakeStateClient" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IStateClient</ReturnType>

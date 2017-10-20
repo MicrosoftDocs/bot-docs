@@ -1,4 +1,4 @@
-<Type Name="AudioFormatSettings" FullName="Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings">
+﻿<Type Name="AudioFormatSettings" FullName="Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings">
   <TypeSignature Language="C#" Value="public class AudioFormatSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AudioFormatSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.AvgBytesPerSeconds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.BlockAlign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.CompressionCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.NumberOfChannels" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.SampleRate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -120,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.SignificantBitPerSample" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -1,4 +1,4 @@
-<Type Name="NotificationBase" FullName="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationBase">
+﻿<Type Name="NotificationBase" FullName="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationBase">
   <TypeSignature Language="C#" Value="public abstract class NotificationBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit NotificationBase extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationBase" />
@@ -29,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationBase.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationBase.AdditionalData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationBase.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationBase.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationBase.Validate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

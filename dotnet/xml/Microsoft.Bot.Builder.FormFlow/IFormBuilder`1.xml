@@ -1,10 +1,10 @@
-<Type Name="IFormBuilder&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt;">
+﻿<Type Name="IFormBuilder&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IFormBuilder&lt;T&gt; where T : class" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFormBuilder`1&lt;class T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
@@ -43,7 +43,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.AddRemainingFields(System.Collections.Generic.IEnumerable{System.String})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt;</ReturnType>
@@ -69,7 +70,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Build(System.Reflection.Assembly,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.IForm&lt;T&gt;</ReturnType>
@@ -97,7 +99,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Configuration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.FormConfiguration</ReturnType>
@@ -116,7 +119,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm(Microsoft.Bot.Builder.FormFlow.MessageDelegate{`0},Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt;</ReturnType>
@@ -141,7 +145,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm(Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt;</ReturnType>
@@ -170,7 +175,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt;</ReturnType>
@@ -200,7 +206,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt;</ReturnType>
@@ -227,7 +234,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt;</ReturnType>
@@ -254,7 +262,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(System.String,Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt;</ReturnType>
@@ -283,7 +292,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(System.String,System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt;</ReturnType>
@@ -312,7 +322,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.HasField(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -321,8 +332,7 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">
-        </param>
+        <param name="name"></param>
         <summary>
             Test to see if there is already a field with <paramref name="name" />.
             </summary>
@@ -336,7 +346,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Message(Microsoft.Bot.Builder.FormFlow.MessageDelegate{`0},Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt;</ReturnType>
@@ -361,7 +372,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Message(Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt;</ReturnType>
@@ -388,7 +400,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Message(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt;</ReturnType>
@@ -415,7 +428,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.OnCompletion(Microsoft.Bot.Builder.FormFlow.OnCompletionAsyncDelegate{`0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt;</ReturnType>
@@ -442,7 +456,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Prompter(Microsoft.Bot.Builder.FormFlow.Advanced.PromptAsyncDelegate{`0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt;</ReturnType>

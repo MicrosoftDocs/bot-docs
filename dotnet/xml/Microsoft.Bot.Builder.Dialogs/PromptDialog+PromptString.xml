@@ -1,10 +1,10 @@
-<Type Name="PromptDialog+PromptString" FullName="Microsoft.Bot.Builder.Dialogs.PromptDialog+PromptString">
-  <TypeSignature Language="C#" Value="public sealed class PromptDialog.PromptString : Microsoft.Bot.Builder.Dialogs.Internals.Prompt&lt;string,string&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable sealed beforefieldinit PromptDialog/PromptString extends Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2&lt;string, string&gt;" />
+﻿<Type Name="PromptDialog+PromptString" FullName="Microsoft.Bot.Builder.Dialogs.PromptDialog+PromptString">
+  <TypeSignature Language="C#" Value="public class PromptDialog.PromptString : Microsoft.Bot.Builder.Dialogs.Internals.Prompt&lt;string,string&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable beforefieldinit PromptDialog/PromptString extends Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2&lt;string, string&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptString" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Internals.Prompt&lt;System.String,System.String&gt;</BaseTypeName>
@@ -25,7 +25,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptString.#ctor(Microsoft.Bot.Builder.Dialogs.IPromptOptions{System.String})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="promptOptions" Type="Microsoft.Bot.Builder.Dialogs.IPromptOptions&lt;System.String&gt;" />
@@ -42,7 +43,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptString.#ctor(System.String,System.String,System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="prompt" Type="System.String" />
@@ -63,7 +65,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptString.DefaultRetry" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -76,11 +79,12 @@
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="protected override bool TryParse (Microsoft.Bot.Connector.IMessageActivity message, out string result);" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryParse(class Microsoft.Bot.Connector.IMessageActivity message, string result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryParse(class Microsoft.Bot.Connector.IMessageActivity message, [out] string&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptString.TryParse(Microsoft.Bot.Connector.IMessageActivity,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

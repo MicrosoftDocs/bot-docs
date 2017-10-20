@@ -1,10 +1,10 @@
-<Type Name="DialogResponse+DialogStatus" FullName="Microsoft.Bot.Builder.Luis.Models.DialogResponse+DialogStatus">
+﻿<Type Name="DialogResponse+DialogStatus" FullName="Microsoft.Bot.Builder.Luis.Models.DialogResponse+DialogStatus">
   <TypeSignature Language="C#" Value="public static class DialogResponse.DialogStatus" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit DialogResponse/DialogStatus extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.Models.DialogResponse.DialogStatus" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,7 +22,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.Models.DialogResponse.DialogStatus.Finished" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -40,7 +41,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.Models.DialogResponse.DialogStatus.Question" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

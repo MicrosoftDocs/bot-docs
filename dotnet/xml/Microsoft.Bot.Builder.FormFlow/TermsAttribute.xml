@@ -1,10 +1,10 @@
-<Type Name="TermsAttribute" FullName="Microsoft.Bot.Builder.FormFlow.TermsAttribute">
+﻿<Type Name="TermsAttribute" FullName="Microsoft.Bot.Builder.FormFlow.TermsAttribute">
   <TypeSignature Language="C#" Value="public class TermsAttribute : Microsoft.Bot.Builder.FormFlow.FormFlowAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TermsAttribute extends Microsoft.Bot.Builder.FormFlow.FormFlowAttribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.TermsAttribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.FormFlow.FormFlowAttribute</BaseTypeName>
@@ -29,12 +29,13 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TermsAttribute (string[] alternatives);" />
+      <MemberSignature Language="C#" Value="public TermsAttribute (params string[] alternatives);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] alternatives) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.TermsAttribute.#ctor(System.String[])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="alternatives" Type="System.String[]">
@@ -62,7 +63,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TermsAttribute.Alternatives" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -80,7 +82,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.TermsAttribute.MaxPhrase" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

@@ -1,10 +1,10 @@
-<Type Name="ConnectorStore" FullName="Microsoft.Bot.Builder.Dialogs.Internals.ConnectorStore">
+﻿<Type Name="ConnectorStore" FullName="Microsoft.Bot.Builder.Dialogs.Internals.ConnectorStore">
   <TypeSignature Language="C#" Value="public class ConnectorStore : Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;Microsoft.Bot.Connector.BotData&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConnectorStore extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1&lt;class Microsoft.Bot.Connector.BotData&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.ConnectorStore" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,7 +27,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ConnectorStore.#ctor(Microsoft.Bot.Connector.IStateClient)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="stateClient" Type="Microsoft.Bot.Connector.IStateClient" />
@@ -44,7 +45,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ConnectorStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore&lt;Microsoft#Bot#Connector#BotData&gt;#FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -67,7 +69,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ConnectorStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore&lt;Microsoft#Bot#Connector#BotData&gt;#LoadAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -97,7 +100,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ConnectorStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore&lt;Microsoft#Bot#Connector#BotData&gt;#SaveAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

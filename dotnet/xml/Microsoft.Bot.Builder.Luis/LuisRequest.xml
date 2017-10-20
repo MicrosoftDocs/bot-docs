@@ -1,15 +1,19 @@
-<Type Name="LuisRequest" FullName="Microsoft.Bot.Builder.Luis.LuisRequest">
-  <TypeSignature Language="C#" Value="public sealed class LuisRequest" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LuisRequest extends System.Object" />
+﻿<Type Name="LuisRequest" FullName="Microsoft.Bot.Builder.Luis.LuisRequest">
+  <TypeSignature Language="C#" Value="public sealed class LuisRequest : Microsoft.Bot.Builder.Luis.ILuisOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LuisRequest extends System.Object implements class Microsoft.Bot.Builder.Luis.ILuisOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.LuisRequest" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
-  <Interfaces />
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Luis.ILuisOptions</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Docs>
     <summary>
             Object that contains all the possible parameters to build Luis request.
@@ -18,34 +22,19 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public LuisRequest (string query, Nullable&lt;bool&gt; log = null, Nullable&lt;bool&gt; spellCheck = null, Nullable&lt;bool&gt; staging = null, Nullable&lt;double&gt; timezoneOffset = null, Nullable&lt;bool&gt; verbose = null, string contextId = null, string forceSet = null, string extraParameters = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string query, valuetype System.Nullable`1&lt;bool&gt; log, valuetype System.Nullable`1&lt;bool&gt; spellCheck, valuetype System.Nullable`1&lt;bool&gt; staging, valuetype System.Nullable`1&lt;float64&gt; timezoneOffset, valuetype System.Nullable`1&lt;bool&gt; verbose, string contextId, string forceSet, string extraParameters) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisRequest.#ctor(System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Double},System.Nullable{System.Boolean},System.String,System.String,System.String)" />
+      <MemberSignature Language="C#" Value="public LuisRequest (string query);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string query) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisRequest.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="query" Type="System.String" />
-        <Parameter Name="log" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="spellCheck" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="staging" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="timezoneOffset" Type="System.Nullable&lt;System.Double&gt;" />
-        <Parameter Name="verbose" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="contextId" Type="System.String" />
-        <Parameter Name="forceSet" Type="System.String" />
-        <Parameter Name="extraParameters" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="query"> The text query.</param>
-        <param name="log"> Allow queries to be logged by LUIS.</param>
-        <param name="spellCheck">Turn on spell checking.</param>
-        <param name="staging">Whether or not to use staging.</param>
-        <param name="timezoneOffset"> The time zone offset used for resolving time expressions.</param>
-        <param name="verbose"> Indicates if the <see cref="T:Microsoft.Bot.Builder.Luis.Models.LuisResult" /> should be verbose.</param>
-        <param name="contextId"> The context id for Luis dialog.</param>
-        <param name="forceSet"> Force setting the parameter when using action binding.</param>
-        <param name="extraParameters">Extra URL query parameters.</param>
         <summary>
             Constructs an instance of the LuisReqeuest.
             </summary>
@@ -58,7 +47,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisRequest.BuildUri(Microsoft.Bot.Builder.Luis.ILuisModel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -76,12 +66,13 @@
       </Docs>
     </Member>
     <Member MemberName="ContextId">
-      <MemberSignature Language="C#" Value="public string ContextId;" />
-      <MemberSignature Language="ILAsm" Value=".field public string ContextId" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.LuisRequest.ContextId" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public string ContextId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContextId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisRequest.ContextId" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -95,16 +86,18 @@
         <summary>
             The context id.
             </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExtraParameters">
-      <MemberSignature Language="C#" Value="public string ExtraParameters;" />
-      <MemberSignature Language="ILAsm" Value=".field public string ExtraParameters" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.LuisRequest.ExtraParameters" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public string ExtraParameters { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExtraParameters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisRequest.ExtraParameters" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -113,16 +106,18 @@
         <summary>
             Any extra query parameters for the URL.
             </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ForceSet">
-      <MemberSignature Language="C#" Value="public string ForceSet;" />
-      <MemberSignature Language="ILAsm" Value=".field public string ForceSet" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.LuisRequest.ForceSet" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public string ForceSet { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ForceSet" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisRequest.ForceSet" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -136,16 +131,18 @@
         <summary>
             Force setting the parameter when using action binding.
             </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Log">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Log;" />
-      <MemberSignature Language="ILAsm" Value=".field public valuetype System.Nullable`1&lt;bool&gt; Log" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.LuisRequest.Log" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Log { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Log" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisRequest.Log" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -154,16 +151,18 @@
         <summary>
             Indicates if logging of queries to LUIS is allowed.
             </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Query">
-      <MemberSignature Language="C#" Value="public string Query;" />
-      <MemberSignature Language="ILAsm" Value=".field public string Query" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.LuisRequest.Query" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public string Query { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Query" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisRequest.Query" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -172,16 +171,18 @@
         <summary>
             The text query.
             </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SpellCheck">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; SpellCheck;" />
-      <MemberSignature Language="ILAsm" Value=".field public valuetype System.Nullable`1&lt;bool&gt; SpellCheck" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.LuisRequest.SpellCheck" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; SpellCheck { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; SpellCheck" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisRequest.SpellCheck" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -190,16 +191,18 @@
         <summary>
             Turn on spell checking.
             </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Staging">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Staging;" />
-      <MemberSignature Language="ILAsm" Value=".field public valuetype System.Nullable`1&lt;bool&gt; Staging" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.LuisRequest.Staging" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Staging { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Staging" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisRequest.Staging" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -208,16 +211,18 @@
         <summary>
             Use the staging endpoint.
             </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TimezoneOffset">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; TimezoneOffset;" />
-      <MemberSignature Language="ILAsm" Value=".field public valuetype System.Nullable`1&lt;float64&gt; TimezoneOffset" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.LuisRequest.TimezoneOffset" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; TimezoneOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; TimezoneOffset" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisRequest.TimezoneOffset" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
@@ -226,16 +231,18 @@
         <summary>
             The time zone offset.
             </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Verbose">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Verbose;" />
-      <MemberSignature Language="ILAsm" Value=".field public valuetype System.Nullable`1&lt;bool&gt; Verbose" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.LuisRequest.Verbose" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Verbose { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Verbose" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisRequest.Verbose" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -244,6 +251,7 @@
         <summary>
             The verbose flag.
             </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

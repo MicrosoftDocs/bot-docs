@@ -1,10 +1,10 @@
-<Type Name="PromptDialog+PromptDouble" FullName="Microsoft.Bot.Builder.Dialogs.PromptDialog+PromptDouble">
-  <TypeSignature Language="C#" Value="public sealed class PromptDialog.PromptDouble : Microsoft.Bot.Builder.Dialogs.Internals.Prompt&lt;double,double&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable sealed beforefieldinit PromptDialog/PromptDouble extends Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2&lt;float64, float64&gt;" />
+﻿<Type Name="PromptDialog+PromptDouble" FullName="Microsoft.Bot.Builder.Dialogs.PromptDialog+PromptDouble">
+  <TypeSignature Language="C#" Value="public class PromptDialog.PromptDouble : Microsoft.Bot.Builder.Dialogs.Internals.Prompt&lt;double,double&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable beforefieldinit PromptDialog/PromptDouble extends Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2&lt;float64, float64&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Internals.Prompt&lt;System.Double,System.Double&gt;</BaseTypeName>
@@ -25,7 +25,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble.#ctor(Microsoft.Bot.Builder.Dialogs.PromptOptions{System.Double},System.Nullable{System.Double},System.Nullable{System.Double})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="promptOptions" Type="Microsoft.Bot.Builder.Dialogs.PromptOptions&lt;System.Double&gt;" />
@@ -46,7 +47,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble.#ctor(System.String,System.String,System.Int32,System.String,System.Nullable{System.Double},System.Nullable{System.Double})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="prompt" Type="System.String" />
@@ -73,7 +75,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble.Max" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
@@ -92,7 +95,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble.Min" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
@@ -107,11 +111,12 @@
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="protected override bool TryParse (Microsoft.Bot.Connector.IMessageActivity message, out double result);" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryParse(class Microsoft.Bot.Connector.IMessageActivity message, float64 result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryParse(class Microsoft.Bot.Connector.IMessageActivity message, [out] float64&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble.TryParse(Microsoft.Bot.Connector.IMessageActivity,System.Double@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

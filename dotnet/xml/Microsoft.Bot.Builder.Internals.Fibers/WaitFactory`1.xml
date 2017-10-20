@@ -1,10 +1,10 @@
-<Type Name="WaitFactory&lt;C&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.WaitFactory&lt;C&gt;">
+﻿<Type Name="WaitFactory&lt;C&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.WaitFactory&lt;C&gt;">
   <TypeSignature Language="C#" Value="public sealed class WaitFactory&lt;C&gt; : Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory&lt;C&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit WaitFactory`1&lt;C&gt; extends System.Object implements class Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory`1&lt;!C&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.WaitFactory`1" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="C" />
@@ -29,7 +29,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.WaitFactory`1.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,7 +44,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.WaitFactory`1.Microsoft#Bot#Builder#Internals#Fibers#IWaitFactory&lt;C&gt;#Make``1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C,T&gt;</ReturnType>

@@ -1,10 +1,10 @@
-<Type Name="IMessageQueue" FullName="Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue">
+﻿<Type Name="IMessageQueue" FullName="Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue">
   <TypeSignature Language="C#" Value="public interface IMessageQueue" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMessageQueue" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -18,7 +18,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue.DrainQueueAsync(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -41,7 +42,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue.QueueMessageAsync(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

@@ -1,10 +1,10 @@
-<Type Name="Actions+WhereScorable&lt;Score&gt;" FullName="Microsoft.Bot.Builder.Scorables.Actions+WhereScorable&lt;Score&gt;">
+﻿<Type Name="Actions+WhereScorable&lt;Score&gt;" FullName="Microsoft.Bot.Builder.Scorables.Actions+WhereScorable&lt;Score&gt;">
   <TypeSignature Language="C#" Value="public sealed class Actions.WhereScorable&lt;Score&gt; : Microsoft.Bot.Builder.Scorables.Internals.ScorableAggregator&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Actions.WhereScorable&lt;Score&gt;.Token,Score,Microsoft.Bot.Builder.Scorables.Internals.IResolver,object,Score&gt;" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable sealed beforefieldinit Actions/WhereScorable`1&lt;Score&gt; extends Microsoft.Bot.Builder.Scorables.Internals.ScorableAggregator`6&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, class Microsoft.Bot.Builder.Scorables.Actions/WhereScorable`1/Token&lt;!Score&gt;, !Score, class Microsoft.Bot.Builder.Scorables.Internals.IResolver, object, !Score&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="Score" />
@@ -33,7 +33,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.#ctor(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,`0},System.Delegate)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="scorable" Type="Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score&gt;" />
@@ -52,7 +53,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.GetScore(Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.Token{`0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Score</ReturnType>
@@ -75,7 +77,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.HasScore(Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.Token{`0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -98,7 +101,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.PrepareAsync(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

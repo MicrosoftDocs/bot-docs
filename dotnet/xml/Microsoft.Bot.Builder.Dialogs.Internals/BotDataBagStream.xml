@@ -1,10 +1,10 @@
-<Type Name="BotDataBagStream" FullName="Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream">
+﻿<Type Name="BotDataBagStream" FullName="Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream">
   <TypeSignature Language="C#" Value="public sealed class BotDataBagStream : System.IO.MemoryStream" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BotDataBagStream extends System.IO.MemoryStream" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.IO.MemoryStream</BaseTypeName>
@@ -21,7 +21,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream.#ctor(Microsoft.Bot.Builder.Dialogs.IBotDataBag,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="bag" Type="Microsoft.Bot.Builder.Dialogs.IBotDataBag" />
@@ -40,7 +41,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream.Close" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -57,7 +59,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream.Flush" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

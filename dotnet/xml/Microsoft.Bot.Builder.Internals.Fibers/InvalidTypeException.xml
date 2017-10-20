@@ -1,10 +1,10 @@
-<Type Name="InvalidTypeException" FullName="Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException">
+﻿<Type Name="InvalidTypeException" FullName="Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException">
   <TypeSignature Language="C#" Value="public sealed class InvalidTypeException : Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit InvalidTypeException extends Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException</BaseTypeName>
@@ -21,7 +21,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException.#ctor(Microsoft.Bot.Builder.Internals.Fibers.IWait,System.Type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="wait" Type="Microsoft.Bot.Builder.Internals.Fibers.IWait" />
@@ -40,7 +41,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

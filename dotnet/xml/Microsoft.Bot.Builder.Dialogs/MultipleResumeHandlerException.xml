@@ -1,10 +1,10 @@
-<Type Name="MultipleResumeHandlerException" FullName="Microsoft.Bot.Builder.Dialogs.MultipleResumeHandlerException">
+﻿<Type Name="MultipleResumeHandlerException" FullName="Microsoft.Bot.Builder.Dialogs.MultipleResumeHandlerException">
   <TypeSignature Language="C#" Value="public sealed class MultipleResumeHandlerException : Microsoft.Bot.Builder.Dialogs.DialogStackException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit MultipleResumeHandlerException extends Microsoft.Bot.Builder.Dialogs.DialogStackException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.MultipleResumeHandlerException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.DialogStackException</BaseTypeName>
@@ -23,7 +23,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.MultipleResumeHandlerException.#ctor(System.Exception)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="inner" Type="System.Exception" />

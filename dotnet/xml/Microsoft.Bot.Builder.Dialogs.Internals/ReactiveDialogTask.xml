@@ -1,10 +1,10 @@
-<Type Name="ReactiveDialogTask" FullName="Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask">
+﻿<Type Name="ReactiveDialogTask" FullName="Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask">
   <TypeSignature Language="C#" Value="public sealed class ReactiveDialogTask : Microsoft.Bot.Builder.Base.IEventLoop, Microsoft.Bot.Builder.Base.IEventProducer&lt;Microsoft.Bot.Connector.IActivity&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ReactiveDialogTask extends System.Object implements class Microsoft.Bot.Builder.Base.IEventLoop, class Microsoft.Bot.Builder.Base.IEventProducer`1&lt;class Microsoft.Bot.Connector.IActivity&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,7 +31,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask,System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{System.Object}})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dialogTask" Type="Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask" />
@@ -50,7 +51,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask.Microsoft#Bot#Builder#Base#IEventLoop#PollAsync(System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -76,7 +78,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask.Microsoft#Bot#Builder#Base#IEventProducer&lt;Microsoft#Bot#Connector#IActivity&gt;#Post(Microsoft.Bot.Connector.IActivity,System.Action)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

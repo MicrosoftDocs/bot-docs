@@ -1,4 +1,4 @@
-<Type Name="ContentSharingRole" FullName="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole">
+﻿<Type Name="ContentSharingRole" FullName="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole">
   <TypeSignature Language="C#" Value="public enum ContentSharingRole" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContentSharingRole extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole" />
@@ -27,6 +27,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole.Attendee" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole.Presenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -1,4 +1,4 @@
-<Type Name="AudioFileSourcePlayer" FullName="Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer">
+﻿<Type Name="AudioFileSourcePlayer" FullName="Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer">
   <TypeSignature Language="C#" Value="public class AudioFileSourcePlayer : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AudioFileSourcePlayer extends System.Object implements class Microsoft.Skype.Internal.Bots.Media.IFileSourcePlayer, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer" />
@@ -25,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.#ctor(System.String,Microsoft.Skype.Bots.Media.AudioSocket,Microsoft.Skype.Internal.Bots.Media.IFileSource,Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayerSettings)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -34,14 +35,10 @@
         <Parameter Name="audioFileSourcePlayerSettings" Type="Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayerSettings" />
       </Parameters>
       <Docs>
-        <param name="callId">
-        </param>
-        <param name="audioSocket">
-        </param>
-        <param name="fileSource">
-        </param>
-        <param name="audioFileSourcePlayerSettings">
-        </param>
+        <param name="callId"></param>
+        <param name="audioSocket"></param>
+        <param name="fileSource"></param>
+        <param name="audioFileSourcePlayerSettings"></param>
         <summary />
         <remarks>To be added.</remarks>
       </Docs>
@@ -52,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.Dispose" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -69,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.Dispose(System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -78,8 +77,7 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-        </param>
+        <param name="disposing"></param>
         <summary />
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,6 +88,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.FileSourcePlayerEndOfFile" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -106,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.Play" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -123,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.Stop" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -140,6 +141,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.TotalBytesProvided" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -157,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.TotalSamplesProvided" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

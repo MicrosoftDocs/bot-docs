@@ -1,10 +1,10 @@
-<Type Name="DialogTask+IThunk" FullName="Microsoft.Bot.Builder.Dialogs.Internals.DialogTask+IThunk">
+﻿<Type Name="DialogTask+IThunk" FullName="Microsoft.Bot.Builder.Dialogs.Internals.DialogTask+IThunk">
   <TypeSignature Language="C#" Value="public interface DialogTask.IThunk" />
   <TypeSignature Language="ILAsm" Value=".class nested public interface auto ansi abstract DialogTask/IThunk" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.IThunk" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -22,7 +22,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.IThunk.Method" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Delegate</ReturnType>

@@ -1,4 +1,4 @@
-<Type Name="IAudioVideoFramePlayer" FullName="Microsoft.Skype.Bots.Media.IAudioVideoFramePlayer">
+﻿<Type Name="IAudioVideoFramePlayer" FullName="Microsoft.Skype.Bots.Media.IAudioVideoFramePlayer">
   <TypeSignature Language="C#" Value="public interface IAudioVideoFramePlayer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAudioVideoFramePlayer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.IAudioVideoFramePlayer" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.IAudioVideoFramePlayer.ClearAsync" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.IAudioVideoFramePlayer.EnqueueBuffersAsync(System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.AudioMediaBuffer},System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.VideoMediaBuffer})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -51,10 +53,8 @@
         <Parameter Name="videoMediaBuffers" Type="System.Collections.Generic.IList&lt;Microsoft.Skype.Bots.Media.VideoMediaBuffer&gt;" />
       </Parameters>
       <Docs>
-        <param name="audioMediaBuffers">
-        </param>
-        <param name="videoMediaBuffers">
-        </param>
+        <param name="audioMediaBuffers"></param>
+        <param name="videoMediaBuffers"></param>
         <summary>
             Enqueue the audio and video media buffers.
             Usage should be to enqueue the same audio and video length,
@@ -70,6 +70,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Bots.Media.IAudioVideoFramePlayer.LowOnFrames" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -88,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.IAudioVideoFramePlayer.ShutdownAsync" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

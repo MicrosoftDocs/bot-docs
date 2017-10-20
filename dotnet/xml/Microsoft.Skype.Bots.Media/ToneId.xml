@@ -1,4 +1,4 @@
-<Type Name="ToneId" FullName="Microsoft.Skype.Bots.Media.ToneId">
+﻿<Type Name="ToneId" FullName="Microsoft.Skype.Bots.Media.ToneId">
   <TypeSignature Language="C#" Value="public enum ToneId" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToneId extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.ToneId" />
@@ -22,6 +22,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.A" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.B" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.C" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.D" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.Flash" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -107,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.Pound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.Star" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -141,6 +148,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.Tone0" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -158,6 +166,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.Tone1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -175,6 +184,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.Tone2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -192,6 +202,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.Tone3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -209,6 +220,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.Tone4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -226,6 +238,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.Tone5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -243,6 +256,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.Tone6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -260,6 +274,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.Tone7" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -277,6 +292,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.Tone8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -294,6 +310,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.Tone9" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

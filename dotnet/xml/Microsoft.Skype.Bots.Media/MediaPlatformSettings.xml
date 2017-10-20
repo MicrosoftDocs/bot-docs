@@ -1,4 +1,4 @@
-<Type Name="MediaPlatformSettings" FullName="Microsoft.Skype.Bots.Media.MediaPlatformSettings">
+﻿<Type Name="MediaPlatformSettings" FullName="Microsoft.Skype.Bots.Media.MediaPlatformSettings">
   <TypeSignature Language="C#" Value="public class MediaPlatformSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MediaPlatformSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.MediaPlatformSettings" />
@@ -23,6 +23,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.MediaPlatformSettings.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.MediaPlatformSettings.ApplicationId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.MediaPlatformSettings.MediaPlatformInstanceSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.MediaPlatformSettings.RegionAffinity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

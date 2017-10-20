@@ -1,10 +1,10 @@
-<Type Name="KeyboardCard" FullName="Microsoft.Bot.Builder.ConnectorEx.KeyboardCard">
+﻿<Type Name="KeyboardCard" FullName="Microsoft.Bot.Builder.ConnectorEx.KeyboardCard">
   <TypeSignature Language="C#" Value="public class KeyboardCard" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeyboardCard extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ConnectorEx.KeyboardCard" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,7 +31,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.KeyboardCard.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="text" Type="System.String" />
@@ -52,7 +53,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.ConnectorEx.KeyboardCard.Buttons" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -76,7 +78,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.ConnectorEx.KeyboardCard.ContentType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -94,7 +97,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.ConnectorEx.KeyboardCard.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

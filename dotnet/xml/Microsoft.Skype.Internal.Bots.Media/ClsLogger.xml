@@ -1,4 +1,4 @@
-<Type Name="ClsLogger" FullName="Microsoft.Skype.Internal.Bots.Media.ClsLogger">
+﻿<Type Name="ClsLogger" FullName="Microsoft.Skype.Internal.Bots.Media.ClsLogger">
   <TypeSignature Language="C#" Value="public static class ClsLogger" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ClsLogger extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.ClsLogger" />
@@ -26,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ClsLogger.Initialize(Microsoft.Skype.Internal.Bots.Media.ILogger,System.Nullable{Microsoft.Skype.Internal.Bots.Media.LogLevel})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ClsLogger.SetEtlFormatOption(Microsoft.Skype.Internal.Bots.Media.FormatOption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -58,8 +60,7 @@
         <Parameter Name="options" Type="Microsoft.Skype.Internal.Bots.Media.FormatOption" />
       </Parameters>
       <Docs>
-        <param name="options">
-        </param>
+        <param name="options"></param>
         <summary />
         <remarks>To be added.</remarks>
       </Docs>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ClsLogger.SetLoggingInfo(System.Collections.Generic.IList{System.String})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -79,8 +81,7 @@
         <Parameter Name="logScenarioList" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="logScenarioList">
-        </param>
+        <param name="logScenarioList"></param>
         <summary />
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ClsLogger.StopClsLogger" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.5.0.1177</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

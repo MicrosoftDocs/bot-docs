@@ -1,10 +1,10 @@
-<Type Name="Serialization+StoreInstanceByTypeSurrogate+ObjectReference" FullName="Microsoft.Bot.Builder.Internals.Fibers.Serialization+StoreInstanceByTypeSurrogate+ObjectReference">
+﻿<Type Name="Serialization+StoreInstanceByTypeSurrogate+ObjectReference" FullName="Microsoft.Bot.Builder.Internals.Fibers.Serialization+StoreInstanceByTypeSurrogate+ObjectReference">
   <TypeSignature Language="C#" Value="public sealed class Serialization.StoreInstanceByTypeSurrogate.ObjectReference : System.Runtime.Serialization.IObjectReference" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable sealed beforefieldinit Serialization/StoreInstanceByTypeSurrogate/ObjectReference extends System.Object implements class System.Runtime.Serialization.IObjectReference" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,7 +25,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -39,7 +40,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.System#Runtime#Serialization#IObjectReference#GetRealObject(System.Runtime.Serialization.StreamingContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -60,7 +62,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.Type" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.8.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
