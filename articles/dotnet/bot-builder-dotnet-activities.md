@@ -92,7 +92,7 @@ This activity type is reserved for internal use by the Microsoft Bot Framework.
 
 Some channels will send **messageReaction** activities to your bot when a user reacted to an existing activity. For example, a user clicks the "Like" button on a message. The **ReplyToId** property will indicate which activity the user reacted to.
 
-The **messageReaction** activity may correspond to any number of **messageReactionTypes** that the channel defined. For example, "Like" or "PlusOne" as reaction types that a channel may sent. 
+The **messageReaction** activity may correspond to any number of **messageReactionTypes** that the channel defined. For example, "Like" or "PlusOne" as reaction types that a channel may send. 
 
 ## Additional resources
 
