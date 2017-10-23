@@ -6,7 +6,7 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 09/22/2017
+ms.date: 10/19/2017
 ---
 
 # How to enable speech in Web Chat
@@ -16,25 +16,43 @@ You can enable a voice interface in the Web Chat control. Users interact with th
 
 If the user types instead of speaking a response, Web Chat turns off the speech functionality and the bot gives only a textual response instead of speaking out loud. To re-enable the spoken response, the user can use the microphone to respond to the bot the next time. If the microphone is accepting input, it appears dark or filled-in. If it's grayed out, the user clicks on it to enable it.
 
+## Prerequisites
+
+  Before you run the sample, you need to have a Direct Line secret or token for the bot that you want to run using the Web Chat control. 
+  * See [Connect a bot to Direct Line](https://docs.microsoft.com/en-us/bot-framework/channel-connect-directline) for information on getting a Direct Line secret associated with your bot.
+  * See [Generate a Direct Line token](https://docs.microsoft.com/en-us/bot-framework/rest-api/bot-framework-rest-direct-line-3-0-authentication) for information on exchanging the secret for a token.
+
 ## Customizing Web Chat for speech
-To enable the speech functionality in Web Chat, you need to customize the JavaScript code that invokes the Web Chat control. You can try out voice-enabled Web Chat locally using the following steps: 
+To enable the speech functionality in Web Chat, you need to customize the JavaScript code that invokes the Web Chat control. You can try out voice-enabled Web Chat locally using the following steps.
 
-1. Clone the <a href="https://github.com/Microsoft/BotFramework-WebChat/">Web Chat GitHub repository</a>.
-2. Run `npm install`.
-3. Run `npm run build` to build the dependencies and stylesheets that Web Chat requires.
-4. Edit the code in `/samples/speech/index.html` according to the type of speech support you want to add. The types of speech implementations are described in [Enable speech services](#enable-speech-services). 
-5. Start a web server: `npm run start`
-6. Aim your browser at `http://localhost:8000/samples?parameters`. For example, `http://localhost:8000/samples?s=YOURDIRECTLINESECRET` invokes the bot using a Direct Line secret. The parameters can be set in the query string and are described in the following list:
+1. Download the [sample index.html](https://aka.ms/web-chat-speech-sample). <!-- this aka.ms link needs to be updated if the sample location changes -->
+2. Edit the code in `index.html` according to the type of speech support you want to add. The types of speech implementations are described in [Enable speech services](#enable-speech-services). 
+3. Start a web server. One way to do so is to use `npm http-server` at a Node.js command prompt.
 
-   * s = Direct Line secret.
-   * t = Direct Line token. Obtain the token by calling Direct Line's Generate Token.
-   * domain = optional URL of an alternate Direct Line endpoint.
-   * webSocket = 'true' to use WebSocket to receive messages. The default value is false.
-   * userid, username = ID (and optionally name) of the bot user.
-   * botid, botname = ID (and optionally name) of the bot.
+    * To install `http-server` globally so it can be run from the command line, run this command:
 
-> [!TIP]
-> For more information on how to obtain the Direct Line secret and token, see [Authentication](https://docs.microsoft.com/en-us/bot-framework/rest-api/bot-framework-rest-direct-line-3-0-authentication).
+    ```
+    npm install http-server- -g
+    ```
+
+    * To start a web server using port 8000, from the directory that contains `index.html`, run this command:
+
+    ```
+    http-server -p 8000
+    ```
+4. Aim your browser at `http://localhost:8000/samples?parameters`. For example, `http://localhost:8000/samples?s=YOURDIRECTLINESECRET` invokes the bot using a Direct Line secret. The parameters that can be set in the query string are described in the following table:
+
+  | Parameter | Description |
+  |-----------|-------------|
+  | s | Direct Line secret. See [Connect a bot to Direct Line](https://docs.microsoft.com/en-us/bot-framework/channel-connect-directline) for information on getting a Direct Line secret. |
+  | t | Direct Line token. See [Generate a Direct Line token](https://docs.microsoft.com/en-us/bot-framework/rest-api/bot-framework-rest-direct-line-3-0-authentication) for info on how to generate this token. |
+  | domain | Optional. The URL of an alternate Direct Line endpoint.  |
+  | webSocket | Optional. Set to 'true' to use WebSocket to receive messages. Default is `false`. |
+  | userid | Optional. The ID of the bot user.  |
+  | username | Optional. The user name of the bot's user.  |
+  | botid | Optional. ID of the bot. |
+  | botname | Optional. Name of the bot. |
+
 
 ## Enable speech services
 The customization allows you to add speech functionality in any of the following ways:
@@ -48,7 +66,7 @@ The customization allows you to add speech functionality in any of the following
 The following code instantiates speech recognizer and speech synthesis components that come with the browser. This method of adding speech is not supported by all browsers. 
 
 > [!NOTE] 
-> Google Chrome supports the browser speech recognizer. However, Chrome blocks the microphone in the following cases:
+> Google Chrome supports the browser speech recognizer. However, Chrome may block the microphone in the following cases:
 > * If the URL of the page that contains Web Chat begins with `http://` instead of `https://`.
 > * If the URL is a local file using the `file://` protocol instead of `http://localhost:8000`.
 
@@ -82,6 +100,7 @@ You can also provide your own custom speech recognition that implements ISpeechR
 The following code passes the speech options to the Web Chat control:
 
 [!code-js[Pass speech options to Web Chat (JavaScript)](./includes/code/channel-connect-webchat-speech.js#PassSpeechOptionsToWebChat)]
+
 
 ## Next steps
 Now that you can enable voice interaction with Web Chat, learn how your bot constructs spoken messages and adjusts the state of the microphone:
