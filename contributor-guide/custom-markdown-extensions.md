@@ -74,7 +74,7 @@ Example
 The first part of the include is the include name without the path and without the .md extension. The second part is the relative path to the include in the /includes directory, with the .md extension.
 
 ## Embedded videos
-Our technical articles support embedded videos in technical articles as long as the videos are on Microsoft's [Channel 9](http://channel9.msdn.com/) site. We currently do not support embedded YouTube videos; if you're a community contributor, you are welcome to link to YouTube if the video you want to feature is posted there. Microsoft contributors should use Channel 9 and the Video Center. The syntax is simple:
+Our technical articles support embedded videos in technical articles as long as the videos are on Microsoft's [Channel 9](https://channel9.msdn.com/) site. We currently do not support embedded YouTube videos; if you're a community contributor, you are welcome to link to YouTube if the video you want to feature is posted there. Microsoft contributors should use Channel 9 and the Video Center. The syntax is simple:
 
     >[!VIDEO url-of-channel-9-video]
 

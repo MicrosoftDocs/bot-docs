@@ -22,14 +22,14 @@ Using Conversation Designer, you can build bots that adapt easily to available i
 - a powerful runtime that minimizes state management overhead
 - built-in conversational states that enable easy, visual modeling of a conversation
 - separation of code and bot UI
-- built-in support for AI frameworks such as <a href="http://luis.ai" target="_blank">LUIS</a> and <a href="https://www.microsoft.com/cognitive-services/en-us/speech-api" target="_blank">speech recognition</a>
+- built-in support for AI frameworks such as <a href="https://luis.ai" target="_blank">LUIS</a> and <a href="https://www.microsoft.com/cognitive-services/en-us/speech-api" target="_blank">speech recognition</a>
 - built-in support for language generation using simple and conditional response templates
 - support for [Adaptive Cards](conversation-designer-adaptive-cards.md)
 
 ## Prerequisites
 
 - Conversation Designer requires an Azure subscription. You can get started <a href="https://azure.microsoft.com/en-us/" target="_blank">here</a>
-- If you haven't done so already, make sure you sign in to the [LUIS portal](http://luis.ai) at least once after you created an account with them.
+- If you haven't done so already, make sure you sign in to the [LUIS portal](https://luis.ai) at least once after you created an account with them.
 - Familiarity with JavaScript programming. Custom script functions are written in JavaScript.
 - Microsoft Edge or Google Chrome
 

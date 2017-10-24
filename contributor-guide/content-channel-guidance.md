@@ -60,6 +60,6 @@ The following types of content are delivered in other Bot Framework or Microsoft
 
 * **SLA**: Do not mention any specifics about SLAs in the technical documents. Always point to the SLA page for the service. The SLA index page is here: https://azure.microsoft.com/support/legal/sla/. Example: "For information about the SLA, see the [Bot Framework service level agreements](https://azure.microsoft.com/support/legal/sla/) page."
 
-* **Troubleshooting content of most types**: Although each service may include up to 10 troubleshooting articles and index files as described above, most formal troubleshooting and support content should be published as KB articles on http://support.microsoft.com.
+* **Troubleshooting content of most types**: Although each service may include up to 10 troubleshooting articles and index files as described above, most formal troubleshooting and support content should be published as KB articles on https://support.microsoft.com.
 
 * **What's new in a release or service**:  Lists or descriptions of what is new in a release or service go to the [Service Updates channel](http://acomdocs.azurewebsites.net/articles/service-updates-overview/).

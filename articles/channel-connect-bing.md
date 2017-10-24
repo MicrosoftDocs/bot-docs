@@ -102,7 +102,7 @@ Publishing to the Bing channel makes the bot discoverable by the widest possible
 
 ![Bing website search results](~/media/channels/bing-contosoWeb.png)
 
-[conduct]: http://aka.ms/bf-conduct
-[practices]: http://docs.botframework.com/directory/best-practices/
-[review]: http://docs.botframework.com/directory/review-guidelines/
+[conduct]: https://aka.ms/bf-conduct
+[practices]: https://docs.botframework.com/directory/best-practices/
+[review]: https://docs.botframework.com/directory/review-guidelines/
 [terms]: https://aka.ms/bf-terms

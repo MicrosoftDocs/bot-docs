@@ -28,7 +28,7 @@ To force the form to prompt the user for all fields (including those fields that
 initial state), pass in [FormOptions.PromptFieldsWithValues][promptFieldsWithValues] when you launch 
 the `FormDialog`. If a field contains an initial value, the prompt will use that value as the default value.
 
-You can also pass in [LUIS](http://luis.ai/) entities to bind to the state. 
+You can also pass in [LUIS](https://luis.ai/) entities to bind to the state. 
 If the `EntityRecommendation.Type` is a path to a field in your C# class, 
 the `EntityRecommendation.Entity` will be passed through the recognizer to bind to your field. 
 FormFlow will skip steps for any fields that are bound to an entity; 

@@ -19,7 +19,7 @@ This tutorial walks you through step-by-step instructions for creating a new Con
 ## Prerequisites
 
 - Conversation Designer requires an Azure subscription. You can get started <a href="https://azure.microsoft.com/en-us/" target="_blank">here</a>
-- If you haven't done so already, make sure you sign in to the [LUIS portal](http://luis.ai) at least once after you created an account with them.
+- If you haven't done so already, make sure you sign in to the [LUIS portal](https://luis.ai) at least once after you created an account with them.
 - Familiarity with JavaScript programming. Custom script functions are written in JavaScript.
 - Microsoft Edge or Google Chrome
 
@@ -41,7 +41,7 @@ The following Azure features are automatically provisioned when you create a Con
 3. Azure App Service plan 
 4. Azure Storage account
 5. Application Insights 
-6. Cognitive Services subscription for [LUIS.ai](http://luis.ai). A LUIS app is created with the **Bot handle** (plus a randomly generated string) as the app name.
+6. Cognitive Services subscription for [LUIS.ai](https://luis.ai). A LUIS app is created with the **Bot handle** (plus a randomly generated string) as the app name.
 7. Microsoft Account single app. [Learn more](https://apps.dev.microsoft.com/#/appList)
 
 ## Welcome message
