@@ -43,11 +43,11 @@ Your bot is now imported.
 If you have a LUIS app and you would like to use it in your Conversation Designer bot, you can import your LUIS app into your Conversation Designer bot. Conceptually, this process requires you to export your LUIS app and Conversation Designer bot then swap the content of your bot's **luis.model** file with your **luis.json** file. Then, import your changes back into your Conversation Designer bot. Essentially, replacing the LUIS intents in your bot with that of your LUIS app. Because of this, it is advised that you perform this import operation before you start to customize your bot's LUIS intents; otherwise, all your work will be overwritten by this import operation.
 
 > [!NOTE]
-> If you are making changes in a [LUIS](http:/luis.ai) app that is associated with your bot (each Conversation Designer bot has a corresponding LUIS app), you do not need to perform these steps. Instead, all you need to do is to go into your Conversation Designer bot and click [**Save**](https://docs.microsoft.com/en-us/bot-framework/conversation-designer/conversation-designer-save-bot).
+> If you are making changes in a [LUIS](https://luis.ai) app that is associated with your bot (each Conversation Designer bot has a corresponding LUIS app), you do not need to perform these steps. Instead, all you need to do is to go into your Conversation Designer bot and click [**Save**](https://docs.microsoft.com/en-us/bot-framework/conversation-designer/conversation-designer-save-bot).
 
 To import your LUIS app into your Conversation Designer bot, do the following:
 
-1. From [LUIS.ai](http://luis.ai), open your LUIS app then click, **SETTINGS**.
+1. From [LUIS.ai](https://luis.ai), open your LUIS app then click, **SETTINGS**.
 2. Choose the **Versions** of the app you want to use and click the **{ }** action icon. This action will download the **luis.json** file to your local computer. 
 3. From Conversation Designer, either [create a new bot](conversation-designer-create-bot.md#create-a-conversation-designer-bot) or open an existing bot.
 4. [Export](#export-a-conversation-designer-bot) your bot. This will export your bot as .zip file to your computer.

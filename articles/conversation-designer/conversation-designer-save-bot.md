@@ -20,7 +20,7 @@ While working in Conversation Designer, all your work is cached in browser memor
 
 Clicking the **Save** button will save changes to the bot and performs a few additional tasks. Unlike the keyboard short-cut, clicking the **Save** button also instruct Conversation Designer to perform the following tasks:
 
-- Trains any new LUIS intents and entities for the bot and publishes the LUIS model locally in your Azure bot service (if needed). These intents may be added in Conversation Designer or in the bot's corresponding [LUIS](http://luis.ai) app.
+- Trains any new LUIS intents and entities for the bot and publishes the LUIS model locally in your Azure bot service (if needed). These intents may be added in Conversation Designer or in the bot's corresponding [LUIS](https://luis.ai) app.
 - Updates the conversation runtime to use the new LUIS model.
 - Priming speech recognition by preparing and sending your example utterances to Microsoft Cognitive Services, which vastly improves speech recognition accuracy for this bot.
 

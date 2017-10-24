@@ -76,7 +76,7 @@ On the Bot Framework Portal, paste the **Page ID**, **App ID**, **App Secret**, 
 
 ## Submit for review
 
-Facebook requires a Privacy Policy URL and Terms of Service URL on its basic app settings page. The [Code of Conduct](http://aka.ms/bf-conduct) page contains third party resource links to help create a privacy policy. The [Terms of Use](https://aka.ms/bf-terms) page contains sample terms to help create an appropriate Terms of Service document.
+Facebook requires a Privacy Policy URL and Terms of Service URL on its basic app settings page. The [Code of Conduct](https://aka.ms/bf-conduct) page contains third party resource links to help create a privacy policy. The [Terms of Use](https://aka.ms/bf-terms) page contains sample terms to help create an appropriate Terms of Service document.
 
 After the bot is finished, Facebook has its own [review process](https://developers.facebook.com/docs/messenger-platform/app-review) for apps that are published to Messenger. The bot will be tested to ensure it is compliant with Facebook's [Platform Policies](https://developers.facebook.com/docs/messenger-platform/policy-overview).
 

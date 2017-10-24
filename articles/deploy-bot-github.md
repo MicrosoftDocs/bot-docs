@@ -22,7 +22,7 @@ This tutorial shows you how to deploy a bot to Azure via continuous deployment f
 
 ## Prerequisites
 
-You must have a Microsoft Azure subscription before you can deploy a bot to Azure. If you do not already have a subscription, you can register for a <a href="https://azure.microsoft.com/en-us/free/" target="_blank">free trial</a>. Additionally, the process described by this article requires <a href="https://git-scm.com/downloads" target="_blank">Git</a> and a <a href="http://github.com/" target="_blank">GitHub</a> account.
+You must have a Microsoft Azure subscription before you can deploy a bot to Azure. If you do not already have a subscription, you can register for a <a href="https://azure.microsoft.com/en-us/free/" target="_blank">free trial</a>. Additionally, the process described by this article requires <a href="https://git-scm.com/downloads" target="_blank">Git</a> and a <a href="https://github.com/" target="_blank">GitHub</a> account.
 
 [!include[Pre-deployment considerations](~/includes/snippet-deploy-considerations.md)]
 
@@ -35,7 +35,7 @@ Start by <a href="https://help.GitHub.com/articles/fork-a-repo/" target="_blank"
 
 ## Step 2: Create an Azure web app
 
-Next, log in to the <a href="http://portal.azure.com/" target="_blank">Azure Portal</a> and create an Azure web app.
+Next, log in to the <a href="https://portal.azure.com/" target="_blank">Azure Portal</a> and create an Azure web app.
 
 ![Create an Azure web app](~/media/azure-create-webapp.png)
 

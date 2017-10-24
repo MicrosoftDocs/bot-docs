@@ -96,7 +96,7 @@ The Client ID, Client Secret, and Verification Token required for configuration 
 
 ## Submit credentials
 
-In a separate browser window, return to the Bot Framework site at `http://dev.botframework.com/`.
+In a separate browser window, return to the Bot Framework site at `https://dev.botframework.com/`.
 
 1. Select **My bots** and choose the Bot that you want to connect to Slack.
 2. In the **Add a channel** section, click the Slack icon.

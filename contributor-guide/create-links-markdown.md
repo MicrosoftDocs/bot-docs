@@ -73,7 +73,7 @@ Make sure you include the space after the colon, before the link. When you link 
 ## Linking to other Microsoft sites
 To link to other Microsoft sites (MSDN, azure.microsoft.com, TechNet), use an absolute URL, but omit the locale. The goal here is that links work in GitHub and on the rendered site:
 
-    [link text](http://azure.microsoft.com/pricing/details/virtual-machines/)
+    [link text](https://azure.microsoft.com/pricing/details/virtual-machines/)
 
 
 ### Use friendly link text for all links
@@ -94,7 +94,7 @@ Avoid FWLinks (our redirection system). They should be used only as a last resor
 
 If you must use an FWLink on a web page, include the P parameter to make it a permanent redirect:
 
-    http://go.microsoft.com/fwlink/p/?LinkId=389595
+    https://go.microsoft.com/fwlink/p/?LinkId=389595
 
 When you paste the target URL into the FWLink tool, remember to remove the locale if your target link is ACOM, or the MSDN or TechNet library.
 
