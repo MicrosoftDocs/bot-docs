@@ -6,7 +6,7 @@ ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 08/04/2017
+ms.date: 10/25/2017
 ms.reviewer:
 ---
 
