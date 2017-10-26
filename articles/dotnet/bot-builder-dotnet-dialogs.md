@@ -99,7 +99,7 @@ The bot will continue to increment `count` with each reply, until the user elect
 
 As in the first example, the `MessageReceivedAsync` method is called when a new message is received. 
 This time though, the `MessageReceivedAsync` method evaluates the user's message before responding. 
-If the user's message is "reset", the built-in `Prompts.Confirm` prompt spawns a sub-dialog that 
+If the user's message is "reset", the built-in `PromptDialog.Confirm` prompt spawns a sub-dialog that 
 asks the user to confirm the count reset. 
 The sub-dialog has its own private state that does not interfere with the parent dialog's state. 
 When the user responds to the prompt, the result of the sub-dialog is passed to the `AfterResetAsync` method, 
