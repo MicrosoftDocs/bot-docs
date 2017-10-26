@@ -210,16 +210,16 @@ Dialogs manage conversation flow between a bot and a user. A dialog defines how 
 > [Manage conversation flow with dialogs](bot-builder-dotnet-manage-conversation-flow.md)
 
 
-[builderLibrary]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs?view=botbuilder-3.8
+[builderLibrary]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs?view=botbuilder-3.11.0
 
-[iBotData]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.internals.ibotdata?view=botbuilder-3.8
+[iBotData]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.internals.ibotdata?view=botbuilder-3.11.0
 
-[iBotToUser]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.internals.ibottouser?view=botbuilder-3.8 
+[iBotToUser]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.internals.ibottouser?view=botbuilder-3.11.0
 
-[iDialogStack]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.internals.idialogstack?view=botbuilder-3.8
+[iDialogStack]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.internals.idialogstack?view=botbuilder-3.11.0
 
-[iBotDataBag]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.ibotdatabag?view=botbuilder-3.8 
+[iBotDataBag]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.ibotdatabag?view=botbuilder-3.11.0
 
-[autofac]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.autofac.base?view=botbuilder-3.8
+[autofac]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.autofac.base?view=botbuilder-3.11.0
 
-[chain]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.chain?view=botbuilder-3.8
+[chain]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.chain?view=botbuilder-3.11.0
