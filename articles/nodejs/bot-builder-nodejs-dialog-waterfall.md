@@ -13,13 +13,13 @@ ms.date: 06/19/2017
 
 A conversation is a series of messages exchanged between user and bot. When the bot's objective is to lead the user through a series of steps, you can use a waterfall to define the steps of the conversation.
 
-A waterfall is a specific implementation of a [dialog](bot-builder-nodejs-dialog-overview.md) that is most commonly used to collect information from the user or guide the user through a series of tasks. The tasks are implemented as an array of functions where the results of the first function are passed as input into the next function, and so on. Each function typically represents one step in the overall process. At each step, the bot prompts the user for input, waits for a response, and then passes the result to the next step. 
+A waterfall is a specific implementation of a [dialog](bot-builder-nodejs-dialog-overview.md) that is most commonly used to collect information from the user or guide the user through a series of tasks. The tasks are implemented as an array of functions where the results of the first function are passed as input into the next function, and so on. Each function typically represents one step in the overall process. At each step, the bot prompts the user for input, waits for a response, and then passes the result to the next step.
 
 This article will help you understand how a waterfall works and how you can use it to [manage conversation flow](bot-builder-nodejs-dialog-manage-conversation.md).
 
 ## Conversation steps
 
-A conversation typically involves several prompt/response exchanges between the user and the bot. Each prompt/response exchange is a step forward in the conversation. You can create a conversation using a waterfall with as few as two steps. 
+A conversation typically involves several prompt/response exchanges between the user and the bot. Each prompt/response exchange is a step forward in the conversation. You can create a conversation using a waterfall with as few as two steps.
 
 For example, consider the following `greetings` dialog. The first step of the waterfall prompts for the user's name and the second step uses the response to greet the user by name.
 
@@ -36,7 +36,7 @@ bot.dialog('greetings', [
 ]);
 ```
 
-What makes this possible is the use of prompts. The Bot Builder SDK for Node.js provides several different types of built-in [prompts](bot-builder-nodejs-dialog-prompt.md) that you can use to ask the user for various types of information. 
+What makes this possible is the use of prompts. The Bot Builder SDK for Node.js provides several different types of built-in [prompts](bot-builder-nodejs-dialog-prompt.md) that you can use to ask the user for various types of information.
 
 The following sample code shows a dialog that uses prompts to collect various pieces of information from the user throughout a 4-step waterfall.
 
@@ -57,7 +57,7 @@ var bot = new builder.UniversalBot(connector, [
     },
     function (session, results) {
         session.dialogData.reservationName = results.response;
-        
+
         // Process request and display reservation details
         session.send(`Reservation confirmed. Reservation details: <br/>Date/Time: ${session.dialogData.reservationDate} <br/>Party size: ${session.dialogData.partySize} <br/>Reservation name: ${session.dialogData.reservationName}`);
         session.endDialog();
@@ -74,8 +74,8 @@ The following screenshot shows the results of this bot running in the [Bot Frame
 ## Create a conversation with multiple waterfalls
 
 You can use multiple waterfalls within a conversation to define whatever conversation structure your bot requires. For example, you might use one waterfall to manage the conversation flow and use additional waterfalls to collect information from the user. Each waterfall is encapsulated in a dialog and can be invoked by calling the `session.beginDialog` function.
- 
-The following code sample shows how to use multiple waterfalls in a conversation. The waterfall within the `greetings` dialog manages the flow of the conversation, while the waterfall within the `askName` dialog collects information from the user. 
+
+The following code sample shows how to use multiple waterfalls in a conversation. The waterfall within the `greetings` dialog manages the flow of the conversation, while the waterfall within the `askName` dialog collects information from the user.
 
 ```javascript
 bot.dialog('greetings', [
@@ -144,22 +144,22 @@ bot.dialog('ensureProfile', [
 ```
 
 > [!NOTE]
-> This example uses two different data bags to store data: `dialogData` and `userData`. If the bot is distributed across multiple compute nodes, each step of the waterfall could be processed by a different node, therefore it's important to store bot data in the appropriate data bag. For more infomation about storing bot data, see [Manage state data](bot-builder-nodejs-state.md).
+> This example uses two different data bags to store data: `dialogData` and `userData`. If the bot is distributed across multiple compute nodes, each step of the waterfall could be processed by a different node. For more information about storing bot data, see [Manage state data](bot-builder-nodejs-state.md).
 
 ## End a waterfall
 
 A dialog that is created using a waterfall must be explicitly ended, otherwise the bot will repeat the waterfall indefinitely. You can end a waterfall by using one of the following methods:
 
-* `session.endDialog`: Use this method to end the waterfall if there is no data to return to the calling dialog. 
+* `session.endDialog`: Use this method to end the waterfall if there is no data to return to the calling dialog.
 
-* `session.endDialogWithResult`: Use this method to end the waterfall if there is data to return to the calling dialog. The `response` argument that is returned can be a JSON object or any JavaScript primitive data type. For example: 
+* `session.endDialogWithResult`: Use this method to end the waterfall if there is data to return to the calling dialog. The `response` argument that is returned can be a JSON object or any JavaScript primitive data type. For example:
 ```javascript
-session.endDialogWithResult({ 
-    response: { name: session.dialogData.name, company: session.dialogData.company } 
+session.endDialogWithResult({
+    response: { name: session.dialogData.name, company: session.dialogData.company }
 });
-``` 
+```
 
-* `session.endConversation`: Use this method to end the waterfall if the end of the waterfall represents the end of the conversation. 
+* `session.endConversation`: Use this method to end the waterfall if the end of the waterfall represents the end of the conversation.
 
 As an alternative to using one of these three methods to end a waterfall, you can attach the `endConversationAction` trigger to the dialog. For example:
 
@@ -186,7 +186,7 @@ bot.dialog('dinnerOrder', [
 
 ## Next steps
 
-Using waterfall, you can collect information from the user with *prompts*. Let's dive into how you can prompt user for input. 
+Using waterfall, you can collect information from the user with *prompts*. Let's dive into how you can prompt user for input.
 
 > [!div class="nextstepaction"]
 > [Prompt user for input](bot-builder-nodejs-dialog-prompt.md)
