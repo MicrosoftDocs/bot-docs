@@ -2,13 +2,12 @@
 ## [About Bot Framework](overview-introduction-bot-framework.md)
 ## [How it works](overview-how-bot-framework-works.md)
 ## [Add intelligence to bots](cognitive-services-bot-intelligence-overview.md)
-## [Get the SDK and tools](resources-tools-downloads.md)
-# Quickstarts
 ## [Start building bots](bot-builder-overview-getstarted.md)
-## [Create a bot with Azure Bot Service](~/azure-bot-service-quickstart.md)
-## [Create a bot with .NET SDK](~/dotnet/bot-builder-dotnet-quickstart.md)
-## [Create a bot with Node.js SDK](~/nodejs/bot-builder-nodejs-quickstart.md)
-## [Create a bot with REST](~/rest-api/bot-framework-rest-connector-quickstart.md)
+# Quickstarts
+## [Create bot - Azure Bot Service](~/azure-bot-service-quickstart.md)
+## [Create bot - .NET SDK](~/dotnet/bot-builder-dotnet-quickstart.md)
+## [Create bot - Node.js SDK](~/nodejs/bot-builder-nodejs-quickstart.md)
+## [Create bot - REST](~/rest-api/bot-framework-rest-connector-quickstart.md)
 # Samples
 ## [.NET](~/dotnet/bot-builder-dotnet-samples.md)
 ## [Node.js](~/nodejs/bot-builder-nodejs-samples.md)
