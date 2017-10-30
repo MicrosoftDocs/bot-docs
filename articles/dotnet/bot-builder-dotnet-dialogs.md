@@ -6,7 +6,7 @@ ms.author: kibrandl
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 08/04/2017
+ms.date: 10/25/2017
 ms.reviewer:
 ---
 
@@ -99,7 +99,7 @@ The bot will continue to increment `count` with each reply, until the user elect
 
 As in the first example, the `MessageReceivedAsync` method is called when a new message is received. 
 This time though, the `MessageReceivedAsync` method evaluates the user's message before responding. 
-If the user's message is "reset", the built-in `Prompts.Confirm` prompt spawns a sub-dialog that 
+If the user's message is "reset", the built-in `PromptDialog.Confirm` prompt spawns a sub-dialog that 
 asks the user to confirm the count reset. 
 The sub-dialog has its own private state that does not interfere with the parent dialog's state. 
 When the user responds to the prompt, the result of the sub-dialog is passed to the `AfterResetAsync` method, 
@@ -210,16 +210,16 @@ Dialogs manage conversation flow between a bot and a user. A dialog defines how 
 > [Manage conversation flow with dialogs](bot-builder-dotnet-manage-conversation-flow.md)
 
 
-[builderLibrary]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs?view=botbuilder-3.8
+[builderLibrary]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs?view=botbuilder-3.11.0
 
-[iBotData]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.internals.ibotdata?view=botbuilder-3.8
+[iBotData]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.internals.ibotdata?view=botbuilder-3.11.0
 
-[iBotToUser]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.internals.ibottouser?view=botbuilder-3.8 
+[iBotToUser]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.internals.ibottouser?view=botbuilder-3.11.0
 
-[iDialogStack]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.internals.idialogstack?view=botbuilder-3.8
+[iDialogStack]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.internals.idialogstack?view=botbuilder-3.11.0
 
-[iBotDataBag]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.ibotdatabag?view=botbuilder-3.8 
+[iBotDataBag]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.ibotdatabag?view=botbuilder-3.11.0
 
-[autofac]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.autofac.base?view=botbuilder-3.8
+[autofac]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.autofac.base?view=botbuilder-3.11.0
 
-[chain]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.chain?view=botbuilder-3.8
+[chain]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.chain?view=botbuilder-3.11.0
