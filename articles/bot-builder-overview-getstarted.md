@@ -17,7 +17,7 @@ enabling you to build, connect, test, deploy, and manage intelligent bots, all f
 You can write your bot in C# or Node.js directly in the browser using the Azure editor. Your bot is automatically
 deployed to Azure.
 
-The [Azure Bot Service Quickstart]((~/azure-bot-service-quickstart.md) will guide you through creating a bot with the Azure Bot Service.
+The [Azure Bot Service Quickstart](~/azure-bot-service-quickstart.md) will guide you through creating a bot with the Azure Bot Service.
 
 ## Bot Builder
 The Bot Framework includes Bot Builder to help you develop bots. Bot Builder is an open-source SDK with support for .NET and Node.js. Using Bot Builder, you can get started and have a working bot in just a few minutes.
