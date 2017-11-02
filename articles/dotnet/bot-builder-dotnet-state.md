@@ -117,6 +117,6 @@ With either of these [Azure Extensions](https://www.npmjs.com/package/botbuilder
 ## Additional resources
 
 - [Bot Framework troubleshooting guide](../troubleshoot-general-problems.md)
-- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
 
-[Activity]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.8
+[Activity]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.11.0

@@ -21,7 +21,7 @@ This article describes changes introduced by each version of the Bot Builder SDK
 > <a href="https://github.com/Microsoft/BotBuilder/issues" target="_blank">Bot Builder SDK GitHub repository</a> 
 > for a list of known issues.
 
-## <a href="https://www.nuget.org/packages/Microsoft.Bot.Builder/3.8.0" target="_blank">v3.8.0</a>
+## <a href="https://www.nuget.org/packages/Microsoft.Bot.Builder/3.11.0" target="_blank">v3.11.0</a>
 
 ### Changes
 

@@ -35,12 +35,12 @@ When the user taps one of the suggested actions, the bot will receive a message 
 - [Preview features with the Channel Inspector][inspector]
 - [Activities overview](bot-builder-dotnet-activities.md)
 - [Create messages](bot-builder-dotnet-create-messages.md)
-- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.8" target="_blank">Activity class</a>
-- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.imessageactivity?view=botbuilder-3.8" target="_blank">IMessageActivity interface</a>
-- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.cardaction?view=botbuilder-3.8" target="_blank">CardAction class</a>
-- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.suggestedactions?view=botbuilder-3.8" target="_blank">SuggestedActions class</a>
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.11.0" target="_blank">Activity class</a>
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.imessageactivity?view=botbuilder-3.11.0" target="_blank">IMessageActivity interface</a>
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.cardaction?view=botbuilder-3.11.0" target="_blank">CardAction class</a>
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.suggestedactions?view=botbuilder-3.11.0" target="_blank">SuggestedActions class</a>
 
-[cardAction]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.cardaction?view=botbuilder-3.8
+[cardAction]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.cardaction?view=botbuilder-3.11.0
 
 [inspector]: ../portal-channel-inspector.md
 

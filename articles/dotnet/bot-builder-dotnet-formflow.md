@@ -364,12 +364,12 @@ FormFlow simplifies dialog development. The advanced features of FormFlow let yo
 - [Localize form content](bot-builder-dotnet-formflow-localize.md)
 - [Define a form using JSON schema](bot-builder-dotnet-formflow-json-schema.md)
 - [Customize user experience with pattern language](bot-builder-dotnet-formflow-pattern-language.md)
-- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
 
-[LuisDialog]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.luisdialog-1?view=botbuilder-3.8
+[LuisDialog]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.luisdialog-1?view=botbuilder-3.11.0
 
-[iField]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.ifield-1?view=botbuilder-3.8
+[iField]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.ifield-1?view=botbuilder-3.11.0
 
-[field]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.field-1?view=botbuilder-3.8
+[field]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.field-1?view=botbuilder-3.11.0
 
-[formBuilder]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.formbuilder-1?view=botbuilder-3.8
+[formBuilder]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.formbuilder-1?view=botbuilder-3.11.0

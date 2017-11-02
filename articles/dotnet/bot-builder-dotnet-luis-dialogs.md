@@ -34,7 +34,7 @@ To create a bot that uses the LUIS app, you can first start with the sample bot 
 
 
 ## How LUIS passes intents and entities to your bot
-The following diagram shows the sequence of events that happen after the bot receives an utterance from the user. First, the bot passes the utterance to the LUIS app and gets a JSON result from LUIS that contains intents and entities. Next, your bot automatically invokes any matching handler in a [LuisDialog](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.luisdialog-1?view=botbuilder-3.8). The intent handler is associated with the high-scoring intent in the LUIS result by using the [LuisIntent attribute](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.luisintentattribute?view=botbuilder-3.8). The full details of the match, including the list of intents and entities that LUIS detected, are passed as a [LuisResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.luis.models.luisresult?view=botbuilder-3.8) to the `result` parameter of the matching handler.
+The following diagram shows the sequence of events that happen after the bot receives an utterance from the user. First, the bot passes the utterance to the LUIS app and gets a JSON result from LUIS that contains intents and entities. Next, your bot automatically invokes any matching handler in a [LuisDialog](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.luisdialog-1?view=botbuilder-3.11.0). The intent handler is associated with the high-scoring intent in the LUIS result by using the [LuisIntent attribute](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.luisintentattribute?view=botbuilder-3.11.0). The full details of the match, including the list of intents and entities that LUIS detected, are passed as a [LuisResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.luis.models.luisresult?view=botbuilder-3.11.0) to the `result` parameter of the matching handler.
 
 <p align=center>
 <img alt="How LUIS passes intents and entities to your bot" src="~/media/bot-builder-dotnet-use-luis/bot-builder-dotnet-luis-message-flow-bot-code-notes.png">
@@ -42,8 +42,8 @@ The following diagram shows the sequence of events that happen after the bot rec
 
 ## Create a class that derives from LuisDialog
 
-To create a [dialog](bot-builder-dotnet-dialogs.md) that uses LUIS, first create a class that derives from [LuisDialog](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.luisdialog-1?view=botbuilder-3.8) and 
-specify the [LuisModel attribute](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.luis.luismodelattribute?view=botbuilder-3.8). 
+To create a [dialog](bot-builder-dotnet-dialogs.md) that uses LUIS, first create a class that derives from [LuisDialog](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.luisdialog-1?view=botbuilder-3.11.0) and 
+specify the [LuisModel attribute](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.luis.luismodelattribute?view=botbuilder-3.11.0). 
 To populate the `modelID` and `subscriptionKey` parameters for the `LuisModel` attribute, use 
 the `id` and `subscription-key` attribute values from your LUIS app's endpoint URL. 
 
@@ -113,7 +113,7 @@ To publish to the European regions, you can create LUIS apps at <a href="https:/
 West Europe     | `https://westeurope.api.cognitive.microsoft.com/luis/v2.0/apps/YOUR-APP-ID?subscription-key=YOUR-SUBSCRIPTION-KEY` |
 
 ## Data privacy
-To keep LUIS from saving the user's utterances, set the `log` parameter to false in the [LuisModel attribute](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.luis.luismodelattribute?view=botbuilder-3.8).
+To keep LUIS from saving the user's utterances, set the `log` parameter to false in the [LuisModel attribute](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.luis.luismodelattribute?view=botbuilder-3.11.0).
 
 [!code-csharp[Class definition](../includes/code/dotnet-luis-dialogs.cs#classDefinitionLogFalse)]
 
@@ -130,7 +130,7 @@ From trying the bot, you can see how tasks are invoked by a LUIS intent. However
 - [Manage conversation flow with dialogs](bot-builder-dotnet-manage-conversation-flow.md)
 - [Language understanding](../cognitive-services-bot-intelligence-overview.md#language-understanding)
 - <a href="https://www.luis.ai" target="_blank">LUIS</a>
-- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
 
 [LUIS]: https://www.luis.ai/
 [NotesSample]: https://github.com/Microsoft/BotFramework-Samples/tree/master/docs-samples/CSharp/Simple-LUIS-Notes-Sample

@@ -30,7 +30,7 @@ exchange information between bot and user on a channel.
 ## Create a connector client
 
 The [ConnectorClient][ConnectorClient] class contains the methods that a bot uses to communicate with a user on a channel. 
-When your bot receives an <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.8" target="_blank">Activity</a> object from the Connector, 
+When your bot receives an <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.11.0" target="_blank">Activity</a> object from the Connector, 
 it should use the `ServiceUrl` specified for that activity to create the connector client that it'll 
 subsequently use to generate a response. 
 
@@ -119,8 +119,8 @@ This code example uses the `CreateConversation` method to create a group convers
 
 - [Activities overview](bot-builder-dotnet-activities.md)
 - [Create messages](bot-builder-dotnet-create-messages.md)
-- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
-- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.8" target="_blank">Activity class</a>
-- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.connectorclient?view=botbuilder-3.8" target="_blank">ConnectorClient class</a>
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.11.0" target="_blank">Activity class</a>
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.connectorclient?view=botbuilder-3.11.0" target="_blank">ConnectorClient class</a>
 
-[ConnectorClient]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.connectorclient?view=botbuilder-3.8
+[ConnectorClient]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.connectorclient?view=botbuilder-3.11.0

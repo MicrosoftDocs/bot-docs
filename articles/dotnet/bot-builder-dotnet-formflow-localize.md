@@ -172,10 +172,10 @@ Par pain "neuf" vouliez-vous dire (1. Neuf grains miel avoine, ou 2. Neuf grains
 - [Customize a form using FormBuilder](bot-builder-dotnet-formflow-formbuilder.md)
 - [Define a form using JSON schema](bot-builder-dotnet-formflow-json-schema.md)
 - [Customize user experience with pattern language](bot-builder-dotnet-formflow-pattern-language.md)
-- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
 
-[build]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.formbuilder-1.build?view=botbuilder-3.8 
+[build]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.formbuilder-1.build?view=botbuilder-3.11.0 
 
-[setDefine]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.field-1.setdefine?view=botbuilder-3.8
+[setDefine]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.field-1.setdefine?view=botbuilder-3.11.0
 
-[saveResources]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.iform-1.saveresources?view=botbuilder-3.8
+[saveResources]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.iform-1.saveresources?view=botbuilder-3.11.0

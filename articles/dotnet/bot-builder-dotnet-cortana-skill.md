@@ -326,7 +326,7 @@ If your bot is running locally or deployed in the cloud, you can invoke it from 
 * [Card design best practices for Cortana][CardDesign]
 * [Cortana Dev Center][CortanaDevCenter]
 * [Testing and debugging best practices for Cortana][Cortana-TestBestPractice]
-* <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
+* <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
 
 [CortanaGetStarted]: https://docs.microsoft.com/en-us/cortana/getstarted
 [BFPortal]: https://dev.botframework.com/
@@ -349,12 +349,12 @@ If your bot is running locally or deployed in the cloud, you can invoke it from 
 [CortanaChannel]: https://aka.ms/bot-cortana-channel
 [Cortana-TestBestPractice]: https://aka.ms/cortana-test-best-practice
 
-[heroCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.herocard?view=botbuilder-3.8
+[heroCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.herocard?view=botbuilder-3.11.0
 
-[thumbnailCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.thumbnailcard?view=botbuilder-3.8 
+[thumbnailCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.thumbnailcard?view=botbuilder-3.11.0 
 
-[receiptCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.receiptcard?view=botbuilder-3.8 
+[receiptCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.receiptcard?view=botbuilder-3.11.0 
 
-[signinCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.signincard?view=botbuilder-3.8 
+[signinCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.signincard?view=botbuilder-3.11.0 
 
 

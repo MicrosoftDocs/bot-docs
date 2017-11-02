@@ -141,22 +141,22 @@ What kind of sandwich would you like?
 - [Customize a form using FormBuilder](bot-builder-dotnet-formflow-formbuilder.md)
 - [Localize form content](bot-builder-dotnet-formflow-localize.md)
 - [Define a form using JSON schema](bot-builder-dotnet-formflow-json-schema.md)
-- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.8" target="_blank">Bot Builder SDK for .NET Reference</a>
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
 
-[promptAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.promptattribute?view=botbuilder-3.8
+[promptAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.promptattribute?view=botbuilder-3.11.0
 
-[field]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.iformbuilder-1.field?view=botbuilder-3.8
+[field]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.iformbuilder-1.field?view=botbuilder-3.11.0
 
-[formConfiguration]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.formconfiguration?view=botbuilder-3.8
+[formConfiguration]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.formconfiguration?view=botbuilder-3.11.0
 
-[separator]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.templatebaseattribute.separator?view=botbuilder-3.8
+[separator]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.templatebaseattribute.separator?view=botbuilder-3.11.0
 
-[lastSeparator]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.templatebaseattribute.lastseparator?view=botbuilder-3.8
+[lastSeparator]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.templatebaseattribute.lastseparator?view=botbuilder-3.11.0
 
-[templateUsage]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.templateusage?view=botbuilder-3.8
+[templateUsage]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.templateusage?view=botbuilder-3.11.0
 
-[caseNormalization]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.casenormalization?view=botbuilder-3.8
+[caseNormalization]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.casenormalization?view=botbuilder-3.11.0
 
-[choiceStyleOptions]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.choicestyleoptions?view=botbuilder-3.8
+[choiceStyleOptions]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.choicestyleoptions?view=botbuilder-3.11.0
 
-[feedbackOptions]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.feedbackoptions?view=botbuilder-3.8
+[feedbackOptions]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.feedbackoptions?view=botbuilder-3.11.0
