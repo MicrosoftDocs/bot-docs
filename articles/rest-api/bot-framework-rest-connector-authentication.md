@@ -202,7 +202,7 @@ When parsing the token, you must configure the parsing library or write your own
 2. The token is valid JSON that conforms to the [JWT standard](http://openid.net/specs/draft-jones-json-web-token-07.html).
 3. The token contains an "issuer" claim with value of `https://api.botframework.com`.
 4. The token contains an "audience" claim with a value equal to the bot's Microsoft App ID.
-5. The token has not yet expired. Industry-standard clock-skew is 5 minutes.
+5. The token is within its validity period. Industry-standard clock-skew is 5 minutes.
 6. The token has a valid cryptographic signature, with a key listed in the OpenID keys document that was retrieved in [Step 3](#connector-to-bot-step-3), using the signing algorithm that is specified in the `id_token_signing_alg_values_supported` property of the Open ID Metadata document that was retrieved in [Step 2](#openid-metadata-document).
 7. The token contains a "serviceUrl" claim with value that matches the `servieUrl` property at the root of the [Activity][Activity] object of the incoming request. 
 
@@ -299,7 +299,7 @@ When parsing the token, you must configure the parsing library or write your own
 3. The token contains an "issuer" claim with value of `https://sts.windows.net/d6d49420-f39b-4df7-a1dc-d59a935871db/` or `https://sts.windows.net/f8cdef31-a31e-4b4a-93e4-5f571e91255a/`. (Checking for both issuer values will ensure you are checking for both the security protocol v3.1 and v3.2 issuer values)
 4. The token contains an "audience" claim with a value equal to the bot's Microsoft App ID.
 5. The token contains an "appid" claim with the value equal to the bot's Microsoft App ID.
-6. The token has not yet expired. Industry-standard clock-skew is 5 minutes.
+6. The token is within its validity period. Industry-standard clock-skew is 5 minutes.
 7. The token has a valid cryptographic signature with a key listed in the OpenID keys document that was retrieved in [Step 3](#emulator-to-bot-step-3).
 
 > [!NOTE]
