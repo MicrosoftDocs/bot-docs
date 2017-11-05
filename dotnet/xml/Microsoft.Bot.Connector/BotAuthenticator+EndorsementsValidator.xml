@@ -1,0 +1,28 @@
+﻿<Type Name="BotAuthenticator+EndorsementsValidator" FullName="Microsoft.Bot.Connector.BotAuthenticator+EndorsementsValidator">
+  <TypeSignature Language="C#" Value="public delegate bool BotAuthenticator.EndorsementsValidator(IEnumerable&lt;IActivity&gt; activities, string[] endorsements);" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed BotAuthenticator/EndorsementsValidator extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.BotAuthenticator.EndorsementsValidator" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="activities" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Connector.IActivity&gt;" />
+    <Parameter Name="endorsements" Type="System.String[]" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Boolean</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="activities"> The activities.</param>
+    <param name="endorsements"> The endorsements used for validation.</param>
+    <summary>
+            The endorsements validator delegate. 
+            </summary>
+    <returns>true if validation passes; false otherwise.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

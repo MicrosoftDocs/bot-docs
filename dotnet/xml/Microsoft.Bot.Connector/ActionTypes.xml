@@ -1,0 +1,205 @@
+﻿<Type Name="ActionTypes" FullName="Microsoft.Bot.Connector.ActionTypes">
+  <TypeSignature Language="C#" Value="public class ActionTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActionTypes extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ActionTypes" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActionTypes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ActionTypes.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadFile">
+      <MemberSignature Language="C#" Value="public const string DownloadFile;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DownloadFile" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActionTypes.DownloadFile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            download file referenced by url
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImBack">
+      <MemberSignature Language="C#" Value="public const string ImBack;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ImBack" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActionTypes.ImBack" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Client will post message to bot, so all other participants will see that was posted to the bot and who posted this.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageBack">
+      <MemberSignature Language="C#" Value="public const string MessageBack;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string MessageBack" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActionTypes.MessageBack" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Post message to bot
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenUrl">
+      <MemberSignature Language="C#" Value="public const string OpenUrl;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string OpenUrl" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActionTypes.OpenUrl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Client will open given url in the built-in browser.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlayAudio">
+      <MemberSignature Language="C#" Value="public const string PlayAudio;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PlayAudio" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActionTypes.PlayAudio" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            playback audio container referenced by url
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlayVideo">
+      <MemberSignature Language="C#" Value="public const string PlayVideo;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PlayVideo" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActionTypes.PlayVideo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            playback video container referenced by url
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostBack">
+      <MemberSignature Language="C#" Value="public const string PostBack;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PostBack" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActionTypes.PostBack" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Client will post message to bot privately, so other participants inside conversation will not see that was posted. 
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowImage">
+      <MemberSignature Language="C#" Value="public const string ShowImage;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ShowImage" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActionTypes.ShowImage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            show image referenced by url
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Signin">
+      <MemberSignature Language="C#" Value="public const string Signin;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Signin" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActionTypes.Signin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Signin button
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
