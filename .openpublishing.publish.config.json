@@ -14,7 +14,8 @@
       "locale": "en-us",
       "monikers": [
         "botbuilder-3.11.0",
-        "skypebotsmedia-1.5.0.1177-alpha"
+        "skypebotsmedia-1.5.0.1177-alpha",
+        "botconnector-3.11.1"
       ],
       "open_to_public_contributors": true,
       "type_mapping": {

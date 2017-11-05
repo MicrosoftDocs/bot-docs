@@ -1,0 +1,101 @@
+﻿<Type Name="EndorsementsRetriever" FullName="Microsoft.Bot.Connector.EndorsementsRetriever">
+  <TypeSignature Language="C#" Value="public sealed class EndorsementsRetriever : Microsoft.IdentityModel.Protocols.IConfigurationRetriever&lt;System.Collections.Generic.IDictionary&lt;string,string[]&gt;&gt;, Microsoft.IdentityModel.Protocols.IDocumentRetriever" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EndorsementsRetriever extends System.Object implements class Microsoft.IdentityModel.Protocols.IConfigurationRetriever`1&lt;class System.Collections.Generic.IDictionary`2&lt;string, string[]&gt;&gt;, class Microsoft.IdentityModel.Protocols.IDocumentRetriever" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.EndorsementsRetriever" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.IdentityModel.Protocols.IConfigurationRetriever&lt;System.Collections.Generic.IDictionary&lt;System.String,System.String[]&gt;&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.IdentityModel.Protocols.IDocumentRetriever</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EndorsementsRetriever ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.EndorsementsRetriever.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConfigurationAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string,string[]&gt;&gt; GetConfigurationAsync (string address, Microsoft.IdentityModel.Protocols.IDocumentRetriever retriever, System.Threading.CancellationToken cancel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IDictionary`2&lt;string, string[]&gt;&gt; GetConfigurationAsync(string address, class Microsoft.IdentityModel.Protocols.IDocumentRetriever retriever, valuetype System.Threading.CancellationToken cancel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.EndorsementsRetriever.GetConfigurationAsync(System.String,Microsoft.IdentityModel.Protocols.IDocumentRetriever,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.EndorsementsRetriever/&lt;GetConfigurationAsync&gt;d__0))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;System.String,System.String[]&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.String" />
+        <Parameter Name="retriever" Type="Microsoft.IdentityModel.Protocols.IDocumentRetriever" />
+        <Parameter Name="cancel" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="retriever">To be added.</param>
+        <param name="cancel">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDocumentAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; GetDocumentAsync (string address, System.Threading.CancellationToken cancel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; GetDocumentAsync(string address, valuetype System.Threading.CancellationToken cancel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.EndorsementsRetriever.GetDocumentAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.EndorsementsRetriever/&lt;GetDocumentAsync&gt;d__1))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.String" />
+        <Parameter Name="cancel" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="cancel">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

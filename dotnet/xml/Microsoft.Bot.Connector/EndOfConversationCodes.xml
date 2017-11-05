@@ -1,0 +1,150 @@
+﻿<Type Name="EndOfConversationCodes" FullName="Microsoft.Bot.Connector.EndOfConversationCodes">
+  <TypeSignature Language="C#" Value="public class EndOfConversationCodes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EndOfConversationCodes extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.EndOfConversationCodes" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Codes indicating why a conversation has ended
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EndOfConversationCodes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.EndOfConversationCodes.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BotIssuedInvalidMessage">
+      <MemberSignature Language="C#" Value="public const string BotIssuedInvalidMessage;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string BotIssuedInvalidMessage" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.EndOfConversationCodes.BotIssuedInvalidMessage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The conversation was ended because the bot sent an invalid message
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BotTimedOut">
+      <MemberSignature Language="C#" Value="public const string BotTimedOut;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string BotTimedOut" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.EndOfConversationCodes.BotTimedOut" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The conversation was ended because requests sent to the bot timed out
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChannelFailed">
+      <MemberSignature Language="C#" Value="public const string ChannelFailed;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ChannelFailed" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.EndOfConversationCodes.ChannelFailed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The conversation ended because the channel experienced an internal failure
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompletedSuccessfully">
+      <MemberSignature Language="C#" Value="public const string CompletedSuccessfully;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string CompletedSuccessfully" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.EndOfConversationCodes.CompletedSuccessfully" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The conversation completed successfully
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="public const string Unknown;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Unknown" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.EndOfConversationCodes.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The conversation was ended for unknown reasons
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserCancelled">
+      <MemberSignature Language="C#" Value="public const string UserCancelled;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string UserCancelled" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.EndOfConversationCodes.UserCancelled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The user cancelled the conversation
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
