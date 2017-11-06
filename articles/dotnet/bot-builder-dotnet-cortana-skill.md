@@ -349,12 +349,12 @@ If your bot is running locally or deployed in the cloud, you can invoke it from 
 [CortanaChannel]: https://aka.ms/bot-cortana-channel
 [Cortana-TestBestPractice]: https://aka.ms/cortana-test-best-practice
 
-[heroCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.herocard?view=botbuilder-3.11.0
+[heroCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.herocard
 
-[thumbnailCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.thumbnailcard?view=botbuilder-3.11.0 
+[thumbnailCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.thumbnailcard 
 
-[receiptCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.receiptcard?view=botbuilder-3.11.0 
+[receiptCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.receiptcard 
 
-[signinCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.signincard?view=botbuilder-3.11.0 
+[signinCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.signincard 
 
 

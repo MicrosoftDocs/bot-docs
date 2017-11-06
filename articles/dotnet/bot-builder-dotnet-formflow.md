@@ -366,10 +366,10 @@ FormFlow simplifies dialog development. The advanced features of FormFlow let yo
 - [Customize user experience with pattern language](bot-builder-dotnet-formflow-pattern-language.md)
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
 
-[LuisDialog]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.luisdialog-1?view=botbuilder-3.11.0
+[LuisDialog]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.luisdialog-1
 
-[iField]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.ifield-1?view=botbuilder-3.11.0
+[iField]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.ifield-1
 
-[field]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.field-1?view=botbuilder-3.11.0
+[field]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.field-1
 
-[formBuilder]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.formbuilder-1?view=botbuilder-3.11.0
+[formBuilder]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.formbuilder-1
