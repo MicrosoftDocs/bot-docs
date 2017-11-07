@@ -19,8 +19,8 @@ If the user types instead of speaking a response, Web Chat turns off the speech 
 ## Prerequisites
 
   Before you run the sample, you need to have a Direct Line secret or token for the bot that you want to run using the Web Chat control. 
-  * See [Connect a bot to Direct Line](https://docs.microsoft.com/en-us/bot-framework/channel-connect-directline) for information on getting a Direct Line secret associated with your bot.
-  * See [Generate a Direct Line token](https://docs.microsoft.com/en-us/bot-framework/rest-api/bot-framework-rest-direct-line-3-0-authentication) for information on exchanging the secret for a token.
+  * See [Connect a bot to Direct Line](channel-connect-directline.md) for information on getting a Direct Line secret associated with your bot.
+  * See [Generate a Direct Line token](rest-api/bot-framework-rest-direct-line-3-0-authentication.md) for information on exchanging the secret for a token.
 
 ## Customizing Web Chat for speech
 To enable the speech functionality in Web Chat, you need to customize the JavaScript code that invokes the Web Chat control. You can try out voice-enabled Web Chat locally using the following steps.
@@ -44,8 +44,8 @@ To enable the speech functionality in Web Chat, you need to customize the JavaSc
 
   | Parameter | Description |
   |-----------|-------------|
-  | s | Direct Line secret. See [Connect a bot to Direct Line](https://docs.microsoft.com/en-us/bot-framework/channel-connect-directline) for information on getting a Direct Line secret. |
-  | t | Direct Line token. See [Generate a Direct Line token](https://docs.microsoft.com/en-us/bot-framework/rest-api/bot-framework-rest-direct-line-3-0-authentication) for info on how to generate this token. |
+  | s | Direct Line secret. See [Connect a bot to Direct Line](channel-connect-directline.md) for information on getting a Direct Line secret. |
+  | t | Direct Line token. See [Generate a Direct Line token](rest-api/bot-framework-rest-direct-line-3-0-authentication.md) for info on how to generate this token. |
   | domain | Optional. The URL of an alternate Direct Line endpoint.  |
   | webSocket | Optional. Set to 'true' to use WebSocket to receive messages. Default is `false`. |
   | userid | Optional. The ID of the bot user.  |
@@ -104,11 +104,11 @@ The following code passes the speech options to the Web Chat control:
 
 ## Next steps
 Now that you can enable voice interaction with Web Chat, learn how your bot constructs spoken messages and adjusts the state of the microphone:
-* [Add speech to messages (C#)](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-text-to-speech)
-* [Add speech to messages (Node.js)](https://docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-text-to-speech)
+* [Add speech to messages (C#)](dotnet/bot-builder-dotnet-text-to-speech.md)
+* [Add speech to messages (Node.js)](nodejs/bot-builder-nodejs-text-to-speech.md)
 
 ## Additional resources
 
 * You can [download the source code](https://github.com/Microsoft/BotFramework-WebChat) for the web chat control on GitHub.
-* The [Bing Speech API documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/speech/home) provides more information on the Bing Speech API.
+* The [Bing Speech API documentation](https://docs.microsoft.com/azure/cognitive-services/speech/home) provides more information on the Bing Speech API.
 

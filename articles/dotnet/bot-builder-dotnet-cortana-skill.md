@@ -330,7 +330,6 @@ If your bot is running locally or deployed in the cloud, you can invoke it from 
 
 [CortanaGetStarted]: https://docs.microsoft.com/en-us/cortana/getstarted
 [BFPortal]: https://dev.botframework.com/
-[Register]: https://docs.microsoft.com/en-us/bot-framework/portal-register-bot
 
 [SSMLRef]: https://aka.ms/cortana-ssml
 [CortanaDevCenter]: https://developer.microsoft.com/en-us/cortana
@@ -349,12 +348,12 @@ If your bot is running locally or deployed in the cloud, you can invoke it from 
 [CortanaChannel]: https://aka.ms/bot-cortana-channel
 [Cortana-TestBestPractice]: https://aka.ms/cortana-test-best-practice
 
-[heroCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.herocard
+[heroCard]: /dotnet/api/microsoft.bot.connector.herocard
 
-[thumbnailCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.thumbnailcard 
+[thumbnailCard]: /dotnet/api/microsoft.bot.connector.thumbnailcard 
 
-[receiptCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.receiptcard 
+[receiptCard]: /dotnet/api/microsoft.bot.connector.receiptcard 
 
-[signinCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.signincard 
+[signinCard]: /dotnet/api/microsoft.bot.connector.signincard 
 
 

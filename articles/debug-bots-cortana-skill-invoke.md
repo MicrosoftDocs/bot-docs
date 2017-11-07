@@ -14,7 +14,7 @@ ms.reviewer:
 If you've built a Cortana skill using the Bot Builder SDK, you can test it by invoking it from Cortana. The following instructions walk you through the steps required to try out your Cortana skill.
 
 ## Register your bot
-Log in to the [Bot Framework Portal][BFPortal] using a [Microsoft account](https://account.microsoft.com/account). If you haven't [registered][Register] your bot yet, you can do so now.
+Log in to the [Bot Framework Portal][BFPortal] using a [Microsoft account](https://account.microsoft.com/account). If you haven't [registered][portal-register-bot.md] your bot yet, you can do so now.
 
 > [!NOTE]
 > To register a bot as Cortana skill, you must be signed in with a Microsoft account. 
@@ -126,7 +126,6 @@ Once you have tested your Cortana skill and verified that it works the way you'd
 [CortanaGetStarted]: https://docs.microsoft.com/en-us/cortana/getstarted
 
 [BFPortal]: https://dev.botframework.com/
-[Register]: https://docs.microsoft.com/en-us/bot-framework/portal-register-bot
 [CortanaDevCenter]: https://developer.microsoft.com/en-us/cortana
 
 [CortanaSpecificEntities]: https://aka.ms/lgvcto

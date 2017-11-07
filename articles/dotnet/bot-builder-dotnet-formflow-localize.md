@@ -174,8 +174,8 @@ Par pain "neuf" vouliez-vous dire (1. Neuf grains miel avoine, ou 2. Neuf grains
 - [Customize user experience with pattern language](bot-builder-dotnet-formflow-pattern-language.md)
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
 
-[build]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.formbuilder-1.build 
+[build]: /dotnet/api/microsoft.bot.builder.formflow.formbuilder-1.build 
 
-[setDefine]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.field-1.setdefine
+[setDefine]: /dotnet/api/microsoft.bot.builder.formflow.advanced.field-1.setdefine
 
-[saveResources]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.iform-1.saveresources
+[saveResources]: /dotnet/api/microsoft.bot.builder.formflow.iform-1.saveresources

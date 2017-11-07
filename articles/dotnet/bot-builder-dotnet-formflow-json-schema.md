@@ -337,12 +337,12 @@ that is described in [Customize a form using FormBuilder](bot-builder-dotnet-for
 - [Customize user experience with pattern language](bot-builder-dotnet-formflow-pattern-language.md)
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
 
-[numericAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.numericattribute
+[numericAttribute]: /dotnet/api/microsoft.bot.builder.formflow.numericattribute
 
-[patternAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.patternattribute
+[patternAttribute]: /dotnet/api/microsoft.bot.builder.formflow.patternattribute
 
-[templateAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.templateattribute
+[templateAttribute]: /dotnet/api/microsoft.bot.builder.formflow.templateattribute
 
-[promptAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.promptattribute
+[promptAttribute]: /dotnet/api/microsoft.bot.builder.formflow.promptattribute
 
-[describeAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.describeattribute
+[describeAttribute]: /dotnet/api/microsoft.bot.builder.formflow.describeattribute

@@ -104,16 +104,16 @@ In this example, the form executes these steps:
 - [Customize user experience with pattern language](bot-builder-dotnet-formflow-pattern-language.md)
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
 
-[formBuilder]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.formbuilder-1
+[formBuilder]: /dotnet/api/microsoft.bot.builder.formflow.formbuilder-1
 
-[setType]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.field-1.settype
+[setType]: /dotnet/api/microsoft.bot.builder.formflow.advanced.field-1.settype
 
-[setActive]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.field-1.setactive
+[setActive]: /dotnet/api/microsoft.bot.builder.formflow.advanced.field-1.setactive
 
-[setDefine]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.field-1.setdefine
+[setDefine]: /dotnet/api/microsoft.bot.builder.formflow.advanced.field-1.setdefine
 
-[field]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.field-1
+[field]: /dotnet/api/microsoft.bot.builder.formflow.advanced.field-1
 
-[iField]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.ifield-1
+[iField]: /dotnet/api/microsoft.bot.builder.formflow.advanced.ifield-1
 
-[FieldReflector]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.fieldreflector-1
+[FieldReflector]: /dotnet/api/microsoft.bot.builder.formflow.advanced.fieldreflector-1

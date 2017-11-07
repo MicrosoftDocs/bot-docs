@@ -68,6 +68,6 @@ Now you know the concepts behind every bot. You can quickly [build a bot using V
 > [!div class="nextstepaction"]
 > [Dialogs in the Bot Builder SDK for .NET](bot-builder-dotnet-dialogs.md)
 
-[connectorLibrary]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector
+[connectorLibrary]: /dotnet/api/microsoft.bot.connector
 
-[builderLibrary]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs
+[builderLibrary]: /dotnet/api/microsoft.bot.builder.dialogs

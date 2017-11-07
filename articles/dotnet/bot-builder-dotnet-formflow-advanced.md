@@ -333,24 +333,24 @@ see [Customize a form using FormBuilder](bot-builder-dotnet-formflow-formbuilder
 - [Customize user experience with pattern language](bot-builder-dotnet-formflow-pattern-language.md)
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
 
-[formDialog]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.formdialog
+[formDialog]: /dotnet/api/microsoft.bot.builder.formflow.formdialog
 
-[promptFieldsWithValues]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.formoptions.promptfieldswithvalues
+[promptFieldsWithValues]: /dotnet/api/microsoft.bot.builder.formflow.formoptions.promptfieldswithvalues
 
-[validateResult]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.validateresult
+[validateResult]: /dotnet/api/microsoft.bot.builder.formflow.validateresult
 
-[describeAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.describeattribute
+[describeAttribute]: /dotnet/api/microsoft.bot.builder.formflow.describeattribute
 
-[numericAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.numericattribute
+[numericAttribute]: /dotnet/api/microsoft.bot.builder.formflow.numericattribute
 
-[optionalAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.optionalattribute
+[optionalAttribute]: /dotnet/api/microsoft.bot.builder.formflow.optionalattribute
 
-[patternAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.patternattribute
+[patternAttribute]: /dotnet/api/microsoft.bot.builder.formflow.patternattribute
 
-[promptAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.promptattribute
+[promptAttribute]: /dotnet/api/microsoft.bot.builder.formflow.promptattribute
 
-[templateAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.templateattribute
+[templateAttribute]: /dotnet/api/microsoft.bot.builder.formflow.templateattribute
 
-[termsAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.termsattribute
+[termsAttribute]: /dotnet/api/microsoft.bot.builder.formflow.termsattribute
 
-[notUnderstood]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.templateusage.notunderstood
+[notUnderstood]: /dotnet/api/microsoft.bot.builder.formflow.templateusage.notunderstood

@@ -65,4 +65,4 @@ The Basic template provides a good foundation that you can build upon to create 
 - [Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-overview.md)
 - [Bot Builder SDK for Node.js](~/nodejs/index.md)
 
-[promptDialog]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.promptdialog
+[promptDialog]: /dotnet/api/microsoft.bot.builder.dialogs.promptdialog

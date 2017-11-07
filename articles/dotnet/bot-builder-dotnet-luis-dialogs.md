@@ -27,14 +27,14 @@ The LUIS app, which is the web service you configure at [www.luis.ai][LUIS] to p
 > You can also create the LUIS app by importing the [Notes sample JSON][NotesSampleJSON]. In [www.luis.ai][LUIS], click **Import App** in the **My Apps** page and select the JSON file to import.
 
 ## Create a note-taking bot integrated with the LUIS app
-To create a bot that uses the LUIS app, you can first start with the sample bot that you create according to the steps in [Create a bot with the Bot Builder SDK for .NET](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-quickstart), and edit the code to correspond to the examples in this article.
+To create a bot that uses the LUIS app, you can first start with the sample bot that you create according to the steps in [Create a bot with the Bot Builder SDK for .NET](bot-builder-dotnet-quickstart.md), and edit the code to correspond to the examples in this article.
 
 > [!TIP] 
 > You can also find the sample code described in this article at [Notes bot sample][NotesSample].
 
 
 ## How LUIS passes intents and entities to your bot
-The following diagram shows the sequence of events that happen after the bot receives an utterance from the user. First, the bot passes the utterance to the LUIS app and gets a JSON result from LUIS that contains intents and entities. Next, your bot automatically invokes any matching handler in a [LuisDialog](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.luisdialog-1). The intent handler is associated with the high-scoring intent in the LUIS result by using the [LuisIntent attribute](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.luisintentattribute). The full details of the match, including the list of intents and entities that LUIS detected, are passed as a [LuisResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.luis.models.luisresult) to the `result` parameter of the matching handler.
+The following diagram shows the sequence of events that happen after the bot receives an utterance from the user. First, the bot passes the utterance to the LUIS app and gets a JSON result from LUIS that contains intents and entities. Next, your bot automatically invokes any matching handler in a [LuisDialog](/dotnet/api/microsoft.bot.builder.dialogs.luisdialog-1). The intent handler is associated with the high-scoring intent in the LUIS result by using the [LuisIntent attribute](/dotnet/api/microsoft.bot.builder.dialogs.luisintentattribute). The full details of the match, including the list of intents and entities that LUIS detected, are passed as a [LuisResult](/dotnet/api/microsoft.bot.builder.luis.models.luisresult) to the `result` parameter of the matching handler.
 
 <p align=center>
 <img alt="How LUIS passes intents and entities to your bot" src="~/media/bot-builder-dotnet-use-luis/bot-builder-dotnet-luis-message-flow-bot-code-notes.png">
@@ -42,8 +42,8 @@ The following diagram shows the sequence of events that happen after the bot rec
 
 ## Create a class that derives from LuisDialog
 
-To create a [dialog](bot-builder-dotnet-dialogs.md) that uses LUIS, first create a class that derives from [LuisDialog](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.luisdialog-1) and 
-specify the [LuisModel attribute](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.luis.luismodelattribute). 
+To create a [dialog](bot-builder-dotnet-dialogs.md) that uses LUIS, first create a class that derives from [LuisDialog](/dotnet/api/microsoft.bot.builder.dialogs.luisdialog-1) and 
+specify the [LuisModel attribute](/dotnet/api/microsoft.bot.builder.luis.luismodelattribute). 
 To populate the `modelID` and `subscriptionKey` parameters for the `LuisModel` attribute, use 
 the `id` and `subscription-key` attribute values from your LUIS app's endpoint URL. 
 
@@ -113,7 +113,7 @@ To publish to the European regions, you can create LUIS apps at <a href="https:/
 West Europe     | `https://westeurope.api.cognitive.microsoft.com/luis/v2.0/apps/YOUR-APP-ID?subscription-key=YOUR-SUBSCRIPTION-KEY` |
 
 ## Data privacy
-To keep LUIS from saving the user's utterances, set the `log` parameter to false in the [LuisModel attribute](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.luis.luismodelattribute).
+To keep LUIS from saving the user's utterances, set the `log` parameter to false in the [LuisModel attribute](/dotnet/api/microsoft.bot.builder.luis.luismodelattribute).
 
 [!code-csharp[Class definition](../includes/code/dotnet-luis-dialogs.cs#classDefinitionLogFalse)]
 

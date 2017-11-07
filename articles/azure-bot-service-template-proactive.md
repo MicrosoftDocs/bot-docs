@@ -118,6 +118,6 @@ The Proactive template provides a good foundation that you can build upon and cu
 
 [sessionMessageAddress]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iaddress.html
 
-[RelatesTo]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity.relatesto#Microsoft_Bot_Connector_Activity_RelatesTo
+[RelatesTo]: /dotnet/api/microsoft.bot.connector.activity.relatesto#Microsoft_Bot_Connector_Activity_RelatesTo
 
-[ConversationReference]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.conversationreference
+[ConversationReference]: /dotnet/api/microsoft.bot.connector.conversationreference

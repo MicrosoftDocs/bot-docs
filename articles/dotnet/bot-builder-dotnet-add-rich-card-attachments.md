@@ -16,7 +16,7 @@ ms.date: 06/06/2017
 > - [REST](../rest-api/bot-framework-rest-connector-add-rich-cards.md)
 
 A message exchange between user and bot can contain one or more rich cards rendered as a list or carousel. 
-The `Attachments` property of the <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity" target="_blank">Activity</a> object contains an array of <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.attachment" target="_blank">Attachment</a> objects that represent the rich cards and media attachments within the message. 
+The `Attachments` property of the <a href="/dotnet/api/microsoft.bot.connector.activity" target="_blank">Activity</a> object contains an array of <a href="/dotnet/api/microsoft.bot.connector.attachment" target="_blank">Attachment</a> objects that represent the rich cards and media attachments within the message. 
 
 > [!NOTE]
 > For information about how to add media attachments to messages, see 
@@ -130,21 +130,21 @@ The resulting card contains three blocks of text, an input field (choice list), 
 - [Activities overview](bot-builder-dotnet-activities.md)
 - [Create messages](bot-builder-dotnet-create-messages.md)
 - [Add media attachments to messages](bot-builder-dotnet-add-media-attachments.md)
-- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity" target="_blank">Activity class</a>
-- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.attachment" target="_blank">Attachment class</a>
+- <a href="/dotnet/api/microsoft.bot.connector.activity" target="_blank">Activity class</a>
+- <a href="/dotnet/api/microsoft.bot.connector.attachment" target="_blank">Attachment class</a>
 
-[animationCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.animationcard
+[animationCard]: /dotnet/api/microsoft.bot.connector.animationcard
 
-[audioCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.audiocard 
+[audioCard]: /dotnet/api/microsoft.bot.connector.audiocard 
 
-[heroCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.herocard 
+[heroCard]: /dotnet/api/microsoft.bot.connector.herocard 
 
-[thumbnailCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.thumbnailcard 
+[thumbnailCard]: /dotnet/api/microsoft.bot.connector.thumbnailcard 
 
-[receiptCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.receiptcard 
+[receiptCard]: /dotnet/api/microsoft.bot.connector.receiptcard 
 
-[signinCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.signincard 
+[signinCard]: /dotnet/api/microsoft.bot.connector.signincard 
 
-[videoCard]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.videocard
+[videoCard]: /dotnet/api/microsoft.bot.connector.videocard
 
 [inspector]: ../portal-channel-inspector.md

@@ -25,7 +25,7 @@ To create the LUIS app, which is the web service you configure at [www.luis.ai][
 7.	In the **Publish** page, click **Publish**. After successful publish, copy the **Endpoint URL** from the **Publish App** page, to use later in your bot’s code. The URL has a format similar to this example: `https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/3889f7d0-9501-45c8-be5f-8635975eea8b?subscription-key=67073e45132a459db515ca04cea325d3&timezoneOffset=0&verbose=true&q=`
 
 ## Create a note-taking bot integrated with the LUIS app
-To create a bot that uses the LUIS app, you can first start with the sample code in [Create a bot with Node.js](https://docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-quickstart#create-your-bot), and add code according to the instructions in the following sections.
+To create a bot that uses the LUIS app, you can first start with the sample code in [Create a bot with Node.js](bot-builder-nodejs-quickstart.md) and add code according to the instructions in the following sections.
 
 > [!TIP] 
 > You can also find the sample code described in this article in the [Notes bot sample][NotesSample].

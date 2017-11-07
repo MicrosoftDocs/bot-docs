@@ -418,7 +418,6 @@ If you have a bot running locally or deployed in the cloud, you can invoke it fr
 
 [CortanaGetStarted]: https://docs.microsoft.com/en-us/cortana/getstarted
 [BFPortal]: https://dev.botframework.com/
-[Register]: https://docs.microsoft.com/en-us/bot-framework/portal-register-bot
 
 
 [SSMLRef]: https://aka.ms/cortana-ssml

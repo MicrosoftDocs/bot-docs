@@ -55,4 +55,4 @@ The Language understanding template provides a good foundation that you can buil
 - [Bot Builder SDK for .NET](~/dotnet/bot-builder-dotnet-overview.md)
 - [Bot Builder SDK for Node.js](~/nodejs/index.md)
 
-[LuisDialog]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.luisdialog-1
+[LuisDialog]: /dotnet/api/microsoft.bot.builder.dialogs.luisdialog-1

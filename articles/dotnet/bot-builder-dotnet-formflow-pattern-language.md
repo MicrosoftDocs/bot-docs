@@ -143,20 +143,20 @@ What kind of sandwich would you like?
 - [Define a form using JSON schema](bot-builder-dotnet-formflow-json-schema.md)
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
 
-[promptAttribute]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.promptattribute
+[promptAttribute]: /dotnet/api/microsoft.bot.builder.formflow.promptattribute
 
-[field]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.iformbuilder-1.field
+[field]: /dotnet/api/microsoft.bot.builder.formflow.iformbuilder-1.field
 
-[formConfiguration]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.formconfiguration
+[formConfiguration]: /dotnet/api/microsoft.bot.builder.formflow.formconfiguration
 
-[separator]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.templatebaseattribute.separator
+[separator]: /dotnet/api/microsoft.bot.builder.formflow.advanced.templatebaseattribute.separator
 
-[lastSeparator]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.advanced.templatebaseattribute.lastseparator
+[lastSeparator]: /dotnet/api/microsoft.bot.builder.formflow.advanced.templatebaseattribute.lastseparator
 
-[templateUsage]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.templateusage
+[templateUsage]: /dotnet/api/microsoft.bot.builder.formflow.templateusage
 
-[caseNormalization]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.casenormalization
+[caseNormalization]: /dotnet/api/microsoft.bot.builder.formflow.casenormalization
 
-[choiceStyleOptions]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.choicestyleoptions
+[choiceStyleOptions]: /dotnet/api/microsoft.bot.builder.formflow.choicestyleoptions
 
-[feedbackOptions]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.formflow.feedbackoptions
+[feedbackOptions]: /dotnet/api/microsoft.bot.builder.formflow.feedbackoptions

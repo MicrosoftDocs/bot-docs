@@ -210,16 +210,16 @@ Dialogs manage conversation flow between a bot and a user. A dialog defines how 
 > [Manage conversation flow with dialogs](bot-builder-dotnet-manage-conversation-flow.md)
 
 
-[builderLibrary]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs
+[builderLibrary]: /dotnet/api/microsoft.bot.builder.dialogs
 
-[iBotData]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.internals.ibotdata
+[iBotData]: /dotnet/api/microsoft.bot.builder.dialogs.internals.ibotdata
 
-[iBotToUser]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.internals.ibottouser
+[iBotToUser]: /dotnet/api/microsoft.bot.builder.dialogs.internals.ibottouser
 
-[iDialogStack]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.internals.idialogstack
+[iDialogStack]: /dotnet/api/microsoft.bot.builder.dialogs.internals.idialogstack
 
-[iBotDataBag]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.ibotdatabag
+[iBotDataBag]: /dotnet/api/microsoft.bot.builder.dialogs.ibotdatabag
 
-[autofac]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.autofac.base
+[autofac]: /dotnet/api/microsoft.bot.builder.autofac.base
 
-[chain]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.chain
+[chain]: /dotnet/api/microsoft.bot.builder.dialogs.chain
