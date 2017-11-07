@@ -165,7 +165,7 @@
 ## [Troubleshoot](troubleshoot/TOC.md)
 # Reference
 ## [Bot Framework reference](reference-overview.md)
-## [.NET](https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.11.0)
+## [.NET](/dotnet/api/?view=botbuilder-3.11.0)
 ## [Node](https://docs.botframework.com/en-us/node/builder/chat-reference/modules/_botbuilder_d_.html)
 ## [REST API](~/rest-api-reference.md)
 # [Resources](resources/TOC.md)

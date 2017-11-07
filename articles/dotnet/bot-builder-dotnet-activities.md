@@ -98,4 +98,4 @@ The **messageReaction** activity may correspond to any number of **messageReacti
 
 - [Send and receive activities](bot-builder-dotnet-connector.md)
 - [Create messages](bot-builder-dotnet-create-messages.md)
-- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.11.0" target="_blank">Activity class</a>
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity" target="_blank">Activity class</a>
