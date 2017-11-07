@@ -16,7 +16,7 @@ ms.date: 06/06/2017
 > - [REST](../rest-api/bot-framework-rest-connector-add-media-attachments.md)
 
 A message exchange between user and bot can contain media attachments (e.g., image, video, audio, file). 
-The `Attachments` property of the <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.11.0" target="_blank">Activity</a> object contains an array of <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.attachment?view=botbuilder-3.11.0" target="_blank">Attachment</a> objects that represent the media attachments and rich cards within to the message. 
+The `Attachments` property of the <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity" target="_blank">Activity</a> object contains an array of <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.attachment" target="_blank">Attachment</a> objects that represent the media attachments and rich cards within to the message. 
 
 > [!NOTE]
 > For information about how to add rich cards to messages, see 
@@ -37,8 +37,8 @@ If an attachment is an image, audio, or video, the Connector service will commun
 - [Activities overview](bot-builder-dotnet-activities.md)
 - [Create messages](bot-builder-dotnet-create-messages.md)
 - [Add rich cards to messages](bot-builder-dotnet-add-rich-card-attachments.md)
-- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.11.0" target="_blank">Activity class</a>
-- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.attachment?view=botbuilder-3.11.0" target="_blank">Attachment class</a>
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity" target="_blank">Activity class</a>
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.attachment" target="_blank">Attachment class</a>
 
 [inspector]: ../portal-channel-inspector.md
 

@@ -48,5 +48,5 @@ If you do not set the input hint for a message, the Bot Builder SDK will automat
 
 - [Create messages](bot-builder-dotnet-create-messages.md)
 - [Add speech to messages](bot-builder-dotnet-text-to-speech.md)
-- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity?view=botbuilder-3.11.0" target="_blank">Activity class</a>
-- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.inputhints?view=botbuilder-3.11.0" target="_blank">InputHints class</a>
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity" target="_blank">Activity class</a>
+- <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.inputhints" target="_blank">InputHints class</a>
