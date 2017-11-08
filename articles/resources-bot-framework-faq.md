@@ -30,7 +30,7 @@ The core Bot Framework work has been underway since the summer of 2015.
 
 ### Is the Bot Framework publicly available now?
 
-Yes. The Bot Framework was released in preview on March 30th of 2016 in conjunction with Microsoft’s annual developer conference [/build](http://build.microsoft.com/).
+Yes. The Bot Framework was released in preview on March 30th of 2016 in conjunction with Microsoft’s annual developer conference [Build](http://build.microsoft.com/).
 
 ### How long will the Bot Framework be in preview? Can I start building/shipping products based on a preview framework?
 
@@ -38,7 +38,7 @@ The Bot Framework is currently in preview. As indicated at Build 2016, Microsoft
 
 ### What is the future of the Bot Framework?
 
-We are excited to provide initial availability of the Bot Framework at [/build 2016](http://build.microsoft.com/) and plan to continuously improve the framework with additional tools, samples, and channels. The [Bot Builder SDK](http://github.com/Microsoft/BotBuilder) is an open source SDK hosted on GitHub and we look forward to the contributions of the community at large. [Feedback][Support] as to what you’d like to see is welcome.
+We are excited to provide initial availability of the Bot Framework at [Build 2016](http://build.microsoft.com/) and plan to continuously improve the framework with additional tools, samples, and channels. The [Bot Builder SDK](http://github.com/Microsoft/BotBuilder) is an open source SDK hosted on GitHub and we look forward to the contributions of the community at large. [Feedback][Support] as to what you’d like to see is welcome.
 
 ## Channels
 ### When will you add more conversation experiences to the Bot Framework?
@@ -55,10 +55,6 @@ We have not provided a general mechanism for developers to add new channels to B
 The Bot Framework is designed to build, connect, and deploy high quality, responsive, performant and scalable bots for Skype and many other channels. The SDK can be used to create text/sms, image, button and card-capable bots (which constitute the majority of bot interactions today across conversation experiences) as well as bot interactions which are Skype-specific such as rich audio and video experiences.
 
 If you already have a great bot and would like to reach the Skype audience, your bot can easily be connected to Skype (or any supported channel) via the Bot Builder for REST API (provided it has an internet-accessible REST endpoint).
-
-### Is it possible for me to build a bot using the Bot Framework/SDK that is a “private or enterprise-only” bot that is only available inside my company?
-
-At this point, we do not have plans to enable a private instance of the Bot Directory, but we are interested in exploring ideas like this with the developer community.
 
 ## Security and Privacy
 ### Do the bots registered with the Bot Framework collect personal information? If yes, how can I be sure the data is safe and secure? What about privacy?
