@@ -4,7 +4,7 @@ description: Learn how to publish an Azure Bot Service bot once from Visual Stud
 author: kbrandl
 ms.author: kibrandl
 manager: rstand
-ms.topic: 1
+ms.topic: article
 ms.prod: bot-framework
 ms.date: 08/04/2017
 ms.reviewer: 
