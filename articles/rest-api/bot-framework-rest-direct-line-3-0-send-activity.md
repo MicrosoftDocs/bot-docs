@@ -24,6 +24,7 @@ The following snippets provide an example of the Send Activity request and respo
 ```http
 POST https://directline.botframework.com/v3/directline/conversations/abc123/activities
 Authorization: Bearer RCurR_XV9ZA.cwA.BKA.iaJrC8xpy8qbOF5xnR2vtCX7CZj0LdjAPGfiCpg4Fv0
+Content-Type: application/json
 [other headers]
 ```
 
