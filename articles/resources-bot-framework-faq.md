@@ -6,7 +6,7 @@ ms.author: v-demak
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 08/04/2017
+ms.date: 11/20/2017
 ms.reviewer:
 ---
 
@@ -77,6 +77,22 @@ You'll need to whitelist the following URLs in your corporate firewall:
 - cortanabfchanneleastus.azurewebsites.net (Cortana channel)
 - cortanabfchannelwestus.azurewebsites.net (Cortana Channel)
 - *.botFramework.com (channels)
+
+## Rate limiting
+### What is rate limiting?
+The Bot Framework service must protect itself and its customers against abusive call patterns (e.g., denial of service attack), so that no single bot can adversely affect the performance of other bots. To achieve this kind of protection, we’re adding rate limits (also known as throttling) to all endpoints. By enforcing a rate limit, we can restrict the frequency with which a bot can make a specific call. For example: with rate limiting enabled, if a bot wanted to post a large number of activities, it would have to space them out over a time period.
+
+### How will I know if I’m impacted?
+It is unlikely you’ll experience rate limiting, even at high volume. Most rate limiting would only occur due to bulk sending of activities (from a bot or from a client), extreme load testing, or a bug. When a request is throttled, an HTTP 429 (Too Many Requests) response is returned along with a Retry-After header indicating the amount of time (in seconds) to wait before retrying the request would succeed. You can collect this information by enabling analytics for your bot via Azure Application Insights. Or, you can add code in your bot to log messages. 
+
+### How does rate limiting occur?
+It can happen if:
+-	a bot sends messages too frequently
+-	a client of a bot sends messages too frequently
+-	Direct Line clients request a new Web Socket too frequently
+
+### What are the rate limits?
+We’re continuously tuning the rate limits to make them as lenient as possible while at the same time protecting our service and our users. Because thresholds will occasionally change, we aren’t publishing the numbers at this time. If you are impacted by rate limiting, feel free to reach out to us at [bf-reports@microsoft.com](mailto://bf-reports@microsoft.com).
 
 ## Related Services
 ### How does the Bot Framework relate to Cognitive Services?
