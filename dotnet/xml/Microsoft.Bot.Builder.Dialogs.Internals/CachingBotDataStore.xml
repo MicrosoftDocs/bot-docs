@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public class CachingBotDataStore : Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;Microsoft.Bot.Connector.BotData&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CachingBotDataStore extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1&lt;class Microsoft.Bot.Connector.BotData&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore" />
+  <TypeSignature Language="VB.NET" Value="Public Class CachingBotDataStore&#xA;Implements IBotDataStore(Of BotData)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="C#" Value="public CachingBotDataStore (Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;Microsoft.Bot.Connector.BotData&gt; inner, Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy dataConsistencyPolicy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1&lt;class Microsoft.Bot.Connector.BotData&gt; inner, valuetype Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy dataConsistencyPolicy) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData},Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStoreConsistencyPolicy)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (inner As IBotDataStore(Of BotData), dataConsistencyPolicy As CachingBotDataStoreConsistencyPolicy)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

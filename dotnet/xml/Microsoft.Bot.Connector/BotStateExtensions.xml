@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public static class BotStateExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit BotStateExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.BotStateExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module BotStateExtensions" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="C#" Value="public static string[] DeleteStateForUser (this Microsoft.Bot.Connector.IBotState operations, string channelId, string userId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] DeleteStateForUser(class Microsoft.Bot.Connector.IBotState operations, string channelId, string userId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.DeleteStateForUser(Microsoft.Bot.Connector.IBotState,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DeleteStateForUser (operations As IBotState, channelId As String, userId As String) As String()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.BotData GetConversationData (this Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.BotData GetConversationData(class Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.GetConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetConversationData (operations As IBotState, channelId As String, conversationId As String) As BotData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -175,6 +178,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.BotData GetPrivateConversationData (this Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, string userId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.BotData GetPrivateConversationData(class Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, string userId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.GetPrivateConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetPrivateConversationData (operations As IBotState, channelId As String, conversationId As String, userId As String) As BotData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -260,6 +264,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.BotData GetUserData (this Microsoft.Bot.Connector.IBotState operations, string channelId, string userId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.BotData GetUserData(class Microsoft.Bot.Connector.IBotState operations, string channelId, string userId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.GetUserData(Microsoft.Bot.Connector.IBotState,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetUserData (operations As IBotState, channelId As String, userId As String) As BotData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

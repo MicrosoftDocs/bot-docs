@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public class CardAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CardAction extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.CardAction" />
+  <TypeSignature Language="VB.NET" Value="Public Class CardAction" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="C#" Value="public CardAction ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.CardAction.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -38,6 +40,7 @@
       <MemberSignature Language="C#" Value="public CardAction (string type, string title = null, string image = null, object value = null, string text = null, string displayText = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string title, string image, object value, string text, string displayText) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.CardAction.#ctor(System.String,System.String,System.String,System.Object,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, Optional title As String = null, Optional image As String = null, Optional value As Object = null, Optional text As String = null, Optional displayText As String = null)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="C#" Value="public string DisplayText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayText" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.CardAction.DisplayText" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayText As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="C#" Value="public string Image { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Image" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.CardAction.Image" />
+      <MemberSignature Language="VB.NET" Value="Public Property Image As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="C#" Value="public string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.CardAction.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -144,6 +150,7 @@
       <MemberSignature Language="C#" Value="public string Title { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Title" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.CardAction.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -169,6 +176,7 @@
       <MemberSignature Language="C#" Value="public string Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Type" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.CardAction.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -193,6 +201,7 @@
       <MemberSignature Language="C#" Value="public object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.CardAction.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

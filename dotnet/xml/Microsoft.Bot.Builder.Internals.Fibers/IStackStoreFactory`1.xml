@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public interface IStackStoreFactory&lt;C&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStackStoreFactory`1&lt;C&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.IStackStoreFactory`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IStackStoreFactory(Of C)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Internals.Fibers.IStore&lt;Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop&lt;C&gt;&gt; StoreFrom (string taskId, Microsoft.Bot.Builder.Dialogs.IBotDataBag dataBag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.Internals.Fibers.IStore`1&lt;class Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop`1&lt;!C&gt;&gt; StoreFrom(string taskId, class Microsoft.Bot.Builder.Dialogs.IBotDataBag dataBag) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.IStackStoreFactory`1.StoreFrom(System.String,Microsoft.Bot.Builder.Dialogs.IBotDataBag)" />
+      <MemberSignature Language="VB.NET" Value="Public Function StoreFrom (taskId As String, dataBag As IBotDataBag) As IStore(Of IFiberLoop(Of C))" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

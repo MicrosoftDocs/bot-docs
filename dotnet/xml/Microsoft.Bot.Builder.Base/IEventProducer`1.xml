@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public interface IEventProducer&lt;in Event&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEventProducer`1&lt;- Event&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Base.IEventProducer`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IEventProducer(Of In Event)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>

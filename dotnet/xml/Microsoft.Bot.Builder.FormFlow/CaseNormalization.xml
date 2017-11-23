@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public enum CaseNormalization" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CaseNormalization extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.CaseNormalization" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CaseNormalization" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.CaseNormalization Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.CaseNormalization.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -28,6 +30,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.CaseNormalization</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
             Use the default from the <see cref="F:Microsoft.Bot.Builder.FormFlow.FormConfiguration.DefaultPrompt" />.
@@ -38,6 +41,7 @@
       <MemberSignature Language="C#" Value="InitialUpper" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.CaseNormalization InitialUpper = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.CaseNormalization.InitialUpper" />
+      <MemberSignature Language="VB.NET" Value="InitialUpper" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -46,6 +50,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.CaseNormalization</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>
             First letter of each word is capitalized
@@ -56,6 +61,7 @@
       <MemberSignature Language="C#" Value="Lower" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.CaseNormalization Lower = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.CaseNormalization.Lower" />
+      <MemberSignature Language="VB.NET" Value="Lower" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -64,6 +70,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.CaseNormalization</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>
             Normalize words to lower case.
@@ -74,6 +81,7 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.CaseNormalization None = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.CaseNormalization.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -82,6 +90,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.CaseNormalization</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>
             Don't normalize words.
@@ -92,6 +101,7 @@
       <MemberSignature Language="C#" Value="Upper" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.CaseNormalization Upper = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.CaseNormalization.Upper" />
+      <MemberSignature Language="VB.NET" Value="Upper" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -100,6 +110,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.CaseNormalization</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>
             Normalize words to upper case.

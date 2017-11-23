@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public interface IResolutionParser" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IResolutionParser" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.IResolutionParser" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IResolutionParser" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -16,6 +17,7 @@
       <MemberSignature Language="C#" Value="public bool TryParse (System.Collections.Generic.IDictionary&lt;string,object&gt; properties, out Microsoft.Bot.Builder.Luis.Resolution resolution);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryParse(class System.Collections.Generic.IDictionary`2&lt;string, object&gt; properties, [out] class Microsoft.Bot.Builder.Luis.Resolution&amp; resolution) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.IResolutionParser.TryParse(System.Collections.Generic.IDictionary{System.String,System.Object},Microsoft.Bot.Builder.Luis.Resolution@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryParse (properties As IDictionary(Of String, Object), ByRef resolution As Resolution) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

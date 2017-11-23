@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public enum PromptStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PromptStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PromptStyle" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="C#" Value="Auto" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.PromptStyle Auto = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.PromptStyle.Auto" />
+      <MemberSignature Language="VB.NET" Value="Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -28,6 +30,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.PromptStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
             Generate buttons for choices and let connector generate the right style based on channel capabilities
@@ -38,6 +41,7 @@
       <MemberSignature Language="C#" Value="AutoText" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.PromptStyle AutoText = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.PromptStyle.AutoText" />
+      <MemberSignature Language="VB.NET" Value="AutoText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -46,6 +50,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.PromptStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>
             Show choices as Text.
@@ -57,6 +62,7 @@
       <MemberSignature Language="C#" Value="Inline" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.PromptStyle Inline = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.PromptStyle.Inline" />
+      <MemberSignature Language="VB.NET" Value="Inline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -65,6 +71,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.PromptStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>
             Show choices on the same line.
@@ -75,6 +82,7 @@
       <MemberSignature Language="C#" Value="Keyboard" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.PromptStyle Keyboard = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.PromptStyle.Keyboard" />
+      <MemberSignature Language="VB.NET" Value="Keyboard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -83,6 +91,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.PromptStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>
             Map choices to a list of suggested actions that depending on the channel will be a keyboard, quick replies or a 
@@ -94,6 +103,7 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.PromptStyle None = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.PromptStyle.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -102,6 +112,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.PromptStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>
             Do not show possible choices in the prompt
@@ -112,6 +123,7 @@
       <MemberSignature Language="C#" Value="PerLine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.PromptStyle PerLine = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.PromptStyle.PerLine" />
+      <MemberSignature Language="VB.NET" Value="PerLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -120,6 +132,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.PromptStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>
             Show choices with one per line.

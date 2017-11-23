@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public delegate Microsoft.Bot.Builder.FormFlow.IForm&lt;T&gt; BuildFormDelegate&lt;T&gt;() where T : class;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuildFormDelegate`1&lt;class T&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.BuildFormDelegate`1" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function BuildFormDelegate(Of T)() As IForm(Of T) " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>

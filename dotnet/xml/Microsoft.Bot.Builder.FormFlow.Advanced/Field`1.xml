@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public class Field&lt;T&gt; : Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;T&gt;, Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt&lt;T&gt;, Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState&lt;T&gt; where T : class" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Field`1&lt;class T&gt; extends System.Object implements class Microsoft.Bot.Builder.FormFlow.Advanced.IField`1&lt;!T&gt;, class Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription, class Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1&lt;!T&gt;, class Microsoft.Bot.Builder.FormFlow.Advanced.IFieldResources, class Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class Field(Of T)&#xA;Implements IField(Of T), IFieldPrompt(Of T), IFieldState(Of T)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="C#" Value="public Field (string name, Microsoft.Bot.Builder.FormFlow.Advanced.FieldRole role);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype Microsoft.Bot.Builder.FormFlow.Advanced.FieldRole role) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.#ctor(System.String,Microsoft.Bot.Builder.FormFlow.Advanced.FieldRole)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, role As FieldRole)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="C#" Value="protected bool _allowsMultiple;" />
       <MemberSignature Language="ILAsm" Value=".field family bool _allowsMultiple" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._allowsMultiple" />
+      <MemberSignature Language="VB.NET" Value="Protected _allowsMultiple As Boolean " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="C#" Value="protected bool _buildPrompts;" />
       <MemberSignature Language="ILAsm" Value=".field family bool _buildPrompts" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._buildPrompts" />
+      <MemberSignature Language="VB.NET" Value="Protected _buildPrompts As Boolean " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="C#" Value="protected Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; _condition;" />
       <MemberSignature Language="ILAsm" Value=".field family class Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1&lt;!T&gt; _condition" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._condition" />
+      <MemberSignature Language="VB.NET" Value="Protected _condition As ActiveDelegate(Of T) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -108,6 +113,7 @@
       <MemberSignature Language="C#" Value="protected Microsoft.Bot.Builder.FormFlow.Advanced.DefineAsyncDelegate&lt;T&gt; _define;" />
       <MemberSignature Language="ILAsm" Value=".field family class Microsoft.Bot.Builder.FormFlow.Advanced.DefineAsyncDelegate`1&lt;!T&gt; _define" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._define" />
+      <MemberSignature Language="VB.NET" Value="Protected _define As DefineAsyncDelegate(Of T) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -125,6 +131,7 @@
       <MemberSignature Language="C#" Value="protected string[] _dependencies;" />
       <MemberSignature Language="ILAsm" Value=".field family string[] _dependencies" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._dependencies" />
+      <MemberSignature Language="VB.NET" Value="Protected _dependencies As String() " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -142,6 +149,7 @@
       <MemberSignature Language="C#" Value="protected Microsoft.Bot.Builder.FormFlow.DescribeAttribute _description;" />
       <MemberSignature Language="ILAsm" Value=".field family class Microsoft.Bot.Builder.FormFlow.DescribeAttribute _description" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._description" />
+      <MemberSignature Language="VB.NET" Value="Protected _description As DescribeAttribute " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -159,6 +167,7 @@
       <MemberSignature Language="C#" Value="protected Microsoft.Bot.Builder.FormFlow.IForm&lt;T&gt; _form;" />
       <MemberSignature Language="ILAsm" Value=".field family class Microsoft.Bot.Builder.FormFlow.IForm`1&lt;!T&gt; _form" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._form" />
+      <MemberSignature Language="VB.NET" Value="Protected _form As IForm(Of T) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -176,6 +185,7 @@
       <MemberSignature Language="C#" Value="protected Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt&lt;T&gt; _help;" />
       <MemberSignature Language="ILAsm" Value=".field family class Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1&lt;!T&gt; _help" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._help" />
+      <MemberSignature Language="VB.NET" Value="Protected _help As IPrompt(Of T) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -193,6 +203,7 @@
       <MemberSignature Language="C#" Value="protected bool _isNullable;" />
       <MemberSignature Language="ILAsm" Value=".field family bool _isNullable" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._isNullable" />
+      <MemberSignature Language="VB.NET" Value="Protected _isNullable As Boolean " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -210,6 +221,7 @@
       <MemberSignature Language="C#" Value="protected bool _keepZero;" />
       <MemberSignature Language="ILAsm" Value=".field family bool _keepZero" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._keepZero" />
+      <MemberSignature Language="VB.NET" Value="Protected _keepZero As Boolean " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -227,6 +239,7 @@
       <MemberSignature Language="C#" Value="protected bool _limited;" />
       <MemberSignature Language="ILAsm" Value=".field family bool _limited" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._limited" />
+      <MemberSignature Language="VB.NET" Value="Protected _limited As Boolean " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -244,6 +257,7 @@
       <MemberSignature Language="C#" Value="protected double _max;" />
       <MemberSignature Language="ILAsm" Value=".field family float64 _max" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._max" />
+      <MemberSignature Language="VB.NET" Value="Protected _max As Double " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -261,6 +275,7 @@
       <MemberSignature Language="C#" Value="protected double _min;" />
       <MemberSignature Language="ILAsm" Value=".field family float64 _min" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._min" />
+      <MemberSignature Language="VB.NET" Value="Protected _min As Double " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -278,6 +293,7 @@
       <MemberSignature Language="C#" Value="protected string _name;" />
       <MemberSignature Language="ILAsm" Value=".field family string _name" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._name" />
+      <MemberSignature Language="VB.NET" Value="Protected _name As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -295,6 +311,7 @@
       <MemberSignature Language="C#" Value="protected Microsoft.Bot.Builder.FormFlow.Advanced.NextDelegate&lt;T&gt; _next;" />
       <MemberSignature Language="ILAsm" Value=".field family class Microsoft.Bot.Builder.FormFlow.Advanced.NextDelegate`1&lt;!T&gt; _next" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._next" />
+      <MemberSignature Language="VB.NET" Value="Protected _next As NextDelegate(Of T) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -312,6 +329,7 @@
       <MemberSignature Language="C#" Value="protected bool _optional;" />
       <MemberSignature Language="ILAsm" Value=".field family bool _optional" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._optional" />
+      <MemberSignature Language="VB.NET" Value="Protected _optional As Boolean " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -329,6 +347,7 @@
       <MemberSignature Language="C#" Value="protected string _pattern;" />
       <MemberSignature Language="ILAsm" Value=".field family string _pattern" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._pattern" />
+      <MemberSignature Language="VB.NET" Value="Protected _pattern As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -346,6 +365,7 @@
       <MemberSignature Language="C#" Value="protected Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt&lt;T&gt; _prompt;" />
       <MemberSignature Language="ILAsm" Value=".field family class Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1&lt;!T&gt; _prompt" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._prompt" />
+      <MemberSignature Language="VB.NET" Value="Protected _prompt As IPrompt(Of T) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -363,6 +383,7 @@
       <MemberSignature Language="C#" Value="protected Microsoft.Bot.Builder.FormFlow.PromptAttribute _promptDefinition;" />
       <MemberSignature Language="ILAsm" Value=".field family class Microsoft.Bot.Builder.FormFlow.PromptAttribute _promptDefinition" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._promptDefinition" />
+      <MemberSignature Language="VB.NET" Value="Protected _promptDefinition As PromptAttribute " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -380,6 +401,7 @@
       <MemberSignature Language="C#" Value="protected bool _promptSet;" />
       <MemberSignature Language="ILAsm" Value=".field family bool _promptSet" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._promptSet" />
+      <MemberSignature Language="VB.NET" Value="Protected _promptSet As Boolean " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -397,6 +419,7 @@
       <MemberSignature Language="C#" Value="protected Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize&lt;T&gt; _recognizer;" />
       <MemberSignature Language="ILAsm" Value=".field family class Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1&lt;!T&gt; _recognizer" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._recognizer" />
+      <MemberSignature Language="VB.NET" Value="Protected _recognizer As IRecognize(Of T) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -414,6 +437,7 @@
       <MemberSignature Language="C#" Value="protected Microsoft.Bot.Builder.FormFlow.Advanced.FieldRole _role;" />
       <MemberSignature Language="ILAsm" Value=".field family valuetype Microsoft.Bot.Builder.FormFlow.Advanced.FieldRole _role" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._role" />
+      <MemberSignature Language="VB.NET" Value="Protected _role As FieldRole " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -431,6 +455,7 @@
       <MemberSignature Language="C#" Value="protected System.Collections.Generic.Dictionary&lt;Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute&gt; _templates;" />
       <MemberSignature Language="ILAsm" Value=".field family class System.Collections.Generic.Dictionary`2&lt;valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage, class Microsoft.Bot.Builder.FormFlow.TemplateAttribute&gt; _templates" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._templates" />
+      <MemberSignature Language="VB.NET" Value="Protected _templates As Dictionary(Of TemplateUsage, TemplateAttribute) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -448,6 +473,7 @@
       <MemberSignature Language="C#" Value="protected Microsoft.Bot.Builder.FormFlow.TermsAttribute _terms;" />
       <MemberSignature Language="ILAsm" Value=".field family class Microsoft.Bot.Builder.FormFlow.TermsAttribute _terms" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._terms" />
+      <MemberSignature Language="VB.NET" Value="Protected _terms As TermsAttribute " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -465,6 +491,7 @@
       <MemberSignature Language="C#" Value="protected Type _type;" />
       <MemberSignature Language="ILAsm" Value=".field family class System.Type _type" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._type" />
+      <MemberSignature Language="VB.NET" Value="Protected _type As Type " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -482,6 +509,7 @@
       <MemberSignature Language="C#" Value="protected Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate&lt;T&gt; _validate;" />
       <MemberSignature Language="ILAsm" Value=".field family class Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate`1&lt;!T&gt; _validate" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._validate" />
+      <MemberSignature Language="VB.NET" Value="Protected _validate As ValidateAsyncDelegate(Of T) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -499,6 +527,7 @@
       <MemberSignature Language="C#" Value="protected System.Collections.Generic.Dictionary&lt;object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt; _valueDescriptions;" />
       <MemberSignature Language="ILAsm" Value=".field family class System.Collections.Generic.Dictionary`2&lt;object, class Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt; _valueDescriptions" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._valueDescriptions" />
+      <MemberSignature Language="VB.NET" Value="Protected _valueDescriptions As Dictionary(Of Object, DescribeAttribute) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -516,6 +545,7 @@
       <MemberSignature Language="C#" Value="protected System.Collections.Generic.Dictionary&lt;object,Microsoft.Bot.Builder.FormFlow.TermsAttribute&gt; _valueTerms;" />
       <MemberSignature Language="ILAsm" Value=".field family class System.Collections.Generic.Dictionary`2&lt;object, class Microsoft.Bot.Builder.FormFlow.TermsAttribute&gt; _valueTerms" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1._valueTerms" />
+      <MemberSignature Language="VB.NET" Value="Protected _valueTerms As Dictionary(Of Object, TermsAttribute) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -533,6 +563,7 @@
       <MemberSignature Language="C#" Value="public virtual bool Active (T state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Active(!T state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Active(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Active (state As T) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -555,6 +586,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; AddDescription (object value, Microsoft.Bot.Builder.FormFlow.DescribeAttribute description);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt; AddDescription(object value, class Microsoft.Bot.Builder.FormFlow.DescribeAttribute description) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.AddDescription(System.Object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddDescription (value As Object, description As DescribeAttribute) As Field(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -579,6 +611,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; AddDescription (object value, string description, string image = null, string message = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt; AddDescription(object value, string description, string image, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.AddDescription(System.Object,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddDescription (value As Object, description As String, Optional image As String = null, Optional message As String = null) As Field(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -607,6 +640,7 @@
       <MemberSignature Language="C#" Value="protected void AddTemplate (Microsoft.Bot.Builder.FormFlow.TemplateAttribute template);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddTemplate(class Microsoft.Bot.Builder.FormFlow.TemplateAttribute template) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.AddTemplate(Microsoft.Bot.Builder.FormFlow.TemplateAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub AddTemplate (template As TemplateAttribute)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -628,6 +662,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; AddTerms (object value, Microsoft.Bot.Builder.FormFlow.TermsAttribute terms);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt; AddTerms(object value, class Microsoft.Bot.Builder.FormFlow.TermsAttribute terms) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.AddTerms(System.Object,Microsoft.Bot.Builder.FormFlow.TermsAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddTerms (value As Object, terms As TermsAttribute) As Field(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -652,6 +687,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; AddTerms (object value, params string[] terms);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt; AddTerms(object value, string[] terms) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.AddTerms(System.Object,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddTerms (value As Object, ParamArray terms As String()) As Field(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -682,6 +718,7 @@
       <MemberSignature Language="C#" Value="public virtual bool AllowDefault { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowDefault" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.AllowDefault" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AllowDefault As Boolean" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -700,6 +737,7 @@
       <MemberSignature Language="C#" Value="public bool AllowNumbers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowNumbers" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.AllowNumbers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllowNumbers As Boolean" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -718,6 +756,7 @@
       <MemberSignature Language="C#" Value="public virtual bool AllowsMultiple { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowsMultiple" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.AllowsMultiple" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AllowsMultiple As Boolean" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -736,6 +775,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;bool&gt; DefineAsync (T state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; DefineAsync(!T state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.DefineAsync(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DefineAsync (state As T) As Task(Of Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -763,6 +803,7 @@
       <MemberSignature Language="C#" Value="protected void DefinePrompt ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void DefinePrompt() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.DefinePrompt" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub DefinePrompt ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -781,6 +822,7 @@
       <MemberSignature Language="C#" Value="protected void DefineRecognizer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void DefineRecognizer() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.DefineRecognizer" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub DefineRecognizer ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -799,6 +841,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;string&gt; Dependencies { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; Dependencies" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Dependencies" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Dependencies As IEnumerable(Of String)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -817,6 +860,7 @@
       <MemberSignature Language="C#" Value="public virtual Microsoft.Bot.Builder.FormFlow.DescribeAttribute FieldDescription { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.FormFlow.DescribeAttribute FieldDescription" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.FieldDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FieldDescription As DescribeAttribute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -835,6 +879,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;string&gt; FieldTerms { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; FieldTerms" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.FieldTerms" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FieldTerms As IEnumerable(Of String)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -853,6 +898,7 @@
       <MemberSignature Language="C#" Value="public virtual Microsoft.Bot.Builder.FormFlow.IForm&lt;T&gt; Form { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.FormFlow.IForm`1&lt;!T&gt; Form" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Form" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Form As IForm(Of T)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -871,6 +917,7 @@
       <MemberSignature Language="C#" Value="public virtual object GetValue (T state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetValue(!T state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.GetValue(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetValue (state As T) As Object" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -893,6 +940,7 @@
       <MemberSignature Language="C#" Value="public virtual Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt&lt;T&gt; Help { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1&lt;!T&gt; Help" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Help" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Help As IPrompt(Of T)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -911,6 +959,7 @@
       <MemberSignature Language="C#" Value="public virtual bool IsNullable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNullable" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.IsNullable" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsNullable As Boolean" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -929,6 +978,7 @@
       <MemberSignature Language="C#" Value="public virtual bool IsUnknown (T state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnknown(!T state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.IsUnknown(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsUnknown (state As T) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -951,6 +1001,7 @@
       <MemberSignature Language="C#" Value="public virtual bool Limits (out double min, out double max);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Limits([out] float64&amp; min, [out] float64&amp; max) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Limits(System.Double@,System.Double@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Limits (ByRef min As Double, ByRef max As Double) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -975,6 +1026,7 @@
       <MemberSignature Language="C#" Value="public virtual void Localize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Localize() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Localize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Localize ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -993,6 +1045,7 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1011,6 +1064,7 @@
       <MemberSignature Language="C#" Value="public virtual Microsoft.Bot.Builder.FormFlow.Advanced.NextStep Next (object value, T state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.Advanced.NextStep Next(object value, !T state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Next(System.Object,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Next (value As Object, state As T) As NextStep" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1035,6 +1089,7 @@
       <MemberSignature Language="C#" Value="public virtual bool Optional { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Optional" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Optional" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Optional As Boolean" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1053,6 +1108,7 @@
       <MemberSignature Language="C#" Value="public virtual string Pattern { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Pattern" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Pattern" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Pattern As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1071,6 +1127,7 @@
       <MemberSignature Language="C#" Value="public virtual Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt&lt;T&gt; Prompt { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1&lt;!T&gt; Prompt" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Prompt" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Prompt As IPrompt(Of T)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1089,6 +1146,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; RemoveValue (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt; RemoveValue(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.RemoveValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveValue (value As Object) As Field(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1111,6 +1169,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; RemoveValues ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt; RemoveValues() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.RemoveValues" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveValues () As Field(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1130,6 +1189,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; ReplaceTemplate (Microsoft.Bot.Builder.FormFlow.TemplateAttribute template);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt; ReplaceTemplate(class Microsoft.Bot.Builder.FormFlow.TemplateAttribute template) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.ReplaceTemplate(Microsoft.Bot.Builder.FormFlow.TemplateAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReplaceTemplate (template As TemplateAttribute) As Field(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1152,6 +1212,7 @@
       <MemberSignature Language="C#" Value="public virtual Microsoft.Bot.Builder.FormFlow.Advanced.FieldRole Role { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.FormFlow.Advanced.FieldRole Role" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Role" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Role As FieldRole" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1170,6 +1231,7 @@
       <MemberSignature Language="C#" Value="public virtual void SaveResources ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveResources() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SaveResources" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SaveResources ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1188,6 +1250,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; SetActive (Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; condition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt; SetActive(class Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1&lt;!T&gt; condition) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetActive(Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetActive (condition As ActiveDelegate(Of T)) As Field(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1210,6 +1273,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; SetAllowsMultiple (bool multiple = true);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt; SetAllowsMultiple(bool multiple) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetAllowsMultiple(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetAllowsMultiple (Optional multiple As Boolean = true) As Field(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1232,6 +1296,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; SetDefine (Microsoft.Bot.Builder.FormFlow.Advanced.DefineAsyncDelegate&lt;T&gt; definition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt; SetDefine(class Microsoft.Bot.Builder.FormFlow.Advanced.DefineAsyncDelegate`1&lt;!T&gt; definition) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetDefine(Microsoft.Bot.Builder.FormFlow.Advanced.DefineAsyncDelegate{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetDefine (definition As DefineAsyncDelegate(Of T)) As Field(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1255,6 +1320,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; SetDependencies (params string[] dependencies);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt; SetDependencies(string[] dependencies) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetDependencies(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetDependencies (ParamArray dependencies As String()) As Field(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1283,6 +1349,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; SetFieldDescription (Microsoft.Bot.Builder.FormFlow.DescribeAttribute description);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt; SetFieldDescription(class Microsoft.Bot.Builder.FormFlow.DescribeAttribute description) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetFieldDescription(Microsoft.Bot.Builder.FormFlow.DescribeAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetFieldDescription (description As DescribeAttribute) As Field(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1307,6 +1374,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; SetFieldDescription (string description);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt; SetFieldDescription(string description) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetFieldDescription(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetFieldDescription (description As String) As Field(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1329,6 +1397,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; SetFieldTerms (params string[] terms);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt; SetFieldTerms(string[] terms) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetFieldTerms(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetFieldTerms (ParamArray terms As String()) As Field(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1357,6 +1426,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; SetIsNullable (bool nullable = true);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt; SetIsNullable(bool nullable) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetIsNullable(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetIsNullable (Optional nullable As Boolean = true) As Field(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1379,6 +1449,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; SetLimits (double min, double max);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt; SetLimits(float64 min, float64 max) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetLimits(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetLimits (min As Double, max As Double) As Field(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1403,6 +1474,7 @@
       <MemberSignature Language="C#" Value="protected void SetLimits (double min, double max, bool limited);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetLimits(float64 min, float64 max, bool limited) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetLimits(System.Double,System.Double,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SetLimits (min As Double, max As Double, limited As Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1428,6 +1500,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; SetNext (Microsoft.Bot.Builder.FormFlow.Advanced.NextDelegate&lt;T&gt; next);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt; SetNext(class Microsoft.Bot.Builder.FormFlow.Advanced.NextDelegate`1&lt;!T&gt; next) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetNext(Microsoft.Bot.Builder.FormFlow.Advanced.NextDelegate{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetNext (next As NextDelegate(Of T)) As Field(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1452,6 +1525,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; SetOptional (bool optional = true);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt; SetOptional(bool optional) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetOptional(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetOptional (Optional optional As Boolean = true) As Field(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1474,6 +1548,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; SetPattern (string pattern);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt; SetPattern(string pattern) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetPattern(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetPattern (pattern As String) As Field(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1498,6 +1573,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; SetPrompt (Microsoft.Bot.Builder.FormFlow.PromptAttribute prompt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt; SetPrompt(class Microsoft.Bot.Builder.FormFlow.PromptAttribute prompt) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetPrompt(Microsoft.Bot.Builder.FormFlow.PromptAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetPrompt (prompt As PromptAttribute) As Field(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1520,6 +1596,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; SetRecognizer (Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize&lt;T&gt; recognizer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt; SetRecognizer(class Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1&lt;!T&gt; recognizer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetRecognizer(Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetRecognizer (recognizer As IRecognize(Of T)) As Field(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1567,6 +1644,7 @@
       <MemberSignature Language="C#" Value="public virtual void SetUnknown (T state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetUnknown(!T state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetUnknown(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetUnknown (state As T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1588,6 +1666,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; SetValidate (Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate&lt;T&gt; validate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt; SetValidate(class Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate`1&lt;!T&gt; validate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetValidate(Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetValidate (validate As ValidateAsyncDelegate(Of T)) As Field(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1610,6 +1689,7 @@
       <MemberSignature Language="C#" Value="public virtual void SetValue (T state, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetValue(!T state, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetValue(`0,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetValue (state As T, value As Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1633,6 +1713,7 @@
       <MemberSignature Language="C#" Value="public virtual Microsoft.Bot.Builder.FormFlow.TemplateAttribute Template (Microsoft.Bot.Builder.FormFlow.TemplateUsage usage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.TemplateAttribute Template(valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage usage) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Template(Microsoft.Bot.Builder.FormFlow.TemplateUsage)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Template (usage As TemplateUsage) As TemplateAttribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1655,6 +1736,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;string&gt; Terms (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; Terms(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Terms(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Terms (value As Object) As IEnumerable(Of String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1677,6 +1759,7 @@
       <MemberSignature Language="C#" Value="public virtual Type Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Type As Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1695,6 +1778,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.FormFlow.ValidateResult&gt; ValidateAsync (T state, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.FormFlow.ValidateResult&gt; ValidateAsync(!T state, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.ValidateAsync(`0,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ValidateAsync (state As T, value As Object) As Task(Of ValidateResult)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1724,6 +1808,7 @@
       <MemberSignature Language="C#" Value="public virtual Microsoft.Bot.Builder.FormFlow.DescribeAttribute ValueDescription (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.DescribeAttribute ValueDescription(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.ValueDescription(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ValueDescription (value As Object) As DescribeAttribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1746,6 +1831,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt; ValueDescriptions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt; ValueDescriptions" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.ValueDescriptions" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ValueDescriptions As IEnumerable(Of DescribeAttribute)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1764,6 +1850,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;object&gt; Values { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;object&gt; Values" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.Values" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Values As IEnumerable(Of Object)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

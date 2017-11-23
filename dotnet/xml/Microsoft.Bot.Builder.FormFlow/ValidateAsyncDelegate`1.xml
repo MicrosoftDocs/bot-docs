@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public delegate System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.FormFlow.ValidateResult&gt; ValidateAsyncDelegate&lt;T&gt;(T state, object value);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ValidateAsyncDelegate`1&lt;T&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate`1" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function ValidateAsyncDelegate(Of T)(state As T, value As Object) As Task(Of ValidateResult) " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>

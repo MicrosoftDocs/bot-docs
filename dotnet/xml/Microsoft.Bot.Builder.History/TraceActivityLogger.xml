@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public sealed class TraceActivityLogger : Microsoft.Bot.Builder.History.IActivityLogger" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TraceActivityLogger extends System.Object implements class Microsoft.Bot.Builder.History.IActivityLogger" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.History.TraceActivityLogger" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TraceActivityLogger&#xA;Implements IActivityLogger" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="C#" Value="public TraceActivityLogger ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.History.TraceActivityLogger.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IActivityLogger.LogAsync (Microsoft.Bot.Connector.IActivity activity);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.History.IActivityLogger.LogAsync(class Microsoft.Bot.Connector.IActivity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.History.TraceActivityLogger.Microsoft#Bot#Builder#History#IActivityLogger#LogAsync(Microsoft.Bot.Connector.IActivity)" />
+      <MemberSignature Language="VB.NET" Value="Function LogAsync (activity As IActivity) As Task Implements IActivityLogger.LogAsync" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

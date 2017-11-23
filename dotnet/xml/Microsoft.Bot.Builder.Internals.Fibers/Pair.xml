@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public static class Pair" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Pair extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.Pair" />
+  <TypeSignature Language="VB.NET" Value="Public Class Pair" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -19,6 +20,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Internals.Fibers.Pair&lt;T1,T2&gt; Create&lt;T1,T2&gt; (T1 one, T2 two) where T1 : IEquatable&lt;T1&gt;, IComparable&lt;T1&gt; where T2 : IEquatable&lt;T2&gt;, IComparable&lt;T2&gt;;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Bot.Builder.Internals.Fibers.Pair`2&lt;!!T1, !!T2&gt; Create&lt;(class System.IEquatable`1&lt;!!T1&gt;, class System.IComparable`1&lt;!!T1&gt;) T1, (class System.IEquatable`1&lt;!!T2&gt;, class System.IComparable`1&lt;!!T2&gt;) T2&gt;(!!T1 one, !!T2 two) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Pair.Create``2(``0,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of T1 As {IEquatable(Of T1), IComparable(Of T1)}, T2 As {IEquatable(Of T1), IComparable(Of T1)}) (one As T1, two As T2) As Pair(Of T1, T2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

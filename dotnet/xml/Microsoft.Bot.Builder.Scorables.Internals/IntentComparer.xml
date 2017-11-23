@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public sealed class IntentComparer : System.Collections.Generic.IComparer&lt;Microsoft.Bot.Builder.Luis.Models.IntentRecommendation&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit IntentComparer extends System.Object implements class System.Collections.Generic.IComparer`1&lt;class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.IntentComparer" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IntentComparer&#xA;Implements IComparer(Of IntentRecommendation)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="C#" Value="public static readonly System.Collections.Generic.IComparer&lt;Microsoft.Bot.Builder.Luis.Models.IntentRecommendation&gt; Instance;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Collections.Generic.IComparer`1&lt;class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation&gt; Instance" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.IntentComparer.Instance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Instance As IComparer(Of IntentRecommendation) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -40,6 +42,7 @@
       <MemberSignature Language="C#" Value="int IComparer&lt;IntentRecommendation&gt;.Compare (Microsoft.Bot.Builder.Luis.Models.IntentRecommendation one, Microsoft.Bot.Builder.Luis.Models.IntentRecommendation two);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.Generic.IComparer&lt;Microsoft.Bot.Builder.Luis.Models.IntentRecommendation&gt;.Compare(class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation one, class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation two) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.IntentComparer.System#Collections#Generic#IComparer&lt;Microsoft#Bot#Builder#Luis#Models#IntentRecommendation&gt;#Compare(Microsoft.Bot.Builder.Luis.Models.IntentRecommendation,Microsoft.Bot.Builder.Luis.Models.IntentRecommendation)" />
+      <MemberSignature Language="VB.NET" Value="Function Compare (one As IntentRecommendation, two As IntentRecommendation) As Integer Implements IComparer(Of IntentRecommendation).Compare" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

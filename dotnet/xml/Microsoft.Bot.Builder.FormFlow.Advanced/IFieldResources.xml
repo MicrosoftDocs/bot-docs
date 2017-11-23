@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public interface IFieldResources" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFieldResources" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldResources" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IFieldResources" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -16,6 +17,7 @@
       <MemberSignature Language="C#" Value="public void Localize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Localize() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldResources.Localize" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Localize ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -34,6 +36,7 @@
       <MemberSignature Language="C#" Value="public void SaveResources ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveResources() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldResources.SaveResources" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveResources ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

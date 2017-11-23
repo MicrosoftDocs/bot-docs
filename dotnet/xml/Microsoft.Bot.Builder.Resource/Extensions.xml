@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public static class Extensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Extensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Resource.Extensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module Extensions" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -19,6 +20,7 @@
       <MemberSignature Language="C#" Value="public const string ESCAPED_SEPARATOR;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ESCAPED_SEPARATOR" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Resource.Extensions.ESCAPED_SEPARATOR" />
+      <MemberSignature Language="VB.NET" Value="Public Const ESCAPED_SEPARATOR As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -36,6 +38,7 @@
       <MemberSignature Language="C#" Value="public static string MakeList (params string[] elements);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string MakeList(string[] elements) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Resource.Extensions.MakeList(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function MakeList (ParamArray elements As String()) As String" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="C#" Value="public static string MakeList (System.Collections.Generic.IEnumerable&lt;string&gt; elements, string separator = &quot;;&quot;, string escape = &quot;__semi&quot;);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string MakeList(class System.Collections.Generic.IEnumerable`1&lt;string&gt; elements, string separator, string escape) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Resource.Extensions.MakeList(System.Collections.Generic.IEnumerable{System.String},System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MakeList (elements As IEnumerable(Of String), Optional separator As String = &quot;;&quot;, Optional escape As String = &quot;__semi&quot;) As String" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="C#" Value="public const string SEPARATOR;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string SEPARATOR" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Resource.Extensions.SEPARATOR" />
+      <MemberSignature Language="VB.NET" Value="Public Const SEPARATOR As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="C#" Value="public static string[] SplitList (this string str, string separator = &quot;;&quot;, string escape = &quot;__semi&quot;);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] SplitList(string str, string separator, string escape) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Resource.Extensions.SplitList(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SplitList (str As String, Optional separator As String = &quot;;&quot;, Optional escape As String = &quot;__semi&quot;) As String()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

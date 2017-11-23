@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public interface IDialogContext : Microsoft.Bot.Builder.Dialogs.IBotContext, Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDialogContext implements class Microsoft.Bot.Builder.Dialogs.IBotContext, class Microsoft.Bot.Builder.Dialogs.Internals.IBotData, class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser, class Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IDialogContext" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDialogContext&#xA;Implements IBotContext, IDialogStack" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>

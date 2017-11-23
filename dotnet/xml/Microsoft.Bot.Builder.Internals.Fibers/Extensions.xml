@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public static class Extensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Extensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.Extensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module Extensions" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -19,6 +20,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C&gt; Call&lt;C,T&gt; (this Microsoft.Bot.Builder.Internals.Fibers.IFiber&lt;C&gt; fiber, Microsoft.Bot.Builder.Internals.Fibers.Rest&lt;C,T&gt; invokeHandler, T item);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!!C&gt; Call&lt;C, T&gt;(class Microsoft.Bot.Builder.Internals.Fibers.IFiber`1&lt;!!C&gt; fiber, class Microsoft.Bot.Builder.Internals.Fibers.Rest`2&lt;!!C, !!T&gt; invokeHandler, !!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.Call``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1},``1)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Call(Of C, T) (fiber As IFiber(Of C), invokeHandler As Rest(Of C, T), item As T) As IWait(Of C)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C&gt; Call&lt;C,T,R&gt; (this Microsoft.Bot.Builder.Internals.Fibers.IFiber&lt;C&gt; fiber, Microsoft.Bot.Builder.Internals.Fibers.Rest&lt;C,T&gt; invokeHandler, T item, Microsoft.Bot.Builder.Internals.Fibers.Rest&lt;C,R&gt; returnHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!!C&gt; Call&lt;C, T, R&gt;(class Microsoft.Bot.Builder.Internals.Fibers.IFiber`1&lt;!!C&gt; fiber, class Microsoft.Bot.Builder.Internals.Fibers.Rest`2&lt;!!C, !!T&gt; invokeHandler, !!T item, class Microsoft.Bot.Builder.Internals.Fibers.Rest`2&lt;!!C, !!R&gt; returnHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.Call``3(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1},``1,Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``2})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Call(Of C, T, R) (fiber As IFiber(Of C), invokeHandler As Rest(Of C, T), item As T, returnHandler As Rest(Of C, R)) As IWait(Of C)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C&gt; CloneTyped&lt;C&gt; (this Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C&gt; wait);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!!C&gt; CloneTyped&lt;C&gt;(class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!!C&gt; wait) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.CloneTyped``1(Microsoft.Bot.Builder.Internals.Fibers.IWait{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CloneTyped(Of C) (wait As IWait(Of C)) As IWait(Of C)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C&gt; Done&lt;C,T&gt; (this Microsoft.Bot.Builder.Internals.Fibers.IFiber&lt;C&gt; fiber, T item);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!!C&gt; Done&lt;C, T&gt;(class Microsoft.Bot.Builder.Internals.Fibers.IFiber`1&lt;!!C&gt; fiber, !!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.Done``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},``1)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Done(Of C, T) (fiber As IFiber(Of C), item As T) As IWait(Of C)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -152,6 +157,7 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;int&gt; Enumerate (this Microsoft.Bot.Builder.Internals.Fibers.Range&lt;int&gt; range);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;int32&gt; Enumerate(valuetype Microsoft.Bot.Builder.Internals.Fibers.Range`1&lt;int32&gt; range) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.Enumerate(Microsoft.Bot.Builder.Internals.Fibers.Range{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Iterator Function Enumerate (range As Range(Of Integer)) As IEnumerable(Of Integer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -179,6 +185,7 @@
       <MemberSignature Language="C#" Value="public static bool Equals&lt;T&gt; (this System.Collections.Generic.IReadOnlyList&lt;T&gt; one, System.Collections.Generic.IReadOnlyList&lt;T&gt; two, System.Collections.Generic.IEqualityComparer&lt;T&gt; comparer);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Equals&lt;T&gt;(class System.Collections.Generic.IReadOnlyList`1&lt;!!T&gt; one, class System.Collections.Generic.IReadOnlyList`1&lt;!!T&gt; two, class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.Equals``1(System.Collections.Generic.IReadOnlyList{``0},System.Collections.Generic.IReadOnlyList{``0},System.Collections.Generic.IEqualityComparer{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Equals(Of T) (one As IReadOnlyList(Of T), two As IReadOnlyList(Of T), comparer As IEqualityComparer(Of T)) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -209,6 +216,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C&gt; Fail&lt;C&gt; (this Microsoft.Bot.Builder.Internals.Fibers.IFiber&lt;C&gt; fiber, Exception error);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!!C&gt; Fail&lt;C&gt;(class Microsoft.Bot.Builder.Internals.Fibers.IFiber`1&lt;!!C&gt; fiber, class System.Exception error) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.Fail``1(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Fail(Of C) (fiber As IFiber(Of C), error As Exception) As IWait(Of C)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -237,6 +245,7 @@
       <MemberSignature Language="C#" Value="public static V GetOrAdd&lt;K,V&gt; (this System.Collections.Generic.IDictionary&lt;K,V&gt; valueByKey, K key, Func&lt;K,V&gt; make);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!V GetOrAdd&lt;K, V&gt;(class System.Collections.Generic.IDictionary`2&lt;!!K, !!V&gt; valueByKey, !!K key, class System.Func`2&lt;!!K, !!V&gt; make) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.GetOrAdd``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetOrAdd(Of K, V) (valueByKey As IDictionary(Of K, V), key As K, make As Func(Of K, V)) As V" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -269,6 +278,7 @@
       <MemberSignature Language="C#" Value="public static T GetValue&lt;T&gt; (this System.Runtime.Serialization.SerializationInfo info, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T GetValue&lt;T&gt;(class System.Runtime.Serialization.SerializationInfo info, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.GetValue``1(System.Runtime.Serialization.SerializationInfo,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetValue(Of T) (info As SerializationInfo, name As String) As T" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -297,6 +307,7 @@
       <MemberSignature Language="C#" Value="public static T Min&lt;T&gt; (T one, T two) where T : IComparable&lt;T&gt;;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Min&lt;(class System.IComparable`1&lt;!!T&gt;) T&gt;(!!T one, !!T two) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.Min``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Min(Of T As IComparable(Of T)) (one As T, two As T) As T" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -329,6 +340,7 @@
       <MemberSignature Language="C#" Value="public static T Peek&lt;T&gt; (this System.Collections.Generic.IReadOnlyList&lt;T&gt; stack);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Peek&lt;T&gt;(class System.Collections.Generic.IReadOnlyList`1&lt;!!T&gt; stack) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.Peek``1(System.Collections.Generic.IReadOnlyList{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Peek(Of T) (stack As IReadOnlyList(Of T)) As T" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -355,6 +367,7 @@
       <MemberSignature Language="C#" Value="public static T Pop&lt;T&gt; (this System.Collections.Generic.List&lt;T&gt; stack);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Pop&lt;T&gt;(class System.Collections.Generic.List`1&lt;!!T&gt; stack) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.Pop``1(System.Collections.Generic.List{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Pop(Of T) (stack As List(Of T)) As T" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -381,6 +394,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C&gt; Post&lt;C,T&gt; (this Microsoft.Bot.Builder.Internals.Fibers.IFiber&lt;C&gt; fiber, T item);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!!C&gt; Post&lt;C, T&gt;(class Microsoft.Bot.Builder.Internals.Fibers.IFiber`1&lt;!!C&gt; fiber, !!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.Post``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},``1)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Post(Of C, T) (fiber As IFiber(Of C), item As T) As IWait(Of C)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -411,6 +425,7 @@
       <MemberSignature Language="C#" Value="public static void Push&lt;T&gt; (this System.Collections.Generic.IList&lt;T&gt; stack, T item);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Push&lt;T&gt;(class System.Collections.Generic.IList`1&lt;!!T&gt; stack, !!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.Push``1(System.Collections.Generic.IList{``0},``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Push(Of T) (stack As IList(Of T), item As T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -438,6 +453,7 @@
       <MemberSignature Language="C#" Value="public static void Reset&lt;C&gt; (this Microsoft.Bot.Builder.Internals.Fibers.IFiber&lt;C&gt; fiber);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Reset&lt;C&gt;(class Microsoft.Bot.Builder.Internals.Fibers.IFiber`1&lt;!!C&gt; fiber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.Reset``1(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Reset(Of C) (fiber As IFiber(Of C))" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -463,6 +479,7 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Internals.Fibers.Range&lt;T&gt;&gt; SortedMerge&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Internals.Fibers.Range&lt;T&gt;&gt; oneItems, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Internals.Fibers.Range&lt;T&gt;&gt; twoItems) where T : IEquatable&lt;T&gt;, IComparable&lt;T&gt;;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Bot.Builder.Internals.Fibers.Range`1&lt;!!T&gt;&gt; SortedMerge&lt;(class System.IEquatable`1&lt;!!T&gt;, class System.IComparable`1&lt;!!T&gt;) T&gt;(class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Bot.Builder.Internals.Fibers.Range`1&lt;!!T&gt;&gt; oneItems, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Bot.Builder.Internals.Fibers.Range`1&lt;!!T&gt;&gt; twoItems) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.SortedMerge``1(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{``0}},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{``0}})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Iterator Function SortedMerge(Of T As {IEquatable(Of T), IComparable(Of T)}) (oneItems As IEnumerable(Of Range(Of T)), twoItems As IEnumerable(Of Range(Of T))) As IEnumerable(Of Range(Of T))" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -501,6 +518,7 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IReadOnlyList&lt;R&gt; ToList&lt;T,R&gt; (this System.Collections.Generic.IReadOnlyList&lt;T&gt; source, Func&lt;T,R&gt; selector);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IReadOnlyList`1&lt;!!R&gt; ToList&lt;T, R&gt;(class System.Collections.Generic.IReadOnlyList`1&lt;!!T&gt; source, class System.Func`2&lt;!!T, !!R&gt; selector) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.ToList``2(System.Collections.Generic.IReadOnlyList{``0},System.Func{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToList(Of T, R) (source As IReadOnlyList(Of T), selector As Func(Of T, R)) As IReadOnlyList(Of R)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -531,6 +549,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;T&gt; ToTask&lt;T&gt; (this Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;T&gt; item);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!T&gt; ToTask&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;!!T&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.ToTask``1(Microsoft.Bot.Builder.Dialogs.IAwaitable{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToTask(Of T) (item As IAwaitable(Of T)) As Task(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -580,6 +599,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C&gt; Wait&lt;C,T&gt; (this Microsoft.Bot.Builder.Internals.Fibers.IFiber&lt;C&gt; fiber, Microsoft.Bot.Builder.Internals.Fibers.Rest&lt;C,T&gt; resumeHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!!C&gt; Wait&lt;C, T&gt;(class Microsoft.Bot.Builder.Internals.Fibers.IFiber`1&lt;!!C&gt; fiber, class Microsoft.Bot.Builder.Internals.Fibers.Rest`2&lt;!!C, !!T&gt; resumeHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.Wait``2(Microsoft.Bot.Builder.Internals.Fibers.IFiber{``0},Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Wait(Of C, T) (fiber As IFiber(Of C), resumeHandler As Rest(Of C, T)) As IWait(Of C)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

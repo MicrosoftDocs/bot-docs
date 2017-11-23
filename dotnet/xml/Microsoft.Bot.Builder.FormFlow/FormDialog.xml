@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public static class FormDialog" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit FormDialog extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.FormDialog" />
+  <TypeSignature Language="VB.NET" Value="Public Class FormDialog" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.FormFlow.IFormDialog&lt;T&gt; FromForm&lt;T&gt; (Microsoft.Bot.Builder.FormFlow.BuildFormDelegate&lt;T&gt; buildForm, Microsoft.Bot.Builder.FormFlow.FormOptions options = Microsoft.Bot.Builder.FormFlow.FormOptions.None) where T : class, new();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.FormFlow.IFormDialog`1&lt;!!T&gt; FromForm&lt;class .ctor T&gt;(class Microsoft.Bot.Builder.FormFlow.BuildFormDelegate`1&lt;!!T&gt; buildForm, valuetype Microsoft.Bot.Builder.FormFlow.FormOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormDialog.FromForm``1(Microsoft.Bot.Builder.FormFlow.BuildFormDelegate{``0},Microsoft.Bot.Builder.FormFlow.FormOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromForm(Of T As {Class, New}) (buildForm As BuildFormDelegate(Of T), Optional options As FormOptions = Microsoft.Bot.Builder.FormFlow.FormOptions.None) As IFormDialog(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.FormFlow.IFormDialog&lt;T&gt; FromType&lt;T&gt; (Microsoft.Bot.Builder.FormFlow.FormOptions options = Microsoft.Bot.Builder.FormFlow.FormOptions.None) where T : class, new();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.FormFlow.IFormDialog`1&lt;!!T&gt; FromType&lt;class .ctor T&gt;(valuetype Microsoft.Bot.Builder.FormFlow.FormOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormDialog.FromType``1(Microsoft.Bot.Builder.FormFlow.FormOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromType(Of T As {Class, New}) (Optional options As FormOptions = Microsoft.Bot.Builder.FormFlow.FormOptions.None) As IFormDialog(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

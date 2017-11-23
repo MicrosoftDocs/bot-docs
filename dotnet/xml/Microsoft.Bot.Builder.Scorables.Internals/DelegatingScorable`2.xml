@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public abstract class DelegatingScorable&lt;Item,Score&gt; : Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit DelegatingScorable`2&lt;Item, Score&gt; extends System.Object implements class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !Score&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.DelegatingScorable`2" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DelegatingScorable(Of Item, Score)&#xA;Implements IScorable(Of Item, Score)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="C#" Value="protected DelegatingScorable (Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt; inner);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !Score&gt; inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.DelegatingScorable`2.#ctor(Microsoft.Bot.Builder.Scorables.IScorable{`0,`1})" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (inner As IScorable(Of Item, Score))" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -121,6 +123,7 @@
       <MemberSignature Language="C#" Value="protected readonly Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt; inner;" />
       <MemberSignature Language="ILAsm" Value=".field family initonly class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !Score&gt; inner" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.DelegatingScorable`2.inner" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly inner As IScorable(Of Item, Score) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -188,6 +191,7 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.DelegatingScorable`2.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

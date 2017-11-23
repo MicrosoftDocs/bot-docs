@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public interface IFiberLoop&lt;C&gt; : Microsoft.Bot.Builder.Internals.Fibers.IFiber&lt;C&gt;, Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFiberLoop`1&lt;C&gt; implements class Microsoft.Bot.Builder.Internals.Fibers.IFiber`1&lt;!C&gt;, class Microsoft.Bot.Builder.Internals.Fibers.IWaiter`1&lt;!C&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IFiberLoop(Of C)&#xA;Implements IFiber(Of C), IWaiter(Of C)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C&gt;&gt; PollAsync (C context, System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!C&gt;&gt; PollAsync(!C context, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop`1.PollAsync(`0,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PollAsync (context As C, token As CancellationToken) As Task(Of IWait(Of C))" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

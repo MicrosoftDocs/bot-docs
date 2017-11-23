@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public interface IMessageActivityMapper" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMessageActivityMapper" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.IMessageActivityMapper" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IMessageActivityMapper" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -16,6 +17,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.IMessageActivity Map (Microsoft.Bot.Connector.IMessageActivity message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.IMessageActivity Map(class Microsoft.Bot.Connector.IMessageActivity message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IMessageActivityMapper.Map(Microsoft.Bot.Connector.IMessageActivity)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Map (message As IMessageActivity) As IMessageActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

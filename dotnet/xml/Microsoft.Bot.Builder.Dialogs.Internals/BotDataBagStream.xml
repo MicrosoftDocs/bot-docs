@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public sealed class BotDataBagStream : System.IO.MemoryStream" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BotDataBagStream extends System.IO.MemoryStream" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BotDataBagStream&#xA;Inherits MemoryStream" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -19,6 +20,7 @@
       <MemberSignature Language="C#" Value="public BotDataBagStream (Microsoft.Bot.Builder.Dialogs.IBotDataBag bag, string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.IBotDataBag bag, string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream.#ctor(Microsoft.Bot.Builder.Dialogs.IBotDataBag,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bag As IBotDataBag, key As String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="C#" Value="public override void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -57,6 +60,7 @@
       <MemberSignature Language="C#" Value="public override void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBagStream.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

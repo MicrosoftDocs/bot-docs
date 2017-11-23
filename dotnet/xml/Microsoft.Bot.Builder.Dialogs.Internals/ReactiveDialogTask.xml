@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public sealed class ReactiveDialogTask : Microsoft.Bot.Builder.Base.IEventLoop, Microsoft.Bot.Builder.Base.IEventProducer&lt;Microsoft.Bot.Connector.IActivity&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ReactiveDialogTask extends System.Object implements class Microsoft.Bot.Builder.Base.IEventLoop, class Microsoft.Bot.Builder.Base.IEventProducer`1&lt;class Microsoft.Bot.Connector.IActivity&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReactiveDialogTask&#xA;Implements IEventLoop, IEventProducer(Of IActivity)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="C#" Value="public ReactiveDialogTask (Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask dialogTask, Func&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;object&gt;&gt; makeRoot);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask dialogTask, class System.Func`1&lt;class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;object&gt;&gt; makeRoot) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask,System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{System.Object}})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dialogTask As IDialogTask, makeRoot As Func(Of IDialog(Of Object)))" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IEventLoop.PollAsync (System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Base.IEventLoop.PollAsync(valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask.Microsoft#Bot#Builder#Base#IEventLoop#PollAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Function PollAsync (token As CancellationToken) As Task Implements IEventLoop.PollAsync" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="C#" Value="void IEventProducer&lt;IActivity&gt;.Post (Microsoft.Bot.Connector.IActivity item, Action onPull);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Bot.Builder.Base.IEventProducer&lt;Microsoft.Bot.Connector.IActivity&gt;.Post(class Microsoft.Bot.Connector.IActivity item, class System.Action onPull) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask.Microsoft#Bot#Builder#Base#IEventProducer&lt;Microsoft#Bot#Connector#IActivity&gt;#Post(Microsoft.Bot.Connector.IActivity,System.Action)" />
+      <MemberSignature Language="VB.NET" Value="Sub Post (item As IActivity, onPull As Action) Implements IEventProducer(Of IActivity).Post" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public interface ICalendarPlus" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICalendarPlus" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.ICalendarPlus" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICalendarPlus" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -18,6 +19,7 @@
       <MemberSignature Language="C#" Value="public System.Globalization.Calendar Calendar { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.Calendar Calendar" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ICalendarPlus.Calendar" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Calendar As Calendar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -36,6 +38,7 @@
       <MemberSignature Language="C#" Value="public DayOfWeek FirstDayOfWeek { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DayOfWeek FirstDayOfWeek" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ICalendarPlus.FirstDayOfWeek" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstDayOfWeek As DayOfWeek" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="C#" Value="public System.Globalization.CalendarWeekRule WeekRule { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Globalization.CalendarWeekRule WeekRule" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ICalendarPlus.WeekRule" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WeekRule As CalendarWeekRule" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

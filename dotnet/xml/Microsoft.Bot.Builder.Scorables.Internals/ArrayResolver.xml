@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public sealed class ArrayResolver : Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ArrayResolver extends Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.ArrayResolver" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ArrayResolver&#xA;Inherits DelegatingResolver" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -19,6 +20,7 @@
       <MemberSignature Language="C#" Value="public ArrayResolver (Microsoft.Bot.Builder.Scorables.Internals.IResolver inner, System.Collections.Generic.IReadOnlyList&lt;object&gt; services);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Scorables.Internals.IResolver inner, class System.Collections.Generic.IReadOnlyList`1&lt;object&gt; services) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.ArrayResolver.#ctor(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Collections.Generic.IReadOnlyList{System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (inner As IResolver, services As IReadOnlyList(Of Object))" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="C#" Value="public ArrayResolver (Microsoft.Bot.Builder.Scorables.Internals.IResolver inner, params object[] services);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Scorables.Internals.IResolver inner, object[] services) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.ArrayResolver.#ctor(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (inner As IResolver, ParamArray services As Object())" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

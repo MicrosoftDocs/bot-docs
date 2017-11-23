@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public enum LogLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LogLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.LogLevel" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LogLevel" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+    <AssemblyVersion>1.7.0.26</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -23,14 +24,16 @@
       <MemberSignature Language="C#" Value="Error" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Internal.Bots.Media.LogLevel Error = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Internal.Bots.Media.LogLevel.Error" />
+      <MemberSignature Language="VB.NET" Value="Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Skype.Internal.Bots.Media.LogLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary />
       </Docs>
@@ -39,14 +42,16 @@
       <MemberSignature Language="C#" Value="Information" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Internal.Bots.Media.LogLevel Information = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Internal.Bots.Media.LogLevel.Information" />
+      <MemberSignature Language="VB.NET" Value="Information" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Skype.Internal.Bots.Media.LogLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary />
       </Docs>
@@ -55,14 +60,16 @@
       <MemberSignature Language="C#" Value="Verbose" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Internal.Bots.Media.LogLevel Verbose = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Internal.Bots.Media.LogLevel.Verbose" />
+      <MemberSignature Language="VB.NET" Value="Verbose" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Skype.Internal.Bots.Media.LogLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary />
       </Docs>
@@ -71,14 +78,16 @@
       <MemberSignature Language="C#" Value="Warning" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Internal.Bots.Media.LogLevel Warning = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Internal.Bots.Media.LogLevel.Warning" />
+      <MemberSignature Language="VB.NET" Value="Warning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Skype.Internal.Bots.Media.LogLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary />
       </Docs>

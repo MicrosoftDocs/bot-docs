@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public enum BuiltIn.DateTime.DayPart" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed BuiltIn/DateTime/DayPart extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart" />
+  <TypeSignature Language="VB.NET" Value="Public Enum BuiltIn.DateTime.DayPart" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -18,6 +19,7 @@
       <MemberSignature Language="C#" Value="AF" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DayPart AF = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.AF" />
+      <MemberSignature Language="VB.NET" Value="AF" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -31,6 +33,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+DayPart</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -39,6 +42,7 @@
       <MemberSignature Language="C#" Value="EV" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DayPart EV = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.EV" />
+      <MemberSignature Language="VB.NET" Value="EV" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -52,6 +56,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+DayPart</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -60,6 +65,7 @@
       <MemberSignature Language="C#" Value="MI" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DayPart MI = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.MI" />
+      <MemberSignature Language="VB.NET" Value="MI" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -73,6 +79,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+DayPart</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -81,6 +88,7 @@
       <MemberSignature Language="C#" Value="MO" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DayPart MO = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.MO" />
+      <MemberSignature Language="VB.NET" Value="MO" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -94,6 +102,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+DayPart</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -102,6 +111,7 @@
       <MemberSignature Language="C#" Value="NI" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DayPart NI = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.NI" />
+      <MemberSignature Language="VB.NET" Value="NI" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -115,6 +125,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+DayPart</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>

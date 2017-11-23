@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public abstract class ScorableBase&lt;Item,State,Score&gt; : Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit ScorableBase`3&lt;Item, State, Score&gt; extends System.Object implements class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !Score&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.ScorableBase`3" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ScorableBase(Of Item, State, Score)&#xA;Implements IScorable(Of Item, Score)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="C#" Value="protected ScorableBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.ScorableBase`3.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

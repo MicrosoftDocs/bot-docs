@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public sealed class NullScorable&lt;Item,Score&gt; : Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit NullScorable`2&lt;Item, Score&gt; extends System.Object implements class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !Score&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.NullScorable`2" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NullScorable(Of Item, Score)&#xA;Implements IScorable(Of Item, Score)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="C#" Value="public static readonly Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt; Instance;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !Score&gt; Instance" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.NullScorable`2.Instance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Instance As IScorable(Of Item, Score) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

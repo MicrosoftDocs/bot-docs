@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public static class Methods" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Methods extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.Methods" />
+  <TypeSignature Language="VB.NET" Value="Public Class Methods" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -19,6 +20,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Internals.Fibers.Rest&lt;C,T&gt; Identity&lt;C,T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Internals.Fibers.Rest`2&lt;!!C, !!T&gt; Identity&lt;C, T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Methods.Identity``2" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Identity(Of C, T) () As Rest(Of C, T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Internals.Fibers.Rest&lt;C,T&gt; Loop&lt;C,T&gt; (Microsoft.Bot.Builder.Internals.Fibers.Rest&lt;C,T&gt; rest, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Internals.Fibers.Rest`2&lt;!!C, !!T&gt; Loop&lt;C, T&gt;(class Microsoft.Bot.Builder.Internals.Fibers.Rest`2&lt;!!C, !!T&gt; rest, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Methods.Loop``2(Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1},System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Loop(Of C, T) (rest As Rest(Of C, T), count As Integer) As Rest(Of C, T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Internals.Fibers.Rest&lt;C,T&gt; Void&lt;C,T&gt; (Microsoft.Bot.Builder.Internals.Fibers.Rest&lt;C,T&gt; rest);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Internals.Fibers.Rest`2&lt;!!C, !!T&gt; Void&lt;C, T&gt;(class Microsoft.Bot.Builder.Internals.Fibers.Rest`2&lt;!!C, !!T&gt; rest) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Methods.Void``2(Microsoft.Bot.Builder.Internals.Fibers.Rest{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Void(Of C, T) (rest As Rest(Of C, T)) As Rest(Of C, T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

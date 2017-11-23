@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public class FileSourceSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileSourceSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.FileSourceSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Class FileSourceSettings" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+    <AssemblyVersion>1.7.0.26</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -19,10 +20,11 @@
       <MemberSignature Language="C#" Value="public FileSourceSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.FileSourceSettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -34,10 +36,11 @@
       <MemberSignature Language="C#" Value="public string FileName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.FileSourceSettings.FileName" />
+      <MemberSignature Language="VB.NET" Value="Public Property FileName As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -52,10 +55,11 @@
       <MemberSignature Language="C#" Value="public Microsoft.Skype.Internal.Bots.Media.FileSourceExtension FileSourceExtension { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Skype.Internal.Bots.Media.FileSourceExtension FileSourceExtension" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.FileSourceSettings.FileSourceExtension" />
+      <MemberSignature Language="VB.NET" Value="Public Property FileSourceExtension As FileSourceExtension" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Skype.Internal.Bots.Media.FileSourceExtension</ReturnType>
@@ -70,10 +74,11 @@
       <MemberSignature Language="C#" Value="public Microsoft.Skype.Internal.Bots.Media.FileSourceType FileSourceType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Skype.Internal.Bots.Media.FileSourceType FileSourceType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.FileSourceSettings.FileSourceType" />
+      <MemberSignature Language="VB.NET" Value="Public Property FileSourceType As FileSourceType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Skype.Internal.Bots.Media.FileSourceType</ReturnType>

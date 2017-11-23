@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public static class HttpClientEx" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit HttpClientEx extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.HttpClientEx" />
+  <TypeSignature Language="VB.NET" Value="Public Module HttpClientEx" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -19,6 +20,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task AddAPIAuthorization (this System.Net.Http.HttpClient client, string appId = null, string password = null);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task AddAPIAuthorization(class System.Net.Http.HttpClient client, string appId, string password) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.HttpClientEx.AddAPIAuthorization(System.Net.Http.HttpClient,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddAPIAuthorization (client As HttpClient, Optional appId As String = null, Optional password As String = null) As Task" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

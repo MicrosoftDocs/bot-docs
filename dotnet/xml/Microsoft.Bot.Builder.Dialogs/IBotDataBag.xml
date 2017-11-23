@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public interface IBotDataBag" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBotDataBag" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IBotDataBag" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IBotDataBag" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -18,6 +19,7 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.IBotDataBag.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -38,6 +40,7 @@
       <MemberSignature Language="C#" Value="public bool ContainsKey (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsKey(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.IBotDataBag.ContainsKey(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContainsKey (key As String) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -62,6 +65,7 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IBotDataBag.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -82,6 +86,7 @@
       <MemberSignature Language="C#" Value="public bool RemoveValue (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool RemoveValue(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.IBotDataBag.RemoveValue(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveValue (key As String) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -106,6 +111,7 @@
       <MemberSignature Language="C#" Value="public void SetValue&lt;T&gt; (string key, T value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetValue&lt;T&gt;(string key, !!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.IBotDataBag.SetValue``1(System.String,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetValue(Of T) (key As String, value As T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="C#" Value="public bool TryGetValue&lt;T&gt; (string key, out T value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue&lt;T&gt;(string key, [out] !!T&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.IBotDataBag.TryGetValue``1(System.String,``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetValue(Of T) (key As String, ByRef value As T) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

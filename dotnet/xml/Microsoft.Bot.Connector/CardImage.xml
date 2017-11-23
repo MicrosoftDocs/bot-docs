@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public class CardImage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CardImage extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.CardImage" />
+  <TypeSignature Language="VB.NET" Value="Public Class CardImage" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="C#" Value="public CardImage ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.CardImage.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -38,6 +40,7 @@
       <MemberSignature Language="C#" Value="public CardImage (string url = null, string alt = null, Microsoft.Bot.Connector.CardAction tap = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string url, string alt, class Microsoft.Bot.Connector.CardAction tap) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.CardImage.#ctor(System.String,System.String,Microsoft.Bot.Connector.CardAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional url As String = null, Optional alt As String = null, Optional tap As CardAction = null)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -62,6 +65,7 @@
       <MemberSignature Language="C#" Value="public string Alt { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Alt" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.CardImage.Alt" />
+      <MemberSignature Language="VB.NET" Value="Public Property Alt As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.CardAction Tap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.CardAction Tap" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.CardImage.Tap" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tap As CardAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="C#" Value="public string Url { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Url" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.CardImage.Url" />
+      <MemberSignature Language="VB.NET" Value="Public Property Url As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

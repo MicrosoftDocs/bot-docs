@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public sealed class FormPrompt : ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit FormPrompt extends System.Object implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FormPrompt&#xA;Implements ICloneable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="C#" Value="public FormPrompt ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -40,6 +42,7 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt; Buttons { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt; Buttons" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Buttons" />
+      <MemberSignature Language="VB.NET" Value="Public Property Buttons As IList(Of DescribeAttribute)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="C#" Value="public object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -81,6 +85,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.DescribeAttribute Description { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.FormFlow.DescribeAttribute Description" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As DescribeAttribute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -101,6 +106,7 @@
       <MemberSignature Language="C#" Value="public string Prompt { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Prompt" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Prompt" />
+      <MemberSignature Language="VB.NET" Value="Public Property Prompt As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -121,6 +127,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions Style;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions Style" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.Style" />
+      <MemberSignature Language="VB.NET" Value="Public Style As ChoiceStyleOptions " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -140,6 +147,7 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

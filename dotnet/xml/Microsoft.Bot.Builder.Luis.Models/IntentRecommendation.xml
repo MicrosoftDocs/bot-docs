@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public class IntentRecommendation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit IntentRecommendation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.Models.IntentRecommendation" />
+  <TypeSignature Language="VB.NET" Value="Public Class IntentRecommendation" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="C#" Value="public IntentRecommendation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.IntentRecommendation.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="C#" Value="public IntentRecommendation (string intent = null, Nullable&lt;double&gt; score = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.Action&gt; actions = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string intent, valuetype System.Nullable`1&lt;float64&gt; score, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Luis.Models.Action&gt; actions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.IntentRecommendation.#ctor(System.String,System.Nullable{System.Double},System.Collections.Generic.IList{Microsoft.Bot.Builder.Luis.Models.Action})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional intent As String = null, Optional score As Nullable(Of Double) = null, Optional actions As IList(Of Action) = null)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.Action&gt; Actions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Luis.Models.Action&gt; Actions" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.IntentRecommendation.Actions" />
+      <MemberSignature Language="VB.NET" Value="Public Property Actions As IList(Of Action)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="C#" Value="public string Intent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Intent" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.IntentRecommendation.Intent" />
+      <MemberSignature Language="VB.NET" Value="Public Property Intent As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Score { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Score" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.IntentRecommendation.Score" />
+      <MemberSignature Language="VB.NET" Value="Public Property Score As Nullable(Of Double)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

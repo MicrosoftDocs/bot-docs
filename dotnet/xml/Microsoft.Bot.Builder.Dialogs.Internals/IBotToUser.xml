@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public interface IBotToUser" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBotToUser" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IBotToUser" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -18,6 +19,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.IMessageActivity MakeMessage ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.IMessageActivity MakeMessage() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.MakeMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Function MakeMessage () As IMessageActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

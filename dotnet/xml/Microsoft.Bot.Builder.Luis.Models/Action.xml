@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public class Action" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Action extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.Models.Action" />
+  <TypeSignature Language="VB.NET" Value="Public Class Action" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -19,6 +20,7 @@
       <MemberSignature Language="C#" Value="public Action ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.Action.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -36,6 +38,7 @@
       <MemberSignature Language="C#" Value="public Action (Nullable&lt;bool&gt; triggered = null, string name = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.ActionParameter&gt; parameters = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;bool&gt; triggered, string name, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Luis.Models.ActionParameter&gt; parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.Action.#ctor(System.Nullable{System.Boolean},System.String,System.Collections.Generic.IList{Microsoft.Bot.Builder.Luis.Models.ActionParameter})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional triggered As Nullable(Of Boolean) = null, Optional name As String = null, Optional parameters As IList(Of ActionParameter) = null)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.Action.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -85,6 +89,7 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.ActionParameter&gt; Parameters { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Luis.Models.ActionParameter&gt; Parameters" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.Action.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public Property Parameters As IList(Of ActionParameter)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Triggered { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Triggered" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.Action.Triggered" />
+      <MemberSignature Language="VB.NET" Value="Public Property Triggered As Nullable(Of Boolean)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

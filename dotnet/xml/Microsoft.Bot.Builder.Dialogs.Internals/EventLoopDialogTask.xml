@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public sealed class EventLoopDialogTask : Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EventLoopDialogTask extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventLoopDialogTask&#xA;Implements IPostToBot" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="C#" Value="public EventLoopDialogTask (Func&lt;Microsoft.Bot.Builder.Base.IEventLoop&gt; makeInner, Microsoft.Bot.Builder.Base.IEventProducer&lt;Microsoft.Bot.Connector.IActivity&gt; queue, Microsoft.Bot.Builder.Dialogs.Internals.IBotData botData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`1&lt;class Microsoft.Bot.Builder.Base.IEventLoop&gt; makeInner, class Microsoft.Bot.Builder.Base.IEventProducer`1&lt;class Microsoft.Bot.Connector.IActivity&gt; queue, class Microsoft.Bot.Builder.Dialogs.Internals.IBotData botData) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask.#ctor(System.Func{Microsoft.Bot.Builder.Base.IEventLoop},Microsoft.Bot.Builder.Base.IEventProducer{Microsoft.Bot.Connector.IActivity},Microsoft.Bot.Builder.Dialogs.Internals.IBotData)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (makeInner As Func(Of IEventLoop), queue As IEventProducer(Of IActivity), botData As IBotData)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IPostToBot.PostAsync (Microsoft.Bot.Connector.IActivity activity, System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot.PostAsync(class Microsoft.Bot.Connector.IActivity activity, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask.Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Function PostAsync (activity As IActivity, token As CancellationToken) As Task Implements IPostToBot.PostAsync" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

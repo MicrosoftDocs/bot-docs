@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public interface IFrame&lt;C&gt; : Microsoft.Bot.Builder.Internals.Fibers.IFrameLoop&lt;C&gt;, Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFrame`1&lt;C&gt; implements class Microsoft.Bot.Builder.Internals.Fibers.IFrameLoop`1&lt;!C&gt;, class Microsoft.Bot.Builder.Internals.Fibers.IWaiter`1&lt;!C&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.IFrame`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IFrame(Of C)&#xA;Implements IFrameLoop(Of C), IWaiter(Of C)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>

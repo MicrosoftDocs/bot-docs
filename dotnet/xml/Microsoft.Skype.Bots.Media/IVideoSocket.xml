@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public interface IVideoSocket : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVideoSocket implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.IVideoSocket" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IVideoSocket&#xA;Implements IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+    <AssemblyVersion>1.7.0.26</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -18,14 +19,37 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="RequestKeyFrame">
+      <MemberSignature Language="C#" Value="public void RequestKeyFrame ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RequestKeyFrame() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.IVideoSocket.RequestKeyFrame" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RequestKeyFrame ()" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Allows the application to request for key frame.
+            Only valid for sockets with the ReceiveColorFormat as H264
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Send">
       <MemberSignature Language="C#" Value="public void Send (Microsoft.Skype.Bots.Media.VideoMediaBuffer buffer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Send(class Microsoft.Skype.Bots.Media.VideoMediaBuffer buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.IVideoSocket.Send(Microsoft.Skype.Bots.Media.VideoMediaBuffer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Send (buffer As VideoMediaBuffer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -52,10 +76,11 @@
       <MemberSignature Language="C#" Value="public int SocketId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SocketId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.IVideoSocket.SocketId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SocketId As Integer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -77,14 +102,37 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="VideoMediaReceived">
-      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Skype.Bots.Media.VideoMediaReceivedEventArgs&gt; VideoMediaReceived;" />
-      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Skype.Bots.Media.VideoMediaReceivedEventArgs&gt; VideoMediaReceived" />
-      <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Bots.Media.IVideoSocket.VideoMediaReceived" />
+    <Member MemberName="VideoKeyFrameNeeded">
+      <MemberSignature Language="C#" Value="event EventHandler&lt;Microsoft.Skype.Bots.Media.VideoKeyFrameNeededEventArgs&gt; VideoKeyFrameNeeded;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Skype.Bots.Media.VideoKeyFrameNeededEventArgs&gt; VideoKeyFrameNeeded" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Bots.Media.IVideoSocket.VideoKeyFrameNeeded" />
+      <MemberSignature Language="VB.NET" Value="Event VideoKeyFrameNeeded As EventHandler(Of VideoKeyFrameNeededEventArgs) " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Skype.Bots.Media.VideoKeyFrameNeededEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If the application has configured the VideoSocket to receive encoded media, this
+            event is raised each time a key frame is needed.
+            Events are serialized, so only one event at a time is raised to the app.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VideoMediaReceived">
+      <MemberSignature Language="C#" Value="event EventHandler&lt;Microsoft.Skype.Bots.Media.VideoMediaReceivedEventArgs&gt; VideoMediaReceived;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Skype.Bots.Media.VideoMediaReceivedEventArgs&gt; VideoMediaReceived" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Bots.Media.IVideoSocket.VideoMediaReceived" />
+      <MemberSignature Language="VB.NET" Value="Event VideoMediaReceived As EventHandler(Of VideoMediaReceivedEventArgs) " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Skype.Bots.Media.VideoMediaReceivedEventArgs&gt;</ReturnType>
@@ -103,13 +151,14 @@
       </Docs>
     </Member>
     <Member MemberName="VideoSendStatusChanged">
-      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs&gt; VideoSendStatusChanged;" />
+      <MemberSignature Language="C#" Value="event EventHandler&lt;Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs&gt; VideoSendStatusChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs&gt; VideoSendStatusChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Bots.Media.IVideoSocket.VideoSendStatusChanged" />
+      <MemberSignature Language="VB.NET" Value="Event VideoSendStatusChanged As EventHandler(Of VideoSendStatusChangedEventArgs) " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs&gt;</ReturnType>

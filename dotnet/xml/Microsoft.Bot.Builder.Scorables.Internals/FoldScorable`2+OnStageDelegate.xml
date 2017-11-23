@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public delegate bool FoldScorable&lt;Item,Score&gt;.OnStageDelegate(FoldStage stage, IScorable&lt;Item,Score&gt; scorable, Item item, object state, Score score);" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed FoldScorable`2/OnStageDelegate&lt;Item, Score&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.OnStageDelegate" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function FoldScorable(Of Item, Score).OnStageDelegate(stage As FoldStage, scorable As IScorable(Of Item, Score), item As Item, state As Object, score As Score) As Boolean " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>

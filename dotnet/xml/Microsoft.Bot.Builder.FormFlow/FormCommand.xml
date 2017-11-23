@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public enum FormCommand" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormCommand extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.FormCommand" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FormCommand" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="C#" Value="Backup" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.FormCommand Backup = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FormCommand.Backup" />
+      <MemberSignature Language="VB.NET" Value="Backup" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -28,6 +30,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.FormCommand</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
             Move back to the previous step.
@@ -38,6 +41,7 @@
       <MemberSignature Language="C#" Value="Help" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.FormCommand Help = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FormCommand.Help" />
+      <MemberSignature Language="VB.NET" Value="Help" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -46,6 +50,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.FormCommand</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>
             Ask for help on responding to the current field.
@@ -56,6 +61,7 @@
       <MemberSignature Language="C#" Value="Quit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.FormCommand Quit = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FormCommand.Quit" />
+      <MemberSignature Language="VB.NET" Value="Quit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -64,6 +70,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.FormCommand</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>
             Quit filling in the current form and return failure to parent dialog.
@@ -74,6 +81,7 @@
       <MemberSignature Language="C#" Value="Reset" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.FormCommand Reset = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FormCommand.Reset" />
+      <MemberSignature Language="VB.NET" Value="Reset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -82,6 +90,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.FormCommand</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>
             Reset the status of the form dialog.
@@ -92,6 +101,7 @@
       <MemberSignature Language="C#" Value="Status" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.FormCommand Status = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FormCommand.Status" />
+      <MemberSignature Language="VB.NET" Value="Status" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -100,6 +110,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.FormCommand</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>
             Provide feedback to the user on the current form state.

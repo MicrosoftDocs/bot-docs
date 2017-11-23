@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public interface IInvokeActivity : Microsoft.Bot.Connector.IActivity" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInvokeActivity implements class Microsoft.Bot.Connector.IActivity" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IInvokeActivity" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IInvokeActivity&#xA;Implements IActivity" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IInvokeActivity.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.ConversationReference RelatesTo { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.ConversationReference RelatesTo" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IInvokeActivity.RelatesTo" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelatesTo As ConversationReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -62,6 +65,7 @@
       <MemberSignature Language="C#" Value="public object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IInvokeActivity.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

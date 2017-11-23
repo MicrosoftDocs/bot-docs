@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public sealed class ChannelCapability : Microsoft.Bot.Builder.Dialogs.IChannelCapability" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ChannelCapability extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IChannelCapability" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.ChannelCapability" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ChannelCapability&#xA;Implements IChannelCapability" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="C#" Value="public ChannelCapability (Microsoft.Bot.Builder.Dialogs.IAddress address);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.IAddress address) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ChannelCapability.#ctor(Microsoft.Bot.Builder.Dialogs.IAddress)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (address As IAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="C#" Value="public bool NeedsInputHint ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool NeedsInputHint() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ChannelCapability.NeedsInputHint" />
+      <MemberSignature Language="VB.NET" Value="Public Function NeedsInputHint () As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="C#" Value="public bool SupportsKeyboards (int buttonCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SupportsKeyboards(int32 buttonCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ChannelCapability.SupportsKeyboards(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SupportsKeyboards (buttonCount As Integer) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -82,6 +86,7 @@
       <MemberSignature Language="C#" Value="public bool SupportsSpeak ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SupportsSpeak() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ChannelCapability.SupportsSpeak" />
+      <MemberSignature Language="VB.NET" Value="Public Function SupportsSpeak () As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

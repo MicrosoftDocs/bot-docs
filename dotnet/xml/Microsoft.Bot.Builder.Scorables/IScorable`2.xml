@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public interface IScorable&lt;in Item,out Score&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IScorable`2&lt;- Item, + Score&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.IScorable`2" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IScorable(Of In Item, Out Score)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>

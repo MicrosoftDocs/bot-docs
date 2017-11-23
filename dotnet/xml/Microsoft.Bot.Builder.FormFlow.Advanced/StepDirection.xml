@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public enum StepDirection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StepDirection extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection" />
+  <TypeSignature Language="VB.NET" Value="Public Enum StepDirection" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="C#" Value="Complete" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection Complete = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection.Complete" />
+      <MemberSignature Language="VB.NET" Value="Complete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -34,6 +36,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
             The form is complete and <see cref="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.OnCompletion(Microsoft.Bot.Builder.FormFlow.OnCompletionAsyncDelegate{`0})" /> should be called.
@@ -44,6 +47,7 @@
       <MemberSignature Language="C#" Value="Named" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection Named = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection.Named" />
+      <MemberSignature Language="VB.NET" Value="Named" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -52,6 +56,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>
             Move to a named step.  If there is more than one name, the user will be asked to choose.
@@ -62,6 +67,7 @@
       <MemberSignature Language="C#" Value="Next" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection Next = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection.Next" />
+      <MemberSignature Language="VB.NET" Value="Next" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -70,6 +76,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>
             Move to the next step that is <see cref="M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Active(`0)" /> and uncompleted.
@@ -80,6 +87,7 @@
       <MemberSignature Language="C#" Value="Previous" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection Previous = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection.Previous" />
+      <MemberSignature Language="VB.NET" Value="Previous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -88,6 +96,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>
             Move to the previously executed step.
@@ -98,6 +107,7 @@
       <MemberSignature Language="C#" Value="Quit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection Quit = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection.Quit" />
+      <MemberSignature Language="VB.NET" Value="Quit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -106,6 +116,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>
             Quit the form and return failure to the parent dialog.
@@ -116,6 +127,7 @@
       <MemberSignature Language="C#" Value="Reset" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection Reset = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection.Reset" />
+      <MemberSignature Language="VB.NET" Value="Reset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -124,6 +136,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>
             Reset the form to start over.

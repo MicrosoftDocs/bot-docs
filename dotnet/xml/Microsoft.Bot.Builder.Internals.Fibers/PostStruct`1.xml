@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public sealed class PostStruct&lt;T&gt; : Microsoft.Bot.Builder.Internals.Fibers.IPost&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PostStruct`1&lt;T&gt; extends System.Object implements class Microsoft.Bot.Builder.Internals.Fibers.IPost`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PostStruct(Of T)&#xA;Implements IPost(Of T)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="C#" Value="public PostStruct (Microsoft.Bot.Builder.Internals.Fibers.IPost&lt;object&gt; postBoxed);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Internals.Fibers.IPost`1&lt;object&gt; postBoxed) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1.#ctor(Microsoft.Bot.Builder.Internals.Fibers.IPost{System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (postBoxed As IPost(Of Object))" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="C#" Value="void IPost&lt;T&gt;.Post (T item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Bot.Builder.Internals.Fibers.IPost&lt;T&gt;.Post(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1.Microsoft#Bot#Builder#Internals#Fibers#IPost&lt;T&gt;#Post(`0)" />
+      <MemberSignature Language="VB.NET" Value="Sub Post (item As T) Implements IPost(Of T).Post" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

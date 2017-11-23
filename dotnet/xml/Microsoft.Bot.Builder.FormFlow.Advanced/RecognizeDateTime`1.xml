@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public sealed class RecognizeDateTime&lt;T&gt; : Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive&lt;T&gt; where T : class" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RecognizeDateTime`1&lt;class T&gt; extends Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeDateTime`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RecognizeDateTime(Of T)&#xA;Inherits RecognizePrimitive(Of T)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="C#" Value="public RecognizeDateTime (Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;T&gt; field);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.FormFlow.Advanced.IField`1&lt;!T&gt; field) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeDateTime`1.#ctor(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (field As IField(Of T))" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="C#" Value="public override string Help (T state, object defaultValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string Help(!T state, object defaultValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeDateTime`1.Help(`0,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Help (state As T, defaultValue As Object) As String" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="C#" Value="public override Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch Parse (string input);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch Parse(string input) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeDateTime`1.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Parse (input As String) As TermMatch" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="C#" Value="public override System.Collections.Generic.IEnumerable&lt;string&gt; ValidInputs (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; ValidInputs(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeDateTime`1.ValidInputs(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Iterator Overrides Function ValidInputs (value As Object) As IEnumerable(Of String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="C#" Value="public override Microsoft.Bot.Builder.FormFlow.DescribeAttribute ValueDescription (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.FormFlow.DescribeAttribute ValueDescription(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeDateTime`1.ValueDescription(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ValueDescription (value As Object) As DescribeAttribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

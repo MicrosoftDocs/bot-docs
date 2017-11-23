@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public sealed class EnumResolver : Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EnumResolver extends Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.EnumResolver" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EnumResolver&#xA;Inherits DelegatingResolver" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -19,6 +20,7 @@
       <MemberSignature Language="C#" Value="public EnumResolver (Microsoft.Bot.Builder.Scorables.Internals.IResolver inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Scorables.Internals.IResolver inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.EnumResolver.#ctor(Microsoft.Bot.Builder.Scorables.Internals.IResolver)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (inner As IResolver)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public sealed class DialogModule : Autofac.Module" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DialogModule extends Autofac.Module" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.DialogModule" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DialogModule&#xA;Inherits Module" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
     <AssemblyVersion>3.10.5.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="C#" Value="public DialogModule ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogModule.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
@@ -36,6 +38,7 @@
       <MemberSignature Language="C#" Value="public static Autofac.ILifetimeScope BeginLifetimeScope (Autofac.ILifetimeScope scope, Microsoft.Bot.Connector.IMessageActivity message);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Autofac.ILifetimeScope BeginLifetimeScope(class Autofac.ILifetimeScope scope, class Microsoft.Bot.Connector.IMessageActivity message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogModule.BeginLifetimeScope(Autofac.ILifetimeScope,Microsoft.Bot.Connector.IMessageActivity)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BeginLifetimeScope (scope As ILifetimeScope, message As IMessageActivity) As ILifetimeScope" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="C#" Value="public const string BlobKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string BlobKey" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Internals.DialogModule.BlobKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const BlobKey As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
@@ -77,6 +81,7 @@
       <MemberSignature Language="C#" Value="public static readonly object Key_DeleteProfile_Regex;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly object Key_DeleteProfile_Regex" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Internals.DialogModule.Key_DeleteProfile_Regex" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Key_DeleteProfile_Regex As Object " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
@@ -94,6 +99,7 @@
       <MemberSignature Language="C#" Value="public static readonly object Key_Dialog_Router;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly object Key_Dialog_Router" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Internals.DialogModule.Key_Dialog_Router" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Key_Dialog_Router As Object " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
@@ -111,6 +117,7 @@
       <MemberSignature Language="C#" Value="public static readonly object LifetimeScopeTag;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly object LifetimeScopeTag" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Internals.DialogModule.LifetimeScopeTag" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LifetimeScopeTag As Object " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
@@ -128,6 +135,7 @@
       <MemberSignature Language="C#" Value="protected override void Load (Autofac.ContainerBuilder builder);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Load(class Autofac.ContainerBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogModule.Load(Autofac.ContainerBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Load (builder As ContainerBuilder)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>

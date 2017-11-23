@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public static class Scorable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Scorable extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Scorable" />
+  <TypeSignature Language="VB.NET" Value="Public Module Scorable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -19,6 +20,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt; First&lt;Item,Score&gt; (this System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;&gt; scorables);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!Score&gt; First&lt;Item, Score&gt;(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!Score&gt;&gt; scorables) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Scorable.First``2(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{``0,``1}})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function First(Of Item, Score) (scorables As IEnumerable(Of IScorable(Of Item, Score))) As IScorable(Of Item, Score)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt; Fold&lt;Item,Score&gt; (this System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;&gt; scorables, System.Collections.Generic.IComparer&lt;Score&gt; comparer = null, Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;.OnStageDelegate onStage = null);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!Score&gt; Fold&lt;Item, Score&gt;(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!Score&gt;&gt; scorables, class System.Collections.Generic.IComparer`1&lt;!!Score&gt; comparer, class Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/OnStageDelegate&lt;!!Item, !!Score&gt; onStage) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Scorable.Fold``2(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{``0,``1}},System.Collections.Generic.IComparer{``1},Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.OnStageDelegate{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Fold(Of Item, Score) (scorables As IEnumerable(Of IScorable(Of Item, Score)), Optional comparer As IComparer(Of Score) = null, Optional onStage As FoldScorable(Of Item, Score).OnStageDelegate = null) As IScorable(Of Item, Score)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="C#" Value="public static bool Keep&lt;Item,Score&gt; (Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt; scorable);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Keep&lt;Item, Score&gt;(class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!Score&gt; scorable) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Scorable.Keep``2(Microsoft.Bot.Builder.Scorables.IScorable{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Keep(Of Item, Score) (scorable As IScorable(Of Item, Score)) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Scorables.IScorable&lt;SourceItem,Score&gt; SelectItem&lt;SourceItem,TargetItem,Score&gt; (this Microsoft.Bot.Builder.Scorables.IScorable&lt;TargetItem,Score&gt; scorable, Func&lt;SourceItem,TargetItem&gt; selector);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!SourceItem, !!Score&gt; SelectItem&lt;SourceItem, TargetItem, Score&gt;(class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!TargetItem, !!Score&gt; scorable, class System.Func`2&lt;!!SourceItem, !!TargetItem&gt; selector) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Scorable.SelectItem``3(Microsoft.Bot.Builder.Scorables.IScorable{``1,``2},System.Func{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SelectItem(Of SourceItem, TargetItem, Score) (scorable As IScorable(Of TargetItem, Score), selector As Func(Of SourceItem, TargetItem)) As IScorable(Of SourceItem, Score)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -147,6 +152,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,TargetScore&gt; SelectScore&lt;Item,SourceScore,TargetScore&gt; (this Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,SourceScore&gt; scorable, Func&lt;Item,SourceScore,TargetScore&gt; selector);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!TargetScore&gt; SelectScore&lt;Item, SourceScore, TargetScore&gt;(class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!SourceScore&gt; scorable, class System.Func`3&lt;!!Item, !!SourceScore, !!TargetScore&gt; selector) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Scorable.SelectScore``3(Microsoft.Bot.Builder.Scorables.IScorable{``0,``1},System.Func{``0,``1,``2})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SelectScore(Of Item, SourceScore, TargetScore) (scorable As IScorable(Of Item, SourceScore), selector As Func(Of Item, SourceScore, TargetScore)) As IScorable(Of Item, TargetScore)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -220,6 +226,7 @@
       <MemberSignature Language="C#" Value="public static bool TryReduce&lt;Item,Score&gt; (ref System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;&gt; scorables, out Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt; scorable);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReduce&lt;Item, Score&gt;(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!Score&gt;&gt;&amp; scorables, [out] class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!Score&gt;&amp; scorable) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Scorable.TryReduce``2(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{``0,``1}}@,Microsoft.Bot.Builder.Scorables.IScorable{``0,``1}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryReduce(Of Item, Score) (ByRef scorables As IEnumerable(Of IScorable(Of Item, Score)), ByRef scorable As IScorable(Of Item, Score)) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -252,6 +259,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt; WhereScore&lt;Item,Score&gt; (this Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt; scorable, Func&lt;Item,Score,bool&gt; predicate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!Score&gt; WhereScore&lt;Item, Score&gt;(class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!Score&gt; scorable, class System.Func`3&lt;!!Item, !!Score, bool&gt; predicate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Scorable.WhereScore``2(Microsoft.Bot.Builder.Scorables.IScorable{``0,``1},System.Func{``0,``1,System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function WhereScore(Of Item, Score) (scorable As IScorable(Of Item, Score), predicate As Func(Of Item, Score, Boolean)) As IScorable(Of Item, Score)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

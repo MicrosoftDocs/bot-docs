@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public sealed class MatchComparer : System.Collections.Generic.IComparer&lt;System.Text.RegularExpressions.Match&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MatchComparer extends System.Object implements class System.Collections.Generic.IComparer`1&lt;class System.Text.RegularExpressions.Match&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.MatchComparer" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MatchComparer&#xA;Implements IComparer(Of Match)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="C#" Value="public static readonly System.Collections.Generic.IComparer&lt;System.Text.RegularExpressions.Match&gt; Instance;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Collections.Generic.IComparer`1&lt;class System.Text.RegularExpressions.Match&gt; Instance" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.MatchComparer.Instance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Instance As IComparer(Of Match) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -40,6 +42,7 @@
       <MemberSignature Language="C#" Value="int IComparer&lt;Match&gt;.Compare (System.Text.RegularExpressions.Match one, System.Text.RegularExpressions.Match two);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.Generic.IComparer&lt;System.Text.RegularExpressions.Match&gt;.Compare(class System.Text.RegularExpressions.Match one, class System.Text.RegularExpressions.Match two) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.MatchComparer.System#Collections#Generic#IComparer&lt;System#Text#RegularExpressions#Match&gt;#Compare(System.Text.RegularExpressions.Match,System.Text.RegularExpressions.Match)" />
+      <MemberSignature Language="VB.NET" Value="Function Compare (one As Match, two As Match) As Integer Implements IComparer(Of Match).Compare" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

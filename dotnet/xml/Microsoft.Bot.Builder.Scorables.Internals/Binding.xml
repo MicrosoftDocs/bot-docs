@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public class Binding : IEquatable&lt;Microsoft.Bot.Builder.Scorables.Internals.Binding&gt;, Microsoft.Bot.Builder.Scorables.Internals.IBinding" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Binding extends System.Object implements class Microsoft.Bot.Builder.Scorables.Internals.IBinding, class System.IEquatable`1&lt;class Microsoft.Bot.Builder.Scorables.Internals.Binding&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.Binding" />
+  <TypeSignature Language="VB.NET" Value="Public Class Binding&#xA;Implements IBinding, IEquatable(Of Binding)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="C#" Value="public Binding (System.Reflection.MethodBase method, object instance, object[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.MethodBase method, object instance, object[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binding.#ctor(System.Reflection.MethodBase,System.Object,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (method As MethodBase, instance As Object, arguments As Object())" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="C#" Value="protected readonly object[] arguments;" />
       <MemberSignature Language="ILAsm" Value=".field family initonly object[] arguments" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.Binding.arguments" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly arguments As Object() " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object other) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binding.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (other As Object) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binding.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -106,6 +111,7 @@
       <MemberSignature Language="C#" Value="protected readonly object instance;" />
       <MemberSignature Language="ILAsm" Value=".field family initonly object instance" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.Binding.instance" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly instance As Object " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -123,6 +129,7 @@
       <MemberSignature Language="C#" Value="public static object[] MakeArguments (System.Reflection.MethodBase method, System.Collections.Generic.IReadOnlyList&lt;object&gt; source, System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object[] MakeArguments(class System.Reflection.MethodBase method, class System.Collections.Generic.IReadOnlyList`1&lt;object&gt; source, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binding.MakeArguments(System.Reflection.MethodBase,System.Collections.Generic.IReadOnlyList{System.Object},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MakeArguments (method As MethodBase, source As IReadOnlyList(Of Object), token As CancellationToken) As Object()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -149,6 +156,7 @@
       <MemberSignature Language="C#" Value="protected readonly System.Reflection.MethodBase method;" />
       <MemberSignature Language="ILAsm" Value=".field family initonly class System.Reflection.MethodBase method" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.Binding.method" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly method As MethodBase " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -166,6 +174,7 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IBinding.InvokeAsync (System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Scorables.Internals.IBinding.InvokeAsync(valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binding.Microsoft#Bot#Builder#Scorables#Internals#IBinding#InvokeAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Function InvokeAsync (token As CancellationToken) As Task Implements IBinding.InvokeAsync" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -188,6 +197,7 @@
       <MemberSignature Language="C#" Value="System.Reflection.MethodBase Microsoft.Bot.Builder.Scorables.Internals.IBinding.Method { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.MethodBase Microsoft.Bot.Builder.Scorables.Internals.IBinding.Method" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Scorables.Internals.Binding.Microsoft#Bot#Builder#Scorables#Internals#IBinding#Method" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Method As MethodBase Implements IBinding.Method" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -206,6 +216,7 @@
       <MemberSignature Language="C#" Value="bool IEquatable&lt;Binding&gt;.Equals (Microsoft.Bot.Builder.Scorables.Internals.Binding other);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.IEquatable&lt;Microsoft.Bot.Builder.Scorables.Internals.Binding&gt;.Equals(class Microsoft.Bot.Builder.Scorables.Internals.Binding other) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binding.System#IEquatable&lt;Microsoft#Bot#Builder#Scorables#Internals#Binding&gt;#Equals(Microsoft.Bot.Builder.Scorables.Internals.Binding)" />
+      <MemberSignature Language="VB.NET" Value="Function Equals (other As Binding) As Boolean Implements IEquatable(Of Binding).Equals" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -228,6 +239,7 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binding.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

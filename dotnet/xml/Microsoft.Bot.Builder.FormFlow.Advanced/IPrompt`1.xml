@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public interface IPrompt&lt;T&gt; where T : class" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPrompt`1&lt;class T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IPrompt(Of T)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute Annotation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute Annotation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1.Annotation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Annotation As TemplateBaseAttribute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt Prompt (T state, Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;T&gt; field, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt Prompt(!T state, class Microsoft.Bot.Builder.FormFlow.Advanced.IField`1&lt;!T&gt; field, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1.Prompt(`0,Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0},System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Prompt (state As T, field As IField(Of T), ParamArray args As Object()) As FormPrompt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize&lt;T&gt; Recognizer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1&lt;!T&gt; Recognizer" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1.Recognizer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Recognizer As IRecognize(Of T)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

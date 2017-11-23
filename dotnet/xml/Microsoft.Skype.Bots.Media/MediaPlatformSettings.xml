@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public class MediaPlatformSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MediaPlatformSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.MediaPlatformSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Class MediaPlatformSettings" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+    <AssemblyVersion>1.7.0.26</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,10 +22,11 @@
       <MemberSignature Language="C#" Value="public MediaPlatformSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.MediaPlatformSettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -36,10 +38,11 @@
       <MemberSignature Language="C#" Value="public string ApplicationId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ApplicationId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.MediaPlatformSettings.ApplicationId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationId As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -56,10 +59,11 @@
       <MemberSignature Language="C#" Value="public Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings MediaPlatformInstanceSettings { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings MediaPlatformInstanceSettings" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.MediaPlatformSettings.MediaPlatformInstanceSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Property MediaPlatformInstanceSettings As MediaPlatformInstanceSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings</ReturnType>
@@ -76,10 +80,11 @@
       <MemberSignature Language="C#" Value="public string RegionAffinity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RegionAffinity" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.MediaPlatformSettings.RegionAffinity" />
+      <MemberSignature Language="VB.NET" Value="Public Property RegionAffinity As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

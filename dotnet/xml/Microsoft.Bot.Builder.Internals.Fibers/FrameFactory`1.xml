@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public sealed class FrameFactory&lt;C&gt; : Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory&lt;C&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit FrameFactory`1&lt;C&gt; extends System.Object implements class Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory`1&lt;!C&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.FrameFactory`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FrameFactory(Of C)&#xA;Implements IFrameFactory(Of C)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="C#" Value="public FrameFactory ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.FrameFactory`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="C#" Value="Microsoft.Bot.Builder.Internals.Fibers.IFrame&lt;C&gt; IFrameFactory&lt;C&gt;.Make ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.Bot.Builder.Internals.Fibers.IFrame`1&lt;!C&gt; Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory&lt;C&gt;.Make() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.FrameFactory`1.Microsoft#Bot#Builder#Internals#Fibers#IFrameFactory&lt;C&gt;#Make" />
+      <MemberSignature Language="VB.NET" Value="Function Make () As IFrame(Of C) Implements IFrameFactory(Of C).Make" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

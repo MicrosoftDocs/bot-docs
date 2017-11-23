@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public interface IResolver" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IResolver" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IResolver" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>

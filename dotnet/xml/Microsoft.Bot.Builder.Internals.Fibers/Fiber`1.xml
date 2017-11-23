@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public sealed class Fiber&lt;C&gt; : Microsoft.Bot.Builder.Internals.Fibers.IFiber&lt;C&gt;, Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop&lt;C&gt;, Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit Fiber`1&lt;C&gt; extends System.Object implements class Microsoft.Bot.Builder.Internals.Fibers.IFiber`1&lt;!C&gt;, class Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop`1&lt;!C&gt;, class Microsoft.Bot.Builder.Internals.Fibers.IWaiter`1&lt;!C&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.Fiber`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Fiber(Of C)&#xA;Implements IFiber(Of C), IFiberLoop(Of C), IWaiter(Of C)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="C#" Value="public Fiber (Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory&lt;C&gt; factory, Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory&lt;C&gt; waits);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory`1&lt;!C&gt; factory, class Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory`1&lt;!C&gt; waits) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.#ctor(Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory{`0},Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (factory As IFrameFactory(Of C), waits As IWaitFactory(Of C))" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="C#" Value="void IFiber&lt;C&gt;.Done ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Bot.Builder.Internals.Fibers.IFiber&lt;C&gt;.Done() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber&lt;C&gt;#Done" />
+      <MemberSignature Language="VB.NET" Value="Sub Done () Implements IFiber(Of C).Done" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="C#" Value="System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Internals.Fibers.IFrame&lt;C&gt;&gt; Microsoft.Bot.Builder.Internals.Fibers.IFiber&lt;C&gt;.Frames { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Bot.Builder.Internals.Fibers.IFrame`1&lt;!C&gt;&gt; Microsoft.Bot.Builder.Internals.Fibers.IFiber&lt;C&gt;.Frames" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber&lt;C&gt;#Frames" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Frames As IReadOnlyList(Of IFrame(Of C)) Implements IFiber(Of C).Frames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -89,6 +93,7 @@
       <MemberSignature Language="C#" Value="void IFiber&lt;C&gt;.Push ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Bot.Builder.Internals.Fibers.IFiber&lt;C&gt;.Push() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber&lt;C&gt;#Push" />
+      <MemberSignature Language="VB.NET" Value="Sub Push () Implements IFiber(Of C).Push" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="C#" Value="Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory&lt;C&gt; Microsoft.Bot.Builder.Internals.Fibers.IFiber&lt;C&gt;.Waits { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory`1&lt;!C&gt; Microsoft.Bot.Builder.Internals.Fibers.IFiber&lt;C&gt;.Waits" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber&lt;C&gt;#Waits" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Waits As IWaitFactory(Of C) Implements IFiber(Of C).Waits" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -125,6 +131,7 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C&gt;&gt; IFiberLoop&lt;C&gt;.PollAsync (C context, System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!C&gt;&gt; Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop&lt;C&gt;.PollAsync(!C context, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiberLoop&lt;C&gt;#PollAsync(`0,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Function PollAsync (context As C, token As CancellationToken) As Task(Of IWait(Of C)) Implements IFiberLoop(Of C).PollAsync" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -154,6 +161,7 @@
       <MemberSignature Language="C#" Value="Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C&gt; Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;.Mark { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!C&gt; Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;.Mark" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IWaiter&lt;C&gt;#Mark" />
+      <MemberSignature Language="VB.NET" Value=" Property Mark As IWait(Of C) Implements IWaiter(Of C).Mark" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -172,6 +180,7 @@
       <MemberSignature Language="C#" Value="Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C&gt; Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;.Wait { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!C&gt; Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;.Wait" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IWaiter&lt;C&gt;#Wait" />
+      <MemberSignature Language="VB.NET" Value=" Property Wait As IWait(Of C) Implements IWaiter(Of C).Wait" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

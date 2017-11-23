@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public enum BuiltIn.DateTime.Reference" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed BuiltIn/DateTime/Reference extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference" />
+  <TypeSignature Language="VB.NET" Value="Public Enum BuiltIn.DateTime.Reference" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
@@ -18,6 +19,7 @@
       <MemberSignature Language="C#" Value="FUTURE_REF" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/Reference FUTURE_REF = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference.FUTURE_REF" />
+      <MemberSignature Language="VB.NET" Value="FUTURE_REF" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -31,6 +33,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+Reference</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -39,6 +42,7 @@
       <MemberSignature Language="C#" Value="PAST_REF" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/Reference PAST_REF = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference.PAST_REF" />
+      <MemberSignature Language="VB.NET" Value="PAST_REF" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -52,6 +56,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+Reference</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -60,6 +65,7 @@
       <MemberSignature Language="C#" Value="PRESENT_REF" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/Reference PRESENT_REF = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference.PRESENT_REF" />
+      <MemberSignature Language="VB.NET" Value="PRESENT_REF" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -73,6 +79,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+Reference</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>

@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public interface IBotDataStore&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBotDataStore`1&lt;T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IBotDataStore(Of T)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.11.0.0</AssemblyVersion>
