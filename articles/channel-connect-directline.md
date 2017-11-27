@@ -43,7 +43,5 @@ Finally, configure settings for the site.
 > [!TIP]
 > If you are creating a new connection between your client application and bot, use Direct Line API 3.0.
 
-- To enable [Direct Line API preformance improvements](https://blog.botframework.com/2017/02/02/Direct-Line-performance-improvements/), select **High-speed storage [PREVIEW]**.
-
 When finished, click **Done** to save the site configuration. You can repeat this process, beginning with [Add new site](#add-new-site), for each client application that you want to connect to your bot.
 
