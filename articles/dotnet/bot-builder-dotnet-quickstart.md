@@ -33,7 +33,7 @@ Get started by completing the following prerequisite tasks:
 
 2. In Visual Studio, <a href="https://docs.microsoft.com/en-us/visualstudio/extensibility/how-to-update-a-visual-studio-extension" target="_blank">update all extensions</a> to their latest versions.
 
-4. Download the [Bot Application](http://aka.ms/bf-bc-vstemplate), [Bot Controller](http://aka.ms/bf-bc-vscontrollertemplate), and [Bot Dialog](http://aka.ms/bf-bc-vsdialogtemplate) .zip files. Install the project template by copying `Bot Application.zip` file to your Visual Studio 2017 project templates directory. Install the item templates by copying `Bot Controller.zip` and `Bot Dialog.zip` to your Visual Studio 2017 item templates directory.
+4. Download the [Bot Application](http://aka.ms/bf-bc-vstemplate), [Bot Controller](http://aka.ms/bf-bc-vscontrollertemplate), and [Bot Dialog](http://aka.ms/bf-bc-vsdialogtemplate) .zip files. Install the project template by copying `Bot Application.zip` to your Visual Studio 2017 project templates directory. Install the item templates by copying `Bot Controller.zip` and `Bot Dialog.zip` to your Visual Studio 2017 item templates directory.
 
 > [!TIP]
 > The Visual Studio 2017 project templates directory is typically located at `%USERPROFILE%\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\` and the item templates directory is at `%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates\Visual C#\`
