@@ -66,7 +66,7 @@
 ### [Request payment](~/dotnet/bot-builder-dotnet-request-payment.md)
 ### [Add Azure Search](~/dotnet/bot-builder-dotnet-search-azure.md)
 ### [Secure your bot](~/dotnet/bot-builder-dotnet-security.md)
-### [SDK release notes](~/dotnet/bot-builder-dotnet-release-notes.md)
+### [SDK release notes](https://github.com/Microsoft/BotBuilder/releases)
 ### [SDK reference](/dotnet/api/?view=botbuilder-3.11.0)
 ## [Develop with Node.js](~/nodejs/bot-builder-nodejs-overview.md)
 ### [Key concepts](~/nodejs/bot-builder-nodejs-concepts.md)
