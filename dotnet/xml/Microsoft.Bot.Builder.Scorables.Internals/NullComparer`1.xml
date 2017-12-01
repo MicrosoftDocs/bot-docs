@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public sealed class NullComparer&lt;T&gt; : System.Collections.Generic.IComparer&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NullComparer`1&lt;T&gt; extends System.Object implements class System.Collections.Generic.IComparer`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.NullComparer`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NullComparer(Of T)&#xA;Implements IComparer(Of T)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -29,10 +30,11 @@
       <MemberSignature Language="C#" Value="public static readonly System.Collections.Generic.IComparer&lt;T&gt; Instance;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Collections.Generic.IComparer`1&lt;!T&gt; Instance" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.NullComparer`1.Instance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Instance As IComparer(Of T) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IComparer&lt;T&gt;</ReturnType>
@@ -46,10 +48,11 @@
       <MemberSignature Language="C#" Value="int IComparer&lt;T&gt;.Compare (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.Generic.IComparer&lt;T&gt;.Compare(!T x, !T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.NullComparer`1.System#Collections#Generic#IComparer&lt;T&gt;#Compare(`0,`0)" />
+      <MemberSignature Language="VB.NET" Value="Function Compare (x As T, y As T) As Integer Implements IComparer(Of T).Compare" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

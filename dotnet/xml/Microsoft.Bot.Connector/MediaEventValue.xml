@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public class MediaEventValue" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MediaEventValue extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.MediaEventValue" />
+  <TypeSignature Language="VB.NET" Value="Public Class MediaEventValue" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="C#" Value="public MediaEventValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.MediaEventValue.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -38,6 +40,7 @@
       <MemberSignature Language="C#" Value="public MediaEventValue (object cardValue = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object cardValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.MediaEventValue.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional cardValue As Object = null)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -58,6 +61,7 @@
       <MemberSignature Language="C#" Value="public object CardValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object CardValue" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.MediaEventValue.CardValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property CardValue As Object" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

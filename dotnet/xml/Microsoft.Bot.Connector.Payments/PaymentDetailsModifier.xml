@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public class PaymentDetailsModifier" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaymentDetailsModifier extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Payments.PaymentDetailsModifier" />
+  <TypeSignature Language="VB.NET" Value="Public Class PaymentDetailsModifier" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="C#" Value="public PaymentDetailsModifier ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.PaymentDetailsModifier.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="C#" Value="public PaymentDetailsModifier (System.Collections.Generic.IList&lt;string&gt; supportedMethods = null, Microsoft.Bot.Connector.Payments.PaymentItem total = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Payments.PaymentItem&gt; additionalDisplayItems = null, object data = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;string&gt; supportedMethods, class Microsoft.Bot.Connector.Payments.PaymentItem total, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Payments.PaymentItem&gt; additionalDisplayItems, object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.PaymentDetailsModifier.#ctor(System.Collections.Generic.IList{System.String},Microsoft.Bot.Connector.Payments.PaymentItem,System.Collections.Generic.IList{Microsoft.Bot.Connector.Payments.PaymentItem},System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional supportedMethods As IList(Of String) = null, Optional total As PaymentItem = null, Optional additionalDisplayItems As IList(Of PaymentItem) = null, Optional data As Object = null)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Payments.PaymentItem&gt; AdditionalDisplayItems { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Payments.PaymentItem&gt; AdditionalDisplayItems" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentDetailsModifier.AdditionalDisplayItems" />
+      <MemberSignature Language="VB.NET" Value="Public Property AdditionalDisplayItems As IList(Of PaymentItem)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="C#" Value="public object Data { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Data" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentDetailsModifier.Data" />
+      <MemberSignature Language="VB.NET" Value="Public Property Data As Object" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; SupportedMethods { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; SupportedMethods" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentDetailsModifier.SupportedMethods" />
+      <MemberSignature Language="VB.NET" Value="Public Property SupportedMethods As IList(Of String)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -143,6 +149,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.Payments.PaymentItem Total { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.Payments.PaymentItem Total" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentDetailsModifier.Total" />
+      <MemberSignature Language="VB.NET" Value="Public Property Total As PaymentItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

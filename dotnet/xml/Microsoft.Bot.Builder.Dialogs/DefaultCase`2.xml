@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public sealed class DefaultCase&lt;T,R&gt; : Microsoft.Bot.Builder.Dialogs.Case&lt;T,R&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit DefaultCase`2&lt;T, R&gt; extends Microsoft.Bot.Builder.Dialogs.Case`2&lt;!T, !R&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.DefaultCase`2" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DefaultCase(Of T, R)&#xA;Inherits Case(Of T, R)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -30,10 +31,11 @@
       <MemberSignature Language="C#" Value="public DefaultCase (Microsoft.Bot.Builder.Dialogs.ContextualSelector&lt;T,R&gt; selector);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.ContextualSelector`2&lt;!T, !R&gt; selector) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DefaultCase`2.#ctor(Microsoft.Bot.Builder.Dialogs.ContextualSelector{`0,`1})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (selector As ContextualSelector(Of T, R))" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="selector" Type="Microsoft.Bot.Builder.Dialogs.ContextualSelector&lt;T,R&gt;" />

@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public delegate System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt&gt; PromptAsyncDelegate&lt;T&gt;(IDialogContext context, FormPrompt prompt, T state, IField&lt;T&gt; field) where T : class;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PromptAsyncDelegate`1&lt;class T&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.PromptAsyncDelegate`1" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function PromptAsyncDelegate(Of T)(context As IDialogContext, prompt As FormPrompt, state As T, field As IField(Of T)) As Task(Of FormPrompt) " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">

@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public static class IdentityTokenExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit IdentityTokenExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IdentityTokenExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module IdentityTokenExtensions" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -19,6 +20,7 @@
       <MemberSignature Language="C#" Value="public static void ValidateServiceUrlClaim (this Microsoft.Bot.Connector.IdentityToken token, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Connector.IActivity&gt; activities);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ValidateServiceUrlClaim(class Microsoft.Bot.Connector.IdentityToken token, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Connector.IActivity&gt; activities) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IdentityTokenExtensions.ValidateServiceUrlClaim(Microsoft.Bot.Connector.IdentityToken,System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.IActivity})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub ValidateServiceUrlClaim (token As IdentityToken, activities As IEnumerable(Of IActivity))" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

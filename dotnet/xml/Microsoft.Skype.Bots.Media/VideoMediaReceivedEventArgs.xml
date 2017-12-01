@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public class VideoMediaReceivedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VideoMediaReceivedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.VideoMediaReceivedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class VideoMediaReceivedEventArgs&#xA;Inherits EventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+    <AssemblyVersion>1.7.0.26</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.EventArgs</BaseTypeName>
@@ -21,10 +22,11 @@
       <MemberSignature Language="C#" Value="public VideoMediaReceivedEventArgs ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.VideoMediaReceivedEventArgs.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -33,13 +35,14 @@
       </Docs>
     </Member>
     <Member MemberName="Buffer">
-      <MemberSignature Language="C#" Value="public Microsoft.Skype.Bots.Media.VideoMediaBuffer Buffer { get; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Skype.Bots.Media.VideoMediaBuffer Buffer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Skype.Bots.Media.VideoMediaBuffer Buffer" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoMediaReceivedEventArgs.Buffer" />
+      <MemberSignature Language="VB.NET" Value="Public Property Buffer As VideoMediaBuffer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Skype.Bots.Media.VideoMediaBuffer</ReturnType>
@@ -53,13 +56,14 @@
       </Docs>
     </Member>
     <Member MemberName="MediaType">
-      <MemberSignature Language="C#" Value="public Microsoft.Skype.Bots.Media.MediaType MediaType { get; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Skype.Bots.Media.MediaType MediaType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Skype.Bots.Media.MediaType MediaType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoMediaReceivedEventArgs.MediaType" />
+      <MemberSignature Language="VB.NET" Value="Public Property MediaType As MediaType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Skype.Bots.Media.MediaType</ReturnType>
@@ -73,13 +77,14 @@
       </Docs>
     </Member>
     <Member MemberName="SocketId">
-      <MemberSignature Language="C#" Value="public int SocketId { get; }" />
+      <MemberSignature Language="C#" Value="public int SocketId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SocketId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoMediaReceivedEventArgs.SocketId" />
+      <MemberSignature Language="VB.NET" Value="Public Property SocketId As Integer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

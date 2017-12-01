@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public class PaymentShippingOption" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaymentShippingOption extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Payments.PaymentShippingOption" />
+  <TypeSignature Language="VB.NET" Value="Public Class PaymentShippingOption" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="C#" Value="public PaymentShippingOption ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.PaymentShippingOption.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -38,6 +40,7 @@
       <MemberSignature Language="C#" Value="public PaymentShippingOption (string id = null, string label = null, Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount amount = null, Nullable&lt;bool&gt; selected = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string label, class Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount amount, valuetype System.Nullable`1&lt;bool&gt; selected) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.PaymentShippingOption.#ctor(System.String,System.String,Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount,System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional label As String = null, Optional amount As PaymentCurrencyAmount = null, Optional selected As Nullable(Of Boolean) = null)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount Amount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount Amount" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentShippingOption.Amount" />
+      <MemberSignature Language="VB.NET" Value="Public Property Amount As PaymentCurrencyAmount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -89,6 +93,7 @@
       <MemberSignature Language="C#" Value="public string Id { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentShippingOption.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="C#" Value="public string Label { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Label" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentShippingOption.Label" />
+      <MemberSignature Language="VB.NET" Value="Public Property Label As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -139,6 +145,7 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Selected { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Selected" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentShippingOption.Selected" />
+      <MemberSignature Language="VB.NET" Value="Public Property Selected As Nullable(Of Boolean)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

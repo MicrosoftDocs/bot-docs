@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public class AudioSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AudioSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.AudioSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Class AudioSettings" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+    <AssemblyVersion>1.7.0.26</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,10 +22,11 @@
       <MemberSignature Language="C#" Value="public AudioSettings (uint buffersizeInMs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int32 buffersizeInMs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.AudioSettings.#ctor(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (buffersizeInMs As UInteger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="buffersizeInMs" Type="System.UInt32" />
@@ -41,17 +43,18 @@
       <MemberSignature Language="C#" Value="public uint BufferSizeInMs { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 BufferSizeInMs" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.AudioSettings.BufferSizeInMs" />
+      <MemberSignature Language="VB.NET" Value="Public Property BufferSizeInMs As UInteger" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            audio buffer length in ms
+            Audio buffer length in ms
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

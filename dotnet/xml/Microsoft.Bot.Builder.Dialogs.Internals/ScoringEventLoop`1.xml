@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public sealed class ScoringEventLoop&lt;Score&gt; : Microsoft.Bot.Builder.Base.IEventLoop" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ScoringEventLoop`1&lt;Score&gt; extends System.Object implements class Microsoft.Bot.Builder.Base.IEventLoop" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.ScoringEventLoop`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ScoringEventLoop(Of Score)&#xA;Implements IEventLoop" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="Score" />
@@ -30,10 +31,11 @@
       <MemberSignature Language="C#" Value="public ScoringEventLoop (Microsoft.Bot.Builder.Base.IEventLoop innerLoop, Microsoft.Bot.Builder.Base.IEventProducer&lt;Microsoft.Bot.Connector.IActivity&gt; innerProducer, Microsoft.Bot.Builder.Base.IEventConsumer&lt;Microsoft.Bot.Connector.IActivity&gt; consumer, Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Connector.IActivity,Score&gt; scorable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Base.IEventLoop innerLoop, class Microsoft.Bot.Builder.Base.IEventProducer`1&lt;class Microsoft.Bot.Connector.IActivity&gt; innerProducer, class Microsoft.Bot.Builder.Base.IEventConsumer`1&lt;class Microsoft.Bot.Connector.IActivity&gt; consumer, class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Connector.IActivity, !Score&gt; scorable) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ScoringEventLoop`1.#ctor(Microsoft.Bot.Builder.Base.IEventLoop,Microsoft.Bot.Builder.Base.IEventProducer{Microsoft.Bot.Connector.IActivity},Microsoft.Bot.Builder.Base.IEventConsumer{Microsoft.Bot.Connector.IActivity},Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Connector.IActivity,`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (innerLoop As IEventLoop, innerProducer As IEventProducer(Of IActivity), consumer As IEventConsumer(Of IActivity), scorable As IScorable(Of IActivity, Score))" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="innerLoop" Type="Microsoft.Bot.Builder.Base.IEventLoop" />
@@ -54,10 +56,11 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IEventLoop.PollAsync (System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Base.IEventLoop.PollAsync(valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ScoringEventLoop`1.Microsoft#Bot#Builder#Base#IEventLoop#PollAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Function PollAsync (token As CancellationToken) As Task Implements IEventLoop.PollAsync" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

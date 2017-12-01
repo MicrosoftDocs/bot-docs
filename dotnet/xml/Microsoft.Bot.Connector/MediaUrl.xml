@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public class MediaUrl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MediaUrl extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.MediaUrl" />
+  <TypeSignature Language="VB.NET" Value="Public Class MediaUrl" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="C#" Value="public MediaUrl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.MediaUrl.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -38,6 +40,7 @@
       <MemberSignature Language="C#" Value="public MediaUrl (string url = null, string profile = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string url, string profile) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.MediaUrl.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional url As String = null, Optional profile As String = null)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="C#" Value="public string Profile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Profile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.MediaUrl.Profile" />
+      <MemberSignature Language="VB.NET" Value="Public Property Profile As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="C#" Value="public string Url { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Url" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.MediaUrl.Url" />
+      <MemberSignature Language="VB.NET" Value="Public Property Url As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

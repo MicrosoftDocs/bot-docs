@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public class Activity : Microsoft.Bot.Connector.IContactRelationUpdateActivity, Microsoft.Bot.Connector.IConversationUpdateActivity, Microsoft.Bot.Connector.IEndOfConversationActivity, Microsoft.Bot.Connector.IEventActivity, Microsoft.Bot.Connector.IInstallationUpdateActivity, Microsoft.Bot.Connector.IInvokeActivity, Microsoft.Bot.Connector.IMessageActivity, Microsoft.Bot.Connector.ITypingActivity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Activity extends System.Object implements class Microsoft.Bot.Connector.IActivity, class Microsoft.Bot.Connector.IContactRelationUpdateActivity, class Microsoft.Bot.Connector.IConversationUpdateActivity, class Microsoft.Bot.Connector.IEndOfConversationActivity, class Microsoft.Bot.Connector.IEventActivity, class Microsoft.Bot.Connector.IInstallationUpdateActivity, class Microsoft.Bot.Connector.IInvokeActivity, class Microsoft.Bot.Connector.IMessageActivity, class Microsoft.Bot.Connector.ITypingActivity" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Activity" />
+  <TypeSignature Language="VB.NET" Value="Public Class Activity&#xA;Implements IContactRelationUpdateActivity, IConversationUpdateActivity, IEndOfConversationActivity, IEventActivity, IInstallationUpdateActivity, IInvokeActivity, IMessageActivity, ITypingActivity" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="C#" Value="public Activity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -152,6 +154,7 @@
       <MemberSignature Language="C#" Value="public string Action { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Action" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Action" />
+      <MemberSignature Language="VB.NET" Value="Public Property Action As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -177,6 +180,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.IContactRelationUpdateActivity AsContactRelationUpdateActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.IContactRelationUpdateActivity AsContactRelationUpdateActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.AsContactRelationUpdateActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsContactRelationUpdateActivity () As IContactRelationUpdateActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -198,6 +202,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.IConversationUpdateActivity AsConversationUpdateActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.IConversationUpdateActivity AsConversationUpdateActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.AsConversationUpdateActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsConversationUpdateActivity () As IConversationUpdateActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -219,6 +224,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.IEndOfConversationActivity AsEndOfConversationActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.IEndOfConversationActivity AsEndOfConversationActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.AsEndOfConversationActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsEndOfConversationActivity () As IEndOfConversationActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -240,6 +246,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.IEventActivity AsEventActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.IEventActivity AsEventActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.AsEventActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsEventActivity () As IEventActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -261,6 +268,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.IInstallationUpdateActivity AsInstallationUpdateActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.IInstallationUpdateActivity AsInstallationUpdateActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.AsInstallationUpdateActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsInstallationUpdateActivity () As IInstallationUpdateActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -282,6 +290,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.IInvokeActivity AsInvokeActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.IInvokeActivity AsInvokeActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.AsInvokeActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsInvokeActivity () As IInvokeActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -303,6 +312,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.IMessageActivity AsMessageActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.IMessageActivity AsMessageActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.AsMessageActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsMessageActivity () As IMessageActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -324,6 +334,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.ITypingActivity AsTypingActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.ITypingActivity AsTypingActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.AsTypingActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsTypingActivity () As ITypingActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -345,6 +356,7 @@
       <MemberSignature Language="C#" Value="public string AttachmentLayout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AttachmentLayout" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.AttachmentLayout" />
+      <MemberSignature Language="VB.NET" Value="Public Property AttachmentLayout As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -371,6 +383,7 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt; Attachments { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Attachment&gt; Attachments" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Attachments" />
+      <MemberSignature Language="VB.NET" Value="Public Property Attachments As IList(Of Attachment)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -396,6 +409,7 @@
       <MemberSignature Language="C#" Value="public object ChannelData { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ChannelData" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.ChannelData" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChannelData As Object" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -421,6 +435,7 @@
       <MemberSignature Language="C#" Value="public string ChannelId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ChannelId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.ChannelId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChannelId As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -446,6 +461,7 @@
       <MemberSignature Language="C#" Value="public string Code { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Code" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Code" />
+      <MemberSignature Language="VB.NET" Value="Public Property Code As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -471,6 +487,7 @@
       <MemberSignature Language="C#" Value="public const string ContentType;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ContentType" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.Activity.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContentType As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -490,6 +507,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.ConversationAccount Conversation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.ConversationAccount Conversation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Conversation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Conversation As ConversationAccount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -515,6 +533,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.IContactRelationUpdateActivity CreateContactRelationUpdateActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.IContactRelationUpdateActivity CreateContactRelationUpdateActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.CreateContactRelationUpdateActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateContactRelationUpdateActivity () As IContactRelationUpdateActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -536,6 +555,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.IConversationUpdateActivity CreateConversationUpdateActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.IConversationUpdateActivity CreateConversationUpdateActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.CreateConversationUpdateActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateConversationUpdateActivity () As IConversationUpdateActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -557,6 +577,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.IEndOfConversationActivity CreateEndOfConversationActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.IEndOfConversationActivity CreateEndOfConversationActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.CreateEndOfConversationActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateEndOfConversationActivity () As IEndOfConversationActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -578,6 +599,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.IEventActivity CreateEventActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.IEventActivity CreateEventActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.CreateEventActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateEventActivity () As IEventActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -599,6 +621,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.IInvokeActivity CreateInvokeActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.IInvokeActivity CreateInvokeActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.CreateInvokeActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateInvokeActivity () As IInvokeActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -620,6 +643,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.IMessageActivity CreateMessageActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.IMessageActivity CreateMessageActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.CreateMessageActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMessageActivity () As IMessageActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -641,6 +665,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.IActivity CreatePingActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.IActivity CreatePingActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.CreatePingActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreatePingActivity () As IActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -662,6 +687,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.Activity CreateReply (string text = null, string locale = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Connector.Activity CreateReply(string text, string locale) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.CreateReply(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateReply (Optional text As String = null, Optional locale As String = null) As Activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -689,6 +715,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.ITypingActivity CreateTypingActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ITypingActivity CreateTypingActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.CreateTypingActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateTypingActivity () As ITypingActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -710,6 +737,7 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Entity&gt; Entities { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Entity&gt; Entities" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Entities" />
+      <MemberSignature Language="VB.NET" Value="Public Property Entities As IList(Of Entity)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -736,6 +764,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.ChannelAccount From { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.ChannelAccount From" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.From" />
+      <MemberSignature Language="VB.NET" Value="Public Property From As ChannelAccount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -761,6 +790,7 @@
       <MemberSignature Language="C#" Value="public static string GetActivityType (string type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetActivityType(string type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.GetActivityType(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetActivityType (type As String) As String" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -785,6 +815,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.Mention[] GetMentions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.Mention[] GetMentions() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.GetMentions" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMentions () As Mention()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -806,6 +837,7 @@
       <MemberSignature Language="C#" Value="public bool HasContent ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HasContent() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.HasContent" />
+      <MemberSignature Language="VB.NET" Value="Public Function HasContent () As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -827,6 +859,7 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; HistoryDisclosed { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; HistoryDisclosed" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.HistoryDisclosed" />
+      <MemberSignature Language="VB.NET" Value="Public Property HistoryDisclosed As Nullable(Of Boolean)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -852,6 +885,7 @@
       <MemberSignature Language="C#" Value="public string Id { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -877,6 +911,7 @@
       <MemberSignature Language="C#" Value="public string InputHint { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InputHint" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.InputHint" />
+      <MemberSignature Language="VB.NET" Value="Public Property InputHint As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -903,6 +938,7 @@
       <MemberSignature Language="C#" Value="protected bool IsActivity (string activity);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsActivity(string activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.IsActivity(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function IsActivity (activity As String) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -927,6 +963,7 @@
       <MemberSignature Language="C#" Value="public string Locale { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Locale" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Locale" />
+      <MemberSignature Language="VB.NET" Value="Public Property Locale As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -952,6 +989,7 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; LocalTimestamp { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; LocalTimestamp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.LocalTimestamp" />
+      <MemberSignature Language="VB.NET" Value="Public Property LocalTimestamp As Nullable(Of DateTimeOffset)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -978,6 +1016,7 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; MembersAdded { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ChannelAccount&gt; MembersAdded" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.MembersAdded" />
+      <MemberSignature Language="VB.NET" Value="Public Property MembersAdded As IList(Of ChannelAccount)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -1003,6 +1042,7 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; MembersRemoved { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ChannelAccount&gt; MembersRemoved" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.MembersRemoved" />
+      <MemberSignature Language="VB.NET" Value="Public Property MembersRemoved As IList(Of ChannelAccount)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -1028,6 +1068,7 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -1053,6 +1094,7 @@
       <MemberSignature Language="C#" Value="public Newtonsoft.Json.Linq.JObject Properties { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Newtonsoft.Json.Linq.JObject Properties" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public Property Properties As JObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -1078,6 +1120,7 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt; ReactionsAdded { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.MessageReaction&gt; ReactionsAdded" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.ReactionsAdded" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReactionsAdded As IList(Of MessageReaction)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -1103,6 +1146,7 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt; ReactionsRemoved { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.MessageReaction&gt; ReactionsRemoved" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.ReactionsRemoved" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReactionsRemoved As IList(Of MessageReaction)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -1128,6 +1172,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.ChannelAccount Recipient { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.ChannelAccount Recipient" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Recipient" />
+      <MemberSignature Language="VB.NET" Value="Public Property Recipient As ChannelAccount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -1153,6 +1198,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.ConversationReference RelatesTo { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.ConversationReference RelatesTo" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.RelatesTo" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelatesTo As ConversationReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -1178,6 +1224,7 @@
       <MemberSignature Language="C#" Value="public string ReplyToId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ReplyToId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.ReplyToId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReplyToId As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -1203,6 +1250,7 @@
       <MemberSignature Language="C#" Value="public string ServiceUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ServiceUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.ServiceUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServiceUrl As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -1229,6 +1277,7 @@
       <MemberSignature Language="C#" Value="public string Speak { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Speak" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Speak" />
+      <MemberSignature Language="VB.NET" Value="Public Property Speak As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -1254,6 +1303,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.SuggestedActions SuggestedActions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.SuggestedActions SuggestedActions" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.SuggestedActions" />
+      <MemberSignature Language="VB.NET" Value="Public Property SuggestedActions As SuggestedActions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -1280,6 +1330,7 @@
       <MemberSignature Language="C#" Value="public string Summary { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Summary" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Summary" />
+      <MemberSignature Language="VB.NET" Value="Public Property Summary As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -1305,6 +1356,7 @@
       <MemberSignature Language="C#" Value="public string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -1330,6 +1382,7 @@
       <MemberSignature Language="C#" Value="public string TextFormat { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TextFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.TextFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextFormat As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -1355,6 +1408,7 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; Timestamp { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; Timestamp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Timestamp" />
+      <MemberSignature Language="VB.NET" Value="Public Property Timestamp As Nullable(Of DateTime)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -1380,6 +1434,7 @@
       <MemberSignature Language="C#" Value="public string TopicName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TopicName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.TopicName" />
+      <MemberSignature Language="VB.NET" Value="Public Property TopicName As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -1405,6 +1460,7 @@
       <MemberSignature Language="C#" Value="public string Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Type" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -1431,6 +1487,7 @@
       <MemberSignature Language="C#" Value="public object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

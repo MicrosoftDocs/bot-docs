@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public static class InputHints" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit InputHints extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.InputHints" />
+  <TypeSignature Language="VB.NET" Value="Public Class InputHints" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="C#" Value="public const string AcceptingInput;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string AcceptingInput" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.InputHints.AcceptingInput" />
+      <MemberSignature Language="VB.NET" Value="Public Const AcceptingInput As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -40,6 +42,7 @@
       <MemberSignature Language="C#" Value="public const string ExpectingInput;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ExpectingInput" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.InputHints.ExpectingInput" />
+      <MemberSignature Language="VB.NET" Value="Public Const ExpectingInput As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -59,6 +62,7 @@
       <MemberSignature Language="C#" Value="public const string IgnoringInput;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string IgnoringInput" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.InputHints.IgnoringInput" />
+      <MemberSignature Language="VB.NET" Value="Public Const IgnoringInput As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

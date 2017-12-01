@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public static class ErrorHandling" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ErrorHandling extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ErrorHandling" />
+  <TypeSignature Language="VB.NET" Value="Public Module ErrorHandling" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -19,6 +20,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ErrorResponse&gt; HandleErrorAsync (this Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ErrorResponse&gt; result);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.ErrorResponse&gt; HandleErrorAsync(class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Bot.Connector.ErrorResponse&gt; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ErrorHandling.HandleErrorAsync(Microsoft.Rest.HttpOperationResponse{Microsoft.Bot.Connector.ErrorResponse})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function HandleErrorAsync (result As HttpOperationResponse(Of ErrorResponse)) As Task(Of ErrorResponse)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task HandleErrorAsync (this Microsoft.Rest.HttpOperationResponse&lt;object&gt; result);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task HandleErrorAsync(class Microsoft.Rest.HttpOperationResponse`1&lt;object&gt; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ErrorHandling.HandleErrorAsync(Microsoft.Rest.HttpOperationResponse{System.Object})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function HandleErrorAsync (result As HttpOperationResponse(Of Object)) As Task" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;ObjectT&gt; HandleErrorAsync&lt;ObjectT&gt; (this Microsoft.Rest.HttpOperationResponse&lt;object&gt; result);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!ObjectT&gt; HandleErrorAsync&lt;ObjectT&gt;(class Microsoft.Rest.HttpOperationResponse`1&lt;object&gt; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ErrorHandling.HandleErrorAsync``1(Microsoft.Rest.HttpOperationResponse{System.Object})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function HandleErrorAsync(Of ObjectT) (result As HttpOperationResponse(Of Object)) As Task(Of ObjectT)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

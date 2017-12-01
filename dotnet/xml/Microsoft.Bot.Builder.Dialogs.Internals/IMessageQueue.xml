@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public interface IMessageQueue" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMessageQueue" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IMessageQueue" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -16,10 +17,11 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DrainQueueAsync (Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser, System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DrainQueueAsync(class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue.DrainQueueAsync(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DrainQueueAsync (botToUser As IBotToUser, token As CancellationToken) As Task" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -40,10 +42,11 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task QueueMessageAsync (Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser, Microsoft.Bot.Connector.IMessageActivity message, System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task QueueMessageAsync(class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser, class Microsoft.Bot.Connector.IMessageActivity message, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue.QueueMessageAsync(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function QueueMessageAsync (botToUser As IBotToUser, message As IMessageActivity, token As CancellationToken) As Task" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

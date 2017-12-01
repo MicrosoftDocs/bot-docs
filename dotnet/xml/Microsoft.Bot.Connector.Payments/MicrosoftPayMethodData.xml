@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public class MicrosoftPayMethodData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MicrosoftPayMethodData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Payments.MicrosoftPayMethodData" />
+  <TypeSignature Language="VB.NET" Value="Public Class MicrosoftPayMethodData" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="C#" Value="public MicrosoftPayMethodData ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.MicrosoftPayMethodData.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="C#" Value="public MicrosoftPayMethodData (string merchantId = null, System.Collections.Generic.IList&lt;string&gt; supportedNetworks = null, System.Collections.Generic.IList&lt;string&gt; supportedTypes = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string merchantId, class System.Collections.Generic.IList`1&lt;string&gt; supportedNetworks, class System.Collections.Generic.IList`1&lt;string&gt; supportedTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.MicrosoftPayMethodData.#ctor(System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional merchantId As String = null, Optional supportedNetworks As IList(Of String) = null, Optional supportedTypes As IList(Of String) = null)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="C#" Value="public MicrosoftPayMethodData (string merchantId = null, System.Collections.Generic.IList&lt;string&gt; supportedNetworks = null, System.Collections.Generic.IList&lt;string&gt; supportedTypes = null, bool testMode = false);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string merchantId, class System.Collections.Generic.IList`1&lt;string&gt; supportedNetworks, class System.Collections.Generic.IList`1&lt;string&gt; supportedTypes, bool testMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.MicrosoftPayMethodData.#ctor(System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional merchantId As String = null, Optional supportedNetworks As IList(Of String) = null, Optional supportedTypes As IList(Of String) = null, Optional testMode As Boolean = false)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="C#" Value="public string MerchantId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MerchantId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.MicrosoftPayMethodData.MerchantId" />
+      <MemberSignature Language="VB.NET" Value="Public Property MerchantId As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -116,6 +121,7 @@
       <MemberSignature Language="C#" Value="public const string MethodName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string MethodName" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.Payments.MicrosoftPayMethodData.MethodName" />
+      <MemberSignature Language="VB.NET" Value="Public Const MethodName As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="C#" Value="public string Mode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Mode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.MicrosoftPayMethodData.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mode As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -160,6 +167,7 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; SupportedNetworks { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; SupportedNetworks" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.MicrosoftPayMethodData.SupportedNetworks" />
+      <MemberSignature Language="VB.NET" Value="Public Property SupportedNetworks As IList(Of String)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -185,6 +193,7 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; SupportedTypes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; SupportedTypes" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.MicrosoftPayMethodData.SupportedTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Property SupportedTypes As IList(Of String)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -210,6 +219,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.Payments.PaymentMethodData ToPaymentMethodData ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Connector.Payments.PaymentMethodData ToPaymentMethodData() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.MicrosoftPayMethodData.ToPaymentMethodData" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToPaymentMethodData () As PaymentMethodData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

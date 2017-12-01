@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public interface ILogger" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ILogger" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.ILogger" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ILogger" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+    <AssemblyVersion>1.7.0.26</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -19,7 +20,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -37,10 +38,11 @@
       <MemberSignature Language="C#" Value="public void AddListeners (System.Collections.Generic.IList&lt;System.Diagnostics.TraceListener&gt; traceListeners);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddListeners(class System.Collections.Generic.IList`1&lt;class System.Diagnostics.TraceListener&gt; traceListeners) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ILogger.AddListeners(System.Collections.Generic.IList{System.Diagnostics.TraceListener})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddListeners (traceListeners As IList(Of TraceListener))" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -58,10 +60,11 @@
       <MemberSignature Language="C#" Value="public void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ILogger.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Flush ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -79,7 +82,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -97,10 +100,11 @@
       <MemberSignature Language="C#" Value="public void SetLoggingLevel (string component, Microsoft.Skype.Internal.Bots.Media.LogLevel level);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetLoggingLevel(string component, valuetype Microsoft.Skype.Internal.Bots.Media.LogLevel level) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ILogger.SetLoggingLevel(System.String,Microsoft.Skype.Internal.Bots.Media.LogLevel)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetLoggingLevel (component As String, level As LogLevel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -120,10 +124,11 @@
       <MemberSignature Language="C#" Value="public void Write (string component, Microsoft.Skype.Internal.Bots.Media.LogLevel level, string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(string component, valuetype Microsoft.Skype.Internal.Bots.Media.LogLevel level, string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ILogger.Write(System.String,Microsoft.Skype.Internal.Bots.Media.LogLevel,System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (component As String, level As LogLevel, format As String, ParamArray args As Object())" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -153,10 +158,11 @@
       <MemberSignature Language="C#" Value="public void Write (string component, string correlationId, Microsoft.Skype.Internal.Bots.Media.LogLevel level, string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(string component, string correlationId, valuetype Microsoft.Skype.Internal.Bots.Media.LogLevel level, string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ILogger.Write(System.String,System.String,Microsoft.Skype.Internal.Bots.Media.LogLevel,System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (component As String, correlationId As String, level As LogLevel, format As String, ParamArray args As Object())" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

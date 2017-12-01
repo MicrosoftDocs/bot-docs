@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public delegate System.Threading.Tasks.Task&lt;bool&gt; DefineAsyncDelegate&lt;T&gt;(T state, Field&lt;T&gt; field) where T : class;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DefineAsyncDelegate`1&lt;class T&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.DefineAsyncDelegate`1" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function DefineAsyncDelegate(Of T)(state As T, field As Field(Of T)) As Task(Of Boolean) " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">

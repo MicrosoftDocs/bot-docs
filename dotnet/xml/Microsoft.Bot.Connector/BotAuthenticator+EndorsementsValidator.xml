@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public delegate bool BotAuthenticator.EndorsementsValidator(IEnumerable&lt;IActivity&gt; activities, string[] endorsements);" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed BotAuthenticator/EndorsementsValidator extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.BotAuthenticator.EndorsementsValidator" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function BotAuthenticator.EndorsementsValidator(activities As IEnumerable(Of IActivity), endorsements As String()) As Boolean " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>

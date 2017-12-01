@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public class Entity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Entity extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Entity" />
+  <TypeSignature Language="VB.NET" Value="Public Class Entity" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="C#" Value="public Entity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Entity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -38,6 +40,7 @@
       <MemberSignature Language="C#" Value="public Entity (string type = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Entity.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional type As String = null)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -58,6 +61,7 @@
       <MemberSignature Language="C#" Value="public T GetAs&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetAs&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Entity.GetAs``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAs(Of T) () As T" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="C#" Value="public Newtonsoft.Json.Linq.JObject Properties { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Newtonsoft.Json.Linq.JObject Properties" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Entity.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public Property Properties As JObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -108,6 +113,7 @@
       <MemberSignature Language="C#" Value="public void SetAs&lt;T&gt; (T obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAs&lt;T&gt;(!!T obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Entity.SetAs``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAs(Of T) (obj As T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="C#" Value="public string Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Type" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Entity.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

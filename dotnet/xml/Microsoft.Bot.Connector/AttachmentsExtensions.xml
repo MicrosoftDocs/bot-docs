@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public static class AttachmentsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AttachmentsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.AttachmentsExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module AttachmentsExtensions" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="C#" Value="public static byte[] GetAttachment (this Microsoft.Bot.Connector.IAttachments operations, string attachmentId, string viewId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] GetAttachment(class Microsoft.Bot.Connector.IAttachments operations, string attachmentId, string viewId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachment(Microsoft.Bot.Connector.IAttachments,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAttachment (operations As IAttachments, attachmentId As String, viewId As String) As Byte()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.AttachmentInfo GetAttachmentInfo (this Microsoft.Bot.Connector.IAttachments operations, string attachmentId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.AttachmentInfo GetAttachmentInfo(class Microsoft.Bot.Connector.IAttachments operations, string attachmentId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentInfo(Microsoft.Bot.Connector.IAttachments,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAttachmentInfo (operations As IAttachments, attachmentId As String) As AttachmentInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -167,6 +170,7 @@
       <MemberSignature Language="C#" Value="public static System.IO.Stream GetAttachmentStream (this Microsoft.Bot.Connector.IAttachments operations, string attachmentId, string viewId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream GetAttachmentStream(class Microsoft.Bot.Connector.IAttachments operations, string attachmentId, string viewId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentStream(Microsoft.Bot.Connector.IAttachments,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAttachmentStream (operations As IAttachments, attachmentId As String, viewId As String) As Stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

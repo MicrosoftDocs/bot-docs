@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public abstract class ResolverScorable&lt;OuterState,OuterScore,InnerState,InnerScore&gt; : Microsoft.Bot.Builder.Scorables.Internals.ScorableAggregator&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,OuterState,OuterScore,Microsoft.Bot.Builder.Scorables.Internals.IResolver,InnerState,InnerScore&gt; where OuterState : ResolverScope&lt;InnerScore&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit ResolverScorable`4&lt;(class Microsoft.Bot.Builder.Scorables.Internals.ResolverScope`1&lt;!InnerScore&gt;) OuterState, OuterScore, InnerState, InnerScore&gt; extends Microsoft.Bot.Builder.Scorables.Internals.ScorableAggregator`6&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !OuterState, !OuterScore, class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !InnerState, !InnerScore&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.ResolverScorable`4" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ResolverScorable(Of OuterState, OuterScore, InnerState, InnerScore)&#xA;Inherits ScorableAggregator(Of IResolver, OuterState, OuterScore, IResolver, InnerState, InnerScore)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="OuterState">
@@ -41,10 +42,11 @@
       <MemberSignature Language="C#" Value="public ResolverScorable (Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,InnerScore&gt; inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !InnerScore&gt; inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.ResolverScorable`4.#ctor(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,`3})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (inner As IScorable(Of IResolver, InnerScore))" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="inner" Type="Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,InnerScore&gt;" />
@@ -59,10 +61,11 @@
       <MemberSignature Language="C#" Value="protected readonly Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,InnerScore&gt; inner;" />
       <MemberSignature Language="ILAsm" Value=".field family initonly class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !InnerScore&gt; inner" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.ResolverScorable`4.inner" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly inner As IScorable(Of IResolver, InnerScore) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,InnerScore&gt;</ReturnType>

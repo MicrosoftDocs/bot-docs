@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public delegate bool ActiveDelegate&lt;T&gt;(T state);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ActiveDelegate`1&lt;T&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function ActiveDelegate(Of T)(state As T) As Boolean " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />

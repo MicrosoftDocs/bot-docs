@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public delegate R ContextualSelector&lt;in T,R&gt;(IBotContext context, T item);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContextualSelector`2&lt;- T, R&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.ContextualSelector`2" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function ContextualSelector(Of In T, R)(context As IBotContext, item As T) As R " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">

@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public static class ActivityTypes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ActivityTypes extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ActivityTypes" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActivityTypes" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="C#" Value="public const string ContactRelationUpdate;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ContactRelationUpdate" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.ContactRelationUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContactRelationUpdate As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -40,6 +42,7 @@
       <MemberSignature Language="C#" Value="public const string ConversationUpdate;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ConversationUpdate" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.ConversationUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Const ConversationUpdate As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -59,6 +62,7 @@
       <MemberSignature Language="C#" Value="public const string DeleteUserData;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DeleteUserData" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.DeleteUserData" />
+      <MemberSignature Language="VB.NET" Value="Public Const DeleteUserData As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -78,6 +82,7 @@
       <MemberSignature Language="C#" Value="public const string EndOfConversation;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string EndOfConversation" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.EndOfConversation" />
+      <MemberSignature Language="VB.NET" Value="Public Const EndOfConversation As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -97,6 +102,7 @@
       <MemberSignature Language="C#" Value="public const string Event;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Event" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.Event" />
+      <MemberSignature Language="VB.NET" Value="Public Const Event As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -116,6 +122,7 @@
       <MemberSignature Language="C#" Value="public const string InstallationUpdate;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string InstallationUpdate" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.InstallationUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Const InstallationUpdate As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -135,6 +142,7 @@
       <MemberSignature Language="C#" Value="public const string Invoke;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Invoke" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.Invoke" />
+      <MemberSignature Language="VB.NET" Value="Public Const Invoke As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -154,6 +162,7 @@
       <MemberSignature Language="C#" Value="public const string Message;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Message" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.Message" />
+      <MemberSignature Language="VB.NET" Value="Public Const Message As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -173,6 +182,7 @@
       <MemberSignature Language="C#" Value="public const string MessageReaction;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string MessageReaction" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.MessageReaction" />
+      <MemberSignature Language="VB.NET" Value="Public Const MessageReaction As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -192,6 +202,7 @@
       <MemberSignature Language="C#" Value="public const string Ping;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Ping" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.Ping" />
+      <MemberSignature Language="VB.NET" Value="Public Const Ping As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -211,6 +222,7 @@
       <MemberSignature Language="C#" Value="public const string Trigger;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Trigger" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.Trigger" />
+      <MemberSignature Language="VB.NET" Value="Public Const Trigger As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -235,6 +247,7 @@
       <MemberSignature Language="C#" Value="public const string Typing;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Typing" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.Typing" />
+      <MemberSignature Language="VB.NET" Value="Public Const Typing As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public class DialogResponse" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DialogResponse extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.Models.DialogResponse" />
+  <TypeSignature Language="VB.NET" Value="Public Class DialogResponse" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,10 +22,11 @@
       <MemberSignature Language="C#" Value="public DialogResponse ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.DialogResponse.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,10 +40,11 @@
       <MemberSignature Language="C#" Value="public DialogResponse (string prompt = null, string parameterName = null, string parameterType = null, string contextId = null, string status = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string prompt, string parameterName, string parameterType, string contextId, string status) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.DialogResponse.#ctor(System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional prompt As String = null, Optional parameterName As String = null, Optional parameterType As String = null, Optional contextId As String = null, Optional status As String = null)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="prompt" Type="System.String" />
@@ -66,10 +69,11 @@
       <MemberSignature Language="C#" Value="public string ContextId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContextId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.DialogResponse.ContextId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContextId As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -91,10 +95,11 @@
       <MemberSignature Language="C#" Value="public string ParameterName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ParameterName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.DialogResponse.ParameterName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParameterName As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -116,10 +121,11 @@
       <MemberSignature Language="C#" Value="public string ParameterType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ParameterType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.DialogResponse.ParameterType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParameterType As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -141,10 +147,11 @@
       <MemberSignature Language="C#" Value="public string Prompt { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Prompt" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.DialogResponse.Prompt" />
+      <MemberSignature Language="VB.NET" Value="Public Property Prompt As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -166,10 +173,11 @@
       <MemberSignature Language="C#" Value="public string Status { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Status" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.DialogResponse.Status" />
+      <MemberSignature Language="VB.NET" Value="Public Property Status As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public class VideoSendStatusChangedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VideoSendStatusChangedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class VideoSendStatusChangedEventArgs&#xA;Inherits EventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+    <AssemblyVersion>1.7.0.26</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.EventArgs</BaseTypeName>
@@ -21,10 +22,11 @@
       <MemberSignature Language="C#" Value="public VideoSendStatusChangedEventArgs ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -33,13 +35,14 @@
       </Docs>
     </Member>
     <Member MemberName="MediaSendStatus">
-      <MemberSignature Language="C#" Value="public Microsoft.Skype.Bots.Media.MediaSendStatus MediaSendStatus { get; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Skype.Bots.Media.MediaSendStatus MediaSendStatus { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Skype.Bots.Media.MediaSendStatus MediaSendStatus" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs.MediaSendStatus" />
+      <MemberSignature Language="VB.NET" Value="Public Property MediaSendStatus As MediaSendStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Skype.Bots.Media.MediaSendStatus</ReturnType>
@@ -52,34 +55,57 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="PreferredVideoSourceFormat">
-      <MemberSignature Language="C#" Value="public Microsoft.Skype.Bots.Media.VideoFormat PreferredVideoSourceFormat { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Skype.Bots.Media.VideoFormat PreferredVideoSourceFormat" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs.PreferredVideoSourceFormat" />
+    <Member MemberName="PreferredEncodedVideoSourceFormats">
+      <MemberSignature Language="C#" Value="public Microsoft.Skype.Bots.Media.VideoFormat[] PreferredEncodedVideoSourceFormats { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Skype.Bots.Media.VideoFormat[] PreferredEncodedVideoSourceFormats" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs.PreferredEncodedVideoSourceFormats" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreferredEncodedVideoSourceFormats As VideoFormat()" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The encoded video source formats needed.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreferredVideoSourceFormat">
+      <MemberSignature Language="C#" Value="public Microsoft.Skype.Bots.Media.VideoFormat PreferredVideoSourceFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Skype.Bots.Media.VideoFormat PreferredVideoSourceFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs.PreferredVideoSourceFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreferredVideoSourceFormat As VideoFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Skype.Bots.Media.VideoFormat</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            The preferred video source format.
+            The preferred video source format if raw video was sent.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SocketId">
-      <MemberSignature Language="C#" Value="public int SocketId { get; }" />
+      <MemberSignature Language="C#" Value="public int SocketId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SocketId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs.SocketId" />
+      <MemberSignature Language="VB.NET" Value="Public Property SocketId As Integer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

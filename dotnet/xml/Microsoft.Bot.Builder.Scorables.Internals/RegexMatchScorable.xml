@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public static class RegexMatchScorable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit RegexMatchScorable extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable" />
+  <TypeSignature Language="VB.NET" Value="Public Class RegexMatchScorable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,10 +22,11 @@
       <MemberSignature Language="C#" Value="public static readonly Func&lt;System.Text.RegularExpressions.Capture,string&gt; GetOriginalString;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Func`2&lt;class System.Text.RegularExpressions.Capture, string&gt; GetOriginalString" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable.GetOriginalString" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly GetOriginalString As Func(Of Capture, String) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Func&lt;System.Text.RegularExpressions.Capture,System.String&gt;</ReturnType>
@@ -41,7 +43,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
