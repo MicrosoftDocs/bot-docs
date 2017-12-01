@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public interface IActivityLogger" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IActivityLogger" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.History.IActivityLogger" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IActivityLogger" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -18,10 +19,11 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task LogAsync (Microsoft.Bot.Connector.IActivity activity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task LogAsync(class Microsoft.Bot.Connector.IActivity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.History.IActivityLogger.LogAsync(Microsoft.Bot.Connector.IActivity)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LogAsync (activity As IActivity) As Task" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

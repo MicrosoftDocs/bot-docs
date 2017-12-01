@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public delegate System.Threading.Tasks.Task ResumeAfter&lt;in T&gt;(IDialogContext context, IAwaitable&lt;in T&gt; result);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ResumeAfter`1&lt;- T&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.ResumeAfter`1" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function ResumeAfter(Of In T)(context As IDialogContext, result As IAwaitable(Of In T)) As Task " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">

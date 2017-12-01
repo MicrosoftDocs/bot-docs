@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public sealed class MethodResolutionException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit MethodResolutionException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.MethodResolutionException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MethodResolutionException&#xA;Inherits Exception" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Exception</BaseTypeName>
@@ -19,10 +20,11 @@
       <MemberSignature Language="C#" Value="public MethodResolutionException (string message, Microsoft.Bot.Builder.Scorables.Internals.IBinding one, Microsoft.Bot.Builder.Scorables.Internals.IBinding two);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class Microsoft.Bot.Builder.Scorables.Internals.IBinding one, class Microsoft.Bot.Builder.Scorables.Internals.IBinding two) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.MethodResolutionException.#ctor(System.String,Microsoft.Bot.Builder.Scorables.Internals.IBinding,Microsoft.Bot.Builder.Scorables.Internals.IBinding)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, one As IBinding, two As IBinding)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />

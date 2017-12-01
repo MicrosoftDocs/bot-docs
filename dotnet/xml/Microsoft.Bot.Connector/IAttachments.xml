@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public interface IAttachments" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAttachments" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IAttachments" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IAttachments" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>

@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public static class ConversationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ConversationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ConversationsExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ConversationsExtensions" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.ConversationResourceResponse CreateConversation (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Connector.ConversationParameters parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ConversationResourceResponse CreateConversation(class Microsoft.Bot.Connector.IConversations operations, class Microsoft.Bot.Connector.ConversationParameters parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.CreateConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ConversationParameters)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CreateConversation (operations As IConversations, parameters As ConversationParameters) As ConversationResourceResponse" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -224,6 +226,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.ErrorResponse DeleteActivity (this Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ErrorResponse DeleteActivity(class Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.DeleteActivity(Microsoft.Bot.Connector.IConversations,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DeleteActivity (operations As IConversations, conversationId As String, activityId As String) As ErrorResponse" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -301,6 +304,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.ChannelAccount[] GetActivityMembers (this Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ChannelAccount[] GetActivityMembers(class Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembers(Microsoft.Bot.Connector.IConversations,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetActivityMembers (operations As IConversations, conversationId As String, activityId As String) As ChannelAccount()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -378,6 +382,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.ChannelAccount[] GetConversationMembers (this Microsoft.Bot.Connector.IConversations operations, string conversationId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ChannelAccount[] GetConversationMembers(class Microsoft.Bot.Connector.IConversations operations, string conversationId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembers(Microsoft.Bot.Connector.IConversations,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetConversationMembers (operations As IConversations, conversationId As String) As ChannelAccount()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -886,6 +891,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.ResourceResponse UploadAttachment (this Microsoft.Bot.Connector.IConversations operations, string conversationId, Microsoft.Bot.Connector.AttachmentData attachmentUpload);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ResourceResponse UploadAttachment(class Microsoft.Bot.Connector.IConversations operations, string conversationId, class Microsoft.Bot.Connector.AttachmentData attachmentUpload) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachment(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Connector.AttachmentData)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UploadAttachment (operations As IConversations, conversationId As String, attachmentUpload As AttachmentData) As ResourceResponse" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public class PaymentRequestCompleteResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaymentRequestCompleteResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Payments.PaymentRequestCompleteResult" />
+  <TypeSignature Language="VB.NET" Value="Public Class PaymentRequestCompleteResult" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="C#" Value="public PaymentRequestCompleteResult ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.PaymentRequestCompleteResult.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="C#" Value="public PaymentRequestCompleteResult (string result = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.PaymentRequestCompleteResult.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional result As String = null)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="C#" Value="public string Result { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Result" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentRequestCompleteResult.Result" />
+      <MemberSignature Language="VB.NET" Value="Public Property Result As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

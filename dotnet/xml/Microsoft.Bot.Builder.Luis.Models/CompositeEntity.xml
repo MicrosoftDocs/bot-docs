@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public class CompositeEntity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompositeEntity extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.Models.CompositeEntity" />
+  <TypeSignature Language="VB.NET" Value="Public Class CompositeEntity" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,10 +23,11 @@
       <MemberSignature Language="C#" Value="public CompositeEntity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.CompositeEntity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -39,10 +41,11 @@
       <MemberSignature Language="C#" Value="public CompositeEntity (string parentType, string value, System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.CompositeChild&gt; children);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string parentType, string value, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Luis.Models.CompositeChild&gt; children) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.CompositeEntity.#ctor(System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Builder.Luis.Models.CompositeChild})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parentType As String, value As String, children As IList(Of CompositeChild))" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="parentType" Type="System.String" />
@@ -63,10 +66,11 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.CompositeChild&gt; Children { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Luis.Models.CompositeChild&gt; Children" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.CompositeEntity.Children" />
+      <MemberSignature Language="VB.NET" Value="Public Property Children As IList(Of CompositeChild)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -86,10 +90,11 @@
       <MemberSignature Language="C#" Value="public string ParentType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ParentType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.CompositeEntity.ParentType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParentType As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -111,10 +116,11 @@
       <MemberSignature Language="C#" Value="public virtual void Validate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.CompositeEntity.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -131,10 +137,11 @@
       <MemberSignature Language="C#" Value="public string Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.CompositeEntity.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

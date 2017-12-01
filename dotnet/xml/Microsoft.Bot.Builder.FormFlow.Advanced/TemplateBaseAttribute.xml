@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public abstract class TemplateBaseAttribute : Microsoft.Bot.Builder.FormFlow.FormFlowAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TemplateBaseAttribute extends Microsoft.Bot.Builder.FormFlow.FormFlowAttribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TemplateBaseAttribute&#xA;Inherits FormFlowAttribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.FormFlow.FormFlowAttribute</BaseTypeName>
@@ -21,10 +22,11 @@
       <MemberSignature Language="C#" Value="public TemplateBaseAttribute (Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute other) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.#ctor(Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (other As TemplateBaseAttribute)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="other" Type="Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute" />
@@ -41,10 +43,11 @@
       <MemberSignature Language="C#" Value="public TemplateBaseAttribute (params string[] patterns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] patterns) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.#ctor(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray patterns As String())" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="patterns" Type="System.String[]">
@@ -67,10 +70,11 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.BoolDefault AllowDefault { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.FormFlow.BoolDefault AllowDefault" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.AllowDefault" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowDefault As BoolDefault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.BoolDefault</ReturnType>
@@ -87,10 +91,11 @@
       <MemberSignature Language="C#" Value="public void ApplyDefaults (Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute defaultTemplate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ApplyDefaults(class Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute defaultTemplate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ApplyDefaults(Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ApplyDefaults (defaultTemplate As TemplateBaseAttribute)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -110,10 +115,11 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.CaseNormalization ChoiceCase { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.FormFlow.CaseNormalization ChoiceCase" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceCase" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChoiceCase As CaseNormalization" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.CaseNormalization</ReturnType>
@@ -130,10 +136,11 @@
       <MemberSignature Language="C#" Value="public string ChoiceFormat { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ChoiceFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChoiceFormat As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -150,10 +157,11 @@
       <MemberSignature Language="C#" Value="public string ChoiceLastSeparator { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ChoiceLastSeparator" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceLastSeparator" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChoiceLastSeparator As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -170,10 +178,11 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.BoolDefault ChoiceParens { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.FormFlow.BoolDefault ChoiceParens" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceParens" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChoiceParens As BoolDefault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.BoolDefault</ReturnType>
@@ -190,10 +199,11 @@
       <MemberSignature Language="C#" Value="public string ChoiceSeparator { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ChoiceSeparator" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceSeparator" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChoiceSeparator As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -210,10 +220,11 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions ChoiceStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions ChoiceStyle" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChoiceStyle As ChoiceStyleOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions</ReturnType>
@@ -230,10 +241,11 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.FeedbackOptions Feedback { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.FormFlow.FeedbackOptions Feedback" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Feedback" />
+      <MemberSignature Language="VB.NET" Value="Public Property Feedback As FeedbackOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.FeedbackOptions</ReturnType>
@@ -250,10 +262,11 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.CaseNormalization FieldCase { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.FormFlow.CaseNormalization FieldCase" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.FieldCase" />
+      <MemberSignature Language="VB.NET" Value="Public Property FieldCase As CaseNormalization" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.CaseNormalization</ReturnType>
@@ -270,10 +283,11 @@
       <MemberSignature Language="C#" Value="public string LastSeparator { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LastSeparator" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.LastSeparator" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastSeparator As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -290,10 +304,11 @@
       <MemberSignature Language="C#" Value="public string Pattern ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Pattern() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Pattern" />
+      <MemberSignature Language="VB.NET" Value="Public Function Pattern () As String" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -311,10 +326,11 @@
       <MemberSignature Language="C#" Value="public string[] Patterns { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] Patterns" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Patterns" />
+      <MemberSignature Language="VB.NET" Value="Public Property Patterns As String()" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -331,10 +347,11 @@
       <MemberSignature Language="C#" Value="public string Separator { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Separator" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.Separator" />
+      <MemberSignature Language="VB.NET" Value="Public Property Separator As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -351,10 +368,11 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.CaseNormalization ValueCase { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.FormFlow.CaseNormalization ValueCase" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ValueCase" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValueCase As CaseNormalization" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.CaseNormalization</ReturnType>

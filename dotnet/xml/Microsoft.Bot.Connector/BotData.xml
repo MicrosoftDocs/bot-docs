@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public class BotData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BotData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.BotData" />
+  <TypeSignature Language="VB.NET" Value="Public Class BotData" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -19,6 +20,7 @@
       <MemberSignature Language="C#" Value="public BotData ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotData.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -36,6 +38,7 @@
       <MemberSignature Language="C#" Value="public BotData (string eTag = null, object data = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string eTag, object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotData.#ctor(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional eTag As String = null, Optional data As Object = null)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -58,6 +61,7 @@
       <MemberSignature Language="C#" Value="public object Data { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Data" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotData.Data" />
+      <MemberSignature Language="VB.NET" Value="Public Property Data As Object" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -81,6 +85,7 @@
       <MemberSignature Language="C#" Value="public string ETag { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ETag" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotData.ETag" />
+      <MemberSignature Language="VB.NET" Value="Public Property ETag As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -104,6 +109,7 @@
       <MemberSignature Language="C#" Value="public TypeT GetProperty&lt;TypeT&gt; (string property);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TypeT GetProperty&lt;TypeT&gt;(string property) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotData.GetProperty``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperty(Of TypeT) (property As String) As TypeT" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -132,6 +138,7 @@
       <MemberSignature Language="C#" Value="public void RemoveProperty (string property);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveProperty(string property) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotData.RemoveProperty(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveProperty (property As String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -155,6 +162,7 @@
       <MemberSignature Language="C#" Value="public void SetProperty&lt;TypeT&gt; (string property, TypeT data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetProperty&lt;TypeT&gt;(string property, !!TypeT data) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotData.SetProperty``1(System.String,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetProperty(Of TypeT) (property As String, data As TypeT)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

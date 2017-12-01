@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public sealed class BindingComparer : System.Collections.Generic.IComparer&lt;Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BindingComparer extends System.Object implements class System.Collections.Generic.IComparer`1&lt;class Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.BindingComparer" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BindingComparer&#xA;Implements IComparer(Of IBinding)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,10 +24,11 @@
       <MemberSignature Language="C#" Value="public static readonly System.Collections.Generic.IComparer&lt;Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt; Instance;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Collections.Generic.IComparer`1&lt;class Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt; Instance" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.BindingComparer.Instance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Instance As IComparer(Of IBinding) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IComparer&lt;Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt;</ReturnType>
@@ -40,10 +42,11 @@
       <MemberSignature Language="C#" Value="int IComparer&lt;IBinding&gt;.Compare (Microsoft.Bot.Builder.Scorables.Internals.IBinding one, Microsoft.Bot.Builder.Scorables.Internals.IBinding two);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.Generic.IComparer&lt;Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt;.Compare(class Microsoft.Bot.Builder.Scorables.Internals.IBinding one, class Microsoft.Bot.Builder.Scorables.Internals.IBinding two) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.BindingComparer.System#Collections#Generic#IComparer&lt;Microsoft#Bot#Builder#Scorables#Internals#IBinding&gt;#Compare(Microsoft.Bot.Builder.Scorables.Internals.IBinding,Microsoft.Bot.Builder.Scorables.Internals.IBinding)" />
+      <MemberSignature Language="VB.NET" Value="Function Compare (one As IBinding, two As IBinding) As Integer Implements IComparer(Of IBinding).Compare" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -64,10 +67,11 @@
       <MemberSignature Language="C#" Value="public static int UpdateComparisonConsistently (Microsoft.Bot.Builder.Scorables.Internals.IBinding one, Microsoft.Bot.Builder.Scorables.Internals.IBinding two, int compareOld, int compareNew);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 UpdateComparisonConsistently(class Microsoft.Bot.Builder.Scorables.Internals.IBinding one, class Microsoft.Bot.Builder.Scorables.Internals.IBinding two, int32 compareOld, int32 compareNew) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.BindingComparer.UpdateComparisonConsistently(Microsoft.Bot.Builder.Scorables.Internals.IBinding,Microsoft.Bot.Builder.Scorables.Internals.IBinding,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UpdateComparisonConsistently (one As IBinding, two As IBinding, compareOld As Integer, compareNew As Integer) As Integer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

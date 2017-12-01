@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public class Error" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Error extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Error" />
+  <TypeSignature Language="VB.NET" Value="Public Class Error" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="C#" Value="public Error ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Error.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -38,6 +40,7 @@
       <MemberSignature Language="C#" Value="public Error (string code = null, string message = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string code, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Error.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional code As String = null, Optional message As String = null)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="C#" Value="public string Code { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Code" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Error.Code" />
+      <MemberSignature Language="VB.NET" Value="Public Property Code As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -85,6 +89,7 @@
       <MemberSignature Language="C#" Value="public string Message { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Message" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Error.Message" />
+      <MemberSignature Language="VB.NET" Value="Public Property Message As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

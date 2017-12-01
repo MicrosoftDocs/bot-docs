@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public interface IDispatcher" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDispatcher" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.IDispatcher" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDispatcher" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -16,10 +17,11 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; TryPostAsync (System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; TryPostAsync(valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.IDispatcher.TryPostAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryPostAsync (token As CancellationToken) As Task(Of Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>

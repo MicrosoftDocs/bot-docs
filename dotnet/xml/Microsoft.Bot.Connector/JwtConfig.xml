@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public static class JwtConfig" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit JwtConfig extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.JwtConfig" />
+  <TypeSignature Language="VB.NET" Value="Public Class JwtConfig" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="C#" Value="public static readonly string[] ToBotFromChannelAllowedSigningAlgorithms;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string[] ToBotFromChannelAllowedSigningAlgorithms" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.JwtConfig.ToBotFromChannelAllowedSigningAlgorithms" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToBotFromChannelAllowedSigningAlgorithms As String() " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -40,6 +42,7 @@
       <MemberSignature Language="C#" Value="public const string ToBotFromChannelOpenIdMetadataUrl;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ToBotFromChannelOpenIdMetadataUrl" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.JwtConfig.ToBotFromChannelOpenIdMetadataUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Const ToBotFromChannelOpenIdMetadataUrl As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -59,6 +62,7 @@
       <MemberSignature Language="C#" Value="public static readonly System.IdentityModel.Tokens.TokenValidationParameters ToBotFromChannelTokenValidationParameters;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.IdentityModel.Tokens.TokenValidationParameters ToBotFromChannelTokenValidationParameters" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.JwtConfig.ToBotFromChannelTokenValidationParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToBotFromChannelTokenValidationParameters As TokenValidationParameters " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -78,6 +82,7 @@
       <MemberSignature Language="C#" Value="public const string ToBotFromEmulatorOpenIdMetadataUrl;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ToBotFromEmulatorOpenIdMetadataUrl" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.JwtConfig.ToBotFromEmulatorOpenIdMetadataUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Const ToBotFromEmulatorOpenIdMetadataUrl As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -97,6 +102,7 @@
       <MemberSignature Language="C#" Value="public static readonly System.IdentityModel.Tokens.TokenValidationParameters ToBotFromEmulatorTokenValidationParameters;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.IdentityModel.Tokens.TokenValidationParameters ToBotFromEmulatorTokenValidationParameters" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.JwtConfig.ToBotFromEmulatorTokenValidationParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToBotFromEmulatorTokenValidationParameters As TokenValidationParameters " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -116,6 +122,7 @@
       <MemberSignature Language="C#" Value="public const string ToChannelFromBotLoginUrl;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ToChannelFromBotLoginUrl" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.JwtConfig.ToChannelFromBotLoginUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Const ToChannelFromBotLoginUrl As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -135,6 +142,7 @@
       <MemberSignature Language="C#" Value="public const string ToChannelFromBotOAuthScope;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ToChannelFromBotOAuthScope" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.JwtConfig.ToChannelFromBotOAuthScope" />
+      <MemberSignature Language="VB.NET" Value="Public Const ToChannelFromBotOAuthScope As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

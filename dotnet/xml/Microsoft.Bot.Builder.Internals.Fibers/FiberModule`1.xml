@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public sealed class FiberModule&lt;C&gt; : Microsoft.Bot.Builder.Internals.Fibers.FiberModule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FiberModule`1&lt;C&gt; extends Microsoft.Bot.Builder.Internals.Fibers.FiberModule" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.FiberModule`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FiberModule(Of C)&#xA;Inherits FiberModule" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
-    <AssemblyVersion>3.10.5.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="C" />
@@ -25,10 +26,11 @@
       <MemberSignature Language="C#" Value="public FiberModule ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.FiberModule`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
-        <AssemblyVersion>3.10.5.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -40,10 +42,11 @@
       <MemberSignature Language="C#" Value="protected override void Load (Autofac.ContainerBuilder builder);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Load(class Autofac.ContainerBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.FiberModule`1.Load(Autofac.ContainerBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Load (builder As ContainerBuilder)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
-        <AssemblyVersion>3.10.5.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

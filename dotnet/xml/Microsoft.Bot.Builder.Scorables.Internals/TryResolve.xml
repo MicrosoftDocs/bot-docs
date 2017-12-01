@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public delegate bool TryResolve(Type type, object tag, out object value);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TryResolve extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.TryResolve" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function TryResolve(type As Type, tag As Object, ByRef value As Object) As Boolean " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>

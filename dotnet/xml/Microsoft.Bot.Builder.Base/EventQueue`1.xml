@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public sealed class EventQueue&lt;Event&gt; : Microsoft.Bot.Builder.Base.IEventConsumer&lt;Event&gt;, Microsoft.Bot.Builder.Base.IEventProducer&lt;Event&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EventQueue`1&lt;Event&gt; extends System.Object implements class Microsoft.Bot.Builder.Base.IEventConsumer`1&lt;!Event&gt;, class Microsoft.Bot.Builder.Base.IEventProducer`1&lt;!Event&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Base.EventQueue`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventQueue(Of Event)&#xA;Implements IEventConsumer(Of Event), IEventProducer(Of Event)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="Event" />
@@ -30,10 +31,11 @@
       <MemberSignature Language="C#" Value="public EventQueue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Base.EventQueue`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,10 +47,11 @@
       <MemberSignature Language="C#" Value="bool IEventConsumer&lt;Event&gt;.TryPull (out Event event);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Base.IEventConsumer&lt;Event&gt;.TryPull([out] !Event&amp; event) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Base.EventQueue`1.Microsoft#Bot#Builder#Base#IEventConsumer&lt;Event&gt;#TryPull(`0@)" />
+      <MemberSignature Language="VB.NET" Value="Function TryPull (ByRef event As Event) As Boolean Implements IEventConsumer(Of Event).TryPull" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -70,7 +73,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

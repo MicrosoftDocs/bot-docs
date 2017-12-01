@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public sealed class FormBuilder&lt;T&gt; : Microsoft.Bot.Builder.FormFlow.FormBuilderBase&lt;T&gt; where T : class" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FormBuilder`1&lt;class T&gt; extends Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.FormBuilder`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FormBuilder(Of T)&#xA;Inherits FormBuilderBase(Of T)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
@@ -39,10 +40,11 @@
       <MemberSignature Language="C#" Value="public FormBuilder (bool ignoreAnnotations = false);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool ignoreAnnotations) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormBuilder`1.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional ignoreAnnotations As Boolean = false)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="ignoreAnnotations" Type="System.Boolean" />
@@ -59,10 +61,11 @@
       <MemberSignature Language="C#" Value="public override Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; AddRemainingFields (System.Collections.Generic.IEnumerable&lt;string&gt; exclude = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.FormFlow.IFormBuilder`1&lt;!T&gt; AddRemainingFields(class System.Collections.Generic.IEnumerable`1&lt;string&gt; exclude) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormBuilder`1.AddRemainingFields(System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function AddRemainingFields (Optional exclude As IEnumerable(Of String) = null) As IFormBuilder(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt;</ReturnType>
@@ -81,10 +84,11 @@
       <MemberSignature Language="C#" Value="public override Microsoft.Bot.Builder.FormFlow.IForm&lt;T&gt; Build (System.Reflection.Assembly resourceAssembly = null, string resourceName = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.FormFlow.IForm`1&lt;!T&gt; Build(class System.Reflection.Assembly resourceAssembly, string resourceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormBuilder`1.Build(System.Reflection.Assembly,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Build (Optional resourceAssembly As Assembly = null, Optional resourceName As String = null) As IForm(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.IForm&lt;T&gt;</ReturnType>
@@ -105,10 +109,11 @@
       <MemberSignature Language="C#" Value="public override Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; Field (string name, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; active = null, Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate&lt;T&gt; validate = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.FormFlow.IFormBuilder`1&lt;!T&gt; Field(string name, class Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1&lt;!T&gt; active, class Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate`1&lt;!T&gt; validate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormBuilder`1.Field(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Field (name As String, Optional active As ActiveDelegate(Of T) = null, Optional validate As ValidateAsyncDelegate(Of T) = null) As IFormBuilder(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt;</ReturnType>
@@ -131,10 +136,11 @@
       <MemberSignature Language="C#" Value="public override Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; Field (string name, Microsoft.Bot.Builder.FormFlow.PromptAttribute prompt, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; active = null, Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate&lt;T&gt; validate = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.FormFlow.IFormBuilder`1&lt;!T&gt; Field(string name, class Microsoft.Bot.Builder.FormFlow.PromptAttribute prompt, class Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1&lt;!T&gt; active, class Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate`1&lt;!T&gt; validate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormBuilder`1.Field(System.String,Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Field (name As String, prompt As PromptAttribute, Optional active As ActiveDelegate(Of T) = null, Optional validate As ValidateAsyncDelegate(Of T) = null) As IFormBuilder(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt;</ReturnType>
@@ -159,10 +165,11 @@
       <MemberSignature Language="C#" Value="public override Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; Field (string name, string prompt, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; active = null, Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate&lt;T&gt; validate = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.FormFlow.IFormBuilder`1&lt;!T&gt; Field(string name, string prompt, class Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1&lt;!T&gt; active, class Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate`1&lt;!T&gt; validate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormBuilder`1.Field(System.String,System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Field (name As String, prompt As String, Optional active As ActiveDelegate(Of T) = null, Optional validate As ValidateAsyncDelegate(Of T) = null) As IFormBuilder(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt;</ReturnType>

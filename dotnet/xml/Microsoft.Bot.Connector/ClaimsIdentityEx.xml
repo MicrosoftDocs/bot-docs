@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public static class ClaimsIdentityEx" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ClaimsIdentityEx extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ClaimsIdentityEx" />
+  <TypeSignature Language="VB.NET" Value="Public Module ClaimsIdentityEx" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -19,6 +20,7 @@
       <MemberSignature Language="C#" Value="public const string AppPasswordClaim;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string AppPasswordClaim" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ClaimsIdentityEx.AppPasswordClaim" />
+      <MemberSignature Language="VB.NET" Value="Public Const AppPasswordClaim As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -36,6 +38,7 @@
       <MemberSignature Language="C#" Value="public static string GetAppIdFromClaims (this System.Security.Claims.ClaimsIdentity identity);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetAppIdFromClaims(class System.Security.Claims.ClaimsIdentity identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ClaimsIdentityEx.GetAppIdFromClaims(System.Security.Claims.ClaimsIdentity)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAppIdFromClaims (identity As ClaimsIdentity) As String" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="C#" Value="public static string GetAppPasswordFromClaims (this System.Security.Claims.ClaimsIdentity identity);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetAppPasswordFromClaims(class System.Security.Claims.ClaimsIdentity identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ClaimsIdentityEx.GetAppPasswordFromClaims(System.Security.Claims.ClaimsIdentity)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAppPasswordFromClaims (identity As ClaimsIdentity) As String" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

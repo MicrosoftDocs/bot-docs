@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public class RosterParticipant" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RosterParticipant extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterParticipant" />
+  <TypeSignature Language="VB.NET" Value="Public Class RosterParticipant" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
     <AssemblyVersion>1.0.2.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="C#" Value="public RosterParticipant ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterParticipant.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole ContentSharingRole { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole ContentSharingRole" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterParticipant.ContentSharingRole" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentSharingRole As ContentSharingRole" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="C#" Value="public string Identity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Identity" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterParticipant.Identity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Identity As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="C#" Value="public string LegId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LegId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterParticipant.LegId" />
+      <MemberSignature Language="VB.NET" Value="Public Property LegId As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -116,6 +121,7 @@
       <MemberSignature Language="C#" Value="public string MediaStreamDirection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MediaStreamDirection" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterParticipant.MediaStreamDirection" />
+      <MemberSignature Language="VB.NET" Value="Public Property MediaStreamDirection As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -141,6 +147,7 @@
       <MemberSignature Language="C#" Value="public string MediaStreamId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MediaStreamId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterParticipant.MediaStreamId" />
+      <MemberSignature Language="VB.NET" Value="Public Property MediaStreamId As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -169,6 +176,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType MediaType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType MediaType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterParticipant.MediaType" />
+      <MemberSignature Language="VB.NET" Value="Public Property MediaType As ModalityType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -194,6 +202,7 @@
       <MemberSignature Language="C#" Value="public void Validate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Validate() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterParticipant.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Validate ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>

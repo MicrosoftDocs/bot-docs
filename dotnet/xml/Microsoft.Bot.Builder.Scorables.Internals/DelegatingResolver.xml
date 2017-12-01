@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public abstract class DelegatingResolver : Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DelegatingResolver extends System.Object implements class Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DelegatingResolver&#xA;Implements IResolver" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,10 +24,11 @@
       <MemberSignature Language="C#" Value="protected DelegatingResolver (Microsoft.Bot.Builder.Scorables.Internals.IResolver inner);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Scorables.Internals.IResolver inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver.#ctor(Microsoft.Bot.Builder.Scorables.Internals.IResolver)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (inner As IResolver)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="inner" Type="Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
@@ -41,10 +43,11 @@
       <MemberSignature Language="C#" Value="protected readonly Microsoft.Bot.Builder.Scorables.Internals.IResolver inner;" />
       <MemberSignature Language="ILAsm" Value=".field family initonly class Microsoft.Bot.Builder.Scorables.Internals.IResolver inner" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver.inner" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly inner As IResolver " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Scorables.Internals.IResolver</ReturnType>
@@ -61,7 +64,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

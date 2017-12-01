@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public interface IConversations" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IConversations" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IConversations" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IConversations" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>

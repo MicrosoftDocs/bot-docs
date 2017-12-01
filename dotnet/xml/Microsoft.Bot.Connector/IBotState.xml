@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public interface IBotState" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBotState" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IBotState" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IBotState" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>

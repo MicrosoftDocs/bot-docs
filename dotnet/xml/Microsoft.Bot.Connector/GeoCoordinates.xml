@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public class GeoCoordinates" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GeoCoordinates extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.GeoCoordinates" />
+  <TypeSignature Language="VB.NET" Value="Public Class GeoCoordinates" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="C#" Value="public GeoCoordinates ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.GeoCoordinates.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -38,6 +40,7 @@
       <MemberSignature Language="C#" Value="public GeoCoordinates (Nullable&lt;double&gt; elevation = null, Nullable&lt;double&gt; latitude = null, Nullable&lt;double&gt; longitude = null, string type = null, string name = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;float64&gt; elevation, valuetype System.Nullable`1&lt;float64&gt; latitude, valuetype System.Nullable`1&lt;float64&gt; longitude, string type, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.GeoCoordinates.#ctor(System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional elevation As Nullable(Of Double) = null, Optional latitude As Nullable(Of Double) = null, Optional longitude As Nullable(Of Double) = null, Optional type As String = null, Optional name As String = null)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Elevation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Elevation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.GeoCoordinates.Elevation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Elevation As Nullable(Of Double)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Latitude { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Latitude" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.GeoCoordinates.Latitude" />
+      <MemberSignature Language="VB.NET" Value="Public Property Latitude As Nullable(Of Double)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Longitude { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Longitude" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.GeoCoordinates.Longitude" />
+      <MemberSignature Language="VB.NET" Value="Public Property Longitude As Nullable(Of Double)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -144,6 +150,7 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.GeoCoordinates.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -169,6 +176,7 @@
       <MemberSignature Language="C#" Value="public string Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Type" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.GeoCoordinates.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

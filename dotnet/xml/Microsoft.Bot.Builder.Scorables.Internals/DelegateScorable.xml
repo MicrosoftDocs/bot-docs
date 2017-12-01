@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public sealed class DelegateScorable : Microsoft.Bot.Builder.Scorables.Internals.MethodScorableBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit DelegateScorable extends Microsoft.Bot.Builder.Scorables.Internals.MethodScorableBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.DelegateScorable" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DelegateScorable&#xA;Inherits MethodScorableBase" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Scorables.Internals.MethodScorableBase</BaseTypeName>
@@ -19,10 +20,11 @@
       <MemberSignature Language="C#" Value="public DelegateScorable (Delegate lambda);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Delegate lambda) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.DelegateScorable.#ctor(System.Delegate)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (lambda As Delegate)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="lambda" Type="System.Delegate" />
@@ -37,10 +39,11 @@
       <MemberSignature Language="C#" Value="public override System.Reflection.MethodBase Method { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.MethodBase Method" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Scorables.Internals.DelegateScorable.Method" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Method As MethodBase" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodBase</ReturnType>
@@ -55,10 +58,11 @@
       <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt; PrepareAsync (Microsoft.Bot.Builder.Scorables.Internals.IResolver item, System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt; PrepareAsync(class Microsoft.Bot.Builder.Scorables.Internals.IResolver item, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.DelegateScorable.PrepareAsync(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function PrepareAsync (item As IResolver, token As CancellationToken) As Task(Of IBinding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt;</ReturnType>

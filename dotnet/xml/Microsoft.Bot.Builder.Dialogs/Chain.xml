@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public static class Chain" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Chain extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Chain" />
+  <TypeSignature Language="VB.NET" Value="Public Module Chain" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -24,7 +25,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.ICase&lt;System.String,R&gt;</ReturnType>
@@ -51,10 +52,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.ICase&lt;T,R&gt; Case&lt;T,R&gt; (Func&lt;T,bool&gt; condition, Microsoft.Bot.Builder.Dialogs.ContextualSelector&lt;T,R&gt; selector);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.ICase`2&lt;!!T, !!R&gt; Case&lt;T, R&gt;(class System.Func`2&lt;!!T, bool&gt; condition, class Microsoft.Bot.Builder.Dialogs.ContextualSelector`2&lt;!!T, !!R&gt; selector) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Case``2(System.Func{``0,System.Boolean},Microsoft.Bot.Builder.Dialogs.ContextualSelector{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Case(Of T, R) (condition As Func(Of T, Boolean), selector As ContextualSelector(Of T, R)) As ICase(Of T, R)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.ICase&lt;T,R&gt;</ReturnType>
@@ -83,10 +85,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; Catch&lt;T&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent, Func&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;,Exception,Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;&gt; block);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; Catch&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent, class System.Func`3&lt;class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt;, class System.Exception, class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt;&gt; block) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Catch``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Exception,Microsoft.Bot.Builder.Dialogs.IDialog{``0}})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Catch(Of T) (antecedent As IDialog(Of T), block As Func(Of IDialog(Of T), Exception, IDialog(Of T))) As IDialog(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
@@ -113,10 +116,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; Catch&lt;T,E&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent, Func&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;,E,Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;&gt; block) where E : Exception;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; Catch&lt;T, (class System.Exception) E&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent, class System.Func`3&lt;class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt;, !!E, class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt;&gt; block) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Catch``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{``0},``1,Microsoft.Bot.Builder.Dialogs.IDialog{``0}})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Catch(Of T, E) (antecedent As IDialog(Of T), block As Func(Of IDialog(Of T), E, IDialog(Of T))) As IDialog(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
@@ -149,10 +153,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt; ContinueWith&lt;T,R&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent, Microsoft.Bot.Builder.Dialogs.Chain.Continuation&lt;T,R&gt; continuation);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!R&gt; ContinueWith&lt;T, R&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent, class Microsoft.Bot.Builder.Dialogs.Chain/Continuation`2&lt;!!T, !!R&gt; continuation) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.ContinueWith``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.Chain.Continuation{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ContinueWith(Of T, R) (antecedent As IDialog(Of T), continuation As Chain.Continuation(Of T, R)) As IDialog(Of R)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt;</ReturnType>
@@ -181,10 +186,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.ICase&lt;T,R&gt; Default&lt;T,R&gt; (Microsoft.Bot.Builder.Dialogs.ContextualSelector&lt;T,R&gt; selector);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.ICase`2&lt;!!T, !!R&gt; Default&lt;T, R&gt;(class Microsoft.Bot.Builder.Dialogs.ContextualSelector`2&lt;!!T, !!R&gt; selector) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Default``2(Microsoft.Bot.Builder.Dialogs.ContextualSelector{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Default(Of T, R) (selector As ContextualSelector(Of T, R)) As ICase(Of T, R)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.ICase&lt;T,R&gt;</ReturnType>
@@ -211,10 +217,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; DefaultIfException&lt;T&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; DefaultIfException&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.DefaultIfException``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DefaultIfException(Of T) (antecedent As IDialog(Of T)) As IDialog(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
@@ -239,10 +246,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; DefaultIfException&lt;T,E&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent) where E : Exception;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; DefaultIfException&lt;T, (class System.Exception) E&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.DefaultIfException``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DefaultIfException(Of T, E) (antecedent As IDialog(Of T)) As IDialog(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
@@ -273,10 +281,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; Do&lt;T&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent, Func&lt;Microsoft.Bot.Builder.Dialogs.IBotContext,Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;T&gt;,System.Threading.Tasks.Task&gt; callback);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; Do&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent, class System.Func`3&lt;class Microsoft.Bot.Builder.Dialogs.IBotContext, class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;!!T&gt;, class System.Threading.Tasks.Task&gt; callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Do``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{Microsoft.Bot.Builder.Dialogs.IBotContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{``0},System.Threading.Tasks.Task})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Do(Of T) (antecedent As IDialog(Of T), callback As Func(Of IBotContext, IAwaitable(Of T), Task)) As IDialog(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
@@ -303,10 +312,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; Fold&lt;T&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;&gt;&gt; antecedent, Func&lt;T,T,T&gt; folder);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; Fold&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt;&gt;&gt; antecedent, class System.Func`3&lt;!!T, !!T, !!T&gt; folder) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Fold``1(Microsoft.Bot.Builder.Dialogs.IDialog{System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Dialogs.IDialog{``0}}},System.Func{``0,``0,``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Fold(Of T) (antecedent As IDialog(Of IEnumerable(Of IDialog(Of T))), folder As Func(Of T, T, T)) As IDialog(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
@@ -333,10 +343,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; From&lt;T&gt; (Func&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;&gt; MakeDialog);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; From&lt;T&gt;(class System.Func`1&lt;class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt;&gt; MakeDialog) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.From``1(System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Public Function From(Of T) (MakeDialog As Func(Of IDialog(Of T))) As IDialog(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
@@ -361,10 +372,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; Loop&lt;T&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; Loop&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Loop``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Loop(Of T) (antecedent As IDialog(Of T)) As IDialog(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
@@ -389,10 +401,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; PostEvent&lt;T,E&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent, E event);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; PostEvent&lt;T, E&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent, !!E event) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.PostEvent``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},``1)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function PostEvent(Of T, E) (antecedent As IDialog(Of T), event As E) As IDialog(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
@@ -421,10 +434,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;Microsoft.Bot.Connector.IMessageActivity&gt; PostToChain ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;class Microsoft.Bot.Connector.IMessageActivity&gt; PostToChain() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.PostToChain" />
+      <MemberSignature Language="VB.NET" Value="Public Function PostToChain () As IDialog(Of IMessageActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;Microsoft.Bot.Connector.IMessageActivity&gt;</ReturnType>
@@ -444,10 +458,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; PostToUser&lt;T&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; PostToUser&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.PostToUser``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function PostToUser(Of T) (antecedent As IDialog(Of T)) As IDialog(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
@@ -472,10 +487,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; Return&lt;T&gt; (T item);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; Return&lt;T&gt;(!!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Return``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Return(Of T) (item As T) As IDialog(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
@@ -502,10 +518,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt; Select&lt;T,R&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent, Func&lt;T,R&gt; selector);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!R&gt; Select&lt;T, R&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent, class System.Func`2&lt;!!T, !!R&gt; selector) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Select``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Select(Of T, R) (antecedent As IDialog(Of T), selector As Func(Of T, R)) As IDialog(Of R)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt;</ReturnType>
@@ -534,10 +551,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt; SelectMany&lt;T,C,R&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent, Func&lt;T,Microsoft.Bot.Builder.Dialogs.IDialog&lt;C&gt;&gt; function, Func&lt;T,C,R&gt; projection);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!R&gt; SelectMany&lt;T, C, R&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent, class System.Func`2&lt;!!T, class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!C&gt;&gt; function, class System.Func`3&lt;!!T, !!C, !!R&gt; projection) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.SelectMany``3(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{``0,Microsoft.Bot.Builder.Dialogs.IDialog{``1}},System.Func{``0,``1,``2})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SelectMany(Of T, C, R) (antecedent As IDialog(Of T), function As Func(Of T, IDialog(Of C)), projection As Func(Of T, C, R)) As IDialog(Of R)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt;</ReturnType>
@@ -570,10 +588,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt; Switch&lt;T,R&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent, params Microsoft.Bot.Builder.Dialogs.ICase&lt;T,R&gt;[] cases);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!R&gt; Switch&lt;T, R&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent, class Microsoft.Bot.Builder.Dialogs.ICase`2&lt;!!T, !!R&gt;[] cases) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Switch``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ICase{``0,``1}[])" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Switch(Of T, R) (antecedent As IDialog(Of T), ParamArray cases As ICase(Of T, R)()) As IDialog(Of R)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt;</ReturnType>
@@ -610,10 +629,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt; Then&lt;T,R&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; Antecedent, Func&lt;Microsoft.Bot.Builder.Dialogs.IBotContext,Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;T&gt;,System.Threading.Tasks.Task&lt;R&gt;&gt; Action);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!R&gt; Then&lt;T, R&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; Antecedent, class System.Func`3&lt;class Microsoft.Bot.Builder.Dialogs.IBotContext, class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;!!T&gt;, class System.Threading.Tasks.Task`1&lt;!!R&gt;&gt; Action) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Then``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{Microsoft.Bot.Builder.Dialogs.IBotContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{``0},System.Threading.Tasks.Task{``1}})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Then(Of T, R) (Antecedent As IDialog(Of T), Action As Func(Of IBotContext, IAwaitable(Of T), Task(Of R))) As IDialog(Of R)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt;</ReturnType>
@@ -642,10 +662,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; Unwrap&lt;T&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;&gt; antecedent);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; Unwrap&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt;&gt; antecedent) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Unwrap``1(Microsoft.Bot.Builder.Dialogs.IDialog{Microsoft.Bot.Builder.Dialogs.IDialog{``0}})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Unwrap(Of T) (antecedent As IDialog(Of IDialog(Of T))) As IDialog(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
@@ -670,10 +691,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;object&gt; Void&lt;T&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent, Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack stack);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;object&gt; Void&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent, class Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack stack) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Void``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Void(Of T) (antecedent As IDialog(Of T), stack As IDialogStack) As IDialog(Of Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;System.Object&gt;</ReturnType>
@@ -704,10 +726,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt; Void&lt;T,R&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!R&gt; Void&lt;T, R&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Void``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Void(Of T, R) (antecedent As IDialog(Of T)) As IDialog(Of R)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt;</ReturnType>
@@ -743,10 +766,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;Microsoft.Bot.Connector.IMessageActivity&gt; WaitToBot&lt;T&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;class Microsoft.Bot.Connector.IMessageActivity&gt; WaitToBot&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.WaitToBot``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function WaitToBot(Of T) (antecedent As IDialog(Of T)) As IDialog(Of IMessageActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;Microsoft.Bot.Connector.IMessageActivity&gt;</ReturnType>
@@ -771,10 +795,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; Where&lt;T&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent, Func&lt;T,bool&gt; predicate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; Where&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent, class System.Func`2&lt;!!T, bool&gt; predicate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Where``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{``0,System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Where(Of T) (antecedent As IDialog(Of T), predicate As Func(Of T, Boolean)) As IDialog(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
@@ -801,10 +826,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; While&lt;T&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; initial, Func&lt;T,Microsoft.Bot.Builder.Dialogs.IDialog&lt;bool&gt;&gt; test, Func&lt;T,Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;&gt; body);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; While&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; initial, class System.Func`2&lt;!!T, class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;bool&gt;&gt; test, class System.Func`2&lt;!!T, class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt;&gt; body) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.While``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{``0,Microsoft.Bot.Builder.Dialogs.IDialog{System.Boolean}},System.Func{``0,Microsoft.Bot.Builder.Dialogs.IDialog{``0}})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function While(Of T) (initial As IDialog(Of T), test As Func(Of T, IDialog(Of Boolean)), body As Func(Of T, IDialog(Of T))) As IDialog(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
@@ -833,10 +859,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; WithScorable&lt;T,Item,Score&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent, Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt; scorable);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; WithScorable&lt;T, Item, Score&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent, class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!Score&gt; scorable) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.WithScorable``3(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Scorables.IScorable{``1,``2})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function WithScorable(Of T, Item, Score) (antecedent As IDialog(Of T), scorable As IScorable(Of Item, Score)) As IDialog(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>

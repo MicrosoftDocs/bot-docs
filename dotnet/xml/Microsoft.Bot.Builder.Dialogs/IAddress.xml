@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public interface IAddress" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAddress" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IAddress" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IAddress" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -18,10 +19,11 @@
       <MemberSignature Language="C#" Value="public string BotId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BotId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IAddress.BotId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BotId As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -36,10 +38,11 @@
       <MemberSignature Language="C#" Value="public string ChannelId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ChannelId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IAddress.ChannelId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelId As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -54,10 +57,11 @@
       <MemberSignature Language="C#" Value="public string ConversationId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConversationId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IAddress.ConversationId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConversationId As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -72,10 +76,11 @@
       <MemberSignature Language="C#" Value="public string ServiceUrl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ServiceUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IAddress.ServiceUrl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceUrl As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -90,10 +95,11 @@
       <MemberSignature Language="C#" Value="public string UserId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UserId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IAddress.UserId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserId As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

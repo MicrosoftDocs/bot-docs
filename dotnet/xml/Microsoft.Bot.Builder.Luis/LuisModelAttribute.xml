@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public class LuisModelAttribute : Attribute, IEquatable&lt;Microsoft.Bot.Builder.Luis.ILuisModel&gt;, Microsoft.Bot.Builder.Luis.ILuisModel, Microsoft.Bot.Builder.Luis.ILuisOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit LuisModelAttribute extends System.Attribute implements class Microsoft.Bot.Builder.Luis.ILuisModel, class Microsoft.Bot.Builder.Luis.ILuisOptions, class System.IEquatable`1&lt;class Microsoft.Bot.Builder.Luis.ILuisModel&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.LuisModelAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class LuisModelAttribute&#xA;Inherits Attribute&#xA;Implements IEquatable(Of ILuisModel), ILuisModel, ILuisOptions" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -36,10 +37,11 @@
       <MemberSignature Language="C#" Value="public LuisModelAttribute (string modelID, string subscriptionKey, Microsoft.Bot.Builder.Luis.LuisApiVersion apiVersion = Microsoft.Bot.Builder.Luis.LuisApiVersion.V2, string domain = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string modelID, string subscriptionKey, valuetype Microsoft.Bot.Builder.Luis.LuisApiVersion apiVersion, string domain) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.#ctor(System.String,System.String,Microsoft.Bot.Builder.Luis.LuisApiVersion,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (modelID As String, subscriptionKey As String, Optional apiVersion As LuisApiVersion = Microsoft.Bot.Builder.Luis.LuisApiVersion.V2, Optional domain As String = null)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="modelID" Type="System.String" />
@@ -62,10 +64,11 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Luis.LuisApiVersion ApiVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.Luis.LuisApiVersion ApiVersion" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.ApiVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApiVersion As LuisApiVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.LuisApiVersion</ReturnType>
@@ -82,10 +85,11 @@
       <MemberSignature Language="C#" Value="public string Domain { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Domain" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Domain" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Domain As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -102,10 +106,11 @@
       <MemberSignature Language="C#" Value="public bool Equals (Microsoft.Bot.Builder.Luis.ILuisModel other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class Microsoft.Bot.Builder.Luis.ILuisModel other) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Equals(Microsoft.Bot.Builder.Luis.ILuisModel)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As ILuisModel) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -124,10 +129,11 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object other) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (other As Object) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -146,10 +152,11 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -165,10 +172,11 @@
       <MemberSignature Language="C#" Value="public bool Log { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Log" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Log" />
+      <MemberSignature Language="VB.NET" Value="Public Property Log As Boolean" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -185,10 +193,11 @@
       <MemberSignature Language="C#" Value="Nullable&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.Log { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.Log" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Luis#ILuisOptions#Log" />
+      <MemberSignature Language="VB.NET" Value=" Property Log As Nullable(Of Boolean) Implements ILuisOptions.Log" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -203,10 +212,11 @@
       <MemberSignature Language="C#" Value="Nullable&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.SpellCheck { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.SpellCheck" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Luis#ILuisOptions#SpellCheck" />
+      <MemberSignature Language="VB.NET" Value=" Property SpellCheck As Nullable(Of Boolean) Implements ILuisOptions.SpellCheck" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -221,10 +231,11 @@
       <MemberSignature Language="C#" Value="Nullable&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.Staging { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.Staging" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Luis#ILuisOptions#Staging" />
+      <MemberSignature Language="VB.NET" Value=" Property Staging As Nullable(Of Boolean) Implements ILuisOptions.Staging" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -239,10 +250,11 @@
       <MemberSignature Language="C#" Value="Nullable&lt;double&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.TimezoneOffset { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.TimezoneOffset" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Luis#ILuisOptions#TimezoneOffset" />
+      <MemberSignature Language="VB.NET" Value=" Property TimezoneOffset As Nullable(Of Double) Implements ILuisOptions.TimezoneOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
@@ -257,10 +269,11 @@
       <MemberSignature Language="C#" Value="Nullable&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.Verbose { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.Verbose" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Luis#ILuisOptions#Verbose" />
+      <MemberSignature Language="VB.NET" Value=" Property Verbose As Nullable(Of Boolean) Implements ILuisOptions.Verbose" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -275,10 +288,11 @@
       <MemberSignature Language="C#" Value="public string ModelID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ModelID" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.ModelID" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModelID As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -295,10 +309,11 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Luis.LuisRequest ModifyRequest (Microsoft.Bot.Builder.Luis.LuisRequest request);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.Luis.LuisRequest ModifyRequest(class Microsoft.Bot.Builder.Luis.LuisRequest request) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.ModifyRequest(Microsoft.Bot.Builder.Luis.LuisRequest)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ModifyRequest (request As LuisRequest) As LuisRequest" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.LuisRequest</ReturnType>
@@ -317,10 +332,11 @@
       <MemberSignature Language="C#" Value="public bool SpellCheck { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SpellCheck" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.SpellCheck" />
+      <MemberSignature Language="VB.NET" Value="Public Property SpellCheck As Boolean" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -337,10 +353,11 @@
       <MemberSignature Language="C#" Value="public bool Staging { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Staging" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Staging" />
+      <MemberSignature Language="VB.NET" Value="Public Property Staging As Boolean" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -357,10 +374,11 @@
       <MemberSignature Language="C#" Value="public string SubscriptionKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SubscriptionKey" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.SubscriptionKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubscriptionKey As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -377,10 +395,11 @@
       <MemberSignature Language="C#" Value="public double TimezoneOffset { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 TimezoneOffset" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.TimezoneOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Property TimezoneOffset As Double" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -397,10 +416,11 @@
       <MemberSignature Language="C#" Value="public Uri UriBase { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri UriBase" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.UriBase" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UriBase As Uri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -417,10 +437,11 @@
       <MemberSignature Language="C#" Value="public static Uri UriFor (Microsoft.Bot.Builder.Luis.LuisApiVersion apiVersion, string domain = null);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Uri UriFor(valuetype Microsoft.Bot.Builder.Luis.LuisApiVersion apiVersion, string domain) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.UriFor(Microsoft.Bot.Builder.Luis.LuisApiVersion,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UriFor (apiVersion As LuisApiVersion, Optional domain As String = null) As Uri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -441,10 +462,11 @@
       <MemberSignature Language="C#" Value="public bool Verbose { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Verbose" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Verbose" />
+      <MemberSignature Language="VB.NET" Value="Public Property Verbose As Boolean" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

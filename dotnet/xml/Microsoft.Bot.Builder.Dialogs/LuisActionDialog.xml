@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public class LuisActionDialog : Microsoft.Bot.Builder.Dialogs.IDialog&lt;Microsoft.Bot.Builder.Luis.Models.LuisResult&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit LuisActionDialog extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;class Microsoft.Bot.Builder.Luis.Models.LuisResult&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.LuisActionDialog" />
+  <TypeSignature Language="VB.NET" Value="Public Class LuisActionDialog&#xA;Implements IDialog(Of LuisResult)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,10 +31,11 @@
       <MemberSignature Language="C#" Value="public LuisActionDialog (Microsoft.Bot.Builder.Luis.ILuisService luisService, string contextId, string prompt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Luis.ILuisService luisService, string contextId, string prompt) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisActionDialog.#ctor(Microsoft.Bot.Builder.Luis.ILuisService,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (luisService As ILuisService, contextId As String, prompt As String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="luisService" Type="Microsoft.Bot.Builder.Luis.ILuisService" />
@@ -54,10 +56,11 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task MessageReceivedAsync (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt; item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task MessageReceivedAsync(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;class Microsoft.Bot.Connector.IMessageActivity&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisActionDialog.MessageReceivedAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Connector.IMessageActivity})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function MessageReceivedAsync (context As IDialogContext, item As IAwaitable(Of IMessageActivity)) As Task" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -83,10 +86,11 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task StartAsync (Microsoft.Bot.Builder.Dialogs.IDialogContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task StartAsync(class Microsoft.Bot.Builder.Dialogs.IDialogContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisActionDialog.StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartAsync (context As IDialogContext) As Task" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

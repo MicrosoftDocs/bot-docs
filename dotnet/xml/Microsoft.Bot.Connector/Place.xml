@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public class Place" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Place extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Place" />
+  <TypeSignature Language="VB.NET" Value="Public Class Place" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="C#" Value="public Place ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Place.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -38,6 +40,7 @@
       <MemberSignature Language="C#" Value="public Place (object address = null, object geo = null, object hasMap = null, string type = null, string name = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object address, object geo, object hasMap, string type, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Place.#ctor(System.Object,System.Object,System.Object,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional address As Object = null, Optional geo As Object = null, Optional hasMap As Object = null, Optional type As String = null, Optional name As String = null)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="C#" Value="public dynamic Address { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Address" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Place.Address" />
+      <MemberSignature Language="VB.NET" Value="Public Property Address As Object" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="C#" Value="public dynamic Geo { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Geo" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Place.Geo" />
+      <MemberSignature Language="VB.NET" Value="Public Property Geo As Object" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="C#" Value="public dynamic HasMap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object HasMap" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Place.HasMap" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasMap As Object" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -144,6 +150,7 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Place.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -169,6 +176,7 @@
       <MemberSignature Language="C#" Value="public string Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Type" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Place.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

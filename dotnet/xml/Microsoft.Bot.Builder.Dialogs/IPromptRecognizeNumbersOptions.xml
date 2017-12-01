@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public interface IPromptRecognizeNumbersOptions" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPromptRecognizeNumbersOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IPromptRecognizeNumbersOptions" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -16,10 +17,11 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IntegerOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IntegerOnly" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions.IntegerOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property IntegerOnly As Nullable(Of Boolean)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -36,10 +38,11 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; MaxValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; MaxValue" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions.MaxValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxValue As Nullable(Of Double)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
@@ -56,10 +59,11 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; MinValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; MinValue" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions.MinValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinValue As Nullable(Of Double)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>

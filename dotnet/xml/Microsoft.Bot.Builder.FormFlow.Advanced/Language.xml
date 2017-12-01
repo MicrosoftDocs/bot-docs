@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public class Language" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Language extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.Language" />
+  <TypeSignature Language="VB.NET" Value="Public Class Language" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,10 +22,11 @@
       <MemberSignature Language="C#" Value="public Language ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -36,10 +38,11 @@
       <MemberSignature Language="C#" Value="public static string ANormalization (string input);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ANormalization(string input) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.ANormalization(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ANormalization (input As String) As String" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -62,10 +65,11 @@
       <MemberSignature Language="C#" Value="public static bool ArticleOrNone (string word);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ArticleOrNone(string word) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.ArticleOrNone(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ArticleOrNone (word As String) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -86,10 +90,11 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.HashSet&lt;string&gt; Articles;" />
       <MemberSignature Language="ILAsm" Value=".field public static class System.Collections.Generic.HashSet`1&lt;string&gt; Articles" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Language.Articles" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Articles As HashSet(Of String) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.HashSet&lt;System.String&gt;</ReturnType>
@@ -105,10 +110,11 @@
       <MemberSignature Language="C#" Value="public static string BuildList (System.Collections.Generic.IEnumerable&lt;string&gt; values, string separator, string lastSeparator);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string BuildList(class System.Collections.Generic.IEnumerable`1&lt;string&gt; values, string separator, string lastSeparator) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.BuildList(System.Collections.Generic.IEnumerable{System.String},System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BuildList (values As IEnumerable(Of String), separator As String, lastSeparator As String) As String" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -133,10 +139,11 @@
       <MemberSignature Language="C#" Value="public static string CamelCase (string original);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string CamelCase(string original) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.CamelCase(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CamelCase (original As String) As String" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -157,10 +164,11 @@
       <MemberSignature Language="C#" Value="public static string[] GenerateTerms (string phrase, int maxLength);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] GenerateTerms(string phrase, int32 maxLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.GenerateTerms(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateTerms (phrase As String, maxLength As Integer) As String()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -187,10 +195,11 @@
       <MemberSignature Language="C#" Value="public static bool NoiseResponse (string word);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool NoiseResponse(string word) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.NoiseResponse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NoiseResponse (word As String) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -211,10 +220,11 @@
       <MemberSignature Language="C#" Value="public static bool NoiseWord (string word);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool NoiseWord(string word) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.NoiseWord(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NoiseWord (word As String) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -235,10 +245,11 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;string&gt; NonNoiseWords (System.Collections.Generic.IEnumerable&lt;string&gt; words);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;string&gt; NonNoiseWords(class System.Collections.Generic.IEnumerable`1&lt;string&gt; words) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonNoiseWords(System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NonNoiseWords (words As IEnumerable(Of String)) As IEnumerable(Of String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -259,10 +270,11 @@
       <MemberSignature Language="C#" Value="public static bool NonWord (string word);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool NonWord(string word) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonWord(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NonWord (word As String) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -283,10 +295,11 @@
       <MemberSignature Language="C#" Value="public static string Normalize (string value, Microsoft.Bot.Builder.FormFlow.CaseNormalization normalization);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Normalize(string value, valuetype Microsoft.Bot.Builder.FormFlow.CaseNormalization normalization) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.Normalize(System.String,Microsoft.Bot.Builder.FormFlow.CaseNormalization)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Normalize (value As String, normalization As CaseNormalization) As String" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -307,10 +320,11 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;string&gt; OptionalPlurals (System.Collections.Generic.IEnumerable&lt;string&gt; words);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;string&gt; OptionalPlurals(class System.Collections.Generic.IEnumerable`1&lt;string&gt; words) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.OptionalPlurals(System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Iterator Function OptionalPlurals (words As IEnumerable(Of String)) As IEnumerable(Of String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -336,10 +350,11 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.HashSet&lt;string&gt; StopWords;" />
       <MemberSignature Language="ILAsm" Value=".field public static class System.Collections.Generic.HashSet`1&lt;string&gt; StopWords" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Language.StopWords" />
+      <MemberSignature Language="VB.NET" Value="Public Shared StopWords As HashSet(Of String) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.HashSet&lt;System.String&gt;</ReturnType>
@@ -355,10 +370,11 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;string&gt; WordBreak (string input);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;string&gt; WordBreak(string input) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.WordBreak(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Iterator Function WordBreak (input As String) As IEnumerable(Of String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -384,10 +400,11 @@
       <MemberSignature Language="C#" Value="public static System.Text.RegularExpressions.Regex WordBreaker;" />
       <MemberSignature Language="ILAsm" Value=".field public static class System.Text.RegularExpressions.Regex WordBreaker" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Language.WordBreaker" />
+      <MemberSignature Language="VB.NET" Value="Public Shared WordBreaker As Regex " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.RegularExpressions.Regex</ReturnType>
