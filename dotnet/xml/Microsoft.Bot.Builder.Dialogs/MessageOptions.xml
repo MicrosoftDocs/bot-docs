@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public class MessageOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessageOptions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.MessageOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessageOptions" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,10 +21,11 @@
       <MemberSignature Language="C#" Value="public MessageOptions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.MessageOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -35,10 +37,11 @@
       <MemberSignature Language="C#" Value="public string AttachmentLayout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AttachmentLayout" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.MessageOptions.AttachmentLayout" />
+      <MemberSignature Language="VB.NET" Value="Public Property AttachmentLayout As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -55,10 +58,11 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt; Attachments { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Attachment&gt; Attachments" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.MessageOptions.Attachments" />
+      <MemberSignature Language="VB.NET" Value="Public Property Attachments As IList(Of Attachment)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt;</ReturnType>
@@ -75,10 +79,11 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Entity&gt; Entities { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Entity&gt; Entities" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.MessageOptions.Entities" />
+      <MemberSignature Language="VB.NET" Value="Public Property Entities As IList(Of Entity)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Entity&gt;</ReturnType>
@@ -95,10 +100,11 @@
       <MemberSignature Language="C#" Value="public string InputHint { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InputHint" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.MessageOptions.InputHint" />
+      <MemberSignature Language="VB.NET" Value="Public Property InputHint As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -115,10 +121,11 @@
       <MemberSignature Language="C#" Value="public string TextFormat { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TextFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.MessageOptions.TextFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextFormat As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

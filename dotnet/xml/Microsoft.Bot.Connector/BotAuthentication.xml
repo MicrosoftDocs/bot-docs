@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public class BotAuthentication : System.Web.Http.Filters.ActionFilterAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BotAuthentication extends System.Web.Http.Filters.ActionFilterAttribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.BotAuthentication" />
+  <TypeSignature Language="VB.NET" Value="Public Class BotAuthentication&#xA;Inherits ActionFilterAttribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="C#" Value="public BotAuthentication ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthentication.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="C#" Value="public Type CredentialProviderType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type CredentialProviderType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotAuthentication.CredentialProviderType" />
+      <MemberSignature Language="VB.NET" Value="Public Property CredentialProviderType As Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -59,6 +62,7 @@
       <MemberSignature Language="C#" Value="public bool DisableEmulatorTokens { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DisableEmulatorTokens" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotAuthentication.DisableEmulatorTokens" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisableEmulatorTokens As Boolean" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -77,6 +81,7 @@
       <MemberSignature Language="C#" Value="public string MicrosoftAppId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MicrosoftAppId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppId" />
+      <MemberSignature Language="VB.NET" Value="Public Property MicrosoftAppId As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -99,6 +104,7 @@
       <MemberSignature Language="C#" Value="public string MicrosoftAppIdSettingName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MicrosoftAppIdSettingName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppIdSettingName" />
+      <MemberSignature Language="VB.NET" Value="Public Property MicrosoftAppIdSettingName As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -121,6 +127,7 @@
       <MemberSignature Language="C#" Value="public string MicrosoftAppPassword { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MicrosoftAppPassword" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppPassword" />
+      <MemberSignature Language="VB.NET" Value="Public Property MicrosoftAppPassword As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -143,6 +150,7 @@
       <MemberSignature Language="C#" Value="public string MicrosoftAppPasswordSettingName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MicrosoftAppPasswordSettingName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppPasswordSettingName" />
+      <MemberSignature Language="VB.NET" Value="Public Property MicrosoftAppPasswordSettingName As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -194,6 +202,7 @@
       <MemberSignature Language="C#" Value="public virtual string OpenIdConfigurationUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OpenIdConfigurationUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotAuthentication.OpenIdConfigurationUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property OpenIdConfigurationUrl As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public sealed class NoneResolver : Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NoneResolver extends System.Object implements class Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.NoneResolver" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NoneResolver&#xA;Implements IResolver" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,10 +24,11 @@
       <MemberSignature Language="C#" Value="public static readonly object BoxedToken;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly object BoxedToken" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.NoneResolver.BoxedToken" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BoxedToken As Object " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -40,10 +42,11 @@
       <MemberSignature Language="C#" Value="public static readonly Microsoft.Bot.Builder.Scorables.Internals.IResolver Instance;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Bot.Builder.Scorables.Internals.IResolver Instance" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.NoneResolver.Instance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Instance As IResolver " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Scorables.Internals.IResolver</ReturnType>
@@ -60,7 +63,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

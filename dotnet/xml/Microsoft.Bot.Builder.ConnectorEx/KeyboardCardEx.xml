@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public static class KeyboardCardEx" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit KeyboardCardEx extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx" />
+  <TypeSignature Language="VB.NET" Value="Public Module KeyboardCardEx" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,10 +21,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.Attachment ToAttachment (this Microsoft.Bot.Builder.ConnectorEx.KeyboardCard keyboard);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.Attachment ToAttachment(class Microsoft.Bot.Builder.ConnectorEx.KeyboardCard keyboard) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx.ToAttachment(Microsoft.Bot.Builder.ConnectorEx.KeyboardCard)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToAttachment (keyboard As KeyboardCard) As Attachment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.Attachment</ReturnType>
@@ -42,10 +44,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.ConnectorEx.FacebookMessage ToFacebookMessage (this Microsoft.Bot.Builder.ConnectorEx.KeyboardCard keyboard);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.ConnectorEx.FacebookMessage ToFacebookMessage(class Microsoft.Bot.Builder.ConnectorEx.KeyboardCard keyboard) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx.ToFacebookMessage(Microsoft.Bot.Builder.ConnectorEx.KeyboardCard)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToFacebookMessage (keyboard As KeyboardCard) As FacebookMessage" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.ConnectorEx.FacebookMessage</ReturnType>
@@ -65,10 +68,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.HeroCard ToHeroCard (this Microsoft.Bot.Builder.ConnectorEx.KeyboardCard keyboard);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.HeroCard ToHeroCard(class Microsoft.Bot.Builder.ConnectorEx.KeyboardCard keyboard) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.KeyboardCardEx.ToHeroCard(Microsoft.Bot.Builder.ConnectorEx.KeyboardCard)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToHeroCard (keyboard As KeyboardCard) As HeroCard" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.HeroCard</ReturnType>

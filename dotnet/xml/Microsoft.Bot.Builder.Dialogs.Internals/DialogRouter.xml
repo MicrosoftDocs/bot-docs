@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public sealed class DialogRouter : Microsoft.Bot.Builder.Scorables.Internals.DelegatingScorable&lt;Microsoft.Bot.Connector.IActivity,double&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DialogRouter extends Microsoft.Bot.Builder.Scorables.Internals.DelegatingScorable`2&lt;class Microsoft.Bot.Connector.IActivity, float64&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.DialogRouter" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DialogRouter&#xA;Inherits DelegatingScorable(Of IActivity, Double)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Scorables.Internals.DelegatingScorable&lt;Microsoft.Bot.Connector.IActivity,System.Double&gt;</BaseTypeName>
@@ -25,10 +26,11 @@
       <MemberSignature Language="C#" Value="public DialogRouter (Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack stack, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Connector.IActivity,double&gt;&gt; fromActivity, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,double&gt;&gt; fromResolver, Func&lt;Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Builder.Scorables.Internals.IResolver&gt; makeResolver, Microsoft.Bot.Builder.Internals.Fibers.ITraits&lt;double&gt; traits, System.Collections.Generic.IComparer&lt;double&gt; comparer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack stack, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Connector.IActivity, float64&gt;&gt; fromActivity, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, float64&gt;&gt; fromResolver, class System.Func`2&lt;class Microsoft.Bot.Connector.IActivity, class Microsoft.Bot.Builder.Scorables.Internals.IResolver&gt; makeResolver, class Microsoft.Bot.Builder.Internals.Fibers.ITraits`1&lt;float64&gt; traits, class System.Collections.Generic.IComparer`1&lt;float64&gt; comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogRouter.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Connector.IActivity,System.Double}},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Double}},System.Func{Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Builder.Scorables.Internals.IResolver},Microsoft.Bot.Builder.Internals.Fibers.ITraits{System.Double},System.Collections.Generic.IComparer{System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (stack As IDialogStack, fromActivity As IEnumerable(Of IScorable(Of IActivity, Double)), fromResolver As IEnumerable(Of IScorable(Of IResolver, Double)), makeResolver As Func(Of IActivity, IResolver), traits As ITraits(Of Double), comparer As IComparer(Of Double))" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="stack" Type="Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack" />
@@ -53,10 +55,11 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Connector.IActivity,double&gt;&gt; EnumerateRelevant (Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack stack, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Connector.IActivity,double&gt;&gt; fromActivity, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,double&gt;&gt; fromResolver, Func&lt;Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Builder.Scorables.Internals.IResolver&gt; makeResolver);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Connector.IActivity, float64&gt;&gt; EnumerateRelevant(class Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack stack, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Connector.IActivity, float64&gt;&gt; fromActivity, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, float64&gt;&gt; fromResolver, class System.Func`2&lt;class Microsoft.Bot.Connector.IActivity, class Microsoft.Bot.Builder.Scorables.Internals.IResolver&gt; makeResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogRouter.EnumerateRelevant(Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Connector.IActivity,System.Double}},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Double}},System.Func{Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Builder.Scorables.Internals.IResolver})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Iterator Function EnumerateRelevant (stack As IDialogStack, fromActivity As IEnumerable(Of IScorable(Of IActivity, Double)), fromResolver As IEnumerable(Of IScorable(Of IResolver, Double)), makeResolver As Func(Of IActivity, IResolver)) As IEnumerable(Of IScorable(Of IActivity, Double))" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -86,10 +89,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Connector.IActivity,double&gt; MakeDelegate (Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack stack, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Connector.IActivity,double&gt;&gt; fromActivity, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,double&gt;&gt; fromResolver, Func&lt;Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Builder.Scorables.Internals.IResolver&gt; makeResolver, Microsoft.Bot.Builder.Internals.Fibers.ITraits&lt;double&gt; traits, System.Collections.Generic.IComparer&lt;double&gt; comparer);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Connector.IActivity, float64&gt; MakeDelegate(class Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack stack, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Connector.IActivity, float64&gt;&gt; fromActivity, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, float64&gt;&gt; fromResolver, class System.Func`2&lt;class Microsoft.Bot.Connector.IActivity, class Microsoft.Bot.Builder.Scorables.Internals.IResolver&gt; makeResolver, class Microsoft.Bot.Builder.Internals.Fibers.ITraits`1&lt;float64&gt; traits, class System.Collections.Generic.IComparer`1&lt;float64&gt; comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogRouter.MakeDelegate(Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Connector.IActivity,System.Double}},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Double}},System.Func{Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Builder.Scorables.Internals.IResolver},Microsoft.Bot.Builder.Internals.Fibers.ITraits{System.Double},System.Collections.Generic.IComparer{System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MakeDelegate (stack As IDialogStack, fromActivity As IEnumerable(Of IScorable(Of IActivity, Double)), fromResolver As IEnumerable(Of IScorable(Of IResolver, Double)), makeResolver As Func(Of IActivity, IResolver), traits As ITraits(Of Double), comparer As IComparer(Of Double)) As IScorable(Of IActivity, Double)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Connector.IActivity,System.Double&gt;</ReturnType>

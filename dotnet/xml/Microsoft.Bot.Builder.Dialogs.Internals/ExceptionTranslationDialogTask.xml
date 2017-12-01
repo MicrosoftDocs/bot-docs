@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public sealed class ExceptionTranslationDialogTask : Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExceptionTranslationDialogTask extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.ExceptionTranslationDialogTask" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExceptionTranslationDialogTask&#xA;Implements IPostToBot" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,10 +27,11 @@
       <MemberSignature Language="C#" Value="public ExceptionTranslationDialogTask (Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ExceptionTranslationDialogTask.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (inner As IPostToBot)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="inner" Type="Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
@@ -44,10 +46,11 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IPostToBot.PostAsync (Microsoft.Bot.Connector.IActivity activity, System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot.PostAsync(class Microsoft.Bot.Connector.IActivity activity, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ExceptionTranslationDialogTask.Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Function PostAsync (activity As IActivity, token As CancellationToken) As Task Implements IPostToBot.PostAsync" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

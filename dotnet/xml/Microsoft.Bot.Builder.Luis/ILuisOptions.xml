@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public interface ILuisOptions" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ILuisOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.ILuisOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ILuisOptions" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -18,10 +19,11 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Log { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Log" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisOptions.Log" />
+      <MemberSignature Language="VB.NET" Value="Public Property Log As Nullable(Of Boolean)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -38,10 +40,11 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; SpellCheck { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; SpellCheck" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisOptions.SpellCheck" />
+      <MemberSignature Language="VB.NET" Value="Public Property SpellCheck As Nullable(Of Boolean)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -58,10 +61,11 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Staging { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Staging" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisOptions.Staging" />
+      <MemberSignature Language="VB.NET" Value="Public Property Staging As Nullable(Of Boolean)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -78,10 +82,11 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; TimezoneOffset { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; TimezoneOffset" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisOptions.TimezoneOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Property TimezoneOffset As Nullable(Of Double)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
@@ -98,10 +103,11 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Verbose { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Verbose" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisOptions.Verbose" />
+      <MemberSignature Language="VB.NET" Value="Public Property Verbose As Nullable(Of Boolean)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>

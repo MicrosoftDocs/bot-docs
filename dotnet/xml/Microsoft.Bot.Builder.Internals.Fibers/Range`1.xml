@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public struct Range&lt;T&gt; : IComparable&lt;Microsoft.Bot.Builder.Internals.Fibers.Range&lt;T&gt;&gt;, IEquatable&lt;Microsoft.Bot.Builder.Internals.Fibers.Range&lt;T&gt;&gt; where T : IEquatable&lt;T&gt;, IComparable&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Range`1&lt;(class System.IEquatable`1&lt;!T&gt;, class System.IComparable`1&lt;!T&gt;) T&gt; extends System.ValueType implements class System.IComparable`1&lt;valuetype Microsoft.Bot.Builder.Internals.Fibers.Range`1&lt;!T&gt;&gt;, class System.IEquatable`1&lt;valuetype Microsoft.Bot.Builder.Internals.Fibers.Range`1&lt;!T&gt;&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.Range`1" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Range(Of T)&#xA;Implements IComparable(Of Range(Of T)), IEquatable(Of Range(Of T))" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
@@ -35,10 +36,11 @@
       <MemberSignature Language="C#" Value="public Range (T start, T after);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T start, !T after) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Range`1.#ctor(`0,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (start As T, after As T)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="start" Type="T" />
@@ -55,10 +57,11 @@
       <MemberSignature Language="C#" Value="public T After { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T After" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.Range`1.After" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property After As T" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -73,10 +76,11 @@
       <MemberSignature Language="C#" Value="public int CompareTo (Microsoft.Bot.Builder.Internals.Fibers.Range&lt;T&gt; other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(valuetype Microsoft.Bot.Builder.Internals.Fibers.Range`1&lt;!T&gt; other) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Range`1.CompareTo(Microsoft.Bot.Builder.Internals.Fibers.Range{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompareTo (other As Range(Of T)) As Integer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -95,10 +99,11 @@
       <MemberSignature Language="C#" Value="public bool Equals (Microsoft.Bot.Builder.Internals.Fibers.Range&lt;T&gt; other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype Microsoft.Bot.Builder.Internals.Fibers.Range`1&lt;!T&gt; other) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Range`1.Equals(Microsoft.Bot.Builder.Internals.Fibers.Range{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Range(Of T)) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -117,10 +122,11 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object other) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Range`1.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (other As Object) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -139,10 +145,11 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Range`1.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -158,10 +165,11 @@
       <MemberSignature Language="C#" Value="public T Start { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T Start" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.Range`1.Start" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Start As T" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -176,10 +184,11 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Range`1.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public class Attachment : IEquatable&lt;Microsoft.Bot.Connector.Attachment&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Attachment extends System.Object implements class System.IEquatable`1&lt;class Microsoft.Bot.Connector.Attachment&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Attachment" />
+  <TypeSignature Language="VB.NET" Value="Public Class Attachment&#xA;Implements IEquatable(Of Attachment)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="C#" Value="public Attachment ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Attachment.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="C#" Value="public Attachment (string contentType = null, string contentUrl = null, object content = null, string name = null, string thumbnailUrl = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string contentType, string contentUrl, object content, string name, string thumbnailUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Attachment.#ctor(System.String,System.String,System.Object,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional contentType As String = null, Optional contentUrl As String = null, Optional content As Object = null, Optional name As String = null, Optional thumbnailUrl As String = null)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="C#" Value="public object Content { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Content" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Attachment.Content" />
+      <MemberSignature Language="VB.NET" Value="Public Property Content As Object" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="C#" Value="public string ContentType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Attachment.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentType As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="C#" Value="public string ContentUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContentUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Attachment.ContentUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentUrl As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -145,6 +151,7 @@
       <MemberSignature Language="C#" Value="public bool Equals (Microsoft.Bot.Connector.Attachment other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class Microsoft.Bot.Connector.Attachment other) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Attachment.Equals(Microsoft.Bot.Connector.Attachment)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Attachment) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -167,6 +174,7 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object other) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Attachment.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (other As Object) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -189,6 +197,7 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Attachment.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -208,6 +217,7 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Attachment.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -233,6 +243,7 @@
       <MemberSignature Language="C#" Value="public Newtonsoft.Json.Linq.JObject Properties { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Newtonsoft.Json.Linq.JObject Properties" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Attachment.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public Property Properties As JObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -258,6 +269,7 @@
       <MemberSignature Language="C#" Value="public string ThumbnailUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ThumbnailUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Attachment.ThumbnailUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ThumbnailUrl As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

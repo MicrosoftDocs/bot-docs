@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public interface Serialization.ISurrogateProvider : System.Runtime.Serialization.ISerializationSurrogate" />
   <TypeSignature Language="ILAsm" Value=".class nested public interface auto ansi abstract Serialization/ISurrogateProvider implements class System.Runtime.Serialization.ISerializationSurrogate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.ISurrogateProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Serialization.ISurrogateProvider&#xA;Implements ISerializationSurrogate" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -25,7 +26,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

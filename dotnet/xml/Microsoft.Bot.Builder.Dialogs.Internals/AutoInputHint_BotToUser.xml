@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public sealed class AutoInputHint_BotToUser : Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AutoInputHint_BotToUser extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.AutoInputHint_BotToUser" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AutoInputHint_BotToUser&#xA;Implements IBotToUser" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,10 +24,11 @@
       <MemberSignature Language="C#" Value="public AutoInputHint_BotToUser (Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser inner, Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue queue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser inner, class Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue queue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.AutoInputHint_BotToUser.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (inner As IBotToUser, queue As IMessageQueue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="inner" Type="Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
@@ -43,10 +45,11 @@
       <MemberSignature Language="C#" Value="Microsoft.Bot.Connector.IMessageActivity IBotToUser.MakeMessage ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.Bot.Connector.IMessageActivity Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.MakeMessage() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.AutoInputHint_BotToUser.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#MakeMessage" />
+      <MemberSignature Language="VB.NET" Value="Function MakeMessage () As IMessageActivity Implements IBotToUser.MakeMessage" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IMessageActivity</ReturnType>
@@ -65,7 +68,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

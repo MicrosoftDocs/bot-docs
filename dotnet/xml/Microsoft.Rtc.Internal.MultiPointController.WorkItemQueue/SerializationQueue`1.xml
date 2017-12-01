@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public abstract class SerializationQueue&lt;T&gt; where T : IWorkitem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SerializationQueue`1&lt;(class Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.IWorkitem) T&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class SerializationQueue(Of T)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+    <AssemblyVersion>1.7.0.26</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
@@ -31,10 +32,11 @@
       <MemberSignature Language="C#" Value="public SerializationQueue (bool processAsync);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool processAsync) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (processAsync As Boolean)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="processAsync" Type="System.Boolean" />
@@ -54,10 +56,11 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -74,10 +77,11 @@
       <MemberSignature Language="C#" Value="public void Enqueue (T item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Enqueue(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.Enqueue(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Enqueue (item As T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -97,10 +101,11 @@
       <MemberSignature Language="C#" Value="public void EnqueueAndProcess (T item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnqueueAndProcess(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.EnqueueAndProcess(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnqueueAndProcess (item As T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -122,10 +127,11 @@
       <MemberSignature Language="C#" Value="public void Process ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Process() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.Process" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Process ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -144,10 +150,11 @@
       <MemberSignature Language="C#" Value="public void Process (bool processAsync);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Process(bool processAsync) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.Process(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Process (processAsync As Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -173,10 +180,11 @@
       <MemberSignature Language="C#" Value="public bool ProcessAsync { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ProcessAsync" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.ProcessAsync" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProcessAsync As Boolean" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -197,10 +205,11 @@
       <MemberSignature Language="C#" Value="protected abstract bool ProcessItems ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ProcessItems() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.ProcessItems" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function ProcessItems () As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -220,10 +229,11 @@
       <MemberSignature Language="C#" Value="protected void ResumeProcessing ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ResumeProcessing() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.ResumeProcessing" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ResumeProcessing ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -241,10 +251,11 @@
       <MemberSignature Language="C#" Value="protected void SetProcessingStateIdle ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetProcessingStateIdle() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.SetProcessingStateIdle" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SetProcessingStateIdle ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -261,10 +272,11 @@
       <MemberSignature Language="C#" Value="protected bool TryDequeue (out T item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool TryDequeue([out] !T&amp; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.TryDequeue(`0@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function TryDequeue (ByRef item As T) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

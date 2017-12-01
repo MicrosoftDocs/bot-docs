@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public static class InheritedAttributes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit InheritedAttributes extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.InheritedAttributes" />
+  <TypeSignature Language="VB.NET" Value="Public Class InheritedAttributes" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,10 +24,11 @@
       <MemberSignature Language="C#" Value="public static readonly System.Collections.Concurrent.ConcurrentDictionary&lt;System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList&lt;Attribute&gt;&gt; AttributesByMethod;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Collections.Concurrent.ConcurrentDictionary`2&lt;class System.Reflection.MethodInfo, class System.Collections.Generic.IReadOnlyList`1&lt;class System.Attribute&gt;&gt; AttributesByMethod" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.InheritedAttributes.AttributesByMethod" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AttributesByMethod As ConcurrentDictionary(Of MethodInfo, IReadOnlyList(Of Attribute)) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Concurrent.ConcurrentDictionary&lt;System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList&lt;System.Attribute&gt;&gt;</ReturnType>
@@ -40,10 +42,11 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;A&gt; For&lt;A&gt; (System.Reflection.MethodInfo method) where A : Attribute;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;!!A&gt; For&lt;(class System.Attribute) A&gt;(class System.Reflection.MethodInfo method) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.InheritedAttributes.For``1(System.Reflection.MethodInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function For(Of A As Attribute) (method As MethodInfo) As IEnumerable(Of A)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;A&gt;</ReturnType>

@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public class PaymentResponse" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaymentResponse extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Payments.PaymentResponse" />
+  <TypeSignature Language="VB.NET" Value="Public Class PaymentResponse" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="C#" Value="public PaymentResponse ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.PaymentResponse.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="C#" Value="public PaymentResponse (string methodName = null, object details = null, Microsoft.Bot.Connector.Payments.PaymentAddress shippingAddress = null, string shippingOption = null, string payerEmail = null, string payerPhone = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string methodName, object details, class Microsoft.Bot.Connector.Payments.PaymentAddress shippingAddress, string shippingOption, string payerEmail, string payerPhone) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.PaymentResponse.#ctor(System.String,System.Object,Microsoft.Bot.Connector.Payments.PaymentAddress,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional methodName As String = null, Optional details As Object = null, Optional shippingAddress As PaymentAddress = null, Optional shippingOption As String = null, Optional payerEmail As String = null, Optional payerPhone As String = null)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="C#" Value="public object Details { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Details" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentResponse.Details" />
+      <MemberSignature Language="VB.NET" Value="Public Property Details As Object" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="C#" Value="public string MethodName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MethodName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentResponse.MethodName" />
+      <MemberSignature Language="VB.NET" Value="Public Property MethodName As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -122,6 +127,7 @@
       <MemberSignature Language="C#" Value="public string PayerEmail { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PayerEmail" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentResponse.PayerEmail" />
+      <MemberSignature Language="VB.NET" Value="Public Property PayerEmail As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -149,6 +155,7 @@
       <MemberSignature Language="C#" Value="public string PayerPhone { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PayerPhone" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentResponse.PayerPhone" />
+      <MemberSignature Language="VB.NET" Value="Public Property PayerPhone As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -176,6 +183,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.Payments.PaymentAddress ShippingAddress { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.Payments.PaymentAddress ShippingAddress" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentResponse.ShippingAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShippingAddress As PaymentAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -203,6 +211,7 @@
       <MemberSignature Language="C#" Value="public string ShippingOption { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ShippingOption" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentResponse.ShippingOption" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShippingOption As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

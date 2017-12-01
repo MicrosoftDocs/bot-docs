@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public static class StateClientExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit StateClientExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.StateClientExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Class StateClientExtensions" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>

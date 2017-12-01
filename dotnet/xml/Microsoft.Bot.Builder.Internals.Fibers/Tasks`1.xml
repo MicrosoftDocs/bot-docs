@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public static class Tasks&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Tasks`1&lt;T&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.Tasks`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class Tasks(Of T)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -23,10 +24,11 @@
       <MemberSignature Language="C#" Value="public static readonly System.Threading.Tasks.Task&lt;T&gt; NotImplemented;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Threading.Tasks.Task`1&lt;!T&gt; NotImplemented" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Internals.Fibers.Tasks`1.NotImplemented" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NotImplemented As Task(Of T) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
@@ -40,10 +42,11 @@
       <MemberSignature Language="C#" Value="public static readonly System.Threading.Tasks.Task&lt;T&gt; Null;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Threading.Tasks.Task`1&lt;!T&gt; Null" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Internals.Fibers.Tasks`1.Null" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Null As Task(Of T) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>

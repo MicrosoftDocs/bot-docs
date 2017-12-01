@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public abstract class FoldScorable&lt;Item,Score&gt; : Microsoft.Bot.Builder.Scorables.Internals.ScorableBase&lt;Item,System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;.State&gt;,Score&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FoldScorable`2&lt;Item, Score&gt; extends Microsoft.Bot.Builder.Scorables.Internals.ScorableBase`3&lt;!Item, class System.Collections.Generic.IReadOnlyList`1&lt;valuetype Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/State&lt;!Item, !Score&gt;&gt;, !Score&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class FoldScorable(Of Item, Score)&#xA;Inherits ScorableBase(Of Item, IReadOnlyList(Of FoldScorable(Of Item, Score).State), Score)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="Item" />
@@ -35,10 +36,11 @@
       <MemberSignature Language="C#" Value="public FoldScorable (System.Collections.Generic.IComparer&lt;Score&gt; comparer, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;&gt; scorables);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IComparer`1&lt;!Score&gt; comparer, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !Score&gt;&gt; scorables) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.#ctor(System.Collections.Generic.IComparer{`1},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{`0,`1}})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (comparer As IComparer(Of Score), scorables As IEnumerable(Of IScorable(Of Item, Score)))" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;Score&gt;" />
@@ -55,10 +57,11 @@
       <MemberSignature Language="C#" Value="protected readonly System.Collections.Generic.IComparer&lt;Score&gt; comparer;" />
       <MemberSignature Language="ILAsm" Value=".field family initonly class System.Collections.Generic.IComparer`1&lt;!Score&gt; comparer" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.comparer" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly comparer As IComparer(Of Score) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IComparer&lt;Score&gt;</ReturnType>
@@ -75,7 +78,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -106,7 +109,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Score</ReturnType>
@@ -130,7 +133,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -151,10 +154,11 @@
       <MemberSignature Language="C#" Value="protected abstract Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;.OnStageDelegate OnStage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/OnStageDelegate&lt;!Item, !Score&gt; OnStage" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.OnStage" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property OnStage As FoldScorable(Of Item, Score).OnStageDelegate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;+OnStageDelegate</ReturnType>
@@ -176,7 +180,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -207,7 +211,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -233,10 +237,11 @@
       <MemberSignature Language="C#" Value="protected readonly System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;&gt; scorables;" />
       <MemberSignature Language="ILAsm" Value=".field family initonly class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !Score&gt;&gt; scorables" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.scorables" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly scorables As IEnumerable(Of IScorable(Of Item, Score)) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;&gt;</ReturnType>

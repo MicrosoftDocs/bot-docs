@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public sealed class FacebookQuickReply.ContentTypes" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit FacebookQuickReply/ContentTypes extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentTypes" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FacebookQuickReply.ContentTypes" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -19,10 +20,11 @@
       <MemberSignature Language="C#" Value="public ContentTypes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentTypes.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -34,10 +36,11 @@
       <MemberSignature Language="C#" Value="public const string Location;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Location" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentTypes.Location" />
+      <MemberSignature Language="VB.NET" Value="Public Const Location As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -51,10 +54,11 @@
       <MemberSignature Language="C#" Value="public const string Text;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Text" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentTypes.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Const Text As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

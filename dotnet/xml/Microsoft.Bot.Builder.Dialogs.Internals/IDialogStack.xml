@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public interface IDialogStack" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDialogStack" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDialogStack" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -18,10 +19,11 @@
       <MemberSignature Language="C#" Value="public void Call&lt;R&gt; (Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt; child, Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;R&gt; resume);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Call&lt;R&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!R&gt; child, class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;!!R&gt; resume) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Call``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Call(Of R) (child As IDialog(Of R), resume As ResumeAfter(Of R))" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -47,10 +49,11 @@
       <MemberSignature Language="C#" Value="public void Done&lt;R&gt; (R value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Done&lt;R&gt;(!!R value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Done``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Done(Of R) (value As R)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -74,10 +77,11 @@
       <MemberSignature Language="C#" Value="public void Fail (Exception error);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Fail(class System.Exception error) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Fail(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Fail (error As Exception)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -97,10 +101,11 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task Forward&lt;R,T&gt; (Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt; child, Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;R&gt; resume, T item, System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task Forward&lt;R, T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!R&gt; child, class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;!!R&gt; resume, !!T item, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Forward``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},``1,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Forward(Of R, T) (child As IDialog(Of R), resume As ResumeAfter(Of R), item As T, token As CancellationToken) As Task" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -133,10 +138,11 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Delegate&gt; Frames { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class System.Delegate&gt; Frames" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Frames" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Frames As IReadOnlyList(Of Delegate)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.Delegate&gt;</ReturnType>
@@ -153,10 +159,11 @@
       <MemberSignature Language="C#" Value="public void Post&lt;E&gt; (E event, Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;E&gt; resume);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Post&lt;E&gt;(!!E event, class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;!!E&gt; resume) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Post``1(``0,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Post(Of E) (event As E, resume As ResumeAfter(Of E))" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -182,10 +189,11 @@
       <MemberSignature Language="C#" Value="public void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -202,10 +210,11 @@
       <MemberSignature Language="C#" Value="public void Wait&lt;R&gt; (Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;R&gt; resume);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Wait&lt;R&gt;(class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;!!R&gt; resume) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Wait``1(Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Wait(Of R) (resume As ResumeAfter(Of R))" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

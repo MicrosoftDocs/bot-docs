@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public class PromptDialog.PromptChoice&lt;T&gt; : Microsoft.Bot.Builder.Dialogs.Internals.Prompt&lt;T,T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable beforefieldinit PromptDialog/PromptChoice`1&lt;T&gt; extends Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2&lt;!T, !T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class PromptDialog.PromptChoice(Of T)&#xA;Inherits Prompt(Of T, T)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -27,10 +28,11 @@
       <MemberSignature Language="C#" Value="public PromptChoice (Microsoft.Bot.Builder.Dialogs.IPromptOptions&lt;T&gt; promptOptions, bool recognizeChoices = true, bool recognizeNumbers = true, bool recognizeOrdinals = true, double minScore = 0.4);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.IPromptOptions`1&lt;!T&gt; promptOptions, bool recognizeChoices, bool recognizeNumbers, bool recognizeOrdinals, float64 minScore) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1.#ctor(Microsoft.Bot.Builder.Dialogs.IPromptOptions{`0},System.Boolean,System.Boolean,System.Boolean,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (promptOptions As IPromptOptions(Of T), Optional recognizeChoices As Boolean = true, Optional recognizeNumbers As Boolean = true, Optional recognizeOrdinals As Boolean = true, Optional minScore As Double = 0.4)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="promptOptions" Type="Microsoft.Bot.Builder.Dialogs.IPromptOptions&lt;T&gt;" />
@@ -58,7 +60,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="choices" Type="System.Collections.Generic.IDictionary&lt;T,System.Collections.Generic.IEnumerable&lt;T&gt;&gt;" />
@@ -94,7 +96,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="options" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
@@ -124,13 +126,14 @@
       </Docs>
     </Member>
     <Member MemberName="TryParse">
-      <MemberSignature Language="C#" Value="protected override bool TryParse (Microsoft.Bot.Connector.IMessageActivity message, out T result);" />
+      <MemberSignature Language="C#" Value="protected internal override bool TryParse (Microsoft.Bot.Connector.IMessageActivity message, out T result);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryParse(class Microsoft.Bot.Connector.IMessageActivity message, [out] !T&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1.TryParse(Microsoft.Bot.Connector.IMessageActivity,`0@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function TryParse (message As IMessageActivity, ByRef result As T) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

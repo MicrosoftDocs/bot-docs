@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public sealed class AwaitableFromItem&lt;T&gt; : Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;T&gt;, Microsoft.Bot.Builder.Internals.Fibers.IAwaiter&lt;T&gt;, System.Runtime.CompilerServices.INotifyCompletion" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AwaitableFromItem`1&lt;T&gt; extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;!T&gt;, class Microsoft.Bot.Builder.Internals.Fibers.IAwaiter`1&lt;!T&gt;, class System.Runtime.CompilerServices.INotifyCompletion" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AwaitableFromItem(Of T)&#xA;Implements IAwaitable(Of T), IAwaiter(Of T), INotifyCompletion" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -35,10 +36,11 @@
       <MemberSignature Language="C#" Value="public AwaitableFromItem (T item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.#ctor(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (item As T)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="item" Type="T" />
@@ -53,10 +55,11 @@
       <MemberSignature Language="C#" Value="Microsoft.Bot.Builder.Internals.Fibers.IAwaiter&lt;T&gt; IAwaitable&lt;T&gt;.GetAwaiter ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.Bot.Builder.Internals.Fibers.IAwaiter`1&lt;!T&gt; Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;T&gt;.GetAwaiter() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Dialogs#IAwaitable&lt;T&gt;#GetAwaiter" />
+      <MemberSignature Language="VB.NET" Value="Function GetAwaiter () As IAwaiter(Of T) Implements IAwaitable(Of T).GetAwaiter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Internals.Fibers.IAwaiter&lt;T&gt;</ReturnType>
@@ -72,10 +75,11 @@
       <MemberSignature Language="C#" Value="T IAwaiter&lt;T&gt;.GetResult ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance !T Microsoft.Bot.Builder.Internals.Fibers.IAwaiter&lt;T&gt;.GetResult() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter&lt;T&gt;#GetResult" />
+      <MemberSignature Language="VB.NET" Value="Function GetResult () As T Implements IAwaiter(Of T).GetResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -91,10 +95,11 @@
       <MemberSignature Language="C#" Value="bool Microsoft.Bot.Builder.Internals.Fibers.IAwaiter&lt;T&gt;.IsCompleted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Microsoft.Bot.Builder.Internals.Fibers.IAwaiter&lt;T&gt;.IsCompleted" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter&lt;T&gt;#IsCompleted" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsCompleted As Boolean Implements IAwaiter(Of T).IsCompleted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -109,10 +114,11 @@
       <MemberSignature Language="C#" Value="void INotifyCompletion.OnCompleted (Action continuation);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(class System.Action continuation) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.System#Runtime#CompilerServices#INotifyCompletion#OnCompleted(System.Action)" />
+      <MemberSignature Language="VB.NET" Value="Sub OnCompleted (continuation As Action) Implements INotifyCompletion.OnCompleted" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

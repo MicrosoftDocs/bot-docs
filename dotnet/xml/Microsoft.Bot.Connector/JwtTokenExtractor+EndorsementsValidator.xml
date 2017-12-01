@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public delegate bool JwtTokenExtractor.EndorsementsValidator(string[] endorsements);" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed JwtTokenExtractor/EndorsementsValidator extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.JwtTokenExtractor.EndorsementsValidator" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function JwtTokenExtractor.EndorsementsValidator(endorsements As String()) As Boolean " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>

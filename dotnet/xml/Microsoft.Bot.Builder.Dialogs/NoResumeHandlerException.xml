@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public sealed class NoResumeHandlerException : Microsoft.Bot.Builder.Dialogs.DialogStackException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit NoResumeHandlerException extends Microsoft.Bot.Builder.Dialogs.DialogStackException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.NoResumeHandlerException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NoResumeHandlerException&#xA;Inherits DialogStackException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.DialogStackException</BaseTypeName>
@@ -21,10 +22,11 @@
       <MemberSignature Language="C#" Value="public NoResumeHandlerException (Exception inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.NoResumeHandlerException.#ctor(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (inner As Exception)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="inner" Type="System.Exception" />

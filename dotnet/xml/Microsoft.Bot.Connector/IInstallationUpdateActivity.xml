@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public interface IInstallationUpdateActivity : Microsoft.Bot.Connector.IActivity" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInstallationUpdateActivity implements class Microsoft.Bot.Connector.IActivity" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IInstallationUpdateActivity" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IInstallationUpdateActivity&#xA;Implements IActivity" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="C#" Value="public string Action { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Action" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IInstallationUpdateActivity.Action" />
+      <MemberSignature Language="VB.NET" Value="Public Property Action As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

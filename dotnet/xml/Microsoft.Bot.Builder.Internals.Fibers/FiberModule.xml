@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public abstract class FiberModule : Autofac.Module" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FiberModule extends Autofac.Module" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.FiberModule" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class FiberModule&#xA;Inherits Module" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
-    <AssemblyVersion>3.10.5.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Autofac.Module</BaseTypeName>
@@ -21,10 +22,11 @@
       <MemberSignature Language="C#" Value="protected FiberModule ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.FiberModule.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
-        <AssemblyVersion>3.10.5.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -36,10 +38,11 @@
       <MemberSignature Language="C#" Value="public static readonly object Key_DoNotSerialize;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly object Key_DoNotSerialize" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Key_DoNotSerialize" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Key_DoNotSerialize As Object " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
-        <AssemblyVersion>3.10.5.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -57,10 +60,11 @@
       <MemberSignature Language="C#" Value="public static readonly object Key_SurrogateProvider;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly object Key_SurrogateProvider" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Key_SurrogateProvider" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Key_SurrogateProvider As Object " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
-        <AssemblyVersion>3.10.5.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -74,10 +78,11 @@
       <MemberSignature Language="C#" Value="protected override void Load (Autofac.ContainerBuilder builder);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Load(class Autofac.ContainerBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Load(Autofac.ContainerBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Load (builder As ContainerBuilder)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
-        <AssemblyVersion>3.10.5.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

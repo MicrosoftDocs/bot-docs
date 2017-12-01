@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public abstract class Prompt&lt;T,U&gt; : Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit Prompt`2&lt;T, U&gt; extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Prompt(Of T, U)&#xA;Implements IDialog(Of T)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -29,10 +30,11 @@
       <MemberSignature Language="C#" Value="public Prompt (Microsoft.Bot.Builder.Dialogs.IPromptOptions&lt;U&gt; promptOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.IPromptOptions`1&lt;!U&gt; promptOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.#ctor(Microsoft.Bot.Builder.Dialogs.IPromptOptions{`1})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (promptOptions As IPromptOptions(Of U))" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="promptOptions" Type="Microsoft.Bot.Builder.Dialogs.IPromptOptions&lt;U&gt;" />
@@ -47,10 +49,11 @@
       <MemberSignature Language="C#" Value="protected virtual Microsoft.Bot.Connector.IMessageActivity MakePrompt (Microsoft.Bot.Builder.Dialogs.IDialogContext context, string prompt, System.Collections.Generic.IReadOnlyList&lt;U&gt; options = null, System.Collections.Generic.IReadOnlyList&lt;string&gt; descriptions = null, string speak = null);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.Bot.Connector.IMessageActivity MakePrompt(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, string prompt, class System.Collections.Generic.IReadOnlyList`1&lt;!U&gt; options, class System.Collections.Generic.IReadOnlyList`1&lt;string&gt; descriptions, string speak) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.MakePrompt(Microsoft.Bot.Builder.Dialogs.IDialogContext,System.String,System.Collections.Generic.IReadOnlyList{`1},System.Collections.Generic.IReadOnlyList{System.String},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function MakePrompt (context As IDialogContext, prompt As String, Optional options As IReadOnlyList(Of U) = null, Optional descriptions As IReadOnlyList(Of String) = null, Optional speak As String = null) As IMessageActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IMessageActivity</ReturnType>
@@ -77,10 +80,11 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task MessageReceivedAsync (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt; message);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task MessageReceivedAsync(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;class Microsoft.Bot.Connector.IMessageActivity&gt; message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.MessageReceivedAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Connector.IMessageActivity})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function MessageReceivedAsync (context As IDialogContext, message As IAwaitable(Of IMessageActivity)) As Task" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -106,10 +110,11 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IDialog&lt;T&gt;.StartAsync (Microsoft.Bot.Builder.Dialogs.IDialogContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;.StartAsync(class Microsoft.Bot.Builder.Dialogs.IDialogContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.Microsoft#Bot#Builder#Dialogs#IDialog&lt;T&gt;#StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)" />
+      <MemberSignature Language="VB.NET" Value="Function StartAsync (context As IDialogContext) As Task Implements IDialog(Of T).StartAsync" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -133,10 +138,11 @@
       <MemberSignature Language="C#" Value="protected readonly Microsoft.Bot.Builder.Dialogs.IPromptOptions&lt;U&gt; promptOptions;" />
       <MemberSignature Language="ILAsm" Value=".field family initonly class Microsoft.Bot.Builder.Dialogs.IPromptOptions`1&lt;!U&gt; promptOptions" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.promptOptions" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly promptOptions As IPromptOptions(Of U) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IPromptOptions&lt;U&gt;</ReturnType>
@@ -147,13 +153,14 @@
       </Docs>
     </Member>
     <Member MemberName="TryParse">
-      <MemberSignature Language="C#" Value="protected abstract bool TryParse (Microsoft.Bot.Connector.IMessageActivity message, out T result);" />
+      <MemberSignature Language="C#" Value="protected internal abstract bool TryParse (Microsoft.Bot.Connector.IMessageActivity message, out T result);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool TryParse(class Microsoft.Bot.Connector.IMessageActivity message, [out] !T&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.TryParse(Microsoft.Bot.Connector.IMessageActivity,`0@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function TryParse (message As IMessageActivity, ByRef result As T) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

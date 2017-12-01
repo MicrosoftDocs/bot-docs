@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public class PromptRecognizer : Microsoft.Bot.Builder.Dialogs.IPromptRecognizer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PromptRecognizer extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IPromptRecognizer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptRecognizer" />
+  <TypeSignature Language="VB.NET" Value="Public Class PromptRecognizer&#xA;Implements IPromptRecognizer" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,10 +24,11 @@
       <MemberSignature Language="C#" Value="public PromptRecognizer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,10 +40,11 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;bool&gt;&gt; RecognizeBooleans (Microsoft.Bot.Connector.IMessageActivity message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;bool&gt;&gt; RecognizeBooleans(class Microsoft.Bot.Connector.IMessageActivity message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeBooleans(Microsoft.Bot.Connector.IMessageActivity)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RecognizeBooleans (message As IMessageActivity) As IEnumerable(Of RecognizeEntity(Of Boolean))" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;System.Boolean&gt;&gt;</ReturnType>
@@ -60,10 +63,11 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;T&gt;&gt; RecognizeChoices&lt;T&gt; (Microsoft.Bot.Connector.IMessageActivity message, System.Collections.Generic.IReadOnlyDictionary&lt;T,System.Collections.Generic.IReadOnlyList&lt;T&gt;&gt; choicesDictionary, Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions options = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;!!T&gt;&gt; RecognizeChoices&lt;T&gt;(class Microsoft.Bot.Connector.IMessageActivity message, class System.Collections.Generic.IReadOnlyDictionary`2&lt;!!T, class System.Collections.Generic.IReadOnlyList`1&lt;!!T&gt;&gt; choicesDictionary, class Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeChoices``1(Microsoft.Bot.Connector.IMessageActivity,System.Collections.Generic.IReadOnlyDictionary{``0,System.Collections.Generic.IReadOnlyList{``0}},Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RecognizeChoices(Of T) (message As IMessageActivity, choicesDictionary As IReadOnlyDictionary(Of T, IReadOnlyList(Of T)), Optional options As IPromptRecognizeChoicesOptions = null) As IEnumerable(Of RecognizeEntity(Of T))" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;T&gt;&gt;</ReturnType>
@@ -93,7 +97,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;System.String&gt;&gt;</ReturnType>
@@ -121,7 +125,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;System.String&gt;&gt;</ReturnType>
@@ -144,10 +148,11 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;double&gt;&gt; RecognizeNumbers (Microsoft.Bot.Connector.IMessageActivity message, Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions options = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;float64&gt;&gt; RecognizeNumbers(class Microsoft.Bot.Connector.IMessageActivity message, class Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeNumbers(Microsoft.Bot.Connector.IMessageActivity,Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RecognizeNumbers (message As IMessageActivity, Optional options As IPromptRecognizeNumbersOptions = null) As IEnumerable(Of RecognizeEntity(Of Double))" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;System.Double&gt;&gt;</ReturnType>
@@ -168,10 +173,11 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;long&gt;&gt; RecognizeOrdinals (Microsoft.Bot.Connector.IMessageActivity message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;int64&gt;&gt; RecognizeOrdinals(class Microsoft.Bot.Connector.IMessageActivity message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeOrdinals(Microsoft.Bot.Connector.IMessageActivity)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RecognizeOrdinals (message As IMessageActivity) As IEnumerable(Of RecognizeEntity(Of Long))" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;System.Int64&gt;&gt;</ReturnType>
@@ -190,10 +196,11 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;string&gt;&gt; RecognizeTimes (Microsoft.Bot.Connector.IMessageActivity message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;string&gt;&gt; RecognizeTimes(class Microsoft.Bot.Connector.IMessageActivity message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeTimes(Microsoft.Bot.Connector.IMessageActivity)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RecognizeTimes (message As IMessageActivity) As IEnumerable(Of RecognizeEntity(Of String))" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;System.String&gt;&gt;</ReturnType>

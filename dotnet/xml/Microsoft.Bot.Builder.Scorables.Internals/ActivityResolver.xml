@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public sealed class ActivityResolver : Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActivityResolver extends Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivityResolver&#xA;Inherits DelegatingResolver" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver</BaseTypeName>
@@ -21,10 +22,11 @@
       <MemberSignature Language="C#" Value="public ActivityResolver (Microsoft.Bot.Builder.Scorables.Internals.IResolver inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Scorables.Internals.IResolver inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver.#ctor(Microsoft.Bot.Builder.Scorables.Internals.IResolver)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (inner As IResolver)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="inner" Type="Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
@@ -42,7 +44,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -65,10 +67,11 @@
       <MemberSignature Language="C#" Value="public static readonly System.Collections.Generic.IReadOnlyDictionary&lt;string,Type&gt; TypeByName;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, class System.Type&gt; TypeByName" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver.TypeByName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TypeByName As IReadOnlyDictionary(Of String, Type) " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.Type&gt;</ReturnType>

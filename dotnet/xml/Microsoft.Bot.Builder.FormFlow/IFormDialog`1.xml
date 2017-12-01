@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public interface IFormDialog&lt;T&gt; : Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; where T : class" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFormDialog`1&lt;class T&gt; implements class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.IFormDialog`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IFormDialog(Of T)&#xA;Implements IDialog(Of T)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
@@ -33,10 +34,11 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.IForm&lt;T&gt; Form { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.FormFlow.IForm`1&lt;!T&gt; Form" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.IFormDialog`1.Form" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Form As IForm(Of T)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.IForm&lt;T&gt;</ReturnType>

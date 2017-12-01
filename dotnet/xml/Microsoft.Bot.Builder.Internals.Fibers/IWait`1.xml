@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public interface IWait&lt;C&gt; : ICloneable, Microsoft.Bot.Builder.Internals.Fibers.IWait" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWait`1&lt;C&gt; implements class Microsoft.Bot.Builder.Internals.Fibers.IWait, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.IWait`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWait(Of C)&#xA;Implements ICloneable, IWait" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="C" />
@@ -27,10 +28,11 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C&gt;&gt; PollAsync (Microsoft.Bot.Builder.Internals.Fibers.IFiber&lt;C&gt; fiber, C context, System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!C&gt;&gt; PollAsync(class Microsoft.Bot.Builder.Internals.Fibers.IFiber`1&lt;!C&gt; fiber, !C context, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.IWait`1.PollAsync(Microsoft.Bot.Builder.Internals.Fibers.IFiber{`0},`0,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PollAsync (fiber As IFiber(Of C), context As C, token As CancellationToken) As Task(Of IWait(Of C))" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C&gt;&gt;</ReturnType>
