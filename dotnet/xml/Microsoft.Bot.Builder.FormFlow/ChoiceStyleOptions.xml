@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public enum ChoiceStyleOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ChoiceStyleOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ChoiceStyleOptions" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -20,14 +21,16 @@
       <MemberSignature Language="C#" Value="Auto" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions Auto = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.Auto" />
+      <MemberSignature Language="VB.NET" Value="Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>
             Automatically choose how to render choices.
@@ -38,14 +41,16 @@
       <MemberSignature Language="C#" Value="AutoText" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions AutoText = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.AutoText" />
+      <MemberSignature Language="VB.NET" Value="AutoText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>
             Automatically generate text and switch between the <see cref="F:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.Inline" /> and <see cref="F:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.PerLine" /> styles based on the number of choices.
@@ -56,14 +61,16 @@
       <MemberSignature Language="C#" Value="Buttons" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions Buttons = int32(6)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.Buttons" />
+      <MemberSignature Language="VB.NET" Value="Buttons" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>
             Show choices as buttons if possible.
@@ -74,14 +81,16 @@
       <MemberSignature Language="C#" Value="Carousel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions Carousel = int32(7)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.Carousel" />
+      <MemberSignature Language="VB.NET" Value="Carousel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>
             Show choices as a carousel if possibe.
@@ -92,14 +101,16 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
             Use the default <see cref="P:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute.ChoiceStyle" /> from the <see cref="F:Microsoft.Bot.Builder.FormFlow.FormConfiguration.DefaultPrompt" />.
@@ -110,14 +121,16 @@
       <MemberSignature Language="C#" Value="Inline" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions Inline = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.Inline" />
+      <MemberSignature Language="VB.NET" Value="Inline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>
             Show choices on the same line.
@@ -128,14 +141,16 @@
       <MemberSignature Language="C#" Value="InlineNoParen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions InlineNoParen = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.InlineNoParen" />
+      <MemberSignature Language="VB.NET" Value="InlineNoParen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>   Show choices on the same line without surrounding parentheses. </summary>
       </Docs>
@@ -144,14 +159,16 @@
       <MemberSignature Language="C#" Value="PerLine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions PerLine = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.PerLine" />
+      <MemberSignature Language="VB.NET" Value="PerLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>
             Show choices with one per line.

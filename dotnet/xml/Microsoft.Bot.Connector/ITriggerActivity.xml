@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public interface ITriggerActivity : Microsoft.Bot.Connector.IEventActivity" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITriggerActivity implements class Microsoft.Bot.Connector.IActivity, class Microsoft.Bot.Connector.IEventActivity" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ITriggerActivity" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITriggerActivity&#xA;Implements IEventActivity" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.11.1.0</AssemblyVersion>

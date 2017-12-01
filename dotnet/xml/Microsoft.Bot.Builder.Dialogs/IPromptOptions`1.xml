@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public interface IPromptOptions&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPromptOptions`1&lt;T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IPromptOptions(Of T)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -22,10 +23,11 @@
       <MemberSignature Language="C#" Value="public int Attempts { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Attempts" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1.Attempts" />
+      <MemberSignature Language="VB.NET" Value="Public Property Attempts As Integer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -42,10 +44,11 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyDictionary&lt;T,System.Collections.Generic.IReadOnlyList&lt;T&gt;&gt; Choices { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyDictionary`2&lt;!T, class System.Collections.Generic.IReadOnlyList`1&lt;!T&gt;&gt; Choices" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1.Choices" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Choices As IReadOnlyDictionary(Of T, IReadOnlyList(Of T))" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;T,System.Collections.Generic.IReadOnlyList&lt;T&gt;&gt;</ReturnType>
@@ -62,10 +65,11 @@
       <MemberSignature Language="C#" Value="public string DefaultRetry { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultRetry" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1.DefaultRetry" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultRetry As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -82,10 +86,11 @@
       <MemberSignature Language="C#" Value="public string DefaultRetrySpeak { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultRetrySpeak" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1.DefaultRetrySpeak" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultRetrySpeak As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -102,10 +107,11 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;string&gt; Descriptions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;string&gt; Descriptions" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1.Descriptions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Descriptions As IReadOnlyList(Of String)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.String&gt;</ReturnType>
@@ -125,10 +131,11 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;T&gt; Options { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;!T&gt; Options" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1.Options" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Options As IReadOnlyList(Of T)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;T&gt;</ReturnType>
@@ -145,10 +152,11 @@
       <MemberSignature Language="C#" Value="public string Prompt { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Prompt" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1.Prompt" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Prompt As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -165,10 +173,11 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.PromptStyler PromptStyler { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.PromptStyler PromptStyler" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1.PromptStyler" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PromptStyler As PromptStyler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.PromptStyler</ReturnType>
@@ -185,10 +194,11 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.IPromptRecognizer Recognizer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.IPromptRecognizer Recognizer" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1.Recognizer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Recognizer As IPromptRecognizer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IPromptRecognizer</ReturnType>
@@ -205,10 +215,11 @@
       <MemberSignature Language="C#" Value="public string Retry { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Retry" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1.Retry" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Retry As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -225,10 +236,11 @@
       <MemberSignature Language="C#" Value="public string RetrySpeak { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RetrySpeak" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1.RetrySpeak" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RetrySpeak As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -245,10 +257,11 @@
       <MemberSignature Language="C#" Value="public string Speak { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Speak" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1.Speak" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Speak As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -265,10 +278,11 @@
       <MemberSignature Language="C#" Value="public string TooManyAttempts { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TooManyAttempts" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1.TooManyAttempts" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TooManyAttempts As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

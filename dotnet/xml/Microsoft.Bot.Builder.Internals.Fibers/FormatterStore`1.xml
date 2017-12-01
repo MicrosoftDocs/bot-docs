@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public sealed class FormatterStore&lt;T&gt; : Microsoft.Bot.Builder.Internals.Fibers.IStore&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FormatterStore`1&lt;T&gt; extends System.Object implements class Microsoft.Bot.Builder.Internals.Fibers.IStore`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.FormatterStore`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FormatterStore(Of T)&#xA;Implements IStore(Of T)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -30,7 +31,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="stream" Type="System.IO.Stream" />
@@ -47,10 +48,11 @@
       <MemberSignature Language="C#" Value="void IStore&lt;T&gt;.Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Bot.Builder.Internals.Fibers.IStore&lt;T&gt;.Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.FormatterStore`1.Microsoft#Bot#Builder#Internals#Fibers#IStore&lt;T&gt;#Flush" />
+      <MemberSignature Language="VB.NET" Value="Sub Flush () Implements IStore(Of T).Flush" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -65,10 +67,11 @@
       <MemberSignature Language="C#" Value="void IStore&lt;T&gt;.Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Bot.Builder.Internals.Fibers.IStore&lt;T&gt;.Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.FormatterStore`1.Microsoft#Bot#Builder#Internals#Fibers#IStore&lt;T&gt;#Reset" />
+      <MemberSignature Language="VB.NET" Value="Sub Reset () Implements IStore(Of T).Reset" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -83,10 +86,11 @@
       <MemberSignature Language="C#" Value="void IStore&lt;T&gt;.Save (T item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Bot.Builder.Internals.Fibers.IStore&lt;T&gt;.Save(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.FormatterStore`1.Microsoft#Bot#Builder#Internals#Fibers#IStore&lt;T&gt;#Save(`0)" />
+      <MemberSignature Language="VB.NET" Value="Sub Save (item As T) Implements IStore(Of T).Save" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -104,10 +108,11 @@
       <MemberSignature Language="C#" Value="bool IStore&lt;T&gt;.TryLoad (out T item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Internals.Fibers.IStore&lt;T&gt;.TryLoad([out] !T&amp; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.FormatterStore`1.Microsoft#Bot#Builder#Internals#Fibers#IStore&lt;T&gt;#TryLoad(`0@)" />
+      <MemberSignature Language="VB.NET" Value="Function TryLoad (ByRef item As T) As Boolean Implements IStore(Of T).TryLoad" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

@@ -2,6 +2,7 @@
   <TypeSignature Language="C#" Value="public interface IRealTimeMediaCallService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRealTimeMediaCallService" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRealTimeMediaCallService" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
     <AssemblyVersion>1.0.2.0</AssemblyVersion>
@@ -18,6 +19,7 @@
       <MemberSignature Language="C#" Value="public string CorrelationId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CorrelationId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService.CorrelationId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CorrelationId As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -38,6 +40,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task EndCall ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task EndCall() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService.EndCall" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndCall () As Task" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -56,9 +59,10 @@
       </Docs>
     </Member>
     <Member MemberName="OnAnswerAppHostedMediaCompleted">
-      <MemberSignature Language="C#" Value="public event Func&lt;Microsoft.Bot.Builder.RealTimeMediaCalling.Events.AnswerAppHostedMediaOutcomeEvent,System.Threading.Tasks.Task&gt; OnAnswerAppHostedMediaCompleted;" />
+      <MemberSignature Language="C#" Value="event Func&lt;Microsoft.Bot.Builder.RealTimeMediaCalling.Events.AnswerAppHostedMediaOutcomeEvent,System.Threading.Tasks.Task&gt; OnAnswerAppHostedMediaCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Func`2&lt;class Microsoft.Bot.Builder.RealTimeMediaCalling.Events.AnswerAppHostedMediaOutcomeEvent, class System.Threading.Tasks.Task&gt; OnAnswerAppHostedMediaCompleted" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService.OnAnswerAppHostedMediaCompleted" />
+      <MemberSignature Language="VB.NET" Value="Event OnAnswerAppHostedMediaCompleted As Func(Of AnswerAppHostedMediaOutcomeEvent, Task) " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -75,9 +79,10 @@
       </Docs>
     </Member>
     <Member MemberName="OnCallCleanup">
-      <MemberSignature Language="C#" Value="public event Func&lt;System.Threading.Tasks.Task&gt; OnCallCleanup;" />
+      <MemberSignature Language="C#" Value="event Func&lt;System.Threading.Tasks.Task&gt; OnCallCleanup;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Func`1&lt;class System.Threading.Tasks.Task&gt; OnCallCleanup" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService.OnCallCleanup" />
+      <MemberSignature Language="VB.NET" Value="Event OnCallCleanup As Func(Of Task) " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -94,9 +99,10 @@
       </Docs>
     </Member>
     <Member MemberName="OnCallStateChangeNotification">
-      <MemberSignature Language="C#" Value="public event Func&lt;Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.CallStateChangeNotification,System.Threading.Tasks.Task&gt; OnCallStateChangeNotification;" />
+      <MemberSignature Language="C#" Value="event Func&lt;Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.CallStateChangeNotification,System.Threading.Tasks.Task&gt; OnCallStateChangeNotification;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Func`2&lt;class Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.CallStateChangeNotification, class System.Threading.Tasks.Task&gt; OnCallStateChangeNotification" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService.OnCallStateChangeNotification" />
+      <MemberSignature Language="VB.NET" Value="Event OnCallStateChangeNotification As Func(Of CallStateChangeNotification, Task) " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -113,9 +119,10 @@
       </Docs>
     </Member>
     <Member MemberName="OnIncomingCallReceived">
-      <MemberSignature Language="C#" Value="public event Func&lt;Microsoft.Bot.Builder.RealTimeMediaCalling.Events.RealTimeMediaIncomingCallEvent,System.Threading.Tasks.Task&gt; OnIncomingCallReceived;" />
+      <MemberSignature Language="C#" Value="event Func&lt;Microsoft.Bot.Builder.RealTimeMediaCalling.Events.RealTimeMediaIncomingCallEvent,System.Threading.Tasks.Task&gt; OnIncomingCallReceived;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Func`2&lt;class Microsoft.Bot.Builder.RealTimeMediaCalling.Events.RealTimeMediaIncomingCallEvent, class System.Threading.Tasks.Task&gt; OnIncomingCallReceived" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService.OnIncomingCallReceived" />
+      <MemberSignature Language="VB.NET" Value="Event OnIncomingCallReceived As Func(Of RealTimeMediaIncomingCallEvent, Task) " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -132,9 +139,10 @@
       </Docs>
     </Member>
     <Member MemberName="OnRosterUpdateNotification">
-      <MemberSignature Language="C#" Value="public event Func&lt;Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterUpdateNotification,System.Threading.Tasks.Task&gt; OnRosterUpdateNotification;" />
+      <MemberSignature Language="C#" Value="event Func&lt;Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterUpdateNotification,System.Threading.Tasks.Task&gt; OnRosterUpdateNotification;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Func`2&lt;class Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterUpdateNotification, class System.Threading.Tasks.Task&gt; OnRosterUpdateNotification" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService.OnRosterUpdateNotification" />
+      <MemberSignature Language="VB.NET" Value="Event OnRosterUpdateNotification As Func(Of RosterUpdateNotification, Task) " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -151,9 +159,10 @@
       </Docs>
     </Member>
     <Member MemberName="OnWorkflowValidationFailed">
-      <MemberSignature Language="C#" Value="public event Func&lt;Microsoft.Bot.Builder.RealTimeMediaCalling.Events.RealTimeMediaWorkflowValidationOutcomeEvent,System.Threading.Tasks.Task&gt; OnWorkflowValidationFailed;" />
+      <MemberSignature Language="C#" Value="event Func&lt;Microsoft.Bot.Builder.RealTimeMediaCalling.Events.RealTimeMediaWorkflowValidationOutcomeEvent,System.Threading.Tasks.Task&gt; OnWorkflowValidationFailed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Func`2&lt;class Microsoft.Bot.Builder.RealTimeMediaCalling.Events.RealTimeMediaWorkflowValidationOutcomeEvent, class System.Threading.Tasks.Task&gt; OnWorkflowValidationFailed" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService.OnWorkflowValidationFailed" />
+      <MemberSignature Language="VB.NET" Value="Event OnWorkflowValidationFailed As Func(Of RealTimeMediaWorkflowValidationOutcomeEvent, Task) " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>

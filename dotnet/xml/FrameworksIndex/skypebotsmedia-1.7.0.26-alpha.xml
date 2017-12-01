@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Framework Name="skypebotsmedia-1.7.0.26-alpha">
+  <Namespace Name="Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue">
+    <Type Name="Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.IWorkitem" Id="T:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.IWorkitem">
+      <Member Id="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.IWorkitem.Process" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1" Id="T:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1">
+      <Member Id="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.#ctor(System.Boolean)" />
+      <Member Id="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.Enqueue(`0)" />
+      <Member Id="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.EnqueueAndProcess(`0)" />
+      <Member Id="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.Process" />
+      <Member Id="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.Process(System.Boolean)" />
+      <Member Id="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.ProcessItems" />
+      <Member Id="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.ResumeProcessing" />
+      <Member Id="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.SetProcessingStateIdle" />
+      <Member Id="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.TryDequeue(`0@)" />
+      <Member Id="P:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.Count" />
+      <Member Id="P:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1.ProcessAsync" />
+    </Type>
+    <Type Name="Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.WorkitemQueue" Id="T:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.WorkitemQueue">
+      <Member Id="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.WorkitemQueue.#ctor" />
+      <Member Id="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.WorkitemQueue.#ctor(System.Boolean)" />
+      <Member Id="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.WorkitemQueue.ProcessItems" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Skype.Bots.Media">
+    <Type Name="Microsoft.Skype.Bots.Media.AudioFormat" Id="T:Microsoft.Skype.Bots.Media.AudioFormat">
+      <Member Id="F:Microsoft.Skype.Bots.Media.AudioFormat.Pcm16K" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.AudioFormat.Pcm44KStereo" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.AudioMediaBuffer" Id="T:Microsoft.Skype.Bots.Media.AudioMediaBuffer">
+      <Member Id="M:Microsoft.Skype.Bots.Media.AudioMediaBuffer.#ctor" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.AudioMediaBuffer.Dispose" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.AudioMediaBuffer.Dispose(System.Boolean)" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.AudioMediaBuffer.ActiveSpeakers" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.AudioMediaBuffer.AudioFormat" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.AudioMediaBuffer.Data" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.AudioMediaBuffer.IsSilence" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.AudioMediaBuffer.Length" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.AudioMediaBuffer.Timestamp" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.AudioMediaReceivedEventArgs" Id="T:Microsoft.Skype.Bots.Media.AudioMediaReceivedEventArgs">
+      <Member Id="M:Microsoft.Skype.Bots.Media.AudioMediaReceivedEventArgs.#ctor" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.AudioMediaReceivedEventArgs.Buffer" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.AudioSendStatusChangedEventArgs" Id="T:Microsoft.Skype.Bots.Media.AudioSendStatusChangedEventArgs">
+      <Member Id="M:Microsoft.Skype.Bots.Media.AudioSendStatusChangedEventArgs.#ctor" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.AudioSendStatusChangedEventArgs.MediaSendStatus" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.AudioSettings" Id="T:Microsoft.Skype.Bots.Media.AudioSettings">
+      <Member Id="M:Microsoft.Skype.Bots.Media.AudioSettings.#ctor(System.UInt32)" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.AudioSettings.BufferSizeInMs" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.AudioSocket" Id="T:Microsoft.Skype.Bots.Media.AudioSocket">
+      <Member Id="E:Microsoft.Skype.Bots.Media.AudioSocket.AudioMediaReceived" />
+      <Member Id="E:Microsoft.Skype.Bots.Media.AudioSocket.AudioSendStatusChanged" />
+      <Member Id="E:Microsoft.Skype.Bots.Media.AudioSocket.DominantSpeakerChanged" />
+      <Member Id="E:Microsoft.Skype.Bots.Media.AudioSocket.ToneReceived" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.AudioSocket.#ctor(Microsoft.Skype.Bots.Media.AudioSocketSettings)" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.AudioSocket.Dispose" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.AudioSocket.Send(Microsoft.Skype.Bots.Media.AudioMediaBuffer)" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.AudioSocketSettings" Id="T:Microsoft.Skype.Bots.Media.AudioSocketSettings">
+      <Member Id="M:Microsoft.Skype.Bots.Media.AudioSocketSettings.#ctor" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.AudioSocketSettings.CallId" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.AudioSocketSettings.StreamDirections" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.AudioSocketSettings.SupportedAudioFormat" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.AudioVideoFramePlayer" Id="T:Microsoft.Skype.Bots.Media.AudioVideoFramePlayer">
+      <Member Id="E:Microsoft.Skype.Bots.Media.AudioVideoFramePlayer.LowOnFrames" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.AudioVideoFramePlayer.#ctor(Microsoft.Skype.Bots.Media.AudioSocket,Microsoft.Skype.Bots.Media.VideoSocket,Microsoft.Skype.Bots.Media.AudioVideoFramePlayerSettings)" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.AudioVideoFramePlayer.ClearAsync" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.AudioVideoFramePlayer.EnqueueBuffersAsync(System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.AudioMediaBuffer},System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.VideoMediaBuffer})" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.AudioVideoFramePlayer.ShutdownAsync" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.AudioVideoFramePlayerSettings" Id="T:Microsoft.Skype.Bots.Media.AudioVideoFramePlayerSettings">
+      <Member Id="M:Microsoft.Skype.Bots.Media.AudioVideoFramePlayerSettings.#ctor(Microsoft.Skype.Bots.Media.AudioSettings,Microsoft.Skype.Bots.Media.VideoSettings,System.UInt32)" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.AudioVideoFramePlayerSettings.AudioSettings" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.AudioVideoFramePlayerSettings.MinEnqueuedMediaLengthInMs" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.AudioVideoFramePlayerSettings.VideoSettings" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.DataMediaBuffer" Id="T:Microsoft.Skype.Bots.Media.DataMediaBuffer">
+      <Member Id="M:Microsoft.Skype.Bots.Media.DataMediaBuffer.#ctor" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.DataMediaBuffer.Dispose" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.DataMediaBuffer.Dispose(System.Boolean)" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.DataMediaBuffer.Data" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.DataMediaBuffer.MediaSourceId" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.DataMediaReceivedEventArgs" Id="T:Microsoft.Skype.Bots.Media.DataMediaReceivedEventArgs">
+      <Member Id="M:Microsoft.Skype.Bots.Media.DataMediaReceivedEventArgs.#ctor" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.DataMediaReceivedEventArgs.Buffer" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.DataSendStatusChangedEventArgs" Id="T:Microsoft.Skype.Bots.Media.DataSendStatusChangedEventArgs">
+      <Member Id="M:Microsoft.Skype.Bots.Media.DataSendStatusChangedEventArgs.#ctor" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.DataSendStatusChangedEventArgs.MediaSendStatus" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.DataSocket" Id="T:Microsoft.Skype.Bots.Media.DataSocket">
+      <Member Id="E:Microsoft.Skype.Bots.Media.DataSocket.DataMediaReceived" />
+      <Member Id="E:Microsoft.Skype.Bots.Media.DataSocket.DataSendStatusChanged" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.DataSocket.#ctor(Microsoft.Skype.Bots.Media.DataSocketSettings)" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.DataSocket.Dispose" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.DataSocket.Send(Microsoft.Skype.Bots.Media.DataMediaBuffer,System.UInt32[])" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.DataSocketSettings" Id="T:Microsoft.Skype.Bots.Media.DataSocketSettings">
+      <Member Id="M:Microsoft.Skype.Bots.Media.DataSocketSettings.#ctor" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.DataSocketSettings.CallId" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.DataSocketSettings.ReceiveDataType" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.DataSocketSettings.SendDataType" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.DataSocketSettings.StreamDirections" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.DataType" Id="T:Microsoft.Skype.Bots.Media.DataType">
+      <Member Id="F:Microsoft.Skype.Bots.Media.DataType.Transcript" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.DominantSpeakerChangedEventArgs" Id="T:Microsoft.Skype.Bots.Media.DominantSpeakerChangedEventArgs">
+      <Member Id="F:Microsoft.Skype.Bots.Media.DominantSpeakerChangedEventArgs.None" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.DominantSpeakerChangedEventArgs.#ctor" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.DominantSpeakerChangedEventArgs.CurrentDominantSpeaker" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.DominantSpeakerChangedEventArgs.DominantSpeakerHistory" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.IAudioSocket" Id="T:Microsoft.Skype.Bots.Media.IAudioSocket">
+      <Member Id="E:Microsoft.Skype.Bots.Media.IAudioSocket.AudioMediaReceived" />
+      <Member Id="E:Microsoft.Skype.Bots.Media.IAudioSocket.AudioSendStatusChanged" />
+      <Member Id="E:Microsoft.Skype.Bots.Media.IAudioSocket.DominantSpeakerChanged" />
+      <Member Id="E:Microsoft.Skype.Bots.Media.IAudioSocket.ToneReceived" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.IAudioSocket.Send(Microsoft.Skype.Bots.Media.AudioMediaBuffer)" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.IAudioVideoFramePlayer" Id="T:Microsoft.Skype.Bots.Media.IAudioVideoFramePlayer">
+      <Member Id="E:Microsoft.Skype.Bots.Media.IAudioVideoFramePlayer.LowOnFrames" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.IAudioVideoFramePlayer.ClearAsync" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.IAudioVideoFramePlayer.EnqueueBuffersAsync(System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.AudioMediaBuffer},System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.VideoMediaBuffer})" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.IAudioVideoFramePlayer.ShutdownAsync" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.IDataSocket" Id="T:Microsoft.Skype.Bots.Media.IDataSocket">
+      <Member Id="E:Microsoft.Skype.Bots.Media.IDataSocket.DataMediaReceived" />
+      <Member Id="E:Microsoft.Skype.Bots.Media.IDataSocket.DataSendStatusChanged" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.IDataSocket.Send(Microsoft.Skype.Bots.Media.DataMediaBuffer,System.UInt32[])" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.IMediaPlatform" Id="T:Microsoft.Skype.Bots.Media.IMediaPlatform">
+      <Member Id="M:Microsoft.Skype.Bots.Media.IMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket)" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.IMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,Microsoft.Skype.Bots.Media.IDataSocket)" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.IMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,Microsoft.Skype.Bots.Media.IVideoSocket)" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.IMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.IVideoSocket})" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.IMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.IVideoSocket},Microsoft.Skype.Bots.Media.IVideoSocket)" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.IMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.IVideoSocket},Microsoft.Skype.Bots.Media.IVideoSocket,Microsoft.Skype.Bots.Media.IDataSocket)" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.IMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IVideoSocket)" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.IMediaPlatform.Initialize(Microsoft.Skype.Bots.Media.MediaPlatformSettings)" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.IVideoSocket" Id="T:Microsoft.Skype.Bots.Media.IVideoSocket">
+      <Member Id="E:Microsoft.Skype.Bots.Media.IVideoSocket.VideoKeyFrameNeeded" />
+      <Member Id="E:Microsoft.Skype.Bots.Media.IVideoSocket.VideoMediaReceived" />
+      <Member Id="E:Microsoft.Skype.Bots.Media.IVideoSocket.VideoSendStatusChanged" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.IVideoSocket.RequestKeyFrame" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.IVideoSocket.Send(Microsoft.Skype.Bots.Media.VideoMediaBuffer)" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.IVideoSocket.SocketId" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.LowOnFramesEventArgs" Id="T:Microsoft.Skype.Bots.Media.LowOnFramesEventArgs">
+      <Member Id="M:Microsoft.Skype.Bots.Media.LowOnFramesEventArgs.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.MediaPlatform" Id="T:Microsoft.Skype.Bots.Media.MediaPlatform">
+      <Member Id="F:Microsoft.Skype.Bots.Media.MediaPlatform.MaxNumberOfVideoSocketsPerCall" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.MediaPlatform.MinNumberOfCoresRequired" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.MediaPlatform.Name" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.MediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket)" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.MediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,Microsoft.Skype.Bots.Media.IDataSocket)" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.MediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,Microsoft.Skype.Bots.Media.IVideoSocket)" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.MediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.IVideoSocket})" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.MediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.IVideoSocket},Microsoft.Skype.Bots.Media.IVideoSocket)" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.MediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.IVideoSocket},Microsoft.Skype.Bots.Media.IVideoSocket,Microsoft.Skype.Bots.Media.IDataSocket)" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.MediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IVideoSocket)" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.MediaPlatform.Initialize(Microsoft.Skype.Bots.Media.MediaPlatformSettings)" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.MediaPlatform.Shutdown" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.MediaPlatform.MaxNumberOfVideoVbssSocketsPerMediaPlatform" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.MediaPlatformFactory" Id="T:Microsoft.Skype.Bots.Media.MediaPlatformFactory">
+      <Member Id="M:Microsoft.Skype.Bots.Media.MediaPlatformFactory.CreateMediaPlatform" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings" Id="T:Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings">
+      <Member Id="M:Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings.#ctor" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings.CertificateThumbprint" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings.InstanceInternalPort" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings.InstancePublicIPAddress" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings.InstancePublicPort" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings.ServiceFqdn" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.MediaPlatformSettings" Id="T:Microsoft.Skype.Bots.Media.MediaPlatformSettings">
+      <Member Id="M:Microsoft.Skype.Bots.Media.MediaPlatformSettings.#ctor" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.MediaPlatformSettings.ApplicationId" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.MediaPlatformSettings.MediaPlatformInstanceSettings" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.MediaPlatformSettings.RegionAffinity" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.MediaSendStatus" Id="T:Microsoft.Skype.Bots.Media.MediaSendStatus">
+      <Member Id="F:Microsoft.Skype.Bots.Media.MediaSendStatus.Active" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.MediaSendStatus.Inactive" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.MediaType" Id="T:Microsoft.Skype.Bots.Media.MediaType">
+      <Member Id="F:Microsoft.Skype.Bots.Media.MediaType.Audio" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.MediaType.Data" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.MediaType.Vbss" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.MediaType.Video" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.PerfCounterConfiguration" Id="T:Microsoft.Skype.Bots.Media.PerfCounterConfiguration">
+      <Member Id="M:Microsoft.Skype.Bots.Media.PerfCounterConfiguration.#ctor" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.PerfCounterConfiguration.IsValidConfiguration(Microsoft.Skype.Bots.Media.PerfCounterConfiguration)" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.PerfCounterConfiguration.ToString" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.PerfCounterConfiguration.UseMPAzureAppHostPerfCounterProvider" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.SkypeMediaException" Id="T:Microsoft.Skype.Bots.Media.SkypeMediaException" />
+    <Type Name="Microsoft.Skype.Bots.Media.StreamDirection" Id="T:Microsoft.Skype.Bots.Media.StreamDirection">
+      <Member Id="F:Microsoft.Skype.Bots.Media.StreamDirection.Inactive" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.StreamDirection.Recvonly" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.StreamDirection.Sendonly" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.StreamDirection.Sendrecv" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.ToneId" Id="T:Microsoft.Skype.Bots.Media.ToneId">
+      <Member Id="F:Microsoft.Skype.Bots.Media.ToneId.A" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.ToneId.B" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.ToneId.C" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.ToneId.D" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.ToneId.Flash" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.ToneId.Pound" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.ToneId.Star" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.ToneId.Tone0" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.ToneId.Tone1" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.ToneId.Tone2" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.ToneId.Tone3" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.ToneId.Tone4" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.ToneId.Tone5" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.ToneId.Tone6" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.ToneId.Tone7" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.ToneId.Tone8" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.ToneId.Tone9" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.ToneReceivedEventArgs" Id="T:Microsoft.Skype.Bots.Media.ToneReceivedEventArgs">
+      <Member Id="M:Microsoft.Skype.Bots.Media.ToneReceivedEventArgs.#ctor" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.ToneReceivedEventArgs.Tone" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.VideoColorFormat" Id="T:Microsoft.Skype.Bots.Media.VideoColorFormat">
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoColorFormat.H264" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoColorFormat.NV12" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoColorFormat.Rgb24" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoColorFormat.Yuy2" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.VideoFormat" Id="T:Microsoft.Skype.Bots.Media.VideoFormat">
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.H264_1280x720_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.H264_1920x1080_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.H264_320x180_1_875Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.H264_320x180_15Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.H264_320x180_3_75Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.H264_320x180_7_5Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.H264_424x240_15Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.H264_640x360_15Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.H264_640x360_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.H264_960x540_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_1080x1920_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_1280x720_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_180x320_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_1920x1080_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_240x424_15Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_270x480_15Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_320x180_15Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_360x640_15Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_360x640_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_424x240_15Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_480x270_15Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_480x848_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_540x960_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_640x360_15Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_640x360_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_720x1280_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_848x480_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_960x540_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_1080x1920_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_1280x720_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_180x320_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_1920x1080_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_240x424_15Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_270x480_15Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_320x180_15Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_360x640_15Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_360x640_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_424x240_15Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_480x270_15Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_480x848_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_540x960_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_640x360_15Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_640x360_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_720x1280_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_848x480_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_960x540_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_1080x1920_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_1280x720_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_180x320_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_1920x1080_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_240x424_15Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_270x480_15Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_320x180_15Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_360x640_15Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_360x640_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_424x240_15Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_480x270_15Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_480x848_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_540x960_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_640x360_15Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_640x360_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_720x1280_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_848x480_30Fps" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_960x540_30Fps" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.VideoFormat.Equals(Microsoft.Skype.Bots.Media.VideoFormat)" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.VideoFormat.Equals(System.Object)" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.VideoFormat.GetHashCode" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.VideoFormat.op_Equality(Microsoft.Skype.Bots.Media.VideoFormat,Microsoft.Skype.Bots.Media.VideoFormat)" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.VideoFormat.op_Inequality(Microsoft.Skype.Bots.Media.VideoFormat,Microsoft.Skype.Bots.Media.VideoFormat)" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.VideoFormat.ToString" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoFormat.BitRate" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoFormat.FrameRate" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoFormat.Height" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoFormat.VideoColorFormat" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoFormat.Width" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.VideoKeyFrameNeededEventArgs" Id="T:Microsoft.Skype.Bots.Media.VideoKeyFrameNeededEventArgs">
+      <Member Id="M:Microsoft.Skype.Bots.Media.VideoKeyFrameNeededEventArgs.#ctor" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoKeyFrameNeededEventArgs.MediaType" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoKeyFrameNeededEventArgs.SocketId" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoKeyFrameNeededEventArgs.VideoFormats" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.VideoMediaBuffer" Id="T:Microsoft.Skype.Bots.Media.VideoMediaBuffer">
+      <Member Id="M:Microsoft.Skype.Bots.Media.VideoMediaBuffer.#ctor" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.VideoMediaBuffer.Dispose" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.VideoMediaBuffer.Dispose(System.Boolean)" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoMediaBuffer.Data" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoMediaBuffer.Length" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoMediaBuffer.MediaSourceId" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoMediaBuffer.OriginalVideoFormat" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoMediaBuffer.Stride" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoMediaBuffer.Timestamp" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoMediaBuffer.VideoFormat" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.VideoMediaReceivedEventArgs" Id="T:Microsoft.Skype.Bots.Media.VideoMediaReceivedEventArgs">
+      <Member Id="M:Microsoft.Skype.Bots.Media.VideoMediaReceivedEventArgs.#ctor" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoMediaReceivedEventArgs.Buffer" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoMediaReceivedEventArgs.MediaType" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoMediaReceivedEventArgs.SocketId" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs" Id="T:Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs">
+      <Member Id="M:Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs.#ctor" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs.MediaSendStatus" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs.PreferredEncodedVideoSourceFormats" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs.PreferredVideoSourceFormat" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs.SocketId" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.VideoSettings" Id="T:Microsoft.Skype.Bots.Media.VideoSettings">
+      <Member Id="M:Microsoft.Skype.Bots.Media.VideoSettings.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.VideoSinkEncodingFormat" Id="T:Microsoft.Skype.Bots.Media.VideoSinkEncodingFormat">
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoSinkEncodingFormat.H264" />
+      <Member Id="F:Microsoft.Skype.Bots.Media.VideoSinkEncodingFormat.Yuv" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.VideoSocket" Id="T:Microsoft.Skype.Bots.Media.VideoSocket">
+      <Member Id="E:Microsoft.Skype.Bots.Media.VideoSocket.VideoKeyFrameNeeded" />
+      <Member Id="E:Microsoft.Skype.Bots.Media.VideoSocket.VideoMediaReceived" />
+      <Member Id="E:Microsoft.Skype.Bots.Media.VideoSocket.VideoSendStatusChanged" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.VideoSocket.#ctor(Microsoft.Skype.Bots.Media.VideoSocketSettings)" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.VideoSocket.Dispose" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.VideoSocket.RequestKeyFrame" />
+      <Member Id="M:Microsoft.Skype.Bots.Media.VideoSocket.Send(Microsoft.Skype.Bots.Media.VideoMediaBuffer)" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoSocket.ReceiveColorFormat" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoSocket.SocketId" />
+    </Type>
+    <Type Name="Microsoft.Skype.Bots.Media.VideoSocketSettings" Id="T:Microsoft.Skype.Bots.Media.VideoSocketSettings">
+      <Member Id="M:Microsoft.Skype.Bots.Media.VideoSocketSettings.#ctor" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoSocketSettings.CallId" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoSocketSettings.MaxConcurrentSendStreams" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoSocketSettings.ReceiveColorFormat" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoSocketSettings.StreamDirections" />
+      <Member Id="P:Microsoft.Skype.Bots.Media.VideoSocketSettings.SupportedSendVideoFormats" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Skype.Internal.Bots.Media">
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.AriaLoggingConfiguration" Id="T:Microsoft.Skype.Internal.Bots.Media.AriaLoggingConfiguration">
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.AriaLoggingConfiguration.#ctor" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.AriaLoggingConfiguration.ToString" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.AriaLoggingConfiguration.AriaTenantToken" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.AriaLoggingConfiguration.AriaTraceEventName" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.AriaLoggingConfiguration.SplitAriaTracesByLevel" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer" Id="T:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer">
+      <Member Id="E:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.FileSourcePlayerEndOfFile" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.#ctor(Microsoft.Skype.Bots.Media.AudioSocket)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.Dispose" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.Dispose(System.Boolean)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.LoadFileSource(Microsoft.Skype.Internal.Bots.Media.IFileSource)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.Play(Microsoft.Skype.Internal.Bots.Media.PlaySettings)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.Stop" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.TotalBytesProvided" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.TotalSamplesProvided" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings" Id="T:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings">
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.#ctor" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.AvgBytesPerSeconds" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.BlockAlign" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.CompressionCode" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.NumberOfChannels" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.SampleRate" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.SignificantBitPerSample" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed" Id="T:Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed">
+      <Member Id="F:Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed.Half" />
+      <Member Id="F:Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed.Normal" />
+      <Member Id="F:Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed.OneAndAHalf" />
+      <Member Id="F:Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed.OneAndAQuarter" />
+      <Member Id="F:Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed.OneAndThreeQuarters" />
+      <Member Id="F:Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed.ThreeQuarters" />
+      <Member Id="F:Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed.TwoTimes" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.ClsLogger" Id="T:Microsoft.Skype.Internal.Bots.Media.ClsLogger">
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.ClsLogger.Initialize(Microsoft.Skype.Internal.Bots.Media.ILogger,System.Nullable{Microsoft.Skype.Internal.Bots.Media.LogLevel})" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.ClsLogger.SetEtlFormatOption(Microsoft.Skype.Internal.Bots.Media.FormatOption)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.ClsLogger.SetLoggingInfo(System.Collections.Generic.IList{System.String})" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.ClsLogger.StopClsLogger" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.ClsLoggingConfiguration" Id="T:Microsoft.Skype.Internal.Bots.Media.ClsLoggingConfiguration">
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.ClsLoggingConfiguration.#ctor" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.ClsLoggingConfiguration.ToString" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.ClsLoggingConfiguration.ClsLoggerFormatOptions" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.ClsLoggingConfiguration.ClsLoggerScenarioStrings" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs" Id="T:Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs">
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs.#ctor" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs.EnableDataConfigurationChanged" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs.LoggingConfigurationChanged" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs.MinimumVersionChanged" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs.PerfCounterConfigurationChanged" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs.TelemetryConfigurationChanged" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs.WhitelistChanged" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.FileSource" Id="T:Microsoft.Skype.Internal.Bots.Media.FileSource">
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.FileSource.#ctor(Microsoft.Skype.Internal.Bots.Media.FileSourceSettings)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.FileSource.#ctor(Microsoft.Skype.Internal.Bots.Media.FileSourceSettings,System.IO.Stream)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.FileSource.ReadNextBlock(System.Byte[],System.Int32,System.Int32)" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.FileSource.FileSourceFormat" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.FileSource.FileSourceSettings" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.FileSource.RawFileSizeInBytes" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.FileSourceExtension" Id="T:Microsoft.Skype.Internal.Bots.Media.FileSourceExtension">
+      <Member Id="F:Microsoft.Skype.Internal.Bots.Media.FileSourceExtension.Wav" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.FileSourceFormat" Id="T:Microsoft.Skype.Internal.Bots.Media.FileSourceFormat">
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.FileSourceFormat.#ctor" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.FileSourceFormat.AudioFormatSettings" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.FileSourceFormat.VideoFormatSettings" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.FileSourcePlayerEndOfFileEventArgs" Id="T:Microsoft.Skype.Internal.Bots.Media.FileSourcePlayerEndOfFileEventArgs">
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.FileSourcePlayerEndOfFileEventArgs.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.FileSourceSettings" Id="T:Microsoft.Skype.Internal.Bots.Media.FileSourceSettings">
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.FileSourceSettings.#ctor" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.FileSourceSettings.FileName" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.FileSourceSettings.FileSourceExtension" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.FileSourceSettings.FileSourceType" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.FileSourceType" Id="T:Microsoft.Skype.Internal.Bots.Media.FileSourceType">
+      <Member Id="F:Microsoft.Skype.Internal.Bots.Media.FileSourceType.Audio" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.FormatOption" Id="T:Microsoft.Skype.Internal.Bots.Media.FormatOption">
+      <Member Id="F:Microsoft.Skype.Internal.Bots.Media.FormatOption.Plaintext" />
+      <Member Id="F:Microsoft.Skype.Internal.Bots.Media.FormatOption.SimpleScrub" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.Helper" Id="T:Microsoft.Skype.Internal.Bots.Media.Helper">
+      <Member Id="F:Microsoft.Skype.Internal.Bots.Media.Helper.MediaApiComponentName" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.Helper.CreateConfigurationManager(System.Action{Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs})" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.Helper.GetBitsPerPixel(Microsoft.Skype.Bots.Media.VideoColorFormat)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.Helper.GetConfigurationManager" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.Helper.GetStride(Microsoft.Skype.Bots.Media.VideoFormat)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.Helper.SetConfigurationManager(Microsoft.Skype.Internal.Bots.Media.IConfigurationManager)" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.IConfigurationManager" Id="T:Microsoft.Skype.Internal.Bots.Media.IConfigurationManager">
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.IConfigurationManager.GetMediaControllerWhitelist" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.IConfigurationManager.Initialize(System.Boolean,System.String)" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.IConfigurationManager.ConfigurationChangedHandler" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.IConfigurationManager.EnableData" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.IConfigurationManager.IsInitialized" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.IConfigurationManager.LoggingConfiguration" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.IConfigurationManager.MinimumSupportedVersion" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.IConfigurationManager.PerfCounterConfiguration" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.IConfigurationManager.TelemetryConfiguration" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.IFileSource" Id="T:Microsoft.Skype.Internal.Bots.Media.IFileSource">
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.IFileSource.ReadNextBlock(System.Byte[],System.Int32,System.Int32)" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.IFileSource.FileSourceFormat" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.IFileSource.FileSourceSettings" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.IFileSource.RawFileSizeInBytes" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.IFileSourcePlayer" Id="T:Microsoft.Skype.Internal.Bots.Media.IFileSourcePlayer">
+      <Member Id="E:Microsoft.Skype.Internal.Bots.Media.IFileSourcePlayer.FileSourcePlayerEndOfFile" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.IFileSourcePlayer.LoadFileSource(Microsoft.Skype.Internal.Bots.Media.IFileSource)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.IFileSourcePlayer.Play(Microsoft.Skype.Internal.Bots.Media.PlaySettings)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.IFileSourcePlayer.Stop" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.ILogger" Id="T:Microsoft.Skype.Internal.Bots.Media.ILogger">
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.ILogger.AddListener(System.Diagnostics.TraceListener)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.ILogger.AddListeners(System.Collections.Generic.IList{System.Diagnostics.TraceListener})" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.ILogger.Flush" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.ILogger.RemoveListener(System.Diagnostics.TraceListener)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.ILogger.SetLoggingLevel(System.String,Microsoft.Skype.Internal.Bots.Media.LogLevel)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.ILogger.Write(System.String,Microsoft.Skype.Internal.Bots.Media.LogLevel,System.String,System.Object[])" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.ILogger.Write(System.String,System.String,Microsoft.Skype.Internal.Bots.Media.LogLevel,System.String,System.Object[])" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform" Id="T:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform">
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.#ctor" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.CreateAudioSocket(Microsoft.Skype.Bots.Media.AudioSocketSettings,System.Boolean)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.CreateFileSource(Microsoft.Skype.Internal.Bots.Media.FileSourceSettings,System.Boolean,System.IO.Stream)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,Microsoft.Skype.Bots.Media.IDataSocket)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,Microsoft.Skype.Bots.Media.IVideoSocket)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.IVideoSocket})" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.IVideoSocket},Microsoft.Skype.Bots.Media.IVideoSocket)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.IVideoSocket},Microsoft.Skype.Bots.Media.IVideoSocket,Microsoft.Skype.Bots.Media.IDataSocket)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IVideoSocket)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.Dispose" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.Dispose(System.Boolean)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.Initialize(Microsoft.Skype.Bots.Media.MediaPlatformSettings)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.Initialize(Microsoft.Skype.Bots.Media.MediaPlatformSettings,Microsoft.Skype.Internal.Bots.Media.IConfigurationManager,Microsoft.Skype.Internal.Bots.Media.ILogger)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.InternalMediaPlatform.Initialize(Microsoft.Skype.Bots.Media.MediaPlatformSettings,Microsoft.Skype.Internal.Bots.Media.IConfigurationManager,Microsoft.Skype.Internal.Bots.Media.ILogger,System.Boolean)" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.ITelemetryWriter" Id="T:Microsoft.Skype.Internal.Bots.Media.ITelemetryWriter">
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.ITelemetryWriter.Initialize(System.String,Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration,System.Boolean,System.String,System.String)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.ITelemetryWriter.SetTelemetryConfiguration(Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.ITelemetryWriter.TryLogFilePlayerMetrics(System.Collections.Generic.IList{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Boolean)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.ITelemetryWriter.TryLogSocketMetrics(System.Collections.Generic.IList{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Boolean)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.ITelemetryWriter.TryLogWavValidationFailure(System.Collections.Generic.IList{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Boolean)" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.LoggingConfiguration" Id="T:Microsoft.Skype.Internal.Bots.Media.LoggingConfiguration">
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.LoggingConfiguration.#ctor" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.LoggingConfiguration.ToString" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.LoggingConfiguration.AriaLoggingConfiguration" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.LoggingConfiguration.ClsLoggingConfiguration" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.LoggingConfiguration.MediaAgentsPlatformLogLevel" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.LoggingConfiguration.MediaApiLogLevel" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.LogLevel" Id="T:Microsoft.Skype.Internal.Bots.Media.LogLevel">
+      <Member Id="F:Microsoft.Skype.Internal.Bots.Media.LogLevel.Error" />
+      <Member Id="F:Microsoft.Skype.Internal.Bots.Media.LogLevel.Information" />
+      <Member Id="F:Microsoft.Skype.Internal.Bots.Media.LogLevel.Verbose" />
+      <Member Id="F:Microsoft.Skype.Internal.Bots.Media.LogLevel.Warning" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.PlayerStatus" Id="T:Microsoft.Skype.Internal.Bots.Media.PlayerStatus">
+      <Member Id="F:Microsoft.Skype.Internal.Bots.Media.PlayerStatus.Playing" />
+      <Member Id="F:Microsoft.Skype.Internal.Bots.Media.PlayerStatus.Stopped" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.PlaySettings" Id="T:Microsoft.Skype.Internal.Bots.Media.PlaySettings">
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.PlaySettings.#ctor" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.PlaySettings.ToString" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.PlaySettings.AudioPlaybackSpeed" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.PlaySettings.Loop" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration" Id="T:Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration">
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration.#ctor" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration.IsValidConfiguration(Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration.ToString" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration.AriaTenantToken" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration.MonitorSocketMetrics" />
+      <Member Id="P:Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration.MonitorUnhandledExceptions" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.VideoFormatSettings" Id="T:Microsoft.Skype.Internal.Bots.Media.VideoFormatSettings">
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.VideoFormatSettings.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Skype.Internal.Bots.Media.VideoFormatWithoutBitRateComparer" Id="T:Microsoft.Skype.Internal.Bots.Media.VideoFormatWithoutBitRateComparer">
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.VideoFormatWithoutBitRateComparer.#ctor" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.VideoFormatWithoutBitRateComparer.Equals(Microsoft.Skype.Bots.Media.VideoFormat,Microsoft.Skype.Bots.Media.VideoFormat)" />
+      <Member Id="M:Microsoft.Skype.Internal.Bots.Media.VideoFormatWithoutBitRateComparer.GetHashCode(Microsoft.Skype.Bots.Media.VideoFormat)" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Skype.Internal.Media.Services.Common">
+    <Type Name="Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier" Id="T:Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier">
+      <Member Id="M:Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier.ThrowIfIntOutOfRange(System.Int64,System.Int64,System.Int64,System.String)" />
+      <Member Id="M:Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier.ThrowOnNullArgument(System.Object,System.String)" />
+      <Member Id="M:Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier.ThrowOnNullMemberInCollection(System.Collections.Generic.IEnumerable{System.Object},System.String)" />
+      <Member Id="M:Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier.ThrowOnNullMemberInCollection``1(System.Collections.Generic.IEnumerable{``0},System.String)" />
+      <Member Id="M:Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier.ThrowOnNullOrEmptyCollection``1(System.Collections.Generic.IEnumerable{``0},System.String)" />
+      <Member Id="M:Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier.ThrowOnNullOrEmptyString(System.String,System.String)" />
+    </Type>
+  </Namespace>
+</Framework>

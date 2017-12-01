@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public sealed class TooManyAttemptsException : Microsoft.Bot.Builder.Dialogs.PromptException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit TooManyAttemptsException extends Microsoft.Bot.Builder.Dialogs.PromptException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.TooManyAttemptsException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TooManyAttemptsException&#xA;Inherits PromptException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.PromptException</BaseTypeName>
@@ -21,10 +22,11 @@
       <MemberSignature Language="C#" Value="public TooManyAttemptsException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.TooManyAttemptsException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />

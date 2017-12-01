@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public static class Types" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Types extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Base.Types" />
+  <TypeSignature Language="VB.NET" Value="Public Class Types" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -19,10 +20,11 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.MethodInfo MethodOf (System.Linq.Expressions.Expression&lt;Action&gt; action);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MethodInfo MethodOf(class System.Linq.Expressions.Expression`1&lt;class System.Action&gt; action) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Base.Types.MethodOf(System.Linq.Expressions.Expression{System.Action})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MethodOf (action As Expression(Of Action)) As MethodInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodInfo</ReturnType>

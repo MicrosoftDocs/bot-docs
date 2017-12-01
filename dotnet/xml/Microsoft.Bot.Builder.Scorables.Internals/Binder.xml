@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public sealed class Binder : Microsoft.Bot.Builder.Scorables.Internals.IBinder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Binder extends System.Object implements class Microsoft.Bot.Builder.Scorables.Internals.IBinder" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.Binder" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Binder&#xA;Implements IBinder" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,10 +24,11 @@
       <MemberSignature Language="C#" Value="public static readonly Microsoft.Bot.Builder.Scorables.Internals.IBinder Instance;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Bot.Builder.Scorables.Internals.IBinder Instance" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.Binder.Instance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Instance As IBinder " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Scorables.Internals.IBinder</ReturnType>
@@ -40,10 +42,11 @@
       <MemberSignature Language="C#" Value="bool IBinder.TryBind (Delegate lambda, Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, out Microsoft.Bot.Builder.Scorables.Internals.IBinding binding);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind(class System.Delegate lambda, class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, [out] class Microsoft.Bot.Builder.Scorables.Internals.IBinding&amp; binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binder.Microsoft#Bot#Builder#Scorables#Internals#IBinder#TryBind(System.Delegate,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding@)" />
+      <MemberSignature Language="VB.NET" Value="Function TryBind (lambda As Delegate, resolver As IResolver, ByRef binding As IBinding) As Boolean Implements IBinder.TryBind" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -66,10 +69,11 @@
       <MemberSignature Language="C#" Value="bool IBinder.TryBind (System.Reflection.MethodBase method, Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, out Microsoft.Bot.Builder.Scorables.Internals.IBinding binding);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind(class System.Reflection.MethodBase method, class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, [out] class Microsoft.Bot.Builder.Scorables.Internals.IBinding&amp; binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binder.Microsoft#Bot#Builder#Scorables#Internals#IBinder#TryBind(System.Reflection.MethodBase,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding@)" />
+      <MemberSignature Language="VB.NET" Value="Function TryBind (method As MethodBase, resolver As IResolver, ByRef binding As IBinding) As Boolean Implements IBinder.TryBind" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -92,10 +96,11 @@
       <MemberSignature Language="C#" Value="bool IBinder.TryBind&lt;R&gt; (Delegate lambda, Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, out Microsoft.Bot.Builder.Scorables.Internals.IBinding&lt;R&gt; binding);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind&lt;R&gt;(class System.Delegate lambda, class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, [out] class Microsoft.Bot.Builder.Scorables.Internals.IBinding`1&lt;!!R&gt;&amp; binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binder.Microsoft#Bot#Builder#Scorables#Internals#IBinder#TryBind``1(System.Delegate,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding{``0}@)" />
+      <MemberSignature Language="VB.NET" Value="Function TryBind(Of R) (lambda As Delegate, resolver As IResolver, ByRef binding As IBinding(Of R)) As Boolean Implements IBinder.TryBind" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -122,10 +127,11 @@
       <MemberSignature Language="C#" Value="bool IBinder.TryBind&lt;R&gt; (System.Reflection.MethodInfo method, Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, out Microsoft.Bot.Builder.Scorables.Internals.IBinding&lt;R&gt; binding);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind&lt;R&gt;(class System.Reflection.MethodInfo method, class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, [out] class Microsoft.Bot.Builder.Scorables.Internals.IBinding`1&lt;!!R&gt;&amp; binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binder.Microsoft#Bot#Builder#Scorables#Internals#IBinder#TryBind``1(System.Reflection.MethodInfo,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding{``0}@)" />
+      <MemberSignature Language="VB.NET" Value="Function TryBind(Of R) (method As MethodInfo, resolver As IResolver, ByRef binding As IBinding(Of R)) As Boolean Implements IBinder.TryBind" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -152,10 +158,11 @@
       <MemberSignature Language="C#" Value="public static bool TryBind (System.Reflection.MethodBase method, object target, Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, out Microsoft.Bot.Builder.Scorables.Internals.IBinding binding);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryBind(class System.Reflection.MethodBase method, object target, class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, [out] class Microsoft.Bot.Builder.Scorables.Internals.IBinding&amp; binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binder.TryBind(System.Reflection.MethodBase,System.Object,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryBind (method As MethodBase, target As Object, resolver As IResolver, ByRef binding As IBinding) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -180,10 +187,11 @@
       <MemberSignature Language="C#" Value="public static bool TryBind&lt;R&gt; (System.Reflection.MethodInfo method, object target, Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, out Microsoft.Bot.Builder.Scorables.Internals.IBinding&lt;R&gt; binding);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryBind&lt;R&gt;(class System.Reflection.MethodInfo method, object target, class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, [out] class Microsoft.Bot.Builder.Scorables.Internals.IBinding`1&lt;!!R&gt;&amp; binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binder.TryBind``1(System.Reflection.MethodInfo,System.Object,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding{``0}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryBind(Of R) (method As MethodInfo, target As Object, resolver As IResolver, ByRef binding As IBinding(Of R)) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -212,10 +220,11 @@
       <MemberSignature Language="C#" Value="public static bool TryResolveArgument (Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, System.Reflection.ParameterInfo parameter, out object argument);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryResolveArgument(class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, class System.Reflection.ParameterInfo parameter, [out] object&amp; argument) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binder.TryResolveArgument(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Reflection.ParameterInfo,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryResolveArgument (resolver As IResolver, parameter As ParameterInfo, ByRef argument As Object) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -238,10 +247,11 @@
       <MemberSignature Language="C#" Value="public static bool TryResolveArguments (Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, System.Reflection.MethodBase method, out object[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryResolveArguments(class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, class System.Reflection.MethodBase method, [out] object[]&amp; arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binder.TryResolveArguments(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Reflection.MethodBase,System.Object[]@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryResolveArguments (resolver As IResolver, method As MethodBase, ByRef arguments As Object()) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -264,10 +274,11 @@
       <MemberSignature Language="C#" Value="public static bool TryResolveInstance (Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, System.Reflection.MethodBase method, object target, out object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryResolveInstance(class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, class System.Reflection.MethodBase method, object target, [out] object&amp; instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binder.TryResolveInstance(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Reflection.MethodBase,System.Object,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryResolveInstance (resolver As IResolver, method As MethodBase, target As Object, ByRef instance As Object) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -292,10 +303,11 @@
       <MemberSignature Language="C#" Value="public static bool TryResolveReturnType&lt;R&gt; (System.Reflection.MethodInfo method);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryResolveReturnType&lt;R&gt;(class System.Reflection.MethodInfo method) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binder.TryResolveReturnType``1(System.Reflection.MethodInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryResolveReturnType(Of R) (method As MethodInfo) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

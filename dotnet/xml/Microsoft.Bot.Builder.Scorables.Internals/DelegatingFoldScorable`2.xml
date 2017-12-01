@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public class DelegatingFoldScorable&lt;Item,Score&gt; : Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DelegatingFoldScorable`2&lt;Item, Score&gt; extends Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2&lt;!Item, !Score&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.DelegatingFoldScorable`2" />
+  <TypeSignature Language="VB.NET" Value="Public Class DelegatingFoldScorable(Of Item, Score)&#xA;Inherits FoldScorable(Of Item, Score)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="Item" />
@@ -31,10 +32,11 @@
       <MemberSignature Language="C#" Value="public DelegatingFoldScorable (Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;.OnStageDelegate onStage, System.Collections.Generic.IComparer&lt;Score&gt; comparer, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;&gt; scorables);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/OnStageDelegate&lt;!Item, !Score&gt; onStage, class System.Collections.Generic.IComparer`1&lt;!Score&gt; comparer, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !Score&gt;&gt; scorables) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.DelegatingFoldScorable`2.#ctor(Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.OnStageDelegate{`0,`1},System.Collections.Generic.IComparer{`1},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{`0,`1}})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (onStage As FoldScorable(Of Item, Score).OnStageDelegate, comparer As IComparer(Of Score), scorables As IEnumerable(Of IScorable(Of Item, Score)))" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="onStage" Type="Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;+OnStageDelegate" />
@@ -53,10 +55,11 @@
       <MemberSignature Language="C#" Value="protected override Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;.OnStageDelegate OnStage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/OnStageDelegate&lt;!Item, !Score&gt; OnStage" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Scorables.Internals.DelegatingFoldScorable`2.OnStage" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property OnStage As FoldScorable(Of Item, Score).OnStageDelegate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;+OnStageDelegate</ReturnType>
@@ -74,7 +77,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

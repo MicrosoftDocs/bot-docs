@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public class EntityRecommendation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit EntityRecommendation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation" />
+  <TypeSignature Language="VB.NET" Value="Public Class EntityRecommendation" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,10 +23,11 @@
       <MemberSignature Language="C#" Value="public EntityRecommendation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -39,10 +41,11 @@
       <MemberSignature Language="C#" Value="public EntityRecommendation (string type, string role = null, string entity = null, Nullable&lt;int&gt; startIndex = null, Nullable&lt;int&gt; endIndex = null, Nullable&lt;double&gt; score = null, System.Collections.Generic.IDictionary&lt;string,object&gt; resolution = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string role, string entity, valuetype System.Nullable`1&lt;int32&gt; startIndex, valuetype System.Nullable`1&lt;int32&gt; endIndex, valuetype System.Nullable`1&lt;float64&gt; score, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; resolution) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.#ctor(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Double},System.Collections.Generic.IDictionary{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, Optional role As String = null, Optional entity As String = null, Optional startIndex As Nullable(Of Integer) = null, Optional endIndex As Nullable(Of Integer) = null, Optional score As Nullable(Of Double) = null, Optional resolution As IDictionary(Of String, Object) = null)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.String" />
@@ -71,10 +74,11 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; EndIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; EndIndex" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.EndIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndIndex As Nullable(Of Integer)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -96,10 +100,11 @@
       <MemberSignature Language="C#" Value="public string Entity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Entity" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Entity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Entity As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -121,10 +126,11 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,object&gt; Resolution { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; Resolution" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Resolution" />
+      <MemberSignature Language="VB.NET" Value="Public Property Resolution As IDictionary(Of String, Object)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -149,10 +155,11 @@
       <MemberSignature Language="C#" Value="public string Role { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Role" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Role" />
+      <MemberSignature Language="VB.NET" Value="Public Property Role As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -174,10 +181,11 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Score { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Score" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Score" />
+      <MemberSignature Language="VB.NET" Value="Public Property Score As Nullable(Of Double)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -199,10 +207,11 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; StartIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; StartIndex" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.StartIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartIndex As Nullable(Of Integer)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -224,10 +233,11 @@
       <MemberSignature Language="C#" Value="public string Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Type" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -249,10 +259,11 @@
       <MemberSignature Language="C#" Value="public virtual void Validate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

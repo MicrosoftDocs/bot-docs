@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public static class DialogResponse.DialogStatus" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit DialogResponse/DialogStatus extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.Models.DialogResponse.DialogStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Class DialogResponse.DialogStatus" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,10 +21,11 @@
       <MemberSignature Language="C#" Value="public const string Finished;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Finished" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.Models.DialogResponse.DialogStatus.Finished" />
+      <MemberSignature Language="VB.NET" Value="Public Const Finished As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -39,10 +41,11 @@
       <MemberSignature Language="C#" Value="public const string Question;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Question" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.Models.DialogResponse.DialogStatus.Question" />
+      <MemberSignature Language="VB.NET" Value="Public Const Question As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

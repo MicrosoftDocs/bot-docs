@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public class Resources" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Resources extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Resource.Resources" />
+  <TypeSignature Language="VB.NET" Value="Public Class Resources" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -12,7 +13,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.CodeDom.Compiler.GeneratedCode("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")</AttributeName>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Diagnostics.DebuggerNonUserCode</AttributeName>
@@ -29,10 +30,11 @@
       <MemberSignature Language="C#" Value="public static string BooleanChoices { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string BooleanChoices" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.BooleanChoices" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BooleanChoices As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -49,10 +51,11 @@
       <MemberSignature Language="C#" Value="public static string CommandBack { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string CommandBack" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandBack" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandBack As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -69,10 +72,11 @@
       <MemberSignature Language="C#" Value="public static string CommandBackHelp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string CommandBackHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandBackHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandBackHelp As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -89,10 +93,11 @@
       <MemberSignature Language="C#" Value="public static string CommandBackTerms { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string CommandBackTerms" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandBackTerms" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandBackTerms As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -109,10 +114,11 @@
       <MemberSignature Language="C#" Value="public static string CommandHelp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string CommandHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandHelp As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -129,10 +135,11 @@
       <MemberSignature Language="C#" Value="public static string CommandHelpHelp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string CommandHelpHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandHelpHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandHelpHelp As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -149,10 +156,11 @@
       <MemberSignature Language="C#" Value="public static string CommandHelpTerms { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string CommandHelpTerms" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandHelpTerms" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandHelpTerms As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -169,10 +177,11 @@
       <MemberSignature Language="C#" Value="public static string CommandQuit { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string CommandQuit" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandQuit" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandQuit As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -189,10 +198,11 @@
       <MemberSignature Language="C#" Value="public static string CommandQuitHelp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string CommandQuitHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandQuitHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandQuitHelp As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -209,10 +219,11 @@
       <MemberSignature Language="C#" Value="public static string CommandQuitTerms { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string CommandQuitTerms" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandQuitTerms" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandQuitTerms As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -229,10 +240,11 @@
       <MemberSignature Language="C#" Value="public static string CommandReset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string CommandReset" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandReset" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandReset As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -249,10 +261,11 @@
       <MemberSignature Language="C#" Value="public static string CommandResetHelp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string CommandResetHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandResetHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandResetHelp As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -269,10 +282,11 @@
       <MemberSignature Language="C#" Value="public static string CommandResetTerms { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string CommandResetTerms" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandResetTerms" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandResetTerms As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -289,10 +303,11 @@
       <MemberSignature Language="C#" Value="public static string CommandStatus { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string CommandStatus" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandStatus" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandStatus As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -309,10 +324,11 @@
       <MemberSignature Language="C#" Value="public static string CommandStatusHelp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string CommandStatusHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandStatusHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandStatusHelp As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -329,10 +345,11 @@
       <MemberSignature Language="C#" Value="public static string CommandStatusTerms { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string CommandStatusTerms" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandStatusTerms" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandStatusTerms As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -349,10 +366,11 @@
       <MemberSignature Language="C#" Value="public static string Confirmation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string Confirmation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.Confirmation" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Confirmation As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -369,10 +387,11 @@
       <MemberSignature Language="C#" Value="public static string ConfirmChoiceFormat { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string ConfirmChoiceFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.ConfirmChoiceFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ConfirmChoiceFormat As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -389,10 +408,11 @@
       <MemberSignature Language="C#" Value="public static System.Globalization.CultureInfo Culture { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Globalization.CultureInfo Culture" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.Culture" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property Culture As CultureInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -415,10 +435,11 @@
       <MemberSignature Language="C#" Value="public static string DefaultChoiceFormat { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string DefaultChoiceFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.DefaultChoiceFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultChoiceFormat As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -435,10 +456,11 @@
       <MemberSignature Language="C#" Value="public static string DefaultChoiceLastSeparator { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string DefaultChoiceLastSeparator" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.DefaultChoiceLastSeparator" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultChoiceLastSeparator As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -455,10 +477,11 @@
       <MemberSignature Language="C#" Value="public static string DefaultChoiceSeparator { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string DefaultChoiceSeparator" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.DefaultChoiceSeparator" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultChoiceSeparator As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -475,10 +498,11 @@
       <MemberSignature Language="C#" Value="public static string DefaultLastSeparator { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string DefaultLastSeparator" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.DefaultLastSeparator" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultLastSeparator As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -495,10 +519,11 @@
       <MemberSignature Language="C#" Value="public static string DefaultSeparator { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string DefaultSeparator" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.DefaultSeparator" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultSeparator As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -515,10 +540,11 @@
       <MemberSignature Language="C#" Value="public static string LanguageArticles { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string LanguageArticles" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.LanguageArticles" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LanguageArticles As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -535,10 +561,11 @@
       <MemberSignature Language="C#" Value="public static string LanguageStopWords { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string LanguageStopWords" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.LanguageStopWords" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LanguageStopWords As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -555,10 +582,11 @@
       <MemberSignature Language="C#" Value="public static string MatchCurrentChoice { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string MatchCurrentChoice" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.MatchCurrentChoice" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MatchCurrentChoice As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -575,10 +603,11 @@
       <MemberSignature Language="C#" Value="public static string MatchNo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string MatchNo" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.MatchNo" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MatchNo As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -595,10 +624,11 @@
       <MemberSignature Language="C#" Value="public static string MatchNoPreference { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string MatchNoPreference" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.MatchNoPreference" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MatchNoPreference As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -615,10 +645,11 @@
       <MemberSignature Language="C#" Value="public static string MatchYes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string MatchYes" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.MatchYes" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MatchYes As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -635,10 +666,11 @@
       <MemberSignature Language="C#" Value="public static string Navigation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string Navigation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.Navigation" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Navigation As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -655,10 +687,11 @@
       <MemberSignature Language="C#" Value="public static string NumberExpression { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string NumberExpression" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.NumberExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NumberExpression As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -675,10 +708,11 @@
       <MemberSignature Language="C#" Value="public static string NumberOrdinals { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string NumberOrdinals" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.NumberOrdinals" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NumberOrdinals As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -695,10 +729,11 @@
       <MemberSignature Language="C#" Value="public static string NumberReverseOrdinals { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string NumberReverseOrdinals" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.NumberReverseOrdinals" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NumberReverseOrdinals As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -715,10 +750,11 @@
       <MemberSignature Language="C#" Value="public static string NumberTerms { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string NumberTerms" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.NumberTerms" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NumberTerms As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -735,10 +771,11 @@
       <MemberSignature Language="C#" Value="public static string PromptRetry { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string PromptRetry" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.PromptRetry" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PromptRetry As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -755,10 +792,11 @@
       <MemberSignature Language="C#" Value="public static System.Resources.ResourceManager ResourceManager { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Resources.ResourceManager ResourceManager" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.ResourceManager" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ResourceManager As ResourceManager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -780,10 +818,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateBool { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateBool" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateBool" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateBool As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -800,10 +839,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateBoolHelp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateBoolHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateBoolHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateBoolHelp As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -820,10 +860,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateClarify { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateClarify" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateClarify" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateClarify As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -840,10 +881,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateConfirmation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateConfirmation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateConfirmation" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateConfirmation As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -861,10 +903,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateCurrentChoice { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateCurrentChoice" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateCurrentChoice" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateCurrentChoice As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -881,10 +924,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateDateTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateDateTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateDateTime" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateDateTime As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -901,10 +945,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateDateTimeHelp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateDateTimeHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateDateTimeHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateDateTimeHelp As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -921,10 +966,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateDouble { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateDouble" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateDouble" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateDouble As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -941,10 +987,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateDoubleChoiceFormat { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateDoubleChoiceFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateDoubleChoiceFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateDoubleChoiceFormat As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -961,10 +1008,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateDoubleHelp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateDoubleHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateDoubleHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateDoubleHelp As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -981,10 +1029,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateEnumManyNumberHelp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateEnumManyNumberHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateEnumManyNumberHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateEnumManyNumberHelp As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1001,10 +1050,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateEnumManyWordHelp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateEnumManyWordHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateEnumManyWordHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateEnumManyWordHelp As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1021,10 +1071,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateEnumOneNumberHelp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateEnumOneNumberHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateEnumOneNumberHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateEnumOneNumberHelp As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1041,10 +1092,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateEnumOneWordHelp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateEnumOneWordHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateEnumOneWordHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateEnumOneWordHelp As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1061,10 +1113,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateEnumSelectMany { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateEnumSelectMany" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateEnumSelectMany" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateEnumSelectMany As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1081,10 +1134,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateEnumSelectOne { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateEnumSelectOne" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateEnumSelectOne" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateEnumSelectOne As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1101,10 +1155,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateFeedback { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateFeedback" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateFeedback" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateFeedback As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1121,10 +1176,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateHelp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateHelp As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1143,10 +1199,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateHelpClarify { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateHelpClarify" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateHelpClarify" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateHelpClarify As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1165,10 +1222,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateHelpConfirm { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateHelpConfirm" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateHelpConfirm" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateHelpConfirm As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1187,10 +1245,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateHelpNavigation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateHelpNavigation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateHelpNavigation" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateHelpNavigation As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1209,10 +1268,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateInteger { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateInteger" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateInteger" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateInteger As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1229,10 +1289,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateIntegerChoiceFormat { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateIntegerChoiceFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateIntegerChoiceFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateIntegerChoiceFormat As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1249,10 +1310,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateIntegerHelp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateIntegerHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateIntegerHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateIntegerHelp As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1269,10 +1331,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateNavigation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateNavigation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateNavigation" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateNavigation As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1289,10 +1352,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateNavigationCommandHelp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateNavigationCommandHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateNavigationCommandHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateNavigationCommandHelp As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1309,10 +1373,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateNavigationFormat { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateNavigationFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateNavigationFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateNavigationFormat As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1329,10 +1394,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateNavigationHelp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateNavigationHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateNavigationHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateNavigationHelp As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1349,10 +1415,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateNoPreference { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateNoPreference" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateNoPreference" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateNoPreference As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1369,10 +1436,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateNotUnderstood { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateNotUnderstood" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateNotUnderstood" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateNotUnderstood As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1389,10 +1457,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateStatusFormat { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateStatusFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateStatusFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateStatusFormat As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1409,10 +1478,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateString { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateString" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateString" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateString As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1429,10 +1499,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateStringChoiceFormat { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateStringChoiceFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateStringChoiceFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateStringChoiceFormat As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1449,10 +1520,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateStringHelp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateStringHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateStringHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateStringHelp As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1469,10 +1541,11 @@
       <MemberSignature Language="C#" Value="public static string TemplateUnspecified { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TemplateUnspecified" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateUnspecified" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateUnspecified As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1489,10 +1562,11 @@
       <MemberSignature Language="C#" Value="public static string TooManyAttempts { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TooManyAttempts" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TooManyAttempts" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TooManyAttempts As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1509,10 +1583,11 @@
       <MemberSignature Language="C#" Value="public static string UnhandledExceptionToUser { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string UnhandledExceptionToUser" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.UnhandledExceptionToUser" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UnhandledExceptionToUser As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1529,10 +1604,11 @@
       <MemberSignature Language="C#" Value="public static string UserProfileDeleted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string UserProfileDeleted" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.UserProfileDeleted" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UserProfileDeleted As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

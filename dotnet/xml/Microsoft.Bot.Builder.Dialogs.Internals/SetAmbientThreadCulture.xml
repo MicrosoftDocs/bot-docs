@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public sealed class SetAmbientThreadCulture : Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SetAmbientThreadCulture extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SetAmbientThreadCulture&#xA;Implements IPostToBot" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,10 +26,11 @@
       <MemberSignature Language="C#" Value="public SetAmbientThreadCulture (Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot inner, Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder localeFinder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot inner, class Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder localeFinder) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot,Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (inner As IPostToBot, localeFinder As ILocaleFinder)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="inner" Type="Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
@@ -45,10 +47,11 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IPostToBot.PostAsync (Microsoft.Bot.Connector.IActivity activity, System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot.PostAsync(class Microsoft.Bot.Connector.IActivity activity, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture.Microsoft#Bot#Builder#Dialogs#Internals#IPostToBot#PostAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Function PostAsync (activity As IActivity, token As CancellationToken) As Task Implements IPostToBot.PostAsync" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public sealed class InputHintQueue : Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InputHintQueue extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.InputHintQueue" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InputHintQueue&#xA;Implements IMessageQueue" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,10 +24,11 @@
       <MemberSignature Language="C#" Value="public InputHintQueue (Microsoft.Bot.Builder.Dialogs.IChannelCapability channelCapability, Func&lt;Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack&gt; makeStack);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.IChannelCapability channelCapability, class System.Func`1&lt;class Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack&gt; makeStack) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.InputHintQueue.#ctor(Microsoft.Bot.Builder.Dialogs.IChannelCapability,System.Func{Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (channelCapability As IChannelCapability, makeStack As Func(Of IDialogStack))" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="channelCapability" Type="Microsoft.Bot.Builder.Dialogs.IChannelCapability" />
@@ -43,10 +45,11 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IMessageQueue.DrainQueueAsync (Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser, System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue.DrainQueueAsync(class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.InputHintQueue.Microsoft#Bot#Builder#Dialogs#Internals#IMessageQueue#DrainQueueAsync(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Function DrainQueueAsync (botToUser As IBotToUser, token As CancellationToken) As Task Implements IMessageQueue.DrainQueueAsync" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -72,10 +75,11 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IMessageQueue.QueueMessageAsync (Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser, Microsoft.Bot.Connector.IMessageActivity message, System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue.QueueMessageAsync(class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser, class Microsoft.Bot.Connector.IMessageActivity message, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.InputHintQueue.Microsoft#Bot#Builder#Dialogs#Internals#IMessageQueue#QueueMessageAsync(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Function QueueMessageAsync (botToUser As IBotToUser, message As IMessageActivity, token As CancellationToken) As Task Implements IMessageQueue.QueueMessageAsync" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

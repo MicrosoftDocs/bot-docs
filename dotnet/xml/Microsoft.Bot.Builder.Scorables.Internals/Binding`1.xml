@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public sealed class Binding&lt;R&gt; : Microsoft.Bot.Builder.Scorables.Internals.Binding, IEquatable&lt;Microsoft.Bot.Builder.Scorables.Internals.Binding&gt;, Microsoft.Bot.Builder.Scorables.Internals.IBinding&lt;R&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Binding`1&lt;R&gt; extends Microsoft.Bot.Builder.Scorables.Internals.Binding implements class Microsoft.Bot.Builder.Scorables.Internals.IBinding, class Microsoft.Bot.Builder.Scorables.Internals.IBinding`1&lt;!R&gt;, class System.IEquatable`1&lt;class Microsoft.Bot.Builder.Scorables.Internals.Binding&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.Binding`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Binding(Of R)&#xA;Inherits Binding&#xA;Implements IBinding(Of R), IEquatable(Of Binding)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="R" />
@@ -30,10 +31,11 @@
       <MemberSignature Language="C#" Value="public Binding (System.Reflection.MethodBase method, object instance, object[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.MethodBase method, object instance, object[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binding`1.#ctor(System.Reflection.MethodBase,System.Object,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (method As MethodBase, instance As Object, arguments As Object())" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="method" Type="System.Reflection.MethodBase" />
@@ -52,10 +54,11 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task&lt;R&gt; IBinding&lt;R&gt;.InvokeAsync (System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!R&gt; Microsoft.Bot.Builder.Scorables.Internals.IBinding&lt;R&gt;.InvokeAsync(valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Binding`1.Microsoft#Bot#Builder#Scorables#Internals#IBinding&lt;R&gt;#InvokeAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Function InvokeAsync (token As CancellationToken) As Task(Of R) Implements IBinding(Of R).InvokeAsync" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

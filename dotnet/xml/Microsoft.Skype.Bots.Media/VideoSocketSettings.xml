@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public class VideoSocketSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VideoSocketSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.VideoSocketSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Class VideoSocketSettings" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+    <AssemblyVersion>1.7.0.26</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,10 +22,11 @@
       <MemberSignature Language="C#" Value="public VideoSocketSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.VideoSocketSettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -36,10 +38,11 @@
       <MemberSignature Language="C#" Value="public string CallId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CallId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoSocketSettings.CallId" />
+      <MemberSignature Language="VB.NET" Value="Public Property CallId As String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -52,14 +55,36 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="MaxConcurrentSendStreams">
+      <MemberSignature Language="C#" Value="public uint MaxConcurrentSendStreams { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 MaxConcurrentSendStreams" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoSocketSettings.MaxConcurrentSendStreams" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxConcurrentSendStreams As UInteger" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Maximum number of concurrent streams that can be sent
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ReceiveColorFormat">
       <MemberSignature Language="C#" Value="public Microsoft.Skype.Bots.Media.VideoColorFormat ReceiveColorFormat { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Skype.Bots.Media.VideoColorFormat ReceiveColorFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoSocketSettings.ReceiveColorFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReceiveColorFormat As VideoColorFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Skype.Bots.Media.VideoColorFormat</ReturnType>
@@ -77,10 +102,11 @@
       <MemberSignature Language="C#" Value="public Microsoft.Skype.Bots.Media.StreamDirection StreamDirections { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Skype.Bots.Media.StreamDirection StreamDirections" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoSocketSettings.StreamDirections" />
+      <MemberSignature Language="VB.NET" Value="Public Property StreamDirections As StreamDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Skype.Bots.Media.StreamDirection</ReturnType>
@@ -97,10 +123,11 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Skype.Bots.Media.VideoFormat&gt; SupportedSendVideoFormats { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Skype.Bots.Media.VideoFormat&gt; SupportedSendVideoFormats" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoSocketSettings.SupportedSendVideoFormats" />
+      <MemberSignature Language="VB.NET" Value="Public Property SupportedSendVideoFormats As IList(Of VideoFormat)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Skype.Bots.Media.VideoFormat&gt;</ReturnType>

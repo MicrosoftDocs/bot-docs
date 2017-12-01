@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public delegate Microsoft.Bot.Builder.FormFlow.DescribeAttribute RecognizeEnumeration&lt;T&gt;.DescriptionDelegate(object value) where T : class;" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed RecognizeEnumeration`1/DescriptionDelegate&lt;class T&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1.DescriptionDelegate" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function RecognizeEnumeration(Of T).DescriptionDelegate(value As Object) As DescribeAttribute " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">

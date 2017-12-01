@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public class LuisServiceResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LuisServiceResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.LuisServiceResult" />
+  <TypeSignature Language="VB.NET" Value="Public Class LuisServiceResult" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,10 +23,11 @@
       <MemberSignature Language="C#" Value="public LuisServiceResult (Microsoft.Bot.Builder.Luis.Models.LuisResult result, Microsoft.Bot.Builder.Luis.Models.IntentRecommendation intent, Microsoft.Bot.Builder.Luis.ILuisService service);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Luis.Models.LuisResult result, class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation intent, class Microsoft.Bot.Builder.Luis.ILuisService service) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisServiceResult.#ctor(Microsoft.Bot.Builder.Luis.Models.LuisResult,Microsoft.Bot.Builder.Luis.Models.IntentRecommendation,Microsoft.Bot.Builder.Luis.ILuisService)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (result As LuisResult, intent As IntentRecommendation, service As ILuisService)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="result" Type="Microsoft.Bot.Builder.Luis.Models.LuisResult" />
@@ -44,10 +46,11 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Luis.Models.IntentRecommendation BestIntent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation BestIntent" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.LuisServiceResult.BestIntent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BestIntent As IntentRecommendation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.Models.IntentRecommendation</ReturnType>
@@ -62,10 +65,11 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Luis.ILuisService LuisService { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Luis.ILuisService LuisService" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.LuisServiceResult.LuisService" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LuisService As ILuisService" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.ILuisService</ReturnType>
@@ -80,10 +84,11 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Luis.Models.LuisResult Result { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Luis.Models.LuisResult Result" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.LuisServiceResult.Result" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As LuisResult" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.Models.LuisResult</ReturnType>

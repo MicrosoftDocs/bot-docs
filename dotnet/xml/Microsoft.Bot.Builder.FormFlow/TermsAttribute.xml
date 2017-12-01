@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public class TermsAttribute : Microsoft.Bot.Builder.FormFlow.FormFlowAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TermsAttribute extends Microsoft.Bot.Builder.FormFlow.FormFlowAttribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.TermsAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class TermsAttribute&#xA;Inherits FormFlowAttribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.FormFlow.FormFlowAttribute</BaseTypeName>
@@ -32,10 +33,11 @@
       <MemberSignature Language="C#" Value="public TermsAttribute (params string[] alternatives);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] alternatives) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.TermsAttribute.#ctor(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray alternatives As String())" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="alternatives" Type="System.String[]">
@@ -61,10 +63,11 @@
       <MemberSignature Language="C#" Value="public string[] Alternatives;" />
       <MemberSignature Language="ILAsm" Value=".field public string[] Alternatives" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TermsAttribute.Alternatives" />
+      <MemberSignature Language="VB.NET" Value="Public Alternatives As String() " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -80,10 +83,11 @@
       <MemberSignature Language="C#" Value="public int MaxPhrase { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxPhrase" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.TermsAttribute.MaxPhrase" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxPhrase As Integer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

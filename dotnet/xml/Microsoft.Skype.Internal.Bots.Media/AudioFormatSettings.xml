@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public class AudioFormatSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AudioFormatSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Class AudioFormatSettings" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+    <AssemblyVersion>1.7.0.26</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -19,10 +20,11 @@
       <MemberSignature Language="C#" Value="public AudioFormatSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -34,10 +36,11 @@
       <MemberSignature Language="C#" Value="public int AvgBytesPerSeconds { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 AvgBytesPerSeconds" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.AvgBytesPerSeconds" />
+      <MemberSignature Language="VB.NET" Value="Public Property AvgBytesPerSeconds As Integer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -52,10 +55,11 @@
       <MemberSignature Language="C#" Value="public short BlockAlign { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int16 BlockAlign" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.BlockAlign" />
+      <MemberSignature Language="VB.NET" Value="Public Property BlockAlign As Short" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int16</ReturnType>
@@ -70,10 +74,11 @@
       <MemberSignature Language="C#" Value="public int CompressionCode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CompressionCode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.CompressionCode" />
+      <MemberSignature Language="VB.NET" Value="Public Property CompressionCode As Integer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -88,10 +93,11 @@
       <MemberSignature Language="C#" Value="public int NumberOfChannels { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfChannels" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.NumberOfChannels" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumberOfChannels As Integer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -106,10 +112,11 @@
       <MemberSignature Language="C#" Value="public int SampleRate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SampleRate" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.SampleRate" />
+      <MemberSignature Language="VB.NET" Value="Public Property SampleRate As Integer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -124,10 +131,11 @@
       <MemberSignature Language="C#" Value="public short SignificantBitPerSample { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int16 SignificantBitPerSample" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFormatSettings.SignificantBitPerSample" />
+      <MemberSignature Language="VB.NET" Value="Public Property SignificantBitPerSample As Short" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int16</ReturnType>

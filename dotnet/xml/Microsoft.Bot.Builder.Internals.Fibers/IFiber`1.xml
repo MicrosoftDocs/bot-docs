@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public interface IFiber&lt;C&gt; : Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFiber`1&lt;C&gt; implements class Microsoft.Bot.Builder.Internals.Fibers.IWaiter`1&lt;!C&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.IFiber`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IFiber(Of C)&#xA;Implements IWaiter(Of C)" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="C" />
@@ -24,10 +25,11 @@
       <MemberSignature Language="C#" Value="public void Done ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Done() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.IFiber`1.Done" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Done ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -42,10 +44,11 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Internals.Fibers.IFrame&lt;C&gt;&gt; Frames { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Bot.Builder.Internals.Fibers.IFrame`1&lt;!C&gt;&gt; Frames" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.IFiber`1.Frames" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Frames As IReadOnlyList(Of IFrame(Of C))" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Internals.Fibers.IFrame&lt;C&gt;&gt;</ReturnType>
@@ -60,10 +63,11 @@
       <MemberSignature Language="C#" Value="public void Push ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Push() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.IFiber`1.Push" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Push ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -78,10 +82,11 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory&lt;C&gt; Waits { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory`1&lt;!C&gt; Waits" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.IFiber`1.Waits" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Waits As IWaitFactory(Of C)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory&lt;C&gt;</ReturnType>

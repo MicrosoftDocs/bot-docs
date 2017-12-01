@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public abstract class PropertyResolver&lt;T&gt; : Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PropertyResolver`1&lt;T&gt; extends Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.PropertyResolver`1" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PropertyResolver(Of T)&#xA;Inherits DelegatingResolver" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -23,10 +24,11 @@
       <MemberSignature Language="C#" Value="public PropertyResolver (Microsoft.Bot.Builder.Scorables.Internals.IResolver inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Scorables.Internals.IResolver inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.PropertyResolver`1.#ctor(Microsoft.Bot.Builder.Scorables.Internals.IResolver)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (inner As IResolver)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="inner" Type="Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
@@ -41,10 +43,11 @@
       <MemberSignature Language="C#" Value="protected abstract object PropertyFrom (T item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object PropertyFrom(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.PropertyResolver`1.PropertyFrom(`0)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function PropertyFrom (item As T) As Object" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -66,7 +69,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.11.0.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

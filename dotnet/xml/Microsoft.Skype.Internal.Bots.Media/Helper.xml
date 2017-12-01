@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public static class Helper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Helper extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.Helper" />
+  <TypeSignature Language="VB.NET" Value="Public Module Helper" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-    <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+    <AssemblyVersion>1.7.0.26</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -19,10 +20,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Skype.Internal.Bots.Media.IConfigurationManager CreateConfigurationManager (Action&lt;Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs&gt; configChangedHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Skype.Internal.Bots.Media.IConfigurationManager CreateConfigurationManager(class System.Action`1&lt;class Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs&gt; configChangedHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.Helper.CreateConfigurationManager(System.Action{Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs})" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateConfigurationManager (configChangedHandler As Action(Of ConfigurationChangedEventArgs)) As IConfigurationManager" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Skype.Internal.Bots.Media.IConfigurationManager</ReturnType>
@@ -41,10 +43,11 @@
       <MemberSignature Language="C#" Value="public static uint GetBitsPerPixel (Microsoft.Skype.Bots.Media.VideoColorFormat format);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 GetBitsPerPixel(valuetype Microsoft.Skype.Bots.Media.VideoColorFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.Helper.GetBitsPerPixel(Microsoft.Skype.Bots.Media.VideoColorFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBitsPerPixel (format As VideoColorFormat) As UInteger" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.UInt32</ReturnType>
@@ -59,14 +62,35 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetConfigurationManager">
+      <MemberSignature Language="C#" Value="public static Microsoft.Skype.Internal.Bots.Media.IConfigurationManager GetConfigurationManager ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Skype.Internal.Bots.Media.IConfigurationManager GetConfigurationManager() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.Helper.GetConfigurationManager" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConfigurationManager () As IConfigurationManager" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Internal.Bots.Media.IConfigurationManager</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetStride">
       <MemberSignature Language="C#" Value="public static int GetStride (Microsoft.Skype.Bots.Media.VideoFormat format);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetStride(class Microsoft.Skype.Bots.Media.VideoFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.Helper.GetStride(Microsoft.Skype.Bots.Media.VideoFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStride (format As VideoFormat) As Integer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -85,16 +109,40 @@
       <MemberSignature Language="C#" Value="public const string MediaApiComponentName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string MediaApiComponentName" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Internal.Bots.Media.Helper.MediaApiComponentName" />
+      <MemberSignature Language="VB.NET" Value="Public Const MediaApiComponentName As String " />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
-        <AssemblyVersion>1.5.0.1177</AssemblyVersion>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetConfigurationManager">
+      <MemberSignature Language="C#" Value="public static void SetConfigurationManager (Microsoft.Skype.Internal.Bots.Media.IConfigurationManager configManager);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetConfigurationManager(class Microsoft.Skype.Internal.Bots.Media.IConfigurationManager configManager) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.Helper.SetConfigurationManager(Microsoft.Skype.Internal.Bots.Media.IConfigurationManager)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetConfigurationManager (configManager As IConfigurationManager)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="configManager" Type="Microsoft.Skype.Internal.Bots.Media.IConfigurationManager" />
+      </Parameters>
+      <Docs>
+        <param name="configManager">To be added.</param>
+        <summary />
+        <returns />
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

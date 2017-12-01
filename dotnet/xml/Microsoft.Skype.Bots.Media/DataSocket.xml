@@ -1,0 +1,137 @@
+﻿<Type Name="DataSocket" FullName="Microsoft.Skype.Bots.Media.DataSocket">
+  <TypeSignature Language="C#" Value="public sealed class DataSocket : IDisposable, Microsoft.Skype.Bots.Media.IDataSocket" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataSocket extends System.Object implements class Microsoft.Skype.Bots.Media.IDataSocket, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.DataSocket" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataSocket&#xA;Implements IDataSocket, IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+    <AssemblyVersion>1.7.0.26</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Skype.Bots.Media.IDataSocket</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Reserved for the internal use.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataSocket (Microsoft.Skype.Bots.Media.DataSocketSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Skype.Bots.Media.DataSocketSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.DataSocket.#ctor(Microsoft.Skype.Bots.Media.DataSocketSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (settings As DataSocketSettings)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="settings" Type="Microsoft.Skype.Bots.Media.DataSocketSettings" />
+      </Parameters>
+      <Docs>
+        <param name="settings">To be added.</param>
+        <summary>
+            Reserverd for internal use.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataMediaReceived">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Skype.Bots.Media.DataMediaReceivedEventArgs&gt; DataMediaReceived;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Skype.Bots.Media.DataMediaReceivedEventArgs&gt; DataMediaReceived" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Bots.Media.DataSocket.DataMediaReceived" />
+      <MemberSignature Language="VB.NET" Value="Public Event DataMediaReceived As EventHandler(Of DataMediaReceivedEventArgs) " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Skype.Bots.Media.DataMediaReceivedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Reserved for the internal use.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSendStatusChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Skype.Bots.Media.DataSendStatusChangedEventArgs&gt; DataSendStatusChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Skype.Bots.Media.DataSendStatusChangedEventArgs&gt; DataSendStatusChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Bots.Media.DataSocket.DataSendStatusChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event DataSendStatusChanged As EventHandler(Of DataSendStatusChangedEventArgs) " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Skype.Bots.Media.DataSendStatusChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Reserved for the internal use.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.DataSocket.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Reserved for the internal use.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Send">
+      <MemberSignature Language="C#" Value="public void Send (Microsoft.Skype.Bots.Media.DataMediaBuffer buffer, uint[] recipientIds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Send(class Microsoft.Skype.Bots.Media.DataMediaBuffer buffer, unsigned int32[] recipientIds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.DataSocket.Send(Microsoft.Skype.Bots.Media.DataMediaBuffer,System.UInt32[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Send (buffer As DataMediaBuffer, recipientIds As UInteger())" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="Microsoft.Skype.Bots.Media.DataMediaBuffer" />
+        <Parameter Name="recipientIds" Type="System.UInt32[]" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">To be added.</param>
+        <param name="recipientIds">To be added.</param>
+        <summary>
+            Reserved for the internal use.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
