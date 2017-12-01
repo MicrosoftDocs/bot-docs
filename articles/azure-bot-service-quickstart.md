@@ -82,7 +82,7 @@ Next, create an app ID and password for your bot, so that it will be able to aut
 
 5. Back in the Azure Portal, assure the **app ID** field is auto-populated for you, and paste the password that you copied (in step 3 above) into the password field.
 > [!TIP]
-> If the **app ID** field is not auto-populated, you can retrieve it by signing in to the 
+> If the **app ID** field is not auto-populated, you can retrieve it by signing into the 
 > <a href="https://apps.dev.microsoft.com" target="_blank">Microsoft Application Registration Portal</a> 
 > and copying the application ID from your application's registration settings.
 
@@ -95,7 +95,7 @@ Next, create an app ID and password for your bot, so that it will be able to aut
 
 When the bot service finishes generating your bot, the Azure editor will contain the bot's source files. 
 At this point, the bot has been created, registered with the Bot Framework, deployed to the cloud, and is fully functional. 
-If you sign in to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a>, 
+If you sign into the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a>, 
 you'll see that your bot is now listed under **My bots**. 
 Congratulations! You've successfully created a bot by using the Azure Bot Service! 
 
