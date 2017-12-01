@@ -30,7 +30,7 @@ Bots are rapidly becoming an integral part of digital experiences. They are beco
 Developers writing bots all face the same problems: bots require basic I/O, they must have language and dialog skills, and they must connect to users, preferably in any conversation experience and language the user chooses. The Bot Framework provides powerful tools and features to help solve these problems.
 
 ### Azure Bot Service
-The Azure Bot Service accelerates the process of developing a bot. It provisions a resource and Azure and gives you five bot templates you can choose from when you create a bot. You can further modify your bot directly in the browser using the Azure editor or in an Integrated Development Environment (IDE), such as Visual Studio and Visual Studio Code.
+The Azure Bot Service accelerates the process of developing a bot. It provisions a resource and Azure gives you five bot templates you can choose from when you create a bot. You can further modify your bot directly in the browser using the Azure editor or in an Integrated Development Environment (IDE), such as Visual Studio and Visual Studio Code.
 
 ### Bot Builder
 The Bot Framework includes [Bot Builder](bot-builder-overview-getstarted.md), which provides a rich and full-featured SDK for the .NET and Node.js platforms. The SDK provides features that make interactions between bots and users much simpler. Bot Builder also includes an emulator for debugging your bots, as well as a large set of sample bots you can use as building blocks.
