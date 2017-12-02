@@ -21,10 +21,7 @@ Each dialog is an abstraction that encapsulates its own state in a C# class that
 A dialog can be composed with other dialogs to maximize reuse, and a dialog context maintains the [stack of dialogs](../bot-design-conversation-flow.md#dialog-stack) that are active in the conversation at any point in time. 
 
 A conversation that comprises dialogs is portable across computers, which makes it possible for your bot implementation to scale. 
-When you use dialogs in the Bot Builder SDK for .NET, conversation state 
-(the dialog stack and the state of each dialog in the stack) is automatically stored 
-using the Bot Framework State service. This enables your bot to be stateless, 
-much like a web application that does not need to store session state in web server memory. 
+When you use dialogs in the Bot Builder SDK for .NET, conversation state (the dialog stack and the state of each dialog in the stack) is automatically stored to your choice of [state data](bot-builder-dotnet-state.md) storage. This enables your bot's service code to be stateless, much like a web application that does not need to store session state in web server memory. 
 
 ## Echo bot example
 

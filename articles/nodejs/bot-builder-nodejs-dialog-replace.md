@@ -77,13 +77,15 @@ var menuItems = {
 The `mainMenu` dialog is invoked by the default dialog, so the menu will be presented to the user at the beginning of the conversation. Additionally, a [`triggerAction`](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#triggeraction) is attached to the `mainMenu` dialog so that the menu will also be presented any time the user input is "main menu". When the user is presented with the menu and selects an option, the dialog that corresponds to the user's selection is invoked by using the `session.beginDialog` method.
 
 ```javascript
+var inMemoryStorage = new builder.MemoryBotStorage();
+
 // This is a reservation bot that has a menu of offerings.
 var bot = new builder.UniversalBot(connector, [
     function(session){
         session.send("Welcome to Contoso Hotel and Resort.");
         session.beginDialog("mainMenu");
     }
-]);
+]).set('storage', inMemoryStorage); // Register in-memory storage 
 
 // Display the main menu and start a new request depending on user input.
 bot.dialog("mainMenu", [

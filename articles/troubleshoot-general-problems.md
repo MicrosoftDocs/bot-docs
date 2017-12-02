@@ -164,6 +164,9 @@ If you want to store this data within your data centers, you can provide a custo
 * Use the REST layer to provide a custom `IBotState` service.
 * Use the Builder interfaces in the language (Node.js or C#) layer.
 
+> [!IMPORTANT]
+> The Bot Framework State Service API is not recommended for production environments, and may be deprecated in a future release. It is recommended that you update your bot code to use the in-memory storage for testing purposes or use one of the **Azure Extensions** for production bots. For more information, see the **Manage state data** topic for [.NET](~/dotnet/bot-builder-dotnet-state.md) or [Node](~/nodejs/bot-builder-nodejs-state.md) implementation.
+
 ## What is an ETag?  How does it relate to bot data bag storage?
 
 An [ETag](https://en.wikipedia.org/wiki/HTTP_ETag) is a mechanism for [optimistic concurrency control](https://en.wikipedia.org/wiki/Optimistic_concurrency_control). The bot data bag storage uses ETags to prevent conflicting updates to the data. An ETag error with HTTP status code 412 "Precondition Failed" indicates that there were multiple "read-modify-write" sequences executing concurrently for that bot data bag.
@@ -200,6 +203,9 @@ builder.Update(Conversation.Container);
 Yes, each state store (i.e., user, conversation, and private bot data bag) may contain up to 64kb of data. For more information, see [Manage State data][StateAPI].
 
 ## How do I version the bot data stored through the State API?
+
+> [!IMPORTANT]
+> The Bot Framework State Service API is not recommended for production environments, and may be deprecated in a future release. It is recommended that you update your bot code to use the in-memory storage for testing purposes or use one of the **Azure Extensions** for production bots. For more information, see the **Manage state data** topic for [.NET](~/dotnet/bot-builder-dotnet-state.md) or [Node](~/nodejs/bot-builder-nodejs-state.md) implementation.
 
 The State service enables you to persist progress through the dialogs in a conversation so that a user can return to a conversation with a bot later without losing their position. To preserve this, the bot data property bags that are stored via the State API are not automatically cleared when you modify the bot's code. You should decide whether or not the bot data should be cleared, based upon whether your modified code is compatible with older versions of your data. 
 

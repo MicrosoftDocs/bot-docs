@@ -19,14 +19,14 @@ The Bot Framework REST APIs enable you to build bots that exchange messages with
 
 ## Build a bot
 
-You can create a bot with any programming language by using the Bot Connector service to exchange messages with channels configured in the Bot Framework Portal. You can use the Bot State service to store and retrieve state data that is related to conversations that your bot conducts using the Bot Connector service. 
+You can create a bot with any programming language by using the Bot Connector service to exchange messages with channels configured in the Bot Framework Portal. 
 
 > [!TIP]
 > The Bot Framework provides client libraries that can be used to build bots in either C# or Node.js. 
 > To build a bot using C#, use the [Bot Builder SDK for C#](../dotnet/bot-builder-dotnet-overview.md). 
 > To build a bot using Node.js, use the [Bot Builder SDK for Node.js](../nodejs/index.md). 
 
-To learn more about building bots using the Bot Connector service and the Bot State service, see [Key concepts](bot-framework-rest-connector-concepts.md).
+To learn more about building bots using the Bot Connector service, see [Key concepts](bot-framework-rest-connector-concepts.md).
 
 ## Build a client
 

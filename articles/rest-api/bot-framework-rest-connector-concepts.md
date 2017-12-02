@@ -13,6 +13,9 @@ ms.date: 05/12/2017
 
 You can use the Bot Connector service and the Bot State service to communicate with users across multiple channels such as Skype, Email, Slack, and more. This article introduces key concepts in the Bot Connector service and Bot State service.
 
+> [!IMPORTANT]
+> The Bot Framework State Service API is not recommended for production environments, and may be deprecated in a future release. It is recommended that you update your bot code to use the in-memory storage for testing purposes or use one of the **Azure Extensions** for production bots. For more information, see the **Manage state data** topic for [.NET](~/dotnet/bot-builder-dotnet-state.md) or [Node](~/nodejs/bot-builder-nodejs-state.md) implementation.
+
 ## Bot Connector service
 
 The Bot Connector service enables your bot to exchange messages with channels configured in the <a href="https://dev.botframework.com/" target="_blank">Bot Framework Portal</a>. It uses industry-standard REST and JSON over HTTPS and enables authentication with JWT Bearer tokens. For detailed information about how to use the Bot Connector service, see [Authentication](bot-framework-rest-connector-authentication.md) and the remaining articles in this section.

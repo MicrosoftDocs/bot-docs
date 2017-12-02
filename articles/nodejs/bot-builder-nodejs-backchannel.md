@@ -85,7 +85,7 @@ The <a href="https://github.com/ryanvolum/backChannelBot" target="_blank">backch
 creates an event by using a helper function.
 
 ```javascript
-var bot = new builder.UniversalBot(connector, [
+var bot = new builder.UniversalBot(connector, 
     function (session) {
         var reply = createEvent("changeBackground", session.message.text, session.message.address);
         session.endDialog(reply);

@@ -16,11 +16,48 @@ ms.date: 06/14/2017
 
 [!include[State concept overview](../includes/snippet-dotnet-concept-state.md)]  
 
-If your bot uses [dialogs](bot-builder-dotnet-dialogs.md), conversation state (the dialog stack and the state of each dialog in the stack) is automatically stored using the Bot Framework State service. 
+## In-memory data storage
+
+In-memory data storage is intended for testing only. This storage is volatile and temporary. The data is cleared each time the bot is restarted. To use the in-memory storage for testing purposes, you will need to do two things. First, within the **Conversation.UpdateContainer** method, create a new instance of the in-memory storage:
+
+```cs
+Conversation.UpdateContainer(
+            builder =>
+            {
+                var store = new InMemoryDataStore();
+                ...
+            });
+```
+
+Then, register the new data store:
+
+```cs
+Conversation.UpdateContainer(
+            builder =>
+            {
+                var store = new InMemoryDataStore();
+                builder.Register(c => store)
+                          .Keyed<IBotDataStore<BotData>>(AzureModule.Key_DataStore)
+                          .AsSelf()
+                          .SingleInstance();
+            });
+```
+
+You can use this method to set your own custom data storage or use any of the *Azure Extensions*.
+
+## Manage custom data storage
+
+For performance and security reasons in the production environment, you may implement your own data storage or consider implementing one of the following data storage options:
+
+1. [Manage state data with Cosmos DB](bot-builder-dotnet-state-azure-cosmosdb.md)
+
+2. [Manage state data with Table storage](bot-builder-dotnet-state-azure-table-storage.md)
+
+With either of these [Azure Extensions](https://www.npmjs.com/package/botbuilder-azure) options, the mechanism for setting and persisting data via the Bot Framework SDK for .NET remains the same as the in-memory data storage.
 
 ## Bot state methods
 
-This table lists the methods within Bot state service that you can use to manage state data.
+This table lists the methods that you can use to manage state data.
 
 | Method | Scoped to | Objective |                                                
 |----|----|----|
@@ -103,16 +140,6 @@ when it attempts to save state data, if another instance of the bot has changed 
 You can design your bot to account for this scenario, as shown in the following code example.
 
 [!code-csharp[Handle exception saving state](../includes/code/dotnet-state.cs#handleException)]
- 
-## Manage data storage
-
-Under the hood, the Bot Builder SDK for .NET stores state data using the Bot Connector State service, which is intended for prototyping only and is not designed for use by bots in a production environment. For performance and security reasons in the production environment, consider implementing one of the following data storage options:
-
-1. [Manage state data with Cosmos DB](bot-builder-dotnet-state-azure-cosmosdb.md)
-
-2. [Manage state data with Table storage](bot-builder-dotnet-state-azure-table-storage.md)
-
-With either of these [Azure Extensions](https://www.npmjs.com/package/botbuilder-azure) options, the mechanism for setting and persisting data via the Bot Framework SDK for .NET remains the same as described previously in this article.
 
 ## Additional resources
 

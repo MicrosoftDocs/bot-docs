@@ -36,6 +36,8 @@ A [waterfall](bot-builder-nodejs-dialog-waterfall.md) is a dialog that allows th
 The following code sample shows how to use a waterfall to guide the user through a series of prompts.
 
 ```javascript
+var inMemoryStorage = new builder.MemoryBotStorage();
+
 // This is a dinner reservation bot that uses a waterfall technique to prompt users for input.
 var bot = new builder.UniversalBot(connector, [
     function (session) {
@@ -57,13 +59,20 @@ var bot = new builder.UniversalBot(connector, [
         session.send(`Reservation confirmed. Reservation details: <br/>Date/Time: ${session.dialogData.reservationDate} <br/>Party size: ${session.dialogData.partySize} <br/>Reservation name: ${session.dialogData.reservationName}`);
         session.endDialog();
     }
-]);
+]).set('storage', inMemoryStorage); // Register in-memory storage 
 ```
 
 The core functionality of this bot occurs in the default dialog. The default dialog is defined when the bot is created: 
 
 ```javascript
 var bot = new builder.UniversalBot(connector, [..waterfall steps..]); 
+```
+
+Also, during this creation process, you can set which [data storage](bot-builder-nodejs-state.md) you want to use. For instance, to use the in-memory storage, you can set it as follows:
+
+```javascript
+var inMemoryStorage = new builder.MemoryBotStorage();
+var bot = new builder.UniversalBot(connector, [..waterfall steps..]).set('storage', inMemoryStorage); // Register in-memory storage 
 ```
 
 The default dialog is created as an array of functions that define the steps of the waterfall. In the example, there are four functions so the waterfall has four steps. Each step performs a single task and the results are processed in the next step. The process continues until the last step, where the reservation is confirmed and the dialog ends.
@@ -88,6 +97,8 @@ Another technique for managing conversation flow is to use a combination of wate
 For example, consider the dinner reservation bot. The following code sample shows the previous example rewritten to use waterfall and multiple dialogs.
 
 ```javascript
+var inMemoryStorage = new builder.MemoryBotStorage();
+
 // This is a dinner reservation bot that uses multiple dialogs to prompt users for input.
 var bot = new builder.UniversalBot(connector, [
     function (session) {
@@ -109,7 +120,7 @@ var bot = new builder.UniversalBot(connector, [
         session.send(`Reservation confirmed. Reservation details: <br/>Date/Time: ${session.dialogData.reservationDate} <br/>Party size: ${session.dialogData.partySize} <br/>Reservation name: ${session.dialogData.reservationName}`);
         session.endDialog();
     }
-]);
+]).set('storage', inMemoryStorage); // Register in-memory storage 
 
 // Dialog to ask for a date and time
 bot.dialog('askForDateTime', [
@@ -229,11 +240,13 @@ By default, executing a `triggerAction` clears the dialog stack and resets the c
 The following example builds upon the previous one such that the bot allows the user to either make a dinner reservation or order dinner to be delivered. In this bot, the default dialog is a greeting dialog that presents two options to the user: `Dinner Reservation` and `Order Dinner`.
 
 ```javascript
+var inMemoryStorage = new builder.MemoryBotStorage();
+
 // This bot enables users to either make a dinner reservation or order dinner.
 var bot = new builder.UniversalBot(connector, function(session){
     var msg = "Welcome to the reservation bot. Please say `Dinner Reservation` or `Order Dinner`";
     session.send(msg);
-});
+}).set('storage', inMemoryStorage); // Register in-memory storage 
 ```
 
 The dinner reservation logic that was in the default dialog of the previous example is now in its own dialog called `dinnerReservation`. The flow of the `dinnerReservation` remains the same as the multiple dialog version discussed earlier. The only difference is that the dialog has a `triggerAction` attached to it. Notice that in this version, the `confirmPrompt` asks the user to confirm that they want to change the topic of conversation, before invoking the new dialog. It is good practice to include a `confirmPrompt` in scenarios like this because once the dialog stack is cleared, the user will be directed to the new topic of conversation, thereby abandoning the topic of conversation that was underway.
