@@ -41,6 +41,8 @@ What makes this possible is the use of prompts. The Bot Builder SDK for Node.js 
 The following sample code shows a dialog that uses prompts to collect various pieces of information from the user throughout a 4-step waterfall.
 
 ```javascript
+var inMemoryStorage = new builder.MemoryBotStorage();
+
 // This is a dinner reservation bot that uses a waterfall technique to prompt users for input.
 var bot = new builder.UniversalBot(connector, [
     function (session) {
@@ -62,7 +64,7 @@ var bot = new builder.UniversalBot(connector, [
         session.send(`Reservation confirmed. Reservation details: <br/>Date/Time: ${session.dialogData.reservationDate} <br/>Party size: ${session.dialogData.partySize} <br/>Reservation name: ${session.dialogData.reservationName}`);
         session.endDialog();
     }
-]);
+]).set('storage', inMemoryStorage); // Register in-memory storage 
 ```
 
 In this example, the default dialog has four functions, each one representing a step in the waterfall. Each step prompts the user for input and sends the results to the next step to be processed. This process continues until the last step executes, thereby confirming the reservation and ending the dialog.
@@ -103,6 +105,8 @@ A waterfall progresses from step to step in the sequence that the functions are 
 The following code sample shows how to use the `next` function within a dialog that walks the user through the process of providing information for their user profile. In each step of the waterfall, the bot prompts the user for a piece of information (if necessary), and the user's response (if any) is processed by the subsequent step of the waterfall. The final step of the waterfall in the `ensureProfile` dialog ends that dialog and returns the completed profile information to the calling dialog, which then sends a personalized greeting to the user.
 
 ```javascript
+var inMemoryStorage = new builder.MemoryBotStorage();
+
 // This bot ensures user's profile is up to date.
 var bot = new builder.UniversalBot(connector, [
     function (session) {
@@ -112,7 +116,8 @@ var bot = new builder.UniversalBot(connector, [
         session.userData.profile = results.response; // Save user profile.
         session.send(`Hello ${session.userData.profile.name}! I love ${session.userData.profile.company}!`);
     }
-]);
+]).set('storage', inMemoryStorage); // Register in-memory storage 
+
 bot.dialog('ensureProfile', [
     function (session, args, next) {
         session.dialogData.profile = args || {}; // Set the profile or create the object.

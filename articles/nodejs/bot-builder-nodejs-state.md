@@ -16,7 +16,33 @@ ms.date: 06/19/2017
 
 [!include[State concept overview](../includes/snippet-dotnet-concept-state.md)]  
 
-In the Builder SDK for Node.js, the [ChatConnector][ChatConnector] class provides an implementation of this storage system and you can use the [session](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html) object to store, retrieve, and delete state data.
+## In-memory data storage
+
+In-memory data storage is intended for testing only. This storage is volatile and temporary. The data is cleared each time the bot is restarted. To use the in-memory storage for testing purposes, you will need to do two things. First create a new instance of the in-memory storage:
+
+```javascript
+var inMemoryStorage = new builder.MemoryBotStorage();
+```
+
+Then, set it to the bot when you create the **UniversalBot**:
+
+```javascript
+var inMemoryStorage = new builder.MemoryBotStorage();
+var bot = new builder.UniversalBot(connector, [..waterfall steps..])
+                    .set('storage', inMemoryStorage); // Register in-memory storage 
+```
+
+You can use this method to set your own custom data storage or use any of the *Azure Extensions*.
+
+## Manage custom data storage
+
+For performance and security reasons in the production environment, you may implement your own data storage or consider implementing one of the following data storage options:
+
+1. [Manage state data with Cosmos DB](bot-builder-nodejs-state-azure-cosmosdb.md)
+
+2. [Manage state data with Table storage](bot-builder-nodejs-state-azure-table-storage.md)
+
+With either of these [Azure Extensions](https://www.npmjs.com/package/botbuilder-azure) options, the mechanism for setting and persisting data via the Bot Framework SDK for Node.js remains the same as the in-memory data storage.
 
 ## Storage containers
 
@@ -156,15 +182,6 @@ session.dialogData = {};
 ```
 
 Never set a data container `null` or remove it from the `session` object, as doing so will cause errors the next time you try to access the container. Also, you may want to manually call `session.save();` after you manually clear a container in memory, to clear any corresponding data that has previously been persisted.
-
-## Manage data storage
-
-Under the hood, the Bot Builder SDK for Node.js stores state data using the Bot Connector State service, which is intended for prototyping only and is not designed for use by bots in a production environment. For performance and security reasons in the production environment, consider implementing one of the following data storage options:
-
-1. [Manage state data with Cosmos DB](bot-builder-nodejs-state-azure-cosmosdb.md)
-2. [Manage state data with Table storage](bot-builder-nodejs-state-azure-table-storage.md)
-
-With either of these [Azure Extensions](https://www.npmjs.com/package/botbuilder-azure) options, the mechanism for setting and persisting data via the Bot Framework SDK for Node.js remains the same as described previously in this article.
 
 ## Next steps
 

@@ -72,7 +72,7 @@ To use your **Azure Table** storage, add the following lines of code to your bot
    var tableStorage = new azure.AzureBotStorage({gzipData: false}, azureTableClient);
    ```
 
-4. Specify that you want to use your custom database instead of the default database. For example:
+4. Specify that you want to use your custom database instead of the in-memory storage. For example:
 
    ```javascript
    var bot = new builder.UniversalBot(connector, function (session) {
