@@ -1,6 +1,6 @@
 ---
 title: API reference | Microsoft Docs
-description: Learn about headers, operations, objects, and errors in the Bot Connector service and Bot State service. 
+description: Learn about headers, operations, objects, and errors in the Bot Connector service. 
 author: kbrandl
 ms.author: kibrandl
 manager: rstand
@@ -12,6 +12,9 @@ ms.date: 05/12/2017
 # API reference
 
 Within the Bot Framework, the Bot Connector service enables your bot to exchange messages with users on channels that are configured in the Bot Framework Portal and the Bot State service enables your bot to store and retrieve state data that is related to the conversations that your bot conducts using the Bot Connector service. Both services use industry-standard REST and JSON over HTTPS.
+
+> [!IMPORTANT]
+> The Bot Framework State Service API is not recommended for production environments, and may be deprecated in a future release. It is recommended that you update your bot code to use the in-memory storage for testing purposes or use one of the **Azure Extensions** for production bots. For more information, see the **Manage state data** topic for [.NET](~/dotnet/bot-builder-dotnet-state.md) or [Node](~/nodejs/bot-builder-nodejs-state.md) implementation.
 
 ## Base URI
 

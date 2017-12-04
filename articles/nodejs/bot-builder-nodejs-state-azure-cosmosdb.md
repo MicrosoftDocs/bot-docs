@@ -72,7 +72,7 @@ To use your **Azure Cosmos DB** database, add the following lines of code to you
    var cosmosStorage = new azure.AzureBotStorage({ gzipData: false }, docDbClient);
    ```
 
-4. Specify that you want to use your custom database instead of the default database. For example:
+4. Specify that you want to use your custom database instead of the in-memory storage. For example:
 
    ```javascript
    var bot = new builder.UniversalBot(connector, function (session) {
