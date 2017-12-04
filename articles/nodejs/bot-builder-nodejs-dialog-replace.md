@@ -211,8 +211,7 @@ bot.dialog("addDinnerItem", [
 .reloadAction(
     "restartOrderDinner", "Ok. Let's start over.",
     {
-        matches: /^start over$/i,
-        confirmPrompt: "This will cancel your order. Are you sure?"
+        matches: /^start over$/i
     }
 );
 ```
