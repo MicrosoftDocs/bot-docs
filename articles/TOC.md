@@ -62,6 +62,7 @@
 #### [Manage state data](~/dotnet/bot-builder-dotnet-state.md)
 #### [Manage state data using Cosmos DB](~/dotnet/bot-builder-dotnet-state-azure-cosmosdb.md)
 #### [Manage state data using Table storage](~/dotnet/bot-builder-dotnet-state-azure-table-storage.md)
+### [.NET Core authentication models](~/dotnet/bot-builder-dotnet-core-authentication.md)
 ### [Recognize intent with LUIS](~/dotnet/bot-builder-dotnet-luis-dialogs.md)
 ### [Request payment](~/dotnet/bot-builder-dotnet-request-payment.md)
 ### [Add Azure Search](~/dotnet/bot-builder-dotnet-search-azure.md)

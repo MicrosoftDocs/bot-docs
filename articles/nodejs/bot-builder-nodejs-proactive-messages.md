@@ -46,7 +46,10 @@ After the bot has collected information about the user, it can send an ad hoc pr
 To do so, it simply retrieves the user data that it stored previously, constructs the message, and sends it.
 
 ```javascript
-var bot = new builder.UniversalBot(connector);
+var inMemoryStorage = new builder.MemoryBotStorage();
+
+var bot = new builder.UniversalBot(connector)
+                .set('storage', inMemoryStorage); // Register in-memory storage 
 
 function sendProactiveMessage(address) {
     var msg = new builder.Message().address(address);

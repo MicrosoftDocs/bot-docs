@@ -22,7 +22,7 @@ To learn about the structure of the Bot Builder SDK for Node.js, see the [Bot Bu
 You can also explore the Bot Builder SDK for Node.js [source code](https://github.com/Microsoft/BotBuilder/tree/master/Node) on GitHub.
 
 ## Bot Framework REST APIs
-To learn about the Bot Connector service and the Bot State service, see the [Bot Framework REST API reference documentation](~/rest-api/bot-framework-rest-connector-api-reference.md). 
+To learn about the Bot Connector service, see the [Bot Framework REST API reference documentation](~/rest-api/bot-framework-rest-connector-api-reference.md). 
 
 To learn about Direct Line API v3.0, see the [Direct Line 3.0 reference documentation](~/rest-api/bot-framework-rest-direct-line-3-0-api-reference.md). 
 To learn about Direct Line API v1.1, see the [Direct Line 1.1 reference documentation](~/rest-api/bot-framework-rest-direct-line-1-1-api-reference.md).

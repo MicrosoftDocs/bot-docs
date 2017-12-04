@@ -122,6 +122,9 @@ Bot Framework API v3 introduces a more robust implementation of attachments and 
 
 In Bot Framework API v1, the API for managing bot state data was folded into the messaging API. In Bot Framework API v3, these APIs are separate. Now, you must use the Bot State service to get state data (instead of assuming that it will be included within the `Message` object) and to store state data (instead of passing it as part of the `Message` object). For information about managing bot state data using the Bot State service, [Manage state data](~/dotnet/bot-builder-dotnet-state.md).
 
+> [!IMPORTANT]
+> The Bot Framework State Service API is not recommended for production environments, and may be deprecated in a future release. It is recommended that you update your bot code to use the in-memory storage for testing purposes or use one of the **Azure Extensions** for production bots. For more information, see the **Manage state data** topic for [.NET](~/dotnet/bot-builder-dotnet-state.md) or [Node](~/nodejs/bot-builder-nodejs-state.md) implementation.
+
 ### Web.config changes
 
 Bot Framework API v1 stored the authentication properties with these keys in **Web.Config**:
