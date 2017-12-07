@@ -72,7 +72,7 @@ Next, create an app ID and password for your bot, so that it will be able to aut
 
 1. Click **Create Microsoft App ID and password**.  
 
-    ![create app id](~/media/azure-bot-service-create-app-id.png)  
+    ![create App ID](~/media/azure-bot-service-create-app-id.png)  
 
 2. On the page that opens in a new browser tab, click **Generate an app password to continue**.
 
@@ -80,9 +80,9 @@ Next, create an app ID and password for your bot, so that it will be able to aut
 
 4. Click **Finish and go back to Bot Framework**.
 
-5. Back in the Azure Portal, assure the **app ID** field is auto-populated for you, and paste the password that you copied (in step 3 above) into the password field.
+5. Back in the Azure Portal, assure the **App ID** field is auto-populated for you, and paste the password that you copied (in step 3 above) into the password field.
 > [!TIP]
-> If the **app ID** field is not auto-populated, you can retrieve it by signing in to the 
+> If the **App ID** field is not auto-populated, you can retrieve it by signing in to the 
 > <a href="https://apps.dev.microsoft.com" target="_blank">Microsoft Application Registration Portal</a> 
 > and copying the application ID from your application's registration settings.
 
