@@ -213,6 +213,7 @@ public MessagesController(IConfiguration configuration)
     this.configuration = configuration;
 }
 
+
 [Authorize(Roles = "Bot")]
 [HttpPost]
 public async Task<OkResult> Post([FromBody] Activity activity)
