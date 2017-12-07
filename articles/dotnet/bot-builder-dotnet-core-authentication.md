@@ -206,6 +206,13 @@ public class Startup
 From **Solution Explorer** add a new empty class called **MessagesController.cs**. In the **MessagesController.cs** class, update the **Post** method with the code below. This will allow your bot to send and receive messages for the user.
 
 ```cs
+private IConfiguration configuration;
+
+public MessagesController(IConfiguration configuration)
+{
+    this.configuration = configuration;
+}
+
 [Authorize(Roles = "Bot")]
 [HttpPost]
 public async Task<OkResult> Post([FromBody] Activity activity)
