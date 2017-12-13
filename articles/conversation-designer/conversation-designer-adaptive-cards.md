@@ -33,7 +33,7 @@ Templates or build your own in the JSON code editor.
 As you are building a card, a rich preview of the card is rendered in the authoring portal.
 
 > [!NOTE]
-> Features of adaptive cards remain under ongoing development. All channels do not support all adaptive card features at this time. To see which features each channel supports, see the [Channel status](https://docs.microsoft.com/en-us/adaptive-cards/get-started/bots#channel-status) section.
+> Features of adaptive cards remain under ongoing development. All channels do not support all adaptive card features at this time. To see which features each channel supports, see the [Channel status](/adaptive-cards/get-started/bots#channel-status) section.
 
 ## Input form
 

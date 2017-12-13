@@ -126,7 +126,7 @@ Once you have tested your Cortana skill and verified that it works the way you'd
 * [Testing and debugging best practices][Cortana-TestBestPractice]
 * [Preview features with the Channel Inspector](bot-service-channel-inspector.md)
 
-[CortanaGetStarted]: https://docs.microsoft.com/en-us/cortana/getstarted
+[CortanaGetStarted]: /cortana/getstarted
 
 [BFPortal]: https://dev.botframework.com/
 [CortanaDevCenter]: https://developer.microsoft.com/en-us/cortana
@@ -139,7 +139,7 @@ Once you have tested your Cortana skill and verified that it works the way you'd
 
 [Cortana-Debug]: https://aka.ms/cortana-enable-debug
 [Cortana-TestBestPractice]: https://aka.ms/cortana-test-best-practice
-[Cortana-Publish]: https://docs.microsoft.com/en-us/cortana/skills/publish-skill
+[Cortana-Publish]: /cortana/skills/publish-skill
 
 
 

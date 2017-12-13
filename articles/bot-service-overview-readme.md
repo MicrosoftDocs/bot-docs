@@ -29,7 +29,7 @@ A bot that uses an App Service plan is a standard Azure web app you can set to a
 * Use sample code prepared for the Bot Builder SDK.
 
 ### Consumption plan
-A bot that uses a Consumption plan is a serverless bot that runs on <a href="http://go.microsoft.com/fwlink/?linkID=747839" target="_blank">Azure Functions</a>, and uses the pay-per-run Azure Functions pricing. A bot that uses this hosting plan can scale to handle huge traffic spikes. You can edit bot source code online using a basic in-browser code editor. For more information about the runtime environment of a Consumption plan bot, see <a target='_blank' href='https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale'>Azure Functions Consumption and App Service plans</a>.
+A bot that uses a Consumption plan is a serverless bot that runs on <a href="http://go.microsoft.com/fwlink/?linkID=747839" target="_blank">Azure Functions</a>, and uses the pay-per-run Azure Functions pricing. A bot that uses this hosting plan can scale to handle huge traffic spikes. You can edit bot source code online using a basic in-browser code editor. For more information about the runtime environment of a Consumption plan bot, see <a target='_blank' href='/azure/azure-functions/functions-scale'>Azure Functions Consumption and App Service plans</a>.
 
 ## Templates
 

@@ -51,7 +51,7 @@ bot.dialog('/localePicker', [
 ```
 
 ## Determine the locale by using analytics
-Another way to determine the user's locale is to use a service like the [Text Analytics API](https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-text-analytics-quick-start) to automatically detect the user's language based upon the text of the message they sent.
+Another way to determine the user's locale is to use a service like the [Text Analytics API](/azure/cognitive-services/cognitive-services-text-analytics-quick-start) to automatically detect the user's language based upon the text of the message they sent.
 
 The code snippet below illustrates how you can incorporate this service into your own bot.
 ``` javascript

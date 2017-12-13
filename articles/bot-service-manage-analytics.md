@@ -10,12 +10,12 @@ ms.date: 12/13/2017
 
 ---
 # Bot analytics
-Analytics is an extension of [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-analytics). Application Insights provides **service-level** and instrumentation data like traffic, latency, and integrations. Analytics provides **conversation-level** reporting on user, message, and channel data.
+Analytics is an extension of [Application Insights](/azure/application-insights/app-insights-analytics). Application Insights provides **service-level** and instrumentation data like traffic, latency, and integrations. Analytics provides **conversation-level** reporting on user, message, and channel data.
 
 ## View analytics for a bot
 To access Analytics, open the bot in the developer portal and click **Analytics**.
 
-Too much data? [Enable and configure sampling](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-sampling) to reduce telemetry traffic and storage while maintaining statistically correct analysis. 
+Too much data? [Enable and configure sampling](/azure/application-insights/app-insights-sampling) to reduce telemetry traffic and storage while maintaining statistically correct analysis. 
 
 ### Specify channel
 Choose which channels appear in the graphs below. Note that if a bot is not enabled on a channel, there will be no data from that channel.
@@ -66,10 +66,10 @@ The Message graph tracks how many messages were sent and received using which ch
 ## Enable analytics
 Analytics are not available until Application Insights has been enabled and configured. Application Insights will begin collecting data as soon as it is enabled. For example, if Application Insights was enabled a week ago for a six-month-old bot, it will have collected one week of data.
 > [!NOTE]
-> Analytics requires both an Azure subscription and Application Insights [resource](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-create-new-resource).
+> Analytics requires both an Azure subscription and Application Insights [resource](/azure/application-insights/app-insights-create-new-resource).
 To access Application Insights, open the bot in the [Bot Framework Portal](https://dev.botframework.com/) and click **Settings**.
 
-1. Create an Application Insights [resource](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-create-new-resource).
+1. Create an Application Insights [resource](/azure/application-insights/app-insights-create-new-resource).
 2. Open the bot in the dashboard. Click **Settings** and scroll down to the **Analytics** section.
 3. Enter the information to connect the bot to Application Insights. All fields are required.
 

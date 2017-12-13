@@ -18,7 +18,7 @@ Bots on an App Service plan run as Azure web apps. Web app bots can do things th
 
 - A web app bot can add custom route definitions.
 - A web app bot can enable a Websocket server. 
-- A bot that uses a Consumption hosting plan has the same limitations as all code running on Azure Functions. For more information, see <a target='_blank' href='https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale'>Azure Functions Consumption and App Service plans</a>.
+- A bot that uses a Consumption hosting plan has the same limitations as all code running on Azure Functions. For more information, see <a target='_blank' href='/azure/azure-functions/functions-scale'>Azure Functions Consumption and App Service plans</a>.
 
 ## Download your existing bot source
 

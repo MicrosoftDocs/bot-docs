@@ -70,7 +70,7 @@ Ensure that [ngrok](#ngrok) is installed and that the emulator's App Settings sp
 Finally, click **Connect** to connect the emulator to your bot. After the emulator has connected to your bot, you can send and receive messages using the embedded chat control.
 
 ## Enable speech recognition
-The Bot Framework Emulator supports speech recognition via the [Cognitive Services Speech API](https://docs.microsoft.com/en-us/azure/cognitive-services/Speech/home). This allows you to exercise your speech-enabled bot, or Cortana skill, via speech in the emulator during development. The Bot Framework Emulator provides speech recognition free of charge for up to three hours per bot per day. 
+The Bot Framework Emulator supports speech recognition via the [Cognitive Services Speech API](/azure/cognitive-services/Speech/home). This allows you to exercise your speech-enabled bot, or Cortana skill, via speech in the emulator during development. The Bot Framework Emulator provides speech recognition free of charge for up to three hours per bot per day. 
 
 ## Send system activities
 
