@@ -3,11 +3,19 @@ title: Authenticating activities using .NET Core | Microsoft Docs
 description: Learn how to authenticate bots activities using .NET Core.
 author: v-ducvo
 ms.author: v-ducvo
+<<<<<<< HEAD
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/17
 
+=======
+manager: rstand
+ms.topic: article
+ms.prod: bot-framework
+ms.date: 11/16/2017
+ms.reviewer:
+>>>>>>> live
 ---
 
 # Authenticating activities using .NET Core
@@ -24,7 +32,11 @@ This article will show you how to set up authentication model for the specific f
 
 * [Visual Studio 2017](https://www.visualstudio.com/downloads/)
 * [.NET Core](https://www.microsoft.com/net/download/windows). Install .NET Core version you target (e.g.: .NET Core v1.1 or .NET Core v 2.0).
+<<<<<<< HEAD
 * [Register a bot](~/bot-service-quickstart-registration.md). Register your bot to obtain an AppID and Password that is needed for the authentication process.
+=======
+* [Register a bot](~/portal-register-bot.md). Register your bot to obtain an AppID and Password that is needed for the authentication process.
+>>>>>>> live
 
 ## Create a .NET Core project
 
@@ -58,9 +70,12 @@ To use the **Bot Framework Connector**, install the NuGet package appropriate fo
 
 The Bot Framework Connector requires your AppID and Password to authenticate the bot. You can set these values in the **appsettings.json** of your web app project.
 
+<<<<<<< HEAD
 > [!NOTE]
 > To find your bot's **AppID** and **AppPassword**, see [MicrosoftAppID and MicrosoftAppPassword](~/bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
 
+=======
+>>>>>>> live
 ### appsettings.json for .NET Core v1.1:
 
 ```json
@@ -209,6 +224,7 @@ public class Startup
 From **Solution Explorer** add a new empty class called **MessagesController.cs**. In the **MessagesController.cs** class, update the **Post** method with the code below. This will allow your bot to send and receive messages for the user.
 
 ```cs
+<<<<<<< HEAD
 private IConfiguration configuration;
 
 public MessagesController(IConfiguration configuration)
@@ -217,6 +233,8 @@ public MessagesController(IConfiguration configuration)
 }
 
 
+=======
+>>>>>>> live
 [Authorize(Roles = "Bot")]
 [HttpPost]
 public async Task<OkResult> Post([FromBody] Activity activity)
