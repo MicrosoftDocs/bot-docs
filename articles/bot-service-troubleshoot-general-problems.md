@@ -234,7 +234,7 @@ Both the Bot Builder SDK for Node.js and the Bot Builder SDK for .NET support ca
 
 * [Introduction to Language Understanding (LUIS) - Microsoft Cognitive Services](https://www.youtube.com/watch?v=jWeLajon9M8) (video)
 * [Advanced Learning Session for Language Understanding (LUIS) ](https://www.youtube.com/watch?v=39L0Gv2EcSk) (video)
-* [LUIS documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/Home)
+* [LUIS documentation](/azure/cognitive-services/LUIS/Home)
 * [Language Understanding Forum](https://social.msdn.microsoft.com/forums/azure/en-US/home?forum=LUIS) 
 
 
@@ -256,7 +256,7 @@ Both the Bot Builder SDK for Node.js and the Bot Builder SDK for .NET support ca
 
 
 
-[LUISPreBuiltEntities]: https://docs.microsoft.com/en-us/azure/cognitive-services/luis/pre-builtentities
+[LUISPreBuiltEntities]: /azure/cognitive-services/luis/pre-builtentities
 [BotFrameworkIDGuide]: bot-service-resources-identifiers-guide.md
 [StateAPI]: ~/rest-api/bot-framework-rest-state.md
 [TroubleshootingAuth]: bot-service-troubleshoot-authentication-problems.md

@@ -161,4 +161,4 @@ Payment Complete callbacks will contain emulated payment tokens or real payment 
 - [Activities overview](bot-builder-dotnet-activities.md)
 - [Add rich cards to messages](bot-builder-dotnet-add-rich-card-attachments.md)
 - <a href="http://www.w3.org/Payments/" target="_blank">Web Payments at W3C</a> 
-- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
+- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>

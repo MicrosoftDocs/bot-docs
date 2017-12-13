@@ -98,4 +98,4 @@ For a complete sample that shows how to manage a conversation by using dialogs i
 - [Dialogs](bot-builder-dotnet-dialogs.md)
 - [Design and control conversation flow](../bot-service-design-conversation-flow.md)
 - <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-BasicMultiDialog" target="_blank">Basic Multi-Dialog sample (GitHub)</a>
-- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
+- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
