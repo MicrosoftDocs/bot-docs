@@ -15,7 +15,7 @@ You can enable your own client application to communicate with your bot by using
 
 ## Add the Direct Line channel
 
-To add the Direct Line channel, open the bot on the [Bot Framework Portal](https://dev.botframework.com/), click the **Channels** tab, and then click **Direct Line**.
+To add the Direct Line channel, open the bot in the [Azure Portal](https://portal.azure.com/), click the **Channels** blade, and then click **Direct Line**.
 
 ![Add Direct Line channel](~/media/bot-service-channel-connect-directline/directline-addchannel.png)
 

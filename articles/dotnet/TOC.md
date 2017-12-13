@@ -40,4 +40,4 @@
 # [Request payment](bot-builder-dotnet-request-payment.md)
 # [Add Azure Search](bot-builder-dotnet-search-azure.md)
 # [Secure your bot](bot-builder-dotnet-security.md)
-# [SDK reference](/dotnet/api/?view=botbuilder-3.11.0)
+# [SDK reference](/dotnet/api/?view=botbuilder-3.12.2.4)
