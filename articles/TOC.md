@@ -29,7 +29,7 @@
 ### [REST](rest-api/)
 ## [Debug](debug/TOC.md)
 # Reference
-## [.NET SDK](/dotnet/api/?view=botbuilder-3.11.0)
+## [.NET SDK](/dotnet/api/?view=botbuilder-3.12.2.4)
 ## [Node.js SDK](https://docs.botframework.com/en-us/node/builder/chat-reference/modules/_botbuilder_d_.html)
 ## [REST API](rest-api/bot-framework-rest-connector-api-reference.md)
 # [Resources](resources/TOC.md)

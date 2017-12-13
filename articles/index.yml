@@ -58,6 +58,6 @@ sections:
     className: cardsD
     items:
     - title: Languages
-      html: <p><a href="/dotnet/api/?view=botbuilder-3.11.0">.NET</a></p><p><a href="https://docs.botframework.com/en-us/node/builder/chat-reference/modules/_botbuilder_d_.html">JavaScript</a></p>
+      html: <p><a href="/dotnet/api/?view=botbuilder-3.12.2.4">.NET</a></p><p><a href="https://docs.botframework.com/en-us/node/builder/chat-reference/modules/_botbuilder_d_.html">JavaScript</a></p>
     - title: REST
-      html: <p><a href="/Bot-Framework/rest-api-reference">REST API Reference</a></p>
+      html: <p><a href="/Bot-Framework/rest-api/bot-framework-rest-connector-api-reference/">REST API Reference</a></p>
