@@ -3,10 +3,10 @@ title: Manage state data | Microsoft Docs
 description: Learn how to save and retrieve state data with the Bot Builder SDK for Node.js.
 author: DucVo
 ms.author: v-ducvo
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 06/19/2017
+ms.date: 12/13/2017
 ---
 
 # Manage state data

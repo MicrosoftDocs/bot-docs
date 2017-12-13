@@ -3,10 +3,10 @@ title: Build a real-time media bot for Skype | Microsoft Docs
 description: Learn how to build a bot that conducts real-time audio/video calls with Skype, using the Bot Builder SDK for .NET and the Bot Builder-RealTimeMediaCalling SDK for .NET.
 author: MalarGit
 ms.author: malarch
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 08/04/2017
+ms.date: 12/13/17
 ---
 
 # Build a real-time media bot for Skype
@@ -24,7 +24,7 @@ In order to use the Real-Time Media Platform, the following service configuratio
 
 * The bot must know the Fully-Qualified Domain Name (FQDN) of its service. This is not provided by the Azure RoleEnvironment API; instead, the FQDN must be stored in the bot's Cloud Service configuration and read during service startup.
 
-* The bot service must be have a certificate issued by a recognized Certificate Authority. The thumbprint of the certificate must be stored in the bot's Cloud Service configuration and read during service startup.
+* Bot Service must be have a certificate issued by a recognized Certificate Authority. The thumbprint of the certificate must be stored in the bot's Cloud Service configuration and read during service startup.
 
 * A public <a href="https://docs.microsoft.com/en-us/azure/cloud-services/cloud-services-enable-communication-role-instances#instance-input-endpoint">instance input endpoint</a> must be provisioned. This assigns a unique public port to each virtual machine (VM) instance in the bot's service. This port is used by the Real-Time Media Platform to communicate with the Skype Calling Cloud.
  ```xml
@@ -69,6 +69,9 @@ In order to use the Real-Time Media Platform, the following service configuratio
 
 During service instance startup, the Real-Time Media Platform must be initialized. This must be done only once before the bot can accept any audio/video Skype calls on that instance. Initialization of the media platform requires providing various service configuration settings, including the service's FQDN, the public ILPIP address, the instance input endpoint port value, and the bot's **Microsoft App ID**.
 
+> [!NOTE]
+> To find your bot's **AppID** and **AppPassword**, see [MicrosoftAppID and MicrosoftAppPassword](~/bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
+
 ```cs
 var mediaPlatformSettings = new MediaPlatformSettings()
 {
@@ -89,7 +92,7 @@ MediaPlatform.Initialize(mediaPlatformSettings);
 
 ## Register to receive incoming call requests
 
-Define a `CallController` class. This enables the bot service to register for incoming Skype calls, and ensure callback and notification requests are forwarded to the appropriate `RealTimeMediaCall` object.
+Define a `CallController` class. This enables Bot Service to register for incoming Skype calls, and ensure callback and notification requests are forwarded to the appropriate `RealTimeMediaCall` object.
 
 ```cs
 [BotAuthentication]

@@ -3,7 +3,7 @@ title: Requirements and considerations for real-time media bots | Microsoft Docs
 description: Understand important requirements and considerations related to creating real-time media bots for Skype, using the Bot Builder SDK for .NET.
 author: ssulzer
 ms.author: ssulzer
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ---
@@ -31,9 +31,9 @@ Not all guidance that applies to developing messaging and IVR calling bots appli
 
 - Each VM instance hosting a real-time media bot must be directly accessible from the Internet. For real-time media bots hosted in Azure, each VM instance must have an instance-level public IP address (ILPIP). For information about obtaining and configuring an ILPIP, see <a href="https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-instance-level-public-ip" target="_blank">Instance level public IP (Classic) overview</a>. By default, an Azure subscription can obtain 5 ILPIP addresses; please contact Azure support to increase your subscription's quota.
 
-- Because of the public IP address requirement, real-time media bots must be hosted in either an "IaaS" Azure Virtual Machine, or a "classic" Azure Cloud Service. Other runtime environments, such as Azure Bot Service or Service Fabric with VM Scale Sets, are not supported, as these do not support ILPIP.
+- Because of the public IP address requirement, real-time media bots must be hosted in either an "IaaS" Azure Virtual Machine, or a "classic" Azure Cloud Service. Other runtime environments, such as Bot Service or Service Fabric with VM Scale Sets, are not supported, as these do not support ILPIP.
 
-- Real-time media bots are also not supported by the [Bot Framework Emulator](../debug-bots-emulator.md).
+- Real-time media bots are also not supported by the [Bot Framework Emulator](../bot-service-debug-emulator.md).
 
 ## Scalability and performance considerations
 

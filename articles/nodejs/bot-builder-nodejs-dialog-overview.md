@@ -3,10 +3,10 @@ title: Dialogs overview | Microsoft Docs
 description: Learn how to use dialogs within the Bot Builder SDK for Node.js to model conversations and manage conversation flow.
 author: DucVo
 ms.author: v-ducvo
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 07/06/2017
+ms.date: 12/13/2017
 ---
 
 # Dialogs in the Bot Builder SDK for Node.js

@@ -3,11 +3,11 @@ title: Bot Builder SDK for Node.js | Microsoft Docs
 description: Explore the Bot Builder SDK for Node.js, a powerful, easy-to-use bot building framework.
 author: DeniseMak
 ms.author: v-demak
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 08/04/2017
-ms.reviewer: 
+ms.date: 12/13/2017
+ 
 ---
 
 # Bot Builder SDK for Node.js
@@ -36,7 +36,7 @@ If you are new to writing bots, [create your first bot with Node.js](bot-builder
 
 If you are new to the Bot Builder SDK for Node.js, you can start with key concepts that help you understand the major components of the Bot Builder SDK, see [Key concepts](bot-builder-nodejs-concepts.md).
 
-To ensure your bot addresses the top user scenarios, review the [design principles](../bot-design-principles.md) and [explore patterns](../bot-design-pattern-task-automation.md) for guidance.
+To ensure your bot addresses the top user scenarios, review the [design principles](../bot-service-design-principles.md) and [explore patterns](../bot-service-design-pattern-task-automation.md) for guidance.
 
 ## Get samples
 
@@ -59,9 +59,9 @@ The following task-focused how-to guides demonstrate various features of the Bot
 
 
 If you encounter problems or have suggestions regarding the Bot Builder SDK for Node.js, 
-see [Support](../resources-support.md) for a list of available resources. 
+see [Support](../bot-service-resources-links-help.md) for a list of available resources. 
 
 
-[DesignGuide]: ../bot-design-principles.md 
-[DesignPatterns]: ../bot-design-pattern-task-automation.md 
+[DesignGuide]: ../bot-service-design-principles.md 
+[DesignPatterns]: ../bot-service-design-pattern-task-automation.md 
 [HowTo]: bot-builder-nodejs-use-default-message-handler.md 

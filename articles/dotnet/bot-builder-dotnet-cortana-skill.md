@@ -3,12 +3,12 @@ title: Build a Cortana skill using .NET | Microsoft Docs
 description: Learn core concepts for building a Cortana skill in the Bot Builder SDK for .NET.
 keywords: Bot Framework, Cortana skill, speech, .NET, Bot Builder, SDK, key concepts, core concepts
 author: DeniseMak
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 
-ms.date: 05/10/2017
-ms.reviewer:
+ms.date: 12/13/2017
+
 #ROBOTS: Index
 ---
 # Build a speech-enabled bot with Cortana skills
@@ -315,7 +315,7 @@ The `PlayGameDialog` renders the results both by displaying them in a `HeroCard`
 ```
 ## Next steps
 
-If your bot is running locally or deployed in the cloud, you can invoke it from Cortana. See [Test a Cortana skill](../debug-bots-cortana-skill-invoke.md) for the steps required to try out your Cortana skill.
+If your bot is running locally or deployed in the cloud, you can invoke it from Cortana. See [Test a Cortana skill](../bot-service-debug-cortana-skill.md) for the steps required to try out your Cortana skill.
 
 
 ## Additional resources

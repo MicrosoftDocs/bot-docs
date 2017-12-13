@@ -1,13 +1,13 @@
 ---
 title: Intercept messages | Microsoft Docs
 description: Learn how to create logs or other records by intercepting and processing information exchanges using the Bot Builder SDK for Node.js.
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+author: RobStand
+ms.author: kamrani
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 08/04/2017
-ms.reviewer:
+ms.date: 12/13/2017
+
 ---
 # Intercept messages
 > [!div class="op_single_selector"]

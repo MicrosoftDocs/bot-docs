@@ -1,13 +1,13 @@
 ---
 title: Secure your bot | Microsoft Docs
 description: Learn how to secure your bot by using HTTPS and Bot Framework Authentication.
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+author: RobStand
+ms.author: kamrani
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 08/04/2017
-ms.reviewer:
+ms.date: 12/13/17
+
 ---
 
 # Secure your bot
@@ -16,11 +16,14 @@ Your bot can be connected to many different communication channels (Skype, SMS, 
 
 ## Use HTTPS and Bot Framework authentication
 
-To ensure that your bot's endpoint can only be accessed by the Bot Framework [Connector](bot-builder-dotnet-concepts.md#connector), configure your bot's endpoint to use only HTTPS and enable Bot Framework authentication by [registering](../portal-register-bot.md) your bot to acquire its app Id and password. 
+To ensure that your bot's endpoint can only be accessed by the Bot Framework [Connector](bot-builder-dotnet-concepts.md#connector), configure your bot's endpoint to use only HTTPS and enable Bot Framework authentication by [registering](~/bot-service-quickstart-registration.md) your bot to acquire its appID and password. 
 
 ## Configure authentication for your bot
 
-After you have registered your bot, specify its app Id and password in your bot's web.config file. 
+Specify the bot's appID and password in your bot's web.config file. 
+
+> [!NOTE]
+> To find your bot's **AppID** and **AppPassword**, see [MicrosoftAppID and MicrosoftAppPassword](~/bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
 
 ```xml
 <appSettings>
@@ -43,4 +46,4 @@ To use other values for authentication credentials, specify the `[BotAuthenticat
 
 - [Bot Builder SDK for .NET](bot-builder-dotnet-overview.md)
 - [Key concepts in the bot Builder SDK for .NET](bot-builder-dotnet-concepts.md)
-- [Register a bot with the Bot Framework](../portal-register-bot.md)
+- [Register a bot with the Bot Framework](~/bot-service-quickstart-registration.md)

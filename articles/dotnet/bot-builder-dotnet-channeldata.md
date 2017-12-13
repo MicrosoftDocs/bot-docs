@@ -1,13 +1,13 @@
 ---
 title: Implement channel-specific functionality | Microsoft Docs
 description: Learn how to implement channel-specific functionality using the the Bot Builder SDK for .NET.
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+author: RobStand
+ms.author: kamrani
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 08/04/2017
-ms.reviewer:
+ms.date: 12/13/2017
+
 ---
 
 # Implement channel-specific functionality
@@ -65,7 +65,7 @@ set the `Activity` object's `ChannelData` property to a JSON object that specifi
 
 > [!NOTE]
 > To support buttons in Slack messages, you must enable **Interactive Messages** when you 
-> [connect your bot](../portal-configure-channels.md) to the Slack channel.
+> [connect your bot](../bot-service-manage-channels.md) to the Slack channel.
 
 This snippet shows an example of the `channelData` property for a custom Slack message.
 

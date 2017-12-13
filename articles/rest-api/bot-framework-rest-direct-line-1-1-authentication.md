@@ -1,12 +1,12 @@
 ---
 title: Authentication | Microsoft Docs
 description: Learn how to authenticate API requests in Direct Line API v1.1. 
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+author: RobStand
+ms.author: kamrani
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 06/13/2017
+ms.date: 12/13/2017
 ---
 
 # Authentication
@@ -14,7 +14,7 @@ ms.date: 06/13/2017
 > [!IMPORTANT]
 > This article describes authentication in Direct Line API 1.1. If you are creating a new connection between your client application and bot, use [Direct Line API 3.0](bot-framework-rest-direct-line-3-0-authentication.md) instead.
 
-A client can authenticate requests to Direct Line API 1.1 either by using a **secret** that you [obtain from the Direct Line channel configuration page](../channel-connect-directline.md) in the Bot Framework Portal or by using a **token** that you obtain at runtime.
+A client can authenticate requests to Direct Line API 1.1 either by using a **secret** that you [obtain from the Direct Line channel configuration page](../bot-service-channel-connect-directline.md) in the Bot Framework Portal or by using a **token** that you obtain at runtime.
 
 The secret or token should be specified in the `Authorization` header of each request, using either the "Bearer" scheme or the "BotConnector" scheme. 
 
@@ -41,7 +41,7 @@ If you're creating a service-to-service application, specifying the **secret** i
 
 ## Get a Direct Line secret
 
-You can [obtain a Direct Line secret](../channel-connect-directline.md) via the Direct Line channel configuration page for your bot in the <a href="https://dev.botframework.com/" target="_blank">Bot Framework Portal</a>:
+You can [obtain a Direct Line secret](../bot-service-channel-connect-directline.md) via the Direct Line channel configuration page for your bot in the <a href="https://dev.botframework.com/" target="_blank">Bot Framework Portal</a>:
 
 ![Direct Line configuration](../media/direct-line-configure.png)
 
@@ -116,4 +116,4 @@ HTTP/1.1 200 OK
 ## Additional resources
 
 - [Key concepts](bot-framework-rest-direct-line-1-1-concepts.md)
-- [Connect a bot to Direct Line](../channel-connect-directline.md)
+- [Connect a bot to Direct Line](../bot-service-channel-connect-directline.md)

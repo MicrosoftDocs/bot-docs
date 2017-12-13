@@ -1,20 +1,20 @@
 ---
 title: Create a bot with the Bot Builder SDK for Node.js | Microsoft Docs
 description: Create a bot with the Bot Builder SDK for Node.js, a powerful bot construction framework.
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+author: RobStand
+ms.author: kamrani
+manager: kamrani
 ms.topic: get-started-article
 ms.prod: bot-framework
-ms.date: 08/04/2017
-ms.reviewer:
+ms.date: 12/13/2017
+
 ---
 
 # Create a bot with the Bot Builder SDK for Node.js
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-quickstart.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-quickstart.md)
-> - [Azure Bot Service](../azure-bot-service-quickstart.md)
+> - [Bot Service](../bot-service-quickstart.md)
 > - [REST](../rest-api/bot-framework-rest-connector-quickstart.md)
 
 The Bot Builder SDK for Node.js is a framework for developing bots. It is easy to use and models frameworks like Express & restify to provide a familiar way for JavaScript developers to write bots.
@@ -90,10 +90,8 @@ You will need to make some changes to your **app.js** file.
 > [!NOTE] 
 > You do not need a **Microsoft App ID** or **Microsoft App Password** to run your bot in the Bot Framework Emulator.
 
-Please note that you do not need a Microsoft App ID or App Password to run your bot in the Bot Framework Emulator.
-
 ## Test your bot
-Next, test your bot by using the [Bot Framework Emulator](../debug-bots-emulator.md) to see it in action. The emulator is a desktop application that lets you test and debug your bot on localhost or running remotely through a tunnel.
+Next, test your bot by using the [Bot Framework Emulator](../bot-service-debug-emulator.md) to see it in action. The emulator is a desktop application that lets you test and debug your bot on localhost or running remotely through a tunnel.
 
 First, you'll need to [download](https://emulator.botframework.com) and install the emulator. After the download completes, launch the executable and complete the installation process.
 
@@ -111,7 +109,7 @@ Your bot is now running locally.
 After you start your bot, connect to your bot in the emulator:
 
 1. Type `http://localhost:3978/api/messages` into the address bar. (This is the default endpoint that your bot listens to when hosted locally.)
-2. Click **Connect**. You won't need to specify **Microsoft App ID** and **Microsoft App Password**. You can leave these fields blank for now. You'll get this information later when you [register your bot](../portal-register-bot.md).
+2. Click **Connect**. You won't need to specify **Microsoft App ID** and **Microsoft App Password**. You can leave these fields blank for now. You'll get this information later when you [register your bot](../bot-service-quickstart-registration.md).
 
 ### Try out your bot
 

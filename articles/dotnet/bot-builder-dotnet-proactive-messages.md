@@ -1,13 +1,13 @@
 ---
 title: Send proactive messages | Microsoft Docs
 description: Learn how to send proactive messages using the Bot Builder SDK for .NET.
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+author: RobStand
+ms.author: kamrani
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 06/01/2017
-ms.reviewer:
+ms.date: 12/13/2017
+
 ---
 # Send proactive messages
 > [!div class="op_single_selector"]
@@ -170,6 +170,6 @@ Within the Proactive Messages sample, <a href="https://github.com/Microsoft/BotB
 
 ## Additional resources
 
-- [Design and control conversation flow](../bot-design-conversation-flow.md)
+- [Design and control conversation flow](../bot-service-design-conversation-flow.md)
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
 - <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-proactiveMessages" target="_blank">Proactive Messages sample (GitHub)</a>

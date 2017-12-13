@@ -2,10 +2,10 @@
 title: Define code recognizer as task trigger | Microsoft Docs
 description: Learn how to use a custom code recognizer as a task trigger.
 author: vkannan
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 07/04/2017
+ms.date: 12/13/2017
 ROBOTS: NoIndex, NoFollow
 ---
 

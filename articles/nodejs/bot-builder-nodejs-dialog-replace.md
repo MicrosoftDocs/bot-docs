@@ -3,10 +3,10 @@ title: Replace dialogs | Microsoft Docs
 description: Learn how to replace dialogs to re-prompt for input and manage conversation flow using the Bot Builder SDK for Node.js.
 author: v-ducvo
 ms.author: v-ducvo
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 06/19/2017
+ms.date: 12/13/2017
 ---
 
 # Replace dialogs
@@ -137,8 +137,7 @@ bot.dialog('orderDinner', [
 .reloadAction(
     "restartOrderDinner", "Ok. Let's start over.",
     {
-        matches: /^start over$/i,
-        confirmPrompt: "This wil cancel your order. Are you sure?"
+        matches: /^start over$/i
     }
 )
 .cancelAction(
@@ -214,8 +213,7 @@ bot.dialog("addDinnerItem", [
 .reloadAction(
     "restartOrderDinner", "Ok. Let's start over.",
     {
-        matches: /^start over$/i,
-        confirmPrompt: "This will cancel your order. Are you sure?"
+        matches: /^start over$/i
     }
 );
 ```

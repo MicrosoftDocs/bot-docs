@@ -1,12 +1,12 @@
 ---
 title: Key concepts in the Bot Connector service and Bot State service | Microsoft Docs
 description: Understand key concepts in the Bot Framework's Bot Connector service and Bot State service. 
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+author: RobStand
+ms.author: kamrani
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/12/2017
+ms.date: 12/13/2017
 ---
 
 # Key concepts
@@ -48,6 +48,6 @@ In addition to modeling the Bot Connector service and the Bot State service, eac
 
 ## Additional resources
 
-Learn more about building bots using the Bot Connector service and Bot State service by reviewing articles throughout this section, beginning with [Authentication](bot-framework-rest-connector-authentication.md). If you encounter problems or have suggestions regarding the Bot Connector service or Bot State service, see [Support](../resources-support.md) for a list of available resources. 
+Learn more about building bots using the Bot Connector service and Bot State service by reviewing articles throughout this section, beginning with [Authentication](bot-framework-rest-connector-authentication.md). If you encounter problems or have suggestions regarding the Bot Connector service or Bot State service, see [Support](../bot-service-resources-links-help.md) for a list of available resources. 
 
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object
