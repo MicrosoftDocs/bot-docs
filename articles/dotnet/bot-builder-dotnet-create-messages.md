@@ -1,13 +1,13 @@
 ---
 title: Create messages with the Bot Builder SDK for .NET | Microsoft Docs
 description: Learn about commonly-used message properties within the Bot Builder SDK for .NET.
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+author: RobStand
+ms.author: kamrani
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 08/04/2017
-ms.reviewer: 
+ms.date: 12/13/2017
+ 
 ---
 
 # Create messages
@@ -28,7 +28,7 @@ This sample shows how to create a custom `message` object and set the `Text`, `T
 
 The `TextFormat` property of a message can be used to specify the format of the text. The `TextFormat` property can be set to **plain**, **markdown**, or **xml**. The default value for `TextFormat` is **markdown**. 
 
-For a list of commonly supported text formatting, see [Text formatting](../portal-channel-inspector.md#text-formatting). To ensure that the feature(s) you want to use is supported by the target channel, preview the feature(s) using the [Channel Inspector](../portal-channel-inspector.md).
+For a list of commonly supported text formatting, see [Text formatting](../bot-service-channel-inspector.md#text-formatting). To ensure that the feature(s) you want to use is supported by the target channel, preview the feature(s) using the [Channel Inspector](../bot-service-channel-inspector.md).
 
 ## Attachments
 

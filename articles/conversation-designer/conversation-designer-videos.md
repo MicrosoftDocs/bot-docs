@@ -2,10 +2,10 @@
 title: Conversation Designer videos | Microsoft Docs
 description: Learn about Conversation Designer through videos.
 author: vkannan
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 07/26/2017
+ms.date: 12/13/2017
 ROBOTS: NoIndex, NoFollow
 ---
 

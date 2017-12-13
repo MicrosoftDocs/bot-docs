@@ -2,6 +2,16 @@
   href: /
   homepage: /
   items:
-  - name: Bot Framework
+  - name: Bot Service
     tocHref: /Bot-Framework/
     topicHref: /Bot-Framework/index
+    items:
+    - name: Bot Builder SDK for .NET
+      tocHref: /Bot-Framework/dotnet
+      topicHref: /Bot-Framework/dotnet/
+    - name: Bot Builder SDK for Node.js
+      tocHref: /Bot-Framework/nodejs
+      topicHref: /Bot-Framework/nodejs/
+    - name: Bot Framework REST API
+      tocHref: /Bot-Framework/rest-api
+      topicHref: /Bot-Framework/rest-api/

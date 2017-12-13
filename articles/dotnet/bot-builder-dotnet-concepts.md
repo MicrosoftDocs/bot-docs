@@ -1,13 +1,13 @@
 ---
 title: Key concepts in the Bot Builder SDK for .NET | Microsoft Docs
 description: Understand the key concepts and tools for building and deploying conversational bots available in the Bot Builder SDK for .NET.
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+author: RobStand
+ms.author: kamrani
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 08/04/2017
-ms.reviewer:
+ms.date: 12/13/2017
+
 ---
 
 # Key concepts in the Bot Builder SDK for .NET
@@ -32,8 +32,8 @@ see [Activities overview](bot-builder-dotnet-activities.md).
 ## Dialog
 
 When you create a bot using the Bot Builder SDK for .NET, you can use [dialogs](bot-builder-dotnet-dialogs.md) to model 
-a conversation and manage [conversation flow](../bot-design-conversation-flow.md#dialog-stack). 
-A dialog can be composed of other dialogs to maximize reuse, and a dialog context maintains the [stack of dialogs](../bot-design-conversation-flow.md) that are active in the conversation at any point in time. 
+a conversation and manage [conversation flow](../bot-service-design-conversation-flow.md#dialog-stack). 
+A dialog can be composed of other dialogs to maximize reuse, and a dialog context maintains the [stack of dialogs](../bot-service-design-conversation-flow.md) that are active in the conversation at any point in time. 
 A conversation that comprises dialogs is portable across computers, which makes it possible for your bot implementation to scale. 
 
 In the Bot Builder SDK for .NET, the [Builder][builderLibrary] library enables you to manage dialogs.

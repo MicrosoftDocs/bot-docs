@@ -3,119 +3,370 @@ title: Recognize intents and entities with LUIS  | Microsoft Docs
 description: Learn how to enable your bot to understand natural language by using LUIS dialogs in the Bot Builder SDK for .NET.
 author: DeniseMak
 ms.author: v-demak
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 09/27/2017
+ms.date: 12/13/2017
 ---
 
-# Recognize intents and entities with LUIS using a prebuilt domain 
-This article uses the example of a bot for taking notes, to demonstrate how Language Understanding Intelligent Service ([LUIS][LUIS]) helps your bot respond appropriately to natural language input. A bot detects what a user wants to do by identifying their **intent**. This intent is determined from spoken or textual input, or **utterances**. The intent maps utterances to actions that the bot takes. For example, a note-taking bot recognizes a `Notes.Create` intent to invoke the functionality for creating a note. A bot may also need to extract **entities**, which are important words in utterances. In the example of a note-taking bot, the `Notes.Title` entity identifies the title of each note.
 
-## Create your LUIS app
-The LUIS app, which is the web service you configure at [www.luis.ai][LUIS] to provide the intents and entities to the bot. In this example, the LUIS app makes use of the **Notes** <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/luis-how-to-use-prebuilt-domains" target="_blank">prebuilt domain</a>, which is a collection of ready-to-use intents and entities. To create the LUIS app, follow these steps:
+# Recognize intents and entities with LUIS 
 
-1.	Log in to [www.luis.ai][LUIS] using your Cognitive Services API account. If you don't have an account, you can create a free account in the [Azure portal](https://ms.portal.azure.com). 
-2.	In the **My Apps** page, click **New App**, enter a name like Notes in the **Name** field, and choose **Bootstrap Key** in the **Key to use** field. 
-3.	In the **Intents** page, click **Add prebuilt domain intents** and select **Notes.Create**, **Notes.Delete** and **Notes.ReadAloud**.
-4.	In the **Intents** page, click on the **None** intent. This intent is meant for utterances that don’t correspond to any other intents. Enter an example of an utterance unrelated to notes, like “Turn off the lights.”
-5.	In the **Entities** page, click **Add prebuilt domain entities** and select **Notes.Title**.
-6.	In the **Train & Test** page, train your app.
-7.	In the **Publish** page, click **Publish**. After successful publish, copy the **Endpoint URL** from the **Publish App** page, to use later in your bot’s code. The URL has a format similar to this example: `https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/3889f7d0-9501-45c8-be5f-8635975eea8b?subscription-key=67073e45132a459db515ca04cea325d3&timezoneOffset=0&verbose=true&q=`
+This article uses the example of a bot for taking notes, to demonstrate how Language Understanding ([LUIS][LUIS]) helps your bot respond appropriately to natural language input. A bot detects what a user wants to do by identifying their **intent**. This intent is determined from spoken or textual input, or **utterances**. The intent maps utterances to actions that the bot takes. For example, a note-taking bot recognizes a `Notes.Create` intent to invoke the functionality for creating a note. A bot may also need to extract **entities**, which are important words in utterances. In the example of a note-taking bot, the `Notes.Title` entity identifies the title of each note.
 
-> [!TIP] 
-> You can also create the LUIS app by importing the [Notes sample JSON][NotesSampleJSON]. In [www.luis.ai][LUIS], click **Import App** in the **My Apps** page and select the JSON file to import.
+## Create a Language Understanding bot with Bot Service
 
-## Create a note-taking bot integrated with the LUIS app
-To create a bot that uses the LUIS app, you can first start with the sample bot that you create according to the steps in [Create a bot with the Bot Builder SDK for .NET](bot-builder-dotnet-quickstart.md), and edit the code to correspond to the examples in this article.
+1. In the [Azure portal](https://portal.azure.com), select **Create new resource** in the menu blade and click **See all**.<!-- Start with the steps in [Create a bot with Bot Service](../bot-service-quickstart.md) to start creating a new bot service.  -->
 
-> [!TIP] 
-> You can also find the sample code described in this article at [Notes bot sample][NotesSample].
+    ![Create new resource](../media/bot-builder-dotnet-use-luis/bot-service-creation.png)
 
+2. In the search box, search for **Web App Bot**. 
 
-## How LUIS passes intents and entities to your bot
-The following diagram shows the sequence of events that happen after the bot receives an utterance from the user. First, the bot passes the utterance to the LUIS app and gets a JSON result from LUIS that contains intents and entities. Next, your bot automatically invokes any matching handler in a [LuisDialog](/dotnet/api/microsoft.bot.builder.dialogs.luisdialog-1). The intent handler is associated with the high-scoring intent in the LUIS result by using the [LuisIntent attribute](/dotnet/api/microsoft.bot.builder.dialogs.luisintentattribute). The full details of the match, including the list of intents and entities that LUIS detected, are passed as a [LuisResult](/dotnet/api/microsoft.bot.builder.luis.models.luisresult) to the `result` parameter of the matching handler.
+    ![Create new resource](../media/bot-builder-dotnet-use-luis/bot-service-selection.png)
 
-<p align=center>
-<img alt="How LUIS passes intents and entities to your bot" src="~/media/bot-builder-dotnet-use-luis/bot-builder-dotnet-luis-message-flow-bot-code-notes.png">
-</p>
+3. In the **Bot Service** blade, provide the required information, and click **Create**. This creates and deploys the bot service and LUIS app to Azure. 
+    * Set **App name** to your bot’s name. The name is used as the subdomain when your bot is deployed to the cloud (for example, mynotesbot.azurewebsites.net). This name is also used as the name of the LUIS app associated with your bot. Copy it to use later, to find the LUIS app associated with the bot.
+    * Select the subscription, [resource group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview), App service plan, and [location](https://azure.microsoft.com/en-us/regions/).
+    * Select the **Language understanding (C#)** template for the **Bot template** field.
 
-## Create a class that derives from LuisDialog
+    ![Bot Service blade](../media/bot-builder-dotnet-use-luis/bot-service-setting-callout-template.png)
 
-To create a [dialog](bot-builder-dotnet-dialogs.md) that uses LUIS, first create a class that derives from [LuisDialog](/dotnet/api/microsoft.bot.builder.dialogs.luisdialog-1) and 
-specify the [LuisModel attribute](/dotnet/api/microsoft.bot.builder.luis.luismodelattribute). 
-To populate the `modelID` and `subscriptionKey` parameters for the `LuisModel` attribute, use 
-the `id` and `subscription-key` attribute values from your LUIS app's endpoint URL. 
+    * Check the box to confirm to the terms of service.
 
-The `domain` parameter is determined by the Azure region to which your LUIS app is published. 
-If not supplied, it defaults to `westus.api.cognitive.microsoft.com`.
-See [Regions and keys](#regions-and-keys) for more information.
-
-[!code-csharp[Class definition](../includes/code/dotnet-luis-dialogs.cs#classDefinitionNotes)]
-
-## Create methods to handle intents
-
-Within the class, create the methods that execute when your LUIS model matches a user's utterance to intent. 
-To designate the method that runs when a specific intent is matched, specify the `LuisIntent` attribute. 
-
-This code example defines the method that executes when the `Note.Delete` intent is matched.
-
-[!code-csharp[delete note handler](../includes/code/dotnet-luis-dialogs.cs#deleteNoteHandler)]
-
-In this example, if the LUIS app detects the title of the note the user wants to delete, and finds it in the list of notes, 
-it removes it from the list of notes. Otherwise it prompts the user for the name of the note to delete.
-
-> [!NOTE]
-> The LUIS app you created is meant to be a starting point for training, and might not be able to detect the title of notes at first. A LUIS app learns from example, so teach it to better recognize the title entity by giving it more example utterances to learn from. You can retrain your LUIS app without any modification to your bot's code. See [Add example utterances](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/add-example-utterances) and [train and test your LUIS app](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/train-test).
-
-The `TryFindNote` method that `DeleteNote` calls inspects the `result` parameter from LUIS to see if the LUIS app detected a title entity. It then searches for a note with that title. 
-
-[!code-csharp[delete note handler](../includes/code/dotnet-luis-dialogs.cs#tryFindNote)]
-
-
-## Notes dialog implementation
-
-This code example shows the full dialog implementation for the Notes bot, which also includes methods for handling the Note.Create and Note.ReadAloud intents, as well as a default intent handler which can handle the None intent, or any other intents the LUIS app may detect. 
-
-[!code-csharp[Full LUIS dialog example](../includes/code/dotnet-luis-dialogs.cs#fullNotesExample)]
-
-### Update the Post method
-
-To use the SimpleNoteDialog that you implemented, update the `Post` method in your `MessageController` class to reference it.
-
-[!code-csharp[Full LUIS dialog example](../includes/code/dotnet-luis-dialogs.cs#MessagesControllerPost)]
+4. Confirm that the bot service has been deployed.
+    * Click Notifications (the bell icon that is located along the top edge of the Azure portal). The notification will change from **Deployment started** to **Deployment succeeded**.
+    * After the notification changes to **Deployment succeeded**, click **Go to resource** on that notification.
 
 ## Try the bot
 
-You can run the bot using the Bot Framework Emulator and tell it to create a note.
-<p align=center>
-<img alt="Conversation for creating a note" src="~/media/bot-builder-dotnet-use-luis/dotnet-notes-sample-emulator.png">
-</p>
+Confirm that the bot has been deployed by checking the **Notifications**. The notifications will change from **Deployment in progress...** to **Deployment succeeded**. Click **Go to resource** button to open the bot's resources blade.
+
+Once the bot is registered, click **Test in Web Chat** to open the Web Chat pane. Type "hello" in Web Chat.
+
+  ![Test the bot in Web Chat](../media/bot-builder-dotnet-use-luis/bot-service-web-chat.png)
+
+The bot responds by saying "You have reached Greeting. You said: hello". This confirms that the bot has received your message and passed it to a default LUIS app that it created. This default LUIS app detected a Greeting intent.
+
+## Modify the LUIS app
+
+Log in to [https://www.luis.ai](https://www.luis.ai) using the same account you use to log in to Azure. Click on **My apps**. In the list of apps, find the app that begins with the name specified in **App name** in the **Bot Service** blade when you created the Bot Service. 
+
+The LUIS app starts with 4 intents: Cancel: Greeting, Help, and None. <!-- picture -->
+
+The following steps add the Note.Create, Note.ReadAloud, and Note.Delete intents: 
+
+1. Click on **Prebuit Domains** in the lower left of the page. Find the **Note** domain and click **Add domain**.
+
+2. This tutorial doesn't use all of the intents included in the **Note** prebuilt domain. In the **Intents** page, click on each of the following intent names and then click the **Delete Intent** button.
+   * Note.ShowNext
+   * Note.DeleteNoteItem
+   * Note.Confirm
+   * Note.Clear
+   * Note.CheckOffItem
+   * Note.AddToNote
+
+   The only intents that should remain in the LUIS app are the following: 
+   * Note.ReadAloud
+   * Note.Create
+   * Note.Delete
+   * None
+   * Help
+   * Greeting
+   * Cancel 
+
+    ![intents shown in LUIS app](../media/bot-builder-dotnet-use-luis/luis-intent-list.png)
+
+3.	Click the **Train** button in the upper right to train your app.
+4.	Click **PUBLISH** in the top navigation bar to open the **Publish** page. Click the **Publish to production slot** button. After successful publish, copy the URL displayed in the **Endpoint** column the **Publish App** page, in the row that starts with the Resource Name Starter_Key. Save this URL to use later in your bot’s code. The URL has a format similar to this example: `https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx?subscription-key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&timezoneOffset=0&verbose=true&q=`
+
+## Modify the bot code
+
+Click **Build** and then click **Open online code editor**.
+    ![Open online code editor](../media/bot-builder-dotnet-use-luis/bot-service-build.png)
+
+In the code editor, open `BasicLuisDialog.cs`. It contains the following code for handling intents from the LUIS app.
+```cs
+using System;
+using System.Configuration;
+using System.Threading.Tasks;
+
+using Microsoft.Bot.Builder.Dialogs;
+using Microsoft.Bot.Builder.Luis;
+using Microsoft.Bot.Builder.Luis.Models;
+
+namespace Microsoft.Bot.Sample.LuisBot
+{
+    // For more information about this template visit http://aka.ms/azurebots-csharp-luis
+    [Serializable]
+    public class BasicLuisDialog : LuisDialog<object>
+    {
+        public BasicLuisDialog() : base(new LuisService(new LuisModelAttribute(
+            ConfigurationManager.AppSettings["LuisAppId"], 
+            ConfigurationManager.AppSettings["LuisAPIKey"], 
+            domain: ConfigurationManager.AppSettings["LuisAPIHostName"])))
+        {
+        }
+
+        [LuisIntent("None")]
+        public async Task NoneIntent(IDialogContext context, LuisResult result)
+        {
+            await this.ShowLuisResult(context, result);
+        }
+
+        // Go to https://luis.ai and create a new intent, then train/publish your luis app.
+        // Finally replace "Greeting" with the name of your newly created intent in the following handler
+        [LuisIntent("Greeting")]
+        public async Task GreetingIntent(IDialogContext context, LuisResult result)
+        {
+            await this.ShowLuisResult(context, result);
+        }
+
+        [LuisIntent("Cancel")]
+        public async Task CancelIntent(IDialogContext context, LuisResult result)
+        {
+            await this.ShowLuisResult(context, result);
+        }
+
+        [LuisIntent("Help")]
+        public async Task HelpIntent(IDialogContext context, LuisResult result)
+        {
+            await this.ShowLuisResult(context, result);
+        }
+
+        private async Task ShowLuisResult(IDialogContext context, LuisResult result) 
+        {
+            await context.PostAsync($"You have reached {result.Intents[0].Intent}. You said: {result.Query}");
+            context.Wait(MessageReceived);
+        }
+    }
+}
+```
+### Create a class for storing notes
+
+Add the following `using` statement in BasicLuisDialog.cs.
+
+```cs
+using System.Collections.Generic;
+```
+
+Add the following code within the `BasicLuisDialog` class, after the constructor definition.
+
+```cs
+        // Store notes in a dictionary that uses the title as a key
+        private readonly Dictionary<string, Note> noteByTitle = new Dictionary<string, Note>();
+        
+        [Serializable]
+        public sealed class Note : IEquatable<Note>
+        {
+
+            public string Title { get; set; }
+            public string Text { get; set; }
+
+            public override string ToString()
+            {
+                return $"[{this.Title} : {this.Text}]";
+            }
+
+            public bool Equals(Note other)
+            {
+                return other != null
+                    && this.Text == other.Text
+                    && this.Title == other.Title;
+            }
+
+            public override bool Equals(object other)
+            {
+                return Equals(other as Note);
+            }
+
+            public override int GetHashCode()
+            {
+                return this.Title.GetHashCode();
+            }
+        }
+
+        // CONSTANTS        
+        // Name of note title entity
+        public const string Entity_Note_Title = "Note.Title";
+        // Default note title
+        public const string DefaultNoteTitle = "default";
+```
+
+### Handle the Note.Create intent
+To handle the Note.Create intent, add the following code to the `BasicLuisDialog` class.
+
+```cs
+        private Note noteToCreate;
+        private string currentTitle;
+        [LuisIntent("Note.Create")]
+        public Task NoteCreateIntent(IDialogContext context, LuisResult result)
+        {
+            EntityRecommendation title;
+            if (!result.TryFindEntity(Entity_Note_Title, out title))
+            {
+                // Prompt the user for a note title
+                PromptDialog.Text(context, After_TitlePrompt, "What is the title of the note you want to create?");
+            }
+            else
+            {
+                var note = new Note() { Title = title.Entity };
+                noteToCreate = this.noteByTitle[note.Title] = note;
+
+                // Prompt the user for what they want to say in the note           
+                PromptDialog.Text(context, After_TextPrompt, "What do you want to say in your note?");
+            }
+            
+            return Task.CompletedTask;
+        }
+        
+        
+        private async Task After_TitlePrompt(IDialogContext context, IAwaitable<string> result)
+        {
+            EntityRecommendation title;
+            // Set the title (used for creation, deletion, and reading)
+            currentTitle = await result;
+            if (currentTitle != null)
+            {
+                title = new EntityRecommendation(type: Entity_Note_Title) { Entity = currentTitle };
+            }
+            else
+            {
+                // Use the default note title
+                title = new EntityRecommendation(type: Entity_Note_Title) { Entity = DefaultNoteTitle };
+            }
+
+            // Create a new note object 
+            var note = new Note() { Title = title.Entity };
+            // Add the new note to the list of notes and also save it in order to add text to it later
+            noteToCreate = this.noteByTitle[note.Title] = note;
+
+            // Prompt the user for what they want to say in the note           
+            PromptDialog.Text(context, After_TextPrompt, "What do you want to say in your note?");
+
+        }
+
+        private async Task After_TextPrompt(IDialogContext context, IAwaitable<string> result)
+        {
+            // Set the text of the note
+            noteToCreate.Text = await result;
+            
+            await context.PostAsync($"Created note **{this.noteToCreate.Title}** that says \"{this.noteToCreate.Text}\".");
+            
+            context.Wait(MessageReceived);
+        }
+```
+
+### Handle the Note.ReadAloud Intent
+The bot can use the `Note.ReadAloud` intent to show the contents of a note, or of all the notes if the note title isn't detected.
+
+Paste the following code into the `BasicLuisDialog` class.
+```cs
+        [LuisIntent("Note.ReadAloud")]
+        public async Task NoteReadAloudIntent(IDialogContext context, LuisResult result)
+        {
+            Note note;
+            if (TryFindNote(result, out note))
+            {
+                await context.PostAsync($"**{note.Title}**: {note.Text}.");
+            }
+            else
+            {
+                // Print out all the notes if no specific note name was detected
+                string NoteList = "Here's the list of all notes: \n\n";
+                foreach (KeyValuePair<string, Note> entry in noteByTitle)
+                {
+                    Note noteInList = entry.Value;
+                    NoteList += $"**{noteInList.Title}**: {noteInList.Text}.\n\n";
+                }
+                await context.PostAsync(NoteList);
+            }
+
+            context.Wait(MessageReceived);
+        }
+        
+        public bool TryFindNote(string noteTitle, out Note note)
+        {
+            bool foundNote = this.noteByTitle.TryGetValue(noteTitle, out note); // TryGetValue returns false if no match is found.
+            return foundNote;
+        }
+        
+        public bool TryFindNote(LuisResult result, out Note note)
+        {
+            note = null;
+
+            string titleToFind;
+
+            EntityRecommendation title;
+            if (result.TryFindEntity(Entity_Note_Title, out title))
+            {
+                titleToFind = title.Entity;
+            }
+            else
+            {
+                titleToFind = DefaultNoteTitle;
+            }
+
+            return this.noteByTitle.TryGetValue(titleToFind, out note); // TryGetValue returns false if no match is found.
+        }
+```
+
+### Handle the Note.Delete intent
+Paste the following code into the `BasicLuisDialog` class.
+
+```cs
+        [LuisIntent("Note.Delete")]
+        public async Task NoteDeleteIntent(IDialogContext context, LuisResult result)
+        {
+            Note note;
+            if (TryFindNote(result, out note))
+            {
+                this.noteByTitle.Remove(note.Title);
+                await context.PostAsync($"Note {note.Title} deleted");
+            }
+            else
+            {                             
+                // Prompt the user for a note title
+                PromptDialog.Text(context, After_DeleteTitlePrompt, "What is the title of the note you want to delete?");                         
+            }           
+        }
+
+        private async Task After_DeleteTitlePrompt(IDialogContext context, IAwaitable<string> result)
+        {
+            Note note;
+            string titleToDelete = await result;
+            bool foundNote = this.noteByTitle.TryGetValue(titleToDelete, out note);
+
+            if (foundNote)
+            {
+                this.noteByTitle.Remove(note.Title);
+                await context.PostAsync($"Note {note.Title} deleted");
+            }
+            else
+            {
+                await context.PostAsync($"Did not find note named {titleToDelete}.");
+            }
+
+            context.Wait(MessageReceived);
+        }
+```
+
+## Build the bot
+Right-click on **build.cmd** in the code editor and choose **Run from Console**.
+
+   ![Run build.cmd](../media/bot-builder-dotnet-use-luis/bot-service-run-console.png)
+
+## Test the bot
+
+In the Azure Portal, click on **Test in Web Chat** to test the bot. Try type messages like "Create a note", "read my notes", and "delete notes".
+   ![Test notes bot in Web Chat](../media/bot-builder-dotnet-use-luis/bot-service-test-notebot.png)
 
 > [!TIP]
 > If you find that your bot doesn't always recognize the correct intent or entities, improve your LUIS app's performance by giving it more example utterances to train it. You can retrain your LUIS app without any modification to your bot's code. See [Add example utterances](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/add-example-utterances) and [train and test your LUIS app](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/train-test).
 
-
-## Regions and keys
-The region to which you publish your LUIS app must correspond to the region or location you specify in the Azure portal when you create a key. To publish a LUIS app to more than one region, you need at least one key per region. LUIS apps created at <a href="https://www.luis.ai" target="_blank">https://www.luis.ai</a> can be published to endpoints in the following regions:
-
- Azure region   |   Endpoint URL format   |   
-------|------|
-West US     |   `https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/YOUR-APP-ID?subscription-key=YOUR-SUBSCRIPTION-KEY`  |
-East US 2    |   `https://eastus2.api.cognitive.microsoft.com/luis/v2.0/apps/YOUR-APP-ID?subscription-key=YOUR-SUBSCRIPTION-KEY`   |
-West Central US     |   `https://westcentralus.api.cognitive.microsoft.com/luis/v2.0/apps/YOUR-APP-ID?subscription-key=YOUR-SUBSCRIPTION-KEY`   |
-Southeast Asia     |   `https://southeastasia.api.cognitive.microsoft.com/luis/v2.0/apps/YOUR-APP-ID?subscription-key=YOUR-SUBSCRIPTION-KEY`   |
-
-To publish to the European regions, you can create LUIS apps at <a href="https://eu.luis.ai" target="_blank">https://eu.luis.ai</a>.  
-
- Azure region   |   Endpoint URL format   |   
-------|------|
-West Europe     | `https://westeurope.api.cognitive.microsoft.com/luis/v2.0/apps/YOUR-APP-ID?subscription-key=YOUR-SUBSCRIPTION-KEY` |
-
-## Data privacy
-To keep LUIS from saving the user's utterances, set the `log` parameter to false in the [LuisModel attribute](/dotnet/api/microsoft.bot.builder.luis.luismodelattribute).
-
-[!code-csharp[Class definition](../includes/code/dotnet-luis-dialogs.cs#classDefinitionLogFalse)]
+> [!TIP]
+> If your bot code runs into an issue, check the following:
+> * You have [built the bot](./bot-builder-dotnet-luis-dialogs.md#build-the-bot).
+> * Your bot code defines a handler for every intent in your LUIS app.
 
 ## Next steps
 
@@ -128,7 +379,6 @@ From trying the bot, you can see how tasks are invoked by a LUIS intent. However
 
 - [Dialogs](bot-builder-dotnet-dialogs.md)
 - [Manage conversation flow with dialogs](bot-builder-dotnet-manage-conversation-flow.md)
-- [Language understanding](../cognitive-services-bot-intelligence-overview.md#language-understanding)
 - <a href="https://www.luis.ai" target="_blank">LUIS</a>
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
 

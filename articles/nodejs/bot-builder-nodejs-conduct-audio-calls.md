@@ -2,12 +2,12 @@
 title: Conduct audio calls | Microsoft Docs
 description: Learn how to conduct audio calls with Skype in a bot using Node.js
 author: RobStand
-ms.author: rstand
-manager: rstand
+ms.author: kamrani
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 08/04/2017
-ms.reviewer: 
+ms.date: 12/13/17
+ 
 ---
 
 # Support audio calls with Skype
@@ -44,10 +44,13 @@ bot.dialog('/', function (session) {
 });
 ```
 
+> [!NOTE]
+> To find your bot's **AppID** and **AppPassword**, see [MicrosoftAppID and MicrosoftAppPassword](~/bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
+
 The emulator doesn’t currently support testing calling bots. To test your bot, you’ll need to go through most of the steps required to publish your bot.  You will also need to use a Skype client to interact with the bot. 
 
 ### Enable the Skype channel
-[Register your bot](../portal-register-bot.md) and enable the Skype channel. You will need provide a messaging endpoint when you register your bot in the developer portal. It is recommended that you pair your calling bot with a chat bot so the chat bot’s endpoint is what you would normally put in that field.  If you’re only registering a calling bot you can simply paste your calling endpoint into that field.  
+[Register your bot](../bot-service-quickstart-registration.md) and enable the Skype channel. You will need to provide a messaging endpoint when you register your bot. It is recommended that you pair your calling bot with a chat bot so the chat bot’s endpoint is what you would normally put in that field.  If you’re only registering a calling bot you can simply paste your calling endpoint into that field.  
 
 To enable the actual calling feature you’ll need to go into the Skype channel for your bot and turn on the calling feature. You’ll then be provided with a field to copy your calling endpoint into. Make sure you use the https ngrok link for the host portion of your calling endpoint.
 

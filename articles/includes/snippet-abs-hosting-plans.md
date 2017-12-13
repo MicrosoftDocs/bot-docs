@@ -1,4 +1,4 @@
-Azure Bot Service offers two different hosting plans for bots. Converting bot source code from one plan to the other is a manual process.   
+Bot Service offers two different hosting plans for bots. Converting bot source code from one plan to the other is a manual process.   
 
 ## App Service plan
 

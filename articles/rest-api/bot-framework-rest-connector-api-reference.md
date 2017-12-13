@@ -1,12 +1,12 @@
 ---
 title: API reference | Microsoft Docs
-description: Learn about headers, operations, objects, and errors in the Bot Connector service. 
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+description: Learn about headers, operations, objects, and errors in the Bot Connector service and Bot State service. 
+author: RobStand
+ms.author: kamrani
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/12/2017
+ms.date: 12/13/2017
 ---
 
 # API reference
@@ -697,7 +697,7 @@ Defines a user or bot that was mentioned in the conversation.<br/><br/>
 
 | Property | Type | Description |
 |----|----|----|
-| **mentioned** | [ChannelAccount](#channelaccount-object) | A **ChannelAccount** object that specifies the user or the bot that was mentioned. Note that some channels such as Slack assign names per conversation, so it is possible that your bot's mentioned name (in the message's **recipient** property) may be different from the handle that you specified when you [registered](../portal-register-bot.md) your bot. However, the account IDs for both would be the same. |
+| **mentioned** | [ChannelAccount](#channelaccount-object) | A **ChannelAccount** object that specifies the user or the bot that was mentioned. Note that some channels such as Slack assign names per conversation, so it is possible that your bot's mentioned name (in the message's **recipient** property) may be different from the handle that you specified when you [registered](../bot-service-quickstart-registration.md) your bot. However, the account IDs for both would be the same. |
 | **text** | string | The user or bot as mentioned in the conversation. For example, if the message is "@ColorBot pick me a new color," this property would be set to **@ColorBot**. Not all channels set this property. |
 | **type** | string | This object's type. Always set to **Mention**. |
 

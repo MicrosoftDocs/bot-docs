@@ -3,10 +3,10 @@ title: Key concepts in the Bot Builder SDK for Node.js | Microsoft Docs
 description: Understand the key concepts and tools for building and deploying conversational bots available in the Bot Builder SDK for Node.js.
 author: DeniseMak
 ms.author: v-demak
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 06/19/2017
+ms.date: 12/13/2017
 ---
 
 # Key concepts in the Bot Builder SDK for Node.js
@@ -36,7 +36,7 @@ Messages can consist of text to be displayed, text to be spoken, attachments, ri
 For an example that demonstrates how to send a rich graphical card containing interactive buttons that the user clicks to initiate an action, see [Add rich cards to messages](bot-builder-nodejs-send-rich-cards.md). For an example that demonstrates how to send and receive attachments, see [Send attachments](bot-builder-nodejs-send-receive-attachments.md). For an example that demonstrates how to send a message that specifies text to be spoken by your bot on a speech-enabled channel, see [Add speech to messages](bot-builder-nodejs-text-to-speech.md). For an example that demonstrates how to send suggested actions, see [Send suggested actions](bot-builder-nodejs-send-suggested-actions.md).
 
 ## Dialogs
-Dialogs help you organize the conversational logic in your bot and are fundamental to [designing conversation flow](../bot-design-conversation-flow.md). For an introduction to dialogs, see [Manage a conversation with dialogs](bot-builder-nodejs-dialog-manage-conversation.md).
+Dialogs help you organize the conversational logic in your bot and are fundamental to [designing conversation flow](../bot-service-design-conversation-flow.md). For an introduction to dialogs, see [Manage a conversation with dialogs](bot-builder-nodejs-dialog-manage-conversation.md).
 
 ## Actions
 You'll want to design your bot to be able to handle interruptions like requests for cancellation or help at any time during the conversation flow. The Bot Builder SDK for Node.js provides global message handlers that trigger actions like cancellation or invoking other dialogs. 
@@ -79,7 +79,7 @@ Bot Builder lets you use LUIS to add natural language understanding to your bot 
 [ChatConnector]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.chatconnector.html
 [ConsoleConnector]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.consoleconnector.html
 
-[ChannelInspector]: ../portal-channel-inspector.md
+[ChannelInspector]: ../bot-service-channel-inspector.md
 
 [Session]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html
 [SessionSend]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#send

@@ -1,13 +1,13 @@
 ---
 title: Bot Builder SDK for .NET | Microsoft Docs
 description: Get started with Bot Builder SDK for .NET, a powerful, easy-to-use framework for building bots.
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+author: RobStand
+ms.author: kamrani
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 08/04/2017
-ms.reviewer:
+ms.date: 12/13/2017
+
 ---
 
 # Bot Builder SDK for .NET
@@ -60,4 +60,4 @@ Learn more about building bots using the Bot Builder SDK for .NET by reviewing a
 - [Quickstart](bot-builder-dotnet-quickstart.md): Quickly build and test a simple bot by following instructions in this step-by-step tutorial.
 - [Key concepts](bot-builder-dotnet-concepts.md): Learn about key concepts in the Bot Builder SDK for .NET.
 
-If you encounter problems or have suggestions regarding the Bot Builder SDK for .NET, see [Support](../resources-support.md) for a list of available resources. 
+If you encounter problems or have suggestions regarding the Bot Builder SDK for .NET, see [Support](../bot-service-resources-links-help.md) for a list of available resources. 

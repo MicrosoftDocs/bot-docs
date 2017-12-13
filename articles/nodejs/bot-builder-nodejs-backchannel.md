@@ -1,12 +1,12 @@
 ---
 title: Exchange information using the web control | Microsoft Docs
 description: Learn how to exchange information between the bot and a web page using the Bot Builder SDK for Node.js.
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+author: RobStand
+ms.author: kamrani
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 06/05/2017
+ms.date: 12/13/2017
 ---
 
 # Use the backchannel mechanism

@@ -2,10 +2,10 @@
 title: Define a LUIS recognizer as task trigger | Microsoft Docs
 description: Learn how to set up language understanding recognizer as task trigger using LUIS.ai
 author: vkannan
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 07/04/2017
+ms.date: 12/13/2017
 ROBOTS: NoIndex, NoFollow
 ---
 

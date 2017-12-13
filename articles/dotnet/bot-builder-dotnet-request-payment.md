@@ -1,13 +1,13 @@
 ---
 title: Request payment | Microsoft Docs
 description: Learn how to send a payment request using the Bot Builder SDK for .NET.
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+author: RobStand
+ms.author: kamrani
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/11/2017
-ms.reviewer: 
+ms.date: 12/13/17
+ 
 ---
 
 # Request payment
@@ -23,11 +23,12 @@ This article describes how to send a payment request using the Bot Builder SDK f
 
 Before you can send a payment request using the Bot Builder SDK for .NET, you must complete these prerequisite tasks.
 
-### Register and configure your bot
+### Update Web.config
 
-1. [Register](../portal-register-bot.md) your bot with the Bot Framework.
+Update your bot's **Web.config** file to set `MicrosoftAppId` and `MicrosoftAppPassword` to the app ID and password values that were generated for your bot during the [registration](~/bot-service-quickstart-registration.md) process. 
 
-2. Update your bot's **Web.config** file to set `MicrosoftAppId` and `MicrosoftAppPassword` to the app ID and password values that were generated for your bot during the registration process. 
+> [!NOTE]
+> To find your bot's **AppID** and **AppPassword**, see [MicrosoftAppID and MicrosoftAppPassword](~/bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
 
 ### Create and configure merchant account
 

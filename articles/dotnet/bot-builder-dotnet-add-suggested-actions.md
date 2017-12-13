@@ -1,12 +1,12 @@
 ---
 title: Add suggested actions to messages | Microsoft Docs
 description: Learn how to add suggested actions to messages using the Bot Builder SDK for .NET.
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+author: RobStand
+ms.author: kamrani
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 06/06/2017
+ms.date: 12/13/2017
 ---
 
 # Add suggested actions to messages
@@ -42,6 +42,6 @@ When the user taps one of the suggested actions, the bot will receive a message 
 
 [cardAction]: /dotnet/api/microsoft.bot.connector.cardaction
 
-[inspector]: ../portal-channel-inspector.md
+[inspector]: ../bot-service-channel-inspector.md
 
-[channelInspector]: ../portal-channel-inspector.md
+[channelInspector]: ../bot-service-channel-inspector.md

@@ -1,12 +1,12 @@
 ---
 title: Manage state data | Microsoft Docs
 description: Learn how to save and retrieve state data with the Bot Builder SDK for .NET.
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+author: RobStand
+ms.author: kamrani
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 06/14/2017
+ms.date: 12/13/17
 ---
 
 # Manage state data
@@ -91,7 +91,10 @@ If you have access to a message that belongs to the same context in which you wa
 
 [!code-csharp[Get State client](../includes/code/dotnet-state.cs#getStateClient1)]
 
-If you do not have access to a message that belongs to the same context in which you want to manage state data, you can create a state client by simply creating a new instance of the `StateClient` class. In this example, `microsoftAppId` and `microsoftAppPassword` are the Bot Framework authentication credentials that you acquire for your bot during the [bot registration](../portal-register-bot.md) process.
+If you do not have access to a message that belongs to the same context in which you want to manage state data, you can create a state client by simply creating a new instance of the `StateClient` class. In this example, `microsoftAppId` and `microsoftAppPassword` are the Bot Framework authentication credentials that you acquire for your bot during the [bot creation](../bot-service-quickstart.md) process.
+
+> [!NOTE]
+> To find your bot's **AppID** and **AppPassword**, see [MicrosoftAppID and MicrosoftAppPassword](~/bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
 
 [!code-csharp[Get State client](../includes/code/dotnet-state.cs#getStateClient2)]
 
@@ -143,7 +146,7 @@ You can design your bot to account for this scenario, as shown in the following 
 
 ## Additional resources
 
-- [Bot Framework troubleshooting guide](../troubleshoot-general-problems.md)
+- [Bot Framework troubleshooting guide](../bot-service-troubleshoot-general-problems.md)
 - <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
 
 [Activity]: /dotnet/api/microsoft.bot.connector.activity

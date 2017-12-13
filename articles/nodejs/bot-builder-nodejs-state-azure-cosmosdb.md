@@ -3,10 +3,10 @@ title: Manage custom state data with Azure Cosmos DB | Microsoft Docs
 description: Learn how to save and retrieve state data using Azure Cosmos DB with the Bot Builder SDK for Node.js.
 author: DucVo
 ms.author: v-ducvo
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 06/19/2017
+ms.date: 12/13/2017
 ---
 
 # Manage custom state data with Azure Cosmos DB for Node.js
@@ -23,11 +23,11 @@ In this article, you’ll implement Cosmos DB storage to store and manage your b
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/en/).
-- [Bot Framework Emulator](~/debug-bots-emulator.md)
+- [Bot Framework Emulator](~/bot-service-debug-emulator.md)
 - Must have a Node.js bot. If you do not have one, go [create a bot](bot-builder-nodejs-quickstart.md). 
 
 ## Create Azure account
-If you don't have an Azure account, click [here](https://azure.microsoft.com/en-us/free/) to sign up for a free trial.
+If you don't have an Azure account, click [here](https://azure.microsoft.com/en-us/free/) to sign up for a free account.
 
 ## Set up the Azure Cosmos DB database
 1. After you’ve logged into the Azure portal, create a new *Azure Cosmos DB* database by clicking **New**. 
@@ -95,7 +95,7 @@ node app.js
 
 At this point, your bot is running locally. Start the emulator and then connect to your bot from the emulator:
 
-1. Type http://localhost:port-number/api/messages into the address bar, where port-number matches the port number shown in the browser where your application is running. You can leave **Microsoft App ID** and **Microsoft App Password** fields blank for now. You'll get this information later when you register your bot.
+1. Type **http://localhost:port-number/api/messages** into the emulator's address bar, where port-number matches the port number shown in the browser where your application is running. You can leave **Microsoft App ID** and **Microsoft App Password** fields blank for now. You'll get this information later when you [register your bot](~/bot-service-quickstart-registration.md).
 2. Click **Connect**.
 3. Test your bot by sending your bot a message. Interact with your bot as you normally would. When you are done, go to **Storage Explorer** and view your saved state data.
 

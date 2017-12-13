@@ -1,9 +1,9 @@
 ---
 title: Add suggested actions to messages | Microsoft Docs
 description: Learn how to send suggested actions within messages using the Bot Builder SDK for Node.js.
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+author: RobStand
+ms.author: kamrani
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date:  06/06/2017
@@ -45,6 +45,6 @@ Be aware that the `imBack` method will post the `value` to the chat window of th
 
 [ICardAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.icardaction.html
 
-[inspector]: ../portal-channel-inspector.md
+[inspector]: ../bot-service-channel-inspector.md
 
-[channelInspector]: ../portal-channel-inspector.md
+[channelInspector]: ../bot-service-channel-inspector.md
