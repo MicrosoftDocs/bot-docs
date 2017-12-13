@@ -2,10 +2,10 @@
 title: Configure adaptive cards | Microsoft Docs
 description: Learn how to configure adaptive cards.
 author: vkannan
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 07/04/2017
+ms.date: 12/13/2017
 ROBOTS: NoIndex, NoFollow
 ---
 

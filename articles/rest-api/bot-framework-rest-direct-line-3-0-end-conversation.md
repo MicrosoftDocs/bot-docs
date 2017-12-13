@@ -1,12 +1,12 @@
 ---
 title: End a conversation | Microsoft Docs
 description: Learn how to end a conversation using Direct Line API v3.0. 
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+author: RobStand
+ms.author: kamrani
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 06/13/2017
+ms.date: 12/13/2017
 ---
 
 # End a conversation

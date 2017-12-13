@@ -2,10 +2,10 @@
 title: Define a script function as a Do action | Microsoft Docs
 description: Learn how to set up script action function as Do action.
 author: vkannan
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 07/04/2017
+ms.date: 12/13/2017
 ROBOTS: NoIndex, NoFollow
 ---
 

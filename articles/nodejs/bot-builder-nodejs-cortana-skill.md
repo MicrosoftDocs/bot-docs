@@ -2,11 +2,11 @@
 title: Build a speech-enabled bot with Cortana skills | Microsoft Docs
 description: Learn how to build a speech-enabled bot with Cortana skills and the Bot Builder SDK for Node.js.
 author: DeniseMak
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/10/2017
-ms.reviewer:
+ms.date: 12/13/2017
+
 ---
 # Build a speech-enabled bot with Cortana skills
 > [!div class="op_single_selector"]
@@ -403,7 +403,7 @@ bot.dialog('PlayGameDialog', function (session, args) {
 ```
 
 ## Next steps
-If you have a bot running locally or deployed in the cloud, you can invoke it from Cortana. See [Test a Cortana skill](../debug-bots-cortana-skill-invoke.md) for the steps required to try out your Cortana Skill.
+If you have a bot running locally or deployed in the cloud, you can invoke it from Cortana. See [Test a Cortana skill](../bot-service-debug-cortana-skill.md) for the steps required to try out your Cortana Skill.
 
 
 ## Additional resources

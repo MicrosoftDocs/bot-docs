@@ -2,10 +2,10 @@
 title: Test a bot | Microsoft Docs
 description: Testing and debugging your Conversation Designer bot.
 author: vkannan
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 07/04/2017
+ms.date: 12/13/2017
 ROBOTS: NoIndex, NoFollow
 ---
 

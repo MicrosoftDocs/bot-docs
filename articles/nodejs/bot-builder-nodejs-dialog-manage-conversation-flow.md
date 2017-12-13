@@ -3,10 +3,10 @@ title: Manage a conversation flow with dialogs | Microsoft Docs
 description: Learn how to manage a conversation between a bot and a user with dialogs in the Bot Builder SDK for Node.js.
 author: v-ducvo
 ms.author: v-ducvo
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 06/19/2017
+ms.date: 12/13/2017
 ---
 
 # Manage conversation flow with dialogs
@@ -77,7 +77,7 @@ var bot = new builder.UniversalBot(connector, [..waterfall steps..]).set('storag
 
 The default dialog is created as an array of functions that define the steps of the waterfall. In the example, there are four functions so the waterfall has four steps. Each step performs a single task and the results are processed in the next step. The process continues until the last step, where the reservation is confirmed and the dialog ends.
 
-The following screen shot shows the results of this bot running in the [Bot Framework Emulator](../debug-bots-emulator.md):
+The following screen shot shows the results of this bot running in the [Bot Framework Emulator](../bot-service-debug-emulator.md):
 
 ![Manage conversation flow with waterfall](../media/bot-builder-nodejs-dialog-manage-conversation/waterfall-results.png)
 

@@ -38,9 +38,9 @@
             "breadcrumb_path": "/bot-framework/breadcrumb/TOC.json",
             "author": "RobStand",
             "ms.prod": "bot-framework",
-            "searchScope": ["BotFramework"],
-            "ms.date": "05/10/2017",
-            "titleSuffix": "Bot Framework"
+            "searchScope": ["BotService"],
+            "ms.date": "12/13/2017",
+            "titleSuffix": "Bot Service"
         },
         "fileMetadata": {
             "ms.author": {
@@ -53,7 +53,7 @@
                 "**/**.md": "bf-bot-builder"
             },
             "ms.date": {
-                "**/**.md": "05/10/2017"
+                "**/**.md": "12/13/2017"
             }
         },
         "template": [],

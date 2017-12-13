@@ -1,7 +1,7 @@
 | Template | Description |
 |----|----|
 | Basic | Creates a bot that uses dialogs to respond to user input. |
-| Form | Creates a bot that collects input from a user via a guided conversation that is created using [FormFlow](~/dotnet/bot-builder-dotnet-formflow.md) (in C#) or [waterfalls](~/nodejs/bot-builder-nodejs-prompts.md) (in Node.js). |
+| Form | Creates a bot that collects input from a user via a guided conversation that is created using [FormFlow](~/dotnet/bot-builder-dotnet-formflow.md) in C# or [waterfalls](~/nodejs/bot-builder-nodejs-prompts.md) in Node.js. |
 | Language understanding | Creates a bot that uses natural language models (LUIS) to understand user intent. |
+| QnA Maker | Creates a bot that uses the QnA Maker service to answer user's FAQs.
 | Proactive | Creates a bot that uses Azure Functions to alert users of events. |
-| Question and Answer | Creates a bot that uses a knowledge base to answer the user’s questions. |

@@ -1,13 +1,13 @@
 ---
 title: Conduct audio calls with Skype | Microsoft Docs
 description: Learn how to conduct audio calls with Skype using the Bot Builder SDK for .NET.
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+author: RobStand
+ms.author: kamrani
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 08/04/2017
-ms.reviewer:
+ms.date: 12/13/2017
+
 ---
 
 # Conduct audio calls with Skype

@@ -1,11 +1,11 @@
 ---
 title: Release notes | Microsoft Docs
 description: View the release notes for Conversation Designer
-author: kbrandl
-manager: rstand
+author: RobStand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 07/04/2017
+ms.date: 12/13/2017
 ROBOTS: NoIndex, NoFollow
 ---
 

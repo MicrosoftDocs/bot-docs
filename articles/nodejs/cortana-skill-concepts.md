@@ -3,12 +3,12 @@ title: Building a Cortana skill using Node.js | Microsoft Docs
 description: Learn core concepts for building a Cortana skill in the Bot Builder SDK for Node.js.
 keywords: Bot Framework, Cortana skill, speech, Node.js, Bot Builder, SDK, key concepts, core concepts
 author: DeniseMak
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 
-ms.date: 04/12/2017
-ms.reviewer:
+ms.date: 12/13/2017
+
 #ROBOTS: Index
 ---
 

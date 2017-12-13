@@ -3,11 +3,10 @@ title: Authenticating activities using .NET Core | Microsoft Docs
 description: Learn how to authenticate bots activities using .NET Core.
 author: v-ducvo
 ms.author: v-ducvo
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 11/16/2017
-ms.reviewer:
+ms.date: 12/13/17
 ---
 
 # Authenticating activities using .NET Core
@@ -24,7 +23,7 @@ This article will show you how to set up authentication model for the specific f
 
 * [Visual Studio 2017](https://www.visualstudio.com/downloads/)
 * [.NET Core](https://www.microsoft.com/net/download/windows). Install .NET Core version you target (e.g.: .NET Core v1.1 or .NET Core v 2.0).
-* [Register a bot](~/portal-register-bot.md). Register your bot to obtain an AppID and Password that is needed for the authentication process.
+* [Register a bot](~/bot-service-quickstart-registration.md). Register your bot to obtain an AppID and Password that is needed for the authentication process.
 
 ## Create a .NET Core project
 
@@ -57,6 +56,9 @@ To use the **Bot Framework Connector**, install the NuGet package appropriate fo
 ## Update the appsettings.json
 
 The Bot Framework Connector requires your AppID and Password to authenticate the bot. You can set these values in the **appsettings.json** of your web app project.
+
+> [!NOTE]
+> To find your bot's **AppID** and **AppPassword**, see [MicrosoftAppID and MicrosoftAppPassword](~/bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
 
 ### appsettings.json for .NET Core v1.1:
 
