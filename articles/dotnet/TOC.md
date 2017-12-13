@@ -28,10 +28,10 @@
 ## [Build a Cortana skill](bot-builder-dotnet-cortana-skill.md)
 ## [Conduct audio calls with Skype](bot-builder-dotnet-audio-calls.md)
 ## Conduct real-time media calls with Skype
-## [Real-time media calling concepts](bot-builder-dotnet-real-time-media-concepts.md)
-## [Requirements for real-time media bots](bot-builder-dotnet-real-time-media-requirements.md)
-## [Build a real-time media bot](bot-builder-dotnet-real-time-audio-video-call-overview.md)
-## [Deploy a real-time media bot](bot-builder-dotnet-real-time-deploy-visual-studio.md)
+### [Real-time media calling concepts](bot-builder-dotnet-real-time-media-concepts.md)
+### [Requirements for real-time media bots](bot-builder-dotnet-real-time-media-requirements.md)
+### [Build a real-time media bot](bot-builder-dotnet-real-time-audio-video-call-overview.md)
+### [Deploy a real-time media bot](bot-builder-dotnet-real-time-deploy-visual-studio.md)
 # State data
 ## [Manage state data](bot-builder-dotnet-state.md)
 ## [Manage state data using Cosmos DB](bot-builder-dotnet-state-azure-cosmosdb.md)
