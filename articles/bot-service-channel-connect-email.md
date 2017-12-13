@@ -20,14 +20,7 @@ Bots can communicate with users via Office 365 email in addition to other [chann
 
 You can connect a bot to the Email channel by entering Office 365 credentials in the Email channel configuration.
 
-1. Sign in to the <a href="https://dev.botframework.com/" target="_blank">Bot Framework Portal</a>.
-2. Click **My bots**.
-3. Select your bot.
-4. Click the **Email** channel.  
-5. Enter valid email credentials.
-    * Email address
-    * Password
-6. Click **Save**.
+To add the Email channel, open the bot in the [Azure Portal](https://portal.azure.com/), click the **Channels** blade, and then click **Email**. Enter your valid email credentials and click **Save**.
 
 ![Enter email credentials](~/media/bot-service-channel-connect-email/bot-service-channel-connect-email-credentials.png)
 

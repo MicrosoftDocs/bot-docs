@@ -55,7 +55,7 @@ To generate a MicrosoftAppPassword, do the following:
 1. From the **Settings** blade, click **Manage**. This is the link appearing by the **Microsoft App ID**. This link will open a window where you can generate a new password. <br/>
   ![Manage link in Settings blade](~/media/azure-bot-quickstarts/registration-settings-manage-link.png)
 
-2. Click **Generate Microsoft App Password**. This will generate a new password for your bot. Copy this password and save it to a file. This is the only time you will see this password. If you do not have the full password saved, you will need to repeat the process to create a new password should you need it later. <br/>
+2. Click **Generate New Password**. This will generate a new password for your bot. Copy this password and save it to a file. This is the only time you will see this password. If you do not have the full password saved, you will need to repeat the process to create a new password should you need it later. <br/>
   ![Generate Microsoft App Password](~/media/azure-bot-quickstarts/registration-generate-app-password.png)
 
 ## Test the bot

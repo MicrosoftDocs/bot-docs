@@ -20,23 +20,17 @@ The Web Chat channel in the Bot Framework Portal contains everything you need to
 
 ##<a id="step-1"></a> Get your bot secret key
 
-1. Sign in to the <a href="https://dev.botframework.com/" target="_blank">Bot Framework Portal</a>.
+1. Open your bot in the [Azure Portal](http://portal.azure.com) and click **Channels** blade.
 
-2. Click **My bots**.
-
-3. Select your bot.
-
-4. Under **Channels** on the bot dashboard, click **Edit** for the **Web Chat** channel.  
+2. Click **Edit** for the **Web Chat** channel.  
 ![Web chat channel](~/media/bot-service-channel-webchat/bot-service-channel-list.png)
 
-5. Click **Add new site**, name your site, and click **Done**.
-
-6. Under **Secret keys**, click **Show** for the first key.  
+3. Under **Secret keys**, click **Show** for the first key.  
 ![Secret key](~/media/bot-service-channel-webchat/secret-key.png)
 
-7. Copy the **Secret key** and the **Embed code**.
+4. Copy the **Secret key** and the **Embed code**.
 
-8. Click **Done**.
+5. Click **Done**.
 
 ## Embed the web chat control in your website
 
