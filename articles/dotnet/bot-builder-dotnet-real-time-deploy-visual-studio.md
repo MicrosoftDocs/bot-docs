@@ -6,7 +6,7 @@ ms.author: malarch
 manager: ssulzer
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 08/04/2017
+ms.date: 12/13/17
 ---
 
 # Deploy a real-time media bot from Visual Studio to Azure
@@ -14,21 +14,17 @@ Real-time media bots can be hosted in either an "IaaS" Azure Virtual Machine or 
 
 ## Prerequisites
 
-You must have a Microsoft Azure subscription before you can deploy a bot to Azure. If you do not already have a subscription, you can register for a <a href="https://azure.microsoft.com/en-us/free/" target="_blank">free trial</a>. Additionally, the process described by this article requires Visual Studio. If you do not already have Visual Studio, you can download <a href="https://www.visualstudio.com/downloads/" target="_blank">Visual Studio 2017 Community</a> for free.
+You must have a Microsoft Azure subscription before you can deploy a bot to Azure. If you do not already have a subscription, you can register for a <a href="https://azure.microsoft.com/en-us/free/" target="_blank">free account</a>. Additionally, the process described by this article requires Visual Studio. If you do not already have Visual Studio, you can download <a href="https://www.visualstudio.com/downloads/" target="_blank">Visual Studio 2017 Community</a> for free.
 
 ### Certificate from a valid certificate authority
 The bot needs to be configured with a valid certificate from a trusted Certificate Authority (CA). The Subject Name (SN) or the last entry of the Subject Alternative Name (SAN) of the certificate should be the name of the cloud service. Wild-card certificates are currently not supported. If a CNAME is used to point to the cloud service, the CNAME should be the SN or the last SAN entry of the certificate.
 
 ## Configure application settings
-For your bot to function properly in the cloud, you must ensure that its application settings are correct.
-If you've already [registered](../portal-register-bot.md) your bot with the Bot Framework,
-update the Microsoft App Id and Microsoft App Password values in your application's configuration settings
-as part of the deployment process.
-Specify the **app ID** and **password** values that were generated for your bot during registration.
-
-> [!TIP]
-> Set the following key values in the app.config file of your worker role:
+For your bot to function properly in the cloud, you must ensure that its application settings are correct. More specifically, set the following key values in the app.config file of your worker role:
 > <ul><li>MicrosoftAppId</li><li>MicrosoftAppPassword</li></ul>
+
+> [!NOTE]
+> To find your bot's **AppID** and **AppPassword**, see [MicrosoftAppID and MicrosoftAppPassword](~/bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
 
 ## Create worker role in the Azure Portal
 ### Step 1: Create Cloud Service(classic)

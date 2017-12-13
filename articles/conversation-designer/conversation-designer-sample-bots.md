@@ -2,10 +2,10 @@
 title: Create a Conversation Designer bot from a Sample bot | Microsoft Docs
 description: Start a new bot with one of these sample bots.
 author: v-ducvo
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 10/04/2017
+ms.date: 12/13/2017
 ROBOTS: NoIndex, NoFollow
 ---
 

@@ -3,10 +3,10 @@ title: Define conversation steps with waterfalls | Microsoft Docs
 description: Learn how to use waterfalls to define the steps of a conversation with the Bot Builder SDK for Node.js.
 author: v-ducvo
 ms.author: v-ducvo
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 06/19/2017
+ms.date: 12/13/2017
 ---
 
 # Define conversation steps with waterfalls
@@ -69,7 +69,7 @@ var bot = new builder.UniversalBot(connector, [
 
 In this example, the default dialog has four functions, each one representing a step in the waterfall. Each step prompts the user for input and sends the results to the next step to be processed. This process continues until the last step executes, thereby confirming the reservation and ending the dialog.
 
-The following screenshot shows the results of this bot running in the [Bot Framework Emulator](~/debug-bots-emulator.md).
+The following screenshot shows the results of this bot running in the [Bot Framework Emulator](~/bot-service-debug-emulator.md).
 
 ![Manage conversation flow with waterfall](~/media/bot-builder-nodejs-dialog-manage-conversation/waterfall-results.png)
 

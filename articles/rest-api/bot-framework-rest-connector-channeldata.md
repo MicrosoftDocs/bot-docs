@@ -1,12 +1,12 @@
 ---
 title: Implement channel-specific functionality | Microsoft Docs
 description: Learn how to implement channel-specific functionality using the Bot Connector API. 
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+author: RobStand
+ms.author: kamrani
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/12/2017
+ms.date: 12/13/2017
 ---
 
 # Implement channel-specific functionality
@@ -54,7 +54,7 @@ To create a full-fidelity Slack message, set the [Activity][Activity] object's `
 
 > [!NOTE]
 > To support buttons in Slack messages, you must enable **Interactive Messages** when you 
-> [connect your bot](../portal-configure-channels.md) to the Slack channel.
+> [connect your bot](../bot-service-manage-channels.md) to the Slack channel.
 
 This snippet shows an example of the `channelData` property for a custom Slack message.
 
@@ -279,6 +279,6 @@ This snippet shows an example of the `channelData` property for a native Kik mes
 - [Activities overview](bot-framework-rest-connector-activities.md)
 - [Create messages](bot-framework-rest-connector-create-messages.md)
 - [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md)
-- [Preview features with the Channel Inspector](../portal-channel-inspector.md)
+- [Preview features with the Channel Inspector](../bot-service-channel-inspector.md)
 
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object

@@ -1,13 +1,13 @@
 ---
 title: Request payment | Microsoft Docs
 description: Learn how to send a payment request using the Bot Builder SDK for Node.js.
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+author: RobStand
+ms.author: kamrani
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/11/2017
-ms.reviewer: 
+ms.date: 12/13/2017
+ 
 ---
 
 # Request payment
@@ -25,9 +25,10 @@ Before you can send a payment request using the Bot Builder SDK for Node.js, you
 
 ### Register and configure your bot
 
-1. [Register](../portal-register-bot.md) your bot with the Bot Framework.
+Update your bot's environment variables for `MicrosoftAppId` and `MicrosoftAppPassword` to the app ID and password values that were generated for your bot during the [registration](~/bot-service-quickstart-registration.md) process. 
 
-2. Set the `MICROSOFT_APP_ID` and `MICROSOFT_APP_PASSWORD` environment variables to the app ID and password values that were generated for your bot during the registration process. 
+> [!NOTE]
+> To find your bot's **AppID** and **AppPassword**, see [MicrosoftAppID and MicrosoftAppPassword](~/bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
 
 ### Create and configure merchant account
 

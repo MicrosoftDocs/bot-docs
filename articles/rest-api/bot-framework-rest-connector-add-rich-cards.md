@@ -1,12 +1,12 @@
 ---
 title: Add rich card attachments to messages | Microsoft Docs
 description: Learn how to add rich cards to messages using the Bot Connector service.
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+author: RobStand
+ms.author: kamrani
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/12/2017
+ms.date: 12/13/2017
 ---
 
 # Add rich card attachments to messages
@@ -264,7 +264,7 @@ The resulting card contains three blocks of text, an input field (choice list), 
 - [Channel Inspector][ChannelInspector]
 - <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a>
 
-[ChannelInspector]: ../portal-channel-inspector.md
+[ChannelInspector]: ../bot-service-channel-inspector.md
 
 [animationCard]: bot-framework-rest-connector-api-reference.md#animationcard-object
 [audioCard]: bot-framework-rest-connector-api-reference.md#audiocard-object

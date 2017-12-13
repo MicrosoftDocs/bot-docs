@@ -1,12 +1,12 @@
 ---
 title: Add suggested actions to messages | Microsoft Docs
 description: Learn how to add suggested actions to messages using the Bot Connector service.
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+author: RobStand
+ms.author: kamrani
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/12/2017
+ms.date: 12/13/2017
 ---
 
 # Add suggested actions to messages
@@ -79,7 +79,7 @@ When the user taps one of the suggested actions, the bot will receive a message 
 - [Create messages](bot-framework-rest-connector-create-messages.md)
 - [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md)
 
-[channelInspector]: ../portal-channel-inspector.md
+[channelInspector]: ../bot-service-channel-inspector.md
 
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object
 

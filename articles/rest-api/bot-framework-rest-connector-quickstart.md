@@ -1,19 +1,19 @@
 ---
 title: Create a bot with the Bot Connector service | Microsoft Docs
 description: Create a bot with the Bot Connector service. 
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+author: RobStand
+ms.author: kamrani
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/12/2017
+ms.date: 12/13/2017
 ---
 
 # Create a bot with the Bot Connector service
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-quickstart.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-quickstart.md)
-> - [Azure Bot Service](../azure-bot-service-quickstart.md)
+> - [Bot Service](../bot-service-quickstart.md)
 > - [REST](../rest-api/bot-framework-rest-connector-quickstart.md)
 
 The Bot Connector service enables your bot to exchange messages with channels that are configured in the <a href="https://dev.botframework.com/" target="_blank">Bot Framework Portal</a>, by using industry-standard REST and JSON over HTTPS. This tutorial walks you through the process of obtaining an access token from the Bot Framework and using the Bot Connector service to exchange messages with the user.
@@ -21,7 +21,7 @@ The Bot Connector service enables your bot to exchange messages with channels th
 ##<a id="get-token"></a> Get an access token
 
 > [!IMPORTANT]
-> If you have not already done so, you must [register](../portal-register-bot.md) your bot with the Bot Framework to obtain its App ID and password. You will need the bot's App ID and password to get an access token.
+> If you have not already done so, you must [register your bot](../bot-service-quickstart-registration.md) with the Bot Framework to obtain its App ID and password. You will need the bot's AppID and password to get an access token.
 
 To communicate with the Bot Connector service, you must specify an access token in the `Authorization` header of each API request, using this format: 
 
@@ -33,7 +33,7 @@ You can obtain the access token for your bot by issuing an API request.
 
 ### Request
 
-To request an access token that can be used to authenticate requests to the Bot Connector service, issue the following request, replacing **MICROSOFT-APP-ID** and **MICROSOFT-APP-PASSWORD** with the App ID and password that you obtained when you [registered](../portal-register-bot.md) your bot with the Bot Framework.
+To request an access token that can be used to authenticate requests to the Bot Connector service, issue the following request, replacing **MICROSOFT-APP-ID** and **MICROSOFT-APP-PASSWORD** with the App ID and password that you obtained when you [registered](../bot-service-quickstart-registration.md) your bot with the Bot Framework.
 
 ```http
 POST https://login.microsoftonline.com/botframework.com/oauth2/v2.0/token
@@ -65,7 +65,7 @@ A conversation is a series of messages exchanged between a user and your bot.
 
 ### Receive a message from the user
 
-When the user sends a message, the Bot Framework Connector POSTs a request to the endpoint that you specified when you [registered](../portal-register-bot.md) your bot. The body of the request is an [Activity][Activity] object. The following example shows the request body that a bot receives when the user sends a simple message to the bot. 
+When the user sends a message, the Bot Framework Connector POSTs a request to the endpoint that you specified when you [registered](../bot-service-quickstart-registration.md) your bot. The body of the request is an [Activity][Activity] object. The following example shows the request body that a bot receives when the user sends a simple message to the bot. 
 
 ```json
 {
@@ -189,18 +189,8 @@ Content-Type: application/json
 ## Next steps
 
 In this tutorial, you obtained an access token from the Bot Framework and used the Bot Connector service to exchange messages with the user. 
-You can use the [Bot Framework Emulator](../debug-bots-emulator.md) to test and debug your bot. 
-If you'd like to share your bot with others, you'll need to [configure](../portal-configure-channels.md) it to run on one or more channels and [deploy](../deploy-bot-overview.md) it to the cloud.
-
-To learn more about building great bots with the Bot Framework, see the following articles:
-
-- [How the Bot Framework works](../overview-how-bot-framework-works.md)
-- [Principles of bot design](../bot-design-principles.md)
-- [Bot Framework REST APIs](index.md)
-- [Bot Builder SDK for .NET](../dotnet/bot-builder-dotnet-overview.md)
-- [Bot Builder SDK for Node.js](../nodejs/index.md)
-- [Deploy a bot to the cloud](../deploy-bot-overview.md)
-- [Bot Framework FAQ](../resources-bot-framework-faq.md)
+You can use the [Bot Framework Emulator](../bot-service-debug-emulator.md) to test and debug your bot. 
+If you'd like to share your bot with others, you'll need to [configure](../bot-service-manage-channels.md) it to run on one or more channels.
 
 
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object

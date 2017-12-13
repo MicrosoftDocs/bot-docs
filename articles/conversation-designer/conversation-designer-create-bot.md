@@ -2,10 +2,10 @@
 title: Create a Conversation Designer bot | Microsoft Docs
 description: Learn how to create a new bot using Conversation Designer.
 author: v-ducvo
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 07/04/2017
+ms.date: 12/13/2017
 ROBOTS: NoIndex, NoFollow
 ---
 
@@ -54,5 +54,4 @@ Once the bot is provisioned, Conversation Designer will open the bot's **Build**
 
 ## Additional resources
 * Learn about [tasks](conversation-designer-tasks.md)
-* [Register](../portal-register-bot.md) bots
 * Learn more about the [Bot Builder SDK for Node](../nodejs/index.md) 

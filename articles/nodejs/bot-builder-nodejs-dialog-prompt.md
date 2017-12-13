@@ -3,10 +3,10 @@ title: Prompt for user input | Microsoft Docs
 description: Learn how to use prompts to collect user input with the Bot Builder SDK for Node.js.
 author: v-ducvo
 ms.author: v-ducvo
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 06/20/2017
+ms.date: 12/13/2017
 ---
 
 # Prompt for user input

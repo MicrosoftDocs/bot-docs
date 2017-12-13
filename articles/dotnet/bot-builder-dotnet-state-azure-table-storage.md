@@ -2,10 +2,10 @@
 title:  Manage custom state data with Azure Table storage | Microsoft Docs
 description: Learn how to save and retrieve state data using Azure Table Storage with the Bot Builder SDK for .NET
 author: kaiqb
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 09/21/2017
+ms.date: 12/13/2017
 ---
 # Manage custom state data with Azure Table Storage for .NET
 In this article, you’ll implement Azure Table storage to store and manage your bot’s state data. The default Connector State Service used by bots is not intended for the production environment. You should either use [Azure Extensions](https://github.com/Microsoft/BotBuilder-Azure) available on GitHub or implement a custom state client using data storage platform of your choice. Here are some of the reasons to use custom state storage:
@@ -25,7 +25,7 @@ You'll need:
  - [Azure Storage Explorer](http://storageexplorer.com/)
  
 ## Create Azure account
-If you don't have an Azure account, click [here](https://azure.microsoft.com/en-us/free/) to sign up for a free trial.
+If you don't have an Azure account, click [here](https://azure.microsoft.com/en-us/free/) to sign up for a free account.
 
 ## Set up the Azure Table storage service
 1. After you’ve logged into the Azure portal, create a new Azure Table storage service by clicking on **New**. 
@@ -91,7 +91,7 @@ Run your bot in Visual Studio, the code you added will create the custom **botda
 
 ## Connect your bot to the emulator
 At this point, your bot is running locally. Next, start the emulator and then connect to your bot in the emulator:
-1. Type http://localhost:port-number/api/messages into the address bar, where port-number matches the port number shown in the browser where your application is running. You can leave **Microsoft App ID** and **Microsoft App Password** fields blank for now. You'll get this information later when you register your bot.
+1. Type http://localhost:port-number/api/messages into the address bar, where port-number matches the port number shown in the browser where your application is running. You can leave **Microsoft App ID** and **Microsoft App Password** fields blank for now. You'll get this information later when you [register your bot](~/bot-service-quickstart-registration.md).
 2. Click **Connect**. 
 3. Test your bot by typing a few messages in the emulator. 
 

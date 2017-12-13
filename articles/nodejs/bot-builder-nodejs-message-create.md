@@ -3,7 +3,7 @@ title: Create messages | Microsoft Docs
 description: Learn how create messages with the Bot Builder SDK for Node.js.
 author: v-ducvo
 ms.author: v-ducvo
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 09/7/2017
@@ -59,7 +59,7 @@ In cases where you do not have the `session` object in scope, you can use `bot.s
 
 The `textFormat` property of a message can be used to specify the format of the text. The `textFormat` property can be set to **plain**, **markdown**, or **xml**. The default value for `textFormat` is **markdown**. 
 
-For a list of commonly supported text formatting, see [Text formatting](../portal-channel-inspector.md#text-formatting). To ensure that the feature(s) you want to use is supported by the target channel, preview the feature(s) using the [Channel Inspector](../portal-channel-inspector.md).
+For a list of commonly supported text formatting, see [Text formatting](../bot-service-channel-inspector.md#text-formatting). To ensure that the feature(s) you want to use is supported by the target channel, preview the feature(s) using the [Channel Inspector](../bot-service-channel-inspector.md).
 
 ## Message property
 

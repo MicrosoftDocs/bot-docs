@@ -2,10 +2,10 @@
 title: Import and export a Conversation Designer bot | Microsoft Docs
 description: Learn how to import and export Conversation Designer bots.
 author: v-ducvo
-manager: rstand
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 10/10/2017
+ms.date: 12/13/2017
 ROBOTS: NoIndex, NoFollow
 ---
 

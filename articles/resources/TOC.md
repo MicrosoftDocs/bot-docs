@@ -1,7 +1,9 @@
-# [FAQ](../resources-bot-framework-faq.md)
-# [Get support](../resources-links-help.md)
-# [Guide to identifiers](../resources-identifiers-guide.md)
-# [App Insights keys](../resources-app-insights-keys.md)
-# [Upgrade your bot to v3](../resources-upgrade-to-v3.md)
-# [User-agent requests](../resources-user-agent.md)
-<!--## [Tools](~/resources/tools.md)-->
+# [FAQ](../bot-service-resources-bot-framework-faq.md)
+# [Get support](../bot-service-resources-links-help.md)
+# [Guide to identifiers](../bot-service-resources-identifiers-guide.md)
+# [App Insights keys](../bot-service-resources-app-insights-keys.md)
+# [User-agent requests](../bot-service-resources-user-agent.md)
+# Troubleshoot
+## [Troubleshoot general problems](../bot-service-troubleshoot-general-problems.md)
+## [Troubleshoot authentication](../bot-service-troubleshoot-authentication-problems.md)
+

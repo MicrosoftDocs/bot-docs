@@ -1,12 +1,12 @@
 ---
 title: Create messages with the Bot Connector API  | Microsoft Docs
 description: Learn about commonly-used message properties within the Bot Connector API. 
-author: kbrandl
-ms.author: kibrandl
-manager: rstand
+author: RobStand
+ms.author: kamrani
+manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/12/2017
+ms.date: 12/13/2017
 ---
 
 # Create messages
@@ -19,7 +19,7 @@ Message text can be formatted using **plain**, **markdown**, or **xml**. The def
 
 The `textFormat` property of the [Activity][Activity] object can be used to specify the format of the text. For example, to create a basic message that contains only plain text, set the `textFormat` property of the [Activity][Activity] object to **plain**, set the `text` property to the contents of the message and set the `locale` property to the locale of the sender. 
 
-For a list of commonly supported text formatting, see [Text formatting](../portal-channel-inspector.md#text-formatting).
+For a list of commonly supported text formatting, see [Text formatting](../bot-service-channel-inspector.md#text-formatting).
 
 ## Attachments
 
@@ -67,5 +67,5 @@ The `suggestedActions` property of the [Activity][Activity] object can be used t
 [Mention]: bot-framework-rest-connector-api-reference.md#mention-object
 [Place]: bot-framework-rest-connector-api-reference.md#place-object
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object
-[ChannelInspector]: ../portal-channel-inspector.md
-[textFormating]: ../portal-channel-inspector.md#text-formatting
+[ChannelInspector]: ../bot-service-channel-inspector.md
+[textFormating]: ../bot-service-channel-inspector.md#text-formatting
