@@ -29,7 +29,7 @@ Not all guidance that applies to developing messaging and IVR calling bots appli
 
 ## Real-time media bots must be directly accessible on the Internet
 
-- Each VM instance hosting a real-time media bot must be directly accessible from the Internet. For real-time media bots hosted in Azure, each VM instance must have an instance-level public IP address (ILPIP). For information about obtaining and configuring an ILPIP, see <a href="https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-instance-level-public-ip" target="_blank">Instance level public IP (Classic) overview</a>. By default, an Azure subscription can obtain 5 ILPIP addresses; please contact Azure support to increase your subscription's quota.
+- Each VM instance hosting a real-time media bot must be directly accessible from the Internet. For real-time media bots hosted in Azure, each VM instance must have an instance-level public IP address (ILPIP). For information about obtaining and configuring an ILPIP, see <a href="/azure/virtual-network/virtual-networks-instance-level-public-ip" target="_blank">Instance level public IP (Classic) overview</a>. By default, an Azure subscription can obtain 5 ILPIP addresses; please contact Azure support to increase your subscription's quota.
 
 - Because of the public IP address requirement, real-time media bots must be hosted in either an "IaaS" Azure Virtual Machine, or a "classic" Azure Cloud Service. Other runtime environments, such as Bot Service or Service Fabric with VM Scale Sets, are not supported, as these do not support ILPIP.
 
@@ -43,4 +43,4 @@ Not all guidance that applies to developing messaging and IVR calling bots appli
  1.	A single VM instance may not have more than 10 video sockets created at any single time.
  2.	The Real-Time Media Platform does not currently take advantage of any Graphics Processing Unit (GPU) available on the VM to off-load H.264 video encoding/decoding. Instead, video encode and decode are done in software on the CPU. If a GPU is available, the bot may take advantage of it for its own graphics rendering (e.g., if the bot is using a 3D graphics engine).
 
-- The VM instance hosting the real-time media bot must have at least 2 CPU cores. For Azure, a Dv2-series virtual machine is recommended. Detailed information about Azure VM types is available in the <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-general" target="_blank">Azure documentation</a>. 
+- The VM instance hosting the real-time media bot must have at least 2 CPU cores. For Azure, a Dv2-series virtual machine is recommended. Detailed information about Azure VM types is available in the <a href="/azure/virtual-machines/windows/sizes-general" target="_blank">Azure documentation</a>. 

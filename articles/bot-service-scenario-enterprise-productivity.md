@@ -49,7 +49,7 @@ Dynamics CRM is a customer engagement platform. Using Bots and CRM's APIs, you c
 Application Insights helps you get actionable insights through application performance management (APM) and instant analytics. Out of the box you get rich performance monitoring, powerful alerting, and easy-to-consume dashboards to help ensure your Bot is available and performing as you expect. You can quickly see if you have a problem, then perform a root cause analysis to find and fix the issue.
 
 ## Next steps
-Next, learn about the Informational bot scenario.
+Next, learn about the Information bot scenario.
 
 > [!div class="nextstepaction"]
-> [Informational bot scenario](bot-service-scenario-informational.md)
+> [Information bot scenario](bot-service-scenario-informational.md)

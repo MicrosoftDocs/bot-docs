@@ -326,9 +326,9 @@ If your bot is running locally or deployed in the cloud, you can invoke it from 
 * [Card design best practices for Cortana][CardDesign]
 * [Cortana Dev Center][CortanaDevCenter]
 * [Testing and debugging best practices for Cortana][Cortana-TestBestPractice]
-* <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
+* <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
 
-[CortanaGetStarted]: https://docs.microsoft.com/en-us/cortana/getstarted
+[CortanaGetStarted]: /cortana/getstarted
 [BFPortal]: https://dev.botframework.com/
 
 [SSMLRef]: https://aka.ms/cortana-ssml

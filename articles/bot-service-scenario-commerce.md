@@ -11,16 +11,16 @@ ms.date: 12/13/2017
 # Commerce bot scenario
 The [Commerce bot](bot-service-scenario-commerce.md) scenario describes a bot that replaces the traditional e-mail and phone call interactions that people typically have with a hotel's concierge service. The bot takes advantage of Cognitive Services to better process customer requests via text and voice with context gathered from integration with backend services.
 
-![The application bot diagram](~/media/scenarios/bot-service-scenario-application-bot.png)
+![The application bot diagram](~/media/scenarios/bot-service-scenario-commerce-bot.png)
 
 Here is the logic flow of a Commerce bot that functions as a concierge for a hotel:
 
 1. The customer uses the hotel mobile app.
-2. The customer is authenticated via an Azure Active Directory v2 authentication endpoint.
-3. The bot looks up the customer's reservations and provides different service options based on the customer status level. For example, the customer might need dinner reservations or to book a cabana by the pool. 
-4. The bot integrates with the Language Understanding (LUIS) to better understand customer requests.
-5. The customer reviews the response and refines their question using natural conversation.
-6. After the customer accepts the response, the bot updates the customer's reservation.
+2. Using Azure AD B2C, the user authenticates.
+3. Using the custom Application Bot, user requests information. 
+4. Cognitive Services helps process the natural language request.
+5. Response is reviewed by customer who can refine the question using natural conversation.
+6. After the user is happy with the results, the Application Bot updates the customer’s reservation.
 7. Application insights gathers runtime telemetery to help development with bot performance and usage.
 
 ## Sample bot

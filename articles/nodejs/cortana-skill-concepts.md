@@ -168,5 +168,5 @@ Prompts.number has *ordinal support*, meaning that you can say "the last", "the 
 
 ## Additional resources
 
-[CortanaGetstarted]: https://docs.microsoft.com/en-us/cortana/getstarted
+[CortanaGetstarted]: /cortana/getstarted
 [SSMLRef]: https://msdn.microsoft.com/en-us/library/hh378377(v=office.14).aspx
