@@ -331,7 +331,7 @@ see [Customize a form using FormBuilder](bot-builder-dotnet-formflow-formbuilder
 - [Localize form content](bot-builder-dotnet-formflow-localize.md)
 - [Define a form using JSON schema](bot-builder-dotnet-formflow-json-schema.md)
 - [Customize user experience with pattern language](bot-builder-dotnet-formflow-pattern-language.md)
-- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
+- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
 
 [formDialog]: /dotnet/api/microsoft.bot.builder.formflow.formdialog
 

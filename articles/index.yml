@@ -25,7 +25,7 @@ sections:
     style: icon48
     items: 
     - image: 
-        src: https://docs.microsoft.com/en-us/azure/media/index/bot-service.svg
+        src: /azure/media/index/bot-service.svg
       text: Bot Service
       href: /bot-framework/bot-service-quickstart
   - type: paragraph
@@ -34,11 +34,11 @@ sections:
     style: icon48
     items: 
     - image: 
-        src: https://docs.microsoft.com/en-us/azure/app-service/media/index/logo_net.svg
+        src: /azure/app-service/media/index/logo_net.svg
       text: .NET
       href: /bot-framework/dotnet/bot-builder-dotnet-quickstart
     - image: 
-        src: https://docs.microsoft.com/en-us/azure/app-service/media/index/logo_nodejs.svg
+        src: /azure/app-service/media/index/logo_nodejs.svg
       text: Node.js
       href: /bot-framework/nodejs/bot-builder-nodejs-quickstart
 - title: Samples

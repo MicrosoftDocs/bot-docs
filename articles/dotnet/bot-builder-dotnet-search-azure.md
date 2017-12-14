@@ -178,4 +178,4 @@ For two complete samples that show how to support Azure Search with bots using t
 * [Dialogs overview](bot-builder-dotnet-dialogs.md)
 * [Azure Search bot samples](https://github.com/Microsoft/botBuilder-Samples/tree/master/CSharp/demo-Search)
 
-[search]: https://docs.microsoft.com/en-us/azure/search/search-what-is-azure-search
+[search]: /azure/search/search-what-is-azure-search
