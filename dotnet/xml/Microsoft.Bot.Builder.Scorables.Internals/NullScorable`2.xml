@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit NullScorable`2&lt;Item, Score&gt; extends System.Object implements class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !Score&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.NullScorable`2" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NullScorable(Of Item, Score)&#xA;Implements IScorable(Of Item, Score)" />
+  <TypeSignature Language="F#" Value="type NullScorable&lt;'Item, 'Score&gt; = class&#xA;    interface IScorable&lt;'Item, 'Score&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !Score&gt; Instance" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.NullScorable`2.Instance" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Instance As IScorable(Of Item, Score) " />
+      <MemberSignature Language="F#" Value=" staticval mutable Instance : Microsoft.Bot.Builder.Scorables.IScorable&lt;'Item, 'Score&gt;" Usage="Microsoft.Bot.Builder.Scorables.Internals.NullScorable&lt;'Item, 'Score&gt;.Instance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -49,6 +51,9 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;.DoneAsync(!Item item, object state, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.NullScorable`2.Microsoft#Bot#Builder#Scorables#IScorable&lt;Item,Score&gt;#DoneAsync(`0,System.Object,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Scorables.IScorable`2.DoneAsync(`0,System.Object,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -75,6 +80,9 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance !Score Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;.GetScore(!Item item, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.NullScorable`2.Microsoft#Bot#Builder#Scorables#IScorable&lt;Item,Score&gt;#GetScore(`0,System.Object)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Scorables.IScorable`2.GetScore(`0,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -99,6 +107,9 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;.HasScore(!Item item, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.NullScorable`2.Microsoft#Bot#Builder#Scorables#IScorable&lt;Item,Score&gt;#HasScore(`0,System.Object)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Scorables.IScorable`2.HasScore(`0,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -123,6 +134,9 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;.PostAsync(!Item item, object state, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.NullScorable`2.Microsoft#Bot#Builder#Scorables#IScorable&lt;Item,Score&gt;#PostAsync(`0,System.Object,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Scorables.IScorable`2.PostAsync(`0,System.Object,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -149,6 +163,9 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;object&gt; Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;.PrepareAsync(!Item item, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.NullScorable`2.Microsoft#Bot#Builder#Scorables#IScorable&lt;Item,Score&gt;#PrepareAsync(`0,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Scorables.IScorable`2.PrepareAsync(`0,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

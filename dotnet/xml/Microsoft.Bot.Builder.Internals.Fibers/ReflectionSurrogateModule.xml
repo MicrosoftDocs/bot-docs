@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ReflectionSurrogateModule extends Autofac.Module" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.ReflectionSurrogateModule" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReflectionSurrogateModule&#xA;Inherits Module" />
+  <TypeSignature Language="F#" Value="type ReflectionSurrogateModule = class&#xA;    inherit Module" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Load(class Autofac.ContainerBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.ReflectionSurrogateModule.Load(Autofac.ContainerBuilder)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Load (builder As ContainerBuilder)" />
+      <MemberSignature Language="F#" Value="override this.Load : Autofac.ContainerBuilder -&gt; unit" Usage="reflectionSurrogateModule.Load builder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>

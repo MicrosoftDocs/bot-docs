@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SelectScoreScorable`3&lt;Item, SourceScore, TargetScore&gt; extends Microsoft.Bot.Builder.Scorables.Internals.DelegatingScorable`2&lt;!Item, !SourceScore&gt; implements class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !TargetScore&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.SelectScoreScorable`3" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SelectScoreScorable(Of Item, SourceScore, TargetScore)&#xA;Inherits DelegatingScorable(Of Item, SourceScore)&#xA;Implements IScorable(Of Item, TargetScore)" />
+  <TypeSignature Language="F#" Value="type SelectScoreScorable&lt;'Item, 'SourceScore, 'argetScore&gt; = class&#xA;    inherit DelegatingScorable&lt;'Item, 'SourceScore&gt;&#xA;    interface IScorable&lt;'Item, 'argetScore&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !SourceScore&gt; scorable, class System.Func`3&lt;!Item, !SourceScore, !TargetScore&gt; selector) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.SelectScoreScorable`3.#ctor(Microsoft.Bot.Builder.Scorables.IScorable{`0,`1},System.Func{`0,`1,`2})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scorable As IScorable(Of Item, SourceScore), selector As Func(Of Item, SourceScore, TargetScore))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Scorables.Internals.SelectScoreScorable&lt;'Item, 'SourceScore, 'argetScore&gt; : Microsoft.Bot.Builder.Scorables.IScorable&lt;'Item, 'SourceScore&gt; * Func&lt;'Item, 'SourceScore, 'argetScore&gt; -&gt; Microsoft.Bot.Builder.Scorables.Internals.SelectScoreScorable&lt;'Item, 'SourceScore, 'argetScore&gt;" Usage="new Microsoft.Bot.Builder.Scorables.Internals.SelectScoreScorable&lt;'Item, 'SourceScore, 'argetScore&gt; (scorable, selector)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -58,6 +60,9 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance !TargetScore Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,TargetScore&gt;.GetScore(!Item item, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.SelectScoreScorable`3.Microsoft#Bot#Builder#Scorables#IScorable&lt;Item,TargetScore&gt;#GetScore(`0,System.Object)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Scorables.IScorable`2.GetScore(`0,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

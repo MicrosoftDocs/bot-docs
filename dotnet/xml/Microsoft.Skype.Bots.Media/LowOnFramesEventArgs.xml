@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LowOnFramesEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.LowOnFramesEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class LowOnFramesEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type LowOnFramesEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>

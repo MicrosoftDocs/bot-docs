@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit FormFlowAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.FormFlowAttribute" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class FormFlowAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type FormFlowAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsLocalizable" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.FormFlowAttribute.IsLocalizable" />
       <MemberSignature Language="VB.NET" Value="Public Property IsLocalizable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsLocalizable : bool with get, set" Usage="Microsoft.Bot.Builder.FormFlow.FormFlowAttribute.IsLocalizable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

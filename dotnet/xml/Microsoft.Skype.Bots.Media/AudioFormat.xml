@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AudioFormat extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.AudioFormat" />
   <TypeSignature Language="VB.NET" Value="Public Enum AudioFormat" />
+  <TypeSignature Language="F#" Value="type AudioFormat = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.AudioFormat Pcm16K = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.AudioFormat.Pcm16K" />
       <MemberSignature Language="VB.NET" Value="Pcm16K" />
+      <MemberSignature Language="F#" Value="Pcm16K = 0" Usage="Microsoft.Skype.Bots.Media.AudioFormat.Pcm16K" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.AudioFormat Pcm44KStereo = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.AudioFormat.Pcm44KStereo" />
       <MemberSignature Language="VB.NET" Value="Pcm44KStereo" />
+      <MemberSignature Language="F#" Value="Pcm44KStereo = 1" Usage="Microsoft.Skype.Bots.Media.AudioFormat.Pcm44KStereo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaymentDetails extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Payments.PaymentDetails" />
   <TypeSignature Language="VB.NET" Value="Public Class PaymentDetails" />
+  <TypeSignature Language="F#" Value="type PaymentDetails = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -41,10 +42,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.Payments.PaymentItem total, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Payments.PaymentItem&gt; displayItems, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Payments.PaymentShippingOption&gt; shippingOptions, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Payments.PaymentDetailsModifier&gt; modifiers, string error) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.PaymentDetails.#ctor(Microsoft.Bot.Connector.Payments.PaymentItem,System.Collections.Generic.IList{Microsoft.Bot.Connector.Payments.PaymentItem},System.Collections.Generic.IList{Microsoft.Bot.Connector.Payments.PaymentShippingOption},System.Collections.Generic.IList{Microsoft.Bot.Connector.Payments.PaymentDetailsModifier},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional total As PaymentItem = null, Optional displayItems As IList(Of PaymentItem) = null, Optional shippingOptions As IList(Of PaymentShippingOption) = null, Optional modifiers As IList(Of PaymentDetailsModifier) = null, Optional error As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Payments.PaymentDetails : Microsoft.Bot.Connector.Payments.PaymentItem * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Payments.PaymentItem&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Payments.PaymentShippingOption&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Payments.PaymentDetailsModifier&gt; * string -&gt; Microsoft.Bot.Connector.Payments.PaymentDetails" Usage="new Microsoft.Bot.Connector.Payments.PaymentDetails (total, displayItems, shippingOptions, modifiers, error)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="total" Type="Microsoft.Bot.Connector.Payments.PaymentItem" />
@@ -70,10 +72,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Payments.PaymentItem&gt; DisplayItems" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentDetails.DisplayItems" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayItems As IList(Of PaymentItem)" />
+      <MemberSignature Language="F#" Value="member this.DisplayItems : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Payments.PaymentItem&gt; with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentDetails.DisplayItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -97,10 +100,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Error" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentDetails.Error" />
       <MemberSignature Language="VB.NET" Value="Public Property Error As String" />
+      <MemberSignature Language="F#" Value="member this.Error : string with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentDetails.Error" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -123,10 +127,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Payments.PaymentDetailsModifier&gt; Modifiers" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentDetails.Modifiers" />
       <MemberSignature Language="VB.NET" Value="Public Property Modifiers As IList(Of PaymentDetailsModifier)" />
+      <MemberSignature Language="F#" Value="member this.Modifiers : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Payments.PaymentDetailsModifier&gt; with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentDetails.Modifiers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -149,10 +154,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Payments.PaymentShippingOption&gt; ShippingOptions" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentDetails.ShippingOptions" />
       <MemberSignature Language="VB.NET" Value="Public Property ShippingOptions As IList(Of PaymentShippingOption)" />
+      <MemberSignature Language="F#" Value="member this.ShippingOptions : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Payments.PaymentShippingOption&gt; with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentDetails.ShippingOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -176,10 +182,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.Payments.PaymentItem Total" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentDetails.Total" />
       <MemberSignature Language="VB.NET" Value="Public Property Total As PaymentItem" />
+      <MemberSignature Language="F#" Value="member this.Total : Microsoft.Bot.Connector.Payments.PaymentItem with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentDetails.Total" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

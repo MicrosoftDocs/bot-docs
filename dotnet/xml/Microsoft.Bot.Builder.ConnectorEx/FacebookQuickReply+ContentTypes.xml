@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit FacebookQuickReply/ContentTypes extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentTypes" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FacebookQuickReply.ContentTypes" />
+  <TypeSignature Language="F#" Value="type FacebookQuickReply.ContentTypes = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Location" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentTypes.Location" />
       <MemberSignature Language="VB.NET" Value="Public Const Location As String " />
+      <MemberSignature Language="F#" Value="val mutable Location : string" Usage="Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentTypes.Location" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Text" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentTypes.Text" />
       <MemberSignature Language="VB.NET" Value="Public Const Text As String " />
+      <MemberSignature Language="F#" Value="val mutable Text : string" Usage="Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentTypes.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

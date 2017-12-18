@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMediaPlatform implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.IMediaPlatform" />
   <TypeSignature Language="VB.NET" Value="Public Interface IMediaPlatform&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type IMediaPlatform = interface&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Newtonsoft.Json.Linq.JObject CreateMediaConfiguration(class Microsoft.Skype.Bots.Media.IAudioSocket audioSocket) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.IMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateMediaConfiguration (audioSocket As IAudioSocket) As JObject" />
+      <MemberSignature Language="F#" Value="abstract member CreateMediaConfiguration : Microsoft.Skype.Bots.Media.IAudioSocket -&gt; Newtonsoft.Json.Linq.JObject" Usage="iMediaPlatform.CreateMediaConfiguration audioSocket" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Newtonsoft.Json.Linq.JObject CreateMediaConfiguration(class Microsoft.Skype.Bots.Media.IVideoSocket vbssSocket) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.IMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IVideoSocket)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateMediaConfiguration (vbssSocket As IVideoSocket) As JObject" />
+      <MemberSignature Language="F#" Value="abstract member CreateMediaConfiguration : Microsoft.Skype.Bots.Media.IVideoSocket -&gt; Newtonsoft.Json.Linq.JObject" Usage="iMediaPlatform.CreateMediaConfiguration vbssSocket" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Newtonsoft.Json.Linq.JObject CreateMediaConfiguration(class Microsoft.Skype.Bots.Media.IAudioSocket audioSocket, class Microsoft.Skype.Bots.Media.IDataSocket dataSocket) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.IMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,Microsoft.Skype.Bots.Media.IDataSocket)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateMediaConfiguration (audioSocket As IAudioSocket, dataSocket As IDataSocket) As JObject" />
+      <MemberSignature Language="F#" Value="abstract member CreateMediaConfiguration : Microsoft.Skype.Bots.Media.IAudioSocket * Microsoft.Skype.Bots.Media.IDataSocket -&gt; Newtonsoft.Json.Linq.JObject" Usage="iMediaPlatform.CreateMediaConfiguration (audioSocket, dataSocket)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Newtonsoft.Json.Linq.JObject CreateMediaConfiguration(class Microsoft.Skype.Bots.Media.IAudioSocket audioSocket, class Microsoft.Skype.Bots.Media.IVideoSocket videoSocket) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.IMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,Microsoft.Skype.Bots.Media.IVideoSocket)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateMediaConfiguration (audioSocket As IAudioSocket, videoSocket As IVideoSocket) As JObject" />
+      <MemberSignature Language="F#" Value="abstract member CreateMediaConfiguration : Microsoft.Skype.Bots.Media.IAudioSocket * Microsoft.Skype.Bots.Media.IVideoSocket -&gt; Newtonsoft.Json.Linq.JObject" Usage="iMediaPlatform.CreateMediaConfiguration (audioSocket, videoSocket)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Newtonsoft.Json.Linq.JObject CreateMediaConfiguration(class Microsoft.Skype.Bots.Media.IAudioSocket audioSocket, class System.Collections.Generic.IList`1&lt;class Microsoft.Skype.Bots.Media.IVideoSocket&gt; videoSockets) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.IMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.IVideoSocket})" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateMediaConfiguration (audioSocket As IAudioSocket, videoSockets As IList(Of IVideoSocket)) As JObject" />
+      <MemberSignature Language="F#" Value="abstract member CreateMediaConfiguration : Microsoft.Skype.Bots.Media.IAudioSocket * System.Collections.Generic.IList&lt;Microsoft.Skype.Bots.Media.IVideoSocket&gt; -&gt; Newtonsoft.Json.Linq.JObject" Usage="iMediaPlatform.CreateMediaConfiguration (audioSocket, videoSockets)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -156,6 +162,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Newtonsoft.Json.Linq.JObject CreateMediaConfiguration(class Microsoft.Skype.Bots.Media.IAudioSocket audioSocket, class System.Collections.Generic.IList`1&lt;class Microsoft.Skype.Bots.Media.IVideoSocket&gt; videoSockets, class Microsoft.Skype.Bots.Media.IVideoSocket vbssSocket) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.IMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.IVideoSocket},Microsoft.Skype.Bots.Media.IVideoSocket)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateMediaConfiguration (audioSocket As IAudioSocket, videoSockets As IList(Of IVideoSocket), vbssSocket As IVideoSocket) As JObject" />
+      <MemberSignature Language="F#" Value="abstract member CreateMediaConfiguration : Microsoft.Skype.Bots.Media.IAudioSocket * System.Collections.Generic.IList&lt;Microsoft.Skype.Bots.Media.IVideoSocket&gt; * Microsoft.Skype.Bots.Media.IVideoSocket -&gt; Newtonsoft.Json.Linq.JObject" Usage="iMediaPlatform.CreateMediaConfiguration (audioSocket, videoSockets, vbssSocket)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -186,6 +193,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Newtonsoft.Json.Linq.JObject CreateMediaConfiguration(class Microsoft.Skype.Bots.Media.IAudioSocket audioSocket, class System.Collections.Generic.IList`1&lt;class Microsoft.Skype.Bots.Media.IVideoSocket&gt; videoSockets, class Microsoft.Skype.Bots.Media.IVideoSocket vbssSocket, class Microsoft.Skype.Bots.Media.IDataSocket dataSocket) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.IMediaPlatform.CreateMediaConfiguration(Microsoft.Skype.Bots.Media.IAudioSocket,System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.IVideoSocket},Microsoft.Skype.Bots.Media.IVideoSocket,Microsoft.Skype.Bots.Media.IDataSocket)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateMediaConfiguration (audioSocket As IAudioSocket, videoSockets As IList(Of IVideoSocket), vbssSocket As IVideoSocket, dataSocket As IDataSocket) As JObject" />
+      <MemberSignature Language="F#" Value="abstract member CreateMediaConfiguration : Microsoft.Skype.Bots.Media.IAudioSocket * System.Collections.Generic.IList&lt;Microsoft.Skype.Bots.Media.IVideoSocket&gt; * Microsoft.Skype.Bots.Media.IVideoSocket * Microsoft.Skype.Bots.Media.IDataSocket -&gt; Newtonsoft.Json.Linq.JObject" Usage="iMediaPlatform.CreateMediaConfiguration (audioSocket, videoSockets, vbssSocket, dataSocket)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -217,6 +225,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(class Microsoft.Skype.Bots.Media.MediaPlatformSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.IMediaPlatform.Initialize(Microsoft.Skype.Bots.Media.MediaPlatformSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Initialize (settings As MediaPlatformSettings)" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : Microsoft.Skype.Bots.Media.MediaPlatformSettings -&gt; unit" Usage="iMediaPlatform.Initialize settings" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

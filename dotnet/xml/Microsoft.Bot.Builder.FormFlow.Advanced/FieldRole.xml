@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FieldRole extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.FieldRole" />
   <TypeSignature Language="VB.NET" Value="Public Enum FieldRole" />
+  <TypeSignature Language="F#" Value="type FieldRole = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.Advanced.FieldRole Confirm = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.FieldRole.Confirm" />
       <MemberSignature Language="VB.NET" Value="Confirm" />
+      <MemberSignature Language="F#" Value="Confirm = 1" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.FieldRole.Confirm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.Advanced.FieldRole Value = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.FieldRole.Value" />
       <MemberSignature Language="VB.NET" Value="Value" />
+      <MemberSignature Language="F#" Value="Value = 0" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.FieldRole.Value" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

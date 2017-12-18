@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Types extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Base.Types" />
   <TypeSignature Language="VB.NET" Value="Public Class Types" />
+  <TypeSignature Language="F#" Value="type Types = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MethodInfo MethodOf(class System.Linq.Expressions.Expression`1&lt;class System.Action&gt; action) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Base.Types.MethodOf(System.Linq.Expressions.Expression{System.Action})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function MethodOf (action As Expression(Of Action)) As MethodInfo" />
+      <MemberSignature Language="F#" Value="static member MethodOf : System.Linq.Expressions.Expression&lt;Action&gt; -&gt; System.Reflection.MethodInfo" Usage="Microsoft.Bot.Builder.Base.Types.MethodOf action" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

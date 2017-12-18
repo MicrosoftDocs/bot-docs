@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable sealed beforefieldinit Actions/WhereScorable`1&lt;Score&gt; extends Microsoft.Bot.Builder.Scorables.Internals.ScorableAggregator`6&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, class Microsoft.Bot.Builder.Scorables.Actions/WhereScorable`1/Token&lt;!Score&gt;, !Score, class Microsoft.Bot.Builder.Scorables.Internals.IResolver, object, !Score&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Actions.WhereScorable(Of Score)&#xA;Inherits ScorableAggregator(Of IResolver, Actions.WhereScorable(Of Score).Token, Score, IResolver, Object, Score)" />
+  <TypeSignature Language="F#" Value="type Actions.WhereScorable&lt;'Score&gt; = class&#xA;    inherit ScorableAggregator&lt;IResolver, Actions.WhereScorable&lt;'Score&gt;.Token, 'Score, IResolver, obj, 'Score&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !Score&gt; scorable, class System.Delegate lambda) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.#ctor(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,`0},System.Delegate)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scorable As IScorable(Of IResolver, Score), lambda As Delegate)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Scorables.Actions.WhereScorable&lt;'Score&gt; : Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, 'Score&gt; * Delegate -&gt; Microsoft.Bot.Builder.Scorables.Actions.WhereScorable&lt;'Score&gt;" Usage="new Microsoft.Bot.Builder.Scorables.Actions.WhereScorable&lt;'Score&gt; (scorable, lambda)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance !Score GetScore(class Microsoft.Bot.Builder.Scorables.Internals.IResolver item, class Microsoft.Bot.Builder.Scorables.Actions/WhereScorable`1/Token&lt;!Score&gt; state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.GetScore(Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.Token{`0})" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetScore (item As IResolver, state As Actions.WhereScorable(Of Score).Token) As Score" />
+      <MemberSignature Language="F#" Value="override this.GetScore : Microsoft.Bot.Builder.Scorables.Internals.IResolver * Microsoft.Bot.Builder.Scorables.Actions.WhereScorable&lt;'Score&gt;.Token -&gt; 'Score" Usage="whereScorable.GetScore (item, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool HasScore(class Microsoft.Bot.Builder.Scorables.Internals.IResolver item, class Microsoft.Bot.Builder.Scorables.Actions/WhereScorable`1/Token&lt;!Score&gt; state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.HasScore(Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.Token{`0})" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HasScore (item As IResolver, state As Actions.WhereScorable(Of Score).Token) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.HasScore : Microsoft.Bot.Builder.Scorables.Internals.IResolver * Microsoft.Bot.Builder.Scorables.Actions.WhereScorable&lt;'Score&gt;.Token -&gt; bool" Usage="whereScorable.HasScore (item, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -104,6 +108,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Scorables.Actions/WhereScorable`1/Token&lt;!Score&gt;&gt; PrepareAsync(class Microsoft.Bot.Builder.Scorables.Internals.IResolver innerItem, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.PrepareAsync(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function PrepareAsync (innerItem As IResolver, token As CancellationToken) As Task(Of Actions.WhereScorable(Of Score).Token)" />
+      <MemberSignature Language="F#" Value="override this.PrepareAsync : Microsoft.Bot.Builder.Scorables.Internals.IResolver * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Scorables.Actions.WhereScorable&lt;'Score&gt;.Token&gt;" Usage="whereScorable.PrepareAsync (innerItem, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

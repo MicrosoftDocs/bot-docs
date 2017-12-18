@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAudioSocket implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.IAudioSocket" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAudioSocket&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type IAudioSocket = interface&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Skype.Bots.Media.AudioMediaReceivedEventArgs&gt; AudioMediaReceived" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Bots.Media.IAudioSocket.AudioMediaReceived" />
       <MemberSignature Language="VB.NET" Value="Event AudioMediaReceived As EventHandler(Of AudioMediaReceivedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.AudioMediaReceived : EventHandler&lt;Microsoft.Skype.Bots.Media.AudioMediaReceivedEventArgs&gt; " Usage="member this.AudioMediaReceived : System.EventHandler&lt;Microsoft.Skype.Bots.Media.AudioMediaReceivedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Skype.Bots.Media.AudioSendStatusChangedEventArgs&gt; AudioSendStatusChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Bots.Media.IAudioSocket.AudioSendStatusChanged" />
       <MemberSignature Language="VB.NET" Value="Event AudioSendStatusChanged As EventHandler(Of AudioSendStatusChangedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.AudioSendStatusChanged : EventHandler&lt;Microsoft.Skype.Bots.Media.AudioSendStatusChangedEventArgs&gt; " Usage="member this.AudioSendStatusChanged : System.EventHandler&lt;Microsoft.Skype.Bots.Media.AudioSendStatusChangedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Skype.Bots.Media.DominantSpeakerChangedEventArgs&gt; DominantSpeakerChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Bots.Media.IAudioSocket.DominantSpeakerChanged" />
       <MemberSignature Language="VB.NET" Value="Event DominantSpeakerChanged As EventHandler(Of DominantSpeakerChangedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.DominantSpeakerChanged : EventHandler&lt;Microsoft.Skype.Bots.Media.DominantSpeakerChangedEventArgs&gt; " Usage="member this.DominantSpeakerChanged : System.EventHandler&lt;Microsoft.Skype.Bots.Media.DominantSpeakerChangedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Send(class Microsoft.Skype.Bots.Media.AudioMediaBuffer buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.IAudioSocket.Send(Microsoft.Skype.Bots.Media.AudioMediaBuffer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Send (buffer As AudioMediaBuffer)" />
+      <MemberSignature Language="F#" Value="abstract member Send : Microsoft.Skype.Bots.Media.AudioMediaBuffer -&gt; unit" Usage="iAudioSocket.Send buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -127,6 +132,7 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Skype.Bots.Media.ToneReceivedEventArgs&gt; ToneReceived" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Bots.Media.IAudioSocket.ToneReceived" />
       <MemberSignature Language="VB.NET" Value="Event ToneReceived As EventHandler(Of ToneReceivedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.ToneReceived : EventHandler&lt;Microsoft.Skype.Bots.Media.ToneReceivedEventArgs&gt; " Usage="member this.ToneReceived : System.EventHandler&lt;Microsoft.Skype.Bots.Media.ToneReceivedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

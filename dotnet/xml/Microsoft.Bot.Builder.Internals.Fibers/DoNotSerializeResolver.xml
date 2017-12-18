@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DoNotSerializeResolver extends System.Object implements class Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.DoNotSerializeResolver" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DoNotSerializeResolver&#xA;Implements IResolver" />
+  <TypeSignature Language="F#" Value="type DoNotSerializeResolver = class&#xA;    interface IResolver" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Autofac.IComponentContext context, class System.Collections.Generic.IEnumerable`1&lt;class Autofac.Core.Parameter&gt; parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.DoNotSerializeResolver.#ctor(Autofac.IComponentContext,System.Collections.Generic.IEnumerable{Autofac.Core.Parameter})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As IComponentContext, parameters As IEnumerable(Of Parameter))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Internals.Fibers.DoNotSerializeResolver : Autofac.IComponentContext * seq&lt;Autofac.Core.Parameter&gt; -&gt; Microsoft.Bot.Builder.Internals.Fibers.DoNotSerializeResolver" Usage="new Microsoft.Bot.Builder.Internals.Fibers.DoNotSerializeResolver (context, parameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
@@ -46,6 +48,9 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Scorables.Internals.IResolver.TryResolve(class System.Type type, object tag, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.DoNotSerializeResolver.Microsoft#Bot#Builder#Scorables#Internals#IResolver#TryResolve(System.Type,System.Object,System.Object@)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Scorables.Internals.IResolver.TryResolve(System.Type,System.Object,System.Object@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -72,6 +77,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; Services(class System.Type root) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.DoNotSerializeResolver.Services(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Iterator Function Services (root As Type) As IEnumerable(Of Type)" />
+      <MemberSignature Language="F#" Value="static member Services : Type -&gt; seq&lt;Type&gt;" Usage="Microsoft.Bot.Builder.Internals.Fibers.DoNotSerializeResolver.Services root" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
@@ -100,6 +106,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Collections.Concurrent.ConcurrentDictionary`2&lt;class System.Type, class System.Collections.Generic.IReadOnlyList`1&lt;class System.Type&gt;&gt; ServicesByType" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Internals.Fibers.DoNotSerializeResolver.ServicesByType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ServicesByType As ConcurrentDictionary(Of Type, IReadOnlyList(Of Type)) " />
+      <MemberSignature Language="F#" Value=" staticval mutable ServicesByType : System.Collections.Concurrent.ConcurrentDictionary&lt;Type, System.Collections.Generic.IReadOnlyList&lt;Type&gt;&gt;" Usage="Microsoft.Bot.Builder.Internals.Fibers.DoNotSerializeResolver.ServicesByType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>

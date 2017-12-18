@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFieldDescription" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription" />
   <TypeSignature Language="VB.NET" Value="Public Interface IFieldDescription" />
+  <TypeSignature Language="F#" Value="type IFieldDescription = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowDefault" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.AllowDefault" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllowDefault As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowDefault : bool" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.AllowDefault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowNumbers" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.AllowNumbers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllowNumbers As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowNumbers : bool" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.AllowNumbers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowsMultiple" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.AllowsMultiple" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllowsMultiple As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowsMultiple : bool" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.AllowsMultiple" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.FormFlow.DescribeAttribute FieldDescription" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.FieldDescription" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FieldDescription As DescribeAttribute" />
+      <MemberSignature Language="F#" Value="member this.FieldDescription : Microsoft.Bot.Builder.FormFlow.DescribeAttribute" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.FieldDescription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; FieldTerms" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.FieldTerms" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FieldTerms As IEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="member this.FieldTerms : seq&lt;string&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.FieldTerms" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -134,6 +140,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.FormFlow.Advanced.FieldRole Role" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.Role" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Role As FieldRole" />
+      <MemberSignature Language="F#" Value="member this.Role : Microsoft.Bot.Builder.FormFlow.Advanced.FieldRole" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.Role" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -155,6 +162,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; Terms(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.Terms(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Terms (value As Object) As IEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="abstract member Terms : obj -&gt; seq&lt;string&gt;" Usage="iFieldDescription.Terms value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -180,6 +188,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.DescribeAttribute ValueDescription(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.ValueDescription(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ValueDescription (value As Object) As DescribeAttribute" />
+      <MemberSignature Language="F#" Value="abstract member ValueDescription : obj -&gt; Microsoft.Bot.Builder.FormFlow.DescribeAttribute" Usage="iFieldDescription.ValueDescription value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -205,6 +214,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt; ValueDescriptions" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.ValueDescriptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValueDescriptions As IEnumerable(Of DescribeAttribute)" />
+      <MemberSignature Language="F#" Value="member this.ValueDescriptions : seq&lt;Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.ValueDescriptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -226,6 +236,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;object&gt; Values" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.Values" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As IEnumerable(Of Object)" />
+      <MemberSignature Language="F#" Value="member this.Values : seq&lt;obj&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

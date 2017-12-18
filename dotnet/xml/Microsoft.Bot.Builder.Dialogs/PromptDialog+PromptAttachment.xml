@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable beforefieldinit PromptDialog/PromptAttachment extends Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Connector.Attachment&gt;, class Microsoft.Bot.Connector.Attachment&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptAttachment" />
   <TypeSignature Language="VB.NET" Value="Public Class PromptDialog.PromptAttachment&#xA;Inherits Prompt(Of IEnumerable(Of Attachment), Attachment)" />
+  <TypeSignature Language="F#" Value="type PromptDialog.PromptAttachment = class&#xA;    inherit Prompt&lt;seq&lt;Attachment&gt;, Attachment&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string prompt, string retry, int32 attempts, class System.Collections.Generic.IEnumerable`1&lt;string&gt; contentTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptAttachment.#ctor(System.String,System.String,System.Int32,System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (prompt As String, retry As String, attempts As Integer, Optional contentTypes As IEnumerable(Of String) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptAttachment : string * string * int * seq&lt;string&gt; -&gt; Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptAttachment" Usage="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptAttachment (prompt, retry, attempts, contentTypes)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; ContentTypes" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptAttachment.ContentTypes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentTypes As IEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="member this.ContentTypes : seq&lt;string&gt;" Usage="Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptAttachment.ContentTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryParse(class Microsoft.Bot.Connector.IMessageActivity message, [out] class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Connector.Attachment&gt;&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptAttachment.TryParse(Microsoft.Bot.Connector.IMessageActivity,System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.Attachment}@)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function TryParse (message As IMessageActivity, ByRef result As IEnumerable(Of Attachment)) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.TryParse : Microsoft.Bot.Connector.IMessageActivity *  -&gt; bool" Usage="promptAttachment.TryParse (message, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

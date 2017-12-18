@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit BuiltIn/DateTime/DurationResolution extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DurationResolution" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BuiltIn.DateTime.DurationResolution" />
+  <TypeSignature Language="F#" Value="type BuiltIn.DateTime.DurationResolution = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>

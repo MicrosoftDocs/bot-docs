@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ArgumentVerifier extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier" />
   <TypeSignature Language="VB.NET" Value="Public Class ArgumentVerifier" />
+  <TypeSignature Language="F#" Value="type ArgumentVerifier = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ThrowIfIntOutOfRange(int64 number, int64 minValue, int64 maxValue, string paramName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier.ThrowIfIntOutOfRange(System.Int64,System.Int64,System.Int64,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ThrowIfIntOutOfRange (number As Long, minValue As Long, maxValue As Long, paramName As String)" />
+      <MemberSignature Language="F#" Value="static member ThrowIfIntOutOfRange : int64 * int64 * int64 * string -&gt; unit" Usage="Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier.ThrowIfIntOutOfRange (number, minValue, maxValue, paramName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ThrowOnNullArgument(object parameterValue, string parameterName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier.ThrowOnNullArgument(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ThrowOnNullArgument (parameterValue As Object, parameterName As String)" />
+      <MemberSignature Language="F#" Value="static member ThrowOnNullArgument : obj * string -&gt; unit" Usage="Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier.ThrowOnNullArgument (parameterValue, parameterName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ThrowOnNullMemberInCollection(class System.Collections.Generic.IEnumerable`1&lt;object&gt; argument, string argumentName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier.ThrowOnNullMemberInCollection(System.Collections.Generic.IEnumerable{System.Object},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ThrowOnNullMemberInCollection (argument As IEnumerable(Of Object), argumentName As String)" />
+      <MemberSignature Language="F#" Value="static member ThrowOnNullMemberInCollection : seq&lt;obj&gt; * string -&gt; unit" Usage="Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier.ThrowOnNullMemberInCollection (argument, argumentName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ThrowOnNullMemberInCollection&lt;class T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; collection, string paramName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier.ThrowOnNullMemberInCollection``1(System.Collections.Generic.IEnumerable{``0},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ThrowOnNullMemberInCollection(Of T As Class) (collection As IEnumerable(Of T), paramName As String)" />
+      <MemberSignature Language="F#" Value="static member ThrowOnNullMemberInCollection : seq&lt;'T (requires 'T : null)&gt; * string -&gt; unit (requires 'T : null)" Usage="Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier.ThrowOnNullMemberInCollection (collection, paramName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -129,6 +134,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ThrowOnNullOrEmptyCollection&lt;T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; argument, string argumentName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier.ThrowOnNullOrEmptyCollection``1(System.Collections.Generic.IEnumerable{``0},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ThrowOnNullOrEmptyCollection(Of T) (argument As IEnumerable(Of T), argumentName As String)" />
+      <MemberSignature Language="F#" Value="static member ThrowOnNullOrEmptyCollection : seq&lt;'T&gt; * string -&gt; unit" Usage="Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier.ThrowOnNullOrEmptyCollection (argument, argumentName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -157,6 +163,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ThrowOnNullOrEmptyString(string parameterValue, string parameterName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier.ThrowOnNullOrEmptyString(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ThrowOnNullOrEmptyString (parameterValue As String, parameterName As String)" />
+      <MemberSignature Language="F#" Value="static member ThrowOnNullOrEmptyString : string * string -&gt; unit" Usage="Microsoft.Skype.Internal.Media.Services.Common.ArgumentVerifier.ThrowOnNullOrEmptyString (parameterValue, parameterName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

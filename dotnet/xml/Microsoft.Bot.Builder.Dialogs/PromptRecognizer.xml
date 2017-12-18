@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PromptRecognizer extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IPromptRecognizer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptRecognizer" />
   <TypeSignature Language="VB.NET" Value="Public Class PromptRecognizer&#xA;Implements IPromptRecognizer" />
+  <TypeSignature Language="F#" Value="type PromptRecognizer = class&#xA;    interface IPromptRecognizer" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -41,7 +42,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;bool&gt;&gt; RecognizeBooleans(class Microsoft.Bot.Connector.IMessageActivity message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeBooleans(Microsoft.Bot.Connector.IMessageActivity)" />
       <MemberSignature Language="VB.NET" Value="Public Function RecognizeBooleans (message As IMessageActivity) As IEnumerable(Of RecognizeEntity(Of Boolean))" />
+      <MemberSignature Language="F#" Value="abstract member RecognizeBooleans : Microsoft.Bot.Connector.IMessageActivity -&gt; seq&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;bool&gt;&gt;&#xA;override this.RecognizeBooleans : Microsoft.Bot.Connector.IMessageActivity -&gt; seq&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;bool&gt;&gt;" Usage="promptRecognizer.RecognizeBooleans message" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.IPromptRecognizer.RecognizeBooleans(Microsoft.Bot.Connector.IMessageActivity)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -64,7 +69,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;!!T&gt;&gt; RecognizeChoices&lt;T&gt;(class Microsoft.Bot.Connector.IMessageActivity message, class System.Collections.Generic.IReadOnlyDictionary`2&lt;!!T, class System.Collections.Generic.IReadOnlyList`1&lt;!!T&gt;&gt; choicesDictionary, class Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeChoices``1(Microsoft.Bot.Connector.IMessageActivity,System.Collections.Generic.IReadOnlyDictionary{``0,System.Collections.Generic.IReadOnlyList{``0}},Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function RecognizeChoices(Of T) (message As IMessageActivity, choicesDictionary As IReadOnlyDictionary(Of T, IReadOnlyList(Of T)), Optional options As IPromptRecognizeChoicesOptions = null) As IEnumerable(Of RecognizeEntity(Of T))" />
+      <MemberSignature Language="F#" Value="abstract member RecognizeChoices : Microsoft.Bot.Connector.IMessageActivity * System.Collections.Generic.IReadOnlyDictionary&lt;'T, System.Collections.Generic.IReadOnlyList&lt;'T&gt;&gt; * Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions -&gt; seq&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;'T&gt;&gt;&#xA;override this.RecognizeChoices : Microsoft.Bot.Connector.IMessageActivity * System.Collections.Generic.IReadOnlyDictionary&lt;'T, System.Collections.Generic.IReadOnlyList&lt;'T&gt;&gt; * Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions -&gt; seq&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;'T&gt;&gt;" Usage="promptRecognizer.RecognizeChoices (message, choicesDictionary, options)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.IPromptRecognizer.RecognizeChoices``1(Microsoft.Bot.Connector.IMessageActivity,System.Collections.Generic.IReadOnlyDictionary{``0,System.Collections.Generic.IReadOnlyList{``0}},Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -94,7 +103,11 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;string&gt;&gt; RecognizeLocalizedChoices (Microsoft.Bot.Connector.IMessageActivity message, string choicesKey, System.Resources.ResourceManager resourceManager, Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions options = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;string&gt;&gt; RecognizeLocalizedChoices(class Microsoft.Bot.Connector.IMessageActivity message, string choicesKey, class System.Resources.ResourceManager resourceManager, class Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeLocalizedChoices(Microsoft.Bot.Connector.IMessageActivity,System.String,System.Resources.ResourceManager,Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions)" />
+      <MemberSignature Language="F#" Value="abstract member RecognizeLocalizedChoices : Microsoft.Bot.Connector.IMessageActivity * string * System.Resources.ResourceManager * Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions -&gt; seq&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;string&gt;&gt;&#xA;override this.RecognizeLocalizedChoices : Microsoft.Bot.Connector.IMessageActivity * string * System.Resources.ResourceManager * Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions -&gt; seq&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;string&gt;&gt;" Usage="promptRecognizer.RecognizeLocalizedChoices (message, choicesKey, resourceManager, options)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.IPromptRecognizer.RecognizeLocalizedChoices(Microsoft.Bot.Connector.IMessageActivity,System.String,System.Resources.ResourceManager,Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -122,7 +135,11 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;string&gt;&gt; RecognizeLocalizedRegExp (Microsoft.Bot.Connector.IMessageActivity message, string expressionKey, System.Resources.ResourceManager resourceManager);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;string&gt;&gt; RecognizeLocalizedRegExp(class Microsoft.Bot.Connector.IMessageActivity message, string expressionKey, class System.Resources.ResourceManager resourceManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeLocalizedRegExp(Microsoft.Bot.Connector.IMessageActivity,System.String,System.Resources.ResourceManager)" />
+      <MemberSignature Language="F#" Value="abstract member RecognizeLocalizedRegExp : Microsoft.Bot.Connector.IMessageActivity * string * System.Resources.ResourceManager -&gt; seq&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;string&gt;&gt;&#xA;override this.RecognizeLocalizedRegExp : Microsoft.Bot.Connector.IMessageActivity * string * System.Resources.ResourceManager -&gt; seq&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;string&gt;&gt;" Usage="promptRecognizer.RecognizeLocalizedRegExp (message, expressionKey, resourceManager)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.IPromptRecognizer.RecognizeLocalizedRegExp(Microsoft.Bot.Connector.IMessageActivity,System.String,System.Resources.ResourceManager)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -149,7 +166,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;float64&gt;&gt; RecognizeNumbers(class Microsoft.Bot.Connector.IMessageActivity message, class Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeNumbers(Microsoft.Bot.Connector.IMessageActivity,Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function RecognizeNumbers (message As IMessageActivity, Optional options As IPromptRecognizeNumbersOptions = null) As IEnumerable(Of RecognizeEntity(Of Double))" />
+      <MemberSignature Language="F#" Value="abstract member RecognizeNumbers : Microsoft.Bot.Connector.IMessageActivity * Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions -&gt; seq&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;double&gt;&gt;&#xA;override this.RecognizeNumbers : Microsoft.Bot.Connector.IMessageActivity * Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions -&gt; seq&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;double&gt;&gt;" Usage="promptRecognizer.RecognizeNumbers (message, options)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.IPromptRecognizer.RecognizeNumbers(Microsoft.Bot.Connector.IMessageActivity,Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -174,7 +195,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;int64&gt;&gt; RecognizeOrdinals(class Microsoft.Bot.Connector.IMessageActivity message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeOrdinals(Microsoft.Bot.Connector.IMessageActivity)" />
       <MemberSignature Language="VB.NET" Value="Public Function RecognizeOrdinals (message As IMessageActivity) As IEnumerable(Of RecognizeEntity(Of Long))" />
+      <MemberSignature Language="F#" Value="abstract member RecognizeOrdinals : Microsoft.Bot.Connector.IMessageActivity -&gt; seq&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;int64&gt;&gt;&#xA;override this.RecognizeOrdinals : Microsoft.Bot.Connector.IMessageActivity -&gt; seq&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;int64&gt;&gt;" Usage="promptRecognizer.RecognizeOrdinals message" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.IPromptRecognizer.RecognizeOrdinals(Microsoft.Bot.Connector.IMessageActivity)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -197,7 +222,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;string&gt;&gt; RecognizeTimes(class Microsoft.Bot.Connector.IMessageActivity message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptRecognizer.RecognizeTimes(Microsoft.Bot.Connector.IMessageActivity)" />
       <MemberSignature Language="VB.NET" Value="Public Function RecognizeTimes (message As IMessageActivity) As IEnumerable(Of RecognizeEntity(Of String))" />
+      <MemberSignature Language="F#" Value="abstract member RecognizeTimes : Microsoft.Bot.Connector.IMessageActivity -&gt; seq&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;string&gt;&gt;&#xA;override this.RecognizeTimes : Microsoft.Bot.Connector.IMessageActivity -&gt; seq&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;string&gt;&gt;" Usage="promptRecognizer.RecognizeTimes message" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.IPromptRecognizer.RecognizeTimes(Microsoft.Bot.Connector.IMessageActivity)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

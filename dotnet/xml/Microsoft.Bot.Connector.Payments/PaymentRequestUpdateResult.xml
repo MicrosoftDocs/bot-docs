@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaymentRequestUpdateResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Payments.PaymentRequestUpdateResult" />
   <TypeSignature Language="VB.NET" Value="Public Class PaymentRequestUpdateResult" />
+  <TypeSignature Language="F#" Value="type PaymentRequestUpdateResult = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -41,10 +42,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.Payments.PaymentDetails details) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.PaymentRequestUpdateResult.#ctor(Microsoft.Bot.Connector.Payments.PaymentDetails)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional details As PaymentDetails = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Payments.PaymentRequestUpdateResult : Microsoft.Bot.Connector.Payments.PaymentDetails -&gt; Microsoft.Bot.Connector.Payments.PaymentRequestUpdateResult" Usage="new Microsoft.Bot.Connector.Payments.PaymentRequestUpdateResult details" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="details" Type="Microsoft.Bot.Connector.Payments.PaymentDetails" />
@@ -62,10 +64,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.Payments.PaymentDetails Details" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentRequestUpdateResult.Details" />
       <MemberSignature Language="VB.NET" Value="Public Property Details As PaymentDetails" />
+      <MemberSignature Language="F#" Value="member this.Details : Microsoft.Bot.Connector.Payments.PaymentDetails with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentRequestUpdateResult.Details" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

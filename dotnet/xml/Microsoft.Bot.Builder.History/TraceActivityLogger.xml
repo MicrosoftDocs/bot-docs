@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TraceActivityLogger extends System.Object implements class Microsoft.Bot.Builder.History.IActivityLogger" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.History.TraceActivityLogger" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TraceActivityLogger&#xA;Implements IActivityLogger" />
+  <TypeSignature Language="F#" Value="type TraceActivityLogger = class&#xA;    interface IActivityLogger" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -52,6 +53,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.History.TraceActivityLogger.Microsoft#Bot#Builder#History#IActivityLogger#LogAsync(Microsoft.Bot.Connector.IActivity)" />
       <MemberSignature Language="VB.NET" Value="Function LogAsync (activity As IActivity) As Task Implements IActivityLogger.LogAsync" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.History.IActivityLogger.LogAsync(Microsoft.Bot.Connector.IActivity)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

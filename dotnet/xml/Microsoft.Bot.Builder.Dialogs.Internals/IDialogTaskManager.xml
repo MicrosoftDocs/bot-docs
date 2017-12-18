@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDialogTaskManager implements class Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDialogTaskManager&#xA;Implements IDialogTasks" />
+  <TypeSignature Language="F#" Value="type IDialogTaskManager = interface&#xA;    interface IDialogTasks" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task FlushDialogTasks(valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager.FlushDialogTasks(System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function FlushDialogTasks (token As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="abstract member FlushDialogTasks : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iDialogTaskManager.FlushDialogTasks token" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task LoadDialogTasks(valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager.LoadDialogTasks(System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function LoadDialogTasks (token As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="abstract member LoadDialogTasks : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iDialogTaskManager.LoadDialogTasks token" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

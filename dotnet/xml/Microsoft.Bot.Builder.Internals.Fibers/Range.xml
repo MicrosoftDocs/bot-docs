@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Range extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.Range" />
   <TypeSignature Language="VB.NET" Value="Public Class Range" />
+  <TypeSignature Language="F#" Value="type Range = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Bot.Builder.Internals.Fibers.Range`1&lt;!!T&gt; From&lt;(class System.IEquatable`1&lt;!!T&gt;, class System.IComparable`1&lt;!!T&gt;) T&gt;(!!T start, !!T after) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Range.From``1(``0,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function From(Of T As {IEquatable(Of T), IComparable(Of T)}) (start As T, after As T) As Range(Of T)" />
+      <MemberSignature Language="F#" Value="static member From : 'T * 'T -&gt; Microsoft.Bot.Builder.Internals.Fibers.Range&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt; and 'T :&gt; IComparable&lt;'T&gt;)&gt; (requires 'T :&gt; IEquatable&lt;'T&gt; and 'T :&gt; IComparable&lt;'T&gt;)" Usage="Microsoft.Bot.Builder.Internals.Fibers.Range.From (start, after)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable sealed beforefieldinit BuiltIn/DateTime/DateTimeResolution extends Microsoft.Bot.Builder.Luis.Resolution implements class System.IEquatable`1&lt;class Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DateTimeResolution&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BuiltIn.DateTime.DateTimeResolution&#xA;Inherits Resolution&#xA;Implements IEquatable(Of BuiltIn.DateTime.DateTimeResolution)" />
+  <TypeSignature Language="F#" Value="type BuiltIn.DateTime.DateTimeResolution = class&#xA;    inherit Resolution&#xA;    interface IEquatable&lt;BuiltIn.DateTime.DateTimeResolution&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="C#" Value="public DateTimeResolution (DateTime dateTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DateTime dateTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.#ctor(System.DateTime)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution : DateTime -&gt; Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution" Usage="new Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution dateTime" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/Reference&gt; reference, valuetype System.Nullable`1&lt;int32&gt; year, valuetype System.Nullable`1&lt;int32&gt; month, valuetype System.Nullable`1&lt;int32&gt; day, valuetype System.Nullable`1&lt;int32&gt; week, valuetype System.Nullable`1&lt;valuetype System.DayOfWeek&gt; dayOfWeek, valuetype System.Nullable`1&lt;valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DayPart&gt; dayPart, valuetype System.Nullable`1&lt;int32&gt; hour, valuetype System.Nullable`1&lt;int32&gt; minute, valuetype System.Nullable`1&lt;int32&gt; second) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.#ctor(System.Nullable{Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.DayOfWeek},System.Nullable{Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional reference As Nullable(Of BuiltIn.DateTime.Reference) = null, Optional year As Nullable(Of Integer) = null, Optional month As Nullable(Of Integer) = null, Optional day As Nullable(Of Integer) = null, Optional week As Nullable(Of Integer) = null, Optional dayOfWeek As Nullable(Of DayOfWeek) = null, Optional dayPart As Nullable(Of BuiltIn.DateTime.DayPart) = null, Optional hour As Nullable(Of Integer) = null, Optional minute As Nullable(Of Integer) = null, Optional second As Nullable(Of Integer) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution : Nullable&lt;Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;DayOfWeek&gt; * Nullable&lt;Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; -&gt; Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution" Usage="new Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution (reference, year, month, day, week, dayOfWeek, dayPart, hour, minute, second)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Day" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Day" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Day As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.Day : Nullable&lt;int&gt;" Usage="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Day" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DayOfWeek&gt; DayOfWeek" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.DayOfWeek" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DayOfWeek As Nullable(Of DayOfWeek)" />
+      <MemberSignature Language="F#" Value="member this.DayOfWeek : Nullable&lt;DayOfWeek&gt;" Usage="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.DayOfWeek" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DayPart&gt; DayPart" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.DayPart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DayPart As Nullable(Of BuiltIn.DateTime.DayPart)" />
+      <MemberSignature Language="F#" Value="member this.DayPart : Nullable&lt;Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart&gt;" Usage="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.DayPart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -137,7 +143,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DateTimeResolution other) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Equals(Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As BuiltIn.DateTime.DateTimeResolution) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution -&gt; bool" Usage="dateTimeResolution.Equals other" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -160,6 +170,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object other) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (other As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="dateTimeResolution.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -183,6 +194,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dateTimeResolution.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -203,6 +215,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Hour" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Hour" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Hour As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.Hour : Nullable&lt;int&gt;" Usage="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Hour" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -222,6 +235,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Minute" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Minute" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Minute As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.Minute : Nullable&lt;int&gt;" Usage="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Minute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -241,6 +255,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Month" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Month" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Month As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.Month : Nullable&lt;int&gt;" Usage="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Month" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -260,6 +275,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Text.RegularExpressions.RegexOptions Options = (553)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Options" />
       <MemberSignature Language="VB.NET" Value="Public Const Options As RegexOptions  = 553" />
+      <MemberSignature Language="F#" Value="val mutable Options : System.Text.RegularExpressions.RegexOptions" Usage="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Options" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -279,6 +295,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly string Pattern" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Pattern" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable Pattern : string" Usage="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Pattern" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -297,6 +314,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string PatternDate" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.PatternDate" />
       <MemberSignature Language="VB.NET" Value="Public Const PatternDate As String " />
+      <MemberSignature Language="F#" Value="val mutable PatternDate : string" Usage="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.PatternDate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -315,6 +333,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string PatternTime" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.PatternTime" />
       <MemberSignature Language="VB.NET" Value="Public Const PatternTime As String " />
+      <MemberSignature Language="F#" Value="val mutable PatternTime : string" Usage="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.PatternTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -333,6 +352,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/Reference&gt; Reference" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Reference" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reference As Nullable(Of BuiltIn.DateTime.Reference)" />
+      <MemberSignature Language="F#" Value="member this.Reference : Nullable&lt;Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference&gt;" Usage="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Reference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -352,6 +372,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Text.RegularExpressions.Regex Regex" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Regex" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Regex As Regex " />
+      <MemberSignature Language="F#" Value=" staticval mutable Regex : System.Text.RegularExpressions.Regex" Usage="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Regex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -370,6 +391,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Second" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Second" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Second As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.Second : Nullable&lt;int&gt;" Usage="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Second" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -389,6 +411,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string text, [out] class Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DateTimeResolution&amp; resolution) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.TryParse(System.String,Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (text As String, ByRef resolution As BuiltIn.DateTime.DateTimeResolution) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.TryParse (text, resolution)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -414,6 +437,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Week" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Week" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Week As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.Week : Nullable&lt;int&gt;" Usage="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Week" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -433,6 +457,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Year" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Year" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Year As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.Year : Nullable&lt;int&gt;" Usage="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Year" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

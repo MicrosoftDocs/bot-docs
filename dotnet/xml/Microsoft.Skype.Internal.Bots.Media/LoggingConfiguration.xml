@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LoggingConfiguration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.LoggingConfiguration" />
   <TypeSignature Language="VB.NET" Value="Public Class LoggingConfiguration" />
+  <TypeSignature Language="F#" Value="type LoggingConfiguration = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Skype.Internal.Bots.Media.AriaLoggingConfiguration AriaLoggingConfiguration" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.LoggingConfiguration.AriaLoggingConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public Property AriaLoggingConfiguration As AriaLoggingConfiguration" />
+      <MemberSignature Language="F#" Value="member this.AriaLoggingConfiguration : Microsoft.Skype.Internal.Bots.Media.AriaLoggingConfiguration with get, set" Usage="Microsoft.Skype.Internal.Bots.Media.LoggingConfiguration.AriaLoggingConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Skype.Internal.Bots.Media.ClsLoggingConfiguration ClsLoggingConfiguration" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.LoggingConfiguration.ClsLoggingConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public Property ClsLoggingConfiguration As ClsLoggingConfiguration" />
+      <MemberSignature Language="F#" Value="member this.ClsLoggingConfiguration : Microsoft.Skype.Internal.Bots.Media.ClsLoggingConfiguration with get, set" Usage="Microsoft.Skype.Internal.Bots.Media.LoggingConfiguration.ClsLoggingConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Skype.Internal.Bots.Media.LogLevel&gt; MediaAgentsPlatformLogLevel" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.LoggingConfiguration.MediaAgentsPlatformLogLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property MediaAgentsPlatformLogLevel As Nullable(Of LogLevel)" />
+      <MemberSignature Language="F#" Value="member this.MediaAgentsPlatformLogLevel : Nullable&lt;Microsoft.Skype.Internal.Bots.Media.LogLevel&gt; with get, set" Usage="Microsoft.Skype.Internal.Bots.Media.LoggingConfiguration.MediaAgentsPlatformLogLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Skype.Internal.Bots.Media.LogLevel&gt; MediaApiLogLevel" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.LoggingConfiguration.MediaApiLogLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property MediaApiLogLevel As Nullable(Of LogLevel)" />
+      <MemberSignature Language="F#" Value="member this.MediaApiLogLevel : Nullable&lt;Microsoft.Skype.Internal.Bots.Media.LogLevel&gt; with get, set" Usage="Microsoft.Skype.Internal.Bots.Media.LoggingConfiguration.MediaApiLogLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.LoggingConfiguration.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="loggingConfiguration.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

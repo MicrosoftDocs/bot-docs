@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ClsLogger extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.ClsLogger" />
   <TypeSignature Language="VB.NET" Value="Public Class ClsLogger" />
+  <TypeSignature Language="F#" Value="type ClsLogger = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Initialize(class Microsoft.Skype.Internal.Bots.Media.ILogger logger, valuetype System.Nullable`1&lt;valuetype Microsoft.Skype.Internal.Bots.Media.LogLevel&gt; notificationsLogLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ClsLogger.Initialize(Microsoft.Skype.Internal.Bots.Media.ILogger,System.Nullable{Microsoft.Skype.Internal.Bots.Media.LogLevel})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Initialize (logger As ILogger, notificationsLogLevel As Nullable(Of LogLevel))" />
+      <MemberSignature Language="F#" Value="static member Initialize : Microsoft.Skype.Internal.Bots.Media.ILogger * Nullable&lt;Microsoft.Skype.Internal.Bots.Media.LogLevel&gt; -&gt; unit" Usage="Microsoft.Skype.Internal.Bots.Media.ClsLogger.Initialize (logger, notificationsLogLevel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetEtlFormatOption(valuetype Microsoft.Skype.Internal.Bots.Media.FormatOption options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ClsLogger.SetEtlFormatOption(Microsoft.Skype.Internal.Bots.Media.FormatOption)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetEtlFormatOption (options As FormatOption)" />
+      <MemberSignature Language="F#" Value="static member SetEtlFormatOption : Microsoft.Skype.Internal.Bots.Media.FormatOption -&gt; unit" Usage="Microsoft.Skype.Internal.Bots.Media.ClsLogger.SetEtlFormatOption options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetLoggingInfo(class System.Collections.Generic.IList`1&lt;string&gt; logScenarioList) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ClsLogger.SetLoggingInfo(System.Collections.Generic.IList{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetLoggingInfo (logScenarioList As IList(Of String))" />
+      <MemberSignature Language="F#" Value="static member SetLoggingInfo : System.Collections.Generic.IList&lt;string&gt; -&gt; unit" Usage="Microsoft.Skype.Internal.Bots.Media.ClsLogger.SetLoggingInfo logScenarioList" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void StopClsLogger() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ClsLogger.StopClsLogger" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub StopClsLogger ()" />
+      <MemberSignature Language="F#" Value="static member StopClsLogger : unit -&gt; unit" Usage="Microsoft.Skype.Internal.Bots.Media.ClsLogger.StopClsLogger " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

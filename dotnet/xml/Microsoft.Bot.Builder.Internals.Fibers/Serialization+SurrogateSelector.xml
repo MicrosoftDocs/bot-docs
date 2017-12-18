@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit Serialization/SurrogateSelector extends System.Object implements class System.Runtime.Serialization.ISurrogateSelector" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateSelector" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Serialization.SurrogateSelector&#xA;Implements ISurrogateSelector" />
+  <TypeSignature Language="F#" Value="type Serialization.SurrogateSelector = class&#xA;    interface ISurrogateSelector" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Bot.Builder.Internals.Fibers.Serialization/ISurrogateProvider&gt; providers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateSelector.#ctor(System.Collections.Generic.IReadOnlyList{Microsoft.Bot.Builder.Internals.Fibers.Serialization.ISurrogateProvider})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (providers As IReadOnlyList(Of Serialization.ISurrogateProvider))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateSelector : System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Internals.Fibers.Serialization.ISurrogateProvider&gt; -&gt; Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateSelector" Usage="new Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateSelector providers" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -45,6 +47,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateSelector.System#Runtime#Serialization#ISurrogateSelector#ChainSelector(System.Runtime.Serialization.ISurrogateSelector)" />
       <MemberSignature Language="VB.NET" Value="Sub ChainSelector (selector As ISurrogateSelector) Implements ISurrogateSelector.ChainSelector" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISurrogateSelector.ChainSelector(System.Runtime.Serialization.ISurrogateSelector)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -67,6 +72,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateSelector.System#Runtime#Serialization#ISurrogateSelector#GetNextSelector" />
       <MemberSignature Language="VB.NET" Value="Function GetNextSelector () As ISurrogateSelector Implements ISurrogateSelector.GetNextSelector" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISurrogateSelector.GetNextSelector</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -86,6 +94,9 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Runtime.Serialization.ISerializationSurrogate System.Runtime.Serialization.ISurrogateSelector.GetSurrogate(class System.Type type, valuetype System.Runtime.Serialization.StreamingContext context, [out] class System.Runtime.Serialization.ISurrogateSelector&amp; selector) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateSelector.System#Runtime#Serialization#ISurrogateSelector#GetSurrogate(System.Type,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector@)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISurrogateSelector.GetSurrogate(System.Type,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

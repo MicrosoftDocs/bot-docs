@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ClosureCaptureException extends System.Runtime.Serialization.SerializationException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClosureCaptureException&#xA;Inherits SerializationException" />
+  <TypeSignature Language="F#" Value="type ClosureCaptureException = class&#xA;    inherit SerializationException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instance As Object)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException : obj -&gt; Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException" Usage="new Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException instance" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -40,6 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".field public initonly object Instance" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException.Instance" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Instance As Object " />
+      <MemberSignature Language="F#" Value="val mutable Instance : obj" Usage="Microsoft.Bot.Builder.Internals.Fibers.ClosureCaptureException.Instance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

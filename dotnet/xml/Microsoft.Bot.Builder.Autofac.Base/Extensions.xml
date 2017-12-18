@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Extensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Autofac.Base.Extensions" />
   <TypeSignature Language="VB.NET" Value="Public Module Extensions" />
+  <TypeSignature Language="F#" Value="type Extensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Autofac.Builder.IRegistrationBuilder`3&lt;!!TLimit, class Autofac.Builder.SimpleActivatorData, class Autofac.Builder.SingleRegistrationStyle&gt; RegisterAdapterChain&lt;TLimit&gt;(class Autofac.ContainerBuilder builder, class System.Type[] types) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterAdapterChain``1(Autofac.ContainerBuilder,System.Type[])" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RegisterAdapterChain(Of TLimit) (builder As ContainerBuilder, ParamArray types As Type()) As IRegistrationBuilder(Of TLimit, SimpleActivatorData, SingleRegistrationStyle)" />
+      <MemberSignature Language="F#" Value="static member RegisterAdapterChain : Autofac.ContainerBuilder * Type[] -&gt; Autofac.Builder.IRegistrationBuilder&lt;'Limit, Autofac.Builder.SimpleActivatorData, Autofac.Builder.SingleRegistrationStyle&gt;" Usage="Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterAdapterChain (builder, types)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Autofac.Builder.IRegistrationBuilder`3&lt;!!TImplementer, class Autofac.Builder.ConcreteReflectionActivatorData, class Autofac.Builder.SingleRegistrationStyle&gt; RegisterKeyedType&lt;TImplementer, TLimit&gt;(class Autofac.ContainerBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterKeyedType``2(Autofac.ContainerBuilder)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RegisterKeyedType(Of TImplementer, TLimit) (builder As ContainerBuilder) As IRegistrationBuilder(Of TImplementer, ConcreteReflectionActivatorData, SingleRegistrationStyle)" />
+      <MemberSignature Language="F#" Value="static member RegisterKeyedType : Autofac.ContainerBuilder -&gt; Autofac.Builder.IRegistrationBuilder&lt;'Implementer, Autofac.Builder.ConcreteReflectionActivatorData, Autofac.Builder.SingleRegistrationStyle&gt;" Usage="Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterKeyedType builder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>

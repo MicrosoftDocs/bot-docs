@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ILocalizer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer" />
   <TypeSignature Language="VB.NET" Value="Public Interface ILocalizer" />
+  <TypeSignature Language="F#" Value="type ILocalizer = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -18,6 +19,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(string prefix, class Microsoft.Bot.Builder.FormFlow.TemplateAttribute template) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Add(System.String,Microsoft.Bot.Builder.FormFlow.TemplateAttribute)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (prefix As String, template As TemplateAttribute)" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * Microsoft.Bot.Builder.FormFlow.TemplateAttribute -&gt; unit" Usage="iLocalizer.Add (prefix, template)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(string key, class System.Collections.Generic.IEnumerable`1&lt;string&gt; list) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Add(System.String,System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (key As String, list As IEnumerable(Of String))" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * seq&lt;string&gt; -&gt; unit" Usage="iLocalizer.Add (key, list)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(string prefix, class System.Collections.Generic.IReadOnlyDictionary`2&lt;valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage, class Microsoft.Bot.Builder.FormFlow.TemplateAttribute&gt; templates) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Add(System.String,System.Collections.Generic.IReadOnlyDictionary{Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (prefix As String, templates As IReadOnlyDictionary(Of TemplateUsage, TemplateAttribute))" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * System.Collections.Generic.IReadOnlyDictionary&lt;Microsoft.Bot.Builder.FormFlow.TemplateUsage, Microsoft.Bot.Builder.FormFlow.TemplateAttribute&gt; -&gt; unit" Usage="iLocalizer.Add (prefix, templates)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(string prefix, class System.Collections.Generic.IReadOnlyDictionary`2&lt;object, class Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt; dictionary) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Add(System.String,System.Collections.Generic.IReadOnlyDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (prefix As String, dictionary As IReadOnlyDictionary(Of Object, DescribeAttribute))" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * System.Collections.Generic.IReadOnlyDictionary&lt;obj, Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt; -&gt; unit" Usage="iLocalizer.Add (prefix, dictionary)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -116,6 +121,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(string prefix, class System.Collections.Generic.IReadOnlyDictionary`2&lt;object, class Microsoft.Bot.Builder.FormFlow.TermsAttribute&gt; dictionary) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Add(System.String,System.Collections.Generic.IReadOnlyDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.TermsAttribute})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (prefix As String, dictionary As IReadOnlyDictionary(Of Object, TermsAttribute))" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * System.Collections.Generic.IReadOnlyDictionary&lt;obj, Microsoft.Bot.Builder.FormFlow.TermsAttribute&gt; -&gt; unit" Usage="iLocalizer.Add (prefix, dictionary)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(string key, string translation) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Add(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (key As String, translation As String)" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * string -&gt; unit" Usage="iLocalizer.Add (key, translation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -166,6 +173,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo Culture" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Culture" />
       <MemberSignature Language="VB.NET" Value="Public Property Culture As CultureInfo" />
+      <MemberSignature Language="F#" Value="member this.Culture : System.Globalization.CultureInfo with get, set" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Culture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -187,6 +195,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer Load(class System.Collections.IDictionaryEnumerator reader, [out] class System.Collections.Generic.IEnumerable`1&lt;string&gt;&amp; missing, [out] class System.Collections.Generic.IEnumerable`1&lt;string&gt;&amp; extra) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Load(System.Collections.IDictionaryEnumerator,System.Collections.Generic.IEnumerable{System.String}@,System.Collections.Generic.IEnumerable{System.String}@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Load (reader As IDictionaryEnumerator, ByRef missing As IEnumerable(Of String), ByRef extra As IEnumerable(Of String)) As ILocalizer" />
+      <MemberSignature Language="F#" Value="abstract member Load : System.Collections.IDictionaryEnumerator *  *  -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer" Usage="iLocalizer.Load (reader, missing, extra)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -218,6 +227,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Lookup(string key, [out] string&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Lookup(System.String,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Lookup (key As String, ByRef value As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Lookup : string *  -&gt; bool" Usage="iLocalizer.Lookup (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -245,6 +255,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LookupDictionary(string prefix, class System.Collections.Generic.IDictionary`2&lt;object, class Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt; dictionary) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.LookupDictionary(System.String,System.Collections.Generic.IDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute})" />
       <MemberSignature Language="VB.NET" Value="Public Sub LookupDictionary (prefix As String, dictionary As IDictionary(Of Object, DescribeAttribute))" />
+      <MemberSignature Language="F#" Value="abstract member LookupDictionary : string * System.Collections.Generic.IDictionary&lt;obj, Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt; -&gt; unit" Usage="iLocalizer.LookupDictionary (prefix, dictionary)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -269,6 +280,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LookupDictionary(string prefix, class System.Collections.Generic.IDictionary`2&lt;object, class Microsoft.Bot.Builder.FormFlow.TermsAttribute&gt; dictionary) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.LookupDictionary(System.String,System.Collections.Generic.IDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.TermsAttribute})" />
       <MemberSignature Language="VB.NET" Value="Public Sub LookupDictionary (prefix As String, dictionary As IDictionary(Of Object, TermsAttribute))" />
+      <MemberSignature Language="F#" Value="abstract member LookupDictionary : string * System.Collections.Generic.IDictionary&lt;obj, Microsoft.Bot.Builder.FormFlow.TermsAttribute&gt; -&gt; unit" Usage="iLocalizer.LookupDictionary (prefix, dictionary)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -293,6 +305,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LookupTemplates(string prefix, class System.Collections.Generic.IDictionary`2&lt;valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage, class Microsoft.Bot.Builder.FormFlow.TemplateAttribute&gt; templates) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.LookupTemplates(System.String,System.Collections.Generic.IDictionary{Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute})" />
       <MemberSignature Language="VB.NET" Value="Public Sub LookupTemplates (prefix As String, templates As IDictionary(Of TemplateUsage, TemplateAttribute))" />
+      <MemberSignature Language="F#" Value="abstract member LookupTemplates : string * System.Collections.Generic.IDictionary&lt;Microsoft.Bot.Builder.FormFlow.TemplateUsage, Microsoft.Bot.Builder.FormFlow.TemplateAttribute&gt; -&gt; unit" Usage="iLocalizer.LookupTemplates (prefix, templates)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -317,6 +330,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool LookupValues(string key, [out] string[]&amp; values) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.LookupValues(System.String,System.String[]@)" />
       <MemberSignature Language="VB.NET" Value="Public Function LookupValues (key As String, ByRef values As String()) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member LookupValues : string *  -&gt; bool" Usage="iLocalizer.LookupValues (key, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -344,6 +358,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (key As String)" />
+      <MemberSignature Language="F#" Value="abstract member Remove : string -&gt; unit" Usage="iLocalizer.Remove key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -368,6 +383,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save(class System.Resources.IResourceWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Save(System.Resources.IResourceWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save (writer As IResourceWriter)" />
+      <MemberSignature Language="F#" Value="abstract member Save : System.Resources.IResourceWriter -&gt; unit" Usage="iLocalizer.Save writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

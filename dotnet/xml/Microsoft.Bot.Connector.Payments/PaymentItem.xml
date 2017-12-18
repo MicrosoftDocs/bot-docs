@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaymentItem extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Payments.PaymentItem" />
   <TypeSignature Language="VB.NET" Value="Public Class PaymentItem" />
+  <TypeSignature Language="F#" Value="type PaymentItem = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -41,10 +42,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string label, class Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount amount, valuetype System.Nullable`1&lt;bool&gt; pending) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.PaymentItem.#ctor(System.String,Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount,System.Nullable{System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional label As String = null, Optional amount As PaymentCurrencyAmount = null, Optional pending As Nullable(Of Boolean) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Payments.PaymentItem : string * Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount * Nullable&lt;bool&gt; -&gt; Microsoft.Bot.Connector.Payments.PaymentItem" Usage="new Microsoft.Bot.Connector.Payments.PaymentItem (label, amount, pending)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="label" Type="System.String" />
@@ -66,10 +68,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount Amount" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentItem.Amount" />
       <MemberSignature Language="VB.NET" Value="Public Property Amount As PaymentCurrencyAmount" />
+      <MemberSignature Language="F#" Value="member this.Amount : Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentItem.Amount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -92,10 +95,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Label" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentItem.Label" />
       <MemberSignature Language="VB.NET" Value="Public Property Label As String" />
+      <MemberSignature Language="F#" Value="member this.Label : string with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentItem.Label" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -118,10 +122,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Pending" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentItem.Pending" />
       <MemberSignature Language="VB.NET" Value="Public Property Pending As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Pending : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentItem.Pending" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

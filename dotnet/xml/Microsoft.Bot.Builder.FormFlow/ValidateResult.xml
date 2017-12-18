@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ValidateResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.ValidateResult" />
   <TypeSignature Language="VB.NET" Value="Public Class ValidateResult" />
+  <TypeSignature Language="F#" Value="type ValidateResult = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".field public class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.FormFlow.Choice&gt; Choices" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ValidateResult.Choices" />
       <MemberSignature Language="VB.NET" Value="Public Choices As IEnumerable(Of Choice) " />
+      <MemberSignature Language="F#" Value="val mutable Choices : seq&lt;Microsoft.Bot.Builder.FormFlow.Choice&gt;" Usage="Microsoft.Bot.Builder.FormFlow.ValidateResult.Choices" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="ILAsm" Value=".field public string Feedback" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ValidateResult.Feedback" />
       <MemberSignature Language="VB.NET" Value="Public Feedback As String " />
+      <MemberSignature Language="F#" Value="val mutable Feedback : string" Usage="Microsoft.Bot.Builder.FormFlow.ValidateResult.Feedback" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".field public class Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt FeedbackCard" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ValidateResult.FeedbackCard" />
       <MemberSignature Language="VB.NET" Value="Public FeedbackCard As FormPrompt " />
+      <MemberSignature Language="F#" Value="val mutable FeedbackCard : Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt" Usage="Microsoft.Bot.Builder.FormFlow.ValidateResult.FeedbackCard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="ILAsm" Value=".field public bool IsValid" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ValidateResult.IsValid" />
       <MemberSignature Language="VB.NET" Value="Public IsValid As Boolean " />
+      <MemberSignature Language="F#" Value="val mutable IsValid : bool" Usage="Microsoft.Bot.Builder.FormFlow.ValidateResult.IsValid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="ILAsm" Value=".field public object Value" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ValidateResult.Value" />
       <MemberSignature Language="VB.NET" Value="Public Value As Object " />
+      <MemberSignature Language="F#" Value="val mutable Value : obj" Usage="Microsoft.Bot.Builder.FormFlow.ValidateResult.Value" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

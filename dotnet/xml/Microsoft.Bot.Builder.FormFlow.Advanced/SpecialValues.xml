@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SpecialValues extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.SpecialValues" />
   <TypeSignature Language="VB.NET" Value="Public Enum SpecialValues" />
+  <TypeSignature Language="F#" Value="type SpecialValues = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.Advanced.SpecialValues Field = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.SpecialValues.Field" />
       <MemberSignature Language="VB.NET" Value="Field" />
+      <MemberSignature Language="F#" Value="Field = 0" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.SpecialValues.Field" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

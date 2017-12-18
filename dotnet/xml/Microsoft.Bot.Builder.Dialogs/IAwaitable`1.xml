@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAwaitable`1&lt;+ T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IAwaitable`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAwaitable(Of Out T)" />
+  <TypeSignature Language="F#" Value="type IAwaitable&lt;'T&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.Internals.Fibers.IAwaiter`1&lt;!T&gt; GetAwaiter() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.IAwaitable`1.GetAwaiter" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAwaiter () As IAwaiter(Of Out T)" />
+      <MemberSignature Language="F#" Value="abstract member GetAwaiter : unit -&gt; Microsoft.Bot.Builder.Internals.Fibers.IAwaiter&lt;'T&gt;" Usage="iAwaitable.GetAwaiter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

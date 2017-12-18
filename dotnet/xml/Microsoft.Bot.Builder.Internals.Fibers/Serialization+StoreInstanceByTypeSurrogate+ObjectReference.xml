@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable sealed beforefieldinit Serialization/StoreInstanceByTypeSurrogate/ObjectReference extends System.Object implements class System.Runtime.Serialization.IObjectReference" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Serialization.StoreInstanceByTypeSurrogate.ObjectReference&#xA;Implements IObjectReference" />
+  <TypeSignature Language="F#" Value="type Serialization.StoreInstanceByTypeSurrogate.ObjectReference = class&#xA;    interface IObjectReference" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -42,6 +43,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.System#Runtime#Serialization#IObjectReference#GetRealObject(System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Function GetRealObject (context As StreamingContext) As Object Implements IObjectReference.GetRealObject" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.IObjectReference.GetRealObject(System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -64,6 +68,7 @@
       <MemberSignature Language="ILAsm" Value=".field public initonly class System.Type Type" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Type As Type " />
+      <MemberSignature Language="F#" Value="val mutable Type : Type" Usage="Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.Type" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

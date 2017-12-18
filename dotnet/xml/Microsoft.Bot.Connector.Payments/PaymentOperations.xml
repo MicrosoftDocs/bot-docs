@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PaymentOperations extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Payments.PaymentOperations" />
   <TypeSignature Language="VB.NET" Value="Public Class PaymentOperations" />
+  <TypeSignature Language="F#" Value="type PaymentOperations = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,10 +24,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string PaymentCompleteOperationName" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.Payments.PaymentOperations.PaymentCompleteOperationName" />
       <MemberSignature Language="VB.NET" Value="Public Const PaymentCompleteOperationName As String " />
+      <MemberSignature Language="F#" Value="val mutable PaymentCompleteOperationName : string" Usage="Microsoft.Bot.Connector.Payments.PaymentOperations.PaymentCompleteOperationName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -45,10 +47,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string UpdateShippingAddressOperationName" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.Payments.PaymentOperations.UpdateShippingAddressOperationName" />
       <MemberSignature Language="VB.NET" Value="Public Const UpdateShippingAddressOperationName As String " />
+      <MemberSignature Language="F#" Value="val mutable UpdateShippingAddressOperationName : string" Usage="Microsoft.Bot.Connector.Payments.PaymentOperations.UpdateShippingAddressOperationName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -67,10 +70,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string UpdateShippingOptionOperationName" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.Payments.PaymentOperations.UpdateShippingOptionOperationName" />
       <MemberSignature Language="VB.NET" Value="Public Const UpdateShippingOptionOperationName As String " />
+      <MemberSignature Language="F#" Value="val mutable UpdateShippingOptionOperationName : string" Usage="Microsoft.Bot.Connector.Payments.PaymentOperations.UpdateShippingOptionOperationName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

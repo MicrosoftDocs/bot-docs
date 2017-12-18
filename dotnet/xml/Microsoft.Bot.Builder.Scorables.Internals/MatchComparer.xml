@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MatchComparer extends System.Object implements class System.Collections.Generic.IComparer`1&lt;class System.Text.RegularExpressions.Match&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.MatchComparer" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MatchComparer&#xA;Implements IComparer(Of Match)" />
+  <TypeSignature Language="F#" Value="type MatchComparer = class&#xA;    interface IComparer&lt;Match&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Collections.Generic.IComparer`1&lt;class System.Text.RegularExpressions.Match&gt; Instance" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.MatchComparer.Instance" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Instance As IComparer(Of Match) " />
+      <MemberSignature Language="F#" Value=" staticval mutable Instance : System.Collections.Generic.IComparer&lt;System.Text.RegularExpressions.Match&gt;" Usage="Microsoft.Bot.Builder.Scorables.Internals.MatchComparer.Instance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -44,6 +46,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.MatchComparer.System#Collections#Generic#IComparer&lt;System#Text#RegularExpressions#Match&gt;#Compare(System.Text.RegularExpressions.Match,System.Text.RegularExpressions.Match)" />
       <MemberSignature Language="VB.NET" Value="Function Compare (one As Match, two As Match) As Integer Implements IComparer(Of Match).Compare" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IComparer`1.Compare(`0,`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

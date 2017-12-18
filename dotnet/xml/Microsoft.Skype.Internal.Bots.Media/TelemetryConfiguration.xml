@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TelemetryConfiguration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration" />
   <TypeSignature Language="VB.NET" Value="Public Class TelemetryConfiguration" />
+  <TypeSignature Language="F#" Value="type TelemetryConfiguration = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string AriaTenantToken" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration.AriaTenantToken" />
       <MemberSignature Language="VB.NET" Value="Public Property AriaTenantToken As String" />
+      <MemberSignature Language="F#" Value="member this.AriaTenantToken : string with get, set" Usage="Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration.AriaTenantToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="C#" Value="public static bool IsValidConfiguration (Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration telemetryConfiguration);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValidConfiguration(class Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration telemetryConfiguration) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration.IsValidConfiguration(Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration)" />
+      <MemberSignature Language="F#" Value="static member IsValidConfiguration : Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration -&gt; bool" Usage="Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration.IsValidConfiguration telemetryConfiguration" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool MonitorSocketMetrics" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration.MonitorSocketMetrics" />
       <MemberSignature Language="VB.NET" Value="Public Property MonitorSocketMetrics As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MonitorSocketMetrics : bool with get, set" Usage="Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration.MonitorSocketMetrics" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool MonitorUnhandledExceptions" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration.MonitorUnhandledExceptions" />
       <MemberSignature Language="VB.NET" Value="Public Property MonitorUnhandledExceptions As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MonitorUnhandledExceptions : bool with get, set" Usage="Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration.MonitorUnhandledExceptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="telemetryConfiguration.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

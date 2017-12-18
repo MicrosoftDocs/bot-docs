@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRecognize`1&lt;T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRecognize(Of T)" />
+  <TypeSignature Language="F#" Value="type IRecognize&lt;'T&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Help(!T state, object defaultValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1.Help(`0,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Help (state As T, Optional defaultValue As Object = null) As String" />
+      <MemberSignature Language="F#" Value="abstract member Help : 'T * obj -&gt; string" Usage="iRecognize.Help (state, defaultValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch&gt; Matches(class Microsoft.Bot.Connector.IMessageActivity input, object defaultValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1.Matches(Microsoft.Bot.Connector.IMessageActivity,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Matches (input As IMessageActivity, Optional defaultValue As Object = null) As IEnumerable(Of TermMatch)" />
+      <MemberSignature Language="F#" Value="abstract member Matches : Microsoft.Bot.Connector.IMessageActivity * obj -&gt; seq&lt;Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch&gt;" Usage="iRecognize.Matches (input, defaultValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] PromptArgs() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1.PromptArgs" />
       <MemberSignature Language="VB.NET" Value="Public Function PromptArgs () As Object()" />
+      <MemberSignature Language="F#" Value="abstract member PromptArgs : unit -&gt; obj[]" Usage="iRecognize.PromptArgs " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; ValidInputs(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1.ValidInputs(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ValidInputs (value As Object) As IEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="abstract member ValidInputs : obj -&gt; seq&lt;string&gt;" Usage="iRecognize.ValidInputs value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -123,6 +128,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.DescribeAttribute ValueDescription(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1.ValueDescription(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ValueDescription (value As Object) As DescribeAttribute" />
+      <MemberSignature Language="F#" Value="abstract member ValueDescription : obj -&gt; Microsoft.Bot.Builder.FormFlow.DescribeAttribute" Usage="iRecognize.ValueDescription value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -148,6 +154,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt; ValueDescriptions() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1.ValueDescriptions" />
       <MemberSignature Language="VB.NET" Value="Public Function ValueDescriptions () As IEnumerable(Of DescribeAttribute)" />
+      <MemberSignature Language="F#" Value="abstract member ValueDescriptions : unit -&gt; seq&lt;Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt;" Usage="iRecognize.ValueDescriptions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -170,6 +177,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;object&gt; Values() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1.Values" />
       <MemberSignature Language="VB.NET" Value="Public Function Values () As IEnumerable(Of Object)" />
+      <MemberSignature Language="F#" Value="abstract member Values : unit -&gt; seq&lt;obj&gt;" Usage="iRecognize.Values " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

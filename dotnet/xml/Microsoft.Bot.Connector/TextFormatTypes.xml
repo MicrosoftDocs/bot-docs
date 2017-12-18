@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextFormatTypes extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.TextFormatTypes" />
   <TypeSignature Language="VB.NET" Value="Public Class TextFormatTypes" />
+  <TypeSignature Language="F#" Value="type TextFormatTypes = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -24,7 +25,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -37,10 +38,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Markdown" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.TextFormatTypes.Markdown" />
       <MemberSignature Language="VB.NET" Value="Public Const Markdown As String " />
+      <MemberSignature Language="F#" Value="val mutable Markdown : string" Usage="Microsoft.Bot.Connector.TextFormatTypes.Markdown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -57,10 +59,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Plain" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.TextFormatTypes.Plain" />
       <MemberSignature Language="VB.NET" Value="Public Const Plain As String " />
+      <MemberSignature Language="F#" Value="val mutable Plain : string" Usage="Microsoft.Bot.Connector.TextFormatTypes.Plain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -77,10 +80,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Xml" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.TextFormatTypes.Xml" />
       <MemberSignature Language="VB.NET" Value="Public Const Xml As String " />
+      <MemberSignature Language="F#" Value="val mutable Xml : string" Usage="Microsoft.Bot.Connector.TextFormatTypes.Xml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

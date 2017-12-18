@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable beforefieldinit PromptDialog/PromptChoice`1&lt;T&gt; extends Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2&lt;!T, !T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1" />
   <TypeSignature Language="VB.NET" Value="Public Class PromptDialog.PromptChoice(Of T)&#xA;Inherits Prompt(Of T, T)" />
+  <TypeSignature Language="F#" Value="type PromptDialog.PromptChoice&lt;'T&gt; = class&#xA;    inherit Prompt&lt;'T, 'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.IPromptOptions`1&lt;!T&gt; promptOptions, bool recognizeChoices, bool recognizeNumbers, bool recognizeOrdinals, float64 minScore) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1.#ctor(Microsoft.Bot.Builder.Dialogs.IPromptOptions{`0},System.Boolean,System.Boolean,System.Boolean,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (promptOptions As IPromptOptions(Of T), Optional recognizeChoices As Boolean = true, Optional recognizeNumbers As Boolean = true, Optional recognizeOrdinals As Boolean = true, Optional minScore As Double = 0.4)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice&lt;'T&gt; : Microsoft.Bot.Builder.Dialogs.IPromptOptions&lt;'T&gt; * bool * bool * bool * double -&gt; Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice&lt;'T&gt;" Usage="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice&lt;'T&gt; (promptOptions, recognizeChoices, recognizeNumbers, recognizeOrdinals, minScore)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="C#" Value="public PromptChoice (System.Collections.Generic.IDictionary&lt;T,System.Collections.Generic.IEnumerable&lt;T&gt;&gt; choices, string prompt, string retry, int attempts, Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle = Microsoft.Bot.Builder.Dialogs.PromptStyle.Auto, System.Collections.Generic.IEnumerable&lt;string&gt; descriptions = null, bool recognizeChoices = true, bool recognizeNumbers = true, bool recognizeOrdinals = true, double minScore = 0.4);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IDictionary`2&lt;!T, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;&gt; choices, string prompt, string retry, int32 attempts, valuetype Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle, class System.Collections.Generic.IEnumerable`1&lt;string&gt; descriptions, bool recognizeChoices, bool recognizeNumbers, bool recognizeOrdinals, float64 minScore) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1.#ctor(System.Collections.Generic.IDictionary{`0,System.Collections.Generic.IEnumerable{`0}},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Double)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice&lt;'T&gt; : System.Collections.Generic.IDictionary&lt;'T, seq&lt;'T&gt;&gt; * string * string * int * Microsoft.Bot.Builder.Dialogs.PromptStyle * seq&lt;string&gt; * bool * bool * bool * double -&gt; Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice&lt;'T&gt;" Usage="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice&lt;'T&gt; (choices, prompt, retry, attempts, promptStyle, descriptions, recognizeChoices, recognizeNumbers, recognizeOrdinals, minScore)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="C#" Value="public PromptChoice (System.Collections.Generic.IEnumerable&lt;T&gt; options, string prompt, string retry, int attempts, Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle = Microsoft.Bot.Builder.Dialogs.PromptStyle.Auto, System.Collections.Generic.IEnumerable&lt;string&gt; descriptions = null, bool recognizeChoices = true, bool recognizeNumbers = true, bool recognizeOrdinals = true, double minScore = 0.4);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; options, string prompt, string retry, int32 attempts, valuetype Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle, class System.Collections.Generic.IEnumerable`1&lt;string&gt; descriptions, bool recognizeChoices, bool recognizeNumbers, bool recognizeOrdinals, float64 minScore) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Double)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice&lt;'T&gt; : seq&lt;'T&gt; * string * string * int * Microsoft.Bot.Builder.Dialogs.PromptStyle * seq&lt;string&gt; * bool * bool * bool * double -&gt; Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice&lt;'T&gt;" Usage="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice&lt;'T&gt; (options, prompt, retry, attempts, promptStyle, descriptions, recognizeChoices, recognizeNumbers, recognizeOrdinals, minScore)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryParse(class Microsoft.Bot.Connector.IMessageActivity message, [out] !T&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1.TryParse(Microsoft.Bot.Connector.IMessageActivity,`0@)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function TryParse (message As IMessageActivity, ByRef result As T) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.TryParse : Microsoft.Bot.Connector.IMessageActivity *  -&gt; bool" Usage="promptChoice.TryParse (message, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

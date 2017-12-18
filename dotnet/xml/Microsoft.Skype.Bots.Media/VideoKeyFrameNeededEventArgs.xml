@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VideoKeyFrameNeededEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.VideoKeyFrameNeededEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class VideoKeyFrameNeededEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type VideoKeyFrameNeededEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Skype.Bots.Media.MediaType MediaType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoKeyFrameNeededEventArgs.MediaType" />
       <MemberSignature Language="VB.NET" Value="Public Property MediaType As MediaType" />
+      <MemberSignature Language="F#" Value="member this.MediaType : Microsoft.Skype.Bots.Media.MediaType with get, set" Usage="Microsoft.Skype.Bots.Media.VideoKeyFrameNeededEventArgs.MediaType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 SocketId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoKeyFrameNeededEventArgs.SocketId" />
       <MemberSignature Language="VB.NET" Value="Public Property SocketId As Integer" />
+      <MemberSignature Language="F#" Value="member this.SocketId : int with get, set" Usage="Microsoft.Skype.Bots.Media.VideoKeyFrameNeededEventArgs.SocketId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Skype.Bots.Media.VideoFormat[] VideoFormats" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoKeyFrameNeededEventArgs.VideoFormats" />
       <MemberSignature Language="VB.NET" Value="Public Property VideoFormats As VideoFormat()" />
+      <MemberSignature Language="F#" Value="member this.VideoFormats : Microsoft.Skype.Bots.Media.VideoFormat[] with get, set" Usage="Microsoft.Skype.Bots.Media.VideoKeyFrameNeededEventArgs.VideoFormats" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITypingActivity implements class Microsoft.Bot.Connector.IActivity" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ITypingActivity" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITypingActivity&#xA;Implements IActivity" />
+  <TypeSignature Language="F#" Value="type ITypingActivity = interface&#xA;    interface IActivity" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>

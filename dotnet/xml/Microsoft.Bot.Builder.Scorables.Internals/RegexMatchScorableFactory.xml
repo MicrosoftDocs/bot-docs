@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RegexMatchScorableFactory extends System.Object implements class Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, class System.Text.RegularExpressions.Match&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegexMatchScorableFactory&#xA;Implements IScorableFactory(Of IResolver, Match)" />
+  <TypeSignature Language="F#" Value="type RegexMatchScorableFactory = class&#xA;    interface IScorableFactory&lt;IResolver, Match&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`2&lt;string, class System.Text.RegularExpressions.Regex&gt; make) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory.#ctor(System.Func{System.String,System.Text.RegularExpressions.Regex})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (make As Func(Of String, Regex))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory : Func&lt;string, System.Text.RegularExpressions.Regex&gt; -&gt; Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory" Usage="new Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory make" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -45,6 +47,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory.Microsoft#Bot#Builder#Scorables#Internals#IScorableFactory&lt;Microsoft#Bot#Builder#Scorables#Internals#IResolver,System#Text#RegularExpressions#Match&gt;#ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})" />
       <MemberSignature Language="VB.NET" Value="Function ScorableFor (methods As IEnumerable(Of MethodInfo)) As IScorable(Of IResolver, Match) Implements IScorableFactory(Of IResolver, Match).ScorableFor" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2.ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

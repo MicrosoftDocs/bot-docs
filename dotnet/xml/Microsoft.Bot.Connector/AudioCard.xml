@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AudioCard extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.AudioCard" />
   <TypeSignature Language="VB.NET" Value="Public Class AudioCard" />
+  <TypeSignature Language="F#" Value="type AudioCard = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -41,10 +42,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, string subtitle, string text, class Microsoft.Bot.Connector.ThumbnailUrl image, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.MediaUrl&gt; media, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.CardAction&gt; buttons, valuetype System.Nullable`1&lt;bool&gt; shareable, valuetype System.Nullable`1&lt;bool&gt; autoloop, valuetype System.Nullable`1&lt;bool&gt; autostart, string aspect, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.AudioCard.#ctor(System.String,System.String,System.String,Microsoft.Bot.Connector.ThumbnailUrl,System.Collections.Generic.IList{Microsoft.Bot.Connector.MediaUrl},System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional title As String = null, Optional subtitle As String = null, Optional text As String = null, Optional image As ThumbnailUrl = null, Optional media As IList(Of MediaUrl) = null, Optional buttons As IList(Of CardAction) = null, Optional shareable As Nullable(Of Boolean) = null, Optional autoloop As Nullable(Of Boolean) = null, Optional autostart As Nullable(Of Boolean) = null, Optional aspect As String = null, Optional value As Object = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.AudioCard : string * string * string * Microsoft.Bot.Connector.ThumbnailUrl * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MediaUrl&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string * obj -&gt; Microsoft.Bot.Connector.AudioCard" Usage="new Microsoft.Bot.Connector.AudioCard (title, subtitle, text, image, media, buttons, shareable, autoloop, autostart, aspect, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="title" Type="System.String" />
@@ -82,10 +84,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Aspect" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.AudioCard.Aspect" />
       <MemberSignature Language="VB.NET" Value="Public Property Aspect As String" />
+      <MemberSignature Language="F#" Value="member this.Aspect : string with get, set" Usage="Microsoft.Bot.Connector.AudioCard.Aspect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -109,10 +112,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Autoloop" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.AudioCard.Autoloop" />
       <MemberSignature Language="VB.NET" Value="Public Property Autoloop As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Autoloop : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Connector.AudioCard.Autoloop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -135,10 +139,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Autostart" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.AudioCard.Autostart" />
       <MemberSignature Language="VB.NET" Value="Public Property Autostart As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Autostart : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Connector.AudioCard.Autostart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -162,10 +167,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.CardAction&gt; Buttons" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.AudioCard.Buttons" />
       <MemberSignature Language="VB.NET" Value="Public Property Buttons As IList(Of CardAction)" />
+      <MemberSignature Language="F#" Value="member this.Buttons : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; with get, set" Usage="Microsoft.Bot.Connector.AudioCard.Buttons" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -188,10 +194,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string ContentType" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.AudioCard.ContentType" />
       <MemberSignature Language="VB.NET" Value="Public Const ContentType As String " />
+      <MemberSignature Language="F#" Value="val mutable ContentType : string" Usage="Microsoft.Bot.Connector.AudioCard.ContentType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -206,10 +213,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.ThumbnailUrl Image" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.AudioCard.Image" />
       <MemberSignature Language="VB.NET" Value="Public Property Image As ThumbnailUrl" />
+      <MemberSignature Language="F#" Value="member this.Image : Microsoft.Bot.Connector.ThumbnailUrl with get, set" Usage="Microsoft.Bot.Connector.AudioCard.Image" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -232,10 +240,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.MediaUrl&gt; Media" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.AudioCard.Media" />
       <MemberSignature Language="VB.NET" Value="Public Property Media As IList(Of MediaUrl)" />
+      <MemberSignature Language="F#" Value="member this.Media : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MediaUrl&gt; with get, set" Usage="Microsoft.Bot.Connector.AudioCard.Media" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -258,10 +267,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Shareable" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.AudioCard.Shareable" />
       <MemberSignature Language="VB.NET" Value="Public Property Shareable As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Shareable : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Connector.AudioCard.Shareable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -285,10 +295,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Subtitle" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.AudioCard.Subtitle" />
       <MemberSignature Language="VB.NET" Value="Public Property Subtitle As String" />
+      <MemberSignature Language="F#" Value="member this.Subtitle : string with get, set" Usage="Microsoft.Bot.Connector.AudioCard.Subtitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -311,10 +322,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.AudioCard.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="Microsoft.Bot.Connector.AudioCard.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -337,10 +349,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Title" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.AudioCard.Title" />
       <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="Microsoft.Bot.Connector.AudioCard.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -363,10 +376,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.AudioCard.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="Microsoft.Bot.Connector.AudioCard.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

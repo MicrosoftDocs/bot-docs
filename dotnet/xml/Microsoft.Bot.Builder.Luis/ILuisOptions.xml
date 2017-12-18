@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ILuisOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.ILuisOptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface ILuisOptions" />
+  <TypeSignature Language="F#" Value="type ILuisOptions = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Log" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisOptions.Log" />
       <MemberSignature Language="VB.NET" Value="Public Property Log As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Log : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Builder.Luis.ILuisOptions.Log" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; SpellCheck" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisOptions.SpellCheck" />
       <MemberSignature Language="VB.NET" Value="Public Property SpellCheck As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.SpellCheck : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Builder.Luis.ILuisOptions.SpellCheck" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -62,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Staging" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisOptions.Staging" />
       <MemberSignature Language="VB.NET" Value="Public Property Staging As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Staging : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Builder.Luis.ILuisOptions.Staging" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; TimezoneOffset" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisOptions.TimezoneOffset" />
       <MemberSignature Language="VB.NET" Value="Public Property TimezoneOffset As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.TimezoneOffset : Nullable&lt;double&gt; with get, set" Usage="Microsoft.Bot.Builder.Luis.ILuisOptions.TimezoneOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -104,6 +109,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Verbose" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisOptions.Verbose" />
       <MemberSignature Language="VB.NET" Value="Public Property Verbose As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Verbose : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Builder.Luis.ILuisOptions.Verbose" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

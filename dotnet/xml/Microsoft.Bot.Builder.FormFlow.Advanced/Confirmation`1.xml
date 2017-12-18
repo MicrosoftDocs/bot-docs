@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Confirmation`1&lt;class T&gt; extends Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation`1" />
   <TypeSignature Language="VB.NET" Value="Public Class Confirmation(Of T)&#xA;Inherits Field(Of T)" />
+  <TypeSignature Language="F#" Value="type Confirmation&lt;'T (requires 'T : null)&gt; = class&#xA;    inherit Field&lt;'T (requires 'T : null)&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.FormFlow.MessageDelegate`1&lt;!T&gt; generateMessage, class Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1&lt;!T&gt; condition, class System.Collections.Generic.IEnumerable`1&lt;string&gt; dependencies, class Microsoft.Bot.Builder.FormFlow.IForm`1&lt;!T&gt; form) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation`1.#ctor(Microsoft.Bot.Builder.FormFlow.MessageDelegate{`0},Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String},Microsoft.Bot.Builder.FormFlow.IForm{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (generateMessage As MessageDelegate(Of T), condition As ActiveDelegate(Of T), dependencies As IEnumerable(Of String), form As IForm(Of T))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation&lt;'T (requires 'T : null)&gt; : Microsoft.Bot.Builder.FormFlow.MessageDelegate&lt;'T (requires 'T : null)&gt; * Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;'T (requires 'T : null)&gt; * seq&lt;string&gt; * Microsoft.Bot.Builder.FormFlow.IForm&lt;'T (requires 'T : null)&gt; -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation&lt;'T (requires 'T : null)&gt;" Usage="new Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation&lt;'T (requires 'T : null)&gt; (generateMessage, condition, dependencies, form)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.FormFlow.PromptAttribute prompt, class Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1&lt;!T&gt; condition, class System.Collections.Generic.IEnumerable`1&lt;string&gt; dependencies, class Microsoft.Bot.Builder.FormFlow.IForm`1&lt;!T&gt; form) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation`1.#ctor(Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String},Microsoft.Bot.Builder.FormFlow.IForm{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (prompt As PromptAttribute, condition As ActiveDelegate(Of T), dependencies As IEnumerable(Of String), form As IForm(Of T))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation&lt;'T (requires 'T : null)&gt; : Microsoft.Bot.Builder.FormFlow.PromptAttribute * Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;'T (requires 'T : null)&gt; * seq&lt;string&gt; * Microsoft.Bot.Builder.FormFlow.IForm&lt;'T (requires 'T : null)&gt; -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation&lt;'T (requires 'T : null)&gt;" Usage="new Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation&lt;'T (requires 'T : null)&gt; (prompt, condition, dependencies, form)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Active(!T state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation`1.Active(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Active (state As T) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Active : 'T -&gt; bool" Usage="confirmation.Active state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; Dependencies" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation`1.Dependencies" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Dependencies As IEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Dependencies : seq&lt;string&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation&lt;'T (requires 'T : null)&gt;.Dependencies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -130,6 +135,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetValue(!T state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation`1.GetValue(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue (state As T) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetValue : 'T -&gt; obj" Usage="confirmation.GetValue state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -153,6 +159,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsUnknown(!T state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation`1.IsUnknown(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsUnknown (state As T) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsUnknown : 'T -&gt; bool" Usage="confirmation.IsUnknown state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -176,6 +183,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.FormFlow.Advanced.NextStep Next(object value, !T state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation`1.Next(System.Object,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Next (value As Object, state As T) As NextStep" />
+      <MemberSignature Language="F#" Value="override this.Next : obj * 'T -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.NextStep" Usage="confirmation.Next (value, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -201,6 +209,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetUnknown(!T state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation`1.SetUnknown(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetUnknown (state As T)" />
+      <MemberSignature Language="F#" Value="override this.SetUnknown : 'T -&gt; unit" Usage="confirmation.SetUnknown state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -223,6 +232,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetValue(!T state, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Confirmation`1.SetValue(`0,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetValue (state As T, value As Object)" />
+      <MemberSignature Language="F#" Value="override this.SetValue : 'T * obj -&gt; unit" Usage="confirmation.SetValue (state, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

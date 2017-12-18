@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit DispatchDialog`1&lt;TResult&gt; extends Microsoft.Bot.Builder.Scorables.Dispatcher implements class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!TResult&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.DispatchDialog`1" />
   <TypeSignature Language="VB.NET" Value="Public Class DispatchDialog(Of TResult)&#xA;Inherits Dispatcher&#xA;Implements IDialog(Of TResult)" />
+  <TypeSignature Language="F#" Value="type DispatchDialog&lt;'Result&gt; = class&#xA;    inherit Dispatcher&#xA;    interface IDialog&lt;'Result&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task ActivityReceivedAsync(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;class Microsoft.Bot.Connector.IActivity&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DispatchDialog`1.ActivityReceivedAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Connector.IActivity})" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ActivityReceivedAsync (context As IDialogContext, item As IAwaitable(Of IActivity)) As Task" />
+      <MemberSignature Language="F#" Value="abstract member ActivityReceivedAsync : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IActivity&gt; -&gt; System.Threading.Tasks.Task&#xA;override this.ActivityReceivedAsync : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IActivity&gt; -&gt; System.Threading.Tasks.Task" Usage="dispatchDialog.ActivityReceivedAsync (context, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.Generic.IReadOnlyList`1&lt;object&gt; MakeServices() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DispatchDialog`1.MakeServices" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MakeServices () As IReadOnlyList(Of Object)" />
+      <MemberSignature Language="F#" Value="override this.MakeServices : unit -&gt; System.Collections.Generic.IReadOnlyList&lt;obj&gt;" Usage="dispatchDialog.MakeServices " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -97,7 +100,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task StartAsync(class Microsoft.Bot.Builder.Dialogs.IDialogContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DispatchDialog`1.StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function StartAsync (context As IDialogContext) As Task" />
+      <MemberSignature Language="F#" Value="abstract member StartAsync : Microsoft.Bot.Builder.Dialogs.IDialogContext -&gt; System.Threading.Tasks.Task&#xA;override this.StartAsync : Microsoft.Bot.Builder.Dialogs.IDialogContext -&gt; System.Threading.Tasks.Task" Usage="dispatchDialog.StartAsync context" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.IDialog`1.StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

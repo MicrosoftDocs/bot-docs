@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CaseNormalization extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.CaseNormalization" />
   <TypeSignature Language="VB.NET" Value="Public Enum CaseNormalization" />
+  <TypeSignature Language="F#" Value="type CaseNormalization = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.CaseNormalization Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.CaseNormalization.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="Microsoft.Bot.Builder.FormFlow.CaseNormalization.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.CaseNormalization InitialUpper = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.CaseNormalization.InitialUpper" />
       <MemberSignature Language="VB.NET" Value="InitialUpper" />
+      <MemberSignature Language="F#" Value="InitialUpper = 1" Usage="Microsoft.Bot.Builder.FormFlow.CaseNormalization.InitialUpper" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -62,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.CaseNormalization Lower = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.CaseNormalization.Lower" />
       <MemberSignature Language="VB.NET" Value="Lower" />
+      <MemberSignature Language="F#" Value="Lower = 2" Usage="Microsoft.Bot.Builder.FormFlow.CaseNormalization.Lower" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -82,6 +86,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.CaseNormalization None = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.CaseNormalization.None" />
       <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 4" Usage="Microsoft.Bot.Builder.FormFlow.CaseNormalization.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -102,6 +107,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.CaseNormalization Upper = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.CaseNormalization.Upper" />
       <MemberSignature Language="VB.NET" Value="Upper" />
+      <MemberSignature Language="F#" Value="Upper = 3" Usage="Microsoft.Bot.Builder.FormFlow.CaseNormalization.Upper" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

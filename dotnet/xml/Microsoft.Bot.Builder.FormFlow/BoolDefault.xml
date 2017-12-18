@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BoolDefault extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.BoolDefault" />
   <TypeSignature Language="VB.NET" Value="Public Enum BoolDefault" />
+  <TypeSignature Language="F#" Value="type BoolDefault = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.BoolDefault Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.BoolDefault.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="Microsoft.Bot.Builder.FormFlow.BoolDefault.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.BoolDefault False = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.BoolDefault.False" />
       <MemberSignature Language="VB.NET" Value="False" />
+      <MemberSignature Language="F#" Value="False = 2" Usage="Microsoft.Bot.Builder.FormFlow.BoolDefault.False" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.BoolDefault True = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.BoolDefault.True" />
       <MemberSignature Language="VB.NET" Value="True" />
+      <MemberSignature Language="F#" Value="True = 1" Usage="Microsoft.Bot.Builder.FormFlow.BoolDefault.True" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

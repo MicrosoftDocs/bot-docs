@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessageOptions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.MessageOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class MessageOptions" />
+  <TypeSignature Language="F#" Value="type MessageOptions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string AttachmentLayout" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.MessageOptions.AttachmentLayout" />
       <MemberSignature Language="VB.NET" Value="Public Property AttachmentLayout As String" />
+      <MemberSignature Language="F#" Value="member this.AttachmentLayout : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.MessageOptions.AttachmentLayout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Attachment&gt; Attachments" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.MessageOptions.Attachments" />
       <MemberSignature Language="VB.NET" Value="Public Property Attachments As IList(Of Attachment)" />
+      <MemberSignature Language="F#" Value="member this.Attachments : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.MessageOptions.Attachments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Entity&gt; Entities" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.MessageOptions.Entities" />
       <MemberSignature Language="VB.NET" Value="Public Property Entities As IList(Of Entity)" />
+      <MemberSignature Language="F#" Value="member this.Entities : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Entity&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.MessageOptions.Entities" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string InputHint" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.MessageOptions.InputHint" />
       <MemberSignature Language="VB.NET" Value="Public Property InputHint As String" />
+      <MemberSignature Language="F#" Value="member this.InputHint : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.MessageOptions.InputHint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -122,6 +127,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string TextFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.MessageOptions.TextFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property TextFormat As String" />
+      <MemberSignature Language="F#" Value="member this.TextFormat : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.MessageOptions.TextFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

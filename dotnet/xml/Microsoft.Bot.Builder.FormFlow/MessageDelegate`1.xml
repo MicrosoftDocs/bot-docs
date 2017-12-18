@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MessageDelegate`1&lt;T&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.MessageDelegate`1" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function MessageDelegate(Of T)(state As T) As Task(Of PromptAttribute) " />
+  <TypeSignature Language="F#" Value="type MessageDelegate&lt;'T&gt; = delegate of 'T -&gt; Task&lt;PromptAttribute&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>

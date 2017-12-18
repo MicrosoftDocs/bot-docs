@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit ScorableAggregator`6&lt;OuterItem, (class Microsoft.Bot.Builder.Scorables.Internals.Token`2&lt;!InnerItem, !InnerScore&gt;) OuterState, OuterScore, InnerItem, InnerState, InnerScore&gt; extends Microsoft.Bot.Builder.Scorables.Internals.ScorableBase`3&lt;!OuterItem, !OuterState, !OuterScore&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.ScorableAggregator`6" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ScorableAggregator(Of OuterItem, OuterState, OuterScore, InnerItem, InnerState, InnerScore)&#xA;Inherits ScorableBase(Of OuterItem, OuterState, OuterScore)" />
+  <TypeSignature Language="F#" Value="type ScorableAggregator&lt;'OuterItem, 'OuterState, 'OuterScore, 'InnerItem, 'InnerState, 'InnerScore (requires 'OuterState :&gt; Token&lt;'InnerItem, 'InnerScore&gt;)&gt; = class&#xA;    inherit ScorableBase&lt;'OuterItem, 'OuterState, 'OuterScore (requires 'OuterState :&gt; Token&lt;'InnerItem, 'InnerScore&gt;)&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task DoneAsync(!OuterItem item, !OuterState state, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.ScorableAggregator`6.DoneAsync(`0,`1,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function DoneAsync (item As OuterItem, state As OuterState, token As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="override this.DoneAsync : 'OuterItem * 'OuterState * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="scorableAggregator.DoneAsync (item, state, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool HasScore(!OuterItem item, !OuterState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.ScorableAggregator`6.HasScore(`0,`1)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HasScore (item As OuterItem, state As OuterState) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.HasScore : 'OuterItem * 'OuterState -&gt; bool" Usage="scorableAggregator.HasScore (item, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task PostAsync(!OuterItem item, !OuterState state, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.ScorableAggregator`6.PostAsync(`0,`1,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function PostAsync (item As OuterItem, state As OuterState, token As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="override this.PostAsync : 'OuterItem * 'OuterState * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="scorableAggregator.PostAsync (item, state, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

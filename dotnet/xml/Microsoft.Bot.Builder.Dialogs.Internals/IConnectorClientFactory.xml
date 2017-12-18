@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IConnectorClientFactory" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory" />
   <TypeSignature Language="VB.NET" Value="Public Interface IConnectorClientFactory" />
+  <TypeSignature Language="F#" Value="type IConnectorClientFactory = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.IConnectorClient MakeConnectorClient() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeConnectorClient" />
       <MemberSignature Language="VB.NET" Value="Public Function MakeConnectorClient () As IConnectorClient" />
+      <MemberSignature Language="F#" Value="abstract member MakeConnectorClient : unit -&gt; Microsoft.Bot.Connector.IConnectorClient" Usage="iConnectorClientFactory.MakeConnectorClient " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.IStateClient MakeStateClient() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeStateClient" />
       <MemberSignature Language="VB.NET" Value="Public Function MakeStateClient () As IStateClient" />
+      <MemberSignature Language="F#" Value="abstract member MakeStateClient : unit -&gt; Microsoft.Bot.Connector.IStateClient" Usage="iConnectorClientFactory.MakeStateClient " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

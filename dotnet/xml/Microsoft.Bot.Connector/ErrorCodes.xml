@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ErrorCodes extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ErrorCodes" />
   <TypeSignature Language="VB.NET" Value="Public Class ErrorCodes" />
+  <TypeSignature Language="F#" Value="type ErrorCodes = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -39,10 +40,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string BadArgument" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ErrorCodes.BadArgument" />
       <MemberSignature Language="VB.NET" Value="Public Const BadArgument As String " />
+      <MemberSignature Language="F#" Value="val mutable BadArgument : string" Usage="Microsoft.Bot.Connector.ErrorCodes.BadArgument" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -59,10 +61,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string BadSyntax" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ErrorCodes.BadSyntax" />
       <MemberSignature Language="VB.NET" Value="Public Const BadSyntax As String " />
+      <MemberSignature Language="F#" Value="val mutable BadSyntax : string" Usage="Microsoft.Bot.Connector.ErrorCodes.BadSyntax" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -79,10 +82,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string MessageSizeTooBig" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ErrorCodes.MessageSizeTooBig" />
       <MemberSignature Language="VB.NET" Value="Public Const MessageSizeTooBig As String " />
+      <MemberSignature Language="F#" Value="val mutable MessageSizeTooBig : string" Usage="Microsoft.Bot.Connector.ErrorCodes.MessageSizeTooBig" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -99,10 +103,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string MissingProperty" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ErrorCodes.MissingProperty" />
       <MemberSignature Language="VB.NET" Value="Public Const MissingProperty As String " />
+      <MemberSignature Language="F#" Value="val mutable MissingProperty : string" Usage="Microsoft.Bot.Connector.ErrorCodes.MissingProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -119,10 +124,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string ServiceError" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ErrorCodes.ServiceError" />
       <MemberSignature Language="VB.NET" Value="Public Const ServiceError As String " />
+      <MemberSignature Language="F#" Value="val mutable ServiceError : string" Usage="Microsoft.Bot.Connector.ErrorCodes.ServiceError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

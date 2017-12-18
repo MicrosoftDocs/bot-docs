@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IItem`1&lt;+ T&gt; implements class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.IItem`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IItem(Of Out T)&#xA;Implements IAwaitable(Of Out T)" />
+  <TypeSignature Language="F#" Value="type IItem&lt;'T&gt; = interface&#xA;    interface IAwaitable&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>

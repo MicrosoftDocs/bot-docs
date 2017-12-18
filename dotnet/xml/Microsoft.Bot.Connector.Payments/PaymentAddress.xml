@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaymentAddress extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Payments.PaymentAddress" />
   <TypeSignature Language="VB.NET" Value="Public Class PaymentAddress" />
+  <TypeSignature Language="F#" Value="type PaymentAddress = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -41,10 +42,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string country, class System.Collections.Generic.IList`1&lt;string&gt; addressLine, string region, string city, string dependentLocality, string postalCode, string sortingCode, string languageCode, string organization, string recipient, string phone) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.PaymentAddress.#ctor(System.String,System.Collections.Generic.IList{System.String},System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional country As String = null, Optional addressLine As IList(Of String) = null, Optional region As String = null, Optional city As String = null, Optional dependentLocality As String = null, Optional postalCode As String = null, Optional sortingCode As String = null, Optional languageCode As String = null, Optional organization As String = null, Optional recipient As String = null, Optional phone As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Payments.PaymentAddress : string * System.Collections.Generic.IList&lt;string&gt; * string * string * string * string * string * string * string * string * string -&gt; Microsoft.Bot.Connector.Payments.PaymentAddress" Usage="new Microsoft.Bot.Connector.Payments.PaymentAddress (country, addressLine, region, city, dependentLocality, postalCode, sortingCode, languageCode, organization, recipient, phone)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="country" Type="System.String" />
@@ -82,10 +84,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; AddressLine" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentAddress.AddressLine" />
       <MemberSignature Language="VB.NET" Value="Public Property AddressLine As IList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.AddressLine : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentAddress.AddressLine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -111,10 +114,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string City" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentAddress.City" />
       <MemberSignature Language="VB.NET" Value="Public Property City As String" />
+      <MemberSignature Language="F#" Value="member this.City : string with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentAddress.City" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -137,10 +141,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Country" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentAddress.Country" />
       <MemberSignature Language="VB.NET" Value="Public Property Country As String" />
+      <MemberSignature Language="F#" Value="member this.Country : string with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentAddress.Country" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -164,10 +169,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string DependentLocality" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentAddress.DependentLocality" />
       <MemberSignature Language="VB.NET" Value="Public Property DependentLocality As String" />
+      <MemberSignature Language="F#" Value="member this.DependentLocality : string with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentAddress.DependentLocality" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -192,10 +198,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string LanguageCode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentAddress.LanguageCode" />
       <MemberSignature Language="VB.NET" Value="Public Property LanguageCode As String" />
+      <MemberSignature Language="F#" Value="member this.LanguageCode : string with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentAddress.LanguageCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -220,10 +227,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Organization" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentAddress.Organization" />
       <MemberSignature Language="VB.NET" Value="Public Property Organization As String" />
+      <MemberSignature Language="F#" Value="member this.Organization : string with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentAddress.Organization" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -247,10 +255,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Phone" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentAddress.Phone" />
       <MemberSignature Language="VB.NET" Value="Public Property Phone As String" />
+      <MemberSignature Language="F#" Value="member this.Phone : string with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentAddress.Phone" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -273,10 +282,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string PostalCode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentAddress.PostalCode" />
       <MemberSignature Language="VB.NET" Value="Public Property PostalCode As String" />
+      <MemberSignature Language="F#" Value="member this.PostalCode : string with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentAddress.PostalCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -300,10 +310,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Recipient" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentAddress.Recipient" />
       <MemberSignature Language="VB.NET" Value="Public Property Recipient As String" />
+      <MemberSignature Language="F#" Value="member this.Recipient : string with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentAddress.Recipient" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -326,10 +337,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Region" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentAddress.Region" />
       <MemberSignature Language="VB.NET" Value="Public Property Region As String" />
+      <MemberSignature Language="F#" Value="member this.Region : string with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentAddress.Region" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -354,10 +366,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string SortingCode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentAddress.SortingCode" />
       <MemberSignature Language="VB.NET" Value="Public Property SortingCode As String" />
+      <MemberSignature Language="F#" Value="member this.SortingCode : string with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentAddress.SortingCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

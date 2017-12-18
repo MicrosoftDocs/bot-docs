@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ResponseType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ResponseType" />
+  <TypeSignature Language="F#" Value="type ResponseType = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
     <AssemblyVersion>1.0.2.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseType Accepted = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseType.Accepted" />
       <MemberSignature Language="VB.NET" Value="Accepted" />
+      <MemberSignature Language="F#" Value="Accepted = 0" Usage="Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseType.Accepted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseType BadRequest = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseType.BadRequest" />
       <MemberSignature Language="VB.NET" Value="BadRequest" />
+      <MemberSignature Language="F#" Value="BadRequest = 1" Usage="Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseType.BadRequest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -62,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseType NotFound = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseType.NotFound" />
       <MemberSignature Language="VB.NET" Value="NotFound" />
+      <MemberSignature Language="F#" Value="NotFound = 2" Usage="Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseType.NotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>

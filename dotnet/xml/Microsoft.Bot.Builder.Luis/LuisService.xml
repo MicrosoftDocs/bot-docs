@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit LuisService extends System.Object implements class Microsoft.Bot.Builder.Luis.ILuisService" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.LuisService" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LuisService&#xA;Implements ILuisService" />
+  <TypeSignature Language="F#" Value="type LuisService = class&#xA;    interface ILuisService" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Luis.ILuisModel model) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisService.#ctor(Microsoft.Bot.Builder.Luis.ILuisModel)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (model As ILuisModel)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Luis.LuisService : Microsoft.Bot.Builder.Luis.ILuisModel -&gt; Microsoft.Bot.Builder.Luis.LuisService" Usage="new Microsoft.Bot.Builder.Luis.LuisService model" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Fix(class Microsoft.Bot.Builder.Luis.Models.LuisResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisService.Fix(Microsoft.Bot.Builder.Luis.Models.LuisResult)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Fix (result As LuisResult)" />
+      <MemberSignature Language="F#" Value="static member Fix : Microsoft.Bot.Builder.Luis.Models.LuisResult -&gt; unit" Usage="Microsoft.Bot.Builder.Luis.LuisService.Fix result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -70,6 +73,9 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Uri Microsoft.Bot.Builder.Luis.ILuisService.BuildUri(class Microsoft.Bot.Builder.Luis.LuisRequest luisRequest) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisService.Microsoft#Bot#Builder#Luis#ILuisService#BuildUri(Microsoft.Bot.Builder.Luis.LuisRequest)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Luis.ILuisService.BuildUri(Microsoft.Bot.Builder.Luis.LuisRequest)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -92,6 +98,9 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Luis.Models.LuisResult&gt; Microsoft.Bot.Builder.Luis.ILuisService.QueryAsync(class System.Uri uri, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisService.Microsoft#Bot#Builder#Luis#ILuisService#QueryAsync(System.Uri,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Luis.ILuisService.QueryAsync(System.Uri,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -121,7 +130,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.Luis.LuisRequest ModifyRequest(class Microsoft.Bot.Builder.Luis.LuisRequest request) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisService.ModifyRequest(Microsoft.Bot.Builder.Luis.LuisRequest)" />
       <MemberSignature Language="VB.NET" Value="Public Function ModifyRequest (request As LuisRequest) As LuisRequest" />
+      <MemberSignature Language="F#" Value="abstract member ModifyRequest : Microsoft.Bot.Builder.Luis.LuisRequest -&gt; Microsoft.Bot.Builder.Luis.LuisRequest&#xA;override this.ModifyRequest : Microsoft.Bot.Builder.Luis.LuisRequest -&gt; Microsoft.Bot.Builder.Luis.LuisRequest" Usage="luisService.ModifyRequest request" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Luis.ILuisService.ModifyRequest(Microsoft.Bot.Builder.Luis.LuisRequest)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

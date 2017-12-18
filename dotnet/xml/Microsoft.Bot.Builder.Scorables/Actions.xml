@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Actions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Actions" />
   <TypeSignature Language="VB.NET" Value="Public Module Actions" />
+  <TypeSignature Language="F#" Value="type Actions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, class Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt; Bind&lt;R&gt;(class System.Func`1&lt;!!R&gt; method) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.Bind``1(System.Func{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Bind(Of R) (method As Func(Of R)) As IScorable(Of IResolver, IBinding)" />
+      <MemberSignature Language="F#" Value="static member Bind : Func&lt;'R&gt; -&gt; Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt;" Usage="Microsoft.Bot.Builder.Scorables.Actions.Bind method" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, class Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt; Bind&lt;T1, R&gt;(class System.Func`2&lt;!!T1, !!R&gt; method) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.Bind``2(System.Func{``0,``1})" />
       <MemberSignature Language="VB.NET" Value="Public Function Bind(Of T1, R) (method As Func(Of T1, R)) As IScorable(Of IResolver, IBinding)" />
+      <MemberSignature Language="F#" Value="static member Bind : Func&lt;'T1, 'R&gt; -&gt; Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt;" Usage="Microsoft.Bot.Builder.Scorables.Actions.Bind method" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, class Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt; Bind&lt;T1, T2, R&gt;(class System.Func`3&lt;!!T1, !!T2, !!R&gt; method) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.Bind``3(System.Func{``0,``1,``2})" />
       <MemberSignature Language="VB.NET" Value="Public Function Bind(Of T1, T2, R) (method As Func(Of T1, T2, R)) As IScorable(Of IResolver, IBinding)" />
+      <MemberSignature Language="F#" Value="static member Bind : Func&lt;'T1, 'T2, 'R&gt; -&gt; Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt;" Usage="Microsoft.Bot.Builder.Scorables.Actions.Bind method" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, class Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt; Bind&lt;T1, T2, T3, R&gt;(class System.Func`4&lt;!!T1, !!T2, !!T3, !!R&gt; method) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.Bind``4(System.Func{``0,``1,``2,``3})" />
       <MemberSignature Language="VB.NET" Value="Public Function Bind(Of T1, T2, T3, R) (method As Func(Of T1, T2, T3, R)) As IScorable(Of IResolver, IBinding)" />
+      <MemberSignature Language="F#" Value="static member Bind : Func&lt;'T1, 'T2, 'T3, 'R&gt; -&gt; Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt;" Usage="Microsoft.Bot.Builder.Scorables.Actions.Bind method" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, class Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt; Bind&lt;T1, T2, T3, T4, R&gt;(class System.Func`5&lt;!!T1, !!T2, !!T3, !!T4, !!R&gt; method) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.Bind``5(System.Func{``0,``1,``2,``3,``4})" />
       <MemberSignature Language="VB.NET" Value="Public Function Bind(Of T1, T2, T3, T4, R) (method As Func(Of T1, T2, T3, T4, R)) As IScorable(Of IResolver, IBinding)" />
+      <MemberSignature Language="F#" Value="static member Bind : Func&lt;'T1, 'T2, 'T3, 'T4, 'R&gt; -&gt; Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt;" Usage="Microsoft.Bot.Builder.Scorables.Actions.Bind method" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -178,6 +184,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, class Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt; Bind&lt;T1, T2, T3, T4, T5, R&gt;(class System.Func`6&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!R&gt; method) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.Bind``6(System.Func{``0,``1,``2,``3,``4,``5})" />
       <MemberSignature Language="VB.NET" Value="Public Function Bind(Of T1, T2, T3, T4, T5, R) (method As Func(Of T1, T2, T3, T4, T5, R)) As IScorable(Of IResolver, IBinding)" />
+      <MemberSignature Language="F#" Value="static member Bind : Func&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'R&gt; -&gt; Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt;" Usage="Microsoft.Bot.Builder.Scorables.Actions.Bind method" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -215,6 +222,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, class Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt; Bind&lt;T1, T2, T3, T4, T5, T6, R&gt;(class System.Func`7&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6, !!R&gt; method) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.Bind``7(System.Func{``0,``1,``2,``3,``4,``5,``6})" />
       <MemberSignature Language="VB.NET" Value="Public Function Bind(Of T1, T2, T3, T4, T5, T6, R) (method As Func(Of T1, T2, T3, T4, T5, T6, R)) As IScorable(Of IResolver, IBinding)" />
+      <MemberSignature Language="F#" Value="static member Bind : Func&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'R&gt; -&gt; Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt;" Usage="Microsoft.Bot.Builder.Scorables.Actions.Bind method" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -254,6 +262,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, class Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt; Bind&lt;T1, T2, T3, T4, T5, T6, T7, R&gt;(class System.Func`8&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6, !!T7, !!R&gt; method) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.Bind``8(System.Func{``0,``1,``2,``3,``4,``5,``6,``7})" />
       <MemberSignature Language="VB.NET" Value="Public Function Bind(Of T1, T2, T3, T4, T5, T6, T7, R) (method As Func(Of T1, T2, T3, T4, T5, T6, T7, R)) As IScorable(Of IResolver, IBinding)" />
+      <MemberSignature Language="F#" Value="static member Bind : Func&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'R&gt; -&gt; Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt;" Usage="Microsoft.Bot.Builder.Scorables.Actions.Bind method" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -295,6 +304,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, float64&gt; Normalize(class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation&gt; scorable) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.Normalize(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Luis.Models.IntentRecommendation})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Normalize (scorable As IScorable(Of IResolver, IntentRecommendation)) As IScorable(Of IResolver, Double)" />
+      <MemberSignature Language="F#" Value="static member Normalize : Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, Microsoft.Bot.Builder.Luis.Models.IntentRecommendation&gt; -&gt; Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, double&gt;" Usage="Microsoft.Bot.Builder.Scorables.Actions.Normalize scorable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -318,6 +328,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, float64&gt; Normalize(class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, class Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt; scorable) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.Normalize(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Normalize (scorable As IScorable(Of IResolver, IBinding)) As IScorable(Of IResolver, Double)" />
+      <MemberSignature Language="F#" Value="static member Normalize : Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt; -&gt; Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, double&gt;" Usage="Microsoft.Bot.Builder.Scorables.Actions.Normalize scorable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -341,6 +352,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, float64&gt; Normalize(class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, class System.Text.RegularExpressions.Match&gt; scorable) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.Normalize(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Normalize (scorable As IScorable(Of IResolver, Match)) As IScorable(Of IResolver, Double)" />
+      <MemberSignature Language="F#" Value="static member Normalize : Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, System.Text.RegularExpressions.Match&gt; -&gt; Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, double&gt;" Usage="Microsoft.Bot.Builder.Scorables.Actions.Normalize scorable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -363,6 +375,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match&gt; When&lt;InnerScore&gt; (this Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,InnerScore&gt; scorable, System.Text.RegularExpressions.Regex regex);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, class System.Text.RegularExpressions.Match&gt; When&lt;InnerScore&gt;(class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !!InnerScore&gt; scorable, class System.Text.RegularExpressions.Regex regex) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.When``1(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Text.RegularExpressions.Regex)" />
+      <MemberSignature Language="F#" Value="static member When : Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, 'InnerScore&gt; * System.Text.RegularExpressions.Regex -&gt; Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, System.Text.RegularExpressions.Match&gt;" Usage="Microsoft.Bot.Builder.Scorables.Actions.When (scorable, regex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -392,6 +405,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation&gt; When&lt;InnerScore&gt;(class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !!InnerScore&gt; scorable, class Microsoft.Bot.Builder.Luis.ILuisModel model, class Microsoft.Bot.Builder.Dialogs.LuisIntentAttribute intent, class Microsoft.Bot.Builder.Luis.ILuisService service) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.When``1(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},Microsoft.Bot.Builder.Luis.ILuisModel,Microsoft.Bot.Builder.Dialogs.LuisIntentAttribute,Microsoft.Bot.Builder.Luis.ILuisService)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function When(Of InnerScore) (scorable As IScorable(Of IResolver, InnerScore), model As ILuisModel, intent As LuisIntentAttribute, Optional service As ILuisService = null) As IScorable(Of IResolver, IntentRecommendation)" />
+      <MemberSignature Language="F#" Value="static member When : Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, 'InnerScore&gt; * Microsoft.Bot.Builder.Luis.ILuisModel * Microsoft.Bot.Builder.Dialogs.LuisIntentAttribute * Microsoft.Bot.Builder.Luis.ILuisService -&gt; Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, Microsoft.Bot.Builder.Luis.Models.IntentRecommendation&gt;" Usage="Microsoft.Bot.Builder.Scorables.Actions.When (scorable, model, intent, service)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -425,6 +439,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !!Score&gt; Where&lt;Score, T1&gt;(class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !!Score&gt; scorable, class System.Func`2&lt;!!T1, bool&gt; predicate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.Where``2(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Where(Of Score, T1) (scorable As IScorable(Of IResolver, Score), predicate As Func(Of T1, Boolean)) As IScorable(Of IResolver, Score)" />
+      <MemberSignature Language="F#" Value="static member Where : Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, 'Score&gt; * Func&lt;'T1, bool&gt; -&gt; Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, 'Score&gt;" Usage="Microsoft.Bot.Builder.Scorables.Actions.Where (scorable, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -456,6 +471,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !!Score&gt; Where&lt;Score, T1&gt;(class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !!Score&gt; scorable, class System.Func`2&lt;!!T1, class System.Threading.Tasks.Task`1&lt;bool&gt;&gt; predicate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.Where``2(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,System.Threading.Tasks.Task{System.Boolean}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Where(Of Score, T1) (scorable As IScorable(Of IResolver, Score), predicate As Func(Of T1, Task(Of Boolean))) As IScorable(Of IResolver, Score)" />
+      <MemberSignature Language="F#" Value="static member Where : Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, 'Score&gt; * Func&lt;'T1, System.Threading.Tasks.Task&lt;bool&gt;&gt; -&gt; Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, 'Score&gt;" Usage="Microsoft.Bot.Builder.Scorables.Actions.Where (scorable, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -487,6 +503,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !!Score&gt; Where&lt;Score, T1, T2&gt;(class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !!Score&gt; scorable, class System.Func`3&lt;!!T1, !!T2, bool&gt; predicate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.Where``3(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Where(Of Score, T1, T2) (scorable As IScorable(Of IResolver, Score), predicate As Func(Of T1, T2, Boolean)) As IScorable(Of IResolver, Score)" />
+      <MemberSignature Language="F#" Value="static member Where : Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, 'Score&gt; * Func&lt;'T1, 'T2, bool&gt; -&gt; Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, 'Score&gt;" Usage="Microsoft.Bot.Builder.Scorables.Actions.Where (scorable, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -520,6 +537,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !!Score&gt; Where&lt;Score, T1, T2&gt;(class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !!Score&gt; scorable, class System.Func`3&lt;!!T1, !!T2, class System.Threading.Tasks.Task`1&lt;bool&gt;&gt; predicate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.Where``3(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,System.Threading.Tasks.Task{System.Boolean}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Where(Of Score, T1, T2) (scorable As IScorable(Of IResolver, Score), predicate As Func(Of T1, T2, Task(Of Boolean))) As IScorable(Of IResolver, Score)" />
+      <MemberSignature Language="F#" Value="static member Where : Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, 'Score&gt; * Func&lt;'T1, 'T2, System.Threading.Tasks.Task&lt;bool&gt;&gt; -&gt; Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, 'Score&gt;" Usage="Microsoft.Bot.Builder.Scorables.Actions.Where (scorable, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -553,6 +571,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !!Score&gt; Where&lt;Score, T1, T2, T3&gt;(class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !!Score&gt; scorable, class System.Func`4&lt;!!T1, !!T2, !!T3, bool&gt; predicate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.Where``4(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,``3,System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Where(Of Score, T1, T2, T3) (scorable As IScorable(Of IResolver, Score), predicate As Func(Of T1, T2, T3, Boolean)) As IScorable(Of IResolver, Score)" />
+      <MemberSignature Language="F#" Value="static member Where : Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, 'Score&gt; * Func&lt;'T1, 'T2, 'T3, bool&gt; -&gt; Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, 'Score&gt;" Usage="Microsoft.Bot.Builder.Scorables.Actions.Where (scorable, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -588,6 +607,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !!Score&gt; Where&lt;Score, T1, T2, T3&gt;(class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !!Score&gt; scorable, class System.Func`4&lt;!!T1, !!T2, !!T3, class System.Threading.Tasks.Task`1&lt;bool&gt;&gt; predicate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Actions.Where``4(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,``3,System.Threading.Tasks.Task{System.Boolean}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Where(Of Score, T1, T2, T3) (scorable As IScorable(Of IResolver, Score), predicate As Func(Of T1, T2, T3, Task(Of Boolean))) As IScorable(Of IResolver, Score)" />
+      <MemberSignature Language="F#" Value="static member Where : Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, 'Score&gt; * Func&lt;'T1, 'T2, 'T3, System.Threading.Tasks.Task&lt;bool&gt;&gt; -&gt; Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, 'Score&gt;" Usage="Microsoft.Bot.Builder.Scorables.Actions.Where (scorable, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

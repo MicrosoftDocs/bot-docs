@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FoldStage extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.FoldStage" />
   <TypeSignature Language="VB.NET" Value="Public Enum FoldStage" />
+  <TypeSignature Language="F#" Value="type FoldStage = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Scorables.Internals.FoldStage AfterFold = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.FoldStage.AfterFold" />
       <MemberSignature Language="VB.NET" Value="AfterFold" />
+      <MemberSignature Language="F#" Value="AfterFold = 0" Usage="Microsoft.Bot.Builder.Scorables.Internals.FoldStage.AfterFold" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Scorables.Internals.FoldStage AfterPost = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.FoldStage.AfterPost" />
       <MemberSignature Language="VB.NET" Value="AfterPost" />
+      <MemberSignature Language="F#" Value="AfterPost = 2" Usage="Microsoft.Bot.Builder.Scorables.Internals.FoldStage.AfterPost" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -62,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Scorables.Internals.FoldStage StartPost = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.FoldStage.StartPost" />
       <MemberSignature Language="VB.NET" Value="StartPost" />
+      <MemberSignature Language="F#" Value="StartPost = 1" Usage="Microsoft.Bot.Builder.Scorables.Internals.FoldStage.StartPost" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

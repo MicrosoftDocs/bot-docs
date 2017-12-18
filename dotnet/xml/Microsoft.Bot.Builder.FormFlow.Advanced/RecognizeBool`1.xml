@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RecognizeBool`1&lt;class T&gt; extends Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeBool`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RecognizeBool(Of T)&#xA;Inherits RecognizePrimitive(Of T)" />
+  <TypeSignature Language="F#" Value="type RecognizeBool&lt;'T (requires 'T : null)&gt; = class&#xA;    inherit RecognizePrimitive&lt;'T (requires 'T : null)&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.FormFlow.Advanced.IField`1&lt;!T&gt; field) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeBool`1.#ctor(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (field As IField(Of T))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeBool&lt;'T (requires 'T : null)&gt; : Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;'T (requires 'T : null)&gt; -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeBool&lt;'T (requires 'T : null)&gt;" Usage="new Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeBool&lt;'T (requires 'T : null)&gt; field" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string Help(!T state, object defaultValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeBool`1.Help(`0,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Help (state As T, defaultValue As Object) As String" />
+      <MemberSignature Language="F#" Value="override this.Help : 'T * obj -&gt; string" Usage="recognizeBool.Help (state, defaultValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch Parse(string input) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeBool`1.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Parse (input As String) As TermMatch" />
+      <MemberSignature Language="F#" Value="override this.Parse : string -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch" Usage="recognizeBool.Parse input" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; ValidInputs(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeBool`1.ValidInputs(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ValidInputs (value As Object) As IEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="override this.ValidInputs : obj -&gt; seq&lt;string&gt;" Usage="recognizeBool.ValidInputs value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -126,6 +131,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.FormFlow.DescribeAttribute ValueDescription(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeBool`1.ValueDescription(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ValueDescription (value As Object) As DescribeAttribute" />
+      <MemberSignature Language="F#" Value="override this.ValueDescription : obj -&gt; Microsoft.Bot.Builder.FormFlow.DescribeAttribute" Usage="recognizeBool.ValueDescription value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -149,6 +155,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt; ValueDescriptions() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeBool`1.ValueDescriptions" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ValueDescriptions () As IEnumerable(Of DescribeAttribute)" />
+      <MemberSignature Language="F#" Value="override this.ValueDescriptions : unit -&gt; seq&lt;Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt;" Usage="recognizeBool.ValueDescriptions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

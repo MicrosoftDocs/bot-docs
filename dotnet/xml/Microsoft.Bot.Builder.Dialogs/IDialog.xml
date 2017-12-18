@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDialog implements class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;object&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IDialog" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDialog&#xA;Implements IDialog(Of Object)" />
+  <TypeSignature Language="F#" Value="type IDialog = interface&#xA;    interface IDialog&lt;obj&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>

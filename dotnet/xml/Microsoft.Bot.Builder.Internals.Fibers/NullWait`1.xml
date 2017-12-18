@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NullWait`1&lt;C&gt; extends System.Object implements class Microsoft.Bot.Builder.Internals.Fibers.IWait, class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!C&gt;, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.NullWait`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NullWait(Of C)&#xA;Implements ICloneable, IWait(Of C)" />
+  <TypeSignature Language="F#" Value="type NullWait&lt;'C&gt; = class&#xA;    interface IWait&lt;'C&gt;&#xA;    interface IWait&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!C&gt; Instance" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Internals.Fibers.NullWait`1.Instance" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Instance As IWait(Of C) " />
+      <MemberSignature Language="F#" Value=" staticval mutable Instance : Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;'C&gt;" Usage="Microsoft.Bot.Builder.Internals.Fibers.NullWait&lt;'C&gt;.Instance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -53,6 +55,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.NullWait`1.Microsoft#Bot#Builder#Internals#Fibers#IWait#Fail(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Sub Fail (error As Exception) Implements IWait.Fail" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Internals.Fibers.IWait.Fail(System.Exception)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -75,6 +80,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.NullWait`1.Microsoft#Bot#Builder#Internals#Fibers#IWait#ItemType" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ItemType As Type Implements IWait.ItemType" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.IWait.ItemType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -94,6 +102,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.NullWait`1.Microsoft#Bot#Builder#Internals#Fibers#IWait#Need" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Need As Need Implements IWait.Need" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.IWait.Need</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -113,6 +124,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.NullWait`1.Microsoft#Bot#Builder#Internals#Fibers#IWait#NeedType" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property NeedType As Type Implements IWait.NeedType" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.IWait.NeedType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -132,6 +146,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.NullWait`1.Microsoft#Bot#Builder#Internals#Fibers#IWait#Post``1(``0)" />
       <MemberSignature Language="VB.NET" Value="Sub Post(Of T) (item As T) Implements IWait.Post" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Internals.Fibers.IWait.Post``1(``0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -158,6 +175,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.NullWait`1.Microsoft#Bot#Builder#Internals#Fibers#IWait#Rest" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Rest As Delegate Implements IWait.Rest" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.IWait.Rest</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -177,6 +197,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.NullWait`1.Microsoft#Bot#Builder#Internals#Fibers#IWait&lt;C&gt;#PollAsync(Microsoft.Bot.Builder.Internals.Fibers.IFiber{`0},`0,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Function PollAsync (fiber As IFiber(Of C), context As C, token As CancellationToken) As Task(Of IWait(Of C)) Implements IWait(Of C).PollAsync" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Internals.Fibers.IWait`1.PollAsync(Microsoft.Bot.Builder.Internals.Fibers.IFiber{`0},`0,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -204,6 +227,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.NullWait`1.System#ICloneable#Clone" />
       <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

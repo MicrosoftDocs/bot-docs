@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IntentActivityHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IntentActivityHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function IntentActivityHandler(context As IDialogContext, message As IAwaitable(Of IMessageActivity), luisResult As LuisResult) As Task " />
+  <TypeSignature Language="F#" Value="type IntentActivityHandler = delegate of IDialogContext * IAwaitable&lt;IMessageActivity&gt; * LuisResult -&gt; Task" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>

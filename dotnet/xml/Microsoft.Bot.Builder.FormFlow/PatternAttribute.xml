@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PatternAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.PatternAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class PatternAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type PatternAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string pattern) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.PatternAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (pattern As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.FormFlow.PatternAttribute : string -&gt; Microsoft.Bot.Builder.FormFlow.PatternAttribute" Usage="new Microsoft.Bot.Builder.FormFlow.PatternAttribute pattern" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".field public initonly string Pattern" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.PatternAttribute.Pattern" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Pattern As String " />
+      <MemberSignature Language="F#" Value="val mutable Pattern : string" Usage="Microsoft.Bot.Builder.FormFlow.PatternAttribute.Pattern" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

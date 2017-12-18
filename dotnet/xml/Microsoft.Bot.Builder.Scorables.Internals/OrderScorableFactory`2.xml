@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OrderScorableFactory`2&lt;Item, Score&gt; extends System.Object implements class Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2&lt;!Item, !Score&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OrderScorableFactory(Of Item, Score)&#xA;Implements IScorableFactory(Of Item, Score)" />
+  <TypeSignature Language="F#" Value="type OrderScorableFactory&lt;'Item, 'Score&gt; = class&#xA;    interface IScorableFactory&lt;'Item, 'Score&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/OnStageDelegate&lt;!Item, !Score&gt; onStage, class System.Collections.Generic.IComparer`1&lt;!Score&gt; comparer, class Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2&lt;!Item, !Score&gt;[] factories) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2.#ctor(Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.OnStageDelegate{`0,`1},System.Collections.Generic.IComparer{`1},Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory{`0,`1}[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (onStage As FoldScorable(Of Item, Score).OnStageDelegate, comparer As IComparer(Of Score), ParamArray factories As IScorableFactory(Of Item, Score)())" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory&lt;'Item, 'Score&gt; : Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;'Item, 'Score&gt;.OnStageDelegate * System.Collections.Generic.IComparer&lt;'Score&gt; * Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory&lt;'Item, 'Score&gt;[] -&gt; Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory&lt;'Item, 'Score&gt;" Usage="new Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory&lt;'Item, 'Score&gt; (onStage, comparer, factories)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/OnStageDelegate&lt;!Item, !Score&gt; onStage, class System.Collections.Generic.IComparer`1&lt;!Score&gt; comparer, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2&lt;!Item, !Score&gt;&gt; factories) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2.#ctor(Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.OnStageDelegate{`0,`1},System.Collections.Generic.IComparer{`1},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory{`0,`1}})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (onStage As FoldScorable(Of Item, Score).OnStageDelegate, comparer As IComparer(Of Score), factories As IEnumerable(Of IScorableFactory(Of Item, Score)))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory&lt;'Item, 'Score&gt; : Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;'Item, 'Score&gt;.OnStageDelegate * System.Collections.Generic.IComparer&lt;'Score&gt; * seq&lt;Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory&lt;'Item, 'Score&gt;&gt; -&gt; Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory&lt;'Item, 'Score&gt;" Usage="new Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory&lt;'Item, 'Score&gt; (onStage, comparer, factories)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -84,6 +87,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2.Microsoft#Bot#Builder#Scorables#Internals#IScorableFactory&lt;Item,Score&gt;#ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})" />
       <MemberSignature Language="VB.NET" Value="Function ScorableFor (methods As IEnumerable(Of MethodInfo)) As IScorable(Of Item, Score) Implements IScorableFactory(Of Item, Score).ScorableFor" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2.ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

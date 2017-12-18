@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VideoFormat extends System.Object implements class System.IEquatable`1&lt;class Microsoft.Skype.Bots.Media.VideoFormat&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.VideoFormat" />
   <TypeSignature Language="VB.NET" Value="Public Class VideoFormat&#xA;Implements IEquatable(Of VideoFormat)" />
+  <TypeSignature Language="F#" Value="type VideoFormat = class&#xA;    interface IEquatable&lt;VideoFormat&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 BitRate" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoFormat.BitRate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BitRate As UInteger" />
+      <MemberSignature Language="F#" Value="member this.BitRate : uint32" Usage="Microsoft.Skype.Bots.Media.VideoFormat.BitRate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -47,7 +49,11 @@
       <MemberSignature Language="C#" Value="public bool Equals (Microsoft.Skype.Bots.Media.VideoFormat videoFormat);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class Microsoft.Skype.Bots.Media.VideoFormat videoFormat) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.VideoFormat.Equals(Microsoft.Skype.Bots.Media.VideoFormat)" />
+      <MemberSignature Language="F#" Value="override this.Equals : Microsoft.Skype.Bots.Media.VideoFormat -&gt; bool" Usage="videoFormat.Equals videoFormat" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -72,6 +78,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.VideoFormat.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="videoFormat.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -97,6 +104,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance float32 FrameRate" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoFormat.FrameRate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FrameRate As Single" />
+      <MemberSignature Language="F#" Value="member this.FrameRate : single" Usage="Microsoft.Skype.Bots.Media.VideoFormat.FrameRate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -118,6 +126,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.VideoFormat.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="videoFormat.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -140,6 +149,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat H264_1280x720_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.H264_1280x720_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly H264_1280x720_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable H264_1280x720_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.H264_1280x720_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -160,6 +170,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat H264_1920x1080_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.H264_1920x1080_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly H264_1920x1080_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable H264_1920x1080_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.H264_1920x1080_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -180,6 +191,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat H264_320x180_1_875Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.H264_320x180_1_875Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly H264_320x180_1_875Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable H264_320x180_1_875Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.H264_320x180_1_875Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -200,6 +212,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat H264_320x180_15Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.H264_320x180_15Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly H264_320x180_15Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable H264_320x180_15Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.H264_320x180_15Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -220,6 +233,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat H264_320x180_3_75Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.H264_320x180_3_75Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly H264_320x180_3_75Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable H264_320x180_3_75Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.H264_320x180_3_75Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -240,6 +254,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat H264_320x180_7_5Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.H264_320x180_7_5Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly H264_320x180_7_5Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable H264_320x180_7_5Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.H264_320x180_7_5Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -260,6 +275,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat H264_424x240_15Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.H264_424x240_15Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly H264_424x240_15Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable H264_424x240_15Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.H264_424x240_15Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -280,6 +296,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat H264_640x360_15Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.H264_640x360_15Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly H264_640x360_15Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable H264_640x360_15Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.H264_640x360_15Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -300,6 +317,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat H264_640x360_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.H264_640x360_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly H264_640x360_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable H264_640x360_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.H264_640x360_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -320,6 +338,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat H264_960x540_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.H264_960x540_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly H264_960x540_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable H264_960x540_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.H264_960x540_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -340,6 +359,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Height" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoFormat.Height" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Height As Integer" />
+      <MemberSignature Language="F#" Value="member this.Height : int" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -361,6 +381,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_1080x1920_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_1080x1920_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NV12_1080x1920_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable NV12_1080x1920_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.NV12_1080x1920_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -381,6 +402,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_1280x720_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_1280x720_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NV12_1280x720_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable NV12_1280x720_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.NV12_1280x720_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -401,6 +423,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_180x320_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_180x320_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NV12_180x320_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable NV12_180x320_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.NV12_180x320_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -421,6 +444,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_1920x1080_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_1920x1080_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NV12_1920x1080_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable NV12_1920x1080_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.NV12_1920x1080_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -441,6 +465,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_240x424_15Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_240x424_15Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NV12_240x424_15Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable NV12_240x424_15Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.NV12_240x424_15Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -461,6 +486,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_270x480_15Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_270x480_15Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NV12_270x480_15Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable NV12_270x480_15Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.NV12_270x480_15Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -481,6 +507,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_320x180_15Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_320x180_15Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NV12_320x180_15Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable NV12_320x180_15Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.NV12_320x180_15Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -501,6 +528,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_360x640_15Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_360x640_15Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NV12_360x640_15Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable NV12_360x640_15Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.NV12_360x640_15Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -521,6 +549,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_360x640_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_360x640_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NV12_360x640_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable NV12_360x640_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.NV12_360x640_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -541,6 +570,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_424x240_15Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_424x240_15Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NV12_424x240_15Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable NV12_424x240_15Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.NV12_424x240_15Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -561,6 +591,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_480x270_15Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_480x270_15Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NV12_480x270_15Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable NV12_480x270_15Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.NV12_480x270_15Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -581,6 +612,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_480x848_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_480x848_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NV12_480x848_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable NV12_480x848_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.NV12_480x848_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -601,6 +633,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_540x960_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_540x960_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NV12_540x960_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable NV12_540x960_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.NV12_540x960_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -621,6 +654,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_640x360_15Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_640x360_15Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NV12_640x360_15Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable NV12_640x360_15Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.NV12_640x360_15Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -641,6 +675,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_640x360_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_640x360_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NV12_640x360_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable NV12_640x360_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.NV12_640x360_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -661,6 +696,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_720x1280_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_720x1280_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NV12_720x1280_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable NV12_720x1280_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.NV12_720x1280_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -681,6 +717,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_848x480_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_848x480_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NV12_848x480_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable NV12_848x480_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.NV12_848x480_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -701,6 +738,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat NV12_960x540_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.NV12_960x540_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NV12_960x540_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable NV12_960x540_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.NV12_960x540_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -721,6 +759,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class Microsoft.Skype.Bots.Media.VideoFormat a, class Microsoft.Skype.Bots.Media.VideoFormat b) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.VideoFormat.op_Equality(Microsoft.Skype.Bots.Media.VideoFormat,Microsoft.Skype.Bots.Media.VideoFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (a As VideoFormat, b As VideoFormat) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : Microsoft.Skype.Bots.Media.VideoFormat * Microsoft.Skype.Bots.Media.VideoFormat -&gt; bool" Usage="a = b" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -748,6 +787,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class Microsoft.Skype.Bots.Media.VideoFormat a, class Microsoft.Skype.Bots.Media.VideoFormat b) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.VideoFormat.op_Inequality(Microsoft.Skype.Bots.Media.VideoFormat,Microsoft.Skype.Bots.Media.VideoFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (a As VideoFormat, b As VideoFormat) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : Microsoft.Skype.Bots.Media.VideoFormat * Microsoft.Skype.Bots.Media.VideoFormat -&gt; bool" Usage="Microsoft.Skype.Bots.Media.VideoFormat.op_Inequality (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -775,6 +815,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_1080x1920_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_1080x1920_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Rgb24_1080x1920_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Rgb24_1080x1920_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_1080x1920_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -795,6 +836,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_1280x720_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_1280x720_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Rgb24_1280x720_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Rgb24_1280x720_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_1280x720_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -815,6 +857,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_180x320_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_180x320_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Rgb24_180x320_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Rgb24_180x320_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_180x320_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -835,6 +878,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_1920x1080_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_1920x1080_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Rgb24_1920x1080_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Rgb24_1920x1080_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_1920x1080_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -855,6 +899,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_240x424_15Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_240x424_15Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Rgb24_240x424_15Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Rgb24_240x424_15Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_240x424_15Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -875,6 +920,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_270x480_15Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_270x480_15Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Rgb24_270x480_15Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Rgb24_270x480_15Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_270x480_15Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -895,6 +941,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_320x180_15Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_320x180_15Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Rgb24_320x180_15Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Rgb24_320x180_15Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_320x180_15Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -915,6 +962,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_360x640_15Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_360x640_15Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Rgb24_360x640_15Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Rgb24_360x640_15Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_360x640_15Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -935,6 +983,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_360x640_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_360x640_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Rgb24_360x640_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Rgb24_360x640_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_360x640_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -955,6 +1004,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_424x240_15Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_424x240_15Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Rgb24_424x240_15Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Rgb24_424x240_15Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_424x240_15Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -975,6 +1025,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_480x270_15Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_480x270_15Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Rgb24_480x270_15Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Rgb24_480x270_15Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_480x270_15Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -995,6 +1046,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_480x848_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_480x848_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Rgb24_480x848_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Rgb24_480x848_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_480x848_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1015,6 +1067,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_540x960_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_540x960_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Rgb24_540x960_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Rgb24_540x960_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_540x960_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1035,6 +1088,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_640x360_15Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_640x360_15Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Rgb24_640x360_15Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Rgb24_640x360_15Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_640x360_15Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1055,6 +1109,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_640x360_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_640x360_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Rgb24_640x360_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Rgb24_640x360_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_640x360_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1075,6 +1130,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_720x1280_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_720x1280_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Rgb24_720x1280_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Rgb24_720x1280_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_720x1280_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1095,6 +1151,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_848x480_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_848x480_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Rgb24_848x480_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Rgb24_848x480_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_848x480_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1115,6 +1172,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Rgb24_960x540_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_960x540_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Rgb24_960x540_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Rgb24_960x540_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Rgb24_960x540_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1135,6 +1193,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.VideoFormat.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="videoFormat.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1157,6 +1216,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Skype.Bots.Media.VideoColorFormat VideoColorFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoFormat.VideoColorFormat" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VideoColorFormat As VideoColorFormat" />
+      <MemberSignature Language="F#" Value="member this.VideoColorFormat : Microsoft.Skype.Bots.Media.VideoColorFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.VideoColorFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1178,6 +1238,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Width" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoFormat.Width" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Width As Integer" />
+      <MemberSignature Language="F#" Value="member this.Width : int" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1199,6 +1260,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_1080x1920_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_1080x1920_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yuy2_1080x1920_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Yuy2_1080x1920_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_1080x1920_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1219,6 +1281,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_1280x720_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_1280x720_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yuy2_1280x720_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Yuy2_1280x720_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_1280x720_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1239,6 +1302,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_180x320_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_180x320_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yuy2_180x320_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Yuy2_180x320_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_180x320_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1259,6 +1323,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_1920x1080_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_1920x1080_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yuy2_1920x1080_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Yuy2_1920x1080_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_1920x1080_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1279,6 +1344,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_240x424_15Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_240x424_15Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yuy2_240x424_15Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Yuy2_240x424_15Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_240x424_15Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1299,6 +1365,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_270x480_15Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_270x480_15Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yuy2_270x480_15Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Yuy2_270x480_15Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_270x480_15Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1319,6 +1386,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_320x180_15Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_320x180_15Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yuy2_320x180_15Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Yuy2_320x180_15Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_320x180_15Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1339,6 +1407,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_360x640_15Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_360x640_15Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yuy2_360x640_15Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Yuy2_360x640_15Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_360x640_15Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1359,6 +1428,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_360x640_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_360x640_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yuy2_360x640_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Yuy2_360x640_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_360x640_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1379,6 +1449,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_424x240_15Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_424x240_15Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yuy2_424x240_15Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Yuy2_424x240_15Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_424x240_15Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1399,6 +1470,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_480x270_15Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_480x270_15Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yuy2_480x270_15Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Yuy2_480x270_15Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_480x270_15Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1419,6 +1491,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_480x848_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_480x848_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yuy2_480x848_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Yuy2_480x848_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_480x848_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1439,6 +1512,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_540x960_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_540x960_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yuy2_540x960_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Yuy2_540x960_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_540x960_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1459,6 +1533,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_640x360_15Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_640x360_15Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yuy2_640x360_15Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Yuy2_640x360_15Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_640x360_15Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1479,6 +1554,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_640x360_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_640x360_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yuy2_640x360_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Yuy2_640x360_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_640x360_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1499,6 +1575,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_720x1280_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_720x1280_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yuy2_720x1280_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Yuy2_720x1280_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_720x1280_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1519,6 +1596,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_848x480_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_848x480_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yuy2_848x480_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Yuy2_848x480_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_848x480_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -1539,6 +1617,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Skype.Bots.Media.VideoFormat Yuy2_960x540_30Fps" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_960x540_30Fps" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yuy2_960x540_30Fps As VideoFormat " />
+      <MemberSignature Language="F#" Value=" staticval mutable Yuy2_960x540_30Fps : Microsoft.Skype.Bots.Media.VideoFormat" Usage="Microsoft.Skype.Bots.Media.VideoFormat.Yuy2_960x540_30Fps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

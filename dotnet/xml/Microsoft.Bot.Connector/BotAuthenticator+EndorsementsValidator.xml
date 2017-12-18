@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed BotAuthenticator/EndorsementsValidator extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.BotAuthenticator.EndorsementsValidator" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function BotAuthenticator.EndorsementsValidator(activities As IEnumerable(Of IActivity), endorsements As String()) As Boolean " />
+  <TypeSignature Language="F#" Value="type BotAuthenticator.EndorsementsValidator = delegate of seq&lt;IActivity&gt; * string[] -&gt; bool" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>

@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ArrayResolver extends Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.ArrayResolver" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ArrayResolver&#xA;Inherits DelegatingResolver" />
+  <TypeSignature Language="F#" Value="type ArrayResolver = class&#xA;    inherit DelegatingResolver" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Scorables.Internals.IResolver inner, class System.Collections.Generic.IReadOnlyList`1&lt;object&gt; services) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.ArrayResolver.#ctor(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Collections.Generic.IReadOnlyList{System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (inner As IResolver, services As IReadOnlyList(Of Object))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Scorables.Internals.ArrayResolver : Microsoft.Bot.Builder.Scorables.Internals.IResolver * System.Collections.Generic.IReadOnlyList&lt;obj&gt; -&gt; Microsoft.Bot.Builder.Scorables.Internals.ArrayResolver" Usage="new Microsoft.Bot.Builder.Scorables.Internals.ArrayResolver (inner, services)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Scorables.Internals.IResolver inner, object[] services) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.ArrayResolver.#ctor(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (inner As IResolver, ParamArray services As Object())" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Scorables.Internals.ArrayResolver : Microsoft.Bot.Builder.Scorables.Internals.IResolver * obj[] -&gt; Microsoft.Bot.Builder.Scorables.Internals.ArrayResolver" Usage="new Microsoft.Bot.Builder.Scorables.Internals.ArrayResolver (inner, services)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="C#" Value="public override bool TryResolve (Type type, object tag, out object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryResolve(class System.Type type, object tag, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.ArrayResolver.TryResolve(System.Type,System.Object,System.Object@)" />
+      <MemberSignature Language="F#" Value="override this.TryResolve : Type * obj *  -&gt; bool" Usage="arrayResolver.TryResolve (type, tag, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

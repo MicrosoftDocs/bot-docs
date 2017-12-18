@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MethodScorableFactory extends System.Object implements class Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, class Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MethodScorableFactory&#xA;Implements IScorableFactory(Of IResolver, IBinding)" />
+  <TypeSignature Language="F#" Value="type MethodScorableFactory = class&#xA;    interface IScorableFactory&lt;IResolver, IBinding&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -42,6 +43,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory.Microsoft#Bot#Builder#Scorables#Internals#IScorableFactory&lt;Microsoft#Bot#Builder#Scorables#Internals#IResolver,Microsoft#Bot#Builder#Scorables#Internals#IBinding&gt;#ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})" />
       <MemberSignature Language="VB.NET" Value="Function ScorableFor (methods As IEnumerable(Of MethodInfo)) As IScorable(Of IResolver, IBinding) Implements IScorableFactory(Of IResolver, IBinding).ScorableFor" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2.ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

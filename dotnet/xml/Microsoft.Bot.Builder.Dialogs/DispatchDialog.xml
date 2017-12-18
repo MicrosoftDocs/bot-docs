@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit DispatchDialog extends Microsoft.Bot.Builder.Dialogs.DispatchDialog`1&lt;object&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.DispatchDialog" />
   <TypeSignature Language="VB.NET" Value="Public Class DispatchDialog&#xA;Inherits DispatchDialog(Of Object)" />
+  <TypeSignature Language="F#" Value="type DispatchDialog = class&#xA;    inherit DispatchDialog&lt;obj&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>

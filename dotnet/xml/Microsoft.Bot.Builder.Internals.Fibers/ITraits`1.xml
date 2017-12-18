@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITraits`1&lt;T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.ITraits`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITraits(Of T)" />
+  <TypeSignature Language="F#" Value="type ITraits&lt;'T&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance !T Maximum" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.ITraits`1.Maximum" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Maximum As T" />
+      <MemberSignature Language="F#" Value="member this.Maximum : 'T" Usage="Microsoft.Bot.Builder.Internals.Fibers.ITraits&lt;'T&gt;.Maximum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance !T Minimum" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.ITraits`1.Minimum" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Minimum As T" />
+      <MemberSignature Language="F#" Value="member this.Minimum : 'T" Usage="Microsoft.Bot.Builder.Internals.Fibers.ITraits&lt;'T&gt;.Minimum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed RecognizeEnumeration`1/TermsDelegate&lt;class T&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1.TermsDelegate" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function RecognizeEnumeration(Of T).TermsDelegate(value As Object) As IEnumerable(Of String) " />
+  <TypeSignature Language="F#" Value="type RecognizeEnumeration&lt;'T (requires 'T : null)&gt;.TermsDelegate = delegate of obj -&gt; seq&lt;string&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>

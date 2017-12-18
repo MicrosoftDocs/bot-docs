@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FiberModule extends Autofac.Module" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.FiberModule" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class FiberModule&#xA;Inherits Module" />
+  <TypeSignature Language="F#" Value="type FiberModule = class&#xA;    inherit Module" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly object Key_DoNotSerialize" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Key_DoNotSerialize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Key_DoNotSerialize As Object " />
+      <MemberSignature Language="F#" Value=" staticval mutable Key_DoNotSerialize : obj" Usage="Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Key_DoNotSerialize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly object Key_SurrogateProvider" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Key_SurrogateProvider" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Key_SurrogateProvider As Object " />
+      <MemberSignature Language="F#" Value=" staticval mutable Key_SurrogateProvider : obj" Usage="Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Key_SurrogateProvider" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Load(class Autofac.ContainerBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.FiberModule.Load(Autofac.ContainerBuilder)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Load (builder As ContainerBuilder)" />
+      <MemberSignature Language="F#" Value="override this.Load : Autofac.ContainerBuilder -&gt; unit" Usage="fiberModule.Load builder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>

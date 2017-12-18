@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FileSourceExtension extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.FileSourceExtension" />
   <TypeSignature Language="VB.NET" Value="Public Enum FileSourceExtension" />
+  <TypeSignature Language="F#" Value="type FileSourceExtension = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Internal.Bots.Media.FileSourceExtension Wav = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Internal.Bots.Media.FileSourceExtension.Wav" />
       <MemberSignature Language="VB.NET" Value="Wav" />
+      <MemberSignature Language="F#" Value="Wav = 0" Usage="Microsoft.Skype.Internal.Bots.Media.FileSourceExtension.Wav" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

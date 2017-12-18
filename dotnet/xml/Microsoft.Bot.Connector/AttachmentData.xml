@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AttachmentData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.AttachmentData" />
   <TypeSignature Language="VB.NET" Value="Public Class AttachmentData" />
+  <TypeSignature Language="F#" Value="type AttachmentData = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -41,10 +42,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string name, unsigned int8[] originalBase64, unsigned int8[] thumbnailBase64) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.AttachmentData.#ctor(System.String,System.String,System.Byte[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional type As String = null, Optional name As String = null, Optional originalBase64 As Byte() = null, Optional thumbnailBase64 As Byte() = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.AttachmentData : string * string * byte[] * byte[] -&gt; Microsoft.Bot.Connector.AttachmentData" Usage="new Microsoft.Bot.Connector.AttachmentData (type, name, originalBase64, thumbnailBase64)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.String" />
@@ -68,10 +70,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.AttachmentData.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Bot.Connector.AttachmentData.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -94,10 +97,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] OriginalBase64" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.AttachmentData.OriginalBase64" />
       <MemberSignature Language="VB.NET" Value="Public Property OriginalBase64 As Byte()" />
+      <MemberSignature Language="F#" Value="member this.OriginalBase64 : byte[] with get, set" Usage="Microsoft.Bot.Connector.AttachmentData.OriginalBase64" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -120,10 +124,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] ThumbnailBase64" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.AttachmentData.ThumbnailBase64" />
       <MemberSignature Language="VB.NET" Value="Public Property ThumbnailBase64 As Byte()" />
+      <MemberSignature Language="F#" Value="member this.ThumbnailBase64 : byte[] with get, set" Usage="Microsoft.Bot.Connector.AttachmentData.ThumbnailBase64" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -146,10 +151,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Type" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.AttachmentData.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="Microsoft.Bot.Connector.AttachmentData.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

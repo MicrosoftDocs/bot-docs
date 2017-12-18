@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PromptStyler extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptStyler" />
   <TypeSignature Language="VB.NET" Value="Public Class PromptStyler" />
+  <TypeSignature Language="F#" Value="type PromptStyler = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="C#" Value="public PromptStyler (Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle = Microsoft.Bot.Builder.Dialogs.PromptStyle.Auto);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptStyler.#ctor(Microsoft.Bot.Builder.Dialogs.PromptStyle)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.PromptStyler : Microsoft.Bot.Builder.Dialogs.PromptStyle -&gt; Microsoft.Bot.Builder.Dialogs.PromptStyler" Usage="new Microsoft.Bot.Builder.Dialogs.PromptStyler promptStyle" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Apply(class Microsoft.Bot.Connector.IMessageActivity&amp; message, string prompt, string speak) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply(Microsoft.Bot.Connector.IMessageActivity@,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Apply (ByRef message As IMessageActivity, prompt As String, Optional speak As String = null)" />
+      <MemberSignature Language="F#" Value="abstract member Apply :  * string * string -&gt; unit&#xA;override this.Apply :  * string * string -&gt; unit" Usage="promptStyler.Apply (message, prompt, speak)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Apply&lt;T&gt;(class Microsoft.Bot.Connector.IMessageActivity&amp; message, string prompt, class System.Collections.Generic.IReadOnlyList`1&lt;!!T&gt; options, class System.Collections.Generic.IReadOnlyList`1&lt;string&gt; descriptions, string speak) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply``1(Microsoft.Bot.Connector.IMessageActivity@,System.String,System.Collections.Generic.IReadOnlyList{``0},System.Collections.Generic.IReadOnlyList{System.String},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Apply(Of T) (ByRef message As IMessageActivity, prompt As String, options As IReadOnlyList(Of T), Optional descriptions As IReadOnlyList(Of String) = null, Optional speak As String = null)" />
+      <MemberSignature Language="F#" Value="abstract member Apply :  * string * System.Collections.Generic.IReadOnlyList&lt;'T&gt; * System.Collections.Generic.IReadOnlyList&lt;string&gt; * string -&gt; unit&#xA;override this.Apply :  * string * System.Collections.Generic.IReadOnlyList&lt;'T&gt; * System.Collections.Generic.IReadOnlyList&lt;string&gt; * string -&gt; unit" Usage="promptStyler.Apply (message, prompt, options, descriptions, speak)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="C#" Value="public static void Apply&lt;T&gt; (ref Microsoft.Bot.Connector.IMessageActivity message, string prompt, System.Collections.Generic.IReadOnlyList&lt;T&gt; options, Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle, System.Collections.Generic.IReadOnlyList&lt;string&gt; descriptions = null, string speak = null);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Apply&lt;T&gt;(class Microsoft.Bot.Connector.IMessageActivity&amp; message, string prompt, class System.Collections.Generic.IReadOnlyList`1&lt;!!T&gt; options, valuetype Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle, class System.Collections.Generic.IReadOnlyList`1&lt;string&gt; descriptions, string speak) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply``1(Microsoft.Bot.Connector.IMessageActivity@,System.String,System.Collections.Generic.IReadOnlyList{``0},Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IReadOnlyList{System.String},System.String)" />
+      <MemberSignature Language="F#" Value="static member Apply :  * string * System.Collections.Generic.IReadOnlyList&lt;'T&gt; * Microsoft.Bot.Builder.Dialogs.PromptStyle * System.Collections.Generic.IReadOnlyList&lt;string&gt; * string -&gt; unit" Usage="Microsoft.Bot.Builder.Dialogs.PromptStyler.Apply (message, prompt, options, promptStyle, descriptions, speak)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="ILAsm" Value=".field public initonly valuetype Microsoft.Bot.Builder.Dialogs.PromptStyle PromptStyle" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.PromptStyler.PromptStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly PromptStyle As PromptStyle " />
+      <MemberSignature Language="F#" Value="val mutable PromptStyle : Microsoft.Bot.Builder.Dialogs.PromptStyle" Usage="Microsoft.Bot.Builder.Dialogs.PromptStyler.PromptStyle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

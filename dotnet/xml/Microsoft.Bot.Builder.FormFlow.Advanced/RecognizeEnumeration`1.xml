@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RecognizeEnumeration`1&lt;class T&gt; extends System.Object implements class Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RecognizeEnumeration(Of T)&#xA;Implements IRecognize(Of T)" />
+  <TypeSignature Language="F#" Value="type RecognizeEnumeration&lt;'T (requires 'T : null)&gt; = class&#xA;    interface IRecognize&lt;'T (requires 'T : null)&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.FormFlow.Advanced.IField`1&lt;!T&gt; field) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1.#ctor(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (field As IField(Of T))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration&lt;'T (requires 'T : null)&gt; : Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;'T (requires 'T : null)&gt; -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration&lt;'T (requires 'T : null)&gt;" Usage="new Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration&lt;'T (requires 'T : null)&gt; field" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -56,7 +58,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Help(!T state, object defaultValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1.Help(`0,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Help (state As T, defaultValue As Object) As String" />
+      <MemberSignature Language="F#" Value="abstract member Help : 'T * obj -&gt; string&#xA;override this.Help : 'T * obj -&gt; string" Usage="recognizeEnumeration.Help (state, defaultValue)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1.Help(`0,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -81,7 +87,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch&gt; Matches(class Microsoft.Bot.Connector.IMessageActivity input, object defaultValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1.Matches(Microsoft.Bot.Connector.IMessageActivity,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Iterator Overridable NotOverridable Function Matches (input As IMessageActivity, defaultValue As Object) As IEnumerable(Of TermMatch)" />
+      <MemberSignature Language="F#" Value="abstract member Matches : Microsoft.Bot.Connector.IMessageActivity * obj -&gt; seq&lt;Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch&gt;&#xA;override this.Matches : Microsoft.Bot.Connector.IMessageActivity * obj -&gt; seq&lt;Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch&gt;" Usage="recognizeEnumeration.Matches (input, defaultValue)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1.Matches(Microsoft.Bot.Connector.IMessageActivity,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -111,7 +121,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] PromptArgs() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1.PromptArgs" />
       <MemberSignature Language="VB.NET" Value="Public Function PromptArgs () As Object()" />
+      <MemberSignature Language="F#" Value="abstract member PromptArgs : unit -&gt; obj[]&#xA;override this.PromptArgs : unit -&gt; obj[]" Usage="recognizeEnumeration.PromptArgs " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1.PromptArgs</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -131,6 +145,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="recognizeEnumeration.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -151,7 +166,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; ValidInputs(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1.ValidInputs(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ValidInputs (value As Object) As IEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="abstract member ValidInputs : obj -&gt; seq&lt;string&gt;&#xA;override this.ValidInputs : obj -&gt; seq&lt;string&gt;" Usage="recognizeEnumeration.ValidInputs value" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1.ValidInputs(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -174,7 +193,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.DescribeAttribute ValueDescription(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1.ValueDescription(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ValueDescription (value As Object) As DescribeAttribute" />
+      <MemberSignature Language="F#" Value="abstract member ValueDescription : obj -&gt; Microsoft.Bot.Builder.FormFlow.DescribeAttribute&#xA;override this.ValueDescription : obj -&gt; Microsoft.Bot.Builder.FormFlow.DescribeAttribute" Usage="recognizeEnumeration.ValueDescription value" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1.ValueDescription(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -197,7 +220,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt; ValueDescriptions() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1.ValueDescriptions" />
       <MemberSignature Language="VB.NET" Value="Public Function ValueDescriptions () As IEnumerable(Of DescribeAttribute)" />
+      <MemberSignature Language="F#" Value="abstract member ValueDescriptions : unit -&gt; seq&lt;Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt;&#xA;override this.ValueDescriptions : unit -&gt; seq&lt;Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt;" Usage="recognizeEnumeration.ValueDescriptions " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1.ValueDescriptions</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -217,7 +244,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;object&gt; Values() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1.Values" />
       <MemberSignature Language="VB.NET" Value="Public Function Values () As IEnumerable(Of Object)" />
+      <MemberSignature Language="F#" Value="abstract member Values : unit -&gt; seq&lt;obj&gt;&#xA;override this.Values : unit -&gt; seq&lt;obj&gt;" Usage="recognizeEnumeration.Values " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1.Values</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
