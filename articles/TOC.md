@@ -1,7 +1,7 @@
 # [Bot Service Documentation](index.yml)
 # Overview
 ## [About Bot Service](bot-service-overview-introduction.md)
-# Quickstarts
+# Get started
 ## [Create a bot with Bot Service](~/bot-service-quickstart.md)
 ## Create a bot with Bot Builder
 ### [Use .NET](~/dotnet/bot-builder-dotnet-quickstart.md)
@@ -21,7 +21,7 @@
 ### [Enterprise Productivity bot](bot-service-scenario-enterprise-productivity.md)
 ### [Information bot](bot-service-scenario-informational.md)
 ### [Internet of Things bot](bot-service-scenario-internet-things.md)
-# How-To guides
+# How To
 ## [Design](design/TOC.md)
 ## [Manage](manage/TOC.md)
 ## Develop
@@ -33,4 +33,9 @@
 ## [.NET SDK](/dotnet/api/?view=botbuilder-3.12.2.4)
 ## [Node.js SDK](https://docs.botframework.com/en-us/node/builder/chat-reference/modules/_botbuilder_d_.html)
 ## [REST API](rest-api/bot-framework-rest-connector-api-reference.md)
+# Related
+## [Web Apps](/azure/app-service/)
+## [Functions](/azure/azure-functions/)
+## [Cognitive Services](/azure/index#pivot=products&panel=cognitive)
+## [Application Insights](/azure/application-insights/)
 # [Resources](resources/TOC.md)
