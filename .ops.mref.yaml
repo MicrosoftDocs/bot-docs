@@ -27,7 +27,7 @@ steps:
 
 - task: ExtractFiles@1
   inputs:
-    archiveFilePatterns: "dl\*.zip"
+    archiveFilePatterns: 'dl\*.zip'
     destinationFolder: "$(Build.Repository.LocalPath)\_bin"
 
 - task: PowerShell@1
